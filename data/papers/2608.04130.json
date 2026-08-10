@@ -1,0 +1,61 @@
+{
+  "abstract": "Vision-language models for autonomous driving primarily rely on cameras and LiDAR, leaving 4D radar largely unexplored as a standalone perceptual modality despite its robustness to adverse visibility and direct measurement of radial velocity. We introduce Radar4D-VLM, a radar-only temporal vision-language model that reasons from ten consecutive 4D-radar point-cloud sweeps without camera or LiDAR input. Radar4D-VLM extracts geometrically grounded object proposals and organizes radar evidence into a compact hierarchy of object, scene, and kinematic tokens. A parameter-efficient projector maps these tokens into frozen language backbones, while auditable prediction heads jointly model object count, spatial distribution, motion state, collision risk, semantic category, and radial velocity. Radar4D-VLM combines proposal-grounded temporal object tokenization, global scene context, and explicit kinematic tokens within a unified frozen-backbone interface. On sequence-isolated K-Radar development validation, its Top-64 proposal recall reaches 98.13% at 4 m, exceeding fixed-lattice and uniform-random controls by 6.40 and 22.83 percentage points, respectively. We further evaluate 24 matched runs spanning eight frozen Qwen, Phi, Mistral, Llama, and Gemma backbones under an identical adaptation budget. The radar-token interface remains compatible across all five language-model families, while matched aligned, permuted, and no-language controls show sensor dependence but no stable direct-head gain from aligned language supervision. These results establish a reproducible foundation for radar-only multimodal scene and motion reasoning while separating interface compatibility from the benefit of language supervision.",
+  "abstract_zh": "自主驾驶的视觉-语言模型主要依赖于摄像头和激光雷达（LiDAR），而4D雷达作为一种独立的感知模态，尽管其在恶劣能见度下的鲁棒性和径向速度的直接测量能力，仍然未得到充分探索。我们提出了Radar4D-VLM，这是一种仅基于雷达的时间性视觉-语言模型，它从连续十个4D雷达点云扫描中进行推理，而不依赖于摄像头或激光雷达输入。Radar4D-VLM提取几何基础的物体提议，并将雷达证据组织成物体、场景和运动学标记的紧凑层次结构。一个参数高效的投影器将这些标记映射到冻结的语言骨干网络中，而可审计的预测头共同建模物体数量、空间分布、运动状态、碰撞风险、语义类别和径向速度。在统一的冻结骨干接口中，Radar4D-VLM结合了基于提议的时间性物体标记化、全局场景上下文和显式运动学标记。在序列隔离的K-Radar开发验证中，其Top-64提议召回率在4米处达到了98.13%，超过了固定格子和均匀随机控制，分别提高了6.40和22.83个百分点。我们进一步评估了在相同适应预算下跨越八个冻结的Qwen、Phi、Mistral、Llama和Gemma骨干的24次匹配运行。雷达标记接口在所有五个语言模型家族中保持兼容，而匹配对齐、置换和无语言控制显示出传感器依赖性，但没有从对齐语言监督中获得稳定的直接头增益。这些结果为基于雷达的多模态场景和运动推理建立了可重复的基础，同时将接口兼容性与语言监督的收益分开。",
+  "arxiv_id": "2608.04130",
+  "arxiv_url": "https://arxiv.org/abs/2608.04130v1",
+  "authors": [
+    "Jiaju Han",
+    "Xuemeng Sun",
+    "Qike Zhang",
+    "Xiang Chen",
+    "Luwei Yang",
+    "Jiahuan Long",
+    "Yiwei Wei",
+    "Jiujiang Guo",
+    "Chengyin Hu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-06#paper-2608-04130",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:44.407694+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.04130v1",
+  "published_at": "2026-08-04T18:32:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "4d radar",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 59
+  },
+  "seen_dates": [
+    "2026-08-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.04130v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "VLM/VLA",
+      "感知"
+    ]
+  },
+  "title": "Radar4D-VLM: Proposal-Grounded Temporal 4D Radar Reasoning Across Frozen Language Models",
+  "title_zh": "Radar4D-VLM：基于提议的时间性4D雷达推理在冻结语言模型中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2608.04130"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Road network segmentation from satellite imagery remains challenging due to large geographic variation in road appearance, occlusions, and domain shifts introduced by differing resolutions and sensors. Existing models, typically trained under narrow resolution--region combinations, generalise poorly to unseen environments such as rural settings, regions with distinct road materials, or imagery from new satellite platforms, often producing broken or disconnected predictions. Adapting these models to new domains usually requires retraining or fine-tuning, which is costly and risks catastrophic forgetting. In this work, we reframe global road extraction as a continual adaptation problem rather than an architectural one. Our framework combines cross-resolution knowledge distillation across a resolution-decreasing curriculum, multi-sensor training, and topology-aware supervision, yielding a single model that generalises across $0.3-1.0$ m imagery from multiple satellite platforms across continents. On publicly available benchmarks, including City-Scale and Global-Scale, our model outperforms state-of-the-art results by up to $22$ F1 points and $15$ APLS points, while remaining the most efficient, with $3\\times$ faster inference. Our results suggest that improved robustness across diverse sub-meter satellite imagery can be achieved through targeted training strategies, such as data curricula, distillation, and topology-aware losses, rather than increasingly complex architectures.",
+  "abstract_zh": "从卫星影像中进行道路网络分割仍然面临挑战，这主要是由于道路外观的地理差异、遮挡以及不同分辨率和传感器引入的领域转移。现有模型通常在狭窄的分辨率-区域组合下训练，难以在未见环境中进行推广，例如乡村环境、具有不同道路材料的区域或来自新卫星平台的影像，常常产生断裂或不连贯的预测。将这些模型适应于新领域通常需要重新训练或微调，这既成本高昂又存在灾难性遗忘的风险。在本研究中，我们将全球道路提取重新框定为一个持续适应问题，而非架构问题。我们的框架结合了跨分辨率知识蒸馏、逐步降低分辨率的课程、多传感器训练和拓扑感知监督，生成一个能够在来自多个卫星平台的 $0.3-1.0$ 米影像上进行推广的单一模型。在公开可用的基准测试中，包括城市规模和全球规模，我们的模型在 F1 分数上比最先进的结果提高了多达 $22$ 点，在 APLS 分数上提高了 $15$ 点，同时保持了最高的效率，推理速度提高了 $3 imes$。我们的结果表明，通过有针对性的训练策略，如数据课程、蒸馏和拓扑感知损失，可以在多样的亚米级卫星影像中实现更好的鲁棒性，而不是依赖于日益复杂的架构。",
+  "arxiv_id": "2608.03407",
+  "arxiv_url": "https://arxiv.org/abs/2608.03407v1",
+  "authors": [
+    "Sanayya",
+    "Rakshith Sathish",
+    "Ashwathi Nambiar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-05#paper-2608-03407",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-10T13:01:37.393088+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.03407v1",
+  "published_at": "2026-08-04T10:01:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路",
+      "multi-sensor",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-08-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.03407v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Distilled Roads: Generalisable Road Network Extraction Across Sensors, Resolutions, and Region",
+  "title_zh": "提炼道路：跨传感器、分辨率和区域的可推广道路网络提取",
+  "translation_url": "https://hjfy.top/arxiv/2608.03407"
+}

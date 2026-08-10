@@ -1,0 +1,57 @@
+{
+  "abstract": "Although image deraining has advanced substantially, existing methods mainly focus on 2D image restoration. As spatial intelligence applications such as embodied AI and autonomous driving continue to emerge, reconstructing clean 3D scenes from sparse rainy views in a feed-forward manner becomes increasingly important. Existing feed-forward 3D Gaussian Splatting (3DGS) methods often assume clean inputs and collapse under rainy conditions. To this end, we present \\textbf{\\textit{DerainSplat}}, a feed-forward framework that reconstructs clean 3D scenes from only a few rainy views. To support this task, we build a large-scale multi-view derain dataset through a four-stage synthesis pipeline that sequentially models overcast illumination, depth-dependent haze, rain streaks, and lens raindrops, producing privileged weather factors. We introduce a weather net that predicts the weather factors from rainy context and yields two support maps. Scene support modulates cross-view cost-volume matching, while radiance support drives depth-aligned appearance fusion to fill corrupted pixels. The derived geometry evidence further attenuates Gaussian opacity to reduce spurious structures. A rainy cycle consistency re-renders clean views using the predicted factors and aligns them with rainy inputs. Extensive experiments show that \\textbf{\\textit{DerainSplat}} outperforms existing methods on various datasets, including RealEstate10K, ACID, Mip-NeRF360, and real-world rainy scenes, with strong cross-dataset generalization.",
+  "abstract_zh": "尽管图像去雨技术已经取得了显著进展，但现有方法主要集中在2D图像恢复上。随着具身人工智能和自动驾驶等空间智能应用的不断涌现，从稀疏的雨天视图中以前馈方式重建清晰的3D场景变得愈发重要。现有的前馈3D高斯点云重建（3DGS）方法通常假设输入为清晰图像，在雨天条件下会失效。为此，我们提出了 extbf{ extit{DerainSplat}}，这是一个前馈框架，能够仅从少量雨天视图中重建清晰的3D场景。为了支持这一任务，我们通过四阶段合成管道构建了一个大规模的多视角去雨数据集，该管道依次模拟阴天照明、深度依赖雾霭、雨滴条纹和镜头雨滴，生成特权天气因子。我们引入了一个天气网络，该网络从雨天上下文中预测天气因子，并生成两个支持图。场景支持调节跨视图成本体积匹配，而辐射支持驱动深度对齐的外观融合，以填补受损像素。推导出的几何证据进一步减弱高斯不透明度，以减少虚假结构。雨天循环一致性使用预测因子重新渲染清晰视图，并将其与雨天输入对齐。大量实验表明， extbf{ extit{DerainSplat}}在多个数据集上超越了现有方法，包括RealEstate10K、ACID、Mip-NeRF360和真实世界的雨天场景，并展现出强大的跨数据集泛化能力。",
+  "arxiv_id": "2608.02191",
+  "arxiv_url": "https://arxiv.org/abs/2608.02191v1",
+  "authors": [
+    "Fuzhen Jiang",
+    "Changyue Shi",
+    "Chuxiao Yang",
+    "Xinyuan Hu",
+    "Wenjie Ye",
+    "Minghao Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-02191",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.153381+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.02191v1",
+  "published_at": "2026-08-03T13:15:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.02191v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "DerainSplat: Feed-Forward Clean 3D Gaussian Splatting from Sparse Rainy Views",
+  "title_zh": "DerainSplat：从稀疏雨天视图中前馈清晰的3D高斯点云重建",
+  "translation_url": "https://hjfy.top/arxiv/2608.02191"
+}

@@ -1,0 +1,59 @@
+{
+  "abstract": "High-definition 3D LiDAR maps are important for autonomous driving and smart-city services, which require reliable detection of object-level changes in multi-temporal urban LiDAR to keep digital maps aligned with the physical world. Existing approaches from raster height differencing to depth image and point-cloud networks often remain tile-based and threshold-driven, yielding per-point scores without explicit detection limits or consistent object-level labels. We propose an object-level 3D change-detection pipeline that integrates detection-limit-aware registration, geometry-driven object proxies with rule-based semantic and instance segmentation, and displacement cues in height, volume, and surface-normal direction to assign five change labels with confidence. By decoupling registration, geometry, and semantics, the pipeline propagates pose uncertainty into spatially varying detection limits, stabilizes cross-epoch correspondences, and suppresses false changes caused by residual misalignment and density variation. We also present LoDA, a level-of-detection (LoD) aware benchmark for the Subiaco district with fused multi-temporal vehicle-LiDAR maps constructed with LiDAR, GNSS, and IMU support, semantic instances, and object-level annotations. On this benchmark, our method achieves 95.0% accuracy, 90.8% macro F1, and 83.0% macro IoU, exceeding the best baseline by 8.7 IoU points and 4.4 F1 points. On the public Urb3DCD-V2 benchmark evaluated under the official point-wise protocol, it reaches 96.81% mean accuracy and 89.52% mean change IoU, improving over the strongest reported baselines by 1.36 points in mAcc and 3.18 points in mIoUch.",
+  "abstract_zh": "高分辨率3D LiDAR地图对于自动驾驶和智慧城市服务至关重要，这些服务需要可靠地检测多时相城市LiDAR中的物体级变化，以保持数字地图与物理世界的一致性。现有的方法从栅格高度差异到深度图像和点云网络，往往仍然基于瓦片和阈值驱动，产生每个点的得分而没有明确的检测限制或一致的物体级标签。我们提出了一种物体级3D变化检测管道，该管道集成了感知检测限制的配准、基于几何的物体代理与基于规则的语义和实例分割，以及在高度、体积和表面法向方向上的位移线索，以赋予五种变化标签及其置信度。通过解耦配准、几何和语义，该管道将姿态不确定性传播到空间变化的检测限制中，稳定跨时间段的对应关系，并抑制由残余错位和密度变化引起的虚假变化。我们还提出了LoDA，一个检测水平（LoD）感知的基准，针对Subiaco区，构建了融合了LiDAR、GNSS和IMU支持的多时相车辆LiDAR地图，包含语义实例和物体级注释。在该基准上，我们的方法达到了95.0%的准确率，90.8%的宏观F1值和83.0%的宏观IoU，超过了最佳基线8.7个IoU点和4.4个F1点。在公共的Urb3DCD-V2基准上，根据官方逐点协议评估，达到了96.81%的平均准确率和89.52%的平均变化IoU，相较于报告的最强基线提高了1.36个mAcc点和3.18个mIoUch点。",
+  "arxiv_id": "2608.05356",
+  "arxiv_url": "https://arxiv.org/abs/2608.05356v1",
+  "authors": [
+    "Haitian Wang",
+    "Xinyu Wang",
+    "Sheldon Fung",
+    "Xian Zhang",
+    "Zichen Geng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-07#paper-2608-05356",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:52.103252+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.05356v1",
+  "published_at": "2026-08-05T19:27:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-08-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.05356v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "LoDA: A Level of Detection Aware Method and a Multimodal Sensing Benchmark for Object Level Change Detection",
+  "title_zh": "LoDA：一种检测水平感知方法及多模态感知基准用于物体级变化检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.05356"
+}

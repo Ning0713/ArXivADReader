@@ -1,0 +1,69 @@
+{
+  "abstract": "End-to-end autonomous driving models are now able to navigate complex road scenarios, mapping raw sensor observations directly to observed paths for open-loop evaluation and often effective driving in closed-loop evaluation. Yet the internal logic of these safety-critical systems remains largely opaque, due to the complexity of traffic scenes. We propose a counterfactual ablation framework called Counterfactual Vision Action Analysis (CVAA) that systematically removes individual detected objects from front-camera images using photorealistic generative inpainting to prepare counterfactual sets to evaluate the difference in the model's response. This isolates the causal effect of each object's presence on the model's planning behaviour. Applied to the Alpamayo 1 trajectory predictor across 210 nuScenes driving scenes, we create a dataset Counter -nuScenes, using which we see that vehicles and pedestrians within the model's 'path' dominate causal influence as expected, while traffic lights, as expected, exert disproportionate effect relative to their image footprint. However, we also find cases where the model responds strongly to objects a human driver would consider irrelevant. This brings forth a deeper question: does the model itself view the scene as a sum of individual objects influencing the outcome, or does it encode an entirely different set of internal features that do not correspond to human-legible scene elements? To further understand this, we compare intermediate representations of original and inpainted image pairs using mechanistic interpretability techniques and examine the effect of the removal through the various model layers. Together, these two stages offer a path from behavioral auditing to representational understanding, creating explainable driving systems and solidifying human-AI trust.",
+  "abstract_zh": "端到端的自动驾驶模型现在能够在复杂的道路场景中导航，将原始传感器观察直接映射到观察路径，以进行开放式评估，并在闭环评估中通常实现有效驾驶。然而，由于交通场景的复杂性，这些安全关键系统的内部逻辑仍然在很大程度上是不透明的。我们提出了一种反事实消融框架，称为反事实视觉行动分析（Counterfactual Vision Action Analysis, CVAA），该框架系统性地从前置摄像头图像中移除单个检测到的物体，使用逼真的生成修复技术准备反事实集合，以评估模型响应的差异。这使得我们能够隔离每个物体存在对模型规划行为的因果影响。应用于Alpamayo 1轨迹预测器，涵盖210个nuScenes驾驶场景，我们创建了一个数据集Counter-nuScenes，利用该数据集我们发现，模型“路径”中的车辆和行人如预期主导了因果影响，而交通信号灯则相对于其图像占用面积施加了不成比例的影响。然而，我们也发现模型对人类驾驶员认为不相关的物体有强烈反应的情况。这引发了一个更深层次的问题：模型本身是否将场景视为影响结果的单个物体的总和，还是编码了一组与人类可理解的场景元素不对应的完全不同的内部特征？为了进一步理解这一点，我们使用机械可解释性技术比较原始和修复图像对的中间表示，并检查通过不同模型层的移除效果。这两个阶段共同提供了一条从行为审计到表征理解的路径，创造可解释的驾驶系统，并巩固人机信任。",
+  "arxiv_id": "2607.16938",
+  "arxiv_url": "https://arxiv.org/abs/2607.16938v1",
+  "authors": [
+    "Kalpana Panda",
+    "Wesley Maia",
+    "Vinti Agarwal",
+    "Ross Greer"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-16938",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.418140+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.16938v1",
+  "published_at": "2026-07-18T19:20:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicle",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "行人",
+      "vision-language-action",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.16938v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "VLM/VLA"
+    ]
+  },
+  "title": "What Do They See? Interpreting Complex Road Scenarios Through the Eyes of Vision-Language-Action Models for Safe and Trustworthy Autonomous Vehicle Learning",
+  "title_zh": "他们看到了什么？通过视觉-语言-行动模型的视角解读复杂道路场景，以实现安全可信的自动驾驶学习",
+  "translation_url": "https://hjfy.top/arxiv/2607.16938"
+}

@@ -1,0 +1,56 @@
+{
+  "abstract": "Vision-only occupancy prediction requires recovering a semantic 3D occupancy field from calibrated surround-view images, where each view provides observations with ambiguous depth along camera rays. Existing methods have progressed from dense structured representations to sparse Gaussian primitives, improving the efficiency of 3D scene representation. However, Gaussian learning still relies primarily on image domain features, which provide limited explicit geometric information for volumetric reasoning. Our key observation is that effective Gaussian occupancy modeling requires not only sparse primitives, but also richer geometric and semantic learning cues. In this paper, we propose VGOcc, which learns visual and geometric cues from foundation models for Gaussian modeling. VGOcc incorporates these cues into primitive initialization and refinement, yielding a representation termed Visual-Geometric Gaussians tailored to semantic occupancy prediction. Specifically, we propose Visual-Geometric Gaussian Birth to form spatially balanced Gaussian centers from ray depth hypotheses, while visual semantic features initialize primitive attributes. Next, we design Pose-Aware Feature Learning to combine foundation tokens with camera embeddings and calibrated ray information. Features from neighboring views are then aggregated at projected 3D locations for each Gaussian refinement stage. Finally, Gaussian decoder refines birth Gaussians with pose-aware features and renders them into semantic occupancy. Experiments on nuScenes demonstrate that VGOcc achieves state-of-the-art performance in vision-only 3D occupancy prediction. Codes will be available at https://github.com/JHLin42in/VGOcc.",
+  "abstract_zh": "仅依赖视觉的占用预测需要从校准的全景图像中恢复语义三维占用场，其中每个视图提供沿相机光线的模糊深度观测。现有方法已从密集结构化表示进展到稀疏高斯原语，提高了三维场景表示的效率。然而，高斯学习仍主要依赖于图像域特征，这些特征为体积推理提供的明确几何信息有限。我们的关键观察是，有效的高斯占用建模不仅需要稀疏原语，还需要更丰富的几何和语义学习线索。在本文中，我们提出了VGOcc，它从基础模型中学习视觉和几何线索用于高斯建模。VGOcc将这些线索融入原语的初始化和细化中，产生一种称为视觉-几何高斯的表示，专门用于语义占用预测。具体而言，我们提出了视觉-几何高斯出生（Visual-Geometric Gaussian Birth），从光线深度假设中形成空间平衡的高斯中心，同时视觉语义特征初始化原语属性。接下来，我们设计了姿态感知特征学习（Pose-Aware Feature Learning），将基础标记与相机嵌入和校准光线信息结合。然后，在每个高斯细化阶段，从邻近视图的特征在投影的三维位置上进行聚合。最后，高斯解码器利用姿态感知特征细化出生高斯，并将其渲染为语义占用。在nuScenes上的实验表明，VGOcc在仅依赖视觉的三维占用预测中实现了最先进的性能。代码将发布在 https://github.com/JHLin42in/VGOcc。",
+  "arxiv_id": "2607.18078",
+  "arxiv_url": "https://arxiv.org/abs/2607.18078v1",
+  "authors": [
+    "Junhong Lin",
+    "Xianda Guo",
+    "Kangli Wang",
+    "Yuqi Ye",
+    "Xiaoyu Liang",
+    "Yanlun Peng",
+    "Wei Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-18078",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.474337+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.18078v1",
+  "published_at": "2026-07-20T15:46:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.18078v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "感知"
+    ]
+  },
+  "title": "VGOcc: Learning Visual-Geometric Gaussians for Vision-Centric 3D Driving Occupancy Prediction",
+  "title_zh": "VGOcc：学习视觉-几何高斯用于以视觉为中心的三维驾驶占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2607.18078"
+}

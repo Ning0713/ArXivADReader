@@ -1,0 +1,52 @@
+{
+  "abstract": "LiDAR scene flow estimation has settled into a monoculture: nearly all recent methods share the same feed-forward architecture and the same family of self-supervised losses, inheriting each other's assumptions, and each other's blind spots. When those assumptions fail, as they do for sparse, distant, or fast-moving objects, every method built on them fails together, and adding parameters or simulated training data does not fix what the formulation itself gets wrong. This paper takes the opposite path. We present CorrelationFlow, a training-free geometric framework that reduces scene flow to two textbook operations: connected-component labeling and correlation maximization on bird's-eye-view occupancy images. Objects are isolated as spatio-temporal connected components, their motions recovered as correlation peaks, and the resulting velocities propagated to all member points. However, this dense correlation evaluates every candidate displacement of every cluster and requires a window of past sweeps; therefore, we develop a sparse counterpart that operates on a single sweep pair by matching lightweight occupancy descriptors at boundary key points. Because nothing is trained, nothing is inherited: on the multi-domain test set of the Argoverse 2 2026 Scene Flow Challenge, spanning five datasets with heterogeneous sensors and platforms, CorrelationFlow ranked second among unsupervised methods and degrades most gracefully at long range, where the shared assumptions of learned methods break down. Our results suggest that a substantial share of the scene flow problem is solvable by classical computer vision, and that progress may require questioning the formulation, not scaling it.",
+  "abstract_zh": "LiDAR场景流估计已经进入了一种单一化的状态：几乎所有近期的方法都共享相同的前馈架构和相同类型的自监督损失，继承了彼此的假设和盲点。当这些假设失效时，例如在稀疏、远距离或快速移动的物体上，基于这些假设构建的每种方法都会一起失效，而增加参数或模拟训练数据并不能修正公式本身的错误。本文采取了相反的路径。我们提出了CorrelationFlow，这是一种无训练的几何框架，将场景流简化为两个教科书操作：连通组件标记和在鸟瞰图占用图像上的相关性最大化。物体被孤立为时空连通组件，其运动被恢复为相关性峰值，结果速度传播到所有成员点。然而，这种密集的相关性评估每个聚类的每个候选位移，并需要过去扫面的窗口；因此，我们开发了一种稀疏对应方法，通过在边界关键点匹配轻量级占用描述符，在单一扫面对上进行操作。由于没有经过训练，因此没有任何东西被继承：在Argoverse 2 2026场景流挑战的多领域测试集中，涵盖了五个具有异构传感器和平台的数据集，CorrelationFlow在无监督方法中排名第二，并且在长距离时表现最为优雅，此时学习方法的共享假设会崩溃。我们的结果表明，场景流问题的很大一部分可以通过经典计算机视觉解决，而进展可能需要质疑公式，而不是扩展它。",
+  "arxiv_id": "2607.29237",
+  "arxiv_url": "https://arxiv.org/abs/2607.29237v1",
+  "authors": [
+    "Minh-Quan Dao",
+    "Yancong Lin",
+    "Julie Stephany Berrio Perez",
+    "Holger Caesar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-03#paper-2607-29237",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:18.052105+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.29237v1",
+  "published_at": "2026-07-31T10:14:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "argoverse",
+      "bird's-eye",
+      "occupancy",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-08-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.29237v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "CorrelationFlow: A Training-Free Geometric Approach for LiDAR Scene Flow Estimation",
+  "title_zh": "CorrelationFlow：一种无训练的几何方法用于LiDAR场景流估计",
+  "translation_url": "https://hjfy.top/arxiv/2607.29237"
+}

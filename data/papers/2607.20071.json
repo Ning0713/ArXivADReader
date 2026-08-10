@@ -1,0 +1,60 @@
+{
+  "abstract": "Vision-centric 3D occupancy prediction provides dense scene representations essential for autonomous driving and robotic navigation, yet existing methods struggle to scale to high voxel resolutions due to prohibitive computational costs. To address this, we introduce GaussianSeed, a progressive multi-scale Gaussian occupancy prediction framework that organizes primitives into a coarse-to-fine hierarchy. Benefiting from this hierarchical design, GaussianSeed effectively circumvents the memory bottlenecks inherent in dense representations, successfully scaling to a $0.1\\text{m}$ spatial resolution while maintaining real-time inference capabilities. To comprehensively evaluate high-resolution geometric perception, we further construct TJScenes, a panoramic six-camera occupancy dataset with highly detailed $0.1\\text{m}$ annotations. Extensive experiments on Occ3D-nuScenes and TJScenes demonstrate that GaussianSeed delivers the lowest latency among all evaluated methods while maintaining highly competitive accuracy, advancing the efficiency-quality frontier of high-resolution 3D occupancy prediction.",
+  "abstract_zh": "以视觉为中心的3D占用预测提供了对自主驾驶和机器人导航至关重要的密集场景表示，但现有方法由于计算成本过高，难以扩展到高体素分辨率。为了解决这个问题，我们提出了GaussianSeed，一种渐进式多尺度高斯占用预测框架，将原始数据组织成粗到细的层次结构。得益于这种层次设计，GaussianSeed有效地规避了密集表示中固有的内存瓶颈，成功扩展到$0.1 ext{m}$的空间分辨率，同时保持实时推理能力。为了全面评估高分辨率几何感知，我们进一步构建了TJScenes，一个具有高度详细$0.1 ext{m}$标注的全景六摄像头占用数据集。在Occ3D-nuScenes和TJScenes上的大量实验表明，GaussianSeed在所有评估方法中提供了最低的延迟，同时保持了高度竞争的准确性，推动了高分辨率3D占用预测的效率与质量的前沿。",
+  "arxiv_id": "2607.20071",
+  "arxiv_url": "https://arxiv.org/abs/2607.20071v2",
+  "authors": [
+    "Xinzhuo Li",
+    "Xianghui Pan",
+    "Jiayuan Du",
+    "Wei Wei",
+    "Liuyi Wang",
+    "Chengju Liu",
+    "Qijun Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-23#paper-2607-20071",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:19.100719+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.20071v2",
+  "published_at": "2026-07-22T12:18:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "占用预测",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-07-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.20071v2",
+    "axi": "https://paper.axi404.top/daily/2026-07-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "GaussianSeed: Hierarchical Gaussian Seeding for High-Resolution 3D Occupancy Prediction",
+  "title_zh": "GaussianSeed：用于高分辨率3D占用预测的层次高斯种子",
+  "translation_url": "https://hjfy.top/arxiv/2607.20071"
+}

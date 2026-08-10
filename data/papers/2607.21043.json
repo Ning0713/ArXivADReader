@@ -1,0 +1,57 @@
+{
+  "abstract": "Safe and efficient navigation in mixed-traffic environments remains a critical challenge for Autonomous Vehicles (AVs), primarily due to the complex interdependence between the AV's decisions and the unpredictable reactions of human drivers. This paper introduces a comprehensive decision-making framework that formulates the driving interaction as a Generalized Nash Equilibrium Problem (GNEP). Unlike decoupled optimization approaches, this framework explicitly models shared safety and geometric constraints, ensuring that the feasibility of the AV's strategy is dynamically linked to the opponent's actions. To solve this non-convex problem in real-time, we propose a dedicated solver based on Particle Swarm Optimization (PSO). The complete architecture was validated on a test track using a real autonomous Renault Zo\\'e interacting with a human driver. Experimental results demonstrate the system's ability to handle critical scenarios by generating comfortable, human-like trajectories. Benchmarks confirm the solver's operational feasibility, achieving convergence in under 50 ms.",
+  "abstract_zh": "在混合交通环境中安全高效的导航仍然是自动驾驶汽车（AVs）面临的一个关键挑战，主要是由于自动驾驶汽车的决策与人类驾驶员的不可预测反应之间的复杂相互依赖关系。本文提出了一种全面的决策框架，将驾驶互动形式化为广义纳什均衡问题（GNEP）。与解耦优化方法不同，该框架明确建模了共享的安全和几何约束，确保自动驾驶汽车策略的可行性与对手的行为动态相关联。为了解决这一实时非凸问题，我们提出了一种基于粒子群优化（PSO）的专用求解器。完整的架构在测试赛道上进行了验证，使用真实的自动驾驶雷诺Zoe与人类驾驶员进行互动。实验结果表明，该系统能够通过生成舒适的人类驾驶轨迹来处理关键场景。基准测试确认了求解器的操作可行性，收敛时间在50毫秒以内。",
+  "arxiv_id": "2607.21043",
+  "arxiv_url": "https://arxiv.org/abs/2607.21043v1",
+  "authors": [
+    "Nouhed Naidja",
+    "Mohamed-Cherif Rahal",
+    "Steve Pechberti",
+    "Stéphane Font",
+    "Guillaume Sandou",
+    "Marc Revilloud"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-24#paper-2607-21043",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:27.442990+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.21043v1",
+  "published_at": "2026-07-23T08:25:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.21043v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "A Real-Time Generalized Nash Equilibrium Framework for Interaction-Aware Autonomous Driving in Mixed Traffic",
+  "title_zh": "一种实时广义纳什均衡框架用于混合交通中的互动感知自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2607.21043"
+}

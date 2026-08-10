@@ -1,0 +1,45 @@
+{
+  "abstract": "Existing iterative stereo matching methods primarily adopt two types of correspondence representation: explicit matching search via correlation volumes and local residual refinement via warped features, yet the two remain separately modeled. We propose WAVE-Stereo, built on a core insight: correlation volumes and feature warping provide complementary matching cues. \\textbf{GeoWarp Correspondence Encoder (GWCE)} encodes matching search, residual alignment, and disparity prior in parallel at the ConvGRU input. To mitigate matching degradation in textureless regions, we propose \\textbf{Periodic Global Context Propagation (PGCP)}, which propagates global spatial information in a periodic manner. On five real-world benchmarks -- Middlebury, ETH3D, KITTI 2012, KITTI 2015, and Booster -- WAVE-Stereo achieves competitive zero-shot generalization accuracy without any external foundation model prior, achieving 3.18\\% D1-all on KITTI 2015, 4.42\\% Bad-2.0 on Booster, and 66ms real-time inference, striking a favorable balance between accuracy and efficiency. Our code is available at https://github.com/yamanoko-do/WAVE-Stereo.",
+  "abstract_zh": "现有的迭代立体匹配方法主要采用两种对应关系表示：通过相关体积进行显式匹配搜索，以及通过扭曲特征进行局部残差精细化，但这两者仍然是分开建模的。我们提出了WAVE-Stereo，基于一个核心见解：相关体积和特征扭曲提供了互补的匹配线索。\\textbf{GeoWarp Correspondence Encoder (GWCE)}在ConvGRU输入中并行编码匹配搜索、残差对齐和视差先验。为了减轻在无纹理区域的匹配退化，我们提出了\\textbf{Periodic Global Context Propagation (PGCP)}，它以周期性方式传播全局空间信息。在五个真实世界基准测试上——Middlebury、ETH3D、KITTI 2012、KITTI 2015和Booster——WAVE-Stereo在没有任何外部基础模型先验的情况下，实现了具有竞争力的零-shot泛化精度，在KITTI 2015上达到了3.18\\% D1-all，在Booster上达到了4.42\\% Bad-2.0，并实现了66毫秒的实时推理，在准确性和效率之间取得了良好的平衡。我们的代码可在https://github.com/yamanoko-do/WAVE-Stereo获取。",
+  "arxiv_id": "2607.13674",
+  "arxiv_url": "https://arxiv.org/abs/2607.13674v1",
+  "authors": [
+    "Zehan Liu",
+    "Yage He",
+    "Xianwu Gong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-16#paper-2607-13674",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T12:58:49.788518+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.13674v1",
+  "published_at": "2026-07-15T10:15:05Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-07-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.13674v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": []
+  },
+  "title": "WAVE-Stereo: Warp-Aligned Volume Encoding for Stereo Matching",
+  "title_zh": "WAVE-Stereo：用于立体匹配的扭曲对齐体积编码",
+  "translation_url": "https://hjfy.top/arxiv/2607.13674"
+}

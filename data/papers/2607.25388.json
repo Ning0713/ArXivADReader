@@ -1,0 +1,56 @@
+{
+  "abstract": "Autonomous multi-vehicle racing requires real-time planning of diverse competitive behaviors in intense interactions. Existing planners often struggle to balance strategic diversity and computational efficiency. To address this challenge, we propose Sampling-based Game-Theoretic Planning (SGTP), a real-time framework that combines game-theoretic reasoning with GPU-accelerated sampling of control sequences and dynamics rollouts. Sampled trajectories are ranked using a game-aware cost to capture competitive interactions and generate diverse racing behaviors. Our planner then performs feasibility selection by explicitly enforcing track-boundary and dynamic collision-avoidance constraints, ensuring safe and reliable transitions between racing strategies. Extensive simulations on challenging tracks show that SGTP achieves a 95.24% win rate and a 99.35% task-completion ratio in highly interactive races, with a mean computational time of 0.095 s over multiple iterative solving steps. We also demonstrate the successful application of SGTP in large-scale scenarios with up to 10 agents. We release our code and provide an open-source benchmark of multi-agent autonomous racing algorithms to facilitate future research. Project page: https://sgtp-racing.github.io/.",
+  "abstract_zh": "自主多车辆赛车需要在激烈的互动中实时规划多样化的竞争行为。现有的规划器往往难以平衡战略多样性和计算效率。为了解决这一挑战，我们提出了基于采样的博弈论规划（SGTP），这是一个实时框架，结合了博弈论推理与GPU加速的控制序列和动态展开的采样。通过使用博弈感知成本对采样轨迹进行排名，以捕捉竞争互动并生成多样化的赛车行为。我们的规划器随后通过明确施加赛道边界和动态避碰约束来执行可行性选择，确保赛车策略之间的安全可靠过渡。在具有挑战性的赛道上进行的大量仿真表明，SGTP在高度互动的比赛中实现了95.24%的胜率和99.35%的任务完成率，多个迭代求解步骤的平均计算时间为0.095秒。我们还展示了SGTP在多达10个智能体的大规模场景中的成功应用。我们发布了代码，并提供了一个开源的多智能体自主赛车算法基准，以促进未来的研究。项目页面：https://sgtp-racing.github.io/",
+  "arxiv_id": "2607.25388",
+  "arxiv_url": "https://arxiv.org/abs/2607.25388v1",
+  "authors": [
+    "Zhouheng Li",
+    "Fangguo Zhao",
+    "Mattia Piccinini",
+    "Baha Zarrouki",
+    "Yuan Gao",
+    "Zitong Shan",
+    "Johannes Betz",
+    "Chen Lv",
+    "Lei Xie"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-29#paper-2607-25388",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:55.433068+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.25388v1",
+  "published_at": "2026-07-28T07:46:43Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-07-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.25388v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "SGTP: Sampling-based Game-Theoretic Planning for Real-Time Multi-Vehicle Autonomous Racing",
+  "title_zh": "SGTP：基于采样的博弈论规划用于实时多车辆自主赛车",
+  "translation_url": "https://hjfy.top/arxiv/2607.25388"
+}

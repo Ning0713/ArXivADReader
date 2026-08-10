@@ -1,0 +1,53 @@
+{
+  "abstract": "Autonomous racing demands planning algorithms that balance vehicle dynamics at the limits of handling with strategic decision-making in competitive multi-agent scenarios. Game theory provides a mathematical framework for modeling these interactions, enabling interactive trajectory planning and strategic behaviors, such as blocking. However, directly solving full dynamic games online is computationally prohibitive and challenging to integrate into robust, high-frequency autonomous software stacks. This paper proposes a hybrid architecture that integrates game-theoretic reasoning into a sampling-based motion planner, combining strategic interactions with robust trajectory generation. Building upon an $\\alpha$-potential game formulation, we utilize an offline-learned potential function to capture multi-agent interactions. During online operation, a gradient-based optimization dynamically refines interaction parameters to generate an \\textit{Interaction Reference Path}. This path serves as a dynamic cost bias within a high-frequency sampling planner. We evaluate our approach in a high-fidelity simulation environment on the Yas Marina Circuit. Qualitative and quantitative results demonstrate that our approach successfully induces defensive behaviors like blocking without carrying the computational burden of full dynamic game solvers.",
+  "abstract_zh": "自主赛车要求规划算法在车辆动态与竞争多智能体场景中的战略决策之间取得平衡。博弈论提供了一种数学框架，用于建模这些交互，支持交互式轨迹规划和战略行为，如阻挡。然而，在线直接求解完整动态博弈在计算上是不可行的，并且难以集成到稳健的高频自主软件堆栈中。本文提出了一种混合架构，将博弈论推理集成到基于采样的运动规划器中，结合战略交互与稳健的轨迹生成。在$\beta$-潜力博弈的基础上，我们利用离线学习的潜力函数来捕捉多智能体交互。在在线操作期间，基于梯度的优化动态地细化交互参数，以生成 extit{交互参考路径}。该路径作为高频采样规划器中的动态成本偏置。我们在雅斯玛丽娜赛道的高保真仿真环境中评估了我们的方法。定性和定量结果表明，我们的方法成功地诱导了如阻挡等防御行为，而无需承担完整动态博弈求解器的计算负担。",
+  "arxiv_id": "2607.13354",
+  "arxiv_url": "https://arxiv.org/abs/2607.13354v1",
+  "authors": [
+    "Alexander Langmann",
+    "Frederico Pita de Araujo",
+    "Mattia Piccinini",
+    "Johannes Betz"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-16#paper-2607-13354",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T12:58:49.728925+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.13354v1",
+  "published_at": "2026-07-15T00:27:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-07-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.13354v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "A Hybrid Sampling-Based Trajectory Planner with Game-Theoretic Guidance for Autonomous Racing",
+  "title_zh": "一种基于混合采样的轨迹规划器，结合博弈论指导用于自主赛车",
+  "translation_url": "https://hjfy.top/arxiv/2607.13354"
+}

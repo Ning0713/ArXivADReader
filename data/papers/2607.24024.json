@@ -1,0 +1,50 @@
+{
+  "abstract": "Stereo matching and surface normal estimation are fundamental tasks in 3D vision. However, existing feed-forward stereo methods still struggle to produce reliable predictions in challenging regions, mainly due to the lack of strong geometric priors. In this paper, we propose $\\textbf{GeoStereo}$, a unified stereo geometry estimation framework that leverages powerful diffusion priors to jointly predict disparity and surface normals. Specifically, GeoStereo couples a feed-forward stereo matching pipeline with a diffusion-based normal estimation branch. To enable effective interaction between the two tasks, we introduce a disparity to normal initialization strategy and construct a warp to left-view condition for the diffusion process. This coupled design allows the diffusion branch to provide strong structural priors that enhance disparity estimation in ill-posed regions, while the feed-forward branch offers reliable geometric guidance for accurate normal prediction. Extensive experiments show that GeoStereo performs reliably in challenging scenarios, including low-light environments, highly reflective surfaces, and transparent objects. Under zero-shot settings, it achieves Rank-1 disparity estimation on multiple benchmarks, including KITTI and NYUv2, and delivers the best normal estimation accuracy on many real indoor benchmarks, such as iBims-1 and ScanNet. Project page: https://qz-wei.github.io/GeoStereo.github.io/",
+  "abstract_zh": "立体匹配和表面法线估计是三维视觉中的基本任务。然而，现有的前馈立体方法在复杂区域仍然难以产生可靠的预测，主要是由于缺乏强大的几何先验。在本文中，我们提出了 $ extbf{GeoStereo}$，一种统一的立体几何估计框架，利用强大的扩散先验共同预测视差和表面法线。具体而言，GeoStereo 将前馈立体匹配管道与基于扩散的法线估计分支相结合。为了实现这两项任务之间的有效交互，我们引入了一种视差到法线的初始化策略，并为扩散过程构建了一个左视图条件的变换。这种耦合设计使得扩散分支能够提供强大的结构先验，从而增强在不适定区域的视差估计，而前馈分支则为准确的法线预测提供可靠的几何指导。大量实验表明，GeoStereo 在低光环境、高反射表面和透明物体等挑战性场景中表现可靠。在零-shot 设置下，它在多个基准测试（包括 KITTI 和 NYUv2）上实现了 Rank-1 视差估计，并在许多真实室内基准（如 iBims-1 和 ScanNet）上提供了最佳的法线估计精度。项目页面：https://qz-wei.github.io/GeoStereo.github.io/",
+  "arxiv_id": "2607.24024",
+  "arxiv_url": "https://arxiv.org/abs/2607.24024v2",
+  "authors": [
+    "Qizhe Wei",
+    "Xianda Guo",
+    "Shaocong Xu",
+    "Hong Li",
+    "Runyi Yang",
+    "Hao Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-24024",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.585014+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.24024v2",
+  "published_at": "2026-07-27T05:40:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.24024v2",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "A Unified Stereo Geometry Estimation Framework for Disparity and Surface Normal",
+  "title_zh": "一种统一的立体几何估计框架用于视差和表面法线",
+  "translation_url": "https://hjfy.top/arxiv/2607.24024"
+}

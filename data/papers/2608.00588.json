@@ -1,0 +1,49 @@
+{
+  "abstract": "Layout-to-image diffusion models have achieved impressive semantic controllability by conditioning generation on category-level segmentation maps. However, such category-aligned control is not necessarily instance-addressable: multiple nearby objects from the same category are often treated as a shared semantic region, leading to ambiguous boundaries, averaged appearances, and feature confusion among instances. This limitation is particularly evident in urban scene synthesis, where small and crowded pedestrians or vehicles require fine-grained instance separation while preserving global scene consistency. In this paper, we propose InstancePin, an instance-addressable layout-to-image diffusion framework that pins each object instance with an explicit coordinate anchor. Instead of directly injecting instance masks into the pretrained backbone, InstancePin introduces an independent instance-aware adapter to preserve the category-level generation prior while learning instance-specific spatial control. For each instance, its center coordinate is encoded with Fourier features and projected into a coordinate token, which serves as a spatial anchor queried by latent image features through coordinate pinning attention. To make these anchors spatially meaningful, we further supervise the coordinate attention maps with instance regions, encouraging each coordinate token to activate its corresponding object area. Finally, an instance-mask guided fusion module routes pretrained backbone features to non-instance regions and adapter features to instance regions, enabling local instance refinement without sacrificing global semantic fidelity. Extensive experiments on Cityscapes demonstrate that InstancePin mitigates instance entanglement in dense layouts and improves both image fidelity and semantic consistency.",
+  "abstract_zh": "布局到图像的扩散模型通过以类别级别的分割图为条件，实现了令人印象深刻的语义可控性。然而，这种类别对齐的控制并不一定是实例可寻址的：来自同一类别的多个相邻物体常常被视为共享的语义区域，导致模糊的边界、平均的外观以及实例之间的特征混淆。这一限制在城市场景合成中尤为明显，因为小型且拥挤的行人或车辆需要细粒度的实例分离，同时保持全局场景的一致性。本文提出了InstancePin，一种实例可寻址的布局到图像扩散框架，通过显式的坐标锚点固定每个物体实例。InstancePin并不是直接将实例掩码注入预训练的主干网络，而是引入了一个独立的实例感知适配器，以在学习实例特定的空间控制的同时保留类别级别的生成先验。对于每个实例，其中心坐标通过傅里叶特征编码并投影到一个坐标标记中，该标记作为通过坐标固定注意力查询的空间锚点。为了使这些锚点在空间上具有意义，我们进一步用实例区域监督坐标注意力图，鼓励每个坐标标记激活其对应的物体区域。最后，一个实例掩码引导的融合模块将预训练主干特征路由到非实例区域，并将适配器特征路由到实例区域，从而实现局部实例的细化，而不牺牲全局语义的保真度。在Cityscapes上的大量实验表明，InstancePin减轻了密集布局中的实例纠缠，并提高了图像的保真度和语义一致性。",
+  "arxiv_id": "2608.00588",
+  "arxiv_url": "https://arxiv.org/abs/2608.00588v1",
+  "authors": [
+    "Chaoyue Wu",
+    "Yunfei Zhang",
+    "Si Wu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-00588",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.038648+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.00588v1",
+  "published_at": "2026-08-01T10:54:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes",
+      "车辆",
+      "行人"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.00588v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "世界模型/生成",
+      "多传感器融合"
+    ]
+  },
+  "title": "InstancePin: Instance-Addressable Layout-to-Image Diffusion via Coordinate Pinning",
+  "title_zh": "InstancePin：通过坐标固定实现实例可寻址的布局到图像扩散",
+  "translation_url": "https://hjfy.top/arxiv/2608.00588"
+}

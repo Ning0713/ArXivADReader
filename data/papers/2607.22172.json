@@ -1,0 +1,56 @@
+{
+  "abstract": "Accurate yet low-latency depth is essential for radar-camera perception in autonomous systems. Cameras provide rich appearance but lack metric scale, whereas automotive radar offers metric range but is sparse and noisy. Many pipelines are multi-stage or depend on auxiliary annotations, increasing latency and limiting portability. We introduce JustDepth, a single-stage radar-camera depth estimator trained only with radar, camera, and single-scan LiDAR. All radar returns are aggregated into a fixed-width 1D representation, decoupling runtime from point count. A Height Fusion Block fuses modalities, a lightweight GNN propagates depth globally, and a training-only confidence decoder stabilizes learning with zero test-time cost. We mitigate stripe artifacts via simple augmentations and quantify them using the Vertical-Horizontal Gradient Ratio (VHGR). On nuScenes, compared to recent state-of-the-art methods, JustDepth maintains accuracy while reducing inference time by 39.7x and stripe artifacts by 66% as measured by VHGR.",
+  "abstract_zh": "在自主系统中，准确且低延迟的深度信息对于雷达-相机感知至关重要。相机提供丰富的外观信息，但缺乏度量尺度；而汽车雷达则提供度量范围，但数据稀疏且噪声较大。许多处理流程是多阶段的，或依赖辅助注释，这增加了延迟并限制了可移植性。我们提出了JustDepth，一种仅使用雷达、相机和单次扫描激光雷达训练的单阶段雷达-相机深度估计器。所有雷达返回信号被聚合成固定宽度的1D表示，从而将运行时间与点数解耦。高度融合模块（Height Fusion Block）融合了不同模态，轻量级图神经网络（GNN）在全局范围内传播深度，而仅在训练时使用的置信解码器则以零测试时间成本稳定学习。我们通过简单的增强方法减轻条纹伪影，并使用垂直-水平梯度比（Vertical-Horizontal Gradient Ratio, VHGR）对其进行量化。在nuScenes数据集上，与最近的最先进方法相比，JustDepth在保持准确性的同时，推理时间减少了39.7倍，条纹伪影减少了66%（根据VHGR测量）。",
+  "arxiv_id": "2607.22172",
+  "arxiv_url": "https://arxiv.org/abs/2607.22172v1",
+  "authors": [
+    "Wooyung Yun",
+    "Dongwook Kim",
+    "Soomok Lee"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-27#paper-2607-22172",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:35.544280+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.22172v1",
+  "published_at": "2026-07-24T10:20:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "autonomous",
+      "automotive",
+      "lidar",
+      "radar",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 46
+  },
+  "seen_dates": [
+    "2026-07-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.22172v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "JustDepth: Real-Time Radar-Camera Depth Estimation with Single-Scan LiDAR Supervision",
+  "title_zh": "JustDepth：基于单次扫描激光雷达监督的实时雷达-相机深度估计",
+  "translation_url": "https://hjfy.top/arxiv/2607.22172"
+}

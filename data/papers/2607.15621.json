@@ -1,0 +1,63 @@
+{
+  "abstract": "Large language models bring instruction following and scene reasoning to end-to-end driving, but their inference latency collides with the control rate a vehicle requires. Existing closed-loop agents hide this gap by invoking the model on alternate simulation ticks and replaying the previous command in between, so half of all control outputs ignore the newest observations. We present a fast-slow architecture that removes this compromise. A frozen 7B vision-language backbone acts as the slow system, digesting navigation instructions and visual history at low frequency while exposing its per-layer key-value cache as a standing representation of the scene. A lightweight action expert acts as the fast system, attending to this cache and to the current camera frame at every simulation tick to regress waypoints in a single forward pass. Since the cache lags behind the world at deployment, we train the expert under randomized staleness, aligning training with asynchronous execution. On LangAuto-Short routes in CARLA, our system produces fresh control at every 50 ms simulation tick and lifts route completion from 37.0 to 94.0 over the frame-skipping baseline. A frame-skip ablation with the same expert separates the two factors at work: the expert raises the driving score on its own, while per-tick freshness raises completion from 82.1 to 94.0 and cuts red-light violations by a third. Trained on a single town, the expert transfers zero-shot to two unseen towns, holding 84-94% route completion where the baseline reaches 31-41%. It reduces open-loop waypoint error by nearly a factor of four compared to the backbone's own action head, at a per-tick model cost of 32 ms that is independent of history length on a single consumer GPU.",
+  "abstract_zh": "大型语言模型将指令跟随和场景推理引入端到端驾驶，但它们的推断延迟与车辆所需的控制频率相冲突。现有的闭环代理通过在交替的仿真时刻调用模型，并在两者之间重放先前的命令，来掩盖这一差距，因此一半的控制输出忽略了最新的观察结果。我们提出了一种快慢架构，消除了这种妥协。一个冻结的7B视觉-语言主干作为慢系统，以低频率消化导航指令和视觉历史，同时将其每层的键值缓存作为场景的静态表示。一个轻量级的动作专家作为快系统，在每个仿真时刻关注该缓存和当前的相机帧，以单次前向传递回归航点。由于缓存在部署时滞后于现实世界，我们在随机陈旧性下训练专家，使训练与异步执行对齐。在CARLA的LangAuto-Short路线中，我们的系统在每50毫秒的仿真时刻产生新鲜的控制，并将路线完成率从37.0提升至94.0，超越了跳帧基线。与相同专家的跳帧消融实验分离了两种作用因素：专家单独提高了驾驶评分，而每个时刻的新鲜度将完成率从82.1提升至94.0，并减少了三分之一的红灯违规。专家在一个城镇上训练后，零样本迁移到两个未见过的城镇，保持84-94%的路线完成率，而基线仅达到31-41%。与主干的动作头相比，它将开放循环航点误差降低了近四倍，在单个消费级GPU上，每个时刻的模型成本为32毫秒，与历史长度无关。",
+  "arxiv_id": "2607.15621",
+  "arxiv_url": "https://arxiv.org/abs/2607.15621v1",
+  "authors": [
+    "Yun Li",
+    "Jiachen Gong",
+    "Simon Thompson",
+    "Ehsan Javanmardi",
+    "Qunli Zhang",
+    "Zifan Zeng",
+    "Shiming Liu",
+    "Peng Wang",
+    "Zixuan Guo",
+    "Manabu Tsukada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-20#paper-2607-15621",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T12:59:54.584223+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.15621v1",
+  "published_at": "2026-07-17T04:40:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "carla",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 72
+  },
+  "seen_dates": [
+    "2026-07-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.15621v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "VLM/VLA",
+      "仿真/数据"
+    ]
+  },
+  "title": "Think at 5 Hz, Act at 20 Hz: Asynchronous Fast-Slow Vision-Language-Action Inference for Closed-Loop Driving",
+  "title_zh": "以5 Hz思考，以20 Hz行动：闭环驾驶中的异步快慢视觉-语言-动作推断",
+  "translation_url": "https://hjfy.top/arxiv/2607.15621"
+}

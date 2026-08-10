@@ -1,0 +1,76 @@
+{
+  "abstract": "In autonomous driving development, a perception dataset is crucial, as it provides fundamental data for training, testing, and validating algorithms for an autonomous vehicle's multimodal perception systems. So far, most research has concentrated on providing datasets for well-structured urban environments. This work introduces the A2RL V\\textsubscript{max} open-source dataset, specifically designed for perception tasks in high-speed autonomous driving and multi-vehicle interaction. The dataset was captured during the 2024 Abu Dhabi Autonomous Racing League (A2RL), held at the Yas Marina F1 Circuit, with participation from all competing teams. It contains diverse scenarios, including single-vehicle data at varying speeds, multi-vehicle sessions, and the full final four-vehicle race. The dataset contains almost 30,000 professionally annotated LiDAR point clouds, along with RADAR point clouds. In particular, it is the first large-scale dataset in autonomous racing to feature professionally annotated LiDAR point clouds, enabling deep learning-based perception research. The data is provided in a developer-friendly format, enabling easy implementation and evaluation in future research. We provide implementation and evaluation for off-the-shelf 3D detection and tracking methods. Although baseline methods show promising results for both 3D detection and tracking, specialized methods are required to address the unique challenges of high-speed autonomous driving. For a detailed description of the dataset, please visit the \\href{https://tum-avs.github.io/A2RL_Dataset_website/}{A2RL V\\textsubscript{max} Dataset Website}",
+  "abstract_zh": "在自主驾驶的发展中，感知数据集至关重要，因为它为训练、测试和验证自主车辆的多模态感知系统的算法提供了基础数据。迄今为止，大多数研究集中于为结构良好的城市环境提供数据集。本研究介绍了A2RL V extsubscript{max}开源数据集，专门为高速自主驾驶和多车辆交互的感知任务而设计。该数据集是在2024年阿布扎比自主赛车联盟（A2RL）期间捕获的，比赛在亚斯码头F1赛道举行，所有参赛队伍均参与其中。数据集中包含多种场景，包括不同速度下的单车数据、多车会话以及完整的四车决赛。数据集包含近30,000个经过专业标注的LiDAR点云，以及RADAR点云。特别地，这是自主赛车领域首个具有专业标注LiDAR点云的大规模数据集，能够支持基于深度学习的感知研究。数据以开发者友好的格式提供，便于未来研究中的实施和评估。我们提供了现成的3D检测和跟踪方法的实施与评估。尽管基线方法在3D检测和跟踪方面显示出良好的结果，但仍需专门的方法来应对高速自主驾驶的独特挑战。有关数据集的详细描述，请访问[A2RL V extsubscript{max}数据集网站](https://tum-avs.github.io/A2RL_Dataset_website/)。",
+  "arxiv_id": "2607.17813",
+  "arxiv_url": "https://arxiv.org/abs/2607.17813v1",
+  "authors": [
+    "Marvin Klemp",
+    "Dominic Ebner",
+    "Cornelius Schröder",
+    "Davide Malvezzi",
+    "László Turányi",
+    "Riccardo Donati",
+    "Ilia Schminik",
+    "Xia Ning",
+    "Yanxin Zhou",
+    "Matthew Flagg",
+    "Christoph Stiller",
+    "Markus Lienkamp",
+    "Marko Bertogna",
+    "Gergely Bári",
+    "Andreas Birk",
+    "Ren Jin",
+    "Chen Lv",
+    "Johannes Betz"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-17813",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.342217+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.17813v1",
+  "published_at": "2026-07-20T10:59:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicle",
+      "autonomous racing",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "3d detection",
+      "lidar",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.17813v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "A2RL V\\textsubscript{max}: The A2RL autonomous racing dataset for long-range, high-speed perception and multi-vehicle interaction",
+  "title_zh": "A2RL V extsubscript{max}: A2RL自主赛车数据集用于长距离、高速感知与多车辆交互",
+  "translation_url": "https://hjfy.top/arxiv/2607.17813"
+}

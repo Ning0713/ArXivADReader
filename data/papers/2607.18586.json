@@ -1,0 +1,47 @@
+{
+  "abstract": "Autonomous racing exposes the sim-to-real gap under extreme operating conditions characterized by high speed, tight stability margins, and stringent real-time constraints. Although simulation is indispensable for development, controllers that perform well in simulation often degrade abruptly on physical platforms due to interacting effects of dynamics mismatch, estimation delay, and execution-layer latency. This paper frames sim-to-real transfer in autonomous racing as a full-stack, real-time systems problem. We introduce a structured three-layer perspective (Physical/Cyber/Execution) to analyze how mismatches propagate and amplify through closed-loop feedback. We present diagnostic metrics beyond nominal lap time, including performance flip, stability-oriented measures, sensitivity to delay and noise, and latency distribution characterization. Mitigation strategies are synthesized from a deployment-oriented viewpoint, emphasizing execution-aware and delay-aware design. Finally, we outline benchmarking guidelines that enable reproducible and fair sim-to-real evaluation under compute and timing constraints. The resulting framework clarifies cross-layer failure mechanisms and provides practical design principles for deployable autonomous racing systems operating near dynamic limits.",
+  "abstract_zh": "自主赛车在极端操作条件下暴露了仿真与现实之间的差距，这些条件的特点是高速、紧凑的稳定边际和严格的实时约束。尽管仿真在开发中不可或缺，但在物理平台上表现良好的控制器往往由于动态不匹配、估计延迟和执行层延迟的相互作用而急剧下降。本文将自主赛车中的仿真到现实转移框架化为一个全栈实时系统问题。我们引入了一个结构化的三层视角（物理/网络/执行），以分析不匹配如何通过闭环反馈传播和放大。我们提出了超越名义圈速的诊断指标，包括性能翻转、稳定性导向的度量、对延迟和噪声的敏感性以及延迟分布特征。缓解策略从部署导向的角度进行综合，强调对执行和延迟的关注设计。最后，我们概述了在计算和时间约束下实现可重复和公平的仿真到现实评估的基准指南。所提出的框架阐明了跨层失败机制，并为在动态极限附近运行的可部署自主赛车系统提供了实用的设计原则。",
+  "arxiv_id": "2607.18586",
+  "arxiv_url": "https://arxiv.org/abs/2607.18586v1",
+  "authors": [
+    "Hossein Maghsoumi",
+    "Yaser P. Fallah"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-22#paper-2607-18586",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:12.304929+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.18586v1",
+  "published_at": "2026-07-20T23:45:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "sim-to-real",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 37
+  },
+  "seen_dates": [
+    "2026-07-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.18586v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": []
+  },
+  "title": "Bridging the Sim-to-Real Gap under Real-Time Constraints in Autonomous Racing",
+  "title_zh": "在实时约束下弥合自主赛车中的仿真与现实差距",
+  "translation_url": "https://hjfy.top/arxiv/2607.18586"
+}

@@ -1,0 +1,43 @@
+{
+  "abstract": "Semantic segmentation models are vulnerable to transferable adversarial perturbations, yet evaluating transfer attacks on dense prediction models can be computationally expensive. Existing ensemble attacks often rely on multiple surrogate models, increasing the computation cost, even harder for segmentation. This paper studies an efficient single-source alternative for transferable attacks on semantic segmentation. We formulate transferable attack composition as a chained computation over differentiable attack components, allowing the expensive source-model gradient computation to be shared. To reduce the update instability introduced by chained composition, we further use an integrated-gradient-style path-averaged direction as an empirical stabilization heuristic. Experiments on Pascal VOC and Cityscapes evaluate the resulting transferability efficiency trade-off across CNN- and transformer-based segmentation models. IGME achieves competitive transferability compared with single-source baselines and favorable runtime compared with model-ensemble attacks, while requiring access to only one source model.",
+  "abstract_zh": "语义分割模型对可转移的对抗扰动存在脆弱性，但在密集预测模型上评估转移攻击可能会计算成本高昂。现有的集成攻击通常依赖多个替代模型，增加了计算成本，对分割任务来说更是如此。本文研究了一种高效的单源替代方案，用于对语义分割进行可转移攻击。我们将可转移攻击的组合形式化为对可微分攻击组件的链式计算，从而允许昂贵的源模型梯度计算得以共享。为了减少链式组合引入的更新不稳定性，我们进一步使用集成梯度风格的路径平均方向作为经验稳定化启发式方法。在 Pascal VOC 和 Cityscapes 上的实验评估了在基于 CNN 和变换器的分割模型中所获得的转移效率与计算时间的权衡。IGME 在与单源基线相比时实现了具有竞争力的转移性，并且与模型集成攻击相比具有良好的运行时间，同时仅需访问一个源模型。",
+  "arxiv_id": "2607.27465",
+  "arxiv_url": "https://arxiv.org/abs/2607.27465v1",
+  "authors": [
+    "Mengqi He",
+    "Jing Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-31#paper-2607-27465",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:10.269416+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.27465v1",
+  "published_at": "2026-07-29T21:08:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-07-31"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.27465v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-31"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "IGME: Efficient Chained Method Ensemble for Transferable Semantic Segmentation Attacks",
+  "title_zh": "IGME：用于可转移语义分割攻击的高效链式方法集成",
+  "translation_url": "https://hjfy.top/arxiv/2607.27465"
+}

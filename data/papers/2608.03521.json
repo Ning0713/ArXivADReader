@@ -1,0 +1,57 @@
+{
+  "abstract": "Forecasting precise future motion of surrounding agents is essential for reliable autonomous vehicles. However, as the demand for longer prediction horizons increases, existing endpoint-completion or iterative-refine methods increasingly struggle with weak guidance and compounding errors. To tackle the long-horizon prediction challenge, we propose Pivot-Centric Trajectory Prediction (PCTP). By introducing ``pivots'' and focusing on predicting pivot points along extended trajectories, we divide the long-term prediction task into short-term sub-tasks at various scales. Specifically, PCTP decouples the long-term trajectory predicting process into two processes: pivot prediction and pivot-based trajectory refinement. The pivot prediction process aims to utilize global map context and agent-to-agent interactions to identify these ``pivot points'', while the pivot-based trajectory refinement process focuses on local map details and refines the short-term trajectory based on predicted ``pivot points''. Compared with existing methods, PCTP provides more intermediate guidance while reducing compounding errors. Moreover, PCTP is a flexible approach that can be integrated into most state-of-the-art trajectory prediction models. Experimental results show that PCTP improves the prediction accuracy of leading models on both Argoverse I and Argoverse II datasets with minimal impact on model size. Specifically, PCTP combined with QCNet outperforms all published ensemble-free methods on the Argoverse II leaderboard at submission.",
+  "abstract_zh": "准确预测周围代理的未来运动对于可靠的自动驾驶车辆至关重要。然而，随着对更长预测时间范围的需求增加，现有的端点完成或迭代优化方法在弱引导和累积误差方面越来越难以应对。为了解决长时间预测的挑战，我们提出了以枢轴为中心的轨迹预测（Pivot-Centric Trajectory Prediction, PCTP）。通过引入“枢轴”并专注于预测沿扩展轨迹的枢轴点，我们将长期预测任务分解为不同尺度的短期子任务。具体而言，PCTP将长期轨迹预测过程解耦为两个过程：枢轴预测和基于枢轴的轨迹细化。枢轴预测过程旨在利用全局地图上下文和代理间的互动来识别这些“枢轴点”，而基于枢轴的轨迹细化过程则关注局部地图细节，并根据预测的“枢轴点”细化短期轨迹。与现有方法相比，PCTP提供了更多的中间引导，同时减少了累积误差。此外，PCTP是一种灵活的方法，可以集成到大多数最先进的轨迹预测模型中。实验结果表明，PCTP在Argoverse I和Argoverse II数据集上提高了领先模型的预测准确性，对模型大小的影响最小。具体而言，PCTP与QCNet结合在Argoverse II排行榜上超越了所有已发布的无集成方法。",
+  "arxiv_id": "2608.03521",
+  "arxiv_url": "https://arxiv.org/abs/2608.03521v1",
+  "authors": [
+    "Xiucong Zhao",
+    "Jindong Tian",
+    "Hao Miao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-05#paper-2608-03521",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:01:37.337929+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.03521v1",
+  "published_at": "2026-08-04T12:05:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "argoverse",
+      "autonomous",
+      "驾驶",
+      "车辆",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-08-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.03521v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "地图/定位"
+    ]
+  },
+  "title": "Pivot-Centric Trajectory Prediction: Bridging Long Horizons via Dynamical Guidance",
+  "title_zh": "以枢轴为中心的轨迹预测：通过动态引导连接长时间预测",
+  "translation_url": "https://hjfy.top/arxiv/2608.03521"
+}

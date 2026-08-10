@@ -1,0 +1,62 @@
+{
+  "abstract": "In intelligent transportation systems, roadside 3D object detection provides wide-area perception crucial for traffic understanding, cooperative early warning, and safe autonomous driving. However, existing methods suffer from high sensitivity to camera extrinsics; even slight deviations (whether manifesting as transient jitter or persistent drift) can be significantly amplified by projective geometry. This cascade results in severe feature misalignment and degraded localization. To mitigate this limitation, we propose RECO, a region-aware extrinsic compensation framework that corrects extrinsics using piecewise 6-DoF pose offsets. RECO predicts a learnable range boundary to partition the scene into near and far regions, estimating region-specific pose corrections. A differentiable sigmoid gate then smoothly blends the two compensated geometries to preserve continuous BEV sampling and facilitate stable optimization. To supervise the refinement of extrinsics, we introduce an auxiliary reprojection loss that compares 2D bounding boxes projected from 3D ground truth against 2D annotations, optimizing it jointly with the standard detection objective. Extensive experiments on the DAIR-V2X-I and Rope3D benchmarks under extrinsic perturbations demonstrate consistent improvements over state-of-the-art baselines across both yaw and $z$-axis deviations. RECO also generalizes from transient perturbations to persistent shifts, maintaining highly competitive performance under strict calibration uncertainty.",
+  "abstract_zh": "在智能交通系统中，路边3D物体检测提供了对交通理解、协作预警和安全自主驾驶至关重要的广域感知。然而，现有方法对相机外部参数高度敏感；即使是轻微的偏差（无论是表现为瞬时抖动还是持续漂移）也会通过投影几何被显著放大。这种级联效应导致特征错位严重和定位精度下降。为了解决这一限制，我们提出了RECO，一个区域感知的外部补偿框架，通过分段的6自由度姿态偏移来校正外部参数。RECO预测一个可学习的范围边界，将场景划分为近区域和远区域，估计区域特定的姿态修正。然后，一个可微分的sigmoid门平滑地融合这两种补偿几何，以保持连续的鸟瞰视图采样并促进稳定的优化。为了监督外部参数的精细调整，我们引入了一个辅助重投影损失，该损失比较从3D真实值投影到2D的边界框与2D注释，联合优化标准检测目标。针对DAIR-V2X-I和Rope3D基准在外部扰动下的广泛实验表明，在偏航和$z$轴偏差方面，相较于最先进的基线方法，RECO始终表现出一致的改进。RECO还能够从瞬时扰动推广到持续偏移，在严格的校准不确定性下保持高度竞争的性能。",
+  "arxiv_id": "2607.20947",
+  "arxiv_url": "https://arxiv.org/abs/2607.20947v1",
+  "authors": [
+    "Junsheng Du",
+    "Zhaocheng He",
+    "Yuhuan Lu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-24#paper-2607-20947",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:27.465547+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.20947v1",
+  "published_at": "2026-07-23T05:56:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "v2x",
+      "dair-v2x",
+      "autonomous",
+      "driving",
+      "traffic",
+      "roadside",
+      "驾驶",
+      "交通",
+      "bev",
+      "3d object detection",
+      "3d detection",
+      "roadside 3d detection"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.20947v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "3D 检测",
+      "深度/几何"
+    ]
+  },
+  "title": "RECO: Region-Aware Compensation for Extrinsic Perturbations in Roadside 3D Detection",
+  "title_zh": "RECO：针对路边3D检测中外部扰动的区域感知补偿",
+  "translation_url": "https://hjfy.top/arxiv/2607.20947"
+}

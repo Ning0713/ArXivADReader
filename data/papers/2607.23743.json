@@ -1,0 +1,55 @@
+{
+  "abstract": "Autonomous navigation across large off-road environments remains a challenging problem. Onboard sensors perceive only the immediate surroundings, yet safe and efficient routes depend on terrain features that extend well beyond the sensor horizon. Geo-spatial data sources such as satellite imagery, aerial LiDAR, and vector maps can close this gap, but learning traversability from them is difficult: dense labels are unavailable at scale, and existing methods rely on short-range sensing. We propose an efficient formulation that learns a continuous traversability map from overhead data, supervised directly by human-driven GPS trajectories and shaped by self-supervised geometric priors from LiDAR. Alongside the model, we release a public dataset of 299 scenes spanning $\\sim\\!1{,}244\\,\\mathrm{km}^{2}$ of diverse terrain, paired with $1{,}130\\,\\mathrm{km}$ of human driving. In field trials on a Clearpath Warthog across seven routes at two sites, our method achieves trajectories within $3.66\\%$ of human path length and reduces operator interventions by $\\sim\\!85\\%$ compared to local-planner-only autonomy.",
+  "abstract_zh": "在广阔的越野环境中进行自主导航仍然是一个具有挑战性的问题。机载传感器只能感知周围的即时环境，而安全高效的路线依赖于超出传感器视野的地形特征。地理空间数据源，如卫星图像、航空激光雷达（LiDAR）和矢量地图，可以弥补这一差距，但从中学习可通行性是困难的：大规模的密集标签不可用，现有方法依赖于短距离感知。我们提出了一种高效的公式，通过直接由人类驱动的GPS轨迹监督，并通过来自LiDAR的自监督几何先验进行塑造，从上方数据中学习连续的可通行性地图。我们还发布了一个公共数据集，包含299个场景，覆盖约1,244平方公里的多样地形，并配有1,130公里的人类驾驶数据。在对Clearpath Warthog进行的现场试验中，在两个地点的七条路线中，我们的方法实现了与人类路径长度相差3.66%的轨迹，并将操作员干预减少了约85%，相比于仅依赖局部规划器的自主性。",
+  "arxiv_id": "2607.23743",
+  "arxiv_url": "https://arxiv.org/abs/2607.23743v1",
+  "authors": [
+    "Kasi Viswanath",
+    "Jason M. Gregory",
+    "Shaunak Kolhe",
+    "Srikanth Saripalli"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-23743",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.481508+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.23743v1",
+  "published_at": "2026-07-26T16:36:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "lidar",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.23743v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "Learning Traversability-Aware Global Planners for Long Horizon Off-Road Navigation",
+  "title_zh": "学习考虑可通行性的全局规划器以实现长距离越野导航",
+  "translation_url": "https://hjfy.top/arxiv/2607.23743"
+}

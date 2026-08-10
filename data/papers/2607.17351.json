@@ -1,0 +1,57 @@
+{
+  "abstract": "DeeperRadar is a radar-centric, sensor-stack-conditioned framework that co-designs radar sensing and multi-modal 3D detection for autonomous mobility by learning a sparse acquisition pattern end-to-end with the fusion model. A learnable MIMO design module is trained end-to-end within a fusion network that operates directly on raw radar ADC data together with camera images and LiDAR point clouds. During training, the design module is supervised by the other sensors, enabling the system to learn both which receiver antennas to activate and the effective number of them. At deployment, the design module is removed and replaced by the learned sparse subsampling mask, leaving the downstream model architecture unchanged. Evaluated on the RADIal dataset, DeeperRadar discovers sparse, task-aware radar configurations that match or exceed full-array baselines while using fewer receivers, potentially reducing radar cost and integration complexity. These results show that learned optimal MIMO radar design depends on the fusion stack and the downstream perception task.",
+  "abstract_zh": "DeeperRadar 是一个以雷达为中心、基于传感器堆栈的框架，通过与融合模型的端到端学习，协同设计雷达感知和多模态 3D 检测，以实现自主移动。一个可学习的 MIMO 设计模块在一个融合网络中进行端到端训练，该网络直接处理原始雷达 ADC 数据、相机图像和 LiDAR 点云。在训练过程中，设计模块受到其他传感器的监督，使系统能够学习激活哪些接收天线以及它们的有效数量。在部署时，设计模块被移除，并由学习到的稀疏子采样掩码替代，保持下游模型架构不变。在 RADIal 数据集上的评估表明，DeeperRadar 发现了稀疏的、任务感知的雷达配置，这些配置在使用更少接收器的情况下，匹配或超过了全阵列基线，可能降低雷达成本和集成复杂性。这些结果表明，学习到的最优 MIMO 雷达设计依赖于融合堆栈和下游感知任务。",
+  "arxiv_id": "2607.17351",
+  "arxiv_url": "https://arxiv.org/abs/2607.17351v1",
+  "authors": [
+    "Eli Goldenshluger",
+    "Barak Pinkovich",
+    "Chaim Baskin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-17351",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.529271+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.17351v1",
+  "published_at": "2026-07-19T17:26:34Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "3d detection",
+      "lidar",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 64
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.17351v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "端到端驾驶"
+    ]
+  },
+  "title": "DeeperRadar: End-to-End MIMO Radar Design and Multi-Modal Fusion for Autonomous Vehicle Perception",
+  "title_zh": "DeeperRadar：端到端 MIMO 雷达设计与自主车辆感知的多模态融合",
+  "translation_url": "https://hjfy.top/arxiv/2607.17351"
+}

@@ -1,0 +1,59 @@
+{
+  "abstract": "Deployed AI systems are often trained from broad candidate data pools, necessitating data curation towards the deployment test distribution. However, standard data curation methods score training-side criteria rather than directly optimizing deployment match. We introduce TTCov (Test-Time Coverage), a data-level test-conditioned curation method that uses test-side information before training instead of updating model weights at inference. TTCov decomposes deployment-conditioned curation into coverage and distribution. To represent coverage, it builds a task Atlas, a collection of LLM-based atomic propositions (APs) describing deployment-relevant concepts, seeded from open task knowledge and expanded with unmatched APs extracted from unlabeled deployment samples. To represent distribution, it instantiates the matched deployment APs with their frequencies, yielding a Knowledge Atlas (K-Atlas) that operationalizes the deployment distribution as a curation target. TTCov then selects a budgeted training set whose deployment APs distribution approximates this target. We apply TTCov towards autonomous driving (AD), keeping adaptation off the inference path while selecting data with greater deployment-relevant coverage, closer K-Atlas matching, and stronger downstream end-to-end driving performance than data-curation baselines, including seamless adaptability to novel domains via city-to-city expansion.",
+  "abstract_zh": "部署的人工智能系统通常从广泛的候选数据池中进行训练，因此需要对数据进行整理，以适应部署测试分布。然而，标准的数据整理方法主要侧重于训练侧标准，而不是直接优化部署匹配。我们提出了TTCov（测试时覆盖），这是一种数据级的测试条件化整理方法，它在训练之前使用测试侧信息，而不是在推理时更新模型权重。TTCov将部署条件的整理分解为覆盖和分布。为了表示覆盖，它构建了一个任务图谱（Task Atlas），这是一个基于大型语言模型（LLM）的原子命题（Atomic Propositions, APs）集合，描述与部署相关的概念，种子来自开放任务知识，并通过从未标记的部署样本中提取的未匹配APs进行扩展。为了表示分布，它实例化了匹配的部署APs及其频率，生成一个知识图谱（Knowledge Atlas, K-Atlas），将部署分布作为整理目标。然后，TTCov选择一个预算训练集，其部署APs分布近似于这一目标。我们将TTCov应用于自动驾驶（Autonomous Driving, AD），在选择具有更大部署相关覆盖、更接近K-Atlas匹配和更强下游端到端驾驶性能的数据时，保持适应性不影响推理路径，相较于数据整理基线，包括通过城市到城市扩展无缝适应新领域。",
+  "arxiv_id": "2607.22697",
+  "arxiv_url": "https://arxiv.org/abs/2607.22697v1",
+  "authors": [
+    "Nadine Chang",
+    "Maying Shen",
+    "Shizhe Diao",
+    "Jialiang Wang",
+    "Jingde Chen",
+    "Thomas Breuel",
+    "Pavlo Molchanov",
+    "Rafid Mahmood",
+    "Jose M. Alvarez"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-22697",
+  "categories": [
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.674587+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.22697v1",
+  "published_at": "2026-07-18T00:28:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.22697v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "Test-Time Coverage: Test-Conditioned Data Curation for Deployment-Aware Learning",
+  "title_zh": "测试时覆盖：面向部署的学习的数据条件化整理",
+  "translation_url": "https://hjfy.top/arxiv/2607.22697"
+}

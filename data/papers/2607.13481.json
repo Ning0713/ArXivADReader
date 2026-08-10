@@ -1,0 +1,57 @@
+{
+  "abstract": "Accurate 3D scene understanding is fundamental to embodied intelligence and autonomous driving, where 3D occupancy provides a unified representation of objects, structures, and free space. However, recovering such a complete volumetric representation from visual observations remains challenging, particularly in occluded and unobserved regions. Visual geometry priors offer strong and generalizable geometric cues for addressing this challenge, but their outputs are inherently surface-centric, whereas occupancy prediction requires reasoning about volumetric interiors and free space. To bridge this gap, we introduce GPOcc, which transforms visual geometry priors into occupancy-aware sparse Gaussian representations for efficient and expressive volumetric scene modeling. Building on GPOcc, GPOcc++ models multi-view observations and temporal sequences within a unified framework, allowing spatial and temporal evidence to be handled through the same representation. We further extend GPOcc++ from indoor scenes to outdoor occupancy prediction. Extensive experiments on both indoor and outdoor benchmarks demonstrate consistently strong performance across both multi-view and temporal settings, together with favorable efficiency and generalization. Code will be released at https://github.com/JuIvyy/GPOcc.",
+  "abstract_zh": "准确的三维场景理解是具身智能和自动驾驶的基础，其中三维占用提供了对象、结构和自由空间的统一表示。然而，从视觉观测中恢复这样一个完整的体积表示仍然具有挑战性，特别是在被遮挡和未观察到的区域。视觉几何先验为解决这一挑战提供了强大且可推广的几何线索，但它们的输出本质上是以表面为中心的，而占用预测需要对体积内部和自由空间进行推理。为了解决这一问题，我们引入了GPOcc，它将视觉几何先验转化为占用感知的稀疏高斯表示，以实现高效且富有表现力的体积场景建模。在GPOcc的基础上，GPOcc++在统一框架内建模多视角观测和时间序列，允许通过相同的表示处理空间和时间证据。我们进一步将GPOcc++从室内场景扩展到室外占用预测。在室内和室外基准上的大量实验表明，在多视角和时间序列设置中均表现出一致的强大性能，同时具有良好的效率和泛化能力。代码将发布在 https://github.com/JuIvyy/GPOcc。",
+  "arxiv_id": "2607.13481",
+  "arxiv_url": "https://arxiv.org/abs/2607.13481v1",
+  "authors": [
+    "Changqing Zhou",
+    "Yueru Luo",
+    "Yulan Guo",
+    "Bing Wang",
+    "Jie Qin",
+    "Changhao Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-16#paper-2607-13481",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T12:58:49.774866+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.13481v1",
+  "published_at": "2026-07-15T06:21:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-07-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.13481v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "感知"
+    ]
+  },
+  "title": "GPOcc++: Unified Sparse Gaussian Occupancy Prediction with Visual Geometry Priors",
+  "title_zh": "GPOcc++：结合视觉几何先验的统一稀疏高斯占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2607.13481"
+}

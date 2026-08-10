@@ -1,0 +1,49 @@
+{
+  "abstract": "Existing Gaussian-splatting-based monocular Simultaneous Localization and Mapping (SLAM) systems are either tailored to short sequences, are not real-time, or suffer from prohibitive GPU memory requirements, limiting their applicability in realistic, long-horizon scenarios. To address this, we present GLAM-SLAM, a real-time, decoupled Gaussian-splatting SLAM system designed for large-scale outdoor scenes. We ensure lightweight tracking using a robust, feature-based SLAM frontend, while for mapping, we adopt a structured, sparse anchor grid representation that ensures scalable operation and maintains scene coherence across long-term sequences. To satisfy the dense initialization requirements of 3D Gaussian Splatting (3DGS), we introduce a geometry-based flow-densification anchoring strategy using epipolar constraints. Furthermore, by treating mapping as a multi-scene problem, we propose a scene-partitioning strategy that introduces a strong spatial inductive bias via MLP initializations to generate localized Gaussians. We evaluate our system on the challenging, long-sequence KITTI Odometry, Oxford RobotCar, and M'alaga datasets. Extensive ablations and comparisons demonstrate a 15% improvement in reconstruction quality over the second-best performer, while maintaining real-time performance and the ability to scale to longer sequences. Code is publicly available for the benefit of the community.",
+  "abstract_zh": "现有基于高斯喷溅的单目同时定位与地图构建（SLAM）系统要么针对短序列进行定制，要么无法实时运行，或者面临高昂的GPU内存需求，这限制了它们在现实长时间场景中的应用。为了解决这一问题，我们提出了GLAM-SLAM，一个为大规模户外场景设计的实时解耦高斯喷溅SLAM系统。我们通过一个稳健的基于特征的SLAM前端确保轻量级跟踪，而在映射方面，我们采用了一种结构化的稀疏锚点网格表示，确保可扩展的操作并在长期序列中保持场景一致性。为了满足3D高斯喷溅（3DGS）的密集初始化要求，我们引入了一种基于几何的流密集化锚定策略，利用极线约束。此外，通过将映射视为一个多场景问题，我们提出了一种场景划分策略，通过多层感知器（MLP）初始化引入强大的空间归纳偏置，以生成局部高斯。我们在具有挑战性的长序列KITTI里程计、牛津机器人汽车和马拉加数据集上评估了我们的系统。大量消融实验和比较表明，在保持实时性能和扩展到更长序列的能力的同时，我们的重建质量比第二名提高了15%。代码已公开，以造福社区。",
+  "arxiv_id": "2607.21416",
+  "arxiv_url": "https://arxiv.org/abs/2607.21416v1",
+  "authors": [
+    "Panagiotis Mermigkas",
+    "Argyris Manetas",
+    "Petros Maragos"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-24#paper-2607-21416",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:27.448996+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.21416v1",
+  "published_at": "2026-07-23T15:22:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "gaussian splatting"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-07-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.21416v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "感知"
+    ]
+  },
+  "title": "GLAM-SLAM: Real-time Gaussian Large-scale Mapping via Flow Densification and Spatial Decomposition",
+  "title_zh": "GLAM-SLAM：通过流密集化和空间分解实现实时高斯大规模映射",
+  "translation_url": "https://hjfy.top/arxiv/2607.21416"
+}

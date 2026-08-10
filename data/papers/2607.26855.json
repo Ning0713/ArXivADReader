@@ -1,0 +1,53 @@
+{
+  "abstract": "Many scientific fields rely on standard benchmarks and shared platforms to improve review and reproducibility, but autonomous systems research still lacks widely accepted open hardware. Where standardization has emerged, progress has accelerated. This is especially evident in autonomous racing, where teams often build custom systems or buy niche, expensive vehicles, making control and robotics research and education hard to compare and reproduce. High costs also limit access outside well-funded labs, while affordable educational robots are often underpowered. To address this gap, we present NeoRacer, an open-source 1:12 scale autonomous racing platform. It is built around an NVIDIA Jetson Orin Nano (67 TOPS), a 270{\\deg} LiDAR, a 120 fps global-shutter camera, and a 9-axis IMU. NeoRacer ships pre-assembled for USD 2,699, offering over 3x the compute of comparable platforms at less than half the cost of the nearest pre-assembled alternative. Co-developed by the Neobotics Foundation and Seeed Studio, and manufactured by Seeed Studio, NeoRacer combines open hardware and software design with scalable, repeatable production. The modular, extensible platform provides a standardized benchmarking environment for autonomous racing algorithms across institutions. We describe the hardware/software architecture, design decisions from two pilot deployments (MIT IAP, 15 students; BU CPS Lab, 10 students), and key cost-performance tradeoffs. Hardware is licensed under CERN-OHL-S v2 and software under GPLv3, with all design files, firmware, and ROS2 packages publicly accessible.",
+  "abstract_zh": "许多科学领域依赖标准基准和共享平台来提高评审和可重复性，但自主系统研究仍然缺乏广泛接受的开放硬件。在标准化出现的地方，进展得以加速。这在自主赛车中尤为明显，团队通常构建定制系统或购买小众、昂贵的车辆，使得控制和机器人研究及教育难以比较和重复。高昂的成本也限制了资金不足的实验室的访问，而价格适中的教育机器人往往性能不足。为了解决这一差距，我们推出了NeoRacer，一个开放源代码的1:12比例自主赛车平台。它基于NVIDIA Jetson Orin Nano（67 TOPS）、270° LiDAR、120 fps全局快门相机和9轴IMU构建。NeoRacer以2,699美元的价格预装配出售，提供超过3倍于可比平台的计算能力，而成本不到最近预装配替代品的一半。NeoRacer由Neobotics基金会和Seeed Studio共同开发，并由Seeed Studio制造，结合了开放硬件和软件设计与可扩展、可重复的生产。该模块化、可扩展的平台为各机构的自主赛车算法提供了标准化的基准测试环境。我们描述了硬件/软件架构、两个试点部署（MIT IAP，15名学生；BU CPS实验室，10名学生）的设计决策，以及关键的成本-性能权衡。硬件遵循CERN-OHL-S v2许可证，软件遵循GPLv3许可证，所有设计文件、固件和ROS2包均可公开访问。",
+  "arxiv_id": "2607.26855",
+  "arxiv_url": "https://arxiv.org/abs/2607.26855v1",
+  "authors": [
+    "Koneshka Bandyopadhyay",
+    "Ansh Mehta",
+    "Bassel El Mabsout",
+    "Renato Mancuso"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-30#paper-2607-26855",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-10T13:01:02.703865+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.26855v1",
+  "published_at": "2026-07-29T12:39:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "car",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-07-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.26855v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "NeoRacer: An Open, Standardized 1:12 Scale Autonomous Race Car for Benchmarking and Education",
+  "title_zh": "NeoRacer：一个开放、标准化的1:12比例自主赛车平台，用于基准测试和教育",
+  "translation_url": "https://hjfy.top/arxiv/2607.26855"
+}

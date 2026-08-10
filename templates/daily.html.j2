@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ manifest.date }} 自动驾驶论文归档">
+    <link rel="icon" href="{{ url('assets/favicon.svg') }}" type="image/svg+xml">
+    <title>{{ manifest.date }} · {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ url('assets/style.css') }}">
+</head>
+<body data-base-path="{{ site.base_path }}">
+    <main class="container">
+        <div class="back-nav">
+            <a href="{{ url() }}" class="back-link">← Back to Index</a>
+            <button type="button" class="sidebar-toggle" id="sidebarToggle" aria-label="打开论文方向导航" title="论文方向">☰</button>
+        </div>
+        <header class="header">
+            <div class="header-subtitle">{{ site.subtitle }}</div>
+            <h1 class="header-title">{{ site.title }}</h1>
+            <div class="header-date">{{ manifest.date }}</div>
+        </header>
+
+        <section class="summary" aria-label="当日统计">
+            <div class="stat-item">
+                <div class="stat-number">{{ papers|length }}</div>
+                <div class="stat-label">Papers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">{{ groups|length }}</div>
+                <div class="stat-label">Topics</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">{{ translated_count }}</div>
+                <div class="stat-label">Translated</div>
+            </div>
+        </section>
+
+        <aside class="cart-panel" id="paperCartPanel">
+            <div class="cart-panel-header">
+                <div class="cart-title">收藏清单 <span class="cart-title-count" id="paperCartCount">0</span></div>
+                <div class="cart-actions">
+                    <button type="button" class="cart-action-btn cart-copy-btn" id="paperCartCopyBtn">复制全部 ID</button>
+                    <button type="button" class="cart-action-btn" id="paperCartClearBtn">清空</button>
+                </div>
+            </div>
+            <div class="cart-status" id="paperCartStatus" aria-live="polite"></div>
+            <div class="cart-ids" id="paperCartIds"></div>
+
+            <div class="search-divider"></div>
+            <div class="search-controls" id="paperSearch" data-index-url="{{ url('assets/search-index.json') }}">
+                <label for="paperTagFilter">标签</label>
+                <select id="paperTagFilter">
+                    <option value="">全部标签</option>
+                    {% for tag, count in index.tag_counts.items() %}
+                    <option value="{{ tag }}">{{ tag }} ({{ count }})</option>
+                    {% endfor %}
+                </select>
+                <label for="paperKeywordSearch">关键词</label>
+                <input id="paperKeywordSearch" type="search" autocomplete="off" placeholder="标题、作者、摘要或 arXiv ID">
+                <div class="search-status" id="paperSearchStatus" aria-live="polite"></div>
+                <div class="search-results" id="paperSearchResults"></div>
+            </div>
+        </aside>
+
+        <nav class="sidebar" id="sidebar" aria-label="论文方向">
+            <div class="sidebar-title">Research Topics</div>
+            <ul class="sidebar-nav">
+                {% for group in groups %}
+                <li class="sidebar-item">
+                    <a href="#{{ group.id }}" class="sidebar-link" data-section="{{ group.id }}">
+                        <span class="progress-bar"></span>
+                        <span>{{ group.name }}</span>
+                        <span class="sidebar-count">{{ group.papers|length }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        {% for group in groups %}
+        <section class="category" id="{{ group.id }}">
+            <div class="category-header">
+                <h2 class="category-title">{{ group.name }}</h2>
+                <span class="category-count">{{ group.papers|length }}</span>
+            </div>
+            {% for paper in group.papers %}
+            <article class="paper" id="{{ paper_anchor(paper.arxiv_id) }}" data-arxiv-id="{{ paper.arxiv_id }}">
+                <div class="paper-number">{{ group.name }} / {{ loop.index }} / {{ paper.arxiv_id }}</div>
+                <h3 class="paper-title">{{ paper.title }}</h3>
+                {% if paper.title_zh %}<div class="paper-title-zh">{{ paper.title_zh }}</div>{% endif %}
+                <div class="paper-meta">
+                    {% if paper.authors %}<div class="paper-authors">{{ paper.authors|join(', ') }}</div>{% endif %}
+                    {% if paper.categories %}<div class="paper-categories">{{ paper.categories|join(' · ') }}</div>{% endif %}
+                </div>
+                <div class="abstract-section">
+                    {% if paper.abstract %}
+                    <div class="abstract-label">Abstract</div>
+                    <div class="abstract-en">{{ paper.abstract }}</div>
+                    {% endif %}
+                    {% if paper.abstract_zh %}
+                    <div class="abstract-label">Chinese Translation</div>
+                    <div class="abstract-zh">{{ paper.abstract_zh }}</div>
+                    {% endif %}
+                </div>
+                <div class="paper-actions">
+                    <div class="paper-links">
+                        <a href="{{ paper.arxiv_url }}" class="link-btn link-arxiv" target="_blank" rel="noopener noreferrer">View on arXiv</a>
+                        <a href="{{ paper.pdf_url }}" class="link-btn link-pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+                        {% if paper.translation_url %}<a href="{{ paper.translation_url }}" class="link-btn link-translation" target="_blank" rel="noopener noreferrer">AI Translation</a>{% endif %}
+                        <button type="button" class="link-btn link-cart cart-toggle-btn"
+                            data-arxiv-id="{{ paper.arxiv_id }}"
+                            data-paper-title="{{ paper.title }}"
+                            data-paper-date="{{ manifest.date }}"
+                            data-paper-tags="{{ paper.all_tags|join('|') }}">加入收藏</button>
+                    </div>
+                    <div class="paper-tags" aria-label="论文标签">
+                        {% for tag in paper.all_tags %}
+                        <button type="button" class="paper-tag{% if loop.first %} primary{% endif %}" data-search-tag="{{ tag }}">{{ tag }}</button>
+                        {% endfor %}
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </section>
+        {% endfor %}
+
+        {% if not groups %}<div class="empty-state daily-empty">No related papers were found for this date.</div>{% endif %}
+
+        <footer class="footer">
+            <div class="footer-brand">{{ site.title }}</div>
+            <div class="footer-text">
+                Source: <a href="{{ manifest.source_url }}" target="_blank" rel="noopener noreferrer">Axi daily digest</a>
+                · Metadata: <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv</a><br>
+                Generated {{ manifest.generated_at }} · Filter {{ manifest.filter_version }}
+            </div>
+        </footer>
+    </main>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <button type="button" class="back-to-top" aria-label="回到顶部" title="回到顶部">↑</button>
+    <script src="{{ url('assets/app.js') }}" defer></script>
+</body>
+</html>

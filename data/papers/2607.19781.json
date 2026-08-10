@@ -1,0 +1,60 @@
+{
+  "abstract": "Autonomous driving requires understanding the road as a graph of drivable lanes and their connectivity, beyond the ego lane alone, to follow routes through intersections and reason about cross- and merging-traffic. Recent perception models infer such lane topology, i.e., lane segments together with their inter-lane connectivity (LCLC), from onboard sensors over a 360-degree BEV view. Due to neural perception's imperfections, their outputs retain structural instabilities such as missed detections, lost or incorrect LCLC, over-detection, and label flicker. This paper presents WASABI, a real-time post-processing pipeline that stabilizes lane topology outputs both within and across frames by treating lane segments and their LCLC connectivity as joint tracking targets, under onboard real-time constraints (10 Hz / 20 ms / up to 200 input lanes). The pipeline integrates segment tracking with connectivity, noise-robust topology-aware refinement, and a resource-constrained real-time design. On internal validation data (16 sequences), WASABI improves LCLC detection F1 from 0.834 to 0.948 (+0.114, +13.6%) and reduces centerline lateral error from 2.50 m to 0.95 m, while reducing detection false-positives by 24.6%. Temporal-stability metrics on the same data show LCLC toggle rate reduced by 63.3% and boundary-label flicker rate by 30.2%, confirming across-frame stabilization beyond per-frame accuracy.",
+  "abstract_zh": "自主驾驶需要将道路理解为可行驶车道及其连通性的图，不仅仅是自我车道，以便在交叉路口跟随路线并推理交叉和合并交通。最近的感知模型通过车载传感器在360度鸟瞰视图下推断出这种车道拓扑，即车道段及其车道间连通性（LCLC）。由于神经感知的不完美，其输出保留了结构不稳定性，例如漏检、丢失或错误的LCLC、过度检测和标签闪烁。本文提出了WASABI，一个实时后处理管道，通过将车道段及其LCLC连通性视为联合跟踪目标，在车载实时约束下（10 Hz / 20 ms / 最多200个输入车道）稳定车道拓扑输出。该管道将段跟踪与连通性、抗噪声的拓扑感知细化以及资源受限的实时设计相结合。在内部验证数据（16个序列）上，WASABI将LCLC检测F1从0.834提高到0.948（+0.114，+13.6%），并将中心线横向误差从2.50米减少到0.95米，同时将检测假阳性减少了24.6%。在相同数据上的时间稳定性指标显示，LCLC切换率减少了63.3%，边界标签闪烁率减少了30.2%，确认了跨帧稳定性超越逐帧准确性。",
+  "arxiv_id": "2607.19781",
+  "arxiv_url": "https://arxiv.org/abs/2607.19781v1",
+  "authors": [
+    "Tetsuhiro Uchida",
+    "Myu Sasaki",
+    "Kensho Nakajima",
+    "Yasuhiro Shimada",
+    "Toru Saito"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-23#paper-2607-19781",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:19.085318+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.19781v1",
+  "published_at": "2026-07-22T05:59:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "lane",
+      "驾驶",
+      "交通",
+      "道路",
+      "车道",
+      "bev"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 77
+  },
+  "seen_dates": [
+    "2026-07-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.19781v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "WASABI: Whole-graph Assignment-based Stabilizer for lAne topology By Inter-frame tracking",
+  "title_zh": "WASABI：基于全图分配的稳定器，通过帧间跟踪实现车道拓扑稳定",
+  "translation_url": "https://hjfy.top/arxiv/2607.19781"
+}

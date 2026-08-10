@@ -1,0 +1,54 @@
+{
+  "abstract": "Control methods for emerging vehicle chassis architectures are important for autonomous driving near handling limits. Unlike conventional drift control, which relies on mechanical steering and rear-tire saturation, a steering-free four-wheel independently driven (4WID) vehicle can generate direct yaw moment through differential wheel torques. This paper proposes a differential-torque drift control method for such a vehicle. A double-track vehicle model incorporating four-wheel differential actuation is established, based on which a drift-equilibrium calculation method and a closed-loop drift controller are developed. The proposed approach is validated through simulations and experiments on a 1:10-scale vehicle. The results show that the vehicle can achieve steady circular drifting with a sideslip angle of approximately 20$^\\circ$ and perform figure-eight drift tracking. This study demonstrates the feasibility of drift control using only differential wheel torques and provides a new perspective on near-limit control for steering-free vehicle architectures.",
+  "abstract_zh": "针对新兴车辆底盘架构的控制方法在接近操控极限的自动驾驶中至关重要。与依赖机械转向和后轮饱和的传统漂移控制不同，无转向的四轮独立驱动（4WID）车辆可以通过差分轮胎扭矩直接产生偏航力矩。本文提出了一种针对该类车辆的差分扭矩漂移控制方法。基于四轮差分驱动的双轨车辆模型，建立了漂移平衡计算方法和闭环漂移控制器。通过对1:10比例车辆的仿真和实验验证了所提方法。结果表明，该车辆能够以约20$^ ext{°}$的侧滑角实现稳定的圆形漂移，并进行八字漂移追踪。本研究展示了仅使用差分轮胎扭矩进行漂移控制的可行性，并为无转向车辆架构的近极限控制提供了新的视角。",
+  "arxiv_id": "2607.24863",
+  "arxiv_url": "https://arxiv.org/abs/2607.24863v1",
+  "authors": [
+    "Sheng Zhao",
+    "Zexin Wu",
+    "Dongyang Zhou",
+    "Bolin Zhao",
+    "Xiaodong Wu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-29#paper-2607-24863",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:55.426554+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.24863v1",
+  "published_at": "2026-07-26T16:22:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-07-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.24863v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Steeringless Drifting: Differential-Torque Control of a Four-Wheel Independently Driven Vehicle",
+  "title_zh": "无转向漂移：四轮独立驱动车辆的差分扭矩控制",
+  "translation_url": "https://hjfy.top/arxiv/2607.24863"
+}

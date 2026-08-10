@@ -1,0 +1,58 @@
+{
+  "abstract": "Standard methods for autonomous navigation in unstructured terrain are prone to myopic behaviors in long-horizon scenarios. The use of metric maps built from LiDAR or cameras provides necessary local geometry and semantic information but is strictly limited by depth sensing range. By discarding data beyond the mapping horizon robots suffer from suboptimal, short-sighted decisions. To recover this lost information, we focus on extracting long-range traversability-aware frontiers directly from first-person-view (FPV) images. By leveraging satellite imagery, we compute the set of feasible navigation paths for a dataset of image/pose pairs and use them to supervise our network, reducing the need for extensive human demonstration data. We demonstrate that this approach improves performance in long-range off-road navigation over existing methods by more than 10% in various offline benchmarks and reduces the number of human interventions incurred in a set of real-world experiments. More details can be found at https://theairlab.org/ss_frontiers_iros .",
+  "abstract_zh": "在非结构化地形中，标准的自主导航方法在长时间范围场景中容易出现短视行为。利用激光雷达（LiDAR）或相机构建的度量地图提供了必要的局部几何和语义信息，但受限于深度感知范围。通过丢弃超出映射视野的数据，机器人会遭受次优的短视决策。为了恢复这些丢失的信息，我们专注于直接从第一人称视角（FPV）图像中提取长距离可通行性意识前沿。通过利用卫星图像，我们为一组图像/姿态对计算可行的导航路径集合，并用其来监督我们的网络，从而减少对大量人类示范数据的需求。我们展示了这种方法在各种离线基准测试中提高了长距离非道路导航的性能，超过现有方法10%以上，并减少了一组真实世界实验中所需的人类干预次数。更多细节请参见 https://theairlab.org/ss_frontiers_iros 。",
+  "arxiv_id": "2607.17984",
+  "arxiv_url": "https://arxiv.org/abs/2607.17984v1",
+  "authors": [
+    "Matthew Sivaprakasam",
+    "Samuel Triest",
+    "Micah Nye",
+    "Deegan Atha",
+    "Shehryar Khattak",
+    "David Fan",
+    "Wenshan Wang",
+    "Sebastian Scherer"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-17984",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.347701+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.17984v1",
+  "published_at": "2026-07-20T14:16:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "road",
+      "道路",
+      "lidar",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.17984v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "地图/定位"
+    ]
+  },
+  "title": "Distilling Global Traversability Priors for Image-based Affordance Prediction in Off-road Environments",
+  "title_zh": "提取全球可通行性先验用于非道路环境中的基于图像的可用性预测",
+  "translation_url": "https://hjfy.top/arxiv/2607.17984"
+}

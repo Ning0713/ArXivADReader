@@ -1,0 +1,51 @@
+{
+  "abstract": "Query-based mask transformers assemble segmentation outputs through pixel-wise competition among query predictions of the final layer, yet this inference process is not explicitly optimized during training. We identify two key mismatches: the query with the highest probability-mask score does not necessarily produce the most accurate mask, and final-layer decoding may discard superior predictions from intermediate layers. To address these issues, we propose Inference-Aware Learning (iFAN), a general training framework for plain mask transformers. iFAN introduces Adjusted Probability-Mask Ranking (APMR), which aligns query competition with predicted mask quality and suppresses high-confidence but inaccurate competitors. We further employ Cross-Layer Self-Distillation (CLSD) to transfer stronger intermediate predictions to the final layer. The ranking and distillation objectives are training-only, while inference retains efficient final-layer decoding. Experiments on COCO, ADE20K, and Cityscapes demonstrate consistent improvements across panoptic, instance, and semantic segmentation, as well as across different architectures, backbone scales, and input resolutions. Overall, iFAN improves performance by an average of 1.20 PQ, 1.30 AP, and 0.63 mIoU, with negligible additional parameters, FLOPs and inference latency.",
+  "abstract_zh": "基于查询的掩膜变换器通过最终层的查询预测之间的逐像素竞争来组装分割输出，然而这一推理过程在训练期间并未得到明确优化。我们识别出两个关键的不匹配：具有最高概率-掩膜分数的查询不一定产生最准确的掩膜，最终层解码可能会丢弃来自中间层的优越预测。为了解决这些问题，我们提出了面向推理的学习（Inference-Aware Learning, iFAN），这是一个针对普通掩膜变换器的通用训练框架。iFAN引入了调整后的概率-掩膜排名（Adjusted Probability-Mask Ranking, APMR），该方法将查询竞争与预测掩膜质量对齐，并抑制高置信度但不准确的竞争者。我们进一步采用跨层自蒸馏（Cross-Layer Self-Distillation, CLSD）将更强的中间预测转移到最终层。排名和蒸馏目标仅在训练中使用，而推理则保留高效的最终层解码。在COCO、ADE20K和Cityscapes上的实验表明，在全景、实例和语义分割方面，以及在不同架构、主干网络规模和输入分辨率下，均实现了一致的改进。总体而言，iFAN平均提高了1.20 PQ、1.30 AP和0.63 mIoU，且附加参数、FLOPs和推理延迟微不足道。",
+  "arxiv_id": "2608.03216",
+  "arxiv_url": "https://arxiv.org/abs/2608.03216v2",
+  "authors": [
+    "Fang Li",
+    "Yu He",
+    "Haoyang Tong",
+    "Lichen Ma",
+    "Jingling Fu",
+    "Wenxiao Fan",
+    "Tongxuan Liu",
+    "Luohang Liu",
+    "Ke Zhang",
+    "Junshi Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-05#paper-2608-03216",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:37.379577+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.03216v2",
+  "published_at": "2026-08-04T06:51:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.03216v2",
+    "axi": "https://paper.axi404.top/daily/2026-08-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "iFAN: Inference-Aware Learning for Plain Mask Transformers",
+  "title_zh": "iFAN：面向推理的普通掩膜变换器学习",
+  "translation_url": "https://hjfy.top/arxiv/2608.03216"
+}

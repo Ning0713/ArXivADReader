@@ -1,0 +1,59 @@
+{
+  "abstract": "Accurate vehicle localization from monocular roadside surveillance cameras is important for intelligent transportation systems, traffic monitoring, and traffic conflict analysis. Standard approaches often estimate vehicle position from the center of the detector bounding box, which can produce large errors due to perspective distortion and parallax, especially for elevated cameras and large vehicles. This paper proposes a two-stage geometry-aware localization pipeline that estimates the projection of the vehicle footprint onto the road plane. First, vehicles are detected using a YOLO26-based detector. Second, a dedicated ResNet34 regression network predicts four corner points corresponding to the projected vehicle base. The final position is computed as the geometric center of the predicted quadrilateral. The method was trained on synthetic data generated in CARLA and fine-tuned on real-world roadside imagery from DAIR-V2X. Experiments on synthetic and real data showed clear improvements over naive bounding-box-center localization. On DAIR-V2X, the mean image-space localization error decreased from 31.77 px to 15.30 px, a 51.8% improvement, while the median error decreased to 4.29 px. Median ground-plane error for medium-range vehicles decreased from 5.52 m to 0.90 m, and for far-range vehicles from 8.67 m to 1.84 m. The results also show that contextual information surrounding the detector bounding box is important for geometric localization. The largest gains were observed for distant vehicles and geometrically challenging cases affected by strong perspective distortion and parallax.",
+  "abstract_zh": "从单目路边监控摄像头中精确定位车辆对于智能交通系统、交通监测和交通冲突分析至关重要。标准方法通常通过检测器边界框的中心估计车辆位置，这可能由于透视失真和视差而产生较大误差，尤其是在高架摄像头和大型车辆的情况下。本文提出了一种两阶段的几何感知定位管道，该管道估计车辆足迹在道路平面上的投影。首先，使用基于YOLO26的检测器检测车辆。其次，专门的ResNet34回归网络预测与投影车辆底部对应的四个角点。最终位置计算为预测的四边形的几何中心。该方法在CARLA生成的合成数据上进行训练，并在DAIR-V2X的真实路边图像上进行微调。合成数据和真实数据的实验结果显示，相较于简单的边界框中心定位，精确定位方法有明显改善。在DAIR-V2X上，平均图像空间定位误差从31.77 px降至15.30 px，改善幅度为51.8%，而中位数误差降至4.29 px。中等距离车辆的中位数地面误差从5.52 m降至0.90 m，远距离车辆的中位数地面误差从8.67 m降至1.84 m。结果还表明，检测器边界框周围的上下文信息对于几何定位非常重要。对于远距离车辆和受强透视失真及视差影响的几何挑战案例，观察到最大的改进。",
+  "arxiv_id": "2608.05840",
+  "arxiv_url": "https://arxiv.org/abs/2608.05840v1",
+  "authors": [
+    "Jan Gawroński",
+    "Witold Czajewski"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-07#paper-2608-05840",
+  "categories": [
+    "cs.CV",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-08-10T13:01:52.138294+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.05840v1",
+  "published_at": "2026-08-06T10:07:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "carla",
+      "dair-v2x",
+      "vehicle",
+      "traffic",
+      "road",
+      "roadside",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.05840v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery",
+  "title_zh": "基于监控摄像头图像的道路平面交通物体精确定位",
+  "translation_url": "https://hjfy.top/arxiv/2608.05840"
+}

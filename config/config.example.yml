@@ -1,0 +1,14 @@
+# Copy this file only when you need project-specific overrides. Secrets belong
+# in environment variables or GitHub Actions secrets, never in this file.
+site:
+  title: "AutoDrive Papers"
+  domain: "adpaper.ning0713.top"
+  base_path: "/"
+
+filtering:
+  plugin: "plugins.autonomous_driving:plugin"
+
+llm:
+  enabled: true
+  base_url: "https://api.openai.com/v1"
+  model: "gpt-4o-mini"

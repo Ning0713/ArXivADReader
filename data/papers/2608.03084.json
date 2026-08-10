@@ -1,0 +1,57 @@
+{
+  "abstract": "End-to-end driving requires a coherent understanding of future scenes, yet existing methods model these scenes using task-specific heads and output formats, with limited scalability. Can video generation instead provide a shared predictor? We introduce SUV, a unified end-to-end driving framework that casts future Scene Understanding as Video generation using a pretrained video foundation model. SUV models future appearance, semantics, relative depth, and instance-level dynamics as video streams with a shared video expert, without stream-specific visual prediction heads. Through joint video-action attention, the action expert attends to the latent representations of all future streams and generates the ego trajectory. Experiments show that SUV directly predicts all four future streams, while controlled ablations show that structured future supervision and direct future-stream access yield higher trajectory planning scores. With only a single front camera and no candidate-trajectory selection, SUV outperforms a broad set of recent state-of-the-art methods on both NAVSIM-v2 splits, achieving 91.0 EPDMS on navtest and 36.9 on navhard. On the long-tail WOD-E2E benchmark, SUV achieves a competitive RFS of 7.94.",
+  "abstract_zh": "端到端驾驶需要对未来场景进行连贯的理解，然而现有方法使用特定任务的头部和输出格式来建模这些场景，具有有限的可扩展性。那么，视频生成是否可以提供一个共享的预测器呢？我们提出了SUV，一个统一的端到端驾驶框架，将未来场景理解视为使用预训练视频基础模型的视频生成。SUV将未来的外观、语义、相对深度和实例级动态建模为视频流，并使用共享的视频专家，而不需要特定于流的视觉预测头。通过联合视频-动作注意力，动作专家关注所有未来流的潜在表示，并生成自我轨迹。实验表明，SUV可以直接预测所有四个未来流，而控制性消融实验显示，结构化的未来监督和直接的未来流访问可以提高轨迹规划得分。在仅使用单个前置摄像头且不进行候选轨迹选择的情况下，SUV在NAVSIM-v2的两个分割上超越了一系列最新的先进方法，在navtest上达到91.0 EPDMS，在navhard上达到36.9。在长尾WOD-E2E基准测试中，SUV实现了竞争力的RFS得分7.94。",
+  "arxiv_id": "2608.03084",
+  "arxiv_url": "https://arxiv.org/abs/2608.03084v1",
+  "authors": [
+    "Yibo Yuan",
+    "Jiacheng Fu",
+    "Jiangtong Zhu",
+    "Yi Li",
+    "Jianhua Han",
+    "Meng Tian",
+    "Zhuohan Liu",
+    "Zhiwei Xiong",
+    "Hang Xu",
+    "Jianwu Fang",
+    "Jianru Xue"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-05#paper-2608-03084",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:37.367160+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.03084v1",
+  "published_at": "2026-08-04T03:51:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-08-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.03084v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "端到端驾驶"
+    ]
+  },
+  "title": "SUV: Future Scene Understanding as Video Generation for End-to-End Driving",
+  "title_zh": "SUV：将未来场景理解视为端到端驾驶的视频生成",
+  "translation_url": "https://hjfy.top/arxiv/2608.03084"
+}

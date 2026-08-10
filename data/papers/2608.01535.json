@@ -1,0 +1,61 @@
+{
+  "abstract": "Vision-language models (VLMs) are emerging as a key component of embodied intelligence, with growing applications in auto-labeling and end-to-end autonomous driving. However, existing approaches for improving spatiotemporal reasoning in VLMs often rely on complex preprocessing pipelines, expensive human annotations, or synthetic data, which limit scalability and introduce potential sim-to-real gaps. Moreover, although these methods have improved spatiotemporal understanding, they still lack strong metric reasoning capabilities for dynamic scenes, such as estimating object motion in real-world units. Prior work has explored LiDAR-based metric depth supervision to enhance spatial perception, but it does not directly address temporal reasoning. We introduce STAR-VLM, an automotive radar-supervised framework that enhances spatiotemporal VLMs with motion reasoning and metric velocity estimation for autonomous driving. Automotive radar is a low-cost and widely deployed sensor that provides complementary spatiotemporal supervision through range and Doppler measurements. By leveraging these measurements as label-free ground truth during training, STAR-VLM improves the metric spatiotemporal reasoning ability of VLMs. Through experiments on driving scenarios, we show that STAR-VLM achieves state-of-the-art performance on both motion classification and metric velocity estimation, outperforming even task-specific methods designed for each task. These results highlight automotive radar as a scalable and cost-effective source of supervision for building metric-aware spatiotemporal VLMs for real-world autonomous driving.",
+  "abstract_zh": "视觉-语言模型（VLMs）正成为具身智能的关键组成部分，广泛应用于自动标注和端到端的自主驾驶。然而，现有的提升VLMs时空推理的方法往往依赖于复杂的预处理流程、昂贵的人类标注或合成数据，这限制了其可扩展性并引入了潜在的模拟与现实之间的差距。此外，尽管这些方法改善了时空理解，但在动态场景中仍缺乏强大的度量推理能力，例如在现实单位中估计物体运动。之前的研究探索了基于激光雷达的度量深度监督以增强空间感知，但未能直接解决时间推理问题。我们提出了STAR-VLM，一个汽车雷达监督框架，增强了VLMs的时空推理能力，并实现了自主驾驶的运动推理和度量速度估计。汽车雷达是一种低成本且广泛部署的传感器，通过距离和多普勒测量提供互补的时空监督。通过在训练过程中利用这些测量作为无标签的真实值，STAR-VLM提高了VLMs的度量时空推理能力。通过在驾驶场景中的实验，我们展示了STAR-VLM在运动分类和度量速度估计方面实现了最先进的性能，甚至超越了为每个任务设计的特定任务方法。这些结果突显了汽车雷达作为构建面向度量的时空VLMs在现实世界自主驾驶中的可扩展和经济有效的监督来源。",
+  "arxiv_id": "2608.01535",
+  "arxiv_url": "https://arxiv.org/abs/2608.01535v1",
+  "authors": [
+    "Pou-Chun Kung",
+    "Aryaman Rao",
+    "Utkrisht Sahai",
+    "Hemanth Murali",
+    "Yi Liu",
+    "Rui-Yu Lin",
+    "Katherine A. Skinner"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-01535",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.095276+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.01535v1",
+  "published_at": "2026-08-02T23:02:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "automotive",
+      "驾驶",
+      "lidar",
+      "radar",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 60
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.01535v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "STAR-VLM: Spatiotemporal Grounding Vision-Language Models for Motion and Velocity Estimation via Automotive Radar Supervision",
+  "title_zh": "STAR-VLM：通过汽车雷达监督进行运动和速度估计的时空基础视觉-语言模型",
+  "translation_url": "https://hjfy.top/arxiv/2608.01535"
+}

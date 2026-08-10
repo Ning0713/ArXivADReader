@@ -1,0 +1,60 @@
+{
+  "abstract": "Road surface mapping plays a crucial role in autonomous driving, supporting high-definition map generation, lane-level perception, and automatic road annotation. Recent mesh-based road surface reconstruction methods have shown promising results, but they still suffer from limited reconstruction quality and high optimization cost, especially in large-scale driving scenarios. To address these limitations, we propose ROADGS-T, a robust and efficient large-scale road surface mapping framework based on adaptive meshgrid Gaussian representation. Specifically, we model the road surface by placing 2D Gaussian surfels on a meshgrid, where each surfel explicitly stores color, semantic, and geometric information. Compared with conventional mesh-based representations and 3D Gaussian primitives, the proposed meshgrid Gaussian representation better matches the thin-surface property of roads while significantly reducing redundant primitives and overlap during optimization. To further improve representation efficiency and structural fidelity, we introduce a road-structure-aware adaptive meshgrid strategy, which allocates denser Gaussian surfels to geometrically or semantically complex regions, such as lane markings, road boundaries, and height discontinuities, while maintaining a compact representation in flat road areas. Moreover, instead of relying on a single nearest vehicle pose, we design a trajectory-consistency-guided pose-robust refinement strategy, which estimates local surface priors from multiple neighboring poses and adaptively weights pose-guided height regularization according to their geometric consistency.",
+  "abstract_zh": "道路表面映射在自动驾驶中起着至关重要的作用，支持高清地图生成、车道级感知和自动道路标注。最近的基于网格的道路表面重建方法显示出良好的结果，但在大规模驾驶场景中，它们仍然面临重建质量有限和优化成本高的问题。为了解决这些局限性，我们提出了ROADGS-T，一个基于自适应网格高斯表示的稳健高效的大规模道路表面映射框架。具体而言，我们通过在网格上放置二维高斯表面元素（surfel）来建模道路表面，其中每个表面元素明确存储颜色、语义和几何信息。与传统的基于网格的表示和三维高斯原语相比，所提出的网格高斯表示更好地匹配了道路的薄表面特性，同时在优化过程中显著减少了冗余原语和重叠。为了进一步提高表示效率和结构保真度，我们引入了一种道路结构感知的自适应网格策略，该策略将更密集的高斯表面元素分配给几何或语义复杂的区域，如车道标记、道路边界和高度不连续性，同时在平坦道路区域保持紧凑的表示。此外，我们设计了一种轨迹一致性引导的姿态鲁棒性优化策略，而不是依赖单一的最近车辆姿态，该策略从多个邻近姿态中估计局部表面先验，并根据几何一致性自适应地加权姿态引导的高度正则化。",
+  "arxiv_id": "2607.15048",
+  "arxiv_url": "https://arxiv.org/abs/2607.15048v1",
+  "authors": [
+    "Tianchen Deng",
+    "Zhiheng Feng",
+    "Wenhua Wu",
+    "Ziming Li",
+    "Siting Zhu",
+    "Hesheng Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-17#paper-2607-15048",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T12:59:47.284071+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.15048v1",
+  "published_at": "2026-07-16T14:26:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "lane",
+      "驾驶",
+      "车辆",
+      "道路",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.15048v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "地图/定位"
+    ]
+  },
+  "title": "RoGS: Adaptive Meshgrid Gaussian for Large-Scale Road Surface Mapping",
+  "title_zh": "RoGS：用于大规模道路表面映射的自适应网格高斯模型",
+  "translation_url": "https://hjfy.top/arxiv/2607.15048"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Traversability analysis is a fundamental capability for autonomous mobile robots operating in unstructured environments. While modern machine learning approaches such as deep neural networks and gradient-boosted trees achieve strong predictive performance, they lack interpretability and provide limited insight into the underlying terrain-robot interaction dynamics. In this paper, we propose TravKAN, a Kolmogorov-Arnold Network-based framework for fast, scalable, and interpretable traversability estimation. TravKAN represents multivariate decision functions through compositions of learnable univariate functions, enabling compact architectures and symbolic extraction of analytic expressions after training. In addition, we introduce a novel set of handcrafted features derived from the reflectivity channel of LiDAR sensors. To the best of our knowledge, reflectivity has not been systematically exploited for handcrafted traversability descriptors, despite its potential to capture material and surface properties complementary to geometric cues. We evaluate TravKAN on public, real-world urban and off-road datasets and compare it against strong baselines. TravKAN achieves strong performance across all metrics, outperforming conventional deep models and approaching the performance of XGBoost. TravKAN-Lite, i.e., TravKAN's symbolic representation, reveals meaningful nonlinear feature interactions and provides a compact, deployment-friendly, and fast analytic model. Ablation studies further show the robustness of our method to architectural variations and quantify the contribution of the proposed reflectivity-based features. These properties make TravKAN attractive for robotic systems requiring transparency, real-time computational efficiency, and interpretability in safety-critical decision-making.",
+  "abstract_zh": "可通行性分析是自主移动机器人在非结构化环境中操作的基本能力。尽管现代机器学习方法如深度神经网络和梯度提升树在预测性能上表现优异，但它们缺乏可解释性，且对基础的地形-机器人交互动态提供的洞察有限。本文提出了TravKAN，一个基于Kolmogorov-Arnold网络的框架，用于快速、可扩展且可解释的可通行性估计。TravKAN通过可学习的单变量函数的组合表示多变量决策函数，使得在训练后能够实现紧凑的架构和符号提取的解析表达。此外，我们引入了一组新颖的手工特征，这些特征源自LiDAR传感器的反射率通道。尽我们所知，反射率尚未被系统性地用于手工可通行性描述符，尽管它在捕捉材料和表面特性方面具有潜力，这些特性与几何线索互为补充。我们在公共的真实世界城市和越野数据集上评估了TravKAN，并与强基线进行了比较。TravKAN在所有指标上均表现出色，超越了传统的深度模型，并接近XGBoost的性能。TravKAN-Lite，即TravKAN的符号表示，揭示了有意义的非线性特征交互，并提供了一个紧凑、适合部署且快速的解析模型。消融研究进一步表明我们的方法对架构变化的鲁棒性，并量化了所提反射率特征的贡献。这些特性使TravKAN在需要透明性、实时计算效率和安全关键决策可解释性的机器人系统中具有吸引力。",
+  "arxiv_id": "2608.02320",
+  "arxiv_url": "https://arxiv.org/abs/2608.02320v1",
+  "authors": [
+    "Daniel Fusaro",
+    "Simone Mosco",
+    "Wanmeng Li",
+    "Alberto Pretto"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-02320",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:26.989760+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.02320v1",
+  "published_at": "2026-08-03T14:45:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "road",
+      "lidar",
+      "robot",
+      "robotic"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.02320v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "TravKAN: Fast and Interpretable Nonlinear Traversability Analysis with Kolmogorov-Arnold Networks",
+  "title_zh": "TravKAN：基于Kolmogorov-Arnold网络的快速且可解释的非线性可通行性分析",
+  "translation_url": "https://hjfy.top/arxiv/2608.02320"
+}

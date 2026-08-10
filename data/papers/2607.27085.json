@@ -1,0 +1,61 @@
+{
+  "abstract": "This paper presents the North Carolina Transitional Autonomous Vehicle Lane-Changing (NC-tALC) dataset and uses it to characterize mandatory lane-changing behavior of transitional automated vehicles (tAVs). It quantifies the evolution of lead--lag gaps throughout the lane-change process and examines how potential collision risk develops during the maneuver. A controlled field experiment comprising 78 mandatory lane-change trials was conducted on a public roadway in Apex, North Carolina. Four instrumented vehicles created repeatable traffic conditions while varying the lane changer's initial position within the candidate target gap. High-resolution RTK-GNSS/INS trajectories were processed to identify key timestamps, calculate lead, lag, and lane-change gaps, and estimate interactions using time-gap- and speed-based surrogate safety measures. Despite substantial differences in initial conditions, lead and lag gaps consistently converged toward a relatively narrow range near lane crossing. Potential collision risk increased as the maneuver progressed, peaked near physical lane entry, and was dominated by interactions with the target-lane leader. Lane-change completion did not necessarily coincide with the disappearance of collision risk. This study provides one of the first controlled empirical characterizations of the complete mandatory lane-change process of tAVs using repeatable public-road experiments. The NC-tALC dataset supports analysis of behavioral and safety evolution throughout the maneuver rather than only at the gap-acceptance instant. The dataset and findings provide empirical benchmarks for evaluating automated lane-changing behavior, calibrating behavioral models, and validating simulation and safety assessment methods for mandatory lane-change scenarios.",
+  "abstract_zh": "本文介绍了北卡罗来纳州过渡性自动驾驶车辆变道（NC-tALC）数据集，并利用该数据集对过渡性自动化车辆（tAVs）的强制变道行为进行了特征描述。研究量化了变道过程中前后间隙的演变，并考察了在该操作过程中潜在碰撞风险的发展。我们在北卡罗来纳州阿佩克斯的一条公共道路上进行了包含78次强制变道试验的受控实地实验。四辆配备仪器的车辆创造了可重复的交通条件，同时改变了变道者在候选目标间隙中的初始位置。高分辨率RTK-GNSS/INS轨迹被处理以识别关键时间戳，计算前后间隙和变道间隙，并使用基于时间间隙和速度的替代安全措施来估计交互作用。尽管初始条件存在显著差异，前后间隙在接近变道时始终趋向于相对狭窄的范围。随着操作的进行，潜在碰撞风险增加，在物理车道入口附近达到峰值，并主要受目标车道领头车辆的交互影响。变道的完成并不一定与碰撞风险的消失同时发生。本研究提供了对tAVs完整强制变道过程的首次受控实证特征描述，基于可重复的公共道路实验。NC-tALC数据集支持在整个操作过程中分析行为和安全的演变，而不仅仅是在间隙接受的瞬间。该数据集及其研究结果为评估自动变道行为、校准行为模型以及验证强制变道场景的仿真和安全评估方法提供了实证基准。",
+  "arxiv_id": "2607.27085",
+  "arxiv_url": "https://arxiv.org/abs/2607.27085v2",
+  "authors": [
+    "Abhinav Sharma",
+    "Md Abdullah Al Hasan",
+    "Danjue Chen",
+    "George F. List"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-30#paper-2607-27085",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-10T13:01:02.706370+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.27085v2",
+  "published_at": "2026-07-29T16:07:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "automated vehicles",
+      "自动驾驶",
+      "autonomous",
+      "vehicle",
+      "traffic",
+      "road",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.27085v2",
+    "axi": "https://paper.axi404.top/daily/2026-07-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "预测/规划"
+    ]
+  },
+  "title": "Controlled Experiments on Lane Changing by Transitional Autonomous Vehicle: Dataset and Behavioral Insights",
+  "title_zh": "过渡性自动驾驶车辆的变道控制实验：数据集与行为洞察",
+  "translation_url": "https://hjfy.top/arxiv/2607.27085"
+}

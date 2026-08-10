@@ -1,0 +1,53 @@
+{
+  "abstract": "Visual inertial odometry (VIO) is essential for accurate 6-DoF motion estimation in mobile robotic systems. Recent learning-based VIO methods have shown promising progress, but they often rely on unified visual--inertial representations and a single temporal model for full-pose estimation, limiting their ability to capture the heterogeneous dynamics of rotation and translation. Moreover, monocular visual features often lack explicit geometric structure, while raw inertial encoding leaves the underlying rotational kinematics implicit, weakening the rotation-related cues in IMU features. To address these issues, we propose DB-VIO, a dual-branch visual inertial odometry framework with enhanced visual--inertial representation. DB-VIO incorporates depth cues to improve monocular visual perception, injects an explicit integrated-attitude prior to strengthen rotation-aware inertial representation, and decouples pose estimation into dedicated rotational and translational branches for motion-specific temporal modeling. Experiments on autonomous driving and aerial robot benchmarks show that DB-VIO achieves state-of-the-art performance, improving the corresponding baselines by 20\\% on KITTI and 33\\% on EuRoC. Notably, under the more agile motion patterns of EuRoC, DB-VIO improves the rotational metric by 65.7\\% over prior methods. These results demonstrate the effectiveness and generalization of DB-VIO across different platforms and motion scenarios.",
+  "abstract_zh": "视觉惯性里程计（VIO）对于移动机器人系统中精确的6自由度运动估计至关重要。近期基于学习的VIO方法显示出良好的进展，但它们通常依赖统一的视觉-惯性表示和单一的时间模型进行全姿态估计，这限制了它们捕捉旋转和位移异构动态的能力。此外，单目视觉特征往往缺乏明确的几何结构，而原始惯性编码则使得潜在的旋转运动学隐含，削弱了IMU特征中与旋转相关的线索。为了解决这些问题，我们提出了DB-VIO，一种具有增强视觉-惯性表示的双分支视觉惯性里程计框架。DB-VIO结合深度线索以改善单目视觉感知，注入明确的综合姿态先验以增强旋转感知的惯性表示，并将姿态估计解耦为专门的旋转和位移分支，以进行特定运动的时间建模。在自主驾驶和空中机器人基准测试中的实验表明，DB-VIO实现了最先进的性能，在KITTI上提高了20%的基线，在EuRoC上提高了33%。值得注意的是，在EuRoC更灵活的运动模式下，DB-VIO在旋转指标上比之前的方法提高了65.7%。这些结果证明了DB-VIO在不同平台和运动场景中的有效性和泛化能力。",
+  "arxiv_id": "2607.22123",
+  "arxiv_url": "https://arxiv.org/abs/2607.22123v1",
+  "authors": [
+    "Ziyu Wan",
+    "Lin Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-27#paper-2607-22123",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:35.517150+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.22123v1",
+  "published_at": "2026-07-24T09:19:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "kitti",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "robot",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-07-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.22123v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "DB-VIO: Dual-Branch Visual Inertial Odometry with Enhanced Visual-Inertial Representation",
+  "title_zh": "DB-VIO：具有增强视觉-惯性表示的双分支视觉惯性里程计",
+  "translation_url": "https://hjfy.top/arxiv/2607.22123"
+}

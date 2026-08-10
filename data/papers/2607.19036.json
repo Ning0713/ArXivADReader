@@ -1,0 +1,61 @@
+{
+  "abstract": "V2X collaborative object detection features overcoming the limitations of single-vehicle systems by aggregating environmental features from multiple collaborative agents. However, existing mainstream V2X perception methods mainly focus on 2D BEV object detection. When 3D detection task is concerned, inferior results are obtained because they ignore the 3D spatial misalignment caused by differing height and attitude among the collaborators. In this paper, we propose a novel collaborative 3D object detection framework called CoGoal3D, which extracts and refines the 3D feature gradually in a two-stage pipeline. In the first stage, a multiscale 3D-aware global fusion module is designed to mitigate the 3D spatial misalignment. The resulting proposals are then refined in the second stage with an auxiliary task of 3D point reconstruction. An effective multi-agent collaborative data augmentation strategy is further proposed to enrich the training data while minimizing information loss. Extensive experiments on public real-world datasets demonstrate that our CoGoal3D achieves new state-of-the-art performance, with 3D [email protected] improvements of 10.86%, 10.34%, and 10.18% on the DAIR-V2X, V2V4Real, and V2X-Real datasets, respectively. Code is available at https://github.com/Megalo-f/CoGoal3D.",
+  "abstract_zh": "V2X协作目标检测通过聚合多个协作代理的环境特征，克服了单车系统的局限性。然而，现有主流的V2X感知方法主要集中在2D鸟瞰视图（BEV）目标检测上。当涉及3D检测任务时，由于忽略了协作方之间因高度和姿态不同而造成的3D空间错位，导致结果不理想。本文提出了一种新颖的协作3D目标检测框架，称为CoGoal3D，该框架在一个两阶段的流程中逐步提取和精炼3D特征。在第一阶段，设计了一个多尺度3D感知全局融合模块，以减轻3D空间错位。然后在第二阶段，通过3D点重建的辅助任务对生成的提案进行精炼。此外，进一步提出了一种有效的多代理协作数据增强策略，以丰富训练数据，同时最小化信息损失。在公共真实世界数据集上的大量实验表明，我们的CoGoal3D在性能上达到了新的最先进水平，在DAIR-V2X、V2V4Real和V2X-Real数据集上，3D [email protected] 分别提高了10.86%、10.34%和10.18%。代码可在https://github.com/Megalo-f/CoGoal3D获取。",
+  "arxiv_id": "2607.19036",
+  "arxiv_url": "https://arxiv.org/abs/2607.19036v1",
+  "authors": [
+    "Zhihao Yang",
+    "Zhiyu Xiang",
+    "Peng Xu",
+    "Tianyu Pu",
+    "Kai Wang",
+    "Eryun Liu",
+    "Dongping Zhang",
+    "Yong Ding"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-22#paper-2607-19036",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:00:12.353951+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.19036v1",
+  "published_at": "2026-07-21T12:20:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "dair-v2x",
+      "v2v4real",
+      "vehicle",
+      "bev",
+      "3d object detection",
+      "3d detection"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-07-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.19036v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "3D 检测",
+      "深度/几何"
+    ]
+  },
+  "title": "CoGoal3D: Collaborative 3D Object Detection with 3D-Aware Fusion and Refinement",
+  "title_zh": "CoGoal3D：基于3D感知融合与精炼的协作3D目标检测",
+  "translation_url": "https://hjfy.top/arxiv/2607.19036"
+}

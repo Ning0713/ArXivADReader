@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="自动驾驶领域 arXiv 论文每日归档">
+    <link rel="icon" href="{{ url('assets/favicon.svg') }}" type="image/svg+xml">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ url('assets/style.css') }}">
+</head>
+<body data-base-path="{{ site.base_path }}">
+    <main class="container">
+        <header class="header">
+            <div class="header-subtitle">{{ site.subtitle }}</div>
+            <h1 class="header-title">{{ site.title }}</h1>
+        </header>
+
+        <section class="summary summary-four" aria-label="站点统计">
+            <div class="stat-item">
+                <div class="stat-number">{{ index.total_papers }}</div>
+                <div class="stat-label">Unique Papers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">{{ index.total_daily_papers }}</div>
+                <div class="stat-label">Daily Entries</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">{{ index.total_days }}</div>
+                <div class="stat-label">Archive Days</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">{{ index.tag_counts|length }}</div>
+                <div class="stat-label">Research Tags</div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="section-title-row">
+                <h2 class="section-title">Available Dates</h2>
+                {% if index.latest_date %}<span class="latest-date">Updated {{ index.latest_date }}</span>{% endif %}
+            </div>
+            <div class="date-list">
+                {% for item in index.dates %}
+                <a href="{{ item.url }}" class="date-item">
+                    <span>{{ item.date }}</span>
+                    <span class="date-meta">{{ item.paper_count }} papers · {{ item.tag_count }} tags</span>
+                </a>
+                {% else %}
+                <div class="empty-state">No paper archive has been generated.</div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-brand">{{ site.title }}</div>
+            <div class="footer-text">
+                Data from arXiv · Candidate digest adapted from
+                <a href="https://github.com/Axi404/ArxivReader" target="_blank" rel="noopener noreferrer">Axi404/ArxivReader</a>
+            </div>
+        </footer>
+    </main>
+    <button type="button" class="back-to-top" aria-label="回到顶部" title="回到顶部">↑</button>
+    <script src="{{ url('assets/app.js') }}" defer></script>
+</body>
+</html>

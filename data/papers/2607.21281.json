@@ -1,0 +1,68 @@
+{
+  "abstract": "Topological maps are key outputs of autonomous driving perception systems, delivering essential road information for path planning. They identify instances such as centerlines and traffic signs, along with their connectivity relationships. Due to the lack of explicit markings for centerlines in real-world environments, the detection of centerline instances remains a significant challenge. To tackle this problem, we propose HGeo-TopoMap, which leverages an explicit prior map and implicit spatial relations to hierarchically boost topological mapping. First, a geometric adaptive learning module is designed for the road structure map obtained via inverse perspective mapping. This module discretely encodes semantic and spatial features from the map, followed by a prior-mask attention mechanism that selectively focuses on informative regions. Then, a geometric consistency learning module is devised, which leverages the geometric properties and spatial relationships of centerlines. Built on the geometry-aware decoder, it enforces spatial consistency by aligning features of centerline instances with identical geometric orientations. The proposed method is evaluated on the OpenLane-V2 dataset across the centerline, lane segment, and robustness benchmarks. Beyond substantial improvements in topological mapping accuracy, the proposed method offers the benefit of enhanced robustness, consistently outperforming baselines under both standard and challenging conditions. The source code and model weights will be made publicly available at https://github.com/lynn-yu/HGeo-TopoMap.",
+  "abstract_zh": "拓扑地图是自主驾驶感知系统的关键输出，提供路径规划所需的基本道路信息。它们识别中心线和交通标志等实例及其连接关系。由于现实环境中缺乏对中心线的明确标记，中心线实例的检测仍然是一个重大挑战。为了解决这个问题，我们提出了HGeo-TopoMap，该方法利用显式的先验地图和隐式的空间关系，以层次方式增强拓扑映射。首先，设计了一个几何自适应学习模块，用于通过逆透视映射获得的道路结构图。该模块离散编码地图中的语义和空间特征，随后采用先验掩码注意机制，选择性地关注信息丰富的区域。然后，设计了一个几何一致性学习模块，利用中心线的几何特性和空间关系。该模块基于几何感知解码器，通过对齐具有相同几何方向的中心线实例特征，强制执行空间一致性。所提出的方法在OpenLane-V2数据集上进行了评估，涵盖中心线、车道段和鲁棒性基准测试。除了在拓扑映射精度上显著提升外，所提出的方法还具有增强的鲁棒性，在标准和挑战性条件下均持续优于基线。源代码和模型权重将公开发布在https://github.com/lynn-yu/HGeo-TopoMap。",
+  "arxiv_id": "2607.21281",
+  "arxiv_url": "https://arxiv.org/abs/2607.21281v1",
+  "authors": [
+    "Siyu Li",
+    "Kunyu Peng",
+    "Di Wen",
+    "Beiping Hou",
+    "Zhiyong Li",
+    "Kailun Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-24#paper-2607-21281",
+  "categories": [
+    "cs.CV",
+    "cs.RO",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-08-10T13:00:27.490102+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.21281v1",
+  "published_at": "2026-07-23T13:02:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "openlane",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "lane",
+      "驾驶",
+      "交通",
+      "道路",
+      "车道",
+      "path planning",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.21281v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "HGeo-TopoMap: Boosting Topological Mapping with Hierarchical Geometric Priors",
+  "title_zh": "HGeo-TopoMap：利用层次几何先验增强拓扑映射",
+  "translation_url": "https://hjfy.top/arxiv/2607.21281"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Vision-language models (VLMs) have recently emerged as a promising paradigm for end-to-end autonomous driving, enabling agents to map multimodal inputs and high-level navigation instructions directly to executable trajectories. However, in practice, these models exhibit a persistent command-following gap: predicted trajectories often show weak sensitivity to navigation commands, resulting in incorrect behavior at critical decision points. We identify this issue as a form of conditional policy collapse, where regression-based training under multimodal trajectory distributions encourages the model to rely on dominant visual priors while marginalizing the language-conditioned signal. To address this issue, we introduce a principled formulation of classifier-free guidance (CFG) for regression-based vision-language driving. We show that CFG can be interpreted as isolating the instruction-induced residual in the action space by contrasting conditional and unconditional predictions, thereby explicitly amplifying the effect of the navigation command at inference time. However, a standard two-pass CFG introduces prohibitive latency for real-time control and produces noisy instance-level guidance directions. Building on a mean-shift interpretation of CFG, we propose Latent-Centroid Steering (LCS), a single-pass guidance mechanism that replaces instance-level residuals with class-level latent shifts. By projecting conditional representations toward precomputed command-specific centroids, LCS performs class-level latent steering based on cluster geometry that is both more stable and computationally efficient. We demonstrate that LCS reduces inference latency by approximately 50% while achieving stronger command adherence and improved driving performance on both closed-loop (Bench2Drive) and open-loop (nuScenes) benchmarks. Code will be released.",
+  "abstract_zh": "视觉-语言模型（VLMs）最近作为一种有前景的端到端自主驾驶范式出现，使得智能体能够将多模态输入和高层次导航指令直接映射到可执行轨迹。然而，在实践中，这些模型表现出持续的命令跟随差距：预测的轨迹往往对导航指令的敏感性较弱，导致在关键决策点出现不正确的行为。我们将此问题识别为一种条件策略崩溃的形式，其中基于回归的训练在多模态轨迹分布下促使模型依赖于主导的视觉先验，同时边缘化语言条件信号。为了解决这个问题，我们引入了一种无分类器引导（CFG）的原则性公式，用于基于回归的视觉-语言驾驶。我们展示了CFG可以被解释为通过对比条件和无条件预测来隔离动作空间中的指令诱导残差，从而在推理时明确放大导航指令的效果。然而，标准的双次CFG为实时控制引入了过高的延迟，并产生了嘈杂的实例级引导方向。在对CFG的均值漂移解释的基础上，我们提出了潜在中心引导（LCS），这是一种单次通行的引导机制，它用类级潜在偏移替代实例级残差。通过将条件表示投影到预计算的命令特定中心，LCS基于聚类几何进行类级潜在引导，这种方法更加稳定且计算效率更高。我们证明LCS将推理延迟减少了约50%，同时在闭环（Bench2Drive）和开环（nuScenes）基准测试上实现了更强的命令遵循和改进的驾驶性能。代码将会发布。",
+  "arxiv_id": "2608.00237",
+  "arxiv_url": "https://arxiv.org/abs/2608.00237v1",
+  "authors": [
+    "Meibo Hu",
+    "Jiamian Wang",
+    "Pichao Wang",
+    "Zhiqiang Tao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-00237",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.017547+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.00237v1",
+  "published_at": "2026-07-31T19:32:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.00237v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Latent-Centroid Steering: Single-Pass Classifier-Free Guidance for Command-Aligned Autonomous Driving",
+  "title_zh": "潜在中心引导：命令对齐自主驾驶的单次通行无分类器引导",
+  "translation_url": "https://hjfy.top/arxiv/2608.00237"
+}

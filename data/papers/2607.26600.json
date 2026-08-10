@@ -1,0 +1,49 @@
+{
+  "abstract": "Self-supervised monocular depth estimation typically relies on photometric reconstruction losses that couple depth, pose, and appearance assumptions. In this paper, we propose JEPADepth, a self-supervised monocular depth framework that incorporates a complementary training objective inspired by Image Joint-Embedding Predictive Architectures (I-JEPA) for self-supervised depth learning. Our method augments a standard photometric pipeline with a masked prediction loss computed in the representation space of a pretrained DINOv3 Vision Transformer encoder. A predictor infers target-region embeddings from visible context-region embeddings under structured masking, and is discarded along with the target encoder at inference time, adding no deployment cost. On KITTI, adding the JEPA objective consistently improves performance over the same DINOv3-based photometric baseline, without changing the inference-time architecture. Compared to prior monocular self-supervised methods, JEPADepth is competitive with state-of-the-art transformer-based approaches and outperforms strong CNN-based baselines on the standard benchmark. In zero-shot transfer (trained on KITTI and evaluated without fine-tuning), JEPADepth achieves the best or near-best performance among the compared methods on both Make3D and Cityscapes across multiple metrics.",
+  "abstract_zh": "自监督单目深度估计通常依赖于光度重建损失，这些损失将深度、姿态和外观假设结合在一起。在本文中，我们提出了JEPADepth，一种自监督单目深度框架，结合了受图像联合嵌入预测架构（Image Joint-Embedding Predictive Architectures, I-JEPA）启发的互补训练目标，用于自监督深度学习。我们的方法在标准光度管道中增加了一个在预训练DINOv3视觉变换器编码器的表示空间中计算的掩码预测损失。预测器在结构化掩码下从可见上下文区域嵌入推断目标区域嵌入，并在推理时与目标编码器一起被丢弃，不增加部署成本。在KITTI数据集上，添加JEPA目标始终改善了相同基于DINOv3的光度基线的性能，而不改变推理时的架构。与之前的单目自监督方法相比，JEPADepth在与最先进的基于变换器的方法竞争时表现出色，并在标准基准上超越了强大的基于卷积神经网络（CNN）的基线。在零样本迁移（在KITTI上训练并在不进行微调的情况下评估）中，JEPADepth在Make3D和Cityscapes的多个指标上，在比较的方法中实现了最佳或接近最佳的性能。",
+  "arxiv_id": "2607.26600",
+  "arxiv_url": "https://arxiv.org/abs/2607.26600v1",
+  "authors": [
+    "Ionuţ Grigore",
+    "Călin-Adrian Popa"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-30#paper-2607-26600",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:02.732980+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.26600v1",
+  "published_at": "2026-07-29T08:23:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "cityscapes",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-07-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.26600v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "JEPADepth: Masked Predictive Representation Learning for Self-Supervised Monocular Depth Estimation",
+  "title_zh": "JEPADepth：用于自监督单目深度估计的掩码预测表示学习",
+  "translation_url": "https://hjfy.top/arxiv/2607.26600"
+}

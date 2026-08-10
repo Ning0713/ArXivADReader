@@ -1,0 +1,56 @@
+{
+  "abstract": "With the promising performance of deep neural networks on image-based tasks, different real-world applications such as autonomous driving and motion detection have become increasingly mature and relevant to human lives. In particular, Optical Flow Estimation Networks (OFENs), as upstream models, play a critical role in different domains. Its outputs are heavily assumed and adopted for different downstream tasks, and it is essential to test its robustness to prevent safety accidents. We present an approach for real-time attacks on OFENs in the physical world, leveraging infrared lights for their stealthiness. By generating a large number of Adversarial Examples in advance, our approach computes AEs in real time and dynamically displays them, which allows our method to facilitate precise and targeted attacks without modifying the victim system. Unlike previous digital-to-physical attack techniques, our method directly attacks victim models within the physical world, thereby overcoming the limitations associated with the ineffectiveness of AEs. Experimental results demonstrate the efficacy of our approach in compromising OFENs across diverse lighting conditions, varying object motion velocities, and different object placements, ultimately impairing the network's ability to accurately estimate optical flow.",
+  "abstract_zh": "随着深度神经网络在基于图像任务中的出色表现，自动驾驶和运动检测等不同的现实应用变得愈加成熟，并与人类生活息息相关。特别是光流估计网络（Optical Flow Estimation Networks, OFENs）作为上游模型，在不同领域中发挥着关键作用。其输出被广泛假设和应用于不同的下游任务，因此测试其鲁棒性以防止安全事故至关重要。我们提出了一种针对OFENs的物理世界实时攻击方法，利用红外光的隐匿性。通过提前生成大量对抗样本（Adversarial Examples, AEs），我们的方法能够实时计算对抗样本并动态展示，从而实现精确和有针对性的攻击，而无需修改受害系统。与之前的数字到物理攻击技术不同，我们的方法直接在物理世界中攻击受害模型，从而克服了对抗样本无效性所带来的局限性。实验结果表明，我们的方法在不同光照条件、变化的物体运动速度和不同物体放置情况下有效地破坏了光流估计网络的性能，最终削弱了网络准确估计光流的能力。",
+  "arxiv_id": "2607.26651",
+  "arxiv_url": "https://arxiv.org/abs/2607.26651v1",
+  "authors": [
+    "Shen You",
+    "Wei Jiang",
+    "Jiarui Liu",
+    "Yijian Ye",
+    "Qiuzhen Lin",
+    "Xiangtao Li",
+    "Ka-Chun Wong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-30#paper-2607-26651",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:01:02.736495+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.26651v1",
+  "published_at": "2026-07-29T09:12:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-07-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.26651v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "深度/几何"
+    ]
+  },
+  "title": "Physically Real-time Infrared Attack against Optical Flow Estimation Networks",
+  "title_zh": "针对光流估计网络的物理实时红外攻击",
+  "translation_url": "https://hjfy.top/arxiv/2607.26651"
+}

@@ -1,0 +1,71 @@
+{
+  "abstract": "Cooperative perception through vehicle-to-everything (V2X) communication can overcome the inherent physical limitations of individual autonomous vehicles, such as occlusions and limited sensor range. However, the development of robust V2X algorithms, particularly those relying on unified spatial representations like bird's-eye view (BEV) representation, is hampered by the lack of large-scale, multi-modal, multi-task datasets. Moreover, collecting and annotating a large set of synchronized, real-world multi-agent data is prohibitively expensive. This has resulted in a landscape where existing V2X datasets are notably limited in both size and scope. To overcome this, we introduce SimBEV2X, an advanced synthetic data generation tool built on the CARLA simulator. SimBEV2X automatically creates randomized driving scenarios to collect multi-modal sensor data alongside various types of ground truth including 3D bounding boxes with unique track IDs, HD map information, BEV segmentation maps, and semantic occupancy voxel grids from both vehicles and RSUs. We also present the SimBEV2X dataset, the largest V2X perception dataset to date. The dataset comprises 258 scenes, each involving up to 8 connected vehicles and up to 4 RSUs across a variety of road networks. The SimBEV2X dataset is an order of magnitude larger than existing V2X datasets and contains 102,200 frames, 588,520 lidar point clouds, more than 3 million images, over 27 million bounding boxes, and a comprehensive set of other annotations. Finally, we establish a strong baseline on the SimBEV2X dataset using CoopDet3D and propose CoBEVFusion, a novel architecture that combines CoopDet3D with fused axial attention (FAX) for context-aware multi-agent feature aggregation, resulting in superior performance. SimBEV2X, the SimBEV2X dataset, and CoBEVFusion are available at https://simbev2x.org and https://github.com/GoodarzMehr/SimBEV2X.",
+  "abstract_zh": "通过车对一切（V2X）通信实现的协同感知可以克服单个自主车辆固有的物理限制，例如遮挡和传感器范围有限。然而，开发强健的V2X算法，特别是那些依赖于统一空间表示（如鸟瞰视图（BEV）表示）的算法，受到缺乏大规模、多模态、多任务数据集的制约。此外，收集和标注大量同步的真实世界多智能体数据的成本极高。这导致现有的V2X数据集在规模和范围上都显得相当有限。为了解决这个问题，我们推出了SimBEV2X，这是一个基于CARLA模拟器的先进合成数据生成工具。SimBEV2X自动创建随机驾驶场景，以收集多模态传感器数据以及各种类型的真实数据，包括带有唯一轨迹ID的3D边界框、高精度地图信息、BEV分割图和来自车辆及路边单元（RSUs）的语义占用体素网格。我们还提出了SimBEV2X数据集，这是迄今为止最大的V2X感知数据集。该数据集包含258个场景，每个场景涉及多达8辆连接车辆和多达4个RSUs，涵盖多种道路网络。SimBEV2X数据集的规模比现有的V2X数据集大一个数量级，包含102,200帧、588,520个激光雷达点云、超过300万张图像、超过2700万个边界框以及一整套其他注释。最后，我们在SimBEV2X数据集上建立了一个强基线，使用了CoopDet3D，并提出了CoBEVFusion，这是一种将CoopDet3D与融合轴向注意力（FAX）结合的新架构，用于上下文感知的多智能体特征聚合，从而实现了卓越的性能。SimBEV2X、SimBEV2X数据集和CoBEVFusion可在https://simbev2x.org和https://github.com/GoodarzMehr/SimBEV2X获取。",
+  "arxiv_id": "2607.23910",
+  "arxiv_url": "https://arxiv.org/abs/2607.23910v1",
+  "authors": [
+    "Goodarz Mehr",
+    "Sepideh Gohari",
+    "Montasir Abbas",
+    "Azim Eskandarian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-23910",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "cs.MA",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.573973+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.23910v1",
+  "published_at": "2026-07-27T00:55:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "vehicle-to-everything",
+      "v2x",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路",
+      "bev",
+      "bird's-eye",
+      "occupancy",
+      "lidar",
+      "hd map",
+      "cooperative perception",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.23910v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "SimBEV2X: A Large-Scale Dataset and Data Generation Tool for Multi-Task Vehicle-to-Everything Cooperative Perception",
+  "title_zh": "SimBEV2X：用于多任务车对一切协同感知的大规模数据集和数据生成工具",
+  "translation_url": "https://hjfy.top/arxiv/2607.23910"
+}

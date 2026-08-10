@@ -1,0 +1,61 @@
+{
+  "abstract": "Long-range vehicle trajectories provide important spatio-temporal evidence for traffic safety analysis, autonomous driving evaluation, and data-driven traffic management, yet continuously recovering them from fixed highway cameras remains difficult. As vehicles recede into distant road regions, perspective compression and scale decay often fragment or prematurely terminate automatic tracklets, even when their continuation remains identifiable from motion consistency across neighboring frames. We formulate this problem as recovering the far-range continuation of a vehicle trajectory from a reliable near-field tracklet. We introduce LoRFT, to our knowledge the first open benchmark dedicated to long-range vehicle trajectory reconstruction from fixed highway cameras. LoRFT comprises 22 expressway surveillance scenes, 366,109 video frames, 6,601 manually verified trajectories, 2,694,889 bounding boxes, road-geometry annotations, scene-level splits, and evaluation scripts. We further propose Map-RSTNet, a map-aware residual sequence-to-sequence model that reconstructs distant trajectories in a road-geometry-aligned state space and dynamically refreshes local road geometry during decoding. On LoRFT, Map-RSTNet reduces ADE, FDE, and 5-second RMSE by 11.0%, 15.4%, and 10.5%, respectively, relative to the strongest baseline. These results demonstrate that road-geometry-aware reconstruction can extend usable trajectory records from existing fixed-camera infrastructure. LoRFT provides a reproducible testbed for long-range vehicle trajectory reconstruction.",
+  "abstract_zh": "长距离车辆轨迹为交通安全分析、自动驾驶评估和数据驱动的交通管理提供了重要的时空证据，但从固定高速公路摄像头持续恢复这些轨迹仍然困难。当车辆远离时，透视压缩和尺度衰减常常导致自动轨迹片段的碎片化或过早终止，即使它们的继续在相邻帧的运动一致性中仍然可识别。我们将此问题表述为从可靠的近场轨迹片段恢复车辆轨迹的远程延续。我们介绍了LoRFT，这是我们所知的第一个专门用于从固定高速公路摄像头进行长距离车辆轨迹重建的开放基准。LoRFT包含22个高速公路监控场景、366,109个视频帧、6,601个手动验证的轨迹、2,694,889个边界框、道路几何注释、场景级划分和评估脚本。我们进一步提出了Map-RSTNet，这是一种地图感知的残差序列到序列模型，它在与道路几何对齐的状态空间中重建远程轨迹，并在解码过程中动态刷新局部道路几何。在LoRFT上，Map-RSTNet相对于最强基线分别减少了ADE、FDE和5秒RMSE的11.0%、15.4%和10.5%。这些结果表明，基于道路几何的重建可以扩展现有固定摄像头基础设施的可用轨迹记录。LoRFT为长距离车辆轨迹重建提供了一个可重复的测试平台。",
+  "arxiv_id": "2607.19911",
+  "arxiv_url": "https://arxiv.org/abs/2607.19911v1",
+  "authors": [
+    "Yufan Zhu",
+    "Kefu Yi",
+    "Xueju Zhang",
+    "Yunyang Tian",
+    "Long Chen",
+    "Zixuan Xiao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-23#paper-2607-19911",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:19.094261+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.19911v1",
+  "published_at": "2026-07-22T08:42:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "highway",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.19911v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "LoRFT: Benchmarking Long-Range Vehicle Trajectory Reconstruction from Fixed Highway Cameras",
+  "title_zh": "LoRFT：基于固定高速公路摄像头的长距离车辆轨迹重建基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2607.19911"
+}

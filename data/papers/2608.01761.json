@@ -1,0 +1,58 @@
+{
+  "abstract": "End-to-end (E2E) autonomous driving algorithms require rigorous closed-loop validation in simulation environments offering high visual fidelity, strong interactivity, and real-time performance. Existing approaches, from game engines to static neural rendering, inherently trade off these requirements and struggle with the dynamic scene composition essential for E2E testing. To bridge this gap, we propose a novel decoupled 3D Gaussian Splatting (3DGS) framework tailored for large-scale E2E evaluation. We fundamentally decompose scenes into a high-fidelity static background and manipulable dynamic agents using an object-centric canonical representation. To resolve resulting representational conflicts, we introduce three targeted modules: (1) asset compression via perceptual pruning and vector quantization for real-time traffic rendering; (2) map-guided geometric registration leveraging semantic topology to strictly align trajectories; and (3) proxy-based relighting transferring ambient illumination for seamless photometric integration. Extensive experiments demonstrate that DecoupleGS achieves a balanced fidelity-efficiency trade-off, improves metric and photometric consistency, and provides a practical closed-loop sensor simulation platform for E2E autonomous driving evaluation.",
+  "abstract_zh": "端到端（E2E）自主驾驶算法需要在提供高视觉保真度、强交互性和实时性能的仿真环境中进行严格的闭环验证。现有的方法，从游戏引擎到静态神经渲染，固有地在这些要求之间进行权衡，并在E2E测试所需的动态场景组合方面面临挑战。为了解决这一问题，我们提出了一种新颖的解耦3D高斯点云渲染（3DGS）框架，专为大规模E2E评估而设计。我们从根本上将场景分解为高保真静态背景和可操控的动态代理，采用以对象为中心的标准表示法。为了解决由此产生的表示冲突，我们引入了三个针对性的模块：（1）通过感知剪枝和向量量化实现资产压缩，以实现实时交通渲染；（2）利用语义拓扑的地图引导几何注册，严格对齐轨迹；（3）基于代理的重光照，转移环境光照以实现无缝的光度集成。大量实验表明，DecoupleGS实现了保真度与效率的平衡权衡，提高了度量和光度一致性，并提供了一个实用的闭环传感器仿真平台，用于E2E自主驾驶评估。",
+  "arxiv_id": "2608.01761",
+  "arxiv_url": "https://arxiv.org/abs/2608.01761v1",
+  "authors": [
+    "Siying Li",
+    "Ying Ni",
+    "Jie Sun",
+    "Jian Sun",
+    "Haotian Shi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-01761",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.114958+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.01761v1",
+  "published_at": "2026-08-03T06:32:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 61
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.01761v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "端到端驾驶",
+      "仿真/数据"
+    ]
+  },
+  "title": "DecoupleGS: Interactive 3D Gaussian Splatting for End-to-End Autonomous Driving Testing",
+  "title_zh": "DecoupleGS：用于端到端自主驾驶测试的交互式3D高斯点云渲染",
+  "translation_url": "https://hjfy.top/arxiv/2608.01761"
+}

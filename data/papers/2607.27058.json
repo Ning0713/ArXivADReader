@@ -1,0 +1,58 @@
+{
+  "abstract": "Currently, autonomous driving object detection models face significant data scarcity and generalization challenges when navigating complex Chinese rural traffic scenarios. To address these limitations, we propose a novel real-synthetic mixed object detection dataset tailored specifically for Chinese rural roads and systematically evaluate the performance of 13 mainstream detectors under different real-to-synthetic data ratios, thereby providing empirical evidence for model selection and data strategy design in rural autonomous driving scenarios. Our dataset combines real-world images captured in Weishi County, Henan Province, with parameterized virtual scenes generated via Unreal Engine. To accurately reflect the unique realities of rural traffic, we define a comprehensive 14-category object system encompassing region-specific elements such as electric tricycles, low-speed vehicles (LSVs), and roadside stalls. Under a unified training protocol, we systematically evaluate 13 mainstream detectors -- spanning the YOLOv5, YOLOv8, YOLO11, and YOLO26 series, as well as RT-DETR-L -- across three data configurations: an all-real baseline, a 1:0.5 real-to-virtual mix, and a 1:1 mix. Experimental results demonstrate that a moderate injection of synthetic data (1:0.5 ratio) effectively enhances detection performance, with YOLO11m achieving the highest [email protected] of 0.758. However, a higher proportion of synthetic data (1:1) introduces domain shifts that offset the benefits of data scaling. While most models reliably identify distinct local vehicles, significant perceptual bottlenecks remain for long-tail, non-standard objects like stalls and railings. This research provides crucial empirical evidence and novel insights for model selection and synthetic data strategies, facilitating the practical deployment of autonomous driving perception systems in rural areas.",
+  "abstract_zh": "目前，自动驾驶物体检测模型在复杂的中国农村交通场景中面临显著的数据稀缺和泛化挑战。为了解决这些限制，我们提出了一种新颖的专门针对中国农村道路的真实-合成混合物体检测数据集，并系统地评估了13种主流检测器在不同真实与合成数据比例下的性能，从而为农村自动驾驶场景中的模型选择和数据策略设计提供实证依据。我们的数据集结合了在河南省卫辉市捕获的真实世界图像与通过虚幻引擎（Unreal Engine）生成的参数化虚拟场景。为了准确反映农村交通的独特现实，我们定义了一个涵盖区域特定元素的综合14类物体系统，包括电动三轮车、低速车辆（Low-Speed Vehicles, LSVs）和路边摊等。在统一的训练协议下，我们系统地评估了13种主流检测器——涵盖YOLOv5、YOLOv8、YOLO11和YOLO26系列，以及RT-DETR-L——在三种数据配置下的表现：全真实基线、1:0.5的真实与虚拟混合，以及1:1的混合。实验结果表明，适度注入合成数据（1:0.5比例）有效提升了检测性能，其中YOLO11m达到了最高的 [email protected] 为0.758。然而，更高比例的合成数据（1:1）引入了领域转移，抵消了数据扩展的好处。尽管大多数模型能够可靠地识别出不同的本地车辆，但对于长尾的非标准物体，如摊位和护栏，仍然存在显著的感知瓶颈。本研究为模型选择和合成数据策略提供了重要的实证依据和新颖的见解，促进了自动驾驶感知系统在农村地区的实际部署。",
+  "arxiv_id": "2607.27058",
+  "arxiv_url": "https://arxiv.org/abs/2607.27058v1",
+  "authors": [
+    "Danning Zhu",
+    "Ziyan Lin",
+    "Jing Wu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-30#paper-2607-27058",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:02.751017+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.27058v1",
+  "published_at": "2026-07-29T15:49:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "roadside",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.27058v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Object Detection for Autonomous Driving in Chinese Rural Scenes: An Experimental Study on Real-Synthetic Data Mixing and Model Evaluation",
+  "title_zh": "中国农村场景下的自动驾驶物体检测：真实与合成数据混合及模型评估的实验研究",
+  "translation_url": "https://hjfy.top/arxiv/2607.27058"
+}

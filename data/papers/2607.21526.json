@@ -1,0 +1,57 @@
+{
+  "abstract": "Self-supervised depth estimation is challenging for safe autonomous driving under various adverse weather conditions due to sensor perception degradation. These challenges arise from two main aspects. Firstly, adverse conditions can distort pixel correspondences and violate the assumptions embedded in the self-supervised loss function, leading to erroneous depth predictions. Secondly, while radar is a widely adopted sensor in adverse weather conditions, the sparse distribution of radar points in the Point of View (POV) poses challenges for self-supervised fusion. To address these issues, we introduce a novel self-training pipeline using unpaired real all-weather data through multi-teacher distillation and robust radar fusion. We propose the Uncertainty-Aware Multi-Teacher Distillation method to generate diverse teacher models with different adverse condition inputs, and then employ uncertainty modeling to weigh the knowledge distillation loss. Additionally, we design the POV-BEV Radar Fusion approach, which leverages camera-pixel ray constraints to establish connections between the camera's Point of View (POV) and the radar's Bird's-Eye View (BEV). This approach enables the utilization of denser radar points, effectively capturing the complementary perspectives of both POV and BEV. Extensive quantitative and qualitative experiments demonstrate the robustness of our proposed method on all-weather datasets, achieving state-of-the-art performance. Our code and models are available at https://github.com/MICLAB-BUPT/RobustDepth.",
+  "abstract_zh": "自监督深度估计在各种恶劣天气条件下进行安全自主驾驶面临挑战，因为传感器感知能力下降。这些挑战主要源于两个方面。首先，恶劣条件可能会扭曲像素对应关系，并违反自监督损失函数中嵌入的假设，从而导致错误的深度预测。其次，尽管雷达是恶劣天气条件下广泛采用的传感器，但在视角（Point of View, POV）中雷达点的稀疏分布对自监督融合构成了挑战。为了解决这些问题，我们引入了一种新的自我训练流程，利用未配对的真实全天气数据，通过多教师蒸馏和鲁棒雷达融合进行训练。我们提出了不确定性感知多教师蒸馏方法，以生成具有不同恶劣条件输入的多样化教师模型，然后采用不确定性建模来加权知识蒸馏损失。此外，我们设计了POV-BEV雷达融合方法，利用相机像素光线约束建立相机视角（POV）与雷达鸟瞰视图（BEV）之间的联系。该方法能够利用更密集的雷达点，有效捕捉POV和BEV的互补视角。大量定量和定性实验表明，我们提出的方法在全天气数据集上具有鲁棒性，达到了最先进的性能。我们的代码和模型可在 https://github.com/MICLAB-BUPT/RobustDepth 获取。",
+  "arxiv_id": "2607.21526",
+  "arxiv_url": "https://arxiv.org/abs/2607.21526v1",
+  "authors": [
+    "Mengshi Qi",
+    "Xiaoyang Bi",
+    "Xianlin Zhang",
+    "Huadong Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-24#paper-2607-21526",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:27.500617+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.21526v1",
+  "published_at": "2026-07-23T17:11:33Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "radar",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-07-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.21526v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "Boosting Robustness for All-Weather Self-Supervised Depth Estimation in Autonomous Driving",
+  "title_zh": "增强自主驾驶中全天气自监督深度估计的鲁棒性",
+  "translation_url": "https://hjfy.top/arxiv/2607.21526"
+}

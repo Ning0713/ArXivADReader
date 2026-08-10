@@ -1,0 +1,63 @@
+{
+  "abstract": "Large-scale road surface reconstruction supports high-definition mapping, autonomous-driving perception, annotation, and simulation. Existing road-specialized optimization methods can produce high-quality road representations, but they typically require per-scene training and scene-dependent coverage design around the driving trajectory, limiting scalable reconstruction over newly collected roads. To address these limitations, we introduce RoadVGGT, a road-structure-aware feed-forward framework that reconstructs compact Gaussian road surfaces without test-time per-scene optimization. RoadVGGT uses a geometric foundation model to exploit multi-view images together with provided pose and depth observations, and predicts dense pixel-aligned Gaussian attributes through a learned Gaussian head. To make these dense predictions usable for large road surfaces, we align them into a consistent metric world coordinate system and fuse redundant Gaussians on the road-aligned XY plane through confidence-weighted grid fusion. Category-aware grouping and road--sidewalk junction protection further control fusion around vulnerable road structures. The resulting representation supports RGB and semantic bird's-eye-view maps, elevation estimation, and novel view synthesis. RoadVGGT eliminates the need for per-scene optimization in prior methods, reconstructs complete road surfaces with a compact Gaussian representation, and improves image quality, semantic mapping, and elevation accuracy. Extensive experiments demonstrate the potential of geometric foundation models for scalable feed-forward road surface reconstruction.",
+  "abstract_zh": "大规模道路表面重建支持高清地图、自动驾驶感知、标注和仿真。现有的道路专用优化方法能够生成高质量的道路表示，但通常需要针对每个场景进行训练，并围绕驾驶轨迹设计场景依赖的覆盖，这限制了对新收集道路的可扩展重建。为了解决这些限制，我们提出了RoadVGGT，一种道路结构感知的前馈框架，能够在不进行测试时每个场景优化的情况下重建紧凑的高斯道路表面。RoadVGGT利用几何基础模型，结合多视角图像以及提供的姿态和深度观测，预测通过学习的高斯头生成的密集像素对齐高斯属性。为了使这些密集预测可用于大规模道路表面，我们将其对齐到一致的度量世界坐标系，并通过基于置信度加权的网格融合在道路对齐的XY平面上融合冗余高斯。类别感知分组和道路-人行道交界保护进一步控制了脆弱道路结构周围的融合。最终生成的表示支持RGB和语义鸟瞰图、海拔估计以及新视图合成。RoadVGGT消除了先前方法中每个场景优化的需求，以紧凑的高斯表示重建完整的道路表面，并提高了图像质量、语义映射和海拔精度。大量实验表明，几何基础模型在可扩展前馈道路表面重建中的潜力。",
+  "arxiv_id": "2607.23758",
+  "arxiv_url": "https://arxiv.org/abs/2607.23758v1",
+  "authors": [
+    "Han Jiao",
+    "Chen Liu",
+    "Jiakai Sun",
+    "Zhanjie Zhang",
+    "Mengyuan Yang",
+    "Yimeng Li",
+    "Mofan Zhou",
+    "Kun Zhan",
+    "Lei Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-23758",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.567967+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.23758v1",
+  "published_at": "2026-07-26T17:09:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving perception",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "道路",
+      "bird's-eye",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 85
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.23758v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "地图/定位"
+    ]
+  },
+  "title": "RoadVGGT: Road-Structure-Aware Feed-Forward Road Surface Reconstruction",
+  "title_zh": "RoadVGGT：道路结构感知前馈道路表面重建",
+  "translation_url": "https://hjfy.top/arxiv/2607.23758"
+}

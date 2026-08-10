@@ -1,0 +1,52 @@
+{
+  "abstract": "Large video diffusion models provide rich spatiotemporal priors for autonomous driving, but existing world-action models often inherit the cost of iterative future-video generation even though deployment only requires an ego trajectory. We ask a more basic question: how much of a video diffusion model must be executed to make a reliable driving decision? Through a controlled study of video denoising timesteps and Diffusion Transformer (DiT) depth, we find that planning performance is largely insensitive to the tested video-noise levels, whereas strong trajectories can already be decoded from intermediate layers. Based on this observation, we introduce Adaptive-WAM, a quality-aware multi-exit planner built on a Wan2.2-5B backbone. Trajectory diffusion heads are attached to selected DiT blocks, and a lightweight trajectory-quality scorer terminates inference once the best trajectory decoded so far satisfies a quality threshold; otherwise, computation continues from the cached hidden state to a deeper exit. The deployed planner therefore avoids the iterative classifier-free denoising loop and VAE decoding required for future-video synthesis, while dynamically allocating backbone depth according to trajectory quality. On NAVSIM, the adaptive single-trajectory planner achieves 90.8 PDMS; a separate fixed-exit variant reaches 92.6 PDMS with 64 proposals. It further obtains 89.9 EPDMS on NAVSIM v2, yielding the best reported results among the compared front-view video world-model planners. Without target-domain fine-tuning, Adaptive-WAM transfers to nuScenes with 0.88 m average L2 error and a 0.08\\% collision rate. On an A100, adaptive routing improves PDMS from 90.62 to 90.79 while averaging 170 ms end-to-end planning latency, approximately 10\\% below the 190 ms fixed block-15 planner and 47\\% below the 320 ms fixed full-depth planner. Code will be released.",
+  "abstract_zh": "大型视频扩散模型为自主驾驶提供了丰富的时空先验，但现有的世界-动作模型往往继承了迭代未来视频生成的成本，尽管部署只需要自我轨迹。我们提出一个更基本的问题：为了做出可靠的驾驶决策，必须执行多少视频扩散模型？通过对视频去噪时间步和扩散变换器（Diffusion Transformer, DiT）深度的控制研究，我们发现规划性能对测试的视频噪声水平几乎不敏感，而强轨迹可以从中间层解码。基于这一观察，我们引入了自适应-WAM，一种基于Wan2.2-5B骨干网构建的质量感知多退出规划器。轨迹扩散头附加到选定的DiT块上，一个轻量级的轨迹质量评分器在解码到目前为止最佳轨迹满足质量阈值时终止推理；否则，计算将从缓存的隐藏状态继续到更深的退出。因此，部署的规划器避免了未来视频合成所需的迭代无分类器去噪循环和变分自编码器（VAE）解码，同时根据轨迹质量动态分配骨干深度。在NAVSIM上，自适应单轨迹规划器实现了90.8 PDMS；一个独立的固定退出变体在64个提案下达到了92.6 PDMS。它在NAVSIM v2上进一步获得了89.9 EPDMS，成为所比较的前视视频世界模型规划器中报告的最佳结果。在没有目标领域微调的情况下，自适应-WAM在nuScenes上转移时平均L2误差为0.88米，碰撞率为0.08%。在A100上，自适应路由将PDMS从90.62提高到90.79，同时平均端到端规划延迟为170毫秒，约比190毫秒的固定块-15规划器低10%，比320毫秒的固定全深度规划器低47%。代码将会发布。",
+  "arxiv_id": "2608.06008",
+  "arxiv_url": "https://arxiv.org/abs/2608.06008v1",
+  "authors": [
+    "Sining Ang",
+    "Yuguang Yang",
+    "Yan Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-07#paper-2608-06008",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:52.088612+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.06008v1",
+  "published_at": "2026-08-06T13:13:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-08-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.06008v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Adaptive-WAM: Quality-Guided Early-Exit Planning from Intermediate Video-Diffusion Features",
+  "title_zh": "自适应-WAM：基于质量引导的中间视频扩散特征早期退出规划",
+  "translation_url": "https://hjfy.top/arxiv/2608.06008"
+}

@@ -1,0 +1,58 @@
+{
+  "abstract": "End-to-end autonomous driving (E2E AD) systems integrate perception, prediction, and planning into a single differentiable architecture. While these models show great promise, their standard training often relies on output-only supervision, which can lead to weak gradients for the hidden layers of increasingly complex models. Recent works have integrated vision-language model (VLM) supervision for latent features to address this, yielding substantial empirical gains, yet leaving the underlying theoretical mechanisms poorly understood. Our investigation into this methodology reveals that the resulting performance gains stem not from VLM reasoning capabilities, as previously assumed, but rather from the latent connections forged between the E2E AD model and ground-truth (GT) data during training. Building on this insight, we propose a probabilistic deep supervision framework that regularizes intermediate latent representations directly from GT data. By treating model latents as reparameterizable distributions, we optimize the architecture via the Evidence Lower Bound (ELBO). Our evaluations conducted on the nuScenes dataset demonstrate that supervising trajectory-related latents with future GT paths consistently improves planning performance. Using identical training data and E2E architectures, our method achieves an 8% reduction in planning L2 error and a 3% decrease in collision rates compared to competitive vectorized baselines, all while incurring negligible computational overhead.",
+  "abstract_zh": "端到端自主驾驶（E2E AD）系统将感知、预测和规划整合到一个单一的可微分架构中。尽管这些模型展现出巨大的潜力，但其标准训练通常依赖于仅输出监督，这可能导致对于日益复杂模型的隐藏层产生较弱的梯度。近期的研究将视觉-语言模型（VLM）监督整合到潜在特征中，以解决这一问题，取得了显著的实证增益，但其背后的理论机制仍然不够清晰。我们对这一方法的调查表明，性能提升的原因并非源于VLM的推理能力，如之前所假设的，而是源于在训练过程中E2E AD模型与真实数据（GT）之间建立的潜在联系。基于这一见解，我们提出了一种概率深度监督框架，直接从GT数据对中间潜在表示进行正则化。通过将模型潜在视为可重新参数化的分布，我们通过证据下界（ELBO）优化架构。我们在nuScenes数据集上的评估表明，使用未来GT路径对与轨迹相关的潜在进行监督，能够持续改善规划性能。在使用相同训练数据和E2E架构的情况下，我们的方法相比于竞争性的向量化基线实现了8%的规划L2误差降低和3%的碰撞率下降，同时几乎没有增加计算开销。",
+  "arxiv_id": "2608.01201",
+  "arxiv_url": "https://arxiv.org/abs/2608.01201v1",
+  "authors": [
+    "Volodymyr Havrylov",
+    "Faris Janjoš",
+    "Andreas Look",
+    "Jürgen Mathes",
+    "Andreas Geiger"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-01201",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:26.962286+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.01201v1",
+  "published_at": "2026-08-02T12:33:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "motion planning",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.01201v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "端到端驾驶"
+    ]
+  },
+  "title": "PRISM: Privileged Probabilistic Latent Supervision for End-to-End Autonomous Driving Motion Planning",
+  "title_zh": "PRISM：用于端到端自主驾驶运动规划的特权概率潜在监督",
+  "translation_url": "https://hjfy.top/arxiv/2608.01201"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "This paper addresses multi-objective kinodynamic planning in environments with stochastic hybrid adversaries that probabilistically transition to adversarial modes based on the ego state. The goal is to construct the Pareto-front of paths that trade off execution cost and the probability of safety constraint violation (risk). Existing chance-constrained planners evaluate risk over open-loop trajectories, yielding overly conservative solutions that fail to account for ego-agent reactivity. To address this limitation, we shift the planning space to sequences of closed-loop policies, and integrate sample-based risk evaluation directly into tree construction via Monte-Carlo particle rollouts. We first introduce Stochastic Multi-Objective RRT (SMO-RRT), for which we prove probabilistic completeness, followed by Stochastic Multi-Objective Stable Sparse RRT (SMO-SST), which leverages selective pruning to improve numerical performance at the cost of completeness. For both algorithms, we derive a finite-sample bound on the probability of chance constraint violation for systems with non-Gaussian, state-dependent uncertainty, enabling probabilistically safe planning in a broad class of environments applicable to multi-agent systems, social navigation, and autonomous driving.",
+  "abstract_zh": "本文探讨了在具有随机混合对抗者的环境中进行多目标运动动力学规划，这些对抗者根据自我状态以概率方式过渡到对抗模式。目标是构建路径的帕累托前沿，这些路径在执行成本和安全约束违反概率（风险）之间进行权衡。现有的机会约束规划器在开放循环轨迹上评估风险，导致过于保守的解决方案，未能考虑自我代理的反应性。为了解决这一局限性，我们将规划空间转移到闭环策略的序列中，并通过蒙特卡洛粒子展开直接将基于样本的风险评估集成到树的构建中。我们首先介绍了随机多目标快速扩展随机树（Stochastic Multi-Objective RRT, SMO-RRT），并证明其概率完备性，随后介绍了随机多目标稳定稀疏快速扩展随机树（Stochastic Multi-Objective Stable Sparse RRT, SMO-SST），该方法利用选择性修剪在保证完备性的代价下提高数值性能。对于这两种算法，我们推导了在具有非高斯、状态依赖不确定性的系统中，机会约束违反概率的有限样本界限，从而实现了在广泛适用于多智能体系统、社会导航和自动驾驶的环境中进行概率安全规划。",
+  "arxiv_id": "2607.19284",
+  "arxiv_url": "https://arxiv.org/abs/2607.19284v1",
+  "authors": [
+    "Thomas Marshall Vielmetti",
+    "Daniel Cherenson",
+    "Dimitra Panagou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-22#paper-2607-19284",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:12.319754+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.19284v1",
+  "published_at": "2026-07-21T16:56:34Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-07-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.19284v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "深度/几何"
+    ]
+  },
+  "title": "Stochastic Multi-Objective Kinodynamic Planning Against Adversaries",
+  "title_zh": "针对对抗者的随机多目标运动动力学规划",
+  "translation_url": "https://hjfy.top/arxiv/2607.19284"
+}

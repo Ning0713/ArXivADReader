@@ -1,0 +1,59 @@
+{
+  "abstract": "Autonomous driving requires both safe and efficient planning decisions in dynamic 3D environments. Although recent Vision/Video-Action models learn policies directly from visual observations and scale well with advances in vision transformers and large-scale training data, they often lack explicit geometric grounding and future-aware spatial guidance, limiting their ability to balance collision avoidance and driving progress. In this work, we propose GeoWorldAD, a geometry world action model that grounds trajectory planning in ego-aligned 3D space and anticipates short-horizon scene evolution with latent future geometry tokens. Present geometry provides essential spatial constraints for safe planning, while future geometry reveals how surrounding agents and ego-centric free space may evolve, reducing overly conservative decisions without sacrificing safety. To efficiently exploit these geometric cues, GeoWorldAD progressively aggregates multi-scale present geometry and latent future geometry through iterative trajectory refinement. Experiments on NAVSIM v1 and v2 demonstrate state-of-the-art performance, highlighting the effectiveness of explicit 3D geometry grounding and future geometry world modeling for safe and efficient autonomous driving.",
+  "abstract_zh": "自主驾驶需要在动态三维环境中做出安全且高效的规划决策。尽管最近的视觉/视频-动作模型能够直接从视觉观察中学习策略，并随着视觉变换器和大规模训练数据的进步而具有良好的扩展性，但它们往往缺乏明确的几何基础和未来感知的空间指导，限制了它们在避免碰撞与推进驾驶之间的平衡能力。在本研究中，我们提出了GeoWorldAD，一种几何世界动作模型，它将轨迹规划基于自我对齐的三维空间，并通过潜在的未来几何标记预测短期场景演变。当前的几何信息为安全规划提供了必要的空间约束，而未来几何则揭示了周围代理和以自我为中心的自由空间可能如何演变，从而减少过于保守的决策而不牺牲安全性。为了高效利用这些几何线索，GeoWorldAD通过迭代轨迹细化逐步聚合多尺度的当前几何和潜在未来几何。在NAVSIM v1和v2上的实验展示了其先进的性能，突显了明确的三维几何基础和未来几何世界建模在安全高效自主驾驶中的有效性。",
+  "arxiv_id": "2607.17521",
+  "arxiv_url": "https://arxiv.org/abs/2607.17521v2",
+  "authors": [
+    "Songyan Zhang",
+    "Jinyuan Tian",
+    "Hanbing Li",
+    "Daqi Liu",
+    "Hao Chen",
+    "Wenhui Huang",
+    "Fang Li",
+    "Guang Chen",
+    "Hangjun Ye",
+    "Long Chen",
+    "Kuiyuan Yang",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-17521",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.332187+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.17521v2",
+  "published_at": "2026-07-20T03:56:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.17521v2",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "世界模型/生成"
+    ]
+  },
+  "title": "GeoWorldAD: Geometry World Action Model for Autonomous Driving",
+  "title_zh": "GeoWorldAD：用于自主驾驶的几何世界动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2607.17521"
+}

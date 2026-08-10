@@ -1,0 +1,49 @@
+{
+  "abstract": "Self-supervised monocular depth estimation has emerged as an appealing solution to design lightweight and effective models for deployment on computationally constrained devices due to its reduced reliance on expensive depth sensors. By eliminating the need for ground-truth annotations and leveraging the simplicity of monocular camera setups, this approach facilitates cost-effective data collection and broad applicability across fields such as computer vision and robotics. A critical challenge is achieving resource-efficient neural networks without compromising the overall performance. State-of-the-art models generally adopt depth-wise convolutions and attention mechanisms; however, these functions often incur high energy costs and face compatibility issues in embedded environments. To address this, we propose XiDepth, a lightweight architecture based on the XiNet operator block, designed to enhance feature extraction while maintaining low computational complexity and energy demand. On the KITTI dataset, XiDepth achieves state-of-the-art performance with only 0.8M parameters. Tests on a Raspberry Pi 4 further confirm its suitability for real-world embedded applications, reducing FLOPs by 40% and energy consumption by 35% compared to leading methods.",
+  "abstract_zh": "自监督单目深度估计因其对昂贵深度传感器的依赖减少，已成为设计轻量且有效模型以在计算资源受限设备上部署的一个吸引人的解决方案。通过消除对真实标注的需求并利用单目相机设置的简单性，该方法促进了成本效益高的数据收集，并在计算机视觉和机器人等领域具有广泛的适用性。一个关键挑战是实现资源高效的神经网络，而不影响整体性能。现有的最先进模型通常采用深度卷积和注意力机制；然而，这些功能往往会产生高能耗，并在嵌入式环境中面临兼容性问题。为了解决这一问题，我们提出了XiDepth，一种基于XiNet操作块的轻量架构，旨在增强特征提取，同时保持低计算复杂度和能量需求。在KITTI数据集上，XiDepth以仅0.8M的参数量实现了最先进的性能。在Raspberry Pi 4上的测试进一步确认了其在现实嵌入式应用中的适用性，与领先方法相比，FLOPs减少了40%，能耗降低了35%。",
+  "arxiv_id": "2608.03666",
+  "arxiv_url": "https://arxiv.org/abs/2608.03666v1",
+  "authors": [
+    "Elena Izzo",
+    "Riccardo Toniolo",
+    "Lamberto Ballan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-05#paper-2608-03666",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:37.407693+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.03666v1",
+  "published_at": "2026-08-04T13:42:41Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-08-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.03666v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "XiDepth: a Lightweight and Efficient Network for Self-supervised Monocular Depth Estimation",
+  "title_zh": "XiDepth：一种轻量高效的自监督单目深度估计网络",
+  "translation_url": "https://hjfy.top/arxiv/2608.03666"
+}

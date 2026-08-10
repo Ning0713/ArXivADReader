@@ -1,0 +1,50 @@
+{
+  "abstract": "Accurate articulation angle estimation of trucks with trailers is critical for autonomous driving and advanced driver assistance system (ADAS). Existing methods either require manual initialization, additional sensors, or prior knowledge and signals from trailers, or they lack real-world validation, limiting practical deployment. This paper presents multiple learning-based models to directly estimate articulation angles from visual and kinematic inputs, eliminating the need for dedicated driving maneuvers for initialization, bounding box annotations, trailer-mounted sensor signals, or prior knowledge of trailer parameters. Two learning-based models are integrated with a kinematic model within an extended Kalman filter (EKF) framework, and an adaptive weighting scheme based on uncertainty quantification is applied for measurements involving visual input. Extensive real-world experiments with different trailer types demonstrate the approaches' robustness and generalization under out-of-domain conditions, including new trailers, varying colors, and lighting conditions. Results show that the hybrid method achieves accurate and reliable articulation angle estimation while maintaining reduced implementation requirements and practical deployment advantages.",
+  "abstract_zh": "准确估计带拖车的卡车的关节角度对于自动驾驶和高级驾驶辅助系统（ADAS）至关重要。现有方法要么需要手动初始化、额外传感器或拖车的先验知识和信号，要么缺乏现实世界的验证，限制了实际部署。本文提出了多种基于学习的模型，直接从视觉和运动学输入中估计关节角度，消除了对专用驾驶操作进行初始化、边界框标注、拖车安装传感器信号或拖车参数先验知识的需求。两个基于学习的模型与扩展卡尔曼滤波器（EKF）框架内的运动学模型相结合，并针对涉及视觉输入的测量应用基于不确定性量化的自适应加权方案。通过对不同类型拖车进行的大量现实世界实验，展示了这些方法在域外条件下的鲁棒性和泛化能力，包括新拖车、不同颜色和光照条件。结果表明，混合方法在保持较低实施要求和实际部署优势的同时，实现了准确可靠的关节角度估计。",
+  "arxiv_id": "2607.16758",
+  "arxiv_url": "https://arxiv.org/abs/2607.16758v1",
+  "authors": [
+    "Qixuan Zhang",
+    "Jonas Boettcher",
+    "Simon F. G. Ehlers",
+    "Marvin Stuede"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-16758",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.405022+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.16758v1",
+  "published_at": "2026-07-18T10:48:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.16758v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "Hybrid Machine Learning for Articulation Angle Estimation of Truck-Semitrailer Combinations",
+  "title_zh": "混合机器学习用于卡车-半挂车组合的关节角度估计",
+  "translation_url": "https://hjfy.top/arxiv/2607.16758"
+}

@@ -1,0 +1,69 @@
+{
+  "abstract": "Trajectory prediction of surrounding agents is a prerequisite for safe planning and decision making in autonomous driving. Without high-definition (HD) maps, sensor-derived bird's-eye-view (BEV) features provide no explicit lane topology or drivable-area priors, making it inherently difficult to ground each agent in its surrounding scene context. Moreover, physical feasibility remains difficult to capture through data-driven learning alone, as kinematic constraints on agent motion cannot be explicitly encoded without structured supervision. Existing map-free predictors extract scene context in an agent-agnostic manner through a single fusion step and treat physical constraints only as output-level penalties, leaving both challenges unaddressed. We propose SIPTraj, a map-free trajectory prediction framework that jointly addresses scene grounding and physical feasibility. SIPTraj introduces a Hierarchical Agent-Scene Encoder (HASE) progressively grounding each agent in agent-guided scene evidence and refining inter-agent relations within the scene-grounded space. To tackle physical infeasibility in predicted trajectories, we develop a Physics-Guided Iterative Decoder (PGID). It conditions decoding on instantaneous kinematic states, propagating physical supervision into internal representations rather than output trajectories alone. Extensive experiments on nuScenes and Argoverse 2 Sensor show that SIPTraj surpasses prior map-free predictors and strong map-based baselines without any HD map at inference. Our code will be released as open-source.",
+  "abstract_zh": "周围智能体的轨迹预测是自动驾驶中安全规划和决策的前提。没有高清（HD）地图时，传感器获取的鸟瞰图（BEV）特征无法提供明确的车道拓扑或可行驶区域先验，使得将每个智能体定位于其周围场景上下文中变得极为困难。此外，仅通过数据驱动学习捕捉物理可行性也很困难，因为智能体运动的运动学约束无法在没有结构化监督的情况下明确编码。现有的无地图预测器通过单一融合步骤以与智能体无关的方式提取场景上下文，并仅将物理约束视为输出级别的惩罚，从而未能解决这两个挑战。我们提出了SIPTraj，一种无地图的轨迹预测框架，联合解决场景定位和物理可行性问题。SIPTraj引入了分层智能体-场景编码器（HASE），逐步将每个智能体定位于智能体引导的场景证据中，并在场景定位空间内细化智能体之间的关系。为了应对预测轨迹中的物理不可行性，我们开发了物理引导的迭代解码器（PGID）。它将解码条件化于瞬时运动学状态，将物理监督传播到内部表示中，而不仅仅是输出轨迹。对nuScenes和Argoverse 2 Sensor的广泛实验表明，SIPTraj超越了先前的无地图预测器和强大的基于地图的基线，在推理时无需任何HD地图。我们的代码将作为开源发布。",
+  "arxiv_id": "2608.00779",
+  "arxiv_url": "https://arxiv.org/abs/2608.00779v1",
+  "authors": [
+    "Feifei Liu",
+    "Zejun Wei",
+    "Haozhe Wang",
+    "Yazhi Ye",
+    "Yuying Zhang",
+    "Jintao Cheng",
+    "Chi Man Vong",
+    "Xieyuanli Chen",
+    "Xiaoyu Tang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-00779",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:26.948039+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.00779v1",
+  "published_at": "2026-08-01T17:23:40Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "argoverse",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "车道",
+      "bev",
+      "bird's-eye",
+      "trajectory prediction",
+      "hd map",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.00779v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "SIPTraj: Map-Free End-to-End Trajectory Prediction via Physics-Guided Scene Interaction",
+  "title_zh": "SIPTraj：通过物理引导的场景交互实现无地图的端到端轨迹预测",
+  "translation_url": "https://hjfy.top/arxiv/2608.00779"
+}

@@ -1,0 +1,59 @@
+{
+  "abstract": "Understanding and complying with traffic regulations is a safety-critical requirement for autonomous driving, yet remains challenging due to the diversity and context dependence of traffic signage. Importantly, regulation understanding is not a simple recognition task, but a reasoning problem: whether a rule applies depends on interpreting the sign in relation to the spatial layout of lanes and scene context. To support such reasoning, MapDR provide fine-grained annotations that link each traffic sign's regulatory rules to the specific lanes they govern. Existing methods, however, largely treat this as direct sequence prediction, ignoring the underlying reasoning that connects sign semantics and map structure. To address this limitation, we explicitly incorporate reasoning into this task and propose a framework that equips vision-language models (VLMs) with chain-of-thought (CoT) capabilities. We first design a scalable CoT curation pipeline that bootstraps rationales from a strong LLM through a two-round strategy and employs a VLM-based verifier to filter out incorrect cases, yielding a high-quality set of (CoT, answer) pairs. Building on this foundation, we adopt a two-stage training scheme: supervised fine-tuning (SFT) to teach rationale-to-answer generation, followed by GRPO reinforcement learning with answer-grounded, fine-grained rewards to further improve final answer accuracy. Extensive experiments on MapDR show that our approach significantly improves both interpretability and accuracy, establishing the first reasoning-based framework for regulation-aware autonomous driving.",
+  "abstract_zh": "理解和遵守交通法规是自动驾驶的安全关键要求，但由于交通标志的多样性和上下文依赖性，这一任务仍然具有挑战性。重要的是，法规理解并不是一个简单的识别任务，而是一个推理问题：规则的适用性取决于将标志与车道的空间布局和场景上下文进行解释。为了支持这种推理，MapDR提供了细粒度的注释，将每个交通标志的监管规则与其所管理的特定车道联系起来。然而，现有方法在很大程度上将其视为直接的序列预测，忽视了连接标志语义和地图结构的潜在推理。为了解决这一局限性，我们明确将推理纳入这一任务，并提出一个框架，使视觉-语言模型（VLMs）具备思维链（CoT）能力。我们首先设计了一个可扩展的CoT整理管道，通过两轮策略从强大的大型语言模型（LLM）中引导出推理，并采用基于VLM的验证器过滤掉不正确的案例，从而生成高质量的（CoT，答案）对。在此基础上，我们采用了两阶段训练方案：监督微调（SFT）用于教授推理到答案的生成，随后通过基于答案的细粒度奖励进行GRPO强化学习，以进一步提高最终答案的准确性。在MapDR上的大量实验表明，我们的方法显著提高了可解释性和准确性，建立了第一个基于推理的法规感知自动驾驶框架。",
+  "arxiv_id": "2607.24199",
+  "arxiv_url": "https://arxiv.org/abs/2607.24199v1",
+  "authors": [
+    "Yueru Luo",
+    "Xu Yan",
+    "Changqing Zhou",
+    "Yiming Yang",
+    "Chao Zhan",
+    "Shuqi Mei",
+    "Chao Zheng",
+    "Zhen Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-24199",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.595531+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.24199v1",
+  "published_at": "2026-07-27T09:24:41Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 86
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.24199v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "Reasoning to Regulate: Chain-of-Thought for Traffic Rule Understanding",
+  "title_zh": "推理以规范：交通规则理解的思维链",
+  "translation_url": "https://hjfy.top/arxiv/2607.24199"
+}

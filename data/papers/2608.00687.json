@@ -1,0 +1,53 @@
+{
+  "abstract": "LiDAR point clouds provide explicit, deterministic physical boundaries critical for collaborative safety-critical perception. However, wireless channels inherently impair and corrupt transmitted signals. Existing robust frameworks (such as deep JSCC or MDC) attempt to counter these channel impairments through statistical or parametric estimation, turning exact physical measurements into unverified algorithmic estimates. To address this, we propose Proteus, a learned LiDAR codec operating on 2D range images. By decoupling the frame representation into independent coders for the \\textbf{sig}nificant range bit-planes (SIG) and the \\textbf{ins}ignificant range bit-planes and attributes (INS), Proteus achieves overall stream-level truncation robustness. The non-truncatable SIG block encodes the most significant range bit-planes to establish a necessary, self-contained perceptual lower bound, below which the reconstructed point cloud is severely degraded. Meanwhile, INS employs bit-plane slicing representation and coding, ensuring that range truncation mathematically maps to a deterministic spatial precision degradation. Subordinate attributes are reconstructed via a hybrid lossless-predictive method, leveraging the decoded geometry as a strong structural prior for fine-grained approximation. Furthermore, strategic ordering within INS prioritizes geometry over attributes under bandwidth drops. Experimental results on the Waymo Open Dataset and SemanticKITTI demonstrate that Proteus tolerates up to approximately 70\\% bitstream truncation, while outperforming established standards (G-PCC, Draco, and JPEG XL) and the representative learned compressor Unicorn under ideal channel conditions.",
+  "abstract_zh": "LiDAR点云提供了明确的、确定性的物理边界，这对于协作安全感知至关重要。然而，无线信道固有地会损害和破坏传输信号。现有的鲁棒框架（如深度JSCC或MDC）试图通过统计或参数估计来抵消这些信道损害，将精确的物理测量转变为未经验证的算法估计。为了解决这个问题，我们提出了Proteus，一种基于2D范围图像的学习型LiDAR编解码器。通过将帧表示解耦为独立的编码器，分别针对显著范围比特平面（SIG）和不显著范围比特平面及属性（INS），Proteus实现了整体流级别的截断鲁棒性。不可截断的SIG块编码了最显著的范围比特平面，以建立一个必要的、自包含的感知下限，低于该下限，重建的点云将严重退化。同时，INS采用比特平面切片表示和编码，确保范围截断在数学上映射为确定性的空间精度退化。附属属性通过混合无损预测方法重建，利用解码后的几何形状作为细粒度近似的强结构先验。此外，INS中的战略排序在带宽下降时优先考虑几何形状而非属性。在Waymo开放数据集和SemanticKITTI上的实验结果表明，Proteus能够容忍约70%的比特流截断，同时在理想信道条件下超越了现有标准（G-PCC、Draco和JPEG XL）以及代表性的学习压缩器Unicorn。",
+  "arxiv_id": "2608.00687",
+  "arxiv_url": "https://arxiv.org/abs/2608.00687v1",
+  "authors": [
+    "Yihan Qiu",
+    "Xiaodong Lin",
+    "Baoquan Zhao",
+    "Hailong Jiao",
+    "Ge Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-00687",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.044029+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.00687v1",
+  "published_at": "2026-08-01T14:24:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "waymo open",
+      "semantickitti",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.00687v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "感知"
+    ]
+  },
+  "title": "Proteus: A Truncation-Robust Entropy Model for Progressive LiDAR Compression",
+  "title_zh": "Proteus：一种针对渐进式LiDAR压缩的截断鲁棒熵模型",
+  "translation_url": "https://hjfy.top/arxiv/2608.00687"
+}

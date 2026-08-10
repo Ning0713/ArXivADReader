@@ -1,0 +1,52 @@
+{
+  "abstract": "Multi-Task Learning (MTL) in robotics perception systems supports comprehensive 3D spatial scene understanding by integrating semantic segmentation and depth estimation. While Vision Foundation Models (VFMs) are increasingly adopted as robust feature encoders, existing decoding strategies present a critical bottleneck. To address this, we propose DPNeXt, a streamlined multi-scale feature fusion decoder and efficient alternative to the standard Dense Prediction Transformer (DPT). DPNeXt uses dual depthwise separable inverted bottlenecks to improve frozen VFM utilization through fusion-centric decoding and independent task modularization. To further mitigate negative inductive transfer between tasks, we introduce the Multi-Task Boundary Guidance (MTBG) strategy. Unlike prior boundary-aware methods that add fusion modules or gating, MTBG applies symmetric boundary-focused supervision to encourage geometric consistency without extra annotation or inference cost. Experiments on Cityscapes show that DPNeXt-S outperforms prior state-of-the-art (SOTA) MTL models, while DPNeXt-B further improves the overall performance and achieves the best results among the compared methods. On NYUv2, DPNeXt-B also achieves the best semantic segmentation and depth estimation results among the compared methods while requiring substantially fewer trainable parameters than prior large-scale MTL models. Compared with the standard DPT, DPNeXt-S reduces trainable parameters by 78.6% and achieves the fastest inference speed among the compared models on resource-constrained laptop hardware. The source code, model checkpoints, and a demo video will be made available at https://github.com/kangjehun/DPNeXt.",
+  "abstract_zh": "机器人感知系统中的多任务学习（MTL）通过整合语义分割和深度估计，支持全面的三维空间场景理解。尽管视觉基础模型（VFM）越来越多地被采用作为强大的特征编码器，但现有的解码策略却成为了一个关键瓶颈。为了解决这个问题，我们提出了DPNeXt，一种精简的多尺度特征融合解码器，是标准密集预测变换器（DPT）的高效替代方案。DPNeXt使用双深度可分离反向瓶颈，通过以融合为中心的解码和独立任务模块化，提升了冻结VFM的利用率。为了进一步减轻任务之间的负面归纳迁移，我们引入了多任务边界引导（MTBG）策略。与以往添加融合模块或门控的边界感知方法不同，MTBG应用对称的边界聚焦监督，以鼓励几何一致性，而无需额外的标注或推理成本。在Cityscapes上的实验表明，DPNeXt-S超越了之前的最先进（SOTA）MTL模型，而DPNeXt-B进一步提升了整体性能，并在比较方法中取得了最佳结果。在NYUv2上，DPNeXt-B也在比较方法中实现了最佳的语义分割和深度估计结果，同时所需的可训练参数显著少于之前的大规模MTL模型。与标准DPT相比，DPNeXt-S将可训练参数减少了78.6%，并在资源受限的笔记本硬件上实现了最快的推理速度。源代码、模型检查点和演示视频将发布在https://github.com/kangjehun/DPNeXt。",
+  "arxiv_id": "2607.16012",
+  "arxiv_url": "https://arxiv.org/abs/2607.16012v1",
+  "authors": [
+    "Jehun Kang",
+    "Jungha Wang",
+    "Youngjun Hwang",
+    "David Hyunchul Shim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-20#paper-2607-16012",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T12:59:54.640031+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.16012v1",
+  "published_at": "2026-07-17T14:46:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-07-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.16012v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "多传感器融合"
+    ]
+  },
+  "title": "DPNeXt: A Lightweight Multi-Scale Feature Fusion Framework for Efficient ViT-Based Multi-Task Dense Prediction",
+  "title_zh": "DPNeXt：一种轻量级多尺度特征融合框架，用于高效的基于ViT的多任务密集预测",
+  "translation_url": "https://hjfy.top/arxiv/2607.16012"
+}

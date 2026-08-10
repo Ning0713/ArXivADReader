@@ -1,0 +1,52 @@
+{
+  "abstract": "Trajectory prediction has shifted toward structured formulations with explicit social modeling. However, existing methods inadequately distinguish the functional roles of social influence in trajectory planning. Observing that agents typically form motion plans by anticipating others' future behaviors before making local reactive adjustments, we identify social interactions as playing staged roles, namely planning precedes reaction. We propose INTraJ, a unified framework that decomposes social influence into two stages: a planning stage constructs reference trajectories using future social information, and a reaction stage recovers local adjustments from the residual between full-context prediction and the reference. INTraJ supports both multi-target and single-target paradigms. Extensive experiments on four standard benchmarks, including Argoverse 2, Argoverse 2-ped, ETH/UCY, and SDD, demonstrate consistent improvements, particularly in FDE and long-horizon consistency, with state-of-the-art performance achieved in several settings. INTraJ reframes trajectory prediction as a planning-driven two-stage process, validating that staged social modeling is critical for stable predictions. The code is publicly available at https://github.com/11isnotavailable/INTraJ.",
+  "abstract_zh": "轨迹预测已转向具有显式社会建模的结构化形式。然而，现有方法未能充分区分社会影响在轨迹规划中的功能角色。我们观察到，代理通常通过预测他人的未来行为来形成运动计划，然后再进行局部反应调整，因此我们将社会互动视为分阶段的角色，即规划先于反应。我们提出了INTraJ，一个统一框架，将社会影响分解为两个阶段：规划阶段利用未来社会信息构建参考轨迹，反应阶段则根据全局上下文预测与参考轨迹之间的残差恢复局部调整。INTraJ支持多目标和单目标范式。在包括Argoverse 2、Argoverse 2-ped、ETH/UCY和SDD在内的四个标准基准上的大量实验表明，特别是在最终定位误差（FDE）和长时间一致性方面，表现出一致的改进，并在多个设置中实现了最先进的性能。INTraJ将轨迹预测重新框定为一个以规划驱动的两阶段过程，验证了分阶段社会建模对稳定预测的重要性。代码已公开发布在https://github.com/11isnotavailable/INTraJ。",
+  "arxiv_id": "2608.05673",
+  "arxiv_url": "https://arxiv.org/abs/2608.05673v1",
+  "authors": [
+    "Jiaheng Chen",
+    "Jiaxing Li",
+    "Tinghe Zhang",
+    "Chaopeng Guo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-07#paper-2608-05673",
+  "categories": [
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-10T13:01:52.191103+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.05673v1",
+  "published_at": "2026-08-06T07:13:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "argoverse",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-08-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.05673v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "A Unified Framework for Trajectory Prediction with Explicit Planning and Reaction Decomposition",
+  "title_zh": "具有显式规划和反应分解的轨迹预测统一框架",
+  "translation_url": "https://hjfy.top/arxiv/2608.05673"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "This paper addresses defensive blocking in autonomous racing, where a vehicle must prevent a faster opponent from overtaking while operating near its dynamic limits. Different from lap-time minimization, we formulate defense as a spatial occupancy regulation problem via a hierarchical reinforcement-learning guided model predictive control framework. A Soft Actor-Critic strategic layer operates in the Frenet domain to generate geometry-aware defensive references, which are embedded into the nonlinear model predictive control formulation as spatial regularization under friction constraints. Evaluated on the Thunderhill West circuit in simulation, the framework increases average overtake time from 8.8 s to 14.6 s while significantly reducing opponent progress. Meanwhile, it allows the vehicle to utilize 83.4% of available tire force. The framework achieves a 33.3 ms mean solve time (13.9 ms std), supporting real-time high-speed adversarial interaction.",
+  "abstract_zh": "本文探讨了自动驾驶赛车中的防御性阻挡问题，其中车辆必须在接近其动态极限的情况下防止更快的对手超车。与圈速最小化不同，我们将防御问题表述为一个空间占用调节问题，通过一个分层的强化学习引导的模型预测控制框架来实现。Soft Actor-Critic战略层在Frenet域中操作，以生成具有几何感知的防御参考，这些参考被嵌入到非线性模型预测控制的公式中，作为摩擦约束下的空间正则化。在Thunderhill West赛道的仿真评估中，该框架将平均超车时间从8.8秒提高到14.6秒，同时显著减少了对手的进展。同时，它允许车辆利用83.4%的可用轮胎力。该框架实现了33.3毫秒的平均求解时间（标准差为13.9毫秒），支持实时高速对抗交互。",
+  "arxiv_id": "2607.20973",
+  "arxiv_url": "https://arxiv.org/abs/2607.20973v1",
+  "authors": [
+    "Yufei Xi",
+    "Yijie Liao",
+    "Tulga Ersal"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-24#paper-2607-20973",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:27.439479+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.20973v1",
+  "published_at": "2026-07-23T06:50:59Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "自动驾驶",
+      "autonomous",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "occupancy"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 80
+  },
+  "seen_dates": [
+    "2026-07-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.20973v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "仿真/数据"
+    ]
+  },
+  "title": "Deep Reinforcement-Learning-Guided Model Predictive Control for Preventing Overtakes in Autonomous Racing",
+  "title_zh": "深度强化学习引导的模型预测控制用于防止自动驾驶赛车超车",
+  "translation_url": "https://hjfy.top/arxiv/2607.20973"
+}

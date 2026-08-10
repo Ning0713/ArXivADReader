@@ -1,0 +1,55 @@
+{
+  "abstract": "Autonomous driving (AD) systems have advanced rapidly over the past decade; however, robust perception under adverse weather conditions remains a major challenge, particularly in dense fog. In this work, we investigate fog-aware perception using synthetically generated fog data derived from the Waymo dataset. To support fog simulation, depth images are generated using an iterative learning approach. We consider five fog-density levels: clear, light fog, moderate fog, heavy fog, and very heavy fog. Instead of training a single unified model across all conditions, we train separate perception models for each fog-density level. Experimental results show that density-specific training improves performance in severe fog conditions. In particular, for the very heavy fog class, recall improves from 0.076 to 0.232, corresponding to an absolute gain of 15.6 percentage points. These findings suggest that deploying multiple specialized models, rather than a single general-purpose model, can improve perception robustness for autonomous vehicles under challenging visibility conditions. Future work will extend this strategy to additional sensing modalities, including LiDAR and radar, and evaluate generalization across diverse weather scenarios.",
+  "abstract_zh": "自主驾驶（AD）系统在过去十年中迅速发展；然而，在恶劣天气条件下保持稳健的感知仍然是一个主要挑战，尤其是在浓雾环境中。在本研究中，我们利用从Waymo数据集中生成的合成雾数据来研究雾感知。为了支持雾模拟，采用迭代学习方法生成深度图像。我们考虑了五种雾密度水平：清晰、轻雾、中等雾、重雾和极重雾。我们不是在所有条件下训练一个统一的模型，而是为每种雾密度水平训练单独的感知模型。实验结果表明，针对特定密度的训练在严重雾天条件下提高了性能。特别是在极重雾类别中，召回率从0.076提高到0.232，绝对增益为15.6个百分点。这些发现表明，部署多个专用模型而不是单一通用模型，可以提高自主车辆在挑战性能见度条件下的感知鲁棒性。未来的工作将把这一策略扩展到包括LiDAR和雷达在内的其他传感模式，并评估在不同天气场景下的泛化能力。",
+  "arxiv_id": "2608.01572",
+  "arxiv_url": "https://arxiv.org/abs/2608.01572v1",
+  "authors": [
+    "Mohamad Mofeed Chaar",
+    "Galia Weidl"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-01572",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.096275+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.01572v1",
+  "published_at": "2026-08-03T01:00:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 84
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.01572v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "Enhancing Visual Perception in Foggy Conditions via Multiclass Fog Density Modeling",
+  "title_zh": "通过多类雾密度建模增强雾天条件下的视觉感知",
+  "translation_url": "https://hjfy.top/arxiv/2608.01572"
+}

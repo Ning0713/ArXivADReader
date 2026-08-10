@@ -1,0 +1,56 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models augmented with world modeling represent a promising paradigm for end-to-end autonomous driving. While pixel-level future prediction enables fine-grained spatiotemporal reasoning, it compromises robustness in noisy driving scenarios. Conversely, latent-based world models alleviate this sensitivity but often incur limited interpretability and representational degradation due to absent pixel-level grounding. To reconcile this trade-off, we propose HyWorldVLA, a hybrid world-VLA framework that unifies pixel-level supervision and latent representation learning. In the pre-training stage, HyWorldVLA predicts video latents encoded by a pre-trained video VAE, while simultaneously reconstructing video frames to provide precise pixel-level grounding. During the subsequent co-fine-tuning phase, the model exclusively predicts latent features, which are fed into an action expert to generate trajectories. Extensive experiments on NAVSIM v1 and v2 benchmarks demonstrate that HyWorldVLA significantly outperforms both pixel-based and latent-based world model baselines. Notably, we present the first comprehensive qualitative and quantitative analysis of world model noise robustness in autonomous driving, establishing a new benchmark for evaluating future architectures.",
+  "abstract_zh": "增强世界建模的视觉-语言-动作（VLA）模型代表了一种有前景的端到端自动驾驶范式。尽管像素级未来预测能够实现细粒度的时空推理，但在嘈杂的驾驶场景中却妥协了鲁棒性。相反，基于潜变量的世界模型减轻了这种敏感性，但由于缺乏像素级的基础，往往导致有限的可解释性和表示退化。为了解决这一权衡问题，我们提出了HyWorldVLA，一种混合世界-VLA框架，统一了像素级监督和潜表示学习。在预训练阶段，HyWorldVLA预测由预训练视频变分自编码器（VAE）编码的视频潜变量，同时重建视频帧以提供精确的像素级基础。在随后的共同微调阶段，该模型专门预测潜特征，这些特征被输入到一个动作专家中以生成轨迹。在NAVSIM v1和v2基准上的广泛实验表明，HyWorldVLA显著优于基于像素和基于潜变量的世界模型基线。值得注意的是，我们首次对自动驾驶中的世界模型噪声鲁棒性进行了全面的定性和定量分析，为评估未来架构建立了新的基准。",
+  "arxiv_id": "2607.20988",
+  "arxiv_url": "https://arxiv.org/abs/2607.20988v1",
+  "authors": [
+    "Quanfu Yu",
+    "Xian Wu",
+    "Hao Xu",
+    "Liulong Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-24#paper-2607-20988",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:00:27.468546+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.20988v1",
+  "published_at": "2026-07-23T07:11:41Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-07-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.20988v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "HyWorldVLA: A Vision-Language-Action Model with Hybrid World Modeling for Autonomous Driving",
+  "title_zh": "HyWorldVLA：一种具有混合世界建模的视觉-语言-动作模型用于自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2607.20988"
+}

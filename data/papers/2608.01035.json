@@ -1,0 +1,61 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models have emerged as a prominent paradigm for end-to-end autonomous driving; however, their efficient deployment is severely constrained by high computational latency and exposure bias arising from sequential autoregressive decoding. Conversely, while specialized diffusion policies enable low-latency, parallel execution, training them from scratch typically yields narrow, single-task architectures that lack holistic visual-linguistic reasoning. Successfully transforming pre-trained autoregressive generalists into parallel diffusion models could combine multi-task cognitive intelligence with execution efficiency, yet this transition presents a formidable architectural challenge due to mismatched attention patterns (causal versus bidirectional) and divergent optimization objectives. To bridge this divide, we introduce WAM-Diff2, a multi-task discrete diffusion VLA framework powered by a three-stage hierarchical distillation strategy. By structuring the architectural shift through progressive block-wise adaptation, block-wise distillation, and model-wise cross-scale distillation, WAM-Diff2 preserves the underlying semantic foundations of the base model while accelerating inference. Extensive evaluations across driving understanding, perception, and planning benchmarks demonstrate that WAM-Diff2 effectively mitigates exposure bias and achieves performance parity with autoregressive baselines. Crucially, the autoregressive-to-diffusion transition yields a 2.8x decoding speedup, which scales to an ultimate 15.1x acceleration when combined with system-level optimizations including FlashInfer and CUDA Graphs.",
+  "abstract_zh": "视觉-语言-行动（VLA）模型已成为端到端自主驾驶的一个重要范式；然而，由于顺序自回归解码所导致的高计算延迟和暴露偏差，其高效部署受到严重限制。相反，尽管专门的扩散策略能够实现低延迟的并行执行，但从零开始训练它们通常会产生狭窄的单任务架构，缺乏整体的视觉-语言推理。成功地将预训练的自回归通用模型转变为并行扩散模型，能够将多任务认知智能与执行效率结合起来，但这一转变由于注意力模式（因果与双向）不匹配和优化目标的差异，带来了巨大的架构挑战。为了解决这一问题，我们提出了WAM-Diff2，一个由三阶段层次化蒸馏策略驱动的多任务离散扩散VLA框架。通过逐步的块级适应、块级蒸馏和模型级跨尺度蒸馏来构建架构转变，WAM-Diff2在加速推理的同时保留了基础模型的语义基础。在驾驶理解、感知和规划基准上的广泛评估表明，WAM-Diff2有效减轻了暴露偏差，并与自回归基线达成了性能平衡。关键的是，自回归到扩散的转变实现了2.8倍的解码加速，当与包括FlashInfer和CUDA Graphs在内的系统级优化结合时，最终可实现15.1倍的加速。",
+  "arxiv_id": "2608.01035",
+  "arxiv_url": "https://arxiv.org/abs/2608.01035v2",
+  "authors": [
+    "Zhihao Zhu",
+    "Hanlin Shang",
+    "Mingwang Xu",
+    "Feipeng Cai",
+    "Zhuolin He",
+    "Yaoyi Li",
+    "Jianhua Han",
+    "Hang Xu",
+    "Siyu Zhu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-01035",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:26.958757+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.01035v2",
+  "published_at": "2026-08-02T06:45:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action",
+      "driving vla"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 51
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.01035v2",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "WAM-Diff2: Hierarchical AR-to-Diffusion Distillation for Highly Efficient Autonomous Driving VLA",
+  "title_zh": "WAM-Diff2：用于高效自主驾驶的层次化自回归到扩散蒸馏",
+  "translation_url": "https://hjfy.top/arxiv/2608.01035"
+}

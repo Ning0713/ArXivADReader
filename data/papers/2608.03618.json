@@ -1,0 +1,55 @@
+{
+  "abstract": "Inferring complete 3D geometry and semantics from onboard images remains challenging because occlusions and restricted fields of view leave large scene regions underconstrained. Although satellite imagery provides wide-area context, appearance cues alone offer limited structural guidance and may be unreliable because of spatial or temporal discrepancies. We present GeoScene, a geospatially guided framework that jointly uses satellite imagery and structured OpenStreetMap cues as soft priors for 3D semantic scene completion. GeoScene learns complementary voxel-wise reliability weights for onboard observations and geospatial guidance, and uses them to control feature refinement in observed and unobserved regions. This design preserves local visual evidence while exploiting large-scale road and building structure beyond onboard visibility. Experiments on SemanticKITTI and SSCBench-KITTI-360 demonstrate that GeoScene consistently improves both geometric and semantic completion under the geospatial-prior-assisted setting, with the most pronounced benefits for large-scale static and geospatially structured classes.",
+  "abstract_zh": "从车载图像推断完整的三维几何形状和语义仍然具有挑战性，因为遮挡和受限的视野使得大场景区域处于欠约束状态。尽管卫星图像提供了广域上下文，但单靠外观线索提供的结构指导有限，并且由于空间或时间差异可能不可靠。我们提出了GeoScene，一个地理空间引导框架，联合利用卫星图像和结构化的OpenStreetMap线索作为三维语义场景补全的软先验。GeoScene学习车载观测和地理空间引导的互补体素级可靠性权重，并利用这些权重控制观察和未观察区域的特征精细化。该设计在保留局部视觉证据的同时，利用超出车载可见性的广域道路和建筑结构。对SemanticKITTI和SSCBench-KITTI-360的实验表明，在地理空间先验辅助的设置下，GeoScene在几何和语义补全方面始终表现出改善，尤其对大规模静态和地理空间结构化类别的益处最为显著。",
+  "arxiv_id": "2608.03618",
+  "arxiv_url": "https://arxiv.org/abs/2608.03618v1",
+  "authors": [
+    "Meng Wang",
+    "Shougao Zhang",
+    "Wenzhe He",
+    "Ruihui Li",
+    "Nan Hu",
+    "Zhuo Tang",
+    "Kenli Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-05#paper-2608-03618",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:37.405679+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.03618v1",
+  "published_at": "2026-08-04T13:08:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "kitti-360",
+      "semantickitti",
+      "road",
+      "道路",
+      "scene completion",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 70
+  },
+  "seen_dates": [
+    "2026-08-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.03618v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": []
+  },
+  "title": "Geospatial-Prior Guidance for 3D Semantic Scene Completion",
+  "title_zh": "基于地理空间先验的三维语义场景补全",
+  "translation_url": "https://hjfy.top/arxiv/2608.03618"
+}

@@ -1,0 +1,48 @@
+{
+  "abstract": "Panoptic segmentation in complex scenes remains challenging because of occlusions, yet modern approaches often neglect occlusion modelling. In this paper, we propose \\textbf{P}osition \\textbf{E}mbedding \\textbf{M}odulation with \\textbf{O}cclusion-\\textbf{L}evel \\textbf{A}ttention (PEMOLA), a novel occlusion-aware module that can be seamlessly integrated into transformer-based panoptic segmentation. To obtain occlusion cues, we train an occlusion classifier on the COCO-OLAC dataset. The classifier derives the occlusion-level attention, which serves as spatial guidance, while the occlusion labels are encoded into a learnable embedding to produce channel-wise weights. Through joint modulation, PEMOLA elegantly introduces the occlusion priors into the position embedding, thereby improving the occlusion modelling. We further annotate the Cityscapes dataset with occlusion levels, termed Cityscapes Occlusion Labels for All Computer Vision Tasks (Cityscapes-OLAC), following the same labelling protocol as COCO-OLAC, to evaluate the cross-dataset generalisation ability of PEMOLA. Extensive experiments on COCO-OLAC and Cityscapes-OLAC demonstrate that PEMOLA consistently improves panoptic segmentation quality while introducing minimal computational overhead. These results highlight the importance of occlusion modelling, where incorporating occlusion-level attention helps deliver robust panoptic segmentation under occlusion. Code and dataset are available at https://github.com/wenbo-wei/PEMOLA.",
+  "abstract_zh": "在复杂场景中，全景分割因遮挡问题仍然具有挑战性，但现代方法往往忽视了遮挡建模。本文提出了一种新颖的遮挡感知模块——位置嵌入调制与遮挡级注意力（Position Embedding Modulation with Occlusion-Level Attention，PEMOLA），该模块可以无缝集成到基于变换器的全景分割中。为了获取遮挡线索，我们在COCO-OLAC数据集上训练了一个遮挡分类器。该分类器推导出遮挡级注意力，作为空间指导，同时将遮挡标签编码为可学习的嵌入，以生成通道权重。通过联合调制，PEMOLA优雅地将遮挡先验引入位置嵌入，从而改善了遮挡建模。我们进一步对Cityscapes数据集进行了遮挡级别的标注，称为适用于所有计算机视觉任务的Cityscapes遮挡标签（Cityscapes Occlusion Labels for All Computer Vision Tasks，Cityscapes-OLAC），遵循与COCO-OLAC相同的标注协议，以评估PEMOLA的跨数据集泛化能力。在COCO-OLAC和Cityscapes-OLAC上的大量实验表明，PEMOLA在提高全景分割质量的同时引入了最小的计算开销。这些结果突显了遮挡建模的重要性，结合遮挡级注意力有助于在遮挡条件下实现稳健的全景分割。代码和数据集可在 https://github.com/wenbo-wei/PEMOLA 获取。",
+  "arxiv_id": "2607.18112",
+  "arxiv_url": "https://arxiv.org/abs/2607.18112v2",
+  "authors": [
+    "Wenbo Wei",
+    "Jun Wang",
+    "Shan Raza",
+    "Abhir Bhalerao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-18112",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.478372+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.18112v2",
+  "published_at": "2026-07-20T16:08:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.18112v2",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Occlusion-Aware Panoptic Segmentation with Joint Position Embedding and Occlusion-Level Attention",
+  "title_zh": "考虑遮挡的全景分割：联合位置嵌入与遮挡级注意力",
+  "translation_url": "https://hjfy.top/arxiv/2607.18112"
+}

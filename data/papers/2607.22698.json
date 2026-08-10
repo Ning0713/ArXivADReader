@@ -1,0 +1,55 @@
+{
+  "abstract": "Perception under adverse weather remains a critical bottleneck for reliable autonomous driving, yet existing benchmarks lack the systematic multi-modal alignments needed to evaluate robust sensor fusion. Real-world weather datasets suffer from uncontrolled collection and single-level, uncalibrated conditions, while synthetic alternatives either target camera-only restoration or lack the paired clean-and-foggy structure needed to benchmark \"defog-then-detect\" pipelines. We present FogDrive, a rigorously calibrated, multi-modal autonomous-driving dataset bridging data-centric engineering and robust machine learning. Built with the CARLA simulator, FogDrive contains 660 scenes (~133k fully annotated frames, 50:50 day/night) across four synchronized cameras (RGB, depth, semantic segmentation), a LiDAR and semantic-LiDAR pair, and front radar. Physically consistent fog is modeled independently on camera channels (Koschmieder model) and LiDAR channels (Beer-Lambert law) at three calibrated visibility densities (160m, 100m, 50m). Every scene ships in four matched variants (clean plus three graded fog levels) with cross-calibrated 2D and 3D bounding boxes. A semantic-segmentation-based quality audit over 8k images validates annotations at 95.1% precision and over 99% recall for vehicles within 40m. We establish baseline benchmarks with state-of-the-art architectures (TransFusion, BEVFusion, YOLOv8-m) across two paradigms: 3D multi-modal fusion and 2D image restoration. These yield critical data-centric insights: mixing multi-density fog during training tightens 3D bounding-box geometry without added data-scaling cost, while in 2D pipelines image-quality metrics (PSNR, SSIM) prove poor predictors of downstream detection performance. FogDrive will be fully open-sourced alongside our data-generation framework to accelerate robust, multi-modal research.",
+  "abstract_zh": "在恶劣天气条件下的感知仍然是可靠自主驾驶的一个关键瓶颈，然而现有基准缺乏评估稳健传感器融合所需的系统性多模态对齐。现实世界的天气数据集受到不受控的收集和单一层次、未校准条件的影响，而合成替代品要么仅针对相机恢复，要么缺乏用于基准“去雾后检测”的配对清晰与雾霾结构。我们提出了FogDrive，这是一个经过严格校准的多模态自主驾驶数据集，旨在连接数据驱动工程与稳健机器学习。FogDrive基于CARLA模拟器构建，包含660个场景（约13.3万帧完全标注，白天/夜晚各占50%），涵盖四个同步摄像头（RGB、深度、语义分割）、一个激光雷达和一个语义激光雷达对，以及前向雷达。物理一致的雾霾在摄像头通道（Koschmieder模型）和激光雷达通道（Beer-Lambert定律）上独立建模，具有三种校准的能见度密度（160米、100米、50米）。每个场景提供四个匹配变体（清晰加上三个分级雾霾水平），并配有交叉校准的2D和3D边界框。基于语义分割的质量审计覆盖8000张图像，验证了在40米内车辆标注的95.1%精度和超过99%的召回率。我们在两个范式下使用最先进的架构（TransFusion、BEVFusion、YOLOv8-m）建立基准基线：3D多模态融合和2D图像恢复。这些结果提供了关键的数据驱动见解：在训练过程中混合多密度雾霾可以在不增加数据缩放成本的情况下收紧3D边界框几何，而在2D管道中，图像质量指标（PSNR、SSIM）被证明是下游检测性能的差劣预测因子。FogDrive将与我们的数据生成框架一起完全开源，以加速稳健的多模态研究。",
+  "arxiv_id": "2607.22698",
+  "arxiv_url": "https://arxiv.org/abs/2607.22698v1",
+  "authors": [
+    "Vansh Panwar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-22698",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.506225+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.22698v1",
+  "published_at": "2026-07-18T06:53:56Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "carla",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "sensor fusion",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 80
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.22698v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "FogDrive: A Multi-Modal Synthetic Driving Dataset for Perception under Graded Fog",
+  "title_zh": "FogDrive：一种用于分级雾霾下感知的多模态合成驾驶数据集",
+  "translation_url": "https://hjfy.top/arxiv/2607.22698"
+}

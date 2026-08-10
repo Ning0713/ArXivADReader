@@ -1,0 +1,53 @@
+{
+  "abstract": "Simulation-to-reality translation must bridge the appearance gap between synthetic and real domains while preserving structural and semantic consistency. Conditioning-based methods achieve spatial alignment but introduce computationally expensive control modules. Paired-data methods achieve realism but rely on complex synthesis pipelines, often altering scene geometry and semantics. Training-free editing methods avoid both constraints but lack a learned appearance prior, limiting their perceptual quality. Recently proposed phase-preserving diffusion presents a promising alternative, but Fourier-domain formulations are constrained by global spectral coupling. This coupling induces spatial artifacts such as ringing and boundary leakage, thereby degrading structural and semantic consistency. We introduce Wavelet Phase Diffusion, which addresses this through two components. First, we operate in the Dual-Tree Complex Wavelet Packet Transform domain, whose localized wavelet packets enable spatially adaptive phase injection without global spectral interference. Second, Low-Frequency Randomization (LFR) replaces the low-frequency packet, decoupling the model from the synthetic illumination prior and enabling in-distribution real-world appearance. Both components train on unpaired open-domain data, and introduce negligible inference overhead. The spatial locality further enables instance-level translation, where individual objects or regions are translated to photorealistic appearance independently while the surrounding scene remains untranslated. On vKITTI $\\to$ KITTI image translation, ours outperforms prior methods in realism and semantic consistency while maintaining competitive structural alignment. For CARLA video translation, ours approaches the realism of paired-data methods while reducing VLM planner ADE and FDE by $5.4\\%$ and $5.1\\%$, respectively.",
+  "abstract_zh": "模拟到现实的转换必须弥合合成和真实领域之间的外观差距，同时保持结构和语义的一致性。基于条件的方法实现了空间对齐，但引入了计算成本高昂的控制模块。配对数据的方法实现了真实感，但依赖于复杂的合成流程，常常改变场景的几何形状和语义。无训练编辑方法避免了这两种限制，但缺乏学习的外观先验，限制了其感知质量。最近提出的相位保持扩散提供了一种有前景的替代方案，但傅里叶域的公式受到全局谱耦合的限制。这种耦合会引入空间伪影，如振铃和边界泄漏，从而降低结构和语义的一致性。我们提出了小波相位扩散，通过两个组件来解决这个问题。首先，我们在双树复小波包变换域中操作，其局部化的小波包能够在没有全局谱干扰的情况下进行空间自适应相位注入。其次，低频随机化（Low-Frequency Randomization, LFR）替换低频包，使模型与合成照明先验解耦，并实现分布内的真实世界外观。这两个组件在未配对的开放域数据上进行训练，并引入了微不足道的推理开销。空间局部性进一步实现了实例级翻译，其中单个对象或区域独立转换为照片级真实外观，而周围场景保持未翻译状态。在 vKITTI 到 KITTI 的图像翻译中，我们的方法在真实感和语义一致性方面超越了先前的方法，同时保持了竞争性的结构对齐。在 CARLA 视频翻译中，我们的方法接近配对数据方法的真实感，同时将 VLM 规划器的 ADE 和 FDE 分别降低了 5.4% 和 5.1%。",
+  "arxiv_id": "2607.21628",
+  "arxiv_url": "https://arxiv.org/abs/2607.21628v2",
+  "authors": [
+    "Kaiwen Wang",
+    "Frank Bieder",
+    "Yinzhe Shen",
+    "Carlos Fernandez",
+    "Jan-Hendrik Pauls",
+    "Omer Sahin Tas"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-27#paper-2607-21628",
+  "categories": [
+    "cs.AI",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-08-10T13:00:35.575985+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.21628v2",
+  "published_at": "2026-07-08T13:30:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "carla",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 44
+  },
+  "seen_dates": [
+    "2026-07-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.21628v2",
+    "axi": "https://paper.axi404.top/daily/2026-07-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "Wavelet Phase Diffusion for Structurally and Semantically Consistent Sim-to-Real Translation",
+  "title_zh": "小波相位扩散用于结构和语义一致的模拟到现实转换",
+  "translation_url": "https://hjfy.top/arxiv/2607.21628"
+}

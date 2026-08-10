@@ -1,0 +1,47 @@
+{
+  "abstract": "A key challenge in modern robotics is to adapt to changing environments, a challenge that is exacerbated when simulations cannot encompass every possible real-world configuration, and therefore Reinforcement Learning (RL) in the physical world becomes necessary. Continual Reinforcement Learning provides the tools to address this challenge; however, both the frameworks and the methods remain underexplored. Autonomous Racing and in particular the RoboRacer competition provide a testing ground for such methods, as learning to drive on a new track-floor combination with the least amount of new experience naturally frames a continual learning problem. This work tries to address this gap by proposing a continual RL framework based on Continual Backpropagation that is able, with only real-world data, to train a generalistic policy on a set of tracks and then fine- tune it within 15 minutes to outperform classical controllers. Furthermore, a comparison method based on offline RL is proposed, and a simulation analysis of the plasticity properties of the methods is conducted.",
+  "abstract_zh": "现代机器人技术面临的一个关键挑战是适应不断变化的环境，当模拟无法涵盖所有可能的现实世界配置时，这一挑战尤为突出，因此在物理世界中进行强化学习（Reinforcement Learning, RL）变得必要。持续强化学习提供了应对这一挑战的工具；然而，相关框架和方法仍然未得到充分探索。自主赛车，特别是RoboRacer竞赛，为此类方法提供了测试平台，因为在新的赛道-地面组合上以最少的新经验学习驾驶自然构成了一个持续学习问题。本研究试图通过提出一个基于持续反向传播（Continual Backpropagation）的持续强化学习框架来填补这一空白，该框架能够仅利用现实世界数据在一组赛道上训练出通用策略，并在15分钟内进行微调以超越经典控制器。此外，提出了一种基于离线强化学习的比较方法，并对这些方法的可塑性特性进行了模拟分析。",
+  "arxiv_id": "2607.24320",
+  "arxiv_url": "https://arxiv.org/abs/2607.24320v1",
+  "authors": [
+    "Joel Siegert",
+    "Edoardo Ghignone",
+    "Michele Magno"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-24320",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.498327+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.24320v1",
+  "published_at": "2026-07-27T12:01:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.24320v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": []
+  },
+  "title": "Continual-RL for Generalization in Autonomous Racing on the RoboRacer Platform",
+  "title_zh": "基于持续强化学习的自主赛车泛化研究：以RoboRacer平台为例",
+  "translation_url": "https://hjfy.top/arxiv/2607.24320"
+}

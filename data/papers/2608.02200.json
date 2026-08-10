@@ -1,0 +1,54 @@
+{
+  "abstract": "Traffic police gestures are safety-critical perception cues for autonomous driving. A deployable recognizer must infer commands causally from continuous full-frame video, remain stable around transitional arm motion, and avoid over-trusting corrupted pose measurements. This study presents RSC-GestureNet, a reliability-aware selective causal recognizer, for Chinese traffic police gestures. The model treats pose confidence as a first-class signal: unreliable joints are down weighted during graph reasoning, temporal evidence is aggregated causally, and calibrated predictions are selectively emitted through a reliability-aware inference rule. We further introduce CTPGesture-C, a reproducible feature-level corruption benchmark with seven pose/RGB degradation families, and an RGB-level diagnostic in which corrupted frames are reprocessed by MediaPipe before recognition. On the complete official CTPGesture v1 split (134,424 labeled frames and 33,451 causal windows), RSC-GestureNet achieves 93.33+-0.24% accuracy, 91.71+-0.27% macro-F1, 91.69+-0.29% online macro-F1, 98.80+-0.07% Early@10, 0.153+-0.013 s TTC, and the best robust macro-F1 among evaluated methods. Under the same split and causal protocol, it exceeds reproduced traffic-specific MD-GCN and HLP-GCN baselines by 3.23-4.11 macro-F1 points and 2.15-3.07 online-F1 points. These results, together with calibration, selective-risk, statistical, adaptive-branching, and image-level re-extraction analyses, indicate that explicit pose-reliability modeling improves early, stable, and robust traffic-command recognition.",
+  "abstract_zh": "交通警察手势是自动驾驶中安全关键的感知线索。一个可部署的识别器必须能够从连续的全帧视频中因果推断命令，在过渡的手臂运动中保持稳定，并避免对损坏的姿态测量过于信任。本研究提出了RSC-GestureNet，一种针对中国交通警察手势的可靠性感知选择性因果识别器。该模型将姿态置信度视为一类重要信号：在图推理过程中，对不可靠的关节进行降权，因果地聚合时间证据，并通过可靠性感知推理规则选择性地输出校准预测。我们进一步引入了CTPGesture-C，这是一个可重复的特征级损坏基准，包含七种姿态/RGB降级类别，以及一个RGB级诊断，其中损坏的帧在识别前通过MediaPipe重新处理。在完整的官方CTPGesture v1划分（134,424个标记帧和33,451个因果窗口）上，RSC-GestureNet达到了93.33±0.24%的准确率，91.71±0.27%的宏F1，91.69±0.29%的在线宏F1，98.80±0.07%的Early@10，0.153±0.013秒的TTC，以及在评估方法中最佳的鲁棒宏F1。在相同的划分和因果协议下，它超越了再现的交通特定MD-GCN和HLP-GCN基线，宏F1提高了3.23-4.11点，在线F1提高了2.15-3.07点。这些结果，以及校准、选择性风险、统计、适应性分支和图像级重新提取分析，表明明确的姿态可靠性建模改善了早期、稳定和鲁棒的交通命令识别。",
+  "arxiv_id": "2608.02200",
+  "arxiv_url": "https://arxiv.org/abs/2608.02200v1",
+  "authors": [
+    "Cheng Li",
+    "Renjun Gao",
+    "Boyi Fu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-02200",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.155643+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.02200v1",
+  "published_at": "2026-08-03T13:25:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.02200v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "RSC-GestureNet: Reliability-Aware Selective Causal Recognition of Chinese Traffic Police Gestures",
+  "title_zh": "RSC-GestureNet：可靠性感知的中国交通警察手势选择性因果识别",
+  "translation_url": "https://hjfy.top/arxiv/2608.02200"
+}

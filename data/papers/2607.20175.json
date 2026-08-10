@@ -1,0 +1,62 @@
+{
+  "abstract": "Frozen perception foundation models encode rich geometric, semantic, and dynamic knowledge. Yet narrow conditioning interfaces may attenuate task-relevant cues, while static fusion cannot adjust expert contributions to each scene. We cast this challenge as the prior-to-plan transfer problem and introduce PerceptDrive, a perception prior world-action modeling framework with adaptive expert routing. PerceptDrive feeds teacher-distilled priors from a frozen, driving-adapted provider and dense observation latents from a frozen self-supervised video encoder into a trainable expert-routed world-action model. Expert-specific query branches process these signals, while a prior-retention objective anchors each branch to its prior. A router predicts soft gates from a shared scene representation and combines the expert conditions before trajectory generation. During training, privileged rule-based sub-metric estimates for branch-specific trajectory drafts provide soft-gate distillation targets. The predicted action-free future latent conditions a flow-matching actor. At inference, privileged components are absent; with one front-facing camera, PerceptDrive generates one trajectory per planning step without test-time scoring, reranking, or search. Experiments show that PerceptDrive achieves state-of-the-art performance with 90.4 PDMS on NAVSIM v1 and 90.2 EPDMS on NAVSIM v2, outperforming existing methods. Ablations confirm complementary gains from prior retention and scene-conditioned routing, alongside differential reliance on the three priors. These results demonstrate that preserving and adaptively routing perception priors improves direct planning without test-time candidate selection.",
+  "abstract_zh": "冻结的感知基础模型编码了丰富的几何、语义和动态知识。然而，狭窄的条件接口可能削弱任务相关的线索，而静态融合无法根据每个场景调整专家的贡献。我们将此挑战定义为先验到规划的迁移问题，提出了PerceptDrive，一种具有自适应专家路由的感知先验世界-动作建模框架。PerceptDrive将来自冻结且经过驾驶适配的教师蒸馏先验和来自冻结的自监督视频编码器的密集观测潜变量输入到可训练的专家路由世界-动作模型中。专家特定的查询分支处理这些信号，同时先验保持目标将每个分支锚定于其对应的先验。路由器从共享的场景表示预测软门控，并在轨迹生成前组合专家条件。训练过程中，基于规则的特权子指标对分支特定轨迹草案提供软门控蒸馏目标。预测的无动作未来潜变量条件用于流匹配执行器。推理时，无特权组件；仅使用一台前置摄像头，PerceptDrive在每个规划步骤生成一条轨迹，无需测试时评分、重排序或搜索。实验表明，PerceptDrive在NAVSIM v1上实现90.4 PDMS，在NAVSIM v2上实现90.2 EPDMS，性能优于现有方法。消融实验确认了先验保持与场景条件路由的互补增益，以及对三种先验的差异依赖。这些结果表明，保持并自适应路由感知先验能够提升直接规划性能，无需测试时候选方案选择。",
+  "arxiv_id": "2607.20175",
+  "arxiv_url": "https://arxiv.org/abs/2607.20175v1",
+  "authors": [
+    "Yushan Liu",
+    "Tianxiong Lv",
+    "Bohua Wang",
+    "Hangqi Fan",
+    "Chenxu Zhao",
+    "He Zheng",
+    "Xuchang Zhong",
+    "Yifan Xie",
+    "Congyang Zhao",
+    "Zhihao Liao",
+    "Leigang Luo",
+    "Yang Cai",
+    "Xiao-Ping Zhang",
+    "Wenbo Ding"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-23#paper-2607-20175",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:19.105751+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.20175v1",
+  "published_at": "2026-07-22T14:09:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-07-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.20175v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "端到端驾驶"
+    ]
+  },
+  "title": "PerceptDrive: Perception Prior World-Action Modeling with Adaptive Expert Routing for End-to-End Autonomous Driving",
+  "title_zh": "PerceptDrive：基于感知先验的世界-动作建模与自适应专家路由的端到端自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2607.20175"
+}

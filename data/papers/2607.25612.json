@@ -1,0 +1,57 @@
+{
+  "abstract": "Perception tasks for autonomous vehicles need to work satisfactorily in adverse weather conditions. Due to lack of real-world weather datasets, weather simulations are a promising alternative. To ensure simulations closely mirror real-world weather data, it's crucial that they represent the same weather characteristics, including severity and particle positioning, across different sensors. To achieve this, we propose the Reference Dataset Alignment Method (ReDAM) for weather intensity alignment in fog and Unified-weather-edit (inspired by Weather-edit[1]) for particle positioning alignment in rain and snow. We validate both alignment methods using statistical and geometrical tests, respectively. We find that 3D detection models for non-aligned versions tend to be overly optimistic as compared to aligned versions. We also show the aligned-multi-sensor simulation's effectiveness for achieving robustness for 3D object detection task by finetuning existing sensor fusion models on it.",
+  "abstract_zh": "自主驾驶车辆的感知任务需要在恶劣天气条件下正常工作。由于缺乏真实世界的天气数据集，天气模拟成为一种有前景的替代方案。为了确保模拟能够紧密反映真实世界的天气数据，关键在于它们能够在不同传感器之间表现出相同的天气特征，包括强度和粒子位置。为此，我们提出了参考数据集对齐方法（Reference Dataset Alignment Method, ReDAM）用于雾天的天气强度对齐，以及统一天气编辑（Unified-weather-edit，受Weather-edit[1]启发）用于雨天和雪天的粒子位置对齐。我们分别使用统计和几何测试验证这两种对齐方法。我们发现，非对齐版本的三维检测模型相比于对齐版本往往过于乐观。我们还展示了对齐的多传感器模拟在通过对现有传感器融合模型进行微调以实现三维物体检测任务的鲁棒性方面的有效性。",
+  "arxiv_id": "2607.25612",
+  "arxiv_url": "https://arxiv.org/abs/2607.25612v1",
+  "authors": [
+    "Samsad Alam",
+    "Devyani Lambhate",
+    "Aditya Mohan",
+    "Vishal Kumar",
+    "Vaibhav Katewa"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-29#paper-2607-25612",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:00:55.553028+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.25612v1",
+  "published_at": "2026-07-28T11:43:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "驾驶",
+      "车辆",
+      "3d object detection",
+      "3d detection",
+      "sensor fusion",
+      "multi-sensor"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 59
+  },
+  "seen_dates": [
+    "2026-07-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.25612v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "3D 检测",
+      "多传感器融合"
+    ]
+  },
+  "title": "Multi-Sensor Alignment for Weather Simulations",
+  "title_zh": "天气模拟中的多传感器对齐",
+  "translation_url": "https://hjfy.top/arxiv/2607.25612"
+}

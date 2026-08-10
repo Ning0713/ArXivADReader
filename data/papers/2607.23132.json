@@ -1,0 +1,56 @@
+{
+  "abstract": "Assessing the severity of a traffic accident scenario is important to decide which emergency service to dispatch. Missing an ambulance dispatch on a pedestrian accident is a fatal issue that can lead to death. Recently, Vision-Language Models (VLMs) have been a promising tool for accident reasoning, yet many VLMs are not grounded in real-life accident response protocols, making them not usable in accident severity assessment off-the-shelf. We introduced DispatchRAG, an accident assessor and dispatcher framework grounded in real-life Japanese traffic-accident response protocols, designed to enhance VLMs to generate an appropriate emergency response during an emergency scenario. Utilizing a RAG-based retrieval mechanism to retrieve the most relevant accident protocol and an LLM-powered reasoner to suggest the most proper response. To support evaluation, we introduce Accident Dispatch Dataset, a comprehensive dataset of accident assessment and emergency response according to Japanese accident response protocols adapted from the MM-AU dataset. We validate our framework on the Accident Dispatch Dataset, showing strong performance across various accident scenarios compared to the baseline VLM, pointing toward integration in autonomous vehicles that can automatically report both their own and nearby accidents.",
+  "abstract_zh": "评估交通事故场景的严重性对于决定调度哪种紧急服务至关重要。在行人事故中错过救护车的调度是一个致命问题，可能导致死亡。近年来，视觉-语言模型（Vision-Language Models, VLMs）成为事故推理的有前景工具，但许多VLM并未基于现实生活中的事故响应协议，导致它们无法直接用于事故严重性评估。我们提出了DispatchRAG，一个基于现实日本交通事故响应协议的事故评估和调度框架，旨在增强VLM在紧急场景中生成适当紧急响应的能力。该框架利用基于RAG的检索机制来获取最相关的事故协议，并使用大型语言模型（LLM）驱动的推理器来建议最合适的响应。为了支持评估，我们引入了事故调度数据集（Accident Dispatch Dataset），这是一个根据日本事故响应协议改编的全面事故评估和紧急响应数据集，源自MM-AU数据集。我们在事故调度数据集上验证了我们的框架，显示出在各种事故场景中相较于基线VLM的强大表现，指向在自动驾驶车辆中集成该框架的潜力，以便自动报告自身及附近的事故。",
+  "arxiv_id": "2607.23132",
+  "arxiv_url": "https://arxiv.org/abs/2607.23132v1",
+  "authors": [
+    "Muhammad Sulthan Adhipradhana",
+    "Ehsan Javanmardi",
+    "Naren Bao",
+    "Manabu Tsukada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-23132",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.539047+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.23132v1",
+  "published_at": "2026-07-25T10:25:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "traffic",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "交通",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.23132v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "DispatchRAG: Grounding Emergency Dispatch Decisions in Real-World Protocols from Traffic Accident Video",
+  "title_zh": "DispatchRAG：基于交通事故视频的现实协议进行紧急调度决策",
+  "translation_url": "https://hjfy.top/arxiv/2607.23132"
+}

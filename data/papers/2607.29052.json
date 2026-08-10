@@ -1,0 +1,51 @@
+{
+  "abstract": "End-to-end (E2E) autonomous driving aims to learn a direct mapping from visual observations to control actions. However, these E2E models often act as black boxes and struggle with complex scenarios. To address this, recent works incorporate Vision-Language Models (VLMs) to provide explicit reasoning, enhancing both interpretability and driving robustness. These approaches typically rely on pre-generated annotations, which suffer from potentially flawed labels and require costly human labor. In this work, we propose a new framework that integrates structured reasoning and geometric precision through a teacher-student architecture. The teacher model introduces reflective reasoning, where the VLM generates logical explanations and then reflectively refines the reasoning under the supervision of ground-truth action. This enhances zero-shot generalization without intermediate labels. The student model distills the teacher's reasoning capabilities via supervised fine-tuning. We also design a separate waypoint decoder that interprets textual reasoning into continuous trajectories. Our proposed solution integrates two goals: providing explicit reasoning for interpretability and delivering robust and accurate driving performance. It leverages the synergy between these two objectives within a staged inference engine to enhance driving performance and explicitly uses the reasoning to guide driving prediction. Evaluated on Waymo benchmarks, our framework outperforms classical reasoning-based baselines in zero-shot reasoning, waypoint accuracy, and inference efficiency. Our experiments validate this design, demonstrating that the reasoning text makes a significant contribution to driving inference, resulting in around a 24% improvement in performance compared to an identical model that lacks reasoning. Our work advances reasoning-driven autonomous driving toward interpretable and deployable systems.",
+  "abstract_zh": "端到端（E2E）自主驾驶旨在学习从视觉观测到控制动作的直接映射。然而，这些E2E模型往往表现为黑箱，难以应对复杂场景。为了解决这个问题，最近的研究将视觉-语言模型（VLMs）纳入其中，以提供明确的推理，从而增强可解释性和驾驶鲁棒性。这些方法通常依赖于预生成的注释，而这些注释可能存在缺陷标签，并且需要昂贵的人力劳动。在本研究中，我们提出了一种新框架，通过教师-学生架构整合结构化推理和几何精度。教师模型引入反思性推理，其中VLM生成逻辑解释，然后在真实动作的监督下反思性地完善推理。这增强了零样本泛化能力，而无需中间标签。学生模型通过监督微调提炼教师的推理能力。我们还设计了一个独立的航点解码器，将文本推理解释为连续轨迹。我们提出的解决方案整合了两个目标：提供明确的推理以增强可解释性，并提供鲁棒且准确的驾驶性能。它利用这两个目标之间的协同作用，在分阶段推理引擎中提升驾驶性能，并明确使用推理来指导驾驶预测。在Waymo基准测试中，我们的框架在零样本推理、航点准确性和推理效率方面优于经典的基于推理的基线。我们的实验验证了这一设计，表明推理文本对驾驶推理做出了显著贡献，与缺乏推理的相同模型相比，性能提升约24%。我们的工作推动了以推理为驱动的自主驾驶朝着可解释和可部署的系统发展。",
+  "arxiv_id": "2607.29052",
+  "arxiv_url": "https://arxiv.org/abs/2607.29052v1",
+  "authors": [
+    "Zeyu Dong",
+    "Yimin Zhu",
+    "Yu Wu",
+    "Yu Sun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-03#paper-2607-29052",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:18.008447+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.29052v1",
+  "published_at": "2026-07-31T06:10:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-08-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.29052v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "VLM/VLA",
+      "深度/几何"
+    ]
+  },
+  "title": "Outcome-Guided Distillation: A Teacher-Student Framework to Advance VLM Reasoning in Autonomous Driving",
+  "title_zh": "基于结果指导的蒸馏：推动自主驾驶中视觉-语言模型推理的教师-学生框架",
+  "translation_url": "https://hjfy.top/arxiv/2607.29052"
+}

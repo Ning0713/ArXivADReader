@@ -1,0 +1,50 @@
+{
+  "abstract": "Perception is one of the primary applications where neural networks outperform conventional algorithms. One example is AI systems for automated driving, which can detect pedestrians based on image data and avoid them accordingly. A substantial challenge with these AI systems is that their output depends heavily on the quality of the input images. For example, if an image is of inferior quality due to heavy contamination, such as noise or darkness, accurate predictions are hardly feasible. Additionally, various types of errors can occur, each with varying relevance to the trustworthiness of the underlying AI system. In particular, it may be more critical not to detect an existing person than to detect a person where there is none. Therefore, we want to show that we can still avoid the most critical errors in situations of inferior image quality. To achieve this, we aim to establish a fail-degraded system by lowering the network's confidence threshold based on the estimated image quality, enabling it to detect objects more cautiously in uncertain situations. Additionally, we present a novel method for estimating the quality of incoming images by comparing them to the training data using normalizing flows. We will also conduct experiments applying our method to state-of-the-art object detection. In summary, we will present a design strategy for AI-based systems in automated driving that can deal with poor-quality input data without resorting to fallback solutions. Such measures enhance trust in AI-based systems and lead to an increased provision of the AI component.",
+  "abstract_zh": "感知是神经网络超越传统算法的主要应用之一。一个例子是用于自动驾驶的人工智能系统，它能够根据图像数据检测行人并相应地避让。然而，这些人工智能系统面临的一个重大挑战是其输出在很大程度上依赖于输入图像的质量。例如，如果图像因严重污染（如噪声或昏暗）而质量较差，准确预测几乎不可行。此外，可能会出现各种类型的错误，每种错误对基础人工智能系统的可信度具有不同的相关性。特别是，未能检测到一个存在的人可能比在没有人的情况下检测到一个人更为关键。因此，我们希望展示在图像质量较差的情况下，仍然能够避免最关键的错误。为此，我们旨在通过根据估计的图像质量降低网络的置信度阈值，建立一个故障退化系统，使其能够在不确定的情况下更谨慎地检测物体。此外，我们提出了一种新方法，通过使用归一化流将输入图像与训练数据进行比较，从而估计图像质量。我们还将进行实验，将我们的方法应用于最先进的目标检测技术。总之，我们将提出一种针对自动驾驶中基于人工智能系统的设计策略，该策略能够处理低质量输入数据，而无需依赖后备解决方案。这些措施增强了对基于人工智能系统的信任，并促进了人工智能组件的更广泛应用。",
+  "arxiv_id": "2607.25736",
+  "arxiv_url": "https://arxiv.org/abs/2607.25736v1",
+  "authors": [
+    "Yannick Kees",
+    "Elena Hoemann",
+    "Frank Köster",
+    "Sven Hallerbach"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-29#paper-2607-25736",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:00:55.485201+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.25736v1",
+  "published_at": "2026-07-28T14:00:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "driving",
+      "驾驶",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-07-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.25736v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "Image Quality Dependent Degradation for AI Systems",
+  "title_zh": "依赖于图像质量的人工智能系统退化",
+  "translation_url": "https://hjfy.top/arxiv/2607.25736"
+}

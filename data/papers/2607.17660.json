@@ -1,0 +1,50 @@
+{
+  "abstract": "Camera-only 3D semantic occupancy prediction aims to infer voxel-wise scene semantics from multi-view images, yet remains fundamentally challenging due to depth ambiguity and occlusion. Along a single camera ray, multiple spatially separated surfaces may coexist, making occupancy inherently a multi-label existence problem rather than a single-depth estimation task. However, most existing approaches favor a single dominant depth hypothesis per ray, limiting their ability to model volumetric scenes under complex occlusion. To address this limitation, we introduce RayOcc, an occlusion-aware ray occupancy framework that reformulates ray modeling as multi-label existence prediction. Instead of predicting a categorical depth distribution, RayOcc estimates a non-normalized Gaussian mixture intensity along each ray and converts it into interval-wise occupancy probabilities via a Poisson event formulation, allowing multiple occupied hypotheses to coexist without enforcing mutual competition across depth. The predicted mixture components are interpreted as occupancy hypotheses to initialize sparse 3D Gaussian primitives, which are refined and rasterized for semantic occupancy prediction. Experiments on the nuScenes benchmark show that RayOcc achieves state-of-the-art overall IoU and mIoU among the compared Gaussian-based occupancy methods.",
+  "abstract_zh": "仅使用相机的三维语义占用预测旨在从多视角图像中推断体素级场景语义，但由于深度模糊和遮挡，这一任务仍然具有根本性的挑战。在单个相机光线沿线，多个空间上分离的表面可能共存，使得占用问题本质上成为一个多标签存在问题，而非单一深度估计任务。然而，大多数现有方法倾向于每条光线使用单一主导深度假设，这限制了它们在复杂遮挡下对体积场景的建模能力。为了解决这一限制，我们提出了RayOcc，一个遮挡感知的光线占用框架，它将光线建模重新表述为多标签存在预测。RayOcc不是预测一个分类深度分布，而是沿每条光线估计一个非标准化的高斯混合强度，并通过泊松事件公式将其转换为区间占用概率，从而允许多个占用假设共存，而不强制在深度之间进行相互竞争。预测的混合成分被解释为占用假设，以初始化稀疏的三维高斯原语，这些原语经过细化和栅格化用于语义占用预测。在nuScenes基准上的实验表明，RayOcc在与其他基于高斯的占用方法比较中，实现了最先进的整体IoU和mIoU。",
+  "arxiv_id": "2607.17660",
+  "arxiv_url": "https://arxiv.org/abs/2607.17660v1",
+  "authors": [
+    "Junho Kim",
+    "Seongwon Lee"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-17660",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.453175+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.17660v1",
+  "published_at": "2026-07-20T08:10:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "occupancy",
+      "depth estimation",
+      "深度估计",
+      "占用预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 36
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.17660v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "感知"
+    ]
+  },
+  "title": "RayOcc: Occlusion-Aware Ray Occupancy Estimation via Gaussian Mixture Intensity",
+  "title_zh": "RayOcc：基于高斯混合强度的遮挡感知光线占用估计",
+  "translation_url": "https://hjfy.top/arxiv/2607.17660"
+}

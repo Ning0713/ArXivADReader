@@ -1,0 +1,65 @@
+{
+  "abstract": "VLMs are increasingly deployed in AD systems, creating an urgent need for rigorous safety evaluation under rare yet safety-critical scenarios. Among these, interactions with vulnerable road users represent a major source of real-world failures. However, existing safety-critical scenario generation methods predominantly rely on simulator-based pipelines, which suffer from a substantial sim-to-real gap and often fail to capture realistic, diverse, and unforeseen human-vehicle interaction dynamics. We present SafeGen, a goal-conditioned diffusion framework for safety-critical scenario generation in VLMADs. Our key insight is to formulate scenario generation as a goal-conditioned diffusion process, where a predefined catastrophic end-state serves as a strong supervisory signal, guiding the generation of temporally coherent video trajectories that naturally evolve toward safety-critical outcomes. Building on this formulation, we introduce Context Grounded End State Reasoning, which leverages VLMs to analyze benign driving contexts and infer latent vulnerabilities in human-vehicle interactions, producing structured end-state specifications that induce high-risk scenarios. Conditioned on these targets, we further propose End State Conditioned Video Evolution, which grounds semantic threats into physically plausible visual dynamics. Specifically, we instantiate high-risk agents within the scene via depth-aware geometric projection, followed by boundary-conditioned diffusion to generate intermediate frames with consistent motion patterns and temporal coherence. Extensive experiments across 3 VLMADs demonstrate that SafeGen increases the Judge Overall Score, a metric using a VLM judge to evaluate VLMADs' understanding and decision-making, by 24.25% on average compared to SoTA baselines. Furthermore, fine-tuning a VLMAD improves performance in real-world driving scenes by an average of 15.9%.",
+  "abstract_zh": "随着视觉语言模型（VLM）在自动驾驶（AD）系统中的广泛应用，迫切需要在稀有但安全关键的场景下进行严格的安全评估。在这些场景中，与易受伤害的道路使用者的互动是现实世界失败的主要来源。然而，现有的安全关键场景生成方法主要依赖于基于模拟器的流程，这些流程存在显著的模拟与现实之间的差距，往往无法捕捉到现实、丰富且不可预见的人车互动动态。我们提出了SafeGen，一个用于VLMAD安全关键场景生成的目标条件扩散框架。我们的关键见解是将场景生成形式化为一个目标条件扩散过程，其中预定义的灾难性终态作为强有力的监督信号，指导生成时间上连贯的视频轨迹，自然演变为安全关键的结果。在此基础上，我们引入了上下文基础的终态推理，利用VLM分析良性驾驶上下文并推断人车互动中的潜在脆弱性，生成结构化的终态规范，从而诱导高风险场景。在这些目标的条件下，我们进一步提出了终态条件视频演变，将语义威胁与物理上合理的视觉动态相结合。具体而言，我们通过深度感知几何投影在场景中实例化高风险代理，随后进行边界条件扩散，以生成具有一致运动模式和时间连贯性的中间帧。在3个VLMAD上的广泛实验表明，与最先进的基线相比，SafeGen平均提高了Judge Overall Score（一个使用VLM评估VLMAD理解和决策能力的指标）24.25%。此外，对VLMAD进行微调使其在真实驾驶场景中的表现平均提高了15.9%。",
+  "arxiv_id": "2607.19701",
+  "arxiv_url": "https://arxiv.org/abs/2607.19701v1",
+  "authors": [
+    "Jiangfan Liu",
+    "Zexuan Cui",
+    "Tianyuan Zhang",
+    "Zonglei Jing",
+    "Zonghao Ying",
+    "Yaoyuan Zhang",
+    "Jiakai Wang",
+    "Xiaoqi Jiang",
+    "Aishan Liu",
+    "Xianglong Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-23#paper-2607-19701",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:19.078002+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.19701v1",
+  "published_at": "2026-07-22T03:05:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "道路",
+      "sim-to-real",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 94
+  },
+  "seen_dates": [
+    "2026-07-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.19701v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "安全/异常"
+    ]
+  },
+  "title": "SafeGen: Goal-Conditioned Video Diffusion of Safety-Critical Scenarios for VLM-Based Autonomous Driving",
+  "title_zh": "SafeGen：基于目标条件的视频扩散框架用于安全关键场景的VLM自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2607.19701"
+}

@@ -1,0 +1,50 @@
+{
+  "abstract": "Modern autonomous-driving fleets record far more video than human reviewers can inspect. This motivates the need for an automatic clip triage mechanism, to surface rare and review-worthy clips, so that driving models can be fine-tuned to better handle unideal circumstances. We test a label-free approach that scores clips by the prediction-error \"novelty\" of a self-supervised joint-embedding predictive architecture (JEPA); a frozen V-JEPA video encoder is paired with a lightweight predictor head to reconstruct masked clip embeddings, and clips whose embeddings are hard to predict are flagged as interesting. Evaluated under a realistic protocol that trains on one dataset and tests against footage from others, this approach appears highly effective. We show that this apparent success is actually a domain-shift consequence: on a fair benchmark drawn from a single dataset, this mechanism collapses to chance and is on par with simple no-training baselines. A lightly supervised probe on the same frozen embeddings results in almost double the average precision, indicating that the bottleneck is indeed the self-supervised objective, rather than the representation. We present this as a study for evaluating the effectiveness of self-supervised learning, where cross-dataset protocols can silently reward domain separation over novelty.",
+  "abstract_zh": "现代自动驾驶车队记录的视频量远超人类评审员能够检查的数量。这促使我们需要一种自动剪辑筛选机制，以便提取稀有且值得审查的剪辑，从而使驾驶模型能够更好地处理不理想的情况。我们测试了一种无标签的方法，通过自监督的联合嵌入预测架构（JEPA）对剪辑进行预测误差“新颖性”评分；一个冻结的 V-JEPA 视频编码器与一个轻量级预测头配对，以重建被遮蔽的剪辑嵌入，而那些嵌入难以预测的剪辑则被标记为有趣。在一个现实的协议下进行评估，该协议在一个数据集上训练并在其他数据集的录像上测试，这种方法似乎非常有效。我们展示了这种表面上的成功实际上是领域转移的结果：在一个来自单一数据集的公平基准上，这一机制崩溃至随机水平，并与简单的无训练基线相当。对相同冻结嵌入进行轻度监督的探测结果显示平均精度几乎翻倍，表明瓶颈确实在于自监督目标，而非表示本身。我们将此作为评估自监督学习有效性的研究，其中跨数据集协议可能在不知不觉中奖励领域分离而非新颖性。",
+  "arxiv_id": "2608.01336",
+  "arxiv_url": "https://arxiv.org/abs/2608.01336v1",
+  "authors": [
+    "Advait Pavuluri",
+    "Shamik Karkhanis",
+    "Uzma Mushtaque"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-01336",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.079556+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.01336v1",
+  "published_at": "2026-08-02T15:57:40Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.01336v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "Asleep at the Wheel: JEPA's Limitations in Evaluating Novel Driving Data",
+  "title_zh": "驾驶中的失误：JEPA在评估新颖驾驶数据中的局限性",
+  "translation_url": "https://hjfy.top/arxiv/2608.01336"
+}

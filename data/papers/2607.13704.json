@@ -1,0 +1,57 @@
+{
+  "abstract": "The dominance of traditional rule-based methods in autonomous driving has gradually been replaced by learning-based approaches. While learning-based planners have achieved considerable success in passenger vehicles, their performance on heavy-duty trucks, particularly modern distributed electric-drive trucks (DETs), remains largely unexplored. To facilitate research and application of learning-based planners in DETs, this letter presents the first high-fidelity benchmark, called nuTruck, designed to support large-scale neural network training and closed-loop evaluation. Given the complex dynamics and high rollover susceptibility of DETs, we first incorporate a highly accurate nonlinear truck dynamical model into the simulation, which enables independent driving and steering of all wheels and captures dynamic load transfer caused by acceleration, deceleration, and cornering, thereby allowing quantitative assessment of rollover risk in closed-loop simulation. Second, we adapt several rule-based and learning-based planners as baselines for DETs and evaluate their performance in closed-loop simulation. Finally, using real-world driving scenarios from the nuPlan dataset, we conduct extensive closed-loop evaluations, analyzing not only conventional collision-free planning performance, but also the dynamical safety of the planned trajectories. The proposed nuTruck benchmark is expected to serve as a new standard for fair and realistic evaluation of autonomous driving planners on DETs.",
+  "abstract_zh": "传统基于规则的方法在自主驾驶领域的主导地位逐渐被基于学习的方法所取代。尽管基于学习的规划器在乘用车上取得了显著成功，但它们在重型卡车，特别是现代分布式电驱动卡车（DETs）上的表现仍然很大程度上未被探索。为了促进基于学习的规划器在DETs中的研究和应用，本文提出了第一个高保真基准，称为nuTruck，旨在支持大规模神经网络训练和闭环评估。考虑到DETs的复杂动态特性和高翻车敏感性，我们首先将一个高度准确的非线性卡车动力学模型纳入模拟中，该模型能够实现所有车轮的独立驱动和转向，并捕捉因加速、减速和转弯引起的动态载荷转移，从而允许在闭环模拟中对翻车风险进行定量评估。其次，我们将几种基于规则和基于学习的规划器调整为DETs的基准，并评估它们在闭环模拟中的表现。最后，利用来自nuPlan数据集的真实驾驶场景，我们进行了广泛的闭环评估，不仅分析了传统的无碰撞规划性能，还分析了规划轨迹的动态安全性。所提出的nuTruck基准预计将作为对DETs上的自主驾驶规划器进行公平和现实评估的新标准。",
+  "arxiv_id": "2607.13704",
+  "arxiv_url": "https://arxiv.org/abs/2607.13704v1",
+  "authors": [
+    "Jinyu Miao",
+    "Pu Zhang",
+    "Yifei He",
+    "Chengyao Zhang",
+    "Kun Jiang",
+    "Ke Wang",
+    "Mengmeng Yang",
+    "Diange Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-16#paper-2607-13704",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T12:58:49.745719+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.13704v1",
+  "published_at": "2026-07-15T11:09:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuplan",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-07-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.13704v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "nuTruck: Benchmarking Autonomous Driving Planning for Distributed Electric-drive Trucks",
+  "title_zh": "nuTruck：分布式电驱动卡车自主驾驶规划的基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2607.13704"
+}

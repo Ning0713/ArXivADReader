@@ -1,0 +1,47 @@
+{
+  "abstract": "Should a completion model spend extra test-time compute by iterating, or spend a similar parameter budget on a wider one-shot predictor? The answer is easily confounded by denoising curricula, corruption augmentation, capacity, and unpaired evaluation. We study this question in LiDAR semantic scene completion by comparing a one-shot predictor, a parameter-matched wider predictor, and a weight-tied multigrid refiner initialized from the same frozen predictor. The protocol separates coherent region removal, independent thinning, range-dependent attenuation, and additive clutter while preserving exact scene-condition pairing. Across five training seeds and 815 SemanticKITTI sequence-08 frames, the full iterative system improves mIoU over the wide control by 0.911 points under contiguous angular removal, with a 95% moving-block bootstrap interval of [0.804, 1.040] that clears a predeclared 0.5-point practical margin. Under independent 75% thinning, iteration adds only 0.300 points [0.166, 0.436], whereas observation-family augmentation adds 5.975 points [5.662, 6.140]. Neither intervention repairs additive clutter. The iterative system also costs 10.74 ms and 0.75 GiB per frame, versus 6.25 ms and 0.23 GiB for the wide control. These results establish a geometry-conditioned empirical boundary rather than a universal advantage: coherent gaps can justify fixed-depth refinement, broadly thinned evidence is addressed more effectively by training coverage, and spurious evidence requires a different robustness mechanism.",
+  "abstract_zh": "补全模型是应该通过迭代来花费额外的测试时间计算，还是在一个更广泛的一次性预测器上花费相似的参数预算？这个问题容易受到去噪课程、腐蚀增强、容量和无配对评估的干扰。我们通过比较一个一次性预测器、一个参数匹配的更广泛预测器和一个从相同冻结预测器初始化的权重绑定多网格细化器，研究了LiDAR语义场景补全中的这一问题。该协议分离了连贯区域去除、独立稀疏、范围依赖衰减和附加杂乱，同时保持精确的场景条件配对。在五个训练种子和815个SemanticKITTI序列-08帧中，完整的迭代系统在连续角度去除下，相较于广泛控制提高了0.911点的mIoU，95%的移动块自助区间为[0.804, 1.040]，超出了预先声明的0.5点实际边际。在独立的75%稀疏下，迭代仅增加了0.300点[0.166, 0.436]，而观察家族增强则增加了5.975点[5.662, 6.140]。两种干预都无法修复附加杂乱。迭代系统每帧的成本为10.74毫秒和0.75 GiB，而广泛控制为6.25毫秒和0.23 GiB。这些结果建立了一个几何条件的经验边界，而不是普遍优势：连贯的间隙可以证明固定深度细化的合理性，而广泛稀疏的证据则更有效地通过训练覆盖来处理，虚假的证据需要不同的鲁棒性机制。",
+  "arxiv_id": "2608.06014",
+  "arxiv_url": "https://arxiv.org/abs/2608.06014v1",
+  "authors": [
+    "Shijie Hao",
+    "Weining Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-07#paper-2608-06014",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:52.149306+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.06014v1",
+  "published_at": "2026-08-06T13:19:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "semantickitti",
+      "lidar",
+      "scene completion"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-08-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.06014v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Iterate or Widen? When Test-Time Refinement Helps LiDAR Scene Completion: A Controlled Study of Evidence Geometry, Training Coverage, and Compute",
+  "title_zh": "迭代还是扩展？测试时细化何时有助于LiDAR场景补全：证据几何、训练覆盖和计算的控制研究",
+  "translation_url": "https://hjfy.top/arxiv/2608.06014"
+}

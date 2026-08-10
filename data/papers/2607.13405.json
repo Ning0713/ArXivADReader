@@ -1,0 +1,59 @@
+{
+  "abstract": "LiDAR-inertial odometry (LIO) is a key component of autonomous navigation, but high-dynamic driving exposes two coupled challenges: intra-scan motion distortion and vibration-contaminated inertial measurements. Most real-time LiDAR-inertial pipelines propagate the system state by integrating raw IMU measurements and then use the propagated trajectory for point cloud de-distortion, thereby propagating inertial noise into both the corrected scan and the subsequent scan-to-map registration. This paper presents WNOJ-LIO, a LiDAR-IMU fusion framework based on a White-Noise-on-Jerk (WNOJ) Extended Kalman Filter (EKF). WNOJ-LIO employs a decoupled WNOJ prior on $\\R^3 \\times \\SO(3)$ for state prediction and treats the IMU as a high-frequency measurement source rather than the driver of state propagation. The resulting posterior state history is then used for LiDAR scan de-distortion and subsequent point-to-plane LiDAR updates. The decoupled process model enables closed-form covariance propagation, thereby bridging the gap between batch WNOJ Gaussian process (GP) trajectory priors and recursive filtering. Simulation results demonstrate improvements in acceleration and angular-velocity denoising, scan de-distortion, and localization accuracy over a FAST-LIO-style baseline. Real-world experiments were conducted using an autonomous racing car on four driving segments with maximum speeds ranging from 53 to 208~km/h, covering a wide range of vehicle vibration levels. The experiments further validate the proposed method and provide a comprehensive evaluation of its performance in estimating acceleration, angular velocity, body-frame linear velocity, attitude, and position under highly dynamic driving. The source code of WNOJ-LIO is publicly available at https://github.com/LvJohny/wnoj-ekf-lio.git.",
+  "abstract_zh": "激光雷达惯性里程计（LIO）是自主导航的关键组成部分，但高动态驾驶带来了两个相互关联的挑战：扫描内运动失真和振动污染的惯性测量。大多数实时激光雷达-惯性管道通过整合原始惯性测量单元（IMU）测量值来传播系统状态，然后使用传播的轨迹进行点云去失真，从而将惯性噪声传播到校正后的扫描和后续的扫描与地图配准中。本文提出了WNOJ-LIO，一种基于白噪声-加速度变化（WNOJ）扩展卡尔曼滤波器（EKF）的激光雷达-IMU融合框架。WNOJ-LIO在$ ext{R}^3 imes ext{SO}(3)$上采用解耦的WNOJ先验进行状态预测，并将IMU视为高频测量源，而非状态传播的驱动因素。由此得到的后验状态历史用于激光雷达扫描去失真和后续的点对平面激光雷达更新。解耦的过程模型实现了闭式形式的协方差传播，从而弥合了批处理WNOJ高斯过程（GP）轨迹先验与递归滤波之间的差距。仿真结果表明，与FAST-LIO风格基线相比，在加速度和角速度去噪、扫描去失真和定位精度方面都有所改善。通过使用一辆自主赛车在四个驾驶段进行的实地实验，最大速度范围从53到208 km/h，覆盖了广泛的车辆振动水平。这些实验进一步验证了所提出的方法，并全面评估了其在高动态驾驶下估计加速度、角速度、机体坐标系线速度、姿态和位置的性能。WNOJ-LIO的源代码已公开，地址为https://github.com/LvJohny/wnoj-ekf-lio.git。",
+  "arxiv_id": "2607.13405",
+  "arxiv_url": "https://arxiv.org/abs/2607.13405v1",
+  "authors": [
+    "Junning Lyu",
+    "Qizhi Guo",
+    "Xia Ning",
+    "Tao Song",
+    "Shaoming He"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-16#paper-2607-13405",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T12:58:49.729932+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.13405v1",
+  "published_at": "2026-07-15T03:07:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "car",
+      "驾驶",
+      "车辆",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 70
+  },
+  "seen_dates": [
+    "2026-07-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.13405v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "地图/定位",
+      "预测/规划"
+    ]
+  },
+  "title": "WNOJ-LIO: A White-Noise-on-Jerk Motion-Prior EKF for High-Dynamic LiDAR-IMU Fusion",
+  "title_zh": "WNOJ-LIO：一种基于白噪声-加速度变化运动先验的高动态激光雷达-惯性测量单元融合扩展卡尔曼滤波器",
+  "translation_url": "https://hjfy.top/arxiv/2607.13405"
+}

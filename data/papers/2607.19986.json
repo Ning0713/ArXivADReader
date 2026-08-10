@@ -1,0 +1,54 @@
+{
+  "abstract": "Stereo matching is a fundamental task in 3D reconstruction. Despite remarkable advances, the prevailing paradigms formulate stereo matching as a deterministic regression problem, collapsing the multimodal distribution modeling into a single-point estimation. This formulation suffers from a regression-to-mean bias, frequently struggling with ambiguous regions. In contrast, we introduce a prior-guided generative framework that integrates deterministic matching regression and generative distribution modeling within a complementary formulation. Built upon this formulation, we introduce StereoFlow through three key components: (i) a two-stage progressive cascade matching network that progressively produces multi-resolution stereo conditions with complementary matching cues; (ii) a pixel diffusion transformer (termed StereoDiT) with a frequency-decoupled architecture for modeling correspondence ambiguity; (iii) a few-step flow matching objective (termed Transition Flow Matching) for efficient optimization. In summary, \\textsc{\\textbf{StereoFlow}} achieves strong geometric consistency and rich fine-grained details in ill-posed, discontinuous regions and under zero-shot generalization. Extensive experiments demonstrate that the proposed StereoFlow establishes multiple state-of-the-art results across benchmarks, including Scene Flow, KITTI, ETH3D, and Middlebury.",
+  "abstract_zh": "立体匹配是三维重建中的一项基础任务。尽管取得了显著进展，现有的主流范式将立体匹配表述为一个确定性回归问题，将多模态分布建模简化为单点估计。这种表述存在回归到均值的偏差，常常在模糊区域面临挑战。相比之下，我们提出了一种基于先验引导的生成框架，将确定性匹配回归与生成分布建模整合在一个互补的框架中。在这一框架的基础上，我们通过三个关键组件引入了立体流（StereoFlow）：(i) 一个两阶段渐进级联匹配网络，逐步生成具有互补匹配线索的多分辨率立体条件；(ii) 一个像素扩散变换器（称为StereoDiT），其具有频率解耦架构，用于建模对应关系的模糊性；(iii) 一个少步流匹配目标（称为过渡流匹配），用于高效优化。总之， extsc{ extbf{StereoFlow}} 在不适定、间断区域以及零样本泛化下实现了强大的几何一致性和丰富的细粒度细节。大量实验表明，所提出的StereoFlow在多个基准测试中建立了多项最先进的结果，包括Scene Flow、KITTI、ETH3D和Middlebury。",
+  "arxiv_id": "2607.19986",
+  "arxiv_url": "https://arxiv.org/abs/2607.19986v1",
+  "authors": [
+    "Hao Wang",
+    "Haoran Geng",
+    "Xiaotong Yang",
+    "Jing Tang",
+    "Songlin Wei",
+    "Linlong Lang",
+    "Yeying Jin",
+    "Zheng Zhu",
+    "Zhaoxin Fan",
+    "Biao Leng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-23#paper-2607-19986",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:19.097716+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.19986v1",
+  "published_at": "2026-07-22T10:19:43Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-07-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.19986v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "STEREOFLOW: Progressive Stereo Matching with StereoDiT and Transition Flow Matching",
+  "title_zh": "立体流：基于StereoDiT和过渡流匹配的渐进立体匹配",
+  "translation_url": "https://hjfy.top/arxiv/2607.19986"
+}

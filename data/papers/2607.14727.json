@@ -1,0 +1,59 @@
+{
+  "abstract": "Autonomous driving vision-language models (VLMs) struggle in roadwork zones, where familiar visual cues such as lane markings and permanent signs are altered or absent, and temporary devices such as cones and barriers redefine the drivable corridor. VLMs can detect these objects, but without explicit guidance they anchor their reasoning on familiar elements from pre-training and fail to connect work-zone observations to correct planning decisions. We propose WorkDrive, a framework that constructs perception-grounded causal reasoning for work zones and aligns it with trajectory prediction. An automated multitask perception pipeline extracts structured scene facts and injects them into a Chain-of-Causation (CoC) annotation pipeline, redirecting the annotator's attention to domain-specific elements. The resulting reasoning labels are used for supervised fine-tuning, followed by reinforcement learning with a single reward: consistency between lateral meta-actions and the predicted trajectory. On ROADWork, the largest public work-zone dataset, the proposed roadwork CoC reduces trajectory average displacement error (ADE) by 9.0\\%, and consistency-based GRPO yields a further 3.0\\%, achieving progressive improvement over the trajectory-only baseline. Code and data will be publicly released.",
+  "abstract_zh": "自主驾驶的视觉-语言模型（VLMs）在道路施工区域面临挑战，因为熟悉的视觉线索如车道标记和永久性标志被改变或缺失，而临时设备如锥形标和障碍物重新定义了可驾驶走廊。VLMs可以检测这些物体，但在没有明确指导的情况下，它们将推理锚定在预训练时熟悉的元素上，无法将施工区的观察与正确的规划决策联系起来。我们提出了WorkDrive，一个为施工区构建感知基础的因果推理框架，并将其与轨迹预测对齐。一个自动化的多任务感知管道提取结构化场景事实，并将其注入因果链（Chain-of-Causation, CoC）注释管道，重新引导注释者的注意力到特定领域的元素。生成的推理标签用于监督微调，随后进行强化学习，采用单一奖励：横向元动作与预测轨迹之间的一致性。在ROADWork这个最大的公共施工区数据集上，所提出的道路施工因果链将轨迹平均位移误差（ADE）降低了9.0%，而基于一致性的GRPO进一步提高了3.0%，实现了相对于仅基于轨迹的基线的逐步改进。代码和数据将公开发布。",
+  "arxiv_id": "2607.14727",
+  "arxiv_url": "https://arxiv.org/abs/2607.14727v1",
+  "authors": [
+    "Tianyi Jiang",
+    "Wen Zhang",
+    "Sihan Yang",
+    "Ming Lu",
+    "Wentao Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-17#paper-2607-14727",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T12:59:47.253475+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.14727v1",
+  "published_at": "2026-07-16T08:53:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "道路",
+      "车道",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 66
+  },
+  "seen_dates": [
+    "2026-07-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.14727v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "VLM/VLA"
+    ]
+  },
+  "title": "WorkDrive: Roadwork Chain of Causation for Autonomous Driving",
+  "title_zh": "WorkDrive：自主驾驶的道路施工因果链",
+  "translation_url": "https://hjfy.top/arxiv/2607.14727"
+}

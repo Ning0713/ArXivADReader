@@ -1,0 +1,59 @@
+{
+  "abstract": "Accurate temporal alignment of heterogeneous sensors is necessary for reliable environment perception in roadside multi-lidar, multi-camera systems, particularly in dense urban traffic. For this purpose, an open-source, simple, modular, and configurable hardware-triggered time-synchronization circuit is presented in this work to perform temporal alignment or accurate time synchronization between a lidar and multiple cameras. In the designed circuit, a lidar synchronization pulse is used as a reference input, and independently programmable, time-delayed trigger pulses are generated for each camera, allowing flexible adaptation to varying sensor setups and mounting geometries. A series of experiments is conducted on a roadside-mounted perception system comprised of lidar and three cameras, in which the trigger delay is systematically varied, and its impact on spatial-temporal alignment is evaluated. For different classes of road users, the overlap between lidar point cloud measurements and camera measurements is quantified to identify delay configurations that maximize cross-sensor consistency. The proposed circuit is shown to achieve robust and repeatable synchronization while remaining straightforward to deploy, reconfigure, and extend due to its simple and open-source design. Following validation on a three-camera roadside system, the circuit is extended to a vehicle platform with seven cameras and a lidar, providing a low-cost, extensible solution for multi-sensor synchronization across infrastructure and vehicle setups. All hardware circuit design files and source codes are available at https://github.com/shiva-THI/hardware-trigger-time-sync-lidar-cameras.",
+  "abstract_zh": "在路边多激光雷达和多摄像头系统中，尤其是在密集城市交通环境中，异构传感器的准确时间对齐对于可靠的环境感知至关重要。为此，本文提出了一种开源、简单、模块化且可配置的硬件触发时间同步电路，以实现激光雷达与多个摄像头之间的时间对齐或准确时间同步。在设计的电路中，激光雷达同步脉冲作为参考输入，为每个摄像头生成独立可编程的时间延迟触发脉冲，从而灵活适应不同的传感器配置和安装几何形状。我们在一个路边安装的感知系统上进行了系列实验，该系统由激光雷达和三台摄像头组成，系统地改变触发延迟，并评估其对时空对齐的影响。对于不同类型的道路使用者，量化激光雷达点云测量与摄像头测量之间的重叠，以识别最大化跨传感器一致性的延迟配置。所提出的电路在实现稳健且可重复的同步的同时，由于其简单且开源的设计，仍然易于部署、重新配置和扩展。在对三摄像头路边系统进行验证后，该电路扩展到一个配备七台摄像头和一台激光雷达的车辆平台，提供了一种低成本、可扩展的多传感器同步解决方案，适用于基础设施和车辆配置。所有硬件电路设计文件和源代码可在 https://github.com/shiva-THI/hardware-trigger-time-sync-lidar-cameras 获取。",
+  "arxiv_id": "2607.15889",
+  "arxiv_url": "https://arxiv.org/abs/2607.15889v1",
+  "authors": [
+    "Shiva Agrawal",
+    "Savankumar Bhanderi",
+    "Zhiran Yan",
+    "Gordon Elger"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-20#paper-2607-15889",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T12:59:54.635026+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.15889v1",
+  "published_at": "2026-07-17T12:04:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "road",
+      "roadside",
+      "车辆",
+      "交通",
+      "道路",
+      "multi-sensor",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 51
+  },
+  "seen_dates": [
+    "2026-07-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.15889v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "Hardware-triggered Time Synchronization of Roadside Multi-lidar, Multi-camera Measurement System for Accurate Data Alignment",
+  "title_zh": "基于硬件触发的路边多激光雷达、多摄像头测量系统时间同步方法以实现精确数据对齐",
+  "translation_url": "https://hjfy.top/arxiv/2607.15889"
+}

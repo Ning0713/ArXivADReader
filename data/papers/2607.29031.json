@@ -1,0 +1,57 @@
+{
+  "abstract": "Existing autonomous-driving world models typically perform dense prediction of future videos, occupancy states, BEV representations, or agent motion. We argue that planning need not reconstruct the complete future world, but only focus on scene features that affect future ego action. Based on this perspective, we propose Auto-JEPA, an action-oriented latent world model that learns continuous future driving intent through joint-embedding prediction. Given visual observations, egomotion history, and navigation commands, Auto-JEPA predicts an intent embedding aligned with the latent representation of the future ego trajectory. The predicted intent retrieves executable trajectories from a fixed trajectory memory, which are then ranked by a scene-conditioned candidate selection module. Auto-JEPA keeps the visual encoder frozen, requires no explicit perception annotations, and uses no learned trajectory generator. By optimizing only task-specific modules for trajectory representation, intent prediction, and candidate selection, Auto-JEPA achieves 91.3 PDMS on NAVSIM v1 and 89.1 EPDMS on NAVSIM v2. Semantic occlusion experiments show that masking dynamic-agent regions induces an average intent change 2.97x that of equal-area random masking. Moreover, occluding vehicles that affect future driving substantially changes the predicted intent and selected trajectory, whereas both remain essentially unchanged when non-influential vehicles are occluded. These results show that future-intent prediction encourages the model to focus on planning-relevant visual features and supports high-quality planning without dense future-world modeling.",
+  "abstract_zh": "现有的自主驾驶世界模型通常对未来视频、占用状态、鸟瞰视图（BEV）表示或代理运动进行密集预测。我们认为，规划不必重建完整的未来世界，而只需关注影响未来自我行为的场景特征。基于这一观点，我们提出了Auto-JEPA，一种面向行动的潜在世界模型，通过联合嵌入预测学习连续的未来驾驶意图。给定视觉观测、自我运动历史和导航指令，Auto-JEPA预测与未来自我轨迹的潜在表示对齐的意图嵌入。预测的意图从固定轨迹记忆中检索可执行轨迹，然后通过场景条件候选选择模块进行排序。Auto-JEPA保持视觉编码器不变，不需要显式的感知注释，也不使用学习的轨迹生成器。通过仅优化任务特定模块以进行轨迹表示、意图预测和候选选择，Auto-JEPA在NAVSIM v1上达到了91.3的PDMS，在NAVSIM v2上达到了89.1的EPDMS。语义遮挡实验表明，遮挡动态代理区域会导致平均意图变化为等面积随机遮挡的2.97倍。此外，遮挡影响未来驾驶的车辆会显著改变预测的意图和选择的轨迹，而当遮挡无影响的车辆时，两者基本保持不变。这些结果表明，未来意图预测促使模型专注于与规划相关的视觉特征，并支持高质量的规划，而无需密集的未来世界建模。",
+  "arxiv_id": "2607.29031",
+  "arxiv_url": "https://arxiv.org/abs/2607.29031v1",
+  "authors": [
+    "Jiwei Yang",
+    "Zhengxian Chen",
+    "Chaosheng Huang",
+    "Jun Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-03#paper-2607-29031",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:01:18.007442+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.29031v1",
+  "published_at": "2026-07-31T05:10:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "bev",
+      "occupancy",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 60
+  },
+  "seen_dates": [
+    "2026-08-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.29031v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "BEV/Occupancy",
+      "感知"
+    ]
+  },
+  "title": "Auto-JEPA: A Latent World Model of Continuous Intent for End-to-End Autonomous Driving",
+  "title_zh": "Auto-JEPA：一种用于端到端自主驾驶的连续意图潜在世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2607.29031"
+}

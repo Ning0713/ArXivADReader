@@ -1,0 +1,64 @@
+{
+  "abstract": "Modern autonomous vehicles largely operate as isolated agents: they rely on on-board perception and decision modules and broadcast Basic Safety Messages (BSMs) that expose only low-level kinematic state. While existing cooperative driving frameworks enable limited sensor sharing, they rarely communicate high-level maneuver intentions, and edge computing is primarily used for content delivery rather than decision arbitration. As a result, current connected autonomy lacks a principled mechanism for making globally consistent, intent-aware coordination decisions across vehicles. To address this gap, we propose MIND-CAVs, a Multi-Intelligence Negotiation and Decision framework for connected autonomous vehicles (CAVs) based on intent-driven autonomy. Each vehicle abstracts raw sensor observations into structured intent representations, exchanges them over V2X links, and receives globally consistent coordination plans from roadside edge servers. Edge agents combine learned and rule-based arbitration mechanisms to negotiate conflicting intents among vehicles, while a cloud platform records decisions for auditing and continual retraining. We implement MIND-CAVs in a CARLA-based AI-in-the-loop platform and evaluate it in multi-lane highway scenarios involving conflicting maneuvers and route-constrained exits. Experimental results show improved maneuver completion time and reduced unsafe proximity and unnecessary braking compared with isolated autonomy, first-come-first-served arbitration, and multi-agent reinforcement learning baselines.",
+  "abstract_zh": "现代自动驾驶车辆在很大程度上作为孤立的智能体运作：它们依赖于车载感知和决策模块，并广播基本安全消息（Basic Safety Messages, BSMs），这些消息仅暴露低级运动状态。虽然现有的协作驾驶框架允许有限的传感器共享，但它们很少传达高级机动意图，而边缘计算主要用于内容传递而非决策仲裁。因此，当前的连接自主性缺乏一个原则性的机制来在车辆之间做出全球一致、关注意图的协调决策。为了解决这一问题，我们提出了MIND-CAVs，一个基于意图驱动自主性的连接自动驾驶车辆（Connected Autonomous Vehicles, CAVs）多智能体协商与决策框架。每辆车将原始传感器观察抽象为结构化的意图表示，通过车对一切（Vehicle-to-Everything, V2X）链接进行交换，并从路边边缘服务器接收全球一致的协调计划。边缘代理结合学习和基于规则的仲裁机制，协商车辆之间的冲突意图，而云平台则记录决策以便审计和持续再训练。我们在基于CARLA的AI-in-the-loop平台上实现了MIND-CAVs，并在涉及冲突机动和路线受限出口的多车道高速公路场景中进行了评估。实验结果表明，与孤立自主性、先到先服务仲裁和多智能体强化学习基线相比，机动完成时间有所改善，且不安全接近和不必要制动的情况减少。",
+  "arxiv_id": "2607.14688",
+  "arxiv_url": "https://arxiv.org/abs/2607.14688v2",
+  "authors": [
+    "Mainak Mondal",
+    "Yihang Feng",
+    "Yangchao Luo",
+    "Song Han"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-17#paper-2607-14688",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T12:59:47.191369+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.14688v2",
+  "published_at": "2026-07-16T07:46:34Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "vehicle-to-everything",
+      "v2x",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "roadside",
+      "highway",
+      "lane",
+      "驾驶",
+      "车辆",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.14688v2",
+    "axi": "https://paper.axi404.top/daily/2026-07-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "协同/V2X",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "MIND-CAVs: Multi-Intelligence Negotiation and Decision System for CAVs based on Intent-Driven Autonomy",
+  "title_zh": "MIND-CAVs：基于意图驱动自主性的连接自动驾驶车辆的多智能体协商与决策系统",
+  "translation_url": "https://hjfy.top/arxiv/2607.14688"
+}

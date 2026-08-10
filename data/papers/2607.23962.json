@@ -1,0 +1,61 @@
+{
+  "abstract": "Autonomous vehicles (AVs) depend on Global Navigation Satellite Systems (GNSS) for localization and navigation, making them vulnerable to spoofing attacks that can covertly redirect vehicles or induce unsafe maneuvers. In this paper, we develop the first Vision-Language Model (VLM)-based framework for GNSS spoofing detection for autonomous vehicles by fusing front-camera visual data with in-vehicle sensor readings (e.g., speed, acceleration, yaw rate) against GNSS-derived maneuvers. Our approach introduces a three-stage fine-tuning process that first grounds visual cues, and then calibrates sensor data within a shared semantic space to detect discrepancies between predicted and GNSS-derived maneuvers across three attack scenarios. We also generated an independent real-world dataset by driving an instrumented vehicle on public roads in Tuscaloosa, Alabama, equipped with time-synchronized GNSS, IMU, and camera logs to validate cross-regional generalization of our fine-tuned model on unseen data from training data. On this dataset, we then generated intelligent spoofing attacks, including trajectory mirroring with road-network snapping for wrong-turn attacks, position freezing for overshoot scenarios, and drift generation for stop attacks. On this validation dataset, the zero-shot VLMs baseline F1-score ranges from 23% to 32%, whereas our fine-tuned model achieves an F1-score ranging from 94% to 95%. Results show that our VLM-based approach correctly classified every wrong-turn and stop attacks, and attains 88%-93% accuracy for overshoot attacks. Furthermore, we introduce an adaptive inference policy that reduces VLM invocations to 14% (~86% computational reduction) and yields 65ms-73ms per 4s window. These results point to a practical, on-road layer of defense that complements signal-level integrity checks with the use of VLMs.",
+  "abstract_zh": "自主车辆（AVs）依赖全球导航卫星系统（GNSS）进行定位和导航，这使其易受欺骗攻击的影响，这些攻击可以秘密地重定向车辆或引发不安全的操作。在本文中，我们开发了首个基于视觉-语言模型（VLM）的GNSS欺骗检测框架，通过将前置摄像头的视觉数据与车载传感器读数（例如速度、加速度、偏航率）结合，针对GNSS派生的操作进行检测。我们的方法引入了一个三阶段的微调过程，首先将视觉线索与实际情况相结合，然后在共享的语义空间内校准传感器数据，以检测在三种攻击场景下预测的操作与GNSS派生操作之间的差异。我们还通过在阿拉巴马州塔斯卡卢萨的公共道路上驾驶一辆配备了时间同步的GNSS、IMU和摄像头日志的仪器化车辆，生成了一个独立的真实世界数据集，以验证我们微调模型在未见数据上的跨区域泛化能力。在该数据集上，我们生成了智能欺骗攻击，包括通过道路网络快照进行错误转弯攻击的轨迹镜像、用于超速场景的位置冻结，以及用于停车攻击的漂移生成。在该验证数据集上，零-shot VLM基线的F1分数范围为23%到32%，而我们的微调模型则达到了94%到95%的F1分数。结果表明，我们基于VLM的方法正确分类了每一次错误转弯和停车攻击，并在超速攻击中达到了88%-93%的准确率。此外，我们引入了一种自适应推理策略，将VLM调用减少到14%（约86%的计算减少），并在每4秒的窗口内实现了65毫秒到73毫秒的响应时间。这些结果表明，基于VLM的方法为信号级完整性检查提供了一个实用的、路面防御层。",
+  "arxiv_id": "2607.23962",
+  "arxiv_url": "https://arxiv.org/abs/2607.23962v1",
+  "authors": [
+    "Mohammed Aldeen",
+    "Muhammad Sami Irfan",
+    "Sagar Dasgupta",
+    "Long Cheng",
+    "Mizanur Rahman",
+    "Mashrur Chowdhury"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-23962",
+  "categories": [
+    "cs.CV",
+    "cs.CR"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.578993+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.23962v1",
+  "published_at": "2026-07-27T03:20:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 96
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.23962v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "预测/规划"
+    ]
+  },
+  "title": "Development of Vision-Language Model-based GNSS Spoofing Detection for Autonomous Vehicle Navigation",
+  "title_zh": "基于视觉-语言模型的全球导航卫星系统欺骗检测在自主车辆导航中的应用研究",
+  "translation_url": "https://hjfy.top/arxiv/2607.23962"
+}

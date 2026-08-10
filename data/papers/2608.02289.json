@@ -1,0 +1,58 @@
+{
+  "abstract": "Realistic and diverse trajectory generation is central to enabling higher levels of vehicle automation. While rule-based and classical learning-based methods may struggle to capture the complexity of traffic behavior, generative models have already demonstrated in other fields that they can handle a comparable level of complexity. In this paper, we build upon previous work on generative adversarial network (GAN)-based semantic bird's-eye-view traffic generation and extend the proposed framework in several key aspects. We improve the semantic representation, replace the trajectory extraction procedure with a graph-based association method, and systematically investigate increasingly larger fields of view. In addition, we introduce a quantitative evaluation framework to assess hallucinations and object permanence in generated videos. Our experiments demonstrate that the framework generalizes to larger and more complex traffic scenes while maintaining statistically realistic trajectories and coherent spatial relationships between traffic participants. Within 150GPU hours of training and with inference times below 20ms for scenes of up to 20s, our results demonstrate that video-based GANs remain an efficient and scalable approach for realistic trajectory generation, even in substantially larger traffic scenes, making them well suited for downstream tasks such as prediction, planning, and simulation in automated driving.",
+  "abstract_zh": "现实且多样的轨迹生成是实现更高水平车辆自动化的核心。虽然基于规则和经典学习的方法可能难以捕捉交通行为的复杂性，但生成模型在其他领域已经证明能够处理相当复杂的情况。在本文中，我们在基于生成对抗网络（GAN）的语义鸟瞰视图交通生成的先前工作基础上，扩展了所提出的框架的几个关键方面。我们改进了语义表示，使用基于图的关联方法替换了轨迹提取过程，并系统地研究了越来越大的视野。此外，我们引入了一个定量评估框架，以评估生成视频中的幻觉和物体持久性。我们的实验表明，该框架能够推广到更大和更复杂的交通场景，同时保持统计上现实的轨迹和交通参与者之间一致的空间关系。在150个GPU小时的训练和20秒场景推理时间低于20毫秒的情况下，我们的结果表明，基于视频的GAN仍然是实现现实轨迹生成的高效且可扩展的方法，即使在显著更大的交通场景中，也使其非常适合于自动驾驶中的预测、规划和仿真等下游任务。",
+  "arxiv_id": "2608.02289",
+  "arxiv_url": "https://arxiv.org/abs/2608.02289v1",
+  "authors": [
+    "Annajoyce Mariani",
+    "Kira Maag",
+    "Hanno Gottschalk"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-02289",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.162144+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.02289v1",
+  "published_at": "2026-08-03T14:21:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 90
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.02289v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Extended Field of View Analysis for VideoGAN-based Trajectory Generation",
+  "title_zh": "基于VideoGAN的轨迹生成的扩展视野分析",
+  "translation_url": "https://hjfy.top/arxiv/2608.02289"
+}

@@ -1,0 +1,59 @@
+{
+  "abstract": "As autonomous driving systems move toward real-world deployment, interpretable, behavior-level decision-making is essential for safety, trust, and regulation. We introduce CommandLM, a multimodal large language model that generates concise, human-readable behavior descriptions for ego vehicles from fused multi-sensor data. Our model processes temporally fused bird's-eye view representations from LiDAR and multi-camera inputs via a Q-Former adapter connected to a quantized, LoRA-fine-tuned large language model. Trained on our CommandLM-nuScenes dataset, CommandLM produces intent-aware, interpretable captions suitable for planner supervision and safety auditing. Experiments demonstrate strong linguistic and behavioral alignment, achieving CIDEr 0.67, and BERT-F1 0.88, substantially outperforming the BLIP-2 baseline (CIDEr 0.52, BERT-F1 0.86). In human evaluation, 58% of the generated descriptions were rated accurate, efficient and rule-compliant, confirming their real-world plausibility. While the remaining descriptions may not always select the most efficient, goal-oriented behavior, CommandLM's interpretable outputs enable downstream validation systems to identify and correct such cases, making it an effective tool for transparent behavior auditing. These results show that integrating multimodal fusion with language reasoning yields efficient and transparent behavior-level understanding for autonomous driving. We release our code and dataset at: https://github.com/b-tok/CommandLM",
+  "abstract_zh": "随着自动驾驶系统向现实世界部署的推进，可解释的行为级决策对于安全、信任和监管至关重要。我们提出了CommandLM，这是一种多模态大型语言模型，能够从融合的多传感器数据中生成简洁、易于理解的自我车辆行为描述。我们的模型通过一个Q-Former适配器处理来自LiDAR和多摄像头输入的时间融合鸟瞰图表示，该适配器连接到量化的、经过LoRA微调的大型语言模型。CommandLM在我们的CommandLM-nuScenes数据集上进行训练，能够生成意图感知的、可解释的描述，适用于规划者监督和安全审计。实验结果表明，CommandLM在语言和行为上具有强一致性，CIDEr得分为0.67，BERT-F1得分为0.88，显著优于BLIP-2基线（CIDEr 0.52，BERT-F1 0.86）。在人类评估中，58%的生成描述被评为准确、高效且符合规则，确认了其在现实世界中的合理性。虽然剩余的描述可能并不总是选择最有效、以目标为导向的行为，但CommandLM的可解释输出使下游验证系统能够识别并纠正此类情况，从而成为透明行为审计的有效工具。这些结果表明，将多模态融合与语言推理相结合，可以为自动驾驶提供高效且透明的行为级理解。我们将在以下网址发布我们的代码和数据集：https://github.com/b-tok/CommandLM",
+  "arxiv_id": "2607.22078",
+  "arxiv_url": "https://arxiv.org/abs/2607.22078v1",
+  "authors": [
+    "Boris Tokic",
+    "Constantin Selzer",
+    "Fabian B. Flohr"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-27#paper-2607-22078",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:35.538728+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.22078v1",
+  "published_at": "2026-07-24T08:23:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "bird's-eye",
+      "multi-sensor",
+      "multimodal fusion",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.22078v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "CommandLM: Data driven behavior level descriptor for ego vehicles",
+  "title_zh": "CommandLM：基于数据驱动的自我车辆行为级描述符",
+  "translation_url": "https://hjfy.top/arxiv/2607.22078"
+}

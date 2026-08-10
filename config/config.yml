@@ -1,0 +1,29 @@
+site:
+  title: "AutoDrive Papers"
+  subtitle: "Daily Autonomous Driving Research Digest"
+  domain: "adpaper.ning0713.top"
+  base_path: "/"
+  output_dir: "site"
+
+sources:
+  axi_base_url: "https://paper.axi404.top"
+  arxiv_api_url: "https://export.arxiv.org/api/query"
+  timeout_seconds: 45
+  retries: 3
+  user_agent: "ArXivADReader/0.1 (+https://github.com/Ning0713/ArXivADReader)"
+
+filtering:
+  plugin: "plugins.autonomous_driving:plugin"
+  llm_review_min_score: 10
+
+llm:
+  enabled: true
+  base_url: "https://api.openai.com/v1"
+  model: "gpt-4o-mini"
+  timeout_seconds: 60
+
+paths:
+  data_dir: "data"
+  templates_dir: "templates"
+  static_dir: "static"
+

@@ -1,0 +1,60 @@
+{
+  "abstract": "Methods for discovering rare failures in autonomous systems have so far been demonstrated almost exclusively in simulations with simple, academic driving stacks, leaving open whether they generalize to the more robust planners used in commercial systems. We address this gap by applying two rare-event discovery algorithms to a commercial autonomous trucking stack. Adaptive stress testing (AST) uses reinforcement learning to search for the most likely noise trajectories leading to a simulated collision, while diffusion-based failure sampling (DiFS) trains a denoising diffusion model to sample a diverse set of failures. We show that both algorithms find simulated collisions during merge and cut-in maneuvers where traditional Monte Carlo simulation does not. To make these failures actionable, we introduce a statistical analysis based on principal component analysis (PCA) that classifies failures into common modes and identifies the timesteps that most influence the outcome. We cluster the principal components and invert the PCA transform to recover generalized noise trajectories, and show that these trajectories reproduce failures in identical and similar scenarios. This provides a path from failure discovery to systematic diagnosis of perception-level flaws.",
+  "abstract_zh": "迄今为止，发现自主系统中稀有故障的方法几乎仅在具有简单学术驾驶堆栈的模拟中得到验证，这使得其是否能够推广到商业系统中使用的更为稳健的规划器仍然不确定。我们通过将两种稀有事件发现算法应用于商业自动驾驶卡车堆栈来填补这一空白。自适应压力测试（Adaptive Stress Testing, AST）利用强化学习搜索导致模拟碰撞的最可能噪声轨迹，而基于扩散的故障采样（Diffusion-based Failure Sampling, DiFS）则训练去噪扩散模型以采样多样化的故障集。我们展示了这两种算法能够在合并和切入操作中发现模拟碰撞，而传统的蒙特卡洛模拟则无法做到。为了使这些故障具有可操作性，我们引入了一种基于主成分分析（Principal Component Analysis, PCA）的统计分析方法，将故障分类为常见模式，并识别出对结果影响最大的时间步。我们对主成分进行聚类，并反转PCA变换以恢复广义噪声轨迹，结果表明这些轨迹能够在相同和相似场景中重现故障。这为从故障发现到系统性诊断感知层面缺陷提供了一条路径。",
+  "arxiv_id": "2607.18106",
+  "arxiv_url": "https://arxiv.org/abs/2607.18106v1",
+  "authors": [
+    "Hailey Warner",
+    "Duncan Eddy",
+    "Shreya Parjan",
+    "Caroline Cahilly",
+    "Harrison Delecki",
+    "Matthias Kleinstauber",
+    "Chaitanya Shinde",
+    "Jerry Lopez",
+    "Mykel J. Kochenderfer"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-18106",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.350704+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.18106v1",
+  "published_at": "2026-07-20T16:07:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "diagnosis",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.18106v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Importance Sampling and PCA for Finding Failures in Commercial Autonomous Vehicles",
+  "title_zh": "重要性采样与主成分分析在商业自动驾驶车辆故障发现中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2607.18106"
+}

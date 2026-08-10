@@ -1,0 +1,57 @@
+{
+  "abstract": "We propose a language representation for multimodal data in which any observation, whether image, video, or text, is expressed as a bag of atomic propositions, simple statements about the entities, actions, and relations in a scene. A global semantic codebook unifies these into a shared vocabulary of canonical atomic propositions, placing every modality and observation into one interpretable space that spans fine grained facts to high level concepts and composes into richer ones. This brings interpretability with reasoning, cross-modal understanding and retrieval, and compositionality that enables complex multimodal understanding, rich data curation and complex structured retrieval. We demonstrate the framework on autonomous driving and open-world data.",
+  "abstract_zh": "我们提出了一种多模态数据的语言表示，其中任何观察，无论是图像、视频还是文本，都被表达为一组原子命题，即关于场景中实体、动作和关系的简单陈述。一个全局语义词典将这些命题统一为一个共享的标准原子命题词汇，将每种模态和观察置于一个可解释的空间中，涵盖从细粒度事实到高级概念，并组合成更丰富的内容。这带来了可解释性与推理、跨模态理解与检索，以及组合性，从而实现复杂的多模态理解、丰富的数据整理和复杂的结构化检索。我们在自动驾驶和开放世界数据上展示了该框架的应用。",
+  "arxiv_id": "2607.16560",
+  "arxiv_url": "https://arxiv.org/abs/2607.16560v1",
+  "authors": [
+    "Nadine Chang",
+    "Maying Shen",
+    "Shizhe Diao",
+    "Jialiang Wang",
+    "Jingde Chen",
+    "Thomas Breuel",
+    "Pavlo Molchanov",
+    "Rafid Mahmood",
+    "Jose M. Alvarez"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-16560",
+  "categories": [
+    "cs.AI",
+    "cs.CV",
+    "cs.LG",
+    "cs.MM"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.503571+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.16560v1",
+  "published_at": "2026-07-18T00:08:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.16560v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "From Modalities to Propositions: A Language-Centric Framework for Multimodal Intelligence",
+  "title_zh": "从模态到命题：一种以语言为中心的多模态智能框架",
+  "translation_url": "https://hjfy.top/arxiv/2607.16560"
+}

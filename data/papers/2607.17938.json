@@ -1,0 +1,49 @@
+{
+  "abstract": "Classical image correspondence is solved at the level of sparse keypoints or dense pixels, but the systems that consume these matches - object-level mapping, topological navigation, scene-graph maintenance - reason about whole objects. Recent work narrows this gap by matchng directly at the level of instance segments: a class-agnostic segmenter partitions each image, and per-segment descriptors are obtained by pooling features from large 3D foundation models over the masks. We build on this segment-level matching paradigm and propose three learned matching heads: a LightGlue-style attention head with DoubleSoftmax scoring on frozen MASt3R descriptors; a DPT-style multi-scale fusion module that exposes layered spatial detail from the VGGT foundation model before pooling; and - as our main contribution - a multi-view extension that performs joint self-attention over segments drawn from several views at once, recovering transitive correspondences that strictly pairwise matchers cannot reach. Under a stratified zero-shot protocol on Replica and Virtual KITTI 2 with controlled viewpoint baselines from 0 deg to 180 deg, the LightGlue-style head improves over a parameter-free Sinkhorn matcher on the same MASt3R backbone by +4.85 AUPRC on Replica and +25.9 AUPRC on Virtual KITTI 2. Dropped into the RoboHop topological navigation pipeline on the Habitat-Matterport 3D (HM3D) Instance Image Navigation benchmark without retraining, our multi-view variant raises success rate from 50% to 70%, and our LightGlue-style head raises SPL from 45.7 to 59.1.",
+  "abstract_zh": "经典的图像对应问题通常在稀疏关键点或密集像素的层面上解决，但使用这些匹配结果的系统——如对象级映射、拓扑导航和场景图维护——则是基于整体对象进行推理。近期的研究通过直接在实例分段层面进行匹配来缩小这一差距：一种与类别无关的分段器对每幅图像进行分割，并通过对大规模3D基础模型在掩膜上的特征进行池化来获得每个分段的描述符。我们在这一分段级匹配范式的基础上提出了三个学习的匹配头：一个基于LightGlue风格的注意力头，采用在冻结的MASt3R描述符上进行DoubleSoftmax评分；一个DPT风格的多尺度融合模块，在池化之前从VGGT基础模型中暴露分层空间细节；以及作为我们的主要贡献，一个多视角扩展，能够对来自多个视角的分段进行联合自注意力，从而恢复严格的成对匹配器无法达到的传递对应。在Replica和Virtual KITTI 2的分层零样本协议下，控制视点基线从0度到180度，LightGlue风格的头在相同的MASt3R骨干网络上相较于无参数的Sinkhorn匹配器在Replica上提高了+4.85 AUPRC，在Virtual KITTI 2上提高了+25.9 AUPRC。我们的多视角变体在Habitat-Matterport 3D (HM3D)实例图像导航基准测试中，未经过重新训练直接应用于RoboHop拓扑导航管道，成功率从50%提高至70%，而我们的LightGlue风格头则将SPL从45.7提高至59.1。",
+  "arxiv_id": "2607.17938",
+  "arxiv_url": "https://arxiv.org/abs/2607.17938v1",
+  "authors": [
+    "Denis Fatykhoph",
+    "Timur Akhtyamov",
+    "Konstantin Pakulev",
+    "German Devchich",
+    "Gonzalo Ferrer"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-17938",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.467160+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.17938v1",
+  "published_at": "2026-07-20T13:35:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.17938v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "MuViSeg: Multi-View Segment Correspondences from Dense Geometry Priors",
+  "title_zh": "MuViSeg：基于密集几何先验的多视角分段对应",
+  "translation_url": "https://hjfy.top/arxiv/2607.17938"
+}

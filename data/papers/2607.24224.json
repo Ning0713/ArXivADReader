@@ -1,0 +1,60 @@
+{
+  "abstract": "Multi-modality data from different sensors provides rich complementary information for 3D perception, becoming an essential component in reliable autonomous driving systems. Current research typically designs intricate and complex fusion strategies to integrate information from multimodal data on a unified bird's-eye-view (BEV) feature map for the joint learning of multiple perception tasks. However, such a single feature map hardly carries sufficient information to simultaneously meet the requirements of various perception tasks, leading to a very limited perception performance. To mitigate this limitation, this paper proposes MATS, a novel multi-modality multi-task learning approach with modality-adaptive BEV fusion and task-specific Mixture-of-Experts (MoE) for 3D perception. Specifically, a simple modality-adaptive BEV fusion module is designed to adaptively recalibrate the BEV features by modeling the global cross-modality dependencies, generating diverse BEV feature maps for various perception tasks. For joint multi-task learning, this paper proposes a task-specific MoE module to decouple the tasks and enable the network to automatically choose the appropriate BEV feature candidates for each specific task. To validate the effectiveness of the proposed approach, we conduct extensive experiments on the large-scale benchmark nuScenes. With the camera- and LiDAR-modality input data, the proposed approach outperforms the state-of-the-art (SOTA) by a significant margin. Furthermore, the experimental results on the single tasks show that the proposed approach significantly outperforms the baselines. The code and trained models will be available upon publication.",
+  "abstract_zh": "来自不同传感器的多模态数据提供了丰富的互补信息，对于3D感知而言，成为可靠自动驾驶系统的一个重要组成部分。目前的研究通常设计复杂的融合策略，将多模态数据的信息整合到统一的鸟瞰图（BEV）特征图上，以便共同学习多个感知任务。然而，这样的单一特征图往往难以同时满足各种感知任务的需求，导致感知性能非常有限。为了解决这一限制，本文提出了MATS，一种具有模态自适应BEV融合和任务特定专家混合（Mixture-of-Experts, MoE）的新型多模态多任务学习方法，旨在实现3D感知。具体而言，设计了一个简单的模态自适应BEV融合模块，通过建模全局跨模态依赖关系，自适应地重新校准BEV特征，为各种感知任务生成多样化的BEV特征图。为了实现联合多任务学习，本文提出了一个任务特定的MoE模块，以解耦任务并使网络能够自动选择每个特定任务的适当BEV特征候选。为了验证所提方法的有效性，我们在大规模基准nuScenes上进行了广泛的实验。使用相机和激光雷达模态输入数据，所提方法在性能上显著超越了现有的最先进技术（SOTA）。此外，单任务的实验结果表明，所提方法显著优于基线。代码和训练模型将在发表时提供。",
+  "arxiv_id": "2607.24224",
+  "arxiv_url": "https://arxiv.org/abs/2607.24224v1",
+  "authors": [
+    "Junchen Huo",
+    "Wanming Hao",
+    "Song Wang",
+    "Enqing Chen",
+    "Shouyi Yang",
+    "Guanghui Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-24224",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.596531+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.24224v1",
+  "published_at": "2026-07-27T09:57:56Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.24224v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "MATS: A novel multi-modality multi-task learning framework for 3D perception in autonomous driving",
+  "title_zh": "MATS：一种用于自动驾驶3D感知的新型多模态多任务学习框架",
+  "translation_url": "https://hjfy.top/arxiv/2607.24224"
+}

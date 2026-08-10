@@ -1,0 +1,101 @@
+name: Update And Deploy Papers
+
+on:
+  schedule:
+    - cron: "30 13 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Target date (YYYY-MM-DD or today)"
+        required: false
+        default: "today"
+        type: string
+      force:
+        description: "Refetch an existing date"
+        required: false
+        default: false
+        type: boolean
+      dry_run:
+        description: "Fetch and classify without committing or deploying"
+        required: false
+        default: false
+        type: boolean
+      allow_arxiv_discovery:
+        description: "Explicitly allow arXiv-only candidate fallback"
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: adpaper-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -e ".[dev]"
+      - name: Update and classify
+        env:
+          TARGET_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.date || 'today' }}
+          FORCE_UPDATE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || 'false' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
+          ARXIV_FALLBACK: ${{ github.event_name == 'workflow_dispatch' && inputs.allow_arxiv_discovery || 'false' }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: |
+          args=(--date "$TARGET_DATE")
+          if [[ "$FORCE_UPDATE" == "true" ]]; then args+=(--force); fi
+          if [[ "$ARXIV_FALLBACK" == "true" ]]; then args+=(--allow-arxiv-discovery); fi
+          if [[ "$DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
+          python -m adpaper update "${args[@]}"
+      - name: Stop after preview
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: echo "Preview completed; no commit or deployment requested."
+      - name: Validate and build
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        run: |
+          python -m adpaper validate
+          python -m adpaper build
+      - name: Commit generated data
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore(data): update papers"
+            git push origin HEAD:main
+          fi
+      - name: Configure Pages
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artifact
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy Pages
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        id: deployment
+        uses: actions/deploy-pages@v4
+

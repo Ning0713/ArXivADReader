@@ -1,0 +1,56 @@
+{
+  "abstract": "End-to-end autonomous driving systems commonly follow a cascaded two-stage pipeline where a perception stage compresses multi-modal sensor inputs into a compact context and a downstream planner predicts trajectories conditioned on this context. We argue that this one-way perception-to-planning interface forces sensor inputs into a compact representation, losing the fine-grained details critical for planning. Moreover, by constraining the planner to this compressed context, it is difficult to leverage the rich representations offered by modern vision foundation models. To address these issues, we propose MOJITO, a unified sensor-to-action framework for end-to-end autonomous driving built on modal joint learning. MOJITO removes the cascaded interface and instead performs block-wise Modal Joint Attention that simultaneously updates action, image, and LiDAR features, allowing the planner to directly access multi-modal features during action generation. MOJITO achieves 88.9 PDMS on the NAVSIM v1 dataset and 88.4 EPDMS on the more challenging NAVSIM v2 dataset, setting a new state-of-the-art. Extensive experiments further demonstrate strong scalability, instruction following, and diverse trajectory generation. Code and models are available at https://github.com/mumucc01/MOJITO.",
+  "abstract_zh": "端到端自主驾驶系统通常遵循级联的两阶段流程，其中感知阶段将多模态传感器输入压缩为紧凑的上下文，而下游规划器则基于该上下文预测轨迹。我们认为，这种单向的感知到规划接口迫使传感器输入转化为紧凑的表示，导致规划所需的细粒度细节丢失。此外，限制规划器使用这种压缩上下文，使得难以利用现代视觉基础模型提供的丰富表示。为了解决这些问题，我们提出了MOJITO，一种基于模态联合学习的端到端自主驾驶统一传感器到动作框架。MOJITO去除了级联接口，而是执行块级模态联合注意力，同时更新动作、图像和激光雷达特征，使规划器在动作生成过程中能够直接访问多模态特征。MOJITO在NAVSIM v1数据集上达到了88.9的PDMS，在更具挑战性的NAVSIM v2数据集上达到了88.4的EPDMS，创造了新的最先进水平。大量实验进一步证明了其强大的可扩展性、指令跟随能力和多样化轨迹生成。代码和模型可在https://github.com/mumucc01/MOJITO获取。",
+  "arxiv_id": "2607.23511",
+  "arxiv_url": "https://arxiv.org/abs/2607.23511v1",
+  "authors": [
+    "Zhijing Cheng",
+    "Xuancheng Zhang",
+    "Donglin Di",
+    "Lei Fan",
+    "Baorui Ma",
+    "Hao Li",
+    "Xun Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-23511",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.552934+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.23511v1",
+  "published_at": "2026-07-26T07:20:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.23511v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "MOJITO: Modal Joint Learning for Unified End-to-End Autonomous Driving",
+  "title_zh": "MOJITO：统一端到端自主驾驶的模态联合学习",
+  "translation_url": "https://hjfy.top/arxiv/2607.23511"
+}

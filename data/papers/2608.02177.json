@@ -1,0 +1,53 @@
+{
+  "abstract": "Existing rainfall simulation methods for autonomous driving remain limited in physical controllability and multi-view consistency. This paper presents GSRAIN, a high-/low-frequency rainfall synthesis method for 3D Gaussian Splatting (3DGS) driving scenes. GSRAIN constructs a high-frequency raindrop model from measured rainfall data and generates low-frequency rainy appearance using a geometry-aware single-step diffusion model. The two effects are then fused in a unified 3DGS scene, enabling rainfall-intensity control over the range of 0--13~mm/h. The proposed method achieves a Fr\\'{e}chet Inception Distance (FID) of 149.09, outperforming CycleGAN-Turbo (155.71) and WeatherEdit (157.94). Object-detection and closed-loop driving experiments further show that the generated scenes expose scene-dependent performance changes of the evaluated algorithms under controllable rainfall. These results indicate that GSRAIN provides an effective approach for constructing physically controllable, repeatable, and closed-loop-compatible rainy-weather test scenes for autonomous driving.",
+  "abstract_zh": "现有的自主驾驶降雨模拟方法在物理可控性和多视角一致性方面仍然有限。本文提出了GSRAIN，一种用于3D高斯点云（3DGS）驾驶场景的高/低频降雨合成方法。GSRAIN从测量的降雨数据中构建高频雨滴模型，并使用几何感知的单步扩散模型生成低频雨天外观。然后将这两种效果融合在统一的3DGS场景中，实现了对降雨强度在0--13 mm/h范围内的控制。所提出的方法达到了149.09的Fréchet Inception Distance (FID)，优于CycleGAN-Turbo（155.71）和WeatherEdit（157.94）。物体检测和闭环驾驶实验进一步表明，生成的场景在可控降雨下暴露了评估算法的场景依赖性性能变化。这些结果表明，GSRAIN为构建物理可控、可重复且兼容闭环的雨天测试场景提供了一种有效的方法，适用于自主驾驶。",
+  "arxiv_id": "2608.02177",
+  "arxiv_url": "https://arxiv.org/abs/2608.02177v1",
+  "authors": [
+    "Fanyu Wang",
+    "Longgao Zhang",
+    "Junyi Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-02177",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.150862+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.02177v1",
+  "published_at": "2026-08-03T12:57:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 51
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.02177v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "世界模型/生成"
+    ]
+  },
+  "title": "GSRAIN: Physically Calibrated High-/Low-Frequency Rainfall Synthesis for 3D Gaussian Driving Scenes",
+  "title_zh": "GSRAIN：物理校准的高/低频降雨合成用于3D高斯驱动场景",
+  "translation_url": "https://hjfy.top/arxiv/2608.02177"
+}

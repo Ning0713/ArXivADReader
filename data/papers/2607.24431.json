@@ -1,0 +1,58 @@
+{
+  "abstract": "Camera-only 4D occupancy forecasting enables autonomous vehicles to predict future 3D semantic scenes solely from historical multi-view images, which is critical for driving safety. Even though current methods have achieved good performance, the strong spatial-temporal modeling between the input multi-view frames is still underexplored, which limits the performance of those methods in future 4D forecasting. To address this gap, we introduce a novel framework, InterOCF, for 4D occupancy forecasting that jointly models temporal dynamics in both 3D voxel-based representations and multi-view segmentation sequences, while explicitly incorporating feature interaction between the 2D and 3D branches. Our framework incorporates three core components: 1) A 3D Spatio-Temporal (3DST) module that learns volumetric dynamics from historical voxel states to predict future voxel states; 2) A 2D Spatio-Temporal (2DST) module employing an auxiliary multi-view temporal segmentation forecasting task to enhance temporal semantic dynamics; 3) A Spatio-Temporal Interaction Modeling (STIM) module that enables feature interaction between 2D and 3D representations. Experiments on the nuScenes, Lyft-Level5, and nuScenes-Occupancy datasets show that InterOCF consistently outperforms existing baseline approaches.",
+  "abstract_zh": "仅依靠摄像头的4D占用预测使得自动驾驶车辆能够仅通过历史多视角图像预测未来的3D语义场景，这对驾驶安全至关重要。尽管当前的方法已取得良好性能，但输入多视角帧之间的强时空建模仍然未得到充分探索，这限制了这些方法在未来4D预测中的表现。为了解决这一问题，我们提出了一种新颖的框架InterOCF，用于4D占用预测，该框架联合建模3D体素表示和多视角分割序列中的时间动态，同时明确地结合2D和3D分支之间的特征交互。我们的框架包含三个核心组件：1）一个3D时空（3DST）模块，从历史体素状态中学习体积动态，以预测未来的体素状态；2）一个2D时空（2DST）模块，采用辅助的多视角时间分割预测任务来增强时间语义动态；3）一个时空交互建模（STIM）模块，使得2D和3D表示之间的特征交互成为可能。在nuScenes、Lyft-Level5和nuScenes-Occupancy数据集上的实验表明，InterOCF始终优于现有的基线方法。",
+  "arxiv_id": "2607.24431",
+  "arxiv_url": "https://arxiv.org/abs/2607.24431v1",
+  "authors": [
+    "Qi Zhang",
+    "Xinquan Yu",
+    "Kaiyi Zhang",
+    "Hui Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-24431",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.606017+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.24431v1",
+  "published_at": "2026-07-27T13:43:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.24431v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "仿真/数据"
+    ]
+  },
+  "title": "InterOCF: Spatio-Temporal 2D-3D Interaction for Camera-Only 4D Occupancy Forecasting",
+  "title_zh": "InterOCF：用于仅依靠摄像头的4D占用预测的时空2D-3D交互",
+  "translation_url": "https://hjfy.top/arxiv/2607.24431"
+}

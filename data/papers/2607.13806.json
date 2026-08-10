@@ -1,0 +1,68 @@
+{
+  "abstract": "European safety regulation now permits a large share of automated-driving homologation evidence to be produced virtually, provided a validated physical-virtual facility generates it. We present a deployed hybrid Vehicle-in-the-Loop (ViL) platform that couples a real instrumented vehicle with a CARLA-based digital twin (DT) through a V2X message pipeline, and we report its first integrated operation on a public-road-representative test track. A real vehicle streams ETSI-compliant CAM/CPM messages into the DT, where a GPU-accelerated Cooperative Perception (CP) module fuses them into a probabilistic occupancy grid during scenario runtime. We demonstrate the platform on a multi-vehicle double T-intersection scenario, characterise the CP workload across nominal, rain and night conditions and five localization-noise levels, and discuss the platform's current architectural limits and the engineering targets they define. The results show that CP substantially widens field-of-view (FoV) coverage and improves occupied-cell recall, and that beyond a moderate localization-noise threshold, positioning uncertainty, and not weather, becomes the dominant error source. We outline the platform's trajectory toward a Mediterranean operational design domain (ODD) testing service.",
+  "abstract_zh": "欧洲安全法规现在允许通过经过验证的物理-虚拟设施在虚拟环境中生成大量自动驾驶认证证据。我们提出了一种部署的混合车辆环路（Vehicle-in-the-Loop, ViL）平台，该平台通过V2X消息管道将一辆真实的仪器化车辆与基于CARLA的数字双胞胎（Digital Twin, DT）相结合，并报告其在公共道路代表性测试轨道上的首次集成操作。一辆真实车辆将符合ETSI标准的CAM/CPM消息流入DT，在场景运行期间，GPU加速的协同感知（Cooperative Perception, CP）模块将这些消息融合为概率占用网格。我们在一个多车辆双T型交叉口场景中演示了该平台，表征了在正常、雨天和夜间条件下以及五种定位噪声水平下的CP工作负载，并讨论了平台当前的架构限制及其定义的工程目标。结果表明，CP显著扩大了视场（Field-of-View, FoV）覆盖范围，并提高了占用单元的召回率，并且在超过适度的定位噪声阈值后，定位不确定性而非天气成为主要误差来源。我们概述了该平台朝向地中海操作设计域（Operational Design Domain, ODD）测试服务的轨迹。",
+  "arxiv_id": "2607.13806",
+  "arxiv_url": "https://arxiv.org/abs/2607.13806v1",
+  "authors": [
+    "Anastasia Bolovinou",
+    "Giorgos Hadjipavlis",
+    "Markos Antonopoulos",
+    "Panagiotis Tachtalis",
+    "Konstantinos Petousakis",
+    "Konstantinos Lazaridis",
+    "Alexandros Siskos",
+    "Bill Roungas",
+    "Angelos Amditis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-16#paper-2607-13806",
+  "categories": [
+    "cs.RO",
+    "cs.MA"
+  ],
+  "fetched_at": "2026-08-10T12:58:49.747717+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.13806v1",
+  "published_at": "2026-07-15T13:11:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "自动驾驶",
+      "carla",
+      "driving",
+      "vehicle",
+      "road",
+      "intersection",
+      "驾驶",
+      "车辆",
+      "道路",
+      "occupancy",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.13806v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "协同/V2X",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "A Deployed Hybrid Vehicle-in-the-Loop Platform for Validating Cooperative Perception",
+  "title_zh": "一种部署的混合车辆环路平台用于验证协同感知",
+  "translation_url": "https://hjfy.top/arxiv/2607.13806"
+}

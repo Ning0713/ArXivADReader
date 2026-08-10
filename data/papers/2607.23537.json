@@ -1,0 +1,57 @@
+{
+  "abstract": "Autonomous driving under adverse weather remains a critical challenge, yet existing vision-language benchmarks mainly evaluate under standard conditions, synthetic corruptions, or single modality. As a result, it remains unclear how vision-language models behave under real-world adverse weather with multi-modal inputs. We argue that a key difficulty lies in degraded environmental observability: under fog, rain, snow, and low illumination, multi-modal observations become unreliable and cross-modally inconsistent, posing challenges to scene understanding, and subsequent decision-making. To study this, we introduce \\textbf{ObsDriveBench}, a real-world multi-modal benchmark for adverse-weather autonomous driving. Our benchmark is designed with three capability dimensions: \\textbf{observability awareness}, \\textbf{spatial reliability}, and \\textbf{risk-aware decision-making}, enabling fine-grained diagnosis of model behavior under degraded observations. We construct the benchmark through observability meta-annotation, scene description, and capability oriented multiple-choice tasks over synchronized camera, LiDAR, and radar inputs, forming a benchmark with over 14k training and 13k test questions. Experiments reveal consistent performance degradation of existing vision-language models. We further introduce \\textbf{ObsDrive} model with normal-weather supervised fine-tuning and adverse-weather reinforcement learning, improving robustness across all three capabilities. The dataset and evaluation code will be released at \\href{https://github.com/russellyq/ObsDriveBench}{\\texttt{ObsDriveBench}}.",
+  "abstract_zh": "在不利天气条件下的自主驾驶仍然是一个关键挑战，但现有的视觉-语言基准主要在标准条件、合成干扰或单一模态下进行评估。因此，尚不清楚视觉-语言模型在真实世界的不利天气条件下如何表现，尤其是在多模态输入的情况下。我们认为一个关键困难在于环境可观测性的下降：在雾、雨、雪和低光照条件下，多模态观测变得不可靠且跨模态不一致，这对场景理解和后续决策造成了挑战。为此，我们引入了 extbf{ObsDriveBench}，这是一个针对不利天气条件下自主驾驶的真实世界多模态基准。我们的基准设计了三个能力维度： extbf{可观测性意识}、 extbf{空间可靠性}和 extbf{风险感知决策}，以便对模型在降级观测下的行为进行细致诊断。我们通过可观测性元注释、场景描述和基于能力的多项选择任务构建了该基准，涵盖同步的摄像头、激光雷达（LiDAR）和雷达输入，形成一个包含超过14,000个训练问题和13,000个测试问题的基准。实验结果显示现有视觉-语言模型的性能一致下降。我们进一步引入了 extbf{ObsDrive}模型，通过正常天气的监督微调和不利天气的强化学习，提高了三个能力维度的鲁棒性。数据集和评估代码将发布在 exttt{ObsDriveBench}上。",
+  "arxiv_id": "2607.23537",
+  "arxiv_url": "https://arxiv.org/abs/2607.23537v1",
+  "authors": [
+    "Qiao Yan",
+    "Yihan Wang",
+    "Zhenghao Xing",
+    "Jiaqi Xu",
+    "Pheng-Ann Heng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-23537",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.700150+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.23537v1",
+  "published_at": "2026-07-26T08:13:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "radar",
+      "diagnosis",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 51
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.23537v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "LiDAR/点云",
+      "感知"
+    ]
+  },
+  "title": "ObsDriveBench: Benchmarking Multimodal Understanding under Adverse Weather with Observability Awareness",
+  "title_zh": "ObsDriveBench：在不利天气条件下基于可观测性的多模态理解基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2607.23537"
+}

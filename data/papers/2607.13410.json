@@ -1,0 +1,62 @@
+{
+  "abstract": "World model (WM)-based reinforcement learning enables sample-efficient end-to-end autonomous driving learning by imagining long-horizon trajectories in latent space. However, most driving WMs operate on bird's-eye-view (BEV) representations that are inherently egocentric: the transition between consecutive frames entangles the ego vehicle's own motion with scene dynamics. As a result, the WM devotes significant capacity to recovering ego-motion from warped observations, at the cost of scene modeling fidelity and imagination accuracy. This work proposes DynaDreamer, a dynamics-augmented Dreamer-style reinforcement learning method to address this problem by augmenting the WM with an explicit ego-dynamics prior. A physics-informed ego-dynamics encoder-decoder extracts the ego-state history into a compact and identifiable context, which modulates a causal Transformer WM to condition both its prior and posterior latents. During imagination, the ego-dynamics predictor propagates this context forward to keep the ego-dynamics prior synchronized with the rollout. An information-theoretic analysis shows that conditioning on this context reduces both the predictive entropy of the observation transition and the prior--posterior Kullback--Leibler divergence, confining the WM's modeling burden to the scene dynamics beyond ego-motion. An additional benefit is zero-shot cross-chassis adaptation: the ego-dynamics context depends on identifiable chassis parameters, so that a vehicle with previously unseen dynamic characteristics can adapt the WM to the new chassis without retraining. Experiments demonstrate that DynaDreamer improves task success rates over the strongest baseline by 28% and 61% in urban and highway driving scenarios, respectively, with the advantage rising to 73% when extrapolating to unseen chassis.",
+  "abstract_zh": "基于世界模型（WM）的强化学习通过在潜在空间中想象长时间轨迹，实现了样本高效的端到端自主驾驶学习。然而，大多数驾驶WM操作于鸟瞰图（BEV）表示，这种表示本质上是自我中心的：连续帧之间的过渡将自我车辆的运动与场景动态纠缠在一起。因此，WM在从扭曲的观测中恢复自我运动方面投入了大量能力，牺牲了场景建模的保真度和想象的准确性。本研究提出了DynaDreamer，一种增强动态的Dreamer风格强化学习方法，通过用显式的自我动态先验增强WM来解决这一问题。一个物理信息驱动的自我动态编码器-解码器将自我状态历史提取为紧凑且可识别的上下文，调节因果Transformer WM以条件其先验和后验潜变量。在想象过程中，自我动态预测器向前传播该上下文，以保持自我动态先验与展开同步。信息论分析表明，基于该上下文的条件减少了观测过渡的预测熵和先验-后验Kullback-Leibler散度，将WM的建模负担限制在超出自我运动的场景动态上。另一个好处是零样本跨底盘适应：自我动态上下文依赖于可识别的底盘参数，因此具有先前未见动态特征的车辆可以在不重新训练的情况下将WM适应于新底盘。实验表明，DynaDreamer在城市和高速公路驾驶场景中，任务成功率分别比最强基线提高了28%和61%，当推广到未见底盘时，优势上升至73%。",
+  "arxiv_id": "2607.13410",
+  "arxiv_url": "https://arxiv.org/abs/2607.13410v1",
+  "authors": [
+    "Zhidong Wang",
+    "Jingsong Liang",
+    "Zirui Li",
+    "Zhan Chen",
+    "Han Yu",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-16#paper-2607-13410",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T12:58:49.730930+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.13410v1",
+  "published_at": "2026-07-15T03:20:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego vehicle",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "highway",
+      "驾驶",
+      "车辆",
+      "bev",
+      "bird's-eye",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 98
+  },
+  "seen_dates": [
+    "2026-07-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.13410v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "端到端驾驶",
+      "预测/规划"
+    ]
+  },
+  "title": "Ego-Dynamics-Augmented World Model for Autonomous Driving with Zero-Shot Cross-Chassis Adaptation",
+  "title_zh": "增强自我动态的世界模型用于零样本跨底盘适应的自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2607.13410"
+}

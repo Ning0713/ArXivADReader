@@ -1,0 +1,66 @@
+{
+  "abstract": "Reliable roadside perception of vulnerable road users (VRUs) remains challenging under occlusions, variable lighting, and diverse weather conditions, particularly under strict edge-computing and latency constraints. Existing multi-sensor fusion systems rely on cloud or server-grade infrastructure, creating a deployment gap at real-world intersections. We present CLIFE, an edge-native camera-LiDAR fusion framework that integrates targetless online calibration and lightweight late-fusion tracking entirely on a single embedded device, without cloud offloading. CLIFE adaptively refines camera-LiDAR alignment on demand and performs multi-sensor fusion and track association with O(N log N) per-frame cost. We deploy CLIFE across 12 signalized intersections in Chattanooga and conduct an in-depth evaluation at a representative intersection using synchronized camera-LiDAR data that spans diverse daytime, nighttime, and weather conditions. Our experiments demonstrate that the fusion architecture substantially enhances the perceptual range and robustness of the individual sensors under varied environmental and traffic conditions. The late-fusion core operates at 53.2 FPS on the Jetson AGX Thor, ensuring high throughput for real-time intersection-scale applications. By centering perception at the edge, CLIFE provides a deployable foundation for downstream safety applications, while reducing bandwidth and calibration overhead for agencies operating multi-intersection corridors.",
+  "abstract_zh": "在遮挡、光照变化和多样天气条件下，可靠的路边脆弱道路用户（VRUs）感知仍然面临挑战，尤其是在严格的边缘计算和延迟限制下。现有的多传感器融合系统依赖于云或服务器级基础设施，导致在实际交叉口的部署存在差距。我们提出了CLIFE，一个边缘原生的相机-激光雷达融合框架，能够在单一嵌入式设备上完全实现无目标在线校准和轻量级后融合跟踪，而无需云端卸载。CLIFE根据需求自适应地优化相机-激光雷达对齐，并以每帧O(N log N)的成本执行多传感器融合和轨迹关联。我们在查塔努加的12个信号交叉口部署了CLIFE，并在一个具有代表性的交叉口进行深入评估，使用同步的相机-激光雷达数据，涵盖了多样的白天、夜晚和天气条件。我们的实验表明，该融合架构显著增强了在不同环境和交通条件下各个传感器的感知范围和鲁棒性。后融合核心在Jetson AGX Thor上以53.2 FPS的速度运行，确保了实时交叉口规模应用的高吞吐量。通过将感知中心放在边缘，CLIFE为下游安全应用提供了可部署的基础，同时减少了多交叉口走廊运营机构的带宽和校准开销。",
+  "arxiv_id": "2607.16154",
+  "arxiv_url": "https://arxiv.org/abs/2607.16154v1",
+  "authors": [
+    "Tam Bang",
+    "Hoang H. Nguyen",
+    "Lei Cheng",
+    "Lihao Guo",
+    "Siyang Cao",
+    "Hussam Abubakr",
+    "Tianya Zhang",
+    "Austin Harris",
+    "Mina Sartipi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-20#paper-2607-16154",
+  "categories": [
+    "cs.CV",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-10T12:59:54.646051+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.16154v1",
+  "published_at": "2026-07-17T17:35:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "roadside",
+      "intersection",
+      "交通",
+      "道路",
+      "sensor fusion",
+      "multi-sensor",
+      "lidar",
+      "多传感器融合",
+      "camera-lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "标题命中自动驾驶专用技术",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 46
+  },
+  "seen_dates": [
+    "2026-07-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.16154v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "CLIFE: Camera-LiDAR Fusion Framework for Edge-Deployable Roadside VRU Perception",
+  "title_zh": "CLIFE：用于边缘部署的路边脆弱道路用户感知的相机-激光雷达融合框架",
+  "translation_url": "https://hjfy.top/arxiv/2607.16154"
+}

@@ -1,0 +1,61 @@
+{
+  "abstract": "Safe autonomous navigation requires a holistic understanding of dynamic environments, necessitating the simultaneous estimation of metric depth, semantic segmentation, and instance trajectories. While depth-aware video panoptic segmentation (DVPS) unifies these tasks, existing approaches often rely on computationally expensive, multi-stage pipelines or offline tracking, rendering them unsuitable for real-time decision-making. To address this, we propose DVPSFormer, a unified online architecture designed for efficient 4D scene understanding. Central to our approach is explicit scene discretization (ESD), a novel mechanism that leverages segmentation queries to represent foreground and background regions, enabling a discrete-to-continuous (D2C) depth head to decode metric depth in a single pass. This tightly couples semantic and geometric learning while significantly reducing latency. Furthermore, we propose an online majority voting (OMV) mechanism that exploits temporal consistency to refine classification during instance tracking. DVPSFormer establishes a new state-of-the-art on the Cityscapes-DVPS and SemKITTI-DVPS benchmarks, offering a streamlined solution for online robotic perception. Code and models are available at https://royyang0714.github.io/DVPSFormer.",
+  "abstract_zh": "安全的自主导航需要对动态环境的整体理解，这要求同时估计度量深度、语义分割和实例轨迹。虽然深度感知视频全景分割（DVPS）将这些任务统一起来，但现有方法通常依赖于计算开销大的多阶段流程或离线跟踪，使其不适合实时决策。为了解决这个问题，我们提出了DVPSFormer，这是一种旨在高效进行4D场景理解的统一在线架构。我们方法的核心是显式场景离散化（ESD），这是一种新颖的机制，利用分割查询来表示前景和背景区域，使得离散到连续（D2C）深度头能够在一次传递中解码度量深度。这紧密结合了语义和几何学习，同时显著降低了延迟。此外，我们提出了一种在线多数投票（OMV）机制，利用时间一致性在实例跟踪期间细化分类。DVPSFormer在Cityscapes-DVPS和SemKITTI-DVPS基准测试中建立了新的最先进水平，为在线机器人感知提供了一种简化的解决方案。代码和模型可在 https://royyang0714.github.io/DVPSFormer 获取。",
+  "arxiv_id": "2607.26165",
+  "arxiv_url": "https://arxiv.org/abs/2607.26165v1",
+  "authors": [
+    "Yung-Hsu Yang",
+    "Luigi Piccinelli",
+    "Siyuan Li",
+    "Mattia Segu",
+    "Lei Ke",
+    "Martin Danelljan",
+    "Yuqian Fu",
+    "Zuria Bauer",
+    "Fisher Yu",
+    "Hermann Blum",
+    "Marc Pollefeys"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-30#paper-2607-26165",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:02.709370+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.26165v1",
+  "published_at": "2026-07-28T18:16:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "cityscapes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-07-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.26165v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "DVPSFormer: Efficient Online Depth-aware Video Panoptic Segmentation for Autonomous Driving",
+  "title_zh": "DVPSFormer：用于自主驾驶的高效在线深度感知视频全景分割",
+  "translation_url": "https://hjfy.top/arxiv/2607.26165"
+}

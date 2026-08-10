@@ -1,0 +1,52 @@
+{
+  "abstract": "Collaborative Perception (CP) improves autonomous systems' awareness of their surroundings by sharing sensor data, intermediate features, and detection results. In real-world deployments, however, collaborating vehicles often use heterogeneous sensors, perception models, datasets, and training domains, creating feature-space shifts that degrade downstream fusion and detection. Existing approaches typically retrain fusion and detection components or introduce modality-specific feature interpreters. These methods scale poorly to newly joining agents and often require access to proprietary metadata, raising privacy concerns. We propose HeteroPROMPT, a real-time and privacy-preserving framework for heterogeneous collaborative perception. HeteroPROMPT rapidly aligns each heterogeneous agent's features with an ego-centric unified feature space through modular prompts and lightweight learning-based tuning, while keeping agent encoders and the collaborative fusion and detection stacks frozen. Its visual prompt-based training and inference modulate Bird's Eye View (BEV) features across channels and spatial locations with low computational overhead. For metadata-free deployment, an autoencoder learns a compact unified representation and extracts modality cues from shared features, enabling real-time modality classification and routing to the appropriate HeteroPROMPT modules without exposing proprietary agent information. Experiments on the OPV2V-H and V2XSet datasets show that HeteroPROMPT improves Average Precision over state-of-the-art heterogeneous CP methods while using orders of magnitude fewer trainable parameters. This offers a scalable and practical CP solution. The proposed modality classifier also predicts the joining agent's modality from compact features with greater than 99.99 percent accuracy during deployment. Code will be available at https://github.com/arminmaleki007/HeteroPROMPT.",
+  "abstract_zh": "协同感知（Collaborative Perception, CP）通过共享传感器数据、中间特征和检测结果，提高了自主系统对周围环境的感知。然而，在实际部署中，协作车辆通常使用异构传感器、感知模型、数据集和训练领域，导致特征空间的偏移，从而降低了下游融合和检测的效果。现有方法通常需要重新训练融合和检测组件，或引入特定模态的特征解释器。这些方法在新加入的代理上扩展性较差，且通常需要访问专有元数据，从而引发隐私问题。我们提出了HeteroPROMPT，一种实时且保护隐私的异构协同感知框架。HeteroPROMPT通过模块化提示和轻量级学习调优，快速将每个异构代理的特征与以自我为中心的统一特征空间对齐，同时保持代理编码器和协作融合及检测堆栈的冻结。其基于视觉提示的训练和推理在通道和空间位置上调节鸟瞰图（Bird's Eye View, BEV）特征，计算开销低。为了实现无元数据的部署，自动编码器学习紧凑的统一表示，并从共享特征中提取模态线索，使得实时模态分类和路由到适当的HeteroPROMPT模块成为可能，而无需暴露专有代理信息。在OPV2V-H和V2XSet数据集上的实验表明，HeteroPROMPT在使用数量级更少的可训练参数的情况下，提升了与最先进的异构CP方法相比的平均精度。这提供了一种可扩展且实用的CP解决方案。所提出的模态分类器在部署期间也能以超过99.99%的准确率从紧凑特征中预测加入代理的模态。代码将可在 https://github.com/arminmaleki007/HeteroPROMPT 获取。",
+  "arxiv_id": "2607.26283",
+  "arxiv_url": "https://arxiv.org/abs/2607.26283v1",
+  "authors": [
+    "Armin Maleki",
+    "Hayder Radha"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-30#paper-2607-26283",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:02.717839+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.26283v1",
+  "published_at": "2026-07-28T21:24:43Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2xset",
+      "opv2v",
+      "autonomous",
+      "车辆",
+      "bev"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 54
+  },
+  "seen_dates": [
+    "2026-07-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.26283v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "协同/V2X"
+    ]
+  },
+  "title": "HeteroPROPMT: A Real-time and Privacy-Preserving Heterogeneous Collaborative Perception Framework",
+  "title_zh": "HeteroPROPMT：一种实时且保护隐私的异构协同感知框架",
+  "translation_url": "https://hjfy.top/arxiv/2607.26283"
+}

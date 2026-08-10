@@ -1,0 +1,53 @@
+{
+  "abstract": "Accurate and reliable pose information with respect to a reference frame is increasingly demanded across applications such as autonomous navigation, surveying, robotics, and augmented and mixed reality. Visual localization can serve as a complementary positioning modality to GNSS, whose applicability and accuracy are often limited. Yet, the accuracy potential of visual localization has not been systematically investigated against survey-grade demands. This is mainly due to the lack of publicly available, large-scale outdoor datasets with ground-truth poses in the sub-centimeter range. In this work, we address both gaps. We introduce a scalable visual localization pipeline that employs precisely georeferenced, high-resolution street-level imagery directly as the scene representation. It combines prior-guided reference candidate selection with on-the-fly local Structure-from-Motion reconstruction and PnP-based pose estimation. We further present the FHNW Muttenz dataset, a real-world dataset covering a contiguous 10 km street network mapped in two mobile mapping campaigns approximately 1.5 years apart. It consists of high-resolution reference imagery and query sequences acquired by four different cameras across five representative scenes. All images are precisely co-registered, yielding 6-DoF ground-truth poses in the sub-centimeter range. Using this dataset, we evaluate the accuracy potential of visual localization. Our experiments demonstrate median pose accuracies in the range of 1-5 cm for translation and 0.05-0.1{\\deg} for rotation, reaching as low as 1 cm and 0.03{\\deg} under favorable conditions. These results show that visual localization can complement survey-grade GNSS positioning, paving the way for 3D geospatial data acquisition using consumer devices and fully automated georeferencing approaches. The dataset is publicly available at: https://fhnw-muttenz-vl-dataset.github.io/.",
+  "abstract_zh": "在自主导航、测绘、机器人技术以及增强现实和混合现实等应用中，对相对于参考框架的准确且可靠的位姿信息的需求日益增加。视觉定位可以作为全球导航卫星系统（GNSS）的补充定位方式，但其适用性和准确性往往受到限制。然而，视觉定位的精度潜力尚未针对测量级需求进行系统性的研究。这主要是由于缺乏公开可用的大规模户外数据集，其中包含亚厘米级的真实位姿。在本研究中，我们解决了这两个问题。我们引入了一种可扩展的视觉定位管道，直接利用精确地理参考的高分辨率街景影像作为场景表示。该管道结合了基于先验的参考候选选择、即时的运动重建（Structure-from-Motion）和基于PnP的位姿估计。我们进一步介绍了FHNW Muttenz数据集，这是一个真实世界的数据集，涵盖了一个连续的10公里街道网络，该网络在大约1.5年的两次移动测绘活动中进行了映射。该数据集由四个不同相机在五个代表性场景中获取的高分辨率参考影像和查询序列组成。所有影像都经过精确的配准，提供了亚厘米级的6自由度真实位姿。利用该数据集，我们评估了视觉定位的精度潜力。实验结果表明，平移的中位数位姿精度在1-5厘米范围内，旋转的中位数位姿精度在0.05-0.1°之间，在有利条件下可达到1厘米和0.03°。这些结果表明，视觉定位可以补充测量级GNSS定位，为使用消费设备和完全自动化的地理参考方法进行3D地理空间数据采集铺平道路。该数据集可在以下网址公开获取：https://fhnw-muttenz-vl-dataset.github.io/",
+  "arxiv_id": "2607.24409",
+  "arxiv_url": "https://arxiv.org/abs/2607.24409v1",
+  "authors": [
+    "Jonas Meyer",
+    "Stephan Nebiker",
+    "Pascal Theiler",
+    "Norbert Haala"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-24409",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.604016+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.24409v1",
+  "published_at": "2026-07-27T13:25:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "道路",
+      "visual localization",
+      "卫星"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.24409v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "Accuracy potential of visual localization exploiting high-end street-level imagery",
+  "title_zh": "利用高端街景影像的视觉定位精度潜力",
+  "translation_url": "https://hjfy.top/arxiv/2607.24409"
+}

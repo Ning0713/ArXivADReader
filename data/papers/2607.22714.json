@@ -1,0 +1,55 @@
+{
+  "abstract": "Real-time perception is a foundational requirement for advanced driver assistance systems (ADAS) and autonomous vehicles, yet embedded automotive platforms impose severe constraints on compute, memory, and power. This paper presents an optimized semantic segmentation architecture derived from the RetinaNet detection framework, adapted for dense pixel-wise prediction and tailored for deployment on resource-constrained embedded hardware. The proposed architecture, termed Opt-RetinaSeg, replaces the standard ResNet-50 backbone with a hybrid lightweight feature extractor, restructures the Feature Pyramid Network (FPN) to reduce redundant multi-scale computation, and introduces a compact segmentation head guided by focal-loss-inspired class balancing to address the severe foreground-background imbalance common in road scenes. We further apply a three-stage optimization pipeline consisting of structured channel pruning, post-training INT8 quantization, and knowledge distillation from a high-capacity teacher network. Evaluated on the Cityscapes and BDD100K datasets and deployed on an NVIDIA Jetson Xavier NX and a Qualcomm QCS610 automotive SoC, the proposed model achieves 73.9% mIoU at 70.4 FPS, representing a 7.4x inference speedup and a 4x reduction in model size relative to the ResNet-50 baseline, with less than 3% accuracy degradation. These results indicate that RetinaNet-derived architectures, when systematically optimized, are viable candidates for real-time semantic segmentation in embedded automotive perception pipelines",
+  "abstract_zh": "实时感知是高级驾驶辅助系统（ADAS）和自动驾驶车辆的基础要求，但嵌入式汽车平台对计算、内存和功耗施加了严格的限制。本文提出了一种基于 RetinaNet 检测框架的优化语义分割架构，适用于密集的像素级预测，并针对资源受限的嵌入式硬件进行了调整。所提出的架构称为 Opt-RetinaSeg，采用混合轻量级特征提取器替代标准的 ResNet-50 主干，重构特征金字塔网络（FPN）以减少冗余的多尺度计算，并引入一个紧凑的分割头，通过受焦点损失启发的类别平衡来解决道路场景中常见的严重前景-背景不平衡。我们进一步应用了一个三阶段优化流程，包括结构化通道剪枝、后训练 INT8 量化和从高容量教师网络的知识蒸馏。在 Cityscapes 和 BDD100K 数据集上进行评估，并在 NVIDIA Jetson Xavier NX 和 Qualcomm QCS610 汽车 SoC 上部署，所提出的模型在 70.4 FPS 下实现了 73.9% 的 mIoU，相较于 ResNet-50 基线实现了 7.4 倍的推理加速和 4 倍的模型尺寸缩减，且准确率下降不足 3%。这些结果表明，经过系统优化的基于 RetinaNet 的架构是嵌入式汽车感知管道中实时语义分割的可行候选者。",
+  "arxiv_id": "2607.22714",
+  "arxiv_url": "https://arxiv.org/abs/2607.22714v1",
+  "authors": [
+    "Sai Sidharth D"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-22714",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.511224+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.22714v1",
+  "published_at": "2026-07-21T08:30:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "bdd100k",
+      "cityscapes",
+      "autonomous",
+      "automotive",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.22714v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Real-Time Semantic Segmentation with Optimized RetinaNet Architectures for Embedded Automotive Systems",
+  "title_zh": "针对嵌入式汽车系统的优化 RetinaNet 架构的实时语义分割",
+  "translation_url": "https://hjfy.top/arxiv/2607.22714"
+}

@@ -1,0 +1,58 @@
+{
+  "abstract": "Self-play in simulation produces robust driving policies at scale. Demonstrations of such behavior have been made using privileged vectorized observations such as exact poses and velocities, even for occluded agents. This assumes that perception is solved and introduces a representation gap with the partial observation of a deployed agent driving from the perspective view of egocentric cameras. A common fix, distilling the privileged policy into a camera-input student, leaves the student imitating decisions its own view cannot justify. Instead, we establish perspective-view self-play as a practical training regime. We introduce Pictura, a GPU-accelerated multi-agent driving simulator that renders each agent's egocentric view at every step, mitigating the representation gap at its source. Pictura sustains up to 500K agent-steps/s (2M images/s) on a single H100. Using Pictura, we train Alberti by self-play with plain PPO. It is the first large-scale driving self-play policy trained directly from perspective images, without privileged observations. Training spans 50B agent steps for ~35M km of driving. It approaches the driving performance of its privileged vectorized counterpart, and transfers zero-shot to Waymo Open Motion Dataset layouts re-rendered in Pictura, where it outperforms privileged vectorized agents. Project page: https://valeoai.github.io/Pictura/",
+  "abstract_zh": "在仿真中进行自我对弈能够大规模产生稳健的驾驶策略。此类行为的演示使用了特权向量化观测，例如精确的姿态和速度，即使对于被遮挡的代理也适用。这假设感知问题已解决，并引入了与从自我中心相机的视角观察的部署代理部分观测之间的表示差距。一种常见的解决方案是将特权策略提炼为相机输入的学生策略，但这使得学生模仿其自身视角无法证明的决策。相反，我们确立了视角自我对弈作为一种实用的训练机制。我们引入了Pictura，这是一款GPU加速的多代理驾驶模拟器，在每一步渲染每个代理的自我中心视图，从源头上减轻了表示差距。Pictura在单个H100上支持高达500K代理步/秒（2M图像/秒）。使用Pictura，我们通过普通的PPO进行自我对弈训练Alberti。这是首个直接从视角图像中训练的大规模驾驶自我对弈策略，而不依赖特权观测。训练跨越50B代理步，约35M公里的驾驶。其驾驶性能接近特权向量化对应物，并在Pictura中重新渲染的Waymo Open Motion Dataset布局中实现了零样本迁移，超越了特权向量化代理。项目页面：https://valeoai.github.io/Pictura/",
+  "arxiv_id": "2607.26005",
+  "arxiv_url": "https://arxiv.org/abs/2607.26005v1",
+  "authors": [
+    "Yuan Yin",
+    "Elias Ramzi",
+    "Marc Lafon",
+    "Valentin Charraut",
+    "Victor Bares",
+    "Yihong Xu",
+    "Éloi Zablocki",
+    "Alexandre Boulch",
+    "Thibault Buhet",
+    "Andrei Bursuc",
+    "Matthieu Cord"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-29#paper-2607-26005",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:55.498299+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.26005v1",
+  "published_at": "2026-07-28T17:20:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "waymo open",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-07-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.26005v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Pictura: Perspective-View Self-Play at Scale for Driving",
+  "title_zh": "Pictura：大规模视角自我对弈驱动",
+  "translation_url": "https://hjfy.top/arxiv/2607.26005"
+}

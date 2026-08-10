@@ -1,0 +1,65 @@
+{
+  "abstract": "Existing methods in Autonomous Valet Parking (AVP) typically rely on pre-built maps, which severely restricts their scalability to unseen environments and open-vocabulary targets. Inspired by the application of Vision-Language Models (VLMs) in Vision-Language Navigation (VLN) tasks, we propose VLN-AVP, a zero-shot navigation framework for AVP tasks. By combining the precise spatial perception of a Bird's-Eye-View (BEV) model with the general intelligence of VLMs, our framework 1) eliminates the dependency on pre-built maps, 2) interprets semantic environmental contexts in parking scenarios, and 3) enables intuitive navigation following natural language instructions. Specifically, we introduce a hybrid memory system: a short-term perception memory tracks semantic visual cues to address the limitations of VLM's single-frame reasoning in existing methods, while a long-term topological memory facilitates stable policy learning from past experiences. To bridge the gap in existing benchmarks, we also present the VLN-AVP dataset and benchmark. Featuring 10 high-fidelity parking scenes and over 1,000 navigation episodes, it has the largest number of garage scenes to date and is the first VLN benchmark for underground parking. Extensive experiments demonstrate that in simulation, our method achieves an over 25% improvement in success rate compared to VLN methods and an over 15% improvement compared to other autonomous driving methods. Furthermore, it attains a leading success rate in real-world vehicle experiments, proving its practical feasibility.",
+  "abstract_zh": "现有的自主代客泊车（AVP）方法通常依赖于预构建的地图，这严重限制了它们在未知环境和开放词汇目标中的可扩展性。受到视觉语言模型（VLMs）在视觉语言导航（VLN）任务中应用的启发，我们提出了VLN-AVP，一个用于AVP任务的零-shot导航框架。通过将鸟瞰图（BEV）模型的精确空间感知与VLM的通用智能相结合，我们的框架1）消除了对预构建地图的依赖，2）解释了停车场景中的语义环境上下文，3）使得根据自然语言指令进行直观导航成为可能。具体而言，我们引入了一种混合记忆系统：短期感知记忆跟踪语义视觉线索，以解决现有方法中VLM单帧推理的局限性，而长期拓扑记忆则促进了从过去经验中稳定的策略学习。为了填补现有基准测试中的空白，我们还提出了VLN-AVP数据集和基准测试。该数据集包含10个高保真停车场景和超过1000个导航回合，是迄今为止拥有最多车库场景的数据集，也是第一个针对地下停车的VLN基准。大量实验表明，在仿真中，我们的方法相比于VLN方法的成功率提高了超过25%，相比于其他自主驾驶方法提高了超过15%。此外，在实际车辆实验中，它达到了领先的成功率，证明了其实际可行性。",
+  "arxiv_id": "2607.17767",
+  "arxiv_url": "https://arxiv.org/abs/2607.17767v1",
+  "authors": [
+    "Yijian Li",
+    "Xiangru Mu",
+    "Changze Li",
+    "Hantian Shi",
+    "Jiyuan Cai",
+    "Jia Cai",
+    "Xiaoxue Liu",
+    "Yajing Sun",
+    "Ming Yang",
+    "Tong Qin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-17767",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.339218+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.17767v1",
+  "published_at": "2026-07-20T10:01:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "parking",
+      "驾驶",
+      "车辆",
+      "泊车",
+      "bev",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.17767v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "VLN-AVP: Zero-Shot Vision-Language Navigation with Hybrid Long-Short-Term Memory for Autonomous Valet Parking",
+  "title_zh": "VLN-AVP：基于混合长短期记忆的零-shot视觉语言导航用于自主代客泊车",
+  "translation_url": "https://hjfy.top/arxiv/2607.17767"
+}

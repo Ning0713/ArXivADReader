@@ -1,0 +1,58 @@
+{
+  "abstract": "AI-enabled visual perception systems are increasingly deployed in intelligent transportation infrastructure and autonomous vehicle related applications. However, physically realizable adversarial appearances pose a significant reliability challenge for these safety-critical systems. Adversarial training is effective, but repeated co-occurrence between adversarial texture and positive person instances can cause detectors to treat the texture itself as evidence of object presence, forming a patch texture shortcut. The detector may then treat texture as evidence for the target, causing false detections on texture-only inputs and weakening cross attack generalisation. We propose InsCAT, an instance-level contrastive adversarial training framework that prevents detectors from using adversarial texture as an independent decision cue. SICA aligns adversarial person features with matched clean features and separates them from texture-only negatives, while ROPO and Guard maintain online attack pressure and coordinate training. We evaluate eight independently generated attack textures on rendered nuScenes, INRIAPerson, printed garments, and three detector families. InsCAT achieves an average attack AP of 82.3% on rendered nuScenes, exceeding the strongest baseline by 11.1 points.Relative to AT-Mix, texture FPR decreases from 46.9% to 7.3%. Physical tests yield an F1 score of 96.6% and an FPR of 1.8%. Consistent gains across separately trained detectors demonstrate applicability across architectures with direct inference. The findings show that robust physical detection depends on preserving target related evidence while preventing adversarial texture from becoming an independent decision cu",
+  "abstract_zh": "基于人工智能的视觉感知系统越来越多地应用于智能交通基础设施和自动驾驶相关应用。然而，可物理实现的对抗性外观对这些安全关键系统构成了显著的可靠性挑战。对抗训练是有效的，但对抗纹理与正样本（如行人实例）之间的重复共现可能导致检测器将纹理本身视为物体存在的证据，从而形成一个补丁纹理捷径。检测器可能因此将纹理视为目标的证据，导致在仅有纹理的输入上出现误检，并削弱跨攻击的泛化能力。我们提出了InsCAT，一个实例级对比对抗训练框架，旨在防止检测器将对抗纹理作为独立的决策线索。SICA将对抗行人特征与匹配的干净特征对齐，并将其与仅有纹理的负样本分离，而ROPO和Guard则维持在线攻击压力并协调训练。我们在渲染的nuScenes、INRIAPerson、印刷服装和三种检测器家族上评估了八种独立生成的攻击纹理。InsCAT在渲染的nuScenes上实现了82.3%的平均攻击AP，超出最强基线11.1个百分点。相较于AT-Mix，纹理的假阳性率（FPR）从46.9%降至7.3%。物理测试的F1分数为96.6%，FPR为1.8%。在分别训练的检测器上持续获得的增益表明该方法在具有直接推理能力的架构中具有适用性。研究结果表明，稳健的物理检测依赖于保留与目标相关的证据，同时防止对抗纹理成为独立的决策线索。",
+  "arxiv_id": "2607.21243",
+  "arxiv_url": "https://arxiv.org/abs/2607.21243v1",
+  "authors": [
+    "Yuanhao Huang",
+    "Yilong Ren",
+    "Jinlei Wang",
+    "Xuesong Bai",
+    "Zheng Zhang",
+    "Haiyang Yu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-24#paper-2607-21243",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:27.487845+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.21243v1",
+  "published_at": "2026-07-23T12:06:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "vehicle",
+      "驾驶",
+      "交通",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.21243v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Detectors Learn the Wrong Thing: Shortcut-Resistant Adversarial Training Against Physically Realizable Attacks",
+  "title_zh": "检测器学习错误的内容：针对可物理实现攻击的抗捷径对抗训练",
+  "translation_url": "https://hjfy.top/arxiv/2607.21243"
+}

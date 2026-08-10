@@ -1,0 +1,54 @@
+{
+  "abstract": "Driving style refers to the behavioral preferences that drivers maintain during driving, shaped by their diverse experiences, habits, and needs, and is typically reflected in varying levels of aggressiveness. If humans choose to use autonomous driving systems, they would expect the driving style of the systems to closely resemble their own habit. However, this is challenging for current industrial autonomous driving systems. To address this, we developed a style controllable action generation method, STAGE, for driving tasks. Its training process is based on imitation learning, incorporating both style value and latent value action modality encoding. Preference learning is then used to identify the user's driving style as a continuous, monotonic style value. And to reduce the cost of human involvement in the preference training process, we also developed a set of rules to compare driving style in data pairs. Then, during inference, the user inputs the style value to control the generated action patterns, dynamically meeting the user's expectations. Using the STAGE method, we verified that the style-controlled action generation results in several typical road scenarios significantly align with human expectations. Furthermore, through comparisons between the STAGE method and various other approaches, we reveal the unique functionalities of STAGE, including its style controllability, style continuity, driving style alignment capability and driving safety. The code for this work is available at: https://github.com/CarlDegio/STAGE",
+  "abstract_zh": "驾驶风格是指驾驶者在驾驶过程中保持的行为偏好，这些偏好受到他们多样的经验、习惯和需求的影响，通常表现为不同程度的攻击性。如果人们选择使用自动驾驶系统，他们希望系统的驾驶风格能够与自己的习惯紧密相似。然而，这对当前的工业自动驾驶系统来说是一个挑战。为了解决这个问题，我们开发了一种可控风格的动作生成方法STAGE，适用于驾驶任务。其训练过程基于模仿学习，结合了风格值和潜在值的动作模态编码。接着，采用偏好学习来识别用户的驾驶风格，作为一个连续的单调风格值。为了减少人类参与偏好训练过程的成本，我们还制定了一套规则来比较数据对中的驾驶风格。然后，在推理过程中，用户输入风格值以控制生成的动作模式，动态满足用户的期望。使用STAGE方法，我们验证了风格控制的动作生成在多个典型道路场景中显著符合人类的期望。此外，通过将STAGE方法与其他多种方法进行比较，我们揭示了STAGE的独特功能，包括其风格可控性、风格连续性、驾驶风格对齐能力和驾驶安全性。本研究的代码可在以下网址获取：https://github.com/CarlDegio/STAGE",
+  "arxiv_id": "2607.29517",
+  "arxiv_url": "https://arxiv.org/abs/2607.29517v1",
+  "authors": [
+    "Zihao Liu",
+    "Xing Liu",
+    "Yizhai Zhang",
+    "Panfeng Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-03#paper-2607-29517",
+  "categories": [
+    "cs.RO",
+    "cs.HC"
+  ],
+  "fetched_at": "2026-08-10T13:01:18.017979+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.29517v1",
+  "published_at": "2026-07-31T15:17:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-08-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.29517v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "STAGE: STyle-controllable Action GEneration for personalized autonomous driving",
+  "title_zh": "STAGE：可控风格的个性化自动驾驶动作生成",
+  "translation_url": "https://hjfy.top/arxiv/2607.29517"
+}

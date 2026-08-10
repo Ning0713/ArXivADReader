@@ -1,0 +1,53 @@
+{
+  "abstract": "We present CalibBEV, a novel Bird's Eye View (BEV) alignment approach for LiDAR-camera calibration. Our method unifies LiDAR and camera data into a shared 3D spatial representation, enabling accurate and robust cross-modal calibration. CalibBEV extracts sensor-wise BEV features from each modality using domain-specific architectures and estimates the calibration matrix through a two-step alignment process. First, we perform an implicit alignment by regressing a coarse calibration matrix directly from the BEV features. To ease this alignment, we enforce semantic consistency between BEV representations across modalities using a contrastive loss inspired by CLIP, guiding both networks toward a unified feature space. In the second step, we leverage our BEV formulation to explicitly align the features of one modality with the other, refining the initial coarse estimate into a final, more accurate calibration matrix. CalibBEV significantly outperforms prior point-to-pixel matching methods, achieving state-of-the-art calibration accuracy. On the KITTI and nuScenes benchmarks, our method reduces the Relative Rotation Error (RRE) by 51% and 68%, and the Relative Translation Error (RTE) by 80% and 91%, respectively, compared to previous methods.",
+  "abstract_zh": "我们提出了CalibBEV，一种新颖的基于鸟瞰视角（BEV）对LiDAR与相机进行标定的方法。我们的方法将LiDAR和相机数据统一为一个共享的三维空间表示，从而实现准确且稳健的跨模态标定。CalibBEV通过特定领域的架构从每种模态中提取传感器级的BEV特征，并通过两步对齐过程估计标定矩阵。首先，我们通过直接从BEV特征回归一个粗略的标定矩阵来执行隐式对齐。为了简化这一对齐过程，我们使用受CLIP启发的对比损失强制不同模态间的BEV表示保持语义一致性，引导两个网络朝着统一的特征空间发展。在第二步中，我们利用我们的BEV公式显式地将一种模态的特征与另一种模态对齐，将初始的粗略估计精炼为最终的更准确的标定矩阵。CalibBEV在标定精度上显著优于先前的点到像素匹配方法，达到了最先进的标定精度。在KITTI和nuScenes基准测试中，我们的方法分别将相对旋转误差（RRE）降低了51%和68%，将相对平移误差（RTE）降低了80%和91%，相比于之前的方法。",
+  "arxiv_id": "2608.02309",
+  "arxiv_url": "https://arxiv.org/abs/2608.02309v1",
+  "authors": [
+    "Filippo D'Addeo",
+    "Lorenzo Cipelli",
+    "Adriano Cardace",
+    "Emanuele Ghelfi",
+    "Andrea Zinelli",
+    "Massimo Bertozzi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-02309",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.164173+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.02309v1",
+  "published_at": "2026-08-03T14:34:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "bev",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.02309v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "CalibBEV: LiDAR-Camera Calibration via BEV Alignment",
+  "title_zh": "CalibBEV：基于鸟瞰视角（BEV）对LiDAR与相机的标定",
+  "translation_url": "https://hjfy.top/arxiv/2608.02309"
+}

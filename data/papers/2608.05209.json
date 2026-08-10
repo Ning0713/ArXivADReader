@@ -1,0 +1,52 @@
+{
+  "abstract": "Constructing reliable online HD maps remains challenging in dynamic urban environments due to moving objects and occlusions. While recent works employ feature-level temporal fusion to address this, they rely solely on per-frame ground truth supervision. Consequently, they lack an explicit objective to directly penalize the geometric noise and temporal jitter between consecutive online HD maps. To address this, we propose MapTCL, an auxiliary training strategy that formulates temporal consistency loss between current and past frames via bidirectional alignment. Specifically, Bidirectional Vector Consistency Learning (BVCL) models the geometric and semantic discrepancies between associated past and current vector instances as an auxiliary loss. We also employ Raster map Consistency Learning (RCL) as an additional loss to stabilize dense BEV features. By jointly training with these dual losses, MapTCL improves the temporal stability of generated HD maps. Extensive experiments on two standard benchmarks demonstrate the effectiveness of our approach. As a versatile plug-and-play module, MapTCL consistently enhances existing baseline models, achieving gains of +3.7 mAP & +2.8 C-mAP on nuScenes and +3.1 mAP & +2.5 C-mAP on Argoverse 2 without additional inference overhead.",
+  "abstract_zh": "在动态城市环境中，由于移动物体和遮挡，构建可靠的在线高清地图仍然面临挑战。尽管最近的研究采用特征级时间融合来解决这一问题，但它们仅依赖于每帧的真实标签监督。因此，它们缺乏明确的目标来直接惩罚连续在线高清地图之间的几何噪声和时间抖动。为了解决这个问题，我们提出了MapTCL，一种辅助训练策略，通过双向对齐公式化当前帧与过去帧之间的时间一致性损失。具体而言，双向矢量一致性学习（Bidirectional Vector Consistency Learning, BVCL）将关联的过去和当前矢量实例之间的几何和语义差异建模为辅助损失。我们还采用光栅地图一致性学习（Raster map Consistency Learning, RCL）作为额外损失，以稳定密集的鸟瞰视图（BEV）特征。通过联合训练这两种损失，MapTCL提高了生成高清地图的时间稳定性。在两个标准基准上的大量实验表明了我们方法的有效性。作为一个通用的即插即用模块，MapTCL持续增强现有的基线模型，在nuScenes上获得了+3.7 mAP和+2.8 C-mAP，在Argoverse 2上获得了+3.1 mAP和+2.5 C-mAP，且没有额外的推理开销。",
+  "arxiv_id": "2608.05209",
+  "arxiv_url": "https://arxiv.org/abs/2608.05209v1",
+  "authors": [
+    "Hyeonseo Kim",
+    "Juyeb Shin",
+    "Hyeonjun Jeong",
+    "Hiwon Shin",
+    "Dongsuk Kum"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-07#paper-2608-05209",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:52.098626+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.05209v1",
+  "published_at": "2026-08-05T08:53:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "argoverse",
+      "bev",
+      "hd map"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-08-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.05209v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "BEV/Occupancy",
+      "多传感器融合"
+    ]
+  },
+  "title": "MapTCL: Temporal Consistency Learning via Bidirectional Alignment for Vectorized HD Map Construction",
+  "title_zh": "MapTCL：通过双向对齐进行时间一致性学习以构建矢量化高清地图",
+  "translation_url": "https://hjfy.top/arxiv/2608.05209"
+}

@@ -1,0 +1,62 @@
+{
+  "abstract": "The bird's eye view (BEV) has emerged as a pivotal approach for environmental perception in autonomous driving, providing a unified spatial representation for vehicles. Nevertheless, despite BEV's significance in addressing the challenges inherent to autonomous driving, effectively fusing data from multiple camera sensors and operating in complex external driving environments remains a considerable challenge. To mitigate this issue, we recast the BEV segmentation problem within a variational inference framework. In this paper, we propose a novel transformer-based variational flow transformation network for BEV segmentation, denoted as TVB. Our architecture implicitly learns the mapping from multiple camera views to a unified canonical BEV map during training by exploiting posterior BEV supervision. TVB employs a conditional variational auto encoder (CVAE) as its backbone and produces multiple BEV map candidates. To augment the realism of the generated BEV maps, we integrate normalizing flows into the map generation process, enabling the construction of more complex and expressive probability distributions. Furthermore, we design a BEV-attention fusion (BAF) module that harnesses attention mechanisms to adaptively integrate the multiple candidate BEV maps. Experimental results, evaluated on both the nuScenes and OPV2Vdatasets, demonstrate that our proposed method achieves superior performance in multi-camera view BEV segmentation and lane environment perception.",
+  "abstract_zh": "鸟瞰图（BEV）已成为自动驾驶环境感知的关键方法，为车辆提供了统一的空间表示。然而，尽管BEV在解决自动驾驶固有挑战方面具有重要意义，但有效融合来自多个摄像头传感器的数据并在复杂的外部驾驶环境中操作仍然是一个相当大的挑战。为了解决这个问题，我们将BEV分割问题重新表述为变分推断框架。在本文中，我们提出了一种新颖的基于变压器的变分流变换网络用于BEV分割，称为TVB。我们的架构在训练过程中通过利用后验BEV监督隐式学习从多个摄像头视图到统一标准BEV图的映射。TVB采用条件变分自编码器（CVAE）作为其主干，并生成多个BEV图候选。为了增强生成BEV图的真实感，我们将归一化流整合到图生成过程中，使得构建更复杂和更具表现力的概率分布成为可能。此外，我们设计了一个BEV注意力融合（BAF）模块，利用注意力机制自适应地整合多个候选BEV图。实验结果在nuScenes和OPV2V数据集上评估，表明我们提出的方法在多摄像头视图BEV分割和车道环境感知方面实现了优越的性能。",
+  "arxiv_id": "2607.14710",
+  "arxiv_url": "https://arxiv.org/abs/2607.14710v1",
+  "authors": [
+    "Jingyue Shi",
+    "Huaicheng Li",
+    "Junhui Zhao",
+    "Yanxiang Jiang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-17#paper-2607-14710",
+  "categories": [
+    "cs.CV",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-10T12:59:47.249297+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.14710v1",
+  "published_at": "2026-07-16T08:20:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "opv2v",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "车辆",
+      "车道",
+      "bev"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.14710v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Variational Inference for Bird's Eye View Segmentation in Autonomous Driving",
+  "title_zh": "用于自动驾驶的鸟瞰图分割的变分推断",
+  "translation_url": "https://hjfy.top/arxiv/2607.14710"
+}

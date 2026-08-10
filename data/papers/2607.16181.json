@@ -1,0 +1,54 @@
+{
+  "abstract": "This study introduces a vision-language pipeline that detects risky driving behaviors and generates emotionally expressive responses to support driver awareness and comfort. Although vision-language models have advanced perception and reasoning in autonomous driving, existing systems rarely consider the emotional dimension or real-world user experience. Keep Yelling Assistant (KYA) detects high-risk driving maneuvers in real time, such as sudden cut-ins. It then produces emotional responses through a large language model tailored to driver preferences. The framework comprises two core modules. The vision module uses YOLOv8 variants to detect nearby vehicles and identify risky behaviors such as sudden cut-ins. Key driving metrics, including relative distance, speed, and projected reach time, are extracted and normalized to produce a structured behavior log. The language module processes this log with user-defined emotional tone settings, such as neutral, humorous, and analytical, and generates verbal reactions using state-of-the-art large language models, including ChatGPT-4o, Claude 3, Gemini 2.5, and Copilot. We evaluated the proposed system using dashcam videos containing risky driving behaviors and a user study involving 108 participants. Participants selected preferred response styles, and the large language models were evaluated based on emotional alignment. All models received favorable ratings, although preferences varied across personas. Notably, the combination of YOLOv8s and ChatGPT-4o achieved the highest score of 4.29 out of 5.00. By integrating real-world perception with emotionally adaptive dialogue, KYA introduces a new paradigm for emotionally intelligent in-vehicle artificial intelligence. It offers promising directions for improving safety, trust, and emotional well-being in both conventional and autonomous vehicles.",
+  "abstract_zh": "本研究介绍了一种视觉-语言管道，能够检测风险驾驶行为并生成情感表达的反应，以支持驾驶员的意识和舒适度。尽管视觉-语言模型在自动驾驶中的感知和推理方面取得了进展，但现有系统很少考虑情感维度或现实世界用户体验。Keep Yelling Assistant (KYA) 实时检测高风险驾驶操作，如突然插入。随后，它通过一个针对驾驶员偏好的大型语言模型生成情感反应。该框架由两个核心模块组成。视觉模块使用 YOLOv8 变体检测附近车辆并识别风险行为，如突然插入。提取并标准化相对距离、速度和预计到达时间等关键驾驶指标，以生成结构化的行为日志。语言模块根据用户定义的情感语调设置（如中性、幽默和分析）处理该日志，并使用最先进的大型语言模型（包括 ChatGPT-4o、Claude 3、Gemini 2.5 和 Copilot）生成口头反应。我们使用包含风险驾驶行为的行车记录仪视频和涉及 108 名参与者的用户研究评估了所提出的系统。参与者选择了偏好的反应风格，大型语言模型的情感一致性进行了评估。所有模型均获得了良好的评分，尽管不同角色的偏好有所不同。值得注意的是，YOLOv8s 和 ChatGPT-4o 的组合获得了 5.00 满分中的 4.29 的最高分。通过将现实世界的感知与情感自适应对话相结合，KYA 引入了一种情感智能车载人工智能的新范式。它为提高传统和自动驾驶车辆的安全性、信任度和情感福祉提供了有希望的方向。",
+  "arxiv_id": "2607.16181",
+  "arxiv_url": "https://arxiv.org/abs/2607.16181v1",
+  "authors": [
+    "Harine Choi",
+    "Eun Hak Lee",
+    "Zhengzhong Tu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-20#paper-2607-16181",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T12:59:54.647051+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.16181v1",
+  "published_at": "2026-07-17T17:57:27Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.16181v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Vision-Language Assistant for Emotional Reactions to Risky Driving",
+  "title_zh": "情感反应的风险驾驶视觉-语言助手",
+  "translation_url": "https://hjfy.top/arxiv/2607.16181"
+}

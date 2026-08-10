@@ -1,0 +1,47 @@
+{
+  "abstract": "Point cloud registration critically depends on local features that are both distinctive and robust to arbitrary 3D rotations. Existing learning-based methods typically approximate rotation invariance via fragile local reference frames or extensive data augmentation, providing only empirical invariance and often degrading under unseen rotational transformations. In this paper, we propose SHReg, a strictly rotation-equivariant point cloud registration framework grounded in the representation theory of $SO(3)$. By representing local geometric features as irreducible representations of $SO(3)$, SHReg guarantees exact equivariance under arbitrary rotations without relying on local reference frames. Built upon a spherical-harmonics-based equivariant backbone, SHReg jointly learns rotation-invariant descriptors for robust correspondence matching and rotation-equivariant features that preserve fine-grained orientation information. The preserved equivariant structure enables each correspondence to directly hypothesize a rigid transformation, reducing reliance on large-scale hypothesis sampling in conventional RANSAC-based pipelines and leading to improved robustness under challenging rotational variations. Extensive experiments on 3DMatch, 3DLoMatch, and KITTI demonstrate that SHReg consistently outperforms state-of-the-art methods in registration accuracy, particularly under large rotational perturbations.",
+  "abstract_zh": "点云配准在很大程度上依赖于既具有辨识度又对任意三维旋转具有鲁棒性的局部特征。现有的基于学习的方法通常通过脆弱的局部参考框架或广泛的数据增强来近似旋转不变性，仅提供经验性的等变性，并且在未见过的旋转变换下往往会退化。本文提出了SHReg，一种基于$SO(3)$表示理论的严格旋转等变点云配准框架。通过将局部几何特征表示为$SO(3)$的不可约表示，SHReg保证在任意旋转下的精确等变性，而无需依赖局部参考框架。SHReg基于球谐函数的等变主干网络共同学习鲁棒的旋转不变描述符以实现精确的对应匹配，以及保留细粒度方向信息的旋转等变特征。保留的等变结构使得每个对应关系能够直接假设刚性变换，减少了对传统RANSAC管道中大规模假设采样的依赖，从而在具有挑战性的旋转变化下提高了鲁棒性。在3DMatch、3DLoMatch和KITTI上的大量实验表明，SHReg在配准精度上始终优于最先进的方法，特别是在大幅旋转扰动下。",
+  "arxiv_id": "2607.23096",
+  "arxiv_url": "https://arxiv.org/abs/2607.23096v1",
+  "authors": [
+    "Chongjian Wang",
+    "Junjie Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-28#paper-2607-23096",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:45.538048+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.23096v1",
+  "published_at": "2026-07-25T08:13:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-07-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.23096v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "SHReg: Strictly Rotation-Equivariant Point Cloud Registration via Spherical Harmonics",
+  "title_zh": "SHReg：通过球谐函数实现严格旋转等变的点云配准",
+  "translation_url": "https://hjfy.top/arxiv/2607.23096"
+}

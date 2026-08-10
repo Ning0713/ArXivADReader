@@ -1,0 +1,54 @@
+{
+  "abstract": "High-level planning for autonomous driving is a knowledge-intensive engineering decision task that requires accurate scene understanding, timely inference, and internally consistent action selection. Vision-language models (VLMs) can make intermediate reasoning explicit, but their use in deployed planners is constrained by costly structured supervision, unnecessary reasoning in routine scenes, and possible inconsistencies between generated rationales and driving actions. We present a cognitive dual-process planning framework that represents planning-relevant scene knowledge in a machine-parsable structured chain-of-thought (S-CoT) schema. An automated data engine integrates perception foundation models, critical-path filtering, and an expert VLM to generate S-CoT supervision without manual annotation of individual rationales. A lightweight visual Arbiter estimates scene complexity from multilevel vision-encoder features before language decoding and routes each input to either fast meta-action prediction or slow structured reasoning. For slow-path outputs, a deterministic rule-based validator checks whether the parsed S-CoT fields are consistent with the final meta-action and provides verifiable rewards for Group Relative Policy Optimization (GRPO). In a 195-scene manual audit, the generated annotations achieve 91.8\\% CoT accuracy and a 98.5\\% Logical Consistency Score (LCS). On 574 manually verified NAVSIM test samples, the planner achieves 80.14\\% planning accuracy and 97.20\\% LCS while reducing average latency by 17.39\\% relative to applying slow reasoning to every scene. Evaluation on external long-tail subsets further identifies conditions under which routing and planning performance degrade. Together, these results show how explicit scene knowledge can be operationalized through adaptive reasoning and rule-based verification to support high-level VLM planning decisions.",
+  "abstract_zh": "自主驾驶的高层规划是一项知识密集型的工程决策任务，要求准确的场景理解、及时的推理和内部一致的行动选择。视觉-语言模型（VLMs）可以使中间推理变得显性，但在实际应用的规划器中，其使用受到昂贵的结构化监督、不必要的常规场景推理以及生成的推理与驾驶行动之间可能存在的不一致性的限制。我们提出了一种认知双过程规划框架，该框架以机器可解析的结构化思维链（S-CoT）模式表示与规划相关的场景知识。一个自动化数据引擎集成了感知基础模型、关键路径过滤和专家VLM，以在不手动标注单个推理的情况下生成S-CoT监督。一个轻量级视觉仲裁者在语言解码之前根据多层视觉编码器特征评估场景复杂性，并将每个输入路由到快速元行动预测或慢速结构化推理。对于慢路径输出，一个确定性基于规则的验证器检查解析的S-CoT字段是否与最终的元行动一致，并为群体相对策略优化（GRPO）提供可验证的奖励。在195个场景的手动审计中，生成的注释达到了91.8%的思维链准确率和98.5%的逻辑一致性得分（LCS）。在574个手动验证的NAVSIM测试样本中，规划器实现了80.14%的规划准确率和97.20%的LCS，同时将平均延迟相对于对每个场景应用慢速推理减少了17.39%。对外部长尾子集的评估进一步识别了路由和规划性能下降的条件。这些结果共同表明，如何通过自适应推理和基于规则的验证将显性场景知识转化为操作，以支持高层次的VLM规划决策。",
+  "arxiv_id": "2607.19194",
+  "arxiv_url": "https://arxiv.org/abs/2607.19194v2",
+  "authors": [
+    "Zhongyao Yang",
+    "Haoyu Li",
+    "Yu Yan",
+    "Zhuangxuan Yu",
+    "Jiangfeng Nan",
+    "Jinrui Nan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-22#paper-2607-19194",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:12.317215+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.19194v2",
+  "published_at": "2026-07-21T15:29:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-07-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.19194v2",
+    "axi": "https://paper.axi404.top/daily/2026-07-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Cognitive Dual-Process Planning for Autonomous Driving with Structured Scene Knowledge and Verifiable Reasoning-Action Consistency",
+  "title_zh": "具有结构化场景知识和可验证推理-行动一致性的自主驾驶认知双过程规划",
+  "translation_url": "https://hjfy.top/arxiv/2607.19194"
+}

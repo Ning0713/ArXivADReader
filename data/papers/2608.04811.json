@@ -1,0 +1,49 @@
+{
+  "abstract": "Structured pruning enhances the efficiency of deep neural networks (DNNs) by eliminating groups of parameters during inference. Previous methods mostly reduce computational complexity (FLOPs), while semantic segmentation performance (mIoU) slightly drops. Accordingly, recent dynamic structured pruning methods aim at reducing the performance drop, while lowering the FLOPs even more. However, on the ADE20K and Cityscapes benchmarks, our study reveals that on a GPU platform such dynamic methods exhibit a surprisingly low frame rate far below a simple static approach, while having comparable results in mIoU and FLOPs. To address this issue, we propose a static structured pruning method for attention layers, that achieves both, a lower FLOPs and a high frame rate [fps] of the SegFormer network, the latter increased by up to 34% relative on the Cityscapes dataset, while having no mIoU performance drop at all. Our so-called StaticSegFormer method is strongest for small encoders and large images.",
+  "abstract_zh": "结构剪枝通过在推理过程中消除参数组来提高深度神经网络（DNN）的效率。以往的方法主要降低计算复杂度（FLOPs），而语义分割性能（mIoU）略有下降。因此，最近的动态结构剪枝方法旨在减少性能下降，同时进一步降低FLOPs。然而，在ADE20K和Cityscapes基准测试中，我们的研究揭示，在GPU平台上，这些动态方法的帧率远低于简单的静态方法，而在mIoU和FLOPs方面却表现相当。为了解决这个问题，我们提出了一种针对注意力层的静态结构剪枝方法，既实现了更低的FLOPs，又提高了SegFormer网络的帧率，在Cityscapes数据集上相对提高了多达34%，同时没有造成mIoU性能下降。我们所称的StaticSegFormer方法在小型编码器和大图像上表现最为出色。",
+  "arxiv_id": "2608.04811",
+  "arxiv_url": "https://arxiv.org/abs/2608.04811v1",
+  "authors": [
+    "Timo Bartels",
+    "Danish Nazir",
+    "Jan Piewek",
+    "Thorsten Bagdonat",
+    "Tim Fingscheidt"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-06#paper-2608-04811",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:44.454543+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.04811v1",
+  "published_at": "2026-08-05T13:14:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.04811v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "StaticSegFormer: An Efficient High-Performance Semantic Segmentation Based on Static Structured Pruning",
+  "title_zh": "StaticSegFormer：一种基于静态结构剪枝的高效高性能语义分割方法",
+  "translation_url": "https://hjfy.top/arxiv/2608.04811"
+}

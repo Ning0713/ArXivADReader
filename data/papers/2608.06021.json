@@ -1,0 +1,55 @@
+{
+  "abstract": "Effective Visual Localization (VL) requires a map of the environment that combines compactness for efficient scalability with robustness against visual appearance changes and metric precision. Through low-dimensional image embeddings, Visual Place Recognition (VPR) is able to successfully meet the first two requirements, but its low metric accuracy makes it less suitable than standard VL approaches based on local features or neural representations. This limitation can be overcome by integrating VPR with the accurate local trajectory estimates produced by feed-forward neural 3D geometry (FF3D) models. In this paper, we address sequential appearance-based localization through a topometric framework that iteratively combines probabilistic VPR with FF3D metric pose estimation in controlled image sets. Our approach proposes an automatic offline mapping tool that models the topometric pose-appearance interaction in the different parts of the scene. This map is later employed by an online particle filter that estimates the pose from odometry and belief over places for FF3D inference, successfully incorporating neural metric estimation into probabilistic appearance-based localization. We extensively evaluate the framework on three known benchmarks, demonstrating substantial improvements over existing appearance-based methods. The modularity of our approach allows the descriptor extractor and FF3D model to remain interchangeable, and a focused analysis further shows that sequential belief can mitigate severe failures under perceptual aliasing.",
+  "abstract_zh": "有效的视觉定位（VL）需要一个环境地图，该地图在高效可扩展性与对视觉外观变化的鲁棒性及度量精度之间实现平衡。通过低维图像嵌入，视觉地点识别（VPR）能够成功满足前两个要求，但其低度量精度使其不如基于局部特征或神经表示的标准VL方法适用。通过将VPR与前馈神经3D几何模型（FF3D）生成的准确局部轨迹估计相结合，可以克服这一限制。本文通过一个拓扑框架解决基于外观的序列定位，该框架在受控图像集上迭代地将概率VPR与FF3D度量位姿估计结合。我们的方法提出了一种自动离线映射工具，建模场景不同部分的拓扑位姿-外观交互。该地图随后被在线粒子滤波器使用，该滤波器根据里程计和对地点的信念进行位姿估计，以实现FF3D推理，成功地将神经度量估计纳入基于概率的外观定位。我们在三个已知基准上对该框架进行了广泛评估，显示出相较于现有基于外观的方法有显著改进。我们方法的模块化特性使得描述符提取器和FF3D模型可以互换，进一步的聚焦分析表明，序列信念可以缓解感知混淆下的严重失败。",
+  "arxiv_id": "2608.06021",
+  "arxiv_url": "https://arxiv.org/abs/2608.06021v1",
+  "authors": [
+    "Eulogio Quemada-Torres",
+    "Alberto Jaenal",
+    "Francisco-Angel Moreno",
+    "Javier Gonzalez-Jimenez"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-07#paper-2608-06021",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:52.089117+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.06021v1",
+  "published_at": "2026-08-06T13:26:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "visual localization",
+      "autonomous vehicle localization"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-08-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.06021v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "Topometric Autonomous Vehicle Localization by Combining Visual Embeddings and Feed-Forward 3D Models",
+  "title_zh": "通过结合视觉嵌入和前馈3D模型实现的拓扑自主车辆定位",
+  "translation_url": "https://hjfy.top/arxiv/2608.06021"
+}

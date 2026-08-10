@@ -1,0 +1,52 @@
+{
+  "abstract": "As autonomous systems and smart cities continue to evolve, the demand for efficient and robust scene understanding becomes increasingly critical. Semantic segmentation plays a key role in enabling autonomous vehicles to comprehend complex urban environments. However, achieving high accuracy with minimal computational cost remains a significant challenge. In this paper, we present Edge-Gated Refinement Network (EGRNet), a lightweight and efficient deep learning model designed for real-time semantic segmentation in urban scenarios. The model incorporates depthwise separable convolutions to reduce computational complexity and dilated residual blocks for capturing rich multi-scale contextual information. Additionally, we introduce a novel Edge-Gated Refinement (EGR) module, which adaptively fuses original and refined features through a learnable gating mechanism, enhancing boundary preservation and edge-sensitive regions. To further improve feature representation, Squeeze-and-Excitation (SE) attention is applied across the network. With only 0.46M parameters, EGRNet achieves state-of-the-art performance while maintaining low computational overhead. When evaluated on the Cityscapes dataset, the model attains a mean Intersection over Union (mIoU) of 65.28%, demonstrating strong accuracy with minimal resource consumption. Moreover, we introduce a lightweight adversarial attack detection strategy, ensuring robustness against adversarial inputs without compromising real-time performance. By combining efficiency, accuracy, and resilience, EGRNet is well-suited for deployment on edge devices in safety-critical real-time applications.",
+  "abstract_zh": "随着自主系统和智慧城市的不断发展，对高效且稳健的场景理解的需求变得愈加重要。语义分割在使自主车辆理解复杂城市环境中发挥着关键作用。然而，以最小的计算成本实现高准确率仍然是一个重大挑战。本文提出了边缘门控细化网络（Edge-Gated Refinement Network，EGRNet），这是一种轻量级且高效的深度学习模型，旨在实现城市场景中的实时语义分割。该模型采用深度可分离卷积以降低计算复杂度，并使用膨胀残差块来捕捉丰富的多尺度上下文信息。此外，我们引入了一种新颖的边缘门控细化（Edge-Gated Refinement，EGR）模块，通过可学习的门控机制自适应融合原始特征和细化特征，增强边界保持和边缘敏感区域。为了进一步改善特征表示，网络中应用了挤压与激励（Squeeze-and-Excitation，SE）注意力机制。EGRNet仅需0.46M参数，即可在保持低计算开销的同时实现最先进的性能。在Cityscapes数据集上的评估中，该模型达到了65.28%的平均交并比（mean Intersection over Union，mIoU），展现出强大的准确性和最低的资源消耗。此外，我们还引入了一种轻量级的对抗攻击检测策略，确保在不影响实时性能的情况下对抗输入的鲁棒性。通过结合效率、准确性和韧性，EGRNet非常适合在安全关键的实时应用中部署于边缘设备。",
+  "arxiv_id": "2607.19617",
+  "arxiv_url": "https://arxiv.org/abs/2607.19617v1",
+  "authors": [
+    "Bareera Qaseem",
+    "Mohsin Kamal",
+    "Muhammad Naveed Aman"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-23#paper-2607-19617",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:19.076001+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.19617v1",
+  "published_at": "2026-07-21T22:54:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "cityscapes",
+      "autonomous",
+      "intersection",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-07-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.19617v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "EGRNet: A Lightweight Semantic Segmentation Network with Edge-Gated Refinement and Adversarial Sensing",
+  "title_zh": "EGRNet：一种具有边缘门控细化和对抗感知的轻量级语义分割网络",
+  "translation_url": "https://hjfy.top/arxiv/2607.19617"
+}

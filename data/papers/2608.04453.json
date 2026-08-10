@@ -1,0 +1,63 @@
+{
+  "abstract": "Online HD map construction is critical to prediction and planning in autonomous driving. We find that existing physical attacks against online map construction are limited by a cross-boundary compensation effect: after the target boundary is perturbed, another visible boundary may retain sufficient geometric cues for the model to recover the original road geometry. Based on this observation, we propose TwinIR, a new mechanism-guided physical attack methodology for online map construction. TwinIR jointly optimizes attack effectiveness and point sparsity, seeking the minimum number of attack points needed to suppress compensating geometric cues from surrounding boundaries. To reduce the perceptibility of multi-point attacks, TwinIR models camera responses to near-infrared illumination and maps optimized attack points to feasible physical placements, producing camera-visible interference with minimal visible-spectrum changes. Experiments on nuScenes across state-of-the-art online map construction models show that TwinIR reduces mAP by 8.18-8.96 percentage points under RSA and 2.84-5.62 points under ETA, while increasing the unreachable-goal rate by 25-28 points and the unsafe-planned-trajectory rate by 19-20 points over clean inputs. These attacks are also validated on a real-world testbed AV, where TwinIR successfully induces both road straightening and early-turn deformations while remaining inconspicuous in full-color views.",
+  "abstract_zh": "在线高清地图构建对自动驾驶中的预测和规划至关重要。我们发现，现有针对在线地图构建的物理攻击受到跨边界补偿效应的限制：在目标边界受到干扰后，另一个可见边界可能保留足够的几何线索，使模型能够恢复原始道路几何形状。基于这一观察，我们提出了TwinIR，一种新型的机制引导物理攻击方法，旨在在线地图构建中优化攻击效果和点稀疏性，寻求抑制周围边界补偿几何线索所需的最小攻击点数量。为了降低多点攻击的可感知性，TwinIR对近红外照明下的相机响应进行建模，并将优化的攻击点映射到可行的物理位置，产生在可见光谱变化最小的情况下可见的干扰。在nuScenes数据集上对最先进的在线地图构建模型进行的实验表明，TwinIR在RSA下将mAP降低了8.18-8.96个百分点，在ETA下降低了2.84-5.62个百分点，同时使不可达目标率提高了25-28个百分点，安全规划轨迹率提高了19-20个百分点，相较于干净输入。这些攻击还在真实世界测试平台的自动驾驶车辆上得到了验证，TwinIR成功引发了道路拉直和早转变形，同时在全彩视图中保持不显眼。",
+  "arxiv_id": "2608.04453",
+  "arxiv_url": "https://arxiv.org/abs/2608.04453v1",
+  "authors": [
+    "Haibo Hu",
+    "Jianghuai Deng",
+    "Chen Tang",
+    "Yang Lou",
+    "Qian Xu",
+    "Jianping Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-06#paper-2608-04453",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-10T13:01:44.425357+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.04453v1",
+  "published_at": "2026-08-05T05:08:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路",
+      "hd map"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.04453v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "TwinIR: Coordinated Invisible Dual-Point Attacks on Online HD Map Construction",
+  "title_zh": "TwinIR：在线高清地图构建中的协调隐形双点攻击",
+  "translation_url": "https://hjfy.top/arxiv/2608.04453"
+}

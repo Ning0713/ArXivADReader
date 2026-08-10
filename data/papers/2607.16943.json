@@ -1,0 +1,69 @@
+{
+  "abstract": "Safety validation at signalized intersections remains a critical bottleneck for the deployment of autonomous driving systems (ADS), as these scenarios involve dense heterogeneous traffic, contested right of way, and long-tail safety-critical interactions, posing significant challenges to the Safety of the Intended Functionality (SOTIF). Existing naturalistic driving datasets often suffer from geographical homogeneity, sparsity of safety-critical events, and lack of semantic risk annotations, which limit the evaluation of algorithmic generalizability and targeted SOTIF verification. To address these gaps, this paper introduces SinD 2.0, a large-scale drone-based intersection dataset dedicated to cross-domain ADS safety analysis. The main contributions of SinD 2.0 are: (1) Cross-domain diversity: It covers six signalized intersections across four Chinese cities, capturing distinct intersection topologies and regional driving behavior characteristics; (2) High-density risk interactions: A total of 32,682 safety-critical events are extracted via surrogate safety measures, significantly enriching the density of boundary test scenarios; (3) Hierarchical semantic annotations: Besides integration with high-definition (HD) maps and Signal Phase and Timing (SPaT) data, it provides multi-dimensional semantic labels including traffic violations, high-risk interactions, visual shielding, and narrow feasible areas; (4) Full-stack testing toolchain: It supports automated scenario extraction, prediction-only evaluation, open-loop replay, reactive closed-loop testing, and photorealistic rendering. Benchmark experiments demonstrate that SinD 2.0 exhibits significant domain shifts across cities, and the semantic risk subsets can effectively expose the performance limitations of ADS algorithms. The dataset, annotations, and testing toolchain are available at https://github.com/SOTIF-AVLab/SinD/tree/main.",
+  "abstract_zh": "在信号交叉口进行安全验证仍然是自主驾驶系统（ADS）部署的一个关键瓶颈，因为这些场景涉及密集的异构交通、争议的通行权和长尾的安全关键交互，给意图功能的安全性（SOTIF）带来了重大挑战。现有的自然驾驶数据集往往存在地理同质性、安全关键事件稀缺和缺乏语义风险注释等问题，这限制了算法的普遍性评估和针对性的SOTIF验证。为了解决这些问题，本文介绍了SinD 2.0，一个大型基于无人机的交叉口数据集，专注于跨领域的ADS安全分析。SinD 2.0的主要贡献包括：（1）跨领域多样性：覆盖四个中国城市的六个信号交叉口，捕捉不同的交叉口拓扑和区域驾驶行为特征；（2）高密度风险交互：通过替代安全措施提取了总计32,682个安全关键事件，显著丰富了边界测试场景的密度；（3）分层语义注释：除了与高清（HD）地图和信号相位与时序（SPaT）数据的集成外，还提供多维度的语义标签，包括交通违规、高风险交互、视觉遮挡和狭窄可行区域；（4）全栈测试工具链：支持自动场景提取、仅预测评估、开环重放、反应闭环测试和照片级真实感渲染。基准实验表明，SinD 2.0在城市之间表现出显著的领域转变，语义风险子集能够有效揭示ADS算法的性能局限性。数据集、注释和测试工具链可在 https://github.com/SOTIF-AVLab/SinD/tree/main 获取。",
+  "arxiv_id": "2607.16943",
+  "arxiv_url": "https://arxiv.org/abs/2607.16943v1",
+  "authors": [
+    "Yunwei Li",
+    "Shengjie Fu",
+    "Chunrong Chen",
+    "Chengxiang Zhao",
+    "Yuchen Fan",
+    "Mingyu Zhu",
+    "Yanchao Xu",
+    "Yuxin Zhang",
+    "Lan Yang",
+    "Chuzhao Li",
+    "Jie Ji",
+    "Yi He",
+    "Abhijit Sarkar",
+    "Akash Sonth",
+    "Hong Wang",
+    "Jun Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-16943",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.321543+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.16943v1",
+  "published_at": "2026-07-18T19:46:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "intersection",
+      "驾驶",
+      "交通",
+      "uav",
+      "drone",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 58
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.16943v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "地图/定位"
+    ]
+  },
+  "title": "SinD 2.0: A Multi-City UAV Dataset with Semantic Risk Annotations for SOTIF-Oriented Safety Validation at Signalized Intersections",
+  "title_zh": "SinD 2.0：一个具有语义风险注释的多城市无人机数据集，用于信号交叉口的面向SOTIF的安全验证",
+  "translation_url": "https://hjfy.top/arxiv/2607.16943"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Semantic 3D Gaussians provide a compact representation for 3D semantic occupancy prediction by rendering semantic primitives into a voxel volume under voxel-wise supervision. Recent methods have improved the modeling ability and efficiency of this representation through more flexible primitive shapes, geometry-guided initialization, and progressive densification. However, these advances mainly determine how primitives are represented, initialized, or added, and do not explicitly address how to select the most useful Gaussians when their total number must be limited to control memory and computation. This imbalance creates an allocation bottleneck: redundant Gaussians remain in simple regions, while difficult regions receive insufficient semantic support. We propose the Semantic Gaussian Allocation Transformer (SAGFormer), which uses Gaussian attributes and local geometric-semantic features to score candidates and select a fixed final Gaussian set. Experiments on nuScenes-SurroundOcc and SSCBench-KITTI-360 show that SAGFormer improves occupancy prediction under the evaluated protocols and yields more semantically consistent and better-utilized Gaussian representations. Under similar final counts and raw coverage, it reduces semantic mixing, strengthens class-consistent voxel support, and produces fewer unused Gaussians. The results indicate that explicit capacity allocation is a useful complement to Gaussian refinement for semantic occupancy prediction.",
+  "abstract_zh": "语义3D高斯为3D语义占用预测提供了一种紧凑的表示，通过在体素级监督下将语义原语渲染到体素体积中。最近的方法通过更灵活的原语形状、几何引导的初始化和渐进式稠密化，提高了这种表示的建模能力和效率。然而，这些进展主要决定了原语的表示、初始化或添加方式，并未明确解决在总数必须限制以控制内存和计算时如何选择最有用的高斯的问题。这种不平衡造成了分配瓶颈：冗余的高斯留在简单区域，而困难区域则获得不足的语义支持。我们提出了语义高斯分配变换器（Semantic Gaussian Allocation Transformer, SAGFormer），它利用高斯属性和局部几何-语义特征对候选者进行评分，并选择固定的最终高斯集。在nuScenes-SurroundOcc和SSCBench-KITTI-360上的实验表明，SAGFormer在评估协议下改善了占用预测，并产生了更具语义一致性和更好利用的高斯表示。在相似的最终数量和原始覆盖下，它减少了语义混合，加强了类别一致的体素支持，并产生了更少的未使用高斯。结果表明，明确的容量分配是语义占用预测中高斯精炼的有益补充。",
+  "arxiv_id": "2607.21896",
+  "arxiv_url": "https://arxiv.org/abs/2607.21896v1",
+  "authors": [
+    "Kanglin Ning",
+    "Yiran Zhao",
+    "Wenrui Li",
+    "Houde Quan",
+    "Qifan Li",
+    "Xingtao Wang",
+    "Xiaopeng Fan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-27#paper-2607-21896",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:35.529715+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.21896v1",
+  "published_at": "2026-07-24T01:52:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "kitti-360",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 68
+  },
+  "seen_dates": [
+    "2026-07-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.21896v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Learning Adaptive Semantic Gaussian Allocation for 3D Occupancy",
+  "title_zh": "学习自适应语义高斯分配用于3D占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2607.21896"
+}

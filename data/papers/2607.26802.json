@@ -1,0 +1,56 @@
+{
+  "abstract": "This paper presents a radial basis function network (RBFN)-informed motion planning framework for safe and efficient urban autonomous driving. The proposed approach combines RBFN-based candidate trajectory generation with an analytic collision probability assessment and optimization-based trajectory refinement. The network learns jerk-minimal trajectories, enabling the MPC to operate within a reduced and dynamically consistent search space. Candidate motion primitives are selected based on an accurate probabilistic risk measure. This design decreases solver complexity while preserving safety and constraint satisfaction. The framework is evaluated in numerous urban driving scenarios. Results demonstrate improved risk awareness and fewer vehicle-limit violations compared to benchmark methods. The proposed approach integrates learning-based trajectories into optimization-based motion planning, thereby ensuring safety and interpretability.",
+  "abstract_zh": "本文提出了一种基于径向基函数网络（RBFN）的运动规划框架，以实现安全高效的城市自动驾驶。所提出的方法结合了基于RBFN的候选轨迹生成、解析碰撞概率评估和基于优化的轨迹优化。该网络学习最小颠簸的轨迹，使得模型预测控制（MPC）能够在一个减少且动态一致的搜索空间内运行。候选运动原语的选择基于准确的概率风险度量。该设计在保持安全性和约束满足的同时，降低了求解器的复杂性。该框架在多个城市驾驶场景中进行了评估。结果表明，与基准方法相比，风险意识得到了改善，车辆限值违规情况减少。所提出的方法将基于学习的轨迹集成到基于优化的运动规划中，从而确保安全性和可解释性。",
+  "arxiv_id": "2607.26802",
+  "arxiv_url": "https://arxiv.org/abs/2607.26802v1",
+  "authors": [
+    "Marc Kaufeld",
+    "Dian Zhuang",
+    "Johannes Betz"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-30#paper-2607-26802",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:02.700942+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.26802v1",
+  "published_at": "2026-07-29T11:41:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "motion planning",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-07-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.26802v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "Risk-Aware Motion Planning with Learned Trajectory Primitives and Probabilistic Safety Assessment",
+  "title_zh": "基于学习的轨迹原语和概率安全评估的风险感知运动规划",
+  "translation_url": "https://hjfy.top/arxiv/2607.26802"
+}

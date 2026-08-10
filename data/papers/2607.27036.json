@@ -1,0 +1,51 @@
+{
+  "abstract": "Video diffusion-based world models enable long autoregressive video generation for robotics, autonomous driving and simulation tasks, yet sliding-window autoregressive inference suffers from severe error accumulation that degrades frame quality over time. Although this phenomenon has been widely observed, the underlying mechanism of compounding error and how to achieve stable long-horizon generation remain largely unresolved. In this paper, we investigate the internal representation dynamics of video world models and discover that compounding error is tightly coupled with dimensional collapse of hidden representations. Specifically, the effective rank of model representations sharply decreases at the onset of generation drift, revealing a strong connection between representational degradation and long-term rollout instability. Furthermore, we find that pure training data scaling fails to boost model resistance to error drift, contradicting mainstream scaling paradigms. To address this problem, we propose video representation regularization, a lightweight training constraint that stabilizes latent representations and suppresses iterative error accumulation. Compared with Diffusion Forcing, our method achieves improvements from 38.65 to 55.56 and from 44.37 to 72.08 on the Aesthetic Quality and Imaging Quality metrics of VBench. Our work establishes the first connection between autoregressive video drifting and model internal representations, adopts erank as a quantitative metric for error accumulation, reveals counterintuitive scaling limitations for video world models, and presents a simple yet effective regularization strategy to improve long video generation robustness.",
+  "abstract_zh": "基于视频扩散的世界模型使得机器人、自动驾驶和仿真任务能够进行长时间的自回归视频生成，但滑动窗口自回归推理在时间上严重的误差累积导致帧质量下降。尽管这一现象已被广泛观察，但复合误差的潜在机制以及如何实现稳定的长时间生成仍然在很大程度上未得到解决。本文研究了视频世界模型的内部表示动态，发现复合误差与隐藏表示的维度崩溃紧密相关。具体而言，模型表示的有效秩在生成漂移开始时急剧下降，揭示了表示退化与长期展开不稳定性之间的强关联。此外，我们发现单纯扩大训练数据并未能增强模型对误差漂移的抵抗力，这与主流的扩展范式相悖。为了解决这一问题，我们提出了视频表示正则化，这是一种轻量级的训练约束，能够稳定潜在表示并抑制迭代误差累积。与Diffusion Forcing相比，我们的方法在VBench的美学质量和成像质量指标上分别实现了从38.65到55.56和从44.37到72.08的提升。我们的工作首次建立了自回归视频漂移与模型内部表示之间的联系，采用有效秩（erank）作为误差累积的定量指标，揭示了视频世界模型的反直觉扩展限制，并提出了一种简单而有效的正则化策略，以提高长视频生成的鲁棒性。",
+  "arxiv_id": "2607.27036",
+  "arxiv_url": "https://arxiv.org/abs/2607.27036v1",
+  "authors": [
+    "Taiye Chen",
+    "Qi Zhang",
+    "Yisen Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-30#paper-2607-27036",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-10T13:01:02.750018+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.27036v1",
+  "published_at": "2026-07-29T15:29:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-07-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.27036v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Mitigating Compounding Error via Video Representation Regularization",
+  "title_zh": "通过视频表示正则化减轻复合误差",
+  "translation_url": "https://hjfy.top/arxiv/2607.27036"
+}

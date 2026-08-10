@@ -1,0 +1,50 @@
+{
+  "abstract": "Recent advances in 4D radar enable robust perception in adverse weather; however, the inherent sparsity, noise, and limited positional precision of radar point clouds pose significant challenges for registration-based odometry. In this letter, we propose RaDiVe, a 4D radar odometry framework designed to improve the accuracy and robustness of radar point-cloud registration. We introduce a distance-bounded Normal Distributions Transform (NDT), which improves optimization stability and computational efficiency by restricting the correspondence search to near-distance voxel pairs. To mitigate measurement ambiguity, we propose a velocity-discrepancy point uncertainty model that weights each input 4D radar point according to the discrepancy between its measured Doppler radial velocity and the radial velocity predicted from the estimated ego-velocity. Furthermore, we incorporate Signed Distance Function (SDF)-based surface point extraction via implicit neural mapping to construct a geometrically consistent and noise-filtered local submap. Evaluations across multiple public datasets demonstrate that RaDiVe outperforms existing 4D radar odometry baselines by 44.4% in translational Absolute Trajectory Error (ATE) and 21.3% in rotational ATE on average, while maintaining real-time performance. The source code will be made publicly available to the robotics community: https://github.com/to-be-open-sourced.",
+  "abstract_zh": "近年来4D雷达的进展使得在恶劣天气条件下实现鲁棒感知成为可能；然而，雷达点云固有的稀疏性、噪声以及有限的位置信息精度对基于配准的里程计提出了重大挑战。在本文中，我们提出了RaDiVe，一个旨在提高雷达点云配准准确性和鲁棒性的4D雷达里程计框架。我们引入了一种距离约束的正态分布变换（Normal Distributions Transform, NDT），通过将对应关系搜索限制在近距离体素对，从而提高了优化的稳定性和计算效率。为了减轻测量模糊性，我们提出了一种速度差异点不确定性模型，根据测量的多普勒径向速度与从估计的自我速度预测的径向速度之间的差异，对每个输入的4D雷达点进行加权。此外，我们通过隐式神经映射结合基于符号距离函数（Signed Distance Function, SDF）的表面点提取，构建了一个几何一致且经过噪声过滤的局部子图。对多个公共数据集的评估表明，RaDiVe在平移绝对轨迹误差（Absolute Trajectory Error, ATE）上平均优于现有的4D雷达里程计基准44.4%，在旋转ATE上优于21.3%，同时保持实时性能。源代码将向机器人社区公开： https://github.com/to-be-open-sourced.",
+  "arxiv_id": "2607.28045",
+  "arxiv_url": "https://arxiv.org/abs/2607.28045v1",
+  "authors": [
+    "Sangwoo Jung",
+    "Dongjae Lee",
+    "Chiyun Noh",
+    "Ayoung Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-31#paper-2607-28045",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:10.257997+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.28045v1",
+  "published_at": "2026-07-30T11:26:41Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "4d radar",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "标题命中自动驾驶专用技术"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-07-31"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.28045v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-31"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "预测/规划"
+    ]
+  },
+  "title": "RaDiVe: Robust 4D Radar Odometry with Distance-Bounded NDT and Velocity-Discrepancy Point Uncertainty",
+  "title_zh": "RaDiVe：基于距离约束的NDT和速度差异点不确定性的鲁棒4D雷达里程计",
+  "translation_url": "https://hjfy.top/arxiv/2607.28045"
+}

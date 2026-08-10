@@ -1,0 +1,60 @@
+{
+  "abstract": "High-definition (HD) maps are essential for autonomous driving systems. In constructing such maps, onboard multi-view camera images, standard-definition maps and satellite images provide crucial information. However, due to the modality and perspective differences among these data sources, existing methods often struggle to effectively align and fuse them, making online HD map construction still challenging. To address these issues, we propose Driver2Map, an online HD map construction model inspired by human drivers. Unlike existing HD map construction models that utilize only two modalities, our Driver2Map can simultaneously exploit three modalities. Specifically, we propose a \"two-stage alignment\" strategy to reduce spatial misalignment across different modalities. Additionally, we introduce \"Pose-Guided BEV Fusion\", a BEV (bird's-eye-view) generation module that leverages camera pose information to adaptively weight multi-view features, thereby effectively suppressing cross-view feature overlap during BEV generation. Also, we design a \"Pretrained Prior for Map Refinement\" module to refine the initial prediction by learning map structure priors, thus improving the HD map prediction under dynamic occlusions. Extensive experiments demonstrate that Driver2Map outperforms existing methods on both IoU and AP metrics.",
+  "abstract_zh": "高清（HD）地图对于自动驾驶系统至关重要。在构建此类地图时，车载多视角相机图像、标清地图和卫星图像提供了重要信息。然而，由于这些数据源之间的模态和视角差异，现有方法往往难以有效对齐和融合它们，使得在线高清地图构建仍然面临挑战。为了解决这些问题，我们提出了Driver2Map，这是一种受人类驾驶启发的在线高清地图构建模型。与仅利用两种模态的现有高清地图构建模型不同，我们的Driver2Map能够同时利用三种模态。具体而言，我们提出了一种“二阶段对齐”策略，以减少不同模态之间的空间错位。此外，我们引入了“姿态引导的鸟瞰图融合”（Pose-Guided BEV Fusion），这是一个利用相机姿态信息自适应加权多视角特征的鸟瞰图（BEV）生成模块，从而在BEV生成过程中有效抑制视角间特征重叠。同时，我们设计了一个“用于地图精细化的预训练先验”模块，通过学习地图结构先验来精细化初始预测，从而提高动态遮挡下的高清地图预测。大量实验表明，Driver2Map在IoU和AP指标上均优于现有方法。",
+  "arxiv_id": "2608.01338",
+  "arxiv_url": "https://arxiv.org/abs/2608.01338v1",
+  "authors": [
+    "Pan Yin",
+    "Runtian Xia",
+    "Weisong Kuang",
+    "Kaiyu Li",
+    "Cong Zhao",
+    "Xiangyong Cao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-01338",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:27.080554+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.01338v1",
+  "published_at": "2026-08-02T16:01:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "hd map",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.01338v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "地图/定位",
+      "多传感器融合"
+    ]
+  },
+  "title": "Driver2Map: Imitating Human Driving for Online High-Definition Map Construction",
+  "title_zh": "Driver2Map：模仿人类驾驶进行在线高清地图构建",
+  "translation_url": "https://hjfy.top/arxiv/2608.01338"
+}

@@ -1,0 +1,50 @@
+{
+  "abstract": "Autonomous racing overtaking requires balancing competitive performance with safety under nonlinear vehicle dynamics and real-time constraints. Model Predictive Control (MPC) combined with Control Barrier Functions (CBFs) provides a principled mechanism for certifying forward invariance of a safe set. However, commonly used fixed-decay discrete-time CBF formulations can become overly conservative in interactive racing scenarios, limiting overtaking performance and requiring manual tuning across track conditions. This paper proposes a hierarchical overtaking framework that explicitly separates maneuver-level decision making from safety-certified trajectory control, reducing conservatism while preserving safety. A high-level Mixed-Integer Quadratic Program (MIQP) resolves the combinatorial passing-side selection problem by selecting a feasible overtaking topology, while a nonlinear Frenet-frame MPC enforces vehicle dynamics and safety through embedded discrete-time CBF constraints. This decomposition isolates the combinatorial complexity of maneuver selection from the continuous trajectory optimization. To further mitigate the sensitivity of fixed-decay barrier constraints, a reinforcement learning policy adapts the discrete-time CBF decay parameter online, enabling context-dependent modulation of safety margins without directly controlling vehicle inputs. Simulation and scaled-hardware experiments show that no single fixed decay parameter achieves uniformly strong performance across tracks, whereas the adaptive strategy attains the highest aggregate success rate and consistently strong safety--performance trade-offs without per-track tuning, improving robustness to environment variation while maintaining safety constraint satisfaction in nominal operation.",
+  "abstract_zh": "自主赛车超车需要在非线性车辆动力学和实时约束下平衡竞争性能与安全性。模型预测控制（Model Predictive Control, MPC）结合控制屏障函数（Control Barrier Functions, CBFs）为验证安全集的前向不变性提供了一种原则性机制。然而，常用的固定衰减离散时间CBF公式在交互式赛车场景中可能变得过于保守，从而限制超车性能，并需要在不同赛道条件下进行手动调节。本文提出了一种层次化超车框架，明确将机动级决策与安全认证轨迹控制分开，减少保守性同时保持安全性。高层次的混合整数二次规划（Mixed-Integer Quadratic Program, MIQP）通过选择可行的超车拓扑来解决组合性超车侧选择问题，而非线性Frenet框架MPC则通过嵌入的离散时间CBF约束来强制执行车辆动力学和安全性。这种分解将机动选择的组合复杂性与连续轨迹优化隔离开来。为了进一步减轻固定衰减屏障约束的敏感性，强化学习策略在线调整离散时间CBF衰减参数，实现安全边际的上下文依赖调节，而无需直接控制车辆输入。仿真和缩放硬件实验表明，没有单一的固定衰减参数能够在各赛道上实现均匀强劲的性能，而自适应策略则在不需要逐赛道调节的情况下，获得了最高的整体成功率，并持续实现强大的安全性与性能权衡，提高了对环境变化的鲁棒性，同时在名义操作中保持了安全约束的满足。",
+  "arxiv_id": "2607.13348",
+  "arxiv_url": "https://arxiv.org/abs/2607.13348v1",
+  "authors": [
+    "Hassan Jardali",
+    "Kai Yin",
+    "Lantao Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-16#paper-2607-13348",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T12:58:49.728925+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.13348v1",
+  "published_at": "2026-07-15T00:19:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-07-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.13348v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Safe Overtaking for Autonomous Racing Using Hierarchical Optimization and Learning-Based Control",
+  "title_zh": "基于层次优化和学习控制的自主赛车安全超车",
+  "translation_url": "https://hjfy.top/arxiv/2607.13348"
+}

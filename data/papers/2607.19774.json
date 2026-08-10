@@ -1,0 +1,57 @@
+{
+  "abstract": "Vehicle-to-everything-aided autonomous driving (V2X-AD) significantly enhances driving performance through information sharing. However, existing collaborative perception methods only optimize module-level perception capabilities and fail to effectively serve the ultimate planning and control tasks. We propose an end-to-end collaborative driving system that directly optimizes planning task performance. The system employs MotionNetwork to fuse historical temporal information, utilizes attention mechanisms to efficiently compress spatial features into compact tokens, and adaptively fuses multi-agent features through an autoregressive decoder. Additionally, we introduce Mixture-of-Experts (MoE) architecture to enhance the model's representation capacity for heterogeneous features. Experiments demonstrate that our method achieves a driving score of 79.72, surpassing the state-of-the-art CoDriving baseline (77.15) by 3.33% in closed-loop evaluation while maintaining communication efficiency.",
+  "abstract_zh": "基于车与万物（V2X）辅助的自动驾驶（V2X-AD）通过信息共享显著提升了驾驶性能。然而，现有的协同感知方法仅优化模块级感知能力，未能有效服务于最终的规划和控制任务。我们提出了一种端到端的协同驾驶系统，直接优化规划任务的性能。该系统采用MotionNetwork融合历史时间信息，利用注意力机制高效地将空间特征压缩为紧凑的标记，并通过自回归解码器自适应地融合多智能体特征。此外，我们引入了专家混合（Mixture-of-Experts, MoE）架构，以增强模型对异构特征的表征能力。实验表明，我们的方法在闭环评估中实现了79.72的驾驶得分，超过了最先进的CoDriving基线（77.15）3.33%，同时保持了通信效率。",
+  "arxiv_id": "2607.19774",
+  "arxiv_url": "https://arxiv.org/abs/2607.19774v1",
+  "authors": [
+    "Nuoran Li",
+    "Zhang Zhang",
+    "Yueran Zhao",
+    "Tianze Wang",
+    "Chao Sun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-23#paper-2607-19774",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:00:19.058115+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.19774v1",
+  "published_at": "2026-07-22T05:44:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "vehicle-to-everything",
+      "v2x",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.19774v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "协同/V2X",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "Defer to Plan: Adaptive Multi-Agent Fusion for End-to-End V2X Driving",
+  "title_zh": "延迟规划：端到端V2X驾驶的自适应多智能体融合",
+  "translation_url": "https://hjfy.top/arxiv/2607.19774"
+}

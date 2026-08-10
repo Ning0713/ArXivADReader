@@ -1,0 +1,54 @@
+{
+  "abstract": "Camera-based bird's-eye-view (BEV) 3D detection typically assumes accurate and fixed camera extrinsics. In detectors using spatial cross-attention (SCA), extrinsic perturbations displace the image-plane projections of BEV reference points, causing queries to sample features from incorrect regions and degrading detection performance. To address this failure mode, Noise-Conditional Gated Rectification (NCGR) is proposed to compensate for projection errors without explicitly estimating a full six-degree-of-freedom extrinsic correction. For each query-camera pair, a 2D rectification offset is predicted and modulated by a camera-level gate to rectify the base projection before native deformable sampling. During training, the perturbation-derived quantities used to construct the condition and gate are gradually replaced through scheduled interpolation by counterparts generated from an auxiliary scalar predicted from camera features. This transition enables blind inference without perturbation metadata. During training, a weight-shared clean-teacher/perturbed-student pair is used, and the rectification module is supervised by a BEV-consistency objective between the two branches. NCGR is evaluated on nuScenes with simulated dynamic and static extrinsic perturbations. In a five-camera dynamic stress test, NCGR achieves 39.69% NDS, compared with 28.00% for BEVFormer and 33.23% for CAPE. Under clean extrinsics, NCGR maintains performance comparable to that of BEVFormer.",
+  "abstract_zh": "基于相机的鸟瞰视图（BEV）3D检测通常假设相机外部参数准确且固定。在使用空间交叉注意力（SCA）的检测器中，外部扰动会使BEV参考点的图像平面投影发生位移，从而导致查询从错误区域采样特征，降低检测性能。为了解决这一失败模式，提出了噪声条件门控整流（NCGR），以补偿投影误差，而无需显式估计完整的六自由度外部校正。对于每个查询-相机对，预测一个2D整流偏移，并通过相机级别的门控进行调制，以在本地可变采样之前整流基础投影。在训练过程中，用于构建条件和门控的扰动派生量通过调度插值逐渐被从相机特征生成的辅助标量的对应物替代。这一过渡使得在没有扰动元数据的情况下进行盲推理成为可能。在训练中，使用权重共享的干净教师/扰动学生对，并通过两个分支之间的BEV一致性目标对整流模块进行监督。NCGR在nuScenes上进行了评估，测试了模拟的动态和静态外部扰动。在五个相机的动态压力测试中，NCGR达到了39.69%的NDS，而BEVFormer为28.00%，CAPE为33.23%。在干净的外部参数下，NCGR保持了与BEVFormer相当的性能。",
+  "arxiv_id": "2608.03895",
+  "arxiv_url": "https://arxiv.org/abs/2608.03895v1",
+  "authors": [
+    "Wenbin Pan",
+    "Wanhao Liu",
+    "Liwei Luo",
+    "Panshuo Li",
+    "Yong Xu",
+    "Renquan Lu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-05#paper-2608-03895",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:37.418227+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.03895v1",
+  "published_at": "2026-08-04T16:26:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "bev",
+      "bird's-eye",
+      "3d object detection",
+      "3d detection"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 36
+  },
+  "seen_dates": [
+    "2026-08-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.03895v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "3D 检测",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "NCGR: Noise-Conditional Gated Rectification for Camera Extrinsic Perturbations in BEV 3D Object Detection",
+  "title_zh": "NCGR：用于鸟瞰视图（BEV）3D物体检测中相机外部扰动的噪声条件门控整流",
+  "translation_url": "https://hjfy.top/arxiv/2608.03895"
+}

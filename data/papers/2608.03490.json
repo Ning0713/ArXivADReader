@@ -1,0 +1,56 @@
+{
+  "abstract": "3D object detection using light detection and ranging (LiDAR) sensors requires a balance between accuracy and computational efficiency for onboard perception in autonomous driving and robotic navigation. Many existing LiDAR-based detection methods employ complex architectures to extract features, integrating large amounts of contextual information to enhance accuracy. This often results in significant computational costs, leading to suboptimal performance on resource-constrained embedded devices. In this study, we propose a knowledge distillation framework that transfers object-level voxel representations from a strong teacher model to lightweight student models through selective voxel-space feature alignment. Taking advantage of the linear-time sequence model with selective state spaces (Mamba), we design a multi-branch Mamba teacher backbone and a box-aware feature transfer mechanism that aligns spatially corresponding voxel features between teacher and student networks through a Mamba-based projection module. Experimental results on both a public dataset and real-world data show that our approach significantly reduces computational load while maintaining competitive accuracy compared with state-of-the-art methods.",
+  "abstract_zh": "使用激光雷达（LiDAR）传感器进行3D物体检测需要在自主驾驶和机器人导航的车载感知中实现准确性与计算效率之间的平衡。许多现有的基于LiDAR的检测方法采用复杂的架构来提取特征，整合大量上下文信息以提高准确性。这通常导致显著的计算成本，从而在资源受限的嵌入式设备上表现不佳。在本研究中，我们提出了一种知识蒸馏框架，通过选择性体素空间特征对齐，将对象级体素表示从强教师模型转移到轻量级学生模型。利用具有选择性状态空间的线性时间序列模型（Mamba），我们设计了一个多分支Mamba教师主干和一个盒子感知特征转移机制，通过基于Mamba的投影模块对教师和学生网络之间空间对应的体素特征进行对齐。我们在公共数据集和真实世界数据上的实验结果表明，我们的方法在保持与最先进方法竞争的准确性的同时，显著降低了计算负担。",
+  "arxiv_id": "2608.03490",
+  "arxiv_url": "https://arxiv.org/abs/2608.03490v1",
+  "authors": [
+    "Quoc Cuong Ninh",
+    "Huy Xuan Pham",
+    "Anh Tung Nguyen",
+    "Dinh Hoan Trinh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-05#paper-2608-03490",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:01:37.336425+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.03490v1",
+  "published_at": "2026-08-04T11:26:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "3d object detection",
+      "lidar",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 51
+  },
+  "seen_dates": [
+    "2026-08-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.03490v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "Lightweight 3D Object Detection via Mamba-Based Knowledge Distillation",
+  "title_zh": "基于Mamba的知识蒸馏轻量级3D物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.03490"
+}

@@ -1,0 +1,63 @@
+{
+  "abstract": "Lane boundary detection is a critical component in autonomous driving systems and has been rigorously studied in regular driving scenarios. However, it is less explored in vehicle racing, where the car moves at higher speeds across more extreme road geometries. To study this problem, we introduce a new dataset for 3D lane detection in racing, featuring >$250$k images from multiple camera feeds and inertial measurements taken with a Lexus LC 500 driving on a closed circuit. With this dataset, we compare various approaches to 3D lane detection and propose modifications that permit frames to be processed at rates of almost 300Hz while retaining high predictive performance in the racing application. This facilitates a multi-camera ensemble approach that is validated on hardware. We show that sensing modalities such as inertial measurements can be leveraged for pre-integration to regress road geometries over both cameras and time, yielding improvements in key metrics. Compared to methods such as BevLaneDet, adding odometry and ensemble predictions improves the F1 score by 3 points and reduces near-vehicle mean absolute errors (MAEs) by $>30 \\%$. We show F1 scores $>$0.9 and lateral MAEs of $<$0.18m in vehicle deployments.",
+  "abstract_zh": "车道边界检测是自动驾驶系统中的关键组成部分，并且在常规驾驶场景中得到了严格的研究。然而，在赛车中，由于车辆以更高的速度行驶并穿越更极端的道路几何形状，这一领域的研究相对较少。为了解决这个问题，我们引入了一个新的数据集，用于赛车中的3D车道检测，该数据集包含来自多个摄像头和使用雷克萨斯 LC 500 在封闭赛道上行驶时获取的惯性测量的超过250,000张图像。利用该数据集，我们比较了多种3D车道检测方法，并提出了修改方案，使得帧处理速率接近300Hz，同时在赛车应用中保持高预测性能。这促进了一种多摄像头集成方法，并在硬件上进行了验证。我们展示了惯性测量等传感方式可以用于预集成，以回归摄像头和时间上的道路几何形状，从而在关键指标上取得了改进。与 BevLaneDet 等方法相比，添加里程计和集成预测将 F1 分数提高了3分，并将近车道的平均绝对误差（MAE）减少了超过30%。我们在车辆部署中展示了 F1 分数超过0.9，横向 MAE 小于0.18米。",
+  "arxiv_id": "2607.14248",
+  "arxiv_url": "https://arxiv.org/abs/2607.14248v1",
+  "authors": [
+    "Omoruyi Atekha",
+    "John Subosits",
+    "Marcus Greiff"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-17#paper-2607-14248",
+  "categories": [
+    "cs.CV",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-08-10T12:59:47.213145+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.14248v1",
+  "published_at": "2026-07-15T18:07:27Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "car",
+      "road",
+      "lane",
+      "驾驶",
+      "车辆",
+      "道路",
+      "车道",
+      "lane detection",
+      "车道检测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-07-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.14248v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "3D Lane Detection with Odometry for High-Speed Vehicle Racing",
+  "title_zh": "基于里程计的高速赛车3D车道检测",
+  "translation_url": "https://hjfy.top/arxiv/2607.14248"
+}

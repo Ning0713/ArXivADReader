@@ -1,0 +1,49 @@
+{
+  "abstract": "Domain-incremental object detection (DIOD) requires models to continually adapt to new domains while preserving prior knowledge. Recently, parameter-efficient fine-tuning offers a promising avenue, wherein a pre-trained model is frozen and a small number of learnable parameters are injected for downstream tasks. However, these methods risk overwriting critical past knowledge, triggering inter-domain interference and performance degradation. To address this challenge, we propose Orthogonal Knowledge Refreshing (OKR), a simple yet effective framework for DIOD. OKR incrementally constructs independent domain-specific subspaces via dedicated low-rank branches for each domain, which are seamlessly fused for a holistic decision, enabling conflict-free capacity expansion without domain selection during inference. To minimize knowledge interference during fusion, we present a gradient-based orthogonal refreshing strategy that projects gradient updates of new domains onto the orthogonal complement of the fused historical subspace, supporting continual adaptation without forgetting. Moreover, to mitigate semantic fragmentation across domains, we enforce topology-aware consistency, aligning the semantic structures of old and new domains. Extensive experiments validate the superiority of OKR, outperforming the best exemplar-free method by significant margins of +5.6% and +6.5% mAP on the Pascal VOC and BDD100K series, respectively.",
+  "abstract_zh": "领域增量目标检测（DIOD）要求模型在不断适应新领域的同时保持先前知识。最近，参数高效的微调提供了一条有前景的途径，其中预训练模型被冻结，并为下游任务注入少量可学习参数。然而，这些方法存在覆盖关键过去知识的风险，导致领域间干扰和性能下降。为了解决这一挑战，我们提出了正交知识刷新（OKR），这是一个简单而有效的DIOD框架。OKR通过为每个领域构建专用的低秩分支，逐步构造独立的领域特定子空间，这些子空间无缝融合以形成整体决策，从而实现无冲突的能力扩展，而在推理过程中无需选择领域。为了在融合过程中最小化知识干扰，我们提出了一种基于梯度的正交刷新策略，该策略将新领域的梯度更新投影到融合历史子空间的正交补空间上，支持持续适应而不遗忘。此外，为了减轻领域间的语义碎片化，我们强制执行拓扑感知一致性，协调旧领域和新领域的语义结构。大量实验验证了OKR的优越性，在Pascal VOC和BDD100K系列上分别比最佳无示例方法提高了+5.6%和+6.5%的mAP。",
+  "arxiv_id": "2607.17340",
+  "arxiv_url": "https://arxiv.org/abs/2607.17340v1",
+  "authors": [
+    "Aoting Zhang",
+    "Dongbao Yang",
+    "Chang Liu",
+    "Xiaopeng Hong",
+    "Can Ma",
+    "Yu Zhou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-07-21#paper-2607-17340",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-10T13:00:05.433164+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2607.17340v1",
+  "published_at": "2026-07-19T17:02:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "bdd100k"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-07-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2607.17340v1",
+    "axi": "https://paper.axi404.top/daily/2026-07-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合"
+    ]
+  },
+  "title": "Orthogonal Knowledge Refreshing for Domain-Incremental Object Detection",
+  "title_zh": "领域增量目标检测的正交知识刷新",
+  "translation_url": "https://hjfy.top/arxiv/2607.17340"
+}

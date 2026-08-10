@@ -1,0 +1,51 @@
+{
+  "abstract": "In Formula 1, drivers optimize racing lines within tire grip limits to minimize lap times; however, in rally racing, drivers intentionally break traction to drift on loose surfaces. This maneuver rapidly aligns the vehicle for corner exits, ultimately reducing lap time. Autonomously executing such maneuvers formulates a complex dual-objective control problem: stabilizing highly nonlinear drift dynamics while strictly minimizing lap time. Addressing this challenge motivates the development of advanced Minimum-Lap-Time (MLT) drift control architectures. This paper proposes a planning-control framework specifically designed for MLT drifting scenario. First, we formulate an optimal control problem to generate a MLT drift planning trajectory, which is used as prior data to train a deep reinforcement learning drift controller. Given that drifting involves extremely large sideslip angles and is therefore challenging to learn directly, a Track-guided Reinforcement Learning (TgRL) drift control method is proposed to enable progressive training in a step-by-step manner, from drift control policy, to drift corner policy, and finally to a comprehensive drift race policy. The reward function incorporates both an instant reward term and an end reward term derived from the Minimum-Lap-Time objective. Simulation results demonstrate that the proposed framework enables the agent to learn a drift racing policy that not only ensures vehicle motion control performance but also effectively reduces lap time.",
+  "abstract_zh": "在一级方程式赛车中，车手在轮胎抓地力的限制内优化赛车线路，以最小化圈速；然而，在拉力赛中，车手故意打滑以在松散的路面上漂移。这一操作迅速使车辆在转角出口处对齐，从而最终减少圈速。自主执行此类操作形成了一个复杂的双重目标控制问题：在严格最小化圈速的同时稳定高度非线性的漂移动态。应对这一挑战促使了先进的最小圈速（Minimum-Lap-Time, MLT）漂移控制架构的发展。本文提出了一种专门为MLT漂移场景设计的规划控制框架。首先，我们构建了一个最优控制问题，以生成MLT漂移规划轨迹，该轨迹作为先验数据用于训练深度强化学习漂移控制器。考虑到漂移涉及极大的侧滑角，因此直接学习具有挑战性，提出了一种轨迹引导的强化学习（Track-guided Reinforcement Learning, TgRL）漂移控制方法，以逐步训练的方式，从漂移控制策略到漂移转角策略，最终到全面的漂移比赛策略。奖励函数结合了即时奖励项和源自最小圈速目标的最终奖励项。仿真结果表明，所提出的框架使代理能够学习到一种漂移比赛策略，不仅确保了车辆运动控制性能，还有效减少了圈速。",
+  "arxiv_id": "2608.00113",
+  "arxiv_url": "https://arxiv.org/abs/2608.00113v1",
+  "authors": [
+    "Sheng Zhao",
+    "Bolin Zhao",
+    "Xiaodong Wu",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-04#paper-2608-00113",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-10T13:01:26.929430+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.00113v1",
+  "published_at": "2026-07-31T08:50:40Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-08-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.00113v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "Track-Guided Hierarchical Reinforcement Learning for Autonomous Vehicle Drifting with Minimum-Lap-Time Planning",
+  "title_zh": "基于轨迹引导的层次强化学习在自主车辆漂移中的最小圈速规划",
+  "translation_url": "https://hjfy.top/arxiv/2608.00113"
+}
