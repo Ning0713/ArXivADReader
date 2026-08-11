@@ -166,7 +166,7 @@ class Repository:
         generated_at = dates[0].get("generated_at", "") if dates else ""
         self._prune_orphan_papers(unique_ids)
         storage_bytes = sum(
-            path.stat().st_size
+            len(path.read_bytes().replace(b"\r\n", b"\n"))
             for directory in (self.daily_dir, self.papers_dir)
             for path in directory.glob("*.json")
         )
