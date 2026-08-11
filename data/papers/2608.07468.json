@@ -1,0 +1,57 @@
+{
+  "abstract": "World-Action Models (WAMs) improve end-to-end autonomous driving by transferring video dynamics priors to action prediction, but existing methods require costly future generation at inference. We present SimWAM, a simple yet effective WAM that uses video generation purely as a training signal. It co-trains a pretrained video expert and a lightweight action expert with joint flow matching. An isolated attention mask keeps action prediction independent of future frames, allowing the video branch to be discarded after training and leaving a self-contained planner that directly predicts trajectories. Since the two experts share no parameters and interact only through a unified attention interface, the video backbone could be replaced and the action expert scaled independently without modifying the learning objective or inference pipeline. We further apply reinforcement learning to optimize a compositional driving reward beyond trajectory imitation. Our SimWAM achieves $91.5$ PDMS on NAVSIM, surpasses state-of-the-art WAM-based planners with substantially lower latency, and transfers zero-shot to nuScenes. These results position SimWAM as a simple yet solid baseline that could readily benefit from advances in video generation for efficient autonomous driving. The code and model weights are available at https://github.com/H-EmbodVis/SimWAM/",
+  "abstract_zh": "世界动作模型（WAMs）通过将视频动态先验转移到动作预测中，从而改善端到端自主驾驶，但现有方法在推理时需要昂贵的未来生成。我们提出了SimWAM，这是一种简单而有效的WAM，仅将视频生成作为训练信号。它通过联合流匹配共同训练一个预训练的视频专家和一个轻量级的动作专家。一个孤立的注意力掩码使得动作预测独立于未来帧，从而在训练后可以丢弃视频分支，留下一个自包含的规划器，直接预测轨迹。由于这两个专家不共享参数，仅通过统一的注意力接口进行交互，因此视频主干可以被替换，动作专家可以独立扩展，而无需修改学习目标或推理管道。我们进一步应用强化学习来优化超越轨迹模仿的组合驾驶奖励。我们的SimWAM在NAVSIM上达到了91.5的PDMS，超越了基于WAM的最先进规划器，且延迟显著更低，并且在nuScenes上实现了零样本迁移。这些结果使SimWAM成为一个简单而稳固的基线，能够从视频生成的进展中受益，以实现高效的自主驾驶。代码和模型权重可在 https://github.com/H-EmbodVis/SimWAM/ 获取。",
+  "arxiv_id": "2608.07468",
+  "arxiv_url": "https://arxiv.org/abs/2608.07468v1",
+  "authors": [
+    "Zongchuang Zhao",
+    "Xin Zhou",
+    "Tianyang Xu",
+    "Zhengyang Sun",
+    "Kaixuan Zhou",
+    "Honglin Li",
+    "Dingkang Liang",
+    "Xiang Bai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-10#paper-2608-07468",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-11T15:00:13.290157+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.07468v1",
+  "published_at": "2026-08-07T17:59:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-08-10"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.07468v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-10"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "SimWAM: A Simple World Action Model for End-to-End Autonomous Driving",
+  "title_zh": "SimWAM：一种简单的世界动作模型用于端到端自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.07468"
+}

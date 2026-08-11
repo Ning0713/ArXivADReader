@@ -1,0 +1,59 @@
+{
+  "abstract": "Physical adversarial attacks against person detectors have evolved from localized patches to full-body textures. However, achieving both visual naturalness and strong attack effectiveness remains challenging. Existing natural-looking methods typically optimize camouflage textures as a whole, limiting the flexibility to refine local adversarial patterns and their spatial arrangement. To address this issue, we propose AdvTiles, a physical adversarial camouflage framework built from learnable tiles, enabling strong attack performance while preserving a natural camouflage appearance. Specifically, we use a Straight-through (ST) Gumbel-Softmax estimator for differentiable tile selection, enabling joint optimization of tile patterns and spatial layouts. This design provides fine-grained control over adversarial texture generation. To improve robustness in diverse physical conditions, we further optimize the camouflage through differentiable 3D Gaussian Splatting rendering with variations in viewpoints, scales, illuminations and backgrounds. Extensive experiments across multiple detectors demonstrate that AdvTiles achieves an average ASR of 86.2%, outperforming existing state-of-the-art attack methods. We further fabricate the optimized camouflage into wearable adversarial clothing, validating its effectiveness in real-world scenarios across diverse distances, angles and backgrounds.",
+  "abstract_zh": "针对行人检测器的物理对抗攻击已从局部补丁演变为全身纹理。然而，实现视觉自然性与强攻击效果的平衡仍然具有挑战性。现有的自然外观方法通常将伪装纹理作为整体进行优化，这限制了对局部对抗模式及其空间排列的灵活调整。为了解决这一问题，我们提出了AdvTiles，一种基于可学习瓷砖构建的物理对抗伪装框架，能够在保持自然伪装外观的同时实现强大的攻击性能。具体而言，我们使用了直通（Straight-through, ST）Gumbel-Softmax估计器进行可微分的瓷砖选择，从而实现瓷砖模式和空间布局的联合优化。该设计提供了对对抗纹理生成的细粒度控制。为了提高在多样化物理条件下的鲁棒性，我们进一步通过可微分的3D高斯点云渲染优化伪装，考虑了视角、尺度、光照和背景的变化。针对多个检测器的广泛实验表明，AdvTiles实现了86.2%的平均攻击成功率（ASR），超越了现有的最先进攻击方法。我们还将优化后的伪装制成可穿戴的对抗服装，验证其在不同距离、角度和背景下的实际效果。",
+  "arxiv_id": "2608.06801",
+  "arxiv_url": "https://arxiv.org/abs/2608.06801v1",
+  "authors": [
+    "Jinlei Wang",
+    "Jiahuan Long",
+    "Mingkai Sun",
+    "Yafei Guo",
+    "Yuanhao Huang",
+    "Ming Wang",
+    "Junqi Wu",
+    "Jiacheng Hou",
+    "Hongbo Chen",
+    "Xingxing Wei",
+    "Tingsong Jiang",
+    "Wen Yao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-10#paper-2608-06801",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-11T15:00:13.255973+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.06801v1",
+  "published_at": "2026-08-07T04:45:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "行人",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-08-10"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.06801v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-10"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "AdvTiles: Physical Adversarial Camouflage Clothing against Person Detectors via Learnable Tiles",
+  "title_zh": "AdvTiles：一种基于可学习瓷砖的针对行人检测器的物理对抗伪装服装",
+  "translation_url": "https://hjfy.top/arxiv/2608.06801"
+}

@@ -164,12 +164,20 @@ class Repository:
                 }
             )
         generated_at = dates[0].get("generated_at", "") if dates else ""
+        self._prune_orphan_papers(unique_ids)
+        storage_bytes = sum(
+            path.stat().st_size
+            for directory in (self.daily_dir, self.papers_dir)
+            for path in directory.glob("*.json")
+        )
         index = {
             "generated_at": generated_at,
             "latest_date": dates[0]["date"] if dates else "",
             "total_papers": len(unique_ids),
             "total_daily_papers": sum(item["paper_count"] for item in dates),
             "total_days": len(dates),
+            "storage_bytes": storage_bytes,
+            "storage_mb": round(storage_bytes / (1024 * 1024), 2),
             "tag_counts": dict(sorted(tag_counts.items())),
             "dates": dates,
         }
@@ -179,7 +187,6 @@ class Repository:
             self.search_index_path,
             {"generated_at": index["generated_at"], "items": search_items},
         )
-        self._prune_orphan_papers(unique_ids)
         self._rebuild_history(unique_ids, generated_at)
         return index
 

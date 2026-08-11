@@ -498,6 +498,58 @@
       "url": "/daily/2026-08-11/#paper-2608-07562"
     },
     {
+      "abstract": "World-Action Models (WAMs) improve end-to-end autonomous driving by transferring video dynamics priors to action prediction, but existing methods require costly future generation at inference. We present SimWAM, a simple yet effective WAM that uses video generation purely as a training signal. It co-trains a pretrained video expert and a lightweight action expert with joint flow matching. An isolated attention mask keeps action prediction independent of future frames, allowing the video branch to be discarded after training and leaving a self-contained planner that directly predicts trajectories. Since the two experts share no parameters and interact only through a unified attention interface, the video backbone could be replaced and the action expert scaled independently without modifying the learning objective or inference pipeline. We further apply reinforcement learning to optimize a compositional driving reward beyond trajectory imitation. Our SimWAM achieves $91.5$ PDMS on NAVSIM, surpasses state-of-the-art WAM-based planners with substantially lower latency, and transfers zero-shot to nuScenes. These results position SimWAM as a simple yet solid baseline that could readily benefit from advances in video generation for efficient autonomous driving. The code and model weights are available at https://github.com/H-EmbodVis/SimWAM/",
+      "abstract_zh": "世界动作模型（WAMs）通过将视频动态先验转移到动作预测中，从而改善端到端自主驾驶，但现有方法在推理时需要昂贵的未来生成。我们提出了SimWAM，这是一种简单而有效的WAM，仅将视频生成作为训练信号。它通过联合流匹配共同训练一个预训练的视频专家和一个轻量级的动作专家。一个孤立的注意力掩码使得动作预测独立于未来帧，从而在训练后可以丢弃视频分支，留下一个自包含的规划器，直接预测轨迹。由于这两个专家不共享参数，仅通过统一的注意力接口进行交互，因此视频主干可以被替换，动作专家可以独立扩展，而无需修改学习目标或推理管道。我们进一步应用强化学习来优化超越轨迹模仿的组合驾驶奖励。我们的SimWAM在NAVSIM上达到了91.5的PDMS，超越了基于WAM的最先进规划器，且延迟显著更低，并且在nuScenes上实现了零样本迁移。这些结果使SimWAM成为一个简单而稳固的基线，能够从视频生成的进展中受益，以实现高效的自主驾驶。代码和模型权重可在 https://github.com/H-EmbodVis/SimWAM/ 获取。",
+      "authors": [
+        "Zongchuang Zhao",
+        "Xin Zhou",
+        "Tianyang Xu",
+        "Zhengyang Sun",
+        "Kaixuan Zhou",
+        "Honglin Li",
+        "Dingkang Liang",
+        "Xiang Bai"
+      ],
+      "date": "2026-08-10",
+      "id": "2608.07468",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "世界模型/生成"
+      ],
+      "title": "SimWAM: A Simple World Action Model for End-to-End Autonomous Driving",
+      "title_zh": "SimWAM：一种简单的世界动作模型用于端到端自主驾驶",
+      "url": "/daily/2026-08-10/#paper-2608-07468"
+    },
+    {
+      "abstract": "Physical adversarial attacks against person detectors have evolved from localized patches to full-body textures. However, achieving both visual naturalness and strong attack effectiveness remains challenging. Existing natural-looking methods typically optimize camouflage textures as a whole, limiting the flexibility to refine local adversarial patterns and their spatial arrangement. To address this issue, we propose AdvTiles, a physical adversarial camouflage framework built from learnable tiles, enabling strong attack performance while preserving a natural camouflage appearance. Specifically, we use a Straight-through (ST) Gumbel-Softmax estimator for differentiable tile selection, enabling joint optimization of tile patterns and spatial layouts. This design provides fine-grained control over adversarial texture generation. To improve robustness in diverse physical conditions, we further optimize the camouflage through differentiable 3D Gaussian Splatting rendering with variations in viewpoints, scales, illuminations and backgrounds. Extensive experiments across multiple detectors demonstrate that AdvTiles achieves an average ASR of 86.2%, outperforming existing state-of-the-art attack methods. We further fabricate the optimized camouflage into wearable adversarial clothing, validating its effectiveness in real-world scenarios across diverse distances, angles and backgrounds.",
+      "abstract_zh": "针对行人检测器的物理对抗攻击已从局部补丁演变为全身纹理。然而，实现视觉自然性与强攻击效果的平衡仍然具有挑战性。现有的自然外观方法通常将伪装纹理作为整体进行优化，这限制了对局部对抗模式及其空间排列的灵活调整。为了解决这一问题，我们提出了AdvTiles，一种基于可学习瓷砖构建的物理对抗伪装框架，能够在保持自然伪装外观的同时实现强大的攻击性能。具体而言，我们使用了直通（Straight-through, ST）Gumbel-Softmax估计器进行可微分的瓷砖选择，从而实现瓷砖模式和空间布局的联合优化。该设计提供了对对抗纹理生成的细粒度控制。为了提高在多样化物理条件下的鲁棒性，我们进一步通过可微分的3D高斯点云渲染优化伪装，考虑了视角、尺度、光照和背景的变化。针对多个检测器的广泛实验表明，AdvTiles实现了86.2%的平均攻击成功率（ASR），超越了现有的最先进攻击方法。我们还将优化后的伪装制成可穿戴的对抗服装，验证其在不同距离、角度和背景下的实际效果。",
+      "authors": [
+        "Jinlei Wang",
+        "Jiahuan Long",
+        "Mingkai Sun",
+        "Yafei Guo",
+        "Yuanhao Huang",
+        "Ming Wang",
+        "Junqi Wu",
+        "Jiacheng Hou",
+        "Hongbo Chen",
+        "Xingxing Wei",
+        "Tingsong Jiang",
+        "Wen Yao"
+      ],
+      "date": "2026-08-10",
+      "id": "2608.06801",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "深度/几何"
+      ],
+      "title": "AdvTiles: Physical Adversarial Camouflage Clothing against Person Detectors via Learnable Tiles",
+      "title_zh": "AdvTiles：一种基于可学习瓷砖的针对行人检测器的物理对抗伪装服装",
+      "url": "/daily/2026-08-10/#paper-2608-06801"
+    },
+    {
       "abstract": "Effective Visual Localization (VL) requires a map of the environment that combines compactness for efficient scalability with robustness against visual appearance changes and metric precision. Through low-dimensional image embeddings, Visual Place Recognition (VPR) is able to successfully meet the first two requirements, but its low metric accuracy makes it less suitable than standard VL approaches based on local features or neural representations. This limitation can be overcome by integrating VPR with the accurate local trajectory estimates produced by feed-forward neural 3D geometry (FF3D) models. In this paper, we address sequential appearance-based localization through a topometric framework that iteratively combines probabilistic VPR with FF3D metric pose estimation in controlled image sets. Our approach proposes an automatic offline mapping tool that models the topometric pose-appearance interaction in the different parts of the scene. This map is later employed by an online particle filter that estimates the pose from odometry and belief over places for FF3D inference, successfully incorporating neural metric estimation into probabilistic appearance-based localization. We extensively evaluate the framework on three known benchmarks, demonstrating substantial improvements over existing appearance-based methods. The modularity of our approach allows the descriptor extractor and FF3D model to remain interchangeable, and a focused analysis further shows that sequential belief can mitigate severe failures under perceptual aliasing.",
       "abstract_zh": "有效的视觉定位（VL）需要一个环境地图，该地图在高效可扩展性与对视觉外观变化的鲁棒性及度量精度之间实现平衡。通过低维图像嵌入，视觉地点识别（VPR）能够成功满足前两个要求，但其低度量精度使其不如基于局部特征或神经表示的标准VL方法适用。通过将VPR与前馈神经3D几何模型（FF3D）生成的准确局部轨迹估计相结合，可以克服这一限制。本文通过一个拓扑框架解决基于外观的序列定位，该框架在受控图像集上迭代地将概率VPR与FF3D度量位姿估计结合。我们的方法提出了一种自动离线映射工具，建模场景不同部分的拓扑位姿-外观交互。该地图随后被在线粒子滤波器使用，该滤波器根据里程计和对地点的信念进行位姿估计，以实现FF3D推理，成功地将神经度量估计纳入基于概率的外观定位。我们在三个已知基准上对该框架进行了广泛评估，显示出相较于现有基于外观的方法有显著改进。我们方法的模块化特性使得描述符提取器和FF3D模型可以互换，进一步的聚焦分析表明，序列信念可以缓解感知混淆下的严重失败。",
       "authors": [

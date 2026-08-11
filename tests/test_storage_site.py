@@ -46,8 +46,10 @@ def test_repository_and_static_build(tmp_path):
         candidate_count=2,
         raw_count=2,
     )
-    repository.rebuild_indexes("/")
+    index = repository.rebuild_indexes("/")
     assert not orphan_path.exists()
+    assert index["storage_bytes"] > 0
+    assert index["storage_mb"] >= 0
     assert validate_repository(repository) == []
 
     output = SiteBuilder(config).build()
@@ -56,6 +58,7 @@ def test_repository_and_static_build(tmp_path):
     assert daily.exists()
     html = daily.read_text(encoding="utf-8")
     assert "BEV/Occupancy" in html
+    assert "BEV/Occupancy / 1 / 2608.00001" in html
     assert "paper-2608-00001" in html
     assert (output / "assets" / "search-index.json").exists()
     search_index = json.loads(
