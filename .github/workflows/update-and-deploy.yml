@@ -104,37 +104,43 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: Remove stale failed Pages deployments
         if: ${{ success() && github.event_name == 'push' && contains(github.event.head_commit.message, '[cleanup-deployments]') }}
+        continue-on-error: true
         uses: actions/github-script@v7
         with:
           script: |
-            const deployments = await github.paginate(github.rest.repos.listDeployments, {
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              environment: "github-pages",
-              per_page: 100,
-            });
-            for (const deployment of deployments) {
-              const statuses = await github.rest.repos.listDeploymentStatuses({
+            try {
+              const deployments = await github.paginate(github.rest.repos.listDeployments, {
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                deployment_id: deployment.id,
-                per_page: 1,
+                environment: "github-pages",
+                per_page: 100,
               });
-              const state = statuses.data[0]?.state;
-              if (state !== "failure" && state !== "error") continue;
-              try {
-                await github.rest.repos.createDeploymentStatus({
+              for (const deployment of deployments) {
+                const statuses = await github.rest.repos.listDeploymentStatuses({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   deployment_id: deployment.id,
-                  state: "inactive",
+                  per_page: 1,
                 });
-                await github.rest.repos.deleteDeployment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  deployment_id: deployment.id,
-                });
-                core.info(`Deleted failed deployment ${deployment.id}.`);
-              } catch (error) {
-                core.warning(`Could not delete deployment ${deployment.id}: ${error.message}`);
+                const state = statuses.data[0]?.state;
+                if (state !== "failure" && state !== "error") continue;
+                try {
+                  await github.rest.repos.createDeploymentStatus({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    deployment_id: deployment.id,
+                    state: "inactive",
+                  });
+                  await github.rest.repos.deleteDeployment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    deployment_id: deployment.id,
+                  });
+                  core.info(`Deleted failed deployment ${deployment.id}.`);
+                } catch (error) {
+                  core.warning(`Could not delete deployment ${deployment.id}: ${error.message}`);
+                }
               }
+            } catch (error) {
+              core.warning(`Could not inspect Pages deployments: ${error.message}`);
+            }
