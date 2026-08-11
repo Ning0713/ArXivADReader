@@ -1,0 +1,60 @@
+{
+  "abstract": "Modern autonomous vehicles are equipped with multiple sensors, such as cameras, LiDAR, and radar, for comprehensive environmental perception. However, robust cross-modal feature fusion remains a critical challenge, as the reliability of each sensor varies significantly across diverse real-world driving conditions, including poor visibility and adverse weather. While uncertainty quantification (UQ) mitigates this issue by allowing models to prioritize reliable signals, existing uncertainty-aware fusion methods typically rely on simple feature-level uncertainty estimates and thus often fail to generalize effectively in complex, out-of-distribution scenarios. To address this limitation, we propose CRUISE, a novel uncertainty-aware cross-modal sensor fusion framework. CRUISE integrates a vision-language model (VLM)-guided UQ module that generates fine-grained, pixel-level uncertainty estimates. By leveraging the VLM's rich prior knowledge and superior contextual reasoning, our approach provides a highly informative guide for the fusion process. Furthermore, we introduce a dynamic adaptive mechanism that explicitly models and captures cross-modal dependencies, ensuring the framework fully exploits the inherent complementary nature of multi-sensor inputs.",
+  "abstract_zh": "现代自动驾驶车辆配备了多种传感器，如摄像头、激光雷达（LiDAR）和雷达，以实现全面的环境感知。然而，稳健的跨模态特征融合仍然是一个关键挑战，因为在不同的现实驾驶条件下，包括能见度差和恶劣天气，各传感器的可靠性差异显著。尽管不确定性量化（UQ）通过允许模型优先考虑可靠信号来缓解这一问题，但现有的考虑不确定性的融合方法通常依赖于简单的特征级不确定性估计，因此在复杂的超出分布场景中往往无法有效泛化。为了解决这一局限性，我们提出了CRUISE，一个新颖的考虑不确定性的跨模态传感器融合框架。CRUISE集成了一个基于视觉-语言模型（VLM）引导的不确定性量化模块，该模块生成细粒度的像素级不确定性估计。通过利用VLM丰富的先验知识和卓越的上下文推理，我们的方法为融合过程提供了高度信息化的指导。此外，我们引入了一种动态自适应机制，明确建模和捕捉跨模态依赖关系，确保框架充分利用多传感器输入的固有互补特性。",
+  "arxiv_id": "2608.09202",
+  "arxiv_url": "https://arxiv.org/abs/2608.09202v1",
+  "authors": [
+    "Junyao Wang",
+    "Yulin Xu",
+    "Yu Li",
+    "Pramod Khargonekar",
+    "Mohammad Abdullah Al Faruque"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-09202",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.652211+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.09202v1",
+  "published_at": "2026-08-10T07:17:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "sensor fusion",
+      "multi-sensor",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.09202v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "CRUISE: Vision-Language Model-Guided Uncertainty-Aware Cross-Modal Sensor Fusion for Robust Autonomous Driving",
+  "title_zh": "CRUISE：基于视觉-语言模型引导的考虑不确定性的跨模态传感器融合框架，用于稳健的自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.09202"
+}

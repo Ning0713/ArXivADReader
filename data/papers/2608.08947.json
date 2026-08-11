@@ -1,0 +1,52 @@
+{
+  "abstract": "Current hazard detection systems in autonomous driving may develop mesa objectives, learned internal goals that achieve high training performance through spurious correlations rather than genuine hazard recognition. We investigate whether human gaze patterns, captured via webcam-based eye tracking (WebGazer.js), can serve as privileged information to constrain mesa-objective formation. We collected 137,663 frame-level gaze samples synchronized with hazard annotations across 388 real dashcam clips, then test this hypothesis across two calibration protocols (9-point/45-click and 11-point/440-click), two model architectures (Random Forest and causal Transformer), and five random seeds per experiment with paired t-tests. No experiment yields a statistically significant improvement from gaze (p = 0.919, 0.578, and 0.667 respectively). A geometric analysis reveals the root cause: WebGazer's reported error (~130-257 px depending on configuration) exceeds 93% of detected hazard object sizes (median 36 px), rendering object-level gaze attribution physically impossible at this instrument precision.",
+  "abstract_zh": "当前自主驾驶中的危险检测系统可能会发展出次要目标，即通过虚假的相关性而非真实的危险识别来实现高训练性能的学习内部目标。我们研究了通过基于网络摄像头的眼动追踪（WebGazer.js）捕捉的人类注视模式是否可以作为特权信息来约束次要目标的形成。我们收集了137,663个与388个真实行车记录仪片段的危险注释同步的帧级注视样本，然后在两个校准协议（9点/45次点击和11点/440次点击）、两种模型架构（随机森林和因果变换器）以及每个实验的五个随机种子下测试这一假设，采用配对t检验。没有实验显示出注视带来的统计显著性改善（p = 0.919, 0.578和0.667）。几何分析揭示了根本原因：WebGazer报告的误差（~130-257像素，具体取决于配置）超过了93%的检测到的危险物体大小（中位数36像素），使得在这种仪器精度下进行物体级注视归因在物理上变得不可能。",
+  "arxiv_id": "2608.08947",
+  "arxiv_url": "https://arxiv.org/abs/2608.08947v1",
+  "authors": [
+    "Lennox Anderson",
+    "Ahmed Boutar",
+    "Jonah Mulcrone",
+    "Tal Erez"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-08947",
+  "categories": [
+    "cs.CV",
+    "cs.HC",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.389903+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.08947v1",
+  "published_at": "2026-08-09T22:55:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.08947v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "Can Webcam Gaze Constrain Mesa-Objectives in Driving Models? An Instrument Precision Analysis",
+  "title_zh": "网络摄像头注视是否能约束驾驶模型中的次要目标？一种仪器精度分析",
+  "translation_url": "https://hjfy.top/arxiv/2608.08947"
+}

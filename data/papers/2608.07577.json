@@ -1,0 +1,58 @@
+{
+  "abstract": "A closed-set detector for autonomous driving must assign every object one of a fixed set of labels. On an object outside that set (a horse-drawn carriage, road debris, livestock on a rural road) it can only force a confident but wrong specific label or drop the object. Prior work in this series replaced the flat label set with a hierarchical taxonomy and a runtime abstraction rule, but evaluated it only on the boxes a closed detector already produces. This paper takes the layer open-world: we place taxonomic abstraction on top of class-agnostic region proposals so objects the closed detector never boxes can still be classified or flagged; we report a feasibility study of three open-world signals (class-agnostic segmentation, appearance-based out-of-distribution scoring, monocular depth) that shows why no single 2D cue suffices and how they compose; and we run the evaluation the earlier papers could not, a ground-truth leave-classes-out benchmark on real annotated objects. Holding out seven COCO classes and classifying their 235 ground-truth crops, a flat closed head emits a confident wrong specific label 100% of the time (37% of them in the wrong super-category, e.g. an animal named as a vehicle), whereas the hierarchical layer emits zero confident wrong specific labels and safely handles 94% of the objects (a correct super-category, or an explicit UNKNOWN OBSTACLE). We are explicit that this is a safety result, not a specificity one: the correct super-category is recovered only 26% of the time and the remaining 69% are conservatively flagged unknown. The contribution is an open-world perception layer that never makes a confident categorical mistake on an out-of-vocabulary object, together with an honest account of its cost.",
+  "abstract_zh": "闭集检测器在自动驾驶中必须为每个物体分配固定标签集中的一个标签。对于该集合外的物体（如马车、道路碎片、乡村道路上的牲畜），它只能强制分配一个自信但错误的具体标签，或放弃该物体。之前的研究将平面标签集替换为层次分类法和运行时抽象规则，但仅在闭集检测器已经生成的框上进行了评估。本文将层次分类法应用于开放世界：我们在无类别区域提议之上进行分类抽象，以便闭集检测器从未框定的物体也能被分类或标记；我们报告了三种开放世界信号的可行性研究（无类别分割、基于外观的分布外评分、单目深度），展示了为何单一的二维线索不足以满足需求以及它们如何组合；我们进行了早期论文无法进行的评估，即在真实标注物体上的真实离类基准。我们保留了七个COCO类别，并对其235个真实标注裁剪进行分类，结果显示平面闭集头100%时间发出自信的错误具体标签（其中37%属于错误的超级类别，例如将动物标记为车辆），而层次层发出零个自信的错误具体标签，并安全处理94%的物体（一个正确的超级类别，或一个明确的未知障碍物）。我们明确指出这是一个安全结果，而非特异性结果：正确的超级类别仅在26%的情况下被恢复，其余69%被保守地标记为未知。我们的贡献是一个开放世界感知层，它在超出词汇范围的物体上从不做出自信的类别错误，同时诚实地说明了其成本。",
+  "arxiv_id": "2608.07577",
+  "arxiv_url": "https://arxiv.org/abs/2608.07577v1",
+  "authors": [
+    "Felix Schaller"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-07577",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.264535+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.07577v1",
+  "published_at": "2026-08-04T19:42:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路",
+      "monocular depth"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.07577v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "深度/几何"
+    ]
+  },
+  "title": "Open-World Hierarchical Perception: Taxonomic Abstraction over Class-Agnostic Proposals for the Safe Handling of Out-of-Vocabulary Road Objects",
+  "title_zh": "开放世界层次感知：针对超出词汇范围的道路物体安全处理的无类别提议的分类抽象",
+  "translation_url": "https://hjfy.top/arxiv/2608.07577"
+}

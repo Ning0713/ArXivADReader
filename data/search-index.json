@@ -1,6 +1,502 @@
 {
-  "generated_at": "2026-08-10T13:01:54.703875+00:00",
+  "generated_at": "2026-08-11T14:39:12.792310+00:00",
   "items": [
+    {
+      "abstract": "Lane detection requires recovering thin, elongated, and frequently occluded lane structures under challenging driving conditions. While anchor-based detectors provide efficient candidate generation, their performance is limited by two coupled issues: backbone features often lose structural continuity along partially visible lanes, and classification confidence may decouple from line-level localization quality, allowing inaccurate anchors to persist before non-maximum suppression (NMS). We propose a structure-enhanced and quality-aware framework that improves lane representation and dynamic-anchor scoring while preserving the inference pipeline of the Anchor Decomposition Network (ADNet). Specifically, a Gated Horizontal-Vertical Token (GHVT) module enhances mid- and high-level backbone features via lightweight directional token interactions with a learnable residual gate. In parallel, Line-Quality-Aware Dynamic Anchor Scoring (LQAS) calibrates existing classification logits using quality supervision, hard-negative suppression, and pairwise ranking without adding inference branches. On the VIL-100 dataset, our method improves ADNet-R34 from 89.97 to 91.28 in F1 score at the 0.5 intersection-over-union threshold (F1@50), reducing both false positives and false negatives. Additional experiments on CULane and TuSimple datasets, extensive ablations, score-distribution diagnostics, and runtime analysis confirm complementary structural and ranking improvements with minimal computational overhead.",
+      "abstract_zh": "车道检测需要在复杂的驾驶条件下恢复细长且经常被遮挡的车道结构。虽然基于锚点的检测器提供了高效的候选生成，但其性能受到两个相互关联问题的限制：主干特征在部分可见车道上往往失去结构连续性，且分类置信度可能与线级定位质量脱钩，导致不准确的锚点在非极大值抑制（NMS）之前持续存在。我们提出了一种结构增强和质量感知框架，旨在改善车道表示和动态锚评分，同时保持锚分解网络（Anchor Decomposition Network，ADNet）的推理流程。具体而言，门控水平-垂直标记（Gated Horizontal-Vertical Token，GHVT）模块通过与可学习残差门的轻量级方向标记交互，增强中高层主干特征。同时，线质量感知动态锚评分（Line-Quality-Aware Dynamic Anchor Scoring，LQAS）利用质量监督、困难负样本抑制和成对排名来校准现有分类逻辑，而无需增加推理分支。在VIL-100数据集上，我们的方法将ADNet-R34的F1分数从89.97提高到91.28（在0.5交并比阈值下，F1@50），同时减少了假阳性和假阴性。在CULane和TuSimple数据集上的额外实验、广泛的消融实验、得分分布诊断和运行时分析确认了结构和排名的互补改进，且计算开销最小。",
+      "authors": [
+        "Weize Cai",
+        "Yongqi Dong",
+        "Zhida Shao",
+        "Yichen Liu",
+        "Zixin Fu"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.09610",
+      "tags": [
+        "感知",
+        "地图/定位",
+        "仿真/数据"
+      ],
+      "title": "Structure-Enhanced Features and Quality-Aware Dynamic Anchor Scoring for Robust Lane Detection",
+      "title_zh": "结构增强特征与质量感知动态锚评分用于鲁棒车道检测",
+      "url": "/daily/2026-08-11/#paper-2608-09610"
+    },
+    {
+      "abstract": "Vision-language models (VLMs) have advanced scene understanding and enabled explicit reasoning in end-to-end autonomous driving. However, existing methods insufficiently integrate spatial-physical evidence into planning reasoning, while reasoning adaptation remains coarse-grained and falls short of scene-specific planning demands. Furthermore, reasoning-path optimization for higher planning quality remains largely unexplored in autonomous-driving post-training. To address these limitations, we propose FactorDrive, an end-to-end autonomous driving framework for adaptive multi-step reasoning driven by planning-critical factors (PCFs). We first perform large-scale driving-domain instruction tuning to establish foundational driving knowledge. Building on this foundation, we construct PCF-CoT, a chain-of-thought (CoT) dataset that grounds planning reasoning in trajectory-relevant spatial-physical evidence and organizes reasoning around scene-specific PCFs, enabling the composition and depth of reasoning paths to adapt to different planning demands. We further introduce Quality Search-Guided Group Relative Policy Optimization (QS-GRPO), which guides Monte Carlo Tree Search (MCTS) with trajectory-level planning rewards to discover reasoning paths with higher planning quality and uses the resulting responses to optimize the policy through GRPO, thereby improving trajectory planning performance. Extensive experiments on both open-loop (nuScenes) and closed-loop-oriented (NAVSIM) benchmarks demonstrate that FactorDrive achieves state-of-the-art planning performance.",
+      "abstract_zh": "视觉语言模型（VLMs）已推动场景理解的发展，并在端到端自主驾驶中实现了显式推理。然而，现有方法在将空间物理证据融入规划推理方面不足，同时推理适应性仍然较为粗糙，无法满足场景特定的规划需求。此外，针对更高规划质量的推理路径优化在自主驾驶后训练中仍然未得到充分探索。为了解决这些局限性，我们提出了FactorDrive，这是一个端到端自主驾驶框架，旨在通过规划关键因素（PCFs）驱动自适应多步骤推理。我们首先进行大规模驾驶领域的指令微调，以建立基础驾驶知识。在此基础上，我们构建了PCF-CoT，一个将规划推理与轨迹相关的空间物理证据相结合的思维链（CoT）数据集，并围绕场景特定的PCFs组织推理，使推理路径的组成和深度能够适应不同的规划需求。我们进一步引入了质量搜索引导的群体相对策略优化（QS-GRPO），该方法通过轨迹级规划奖励引导蒙特卡洛树搜索（MCTS），以发现具有更高规划质量的推理路径，并利用生成的响应通过GRPO优化策略，从而提高轨迹规划性能。在开放循环（nuScenes）和闭环导向（NAVSIM）基准上的大量实验证明，FactorDrive达到了最先进的规划性能。",
+      "authors": [
+        "Guolei Huang",
+        "Tengfei She",
+        "Yuxuan Lu",
+        "Yao Huang",
+        "Yuqi Ye",
+        "Yongjun Shen"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.09591",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "FactorDrive: Adaptive Multi-Step Reasoning Driven by Planning-Critical Factors for End-to-End Autonomous Driving",
+      "title_zh": "FactorDrive：基于规划关键因素的自适应多步骤推理驱动的端到端自主驾驶",
+      "url": "/daily/2026-08-11/#paper-2608-09591"
+    },
+    {
+      "abstract": "Connected Autonomous Vehicles (CAVs) increasingly exploit Vehicle-to-Everything (V2X) communication to exchange multi-source sensor information, enabling advanced Collaborative Perception (CP) capabilities. Extending beyond these capabilities, this work focuses on Collaborative Joint Perception and Prediction (Co-P&P), a paradigm that unifies CP with motion prediction to mitigate two persistent challenges: the accumulation of perception errors and visual occlusions. We present a conceptual framework for Collaborative Joint Perception and Prediction (Co-P&P) that improves motion prediction of surrounding road users, thereby enhancing situational awareness in complex and dynamic traffic environments. Building upon our preliminary study, this extended version compares the performance of different fusion strategies and establishes baseline performance for a modular design of perception and prediction. Experimental results show that prediction-level fusion leads to a decline in overall system performance compared to detection-level or tracking-level fusion. We further implement a minimal end-to-end Co-P&P prototype that couples collaborative point-cloud sharing via the RENO neural codec with joint detection-forecasting via FutureDet, showing that collaboration improves forecasting accuracy while neural compression preserves this benefit at roughly 34x lower communication bandwidth.",
+      "abstract_zh": "连接自主车辆（CAVs）越来越多地利用车与所有事物（V2X）通信来交换多源传感器信息，从而实现先进的协作感知（CP）能力。超越这些能力，本研究聚焦于协作联合感知与预测（Co-P&P），这一范式将协作感知与运动预测结合起来，以缓解两个持续存在的挑战：感知误差的累积和视觉遮挡。我们提出了一个协作联合感知与预测（Co-P&P）的概念框架，旨在改善周围道路使用者的运动预测，从而增强复杂和动态交通环境中的情境意识。在我们的初步研究基础上，本扩展版本比较了不同融合策略的性能，并为感知与预测的模块化设计建立了基线性能。实验结果表明，与检测级或跟踪级融合相比，预测级融合导致整体系统性能下降。我们进一步实现了一个最小化的端到端Co-P&P原型，该原型通过RENO神经编码器实现协作点云共享，并通过FutureDet实现联合检测与预测，显示出协作提高了预测准确性，而神经压缩在大约34倍更低的通信带宽下保留了这一优势。",
+      "authors": [
+        "Lei Wan",
+        "Hannan Ejaz Keen",
+        "Alexey Vinel"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.09541",
+      "tags": [
+        "感知",
+        "端到端驾驶",
+        "协同/V2X"
+      ],
+      "title": "Towards Collaborative Joint Perception and Prediction: Framework, Baseline Evaluation, and Deployment Perspectives",
+      "title_zh": "朝向协作联合感知与预测：框架、基线评估与部署视角",
+      "url": "/daily/2026-08-11/#paper-2608-09541"
+    },
+    {
+      "abstract": "Automated detection of subsurface cavities from Ground Penetrating Radar (GPR) is most difficult in soft, high-water-content ground, where conductive, water-saturated soil attenuates the signal and degrades cavity reflections, yet this is also the condition under which cavities most readily form. This paper proposes TriView-YOLO, a multi-view YOLOv12 detector for road cavity screening in such ground. Three co-registered views (longitudinal B-scan, horizontal C-scan, and cross-section B-scan) form a 9-channel input fused by a TripleInputConv layer that replaces the YOLOv12 stem; the rest of the network is unchanged, and bounding boxes are required on the longitudinal view only. Training used 1,600 expert-verified field samples, principally metropolitan road surveys of Bangkok, Thailand, acquired with a vehicle-mounted multichannel three-dimensional GPR mobile mapping system, with surveys over the firmer subgrades of Japan added to training and validation only. The test set comes exclusively from the Bangkok surveys, over soft marine clay with 80-140% water content and a water table at 1-2 m depth, a ground condition for which no dedicated deep learning cavity-detection evaluation has been reported. On this unaugmented, field-only test set, split randomly within surveys, the proposed model attains mAP50 of 0.558 +/- 0.028 over three seeds at 23.6 GFLOPs and 3.1 ms per image. Ablations show that removing the auxiliary views lowers mAP50 and recall, whereas public and synthetic training images, DINOv3 features, larger model scale, and COCO pretraining bring no gain.",
+      "abstract_zh": "从地面穿透雷达（GPR）自动检测地下空腔在软质高水分土壤中最为困难，因为导电的水饱和土壤会衰减信号并降低空腔反射的质量，然而，这也是空腔最容易形成的条件。本文提出了TriView-YOLO，一种用于此类土壤中道路空腔筛查的多视角YOLOv12检测器。三个共注册视角（纵向B扫描、横向C扫描和横截面B扫描）形成一个由TripleInputConv层融合的9通道输入，该层替代了YOLOv12的主干；其余网络保持不变，并且仅在纵向视图上需要边界框。训练使用了1,600个专家验证的现场样本，主要是泰国曼谷的城市道路调查，这些样本是通过车载多通道三维GPR移动测绘系统获取的，同时在训练和验证中还加入了日本较坚硬的路基的调查数据。测试集完全来自曼谷的调查，覆盖80-140%水分含量的软质海洋粘土，水位在1-2米深处，这是一个尚未报道专门的深度学习空腔检测评估的土壤条件。在这个未增强的仅现场测试集上，随机分割于调查中，所提模型在23.6 GFLOPs和每幅图像3.1毫秒的情况下，达到了mAP50为0.558 +/- 0.028，基于三个种子的结果。消融实验表明，去除辅助视角会降低mAP50和召回率，而公共和合成训练图像、DINOv3特征、更大的模型规模和COCO预训练则没有带来收益。",
+      "authors": [
+        "Suphawut Thawinutchokaudom",
+        "Sompote Youwai",
+        "Warat Kongkitkul",
+        "Mitsumasa Yamashina",
+        "Jose M. D. S. Rodrigues Neto",
+        "Jun Shinohara"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.09522",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "多传感器融合"
+      ],
+      "title": "TriView-YOLO: Early Multi-View Fusion for Ground Penetrating Radar Cavity Detection in Soft, High-Water-Content Soils",
+      "title_zh": "TriView-YOLO：用于软质高水分土壤中地面穿透雷达空腔检测的早期多视角融合",
+      "url": "/daily/2026-08-11/#paper-2608-09522"
+    },
+    {
+      "abstract": "Long-horizon future-frame prediction is important for autonomous driving, traffic surveillance, and intelligent transportation systems, yet remains challenging due to temporal ghosting, geometry drift, and inconsistent object motion. Recent latent video diffusion models have achieved impressive visual quality, but directly applying them to structured traffic scenes often leads to unstable geometry and degraded temporal coherence over extended horizons. We present a training-free inference framework that stabilizes reliable static structure in pretrained video predictions through multi-frame temporal context and view-conditioned routing. For front-camera videos, our method refines generated futures with a multi-frame depth-layered renderer that projects static geometry from observed history frames while preserving dynamic regions from the generative base model. For heterogeneous traffic views, a frozen vision-language model infers a coarse camera group from the observed clip and selects a specialized motion-based predictor. The framework requires neither retraining nor fine-tuning of the underlying video model and can be applied directly to pretrained generators. We validate the proposed framework on the AI City Challenge Track 5 benchmark, where our final system achieves competitive performance among the top-ranked teams. These results demonstrate that geometry-aware inference-time refinement and view-conditioned hybrid inference can improve static-geometry stability and low-level structural fidelity without changing the original model architecture.",
+      "abstract_zh": "长时间范围的未来帧预测对于自动驾驶、交通监控和智能交通系统至关重要，但由于时间鬼影、几何漂移和不一致的物体运动，仍然面临挑战。最近的潜在视频扩散模型在视觉质量上取得了令人印象深刻的成果，但直接将其应用于结构化交通场景往往导致几何不稳定和长时间范围内的时间一致性下降。我们提出了一种无训练推理框架，通过多帧时间上下文和视图条件路由来稳定预训练视频预测中的可靠静态结构。对于前置摄像头视频，我们的方法使用多帧深度分层渲染器来细化生成的未来帧，该渲染器从观察到的历史帧中投影静态几何，同时保留来自生成基础模型的动态区域。对于异构交通视图，一个冻结的视觉-语言模型从观察到的片段中推断出粗略的摄像机组，并选择一个专门的基于运动的预测器。该框架不需要对底层视频模型进行重新训练或微调，可以直接应用于预训练生成器。我们在AI City Challenge Track 5基准上验证了所提出的框架，其中我们的最终系统在排名前列的团队中表现出竞争力。这些结果表明，几何感知的推理时细化和视图条件的混合推理可以在不改变原始模型架构的情况下，提高静态几何的稳定性和低级结构的保真度。",
+      "authors": [
+        "Khang Minh Le",
+        "Hieu Dinh Trung Pham",
+        "Luu Thanh Danh",
+        "Nam-Tien Le",
+        "Hieu Anh Ngo",
+        "Phuong Huu Vu Tran",
+        "Son Nguyen Minh Le",
+        "Nguyen Trong Nghia",
+        "Tu Tran Thi Cam",
+        "Huy Minh Nhat Nguyen",
+        "Cuong Tuan Nguyen"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.09493",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成",
+        "感知"
+      ],
+      "title": "GeoRoute: Geometry-Aware Hybrid Inference for Traffic Future-Frame Prediction",
+      "title_zh": "GeoRoute：几何感知混合推理用于交通未来帧预测",
+      "url": "/daily/2026-08-11/#paper-2608-09493"
+    },
+    {
+      "abstract": "Simulation is crucial for developing and testing autonomous driving systems. In particular, the development of localization and control algorithms relies on an accurate vehicle dynamics simulation. However, most vehicle dynamics models are two-dimensional while real-world roads are three-dimensional. For example, effects from the three-dimensional road geometry on the Las Vegas Motor Speedway can increase the normal forces on the tires by more than 66% compared to the nominal load at standstill. As a result, even highly detailed planar vehicle dynamics models struggle to accurately reproduce the real vehicle's behavior. While solutions for three-dimensional vehicle dynamics exist, they are rarely adopted, computationally expensive, and complex. To address this issue, we present a novel method to couple planar vehicle dynamics models with real-world three-dimensional road geometry. We transform the planar vehicle state from the vehicle model's two-dimensional plane to its corresponding representation in three-dimensional space. Additionally, we calculate road-geometry-induced forces and moments and apply them to the planar vehicle model. We validate our approach using high-speed data recorded with a full-scale race car on the banked Las Vegas Motor Speedway. Furthermore, on synthetic tracks, we show that our method yields accurate results even in edge cases. Together, our results demonstrate that the gap between planar simulation and real-world three-dimensional roads can be closed without abandoning simpler planar models. To simplify adoption of our method, we provide the implementation as open-source software on github.com/TUMFTM/3d-road-geometry-coupling.",
+      "abstract_zh": "仿真对于开发和测试自动驾驶系统至关重要。特别是，定位和控制算法的开发依赖于准确的车辆动力学仿真。然而，大多数车辆动力学模型是二维的，而现实世界的道路是三维的。例如，拉斯维加斯赛车场的三维道路几何对轮胎的法向力影响可使其超过静止状态下名义载荷的66%。因此，即使是高度详细的平面车辆动力学模型也难以准确再现真实车辆的行为。虽然存在三维车辆动力学的解决方案，但它们很少被采用，且计算成本高、复杂。为了解决这一问题，我们提出了一种新方法，将平面车辆动力学模型与现实世界的三维道路几何相耦合。我们将车辆模型的二维平面上的平面车辆状态转换为其在三维空间中的相应表示。此外，我们计算道路几何引起的力和力矩，并将其应用于平面车辆模型。我们使用在倾斜的拉斯维加斯赛车场上用全尺寸赛车记录的高速数据验证了我们的方法。此外，在合成轨道上，我们展示了即使在极端情况下，我们的方法也能产生准确的结果。我们的结果表明，平面仿真与现实世界三维道路之间的差距可以在不放弃更简单的平面模型的情况下缩小。为了简化我们方法的采用，我们将其实现作为开源软件发布在github.com/TUMFTM/3d-road-geometry-coupling上。",
+      "authors": [
+        "Simon Sagmeister",
+        "Phillip Pitschi",
+        "Nico Haja",
+        "Markus Lienkamp"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.09402",
+      "tags": [
+        "深度/几何",
+        "地图/定位",
+        "仿真/数据"
+      ],
+      "title": "Beyond the Plane: Coupling Planar Vehicle Dynamics with Three-Dimensional Road Geometry",
+      "title_zh": "超越平面：将平面车辆动力学与三维道路几何相耦合",
+      "url": "/daily/2026-08-11/#paper-2608-09402"
+    },
+    {
+      "abstract": "Large-scale language models for autonomous driving enable enhanced global understanding and long-horizon planning. However, when deployed in isolated vehicles, limited sensing range and occlusions restrict reliable decision-making, and the substantial computational and latency overhead makes on-board deployment impractical. Cooperative driving provides a potential solution by leveraging external agents for information exchange, but existing methods remain limited in semantic reasoning capability under practical constraints. To address these challenges, we propose DH-VLM, a dual-horizon cooperative latent reasoning framework that enables asymmetric semantic cooperation between the infrastructure and ego vehicle. The infrastructure aggregates multi-layer hidden states to form a global-reasoning horizon latent guidance, which is integrated into the ego model through an Infrastructure-Driven Latent Evolution mechanism for conditional latent refinement. This enables the ego vehicle to leverage long-range contextual understanding while preserving autonomous decision-making within its local planning horizon. Furthermore, we construct a cooperation-oriented question-answer (QA) dataset covering fundamental scene understanding and ego-personalized comprehension to support counterfactual and safety-aware reasoning. Extensive experiments demonstrate that DH-VLM achieves state-of-the-art planning performance, outperforming the previous state of the art by 14.6% in L2 error and 26.9% in collision rate. Compared with query-based end-to-end cooperative driving methods, our approach reduces the communication cost by 57.3% and GPU memory usage by 25.5%, while maintaining strong robustness against infrastructure guidance errors, providing a practical and robust paradigm for cooperative autonomous driving.",
+      "abstract_zh": "大规模语言模型在自主驾驶中能够增强全球理解和长远规划。然而，当部署在孤立的车辆中时，有限的感知范围和遮挡物限制了可靠的决策能力，而巨大的计算和延迟开销使得车载部署变得不切实际。协作驾驶通过利用外部代理进行信息交换提供了一种潜在的解决方案，但现有方法在实际约束下的语义推理能力仍然有限。为了解决这些挑战，我们提出了DH-VLM，一种双视野协作潜在推理框架，能够实现基础设施与自我车辆之间的不对称语义协作。基础设施聚合多层隐藏状态，形成全球推理视野潜在引导，通过基础设施驱动的潜在演化机制集成到自我模型中，以实现条件潜在细化。这使得自我车辆能够利用长距离上下文理解，同时在其局部规划视野内保持自主决策。此外，我们构建了一个面向合作的问题-答案（QA）数据集，涵盖基础场景理解和自我个性化理解，以支持反事实和安全意识推理。大量实验表明，DH-VLM在规划性能上达到了最先进的水平，在L2误差上比之前的最先进技术提高了14.6%，在碰撞率上提高了26.9%。与基于查询的端到端协作驾驶方法相比，我们的方法将通信成本降低了57.3%，GPU内存使用降低了25.5%，同时在基础设施引导错误下保持了强大的鲁棒性，为协作自主驾驶提供了一个实用且稳健的范式。",
+      "authors": [
+        "Ziyi Song",
+        "Chen Xia",
+        "Hang Yu",
+        "Sheng Zhou",
+        "Zhisheng Niu"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.09333",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "仿真/数据"
+      ],
+      "title": "DH-VLM: Dual-Horizon Cooperative Latent Reasoning for Autonomous Driving",
+      "title_zh": "DH-VLM：用于自主驾驶的双视野协作潜在推理",
+      "url": "/daily/2026-08-11/#paper-2608-09333"
+    },
+    {
+      "abstract": "Modern autonomous vehicles are equipped with multiple sensors, such as cameras, LiDAR, and radar, for comprehensive environmental perception. However, robust cross-modal feature fusion remains a critical challenge, as the reliability of each sensor varies significantly across diverse real-world driving conditions, including poor visibility and adverse weather. While uncertainty quantification (UQ) mitigates this issue by allowing models to prioritize reliable signals, existing uncertainty-aware fusion methods typically rely on simple feature-level uncertainty estimates and thus often fail to generalize effectively in complex, out-of-distribution scenarios. To address this limitation, we propose CRUISE, a novel uncertainty-aware cross-modal sensor fusion framework. CRUISE integrates a vision-language model (VLM)-guided UQ module that generates fine-grained, pixel-level uncertainty estimates. By leveraging the VLM's rich prior knowledge and superior contextual reasoning, our approach provides a highly informative guide for the fusion process. Furthermore, we introduce a dynamic adaptive mechanism that explicitly models and captures cross-modal dependencies, ensuring the framework fully exploits the inherent complementary nature of multi-sensor inputs.",
+      "abstract_zh": "现代自动驾驶车辆配备了多种传感器，如摄像头、激光雷达（LiDAR）和雷达，以实现全面的环境感知。然而，稳健的跨模态特征融合仍然是一个关键挑战，因为在不同的现实驾驶条件下，包括能见度差和恶劣天气，各传感器的可靠性差异显著。尽管不确定性量化（UQ）通过允许模型优先考虑可靠信号来缓解这一问题，但现有的考虑不确定性的融合方法通常依赖于简单的特征级不确定性估计，因此在复杂的超出分布场景中往往无法有效泛化。为了解决这一局限性，我们提出了CRUISE，一个新颖的考虑不确定性的跨模态传感器融合框架。CRUISE集成了一个基于视觉-语言模型（VLM）引导的不确定性量化模块，该模块生成细粒度的像素级不确定性估计。通过利用VLM丰富的先验知识和卓越的上下文推理，我们的方法为融合过程提供了高度信息化的指导。此外，我们引入了一种动态自适应机制，明确建模和捕捉跨模态依赖关系，确保框架充分利用多传感器输入的固有互补特性。",
+      "authors": [
+        "Junyao Wang",
+        "Yulin Xu",
+        "Yu Li",
+        "Pramod Khargonekar",
+        "Mohammad Abdullah Al Faruque"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.09202",
+      "tags": [
+        "多传感器融合",
+        "感知",
+        "LiDAR/点云"
+      ],
+      "title": "CRUISE: Vision-Language Model-Guided Uncertainty-Aware Cross-Modal Sensor Fusion for Robust Autonomous Driving",
+      "title_zh": "CRUISE：基于视觉-语言模型引导的考虑不确定性的跨模态传感器融合框架，用于稳健的自动驾驶",
+      "url": "/daily/2026-08-11/#paper-2608-09202"
+    },
+    {
+      "abstract": "End-to-end planning has shown strong promise for autonomous driving, but most existing methods are designed for structured urban roads and generalize poorly to unstructured mining environments. In such settings, weak road structure, terrain-induced occlusions, degraded visibility, and large unobserved regions make safe planning particularly challenging. To address these challenges, we propose UnsDrive, an end-to-end planner designed for unstructured mining scenes. UnsDrive builds an unknown-aware occupancy representation that explicitly models occupied, free, and unknown space using multi-frame visibility cues, and conditions a flow-matching planner on this representation to generate multimodal future trajectories. To improve safety under partial observability, we further introduce an occupancy trajectory consistency loss and an uncertainty-aware trajectory scorer that penalize trajectories entering non-traversable or unobserved regions. We also present MineLoop, a mining-oriented closed-loop simulator for evaluating autonomous driving under irregular road geometry, degraded visibility, heavy-vehicle interactions, and mining-specific operational constraints. Experiments in both open-loop and closed-loop settings show that UnsDrive consistently outperforms strong baselines in trajectory accuracy, collision avoidance, and long-horizon driving robustness. These results demonstrate the value of explicit unknown-space reasoning for autonomous driving in unstructured mining environments.",
+      "abstract_zh": "端到端规划在自动驾驶中展现了强大的潜力，但大多数现有方法是为结构化城市道路设计的，且在非结构化矿区环境中泛化能力较差。在这些环境中，薄弱的道路结构、地形引起的遮挡、能见度降低以及大面积未观测区域使得安全规划尤为具有挑战性。为了解决这些问题，我们提出了UnsDrive，一种专为非结构化矿区场景设计的端到端规划器。UnsDrive构建了一种未知感知的占用表示，利用多帧可见性线索显式建模占用、空闲和未知空间，并基于该表示条件化流匹配规划器以生成多模态未来轨迹。为了在部分可观测性下提高安全性，我们进一步引入了占用轨迹一致性损失和不确定性感知轨迹评分器，以惩罚进入不可通行或未观测区域的轨迹。我们还提出了MineLoop，一种面向矿业的闭环模拟器，用于评估在不规则道路几何、能见度降低、重型车辆交互和矿业特定操作约束下的自动驾驶。开放环和闭环设置下的实验表明，UnsDrive在轨迹准确性、碰撞避免和长时间驾驶稳健性方面始终优于强基线。这些结果展示了在非结构化矿区环境中，显式未知空间推理对自动驾驶的价值。",
+      "authors": [
+        "Nanxin Zeng",
+        "Ruiqi Song",
+        "Xiangyu Guo",
+        "Baiyong Ding",
+        "Yunfeng Ai"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.09098",
+      "tags": [
+        "预测/规划",
+        "BEV/Occupancy",
+        "深度/几何"
+      ],
+      "title": "UnsDrive: Towards Robust End-to-End Autonomous Driving in Unstructured Scenes",
+      "title_zh": "UnsDrive：朝着在非结构化场景中实现稳健的端到端自动驾驶",
+      "url": "/daily/2026-08-11/#paper-2608-09098"
+    },
+    {
+      "abstract": "Current hazard detection systems in autonomous driving may develop mesa objectives, learned internal goals that achieve high training performance through spurious correlations rather than genuine hazard recognition. We investigate whether human gaze patterns, captured via webcam-based eye tracking (WebGazer.js), can serve as privileged information to constrain mesa-objective formation. We collected 137,663 frame-level gaze samples synchronized with hazard annotations across 388 real dashcam clips, then test this hypothesis across two calibration protocols (9-point/45-click and 11-point/440-click), two model architectures (Random Forest and causal Transformer), and five random seeds per experiment with paired t-tests. No experiment yields a statistically significant improvement from gaze (p = 0.919, 0.578, and 0.667 respectively). A geometric analysis reveals the root cause: WebGazer's reported error (~130-257 px depending on configuration) exceeds 93% of detected hazard object sizes (median 36 px), rendering object-level gaze attribution physically impossible at this instrument precision.",
+      "abstract_zh": "当前自主驾驶中的危险检测系统可能会发展出次要目标，即通过虚假的相关性而非真实的危险识别来实现高训练性能的学习内部目标。我们研究了通过基于网络摄像头的眼动追踪（WebGazer.js）捕捉的人类注视模式是否可以作为特权信息来约束次要目标的形成。我们收集了137,663个与388个真实行车记录仪片段的危险注释同步的帧级注视样本，然后在两个校准协议（9点/45次点击和11点/440次点击）、两种模型架构（随机森林和因果变换器）以及每个实验的五个随机种子下测试这一假设，采用配对t检验。没有实验显示出注视带来的统计显著性改善（p = 0.919, 0.578和0.667）。几何分析揭示了根本原因：WebGazer报告的误差（~130-257像素，具体取决于配置）超过了93%的检测到的危险物体大小（中位数36像素），使得在这种仪器精度下进行物体级注视归因在物理上变得不可能。",
+      "authors": [
+        "Lennox Anderson",
+        "Ahmed Boutar",
+        "Jonah Mulcrone",
+        "Tal Erez"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.08947",
+      "tags": [
+        "感知",
+        "深度/几何"
+      ],
+      "title": "Can Webcam Gaze Constrain Mesa-Objectives in Driving Models? An Instrument Precision Analysis",
+      "title_zh": "网络摄像头注视是否能约束驾驶模型中的次要目标？一种仪器精度分析",
+      "url": "/daily/2026-08-11/#paper-2608-08947"
+    },
+    {
+      "abstract": "Operational Design Domain (ODD) specifications describe where an automated driving system (ADS) is permitted to operate, but they do not prescribe what the ADS must demonstrably do once deployed within that domain. This gap between operating condition specification and behavioral validation represents a critical unresolved challenge in ADS safety assurance. This paper presents a structured, standards-grounded taxonomy of 21 behavioral competencies organized across three operational domains-Highway (HWY), Urban (URB), and Hub (HUB)-derived systematically from the PEGASUS six-layer model-based ODD. Each behavior is decomposed along longitudinal and lateral control axes and characterized against a four-property framework: Safety (gap maintenance, conflict avoidance, kinematic stability), Compliance (legal rules and behavioral norms), Comfort (rider dynamics and trust), and Efficiency (mission completion and product-level metrics). We further demonstrate that the crossing of ODD layer parameterizations with behavioral competency specifications yields concrete scenario families suitable for systematic behavioral testing and SOTIF coverage evidence. The taxonomy is grounded in AVSC00008202111, SAE J3237, and SAE J3016, and is validated as an operational specification layer through its deployment in a rule-enforced trajectory optimization system. The Hub domain is identified as a structurally distinct, underspecified domain warranting dedicated research attention.",
+      "abstract_zh": "操作设计域（Operational Design Domain, ODD）规范描述了自动驾驶系统（Automated Driving System, ADS）被允许操作的环境，但并未规定ADS在该域内部署后必须明确执行的行为。这种操作条件规范与行为验证之间的差距，代表了ADS安全保障中一个关键的未解决挑战。本文提出了一种结构化、基于标准的21种行为能力分类法，按照高速公路（Highway, HWY）、城市（Urban, URB）和枢纽（Hub, HUB）三个操作域进行组织，系统来源于PEGASUS六层模型的ODD。每种行为沿纵向和横向控制轴进行分解，并根据四个属性框架进行特征化：安全性（间隙维护、冲突避免、运动稳定性）、合规性（法律规则和行为规范）、舒适性（乘客动态和信任）、以及效率（任务完成和产品级指标）。我们进一步展示了ODD层参数化与行为能力规范的交叉，产生了适合系统行为测试和SOTIF覆盖证据的具体场景家族。该分类法基于AVSC00008202111、SAE J3237和SAE J3016，并通过在规则强制的轨迹优化系统中的应用验证为操作规范层。枢纽域被识别为一个结构上独特且规范不足的领域，值得专门的研究关注。",
+      "authors": [
+        "Chaitanya Shinde",
+        "Hadi Hajieghrary",
+        "Miguel Hurtado"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.08941",
+      "tags": [
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "From Operational Design Domain to Action: A Systematic Behavioral Taxonomy for Autonomous Driving",
+      "title_zh": "从操作设计域到行动：自主驾驶的系统行为分类法",
+      "url": "/daily/2026-08-11/#paper-2608-08941"
+    },
+    {
+      "abstract": "Advanced automated driving presents significant potential to improve modern automotive safety systems, but it depends highly on the reliable activation of restraint systems. Forward-looking sensors are crucial for immediate and precise object detection. Recent developments in automotive radar technology enable detailed environment detection and the recognition of high-resolution features, such as micro-Doppler signatures. Combined with advanced AI techniques, these features significantly enhance object detection and improve the accuracy of kinematic parameter estimation. This is essential for the early and reliable activation of irreversible safety systems, such as smart airbags and adaptive seat belts. Therefore, an anchor-based AI model is presented, designed to process high-resolution radar data with an explicit focus on micro-Doppler signatures to improve pre-crash object detection. Furthermore, these signatures can improve the accuracy of kinematic object parameter estimation and reduce false negatives, especially in the critical near-field. To address the challenges of sparse and fluctuating radar point clouds, an innovative radar-image dilation technique on the feature input channels was developed to amplify local radar patterns, like micro-Doppler features. Therefore, this approach increases the system's reliability and increases its ability to detect objects in pre-crash scenarios despite radar multipath reflections and ghost objects. In order to investigate the applicability and compare the model's performance with advanced automotive radar tracking methods, a radar data set using series sensors and pre-crash relevant scenarios was recorded. The results demonstrate the advantages of the anchor-based AI model over established tracking approaches. It excels at estimating object parameters in dynamic scenarios and underscores its ability to process different data sets effectively.",
+      "abstract_zh": "先进的自动驾驶技术在提升现代汽车安全系统方面具有显著潜力，但其高度依赖于约束系统的可靠激活。前向传感器对于即时和精确的物体检测至关重要。近年来汽车雷达技术的发展使得环境检测和高分辨率特征（如微多普勒特征）的识别成为可能。结合先进的人工智能技术，这些特征显著增强了物体检测能力，并提高了运动参数估计的准确性。这对于不可逆安全系统（如智能安全气囊和自适应安全带）的早期和可靠激活至关重要。因此，提出了一种基于锚点的人工智能模型，旨在处理高分辨率雷达数据，明确关注微多普勒特征，以改善碰撞前物体检测。此外，这些特征可以提高运动物体参数估计的准确性，并减少假阴性，特别是在关键的近场区域。为了解决稀疏和波动的雷达点云带来的挑战，开发了一种创新的雷达图像扩张技术，应用于特征输入通道，以增强局部雷达模式，如微多普勒特征。因此，该方法提高了系统的可靠性，并增强了其在碰撞前场景中检测物体的能力，尽管存在雷达多路径反射和虚假物体。为了研究其适用性并与先进的汽车雷达跟踪方法比较模型的性能，记录了一个使用系列传感器和碰撞前相关场景的雷达数据集。结果表明，基于锚点的人工智能模型相较于已建立的跟踪方法具有优势。它在动态场景中出色地估计物体参数，并强调了其有效处理不同数据集的能力。",
+      "authors": [
+        "Patrick Zaumseil",
+        "Rainer Engert",
+        "Dagmar Steinhauser",
+        "Jonathan Wache",
+        "Soumya Dewangan",
+        "Thomas Brandmeier"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.08701",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "安全/异常"
+      ],
+      "title": "Anchor-Based AI Approach for Pre-Crash Object Detection Utilizing Micro-Doppler Signatures in Automotive Radar",
+      "title_zh": "基于锚点的人工智能方法在汽车雷达中利用微多普勒特征进行碰撞前物体检测",
+      "url": "/daily/2026-08-11/#paper-2608-08701"
+    },
+    {
+      "abstract": "3D occupancy prediction is fundamental to scene understanding, yet existing 3D semantic occupancy methods are typically specialized to fixed scene types and occupancy protocols. We introduce Cross-Scene 3D Semantic Occupancy Prediction, a new task setting which requires a single model to handle heterogeneous indoor and outdoor scenes with varying cameras, spatial ranges, voxel specifications, and semantic taxonomies. This setting poses a fundamental challenge: achieving metric-consistent yet scene-adaptive image-to-3D lifting across varying camera configurations and scene scales. To address this challenge, we propose OccAnyScene, a pixel-frustum-centered Gaussian framework built upon a pretrained depth foundation model. Specifically, the framework employs Pixel-Aligned Frustum Feature Aggregation to construct a camera-aware frustum query for each feature pixel, and Frustum-Parameterized Gaussian Construction to decode each query into multiple Gaussians whose positions and sizes are constrained by the predicted pixel depth and corresponding frustum geometry. OccAnyScene sets new state-of-the-art results, achieving 59.92% mIoU on the indoor Occ-ScanNet and 23.06% mIoU on the outdoor SurroundOcc-nuScenes.",
+      "abstract_zh": "3D占用预测是场景理解的基础，但现有的3D语义占用方法通常专门针对固定场景类型和占用协议。我们提出了跨场景3D语义占用预测（Cross-Scene 3D Semantic Occupancy Prediction），这是一种新的任务设置，要求单一模型处理具有不同相机、空间范围、体素规格和语义分类的异构室内外场景。该设置提出了一个基本挑战：在不同的相机配置和场景尺度下，实现度量一致且适应场景的图像到3D的提升。为了解决这一挑战，我们提出了OccAnyScene，这是一种基于预训练深度基础模型的像素锥体中心高斯框架。具体而言，该框架采用像素对齐锥体特征聚合（Pixel-Aligned Frustum Feature Aggregation）为每个特征像素构建一个相机感知的锥体查询，并通过锥体参数化高斯构造（Frustum-Parameterized Gaussian Construction）将每个查询解码为多个高斯，其位置和大小受预测的像素深度和相应的锥体几何约束。OccAnyScene在室内Occ-ScanNet上实现了59.92%的mIoU，在室外SurroundOcc-nuScenes上实现了23.06%的mIoU，创造了新的最先进结果。",
+      "authors": [
+        "Junjie Liu",
+        "Wanshui Gan",
+        "Zitong Dai",
+        "Guiping Cao",
+        "Yan Li",
+        "Ke Chen",
+        "Dongmei Jiang",
+        "Xiangyuan Lan",
+        "Jianguo Zhang"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.08696",
+      "tags": [
+        "深度/几何",
+        "BEV/Occupancy",
+        "感知"
+      ],
+      "title": "OccAnyScene: Towards Unified Indoor-Outdoor 3D Occupancy Predictio",
+      "title_zh": "OccAnyScene：统一室内外3D占用预测的探索",
+      "url": "/daily/2026-08-11/#paper-2608-08696"
+    },
+    {
+      "abstract": "Camera-based 3D semantic scene completion (SSC) provides comprehensive scene understanding for autonomous driving and robotics. However, existing methods often treat stereo depth estimates as deterministic geometric constraints, causing depth uncertainty and local correspondence errors to propagate directly into voxel representations. To address this issue, we propose RayLift, a framework that uses stereo geometry as a metric reference while incorporating complementary ray evidence to recover reliable 3D structures adaptively. RayLift first employs a Complementary Context Encoder that extracts geometry-aware priors from a frozen 3D vision foundation model, thereby enriching the scene context. It then introduces a Depth Ray Evidence Lifter module that jointly models geometric dissimilarity, depth confidence, and spatial uncertainty to adaptively sample and weight candidate surface locations along each camera ray. Finally, a Semantic-Aware Voxel Integrator injects the resulting ray evidence into voxel features by explicitly modeling their spatial support. Extensive experiments on SemanticKITTI and SSCBench-KITTI-360 demonstrate that RayLift achieves competitive performance and consistently outperforms existing methods.",
+      "abstract_zh": "基于相机的3D语义场景补全（SSC）为自动驾驶和机器人提供了全面的场景理解。然而，现有方法往往将立体深度估计视为确定性的几何约束，导致深度不确定性和局部对应错误直接传播到体素表示中。为了解决这一问题，我们提出了RayLift，一个利用立体几何作为度量参考，同时结合互补光线证据以自适应恢复可靠3D结构的框架。RayLift首先采用互补上下文编码器，从冻结的3D视觉基础模型中提取几何感知先验，从而丰富场景上下文。接着，它引入了深度光线证据提升模块，该模块联合建模几何不相似性、深度置信度和空间不确定性，以自适应地采样和加权每条相机光线上的候选表面位置。最后，语义感知体素整合器通过显式建模其空间支持，将生成的光线证据注入体素特征。对SemanticKITTI和SSCBench-KITTI-360的广泛实验表明，RayLift实现了具有竞争力的性能，并始终优于现有方法。",
+      "authors": [
+        "Meng Wang",
+        "Hongxia Yu",
+        "Wenzhe He",
+        "Xingdong Song",
+        "Huilong Pi",
+        "Jiapeng Zhang",
+        "Ruihui Li"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.08476",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "世界模型/生成"
+      ],
+      "title": "RayLift: Lifting Complementary Ray-Wise Evidence with 3D Geometry Priors for Semantic Scene Completion",
+      "title_zh": "RayLift：利用3D几何先验提升互补光线证据以实现语义场景补全",
+      "url": "/daily/2026-08-11/#paper-2608-08476"
+    },
+    {
+      "abstract": "Modern vision systems must operate in \"open-world\" settings, where models must recognize known categories and detect unseen or anomalous content. Conventional semantic segmentation models operate under a \"closed-world\" assumption, often producing overconfident misclassifications on novel content. We address open-world semantic segmentation, the joint task of segmenting known classes while detecting and grouping novel or anomalous content without additional supervision, by extending a dual-decoder baseline with a third, complementary decoder within a unified encoder-decoder design. The first decoder performs closed-set segmentation using Gaussian prototypes for known categories. The second uses contrastive feature learning to isolate unknown regions in embedding space. The third, our key contribution, is a sensitivity decoder that captures fine-grained texture irregularities and activation instabilities indicative of semantic uncertainty, which neither semantic prototypes nor contrastive norms can reliably detect. The three decoders provide genuinely complementary signals: class-level OOD distance in logit space, global feature energy in embedding space, and local activation instability across encoder scales. Experiments on Cityscapes and BDD-Anomaly show that our method improves anomaly segmentation and novel-class discovery while maintaining competitive closed-set accuracy, with gains of +2.4% AUROC and a 2.5 pp. reduction in FPR@95TPR on BDD-Anomaly over the baseline.",
+      "abstract_zh": "现代视觉系统必须在“开放世界”环境中运行，其中模型必须识别已知类别并检测未见或异常内容。传统的语义分割模型在“封闭世界”假设下工作，往往对新内容产生过于自信的错误分类。我们通过在统一的编码器-解码器设计中扩展一个双解码器基线，提出了开放世界语义分割的解决方案，该任务是对已知类别进行分割，同时在没有额外监督的情况下检测和分组新颖或异常内容。第一个解码器使用高斯原型对已知类别进行封闭集分割。第二个解码器利用对比特征学习在嵌入空间中隔离未知区域。第三个解码器是我们的关键贡献，它是一个敏感性解码器，捕捉细粒度的纹理不规则性和激活不稳定性，这些特征表明语义不确定性，而语义原型和对比范数无法可靠检测。三个解码器提供真正互补的信号：在对数空间中的类别级OOD距离、在嵌入空间中的全局特征能量，以及在编码器尺度上的局部激活不稳定性。在Cityscapes和BDD-Anomaly上的实验表明，我们的方法在提高异常分割和新类别发现的同时，保持了竞争性的封闭集准确率，在BDD-Anomaly上相较于基线提高了+2.4%的AUROC，并减少了2.5个百分点的FPR@95TPR。",
+      "authors": [
+        "Anastasios Romanos Varvarigos",
+        "Nikos Giakoumoglou",
+        "Tania Stathaki"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.08308",
+      "tags": [
+        "感知",
+        "安全/异常",
+        "深度/几何"
+      ],
+      "title": "Open-World Semantic Segmentation with Sensitivity Modeling",
+      "title_zh": "基于敏感性建模的开放世界语义分割",
+      "url": "/daily/2026-08-11/#paper-2608-08308"
+    },
+    {
+      "abstract": "This paper presents a scalable lateral control framework for robust path tracking of single-body and articulated autonomous vehicles at high speeds. A clothoid-based controller is extended with three key adaptations: 1) an integrated tangential check and Frechet distance method for optimized lookahead and oscillation mitigation; 2) real-time trajectory segment classification for dynamic adjustment of the lookahead search range; and 3) a dual-adaptive, rate-controlled lookahead mechanism responsive to cross-track error and upcoming path geometry. To support different vehicle configurations, the framework also incorporates flexible tracking point selection and curvature-to-steering lookup tables, enabling control of points such as the tractor rear axle, hitch point, or trailer-related locations without changing the core control architecture. The controller is evaluated using high-fidelity TruckSim and Simulink simulations for both standalone and articulated vehicles across dual lane changes and winding-road scenarios. Results demonstrate stable high-speed path tracking, reduced oscillations, effective lookahead adaptation, low cross-track errors, and acceptable lateral acceleration across different vehicle configurations. The results support the use of a unified lateral control architecture that can scale from single-body to articulated autonomous vehicles.",
+      "abstract_zh": "本文提出了一种可扩展的横向控制框架，用于在高速下对单体和关节式自主车辆进行稳健的路径跟踪。该框架基于克洛索伊德（clothoid）控制器，并进行了三项关键调整：1）集成切向检查和弗雷歇距离（Frechet distance）方法，以优化前视距离和减小振荡；2）实时轨迹段分类，以动态调整前视搜索范围；3）一种双自适应、速率控制的前视机制，能够响应横向误差和即将到来的路径几何形状。为了支持不同的车辆配置，该框架还结合了灵活的跟踪点选择和曲率与转向查找表，使得在不改变核心控制架构的情况下，可以控制如拖拉机后轴、连接点或与拖车相关的位置。通过高保真度的TruckSim和Simulink仿真，对独立和关节式车辆在双车道变换和曲折道路场景下进行了评估。结果表明，在不同车辆配置下，能够实现稳定的高速路径跟踪、减少振荡、有效的前视适应、低横向误差以及可接受的横向加速度。这些结果支持使用统一的横向控制架构，从单体自主车辆扩展到关节式自主车辆。",
+      "authors": [
+        "Aashish Shaju",
+        "Steve Southward",
+        "Mehdi Ahmadian"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.08293",
+      "tags": [
+        "深度/几何",
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "Scalable High-Speed Lateral Control for Single-Body and Articulated Autonomous Vehicles",
+      "title_zh": "可扩展的高速横向控制框架用于单体和关节式自主车辆",
+      "url": "/daily/2026-08-11/#paper-2608-08293"
+    },
+    {
+      "abstract": "Urban embodied intelligence requires coordination among heterogeneous agents (e.g., UAVs, ground robots, and autonomous vehicles) in dynamic cities. Simulators therefore provide a scalable foundation for developing and evaluating such coordination. Existing platforms nevertheless isolate different embodiments and decouple them from task design and evaluation. We present \\textbf{Lingjing}, a simulation platform for heterogeneous multi-agent embodied intelligence in open-ended urban environments. Lingjing reconstructs and renders evolving cities from geographic data, synchronizes multiple physics engines, and exposes shared physical and structured urban state to agents. Its Gym-like interface supports user-defined ReAct agents and single- or multi-agent natural-language missions with configurable star or broadcast communication and resource constraints. Each episode becomes an attribution-ready replay that links agent trajectories and communication to relation-graph changes, resource consumption, and engine-based evaluations for systematic diagnosis. We evaluate twelve vision-language models on nine urban tasks under a shared engine-in-the-loop protocol. Controlled studies further examine communication, scalability, robustness, and failure provenance. Results expose persistent bottlenecks in grounding and long-horizon execution. They also show task-dependent coordination trade-offs and diminishing returns from added capacity, while heavier workloads further reduce success. Lingjing provides a unified testbed that enables reproducible end-to-end evaluation and systematic failure diagnosis in urban multi-agent embodied intelligence.",
+      "abstract_zh": "城市具身智能需要在动态城市中协调异构智能体（例如，无人机、地面机器人和自动驾驶汽车）。因此，仿真器为开发和评估这种协调提供了可扩展的基础。然而，现有平台将不同的具身形式隔离开来，并将其与任务设计和评估解耦。我们提出了 extbf{Lingjing}，一个用于开放城市环境中异构多智能体具身智能的仿真平台。Lingjing通过地理数据重建和渲染不断演变的城市，同步多个物理引擎，并向智能体暴露共享的物理和结构化城市状态。其类似Gym的接口支持用户定义的ReAct智能体以及具有可配置星型或广播通信和资源约束的单智能体或多智能体自然语言任务。每个回合都成为一个准备归因的重播，将智能体轨迹和通信与关系图变化、资源消耗和基于引擎的评估链接，以便进行系统诊断。我们在共享的引擎环路协议下对九个城市任务评估了十二个视觉-语言模型。控制研究进一步考察了通信、可扩展性、鲁棒性和故障来源。结果揭示了在基础和长时间执行中的持续瓶颈。同时，它们还显示了任务依赖的协调权衡和增加能力的边际收益递减，而更重的工作负载进一步降低了成功率。Lingjing提供了一个统一的测试平台，使得城市多智能体具身智能的可重复端到端评估和系统故障诊断成为可能。",
+      "authors": [
+        "Xiaohe Li",
+        "Yiru Wang",
+        "Junhao Fan",
+        "Mingyuan Liu",
+        "Jie Huang",
+        "Kaixin Zhang",
+        "Jiahao Li",
+        "Chen Qian",
+        "Zide Fan"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.08045",
+      "tags": [
+        "端到端驾驶",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "Lingjing: A Simulation Testbed for Multi-Agent Embodied Tasks in Open-Ended Cities",
+      "title_zh": "Lingjing：开放城市中多智能体具身任务的仿真测试平台",
+      "url": "/daily/2026-08-11/#paper-2608-08045"
+    },
+    {
+      "abstract": "This paper presents a collaborative UAV-UGV navigation framework for high-altitude, snow-covered terrain, where reduced visibility and unstable ground render conventional methods ineffective. We introduce a custom efficient U-Net architecture that falls under the computational constraints for real-time road segmentation, utilizing a novel synthetic snow data augmentation technique to achieve 96.5% segmentation accuracy. For UAV localization, we implement an Extended Kalman Filter (EKF) fusing onboard GPS and IMU data, achieving a maximum observed positional error of +-0.5 meters. The UGV position is determined via a visual tracking pipeline using YOLOv5 and depth data from the UAV's RGB-D camera. A dynamic path planning algorithm utilizes this segmentation to adjust for snow drifts, enabling successful navigation in obscured test environment with minimal deviation.",
+      "abstract_zh": "本文提出了一种针对高海拔雪覆盖地形的无人机-无人地面车辆（UAV-UGV）协作导航框架，在这种环境中，能见度降低和地面不稳定使得传统方法无效。我们引入了一种自定义的高效U-Net架构，符合实时道路分割的计算约束，利用一种新颖的合成雪数据增强技术实现了96.5%的分割准确率。对于无人机定位，我们实现了一种扩展卡尔曼滤波器（Extended Kalman Filter, EKF），融合了机载GPS和IMU数据，最大观测位置误差为±0.5米。无人地面车辆的位置通过使用YOLOv5的视觉跟踪管道和无人机RGB-D相机的深度数据来确定。动态路径规划算法利用该分割结果调整雪堆，从而在受阻的测试环境中实现成功导航，偏差最小。",
+      "authors": [
+        "Shreyam Gupta",
+        "P. Agrawal",
+        "Priyam Gupta",
+        "R. Gautam"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.07797",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "地图/定位"
+      ],
+      "title": "Drone-Assisted UAV-UGV Collaboration for Autonomous Navigation in Snow-Covered Terrain",
+      "title_zh": "无人机辅助的无人机-无人地面车辆协作在雪覆盖地形中的自主导航",
+      "url": "/daily/2026-08-11/#paper-2608-07797"
+    },
+    {
+      "abstract": "Deep Neural Networks (DNNs) have found successful deployment in numerous vision perception systems. However, their susceptibility to adversarial attacks has prompted concerns regarding their practical applications, specifically in the context of autonomous driving. Existing defenses often suffer from cost inefficiency, rendering their deployment impractical for resource-constrained applications. In this work, we propose an efficient and effective adversarial attack detection scheme leveraging the multi-task perception within a complex vision system. Adversarial perturbations are detected by the inconsistencies between the inference outputs of multiple vision tasks, e.g., object detection and instance segmentation. To this end, we developed a consistency score metric to measure the inconsistency between vision tasks. Next, we designed an approach to select the best model pairs for detecting inconsistencies effectively. Finally, we evaluated our defense against PGD attacks across multiple vision models on the BDD100k validation dataset. The experimental results demonstrated that our defense achieved a ROC-AUC performance of 99.9% detection within the considered attacker model.",
+      "abstract_zh": "深度神经网络（DNNs）在众多视觉感知系统中得到了成功应用。然而，它们对对抗攻击的脆弱性引发了对其实际应用的担忧，特别是在自动驾驶的背景下。现有的防御措施往往存在成本低效的问题，使其在资源受限的应用中难以部署。在本研究中，我们提出了一种高效且有效的对抗攻击检测方案，利用复杂视觉系统中的多任务感知。通过检测多个视觉任务（例如物体检测和实例分割）推理输出之间的不一致性来识别对抗扰动。为此，我们开发了一种一致性得分指标，用于衡量视觉任务之间的不一致性。接下来，我们设计了一种方法来选择最佳模型对，以有效检测不一致性。最后，我们在 BDD100k 验证数据集上评估了我们的防御措施对 PGD 攻击的效果。实验结果表明，在考虑的攻击者模型下，我们的防御措施实现了 99.9% 的 ROC-AUC 检测性能。",
+      "authors": [
+        "Cong Chen",
+        "Jean-Philippe Monteuuis",
+        "Jonathan Petit"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.07750",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "Multi-Task Consistency-based Detection of Adversarial Attacks",
+      "title_zh": "基于多任务一致性的对抗攻击检测",
+      "url": "/daily/2026-08-11/#paper-2608-07750"
+    },
+    {
+      "abstract": "This study introduces an advanced lateral control strategy for autonomous vehicles using a clothoid-based approach integrated with an adaptive lookahead mechanism. The primary focus is on enhancing lateral stability and path-tracking accuracy through the application of Euler spirals for smooth curvature transitions, thereby reducing passenger discomfort and the risk of vehicle rollover. An innovative aspect of our work is the adaptive adjustment of lookahead distance based on real-time vehicle dynamics and road geometry, which ensures optimal path following under varying conditions. A quasi-feedback control algorithm constructs optimal clothoids at each time step, generating the appropriate steering input. A lead filter compensates for the vehicle's lateral dynamics lag, improving control responsiveness and stability. The effectiveness of the proposed controller is validated through a comprehensive co-simulation using TruckSim and Simulink, demonstrating significant improvements in lateral control performance across diverse driving scenarios. Future directions include scaling the controller for higher-speed applications and further optimization to minimize off-track errors, particularly for articulated vehicles.",
+      "abstract_zh": "本研究提出了一种先进的侧向控制策略，针对自主车辆采用基于克洛索伊德的方法，并结合自适应前视机制。主要关注通过应用欧拉螺旋实现平滑的曲率过渡，以增强侧向稳定性和路径跟踪精度，从而减少乘客的不适感和车辆翻覆的风险。我们工作的一个创新之处在于根据实时车辆动态和道路几何进行前视距离的自适应调整，以确保在不同条件下的最佳路径跟随。一个准反馈控制算法在每个时间步构建最优的克洛索伊德，生成适当的转向输入。前导滤波器补偿车辆侧向动态滞后，提高控制响应性和稳定性。通过使用TruckSim和Simulink进行全面的共同仿真，验证了所提控制器的有效性，显示出在多种驾驶场景下侧向控制性能的显著改善。未来的方向包括将控制器扩展到更高速度的应用，并进一步优化以最小化偏离轨迹的误差，特别是针对关节式车辆。",
+      "authors": [
+        "Aashish Shaju",
+        "Steve Southward",
+        "Mehdi Ahmadian"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.07740",
+      "tags": [
+        "深度/几何",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "Enhancing Autonomous Vehicle Navigation with a Clothoid-Based Lateral Controller",
+      "title_zh": "基于克洛索伊德的侧向控制器增强自主车辆导航",
+      "url": "/daily/2026-08-11/#paper-2608-07740"
+    },
+    {
+      "abstract": "Traffic data collection is dominated today by deep object detectors followed by tracking-by-detection, a pipeline that presupposes what is often missing in practice: a detector already trained on the class one wants to count. We revisit a purely geometric traffic-sensing pipeline for Single Board Computers in which detection is class-agnostic: moving objects come from background subtraction and thresholding, and counting is decided by a geometric rule on an imaginary line across the road, a software inductive loop detector. With no object model, training set or per-object trajectory, it runs faster than real time on Raspberry Pi class hardware. Two counting rules are described: a constant average speed rule, whose expected accuracy is derived analytically as about 86% under a Gaussian speed distribution, and a self-calibrating pre-calibration rule that recovers the lane geometry from blob statistics and counts edges of lane occupancy, additionally yielding per-vehicle average speed at no extra cost. Over four videos the latter counts with 83.3%-100% accuracy; in a field deployment it reaches 91% against 37.5% for a blob-tracking baseline under the same compute budget. We report the observations of that period in detail: the resolution floor below which accuracy collapses, the frame rate floor at which vehicles alias past the counting line, the gap between short curated clips and long uncontrolled footage, and the trade-off between Python (easier to tune, 100% CPU) and C++ (40% CPU, thermally viable). These are properties of the sampling geometry, not of the hardware of the time, and still constrain edge deployments. We close by arguing where motion-based, class-agnostic detection remains the right tool: open-set classes with no annotated data, tight power budgets, privacy-constrained installations, and the cold start of mining training crops to bootstrap a learned detector.",
+      "abstract_zh": "当前交通数据收集主要依赖深度物体检测器，随后通过检测跟踪进行处理，这一流程假设了在实践中常常缺失的前提：一个已经针对所需计数类别训练好的检测器。我们重新审视了一种纯几何的交通感知流程，适用于单板计算机，其中检测是无类别的：移动物体通过背景减除和阈值处理获得，计数则通过在道路上想象的线上的几何规则决定，这是一种软件感应环路检测器。在没有物体模型、训练集或每个物体轨迹的情况下，它在树莓派（Raspberry Pi）级别的硬件上运行速度超过实时。我们描述了两种计数规则：一种是恒定平均速度规则，其预期准确率在高斯速度分布下通过分析推导为约86%；另一种是自校准的预校准规则，它通过斑点统计恢复车道几何，并计数车道占用的边缘，同时以零额外成本提供每辆车的平均速度。在四段视频中，后者的计数准确率为83.3%-100%；在一次现场部署中，其准确率达到91%，而在相同计算预算下，斑点跟踪基线的准确率仅为37.5%。我们详细报告了这一期间的观察结果：准确率崩溃的分辨率下限、车辆在计数线前混叠的帧率下限、短小策划片段与长时间无控制录像之间的差距，以及Python（更易于调优，100% CPU）与C++（40% CPU，热量可行性）的权衡。这些是采样几何的特性，而非当时硬件的特性，仍然限制了边缘部署。最后，我们论证了运动基础的无类别检测仍然是合适工具的场景：开放集类别没有标注数据、严格的功耗预算、隐私受限的安装，以及挖掘训练样本以启动学习检测器的冷启动问题。",
+      "authors": [
+        "Lucas Gouveia Omena Lopes",
+        "William W. M. Lira",
+        "Alexandre M. Lima",
+        "Thales M. A. Vieira"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.07643",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "BEV/Occupancy"
+      ],
+      "title": "Data collection from highways: a geometric, class-agnostic approach to embedded vehicle counting",
+      "title_zh": "高速公路数据收集：一种几何的、无类别的嵌入式车辆计数方法",
+      "url": "/daily/2026-08-11/#paper-2608-07643"
+    },
+    {
+      "abstract": "Vision-Language-Action (VLA) models have recently achieved impressive performance for end-to-end autonomous driving, yet existing approaches are primarily designed for an individual single autonomous driving agent with limited support for cooperative perception, reasoning, and planning. We present Cooperative Multi-agent Unified Driving with Reasoning (CMU-Drive), a closed-loop end-to-end benchmark for evaluating cooperative autonomous driving with multiple connected autonomous vehicles (CAVs) operating in safety-critical driving scenarios with background traffic participants. We further propose Vehicle-to-Vehicle Vision-Language-Action (V2V-VLA), a cooperative VLA model that integrates cooperative driving into a single forward pass by jointly generating driving actions, future waypoints, language reasoning, and communication policies. Experiments on CMU-Drive establish the first benchmark and baseline for cooperative VLA driving and provide a foundation for future research on multi-agent, closed-loop, end-to-end cooperative autonomous driving. Our code, benchmark, and model checkpoint will be publicly released to facilitate open-source research.",
+      "abstract_zh": "视觉-语言-行动（VLA）模型最近在端到端自主驾驶方面取得了令人瞩目的表现，但现有的方法主要针对单一自主驾驶智能体设计，对协作感知、推理和规划的支持有限。我们提出了带有推理的协作多智能体统一驾驶（CMU-Drive），这是一个闭环端到端基准，用于评估多个连接自主车辆（CAVs）在安全关键驾驶场景中与背景交通参与者协作的自主驾驶能力。我们进一步提出了车对车视觉-语言-行动（V2V-VLA），这是一个将协作驾驶整合到单次前向推理中的协作VLA模型，通过共同生成驾驶动作、未来路径点、语言推理和通信策略。CMU-Drive上的实验建立了协作VLA驾驶的第一个基准和基线，为未来多智能体、闭环、端到端的协作自主驾驶研究奠定了基础。我们的代码、基准和模型检查点将公开发布，以促进开源研究。",
+      "authors": [
+        "Hsu-kuang Chiu",
+        "Stephen F. Smith"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.07621",
+      "tags": [
+        "VLM/VLA",
+        "感知",
+        "预测/规划"
+      ],
+      "title": "CMU-Drive and V2V-VLA: Cooperative Multi-agent Unified Driving with Reasoning Benchmark and Vehicle-to-Vehicle Vision-Language-Action Models",
+      "title_zh": "CMU-Drive 和 V2V-VLA：带有推理基准的协作多智能体统一驾驶与车对车视觉-语言-行动模型",
+      "url": "/daily/2026-08-11/#paper-2608-07621"
+    },
+    {
+      "abstract": "A closed-set detector for autonomous driving must assign every object one of a fixed set of labels. On an object outside that set (a horse-drawn carriage, road debris, livestock on a rural road) it can only force a confident but wrong specific label or drop the object. Prior work in this series replaced the flat label set with a hierarchical taxonomy and a runtime abstraction rule, but evaluated it only on the boxes a closed detector already produces. This paper takes the layer open-world: we place taxonomic abstraction on top of class-agnostic region proposals so objects the closed detector never boxes can still be classified or flagged; we report a feasibility study of three open-world signals (class-agnostic segmentation, appearance-based out-of-distribution scoring, monocular depth) that shows why no single 2D cue suffices and how they compose; and we run the evaluation the earlier papers could not, a ground-truth leave-classes-out benchmark on real annotated objects. Holding out seven COCO classes and classifying their 235 ground-truth crops, a flat closed head emits a confident wrong specific label 100% of the time (37% of them in the wrong super-category, e.g. an animal named as a vehicle), whereas the hierarchical layer emits zero confident wrong specific labels and safely handles 94% of the objects (a correct super-category, or an explicit UNKNOWN OBSTACLE). We are explicit that this is a safety result, not a specificity one: the correct super-category is recovered only 26% of the time and the remaining 69% are conservatively flagged unknown. The contribution is an open-world perception layer that never makes a confident categorical mistake on an out-of-vocabulary object, together with an honest account of its cost.",
+      "abstract_zh": "闭集检测器在自动驾驶中必须为每个物体分配固定标签集中的一个标签。对于该集合外的物体（如马车、道路碎片、乡村道路上的牲畜），它只能强制分配一个自信但错误的具体标签，或放弃该物体。之前的研究将平面标签集替换为层次分类法和运行时抽象规则，但仅在闭集检测器已经生成的框上进行了评估。本文将层次分类法应用于开放世界：我们在无类别区域提议之上进行分类抽象，以便闭集检测器从未框定的物体也能被分类或标记；我们报告了三种开放世界信号的可行性研究（无类别分割、基于外观的分布外评分、单目深度），展示了为何单一的二维线索不足以满足需求以及它们如何组合；我们进行了早期论文无法进行的评估，即在真实标注物体上的真实离类基准。我们保留了七个COCO类别，并对其235个真实标注裁剪进行分类，结果显示平面闭集头100%时间发出自信的错误具体标签（其中37%属于错误的超级类别，例如将动物标记为车辆），而层次层发出零个自信的错误具体标签，并安全处理94%的物体（一个正确的超级类别，或一个明确的未知障碍物）。我们明确指出这是一个安全结果，而非特异性结果：正确的超级类别仅在26%的情况下被恢复，其余69%被保守地标记为未知。我们的贡献是一个开放世界感知层，它在超出词汇范围的物体上从不做出自信的类别错误，同时诚实地说明了其成本。",
+      "authors": [
+        "Felix Schaller"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.07577",
+      "tags": [
+        "感知",
+        "安全/异常",
+        "深度/几何"
+      ],
+      "title": "Open-World Hierarchical Perception: Taxonomic Abstraction over Class-Agnostic Proposals for the Safe Handling of Out-of-Vocabulary Road Objects",
+      "title_zh": "开放世界层次感知：针对超出词汇范围的道路物体安全处理的无类别提议的分类抽象",
+      "url": "/daily/2026-08-11/#paper-2608-07577"
+    },
+    {
+      "abstract": "Urban flooding poses an escalating threat to transportation infrastructure, yet no operational system provides real-time, street-level flood-depth estimates at centimeter resolution. This paper presents three vision-language models fine-tuned for continuous flood-depth estimation from street-level imagery: FloodLlama-Dense, a fully fine-tuned QLoRA baseline, and FloodLlama-MI5 and FloodLlama-MI6, interpretability-guided sparse variants that fine-tune only the top five and six causally relevant cross-attention layers identified through mechanistic interpretability analysis, respectively. Training uses an approximately 610,000-image subset of a 2.81-million-image synthetic corpus generated in Unreal Engine 5. The dataset combines single-vehicle subsets with 5 cm depth increments and mixed-vehicle subsets with 1 cm depth increments, spanning seven vehicle types, four weather conditions, and flood depths from 0 to 40 cm. FloodLlama-Dense achieves an MAE of 0.40 cm, an RMSE of 1.97 cm, and an Acc@5cm of 97.59%. Mechanistic interpretability analysis combining linear probing, logit lens, centered kernel alignment (CKA), and cross-attention entropy reveals a two-stage adaptation pattern: layers L13-L22 restructure visual representations, while depth first becomes linearly decodable at layer L23. FloodLlama-MI5 and FloodLlama-MI6 leverage this insight by fine-tuning only five or six of the eight cross-attention layers, achieving an 86-88% reduction in trainable parameters (6.55-7.86 million versus 54.4 million) with minimal accuracy loss. On a real-world benchmark, FloodLlama-MI6 achieves 98.62% accuracy, compared with 86.61% for the published STURM-FloodDepth baseline.",
+      "abstract_zh": "城市洪水对交通基础设施构成日益严重的威胁，但目前没有任何操作系统能够提供厘米分辨率的实时街道级洪水深度估计。本文提出了三种经过微调的视觉-语言模型，用于从街道级图像中连续估计洪水深度：FloodLlama-Dense，一个完全微调的QLoRA基线，以及FloodLlama-MI5和FloodLlama-MI6，这两种模型是基于可解释性的稀疏变体，分别仅微调通过机制可解释性分析识别出的五个和六个因果相关的交叉注意力层。训练使用了一个约610,000张图像的子集，该子集来自于在Unreal Engine 5中生成的281万张图像的合成语料库。该数据集结合了单车车辆子集（深度增量为5厘米）和混合车辆子集（深度增量为1厘米），涵盖了七种车辆类型、四种天气条件以及0到40厘米的洪水深度。FloodLlama-Dense实现了0.40厘米的平均绝对误差（MAE）、1.97厘米的均方根误差（RMSE）和97.59%的5厘米准确率（Acc@5cm）。结合线性探测、logit lens、中心核对齐（CKA）和交叉注意力熵的机制可解释性分析揭示了一个两阶段的适应模式：L13-L22层重构视觉表示，而深度在L23层首次变得线性可解。FloodLlama-MI5和FloodLlama-MI6利用这一洞察，通过仅微调八个交叉注意力层中的五个或六个，实现了可训练参数减少86-88%（从6.55-7.86百万降至54.4百万），且准确性损失最小。在一个真实世界基准测试中，FloodLlama-MI6的准确率达到98.62%，而已发布的STURM-FloodDepth基线为86.61%。",
+      "authors": [
+        "Nafis Fuad",
+        "Xiaodong Qian",
+        "Dongxiao Zhu"
+      ],
+      "date": "2026-08-11",
+      "id": "2608.07562",
+      "tags": [
+        "仿真/数据",
+        "深度/几何",
+        "LiDAR/点云"
+      ],
+      "title": "Mechanistic Interpretability-Guided Selective Fine-Tuning of Vision-Language Models for Centimeter-Level Flood Depth Estimation",
+      "title_zh": "机制可解释性指导的视觉-语言模型选择性微调用于厘米级洪水深度估计",
+      "url": "/daily/2026-08-11/#paper-2608-07562"
+    },
     {
       "abstract": "Effective Visual Localization (VL) requires a map of the environment that combines compactness for efficient scalability with robustness against visual appearance changes and metric precision. Through low-dimensional image embeddings, Visual Place Recognition (VPR) is able to successfully meet the first two requirements, but its low metric accuracy makes it less suitable than standard VL approaches based on local features or neural representations. This limitation can be overcome by integrating VPR with the accurate local trajectory estimates produced by feed-forward neural 3D geometry (FF3D) models. In this paper, we address sequential appearance-based localization through a topometric framework that iteratively combines probabilistic VPR with FF3D metric pose estimation in controlled image sets. Our approach proposes an automatic offline mapping tool that models the topometric pose-appearance interaction in the different parts of the scene. This map is later employed by an online particle filter that estimates the pose from odometry and belief over places for FF3D inference, successfully incorporating neural metric estimation into probabilistic appearance-based localization. We extensively evaluate the framework on three known benchmarks, demonstrating substantial improvements over existing appearance-based methods. The modularity of our approach allows the descriptor extractor and FF3D model to remain interchangeable, and a focused analysis further shows that sequential belief can mitigate severe failures under perceptual aliasing.",
       "abstract_zh": "有效的视觉定位（VL）需要一个环境地图，该地图在高效可扩展性与对视觉外观变化的鲁棒性及度量精度之间实现平衡。通过低维图像嵌入，视觉地点识别（VPR）能够成功满足前两个要求，但其低度量精度使其不如基于局部特征或神经表示的标准VL方法适用。通过将VPR与前馈神经3D几何模型（FF3D）生成的准确局部轨迹估计相结合，可以克服这一限制。本文通过一个拓扑框架解决基于外观的序列定位，该框架在受控图像集上迭代地将概率VPR与FF3D度量位姿估计结合。我们的方法提出了一种自动离线映射工具，建模场景不同部分的拓扑位姿-外观交互。该地图随后被在线粒子滤波器使用，该滤波器根据里程计和对地点的信念进行位姿估计，以实现FF3D推理，成功地将神经度量估计纳入基于概率的外观定位。我们在三个已知基准上对该框架进行了广泛评估，显示出相较于现有基于外观的方法有显著改进。我们方法的模块化特性使得描述符提取器和FF3D模型可以互换，进一步的聚焦分析表明，序列信念可以缓解感知混淆下的严重失败。",

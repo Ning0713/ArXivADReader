@@ -1,0 +1,56 @@
+{
+  "abstract": "Vision-language models (VLMs) have advanced scene understanding and enabled explicit reasoning in end-to-end autonomous driving. However, existing methods insufficiently integrate spatial-physical evidence into planning reasoning, while reasoning adaptation remains coarse-grained and falls short of scene-specific planning demands. Furthermore, reasoning-path optimization for higher planning quality remains largely unexplored in autonomous-driving post-training. To address these limitations, we propose FactorDrive, an end-to-end autonomous driving framework for adaptive multi-step reasoning driven by planning-critical factors (PCFs). We first perform large-scale driving-domain instruction tuning to establish foundational driving knowledge. Building on this foundation, we construct PCF-CoT, a chain-of-thought (CoT) dataset that grounds planning reasoning in trajectory-relevant spatial-physical evidence and organizes reasoning around scene-specific PCFs, enabling the composition and depth of reasoning paths to adapt to different planning demands. We further introduce Quality Search-Guided Group Relative Policy Optimization (QS-GRPO), which guides Monte Carlo Tree Search (MCTS) with trajectory-level planning rewards to discover reasoning paths with higher planning quality and uses the resulting responses to optimize the policy through GRPO, thereby improving trajectory planning performance. Extensive experiments on both open-loop (nuScenes) and closed-loop-oriented (NAVSIM) benchmarks demonstrate that FactorDrive achieves state-of-the-art planning performance.",
+  "abstract_zh": "视觉语言模型（VLMs）已推动场景理解的发展，并在端到端自主驾驶中实现了显式推理。然而，现有方法在将空间物理证据融入规划推理方面不足，同时推理适应性仍然较为粗糙，无法满足场景特定的规划需求。此外，针对更高规划质量的推理路径优化在自主驾驶后训练中仍然未得到充分探索。为了解决这些局限性，我们提出了FactorDrive，这是一个端到端自主驾驶框架，旨在通过规划关键因素（PCFs）驱动自适应多步骤推理。我们首先进行大规模驾驶领域的指令微调，以建立基础驾驶知识。在此基础上，我们构建了PCF-CoT，一个将规划推理与轨迹相关的空间物理证据相结合的思维链（CoT）数据集，并围绕场景特定的PCFs组织推理，使推理路径的组成和深度能够适应不同的规划需求。我们进一步引入了质量搜索引导的群体相对策略优化（QS-GRPO），该方法通过轨迹级规划奖励引导蒙特卡洛树搜索（MCTS），以发现具有更高规划质量的推理路径，并利用生成的响应通过GRPO优化策略，从而提高轨迹规划性能。在开放循环（nuScenes）和闭环导向（NAVSIM）基准上的大量实验证明，FactorDrive达到了最先进的规划性能。",
+  "arxiv_id": "2608.09591",
+  "arxiv_url": "https://arxiv.org/abs/2608.09591v1",
+  "authors": [
+    "Guolei Huang",
+    "Tengfei She",
+    "Yuxuan Lu",
+    "Yao Huang",
+    "Yuqi Ye",
+    "Yongjun Shen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-09591",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.232672+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.09591v1",
+  "published_at": "2026-08-10T13:26:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.09591v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "FactorDrive: Adaptive Multi-Step Reasoning Driven by Planning-Critical Factors for End-to-End Autonomous Driving",
+  "title_zh": "FactorDrive：基于规划关键因素的自适应多步骤推理驱动的端到端自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.09591"
+}

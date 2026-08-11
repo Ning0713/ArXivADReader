@@ -1,0 +1,60 @@
+{
+  "abstract": "Connected Autonomous Vehicles (CAVs) increasingly exploit Vehicle-to-Everything (V2X) communication to exchange multi-source sensor information, enabling advanced Collaborative Perception (CP) capabilities. Extending beyond these capabilities, this work focuses on Collaborative Joint Perception and Prediction (Co-P&P), a paradigm that unifies CP with motion prediction to mitigate two persistent challenges: the accumulation of perception errors and visual occlusions. We present a conceptual framework for Collaborative Joint Perception and Prediction (Co-P&P) that improves motion prediction of surrounding road users, thereby enhancing situational awareness in complex and dynamic traffic environments. Building upon our preliminary study, this extended version compares the performance of different fusion strategies and establishes baseline performance for a modular design of perception and prediction. Experimental results show that prediction-level fusion leads to a decline in overall system performance compared to detection-level or tracking-level fusion. We further implement a minimal end-to-end Co-P&P prototype that couples collaborative point-cloud sharing via the RENO neural codec with joint detection-forecasting via FutureDet, showing that collaboration improves forecasting accuracy while neural compression preserves this benefit at roughly 34x lower communication bandwidth.",
+  "abstract_zh": "连接自主车辆（CAVs）越来越多地利用车与所有事物（V2X）通信来交换多源传感器信息，从而实现先进的协作感知（CP）能力。超越这些能力，本研究聚焦于协作联合感知与预测（Co-P&P），这一范式将协作感知与运动预测结合起来，以缓解两个持续存在的挑战：感知误差的累积和视觉遮挡。我们提出了一个协作联合感知与预测（Co-P&P）的概念框架，旨在改善周围道路使用者的运动预测，从而增强复杂和动态交通环境中的情境意识。在我们的初步研究基础上，本扩展版本比较了不同融合策略的性能，并为感知与预测的模块化设计建立了基线性能。实验结果表明，与检测级或跟踪级融合相比，预测级融合导致整体系统性能下降。我们进一步实现了一个最小化的端到端Co-P&P原型，该原型通过RENO神经编码器实现协作点云共享，并通过FutureDet实现联合检测与预测，显示出协作提高了预测准确性，而神经压缩在大约34倍更低的通信带宽下保留了这一优势。",
+  "arxiv_id": "2608.09541",
+  "arxiv_url": "https://arxiv.org/abs/2608.09541v1",
+  "authors": [
+    "Lei Wan",
+    "Hannan Ejaz Keen",
+    "Alexey Vinel"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-09541",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.458358+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.09541v1",
+  "published_at": "2026-08-10T12:39:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "vehicle-to-everything",
+      "v2x",
+      "autonomous",
+      "vehicle",
+      "traffic",
+      "road",
+      "车辆",
+      "交通",
+      "道路",
+      "motion prediction",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.09541v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "端到端驾驶",
+      "协同/V2X"
+    ]
+  },
+  "title": "Towards Collaborative Joint Perception and Prediction: Framework, Baseline Evaluation, and Deployment Perspectives",
+  "title_zh": "朝向协作联合感知与预测：框架、基线评估与部署视角",
+  "translation_url": "https://hjfy.top/arxiv/2608.09541"
+}

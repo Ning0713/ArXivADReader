@@ -1,0 +1,56 @@
+{
+  "abstract": "This study introduces an advanced lateral control strategy for autonomous vehicles using a clothoid-based approach integrated with an adaptive lookahead mechanism. The primary focus is on enhancing lateral stability and path-tracking accuracy through the application of Euler spirals for smooth curvature transitions, thereby reducing passenger discomfort and the risk of vehicle rollover. An innovative aspect of our work is the adaptive adjustment of lookahead distance based on real-time vehicle dynamics and road geometry, which ensures optimal path following under varying conditions. A quasi-feedback control algorithm constructs optimal clothoids at each time step, generating the appropriate steering input. A lead filter compensates for the vehicle's lateral dynamics lag, improving control responsiveness and stability. The effectiveness of the proposed controller is validated through a comprehensive co-simulation using TruckSim and Simulink, demonstrating significant improvements in lateral control performance across diverse driving scenarios. Future directions include scaling the controller for higher-speed applications and further optimization to minimize off-track errors, particularly for articulated vehicles.",
+  "abstract_zh": "本研究提出了一种先进的侧向控制策略，针对自主车辆采用基于克洛索伊德的方法，并结合自适应前视机制。主要关注通过应用欧拉螺旋实现平滑的曲率过渡，以增强侧向稳定性和路径跟踪精度，从而减少乘客的不适感和车辆翻覆的风险。我们工作的一个创新之处在于根据实时车辆动态和道路几何进行前视距离的自适应调整，以确保在不同条件下的最佳路径跟随。一个准反馈控制算法在每个时间步构建最优的克洛索伊德，生成适当的转向输入。前导滤波器补偿车辆侧向动态滞后，提高控制响应性和稳定性。通过使用TruckSim和Simulink进行全面的共同仿真，验证了所提控制器的有效性，显示出在多种驾驶场景下侧向控制性能的显著改善。未来的方向包括将控制器扩展到更高速度的应用，并进一步优化以最小化偏离轨迹的误差，特别是针对关节式车辆。",
+  "arxiv_id": "2608.07740",
+  "arxiv_url": "https://arxiv.org/abs/2608.07740v1",
+  "authors": [
+    "Aashish Shaju",
+    "Steve Southward",
+    "Mehdi Ahmadian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-07740",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.179564+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.07740v1",
+  "published_at": "2026-08-07T20:12:43Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 96
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.07740v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "Enhancing Autonomous Vehicle Navigation with a Clothoid-Based Lateral Controller",
+  "title_zh": "基于克洛索伊德的侧向控制器增强自主车辆导航",
+  "translation_url": "https://hjfy.top/arxiv/2608.07740"
+}

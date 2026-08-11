@@ -1,0 +1,62 @@
+{
+  "abstract": "Lane detection requires recovering thin, elongated, and frequently occluded lane structures under challenging driving conditions. While anchor-based detectors provide efficient candidate generation, their performance is limited by two coupled issues: backbone features often lose structural continuity along partially visible lanes, and classification confidence may decouple from line-level localization quality, allowing inaccurate anchors to persist before non-maximum suppression (NMS). We propose a structure-enhanced and quality-aware framework that improves lane representation and dynamic-anchor scoring while preserving the inference pipeline of the Anchor Decomposition Network (ADNet). Specifically, a Gated Horizontal-Vertical Token (GHVT) module enhances mid- and high-level backbone features via lightweight directional token interactions with a learnable residual gate. In parallel, Line-Quality-Aware Dynamic Anchor Scoring (LQAS) calibrates existing classification logits using quality supervision, hard-negative suppression, and pairwise ranking without adding inference branches. On the VIL-100 dataset, our method improves ADNet-R34 from 89.97 to 91.28 in F1 score at the 0.5 intersection-over-union threshold (F1@50), reducing both false positives and false negatives. Additional experiments on CULane and TuSimple datasets, extensive ablations, score-distribution diagnostics, and runtime analysis confirm complementary structural and ranking improvements with minimal computational overhead.",
+  "abstract_zh": "车道检测需要在复杂的驾驶条件下恢复细长且经常被遮挡的车道结构。虽然基于锚点的检测器提供了高效的候选生成，但其性能受到两个相互关联问题的限制：主干特征在部分可见车道上往往失去结构连续性，且分类置信度可能与线级定位质量脱钩，导致不准确的锚点在非极大值抑制（NMS）之前持续存在。我们提出了一种结构增强和质量感知框架，旨在改善车道表示和动态锚评分，同时保持锚分解网络（Anchor Decomposition Network，ADNet）的推理流程。具体而言，门控水平-垂直标记（Gated Horizontal-Vertical Token，GHVT）模块通过与可学习残差门的轻量级方向标记交互，增强中高层主干特征。同时，线质量感知动态锚评分（Line-Quality-Aware Dynamic Anchor Scoring，LQAS）利用质量监督、困难负样本抑制和成对排名来校准现有分类逻辑，而无需增加推理分支。在VIL-100数据集上，我们的方法将ADNet-R34的F1分数从89.97提高到91.28（在0.5交并比阈值下，F1@50），同时减少了假阳性和假阴性。在CULane和TuSimple数据集上的额外实验、广泛的消融实验、得分分布诊断和运行时分析确认了结构和排名的互补改进，且计算开销最小。",
+  "arxiv_id": "2608.09610",
+  "arxiv_url": "https://arxiv.org/abs/2608.09610v1",
+  "authors": [
+    "Weize Cai",
+    "Yongqi Dong",
+    "Zhida Shao",
+    "Yichen Liu",
+    "Zixin Fu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-09610",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "eess.IV",
+    "eess.SP"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.467643+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.09610v1",
+  "published_at": "2026-08-10T13:52:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "intersection",
+      "lane",
+      "驾驶",
+      "车道",
+      "lane detection",
+      "车道检测",
+      "诊断"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "标题命中自动驾驶专用技术",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 29
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.09610v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "Structure-Enhanced Features and Quality-Aware Dynamic Anchor Scoring for Robust Lane Detection",
+  "title_zh": "结构增强特征与质量感知动态锚评分用于鲁棒车道检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.09610"
+}

@@ -1,0 +1,60 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models have recently achieved impressive performance for end-to-end autonomous driving, yet existing approaches are primarily designed for an individual single autonomous driving agent with limited support for cooperative perception, reasoning, and planning. We present Cooperative Multi-agent Unified Driving with Reasoning (CMU-Drive), a closed-loop end-to-end benchmark for evaluating cooperative autonomous driving with multiple connected autonomous vehicles (CAVs) operating in safety-critical driving scenarios with background traffic participants. We further propose Vehicle-to-Vehicle Vision-Language-Action (V2V-VLA), a cooperative VLA model that integrates cooperative driving into a single forward pass by jointly generating driving actions, future waypoints, language reasoning, and communication policies. Experiments on CMU-Drive establish the first benchmark and baseline for cooperative VLA driving and provide a foundation for future research on multi-agent, closed-loop, end-to-end cooperative autonomous driving. Our code, benchmark, and model checkpoint will be publicly released to facilitate open-source research.",
+  "abstract_zh": "视觉-语言-行动（VLA）模型最近在端到端自主驾驶方面取得了令人瞩目的表现，但现有的方法主要针对单一自主驾驶智能体设计，对协作感知、推理和规划的支持有限。我们提出了带有推理的协作多智能体统一驾驶（CMU-Drive），这是一个闭环端到端基准，用于评估多个连接自主车辆（CAVs）在安全关键驾驶场景中与背景交通参与者协作的自主驾驶能力。我们进一步提出了车对车视觉-语言-行动（V2V-VLA），这是一个将协作驾驶整合到单次前向推理中的协作VLA模型，通过共同生成驾驶动作、未来路径点、语言推理和通信策略。CMU-Drive上的实验建立了协作VLA驾驶的第一个基准和基线，为未来多智能体、闭环、端到端的协作自主驾驶研究奠定了基础。我们的代码、基准和模型检查点将公开发布，以促进开源研究。",
+  "arxiv_id": "2608.07621",
+  "arxiv_url": "https://arxiv.org/abs/2608.07621v1",
+  "authors": [
+    "Hsu-kuang Chiu",
+    "Stephen F. Smith"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-07621",
+  "categories": [
+    "cs.AI",
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.507356+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.07621v1",
+  "published_at": "2026-08-07T09:00:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "vision-language-action",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.07621v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "CMU-Drive and V2V-VLA: Cooperative Multi-agent Unified Driving with Reasoning Benchmark and Vehicle-to-Vehicle Vision-Language-Action Models",
+  "title_zh": "CMU-Drive 和 V2V-VLA：带有推理基准的协作多智能体统一驾驶与车对车视觉-语言-行动模型",
+  "translation_url": "https://hjfy.top/arxiv/2608.07621"
+}

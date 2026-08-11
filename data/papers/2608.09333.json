@@ -1,0 +1,55 @@
+{
+  "abstract": "Large-scale language models for autonomous driving enable enhanced global understanding and long-horizon planning. However, when deployed in isolated vehicles, limited sensing range and occlusions restrict reliable decision-making, and the substantial computational and latency overhead makes on-board deployment impractical. Cooperative driving provides a potential solution by leveraging external agents for information exchange, but existing methods remain limited in semantic reasoning capability under practical constraints. To address these challenges, we propose DH-VLM, a dual-horizon cooperative latent reasoning framework that enables asymmetric semantic cooperation between the infrastructure and ego vehicle. The infrastructure aggregates multi-layer hidden states to form a global-reasoning horizon latent guidance, which is integrated into the ego model through an Infrastructure-Driven Latent Evolution mechanism for conditional latent refinement. This enables the ego vehicle to leverage long-range contextual understanding while preserving autonomous decision-making within its local planning horizon. Furthermore, we construct a cooperation-oriented question-answer (QA) dataset covering fundamental scene understanding and ego-personalized comprehension to support counterfactual and safety-aware reasoning. Extensive experiments demonstrate that DH-VLM achieves state-of-the-art planning performance, outperforming the previous state of the art by 14.6% in L2 error and 26.9% in collision rate. Compared with query-based end-to-end cooperative driving methods, our approach reduces the communication cost by 57.3% and GPU memory usage by 25.5%, while maintaining strong robustness against infrastructure guidance errors, providing a practical and robust paradigm for cooperative autonomous driving.",
+  "abstract_zh": "大规模语言模型在自主驾驶中能够增强全球理解和长远规划。然而，当部署在孤立的车辆中时，有限的感知范围和遮挡物限制了可靠的决策能力，而巨大的计算和延迟开销使得车载部署变得不切实际。协作驾驶通过利用外部代理进行信息交换提供了一种潜在的解决方案，但现有方法在实际约束下的语义推理能力仍然有限。为了解决这些挑战，我们提出了DH-VLM，一种双视野协作潜在推理框架，能够实现基础设施与自我车辆之间的不对称语义协作。基础设施聚合多层隐藏状态，形成全球推理视野潜在引导，通过基础设施驱动的潜在演化机制集成到自我模型中，以实现条件潜在细化。这使得自我车辆能够利用长距离上下文理解，同时在其局部规划视野内保持自主决策。此外，我们构建了一个面向合作的问题-答案（QA）数据集，涵盖基础场景理解和自我个性化理解，以支持反事实和安全意识推理。大量实验表明，DH-VLM在规划性能上达到了最先进的水平，在L2误差上比之前的最先进技术提高了14.6%，在碰撞率上提高了26.9%。与基于查询的端到端协作驾驶方法相比，我们的方法将通信成本降低了57.3%，GPU内存使用降低了25.5%，同时在基础设施引导错误下保持了强大的鲁棒性，为协作自主驾驶提供了一个实用且稳健的范式。",
+  "arxiv_id": "2608.09333",
+  "arxiv_url": "https://arxiv.org/abs/2608.09333v1",
+  "authors": [
+    "Ziyi Song",
+    "Chen Xia",
+    "Hang Yu",
+    "Sheng Zhou",
+    "Zhisheng Niu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-09333",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.221593+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.09333v1",
+  "published_at": "2026-08-10T09:11:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego vehicle",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.09333v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "仿真/数据"
+    ]
+  },
+  "title": "DH-VLM: Dual-Horizon Cooperative Latent Reasoning for Autonomous Driving",
+  "title_zh": "DH-VLM：用于自主驾驶的双视野协作潜在推理",
+  "translation_url": "https://hjfy.top/arxiv/2608.09333"
+}

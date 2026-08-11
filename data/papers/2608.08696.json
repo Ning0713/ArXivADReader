@@ -1,0 +1,55 @@
+{
+  "abstract": "3D occupancy prediction is fundamental to scene understanding, yet existing 3D semantic occupancy methods are typically specialized to fixed scene types and occupancy protocols. We introduce Cross-Scene 3D Semantic Occupancy Prediction, a new task setting which requires a single model to handle heterogeneous indoor and outdoor scenes with varying cameras, spatial ranges, voxel specifications, and semantic taxonomies. This setting poses a fundamental challenge: achieving metric-consistent yet scene-adaptive image-to-3D lifting across varying camera configurations and scene scales. To address this challenge, we propose OccAnyScene, a pixel-frustum-centered Gaussian framework built upon a pretrained depth foundation model. Specifically, the framework employs Pixel-Aligned Frustum Feature Aggregation to construct a camera-aware frustum query for each feature pixel, and Frustum-Parameterized Gaussian Construction to decode each query into multiple Gaussians whose positions and sizes are constrained by the predicted pixel depth and corresponding frustum geometry. OccAnyScene sets new state-of-the-art results, achieving 59.92% mIoU on the indoor Occ-ScanNet and 23.06% mIoU on the outdoor SurroundOcc-nuScenes.",
+  "abstract_zh": "3D占用预测是场景理解的基础，但现有的3D语义占用方法通常专门针对固定场景类型和占用协议。我们提出了跨场景3D语义占用预测（Cross-Scene 3D Semantic Occupancy Prediction），这是一种新的任务设置，要求单一模型处理具有不同相机、空间范围、体素规格和语义分类的异构室内外场景。该设置提出了一个基本挑战：在不同的相机配置和场景尺度下，实现度量一致且适应场景的图像到3D的提升。为了解决这一挑战，我们提出了OccAnyScene，这是一种基于预训练深度基础模型的像素锥体中心高斯框架。具体而言，该框架采用像素对齐锥体特征聚合（Pixel-Aligned Frustum Feature Aggregation）为每个特征像素构建一个相机感知的锥体查询，并通过锥体参数化高斯构造（Frustum-Parameterized Gaussian Construction）将每个查询解码为多个高斯，其位置和大小受预测的像素深度和相应的锥体几何约束。OccAnyScene在室内Occ-ScanNet上实现了59.92%的mIoU，在室外SurroundOcc-nuScenes上实现了23.06%的mIoU，创造了新的最先进结果。",
+  "arxiv_id": "2608.08696",
+  "arxiv_url": "https://arxiv.org/abs/2608.08696v1",
+  "authors": [
+    "Junjie Liu",
+    "Wanshui Gan",
+    "Zitong Dai",
+    "Guiping Cao",
+    "Yan Li",
+    "Ke Chen",
+    "Dongmei Jiang",
+    "Xiangyuan Lan",
+    "Jianguo Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-08696",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.365812+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.08696v1",
+  "published_at": "2026-08-09T13:19:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.08696v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "感知"
+    ]
+  },
+  "title": "OccAnyScene: Towards Unified Indoor-Outdoor 3D Occupancy Predictio",
+  "title_zh": "OccAnyScene：统一室内外3D占用预测的探索",
+  "translation_url": "https://hjfy.top/arxiv/2608.08696"
+}

@@ -1,0 +1,60 @@
+{
+  "abstract": "End-to-end planning has shown strong promise for autonomous driving, but most existing methods are designed for structured urban roads and generalize poorly to unstructured mining environments. In such settings, weak road structure, terrain-induced occlusions, degraded visibility, and large unobserved regions make safe planning particularly challenging. To address these challenges, we propose UnsDrive, an end-to-end planner designed for unstructured mining scenes. UnsDrive builds an unknown-aware occupancy representation that explicitly models occupied, free, and unknown space using multi-frame visibility cues, and conditions a flow-matching planner on this representation to generate multimodal future trajectories. To improve safety under partial observability, we further introduce an occupancy trajectory consistency loss and an uncertainty-aware trajectory scorer that penalize trajectories entering non-traversable or unobserved regions. We also present MineLoop, a mining-oriented closed-loop simulator for evaluating autonomous driving under irregular road geometry, degraded visibility, heavy-vehicle interactions, and mining-specific operational constraints. Experiments in both open-loop and closed-loop settings show that UnsDrive consistently outperforms strong baselines in trajectory accuracy, collision avoidance, and long-horizon driving robustness. These results demonstrate the value of explicit unknown-space reasoning for autonomous driving in unstructured mining environments.",
+  "abstract_zh": "端到端规划在自动驾驶中展现了强大的潜力，但大多数现有方法是为结构化城市道路设计的，且在非结构化矿区环境中泛化能力较差。在这些环境中，薄弱的道路结构、地形引起的遮挡、能见度降低以及大面积未观测区域使得安全规划尤为具有挑战性。为了解决这些问题，我们提出了UnsDrive，一种专为非结构化矿区场景设计的端到端规划器。UnsDrive构建了一种未知感知的占用表示，利用多帧可见性线索显式建模占用、空闲和未知空间，并基于该表示条件化流匹配规划器以生成多模态未来轨迹。为了在部分可观测性下提高安全性，我们进一步引入了占用轨迹一致性损失和不确定性感知轨迹评分器，以惩罚进入不可通行或未观测区域的轨迹。我们还提出了MineLoop，一种面向矿业的闭环模拟器，用于评估在不规则道路几何、能见度降低、重型车辆交互和矿业特定操作约束下的自动驾驶。开放环和闭环设置下的实验表明，UnsDrive在轨迹准确性、碰撞避免和长时间驾驶稳健性方面始终优于强基线。这些结果展示了在非结构化矿区环境中，显式未知空间推理对自动驾驶的价值。",
+  "arxiv_id": "2608.09098",
+  "arxiv_url": "https://arxiv.org/abs/2608.09098v1",
+  "authors": [
+    "Nanxin Zeng",
+    "Ruiqi Song",
+    "Xiangyu Guo",
+    "Baiyong Ding",
+    "Yunfeng Ai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-09098",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.210984+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.09098v1",
+  "published_at": "2026-08-10T03:56:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路",
+      "occupancy"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.09098v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "UnsDrive: Towards Robust End-to-End Autonomous Driving in Unstructured Scenes",
+  "title_zh": "UnsDrive：朝着在非结构化场景中实现稳健的端到端自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.09098"
+}

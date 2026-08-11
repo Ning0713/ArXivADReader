@@ -1,0 +1,53 @@
+{
+  "abstract": "Urban flooding poses an escalating threat to transportation infrastructure, yet no operational system provides real-time, street-level flood-depth estimates at centimeter resolution. This paper presents three vision-language models fine-tuned for continuous flood-depth estimation from street-level imagery: FloodLlama-Dense, a fully fine-tuned QLoRA baseline, and FloodLlama-MI5 and FloodLlama-MI6, interpretability-guided sparse variants that fine-tune only the top five and six causally relevant cross-attention layers identified through mechanistic interpretability analysis, respectively. Training uses an approximately 610,000-image subset of a 2.81-million-image synthetic corpus generated in Unreal Engine 5. The dataset combines single-vehicle subsets with 5 cm depth increments and mixed-vehicle subsets with 1 cm depth increments, spanning seven vehicle types, four weather conditions, and flood depths from 0 to 40 cm. FloodLlama-Dense achieves an MAE of 0.40 cm, an RMSE of 1.97 cm, and an Acc@5cm of 97.59%. Mechanistic interpretability analysis combining linear probing, logit lens, centered kernel alignment (CKA), and cross-attention entropy reveals a two-stage adaptation pattern: layers L13-L22 restructure visual representations, while depth first becomes linearly decodable at layer L23. FloodLlama-MI5 and FloodLlama-MI6 leverage this insight by fine-tuning only five or six of the eight cross-attention layers, achieving an 86-88% reduction in trainable parameters (6.55-7.86 million versus 54.4 million) with minimal accuracy loss. On a real-world benchmark, FloodLlama-MI6 achieves 98.62% accuracy, compared with 86.61% for the published STURM-FloodDepth baseline.",
+  "abstract_zh": "城市洪水对交通基础设施构成日益严重的威胁，但目前没有任何操作系统能够提供厘米分辨率的实时街道级洪水深度估计。本文提出了三种经过微调的视觉-语言模型，用于从街道级图像中连续估计洪水深度：FloodLlama-Dense，一个完全微调的QLoRA基线，以及FloodLlama-MI5和FloodLlama-MI6，这两种模型是基于可解释性的稀疏变体，分别仅微调通过机制可解释性分析识别出的五个和六个因果相关的交叉注意力层。训练使用了一个约610,000张图像的子集，该子集来自于在Unreal Engine 5中生成的281万张图像的合成语料库。该数据集结合了单车车辆子集（深度增量为5厘米）和混合车辆子集（深度增量为1厘米），涵盖了七种车辆类型、四种天气条件以及0到40厘米的洪水深度。FloodLlama-Dense实现了0.40厘米的平均绝对误差（MAE）、1.97厘米的均方根误差（RMSE）和97.59%的5厘米准确率（Acc@5cm）。结合线性探测、logit lens、中心核对齐（CKA）和交叉注意力熵的机制可解释性分析揭示了一个两阶段的适应模式：L13-L22层重构视觉表示，而深度在L23层首次变得线性可解。FloodLlama-MI5和FloodLlama-MI6利用这一洞察，通过仅微调八个交叉注意力层中的五个或六个，实现了可训练参数减少86-88%（从6.55-7.86百万降至54.4百万），且准确性损失最小。在一个真实世界基准测试中，FloodLlama-MI6的准确率达到98.62%，而已发布的STURM-FloodDepth基线为86.61%。",
+  "arxiv_id": "2608.07562",
+  "arxiv_url": "https://arxiv.org/abs/2608.07562v1",
+  "authors": [
+    "Nafis Fuad",
+    "Xiaodong Qian",
+    "Dongxiao Zhu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-07562",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.256172+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.07562v1",
+  "published_at": "2026-08-02T22:38:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆",
+      "交通",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 23
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.07562v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Mechanistic Interpretability-Guided Selective Fine-Tuning of Vision-Language Models for Centimeter-Level Flood Depth Estimation",
+  "title_zh": "机制可解释性指导的视觉-语言模型选择性微调用于厘米级洪水深度估计",
+  "translation_url": "https://hjfy.top/arxiv/2608.07562"
+}

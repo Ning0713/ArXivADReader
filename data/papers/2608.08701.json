@@ -1,0 +1,58 @@
+{
+  "abstract": "Advanced automated driving presents significant potential to improve modern automotive safety systems, but it depends highly on the reliable activation of restraint systems. Forward-looking sensors are crucial for immediate and precise object detection. Recent developments in automotive radar technology enable detailed environment detection and the recognition of high-resolution features, such as micro-Doppler signatures. Combined with advanced AI techniques, these features significantly enhance object detection and improve the accuracy of kinematic parameter estimation. This is essential for the early and reliable activation of irreversible safety systems, such as smart airbags and adaptive seat belts. Therefore, an anchor-based AI model is presented, designed to process high-resolution radar data with an explicit focus on micro-Doppler signatures to improve pre-crash object detection. Furthermore, these signatures can improve the accuracy of kinematic object parameter estimation and reduce false negatives, especially in the critical near-field. To address the challenges of sparse and fluctuating radar point clouds, an innovative radar-image dilation technique on the feature input channels was developed to amplify local radar patterns, like micro-Doppler features. Therefore, this approach increases the system's reliability and increases its ability to detect objects in pre-crash scenarios despite radar multipath reflections and ghost objects. In order to investigate the applicability and compare the model's performance with advanced automotive radar tracking methods, a radar data set using series sensors and pre-crash relevant scenarios was recorded. The results demonstrate the advantages of the anchor-based AI model over established tracking approaches. It excels at estimating object parameters in dynamic scenarios and underscores its ability to process different data sets effectively.",
+  "abstract_zh": "先进的自动驾驶技术在提升现代汽车安全系统方面具有显著潜力，但其高度依赖于约束系统的可靠激活。前向传感器对于即时和精确的物体检测至关重要。近年来汽车雷达技术的发展使得环境检测和高分辨率特征（如微多普勒特征）的识别成为可能。结合先进的人工智能技术，这些特征显著增强了物体检测能力，并提高了运动参数估计的准确性。这对于不可逆安全系统（如智能安全气囊和自适应安全带）的早期和可靠激活至关重要。因此，提出了一种基于锚点的人工智能模型，旨在处理高分辨率雷达数据，明确关注微多普勒特征，以改善碰撞前物体检测。此外，这些特征可以提高运动物体参数估计的准确性，并减少假阴性，特别是在关键的近场区域。为了解决稀疏和波动的雷达点云带来的挑战，开发了一种创新的雷达图像扩张技术，应用于特征输入通道，以增强局部雷达模式，如微多普勒特征。因此，该方法提高了系统的可靠性，并增强了其在碰撞前场景中检测物体的能力，尽管存在雷达多路径反射和虚假物体。为了研究其适用性并与先进的汽车雷达跟踪方法比较模型的性能，记录了一个使用系列传感器和碰撞前相关场景的雷达数据集。结果表明，基于锚点的人工智能模型相较于已建立的跟踪方法具有优势。它在动态场景中出色地估计物体参数，并强调了其有效处理不同数据集的能力。",
+  "arxiv_id": "2608.08701",
+  "arxiv_url": "https://arxiv.org/abs/2608.08701v1",
+  "authors": [
+    "Patrick Zaumseil",
+    "Rainer Engert",
+    "Dagmar Steinhauser",
+    "Jonathan Wache",
+    "Soumya Dewangan",
+    "Thomas Brandmeier"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-08701",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.200911+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.08701v1",
+  "published_at": "2026-08-09T13:32:45Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "driving",
+      "automotive",
+      "驾驶",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.08701v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "安全/异常"
+    ]
+  },
+  "title": "Anchor-Based AI Approach for Pre-Crash Object Detection Utilizing Micro-Doppler Signatures in Automotive Radar",
+  "title_zh": "基于锚点的人工智能方法在汽车雷达中利用微多普勒特征进行碰撞前物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.08701"
+}

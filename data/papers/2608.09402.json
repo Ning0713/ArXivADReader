@@ -1,0 +1,57 @@
+{
+  "abstract": "Simulation is crucial for developing and testing autonomous driving systems. In particular, the development of localization and control algorithms relies on an accurate vehicle dynamics simulation. However, most vehicle dynamics models are two-dimensional while real-world roads are three-dimensional. For example, effects from the three-dimensional road geometry on the Las Vegas Motor Speedway can increase the normal forces on the tires by more than 66% compared to the nominal load at standstill. As a result, even highly detailed planar vehicle dynamics models struggle to accurately reproduce the real vehicle's behavior. While solutions for three-dimensional vehicle dynamics exist, they are rarely adopted, computationally expensive, and complex. To address this issue, we present a novel method to couple planar vehicle dynamics models with real-world three-dimensional road geometry. We transform the planar vehicle state from the vehicle model's two-dimensional plane to its corresponding representation in three-dimensional space. Additionally, we calculate road-geometry-induced forces and moments and apply them to the planar vehicle model. We validate our approach using high-speed data recorded with a full-scale race car on the banked Las Vegas Motor Speedway. Furthermore, on synthetic tracks, we show that our method yields accurate results even in edge cases. Together, our results demonstrate that the gap between planar simulation and real-world three-dimensional roads can be closed without abandoning simpler planar models. To simplify adoption of our method, we provide the implementation as open-source software on github.com/TUMFTM/3d-road-geometry-coupling.",
+  "abstract_zh": "仿真对于开发和测试自动驾驶系统至关重要。特别是，定位和控制算法的开发依赖于准确的车辆动力学仿真。然而，大多数车辆动力学模型是二维的，而现实世界的道路是三维的。例如，拉斯维加斯赛车场的三维道路几何对轮胎的法向力影响可使其超过静止状态下名义载荷的66%。因此，即使是高度详细的平面车辆动力学模型也难以准确再现真实车辆的行为。虽然存在三维车辆动力学的解决方案，但它们很少被采用，且计算成本高、复杂。为了解决这一问题，我们提出了一种新方法，将平面车辆动力学模型与现实世界的三维道路几何相耦合。我们将车辆模型的二维平面上的平面车辆状态转换为其在三维空间中的相应表示。此外，我们计算道路几何引起的力和力矩，并将其应用于平面车辆模型。我们使用在倾斜的拉斯维加斯赛车场上用全尺寸赛车记录的高速数据验证了我们的方法。此外，在合成轨道上，我们展示了即使在极端情况下，我们的方法也能产生准确的结果。我们的结果表明，平面仿真与现实世界三维道路之间的差距可以在不放弃更简单的平面模型的情况下缩小。为了简化我们方法的采用，我们将其实现作为开源软件发布在github.com/TUMFTM/3d-road-geometry-coupling上。",
+  "arxiv_id": "2608.09402",
+  "arxiv_url": "https://arxiv.org/abs/2608.09402v1",
+  "authors": [
+    "Simon Sagmeister",
+    "Phillip Pitschi",
+    "Nico Haja",
+    "Markus Lienkamp"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-09402",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.223472+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.09402v1",
+  "published_at": "2026-08-10T10:28:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "car",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 96
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.09402v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "Beyond the Plane: Coupling Planar Vehicle Dynamics with Three-Dimensional Road Geometry",
+  "title_zh": "超越平面：将平面车辆动力学与三维道路几何相耦合",
+  "translation_url": "https://hjfy.top/arxiv/2608.09402"
+}

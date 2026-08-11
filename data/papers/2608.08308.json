@@ -1,0 +1,48 @@
+{
+  "abstract": "Modern vision systems must operate in \"open-world\" settings, where models must recognize known categories and detect unseen or anomalous content. Conventional semantic segmentation models operate under a \"closed-world\" assumption, often producing overconfident misclassifications on novel content. We address open-world semantic segmentation, the joint task of segmenting known classes while detecting and grouping novel or anomalous content without additional supervision, by extending a dual-decoder baseline with a third, complementary decoder within a unified encoder-decoder design. The first decoder performs closed-set segmentation using Gaussian prototypes for known categories. The second uses contrastive feature learning to isolate unknown regions in embedding space. The third, our key contribution, is a sensitivity decoder that captures fine-grained texture irregularities and activation instabilities indicative of semantic uncertainty, which neither semantic prototypes nor contrastive norms can reliably detect. The three decoders provide genuinely complementary signals: class-level OOD distance in logit space, global feature energy in embedding space, and local activation instability across encoder scales. Experiments on Cityscapes and BDD-Anomaly show that our method improves anomaly segmentation and novel-class discovery while maintaining competitive closed-set accuracy, with gains of +2.4% AUROC and a 2.5 pp. reduction in FPR@95TPR on BDD-Anomaly over the baseline.",
+  "abstract_zh": "现代视觉系统必须在“开放世界”环境中运行，其中模型必须识别已知类别并检测未见或异常内容。传统的语义分割模型在“封闭世界”假设下工作，往往对新内容产生过于自信的错误分类。我们通过在统一的编码器-解码器设计中扩展一个双解码器基线，提出了开放世界语义分割的解决方案，该任务是对已知类别进行分割，同时在没有额外监督的情况下检测和分组新颖或异常内容。第一个解码器使用高斯原型对已知类别进行封闭集分割。第二个解码器利用对比特征学习在嵌入空间中隔离未知区域。第三个解码器是我们的关键贡献，它是一个敏感性解码器，捕捉细粒度的纹理不规则性和激活不稳定性，这些特征表明语义不确定性，而语义原型和对比范数无法可靠检测。三个解码器提供真正互补的信号：在对数空间中的类别级OOD距离、在嵌入空间中的全局特征能量，以及在编码器尺度上的局部激活不稳定性。在Cityscapes和BDD-Anomaly上的实验表明，我们的方法在提高异常分割和新类别发现的同时，保持了竞争性的封闭集准确率，在BDD-Anomaly上相较于基线提高了+2.4%的AUROC，并减少了2.5个百分点的FPR@95TPR。",
+  "arxiv_id": "2608.08308",
+  "arxiv_url": "https://arxiv.org/abs/2608.08308v1",
+  "authors": [
+    "Anastasios Romanos Varvarigos",
+    "Nikos Giakoumoglou",
+    "Tania Stathaki"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-08308",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.326861+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.08308v1",
+  "published_at": "2026-08-08T19:37:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.08308v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "深度/几何"
+    ]
+  },
+  "title": "Open-World Semantic Segmentation with Sensitivity Modeling",
+  "title_zh": "基于敏感性建模的开放世界语义分割",
+  "translation_url": "https://hjfy.top/arxiv/2608.08308"
+}

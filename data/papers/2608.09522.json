@@ -1,0 +1,54 @@
+{
+  "abstract": "Automated detection of subsurface cavities from Ground Penetrating Radar (GPR) is most difficult in soft, high-water-content ground, where conductive, water-saturated soil attenuates the signal and degrades cavity reflections, yet this is also the condition under which cavities most readily form. This paper proposes TriView-YOLO, a multi-view YOLOv12 detector for road cavity screening in such ground. Three co-registered views (longitudinal B-scan, horizontal C-scan, and cross-section B-scan) form a 9-channel input fused by a TripleInputConv layer that replaces the YOLOv12 stem; the rest of the network is unchanged, and bounding boxes are required on the longitudinal view only. Training used 1,600 expert-verified field samples, principally metropolitan road surveys of Bangkok, Thailand, acquired with a vehicle-mounted multichannel three-dimensional GPR mobile mapping system, with surveys over the firmer subgrades of Japan added to training and validation only. The test set comes exclusively from the Bangkok surveys, over soft marine clay with 80-140% water content and a water table at 1-2 m depth, a ground condition for which no dedicated deep learning cavity-detection evaluation has been reported. On this unaugmented, field-only test set, split randomly within surveys, the proposed model attains mAP50 of 0.558 +/- 0.028 over three seeds at 23.6 GFLOPs and 3.1 ms per image. Ablations show that removing the auxiliary views lowers mAP50 and recall, whereas public and synthetic training images, DINOv3 features, larger model scale, and COCO pretraining bring no gain.",
+  "abstract_zh": "从地面穿透雷达（GPR）自动检测地下空腔在软质高水分土壤中最为困难，因为导电的水饱和土壤会衰减信号并降低空腔反射的质量，然而，这也是空腔最容易形成的条件。本文提出了TriView-YOLO，一种用于此类土壤中道路空腔筛查的多视角YOLOv12检测器。三个共注册视角（纵向B扫描、横向C扫描和横截面B扫描）形成一个由TripleInputConv层融合的9通道输入，该层替代了YOLOv12的主干；其余网络保持不变，并且仅在纵向视图上需要边界框。训练使用了1,600个专家验证的现场样本，主要是泰国曼谷的城市道路调查，这些样本是通过车载多通道三维GPR移动测绘系统获取的，同时在训练和验证中还加入了日本较坚硬的路基的调查数据。测试集完全来自曼谷的调查，覆盖80-140%水分含量的软质海洋粘土，水位在1-2米深处，这是一个尚未报道专门的深度学习空腔检测评估的土壤条件。在这个未增强的仅现场测试集上，随机分割于调查中，所提模型在23.6 GFLOPs和每幅图像3.1毫秒的情况下，达到了mAP50为0.558 +/- 0.028，基于三个种子的结果。消融实验表明，去除辅助视角会降低mAP50和召回率，而公共和合成训练图像、DINOv3特征、更大的模型规模和COCO预训练则没有带来收益。",
+  "arxiv_id": "2608.09522",
+  "arxiv_url": "https://arxiv.org/abs/2608.09522v1",
+  "authors": [
+    "Suphawut Thawinutchokaudom",
+    "Sompote Youwai",
+    "Warat Kongkitkul",
+    "Mitsumasa Yamashina",
+    "Jose M. D. S. Rodrigues Neto",
+    "Jun Shinohara"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-09522",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.455599+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.09522v1",
+  "published_at": "2026-08-10T12:21:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "道路",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.09522v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "多传感器融合"
+    ]
+  },
+  "title": "TriView-YOLO: Early Multi-View Fusion for Ground Penetrating Radar Cavity Detection in Soft, High-Water-Content Soils",
+  "title_zh": "TriView-YOLO：用于软质高水分土壤中地面穿透雷达空腔检测的早期多视角融合",
+  "translation_url": "https://hjfy.top/arxiv/2608.09522"
+}

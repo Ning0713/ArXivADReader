@@ -1,0 +1,61 @@
+{
+  "abstract": "Long-horizon future-frame prediction is important for autonomous driving, traffic surveillance, and intelligent transportation systems, yet remains challenging due to temporal ghosting, geometry drift, and inconsistent object motion. Recent latent video diffusion models have achieved impressive visual quality, but directly applying them to structured traffic scenes often leads to unstable geometry and degraded temporal coherence over extended horizons. We present a training-free inference framework that stabilizes reliable static structure in pretrained video predictions through multi-frame temporal context and view-conditioned routing. For front-camera videos, our method refines generated futures with a multi-frame depth-layered renderer that projects static geometry from observed history frames while preserving dynamic regions from the generative base model. For heterogeneous traffic views, a frozen vision-language model infers a coarse camera group from the observed clip and selects a specialized motion-based predictor. The framework requires neither retraining nor fine-tuning of the underlying video model and can be applied directly to pretrained generators. We validate the proposed framework on the AI City Challenge Track 5 benchmark, where our final system achieves competitive performance among the top-ranked teams. These results demonstrate that geometry-aware inference-time refinement and view-conditioned hybrid inference can improve static-geometry stability and low-level structural fidelity without changing the original model architecture.",
+  "abstract_zh": "长时间范围的未来帧预测对于自动驾驶、交通监控和智能交通系统至关重要，但由于时间鬼影、几何漂移和不一致的物体运动，仍然面临挑战。最近的潜在视频扩散模型在视觉质量上取得了令人印象深刻的成果，但直接将其应用于结构化交通场景往往导致几何不稳定和长时间范围内的时间一致性下降。我们提出了一种无训练推理框架，通过多帧时间上下文和视图条件路由来稳定预训练视频预测中的可靠静态结构。对于前置摄像头视频，我们的方法使用多帧深度分层渲染器来细化生成的未来帧，该渲染器从观察到的历史帧中投影静态几何，同时保留来自生成基础模型的动态区域。对于异构交通视图，一个冻结的视觉-语言模型从观察到的片段中推断出粗略的摄像机组，并选择一个专门的基于运动的预测器。该框架不需要对底层视频模型进行重新训练或微调，可以直接应用于预训练生成器。我们在AI City Challenge Track 5基准上验证了所提出的框架，其中我们的最终系统在排名前列的团队中表现出竞争力。这些结果表明，几何感知的推理时细化和视图条件的混合推理可以在不改变原始模型架构的情况下，提高静态几何的稳定性和低级结构的保真度。",
+  "arxiv_id": "2608.09493",
+  "arxiv_url": "https://arxiv.org/abs/2608.09493v1",
+  "authors": [
+    "Khang Minh Le",
+    "Hieu Dinh Trung Pham",
+    "Luu Thanh Danh",
+    "Nam-Tien Le",
+    "Hieu Anh Ngo",
+    "Phuong Huu Vu Tran",
+    "Son Nguyen Minh Le",
+    "Nguyen Trong Nghia",
+    "Tu Tran Thi Cam",
+    "Huy Minh Nhat Nguyen",
+    "Cuong Tuan Nguyen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-09493",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.451844+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.09493v1",
+  "published_at": "2026-08-10T12:01:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.09493v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "感知"
+    ]
+  },
+  "title": "GeoRoute: Geometry-Aware Hybrid Inference for Traffic Future-Frame Prediction",
+  "title_zh": "GeoRoute：几何感知混合推理用于交通未来帧预测",
+  "translation_url": "https://hjfy.top/arxiv/2608.09493"
+}

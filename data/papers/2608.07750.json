@@ -1,0 +1,54 @@
+{
+  "abstract": "Deep Neural Networks (DNNs) have found successful deployment in numerous vision perception systems. However, their susceptibility to adversarial attacks has prompted concerns regarding their practical applications, specifically in the context of autonomous driving. Existing defenses often suffer from cost inefficiency, rendering their deployment impractical for resource-constrained applications. In this work, we propose an efficient and effective adversarial attack detection scheme leveraging the multi-task perception within a complex vision system. Adversarial perturbations are detected by the inconsistencies between the inference outputs of multiple vision tasks, e.g., object detection and instance segmentation. To this end, we developed a consistency score metric to measure the inconsistency between vision tasks. Next, we designed an approach to select the best model pairs for detecting inconsistencies effectively. Finally, we evaluated our defense against PGD attacks across multiple vision models on the BDD100k validation dataset. The experimental results demonstrated that our defense achieved a ROC-AUC performance of 99.9% detection within the considered attacker model.",
+  "abstract_zh": "深度神经网络（DNNs）在众多视觉感知系统中得到了成功应用。然而，它们对对抗攻击的脆弱性引发了对其实际应用的担忧，特别是在自动驾驶的背景下。现有的防御措施往往存在成本低效的问题，使其在资源受限的应用中难以部署。在本研究中，我们提出了一种高效且有效的对抗攻击检测方案，利用复杂视觉系统中的多任务感知。通过检测多个视觉任务（例如物体检测和实例分割）推理输出之间的不一致性来识别对抗扰动。为此，我们开发了一种一致性得分指标，用于衡量视觉任务之间的不一致性。接下来，我们设计了一种方法来选择最佳模型对，以有效检测不一致性。最后，我们在 BDD100k 验证数据集上评估了我们的防御措施对 PGD 攻击的效果。实验结果表明，在考虑的攻击者模型下，我们的防御措施实现了 99.9% 的 ROC-AUC 检测性能。",
+  "arxiv_id": "2608.07750",
+  "arxiv_url": "https://arxiv.org/abs/2608.07750v1",
+  "authors": [
+    "Cong Chen",
+    "Jean-Philippe Monteuuis",
+    "Jonathan Petit"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-07750",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.284282+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.07750v1",
+  "published_at": "2026-08-07T20:33:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "bdd100k",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.07750v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "Multi-Task Consistency-based Detection of Adversarial Attacks",
+  "title_zh": "基于多任务一致性的对抗攻击检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.07750"
+}

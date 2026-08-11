@@ -1,0 +1,59 @@
+{
+  "abstract": "Urban embodied intelligence requires coordination among heterogeneous agents (e.g., UAVs, ground robots, and autonomous vehicles) in dynamic cities. Simulators therefore provide a scalable foundation for developing and evaluating such coordination. Existing platforms nevertheless isolate different embodiments and decouple them from task design and evaluation. We present \\textbf{Lingjing}, a simulation platform for heterogeneous multi-agent embodied intelligence in open-ended urban environments. Lingjing reconstructs and renders evolving cities from geographic data, synchronizes multiple physics engines, and exposes shared physical and structured urban state to agents. Its Gym-like interface supports user-defined ReAct agents and single- or multi-agent natural-language missions with configurable star or broadcast communication and resource constraints. Each episode becomes an attribution-ready replay that links agent trajectories and communication to relation-graph changes, resource consumption, and engine-based evaluations for systematic diagnosis. We evaluate twelve vision-language models on nine urban tasks under a shared engine-in-the-loop protocol. Controlled studies further examine communication, scalability, robustness, and failure provenance. Results expose persistent bottlenecks in grounding and long-horizon execution. They also show task-dependent coordination trade-offs and diminishing returns from added capacity, while heavier workloads further reduce success. Lingjing provides a unified testbed that enables reproducible end-to-end evaluation and systematic failure diagnosis in urban multi-agent embodied intelligence.",
+  "abstract_zh": "城市具身智能需要在动态城市中协调异构智能体（例如，无人机、地面机器人和自动驾驶汽车）。因此，仿真器为开发和评估这种协调提供了可扩展的基础。然而，现有平台将不同的具身形式隔离开来，并将其与任务设计和评估解耦。我们提出了 extbf{Lingjing}，一个用于开放城市环境中异构多智能体具身智能的仿真平台。Lingjing通过地理数据重建和渲染不断演变的城市，同步多个物理引擎，并向智能体暴露共享的物理和结构化城市状态。其类似Gym的接口支持用户定义的ReAct智能体以及具有可配置星型或广播通信和资源约束的单智能体或多智能体自然语言任务。每个回合都成为一个准备归因的重播，将智能体轨迹和通信与关系图变化、资源消耗和基于引擎的评估链接，以便进行系统诊断。我们在共享的引擎环路协议下对九个城市任务评估了十二个视觉-语言模型。控制研究进一步考察了通信、可扩展性、鲁棒性和故障来源。结果揭示了在基础和长时间执行中的持续瓶颈。同时，它们还显示了任务依赖的协调权衡和增加能力的边际收益递减，而更重的工作负载进一步降低了成功率。Lingjing提供了一个统一的测试平台，使得城市多智能体具身智能的可重复端到端评估和系统故障诊断成为可能。",
+  "arxiv_id": "2608.08045",
+  "arxiv_url": "https://arxiv.org/abs/2608.08045v1",
+  "authors": [
+    "Xiaohe Li",
+    "Yiru Wang",
+    "Junhao Fan",
+    "Mingyuan Liu",
+    "Jie Huang",
+    "Kaixin Zhang",
+    "Jiahao Li",
+    "Chen Qian",
+    "Zide Fan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-11#paper-2608-08045",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-11T14:38:21.547415+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.08045v1",
+  "published_at": "2026-08-08T10:18:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "驾驶",
+      "diagnosis",
+      "诊断",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 66
+  },
+  "seen_dates": [
+    "2026-08-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.08045v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "Lingjing: A Simulation Testbed for Multi-Agent Embodied Tasks in Open-Ended Cities",
+  "title_zh": "Lingjing：开放城市中多智能体具身任务的仿真测试平台",
+  "translation_url": "https://hjfy.top/arxiv/2608.08045"
+}
