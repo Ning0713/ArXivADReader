@@ -43,15 +43,9 @@ python -m adpaper update --date today
 
 ## 配置与插件
 
-默认配置在 `config/config.yml`。LLM 增强是可选的，使用 OpenAI-compatible 接口：
+默认配置在 `config/config.yml`。LLM 增强是可选的，使用 OpenAI-compatible 接口；未设置 `LLM_API_KEY` 时会自动跳过，规则筛选、标签和站点构建仍可独立运行。真实密钥不得写入配置文件或提交到 Git。
 
-```powershell
-$env:LLM_API_KEY = "<local secret>"
-$env:LLM_BASE_URL = "https://api.example.com/v1"
-$env:LLM_MODEL = "your-model"
-```
-
-规则筛选和标签始终可以独立运行；LLM 只补齐缺失翻译、摘要和边界样本，不是运行前提。
+本地临时环境变量、GitHub Actions Repository Secrets、验证步骤和泄漏处理方法见 [LLM 配置与密钥安全](docs/llm-configuration.md)。
 
 插件接口位于 `src/adpaper/filtering/base.py`。复制 `plugins/autonomous_driving.py` 并实现 `evaluate()` 与 `assign_tags()`，即可替换为其他领域筛选器，然后在配置中修改 `filtering.plugin`。
 
@@ -72,7 +66,7 @@ python -m adpaper migrate --legacy-root "C:\path\to\legacy-workspace"
 3. 等待 HTTPS 证书签发。
 4. 在 Actions 中手动运行 `Update And Deploy Papers` 验证一次。
 
-工作流默认在工作日北京时间 21:30（UTC 13:30）运行。LLM 密钥（如果使用）放在仓库 Secrets：`LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL`。
+工作流默认在工作日北京时间 21:30（UTC 13:30）运行。启用 AI 时，将真实 API Key 配置为 GitHub Actions Repository Secret，具体步骤见 [LLM 配置与密钥安全](docs/llm-configuration.md)。
 
 ## AutoClaw/QQ
 
