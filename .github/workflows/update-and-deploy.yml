@@ -121,7 +121,14 @@ jobs:
                 environment: "github-pages",
                 per_page: 100,
               });
-              for (const deployment of deployments) {
+              const ordered = deployments.sort(
+                (left, right) => new Date(right.created_at) - new Date(left.created_at),
+              );
+              const current = ordered[0];
+              if (current) {
+                core.info(`Keeping current deployment ${current.id}.`);
+              }
+              for (const deployment of ordered.slice(1)) {
                 const statuses = await github.rest.repos.listDeploymentStatuses({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
@@ -129,7 +136,6 @@ jobs:
                   per_page: 1,
                 });
                 const state = statuses.data[0]?.state;
-                if (!['inactive', 'failure', 'error'].includes(state)) continue;
                 try {
                   if (state !== 'inactive') {
                     await github.rest.repos.createDeploymentStatus({
