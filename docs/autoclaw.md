@@ -142,7 +142,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<repo-root>\ops\autocla
 
 `预览` 不提交数据，也不会创建 GitHub Pages 部署记录，但仍会访问 Axi、arXiv 和已配置的 LLM，因此可能消耗 API 配额。脚本输出 `dispatched` 只表示 GitHub 已接受任务，不表示工作流已经完成；随后发送“状态”查看结果。
 
-正式的定时、更新或补跑工作流只负责生成并推送 `data/`。数据提交触发的 `push` 工作流负责唯一一次 Pages 部署，从而避免同一次更新产生两个部署记录。
+正式的定时、更新或补跑工作流会在同一次运行中生成并推送 `data/`，然后直接上传已构建的 Pages 产物并部署。这是因为使用 GitHub Actions 内置 `GITHUB_TOKEN` 推送的数据提交不会再次触发 `push` 工作流。预览和无数据变化的运行不会创建 Pages 部署记录。
 
 ## 常用操作流程
 

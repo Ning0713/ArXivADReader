@@ -42,6 +42,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    outputs:
+      should_deploy: ${{ steps.deployment-plan.outputs.should_deploy }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -70,13 +72,27 @@ jobs:
       - name: Stop after preview
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
         run: echo "Preview completed; no commit or deployment requested."
-      - name: Validate and build
+      - name: Plan deployment
+        id: deployment-plan
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [[ "$EVENT_NAME" == "push" ]]; then
+            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+          elif [[ -n "$(git status --porcelain -- data)" ]]; then
+            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+            echo "No data changes; skipping build and deployment."
+          fi
+      - name: Validate and build
+        if: ${{ steps.deployment-plan.outputs.should_deploy == 'true' }}
         run: |
           python -m adpaper validate
           python -m adpaper build
       - name: Commit generated data
-        if: ${{ github.event_name != 'push' && !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        if: ${{ github.event_name != 'push' && steps.deployment-plan.outputs.should_deploy == 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -88,16 +104,16 @@ jobs:
             git push origin HEAD:main
           fi
       - name: Configure Pages
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ steps.deployment-plan.outputs.should_deploy == 'true' }}
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ steps.deployment-plan.outputs.should_deploy == 'true' }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
   deploy:
-    if: ${{ github.event_name == 'push' }}
+    if: ${{ needs.update.outputs.should_deploy == 'true' }}
     needs: update
     runs-on: ubuntu-latest
     timeout-minutes: 10
