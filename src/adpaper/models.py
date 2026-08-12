@@ -29,11 +29,11 @@ def paper_anchor_id(arxiv_id: str) -> str:
 
 @dataclass(slots=True)
 class TagAssignment:
-    primary: str = "感知"
+    primary: str = "未分类"
     secondary: list[str] = field(default_factory=list)
 
     def normalized(self) -> TagAssignment:
-        primary = normalize_space(self.primary) or "感知"
+        primary = normalize_space(self.primary) or "未分类"
         seen = {primary}
         secondary: list[str] = []
         for tag in self.secondary:

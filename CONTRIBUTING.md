@@ -14,7 +14,7 @@ python -m adpaper validate
 python -m adpaper build
 ```
 
-Changes to a domain filter should include fixtures for both positive and
-negative examples. Changes to templates should be checked at desktop and
-mobile widths.
-
+Changes to a domain filter should include positive examples, near-match negative
+examples, tag assertions, and appropriate `arxiv_categories`. A new domain must
+also update its site branding and document how existing archive data is kept
+separate. Changes to templates should be checked at desktop and mobile widths.

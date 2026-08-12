@@ -11,6 +11,13 @@ $repo = "Ning0713/ArXivADReader"
 $workflow = "update-and-deploy.yml"
 $siteUrl = "https://adpaper.ning0713.top"
 
+function Invoke-Gh([string[]]$Arguments) {
+    & gh @Arguments
+    if ($LASTEXITCODE -ne 0) {
+        throw "GitHub CLI command failed. Run 'gh auth status' and retry."
+    }
+}
+
 function Resolve-Date([string]$value) {
     if ([string]::IsNullOrWhiteSpace($value)) {
         return (Get-Date).ToString("yyyy-MM-dd")
@@ -27,12 +34,20 @@ function Resolve-Date([string]$value) {
 }
 
 function Show-Status {
-    Write-Output (gh run list --repo $repo --workflow $workflow --limit 5 --json databaseId,status,conclusion,url,createdAt,displayTitle)
-    try {
-        $response = Invoke-WebRequest -Uri $siteUrl -UseBasicParsing -TimeoutSec 20
-        Write-Output ("site_http=" + [int]$response.StatusCode)
-    } catch {
-        Write-Output ("site_http=unreachable: " + $_.Exception.Message)
+    Invoke-Gh @(
+        "run", "list",
+        "--repo", $repo,
+        "--workflow", $workflow,
+        "--limit", "5",
+        "--json", "databaseId,status,conclusion,url,createdAt,displayTitle"
+    )
+    $httpCode = & python -c `
+        "import sys, urllib.request; print(urllib.request.urlopen(sys.argv[1], timeout=20).status)" `
+        $siteUrl 2>$null
+    if ($LASTEXITCODE -eq 0) {
+        Write-Output ("site_http=" + $httpCode)
+    } else {
+        Write-Output "site_http=unreachable"
     }
 }
 
@@ -43,17 +58,38 @@ switch ($Command) {
     "status" { Show-Status }
     "update" {
         $target = Resolve-Date $Date
-        gh workflow run $workflow --repo $repo --ref main --field date=$target --field force=false --field dry_run=false
+        Invoke-Gh @(
+            "workflow", "run", $workflow,
+            "--repo", $repo,
+            "--ref", "main",
+            "--field", "date=$target",
+            "--field", "force=false",
+            "--field", "dry_run=false"
+        )
         Write-Output ("dispatched update for " + $target)
     }
     "retry" {
         $target = Resolve-Date $Date
-        gh workflow run $workflow --repo $repo --ref main --field date=$target --field force=true --field dry_run=false
+        Invoke-Gh @(
+            "workflow", "run", $workflow,
+            "--repo", $repo,
+            "--ref", "main",
+            "--field", "date=$target",
+            "--field", "force=true",
+            "--field", "dry_run=false"
+        )
         Write-Output ("dispatched retry for " + $target)
     }
     "preview" {
         $target = Resolve-Date $Date
-        gh workflow run $workflow --repo $repo --ref main --field date=$target --field force=true --field dry_run=true
+        Invoke-Gh @(
+            "workflow", "run", $workflow,
+            "--repo", $repo,
+            "--ref", "main",
+            "--field", "date=$target",
+            "--field", "force=true",
+            "--field", "dry_run=true"
+        )
         Write-Output ("dispatched preview for " + $target)
     }
 }

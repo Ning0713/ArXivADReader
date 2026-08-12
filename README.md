@@ -47,7 +47,7 @@ python -m adpaper update --date today
 
 本地临时环境变量、GitHub Actions Repository Secrets、验证步骤和泄漏处理方法见 [LLM 配置与密钥安全](docs/llm-configuration.md)。
 
-插件接口位于 `src/adpaper/filtering/base.py`。复制 `plugins/autonomous_driving.py` 并实现 `evaluate()` 与 `assign_tags()`，即可替换为其他领域筛选器，然后在配置中修改 `filtering.plugin`。
+插件接口位于 `src/adpaper/filtering/base.py`。插件同时定义相关性算法、标签、领域名称和 arXiv 回退分类，因此可以替换为其他研究领域；更换时还必须隔离历史数据并更新站点品牌。当前自动驾驶评分、排除规则、标签算法和完整换域步骤见 [领域筛选插件与自动驾驶算法](docs/plugin-development.md)。
 
 ## 历史迁移
 
@@ -80,7 +80,7 @@ AutoClaw 只应调用仓库里的 `ops/autoclaw.ps1`，不直接修改数据或�
 帮助
 ```
 
-首次使用前在本机执行 `gh auth login -h github.com`。详细命令和安全边界见 [docs/autoclaw.md](docs/autoclaw.md)。
+GitHub Actions 已在工作日北京时间 21:30 自动更新，不需要重复创建 AutoClaw 论文 cron。AutoClaw 只用于人工远程更新、补跑、无写入预览和状态查询。首次配置、QQ 白名单、操作流程、取消 cron 和故障排查见 [AutoClaw 与 QQ 远程操作](docs/autoclaw.md)。
 
 ## 数据来源与许可
 

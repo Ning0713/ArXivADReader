@@ -15,8 +15,16 @@ ARXIV = "{http://arxiv.org/schemas/atom}"
 
 
 class ArxivSource:
-    def __init__(self, config: SourceConfig):
+    def __init__(
+        self,
+        config: SourceConfig,
+        *,
+        discovery_categories: tuple[str, ...] = ("cs.CV", "cs.RO", "cs.AI", "cs.LG"),
+    ):
         self.config = config
+        self.discovery_categories = tuple(dict.fromkeys(discovery_categories))
+        if not self.discovery_categories:
+            raise ValueError("At least one arXiv discovery category is required")
 
     def fetch_by_ids(self, ids: list[str], batch_size: int = 50) -> dict[str, Paper]:
         canonical = list(dict.fromkeys(normalize_arxiv_id(value) for value in ids))
@@ -34,10 +42,8 @@ class ArxivSource:
     def discover_for_date(self, date: str, max_results: int = 2000) -> list[Paper]:
         parsed = datetime.strptime(date, "%Y-%m-%d")
         day = parsed.strftime("%Y%m%d")
-        query = (
-            "(cat:cs.CV OR cat:cs.RO OR cat:cs.AI OR cat:cs.LG) "
-            f"AND submittedDate:[{day}0000 TO {day}2359]"
-        )
+        categories = " OR ".join(f"cat:{category}" for category in self.discovery_categories)
+        query = f"({categories}) AND submittedDate:[{day}0000 TO {day}2359]"
         params = {
             "search_query": query,
             "start": "0",
@@ -128,4 +134,3 @@ def merge_arxiv_metadata(axi: Paper, arxiv: Paper) -> Paper:
     axi.pdf_url = arxiv.pdf_url or axi.pdf_url
     axi.source = {**axi.source, **arxiv.source}
     return axi
-

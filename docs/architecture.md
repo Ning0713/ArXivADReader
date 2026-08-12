@@ -14,11 +14,12 @@ Axi daily HTML -> parser -> domain plugin -> optional LLM enrichment
                          GitHub Pages / CNAME
 ```
 
-The Axi page is the default candidate authority. arXiv metadata fills missing
+The Axi page is the default candidate authority. The active domain plugin also
+provides the domain name, tags, and arXiv categories used by explicit discovery
+fallback. arXiv metadata fills missing
 authors, dates, categories, and canonical links. A failed arXiv enrichment does
 not discard Axi content. A failed Axi fetch leaves the last published date
 untouched unless an operator explicitly enables arXiv discovery fallback.
 
 Favorites are browser-local. No visitor, account, or traffic database is
 required.
-

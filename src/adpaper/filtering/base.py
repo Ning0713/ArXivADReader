@@ -11,6 +11,7 @@ class DomainPlugin(Protocol):
     slug: str
     display_name: str
     tags: tuple[str, ...]
+    arxiv_categories: tuple[str, ...]
 
     def evaluate(self, paper: Paper) -> RelevanceResult: ...
 
@@ -26,4 +27,3 @@ def load_plugin(reference: str) -> DomainPlugin:
     if not isinstance(plugin, DomainPlugin):
         raise TypeError(f"{reference} does not implement DomainPlugin")
     return plugin
-

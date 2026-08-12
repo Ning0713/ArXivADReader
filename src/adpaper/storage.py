@@ -79,7 +79,7 @@ class Repository:
         candidate_count: int,
         raw_count: int,
         source_hash: str = "",
-        filter_version: str = "autonomous-driving-v1",
+        filter_version: str = "unknown",
         warnings: list[str] | None = None,
     ) -> dict[str, Any]:
         validate_date(date)

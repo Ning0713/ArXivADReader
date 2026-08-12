@@ -35,9 +35,16 @@ class UpdatePipeline:
         self.config = config
         self.repository = Repository(config)
         self.axi = AxiSource(config.sources)
-        self.arxiv = ArxivSource(config.sources)
         self.plugin = load_plugin(config.filtering.plugin)
-        self.llm = LLMEnricher(config.llm, self.plugin.tags)
+        self.arxiv = ArxivSource(
+            config.sources,
+            discovery_categories=self.plugin.arxiv_categories,
+        )
+        self.llm = LLMEnricher(
+            config.llm,
+            domain_name=self.plugin.display_name,
+            allowed_tags=self.plugin.tags,
+        )
 
     def run(
         self,

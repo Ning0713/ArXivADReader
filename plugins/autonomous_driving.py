@@ -30,6 +30,7 @@ class AutonomousDrivingPlugin:
     slug: str = "autonomous-driving"
     version: str = "autonomous-driving-v2"
     display_name: str = "自动驾驶"
+    arxiv_categories: tuple[str, ...] = ("cs.CV", "cs.RO", "cs.AI", "cs.LG")
     minimum_weak_score: float = 12.0
     tags: tuple[str, ...] = (
         "感知",

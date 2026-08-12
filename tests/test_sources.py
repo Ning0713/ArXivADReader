@@ -37,3 +37,18 @@ def test_arxiv_atom_parser():
     assert papers[0].authors == ["Jane Doe", "Alex Smith"]
     assert papers[0].pdf_url.endswith("2608.00001v2")
 
+
+def test_arxiv_discovery_uses_plugin_categories(monkeypatch):
+    source = ArxivSource(
+        SourceConfig(),
+        discovery_categories=("quant-ph", "physics.optics"),
+    )
+    captured: dict[str, str] = {}
+
+    def fake_get(params: dict[str, str]) -> str:
+        captured.update(params)
+        return '<feed xmlns="http://www.w3.org/2005/Atom"></feed>'
+
+    monkeypatch.setattr(source, "_get", fake_get)
+    assert source.discover_for_date("2026-08-12") == []
+    assert "cat:quant-ph OR cat:physics.optics" in captured["search_query"]
