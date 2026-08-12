@@ -1,0 +1,63 @@
+{
+  "abstract": "Embodied artificial intelligence aims to develop agents that perceive, reason, and act through continuous interaction with the physical world. However, most embodied systems are still evaluated within conservative safety margins or moderate interaction regimes, leaving their capability boundaries under extreme conditions insufficiently understood. Autonomous racing provides a stringent testbed by combining high-frequency localization and perception, adversarial interaction, near-saturated vehicle dynamics, and strict safety constraints. Existing systems push high-speed performance but rarely model and refine cognitive and physical limits jointly. Here we show that a world-model-centric autonomous racing agent provides a concrete step toward exploring these coupled limits. The framework learns predictive world models from near-limit successes and failures to capture interaction evolution, ego dynamics, and feasible-motion boundaries, coupling world-state construction, future-aware reasoning, and near-limit control in a closed-loop refinement process. Training data were collected from real-vehicle autonomous racing, where the onboard system maintained robust localization and perception at speeds up to 256.3 km/h and peak lateral acceleration of 26.8 m/s$^2$. In full-scale simulated racing, the well trained world-model-centric agent achieves an 88.3% interaction success rate across various challenging simulated racing scenarios. Closed-loop refinement of the world model and policy further improved utilization of cognitive-physical limits, recovery from failure modes, and generalization across varying conditions and unseen circuits. These results suggest a boundary-aware methodology in which world models help embodied agents represent, predict, and continually refine their capability boundaries for safer real-world deployment.",
+  "abstract_zh": "具身人工智能旨在开发能够通过与物理世界的持续互动进行感知、推理和行动的代理。然而，大多数具身系统仍然在保守的安全边际或适度的互动模式下进行评估，因此在极端条件下的能力边界尚未得到充分理解。自主赛车通过结合高频率的定位与感知、对抗性互动、近饱和的车辆动态和严格的安全约束，提供了一个严格的测试平台。现有系统推动高速性能，但很少同时建模和优化认知与物理极限。在此，我们展示了以世界模型为中心的自主赛车代理为探索这些耦合极限提供了一个具体的步骤。该框架从近极限的成功与失败中学习预测世界模型，以捕捉互动演变、自我动态和可行运动边界，将世界状态构建、未来感知推理和近极限控制结合在一个闭环优化过程中。训练数据来自真实车辆的自主赛车，其中车载系统在高达256.3 km/h的速度和26.8 m/s²的峰值横向加速度下保持了强大的定位和感知能力。在全尺度模拟赛车中，经过良好训练的以世界模型为中心的代理在各种具有挑战性的模拟赛车场景中达到了88.3%的互动成功率。世界模型和策略的闭环优化进一步提高了认知-物理极限的利用、从失败模式中恢复的能力，以及在不同条件和未见赛道上的泛化能力。这些结果表明了一种边界感知的方法论，其中世界模型帮助具身代理表示、预测并不断优化其能力边界，以实现更安全的现实世界部署。",
+  "arxiv_id": "2608.10618",
+  "arxiv_url": "https://arxiv.org/abs/2608.10618v1",
+  "authors": [
+    "Zitong Shan",
+    "Baichuan Lou",
+    "Yanxin Zhou",
+    "Shuge Wu",
+    "Xianqi He",
+    "Bolin Zhao",
+    "Sheng Zhao",
+    "Zhouheng Li",
+    "Chee Kiong Ong",
+    "King Ho Holden Li",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10618",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.068475+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10618v1",
+  "published_at": "2026-08-11T08:01:35Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "world model",
+      "embodied intelligence"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "标题明确属于非道路驾驶领域",
+      "LLM 边界复核纳入"
+    ],
+    "score": 17
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10618v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "本文面向极高速自主赛车，提出以预测式世界模型为核心的驾驶智能体，联合建模赛道交互演化、自车动力学和可行运动边界，并将世界状态构建、未来推理与近极限控制纳入闭环优化。系统利用真实赛车在成功和失败工况下的数据学习能力边界，并在全尺寸仿真中验证交互成功率、故障恢复能力及对未见赛道的泛化性能，重点探索自动驾驶智能体在极端动态条件下的认知、物理与安全极限。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "Toward the Cognitive--Physical Limits of Embodied Intelligence through a World-Model-Centric Autonomous Racing Agent",
+  "title_zh": "通过以世界模型为中心的自主赛车代理探索具身智能的认知与物理极限",
+  "translation_url": "https://hjfy.top/arxiv/2608.10618"
+}

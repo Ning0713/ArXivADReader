@@ -1,0 +1,55 @@
+{
+  "abstract": "We present TAR (Traffic Anomaly Reasoning) and TAR-Bench datasets, resources for training and evaluating video-language models beyond anomaly detection. TAR contains 44,040 chain-of-thought training annotations across 10 tasks for 3,670 CCTV videos ($\\sim$26 hours) from eight public datasets. Its evaluation component, TAR-Bench, contains 960 human-curated test annotations for 80 held-out clips trimmed from 17 public YouTube videos. TAR's training annotations are produced with MAVEN, which consolidates multi-scale video evidence into structured event descriptions before generating question-answer pairs and reasoning traces. On TAR-Bench, eleven vision-language models reveal that strong question-answering accuracy does not reliably predict temporal or scene reasoning ability. Multi-task fine-tuning on TAR yields consistent gains, with the full 10-task model improving aggregate score by 21.4 points over its zero-shot baseline. TAR and TAR-Bench provide the official training and in-domain evaluation data for AI City Challenge 2026 Track 3. The dataset is available at https://huggingface.co/datasets/nvidia/PhysicalAI-Traffic-Anomaly-Reasoning",
+  "abstract_zh": "我们提出了TAR（交通异常推理）和TAR-Bench数据集，这些资源用于训练和评估超越异常检测的视频语言模型。TAR包含来自八个公共数据集的3,670个闭路电视视频（约26小时）的10个任务中共44,040个思维链训练注释。其评估组件TAR-Bench包含960个人工策划的测试注释，针对从17个公共YouTube视频中剪辑的80个保留片段。TAR的训练注释是通过MAVEN生成的，该系统将多尺度视频证据整合为结构化事件描述，然后生成问答对和推理轨迹。在TAR-Bench上，十一种视觉语言模型显示，强大的问答准确性并不能可靠地预测时间或场景推理能力。在TAR上进行多任务微调带来了持续的提升，完整的10任务模型在其零样本基线基础上提高了21.4分。TAR和TAR-Bench为2026年AI City Challenge第3赛道提供了官方训练和领域内评估数据。数据集可在https://huggingface.co/datasets/nvidia/PhysicalAI-Traffic-Anomaly-Reasoning获取。",
+  "arxiv_id": "2608.10317",
+  "arxiv_url": "https://arxiv.org/abs/2608.10317v1",
+  "authors": [
+    "Han Zhang",
+    "Yilin Zhao",
+    "Zaid Pervaiz Bhat",
+    "Zheng Tang",
+    "Varun Praveen",
+    "Vidya N. Murali",
+    "David C. Anastasiu",
+    "Tomasz Kornuta"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10317",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.101004+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10317v1",
+  "published_at": "2026-08-10T23:40:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通",
+      "anomaly detection"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10317v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "From Detection to Understanding: TAR and TAR-Bench for Multi-Task Traffic Anomaly Reasoning",
+  "title_zh": "从检测到理解：用于多任务交通异常推理的TAR和TAR-Bench",
+  "translation_url": "https://hjfy.top/arxiv/2608.10317"
+}

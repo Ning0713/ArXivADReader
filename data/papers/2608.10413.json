@@ -1,0 +1,65 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models have recently emerged as a promising paradigm for end-to-end autonomous driving by enabling unified reasoning across perception, language, and planning. However, existing approaches lack mechanisms to exploit past failures or adapt to distribution shifts, causing the model to persistently underperform on similar scenarios where it has previously failed. In this paper, we propose DriveVLA-M0, a retrieval-augmented VLA with failure-aware latent memory. We construct a latent memory pool that stores failure cases along with their structure scene representations and expert trajectory labels, and design a dedicated Retrieve Model that decouples static road structure and dynamic agent interactions to enable structurally grounded retrieval. At inference time, retrieved cases are injected into the model via a lightweight decoupled LoRA-based test-time training (TTT) mechanism, allowing targeted and scenario-specific correction without modifying the backbone. Extensive experiments on NAVSIMv1 and NAVSIMv2 benchmark demonstrate that our approach consistently outperforms prior methods, achieving 94.1 PDMS on Navtest and 47.0 EPDMS on Navhard with only 26.44 ms TTT backward latency overhead. Furthermore, we show that DriveVLA-M0 scales effectively with additional memory, enabling training-free performance gains through memory expansion. The code is available at https://github.com/ZebinX/DriveVLA-M0.",
+  "abstract_zh": "视觉-语言-行动（VLA）模型最近作为一种有前景的端到端自主驾驶范式出现，能够在感知、语言和规划之间实现统一推理。然而，现有方法缺乏利用过去失败或适应分布变化的机制，导致模型在类似场景中持续表现不佳。本文提出了DriveVLA-M0，一种具有失败感知潜在记忆的检索增强型VLA。我们构建了一个潜在记忆池，存储失败案例及其结构场景表示和专家轨迹标签，并设计了一个专用的检索模型，解耦静态道路结构和动态代理交互，以实现结构化的检索。在推理时，通过轻量级的解耦LoRA基础测试时训练（TTT）机制将检索到的案例注入模型，允许在不修改主干网络的情况下进行针对性和场景特定的修正。在NAVSIMv1和NAVSIMv2基准上的广泛实验表明，我们的方法始终优于先前的方法，在Navtest上实现了94.1 PDMS，在Navhard上实现了47.0 EPDMS，且仅有26.44毫秒的TTT反向延迟开销。此外，我们还展示了DriveVLA-M0能够有效扩展额外记忆，通过记忆扩展实现无训练性能提升。代码可在 https://github.com/ZebinX/DriveVLA-M0 获取。",
+  "arxiv_id": "2608.10413",
+  "arxiv_url": "https://arxiv.org/abs/2608.10413v1",
+  "authors": [
+    "Zebin Xing",
+    "Yupeng Zheng",
+    "Qiang Chen",
+    "Linbo Wang",
+    "Yichen Zhang",
+    "Pengxuan Yang",
+    "Junli Wang",
+    "Deheng Qian",
+    "Xiaoqing Ye",
+    "Junyu Han",
+    "Yifeng Pan",
+    "Qichao Zhang",
+    "Dongbin Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10413",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.106526+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10413v1",
+  "published_at": "2026-08-11T03:01:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "道路",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 57
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10413v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "感知"
+    ]
+  },
+  "title": "DriveVLA-M0: Failure-Aware Memory Augmentation for Autonomous Driving",
+  "title_zh": "DriveVLA-M0：面向失败的自主驾驶记忆增强",
+  "translation_url": "https://hjfy.top/arxiv/2608.10413"
+}

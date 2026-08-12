@@ -1,0 +1,47 @@
+{
+  "abstract": "For safety-critical software, data from the software's operational past (e.g. a sequence of success and failure events experienced by the software) can provide strong statistical support for reliability claims about the software. However, such data might not describe past software failure events in sufficient detail, and this might leave a reliability assessment (based on this data) unable to account for important features of past software failures. In this paper, by extending conservative Bayesian inference (CBI) techniques used in reliability assessment, we illustrate a principled statistical approach for checking the robustness of reliability claims derived from insufficiently detailed operational data. We demonstrate the extent to which insufficient detail in operational data can undermine software reliability claims in autonomous vehicle (AV) safety assessment scenarios. Reliability claims derived from insufficiently fine-grained data might be dangerously optimistic, despite a concerted effort by an assessor to use such data conservatively during the assessment. While these findings are consistent with previous work on the impact of statistical model fidelity in Bayesian software reliability assessments, our work clarifies why attempts to use low-fidelity data conservatively can be naive, and we give the first conservative estimates of the impact of data fidelity on assessments.",
+  "abstract_zh": "对于安全关键软件，软件操作历史数据（例如，软件经历的成功和失败事件序列）可以为软件的可靠性声明提供强有力的统计支持。然而，这些数据可能无法充分详细地描述过去的软件失败事件，这可能导致基于这些数据的可靠性评估无法考虑到过去软件失败的重要特征。本文通过扩展用于可靠性评估的保守贝叶斯推断（CBI）技术，展示了一种原则性的统计方法，用于检查从不足详细的操作数据中得出的可靠性声明的稳健性。我们展示了操作数据中不足的细节在自主车辆（AV）安全评估场景中如何削弱软件可靠性声明的程度。尽管评估者在评估过程中努力保守地使用这些数据，但从不足细粒度数据中得出的可靠性声明可能会过于乐观。尽管这些发现与之前关于贝叶斯软件可靠性评估中统计模型保真度影响的研究一致，但我们的工作阐明了为什么尝试保守地使用低保真度数据可能是天真的，并且我们首次给出了数据保真度对评估影响的保守估计。",
+  "arxiv_id": "2608.10025",
+  "arxiv_url": "https://arxiv.org/abs/2608.10025v1",
+  "authors": [
+    "Kizito Salako",
+    "Rabiu Tsoho Muhammad"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10025",
+  "categories": [
+    "cs.RO",
+    "cs.SE"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.057116+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10025v1",
+  "published_at": "2026-08-09T17:02:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10025v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": []
+  },
+  "title": "The Impact of Operational-Data Fidelity when Assessing Safety-Critical Autonomous-Vehicle Software",
+  "title_zh": "评估安全关键自主车辆软件时操作数据保真度的影响",
+  "translation_url": "https://hjfy.top/arxiv/2608.10025"
+}

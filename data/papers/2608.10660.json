@@ -1,0 +1,61 @@
+{
+  "abstract": "Continuous and reliable localization is essential for autonomous driving. Cross-view visual localization matches ground images with satellite maps, providing complementary localization cues for pipelines that depend on Global Navigation Satellite System (GNSS) signals and high-definition (HD) maps. Most existing cross-view visual localization methods process each frame independently, leaving temporal information underused and limiting accuracy under dynamic occlusion, illumination variation, and repetitive textures. This study proposes a temporal-context-enhanced framework for cross-view sequence visual localization. The proposed recurrent cross-frame module aggregates historical context from the previous state to enhance the coarse ground feature of each current frame. These enhanced features facilitate satellite candidate-region classification, while hierarchical fine-grained features enable precise local offset estimation. On the CVIS dataset, the proposed method reduces mean localization error from 3.80 m to 1.57 m and increases R@1 m from 8.14% to 40.22%. Direct transfer to KITTI-CVL achieves a mean error of 2.61 m, with target-domain fine-tuning further reducing the mean error to 2.27 m. Zero-shot field experiments on a real-world vehicle achieve a mean error of 2.84 m and R@5 m of 96.86%. These results demonstrate that temporal context enhancement significantly improves cross-view localization accuracy and supports robust deployment on public benchmarks and real-world roads.",
+  "abstract_zh": "连续可靠的定位对于自动驾驶至关重要。跨视角视觉定位通过将地面图像与卫星地图匹配，为依赖全球导航卫星系统（GNSS）信号和高清（HD）地图的管道提供互补的定位线索。现有的大多数跨视角视觉定位方法独立处理每一帧，导致时间信息未被充分利用，并限制了在动态遮挡、光照变化和重复纹理下的准确性。本研究提出了一种增强时序上下文的跨视角序列视觉定位框架。所提的递归跨帧模块从先前状态聚合历史上下文，以增强每一当前帧的粗略地面特征。这些增强特征有助于卫星候选区域分类，而分层细粒度特征则实现精确的局部偏移估计。在CVIS数据集上，所提方法将平均定位误差从3.80米降低至1.57米，并将R@1米从8.14%提高至40.22%。直接转移到KITTI-CVL时，平均误差为2.61米，目标领域的微调进一步将平均误差降低至2.27米。在真实车辆上的零样本实地实验实现了平均误差为2.84米，R@5米为96.86%。这些结果表明，时序上下文增强显著提高了跨视角定位的准确性，并支持在公共基准和真实道路上的稳健部署。",
+  "arxiv_id": "2608.10660",
+  "arxiv_url": "https://arxiv.org/abs/2608.10660v1",
+  "authors": [
+    "Jiaping Wang",
+    "Shaobo Li",
+    "Zhen Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10660",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.130847+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10660v1",
+  "published_at": "2026-08-11T08:44:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "kitti",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "道路",
+      "visual localization",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10660v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Cross-View Sequential Visual Localization with Spatio-Temporal Context Modeling for Autonomous Driving",
+  "title_zh": "基于时空上下文建模的跨视角序列视觉定位用于自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.10660"
+}

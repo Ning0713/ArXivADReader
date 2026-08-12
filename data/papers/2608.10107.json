@@ -1,0 +1,60 @@
+{
+  "abstract": "Emerging World-Action Models (WAMs) have demonstrated promising performance in autonomous driving by jointly modeling future driving scene evolution and trajectory planning. However, existing WAMs are typically trained with video data, which is only 2D projections of the underlying 4D driving scene. Consequently, WAMs fail to understand and capture the structure of 4D scenes and thus generate visually plausible yet 4D inconsistent future predictions that mislead downstream planning. To alleviate this issue, we present 4D-WAM, a model that leverages geometric foundation models for training-time supervision to enable 4D consistent world modeling. Specifically, we feed WAM-predicted future frames into a geometric foundation model, and use 4D-aware responses to define a 4D consistency loss. This loss encourages the model to understand, represent, and predict physically consistent 4D scenes during training, without additional inference cost. Moreover, we identify an early-decision phenomenon in WAMs and propose a decision-oriented timestep sampling strategy that emphasizes supervision at early, high-noise stages, where driving decisions are primarily formed. By propagating 4D supervision to this critical decision-formation phase, the proposed strategy further improves trajectory planning. Extensive experiments demonstrate that 4D-WAM effectively models 4D consistent scene evolution and achieves state-of-the-art performance on challenging NAVSIM-v1 and NAVSIM-v2 benchmarks.",
+  "abstract_zh": "新兴的世界-动作模型（World-Action Models, WAMs）通过联合建模未来驾驶场景演变和轨迹规划，在自动驾驶领域表现出良好的性能。然而，现有的WAM通常使用视频数据进行训练，而视频数据仅是潜在4D驾驶场景的2D投影。因此，WAM无法理解和捕捉4D场景的结构，从而生成视觉上合理但在4D上不一致的未来预测，误导下游规划。为了解决这一问题，我们提出了4D-WAM，这是一种利用几何基础模型进行训练时监督的模型，以实现4D一致的世界建模。具体而言，我们将WAM预测的未来帧输入几何基础模型，并使用4D感知响应定义4D一致性损失。该损失鼓励模型在训练过程中理解、表示和预测物理一致的4D场景，而无需额外的推理成本。此外，我们识别出WAM中的早期决策现象，并提出了一种以决策为导向的时间步采样策略，强调在早期高噪声阶段的监督，此时驾驶决策主要形成。通过将4D监督传播到这一关键的决策形成阶段，所提出的策略进一步改善了轨迹规划。大量实验表明，4D-WAM有效建模4D一致的场景演变，并在具有挑战性的NAVSIM-v1和NAVSIM-v2基准测试中实现了最先进的性能。",
+  "arxiv_id": "2608.10107",
+  "arxiv_url": "https://arxiv.org/abs/2608.10107v1",
+  "authors": [
+    "Jiacheng Fu",
+    "Yibo Yuan",
+    "Meng Tian",
+    "Yue Li",
+    "Jiangtong Zhu",
+    "Jianhua Han",
+    "Yueyi Zhang",
+    "Jianwu Fang",
+    "Jianru Xue",
+    "Hang Xu",
+    "Zhiwei Xiong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10107",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.087440+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10107v1",
+  "published_at": "2026-08-10T18:14:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10107v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "感知"
+    ]
+  },
+  "title": "4D-WAM: 4D Consistent World Modeling for Autonomous Driving",
+  "title_zh": "4D-WAM：用于自动驾驶的4D一致世界建模",
+  "translation_url": "https://hjfy.top/arxiv/2608.10107"
+}

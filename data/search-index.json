@@ -1,6 +1,295 @@
 {
-  "generated_at": "2026-08-11T14:39:12.792310+00:00",
+  "generated_at": "2026-08-12T14:39:24.226204+00:00",
   "items": [
+    {
+      "abstract": "Feed-forward Gaussian reconstruction has recently emerged as an efficient approach for driving scene reconstruction. However, prevailing LiDAR-based methods preserve the initial correspondence between observed points and Gaussian primitives, treating the initialized primitive set as the final representation. Unlike optimization-based 3DGS, these methods cannot accumulate gradients during training to determine how the scenes representation should be densified. Meanwhile, the shared sparse backbone only fuses observations from different timestamps implicitly, without explicitly aggregating cross-time evidence for individual primitives. In this paper, we present Learning Gaussian Structure (LGS), a framework that enhances both Gaussian structure and primitive attributes. Our key observation is that changes in local gradient responses induced by a prune or add intervention reveal whether the corresponding structural adjustment benefits reconstruction. Based on this observation, our Gaussian Densify Policy learns a Densify Map comprising Prune and Addition Scores from controlled interventions, and directly adjusts the Gaussian structure during inference. We further develop a compact Cross-Time Point Query that explicitly retrieves and aggregates neighboring features from Gaussian primitives at other timestamps for reliable attribute prediction. Extensive experiments on the Waymo Open Dataset and PandaSet demonstrate that LGS consistently outperforms existing methods.",
+      "abstract_zh": "前馈高斯重建最近成为一种高效的驾驶场景重建方法。然而，现有的基于激光雷达（LiDAR）的方法保持观察点与高斯原件之间的初始对应关系，将初始化的原件集视为最终表示。与基于优化的3DGS不同，这些方法在训练过程中无法累积梯度，以确定场景表示应如何进行密集化。同时，共享的稀疏主干仅隐式融合来自不同时间戳的观察，而没有明确聚合个别原件的跨时间证据。在本文中，我们提出了学习高斯结构（Learning Gaussian Structure, LGS）框架，该框架增强了高斯结构和原件属性。我们的关键观察是，由于修剪或添加干预引起的局部梯度响应的变化揭示了相应的结构调整是否有利于重建。基于这一观察，我们的高斯密集化策略学习一个包含修剪和添加评分的密集化图，从受控干预中直接调整高斯结构。在推理过程中，我们进一步开发了一个紧凑的跨时间点查询，明确检索和聚合来自其他时间戳的高斯原件的邻近特征，以实现可靠的属性预测。在Waymo开放数据集和PandaSet上的大量实验表明，LGS始终优于现有方法。",
+      "authors": [
+        "Hang Li",
+        "Jiahe Li",
+        "Meiying Gu",
+        "Jin Zheng",
+        "Lina Yu",
+        "Xiao Bai"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.11077",
+      "tags": [
+        "深度/几何",
+        "LiDAR/点云",
+        "仿真/数据"
+      ],
+      "title": "Learning Gaussian Structure: Intervention-Guided Density Control for Feed-Forward Driving Reconstruction",
+      "title_zh": "学习高斯结构：基于干预引导的密度控制用于前馈驱动重建",
+      "url": "/daily/2026-08-12/#paper-2608-11077"
+    },
+    {
+      "abstract": "Vision-Language-Action (VLA) models can connect scene understanding, semantic reasoning, and trajectory generation for autonomous driving. However, verbose natural-language Chain-of-Thought (CoT) is poorly suited to real-time control because it is open-ended, costly to decode, and difficult to optimize as an action-facing representation. We propose XCoT-VLA, which replaces descriptive rationales with compact executable CoT tokens learned from automatically constructed Reason-Action supervision. Logged trajectories provide action evidence, while scene context supplies causal semantics. The predicted XCoT sequence remains in context and conditions fixed trajectory queries through shared multimodal self-attention. Deterministic token-function routing applies the Reason FFN to XCoT tokens and the Control FFN to trajectory queries for flow-matching trajectory generation. We further introduce XCoT Policy Optimization (XCPO) as an optional refinement extension in the same executable token space. XCoT-VLA reduces longitudinal ADE from 1.645 to 1.323 on a general-distribution set and lateral FDE from 1.616 to 0.648 in lane-change scenarios. By representing driving-oriented reasoning with only 2-6 executable XCoT tokens, our method substantially reduces autoregressive reasoning overhead and remains within the real-time planning budget. These results demonstrate that driving-oriented reasoning can be compact, executable, and directly connected to trajectory generation.",
+      "abstract_zh": "视觉-语言-动作（VLA）模型能够连接场景理解、语义推理和自主驾驶的轨迹生成。然而，冗长的自然语言链思维（CoT）不适合实时控制，因为它是开放式的、解码成本高且难以优化为面向动作的表示。我们提出了XCoT-VLA，它用从自动构建的理由-动作监督中学习到的紧凑可执行的CoT标记替代了描述性理由。记录的轨迹提供了行动证据，而场景上下文则提供了因果语义。预测的XCoT序列保持在上下文中，并通过共享的多模态自注意力条件固定的轨迹查询。确定性标记-功能路由将理由前馈网络（Reason FFN）应用于XCoT标记，将控制前馈网络（Control FFN）应用于轨迹查询，以实现流匹配的轨迹生成。我们进一步引入XCoT策略优化（XCPO）作为同一可执行标记空间中的可选精细化扩展。XCoT-VLA在一般分布集上将纵向平均绝对误差（ADE）从1.645降低到1.323，在变道场景中将横向最终定位误差（FDE）从1.616降低到0.648。通过仅用2-6个可执行的XCoT标记表示面向驾驶的推理，我们的方法显著减少了自回归推理的开销，并保持在实时规划预算内。这些结果表明，面向驾驶的推理可以是紧凑的、可执行的，并且与轨迹生成直接相关。",
+      "authors": [
+        "Foundation Model Team",
+        "XPeng Inc"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10976",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "地图/定位"
+      ],
+      "title": "XCoT-VLA: Executable Chain-of-Thought for Vision-Language-Action Driving",
+      "title_zh": "XCoT-VLA：可执行的视觉-语言-动作驱动链思维",
+      "url": "/daily/2026-08-12/#paper-2608-10976"
+    },
+    {
+      "abstract": "Vision-language models (VLMs) have achieved strong image and video understanding, yet their visual-spatial representations remain geometrically fragile, leading to failures in spatial reasoning needed for embodied AI, robotics, and autonomous driving. Prior approaches to geometry grounding either fine-tune VLMs on spatial question answering, which can perpetuate spurious visual representations, or fuse features from large geometry-grounded vision models, which substantially increases model size at inference. Knowledge distillation from geometry-grounded vision models offers an alternative, but directly matching multi-view teacher features can disrupt the pretrained alignment between visual and textual representations, degrading object- and language-semantic capabilities. We propose multi-view relational distillation (MVRD), which distills patch-wise cosine similarities across views instead of the teacher features themselves. These relations encode geometric correspondences adequate for spatial understanding, while leaving the student representation underdetermined, allowing it to remain close to its pretrained vision- language space. Across representative VLMs, MVRD improves visual-spatial reasoning, outperforming supervised fine-tuning and feature distillation while approaching feature fusion methods with considerably fewer added parameters and lower latency. We show that MVRD makes visual representations more geometric while retaining language alignment, and generalizes to 3D scene understanding tasks such as object grounding, dense captioning, and question answering.",
+      "abstract_zh": "视觉语言模型（VLMs）在图像和视频理解方面取得了显著进展，但其视觉空间表示仍然在几何上脆弱，导致在具身人工智能、机器人技术和自动驾驶所需的空间推理中出现失败。以往的几何基础方法要么是在空间问答上微调VLMs，这可能会延续虚假的视觉表示，要么是融合来自大型几何基础视觉模型的特征，这在推理时显著增加了模型的大小。从几何基础视觉模型进行知识蒸馏提供了一种替代方案，但直接匹配多视角教师特征可能会破坏视觉和文本表示之间的预训练对齐，降低对象和语言语义能力。我们提出了多视角关系蒸馏（MVRD），该方法蒸馏跨视角的补丁级余弦相似度，而不是直接蒸馏教师特征。这些关系编码了适合空间理解的几何对应关系，同时保持学生表示的不确定性，使其能够保持接近其预训练的视觉语言空间。在代表性的VLMs中，MVRD改善了视觉空间推理，超越了监督微调和特征蒸馏，同时在增加的参数和延迟方面大幅接近特征融合方法。我们展示了MVRD使视觉表示更加几何化，同时保持语言对齐，并且能够推广到3D场景理解任务，如对象定位、密集描述和问答。",
+      "authors": [
+        "Kiet T. Nguyen",
+        "Hanbo Shim",
+        "Jinwoo Kim",
+        "Seunghoon Hong"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10864",
+      "tags": [
+        "深度/几何",
+        "VLM/VLA",
+        "多传感器融合"
+      ],
+      "title": "Multi-View Relational Distillation for Spatial Reasoning with Vision-Language Models",
+      "title_zh": "基于多视角关系蒸馏的视觉语言模型空间推理",
+      "url": "/daily/2026-08-12/#paper-2608-10864"
+    },
+    {
+      "abstract": "Single-frame surround-view reconstruction faces severe geometric instability and rendering artifacts due to minimal inter-camera overlap. While existing methods rely on complex decoders or auxiliary cues, they remain bottlenecked by the weak geometric capacity of upstream features. We argue that leveraging pretrained visual geometry priors strengthens upstream representations and alleviates the geometric ambiguity in sparse surround views. To this end, we propose VGGD, a visual geometry foundation-aware 3D Gaussian Splatting framework for feed-forward surround-view driving reconstruction, which shifts geometric modeling to the frontend and adapts foundation priors to the driving camera setting. First, VGGD leverages VGGT to provide transferable multi-view geometric prior tokens. Next, we introduce a Dual-Path Neck to decouple geometry-consistent and appearance-aware representations, improving appearance completion in weakly observed regions. We further apply Scale Warmup to stabilize early geometry learning and suppress scale drift under ego-pose changes. Finally, we use a hybrid pixel--volume Gaussian decoder to produce a renderable 3D Gaussian scene for novel-view synthesis. Experiments on the nuScenes single-frame benchmark show that VGGD achieves the best overall rendering quality among the compared methods and improves relative geometric consistency.",
+      "abstract_zh": "单帧全景重建由于相机间重叠度较低，面临严重的几何不稳定性和渲染伪影。现有方法依赖复杂的解码器或辅助线索，但仍受到上游特征几何能力弱的瓶颈限制。我们认为，利用预训练的视觉几何先验可以增强上游表示，并缓解稀疏全景视图中的几何模糊。为此，我们提出了VGGD，一种面向视觉几何基础的3D高斯点云框架，用于前馈全景驾驶重建，该框架将几何建模转移到前端，并将基础先验适应于驾驶相机设置。首先，VGGD利用VGGT提供可转移的多视角几何先验标记。接下来，我们引入了双路径颈部结构，以解耦几何一致性和外观感知表示，从而改善弱观察区域的外观补全。我们进一步应用规模预热技术，以稳定早期几何学习并抑制自我姿态变化下的规模漂移。最后，我们使用混合像素-体积高斯解码器生成可渲染的3D高斯场景，以进行新视角合成。在nuScenes单帧基准测试中的实验表明，VGGD在比较方法中实现了最佳的整体渲染质量，并改善了相对几何一致性。",
+      "authors": [
+        "Junhong Lin",
+        "Jinlong Wang",
+        "Xianda Guo",
+        "Yanlun Peng",
+        "Wei Zheng",
+        "Guoqing Liu",
+        "Hanli Wang",
+        "Tiesong Zhao",
+        "Wei Gao"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10682",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "LiDAR/点云"
+      ],
+      "title": "Visual Geometry Foundation-Aware Gaussians for Single-Frame Surround-View Driving Reconstruction",
+      "title_zh": "面向视觉几何基础的高斯模型用于单帧全景驾驶重建",
+      "url": "/daily/2026-08-12/#paper-2608-10682"
+    },
+    {
+      "abstract": "Continuous and reliable localization is essential for autonomous driving. Cross-view visual localization matches ground images with satellite maps, providing complementary localization cues for pipelines that depend on Global Navigation Satellite System (GNSS) signals and high-definition (HD) maps. Most existing cross-view visual localization methods process each frame independently, leaving temporal information underused and limiting accuracy under dynamic occlusion, illumination variation, and repetitive textures. This study proposes a temporal-context-enhanced framework for cross-view sequence visual localization. The proposed recurrent cross-frame module aggregates historical context from the previous state to enhance the coarse ground feature of each current frame. These enhanced features facilitate satellite candidate-region classification, while hierarchical fine-grained features enable precise local offset estimation. On the CVIS dataset, the proposed method reduces mean localization error from 3.80 m to 1.57 m and increases R@1 m from 8.14% to 40.22%. Direct transfer to KITTI-CVL achieves a mean error of 2.61 m, with target-domain fine-tuning further reducing the mean error to 2.27 m. Zero-shot field experiments on a real-world vehicle achieve a mean error of 2.84 m and R@5 m of 96.86%. These results demonstrate that temporal context enhancement significantly improves cross-view localization accuracy and supports robust deployment on public benchmarks and real-world roads.",
+      "abstract_zh": "连续可靠的定位对于自动驾驶至关重要。跨视角视觉定位通过将地面图像与卫星地图匹配，为依赖全球导航卫星系统（GNSS）信号和高清（HD）地图的管道提供互补的定位线索。现有的大多数跨视角视觉定位方法独立处理每一帧，导致时间信息未被充分利用，并限制了在动态遮挡、光照变化和重复纹理下的准确性。本研究提出了一种增强时序上下文的跨视角序列视觉定位框架。所提的递归跨帧模块从先前状态聚合历史上下文，以增强每一当前帧的粗略地面特征。这些增强特征有助于卫星候选区域分类，而分层细粒度特征则实现精确的局部偏移估计。在CVIS数据集上，所提方法将平均定位误差从3.80米降低至1.57米，并将R@1米从8.14%提高至40.22%。直接转移到KITTI-CVL时，平均误差为2.61米，目标领域的微调进一步将平均误差降低至2.27米。在真实车辆上的零样本实地实验实现了平均误差为2.84米，R@5米为96.86%。这些结果表明，时序上下文增强显著提高了跨视角定位的准确性，并支持在公共基准和真实道路上的稳健部署。",
+      "authors": [
+        "Jiaping Wang",
+        "Shaobo Li",
+        "Zhen Wang"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10660",
+      "tags": [
+        "地图/定位",
+        "仿真/数据"
+      ],
+      "title": "Cross-View Sequential Visual Localization with Spatio-Temporal Context Modeling for Autonomous Driving",
+      "title_zh": "基于时空上下文建模的跨视角序列视觉定位用于自动驾驶",
+      "url": "/daily/2026-08-12/#paper-2608-10660"
+    },
+    {
+      "abstract": "Embodied artificial intelligence aims to develop agents that perceive, reason, and act through continuous interaction with the physical world. However, most embodied systems are still evaluated within conservative safety margins or moderate interaction regimes, leaving their capability boundaries under extreme conditions insufficiently understood. Autonomous racing provides a stringent testbed by combining high-frequency localization and perception, adversarial interaction, near-saturated vehicle dynamics, and strict safety constraints. Existing systems push high-speed performance but rarely model and refine cognitive and physical limits jointly. Here we show that a world-model-centric autonomous racing agent provides a concrete step toward exploring these coupled limits. The framework learns predictive world models from near-limit successes and failures to capture interaction evolution, ego dynamics, and feasible-motion boundaries, coupling world-state construction, future-aware reasoning, and near-limit control in a closed-loop refinement process. Training data were collected from real-vehicle autonomous racing, where the onboard system maintained robust localization and perception at speeds up to 256.3 km/h and peak lateral acceleration of 26.8 m/s$^2$. In full-scale simulated racing, the well trained world-model-centric agent achieves an 88.3% interaction success rate across various challenging simulated racing scenarios. Closed-loop refinement of the world model and policy further improved utilization of cognitive-physical limits, recovery from failure modes, and generalization across varying conditions and unseen circuits. These results suggest a boundary-aware methodology in which world models help embodied agents represent, predict, and continually refine their capability boundaries for safer real-world deployment.",
+      "abstract_zh": "具身人工智能旨在开发能够通过与物理世界的持续互动进行感知、推理和行动的代理。然而，大多数具身系统仍然在保守的安全边际或适度的互动模式下进行评估，因此在极端条件下的能力边界尚未得到充分理解。自主赛车通过结合高频率的定位与感知、对抗性互动、近饱和的车辆动态和严格的安全约束，提供了一个严格的测试平台。现有系统推动高速性能，但很少同时建模和优化认知与物理极限。在此，我们展示了以世界模型为中心的自主赛车代理为探索这些耦合极限提供了一个具体的步骤。该框架从近极限的成功与失败中学习预测世界模型，以捕捉互动演变、自我动态和可行运动边界，将世界状态构建、未来感知推理和近极限控制结合在一个闭环优化过程中。训练数据来自真实车辆的自主赛车，其中车载系统在高达256.3 km/h的速度和26.8 m/s²的峰值横向加速度下保持了强大的定位和感知能力。在全尺度模拟赛车中，经过良好训练的以世界模型为中心的代理在各种具有挑战性的模拟赛车场景中达到了88.3%的互动成功率。世界模型和策略的闭环优化进一步提高了认知-物理极限的利用、从失败模式中恢复的能力，以及在不同条件和未见赛道上的泛化能力。这些结果表明了一种边界感知的方法论，其中世界模型帮助具身代理表示、预测并不断优化其能力边界，以实现更安全的现实世界部署。",
+      "authors": [
+        "Zitong Shan",
+        "Baichuan Lou",
+        "Yanxin Zhou",
+        "Shuge Wu",
+        "Xianqi He",
+        "Bolin Zhao",
+        "Sheng Zhao",
+        "Zhouheng Li",
+        "Chee Kiong Ong",
+        "King Ho Holden Li",
+        "Chen Lv"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10618",
+      "tags": [
+        "世界模型/生成",
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "Toward the Cognitive--Physical Limits of Embodied Intelligence through a World-Model-Centric Autonomous Racing Agent",
+      "title_zh": "通过以世界模型为中心的自主赛车代理探索具身智能的认知与物理极限",
+      "url": "/daily/2026-08-12/#paper-2608-10618"
+    },
+    {
+      "abstract": "Vision-Language-Action (VLA) models have recently emerged as a promising paradigm for end-to-end autonomous driving by enabling unified reasoning across perception, language, and planning. However, existing approaches lack mechanisms to exploit past failures or adapt to distribution shifts, causing the model to persistently underperform on similar scenarios where it has previously failed. In this paper, we propose DriveVLA-M0, a retrieval-augmented VLA with failure-aware latent memory. We construct a latent memory pool that stores failure cases along with their structure scene representations and expert trajectory labels, and design a dedicated Retrieve Model that decouples static road structure and dynamic agent interactions to enable structurally grounded retrieval. At inference time, retrieved cases are injected into the model via a lightweight decoupled LoRA-based test-time training (TTT) mechanism, allowing targeted and scenario-specific correction without modifying the backbone. Extensive experiments on NAVSIMv1 and NAVSIMv2 benchmark demonstrate that our approach consistently outperforms prior methods, achieving 94.1 PDMS on Navtest and 47.0 EPDMS on Navhard with only 26.44 ms TTT backward latency overhead. Furthermore, we show that DriveVLA-M0 scales effectively with additional memory, enabling training-free performance gains through memory expansion. The code is available at https://github.com/ZebinX/DriveVLA-M0.",
+      "abstract_zh": "视觉-语言-行动（VLA）模型最近作为一种有前景的端到端自主驾驶范式出现，能够在感知、语言和规划之间实现统一推理。然而，现有方法缺乏利用过去失败或适应分布变化的机制，导致模型在类似场景中持续表现不佳。本文提出了DriveVLA-M0，一种具有失败感知潜在记忆的检索增强型VLA。我们构建了一个潜在记忆池，存储失败案例及其结构场景表示和专家轨迹标签，并设计了一个专用的检索模型，解耦静态道路结构和动态代理交互，以实现结构化的检索。在推理时，通过轻量级的解耦LoRA基础测试时训练（TTT）机制将检索到的案例注入模型，允许在不修改主干网络的情况下进行针对性和场景特定的修正。在NAVSIMv1和NAVSIMv2基准上的广泛实验表明，我们的方法始终优于先前的方法，在Navtest上实现了94.1 PDMS，在Navhard上实现了47.0 EPDMS，且仅有26.44毫秒的TTT反向延迟开销。此外，我们还展示了DriveVLA-M0能够有效扩展额外记忆，通过记忆扩展实现无训练性能提升。代码可在 https://github.com/ZebinX/DriveVLA-M0 获取。",
+      "authors": [
+        "Zebin Xing",
+        "Yupeng Zheng",
+        "Qiang Chen",
+        "Linbo Wang",
+        "Yichen Zhang",
+        "Pengxuan Yang",
+        "Junli Wang",
+        "Deheng Qian",
+        "Xiaoqing Ye",
+        "Junyu Han",
+        "Yifeng Pan",
+        "Qichao Zhang",
+        "Dongbin Zhao"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10413",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "感知"
+      ],
+      "title": "DriveVLA-M0: Failure-Aware Memory Augmentation for Autonomous Driving",
+      "title_zh": "DriveVLA-M0：面向失败的自主驾驶记忆增强",
+      "url": "/daily/2026-08-12/#paper-2608-10413"
+    },
+    {
+      "abstract": "Reinforcement learning (RL) has shown promising performance in autonomous driving, yet ensuring the safety of online RL policies remains challenging due to insufficient exposure to safety-critical driving scenes. The long-tailed nature of real-world traffic situations makes dangerous and rare interactions difficult to encounter through conventional sampling, limiting the ability of RL policies to learn robust safety behaviors. Existing methods improve training diversity by synthesizing challenging scenes or adversarial situations. However, these approaches typically optimize scene generation objectives separately from the evolving policy, without explicitly modeling how generated perturbations relate to the current policy's weaknesses and learning needs. In this paper, we propose Threat-guided Policy-aware Scene Perturbation (TPSP) for safe autonomous driving with online RL. TPSP introduces a policy-aware scene encoder to capture the interaction between policy behaviors and surrounding environments, enabling scene perturbation aligned with the current policy. Based on this representation, TPSP selectively perturbs critical objects rather than applying uniform modifications across the scene. Furthermore, we develop a threat-guided optimization strategy that evaluates perturbed scenes through threat-level differences between policy rollouts on original and perturbed scenes, guiding the generation of safety-critical scenes with higher training value. Comprehensive experiments demonstrate that TPSP improves safety learning efficiency, achieving strong safety performance on NAVSIM v2 with approximately 4 million kilometers of simulated driving data. Ablation studies verify that policy-aware targeted perturbations provide more informative safety-critical experiences than random or policy-unaware strategies, enabling safer driving under limited interaction budgets.",
+      "abstract_zh": "强化学习（RL）在自主驾驶中展现了良好的性能，但由于对安全关键驾驶场景的暴露不足，确保在线RL策略的安全性仍然具有挑战性。现实世界交通情况的长尾特性使得危险和稀有的交互通过传统采样难以遇到，限制了RL策略学习稳健安全行为的能力。现有方法通过合成具有挑战性的场景或对抗性情况来提高训练多样性。然而，这些方法通常将场景生成目标与不断演变的策略分开优化，没有明确建模生成的扰动与当前策略的弱点和学习需求之间的关系。在本文中，我们提出了基于威胁引导的政策感知场景扰动（TPSP），用于安全自主驾驶的在线RL。TPSP引入了一种政策感知场景编码器，以捕捉政策行为与周围环境之间的互动，从而实现与当前政策一致的场景扰动。基于这一表示，TPSP选择性地扰动关键对象，而不是在场景中应用均匀的修改。此外，我们开发了一种威胁引导的优化策略，通过评估原始场景和扰动场景之间政策滚动的威胁水平差异来评估扰动场景，指导生成具有更高训练价值的安全关键场景。全面的实验表明，TPSP提高了安全学习效率，在NAVSIM v2上实现了强大的安全性能，模拟驾驶数据约为400万公里。消融研究验证了政策感知的目标扰动提供了比随机或不考虑政策的策略更具信息量的安全关键体验，使得在有限的交互预算下实现更安全的驾驶。",
+      "authors": [
+        "Xincong Hu",
+        "Lei Ou",
+        "Maosen Li",
+        "Jingtao Zhang",
+        "Liguo Hou",
+        "Zongzhang Zhang"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10403",
+      "tags": [
+        "世界模型/生成",
+        "安全/异常",
+        "感知"
+      ],
+      "title": "Threat-guided Policy-aware Scene Perturbation for Safe Autonomous Driving with Online Reinforcement Learning",
+      "title_zh": "基于威胁引导的政策感知场景扰动用于安全自主驾驶的在线强化学习",
+      "url": "/daily/2026-08-12/#paper-2608-10403"
+    },
+    {
+      "abstract": "Direct teleoperation of vehicles faces critical technical bottlenecks: communication latency and the operator's inability to physically perceive unmodeled environmental disturbances (e.g., aerodynamic drag, bank angles) coupled with highly nonlinear tire-road dynamics. To address these challenges, we propose a tailored unilateral teleoperation framework. The system integrates the Wave Variable (WV) approach to passively guarantee stability under stochastic delays, and an adaptive Radial Basis Function Network (RBFN) to actively compensate for vehicle-specific uncertainties. Unlike existing WV-neural network architectures designed for bilateral robotic arms, our framework features decoupled adaptive laws specifically designed for vehicle longitudinal and lateral dynamics. Furthermore, compared to model-heavy predictive controllers, the model-free RBFN offers rapid online adaptation without heavy computational overhead. Building upon our preliminary theoretical formulation, this brief paper presents comprehensive comparative analyses and real-world hardware validations. Simulation benchmarks against PID, LQR, MPC, and NMPC demonstrate that the RBFN achieves superior robustness against unmodeled disturbances while requiring orders of magnitude less execution time than MPC and NMPC, making it ideal for resource-constrained vehicle edge computing. Finally, hardware-in-the-loop experiments using a 1/10th scale vehicle over a 4G network validate the system's practical feasibility, safety, and robust trajectory tracking under physical road uncertainties.",
+      "abstract_zh": "车辆的直接遥操作面临着关键的技术瓶颈：通信延迟和操作员无法物理感知未建模的环境干扰（例如，空气阻力、倾斜角度）以及高度非线性的轮胎-道路动态。为了解决这些挑战，我们提出了一种定制的单向遥操作框架。该系统集成了波变量（Wave Variable, WV）方法，以被动方式保证在随机延迟下的稳定性，并采用自适应径向基函数网络（Radial Basis Function Network, RBFN）主动补偿特定于车辆的不确定性。与现有为双向机器人手臂设计的WV-神经网络架构不同，我们的框架具有专门为车辆纵向和横向动态设计的解耦自适应法则。此外，与模型重的预测控制器相比，无模型的RBFN在不需要大量计算开销的情况下，能够快速进行在线适应。在我们初步理论公式的基础上，本文简要呈现了全面的比较分析和实际硬件验证。与PID、LQR、MPC和NMPC的仿真基准测试表明，RBFN在应对未建模干扰方面具有更优的鲁棒性，同时所需的执行时间比MPC和NMPC少几个数量级，使其非常适合资源受限的车辆边缘计算。最后，使用1/10比例车辆在4G网络下进行的硬件在环实验验证了系统的实际可行性、安全性和在物理道路不确定性下的鲁棒轨迹跟踪能力。",
+      "authors": [
+        "Ning Ding",
+        "Azim Eskandarian"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10367",
+      "tags": [
+        "预测/规划",
+        "安全/异常",
+        "协同/V2X"
+      ],
+      "title": "A Neural Network Based Teleoperation for Remote Controlled Vehicles",
+      "title_zh": "基于神经网络的远程控制车辆遥操作",
+      "url": "/daily/2026-08-12/#paper-2608-10367"
+    },
+    {
+      "abstract": "We present TAR (Traffic Anomaly Reasoning) and TAR-Bench datasets, resources for training and evaluating video-language models beyond anomaly detection. TAR contains 44,040 chain-of-thought training annotations across 10 tasks for 3,670 CCTV videos ($\\sim$26 hours) from eight public datasets. Its evaluation component, TAR-Bench, contains 960 human-curated test annotations for 80 held-out clips trimmed from 17 public YouTube videos. TAR's training annotations are produced with MAVEN, which consolidates multi-scale video evidence into structured event descriptions before generating question-answer pairs and reasoning traces. On TAR-Bench, eleven vision-language models reveal that strong question-answering accuracy does not reliably predict temporal or scene reasoning ability. Multi-task fine-tuning on TAR yields consistent gains, with the full 10-task model improving aggregate score by 21.4 points over its zero-shot baseline. TAR and TAR-Bench provide the official training and in-domain evaluation data for AI City Challenge 2026 Track 3. The dataset is available at https://huggingface.co/datasets/nvidia/PhysicalAI-Traffic-Anomaly-Reasoning",
+      "abstract_zh": "我们提出了TAR（交通异常推理）和TAR-Bench数据集，这些资源用于训练和评估超越异常检测的视频语言模型。TAR包含来自八个公共数据集的3,670个闭路电视视频（约26小时）的10个任务中共44,040个思维链训练注释。其评估组件TAR-Bench包含960个人工策划的测试注释，针对从17个公共YouTube视频中剪辑的80个保留片段。TAR的训练注释是通过MAVEN生成的，该系统将多尺度视频证据整合为结构化事件描述，然后生成问答对和推理轨迹。在TAR-Bench上，十一种视觉语言模型显示，强大的问答准确性并不能可靠地预测时间或场景推理能力。在TAR上进行多任务微调带来了持续的提升，完整的10任务模型在其零样本基线基础上提高了21.4分。TAR和TAR-Bench为2026年AI City Challenge第3赛道提供了官方训练和领域内评估数据。数据集可在https://huggingface.co/datasets/nvidia/PhysicalAI-Traffic-Anomaly-Reasoning获取。",
+      "authors": [
+        "Han Zhang",
+        "Yilin Zhao",
+        "Zaid Pervaiz Bhat",
+        "Zheng Tang",
+        "Varun Praveen",
+        "Vidya N. Murali",
+        "David C. Anastasiu",
+        "Tomasz Kornuta"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10317",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "From Detection to Understanding: TAR and TAR-Bench for Multi-Task Traffic Anomaly Reasoning",
+      "title_zh": "从检测到理解：用于多任务交通异常推理的TAR和TAR-Bench",
+      "url": "/daily/2026-08-12/#paper-2608-10317"
+    },
+    {
+      "abstract": "Spatial understanding is fundamental to embodied intelligence, underpinning applications such as robotic manipulation, embodied navigation, and autonomous driving. Although recent vision-language models (VLMs) have achieved impressive performance on spatial reasoning benchmarks, state-of-the-art approaches typically rely on additional spatial encoders or architectural modifications during inference, increasing computational cost. We introduce Space Tokens, a lightweight, architecture-agnostic framework that equips VLMs with explicit continuous spatial representations without requiring additional inference-time modules. By distilling scene-level 3D geometry and object-centric spatial attributes into continuous latent tokens, our method enables these modalities to be directly incorporated into a chain-of-thought reasoning process, thereby improving the VLM's spatial reasoning capabilities. At the same time, the learned representations can be explicitly decoded to verify that they encode meaningful geometric information, while the unified token interface remains extensible to additional modalities. Experiments on VSI-Bench improve Qwen3-VL-8B by 4.3% and SenseNova-SI-1.3 by 1.3%, while achieving state-of-the-art performance on object size (79.2%) and room size estimation (75.7%). These results demonstrate that continuous spatial tokens provide an effective, interpretable, and computationally efficient mechanism for integrating geometric reasoning into large vision-language models.",
+      "abstract_zh": "空间理解是具身智能的基础，支撑着机器人操作、具身导航和自动驾驶等应用。尽管近期的视觉语言模型（VLMs）在空间推理基准测试中取得了令人瞩目的成绩，但最先进的方法通常在推理过程中依赖额外的空间编码器或架构修改，从而增加了计算成本。我们提出了空间标记（Space Tokens），这是一种轻量级、架构无关的框架，能够为VLMs提供明确的连续空间表示，而无需额外的推理时模块。通过将场景级的三维几何和以对象为中心的空间属性提炼为连续潜在标记，我们的方法使这些模态能够直接融入思维链推理过程中，从而提升VLM的空间推理能力。同时，学习到的表示可以被明确解码，以验证其编码了有意义的几何信息，而统一的标记接口仍然可以扩展到其他模态。在VSI-Bench上的实验中，Qwen3-VL-8B的性能提高了4.3%，SenseNova-SI-1.3提高了1.3%，同时在物体大小（79.2%）和房间大小估计（75.7%）方面达到了最先进的性能。这些结果表明，连续空间标记为将几何推理整合到大型视觉语言模型中提供了一种有效、可解释且计算高效的机制。",
+      "authors": [
+        "Hunter Schofield",
+        "Mohammed Elmahgiubi",
+        "Mohammad Mahdavian",
+        "Richard Shi",
+        "Jinjun Shan",
+        "Amir Rasouli",
+        "Dongfeng Bai"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10278",
+      "tags": [
+        "深度/几何",
+        "VLM/VLA",
+        "仿真/数据"
+      ],
+      "title": "Chain of Spatial Thoughts: Modality-Agnostic Spatial Grounding for Vision Language Models",
+      "title_zh": "空间思维链：对视觉语言模型的模态无关空间基础",
+      "url": "/daily/2026-08-12/#paper-2608-10278"
+    },
+    {
+      "abstract": "Emerging World-Action Models (WAMs) have demonstrated promising performance in autonomous driving by jointly modeling future driving scene evolution and trajectory planning. However, existing WAMs are typically trained with video data, which is only 2D projections of the underlying 4D driving scene. Consequently, WAMs fail to understand and capture the structure of 4D scenes and thus generate visually plausible yet 4D inconsistent future predictions that mislead downstream planning. To alleviate this issue, we present 4D-WAM, a model that leverages geometric foundation models for training-time supervision to enable 4D consistent world modeling. Specifically, we feed WAM-predicted future frames into a geometric foundation model, and use 4D-aware responses to define a 4D consistency loss. This loss encourages the model to understand, represent, and predict physically consistent 4D scenes during training, without additional inference cost. Moreover, we identify an early-decision phenomenon in WAMs and propose a decision-oriented timestep sampling strategy that emphasizes supervision at early, high-noise stages, where driving decisions are primarily formed. By propagating 4D supervision to this critical decision-formation phase, the proposed strategy further improves trajectory planning. Extensive experiments demonstrate that 4D-WAM effectively models 4D consistent scene evolution and achieves state-of-the-art performance on challenging NAVSIM-v1 and NAVSIM-v2 benchmarks.",
+      "abstract_zh": "新兴的世界-动作模型（World-Action Models, WAMs）通过联合建模未来驾驶场景演变和轨迹规划，在自动驾驶领域表现出良好的性能。然而，现有的WAM通常使用视频数据进行训练，而视频数据仅是潜在4D驾驶场景的2D投影。因此，WAM无法理解和捕捉4D场景的结构，从而生成视觉上合理但在4D上不一致的未来预测，误导下游规划。为了解决这一问题，我们提出了4D-WAM，这是一种利用几何基础模型进行训练时监督的模型，以实现4D一致的世界建模。具体而言，我们将WAM预测的未来帧输入几何基础模型，并使用4D感知响应定义4D一致性损失。该损失鼓励模型在训练过程中理解、表示和预测物理一致的4D场景，而无需额外的推理成本。此外，我们识别出WAM中的早期决策现象，并提出了一种以决策为导向的时间步采样策略，强调在早期高噪声阶段的监督，此时驾驶决策主要形成。通过将4D监督传播到这一关键的决策形成阶段，所提出的策略进一步改善了轨迹规划。大量实验表明，4D-WAM有效建模4D一致的场景演变，并在具有挑战性的NAVSIM-v1和NAVSIM-v2基准测试中实现了最先进的性能。",
+      "authors": [
+        "Jiacheng Fu",
+        "Yibo Yuan",
+        "Meng Tian",
+        "Yue Li",
+        "Jiangtong Zhu",
+        "Jianhua Han",
+        "Yueyi Zhang",
+        "Jianwu Fang",
+        "Jianru Xue",
+        "Hang Xu",
+        "Zhiwei Xiong"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10107",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "感知"
+      ],
+      "title": "4D-WAM: 4D Consistent World Modeling for Autonomous Driving",
+      "title_zh": "4D-WAM：用于自动驾驶的4D一致世界建模",
+      "url": "/daily/2026-08-12/#paper-2608-10107"
+    },
+    {
+      "abstract": "For safety-critical software, data from the software's operational past (e.g. a sequence of success and failure events experienced by the software) can provide strong statistical support for reliability claims about the software. However, such data might not describe past software failure events in sufficient detail, and this might leave a reliability assessment (based on this data) unable to account for important features of past software failures. In this paper, by extending conservative Bayesian inference (CBI) techniques used in reliability assessment, we illustrate a principled statistical approach for checking the robustness of reliability claims derived from insufficiently detailed operational data. We demonstrate the extent to which insufficient detail in operational data can undermine software reliability claims in autonomous vehicle (AV) safety assessment scenarios. Reliability claims derived from insufficiently fine-grained data might be dangerously optimistic, despite a concerted effort by an assessor to use such data conservatively during the assessment. While these findings are consistent with previous work on the impact of statistical model fidelity in Bayesian software reliability assessments, our work clarifies why attempts to use low-fidelity data conservatively can be naive, and we give the first conservative estimates of the impact of data fidelity on assessments.",
+      "abstract_zh": "对于安全关键软件，软件操作历史数据（例如，软件经历的成功和失败事件序列）可以为软件的可靠性声明提供强有力的统计支持。然而，这些数据可能无法充分详细地描述过去的软件失败事件，这可能导致基于这些数据的可靠性评估无法考虑到过去软件失败的重要特征。本文通过扩展用于可靠性评估的保守贝叶斯推断（CBI）技术，展示了一种原则性的统计方法，用于检查从不足详细的操作数据中得出的可靠性声明的稳健性。我们展示了操作数据中不足的细节在自主车辆（AV）安全评估场景中如何削弱软件可靠性声明的程度。尽管评估者在评估过程中努力保守地使用这些数据，但从不足细粒度数据中得出的可靠性声明可能会过于乐观。尽管这些发现与之前关于贝叶斯软件可靠性评估中统计模型保真度影响的研究一致，但我们的工作阐明了为什么尝试保守地使用低保真度数据可能是天真的，并且我们首次给出了数据保真度对评估影响的保守估计。",
+      "authors": [
+        "Kizito Salako",
+        "Rabiu Tsoho Muhammad"
+      ],
+      "date": "2026-08-12",
+      "id": "2608.10025",
+      "tags": [
+        "安全/异常"
+      ],
+      "title": "The Impact of Operational-Data Fidelity when Assessing Safety-Critical Autonomous-Vehicle Software",
+      "title_zh": "评估安全关键自主车辆软件时操作数据保真度的影响",
+      "url": "/daily/2026-08-12/#paper-2608-10025"
+    },
     {
       "abstract": "Lane detection requires recovering thin, elongated, and frequently occluded lane structures under challenging driving conditions. While anchor-based detectors provide efficient candidate generation, their performance is limited by two coupled issues: backbone features often lose structural continuity along partially visible lanes, and classification confidence may decouple from line-level localization quality, allowing inaccurate anchors to persist before non-maximum suppression (NMS). We propose a structure-enhanced and quality-aware framework that improves lane representation and dynamic-anchor scoring while preserving the inference pipeline of the Anchor Decomposition Network (ADNet). Specifically, a Gated Horizontal-Vertical Token (GHVT) module enhances mid- and high-level backbone features via lightweight directional token interactions with a learnable residual gate. In parallel, Line-Quality-Aware Dynamic Anchor Scoring (LQAS) calibrates existing classification logits using quality supervision, hard-negative suppression, and pairwise ranking without adding inference branches. On the VIL-100 dataset, our method improves ADNet-R34 from 89.97 to 91.28 in F1 score at the 0.5 intersection-over-union threshold (F1@50), reducing both false positives and false negatives. Additional experiments on CULane and TuSimple datasets, extensive ablations, score-distribution diagnostics, and runtime analysis confirm complementary structural and ranking improvements with minimal computational overhead.",
       "abstract_zh": "车道检测需要在复杂的驾驶条件下恢复细长且经常被遮挡的车道结构。虽然基于锚点的检测器提供了高效的候选生成，但其性能受到两个相互关联问题的限制：主干特征在部分可见车道上往往失去结构连续性，且分类置信度可能与线级定位质量脱钩，导致不准确的锚点在非极大值抑制（NMS）之前持续存在。我们提出了一种结构增强和质量感知框架，旨在改善车道表示和动态锚评分，同时保持锚分解网络（Anchor Decomposition Network，ADNet）的推理流程。具体而言，门控水平-垂直标记（Gated Horizontal-Vertical Token，GHVT）模块通过与可学习残差门的轻量级方向标记交互，增强中高层主干特征。同时，线质量感知动态锚评分（Line-Quality-Aware Dynamic Anchor Scoring，LQAS）利用质量监督、困难负样本抑制和成对排名来校准现有分类逻辑，而无需增加推理分支。在VIL-100数据集上，我们的方法将ADNet-R34的F1分数从89.97提高到91.28（在0.5交并比阈值下，F1@50），同时减少了假阳性和假阴性。在CULane和TuSimple数据集上的额外实验、广泛的消融实验、得分分布诊断和运行时分析确认了结构和排名的互补改进，且计算开销最小。",

@@ -1,0 +1,53 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models can connect scene understanding, semantic reasoning, and trajectory generation for autonomous driving. However, verbose natural-language Chain-of-Thought (CoT) is poorly suited to real-time control because it is open-ended, costly to decode, and difficult to optimize as an action-facing representation. We propose XCoT-VLA, which replaces descriptive rationales with compact executable CoT tokens learned from automatically constructed Reason-Action supervision. Logged trajectories provide action evidence, while scene context supplies causal semantics. The predicted XCoT sequence remains in context and conditions fixed trajectory queries through shared multimodal self-attention. Deterministic token-function routing applies the Reason FFN to XCoT tokens and the Control FFN to trajectory queries for flow-matching trajectory generation. We further introduce XCoT Policy Optimization (XCPO) as an optional refinement extension in the same executable token space. XCoT-VLA reduces longitudinal ADE from 1.645 to 1.323 on a general-distribution set and lateral FDE from 1.616 to 0.648 in lane-change scenarios. By representing driving-oriented reasoning with only 2-6 executable XCoT tokens, our method substantially reduces autoregressive reasoning overhead and remains within the real-time planning budget. These results demonstrate that driving-oriented reasoning can be compact, executable, and directly connected to trajectory generation.",
+  "abstract_zh": "视觉-语言-动作（VLA）模型能够连接场景理解、语义推理和自主驾驶的轨迹生成。然而，冗长的自然语言链思维（CoT）不适合实时控制，因为它是开放式的、解码成本高且难以优化为面向动作的表示。我们提出了XCoT-VLA，它用从自动构建的理由-动作监督中学习到的紧凑可执行的CoT标记替代了描述性理由。记录的轨迹提供了行动证据，而场景上下文则提供了因果语义。预测的XCoT序列保持在上下文中，并通过共享的多模态自注意力条件固定的轨迹查询。确定性标记-功能路由将理由前馈网络（Reason FFN）应用于XCoT标记，将控制前馈网络（Control FFN）应用于轨迹查询，以实现流匹配的轨迹生成。我们进一步引入XCoT策略优化（XCPO）作为同一可执行标记空间中的可选精细化扩展。XCoT-VLA在一般分布集上将纵向平均绝对误差（ADE）从1.645降低到1.323，在变道场景中将横向最终定位误差（FDE）从1.616降低到0.648。通过仅用2-6个可执行的XCoT标记表示面向驾驶的推理，我们的方法显著减少了自回归推理的开销，并保持在实时规划预算内。这些结果表明，面向驾驶的推理可以是紧凑的、可执行的，并且与轨迹生成直接相关。",
+  "arxiv_id": "2608.10976",
+  "arxiv_url": "https://arxiv.org/abs/2608.10976v1",
+  "authors": [
+    "Foundation Model Team",
+    "XPeng Inc"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10976",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.264848+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10976v1",
+  "published_at": "2026-08-11T14:33:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10976v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "地图/定位"
+    ]
+  },
+  "title": "XCoT-VLA: Executable Chain-of-Thought for Vision-Language-Action Driving",
+  "title_zh": "XCoT-VLA：可执行的视觉-语言-动作驱动链思维",
+  "translation_url": "https://hjfy.top/arxiv/2608.10976"
+}

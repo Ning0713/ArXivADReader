@@ -1,0 +1,56 @@
+{
+  "abstract": "Spatial understanding is fundamental to embodied intelligence, underpinning applications such as robotic manipulation, embodied navigation, and autonomous driving. Although recent vision-language models (VLMs) have achieved impressive performance on spatial reasoning benchmarks, state-of-the-art approaches typically rely on additional spatial encoders or architectural modifications during inference, increasing computational cost. We introduce Space Tokens, a lightweight, architecture-agnostic framework that equips VLMs with explicit continuous spatial representations without requiring additional inference-time modules. By distilling scene-level 3D geometry and object-centric spatial attributes into continuous latent tokens, our method enables these modalities to be directly incorporated into a chain-of-thought reasoning process, thereby improving the VLM's spatial reasoning capabilities. At the same time, the learned representations can be explicitly decoded to verify that they encode meaningful geometric information, while the unified token interface remains extensible to additional modalities. Experiments on VSI-Bench improve Qwen3-VL-8B by 4.3% and SenseNova-SI-1.3 by 1.3%, while achieving state-of-the-art performance on object size (79.2%) and room size estimation (75.7%). These results demonstrate that continuous spatial tokens provide an effective, interpretable, and computationally efficient mechanism for integrating geometric reasoning into large vision-language models.",
+  "abstract_zh": "空间理解是具身智能的基础，支撑着机器人操作、具身导航和自动驾驶等应用。尽管近期的视觉语言模型（VLMs）在空间推理基准测试中取得了令人瞩目的成绩，但最先进的方法通常在推理过程中依赖额外的空间编码器或架构修改，从而增加了计算成本。我们提出了空间标记（Space Tokens），这是一种轻量级、架构无关的框架，能够为VLMs提供明确的连续空间表示，而无需额外的推理时模块。通过将场景级的三维几何和以对象为中心的空间属性提炼为连续潜在标记，我们的方法使这些模态能够直接融入思维链推理过程中，从而提升VLM的空间推理能力。同时，学习到的表示可以被明确解码，以验证其编码了有意义的几何信息，而统一的标记接口仍然可以扩展到其他模态。在VSI-Bench上的实验中，Qwen3-VL-8B的性能提高了4.3%，SenseNova-SI-1.3提高了1.3%，同时在物体大小（79.2%）和房间大小估计（75.7%）方面达到了最先进的性能。这些结果表明，连续空间标记为将几何推理整合到大型视觉语言模型中提供了一种有效、可解释且计算高效的机制。",
+  "arxiv_id": "2608.10278",
+  "arxiv_url": "https://arxiv.org/abs/2608.10278v1",
+  "authors": [
+    "Hunter Schofield",
+    "Mohammed Elmahgiubi",
+    "Mohammad Mahdavian",
+    "Richard Shi",
+    "Jinjun Shan",
+    "Amir Rasouli",
+    "Dongfeng Bai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10278",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.095298+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10278v1",
+  "published_at": "2026-08-10T22:20:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10278v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "VLM/VLA",
+      "仿真/数据"
+    ]
+  },
+  "title": "Chain of Spatial Thoughts: Modality-Agnostic Spatial Grounding for Vision Language Models",
+  "title_zh": "空间思维链：对视觉语言模型的模态无关空间基础",
+  "translation_url": "https://hjfy.top/arxiv/2608.10278"
+}

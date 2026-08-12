@@ -1,0 +1,57 @@
+{
+  "abstract": "Feed-forward Gaussian reconstruction has recently emerged as an efficient approach for driving scene reconstruction. However, prevailing LiDAR-based methods preserve the initial correspondence between observed points and Gaussian primitives, treating the initialized primitive set as the final representation. Unlike optimization-based 3DGS, these methods cannot accumulate gradients during training to determine how the scenes representation should be densified. Meanwhile, the shared sparse backbone only fuses observations from different timestamps implicitly, without explicitly aggregating cross-time evidence for individual primitives. In this paper, we present Learning Gaussian Structure (LGS), a framework that enhances both Gaussian structure and primitive attributes. Our key observation is that changes in local gradient responses induced by a prune or add intervention reveal whether the corresponding structural adjustment benefits reconstruction. Based on this observation, our Gaussian Densify Policy learns a Densify Map comprising Prune and Addition Scores from controlled interventions, and directly adjusts the Gaussian structure during inference. We further develop a compact Cross-Time Point Query that explicitly retrieves and aggregates neighboring features from Gaussian primitives at other timestamps for reliable attribute prediction. Extensive experiments on the Waymo Open Dataset and PandaSet demonstrate that LGS consistently outperforms existing methods.",
+  "abstract_zh": "前馈高斯重建最近成为一种高效的驾驶场景重建方法。然而，现有的基于激光雷达（LiDAR）的方法保持观察点与高斯原件之间的初始对应关系，将初始化的原件集视为最终表示。与基于优化的3DGS不同，这些方法在训练过程中无法累积梯度，以确定场景表示应如何进行密集化。同时，共享的稀疏主干仅隐式融合来自不同时间戳的观察，而没有明确聚合个别原件的跨时间证据。在本文中，我们提出了学习高斯结构（Learning Gaussian Structure, LGS）框架，该框架增强了高斯结构和原件属性。我们的关键观察是，由于修剪或添加干预引起的局部梯度响应的变化揭示了相应的结构调整是否有利于重建。基于这一观察，我们的高斯密集化策略学习一个包含修剪和添加评分的密集化图，从受控干预中直接调整高斯结构。在推理过程中，我们进一步开发了一个紧凑的跨时间点查询，明确检索和聚合来自其他时间戳的高斯原件的邻近特征，以实现可靠的属性预测。在Waymo开放数据集和PandaSet上的大量实验表明，LGS始终优于现有方法。",
+  "arxiv_id": "2608.11077",
+  "arxiv_url": "https://arxiv.org/abs/2608.11077v1",
+  "authors": [
+    "Hang Li",
+    "Jiahe Li",
+    "Meiying Gu",
+    "Jin Zheng",
+    "Lina Yu",
+    "Xiao Bai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-11077",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.184958+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11077v1",
+  "published_at": "2026-08-11T15:38:55Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving scene",
+      "waymo open",
+      "pandaset",
+      "driving",
+      "驾驶",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 82
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11077v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "Learning Gaussian Structure: Intervention-Guided Density Control for Feed-Forward Driving Reconstruction",
+  "title_zh": "学习高斯结构：基于干预引导的密度控制用于前馈驱动重建",
+  "translation_url": "https://hjfy.top/arxiv/2608.11077"
+}

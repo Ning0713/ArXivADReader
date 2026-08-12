@@ -1,0 +1,52 @@
+{
+  "abstract": "Direct teleoperation of vehicles faces critical technical bottlenecks: communication latency and the operator's inability to physically perceive unmodeled environmental disturbances (e.g., aerodynamic drag, bank angles) coupled with highly nonlinear tire-road dynamics. To address these challenges, we propose a tailored unilateral teleoperation framework. The system integrates the Wave Variable (WV) approach to passively guarantee stability under stochastic delays, and an adaptive Radial Basis Function Network (RBFN) to actively compensate for vehicle-specific uncertainties. Unlike existing WV-neural network architectures designed for bilateral robotic arms, our framework features decoupled adaptive laws specifically designed for vehicle longitudinal and lateral dynamics. Furthermore, compared to model-heavy predictive controllers, the model-free RBFN offers rapid online adaptation without heavy computational overhead. Building upon our preliminary theoretical formulation, this brief paper presents comprehensive comparative analyses and real-world hardware validations. Simulation benchmarks against PID, LQR, MPC, and NMPC demonstrate that the RBFN achieves superior robustness against unmodeled disturbances while requiring orders of magnitude less execution time than MPC and NMPC, making it ideal for resource-constrained vehicle edge computing. Finally, hardware-in-the-loop experiments using a 1/10th scale vehicle over a 4G network validate the system's practical feasibility, safety, and robust trajectory tracking under physical road uncertainties.",
+  "abstract_zh": "车辆的直接遥操作面临着关键的技术瓶颈：通信延迟和操作员无法物理感知未建模的环境干扰（例如，空气阻力、倾斜角度）以及高度非线性的轮胎-道路动态。为了解决这些挑战，我们提出了一种定制的单向遥操作框架。该系统集成了波变量（Wave Variable, WV）方法，以被动方式保证在随机延迟下的稳定性，并采用自适应径向基函数网络（Radial Basis Function Network, RBFN）主动补偿特定于车辆的不确定性。与现有为双向机器人手臂设计的WV-神经网络架构不同，我们的框架具有专门为车辆纵向和横向动态设计的解耦自适应法则。此外，与模型重的预测控制器相比，无模型的RBFN在不需要大量计算开销的情况下，能够快速进行在线适应。在我们初步理论公式的基础上，本文简要呈现了全面的比较分析和实际硬件验证。与PID、LQR、MPC和NMPC的仿真基准测试表明，RBFN在应对未建模干扰方面具有更优的鲁棒性，同时所需的执行时间比MPC和NMPC少几个数量级，使其非常适合资源受限的车辆边缘计算。最后，使用1/10比例车辆在4G网络下进行的硬件在环实验验证了系统的实际可行性、安全性和在物理道路不确定性下的鲁棒轨迹跟踪能力。",
+  "arxiv_id": "2608.10367",
+  "arxiv_url": "https://arxiv.org/abs/2608.10367v1",
+  "authors": [
+    "Ning Ding",
+    "Azim Eskandarian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10367",
+  "categories": [
+    "cs.RO",
+    "cs.HC"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.060939+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10367v1",
+  "published_at": "2026-08-11T01:51:08Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "车辆",
+      "道路",
+      "robotic"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10367v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "本文研究通信时延和车辆动力学不确定性条件下的远程驾驶控制，将波变量稳定化方法与自适应RBF神经网络结合，实现车辆纵横向轨迹的低开销鲁棒跟踪，并通过仿真及4G网络硬件在环实验进行验证。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "协同/V2X"
+    ]
+  },
+  "title": "A Neural Network Based Teleoperation for Remote Controlled Vehicles",
+  "title_zh": "基于神经网络的远程控制车辆遥操作",
+  "translation_url": "https://hjfy.top/arxiv/2608.10367"
+}

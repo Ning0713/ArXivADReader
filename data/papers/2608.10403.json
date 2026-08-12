@@ -1,0 +1,58 @@
+{
+  "abstract": "Reinforcement learning (RL) has shown promising performance in autonomous driving, yet ensuring the safety of online RL policies remains challenging due to insufficient exposure to safety-critical driving scenes. The long-tailed nature of real-world traffic situations makes dangerous and rare interactions difficult to encounter through conventional sampling, limiting the ability of RL policies to learn robust safety behaviors. Existing methods improve training diversity by synthesizing challenging scenes or adversarial situations. However, these approaches typically optimize scene generation objectives separately from the evolving policy, without explicitly modeling how generated perturbations relate to the current policy's weaknesses and learning needs. In this paper, we propose Threat-guided Policy-aware Scene Perturbation (TPSP) for safe autonomous driving with online RL. TPSP introduces a policy-aware scene encoder to capture the interaction between policy behaviors and surrounding environments, enabling scene perturbation aligned with the current policy. Based on this representation, TPSP selectively perturbs critical objects rather than applying uniform modifications across the scene. Furthermore, we develop a threat-guided optimization strategy that evaluates perturbed scenes through threat-level differences between policy rollouts on original and perturbed scenes, guiding the generation of safety-critical scenes with higher training value. Comprehensive experiments demonstrate that TPSP improves safety learning efficiency, achieving strong safety performance on NAVSIM v2 with approximately 4 million kilometers of simulated driving data. Ablation studies verify that policy-aware targeted perturbations provide more informative safety-critical experiences than random or policy-unaware strategies, enabling safer driving under limited interaction budgets.",
+  "abstract_zh": "强化学习（RL）在自主驾驶中展现了良好的性能，但由于对安全关键驾驶场景的暴露不足，确保在线RL策略的安全性仍然具有挑战性。现实世界交通情况的长尾特性使得危险和稀有的交互通过传统采样难以遇到，限制了RL策略学习稳健安全行为的能力。现有方法通过合成具有挑战性的场景或对抗性情况来提高训练多样性。然而，这些方法通常将场景生成目标与不断演变的策略分开优化，没有明确建模生成的扰动与当前策略的弱点和学习需求之间的关系。在本文中，我们提出了基于威胁引导的政策感知场景扰动（TPSP），用于安全自主驾驶的在线RL。TPSP引入了一种政策感知场景编码器，以捕捉政策行为与周围环境之间的互动，从而实现与当前政策一致的场景扰动。基于这一表示，TPSP选择性地扰动关键对象，而不是在场景中应用均匀的修改。此外，我们开发了一种威胁引导的优化策略，通过评估原始场景和扰动场景之间政策滚动的威胁水平差异来评估扰动场景，指导生成具有更高训练价值的安全关键场景。全面的实验表明，TPSP提高了安全学习效率，在NAVSIM v2上实现了强大的安全性能，模拟驾驶数据约为400万公里。消融研究验证了政策感知的目标扰动提供了比随机或不考虑政策的策略更具信息量的安全关键体验，使得在有限的交互预算下实现更安全的驾驶。",
+  "arxiv_id": "2608.10403",
+  "arxiv_url": "https://arxiv.org/abs/2608.10403v1",
+  "authors": [
+    "Xincong Hu",
+    "Lei Ou",
+    "Maosen Li",
+    "Jingtao Zhang",
+    "Liguo Hou",
+    "Zongzhang Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10403",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.223996+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10403v1",
+  "published_at": "2026-08-11T02:49:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 57
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10403v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "Threat-guided Policy-aware Scene Perturbation for Safe Autonomous Driving with Online Reinforcement Learning",
+  "title_zh": "基于威胁引导的政策感知场景扰动用于安全自主驾驶的在线强化学习",
+  "translation_url": "https://hjfy.top/arxiv/2608.10403"
+}

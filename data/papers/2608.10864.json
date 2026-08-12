@@ -1,0 +1,52 @@
+{
+  "abstract": "Vision-language models (VLMs) have achieved strong image and video understanding, yet their visual-spatial representations remain geometrically fragile, leading to failures in spatial reasoning needed for embodied AI, robotics, and autonomous driving. Prior approaches to geometry grounding either fine-tune VLMs on spatial question answering, which can perpetuate spurious visual representations, or fuse features from large geometry-grounded vision models, which substantially increases model size at inference. Knowledge distillation from geometry-grounded vision models offers an alternative, but directly matching multi-view teacher features can disrupt the pretrained alignment between visual and textual representations, degrading object- and language-semantic capabilities. We propose multi-view relational distillation (MVRD), which distills patch-wise cosine similarities across views instead of the teacher features themselves. These relations encode geometric correspondences adequate for spatial understanding, while leaving the student representation underdetermined, allowing it to remain close to its pretrained vision- language space. Across representative VLMs, MVRD improves visual-spatial reasoning, outperforming supervised fine-tuning and feature distillation while approaching feature fusion methods with considerably fewer added parameters and lower latency. We show that MVRD makes visual representations more geometric while retaining language alignment, and generalizes to 3D scene understanding tasks such as object grounding, dense captioning, and question answering.",
+  "abstract_zh": "视觉语言模型（VLMs）在图像和视频理解方面取得了显著进展，但其视觉空间表示仍然在几何上脆弱，导致在具身人工智能、机器人技术和自动驾驶所需的空间推理中出现失败。以往的几何基础方法要么是在空间问答上微调VLMs，这可能会延续虚假的视觉表示，要么是融合来自大型几何基础视觉模型的特征，这在推理时显著增加了模型的大小。从几何基础视觉模型进行知识蒸馏提供了一种替代方案，但直接匹配多视角教师特征可能会破坏视觉和文本表示之间的预训练对齐，降低对象和语言语义能力。我们提出了多视角关系蒸馏（MVRD），该方法蒸馏跨视角的补丁级余弦相似度，而不是直接蒸馏教师特征。这些关系编码了适合空间理解的几何对应关系，同时保持学生表示的不确定性，使其能够保持接近其预训练的视觉语言空间。在代表性的VLMs中，MVRD改善了视觉空间推理，超越了监督微调和特征蒸馏，同时在增加的参数和延迟方面大幅接近特征融合方法。我们展示了MVRD使视觉表示更加几何化，同时保持语言对齐，并且能够推广到3D场景理解任务，如对象定位、密集描述和问答。",
+  "arxiv_id": "2608.10864",
+  "arxiv_url": "https://arxiv.org/abs/2608.10864v1",
+  "authors": [
+    "Kiet T. Nguyen",
+    "Hanbo Shim",
+    "Jinwoo Kim",
+    "Seunghoon Hong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10864",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.154408+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10864v1",
+  "published_at": "2026-08-11T12:34:41Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10864v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "VLM/VLA",
+      "多传感器融合"
+    ]
+  },
+  "title": "Multi-View Relational Distillation for Spatial Reasoning with Vision-Language Models",
+  "title_zh": "基于多视角关系蒸馏的视觉语言模型空间推理",
+  "translation_url": "https://hjfy.top/arxiv/2608.10864"
+}

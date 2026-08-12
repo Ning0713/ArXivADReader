@@ -1,0 +1,58 @@
+{
+  "abstract": "Single-frame surround-view reconstruction faces severe geometric instability and rendering artifacts due to minimal inter-camera overlap. While existing methods rely on complex decoders or auxiliary cues, they remain bottlenecked by the weak geometric capacity of upstream features. We argue that leveraging pretrained visual geometry priors strengthens upstream representations and alleviates the geometric ambiguity in sparse surround views. To this end, we propose VGGD, a visual geometry foundation-aware 3D Gaussian Splatting framework for feed-forward surround-view driving reconstruction, which shifts geometric modeling to the frontend and adapts foundation priors to the driving camera setting. First, VGGD leverages VGGT to provide transferable multi-view geometric prior tokens. Next, we introduce a Dual-Path Neck to decouple geometry-consistent and appearance-aware representations, improving appearance completion in weakly observed regions. We further apply Scale Warmup to stabilize early geometry learning and suppress scale drift under ego-pose changes. Finally, we use a hybrid pixel--volume Gaussian decoder to produce a renderable 3D Gaussian scene for novel-view synthesis. Experiments on the nuScenes single-frame benchmark show that VGGD achieves the best overall rendering quality among the compared methods and improves relative geometric consistency.",
+  "abstract_zh": "单帧全景重建由于相机间重叠度较低，面临严重的几何不稳定性和渲染伪影。现有方法依赖复杂的解码器或辅助线索，但仍受到上游特征几何能力弱的瓶颈限制。我们认为，利用预训练的视觉几何先验可以增强上游表示，并缓解稀疏全景视图中的几何模糊。为此，我们提出了VGGD，一种面向视觉几何基础的3D高斯点云框架，用于前馈全景驾驶重建，该框架将几何建模转移到前端，并将基础先验适应于驾驶相机设置。首先，VGGD利用VGGT提供可转移的多视角几何先验标记。接下来，我们引入了双路径颈部结构，以解耦几何一致性和外观感知表示，从而改善弱观察区域的外观补全。我们进一步应用规模预热技术，以稳定早期几何学习并抑制自我姿态变化下的规模漂移。最后，我们使用混合像素-体积高斯解码器生成可渲染的3D高斯场景，以进行新视角合成。在nuScenes单帧基准测试中的实验表明，VGGD在比较方法中实现了最佳的整体渲染质量，并改善了相对几何一致性。",
+  "arxiv_id": "2608.10682",
+  "arxiv_url": "https://arxiv.org/abs/2608.10682v1",
+  "authors": [
+    "Junhong Lin",
+    "Jinlong Wang",
+    "Xianda Guo",
+    "Yanlun Peng",
+    "Wei Zheng",
+    "Guoqing Liu",
+    "Hanli Wang",
+    "Tiesong Zhao",
+    "Wei Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-12#paper-2608-10682",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-12T14:37:55.133636+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.10682v1",
+  "published_at": "2026-08-11T09:04:33Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "driving",
+      "驾驶",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-08-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.10682v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Visual Geometry Foundation-Aware Gaussians for Single-Frame Surround-View Driving Reconstruction",
+  "title_zh": "面向视觉几何基础的高斯模型用于单帧全景驾驶重建",
+  "translation_url": "https://hjfy.top/arxiv/2608.10682"
+}
