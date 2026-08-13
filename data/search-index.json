@@ -1,6 +1,300 @@
 {
-  "generated_at": "2026-08-12T14:39:24.226204+00:00",
+  "generated_at": "2026-08-13T14:45:14.191157+00:00",
   "items": [
+    {
+      "abstract": "Generative models like Diffusion Models and Flow Matching have demonstrated remarkable capabilities in synthesizing high-fidelity driving videos, but are severely constrained by high inference latency due to the requirement of extensive sampling steps. We argue that this inefficiency stems from the prevailing reliance on a standard Gaussian source distribution, where consecutive frames are initialized as independent Gaussian noise. This paradigm disregards the rich spatiotemporal correlations inherent in driving videos, compelling the model to regenerate deterministic scene structures existing in previous frames from noise, which is both computationally redundant and prone to geometric inconsistency. To address this problem, we propose GeoFlow, a novel framework designed to achieve efficient driving video generation by harnessing explicit geometric priors. Instead of sampling from standard Gaussian noise, we leverage multi-view geometry and spatially-adaptive noise injection to construct a Geometry-Aligned Prior (GAP) distribution as starting point. This initialization bridges the gap between source distribution and data distribution, yielding a significantly straighter and shorter sampling trajectory. Extensive experiments demonstrate that GeoFlow can achieve remarkable efficiency of both training and inference: merely several hours of fine-tuning on baseline models can significantly boost few-step generation quality, while fully converged training drastically reduces number of inference steps required for state-of-the-art video generation.",
+      "abstract_zh": "生成模型如扩散模型（Diffusion Models）和流匹配（Flow Matching）在合成高保真驾驶视频方面展现了显著的能力，但由于需要大量采样步骤，推理延迟严重受限。我们认为，这种低效源于对标准高斯源分布的普遍依赖，其中连续帧被初始化为独立的高斯噪声。这一范式忽视了驾驶视频固有的丰富时空相关性，迫使模型从噪声中重新生成先前帧中存在的确定性场景结构，这既计算冗余又容易导致几何不一致。为了解决这个问题，我们提出了GeoFlow，一个旨在通过利用显式几何先验实现高效驾驶视频生成的新框架。我们不再从标准高斯噪声中采样，而是利用多视角几何和空间自适应噪声注入构建几何对齐先验（Geometry-Aligned Prior, GAP）分布作为起始点。这种初始化弥合了源分布与数据分布之间的差距，产生了显著更直且更短的采样轨迹。大量实验表明，GeoFlow在训练和推理方面都能实现显著的效率：仅需在基线模型上进行几小时的微调，即可显著提升少步生成质量，而完全收敛的训练则大幅减少了进行最先进视频生成所需的推理步骤。",
+      "authors": [
+        "Jiazheng Liu",
+        "Hang Li",
+        "Jiawei Zhang",
+        "Jiahe Li",
+        "Xiaohan Yu",
+        "Shengyin Fan",
+        "Jin Zheng",
+        "Xiao Bai"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.12203",
+      "tags": [
+        "世界模型/生成",
+        "深度/几何",
+        "仿真/数据"
+      ],
+      "title": "GeoFlow: Efficient Driving Video Generation via Geometry-Aligned Priors",
+      "title_zh": "GeoFlow：通过几何对齐先验实现高效的驾驶视频生成",
+      "url": "/daily/2026-08-13/#paper-2608-12203"
+    },
+    {
+      "abstract": "Recent research in machine and deep learning has shown the potential of learningbased motion planning approaches to improve the driving behavior of automated vehicles, especially in complex environments. However, their complex nature and lack of transparency can hinder explainability and trustworthiness and complicate safety assurance. Motivated by these challenges, we propose a hybrid planning architecture that combines the advantages of machine learning with the verifiability and the determinism of classical approaches. Specifically, we developed a deep neural network to interpret complex traffic scenes and propose driving behavior, while an optimization-based supervision layer validates this proposal and enforces explicit drivability and safety constraints. We evaluate the learned planner's driving behavior in open-loop studies on real-world urban data, discuss system integration aspects for stable closed-loop operation, and report results from real-world deployment on our research vehicle karl..",
+      "abstract_zh": "近期在机器学习和深度学习领域的研究表明，基于学习的运动规划方法在改善自动驾驶车辆的驾驶行为方面具有潜力，尤其是在复杂环境中。然而，这些方法的复杂性和缺乏透明性可能会妨碍可解释性和可信度，并使安全保障变得复杂。针对这些挑战，我们提出了一种混合规划架构，结合了机器学习的优势与经典方法的可验证性和确定性。具体而言，我们开发了一种深度神经网络来解读复杂的交通场景并提出驾驶行为，而基于优化的监督层则验证这一提议并强制执行明确的可驾驶性和安全约束。我们在真实城市数据的开放环路研究中评估了学习规划器的驾驶行为，讨论了稳定闭环操作的系统集成方面，并报告了在我们的研究车辆karl上的真实世界部署结果。",
+      "authors": [
+        "Jean-Pierre Busch",
+        "Guido Linden",
+        "Jan Bergmann",
+        "Lutz Eckstein"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.12198",
+      "tags": [
+        "预测/规划",
+        "安全/异常",
+        "深度/几何"
+      ],
+      "title": "Learning-Based Behavior Planning for Automated Driving: Real-World Integration and Deployment",
+      "title_zh": "基于学习的自动驾驶行为规划：现实世界的集成与部署",
+      "url": "/daily/2026-08-13/#paper-2608-12198"
+    },
+    {
+      "abstract": "Aggregate metrics may not fully reflect performance in insufficiently examined high-risk driving conditions. We propose RISC (Risk-Informed Slice Coverage), a practical protocol for risk-guided stress testing and coverage-qualified evaluation. Risk-guided stress testing directs a finite audit budget toward risk-relevant sub-datasets, called risk slices, while coverage-qualified evaluation reports results together with explicit statements about which slices are sufficiently or insufficiently covered. The protocol translates safety concerns into machine-readable risk slices, uses lightweight signals to tag candidate data, selects a compact audit set by risk, and qualifies the results using coverage evidence. An LLM can optionally support this process by surfacing relevant but potentially overlooked conditions during test planning, thereby helping engineers not to forget the obvious. RISC is model-agnostic and can be applied to perception modules, driving models, and other autonomous-driving subsystems. We instantiate the protocol for monocular pedestrian perception using 1,000 frames from the Zenseact Open Dataset, image statistics, and a YOLO-based detector proxy. In this proof-of-concept study, risk-guided selection increases critical failure discovery from 34.0% under random sampling to 98.5%. RISC provides a lightweight, assurance-oriented evaluation layer that complements scenario categorization, coverage assessment, and broader testing-and-verification workflows.",
+      "abstract_zh": "聚合指标可能无法充分反映在未充分审查的高风险驾驶条件下的性能。我们提出了RISC（基于风险的切片覆盖），这是一种用于风险引导压力测试和覆盖合格评估的实用协议。风险引导压力测试将有限的审计预算指向与风险相关的子数据集，称为风险切片，而覆盖合格评估则报告结果并明确说明哪些切片得到了充分或不足的覆盖。该协议将安全问题转化为机器可读的风险切片，使用轻量级信号标记候选数据，根据风险选择紧凑的审计集，并使用覆盖证据对结果进行资格认证。大型语言模型（LLM）可以选择性地支持这一过程，在测试规划期间揭示相关但可能被忽视的条件，从而帮助工程师不忘显而易见的事情。RISC是模型无关的，可以应用于感知模块、驾驶模型和其他自主驾驶子系统。我们使用来自Zenseact开放数据集的1,000帧图像、图像统计数据和基于YOLO的检测器代理实例化该协议，用于单目行人感知。在这一概念验证研究中，风险引导选择将关键故障发现率从随机抽样下的34.0%提高到98.5%。RISC提供了一个轻量级、面向保障的评估层，补充了场景分类、覆盖评估和更广泛的测试与验证工作流程。",
+      "authors": [
+        "Fabian Hüger"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.12051",
+      "tags": [
+        "感知",
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "Do Not Forget the Obvious - RISC: A Risk-Informed Slice-Coverage Protocol for Safe Autonomous Driving",
+      "title_zh": "不要忽视显而易见的 - RISC：一种基于风险的切片覆盖协议用于安全自主驾驶",
+      "url": "/daily/2026-08-13/#paper-2608-12051"
+    },
+    {
+      "abstract": "Driving in the real world is open-world: a car may encounter a fallen mattress, a deer, or other objects outside its training data. Naming them is not enough. The system must know how to treat each region: can it drive over it, and how severe would a collision be? We therefore shift scene perception from category labels to dense action-relevant attributes, where each pixel is labeled by how it should affect motion rather than by object name. We instantiate this general formulation with two ordered attributes: 7-rank drivability and 5-rank vulnerability. We read Qwen3.5 image-token hidden states directly as a spatial semantic representation. A lightweight boundary-aware decoder then turns this coarse token grid into sharp full-resolution attribute maps. The whole process requires neither autoregressive text generation nor an external mask model such as SAM. We train on dense attribute labels built in CARLA and test transfer to real scenes and to novel obstacles never seen in training. We compare with vision-only segmenters trained on the same attributes and prompted VLM segmenters. Our model matches strong vision-only segmenters on familiar categories and improves transfer to real open-world anomalies, reaching 69.4% mean vulnerability-rank recall versus 57.1% for the best vision-only baseline and 53.9% for the best prompted VLM baseline. These results show that VLM image tokens provide useful semantic cues for transferring driving attributes to objects outside the training vocabulary.",
+      "abstract_zh": "现实世界中的驾驶是开放世界的：汽车可能会遇到掉落的床垫、鹿或其他超出其训练数据的物体。仅仅命名这些物体是不够的。系统必须知道如何处理每个区域：它能否驶过，碰撞的严重程度如何？因此，我们将场景感知从类别标签转变为密集的与动作相关的属性，其中每个像素被标记为如何影响运动，而不是物体名称。我们用两个有序属性来具体化这一一般性表述：7级可驾驶性和5级脆弱性。我们直接读取Qwen3.5图像-标记的隐藏状态作为空间语义表示。一个轻量级的边界感知解码器将这个粗略的标记网格转换为清晰的全分辨率属性图。整个过程既不需要自回归文本生成，也不需要外部掩码模型，如SAM。我们在CARLA构建的密集属性标签上进行训练，并测试其在真实场景和从未在训练中见过的新障碍物上的迁移。我们与在相同属性上训练的仅视觉分割器和提示的VLM分割器进行了比较。我们的模型在熟悉类别上与强大的仅视觉分割器相匹配，并改善了对真实开放世界异常的迁移，达到69.4%的平均脆弱性等级召回率，而最佳仅视觉基线为57.1%，最佳提示VLM基线为53.9%。这些结果表明，VLM图像标记为将驾驶属性转移到训练词汇之外的物体提供了有用的语义线索。",
+      "authors": [
+        "Yuchen Zhang",
+        "Yuan Gao",
+        "Sebastian Schmidt",
+        "Johannes Betz"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11777",
+      "tags": [
+        "感知",
+        "VLM/VLA",
+        "世界模型/生成"
+      ],
+      "title": "VOLA: Improving Open-World Driving by VLM-Based Semantic Attribute Prediction",
+      "title_zh": "VOLA：通过基于VLM的语义属性预测改善开放世界驾驶",
+      "url": "/daily/2026-08-13/#paper-2608-11777"
+    },
+    {
+      "abstract": "Edge-deployed vision systems in target recognition, surveillance, autonomous vehicles, and drone domains require hierarchical inference pipelines where a detection model identifies objects of interest and downstream classifiers provide fine-grained attribute analysis. Running all models on the GPU creates a serial bottleneck that limits real-time throughput as pipeline stages grow. Modern edge SoCs pair GPUs with dedicated neural accelerators (NPUs, DLAs) capable of concurrent execution, yet deploying custom models on these accelerators remains impractical due to strict operator constraints, quantization incompatibilities, and an undocumented end-to-end pipeline. We target NVIDIA Jetson DLA cores as the representative platform. We present a five-step methodology for zero GPU fallback DLA INT8 deployment of classification backbones, comprising architecture adaptation, manual dynamic range workaround to rescue TensorRT's implicit quantization (recovering 94.0% accuracy from implicit quantization's 75%) for rapid pipeline validation before explicit quantization, quantization-aware training, ONNX graph surgery for DLA compilation, and a concurrent GPU-detection/DLA-classification inference pipeline. We document nine engineering constraints with root-cause analysis and generalizable solutions. Validation on a dual-head person attribute classifier running on DLA alongside a GPU object detector on a Jetson Orin NX demonstrates near-zero pipeline overhead (12.5 vs. 13.3~FPS detector-only at 1080p), with dual-DLA scaling at no additional cost. The methodology is backbone-agnostic and generalizes to any detection-classification edge pipeline.",
+      "abstract_zh": "在目标识别、监控、自动驾驶汽车和无人机领域，边缘部署的视觉系统需要层次推理管道，其中检测模型识别感兴趣的对象，下游分类器提供细粒度的属性分析。在GPU上运行所有模型会造成串行瓶颈，限制了随着管道阶段增长而实现的实时吞吐量。现代边缘系统芯片（SoCs）将GPU与专用神经加速器（NPUs, DLAs）配对，能够并发执行，但由于严格的操作符限制、量化不兼容性以及未记录的端到端管道，在这些加速器上部署自定义模型仍然不切实际。我们以NVIDIA Jetson DLA核心作为代表平台。我们提出了一种五步方法，旨在实现分类骨干网络的零GPU回退DLA INT8部署，包括架构适配、手动动态范围解决方案以拯救TensorRT的隐式量化（从隐式量化的75%恢复94.0%的准确率），以便在显式量化之前快速验证管道、量化感知训练、用于DLA编译的ONNX图修剪，以及并发的GPU检测/DLA分类推理管道。我们记录了九个工程约束，并进行了根本原因分析和可推广的解决方案。在Jetson Orin NX上运行的双头人属性分类器与GPU目标检测器的验证显示，管道开销近乎为零（1080p下检测器仅为12.5 vs. 13.3~FPS），且双DLA扩展没有额外成本。该方法与骨干网络无关，适用于任何检测-分类边缘管道。",
+      "authors": [
+        "Vaishnav Raju"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11770",
+      "tags": [
+        "感知",
+        "端到端驾驶"
+      ],
+      "title": "Achieving Near-Zero-Overhead Multi-Model Hierarchical Classification in Real-Time Detection Pipelines",
+      "title_zh": "在实时检测管道中实现近零开销的多模型层次分类",
+      "url": "/daily/2026-08-13/#paper-2608-11770"
+    },
+    {
+      "abstract": "In real pigsty environments, pig point clouds often come into close contact with background structures, resulting in blurred target boundaries, local adhesion, and background mis-segmentation. This reduces the accuracy of subsequent point cloud completion and body size measurement. To address these challenges, this study proposes a pig point cloud segmentation method based on boundary feature analysis. The proposed method adopts Octree Transformer as the backbone network and integrates local geometric details with global semantic context through octree convolution, self-attention encoding, and multi-scale feature fusion. Furthermore, soft-distance boundary pseudo-labels are generated to provide continuous boundary supervision, and a bidirectional cross-boundary semantic module is designed to enable explicit interaction between boundary and semantic features. Experiments conducted on a comprehensive dataset demonstrate that the proposed method significantly outperforms various state-of-the-art models in terms of segmentation accuracy, mean intersection over union, and boundary delineation. The results indicate that the method effectively alleviates boundary adhesion, providing reliable point cloud inputs for downstream precision livestock farming tasks.",
+      "abstract_zh": "在实际猪舍环境中，猪点云常常与背景结构紧密接触，导致目标边界模糊、局部粘连和背景误分割。这降低了后续点云补全和体型测量的准确性。为了解决这些挑战，本研究提出了一种基于边界特征分析的猪点云分割方法。该方法采用Octree Transformer作为主干网络，通过八叉树卷积、自注意力编码和多尺度特征融合，将局部几何细节与全局语义上下文相结合。此外，生成软距离边界伪标签以提供连续的边界监督，并设计了双向跨边界语义模块，以实现边界与语义特征之间的显式交互。在一个综合数据集上进行的实验表明，该方法在分割准确性、平均交并比和边界描绘方面显著优于多种最先进的模型。结果表明，该方法有效缓解了边界粘连，为下游精细化养殖任务提供了可靠的点云输入。",
+      "authors": [
+        "Zhankang Xu",
+        "Fei Shi",
+        "Xiangyu Qi",
+        "Zhaoyang Wang",
+        "Mengxin Guo",
+        "Yikai Fan",
+        "Simon X. Yang",
+        "Qifeng Li",
+        "Weihong Ma"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11697",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "仿真/数据"
+      ],
+      "title": "Boundary-Enhanced Segmentation of Pig Point Clouds in Commercial Housing Environments",
+      "title_zh": "商业养殖环境中猪点云的边界增强分割",
+      "url": "/daily/2026-08-13/#paper-2608-11697"
+    },
+    {
+      "abstract": "Driving world models are often interpreted as counterfactual simulators for observed driving episodes: given a factual driving log, they are asked what would have happened under an alternative ego action. In this paper, we identify a fundamental mismatch between this goal and direct action-conditioned prediction. The direct prediction uses the shared history and the alternative action but not the factual continuation observed after that history. It can therefore generate a plausible future without preserving what actually happened in this episode. We formalize this gap using the causal recipe of abduction, action, and prediction and study it in a setting with a short time horizon, where the alternative ego action does not alter how surrounding agents evolve. To make the gap measurable, we construct a controlled simulation benchmark with factual outcomes and matched counterfactual outcomes. Across two representative world models, direct predictions fail to match the counterfactual ground truth, supporting our analysis. As a constructive check of this analysis, we introduce a deliberately simple, training-free pipeline that moves observed evidence into the counterfactual view and lets the frozen model complete what remains unknown. Even this simple construction raises the overall recovered fraction substantially and reduces perceptual distance to the matched counterfactual on both models. We hope this work draws attention to this gap and motivates better counterfactual prediction methods for driving world models.",
+      "abstract_zh": "驾驶世界模型通常被解释为观察到的驾驶情境的反事实模拟器：给定一个事实驾驶日志，它们被要求预测在替代自我行为下会发生什么。在本文中，我们识别出这一目标与直接基于行为的预测之间的根本不匹配。直接预测使用共享的历史和替代行为，但不使用在该历史之后观察到的事实延续。因此，它可以生成一个合理的未来，而不保留在这一情境中实际发生的事情。我们使用溯因、行动和预测的因果框架形式化这一差距，并在一个短时间范围内的设置中研究它，在该设置中，替代自我行为不会改变周围代理的演变。为了使这一差距可测量，我们构建了一个具有事实结果和匹配反事实结果的受控仿真基准。在两个代表性的世界模型中，直接预测未能与反事实真实情况匹配，从而支持我们的分析。作为对这一分析的建设性检验，我们引入了一个故意简单的、无训练的流程，将观察到的证据转移到反事实视角，并让冻结的模型完成剩余的未知部分。即便是这个简单的构造也显著提高了整体恢复比例，并减少了两个模型与匹配反事实之间的感知距离。我们希望这项工作能引起对这一差距的关注，并激励更好的反事实预测方法用于驾驶世界模型。",
+      "authors": [
+        "Jiaru Zhang",
+        "Can Cui",
+        "Yi Xu",
+        "Xin Ye",
+        "Ruqi Zhang",
+        "Ziran Wang"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11601",
+      "tags": [
+        "世界模型/生成",
+        "仿真/数据",
+        "预测/规划"
+      ],
+      "title": "How Can Driving World Models Do Counterfactual Prediction?",
+      "title_zh": "驾驶世界模型如何进行反事实预测？",
+      "url": "/daily/2026-08-13/#paper-2608-11601"
+    },
+    {
+      "abstract": "Closed-track testing plays a fundamental role in the verification and validation of automated driving systems (ADS), particularly for safety-critical scenarios, by enabling reproducible evaluation under controlled conditions. However, most existing approaches still rely on standardized protocols or predefined trajectories, leading to overly scripted interactions and limited ability to reproduce the natural complexity of public-road traffic. To address this limitation, we propose Video2Track, a framework that transfers real-world interactive driving scenarios from videos into steerable adversarial closed-track testing. The framework consists of two tightly coupled modules. The first is a scenario semantic mapping module, which extracts structured semantics from driving videos using a vision-language model and grounds them onto a closed-track topology library via retrieval-augmented generation, thereby identifying compatible map segments and interaction anchors. The second is a dynamic interactive testing module, which conditions on the grounded topology and anchors to generate diverse multi-agent trajectories through a conditional diffusion model, while regulating interaction intensity via a Stackelberg game with a parameterized adversarial objective. Closed-track experiments demonstrate that the proposed framework can faithfully reproduce representative real-world interaction scenarios and generate executable scenario variants with controllable risk levels and interaction styles, providing a scalable approach for realistic and steerable ADS validation.",
+      "abstract_zh": "闭环测试在自动驾驶系统（ADS）的验证和确认中发挥着基础性作用，特别是在安全关键场景中，通过在受控条件下实现可重复的评估。然而，现有的大多数方法仍然依赖于标准化协议或预定义轨迹，导致过于刻板的互动和有限的能力来重现公共道路交通的自然复杂性。为了解决这一局限性，我们提出了Video2Track，一个将现实世界互动驾驶场景从视频转化为可操控的对抗性闭环测试的框架。该框架由两个紧密耦合的模块组成。第一个是场景语义映射模块，它使用视觉-语言模型从驾驶视频中提取结构化语义，并通过检索增强生成将其映射到闭环拓扑库，从而识别兼容的地图段和互动锚点。第二个是动态互动测试模块，它基于已映射的拓扑和锚点，通过条件扩散模型生成多样化的多智能体轨迹，同时通过带参数的对抗目标的斯塔克尔博格博弈调节互动强度。闭环实验表明，所提出的框架能够忠实地重现具有代表性的现实世界互动场景，并生成具有可控风险水平和互动风格的可执行场景变体，为现实且可操控的ADS验证提供了一种可扩展的方法。",
+      "authors": [
+        "Mengjie Tian",
+        "Xinrui Zhang",
+        "Tianyu Li",
+        "Peizhi Zhang",
+        "Guirong Zhou",
+        "Haojie Feng",
+        "Junpeng Huang",
+        "Qixiang Zhang",
+        "Lu Xiong"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11592",
+      "tags": [
+        "地图/定位",
+        "世界模型/生成",
+        "安全/异常"
+      ],
+      "title": "Video2Track: From Real-World Interaction Videos to Steerable Adversarial Closed-Track Testing for Automated Driving Systems",
+      "title_zh": "Video2Track：从现实世界互动视频到可操控的对抗性闭环测试用于自动驾驶系统",
+      "url": "/daily/2026-08-13/#paper-2608-11592"
+    },
+    {
+      "abstract": "Autonomous driving simulation requires diverse and scalable lane-level HD maps to support long-horizon evaluation across complex road networks. Existing approaches either rely on handcrafted or reconstructed real-world maps, which limits scalability, or generate only local road structures rather than complete HD maps. We present RoadWeaver, a coarse-to-fine framework for from-scratch generation of diverse, large-scale HD maps. RoadWeaver first synthesizes a global road layout, expands it into a connected road network, and then constructs lane-level geometry with topologically consistent lane connectivity. Experimental results show that RoadWeaver achieves a 99.8\\% reachability, a 10.7\\% dead-end ratio, and an endpoint alignment error of 0.24 m. Compared with SOTA generation methods, it reduces endpoint alignment error by 94.4\\% while generating complete HD maps in 1.39--3.50 s. The generated maps can be directly deployed in driving simulators, providing scalable simulation environments for future closed-loop evaluation of autonomous driving systems. The training code and an out-of-the-box implementation of RoadWeaver will be released upon acceptance.",
+      "abstract_zh": "自动驾驶仿真需要多样化且可扩展的车道级高清地图，以支持在复杂道路网络中的长时间评估。现有的方法要么依赖于手工制作或重建的真实世界地图，这限制了可扩展性，要么仅生成局部道路结构而非完整的高清地图。我们提出了RoadWeaver，一个从零开始生成多样化、大规模高清地图的粗到细框架。RoadWeaver首先合成全球道路布局，将其扩展为一个连接的道路网络，然后构建具有拓扑一致车道连通性的车道级几何形状。实验结果表明，RoadWeaver实现了99.8%的可达性，10.7%的死胡同比例，以及0.24米的端点对齐误差。与最先进的生成方法相比，它将端点对齐误差降低了94.4%，同时在1.39至3.50秒内生成完整的高清地图。生成的地图可以直接部署在驾驶模拟器中，为未来自动驾驶系统的闭环评估提供可扩展的仿真环境。RoadWeaver的训练代码和即插即用的实现将在论文接受后发布。",
+      "authors": [
+        "Yueyuan Li",
+        "Zexi Chen",
+        "Weijie Xi",
+        "Mingyang Jiang",
+        "Songan Zhang",
+        "Hanyang Zhuang",
+        "Ming Yang"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11580",
+      "tags": [
+        "深度/几何",
+        "地图/定位",
+        "仿真/数据"
+      ],
+      "title": "RoadWeaver: Large-Scale Lane-Level HD Map Generation from Scratch for Autonomous Driving Simulation",
+      "title_zh": "RoadWeaver：从零开始生成大规模车道级高清地图以支持自动驾驶仿真",
+      "url": "/daily/2026-08-13/#paper-2608-11580"
+    },
+    {
+      "abstract": "Generative semantic segmentation exposes structured predictions as images, but direct color decoding is susceptible to color drift and boundary mixing, whereas latent-feature decoders that predict a separate output distribution may relegate the rendered image to an intermediate visualization. We present Semantic Prism, a conditional semantic-image generation-and-refinement framework with deterministic inference. A diffusion-distilled one-step generator renders a semantic RGB image; per-pixel distances from the rendered colors to a fixed class-color codebook define an explicit probabilistic interface. Hierarchical Generator Evidence Alignment spatially aligns multi-level generator features and uses a zero-initialized output projection to predict an additive residual in the interface logit space, retaining the image-defined interface as the reference for the final distribution. The interface and refined distributions further enable Contextual Interface--Hierarchy Disagreement (C-IHD), a fixed readout for ranking remaining pixel errors without an auxiliary predictor or additional forward pass. On the 500-image Cityscapes validation set, Semantic Prism achieves 72.07% mean intersection over union, 11.39 mIoU points above direct-interface decoding, with 0.41% expected calibration error. Matched-capacity ablations over three seeds support the benefit of jointly aligned multi-level evidence. A separately trained model attains 62.22% mIoU on BDD100K, while the Cityscapes-trained model reaches 46.89\\% mIoU under source-frozen transfer to the Adverse Conditions Dataset with Correspondences, without target-domain adaptation. Across all three datasets, C-IHD consistently improves the area under the precision--recall curve for pixel-error ranking over maximum softmax probability on the same segmentation predictions; on ACDC, it raises AUPR from 0.6580 to 0.7557.",
+      "abstract_zh": "生成语义分割将结构化预测呈现为图像，但直接的颜色解码容易受到颜色漂移和边界混合的影响，而预测单独输出分布的潜在特征解码器可能将渲染图像降级为中间可视化。我们提出了语义棱镜（Semantic Prism），这是一个具有确定性推理的条件语义-图像生成与精炼框架。一个经过扩散蒸馏的一步生成器渲染出语义RGB图像；从渲染颜色到固定类别颜色代码本的每个像素距离定义了一个明确的概率接口。分层生成器证据对齐（Hierarchical Generator Evidence Alignment）在空间上对齐多层生成器特征，并使用零初始化的输出投影来预测接口对数空间中的附加残差，保留图像定义的接口作为最终分布的参考。该接口和精炼分布进一步使得上下文接口-层次不一致（Contextual Interface--Hierarchy Disagreement, C-IHD）成为可能，这是一种固定的读取方式，用于在没有辅助预测器或额外前向传递的情况下对剩余像素错误进行排序。在500幅图像的Cityscapes验证集上，语义棱镜实现了72.07%的平均交并比（mIoU），比直接接口解码高出11.39个mIoU点，预期校准误差为0.41%。在三个种子的匹配容量消融实验中，支持了联合对齐多层证据的好处。一个单独训练的模型在BDD100K上达到了62.22%的mIoU，而在源冻结转移到具有对应关系的逆境条件数据集（Adverse Conditions Dataset）时，Cityscapes训练的模型达到了46.89%的mIoU，且没有目标领域适应。在所有三个数据集上，C-IHD始终提高了像素错误排名下的精确度-召回曲线下的面积（AUPR），相较于同一分割预测的最大softmax概率；在ACDC上，它将AUPR从0.6580提高到0.7557。",
+      "authors": [
+        "Weize Cai",
+        "Yongqi Dong",
+        "Zhida Shao",
+        "Zixin Fu"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11537",
+      "tags": [
+        "感知",
+        "世界模型/生成",
+        "仿真/数据"
+      ],
+      "title": "Generative Semantic Segmentation via an Observable Semantic-Image Interface and Hierarchical Generator Evidence Alignment",
+      "title_zh": "通过可观察的语义-图像接口和分层生成器证据对齐的生成语义分割",
+      "url": "/daily/2026-08-13/#paper-2608-11537"
+    },
+    {
+      "abstract": "Natural-language-based scenario generation offers an intuitive means of describing rare and complex driving interactions, yet it is still uncertain whether training with language-structured data leads to truly adaptive control policies. We propose Language-Structured Relational Q-Learning, instantiated through an Ego-Centric Relational Q-Network (ERQ-Net), which jointly learns inter-vehicle relevance and action values from dynamic traffic graphs. Language descriptions define surrounding-vehicle behaviours during training, while prompts and semantic actor roles are hidden from the policy. ERQ-Net must therefore infer threat relevance solely from observable kinematics and interactions. Across 2,500 safety-critical scenarios, language-structured training improves test success from 49-52% to 55-58% and increases adversary-focused attention from 1.2x to 2.1x, demonstrating emergent threat awareness. However, this representational gain does not consistently translate into adaptive control: trained policies perform similarly to the best constant action, while a portfolio of simple policies solves 76% of scenarios. We formalise this discrepancy as a recognition-control gap and show that reward reweighting and margin shaping do not eliminate the resulting policy collapse. Evaluations of realism, criticality, semantic accuracy, and transfer of state-interface representations to CARLA further highlight both the strengths and the constraints of language-structured relational policy learning in safety-critical driving scenarios.",
+      "abstract_zh": "基于自然语言的场景生成提供了一种直观的方式来描述稀有和复杂的驾驶交互，但尚不确定使用语言结构数据进行训练是否能够产生真正自适应的控制策略。我们提出了基于语言结构的关系Q学习，通过自我中心关系Q网络（Ego-Centric Relational Q-Network, ERQ-Net）实现，该网络共同学习动态交通图中的车辆间相关性和行动价值。语言描述在训练过程中定义了周围车辆的行为，而提示和语义角色则对策略隐藏。因此，ERQ-Net必须仅从可观察的运动学和交互中推断威胁相关性。在2500个安全关键场景中，基于语言结构的训练将测试成功率从49-52%提高到55-58%，并将针对对手的关注度从1.2倍提高到2.1倍，展示了新兴的威胁感知。然而，这种表征提升并未始终转化为自适应控制：训练后的策略表现与最佳常量动作相似，而一组简单策略解决了76%的场景。我们将这种差异形式化为识别-控制差距，并表明奖励重加权和边际塑造并未消除由此导致的策略崩溃。对现实性、关键性、语义准确性以及状态-接口表示向CARLA的转移的评估进一步突显了基于语言结构的关系策略学习在安全关键驾驶场景中的优势与局限。",
+      "authors": [
+        "Aditya Humnabadkar",
+        "Huaizhong Zhang",
+        "Ardhendu Behera"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11498",
+      "tags": [
+        "安全/异常",
+        "感知",
+        "LiDAR/点云"
+      ],
+      "title": "Language-Structured Relational Q-Learning for Threat-Aware Control in Safety-Critical Driving",
+      "title_zh": "基于语言结构的关系Q学习在安全关键驾驶中的威胁感知控制",
+      "url": "/daily/2026-08-13/#paper-2608-11498"
+    },
+    {
+      "abstract": "Modern end-to-end driving agents can achieve high average performance yet still violate basic traffic rules that a human driver would never miss. The reason is structural: they learn statistical patterns rather than the physical conditions that guarantee safe driving, leaving their decision-making process opaque and safety constraints unenforced. We introduce a neuro-symbolic safety guard, a lightweight module that attaches to the final command interface of an already-trained agent. Immediately before a command reaches the vehicle, it checks the command against explicit safety rules and, only when necessary, replaces it with the nearest safe alternative. Each intervention is directly executable and traceable to the rule that triggered it, while the guard itself requires no retraining and adds no learned component. Evaluated on the long-tail benchmarks Fail2Drive and Bench2Drive using the state-of-the-art TransFuser v6 (TFv6) as a case study, the guard improves Success Rate by 15% and reduces safety-critical collisions by up to 53%, while preserving the original Driving Score.",
+      "abstract_zh": "现代端到端驾驶代理能够实现高平均性能，但仍然会违反人类驾驶员绝不会忽视的基本交通规则。其原因在于结构性：它们学习的是统计模式，而非确保安全驾驶的物理条件，这使得它们的决策过程不透明，安全约束未得到执行。我们提出了一种神经符号安全守卫，这是一种轻量级模块，附加在已训练代理的最终指令接口上。在指令到达车辆之前，它会根据明确的安全规则检查该指令，只有在必要时，才会将其替换为最近的安全替代方案。每次干预都是可直接执行的，并且可以追溯到触发它的规则，而安全守卫本身无需重新训练，也不增加任何学习组件。在使用最先进的TransFuser v6 (TFv6)作为案例研究的长尾基准Fail2Drive和Bench2Drive上进行评估时，安全守卫将成功率提高了15%，并将安全关键碰撞减少了多达53%，同时保持了原始驾驶评分。",
+      "authors": [
+        "Simón Patiño Idarraga",
+        "Erick Silva",
+        "Rehana Yasmin",
+        "Ali Shoker"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11451",
+      "tags": [
+        "端到端驾驶",
+        "安全/异常",
+        "仿真/数据"
+      ],
+      "title": "Herding End-to-End Autonomous Driving via Neuro-Symbolic Safety Guards",
+      "title_zh": "通过神经符号安全守卫实现端到端自主驾驶的群体行为",
+      "url": "/daily/2026-08-13/#paper-2608-11451"
+    },
+    {
+      "abstract": "Robust traffic simulators are crucial for developing and testing autonomous vehicles to reduce the costly, labor-intensive real-world data collection process and the need for physical presence on the road. However, existing simulators require agents' initial states to generate trajectories, which limits scalability and diversity due to restrictions on the given initial states. While data-driven agent initialization has been widely studied, the generated initial states are not interpretable in terms of why the agents are initialized at those specific locations. Given known initial states, trajectory generation is also a challenging problem, as the model must learn the variability of the destination and how agents should reach it over time. In this paper, we propose TrafficDiffuser, a top-down traffic scenario generation framework that generates high-level traffic scenarios, defined by initial and goal state pairs, by jointly modeling them. The high-level scenario generation makes initial states better interpretable and reduces trajectory generation into as simple as an infilling problem. We demonstrate how the generated high-level traffic scenarios can be used, including constraining based on different trajectory modes and integrating them with existing trajectory generation models. We conduct extensive experiments on the Argoverse 2 motion prediction dataset to evaluate how well the generated outputs capture real-world distributions. In addition to generating goal states, TrafficDiffuser outperforms the next-best approach for agent initialization, reducing speed distribution distance by 55.3% and the off-road rate by 2.8%.",
+      "abstract_zh": "强大的交通模拟器对于开发和测试自动驾驶车辆至关重要，能够减少成本高昂、劳动密集的现实数据收集过程以及在道路上进行实地测试的需求。然而，现有的模拟器需要代理的初始状态来生成轨迹，这限制了可扩展性和多样性，因为对给定初始状态的限制。尽管数据驱动的代理初始化已被广泛研究，但生成的初始状态在解释代理为何在特定位置初始化方面并不直观。在已知初始状态的情况下，轨迹生成也是一个具有挑战性的问题，因为模型必须学习目的地的变化性以及代理应如何随时间到达目的地。在本文中，我们提出了TrafficDiffuser，一个自上而下的交通场景生成框架，通过联合建模初始状态和目标状态对来生成高层次的交通场景。高层次场景生成使得初始状态更具可解释性，并将轨迹生成简化为填充问题。我们展示了生成的高层次交通场景的应用，包括基于不同轨迹模式的约束以及与现有轨迹生成模型的集成。我们在Argoverse 2运动预测数据集上进行了广泛的实验，以评估生成的输出在多大程度上捕捉了现实世界的分布。除了生成目标状态外，TrafficDiffuser在代理初始化方面的表现优于下一最佳方法，将速度分布距离减少了55.3%，将越界率降低了2.8%。",
+      "authors": [
+        "Da Saem Lee",
+        "Yash Vardhan Pant",
+        "Sebastian Fischmeister"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11407",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "仿真/数据"
+      ],
+      "title": "Top-down Traffic Scenario Generation via Joint Initial-Goal Diffusion and Trajectory Infilling",
+      "title_zh": "通过联合初始目标扩散与轨迹填充的自上而下交通场景生成",
+      "url": "/daily/2026-08-13/#paper-2608-11407"
+    },
+    {
+      "abstract": "Cross-modal place recognition (CMPR) aims to identify the same location across heterogeneous sensing modalities, such as vision and LiDAR. Existing methods commonly bridge the modality gap using complex alignment modules, multi-stage training, or full fine-tuning of pretrained backbones. In this work, we revisit CMPR from the perspective of geometric consistency and propose GeoUniPR, a unified and concise geometry-consistent framework. GeoUniPR reduces cross-modal discrepancy at the representation level by projecting LiDAR point clouds into the camera perspective to construct Geometry-Consistent depth image views (DIV), which establish direct RGB-LiDAR correspondence. We further augment DIV with native LiDAR cues, including intensity and surface-normal information, yielding a multi-channel geometric representation that improves structural consistency. Based on this representation, GeoUniPR learns a unified embedding space using two modality-specific ViT-based encoders with identical architectures, trained through parameter-efficient adaptation without auxiliary alignment modules, multi-stage training, or full backbone fine-tuning. In addition, we introduce Spatially-Consistent InfoNCE (SC-InfoNCE), a CMPR-specific contrastive objective that suppresses distance-induced false negatives under spatial continuity. Extensive experiments on KITTI and KITTI-360 demonstrate that GeoUniPR achieves state-of-the-art (SOTA) performance in both same-modal and cross-modal place recognition, with strong cross-dataset generalization.",
+      "abstract_zh": "跨模态地点识别（CMPR）旨在识别不同传感模态（如视觉和激光雷达）下的同一位置。现有方法通常通过复杂的对齐模块、多阶段训练或对预训练骨干网络的全面微调来弥合模态差异。在本研究中，我们从几何一致性的角度重新审视CMPR，并提出GeoUniPR，一个统一且简洁的几何一致框架。GeoUniPR通过将激光雷达点云投影到相机视角，构建几何一致的深度图像视图（DIV），从而在表示层面减少跨模态差异，建立直接的RGB-激光雷达对应关系。我们进一步利用原生激光雷达线索（包括强度和表面法线信息）增强DIV，生成多通道几何表示，从而改善结构一致性。基于此表示，GeoUniPR使用两个具有相同架构的模态特定ViT编码器学习统一的嵌入空间，通过参数高效的适应训练，而无需辅助对齐模块、多阶段训练或全面的骨干微调。此外，我们引入空间一致信息对比损失（SC-InfoNCE），这是一个针对CMPR的特定对比目标，能够抑制因距离引起的空间连续性下的假负样本。在KITTI和KITTI-360上的大量实验表明，GeoUniPR在同模态和跨模态地点识别中均实现了最新的（SOTA）性能，并具有强大的跨数据集泛化能力。",
+      "authors": [
+        "Wonbong Kim",
+        "Jiatong Xiao",
+        "Rui Li",
+        "Xufei Wang",
+        "Qiwen Gu",
+        "Junqiao Zhao",
+        "Chen Ye",
+        "Guang Chen"
+      ],
+      "date": "2026-08-13",
+      "id": "2608.11263",
+      "tags": [
+        "LiDAR/点云",
+        "深度/几何",
+        "仿真/数据"
+      ],
+      "title": "GeoUniPR: A Geometry-Consistent Unified Framework for Cross-Modal Place Recognition",
+      "title_zh": "GeoUniPR：一个几何一致的跨模态地点识别统一框架",
+      "url": "/daily/2026-08-13/#paper-2608-11263"
+    },
     {
       "abstract": "Feed-forward Gaussian reconstruction has recently emerged as an efficient approach for driving scene reconstruction. However, prevailing LiDAR-based methods preserve the initial correspondence between observed points and Gaussian primitives, treating the initialized primitive set as the final representation. Unlike optimization-based 3DGS, these methods cannot accumulate gradients during training to determine how the scenes representation should be densified. Meanwhile, the shared sparse backbone only fuses observations from different timestamps implicitly, without explicitly aggregating cross-time evidence for individual primitives. In this paper, we present Learning Gaussian Structure (LGS), a framework that enhances both Gaussian structure and primitive attributes. Our key observation is that changes in local gradient responses induced by a prune or add intervention reveal whether the corresponding structural adjustment benefits reconstruction. Based on this observation, our Gaussian Densify Policy learns a Densify Map comprising Prune and Addition Scores from controlled interventions, and directly adjusts the Gaussian structure during inference. We further develop a compact Cross-Time Point Query that explicitly retrieves and aggregates neighboring features from Gaussian primitives at other timestamps for reliable attribute prediction. Extensive experiments on the Waymo Open Dataset and PandaSet demonstrate that LGS consistently outperforms existing methods.",
       "abstract_zh": "前馈高斯重建最近成为一种高效的驾驶场景重建方法。然而，现有的基于激光雷达（LiDAR）的方法保持观察点与高斯原件之间的初始对应关系，将初始化的原件集视为最终表示。与基于优化的3DGS不同，这些方法在训练过程中无法累积梯度，以确定场景表示应如何进行密集化。同时，共享的稀疏主干仅隐式融合来自不同时间戳的观察，而没有明确聚合个别原件的跨时间证据。在本文中，我们提出了学习高斯结构（Learning Gaussian Structure, LGS）框架，该框架增强了高斯结构和原件属性。我们的关键观察是，由于修剪或添加干预引起的局部梯度响应的变化揭示了相应的结构调整是否有利于重建。基于这一观察，我们的高斯密集化策略学习一个包含修剪和添加评分的密集化图，从受控干预中直接调整高斯结构。在推理过程中，我们进一步开发了一个紧凑的跨时间点查询，明确检索和聚合来自其他时间戳的高斯原件的邻近特征，以实现可靠的属性预测。在Waymo开放数据集和PandaSet上的大量实验表明，LGS始终优于现有方法。",

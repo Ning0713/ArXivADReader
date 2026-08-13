@@ -1,0 +1,53 @@
+{
+  "abstract": "Generative models like Diffusion Models and Flow Matching have demonstrated remarkable capabilities in synthesizing high-fidelity driving videos, but are severely constrained by high inference latency due to the requirement of extensive sampling steps. We argue that this inefficiency stems from the prevailing reliance on a standard Gaussian source distribution, where consecutive frames are initialized as independent Gaussian noise. This paradigm disregards the rich spatiotemporal correlations inherent in driving videos, compelling the model to regenerate deterministic scene structures existing in previous frames from noise, which is both computationally redundant and prone to geometric inconsistency. To address this problem, we propose GeoFlow, a novel framework designed to achieve efficient driving video generation by harnessing explicit geometric priors. Instead of sampling from standard Gaussian noise, we leverage multi-view geometry and spatially-adaptive noise injection to construct a Geometry-Aligned Prior (GAP) distribution as starting point. This initialization bridges the gap between source distribution and data distribution, yielding a significantly straighter and shorter sampling trajectory. Extensive experiments demonstrate that GeoFlow can achieve remarkable efficiency of both training and inference: merely several hours of fine-tuning on baseline models can significantly boost few-step generation quality, while fully converged training drastically reduces number of inference steps required for state-of-the-art video generation.",
+  "abstract_zh": "生成模型如扩散模型（Diffusion Models）和流匹配（Flow Matching）在合成高保真驾驶视频方面展现了显著的能力，但由于需要大量采样步骤，推理延迟严重受限。我们认为，这种低效源于对标准高斯源分布的普遍依赖，其中连续帧被初始化为独立的高斯噪声。这一范式忽视了驾驶视频固有的丰富时空相关性，迫使模型从噪声中重新生成先前帧中存在的确定性场景结构，这既计算冗余又容易导致几何不一致。为了解决这个问题，我们提出了GeoFlow，一个旨在通过利用显式几何先验实现高效驾驶视频生成的新框架。我们不再从标准高斯噪声中采样，而是利用多视角几何和空间自适应噪声注入构建几何对齐先验（Geometry-Aligned Prior, GAP）分布作为起始点。这种初始化弥合了源分布与数据分布之间的差距，产生了显著更直且更短的采样轨迹。大量实验表明，GeoFlow在训练和推理方面都能实现显著的效率：仅需在基线模型上进行几小时的微调，即可显著提升少步生成质量，而完全收敛的训练则大幅减少了进行最先进视频生成所需的推理步骤。",
+  "arxiv_id": "2608.12203",
+  "arxiv_url": "https://arxiv.org/abs/2608.12203v1",
+  "authors": [
+    "Jiazheng Liu",
+    "Hang Li",
+    "Jiawei Zhang",
+    "Jiahe Li",
+    "Xiaohan Yu",
+    "Shengyin Fan",
+    "Jin Zheng",
+    "Xiao Bai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-12203",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.068837+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.12203v1",
+  "published_at": "2026-08-12T15:57:08Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.12203v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "本文面向自动驾驶场景的视频生成，提出GeoFlow，通过多视角几何和空间自适应噪声构造几何对齐先验，利用相邻驾驶帧的时空结构减少扩散或流匹配模型的采样路径与推理步数，并提升少步生成的质量和几何一致性。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "GeoFlow: Efficient Driving Video Generation via Geometry-Aligned Priors",
+  "title_zh": "GeoFlow：通过几何对齐先验实现高效的驾驶视频生成",
+  "translation_url": "https://hjfy.top/arxiv/2608.12203"
+}

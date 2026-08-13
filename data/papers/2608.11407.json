@@ -1,0 +1,62 @@
+{
+  "abstract": "Robust traffic simulators are crucial for developing and testing autonomous vehicles to reduce the costly, labor-intensive real-world data collection process and the need for physical presence on the road. However, existing simulators require agents' initial states to generate trajectories, which limits scalability and diversity due to restrictions on the given initial states. While data-driven agent initialization has been widely studied, the generated initial states are not interpretable in terms of why the agents are initialized at those specific locations. Given known initial states, trajectory generation is also a challenging problem, as the model must learn the variability of the destination and how agents should reach it over time. In this paper, we propose TrafficDiffuser, a top-down traffic scenario generation framework that generates high-level traffic scenarios, defined by initial and goal state pairs, by jointly modeling them. The high-level scenario generation makes initial states better interpretable and reduces trajectory generation into as simple as an infilling problem. We demonstrate how the generated high-level traffic scenarios can be used, including constraining based on different trajectory modes and integrating them with existing trajectory generation models. We conduct extensive experiments on the Argoverse 2 motion prediction dataset to evaluate how well the generated outputs capture real-world distributions. In addition to generating goal states, TrafficDiffuser outperforms the next-best approach for agent initialization, reducing speed distribution distance by 55.3% and the off-road rate by 2.8%.",
+  "abstract_zh": "强大的交通模拟器对于开发和测试自动驾驶车辆至关重要，能够减少成本高昂、劳动密集的现实数据收集过程以及在道路上进行实地测试的需求。然而，现有的模拟器需要代理的初始状态来生成轨迹，这限制了可扩展性和多样性，因为对给定初始状态的限制。尽管数据驱动的代理初始化已被广泛研究，但生成的初始状态在解释代理为何在特定位置初始化方面并不直观。在已知初始状态的情况下，轨迹生成也是一个具有挑战性的问题，因为模型必须学习目的地的变化性以及代理应如何随时间到达目的地。在本文中，我们提出了TrafficDiffuser，一个自上而下的交通场景生成框架，通过联合建模初始状态和目标状态对来生成高层次的交通场景。高层次场景生成使得初始状态更具可解释性，并将轨迹生成简化为填充问题。我们展示了生成的高层次交通场景的应用，包括基于不同轨迹模式的约束以及与现有轨迹生成模型的集成。我们在Argoverse 2运动预测数据集上进行了广泛的实验，以评估生成的输出在多大程度上捕捉了现实世界的分布。除了生成目标状态外，TrafficDiffuser在代理初始化方面的表现优于下一最佳方法，将速度分布距离减少了55.3%，将越界率降低了2.8%。",
+  "arxiv_id": "2608.11407",
+  "arxiv_url": "https://arxiv.org/abs/2608.11407v1",
+  "authors": [
+    "Da Saem Lee",
+    "Yash Vardhan Pant",
+    "Sebastian Fischmeister"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-11407",
+  "categories": [
+    "cs.RO",
+    "cs.MA"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.006780+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11407v1",
+  "published_at": "2026-08-11T20:13:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "argoverse",
+      "autonomous",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "motion prediction",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11407v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "Top-down Traffic Scenario Generation via Joint Initial-Goal Diffusion and Trajectory Infilling",
+  "title_zh": "通过联合初始目标扩散与轨迹填充的自上而下交通场景生成",
+  "translation_url": "https://hjfy.top/arxiv/2608.11407"
+}

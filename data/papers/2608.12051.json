@@ -1,0 +1,50 @@
+{
+  "abstract": "Aggregate metrics may not fully reflect performance in insufficiently examined high-risk driving conditions. We propose RISC (Risk-Informed Slice Coverage), a practical protocol for risk-guided stress testing and coverage-qualified evaluation. Risk-guided stress testing directs a finite audit budget toward risk-relevant sub-datasets, called risk slices, while coverage-qualified evaluation reports results together with explicit statements about which slices are sufficiently or insufficiently covered. The protocol translates safety concerns into machine-readable risk slices, uses lightweight signals to tag candidate data, selects a compact audit set by risk, and qualifies the results using coverage evidence. An LLM can optionally support this process by surfacing relevant but potentially overlooked conditions during test planning, thereby helping engineers not to forget the obvious. RISC is model-agnostic and can be applied to perception modules, driving models, and other autonomous-driving subsystems. We instantiate the protocol for monocular pedestrian perception using 1,000 frames from the Zenseact Open Dataset, image statistics, and a YOLO-based detector proxy. In this proof-of-concept study, risk-guided selection increases critical failure discovery from 34.0% under random sampling to 98.5%. RISC provides a lightweight, assurance-oriented evaluation layer that complements scenario categorization, coverage assessment, and broader testing-and-verification workflows.",
+  "abstract_zh": "聚合指标可能无法充分反映在未充分审查的高风险驾驶条件下的性能。我们提出了RISC（基于风险的切片覆盖），这是一种用于风险引导压力测试和覆盖合格评估的实用协议。风险引导压力测试将有限的审计预算指向与风险相关的子数据集，称为风险切片，而覆盖合格评估则报告结果并明确说明哪些切片得到了充分或不足的覆盖。该协议将安全问题转化为机器可读的风险切片，使用轻量级信号标记候选数据，根据风险选择紧凑的审计集，并使用覆盖证据对结果进行资格认证。大型语言模型（LLM）可以选择性地支持这一过程，在测试规划期间揭示相关但可能被忽视的条件，从而帮助工程师不忘显而易见的事情。RISC是模型无关的，可以应用于感知模块、驾驶模型和其他自主驾驶子系统。我们使用来自Zenseact开放数据集的1,000帧图像、图像统计数据和基于YOLO的检测器代理实例化该协议，用于单目行人感知。在这一概念验证研究中，风险引导选择将关键故障发现率从随机抽样下的34.0%提高到98.5%。RISC提供了一个轻量级、面向保障的评估层，补充了场景分类、覆盖评估和更广泛的测试与验证工作流程。",
+  "arxiv_id": "2608.12051",
+  "arxiv_url": "https://arxiv.org/abs/2608.12051v1",
+  "authors": [
+    "Fabian Hüger"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-12051",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.059733+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.12051v1",
+  "published_at": "2026-08-12T13:32:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "pedestrian",
+      "驾驶",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.12051v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "Do Not Forget the Obvious - RISC: A Risk-Informed Slice-Coverage Protocol for Safe Autonomous Driving",
+  "title_zh": "不要忽视显而易见的 - RISC：一种基于风险的切片覆盖协议用于安全自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.12051"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "Driving in the real world is open-world: a car may encounter a fallen mattress, a deer, or other objects outside its training data. Naming them is not enough. The system must know how to treat each region: can it drive over it, and how severe would a collision be? We therefore shift scene perception from category labels to dense action-relevant attributes, where each pixel is labeled by how it should affect motion rather than by object name. We instantiate this general formulation with two ordered attributes: 7-rank drivability and 5-rank vulnerability. We read Qwen3.5 image-token hidden states directly as a spatial semantic representation. A lightweight boundary-aware decoder then turns this coarse token grid into sharp full-resolution attribute maps. The whole process requires neither autoregressive text generation nor an external mask model such as SAM. We train on dense attribute labels built in CARLA and test transfer to real scenes and to novel obstacles never seen in training. We compare with vision-only segmenters trained on the same attributes and prompted VLM segmenters. Our model matches strong vision-only segmenters on familiar categories and improves transfer to real open-world anomalies, reaching 69.4% mean vulnerability-rank recall versus 57.1% for the best vision-only baseline and 53.9% for the best prompted VLM baseline. These results show that VLM image tokens provide useful semantic cues for transferring driving attributes to objects outside the training vocabulary.",
+  "abstract_zh": "现实世界中的驾驶是开放世界的：汽车可能会遇到掉落的床垫、鹿或其他超出其训练数据的物体。仅仅命名这些物体是不够的。系统必须知道如何处理每个区域：它能否驶过，碰撞的严重程度如何？因此，我们将场景感知从类别标签转变为密集的与动作相关的属性，其中每个像素被标记为如何影响运动，而不是物体名称。我们用两个有序属性来具体化这一一般性表述：7级可驾驶性和5级脆弱性。我们直接读取Qwen3.5图像-标记的隐藏状态作为空间语义表示。一个轻量级的边界感知解码器将这个粗略的标记网格转换为清晰的全分辨率属性图。整个过程既不需要自回归文本生成，也不需要外部掩码模型，如SAM。我们在CARLA构建的密集属性标签上进行训练，并测试其在真实场景和从未在训练中见过的新障碍物上的迁移。我们与在相同属性上训练的仅视觉分割器和提示的VLM分割器进行了比较。我们的模型在熟悉类别上与强大的仅视觉分割器相匹配，并改善了对真实开放世界异常的迁移，达到69.4%的平均脆弱性等级召回率，而最佳仅视觉基线为57.1%，最佳提示VLM基线为53.9%。这些结果表明，VLM图像标记为将驾驶属性转移到训练词汇之外的物体提供了有用的语义线索。",
+  "arxiv_id": "2608.11777",
+  "arxiv_url": "https://arxiv.org/abs/2608.11777v1",
+  "authors": [
+    "Yuchen Zhang",
+    "Yuan Gao",
+    "Sebastian Schmidt",
+    "Johannes Betz"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-11777",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.045871+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11777v1",
+  "published_at": "2026-08-12T08:20:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "driving",
+      "car",
+      "驾驶"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 35
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11777v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "VOLA: Improving Open-World Driving by VLM-Based Semantic Attribute Prediction",
+  "title_zh": "VOLA：通过基于VLM的语义属性预测改善开放世界驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.11777"
+}

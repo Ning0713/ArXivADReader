@@ -1,0 +1,51 @@
+{
+  "abstract": "Driving world models are often interpreted as counterfactual simulators for observed driving episodes: given a factual driving log, they are asked what would have happened under an alternative ego action. In this paper, we identify a fundamental mismatch between this goal and direct action-conditioned prediction. The direct prediction uses the shared history and the alternative action but not the factual continuation observed after that history. It can therefore generate a plausible future without preserving what actually happened in this episode. We formalize this gap using the causal recipe of abduction, action, and prediction and study it in a setting with a short time horizon, where the alternative ego action does not alter how surrounding agents evolve. To make the gap measurable, we construct a controlled simulation benchmark with factual outcomes and matched counterfactual outcomes. Across two representative world models, direct predictions fail to match the counterfactual ground truth, supporting our analysis. As a constructive check of this analysis, we introduce a deliberately simple, training-free pipeline that moves observed evidence into the counterfactual view and lets the frozen model complete what remains unknown. Even this simple construction raises the overall recovered fraction substantially and reduces perceptual distance to the matched counterfactual on both models. We hope this work draws attention to this gap and motivates better counterfactual prediction methods for driving world models.",
+  "abstract_zh": "驾驶世界模型通常被解释为观察到的驾驶情境的反事实模拟器：给定一个事实驾驶日志，它们被要求预测在替代自我行为下会发生什么。在本文中，我们识别出这一目标与直接基于行为的预测之间的根本不匹配。直接预测使用共享的历史和替代行为，但不使用在该历史之后观察到的事实延续。因此，它可以生成一个合理的未来，而不保留在这一情境中实际发生的事情。我们使用溯因、行动和预测的因果框架形式化这一差距，并在一个短时间范围内的设置中研究它，在该设置中，替代自我行为不会改变周围代理的演变。为了使这一差距可测量，我们构建了一个具有事实结果和匹配反事实结果的受控仿真基准。在两个代表性的世界模型中，直接预测未能与反事实真实情况匹配，从而支持我们的分析。作为对这一分析的建设性检验，我们引入了一个故意简单的、无训练的流程，将观察到的证据转移到反事实视角，并让冻结的模型完成剩余的未知部分。即便是这个简单的构造也显著提高了整体恢复比例，并减少了两个模型与匹配反事实之间的感知距离。我们希望这项工作能引起对这一差距的关注，并激励更好的反事实预测方法用于驾驶世界模型。",
+  "arxiv_id": "2608.11601",
+  "arxiv_url": "https://arxiv.org/abs/2608.11601v1",
+  "authors": [
+    "Jiaru Zhang",
+    "Can Cui",
+    "Yi Xu",
+    "Xin Ye",
+    "Ruqi Zhang",
+    "Ziran Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-11601",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.032035+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11601v1",
+  "published_at": "2026-08-12T03:19:59Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11601v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "本文研究自动驾驶世界模型的反事实预测能力，指出常见的动作条件生成并不等同于针对具体驾驶情境的因果反事实推断。作者利用“溯因—行动—预测”框架阐明问题，构建包含事实与匹配反事实真值的受控仿真基准，并证明代表性世界模型的直接预测存在明显偏差。进一步提出一种无需训练的证据迁移与模型补全流程，可提升反事实信息恢复效果并降低感知误差。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "仿真/数据",
+      "预测/规划"
+    ]
+  },
+  "title": "How Can Driving World Models Do Counterfactual Prediction?",
+  "title_zh": "驾驶世界模型如何进行反事实预测？",
+  "translation_url": "https://hjfy.top/arxiv/2608.11601"
+}

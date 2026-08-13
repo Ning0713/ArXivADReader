@@ -1,0 +1,55 @@
+{
+  "abstract": "Cross-modal place recognition (CMPR) aims to identify the same location across heterogeneous sensing modalities, such as vision and LiDAR. Existing methods commonly bridge the modality gap using complex alignment modules, multi-stage training, or full fine-tuning of pretrained backbones. In this work, we revisit CMPR from the perspective of geometric consistency and propose GeoUniPR, a unified and concise geometry-consistent framework. GeoUniPR reduces cross-modal discrepancy at the representation level by projecting LiDAR point clouds into the camera perspective to construct Geometry-Consistent depth image views (DIV), which establish direct RGB-LiDAR correspondence. We further augment DIV with native LiDAR cues, including intensity and surface-normal information, yielding a multi-channel geometric representation that improves structural consistency. Based on this representation, GeoUniPR learns a unified embedding space using two modality-specific ViT-based encoders with identical architectures, trained through parameter-efficient adaptation without auxiliary alignment modules, multi-stage training, or full backbone fine-tuning. In addition, we introduce Spatially-Consistent InfoNCE (SC-InfoNCE), a CMPR-specific contrastive objective that suppresses distance-induced false negatives under spatial continuity. Extensive experiments on KITTI and KITTI-360 demonstrate that GeoUniPR achieves state-of-the-art (SOTA) performance in both same-modal and cross-modal place recognition, with strong cross-dataset generalization.",
+  "abstract_zh": "跨模态地点识别（CMPR）旨在识别不同传感模态（如视觉和激光雷达）下的同一位置。现有方法通常通过复杂的对齐模块、多阶段训练或对预训练骨干网络的全面微调来弥合模态差异。在本研究中，我们从几何一致性的角度重新审视CMPR，并提出GeoUniPR，一个统一且简洁的几何一致框架。GeoUniPR通过将激光雷达点云投影到相机视角，构建几何一致的深度图像视图（DIV），从而在表示层面减少跨模态差异，建立直接的RGB-激光雷达对应关系。我们进一步利用原生激光雷达线索（包括强度和表面法线信息）增强DIV，生成多通道几何表示，从而改善结构一致性。基于此表示，GeoUniPR使用两个具有相同架构的模态特定ViT编码器学习统一的嵌入空间，通过参数高效的适应训练，而无需辅助对齐模块、多阶段训练或全面的骨干微调。此外，我们引入空间一致信息对比损失（SC-InfoNCE），这是一个针对CMPR的特定对比目标，能够抑制因距离引起的空间连续性下的假负样本。在KITTI和KITTI-360上的大量实验表明，GeoUniPR在同模态和跨模态地点识别中均实现了最新的（SOTA）性能，并具有强大的跨数据集泛化能力。",
+  "arxiv_id": "2608.11263",
+  "arxiv_url": "https://arxiv.org/abs/2608.11263v1",
+  "authors": [
+    "Wonbong Kim",
+    "Jiatong Xiao",
+    "Rui Li",
+    "Xufei Wang",
+    "Qiwen Gu",
+    "Junqiao Zhao",
+    "Chen Ye",
+    "Guang Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-11263",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.018813+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11263v1",
+  "published_at": "2026-08-10T03:52:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "kitti-360",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11263v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "GeoUniPR: A Geometry-Consistent Unified Framework for Cross-Modal Place Recognition",
+  "title_zh": "GeoUniPR：一个几何一致的跨模态地点识别统一框架",
+  "translation_url": "https://hjfy.top/arxiv/2608.11263"
+}

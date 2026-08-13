@@ -1,0 +1,58 @@
+{
+  "abstract": "Modern end-to-end driving agents can achieve high average performance yet still violate basic traffic rules that a human driver would never miss. The reason is structural: they learn statistical patterns rather than the physical conditions that guarantee safe driving, leaving their decision-making process opaque and safety constraints unenforced. We introduce a neuro-symbolic safety guard, a lightweight module that attaches to the final command interface of an already-trained agent. Immediately before a command reaches the vehicle, it checks the command against explicit safety rules and, only when necessary, replaces it with the nearest safe alternative. Each intervention is directly executable and traceable to the rule that triggered it, while the guard itself requires no retraining and adds no learned component. Evaluated on the long-tail benchmarks Fail2Drive and Bench2Drive using the state-of-the-art TransFuser v6 (TFv6) as a case study, the guard improves Success Rate by 15% and reduces safety-critical collisions by up to 53%, while preserving the original Driving Score.",
+  "abstract_zh": "现代端到端驾驶代理能够实现高平均性能，但仍然会违反人类驾驶员绝不会忽视的基本交通规则。其原因在于结构性：它们学习的是统计模式，而非确保安全驾驶的物理条件，这使得它们的决策过程不透明，安全约束未得到执行。我们提出了一种神经符号安全守卫，这是一种轻量级模块，附加在已训练代理的最终指令接口上。在指令到达车辆之前，它会根据明确的安全规则检查该指令，只有在必要时，才会将其替换为最近的安全替代方案。每次干预都是可直接执行的，并且可以追溯到触发它的规则，而安全守卫本身无需重新训练，也不增加任何学习组件。在使用最先进的TransFuser v6 (TFv6)作为案例研究的长尾基准Fail2Drive和Bench2Drive上进行评估时，安全守卫将成功率提高了15%，并将安全关键碰撞减少了多达53%，同时保持了原始驾驶评分。",
+  "arxiv_id": "2608.11451",
+  "arxiv_url": "https://arxiv.org/abs/2608.11451v1",
+  "authors": [
+    "Simón Patiño Idarraga",
+    "Erick Silva",
+    "Rehana Yasmin",
+    "Ali Shoker"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-11451",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.008621+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11451v1",
+  "published_at": "2026-08-11T21:27:27Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11451v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "Herding End-to-End Autonomous Driving via Neuro-Symbolic Safety Guards",
+  "title_zh": "通过神经符号安全守卫实现端到端自主驾驶的群体行为",
+  "translation_url": "https://hjfy.top/arxiv/2608.11451"
+}

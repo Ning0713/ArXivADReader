@@ -1,0 +1,63 @@
+{
+  "abstract": "Autonomous driving simulation requires diverse and scalable lane-level HD maps to support long-horizon evaluation across complex road networks. Existing approaches either rely on handcrafted or reconstructed real-world maps, which limits scalability, or generate only local road structures rather than complete HD maps. We present RoadWeaver, a coarse-to-fine framework for from-scratch generation of diverse, large-scale HD maps. RoadWeaver first synthesizes a global road layout, expands it into a connected road network, and then constructs lane-level geometry with topologically consistent lane connectivity. Experimental results show that RoadWeaver achieves a 99.8\\% reachability, a 10.7\\% dead-end ratio, and an endpoint alignment error of 0.24 m. Compared with SOTA generation methods, it reduces endpoint alignment error by 94.4\\% while generating complete HD maps in 1.39--3.50 s. The generated maps can be directly deployed in driving simulators, providing scalable simulation environments for future closed-loop evaluation of autonomous driving systems. The training code and an out-of-the-box implementation of RoadWeaver will be released upon acceptance.",
+  "abstract_zh": "自动驾驶仿真需要多样化且可扩展的车道级高清地图，以支持在复杂道路网络中的长时间评估。现有的方法要么依赖于手工制作或重建的真实世界地图，这限制了可扩展性，要么仅生成局部道路结构而非完整的高清地图。我们提出了RoadWeaver，一个从零开始生成多样化、大规模高清地图的粗到细框架。RoadWeaver首先合成全球道路布局，将其扩展为一个连接的道路网络，然后构建具有拓扑一致车道连通性的车道级几何形状。实验结果表明，RoadWeaver实现了99.8%的可达性，10.7%的死胡同比例，以及0.24米的端点对齐误差。与最先进的生成方法相比，它将端点对齐误差降低了94.4%，同时在1.39至3.50秒内生成完整的高清地图。生成的地图可以直接部署在驾驶模拟器中，为未来自动驾驶系统的闭环评估提供可扩展的仿真环境。RoadWeaver的训练代码和即插即用的实现将在论文接受后发布。",
+  "arxiv_id": "2608.11580",
+  "arxiv_url": "https://arxiv.org/abs/2608.11580v1",
+  "authors": [
+    "Yueyuan Li",
+    "Zexi Chen",
+    "Weijie Xi",
+    "Mingyang Jiang",
+    "Songan Zhang",
+    "Hanyang Zhuang",
+    "Ming Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-11580",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.010383+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11580v1",
+  "published_at": "2026-08-12T02:39:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "road",
+      "lane",
+      "驾驶",
+      "道路",
+      "车道",
+      "hd map"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11580v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "RoadWeaver: Large-Scale Lane-Level HD Map Generation from Scratch for Autonomous Driving Simulation",
+  "title_zh": "RoadWeaver：从零开始生成大规模车道级高清地图以支持自动驾驶仿真",
+  "translation_url": "https://hjfy.top/arxiv/2608.11580"
+}

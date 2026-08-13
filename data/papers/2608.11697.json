@@ -1,0 +1,56 @@
+{
+  "abstract": "In real pigsty environments, pig point clouds often come into close contact with background structures, resulting in blurred target boundaries, local adhesion, and background mis-segmentation. This reduces the accuracy of subsequent point cloud completion and body size measurement. To address these challenges, this study proposes a pig point cloud segmentation method based on boundary feature analysis. The proposed method adopts Octree Transformer as the backbone network and integrates local geometric details with global semantic context through octree convolution, self-attention encoding, and multi-scale feature fusion. Furthermore, soft-distance boundary pseudo-labels are generated to provide continuous boundary supervision, and a bidirectional cross-boundary semantic module is designed to enable explicit interaction between boundary and semantic features. Experiments conducted on a comprehensive dataset demonstrate that the proposed method significantly outperforms various state-of-the-art models in terms of segmentation accuracy, mean intersection over union, and boundary delineation. The results indicate that the method effectively alleviates boundary adhesion, providing reliable point cloud inputs for downstream precision livestock farming tasks.",
+  "abstract_zh": "在实际猪舍环境中，猪点云常常与背景结构紧密接触，导致目标边界模糊、局部粘连和背景误分割。这降低了后续点云补全和体型测量的准确性。为了解决这些挑战，本研究提出了一种基于边界特征分析的猪点云分割方法。该方法采用Octree Transformer作为主干网络，通过八叉树卷积、自注意力编码和多尺度特征融合，将局部几何细节与全局语义上下文相结合。此外，生成软距离边界伪标签以提供连续的边界监督，并设计了双向跨边界语义模块，以实现边界与语义特征之间的显式交互。在一个综合数据集上进行的实验表明，该方法在分割准确性、平均交并比和边界描绘方面显著优于多种最先进的模型。结果表明，该方法有效缓解了边界粘连，为下游精细化养殖任务提供了可靠的点云输入。",
+  "arxiv_id": "2608.11697",
+  "arxiv_url": "https://arxiv.org/abs/2608.11697v1",
+  "authors": [
+    "Zhankang Xu",
+    "Fei Shi",
+    "Xiangyu Qi",
+    "Zhaoyang Wang",
+    "Mengxin Guo",
+    "Yikai Fan",
+    "Simon X. Yang",
+    "Qifeng Li",
+    "Weihong Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-11697",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.039228+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11697v1",
+  "published_at": "2026-08-12T06:15:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "intersection",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11697v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "Boundary-Enhanced Segmentation of Pig Point Clouds in Commercial Housing Environments",
+  "title_zh": "商业养殖环境中猪点云的边界增强分割",
+  "translation_url": "https://hjfy.top/arxiv/2608.11697"
+}

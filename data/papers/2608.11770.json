@@ -1,0 +1,51 @@
+{
+  "abstract": "Edge-deployed vision systems in target recognition, surveillance, autonomous vehicles, and drone domains require hierarchical inference pipelines where a detection model identifies objects of interest and downstream classifiers provide fine-grained attribute analysis. Running all models on the GPU creates a serial bottleneck that limits real-time throughput as pipeline stages grow. Modern edge SoCs pair GPUs with dedicated neural accelerators (NPUs, DLAs) capable of concurrent execution, yet deploying custom models on these accelerators remains impractical due to strict operator constraints, quantization incompatibilities, and an undocumented end-to-end pipeline. We target NVIDIA Jetson DLA cores as the representative platform. We present a five-step methodology for zero GPU fallback DLA INT8 deployment of classification backbones, comprising architecture adaptation, manual dynamic range workaround to rescue TensorRT's implicit quantization (recovering 94.0% accuracy from implicit quantization's 75%) for rapid pipeline validation before explicit quantization, quantization-aware training, ONNX graph surgery for DLA compilation, and a concurrent GPU-detection/DLA-classification inference pipeline. We document nine engineering constraints with root-cause analysis and generalizable solutions. Validation on a dual-head person attribute classifier running on DLA alongside a GPU object detector on a Jetson Orin NX demonstrates near-zero pipeline overhead (12.5 vs. 13.3~FPS detector-only at 1080p), with dual-DLA scaling at no additional cost. The methodology is backbone-agnostic and generalizes to any detection-classification edge pipeline.",
+  "abstract_zh": "在目标识别、监控、自动驾驶汽车和无人机领域，边缘部署的视觉系统需要层次推理管道，其中检测模型识别感兴趣的对象，下游分类器提供细粒度的属性分析。在GPU上运行所有模型会造成串行瓶颈，限制了随着管道阶段增长而实现的实时吞吐量。现代边缘系统芯片（SoCs）将GPU与专用神经加速器（NPUs, DLAs）配对，能够并发执行，但由于严格的操作符限制、量化不兼容性以及未记录的端到端管道，在这些加速器上部署自定义模型仍然不切实际。我们以NVIDIA Jetson DLA核心作为代表平台。我们提出了一种五步方法，旨在实现分类骨干网络的零GPU回退DLA INT8部署，包括架构适配、手动动态范围解决方案以拯救TensorRT的隐式量化（从隐式量化的75%恢复94.0%的准确率），以便在显式量化之前快速验证管道、量化感知训练、用于DLA编译的ONNX图修剪，以及并发的GPU检测/DLA分类推理管道。我们记录了九个工程约束，并进行了根本原因分析和可推广的解决方案。在Jetson Orin NX上运行的双头人属性分类器与GPU目标检测器的验证显示，管道开销近乎为零（1080p下检测器仅为12.5 vs. 13.3~FPS），且双DLA扩展没有额外成本。该方法与骨干网络无关，适用于任何检测-分类边缘管道。",
+  "arxiv_id": "2608.11770",
+  "arxiv_url": "https://arxiv.org/abs/2608.11770v1",
+  "authors": [
+    "Vaishnav Raju"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-11770",
+  "categories": [
+    "cs.CV",
+    "cs.DC",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.045276+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11770v1",
+  "published_at": "2026-08-12T08:14:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "驾驶",
+      "drone",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 66
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11770v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "端到端驾驶"
+    ]
+  },
+  "title": "Achieving Near-Zero-Overhead Multi-Model Hierarchical Classification in Real-Time Detection Pipelines",
+  "title_zh": "在实时检测管道中实现近零开销的多模型层次分类",
+  "translation_url": "https://hjfy.top/arxiv/2608.11770"
+}

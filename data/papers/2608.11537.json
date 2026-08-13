@@ -1,0 +1,53 @@
+{
+  "abstract": "Generative semantic segmentation exposes structured predictions as images, but direct color decoding is susceptible to color drift and boundary mixing, whereas latent-feature decoders that predict a separate output distribution may relegate the rendered image to an intermediate visualization. We present Semantic Prism, a conditional semantic-image generation-and-refinement framework with deterministic inference. A diffusion-distilled one-step generator renders a semantic RGB image; per-pixel distances from the rendered colors to a fixed class-color codebook define an explicit probabilistic interface. Hierarchical Generator Evidence Alignment spatially aligns multi-level generator features and uses a zero-initialized output projection to predict an additive residual in the interface logit space, retaining the image-defined interface as the reference for the final distribution. The interface and refined distributions further enable Contextual Interface--Hierarchy Disagreement (C-IHD), a fixed readout for ranking remaining pixel errors without an auxiliary predictor or additional forward pass. On the 500-image Cityscapes validation set, Semantic Prism achieves 72.07% mean intersection over union, 11.39 mIoU points above direct-interface decoding, with 0.41% expected calibration error. Matched-capacity ablations over three seeds support the benefit of jointly aligned multi-level evidence. A separately trained model attains 62.22% mIoU on BDD100K, while the Cityscapes-trained model reaches 46.89\\% mIoU under source-frozen transfer to the Adverse Conditions Dataset with Correspondences, without target-domain adaptation. Across all three datasets, C-IHD consistently improves the area under the precision--recall curve for pixel-error ranking over maximum softmax probability on the same segmentation predictions; on ACDC, it raises AUPR from 0.6580 to 0.7557.",
+  "abstract_zh": "生成语义分割将结构化预测呈现为图像，但直接的颜色解码容易受到颜色漂移和边界混合的影响，而预测单独输出分布的潜在特征解码器可能将渲染图像降级为中间可视化。我们提出了语义棱镜（Semantic Prism），这是一个具有确定性推理的条件语义-图像生成与精炼框架。一个经过扩散蒸馏的一步生成器渲染出语义RGB图像；从渲染颜色到固定类别颜色代码本的每个像素距离定义了一个明确的概率接口。分层生成器证据对齐（Hierarchical Generator Evidence Alignment）在空间上对齐多层生成器特征，并使用零初始化的输出投影来预测接口对数空间中的附加残差，保留图像定义的接口作为最终分布的参考。该接口和精炼分布进一步使得上下文接口-层次不一致（Contextual Interface--Hierarchy Disagreement, C-IHD）成为可能，这是一种固定的读取方式，用于在没有辅助预测器或额外前向传递的情况下对剩余像素错误进行排序。在500幅图像的Cityscapes验证集上，语义棱镜实现了72.07%的平均交并比（mIoU），比直接接口解码高出11.39个mIoU点，预期校准误差为0.41%。在三个种子的匹配容量消融实验中，支持了联合对齐多层证据的好处。一个单独训练的模型在BDD100K上达到了62.22%的mIoU，而在源冻结转移到具有对应关系的逆境条件数据集（Adverse Conditions Dataset）时，Cityscapes训练的模型达到了46.89%的mIoU，且没有目标领域适应。在所有三个数据集上，C-IHD始终提高了像素错误排名下的精确度-召回曲线下的面积（AUPR），相较于同一分割预测的最大softmax概率；在ACDC上，它将AUPR从0.6580提高到0.7557。",
+  "arxiv_id": "2608.11537",
+  "arxiv_url": "https://arxiv.org/abs/2608.11537v1",
+  "authors": [
+    "Weize Cai",
+    "Yongqi Dong",
+    "Zhida Shao",
+    "Zixin Fu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-13#paper-2608-11537",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-08-13T14:44:27.027789+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.11537v1",
+  "published_at": "2026-08-12T01:00:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "bdd100k",
+      "cityscapes",
+      "intersection"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 45
+  },
+  "seen_dates": [
+    "2026-08-13"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.11537v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-13"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "Generative Semantic Segmentation via an Observable Semantic-Image Interface and Hierarchical Generator Evidence Alignment",
+  "title_zh": "通过可观察的语义-图像接口和分层生成器证据对齐的生成语义分割",
+  "translation_url": "https://hjfy.top/arxiv/2608.11537"
+}
