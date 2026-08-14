@@ -1,6 +1,283 @@
 {
-  "generated_at": "2026-08-13T14:45:14.191157+00:00",
+  "generated_at": "2026-08-14T14:35:24.494955+00:00",
   "items": [
+    {
+      "abstract": "Latent video generation relies on autoencoders to define a compact space in which generative models operate. Although video autoencoder architectures have evolved substantially, their latent spaces are still optimized primarily for pixel-level reconstruction and provide limited high-level semantic organization. A reconstruction-optimal latent space, however, need not be well suited to generative modeling. We propose V-RAE, a video representation autoencoder that builds compact generative latents on top of frozen vision foundation model representations. A lightweight temporal pooling module removes temporal redundancy while preserving semantic structure, and a video decoder reconstructs continuous motion from the compressed features. We evaluate V-RAE with four representative frozen encoders on video reconstruction, semantic probing, and class-conditional generation. V-RAE achieves 2.13 rFVD on K600, outperforming all evaluated large-scale pretrained video VAEs. Its latents retain substantially more semantic information than conventional video tokenizer latents. Under matched generation settings, our best variant achieves gFVD scores of 117.86 and 19.16 on UCF101 and K600, respectively, while converging up to 6x faster}. We further show that reconstruction quality alone is insufficient to characterize generative utility and introduce tFVD, a temporal-coherence diagnostic that correlates more reliably with downstream generation quality. Beyond video generation, V-RAE also improves future video prediction on Cityscapes over the Wan 2.2 VAE latent space under matched prediction settings. Taken together, the experiments show that frozen semantic representations can support video reconstruction, generation, and predictive modeling. The project page: https://v-rae.github.io/.",
+      "abstract_zh": "潜在视频生成依赖于自编码器来定义一个紧凑的空间，在该空间中生成模型进行操作。尽管视频自编码器架构已经有了显著的发展，但其潜在空间仍主要针对像素级重建进行优化，提供的高层次语义组织有限。然而，重建最优的潜在空间并不一定适合生成建模。我们提出了V-RAE，一种视频表示自编码器，它在冻结的视觉基础模型表示之上构建紧凑的生成潜在空间。一个轻量级的时间池化模块去除了时间冗余，同时保留了语义结构，而视频解码器则从压缩特征中重建连续运动。我们使用四个代表性的冻结编码器对V-RAE在视频重建、语义探测和类别条件生成上进行了评估。V-RAE在K600上达到了2.13的rFVD，超越了所有评估的大规模预训练视频VAE。其潜在空间保留了比传统视频标记器潜在空间更多的语义信息。在匹配生成设置下，我们的最佳变体在UCF101和K600上分别达到了117.86和19.16的gFVD分数，同时收敛速度快达6倍。我们进一步表明，仅靠重建质量不足以表征生成效用，并引入了tFVD，一种时间一致性诊断工具，与下游生成质量的相关性更为可靠。除了视频生成，V-RAE在匹配预测设置下还改善了Cityscapes上的未来视频预测，相较于Wan 2.2 VAE潜在空间。综合来看，实验表明冻结的语义表示可以支持视频重建、生成和预测建模。项目页面：https://v-rae.github.io/",
+      "authors": [
+        "Minghui Guo",
+        "Shengqiong Wu",
+        "Hao Fei"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.13556",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成"
+      ],
+      "title": "V-RAE: Rethinking Video Latent Spaces for Generation",
+      "title_zh": "V-RAE：重新思考视频潜在空间以进行生成",
+      "url": "/daily/2026-08-14/#paper-2608-13556"
+    },
+    {
+      "abstract": "Efficiently retrieving relevant clips from large-scale driving logs is essential for data curation, model development, and safety analysis. Structured and rule-based retrieval systems can explicitly target driving events, but typically require expert-defined rules, auxiliary data, and multi-stage perception pipelines. Multimodal embedding models offer a simpler and more efficient alternative by representing each video with a single searchable vector. However, general-purpose models often rely on shortcuts from static scene context and struggle to distinguish motion-centric events, such as turning left versus right or accelerating versus decelerating. In this work, we study how to adapt a general-purpose multimodal embedding model to driving-video retrieval. We first fine-tune Qwen3-VL-Embedding on paired clips and reasoning traces from nuReasoning using an InfoNCE objective. While this stage substantially improves overall retrieval, caption supervision alone remains insufficient for fine-grained motion understanding. We therefore introduce TraVEL (Trajectory-Guided Video Embedding Learning), a motion-aware fine-tuning framework that uses ego-trajectory similarity as a reward within Group Relative Policy Optimization. Trajectories serve only as privileged training supervision; retrieval still operates on single-vector video embeddings without ego poses, expert rules, or auxiliary perception outputs. We further construct a driving-video retrieval benchmark from nuReasoning. Experiments show that TraVEL improves motion-centric retrieval across model scales: relative to SFT, it raises longitudinal and lateral mAP by 9.8 and 4.7 points at 2B, with corresponding gains of 7.2 and 1.5 points at 8B. TraVEL thus combines physically grounded supervision with efficient embedding-based search.",
+      "abstract_zh": "从大规模驾驶日志中高效检索相关片段对于数据整理、模型开发和安全分析至关重要。结构化和基于规则的检索系统可以明确针对驾驶事件，但通常需要专家定义的规则、辅助数据和多阶段感知管道。多模态嵌入模型通过用单个可搜索向量表示每个视频，提供了一种更简单和高效的替代方案。然而，通用模型往往依赖于静态场景上下文的捷径，难以区分以运动为中心的事件，例如左转与右转或加速与减速。在本研究中，我们探讨如何将通用多模态嵌入模型适应于驾驶视频检索。我们首先在来自nuReasoning的配对片段和推理轨迹上微调Qwen3-VL-Embedding，使用InfoNCE目标。尽管这一阶段显著提高了整体检索性能，但仅依靠字幕监督仍不足以实现细粒度的运动理解。因此，我们引入了TraVEL（基于轨迹引导的视频嵌入学习），这是一种运动感知的微调框架，利用自我轨迹相似性作为Group Relative Policy Optimization中的奖励。轨迹仅作为特权训练监督；检索仍然在没有自我姿态、专家规则或辅助感知输出的情况下操作于单向量视频嵌入。我们进一步从nuReasoning构建了一个驾驶视频检索基准。实验表明，TraVEL在不同模型规模下改善了以运动为中心的检索：相较于SFT，在2B时提高了纵向和横向mAP分别为9.8和4.7点，在8B时相应提高了7.2和1.5点。因此，TraVEL将物理基础的监督与高效的基于嵌入的搜索相结合。",
+      "authors": [
+        "Yi-Chung Chen",
+        "Philip Jacobson",
+        "Tom Lampo",
+        "Yiren Lu",
+        "Jin Yao",
+        "David I. Inouye",
+        "Jing Gao",
+        "Danhua Guo",
+        "Burhan Yaman"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.13495",
+      "tags": [
+        "仿真/数据",
+        "VLM/VLA"
+      ],
+      "title": "TraVEL: Trajectory-Guided Video Embedding Learning for Driving-Video Retrieval",
+      "title_zh": "TraVEL：基于轨迹引导的视频嵌入学习用于驾驶视频检索",
+      "url": "/daily/2026-08-14/#paper-2608-13495"
+    },
+    {
+      "abstract": "We propose Symmetric Nonlinear Motion-guided Generative Video Frame Interpolation (SNM-VFI), a training-free framework for motion-controllable generative video frame interpolation with pre-trained optical flow and video diffusion models. Unlike conventional diffusion-based VFI methods that synthesize intermediate frames from random noise, SNM-VFI guides the generative process with correspondence-aware frames produced by a symmetric nonlinear motion model. Specifically, we first utilize a pre-trained optical flow model to construct multi-frame nonlinear flow-based intermediate frames and confidence maps. These flow-guided frames are then encoded as latent priors to initialize and iteratively guide a pre-trained Video Diffusion model, enabling the diffusion model to preserve dense motion correspondence while improving perceptual realism. To further enhance output quality, we employ confidence maps to fuse structurally reliable flow-based predictions with diffusion-generated details in uncertain regions such as occlusions and object boundaries. Extensive evaluations on challenging benchmarks, including DAVIS, Sintel, and KITTI, demonstrate that SNM-VFI achieves strong perceptual quality, competitive reconstruction accuracy, and robust temporal coherence across diverse motion scenarios.",
+      "abstract_zh": "我们提出了对称非线性运动引导的生成视频帧插值（SNM-VFI），这是一个无需训练的框架，旨在实现可控运动的生成视频帧插值，利用预训练的光流和视频扩散模型。与传统的基于扩散的视频帧插值（VFI）方法不同，后者是从随机噪声合成中间帧，SNM-VFI通过对称非线性运动模型生成的对应感知帧来引导生成过程。具体而言，我们首先利用预训练的光流模型构建多帧非线性流基础的中间帧和置信度图。这些流引导的帧随后被编码为潜在先验，以初始化并迭代引导预训练的视频扩散模型，从而使扩散模型能够在提高感知真实感的同时保持密集的运动对应关系。为了进一步提升输出质量，我们采用置信度图将结构上可靠的流基础预测与在不确定区域（如遮挡和物体边界）中生成的扩散细节融合。对包括DAVIS、Sintel和KITTI在内的挑战性基准的广泛评估表明，SNM-VFI在多样化运动场景中实现了强大的感知质量、竞争性的重建精度和稳健的时间一致性。",
+      "authors": [
+        "Jisoo Jeong",
+        "Hong Cai",
+        "Jamie Menjay Lin",
+        "Hanno Ackermann",
+        "Hyeonjun Sim",
+        "Yinhao Zhu",
+        "Yunxiao Shi",
+        "Fatih Porikli"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.13460",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成",
+        "感知"
+      ],
+      "title": "SNM-VFI: Symmetric Nonlinear Motion-Guided Generative Video Frame Interpolation",
+      "title_zh": "SNM-VFI：对称非线性运动引导的生成视频帧插值",
+      "url": "/daily/2026-08-14/#paper-2608-13460"
+    },
+    {
+      "abstract": "Reinforcement learning improves autonomous-driving vision-language-action (VLA) models by evaluating trajectories sampled from the current policy. Group relative policy optimization (GRPO) learns from reward differences within each rollout group. When all sampled trajectories are poor, this relative signal can rank failures without identifying behavior outside the failed region. We introduce FIRE-VLA, a failure-informed self-evolution framework that converts such unresolved failures into privileged supervision for the next policy. Low-reward, low-diversity groups trigger self-distillation from a frozen round-start copy of the same model. Teacher and student have the same parameter scale, but only the teacher observes the hidden future trajectory. Supervision follows the student's generated prefix and is restricted to answer tokens, while GRPO remains active for every group. The updated policy supplies the teacher for the next round, allowing the routed failure distribution to change with the policy without requiring a larger external teacher. Starting from the same Qwen2.5-VL-3B SFT checkpoint, the comparison matches student rollout and policy-update counts. On 6,019 examples from 150 held-out nuScenes scenes, FIRE-VLA retains comparable single-sample planning, reduces G=4 mean L2 from 1.848 to 1.500 m, and lowers evaluation-persistent failure prevalence from 13.03% to 11.20%. The reduction in mean error arises mainly from rare severe rollouts rather than uniform improvement across ordinary trajectories.",
+      "abstract_zh": "强化学习通过评估当前策略下采样的轨迹来改善自动驾驶视觉-语言-动作（VLA）模型。组相对策略优化（GRPO）从每个回合组内的奖励差异中学习。当所有采样的轨迹表现不佳时，这种相对信号可以对失败进行排名，但无法识别失败区域外的行为。我们提出了FIRE-VLA，一种面向失败的自我演化框架，将这些未解决的失败转化为下一策略的特权监督。低奖励、低多样性组触发从同一模型的冻结回合开始副本进行自我蒸馏。教师和学生具有相同的参数规模，但只有教师观察隐藏的未来轨迹。监督遵循学生生成的前缀，并限制在回答标记上，同时GRPO对每个组保持活跃。更新后的策略为下一轮提供教师，使得路由的失败分布能够随着策略的变化而变化，而无需更大的外部教师。从相同的Qwen2.5-VL-3B SFT检查点开始，比较匹配学生的回合和策略更新计数。在来自150个保留nuScenes场景的6,019个示例中，FIRE-VLA保持了可比的单样本规划，将G=4的平均L2从1.848降低到1.500米，并将评估持久性失败的发生率从13.03%降低到11.20%。平均误差的减少主要源于罕见的严重回合，而不是普通轨迹的均匀改善。",
+      "authors": [
+        "Hao Dou"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.13395",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "世界模型/生成"
+      ],
+      "title": "FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving",
+      "title_zh": "FIRE-VLA：面向失败的自我演化框架在自动驾驶中的视觉-语言-动作模型",
+      "url": "/daily/2026-08-14/#paper-2608-13395"
+    },
+    {
+      "abstract": "Camera-based autonomous driving perception requires a shared representation that preserves metric 3D structure across synchronized multi-camera streams. However, existing image-based frameworks often rely on backbones pretrained for semantic recognition, and introduce 3D geometry through downstream task-specific modules. As a result, their shared representations may fail to preserve explicit metric geometry and consistent 3D scene structure. In this paper, we present a Geometry-grounded Unified 3D Perception (GeoUP) framework that adapts the reconstruction-oriented latent of VGGT to calibrated, streaming multi-camera driving scenes. GeoUP factorizes cross-image interaction into self, temporal, and view attention to capture structurally distinct temporal and cross-view correspondences. It further injects calibration-aware raymap encodings to provide metric scale and camera geometry. The resulting geometry-grounded latent is decoded for metric depth estimation, 3D object detection, and semantic occupancy prediction, corresponding to surface-, instance-, and volume-level readouts of the same 3D scene. Through joint multi-task and multi-dataset training, GeoUP effectively leverages heterogeneous annotations and generalizes across diverse sensor configurations and perception ranges. Extensive experiments on nuScenes, Argoverse 2, Waymo, KITTI, and DDAD demonstrate that GeoUP achieves SOTA performance across detection, occupancy, and depth estimation. These results validate the effectiveness of geometry-grounded representations for unified 3D driving perception.",
+      "abstract_zh": "基于摄像头的自动驾驶感知需要一种共享表示，该表示能够在同步的多摄像头流中保持度量三维结构。然而，现有的基于图像的框架通常依赖于为语义识别预训练的主干网络，并通过下游任务特定模块引入三维几何。因此，它们的共享表示可能无法保持明确的度量几何和一致的三维场景结构。在本文中，我们提出了一种基于几何的统一三维感知框架（Geometry-grounded Unified 3D Perception, GeoUP），该框架将面向重建的VGGT潜在表示适应于标定的、流式的多摄像头驾驶场景。GeoUP将跨图像交互分解为自我、时间和视角注意力，以捕捉结构上不同的时间和跨视角对应关系。它进一步注入了考虑标定的光线图编码，以提供度量尺度和摄像机几何。最终得到的基于几何的潜在表示被解码用于度量深度估计、三维物体检测和语义占用预测，分别对应于同一三维场景的表面级、实例级和体积级读数。通过联合多任务和多数据集训练，GeoUP有效利用异构注释，并在不同传感器配置和感知范围内实现泛化。在nuScenes、Argoverse 2、Waymo、KITTI和DDAD上的大量实验表明，GeoUP在检测、占用和深度估计方面达到了最先进的性能。这些结果验证了基于几何的表示在统一三维驾驶感知中的有效性。",
+      "authors": [
+        "Longfei Xu",
+        "Xiaohui Wang",
+        "Zehao Huang",
+        "Han Li",
+        "Ya Yang",
+        "Naiyan Wang",
+        "Si Liu"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.13147",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "BEV/Occupancy"
+      ],
+      "title": "Geometry-Grounded Unified 3D Perception for Autonomous Driving",
+      "title_zh": "基于几何的统一三维感知在自动驾驶中的应用",
+      "url": "/daily/2026-08-14/#paper-2608-13147"
+    },
+    {
+      "abstract": "Dense metric depth prediction from cameras and millimeter-wave radar offers a cost-effective sensing solution for autonomous systems. However, radar measurements are inherently sparse and susceptible to clutter, multipath reflections, and projection errors. While aggregating multiple radar frames provides denser metric cues, it also introduces temporal misalignment and dynamic-object interference. Directly propagating such unreliable measurements can therefore corrupt large regions of the predicted depth map. To address this issue, we propose RbFT-Net, an end-to-end rectify-before-fuse framework for multi-frame 4D radar-camera depth completion. Rather than assuming accumulated radar returns to be accurate, RbFT-Net treats them as noisy temporal anchor candidates. An image-conditioned rectification module jointly corrects their image-plane locations and metric depths while estimating pointwise reliability. The rectified anchors are then selectively propagated before high-level multi-modal fusion, suppressing the influence of unreliable measurements. Experiments on ZJU-4DRadarCam and a newly collected 4D radar-camera-LiDAR dataset show that RbFT-Net consistently outperforms the evaluated independent radar-camera methods and remains competitive with plug-in pipelines using auxiliary monocular depth models. Cross-platform evaluation and component analyses further support the effectiveness of the proposed rectification and reliability-aware propagation strategy.",
+      "abstract_zh": "来自相机和毫米波雷达的密集度量深度预测为自主系统提供了一种具有成本效益的传感解决方案。然而，雷达测量本质上是稀疏的，并且容易受到杂波、多路径反射和投影误差的影响。虽然聚合多个雷达帧可以提供更密集的度量线索，但这也引入了时间对齐问题和动态物体干扰。因此，直接传播这些不可靠的测量可能会破坏预测深度图的大区域。为了解决这个问题，我们提出了RbFT-Net，一种端到端的先校正后融合框架，用于多帧4D雷达-相机深度补全。RbFT-Net并不假设累积的雷达返回是准确的，而是将其视为噪声时间锚点候选。一个基于图像的校正模块共同校正它们的图像平面位置和度量深度，同时估计逐点可靠性。然后，在高层次的多模态融合之前，选择性地传播校正后的锚点，从而抑制不可靠测量的影响。在ZJU-4DRadarCam和新收集的4D雷达-相机-LiDAR数据集上的实验表明，RbFT-Net在评估的独立雷达-相机方法中始终表现优于其他方法，并且在使用辅助单目深度模型的插件管道中保持竞争力。跨平台评估和组件分析进一步支持了所提出的校正和可靠性感知传播策略的有效性。",
+      "authors": [
+        "Wentao Zhao",
+        "Shouxuan Wu",
+        "Yongtao Cen",
+        "Tianchen Deng",
+        "Yuyang Zhang",
+        "Jingchuan Wang"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.13102",
+      "tags": [
+        "多传感器融合",
+        "Radar",
+        "深度/几何"
+      ],
+      "title": "RbFT-Net: Rectify-Before-Fuse Temporal Radar Anchors for 4D Radar-Camera Depth Completion",
+      "title_zh": "RbFT-Net：用于4D雷达-相机深度补全的先校正后融合时间雷达锚点",
+      "url": "/daily/2026-08-14/#paper-2608-13102"
+    },
+    {
+      "abstract": "Traffic video understanding has become an important problem in intelligent transportation, as road videos provide direct evidence for accidents, violations, and interactions between vehicles and vulnerable road users. A useful system should explain how a traffic event develops, why it happens, and when the relevant interaction occurs, yet this remains difficult for multimodal large language models (MLLMs) because traffic videos contain sparse events and varied viewpoints. We introduce UniTraffic-Agent, the MR-CAS solution for Track~3 of the 10th AI City Challenge, which includes Traffic Anomaly Reasoning (TAR) and two out-of-domain evaluations: FETV for fisheye traffic events and PSI-VQA for pedestrian intention reasoning. UniTraffic-Agent follows an observe--reason--act--verify workflow that samples timestamped visual evidence, reasons over all questions from the same clip in one request, and converts responses through task-specific action adapters. On the official Public leaderboards, MR-CAS ranks 16th on TAR with a score of 0.5780, 2nd on FETV with 0.4884, and 4th on PSI-VQA with 64.4161. The code is available at https://github.com/Roclp/UniTraffic-Agent.",
+      "abstract_zh": "交通视频理解已成为智能交通中的一个重要问题，因为道路视频为事故、违规行为以及车辆与脆弱道路使用者之间的互动提供了直接证据。一个有效的系统应能够解释交通事件的发展过程、发生原因以及相关互动发生的时间，然而，对于多模态大型语言模型（MLLMs）来说，这仍然是一个挑战，因为交通视频包含稀疏事件和多样化的视角。我们介绍了UniTraffic-Agent，这是第10届AI城市挑战赛第3赛道的MR-CAS解决方案，包含交通异常推理（TAR）和两个域外评估：用于鱼眼交通事件的FETV和用于行人意图推理的PSI-VQA。UniTraffic-Agent遵循观察-推理-行动-验证的工作流程，采样带时间戳的视觉证据，在一次请求中对同一片段的所有问题进行推理，并通过特定任务的行动适配器转换响应。在官方公共排行榜上，MR-CAS在TAR中排名第16，得分为0.5780，在FETV中排名第2，得分为0.4884，在PSI-VQA中排名第4，得分为64.4161。代码可在https://github.com/Roclp/UniTraffic-Agent获取。",
+      "authors": [
+        "Peng Li",
+        "Qianqian Xu",
+        "Shilong Bao",
+        "Yangbangyan Jiang",
+        "Qingming Huang"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.13031",
+      "tags": [
+        "VLM/VLA",
+        "安全/异常",
+        "预测/规划"
+      ],
+      "title": "UniTraffic-Agent: Unified Traffic Video Reasoning for AI City Challenge 2026 Track 3 with Two Out-of-Domain Evaluations",
+      "title_zh": "UniTraffic-Agent：2026年AI城市挑战赛第3赛道的统一交通视频推理，包含两个域外评估",
+      "url": "/daily/2026-08-14/#paper-2608-13031"
+    },
+    {
+      "abstract": "Heterogeneous USV cooperative pursuit in constrained port waterways requires evader interception under navigation, traffic, and role constraints. This paper proposes OGR-MARL, an option-guided residual multi-agent reinforcement learning framework that is decoupled from a specific MARL algorithm. OGR-MARL integrates shared evader belief, role-conditioned option targets, adaptive rule penalties, and residual policy learning, allowing different MARL algorithms to learn corrective actions on top of rule-guided behaviors rather than exploring constrained port environments from scratch. We instantiate OGR-MARL with representative continuous-control MARL backbones, including MADDPG, MATD3, MAPPO, and MASAC, yielding OGR-MADDPG, OGR-MATD3, OGR-MAPPO, and OGR-MASAC. Experiments in an abstract Xiazhimen port-waterway scenario show that the OGR-MASAC instantiation achieves a 75.0% capture rate, promising mission-effective rule compliance, and the best heterogeneous coordination among the tested methods. Without retraining, zero-shot transfer to a QGIS/AIS-informed Xiazhimen map achieves promising results, demonstrating the generalization potential of OGR-MARL in more complex port scenarios.",
+      "abstract_zh": "在受限港口水道中，异构无人水面艇的协同追击需要在导航、交通和角色约束下进行逃逸者拦截。本文提出了OGR-MARL，一种与特定多智能体强化学习（MARL）算法解耦的基于选项引导的残差多智能体强化学习框架。OGR-MARL整合了共享的逃逸者信念、角色条件的选项目标、自适应规则惩罚和残差策略学习，使不同的MARL算法能够在规则引导的行为基础上学习纠正动作，而不是从头探索受限的港口环境。我们使用代表性的连续控制MARL骨干网络实例化OGR-MARL，包括MADDPG、MATD3、MAPPO和MASAC，分别得到OGR-MADDPG、OGR-MATD3、OGR-MAPPO和OGR-MASAC。在一个抽象的下支门港口水道场景中的实验表明，OGR-MASAC实例化实现了75.0%的捕获率，展现了有效的任务规则遵循和最佳的异构协调能力。在不进行再训练的情况下，零样本迁移到基于QGIS/AIS的信息下支门地图取得了良好的结果，展示了OGR-MARL在更复杂港口场景中的泛化潜力。",
+      "authors": [
+        "Mao Jiayang",
+        "Wang Lanfeng",
+        "Peng Zhao-Han"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.12995",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "OGR-MARL: Option-Guided Residual Multi-Agent Reinforcement Learning for Heterogeneous USV Cooperative Pursuit in Constrained Port Waterways",
+      "title_zh": "OGR-MARL：基于选项引导的残差多智能体强化学习在受限港口水道中异构无人水面艇协同追击的应用",
+      "url": "/daily/2026-08-14/#paper-2608-12995"
+    },
+    {
+      "abstract": "Vision-Language-Action (VLA) models promise to bring end-to-end reasoning to autonomous driving, but their computational cost remains far too high for real-time control. The core challenge is structural: VLA inference is not a single bottleneck but a cascade of four. Visual encoding wastes compute on overlapping video frames; language-model prefill recomputes context that could be carried over from the previous timestep; reasoning tokens are generated serially despite low entropy; and flow-matching denoising applies uniform compute to a non-uniform velocity field. Addressing any one stage in isolation leaves the others untouched. We propose FlashDrive, an algorithm-system co-design framework that targets all four stages simultaneously. Our key insight is that each bottleneck admits a distinct, lightweight algorithmic shortcut: temporal overlap enables streaming KV-cache reuse across frames; the low per-token entropy and strong intra-block correlations of driving-domain reasoning make a non-autoregressive diffusion drafter highly effective for speculative decoding; and the velocity field's structure---sharp at the endpoints, flat in the middle---permits adaptive step caching that concentrates compute where it matters. Layered on system-level CUDA Graph compilation and kernel fusion, these techniques compound. Applied to Alpamayo 1.5-10B with W4A8 quantization, FlashDrive reduces end-to-end latency from 717ms to 151ms (4.7x) while leaving accuracy essentially unchanged: [email protected] shifts by only 0.08m, minADE1 improves, and closed-loop collision and off-road rates improve in simulation. By raising a 10B-parameter reasoning VLA from 1.4~Hz to 6.6~Hz on a single GPU, FlashDrive moves end-to-end autonomous driving substantially closer to real-time deployment.",
+      "abstract_zh": "视觉-语言-动作（VLA）模型有望为自主驾驶带来端到端推理，但其计算成本仍然过高，无法满足实时控制的需求。核心挑战在于结构性：VLA推理并不是单一的瓶颈，而是四个级联的瓶颈。视觉编码在重叠的视频帧上浪费计算资源；语言模型的预填充重新计算了可以从上一个时间步传递的上下文；推理标记的生成是串行的，尽管其熵较低；流匹配去噪对非均匀速度场应用了均匀的计算。单独解决任何一个阶段会使其他阶段不受影响。我们提出了FlashDrive，一个算法-系统协同设计框架，旨在同时针对所有四个阶段。我们的关键见解是，每个瓶颈都允许一种独特的、轻量级的算法捷径：时间重叠使得跨帧流式KV缓存重用成为可能；驾驶领域推理的低每标记熵和强内块相关性使得非自回归扩散草图在推测解码中非常有效；而速度场的结构——在端点处陡峭，中间部分平坦——允许自适应步长缓存，将计算集中在重要位置。基于系统级CUDA图编译和内核融合，这些技术相辅相成。应用于Alpamayo 1.5-10B和W4A8量化，FlashDrive将端到端延迟从717毫秒减少到151毫秒（4.7倍），同时基本保持准确性不变： [email protected] 仅变化0.08米，minADE1有所改善，闭环碰撞和越野率在模拟中也有所提升。通过将10B参数的推理VLA的频率从1.4 Hz提升至6.6 Hz，FlashDrive使端到端自主驾驶更接近实时部署。",
+      "authors": [
+        "Zekai Li",
+        "Yihao Liang",
+        "Hongfei Zhang",
+        "Jian Chen",
+        "Yesheng Liang",
+        "Zhijian Liu"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.12932",
+      "tags": [
+        "VLM/VLA",
+        "端到端驾驶",
+        "世界模型/生成"
+      ],
+      "title": "FlashDrive: Flash Vision-Language-Action Inference for Autonomous Driving",
+      "title_zh": "FlashDrive：用于自主驾驶的闪存视觉-语言-动作推理",
+      "url": "/daily/2026-08-14/#paper-2608-12932"
+    },
+    {
+      "abstract": "Autonomous driving requires planning under both semantic constraints and predictive dynamics. Existing end-to-end driving approaches, however, typically emphasize only one side of this requirement: Vision-Language-Action (VLA) models exploit VLM priors for semantic reasoning, while World Action Models (WAMs) provide future-aware prediction through generative world modeling. This naturally motivates a unified planner that can leverage both semantic priors and predictive dynamics. However, we find that a naive combination through joint token-level attention suffers from an attention-allocation mismatch, where semantic shortcuts dominate the shared attention space and suppress predictive dynamics. Inspired by neuroscience evidence that complex behavior arises from coordination among functionally specialized systems, we propose BrainWAM, a structured action-space coordination framework that converts semantic reasoning and predictive world modeling into two specialized action-oriented pathways, and aligns them at the level of compact action representations. We further introduce an asynchronous rectified-flow inference strategy with decoupled video and action denoising, which shortens inference latency while preserving planning-relevant predictive context. BrainWAM reaches state-of-the-art performance on both NAVSIM v1 (89.5 PDMS) and NAVSIM v2 (89.6 EPDMS), consistently outperforming VLA-only or WAM-only methods, highlighting BrainWAM as a practical and promising direction for autonomous driving systems.",
+      "abstract_zh": "自动驾驶需要在语义约束和预测动态下进行规划。然而，现有的端到端驾驶方法通常只强调这一要求的一个方面：视觉-语言-行动（VLA）模型利用视觉-语言模型（VLM）先验进行语义推理，而世界行动模型（WAM）通过生成世界建模提供未来感知的预测。这自然激励了一个统一的规划器，可以同时利用语义先验和预测动态。然而，我们发现通过联合标记级注意力的简单组合存在注意力分配不匹配的问题，其中语义捷径主导了共享的注意力空间并抑制了预测动态。受到神经科学证据的启发，复杂行为源于功能专业化系统之间的协调，我们提出了BrainWAM，一个结构化的行动空间协调框架，将语义推理和预测世界建模转换为两个专业的面向行动的路径，并在紧凑的行动表示层面上对齐它们。我们进一步引入了一种异步修正流推理策略，结合解耦的视频和行动去噪，缩短了推理延迟，同时保留了与规划相关的预测上下文。BrainWAM在NAVSIM v1（89.5 PDMS）和NAVSIM v2（89.6 EPDMS）上达到了最先进的性能，始终优于仅使用VLA或WAM的方法，突显了BrainWAM作为自动驾驶系统的一个实用且有前景的方向。",
+      "authors": [
+        "Bing Zhan",
+        "Shuyao Shang",
+        "Jiahao Gu",
+        "Shuo Lu",
+        "Yuan Xu",
+        "Zhao Wang",
+        "Yida Wang",
+        "Xueyang Zhang",
+        "Kun Zhan",
+        "Lue Fan",
+        "Zhaoxiang Zhang"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.12854",
+      "tags": [
+        "VLM/VLA",
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving",
+      "title_zh": "BrainWAM：语义先验与预测动态的行动空间协调用于自动驾驶",
+      "url": "/daily/2026-08-14/#paper-2608-12854"
+    },
+    {
+      "abstract": "Semi-supervised semantic segmentation has long turned on one question, which pseudo-labels to trust, and a generation of selection rules, dynamic thresholds, per-class curricula, soft confidence weights, answered it for the noisy, under-confident ResNet teachers of their day. Self-supervised foundation encoders change the regime: with a DINOv2 teacher, confidence saturates, so the filtering that helped a weak teacher can hurt a strong one. We propose CW-BASS v2, a saturation-aware pseudo-label selection method that reads the teacher's confidence regime rather than committing to one rule. It pairs held-out calibration, an unbiased per-class noise estimate, with a self-adaptive confidence floor that provably bounds retention away from 1, and combines them in a one-pass gate: measure the reliability of the teacher's confident set, pi_kept = Pr[correct | c >= tau], on a held-out slice, and filter strictly when it meets the confidence demanded (pi_kept >= tau), falling back to the adaptive floor otherwise. The boundary is the pre-existing operating threshold, not a value tuned to mIoU, and across six DINOv2 teachers it makes the correct strict-vs-floor call blind. CW-BASS v2 thus recovers the UniMatch V2 operating point on the saturated benchmarks by selecting strict (Pascal VOC 1/8 87.4 against its reported 87.9; Cityscapes within 0.5), and improves on it where the confident set is unreliable (pi_kept ~ 89%, ADE20K), where the floor edges ahead (+1.5 mIoU, single seed). The gate is principled because the failure it avoids is measured, not assumed: on a reliable, saturated teacher the confidence distribution's dynamic range collapses (98% of Pascal pixels >= 0.95), so an adaptive cutoff floods the retention mask and self-training decays into confirmation bias.",
+      "abstract_zh": "半监督语义分割长期以来面临一个问题，即信任哪些伪标签，而一系列选择规则、动态阈值、按类别的课程和软置信权重为当时的噪声和不自信的ResNet教师提供了答案。自监督基础编码器改变了这一局面：在DINOv2教师下，置信度饱和，因此帮助弱教师的过滤可能会对强教师造成伤害。我们提出了CW-BASS v2，一种基于饱和度的伪标签选择方法，它读取教师的置信度状态，而不是依赖于单一规则。它将保留的校准、无偏的按类别噪声估计与自适应置信度下限相结合，该下限可以证明地将保留率限制在1以下，并在一次性门控中结合这两者：在保留的切片上测量教师置信集的可靠性，pi_kept = Pr[correct | c >= tau]，并在满足所需置信度时严格过滤（pi_kept >= tau），否则回退到自适应下限。边界是预先存在的操作阈值，而不是针对mIoU调整的值，在六个DINOv2教师中，它在盲目情况下做出了正确的严格与下限的选择。CW-BASS v2因此通过选择严格的（Pascal VOC 1/8 87.4与其报告的87.9相比；Cityscapes在0.5以内）恢复了饱和基准上的UniMatch V2操作点，并在置信集不可靠的地方（pi_kept ~ 89%，ADE20K）有所改进，那里下限领先（+1.5 mIoU，单种子）。该门控是有原则的，因为它避免的失败是可测量的，而不是假设的：在可靠的饱和教师上，置信度分布的动态范围崩溃（98%的Pascal像素 >= 0.95），因此自适应截止会淹没保留掩码，自我训练退化为确认偏见。",
+      "authors": [
+        "Ebenezer Tarubinga"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.12773",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers",
+      "title_zh": "CW-BASS v2：基于饱和度的伪标签选择方法用于基础模型教师下的半监督分割",
+      "url": "/daily/2026-08-14/#paper-2608-12773"
+    },
+    {
+      "abstract": "A critical challenge in deploying online HD map construction systems to real-world scenarios is the scarcity of labeled training data, which limits model generalization in diverse environments. To address this limitation, we propose a teacher-student semi-supervised learning (SSL) framework that generates high-quality pseudo-labels from unlabeled data through confidence-aware map refinement. Our approach first trains a teacher model on limited labeled data, then leverages Beta-distribution-based confidence maps to assess the reliability of predicted map elements across temporal observations. Unlike conventional filtering methods that discard entire elements, we introduce a spatial clipping technique that selectively preserves high-confidence regions while removing unreliable segments. The refined map elements serve as map priors that improve the teacher model's prediction accuracy on unlabeled data in a second pass. These enhanced predictions become pseudo-labels for training a student model from scratch, followed by fine-tuning on the original labeled data. Experimental results on the nuScenes dataset demonstrate that our teacher-student framework with refined pseudo-labels improves performance by +6.1 mAP under a low-label regime compared to training on labeled data alone, offering a practical solution to the labeled data scarcity problem in online HD map construction.",
+      "abstract_zh": "在将在线高清地图构建系统部署到现实场景中的一个关键挑战是标记训练数据的稀缺，这限制了模型在多样化环境中的泛化能力。为了解决这一限制，我们提出了一种教师-学生半监督学习（SSL）框架，通过基于置信度的地图细化从未标记数据中生成高质量的伪标签。我们的方法首先在有限的标记数据上训练教师模型，然后利用基于Beta分布的置信度地图评估跨时间观测的预测地图元素的可靠性。与传统的过滤方法不同，后者会丢弃整个元素，我们引入了一种空间剪裁技术，选择性地保留高置信度区域，同时去除不可靠的部分。经过细化的地图元素作为地图先验，提升了教师模型在未标记数据上的预测准确性，随后进行第二次预测。这些增强的预测成为从头开始训练学生模型的伪标签，随后在原始标记数据上进行微调。在nuScenes数据集上的实验结果表明，与单独在标记数据上训练相比，我们的教师-学生框架结合细化的伪标签在低标记条件下提高了+6.1 mAP，提供了一种解决在线高清地图构建中标记数据稀缺问题的实用方案。",
+      "authors": [
+        "Chikao Tsuchiya",
+        "Dhaval Bhanderi",
+        "David Ilstrup",
+        "Hsinmin Cheng",
+        "Christopher Ostafew"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.12600",
+      "tags": [
+        "地图/定位",
+        "仿真/数据",
+        "世界模型/生成"
+      ],
+      "title": "PseudoMapLabeler: Confidence-Aware Pseudo-Label Generation for Semi-Supervised Online Mapping",
+      "title_zh": "PseudoMapLabeler：基于置信度的伪标签生成用于半监督在线地图构建",
+      "url": "/daily/2026-08-14/#paper-2608-12600"
+    },
+    {
+      "abstract": "Differentiable rendering has advanced novel view synthesis (NVS), yet applying it to real-world driving remains difficult due to sparse capture viewpoints, dynamic objects, and limited multi-trajectory data. We introduce the Multi-View Multi-Vehicle (MV2) dataset and benchmark for evaluating NVS models under large viewpoint changes in dynamic urban scenes. MV2 features synchronized captures from a car, scooter, and drone, each following distinct yet synchronized trajectories. Training NVS methods on one vehicle's camera stream and testing on another enables evaluation under substantially larger viewpoint variations than existing single-trajectory datasets. All sequences are registered via Structure-from-Motion and camera poses verified using manual pixel-level correspondence annotations, yielding 50 high-quality scenes with 12000 images. Benchmarking recent NVS and camera pose estimation methods shows that NVS performance degrades with increasing viewpoint disparity, and that feed-forward pose estimators notably lag behind optimization-based approaches, highlighting MV2 as a rigorous testbed for NVS in driving. The dataset, benchmark protocol, and project resources are available at https://mv2-dataset.github.io/.",
+      "abstract_zh": "可微渲染技术推动了新视图合成（NVS）的发展，但由于捕获视点稀疏、动态物体以及有限的多轨迹数据，将其应用于现实世界驾驶仍然困难。我们介绍了多视角多车辆（MV2）数据集及其基准，用于评估在动态城市场景中大视点变化下的NVS模型。MV2包含来自汽车、电动滑板车和无人机的同步捕获，每种交通工具都遵循独特但同步的轨迹。在一辆车辆的摄像头流上训练NVS方法，并在另一辆上进行测试，使得在比现有单轨迹数据集更大视点变化下进行评估成为可能。所有序列通过运动结构重建（Structure-from-Motion）进行注册，并使用手动像素级对应注释验证相机姿态，生成了50个高质量场景和12000张图像。对近期NVS和相机姿态估计方法的基准测试表明，随着视点差异的增加，NVS性能下降，而前馈姿态估计器明显落后于基于优化的方法，突显了MV2作为驾驶中NVS的严格测试平台。数据集、基准协议和项目资源可在 https://mv2-dataset.github.io/ 获取。",
+      "authors": [
+        "Sanjay Bhargav Dharavath",
+        "Hanvitha Saraswathi Mukkamala",
+        "Faizan Farooq Khan",
+        "Ioannis Kakogeorgiou",
+        "Aditya Arun",
+        "C V Jawahar",
+        "Zakaria Laskar"
+      ],
+      "date": "2026-08-14",
+      "id": "2608.12442",
+      "tags": [
+        "仿真/数据",
+        "深度/几何",
+        "地图/定位"
+      ],
+      "title": "MV2: Multi-View Multi-Vehicle Driving Dataset for Novel View Synthesis",
+      "title_zh": "MV2：用于新视图合成的多视角多车辆驾驶数据集",
+      "url": "/daily/2026-08-14/#paper-2608-12442"
+    },
     {
       "abstract": "Generative models like Diffusion Models and Flow Matching have demonstrated remarkable capabilities in synthesizing high-fidelity driving videos, but are severely constrained by high inference latency due to the requirement of extensive sampling steps. We argue that this inefficiency stems from the prevailing reliance on a standard Gaussian source distribution, where consecutive frames are initialized as independent Gaussian noise. This paradigm disregards the rich spatiotemporal correlations inherent in driving videos, compelling the model to regenerate deterministic scene structures existing in previous frames from noise, which is both computationally redundant and prone to geometric inconsistency. To address this problem, we propose GeoFlow, a novel framework designed to achieve efficient driving video generation by harnessing explicit geometric priors. Instead of sampling from standard Gaussian noise, we leverage multi-view geometry and spatially-adaptive noise injection to construct a Geometry-Aligned Prior (GAP) distribution as starting point. This initialization bridges the gap between source distribution and data distribution, yielding a significantly straighter and shorter sampling trajectory. Extensive experiments demonstrate that GeoFlow can achieve remarkable efficiency of both training and inference: merely several hours of fine-tuning on baseline models can significantly boost few-step generation quality, while fully converged training drastically reduces number of inference steps required for state-of-the-art video generation.",
       "abstract_zh": "生成模型如扩散模型（Diffusion Models）和流匹配（Flow Matching）在合成高保真驾驶视频方面展现了显著的能力，但由于需要大量采样步骤，推理延迟严重受限。我们认为，这种低效源于对标准高斯源分布的普遍依赖，其中连续帧被初始化为独立的高斯噪声。这一范式忽视了驾驶视频固有的丰富时空相关性，迫使模型从噪声中重新生成先前帧中存在的确定性场景结构，这既计算冗余又容易导致几何不一致。为了解决这个问题，我们提出了GeoFlow，一个旨在通过利用显式几何先验实现高效驾驶视频生成的新框架。我们不再从标准高斯噪声中采样，而是利用多视角几何和空间自适应噪声注入构建几何对齐先验（Geometry-Aligned Prior, GAP）分布作为起始点。这种初始化弥合了源分布与数据分布之间的差距，产生了显著更直且更短的采样轨迹。大量实验表明，GeoFlow在训练和推理方面都能实现显著的效率：仅需在基线模型上进行几小时的微调，即可显著提升少步生成质量，而完全收敛的训练则大幅减少了进行最先进视频生成所需的推理步骤。",

@@ -1,0 +1,53 @@
+{
+  "abstract": "Reinforcement learning improves autonomous-driving vision-language-action (VLA) models by evaluating trajectories sampled from the current policy. Group relative policy optimization (GRPO) learns from reward differences within each rollout group. When all sampled trajectories are poor, this relative signal can rank failures without identifying behavior outside the failed region. We introduce FIRE-VLA, a failure-informed self-evolution framework that converts such unresolved failures into privileged supervision for the next policy. Low-reward, low-diversity groups trigger self-distillation from a frozen round-start copy of the same model. Teacher and student have the same parameter scale, but only the teacher observes the hidden future trajectory. Supervision follows the student's generated prefix and is restricted to answer tokens, while GRPO remains active for every group. The updated policy supplies the teacher for the next round, allowing the routed failure distribution to change with the policy without requiring a larger external teacher. Starting from the same Qwen2.5-VL-3B SFT checkpoint, the comparison matches student rollout and policy-update counts. On 6,019 examples from 150 held-out nuScenes scenes, FIRE-VLA retains comparable single-sample planning, reduces G=4 mean L2 from 1.848 to 1.500 m, and lowers evaluation-persistent failure prevalence from 13.03% to 11.20%. The reduction in mean error arises mainly from rare severe rollouts rather than uniform improvement across ordinary trajectories.",
+  "abstract_zh": "强化学习通过评估当前策略下采样的轨迹来改善自动驾驶视觉-语言-动作（VLA）模型。组相对策略优化（GRPO）从每个回合组内的奖励差异中学习。当所有采样的轨迹表现不佳时，这种相对信号可以对失败进行排名，但无法识别失败区域外的行为。我们提出了FIRE-VLA，一种面向失败的自我演化框架，将这些未解决的失败转化为下一策略的特权监督。低奖励、低多样性组触发从同一模型的冻结回合开始副本进行自我蒸馏。教师和学生具有相同的参数规模，但只有教师观察隐藏的未来轨迹。监督遵循学生生成的前缀，并限制在回答标记上，同时GRPO对每个组保持活跃。更新后的策略为下一轮提供教师，使得路由的失败分布能够随着策略的变化而变化，而无需更大的外部教师。从相同的Qwen2.5-VL-3B SFT检查点开始，比较匹配学生的回合和策略更新计数。在来自150个保留nuScenes场景的6,019个示例中，FIRE-VLA保持了可比的单样本规划，将G=4的平均L2从1.848降低到1.500米，并将评估持久性失败的发生率从13.03%降低到11.20%。平均误差的减少主要源于罕见的严重回合，而不是普通轨迹的均匀改善。",
+  "arxiv_id": "2608.13395",
+  "arxiv_url": "https://arxiv.org/abs/2608.13395v1",
+  "authors": [
+    "Hao Dou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-14#paper-2608-13395",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-14T14:32:46.761471+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.13395v1",
+  "published_at": "2026-08-13T15:53:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-08-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.13395v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving",
+  "title_zh": "FIRE-VLA：面向失败的自我演化框架在自动驾驶中的视觉-语言-动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2608.13395"
+}

@@ -1,0 +1,59 @@
+{
+  "abstract": "Differentiable rendering has advanced novel view synthesis (NVS), yet applying it to real-world driving remains difficult due to sparse capture viewpoints, dynamic objects, and limited multi-trajectory data. We introduce the Multi-View Multi-Vehicle (MV2) dataset and benchmark for evaluating NVS models under large viewpoint changes in dynamic urban scenes. MV2 features synchronized captures from a car, scooter, and drone, each following distinct yet synchronized trajectories. Training NVS methods on one vehicle's camera stream and testing on another enables evaluation under substantially larger viewpoint variations than existing single-trajectory datasets. All sequences are registered via Structure-from-Motion and camera poses verified using manual pixel-level correspondence annotations, yielding 50 high-quality scenes with 12000 images. Benchmarking recent NVS and camera pose estimation methods shows that NVS performance degrades with increasing viewpoint disparity, and that feed-forward pose estimators notably lag behind optimization-based approaches, highlighting MV2 as a rigorous testbed for NVS in driving. The dataset, benchmark protocol, and project resources are available at https://mv2-dataset.github.io/.",
+  "abstract_zh": "可微渲染技术推动了新视图合成（NVS）的发展，但由于捕获视点稀疏、动态物体以及有限的多轨迹数据，将其应用于现实世界驾驶仍然困难。我们介绍了多视角多车辆（MV2）数据集及其基准，用于评估在动态城市场景中大视点变化下的NVS模型。MV2包含来自汽车、电动滑板车和无人机的同步捕获，每种交通工具都遵循独特但同步的轨迹。在一辆车辆的摄像头流上训练NVS方法，并在另一辆上进行测试，使得在比现有单轨迹数据集更大视点变化下进行评估成为可能。所有序列通过运动结构重建（Structure-from-Motion）进行注册，并使用手动像素级对应注释验证相机姿态，生成了50个高质量场景和12000张图像。对近期NVS和相机姿态估计方法的基准测试表明，随着视点差异的增加，NVS性能下降，而前馈姿态估计器明显落后于基于优化的方法，突显了MV2作为驾驶中NVS的严格测试平台。数据集、基准协议和项目资源可在 https://mv2-dataset.github.io/ 获取。",
+  "arxiv_id": "2608.12442",
+  "arxiv_url": "https://arxiv.org/abs/2608.12442v1",
+  "authors": [
+    "Sanjay Bhargav Dharavath",
+    "Hanvitha Saraswathi Mukkamala",
+    "Faizan Farooq Khan",
+    "Ioannis Kakogeorgiou",
+    "Aditya Arun",
+    "C V Jawahar",
+    "Zakaria Laskar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-14#paper-2608-12442",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-14T14:32:46.768351+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.12442v1",
+  "published_at": "2026-08-12T16:02:32Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "car",
+      "驾驶",
+      "车辆",
+      "交通",
+      "drone",
+      "无人机"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-08-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.12442v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-14"
+  },
+  "summary_zh": "面向自动驾驶动态城市场景，构建由汽车、滑板车和无人机同步采集的多视角多车辆数据集，并基于大视点变化评测新视图合成和相机姿态估计方法。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "MV2: Multi-View Multi-Vehicle Driving Dataset for Novel View Synthesis",
+  "title_zh": "MV2：用于新视图合成的多视角多车辆驾驶数据集",
+  "translation_url": "https://hjfy.top/arxiv/2608.12442"
+}

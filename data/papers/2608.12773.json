@@ -1,0 +1,46 @@
+{
+  "abstract": "Semi-supervised semantic segmentation has long turned on one question, which pseudo-labels to trust, and a generation of selection rules, dynamic thresholds, per-class curricula, soft confidence weights, answered it for the noisy, under-confident ResNet teachers of their day. Self-supervised foundation encoders change the regime: with a DINOv2 teacher, confidence saturates, so the filtering that helped a weak teacher can hurt a strong one. We propose CW-BASS v2, a saturation-aware pseudo-label selection method that reads the teacher's confidence regime rather than committing to one rule. It pairs held-out calibration, an unbiased per-class noise estimate, with a self-adaptive confidence floor that provably bounds retention away from 1, and combines them in a one-pass gate: measure the reliability of the teacher's confident set, pi_kept = Pr[correct | c >= tau], on a held-out slice, and filter strictly when it meets the confidence demanded (pi_kept >= tau), falling back to the adaptive floor otherwise. The boundary is the pre-existing operating threshold, not a value tuned to mIoU, and across six DINOv2 teachers it makes the correct strict-vs-floor call blind. CW-BASS v2 thus recovers the UniMatch V2 operating point on the saturated benchmarks by selecting strict (Pascal VOC 1/8 87.4 against its reported 87.9; Cityscapes within 0.5), and improves on it where the confident set is unreliable (pi_kept ~ 89%, ADE20K), where the floor edges ahead (+1.5 mIoU, single seed). The gate is principled because the failure it avoids is measured, not assumed: on a reliable, saturated teacher the confidence distribution's dynamic range collapses (98% of Pascal pixels >= 0.95), so an adaptive cutoff floods the retention mask and self-training decays into confirmation bias.",
+  "abstract_zh": "半监督语义分割长期以来面临一个问题，即信任哪些伪标签，而一系列选择规则、动态阈值、按类别的课程和软置信权重为当时的噪声和不自信的ResNet教师提供了答案。自监督基础编码器改变了这一局面：在DINOv2教师下，置信度饱和，因此帮助弱教师的过滤可能会对强教师造成伤害。我们提出了CW-BASS v2，一种基于饱和度的伪标签选择方法，它读取教师的置信度状态，而不是依赖于单一规则。它将保留的校准、无偏的按类别噪声估计与自适应置信度下限相结合，该下限可以证明地将保留率限制在1以下，并在一次性门控中结合这两者：在保留的切片上测量教师置信集的可靠性，pi_kept = Pr[correct | c >= tau]，并在满足所需置信度时严格过滤（pi_kept >= tau），否则回退到自适应下限。边界是预先存在的操作阈值，而不是针对mIoU调整的值，在六个DINOv2教师中，它在盲目情况下做出了正确的严格与下限的选择。CW-BASS v2因此通过选择严格的（Pascal VOC 1/8 87.4与其报告的87.9相比；Cityscapes在0.5以内）恢复了饱和基准上的UniMatch V2操作点，并在置信集不可靠的地方（pi_kept ~ 89%，ADE20K）有所改进，那里下限领先（+1.5 mIoU，单种子）。该门控是有原则的，因为它避免的失败是可测量的，而不是假设的：在可靠的饱和教师上，置信度分布的动态范围崩溃（98%的Pascal像素 >= 0.95），因此自适应截止会淹没保留掩码，自我训练退化为确认偏见。",
+  "arxiv_id": "2608.12773",
+  "arxiv_url": "https://arxiv.org/abs/2608.12773v1",
+  "authors": [
+    "Ebenezer Tarubinga"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-14#paper-2608-12773",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-08-14T14:32:46.783099+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.12773v1",
+  "published_at": "2026-08-13T03:31:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.12773v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers",
+  "title_zh": "CW-BASS v2：基于饱和度的伪标签选择方法用于基础模型教师下的半监督分割",
+  "translation_url": "https://hjfy.top/arxiv/2608.12773"
+}

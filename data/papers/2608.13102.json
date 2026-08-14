@@ -1,0 +1,56 @@
+{
+  "abstract": "Dense metric depth prediction from cameras and millimeter-wave radar offers a cost-effective sensing solution for autonomous systems. However, radar measurements are inherently sparse and susceptible to clutter, multipath reflections, and projection errors. While aggregating multiple radar frames provides denser metric cues, it also introduces temporal misalignment and dynamic-object interference. Directly propagating such unreliable measurements can therefore corrupt large regions of the predicted depth map. To address this issue, we propose RbFT-Net, an end-to-end rectify-before-fuse framework for multi-frame 4D radar-camera depth completion. Rather than assuming accumulated radar returns to be accurate, RbFT-Net treats them as noisy temporal anchor candidates. An image-conditioned rectification module jointly corrects their image-plane locations and metric depths while estimating pointwise reliability. The rectified anchors are then selectively propagated before high-level multi-modal fusion, suppressing the influence of unreliable measurements. Experiments on ZJU-4DRadarCam and a newly collected 4D radar-camera-LiDAR dataset show that RbFT-Net consistently outperforms the evaluated independent radar-camera methods and remains competitive with plug-in pipelines using auxiliary monocular depth models. Cross-platform evaluation and component analyses further support the effectiveness of the proposed rectification and reliability-aware propagation strategy.",
+  "abstract_zh": "来自相机和毫米波雷达的密集度量深度预测为自主系统提供了一种具有成本效益的传感解决方案。然而，雷达测量本质上是稀疏的，并且容易受到杂波、多路径反射和投影误差的影响。虽然聚合多个雷达帧可以提供更密集的度量线索，但这也引入了时间对齐问题和动态物体干扰。因此，直接传播这些不可靠的测量可能会破坏预测深度图的大区域。为了解决这个问题，我们提出了RbFT-Net，一种端到端的先校正后融合框架，用于多帧4D雷达-相机深度补全。RbFT-Net并不假设累积的雷达返回是准确的，而是将其视为噪声时间锚点候选。一个基于图像的校正模块共同校正它们的图像平面位置和度量深度，同时估计逐点可靠性。然后，在高层次的多模态融合之前，选择性地传播校正后的锚点，从而抑制不可靠测量的影响。在ZJU-4DRadarCam和新收集的4D雷达-相机-LiDAR数据集上的实验表明，RbFT-Net在评估的独立雷达-相机方法中始终表现优于其他方法，并且在使用辅助单目深度模型的插件管道中保持竞争力。跨平台评估和组件分析进一步支持了所提出的校正和可靠性感知传播策略的有效性。",
+  "arxiv_id": "2608.13102",
+  "arxiv_url": "https://arxiv.org/abs/2608.13102v1",
+  "authors": [
+    "Wentao Zhao",
+    "Shouxuan Wu",
+    "Yongtao Cen",
+    "Tianchen Deng",
+    "Yuyang Zhang",
+    "Jingchuan Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-14#paper-2608-13102",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-14T14:32:46.807652+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.13102v1",
+  "published_at": "2026-08-13T11:26:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "lidar",
+      "4d radar",
+      "radar",
+      "monocular depth",
+      "camera-lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "标题命中自动驾驶专用技术"
+    ],
+    "score": 21
+  },
+  "seen_dates": [
+    "2026-08-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.13102v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "Radar",
+      "深度/几何"
+    ]
+  },
+  "title": "RbFT-Net: Rectify-Before-Fuse Temporal Radar Anchors for 4D Radar-Camera Depth Completion",
+  "title_zh": "RbFT-Net：用于4D雷达-相机深度补全的先校正后融合时间雷达锚点",
+  "translation_url": "https://hjfy.top/arxiv/2608.13102"
+}

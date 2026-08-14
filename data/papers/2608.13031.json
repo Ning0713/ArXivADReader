@@ -1,0 +1,56 @@
+{
+  "abstract": "Traffic video understanding has become an important problem in intelligent transportation, as road videos provide direct evidence for accidents, violations, and interactions between vehicles and vulnerable road users. A useful system should explain how a traffic event develops, why it happens, and when the relevant interaction occurs, yet this remains difficult for multimodal large language models (MLLMs) because traffic videos contain sparse events and varied viewpoints. We introduce UniTraffic-Agent, the MR-CAS solution for Track~3 of the 10th AI City Challenge, which includes Traffic Anomaly Reasoning (TAR) and two out-of-domain evaluations: FETV for fisheye traffic events and PSI-VQA for pedestrian intention reasoning. UniTraffic-Agent follows an observe--reason--act--verify workflow that samples timestamped visual evidence, reasons over all questions from the same clip in one request, and converts responses through task-specific action adapters. On the official Public leaderboards, MR-CAS ranks 16th on TAR with a score of 0.5780, 2nd on FETV with 0.4884, and 4th on PSI-VQA with 64.4161. The code is available at https://github.com/Roclp/UniTraffic-Agent.",
+  "abstract_zh": "交通视频理解已成为智能交通中的一个重要问题，因为道路视频为事故、违规行为以及车辆与脆弱道路使用者之间的互动提供了直接证据。一个有效的系统应能够解释交通事件的发展过程、发生原因以及相关互动发生的时间，然而，对于多模态大型语言模型（MLLMs）来说，这仍然是一个挑战，因为交通视频包含稀疏事件和多样化的视角。我们介绍了UniTraffic-Agent，这是第10届AI城市挑战赛第3赛道的MR-CAS解决方案，包含交通异常推理（TAR）和两个域外评估：用于鱼眼交通事件的FETV和用于行人意图推理的PSI-VQA。UniTraffic-Agent遵循观察-推理-行动-验证的工作流程，采样带时间戳的视觉证据，在一次请求中对同一片段的所有问题进行推理，并通过特定任务的行动适配器转换响应。在官方公共排行榜上，MR-CAS在TAR中排名第16，得分为0.5780，在FETV中排名第2，得分为0.4884，在PSI-VQA中排名第4，得分为64.4161。代码可在https://github.com/Roclp/UniTraffic-Agent获取。",
+  "arxiv_id": "2608.13031",
+  "arxiv_url": "https://arxiv.org/abs/2608.13031v1",
+  "authors": [
+    "Peng Li",
+    "Qianqian Xu",
+    "Shilong Bao",
+    "Yangbangyan Jiang",
+    "Qingming Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-14#paper-2608-13031",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-14T14:32:46.802359+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.13031v1",
+  "published_at": "2026-08-13T10:00:27Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "pedestrian",
+      "车辆",
+      "交通",
+      "道路",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 35
+  },
+  "seen_dates": [
+    "2026-08-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.13031v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-14"
+  },
+  "summary_zh": "本文提出UniTraffic-Agent，用于交通视频中的异常事件推理、鱼眼视角交通事件理解和行人意图推理。系统采用观察—推理—行动—验证流程，通过带时间戳的视频证据和多模态大语言模型回答交通问题，并在AI City Challenge相关任务及域外数据集上进行评估。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "安全/异常",
+      "预测/规划"
+    ]
+  },
+  "title": "UniTraffic-Agent: Unified Traffic Video Reasoning for AI City Challenge 2026 Track 3 with Two Out-of-Domain Evaluations",
+  "title_zh": "UniTraffic-Agent：2026年AI城市挑战赛第3赛道的统一交通视频推理，包含两个域外评估",
+  "translation_url": "https://hjfy.top/arxiv/2608.13031"
+}

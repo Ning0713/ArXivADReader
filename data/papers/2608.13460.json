@@ -1,0 +1,52 @@
+{
+  "abstract": "We propose Symmetric Nonlinear Motion-guided Generative Video Frame Interpolation (SNM-VFI), a training-free framework for motion-controllable generative video frame interpolation with pre-trained optical flow and video diffusion models. Unlike conventional diffusion-based VFI methods that synthesize intermediate frames from random noise, SNM-VFI guides the generative process with correspondence-aware frames produced by a symmetric nonlinear motion model. Specifically, we first utilize a pre-trained optical flow model to construct multi-frame nonlinear flow-based intermediate frames and confidence maps. These flow-guided frames are then encoded as latent priors to initialize and iteratively guide a pre-trained Video Diffusion model, enabling the diffusion model to preserve dense motion correspondence while improving perceptual realism. To further enhance output quality, we employ confidence maps to fuse structurally reliable flow-based predictions with diffusion-generated details in uncertain regions such as occlusions and object boundaries. Extensive evaluations on challenging benchmarks, including DAVIS, Sintel, and KITTI, demonstrate that SNM-VFI achieves strong perceptual quality, competitive reconstruction accuracy, and robust temporal coherence across diverse motion scenarios.",
+  "abstract_zh": "我们提出了对称非线性运动引导的生成视频帧插值（SNM-VFI），这是一个无需训练的框架，旨在实现可控运动的生成视频帧插值，利用预训练的光流和视频扩散模型。与传统的基于扩散的视频帧插值（VFI）方法不同，后者是从随机噪声合成中间帧，SNM-VFI通过对称非线性运动模型生成的对应感知帧来引导生成过程。具体而言，我们首先利用预训练的光流模型构建多帧非线性流基础的中间帧和置信度图。这些流引导的帧随后被编码为潜在先验，以初始化并迭代引导预训练的视频扩散模型，从而使扩散模型能够在提高感知真实感的同时保持密集的运动对应关系。为了进一步提升输出质量，我们采用置信度图将结构上可靠的流基础预测与在不确定区域（如遮挡和物体边界）中生成的扩散细节融合。对包括DAVIS、Sintel和KITTI在内的挑战性基准的广泛评估表明，SNM-VFI在多样化运动场景中实现了强大的感知质量、竞争性的重建精度和稳健的时间一致性。",
+  "arxiv_id": "2608.13460",
+  "arxiv_url": "https://arxiv.org/abs/2608.13460v1",
+  "authors": [
+    "Jisoo Jeong",
+    "Hong Cai",
+    "Jamie Menjay Lin",
+    "Hanno Ackermann",
+    "Hyeonjun Sim",
+    "Yinhao Zhu",
+    "Yunxiao Shi",
+    "Fatih Porikli"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-14#paper-2608-13460",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-14T14:32:46.832959+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.13460v1",
+  "published_at": "2026-08-13T16:43:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.13460v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "感知"
+    ]
+  },
+  "title": "SNM-VFI: Symmetric Nonlinear Motion-Guided Generative Video Frame Interpolation",
+  "title_zh": "SNM-VFI：对称非线性运动引导的生成视频帧插值",
+  "translation_url": "https://hjfy.top/arxiv/2608.13460"
+}

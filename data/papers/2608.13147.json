@@ -1,0 +1,67 @@
+{
+  "abstract": "Camera-based autonomous driving perception requires a shared representation that preserves metric 3D structure across synchronized multi-camera streams. However, existing image-based frameworks often rely on backbones pretrained for semantic recognition, and introduce 3D geometry through downstream task-specific modules. As a result, their shared representations may fail to preserve explicit metric geometry and consistent 3D scene structure. In this paper, we present a Geometry-grounded Unified 3D Perception (GeoUP) framework that adapts the reconstruction-oriented latent of VGGT to calibrated, streaming multi-camera driving scenes. GeoUP factorizes cross-image interaction into self, temporal, and view attention to capture structurally distinct temporal and cross-view correspondences. It further injects calibration-aware raymap encodings to provide metric scale and camera geometry. The resulting geometry-grounded latent is decoded for metric depth estimation, 3D object detection, and semantic occupancy prediction, corresponding to surface-, instance-, and volume-level readouts of the same 3D scene. Through joint multi-task and multi-dataset training, GeoUP effectively leverages heterogeneous annotations and generalizes across diverse sensor configurations and perception ranges. Extensive experiments on nuScenes, Argoverse 2, Waymo, KITTI, and DDAD demonstrate that GeoUP achieves SOTA performance across detection, occupancy, and depth estimation. These results validate the effectiveness of geometry-grounded representations for unified 3D driving perception.",
+  "abstract_zh": "基于摄像头的自动驾驶感知需要一种共享表示，该表示能够在同步的多摄像头流中保持度量三维结构。然而，现有的基于图像的框架通常依赖于为语义识别预训练的主干网络，并通过下游任务特定模块引入三维几何。因此，它们的共享表示可能无法保持明确的度量几何和一致的三维场景结构。在本文中，我们提出了一种基于几何的统一三维感知框架（Geometry-grounded Unified 3D Perception, GeoUP），该框架将面向重建的VGGT潜在表示适应于标定的、流式的多摄像头驾驶场景。GeoUP将跨图像交互分解为自我、时间和视角注意力，以捕捉结构上不同的时间和跨视角对应关系。它进一步注入了考虑标定的光线图编码，以提供度量尺度和摄像机几何。最终得到的基于几何的潜在表示被解码用于度量深度估计、三维物体检测和语义占用预测，分别对应于同一三维场景的表面级、实例级和体积级读数。通过联合多任务和多数据集训练，GeoUP有效利用异构注释，并在不同传感器配置和感知范围内实现泛化。在nuScenes、Argoverse 2、Waymo、KITTI和DDAD上的大量实验表明，GeoUP在检测、占用和深度估计方面达到了最先进的性能。这些结果验证了基于几何的表示在统一三维驾驶感知中的有效性。",
+  "arxiv_id": "2608.13147",
+  "arxiv_url": "https://arxiv.org/abs/2608.13147v1",
+  "authors": [
+    "Longfei Xu",
+    "Xiaohui Wang",
+    "Zehao Huang",
+    "Han Li",
+    "Ya Yang",
+    "Naiyan Wang",
+    "Si Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-14#paper-2608-13147",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-14T14:32:46.813822+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.13147v1",
+  "published_at": "2026-08-13T12:17:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "自动驾驶",
+      "nuscenes",
+      "kitti",
+      "argoverse",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "3d object detection",
+      "depth estimation",
+      "深度估计",
+      "占用预测",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.13147v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Geometry-Grounded Unified 3D Perception for Autonomous Driving",
+  "title_zh": "基于几何的统一三维感知在自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2608.13147"
+}
