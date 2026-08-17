@@ -1,0 +1,65 @@
+{
+  "abstract": "Vision-language-action (VLA) models for autonomous driving jointly produce scene interpretation, language-based reasoning, and driving trajectories. Existing evaluations often use independently selected synthetic, simulated, and physical data, so measured performance gaps can be confounded by changes in scenario content rather than genuine domain sensitivity. We propose SSP (Synthetic-Simulation-Physical), an event-matched Syn2Sim2Phy evaluation framework that anchors cross-domain comparison to the same safety-critical interaction. Starting from a synthetic long-tail video, SSP builds a validated event specification that preserves road topology, participant roles, relative motion, conflict evolution, passing order, response constraints, and event phases. Platform-specific realizations are then constructed in CARLA and on a closed proving ground and are evaluated only after transfer audits confirm preservation of mandatory event properties. SSP maps heterogeneous outputs from OpenEMMA, LLaViDA, and Alpamayo-R1 into common semantic slots and a 1 s trajectory window to assess output validity, semantic accuracy, critical-interaction recognition, trajectory quality, and risk response. Across Cut-in and vulnerable-road-user crossing cases, the macro-averaged Integrated VLA Capability Scores are 0.259, 0.291, and 0.325 in the Synthetic, Simulation, and Physical domains, respectively, while the best domain varies by scenario. Alpamayo-R1, OpenEMMA, and LLaViDA obtain scores of 0.405, 0.338, and 0.131. SSP provides a reproducible scene-transfer chain and an evidence-qualified evaluation of VLA behavior without assuming that the Physical domain is universally superior.",
+  "abstract_zh": "自主驾驶的视觉-语言-行动（VLA）模型共同生成场景解释、基于语言的推理和驾驶轨迹。现有评估通常使用独立选择的合成、模拟和物理数据，因此测量的性能差距可能受到场景内容变化的干扰，而非真实的领域敏感性。我们提出了SSP（合成-模拟-物理），一种事件匹配的Syn2Sim2Phy评估框架，将跨域比较锚定到相同的安全关键交互上。从合成的长尾视频开始，SSP构建了一个经过验证的事件规范，保留了道路拓扑、参与者角色、相对运动、冲突演变、通过顺序、响应约束和事件阶段。然后在CARLA平台和封闭试验场构建特定平台的实现，并仅在转移审核确认保留强制事件属性后进行评估。SSP将来自OpenEMMA、LLaViDA和Alpamayo-R1的异构输出映射到共同的语义槽和1秒的轨迹窗口，以评估输出有效性、语义准确性、关键交互识别、轨迹质量和风险响应。在切入和脆弱道路使用者穿越的案例中，合成、模拟和物理领域的宏观平均综合VLA能力分数分别为0.259、0.291和0.325，而最佳领域因场景而异。Alpamayo-R1、OpenEMMA和LLaViDA的得分分别为0.405、0.338和0.131。SSP提供了一个可重复的场景转移链和对VLA行为的证据合格评估，而不假设物理领域在普遍意义上优于其他领域。",
+  "arxiv_id": "2608.14024",
+  "arxiv_url": "https://arxiv.org/abs/2608.14024v1",
+  "authors": [
+    "Haojie Feng",
+    "Peizhi Zhang",
+    "Xinrui Zhang",
+    "Zhuoren Li",
+    "Junpeng Huang",
+    "Xiurong Wang",
+    "Dongxiao Yin",
+    "Yuxiang Zhang",
+    "Junfan Zhu",
+    "Lu Xiong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14024",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.823238+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14024v1",
+  "published_at": "2026-08-14T07:15:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "carla",
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "道路",
+      "vision-language-action",
+      "driving vla"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14024v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "SSP: An Event-Matched Syn2Sim2Phy Cross-Domain Evaluation Framework for Autonomous Driving VLA Models",
+  "title_zh": "SSP：一种事件匹配的Syn2Sim2Phy跨域评估框架用于自主驾驶VLA模型",
+  "translation_url": "https://hjfy.top/arxiv/2608.14024"
+}

@@ -1,0 +1,53 @@
+{
+  "abstract": "Articulated vehicles are the workhorses of freight transportation, and their autonomous navigation is challenging. Their physical characteristics and motion constraints pose significant challenges in manoeuvring these vehicles on narrow routes. This paper presents a spatiotemporal tube-based approach to plan autonomous navigation of vehicles like tractor semi-trailers, truck/ tractor trailers, towing Automated Guided Vehicles (AGVs), and road trains. This planning approach provides a certified path plan for the truck or tractor, ensuring that the towed series of trailers always remains within the road corridor, limited by permissible corrections. The planning leverages the kinematics of the linked elements along with sway constraints to arrive at a safe tube for the actuated prime mover. We modify the spatiotemporal tube using permissible corrections to provide a route safety certificate to the vehicle for the given route. The proposed planning method is verified on a truck-trailer navigation simulation for a complex route.",
+  "abstract_zh": "关节车辆是货物运输的主力军，其自主导航面临诸多挑战。它们的物理特性和运动约束在狭窄路线上的操控中带来了显著的困难。本文提出了一种基于时空管道的方法，用于规划像拖拉机半挂车、卡车/拖拉机拖车、拖曳自动导引车（AGVs）和公路列车等车辆的自主导航。该规划方法为卡车或拖拉机提供了经过认证的路径规划，确保被拖动的系列拖车始终保持在道路走廊内，并受到允许的修正限制。该规划利用了连接元素的运动学以及摆动约束，以确定驱动主机的安全管道。我们通过允许的修正对时空管道进行修改，为车辆在给定路线上的行驶提供安全证书。所提出的规划方法在复杂路线的卡车-拖车导航仿真中得到了验证。",
+  "arxiv_id": "2608.14531",
+  "arxiv_url": "https://arxiv.org/abs/2608.14531v1",
+  "authors": [
+    "Mohd. Faizuddin Faruqui",
+    "Ratnangshu Das",
+    "Ravi Kumar L",
+    "Pushpak Jagtap"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14531",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.801485+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14531v1",
+  "published_at": "2026-08-14T17:48:28Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "road",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14531v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "本文面向半挂车、公路列车等关节车辆的自主导航，提出一种融合车辆运动学、摆动约束和道路走廊约束的时空管道规划方法。该方法通过为牵引车生成安全管道并施加允许的路径修正，保证多个挂车在规划过程中保持在道路范围内，同时为指定路线提供可验证的安全证书。实验在复杂路线的卡车-挂车导航仿真中进行，重点验证了狭窄道路场景下的安全规划能力。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "Spatiotemporal Tube-Based Safety-Certificate for Autonomous Navigation of Articulated Vehicles",
+  "title_zh": "基于时空管道的自主导航关节车辆安全证书",
+  "translation_url": "https://hjfy.top/arxiv/2608.14531"
+}

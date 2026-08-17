@@ -1,0 +1,52 @@
+{
+  "abstract": "Autonomous racecars operate at the limits of vehicle dynamics, where small control errors translate into safety-critical behavior and lost performance. Trajectory planners assume perfect tracking and remain blind to execution errors. To guarantee safety, trajectory planners therefore restrict themselves to conservative spatial margins, leaving usable track space untapped. To overcome these issues, we introduce a control-informed online trajectory planning framework that learns from its own execution errors. By measuring systematic tracking deviations during runtime, we dynamically adapt spatial track constraints and iteratively expand the free-space planning area. The planner remains time-optimal while compensating for accumulated execution errors. This method was analyzed in a high-fidelity closed-loop simulation environment with autonomous racecars. The results demonstrate that our approach reduces lap time by 1.8\\,s without increasing computational burden, maintaining a median runtime of 25 ms. Our finding indicates that feeding control-induced deviations back into the planning layer unlocks performance previously inaccessible to modular architectures and enables autonomous vehicles to exploit track limits systematically.",
+  "abstract_zh": "自主赛车在车辆动力学的极限状态下运行，微小的控制误差会导致安全关键行为和性能损失。轨迹规划器假设完美跟踪，并对执行错误视而不见。为了保证安全，轨迹规划器因此限制自己在保守的空间边界内，导致可用的赛道空间未被充分利用。为了解决这些问题，我们提出了一种基于控制信息的在线轨迹规划框架，该框架能够从自身的执行错误中学习。通过在运行时测量系统性的跟踪偏差，我们动态调整空间轨道约束，并迭代扩展自由空间规划区域。该规划器在补偿累积的执行错误的同时，仍然保持时间最优性。该方法在一个高保真闭环仿真环境中进行了分析，使用自主赛车进行测试。结果表明，我们的方法在不增加计算负担的情况下，将圈速减少了1.8秒，保持了25毫秒的中位运行时间。我们的研究发现，将控制引起的偏差反馈到规划层中，可以释放出以前对模块化架构不可及的性能，使自主车辆能够系统地利用赛道极限。",
+  "arxiv_id": "2608.14448",
+  "arxiv_url": "https://arxiv.org/abs/2608.14448v1",
+  "authors": [
+    "Ann-Kathrin Schwehn",
+    "Alexander Langmann",
+    "Mattia Piccinini",
+    "Johannes Betz"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14448",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.798527+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14448v1",
+  "published_at": "2026-08-14T16:32:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous racing",
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14448v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Control-Informed Constraint Adaptation in Minimum-Time Trajectory Planning for Autonomous Racing",
+  "title_zh": "基于控制信息的约束自适应在自主赛车最短时间轨迹规划中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2608.14448"
+}

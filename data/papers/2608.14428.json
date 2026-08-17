@@ -1,0 +1,62 @@
+{
+  "abstract": "3D object detection from LiDAR point clouds is a core problem in autonomous driving. Recent advances in self-supervised learning (SSL) enable scalable pretraining and transfers well to per-point tasks such as semantic and panoptic segmentation, but transfer to 3D detection remains weaker. We analyze recent SSL methods and find that most objectives are defined only on measured LiDAR returns from visible surfaces, leaving occluded and unobserved regions unconstrained. This visible-surface bias can be sufficient for point-wise prediction, but 3D detection requires robustness to missing structure. To address this gap, we propose GhostPoint, an SSL framework that hallucinates latent features in local neighborhoods around discovered instances, generated via a novel instance voxel dilation. In GhostPoint, an encoder processes observed returns, and an additional predictor infers neighborhood representations from observed context. In addition to standard encoder-level supervision, we introduce a predictor-level supervision scheme on sampled voxels from generated neighborhoods. Specifically, observed (visible/masked) voxels match teacher-encoder targets, while unobserved voxels match teacher-predictor hallucinations. This design encourages the learned representation to explicitly model structure beyond observed returns. Extensive evaluations on nuScenes and Waymo demonstrate that our method achieves state-of-the-art performance, consistently improving downstream 3D detection, especially under sparse scans and limited labels.",
+  "abstract_zh": "从LiDAR点云中进行3D物体检测是自动驾驶中的核心问题。最近自监督学习（SSL）的进展使得可扩展的预训练成为可能，并且在语义和全景分割等逐点任务中表现良好，但在3D检测中的迁移效果仍然较弱。我们分析了近期的SSL方法，发现大多数目标仅在来自可见表面的测量LiDAR返回上定义，导致遮挡和未观察区域没有约束。这种可见表面偏差对于逐点预测可能是足够的，但3D检测需要对缺失结构的鲁棒性。为了解决这一问题，我们提出了GhostPoint，一个SSL框架，通过一种新颖的实例体素扩张技术，在发现的实例周围的局部邻域中幻觉化潜在特征。在GhostPoint中，编码器处理观察到的返回，而额外的预测器则从观察到的上下文中推断邻域表示。除了标准的编码器级监督外，我们还在生成邻域中采样的体素上引入了预测器级监督方案。具体而言，观察到的（可见/遮挡）体素与教师编码器目标匹配，而未观察到的体素与教师预测器的幻觉匹配。这种设计鼓励学习到的表示明确建模超出观察返回的结构。在nuScenes和Waymo上的广泛评估表明，我们的方法实现了最先进的性能，持续改善下游3D检测，尤其是在稀疏扫描和有限标签的情况下。",
+  "arxiv_id": "2608.14428",
+  "arxiv_url": "https://arxiv.org/abs/2608.14428v1",
+  "authors": [
+    "Mohamed Abdelsamad",
+    "Bin Yang",
+    "Michael Ulrich",
+    "Miao Zhang",
+    "Yakov Miron",
+    "Alexandru Paul Condurache",
+    "Abhinav Valada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14428",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.849960+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14428v1",
+  "published_at": "2026-08-14T16:10:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "3d object detection",
+      "3d detection",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14428v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "3D 检测"
+    ]
+  },
+  "title": "GhostPoint: Self-Supervised Representation Learning by Hallucinating Occluded LiDAR Structure",
+  "title_zh": "GhostPoint：通过幻觉化遮挡的LiDAR结构进行自监督表示学习",
+  "translation_url": "https://hjfy.top/arxiv/2608.14428"
+}

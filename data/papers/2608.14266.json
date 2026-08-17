@@ -1,0 +1,53 @@
+{
+  "abstract": "LiDAR bundle adjustment is widely utilized in mapping to construct globally consistent point cloud maps. In this paper, we propose the first fully parallel computing framework to accelerate LiDAR bundle adjustment for large-scale mapping, incorporating three key techniques. First, we design an adaptive, asynchronous data loading strategy to efficiently process large-scale point cloud datasets on memory-constrained GPUs. Secondly, we present a novel bottom-up voxelization method for extracting planar features, enabling fully parallelized pre-processing. Thirdly, we build upon a majorization-minimization formulation to accelerate compute-intensive tasks in the optimization via parallel computation, including the computation of residuals, Jacobian and Hessian matrices, and a parallel increment solver. To support our design, we provide both theoretical and experimental analysis of the time complexity of our approach. Extensive benchmarking on large-scale public datasets across various computational platforms validates the robustness and adaptability of our approach, achieving up to a tenfold improvement in computational efficiency while preserving mapping accuracy comparable to state-of-the-art methods. To benefit future research, the implementation code is available on GitHub.",
+  "abstract_zh": "LiDAR束调整广泛应用于映射，以构建全球一致的点云地图。在本文中，我们提出了第一个完全并行计算框架，以加速大规模映射中的LiDAR束调整，结合了三项关键技术。首先，我们设计了一种自适应的异步数据加载策略，以高效处理在内存受限的GPU上大规模点云数据集。其次，我们提出了一种新颖的自下而上的体素化方法，用于提取平面特征，实现完全并行的预处理。第三，我们基于极小化主要化公式，通过并行计算加速优化中的计算密集型任务，包括残差、雅可比矩阵和海森矩阵的计算，以及并行增量求解器。为了支持我们的设计，我们提供了理论和实验分析，评估我们方法的时间复杂度。在各种计算平台上对大规模公共数据集进行的广泛基准测试验证了我们方法的鲁棒性和适应性，在保持与最先进方法相当的映射精度的同时，实现了计算效率最高可达十倍的提升。为了促进未来的研究，实施代码已在GitHub上提供。",
+  "arxiv_id": "2608.14266",
+  "arxiv_url": "https://arxiv.org/abs/2608.14266v1",
+  "authors": [
+    "Yixi Cai",
+    "Rundong Li",
+    "Yuhan Xie",
+    "Qingwen Zhang",
+    "Patric Jensfelt",
+    "Fu Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14266",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.794649+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14266v1",
+  "published_at": "2026-08-14T12:43:05Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14266v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "提出面向大规模LiDAR建图的全并行束调整框架，通过异步数据加载、并行体素化平面特征提取以及并行优化求解，提高全局一致点云地图的构建效率，最高实现约十倍加速且基本保持建图精度。该技术可用于自动驾驶中的高精地图构建与定位基础设施。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "Accelerating Large-scale Bundle Adjustment for LiDAR Mapping via Parallel Computing",
+  "title_zh": "通过并行计算加速大规模LiDAR映射的束调整",
+  "translation_url": "https://hjfy.top/arxiv/2608.14266"
+}

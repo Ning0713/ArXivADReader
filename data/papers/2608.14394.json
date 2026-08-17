@@ -1,0 +1,57 @@
+{
+  "abstract": "Perception is a fundamental component of autonomous driving systems. While LiDAR-based methods have achieved remarkable progress in object detection, their reliability can degrade under adverse weather conditions. Radar point clouds provide a robust alternative due to their resilience to bad weather and low-illumination scenarios. However, radar point clouds are typically sparse, unordered, and less informative than LiDAR data, making it challenging to directly apply existing LiDAR-based perception methods. To address these challenges, we propose IRGNN, an Invariant Radar Graph Neural Network for radar point cloud object detection. IRGNN first reconstructs radar point clouds into graph representations using translation- and rotation-invariant feature designs, enabling robust modeling of sparse radar measurements. It then employs an improved message passing neural network (MPNN) with residual connections and a virtual node layer to enhance local feature propagation and global context modeling. Finally, task-specific heads are applied to the learned graph representations for object classification and bounding box prediction. Experimental results on the RadarScenes dataset show that IRGNN outperforms existing radar-based object detection methods and achieves competitive performance. In addition, IRGNN significantly reduces computational cost and memory usage during inference, demonstrating its effectiveness and practical potential for efficient radar-based perception in autonomous driving.",
+  "abstract_zh": "感知是自动驾驶系统的一个基本组成部分。虽然基于激光雷达（LiDAR）的方法在目标检测方面取得了显著进展，但在恶劣天气条件下，它们的可靠性可能会下降。雷达点云由于其对恶劣天气和低光照场景的抗干扰能力，提供了一种稳健的替代方案。然而，雷达点云通常是稀疏的、无序的，并且信息量较激光雷达数据少，这使得直接应用现有的基于激光雷达的感知方法变得具有挑战性。为了解决这些问题，我们提出了IRGNN，一种用于雷达点云目标检测的不变雷达图神经网络。IRGNN首先通过平移和旋转不变特征设计将雷达点云重构为图表示，从而实现对稀疏雷达测量的稳健建模。然后，它采用改进的消息传递神经网络（MPNN），结合残差连接和虚拟节点层，以增强局部特征传播和全局上下文建模。最后，将特定任务的头部应用于学习到的图表示，以进行目标分类和边界框预测。在RadarScenes数据集上的实验结果表明，IRGNN的性能优于现有的基于雷达的目标检测方法，并且达到了竞争性的性能。此外，IRGNN在推理过程中显著降低了计算成本和内存使用，证明了其在自动驾驶中高效雷达感知的有效性和实际潜力。",
+  "arxiv_id": "2608.14394",
+  "arxiv_url": "https://arxiv.org/abs/2608.14394v1",
+  "authors": [
+    "Xiao Guo",
+    "Wanke Xia",
+    "Lili Yang",
+    "Caicong Wu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14394",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.848297+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14394v1",
+  "published_at": "2026-08-14T15:35:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "point cloud",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 87
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14394v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "IRGNN: Efficient Invariant Radar Graph Neural Network for Radar Point Cloud Object Detection",
+  "title_zh": "IRGNN：高效的不变雷达图神经网络用于雷达点云目标检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.14394"
+}

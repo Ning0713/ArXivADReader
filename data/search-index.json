@@ -1,6 +1,319 @@
 {
-  "generated_at": "2026-08-14T14:35:24.494955+00:00",
+  "generated_at": "2026-08-17T14:04:05.827895+00:00",
   "items": [
+    {
+      "abstract": "Articulated vehicles are the workhorses of freight transportation, and their autonomous navigation is challenging. Their physical characteristics and motion constraints pose significant challenges in manoeuvring these vehicles on narrow routes. This paper presents a spatiotemporal tube-based approach to plan autonomous navigation of vehicles like tractor semi-trailers, truck/ tractor trailers, towing Automated Guided Vehicles (AGVs), and road trains. This planning approach provides a certified path plan for the truck or tractor, ensuring that the towed series of trailers always remains within the road corridor, limited by permissible corrections. The planning leverages the kinematics of the linked elements along with sway constraints to arrive at a safe tube for the actuated prime mover. We modify the spatiotemporal tube using permissible corrections to provide a route safety certificate to the vehicle for the given route. The proposed planning method is verified on a truck-trailer navigation simulation for a complex route.",
+      "abstract_zh": "关节车辆是货物运输的主力军，其自主导航面临诸多挑战。它们的物理特性和运动约束在狭窄路线上的操控中带来了显著的困难。本文提出了一种基于时空管道的方法，用于规划像拖拉机半挂车、卡车/拖拉机拖车、拖曳自动导引车（AGVs）和公路列车等车辆的自主导航。该规划方法为卡车或拖拉机提供了经过认证的路径规划，确保被拖动的系列拖车始终保持在道路走廊内，并受到允许的修正限制。该规划利用了连接元素的运动学以及摆动约束，以确定驱动主机的安全管道。我们通过允许的修正对时空管道进行修改，为车辆在给定路线上的行驶提供安全证书。所提出的规划方法在复杂路线的卡车-拖车导航仿真中得到了验证。",
+      "authors": [
+        "Mohd. Faizuddin Faruqui",
+        "Ratnangshu Das",
+        "Ravi Kumar L",
+        "Pushpak Jagtap"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14531",
+      "tags": [
+        "预测/规划",
+        "安全/异常",
+        "仿真/数据"
+      ],
+      "title": "Spatiotemporal Tube-Based Safety-Certificate for Autonomous Navigation of Articulated Vehicles",
+      "title_zh": "基于时空管道的自主导航关节车辆安全证书",
+      "url": "/daily/2026-08-17/#paper-2608-14531"
+    },
+    {
+      "abstract": "Autonomous racecars operate at the limits of vehicle dynamics, where small control errors translate into safety-critical behavior and lost performance. Trajectory planners assume perfect tracking and remain blind to execution errors. To guarantee safety, trajectory planners therefore restrict themselves to conservative spatial margins, leaving usable track space untapped. To overcome these issues, we introduce a control-informed online trajectory planning framework that learns from its own execution errors. By measuring systematic tracking deviations during runtime, we dynamically adapt spatial track constraints and iteratively expand the free-space planning area. The planner remains time-optimal while compensating for accumulated execution errors. This method was analyzed in a high-fidelity closed-loop simulation environment with autonomous racecars. The results demonstrate that our approach reduces lap time by 1.8\\,s without increasing computational burden, maintaining a median runtime of 25 ms. Our finding indicates that feeding control-induced deviations back into the planning layer unlocks performance previously inaccessible to modular architectures and enables autonomous vehicles to exploit track limits systematically.",
+      "abstract_zh": "自主赛车在车辆动力学的极限状态下运行，微小的控制误差会导致安全关键行为和性能损失。轨迹规划器假设完美跟踪，并对执行错误视而不见。为了保证安全，轨迹规划器因此限制自己在保守的空间边界内，导致可用的赛道空间未被充分利用。为了解决这些问题，我们提出了一种基于控制信息的在线轨迹规划框架，该框架能够从自身的执行错误中学习。通过在运行时测量系统性的跟踪偏差，我们动态调整空间轨道约束，并迭代扩展自由空间规划区域。该规划器在补偿累积的执行错误的同时，仍然保持时间最优性。该方法在一个高保真闭环仿真环境中进行了分析，使用自主赛车进行测试。结果表明，我们的方法在不增加计算负担的情况下，将圈速减少了1.8秒，保持了25毫秒的中位运行时间。我们的研究发现，将控制引起的偏差反馈到规划层中，可以释放出以前对模块化架构不可及的性能，使自主车辆能够系统地利用赛道极限。",
+      "authors": [
+        "Ann-Kathrin Schwehn",
+        "Alexander Langmann",
+        "Mattia Piccinini",
+        "Johannes Betz"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14448",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Control-Informed Constraint Adaptation in Minimum-Time Trajectory Planning for Autonomous Racing",
+      "title_zh": "基于控制信息的约束自适应在自主赛车最短时间轨迹规划中的应用",
+      "url": "/daily/2026-08-17/#paper-2608-14448"
+    },
+    {
+      "abstract": "3D object detection from LiDAR point clouds is a core problem in autonomous driving. Recent advances in self-supervised learning (SSL) enable scalable pretraining and transfers well to per-point tasks such as semantic and panoptic segmentation, but transfer to 3D detection remains weaker. We analyze recent SSL methods and find that most objectives are defined only on measured LiDAR returns from visible surfaces, leaving occluded and unobserved regions unconstrained. This visible-surface bias can be sufficient for point-wise prediction, but 3D detection requires robustness to missing structure. To address this gap, we propose GhostPoint, an SSL framework that hallucinates latent features in local neighborhoods around discovered instances, generated via a novel instance voxel dilation. In GhostPoint, an encoder processes observed returns, and an additional predictor infers neighborhood representations from observed context. In addition to standard encoder-level supervision, we introduce a predictor-level supervision scheme on sampled voxels from generated neighborhoods. Specifically, observed (visible/masked) voxels match teacher-encoder targets, while unobserved voxels match teacher-predictor hallucinations. This design encourages the learned representation to explicitly model structure beyond observed returns. Extensive evaluations on nuScenes and Waymo demonstrate that our method achieves state-of-the-art performance, consistently improving downstream 3D detection, especially under sparse scans and limited labels.",
+      "abstract_zh": "从LiDAR点云中进行3D物体检测是自动驾驶中的核心问题。最近自监督学习（SSL）的进展使得可扩展的预训练成为可能，并且在语义和全景分割等逐点任务中表现良好，但在3D检测中的迁移效果仍然较弱。我们分析了近期的SSL方法，发现大多数目标仅在来自可见表面的测量LiDAR返回上定义，导致遮挡和未观察区域没有约束。这种可见表面偏差对于逐点预测可能是足够的，但3D检测需要对缺失结构的鲁棒性。为了解决这一问题，我们提出了GhostPoint，一个SSL框架，通过一种新颖的实例体素扩张技术，在发现的实例周围的局部邻域中幻觉化潜在特征。在GhostPoint中，编码器处理观察到的返回，而额外的预测器则从观察到的上下文中推断邻域表示。除了标准的编码器级监督外，我们还在生成邻域中采样的体素上引入了预测器级监督方案。具体而言，观察到的（可见/遮挡）体素与教师编码器目标匹配，而未观察到的体素与教师预测器的幻觉匹配。这种设计鼓励学习到的表示明确建模超出观察返回的结构。在nuScenes和Waymo上的广泛评估表明，我们的方法实现了最先进的性能，持续改善下游3D检测，尤其是在稀疏扫描和有限标签的情况下。",
+      "authors": [
+        "Mohamed Abdelsamad",
+        "Bin Yang",
+        "Michael Ulrich",
+        "Miao Zhang",
+        "Yakov Miron",
+        "Alexandru Paul Condurache",
+        "Abhinav Valada"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14428",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "3D 检测"
+      ],
+      "title": "GhostPoint: Self-Supervised Representation Learning by Hallucinating Occluded LiDAR Structure",
+      "title_zh": "GhostPoint：通过幻觉化遮挡的LiDAR结构进行自监督表示学习",
+      "url": "/daily/2026-08-17/#paper-2608-14428"
+    },
+    {
+      "abstract": "We present a survey of the past and future of AI Scientists: machines capable of automating science. AI Scientists can originate hypotheses, deduce their consequences, design and execute experiments, interpret their results, and revise their beliefs. Such systems are integrated scientific agents, connected to the literature, formal knowledge, mathematical models, simulations, data-analysis systems and physical laboratories. Adam was the first machine to make novel scientific discoveries through cycles of hypothesis formation and physical experimentation. Eve established the architecture of the modern self-driving laboratory. Foundation models, autonomous agents and laboratory robotics now make it possible to build systems far more general than either Adam or Eve. The central problem is no longer whether individual components of science can be automated. They can. The problem is integration. AI Scientists must combine neural learning with logic, probability, mathematics, causal reasoning, simulation, experimental design, robotics and formal scientific records. AI Scientists have the potential to transform science: to make science faster, cheaper, more systematic and more reproducible. AI Scientists could investigate systems too complicated for unaided human science, and enable thousands of AI scientists to work together on single problems. The Nobel Turing Challenge sets the goal of developing by 2050 AI systems capable of automating Nobel-quality discoveries. Progress is ahead of schedule. When we succeed it will create a new form of science and transform the world.",
+      "abstract_zh": "我们对人工智能科学家的过去与未来进行了调查：这些机器能够自动化科学研究。人工智能科学家可以提出假设、推导其后果、设计并执行实验、解释结果并修正信念。这些系统是集成的科学代理，连接着文献、形式知识、数学模型、模拟、数据分析系统和物理实验室。亚当是第一台通过假设形成和物理实验循环进行新科学发现的机器。夏娃建立了现代自动化实验室的架构。基础模型、自治代理和实验室机器人现在使得构建比亚当或夏娃更为通用的系统成为可能。核心问题不再是科学的个别组成部分是否可以被自动化——它们可以。问题在于整合。人工智能科学家必须将神经学习与逻辑、概率、数学、因果推理、模拟、实验设计、机器人技术和正式科学记录相结合。人工智能科学家有潜力改变科学：使科学变得更快、更便宜、更系统和更可重复。人工智能科学家可以研究过于复杂而无法依靠人类科学独立解决的系统，并使成千上万的人工智能科学家能够共同研究单一问题。诺贝尔图灵挑战设定了到2050年开发能够自动化诺贝尔级发现的人工智能系统的目标。进展超出了预期。当我们成功时，它将创造一种新的科学形式并改变世界。",
+      "authors": [
+        "Ross D. King"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14407",
+      "tags": [
+        "仿真/数据"
+      ],
+      "title": "The Past and Future of AI Scientists",
+      "title_zh": "人工智能科学家的过去与未来",
+      "url": "/daily/2026-08-17/#paper-2608-14407"
+    },
+    {
+      "abstract": "Perception is a fundamental component of autonomous driving systems. While LiDAR-based methods have achieved remarkable progress in object detection, their reliability can degrade under adverse weather conditions. Radar point clouds provide a robust alternative due to their resilience to bad weather and low-illumination scenarios. However, radar point clouds are typically sparse, unordered, and less informative than LiDAR data, making it challenging to directly apply existing LiDAR-based perception methods. To address these challenges, we propose IRGNN, an Invariant Radar Graph Neural Network for radar point cloud object detection. IRGNN first reconstructs radar point clouds into graph representations using translation- and rotation-invariant feature designs, enabling robust modeling of sparse radar measurements. It then employs an improved message passing neural network (MPNN) with residual connections and a virtual node layer to enhance local feature propagation and global context modeling. Finally, task-specific heads are applied to the learned graph representations for object classification and bounding box prediction. Experimental results on the RadarScenes dataset show that IRGNN outperforms existing radar-based object detection methods and achieves competitive performance. In addition, IRGNN significantly reduces computational cost and memory usage during inference, demonstrating its effectiveness and practical potential for efficient radar-based perception in autonomous driving.",
+      "abstract_zh": "感知是自动驾驶系统的一个基本组成部分。虽然基于激光雷达（LiDAR）的方法在目标检测方面取得了显著进展，但在恶劣天气条件下，它们的可靠性可能会下降。雷达点云由于其对恶劣天气和低光照场景的抗干扰能力，提供了一种稳健的替代方案。然而，雷达点云通常是稀疏的、无序的，并且信息量较激光雷达数据少，这使得直接应用现有的基于激光雷达的感知方法变得具有挑战性。为了解决这些问题，我们提出了IRGNN，一种用于雷达点云目标检测的不变雷达图神经网络。IRGNN首先通过平移和旋转不变特征设计将雷达点云重构为图表示，从而实现对稀疏雷达测量的稳健建模。然后，它采用改进的消息传递神经网络（MPNN），结合残差连接和虚拟节点层，以增强局部特征传播和全局上下文建模。最后，将特定任务的头部应用于学习到的图表示，以进行目标分类和边界框预测。在RadarScenes数据集上的实验结果表明，IRGNN的性能优于现有的基于雷达的目标检测方法，并且达到了竞争性的性能。此外，IRGNN在推理过程中显著降低了计算成本和内存使用，证明了其在自动驾驶中高效雷达感知的有效性和实际潜力。",
+      "authors": [
+        "Xiao Guo",
+        "Wanke Xia",
+        "Lili Yang",
+        "Caicong Wu"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14394",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "仿真/数据"
+      ],
+      "title": "IRGNN: Efficient Invariant Radar Graph Neural Network for Radar Point Cloud Object Detection",
+      "title_zh": "IRGNN：高效的不变雷达图神经网络用于雷达点云目标检测",
+      "url": "/daily/2026-08-17/#paper-2608-14394"
+    },
+    {
+      "abstract": "Reinforcement learning is promising for autonomous urban driving, but long-horizon goal-directed navigation asks a policy to acquire several competing behaviors at once--reaching a distant goal, tracking a route, avoiding obstacles, obeying signals--and a fixed objective gives no order in which to learn them. This paper presents CORAL, which advances two schedules together: a five-stage curriculum that progressively lengthens routes and tightens behavioral constraints, and a stage-aware reward whose component weights shift emphasis from mission progress toward route following, safety, smoothness, and rule compliance as the task hardens. The policy is a multi-stream actor-critic network trained with Proximal Policy Optimization (PPO) in CARLA on a compact 99-dimensional state pairing a polar LiDAR histogram with vehicle telemetry, ego-frame route geometry, and traffic-rule indicators--no point-cloud encoder, no bird's-eye-view rasterization. Against two PPO baselines under an identical protocol, CORAL reaches the goal in all twenty evaluation episodes on the longest routes under the full set of behavioral constraints, where the baselines reach 5% and 10%; a factorial ablation shows that neither schedule alone matches their combination: removing either lowers both success and route completion, and disabling both drops success to 55%. Trained in one town, the policy transfers zero-shot to seven unseen towns, succeeding in 68-98% of episodes on routes of the same 100-150 m length, with mean lateral deviation below 0.35 m.",
+      "abstract_zh": "强化学习在自主城市驾驶中展现出良好的前景，但长时间目标导向导航要求策略同时获得多种竞争行为——到达远处目标、跟踪路线、避免障碍、遵守信号——而固定目标并未提供学习这些行为的顺序。本文提出了CORAL，它同时推进两种调度：一个五阶段的课程，逐步延长路线并收紧行为约束，以及一个阶段感知的奖励，其组成权重随着任务难度的增加，从任务进展转向路线跟随、安全性、平稳性和规则遵守。该策略是一个多流的演员-评论家网络，在CARLA中使用近端策略优化（PPO）进行训练，状态为紧凑的99维，结合了极坐标激光雷达直方图、车辆遥测、自我框架路线几何和交通规则指示器——没有点云编码器，没有鸟瞰图栅格化。在相同协议下的两个PPO基线中，CORAL在最长路线的所有二十个评估回合中都成功到达目标，而基线仅达到5%和10%；一个因子消融实验表明，单独的调度无法匹配它们的组合：去掉任一调度都会降低成功率和路线完成率，而禁用两个调度则使成功率降至55%。在一个城镇训练后，该策略在七个未见过的城镇中零次转移，在相同长度为100-150米的路线中成功率为68%-98%，平均横向偏差低于0.35米。",
+      "authors": [
+        "Anisa Saleem",
+        "Duksu Kim"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14332",
+      "tags": [
+        "LiDAR/点云",
+        "感知",
+        "深度/几何"
+      ],
+      "title": "CORAL: Curriculum-Optimized Reward Adaptation for LiDAR-Based Goal-Directed Urban Driving",
+      "title_zh": "CORAL：基于激光雷达的目标导向城市驾驶的课程优化奖励适应",
+      "url": "/daily/2026-08-17/#paper-2608-14332"
+    },
+    {
+      "abstract": "Monocular temporal 3D detection aims to detect objects in 3D, given a monocular video. Query-based 3D detectors unify detection and cross-view association, but their learnable queries fit the spatial distribution of the training data (e.g., field-of-view). We show that this issue is especially severe when these models are applied to monocular video, hindering generalization to unseen datasets and environments. To address this limitation, we introduce MAGneT-3D, the first method for domain-generalized monocular temporal 3D object detection. Instead of relying on static learnable queries, we propose a Domain-Robust Anchor Generator (DRAG) approach that adaptively derives 3D proposals during inference. To further enable domain generalization, we propose a Temporal Refinement and Identity Merging (TRIM) strategy, reducing dependence on specific 3D proposals. To enable comprehensive domain-generalization evaluation, we establish a cross-dataset benchmark spanning nuScenes, Waymo, Lyft, and ONCE. Under zero-shot domain shifts, MAGneT-3D outperforms all baselines, improving NDS from 12.1% to 18.6% while also increasing in-domain accuracy.",
+      "abstract_zh": "单目时序三维检测旨在根据单目视频检测三维物体。基于查询的三维检测器统一了检测和跨视图关联，但其可学习的查询适应于训练数据的空间分布（例如，视场）。我们表明，当这些模型应用于单目视频时，这一问题尤其严重，阻碍了对未见数据集和环境的泛化。为了解决这一限制，我们提出了MAGneT-3D，这是首个用于领域通用的单目时序三维物体检测的方法。我们不再依赖静态的可学习查询，而是提出了一种领域鲁棒锚生成器（Domain-Robust Anchor Generator, DRAG）方法，该方法在推理过程中自适应地产生三维提议。为了进一步实现领域泛化，我们提出了一种时序精炼与身份合并（Temporal Refinement and Identity Merging, TRIM）策略，减少对特定三维提议的依赖。为了实现全面的领域泛化评估，我们建立了一个跨数据集基准，涵盖nuScenes、Waymo、Lyft和ONCE。在零样本领域转移下，MAGneT-3D超越了所有基线，将NDS从12.1%提升至18.6%，同时也提高了领域内的准确性。",
+      "authors": [
+        "Mohamed Kotb",
+        "Johannes Meier",
+        "Christoph Reich",
+        "Oussema Dhaouadi",
+        "Luis Denninger",
+        "Daniel Cremers"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14282",
+      "tags": [
+        "3D 检测",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "MAGneT-3D: Monocular and Domain-Generalizable Temporal 3D Detection",
+      "title_zh": "MAGneT-3D：单目和领域通用的时序三维检测",
+      "url": "/daily/2026-08-17/#paper-2608-14282"
+    },
+    {
+      "abstract": "LiDAR bundle adjustment is widely utilized in mapping to construct globally consistent point cloud maps. In this paper, we propose the first fully parallel computing framework to accelerate LiDAR bundle adjustment for large-scale mapping, incorporating three key techniques. First, we design an adaptive, asynchronous data loading strategy to efficiently process large-scale point cloud datasets on memory-constrained GPUs. Secondly, we present a novel bottom-up voxelization method for extracting planar features, enabling fully parallelized pre-processing. Thirdly, we build upon a majorization-minimization formulation to accelerate compute-intensive tasks in the optimization via parallel computation, including the computation of residuals, Jacobian and Hessian matrices, and a parallel increment solver. To support our design, we provide both theoretical and experimental analysis of the time complexity of our approach. Extensive benchmarking on large-scale public datasets across various computational platforms validates the robustness and adaptability of our approach, achieving up to a tenfold improvement in computational efficiency while preserving mapping accuracy comparable to state-of-the-art methods. To benefit future research, the implementation code is available on GitHub.",
+      "abstract_zh": "LiDAR束调整广泛应用于映射，以构建全球一致的点云地图。在本文中，我们提出了第一个完全并行计算框架，以加速大规模映射中的LiDAR束调整，结合了三项关键技术。首先，我们设计了一种自适应的异步数据加载策略，以高效处理在内存受限的GPU上大规模点云数据集。其次，我们提出了一种新颖的自下而上的体素化方法，用于提取平面特征，实现完全并行的预处理。第三，我们基于极小化主要化公式，通过并行计算加速优化中的计算密集型任务，包括残差、雅可比矩阵和海森矩阵的计算，以及并行增量求解器。为了支持我们的设计，我们提供了理论和实验分析，评估我们方法的时间复杂度。在各种计算平台上对大规模公共数据集进行的广泛基准测试验证了我们方法的鲁棒性和适应性，在保持与最先进方法相当的映射精度的同时，实现了计算效率最高可达十倍的提升。为了促进未来的研究，实施代码已在GitHub上提供。",
+      "authors": [
+        "Yixi Cai",
+        "Rundong Li",
+        "Yuhan Xie",
+        "Qingwen Zhang",
+        "Patric Jensfelt",
+        "Fu Zhang"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14266",
+      "tags": [
+        "地图/定位",
+        "LiDAR/点云",
+        "深度/几何"
+      ],
+      "title": "Accelerating Large-scale Bundle Adjustment for LiDAR Mapping via Parallel Computing",
+      "title_zh": "通过并行计算加速大规模LiDAR映射的束调整",
+      "url": "/daily/2026-08-17/#paper-2608-14266"
+    },
+    {
+      "abstract": "Cooperative perception among multiple unmanned surface vehicles (USVs) combines complementary observations to extend maritime target sensing beyond the view range and field of a single platform. Developing such systems at scale calls for a unified workflow for configurable multi-USV scenarios, multimodal acquisition, and shared annotations. We present MMUSV-Sim, a perception-oriented maritime simulation and data-generation platform built on Unreal Engine 5 and Project AirSim. It provides island, open-sea, and port environments; configurable weather, time of day, and wave conditions; a diverse vessel asset library; and spline-based multi-vessel motion. MMUSV-Sim acquires RGB, depth, semantic, LiDAR, and radar observations across multiple USVs and captures a common world state for per-agent annotation export. Experiments verify that the configured wave settings produce the intended changes in vessel heave, roll, and pitch, and evaluate the geometric consistency between projected annotations and semantic renderings. In LiDAR-based cooperative BEV vessel detection experiments on the generated multi-USV dataset, Early Fusion achieves an [email protected] of 72.74, compared with 45.54 using a single USV.",
+      "abstract_zh": "多无人水面艇（USV）之间的协同感知通过结合互补观察，扩展了海洋目标感知的范围，超出了单个平台的视野和领域。大规模开发此类系统需要一个统一的工作流程，以支持可配置的多USV场景、多模态采集和共享注释。我们提出了MMUSV-Sim，这是一个基于虚幻引擎5（Unreal Engine 5）和Project AirSim构建的面向感知的海洋仿真与数据生成平台。它提供了岛屿、开阔海域和港口环境；可配置的天气、时间和波浪条件；多样的船舶资产库；以及基于样条曲线的多船舶运动。MMUSV-Sim在多个USV上获取RGB、深度、语义、激光雷达（LiDAR）和雷达观察，并捕获每个代理的共同世界状态以便进行注释导出。实验验证了配置的波浪设置在船舶的纵摇、横摇和俯仰方面产生了预期的变化，并评估了投影注释与语义渲染之间的几何一致性。在基于LiDAR的协同鸟瞰视角（BEV）船舶检测实验中，使用生成的多USV数据集，早期融合（Early Fusion）方法在 [email protected] 上达到了72.74，而单个USV的结果为45.54。",
+      "authors": [
+        "Ziao Li",
+        "Jianxiong Ye",
+        "Biao Tang",
+        "Leping Zhang",
+        "Kun Zuo",
+        "Siyu Huang",
+        "Chenqiang Gao"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14207",
+      "tags": [
+        "仿真/数据",
+        "协同/V2X",
+        "多传感器融合"
+      ],
+      "title": "MMUSV-Sim: A Perception-Oriented Simulation and Data-Generation Platform for Multi-USV Cooperative Perception",
+      "title_zh": "MMUSV-Sim：面向感知的多无人水面艇协同感知仿真与数据生成平台",
+      "url": "/daily/2026-08-17/#paper-2608-14207"
+    },
+    {
+      "abstract": "Large language models (LLMs) have shown remarkable reasoning and generative capabilities, motivating their use as universal reasoning engines for perception. While modern approaches such as vision-language models (VLMs) have attempted to incorporate reasoning capabilities into visual sensing, the integration of LLMs with the millimeter-wave (mmWave) modality-despite its unique advantages under low light and occlusion-remains largely unexplored. The principal bottlenecks stem from the scarcity of radar language pairs, severe cross-dataset heterogeneity, and the absence of a foundational mmWave encoder. We address this gap through a minimal textualization interface that serializes each mmWave point cloud into concise natural language, allowing off-the-shelf LLMs to operate in a question answering (QA) setting. Building on this, we present mmWave-QA, the first benchmark for language-conditioned mmWave human perception. mmWave-QA aggregates heterogeneous public mmWave datasets and harmonizes them via calibration-aware preprocessing and global taxonomy alignment, while providing natural language QA. Spanning six scenarios and five QA tasks, the benchmark enables standardized evaluation across diverse mmWave hardware and experimental conditions, establishing a foundation for scalable research on mmWave-LLM integration. We further evaluate and analyze LLMs on our mmWave-QA, highlighting their zero-shot reasoning potential for radar perception, as well as their robustness under visual degradation.",
+      "abstract_zh": "大型语言模型（LLMs）展现了卓越的推理和生成能力，这激励了它们作为感知的通用推理引擎的应用。尽管现代方法如视觉-语言模型（VLMs）已尝试将推理能力融入视觉感知，但将LLMs与毫米波（mmWave）模态结合的研究仍然相对较少，尽管其在低光照和遮挡条件下具有独特优势。主要瓶颈在于雷达语言对的稀缺、跨数据集的严重异质性以及缺乏基础的mmWave编码器。我们通过一个最小文本化接口来解决这一问题，该接口将每个mmWave点云序列化为简洁的自然语言，从而使现成的LLMs能够在问答（QA）环境中运行。在此基础上，我们提出了mmWave-QA，这是第一个针对语言条件下mmWave人类感知的基准测试。mmWave-QA汇集了异质的公共mmWave数据集，并通过校准感知的预处理和全球分类法对齐进行统一，同时提供自然语言问答。该基准涵盖六种场景和五个QA任务，能够在不同的mmWave硬件和实验条件下进行标准化评估，为mmWave-LLM集成的可扩展研究奠定基础。我们进一步在mmWave-QA上评估和分析LLMs，突出了它们在雷达感知中的零-shot推理潜力，以及在视觉退化下的鲁棒性。",
+      "authors": [
+        "Jeongwan Shin",
+        "Jaehyeon Kim",
+        "Donguk Ko",
+        "Jaeho Choi"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14179",
+      "tags": [
+        "Radar",
+        "感知",
+        "VLM/VLA"
+      ],
+      "title": "Can Language Models Understand mmWave Data? Benchmarking Large Language Models for mmWave Radar-Based Human Understanding",
+      "title_zh": "语言模型能理解毫米波数据吗？基于毫米波雷达的人类理解的大型语言模型基准测试",
+      "url": "/daily/2026-08-17/#paper-2608-14179"
+    },
+    {
+      "abstract": "Collaborative perception breaks through single-view limitations via multi-agent information exchange. However, multi-source noise such as pose errors and communication delays degrades fusion feature quality, constraining perception performance. Joint training of detection and BEV segmentation provides a natural remedy, where segmented road regions help constrain target distributions and detection bounding boxes help recover ambiguous segmentation boundaries. To this end, we propose a robust Collaborative perception framework with expert-driven Detection and bev Segmentation (CoDS). To address spatial inconsistency in fusion quality, we first introduce the Collaborative Reliability Map (CoRM) to explicitly quantify feature quality distribution. Based on CoRM, we design the Semantic Mixture-of-Experts (S-MoE) module to extract differentiated features for inconsistent feature demands. Finally, to further mitigate feature noise degradation, the Bidirectional Task Complementary Interaction (BTCI) refines task-aware features through bidirectional injection. Extensive experiments on OPV2V and V2V4Real datasets show that our CoDS surpasses existing baselines on both tasks and maintains stable robustness under multi-source noise. Code: https://github.com/JinlongW128/CoDS and https://openi.pcl.ac.cn/OpenAIDriving/CoDS.",
+      "abstract_zh": "协同感知通过多智能体信息交换突破了单视角的局限。然而，姿态误差和通信延迟等多源噪声降低了融合特征的质量，从而限制了感知性能。检测与鸟瞰视图（BEV）分割的联合训练提供了一种自然的解决方案，其中分割的道路区域有助于约束目标分布，而检测边界框则有助于恢复模糊的分割边界。为此，我们提出了一种稳健的协同感知框架，称为专家驱动的检测与鸟瞰视图分割（CoDS）。为了解决融合质量中的空间不一致性，我们首先引入了协同可靠性图（CoRM），以明确量化特征质量分布。基于CoRM，我们设计了语义专家混合（S-MoE）模块，以提取针对不一致特征需求的差异化特征。最后，为了进一步减轻特征噪声的降解，双向任务互补交互（BTCI）通过双向注入来精炼任务感知特征。在OPV2V和V2V4Real数据集上的大量实验表明，我们的CoDS在这两项任务上超越了现有基线，并在多源噪声下保持了稳定的鲁棒性。代码链接： https://github.com/JinlongW128/CoDS 和 https://openi.pcl.ac.cn/OpenAIDriving/CoDS。",
+      "authors": [
+        "Jinlong Wang",
+        "Yuang Jia",
+        "Junhong Lin",
+        "Nannan Li",
+        "Wei Gao"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14085",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "BEV/Occupancy"
+      ],
+      "title": "CoDS: Robust Collaborative Perception via Expert-driven Detection and BEV Segmentation",
+      "title_zh": "CoDS：通过专家驱动的检测和鸟瞰视图分割实现稳健的协同感知",
+      "url": "/daily/2026-08-17/#paper-2608-14085"
+    },
+    {
+      "abstract": "Vision-language-action (VLA) models for autonomous driving jointly produce scene interpretation, language-based reasoning, and driving trajectories. Existing evaluations often use independently selected synthetic, simulated, and physical data, so measured performance gaps can be confounded by changes in scenario content rather than genuine domain sensitivity. We propose SSP (Synthetic-Simulation-Physical), an event-matched Syn2Sim2Phy evaluation framework that anchors cross-domain comparison to the same safety-critical interaction. Starting from a synthetic long-tail video, SSP builds a validated event specification that preserves road topology, participant roles, relative motion, conflict evolution, passing order, response constraints, and event phases. Platform-specific realizations are then constructed in CARLA and on a closed proving ground and are evaluated only after transfer audits confirm preservation of mandatory event properties. SSP maps heterogeneous outputs from OpenEMMA, LLaViDA, and Alpamayo-R1 into common semantic slots and a 1 s trajectory window to assess output validity, semantic accuracy, critical-interaction recognition, trajectory quality, and risk response. Across Cut-in and vulnerable-road-user crossing cases, the macro-averaged Integrated VLA Capability Scores are 0.259, 0.291, and 0.325 in the Synthetic, Simulation, and Physical domains, respectively, while the best domain varies by scenario. Alpamayo-R1, OpenEMMA, and LLaViDA obtain scores of 0.405, 0.338, and 0.131. SSP provides a reproducible scene-transfer chain and an evidence-qualified evaluation of VLA behavior without assuming that the Physical domain is universally superior.",
+      "abstract_zh": "自主驾驶的视觉-语言-行动（VLA）模型共同生成场景解释、基于语言的推理和驾驶轨迹。现有评估通常使用独立选择的合成、模拟和物理数据，因此测量的性能差距可能受到场景内容变化的干扰，而非真实的领域敏感性。我们提出了SSP（合成-模拟-物理），一种事件匹配的Syn2Sim2Phy评估框架，将跨域比较锚定到相同的安全关键交互上。从合成的长尾视频开始，SSP构建了一个经过验证的事件规范，保留了道路拓扑、参与者角色、相对运动、冲突演变、通过顺序、响应约束和事件阶段。然后在CARLA平台和封闭试验场构建特定平台的实现，并仅在转移审核确认保留强制事件属性后进行评估。SSP将来自OpenEMMA、LLaViDA和Alpamayo-R1的异构输出映射到共同的语义槽和1秒的轨迹窗口，以评估输出有效性、语义准确性、关键交互识别、轨迹质量和风险响应。在切入和脆弱道路使用者穿越的案例中，合成、模拟和物理领域的宏观平均综合VLA能力分数分别为0.259、0.291和0.325，而最佳领域因场景而异。Alpamayo-R1、OpenEMMA和LLaViDA的得分分别为0.405、0.338和0.131。SSP提供了一个可重复的场景转移链和对VLA行为的证据合格评估，而不假设物理领域在普遍意义上优于其他领域。",
+      "authors": [
+        "Haojie Feng",
+        "Peizhi Zhang",
+        "Xinrui Zhang",
+        "Zhuoren Li",
+        "Junpeng Huang",
+        "Xiurong Wang",
+        "Dongxiao Yin",
+        "Yuxiang Zhang",
+        "Junfan Zhu",
+        "Lu Xiong"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.14024",
+      "tags": [
+        "VLM/VLA",
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "SSP: An Event-Matched Syn2Sim2Phy Cross-Domain Evaluation Framework for Autonomous Driving VLA Models",
+      "title_zh": "SSP：一种事件匹配的Syn2Sim2Phy跨域评估框架用于自主驾驶VLA模型",
+      "url": "/daily/2026-08-17/#paper-2608-14024"
+    },
+    {
+      "abstract": "Urban traffic management relies on sensor networks whose spatial coverage is limited by deployment costs and privacy regulations. Machine learning models trained on such sparse data cannot generalize to unmonitored locations and must be retrained whenever the sensor infrastructure changes. We propose a simulation-based methodology that addresses this problem by generating augmented traffic count datasets in which each physical sensor is replaced by a virtual sensor placed at a surrogate location in the road network. Virtual sensors are selected by a graph-search heuristic that jointly maximises vehicle-flow continuity and traffic-metric similarity between the original and surrogate locations, while enforcing a minimum spatial displacement to ensure diversity of observed traffic conditions. We validate the method on two Belgian cities: Brussels, using a calibrated model, and Namur, using synthetic models. The augmented datasets preserve the bimodal daily demand profile and the dynamics of traffic at the observed locations.",
+      "abstract_zh": "城市交通管理依赖于传感器网络，但其空间覆盖受到部署成本和隐私法规的限制。基于稀疏数据训练的机器学习模型无法推广到未监测的位置，并且每当传感器基础设施发生变化时必须重新训练。我们提出了一种基于仿真的方法，通过生成增强的交通计数数据集来解决这一问题，其中每个物理传感器被替换为在道路网络中放置的虚拟传感器。虚拟传感器的选择采用图搜索启发式算法，旨在最大化车辆流动的连续性和原始位置与替代位置之间的交通指标相似性，同时强制执行最小空间位移以确保观察到的交通条件的多样性。我们在比利时的两个城市进行验证：布鲁塞尔（Brussels），使用经过校准的模型，以及纳慕尔（Namur），使用合成模型。增强的数据集保留了双峰的日需求曲线和观察位置的交通动态。",
+      "authors": [
+        "Davide Andrea Guastella",
+        "Eladio Montero Porras",
+        "Evangelos Pournaras",
+        "Gianluca Bontempi"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.13993",
+      "tags": [
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "Simulation-Driven Vehicular Traffic Data Augmentation: Extending Sensor Coverage Through Virtual Sensing",
+      "title_zh": "基于仿真的车辆交通数据增强：通过虚拟传感器扩展传感器覆盖范围",
+      "url": "/daily/2026-08-17/#paper-2608-13993"
+    },
+    {
+      "abstract": "In mixed traffic, decision-making for autonomous vehicles (AVs) confronts three interrelated challenges. First, physics-based priors incorporated into reinforcement learning (RL) models fail to capture latent interactive vehicle intentions and diverse driver behaviors, limiting the proactive reasoning capabilities. Second, abrupt maneuvers by surrounding vehicles cause non-stationarity, leaving long-tail safety events under-explored. Third, hybrid action spaces destabilize unified RL training due to the different temporal scales of continuous car-following and discrete lane-changing maneuvers. To address these issues, we propose Knowledge-Data Dual-driven Reinforcement Learning (KDDRL). First, a conditional deep generative model synthesizes intention-aware future trajectories, converting passive perception into proactive predictive states. Second, a knowledge-data dual-driven paradigm operates on these predictive states, fusing probabilistic data-driven insights with physical constraints to guide safe exploration through safety-critical scenarios. Third, a coupling module compresses both intention-aware trajectories and physical constraints into compact shared embeddings. This unified representation enables asynchronous multi-timescale optimization of continuous car-following and discrete lane-changing while preserving mutual information. Evaluations on dataset-calibrated simulations demonstrate that KDDRL effectively handles intention uncertainty, accelerates training convergence, and outperforms conventional baseline methods in terms of safety, efficiency, and comfort.",
+      "abstract_zh": "在混合交通中，自主车辆（AVs）的决策面临三个相互关联的挑战。首先，基于物理的先验知识融入强化学习（RL）模型中，无法捕捉潜在的互动车辆意图和多样化的驾驶行为，从而限制了主动推理能力。其次，周围车辆的突然操控导致非平稳性，使得长尾安全事件未得到充分探索。第三，混合动作空间由于连续跟车和离散变道操控的不同时间尺度而使统一的RL训练不稳定。为了解决这些问题，我们提出了知识-数据双驱动强化学习（KDDRL）。首先，一个条件深度生成模型合成意图感知的未来轨迹，将被动感知转化为主动预测状态。其次，知识-数据双驱动范式在这些预测状态上运行，将基于概率的数据驱动洞察与物理约束相融合，以指导在安全关键场景中的安全探索。第三，一个耦合模块将意图感知的轨迹和物理约束压缩为紧凑的共享嵌入。这种统一表示使得连续跟车和离散变道的异步多时间尺度优化成为可能，同时保持互信息。对数据集校准的模拟评估表明，KDDRL有效地处理了意图不确定性，加速了训练收敛，并在安全性、效率和舒适性方面超越了传统基线方法。",
+      "authors": [
+        "Jie Fang",
+        "Wei Zheng",
+        "Mengyun Xu",
+        "Eui-Jin Kim"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.13878",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "安全/异常"
+      ],
+      "title": "Knowledge-Data-Dual-Driven Reinforcement Learning for Autonomous Vehicle Control in Mixed Traffic",
+      "title_zh": "知识-数据双驱动强化学习在混合交通中的自主车辆控制",
+      "url": "/daily/2026-08-17/#paper-2608-13878"
+    },
+    {
+      "abstract": "Autonomous systems can fail in rare and heterogeneous ways, making real-world failure discovery difficult under limited testing budgets. Although cheaper proxies such as simulators, lower-fidelity systems, or related policies can be sampled extensively to find failures, proxy failures often do not transfer to the real world due to sim-to-real and system-to-system gaps. The key challenge is therefore to effectively leverage proxy system information for accurate prediction of severe target system failures. We propose an adaptive failure discovery method that combines proxy evaluations with limited target system results to guide scenario selection for target system testing. Our method learns a local predictor of target risk by correcting proxy failure signals using control-variate-inspired residual modeling. To find failures that are both likely and diverse, we combine this predictor with a support-aware mutual-information objective that favors realistic, well-supported regions while expanding coverage across failure modes. Across autonomous driving, manipulation, and quadruped velocity-tracking tasks, our method discovers up to 2$\\times$ as many failures as random sampling and active-learning baselines, including severe and diverse failures missed by competing methods.",
+      "abstract_zh": "自主系统可能以稀有且异质的方式发生故障，这使得在有限测试预算下进行真实世界的故障发现变得困难。尽管可以广泛采样更便宜的代理，如模拟器、低保真度系统或相关策略来寻找故障，但代理故障往往由于模拟到真实（sim-to-real）和系统间（system-to-system）差距而无法转移到真实世界。因此，关键挑战在于有效利用代理系统信息来准确预测目标系统的严重故障。我们提出了一种自适应故障发现方法，该方法结合了代理评估和有限的目标系统结果，以指导目标系统测试的场景选择。我们的方法通过使用受控变量启发的残差建模来修正代理故障信号，从而学习目标风险的局部预测器。为了发现既可能又多样的故障，我们将该预测器与支持感知的互信息目标相结合，该目标偏向于现实的、得到良好支持的区域，同时在故障模式中扩展覆盖范围。在自主驾驶、操控和四足动物速度跟踪任务中，我们的方法发现的故障数量是随机采样和主动学习基线的最多2倍，包括被竞争方法遗漏的严重且多样的故障。",
+      "authors": [
+        "Anjali Parashar",
+        "Rachel Luo",
+        "Apoorva Sharma",
+        "Sushant Veer",
+        "Edward Schmerling",
+        "Carson Sobolewski",
+        "Mingxin Yu",
+        "Chuchu Fan",
+        "Marco Pavone"
+      ],
+      "date": "2026-08-17",
+      "id": "2608.13719",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Coverage Aware Active Evaluation for Failure Discovery with Paired Systems",
+      "title_zh": "基于覆盖意识的主动评估方法用于配对系统的故障发现",
+      "url": "/daily/2026-08-17/#paper-2608-13719"
+    },
     {
       "abstract": "Latent video generation relies on autoencoders to define a compact space in which generative models operate. Although video autoencoder architectures have evolved substantially, their latent spaces are still optimized primarily for pixel-level reconstruction and provide limited high-level semantic organization. A reconstruction-optimal latent space, however, need not be well suited to generative modeling. We propose V-RAE, a video representation autoencoder that builds compact generative latents on top of frozen vision foundation model representations. A lightweight temporal pooling module removes temporal redundancy while preserving semantic structure, and a video decoder reconstructs continuous motion from the compressed features. We evaluate V-RAE with four representative frozen encoders on video reconstruction, semantic probing, and class-conditional generation. V-RAE achieves 2.13 rFVD on K600, outperforming all evaluated large-scale pretrained video VAEs. Its latents retain substantially more semantic information than conventional video tokenizer latents. Under matched generation settings, our best variant achieves gFVD scores of 117.86 and 19.16 on UCF101 and K600, respectively, while converging up to 6x faster}. We further show that reconstruction quality alone is insufficient to characterize generative utility and introduce tFVD, a temporal-coherence diagnostic that correlates more reliably with downstream generation quality. Beyond video generation, V-RAE also improves future video prediction on Cityscapes over the Wan 2.2 VAE latent space under matched prediction settings. Taken together, the experiments show that frozen semantic representations can support video reconstruction, generation, and predictive modeling. The project page: https://v-rae.github.io/.",
       "abstract_zh": "潜在视频生成依赖于自编码器来定义一个紧凑的空间，在该空间中生成模型进行操作。尽管视频自编码器架构已经有了显著的发展，但其潜在空间仍主要针对像素级重建进行优化，提供的高层次语义组织有限。然而，重建最优的潜在空间并不一定适合生成建模。我们提出了V-RAE，一种视频表示自编码器，它在冻结的视觉基础模型表示之上构建紧凑的生成潜在空间。一个轻量级的时间池化模块去除了时间冗余，同时保留了语义结构，而视频解码器则从压缩特征中重建连续运动。我们使用四个代表性的冻结编码器对V-RAE在视频重建、语义探测和类别条件生成上进行了评估。V-RAE在K600上达到了2.13的rFVD，超越了所有评估的大规模预训练视频VAE。其潜在空间保留了比传统视频标记器潜在空间更多的语义信息。在匹配生成设置下，我们的最佳变体在UCF101和K600上分别达到了117.86和19.16的gFVD分数，同时收敛速度快达6倍。我们进一步表明，仅靠重建质量不足以表征生成效用，并引入了tFVD，一种时间一致性诊断工具，与下游生成质量的相关性更为可靠。除了视频生成，V-RAE在匹配预测设置下还改善了Cityscapes上的未来视频预测，相较于Wan 2.2 VAE潜在空间。综合来看，实验表明冻结的语义表示可以支持视频重建、生成和预测建模。项目页面：https://v-rae.github.io/",

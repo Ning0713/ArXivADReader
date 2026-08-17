@@ -1,0 +1,52 @@
+{
+  "abstract": "Monocular temporal 3D detection aims to detect objects in 3D, given a monocular video. Query-based 3D detectors unify detection and cross-view association, but their learnable queries fit the spatial distribution of the training data (e.g., field-of-view). We show that this issue is especially severe when these models are applied to monocular video, hindering generalization to unseen datasets and environments. To address this limitation, we introduce MAGneT-3D, the first method for domain-generalized monocular temporal 3D object detection. Instead of relying on static learnable queries, we propose a Domain-Robust Anchor Generator (DRAG) approach that adaptively derives 3D proposals during inference. To further enable domain generalization, we propose a Temporal Refinement and Identity Merging (TRIM) strategy, reducing dependence on specific 3D proposals. To enable comprehensive domain-generalization evaluation, we establish a cross-dataset benchmark spanning nuScenes, Waymo, Lyft, and ONCE. Under zero-shot domain shifts, MAGneT-3D outperforms all baselines, improving NDS from 12.1% to 18.6% while also increasing in-domain accuracy.",
+  "abstract_zh": "单目时序三维检测旨在根据单目视频检测三维物体。基于查询的三维检测器统一了检测和跨视图关联，但其可学习的查询适应于训练数据的空间分布（例如，视场）。我们表明，当这些模型应用于单目视频时，这一问题尤其严重，阻碍了对未见数据集和环境的泛化。为了解决这一限制，我们提出了MAGneT-3D，这是首个用于领域通用的单目时序三维物体检测的方法。我们不再依赖静态的可学习查询，而是提出了一种领域鲁棒锚生成器（Domain-Robust Anchor Generator, DRAG）方法，该方法在推理过程中自适应地产生三维提议。为了进一步实现领域泛化，我们提出了一种时序精炼与身份合并（Temporal Refinement and Identity Merging, TRIM）策略，减少对特定三维提议的依赖。为了实现全面的领域泛化评估，我们建立了一个跨数据集基准，涵盖nuScenes、Waymo、Lyft和ONCE。在零样本领域转移下，MAGneT-3D超越了所有基线，将NDS从12.1%提升至18.6%，同时也提高了领域内的准确性。",
+  "arxiv_id": "2608.14282",
+  "arxiv_url": "https://arxiv.org/abs/2608.14282v1",
+  "authors": [
+    "Mohamed Kotb",
+    "Johannes Meier",
+    "Christoph Reich",
+    "Oussema Dhaouadi",
+    "Luis Denninger",
+    "Daniel Cremers"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14282",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.841287+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14282v1",
+  "published_at": "2026-08-14T13:09:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "3d object detection",
+      "3d detection"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14282v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "3D 检测",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "MAGneT-3D: Monocular and Domain-Generalizable Temporal 3D Detection",
+  "title_zh": "MAGneT-3D：单目和领域通用的时序三维检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.14282"
+}

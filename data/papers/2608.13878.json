@@ -1,0 +1,58 @@
+{
+  "abstract": "In mixed traffic, decision-making for autonomous vehicles (AVs) confronts three interrelated challenges. First, physics-based priors incorporated into reinforcement learning (RL) models fail to capture latent interactive vehicle intentions and diverse driver behaviors, limiting the proactive reasoning capabilities. Second, abrupt maneuvers by surrounding vehicles cause non-stationarity, leaving long-tail safety events under-explored. Third, hybrid action spaces destabilize unified RL training due to the different temporal scales of continuous car-following and discrete lane-changing maneuvers. To address these issues, we propose Knowledge-Data Dual-driven Reinforcement Learning (KDDRL). First, a conditional deep generative model synthesizes intention-aware future trajectories, converting passive perception into proactive predictive states. Second, a knowledge-data dual-driven paradigm operates on these predictive states, fusing probabilistic data-driven insights with physical constraints to guide safe exploration through safety-critical scenarios. Third, a coupling module compresses both intention-aware trajectories and physical constraints into compact shared embeddings. This unified representation enables asynchronous multi-timescale optimization of continuous car-following and discrete lane-changing while preserving mutual information. Evaluations on dataset-calibrated simulations demonstrate that KDDRL effectively handles intention uncertainty, accelerates training convergence, and outperforms conventional baseline methods in terms of safety, efficiency, and comfort.",
+  "abstract_zh": "在混合交通中，自主车辆（AVs）的决策面临三个相互关联的挑战。首先，基于物理的先验知识融入强化学习（RL）模型中，无法捕捉潜在的互动车辆意图和多样化的驾驶行为，从而限制了主动推理能力。其次，周围车辆的突然操控导致非平稳性，使得长尾安全事件未得到充分探索。第三，混合动作空间由于连续跟车和离散变道操控的不同时间尺度而使统一的RL训练不稳定。为了解决这些问题，我们提出了知识-数据双驱动强化学习（KDDRL）。首先，一个条件深度生成模型合成意图感知的未来轨迹，将被动感知转化为主动预测状态。其次，知识-数据双驱动范式在这些预测状态上运行，将基于概率的数据驱动洞察与物理约束相融合，以指导在安全关键场景中的安全探索。第三，一个耦合模块将意图感知的轨迹和物理约束压缩为紧凑的共享嵌入。这种统一表示使得连续跟车和离散变道的异步多时间尺度优化成为可能，同时保持互信息。对数据集校准的模拟评估表明，KDDRL有效地处理了意图不确定性，加速了训练收敛，并在安全性、效率和舒适性方面超越了传统基线方法。",
+  "arxiv_id": "2608.13878",
+  "arxiv_url": "https://arxiv.org/abs/2608.13878v1",
+  "authors": [
+    "Jie Fang",
+    "Wei Zheng",
+    "Mengyun Xu",
+    "Eui-Jin Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-13878",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.784422+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.13878v1",
+  "published_at": "2026-08-14T02:07:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous vehicles",
+      "autonomous",
+      "vehicle",
+      "car",
+      "traffic",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.13878v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Knowledge-Data-Dual-Driven Reinforcement Learning for Autonomous Vehicle Control in Mixed Traffic",
+  "title_zh": "知识-数据双驱动强化学习在混合交通中的自主车辆控制",
+  "translation_url": "https://hjfy.top/arxiv/2608.13878"
+}

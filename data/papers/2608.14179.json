@@ -1,0 +1,50 @@
+{
+  "abstract": "Large language models (LLMs) have shown remarkable reasoning and generative capabilities, motivating their use as universal reasoning engines for perception. While modern approaches such as vision-language models (VLMs) have attempted to incorporate reasoning capabilities into visual sensing, the integration of LLMs with the millimeter-wave (mmWave) modality-despite its unique advantages under low light and occlusion-remains largely unexplored. The principal bottlenecks stem from the scarcity of radar language pairs, severe cross-dataset heterogeneity, and the absence of a foundational mmWave encoder. We address this gap through a minimal textualization interface that serializes each mmWave point cloud into concise natural language, allowing off-the-shelf LLMs to operate in a question answering (QA) setting. Building on this, we present mmWave-QA, the first benchmark for language-conditioned mmWave human perception. mmWave-QA aggregates heterogeneous public mmWave datasets and harmonizes them via calibration-aware preprocessing and global taxonomy alignment, while providing natural language QA. Spanning six scenarios and five QA tasks, the benchmark enables standardized evaluation across diverse mmWave hardware and experimental conditions, establishing a foundation for scalable research on mmWave-LLM integration. We further evaluate and analyze LLMs on our mmWave-QA, highlighting their zero-shot reasoning potential for radar perception, as well as their robustness under visual degradation.",
+  "abstract_zh": "大型语言模型（LLMs）展现了卓越的推理和生成能力，这激励了它们作为感知的通用推理引擎的应用。尽管现代方法如视觉-语言模型（VLMs）已尝试将推理能力融入视觉感知，但将LLMs与毫米波（mmWave）模态结合的研究仍然相对较少，尽管其在低光照和遮挡条件下具有独特优势。主要瓶颈在于雷达语言对的稀缺、跨数据集的严重异质性以及缺乏基础的mmWave编码器。我们通过一个最小文本化接口来解决这一问题，该接口将每个mmWave点云序列化为简洁的自然语言，从而使现成的LLMs能够在问答（QA）环境中运行。在此基础上，我们提出了mmWave-QA，这是第一个针对语言条件下mmWave人类感知的基准测试。mmWave-QA汇集了异质的公共mmWave数据集，并通过校准感知的预处理和全球分类法对齐进行统一，同时提供自然语言问答。该基准涵盖六种场景和五个QA任务，能够在不同的mmWave硬件和实验条件下进行标准化评估，为mmWave-LLM集成的可扩展研究奠定基础。我们进一步在mmWave-QA上评估和分析LLMs，突出了它们在雷达感知中的零-shot推理潜力，以及在视觉退化下的鲁棒性。",
+  "arxiv_id": "2608.14179",
+  "arxiv_url": "https://arxiv.org/abs/2608.14179v1",
+  "authors": [
+    "Jeongwan Shin",
+    "Jaehyeon Kim",
+    "Donguk Ko",
+    "Jaeho Choi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14179",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.898777+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14179v1",
+  "published_at": "2026-08-14T10:49:39Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "point cloud",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14179v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "本文研究如何将毫米波雷达点云文本化，使通用大型语言模型能够执行语言条件下的人类感知与问答。作者提出mmWave-QA基准，整合多个异构毫米波数据集，通过校准感知预处理和统一分类体系解决跨设备、跨数据集差异，覆盖六类场景和五项问答任务。实验分析了LLM在雷达感知中的零样本推理能力，以及其在低光照、遮挡等视觉退化条件下的鲁棒性。虽然论文主要面向通用人类理解而非自动驾驶车辆任务，但其毫米波雷达感知、跨模态语言理解和恶劣视觉条件下的鲁棒性研究对自动驾驶感知具有较强的迁移价值。",
+  "tags": {
+    "primary": "Radar",
+    "secondary": [
+      "感知",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Can Language Models Understand mmWave Data? Benchmarking Large Language Models for mmWave Radar-Based Human Understanding",
+  "title_zh": "语言模型能理解毫米波数据吗？基于毫米波雷达的人类理解的大型语言模型基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2608.14179"
+}

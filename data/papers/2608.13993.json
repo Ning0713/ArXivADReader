@@ -1,0 +1,52 @@
+{
+  "abstract": "Urban traffic management relies on sensor networks whose spatial coverage is limited by deployment costs and privacy regulations. Machine learning models trained on such sparse data cannot generalize to unmonitored locations and must be retrained whenever the sensor infrastructure changes. We propose a simulation-based methodology that addresses this problem by generating augmented traffic count datasets in which each physical sensor is replaced by a virtual sensor placed at a surrogate location in the road network. Virtual sensors are selected by a graph-search heuristic that jointly maximises vehicle-flow continuity and traffic-metric similarity between the original and surrogate locations, while enforcing a minimum spatial displacement to ensure diversity of observed traffic conditions. We validate the method on two Belgian cities: Brussels, using a calibrated model, and Namur, using synthetic models. The augmented datasets preserve the bimodal daily demand profile and the dynamics of traffic at the observed locations.",
+  "abstract_zh": "城市交通管理依赖于传感器网络，但其空间覆盖受到部署成本和隐私法规的限制。基于稀疏数据训练的机器学习模型无法推广到未监测的位置，并且每当传感器基础设施发生变化时必须重新训练。我们提出了一种基于仿真的方法，通过生成增强的交通计数数据集来解决这一问题，其中每个物理传感器被替换为在道路网络中放置的虚拟传感器。虚拟传感器的选择采用图搜索启发式算法，旨在最大化车辆流动的连续性和原始位置与替代位置之间的交通指标相似性，同时强制执行最小空间位移以确保观察到的交通条件的多样性。我们在比利时的两个城市进行验证：布鲁塞尔（Brussels），使用经过校准的模型，以及纳慕尔（Namur），使用合成模型。增强的数据集保留了双峰的日需求曲线和观察位置的交通动态。",
+  "arxiv_id": "2608.13993",
+  "arxiv_url": "https://arxiv.org/abs/2608.13993v1",
+  "authors": [
+    "Davide Andrea Guastella",
+    "Eladio Montero Porras",
+    "Evangelos Pournaras",
+    "Gianluca Bontempi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-13993",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.884873+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.13993v1",
+  "published_at": "2026-08-14T06:19:47Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "road",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.13993v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "本文提出一种基于交通仿真的数据增强方法，用虚拟传感器替代道路网络中的物理传感器，以扩展交通数据的空间覆盖范围。方法通过图搜索联合优化车辆流连续性和交通指标相似性，并通过最小空间位移提升交通条件多样性。在布鲁塞尔和纳慕尔的实验表明，增强数据能够保留日交通需求的双峰特征及观测点的交通动态。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Simulation-Driven Vehicular Traffic Data Augmentation: Extending Sensor Coverage Through Virtual Sensing",
+  "title_zh": "基于仿真的车辆交通数据增强：通过虚拟传感器扩展传感器覆盖范围",
+  "translation_url": "https://hjfy.top/arxiv/2608.13993"
+}

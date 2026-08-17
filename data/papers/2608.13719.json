@@ -1,0 +1,58 @@
+{
+  "abstract": "Autonomous systems can fail in rare and heterogeneous ways, making real-world failure discovery difficult under limited testing budgets. Although cheaper proxies such as simulators, lower-fidelity systems, or related policies can be sampled extensively to find failures, proxy failures often do not transfer to the real world due to sim-to-real and system-to-system gaps. The key challenge is therefore to effectively leverage proxy system information for accurate prediction of severe target system failures. We propose an adaptive failure discovery method that combines proxy evaluations with limited target system results to guide scenario selection for target system testing. Our method learns a local predictor of target risk by correcting proxy failure signals using control-variate-inspired residual modeling. To find failures that are both likely and diverse, we combine this predictor with a support-aware mutual-information objective that favors realistic, well-supported regions while expanding coverage across failure modes. Across autonomous driving, manipulation, and quadruped velocity-tracking tasks, our method discovers up to 2$\\times$ as many failures as random sampling and active-learning baselines, including severe and diverse failures missed by competing methods.",
+  "abstract_zh": "自主系统可能以稀有且异质的方式发生故障，这使得在有限测试预算下进行真实世界的故障发现变得困难。尽管可以广泛采样更便宜的代理，如模拟器、低保真度系统或相关策略来寻找故障，但代理故障往往由于模拟到真实（sim-to-real）和系统间（system-to-system）差距而无法转移到真实世界。因此，关键挑战在于有效利用代理系统信息来准确预测目标系统的严重故障。我们提出了一种自适应故障发现方法，该方法结合了代理评估和有限的目标系统结果，以指导目标系统测试的场景选择。我们的方法通过使用受控变量启发的残差建模来修正代理故障信号，从而学习目标风险的局部预测器。为了发现既可能又多样的故障，我们将该预测器与支持感知的互信息目标相结合，该目标偏向于现实的、得到良好支持的区域，同时在故障模式中扩展覆盖范围。在自主驾驶、操控和四足动物速度跟踪任务中，我们的方法发现的故障数量是随机采样和主动学习基线的最多2倍，包括被竞争方法遗漏的严重且多样的故障。",
+  "arxiv_id": "2608.13719",
+  "arxiv_url": "https://arxiv.org/abs/2608.13719v1",
+  "authors": [
+    "Anjali Parashar",
+    "Rachel Luo",
+    "Apoorva Sharma",
+    "Sushant Veer",
+    "Edward Schmerling",
+    "Carson Sobolewski",
+    "Mingxin Yu",
+    "Chuchu Fan",
+    "Marco Pavone"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-13719",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.873035+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.13719v1",
+  "published_at": "2026-08-13T19:26:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.13719v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Coverage Aware Active Evaluation for Failure Discovery with Paired Systems",
+  "title_zh": "基于覆盖意识的主动评估方法用于配对系统的故障发现",
+  "translation_url": "https://hjfy.top/arxiv/2608.13719"
+}

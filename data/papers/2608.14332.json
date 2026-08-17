@@ -1,0 +1,59 @@
+{
+  "abstract": "Reinforcement learning is promising for autonomous urban driving, but long-horizon goal-directed navigation asks a policy to acquire several competing behaviors at once--reaching a distant goal, tracking a route, avoiding obstacles, obeying signals--and a fixed objective gives no order in which to learn them. This paper presents CORAL, which advances two schedules together: a five-stage curriculum that progressively lengthens routes and tightens behavioral constraints, and a stage-aware reward whose component weights shift emphasis from mission progress toward route following, safety, smoothness, and rule compliance as the task hardens. The policy is a multi-stream actor-critic network trained with Proximal Policy Optimization (PPO) in CARLA on a compact 99-dimensional state pairing a polar LiDAR histogram with vehicle telemetry, ego-frame route geometry, and traffic-rule indicators--no point-cloud encoder, no bird's-eye-view rasterization. Against two PPO baselines under an identical protocol, CORAL reaches the goal in all twenty evaluation episodes on the longest routes under the full set of behavioral constraints, where the baselines reach 5% and 10%; a factorial ablation shows that neither schedule alone matches their combination: removing either lowers both success and route completion, and disabling both drops success to 55%. Trained in one town, the policy transfers zero-shot to seven unseen towns, succeeding in 68-98% of episodes on routes of the same 100-150 m length, with mean lateral deviation below 0.35 m.",
+  "abstract_zh": "强化学习在自主城市驾驶中展现出良好的前景，但长时间目标导向导航要求策略同时获得多种竞争行为——到达远处目标、跟踪路线、避免障碍、遵守信号——而固定目标并未提供学习这些行为的顺序。本文提出了CORAL，它同时推进两种调度：一个五阶段的课程，逐步延长路线并收紧行为约束，以及一个阶段感知的奖励，其组成权重随着任务难度的增加，从任务进展转向路线跟随、安全性、平稳性和规则遵守。该策略是一个多流的演员-评论家网络，在CARLA中使用近端策略优化（PPO）进行训练，状态为紧凑的99维，结合了极坐标激光雷达直方图、车辆遥测、自我框架路线几何和交通规则指示器——没有点云编码器，没有鸟瞰图栅格化。在相同协议下的两个PPO基线中，CORAL在最长路线的所有二十个评估回合中都成功到达目标，而基线仅达到5%和10%；一个因子消融实验表明，单独的调度无法匹配它们的组合：去掉任一调度都会降低成功率和路线完成率，而禁用两个调度则使成功率降至55%。在一个城镇训练后，该策略在七个未见过的城镇中零次转移，在相同长度为100-150米的路线中成功率为68%-98%，平均横向偏差低于0.35米。",
+  "arxiv_id": "2608.14332",
+  "arxiv_url": "https://arxiv.org/abs/2608.14332v1",
+  "authors": [
+    "Anisa Saleem",
+    "Duksu Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14332",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.796211+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14332v1",
+  "published_at": "2026-08-14T14:22:05Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "bird's-eye",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 67
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14332v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "CORAL: Curriculum-Optimized Reward Adaptation for LiDAR-Based Goal-Directed Urban Driving",
+  "title_zh": "CORAL：基于激光雷达的目标导向城市驾驶的课程优化奖励适应",
+  "translation_url": "https://hjfy.top/arxiv/2608.14332"
+}

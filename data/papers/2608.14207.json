@@ -1,0 +1,55 @@
+{
+  "abstract": "Cooperative perception among multiple unmanned surface vehicles (USVs) combines complementary observations to extend maritime target sensing beyond the view range and field of a single platform. Developing such systems at scale calls for a unified workflow for configurable multi-USV scenarios, multimodal acquisition, and shared annotations. We present MMUSV-Sim, a perception-oriented maritime simulation and data-generation platform built on Unreal Engine 5 and Project AirSim. It provides island, open-sea, and port environments; configurable weather, time of day, and wave conditions; a diverse vessel asset library; and spline-based multi-vessel motion. MMUSV-Sim acquires RGB, depth, semantic, LiDAR, and radar observations across multiple USVs and captures a common world state for per-agent annotation export. Experiments verify that the configured wave settings produce the intended changes in vessel heave, roll, and pitch, and evaluate the geometric consistency between projected annotations and semantic renderings. In LiDAR-based cooperative BEV vessel detection experiments on the generated multi-USV dataset, Early Fusion achieves an [email protected] of 72.74, compared with 45.54 using a single USV.",
+  "abstract_zh": "多无人水面艇（USV）之间的协同感知通过结合互补观察，扩展了海洋目标感知的范围，超出了单个平台的视野和领域。大规模开发此类系统需要一个统一的工作流程，以支持可配置的多USV场景、多模态采集和共享注释。我们提出了MMUSV-Sim，这是一个基于虚幻引擎5（Unreal Engine 5）和Project AirSim构建的面向感知的海洋仿真与数据生成平台。它提供了岛屿、开阔海域和港口环境；可配置的天气、时间和波浪条件；多样的船舶资产库；以及基于样条曲线的多船舶运动。MMUSV-Sim在多个USV上获取RGB、深度、语义、激光雷达（LiDAR）和雷达观察，并捕获每个代理的共同世界状态以便进行注释导出。实验验证了配置的波浪设置在船舶的纵摇、横摇和俯仰方面产生了预期的变化，并评估了投影注释与语义渲染之间的几何一致性。在基于LiDAR的协同鸟瞰视角（BEV）船舶检测实验中，使用生成的多USV数据集，早期融合（Early Fusion）方法在 [email protected] 上达到了72.74，而单个USV的结果为45.54。",
+  "arxiv_id": "2608.14207",
+  "arxiv_url": "https://arxiv.org/abs/2608.14207v1",
+  "authors": [
+    "Ziao Li",
+    "Jianxiong Ye",
+    "Biao Tang",
+    "Leping Zhang",
+    "Kun Zuo",
+    "Siyu Huang",
+    "Chenqiang Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-17#paper-2608-14207",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-17T14:02:38.793092+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14207v1",
+  "published_at": "2026-08-14T11:32:30Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "bev",
+      "lidar",
+      "radar",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-08-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14207v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-17"
+  },
+  "summary_zh": "本文提出MMUSV-Sim，一个基于Unreal Engine 5和Project AirSim的多无人水面艇协同感知仿真与数据生成平台。平台支持岛屿、开阔海域和港口等场景，以及天气、光照、波浪和多船运动配置，并可为多个USV同步生成RGB、深度、语义、LiDAR和雷达数据及共享标注。实验验证了波浪运动建模和标注几何一致性，并在生成数据上的LiDAR协同BEV船舶检测实验中显示，早期融合显著优于单艇感知。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "协同/V2X",
+      "多传感器融合"
+    ]
+  },
+  "title": "MMUSV-Sim: A Perception-Oriented Simulation and Data-Generation Platform for Multi-USV Cooperative Perception",
+  "title_zh": "MMUSV-Sim：面向感知的多无人水面艇协同感知仿真与数据生成平台",
+  "translation_url": "https://hjfy.top/arxiv/2608.14207"
+}
