@@ -1,0 +1,53 @@
+{
+  "abstract": "We present a novel causal approach to interpretability for computer vision models that dynamically masks the input image prior to classification. The interpretability of deep learning predictions is critical in high-stakes fields such as medical imaging, security, and autonomous driving. Most interpretability methods are applied passively to already trained models, which typically result in correlational rather than causal explanations. Existing causal interpretability methods are limited to post hoc analysis, weakening the causal claims. Additionally, existing active methods generally lack explanations that explicitly assign responsibility to input features. This work proposes a spatial attention noise masking framework that provides causal explanations about the features sufficient for the prediction. The proposed framework consists of: 1) a UNet-style mask generator, and 2) a Resnet18 encoder and linear classifier that classifies both masked and unmasked versions of an input image. The generated masks are regularized to be sparse and spatially smooth, while masked image embeddings are constrained to remain consistent with embeddings from the corresponding unmasked images. The resulting masks can be interpreted as feature attribution maps that are competitive with related interpretability methods while additionally providing strong causal explanations of model predictions. Quantitative evaluations demonstrate mask faithfulness, near-baseline classification performance across five classification tasks despite substantial masking of image information, and robustness to distribution shifts such as background swapping and natural adversarial examples. Qualitative comparisons further demonstrate mask behavior and competitive interpretability relative to state-of-the-art feature attribution methods.",
+  "abstract_zh": "我们提出了一种新颖的因果可解释性方法，适用于计算机视觉模型，该方法在分类之前动态掩蔽输入图像。深度学习预测的可解释性在医疗成像、安全和自动驾驶等高风险领域至关重要。大多数可解释性方法被动应用于已经训练好的模型，通常导致相关而非因果的解释。现有的因果可解释性方法仅限于事后分析，削弱了因果声明。此外，现有的主动方法通常缺乏明确将责任归于输入特征的解释。本研究提出了一种空间注意噪声掩蔽框架，提供关于足以进行预测的特征的因果解释。该框架由以下两部分组成：1）UNet风格的掩蔽生成器，2）Resnet18编码器和线性分类器，用于对输入图像的掩蔽和未掩蔽版本进行分类。生成的掩蔽经过正则化，以保持稀疏性和空间平滑性，同时掩蔽图像的嵌入被约束为与相应未掩蔽图像的嵌入保持一致。生成的掩蔽可以解释为特征归因图，与相关的可解释性方法竞争，同时提供强有力的模型预测因果解释。定量评估表明掩蔽的真实性，在五个分类任务中尽管图像信息大幅掩蔽，分类性能接近基线，并且对背景交换和自然对抗样本等分布变化具有鲁棒性。定性比较进一步展示了掩蔽行为及其相对于最先进的特征归因方法的竞争性可解释性。",
+  "arxiv_id": "2608.14725",
+  "arxiv_url": "https://arxiv.org/abs/2608.14725v1",
+  "authors": [
+    "Benjamin Formby",
+    "Kuang-Ching Wang",
+    "D Hudson Smith"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-14725",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.665403+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14725v1",
+  "published_at": "2026-08-12T13:47:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "medical",
+      "医疗"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14725v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "安全/异常"
+    ]
+  },
+  "title": "Spatial Attention Noise Masking for Causally Sufficient Interpretability",
+  "title_zh": "因果充分可解释性的空间注意噪声掩蔽",
+  "translation_url": "https://hjfy.top/arxiv/2608.14725"
+}

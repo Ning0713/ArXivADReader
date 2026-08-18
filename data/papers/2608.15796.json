@@ -1,0 +1,50 @@
+{
+  "abstract": "Unsupervised 3D instance segmentation of outdoor LiDAR scans has traditionally relied on handcrafted geometric priors such as density-based clustering, motion cues, or projected 2D detections. In this work, we investigate whether a frozen, self-supervised point transformer already contains the structural information required to isolate object instances without any handcrafted geometric prior. Using this transformer purely as a feature extractor, we probe its internal representations across the SemanticKITTI, nuScenes, and Waymo Perception datasets. Our analysis yields four core insights: (1) the instance signal concentrates in the attention queries and keys rather than in the values or final output features; (2) output features semantically collapse, merging adjacent same-class objects that the queries and keys keep distinct; (3) this instance signal is bimodal in depth, strongest at the shallowest and deepest encoder stages; and (4) this signal is driven predominantly by the rotary position encoding (RoPE), whose removal collapses its advantage. We put these findings into our method TokenGraph3D, a training-free segmenter that groups points via connected components on a key-similarity graph, using neither density-based clustering nor proximity priors. Under identical prior-free conditions, we substantially outperform output-feature baselines, making the emergent 3D instance structure visible.",
+  "abstract_zh": "无监督的户外激光雷达扫描三维实例分割传统上依赖于手工设计的几何先验，如基于密度的聚类、运动线索或投影的二维检测。在本研究中，我们探讨了一个冻结的自监督点变换器是否已经包含了隔离物体实例所需的结构信息，而无需任何手工设计的几何先验。我们将该变换器仅作为特征提取器，分析其在SemanticKITTI、nuScenes和Waymo感知数据集上的内部表示。我们的分析得出了四个核心见解：（1）实例信号集中在注意力查询和键中，而不是值或最终输出特征中；（2）输出特征在语义上发生崩溃，合并了相邻的同类对象，而查询和键则保持其区分；（3）该实例信号在深度上呈双峰分布，在最浅和最深的编码器阶段最强；（4）该信号主要由旋转位置编码（Rotary Position Encoding, RoPE）驱动，去除它会削弱其优势。我们将这些发现应用于我们的算法TokenGraph3D，这是一种无训练的分割器，通过在关键相似性图上使用连通组件对点进行分组，而不使用基于密度的聚类或邻近先验。在相同的无先验条件下，我们显著超越了输出特征基线，使得新兴的三维实例结构得以显现。",
+  "arxiv_id": "2608.15796",
+  "arxiv_url": "https://arxiv.org/abs/2608.15796v1",
+  "authors": [
+    "Ted Lentsch",
+    "Santiago Montiel-Marín",
+    "Holger Caesar",
+    "Julian F. P. Kooij"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15796",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.769129+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15796v1",
+  "published_at": "2026-08-16T15:20:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "semantickitti",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 44
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15796v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Emergent 3D Instance Segmentation from Self-Supervised Point Transformers",
+  "title_zh": "自监督点变换器生成的三维实例分割",
+  "translation_url": "https://hjfy.top/arxiv/2608.15796"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "A structured world-state (entities, relations, context, and predictive cues) is designed to preserve prediction-critical content when perception degrades, but it presumes observations to populate it; when the primary visual modality is occluded or degraded, those observations may be missing. We address how to sustain the world model from a complementary modality by treating the absence of expected co-evidence as evidence of a hidden cause. The abductive framework is modality-agnostic; this article instantiates it acoustically. A microphone-array front-end estimates the bearing of engine and tire sources and extracts approach-rate evidence (Doppler when a stable tone exists, a broadband looming readout otherwise); the event \"signature present, visual co-evidence absent\" then triggers abductive inference of a hidden road user, emitting a calibrated risk advisory rather than a control command. Recoverability of the hidden state is analyzed as an identifiability question separating shared from modality-unique information, and cueing is cast as Neyman-Pearson detection under an explicit false-alarm budget. On real occluded-approach recordings at blind junctions, the method warns a mean 1.7 seconds before line-of-sight entry, matches the sustained-window variant of the published acoustic baseline's detection rate with 42% fewer false alarms, localizes to 3.4 degrees median once in view, is well calibrated (expected calibration error 0.034), and keeps hazard awareness above 0.87 under staged vision degradation that collapses a vision-only channel to 0.03. We also measure the method's limits: calibration transfers to an unseen junction almost losslessly, the signature classifier does not, and moving-ego noise is the binding deployment constraint.",
+  "abstract_zh": "一个结构化的世界状态（实体、关系、上下文和预测线索）旨在在感知退化时保留预测关键内容，但它假设有观察结果来填充该状态；当主要视觉模态被遮挡或退化时，这些观察结果可能会缺失。我们探讨如何通过将预期的共同证据缺失视为隐藏原因的证据，从补充模态中维持世界模型。该推理框架与模态无关；本文在声学上实例化了它。一个麦克风阵列前端估计发动机和轮胎声源的方位，并提取接近率证据（当存在稳定音调时为多普勒效应，否则为宽带逼近读数）；事件“特征存在，视觉共同证据缺失”随后触发对隐藏道路使用者的推理，发出经过校准的风险建议，而不是控制命令。隐藏状态的可恢复性被分析为一个可识别性问题，区分共享信息与模态独特信息，线索被视为在明确的虚警预算下的Neyman-Pearson检测。在盲交叉口的真实遮挡接近录音中，该方法在视线进入前平均警告1.7秒，匹配已发布声学基线的持续窗口变体的检测率，同时减少42%的虚警，定位精度为3.4度中位数，一旦进入视野，校准良好（预期校准误差为0.034），并在视觉退化阶段保持危险意识高于0.87，尽管视觉仅通道崩溃至0.03。我们还测量了该方法的限制：校准几乎无损地转移到未见的交叉口，特征分类器则不然，移动自我噪声是绑定的部署约束。",
+  "arxiv_id": "2608.14952",
+  "arxiv_url": "https://arxiv.org/abs/2608.14952v1",
+  "authors": [
+    "Cong Xu",
+    "Ravi Sankar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-14952",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "eess.SP"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.574763+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14952v1",
+  "published_at": "2026-08-15T00:38:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路",
+      "world model"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14952v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Evidence of Absence: Cross-Modal Abductive Risk Perception to Sustain World Models When Vision Fails",
+  "title_zh": "缺失的证据：跨模态推理风险感知以维持视觉失效时的世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2608.14952"
+}

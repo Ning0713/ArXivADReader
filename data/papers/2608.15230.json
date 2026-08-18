@@ -1,0 +1,57 @@
+{
+  "abstract": "Although recent trajectory prediction and end-to-end autonomous driving methods improve robustness in urban environments, they still lack meaningful controllability. Existing benchmarks either provide no persona-conditioned annotations or support only a single urgency spectrum (i.e., emergency, normal, relaxed), which cannot distinguish personas that share the same urgency level but require different driving dynamics. To address this, we propose (i) the Persona-Conditioned Trajectory (PCT) dataset, which decomposes driving personas along two axes, Temporal Urgency and Ride Comfort, and combines three levels of each to form a grid of nine personas, each paired with natural-language descriptions and trajectories, and (ii) PersonaDrive, a framework that can learn driving personas from language and can generate persona-specific trajectories. PersonaDrive incorporates Persona-Conditioned Anchor Transform (PCAT), which hierarchically reshapes anchors along both axes, and Persona-Conditioned Multi-Modal Fusion (PCMF) for BEV-level persona fusion. Training is supervised by a Hierarchical Guide Loss enforcing axis-aligned physical orderings and an Axis-Decomposed Diversity Loss preventing diagonal mode collapse. Experimental results show that PersonaDrive consistently improves over the compared baselines across multi-dimensional scenarios. The code and PCT dataset are available at https://github.com/VisualAIKHU/PersonaDrive",
+  "abstract_zh": "尽管近期的轨迹预测和端到端自动驾驶方法在城市环境中提高了鲁棒性，但它们仍然缺乏有意义的可控性。现有基准要么没有提供角色条件的注释，要么仅支持单一的紧急程度谱（即紧急、正常、放松），这无法区分共享相同紧急程度但需要不同驾驶动态的角色。为了解决这一问题，我们提出了（i）角色条件轨迹（Persona-Conditioned Trajectory, PCT）数据集，该数据集沿两个轴线分解驾驶角色：时间紧急性和乘坐舒适度，并结合每个轴线的三个级别形成九个角色的网格，每个角色配有自然语言描述和轨迹；（ii）PersonaDrive，一个能够从语言中学习驾驶角色并生成角色特定轨迹的框架。PersonaDrive结合了角色条件锚点变换（Persona-Conditioned Anchor Transform, PCAT），该方法沿两个轴线分层重塑锚点，以及角色条件多模态融合（Persona-Conditioned Multi-Modal Fusion, PCMF）用于鸟瞰视角（BEV）级别的角色融合。训练通过层次引导损失（Hierarchical Guide Loss）进行监督，该损失强制执行轴对齐的物理顺序，并通过轴分解多样性损失（Axis-Decomposed Diversity Loss）防止对角模式崩溃。实验结果表明，PersonaDrive在多维场景中始终优于比较基线。代码和PCT数据集可在https://github.com/VisualAIKHU/PersonaDrive获取。",
+  "arxiv_id": "2608.15230",
+  "arxiv_url": "https://arxiv.org/abs/2608.15230v1",
+  "authors": [
+    "Chan Lee",
+    "Kimin Yun",
+    "Yuseok Bae",
+    "Seong Tae Kim",
+    "Jung Uk Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15230",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.713296+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15230v1",
+  "published_at": "2026-08-15T13:37:40Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15230v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "PersonaDrive: Controllable Trajectory Prediction with Multi-Dimensional Driving Personas",
+  "title_zh": "PersonaDrive：具有多维驾驶角色的可控轨迹预测",
+  "translation_url": "https://hjfy.top/arxiv/2608.15230"
+}

@@ -1,0 +1,48 @@
+{
+  "abstract": "Automated pavement-distress detection is commonly framed as a small-object problem, motivating high-resolution P2/4 detection heads and lossless downsampling. We present YOLO26-RD, an end-to-end (NMS-free) detector built on YOLO26 with two lightweight novel modules (LearnableContrast, a 494-parameter differentiable analogue of CLAHE that adapts contrast per tile inside the network, and EdgeSPD, a Sobel-gated space-to-depth downsampler adding only 2 parameters over SPD-Conv), and we subject the design to a data-first audit on a 7,618-image road-survey dataset (alligator crack, linear crack, patching). The audit falsifies the small-object premise: 92% of instances are COCO-large, and linear cracks are extreme-aspect structures (median 10:1) whose difficulty is sensitivity, not localization. Guided by this analysis, we remove the P2 detection level while retaining P2 features in the fusion path, which improves mAP50 by 2.8 points over the full YOLO26-RD model and reduces epoch time by 8%. Trained from scratch at 640x640, our best screening configuration reaches 0.787 mAP50 on the validation split versus a 0.771 project baseline (a stock YOLO26-s of uncontrolled recipe), with the largest per-class gain on the rarest class (patching, 2.6 points over baseline; 9.4 over the unmodified YOLO26-RD control under an identical recipe). A failure-mode decomposition further attributes the residual error of the bottleneck class (crack, approximately 0.74 across all architectures tested) to train/validation distribution shift on crack orientation and length, sub-pixel crack width at 640x640, and label incompleteness, factors no architecture change can address. We argue that for pavement imagery, measurement-driven subtraction outperforms module accretion, and we release our audit protocol alongside the model.",
+  "abstract_zh": "自动化路面损伤检测通常被视为小物体问题，这促使我们使用高分辨率的 P2/4 检测头和无损下采样。我们提出了 YOLO26-RD，这是一种基于 YOLO26 构建的端到端（无 NMS）检测器，配备两个轻量级新模块（LearnableContrast，一个具有 494 个参数的可微分 CLAHE 类比，能够在网络内部根据每个瓦片自适应对比度，以及 EdgeSPD，一个仅增加 2 个参数的 Sobel 门控空间到深度下采样器），并对设计在一个包含 7,618 张图像的道路调查数据集（鳄鱼裂缝、线性裂缝、修补）上进行了数据优先审计。审计结果否定了小物体的前提：92% 的实例为 COCO-large，线性裂缝是极端长宽比结构（中位数 10:1），其难点在于敏感性而非定位。在这一分析的指导下，我们去除了 P2 检测级别，同时在融合路径中保留 P2 特征，这使得完整的 YOLO26-RD 模型的 mAP50 提高了 2.8 个点，并且减少了 8% 的训练周期时间。在 640x640 的基础上从零开始训练，我们的最佳筛选配置在验证集上达到了 0.787 的 mAP50，相较于 0.771 的项目基线（未控制配方的标准 YOLO26-s），在最稀有类别（修补）上获得了最大的每类增益（相较基线提高 2.6 个点；在相同配方下相较未修改的 YOLO26-RD 控制提高 9.4 个点）。失败模式分解进一步将瓶颈类别（裂缝，所有测试架构的平均约为 0.74）的残余误差归因于裂缝方向和长度的训练/验证分布偏移、640x640 下的亚像素裂缝宽度以及标签不完整性，这些因素是任何架构变更无法解决的。我们认为，对于路面图像，基于测量的减法优于模块的增加，并且我们将审计协议与模型一同发布。",
+  "arxiv_id": "2608.15713",
+  "arxiv_url": "https://arxiv.org/abs/2608.15713v1",
+  "authors": [
+    "Sompote Youwai",
+    "Pawarotorn Chaipetch",
+    "Hathairat Samaikul",
+    "Theerayut Yonseng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15713",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.762125+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15713v1",
+  "published_at": "2026-08-16T12:36:12Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15713v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "本文面向道路巡检图像中的裂缝、龟裂和修补区域检测，提出带可学习对比度增强与边缘引导下采样的轻量YOLO检测器。其数据审计否定了路面损伤主要属于小目标的常见假设，并通过移除P2检测层提升精度和训练效率。该工作可用于自动驾驶车辆的路面状态感知、道路异常识别及道路资产维护，但并未直接研究车辆驾驶决策或端到端驾驶。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "YOLO26-RD: An End-to-End Road Damage Detection Network With Learnable Contrast Enhancement and Edge-Guided Downsampling",
+  "title_zh": "YOLO26-RD：一种具有可学习对比度增强和边缘引导下采样的端到端道路损伤检测网络",
+  "translation_url": "https://hjfy.top/arxiv/2608.15713"
+}

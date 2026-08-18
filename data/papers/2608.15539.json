@@ -1,0 +1,56 @@
+{
+  "abstract": "Video understanding benchmarks have long centered on single-camera settings, where modern multi-modal language models achieve strong performance across image and video tasks. Yet, the real world runs on multi-camera networks: autonomous vehicles, security systems, and robots all gather data across many simultaneous views. We argue that this is not simply \"more\" of the single-camera problem; it is fundamentally different. Multi-camera reasoning requires handling context that scales with the number of views, resolving occlusions visible from only a subset of cameras, judging which views matter, and integrating evidence across perspectives that may overlap or diverge. Current models struggle with exactly these challenges, yet no benchmark systematically targets them. We introduce CrossView, a multi-camera video question-answering benchmark spanning autonomous driving, security surveillance, egocentric/exocentric video, and robotics. Evaluation of proprietary models, such as GPT-5.2, and open-source models, like Qwen3-VL, reveals consistently low accuracy, with open-source models trailing by a wide margin. Performance scales strongly with a model's ability to jointly process multiple viewpoints, positioning CrossView as a rigorous benchmark for multi-camera video. We open-source our code and dataset at https://utaustin-swarmlab.github.io/CrossView.",
+  "abstract_zh": "视频理解基准长期以来集中于单摄像头设置，在这种情况下，现代多模态语言模型在图像和视频任务中表现出色。然而，现实世界依赖于多摄像头网络：自动驾驶汽车、安全系统和机器人都在多个同时视角下收集数据。我们认为，这不仅仅是单摄像头问题的“更多”情况；它在根本上是不同的。多摄像头推理需要处理与视角数量成比例的上下文，解决仅从部分摄像头可见的遮挡问题，判断哪些视角重要，以及整合可能重叠或分歧的视角之间的证据。目前的模型在这些挑战上表现不佳，但没有基准系统性地针对这些问题。我们推出了CrossView，这是一个涵盖自动驾驶、安全监控、自我中心/外部中心视频和机器人技术的多摄像头视频问答基准。对专有模型（如GPT-5.2）和开源模型（如Qwen3-VL）的评估显示，准确率普遍较低，开源模型的表现差距更大。性能与模型同时处理多个视角的能力密切相关，使CrossView成为多摄像头视频的严格基准。我们将在https://utaustin-swarmlab.github.io/CrossView上开源我们的代码和数据集。",
+  "arxiv_id": "2608.15539",
+  "arxiv_url": "https://arxiv.org/abs/2608.15539v1",
+  "authors": [
+    "Sahil Shah",
+    "S P Sharan",
+    "Harsh Goel",
+    "Manvik Pasula",
+    "Adithya Hebbalae",
+    "Minkyu Choi",
+    "Sandeep P. Chinchali"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15539",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.742854+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15539v1",
+  "published_at": "2026-08-16T05:25:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15539v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "VLM/VLA",
+      "安全/异常"
+    ]
+  },
+  "title": "CrossView: Can Vision-Language Models Reason Across Cameras?",
+  "title_zh": "CrossView：视觉-语言模型能否跨摄像头进行推理？",
+  "translation_url": "https://hjfy.top/arxiv/2608.15539"
+}

@@ -1,0 +1,62 @@
+{
+  "abstract": "Driving World Models (DWMs) have recently advanced rapidly with generative models, yet most existing methods mainly focus on conditional scene generation and lack explicit 3D scene understanding, language-grounded reasoning, and controllable 4D editing capabilities. Moreover, commonly used point cloud, occupancy, or BEV representations make it difficult to achieve fine-grained alignment between textual information and the underlying 3D scene structure. To address these limitations, we propose a foundation-feature Gaussian driving world model that unifies scene understanding, language-grounded reasoning, controllable 4D editing, and multi-modal generation within a single framework. Specifically, we introduce a foundation-feature Gaussian tokenizer that directly distills Qwen/SigLIP visual-language features into 3D Gaussian primitives, building a compact open-vocabulary Gaussian semantic field. We further design a geometry-aware Gaussian adapter that combines importance-aware hierarchical selection with text-conditioned Perceiver-style cross-attention to aggregate dense Gaussian primitives into compact world tokens. To improve representation compatibility, we introduce a KL-based Gaussian--image distribution alignment objective that aligns Gaussian world tokens with foundation image tokens. Based on the aligned Gaussian representation, our framework further supports instruction-controllable scene editing, including weather-conditioned generation and dynamic vehicle manipulation. Extensive experiments on broader driving benchmarks demonstrate that our method achieves state-of-the-art performance across scene understanding, visual grounding, planning-oriented reasoning, and controllable 4D generation tasks. We will release the code and datasets publicly on Github.",
+  "abstract_zh": "驾驶世界模型（DWMs）近年来随着生成模型的快速发展而取得了显著进展，但现有大多数方法主要集中于条件场景生成，缺乏明确的3D场景理解、基于语言的推理和可控的4D编辑能力。此外，常用的点云、占用或鸟瞰视图（BEV）表示使得文本信息与底层3D场景结构之间的细粒度对齐变得困难。为了解决这些局限性，我们提出了一种基础特征高斯驾驶世界模型，该模型在单一框架内统一了场景理解、基于语言的推理、可控的4D编辑和多模态生成。具体而言，我们引入了一种基础特征高斯分词器，直接将Qwen/SigLIP视觉-语言特征提炼为3D高斯原语，构建一个紧凑的开放词汇高斯语义场。我们进一步设计了一种几何感知高斯适配器，将重要性感知的分层选择与文本条件的Perceiver风格交叉注意力相结合，以将密集的高斯原语聚合为紧凑的世界标记。为了提高表示的兼容性，我们引入了一种基于KL的高斯-图像分布对齐目标，将高斯世界标记与基础图像标记对齐。基于对齐的高斯表示，我们的框架进一步支持可指令控制的场景编辑，包括天气条件生成和动态车辆操控。在更广泛的驾驶基准上进行的广泛实验表明，我们的方法在场景理解、视觉定位、规划导向推理和可控的4D生成任务中达到了最先进的性能。我们将公开发布代码和数据集于Github。",
+  "arxiv_id": "2608.16234",
+  "arxiv_url": "https://arxiv.org/abs/2608.16234v1",
+  "authors": [
+    "Tianchen Deng",
+    "Xuefeng Chen",
+    "Shuang Wu",
+    "Qu Chen",
+    "Jiajun Zhu",
+    "Bo Dai",
+    "Jianfei Yang",
+    "Hesheng Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16234",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.796497+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16234v1",
+  "published_at": "2026-08-17T08:12:56Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "bev",
+      "occupancy",
+      "point cloud",
+      "world model",
+      "场景生成",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 44
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16234v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "本文提出GaussianDWM++，一种面向自动驾驶的语言驱动3D高斯世界模型。方法将Qwen/SigLIP视觉语言特征蒸馏到3D高斯原语中，构建开放词汇语义场，并通过几何感知适配器和高斯-图像分布对齐实现紧凑世界表示。该模型统一支持场景理解、语言推理、视觉定位、规划导向推理、可控4D场景编辑及多模态生成，并可进行天气变化和动态车辆操控等指令控制。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "VLM/VLA",
+      "深度/几何"
+    ]
+  },
+  "title": "GaussianDWM++: Language-Grounded 3D Gaussian Driving World Model for Unified Scene Understanding, Editing, and Multi-Modal Generation",
+  "title_zh": "GaussianDWM++：基于语言的3D高斯驾驶世界模型，用于统一场景理解、编辑和多模态生成",
+  "translation_url": "https://hjfy.top/arxiv/2608.16234"
+}

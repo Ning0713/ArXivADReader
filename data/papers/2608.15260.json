@@ -1,0 +1,53 @@
+{
+  "abstract": "Maintaining global geometric consistency is a central challenge in long-sequence 3D reconstruction, with scale drift being the most critical failure mode. In chunk-based inference pipelines, the scale degree of freedom in sequential Sim(3) alignment is left unconstrained, causing estimation errors to compound multiplicatively and distort global trajectories and point cloud geometry. We present a scale-consistency enhancement framework built on a key insight: in structured environments such as driving scenes, geometric quantities arising from environmental regularity remain inherently invariant across temporal segments, and discrepancies in their per-chunk measurements directly expose inter-chunk scale drift. We propose Scene Geometric Invariant Anchoring (SGIA), which extracts dominant geometric invariants from each chunk's predicted point cloud via coarse-to-fine robust estimation and exploits their cross-chunk consistency to establish scale constraints independent of point cloud registration, explicitly degenerating 7-DoF Sim(3) alignment into 6-DoF rigid-body transformation and severing chain-wise scale error propagation at its source. We further introduce a lightweight test-time adaptation strategy that fine-tunes only normalization-layer parameters via multi-objective self-supervision, progressively improving intra-chunk predictions along the sequence. Both modules are plug-and-play and require no offline retraining. Experiments on multiple long-sequence benchmarks demonstrate state-of-the-art performance, reducing absolute trajectory error by up to 32% with significant gains in trajectory stability and reconstruction quality. Code: https://github.com/WZ-CS/VGGT-Align",
+  "abstract_zh": "在长序列3D重建中，保持全局几何一致性是一个核心挑战，其中尺度漂移是最关键的失败模式。在基于块的推理管道中，顺序Sim(3)对齐中的尺度自由度未受到约束，导致估计误差呈乘法性累积，从而扭曲全局轨迹和点云几何。我们提出了一种基于关键见解的尺度一致性增强框架：在结构化环境（如驾驶场景）中，由环境规律性产生的几何量在时间段之间本质上保持不变，而它们在每个块的测量中的差异直接暴露了块间的尺度漂移。我们提出了场景几何不变锚定（Scene Geometric Invariant Anchoring, SGIA），该方法通过粗到细的鲁棒估计从每个块的预测点云中提取主导几何不变性，并利用它们的跨块一致性建立独立于点云配准的尺度约束，明确地将7自由度Sim(3)对齐简化为6自由度刚体变换，并在源头切断链式尺度误差传播。我们进一步引入了一种轻量级的测试时适应策略，通过多目标自我监督仅微调归一化层参数，逐步改善序列中的块内预测。这两个模块均为即插即用，无需离线重训练。在多个长序列基准上的实验表明，我们的方法实现了最先进的性能，将绝对轨迹误差降低了多达32%，并显著提高了轨迹稳定性和重建质量。代码： https://github.com/WZ-CS/VGGT-Align",
+  "arxiv_id": "2608.15260",
+  "arxiv_url": "https://arxiv.org/abs/2608.15260v1",
+  "authors": [
+    "Wei Zhang",
+    "Yihang Wu",
+    "Songhua Li",
+    "Qi Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15260",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.718161+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15260v1",
+  "published_at": "2026-08-15T14:32:55Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15260v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "本文面向长序列3D重建中的全局几何一致性问题，重点解决基于块推理时由Sim(3)尺度自由度引起的尺度漂移累积。方法提出场景几何不变锚定（SGIA），从各序列块的预测点云中提取跨时间保持一致的结构几何量，以此约束尺度并将7自由度Sim(3)对齐转化为6自由度刚体变换；同时通过仅更新归一化层参数的测试时自适应，利用多目标自监督逐步改善块内预测。该方法无需离线重训练，可提升驾驶场景等结构化环境中的轨迹稳定性和重建质量。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "VGGT-Align: Bridging Local Reconstruction and Global Consistency for Long-Sequence 3D Reconstruction",
+  "title_zh": "VGGT-Align：桥接局部重建与全局一致性以实现长序列3D重建",
+  "translation_url": "https://hjfy.top/arxiv/2608.15260"
+}

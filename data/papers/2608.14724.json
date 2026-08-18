@@ -1,0 +1,58 @@
+{
+  "abstract": "The rapid advancement of intelligent transportation systems and autonomous driving relies heavily on multi-modal urban traffic datasets. However, curating high-fidelity video imagery in complex tropical urban environments---specifically Kuala Lumpur, Malaysia---presents severe challenges for Personally Identifiable Information (PII) anonymization due to high motorcycle density, dark acrylic license plates, dynamic camera tilt, and extreme tropical glare. We propose an automated anonymization framework tailored for the Kuala Lumpur Road Dataset, captured via a mobile cycling platform at 2 FPS. We document how legacy Haar cascades and YOLOv8 fail under these conditions---generating false positives on background elements while missing rotated or occluded targets. Our architecture resolves this by integrating Grounding DINO---a zero-shot open-set vision-language transformer---with a novel Spatial Vehicle Region of Interest (ROI) Containment Engine. By requiring license plate centroids to reside within validated vehicle boundaries, the pipeline suppresses environmental false positives while automatically obfuscating faces, heads, and license plates. An initial evaluation on 1,266 frames demonstrates a $\\sim$95\\% success rate, with remaining failures restricted to small, heavily occluded, oblique, or ambiguous targets. Coupled with temporal persistence mechanisms and an automated quality-control auditor, the framework minimizes privacy-related false negatives while preserving scene context for downstream vision tasks. While formal legal compliance depends on broader governance procedures, this publicly available pipeline and demonstration notebook provide an auditable preprocessing stage for privacy-aware dataset curation.",
+  "abstract_zh": "智能交通系统和自动驾驶的快速发展在很大程度上依赖于多模态城市交通数据集。然而，在复杂的热带城市环境中，特别是马来西亚吉隆坡，策划高保真度的视频图像面临着严重的个人可识别信息（PII）匿名化挑战，这主要是由于摩托车密度高、黑色亚克力车牌、动态摄像头倾斜和极端热带眩光。我们提出了一种针对吉隆坡道路数据集的自动化匿名化框架，该数据集通过移动骑行平台以每秒2帧的速度捕获。我们记录了传统的Haar级联和YOLOv8在这些条件下的失败——在背景元素上产生误报，同时错过旋转或被遮挡的目标。我们的架构通过将Grounding DINO（一个零-shot开放集视觉-语言变换器）与一种新颖的空间车辆兴趣区域（ROI）包含引擎相结合来解决这一问题。通过要求车牌质心位于经过验证的车辆边界内，该流程抑制了环境误报，同时自动模糊化面孔、头部和车牌。对1,266帧的初步评估表明成功率约为95%，剩余的失败主要限于小型、严重遮挡、倾斜或模糊的目标。结合时间持久性机制和自动化质量控制审计器，该框架在保留场景上下文以支持下游视觉任务的同时，最小化与隐私相关的漏报。尽管正式的法律合规性依赖于更广泛的治理程序，但该公开可用的流程和演示笔记本为隐私意识的数据集策划提供了一个可审计的预处理阶段。",
+  "arxiv_id": "2608.14724",
+  "arxiv_url": "https://arxiv.org/abs/2608.14724v1",
+  "authors": [
+    "Mohammed Abdul Al Arafat Tanzin",
+    "Rudzidatul Akmam Dziyauddin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-14724",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.664435+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14724v1",
+  "published_at": "2026-08-12T13:45:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14724v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Privacy-Preserving Dataset Curation for Kuala Lumpur Urban Traffic: Grounded Vision-Language Detection with Spatial Vehicle-Context Filtering",
+  "title_zh": "保护隐私的数据集策划：基于空间车辆上下文过滤的吉隆坡城市交通视觉-语言检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.14724"
+}

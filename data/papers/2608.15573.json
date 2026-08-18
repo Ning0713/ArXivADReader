@@ -1,0 +1,61 @@
+{
+  "abstract": "Reliable long-horizon planning remains a key challenge in end-to-end autonomous driving. By accounting for future motion evolution and potential consequences, it provides forward-looking guidance for safe and consistent driving in evolving traffic environments. Existing methods use historical planning states as temporal context. Self-generated history may become stale or conflict with the current motion stage, introducing unreliable priors. We propose StableDrive to address cross-cycle historical reliability and within-horizon motion-stage evolution. Selective Momentum Memory (SMM), implemented with a Mamba selective state-space operator, controls the influence of the preceding self-predicted planning state on the current cycle. Motion-Stage Training Scaffold (MSTS) uses motion-stage, long-horizon trajectory, and longitudinal-motion supervision to guide stage-aware future motion learning and is removed before inference. A fixed parameter midpoint between two architecture-aligned endpoints yields a single deployable SMM planner without model ensembling or extra inference-time computation. On nuScenes under the MomAD evaluation protocol, StableDrive achieves SOTA performance across all reported planning metrics from 1 to 6 s, reducing average collision rate by 23.3%, TPC by 30.9%, and L2 by 11.8% over the best previously reported value for each metric. On the curated Longitudinal-Transition nuScenes (LT-nuScenes), StableDrive reduces 6-s collision rate by 23.81%, TPC by 10.90%, and L2 by 6.37%. On NAVSIM v1 and v2, StableDrive achieves the highest PDMS/EPDMS in all three reported settings, including a 5.7-point EPDMS gain on v2 navhard over the previous best.",
+  "abstract_zh": "可靠的长时间跨度规划仍然是端到端自动驾驶中的一个关键挑战。通过考虑未来运动演变和潜在后果，它为在不断变化的交通环境中安全和一致的驾驶提供了前瞻性的指导。现有方法使用历史规划状态作为时间上下文。自生成的历史可能会变得过时或与当前运动阶段相冲突，从而引入不可靠的先验知识。我们提出了StableDrive，以解决跨周期历史的可靠性和在时间跨度内的运动阶段演变。选择性动量记忆（Selective Momentum Memory, SMM）通过Mamba选择性状态空间操作符实现，控制先前自预测规划状态对当前周期的影响。运动阶段训练支架（Motion-Stage Training Scaffold, MSTS）利用运动阶段、长时间跨度轨迹和纵向运动监督来指导阶段感知的未来运动学习，并在推理前移除。在两个架构对齐的端点之间的固定参数中点产生一个可单独部署的SMM规划器，无需模型集成或额外的推理时间计算。在nuScenes数据集上，根据MomAD评估协议，StableDrive在所有报告的规划指标中实现了SOTA性能，从1到6秒的平均碰撞率降低了23.3%，TPC降低了30.9%，L2降低了11.8%，相较于每个指标的最佳先前报告值。在精心策划的纵向过渡nuScenes（LT-nuScenes）上，StableDrive将6秒的碰撞率降低了23.81%，TPC降低了10.90%，L2降低了6.37%。在NAVSIM v1和v2上，StableDrive在所有三个报告设置中实现了最高的PDMS/EPDMS，包括在v2 navhard上相较于之前最佳值的5.7点EPDMS增益。",
+  "arxiv_id": "2608.15573",
+  "arxiv_url": "https://arxiv.org/abs/2608.15573v1",
+  "authors": [
+    "Yuchen Liu",
+    "Ziying Song",
+    "Shengkai Zhang",
+    "Jiannan Chen",
+    "Peiliang Wu",
+    "Lei Yang",
+    "Bin Sun",
+    "Yan Gong",
+    "Li Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15573",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.598558+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15573v1",
+  "published_at": "2026-08-16T06:41:56Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15573v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "感知"
+    ]
+  },
+  "title": "Not All History Helps: Velocity-Aware Selective Memory for Long-Horizon End-to-End Autonomous Driving",
+  "title_zh": "并非所有历史都有帮助：基于速度的选择性记忆用于长时间跨度的端到端自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.15573"
+}

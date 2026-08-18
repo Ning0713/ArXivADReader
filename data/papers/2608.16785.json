@@ -1,0 +1,53 @@
+{
+  "abstract": "This paper proposes a calibration-free framework for reliably and effectively estimating vehicle speeds from monocular videos, without relying on roadway features, camera calibration, or roadway-feature-based reference objects. The proposed framework estimates vehicle speeds using a 36-keypoint vehicle template and a homography matrix updated at each frame. A YOLO-based keypoint detection module is trained on diverse datasets, and two estimation strategies are compared: keypoint-only tracking and warped optical flow with dense spatial aggregation. Speed is estimated by projecting displacements into metric space using the homography, with validation conducted on over 400 video clips from roadside and overhead datasets, covering speeds from 30 to 100 mph. The method achieves reliable speed estimation on the VS13 and BrnoCompSpeed datasets, with the warped optical flow method delivering MAEs of 15.0% and 9.7%, respectively, and 77.9% and 93.1% of estimates falling within +/-20% error. After applying a 10% trim to remove edge-of-frame outliers, performance improves to MAEs of 11.7% and 7.6%, with within-+/-20% accuracy increasing to 85.3% and 95.4%. This work addresses key limitations of existing vision-based approaches and enables low-cost and efficient speed enforcement using portable devices such as dashcams and smartphones, thereby supporting citizen-based enforcement programs for traffic safety.",
+  "abstract_zh": "本文提出了一种无校准框架，用于从单目视频中可靠且有效地估计车辆速度，无需依赖道路特征、相机校准或基于道路特征的参考物体。所提出的框架使用36个关键点的车辆模板和在每帧更新的单应性矩阵来估计车辆速度。基于YOLO的关键点检测模块在多样化的数据集上进行训练，并比较了两种估计策略：仅关键点跟踪和带有密集空间聚合的扭曲光流。通过使用单应性将位移投影到度量空间中来估计速度，并在超过400个来自路边和高空数据集的视频片段上进行验证，覆盖速度范围从30到100英里每小时。该方法在VS13和BrnoCompSpeed数据集上实现了可靠的速度估计，扭曲光流方法的平均绝对误差（MAE）分别为15.0%和9.7%，并且77.9%和93.1%的估计值在±20%的误差范围内。在应用10%的修剪以去除边缘帧异常值后，性能提升至MAE为11.7%和7.6%，而±20%的准确率提高至85.3%和95.4%。该研究解决了现有基于视觉的方法的关键局限性，并使得使用便携设备（如行车记录仪和智能手机）进行低成本和高效的速度执法成为可能，从而支持基于公民的交通安全执法项目。",
+  "arxiv_id": "2608.16785",
+  "arxiv_url": "https://arxiv.org/abs/2608.16785v1",
+  "authors": [
+    "Gaofeng Su",
+    "Keya Li",
+    "Raja Sengupta",
+    "Kara M. Kockelman"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16785",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.850155+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16785v1",
+  "published_at": "2026-08-17T16:39:06Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "roadside",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16785v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "本文研究从单目视频中进行无需相机标定的车辆速度估计。方法通过车辆关键点模板、逐帧单应性更新和扭曲光流，将图像中的车辆位移转换为度量空间速度，并在多个路侧与高空数据集上取得较好的测速精度。该技术主要面向交通安全与便携式测速执法，但其车辆运动估计能力也可服务于自动驾驶感知系统。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "安全/异常"
+    ]
+  },
+  "title": "Calibration-Free Vehicle Speed Estimation: A Monocular Keypoint-Template Approach",
+  "title_zh": "无校准车辆速度估计：单目关键点-模板方法",
+  "translation_url": "https://hjfy.top/arxiv/2608.16785"
+}

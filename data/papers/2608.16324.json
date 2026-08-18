@@ -1,0 +1,49 @@
+{
+  "abstract": "We present LaGSplat (Latent Lagrangian Gaussian Splatting), a framework that infers interactive, physics-governed dynamics from one or a few monocular videos. At inference it lets a user push on the filmed object, rigid or deformable, with an external force that was never measured, annotated, or seen during training. This is possible because a low-dimensional latent state $\\mathbf{q} \\in \\mathbb{R}^d$ plays two roles at once: it is the generalised coordinate of a learned dissipative Lagrangian and the conditioning variable of a Gaussian Splatting decoder. The inductive bias of this decoder, whose primitives are explicit points $\\mu_i(\\mathbf{q})$ that move with the object, is what lets a force $f$ applied in the image pull back into a latent generalised force $J(\\mathbf{q})^\\top f$ and enter the equations of motion, which pixel-space (CNN) or neural-field (NeRF) decoders cannot do. We validate LaGSplat on test cases of increasing difficulty, from rigid to deformable and from autonomous to forced real systems, combining monocular video and sensor measurements. We further demonstrate interactive use: forces of arbitrary magnitude and direction can be applied to the reconstructed object at any time, its response rendered in real time, in 2D or 3D. Assuming a dissipative Euler-Lagrange equation over a few generalised coordinates trades generality for a bounded, plausible response to unseen forces, where an unconstrained predictor diverges.",
+  "abstract_zh": "我们提出了LaGSplat（潜在拉格朗日高斯点云），这是一个从一段或几段单目视频中推断交互式、物理驱动动态的框架。在推断过程中，用户可以对拍摄的物体施加外部力，无论是刚性物体还是可变形物体，这种外部力在训练过程中从未被测量、注释或观察到。这是可能的，因为一个低维潜在状态$ extbf{q} ext{ in } ext{R}^d$同时扮演两个角色：它是学习到的耗散拉格朗日的广义坐标，也是高斯点云解码器的条件变量。该解码器的归纳偏置，其原始元素是随物体移动的显式点$\boldsymbol{ u}_i( extbf{q})$，使得施加在图像中的力$f$能够回拉到潜在的广义力$J( extbf{q})^ op f$并进入运动方程，而像素空间（CNN）或神经场（NeRF）解码器则无法做到这一点。我们在逐渐增加难度的测试案例上验证了LaGSplat，从刚性到可变形，从自主系统到受迫真实系统，结合了单目视频和传感器测量。我们进一步展示了交互式使用：可以在任何时间对重建的物体施加任意大小和方向的力，其响应实时渲染，支持2D或3D显示。假设在几个广义坐标上存在耗散的欧拉-拉格朗日方程，这在未见力的情况下以有限的、合理的响应来交换一般性，而不受约束的预测器则会发散。",
+  "arxiv_id": "2608.16324",
+  "arxiv_url": "https://arxiv.org/abs/2608.16324v1",
+  "authors": [
+    "Louen Pottier"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16324",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.807972+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16324v1",
+  "published_at": "2026-08-17T09:29:12Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16324v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "本文提出一种从单目视频学习物理约束交互式动态的方法。LaGSplat将低维潜在状态、耗散拉格朗日动力学与可随状态变化的高斯点云结合，使模型能够对训练中未出现的外力产生有界且合理的响应，并实时渲染刚性或可变形物体的二维、三维运动。该方法可作为自动驾驶中的世界模型、场景交互仿真和数据生成的基础技术，但论文自身并未直接涉及车辆、道路或驾驶任务。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "LaGSplat: Inferring Physics-Governed Interactive Simulation from Monocular Video Using Latent Lagrangian Gaussian Splatting",
+  "title_zh": "LaGSplat：基于单目视频推断物理驱动的交互式仿真使用潜在拉格朗日高斯点云",
+  "translation_url": "https://hjfy.top/arxiv/2608.16324"
+}

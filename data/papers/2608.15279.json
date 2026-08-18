@@ -1,0 +1,58 @@
+{
+  "abstract": "4D occupancy forecasting models the spatio-temporal evolution of 3D scenes and is crucial for autonomous driving, especially for corner-case simulation. Existing methods often rely on discrete tokenization followed by autoregressive prediction, yet struggle with geometric distortion in static structures and inconsistent temporal coherence over the forecasting horizon. In this work, we propose a Geometry-Aware Spatio-Temporal context modeling method (GAST) for 4D occupancy forecasting, built upon progressive explicit-implicit generation and dual-path spatio-temporal modeling. Specifically, the generation module produces per-frame occupancy with high geometric fidelity and semantic plausibility through pose-driven warping, motion-aware feature modulation, and attention-based feature refinement. Subsequently, the spatio-temporal module enhances spatial consistency through global context aggregation while capturing scene evolution through temporal dynamics extraction. This unified design enables joint optimization of historical reconstruction and future forecasting in an end-to-end manner. Extensive experiments on Occ3D-nuScenes demonstrate the superiority of our method, outperforming the state-of-the-art by 7.67% in mIoU and 6.44% in IoU with a 2.84x speedup, while maintaining strong performance in long-term forecasting.",
+  "abstract_zh": "4D占用预测建模3D场景的时空演变，对于自动驾驶尤其是边缘案例模拟至关重要。现有方法通常依赖于离散标记化，随后进行自回归预测，但在静态结构的几何失真和预测范围内的不一致时间连贯性方面存在困难。在本研究中，我们提出了一种基于几何感知的时空上下文建模方法（Geometry-Aware Spatio-Temporal context modeling，GAST），用于4D占用预测，该方法基于渐进式显式-隐式生成和双路径时空建模。具体而言，生成模块通过姿态驱动的变形、运动感知特征调制和基于注意力的特征精炼，产生具有高几何保真度和语义合理性的逐帧占用。随后，时空模块通过全局上下文聚合增强空间一致性，同时通过时间动态提取捕捉场景演变。这种统一设计使得历史重建和未来预测能够以端到端的方式进行联合优化。在Occ3D-nuScenes上的大量实验表明，我们的方法优于现有最先进技术，在mIoU上提高了7.67%，在IoU上提高了6.44%，同时实现了2.84倍的加速，并在长期预测中保持了强劲的性能。",
+  "arxiv_id": "2608.15279",
+  "arxiv_url": "https://arxiv.org/abs/2608.15279v1",
+  "authors": [
+    "Sitao Chen",
+    "Zhuangwei Zhuang",
+    "Hui Luo",
+    "Qingyao Wu",
+    "Mingkui Tan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15279",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.722094+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15279v1",
+  "published_at": "2026-08-15T15:22:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15279v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Geometry-Aware Spatio-Temporal Context Modeling for 4D Occupancy Forecasting",
+  "title_zh": "基于几何感知的时空上下文建模用于4D占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2608.15279"
+}

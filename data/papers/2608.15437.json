@@ -1,0 +1,57 @@
+{
+  "abstract": "Multimodal bird's-eye-view (BEV) perception combines LiDAR depth accuracy with dense camera semantics, but its high computational cost and imperfect sensing conditions make real-time deployment challenging. Existing methods largely compress individual detectors and overlook three opportunities: structured sparsity within camera and LiDAR inputs, timing misalignment between modalities, and the fact that many detected objects do not affect the planner's immediate action. We present MM-BEV, a real-time multimodal BEV system guided by a simple principle: compute where and when it matters. MM-BEV divides perception into mandatory work for safety-critical objects within braking distance of the ego vehicle and with short time-to-collision (TTC), and optional work for less urgent regions. It prioritizes mandatory work and reduces or sheds optional work under tight compute budgets. MM-BEV integrates four mechanisms: (1) a criticality-ranked temporal ROI selector based on motion-extrapolated detections from prior frames; (2) sparse, ROI-aware feature extraction using shared-shape camera crops at context-adaptive resolution and ROI-aware LiDAR voxelization; (3) a latency-aware coordinator that adapts LiDAR sweeps, image resolution, and keyframes according to scene dynamics and TTC; and (4) an asynchronous scheduler that decouples sensing from inference and skips stale frames. On nuScenes, MM-BEV reduces inference latency by 1.96x and end-to-end latency by 2.93x, with no loss in geometry-critical recall and only a 0.2 percentage-point drop in safety-critical recall. On a Clearpath Husky A300 equipped with an Ouster-128 LiDAR, BEV cameras, and a Jetson AGX Orin, MM-BEV further reduces mean latency by 2.11x, demonstrating its potential for real-world autonomous systems.",
+  "abstract_zh": "多模态鸟瞰视图（BEV）感知结合了LiDAR的深度精度和密集的相机语义，但其高计算成本和不完美的感知条件使得实时部署面临挑战。现有方法主要压缩单个检测器，忽视了三个机会：相机和LiDAR输入中的结构稀疏性、模态之间的时间错位，以及许多检测到的物体并不影响规划者的即时行动。我们提出了MM-BEV，一个实时多模态BEV系统，其指导原则是：在重要时刻和地点进行计算。MM-BEV将感知分为对安全关键物体的强制性工作（这些物体在自车的制动距离内且具有短时间碰撞（TTC））和对不太紧急区域的可选工作。它优先处理强制性工作，并在计算预算紧张时减少或放弃可选工作。MM-BEV集成了四个机制：（1）基于先前帧的运动外推检测结果的关键性排名时间感兴趣区域（ROI）选择器；（2）使用共享形状相机裁剪以上下文自适应分辨率进行稀疏、ROI感知的特征提取，以及ROI感知的LiDAR体素化；（3）一个延迟感知协调器，根据场景动态和TTC调整LiDAR扫描、图像分辨率和关键帧；（4）一个异步调度器，将感知与推理解耦，并跳过过时的帧。在nuScenes数据集上，MM-BEV将推理延迟减少了1.96倍，端到端延迟减少了2.93倍，几何关键召回率没有损失，安全关键召回率仅下降了0.2个百分点。在配备Ouster-128 LiDAR、BEV相机和Jetson AGX Orin的Clearpath Husky A300上，MM-BEV进一步将平均延迟减少了2.11倍，展示了其在现实世界自主系统中的潜力。",
+  "arxiv_id": "2608.15437",
+  "arxiv_url": "https://arxiv.org/abs/2608.15437v1",
+  "authors": [
+    "Liangkai Liu",
+    "Kang G. Shin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15437",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.DC",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.589091+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15437v1",
+  "published_at": "2026-08-15T22:42:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "ego vehicle",
+      "nuscenes",
+      "autonomous",
+      "vehicle",
+      "bev",
+      "bird's-eye",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 70
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15437v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "MM-BEV: Enhancing Timeliness by Computing Where and When it Matters",
+  "title_zh": "MM-BEV：通过计算重要时刻和地点提升时效性",
+  "translation_url": "https://hjfy.top/arxiv/2608.15437"
+}

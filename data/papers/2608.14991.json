@@ -1,0 +1,60 @@
+{
+  "abstract": "Cloud-hosted vision-language models (VLMs) offer greater contextual reasoning capabilities than smaller onboard models, but frequent visual uploads increase communication overhead and add network and inference latency to tactical decisions. We present a risk-adaptive edge-cloud architecture in which onboard traffic assessment determines when cloud reasoning is requested. An onboard VLM and a lightweight detector capture temporal traffic conditions and path-relative hazards for conservative local response and selective cloud access. The cloud model provides tactical advice, while validation, vehicle control, and automatic emergency braking remain local. In CARLA experiments, our method matched the task success rate of periodic cloud access while reducing cloud requests by 54.1% and recording fewer automatic emergency braking (AEB) activations. In a delayed-roadwork ablation, semantic events triggered requests before the next scheduled audit. Across three emulated network profiles, the method continued to reduce cloud traffic, although lane changes took longer than with periodic access. Onboard traffic assessment therefore served as a practical trigger for selective VLM inference in these experiments.",
+  "abstract_zh": "云托管的视觉-语言模型（VLMs）提供了比较小的车载模型更强的上下文推理能力，但频繁的视觉上传增加了通信开销，并为战术决策带来了网络和推理延迟。我们提出了一种风险适应性边缘-云架构，其中车载交通评估决定何时请求云端推理。车载VLM和轻量级检测器捕获时间性交通状况和路径相关的危险，以实现保守的本地响应和选择性的云访问。云模型提供战术建议，而验证、车辆控制和自动紧急制动仍然在本地进行。在CARLA实验中，我们的方法在周期性云访问的任务成功率上表现相当，同时将云请求减少了54.1%，并记录了更少的自动紧急制动（AEB）激活。在延迟的道路施工消融实验中，语义事件在下一个计划审计之前触发了请求。在三个模拟的网络配置中，该方法继续减少云流量，尽管车道变换所需时间比周期性访问更长。因此，车载交通评估在这些实验中作为选择性VLM推理的实际触发器。",
+  "arxiv_id": "2608.14991",
+  "arxiv_url": "https://arxiv.org/abs/2608.14991v1",
+  "authors": [
+    "Meng Ma",
+    "Shuyang Li",
+    "Naigang Wang",
+    "Ruimin Ke"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-14991",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.687626+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14991v1",
+  "published_at": "2026-08-15T02:36:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14991v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Risk-Adaptive Edge--Cloud Visual Reasoning for Communication-Efficient Autonomous Driving",
+  "title_zh": "风险适应性边缘-云视觉推理用于通信高效的自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.14991"
+}

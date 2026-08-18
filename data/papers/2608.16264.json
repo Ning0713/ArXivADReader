@@ -1,0 +1,59 @@
+{
+  "abstract": "Conventionally, robotic perception relies heavily on cameras due to the rich semantic texture they provide. However, their performance degrades significantly in low-light or high-dynamic-range environments. Conversely, while Light Detection and Ranging (LiDAR) captures illumination-invariant geometric and intensity properties, the resulting data are typically single-channel and sparse, creating a significant modality gap when applying vision models pre-trained on RGB datasets. In this paper, we propose Cyclops, a framework that translates sparse Non-Repetitive Scanning LiDAR (NRS-LiDAR) intensity into RGB video, enabling camera-free inference for all-day perception tasks. Our approach first converts sparse LiDAR intensity projections into dense representations via a frozen pre-trained densification module, serving as a geometrically rich source condition. The dense intensity latent is then transported toward the target RGB distribution through Latent Bridge Matching (LBM) with a learned velocity field in a few ODE integration steps. To mitigate inter-frame flickering, we inject prior-frame context via temporal attention layers and further formulate the velocity field as a policy optimized by a differentiable terminal reward that encourages terminal fidelity through backpropagation along the ODE trajectory. Extensive experiments demonstrate that the synthesized RGB, including those generated under near-dark conditions, enable standard RGB-based perception models to substantially outperform both LiDAR baselines and conventional cameras on semantic segmentation, lane detection, and point cloud colorization across diverse lighting conditions.",
+  "abstract_zh": "传统上，机器人感知在很大程度上依赖于相机，因为它们提供了丰富的语义纹理。然而，在低光或高动态范围环境中，相机的性能显著下降。相反，光探测与测距（LiDAR）捕获了与光照无关的几何和强度特性，但所产生的数据通常是单通道且稀疏的，这在将预先训练的视觉模型应用于RGB数据集时造成了显著的模态差距。在本文中，我们提出了Cyclops，一个将稀疏的非重复扫描LiDAR（NRS-LiDAR）强度转换为RGB视频的框架，从而实现全天候感知任务的无相机推理。我们的方法首先通过一个冻结的预训练稠密化模块将稀疏的LiDAR强度投影转换为稠密表示，作为几何丰富的源条件。然后，稠密强度潜变量通过在少数常微分方程（ODE）积分步骤中与学习到的速度场进行潜在桥接匹配（Latent Bridge Matching，LBM），被传输到目标RGB分布。为了减轻帧间闪烁，我们通过时间注意层注入前一帧的上下文，并进一步将速度场表述为一个策略，该策略通过可微分的终端奖励进行优化，鼓励沿ODE轨迹的终端保真度。大量实验表明，合成的RGB图像，包括在近乎黑暗条件下生成的图像，使得基于标准RGB的感知模型在语义分割、车道检测和点云着色等任务中，显著超越了LiDAR基线和传统相机，适用于多种照明条件。",
+  "arxiv_id": "2608.16264",
+  "arxiv_url": "https://arxiv.org/abs/2608.16264v1",
+  "authors": [
+    "Wei Gao",
+    "Jian Shu",
+    "Mingle Zhao",
+    "Maani Ghaffari",
+    "David Kong",
+    "Chengzhong Xu",
+    "Hui Kong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16264",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.626110+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16264v1",
+  "published_at": "2026-08-17T08:37:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "lane",
+      "车道",
+      "lidar",
+      "point cloud",
+      "lane detection",
+      "点云",
+      "车道检测",
+      "robotic"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 26
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16264v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "预测/规划"
+    ]
+  },
+  "title": "Cyclops: LiDAR as a Camera That Dreams in Color",
+  "title_zh": "独眼巨人：将激光雷达视为梦中的彩色相机",
+  "translation_url": "https://hjfy.top/arxiv/2608.16264"
+}

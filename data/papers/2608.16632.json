@@ -1,0 +1,54 @@
+{
+  "abstract": "Deep learning-based object detectors are fundamental to intelligent transportation systems, enabling traffic monitoring, vehicle analytics, and infrastructure management. However, achieving both fine-grained vehicle recognition and robust cross-city domain generalization remains challenging. We present the Domain-Robust Asymmetric Fusion Ensemble (DRAFE), which combines independently trained LW-DETR and RF-DETR detectors for cross-city fine-grained traffic object detection. DRAFE employs a two-stage training strategy that first pretrains complementary detectors on diverse public traffic datasets using pseudo-label expansion and human-in-the-loop annotation refinement, producing a curated corpus of 6,049 images and 203,619 annotations, before challenge-compliant fine-tuning on the Project Hafnia Track 6 dataset. At inference, DRAFE applies anchor-conditioned class-consistent matching, reliability-weighted coordinate fusion, agreement-aware confidence recalibration, and complementary hypothesis recovery. On AI City Challenge 2026 Track 6, DRAFE achieves 0.4022 mAP, ranks sixth among 25 participating teams, and improves by 0.0553 mAP over a preliminary ensemble evaluated under identical benchmark conditions.",
+  "abstract_zh": "基于深度学习的目标检测器是智能交通系统的基础，能够实现交通监控、车辆分析和基础设施管理。然而，实现细粒度的车辆识别和鲁棒的跨城市领域泛化仍然具有挑战性。我们提出了领域鲁棒性非对称融合集成（DRAFE），它结合了独立训练的LW-DETR和RF-DETR检测器，用于跨城市细粒度交通目标检测。DRAFE采用了两阶段的训练策略，首先在多样的公共交通数据集上使用伪标签扩展和人机协作的注释精炼对互补检测器进行预训练，生成了一个包含6,049张图像和203,619个注释的精心策划的语料库，然后在Project Hafnia Track 6数据集上进行符合挑战要求的微调。在推理阶段，DRAFE应用锚点条件的类别一致匹配、可靠性加权坐标融合、考虑一致性的置信度重新校准和互补假设恢复。在AI City Challenge 2026 Track 6中，DRAFE实现了0.4022 mAP，在25个参赛团队中排名第六，并在相同基准条件下比初步集成提高了0.0553 mAP。",
+  "arxiv_id": "2608.16632",
+  "arxiv_url": "https://arxiv.org/abs/2608.16632v1",
+  "authors": [
+    "Divine Yao Agbobli",
+    "Geoffery Eyram Agorku",
+    "Israel Afriyie",
+    "Kwadwo Amankwah-Nkyi",
+    "Marvin Osei-Kuffour",
+    "Richmond Owusu Duah",
+    "Bright Seglah",
+    "Kelvin Asamoah Terkper",
+    "Kwabena Amoako Adjei"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16632",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.834084+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16632v1",
+  "published_at": "2026-08-17T14:32:03Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "车辆",
+      "交通",
+      "traffic object"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16632v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "本文面向跨城市交通场景中的细粒度车辆目标检测，提出DRAFE领域鲁棒性非对称融合集成方法。该方法结合LW-DETR与RF-DETR，通过伪标签扩展、人机协同标注和挑战数据集微调构建互补检测器，并在推理阶段进行类别一致匹配、可靠性加权框融合、置信度重校准及互补检测假设恢复，从而提升跨域检测性能。该工作属于自动驾驶和智能交通感知中的目标检测研究，重点解决复杂交通环境下的细粒度识别与跨城市泛化问题。",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "DRAFE: Domain-Robust Asymmetric Fusion of Heterogeneous Detection Transformers for Cross-City Fine-Grained Traffic Object Detection",
+  "title_zh": "DRAFE：针对跨城市细粒度交通目标检测的领域鲁棒性非对称融合异构检测变换器",
+  "translation_url": "https://hjfy.top/arxiv/2608.16632"
+}

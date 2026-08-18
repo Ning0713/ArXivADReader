@@ -1,0 +1,57 @@
+{
+  "abstract": "Pedestrian path prediction is crucial for enhancing the safety of autonomous vehicles and advanced driver-assistance systems. Previous studies explored different learning-task formulations for pedestrian path prediction and compared these formulations using shallow neural networks, but did not extend this analysis to more complex deep-learning models. This paper adapts the Spatial-Temporal Graph Attention Network (STGAT) to a unified pedestrian path prediction framework and introduces state and action definitions specific to STGAT. The resulting formulations support deterministic and stochastic policies, one-time and sequential decision-making, and reinforcement-learning algorithms including REINFORCE and proximal policy optimization. The proposed learning-task formulations improve prediction performance across the selected benchmark datasets compared with the standard supervised-learning formulation. These results demonstrate that reformulating the decision process and training objective can improve an advanced pedestrian trajectory prediction architecture and may provide a path toward improving other graph-based prediction models.",
+  "abstract_zh": "行人路径预测对于提高自动驾驶车辆和高级驾驶辅助系统的安全性至关重要。以往的研究探讨了行人路径预测的不同学习任务形式，并使用浅层神经网络对这些形式进行了比较，但并未将此分析扩展到更复杂的深度学习模型。本文将空间-时间图注意力网络（Spatial-Temporal Graph Attention Network, STGAT）适配为统一的行人路径预测框架，并引入了特定于STGAT的状态和动作定义。所得到的形式支持确定性和随机策略、一次性和序列决策，以及包括REINFORCE和近端策略优化（proximal policy optimization）在内的强化学习算法。与标准的监督学习形式相比，所提出的学习任务形式在所选基准数据集上的预测性能得到了提升。这些结果表明，重新构建决策过程和训练目标可以改善先进的行人轨迹预测架构，并可能为改进其他基于图的预测模型提供路径。",
+  "arxiv_id": "2608.15929",
+  "arxiv_url": "https://arxiv.org/abs/2608.15929v1",
+  "authors": [
+    "Šimon Sukup",
+    "Ariyan Bighashdel",
+    "Pavol Jancura"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15929",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.998162+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15929v1",
+  "published_at": "2026-08-16T20:51:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "行人",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15929v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "Unified Pedestrian Path Prediction Using Inverse Reinforcement Learning",
+  "title_zh": "基于逆强化学习的统一行人路径预测",
+  "translation_url": "https://hjfy.top/arxiv/2608.15929"
+}

@@ -1,0 +1,61 @@
+{
+  "abstract": "LiDAR scene completion is a key component of 3D perception in autonomous driving, where the scene must be completed in real time to be usable in downstream tasks. Existing approaches typically follow an initialize-and-refine paradigm, in which a coarse initialization of the scene is first constructed, then refined into complete 3D geometry. Generative models are slower because they iteratively refine random Gaussian noise into the scene, while non-generative methods perturb the partial scene with a fixed noise scale, which limits coverage of large gaps and occluded regions and requires manual recalibration for each new sensor configuration. We present RapidLiDAR, a LiDAR scene completion method that treats the initialization itself as a learned, data-driven component. We propose an adaptive initialization module that predicts a spatially varying displacement for each partial input point, expanding the partial observations into a coarse scene initialization adapted to the local geometry, without requiring manual noise tuning. To refine this coarse initialization into a complete and coherent scene, we additionally propose a multi-scale reconstruction module that further refines point positions by querying multi-scale 3D voxel and 2D BEV feature maps constructed from the input scan. By replacing point-neighborhood operators such as farthest point sampling and $k$-nearest neighbor search with voxel- and BEV-based feature extraction, our architecture is faster and can handle different input resolutions by design. Experiments on SemanticKITTI and KITTI-360 show that our method achieves completion performance on par with the state of the art while completing a full scene in 0.1 seconds, which is 2.3 times faster than the fastest prior method. This matches the 10 Hz acquisition rate of typical automotive LiDAR sensors, taking a step toward real-time LiDAR scene completion.",
+  "abstract_zh": "激光雷达场景补全是自动驾驶中3D感知的关键组成部分，场景必须实时完成以便在下游任务中使用。现有方法通常遵循初始化-细化的范式，首先构建场景的粗略初始化，然后将其细化为完整的3D几何形状。生成模型较慢，因为它们通过迭代地将随机高斯噪声细化为场景，而非生成方法则使用固定的噪声规模扰动部分场景，这限制了对大间隙和遮挡区域的覆盖，并且需要对每个新的传感器配置进行手动重新校准。我们提出了RapidLiDAR，一种将初始化本身视为学习的、数据驱动的组件的激光雷达场景补全方法。我们提出了一种自适应初始化模块，该模块为每个部分输入点预测空间变化的位移，将部分观测扩展为适应局部几何形状的粗略场景初始化，而无需手动调节噪声。为了将这种粗略初始化细化为完整且一致的场景，我们还提出了一种多尺度重建模块，通过查询从输入扫描构建的多尺度3D体素和2D鸟瞰图（BEV）特征图，进一步细化点的位置。通过用基于体素和BEV的特征提取替换点邻域操作符，如最远点采样和$k$-最近邻搜索，我们的架构更快，并且能够设计上处理不同的输入分辨率。在SemanticKITTI和KITTI-360上的实验表明，我们的方法在完成性能上与最先进的技术相当，同时在0.1秒内完成整个场景，比最快的先前方法快2.3倍。这与典型汽车激光雷达传感器的10 Hz采集率相匹配，朝着实时激光雷达场景补全迈出了重要一步。",
+  "arxiv_id": "2608.16490",
+  "arxiv_url": "https://arxiv.org/abs/2608.16490v1",
+  "authors": [
+    "Azhar Hussian",
+    "Martin Vossiek",
+    "Vasileios Belagiannis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16490",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.821883+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16490v1",
+  "published_at": "2026-08-17T12:28:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "kitti",
+      "kitti-360",
+      "semantickitti",
+      "autonomous",
+      "driving",
+      "automotive",
+      "驾驶",
+      "bev",
+      "lidar",
+      "scene completion"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16490v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Towards Real-Time and Adaptable LiDAR Scene Completion",
+  "title_zh": "面向实时和自适应的激光雷达场景补全",
+  "translation_url": "https://hjfy.top/arxiv/2608.16490"
+}

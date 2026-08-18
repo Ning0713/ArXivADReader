@@ -1,0 +1,50 @@
+{
+  "abstract": "Coordinating multiple interacting units in complex engineering systems is challenging when system interactions are difficult to model, operational information is heterogeneous, and low-level actions must satisfy strict constraints. We propose an LLM-based hierarchical framework in which the LLM coordinates interacting units based on heterogeneous operational context, while task-specific controllers or optimizers generate executable and constraint-aware actions. We further introduce Continuation-Aware GRPO to capture the consequences of coordination decisions over subsequent control intervals. Rather than judging a decision only by its immediate outcome, the method also evaluates how the system evolves afterward under the current policy. We validate the framework on multi-ramp traffic control and virtual power plant (VPP) energy management, using simplified system models for training and more realistic simulators for evaluation. Across both tasks, the proposed method consistently outperforms direct task-specific control and optimization, end-to-end reinforcement learning, rule-based and RL-based hierarchical coordination, and prompting-only LLM coordinators, demonstrating the value of heterogeneous-context reasoning, hierarchical execution, and continuation-aware policy learning.",
+  "abstract_zh": "在复杂工程系统中协调多个相互作用的单元是一项具有挑战性的任务，尤其是在系统交互难以建模、操作信息异构以及低级动作必须满足严格约束的情况下。我们提出了一种基于大语言模型（LLM）的分层框架，其中LLM根据异构操作上下文协调相互作用的单元，同时任务特定的控制器或优化器生成可执行且符合约束的动作。我们进一步引入了持续感知的广义鲁棒优化（Continuation-Aware GRPO），以捕捉协调决策在后续控制区间的后果。该方法不仅通过即时结果来评估决策，还评估在当前策略下系统如何随时间演变。我们在多坡道交通控制和虚拟电厂（VPP）能源管理中验证了该框架，使用简化的系统模型进行训练，并在更现实的模拟器上进行评估。在这两个任务中，所提出的方法始终优于直接的任务特定控制和优化、端到端强化学习、基于规则和基于强化学习的分层协调，以及仅依赖提示的LLM协调器，展示了异构上下文推理、分层执行和持续感知策略学习的价值。",
+  "arxiv_id": "2608.15041",
+  "arxiv_url": "https://arxiv.org/abs/2608.15041v1",
+  "authors": [
+    "Changhong He",
+    "Jinda Gao",
+    "Xinkuan Liu",
+    "Le Zhang",
+    "Xizi Luo",
+    "Yu Mei"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15041",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.918898+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15041v1",
+  "published_at": "2026-08-15T05:00:02Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15041v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "本文提出一种基于大语言模型的分层协调控制框架，由LLM利用异构运行上下文进行高层协调，再由任务专用控制器或优化器生成满足约束的低层动作。同时提出持续感知策略学习方法，通过评估后续控制区间中的系统演化来改进协调决策。方法在多坡道交通控制和虚拟电厂能源管理任务上进行了验证，并在更真实的仿真器中取得优于多种基线的结果。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "LLM-Based Hierarchical Coordinated Control with Continuation-Aware Policy Learning",
+  "title_zh": "基于大语言模型的分层协调控制与持续感知策略学习",
+  "translation_url": "https://hjfy.top/arxiv/2608.15041"
+}

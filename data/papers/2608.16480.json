@@ -1,0 +1,61 @@
+{
+  "abstract": "We present RISE (Roadside Infrastructure Sequence Understanding and Evaluation), a framework spanning metric 3D tracking and structured vision-language reasoning in roadside sequences. For metric tracking, our image-only method combines SAM3 video identities with calibration-guided mask agreement for multi-view identity association, recovering persistent 3D tracks without LiDAR or task-specific 3D training. Its calibration-conditioned geometry allows the procedure to be instantiated at different calibrated multi-camera intersections without layout-specific retraining. On 20 human-reviewed clips from six intersections, the generated tracks achieve 66.9 MOTA within the defined multi-view evaluation scope. For structured vision-language reasoning, a human-reviewed MLLM pipeline mines high-value clips and uses a constrained full-context Oracle to construct bbox-grounded predictive QA without exposing future evidence to evaluated models. The resulting RISE-VQA dataset contains 33,910 QA pairs from 557 clips across 16 intersections and 61 roadside views. Its intersection-held-out RISE-Bench evaluates semantic choices, coordinates, future boxes, and interaction sets with deterministic task-specific metrics. Experiments show consistent benefits from domain adaptation and generally from temporal context, while revealing persistent challenges in spatial grounding, future localization, and interaction reasoning.",
+  "abstract_zh": "我们提出了RISE（路边基础设施序列理解与评估），这是一个涵盖度量3D跟踪和结构化视觉-语言推理的框架，专注于路边序列。在度量跟踪方面，我们的图像-only方法结合了SAM3视频身份和校准引导的掩码一致性，用于多视角身份关联，能够在没有LiDAR或特定任务3D训练的情况下恢复持久的3D轨迹。其校准条件几何体允许该过程在不同校准的多摄像头交叉口中实例化，而无需特定布局的再训练。在来自六个交叉口的20个人工审核剪辑中，生成的轨迹在定义的多视角评估范围内达到了66.9的MOTA。在结构化视觉-语言推理方面，人工审核的MLLM管道挖掘高价值剪辑，并使用约束的全上下文Oracle构建基于边界框的预测问答，而不向被评估模型暴露未来证据。最终生成的RISE-VQA数据集包含来自16个交叉口和61个路边视图的557个剪辑中的33,910个问答对。其交叉口保留的RISE-Bench评估语义选择、坐标、未来边界框和交互集，使用确定性的任务特定指标。实验表明，领域适应和时间上下文的一致性收益，同时揭示了空间定位、未来定位和交互推理方面的持续挑战。",
+  "arxiv_id": "2608.16480",
+  "arxiv_url": "https://arxiv.org/abs/2608.16480v1",
+  "authors": [
+    "Yanbo Jiang",
+    "Haotian Zheng",
+    "Jiahao Wang",
+    "Hanxiao Ren",
+    "Yitao Xu",
+    "Yining Xing",
+    "Zehong Ke",
+    "Hao Cheng",
+    "Yiqian Tu",
+    "Jinhao Li",
+    "Zhiyuan Xuan",
+    "Fang Zhang",
+    "Jianqiang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16480",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.819089+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16480v1",
+  "published_at": "2026-08-17T12:22:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "roadside",
+      "intersection",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16480v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "RISE: Roadside Infrastructure Sequence Understanding across 3D Tracking and Structured Vision-Language Reasoning",
+  "title_zh": "RISE：基于3D跟踪和结构化视觉-语言推理的路边基础设施序列理解",
+  "translation_url": "https://hjfy.top/arxiv/2608.16480"
+}

@@ -1,0 +1,52 @@
+{
+  "abstract": "Achieving reliable single-shot high dynamic range (HDR) imaging under extreme illumination conditions remains a long-standing challenge, yet no comprehensive benchmark exist for evaluating HDR perception in multi-sensor robotic systems. To fill this gap, we introduce a large-scale dataset collected via a custom robotic vision platform and an iPhone 13 Pro: 121 real-world scenes spanning modest and ultra-high dynamic range conditions, alongside 20 synthetic video sequences from the CARLA simulator. As a reference pipeline for this dataset, we propose Depth-guided Multi-view Exposure Bracketing (DMEB), a single-shot HDR method that distributes drastically different exposures across multi-view low-bit-depth cameras and fuses them via depth-guided confidence-aware fusion. Evaluations on our dataset show that DMEB establishes a strong reference point and highlight the promise of this sensor configuration for robust HDR perception in diverse multi-camera and depth sensor system.",
+  "abstract_zh": "在极端照明条件下实现可靠的单次高动态范围（HDR）成像仍然是一个长期挑战，但目前尚无全面的基准用于评估多传感器机器人系统中的HDR感知。为填补这一空白，我们通过一个定制的机器人视觉平台和iPhone 13 Pro收集了一个大规模数据集：121个真实场景，涵盖适度和超高动态范围条件，以及来自CARLA模拟器的20个合成视频序列。作为该数据集的参考流程，我们提出了深度引导的多视角曝光包围（DMEB），这是一种单次HDR方法，它在多视角低位深度相机之间分配截然不同的曝光，并通过深度引导的置信度感知融合将其融合。对我们数据集的评估表明，DMEB建立了一个强有力的参考点，并突显了该传感器配置在多摄像头和深度传感器系统中实现稳健HDR感知的潜力。",
+  "arxiv_id": "2608.16014",
+  "arxiv_url": "https://arxiv.org/abs/2608.16014v1",
+  "authors": [
+    "Jinnyeong Kim",
+    "Juhyung Choi",
+    "Woohyeok Kim",
+    "Sunghyun Cho",
+    "Seung-Hwan Baek"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16014",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.781446+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16014v1",
+  "published_at": "2026-08-17T02:16:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "multi-sensor",
+      "robot",
+      "robotic"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16014v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "Depth-guided Multi-view Exposure Bracketing for HDR Robot Vision",
+  "title_zh": "深度引导的多视角曝光包围用于高动态范围机器人视觉",
+  "translation_url": "https://hjfy.top/arxiv/2608.16014"
+}

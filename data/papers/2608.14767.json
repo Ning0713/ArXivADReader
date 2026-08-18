@@ -1,0 +1,65 @@
+{
+  "abstract": "Automated vehicles must explain their decisions in ways that passengers can understand, monitor, and trust. Existing language-annotated driving datasets are mostly observer-written, post-hoc, simulation-based, or generated from sensor inputs, rather than elicited from the driver performing the action. We introduce NARRATE, a multimodal real-world Australian driving dataset comprising 2,050 annotated events from 35 experienced drivers and driving instructors on public roads. Each event is grounded in synchronised visual, localisation, motion, and LiDAR streams and paired with in-vehicle and/or post-drive free-text explanations. NARRATE provides action labels, scenario-context labels spanning six high-level and 32 fine-grained categories, and span-level Situational Awareness (SA) annotations over driver explanations for Perception, Comprehension and Projection. Four benchmark tasks (SA, scenario-context, driver-action classification, and explanation generation) show that this structure is learnable from driver language, while fine-grained context recognition and explanation generation remain challenging. NARRATE paves a path towards more human-centred and domain-aware explanation models for automated driving.",
+  "abstract_zh": "自动驾驶车辆必须以乘客能够理解、监控和信任的方式解释其决策。现有的语言注释驾驶数据集大多是由观察者撰写的事后分析、基于模拟的，或是从传感器输入生成的，而不是从执行动作的驾驶员那里获取的。我们介绍了NARRATE，这是一个包含来自35名经验丰富的驾驶员和驾驶教练在公共道路上记录的2050个注释事件的多模态真实世界澳大利亚驾驶数据集。每个事件都基于同步的视觉、定位、运动和激光雷达（LiDAR）流，并配有车内和/或驾驶后自由文本解释。NARRATE提供了动作标签、涵盖六个高层次和32个细粒度类别的场景上下文标签，以及针对驾驶员解释的感知、理解和预测的跨段情境意识（SA）注释。四个基准任务（SA、场景上下文、驾驶员动作分类和解释生成）表明，这种结构可以从驾驶员语言中学习，而细粒度的上下文识别和解释生成仍然具有挑战性。NARRATE为自动驾驶的更以人为本和领域意识的解释模型铺平了道路。",
+  "arxiv_id": "2608.14767",
+  "arxiv_url": "https://arxiv.org/abs/2608.14767v1",
+  "authors": [
+    "Ashkan Yousefi Zadeh",
+    "Zishuo Zhu",
+    "Xiaomeng Li",
+    "Andry Rakotonirainy",
+    "Sebastien Glaser",
+    "Ronald Schroeter",
+    "Patricia Delhomme",
+    "Zahra Mehraban"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-14767",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.673082+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14767v1",
+  "published_at": "2026-08-14T12:35:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "automated vehicles",
+      "自动驾驶",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "道路",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14767v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "NARRATE: A Multimodal Real-World Australian Driving Dataset for Human-Centred Explanations in Automated Driving",
+  "title_zh": "NARRATE：一个用于自动驾驶中以人为本解释的多模态真实世界澳大利亚驾驶数据集",
+  "translation_url": "https://hjfy.top/arxiv/2608.14767"
+}

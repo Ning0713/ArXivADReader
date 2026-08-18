@@ -1,0 +1,54 @@
+{
+  "abstract": "Deep Neural Networks (DNNs) deployed in high-risk domains, such as healthcare and autonomous driving, must be not only accurate but also understandable to ensure user trust. In real-world computer vision tasks, these models often operate on complex images containing background noise and are heavily annotated. To make such models explainable, Concept-based Explainable AI (CXAI) methods need to be assessed for their applicability and problem-solving capacity. In this work, we explore CXAI use cases in multi-label classification by training two DNNs, VGG16 and ResNet50, on the 20 most annotated labels in the MS-COCO dataset (Microsoft Common Objects in Context). We apply two CXAI methods, CRP (Concept Relevance Propagation) and CRAFT (Concept Recursive Activation FacTorization), to generate concept-level explanations and investigate the overall evaluations. Our analysis reveals three key findings: (1) CXAI highlights learning weaknesses in DNNs, (2) higher concept distinctiveness reduces label and concept confusion, and (3) environmental concepts expose dataset-induced biases. Our results demonstrate the potential of CXAI to enhance the understanding of model generalizability and to diagnose bias instigated by the dataset.",
+  "abstract_zh": "在高风险领域（如医疗保健和自动驾驶）中部署的深度神经网络（DNN）不仅必须具备准确性，还需具备可理解性，以确保用户信任。在现实世界的计算机视觉任务中，这些模型通常在包含背景噪声且注释繁重的复杂图像上运行。为了使这些模型具有可解释性，需要评估基于概念的可解释人工智能（CXAI）方法的适用性和问题解决能力。在本研究中，我们通过在MS-COCO数据集（微软上下文中的常见物体）上训练两个DNN（VGG16和ResNet50），探讨CXAI在多标签分类中的应用案例，重点关注20个注释最多的标签。我们应用两种CXAI方法，CRP（概念相关传播）和CRAFT（概念递归激活因子分解），生成概念级别的解释并调查整体评估。我们的分析揭示了三个关键发现：（1）CXAI突出显示了DNN的学习弱点，（2）更高的概念独特性减少了标签和概念的混淆，以及（3）环境概念揭示了数据集引发的偏见。我们的结果展示了CXAI在增强模型可泛化性理解和诊断数据集引发的偏见方面的潜力。",
+  "arxiv_id": "2608.15731",
+  "arxiv_url": "https://arxiv.org/abs/2608.15731v1",
+  "authors": [
+    "Haadia Amjad",
+    "Ronald Tetzlaff"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-15731",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.764062+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.15731v1",
+  "published_at": "2026-08-16T13:13:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "healthcare",
+      "医疗",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.15731v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Identifying Confusion Trends in Concept-based XAI for Multi-Label Classification",
+  "title_zh": "识别基于概念的可解释人工智能在多标签分类中的混淆趋势",
+  "translation_url": "https://hjfy.top/arxiv/2608.15731"
+}

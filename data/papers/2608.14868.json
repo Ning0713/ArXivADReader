@@ -1,0 +1,52 @@
+{
+  "abstract": "Background subtraction is a key preprocessing step for infrastructure-based LiDAR perception, enabling efficient isolation of dynamic traffic participants without semantic annotations. However, systematic cross-sensor evaluations and reproducible studies for static roadside LiDAR are missing. This paper presents a comparative benchmark of beam-wise statistical background subtraction for statically mounted LiDAR sensors. We formulate background estimation as a per-beam temporal modeling problem and investigate complementary statistical strategies that capture dominant as well as multi-modal background structures, combined with spatial filtering in the angular and 3D domain. To enable reproducible evaluation, we introduce HighwayScene, a new multi-LiDAR dataset recorded in a static roadside setup, and extend the public CoopScenes dataset with static/dynamic point-wise annotations. Across multiple scenes and heterogeneous sensing technologies, we demonstrate that beam-wise statistical modeling provides a robust and transferable solution. Combining lightweight per-beam models with spatial consistency filtering substantially improves precision while maintaining high recall and real-time capability. All datasets, annotations, and implementations are publicly released.",
+  "abstract_zh": "背景减除是基础设施激光雷达感知的关键预处理步骤，使得在没有语义注释的情况下高效隔离动态交通参与者。然而，针对静态路边激光雷达的系统性跨传感器评估和可重复研究尚缺乏。本文呈现了一项针对静态安装激光雷达传感器的束级统计背景减除的比较基准研究。我们将背景估计形式化为每束的时间建模问题，并探讨了捕捉主导及多模态背景结构的互补统计策略，结合了角度和三维域的空间滤波。为了实现可重复的评估，我们引入了HighwayScene，这是一个在静态路边设置下记录的新型多激光雷达数据集，并扩展了公共的CoopScenes数据集，增加了静态/动态点位注释。在多个场景和异构传感技术中，我们证明了束级统计建模提供了一种稳健且可转移的解决方案。将轻量级的每束模型与空间一致性滤波相结合，显著提高了精度，同时保持了高召回率和实时能力。所有数据集、注释和实现均已公开发布。",
+  "arxiv_id": "2608.14868",
+  "arxiv_url": "https://arxiv.org/abs/2608.14868v1",
+  "authors": [
+    "Alexander Baumann",
+    "Marcel Vosshans",
+    "Thao Dang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-14868",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.682916+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.14868v1",
+  "published_at": "2026-08-14T20:15:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "roadside",
+      "交通",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.14868v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Beam-Wise Statistical Background Subtraction for Static Roadside LiDAR: A Cross-Sensor Benchmark Study",
+  "title_zh": "静态路边激光雷达的束级统计背景减除：跨传感器基准研究",
+  "translation_url": "https://hjfy.top/arxiv/2608.14868"
+}

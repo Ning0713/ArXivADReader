@@ -1,0 +1,49 @@
+{
+  "abstract": "Class imbalance in LiDAR point clouds poses challenges for semantic segmentation in autonomous navigation and urban mapping. While 2D vision has numerous mitigation techniques, their effectiveness in 3D remains unclear. We benchmark six reweighting schemes and five imbalance-aware losses across three datasets (DALES, S3DIS, STPLS3D) using two architectures (KPConv, RandLA-Net). Inverse-frequency weighting degrades performance by up to 12% compared to uniform weighting, with catastrophic failures in minority classes. Uniform weighting performs within 2% of complex losses for structured sampling (KPConv) but benefits less for random sampling (RandLA-Net, up to 4.6% gap). Loss landscape analysis reveals a complex interplay: for structured sampling, imbalance ratio determines landscape geometry on real LiDAR data but decouples from it on synthetic data; for random sampling, landscapes show high sensitivity to dataset geometry regardless of imbalance ratio. For the two evaluated point-based architectures, these results suggest that the interaction between sampling strategy (structured vs. random), imbalance severity, and data acquisition characteristics shapes which mitigation approaches are effective.",
+  "abstract_zh": "LiDAR点云中的类别不平衡对自主导航和城市映射中的语义分割构成了挑战。尽管2D视觉有许多缓解技术，但它们在3D中的有效性仍不明确。我们基于两种架构（KPConv, RandLA-Net）在三个数据集（DALES, S3DIS, STPLS3D）上对六种重加权方案和五种考虑不平衡的损失进行了基准测试。与均匀加权相比，逆频率加权的性能下降最多可达12%，在少数类中出现灾难性失败。对于结构化采样（KPConv），均匀加权的表现与复杂损失相差不超过2%，但对于随机采样（RandLA-Net，最多相差4.6%）则受益较少。损失景观分析揭示了复杂的相互作用：对于结构化采样，不平衡比率决定了真实LiDAR数据的景观几何形状，但在合成数据中则与之解耦；对于随机采样，景观对数据集几何形状表现出高度敏感性，而不论不平衡比率如何。对于这两种评估的点基础架构，这些结果表明，采样策略（结构化与随机）、不平衡严重性和数据获取特征之间的相互作用决定了哪些缓解方法是有效的。",
+  "arxiv_id": "2608.16673",
+  "arxiv_url": "https://arxiv.org/abs/2608.16673v1",
+  "authors": [
+    "Antonis Savva",
+    "Christos Kyrkou",
+    "Theocharis Theocharides"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16673",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:07:59.838854+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16673v1",
+  "published_at": "2026-08-17T15:00:55Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16673v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "本文研究LiDAR点云语义分割中的类别不平衡问题，系统比较不同重加权方法和不平衡损失在KPConv与RandLA-Net上的效果。结果表明，采样策略、数据几何特征与不平衡程度共同决定缓解方法的有效性，逆频率加权甚至可能显著损害少数类性能。",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "How Sampling Strategy Affects Imbalance Mitigation in LiDAR Segmentation: A Study of Structured vs. Random Point-Based Architectures",
+  "title_zh": "采样策略如何影响LiDAR分割中的不平衡缓解：结构化与随机点基础架构的研究",
+  "translation_url": "https://hjfy.top/arxiv/2608.16673"
+}

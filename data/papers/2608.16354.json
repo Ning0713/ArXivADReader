@@ -1,0 +1,58 @@
+{
+  "abstract": "Driving video generation models support autonomous-driving development by predicting controllable future scenes for simulation, planning evaluation, and offline data generation. Diffusion-based driving generators repeatedly evaluate large backbones across denoising steps, which limits generation throughput. Existing diffusion acceleration methods reduce this cost, but general-purpose designs omit driving signals available before generation, such as ego speed and planned trajectories. Experiments across driving motions show that cache tolerance varies with ego translation and rotation, denoising progress, and consecutive reuse length. We propose DriveCache, a training-free, action-aware controller that uses planned motion to allocate reuse across scenes and dynamic programming to place it across denoising steps under a calibrated response budget. A causal drift check refreshes features and replans the remaining schedule when generation departs from calibration. Across three generator configurations, DriveCache improves the overall fidelity-efficiency trade-off over evaluated cache methods. Our code will be publicly available.",
+  "abstract_zh": "驾驶视频生成模型通过预测可控的未来场景来支持自动驾驶的发展，这些场景用于仿真、规划评估和离线数据生成。基于扩散的驾驶生成器在去噪步骤中反复评估大型骨干网络，这限制了生成的吞吐量。现有的扩散加速方法降低了这一成本，但通用设计忽略了生成前可用的驾驶信号，如自我速度和规划轨迹。针对驾驶运动的实验表明，缓存容忍度随着自我平移和旋转、去噪进度以及连续重用长度而变化。我们提出了DriveCache，这是一种无训练的、面向动作的控制器，利用规划的运动在场景间分配重用，并通过动态规划在校准的响应预算下将其分配到去噪步骤中。当生成偏离校准时，一个因果漂移检查会刷新特征并重新规划剩余的时间表。在三种生成器配置中，DriveCache在评估的缓存方法中改善了整体的保真度-效率权衡。我们的代码将公开发布。",
+  "arxiv_id": "2608.16354",
+  "arxiv_url": "https://arxiv.org/abs/2608.16354v1",
+  "authors": [
+    "Jianchun Yang",
+    "Jian Liang",
+    "Xianda Guo",
+    "Pinhan Fu",
+    "Yanlun Peng",
+    "Conglang Zhang",
+    "Wenke Huang",
+    "Mang Ye"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-18#paper-2608-16354",
+  "categories": [
+    "cs.AI",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-18T14:08:00.019018+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16354v1",
+  "published_at": "2026-08-17T10:04:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-08-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16354v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "DriveCache: Action-Aware Caching for Driving World Model Inference",
+  "title_zh": "DriveCache：面向动作的驾驶世界模型推理缓存",
+  "translation_url": "https://hjfy.top/arxiv/2608.16354"
+}
