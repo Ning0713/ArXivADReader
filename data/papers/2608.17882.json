@@ -1,0 +1,56 @@
+{
+  "abstract": "Trajectory prediction is central to safety in autonomous driving, yet learning-based predictors tend to degrade sharply when encountering scenarios poorly represented by their training data. Many methods attempt to mitigate distribution shift degradation through data-centric or test-time adaptation approaches; however, they are typically validated along fragmented axes of generalization, leaving the field without a standardized way to compare robustness across shifts a model may encounter. To address this, we introduce ControlledShifts, a framework and benchmark suite that systematically re-splits existing trajectory datasets into in-distribution (seen) and out-of-distribution (unseen) partitions, via a shared characterization-and-splitting formulation, in which a characterization function fixes the axis of variation a benchmark probes and a splitting function fixes how the tail of that axis is withheld. The suite comprises three benchmarks targeting key topological and behavioral distribution shifts. Furthermore, to aggregate multi-dimensional performance metrics across these benchmarks, we propose a unified robustness score that evaluates models along two complementary dimensions: prediction quality (relative performance gain) and prediction stability (performance preservation under shift). We showcase ControlledShifts by benchmarking prominent transformer-based architectures, exposing critical differences in how models of varying capacities handle latent relevance and environmental structure.",
+  "abstract_zh": "轨迹预测是自动驾驶安全的核心，但基于学习的预测器在遇到训练数据中表现不佳的场景时，往往会急剧下降。许多方法试图通过以数据为中心或测试时适应的方法来减轻分布变化带来的降级；然而，它们通常沿着片段化的泛化轴进行验证，使得该领域缺乏一种标准化的方法来比较模型可能遇到的不同变化下的鲁棒性。为了解决这个问题，我们引入了ControlledShifts，一个框架和基准套件，通过共享的特征化和分割公式，系统地将现有轨迹数据集重新划分为分布内（已见）和分布外（未见）部分，其中特征化函数固定基准探测的变化轴，而分割函数则固定该轴尾部的保留方式。该套件包括三个基准，针对关键的拓扑和行为分布变化。此外，为了在这些基准中聚合多维性能指标，我们提出了一个统一的鲁棒性评分，评估模型在两个互补维度上的表现：预测质量（相对性能提升）和预测稳定性（在变化下的性能保持）。我们通过基准测试显著的基于变换器的架构来展示ControlledShifts，揭示了不同能力模型在处理潜在相关性和环境结构方面的关键差异。",
+  "arxiv_id": "2608.17882",
+  "arxiv_url": "https://arxiv.org/abs/2608.17882v1",
+  "authors": [
+    "Ingrid navarro",
+    "Pablo Ortega-Kral",
+    "Yutong Duan",
+    "Jonathan Francis",
+    "Jean Oh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17882",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.438340+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17882v1",
+  "published_at": "2026-08-18T15:16:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17882v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "预测/规划"
+    ]
+  },
+  "title": "ControlledShifts: Towards Standardizing Robustness Evaluation in Trajectory Prediction Under Distribution Shifts",
+  "title_zh": "ControlledShifts：朝着标准化轨迹预测在分布变化下的鲁棒性评估",
+  "translation_url": "https://hjfy.top/arxiv/2608.17882"
+}

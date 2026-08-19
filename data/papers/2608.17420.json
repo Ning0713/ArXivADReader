@@ -1,0 +1,65 @@
+{
+  "abstract": "Driving scene reconstruction and rendering, especially with 3D Gaussian Splatting, has become an important component of autonomous driving simulation. However, rendered views often degrade under extrapolated ego trajectories and scene edits, producing blurry structures, temporal flicker, and foreground-background misalignment. Existing refinement methods are commonly designed for a specific setting, such as image-level novel-view repair or object-editing correction. In this paper, we introduce SPVC, a structured and panoptic video fixing framework for cross-dataset driving scene rendering. The name summarizes four design principles. (1) Structured fixing denotes the use of explicit spatial conditions, including camera pose, 3D bounding boxes, and HD maps, to guide the repair process and reduce uncontrolled hallucination. (2) Panoptic fixing refers to correcting both background rendering artifacts, such as distorted roads, buildings, and lanes, and foreground vehicle artifacts introduced by scene editing, such as inconsistent object appearance. (3) Video fixing means that the model operates on driving sequences rather than isolated frames, allowing temporal cues to be used during artifact correction. (4) Cross-dataset fixing means that a single shared network is trained and applied across multiple driving datasets, reducing the need for dataset-specific or scene-specific fixers. Concretely, we construct paired degraded-clean training data by simulating under-constrained 3DGS rendering and foreground vehicle insertion artifacts, and train a two-stage controllable video diffusion model that first addresses video-level appearance and then refines scene layout with structured controls.",
+  "abstract_zh": "驾驶场景的重建与渲染，尤其是使用3D高斯点云（3D Gaussian Splatting），已成为自动驾驶仿真的一个重要组成部分。然而，在外推的自我轨迹和场景编辑下，渲染视图往往会退化，产生模糊的结构、时间闪烁和前景与背景的不对齐。现有的修复方法通常针对特定设置设计，例如图像级的新视角修复或物体编辑校正。本文介绍了SPVC，一个用于跨数据集驾驶场景渲染的结构化全景视频修复框架。该名称总结了四个设计原则。(1) 结构化修复指利用明确的空间条件，包括相机姿态、3D边界框和高清地图，来指导修复过程并减少不受控的幻觉。(2) 全景修复指同时修正背景渲染伪影，例如扭曲的道路、建筑物和车道，以及场景编辑引入的前景车辆伪影，例如不一致的物体外观。(3) 视频修复意味着模型在驾驶序列上操作，而不是孤立的帧，从而在伪影校正过程中利用时间线索。(4) 跨数据集修复意味着训练和应用一个共享的网络于多个驾驶数据集，从而减少对特定数据集或场景特定修复器的需求。具体而言，我们通过模拟约束不足的3DGS渲染和前景车辆插入伪影构建成对的降质-清晰训练数据，并训练一个两阶段的可控视频扩散模型，该模型首先处理视频级外观，然后利用结构化控制精细化场景布局。",
+  "arxiv_id": "2608.17420",
+  "arxiv_url": "https://arxiv.org/abs/2608.17420v1",
+  "authors": [
+    "Gen Li",
+    "Shu Han",
+    "Yun Xi Qiao",
+    "Hua Chen",
+    "Xuyang Dai",
+    "Bohan Li",
+    "Hao Zhao",
+    "Chaojian Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17420",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.465706+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17420v1",
+  "published_at": "2026-08-18T06:42:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "道路",
+      "车道",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17420v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "SPVC: Structured and Panoptic Video Fixing for Cross-Dataset Driving Scene Rendering",
+  "title_zh": "SPVC：用于跨数据集驾驶场景渲染的结构化全景视频修复",
+  "translation_url": "https://hjfy.top/arxiv/2608.17420"
+}

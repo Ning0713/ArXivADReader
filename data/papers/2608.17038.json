@@ -1,0 +1,55 @@
+{
+  "abstract": "Autonomous navigation in complex outdoor terrains presents critical challenges for unmanned ground vehicles (UGVs) due to the inherent disconnect between global mapping and real-time sensor feedback. This work proposes a hybrid framework that integrates low-resolution Digital Elevation Model (DEM) data with real-time LiDAR-based obstacle detection and terrain analysis for efficient path planning. A global path is initially computed using a preprocessed DEM-based A* algorithm. Subsequently, local sensor data drives adaptive path correction, enabling the UGV to negotiate sudden environmental changes while maintaining safety and efficiency. Simulation results in Gazebo demonstrate significant improvements over a baseline approach, achieving a 95\\% obstacle avoidance rate and reducing the average encountered slope from $8^\\circ$ to $2.7^\\circ$ in custom terrain. This integration enhances path efficiency and terrain traversability and supports robust real-time adaptation, paving the way for more reliable autonomous navigation in dynamic outdoor environments.",
+  "abstract_zh": "在复杂户外地形中，自主导航对无人地面车辆（UGVs）提出了重大挑战，因为全球地图与实时传感器反馈之间存在固有的脱节。本文提出了一种混合框架，将低分辨率数字高程模型（DEM）数据与基于实时激光雷达的障碍物检测和地形分析相结合，以实现高效的路径规划。首先，使用预处理的基于DEM的A*算法计算全局路径。随后，局部传感器数据驱动自适应路径修正，使UGV能够在保持安全和效率的同时应对突发的环境变化。在Gazebo中的仿真结果表明，与基线方法相比，显著提高了性能，障碍物避让率达到95\\%，并将自定义地形中遇到的平均坡度从$8^ heta$降低至$2.7^ heta$。这种集成提高了路径效率和地形可通行性，并支持强大的实时适应能力，为在动态户外环境中实现更可靠的自主导航铺平了道路。",
+  "arxiv_id": "2608.17038",
+  "arxiv_url": "https://arxiv.org/abs/2608.17038v1",
+  "authors": [
+    "Devender Singh",
+    "Issah Nazif Suleiman",
+    "Paul Mitten",
+    "Glenn Cutler",
+    "Vinicius Prado da Fonseca",
+    "Matthew Hamilton"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17038",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.416578+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17038v1",
+  "published_at": "2026-08-17T18:38:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "车辆",
+      "道路",
+      "lidar",
+      "path planning"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 23
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17038v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Terrain-Aware Local Path Planning with Global DEM Data Integration for Autonomous UGV Navigation",
+  "title_zh": "基于全球数字高程模型数据集成的地形感知局部路径规划用于自主无人地面车辆导航",
+  "translation_url": "https://hjfy.top/arxiv/2608.17038"
+}

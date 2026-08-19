@@ -1,0 +1,57 @@
+{
+  "abstract": "Controlling an autonomous vehicle at the limits of handling is a challenging task. Due to external influences, such as road conditions or weather, a vehicle can easily become unstable. Since most control algorithms assume stable vehicle behavior, they might fail in these situations. Especially when operating expensive vehicles without a safety driver on board, as in autonomous racing, this poses a significant challenge. To enable safe operation at the vehicle's dynamic limits, we present a comprehensive stability control system that safeguards motion control algorithms in autonomous driving. The proposed system consists of an electronic stability control (ESC), a slip control (SC), and a countersteer system (CS), which collectively adapt steering and brake commands from the motion controller to maintain vehicle stability. We validate our approach through both simulation and experiments on a real-world, full-scale vehicle. The results show that the stability control system maintains vehicle stability in critical situations and extends the operational feasible region. To simplify integration, we provide an open-source implementation at github.com/TUMFTM/tam-stability-control.",
+  "abstract_zh": "在操控极限下控制自主车辆是一项具有挑战性的任务。由于外部因素，如路况或天气，车辆很容易变得不稳定。由于大多数控制算法假设车辆行为是稳定的，因此在这些情况下它们可能会失效。尤其是在没有安全驾驶员的情况下操作昂贵车辆时，如在自主赛车中，这构成了一个重大挑战。为了在车辆动态极限下实现安全操作，我们提出了一种全面的稳定性控制系统，该系统保护自主驾驶中的运动控制算法。所提议的系统由电子稳定性控制（ESC）、滑移控制（SC）和反向转向系统（CS）组成，这些系统共同调整运动控制器的转向和制动指令，以维持车辆稳定性。我们通过仿真和真实全尺度车辆实验验证了我们的方法。结果表明，稳定性控制系统在关键情况下保持了车辆的稳定性，并扩展了可操作的可行区域。为了简化集成，我们在github.com/TUMFTM/tam-stability-control上提供了开源实现。",
+  "arxiv_id": "2608.17779",
+  "arxiv_url": "https://arxiv.org/abs/2608.17779v1",
+  "authors": [
+    "Phillip Pitschi",
+    "Simon Sagmeister",
+    "Frederik Werner",
+    "Markus Lienkamp",
+    "Boris Lohmann"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17779",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.436008+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17779v1",
+  "published_at": "2026-08-18T13:41:56Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicle",
+      "autonomous racing",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17779v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Stability Control for Real World Testing in Autonomous Racing",
+  "title_zh": "自主赛车中的实际测试稳定性控制",
+  "translation_url": "https://hjfy.top/arxiv/2608.17779"
+}

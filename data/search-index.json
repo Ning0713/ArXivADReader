@@ -1,6 +1,323 @@
 {
-  "generated_at": "2026-08-18T14:12:01.751334+00:00",
+  "generated_at": "2026-08-19T14:10:10.314535+00:00",
   "items": [
+    {
+      "abstract": "Urban traffic congestion reduces productivity and increases travel cost and emissions. Network-wide live travel-time shortest-path rerouting can be highly effective in simulation, but assumes that essentially every on-road vehicle is replanned every decision period. We propose HLSR, a selective hybrid live--forecast vehicle rerouting framework that fuses live edge speeds with short-horizon forecasts under limited intervention scope. Building on dual-threshold congestion detection, calibrated upstream selection, and driver-tailored travel-time prediction, HLSR further introduces approaching-vehicle expansion, travel-time-weighted k-shortest-path generation, and a horizon-dependent hybrid live--forecast segment speed used in multi-cost route allocation.",
+      "abstract_zh": "城市交通拥堵降低了生产力，增加了旅行成本和排放。网络范围内的实时旅行时间最短路径重路由在模拟中可能非常有效，但假设在每个决策周期内几乎每辆在路车辆都被重新规划。我们提出了HLSR，一种选择性混合实时-预测车辆重路由框架，融合了实时边缘速度与有限干预范围内的短期预测。在双阈值拥堵检测、校准的上游选择和针对驾驶员的旅行时间预测的基础上，HLSR进一步引入了接近车辆扩展、旅行时间加权的k最短路径生成，以及在多成本路线分配中使用的与时间相关的混合实时-预测段速度。",
+      "authors": [
+        "Xiao Wang",
+        "Shun Ren Yang",
+        "Hui Nien Hung"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.18056",
+      "tags": [
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "HLSR: Hybrid Live Forecast Selective Dynamic Vehicle Rerouting for Real-Time Congestion Avoidance",
+      "title_zh": "HLSR：用于实时拥堵避免的混合实时预测选择性动态车辆重路由",
+      "url": "/daily/2026-08-19/#paper-2608-18056"
+    },
+    {
+      "abstract": "Traffic elements such as traffic lights and road signs play a fundamental role in human driving decisions and should naturally influence end-to-end driving performance. However, existing end-to-end driving research predominantly focuses on dynamic road participants (e.g., vehicles and pedestrians), while the role of traffic elements remains largely unexplored. The community still lacks a systematic study quantifying their impact, largely because public datasets rarely provide structured traffic-element annotations and modern driving systems vary widely in architecture and training paradigm. In this work, we present the first systematic investigation of traffic element awareness for end-to-end autonomous driving. We construct a unified research infrastructure by augmenting multiple public driving datasets with comprehensive traffic-element annotations. To support diverse model families, we adopt a minimal and universal integration design that incorporates traffic-element signals into existing pipelines in a plug-and-play manner with negligible architectural modification. We evaluate this design across modern paradigms, including perception-prediction-planning pipelines, vision-language-action models (VLA), regression-based planners, diffusion-based policies, and trajectory-scoring frameworks, on nuScenes, NAVSIM-v1, NAVSIM-v2, and Bench2Drive. Across all paradigms and datasets, this simple integration consistently improves driving performance, demonstrating that traffic element awareness provides a robust and generalizable signal for end-to-end driving systems. Notably, on the challenging NAVSIM-v2 benchmark, our approach significantly improves state-of-the-art architectures and data pipelines, establishing a new state of the art.",
+      "abstract_zh": "交通元素如交通信号灯和道路标志在人工驾驶决策中扮演着基础性角色，自然应对端到端驾驶性能产生影响。然而，现有的端到端驾驶研究主要集中在动态道路参与者（例如，车辆和行人）上，而交通元素的作用仍然在很大程度上未被探索。研究界仍然缺乏系统性研究来量化它们的影响，主要是因为公共数据集很少提供结构化的交通元素注释，并且现代驾驶系统在架构和训练范式上差异很大。在本研究中，我们首次系统性地调查了端到端自主驾驶中的交通元素感知。我们通过为多个公共驾驶数据集增添全面的交通元素注释，构建了一个统一的研究基础设施。为了支持多样化的模型家族，我们采用了一种最小且通用的集成设计，以即插即用的方式将交通元素信号整合到现有的管道中，几乎不需要架构修改。我们在 nuScenes、NAVSIM-v1、NAVSIM-v2 和 Bench2Drive 上评估了这一设计，涵盖了现代范式，包括感知-预测-规划管道、视觉-语言-行动模型（VLA）、基于回归的规划器、基于扩散的策略和轨迹评分框架。在所有范式和数据集中，这种简单的集成始终提高了驾驶性能，证明交通元素感知为端到端驾驶系统提供了强大且可泛化的信号。值得注意的是，在具有挑战性的 NAVSIM-v2 基准上，我们的方法显著改善了最先进的架构和数据管道，建立了新的技术前沿。",
+      "authors": [
+        "Zongzheng Zhang",
+        "Jijun Wang",
+        "Saining Zhang",
+        "Shuo Wang",
+        "Yiru Wang",
+        "Hai Yang",
+        "Yang Chen",
+        "Yuwen Heng",
+        "Hao Sun",
+        "Anqing Jiang",
+        "Hao Zhao"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.18035",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "仿真/数据"
+      ],
+      "title": "Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving",
+      "title_zh": "即插即用的交通元素感知用于端到端自主驾驶",
+      "url": "/daily/2026-08-19/#paper-2608-18035"
+    },
+    {
+      "abstract": "Trajectory prediction is central to safety in autonomous driving, yet learning-based predictors tend to degrade sharply when encountering scenarios poorly represented by their training data. Many methods attempt to mitigate distribution shift degradation through data-centric or test-time adaptation approaches; however, they are typically validated along fragmented axes of generalization, leaving the field without a standardized way to compare robustness across shifts a model may encounter. To address this, we introduce ControlledShifts, a framework and benchmark suite that systematically re-splits existing trajectory datasets into in-distribution (seen) and out-of-distribution (unseen) partitions, via a shared characterization-and-splitting formulation, in which a characterization function fixes the axis of variation a benchmark probes and a splitting function fixes how the tail of that axis is withheld. The suite comprises three benchmarks targeting key topological and behavioral distribution shifts. Furthermore, to aggregate multi-dimensional performance metrics across these benchmarks, we propose a unified robustness score that evaluates models along two complementary dimensions: prediction quality (relative performance gain) and prediction stability (performance preservation under shift). We showcase ControlledShifts by benchmarking prominent transformer-based architectures, exposing critical differences in how models of varying capacities handle latent relevance and environmental structure.",
+      "abstract_zh": "轨迹预测是自动驾驶安全的核心，但基于学习的预测器在遇到训练数据中表现不佳的场景时，往往会急剧下降。许多方法试图通过以数据为中心或测试时适应的方法来减轻分布变化带来的降级；然而，它们通常沿着片段化的泛化轴进行验证，使得该领域缺乏一种标准化的方法来比较模型可能遇到的不同变化下的鲁棒性。为了解决这个问题，我们引入了ControlledShifts，一个框架和基准套件，通过共享的特征化和分割公式，系统地将现有轨迹数据集重新划分为分布内（已见）和分布外（未见）部分，其中特征化函数固定基准探测的变化轴，而分割函数则固定该轴尾部的保留方式。该套件包括三个基准，针对关键的拓扑和行为分布变化。此外，为了在这些基准中聚合多维性能指标，我们提出了一个统一的鲁棒性评分，评估模型在两个互补维度上的表现：预测质量（相对性能提升）和预测稳定性（在变化下的性能保持）。我们通过基准测试显著的基于变换器的架构来展示ControlledShifts，揭示了不同能力模型在处理潜在相关性和环境结构方面的关键差异。",
+      "authors": [
+        "Ingrid navarro",
+        "Pablo Ortega-Kral",
+        "Yutong Duan",
+        "Jonathan Francis",
+        "Jean Oh"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17882",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "预测/规划"
+      ],
+      "title": "ControlledShifts: Towards Standardizing Robustness Evaluation in Trajectory Prediction Under Distribution Shifts",
+      "title_zh": "ControlledShifts：朝着标准化轨迹预测在分布变化下的鲁棒性评估",
+      "url": "/daily/2026-08-19/#paper-2608-17882"
+    },
+    {
+      "abstract": "Visual-inertial SLAM on low-power edge platforms is constrained by the cost of dense feature extraction and loop closure. Prior GPU ports of ORB-SLAM trade accuracy for speed by approximating the ORB detector, altering the feature set and therefore the estimated trajectory. We present an accuracy-preserving GPU implementation of ORB-SLAM3 for the NVIDIA Jetson Orin Nano, whose GPU ORB front end reproduces the reference CPU detector algorithmically to 94.7% exact keypoint agreement and 99.9% descriptor bit agreement. This work also makes CNN-based loop closure edge-viable through native TensorRT. The visual front end (feature extraction) is offloaded to the GPU while the mapping and optimization back end is kept on the CPU, matching each computation to the hardware it suits. The accuracy is verified by comparing four configurations: the GPU pipeline and the unmodified CPU reference, each run on both the Jetson Orin Nano and a desktop. On EuRoC dataset, all four agree to within 0.10cm in mean absolute trajectory error (SE(3)), so neither the GPU port nor the change of hardware shifts the estimated trajectory. The GPU-versus-CPU comparison is reproducible on TUM-VI and KITTI datasets, so the acceleration is accuracy-preserving rather than approximate. The proposed implementation is competitive with published ORB-SLAM3 on EuRoC, attains sub-centimeter accuracy on five of the six TUM-VI room sequences, and reaches sub-1% relative translation error on nine of eleven KITTI sequences. For loop closure, the generic ONNX-Runtime CUDA/TensorRT execution providers are unusable with our CosPlace ResNet-50 on the embedded platform, whereas a native libnvinfer FP16 engine reduces per-query inference to 2.2ms, a 180x speedup. Learned place recognition therefore runs concurrently with tracking on a 7W device. In monocular-inertial mode the system sustains 32FPS mean over the eleven EuRoC sequences.",
+      "abstract_zh": "在低功耗边缘平台上进行视觉惯性SLAM受到密集特征提取和回环闭合成本的限制。之前的ORB-SLAM GPU移植通过近似ORB检测器来权衡精度与速度，改变了特征集，从而影响了估计轨迹。我们提出了一种针对NVIDIA Jetson Orin Nano的ORB-SLAM3精度保持GPU实现，其GPU ORB前端在算法上重现了参考CPU检测器，达到了94.7%的关键点一致性和99.9%的描述符比特一致性。该工作还通过原生TensorRT使基于CNN的回环闭合在边缘设备上可行。视觉前端（特征提取）被卸载到GPU，而映射和优化后端则保留在CPU上，将每个计算匹配到适合的硬件。通过比较四种配置来验证精度：GPU管道和未修改的CPU参考，每种配置均在Jetson Orin Nano和桌面计算机上运行。在EuRoC数据集上，所有四种配置在平均绝对轨迹误差（SE(3)）上相差不超过0.10cm，因此无论是GPU移植还是硬件更改都没有改变估计轨迹。GPU与CPU的比较在TUM-VI和KITTI数据集上可重复，因此加速是保持精度的，而不是近似的。所提出的实现与已发布的ORB-SLAM3在EuRoC上具有竞争力，在六个TUM-VI房间序列中的五个上达到了亚厘米级精度，并在十一条KITTI序列中的九条上达到了小于1%的相对平移误差。对于回环闭合，通用的ONNX-Runtime CUDA/TensorRT执行提供者在我们的CosPlace ResNet-50嵌入式平台上不可用，而原生的libnvinfer FP16引擎将每次查询的推理时间减少到2.2毫秒，实现了180倍的加速。因此，学习的地点识别可以与跟踪同时在一个7W的设备上运行。在单目惯性模式下，该系统在十一条EuRoC序列中保持了32FPS的平均帧率。",
+      "authors": [
+        "Rajat Roy",
+        "Aditya Arun Kumar Yadav",
+        "Hardik Jain"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17874",
+      "tags": [
+        "感知",
+        "地图/定位",
+        "预测/规划"
+      ],
+      "title": "Jetson-ORB-SLAM3: Accuracy-Preserving GPU Implementation for Edge Computing Devices",
+      "title_zh": "Jetson-ORB-SLAM3：用于边缘计算设备的精度保持GPU实现",
+      "url": "/daily/2026-08-19/#paper-2608-17874"
+    },
+    {
+      "abstract": "Controlling an autonomous vehicle at the limits of handling is a challenging task. Due to external influences, such as road conditions or weather, a vehicle can easily become unstable. Since most control algorithms assume stable vehicle behavior, they might fail in these situations. Especially when operating expensive vehicles without a safety driver on board, as in autonomous racing, this poses a significant challenge. To enable safe operation at the vehicle's dynamic limits, we present a comprehensive stability control system that safeguards motion control algorithms in autonomous driving. The proposed system consists of an electronic stability control (ESC), a slip control (SC), and a countersteer system (CS), which collectively adapt steering and brake commands from the motion controller to maintain vehicle stability. We validate our approach through both simulation and experiments on a real-world, full-scale vehicle. The results show that the stability control system maintains vehicle stability in critical situations and extends the operational feasible region. To simplify integration, we provide an open-source implementation at github.com/TUMFTM/tam-stability-control.",
+      "abstract_zh": "在操控极限下控制自主车辆是一项具有挑战性的任务。由于外部因素，如路况或天气，车辆很容易变得不稳定。由于大多数控制算法假设车辆行为是稳定的，因此在这些情况下它们可能会失效。尤其是在没有安全驾驶员的情况下操作昂贵车辆时，如在自主赛车中，这构成了一个重大挑战。为了在车辆动态极限下实现安全操作，我们提出了一种全面的稳定性控制系统，该系统保护自主驾驶中的运动控制算法。所提议的系统由电子稳定性控制（ESC）、滑移控制（SC）和反向转向系统（CS）组成，这些系统共同调整运动控制器的转向和制动指令，以维持车辆稳定性。我们通过仿真和真实全尺度车辆实验验证了我们的方法。结果表明，稳定性控制系统在关键情况下保持了车辆的稳定性，并扩展了可操作的可行区域。为了简化集成，我们在github.com/TUMFTM/tam-stability-control上提供了开源实现。",
+      "authors": [
+        "Phillip Pitschi",
+        "Simon Sagmeister",
+        "Frederik Werner",
+        "Markus Lienkamp",
+        "Boris Lohmann"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17779",
+      "tags": [
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Stability Control for Real World Testing in Autonomous Racing",
+      "title_zh": "自主赛车中的实际测试稳定性控制",
+      "url": "/daily/2026-08-19/#paper-2608-17779"
+    },
+    {
+      "abstract": "Wavelet convolution layers have recently emerged as an efficient mechanism for enlarging receptive fields through multiresolution analysis, but prior work has fixed the wavelet basis to Haar or Daubechies at a chosen decomposition depth, leaving open whether a different basis can shift the underlying efficiency frontier. We identify and characterize a previously unexplored trade-off in this setting: bases with stronger approximation properties (longer filters) can reduce the decomposition depth required for competitive accuracy, yielding a net reduction in parameters and FLOPs despite higher perlevel transform cost. We formalize this as an F-vs.-L tradeoff (filter length vs. decomposition levels) and study it systematically across Haar, Daubechies, Symlets, and Coiflets under controlled architectures and budgets. On image classification (CIFAR-10, ImageNet-1K) and semantic segmentation (Cityscapes), Coiflet-based wavelet convolutions match Haar at deeper levels with approximately 32% fewer additional parameters and 33% fewer additional FLOPs, providing a concrete and actionable design choice for practitioners building wavelet-based architectures.",
+      "abstract_zh": "小波卷积层最近作为一种通过多分辨率分析扩大感受野的有效机制而出现，但之前的研究将小波基固定为Haar或Daubechies，并在选定的分解深度下进行，尚未探讨不同基是否能够推动潜在的效率边界。我们在这一背景下识别并描述了一个先前未被探索的权衡：具有更强逼近性质的基（更长的滤波器）可以减少实现竞争性准确度所需的分解深度，从而尽管每层变换成本更高，但仍能实现参数和FLOPs的净减少。我们将其形式化为F-vs.-L权衡（滤波器长度与分解层数），并在受控架构和预算下系统地研究Haar、Daubechies、Symlets和Coiflets。在图像分类（CIFAR-10，ImageNet-1K）和语义分割（Cityscapes）任务中，基于Coiflet的小波卷积在更深的层次上与Haar相匹配，额外参数减少约32%，额外FLOPs减少33%，为构建基于小波的架构的实践者提供了一个具体且可行的设计选择。",
+      "authors": [
+        "Md Rifat Ur Rahman"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17662",
+      "tags": [
+        "感知",
+        "深度/几何"
+      ],
+      "title": "Is Haar Enough? Exploring Symlets and Coiflets for Wavelet Convolution Layers",
+      "title_zh": "Haar足够吗？探索Symlets和Coiflets在小波卷积层中的应用",
+      "url": "/daily/2026-08-19/#paper-2608-17662"
+    },
+    {
+      "abstract": "Driving scene reconstruction and rendering, especially with 3D Gaussian Splatting, has become an important component of autonomous driving simulation. However, rendered views often degrade under extrapolated ego trajectories and scene edits, producing blurry structures, temporal flicker, and foreground-background misalignment. Existing refinement methods are commonly designed for a specific setting, such as image-level novel-view repair or object-editing correction. In this paper, we introduce SPVC, a structured and panoptic video fixing framework for cross-dataset driving scene rendering. The name summarizes four design principles. (1) Structured fixing denotes the use of explicit spatial conditions, including camera pose, 3D bounding boxes, and HD maps, to guide the repair process and reduce uncontrolled hallucination. (2) Panoptic fixing refers to correcting both background rendering artifacts, such as distorted roads, buildings, and lanes, and foreground vehicle artifacts introduced by scene editing, such as inconsistent object appearance. (3) Video fixing means that the model operates on driving sequences rather than isolated frames, allowing temporal cues to be used during artifact correction. (4) Cross-dataset fixing means that a single shared network is trained and applied across multiple driving datasets, reducing the need for dataset-specific or scene-specific fixers. Concretely, we construct paired degraded-clean training data by simulating under-constrained 3DGS rendering and foreground vehicle insertion artifacts, and train a two-stage controllable video diffusion model that first addresses video-level appearance and then refines scene layout with structured controls.",
+      "abstract_zh": "驾驶场景的重建与渲染，尤其是使用3D高斯点云（3D Gaussian Splatting），已成为自动驾驶仿真的一个重要组成部分。然而，在外推的自我轨迹和场景编辑下，渲染视图往往会退化，产生模糊的结构、时间闪烁和前景与背景的不对齐。现有的修复方法通常针对特定设置设计，例如图像级的新视角修复或物体编辑校正。本文介绍了SPVC，一个用于跨数据集驾驶场景渲染的结构化全景视频修复框架。该名称总结了四个设计原则。(1) 结构化修复指利用明确的空间条件，包括相机姿态、3D边界框和高清地图，来指导修复过程并减少不受控的幻觉。(2) 全景修复指同时修正背景渲染伪影，例如扭曲的道路、建筑物和车道，以及场景编辑引入的前景车辆伪影，例如不一致的物体外观。(3) 视频修复意味着模型在驾驶序列上操作，而不是孤立的帧，从而在伪影校正过程中利用时间线索。(4) 跨数据集修复意味着训练和应用一个共享的网络于多个驾驶数据集，从而减少对特定数据集或场景特定修复器的需求。具体而言，我们通过模拟约束不足的3DGS渲染和前景车辆插入伪影构建成对的降质-清晰训练数据，并训练一个两阶段的可控视频扩散模型，该模型首先处理视频级外观，然后利用结构化控制精细化场景布局。",
+      "authors": [
+        "Gen Li",
+        "Shu Han",
+        "Yun Xi Qiao",
+        "Hua Chen",
+        "Xuyang Dai",
+        "Bohan Li",
+        "Hao Zhao",
+        "Chaojian Li"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17420",
+      "tags": [
+        "仿真/数据",
+        "深度/几何",
+        "地图/定位"
+      ],
+      "title": "SPVC: Structured and Panoptic Video Fixing for Cross-Dataset Driving Scene Rendering",
+      "title_zh": "SPVC：用于跨数据集驾驶场景渲染的结构化全景视频修复",
+      "url": "/daily/2026-08-19/#paper-2608-17420"
+    },
+    {
+      "abstract": "Video self-supervised learning through masked spatiotemporal prediction has emerged as a promising paradigm for learning feature representations from unlabeled data. However, existing methods typically rely on random masking, which indiscriminately removes regions irrespective of their semantic or temporal relevance. In ego-centric driving videos, this can weaken the pretext signal since safety-critical cues such as pedestrians, vehicles, lane boundaries, and dynamic interactions often occupy only a small portion of the frame, yet are central to downstream perception. We introduce V-JEPA4A, a domain-specialized variant of V-JEPA for autonomous driving that is pre-trained on publicly available driving videos with a novel saliency-driven masking policy. It accounts for semantically and temporally relevant context. The proposed policy preserves and predicts context according to semantic importance and temporal relevance, yielding more informative representation learning while retaining the efficiency of masked prediction. We evaluate the resulting encoders on four driving benchmarks spanning tracking, semantic segmentation, and depth estimation. The results demonstrate that V-JEPA4A reduces identity switches on BDD100k MOT by 25% over V-JEPA with random masking, achieves 73.2 mIoU on Cityscapes, and 3.75 RMSE on KITTI-2015 depth, while incurring only ~14% additional pre-training iteration overhead.",
+      "abstract_zh": "通过掩蔽时空预测进行视频自监督学习已成为从未标记数据中学习特征表示的有前景的范式。然而，现有方法通常依赖于随机掩蔽，这种方法无差别地去除区域，而不考虑其语义或时间相关性。在自我中心的驾驶视频中，这可能削弱前置信号，因为安全关键线索（如行人、车辆、车道边界和动态交互）通常只占据帧的一小部分，但对下游感知至关重要。我们提出了V-JEPA4A，这是V-JEPA在自动驾驶领域的一个专门变体，采用了一种新颖的基于显著性的掩蔽策略，在公开可用的驾驶视频上进行预训练。该策略考虑了语义和时间相关的上下文。所提出的策略根据语义重要性和时间相关性保留和预测上下文，从而在保持掩蔽预测效率的同时，产生更具信息量的表示学习。我们在四个驾驶基准上评估了所得到的编码器，这些基准涵盖了跟踪、语义分割和深度估计。结果表明，V-JEPA4A在BDD100k MOT上相比于使用随机掩蔽的V-JEPA减少了25%的身份切换，在Cityscapes上达到了73.2的mIoU，在KITTI-2015深度上达到了3.75的RMSE，同时仅增加了约14%的预训练迭代开销。",
+      "authors": [
+        "Christopher Lang",
+        "Alexander Braun",
+        "Abhinav Valada"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17178",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "安全/异常"
+      ],
+      "title": "Mask What Matters: Saliency-Guided Video Self-Supervised Learning for Autonomous Driving",
+      "title_zh": "关注重要信息：基于显著性引导的视频自监督学习在自动驾驶中的应用",
+      "url": "/daily/2026-08-19/#paper-2608-17178"
+    },
+    {
+      "abstract": "Vision-language-action (VLA) driving models couple a reasoning stage with a diffusion-based trajectory decoder, but do not give a direct way to redirect attention toward safety-critical actors at inference time without retraining. We studied a bounded additive pre-softmax attention bias on the visual tokens of detector localized traffic actors on Alpamayo-R1's Qwen3-VL backbone. It is applied as a fail open forward pre-hook with no weight changes. On 50 lane-change scenarios from the Physical AI World Model Synthetic dataset. The trajectory decoder shows a monotonic dose response in the bias magnitude, separate from a paired zero bias control at every tested magnitude. It reaches $\\approx 17$\\,cm mean displacement with lateral shifts up to $\\sim 140$\\ cm at the clamp. A layer ablation places the action-relevant signal in late layers, where the effect increases with the number of hooked layers (2.0cm for the first 8 layers; 67.6cm for all 36). A per call injection audit explains why the Chain-of-Causation text never changes. The mask based bias never reaches the reasoning pathway in this serving stack, so the invariance is verified exposure, not robustness. Steered trajectories tend to shift toward the attended actor, suggesting the bias governs where the model looks rather than encoding a target behavior.",
+      "abstract_zh": "视觉-语言-行动（VLA）驾驶模型将推理阶段与基于扩散的轨迹解码器结合，但未提供在推理时直接引导注意力关注安全关键行为者的方法，而无需重新训练。我们研究了在Alpamayo-R1的Qwen3-VL主干上，对检测到的交通行为者的视觉标记施加的有界加性预-softmax注意力偏置。该偏置作为一种无权重变化的故障开放前置钩子应用。在来自物理人工智能世界模型合成数据集的50个变道场景中，轨迹解码器在偏置幅度上显示出单调的剂量反应，独立于每个测试幅度的配对零偏置控制。它在夹紧时达到约17厘米的平均位移，横向偏移可达约140厘米。层消融实验表明，与动作相关的信号位于后期层，其中效果随着钩住层数的增加而增强（前8层为2.0厘米；36层时为67.6厘米）。每次调用注入审计解释了为何因果链文本从未改变。基于掩码的偏置在此服务堆栈中从未到达推理路径，因此不变性是通过暴露验证的，而非鲁棒性。引导的轨迹倾向于向被关注的行为者移动，表明偏置控制着模型的关注方向，而不是编码目标行为。",
+      "authors": [
+        "Darshan Nagendra Prasad",
+        "Lars Ullrich",
+        "Knut Graichen"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17095",
+      "tags": [
+        "VLM/VLA",
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "Inference-Time Attention Steering for Vision-Language-Action Driving Models",
+      "title_zh": "推理时注意力引导的视觉-语言-行动驾驶模型",
+      "url": "/daily/2026-08-19/#paper-2608-17095"
+    },
+    {
+      "abstract": "The 10th AI City Challenge, held with ECCV 2026, marks a decade of community benchmarking for intelligent transportation, smart cities, and physical AI. Since its 2017 start with vehicle detection, classification, and tracking, the challenge has grown into a broad benchmark suite for multi-camera perception, multimodal reasoning, synthetic-to-real learning, generative forecasting, and privacy-preserving evaluation. The 2026 edition continued this growth with 325 registered teams, up from 245 in 2025, and participation from 26 countries and regions, up from 15. Its six primary tracks cover multi-camera 3D perception, transportation safety captioning and VQA, traffic anomaly reasoning, text-based person anomaly search, generative traffic video forecasting, and cross-city object detection. Track 3 further includes two out-of-domain leaderboards, submitted as Tracks 7 and 8, for fisheye traffic-violation understanding and pedestrian situated-intent VQA. This paper summarizes the challenge setup, datasets, evaluation protocols, leaderboard results, and workshop papers. Across tracks, successful systems combine foundation models with geometric grounding, retrieval or reranking, synthetic-data design, domain adaptation, and controlled inference.",
+      "abstract_zh": "第十届人工智能城市挑战赛于2026年与欧洲计算机视觉会议（ECCV）共同举行，标志着智能交通、智慧城市和物理人工智能领域社区基准测试的十周年。自2017年以车辆检测、分类和跟踪为起点以来，该挑战赛已发展成为一个涵盖多摄像头感知、多模态推理、合成到真实学习、生成预测和隐私保护评估的广泛基准套件。2026年版继续这一增长，共有325支注册队伍，较2025年的245支有所增加，参与国家和地区从15个增至26个。其六个主要赛道涵盖多摄像头3D感知、交通安全字幕和视觉问答（VQA）、交通异常推理、基于文本的人体异常搜索、生成交通视频预测以及跨城市目标检测。赛道3进一步包括两个领域外的排行榜，作为赛道7和8提交，分别用于鱼眼交通违规理解和行人情境意图的视觉问答。本文总结了挑战赛的设置、数据集、评估协议、排行榜结果和研讨会论文。在各个赛道中，成功的系统结合了基础模型与几何基础、检索或重排名、合成数据设计、领域适应和受控推理。",
+      "authors": [
+        "Zheng Tang",
+        "Shuo Wang",
+        "David C. Anastasiu",
+        "Ming-Ching Chang",
+        "Anuj Sharma",
+        "Quan Kong",
+        "Munkhjargal Gochoo",
+        "Jun-Wei Hsieh",
+        "Tomasz Kornuta",
+        "Zhedong Zheng",
+        "Renran Tian",
+        "Judah Goldfeder",
+        "Fulgencio Navarro",
+        "Yuxing Wang",
+        "Yizhou Wang",
+        "Sameer Satish Pusegaonkar",
+        "Anqi Li",
+        "Nalin Dadhich",
+        "Ridham Kachhadiya",
+        "Dhanishtha Patil",
+        "Haoquan Liang",
+        "Jiajun Li",
+        "Han Zhang",
+        "Yilin Zhao",
+        "Zaid Pervaiz Bhat",
+        "Shuyu Yang",
+        "Ashutosh Kumar",
+        "Rong Wang",
+        "Rafael Martin Nieto",
+        "Peter Christiansen",
+        "Ahmed Abduljawad",
+        "Mohanrasu Shanmugam",
+        "Nadeem Shaik",
+        "Sujit Biswas",
+        "Xunlei Wu",
+        "Vidya Murali",
+        "Rama Chellappa"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17044",
+      "tags": [
+        "仿真/数据",
+        "3D 检测",
+        "安全/异常"
+      ],
+      "title": "The 10th AI City Challenge",
+      "title_zh": "第十届人工智能城市挑战赛",
+      "url": "/daily/2026-08-19/#paper-2608-17044"
+    },
+    {
+      "abstract": "Autonomous navigation in complex outdoor terrains presents critical challenges for unmanned ground vehicles (UGVs) due to the inherent disconnect between global mapping and real-time sensor feedback. This work proposes a hybrid framework that integrates low-resolution Digital Elevation Model (DEM) data with real-time LiDAR-based obstacle detection and terrain analysis for efficient path planning. A global path is initially computed using a preprocessed DEM-based A* algorithm. Subsequently, local sensor data drives adaptive path correction, enabling the UGV to negotiate sudden environmental changes while maintaining safety and efficiency. Simulation results in Gazebo demonstrate significant improvements over a baseline approach, achieving a 95\\% obstacle avoidance rate and reducing the average encountered slope from $8^\\circ$ to $2.7^\\circ$ in custom terrain. This integration enhances path efficiency and terrain traversability and supports robust real-time adaptation, paving the way for more reliable autonomous navigation in dynamic outdoor environments.",
+      "abstract_zh": "在复杂户外地形中，自主导航对无人地面车辆（UGVs）提出了重大挑战，因为全球地图与实时传感器反馈之间存在固有的脱节。本文提出了一种混合框架，将低分辨率数字高程模型（DEM）数据与基于实时激光雷达的障碍物检测和地形分析相结合，以实现高效的路径规划。首先，使用预处理的基于DEM的A*算法计算全局路径。随后，局部传感器数据驱动自适应路径修正，使UGV能够在保持安全和效率的同时应对突发的环境变化。在Gazebo中的仿真结果表明，与基线方法相比，显著提高了性能，障碍物避让率达到95\\%，并将自定义地形中遇到的平均坡度从$8^ heta$降低至$2.7^ heta$。这种集成提高了路径效率和地形可通行性，并支持强大的实时适应能力，为在动态户外环境中实现更可靠的自主导航铺平了道路。",
+      "authors": [
+        "Devender Singh",
+        "Issah Nazif Suleiman",
+        "Paul Mitten",
+        "Glenn Cutler",
+        "Vinicius Prado da Fonseca",
+        "Matthew Hamilton"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17038",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "LiDAR/点云"
+      ],
+      "title": "Terrain-Aware Local Path Planning with Global DEM Data Integration for Autonomous UGV Navigation",
+      "title_zh": "基于全球数字高程模型数据集成的地形感知局部路径规划用于自主无人地面车辆导航",
+      "url": "/daily/2026-08-19/#paper-2608-17038"
+    },
+    {
+      "abstract": "Visual Place Recognition (VPR) aims to recognize the location of a query image by comparing it with a set of geo-referenced images. Although many datasets have been proposed for VPR, collecting dense and diverse visual data from pedestrian-level viewpoints is still an important need. In this paper, we introduce YILDIZ-VPR, a visual geo-localization dataset collected through repeated walking traversals on the Davutpasa campus of Yildiz Technical University. The dataset includes outdoor scenes captured at different times of day, seasons, and weather conditions. It contains a wide range of visual content, including historical buildings, modern structures, roads, green areas, and wooded regions. Each video was recorded with a GoPro 9 camera and synchronized with GPS sensor data to provide location labels for the extracted frames. In addition to GPS coordinates, the dataset also includes auxiliary sensor information such as gyroscope, speed, and temperature data. With its dense coverage and long-term visual variability, YILDIZ-VPR provides a useful resource for studying image-based and temporal visual place recognition under realistic outdoor conditions.",
+      "abstract_zh": "视觉地点识别（Visual Place Recognition，VPR）旨在通过将查询图像与一组地理参考图像进行比较，从而识别查询图像的位置。尽管已有许多数据集被提出用于VPR，但从行人视角收集密集且多样的视觉数据仍然是一个重要的需求。本文介绍了YILDIZ-VPR，这是一个通过在伊尔迪兹技术大学达武特帕夏校园进行重复步行遍历收集的视觉地理定位数据集。该数据集包含在不同时间、季节和天气条件下捕获的户外场景。它涵盖了广泛的视觉内容，包括历史建筑、现代结构、道路、绿地和林区。每个视频均使用GoPro 9相机录制，并与GPS传感器数据同步，以提供提取帧的位置信息标签。除了GPS坐标外，该数据集还包括辅助传感器信息，如陀螺仪、速度和温度数据。凭借其密集的覆盖和长期的视觉变化，YILDIZ-VPR为在现实户外条件下研究基于图像和时间的视觉地点识别提供了有用的资源。",
+      "authors": [
+        "Serdar Yildiz",
+        "Abbas Memiş",
+        "Songül Varli"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.17033",
+      "tags": [
+        "地图/定位",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "YILDIZ-VPR: A Novel Dataset with Dense Coverage Under Diverse Environmental Conditions for Visual Place Recognition",
+      "title_zh": "YILDIZ-VPR：在多样环境条件下具有密集覆盖的新型视觉地点识别数据集",
+      "url": "/daily/2026-08-19/#paper-2608-17033"
+    },
+    {
+      "abstract": "Recent monocular depth estimators achieve strong zero-shot generalization, yet often struggle to preserve fine-grained structures and object boundaries. We attribute this limitation to the prevalent combination of large-patch ViT encoders and convolutional decoders, as coarse tokenization can weaken pixel-level cues that upsampling cannot fully recover. To address this issue, we propose PXDepth, a discriminative monocular depth model that separates global context modeling from pixel-level depth prediction. Specifically, a large-patch ViT captures global scene context, while a pixel-space predictor composed of Context-Modulated Pixel Transformer blocks maintains high-resolution spatial representations throughout depth estimation. This design preserves fine structures and sharp boundaries without sacrificing global depth consistency. Across diverse zero-shot benchmarks, PXDepth combines faithful local geometry with competitive global depth accuracy while remaining efficient at inference. Our code and model are available at https://yuanzhy29.github.io/PXDepth-Page/.",
+      "abstract_zh": "近期的单目深度估计器在零-shot 泛化方面表现出色，但往往难以保留细粒度结构和物体边界。我们将这一限制归因于大块 ViT 编码器与卷积解码器的普遍组合，因为粗略的标记化可能削弱像素级线索，而上采样无法完全恢复这些线索。为了解决这一问题，我们提出了 PXDepth，这是一种区分性的单目深度模型，将全局上下文建模与像素级深度预测分开。具体而言，大块 ViT 捕捉全局场景上下文，而由上下文调制的像素变换器（Context-Modulated Pixel Transformer）块组成的像素空间预测器在整个深度估计过程中保持高分辨率的空间表示。这一设计在不牺牲全局深度一致性的情况下保留了细致的结构和清晰的边界。在多样的零-shot 基准测试中，PXDepth 将忠实的局部几何与竞争性的全局深度精度相结合，同时在推理时保持高效。我们的代码和模型可在 https://yuanzhy29.github.io/PXDepth-Page/ 获取。",
+      "authors": [
+        "Zhiyuan Yuan",
+        "Guanying Chen",
+        "Lingteng Qiu",
+        "Ruimao Zhang",
+        "Shuguang Cui",
+        "Xiaochun Cao"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.16984",
+      "tags": [
+        "深度/几何",
+        "感知"
+      ],
+      "title": "PXDepth: Pixel-Space Modeling for Structure Preserving Monocular Depth Estimation",
+      "title_zh": "PXDepth：用于结构保留的单目深度估计的像素空间建模",
+      "url": "/daily/2026-08-19/#paper-2608-16984"
+    },
+    {
+      "abstract": "In modern intelligent transportation systems, it is essential to accurately estimate vehicle positions, especially in mixed traffic conditions where both connected and conventional vehicles coexist. Roadside infrastructure and connected vehicles can provide complementary observations of the same traffic scene, but real-world evidence on decision-level fusion between these sources remains limited. This paper proposes a multi-observer vehicle localization framework that fuses compact object-level detections from a static roadside radar and a dynamic LiDAR-equipped connected vehicle. We evaluate the framework with real-world data collected at an urban intersection in Helsinki, Finland, with a separately instrumented target vehicle used as the reference trajectory. Two extended Kalman filter based strategies for the localization task were benchmarked. The performance of the radar and LiDAR sensors were evaluated separately, and the two fusion strategies were explored under nominal sensing conditions, reduced LiDAR update rates, simulated LiDAR occlusions, and different target-vehicle motion states. The results show that, under full LiDAR availability, fusion performance is dominated by the LiDAR observations, while the less accurate and less consistent radar observations provide only limited additional improvement. Nevertheless, AEKF achieves small gains over the LiDAR-only baseline, and object-level connected vehicle observations remain useful when shared at reduced update rates. These findings indicate that decision-level fusion provides scenario-dependent benefits rather than automatic improvement over a strong single-sensor baseline. We release the dataset and implementation on Github to support further research: https://github.com/AppuriAalto/multi-observer-vehicle-tracking",
+      "abstract_zh": "在现代智能交通系统中，准确估计车辆位置至关重要，尤其是在联网车辆与传统车辆共存的混合交通条件下。路边基础设施和联网车辆可以提供对同一交通场景的互补观察，但关于这些来源之间决策级融合的现实证据仍然有限。本文提出了一种多观察者车辆定位框架，该框架融合了来自静态路边雷达和动态激光雷达（LiDAR）装备的联网车辆的紧凑物体级检测。我们在芬兰赫尔辛基的一个城市交叉口使用收集的真实数据对该框架进行了评估，并使用单独仪器化的目标车辆作为参考轨迹。我们基于扩展卡尔曼滤波器（EKF）的两种策略进行了定位任务的基准测试。分别评估了雷达和LiDAR传感器的性能，并在名义感知条件、降低的LiDAR更新频率、模拟的LiDAR遮挡以及不同目标车辆运动状态下探讨了这两种融合策略。结果表明，在LiDAR完全可用的情况下，融合性能主要受LiDAR观测的主导，而准确性较低且一致性较差的雷达观测仅提供有限的额外改善。尽管如此，AEKF在LiDAR单一基线之上实现了小幅提升，并且当以降低的更新频率共享时，物体级联网车辆观测仍然是有用的。这些发现表明，决策级融合提供的好处依赖于具体场景，而不是对强单传感器基线的自动改进。我们在Github上发布了数据集和实现，以支持进一步的研究： https://github.com/AppuriAalto/multi-observer-vehicle-tracking",
+      "authors": [
+        "Aleksi Pippuri",
+        "Nilusha Jayawickrama",
+        "Risto Ojala"
+      ],
+      "date": "2026-08-19",
+      "id": "2608.16966",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "LiDAR/点云"
+      ],
+      "title": "Multi-Observer Vehicle Localization Case Study with Roadside Radar and Connected Vehicle Sensing",
+      "title_zh": "多观察者车辆定位案例研究：基于路边雷达和联网车辆感知",
+      "url": "/daily/2026-08-19/#paper-2608-16966"
+    },
     {
       "abstract": "This paper proposes a calibration-free framework for reliably and effectively estimating vehicle speeds from monocular videos, without relying on roadway features, camera calibration, or roadway-feature-based reference objects. The proposed framework estimates vehicle speeds using a 36-keypoint vehicle template and a homography matrix updated at each frame. A YOLO-based keypoint detection module is trained on diverse datasets, and two estimation strategies are compared: keypoint-only tracking and warped optical flow with dense spatial aggregation. Speed is estimated by projecting displacements into metric space using the homography, with validation conducted on over 400 video clips from roadside and overhead datasets, covering speeds from 30 to 100 mph. The method achieves reliable speed estimation on the VS13 and BrnoCompSpeed datasets, with the warped optical flow method delivering MAEs of 15.0% and 9.7%, respectively, and 77.9% and 93.1% of estimates falling within +/-20% error. After applying a 10% trim to remove edge-of-frame outliers, performance improves to MAEs of 11.7% and 7.6%, with within-+/-20% accuracy increasing to 85.3% and 95.4%. This work addresses key limitations of existing vision-based approaches and enables low-cost and efficient speed enforcement using portable devices such as dashcams and smartphones, thereby supporting citizen-based enforcement programs for traffic safety.",
       "abstract_zh": "本文提出了一种无校准框架，用于从单目视频中可靠且有效地估计车辆速度，无需依赖道路特征、相机校准或基于道路特征的参考物体。所提出的框架使用36个关键点的车辆模板和在每帧更新的单应性矩阵来估计车辆速度。基于YOLO的关键点检测模块在多样化的数据集上进行训练，并比较了两种估计策略：仅关键点跟踪和带有密集空间聚合的扭曲光流。通过使用单应性将位移投影到度量空间中来估计速度，并在超过400个来自路边和高空数据集的视频片段上进行验证，覆盖速度范围从30到100英里每小时。该方法在VS13和BrnoCompSpeed数据集上实现了可靠的速度估计，扭曲光流方法的平均绝对误差（MAE）分别为15.0%和9.7%，并且77.9%和93.1%的估计值在±20%的误差范围内。在应用10%的修剪以去除边缘帧异常值后，性能提升至MAE为11.7%和7.6%，而±20%的准确率提高至85.3%和95.4%。该研究解决了现有基于视觉的方法的关键局限性，并使得使用便携设备（如行车记录仪和智能手机）进行低成本和高效的速度执法成为可能，从而支持基于公民的交通安全执法项目。",

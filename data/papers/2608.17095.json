@@ -1,0 +1,54 @@
+{
+  "abstract": "Vision-language-action (VLA) driving models couple a reasoning stage with a diffusion-based trajectory decoder, but do not give a direct way to redirect attention toward safety-critical actors at inference time without retraining. We studied a bounded additive pre-softmax attention bias on the visual tokens of detector localized traffic actors on Alpamayo-R1's Qwen3-VL backbone. It is applied as a fail open forward pre-hook with no weight changes. On 50 lane-change scenarios from the Physical AI World Model Synthetic dataset. The trajectory decoder shows a monotonic dose response in the bias magnitude, separate from a paired zero bias control at every tested magnitude. It reaches $\\approx 17$\\,cm mean displacement with lateral shifts up to $\\sim 140$\\ cm at the clamp. A layer ablation places the action-relevant signal in late layers, where the effect increases with the number of hooked layers (2.0cm for the first 8 layers; 67.6cm for all 36). A per call injection audit explains why the Chain-of-Causation text never changes. The mask based bias never reaches the reasoning pathway in this serving stack, so the invariance is verified exposure, not robustness. Steered trajectories tend to shift toward the attended actor, suggesting the bias governs where the model looks rather than encoding a target behavior.",
+  "abstract_zh": "视觉-语言-行动（VLA）驾驶模型将推理阶段与基于扩散的轨迹解码器结合，但未提供在推理时直接引导注意力关注安全关键行为者的方法，而无需重新训练。我们研究了在Alpamayo-R1的Qwen3-VL主干上，对检测到的交通行为者的视觉标记施加的有界加性预-softmax注意力偏置。该偏置作为一种无权重变化的故障开放前置钩子应用。在来自物理人工智能世界模型合成数据集的50个变道场景中，轨迹解码器在偏置幅度上显示出单调的剂量反应，独立于每个测试幅度的配对零偏置控制。它在夹紧时达到约17厘米的平均位移，横向偏移可达约140厘米。层消融实验表明，与动作相关的信号位于后期层，其中效果随着钩住层数的增加而增强（前8层为2.0厘米；36层时为67.6厘米）。每次调用注入审计解释了为何因果链文本从未改变。基于掩码的偏置在此服务堆栈中从未到达推理路径，因此不变性是通过暴露验证的，而非鲁棒性。引导的轨迹倾向于向被关注的行为者移动，表明偏置控制着模型的关注方向，而不是编码目标行为。",
+  "arxiv_id": "2608.17095",
+  "arxiv_url": "https://arxiv.org/abs/2608.17095v1",
+  "authors": [
+    "Darshan Nagendra Prasad",
+    "Lars Ullrich",
+    "Knut Graichen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17095",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.445211+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17095v1",
+  "published_at": "2026-08-17T20:03:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "traffic",
+      "lane",
+      "驾驶",
+      "交通",
+      "vision-language-action",
+      "world model"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17095v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Inference-Time Attention Steering for Vision-Language-Action Driving Models",
+  "title_zh": "推理时注意力引导的视觉-语言-行动驾驶模型",
+  "translation_url": "https://hjfy.top/arxiv/2608.17095"
+}

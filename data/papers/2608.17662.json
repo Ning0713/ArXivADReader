@@ -1,0 +1,44 @@
+{
+  "abstract": "Wavelet convolution layers have recently emerged as an efficient mechanism for enlarging receptive fields through multiresolution analysis, but prior work has fixed the wavelet basis to Haar or Daubechies at a chosen decomposition depth, leaving open whether a different basis can shift the underlying efficiency frontier. We identify and characterize a previously unexplored trade-off in this setting: bases with stronger approximation properties (longer filters) can reduce the decomposition depth required for competitive accuracy, yielding a net reduction in parameters and FLOPs despite higher perlevel transform cost. We formalize this as an F-vs.-L tradeoff (filter length vs. decomposition levels) and study it systematically across Haar, Daubechies, Symlets, and Coiflets under controlled architectures and budgets. On image classification (CIFAR-10, ImageNet-1K) and semantic segmentation (Cityscapes), Coiflet-based wavelet convolutions match Haar at deeper levels with approximately 32% fewer additional parameters and 33% fewer additional FLOPs, providing a concrete and actionable design choice for practitioners building wavelet-based architectures.",
+  "abstract_zh": "小波卷积层最近作为一种通过多分辨率分析扩大感受野的有效机制而出现，但之前的研究将小波基固定为Haar或Daubechies，并在选定的分解深度下进行，尚未探讨不同基是否能够推动潜在的效率边界。我们在这一背景下识别并描述了一个先前未被探索的权衡：具有更强逼近性质的基（更长的滤波器）可以减少实现竞争性准确度所需的分解深度，从而尽管每层变换成本更高，但仍能实现参数和FLOPs的净减少。我们将其形式化为F-vs.-L权衡（滤波器长度与分解层数），并在受控架构和预算下系统地研究Haar、Daubechies、Symlets和Coiflets。在图像分类（CIFAR-10，ImageNet-1K）和语义分割（Cityscapes）任务中，基于Coiflet的小波卷积在更深的层次上与Haar相匹配，额外参数减少约32%，额外FLOPs减少33%，为构建基于小波的架构的实践者提供了一个具体且可行的设计选择。",
+  "arxiv_id": "2608.17662",
+  "arxiv_url": "https://arxiv.org/abs/2608.17662v1",
+  "authors": [
+    "Md Rifat Ur Rahman"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17662",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.485294+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17662v1",
+  "published_at": "2026-08-18T11:36:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17662v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "Is Haar Enough? Exploring Symlets and Coiflets for Wavelet Convolution Layers",
+  "title_zh": "Haar足够吗？探索Symlets和Coiflets在小波卷积层中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2608.17662"
+}

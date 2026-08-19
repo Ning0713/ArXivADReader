@@ -1,0 +1,63 @@
+{
+  "abstract": "Video self-supervised learning through masked spatiotemporal prediction has emerged as a promising paradigm for learning feature representations from unlabeled data. However, existing methods typically rely on random masking, which indiscriminately removes regions irrespective of their semantic or temporal relevance. In ego-centric driving videos, this can weaken the pretext signal since safety-critical cues such as pedestrians, vehicles, lane boundaries, and dynamic interactions often occupy only a small portion of the frame, yet are central to downstream perception. We introduce V-JEPA4A, a domain-specialized variant of V-JEPA for autonomous driving that is pre-trained on publicly available driving videos with a novel saliency-driven masking policy. It accounts for semantically and temporally relevant context. The proposed policy preserves and predicts context according to semantic importance and temporal relevance, yielding more informative representation learning while retaining the efficiency of masked prediction. We evaluate the resulting encoders on four driving benchmarks spanning tracking, semantic segmentation, and depth estimation. The results demonstrate that V-JEPA4A reduces identity switches on BDD100k MOT by 25% over V-JEPA with random masking, achieves 73.2 mIoU on Cityscapes, and 3.75 RMSE on KITTI-2015 depth, while incurring only ~14% additional pre-training iteration overhead.",
+  "abstract_zh": "通过掩蔽时空预测进行视频自监督学习已成为从未标记数据中学习特征表示的有前景的范式。然而，现有方法通常依赖于随机掩蔽，这种方法无差别地去除区域，而不考虑其语义或时间相关性。在自我中心的驾驶视频中，这可能削弱前置信号，因为安全关键线索（如行人、车辆、车道边界和动态交互）通常只占据帧的一小部分，但对下游感知至关重要。我们提出了V-JEPA4A，这是V-JEPA在自动驾驶领域的一个专门变体，采用了一种新颖的基于显著性的掩蔽策略，在公开可用的驾驶视频上进行预训练。该策略考虑了语义和时间相关的上下文。所提出的策略根据语义重要性和时间相关性保留和预测上下文，从而在保持掩蔽预测效率的同时，产生更具信息量的表示学习。我们在四个驾驶基准上评估了所得到的编码器，这些基准涵盖了跟踪、语义分割和深度估计。结果表明，V-JEPA4A在BDD100k MOT上相比于使用随机掩蔽的V-JEPA减少了25%的身份切换，在Cityscapes上达到了73.2的mIoU，在KITTI-2015深度上达到了3.75的RMSE，同时仅增加了约14%的预训练迭代开销。",
+  "arxiv_id": "2608.17178",
+  "arxiv_url": "https://arxiv.org/abs/2608.17178v1",
+  "authors": [
+    "Christopher Lang",
+    "Alexander Braun",
+    "Abhinav Valada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17178",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.449141+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17178v1",
+  "published_at": "2026-08-17T22:39:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "kitti",
+      "bdd100k",
+      "cityscapes",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "车辆",
+      "车道",
+      "行人",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17178v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "安全/异常"
+    ]
+  },
+  "title": "Mask What Matters: Saliency-Guided Video Self-Supervised Learning for Autonomous Driving",
+  "title_zh": "关注重要信息：基于显著性引导的视频自监督学习在自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2608.17178"
+}

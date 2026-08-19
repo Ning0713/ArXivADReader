@@ -1,0 +1,51 @@
+{
+  "abstract": "Urban traffic congestion reduces productivity and increases travel cost and emissions. Network-wide live travel-time shortest-path rerouting can be highly effective in simulation, but assumes that essentially every on-road vehicle is replanned every decision period. We propose HLSR, a selective hybrid live--forecast vehicle rerouting framework that fuses live edge speeds with short-horizon forecasts under limited intervention scope. Building on dual-threshold congestion detection, calibrated upstream selection, and driver-tailored travel-time prediction, HLSR further introduces approaching-vehicle expansion, travel-time-weighted k-shortest-path generation, and a horizon-dependent hybrid live--forecast segment speed used in multi-cost route allocation.",
+  "abstract_zh": "城市交通拥堵降低了生产力，增加了旅行成本和排放。网络范围内的实时旅行时间最短路径重路由在模拟中可能非常有效，但假设在每个决策周期内几乎每辆在路车辆都被重新规划。我们提出了HLSR，一种选择性混合实时-预测车辆重路由框架，融合了实时边缘速度与有限干预范围内的短期预测。在双阈值拥堵检测、校准的上游选择和针对驾驶员的旅行时间预测的基础上，HLSR进一步引入了接近车辆扩展、旅行时间加权的k最短路径生成，以及在多成本路线分配中使用的与时间相关的混合实时-预测段速度。",
+  "arxiv_id": "2608.18056",
+  "arxiv_url": "https://arxiv.org/abs/2608.18056v1",
+  "authors": [
+    "Xiao Wang",
+    "Shun Ren Yang",
+    "Hui Nien Hung"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-18056",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.560090+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.18056v1",
+  "published_at": "2026-08-18T17:49:27Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.18056v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "提出一种面向城市交通实时拥堵规避的选择性动态车辆重路由方法，通过融合实时路段速度和短期交通预测，仅对部分受影响车辆进行干预，并结合拥堵检测、候选路径生成和多成本路线分配实现路径规划。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "HLSR: Hybrid Live Forecast Selective Dynamic Vehicle Rerouting for Real-Time Congestion Avoidance",
+  "title_zh": "HLSR：用于实时拥堵避免的混合实时预测选择性动态车辆重路由",
+  "translation_url": "https://hjfy.top/arxiv/2608.18056"
+}

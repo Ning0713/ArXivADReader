@@ -1,0 +1,70 @@
+{
+  "abstract": "Traffic elements such as traffic lights and road signs play a fundamental role in human driving decisions and should naturally influence end-to-end driving performance. However, existing end-to-end driving research predominantly focuses on dynamic road participants (e.g., vehicles and pedestrians), while the role of traffic elements remains largely unexplored. The community still lacks a systematic study quantifying their impact, largely because public datasets rarely provide structured traffic-element annotations and modern driving systems vary widely in architecture and training paradigm. In this work, we present the first systematic investigation of traffic element awareness for end-to-end autonomous driving. We construct a unified research infrastructure by augmenting multiple public driving datasets with comprehensive traffic-element annotations. To support diverse model families, we adopt a minimal and universal integration design that incorporates traffic-element signals into existing pipelines in a plug-and-play manner with negligible architectural modification. We evaluate this design across modern paradigms, including perception-prediction-planning pipelines, vision-language-action models (VLA), regression-based planners, diffusion-based policies, and trajectory-scoring frameworks, on nuScenes, NAVSIM-v1, NAVSIM-v2, and Bench2Drive. Across all paradigms and datasets, this simple integration consistently improves driving performance, demonstrating that traffic element awareness provides a robust and generalizable signal for end-to-end driving systems. Notably, on the challenging NAVSIM-v2 benchmark, our approach significantly improves state-of-the-art architectures and data pipelines, establishing a new state of the art.",
+  "abstract_zh": "交通元素如交通信号灯和道路标志在人工驾驶决策中扮演着基础性角色，自然应对端到端驾驶性能产生影响。然而，现有的端到端驾驶研究主要集中在动态道路参与者（例如，车辆和行人）上，而交通元素的作用仍然在很大程度上未被探索。研究界仍然缺乏系统性研究来量化它们的影响，主要是因为公共数据集很少提供结构化的交通元素注释，并且现代驾驶系统在架构和训练范式上差异很大。在本研究中，我们首次系统性地调查了端到端自主驾驶中的交通元素感知。我们通过为多个公共驾驶数据集增添全面的交通元素注释，构建了一个统一的研究基础设施。为了支持多样化的模型家族，我们采用了一种最小且通用的集成设计，以即插即用的方式将交通元素信号整合到现有的管道中，几乎不需要架构修改。我们在 nuScenes、NAVSIM-v1、NAVSIM-v2 和 Bench2Drive 上评估了这一设计，涵盖了现代范式，包括感知-预测-规划管道、视觉-语言-行动模型（VLA）、基于回归的规划器、基于扩散的策略和轨迹评分框架。在所有范式和数据集中，这种简单的集成始终提高了驾驶性能，证明交通元素感知为端到端驾驶系统提供了强大且可泛化的信号。值得注意的是，在具有挑战性的 NAVSIM-v2 基准上，我们的方法显著改善了最先进的架构和数据管道，建立了新的技术前沿。",
+  "arxiv_id": "2608.18035",
+  "arxiv_url": "https://arxiv.org/abs/2608.18035v1",
+  "authors": [
+    "Zongzheng Zhang",
+    "Jijun Wang",
+    "Saining Zhang",
+    "Shuo Wang",
+    "Yiru Wang",
+    "Hai Yang",
+    "Yang Chen",
+    "Yuwen Heng",
+    "Hao Sun",
+    "Anqing Jiang",
+    "Hao Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-18035",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.508375+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.18035v1",
+  "published_at": "2026-08-18T17:29:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "行人",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.18035v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "仿真/数据"
+    ]
+  },
+  "title": "Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving",
+  "title_zh": "即插即用的交通元素感知用于端到端自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.18035"
+}

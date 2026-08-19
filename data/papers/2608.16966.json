@@ -1,0 +1,56 @@
+{
+  "abstract": "In modern intelligent transportation systems, it is essential to accurately estimate vehicle positions, especially in mixed traffic conditions where both connected and conventional vehicles coexist. Roadside infrastructure and connected vehicles can provide complementary observations of the same traffic scene, but real-world evidence on decision-level fusion between these sources remains limited. This paper proposes a multi-observer vehicle localization framework that fuses compact object-level detections from a static roadside radar and a dynamic LiDAR-equipped connected vehicle. We evaluate the framework with real-world data collected at an urban intersection in Helsinki, Finland, with a separately instrumented target vehicle used as the reference trajectory. Two extended Kalman filter based strategies for the localization task were benchmarked. The performance of the radar and LiDAR sensors were evaluated separately, and the two fusion strategies were explored under nominal sensing conditions, reduced LiDAR update rates, simulated LiDAR occlusions, and different target-vehicle motion states. The results show that, under full LiDAR availability, fusion performance is dominated by the LiDAR observations, while the less accurate and less consistent radar observations provide only limited additional improvement. Nevertheless, AEKF achieves small gains over the LiDAR-only baseline, and object-level connected vehicle observations remain useful when shared at reduced update rates. These findings indicate that decision-level fusion provides scenario-dependent benefits rather than automatic improvement over a strong single-sensor baseline. We release the dataset and implementation on Github to support further research: https://github.com/AppuriAalto/multi-observer-vehicle-tracking",
+  "abstract_zh": "在现代智能交通系统中，准确估计车辆位置至关重要，尤其是在联网车辆与传统车辆共存的混合交通条件下。路边基础设施和联网车辆可以提供对同一交通场景的互补观察，但关于这些来源之间决策级融合的现实证据仍然有限。本文提出了一种多观察者车辆定位框架，该框架融合了来自静态路边雷达和动态激光雷达（LiDAR）装备的联网车辆的紧凑物体级检测。我们在芬兰赫尔辛基的一个城市交叉口使用收集的真实数据对该框架进行了评估，并使用单独仪器化的目标车辆作为参考轨迹。我们基于扩展卡尔曼滤波器（EKF）的两种策略进行了定位任务的基准测试。分别评估了雷达和LiDAR传感器的性能，并在名义感知条件、降低的LiDAR更新频率、模拟的LiDAR遮挡以及不同目标车辆运动状态下探讨了这两种融合策略。结果表明，在LiDAR完全可用的情况下，融合性能主要受LiDAR观测的主导，而准确性较低且一致性较差的雷达观测仅提供有限的额外改善。尽管如此，AEKF在LiDAR单一基线之上实现了小幅提升，并且当以降低的更新频率共享时，物体级联网车辆观测仍然是有用的。这些发现表明，决策级融合提供的好处依赖于具体场景，而不是对强单传感器基线的自动改进。我们在Github上发布了数据集和实现，以支持进一步的研究： https://github.com/AppuriAalto/multi-observer-vehicle-tracking",
+  "arxiv_id": "2608.16966",
+  "arxiv_url": "https://arxiv.org/abs/2608.16966v1",
+  "authors": [
+    "Aleksi Pippuri",
+    "Nilusha Jayawickrama",
+    "Risto Ojala"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-16966",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.440590+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16966v1",
+  "published_at": "2026-08-17T07:37:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "roadside",
+      "intersection",
+      "车辆",
+      "交通",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16966v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Multi-Observer Vehicle Localization Case Study with Roadside Radar and Connected Vehicle Sensing",
+  "title_zh": "多观察者车辆定位案例研究：基于路边雷达和联网车辆感知",
+  "translation_url": "https://hjfy.top/arxiv/2608.16966"
+}

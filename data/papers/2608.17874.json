@@ -1,0 +1,47 @@
+{
+  "abstract": "Visual-inertial SLAM on low-power edge platforms is constrained by the cost of dense feature extraction and loop closure. Prior GPU ports of ORB-SLAM trade accuracy for speed by approximating the ORB detector, altering the feature set and therefore the estimated trajectory. We present an accuracy-preserving GPU implementation of ORB-SLAM3 for the NVIDIA Jetson Orin Nano, whose GPU ORB front end reproduces the reference CPU detector algorithmically to 94.7% exact keypoint agreement and 99.9% descriptor bit agreement. This work also makes CNN-based loop closure edge-viable through native TensorRT. The visual front end (feature extraction) is offloaded to the GPU while the mapping and optimization back end is kept on the CPU, matching each computation to the hardware it suits. The accuracy is verified by comparing four configurations: the GPU pipeline and the unmodified CPU reference, each run on both the Jetson Orin Nano and a desktop. On EuRoC dataset, all four agree to within 0.10cm in mean absolute trajectory error (SE(3)), so neither the GPU port nor the change of hardware shifts the estimated trajectory. The GPU-versus-CPU comparison is reproducible on TUM-VI and KITTI datasets, so the acceleration is accuracy-preserving rather than approximate. The proposed implementation is competitive with published ORB-SLAM3 on EuRoC, attains sub-centimeter accuracy on five of the six TUM-VI room sequences, and reaches sub-1% relative translation error on nine of eleven KITTI sequences. For loop closure, the generic ONNX-Runtime CUDA/TensorRT execution providers are unusable with our CosPlace ResNet-50 on the embedded platform, whereas a native libnvinfer FP16 engine reduces per-query inference to 2.2ms, a 180x speedup. Learned place recognition therefore runs concurrently with tracking on a 7W device. In monocular-inertial mode the system sustains 32FPS mean over the eleven EuRoC sequences.",
+  "abstract_zh": "在低功耗边缘平台上进行视觉惯性SLAM受到密集特征提取和回环闭合成本的限制。之前的ORB-SLAM GPU移植通过近似ORB检测器来权衡精度与速度，改变了特征集，从而影响了估计轨迹。我们提出了一种针对NVIDIA Jetson Orin Nano的ORB-SLAM3精度保持GPU实现，其GPU ORB前端在算法上重现了参考CPU检测器，达到了94.7%的关键点一致性和99.9%的描述符比特一致性。该工作还通过原生TensorRT使基于CNN的回环闭合在边缘设备上可行。视觉前端（特征提取）被卸载到GPU，而映射和优化后端则保留在CPU上，将每个计算匹配到适合的硬件。通过比较四种配置来验证精度：GPU管道和未修改的CPU参考，每种配置均在Jetson Orin Nano和桌面计算机上运行。在EuRoC数据集上，所有四种配置在平均绝对轨迹误差（SE(3)）上相差不超过0.10cm，因此无论是GPU移植还是硬件更改都没有改变估计轨迹。GPU与CPU的比较在TUM-VI和KITTI数据集上可重复，因此加速是保持精度的，而不是近似的。所提出的实现与已发布的ORB-SLAM3在EuRoC上具有竞争力，在六个TUM-VI房间序列中的五个上达到了亚厘米级精度，并在十一条KITTI序列中的九条上达到了小于1%的相对平移误差。对于回环闭合，通用的ONNX-Runtime CUDA/TensorRT执行提供者在我们的CosPlace ResNet-50嵌入式平台上不可用，而原生的libnvinfer FP16引擎将每次查询的推理时间减少到2.2毫秒，实现了180倍的加速。因此，学习的地点识别可以与跟踪同时在一个7W的设备上运行。在单目惯性模式下，该系统在十一条EuRoC序列中保持了32FPS的平均帧率。",
+  "arxiv_id": "2608.17874",
+  "arxiv_url": "https://arxiv.org/abs/2608.17874v1",
+  "authors": [
+    "Rajat Roy",
+    "Aditya Arun Kumar Yadav",
+    "Hardik Jain"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17874",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.437563+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17874v1",
+  "published_at": "2026-08-18T15:07:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17874v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "预测/规划"
+    ]
+  },
+  "title": "Jetson-ORB-SLAM3: Accuracy-Preserving GPU Implementation for Edge Computing Devices",
+  "title_zh": "Jetson-ORB-SLAM3：用于边缘计算设备的精度保持GPU实现",
+  "translation_url": "https://hjfy.top/arxiv/2608.17874"
+}

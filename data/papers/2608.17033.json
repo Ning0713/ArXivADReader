@@ -1,0 +1,50 @@
+{
+  "abstract": "Visual Place Recognition (VPR) aims to recognize the location of a query image by comparing it with a set of geo-referenced images. Although many datasets have been proposed for VPR, collecting dense and diverse visual data from pedestrian-level viewpoints is still an important need. In this paper, we introduce YILDIZ-VPR, a visual geo-localization dataset collected through repeated walking traversals on the Davutpasa campus of Yildiz Technical University. The dataset includes outdoor scenes captured at different times of day, seasons, and weather conditions. It contains a wide range of visual content, including historical buildings, modern structures, roads, green areas, and wooded regions. Each video was recorded with a GoPro 9 camera and synchronized with GPS sensor data to provide location labels for the extracted frames. In addition to GPS coordinates, the dataset also includes auxiliary sensor information such as gyroscope, speed, and temperature data. With its dense coverage and long-term visual variability, YILDIZ-VPR provides a useful resource for studying image-based and temporal visual place recognition under realistic outdoor conditions.",
+  "abstract_zh": "视觉地点识别（Visual Place Recognition，VPR）旨在通过将查询图像与一组地理参考图像进行比较，从而识别查询图像的位置。尽管已有许多数据集被提出用于VPR，但从行人视角收集密集且多样的视觉数据仍然是一个重要的需求。本文介绍了YILDIZ-VPR，这是一个通过在伊尔迪兹技术大学达武特帕夏校园进行重复步行遍历收集的视觉地理定位数据集。该数据集包含在不同时间、季节和天气条件下捕获的户外场景。它涵盖了广泛的视觉内容，包括历史建筑、现代结构、道路、绿地和林区。每个视频均使用GoPro 9相机录制，并与GPS传感器数据同步，以提供提取帧的位置信息标签。除了GPS坐标外，该数据集还包括辅助传感器信息，如陀螺仪、速度和温度数据。凭借其密集的覆盖和长期的视觉变化，YILDIZ-VPR为在现实户外条件下研究基于图像和时间的视觉地点识别提供了有用的资源。",
+  "arxiv_id": "2608.17033",
+  "arxiv_url": "https://arxiv.org/abs/2608.17033v1",
+  "authors": [
+    "Serdar Yildiz",
+    "Abbas Memiş",
+    "Songül Varli"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17033",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.442922+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17033v1",
+  "published_at": "2026-08-17T18:30:23Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "道路",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17033v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "本文发布了一个面向长期、跨环境视觉地点识别的多模态数据集，包含重复步行采集的视频、GPS位置标签以及陀螺仪、速度和温度等信息。其不同季节、天气和时段下的密集覆盖可支持视觉重定位与地点识别研究，对自动驾驶中的地图匹配和定位具有迁移参考价值。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "YILDIZ-VPR: A Novel Dataset with Dense Coverage Under Diverse Environmental Conditions for Visual Place Recognition",
+  "title_zh": "YILDIZ-VPR：在多样环境条件下具有密集覆盖的新型视觉地点识别数据集",
+  "translation_url": "https://hjfy.top/arxiv/2608.17033"
+}

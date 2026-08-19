@@ -1,0 +1,53 @@
+{
+  "abstract": "Recent monocular depth estimators achieve strong zero-shot generalization, yet often struggle to preserve fine-grained structures and object boundaries. We attribute this limitation to the prevalent combination of large-patch ViT encoders and convolutional decoders, as coarse tokenization can weaken pixel-level cues that upsampling cannot fully recover. To address this issue, we propose PXDepth, a discriminative monocular depth model that separates global context modeling from pixel-level depth prediction. Specifically, a large-patch ViT captures global scene context, while a pixel-space predictor composed of Context-Modulated Pixel Transformer blocks maintains high-resolution spatial representations throughout depth estimation. This design preserves fine structures and sharp boundaries without sacrificing global depth consistency. Across diverse zero-shot benchmarks, PXDepth combines faithful local geometry with competitive global depth accuracy while remaining efficient at inference. Our code and model are available at https://yuanzhy29.github.io/PXDepth-Page/.",
+  "abstract_zh": "近期的单目深度估计器在零-shot 泛化方面表现出色，但往往难以保留细粒度结构和物体边界。我们将这一限制归因于大块 ViT 编码器与卷积解码器的普遍组合，因为粗略的标记化可能削弱像素级线索，而上采样无法完全恢复这些线索。为了解决这一问题，我们提出了 PXDepth，这是一种区分性的单目深度模型，将全局上下文建模与像素级深度预测分开。具体而言，大块 ViT 捕捉全局场景上下文，而由上下文调制的像素变换器（Context-Modulated Pixel Transformer）块组成的像素空间预测器在整个深度估计过程中保持高分辨率的空间表示。这一设计在不牺牲全局深度一致性的情况下保留了细致的结构和清晰的边界。在多样的零-shot 基准测试中，PXDepth 将忠实的局部几何与竞争性的全局深度精度相结合，同时在推理时保持高效。我们的代码和模型可在 https://yuanzhy29.github.io/PXDepth-Page/ 获取。",
+  "arxiv_id": "2608.16984",
+  "arxiv_url": "https://arxiv.org/abs/2608.16984v1",
+  "authors": [
+    "Zhiyuan Yuan",
+    "Guanying Chen",
+    "Lingteng Qiu",
+    "Ruimao Zhang",
+    "Shuguang Cui",
+    "Xiaochun Cao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-16984",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.GR"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.442184+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.16984v1",
+  "published_at": "2026-08-17T18:00:02Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.16984v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "本文提出单目深度估计模型PXDepth，通过大图像块ViT建模全局场景上下文，并利用像素空间Transformer持续保持高分辨率表示，从而改善细粒度结构和物体边界的深度预测。该方法可为自动驾驶中的单目三维几何感知、障碍物边界识别和场景理解提供基础能力。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "PXDepth: Pixel-Space Modeling for Structure Preserving Monocular Depth Estimation",
+  "title_zh": "PXDepth：用于结构保留的单目深度估计的像素空间建模",
+  "translation_url": "https://hjfy.top/arxiv/2608.16984"
+}

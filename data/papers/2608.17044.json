@@ -1,0 +1,87 @@
+{
+  "abstract": "The 10th AI City Challenge, held with ECCV 2026, marks a decade of community benchmarking for intelligent transportation, smart cities, and physical AI. Since its 2017 start with vehicle detection, classification, and tracking, the challenge has grown into a broad benchmark suite for multi-camera perception, multimodal reasoning, synthetic-to-real learning, generative forecasting, and privacy-preserving evaluation. The 2026 edition continued this growth with 325 registered teams, up from 245 in 2025, and participation from 26 countries and regions, up from 15. Its six primary tracks cover multi-camera 3D perception, transportation safety captioning and VQA, traffic anomaly reasoning, text-based person anomaly search, generative traffic video forecasting, and cross-city object detection. Track 3 further includes two out-of-domain leaderboards, submitted as Tracks 7 and 8, for fisheye traffic-violation understanding and pedestrian situated-intent VQA. This paper summarizes the challenge setup, datasets, evaluation protocols, leaderboard results, and workshop papers. Across tracks, successful systems combine foundation models with geometric grounding, retrieval or reranking, synthetic-data design, domain adaptation, and controlled inference.",
+  "abstract_zh": "第十届人工智能城市挑战赛于2026年与欧洲计算机视觉会议（ECCV）共同举行，标志着智能交通、智慧城市和物理人工智能领域社区基准测试的十周年。自2017年以车辆检测、分类和跟踪为起点以来，该挑战赛已发展成为一个涵盖多摄像头感知、多模态推理、合成到真实学习、生成预测和隐私保护评估的广泛基准套件。2026年版继续这一增长，共有325支注册队伍，较2025年的245支有所增加，参与国家和地区从15个增至26个。其六个主要赛道涵盖多摄像头3D感知、交通安全字幕和视觉问答（VQA）、交通异常推理、基于文本的人体异常搜索、生成交通视频预测以及跨城市目标检测。赛道3进一步包括两个领域外的排行榜，作为赛道7和8提交，分别用于鱼眼交通违规理解和行人情境意图的视觉问答。本文总结了挑战赛的设置、数据集、评估协议、排行榜结果和研讨会论文。在各个赛道中，成功的系统结合了基础模型与几何基础、检索或重排名、合成数据设计、领域适应和受控推理。",
+  "arxiv_id": "2608.17044",
+  "arxiv_url": "https://arxiv.org/abs/2608.17044v1",
+  "authors": [
+    "Zheng Tang",
+    "Shuo Wang",
+    "David C. Anastasiu",
+    "Ming-Ching Chang",
+    "Anuj Sharma",
+    "Quan Kong",
+    "Munkhjargal Gochoo",
+    "Jun-Wei Hsieh",
+    "Tomasz Kornuta",
+    "Zhedong Zheng",
+    "Renran Tian",
+    "Judah Goldfeder",
+    "Fulgencio Navarro",
+    "Yuxing Wang",
+    "Yizhou Wang",
+    "Sameer Satish Pusegaonkar",
+    "Anqi Li",
+    "Nalin Dadhich",
+    "Ridham Kachhadiya",
+    "Dhanishtha Patil",
+    "Haoquan Liang",
+    "Jiajun Li",
+    "Han Zhang",
+    "Yilin Zhao",
+    "Zaid Pervaiz Bhat",
+    "Shuyu Yang",
+    "Ashutosh Kumar",
+    "Rong Wang",
+    "Rafael Martin Nieto",
+    "Peter Christiansen",
+    "Ahmed Abduljawad",
+    "Mohanrasu Shanmugam",
+    "Nadeem Shaik",
+    "Sujit Biswas",
+    "Xunlei Wu",
+    "Vidya Murali",
+    "Rama Chellappa"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-19#paper-2608-17044",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-19T14:08:12.443684+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.17044v1",
+  "published_at": "2026-08-17T18:42:49Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "pedestrian",
+      "车辆",
+      "交通",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-08-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.17044v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-19"
+  },
+  "summary_zh": "本文总结面向智能交通与自动驾驶场景的第十届AI City Challenge，重点介绍其多摄像头三维感知、交通安全与异常理解、跨城市目标检测和生成式交通视频预测等赛道，以及配套数据集、评价协议和竞赛结果。该工作主要贡献在于提供覆盖感知、安全和预测任务的综合基准，并分析基础模型、几何建模、合成数据与领域适应等方法的表现。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "3D 检测",
+      "安全/异常"
+    ]
+  },
+  "title": "The 10th AI City Challenge",
+  "title_zh": "第十届人工智能城市挑战赛",
+  "translation_url": "https://hjfy.top/arxiv/2608.17044"
+}
