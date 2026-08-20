@@ -1,0 +1,51 @@
+{
+  "abstract": "Ensuring not only high accuracy but also reliable and robust predictions is critical for the deployment of semantic segmentation models in safety-critical applications such as autonomous driving. Despite the widespread use of CutMix - a simple yet powerful data augmentation strategy - its effect on the reliability and robustness in dense predictions tasks remains unexplored. Motivated by recent findings that semi-supervised segmentation methods, where CutMix is a core component, can severely degrade reliability, this study isolates and systematically analyzes the influence of CutMix on segmentation accuracy, calibration, and uncertainty quality. We evaluate two representative architectures, the CNN-based DeepLabV3+ and the transformer-based SegFormer, across both in-domain and out-of-domain scenarios. Our results show that CutMix has only a minor impact on segmentation accuracy but consistently improves the reliability, particularly under distribution shifts. These improvements indicate that CutMix primarily enhances the trustworthiness of the model's calibration and uncertainty rather than the raw segmentation prediction itself. This distinction is crucial for safety-critical deployment, where reliable confidence estimates are as important as raw performance.",
+  "abstract_zh": "确保不仅具有高准确性，而且具有可靠和鲁棒的预测，对于在安全关键应用（如自动驾驶）中部署语义分割模型至关重要。尽管CutMix作为一种简单而强大的数据增强策略被广泛使用，但其在密集预测任务中的可靠性和鲁棒性影响尚未得到探索。受到最近发现的启发，即CutMix作为核心组件的半监督分割方法可能严重降低可靠性，本研究对CutMix对分割准确性、校准和不确定性质量的影响进行了系统的分析。我们在领域内和领域外场景中评估了两种代表性架构：基于CNN的DeepLabV3+和基于变换器的SegFormer。我们的结果表明，CutMix对分割准确性的影响较小，但在分布变化下始终提高了可靠性。这些改进表明，CutMix主要增强了模型的校准和不确定性的可信度，而不是原始的分割预测本身。这一区别对于安全关键的部署至关重要，因为可靠的置信度估计与原始性能同样重要。",
+  "arxiv_id": "2608.18715",
+  "arxiv_url": "https://arxiv.org/abs/2608.18715v1",
+  "authors": [
+    "Steven Landgraf",
+    "Markus Ulrich"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-18715",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.738506+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.18715v1",
+  "published_at": "2026-08-19T09:16:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.18715v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "The Impact of CutMix on Reliability and Robustness in Semantic Segmentation",
+  "title_zh": "CutMix对语义分割中可靠性和鲁棒性的影响",
+  "translation_url": "https://hjfy.top/arxiv/2608.18715"
+}

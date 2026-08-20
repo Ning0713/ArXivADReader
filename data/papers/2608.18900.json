@@ -1,0 +1,51 @@
+{
+  "abstract": "As AI systems are increasingly deployed in safety-critical application domains (e.g., autonomous driving), associated risks increase too. Deep learning models underlying modern AI systems, therefore, must undergo thorough testing to ensure their correct behaviour. A single robustness test involves thousands of inferences to empirically verify if a model's outputs remain stable under a bounded perturbation of its inputs. However, existing testing frameworks lack the means to systematically explore and summarise robustness across a combinatorial space of perturbations. We propose TestifAI, a deep learning testing framework for efficient and accurate estimation of robustness against combinations of perturbations. TestifAI enables users to specify operational conditions as structured spaces of semantic input perturbations (e.g., image blur, brightness and zoom) and discrete severity levels (e.g., low, medium and high). Users can query model robustness for any combination (e.g., \"low blur, high brightness, and medium zoom\"). To achieve efficiency and accuracy, TestifAI introduces partial model tomography, a novel approach to reconstructing model behaviour in a multi-perturbation space from tests that apply only a small number of perturbations (lower-order projections). To estimate robustness against at least three perturbations, TestifAI trains an auxiliary model on the results of tests involving up to two perturbations only, avoiding execution of an exponential number of tests. Our experiments on five image and language classification tasks show that TestifAI can predict higher-order (3 and 4 perturbations) test outcomes from low-order (1 and 2 perturbations) observations with an aggregate robustness estimation error of less than 7%, while reducing the number of inferences by 60-80%.",
+  "abstract_zh": "随着人工智能系统在安全关键应用领域（例如，自动驾驶）中的广泛应用，相关风险也在增加。因此，支撑现代人工智能系统的深度学习模型必须经过全面测试，以确保其正确行为。单个鲁棒性测试涉及数千次推理，以实证验证模型的输出在输入的有限扰动下是否保持稳定。然而，现有的测试框架缺乏系统性探索和总结组合扰动空间中鲁棒性的方法。我们提出了TestifAI，一个深度学习测试框架，用于高效且准确地评估对组合扰动的鲁棒性。TestifAI使用户能够将操作条件指定为结构化的语义输入扰动空间（例如，图像模糊、亮度和缩放）和离散的严重性等级（例如，低、中和高）。用户可以查询任何组合的模型鲁棒性（例如，“低模糊、高亮度和中等缩放”）。为了实现高效性和准确性，TestifAI引入了部分模型断层成像，这是一种从仅应用少量扰动（低阶投影）的测试中重构多扰动空间中模型行为的新方法。为了估计至少三种扰动的鲁棒性，TestifAI在涉及最多两种扰动的测试结果上训练一个辅助模型，从而避免执行指数数量的测试。我们在五个图像和语言分类任务上的实验表明，TestifAI能够从低阶（1和2扰动）观察中预测高阶（3和4扰动）测试结果，其整体鲁棒性估计误差低于7%，同时减少了60-80%的推理次数。",
+  "arxiv_id": "2608.18900",
+  "arxiv_url": "https://arxiv.org/abs/2608.18900v1",
+  "authors": [
+    "Arooj Arif",
+    "Tobias Hartung",
+    "Elena Botoeva",
+    "Alexandros Koliousis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-18900",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.805364+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.18900v1",
+  "published_at": "2026-08-19T13:25:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.18900v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "\\textsc{TestifAI}: Tomography-Based Testing for Deep Learning Systems",
+  "title_zh": "TestifAI：基于断层成像的深度学习系统测试",
+  "translation_url": "https://hjfy.top/arxiv/2608.18900"
+}

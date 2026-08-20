@@ -1,0 +1,51 @@
+{
+  "abstract": "Electronic travel aids are pivotal for the independent mobility of the visually impaired. While Vision-Language Models (VLMs) offer rich environmental understanding, they often suffer from excessive false positives in dynamic scenarios, leading to cognitive overload. To address this, we present ForeSightGuide, an anticipatory assistive guidance framework that couples semantic scene understanding with predictive hazard assessment. Unlike reactive systems, ForeSightGuide leverages the reasoning capabilities of VLMs to anticipate obstacle motion, effectively filtering out non-threatening objects to provide concise, actionable guidance. To validate our approach, we introduce a novel dataset captured in complex, dynamic real-world traffic scenes, designed to benchmark predictive capabilities. Extensive experiments on both public benchmarks and our proposed dataset demonstrate that ForeSightGuide achieves state-of-the-art performance. Notably, it significantly mitigates information overload by reducing redundant alerts to 0.299 per guidance output while maintaining a low missed-hazard rate of 0.112, proving its efficacy for safe walking assistance.",
+  "abstract_zh": "电子旅行辅助工具对视觉障碍者的独立移动至关重要。虽然视觉-语言模型（Vision-Language Models, VLMs）提供了丰富的环境理解，但在动态场景中，它们往往会出现过多的误报，导致认知负担过重。为了解决这一问题，我们提出了ForeSightGuide，一个将语义场景理解与预测危险评估相结合的预期辅助指导框架。与反应式系统不同，ForeSightGuide利用VLMs的推理能力来预测障碍物的运动，有效过滤出非威胁性物体，从而提供简洁、可操作的指导。为了验证我们的方法，我们引入了一个在复杂动态的真实交通场景中捕获的新数据集，旨在基准测试预测能力。在公共基准和我们提出的数据集上进行的广泛实验表明，ForeSightGuide达到了最先进的性能。值得注意的是，它通过将冗余警报减少到每次指导输出0.299，显著减轻了信息过载，同时保持了0.112的低漏报率，证明了其在安全步行辅助中的有效性。",
+  "arxiv_id": "2608.18993",
+  "arxiv_url": "https://arxiv.org/abs/2608.18993v1",
+  "authors": [
+    "Zhiyuan Wang",
+    "Xu Li",
+    "Shikang Guo",
+    "Wei Meng",
+    "Quan Liu",
+    "Jie Zuo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-18993",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.750832+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.18993v1",
+  "published_at": "2026-08-19T14:58:51Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.18993v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "本文提出ForeSightGuide预期式辅助指导框架，结合VLM语义场景理解与障碍物运动预测，在动态交通环境中识别潜在危险并过滤非威胁目标，从而减少冗余警报和信息过载。论文还构建了真实复杂交通场景数据集，并在多个基准上验证了方法的预测与安全辅助效果。其直接应用是视觉障碍者步行辅助，而非自动驾驶车辆，但涉及动态环境感知、风险预测和安全决策等可迁移到自动驾驶的关键技术。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "安全/异常"
+    ]
+  },
+  "title": "ForeSightGuide: An Anticipatory Framework toward Accurate and Low-Redundancy Guidance for the Visually Impaired",
+  "title_zh": "ForeSightGuide：面向视觉障碍者的准确且低冗余指导的预期框架",
+  "translation_url": "https://hjfy.top/arxiv/2608.18993"
+}

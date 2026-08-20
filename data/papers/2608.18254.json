@@ -1,0 +1,56 @@
+{
+  "abstract": "Trajectory planning for autonomous driving requires both high-level reasoning and precise low-level control. Large Language Models (LLMs) offer semantic-rich planning capabilities, however, their application is limited by hallucinated reasoning, poor grounding in environment dynamics, and limited numerical precision in control. We propose GAPL (Grounded Action-effect Policy Learning), a unified framework that integrates LLM-based effect estimation, simulation-based effect grounding, and policy optimization into a closed-loop system. GAPL consists of three modules: (1) an LLM-based Effect Evaluator for structured multi-dimensional action-effect estimation; (2) a Simulation-based Effect Grounder that predicts dynamics-consistent effects from simulator rollouts; and (3) an Effect-Aware Decision Maker that grounds LLM effect estimates against simulation via a distiller to guide Proximal Policy Optimization (PPO)-based policy learning. Experiments on four Highway-env scenarios demonstrate that GAPL consistently outperforms baselines, achieving average reductions of {0.76, 0.86, 2.00} in collision rate, average displacement error (ADE), and final displacement error (FDE), and an average reward gain of 1.44.",
+  "abstract_zh": "自主驾驶的轨迹规划需要高层次的推理和精确的低层次控制。大型语言模型（LLMs）提供了丰富的语义规划能力，然而，它们的应用受到虚幻推理、对环境动态的较差基础和控制中的有限数值精度的限制。我们提出了GAPL（基础行动效果策略学习），这是一个统一框架，将基于LLM的效果估计、基于仿真的效果基础和策略优化整合为一个闭环系统。GAPL由三个模块组成：（1）基于LLM的效果评估器，用于结构化的多维行动效果估计；（2）基于仿真的效果基础器，从仿真器的滚动预测动态一致的效果；（3）效果感知决策者，通过蒸馏器将LLM效果估计与仿真相结合，以指导基于近端策略优化（PPO）的策略学习。在四个高速公路环境场景中的实验表明，GAPL始终优于基线，分别在碰撞率、平均位移误差（ADE）和最终位移误差（FDE）上实现了平均减少{0.76, 0.86, 2.00}，并获得了1.44的平均奖励增益。",
+  "arxiv_id": "2608.18254",
+  "arxiv_url": "https://arxiv.org/abs/2608.18254v1",
+  "authors": [
+    "Zhihong Cui",
+    "Hengyu Liu",
+    "Zhangkai Wu",
+    "Yushuai Li",
+    "Tianyi Li",
+    "Peiyuan Guan",
+    "Amir Taherkordi",
+    "Tor Skeie"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-18254",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.681457+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.18254v1",
+  "published_at": "2026-08-18T19:09:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "highway",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.18254v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "GAPL: Grounded Action-effect Policy Learning for LLM-Based Trajectory Planning",
+  "title_zh": "GAPL：基于LLM的轨迹规划中的基础行动效果策略学习",
+  "translation_url": "https://hjfy.top/arxiv/2608.18254"
+}

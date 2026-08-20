@@ -1,0 +1,56 @@
+{
+  "abstract": "Ground Penetrating Radar (GPR) is a widely adopted non-destructive sensing technology for subsurface inspection in civil and transportation engineering. Despite its potential for pavement condition assessment, the large-scale application of GPR in automated inspection has two key challenges: the scarcity of annotated real-world datasets and the lack of deep learning models designed for the unique characteristics of 3-Dimensional (3D) GPR data. This study addresses these limitations by firstly introducing a cost-effective data preparation pipeline that integrates orthomosaic Red Green Blue (RGB) imagery with 3D GPR scans to generate annotated 3D GPR datasets. The proposed method uses the aligned segments of RGB and GPR data, using pavement surface images as a reference to transfer labels of surface-visible defects to corresponding GPR segments, enabling efficient large-scale annotation in a real-world dataset collected on a highway section under operation. In addition to the dataset contribution, we propose a specialised 3D Convolutional Neural Network (CNN) architecture incorporating residual connections, mixed convolutional kernel sizes, and both depthwise and channelwise attention mechanisms to enhance feature representation and defect classification. The model is evaluated on binary classification tasks for detecting patch and crack defects in pavement structures. Experimental results demonstrate that the proposed network outperforms baseline architectures across multiple evaluation metrics. Ablation studies further confirm the effectiveness of the designed architectural components. This work contributes a scalable and practical method for real-world dataset generation, along with a novel deep learning framework.",
+  "abstract_zh": "地面穿透雷达（Ground Penetrating Radar, GPR）是一种广泛应用于土木工程和交通工程的非破坏性检测技术，用于地下检查。尽管其在路面状况评估中的潜力巨大，但GPR在自动化检测中的大规模应用面临两个主要挑战：一是标注的真实世界数据集稀缺，二是缺乏针对三维（3D）GPR数据独特特征设计的深度学习模型。本研究通过首先引入一种经济高效的数据准备流程，解决了这些限制，该流程将正射影像红绿蓝（RGB）图像与3D GPR扫描结合，以生成标注的3D GPR数据集。所提出的方法利用RGB和GPR数据的对齐段，以路面表面图像作为参考，将表面可见缺陷的标签转移到相应的GPR段，从而实现对在运营中的高速公路段收集的真实世界数据集的高效大规模标注。除了数据集的贡献外，我们还提出了一种专门的3D卷积神经网络（Convolutional Neural Network, CNN）架构，结合了残差连接、混合卷积核大小以及深度和通道注意机制，以增强特征表示和缺陷分类。该模型在检测路面结构中的补丁和裂缝缺陷的二分类任务上进行了评估。实验结果表明，所提出的网络在多个评估指标上优于基线架构。消融研究进一步确认了所设计架构组件的有效性。本研究为真实世界数据集生成提供了一种可扩展且实用的方法，并提出了一种新颖的深度学习框架。",
+  "arxiv_id": "2608.19177",
+  "arxiv_url": "https://arxiv.org/abs/2608.19177v1",
+  "authors": [
+    "Yuandong Pan",
+    "Linjun Lu",
+    "Mudan Wang",
+    "Florian Noichl",
+    "Fan Xue",
+    "Brian Sheil",
+    "Lavindra de Silva",
+    "André Borrmann",
+    "Ioannis Brilakis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-19177",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.761896+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.19177v1",
+  "published_at": "2026-08-19T17:53:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "highway",
+      "交通",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.19177v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "Image-Guided Pavement Defect Recognition in GPR Data with novel 3D Deep Learning Architecture",
+  "title_zh": "基于图像引导的GPR数据路面缺陷识别的新型3D深度学习架构",
+  "translation_url": "https://hjfy.top/arxiv/2608.19177"
+}

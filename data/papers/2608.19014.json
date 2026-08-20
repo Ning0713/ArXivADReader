@@ -1,0 +1,62 @@
+{
+  "abstract": "Autonomous vehicles depend on fast and reliable perception systems to detect surrounding vehicles, pedestrians, cyclists, traffic signs, and other road objects in real time. This paper presents a comprehensive survey and analysis of one-stage object detectors for autonomous driving rather than an implementation of a new detection system. The survey reviews the evolution of major one-stage detectors, including YOLOv1, SSD, RetinaNet, EfficientDet, anchor-free detectors such as FCOS and CenterNet, and recent real-time models such as YOLOv10. It compares these architectures through their design choices, feature-fusion strategies, loss functions, deployment trade-offs, and reported benchmark performance. The paper also summarizes commonly used autonomous-driving datasets, evaluation metrics, open challenges, and future research directions. Overall, this survey highlights how one-stage detectors balance speed, accuracy, efficiency, and robustness, while also emphasizing the remaining gap between benchmark results and dependable real-world autonomous-driving performance.",
+  "abstract_zh": "自动驾驶车辆依赖快速且可靠的感知系统实时检测周围的车辆、行人、自行车、交通标志及其他道路物体。本文对一阶段目标检测器在自动驾驶中的应用进行了全面的调查和分析，而非新检测系统的实现。调查回顾了主要一阶段检测器的发展历程，包括YOLOv1、SSD、RetinaNet、EfficientDet、无锚检测器如FCOS和CenterNet，以及最近的实时模型如YOLOv10。本文通过设计选择、特征融合策略、损失函数、部署权衡和报告的基准性能等方面对这些架构进行了比较。文章还总结了常用的自动驾驶数据集、评估指标、开放挑战和未来研究方向。总体而言，本调查强调了一阶段检测器如何在速度、准确性、效率和鲁棒性之间取得平衡，同时也强调了基准结果与可靠的现实世界自动驾驶性能之间的差距。",
+  "arxiv_id": "2608.19014",
+  "arxiv_url": "https://arxiv.org/abs/2608.19014v1",
+  "authors": [
+    "Jonel Roman",
+    "Ryan Sirjue",
+    "Peter Nguyen",
+    "Daniel Krutky",
+    "Juan Jesus",
+    "Sudip Dhakal"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-19014",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.753241+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.19014v1",
+  "published_at": "2026-08-19T15:13:33Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.19014v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "One-Stage Object Detectors in Autonomous Driving",
+  "title_zh": "自动驾驶中的一阶段目标检测器",
+  "translation_url": "https://hjfy.top/arxiv/2608.19014"
+}

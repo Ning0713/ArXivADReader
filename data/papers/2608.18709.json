@@ -1,0 +1,49 @@
+{
+  "abstract": "Foundation models are increasingly breaking what seemed to be impossible not long ago by enabling unprecedented accuracy and cross-domain generalization. Yet their lack of interpretability, tendency to be overconfident, and sensitivity to real-world domain shifts pose critical challenges for safety- and mission-critical applications. Uncertainty quantification (UQ) offers a principled way to address these issues, but its integration into segmentation foundation models has yet to be explored. In this paper we present the first systematic evaluation of UQ methods applied to a foundation model for semantic segmentation. We fine-tune a lightweight DPT decoder on top of the pretrained SAM2 encoder to establish a simple yet competitive baseline and benchmark four representative UQ approaches - Monte Carlo Dropout, Deep Sub-Ensemble, Test-Time Augmentation, and Evidential Deep Learning - across Cityscapes, NYUv2, and two challenging out-of-domain settings. Our analysis compares segmentation accuracy, calibration, uncertainty quality, and inference time, revealing clear trade-offs between predictive performance, reliability, and computational cost. These results highlight both the promise and the current limitations of uncertainty-aware foundation models, pointing to the need for future work that jointly optimizes accuracy, robustness, and efficiency for real-world deployment.",
+  "abstract_zh": "基础模型正在不断打破不久前看似不可能的界限，实现前所未有的准确性和跨领域泛化。然而，它们缺乏可解释性、过于自信的倾向以及对现实世界领域变化的敏感性，为安全和任务关键型应用带来了重大挑战。不确定性量化（UQ）提供了一种原则性的方法来解决这些问题，但其在分割基础模型中的整合尚待探索。本文首次系统评估了应用于语义分割基础模型的UQ方法。我们在预训练的SAM2编码器基础上，微调了一个轻量级的DPT解码器，以建立一个简单而具有竞争力的基线，并在Cityscapes、NYUv2以及两个具有挑战性的域外设置中基准测试四种代表性的UQ方法——蒙特卡罗Dropout、深度子集成、测试时增强和证据深度学习。我们的分析比较了分割准确性、校准、预测不确定性质量和推理时间，揭示了预测性能、可靠性和计算成本之间的明显权衡。这些结果突显了不确定性感知基础模型的潜力和当前局限性，指向未来需要共同优化准确性、鲁棒性和效率以实现现实世界部署的研究方向。",
+  "arxiv_id": "2608.18709",
+  "arxiv_url": "https://arxiv.org/abs/2608.18709v1",
+  "authors": [
+    "Steven Landgraf",
+    "Joceline Hinz",
+    "Markus Ulrich"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-18709",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.736141+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.18709v1",
+  "published_at": "2026-08-19T09:09:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.18709v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "深度/几何"
+    ]
+  },
+  "title": "A Critical Synthesis of Uncertainty Quantification and Foundation Models for Semantic Segmentation",
+  "title_zh": "不确定性量化与基础模型在语义分割中的关键综合研究",
+  "translation_url": "https://hjfy.top/arxiv/2608.18709"
+}

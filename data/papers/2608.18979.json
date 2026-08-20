@@ -1,0 +1,47 @@
+{
+  "abstract": "Semantic segmentation demands a careful balance between accuracy, efficiency, and scalability, which remains difficult to achieve for high-resolution imagery. Convolutional networks effectively model local patterns but struggle with long-range dependencies, whereas Vision Transformers capture global context at a high computational cost. While recent work largely focuses on encoder design, the bottleneck stage, central to contextual aggregation and information flow, has been relatively overlooked. We propose SiConMo, a lightweight yet effective framework, implemented in two variants: an RGB-only model (SiConMo) and a GME-enhanced variant (SiConMo$_\\dagger$). We show that simplicity arises from a key design principle: at very low computational budgets, the bottleneck is the most efficient stage to integrate local and global context. SiConMo integrates three complementary components: a Token Pyramid Extraction Module for hierarchical multi-scale representation, a Transformer-Branched Depthwise Convolution block for bottleneck-aware context modeling, and a Feature Merging Module that preserves spatial structure while enhancing semantic consistency. Extensive experiments on ADE20K, PASCAL Context, Cityscapes, and COCO-Stuff demonstrate that SiConMo achieves a state-of-the-art accuracy-efficiency trade-off among lightweight semantic segmentation models, highlighting simplicity as a powerful design principle.",
+  "abstract_zh": "语义分割需要在准确性、效率和可扩展性之间进行仔细平衡，这在高分辨率图像中仍然难以实现。卷积网络有效地建模局部模式，但在长距离依赖方面表现不佳，而视觉变换器（Vision Transformers）则以较高的计算成本捕捉全局上下文。尽管最近的研究主要集中在编码器设计上，但作为上下文聚合和信息流的核心，瓶颈阶段相对被忽视。我们提出了SiConMo，一个轻量且有效的框架，分为两种变体：仅RGB模型（SiConMo）和增强的GME变体（SiConMo$_ ag{†}$）。我们表明，简单性源于一个关键设计原则：在非常低的计算预算下，瓶颈是整合局部和全局上下文的最有效阶段。SiConMo整合了三个互补组件：用于分层多尺度表示的Token金字塔提取模块、用于瓶颈感知上下文建模的变换器分支深度卷积块，以及在增强语义一致性的同时保持空间结构的特征合并模块。在ADE20K、PASCAL Context、Cityscapes和COCO-Stuff上的大量实验表明，SiConMo在轻量级语义分割模型中实现了最先进的准确性与效率的权衡，突显了简单性作为一种强大的设计原则。",
+  "arxiv_id": "2608.18979",
+  "arxiv_url": "https://arxiv.org/abs/2608.18979v1",
+  "authors": [
+    "Mian Muhammad Naeem Abid",
+    "Nancy Mehta",
+    "Zongwei Wu",
+    "Radu Timofte"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-18979",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.748591+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.18979v1",
+  "published_at": "2026-08-19T14:47:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.18979v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "When Simplicity Wins: Bottleneck-Aware Context Modeling for Lightweight Semantic Segmentation",
+  "title_zh": "当简单胜出：针对轻量级语义分割的瓶颈感知上下文建模",
+  "translation_url": "https://hjfy.top/arxiv/2608.18979"
+}

@@ -1,0 +1,62 @@
+{
+  "abstract": "Spatial representation learning for autonomous driving aims to map raw visual signals into structured 3D scene representations, where object-centric bounding boxes and rendering-oriented 3D primitives (\\eg, 3D Gaussians) serve as two distinct yet highly complementary levels for scene understanding. Existing methods typically treat dynamic reconstruction and instance-level perception as separate tasks, despite their shared goal of estimating the underlying 3D world state. As a result, dynamic reconstruction is under-constrained while 3D detection lacks geometric grounding. To address this gap, we propose USR-Drive, a unified conditional generative framework that, given only posed multi-view driving videos, jointly recovers dense dynamic geometry and instance-level object layouts within a shared scene representation. Specifically, USR-Drive represents dense Gaussian primitives and sparse 3D bounding boxes as two aligned latent token streams and jointly denoises them with a unified multi-modal diffusion Transformer. Unlike prior paradigms that use boxes as external conditions or predict them with detached modules, USR-Drive treats them as mutually constrained state variables with a Unified Positional Encoding (UPE) that aligns heterogeneous tokens within a shared metric spatiotemporal coordinate. Via such unified representation and generative framework, the two modalities reinforce each other: geometry supplies dense metric evidence for box prediction, while boxes provide instance-level structural priors that help preserve spatial consistency and reduce ambiguity in sequential 3D geometric representation. Our approach successfully delivers state-of-the-art results for both dynamic reconstruction and 3D detection on the nuScenes and VKitti datasets.",
+  "abstract_zh": "自主驾驶的空间表示学习旨在将原始视觉信号映射为结构化的3D场景表示，其中以物体为中心的边界框和以渲染为导向的3D原语（例如，3D高斯）作为场景理解的两个不同但高度互补的层次。现有方法通常将动态重建和实例级感知视为独立任务，尽管它们的共同目标是估计潜在的3D世界状态。因此，动态重建受到约束不足，而3D检测缺乏几何基础。为了解决这一问题，我们提出了USR-Drive，一个统一的条件生成框架，该框架仅基于多视角驾驶视频，联合恢复共享场景表示中的密集动态几何和实例级物体布局。具体而言，USR-Drive将密集的高斯原语和稀疏的3D边界框表示为两个对齐的潜在标记流，并通过统一的多模态扩散Transformer共同去噪。与之前将边界框作为外部条件或通过独立模块预测的范式不同，USR-Drive将其视为相互约束的状态变量，并使用统一位置编码（Unified Positional Encoding, UPE）将异构标记对齐到共享的度量时空坐标中。通过这种统一的表示和生成框架，这两种模态相互强化：几何为边界框预测提供密集的度量证据，而边界框则提供实例级结构先验，帮助保持空间一致性并减少序列3D几何表示中的模糊性。我们的方法在nuScenes和VKitti数据集上成功实现了动态重建和3D检测的最先进结果。",
+  "arxiv_id": "2608.19036",
+  "arxiv_url": "https://arxiv.org/abs/2608.19036v1",
+  "authors": [
+    "Li-Heng Chen",
+    "Haokai Pang",
+    "Chengye Su",
+    "Jiarun Liu",
+    "Qifeng Chen",
+    "Ziqian Ni",
+    "Jianxin Huang",
+    "Shi-Sheng Huang",
+    "Hongbo Fu",
+    "Sheng Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-19036",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.755668+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.19036v1",
+  "published_at": "2026-08-19T15:29:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "3d detection"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.19036v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "世界模型/生成"
+    ]
+  },
+  "title": "USR-Drive: Unified Driving Scene Representation via Joint Denoising of 3D Gaussians and Boxes",
+  "title_zh": "USR-Drive：通过联合去噪3D高斯和边界框的统一驾驶场景表示",
+  "translation_url": "https://hjfy.top/arxiv/2608.19036"
+}

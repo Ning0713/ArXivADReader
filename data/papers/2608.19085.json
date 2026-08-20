@@ -1,0 +1,57 @@
+{
+  "abstract": "Anticipating how scenes evolve under ego actions is fundamental to safe autonomous driving, yet the full potential of world models for decision-making remains unrealized. The critical challenge lies in ensuring that future modeling is not merely predictive, but decision-informative: the predicted future must directly shape which trajectory is selected. Existing approaches decouple future representation learning from planning optimization, or share predicted states across trajectory candidates, thereby diluting the action-specific consequences that ought to guide selection. To bridge this gap, we propose DA-WAM, a framework that unifies predictive representation learning, action-conditioned future modeling, and trajectory scoring under a single decision-making objective. DA-WAM maintains predictive supervision throughout planner optimization via an online encoder and a stable momentum target, allowing future representations to co-evolve with the driving task. An action-conditioned predictor generates a distinct future latent state per trajectory candidate, which is then evaluated by a future-latent-conditioned factorized scorer. For the expert-matched trajectory, the predicted future latent is supervised by the observed future representation, while safety-critical hard negatives provide additional supervision near planning boundaries. Extensive experiments on NAVSIM-v1 and NAVSIM-v2 demonstrate state-of-the-art performance, while ablations and diagnostic analyses validate the key components.",
+  "abstract_zh": "预测场景在自我行动下如何演变对于安全的自主驾驶至关重要，但世界模型在决策中的潜力尚未完全实现。关键挑战在于确保未来建模不仅仅是预测性的，而是能够为决策提供信息：预测的未来必须直接影响所选择的轨迹。现有方法将未来表示学习与规划优化解耦，或在轨迹候选之间共享预测状态，从而稀释了应指导选择的特定于动作的后果。为了解决这一问题，我们提出了DA-WAM，一个将预测表示学习、基于动作的未来建模和轨迹评分统一在单一决策目标下的框架。DA-WAM通过在线编码器和稳定的动量目标在规划优化过程中保持预测监督，使未来表示能够与驾驶任务共同演化。基于动作的预测器为每个轨迹候选生成独特的未来潜变量状态，然后由一个基于未来潜变量的分解评分器进行评估。对于与专家匹配的轨迹，预测的未来潜变量由观察到的未来表示进行监督，而安全关键的硬负样本在规划边界附近提供额外的监督。在NAVSIM-v1和NAVSIM-v2上的广泛实验展示了最先进的性能，而消融实验和诊断分析验证了关键组件的有效性。",
+  "arxiv_id": "2608.19085",
+  "arxiv_url": "https://arxiv.org/abs/2608.19085v1",
+  "authors": [
+    "Ruiguo Zhong",
+    "Benshan Ma",
+    "Xiaolong Chen",
+    "Lang Zhang",
+    "Mingyue Feng",
+    "Yaonong Wang",
+    "Pei Liu",
+    "Jun Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-20#paper-2608-19085",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-20T14:10:08.697115+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.19085v1",
+  "published_at": "2026-08-19T16:33:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-08-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.19085v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "安全/异常"
+    ]
+  },
+  "title": "DA-WAM: Decision-Aligned Future Latents for Driving World Models",
+  "title_zh": "DA-WAM：用于驾驶世界模型的决策对齐未来潜变量",
+  "translation_url": "https://hjfy.top/arxiv/2608.19085"
+}
