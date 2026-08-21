@@ -1,6 +1,136 @@
 {
-  "generated_at": "2026-08-20T14:11:49.199698+00:00",
+  "generated_at": "2026-08-21T14:09:19.413049+00:00",
   "items": [
+    {
+      "abstract": "End-to-end autonomous driving has evolved from camera-to-control regression toward planning-oriented systems that use structured representations, trajectory-level outputs, and increasingly realistic evaluation protocols. This survey reviews this transition across behavior cloning, conditional imitation learning, privileged distillation, BEV and vectorized planning, unified perception-prediction-planning architectures, world-model-based planners, and vision-language-action systems. We argue that the key distinction in modern end-to-end driving is not whether intermediate representations are used, but whether they are learned, supervised, and evaluated to support safe, feasible, and route-compliant planning. To organize the literature, we synthesize existing methods along four axes: input representation, planning output, supervision signal, and evaluation protocol. We further examine the benchmark shift from open-loop trajectory matching to closed-loop simulation, non-reactive real-log evaluation, long-tail testing, and human-preference-aware metrics. Our analysis highlights that architectural progress is difficult to interpret without benchmark-consistent evaluation, and that displacement-based open-loop metrics alone provide limited evidence for safe and human-aligned driving. We conclude with open challenges in uncertainty-aware planning, learner-expert mismatch, runtime safety assurance, language-action grounding, world-model validation, and reproducible benchmarking.",
+      "abstract_zh": "端到端自主驾驶已从基于摄像头的控制回归发展为面向规划的系统，这些系统使用结构化表示、轨迹级输出以及越来越真实的评估协议。本文综述了这一转变，涵盖了行为克隆、条件模仿学习、特权蒸馏、鸟瞰视图（BEV）和向量化规划、统一的感知-预测-规划架构、基于世界模型的规划器，以及视觉-语言-动作系统。我们认为，现代端到端驾驶的关键区别不在于是否使用中间表示，而在于这些表示是否经过学习、监督和评估，以支持安全、可行且符合路线的规划。为了组织文献，我们沿着四个轴线综合现有方法：输入表示、规划输出、监督信号和评估协议。我们进一步考察基准测试从开放循环轨迹匹配到闭环仿真、非反应性真实日志评估、长尾测试以及人类偏好感知指标的转变。我们的分析强调，没有基准一致的评估，架构进展难以解读，而仅依赖位移基础的开放循环指标提供的证据有限，无法证明安全和与人类一致的驾驶。最后，我们总结了在不确定性感知规划、学习者与专家不匹配、运行时安全保障、语言-动作基础、世界模型验证和可重复基准测试等方面的开放挑战。",
+      "authors": [
+        "Yanchen Guan",
+        "Xingcheng Liu",
+        "Bin Rao",
+        "Chengyue Wang",
+        "Guofa Li",
+        "Yunjian Li",
+        "Lishengsa Yue",
+        "Zhiyong Cui",
+        "Chengzhong Xu",
+        "Zhenning Li"
+      ],
+      "date": "2026-08-21",
+      "id": "2608.20111",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms",
+      "title_zh": "面向规划的端到端自主驾驶：架构、评估与新兴范式",
+      "url": "/daily/2026-08-21/#paper-2608-20111"
+    },
+    {
+      "abstract": "Learning-based global point cloud registration has achieved remarkable progress, yet its reliance on geometric representations makes existing methods sensitive to variations in point density, scan pattern, viewpoint, and sensor characteristics. We propose CVSD-Reg, a robust global LiDAR registration framework that distills visual semantic priors from a vision foundation model into LiDAR representations. In Stage 1, a Point Transformer V3 student learns from a frozen DINOv2 teacher through contrastive distillation and spherical-manifold alignment, which preserves the hyperspherical geometry of the teacher embedding space. Self-supervised InfoNCE consistency and soft $\\mathrm{SE}(3)$ invariance further encourage viewpoint-robust descriptors. In Stage 2, the distilled representation is adapted to registration through correspondence learning, density-aware point-dropout augmentation, and end-to-end pose optimization. With a single checkpoint, CVSD-Reg generalizes to both single-sensor and zero-shot cross-sensor scenarios without sensor-specific adaptation and remains entirely camera-free at inference. On KITTI, nuScenes, and HeLiPR, CVSD-Reg achieves strict success rate ( [email protected] \\,m/$1^\\circ$) of 97.7$\\%$, 99.0$\\%$, and 99.3$\\%$, respectively, including 97.3$\\%$ on sparse 16-beam Velodyne scans. It outperforms state-of-the-art geometric registration methods by up to 44.0 percentage points without requiring camera inputs or post-hoc ICP refinement.",
+      "abstract_zh": "基于学习的全局点云配准已取得显著进展，但其对几何表示的依赖使现有方法对点密度、扫描模式、视角和传感器特性等变化敏感。我们提出了CVSD-Reg，一个鲁棒的全局LiDAR配准框架，该框架将视觉基础模型中的视觉语义先验蒸馏到LiDAR表示中。在第一阶段，Point Transformer V3学生通过对比蒸馏和球面流形对齐从冻结的DINOv2教师中学习，保持教师嵌入空间的超球几何。自监督的InfoNCE一致性和软$ ext{SE}(3)$不变性进一步促进了视角鲁棒描述符的生成。在第二阶段，蒸馏表示通过对应学习、密度感知点丢弃增强和端到端姿态优化适应于配准。通过单个检查点，CVSD-Reg能够在不进行传感器特定适应的情况下，推广到单传感器和零样本跨传感器场景，并在推理时完全不依赖于相机。在KITTI、nuScenes和HeLiPR数据集上，CVSD-Reg分别达到了97.7 ext{%}、99.0 ext{%}和99.3 ext{%}的严格成功率( [email protected] m/$1^ ext{°}$)，其中在稀疏的16束Velodyne扫描中也达到了97.3 ext{%}。它在不需要相机输入或后处理ICP优化的情况下，超越了最先进的几何配准方法，提升幅度高达44.0个百分点。",
+      "authors": [
+        "Eunsoo Im",
+        "Junghun Suh",
+        "Gyeonggwan Lee",
+        "Seunghwan Hong"
+      ],
+      "date": "2026-08-21",
+      "id": "2608.19536",
+      "tags": [
+        "LiDAR/点云",
+        "深度/几何",
+        "端到端驾驶"
+      ],
+      "title": "CVSD-Reg: Cross-Modal Visual Semantic Prior Distillation for Robust LiDAR Registration",
+      "title_zh": "CVSD-Reg：用于鲁棒LiDAR配准的跨模态视觉语义先验蒸馏",
+      "url": "/daily/2026-08-21/#paper-2608-19536"
+    },
+    {
+      "abstract": "Scan-to-map LiDAR odometry drifts unboundedly along the unobservable axes of geometrically degenerate environments like tunnels and corridors, and existing degeneracy handling requires environment-specific parameter tuning. This paper presents a parameter-free approach. We show that in voxelized GICP the Gauss--Newton (GN) Hessian masks translational degeneracy, because covariance regularization keeps the translation block artificially well-conditioned. We bypass this with a regularization-free voxel-normal localizability field and two of its statistics: a normalized fraction $f_0$ detecting directional anisotropy, and an absolute per-voxel mass $\\lambda_0$ distinguishing information absence (tunnels) from dilution (dense open scenes). A temporal-median gate combines both to trigger Fisher-information correspondence weighting. Calibrated once by fixed rules on two short sequences and then frozen, LF-GICP achieves the lowest KITTI relative translation error ($0.865\\%$) under an identical evaluation protocol against re-run baselines, outperforms them on GEODE tunnels and MulRan, leads the HeLiPR mean, and generalizes across four sensor types without re-tuning. We further demonstrate empirically that straight, uniform tunnels remain unobservable along their axis for LiDAR-only registration.",
+      "abstract_zh": "扫描到地图的激光雷达里程计在几何退化环境（如隧道和走廊）中沿不可观测轴无界漂移，而现有的退化处理方法需要针对特定环境进行参数调优。本文提出了一种无参数的方法。我们表明，在体素化的广义迭代最近点（GICP）中，高斯-牛顿（GN）海森矩阵掩盖了平移退化，因为协方差正则化使得平移块在人工上保持良好的条件。我们通过一种无正则化的体素法线可定位场及其两个统计量来绕过这一点：一个归一化分数 $f_0$ 用于检测方向各向异性，以及一个绝对每体素质量 $\beta_0$ 用于区分信息缺失（隧道）与稀释（密集开放场景）。时间中位数门结合两者以触发费舍尔信息对应加权。LF-GICP 在两个短序列上通过固定规则进行一次标定后保持不变，在相同评估协议下实现了最低的KITTI相对平移误差（$0.865 ext{%}$），在GEODE隧道和MulRan上表现优于基线，领先HeLiPR均值，并在四种传感器类型上无须重新调优地实现了泛化。我们进一步通过实验证明，直线、均匀的隧道在激光雷达单独注册时沿其轴线仍然不可观测。",
+      "authors": [
+        "Eunsoo Im"
+      ],
+      "date": "2026-08-21",
+      "id": "2608.19522",
+      "tags": [
+        "LiDAR/点云",
+        "地图/定位",
+        "感知"
+      ],
+      "title": "LF-GICP: Parameter-Free Degeneracy-Aware LiDAR Odometry via a Voxel-Normal Localizability Field",
+      "title_zh": "LF-GICP：一种无参数的考虑退化的激光雷达里程计方法，通过体素法线可定位场",
+      "url": "/daily/2026-08-21/#paper-2608-19522"
+    },
+    {
+      "abstract": "Reliable performance evaluation is a central bottleneck for deploying robot-learning policies in real-world conditions. Real-world testing is faithful but costly and difficult to scale, whereas simulation-based testing scales easily but is inevitably biased by the sim-to-real gap. Existing simulation-augmented methods combine limited real-world rollouts with abundant simulation proxies, but focus on performance averaged over initial conditions and deployment settings. Such population-level averages obscure scenario-specific variation and provide limited guidance about when and where a policy can be safely deployed. We propose SCAPE, a scenario-conditioned simulation-augmented policy evaluation framework that predicts scenario-conditioned real-world policy performance using limited paired sim-and-real samples and large-scale simulation rollouts. SCAPE corrects sim-to-real bias in simulation labels before training the prediction model and calibrates prediction uncertainty through conformal prediction. We validate SCAPE on autonomous driving and quadruped velocity tracking. In sim-to-sim studies, SCAPE reduces scenario-level prediction error by 4.9%/34.7% (driving) and 14.5%/27.7% (quadruped) relative to scene-conditioned neural and aggregate statistical baselines on average. We further evaluate a velocity-tracking policy deployed on a physical Unitree Go2. SCAPE also improves testing sample efficiency, produces narrower calibrated prediction intervals, generalizes better to out-of-distribution scenarios, and enables fine-grained deployment strategies.",
+      "abstract_zh": "可靠的性能评估是将机器人学习政策部署到现实世界条件中的一个主要瓶颈。现实世界测试真实但成本高昂且难以扩展，而基于仿真的测试则易于扩展，但不可避免地受到仿真与现实之间差距的偏见。现有的仿真增强方法将有限的现实世界实验与丰富的仿真代理结合，但主要关注于在初始条件和部署设置下的平均性能。这种基于人群的平均值掩盖了特定情景的变化，并对政策何时何地可以安全部署提供了有限的指导。我们提出了SCAPE，一个情景条件下的仿真增强政策评估框架，该框架利用有限的配对仿真和现实样本以及大规模仿真实验来预测情景条件下的现实世界政策性能。SCAPE在训练预测模型之前校正仿真标签中的仿真与现实偏见，并通过符合预测来校准预测的不确定性。我们在自主驾驶和四足动物速度跟踪上验证了SCAPE。在仿真到仿真的研究中，SCAPE相对于场景条件神经网络和聚合统计基线平均减少了4.9%/34.7%（驾驶）和14.5%/27.7%（四足动物）的情景级预测误差。我们进一步评估了在物理Unitree Go2上部署的速度跟踪政策。SCAPE还提高了测试样本效率，产生了更窄的校准预测区间，更好地推广到分布外场景，并实现了细粒度的部署策略。",
+      "authors": [
+        "Dijie Zhu",
+        "Seunghun Oh",
+        "Ruopeng Huang",
+        "Zhiyu Huang",
+        "Jiaqi Ma",
+        "Chen Tang"
+      ],
+      "date": "2026-08-21",
+      "id": "2608.19425",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "感知"
+      ],
+      "title": "SCAPE: Scenario-Conditioned Simulation-Augmented Policy Evaluation",
+      "title_zh": "SCAPE：情景条件下的仿真增强政策评估",
+      "url": "/daily/2026-08-21/#paper-2608-19425"
+    },
+    {
+      "abstract": "While modern autonomous driving systems excel at perception tasks such as object detection and trajectory prediction, they lack the high-level causal reasoning required to interpret traffic accidents. In particular, determining responsibility, such as identifying who is at fault and which traffic rule was violated, remains largely unexplored in current benchmarks. To this end, we introduce CAViAR (Causal Accident Video and Incident Analysis Repository), a human-annotated dashcam benchmark comprising 2,249 real-world accident videos collected from CarCrashDataset (CCD) and Nexar. Each video is annotated with structured labels spanning environmental conditions, accident type, causal explanation, apparent At-Fault Agent, affected agent, and apparent rule-violation category. We benchmark state-of-the-art vision-language models (VLMs), including Cosmos-Reason2, Qwen3-VL, and InternVL3. Once class imbalance is accounted for with majority/random baselines and balanced metrics, perceptual competence is uneven--lighting is nearly solved, whereas weather and road-condition accuracy fall at or below the majority-class baseline---and all models degrade sharply on accident type and responsibility reasoning. Overall, CAViAR exposes a practical Perception--Reasoning Gap: current VLMs may recognize salient context, but do not reliably map visible agent actions to annotated rule-relevant responsibility categories in safety-critical driving scenarios. Code, annotation schema, prompts, and evaluation scripts are available at: https://github.com/nec-labs-ma/CAViAR",
+      "abstract_zh": "尽管现代自动驾驶系统在物体检测和轨迹预测等感知任务中表现出色，但它们缺乏解释交通事故所需的高级因果推理能力。特别是，确定责任，例如识别谁是过错方以及违反了哪条交通规则，在当前基准测试中仍然基本未被探索。为此，我们引入了CAViAR（因果事故视频与事件分析库），这是一个经过人工标注的行车记录仪基准数据集，包含从CarCrashDataset (CCD)和Nexar收集的2249个真实事故视频。每个视频都附有结构化标签，涵盖环境条件、事故类型、因果解释、明显的过错代理、受影响代理以及明显的规则违反类别。我们对最先进的视觉-语言模型（VLMs）进行了基准测试，包括Cosmos-Reason2、Qwen3-VL和InternVL3。在考虑到类不平衡的情况下，使用多数/随机基线和均衡指标，感知能力表现不均——光照问题几乎得到解决，而天气和道路状况的准确性则处于或低于多数类基线——所有模型在事故类型和责任推理上均表现出明显下降。总体而言，CAViAR揭示了一个实际的感知-推理差距：当前的VLMs可能识别显著的上下文，但在安全关键的驾驶场景中，无法可靠地将可见的代理行为映射到标注的与规则相关的责任类别。代码、标注模式、提示和评估脚本可在以下网址获取：https://github.com/nec-labs-ma/CAViAR",
+      "authors": [
+        "Sparsh Garg",
+        "Yi-Wen Chen",
+        "Vijay Kumar B G",
+        "Abhishek Aich"
+      ],
+      "date": "2026-08-21",
+      "id": "2608.19380",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "预测/规划"
+      ],
+      "title": "CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios",
+      "title_zh": "CAViAR：用于现实场景中细粒度事故推理的因果视频数据集",
+      "url": "/daily/2026-08-21/#paper-2608-19380"
+    },
+    {
+      "abstract": "Map matching is a key technology connecting positioning data with high precision road networks, but it faces challenges in noise robustness, cross regional transfer, and interpretability. To addr ess the limitations of existing methods in local global fusion, dynamic road network adaptation, and reliance on black box mod els, this paper proposes SceneGTMM, a transferable GNN Transformer dual graph interaction map matching framework based on a conformal mapping based scene relative strategy. 1) Conformal mapping based scene relative strategy: constructs trajectory centric local coordinate systems to reduce dependence on the training road network, supporting cross regional transfer and dynamic road network updates; 2) GNN Transformer dual graph interaction architecture: a GNN modeled road graph captures local topological constraints, while a Transformer modeled trajectory graph captures global temporal dependencies, and cross graph attention achieves noise suppression and semantic alignment; 3) CRF enhanced structured prediction: combines the global context of the Transformer with the topological transition constraints of CRF to improve path connectivity and robustness. Experiments show that SceneGTM achieves over 80% accuracy on multi source trajectories with positioning errors of 16 50 meters, representing a 5.3% improvement over HMM. In cross city transfer scenarios, it outperforms MTrajRec, GraphMM, and TMM, and enhances interpretability through attention and relative coordinate visualization. This study provides a new paradigm for high precision, transferable map matching for real time traffic perception and autonomous driving path planning.",
+      "abstract_zh": "地图匹配是将定位数据与高精度道路网络连接的关键技术，但面临噪声鲁棒性、跨区域转移和可解释性等挑战。为了解决现有方法在局部与全局融合、动态道路网络适应以及对黑箱模型的依赖等方面的局限性，本文提出了SceneGTMM，一种基于共形映射的场景相对策略的可转移GNN Transformer双图交互地图匹配框架。1）基于共形映射的场景相对策略：构建以轨迹为中心的局部坐标系统，以减少对训练道路网络的依赖，支持跨区域转移和动态道路网络更新；2）GNN Transformer双图交互架构：GNN建模的道路图捕捉局部拓扑约束，而Transformer建模的轨迹图捕捉全局时间依赖性，跨图注意力实现噪声抑制和语义对齐；3）CRF增强的结构化预测：结合Transformer的全局上下文与CRF的拓扑转移约束，以提高路径连通性和鲁棒性。实验表明，SceneGTMM在定位误差为16至50米的多源轨迹上实现了超过80%的准确率，相较于HMM提高了5.3%。在跨城市转移场景中，其性能优于MTrajRec、GraphMM和TMM，并通过注意力和相对坐标可视化增强了可解释性。本研究为实时交通感知和自主驾驶路径规划提供了高精度、可转移地图匹配的新范式。",
+      "authors": [
+        "Yongliang Zhang",
+        "Feng Song",
+        "Ji Chen",
+        "Lishuai Guo",
+        "Yong Deng",
+        "Yue Zheng",
+        "Tianyi Liu",
+        "Zhixiong Chen",
+        "Qixin Zhang"
+      ],
+      "date": "2026-08-21",
+      "id": "2608.19298",
+      "tags": [
+        "预测/规划",
+        "地图/定位",
+        "感知"
+      ],
+      "title": "SceneGTMM: A Conformal Mapping-based Scene-Aware Transferable GNN-Transformer Dual-Graph Interaction Framework for Map Matching",
+      "title_zh": "SceneGTMM：基于共形映射的场景感知可转移GNN-Transformer双图交互框架用于地图匹配",
+      "url": "/daily/2026-08-21/#paper-2608-19298"
+    },
     {
       "abstract": "Ground Penetrating Radar (GPR) is a widely adopted non-destructive sensing technology for subsurface inspection in civil and transportation engineering. Despite its potential for pavement condition assessment, the large-scale application of GPR in automated inspection has two key challenges: the scarcity of annotated real-world datasets and the lack of deep learning models designed for the unique characteristics of 3-Dimensional (3D) GPR data. This study addresses these limitations by firstly introducing a cost-effective data preparation pipeline that integrates orthomosaic Red Green Blue (RGB) imagery with 3D GPR scans to generate annotated 3D GPR datasets. The proposed method uses the aligned segments of RGB and GPR data, using pavement surface images as a reference to transfer labels of surface-visible defects to corresponding GPR segments, enabling efficient large-scale annotation in a real-world dataset collected on a highway section under operation. In addition to the dataset contribution, we propose a specialised 3D Convolutional Neural Network (CNN) architecture incorporating residual connections, mixed convolutional kernel sizes, and both depthwise and channelwise attention mechanisms to enhance feature representation and defect classification. The model is evaluated on binary classification tasks for detecting patch and crack defects in pavement structures. Experimental results demonstrate that the proposed network outperforms baseline architectures across multiple evaluation metrics. Ablation studies further confirm the effectiveness of the designed architectural components. This work contributes a scalable and practical method for real-world dataset generation, along with a novel deep learning framework.",
       "abstract_zh": "地面穿透雷达（Ground Penetrating Radar, GPR）是一种广泛应用于土木工程和交通工程的非破坏性检测技术，用于地下检查。尽管其在路面状况评估中的潜力巨大，但GPR在自动化检测中的大规模应用面临两个主要挑战：一是标注的真实世界数据集稀缺，二是缺乏针对三维（3D）GPR数据独特特征设计的深度学习模型。本研究通过首先引入一种经济高效的数据准备流程，解决了这些限制，该流程将正射影像红绿蓝（RGB）图像与3D GPR扫描结合，以生成标注的3D GPR数据集。所提出的方法利用RGB和GPR数据的对齐段，以路面表面图像作为参考，将表面可见缺陷的标签转移到相应的GPR段，从而实现对在运营中的高速公路段收集的真实世界数据集的高效大规模标注。除了数据集的贡献外，我们还提出了一种专门的3D卷积神经网络（Convolutional Neural Network, CNN）架构，结合了残差连接、混合卷积核大小以及深度和通道注意机制，以增强特征表示和缺陷分类。该模型在检测路面结构中的补丁和裂缝缺陷的二分类任务上进行了评估。实验结果表明，所提出的网络在多个评估指标上优于基线架构。消融研究进一步确认了所设计架构组件的有效性。本研究为真实世界数据集生成提供了一种可扩展且实用的方法，并提出了一种新颖的深度学习框架。",

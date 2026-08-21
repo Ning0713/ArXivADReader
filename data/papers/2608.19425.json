@@ -1,0 +1,58 @@
+{
+  "abstract": "Reliable performance evaluation is a central bottleneck for deploying robot-learning policies in real-world conditions. Real-world testing is faithful but costly and difficult to scale, whereas simulation-based testing scales easily but is inevitably biased by the sim-to-real gap. Existing simulation-augmented methods combine limited real-world rollouts with abundant simulation proxies, but focus on performance averaged over initial conditions and deployment settings. Such population-level averages obscure scenario-specific variation and provide limited guidance about when and where a policy can be safely deployed. We propose SCAPE, a scenario-conditioned simulation-augmented policy evaluation framework that predicts scenario-conditioned real-world policy performance using limited paired sim-and-real samples and large-scale simulation rollouts. SCAPE corrects sim-to-real bias in simulation labels before training the prediction model and calibrates prediction uncertainty through conformal prediction. We validate SCAPE on autonomous driving and quadruped velocity tracking. In sim-to-sim studies, SCAPE reduces scenario-level prediction error by 4.9%/34.7% (driving) and 14.5%/27.7% (quadruped) relative to scene-conditioned neural and aggregate statistical baselines on average. We further evaluate a velocity-tracking policy deployed on a physical Unitree Go2. SCAPE also improves testing sample efficiency, produces narrower calibrated prediction intervals, generalizes better to out-of-distribution scenarios, and enables fine-grained deployment strategies.",
+  "abstract_zh": "可靠的性能评估是将机器人学习政策部署到现实世界条件中的一个主要瓶颈。现实世界测试真实但成本高昂且难以扩展，而基于仿真的测试则易于扩展，但不可避免地受到仿真与现实之间差距的偏见。现有的仿真增强方法将有限的现实世界实验与丰富的仿真代理结合，但主要关注于在初始条件和部署设置下的平均性能。这种基于人群的平均值掩盖了特定情景的变化，并对政策何时何地可以安全部署提供了有限的指导。我们提出了SCAPE，一个情景条件下的仿真增强政策评估框架，该框架利用有限的配对仿真和现实样本以及大规模仿真实验来预测情景条件下的现实世界政策性能。SCAPE在训练预测模型之前校正仿真标签中的仿真与现实偏见，并通过符合预测来校准预测的不确定性。我们在自主驾驶和四足动物速度跟踪上验证了SCAPE。在仿真到仿真的研究中，SCAPE相对于场景条件神经网络和聚合统计基线平均减少了4.9%/34.7%（驾驶）和14.5%/27.7%（四足动物）的情景级预测误差。我们进一步评估了在物理Unitree Go2上部署的速度跟踪政策。SCAPE还提高了测试样本效率，产生了更窄的校准预测区间，更好地推广到分布外场景，并实现了细粒度的部署策略。",
+  "arxiv_id": "2608.19425",
+  "arxiv_url": "https://arxiv.org/abs/2608.19425v1",
+  "authors": [
+    "Dijie Zhu",
+    "Seunghun Oh",
+    "Ruopeng Huang",
+    "Zhiyu Huang",
+    "Jiaqi Ma",
+    "Chen Tang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-21#paper-2608-19425",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-21T14:07:54.308979+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.19425v1",
+  "published_at": "2026-08-19T20:24:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "sim-to-real",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-08-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.19425v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "SCAPE: Scenario-Conditioned Simulation-Augmented Policy Evaluation",
+  "title_zh": "SCAPE：情景条件下的仿真增强政策评估",
+  "translation_url": "https://hjfy.top/arxiv/2608.19425"
+}

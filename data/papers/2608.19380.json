@@ -1,0 +1,60 @@
+{
+  "abstract": "While modern autonomous driving systems excel at perception tasks such as object detection and trajectory prediction, they lack the high-level causal reasoning required to interpret traffic accidents. In particular, determining responsibility, such as identifying who is at fault and which traffic rule was violated, remains largely unexplored in current benchmarks. To this end, we introduce CAViAR (Causal Accident Video and Incident Analysis Repository), a human-annotated dashcam benchmark comprising 2,249 real-world accident videos collected from CarCrashDataset (CCD) and Nexar. Each video is annotated with structured labels spanning environmental conditions, accident type, causal explanation, apparent At-Fault Agent, affected agent, and apparent rule-violation category. We benchmark state-of-the-art vision-language models (VLMs), including Cosmos-Reason2, Qwen3-VL, and InternVL3. Once class imbalance is accounted for with majority/random baselines and balanced metrics, perceptual competence is uneven--lighting is nearly solved, whereas weather and road-condition accuracy fall at or below the majority-class baseline---and all models degrade sharply on accident type and responsibility reasoning. Overall, CAViAR exposes a practical Perception--Reasoning Gap: current VLMs may recognize salient context, but do not reliably map visible agent actions to annotated rule-relevant responsibility categories in safety-critical driving scenarios. Code, annotation schema, prompts, and evaluation scripts are available at: https://github.com/nec-labs-ma/CAViAR",
+  "abstract_zh": "尽管现代自动驾驶系统在物体检测和轨迹预测等感知任务中表现出色，但它们缺乏解释交通事故所需的高级因果推理能力。特别是，确定责任，例如识别谁是过错方以及违反了哪条交通规则，在当前基准测试中仍然基本未被探索。为此，我们引入了CAViAR（因果事故视频与事件分析库），这是一个经过人工标注的行车记录仪基准数据集，包含从CarCrashDataset (CCD)和Nexar收集的2249个真实事故视频。每个视频都附有结构化标签，涵盖环境条件、事故类型、因果解释、明显的过错代理、受影响代理以及明显的规则违反类别。我们对最先进的视觉-语言模型（VLMs）进行了基准测试，包括Cosmos-Reason2、Qwen3-VL和InternVL3。在考虑到类不平衡的情况下，使用多数/随机基线和均衡指标，感知能力表现不均——光照问题几乎得到解决，而天气和道路状况的准确性则处于或低于多数类基线——所有模型在事故类型和责任推理上均表现出明显下降。总体而言，CAViAR揭示了一个实际的感知-推理差距：当前的VLMs可能识别显著的上下文，但在安全关键的驾驶场景中，无法可靠地将可见的代理行为映射到标注的与规则相关的责任类别。代码、标注模式、提示和评估脚本可在以下网址获取：https://github.com/nec-labs-ma/CAViAR",
+  "arxiv_id": "2608.19380",
+  "arxiv_url": "https://arxiv.org/abs/2608.19380v1",
+  "authors": [
+    "Sparsh Garg",
+    "Yi-Wen Chen",
+    "Vijay Kumar B G",
+    "Abhishek Aich"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-21#paper-2608-19380",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-21T14:07:54.328516+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.19380v1",
+  "published_at": "2026-08-19T18:51:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-08-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.19380v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "预测/规划"
+    ]
+  },
+  "title": "CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios",
+  "title_zh": "CAViAR：用于现实场景中细粒度事故推理的因果视频数据集",
+  "translation_url": "https://hjfy.top/arxiv/2608.19380"
+}

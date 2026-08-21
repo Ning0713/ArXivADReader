@@ -1,0 +1,62 @@
+{
+  "abstract": "End-to-end autonomous driving has evolved from camera-to-control regression toward planning-oriented systems that use structured representations, trajectory-level outputs, and increasingly realistic evaluation protocols. This survey reviews this transition across behavior cloning, conditional imitation learning, privileged distillation, BEV and vectorized planning, unified perception-prediction-planning architectures, world-model-based planners, and vision-language-action systems. We argue that the key distinction in modern end-to-end driving is not whether intermediate representations are used, but whether they are learned, supervised, and evaluated to support safe, feasible, and route-compliant planning. To organize the literature, we synthesize existing methods along four axes: input representation, planning output, supervision signal, and evaluation protocol. We further examine the benchmark shift from open-loop trajectory matching to closed-loop simulation, non-reactive real-log evaluation, long-tail testing, and human-preference-aware metrics. Our analysis highlights that architectural progress is difficult to interpret without benchmark-consistent evaluation, and that displacement-based open-loop metrics alone provide limited evidence for safe and human-aligned driving. We conclude with open challenges in uncertainty-aware planning, learner-expert mismatch, runtime safety assurance, language-action grounding, world-model validation, and reproducible benchmarking.",
+  "abstract_zh": "端到端自主驾驶已从基于摄像头的控制回归发展为面向规划的系统，这些系统使用结构化表示、轨迹级输出以及越来越真实的评估协议。本文综述了这一转变，涵盖了行为克隆、条件模仿学习、特权蒸馏、鸟瞰视图（BEV）和向量化规划、统一的感知-预测-规划架构、基于世界模型的规划器，以及视觉-语言-动作系统。我们认为，现代端到端驾驶的关键区别不在于是否使用中间表示，而在于这些表示是否经过学习、监督和评估，以支持安全、可行且符合路线的规划。为了组织文献，我们沿着四个轴线综合现有方法：输入表示、规划输出、监督信号和评估协议。我们进一步考察基准测试从开放循环轨迹匹配到闭环仿真、非反应性真实日志评估、长尾测试以及人类偏好感知指标的转变。我们的分析强调，没有基准一致的评估，架构进展难以解读，而仅依赖位移基础的开放循环指标提供的证据有限，无法证明安全和与人类一致的驾驶。最后，我们总结了在不确定性感知规划、学习者与专家不匹配、运行时安全保障、语言-动作基础、世界模型验证和可重复基准测试等方面的开放挑战。",
+  "arxiv_id": "2608.20111",
+  "arxiv_url": "https://arxiv.org/abs/2608.20111v1",
+  "authors": [
+    "Yanchen Guan",
+    "Xingcheng Liu",
+    "Bin Rao",
+    "Chengyue Wang",
+    "Guofa Li",
+    "Yunjian Li",
+    "Lishengsa Yue",
+    "Zhiyong Cui",
+    "Chengzhong Xu",
+    "Zhenning Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-21#paper-2608-20111",
+  "categories": [
+    "cs.RO",
+    "cs.ET"
+  ],
+  "fetched_at": "2026-08-21T14:07:54.324208+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.20111v1",
+  "published_at": "2026-08-20T14:41:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-08-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.20111v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms",
+  "title_zh": "面向规划的端到端自主驾驶：架构、评估与新兴范式",
+  "translation_url": "https://hjfy.top/arxiv/2608.20111"
+}

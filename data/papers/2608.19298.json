@@ -1,0 +1,63 @@
+{
+  "abstract": "Map matching is a key technology connecting positioning data with high precision road networks, but it faces challenges in noise robustness, cross regional transfer, and interpretability. To addr ess the limitations of existing methods in local global fusion, dynamic road network adaptation, and reliance on black box mod els, this paper proposes SceneGTMM, a transferable GNN Transformer dual graph interaction map matching framework based on a conformal mapping based scene relative strategy. 1) Conformal mapping based scene relative strategy: constructs trajectory centric local coordinate systems to reduce dependence on the training road network, supporting cross regional transfer and dynamic road network updates; 2) GNN Transformer dual graph interaction architecture: a GNN modeled road graph captures local topological constraints, while a Transformer modeled trajectory graph captures global temporal dependencies, and cross graph attention achieves noise suppression and semantic alignment; 3) CRF enhanced structured prediction: combines the global context of the Transformer with the topological transition constraints of CRF to improve path connectivity and robustness. Experiments show that SceneGTM achieves over 80% accuracy on multi source trajectories with positioning errors of 16 50 meters, representing a 5.3% improvement over HMM. In cross city transfer scenarios, it outperforms MTrajRec, GraphMM, and TMM, and enhances interpretability through attention and relative coordinate visualization. This study provides a new paradigm for high precision, transferable map matching for real time traffic perception and autonomous driving path planning.",
+  "abstract_zh": "地图匹配是将定位数据与高精度道路网络连接的关键技术，但面临噪声鲁棒性、跨区域转移和可解释性等挑战。为了解决现有方法在局部与全局融合、动态道路网络适应以及对黑箱模型的依赖等方面的局限性，本文提出了SceneGTMM，一种基于共形映射的场景相对策略的可转移GNN Transformer双图交互地图匹配框架。1）基于共形映射的场景相对策略：构建以轨迹为中心的局部坐标系统，以减少对训练道路网络的依赖，支持跨区域转移和动态道路网络更新；2）GNN Transformer双图交互架构：GNN建模的道路图捕捉局部拓扑约束，而Transformer建模的轨迹图捕捉全局时间依赖性，跨图注意力实现噪声抑制和语义对齐；3）CRF增强的结构化预测：结合Transformer的全局上下文与CRF的拓扑转移约束，以提高路径连通性和鲁棒性。实验表明，SceneGTMM在定位误差为16至50米的多源轨迹上实现了超过80%的准确率，相较于HMM提高了5.3%。在跨城市转移场景中，其性能优于MTrajRec、GraphMM和TMM，并通过注意力和相对坐标可视化增强了可解释性。本研究为实时交通感知和自主驾驶路径规划提供了高精度、可转移地图匹配的新范式。",
+  "arxiv_id": "2608.19298",
+  "arxiv_url": "https://arxiv.org/abs/2608.19298v1",
+  "authors": [
+    "Yongliang Zhang",
+    "Feng Song",
+    "Ji Chen",
+    "Lishuai Guo",
+    "Yong Deng",
+    "Yue Zheng",
+    "Tianyi Liu",
+    "Zhixiong Chen",
+    "Qixin Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-21#paper-2608-19298",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-21T14:07:54.327087+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.19298v1",
+  "published_at": "2026-08-19T16:46:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路",
+      "path planning"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 67
+  },
+  "seen_dates": [
+    "2026-08-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.19298v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "感知"
+    ]
+  },
+  "title": "SceneGTMM: A Conformal Mapping-based Scene-Aware Transferable GNN-Transformer Dual-Graph Interaction Framework for Map Matching",
+  "title_zh": "SceneGTMM：基于共形映射的场景感知可转移GNN-Transformer双图交互框架用于地图匹配",
+  "translation_url": "https://hjfy.top/arxiv/2608.19298"
+}

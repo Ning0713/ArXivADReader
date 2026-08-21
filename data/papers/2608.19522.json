@@ -1,0 +1,47 @@
+{
+  "abstract": "Scan-to-map LiDAR odometry drifts unboundedly along the unobservable axes of geometrically degenerate environments like tunnels and corridors, and existing degeneracy handling requires environment-specific parameter tuning. This paper presents a parameter-free approach. We show that in voxelized GICP the Gauss--Newton (GN) Hessian masks translational degeneracy, because covariance regularization keeps the translation block artificially well-conditioned. We bypass this with a regularization-free voxel-normal localizability field and two of its statistics: a normalized fraction $f_0$ detecting directional anisotropy, and an absolute per-voxel mass $\\lambda_0$ distinguishing information absence (tunnels) from dilution (dense open scenes). A temporal-median gate combines both to trigger Fisher-information correspondence weighting. Calibrated once by fixed rules on two short sequences and then frozen, LF-GICP achieves the lowest KITTI relative translation error ($0.865\\%$) under an identical evaluation protocol against re-run baselines, outperforms them on GEODE tunnels and MulRan, leads the HeLiPR mean, and generalizes across four sensor types without re-tuning. We further demonstrate empirically that straight, uniform tunnels remain unobservable along their axis for LiDAR-only registration.",
+  "abstract_zh": "扫描到地图的激光雷达里程计在几何退化环境（如隧道和走廊）中沿不可观测轴无界漂移，而现有的退化处理方法需要针对特定环境进行参数调优。本文提出了一种无参数的方法。我们表明，在体素化的广义迭代最近点（GICP）中，高斯-牛顿（GN）海森矩阵掩盖了平移退化，因为协方差正则化使得平移块在人工上保持良好的条件。我们通过一种无正则化的体素法线可定位场及其两个统计量来绕过这一点：一个归一化分数 $f_0$ 用于检测方向各向异性，以及一个绝对每体素质量 $\beta_0$ 用于区分信息缺失（隧道）与稀释（密集开放场景）。时间中位数门结合两者以触发费舍尔信息对应加权。LF-GICP 在两个短序列上通过固定规则进行一次标定后保持不变，在相同评估协议下实现了最低的KITTI相对平移误差（$0.865 ext{%}$），在GEODE隧道和MulRan上表现优于基线，领先HeLiPR均值，并在四种传感器类型上无须重新调优地实现了泛化。我们进一步通过实验证明，直线、均匀的隧道在激光雷达单独注册时沿其轴线仍然不可观测。",
+  "arxiv_id": "2608.19522",
+  "arxiv_url": "https://arxiv.org/abs/2608.19522v1",
+  "authors": [
+    "Eunsoo Im"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-21#paper-2608-19522",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-21T14:07:54.311866+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.19522v1",
+  "published_at": "2026-08-20T00:36:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-08-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.19522v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "地图/定位",
+      "感知"
+    ]
+  },
+  "title": "LF-GICP: Parameter-Free Degeneracy-Aware LiDAR Odometry via a Voxel-Normal Localizability Field",
+  "title_zh": "LF-GICP：一种无参数的考虑退化的激光雷达里程计方法，通过体素法线可定位场",
+  "translation_url": "https://hjfy.top/arxiv/2608.19522"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Learning-based global point cloud registration has achieved remarkable progress, yet its reliance on geometric representations makes existing methods sensitive to variations in point density, scan pattern, viewpoint, and sensor characteristics. We propose CVSD-Reg, a robust global LiDAR registration framework that distills visual semantic priors from a vision foundation model into LiDAR representations. In Stage 1, a Point Transformer V3 student learns from a frozen DINOv2 teacher through contrastive distillation and spherical-manifold alignment, which preserves the hyperspherical geometry of the teacher embedding space. Self-supervised InfoNCE consistency and soft $\\mathrm{SE}(3)$ invariance further encourage viewpoint-robust descriptors. In Stage 2, the distilled representation is adapted to registration through correspondence learning, density-aware point-dropout augmentation, and end-to-end pose optimization. With a single checkpoint, CVSD-Reg generalizes to both single-sensor and zero-shot cross-sensor scenarios without sensor-specific adaptation and remains entirely camera-free at inference. On KITTI, nuScenes, and HeLiPR, CVSD-Reg achieves strict success rate ( [email protected] \\,m/$1^\\circ$) of 97.7$\\%$, 99.0$\\%$, and 99.3$\\%$, respectively, including 97.3$\\%$ on sparse 16-beam Velodyne scans. It outperforms state-of-the-art geometric registration methods by up to 44.0 percentage points without requiring camera inputs or post-hoc ICP refinement.",
+  "abstract_zh": "基于学习的全局点云配准已取得显著进展，但其对几何表示的依赖使现有方法对点密度、扫描模式、视角和传感器特性等变化敏感。我们提出了CVSD-Reg，一个鲁棒的全局LiDAR配准框架，该框架将视觉基础模型中的视觉语义先验蒸馏到LiDAR表示中。在第一阶段，Point Transformer V3学生通过对比蒸馏和球面流形对齐从冻结的DINOv2教师中学习，保持教师嵌入空间的超球几何。自监督的InfoNCE一致性和软$ ext{SE}(3)$不变性进一步促进了视角鲁棒描述符的生成。在第二阶段，蒸馏表示通过对应学习、密度感知点丢弃增强和端到端姿态优化适应于配准。通过单个检查点，CVSD-Reg能够在不进行传感器特定适应的情况下，推广到单传感器和零样本跨传感器场景，并在推理时完全不依赖于相机。在KITTI、nuScenes和HeLiPR数据集上，CVSD-Reg分别达到了97.7 ext{%}、99.0 ext{%}和99.3 ext{%}的严格成功率( [email protected] m/$1^ ext{°}$)，其中在稀疏的16束Velodyne扫描中也达到了97.3 ext{%}。它在不需要相机输入或后处理ICP优化的情况下，超越了最先进的几何配准方法，提升幅度高达44.0个百分点。",
+  "arxiv_id": "2608.19536",
+  "arxiv_url": "https://arxiv.org/abs/2608.19536v1",
+  "authors": [
+    "Eunsoo Im",
+    "Junghun Suh",
+    "Gyeonggwan Lee",
+    "Seunghwan Hong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-21#paper-2608-19536",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-21T14:07:54.332151+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.19536v1",
+  "published_at": "2026-08-20T01:17:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-08-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.19536v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "端到端驾驶"
+    ]
+  },
+  "title": "CVSD-Reg: Cross-Modal Visual Semantic Prior Distillation for Robust LiDAR Registration",
+  "title_zh": "CVSD-Reg：用于鲁棒LiDAR配准的跨模态视觉语义先验蒸馏",
+  "translation_url": "https://hjfy.top/arxiv/2608.19536"
+}
