@@ -1,0 +1,64 @@
+{
+  "abstract": "Reliable traffic sign detection is a prerequisite for the global deployment of autonomous driving systems, where regulatory compliance and road safety depend on perceiving signs correctly across regions, ranges, and weather conditions. Despite recent progress, vision-based methods continue to face three fundamental limitations: poor cross-regional generalization due to high diversity across countries, degraded performance on small-object detection at long ranges (traffic signs occupy as little as $10{\\times}10$ pixels at 200m), and fragile temporal tracking under the strongly non-linear perspective distortion that occurs as a vehicle approaches a sign. In this paper, we address the problem of robust, long-range, region-agnostic traffic sign perception by combining camera and Light Detection and Ranging (LiDAR) sensing. We present a multi-modal detection framework whose Intensity-Aware Deformable Fusion module aligns retro-reflective LiDAR cues with camera features, anchoring detection on geometric invariants rather than region-specific visual appearance. We further introduce a dual motion-model tracker that explicitly accounts for non-linear perspective transformations during vehicle approach, substantially improving temporal consistency over linear motion assumptions. Additionally, we develop a semantic attribute classification pipeline that estimates occlusion level, readability, sign embeddedness, and road relevance, providing actionable context to downstream planning. Extensive evaluation on our dataset, spanning 60+ countries and 2,500+ hours of driving data, shows that the proposed pipeline achieves an Object Miss Ratio (OMR) of 0.49% across 221,068 evaluation sequences, demonstrating globally generalizable traffic sign perception in commercial-grade autonomous driving systems.",
+  "abstract_zh": "可靠的交通标志检测是全球部署自动驾驶系统的前提，法规遵从和道路安全依赖于在不同地区、距离和天气条件下正确感知标志。尽管近期取得了一些进展，基于视觉的方法仍面临三大根本性限制：由于各国之间的高多样性，跨区域泛化能力差；在远距离小物体检测中的性能下降（在200米处，交通标志的面积仅为$10{ imes}10$像素）；以及在车辆接近标志时，由于强非线性透视失真导致的脆弱时间跟踪。本文通过结合摄像头和激光雷达（LiDAR）传感器，解决了鲁棒的、长距离、区域无关的交通标志感知问题。我们提出了一个多模态检测框架，其强度感知可变形融合模块将反射性LiDAR线索与摄像头特征对齐，使检测基于几何不变性，而非区域特定的视觉外观。我们进一步引入了一个双运动模型跟踪器，明确考虑车辆接近过程中非线性透视变换，从而显著提高了时间一致性，超越了线性运动假设。此外，我们开发了一个语义属性分类管道，估计遮挡程度、可读性、标志嵌入度和道路相关性，为下游规划提供可操作的上下文。在我们涵盖60多个国家和2500多个小时驾驶数据的数据集上进行的广泛评估表明，所提出的管道在221,068个评估序列中实现了0.49%的物体漏检率（OMR），展示了在商业级自动驾驶系统中全球可泛化的交通标志感知能力。",
+  "arxiv_id": "2608.20874",
+  "arxiv_url": "https://arxiv.org/abs/2608.20874v1",
+  "authors": [
+    "Meda Lazar",
+    "Sourab Sridhar",
+    "Shashwata Gupta",
+    "Alexandra Tripcea",
+    "Varun Ravi",
+    "Senthil Yogamani"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-24#paper-2608-20874",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-24T14:13:20.441628+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.20874v1",
+  "published_at": "2026-08-21T08:51:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.20874v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "预测/规划"
+    ]
+  },
+  "title": "Multi-Modal Traffic Sign Detection with Semantic Attributes for Autonomous Driving",
+  "title_zh": "基于语义属性的多模态交通标志检测用于自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.20874"
+}

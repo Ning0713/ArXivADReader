@@ -1,0 +1,60 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models have emerged as a powerful paradigm for end-to-end autonomous driving by jointly integrating perception, reasoning, and decision making within a unified multimodal framework. However, most existing VLA models formulate end-to-end autonomous driving as a visual question answering task, leading to unreliable and less interpretable decision reasoning. In addition, they fail to establish effective multi-modal interaction across heterogeneous sensors, thereby limiting robust scene perception and reliable driving reasoning in long-tail driving scenarios. To this end, we propose a robust VLA-based end-to-end autonomous driving system that combines multi-modality interaction with multi-trajectory planning and optimization, enabling more reliable, interpretable, and safer driving decisions. Our method comprises three core components: (1) Affinity-Guided Optimal Transport for main-auxiliary modality two-way interaction; (2) Distribution-Consistent Modality Transfer for heterogeneous modality distribution transfer and cross-modal interaction; (3) Multi-modal Multi-Trajectory Planning along with Perception-Oriented Trajectory Refinement for better driving decisions to long-tail driving scenarios. Experimental results in open-loop and closed-loop datasets demonstrate improvements in safety long-horizon driving reasoning and road scene perception over existing driving systems, highlighting the ability of our mutli-modality interaction and multi-trajectory planning and optimization for scalable VLA-based systems.",
+  "abstract_zh": "视觉-语言-行动（VLA）模型已成为端到端自主驾驶的强大范式，通过在统一的多模态框架内共同整合感知、推理和决策。然而，大多数现有的VLA模型将端到端自主驾驶表述为视觉问答任务，这导致决策推理不可靠且可解释性较差。此外，它们未能在异构传感器之间建立有效的多模态交互，从而限制了在长尾驾驶场景中的稳健场景感知和可靠驾驶推理。为此，我们提出了一种基于VLA的稳健端到端自主驾驶系统，该系统结合了多模态交互与多轨迹规划和优化，从而实现更可靠、可解释和安全的驾驶决策。我们的方法包括三个核心组件：（1）基于亲和力的最优传输，用于主-辅助模态的双向交互；（2）分布一致的模态转移，用于异构模态分布转移和跨模态交互；（3）多模态多轨迹规划与感知导向的轨迹优化，以便在长尾驾驶场景中做出更好的驾驶决策。在开放环和闭环数据集上的实验结果表明，与现有驾驶系统相比，我们的方法在安全性、长时间驾驶推理和道路场景感知方面有所改善，突显了我们多模态交互和多轨迹规划与优化在可扩展基于VLA的系统中的能力。",
+  "arxiv_id": "2608.20890",
+  "arxiv_url": "https://arxiv.org/abs/2608.20890v1",
+  "authors": [
+    "Jingtao Sun",
+    "Xiaohai He",
+    "Yike Zhang",
+    "Dong Huang",
+    "Yaonan Wang",
+    "Ajmal Mian",
+    "Mike Zheng Shou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-24#paper-2608-20890",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-24T14:13:20.444607+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.20890v1",
+  "published_at": "2026-08-21T09:06:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "道路",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 57
+  },
+  "seen_dates": [
+    "2026-08-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.20890v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "感知"
+    ]
+  },
+  "title": "A Collaborative Multi-Modality Interaction for VLA-based End-to-End Autonomous Driving",
+  "title_zh": "基于VLA的端到端自主驾驶的协同多模态交互",
+  "translation_url": "https://hjfy.top/arxiv/2608.20890"
+}

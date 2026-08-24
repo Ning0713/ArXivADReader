@@ -1,6 +1,237 @@
 {
-  "generated_at": "2026-08-21T14:09:19.413049+00:00",
+  "generated_at": "2026-08-24T14:14:51.913764+00:00",
   "items": [
+    {
+      "abstract": "Accurate prediction of off-road vehicle motion over deformable terrain remains challenging because sinkage, slip, and traction vary with local soil conditions. Existing learning-based kinodynamic models directly approximate vehicle-terrain interactions from data but do not explicitly represent soil mechanics and offer limited physical interpretability. To address these limitations, we present NeSAM, a neuro-symbolic framework that combines differentiable Bekker-Wong terramechanics with learned terrain representations and a Transformer-based residual dynamics model for long-horizon, six degree-of-freedom kinodynamic prediction. The terramechanics component models soil-dependent interaction forces, while the residual model corrects discrepancies between the analytical prediction and the observed vehicle dynamics. NeSAM further estimates physically meaningful soil parameters from terrain observations and updates them online using an extended Kalman filter. We evaluate NeSAM in Verti-Bench, a simulator built on the Chrono multiphysics engine, and validate its performance on a physical Verti-4-Wheeler platform. NeSAM improves prediction accuracy by up to 30% in simulation and 29% on real-world data relative to the strongest compared baselines. When integrated with a close-loop navigation controller, NeSAM further improves traversal success rate through online soil adaptation while reduces Hausdorff distance to the reference trajectory by 69.4%, indicating improved trajectory tracking accuracy.",
+      "abstract_zh": "在可变形地形上准确预测越野车辆的运动仍然具有挑战性，因为沉陷、滑移和牵引力会随着局部土壤条件而变化。现有的基于学习的动力学模型直接从数据中近似车辆与地形的交互，但并未明确表示土壤力学，并且物理可解释性有限。为了解决这些局限性，我们提出了NeSAM，一个神经符号框架，结合了可微分的Bekker-Wong土力学模型、学习到的地形表示和基于Transformer的残差动力学模型，用于长时间跨度的六自由度动力学预测。土力学组件建模了依赖于土壤的交互力，而残差模型则修正了分析预测与观察到的车辆动态之间的差异。NeSAM进一步从地形观测中估计物理意义明确的土壤参数，并使用扩展卡尔曼滤波器在线更新这些参数。我们在基于Chrono多物理引擎构建的Verti-Bench模拟器中评估NeSAM，并在物理Verti-4-Wheeler平台上验证其性能。与最强的对比基线相比，NeSAM在模拟中提高了预测精度达30%，在真实数据中提高了29%。当与闭环导航控制器集成时，NeSAM通过在线土壤适应进一步提高了穿越成功率，同时将Hausdorff距离减少了69.4%，表明轨迹跟踪精度得到了改善。",
+      "authors": [
+        "Chenhui Pan",
+        "Tong Xu",
+        "Francesco Cancelliere",
+        "Xuesu Xiao"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.21330",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "NeSAM: Neuro-Symbolic Kinodynamics with Soil Adaptation for Off-Road Mobility",
+      "title_zh": "NeSAM：具有土壤适应性的神经符号动力学模型用于越野移动",
+      "url": "/daily/2026-08-24/#paper-2608-21330"
+    },
+    {
+      "abstract": "Multi-modal object detection is essential for robust scene understanding in challenging conditions, including low-light and adverse environments. Recent vision foundation models (e.g., DINOv3) have exhibited strong representation capabilities, yet adapting them to multi-modal scenarios remains challenging. Existing dense cross-modal fusion strategies often force heterogeneous modalities to interact indiscriminately, which may introduce redundant information and disrupt the valuable pre-trained representations. To address this issue, we revisit multi-modal fusion from the perspective of socialized learning and propose adapter to DINOv3 (A2DINOv3), a multi-expert collaboration framework with a Socialized Collaboration Protocol (SCP). Specifically, RGB and infrared branches are modeled as heterogeneous experts that independently preserve their specialized knowledge while exchanging complementary information through selective and constrained interactions. This design mitigates harmful cross-modal interference and prevents degradation of pre-trained priors during adaptation. Furthermore, a zero-initialization strategy is introduced to gradually activate cross-modal collaboration, enabling a smooth transition from modality-specific learning to cooperative representation learning. Extensive experiments on four multi-modal benchmarks, including aerial detection (GAIIC), autonomous driving (FLIR), low-light surveillance (LLVIP), and diverse real-world scenarios (M3FD), demonstrate that A2DINOv3 consistently achieves state-of-the-art performance in multi-modal object detection.",
+      "abstract_zh": "多模态目标检测对于在低光照和恶劣环境等挑战条件下的稳健场景理解至关重要。近期的视觉基础模型（例如，DINOv3）展现了强大的表征能力，但将其适应于多模态场景仍然面临挑战。现有的密集跨模态融合策略往往强迫异构模态进行无差别的交互，这可能引入冗余信息并破坏有价值的预训练表征。为了解决这一问题，我们从社会化学习的角度重新审视多模态融合，并提出了DINOv3的适配器（A2DINOv3），这是一个具有社会化协作协议（SCP）的多专家协作框架。具体而言，RGB和红外分支被建模为异构专家，它们独立保留各自的专业知识，同时通过选择性和受限的交互交换互补信息。这一设计减轻了有害的跨模态干扰，并防止在适应过程中预训练先验的退化。此外，引入了一种零初始化策略，以逐步激活跨模态协作，从而实现从特定模态学习到合作表征学习的平滑过渡。在四个多模态基准测试（包括空中检测（GAIIC）、自动驾驶（FLIR）、低光监控（LLVIP）和多样化的真实场景（M3FD））上的广泛实验表明，A2DINOv3在多模态目标检测中始终实现了最先进的性能。",
+      "authors": [
+        "Jiekang Feng",
+        "Zhihe Fan",
+        "Yunqi Zhu",
+        "Xinjie Yao",
+        "Yueying Zhang",
+        "Yike Gao",
+        "Ranxin Li",
+        "Guanzuo Chen"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.21099",
+      "tags": [
+        "感知",
+        "多传感器融合",
+        "仿真/数据"
+      ],
+      "title": "A2DINOv3: Rethinking Multi-Modal Object Detection via Socialized Collaboration",
+      "title_zh": "A2DINOv3：通过社会化协作重新思考多模态目标检测",
+      "url": "/daily/2026-08-24/#paper-2608-21099"
+    },
+    {
+      "abstract": "Collaborative perception extends the sensing range of a single vehicle by fusing observations from nearby agents, which improves the robustness of autonomous driving. In realistic deployments, however, the received collaborator messages are often affected by both communication delay and relative-pose noise, which jointly cause stale observations, spatial misalignment, and unstable feature fusion. Existing methods usually address these issues from either the spatial or temporal side, but handling them jointly in a unified and efficient manner remains challenging. In this paper, we propose CoAnchor, an anchor-centric spatio-temporal alignment framework for asynchronous collaborative perception. Instead of directly reasoning on dense BEV features, CoAnchor builds sparse object-level spatio-temporal anchors as a shared interface for pose correction and tightly connects spatial refinement, temporal propagation, and current-time verification within one unified loop, while keeping the overall correction process lightweight. Extensive experiments on both simulated and real-world datasets illustrate that CoAnchor remains competitive under clean settings and improves the robustness under joint delay and pose perturbations with a favorable practical accuracy-efficiency trade-off.",
+      "abstract_zh": "协同感知通过融合来自附近代理的观测，扩展了单一车辆的感知范围，从而提高了自动驾驶的鲁棒性。然而，在实际应用中，接收到的协作消息通常受到通信延迟和相对姿态噪声的影响，这共同导致了过时的观测、空间错位和不稳定的特征融合。现有方法通常从空间或时间的角度解决这些问题，但以统一和高效的方式同时处理它们仍然具有挑战性。本文提出了CoAnchor，一种以锚点为中心的时空对齐框架，用于异步协同感知。CoAnchor并不是直接对密集的鸟瞰视图（BEV）特征进行推理，而是构建稀疏的对象级时空锚点，作为姿态校正的共享接口，并在一个统一的循环中紧密连接空间精细化、时间传播和当前时间验证，同时保持整体校正过程的轻量化。在模拟和真实世界数据集上的大量实验表明，CoAnchor在干净环境下仍然具有竞争力，并在联合延迟和姿态扰动下提高了鲁棒性，展现出良好的实际准确性与效率的权衡。",
+      "authors": [
+        "Chi Li",
+        "Rui Lin",
+        "Aobo Ji",
+        "Dongzhu Xu"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.21055",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "BEV/Occupancy"
+      ],
+      "title": "CoAnchor: Robust Collaborative Perception under Spatio-Temporal Misalignment via Object-Level Anchors",
+      "title_zh": "CoAnchor：通过对象级锚点实现时空错位下的鲁棒协同感知",
+      "url": "/daily/2026-08-24/#paper-2608-21055"
+    },
+    {
+      "abstract": "Vehicle-to-Everything (V2X) cooperation enables beyond-line-of-sight perception, mitigating occlusions in single-vehicle sensing. However, existing V2X benchmarks provide limited support for closed-loop evaluation and language-grounded supervision, hindering the development of vision-language models (VLMs) for end-to-end cooperative driving. To address these limitations, we introduce V2XBench, a simulation platform featuring synchronized ego--roadside sensing and closed-loop evaluation, together with Chat-V2XBench, a progressively structured VQA dataset for cooperative reasoning. Building upon this benchmark infrastructure, we propose AURORA, an end-to-end cooperative driving framework. Equipped with a dual-view perception architecture, AURORA mitigates spatial and semantic discrepancies across ego and roadside viewpoints through a query-level Cross-View Query Alignment and Fusion (CQAF) module. Leveraging the resulting unified tokens, a LoRA-adapted VLM bridges semantic reasoning and generative trajectory planning. Extensive closed-loop evaluations on V2XBench demonstrate that AURORA achieves state-of-the-art performance in heavily occluded scenarios, with a Route Completion rate of 98.21% and a Driving Score of 76.02, while requiring low roadside communication bandwidth. Ultimately, this work pioneers an extensible V2X--VLM paradigm, paving the way for next-generation cooperative autonomous driving.",
+      "abstract_zh": "车对一切（V2X）合作使得超视距感知成为可能，减轻了单车感知中的遮挡问题。然而，现有的V2X基准对闭环评估和基于语言的监督支持有限，阻碍了视觉-语言模型（VLM）在端到端协作驾驶中的发展。为了解决这些局限性，我们引入了V2XBench，这是一个具有同步自我-路边感知和闭环评估的仿真平台，同时推出了Chat-V2XBench，这是一个为协作推理而逐步构建的视觉问答（VQA）数据集。在此基准基础上，我们提出了AURORA，一个端到端的协作驾驶框架。AURORA配备了双视角感知架构，通过查询级别的跨视图查询对齐与融合（CQAF）模块，减轻了自我视角与路边视角之间的空间和语义差异。利用生成的统一标记，一个经过LoRA调整的VLM将语义推理与生成轨迹规划连接起来。在V2XBench上进行的大量闭环评估表明，AURORA在严重遮挡场景中实现了最先进的性能，路线完成率达到98.21%，驾驶得分为76.02，同时所需的路边通信带宽较低。最终，这项工作开创了一个可扩展的V2X-VLM范式，为下一代协作自主驾驶铺平了道路。",
+      "authors": [
+        "Yitao Xu",
+        "Tong Wu",
+        "Yiyan Wu",
+        "Guoji Xu",
+        "Yanbo Jiang",
+        "Jiahao Wang",
+        "Zehong Ke",
+        "Junkai Jiang",
+        "Fang Zhang",
+        "Jianqiang Wang"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.21032",
+      "tags": [
+        "仿真/数据",
+        "预测/规划",
+        "协同/V2X"
+      ],
+      "title": "Roadside-Cooperative Autonomous Driving: From Data Platform to Vision-Language End-to-End Reasoning",
+      "title_zh": "路边协作自主驾驶：从数据平台到视觉-语言端到端推理",
+      "url": "/daily/2026-08-24/#paper-2608-21032"
+    },
+    {
+      "abstract": "Video Joint Embedding Predictive Architecture (V-JEPA) learns powerful spatiotemporal representations from video through self-supervised latent feature prediction. However, V-JEPA is built around random-mask completion and deterministic regression, making it fundamentally ill-suited for autonomous driving planning that demands future-directed prediction tightly coupled with action. To address this, we rethink the V-JEPA paradigm and present WA-JEPA, a V-JEPA-native world-action model designed for autonomous driving planning. Instead of random spatiotemporal masking, WA-JEPA employs hybrid future-masked pre-training, where the model infers future latents from observed context. Departing from deterministic regression, we recast future prediction as conditional flow matching over latent futures, which substantially improves the model's ability to generate plausible future latents for downstream planning. Finally, a joint future-action predictor is proposed to denoise future scene tokens and ego trajectories together in a unified spatiotemporal latent space, allowing action supervision to directly shape planning-relevant world representations. Pre-trained on nuPlan videos and fine-tuned on NAVSIM, WA-JEPA reaches 91.7 EPDMS on NAVSIM-v2, surpassing the strongest end-to-end and world-action baselines by 1.6 and 1.3 EPDMS, and, without HUGSIM-specific fine-tuning, attains the best HD-Score of 0.4462 on the closed-loop HUGSIM benchmark under the same evaluation protocol. These results validate V-JEPA-native world-action modeling as a powerful and scalable paradigm for autonomous driving planning. Code is available at https://github.com/AFARI-Research/WA-JEPA.",
+      "abstract_zh": "视频联合嵌入预测架构（Video Joint Embedding Predictive Architecture, V-JEPA）通过自监督潜在特征预测从视频中学习强大的时空表示。然而，V-JEPA是围绕随机掩码补全和确定性回归构建的，这使其在需要与动作紧密结合的未来导向预测的自动驾驶规划中根本不适用。为了解决这个问题，我们重新思考了V-JEPA范式，并提出了WA-JEPA，一种为自动驾驶规划设计的V-JEPA原生世界-动作模型。WA-JEPA采用混合未来掩码预训练，而不是随机时空掩码，模型从观察到的上下文中推断未来潜在特征。与确定性回归不同，我们将未来预测重新表述为对潜在未来的条件流匹配，这显著提高了模型生成合理未来潜在特征以用于下游规划的能力。最后，提出了一种联合未来-动作预测器，以在统一的时空潜在空间中共同去噪未来场景标记和自我轨迹，使得动作监督能够直接塑造与规划相关的世界表示。在nuPlan视频上进行预训练，并在NAVSIM上进行微调，WA-JEPA在NAVSIM-v2上达到了91.7 EPDMS，超越了最强的端到端和世界-动作基线1.6和1.3 EPDMS，并且在没有HUGSIM特定微调的情况下，在相同评估协议下达到了闭环HUGSIM基准的最佳HD-Score 0.4462。这些结果验证了V-JEPA原生世界-动作建模作为自动驾驶规划的强大且可扩展的范式。代码可在 https://github.com/AFARI-Research/WA-JEPA 获取。",
+      "authors": [
+        "Xinlin Wang",
+        "Yujiao Xiang",
+        "Yuheng Zhou",
+        "Jingqi Wang",
+        "Minqing Huang",
+        "Jiajie Huang",
+        "Dongxu Wei",
+        "Tingguang Zhou",
+        "Xiyang Wang",
+        "Gong Chen",
+        "Zhi Xu",
+        "Feiyang Tan",
+        "Hangning Zhou",
+        "Mu Yang"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.20974",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "世界模型/生成"
+      ],
+      "title": "WA-JEPA: Rethinking the Video JEPA Paradigm for World-Action Modeling in Autonomous Driving",
+      "title_zh": "WA-JEPA：重新思考视频JEPA范式在自动驾驶中的世界-动作建模",
+      "url": "/daily/2026-08-24/#paper-2608-20974"
+    },
+    {
+      "abstract": "Virtual scenario-based testing is a key enabler for validating automated driving systems (ADS) and intelligent transport systems (ITS). However, executing large-scale test suites involving possibly thousands of scenarios remains labor-intensive and difficult to scale. This paper presents an end-to-end, DevOps-driven framework that automates build, deployment, and distributed execution of CARLA-based scenario tests of an ADS on a lightweight Kubernetes cluster. ROS 2 applications are packaged as standardized Kubernetes Helm charts generated from repository specifications, while entire simulation environments are composed declaratively via dynamic Helmfile manifests. The paper describes how a distributed testing workflow can be implemented in Argo Workflows to provision environments, aggregate and batch OpenSCENARIO test cases from configurable sources, execute scenarios in parallel across cluster nodes, and collect logs and resource metrics. In an evaluation on a multi-node K3s cluster running 200 scenarios, the best configuration speeds up end-to-end workflow time by more than a factor of eight compared to a sequential baseline. The results demonstrate significant gains in end-to-end execution time and quantify trade-offs between parallelism, orchestration overhead, and cluster stability. The framework is further demonstrated in a real-world ADS test application with connections to scenario sources and downstream evaluation modules. This demonstrates that the approach provides a strong foundation not only for scalable simulation testing, but also for generating traceable evidence that can support safety arguments.",
+      "abstract_zh": "基于虚拟场景的测试是验证自动驾驶系统（ADS）和智能交通系统（ITS）的关键手段。然而，执行涉及数千个场景的大规模测试套件仍然劳动密集且难以扩展。本文提出了一个端到端的、以DevOps驱动的框架，自动化构建、部署和在轻量级Kubernetes集群上分布式执行基于CARLA的ADS场景测试。ROS 2应用被打包为从代码库规范生成的标准化Kubernetes Helm图表，而整个仿真环境通过动态的Helmfile清单以声明方式组合。本文描述了如何在Argo Workflows中实现分布式测试工作流，以配置环境、从可配置源聚合和批处理OpenSCENARIO测试用例、在集群节点之间并行执行场景，并收集日志和资源指标。在对运行200个场景的多节点K3s集群的评估中，最佳配置的端到端工作流时间比顺序基线快了超过八倍。结果显示了端到端执行时间的显著提升，并量化了并行性、编排开销和集群稳定性之间的权衡。该框架在一个与场景源和下游评估模块连接的真实世界ADS测试应用中进一步得到了验证。这表明该方法不仅为可扩展的仿真测试提供了坚实的基础，还为生成可追溯的证据以支持安全论证提供了支持。",
+      "authors": [
+        "Christian Geller",
+        "Benedikt Haas",
+        "Lutz Eckstein"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.20904",
+      "tags": [
+        "端到端驾驶",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Scalable Distributed Simulation-Based Testing for Automated Driving Systems",
+      "title_zh": "可扩展的基于仿真的自动驾驶系统分布式测试",
+      "url": "/daily/2026-08-24/#paper-2608-20904"
+    },
+    {
+      "abstract": "Vision-Language-Action (VLA) models have emerged as a powerful paradigm for end-to-end autonomous driving by jointly integrating perception, reasoning, and decision making within a unified multimodal framework. However, most existing VLA models formulate end-to-end autonomous driving as a visual question answering task, leading to unreliable and less interpretable decision reasoning. In addition, they fail to establish effective multi-modal interaction across heterogeneous sensors, thereby limiting robust scene perception and reliable driving reasoning in long-tail driving scenarios. To this end, we propose a robust VLA-based end-to-end autonomous driving system that combines multi-modality interaction with multi-trajectory planning and optimization, enabling more reliable, interpretable, and safer driving decisions. Our method comprises three core components: (1) Affinity-Guided Optimal Transport for main-auxiliary modality two-way interaction; (2) Distribution-Consistent Modality Transfer for heterogeneous modality distribution transfer and cross-modal interaction; (3) Multi-modal Multi-Trajectory Planning along with Perception-Oriented Trajectory Refinement for better driving decisions to long-tail driving scenarios. Experimental results in open-loop and closed-loop datasets demonstrate improvements in safety long-horizon driving reasoning and road scene perception over existing driving systems, highlighting the ability of our mutli-modality interaction and multi-trajectory planning and optimization for scalable VLA-based systems.",
+      "abstract_zh": "视觉-语言-行动（VLA）模型已成为端到端自主驾驶的强大范式，通过在统一的多模态框架内共同整合感知、推理和决策。然而，大多数现有的VLA模型将端到端自主驾驶表述为视觉问答任务，这导致决策推理不可靠且可解释性较差。此外，它们未能在异构传感器之间建立有效的多模态交互，从而限制了在长尾驾驶场景中的稳健场景感知和可靠驾驶推理。为此，我们提出了一种基于VLA的稳健端到端自主驾驶系统，该系统结合了多模态交互与多轨迹规划和优化，从而实现更可靠、可解释和安全的驾驶决策。我们的方法包括三个核心组件：（1）基于亲和力的最优传输，用于主-辅助模态的双向交互；（2）分布一致的模态转移，用于异构模态分布转移和跨模态交互；（3）多模态多轨迹规划与感知导向的轨迹优化，以便在长尾驾驶场景中做出更好的驾驶决策。在开放环和闭环数据集上的实验结果表明，与现有驾驶系统相比，我们的方法在安全性、长时间驾驶推理和道路场景感知方面有所改善，突显了我们多模态交互和多轨迹规划与优化在可扩展基于VLA的系统中的能力。",
+      "authors": [
+        "Jingtao Sun",
+        "Xiaohai He",
+        "Yike Zhang",
+        "Dong Huang",
+        "Yaonan Wang",
+        "Ajmal Mian",
+        "Mike Zheng Shou"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.20890",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "感知"
+      ],
+      "title": "A Collaborative Multi-Modality Interaction for VLA-based End-to-End Autonomous Driving",
+      "title_zh": "基于VLA的端到端自主驾驶的协同多模态交互",
+      "url": "/daily/2026-08-24/#paper-2608-20890"
+    },
+    {
+      "abstract": "Reliable traffic sign detection is a prerequisite for the global deployment of autonomous driving systems, where regulatory compliance and road safety depend on perceiving signs correctly across regions, ranges, and weather conditions. Despite recent progress, vision-based methods continue to face three fundamental limitations: poor cross-regional generalization due to high diversity across countries, degraded performance on small-object detection at long ranges (traffic signs occupy as little as $10{\\times}10$ pixels at 200m), and fragile temporal tracking under the strongly non-linear perspective distortion that occurs as a vehicle approaches a sign. In this paper, we address the problem of robust, long-range, region-agnostic traffic sign perception by combining camera and Light Detection and Ranging (LiDAR) sensing. We present a multi-modal detection framework whose Intensity-Aware Deformable Fusion module aligns retro-reflective LiDAR cues with camera features, anchoring detection on geometric invariants rather than region-specific visual appearance. We further introduce a dual motion-model tracker that explicitly accounts for non-linear perspective transformations during vehicle approach, substantially improving temporal consistency over linear motion assumptions. Additionally, we develop a semantic attribute classification pipeline that estimates occlusion level, readability, sign embeddedness, and road relevance, providing actionable context to downstream planning. Extensive evaluation on our dataset, spanning 60+ countries and 2,500+ hours of driving data, shows that the proposed pipeline achieves an Object Miss Ratio (OMR) of 0.49% across 221,068 evaluation sequences, demonstrating globally generalizable traffic sign perception in commercial-grade autonomous driving systems.",
+      "abstract_zh": "可靠的交通标志检测是全球部署自动驾驶系统的前提，法规遵从和道路安全依赖于在不同地区、距离和天气条件下正确感知标志。尽管近期取得了一些进展，基于视觉的方法仍面临三大根本性限制：由于各国之间的高多样性，跨区域泛化能力差；在远距离小物体检测中的性能下降（在200米处，交通标志的面积仅为$10{ imes}10$像素）；以及在车辆接近标志时，由于强非线性透视失真导致的脆弱时间跟踪。本文通过结合摄像头和激光雷达（LiDAR）传感器，解决了鲁棒的、长距离、区域无关的交通标志感知问题。我们提出了一个多模态检测框架，其强度感知可变形融合模块将反射性LiDAR线索与摄像头特征对齐，使检测基于几何不变性，而非区域特定的视觉外观。我们进一步引入了一个双运动模型跟踪器，明确考虑车辆接近过程中非线性透视变换，从而显著提高了时间一致性，超越了线性运动假设。此外，我们开发了一个语义属性分类管道，估计遮挡程度、可读性、标志嵌入度和道路相关性，为下游规划提供可操作的上下文。在我们涵盖60多个国家和2500多个小时驾驶数据的数据集上进行的广泛评估表明，所提出的管道在221,068个评估序列中实现了0.49%的物体漏检率（OMR），展示了在商业级自动驾驶系统中全球可泛化的交通标志感知能力。",
+      "authors": [
+        "Meda Lazar",
+        "Sourab Sridhar",
+        "Shashwata Gupta",
+        "Alexandra Tripcea",
+        "Varun Ravi",
+        "Senthil Yogamani"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.20874",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "预测/规划"
+      ],
+      "title": "Multi-Modal Traffic Sign Detection with Semantic Attributes for Autonomous Driving",
+      "title_zh": "基于语义属性的多模态交通标志检测用于自动驾驶",
+      "url": "/daily/2026-08-24/#paper-2608-20874"
+    },
+    {
+      "abstract": "Multi-View Pedestrian Detection (MVPD) aims to detect pedestrians in the form of a bird's eye view map from multi-view images. Recent MVPD methods adopt a unified framework that projects 2D image features into a 3D world space and aggregates them into a single feature. Although they are effective, they struggle to generalize to unseen camera configurations during training due to two main issues. First, they are difficult to capture accurate visual geometry across views in unseen camera configurations. Second, they make detection models highly dependent on distortion patterns during training arising from their image feature projection. To address these, we leverage a visual geometric foundation model and propose MV2GF. This foundation model has exhibited strong generalization in capturing visual geometry across views and predicting accurate 3D attributes in diverse camera configurations. MV2GF fuses task-specific features with general-purpose geometric features extracted by the foundation model to effectively capture the visual geometry even in unseen camera configurations. Furthermore, MV2GF projects each pixel in the image features to an appropriate 3D location using 3D pointmaps predicted by the foundation model, preventing the detection model from depending on distortion patterns during training. Our experiments demonstrate the effectiveness of leveraging a visual geometric foundation model for MVPD and that MV2GF generalizes better than existing methods.",
+      "abstract_zh": "多视角行人检测（MVPD）旨在从多视角图像中以鸟瞰图的形式检测行人。近期的MVPD方法采用统一框架，将2D图像特征投影到3D世界空间，并将其聚合为单一特征。尽管这些方法有效，但由于两个主要问题，它们在训练期间难以推广到未见过的相机配置。首先，它们在未见过的相机配置中难以准确捕捉跨视角的视觉几何。其次，它们使得检测模型在训练期间高度依赖于图像特征投影所产生的失真模式。为了解决这些问题，我们利用视觉几何基础模型并提出MV2GF。该基础模型在捕捉跨视角的视觉几何和在多样化相机配置中预测准确的3D属性方面表现出强大的泛化能力。MV2GF将任务特定特征与基础模型提取的通用几何特征融合，以有效捕捉即使在未见过的相机配置中的视觉几何。此外，MV2GF使用基础模型预测的3D点图将图像特征中的每个像素投影到适当的3D位置，从而防止检测模型在训练期间依赖于失真模式。我们的实验表明，利用视觉几何基础模型进行MVPD是有效的，并且MV2GF的泛化能力优于现有方法。",
+      "authors": [
+        "Taiga Yamane",
+        "Satoshi Suzuki",
+        "Ryo Masumura",
+        "Shota Orihashi",
+        "Tomohiro Tanaka",
+        "Mana Ihori",
+        "Naoki Makishima"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.20639",
+      "tags": [
+        "BEV/Occupancy",
+        "感知",
+        "深度/几何"
+      ],
+      "title": "MV2GF: Multi-view Pedestrian Detection with a Visual Geometric Foundation Model",
+      "title_zh": "MV2GF：基于视觉几何基础模型的多视角行人检测",
+      "url": "/daily/2026-08-24/#paper-2608-20639"
+    },
+    {
+      "abstract": "World Action Models (WAMs) improve planning by incorporating future world evolution into action generation, yet existing methods allocate a fixed imagination budget to every scene. We propose RISE (\\textbf{R}efining \\textbf{I}magination through \\textbf{SE}lective Rollout), a system-level adaptive imagination framework that makes sequential \\textsc{Roll}/\\textsc{Stop} decisions according to the expected planning benefit of continued rollout. At each step, a Latent Evaluator estimates the risk revealed by the current prefix and how much planning could improve if imagination continues, while a Rollout Gate weighs this expected benefit against additional computation cost. Since factual driving logs expose only one realized future, we further construct \\textbf{CounterDrive}, a counterfactual dataset with diverse outcomes and risk levels, to enrich future dynamics and provide localized risk supervision. Each retained sample undergoes expert verification and annotation of trajectory validity, incident onset, and causal category, providing a reusable resource for safety-critical world-modeling research. Experiments on NAVSIM and nuScenes show that RISE achieves the best overall planning performance while reducing unnecessary rollout, with additional transfer results supporting its plug-in generality across WAM architectures.",
+      "abstract_zh": "世界行动模型（World Action Models, WAMs）通过将未来世界演变纳入行动生成来改善规划，但现有方法对每个场景分配固定的想象预算。我们提出了RISE（ extbf{R}efining extbf{I}magination through extbf{SE}lective Rollout），一个系统级自适应想象框架，根据持续展开的预期规划收益做出顺序的 extsc{Roll}/ extsc{Stop}决策。在每一步中，潜在评估器（Latent Evaluator）评估当前前缀揭示的风险以及如果继续想象规划可能改善的程度，而展开门（Rollout Gate）则将这一预期收益与额外的计算成本进行权衡。由于实际的驾驶日志仅揭示了一个实现的未来，我们进一步构建了 extbf{CounterDrive}，一个具有多样化结果和风险水平的反事实数据集，以丰富未来动态并提供局部风险监督。每个保留的样本都经过专家验证和轨迹有效性、事件发生和因果类别的注释，为安全关键的世界建模研究提供了可重用的资源。在NAVSIM和nuScenes上的实验表明，RISE在减少不必要展开的同时实现了最佳的整体规划性能，额外的迁移结果支持其在WAM架构中的插件通用性。",
+      "authors": [
+        "Hongbo Lu",
+        "Liang Yao",
+        "Chenghao He",
+        "Hao Han",
+        "Fan Liu",
+        "Wenlong Liao",
+        "Tao He",
+        "Pai Peng"
+      ],
+      "date": "2026-08-24",
+      "id": "2608.20430",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "仿真/数据"
+      ],
+      "title": "RISE: Adaptive Imagination for World Action Models",
+      "title_zh": "RISE：用于世界行动模型的自适应想象",
+      "url": "/daily/2026-08-24/#paper-2608-20430"
+    },
     {
       "abstract": "End-to-end autonomous driving has evolved from camera-to-control regression toward planning-oriented systems that use structured representations, trajectory-level outputs, and increasingly realistic evaluation protocols. This survey reviews this transition across behavior cloning, conditional imitation learning, privileged distillation, BEV and vectorized planning, unified perception-prediction-planning architectures, world-model-based planners, and vision-language-action systems. We argue that the key distinction in modern end-to-end driving is not whether intermediate representations are used, but whether they are learned, supervised, and evaluated to support safe, feasible, and route-compliant planning. To organize the literature, we synthesize existing methods along four axes: input representation, planning output, supervision signal, and evaluation protocol. We further examine the benchmark shift from open-loop trajectory matching to closed-loop simulation, non-reactive real-log evaluation, long-tail testing, and human-preference-aware metrics. Our analysis highlights that architectural progress is difficult to interpret without benchmark-consistent evaluation, and that displacement-based open-loop metrics alone provide limited evidence for safe and human-aligned driving. We conclude with open challenges in uncertainty-aware planning, learner-expert mismatch, runtime safety assurance, language-action grounding, world-model validation, and reproducible benchmarking.",
       "abstract_zh": "端到端自主驾驶已从基于摄像头的控制回归发展为面向规划的系统，这些系统使用结构化表示、轨迹级输出以及越来越真实的评估协议。本文综述了这一转变，涵盖了行为克隆、条件模仿学习、特权蒸馏、鸟瞰视图（BEV）和向量化规划、统一的感知-预测-规划架构、基于世界模型的规划器，以及视觉-语言-动作系统。我们认为，现代端到端驾驶的关键区别不在于是否使用中间表示，而在于这些表示是否经过学习、监督和评估，以支持安全、可行且符合路线的规划。为了组织文献，我们沿着四个轴线综合现有方法：输入表示、规划输出、监督信号和评估协议。我们进一步考察基准测试从开放循环轨迹匹配到闭环仿真、非反应性真实日志评估、长尾测试以及人类偏好感知指标的转变。我们的分析强调，没有基准一致的评估，架构进展难以解读，而仅依赖位移基础的开放循环指标提供的证据有限，无法证明安全和与人类一致的驾驶。最后，我们总结了在不确定性感知规划、学习者与专家不匹配、运行时安全保障、语言-动作基础、世界模型验证和可重复基准测试等方面的开放挑战。",

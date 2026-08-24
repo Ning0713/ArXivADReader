@@ -1,0 +1,55 @@
+{
+  "abstract": "Virtual scenario-based testing is a key enabler for validating automated driving systems (ADS) and intelligent transport systems (ITS). However, executing large-scale test suites involving possibly thousands of scenarios remains labor-intensive and difficult to scale. This paper presents an end-to-end, DevOps-driven framework that automates build, deployment, and distributed execution of CARLA-based scenario tests of an ADS on a lightweight Kubernetes cluster. ROS 2 applications are packaged as standardized Kubernetes Helm charts generated from repository specifications, while entire simulation environments are composed declaratively via dynamic Helmfile manifests. The paper describes how a distributed testing workflow can be implemented in Argo Workflows to provision environments, aggregate and batch OpenSCENARIO test cases from configurable sources, execute scenarios in parallel across cluster nodes, and collect logs and resource metrics. In an evaluation on a multi-node K3s cluster running 200 scenarios, the best configuration speeds up end-to-end workflow time by more than a factor of eight compared to a sequential baseline. The results demonstrate significant gains in end-to-end execution time and quantify trade-offs between parallelism, orchestration overhead, and cluster stability. The framework is further demonstrated in a real-world ADS test application with connections to scenario sources and downstream evaluation modules. This demonstrates that the approach provides a strong foundation not only for scalable simulation testing, but also for generating traceable evidence that can support safety arguments.",
+  "abstract_zh": "基于虚拟场景的测试是验证自动驾驶系统（ADS）和智能交通系统（ITS）的关键手段。然而，执行涉及数千个场景的大规模测试套件仍然劳动密集且难以扩展。本文提出了一个端到端的、以DevOps驱动的框架，自动化构建、部署和在轻量级Kubernetes集群上分布式执行基于CARLA的ADS场景测试。ROS 2应用被打包为从代码库规范生成的标准化Kubernetes Helm图表，而整个仿真环境通过动态的Helmfile清单以声明方式组合。本文描述了如何在Argo Workflows中实现分布式测试工作流，以配置环境、从可配置源聚合和批处理OpenSCENARIO测试用例、在集群节点之间并行执行场景，并收集日志和资源指标。在对运行200个场景的多节点K3s集群的评估中，最佳配置的端到端工作流时间比顺序基线快了超过八倍。结果显示了端到端执行时间的显著提升，并量化了并行性、编排开销和集群稳定性之间的权衡。该框架在一个与场景源和下游评估模块连接的真实世界ADS测试应用中进一步得到了验证。这表明该方法不仅为可扩展的仿真测试提供了坚实的基础，还为生成可追溯的证据以支持安全论证提供了支持。",
+  "arxiv_id": "2608.20904",
+  "arxiv_url": "https://arxiv.org/abs/2608.20904v1",
+  "authors": [
+    "Christian Geller",
+    "Benedikt Haas",
+    "Lutz Eckstein"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-24#paper-2608-20904",
+  "categories": [
+    "cs.RO",
+    "cs.DB",
+    "cs.SE"
+  ],
+  "fetched_at": "2026-08-24T14:13:20.401761+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.20904v1",
+  "published_at": "2026-08-21T09:22:45Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "carla",
+      "driving",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-08-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.20904v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Scalable Distributed Simulation-Based Testing for Automated Driving Systems",
+  "title_zh": "可扩展的基于仿真的自动驾驶系统分布式测试",
+  "translation_url": "https://hjfy.top/arxiv/2608.20904"
+}

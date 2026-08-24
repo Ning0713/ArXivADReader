@@ -1,0 +1,54 @@
+{
+  "abstract": "World Action Models (WAMs) improve planning by incorporating future world evolution into action generation, yet existing methods allocate a fixed imagination budget to every scene. We propose RISE (\\textbf{R}efining \\textbf{I}magination through \\textbf{SE}lective Rollout), a system-level adaptive imagination framework that makes sequential \\textsc{Roll}/\\textsc{Stop} decisions according to the expected planning benefit of continued rollout. At each step, a Latent Evaluator estimates the risk revealed by the current prefix and how much planning could improve if imagination continues, while a Rollout Gate weighs this expected benefit against additional computation cost. Since factual driving logs expose only one realized future, we further construct \\textbf{CounterDrive}, a counterfactual dataset with diverse outcomes and risk levels, to enrich future dynamics and provide localized risk supervision. Each retained sample undergoes expert verification and annotation of trajectory validity, incident onset, and causal category, providing a reusable resource for safety-critical world-modeling research. Experiments on NAVSIM and nuScenes show that RISE achieves the best overall planning performance while reducing unnecessary rollout, with additional transfer results supporting its plug-in generality across WAM architectures.",
+  "abstract_zh": "世界行动模型（World Action Models, WAMs）通过将未来世界演变纳入行动生成来改善规划，但现有方法对每个场景分配固定的想象预算。我们提出了RISE（ extbf{R}efining extbf{I}magination through extbf{SE}lective Rollout），一个系统级自适应想象框架，根据持续展开的预期规划收益做出顺序的 extsc{Roll}/ extsc{Stop}决策。在每一步中，潜在评估器（Latent Evaluator）评估当前前缀揭示的风险以及如果继续想象规划可能改善的程度，而展开门（Rollout Gate）则将这一预期收益与额外的计算成本进行权衡。由于实际的驾驶日志仅揭示了一个实现的未来，我们进一步构建了 extbf{CounterDrive}，一个具有多样化结果和风险水平的反事实数据集，以丰富未来动态并提供局部风险监督。每个保留的样本都经过专家验证和轨迹有效性、事件发生和因果类别的注释，为安全关键的世界建模研究提供了可重用的资源。在NAVSIM和nuScenes上的实验表明，RISE在减少不必要展开的同时实现了最佳的整体规划性能，额外的迁移结果支持其在WAM架构中的插件通用性。",
+  "arxiv_id": "2608.20430",
+  "arxiv_url": "https://arxiv.org/abs/2608.20430v1",
+  "authors": [
+    "Hongbo Lu",
+    "Liang Yao",
+    "Chenghao He",
+    "Hao Han",
+    "Fan Liu",
+    "Wenlong Liao",
+    "Tao He",
+    "Pai Peng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-24#paper-2608-20430",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-24T14:13:20.413908+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.20430v1",
+  "published_at": "2026-08-20T01:50:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-08-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.20430v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "RISE: Adaptive Imagination for World Action Models",
+  "title_zh": "RISE：用于世界行动模型的自适应想象",
+  "translation_url": "https://hjfy.top/arxiv/2608.20430"
+}

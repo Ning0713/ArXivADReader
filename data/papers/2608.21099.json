@@ -1,0 +1,57 @@
+{
+  "abstract": "Multi-modal object detection is essential for robust scene understanding in challenging conditions, including low-light and adverse environments. Recent vision foundation models (e.g., DINOv3) have exhibited strong representation capabilities, yet adapting them to multi-modal scenarios remains challenging. Existing dense cross-modal fusion strategies often force heterogeneous modalities to interact indiscriminately, which may introduce redundant information and disrupt the valuable pre-trained representations. To address this issue, we revisit multi-modal fusion from the perspective of socialized learning and propose adapter to DINOv3 (A2DINOv3), a multi-expert collaboration framework with a Socialized Collaboration Protocol (SCP). Specifically, RGB and infrared branches are modeled as heterogeneous experts that independently preserve their specialized knowledge while exchanging complementary information through selective and constrained interactions. This design mitigates harmful cross-modal interference and prevents degradation of pre-trained priors during adaptation. Furthermore, a zero-initialization strategy is introduced to gradually activate cross-modal collaboration, enabling a smooth transition from modality-specific learning to cooperative representation learning. Extensive experiments on four multi-modal benchmarks, including aerial detection (GAIIC), autonomous driving (FLIR), low-light surveillance (LLVIP), and diverse real-world scenarios (M3FD), demonstrate that A2DINOv3 consistently achieves state-of-the-art performance in multi-modal object detection.",
+  "abstract_zh": "多模态目标检测对于在低光照和恶劣环境等挑战条件下的稳健场景理解至关重要。近期的视觉基础模型（例如，DINOv3）展现了强大的表征能力，但将其适应于多模态场景仍然面临挑战。现有的密集跨模态融合策略往往强迫异构模态进行无差别的交互，这可能引入冗余信息并破坏有价值的预训练表征。为了解决这一问题，我们从社会化学习的角度重新审视多模态融合，并提出了DINOv3的适配器（A2DINOv3），这是一个具有社会化协作协议（SCP）的多专家协作框架。具体而言，RGB和红外分支被建模为异构专家，它们独立保留各自的专业知识，同时通过选择性和受限的交互交换互补信息。这一设计减轻了有害的跨模态干扰，并防止在适应过程中预训练先验的退化。此外，引入了一种零初始化策略，以逐步激活跨模态协作，从而实现从特定模态学习到合作表征学习的平滑过渡。在四个多模态基准测试（包括空中检测（GAIIC）、自动驾驶（FLIR）、低光监控（LLVIP）和多样化的真实场景（M3FD））上的广泛实验表明，A2DINOv3在多模态目标检测中始终实现了最先进的性能。",
+  "arxiv_id": "2608.21099",
+  "arxiv_url": "https://arxiv.org/abs/2608.21099v1",
+  "authors": [
+    "Jiekang Feng",
+    "Zhihe Fan",
+    "Yunqi Zhu",
+    "Xinjie Yao",
+    "Yueying Zhang",
+    "Yike Gao",
+    "Ranxin Li",
+    "Guanzuo Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-24#paper-2608-21099",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-24T14:13:20.462180+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.21099v1",
+  "published_at": "2026-08-21T13:44:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-08-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.21099v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "仿真/数据"
+    ]
+  },
+  "title": "A2DINOv3: Rethinking Multi-Modal Object Detection via Socialized Collaboration",
+  "title_zh": "A2DINOv3：通过社会化协作重新思考多模态目标检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.21099"
+}

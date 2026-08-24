@@ -1,0 +1,65 @@
+{
+  "abstract": "Video Joint Embedding Predictive Architecture (V-JEPA) learns powerful spatiotemporal representations from video through self-supervised latent feature prediction. However, V-JEPA is built around random-mask completion and deterministic regression, making it fundamentally ill-suited for autonomous driving planning that demands future-directed prediction tightly coupled with action. To address this, we rethink the V-JEPA paradigm and present WA-JEPA, a V-JEPA-native world-action model designed for autonomous driving planning. Instead of random spatiotemporal masking, WA-JEPA employs hybrid future-masked pre-training, where the model infers future latents from observed context. Departing from deterministic regression, we recast future prediction as conditional flow matching over latent futures, which substantially improves the model's ability to generate plausible future latents for downstream planning. Finally, a joint future-action predictor is proposed to denoise future scene tokens and ego trajectories together in a unified spatiotemporal latent space, allowing action supervision to directly shape planning-relevant world representations. Pre-trained on nuPlan videos and fine-tuned on NAVSIM, WA-JEPA reaches 91.7 EPDMS on NAVSIM-v2, surpassing the strongest end-to-end and world-action baselines by 1.6 and 1.3 EPDMS, and, without HUGSIM-specific fine-tuning, attains the best HD-Score of 0.4462 on the closed-loop HUGSIM benchmark under the same evaluation protocol. These results validate V-JEPA-native world-action modeling as a powerful and scalable paradigm for autonomous driving planning. Code is available at https://github.com/AFARI-Research/WA-JEPA.",
+  "abstract_zh": "视频联合嵌入预测架构（Video Joint Embedding Predictive Architecture, V-JEPA）通过自监督潜在特征预测从视频中学习强大的时空表示。然而，V-JEPA是围绕随机掩码补全和确定性回归构建的，这使其在需要与动作紧密结合的未来导向预测的自动驾驶规划中根本不适用。为了解决这个问题，我们重新思考了V-JEPA范式，并提出了WA-JEPA，一种为自动驾驶规划设计的V-JEPA原生世界-动作模型。WA-JEPA采用混合未来掩码预训练，而不是随机时空掩码，模型从观察到的上下文中推断未来潜在特征。与确定性回归不同，我们将未来预测重新表述为对潜在未来的条件流匹配，这显著提高了模型生成合理未来潜在特征以用于下游规划的能力。最后，提出了一种联合未来-动作预测器，以在统一的时空潜在空间中共同去噪未来场景标记和自我轨迹，使得动作监督能够直接塑造与规划相关的世界表示。在nuPlan视频上进行预训练，并在NAVSIM上进行微调，WA-JEPA在NAVSIM-v2上达到了91.7 EPDMS，超越了最强的端到端和世界-动作基线1.6和1.3 EPDMS，并且在没有HUGSIM特定微调的情况下，在相同评估协议下达到了闭环HUGSIM基准的最佳HD-Score 0.4462。这些结果验证了V-JEPA原生世界-动作建模作为自动驾驶规划的强大且可扩展的范式。代码可在 https://github.com/AFARI-Research/WA-JEPA 获取。",
+  "arxiv_id": "2608.20974",
+  "arxiv_url": "https://arxiv.org/abs/2608.20974v1",
+  "authors": [
+    "Xinlin Wang",
+    "Yujiao Xiang",
+    "Yuheng Zhou",
+    "Jingqi Wang",
+    "Minqing Huang",
+    "Jiajie Huang",
+    "Dongxu Wei",
+    "Tingguang Zhou",
+    "Xiyang Wang",
+    "Gong Chen",
+    "Zhi Xu",
+    "Feiyang Tan",
+    "Hangning Zhou",
+    "Mu Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-24#paper-2608-20974",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-24T14:13:20.452359+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.20974v1",
+  "published_at": "2026-08-21T10:54:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuplan",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-08-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.20974v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "WA-JEPA: Rethinking the Video JEPA Paradigm for World-Action Modeling in Autonomous Driving",
+  "title_zh": "WA-JEPA：重新思考视频JEPA范式在自动驾驶中的世界-动作建模",
+  "translation_url": "https://hjfy.top/arxiv/2608.20974"
+}

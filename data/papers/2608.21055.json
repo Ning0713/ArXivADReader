@@ -1,0 +1,57 @@
+{
+  "abstract": "Collaborative perception extends the sensing range of a single vehicle by fusing observations from nearby agents, which improves the robustness of autonomous driving. In realistic deployments, however, the received collaborator messages are often affected by both communication delay and relative-pose noise, which jointly cause stale observations, spatial misalignment, and unstable feature fusion. Existing methods usually address these issues from either the spatial or temporal side, but handling them jointly in a unified and efficient manner remains challenging. In this paper, we propose CoAnchor, an anchor-centric spatio-temporal alignment framework for asynchronous collaborative perception. Instead of directly reasoning on dense BEV features, CoAnchor builds sparse object-level spatio-temporal anchors as a shared interface for pose correction and tightly connects spatial refinement, temporal propagation, and current-time verification within one unified loop, while keeping the overall correction process lightweight. Extensive experiments on both simulated and real-world datasets illustrate that CoAnchor remains competitive under clean settings and improves the robustness under joint delay and pose perturbations with a favorable practical accuracy-efficiency trade-off.",
+  "abstract_zh": "协同感知通过融合来自附近代理的观测，扩展了单一车辆的感知范围，从而提高了自动驾驶的鲁棒性。然而，在实际应用中，接收到的协作消息通常受到通信延迟和相对姿态噪声的影响，这共同导致了过时的观测、空间错位和不稳定的特征融合。现有方法通常从空间或时间的角度解决这些问题，但以统一和高效的方式同时处理它们仍然具有挑战性。本文提出了CoAnchor，一种以锚点为中心的时空对齐框架，用于异步协同感知。CoAnchor并不是直接对密集的鸟瞰视图（BEV）特征进行推理，而是构建稀疏的对象级时空锚点，作为姿态校正的共享接口，并在一个统一的循环中紧密连接空间精细化、时间传播和当前时间验证，同时保持整体校正过程的轻量化。在模拟和真实世界数据集上的大量实验表明，CoAnchor在干净环境下仍然具有竞争力，并在联合延迟和姿态扰动下提高了鲁棒性，展现出良好的实际准确性与效率的权衡。",
+  "arxiv_id": "2608.21055",
+  "arxiv_url": "https://arxiv.org/abs/2608.21055v1",
+  "authors": [
+    "Chi Li",
+    "Rui Lin",
+    "Aobo Ji",
+    "Dongzhu Xu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-24#paper-2608-21055",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-24T14:13:20.458379+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.21055v1",
+  "published_at": "2026-08-21T12:52:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "bev"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 85
+  },
+  "seen_dates": [
+    "2026-08-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.21055v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "CoAnchor: Robust Collaborative Perception under Spatio-Temporal Misalignment via Object-Level Anchors",
+  "title_zh": "CoAnchor：通过对象级锚点实现时空错位下的鲁棒协同感知",
+  "translation_url": "https://hjfy.top/arxiv/2608.21055"
+}
