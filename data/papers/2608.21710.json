@@ -1,0 +1,45 @@
+{
+  "abstract": "With the advance of deep neural networks, the quality of disparity maps obtained through stereo matching has steadily improved. However, existing stereo matching methods still struggle to preserve fine-grained geometric details, resulting in blurred edges and over-smoothed predictions in challenging regions. To address these limitations, we propose StereoDiffuer, an iterative diffusion-based stereo matching framework that explicitly models geometric details and progressively refines disparity estimates. The framework incorporates a Saliency Attention Perception (SAP) module to extract salient geometric cues, including object boundaries, thin structures, and sharp edges. Confidence-guided SAP features are combined with the initial disparity estimate to condition an iterative denoising diffusion process, which corrects residual disparity errors and restores geometric details suppressed during cost-volume regularization and upsampling. Experimental results on the Scene Flow and KITTI benchmarks demonstrate the effectiveness of the proposed framework and its competitive performance relative to the compared stereo matching methods.",
+  "abstract_zh": "随着深度神经网络的发展，通过立体匹配获得的视差图质量稳步提高。然而，现有的立体匹配方法仍然难以保留细粒度的几何细节，导致在复杂区域出现模糊的边缘和过度平滑的预测。为了解决这些局限性，我们提出了StereoDiffuer，一种迭代的基于扩散的立体匹配框架，该框架明确建模几何细节并逐步细化视差估计。该框架结合了显著性注意感知（Saliency Attention Perception, SAP）模块，以提取显著的几何线索，包括物体边界、细结构和锐利边缘。基于置信度的SAP特征与初始视差估计相结合，以条件化迭代去噪扩散过程，从而纠正残余视差误差并恢复在代价体积正则化和上采样过程中被抑制的几何细节。在Scene Flow和KITTI基准上的实验结果证明了所提框架的有效性及其相对于比较的立体匹配方法的竞争性能。",
+  "arxiv_id": "2608.21710",
+  "arxiv_url": "https://arxiv.org/abs/2608.21710v1",
+  "authors": [
+    "Bohan Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-21710",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.569147+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.21710v1",
+  "published_at": "2026-08-22T01:04:27Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.21710v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "世界模型/生成"
+    ]
+  },
+  "title": "StereoDiffuer: Diffusion-based Progressive Geometry Modeling with Saliency Attention Perception for Stereo Matching",
+  "title_zh": "StereoDiffuer：基于扩散的渐进几何建模与显著性注意感知用于立体匹配",
+  "translation_url": "https://hjfy.top/arxiv/2608.21710"
+}

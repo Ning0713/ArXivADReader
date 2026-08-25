@@ -1,0 +1,67 @@
+{
+  "abstract": "Modern driving action models are increasingly improved in a self-improvement loop, where a learned world simulator imagines future observations and the resulting data is fed back to refine the action model. However, the bottleneck of this loop lies in the simulators' inability to generate behaviorally plausible responses by surrounding agents, making generated data both unrealistic in interaction and imbalanced in distribution. We introduce BehaviorWorldGen, a framework that closes the loop between action models and world simulators through controllable behavior-aware structured world generation. Its core component is BehaviorFlow, a meta-action-conditioned traffic-flow model that injects interpretable behavior controls and jointly generates multi-agent rollouts. BehaviorFlow realizes the specified agent behaviors while allowing surrounding vehicles to respond to the ego and to one another. The resulting rollouts are rendered by a world simulator into realistic multi-view observations, which are paired with corrected interaction-aware trajectories for action-model refinement. Since BehaviorWorldGen uses structured trajectories as the interface between its modules, it is compatible with diverse action models and world simulators. Experiments on world generation, scene extrapolation, and policy refinement demonstrate consistent improvements, with the largest benefits concentrated on difficult interactive scenarios.",
+  "abstract_zh": "现代驾驶动作模型在自我改进循环中不断提升，其中学习到的世界模拟器想象未来的观察结果，并将生成的数据反馈用于优化动作模型。然而，这一循环的瓶颈在于模拟器无法生成周围代理的行为上合理的反应，使得生成的数据在交互上既不真实又在分布上不平衡。我们提出了BehaviorWorldGen，一个通过可控的行为感知结构化世界生成来闭合动作模型与世界模拟器之间循环的框架。其核心组件是BehaviorFlow，一个元动作条件的交通流模型，注入可解释的行为控制，并共同生成多代理的滚动轨迹。BehaviorFlow实现了指定的代理行为，同时允许周围车辆对自我和彼此做出反应。生成的滚动轨迹由世界模拟器渲染为真实的多视角观察，并与经过修正的交互感知轨迹配对，以便于动作模型的优化。由于BehaviorWorldGen使用结构化轨迹作为其模块之间的接口，因此它与多种动作模型和世界模拟器兼容。在世界生成、场景外推和策略优化的实验中，表现出一致的改进，最大的收益集中在困难的交互场景上。",
+  "arxiv_id": "2608.22187",
+  "arxiv_url": "https://arxiv.org/abs/2608.22187v1",
+  "authors": [
+    "Jiaqi Wang",
+    "Zhuo Zhang",
+    "Haining Guan",
+    "Tingguang Zhou",
+    "Haowen Cui",
+    "Zhongyang Zhu",
+    "Yulong Zheng",
+    "ChuanYe Wang",
+    "Xuefeng Chen",
+    "Zhen Yang",
+    "Tianchen Deng",
+    "Feiyang Tan",
+    "Hangning Zhou",
+    "Bo Dai",
+    "Lixia Shen",
+    "Xiwu Chen",
+    "Xiyang Wang",
+    "Jiajun Zhu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-22187",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.504356+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.22187v1",
+  "published_at": "2026-08-23T02:53:09Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.22187v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "提出BehaviorWorldGen闭环框架，通过可控的行为感知结构化世界生成连接驾驶动作模型与世界模拟器。其BehaviorFlow模块基于元动作条件生成多智能体交互轨迹，使周围车辆能够响应自车及彼此行为，再由模拟器渲染为多视角观测，用于动作模型优化。该方法提升了世界生成、场景外推和策略改进效果，尤其适用于复杂交互场景。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "BehaviorWorldGen: Closing the Loop between Action Models and World Simulators via Controllable Behavior-Aware Structured World Generation",
+  "title_zh": "行为世界生成：通过可控的行为感知结构化世界生成闭合动作模型与世界模拟器之间的循环",
+  "translation_url": "https://hjfy.top/arxiv/2608.22187"
+}

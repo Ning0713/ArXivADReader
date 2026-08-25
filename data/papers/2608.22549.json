@@ -1,0 +1,55 @@
+{
+  "abstract": "Batched simulators for autonomous driving have recently enabled training reinforcement learning (RL) agents at scale, encompassing thousands of traffic scenarios and billions of interactions within a matter of days. Although such high-throughput feeds RL algorithms faster than ever, their sample-efficiency has not kept pace: As the standard training scheme, domain randomization uniformly samples scenarios, thereby consuming a vast number of interactions on cases that contribute little to learning. Curriculum learning offers a remedy by adaptively prioritizing scenarios that matter most to policy improvement. We present CL4AD, the first integration of curriculum learning into batched autonomous driving simulators by framing scenario selection as an unsupervised environment design problem. We introduce utility functions that shape curricula based on success rates and the realism of the agent's behavior, in addition to existing regret-estimation functions. Large-scale experiments in GPUDRIVE demonstrate that curriculum learning achieves a 99% success rate a billion steps earlier than domain randomization, reducing wall-clock time by 77%, and outperforms heuristic curricula with static and dynamic attributes, with only one exception at the largest scale. An ablation under limited compute shows that curriculum learning improves sample efficiency by 67%. We also investigate how utility functions behave at scale, and how prioritized scenarios evolve during training. We release an implementation of CLForAD in GPUDRIVE.",
+  "abstract_zh": "批量模拟器为自动驾驶提供了在大规模下训练强化学习（RL）代理的能力，涵盖了数千种交通场景和数十亿次交互，仅需数天时间。尽管如此高吞吐量的输入使得RL算法的训练速度空前加快，但其样本效率并未同步提升：作为标准训练方案，领域随机化均匀地采样场景，从而在对学习贡献甚微的案例上消耗了大量交互。课程学习通过自适应地优先考虑对策略改进最重要的场景，提供了一种解决方案。我们提出了CL4AD，这是首次将课程学习整合到批量自动驾驶模拟器中的方法，采用将场景选择框架化为无监督环境设计问题的方式。我们引入了基于成功率和代理行为现实性的效用函数，以此来构建课程，此外还结合了现有的后悔估计函数。在GPUDRIVE中的大规模实验表明，课程学习在比领域随机化早十亿步的情况下实现了99%的成功率，将实际时间减少了77%，并且在静态和动态属性的启发式课程中表现优于，唯一的例外是在最大规模下。有限计算条件下的消融实验显示，课程学习提高了67%的样本效率。我们还研究了效用函数在大规模下的表现，以及优先场景在训练过程中的演变。我们发布了CLForAD在GPUDRIVE中的实现。",
+  "arxiv_id": "2608.22549",
+  "arxiv_url": "https://arxiv.org/abs/2608.22549v1",
+  "authors": [
+    "Cevahir Koprulu",
+    "David Paz",
+    "Feng Tao",
+    "Yuliang Guo",
+    "Xinyu Huang",
+    "Ufuk Topcu",
+    "Liu Ren"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-22549",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.808337+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.22549v1",
+  "published_at": "2026-08-23T18:51:05Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.22549v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": []
+  },
+  "title": "Scaling Curriculum Learning For Autonomous Driving",
+  "title_zh": "扩展课程学习在自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2608.22549"
+}

@@ -1,0 +1,62 @@
+{
+  "abstract": "Autonomous driving risk identification aims to determine which observed object is likely to become safety-critical to the ego vehicle. Existing approaches typically predict scene-level accidents, infer risk objects indirectly from ego behavior, or apply geometric checks after trajectory forecasting, without directly using predicted ego--object relations for risk-source localization. We propose RiskWorld, an object-centric latent world model that identifies risk from the imagined evolution of each candidate relative to the ego vehicle. RiskWorld combines pretrained predictive video representations with structured ego--object histories, contextualizes observed interactions, and rolls relation-aware object states into the future using RSSM-style latent dynamics. It decodes the rollout into object-level risk scores, supported by auxiliary future-relation and temporal-risk predictions. Inference uses only observations up to the current time, while logged futures provide training supervision. On RiskBench, RiskWorld achieves the best overall F1 of 63.0\\% and the lowest false-alarm rate of 2.1\\%. Further analyses show that the learned rollout captures the evolution of object-level risk before critical events, while RiskWorld's selections preserve planning-critical information under filtered observation.",
+  "abstract_zh": "自主驾驶风险识别旨在确定哪些观察到的对象可能对自我车辆的安全构成威胁。现有方法通常预测场景级事故，间接推断风险对象通过自我行为，或在轨迹预测后应用几何检查，而未直接利用预测的自我-对象关系进行风险源定位。我们提出了RiskWorld，一种对象中心的潜在世界模型，通过想象每个候选对象相对于自我车辆的演变来识别风险。RiskWorld结合了预训练的预测视频表示与结构化的自我-对象历史，情境化观察到的交互，并使用RSSM风格的潜在动态将关系感知的对象状态向未来滚动。它将滚动解码为对象级风险评分，并辅以辅助的未来关系和时间风险预测。推断仅使用截至当前时间的观察，而记录的未来提供训练监督。在RiskBench上，RiskWorld实现了最佳的整体F1值63.0%和最低的误报率2.1%。进一步分析表明，学习到的滚动捕捉了关键事件之前对象级风险的演变，而RiskWorld的选择在过滤观察下保留了规划关键的信息。",
+  "arxiv_id": "2608.21414",
+  "arxiv_url": "https://arxiv.org/abs/2608.21414v1",
+  "authors": [
+    "Jingzheng Li",
+    "Yufei Ge",
+    "Qianren Mao",
+    "Zhijun Chen",
+    "Bing Li",
+    "Xingyu Peng",
+    "Baochang Zhang",
+    "Xianglong Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-21414",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.476042+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.21414v1",
+  "published_at": "2026-08-12T02:52:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego vehicle",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "world model",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.21414v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "安全/异常"
+    ]
+  },
+  "title": "RiskWorld: Object-Centric Latent World Modeling for Autonomous Driving Risk Identification",
+  "title_zh": "RiskWorld：面向自主驾驶风险识别的对象中心潜在世界建模",
+  "translation_url": "https://hjfy.top/arxiv/2608.21414"
+}

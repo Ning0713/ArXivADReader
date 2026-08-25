@@ -1,0 +1,50 @@
+{
+  "abstract": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of large-scale field inspections. To address this problem, we propose Expert-Grounded Distillation (EGD), a novel artificial intelligence framework that transfers institutional road safety expertise into a compact vision-language model for scalable visual road safety auditing. The key innovation is a quantified expert-grounding stage in which the teacher vision-language model is calibrated against authoritative field audits. Large-scale annotation is permitted only after the teacher reaches substantial agreement with expert risk assessments (Cohen's kappa = 0.74). The calibrated teacher then generates structured supervision that is distilled into an 8-billion-parameter student vision-language model using Low-Rank Adaptation and a single leakage-free prompt. We also introduce Bangladesh Road Safety Audit (BD-ARSA), the first open, expert-grounded Bangladeshi visual road safety audit dataset containing 21,947 image-audit records with near-national coverage, and Expert-Grounded Road Safety Auditor (EG-ARSA), the first vision-language model developed specifically for this task. Experimental results show that grounded fine-tuning substantially improves ordinal risk assessment over the zero-shot baseline, while blind expert evaluation demonstrates that the compact student outperforms both its 31 billion-parameter teacher and Gemini-2.5-Flash. These findings demonstrate that EGD provides an effective and scalable engineering solution for proactive road safety auditing in resource-constrained environments.",
+  "abstract_zh": "道路交通伤害在中低收入国家仍然是一个主要挑战，积极的道路安全审计受到不完整的事故记录、合格审计员短缺以及大规模现场检查高成本的限制。为了解决这一问题，我们提出了专家基础蒸馏（Expert-Grounded Distillation, EGD），这是一种新颖的人工智能框架，将机构道路安全专业知识转化为一个紧凑的视觉-语言模型，以实现可扩展的视觉道路安全审计。关键创新在于量化的专家基础阶段，在此阶段，教师视觉-语言模型与权威现场审计进行校准。只有在教师与专家风险评估（Cohen's kappa = 0.74）达成实质性一致后，才允许进行大规模标注。经过校准的教师随后生成结构化监督，这些监督通过低秩适应（Low-Rank Adaptation）和单一无泄漏提示蒸馏到一个具有80亿参数的学生视觉-语言模型中。我们还介绍了孟加拉国道路安全审计（Bangladesh Road Safety Audit, BD-ARSA），这是第一个开放的、基于专家的孟加拉国视觉道路安全审计数据集，包含21,947个图像审计记录，几乎覆盖全国，并且专家基础道路安全审计员（Expert-Grounded Road Safety Auditor, EG-ARSA）是专门为此任务开发的第一个视觉-语言模型。实验结果表明，基础微调显著提高了序数风险评估，相较于零样本基线，盲专家评估显示紧凑的学生模型优于其310亿参数的教师模型和Gemini-2.5-Flash。这些发现表明，EGD为资源受限环境中的主动道路安全审计提供了一种有效且可扩展的工程解决方案。",
+  "arxiv_id": "2608.23563",
+  "arxiv_url": "https://arxiv.org/abs/2608.23563v1",
+  "authors": [
+    "Md Thamed Bin Zaman Chowdhury",
+    "Moazzem Hossain"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-23563",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.716649+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.23563v1",
+  "published_at": "2026-08-24T17:58:41Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.23563v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "本文提出专家基础蒸馏框架，将经权威道路安全审计校准的教师视觉-语言模型知识蒸馏到轻量级学生模型中，用于低资源环境下的视觉道路安全风险评估。作者构建了覆盖孟加拉国的BD-ARSA数据集，并开发EG-ARSA模型；实验显示其在序数风险评估和专家盲测中优于零样本基线及更大规模模型。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "VLM/VLA",
+      "仿真/数据"
+    ]
+  },
+  "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+  "title_zh": "EG-ARSA：一种基于专家的开放模型，用于低资源环境下的视觉道路安全审计",
+  "translation_url": "https://hjfy.top/arxiv/2608.23563"
+}

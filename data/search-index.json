@@ -1,6 +1,380 @@
 {
-  "generated_at": "2026-08-24T14:14:51.913764+00:00",
+  "generated_at": "2026-08-25T14:24:30.265005+00:00",
   "items": [
+    {
+      "abstract": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of large-scale field inspections. To address this problem, we propose Expert-Grounded Distillation (EGD), a novel artificial intelligence framework that transfers institutional road safety expertise into a compact vision-language model for scalable visual road safety auditing. The key innovation is a quantified expert-grounding stage in which the teacher vision-language model is calibrated against authoritative field audits. Large-scale annotation is permitted only after the teacher reaches substantial agreement with expert risk assessments (Cohen's kappa = 0.74). The calibrated teacher then generates structured supervision that is distilled into an 8-billion-parameter student vision-language model using Low-Rank Adaptation and a single leakage-free prompt. We also introduce Bangladesh Road Safety Audit (BD-ARSA), the first open, expert-grounded Bangladeshi visual road safety audit dataset containing 21,947 image-audit records with near-national coverage, and Expert-Grounded Road Safety Auditor (EG-ARSA), the first vision-language model developed specifically for this task. Experimental results show that grounded fine-tuning substantially improves ordinal risk assessment over the zero-shot baseline, while blind expert evaluation demonstrates that the compact student outperforms both its 31 billion-parameter teacher and Gemini-2.5-Flash. These findings demonstrate that EGD provides an effective and scalable engineering solution for proactive road safety auditing in resource-constrained environments.",
+      "abstract_zh": "道路交通伤害在中低收入国家仍然是一个主要挑战，积极的道路安全审计受到不完整的事故记录、合格审计员短缺以及大规模现场检查高成本的限制。为了解决这一问题，我们提出了专家基础蒸馏（Expert-Grounded Distillation, EGD），这是一种新颖的人工智能框架，将机构道路安全专业知识转化为一个紧凑的视觉-语言模型，以实现可扩展的视觉道路安全审计。关键创新在于量化的专家基础阶段，在此阶段，教师视觉-语言模型与权威现场审计进行校准。只有在教师与专家风险评估（Cohen's kappa = 0.74）达成实质性一致后，才允许进行大规模标注。经过校准的教师随后生成结构化监督，这些监督通过低秩适应（Low-Rank Adaptation）和单一无泄漏提示蒸馏到一个具有80亿参数的学生视觉-语言模型中。我们还介绍了孟加拉国道路安全审计（Bangladesh Road Safety Audit, BD-ARSA），这是第一个开放的、基于专家的孟加拉国视觉道路安全审计数据集，包含21,947个图像审计记录，几乎覆盖全国，并且专家基础道路安全审计员（Expert-Grounded Road Safety Auditor, EG-ARSA）是专门为此任务开发的第一个视觉-语言模型。实验结果表明，基础微调显著提高了序数风险评估，相较于零样本基线，盲专家评估显示紧凑的学生模型优于其310亿参数的教师模型和Gemini-2.5-Flash。这些发现表明，EGD为资源受限环境中的主动道路安全审计提供了一种有效且可扩展的工程解决方案。",
+      "authors": [
+        "Md Thamed Bin Zaman Chowdhury",
+        "Moazzem Hossain"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.23563",
+      "tags": [
+        "安全/异常",
+        "VLM/VLA",
+        "仿真/数据"
+      ],
+      "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+      "title_zh": "EG-ARSA：一种基于专家的开放模型，用于低资源环境下的视觉道路安全审计",
+      "url": "/daily/2026-08-25/#paper-2608-23563"
+    },
+    {
+      "abstract": "World action models (WAMs) have recently gained increasing attention as a framework for jointly modeling scene evolution and ego actions in autonomous driving. Most existing WAMs learn scene dynamics in pixel space by combining a video-generation backbone for future-observation prediction with an action head for ego-trajectory prediction. Pixels, however, provide only an indirect representation of these dynamics: they entangle geometry and motion with appearance, texture, and illumination, forcing the model to infer three-dimensional transformations from two-dimensional observations. We argue that geometry, represented by point clouds, offers a more natural state space for driving because it explicitly captures spatial structure and the rigid and non-rigid transformations that govern scene evolution while directly aligning with the space in which driving actions are executed. Building on this insight, we introduce \\textbf{GeoWAM}, a visual geometry world action model for autonomous driving. Rather than predicting future images, GeoWAM is pretrained to forecast future scene geometry, yielding representations that jointly encode spatial structure and temporal evolution. A geometry-conditioned action head then leverages these learned geometric dynamics to predict future ego trajectories. Extensive open-loop and closed-loop evaluations show that visual geometry world modeling yields substantially stronger driving policies than image-based alternatives, establishing future-geometry prediction as an effective pretraining objective for autonomous driving.",
+      "abstract_zh": "世界动作模型（WAMs）近年来作为一个框架，越来越受到关注，用于联合建模自动驾驶中的场景演变和自我动作。大多数现有的WAMs通过结合视频生成主干网络进行未来观察预测和动作头进行自我轨迹预测，在像素空间中学习场景动态。然而，像素仅提供了这些动态的间接表示：它们将几何和运动与外观、纹理和光照纠缠在一起，迫使模型从二维观察中推断三维变换。我们认为，点云所表示的几何为驾驶提供了一个更自然的状态空间，因为它明确捕捉了空间结构以及支配场景演变的刚性和非刚性变换，同时直接与执行驾驶动作的空间对齐。基于这一见解，我们引入了 extbf{GeoWAM}，一种用于自动驾驶的视觉几何世界动作模型。GeoWAM并不是预测未来图像，而是预训练以预测未来场景几何，从而产生共同编码空间结构和时间演变的表示。然后，几何条件的动作头利用这些学习到的几何动态来预测未来的自我轨迹。广泛的开放环路和闭环评估表明，视觉几何世界建模产生的驾驶策略显著优于基于图像的替代方案，确立了未来几何预测作为自动驾驶有效的预训练目标。",
+      "authors": [
+        "Yiren Lu",
+        "Xin Ye",
+        "Jiaming Liu",
+        "Jin Yao",
+        "Yi-chung Chen",
+        "Liam Merino",
+        "Dhruva Dixith Kurra",
+        "Min Cai",
+        "Tom Lampo",
+        "Yu Yin",
+        "Danhua Guo",
+        "Burhan Yaman"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.23486",
+      "tags": [
+        "世界模型/生成",
+        "LiDAR/点云",
+        "深度/几何"
+      ],
+      "title": "GeoWAM: Visual Geometry World Action Models for Autonomous Driving",
+      "title_zh": "GeoWAM：用于自动驾驶的视觉几何世界动作模型",
+      "url": "/daily/2026-08-25/#paper-2608-23486"
+    },
+    {
+      "abstract": "Long-horizon planning is critical for safe autonomous driving in complex scenarios. Existing methods improve planning continuity with temporal memory, but such memory may become invalid and mislead decisions when the driving command changes. Thus, selectively leveraging useful history while suppressing command-inconsistent memory remains a key challenge. To address this issue, we propose MomADv2, a reliable state-space memory framework for long-horizon end-to-end autonomous driving. At its core, MomADv2 introduces a Selective State-Space Planning Memory Query Module, which filters historical planning queries based on temporal continuity and command consistency, selects planning modes relevant to the current command, and models the evolution of planning intentions through a selective state-space mechanism. To further alleviate local trajectory deviations and error accumulation in long-horizon planning, we design a Flow-Matching Trajectory Residual Refiner. It learns a continuous residual correction field from the refined planning output to the expert trajectory, enabling fine-grained trajectory refinement while preserving the stability of anchor-based planning. Extensive experiments on closed-loop NAVSIM and Bench2Drive, as well as open-loop nuScenes, demonstrate that MomADv2 improves long-horizon planning consistency and reduces the average collision rate by 15.6% over MomAD under 6-second planning.",
+      "abstract_zh": "长时间规划对于在复杂场景中安全的自主驾驶至关重要。现有方法通过时间记忆提高规划的连续性，但当驾驶指令发生变化时，这种记忆可能失效并误导决策。因此，如何选择性地利用有用的历史信息，同时抑制与指令不一致的记忆，仍然是一个关键挑战。为了解决这个问题，我们提出了MomADv2，一个用于长时间端到端自主驾驶的可靠状态空间记忆框架。MomADv2的核心是引入了选择性状态空间规划记忆查询模块，该模块根据时间连续性和指令一致性过滤历史规划查询，选择与当前指令相关的规划模式，并通过选择性状态空间机制建模规划意图的演变。为了进一步减轻长时间规划中的局部轨迹偏差和误差累积，我们设计了流匹配轨迹残差精炼器。它从精炼的规划输出到专家轨迹学习一个连续的残差修正场，使得在保持基于锚点的规划稳定性的同时，实现精细的轨迹精炼。在闭环NAVSIM和Bench2Drive以及开环nuScenes上的大量实验表明，MomADv2在6秒规划下提高了长时间规划的一致性，并将平均碰撞率降低了15.6%。",
+      "authors": [
+        "Ziying Song",
+        "Shengkai Zhang",
+        "Lin Liu",
+        "Peiliang Wu",
+        "Lei Yang",
+        "Dongyang Xu",
+        "Bin Sun",
+        "Li Wang",
+        "Shaoqing Xu",
+        "Caiyan Jia",
+        "Yadan Luo"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.23405",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "安全/异常"
+      ],
+      "title": "MomADv2: Reliable Temporal Memory for End-to-End Autonomous Driving",
+      "title_zh": "MomADv2：用于端到端自主驾驶的可靠时间记忆",
+      "url": "/daily/2026-08-25/#paper-2608-23405"
+    },
+    {
+      "abstract": "Accurate visual localization on robotic and wearable platforms remains challenging in dense urban environments. Existing methodologies typically rely on GPS for absolute positioning, yet GPS signals frequently degrade in urban canyons due to multipath propagation. Consequently, standard solutions like visual odometry suffer from unmitigated drift over time, while map-matching techniques struggle to acquire the reliable GPS priors they need, on top of being too computationally heavy for real-time edge execution. To address these limitations, we propose Spotter, a robuts and real-time visual localization framework that uses building facades as a reliable source of global geo-reference, while retaining the capability to integrate GPS signals when available. In an offline stage, Spotter processes Google Street View panoramas by semantically segmenting facades and pairing multi-view stereo depth with cartographic data to build a compact metric database. At runtime, query images are matched via a cascaded retrieval and geometric verification pipeline to recover fine-grained global camera localization. We benchmark Spotter on a newly collected dataset of pedestrian sequences acquired with wearable smart glasses across several districts of Barcelona. Experimental results show that Spotter outperforms odometry-based baselines and achieves localization accuracy comparable to state-of-the-art map-based methods while operating at significantly higher frame rates.",
+      "abstract_zh": "在密集城市环境中，机器人和可穿戴平台的准确视觉定位仍然面临挑战。现有的方法通常依赖GPS进行绝对定位，但由于多径传播，GPS信号在城市峡谷中经常衰减。因此，标准解决方案如视觉里程计随着时间的推移会遭遇不可避免的漂移，而地图匹配技术则难以获取所需的可靠GPS先验信息，并且在实时边缘执行时计算负担过重。为了解决这些局限性，我们提出了Spotter，一个稳健且实时的视觉定位框架，利用建筑立面作为可靠的全球地理参考源，同时在可用时保留集成GPS信号的能力。在离线阶段，Spotter通过对Google街景全景进行语义分割和将多视角立体深度与制图数据配对，构建一个紧凑的度量数据库。在运行时，查询图像通过级联检索和几何验证管道进行匹配，以恢复精细的全球相机定位。我们在一个新收集的行人序列数据集上对Spotter进行了基准测试，该数据集是通过可穿戴智能眼镜在巴塞罗那的多个区域获取的。实验结果表明，Spotter的性能优于基于里程计的基线，并且在显著更高的帧率下实现了与最先进的基于地图的方法相当的定位精度。",
+      "authors": [
+        "Antoni Valls",
+        "Jordi Sanchez-Riera"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.23290",
+      "tags": [
+        "深度/几何",
+        "地图/定位",
+        "仿真/数据"
+      ],
+      "title": "Spotter: Efficient Urban Visual Localization via Geo-Referenced Facade Landmarks in GPS-Degraded Environments",
+      "title_zh": "Spotter：在GPS信号衰减环境中通过地理参考建筑立面标志实现高效城市视觉定位",
+      "url": "/daily/2026-08-25/#paper-2608-23290"
+    },
+    {
+      "abstract": "Achieving 360{\\deg} coverage is critical for the visual perception systems of autonomous vehicles. Fisheye cameras offer a cost-effective solution by enabling full surround coverage with as few as two sensors. However, existing multi-view fisheye datasets are limited, and synthesizing rare corner cases typically requires computationally expensive 3D simulations, hindering the training. While generative models have achieved significant success in standard perspective imagery, their application to wide-angle distortion remains unexplored. In this work, we formally introduce the novel problem of multi-view fisheye image generation conditioned on volumetric semantic representations and present two distinct methods. We first propose SyntheOcc-FE, which adapts the SyntheOcc architecture to fisheye data. While effective, this method is constrained by the scarcity of fisheye datasets, which limits its generalization. To overcome these limitations, we propose our second method, MIVIFI (multi-view fisheye), which leverages cross-domain learning with Equirectangular Projections. By bridging the gap between dataset domains using KITTI-360 fisheye images alongside nuScenes multi-view standard images, our approach enables high-fidelity manipulation of scene content. This framework enables the structural modification of semantic occupancy inputs to introduce or eliminate specific actors and facilitates the rendering of diverse meteorological conditions and illumination scenarios absent in the limited fisheye datasets. Quantitative and qualitative experiments demonstrate that our methods achieve robust photorealistic multi-view fisheye image generation and highlight the specific advantages of our cross-domain strategy for handling data scarcity.",
+      "abstract_zh": "实现360°覆盖对于自主车辆的视觉感知系统至关重要。鱼眼相机通过仅使用两个传感器即可实现全面覆盖，提供了一种具有成本效益的解决方案。然而，现有的多视角鱼眼数据集有限，合成稀有角落案例通常需要计算成本高昂的3D模拟，阻碍了训练。尽管生成模型在标准透视图像中取得了显著成功，但其在广角畸变中的应用仍未被探索。在本研究中，我们正式引入了基于体积语义表示的多视角鱼眼图像生成这一新问题，并提出了两种不同的方法。我们首先提出了SyntheOcc-FE，该方法将SyntheOcc架构调整为适应鱼眼数据。尽管有效，但该方法受到鱼眼数据集稀缺的限制，限制了其泛化能力。为克服这些限制，我们提出了第二种方法MIVIFI（多视角鱼眼），该方法利用等距投影进行跨域学习。通过使用KITTI-360鱼眼图像与nuScenes多视角标准图像之间的桥接，我们的方法实现了场景内容的高保真操控。该框架使得对语义占用输入的结构性修改成为可能，以引入或消除特定的参与者，并促进渲染在有限鱼眼数据集中缺失的多样气象条件和光照场景。定量和定性实验表明，我们的方法实现了稳健的照片级真实感多视角鱼眼图像生成，并突出了我们跨域策略在处理数据稀缺方面的具体优势。",
+      "authors": [
+        "Matthias Neuwirth-Trapp",
+        "Begüm Altunbas",
+        "Jiayi Wang",
+        "Yan Xia",
+        "Maarten Bieshaar",
+        "Xinyu Huang",
+        "Daniel Cremers"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.23140",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "BEV/Occupancy"
+      ],
+      "title": "MIVIFI: Bridging Perspective and Fisheye Domains for Training Multi-View Fisheye Image Generation Models",
+      "title_zh": "MIVIFI：桥接视角和鱼眼域以训练多视角鱼眼图像生成模型",
+      "url": "/daily/2026-08-25/#paper-2608-23140"
+    },
+    {
+      "abstract": "RoboRacer offers a standardized platform for research using 1:10-scale autonomous vehicles, but the variety of available tracks hinders the process of acquiring policies. Although existing occupancy-grid simulators allow for the quick addition of new maps, they fail to include physical contact, while 3D simulators require each circuit to be implemented as a separate asset, thus limiting their scalability. In order to overcome this issue, we have developed RoboRacer Arena, a system that creates 3D racing environments directly from occupancy maps. Our method starts by using a flood fill algorithm to extract the drivable corridors and to identify the track boundaries, which are then used to establish the barriers. A distance field is calculated to define the collision boundaries. The track surfaces, collision properties, and materials are assembled into a USD stage, which allows for the automated and reproducible generation of the environment in Isaac Sim. The input maps can be obtained from SLAM sessions, from rescaled Formula 1 circuits, or from natural-language descriptions. When the input is based on natural language, we use Gemma 4 31B to generate a track specification without specifying any coordinates or geometry. To guarantee consistency and reproducibility, we apply geometric screening, procedural generation, and raster-level validation. The simulation environments are initialized in a time range of 1.18 to 2.48 seconds, with the initialization time increasing linearly as the raster size increases. In 30 matched trials involving 10 tracks and 3 seeds, 21 maps were generated and all passed validation. RoboRacer Arena currently contains 130 tracks and supports the generation of tracks from natural language. In benchmark tests, the system attains 8,707 vehicle-steps per second when using 256 parallel rigid-body vehicles, excluding the time taken for rendering and policy execution.",
+      "abstract_zh": "RoboRacer提供了一个标准化的平台，用于使用1:10比例的自主车辆进行研究，但可用赛道的多样性阻碍了策略的获取过程。尽管现有的占用网格模拟器允许快速添加新地图，但它们未能包含物理接触，而3D模拟器则要求每个赛道作为单独资产实现，从而限制了其可扩展性。为了解决这一问题，我们开发了RoboRacer竞技场，一个直接从占用地图创建3D赛车环境的系统。我们的方法首先使用洪水填充算法提取可行驶的走廊并识别赛道边界，然后利用这些边界建立障碍物。计算距离场以定义碰撞边界。赛道表面、碰撞属性和材料被组装成一个USD舞台，从而实现了在Isaac Sim中环境的自动化和可重复生成。输入地图可以通过SLAM会话、重新缩放的一级方程式赛道或自然语言描述获得。当输入基于自然语言时，我们使用Gemma 4 31B生成赛道规范，而无需指定任何坐标或几何形状。为了保证一致性和可重复性，我们应用几何筛选、程序生成和光栅级验证。模拟环境的初始化时间范围为1.18到2.48秒，初始化时间随着光栅大小的增加而线性增加。在涉及10条赛道和3个种子的30次匹配试验中，生成了21张地图，并且全部通过了验证。RoboRacer竞技场目前包含130条赛道，并支持从自然语言生成赛道。在基准测试中，该系统在使用256个并行刚体车辆时达到了每秒8,707个车辆步骤，未计算渲染和策略执行所需的时间。",
+      "authors": [
+        "Mihaela-Larisa Clement",
+        "Agnes Poks",
+        "Ezio Bartocci"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.23040",
+      "tags": [
+        "BEV/Occupancy",
+        "深度/几何",
+        "地图/定位"
+      ],
+      "title": "RoboRacer Arena: Scaling High-Fidelity Autonomous Racing in Isaac Sim",
+      "title_zh": "RoboRacer竞技场：在Isaac Sim中扩展高保真自主赛车",
+      "url": "/daily/2026-08-25/#paper-2608-23040"
+    },
+    {
+      "abstract": "This workshop paper comprehensively reviews the First Challenge on Unified Removal of Raindrops and Reflections. The challenge aims to address a frequently encountered practical problem in the field of autonomous driving, i.e., raindrop-reflection composite degradation on rainy days. This competition attracted 149 registered participants and received 12 valid final submissions with corresponding fact sheets, significantly contributing to the progress of unified removal of raindrops and reflections. All the methods are developed and evaluated on our real-shot RainDrop and ReFlection (RDRF) dataset. A detailed analysis of the submitted methods and corresponding results is provided in this report, which highlights effective approaches and provides interesting insights for future research.",
+      "abstract_zh": "本文综述了第一次统一去除雨滴和反射的挑战。该挑战旨在解决自动驾驶领域中一个常见的实际问题，即雨天雨滴与反射的复合降解。此次竞赛吸引了149名注册参与者，并收到了12份有效的最终提交及相应的事实表，显著推动了雨滴与反射的统一去除技术的发展。所有方法均在我们的真实拍摄的雨滴与反射（RainDrop and ReFlection, RDRF）数据集上进行开发和评估。本文提供了对提交方法及其相应结果的详细分析，突出了有效的方法并为未来研究提供了有趣的见解。",
+      "authors": [
+        "Zewei He",
+        "Xi Tong",
+        "Yu Chen",
+        "Xingyu Liu",
+        "Xin Li",
+        "Zepeng Wang",
+        "Jiagao Hu",
+        "Fuhao Li",
+        "Yuxuan Chen",
+        "Fei Wang",
+        "Daiguo Zhou",
+        "Minmin Yi",
+        "Chuanrui Zhang",
+        "Liwen Zhang",
+        "Yeongjin Jeong",
+        "Hyunjin Cho",
+        "Jiwon Lee",
+        "Minsang Kim",
+        "Jae Woong Soh",
+        "Jin-Hui Jiang",
+        "Rong-Lin Jian",
+        "Chih-Chung Hsu",
+        "Youngjin Oh",
+        "Junhyeong Kwon",
+        "Junyoung Park",
+        "Jae Hyun Park",
+        "Sung Ju Lee",
+        "Nam Ik Cho",
+        "Vishwajeet Shukla",
+        "Himanshu Baurai",
+        "Zhiqi Zhang",
+        "Kui Jiang",
+        "Zhaocheng Yu",
+        "Runzhe Li",
+        "Dawei Fan",
+        "Hao Li",
+        "Zhanshuo Zhang",
+        "Fan Ji",
+        "Jiangmeng Li",
+        "Xiongxin Tang",
+        "Fanjiang Xu",
+        "Shangquan Sun",
+        "Anh-Kiet Duong",
+        "Petra Gomez-Krämer",
+        "Jean-Michel Carozza",
+        "Ruibo Zhang",
+        "Dexiang Hong",
+        "Xinyan Liu",
+        "Shengeng Tang",
+        "Weidong Chen",
+        "Tzu-Hsuan Weng",
+        "Min-Te Sun"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.22723",
+      "tags": [
+        "仿真/数据"
+      ],
+      "title": "LoViF 2026 The First Challenge on Unified Removal of Raindrops and Reflections: Methods and Results",
+      "title_zh": "LoViF 2026 第一次统一去除雨滴和反射的挑战：方法与结果",
+      "url": "/daily/2026-08-25/#paper-2608-22723"
+    },
+    {
+      "abstract": "Batched simulators for autonomous driving have recently enabled training reinforcement learning (RL) agents at scale, encompassing thousands of traffic scenarios and billions of interactions within a matter of days. Although such high-throughput feeds RL algorithms faster than ever, their sample-efficiency has not kept pace: As the standard training scheme, domain randomization uniformly samples scenarios, thereby consuming a vast number of interactions on cases that contribute little to learning. Curriculum learning offers a remedy by adaptively prioritizing scenarios that matter most to policy improvement. We present CL4AD, the first integration of curriculum learning into batched autonomous driving simulators by framing scenario selection as an unsupervised environment design problem. We introduce utility functions that shape curricula based on success rates and the realism of the agent's behavior, in addition to existing regret-estimation functions. Large-scale experiments in GPUDRIVE demonstrate that curriculum learning achieves a 99% success rate a billion steps earlier than domain randomization, reducing wall-clock time by 77%, and outperforms heuristic curricula with static and dynamic attributes, with only one exception at the largest scale. An ablation under limited compute shows that curriculum learning improves sample efficiency by 67%. We also investigate how utility functions behave at scale, and how prioritized scenarios evolve during training. We release an implementation of CLForAD in GPUDRIVE.",
+      "abstract_zh": "批量模拟器为自动驾驶提供了在大规模下训练强化学习（RL）代理的能力，涵盖了数千种交通场景和数十亿次交互，仅需数天时间。尽管如此高吞吐量的输入使得RL算法的训练速度空前加快，但其样本效率并未同步提升：作为标准训练方案，领域随机化均匀地采样场景，从而在对学习贡献甚微的案例上消耗了大量交互。课程学习通过自适应地优先考虑对策略改进最重要的场景，提供了一种解决方案。我们提出了CL4AD，这是首次将课程学习整合到批量自动驾驶模拟器中的方法，采用将场景选择框架化为无监督环境设计问题的方式。我们引入了基于成功率和代理行为现实性的效用函数，以此来构建课程，此外还结合了现有的后悔估计函数。在GPUDRIVE中的大规模实验表明，课程学习在比领域随机化早十亿步的情况下实现了99%的成功率，将实际时间减少了77%，并且在静态和动态属性的启发式课程中表现优于，唯一的例外是在最大规模下。有限计算条件下的消融实验显示，课程学习提高了67%的样本效率。我们还研究了效用函数在大规模下的表现，以及优先场景在训练过程中的演变。我们发布了CLForAD在GPUDRIVE中的实现。",
+      "authors": [
+        "Cevahir Koprulu",
+        "David Paz",
+        "Feng Tao",
+        "Yuliang Guo",
+        "Xinyu Huang",
+        "Ufuk Topcu",
+        "Liu Ren"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.22549",
+      "tags": [
+        "LiDAR/点云"
+      ],
+      "title": "Scaling Curriculum Learning For Autonomous Driving",
+      "title_zh": "扩展课程学习在自动驾驶中的应用",
+      "url": "/daily/2026-08-25/#paper-2608-22549"
+    },
+    {
+      "abstract": "Modern driving action models are increasingly improved in a self-improvement loop, where a learned world simulator imagines future observations and the resulting data is fed back to refine the action model. However, the bottleneck of this loop lies in the simulators' inability to generate behaviorally plausible responses by surrounding agents, making generated data both unrealistic in interaction and imbalanced in distribution. We introduce BehaviorWorldGen, a framework that closes the loop between action models and world simulators through controllable behavior-aware structured world generation. Its core component is BehaviorFlow, a meta-action-conditioned traffic-flow model that injects interpretable behavior controls and jointly generates multi-agent rollouts. BehaviorFlow realizes the specified agent behaviors while allowing surrounding vehicles to respond to the ego and to one another. The resulting rollouts are rendered by a world simulator into realistic multi-view observations, which are paired with corrected interaction-aware trajectories for action-model refinement. Since BehaviorWorldGen uses structured trajectories as the interface between its modules, it is compatible with diverse action models and world simulators. Experiments on world generation, scene extrapolation, and policy refinement demonstrate consistent improvements, with the largest benefits concentrated on difficult interactive scenarios.",
+      "abstract_zh": "现代驾驶动作模型在自我改进循环中不断提升，其中学习到的世界模拟器想象未来的观察结果，并将生成的数据反馈用于优化动作模型。然而，这一循环的瓶颈在于模拟器无法生成周围代理的行为上合理的反应，使得生成的数据在交互上既不真实又在分布上不平衡。我们提出了BehaviorWorldGen，一个通过可控的行为感知结构化世界生成来闭合动作模型与世界模拟器之间循环的框架。其核心组件是BehaviorFlow，一个元动作条件的交通流模型，注入可解释的行为控制，并共同生成多代理的滚动轨迹。BehaviorFlow实现了指定的代理行为，同时允许周围车辆对自我和彼此做出反应。生成的滚动轨迹由世界模拟器渲染为真实的多视角观察，并与经过修正的交互感知轨迹配对，以便于动作模型的优化。由于BehaviorWorldGen使用结构化轨迹作为其模块之间的接口，因此它与多种动作模型和世界模拟器兼容。在世界生成、场景外推和策略优化的实验中，表现出一致的改进，最大的收益集中在困难的交互场景上。",
+      "authors": [
+        "Jiaqi Wang",
+        "Zhuo Zhang",
+        "Haining Guan",
+        "Tingguang Zhou",
+        "Haowen Cui",
+        "Zhongyang Zhu",
+        "Yulong Zheng",
+        "ChuanYe Wang",
+        "Xuefeng Chen",
+        "Zhen Yang",
+        "Tianchen Deng",
+        "Feiyang Tan",
+        "Hangning Zhou",
+        "Bo Dai",
+        "Lixia Shen",
+        "Xiwu Chen",
+        "Xiyang Wang",
+        "Jiajun Zhu"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.22187",
+      "tags": [
+        "世界模型/生成",
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "BehaviorWorldGen: Closing the Loop between Action Models and World Simulators via Controllable Behavior-Aware Structured World Generation",
+      "title_zh": "行为世界生成：通过可控的行为感知结构化世界生成闭合动作模型与世界模拟器之间的循环",
+      "url": "/daily/2026-08-25/#paper-2608-22187"
+    },
+    {
+      "abstract": "Learning adjacency matrices from node-link images is a fundamental problem for recovering structured graph information from visual observations. Existing methods typically rely on fixed KNN-based heuristics for candidate edge selection and fail to capture dependencies among edges. To overcome these limitations, we propose VisAdj, a new framework for topology-aware adjacency prediction. VisAdj introduces an attention-sparse neighbor sampler to adaptively select a high-recall set of candidate node pairs and performs joint edge inference using a line-graph transformer that treats candidate edges as tokens and explicitly models dependencies among incident edges. Extensive experiments on synthetic graphs, road networks, and vessel images demonstrate that VisAdj consistently outperforms existing baselines by clear margins.",
+      "abstract_zh": "从节点-链接图像中学习邻接矩阵是从视觉观察中恢复结构化图信息的一个基本问题。现有的方法通常依赖于固定的基于 KNN 的启发式方法进行候选边的选择，未能捕捉边之间的依赖关系。为克服这些局限性，我们提出了 VisAdj，一个新的拓扑感知邻接预测框架。VisAdj 引入了一种注意力稀疏邻居采样器，以自适应选择高召回率的候选节点对，并使用线图变换器进行联合边推断，该变换器将候选边视为标记，并明确建模事件边之间的依赖关系。在合成图、道路网络和血管图像上的大量实验表明，VisAdj 在性能上始终明显优于现有基线。",
+      "authors": [
+        "Jiahao Xie",
+        "Guangmo Tong"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.21825",
+      "tags": [
+        "地图/定位",
+        "感知"
+      ],
+      "title": "VisAdj: Learning Adjacency Matrices from Node-Link Images",
+      "title_zh": "VisAdj：从节点-链接图像中学习邻接矩阵",
+      "url": "/daily/2026-08-25/#paper-2608-21825"
+    },
+    {
+      "abstract": "With the advance of deep neural networks, the quality of disparity maps obtained through stereo matching has steadily improved. However, existing stereo matching methods still struggle to preserve fine-grained geometric details, resulting in blurred edges and over-smoothed predictions in challenging regions. To address these limitations, we propose StereoDiffuer, an iterative diffusion-based stereo matching framework that explicitly models geometric details and progressively refines disparity estimates. The framework incorporates a Saliency Attention Perception (SAP) module to extract salient geometric cues, including object boundaries, thin structures, and sharp edges. Confidence-guided SAP features are combined with the initial disparity estimate to condition an iterative denoising diffusion process, which corrects residual disparity errors and restores geometric details suppressed during cost-volume regularization and upsampling. Experimental results on the Scene Flow and KITTI benchmarks demonstrate the effectiveness of the proposed framework and its competitive performance relative to the compared stereo matching methods.",
+      "abstract_zh": "随着深度神经网络的发展，通过立体匹配获得的视差图质量稳步提高。然而，现有的立体匹配方法仍然难以保留细粒度的几何细节，导致在复杂区域出现模糊的边缘和过度平滑的预测。为了解决这些局限性，我们提出了StereoDiffuer，一种迭代的基于扩散的立体匹配框架，该框架明确建模几何细节并逐步细化视差估计。该框架结合了显著性注意感知（Saliency Attention Perception, SAP）模块，以提取显著的几何线索，包括物体边界、细结构和锐利边缘。基于置信度的SAP特征与初始视差估计相结合，以条件化迭代去噪扩散过程，从而纠正残余视差误差并恢复在代价体积正则化和上采样过程中被抑制的几何细节。在Scene Flow和KITTI基准上的实验结果证明了所提框架的有效性及其相对于比较的立体匹配方法的竞争性能。",
+      "authors": [
+        "Bohan Li"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.21710",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "世界模型/生成"
+      ],
+      "title": "StereoDiffuer: Diffusion-based Progressive Geometry Modeling with Saliency Attention Perception for Stereo Matching",
+      "title_zh": "StereoDiffuer：基于扩散的渐进几何建模与显著性注意感知用于立体匹配",
+      "url": "/daily/2026-08-25/#paper-2608-21710"
+    },
+    {
+      "abstract": "Vision-language-action (VLA) models have advanced end-to-end autonomous driving by leveraging foundation models for semantic reasoning and long-tail generalization. However, their planning performance remains limited in complex driving environments because image-only representations inadequately capture planning-relevant road geometry and topology. In this paper, we propose Geo-VLA, a plug-and-play framework that enhances VLA models by learning geometry-aware visual representations. During training, Geo-VLA internalizes geometric map semantics to strengthen road-structure representations, while requiring no HD maps or additional lane information during inference. To support this approach, we introduce Geo-QA, a geometry-focused question-answering dataset that injects road geometry into vision-language representations through contrastive learning and instruction tuning. Experiments on NAVSIM v1 demonstrate that Geo-VLA consistently improves VLA planners with distinct action-generation architectures, achieving 92.1 PDMS and establishing a new state-of-the-art among single-camera VLA planners.",
+      "abstract_zh": "视觉-语言-动作（VLA）模型通过利用基础模型进行语义推理和长尾泛化，推动了端到端自主驾驶的发展。然而，由于仅依赖图像的表示无法充分捕捉与规划相关的道路几何和拓扑信息，其规划性能在复杂驾驶环境中仍然有限。本文提出了Geo-VLA，一个即插即用的框架，通过学习几何感知的视觉表示来增强VLA模型。在训练过程中，Geo-VLA内化几何地图语义，以增强道路结构的表示，同时在推理时不需要高清地图或额外的车道信息。为支持这一方法，我们引入了Geo-QA，一个以几何为中心的问题回答数据集，通过对比学习和指令调优将道路几何信息注入视觉-语言表示。NAVSIM v1上的实验表明，Geo-VLA在具有不同动作生成架构的VLA规划器中始终提升性能，达到了92.1 PDMS，并在单摄像头VLA规划器中建立了新的最先进水平。",
+      "authors": [
+        "Ran Chen",
+        "Jiaxing Ren",
+        "Zhikun Zhang",
+        "Yunhao Hou",
+        "Junbao Zhuo",
+        "Bochao Zou"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.21440",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "深度/几何"
+      ],
+      "title": "Geo-VLA: Geometry-Aware Vision-Language-Action Planning via Internalization of Map Semantics",
+      "title_zh": "Geo-VLA：通过地图语义的内化实现几何感知的视觉-语言-动作规划",
+      "url": "/daily/2026-08-25/#paper-2608-21440"
+    },
+    {
+      "abstract": "Autonomous driving risk identification aims to determine which observed object is likely to become safety-critical to the ego vehicle. Existing approaches typically predict scene-level accidents, infer risk objects indirectly from ego behavior, or apply geometric checks after trajectory forecasting, without directly using predicted ego--object relations for risk-source localization. We propose RiskWorld, an object-centric latent world model that identifies risk from the imagined evolution of each candidate relative to the ego vehicle. RiskWorld combines pretrained predictive video representations with structured ego--object histories, contextualizes observed interactions, and rolls relation-aware object states into the future using RSSM-style latent dynamics. It decodes the rollout into object-level risk scores, supported by auxiliary future-relation and temporal-risk predictions. Inference uses only observations up to the current time, while logged futures provide training supervision. On RiskBench, RiskWorld achieves the best overall F1 of 63.0\\% and the lowest false-alarm rate of 2.1\\%. Further analyses show that the learned rollout captures the evolution of object-level risk before critical events, while RiskWorld's selections preserve planning-critical information under filtered observation.",
+      "abstract_zh": "自主驾驶风险识别旨在确定哪些观察到的对象可能对自我车辆的安全构成威胁。现有方法通常预测场景级事故，间接推断风险对象通过自我行为，或在轨迹预测后应用几何检查，而未直接利用预测的自我-对象关系进行风险源定位。我们提出了RiskWorld，一种对象中心的潜在世界模型，通过想象每个候选对象相对于自我车辆的演变来识别风险。RiskWorld结合了预训练的预测视频表示与结构化的自我-对象历史，情境化观察到的交互，并使用RSSM风格的潜在动态将关系感知的对象状态向未来滚动。它将滚动解码为对象级风险评分，并辅以辅助的未来关系和时间风险预测。推断仅使用截至当前时间的观察，而记录的未来提供训练监督。在RiskBench上，RiskWorld实现了最佳的整体F1值63.0%和最低的误报率2.1%。进一步分析表明，学习到的滚动捕捉了关键事件之前对象级风险的演变，而RiskWorld的选择在过滤观察下保留了规划关键的信息。",
+      "authors": [
+        "Jingzheng Li",
+        "Yufei Ge",
+        "Qianren Mao",
+        "Zhijun Chen",
+        "Bing Li",
+        "Xingyu Peng",
+        "Baochang Zhang",
+        "Xianglong Liu"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.21414",
+      "tags": [
+        "预测/规划",
+        "地图/定位",
+        "安全/异常"
+      ],
+      "title": "RiskWorld: Object-Centric Latent World Modeling for Autonomous Driving Risk Identification",
+      "title_zh": "RiskWorld：面向自主驾驶风险识别的对象中心潜在世界建模",
+      "url": "/daily/2026-08-25/#paper-2608-21414"
+    },
+    {
+      "abstract": "Forecasting pedestrian motion has always been fundamental for autonomous navigation in crowded environments. While attention-based methods achieve strong performance, they suffer from quadratic computational complexity in modeling social interactions, limiting scalability. Additionally, the existing methods often achieve high accuracy on prediction benchmarks at the individual level, but fail to fully capture the natural movement behaviors of crowds in real-world scenarios, particularly group structures. In this study, we propose Social Graph Mamba (SGM), a novel architecture that replaces attention-based social reasoning with Selective State Space Models (SSMs) operating on dynamically constructed interaction graphs. SGM introduces a dynamic interaction graph with social triplet factorization to decompose crowd interactions sequentially, and a community-aware module to effectively discover group structures via differentiable MinCut optimization and conditions both the embedding space and multi-modal decoder on group membership. Our experiments on standard benchmarks (ETH/UCY, SDD) demonstrate competitive performance with linear sequence complexity compared to quadratic attention-based methods. We further validate SGM in physical robot experiments by integrating predicted trajectories into a Social Force Model (SFM) for real-world implementation.",
+      "abstract_zh": "行人运动预测一直是拥挤环境中自主导航的基础。尽管基于注意力的方法在性能上表现出色，但在建模社交互动时存在二次计算复杂度的问题，限制了其可扩展性。此外，现有方法在个体层面的预测基准上通常能达到高准确率，但未能充分捕捉现实场景中人群的自然运动行为，特别是群体结构。在本研究中，我们提出了社交图Mamba（Social Graph Mamba，SGM），这是一种新颖的架构，用选择性状态空间模型（Selective State Space Models，SSMs）替代基于注意力的社交推理，后者在动态构建的互动图上运行。SGM引入了一个动态互动图，通过社交三元组分解逐步分解人群互动，并通过可微分的最小割优化有效发现群体结构，同时对嵌入空间和多模态解码器施加群体成员资格的条件。我们在标准基准（ETH/UCY，SDD）上的实验表明，与基于注意力的二次方法相比，SGM在序列复杂度上具有线性竞争性能。我们进一步通过将预测轨迹整合到社交力模型（Social Force Model，SFM）中，在物理机器人实验中验证了SGM的实际应用。",
+      "authors": [
+        "Hong-Son Nguyen",
+        "Yen-Chen Liu"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.21411",
+      "tags": [
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "Social Graph Mamba: Forecasting Pedestrian Movements Based on Social Context",
+      "title_zh": "社交图Mamba：基于社交背景的行人运动预测",
+      "url": "/daily/2026-08-25/#paper-2608-21411"
+    },
+    {
+      "abstract": "Dense traffic is inherently interactive. The ego vehicle and surrounding agents continuously influence each other's reactions, making \"what-if\" reasoning essential for safe and efficient driving. To enable such an active interaction-aware behavior, we propose a planning framework that integrates an ego-conditioned generative autoregressive prediction model within Model Predictive Path Integral (MPPI) control. The generative prediction model outputs stochastic, multi-modal predictions of surrounding agents conditioned on each of the ego's considered future actions. A nested sampling scheme enables tractable evaluation of expected cost and collision risk under the induced distribution. This formulation allows the ego to actively probe how different candidate actions shape the interaction outcomes and to identify actions that reduce ambiguity in uncertain interactions. Closed-loop simulations demonstrate improved safety and efficiency compared to conventional predict-then-plan and passive interaction-aware approaches.",
+      "abstract_zh": "密集交通本质上是互动的。自我车辆与周围代理之间不断相互影响反应，使得“假设”推理对于安全和高效驾驶至关重要。为了实现这种主动的交互感知行为，我们提出了一种规划框架，该框架将自我条件生成自回归预测模型集成到模型预测路径积分（MPPI）控制中。生成预测模型输出基于自我车辆考虑的未来动作的随机多模态预测。嵌套采样方案使得在诱导分布下对期望成本和碰撞风险进行可处理的评估成为可能。这种公式化允许自我车辆主动探测不同候选动作如何塑造交互结果，并识别减少不确定交互中模糊性的动作。闭环仿真表明，与传统的先预测后规划和被动交互感知方法相比，安全性和效率得到了改善。",
+      "authors": [
+        "Khaled A. Mustafa",
+        "Mohamed-Khalil Bouzidi",
+        "Christian Schlauch",
+        "Ahmad Gazar",
+        "Nadja Klein",
+        "Joerg Reichardt",
+        "Javier Alonso-Mora"
+      ],
+      "date": "2026-08-25",
+      "id": "2608.21400",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Active Interaction-Aware Model Predictive Path Integral via Ego-Conditioned Generative Predictions",
+      "title_zh": "基于自我条件生成预测的主动交互感知模型预测路径积分",
+      "url": "/daily/2026-08-25/#paper-2608-21400"
+    },
     {
       "abstract": "Accurate prediction of off-road vehicle motion over deformable terrain remains challenging because sinkage, slip, and traction vary with local soil conditions. Existing learning-based kinodynamic models directly approximate vehicle-terrain interactions from data but do not explicitly represent soil mechanics and offer limited physical interpretability. To address these limitations, we present NeSAM, a neuro-symbolic framework that combines differentiable Bekker-Wong terramechanics with learned terrain representations and a Transformer-based residual dynamics model for long-horizon, six degree-of-freedom kinodynamic prediction. The terramechanics component models soil-dependent interaction forces, while the residual model corrects discrepancies between the analytical prediction and the observed vehicle dynamics. NeSAM further estimates physically meaningful soil parameters from terrain observations and updates them online using an extended Kalman filter. We evaluate NeSAM in Verti-Bench, a simulator built on the Chrono multiphysics engine, and validate its performance on a physical Verti-4-Wheeler platform. NeSAM improves prediction accuracy by up to 30% in simulation and 29% on real-world data relative to the strongest compared baselines. When integrated with a close-loop navigation controller, NeSAM further improves traversal success rate through online soil adaptation while reduces Hausdorff distance to the reference trajectory by 69.4%, indicating improved trajectory tracking accuracy.",
       "abstract_zh": "在可变形地形上准确预测越野车辆的运动仍然具有挑战性，因为沉陷、滑移和牵引力会随着局部土壤条件而变化。现有的基于学习的动力学模型直接从数据中近似车辆与地形的交互，但并未明确表示土壤力学，并且物理可解释性有限。为了解决这些局限性，我们提出了NeSAM，一个神经符号框架，结合了可微分的Bekker-Wong土力学模型、学习到的地形表示和基于Transformer的残差动力学模型，用于长时间跨度的六自由度动力学预测。土力学组件建模了依赖于土壤的交互力，而残差模型则修正了分析预测与观察到的车辆动态之间的差异。NeSAM进一步从地形观测中估计物理意义明确的土壤参数，并使用扩展卡尔曼滤波器在线更新这些参数。我们在基于Chrono多物理引擎构建的Verti-Bench模拟器中评估NeSAM，并在物理Verti-4-Wheeler平台上验证其性能。与最强的对比基线相比，NeSAM在模拟中提高了预测精度达30%，在真实数据中提高了29%。当与闭环导航控制器集成时，NeSAM通过在线土壤适应进一步提高了穿越成功率，同时将Hausdorff距离减少了69.4%，表明轨迹跟踪精度得到了改善。",

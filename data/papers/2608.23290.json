@@ -1,0 +1,50 @@
+{
+  "abstract": "Accurate visual localization on robotic and wearable platforms remains challenging in dense urban environments. Existing methodologies typically rely on GPS for absolute positioning, yet GPS signals frequently degrade in urban canyons due to multipath propagation. Consequently, standard solutions like visual odometry suffer from unmitigated drift over time, while map-matching techniques struggle to acquire the reliable GPS priors they need, on top of being too computationally heavy for real-time edge execution. To address these limitations, we propose Spotter, a robuts and real-time visual localization framework that uses building facades as a reliable source of global geo-reference, while retaining the capability to integrate GPS signals when available. In an offline stage, Spotter processes Google Street View panoramas by semantically segmenting facades and pairing multi-view stereo depth with cartographic data to build a compact metric database. At runtime, query images are matched via a cascaded retrieval and geometric verification pipeline to recover fine-grained global camera localization. We benchmark Spotter on a newly collected dataset of pedestrian sequences acquired with wearable smart glasses across several districts of Barcelona. Experimental results show that Spotter outperforms odometry-based baselines and achieves localization accuracy comparable to state-of-the-art map-based methods while operating at significantly higher frame rates.",
+  "abstract_zh": "在密集城市环境中，机器人和可穿戴平台的准确视觉定位仍然面临挑战。现有的方法通常依赖GPS进行绝对定位，但由于多径传播，GPS信号在城市峡谷中经常衰减。因此，标准解决方案如视觉里程计随着时间的推移会遭遇不可避免的漂移，而地图匹配技术则难以获取所需的可靠GPS先验信息，并且在实时边缘执行时计算负担过重。为了解决这些局限性，我们提出了Spotter，一个稳健且实时的视觉定位框架，利用建筑立面作为可靠的全球地理参考源，同时在可用时保留集成GPS信号的能力。在离线阶段，Spotter通过对Google街景全景进行语义分割和将多视角立体深度与制图数据配对，构建一个紧凑的度量数据库。在运行时，查询图像通过级联检索和几何验证管道进行匹配，以恢复精细的全球相机定位。我们在一个新收集的行人序列数据集上对Spotter进行了基准测试，该数据集是通过可穿戴智能眼镜在巴塞罗那的多个区域获取的。实验结果表明，Spotter的性能优于基于里程计的基线，并且在显著更高的帧率下实现了与最先进的基于地图的方法相当的定位精度。",
+  "arxiv_id": "2608.23290",
+  "arxiv_url": "https://arxiv.org/abs/2608.23290v1",
+  "authors": [
+    "Antoni Valls",
+    "Jordi Sanchez-Riera"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-23290",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.697234+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.23290v1",
+  "published_at": "2026-08-24T14:15:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "visual localization",
+      "robotic"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.23290v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "Spotter: Efficient Urban Visual Localization via Geo-Referenced Facade Landmarks in GPS-Degraded Environments",
+  "title_zh": "Spotter：在GPS信号衰减环境中通过地理参考建筑立面标志实现高效城市视觉定位",
+  "translation_url": "https://hjfy.top/arxiv/2608.23290"
+}

@@ -1,0 +1,57 @@
+{
+  "abstract": "Dense traffic is inherently interactive. The ego vehicle and surrounding agents continuously influence each other's reactions, making \"what-if\" reasoning essential for safe and efficient driving. To enable such an active interaction-aware behavior, we propose a planning framework that integrates an ego-conditioned generative autoregressive prediction model within Model Predictive Path Integral (MPPI) control. The generative prediction model outputs stochastic, multi-modal predictions of surrounding agents conditioned on each of the ego's considered future actions. A nested sampling scheme enables tractable evaluation of expected cost and collision risk under the induced distribution. This formulation allows the ego to actively probe how different candidate actions shape the interaction outcomes and to identify actions that reduce ambiguity in uncertain interactions. Closed-loop simulations demonstrate improved safety and efficiency compared to conventional predict-then-plan and passive interaction-aware approaches.",
+  "abstract_zh": "密集交通本质上是互动的。自我车辆与周围代理之间不断相互影响反应，使得“假设”推理对于安全和高效驾驶至关重要。为了实现这种主动的交互感知行为，我们提出了一种规划框架，该框架将自我条件生成自回归预测模型集成到模型预测路径积分（MPPI）控制中。生成预测模型输出基于自我车辆考虑的未来动作的随机多模态预测。嵌套采样方案使得在诱导分布下对期望成本和碰撞风险进行可处理的评估成为可能。这种公式化允许自我车辆主动探测不同候选动作如何塑造交互结果，并识别减少不确定交互中模糊性的动作。闭环仿真表明，与传统的先预测后规划和被动交互感知方法相比，安全性和效率得到了改善。",
+  "arxiv_id": "2608.21400",
+  "arxiv_url": "https://arxiv.org/abs/2608.21400v1",
+  "authors": [
+    "Khaled A. Mustafa",
+    "Mohamed-Khalil Bouzidi",
+    "Christian Schlauch",
+    "Ahmad Gazar",
+    "Nadja Klein",
+    "Joerg Reichardt",
+    "Javier Alonso-Mora"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-21400",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.470369+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.21400v1",
+  "published_at": "2026-08-06T22:51:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "ego vehicle",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 58
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.21400v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Active Interaction-Aware Model Predictive Path Integral via Ego-Conditioned Generative Predictions",
+  "title_zh": "基于自我条件生成预测的主动交互感知模型预测路径积分",
+  "translation_url": "https://hjfy.top/arxiv/2608.21400"
+}

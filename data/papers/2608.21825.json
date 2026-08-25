@@ -1,0 +1,48 @@
+{
+  "abstract": "Learning adjacency matrices from node-link images is a fundamental problem for recovering structured graph information from visual observations. Existing methods typically rely on fixed KNN-based heuristics for candidate edge selection and fail to capture dependencies among edges. To overcome these limitations, we propose VisAdj, a new framework for topology-aware adjacency prediction. VisAdj introduces an attention-sparse neighbor sampler to adaptively select a high-recall set of candidate node pairs and performs joint edge inference using a line-graph transformer that treats candidate edges as tokens and explicitly models dependencies among incident edges. Extensive experiments on synthetic graphs, road networks, and vessel images demonstrate that VisAdj consistently outperforms existing baselines by clear margins.",
+  "abstract_zh": "从节点-链接图像中学习邻接矩阵是从视觉观察中恢复结构化图信息的一个基本问题。现有的方法通常依赖于固定的基于 KNN 的启发式方法进行候选边的选择，未能捕捉边之间的依赖关系。为克服这些局限性，我们提出了 VisAdj，一个新的拓扑感知邻接预测框架。VisAdj 引入了一种注意力稀疏邻居采样器，以自适应选择高召回率的候选节点对，并使用线图变换器进行联合边推断，该变换器将候选边视为标记，并明确建模事件边之间的依赖关系。在合成图、道路网络和血管图像上的大量实验表明，VisAdj 在性能上始终明显优于现有基线。",
+  "arxiv_id": "2608.21825",
+  "arxiv_url": "https://arxiv.org/abs/2608.21825v1",
+  "authors": [
+    "Jiahao Xie",
+    "Guangmo Tong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-21825",
+  "categories": [
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.752393+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.21825v1",
+  "published_at": "2026-08-22T07:48:24Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.21825v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "本文研究如何从节点-链接图像中恢复图结构和邻接关系，提出结合自适应候选边采样与线图 Transformer 的拓扑感知预测方法。其在道路网络图像上的应用与自动驾驶中的道路拓扑提取、地图构建和地图更新具有间接关联，但论文并非面向自动驾驶系统的专门研究。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "VisAdj: Learning Adjacency Matrices from Node-Link Images",
+  "title_zh": "VisAdj：从节点-链接图像中学习邻接矩阵",
+  "translation_url": "https://hjfy.top/arxiv/2608.21825"
+}

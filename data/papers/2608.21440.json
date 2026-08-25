@@ -1,0 +1,61 @@
+{
+  "abstract": "Vision-language-action (VLA) models have advanced end-to-end autonomous driving by leveraging foundation models for semantic reasoning and long-tail generalization. However, their planning performance remains limited in complex driving environments because image-only representations inadequately capture planning-relevant road geometry and topology. In this paper, we propose Geo-VLA, a plug-and-play framework that enhances VLA models by learning geometry-aware visual representations. During training, Geo-VLA internalizes geometric map semantics to strengthen road-structure representations, while requiring no HD maps or additional lane information during inference. To support this approach, we introduce Geo-QA, a geometry-focused question-answering dataset that injects road geometry into vision-language representations through contrastive learning and instruction tuning. Experiments on NAVSIM v1 demonstrate that Geo-VLA consistently improves VLA planners with distinct action-generation architectures, achieving 92.1 PDMS and establishing a new state-of-the-art among single-camera VLA planners.",
+  "abstract_zh": "视觉-语言-动作（VLA）模型通过利用基础模型进行语义推理和长尾泛化，推动了端到端自主驾驶的发展。然而，由于仅依赖图像的表示无法充分捕捉与规划相关的道路几何和拓扑信息，其规划性能在复杂驾驶环境中仍然有限。本文提出了Geo-VLA，一个即插即用的框架，通过学习几何感知的视觉表示来增强VLA模型。在训练过程中，Geo-VLA内化几何地图语义，以增强道路结构的表示，同时在推理时不需要高清地图或额外的车道信息。为支持这一方法，我们引入了Geo-QA，一个以几何为中心的问题回答数据集，通过对比学习和指令调优将道路几何信息注入视觉-语言表示。NAVSIM v1上的实验表明，Geo-VLA在具有不同动作生成架构的VLA规划器中始终提升性能，达到了92.1 PDMS，并在单摄像头VLA规划器中建立了新的最先进水平。",
+  "arxiv_id": "2608.21440",
+  "arxiv_url": "https://arxiv.org/abs/2608.21440v1",
+  "authors": [
+    "Ran Chen",
+    "Jiaxing Ren",
+    "Zhikun Zhang",
+    "Yunhao Hou",
+    "Junbao Zhuo",
+    "Bochao Zou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-21440",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.479624+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.21440v1",
+  "published_at": "2026-08-18T08:25:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "road",
+      "lane",
+      "驾驶",
+      "道路",
+      "车道",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 67
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.21440v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "深度/几何"
+    ]
+  },
+  "title": "Geo-VLA: Geometry-Aware Vision-Language-Action Planning via Internalization of Map Semantics",
+  "title_zh": "Geo-VLA：通过地图语义的内化实现几何感知的视觉-语言-动作规划",
+  "translation_url": "https://hjfy.top/arxiv/2608.21440"
+}

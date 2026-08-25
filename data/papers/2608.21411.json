@@ -1,0 +1,49 @@
+{
+  "abstract": "Forecasting pedestrian motion has always been fundamental for autonomous navigation in crowded environments. While attention-based methods achieve strong performance, they suffer from quadratic computational complexity in modeling social interactions, limiting scalability. Additionally, the existing methods often achieve high accuracy on prediction benchmarks at the individual level, but fail to fully capture the natural movement behaviors of crowds in real-world scenarios, particularly group structures. In this study, we propose Social Graph Mamba (SGM), a novel architecture that replaces attention-based social reasoning with Selective State Space Models (SSMs) operating on dynamically constructed interaction graphs. SGM introduces a dynamic interaction graph with social triplet factorization to decompose crowd interactions sequentially, and a community-aware module to effectively discover group structures via differentiable MinCut optimization and conditions both the embedding space and multi-modal decoder on group membership. Our experiments on standard benchmarks (ETH/UCY, SDD) demonstrate competitive performance with linear sequence complexity compared to quadratic attention-based methods. We further validate SGM in physical robot experiments by integrating predicted trajectories into a Social Force Model (SFM) for real-world implementation.",
+  "abstract_zh": "行人运动预测一直是拥挤环境中自主导航的基础。尽管基于注意力的方法在性能上表现出色，但在建模社交互动时存在二次计算复杂度的问题，限制了其可扩展性。此外，现有方法在个体层面的预测基准上通常能达到高准确率，但未能充分捕捉现实场景中人群的自然运动行为，特别是群体结构。在本研究中，我们提出了社交图Mamba（Social Graph Mamba，SGM），这是一种新颖的架构，用选择性状态空间模型（Selective State Space Models，SSMs）替代基于注意力的社交推理，后者在动态构建的互动图上运行。SGM引入了一个动态互动图，通过社交三元组分解逐步分解人群互动，并通过可微分的最小割优化有效发现群体结构，同时对嵌入空间和多模态解码器施加群体成员资格的条件。我们在标准基准（ETH/UCY，SDD）上的实验表明，与基于注意力的二次方法相比，SGM在序列复杂度上具有线性竞争性能。我们进一步通过将预测轨迹整合到社交力模型（Social Force Model，SFM）中，在物理机器人实验中验证了SGM的实际应用。",
+  "arxiv_id": "2608.21411",
+  "arxiv_url": "https://arxiv.org/abs/2608.21411v1",
+  "authors": [
+    "Hong-Son Nguyen",
+    "Yen-Chen Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-21411",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.475123+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.21411v1",
+  "published_at": "2026-08-11T12:02:11Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "pedestrian",
+      "行人",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.21411v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "本文面向拥挤环境中的自主导航，提出社交图Mamba行人运动预测模型。该方法利用动态交互图、社交三元组分解和选择性状态空间模型，以线性复杂度建模行人及群体结构，并通过社区感知模块改善多模态轨迹预测。在ETH/UCY和SDD数据集上的实验显示了具有竞争力的性能，且通过与社交力模型结合在实体机器人上进行了验证。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Social Graph Mamba: Forecasting Pedestrian Movements Based on Social Context",
+  "title_zh": "社交图Mamba：基于社交背景的行人运动预测",
+  "translation_url": "https://hjfy.top/arxiv/2608.21411"
+}

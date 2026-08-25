@@ -1,0 +1,60 @@
+{
+  "abstract": "Achieving 360{\\deg} coverage is critical for the visual perception systems of autonomous vehicles. Fisheye cameras offer a cost-effective solution by enabling full surround coverage with as few as two sensors. However, existing multi-view fisheye datasets are limited, and synthesizing rare corner cases typically requires computationally expensive 3D simulations, hindering the training. While generative models have achieved significant success in standard perspective imagery, their application to wide-angle distortion remains unexplored. In this work, we formally introduce the novel problem of multi-view fisheye image generation conditioned on volumetric semantic representations and present two distinct methods. We first propose SyntheOcc-FE, which adapts the SyntheOcc architecture to fisheye data. While effective, this method is constrained by the scarcity of fisheye datasets, which limits its generalization. To overcome these limitations, we propose our second method, MIVIFI (multi-view fisheye), which leverages cross-domain learning with Equirectangular Projections. By bridging the gap between dataset domains using KITTI-360 fisheye images alongside nuScenes multi-view standard images, our approach enables high-fidelity manipulation of scene content. This framework enables the structural modification of semantic occupancy inputs to introduce or eliminate specific actors and facilitates the rendering of diverse meteorological conditions and illumination scenarios absent in the limited fisheye datasets. Quantitative and qualitative experiments demonstrate that our methods achieve robust photorealistic multi-view fisheye image generation and highlight the specific advantages of our cross-domain strategy for handling data scarcity.",
+  "abstract_zh": "实现360°覆盖对于自主车辆的视觉感知系统至关重要。鱼眼相机通过仅使用两个传感器即可实现全面覆盖，提供了一种具有成本效益的解决方案。然而，现有的多视角鱼眼数据集有限，合成稀有角落案例通常需要计算成本高昂的3D模拟，阻碍了训练。尽管生成模型在标准透视图像中取得了显著成功，但其在广角畸变中的应用仍未被探索。在本研究中，我们正式引入了基于体积语义表示的多视角鱼眼图像生成这一新问题，并提出了两种不同的方法。我们首先提出了SyntheOcc-FE，该方法将SyntheOcc架构调整为适应鱼眼数据。尽管有效，但该方法受到鱼眼数据集稀缺的限制，限制了其泛化能力。为克服这些限制，我们提出了第二种方法MIVIFI（多视角鱼眼），该方法利用等距投影进行跨域学习。通过使用KITTI-360鱼眼图像与nuScenes多视角标准图像之间的桥接，我们的方法实现了场景内容的高保真操控。该框架使得对语义占用输入的结构性修改成为可能，以引入或消除特定的参与者，并促进渲染在有限鱼眼数据集中缺失的多样气象条件和光照场景。定量和定性实验表明，我们的方法实现了稳健的照片级真实感多视角鱼眼图像生成，并突出了我们跨域策略在处理数据稀缺方面的具体优势。",
+  "arxiv_id": "2608.23140",
+  "arxiv_url": "https://arxiv.org/abs/2608.23140v1",
+  "authors": [
+    "Matthias Neuwirth-Trapp",
+    "Begüm Altunbas",
+    "Jiayi Wang",
+    "Yan Xia",
+    "Maarten Bieshaar",
+    "Xinyu Huang",
+    "Daniel Cremers"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-25#paper-2608-23140",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-25T14:21:54.681351+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.23140v1",
+  "published_at": "2026-08-24T11:46:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "nuscenes",
+      "kitti",
+      "kitti-360",
+      "autonomous",
+      "车辆",
+      "occupancy"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.23140v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "MIVIFI: Bridging Perspective and Fisheye Domains for Training Multi-View Fisheye Image Generation Models",
+  "title_zh": "MIVIFI：桥接视角和鱼眼域以训练多视角鱼眼图像生成模型",
+  "translation_url": "https://hjfy.top/arxiv/2608.23140"
+}
