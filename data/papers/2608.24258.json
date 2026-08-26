@@ -1,0 +1,49 @@
+{
+  "abstract": "AI systems are increasingly evaluated for legally accountable settings, where correct outputs must also be justifiable against an applicable legal standard. Existing legal-AI benchmarks and LLM-as-judge protocols provide important infrastructure for measuring task performance and open-ended response quality. We contribute one additional evaluation signal: a dual-judge protocol that pairs a standard 0-10 quality judge with a strict binary semantic-equivalence judge against a human-curated reference. We study a controlled, visually grounded regulatory task - UK traffic-sign interpretation, whose meaning is a codified question with a known reference for every input - and measure not merely whether the two judges disagree (by construction they must) but how much and where. On 4,680 evaluations under seven visibility levels and two occlusion modes, the two judges are moderately associated (point-biserial r = 0.644), while revealing an asymmetric Type II pattern affecting 8.0% of all evaluations. Its distribution is instructive: the marginal rate peaks at high visibility (14.2% at v = 0.8) simply because high-scoring answers are common there, but conditioned on the answer already scoring above 7, the rate is highest under heavy occlusion (54-63% at v <= 0.3), so a high quality score is least trustworthy when the input is most degraded. We are explicit that the signal is a property of this judge and reference: a 49-row human check shows the 0-10 judge aligns closely with everyday-reader judgement (Pearson r = 0.81; r = 0.80 with the LLM accuracy sub-score), while the equivalence judge is fairly but one-directionally stricter. The protocol adds one LLM call per evaluation and surfaces a signal single-judge protocols do not report. We release the prompt template, occluded variants, and full evaluation results.",
+  "abstract_zh": "人工智能系统在法律可追责的环境中越来越受到评估，其中正确的输出必须能够根据适用的法律标准进行合理解释。现有的法律人工智能基准和以大型语言模型（LLM）作为评判者的协议为测量任务表现和开放式响应质量提供了重要基础设施。我们贡献了一个额外的评估信号：一种双评估协议，将标准的0-10质量评判者与严格的二元语义等价评判者配对，后者是针对人工策划的参考进行评估。我们研究了一个受控的、视觉基础的监管任务——英国交通标志解读，其含义是一个有明确参考的法典化问题。我们不仅测量两个评判者是否存在分歧（由于构造原因，它们必然存在），还测量分歧的程度和位置。在七个可见度水平和两种遮挡模式下进行的4680次评估中，这两个评判者之间的相关性适中（点二元相关系数 r = 0.644），同时揭示出影响8.0%所有评估的非对称类型II模式。其分布具有启发性：边际率在高可见度下达到峰值（在 v = 0.8 时为14.2%），这仅仅是因为高分答案在此处较为常见，但在已经得分超过7的答案条件下，重度遮挡下的比率最高（在 v <= 0.3 时为54-63%），因此，当输入最受损时，高质量评分的可信度最低。我们明确指出，该信号是该评判者和参考的属性：一项49行的人类检查显示，0-10评判者与日常读者的判断高度一致（Pearson r = 0.81；与LLM准确性子评分的相关系数 r = 0.80），而等价评判者则相对但单向地更严格。该协议为每次评估增加了一次LLM调用，并提供了单评判协议未报告的信号。我们发布了提示模板、遮挡变体和完整评估结果。",
+  "arxiv_id": "2608.24258",
+  "arxiv_url": "https://arxiv.org/abs/2608.24258v1",
+  "authors": [
+    "Su Myat Noe",
+    "Ha Thanh Nguyen",
+    "May Myo Zin",
+    "Ken Satoh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-26#paper-2608-24258",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-26T14:20:35.282235+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.24258v1",
+  "published_at": "2026-08-25T08:49:46Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.24258v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-26"
+  },
+  "summary_zh": "本文提出一种面向视觉语言模型的双评判评估协议，将连续质量评分与严格的语义等价判断结合，用于评估英国交通标志解读任务。研究覆盖不同可见度和遮挡条件，发现严重遮挡下即使答案获得较高质量分，其法律语义等价性仍可能不可靠。该方法可用于自动驾驶交通标志感知及其在退化视觉条件下的安全性评估。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Beyond Accuracy: A Dual-Judge Evaluation Protocol for Vision-Language Models in Legally Grounded Tasks",
+  "title_zh": "超越准确性：一种用于法律基础任务的视觉-语言模型双评估协议",
+  "translation_url": "https://hjfy.top/arxiv/2608.24258"
+}

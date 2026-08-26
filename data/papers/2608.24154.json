@@ -1,0 +1,60 @@
+{
+  "abstract": "Real-world deployment of traffic surveillance systems is bottlenecked by geographic domain shift, in which models trained in one city underperform when applied to an unseen target city. Conventional domain adaptation relies on hyperparameter-sensitive architectures or direct profiling of target data. Both are fundamentally precluded in privacy-conscious ecosystems that require completely blind training and evaluation loops. In this setting, we explore the effects of pre-training and augmentation in addressing the domain shift problem. Specifically, we propose a new modular training pipeline for object detection structured around two core orthogonal pillars: (1) a multi-dataset pre-training strategy featuring a class-agnostic objectness distillation to decouple structural vehicle geometry from semantic taxonomies, and (2) a domain-resilient augmentation stream featuring a novel Grayworld transformation that forces global attention heads to strip volatile chromatic shortcuts in favor of robust shape priors. When evaluated with the real-time transformer-based detector RF-DETR, our framework bridges cross-city distribution gaps while using limited GPU memory (16GB). Our optimized variants, RF-DETR-HR and RF-DETR-Grayworld, deliver a substantial empirical gain of +24.29 over the baseline, achieving 1st place (47.53 mAP) on the AI City Challenge Track 6 leaderboard. Code and data are available at: \\href{https://github.com/SKKUAutoLab/aic26_cross_city}{SKKUAutoLab/aic26\\_cross\\_city}.",
+  "abstract_zh": "交通监控系统在现实世界中的部署受到地理领域转移的瓶颈影响，即在一个城市训练的模型在应用于未见过的目标城市时表现不佳。传统的领域适应依赖于对超参数敏感的架构或对目标数据的直接分析，而这在需要完全盲训练和评估循环的隐私敏感生态系统中是根本不可行的。在这种情况下，我们探讨了预训练和增强在解决领域转移问题中的作用。具体而言，我们提出了一种新的模块化物体检测训练管道，围绕两个核心正交支柱构建：(1) 一种多数据集预训练策略，采用类无关的物体性蒸馏，将结构性车辆几何与语义分类法解耦；(2) 一种领域弹性增强流，采用新颖的灰世界（Grayworld）变换，迫使全局注意力头剥离不稳定的色彩捷径，以支持稳健的形状先验。当使用基于实时变换器的检测器RF-DETR进行评估时，我们的框架弥合了跨城市分布差距，同时使用有限的GPU内存（16GB）。我们的优化变体RF-DETR-HR和RF-DETR-Grayworld在基线基础上实现了+24.29的显著实证增益，在AI City Challenge Track 6排行榜上获得第一名（47.53 mAP）。代码和数据可在： exttt{https://github.com/SKKUAutoLab/aic26_cross_city}获取。",
+  "arxiv_id": "2608.24154",
+  "arxiv_url": "https://arxiv.org/abs/2608.24154v1",
+  "authors": [
+    "Long Hoang Pham",
+    "Quoc Pham-Nam Ho",
+    "Huy-Hung Nguyen",
+    "Duong Nguyen-Ngoc Tran",
+    "Ngoc Doan-Minh Huynh",
+    "Cu Quoc Le",
+    "Hoang-Khang Nguyen",
+    "Hyung-Min Jeon",
+    "Chi Dai Tran",
+    "Son Hong Phan",
+    "Duong Khac Vu",
+    "Trinh Le Ba Khanh",
+    "Jae Wook Jeon"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-26#paper-2608-24154",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-26T14:20:35.192826+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.24154v1",
+  "published_at": "2026-08-25T07:16:42Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.24154v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-26"
+  },
+  "summary_zh": "本文面向隐私约束下的跨城市零样本车辆检测，提出由多数据集预训练、类无关物体性蒸馏和Grayworld颜色增强组成的模块化训练流程，以降低城市分布偏移和色彩捷径的影响。该方法基于RF-DETR，在AI City Challenge Track 6上取得47.53 mAP并排名第一。其跨城市视觉感知和数据增强方法对自动驾驶感知系统的域泛化具有参考价值，但研究场景主要是交通监控，未涉及车载传感器、三维检测或驾驶决策。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Rethinking Pre-Training and Augmentation for Zero-Shot Cross-City Object Detection",
+  "title_zh": "重新思考零-shot跨城市物体检测的预训练和增强",
+  "translation_url": "https://hjfy.top/arxiv/2608.24154"
+}

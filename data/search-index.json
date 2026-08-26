@@ -1,6 +1,161 @@
 {
-  "generated_at": "2026-08-25T14:24:30.265005+00:00",
+  "generated_at": "2026-08-26T14:22:57.268484+00:00",
   "items": [
+    {
+      "abstract": "Recent end-to-end driving systems demonstrate strong performance on closed-loop benchmarks, yet are still predominantly trained on fixed expert-collected data using open-loop imitation learning. This training-inference mismatch leaves the policy vulnerable in policy-induced states, where accumulated errors can lead to safety-critical failures. A promising post-training approach to overcome this issue is Dataset Aggregation (DAgger), which gathers expert demonstrations in policy-induced states and subsequently fine-tunes the policy on the resulting aggregated dataset. Existing driving DAgger pipelines, however, face three challenges: i) the expert is restricted to a limited trajectory-and-speed solution space, ii) takeover may occur too early or too late relative to impending failures, and iii) privileged expert decisions may rely on information unavailable to the student. To address this, we introduce RoG-DAgger, a post-training framework that uses short-horizon kinematic rollouts to construct high-quality expert demonstrations in safety-critical states. Specifically, RoG-DAgger expands the expert's trajectory-and-speed solution space and evaluates candidate plans through rollout to construct preventive supervision. Moreover, it uses rollout solvability to time the takeover near the estimated point of no return. Lastly, it aligns the expert's field of view with that of the student to provide student-compatible supervision. Across in-distribution (including long-horizon) and out-of-distribution evaluations, RoG-DAgger improves the end-to-end model SimLingo by 5.3 driving-score points and 6.2 percentage points in success rate on Bench2Drive, doubles its driving score from 22 to 44 on Longest6 v2, and improves out-of-distribution success rate from 55\\% to 66\\% on Fail2Drive.",
+      "abstract_zh": "近期的端到端驾驶系统在闭环基准测试中表现出强大的性能，但仍然主要依赖于使用开放式模仿学习在固定专家收集的数据上进行训练。这种训练与推理的不匹配使得策略在政策引发的状态下变得脆弱，累积的错误可能导致安全关键的失败。一种有前景的后训练方法是数据集聚合（Dataset Aggregation, DAgger），它在政策引发的状态中收集专家演示，并随后在结果聚合的数据集上微调策略。然而，现有的驾驶DAgger流程面临三个挑战：i）专家受限于有限的轨迹和速度解空间，ii）接管可能相对于即将发生的失败发生得过早或过晚，iii）特权专家的决策可能依赖于学生无法获得的信息。为了解决这些问题，我们提出了RoG-DAgger，一个后训练框架，利用短时间范围的运动学回滚在安全关键状态中构建高质量的专家演示。具体而言，RoG-DAgger扩展了专家的轨迹和速度解空间，并通过回滚评估候选计划以构建预防性监督。此外，它利用回滚可解性来在估计的不可逆转点附近时机接管。最后，它将专家的视野与学生的视野对齐，以提供与学生兼容的监督。在分布内（包括长时间范围）和分布外的评估中，RoG-DAgger使端到端模型SimLingo的驾驶得分提高了5.3分，成功率提高了6.2个百分点，在Bench2Drive上，驾驶得分从22提高到44，在Longest6 v2上，成功率从55\\%提高到66\\%.",
+      "authors": [
+        "Liangyu Zhong",
+        "Joachim Sicking",
+        "Fabian Hueger",
+        "Hanno Gottschalk"
+      ],
+      "date": "2026-08-26",
+      "id": "2608.24525",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "预测/规划"
+      ],
+      "title": "RoG-DAgger: Rollout-Guided Post-Training for End-to-End Driving",
+      "title_zh": "RoG-DAgger：基于回滚指导的端到端驾驶后训练",
+      "url": "/daily/2026-08-26/#paper-2608-24525"
+    },
+    {
+      "abstract": "End-to-end multimodal driving has progressed rapidly by fusing camera and LiDAR streams. Existing pipelines remain fragile under asymmetric sensor degradation, where either an entire modality or only a localized region is corrupted while other regions remain useful. The key difficulty is not simply to add an uncertainty head, but to obtain dense reliability supervision, calibrate this reliability against physical fault severity, and use it before unreliable features bias the planner. We propose Variance-Guided Spatial Attention Fusion (VG-SAF), in which dense heteroscedastic reliability estimates act as interpretable spatial gates. The framework couples three components. First, a physically grounded augmentor simulates representative camera and LiDAR failures and emits a continuous spatial mask, providing dense supervision without additional annotation. Second, modality-specific experts predict per-pixel reliability scales through cross-branch dense distillation in log space, enforcing a monotone severity-to-scale response. Third, calibrated reliability maps drive a hybrid attention mechanism that suppresses unreliable cells with a local spatial gate and arbitrates between modalities through a cross-modal trust softmax. A Laplace uncertainty head emits a systemic waypoint uncertainty scale that signals severe or combined sensor degradation, including severities outside the training ranges. On the CARLA Longest6 benchmark, VG-SAF consistently improves closed-loop robustness over the baselines across camera-only, LiDAR-only, and joint degradation regimes, as measured by driving score, route completion, and infraction score.",
+      "abstract_zh": "端到端的多模态驾驶通过融合摄像头和激光雷达（LiDAR）数据取得了快速进展。然而，现有的处理流程在不对称传感器退化下仍然脆弱，此时可能整个模态或仅局部区域受到损坏，而其他区域仍然有效。关键的困难不仅在于增加一个不确定性头，而在于获取密集的可靠性监督，将这种可靠性与物理故障严重性进行校准，并在不可靠特征影响规划器之前使用它。我们提出了方差引导的空间注意力融合（Variance-Guided Spatial Attention Fusion, VG-SAF），其中密集的异方差可靠性估计作为可解释的空间门。该框架结合了三个组件。首先，一个基于物理的增强器模拟代表性的摄像头和激光雷达故障，并发出连续的空间掩码，提供密集的监督而无需额外标注。其次，模态特定的专家通过对数空间中的跨分支密集蒸馏预测每个像素的可靠性尺度，强制实现单调的严重性与尺度响应。第三，经过校准的可靠性图驱动混合注意力机制，通过局部空间门抑制不可靠单元，并通过跨模态信任softmax进行模态间的仲裁。一个拉普拉斯不确定性头发出系统的航点不确定性尺度，指示严重或组合的传感器退化，包括超出训练范围的严重性。在CARLA Longest6基准测试中，VG-SAF在摄像头单独、激光雷达单独和联合退化模式下，均持续提高了闭环鲁棒性，具体通过驾驶得分、路线完成率和违规得分进行测量。",
+      "authors": [
+        "Weizhi Tao",
+        "Zengwang Jin",
+        "Xiao Wang",
+        "Hailong Huang"
+      ],
+      "date": "2026-08-26",
+      "id": "2608.24366",
+      "tags": [
+        "LiDAR/点云",
+        "预测/规划",
+        "端到端驾驶"
+      ],
+      "title": "Variance-Guided Spatial Attention Fusion for Robust End-to-End Driving under Asymmetric Sensor Degradation",
+      "title_zh": "基于方差引导的空间注意力融合用于不对称传感器退化下的鲁棒端到端驾驶",
+      "url": "/daily/2026-08-26/#paper-2608-24366"
+    },
+    {
+      "abstract": "Adaptive LiDAR scanning concentrates a limited sensing budget on regions of interest predicted from past object tracks, lowering data volume in autonomous driving while maintaining detection accuracy. However, existing scanning policies face three challenges. First, history-driven approaches depend on past tracks, so unseen objects are detected late or missed. Second, random or uniform sampling outside the predicted regions has no awareness of where new objects appear. Third, camera-guided alternatives spend budget on all camera detections, resampling objects already covered, costing recall in crowded scenes and range when budgets are scarce. This paper introduces the CAmera-REsidual reserve (CARE), a training-free allocation rule that reserves part of a fixed ray budget for the directions of current camera detections that the track forecasts cannot explain; the rest follows the base history policy, and unused reserve returns to a random floor. The paper makes three contributions. First, a leakage-free ray-budget evaluation on nuScenes (150 scenes, 4,148 events) measuring the first-sighting loss of history-driven scanning, with a strict-causal variant using the preceding keyframe. Second, CARE raises first-sighting recall by 5.2, 5.2, and 4.3 points at 10%, 20%, and 35% budgets over the history policy, with paired intervals excluding zero; the camera cue drives this gain, and the first-sighting versus overall trade-off is a budget-dependent Pareto choice. Third, a safety-bounded forgetting module that releases budget from receding or static tracks beyond a speed-dependent guard distance; at tight budgets, forgetting without the guard significantly harms near-field recall, so the guard is what keeps it safe. The pipeline runs end to end on a real vehicle and, in closed-loop simulation, detects an occluded pedestrian earlier and brakes more reliably than history-driven scanning.",
+      "abstract_zh": "自适应激光雷达扫描将有限的感知预算集中于基于过去目标轨迹预测的兴趣区域，从而在自动驾驶中降低数据量的同时保持检测精度。然而，现有的扫描策略面临三大挑战。首先，基于历史的方法依赖于过去的轨迹，因此对未见过的目标检测较晚或遗漏。其次，在预测区域之外的随机或均匀采样无法感知新目标出现的位置。第三，基于相机引导的替代方案会将预算分配给所有相机检测目标，导致对已覆盖目标的重复采样，在拥挤场景中降低召回率，在预算紧张时降低检测范围。本文提出了CAmera-REsidual reserve（CARE），一种无需训练的分配规则，将固定射线预算的一部分保留给当前相机检测方向中轨迹预测无法解释的区域；其余部分遵循基础历史策略，未使用的保留预算则回归随机采样。本文贡献包括：第一，在nuScenes数据集（150个场景，4148个事件）上进行无泄漏射线预算评估，测量基于历史的扫描首次发现损失，并采用严格因果的前一关键帧变体。第二，CARE在10%、20%和35%预算下，较历史策略分别提升首次发现召回率5.2、5.2和4.3个百分点，配对区间排除零值；该提升由相机线索驱动，首次发现与整体性能的权衡呈预算依赖的帕累托选择。第三，设计了安全边界的遗忘模块，从速度相关的保护距离之外的后退或静止轨迹中释放预算；在紧张预算下，无保护的遗忘显著损害近场召回，保护机制确保安全性。该流程已在真实车辆上端到端运行，并在闭环仿真中实现对遮挡行人的更早检测和更可靠的制动，优于基于历史的扫描策略。",
+      "authors": [
+        "Jiachen Gong",
+        "Yun Li",
+        "Ehsan Javanmardi",
+        "Wencan Mao",
+        "Manabu Tsukada"
+      ],
+      "date": "2026-08-26",
+      "id": "2608.24282",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "LiDAR/点云"
+      ],
+      "title": "CARE: Camera-Residual Reserves for First Sightings in Adaptive LiDAR Sensing",
+      "title_zh": "CARE：用于自适应激光雷达感知中首次发现的相机残差保留策略",
+      "url": "/daily/2026-08-26/#paper-2608-24282"
+    },
+    {
+      "abstract": "AI systems are increasingly evaluated for legally accountable settings, where correct outputs must also be justifiable against an applicable legal standard. Existing legal-AI benchmarks and LLM-as-judge protocols provide important infrastructure for measuring task performance and open-ended response quality. We contribute one additional evaluation signal: a dual-judge protocol that pairs a standard 0-10 quality judge with a strict binary semantic-equivalence judge against a human-curated reference. We study a controlled, visually grounded regulatory task - UK traffic-sign interpretation, whose meaning is a codified question with a known reference for every input - and measure not merely whether the two judges disagree (by construction they must) but how much and where. On 4,680 evaluations under seven visibility levels and two occlusion modes, the two judges are moderately associated (point-biserial r = 0.644), while revealing an asymmetric Type II pattern affecting 8.0% of all evaluations. Its distribution is instructive: the marginal rate peaks at high visibility (14.2% at v = 0.8) simply because high-scoring answers are common there, but conditioned on the answer already scoring above 7, the rate is highest under heavy occlusion (54-63% at v <= 0.3), so a high quality score is least trustworthy when the input is most degraded. We are explicit that the signal is a property of this judge and reference: a 49-row human check shows the 0-10 judge aligns closely with everyday-reader judgement (Pearson r = 0.81; r = 0.80 with the LLM accuracy sub-score), while the equivalence judge is fairly but one-directionally stricter. The protocol adds one LLM call per evaluation and surfaces a signal single-judge protocols do not report. We release the prompt template, occluded variants, and full evaluation results.",
+      "abstract_zh": "人工智能系统在法律可追责的环境中越来越受到评估，其中正确的输出必须能够根据适用的法律标准进行合理解释。现有的法律人工智能基准和以大型语言模型（LLM）作为评判者的协议为测量任务表现和开放式响应质量提供了重要基础设施。我们贡献了一个额外的评估信号：一种双评估协议，将标准的0-10质量评判者与严格的二元语义等价评判者配对，后者是针对人工策划的参考进行评估。我们研究了一个受控的、视觉基础的监管任务——英国交通标志解读，其含义是一个有明确参考的法典化问题。我们不仅测量两个评判者是否存在分歧（由于构造原因，它们必然存在），还测量分歧的程度和位置。在七个可见度水平和两种遮挡模式下进行的4680次评估中，这两个评判者之间的相关性适中（点二元相关系数 r = 0.644），同时揭示出影响8.0%所有评估的非对称类型II模式。其分布具有启发性：边际率在高可见度下达到峰值（在 v = 0.8 时为14.2%），这仅仅是因为高分答案在此处较为常见，但在已经得分超过7的答案条件下，重度遮挡下的比率最高（在 v <= 0.3 时为54-63%），因此，当输入最受损时，高质量评分的可信度最低。我们明确指出，该信号是该评判者和参考的属性：一项49行的人类检查显示，0-10评判者与日常读者的判断高度一致（Pearson r = 0.81；与LLM准确性子评分的相关系数 r = 0.80），而等价评判者则相对但单向地更严格。该协议为每次评估增加了一次LLM调用，并提供了单评判协议未报告的信号。我们发布了提示模板、遮挡变体和完整评估结果。",
+      "authors": [
+        "Su Myat Noe",
+        "Ha Thanh Nguyen",
+        "May Myo Zin",
+        "Ken Satoh"
+      ],
+      "date": "2026-08-26",
+      "id": "2608.24258",
+      "tags": [
+        "VLM/VLA",
+        "感知",
+        "安全/异常"
+      ],
+      "title": "Beyond Accuracy: A Dual-Judge Evaluation Protocol for Vision-Language Models in Legally Grounded Tasks",
+      "title_zh": "超越准确性：一种用于法律基础任务的视觉-语言模型双评估协议",
+      "url": "/daily/2026-08-26/#paper-2608-24258"
+    },
+    {
+      "abstract": "Real-world deployment of traffic surveillance systems is bottlenecked by geographic domain shift, in which models trained in one city underperform when applied to an unseen target city. Conventional domain adaptation relies on hyperparameter-sensitive architectures or direct profiling of target data. Both are fundamentally precluded in privacy-conscious ecosystems that require completely blind training and evaluation loops. In this setting, we explore the effects of pre-training and augmentation in addressing the domain shift problem. Specifically, we propose a new modular training pipeline for object detection structured around two core orthogonal pillars: (1) a multi-dataset pre-training strategy featuring a class-agnostic objectness distillation to decouple structural vehicle geometry from semantic taxonomies, and (2) a domain-resilient augmentation stream featuring a novel Grayworld transformation that forces global attention heads to strip volatile chromatic shortcuts in favor of robust shape priors. When evaluated with the real-time transformer-based detector RF-DETR, our framework bridges cross-city distribution gaps while using limited GPU memory (16GB). Our optimized variants, RF-DETR-HR and RF-DETR-Grayworld, deliver a substantial empirical gain of +24.29 over the baseline, achieving 1st place (47.53 mAP) on the AI City Challenge Track 6 leaderboard. Code and data are available at: \\href{https://github.com/SKKUAutoLab/aic26_cross_city}{SKKUAutoLab/aic26\\_cross\\_city}.",
+      "abstract_zh": "交通监控系统在现实世界中的部署受到地理领域转移的瓶颈影响，即在一个城市训练的模型在应用于未见过的目标城市时表现不佳。传统的领域适应依赖于对超参数敏感的架构或对目标数据的直接分析，而这在需要完全盲训练和评估循环的隐私敏感生态系统中是根本不可行的。在这种情况下，我们探讨了预训练和增强在解决领域转移问题中的作用。具体而言，我们提出了一种新的模块化物体检测训练管道，围绕两个核心正交支柱构建：(1) 一种多数据集预训练策略，采用类无关的物体性蒸馏，将结构性车辆几何与语义分类法解耦；(2) 一种领域弹性增强流，采用新颖的灰世界（Grayworld）变换，迫使全局注意力头剥离不稳定的色彩捷径，以支持稳健的形状先验。当使用基于实时变换器的检测器RF-DETR进行评估时，我们的框架弥合了跨城市分布差距，同时使用有限的GPU内存（16GB）。我们的优化变体RF-DETR-HR和RF-DETR-Grayworld在基线基础上实现了+24.29的显著实证增益，在AI City Challenge Track 6排行榜上获得第一名（47.53 mAP）。代码和数据可在： exttt{https://github.com/SKKUAutoLab/aic26_cross_city}获取。",
+      "authors": [
+        "Long Hoang Pham",
+        "Quoc Pham-Nam Ho",
+        "Huy-Hung Nguyen",
+        "Duong Nguyen-Ngoc Tran",
+        "Ngoc Doan-Minh Huynh",
+        "Cu Quoc Le",
+        "Hoang-Khang Nguyen",
+        "Hyung-Min Jeon",
+        "Chi Dai Tran",
+        "Son Hong Phan",
+        "Duong Khac Vu",
+        "Trinh Le Ba Khanh",
+        "Jae Wook Jeon"
+      ],
+      "date": "2026-08-26",
+      "id": "2608.24154",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Rethinking Pre-Training and Augmentation for Zero-Shot Cross-City Object Detection",
+      "title_zh": "重新思考零-shot跨城市物体检测的预训练和增强",
+      "url": "/daily/2026-08-26/#paper-2608-24154"
+    },
+    {
+      "abstract": "Emergency vehicles (EMVs) can reorganize surrounding traffic as civilian vehicles brake, change lanes, or form rescue corridors in response to their passage. Evaluating these safety-critical interactions requires behavior-level control over both EMV privileges and civilian responses, together with consistent sensing and ground truth. Existing datasets and simulation benchmarks do not directly provide this combination. We present \\textbf{SIREN}, a behavior-driven SUMO--CARLA co-simulation platform for generating EMV--civilian interactions. SIREN couples SUMO's network-level traffic evolution and behavior logic with CARLA's continuous vehicle control and synchronized onboard sensing; depending on the active behavior, the interaction is controlled by SUMO, CARLA, or jointly. We instantiate the platform as \\textbf{SIREN-Bench-v1}, comprising seven parameterized interaction templates across emergency levels L1--L3 and three behavior families, with synchronized sensor observations and simulator-native annotations. We demonstrate the benchmark through three representative tasks: 3D object detection, trajectory prediction, and vision-language risk understanding. Evaluations of nine trajectory predictors, four LiDAR-based detectors, and five vision-language models reveal behavior-dependent failure modes. Traffic-clearance interactions are hardest for detection, privileged intersection traversal is hardest for prediction, and no learned predictor outperforms the constant-velocity reference on average. Vision-language models perform substantially better on normal traffic than on near-miss and collision events. These results demonstrate the value of behavior-centered benchmarking and establish SIREN as an extensible data-generation and evaluation platform for autonomous-driving and transportation safety research.",
+      "abstract_zh": "紧急车辆（EMVs）可以在其通过时重新组织周围交通，导致民用车辆刹车、变道或形成救援通道。评估这些安全关键的交互需要对EMV特权和民用响应进行行为级控制，同时还需一致的感知和真实数据。现有的数据集和仿真基准并未直接提供这种组合。我们提出了 extbf{SIREN}，一个基于行为的SUMO--CARLA协同仿真平台，用于生成EMV与民用车辆的交互。SIREN将SUMO的网络级交通演变和行为逻辑与CARLA的连续车辆控制和同步车载感知相结合；根据活跃的行为，交互由SUMO、CARLA或两者共同控制。我们将该平台实例化为 extbf{SIREN-Bench-v1}，包含七个参数化的交互模板，涵盖紧急级别L1--L3和三种行为类别，配有同步的传感器观测和仿真原生注释。我们通过三个代表性任务展示该基准：3D物体检测、轨迹预测和视觉-语言风险理解。对九个轨迹预测器、四个基于LiDAR的检测器和五个视觉-语言模型的评估揭示了依赖行为的失败模式。交通清理交互对检测而言是最困难的，特权交叉口通行对预测而言是最困难的，且没有任何学习的预测器在平均上超越恒速参考。视觉-语言模型在正常交通情况下的表现明显优于近失误和碰撞事件。这些结果展示了以行为为中心的基准测试的价值，并确立了SIREN作为一个可扩展的数据生成和评估平台，用于自动驾驶和交通安全研究。",
+      "authors": [
+        "Yicheng Zhu",
+        "Tianmu Zhao",
+        "Haoxin Leng",
+        "Fan Zuo",
+        "Tao Li",
+        "Zilin Bian"
+      ],
+      "date": "2026-08-26",
+      "id": "2608.24094",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "预测/规划"
+      ],
+      "title": "SIREN-Bench: Behavior-Driven Generation and Evaluation of Emergency-Vehicle Interactions",
+      "title_zh": "SIREN-Bench：基于行为的紧急车辆交互生成与评估",
+      "url": "/daily/2026-08-26/#paper-2608-24094"
+    },
+    {
+      "abstract": "Single-image 3D scene reconstruction must complete partially observed objects and place them coherently in a shared observation-aligned scene frame. Object-level generative priors offer strong completion ability, but their centered, scale-normalized outputs are typically expressed in an object frame, creating a fundamental representation gap between object generation and scene reconstruction. We introduce SceneReGen, a generative reconstruction framework that reinterprets scene reconstruction as the generation and assembly of complete object assets in a shared observation-aligned scene frame. SceneReGen addresses the generation-reconstruction gap through selective pose factorization: each object's observed orientation is encoded directly in the generated mesh, while translation and scale are estimated from instance-level and global scene evidence. Given a scene image and instance masks, a geometry encoder extracts dense cues; learnable shape queries condition a pretrained DiT-based 3D generator to produce complete meshes in their observed orientations, while position queries fuse object and scene features to assemble them in the shared frame. On the 3D-FUTURE evaluation subset, SceneReGen achieves the best scene-level CD, scene-level F-Score, and 3D bounding-box IoU among the evaluated methods, ties the best object-level CD, and ranks second in object-level F-Score. Qualitative outputs in autonomous-driving and embodied-AI scenes further illustrate the potential of asset-centric reconstruction beyond indoor furniture.",
+      "abstract_zh": "单幅图像的3D场景重建必须完成部分观察到的物体，并将它们一致地放置在共享的观察对齐场景框架中。物体级生成先验提供了强大的补全能力，但它们的中心化、尺度归一化输出通常以物体框架表示，从而在物体生成与场景重建之间产生了根本的表示差距。我们提出了SceneReGen，一个生成重建框架，将场景重建重新解释为在共享的观察对齐场景框架中生成和组装完整的物体资产。SceneReGen通过选择性姿态因式分解来解决生成与重建之间的差距：每个物体的观察方向直接编码在生成的网格中，而平移和尺度则从实例级和全局场景证据中估计。给定场景图像和实例掩码，几何编码器提取密集线索；可学习的形状查询条件化一个预训练的基于DiT的3D生成器，以产生在其观察方向上的完整网格，而位置查询则融合物体和场景特征，以在共享框架中组装它们。在3D-FUTURE评估子集上，SceneReGen在评估方法中实现了最佳的场景级CD、场景级F-Score和3D边界框IoU，物体级CD与最佳结果持平，并在物体级F-Score中排名第二。在自动驾驶和具身人工智能场景中的定性输出进一步展示了以资产为中心的重建在室内家具之外的潜力。",
+      "authors": [
+        "Zefan Tian",
+        "Yuteng Ye",
+        "Yiheng Zhang",
+        "Yuhang Yang",
+        "Xueqiang Lv",
+        "Shizhou Zhang",
+        "Le Liu",
+        "Di Xu"
+      ],
+      "date": "2026-08-26",
+      "id": "2608.23930",
+      "tags": [
+        "深度/几何",
+        "多传感器融合",
+        "世界模型/生成"
+      ],
+      "title": "SceneReGen: Generative Reconstruction of 3D Scenes from a Single Image",
+      "title_zh": "SceneReGen：基于单幅图像的3D场景生成重建",
+      "url": "/daily/2026-08-26/#paper-2608-23930"
+    },
     {
       "abstract": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of large-scale field inspections. To address this problem, we propose Expert-Grounded Distillation (EGD), a novel artificial intelligence framework that transfers institutional road safety expertise into a compact vision-language model for scalable visual road safety auditing. The key innovation is a quantified expert-grounding stage in which the teacher vision-language model is calibrated against authoritative field audits. Large-scale annotation is permitted only after the teacher reaches substantial agreement with expert risk assessments (Cohen's kappa = 0.74). The calibrated teacher then generates structured supervision that is distilled into an 8-billion-parameter student vision-language model using Low-Rank Adaptation and a single leakage-free prompt. We also introduce Bangladesh Road Safety Audit (BD-ARSA), the first open, expert-grounded Bangladeshi visual road safety audit dataset containing 21,947 image-audit records with near-national coverage, and Expert-Grounded Road Safety Auditor (EG-ARSA), the first vision-language model developed specifically for this task. Experimental results show that grounded fine-tuning substantially improves ordinal risk assessment over the zero-shot baseline, while blind expert evaluation demonstrates that the compact student outperforms both its 31 billion-parameter teacher and Gemini-2.5-Flash. These findings demonstrate that EGD provides an effective and scalable engineering solution for proactive road safety auditing in resource-constrained environments.",
       "abstract_zh": "道路交通伤害在中低收入国家仍然是一个主要挑战，积极的道路安全审计受到不完整的事故记录、合格审计员短缺以及大规模现场检查高成本的限制。为了解决这一问题，我们提出了专家基础蒸馏（Expert-Grounded Distillation, EGD），这是一种新颖的人工智能框架，将机构道路安全专业知识转化为一个紧凑的视觉-语言模型，以实现可扩展的视觉道路安全审计。关键创新在于量化的专家基础阶段，在此阶段，教师视觉-语言模型与权威现场审计进行校准。只有在教师与专家风险评估（Cohen's kappa = 0.74）达成实质性一致后，才允许进行大规模标注。经过校准的教师随后生成结构化监督，这些监督通过低秩适应（Low-Rank Adaptation）和单一无泄漏提示蒸馏到一个具有80亿参数的学生视觉-语言模型中。我们还介绍了孟加拉国道路安全审计（Bangladesh Road Safety Audit, BD-ARSA），这是第一个开放的、基于专家的孟加拉国视觉道路安全审计数据集，包含21,947个图像审计记录，几乎覆盖全国，并且专家基础道路安全审计员（Expert-Grounded Road Safety Auditor, EG-ARSA）是专门为此任务开发的第一个视觉-语言模型。实验结果表明，基础微调显著提高了序数风险评估，相较于零样本基线，盲专家评估显示紧凑的学生模型优于其310亿参数的教师模型和Gemini-2.5-Flash。这些发现表明，EGD为资源受限环境中的主动道路安全审计提供了一种有效且可扩展的工程解决方案。",

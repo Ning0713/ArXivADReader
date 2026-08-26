@@ -1,0 +1,55 @@
+{
+  "abstract": "End-to-end multimodal driving has progressed rapidly by fusing camera and LiDAR streams. Existing pipelines remain fragile under asymmetric sensor degradation, where either an entire modality or only a localized region is corrupted while other regions remain useful. The key difficulty is not simply to add an uncertainty head, but to obtain dense reliability supervision, calibrate this reliability against physical fault severity, and use it before unreliable features bias the planner. We propose Variance-Guided Spatial Attention Fusion (VG-SAF), in which dense heteroscedastic reliability estimates act as interpretable spatial gates. The framework couples three components. First, a physically grounded augmentor simulates representative camera and LiDAR failures and emits a continuous spatial mask, providing dense supervision without additional annotation. Second, modality-specific experts predict per-pixel reliability scales through cross-branch dense distillation in log space, enforcing a monotone severity-to-scale response. Third, calibrated reliability maps drive a hybrid attention mechanism that suppresses unreliable cells with a local spatial gate and arbitrates between modalities through a cross-modal trust softmax. A Laplace uncertainty head emits a systemic waypoint uncertainty scale that signals severe or combined sensor degradation, including severities outside the training ranges. On the CARLA Longest6 benchmark, VG-SAF consistently improves closed-loop robustness over the baselines across camera-only, LiDAR-only, and joint degradation regimes, as measured by driving score, route completion, and infraction score.",
+  "abstract_zh": "端到端的多模态驾驶通过融合摄像头和激光雷达（LiDAR）数据取得了快速进展。然而，现有的处理流程在不对称传感器退化下仍然脆弱，此时可能整个模态或仅局部区域受到损坏，而其他区域仍然有效。关键的困难不仅在于增加一个不确定性头，而在于获取密集的可靠性监督，将这种可靠性与物理故障严重性进行校准，并在不可靠特征影响规划器之前使用它。我们提出了方差引导的空间注意力融合（Variance-Guided Spatial Attention Fusion, VG-SAF），其中密集的异方差可靠性估计作为可解释的空间门。该框架结合了三个组件。首先，一个基于物理的增强器模拟代表性的摄像头和激光雷达故障，并发出连续的空间掩码，提供密集的监督而无需额外标注。其次，模态特定的专家通过对数空间中的跨分支密集蒸馏预测每个像素的可靠性尺度，强制实现单调的严重性与尺度响应。第三，经过校准的可靠性图驱动混合注意力机制，通过局部空间门抑制不可靠单元，并通过跨模态信任softmax进行模态间的仲裁。一个拉普拉斯不确定性头发出系统的航点不确定性尺度，指示严重或组合的传感器退化，包括超出训练范围的严重性。在CARLA Longest6基准测试中，VG-SAF在摄像头单独、激光雷达单独和联合退化模式下，均持续提高了闭环鲁棒性，具体通过驾驶得分、路线完成率和违规得分进行测量。",
+  "arxiv_id": "2608.24366",
+  "arxiv_url": "https://arxiv.org/abs/2608.24366v1",
+  "authors": [
+    "Weizhi Tao",
+    "Zengwang Jin",
+    "Xiao Wang",
+    "Hailong Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-26#paper-2608-24366",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-26T14:20:35.204484+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.24366v1",
+  "published_at": "2026-08-25T10:27:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "carla",
+      "driving",
+      "驾驶",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 62
+  },
+  "seen_dates": [
+    "2026-08-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.24366v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-26"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Variance-Guided Spatial Attention Fusion for Robust End-to-End Driving under Asymmetric Sensor Degradation",
+  "title_zh": "基于方差引导的空间注意力融合用于不对称传感器退化下的鲁棒端到端驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.24366"
+}

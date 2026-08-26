@@ -1,0 +1,64 @@
+{
+  "abstract": "Adaptive LiDAR scanning concentrates a limited sensing budget on regions of interest predicted from past object tracks, lowering data volume in autonomous driving while maintaining detection accuracy. However, existing scanning policies face three challenges. First, history-driven approaches depend on past tracks, so unseen objects are detected late or missed. Second, random or uniform sampling outside the predicted regions has no awareness of where new objects appear. Third, camera-guided alternatives spend budget on all camera detections, resampling objects already covered, costing recall in crowded scenes and range when budgets are scarce. This paper introduces the CAmera-REsidual reserve (CARE), a training-free allocation rule that reserves part of a fixed ray budget for the directions of current camera detections that the track forecasts cannot explain; the rest follows the base history policy, and unused reserve returns to a random floor. The paper makes three contributions. First, a leakage-free ray-budget evaluation on nuScenes (150 scenes, 4,148 events) measuring the first-sighting loss of history-driven scanning, with a strict-causal variant using the preceding keyframe. Second, CARE raises first-sighting recall by 5.2, 5.2, and 4.3 points at 10%, 20%, and 35% budgets over the history policy, with paired intervals excluding zero; the camera cue drives this gain, and the first-sighting versus overall trade-off is a budget-dependent Pareto choice. Third, a safety-bounded forgetting module that releases budget from receding or static tracks beyond a speed-dependent guard distance; at tight budgets, forgetting without the guard significantly harms near-field recall, so the guard is what keeps it safe. The pipeline runs end to end on a real vehicle and, in closed-loop simulation, detects an occluded pedestrian earlier and brakes more reliably than history-driven scanning.",
+  "abstract_zh": "自适应激光雷达扫描将有限的感知预算集中于基于过去目标轨迹预测的兴趣区域，从而在自动驾驶中降低数据量的同时保持检测精度。然而，现有的扫描策略面临三大挑战。首先，基于历史的方法依赖于过去的轨迹，因此对未见过的目标检测较晚或遗漏。其次，在预测区域之外的随机或均匀采样无法感知新目标出现的位置。第三，基于相机引导的替代方案会将预算分配给所有相机检测目标，导致对已覆盖目标的重复采样，在拥挤场景中降低召回率，在预算紧张时降低检测范围。本文提出了CAmera-REsidual reserve（CARE），一种无需训练的分配规则，将固定射线预算的一部分保留给当前相机检测方向中轨迹预测无法解释的区域；其余部分遵循基础历史策略，未使用的保留预算则回归随机采样。本文贡献包括：第一，在nuScenes数据集（150个场景，4148个事件）上进行无泄漏射线预算评估，测量基于历史的扫描首次发现损失，并采用严格因果的前一关键帧变体。第二，CARE在10%、20%和35%预算下，较历史策略分别提升首次发现召回率5.2、5.2和4.3个百分点，配对区间排除零值；该提升由相机线索驱动，首次发现与整体性能的权衡呈预算依赖的帕累托选择。第三，设计了安全边界的遗忘模块，从速度相关的保护距离之外的后退或静止轨迹中释放预算；在紧张预算下，无保护的遗忘显著损害近场召回，保护机制确保安全性。该流程已在真实车辆上端到端运行，并在闭环仿真中实现对遮挡行人的更早检测和更可靠的制动，优于基于历史的扫描策略。",
+  "arxiv_id": "2608.24282",
+  "arxiv_url": "https://arxiv.org/abs/2608.24282v1",
+  "authors": [
+    "Jiachen Gong",
+    "Yun Li",
+    "Ehsan Javanmardi",
+    "Wencan Mao",
+    "Manabu Tsukada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-26#paper-2608-24282",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-26T14:20:35.199028+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.24282v1",
+  "published_at": "2026-08-25T09:06:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "行人",
+      "lidar",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.24282v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-26"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "CARE: Camera-Residual Reserves for First Sightings in Adaptive LiDAR Sensing",
+  "title_zh": "CARE：用于自适应激光雷达感知中首次发现的相机残差保留策略",
+  "translation_url": "https://hjfy.top/arxiv/2608.24282"
+}

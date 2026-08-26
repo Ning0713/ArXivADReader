@@ -1,0 +1,66 @@
+{
+  "abstract": "Emergency vehicles (EMVs) can reorganize surrounding traffic as civilian vehicles brake, change lanes, or form rescue corridors in response to their passage. Evaluating these safety-critical interactions requires behavior-level control over both EMV privileges and civilian responses, together with consistent sensing and ground truth. Existing datasets and simulation benchmarks do not directly provide this combination. We present \\textbf{SIREN}, a behavior-driven SUMO--CARLA co-simulation platform for generating EMV--civilian interactions. SIREN couples SUMO's network-level traffic evolution and behavior logic with CARLA's continuous vehicle control and synchronized onboard sensing; depending on the active behavior, the interaction is controlled by SUMO, CARLA, or jointly. We instantiate the platform as \\textbf{SIREN-Bench-v1}, comprising seven parameterized interaction templates across emergency levels L1--L3 and three behavior families, with synchronized sensor observations and simulator-native annotations. We demonstrate the benchmark through three representative tasks: 3D object detection, trajectory prediction, and vision-language risk understanding. Evaluations of nine trajectory predictors, four LiDAR-based detectors, and five vision-language models reveal behavior-dependent failure modes. Traffic-clearance interactions are hardest for detection, privileged intersection traversal is hardest for prediction, and no learned predictor outperforms the constant-velocity reference on average. Vision-language models perform substantially better on normal traffic than on near-miss and collision events. These results demonstrate the value of behavior-centered benchmarking and establish SIREN as an extensible data-generation and evaluation platform for autonomous-driving and transportation safety research.",
+  "abstract_zh": "紧急车辆（EMVs）可以在其通过时重新组织周围交通，导致民用车辆刹车、变道或形成救援通道。评估这些安全关键的交互需要对EMV特权和民用响应进行行为级控制，同时还需一致的感知和真实数据。现有的数据集和仿真基准并未直接提供这种组合。我们提出了 extbf{SIREN}，一个基于行为的SUMO--CARLA协同仿真平台，用于生成EMV与民用车辆的交互。SIREN将SUMO的网络级交通演变和行为逻辑与CARLA的连续车辆控制和同步车载感知相结合；根据活跃的行为，交互由SUMO、CARLA或两者共同控制。我们将该平台实例化为 extbf{SIREN-Bench-v1}，包含七个参数化的交互模板，涵盖紧急级别L1--L3和三种行为类别，配有同步的传感器观测和仿真原生注释。我们通过三个代表性任务展示该基准：3D物体检测、轨迹预测和视觉-语言风险理解。对九个轨迹预测器、四个基于LiDAR的检测器和五个视觉-语言模型的评估揭示了依赖行为的失败模式。交通清理交互对检测而言是最困难的，特权交叉口通行对预测而言是最困难的，且没有任何学习的预测器在平均上超越恒速参考。视觉-语言模型在正常交通情况下的表现明显优于近失误和碰撞事件。这些结果展示了以行为为中心的基准测试的价值，并确立了SIREN作为一个可扩展的数据生成和评估平台，用于自动驾驶和交通安全研究。",
+  "arxiv_id": "2608.24094",
+  "arxiv_url": "https://arxiv.org/abs/2608.24094v1",
+  "authors": [
+    "Yicheng Zhu",
+    "Tianmu Zhao",
+    "Haoxin Leng",
+    "Fan Zuo",
+    "Tao Li",
+    "Zilin Bian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-26#paper-2608-24094",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-26T14:20:35.140370+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.24094v1",
+  "published_at": "2026-08-25T05:41:34Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "intersection",
+      "驾驶",
+      "车辆",
+      "交通",
+      "3d object detection",
+      "lidar",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-08-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.24094v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-26"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "SIREN-Bench: Behavior-Driven Generation and Evaluation of Emergency-Vehicle Interactions",
+  "title_zh": "SIREN-Bench：基于行为的紧急车辆交互生成与评估",
+  "translation_url": "https://hjfy.top/arxiv/2608.24094"
+}
