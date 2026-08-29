@@ -1,0 +1,61 @@
+{
+  "abstract": "Game-theoretic models provide principled frameworks for modeling vehicle interactions, but their underlying temporal assumptions have not been systematically examined against real-world driving behavior. In particular, it remains unclear how simultaneous, sequential, and asymmetric interaction structures can be measured from vehicle trajectories. This paper develops a trajectory-based interaction measurement framework to identify interaction events and quantify behavioral change onset, temporal organization, post-onset response dynamics, and ordering stability. The framework uses behavioral deviations to verify candidate interactions. We evaluate the framework on six real-world trajectory datasets, including INTERACTION, highD, inD, rounD, Waymo Open Motion, and nuPlan, covering diverse road geometries, traffic environments, and interaction types. The results show that concurrent and sequential behavioral changes both constitute substantial proportions of observed following, merging, and conflicting interactions. Among sequential interactions, stable ordering is more prevalent than alternating ordering, indicating that persistent asymmetric roles are a common interaction structure. Importantly, temporal precedence does not necessarily coincide with a measurable behavioral response, indicating that temporal ordering alone may not be sufficient to characterize behavioral dependence. These findings show that real-world interactions exhibit concurrent, sequential, and persistently ordered temporal structures. Different game-theoretic formulations are therefore better regarded as complementary modeling abstractions for different interaction regimes rather than as a universal structure governing all vehicle interactions.",
+  "abstract_zh": "博弈论模型为建模车辆交互提供了原则性框架，但其基础的时间假设尚未与现实世界的驾驶行为进行系统性检验。特别是，如何从车辆轨迹中测量同时、顺序和不对称的交互结构仍不清楚。本文开发了一种基于轨迹的交互测量框架，以识别交互事件并量化行为变化的开始、时间组织、开始后的响应动态和顺序稳定性。该框架利用行为偏差来验证候选交互。我们在六个现实世界的轨迹数据集上评估该框架，包括 INTERACTION、highD、inD、rounD、Waymo Open Motion 和 nuPlan，涵盖了多样的道路几何、交通环境和交互类型。结果表明，同时和顺序的行为变化都占据了观察到的跟随、并入和冲突交互的相当比例。在顺序交互中，稳定的顺序比交替的顺序更为普遍，表明持久的不对称角色是一种常见的交互结构。重要的是，时间优先并不一定与可测量的行为响应相吻合，这表明仅靠时间顺序可能不足以表征行为依赖性。这些发现表明，现实世界中的交互表现出同时、顺序和持久有序的时间结构。因此，不同的博弈论表述应被视为针对不同交互模式的互补建模抽象，而不是作为支配所有车辆交互的普遍结构。",
+  "arxiv_id": "2608.25917",
+  "arxiv_url": "https://arxiv.org/abs/2608.25917v1",
+  "authors": [
+    "Yueyuan Li",
+    "Rongcheng Nie",
+    "Weijie Xi",
+    "Mingyang Jiang",
+    "Songan Zhang",
+    "Hanyang Zhuang",
+    "Ming Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-25917",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.196939+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.25917v1",
+  "published_at": "2026-08-26T15:32:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "waymo open",
+      "nuplan",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 80
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.25917v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "Choose Your Game Wisely: Measuring Game-Theoretic Structures in Real-World Vehicle Interactions",
+  "title_zh": "明智选择你的游戏：测量现实世界中车辆交互的博弈论结构",
+  "translation_url": "https://hjfy.top/arxiv/2608.25917"
+}

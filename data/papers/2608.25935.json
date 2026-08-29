@@ -1,0 +1,54 @@
+{
+  "abstract": "Traffic Anomaly Understanding (TAU) requires models and systems to detect, reason about, and explain anomalous events in transportation videos. To address this challenge, we propose TAU-Agent, an agentic retrieval-augmented framework for traffic anomaly understanding. Given a task query, a central retrieval agent orchestrates two visual perception tools, namely a Video Captioning Tool and an Open-Vocabulary Tracking Tool, to retrieve and select query-relevant evidence, including captions, temporal intervals, and object trajectories. The selected evidence, together with sampled video frames and the input query, is provided to a supervised fine-tuned vision-language model for final reasoning and answer generation. We evaluate TAU-Agent on both the in-domain and the out-of-domain benchmarks from the AI City Challenge 2026. TAU-Agent achieves scores of 0.6779 on Track 3, 0.3998 on Track 7, and 67.9275 on Track 8, ranking second, twelfth, and fifth, respectively. Code is available at: https://github.com/siri-rouser/TAU-Agent.",
+  "abstract_zh": "交通异常理解（TAU）需要模型和系统在交通视频中检测、推理和解释异常事件。为了解决这一挑战，我们提出了TAU-Agent，一种用于交通异常理解的代理检索增强框架。给定一个任务查询，一个中央检索代理协调两个视觉感知工具，即视频字幕工具（Video Captioning Tool）和开放词汇跟踪工具（Open-Vocabulary Tracking Tool），以检索和选择与查询相关的证据，包括字幕、时间间隔和物体轨迹。所选证据与采样的视频帧和输入查询一起提供给一个经过监督微调的视觉-语言模型，以进行最终推理和答案生成。我们在AI City Challenge 2026的领域内和领域外基准上评估了TAU-Agent。TAU-Agent在Track 3上获得0.6779的分数，在Track 7上获得0.3998，在Track 8上获得67.9275，分别排名第二、第十二和第五。代码可在以下链接获取：https://github.com/siri-rouser/TAU-Agent。",
+  "arxiv_id": "2608.25935",
+  "arxiv_url": "https://arxiv.org/abs/2608.25935v1",
+  "authors": [
+    "Yuqiang Lin",
+    "Yan Shi",
+    "Sam Lockyer",
+    "Harish Tayyar Madabushi",
+    "Adrian Evans",
+    "Wenbin Li",
+    "Yinhai Wang",
+    "Nic Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-25935",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.146146+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.25935v1",
+  "published_at": "2026-08-26T15:50:38Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.25935v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "本文面向交通视频中的异常事件检测、时空证据检索、轨迹分析与视觉语言推理，提出TAU-Agent代理式检索增强框架。系统通过视频字幕和开放词汇跟踪工具获取相关证据，再由视觉语言模型生成异常事件的推理与解释。该方法与自动驾驶中的交通场景感知、异常检测和安全理解密切相关，但研究重点更偏向交通视频分析与VLM推理，而非完整的自动驾驶闭环控制。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "VLM/VLA",
+      "感知"
+    ]
+  },
+  "title": "TAU-Agent: An Agentic Retrieval-Augmented Framework for Traffic Anomaly Understanding",
+  "title_zh": "TAU-Agent：一种用于交通异常理解的代理检索增强框架",
+  "translation_url": "https://hjfy.top/arxiv/2608.25935"
+}

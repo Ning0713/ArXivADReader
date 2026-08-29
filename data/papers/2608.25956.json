@@ -1,0 +1,50 @@
+{
+  "abstract": "Current world action models (WAMs) typically operate on 2D visual data. These models can achieve exceptional visual quality, but they lack explicit spatial structure for individual objects and repeatedly process redundant background content. Although point clouds can represent the world in 3D space, they can be difficult to align and accumulate across viewpoints. In this paper, we leverage an explicit 4D Gaussian Splatting (4DGS) representation that separately models dynamic objects and the static background of a scene. For dynamic objects, we use a policy model to predict future actor actions and a world model to predict transformations of their observed Gaussian splats. The static background need not be regenerated for future states, as much of it has already been observed in past frames. This forms an object-centric world action model, which we name 4DGS-WAM. It lifts 2D observations into a persistent 4D representation so that previously observed static content can be reused during future prediction. Future-state extrapolation can then focus on modeling the evolution of dynamic objects. Experiments on KITTI-MOT evaluate short-horizon prediction and past reconstruction.",
+  "abstract_zh": "当前的世界行动模型（WAMs）通常基于2D视觉数据进行操作。这些模型能够实现卓越的视觉质量，但缺乏对单个对象的明确空间结构，并且重复处理冗余的背景内容。尽管点云可以在3D空间中表示世界，但在不同视角之间对齐和累积可能会很困难。在本文中，我们利用一种明确的4D高斯溅射（4DGS）表示法，分别建模动态对象和场景的静态背景。对于动态对象，我们使用策略模型来预测未来行为者的动作，并使用世界模型来预测其观察到的高斯溅射的变换。静态背景不需要为未来状态重新生成，因为其中大部分内容已经在过去的帧中被观察到。这形成了一个面向对象的世界行动模型，我们将其命名为4DGS-WAM。它将2D观察提升为持久的4D表示，以便在未来预测中重用先前观察到的静态内容。未来状态的外推可以集中于建模动态对象的演变。在KITTI-MOT上的实验评估了短期预测和过去重建。",
+  "arxiv_id": "2608.25956",
+  "arxiv_url": "https://arxiv.org/abs/2608.25956v1",
+  "authors": [
+    "Yueen Ma",
+    "Zenglin Xu",
+    "Irwin King"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-25956",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.147941+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.25956v1",
+  "published_at": "2026-08-26T16:16:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "world model",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.25956v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "4DGS-WAM: Bridging Past and Future with an Object-Centric World Action Model based on 4D Gaussian Splatting",
+  "title_zh": "4DGS-WAM：基于4D高斯溅射的面向对象的世界行动模型，连接过去与未来",
+  "translation_url": "https://hjfy.top/arxiv/2608.25956"
+}

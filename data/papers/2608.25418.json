@@ -1,0 +1,53 @@
+{
+  "abstract": "Progress in 4D LiDAR segmentation is bottlenecked by data. Assigning temporally consistent labels across sparse point cloud sequences is costly and hard to scale, and every new task or domain tends to demand fresh dense annotation. This motivates a simple question of whether high-quality LiDAR training data can be produced automatically, without any human labeling. To this end, we introduce LiDAR-SAM2, a framework that turns a 2D video foundation model, SAM2, into a scalable source of supervision for the 4D LiDAR domain. On the data side, it automatically generates temporally coherent LiDAR-level labels from SAM2 video masks through multi-view projection and spatio-temporal aggregation. On the modeling side, a tailored modality interface and a two-stage learning objective adapt SAM2's video segmentation kernel to spatio-temporal LiDAR structure, so that a single click per object yields a consistent mask track across the sequence. Trained with no human LiDAR annotation, LiDAR-SAM2 produces semantic and panoptic labels on SemanticKITTI that approach the quality of full human annotation from only a few points, and models trained on these labels approach the performance of full ground-truth supervision. This positions LiDAR-SAM2 as a scalable labeling tool that substantially reduces the annotation burden for 3D and 4D scene understanding.",
+  "abstract_zh": "4D LiDAR分割的进展受到数据的瓶颈。为稀疏点云序列分配时间一致的标签既昂贵又难以扩展，每个新任务或领域往往需要新的密集标注。这引发了一个简单的问题：是否可以自动生成高质量的LiDAR训练数据，而无需任何人工标注。为此，我们介绍了LiDAR-SAM2，一个将2D视频基础模型SAM2转化为4D LiDAR领域可扩展监督源的框架。在数据方面，它通过多视图投影和时空聚合自动生成来自SAM2视频掩码的时间一致的LiDAR级标签。在建模方面，定制的模态接口和两阶段学习目标使SAM2的视频分割内核适应时空LiDAR结构，从而使每个对象只需一次点击即可在序列中生成一致的掩码轨迹。LiDAR-SAM2在没有人工LiDAR标注的情况下进行训练，能够在SemanticKITTI上生成接近全人工标注质量的语义和全景标签，仅需少量点，并且在这些标签上训练的模型接近全真值监督的性能。这使得LiDAR-SAM2成为一个可扩展的标注工具，显著减少了3D和4D场景理解的标注负担。",
+  "arxiv_id": "2608.25418",
+  "arxiv_url": "https://arxiv.org/abs/2608.25418v1",
+  "authors": [
+    "Jihun Kim",
+    "Hyun-Kurl Jang",
+    "Hyemin Yang",
+    "Jinnyeong Yang",
+    "Hyeokjun Kweon",
+    "Kuk-Jin Yoon"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-25418",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.099688+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.25418v1",
+  "published_at": "2026-08-26T06:20:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "semantickitti",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.25418v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "Bootstrapping a 4D LiDAR Annotation Tool from Video Foundation Models",
+  "title_zh": "从视频基础模型引导4D LiDAR标注工具的构建",
+  "translation_url": "https://hjfy.top/arxiv/2608.25418"
+}

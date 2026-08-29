@@ -1,0 +1,51 @@
+{
+  "abstract": "Orchards form semi-structured environments in which parallel tree rows create natural driving corridors, yet narrow inter-row clearance and dense foliage lead geometry-agnostic grid planners to drift off the row center and risk trunk or canopy contact. We present AGRO-Nav, an automated framework for static graph-based global planning in orchards. From tree-row lines fitted to trunk clusters in a SLAM point cloud, it builds, without any manual waypoints, a sparse topological graph of intra- and inter-row connectivity; a global route is then found by Dijkstra search on this graph, connected to the start and goal by any-angle Theta* segments, and smoothed with a cubic B-spline. In real-orchard trials, AGRO-Nav follows the row center with a mean error of about 0.08 m, far below the A* (0.31 m) and Theta* (0.43 m) shortest-path baselines, while planning roughly four to five times faster. In Isaac Sim, it attains the lowest error among A*, Theta*, and a reproduced RANSAC midline baseline and remains stable as tree density drops to 70%, where the RANSAC baseline degrades. The resulting trajectories---straight row-centered segments joined by controlled turns---suit differential-drive and four-wheel-steering platforms.",
+  "abstract_zh": "果园形成了半结构化的环境，其中平行的树行创造了自然的驾驶通道。然而，狭窄的行间间隙和密集的树叶导致几何无关的网格规划器偏离行中心，增加了与树干或树冠接触的风险。我们提出了AGRO-Nav，这是一个用于果园中静态图形基础全局规划的自动化框架。该框架从适配于树干簇的树行线中构建，无需任何手动航点，生成一个稀疏的拓扑图，表示行内和行间的连通性；然后通过在该图上进行Dijkstra搜索找到全局路径，并通过任意角度的Theta*段连接起始点和目标点，最后使用三次B样条进行平滑处理。在实际果园试验中，AGRO-Nav以约0.08米的平均误差跟随行中心，远低于A*（0.31米）和Theta*（0.43米）最短路径基准，同时规划速度大约快四到五倍。在Isaac Sim中，它在A*、Theta*和重现的RANSAC中线基准中获得了最低误差，并在树木密度降至70%时保持稳定，而RANSAC基准则出现退化。最终生成的轨迹为直行中心段通过受控转弯连接，适合差分驱动和四轮转向平台。",
+  "arxiv_id": "2608.25799",
+  "arxiv_url": "https://arxiv.org/abs/2608.25799v1",
+  "authors": [
+    "Ho Young Yun",
+    "Jaemin Yu",
+    "Duksu Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-25799",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.048168+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.25799v1",
+  "published_at": "2026-08-26T13:50:04Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "驾驶",
+      "point cloud"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.25799v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "提出面向果园半结构化环境的自主全局规划方法，从SLAM点云拟合树行并构建稀疏拓扑图，结合Dijkstra、Theta*和B样条生成行中心轨迹。真实试验与仿真表明，该方法在路径跟踪误差、规划效率及低树木密度下的稳定性方面优于多种基线。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "AGRO-Nav: Autonomous Graph-based Orchard Navigation",
+  "title_zh": "AGRO-Nav：基于图的自主果园导航",
+  "translation_url": "https://hjfy.top/arxiv/2608.25799"
+}

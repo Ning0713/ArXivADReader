@@ -1,0 +1,50 @@
+{
+  "abstract": "Perceived risk in driving evolves over time and may be supported by specific scene entities, yet supervision is typically limited to coarse video-level judgments. Learning \\emph{when} supporting evidence emerges and \\emph{which entities} support a risk predictor would ordinarily require costly temporal- and entity-level annotations. We introduce \\textbf{CoRE}, a weakly supervised coarse-to-fine framework that learns fine-grained prediction support from coarse video supervision. CoRE first trains a video-level predictor and then freezes it. Structured interventions over candidate temporal regions or entity tracks measure how each candidate changes the coarse prediction, producing graded prediction-effect targets. These targets are distilled into a student that directly predicts temporal and entity support from the original video, without requiring interventions at inference. We evaluate this learning principle across three complementary settings: RISEE tests perceived-risk support from subjective clip-level judgments without temporal or entity-level risk annotations; DoTA provides independent temporal event annotations for evaluating weakly supervised traffic-anomaly localization; and UCF-Crime tests whether the same coarse-to-fine mechanism extends to a standard non-driving anomaly-detection benchmark. Across these settings, CoRE learns informative fine-grained support from coarse supervision, with strong temporal localization on DoTA and competitive performance on UCF-Crime. These results show that coarse video predictions can provide useful supervision for recovering the fine-grained evidence supporting them, without requiring corresponding fine-grained labels.",
+  "abstract_zh": "驾驶中的感知风险随着时间的推移而变化，并可能由特定场景实体支持，但监督通常仅限于粗略的视频级判断。学习 extit{何时}支持证据出现以及 extit{哪些实体}支持风险预测器通常需要昂贵的时间和实体级注释。我们提出了 extbf{CoRE}，一个弱监督的粗到细框架，从粗略的视频监督中学习细粒度的预测支持。CoRE首先训练一个视频级预测器，然后将其冻结。对候选时间区域或实体轨迹的结构性干预测量每个候选如何改变粗略预测，从而产生分级的预测效果目标。这些目标被提炼成一个学生模型，该模型直接从原始视频中预测时间和实体支持，而无需在推理时进行干预。我们在三个互补的设置中评估这一学习原则：RISEE测试来自主观片段级判断的感知风险支持，而不需要时间或实体级风险注释；DoTA提供独立的时间事件注释，以评估弱监督的交通异常定位；UCF-Crime测试相同的粗到细机制是否扩展到标准的非驾驶异常检测基准。在这些设置中，CoRE从粗略监督中学习到有信息的细粒度支持，在DoTA上具有强大的时间定位能力，并在UCF-Crime上表现出竞争力。这些结果表明，粗略的视频预测可以为恢复支持它们的细粒度证据提供有用的监督，而无需相应的细粒度标签。",
+  "arxiv_id": "2608.25344",
+  "arxiv_url": "https://arxiv.org/abs/2608.25344v1",
+  "authors": [
+    "Kaiser Hamid",
+    "Can Cui",
+    "Nade Liang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-25344",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.092352+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.25344v1",
+  "published_at": "2026-08-26T04:01:31Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.25344v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "本文提出CoRE弱监督粗到细风险证据学习框架，从视频级风险或异常判断中挖掘时间区域和场景实体级证据。方法通过冻结视频级预测器并对候选时间片段或实体轨迹进行结构化干预，生成预测影响目标，再训练学生模型直接定位风险支持证据。该方法主要面向驾驶视频中的风险感知与交通异常定位，并在RISEE和DoTA数据集上进行评估，同时在UCF-Crime上验证跨领域泛化能力。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "CoRE: Weakly Supervised Coarse-to-Fine Risk Evidence Learning in Driving Videos",
+  "title_zh": "CoRE：驾驶视频中弱监督的粗到细风险证据学习",
+  "translation_url": "https://hjfy.top/arxiv/2608.25344"
+}

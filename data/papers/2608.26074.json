@@ -1,0 +1,53 @@
+{
+  "abstract": "Intent misinterpretation during vehicle interactions causes recurring planning failures. We study a decision layer in which a language-guided intent module reads structured descriptors, computes a smoothed intent-geometry divergence score, and gates the planned maneuver before commitment, upstream of a corridor envelope. On a replayed off-road departure and four crash clips under a frozen, disclosed implementation, gating is the only layer that repairs the plan: on the main case it fires 72 ms after the drift onset but 161 ms before the corridor exit, keeping the trajectory in the corridor in all ten replays. The first calibration draws nine false triggers in 5.9 minutes, each from scoring uncertainty as half a conflict; a preregistered redesign treating uncertainty as abstention cuts this to 0.341 per minute. Two ablations bound the model's contribution: the full score detects fastest on four of five failures under the deployed eligibility, three of five against the unvetoed rule (000871 by one cycle; 000228 by a pre-onset fire on an uncertain stretch that five clips cannot classify as signal or coincidence; dropping the confidence term costs two detections), while on in-domain tracks at equal false positives the geometric rule more than triples its detection. The evidence supports the gating mechanism; the model's demonstrated roles are the fastest detection on these failures and an uncertainty veto on the geometric rule.",
+  "abstract_zh": "在车辆交互过程中，意图误解导致规划失败的反复发生。我们研究了一个决策层，其中一个基于语言的意图模块读取结构化描述符，计算平滑的意图几何分歧评分，并在承诺之前对计划的操作进行门控，位于走廊包络的上游。在重放的越野出发和四个碰撞片段中，在一个冻结的、公开的实现下，门控是唯一能够修复计划的层：在主要案例中，它在漂移开始后72毫秒触发，但在走廊出口前161毫秒触发，确保在所有十次重放中轨迹保持在走廊内。第一次校准在5.9分钟内产生九次错误触发，每次都因评分不确定性被视为半个冲突；一个预注册的重新设计将不确定性视为弃权，将这一数字减少到每分钟0.341。两个消融实验界定了模型的贡献：在部署的合格条件下，完整评分在五次失败中的四次上检测速度最快，在未被否决的规则下，五次中的三次（000871通过一个周期；000228通过在五个片段无法分类为信号或巧合的不确定区段上预先触发；去掉置信度项损失了两个检测），而在同域轨道上以相等的假阳性，几何规则的检测率超过了三倍。证据支持门控机制；模型展示的角色是对这些失败的最快检测和对几何规则的不确定性否决。",
+  "arxiv_id": "2608.26074",
+  "arxiv_url": "https://arxiv.org/abs/2608.26074v1",
+  "authors": [
+    "Cong Xu",
+    "Ravi Sankar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-26074",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.071804+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.26074v1",
+  "published_at": "2026-08-26T17:42:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 58
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.26074v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving",
+  "title_zh": "承诺前的门控：预测意图分歧以防止自主驾驶中的后交互决策失败",
+  "translation_url": "https://hjfy.top/arxiv/2608.26074"
+}

@@ -1,6 +1,250 @@
 {
-  "generated_at": "2026-08-26T14:22:57.268484+00:00",
+  "generated_at": "2026-08-29T04:40:10.212635+00:00",
   "items": [
+    {
+      "abstract": "Intent misinterpretation during vehicle interactions causes recurring planning failures. We study a decision layer in which a language-guided intent module reads structured descriptors, computes a smoothed intent-geometry divergence score, and gates the planned maneuver before commitment, upstream of a corridor envelope. On a replayed off-road departure and four crash clips under a frozen, disclosed implementation, gating is the only layer that repairs the plan: on the main case it fires 72 ms after the drift onset but 161 ms before the corridor exit, keeping the trajectory in the corridor in all ten replays. The first calibration draws nine false triggers in 5.9 minutes, each from scoring uncertainty as half a conflict; a preregistered redesign treating uncertainty as abstention cuts this to 0.341 per minute. Two ablations bound the model's contribution: the full score detects fastest on four of five failures under the deployed eligibility, three of five against the unvetoed rule (000871 by one cycle; 000228 by a pre-onset fire on an uncertain stretch that five clips cannot classify as signal or coincidence; dropping the confidence term costs two detections), while on in-domain tracks at equal false positives the geometric rule more than triples its detection. The evidence supports the gating mechanism; the model's demonstrated roles are the fastest detection on these failures and an uncertainty veto on the geometric rule.",
+      "abstract_zh": "在车辆交互过程中，意图误解导致规划失败的反复发生。我们研究了一个决策层，其中一个基于语言的意图模块读取结构化描述符，计算平滑的意图几何分歧评分，并在承诺之前对计划的操作进行门控，位于走廊包络的上游。在重放的越野出发和四个碰撞片段中，在一个冻结的、公开的实现下，门控是唯一能够修复计划的层：在主要案例中，它在漂移开始后72毫秒触发，但在走廊出口前161毫秒触发，确保在所有十次重放中轨迹保持在走廊内。第一次校准在5.9分钟内产生九次错误触发，每次都因评分不确定性被视为半个冲突；一个预注册的重新设计将不确定性视为弃权，将这一数字减少到每分钟0.341。两个消融实验界定了模型的贡献：在部署的合格条件下，完整评分在五次失败中的四次上检测速度最快，在未被否决的规则下，五次中的三次（000871通过一个周期；000228通过在五个片段无法分类为信号或巧合的不确定区段上预先触发；去掉置信度项损失了两个检测），而在同域轨道上以相等的假阳性，几何规则的检测率超过了三倍。证据支持门控机制；模型展示的角色是对这些失败的最快检测和对几何规则的不确定性否决。",
+      "authors": [
+        "Cong Xu",
+        "Ravi Sankar"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.26074",
+      "tags": [
+        "预测/规划",
+        "感知",
+        "深度/几何"
+      ],
+      "title": "Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving",
+      "title_zh": "承诺前的门控：预测意图分歧以防止自主驾驶中的后交互决策失败",
+      "url": "/daily/2026-08-27/#paper-2608-26074"
+    },
+    {
+      "abstract": "Advanced automation is a key technology for enhancing the safety of ground operations amidst the increasing density of commercial air traffic. While motion forecasting is a well-studied task in autonomous driving, its application to airport surface movements remains underexplored. To enable efficient and accurate prediction in this domain, we propose DESCENT, a transformer-based architecture designed to handle heterogeneous dynamics and strict topological constraints. Our approach features a Potential Reachable Set (PRS) context sampling mechanism that adaptively collects airfield environment context across diverse operational phases. Combined with a detection transformer-based decoder, DESCENT generates accurate trajectory forecasts. Extensive evaluations on the Amelia-10 benchmark demonstrate significant performance improvements over state-of-the-art baselines. These gains are especially pronounced in safety-critical scenarios, where our domain-aware sampling provides critical long-horizon context necessary for safe navigation.",
+      "abstract_zh": "先进的自动化技术是提升地面操作安全性的关键技术，尤其是在商业航空交通密度不断增加的背景下。尽管运动预测在自动驾驶领域已被广泛研究，但其在机场地面移动中的应用仍然未被充分探索。为了在这一领域实现高效和准确的预测，我们提出了DESCENT，一种基于变换器的架构，旨在处理异构动态和严格的拓扑约束。我们的方法具有潜在可达集（Potential Reachable Set, PRS）上下文采样机制，能够自适应地收集不同操作阶段的机场环境上下文。结合基于检测变换器的解码器，DESCENT能够生成准确的轨迹预测。在Amelia-10基准上的广泛评估表明，相较于最先进的基线方法，我们的模型在性能上有显著提升。这些提升在安全关键场景中尤为明显，我们的领域感知采样提供了安全导航所需的关键长时间范围上下文。",
+      "authors": [
+        "Alexander Prutsch",
+        "David Schinagl",
+        "Horst Possegger"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.26002",
+      "tags": [
+        "感知",
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "DESCENT: Directed Edge Scene Encoding for Airport Surface Movement Prediction",
+      "title_zh": "DESCENT：用于机场地面移动预测的定向边场景编码",
+      "url": "/daily/2026-08-27/#paper-2608-26002"
+    },
+    {
+      "abstract": "Current world action models (WAMs) typically operate on 2D visual data. These models can achieve exceptional visual quality, but they lack explicit spatial structure for individual objects and repeatedly process redundant background content. Although point clouds can represent the world in 3D space, they can be difficult to align and accumulate across viewpoints. In this paper, we leverage an explicit 4D Gaussian Splatting (4DGS) representation that separately models dynamic objects and the static background of a scene. For dynamic objects, we use a policy model to predict future actor actions and a world model to predict transformations of their observed Gaussian splats. The static background need not be regenerated for future states, as much of it has already been observed in past frames. This forms an object-centric world action model, which we name 4DGS-WAM. It lifts 2D observations into a persistent 4D representation so that previously observed static content can be reused during future prediction. Future-state extrapolation can then focus on modeling the evolution of dynamic objects. Experiments on KITTI-MOT evaluate short-horizon prediction and past reconstruction.",
+      "abstract_zh": "当前的世界行动模型（WAMs）通常基于2D视觉数据进行操作。这些模型能够实现卓越的视觉质量，但缺乏对单个对象的明确空间结构，并且重复处理冗余的背景内容。尽管点云可以在3D空间中表示世界，但在不同视角之间对齐和累积可能会很困难。在本文中，我们利用一种明确的4D高斯溅射（4DGS）表示法，分别建模动态对象和场景的静态背景。对于动态对象，我们使用策略模型来预测未来行为者的动作，并使用世界模型来预测其观察到的高斯溅射的变换。静态背景不需要为未来状态重新生成，因为其中大部分内容已经在过去的帧中被观察到。这形成了一个面向对象的世界行动模型，我们将其命名为4DGS-WAM。它将2D观察提升为持久的4D表示，以便在未来预测中重用先前观察到的静态内容。未来状态的外推可以集中于建模动态对象的演变。在KITTI-MOT上的实验评估了短期预测和过去重建。",
+      "authors": [
+        "Yueen Ma",
+        "Zenglin Xu",
+        "Irwin King"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25956",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成",
+        "LiDAR/点云"
+      ],
+      "title": "4DGS-WAM: Bridging Past and Future with an Object-Centric World Action Model based on 4D Gaussian Splatting",
+      "title_zh": "4DGS-WAM：基于4D高斯溅射的面向对象的世界行动模型，连接过去与未来",
+      "url": "/daily/2026-08-27/#paper-2608-25956"
+    },
+    {
+      "abstract": "Traffic Anomaly Understanding (TAU) requires models and systems to detect, reason about, and explain anomalous events in transportation videos. To address this challenge, we propose TAU-Agent, an agentic retrieval-augmented framework for traffic anomaly understanding. Given a task query, a central retrieval agent orchestrates two visual perception tools, namely a Video Captioning Tool and an Open-Vocabulary Tracking Tool, to retrieve and select query-relevant evidence, including captions, temporal intervals, and object trajectories. The selected evidence, together with sampled video frames and the input query, is provided to a supervised fine-tuned vision-language model for final reasoning and answer generation. We evaluate TAU-Agent on both the in-domain and the out-of-domain benchmarks from the AI City Challenge 2026. TAU-Agent achieves scores of 0.6779 on Track 3, 0.3998 on Track 7, and 67.9275 on Track 8, ranking second, twelfth, and fifth, respectively. Code is available at: https://github.com/siri-rouser/TAU-Agent.",
+      "abstract_zh": "交通异常理解（TAU）需要模型和系统在交通视频中检测、推理和解释异常事件。为了解决这一挑战，我们提出了TAU-Agent，一种用于交通异常理解的代理检索增强框架。给定一个任务查询，一个中央检索代理协调两个视觉感知工具，即视频字幕工具（Video Captioning Tool）和开放词汇跟踪工具（Open-Vocabulary Tracking Tool），以检索和选择与查询相关的证据，包括字幕、时间间隔和物体轨迹。所选证据与采样的视频帧和输入查询一起提供给一个经过监督微调的视觉-语言模型，以进行最终推理和答案生成。我们在AI City Challenge 2026的领域内和领域外基准上评估了TAU-Agent。TAU-Agent在Track 3上获得0.6779的分数，在Track 7上获得0.3998，在Track 8上获得67.9275，分别排名第二、第十二和第五。代码可在以下链接获取：https://github.com/siri-rouser/TAU-Agent。",
+      "authors": [
+        "Yuqiang Lin",
+        "Yan Shi",
+        "Sam Lockyer",
+        "Harish Tayyar Madabushi",
+        "Adrian Evans",
+        "Wenbin Li",
+        "Yinhai Wang",
+        "Nic Zhang"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25935",
+      "tags": [
+        "安全/异常",
+        "VLM/VLA",
+        "感知"
+      ],
+      "title": "TAU-Agent: An Agentic Retrieval-Augmented Framework for Traffic Anomaly Understanding",
+      "title_zh": "TAU-Agent：一种用于交通异常理解的代理检索增强框架",
+      "url": "/daily/2026-08-27/#paper-2608-25935"
+    },
+    {
+      "abstract": "Game-theoretic models provide principled frameworks for modeling vehicle interactions, but their underlying temporal assumptions have not been systematically examined against real-world driving behavior. In particular, it remains unclear how simultaneous, sequential, and asymmetric interaction structures can be measured from vehicle trajectories. This paper develops a trajectory-based interaction measurement framework to identify interaction events and quantify behavioral change onset, temporal organization, post-onset response dynamics, and ordering stability. The framework uses behavioral deviations to verify candidate interactions. We evaluate the framework on six real-world trajectory datasets, including INTERACTION, highD, inD, rounD, Waymo Open Motion, and nuPlan, covering diverse road geometries, traffic environments, and interaction types. The results show that concurrent and sequential behavioral changes both constitute substantial proportions of observed following, merging, and conflicting interactions. Among sequential interactions, stable ordering is more prevalent than alternating ordering, indicating that persistent asymmetric roles are a common interaction structure. Importantly, temporal precedence does not necessarily coincide with a measurable behavioral response, indicating that temporal ordering alone may not be sufficient to characterize behavioral dependence. These findings show that real-world interactions exhibit concurrent, sequential, and persistently ordered temporal structures. Different game-theoretic formulations are therefore better regarded as complementary modeling abstractions for different interaction regimes rather than as a universal structure governing all vehicle interactions.",
+      "abstract_zh": "博弈论模型为建模车辆交互提供了原则性框架，但其基础的时间假设尚未与现实世界的驾驶行为进行系统性检验。特别是，如何从车辆轨迹中测量同时、顺序和不对称的交互结构仍不清楚。本文开发了一种基于轨迹的交互测量框架，以识别交互事件并量化行为变化的开始、时间组织、开始后的响应动态和顺序稳定性。该框架利用行为偏差来验证候选交互。我们在六个现实世界的轨迹数据集上评估该框架，包括 INTERACTION、highD、inD、rounD、Waymo Open Motion 和 nuPlan，涵盖了多样的道路几何、交通环境和交互类型。结果表明，同时和顺序的行为变化都占据了观察到的跟随、并入和冲突交互的相当比例。在顺序交互中，稳定的顺序比交替的顺序更为普遍，表明持久的不对称角色是一种常见的交互结构。重要的是，时间优先并不一定与可测量的行为响应相吻合，这表明仅靠时间顺序可能不足以表征行为依赖性。这些发现表明，现实世界中的交互表现出同时、顺序和持久有序的时间结构。因此，不同的博弈论表述应被视为针对不同交互模式的互补建模抽象，而不是作为支配所有车辆交互的普遍结构。",
+      "authors": [
+        "Yueyuan Li",
+        "Rongcheng Nie",
+        "Weijie Xi",
+        "Mingyang Jiang",
+        "Songan Zhang",
+        "Hanyang Zhuang",
+        "Ming Yang"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25917",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "Choose Your Game Wisely: Measuring Game-Theoretic Structures in Real-World Vehicle Interactions",
+      "title_zh": "明智选择你的游戏：测量现实世界中车辆交互的博弈论结构",
+      "url": "/daily/2026-08-27/#paper-2608-25917"
+    },
+    {
+      "abstract": "Orchards form semi-structured environments in which parallel tree rows create natural driving corridors, yet narrow inter-row clearance and dense foliage lead geometry-agnostic grid planners to drift off the row center and risk trunk or canopy contact. We present AGRO-Nav, an automated framework for static graph-based global planning in orchards. From tree-row lines fitted to trunk clusters in a SLAM point cloud, it builds, without any manual waypoints, a sparse topological graph of intra- and inter-row connectivity; a global route is then found by Dijkstra search on this graph, connected to the start and goal by any-angle Theta* segments, and smoothed with a cubic B-spline. In real-orchard trials, AGRO-Nav follows the row center with a mean error of about 0.08 m, far below the A* (0.31 m) and Theta* (0.43 m) shortest-path baselines, while planning roughly four to five times faster. In Isaac Sim, it attains the lowest error among A*, Theta*, and a reproduced RANSAC midline baseline and remains stable as tree density drops to 70%, where the RANSAC baseline degrades. The resulting trajectories---straight row-centered segments joined by controlled turns---suit differential-drive and four-wheel-steering platforms.",
+      "abstract_zh": "果园形成了半结构化的环境，其中平行的树行创造了自然的驾驶通道。然而，狭窄的行间间隙和密集的树叶导致几何无关的网格规划器偏离行中心，增加了与树干或树冠接触的风险。我们提出了AGRO-Nav，这是一个用于果园中静态图形基础全局规划的自动化框架。该框架从适配于树干簇的树行线中构建，无需任何手动航点，生成一个稀疏的拓扑图，表示行内和行间的连通性；然后通过在该图上进行Dijkstra搜索找到全局路径，并通过任意角度的Theta*段连接起始点和目标点，最后使用三次B样条进行平滑处理。在实际果园试验中，AGRO-Nav以约0.08米的平均误差跟随行中心，远低于A*（0.31米）和Theta*（0.43米）最短路径基准，同时规划速度大约快四到五倍。在Isaac Sim中，它在A*、Theta*和重现的RANSAC中线基准中获得了最低误差，并在树木密度降至70%时保持稳定，而RANSAC基准则出现退化。最终生成的轨迹为直行中心段通过受控转弯连接，适合差分驱动和四轮转向平台。",
+      "authors": [
+        "Ho Young Yun",
+        "Jaemin Yu",
+        "Duksu Kim"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25799",
+      "tags": [
+        "预测/规划",
+        "地图/定位",
+        "LiDAR/点云"
+      ],
+      "title": "AGRO-Nav: Autonomous Graph-based Orchard Navigation",
+      "title_zh": "AGRO-Nav：基于图的自主果园导航",
+      "url": "/daily/2026-08-27/#paper-2608-25799"
+    },
+    {
+      "abstract": "Progress in 4D LiDAR segmentation is bottlenecked by data. Assigning temporally consistent labels across sparse point cloud sequences is costly and hard to scale, and every new task or domain tends to demand fresh dense annotation. This motivates a simple question of whether high-quality LiDAR training data can be produced automatically, without any human labeling. To this end, we introduce LiDAR-SAM2, a framework that turns a 2D video foundation model, SAM2, into a scalable source of supervision for the 4D LiDAR domain. On the data side, it automatically generates temporally coherent LiDAR-level labels from SAM2 video masks through multi-view projection and spatio-temporal aggregation. On the modeling side, a tailored modality interface and a two-stage learning objective adapt SAM2's video segmentation kernel to spatio-temporal LiDAR structure, so that a single click per object yields a consistent mask track across the sequence. Trained with no human LiDAR annotation, LiDAR-SAM2 produces semantic and panoptic labels on SemanticKITTI that approach the quality of full human annotation from only a few points, and models trained on these labels approach the performance of full ground-truth supervision. This positions LiDAR-SAM2 as a scalable labeling tool that substantially reduces the annotation burden for 3D and 4D scene understanding.",
+      "abstract_zh": "4D LiDAR分割的进展受到数据的瓶颈。为稀疏点云序列分配时间一致的标签既昂贵又难以扩展，每个新任务或领域往往需要新的密集标注。这引发了一个简单的问题：是否可以自动生成高质量的LiDAR训练数据，而无需任何人工标注。为此，我们介绍了LiDAR-SAM2，一个将2D视频基础模型SAM2转化为4D LiDAR领域可扩展监督源的框架。在数据方面，它通过多视图投影和时空聚合自动生成来自SAM2视频掩码的时间一致的LiDAR级标签。在建模方面，定制的模态接口和两阶段学习目标使SAM2的视频分割内核适应时空LiDAR结构，从而使每个对象只需一次点击即可在序列中生成一致的掩码轨迹。LiDAR-SAM2在没有人工LiDAR标注的情况下进行训练，能够在SemanticKITTI上生成接近全人工标注质量的语义和全景标签，仅需少量点，并且在这些标签上训练的模型接近全真值监督的性能。这使得LiDAR-SAM2成为一个可扩展的标注工具，显著减少了3D和4D场景理解的标注负担。",
+      "authors": [
+        "Jihun Kim",
+        "Hyun-Kurl Jang",
+        "Hyemin Yang",
+        "Jinnyeong Yang",
+        "Hyeokjun Kweon",
+        "Kuk-Jin Yoon"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25418",
+      "tags": [
+        "LiDAR/点云",
+        "感知",
+        "预测/规划"
+      ],
+      "title": "Bootstrapping a 4D LiDAR Annotation Tool from Video Foundation Models",
+      "title_zh": "从视频基础模型引导4D LiDAR标注工具的构建",
+      "url": "/daily/2026-08-27/#paper-2608-25418"
+    },
+    {
+      "abstract": "Perceived risk in driving evolves over time and may be supported by specific scene entities, yet supervision is typically limited to coarse video-level judgments. Learning \\emph{when} supporting evidence emerges and \\emph{which entities} support a risk predictor would ordinarily require costly temporal- and entity-level annotations. We introduce \\textbf{CoRE}, a weakly supervised coarse-to-fine framework that learns fine-grained prediction support from coarse video supervision. CoRE first trains a video-level predictor and then freezes it. Structured interventions over candidate temporal regions or entity tracks measure how each candidate changes the coarse prediction, producing graded prediction-effect targets. These targets are distilled into a student that directly predicts temporal and entity support from the original video, without requiring interventions at inference. We evaluate this learning principle across three complementary settings: RISEE tests perceived-risk support from subjective clip-level judgments without temporal or entity-level risk annotations; DoTA provides independent temporal event annotations for evaluating weakly supervised traffic-anomaly localization; and UCF-Crime tests whether the same coarse-to-fine mechanism extends to a standard non-driving anomaly-detection benchmark. Across these settings, CoRE learns informative fine-grained support from coarse supervision, with strong temporal localization on DoTA and competitive performance on UCF-Crime. These results show that coarse video predictions can provide useful supervision for recovering the fine-grained evidence supporting them, without requiring corresponding fine-grained labels.",
+      "abstract_zh": "驾驶中的感知风险随着时间的推移而变化，并可能由特定场景实体支持，但监督通常仅限于粗略的视频级判断。学习 extit{何时}支持证据出现以及 extit{哪些实体}支持风险预测器通常需要昂贵的时间和实体级注释。我们提出了 extbf{CoRE}，一个弱监督的粗到细框架，从粗略的视频监督中学习细粒度的预测支持。CoRE首先训练一个视频级预测器，然后将其冻结。对候选时间区域或实体轨迹的结构性干预测量每个候选如何改变粗略预测，从而产生分级的预测效果目标。这些目标被提炼成一个学生模型，该模型直接从原始视频中预测时间和实体支持，而无需在推理时进行干预。我们在三个互补的设置中评估这一学习原则：RISEE测试来自主观片段级判断的感知风险支持，而不需要时间或实体级风险注释；DoTA提供独立的时间事件注释，以评估弱监督的交通异常定位；UCF-Crime测试相同的粗到细机制是否扩展到标准的非驾驶异常检测基准。在这些设置中，CoRE从粗略监督中学习到有信息的细粒度支持，在DoTA上具有强大的时间定位能力，并在UCF-Crime上表现出竞争力。这些结果表明，粗略的视频预测可以为恢复支持它们的细粒度证据提供有用的监督，而无需相应的细粒度标签。",
+      "authors": [
+        "Kaiser Hamid",
+        "Can Cui",
+        "Nade Liang"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25344",
+      "tags": [
+        "安全/异常",
+        "感知"
+      ],
+      "title": "CoRE: Weakly Supervised Coarse-to-Fine Risk Evidence Learning in Driving Videos",
+      "title_zh": "CoRE：驾驶视频中弱监督的粗到细风险证据学习",
+      "url": "/daily/2026-08-27/#paper-2608-25344"
+    },
+    {
+      "abstract": "Learned traffic-behavior models are commonly trained separately for each intersection, creating model portfolios that cannot share evidence across sites. We present PhaseShift, a topology-aware framework that harmonizes heterogeneous roadside trajectories into a shared actor-centric representation and trains one reusable backbone. Ego-relative coordinates, trajectory-induced movement paths, normalized signal context, and variable-cardinality interaction tokens remove site conventions while preserving behaviorally relevant topology. The backbone supports pooled operation, zero-shot at a held-out intersection, and low-data adaptation. We evaluate five intersections in two Florida regions on balanced field data, 100k training windows and equal-sized test sets per site under a replay-conditioned, best-of-sampled-trajectory protocol. At 10s, one pooled model lowers both minADE and minFDE relative to trained local models at all five sites, with median reductions of 36.8% and 22.0%. Leave-one-intersection-out deployment, including one cross-region fold, beats local training on both 10-s metrics at four of five sites, although short-horizon performance is less uniform. Fine-tuning with 1,000 target update windows improves on zero-shot at three sites and is the strongest regime at one. At site 7, every cross-site mixture sharply lowers long-horizon error under a fixed 100k-window budget; test-likelihood gains argue against a best-of-sample dispersion-only explanation. Local models fall behind calibrated IDM at the two highest-flow sites after long autoregressive rollouts; pretrained-backbone regimes do not. Within this five-site evaluation, PhaseShift demonstrates consolidation across heterogeneous physical control settings while identifying sites that still require adaptation. The protocol measures conditional single-vehicle generation under replayed context, not closed-loop traffic simulation.",
+      "abstract_zh": "学习的交通行为模型通常为每个交叉口单独训练，导致模型组合无法在不同地点共享证据。我们提出了PhaseShift，一个基于拓扑的框架，将异构的路边轨迹协调为共享的以参与者为中心的表示，并训练一个可重复使用的主干网络。自我相对坐标、轨迹引发的运动路径、标准化的信号上下文和可变基数的交互标记消除了地点约定，同时保留了行为相关的拓扑。该主干网络支持汇聚操作、在保留的交叉口进行零样本推理以及低数据适应。我们在佛罗里达州两个地区的五个交叉口上评估了平衡的现场数据，使用100,000个训练窗口和每个地点相等大小的测试集，采用重放条件的最佳样本轨迹协议。在10秒时，一个汇聚模型相较于在所有五个地点训练的本地模型降低了最小平均定位误差（minADE）和最小最终定位误差（minFDE），中位数减少分别为36.8%和22.0%。在五个地点中的四个，采用留一交叉口的部署（包括一个跨区域折叠）在两个10秒指标上优于本地训练，尽管短期表现不够均匀。使用1,000个目标更新窗口进行微调在三个地点的零样本推理上有所改善，并且在一个地点表现最佳。在第7个地点，每个跨地点组合在固定的100,000窗口预算下显著降低了长期误差；测试似然的提升反驳了仅基于样本分散的解释。在经过长时间自回归滚动后，本地模型在两个流量最高的地点落后于校准的IDM；而预训练主干网络的模式则没有。在这五个地点的评估中，PhaseShift展示了在异构物理控制设置之间的整合，同时识别出仍需适应的地点。该协议测量在重放上下文下的条件单车生成，而非闭环交通模拟。",
+      "authors": [
+        "Yash Ranjan",
+        "Artur Kumik",
+        "Rahul Sengupta",
+        "Anand Rangarajan",
+        "Sanjay Ranka"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25275",
+      "tags": [
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "PhaseShift: Topology-Aware Data Harmonization and Model Consolidation Across Signalized Intersections",
+      "title_zh": "PhaseShift：基于拓扑的信号交叉口数据协调与模型整合",
+      "url": "/daily/2026-08-27/#paper-2608-25275"
+    },
+    {
+      "abstract": "Sidewalk-scale path extraction demands perception and planning that run reliably on compact, low-power hardware in cluttered, map-sparse environments. We present a monocular vision pipeline for sidewalk path extraction in micromobility systems that progresses through three design iterations, from a skeleton-graph baseline through distance-transform corridor planning to a lightweight image-space architecture, and provides a systematic comparison of five path-planning methods across both bird's-eye-view (BEV) and image-space domains. A compact SegFormer-B0 student model, trained with a semi-supervised teacher-student framework using OneFormer Swin-L pseudo-labels, achieves a hand-annotated IoU of 0.946 at 11.7 ms per frame, improving over the baseline checkpoint (IoU 0.758, 18.9 ms). In a controlled planner comparison on 32 hand-labeled frames, image-space midpoint planning achieves the lowest lateral center error (14.3 px) at 2.2 ms, a 421x speedup over BEV distance-transform planning (926.8 ms, 65.0 px center error), while maintaining comparable mask-path alignment (98.5% versus 98.6%). A full-video replay across six campus sequences (22,679 frames) confirms that the improved segmentation reduces temporal instability from 1.46% to 0.33% and increases template-path availability from 73.7% to 79.3%. We further show that BEV-only path extraction is fragile in monocular settings: in one profiled run, 99.3% of frames produced no valid BEV path. The final recommended architecture, image-space midpoint primary, image-space distance-transform fallback, and BEV reserved for visualization, runs the full perception-to-path stack in under 50 ms per frame on CPU, making it suitable for embedded pedestrian-speed micromobility systems.",
+      "abstract_zh": "人行道规模的路径提取需要在复杂、地图稀疏的环境中，在紧凑、低功耗的硬件上可靠运行的感知和规划。我们提出了一种用于微型出行系统的人行道路径提取的单目视觉管道，该管道经过三个设计迭代，从骨架图基线到距离变换走廊规划，再到轻量级图像空间架构，并系统性地比较了五种路径规划方法在鸟瞰图（BEV）和图像空间领域的表现。一个紧凑的SegFormer-B0学生模型，采用半监督的教师-学生框架，使用OneFormer Swin-L伪标签进行训练，在每帧11.7毫秒的时间内达到了手工标注的IoU为0.946，相比基线检查点（IoU 0.758，18.9毫秒）有所提升。在对32帧手工标注图像的受控规划比较中，图像空间中点规划以2.2毫秒的时间实现了最低的横向中心误差（14.3像素），比BEV距离变换规划（926.8毫秒，65.0像素中心误差）快421倍，同时保持了可比的掩膜路径对齐（98.5%对比98.6%）。在六个校园序列（22,679帧）上的全视频重放确认，改进的分割将时间不稳定性从1.46%降低到0.33%，并将模板路径的可用性从73.7%提高到79.3%。我们进一步展示了仅使用BEV进行路径提取在单目设置中是脆弱的：在一次分析运行中，99.3%的帧未产生有效的BEV路径。最终推荐的架构为图像空间中点主路径、图像空间距离变换后备，BEV用于可视化，在CPU上每帧运行完整的感知到路径堆栈的时间少于50毫秒，适用于嵌入式行人速度的微型出行系统。",
+      "authors": [
+        "Lkhanaajav Mijiddorj",
+        "Yang Yan",
+        "Tyler Beringer",
+        "Bilguunzaya Mijiddorj",
+        "Alex N. Ho",
+        "Bin Xu",
+        "Binbin Weng"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25178",
+      "tags": [
+        "感知",
+        "预测/规划",
+        "BEV/Occupancy"
+      ],
+      "title": "Lightweight Machine Learning-Driven Monocular Sidewalk Path Extraction for Embedded Micromobility Navigation",
+      "title_zh": "轻量级机器学习驱动的单目人行道路径提取用于嵌入式微型出行导航",
+      "url": "/daily/2026-08-27/#paper-2608-25178"
+    },
+    {
+      "abstract": "Autonomous driving has made remarkable progress through imitation learning with massive human demonstration data. However, a trained planner often degrades severely when applied to a new environment zero-shot, because of domain shifts in traffic regulations, road layout and driving behaviors. Therefore, adapting a trajectory planner to a new city typically requires resource-demanding local data collection with a vehicle sensor suite. In this work, we show that driving behavior can be learned from a scalable and efficient alternative. We introduce \\emph{SkyDrive}, a framework that utilizes drone-based traffic monitoring to provide efficient supervision for autonomous driving agents in a new environment. While vehicle-based data collection logs the ego and its surroundings, an aerial platform naturally observes many road users simultaneously over an extended field of view. As a result, every vehicle can be a data source with grounded driving behavior, effectively scaling up the amount of supervision. Based on 137 hours of aerial traffic monitoring footage, we extract 650K driving samples and construct a benchmark for trajectory planners and motion predictors. Zero-shot experiments with multiple models reveal significant cross-city domain gaps, but many of them can be alleviated by limited supervision from the sky, e.g., 30 minutes of monitoring per location. Our findings show that aerial traffic monitoring is an efficient and scalable data source for adapting autonomous driving systems in new cities. Data and code will be made publicly available.",
+      "abstract_zh": "自主驾驶通过模仿学习和大量人类示范数据取得了显著进展。然而，当经过训练的规划器在新的环境中零样本应用时，通常会严重退化，因为交通法规、道路布局和驾驶行为存在领域转移。因此，将轨迹规划器适应于新城市通常需要资源密集型的本地数据收集，使用车辆传感器设备。在本研究中，我们展示了驾驶行为可以通过一种可扩展且高效的替代方案进行学习。我们引入了 extit{SkyDrive}，一个利用无人机基础的交通监测为新环境中的自主驾驶代理提供高效监督的框架。虽然基于车辆的数据收集记录了自我及其周围环境，但空中平台自然可以在扩展的视野内同时观察许多道路使用者。因此，每辆车都可以成为具有基础驾驶行为的数据源，有效地扩大了监督的数量。基于137小时的空中交通监测视频，我们提取了65万条驾驶样本，并构建了轨迹规划器和运动预测器的基准。对多个模型的零样本实验揭示了显著的跨城市领域差距，但其中许多差距可以通过来自空中的有限监督来缓解，例如每个位置30分钟的监测。我们的研究结果表明，空中交通监测是适应新城市中的自主驾驶系统的高效且可扩展的数据源。数据和代码将公开提供。",
+      "authors": [
+        "Weijiang Xiong",
+        "Lan Feng",
+        "Alexandre Alahi",
+        "Nikolas Geroliminis"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25142",
+      "tags": [
+        "仿真/数据",
+        "预测/规划"
+      ],
+      "title": "SkyDrive: Learning to Drive in a New City from Aerial Traffic Monitoring",
+      "title_zh": "SkyDrive：从空中交通监测中学习在新城市驾驶",
+      "url": "/daily/2026-08-27/#paper-2608-25142"
+    },
+    {
+      "abstract": "This paper presents a novel method that extends targetless LiDAR-IMU calibration for ground vehicles to non- flat environments. Calibration typically necessitates full exci- tation of the sensor rig, a requirement that is not fulfilled by ground vehicles in normal operation. To address the degenerate planar motion, state-of-the-art methods propose residuals that assume the colinearity of the gravity and physical surface normal vectors, restricting usage to cases where the ground is assumed flat. This paper proposes ground-plane residuals that do not require this assumption, and are applicable for planar motion on a tilted surface. Results are demonstrated on a dataset collected from a Husky ground vehicle, on the M2DGR dataset, as well as on an offroad vehicle dataset. Repeatability is shown to be improved both in tilted and flat-ground scenarios, with strong improvement demonstrated for the tilted case. The implementation and experiments are open-sourced at https://github.com/vkorotkine/licalib_tilted_ground.",
+      "abstract_zh": "本文提出了一种新方法，将无目标LiDAR-IMU标定扩展至非平坦环境。标定通常需要对传感器设备进行全面激励，而这一要求在正常操作的地面车辆中并未得到满足。为了解决退化的平面运动，最先进的方法提出了假设重力和物理表面法向量共线的残差，这限制了其在假设地面为平坦的情况下的使用。本文提出的地面平面残差不需要这一假设，适用于倾斜表面的平面运动。结果在从Husky地面车辆收集的M2DGR数据集以及一组越野车辆数据集上得到了验证。实验表明，在倾斜和平坦地面场景中，重复性得到了改善，尤其在倾斜情况下表现出显著的提升。该实现和实验已开源，地址为 https://github.com/vkorotkine/licalib_tilted_ground。",
+      "authors": [
+        "Vassili Korotkine",
+        "Pierre Chamoun",
+        "Mohammed Ayman Shalaby",
+        "James Richard Forbes"
+      ],
+      "date": "2026-08-27",
+      "id": "2608.25135",
+      "tags": [
+        "LiDAR/点云",
+        "多传感器融合",
+        "地图/定位"
+      ],
+      "title": "Extending Ground-Constraint LiDAR-IMU Calibration to Tilted Surfaces in a Continuous-Time Framework",
+      "title_zh": "将地面约束的LiDAR-IMU标定扩展至倾斜表面的连续时间框架",
+      "url": "/daily/2026-08-27/#paper-2608-25135"
+    },
     {
       "abstract": "Recent end-to-end driving systems demonstrate strong performance on closed-loop benchmarks, yet are still predominantly trained on fixed expert-collected data using open-loop imitation learning. This training-inference mismatch leaves the policy vulnerable in policy-induced states, where accumulated errors can lead to safety-critical failures. A promising post-training approach to overcome this issue is Dataset Aggregation (DAgger), which gathers expert demonstrations in policy-induced states and subsequently fine-tunes the policy on the resulting aggregated dataset. Existing driving DAgger pipelines, however, face three challenges: i) the expert is restricted to a limited trajectory-and-speed solution space, ii) takeover may occur too early or too late relative to impending failures, and iii) privileged expert decisions may rely on information unavailable to the student. To address this, we introduce RoG-DAgger, a post-training framework that uses short-horizon kinematic rollouts to construct high-quality expert demonstrations in safety-critical states. Specifically, RoG-DAgger expands the expert's trajectory-and-speed solution space and evaluates candidate plans through rollout to construct preventive supervision. Moreover, it uses rollout solvability to time the takeover near the estimated point of no return. Lastly, it aligns the expert's field of view with that of the student to provide student-compatible supervision. Across in-distribution (including long-horizon) and out-of-distribution evaluations, RoG-DAgger improves the end-to-end model SimLingo by 5.3 driving-score points and 6.2 percentage points in success rate on Bench2Drive, doubles its driving score from 22 to 44 on Longest6 v2, and improves out-of-distribution success rate from 55\\% to 66\\% on Fail2Drive.",
       "abstract_zh": "近期的端到端驾驶系统在闭环基准测试中表现出强大的性能，但仍然主要依赖于使用开放式模仿学习在固定专家收集的数据上进行训练。这种训练与推理的不匹配使得策略在政策引发的状态下变得脆弱，累积的错误可能导致安全关键的失败。一种有前景的后训练方法是数据集聚合（Dataset Aggregation, DAgger），它在政策引发的状态中收集专家演示，并随后在结果聚合的数据集上微调策略。然而，现有的驾驶DAgger流程面临三个挑战：i）专家受限于有限的轨迹和速度解空间，ii）接管可能相对于即将发生的失败发生得过早或过晚，iii）特权专家的决策可能依赖于学生无法获得的信息。为了解决这些问题，我们提出了RoG-DAgger，一个后训练框架，利用短时间范围的运动学回滚在安全关键状态中构建高质量的专家演示。具体而言，RoG-DAgger扩展了专家的轨迹和速度解空间，并通过回滚评估候选计划以构建预防性监督。此外，它利用回滚可解性来在估计的不可逆转点附近时机接管。最后，它将专家的视野与学生的视野对齐，以提供与学生兼容的监督。在分布内（包括长时间范围）和分布外的评估中，RoG-DAgger使端到端模型SimLingo的驾驶得分提高了5.3分，成功率提高了6.2个百分点，在Bench2Drive上，驾驶得分从22提高到44，在Longest6 v2上，成功率从55\\%提高到66\\%.",

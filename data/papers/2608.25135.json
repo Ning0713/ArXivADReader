@@ -1,0 +1,51 @@
+{
+  "abstract": "This paper presents a novel method that extends targetless LiDAR-IMU calibration for ground vehicles to non- flat environments. Calibration typically necessitates full exci- tation of the sensor rig, a requirement that is not fulfilled by ground vehicles in normal operation. To address the degenerate planar motion, state-of-the-art methods propose residuals that assume the colinearity of the gravity and physical surface normal vectors, restricting usage to cases where the ground is assumed flat. This paper proposes ground-plane residuals that do not require this assumption, and are applicable for planar motion on a tilted surface. Results are demonstrated on a dataset collected from a Husky ground vehicle, on the M2DGR dataset, as well as on an offroad vehicle dataset. Repeatability is shown to be improved both in tilted and flat-ground scenarios, with strong improvement demonstrated for the tilted case. The implementation and experiments are open-sourced at https://github.com/vkorotkine/licalib_tilted_ground.",
+  "abstract_zh": "本文提出了一种新方法，将无目标LiDAR-IMU标定扩展至非平坦环境。标定通常需要对传感器设备进行全面激励，而这一要求在正常操作的地面车辆中并未得到满足。为了解决退化的平面运动，最先进的方法提出了假设重力和物理表面法向量共线的残差，这限制了其在假设地面为平坦的情况下的使用。本文提出的地面平面残差不需要这一假设，适用于倾斜表面的平面运动。结果在从Husky地面车辆收集的M2DGR数据集以及一组越野车辆数据集上得到了验证。实验表明，在倾斜和平坦地面场景中，重复性得到了改善，尤其在倾斜情况下表现出显著的提升。该实现和实验已开源，地址为 https://github.com/vkorotkine/licalib_tilted_ground。",
+  "arxiv_id": "2608.25135",
+  "arxiv_url": "https://arxiv.org/abs/2608.25135v1",
+  "authors": [
+    "Vassili Korotkine",
+    "Pierre Chamoun",
+    "Mohammed Ayman Shalaby",
+    "James Richard Forbes"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-25135",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.024058+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.25135v1",
+  "published_at": "2026-08-25T20:35:18Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.25135v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "本文研究地面车辆在平坦或倾斜地形中的LiDAR-IMU无目标标定问题。通过在连续时间框架中引入不依赖重力与地面法向量共线假设的地面平面残差，缓解常规车辆运动激励不足和非平坦地面造成的标定退化。该方法在多个车辆数据集上验证了有效性，适用于自动驾驶车辆的多传感器标定与定位感知系统。",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "多传感器融合",
+      "地图/定位"
+    ]
+  },
+  "title": "Extending Ground-Constraint LiDAR-IMU Calibration to Tilted Surfaces in a Continuous-Time Framework",
+  "title_zh": "将地面约束的LiDAR-IMU标定扩展至倾斜表面的连续时间框架",
+  "translation_url": "https://hjfy.top/arxiv/2608.25135"
+}

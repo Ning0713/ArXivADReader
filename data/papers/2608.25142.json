@@ -1,0 +1,63 @@
+{
+  "abstract": "Autonomous driving has made remarkable progress through imitation learning with massive human demonstration data. However, a trained planner often degrades severely when applied to a new environment zero-shot, because of domain shifts in traffic regulations, road layout and driving behaviors. Therefore, adapting a trajectory planner to a new city typically requires resource-demanding local data collection with a vehicle sensor suite. In this work, we show that driving behavior can be learned from a scalable and efficient alternative. We introduce \\emph{SkyDrive}, a framework that utilizes drone-based traffic monitoring to provide efficient supervision for autonomous driving agents in a new environment. While vehicle-based data collection logs the ego and its surroundings, an aerial platform naturally observes many road users simultaneously over an extended field of view. As a result, every vehicle can be a data source with grounded driving behavior, effectively scaling up the amount of supervision. Based on 137 hours of aerial traffic monitoring footage, we extract 650K driving samples and construct a benchmark for trajectory planners and motion predictors. Zero-shot experiments with multiple models reveal significant cross-city domain gaps, but many of them can be alleviated by limited supervision from the sky, e.g., 30 minutes of monitoring per location. Our findings show that aerial traffic monitoring is an efficient and scalable data source for adapting autonomous driving systems in new cities. Data and code will be made publicly available.",
+  "abstract_zh": "自主驾驶通过模仿学习和大量人类示范数据取得了显著进展。然而，当经过训练的规划器在新的环境中零样本应用时，通常会严重退化，因为交通法规、道路布局和驾驶行为存在领域转移。因此，将轨迹规划器适应于新城市通常需要资源密集型的本地数据收集，使用车辆传感器设备。在本研究中，我们展示了驾驶行为可以通过一种可扩展且高效的替代方案进行学习。我们引入了 extit{SkyDrive}，一个利用无人机基础的交通监测为新环境中的自主驾驶代理提供高效监督的框架。虽然基于车辆的数据收集记录了自我及其周围环境，但空中平台自然可以在扩展的视野内同时观察许多道路使用者。因此，每辆车都可以成为具有基础驾驶行为的数据源，有效地扩大了监督的数量。基于137小时的空中交通监测视频，我们提取了65万条驾驶样本，并构建了轨迹规划器和运动预测器的基准。对多个模型的零样本实验揭示了显著的跨城市领域差距，但其中许多差距可以通过来自空中的有限监督来缓解，例如每个位置30分钟的监测。我们的研究结果表明，空中交通监测是适应新城市中的自主驾驶系统的高效且可扩展的数据源。数据和代码将公开提供。",
+  "arxiv_id": "2608.25142",
+  "arxiv_url": "https://arxiv.org/abs/2608.25142v1",
+  "authors": [
+    "Weijiang Xiong",
+    "Lan Feng",
+    "Alexandre Alahi",
+    "Nikolas Geroliminis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-25142",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.024999+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.25142v1",
+  "published_at": "2026-08-25T20:47:09Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "drone",
+      "无人机",
+      "空中交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "标题明确属于非道路驾驶领域",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.25142v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "提出 SkyDrive 空中交通监测学习框架，利用无人机大范围观测多车辆行为，构建包含65万条样本的跨城市轨迹规划与运动预测数据集，并研究少量空中数据对新城市自动驾驶规划器和预测器的适应效果。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划"
+    ]
+  },
+  "title": "SkyDrive: Learning to Drive in a New City from Aerial Traffic Monitoring",
+  "title_zh": "SkyDrive：从空中交通监测中学习在新城市驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.25142"
+}

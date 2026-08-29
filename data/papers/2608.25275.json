@@ -1,0 +1,53 @@
+{
+  "abstract": "Learned traffic-behavior models are commonly trained separately for each intersection, creating model portfolios that cannot share evidence across sites. We present PhaseShift, a topology-aware framework that harmonizes heterogeneous roadside trajectories into a shared actor-centric representation and trains one reusable backbone. Ego-relative coordinates, trajectory-induced movement paths, normalized signal context, and variable-cardinality interaction tokens remove site conventions while preserving behaviorally relevant topology. The backbone supports pooled operation, zero-shot at a held-out intersection, and low-data adaptation. We evaluate five intersections in two Florida regions on balanced field data, 100k training windows and equal-sized test sets per site under a replay-conditioned, best-of-sampled-trajectory protocol. At 10s, one pooled model lowers both minADE and minFDE relative to trained local models at all five sites, with median reductions of 36.8% and 22.0%. Leave-one-intersection-out deployment, including one cross-region fold, beats local training on both 10-s metrics at four of five sites, although short-horizon performance is less uniform. Fine-tuning with 1,000 target update windows improves on zero-shot at three sites and is the strongest regime at one. At site 7, every cross-site mixture sharply lowers long-horizon error under a fixed 100k-window budget; test-likelihood gains argue against a best-of-sample dispersion-only explanation. Local models fall behind calibrated IDM at the two highest-flow sites after long autoregressive rollouts; pretrained-backbone regimes do not. Within this five-site evaluation, PhaseShift demonstrates consolidation across heterogeneous physical control settings while identifying sites that still require adaptation. The protocol measures conditional single-vehicle generation under replayed context, not closed-loop traffic simulation.",
+  "abstract_zh": "学习的交通行为模型通常为每个交叉口单独训练，导致模型组合无法在不同地点共享证据。我们提出了PhaseShift，一个基于拓扑的框架，将异构的路边轨迹协调为共享的以参与者为中心的表示，并训练一个可重复使用的主干网络。自我相对坐标、轨迹引发的运动路径、标准化的信号上下文和可变基数的交互标记消除了地点约定，同时保留了行为相关的拓扑。该主干网络支持汇聚操作、在保留的交叉口进行零样本推理以及低数据适应。我们在佛罗里达州两个地区的五个交叉口上评估了平衡的现场数据，使用100,000个训练窗口和每个地点相等大小的测试集，采用重放条件的最佳样本轨迹协议。在10秒时，一个汇聚模型相较于在所有五个地点训练的本地模型降低了最小平均定位误差（minADE）和最小最终定位误差（minFDE），中位数减少分别为36.8%和22.0%。在五个地点中的四个，采用留一交叉口的部署（包括一个跨区域折叠）在两个10秒指标上优于本地训练，尽管短期表现不够均匀。使用1,000个目标更新窗口进行微调在三个地点的零样本推理上有所改善，并且在一个地点表现最佳。在第7个地点，每个跨地点组合在固定的100,000窗口预算下显著降低了长期误差；测试似然的提升反驳了仅基于样本分散的解释。在经过长时间自回归滚动后，本地模型在两个流量最高的地点落后于校准的IDM；而预训练主干网络的模式则没有。在这五个地点的评估中，PhaseShift展示了在异构物理控制设置之间的整合，同时识别出仍需适应的地点。该协议测量在重放上下文下的条件单车生成，而非闭环交通模拟。",
+  "arxiv_id": "2608.25275",
+  "arxiv_url": "https://arxiv.org/abs/2608.25275v1",
+  "authors": [
+    "Yash Ranjan",
+    "Artur Kumik",
+    "Rahul Sengupta",
+    "Anand Rangarajan",
+    "Sanjay Ranka"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-25275",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.182073+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.25275v1",
+  "published_at": "2026-08-26T01:22:49Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "roadside",
+      "intersection",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.25275v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "本文提出PhaseShift，用拓扑感知的数据协调方法将不同信号交叉口的路侧轨迹转换为统一的参与者中心表示，并训练可跨地点复用的交通行为生成主干网络。模型结合自车相对坐标、轨迹诱导的运动路径、标准化信号灯上下文和交互标记，实现汇聚训练、留一交叉口零样本泛化及少量数据微调。在五个交叉口的实地数据上，汇聚模型在长期轨迹预测的minADE和minFDE方面总体优于各地点独立训练的模型，表明跨地点知识整合能够提升行为预测性能，但部分地点仍需要适应。研究评估的是重放上下文条件下的单车轨迹生成，而非闭环交通仿真。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "PhaseShift: Topology-Aware Data Harmonization and Model Consolidation Across Signalized Intersections",
+  "title_zh": "PhaseShift：基于拓扑的信号交叉口数据协调与模型整合",
+  "translation_url": "https://hjfy.top/arxiv/2608.25275"
+}

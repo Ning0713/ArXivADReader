@@ -1,0 +1,56 @@
+{
+  "abstract": "Advanced automation is a key technology for enhancing the safety of ground operations amidst the increasing density of commercial air traffic. While motion forecasting is a well-studied task in autonomous driving, its application to airport surface movements remains underexplored. To enable efficient and accurate prediction in this domain, we propose DESCENT, a transformer-based architecture designed to handle heterogeneous dynamics and strict topological constraints. Our approach features a Potential Reachable Set (PRS) context sampling mechanism that adaptively collects airfield environment context across diverse operational phases. Combined with a detection transformer-based decoder, DESCENT generates accurate trajectory forecasts. Extensive evaluations on the Amelia-10 benchmark demonstrate significant performance improvements over state-of-the-art baselines. These gains are especially pronounced in safety-critical scenarios, where our domain-aware sampling provides critical long-horizon context necessary for safe navigation.",
+  "abstract_zh": "先进的自动化技术是提升地面操作安全性的关键技术，尤其是在商业航空交通密度不断增加的背景下。尽管运动预测在自动驾驶领域已被广泛研究，但其在机场地面移动中的应用仍然未被充分探索。为了在这一领域实现高效和准确的预测，我们提出了DESCENT，一种基于变换器的架构，旨在处理异构动态和严格的拓扑约束。我们的方法具有潜在可达集（Potential Reachable Set, PRS）上下文采样机制，能够自适应地收集不同操作阶段的机场环境上下文。结合基于检测变换器的解码器，DESCENT能够生成准确的轨迹预测。在Amelia-10基准上的广泛评估表明，相较于最先进的基线方法，我们的模型在性能上有显著提升。这些提升在安全关键场景中尤为明显，我们的领域感知采样提供了安全导航所需的关键长时间范围上下文。",
+  "arxiv_id": "2608.26002",
+  "arxiv_url": "https://arxiv.org/abs/2608.26002v2",
+  "authors": [
+    "Alexander Prutsch",
+    "David Schinagl",
+    "Horst Possegger"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-27#paper-2608-26002",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-29T04:38:48.066199+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.26002v2",
+  "published_at": "2026-08-26T16:49:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 85
+  },
+  "seen_dates": [
+    "2026-08-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.26002v2",
+    "axi": "https://paper.axi404.top/daily/2026-08-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "DESCENT: Directed Edge Scene Encoding for Airport Surface Movement Prediction",
+  "title_zh": "DESCENT：用于机场地面移动预测的定向边场景编码",
+  "translation_url": "https://hjfy.top/arxiv/2608.26002"
+}
