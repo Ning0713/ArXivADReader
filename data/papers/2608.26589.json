@@ -1,0 +1,60 @@
+{
+  "abstract": "Image-to-Point Cloud Registration aims to estimate the camera pose of a given image within a 3D scene point cloud, which is a fundamental task in autonomous driving and large-scale outdoor localization. Recent implicit correspondence learning methods have improved registration performance by learning cross-modal alignment in an end-to-end framework, leading to more accurate camera pose estimation. However, due to the inherent modality discrepancy between images and sparse LiDAR point clouds, reliable cross-modal correspondence learning remains challenging. To address this issue, we propose Depth-Guided Projective Alignment for Image-to-Point-Cloud Registration (DPA-I2P). Unlike naive depth or feature concatenation, Ray-Conditioned Metric Depth Encoding (RMDE) and Projection-Consistent Vision Lifting (PVL) exploit depth and visual cues in a structured, geometry-aware manner. In addition, Cross-Modal Query Pruning (CQP) suppresses unreliable queries during early refinement to improve matching stability. Experiments on KITTI and nuScenes demonstrate the effectiveness of the proposed method. On KITTI, DPA-I2P reduces RTE and RRE by 45.0% and 55.6% over the strongest implicit baseline, respectively. On nuScenes, DPA-I2P also improves registration accuracy over the evaluated baselines, suggesting better transferability to different driving scenes.",
+  "abstract_zh": "图像与点云配准旨在估计给定图像在三维场景点云中的相机位姿，这是自主驾驶和大规模户外定位中的一项基础任务。最近的隐式对应学习方法通过在端到端框架中学习跨模态对齐，提升了配准性能，从而实现了更准确的相机位姿估计。然而，由于图像与稀疏激光雷达点云之间固有的模态差异，可靠的跨模态对应学习仍然具有挑战性。为了解决这一问题，我们提出了用于图像与点云配准的深度引导投影对齐方法（DPA-I2P）。与简单的深度或特征拼接不同，射线条件度量深度编码（Ray-Conditioned Metric Depth Encoding, RMDE）和投影一致视觉提升（Projection-Consistent Vision Lifting, PVL）以结构化和几何感知的方式利用深度和视觉线索。此外，跨模态查询修剪（Cross-Modal Query Pruning, CQP）在早期精化过程中抑制不可靠的查询，以提高匹配的稳定性。在KITTI和nuScenes上的实验表明了所提方法的有效性。在KITTI数据集上，DPA-I2P分别比最强的隐式基线降低了45.0%的重投影误差（RTE）和55.6%的旋转重投影误差（RRE）。在nuScenes上，DPA-I2P也提高了与评估基线相比的配准精度，表明其在不同驾驶场景中的更好迁移性。",
+  "arxiv_id": "2608.26589",
+  "arxiv_url": "https://arxiv.org/abs/2608.26589v1",
+  "authors": [
+    "Wenxin Zhang",
+    "Hang Li",
+    "Zhiwei Xu",
+    "Qiankun Dong",
+    "Gang Wang",
+    "Tao Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-28#paper-2608-26589",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-29T04:46:20.351928+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.26589v1",
+  "published_at": "2026-08-27T04:01:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "kitti",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-08-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.26589v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "DPA-I2P: Depth-Guided Projective Alignment for Image-to-Point-Cloud Registration in Autonomous Driving",
+  "title_zh": "DPA-I2P：用于自主驾驶中图像与点云配准的深度引导投影对齐",
+  "translation_url": "https://hjfy.top/arxiv/2608.26589"
+}

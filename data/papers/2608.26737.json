@@ -1,0 +1,51 @@
+{
+  "abstract": "Outdoor LiDAR semantic scene completion (SSC) recovers a dense semantic voxel grid from a scan observing 1% of the target volume, under class imbalance beyond 7,000x. We recast SSC as generative semantic scene completion (GSSC): a single discrete-diffusion formulation in three roles. First, paired sparse-dense scene synthesis (PS$^3$) generates matched sparse LiDAR observations with their dense semantic completions, addressing the long tail at its source and yielding the PS$^3$-SemanticKITTI corpus we train on alongside SemanticKITTI. Second, semantic-guided generative scene completion (SGSC) generates the scene from noise with multinomial discrete diffusion, conditioned on the sparse scan through a bird's-eye-view semantic map and a sparse 3D feature stream. Third, the same framework instead refines an existing completion in one flow-matching step: structured source discrete diffusion (S$^2$D$^2$). S$^2$D$^2$ improves the mIoU of SGSC's own output and every external SSC base tested, without base retraining or test-time adaptation. On the strongest base, one step without test-time augmentation reaches 38.8% mIoU on the SemanticKITTI hidden test. To our knowledge that is the best causal, single-sweep, single-sample result on that leaderboard, +2.1 pp over the previous best published score under the same restriction. Four correction steps with eight-view test-time augmentation reach 39.2%, outside that restriction.",
+  "abstract_zh": "户外激光雷达语义场景补全（SSC）从观察目标体积1%的扫描中恢复出密集的语义体素网格，且类别不平衡超过7000倍。我们将SSC重新表述为生成语义场景补全（GSSC）：一种在三个角色中使用的单一离散扩散公式。首先，配对稀疏-密集场景合成（PS$^3$）生成与其密集语义补全相匹配的稀疏激光雷达观测，解决了长尾问题的根源，并生成了我们在SemanticKITTI上训练的PS$^3$-SemanticKITTI数据集。其次，语义引导的生成场景补全（SGSC）通过多项式离散扩散从噪声中生成场景，条件是通过鸟瞰视角的语义图和稀疏的3D特征流进行稀疏扫描。第三，同一框架在一个流匹配步骤中精炼现有的补全：结构化源离散扩散（S$^2$D$^2$）。S$^2$D$^2$提高了SGSC自身输出的mIoU，以及每个测试的外部SSC基准，而无需基准重训练或测试时适应。在最强的基准上，未进行测试时增强的一步达到了SemanticKITTI隐藏测试的38.8% mIoU。据我们所知，这是在该排行榜上最佳的因果、单次扫描、单样本结果，比在相同限制下之前发布的最佳分数高出2.1个百分点。经过四个修正步骤和八视图的测试时增强，达到了39.2%，超出了该限制。",
+  "arxiv_id": "2608.26737",
+  "arxiv_url": "https://arxiv.org/abs/2608.26737v1",
+  "authors": [
+    "Shi Chen",
+    "Weifeng Ge"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-28#paper-2608-26737",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-29T04:46:20.369743+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.26737v1",
+  "published_at": "2026-08-27T07:29:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "semantickitti",
+      "bird's-eye",
+      "lidar",
+      "scene completion"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-08-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.26737v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "世界模型/生成",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Generative Semantic Scene Completion",
+  "title_zh": "生成语义场景补全",
+  "translation_url": "https://hjfy.top/arxiv/2608.26737"
+}

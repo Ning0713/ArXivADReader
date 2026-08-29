@@ -1,0 +1,63 @@
+{
+  "abstract": "Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn local urban perception into reliable action in a complicated real-scale city. We propose UrbanGround, the first sandbox to make this question testable in a physically constrained replica of Hong Kong built from territory-wide 3D geospatial data. UrbanGround supports closed-loop interaction from a first-person view and provides an interactive map for navigation. Agents can directly enter the 3D city and explore from a first-person view. Our analysis follows the growth of the spatial problem through three research questions. We first test whether an agent can ground a local scene well enough to answer spatial questions after active observation. Then we ask whether that grounding supports navigation as destinations become farther away and less explicit. Finally, we examine whether the resulting behavior survives changes in route availability and pedestrian motion. Contemporary MLLM agents usually show useful atomic abilities in visual recognition and short-range spatial reasoning, while orientation and pedestrian-aware movement remain unreliable. Their central failure emerges over extended exploration, where local abilities do not compose into sustained goal-directed behavior and errors accumulate without effective correction. We hope UrbanGround will support broader study of how far current MLLM agents can explore reliably in complex, open-ended urban environments.",
+  "abstract_zh": "多模态大型语言模型（MLLMs）能够解读街景，但城市代理的有效性取决于在代理开始移动后，这些地方证据是否仍然有用。本文探讨了当前的MLLM代理在复杂的真实规模城市中，将地方城市感知转化为可靠行动的能力。我们提出了UrbanGround，这是第一个沙盒，旨在通过基于全境3D地理空间数据构建的香港物理复制品，使这一问题可测试。UrbanGround支持从第一人称视角的闭环交互，并提供用于导航的互动地图。代理可以直接进入3D城市并从第一人称视角进行探索。我们的分析通过三个研究问题跟踪空间问题的增长。首先，我们测试代理是否能够在主动观察后，将地方场景扎根到足够的程度，以回答空间问题。然后，我们询问这种扎根是否支持导航，因为目的地变得越来越远且不那么明确。最后，我们检查在路线可用性和行人运动变化时，所产生的行为是否能够持续。现代MLLM代理通常在视觉识别和短距离空间推理方面表现出有用的原子能力，而方向感和考虑行人的移动仍然不可靠。它们的主要失败出现在扩展探索中，地方能力无法组合成持续的目标导向行为，错误在没有有效纠正的情况下累积。我们希望UrbanGround能够支持更广泛的研究，探讨当前的MLLM代理在复杂、开放的城市环境中能够可靠探索的范围。",
+  "arxiv_id": "2608.27456",
+  "arxiv_url": "https://arxiv.org/abs/2608.27456v1",
+  "authors": [
+    "Tianjie Ju",
+    "Zheng Wu",
+    "Yueqing Sun",
+    "Yuhan Cui",
+    "Bobo Li",
+    "Shengqiong Wu",
+    "Pengzhou Cheng",
+    "Haodong Zhao",
+    "Zongru Wu",
+    "Xinbei Ma",
+    "Doris Zhang",
+    "Kunling Li",
+    "Mong-Li Lee",
+    "Wynne Hsu",
+    "Hao Fei",
+    "Qi Gu",
+    "Gongshen Liu",
+    "Zhuosheng Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-28#paper-2608-27456",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-29T04:46:20.423824+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.27456v1",
+  "published_at": "2026-08-27T17:59:33Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.27456v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-28"
+  },
+  "summary_zh": "本文构建了一个基于真实规模香港三维城市数据的闭环导航沙盒，用于评估多模态语言模型代理从局部视觉感知到长程城市行动的能力。实验显示，代理在局部空间理解方面具有一定能力，但在全局定位、长距离导航、行人交互和持续探索中存在显著缺陷。该工作与自动驾驶中的城市环境建模、视觉语言代理、导航规划及仿真评测具有间接关联，但并未直接研究车辆驾驶或自动驾驶系统。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "VLM/VLA",
+      "预测/规划"
+    ]
+  },
+  "title": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
+  "title_zh": "UrbanGround：从地方感知到真实规模城市中的空间代理",
+  "translation_url": "https://hjfy.top/arxiv/2608.27456"
+}

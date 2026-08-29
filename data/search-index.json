@@ -1,6 +1,211 @@
 {
-  "generated_at": "2026-08-29T04:40:10.212635+00:00",
+  "generated_at": "2026-08-29T04:48:03.763835+00:00",
   "items": [
+    {
+      "abstract": "Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn local urban perception into reliable action in a complicated real-scale city. We propose UrbanGround, the first sandbox to make this question testable in a physically constrained replica of Hong Kong built from territory-wide 3D geospatial data. UrbanGround supports closed-loop interaction from a first-person view and provides an interactive map for navigation. Agents can directly enter the 3D city and explore from a first-person view. Our analysis follows the growth of the spatial problem through three research questions. We first test whether an agent can ground a local scene well enough to answer spatial questions after active observation. Then we ask whether that grounding supports navigation as destinations become farther away and less explicit. Finally, we examine whether the resulting behavior survives changes in route availability and pedestrian motion. Contemporary MLLM agents usually show useful atomic abilities in visual recognition and short-range spatial reasoning, while orientation and pedestrian-aware movement remain unreliable. Their central failure emerges over extended exploration, where local abilities do not compose into sustained goal-directed behavior and errors accumulate without effective correction. We hope UrbanGround will support broader study of how far current MLLM agents can explore reliably in complex, open-ended urban environments.",
+      "abstract_zh": "多模态大型语言模型（MLLMs）能够解读街景，但城市代理的有效性取决于在代理开始移动后，这些地方证据是否仍然有用。本文探讨了当前的MLLM代理在复杂的真实规模城市中，将地方城市感知转化为可靠行动的能力。我们提出了UrbanGround，这是第一个沙盒，旨在通过基于全境3D地理空间数据构建的香港物理复制品，使这一问题可测试。UrbanGround支持从第一人称视角的闭环交互，并提供用于导航的互动地图。代理可以直接进入3D城市并从第一人称视角进行探索。我们的分析通过三个研究问题跟踪空间问题的增长。首先，我们测试代理是否能够在主动观察后，将地方场景扎根到足够的程度，以回答空间问题。然后，我们询问这种扎根是否支持导航，因为目的地变得越来越远且不那么明确。最后，我们检查在路线可用性和行人运动变化时，所产生的行为是否能够持续。现代MLLM代理通常在视觉识别和短距离空间推理方面表现出有用的原子能力，而方向感和考虑行人的移动仍然不可靠。它们的主要失败出现在扩展探索中，地方能力无法组合成持续的目标导向行为，错误在没有有效纠正的情况下累积。我们希望UrbanGround能够支持更广泛的研究，探讨当前的MLLM代理在复杂、开放的城市环境中能够可靠探索的范围。",
+      "authors": [
+        "Tianjie Ju",
+        "Zheng Wu",
+        "Yueqing Sun",
+        "Yuhan Cui",
+        "Bobo Li",
+        "Shengqiong Wu",
+        "Pengzhou Cheng",
+        "Haodong Zhao",
+        "Zongru Wu",
+        "Xinbei Ma",
+        "Doris Zhang",
+        "Kunling Li",
+        "Mong-Li Lee",
+        "Wynne Hsu",
+        "Hao Fei",
+        "Qi Gu",
+        "Gongshen Liu",
+        "Zhuosheng Zhang"
+      ],
+      "date": "2026-08-28",
+      "id": "2608.27456",
+      "tags": [
+        "仿真/数据",
+        "VLM/VLA",
+        "预测/规划"
+      ],
+      "title": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
+      "title_zh": "UrbanGround：从地方感知到真实规模城市中的空间代理",
+      "url": "/daily/2026-08-28/#paper-2608-27456"
+    },
+    {
+      "abstract": "Most single-stage 3D object detectors complete different tasks with the same extracted features. Nevertheless, it is impossible to project features into a common space that is adaptive for all the tasks. We present a novel task-aware deformable prediction (TADP) method for single-stage 3D object detection to solve this problem. Firstly, a triple feature refinement aggregation module is designed to extract three-level features adaptively. Additionally, we design the multi-scale feature aggregation block to fuse multi-scale features in a scale-aware manner. Finally, the prediction of each task is deformed with the designed plug-and-play task-aware deformation head. It can percept the emphasis and interaction of each task. We also designed three different deformation modules. The experimental results demonstrate that the proposed deformation head shows good results on other detection methods. The experimental results on the KITTI dataset demonstrate that the car mAP is 80.91%, surpassing many state-of-the-art methods on the KITTI benchmark.",
+      "abstract_zh": "大多数单阶段3D目标检测器使用相同的提取特征完成不同的任务。然而，将特征投影到一个适应所有任务的公共空间是不可能的。为了解决这个问题，我们提出了一种新颖的任务感知可变形预测（TADP）方法用于单阶段3D目标检测。首先，设计了一个三重特征精炼聚合模块，以自适应地提取三级特征。此外，我们设计了多尺度特征聚合块，以尺度感知的方式融合多尺度特征。最后，通过设计的即插即用任务感知变形头对每个任务的预测进行变形，使其能够感知每个任务的重点和相互作用。我们还设计了三种不同的变形模块。实验结果表明，所提出的变形头在其他检测方法上表现良好。在KITTI数据集上的实验结果显示，汽车的mAP达到80.91%，超越了KITTI基准上的许多最先进的方法。",
+      "authors": [
+        "Su Wang",
+        "Yaochen Li",
+        "Min Yang",
+        "Jiaohao Nie",
+        "Chang Liu",
+        "Yuehu Liu"
+      ],
+      "date": "2026-08-28",
+      "id": "2608.27282",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "3D 检测"
+      ],
+      "title": "TADP: Task-Aware Deformable Prediction for Single-Stage 3D Object Detection",
+      "title_zh": "TADP：任务感知可变形预测用于单阶段3D目标检测",
+      "url": "/daily/2026-08-28/#paper-2608-27282"
+    },
+    {
+      "abstract": "Vision generative artificial intelligence (AI) has emerged as one of the most rapidly advancing areas of deep learning. The explosion of multimodal models has made them widely associated with text-to-image applications running on large datacentres. However, vision generative models are equally needed in applications that operate under strict hardware constraints at the edge, including autonomous vehicles, agricultural sensors, and mobile devices. In this Perspective, we argue that progress in vision generative AI has been driven by output quality, with hardware evolving reactively to accommodate growing model demands. We quantify the parameter cost and energy efficiency of these models across a range of accelerator platforms, and map four generative model families against seven real-world application domains. Finally, we advocate a software-hardware co-design approach, where deployment constraints are considered from the start of the design process, ensuring that the \"right model\" runs on the \"right hardware\" to serve the \"right application\", making generative AI deployment sustainable and accessible across a much broader range of platforms.",
+      "abstract_zh": "视觉生成式人工智能（AI）已成为深度学习中发展最快的领域之一。多模态模型的爆炸性增长使其广泛应用于在大型数据中心运行的文本到图像应用。然而，视觉生成模型同样在边缘计算中需要应用于严格的硬件约束下，包括自动驾驶汽车、农业传感器和移动设备。在本观点中，我们认为视觉生成AI的进展是由输出质量驱动的，硬件则是被动地演变以适应不断增长的模型需求。我们量化了这些模型在多种加速器平台上的参数成本和能效，并将四个生成模型家族与七个现实世界应用领域进行了映射。最后，我们倡导一种软件-硬件协同设计的方法，从设计过程的开始就考虑部署约束，确保“合适的模型”在“合适的硬件”上运行，以服务于“合适的应用”，使生成式AI的部署在更广泛的平台上可持续和可及。",
+      "authors": [
+        "Eleni Tselepi",
+        "Cristian Sestito",
+        "Shady Agwa",
+        "Themis Prodromakis"
+      ],
+      "date": "2026-08-28",
+      "id": "2608.27199",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成",
+        "协同/V2X"
+      ],
+      "title": "Vision-centric generative AI models: A software-hardware perspective",
+      "title_zh": "以视觉为中心的生成式人工智能模型：软件-硬件视角",
+      "url": "/daily/2026-08-28/#paper-2608-27199"
+    },
+    {
+      "abstract": "Recent advances in SLAM have leveraged 3DGS for photorealistic reconstruction and novel view synthesis. However, most methods rely on RGB-D input, which is unavailable on consumer-grade smartphones, and few integrate 3DGS within a collaborative framework. Therefore, we present CGS-SLAM, a hybrid decentralized/centralized system enabling multi-agent 3DGS SLAM using only RGB and inertial data. Each agent performs local tracking with inertial data as a motion prior and reconstructs a scaled map using a metric monocular depth estimator (Depth Pro). Keyframe encodings are shared among agents, enabling dynamic keyframing in regions of spatial overlaps with other agents, enhancing submap alignment. Afterwards, a central server aligns submaps using VGGT as a view alignment model. This bidirectional communication keeps communication cost low during mapping and global reconstruction in difficult GNSS-denied environments. Experiments on multiple datasets demonstrate competitive tracking performance, improved rendering quality over state-of-the-art methods, and accurate submap alignment.",
+      "abstract_zh": "最近，SLAM领域的进展利用3DGS实现了逼真的重建和新视图合成。然而，大多数方法依赖于RGB-D输入，而这一输入在消费级智能手机上并不可用，且很少有方法将3DGS集成到协作框架中。因此，我们提出了CGS-SLAM，一种混合的去中心化/中心化系统，仅使用RGB和惯性数据实现多智能体3DGS SLAM。每个智能体利用惯性数据作为运动先验进行局部跟踪，并使用度量单目深度估计器（Depth Pro）重建缩放地图。关键帧编码在智能体之间共享，使得在与其他智能体空间重叠的区域内实现动态关键帧，提高子地图对齐精度。随后，中央服务器使用VGGT作为视图对齐模型对子地图进行对齐。这种双向通信在困难的GNSS失效环境中保持了低通信成本的同时，支持了映射和全局重建。多个数据集上的实验表明，CGS-SLAM在跟踪性能上具有竞争力，渲染质量优于最先进的方法，并且子地图对齐准确。",
+      "authors": [
+        "Jean-Daniel de Ambrogi",
+        "Aladine Chetouani",
+        "Vincent Nguyen",
+        "Aurélien Chateigner"
+      ],
+      "date": "2026-08-28",
+      "id": "2608.26868",
+      "tags": [
+        "地图/定位",
+        "深度/几何",
+        "协同/V2X"
+      ],
+      "title": "CGS-SLAM: Collaborative Gaussian Splatting based SLAM for Multi-Agent Reconstruction",
+      "title_zh": "CGS-SLAM：基于协作高斯点云的多智能体重建SLAM",
+      "url": "/daily/2026-08-28/#paper-2608-26868"
+    },
+    {
+      "abstract": "Accurate steering sensing and LiDAR-to-vehicle extrinsics are crucial for reliable path tracking in warehouse mobile robots (WMRs); miscalibration often leads to snaking, weaving, and elevated cross-track error (CTE). In practice, steering ``zero'' is commonly set manually (e.g., eyeballing straightness via a PS4 joystick), while LiDAR extrinsics are assumed from CAD and may drift after maintenance. Such static, manual procedures frequently cause miscalibration in safety-critical environments. This paper presents an Extended Kalman Filter (EKF)--based method for online estimation of steering offset and planar LiDAR extrinsics within a bicycle-kinematics model, providing a principled alternative to manual calibration. Experiments on real datasets show that correcting steering offset reduces CTE substantially, validating the effectiveness of the proposed approach.",
+      "abstract_zh": "准确的转向传感和LiDAR与车辆的外参对于仓库移动机器人（WMRs）可靠的路径跟踪至关重要；标定错误常常导致蛇形行驶、编织行驶以及较高的横向误差（CTE）。在实际操作中，转向“零”通常通过手动设置（例如，通过PS4手柄目测直线度），而LiDAR外参则通常基于CAD假设，并可能在维护后发生漂移。这种静态的手动程序在安全关键环境中常常导致标定错误。本文提出了一种基于扩展卡尔曼滤波器（EKF）的方法，用于在自行车运动学模型内在线估计转向偏移和平面LiDAR外参，为手动标定提供了一种有原则的替代方案。对真实数据集的实验表明，纠正转向偏移显著减少了CTE，验证了所提方法的有效性。",
+      "authors": [
+        "Subodh Mishra",
+        "Arindam Dhar",
+        "Suprotim Majumdar",
+        "Naveen Arulselvan"
+      ],
+      "date": "2026-08-28",
+      "id": "2608.26789",
+      "tags": [
+        "LiDAR/点云",
+        "地图/定位",
+        "深度/几何"
+      ],
+      "title": "Online Joint Calibration of Steering Offset and Planar LiDAR Extrinsics for Wheeled Mobile Robots",
+      "title_zh": "轮式移动机器人在线联合标定转向偏移和平面LiDAR外参",
+      "url": "/daily/2026-08-28/#paper-2608-26789"
+    },
+    {
+      "abstract": "Outdoor LiDAR semantic scene completion (SSC) recovers a dense semantic voxel grid from a scan observing 1% of the target volume, under class imbalance beyond 7,000x. We recast SSC as generative semantic scene completion (GSSC): a single discrete-diffusion formulation in three roles. First, paired sparse-dense scene synthesis (PS$^3$) generates matched sparse LiDAR observations with their dense semantic completions, addressing the long tail at its source and yielding the PS$^3$-SemanticKITTI corpus we train on alongside SemanticKITTI. Second, semantic-guided generative scene completion (SGSC) generates the scene from noise with multinomial discrete diffusion, conditioned on the sparse scan through a bird's-eye-view semantic map and a sparse 3D feature stream. Third, the same framework instead refines an existing completion in one flow-matching step: structured source discrete diffusion (S$^2$D$^2$). S$^2$D$^2$ improves the mIoU of SGSC's own output and every external SSC base tested, without base retraining or test-time adaptation. On the strongest base, one step without test-time augmentation reaches 38.8% mIoU on the SemanticKITTI hidden test. To our knowledge that is the best causal, single-sweep, single-sample result on that leaderboard, +2.1 pp over the previous best published score under the same restriction. Four correction steps with eight-view test-time augmentation reach 39.2%, outside that restriction.",
+      "abstract_zh": "户外激光雷达语义场景补全（SSC）从观察目标体积1%的扫描中恢复出密集的语义体素网格，且类别不平衡超过7000倍。我们将SSC重新表述为生成语义场景补全（GSSC）：一种在三个角色中使用的单一离散扩散公式。首先，配对稀疏-密集场景合成（PS$^3$）生成与其密集语义补全相匹配的稀疏激光雷达观测，解决了长尾问题的根源，并生成了我们在SemanticKITTI上训练的PS$^3$-SemanticKITTI数据集。其次，语义引导的生成场景补全（SGSC）通过多项式离散扩散从噪声中生成场景，条件是通过鸟瞰视角的语义图和稀疏的3D特征流进行稀疏扫描。第三，同一框架在一个流匹配步骤中精炼现有的补全：结构化源离散扩散（S$^2$D$^2$）。S$^2$D$^2$提高了SGSC自身输出的mIoU，以及每个测试的外部SSC基准，而无需基准重训练或测试时适应。在最强的基准上，未进行测试时增强的一步达到了SemanticKITTI隐藏测试的38.8% mIoU。据我们所知，这是在该排行榜上最佳的因果、单次扫描、单样本结果，比在相同限制下之前发布的最佳分数高出2.1个百分点。经过四个修正步骤和八视图的测试时增强，达到了39.2%，超出了该限制。",
+      "authors": [
+        "Shi Chen",
+        "Weifeng Ge"
+      ],
+      "date": "2026-08-28",
+      "id": "2608.26737",
+      "tags": [
+        "LiDAR/点云",
+        "世界模型/生成",
+        "BEV/Occupancy"
+      ],
+      "title": "Generative Semantic Scene Completion",
+      "title_zh": "生成语义场景补全",
+      "url": "/daily/2026-08-28/#paper-2608-26737"
+    },
+    {
+      "abstract": "Testing of commercial Advanced Driver Assistance Systems is essential to ensure safety and compliance during type approval and in service operation. However, proving ground scenarios may not reflect real world driving complexity, while geo fencing can require manufacturer collaboration and limit assessment independence. This work presents a methodology for independently testing Assisted Lane Change systems on public roads. A campaign on the A31 French motorway used a test vehicle equipped with a LiDAR based vehicle detection and tracking system. Tests covered combinations of inter vehicle distance and speed between the test vehicle and the take over vehicle. Real time kinematic global navigation satellite system receivers assessed detection and tracking performance. Recorded lane change trajectories were compared with the lane change suppression requirements of UNECE Regulation Number 79. Of 27 predefined lane change manoeuvres, 18 were completed and 9 suppressed. In 6 cases, the system allowed manoeuvres that did not meet regulatory minimum distance requirements. In 3 cases, the deviation remained statistically significant after accounting for measurement uncertainty. To the authors knowledge, this is the first public road campaign designed to assess Assisted Lane Change compliance with Regulation Number 79 safety distance requirements. The results demonstrate the suitability of LiDAR based sensing for this purpose. The methodology can support market surveillance and future regulatory revisions by revealing real world behaviours not covered by approval procedures.",
+      "abstract_zh": "对商业高级驾驶辅助系统的测试对于确保安全性和合规性在类型批准和实际运营中至关重要。然而，试验场场景可能无法反映现实世界驾驶的复杂性，而地理围栏可能需要制造商的合作并限制评估的独立性。本研究提出了一种在公共道路上独立测试辅助变道系统的方法。我们在法国A31高速公路上进行了一项测试活动，使用了一辆配备基于LiDAR的车辆检测和跟踪系统的测试车辆。测试涵盖了测试车辆与接管车辆之间的车辆间距和速度的组合。实时动态全球导航卫星系统接收器评估了检测和跟踪性能。记录的变道轨迹与联合国欧洲经济委员会第79号法规的变道抑制要求进行了比较。在27个预定义的变道操作中，完成了18个，抑制了9个。在6个案例中，系统允许了未满足监管最低距离要求的操作。在3个案例中，考虑测量不确定性后，偏差仍然具有统计显著性。据作者所知，这是第一个旨在评估辅助变道系统是否符合第79号法规安全距离要求的公共道路测试活动。结果表明，基于LiDAR的传感技术适合此目的。该方法可以通过揭示未涵盖在批准程序中的现实世界行为，支持市场监管和未来的法规修订。",
+      "authors": [
+        "Marcello Cellina",
+        "Akos Kriston",
+        "Antonio Migneco",
+        "Davide Maggi",
+        "Stefano Favelli",
+        "Fabrizio Re",
+        "Fabrizio Minarini",
+        "Andrea Nuovo",
+        "Riccardo Dona",
+        "Biagio Ciuffo"
+      ],
+      "date": "2026-08-28",
+      "id": "2608.26669",
+      "tags": [
+        "感知",
+        "安全/异常",
+        "LiDAR/点云"
+      ],
+      "title": "Beyond the Proving Ground: Independent Public-Road Testing of Assisted Lane Change Systems using LiDAR",
+      "title_zh": "超越试验场：基于LiDAR的辅助变道系统在公共道路上的独立测试",
+      "url": "/daily/2026-08-28/#paper-2608-26669"
+    },
+    {
+      "abstract": "Multi-object removal in 3D scenes is challenging due to severe occlusions, semantic entanglement, and the difficulty of maintaining geometric and multi-view consistency. Existing 3D Gaussian Splatting (3DGS) methods perform well for single-object editing but scale poorly to multi-object scenarios, often requiring repetitive optimization and yielding unstable geometry in removed regions. We propose CoGeo-GS, a concept-driven framework for controllable multi-object removal in 3D scenes. CoGeo-GS assigns concept-aware semantic tags to Gaussians, enabling flexible object selection and reducing interference between foreground objects and background structures within a single optimization stage. To recover plausible geometry, we introduce a geometry-aware completion pipeline that combines monocular depth priors with diffusion-based refinement and boundary-aligned blending. A geometry-regularized refinement strategy further stabilizes reconstruction and preserves multi-view consistency. Experiments demonstrate that CoGeo-GS outperforms existing methods in visual quality and reconstruction fidelity.",
+      "abstract_zh": "在三维场景中，多物体去除面临严重的遮挡、语义纠缠以及保持几何和多视图一致性的困难。现有的三维高斯点云（3D Gaussian Splatting, 3DGS）方法在单物体编辑方面表现良好，但在多物体场景中扩展性较差，通常需要重复优化，并在去除区域产生不稳定的几何形状。我们提出了CoGeo-GS，这是一个用于可控多物体去除的基于概念驱动的框架。CoGeo-GS为高斯分布分配了基于概念的语义标签，使得在单次优化阶段内能够灵活选择物体，并减少前景物体与背景结构之间的干扰。为了恢复合理的几何形状，我们引入了一个几何感知的补全管道，该管道结合了单目深度先验、基于扩散的细化和边界对齐的混合。几何正则化的细化策略进一步稳定了重建过程，并保持了多视图一致性。实验表明，CoGeo-GS在视觉质量和重建保真度方面优于现有方法。",
+      "authors": [
+        "Yuanxiang Ni",
+        "Xianliang Huang",
+        "Chenhang Ma",
+        "Chen Xiao",
+        "Yuewen Ma",
+        "Ruxin Wang",
+        "Hao Zhang"
+      ],
+      "date": "2026-08-28",
+      "id": "2608.26656",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成",
+        "仿真/数据"
+      ],
+      "title": "CoGeo-GS: Concept-Driven and Geometry-Aware Multi-Object Removal in 3D Scenes",
+      "title_zh": "CoGeo-GS：基于概念驱动和几何感知的三维场景多物体去除",
+      "url": "/daily/2026-08-28/#paper-2608-26656"
+    },
+    {
+      "abstract": "Image-to-Point Cloud Registration aims to estimate the camera pose of a given image within a 3D scene point cloud, which is a fundamental task in autonomous driving and large-scale outdoor localization. Recent implicit correspondence learning methods have improved registration performance by learning cross-modal alignment in an end-to-end framework, leading to more accurate camera pose estimation. However, due to the inherent modality discrepancy between images and sparse LiDAR point clouds, reliable cross-modal correspondence learning remains challenging. To address this issue, we propose Depth-Guided Projective Alignment for Image-to-Point-Cloud Registration (DPA-I2P). Unlike naive depth or feature concatenation, Ray-Conditioned Metric Depth Encoding (RMDE) and Projection-Consistent Vision Lifting (PVL) exploit depth and visual cues in a structured, geometry-aware manner. In addition, Cross-Modal Query Pruning (CQP) suppresses unreliable queries during early refinement to improve matching stability. Experiments on KITTI and nuScenes demonstrate the effectiveness of the proposed method. On KITTI, DPA-I2P reduces RTE and RRE by 45.0% and 55.6% over the strongest implicit baseline, respectively. On nuScenes, DPA-I2P also improves registration accuracy over the evaluated baselines, suggesting better transferability to different driving scenes.",
+      "abstract_zh": "图像与点云配准旨在估计给定图像在三维场景点云中的相机位姿，这是自主驾驶和大规模户外定位中的一项基础任务。最近的隐式对应学习方法通过在端到端框架中学习跨模态对齐，提升了配准性能，从而实现了更准确的相机位姿估计。然而，由于图像与稀疏激光雷达点云之间固有的模态差异，可靠的跨模态对应学习仍然具有挑战性。为了解决这一问题，我们提出了用于图像与点云配准的深度引导投影对齐方法（DPA-I2P）。与简单的深度或特征拼接不同，射线条件度量深度编码（Ray-Conditioned Metric Depth Encoding, RMDE）和投影一致视觉提升（Projection-Consistent Vision Lifting, PVL）以结构化和几何感知的方式利用深度和视觉线索。此外，跨模态查询修剪（Cross-Modal Query Pruning, CQP）在早期精化过程中抑制不可靠的查询，以提高匹配的稳定性。在KITTI和nuScenes上的实验表明了所提方法的有效性。在KITTI数据集上，DPA-I2P分别比最强的隐式基线降低了45.0%的重投影误差（RTE）和55.6%的旋转重投影误差（RRE）。在nuScenes上，DPA-I2P也提高了与评估基线相比的配准精度，表明其在不同驾驶场景中的更好迁移性。",
+      "authors": [
+        "Wenxin Zhang",
+        "Hang Li",
+        "Zhiwei Xu",
+        "Qiankun Dong",
+        "Gang Wang",
+        "Tao Li"
+      ],
+      "date": "2026-08-28",
+      "id": "2608.26589",
+      "tags": [
+        "LiDAR/点云",
+        "深度/几何",
+        "地图/定位"
+      ],
+      "title": "DPA-I2P: Depth-Guided Projective Alignment for Image-to-Point-Cloud Registration in Autonomous Driving",
+      "title_zh": "DPA-I2P：用于自主驾驶中图像与点云配准的深度引导投影对齐",
+      "url": "/daily/2026-08-28/#paper-2608-26589"
+    },
     {
       "abstract": "Intent misinterpretation during vehicle interactions causes recurring planning failures. We study a decision layer in which a language-guided intent module reads structured descriptors, computes a smoothed intent-geometry divergence score, and gates the planned maneuver before commitment, upstream of a corridor envelope. On a replayed off-road departure and four crash clips under a frozen, disclosed implementation, gating is the only layer that repairs the plan: on the main case it fires 72 ms after the drift onset but 161 ms before the corridor exit, keeping the trajectory in the corridor in all ten replays. The first calibration draws nine false triggers in 5.9 minutes, each from scoring uncertainty as half a conflict; a preregistered redesign treating uncertainty as abstention cuts this to 0.341 per minute. Two ablations bound the model's contribution: the full score detects fastest on four of five failures under the deployed eligibility, three of five against the unvetoed rule (000871 by one cycle; 000228 by a pre-onset fire on an uncertain stretch that five clips cannot classify as signal or coincidence; dropping the confidence term costs two detections), while on in-domain tracks at equal false positives the geometric rule more than triples its detection. The evidence supports the gating mechanism; the model's demonstrated roles are the fastest detection on these failures and an uncertainty veto on the geometric rule.",
       "abstract_zh": "在车辆交互过程中，意图误解导致规划失败的反复发生。我们研究了一个决策层，其中一个基于语言的意图模块读取结构化描述符，计算平滑的意图几何分歧评分，并在承诺之前对计划的操作进行门控，位于走廊包络的上游。在重放的越野出发和四个碰撞片段中，在一个冻结的、公开的实现下，门控是唯一能够修复计划的层：在主要案例中，它在漂移开始后72毫秒触发，但在走廊出口前161毫秒触发，确保在所有十次重放中轨迹保持在走廊内。第一次校准在5.9分钟内产生九次错误触发，每次都因评分不确定性被视为半个冲突；一个预注册的重新设计将不确定性视为弃权，将这一数字减少到每分钟0.341。两个消融实验界定了模型的贡献：在部署的合格条件下，完整评分在五次失败中的四次上检测速度最快，在未被否决的规则下，五次中的三次（000871通过一个周期；000228通过在五个片段无法分类为信号或巧合的不确定区段上预先触发；去掉置信度项损失了两个检测），而在同域轨道上以相等的假阳性，几何规则的检测率超过了三倍。证据支持门控机制；模型展示的角色是对这些失败的最快检测和对几何规则的不确定性否决。",

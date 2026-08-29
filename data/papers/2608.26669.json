@@ -1,0 +1,65 @@
+{
+  "abstract": "Testing of commercial Advanced Driver Assistance Systems is essential to ensure safety and compliance during type approval and in service operation. However, proving ground scenarios may not reflect real world driving complexity, while geo fencing can require manufacturer collaboration and limit assessment independence. This work presents a methodology for independently testing Assisted Lane Change systems on public roads. A campaign on the A31 French motorway used a test vehicle equipped with a LiDAR based vehicle detection and tracking system. Tests covered combinations of inter vehicle distance and speed between the test vehicle and the take over vehicle. Real time kinematic global navigation satellite system receivers assessed detection and tracking performance. Recorded lane change trajectories were compared with the lane change suppression requirements of UNECE Regulation Number 79. Of 27 predefined lane change manoeuvres, 18 were completed and 9 suppressed. In 6 cases, the system allowed manoeuvres that did not meet regulatory minimum distance requirements. In 3 cases, the deviation remained statistically significant after accounting for measurement uncertainty. To the authors knowledge, this is the first public road campaign designed to assess Assisted Lane Change compliance with Regulation Number 79 safety distance requirements. The results demonstrate the suitability of LiDAR based sensing for this purpose. The methodology can support market surveillance and future regulatory revisions by revealing real world behaviours not covered by approval procedures.",
+  "abstract_zh": "对商业高级驾驶辅助系统的测试对于确保安全性和合规性在类型批准和实际运营中至关重要。然而，试验场场景可能无法反映现实世界驾驶的复杂性，而地理围栏可能需要制造商的合作并限制评估的独立性。本研究提出了一种在公共道路上独立测试辅助变道系统的方法。我们在法国A31高速公路上进行了一项测试活动，使用了一辆配备基于LiDAR的车辆检测和跟踪系统的测试车辆。测试涵盖了测试车辆与接管车辆之间的车辆间距和速度的组合。实时动态全球导航卫星系统接收器评估了检测和跟踪性能。记录的变道轨迹与联合国欧洲经济委员会第79号法规的变道抑制要求进行了比较。在27个预定义的变道操作中，完成了18个，抑制了9个。在6个案例中，系统允许了未满足监管最低距离要求的操作。在3个案例中，考虑测量不确定性后，偏差仍然具有统计显著性。据作者所知，这是第一个旨在评估辅助变道系统是否符合第79号法规安全距离要求的公共道路测试活动。结果表明，基于LiDAR的传感技术适合此目的。该方法可以通过揭示未涵盖在批准程序中的现实世界行为，支持市场监管和未来的法规修订。",
+  "arxiv_id": "2608.26669",
+  "arxiv_url": "https://arxiv.org/abs/2608.26669v1",
+  "authors": [
+    "Marcello Cellina",
+    "Akos Kriston",
+    "Antonio Migneco",
+    "Davide Maggi",
+    "Stefano Favelli",
+    "Fabrizio Re",
+    "Fabrizio Minarini",
+    "Andrea Nuovo",
+    "Riccardo Dona",
+    "Biagio Ciuffo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-28#paper-2608-26669",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-08-29T04:46:20.314753+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.26669v1",
+  "published_at": "2026-08-27T06:24:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "road",
+      "lane",
+      "驾驶",
+      "车辆",
+      "道路",
+      "lidar",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 39
+  },
+  "seen_dates": [
+    "2026-08-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.26669v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Beyond the Proving Ground: Independent Public-Road Testing of Assisted Lane Change Systems using LiDAR",
+  "title_zh": "超越试验场：基于LiDAR的辅助变道系统在公共道路上的独立测试",
+  "translation_url": "https://hjfy.top/arxiv/2608.26669"
+}

@@ -1,0 +1,53 @@
+{
+  "abstract": "Vision generative artificial intelligence (AI) has emerged as one of the most rapidly advancing areas of deep learning. The explosion of multimodal models has made them widely associated with text-to-image applications running on large datacentres. However, vision generative models are equally needed in applications that operate under strict hardware constraints at the edge, including autonomous vehicles, agricultural sensors, and mobile devices. In this Perspective, we argue that progress in vision generative AI has been driven by output quality, with hardware evolving reactively to accommodate growing model demands. We quantify the parameter cost and energy efficiency of these models across a range of accelerator platforms, and map four generative model families against seven real-world application domains. Finally, we advocate a software-hardware co-design approach, where deployment constraints are considered from the start of the design process, ensuring that the \"right model\" runs on the \"right hardware\" to serve the \"right application\", making generative AI deployment sustainable and accessible across a much broader range of platforms.",
+  "abstract_zh": "视觉生成式人工智能（AI）已成为深度学习中发展最快的领域之一。多模态模型的爆炸性增长使其广泛应用于在大型数据中心运行的文本到图像应用。然而，视觉生成模型同样在边缘计算中需要应用于严格的硬件约束下，包括自动驾驶汽车、农业传感器和移动设备。在本观点中，我们认为视觉生成AI的进展是由输出质量驱动的，硬件则是被动地演变以适应不断增长的模型需求。我们量化了这些模型在多种加速器平台上的参数成本和能效，并将四个生成模型家族与七个现实世界应用领域进行了映射。最后，我们倡导一种软件-硬件协同设计的方法，从设计过程的开始就考虑部署约束，确保“合适的模型”在“合适的硬件”上运行，以服务于“合适的应用”，使生成式AI的部署在更广泛的平台上可持续和可及。",
+  "arxiv_id": "2608.27199",
+  "arxiv_url": "https://arxiv.org/abs/2608.27199v1",
+  "authors": [
+    "Eleni Tselepi",
+    "Cristian Sestito",
+    "Shady Agwa",
+    "Themis Prodromakis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-28#paper-2608-27199",
+  "categories": [
+    "cs.CV",
+    "cs.AR"
+  ],
+  "fetched_at": "2026-08-29T04:46:20.409977+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.27199v1",
+  "published_at": "2026-08-27T14:41:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "驾驶",
+      "农业"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 66
+  },
+  "seen_dates": [
+    "2026-08-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.27199v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "协同/V2X"
+    ]
+  },
+  "title": "Vision-centric generative AI models: A software-hardware perspective",
+  "title_zh": "以视觉为中心的生成式人工智能模型：软件-硬件视角",
+  "translation_url": "https://hjfy.top/arxiv/2608.27199"
+}

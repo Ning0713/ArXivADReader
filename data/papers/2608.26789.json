@@ -1,0 +1,51 @@
+{
+  "abstract": "Accurate steering sensing and LiDAR-to-vehicle extrinsics are crucial for reliable path tracking in warehouse mobile robots (WMRs); miscalibration often leads to snaking, weaving, and elevated cross-track error (CTE). In practice, steering ``zero'' is commonly set manually (e.g., eyeballing straightness via a PS4 joystick), while LiDAR extrinsics are assumed from CAD and may drift after maintenance. Such static, manual procedures frequently cause miscalibration in safety-critical environments. This paper presents an Extended Kalman Filter (EKF)--based method for online estimation of steering offset and planar LiDAR extrinsics within a bicycle-kinematics model, providing a principled alternative to manual calibration. Experiments on real datasets show that correcting steering offset reduces CTE substantially, validating the effectiveness of the proposed approach.",
+  "abstract_zh": "准确的转向传感和LiDAR与车辆的外参对于仓库移动机器人（WMRs）可靠的路径跟踪至关重要；标定错误常常导致蛇形行驶、编织行驶以及较高的横向误差（CTE）。在实际操作中，转向“零”通常通过手动设置（例如，通过PS4手柄目测直线度），而LiDAR外参则通常基于CAD假设，并可能在维护后发生漂移。这种静态的手动程序在安全关键环境中常常导致标定错误。本文提出了一种基于扩展卡尔曼滤波器（EKF）的方法，用于在自行车运动学模型内在线估计转向偏移和平面LiDAR外参，为手动标定提供了一种有原则的替代方案。对真实数据集的实验表明，纠正转向偏移显著减少了CTE，验证了所提方法的有效性。",
+  "arxiv_id": "2608.26789",
+  "arxiv_url": "https://arxiv.org/abs/2608.26789v1",
+  "authors": [
+    "Subodh Mishra",
+    "Arindam Dhar",
+    "Suprotim Majumdar",
+    "Naveen Arulselvan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-28#paper-2608-26789",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-29T04:46:20.318513+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.26789v1",
+  "published_at": "2026-08-27T08:19:06Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-08-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.26789v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-28"
+  },
+  "summary_zh": "论文提出一种面向轮式移动机器人的在线联合标定方法，在自行车运动学模型中利用EKF同时估计转向偏移和二维LiDAR外参。该方法旨在替代依赖人工目测和CAD先验的静态标定流程，缓解标定漂移导致的蛇形行驶、编织行驶及横向误差增大问题。实验结果显示，在线校正转向偏移能够有效提升路径跟踪精度。虽然研究对象主要是仓库移动机器人而非道路自动驾驶车辆，但其涉及车辆状态、LiDAR外参与运动模型的联合标定，对自动驾驶感知与定位系统具有基础技术相关性。",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "地图/定位",
+      "深度/几何"
+    ]
+  },
+  "title": "Online Joint Calibration of Steering Offset and Planar LiDAR Extrinsics for Wheeled Mobile Robots",
+  "title_zh": "轮式移动机器人在线联合标定转向偏移和平面LiDAR外参",
+  "translation_url": "https://hjfy.top/arxiv/2608.26789"
+}

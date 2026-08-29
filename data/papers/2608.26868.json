@@ -1,0 +1,52 @@
+{
+  "abstract": "Recent advances in SLAM have leveraged 3DGS for photorealistic reconstruction and novel view synthesis. However, most methods rely on RGB-D input, which is unavailable on consumer-grade smartphones, and few integrate 3DGS within a collaborative framework. Therefore, we present CGS-SLAM, a hybrid decentralized/centralized system enabling multi-agent 3DGS SLAM using only RGB and inertial data. Each agent performs local tracking with inertial data as a motion prior and reconstructs a scaled map using a metric monocular depth estimator (Depth Pro). Keyframe encodings are shared among agents, enabling dynamic keyframing in regions of spatial overlaps with other agents, enhancing submap alignment. Afterwards, a central server aligns submaps using VGGT as a view alignment model. This bidirectional communication keeps communication cost low during mapping and global reconstruction in difficult GNSS-denied environments. Experiments on multiple datasets demonstrate competitive tracking performance, improved rendering quality over state-of-the-art methods, and accurate submap alignment.",
+  "abstract_zh": "最近，SLAM领域的进展利用3DGS实现了逼真的重建和新视图合成。然而，大多数方法依赖于RGB-D输入，而这一输入在消费级智能手机上并不可用，且很少有方法将3DGS集成到协作框架中。因此，我们提出了CGS-SLAM，一种混合的去中心化/中心化系统，仅使用RGB和惯性数据实现多智能体3DGS SLAM。每个智能体利用惯性数据作为运动先验进行局部跟踪，并使用度量单目深度估计器（Depth Pro）重建缩放地图。关键帧编码在智能体之间共享，使得在与其他智能体空间重叠的区域内实现动态关键帧，提高子地图对齐精度。随后，中央服务器使用VGGT作为视图对齐模型对子地图进行对齐。这种双向通信在困难的GNSS失效环境中保持了低通信成本的同时，支持了映射和全局重建。多个数据集上的实验表明，CGS-SLAM在跟踪性能上具有竞争力，渲染质量优于最先进的方法，并且子地图对齐准确。",
+  "arxiv_id": "2608.26868",
+  "arxiv_url": "https://arxiv.org/abs/2608.26868v1",
+  "authors": [
+    "Jean-Daniel de Ambrogi",
+    "Aladine Chetouani",
+    "Vincent Nguyen",
+    "Aurélien Chateigner"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-28#paper-2608-26868",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-08-29T04:46:20.384896+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.26868v1",
+  "published_at": "2026-08-27T09:31:18Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "gaussian splatting",
+      "点云",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-08-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.26868v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-28"
+  },
+  "summary_zh": "本文提出CGS-SLAM，用于仅依赖RGB和惯性数据的多智能体协作3D高斯点云SLAM。系统结合本地跟踪、单目度量深度估计、跨智能体关键帧共享及中心化子地图对齐，在GNSS拒止环境下实现低通信开销的协作建图与全局重建。该方法与自动驾驶中的多车协作定位、地图构建和复杂环境感知具有较强技术相关性。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "深度/几何",
+      "协同/V2X"
+    ]
+  },
+  "title": "CGS-SLAM: Collaborative Gaussian Splatting based SLAM for Multi-Agent Reconstruction",
+  "title_zh": "CGS-SLAM：基于协作高斯点云的多智能体重建SLAM",
+  "translation_url": "https://hjfy.top/arxiv/2608.26868"
+}
