@@ -1,0 +1,44 @@
+{
+  "abstract": "Accurate stereo matching remains challenging in ill-posed regions such as fine structures, reflective, or transparent objects, where appearance cues are often ambiguous or unreliable. To tackle this, we propose PhasorNet, a lightweight yet powerful framework that boosts geometric discrimination via frequency-domain cues. At its core, the Phase-Augmented Transformer (PAT) injects Fourier-derived phase information into the attention mechanism, yielding photometrically robust, structure-preserving features that prioritize structural consistency in difficult areas. Additionally, we develop a Geometry-Context Fusion Refinement Module (GCFRM) that combines a full-resolution convolutional stream with a lightweight attention-based stream (leveraging WQA and CDGA blocks) to efficiently preserve fine details and object boundaries without excessive overhead. Training is further enhanced by a multi-scale Edge-guided High-Error Region (EHR) loss that adaptively focuses optimization on high-error and edge regions, guiding hierarchical cost volume refinement. With only 5.3M parameters, PhasorNet achieves state-of-the-art performance on the challenging ETH3D benchmark while exhibiting excellent cross-domain generalization on KITTI, delivering an efficient and practical solution for accurate real-time stereo matching.",
+  "abstract_zh": "在不适定区域（如细微结构、反射或透明物体）中，准确的立体匹配仍然面临挑战，因为外观线索往往模糊或不可靠。为了解决这个问题，我们提出了PhasorNet，一个轻量级但强大的框架，通过频域线索增强几何区分能力。其核心是相位增强变换器（Phase-Augmented Transformer, PAT），它将傅里叶衍生的相位信息注入注意力机制，产生在光度上稳健且保持结构的特征，优先考虑在困难区域的结构一致性。此外，我们开发了几何上下文融合精炼模块（Geometry-Context Fusion Refinement Module, GCFRM），该模块将全分辨率卷积流与轻量级基于注意力的流（利用WQA和CDGA模块）相结合，以高效地保留细节和物体边界，而不会造成过多的开销。训练过程中，通过多尺度边缘引导高错误区域（Edge-guided High-Error Region, EHR）损失进一步增强，该损失自适应地将优化重点放在高错误和边缘区域，指导层次成本体积的精炼。PhasorNet仅用5.3M参数，在具有挑战性的ETH3D基准上实现了最先进的性能，同时在KITTI上展现出优异的跨域泛化能力，为准确的实时立体匹配提供了一种高效且实用的解决方案。",
+  "arxiv_id": "2608.29819",
+  "arxiv_url": "https://arxiv.org/abs/2608.29819",
+  "authors": [
+    "Khan, Md Raqib, Vipparthi, Santosh Kumar, Murala, Subrahmanyam"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-29819",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.561811+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.29819",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "多传感器融合",
+      "仿真/数据"
+    ]
+  },
+  "title": "PhasorNet: Learning Structure from Frequency for Real-Time Stereo Matching",
+  "title_zh": "PhasorNet：从频率学习结构以实现实时立体匹配",
+  "translation_url": "https://hjfy.top/arxiv/2608.29819"
+}

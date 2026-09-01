@@ -1,0 +1,56 @@
+{
+  "abstract": "Autonomous vehicles (AVs) rely on accurate camera-LiDAR calibration for multimodal sensor fusion. In practice, calibration can drift due to vibration, temperature variation, or minor sensor displacement, motivating online calibration algorithms that detect and correct misalignment at runtime while allowing the vehicle to continue operating without a factory visit. Existing AV attacks largely assume correct calibration. We instead identify online sensor calibration as a new attack plane. A corrupted calibration update can persist across subsequent fusion operations, causing system-wide errors that propagate from perception to planning and control. We present Adversarial Calibration Attack (ACA), the first physical attack against camera-LiDAR online calibration. Using a single adversarial poster, ACA first spoofs the miscalibration detector to trigger the calibration process and then steers the calibration estimator toward an incorrect transformation. A unified optimization jointly designs the poster's geometry and texture for both objectives. We evaluate ACA across benchmark datasets, simulation, and physical experiments. On benchmark datasets such as KITTI and nuScenes, ACA induces up to 33.9 degrees mean rotational calibration error, thereby severely degrading object detection. In the CARLA simulator, the attack causes a collision when the corrupted calibration is accepted in vulnerable scenarios crafted by the attacker. On a real Husky robot, a printed adversarial poster successfully reproduces the calibration error. These results demonstrate that online calibration is a practical and safety-critical attack surface for AVs.",
+  "abstract_zh": "自主车辆（AVs）依赖于准确的摄像头-激光雷达（LiDAR）校准以实现多模态传感器融合。在实际应用中，由于振动、温度变化或轻微的传感器位移，校准可能会发生漂移，这促使了在线校准算法的研究，这些算法能够在运行时检测和纠正不对齐，同时允许车辆在不需要工厂访问的情况下继续运行。现有的AV攻击大多假设校准是正确的。我们则将在线传感器校准识别为一个新的攻击面。损坏的校准更新可能在随后的融合操作中持续存在，导致从感知到规划和控制的系统级错误传播。我们提出了对抗性校准攻击（Adversarial Calibration Attack, ACA），这是针对摄像头-激光雷达在线校准的首个物理攻击。ACA通过一个单一的对抗性海报，首先欺骗误校准检测器以触发校准过程，然后将校准估计器引导至一个错误的变换。一个统一的优化方法联合设计海报的几何形状和纹理以实现两个目标。我们在基准数据集、仿真和物理实验中评估了ACA。在KITTI和nuScenes等基准数据集中，ACA导致的平均旋转校准误差高达33.9度，从而严重降低了物体检测性能。在CARLA仿真器中，当在攻击者设计的脆弱场景中接受损坏的校准时，攻击导致了碰撞。在一台真实的Husky机器人上，打印的对抗性海报成功再现了校准错误。这些结果表明，在线校准是自主车辆一个实际且具有安全关键性的攻击面。",
+  "arxiv_id": "2608.28778",
+  "arxiv_url": "https://arxiv.org/abs/2608.28778",
+  "authors": [
+    "Liu, Liangkai, Zhang, Qingzhao, Shin, Kang G."
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-28778",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.438556+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.28778",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "nuscenes",
+      "kitti",
+      "carla",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "sensor fusion",
+      "lidar",
+      "camera-lidar",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "Adversarial Calibration Attack on Autonomous Vehicles",
+  "title_zh": "对自主车辆的对抗性校准攻击",
+  "translation_url": "https://hjfy.top/arxiv/2608.28778"
+}

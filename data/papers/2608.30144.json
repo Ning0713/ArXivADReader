@@ -1,0 +1,53 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models are reshaping autonomous driving (AD) by unifying perception, reasoning, and control through language, enabling semantic grounding, interpretable decisions, and better long-tail generalization. But language is expensive onboard: latency and memory budgets are tight, and autoregressive decoding is inherently sequential. This work reframes the central question as when and where language should act at inference, since inference cost recurs at every deployed frame while training cost is paid once. We introduce the Language Residue taxonomy to organize methods by their inference-time use of language: train-time-only supervision (L1), latent non-textual reasoning (L2), conditional invocation (L3), and full per-frame generation (L4). We review representative methods and tag each across five deployment axes (latency, parameters, memory, FLOPs, tokens), analyzing them on major open- and closed-loop driving benchmarks (e.g., nuScenes, NAVSIM, Bench2Drive). We further trace how efficient methods from NLP/LLM are adapted in AD, identifying the constraints and motivations driving these adaptations. A continuously updated repository will be available at Github.",
+  "abstract_zh": "视觉-语言-动作（VLA）模型通过语言统一感知、推理与控制，正在重塑自动驾驶（AD），实现语义落地、可解释决策及更优的长尾泛化能力。但语言处理在车载环境中代价高昂：延迟和内存预算有限，且自回归解码本质上是顺序执行的。本文将核心问题重新定义为语言应在推理时何时何地发挥作用，因为推理成本在每一帧部署时都会发生，而训练成本仅需支付一次。我们引入“语言残留”（Language Residue）分类法，以推理时语言使用方式将方法组织为：仅训练时监督（L1）、潜在非文本推理（L2）、条件调用（L3）和每帧全量生成（L4）。我们回顾了代表性方法，并基于五个部署维度（延迟、参数量、内存、浮点运算次数、令牌数）对其进行标注，分析了它们在主要开放和闭环驾驶基准（如nuScenes、NAVSIM、Bench2Drive）上的表现。进一步追踪了自然语言处理/大语言模型（NLP/LLM）中高效方法在自动驾驶中的适配过程，识别了驱动这些适配的约束与动因。相关持续更新的代码库将托管于Github。",
+  "arxiv_id": "2608.30144",
+  "arxiv_url": "https://arxiv.org/abs/2608.30144",
+  "authors": [
+    "Guo, Tongfei, Su, Lili"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-30144",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.462193+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.30144",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Rethinking Language's Role in Efficient VLA for Autonomous Vehicles: Toward Smarter, Trustworthy Driving",
+  "title_zh": "重新思考语言在自动驾驶高效视觉-语言-动作（VLA）中的作用：迈向更智能、更可信的驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.30144"
+}

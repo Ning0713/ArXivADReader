@@ -1,0 +1,49 @@
+{
+  "abstract": "Behavior-cloned Vision-Language-Action (VLA) driving policies struggle with rare rule-governed maneuvers at signalized intersections. Braking and launching examples contribute little to averaged trajectory loss, while fused representations lack explicit supervision for the governing traffic-light and stop-line state. We present RedLight-VLA, a training objective that uses expert futures and automatically generated perception targets without additional manual rule annotation. First, trajectory-derived behavioral reweighting (BR) emphasizes rare deceleration and acceleration using rotation-invariant longitudinal dynamics and a scale-preserving reduction that exactly recovers the baseline when disabled. Second, parallel auxiliary (AUX) heads ground traffic-light and stop-line state in continuous post-fusion rule tokens, without autoregressive language generation or changes to the trajectory decoder. We evaluate on a curated set of 20 s sequences with a 5 s prediction horizon. Controlled variants share the same backbone, training data, decoder, and evaluation population. Against an otherwise identical VLA baseline, RedLight-VLA reduces red-light stop-line overshoot from 7.3% to6.8%, reduces stop-line velocity error by 12.7%, and improves 3 s trafficlight-sliced ADE/FDE from 0.274/0.964 m to 0.247/0.897 m. Green-light false stops increase from 3.2% to 3.9%; however, combining BR with AUX supervision mitigates the larger increase observed for AUX alone (4.0%). The combined model also improves non-traffic-light ADE/FDE from 0.268/0.956 m to 0.241/0.876 m and outperforms either mechanism alone on all four sliced displacement measures.",
+  "abstract_zh": "行为克隆的视觉-语言-动作（VLA）驾驶策略在信号交叉口的稀有规则驱动操作上表现不佳。刹车和起步示例对平均轨迹损失的贡献甚微，而融合表示缺乏对交通信号灯和停止线状态的明确监督。我们提出了RedLight-VLA，这是一种训练目标，利用专家未来状态和自动生成的感知目标，而无需额外的手动规则注释。首先，基于轨迹的行为重加权（BR）通过旋转不变的纵向动力学和一种保持尺度的缩减方法，强调稀有的减速和加速，当禁用时能够准确恢复基线。其次，平行辅助（AUX）头在连续的后融合规则标记中对交通信号灯和停止线状态进行基础化，而无需自回归语言生成或对轨迹解码器的更改。我们在一个精心策划的20秒序列集上进行评估，预测范围为5秒。受控变体共享相同的骨干网络、训练数据、解码器和评估人群。与其他相同的VLA基线相比，RedLight-VLA将红灯停止线超越率从7.3%降低到6.8%，将停止线速度误差减少12.7%，并将3秒交通信号灯切片的平均绝对误差/最终位置误差（ADE/FDE）从0.274/0.964米改善到0.247/0.897米。绿灯误停率从3.2%增加到3.9%；然而，将BR与AUX监督结合使用减轻了单独使用AUX时观察到的更大增幅（4.0%）。组合模型还将非交通信号灯的ADE/FDE从0.268/0.956米改善到0.241/0.876米，并在所有四个切片位移度量上优于单独的任一机制。",
+  "arxiv_id": "2608.28656",
+  "arxiv_url": "https://arxiv.org/abs/2608.28656",
+  "authors": [
+    "Sudhakar, Bala Murali Manoghar Sai, Sridhar, Sourab Bapu, Das, Sandipan, Ahuja, Rahul, Lazar, Meda, Garg, Ashish, Likhar, Pratik, Yogamani, Senthil"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-28656",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.432227+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.28656",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "RedLight-VLA: Models for traffic-rule grounding and behavioral emphasis in driving policies",
+  "title_zh": "RedLight-VLA：交通规则基础和驾驶策略中行为强调的模型",
+  "translation_url": "https://hjfy.top/arxiv/2608.28656"
+}

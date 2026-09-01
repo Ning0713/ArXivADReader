@@ -1,0 +1,54 @@
+{
+  "abstract": "Open-vocabulary semantic segmentation (OVSS) relies on vision-language alignment to recognize arbitrary text-defined categories, yet this alignment is fragile under continual test-time distribution shift. Our diagnostic analysis reveals that entropy minimization drives patch-level class collapse, continual updates erode vision-language alignment, and redundant gradients from low-shift samples waste computation. We propose Diversify, Anchor, and Filter (DAF), a stabilization framework that augments entropy-based adaptation with a marginal diversity loss that resists collapse, a cross-modal anchor consistency loss that constrains feature drift relative to a frozen source model, and feature salience filtering that skips low-value backward passes to offset part of the source-anchor overhead. We evaluate on five datasets spanning natural scenes, autonomous driving, underwater imagery, and remote sensing with their corrupted variants. Across the evaluated continual shifts, DAF remains stable where entropy minimization collapses, improving mIoU by over 8 points on Pascal VOC20-C, over 9 points on LoveDA, and over 3 points on Foggy Cityscapes compared to the source model, and is robust to aggressive adaptation and learning rate choices.",
+  "abstract_zh": "开放词汇语义分割（OVSS）依赖于视觉-语言对齐来识别任意文本定义的类别，然而在持续测试时分布变化下，这种对齐是脆弱的。我们的诊断分析揭示，熵最小化导致了补丁级别的类别崩溃，持续更新侵蚀了视觉-语言对齐，而来自低变化样本的冗余梯度浪费了计算资源。我们提出了多样化、锚定和过滤（DAF）框架，它通过边际多样性损失增强熵基础的适应性，以抵抗崩溃；通过交叉模态锚定一致性损失约束特征漂移相对于冻结的源模型；以及特征显著性过滤，跳过低价值的反向传播，以抵消部分源-锚定开销。我们在五个数据集上进行了评估，涵盖自然场景、自动驾驶、水下图像和遥感及其损坏变体。在评估的持续变化中，DAF在熵最小化崩溃的情况下保持稳定，在与源模型相比时，Pascal VOC20-C的mIoU提高了超过8个点，LoveDA提高了超过9个点，Foggy Cityscapes提高了超过3个点，并且对激进的适应和学习率选择具有鲁棒性。",
+  "arxiv_id": "2608.29923",
+  "arxiv_url": "https://arxiv.org/abs/2608.29923",
+  "authors": [
+    "Doloriel, Chandler Timm C., Zhang, Yunbei, Maharana, Sarthak Kumar, Siddiqui, Muhammad Salman, Stevik, Tor Kristian, Machot, Fadi Al, Liland, Kristian Hovde, Ullah, Habib"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-29923",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.568828+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.29923",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "cityscapes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "remote sensing",
+      "underwater",
+      "诊断",
+      "遥感"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Towards Continual Test-Time Adaptation of Vision-Language Models in Open-Vocabulary Semantic Segmentation",
+  "title_zh": "面向开放词汇语义分割的视觉-语言模型持续测试时适应",
+  "translation_url": "https://hjfy.top/arxiv/2608.29923"
+}

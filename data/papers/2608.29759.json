@@ -1,0 +1,47 @@
+{
+  "abstract": "We present SynCrash, a multi-stage pipeline for zero-shot accident detection, spatial localization, and collision-type classification in fixed-view CCTV surveillance video. Our approach addresses the ACCIDENT at CVPR 2026 Challenge, which requires predicting when an accident occurs, where in the frame the impact happens, and what type of collision it is, all without access to labeled real-world training data. The pipeline operates in three decoupled stages: (1) Temporal localization via a VideoMAEv2-giant backbone fine-tuned on CARLA-based synthetic clips with metadata-aware embeddings and dense sliding-window inference; (2) Spatial localization using YOLO for object detection combined with a physics-informed hybrid heuristic that leverages bounding-box overlap and trajectory-based reasoning to predict the impact point; and (3) Collision-type classification using a lightweight rule-based strategy derived from the number and configuration of detected vehicles. The key insight is that temporal understanding benefits from supervised fine-tuning on synthetic data, whereas spatial understanding is better served by pretrained object detectors and physics priors that transfer naturally across domains.",
+  "abstract_zh": "我们提出了SynCrash，这是一种用于固定视角闭路电视监控视频中的零-shot事故检测、空间定位和碰撞类型分类的多阶段管道。我们的方法针对2026年CVPR挑战赛中的ACCIDENT，要求在没有访问标记的真实世界训练数据的情况下，预测事故发生的时间、影响发生在帧中的位置以及碰撞的类型。该管道分为三个解耦阶段：(1) 通过在CARLA基础合成片段上微调的VideoMAEv2-giant骨干网络进行时间定位，结合元数据感知嵌入和密集滑动窗口推理；(2) 使用YOLO进行对象检测的空间定位，结合一个物理启发的混合启发式方法，利用边界框重叠和基于轨迹的推理来预测影响点；(3) 使用基于规则的轻量级策略进行碰撞类型分类，该策略源于检测到的车辆数量和配置。关键的见解是，时间理解受益于在合成数据上的监督微调，而空间理解则更适合通过预训练的对象检测器和物理先验，这些在不同领域之间自然迁移。",
+  "arxiv_id": "2608.29759",
+  "arxiv_url": "https://arxiv.org/abs/2608.29759",
+  "authors": [
+    "Bagchi, Arkya Jyoti, Jangir, Ritul, Raskar, Varun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-29759",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.557192+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.29759",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "traffic",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 35
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "预测/规划"
+    ]
+  },
+  "title": "SynCrash: A Multi-Stage Pipeline for Zero-Shot Accident Detection and Localization in Traffic Surveillance Video",
+  "title_zh": "SynCrash：一种用于交通监控视频中零-shot事故检测与定位的多阶段管道",
+  "translation_url": "https://hjfy.top/arxiv/2608.29759"
+}

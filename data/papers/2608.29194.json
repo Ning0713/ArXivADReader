@@ -1,0 +1,49 @@
+{
+  "abstract": "Tri-Perspective View (TPV) representations describe 3D scene structure through top, side, and front feature planes, but existing TPV lifting is primarily camera-based, leaving the depth of sampled image evidence ambiguous along projected camera rays. We propose RLG-TPV, a multimodal TPV framework for camera-radar 3D object detection in which radar and training-time LiDAR provide complementary geometric guidance during representation construction. A ray-guided deformable-attention lift weights sampled image features using LiDAR-supervised camera depth probabilities and radar frustum occupancy, while radar additionally refines the depth distribution before lifting. Because conventional radar provides limited elevation information, LiDAR-derived class-occupancy targets supervise the side and front planes during training; the corresponding heads are removed at inference, so deployment requires only cameras and radar. For temporal aggregation, Doppler-guided temporal fusion aligns past features using a motion field anchored by measured radar radial velocity, with gating that limits warping in regions without supported motion. An RCS-aware radar scatter further allows radar evidence to spread over spatial neighborhoods conditioned on radar cross section. On the nuScenes validation set, RLG-TPV achieves 0.4981 mAP and 0.5959 NDS, reducing orientation and velocity error by 31.9\\% and 30.7\\% relative to the published CRN baseline. Ablation studies show that ray-level geometric guidance is a major contributor to the final performance.",
+  "abstract_zh": "三视角（TPV）表示通过顶部、侧面和正面特征平面描述三维场景结构，但现有的TPV提升主要基于相机，导致沿投影相机光线的采样图像证据深度模糊。我们提出了RLG-TPV，一种用于相机-雷达三维物体检测的多模态TPV框架，其中雷达和训练时的激光雷达在表示构建过程中提供互补的几何指导。光线引导的可变形注意力提升使用激光雷达监督的相机深度概率和雷达视锥占用对采样图像特征进行加权，同时雷达在提升之前进一步细化深度分布。由于传统雷达提供的高度信息有限，激光雷达衍生的类别占用目标在训练期间监督侧面和平面；相应的头部在推理时被移除，因此部署只需相机和雷达。为了进行时间聚合，基于多普勒的时间融合使用由测量的雷达径向速度锚定的运动场对过去特征进行对齐，并通过限制在没有支持运动的区域内的扭曲的门控。一个考虑雷达散射截面的雷达散射进一步允许雷达证据在空间邻域中扩散。 在nuScenes验证集上，RLG-TPV实现了0.4981的mAP和0.5959的NDS，相较于已发布的CRN基线，方向和速度误差分别减少了31.9%和30.7%。消融研究表明，光线级几何指导是最终性能的重要贡献者。",
+  "arxiv_id": "2608.29194",
+  "arxiv_url": "https://arxiv.org/abs/2608.29194",
+  "authors": [
+    "Dokgoz, Ahmet Mete, Doruk, A. Enes, Ates, Hasan F."
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-29194",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.522180+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.29194",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "occupancy",
+      "3d object detection",
+      "lidar",
+      "radar",
+      "camera-radar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 36
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "RLG-TPV: Radar- and LiDAR-Guided Tri-Perspective View Fusion for Camera-Radar 3D Object Detection",
+  "title_zh": "RLG-TPV：基于雷达和激光雷达的三视角融合用于相机-雷达三维物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2608.29194"
+}

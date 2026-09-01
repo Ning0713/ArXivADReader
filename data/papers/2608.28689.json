@@ -1,0 +1,47 @@
+{
+  "abstract": "360-degree video supports immersive applications such as virtual reality, autonomous driving, and education. Because spherical content cannot be processed directly by conventional video codecs, it must first be mapped to a two-dimensional projection. Projection choice affects spatial continuity, sampling uniformity, motion estimation, and compression efficiency. This thesis investigates how projection format influences end-to-end neural compression of 360-degree video. Seven formats supported by JVET 360Lib are evaluated using the scale-space flow model, JVET test sequences, and common test conditions. Each sequence is converted from its source equirectangular projection to a coding projection, compressed at multiple rate points, reconstructed, and converted back. Performance is assessed using PSNR, spherical PSNR, weighted spherical PSNR, and Bj{\\o}ntegaard delta rate. A differentiable pipeline combining projection conversion, neural compression, and inverse projection is also compared with 360Lib. Results show that equirectangular and padded equirectangular projections provide the highest compression efficiency with the scale-space flow model, while cubemap-based and rhombic dodecahedron projections are less effective. This differs from the conventional HM-16.16 codec, for which cubemap-based formats, particularly equi-angular and adjusted cubemap projections, outperform equirectangular formats. Neural models based on optical flow benefit from the spatial continuity of single-face projections, whereas block-based hybrid codecs better accommodate multi-face layouts. These findings show that projection efficiency is codec-dependent and provide guidance for selecting projections for learning-based 360-degree video compression.",
+  "abstract_zh": "360度视频支持虚拟现实、自动驾驶和教育等沉浸式应用。由于球形内容无法直接被传统视频编码器处理，因此必须先映射到二维投影。投影选择会影响空间连续性、采样均匀性、运动估计和压缩效率。本论文研究了投影格式如何影响360度视频的端到端神经压缩。评估了七种由JVET 360Lib支持的格式，使用了尺度空间流模型、JVET测试序列和常见测试条件。每个序列从其源的等矩形投影转换为编码投影，在多个比特率点进行压缩、重建并转换回去。通过PSNR、球面PSNR、加权球面PSNR和Bj{ ext{o}}ntegaard增益率评估性能。还将结合投影转换、神经压缩和逆投影的可微管道与360Lib进行了比较。结果表明，等矩形和填充等矩形投影在尺度空间流模型下提供了最高的压缩效率，而基于立方体图和菱形十二面体的投影效果较差。这与传统的HM-16.16编码器不同，后者中基于立方体的格式，特别是等角和调整后的立方体投影，优于等矩形格式。基于光流的神经模型受益于单面投影的空间连续性，而基于块的混合编码器更适合多面布局。这些发现表明，投影效率依赖于编码器，并为选择学习型360度视频压缩的投影提供了指导。",
+  "arxiv_id": "2608.28689",
+  "arxiv_url": "https://arxiv.org/abs/2608.28689",
+  "authors": [
+    "Maani, Niloofar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-28689",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.488415+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.28689",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "Projection-Aware End-to-End Learned Video Compression for 360-Degree Video",
+  "title_zh": "面向投影的端到端学习视频压缩方法用于360度视频",
+  "translation_url": "https://hjfy.top/arxiv/2608.28689"
+}

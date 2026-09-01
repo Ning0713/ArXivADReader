@@ -1,0 +1,44 @@
+{
+  "abstract": "Deploying vision perception models in autonomous vehicles requires that we prioritize inference speeds, resulting in a model with shallower architectures and lesser model parameters (i.e., more pruned). Such small models do not generalize well, which could result in poor performance when encountered with novel scenarios. We propose a system that overcomes this by continuously retraining the vision models on the cloud with data uploaded by vehicles. We leverage the abundant compute resources, including machine learning accelerators, of the cloud to run a highly-accurate oracle model that will guide the retraining process of the on-vehicle model. This newly trained model is transmitted to the vehicle over the network and is utilized by the vehicle for perceptions, leading to improved inference accuracy over time.",
+  "abstract_zh": "在自主车辆中部署视觉感知模型需要优先考虑推理速度，这导致模型架构较浅且参数较少（即更多的剪枝）。这样的精简模型泛化能力较差，可能在遇到新场景时表现不佳。我们提出了一种系统，通过在云端持续重新训练视觉模型，利用车辆上传的数据来克服这一问题。我们利用云端丰富的计算资源，包括机器学习加速器，运行一个高精度的Oracle模型，以指导车载模型的重新训练过程。这个新训练的模型通过网络传输到车辆，并被车辆用于感知，从而随着时间的推移提高推理准确性。",
+  "arxiv_id": "2608.28673",
+  "arxiv_url": "https://arxiv.org/abs/2608.28673",
+  "authors": [
+    "Zhu, Yuheng, Ungrupulithaya, Dhruva, Ge, Boluo, Yoon, Man-Ki"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-28673",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.481847+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.28673",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "AdaptAV: Continuous Adaption of Vision Models for Autonomous Vehicles Using Cloud-based Oracle",
+  "title_zh": "AdaptAV：基于云的Oracle进行自主车辆视觉模型的持续适应",
+  "translation_url": "https://hjfy.top/arxiv/2608.28673"
+}

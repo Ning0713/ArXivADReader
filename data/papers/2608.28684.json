@@ -1,0 +1,45 @@
+{
+  "abstract": "Distributed deep neural networks (DNNs) for dense perception tasks such as semantic segmentation execute an encoder DNN on edge devices, and a decoder DNN typically on a large-scale cloud platform with a particular constraint on transmission bitrate. Recent works employ source codecs to enable bitrate-efficient transmission between the edge device and the cloud. However, as these approaches are typically bound to a particular type of source codec and alternative network architectures are often not explored, this results in a suboptimal rate-distortion (RD) trade-off in the low-bitrate regime. In this work, we propose two novel source codecs that \\textit{enable extremely low bitrates, while improving RD performance}. We demonstrate the effectiveness of our proposed source codecs by achieving state-of-the-art performance in distributed semantic segmentation at below 0.2 (0.03) bits per pixel, measured using the mean intersection-over-union metric on ADE20K (Cityscapes).",
+  "abstract_zh": "用于密集感知任务（如语义分割）的分布式深度神经网络（DNNs）在边缘设备上执行编码器 DNN，而解码器 DNN 通常在大型云平台上运行，并对传输比特率有特定限制。最近的研究采用源编码器以实现边缘设备与云之间的比特率高效传输。然而，由于这些方法通常依赖于特定类型的源编码器，且替代网络架构往往未被探索，导致在低比特率范围内的率失真（RD）权衡不理想。在本研究中，我们提出了两种新颖的源编码器，它们能够在实现极低比特率的同时，提高 RD 性能。我们通过在低于 0.2（0.03）比特每像素的情况下，在 ADE20K（Cityscapes）数据集上使用平均交并比度量，展示了我们提出的源编码器在分布式语义分割中的有效性，达到了最先进的性能。",
+  "arxiv_id": "2608.28684",
+  "arxiv_url": "https://arxiv.org/abs/2608.28684",
+  "authors": [
+    "Nazir, Danish, Bartels, Timo, Bagdonat, Thorsten, Fingscheidt, Tim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-28684",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.486415+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.28684",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes",
+      "intersection"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "Distributed Semantic Segmentation With Improved Rate-Distortion Trade-Off",
+  "title_zh": "改进率失真权衡的分布式语义分割",
+  "translation_url": "https://hjfy.top/arxiv/2608.28684"
+}

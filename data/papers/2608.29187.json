@@ -1,0 +1,50 @@
+{
+  "abstract": "The point-based occupancy prediction paradigm has achieved an attractive trade-off between accuracy and efficiency by modeling 3D space sparsely. However, its predictions inherently mismatch the dense voxel-based occupancy required by self-driving systems, necessitating hand-crafted heuristics during training and inference that limit final performance. To overcome these limitations, we propose OPUS-V2, a novel framework built upon the pioneering OPUS (occupancy prediction using a sparse set) point-based approach. OPUS-V2 incorporates a lightweight point-voxel transformation (PVT) module behind the decoder to adaptively map sparse predictions into the dense voxel space, eliminating the need for suboptimal operations and improving model accuracy. Furthermore, our architecture decouples feature and occupancy generation processes, allowing OPUS-V2 to adapt to arbitrary occupancy resolutions. OPUS-V2 achieves a state-of-the-art rayIoU of 44.0 on the Occ3D dataset. On the more challenging OpenOccupancy dataset, it attains a competitive 16.4 mIoU while running in real time at 20.6 FPS.",
+  "abstract_zh": "基于点的占用预测范式通过稀疏建模三维空间，在准确性和效率之间实现了良好的平衡。然而，其预测结果与自动驾驶系统所需的密集体素占用本质上不匹配，这在训练和推理过程中需要手工设计的启发式方法，从而限制了最终性能。为克服这些局限性，我们提出了OPUS-V2，这是一个基于开创性OPUS（使用稀疏集进行占用预测）点基方法的新框架。OPUS-V2在解码器后面集成了一个轻量级的点-体素转换（PVT）模块，以自适应地将稀疏预测映射到密集体素空间，消除了对次优操作的需求，并提高了模型的准确性。此外，我们的架构将特征和占用生成过程解耦，使OPUS-V2能够适应任意的占用分辨率。OPUS-V2在Occ3D数据集上实现了44.0的最先进的rayIoU。在更具挑战性的OpenOccupancy数据集上，它以20.6 FPS的实时速度达到了竞争力的16.4 mIoU。",
+  "arxiv_id": "2608.29187",
+  "arxiv_url": "https://arxiv.org/abs/2608.29187",
+  "authors": [
+    "Wang, Jiabao, Meng, Qiang, Yan, Liujiang, Wang, Ke, Hou, Qibin, Cheng, Ming-Ming"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-29187",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.520677+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.29187",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "自动驾驶",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 74
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "OPUS-V2: Bridging the Gap between Sparse Points and Dense Voxels",
+  "title_zh": "OPUS-V2：弥合稀疏点与密集体素之间的差距",
+  "translation_url": "https://hjfy.top/arxiv/2608.29187"
+}

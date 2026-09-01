@@ -1,0 +1,53 @@
+{
+  "abstract": "Fixed-viewpoint infrastructure sensors repeatedly observe the same traffic space, making roadside 3D occupancy structurally different from ego-vehicle perception: a near-persistent static scaffold is overlaid with sparse, short-lived dynamic events. Existing occupancy benchmarks and methods, however, are built around moving ego vehicles and neither measure nor exploit this structure, instead treating occupancy as flat one-shot voxel classification. We address this gap from both data and model perspectives. We build InfraOcc, to our knowledge, the first real-world infrastructure-side semantic occupancy benchmark, with dense voxel annotations for 290 multi-modal sequences in a fixed roadside frame, a static-dynamic decoupled annotation pipeline, unified camera-only, LiDAR-only, and multi-modal evaluation, and diagnostics for static and dynamic occupancy. InfraOcc shows that static infrastructure fills 97.3% of occupied voxels and persists across frames, whereas dynamic participants have a median occupied-frame ratio of only 1.8% per location, revealing a structural static-dynamic asymmetry beyond semantic long-tailedness. We further propose ProSD-Occ, which reformulates occupancy as progressive static-to-dynamic evidence reasoning: it explains persistent layout, exposes residual dynamic evidence under static-confidence guidance, and recomposes static, dynamic, and free-space evidence into a unified field. ProSD-Occ ranks first in overall, dynamic, static, and geometric occupancy on every track, e.g., a 23.5% relative camera-only dynamic-mIoU gain over the strongest baseline and 65.87 multi-modal overall mIoU, establishing fixed-viewpoint roadside occupancy as a distinct problem with its own reasoning paradigm. The benchmark and code will be publicly available at https://github.com/yanglei18/InfraOcc",
+  "abstract_zh": "固定视角的基础设施传感器重复观察相同的交通空间，使得路边的三维占用在结构上与自车感知显著不同：一个近乎持久的静态框架与稀疏、短暂的动态事件叠加。然而，现有的占用基准和方法是围绕移动自车构建的，既未测量也未利用这种结构，而是将占用视为平坦的一次性体素分类。我们从数据和模型的角度解决了这一空白。我们构建了InfraOcc，至今为止我们所知的第一个真实世界基础设施侧语义占用基准，包含290个多模态序列在固定路边框架下的密集体素注释、一个静态-动态解耦的注释管道、统一的仅相机、仅激光雷达和多模态评估，以及静态和动态占用的诊断。InfraOcc显示，静态基础设施填充了97.3%的占用体素，并在帧间持续存在，而动态参与者在每个位置的中位占用帧比仅为1.8%，揭示了超越语义长尾的结构性静态-动态不对称。我们进一步提出了ProSD-Occ，将占用重新表述为渐进的静态到动态证据推理：它解释了持久布局，揭示了在静态置信指导下的残余动态证据，并将静态、动态和自由空间证据重新组合成一个统一的场。ProSD-Occ在每个轨道上的整体、动态、静态和几何占用中均排名第一，例如，相较于最强基线在仅相机动态mIoU上获得23.5%的相对提升，以及65.87的多模态整体mIoU，确立了固定视角路边占用作为一个具有自身推理范式的独特问题。基准和代码将公开发布在 https://github.com/yanglei18/InfraOcc",
+  "arxiv_id": "2608.30657",
+  "arxiv_url": "https://arxiv.org/abs/2608.30657",
+  "authors": [
+    "Yang, Lei, Bai, Xiaokai, Li, Boqi, Lin, Chunmian, Wang, Li, Song, Ziying, Zhang, Jiahuan, Ma, Enhui, Yu, Haibao, Ma, Jiaqi, Yu, Kaicheng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-30657",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.610729+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.30657",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "ego-vehicle",
+      "vehicle",
+      "traffic",
+      "roadside",
+      "交通",
+      "occupancy",
+      "lidar",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 56
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "InfraOcc: An Infrastructure Occupancy Benchmark with Static-to-Dynamic Reasoning",
+  "title_zh": "InfraOcc：一个静态到动态推理的基础设施占用基准",
+  "translation_url": "https://hjfy.top/arxiv/2608.30657"
+}

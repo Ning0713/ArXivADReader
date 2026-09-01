@@ -1,0 +1,48 @@
+{
+  "abstract": "Autonomous vehicles operate in dynamic, ever-changing environments where new scenarios and edge cases constantly emerge. As a result, static learning models are inadequate for ensuring safe and reliable operation. Continuous learning is essential for adapting to these evolving conditions and maintaining robust performance across diverse real-world settings. However, autonomous vehicles generate massive streams of visual data during operation, and existing continuous learning approaches typically rely on heuristic sampling methods that fail to capture temporal dynamics, often overlooking critical learning opportunities or selecting redundant frames. In this paper, we introduce FrameScope, a temporal data valuation framework for continuous learning in autonomous vehicles. FrameScope extends neural tangent kernel theory to temporal domains, enabling principled valuation of streaming visual data. Unlike cloud-centric methods that transmit all video data for processing, our approach performs principled, local frame selection on the vehicle and queries a cloud-based oracle model only for labels of those high-value frames. Extensive experiments across multiple domain shifts show that FrameScope consistently outperforms existing methods, achieving higher sample efficiency and significantly reducing catastrophic forgetting in autonomous vehicle perception. By valuing data on the vehicle and querying only labels for selected frames, FrameScope reduces bandwidth requirements, enabling scalable operation with a lightweight cloud labeling service.",
+  "abstract_zh": "自主车辆在动态且不断变化的环境中运行，新场景和边缘案例不断出现。因此，静态学习模型无法确保安全和可靠的操作。持续学习对于适应这些不断演变的条件并在多样化的现实环境中保持稳健的性能至关重要。然而，自主车辆在操作过程中生成大量的视觉数据，而现有的持续学习方法通常依赖于启发式采样方法，这些方法未能捕捉时间动态，往往忽视关键的学习机会或选择冗余帧。在本文中，我们提出了FrameScope，一个用于自主车辆持续学习的时间数据评估框架。FrameScope将神经切线核理论扩展到时间域，使流式视觉数据的评估具有原则性。与将所有视频数据传输到云端进行处理的云中心方法不同，我们的方法在车辆上进行原则性的本地帧选择，仅对那些高价值帧的标签向基于云的oracle模型查询。跨多个领域转变的广泛实验表明，FrameScope始终优于现有方法，实现了更高的样本效率，并显著减少了自主车辆感知中的灾难性遗忘。通过在车辆上评估数据并仅对选定帧查询标签，FrameScope降低了带宽需求，使得与轻量级云标注服务的可扩展操作成为可能。",
+  "arxiv_id": "2608.28672",
+  "arxiv_url": "https://arxiv.org/abs/2608.28672",
+  "authors": [
+    "Zhu, Yuheng, Yoon, Man-Ki"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-28672",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.481847+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.28672",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous vehicles",
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "世界模型/生成",
+      "安全/异常"
+    ]
+  },
+  "title": "FrameScope: Temporal Data Valuation for Stream Active Learning in Autonomous Vehicle Systems",
+  "title_zh": "FrameScope：用于自主车辆系统流式主动学习的时间数据评估",
+  "translation_url": "https://hjfy.top/arxiv/2608.28672"
+}

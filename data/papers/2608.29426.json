@@ -1,0 +1,52 @@
+{
+  "abstract": "Reliable semantic representations derived from city-scale 3D models are increasingly important for urban analysis, infrastructure monitoring, autonomous systems, and heritage conservation. However, urban scenes of large spatial extent captured through aerial surveying differ substantially from the indoor, object-level, and self-driving LiDAR data used to pretrain most 3D self-supervised models. We introduce Polis, to our knowledge the first application of Sketched Isotropic Gaussian Regularization (SIGReg) as an objective for a native point cloud encoder, and evaluate it through a frozen-feature benchmark spanning fourteen city- and building-scale corpora. Polis combines geometrically matched cosine invariance, SIGReg, and VICReg-style anti-collapse terms with a 12.8k-scene outdoor pretraining mixture and gravity-preserving spatial view sampling. Controlled ablations show that this objective outperforms student--teacher architecture alternatives, as well as Polis versions without anti-collapse terms, on the same representative outdoor corpus. On three pretraining-disjoint city datasets, Polis reaches $23.8\\%$ mean mIoU versus $16.3\\%$ for the next-best encoder under high-capacity frozen probing, and $17.3\\%$ versus $16.1\\%$ at a matched point and voxel budget. The same city-scale lead holds on datasets whose training sets were seen in pretraining. On localized terrestrial captures with fine-grained facade and streetscape labels, the ranking reverses. Our results show that distributionally-regularized joint embedding architectures can be successful on challenging city-scale 3D scenes, and that transfer improves when self-supervision is designed for the capture geometry and spatial context of this domain while also revealing the limits of this specialization.",
+  "abstract_zh": "从城市规模的3D模型中提取可靠的语义表示对于城市分析、基础设施监测、自动化系统和遗产保护日益重要。然而，通过航空测量捕获的大范围城市场景与用于预训练大多数3D自监督模型的室内、物体级别和自动驾驶LiDAR数据存在显著差异。我们提出了Polis，作为我们所知的第一个将草图各向同性高斯正则化（Sketched Isotropic Gaussian Regularization, SIGReg）应用于本地点云编码器的目标，并通过一个涵盖十四个城市和建筑规模语料库的固定特征基准进行评估。Polis结合了几何匹配的余弦不变性、SIGReg和VICReg风格的反崩溃项，以及一个包含12.8k场景的户外预训练混合数据集和重力保持的空间视图采样。受控消融实验表明，该目标在同一代表性户外语料库上优于学生-教师架构替代方案，以及不包含反崩溃项的Polis版本。在三个预训练不重叠的城市数据集上，Polis在高容量冻结探测下达到$23.8\\%$的平均mIoU，而下一个最佳编码器为$16.3\\%$，在匹配的点和体素预算下分别为$17.3\\%$与$16.1\\%$。在训练集在预训练中被见过的数据集上，城市规模的领先地位依然存在。在具有细粒度立面和街景标签的本地化地面捕获中，排名则发生逆转。我们的结果表明，分布正则化的联合嵌入架构在具有挑战性的城市规模3D场景中可以取得成功，并且当自监督设计针对该领域的捕获几何和空间上下文时，迁移效果会改善，同时也揭示了这种专业化的局限性。",
+  "arxiv_id": "2608.29426",
+  "arxiv_url": "https://arxiv.org/abs/2608.29426",
+  "authors": [
+    "Rusnak, Alexander, Kovalenko, Sophia, Wang, Jingru, Moudden, Ismail, Wang, Xiru, Kaplan, Frédéric"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-29426",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.542182+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.29426",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "Polis: 3D Self-Supervision at City Scale",
+  "title_zh": "Polis：城市规模的3D自监督学习",
+  "translation_url": "https://hjfy.top/arxiv/2608.29426"
+}

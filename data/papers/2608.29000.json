@@ -1,0 +1,56 @@
+{
+  "abstract": "Autonomous vehicles stream high-resolution surround-camera frames into memory before perception runs. This sensor-to-memory path consumes energy when cells store ones and adjacent bytes toggle on the data bus, so its cost follows bit-1 density and switching activity rather than pixel semantics. We present MotiMem-Omega, a semantic-aware memory-interface coder that lowers this cost while preserving perception predictions. Its semantic importance field protects traffic participants, especially vulnerable road users, while assigning lower fidelity to sky and empty background. Cross-dataset bit-sensitivity sweeps determine class weights, with a safety floor for pedestrians, cyclists, and motorcyclists. Each image block then selects a precision tier by minimizing a joint energy-distortion cost. When ego pose is available, a motion-compensated prior carries protected regions between frames. We estimate interface-energy reduction from the two measured proxies using a coefficient-swept memory-energy model. Across 29 detectors on 12 driving datasets, 5 occupancy models, and 5 segmentation networks, MotiMem-Omega retains about 90% of detection mean average precision, 91% of vulnerable-road-user recall, over 98% of occupancy accuracy, and the strongest segmentation retention among energy-reducing methods. It reduces front-camera bit-1 density by 52%, corresponding to a modeled memory-interface energy reduction near 36%, with a lower end of 27% under the literature coefficient sweep. It also gives higher retention than the baseline and energy-matched truncation at the same or lower bit-1 density, whereas image codecs preserve accuracy without reducing memory-interface energy.",
+  "abstract_zh": "自主车辆在感知运行之前将高分辨率的环绕摄像头帧流入内存。这个传感器到内存的路径在存储1时消耗能量，并且相邻字节在数据总线上切换，因此其成本与比特1的密度和切换活动相关，而不是与像素语义相关。我们提出了MotiMem-Omega，这是一种语义感知的内存接口编码器，它在保持感知预测的同时降低了这一成本。其语义重要性场保护交通参与者，特别是脆弱的道路使用者，同时对天空和空白背景分配较低的保真度。跨数据集的比特敏感性扫描确定类别权重，为行人、自行车骑行者和摩托车骑行者设定安全底线。每个图像块通过最小化联合能量-失真成本来选择精度层次。当自我姿态可用时，运动补偿的先验在帧之间传递受保护区域。我们使用系数扫描的内存能量模型从两个测量代理中估计接口能量的减少。在12个驾驶数据集上的29个检测器、5个占用模型和5个分割网络中，MotiMem-Omega保留了约90%的检测平均精度、91%的脆弱道路使用者召回率、超过98%的占用准确率，以及在能量减少方法中最强的分割保留。它将前置摄像头的比特1密度降低了52%，对应于建模的内存接口能量减少近36%，在文献系数扫描下的下限为27%。它在相同或更低的比特1密度下提供比基线和能量匹配截断更高的保留，而图像编解码器在不降低内存接口能量的情况下保持准确性。",
+  "arxiv_id": "2608.29000",
+  "arxiv_url": "https://arxiv.org/abs/2608.29000",
+  "authors": [
+    "Que, Haohua, Yao, Handong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-29000",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.440558+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.29000",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "行人",
+      "occupancy"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 77
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "仿真/数据"
+    ]
+  },
+  "title": "Coding What Matters: A Semantic-Aware Memory Interface for Energy-Efficient Perception in Autonomous Vehicles",
+  "title_zh": "编码重要信息：一种语义感知的内存接口用于提高自主车辆的能效感知",
+  "translation_url": "https://hjfy.top/arxiv/2608.29000"
+}

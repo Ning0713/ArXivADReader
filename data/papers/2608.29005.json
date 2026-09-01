@@ -1,0 +1,53 @@
+{
+  "abstract": "Camera-only end-to-end (E2E) driving models are nearing deployment, where the camera stream is degraded by blur, noise, low light, weather, frame loss, and memory faults. How much a policy tolerates before its driving breaks is unclear. Corruption-robustness benchmarks target detection or bird's-eye-view perception, not the planning output that drives the car. We present DriveDegrade, a benchmark for image-degradation tolerance in camera-only E2E driving. Sixteen corruption families at five severities are injected on the fly inside the image loader, one operator reaching fifteen policies, and we evaluate open-loop planning on nuScenes and NAVSIM plus a CARLA closed-loop anchor. First, mild degradation barely affects planning, and the families that break it have a clear threshold at mid severity. Second, fragility is corruption-dependent: blur, JPEG, and raindrop damage planning most, while weather and bit error are tolerated far into the range. Third, a flat curve is ambiguous, so we separate corruptions that degrade the image from those that remove it. A planner that reads its camera must lose accuracy when information is deleted, whatever it does under quality loss. On these two axes the planners separate sharply, quantifying the ego-status shortcut without mistaking indifference for robustness. A released vision-language-action planner is flat on both axes, and blinding all six of its cameras costs it only 11.5 percent.",
+  "abstract_zh": "仅依赖摄像头的端到端（E2E）驾驶模型即将投入使用，但摄像头流可能会受到模糊、噪声、低光照、天气、帧丢失和内存故障等因素的影响。一个策略在驾驶失效之前能够容忍多少退化尚不清楚。现有的抗腐蚀性基准主要针对检测或鸟瞰图感知，而非驱动汽车的规划输出。我们提出了DriveDegrade，这是一个用于评估仅依赖摄像头的E2E驾驶中图像退化容忍度的基准。在图像加载器中动态注入了五种严重程度的十六个退化类别，其中一个操作符覆盖了十五个策略，并且我们在nuScenes和NAVSIM上评估了开环规划，同时结合了CARLA的闭环锚点。首先，轻微的退化几乎不影响规划，而导致规划失效的退化类别在中等严重程度时有明显的阈值。其次，脆弱性依赖于退化类型：模糊、JPEG压缩和雨滴对规划的影响最大，而天气和比特错误则在较大范围内被容忍。第三，平坦的曲线模糊不清，因此我们将导致图像退化的腐蚀与去除图像的腐蚀分开。一个依赖于摄像头的规划器在信息被删除时必须失去准确性，无论它在质量损失下如何表现。在这两个维度上，规划器的表现差异明显，量化了自我状态快捷方式，而不将漠不关心误认为是鲁棒性。一个发布的视觉-语言-行动规划器在这两个维度上表现平坦，遮挡其六个摄像头仅使其损失11.5%。",
+  "arxiv_id": "2608.29005",
+  "arxiv_url": "https://arxiv.org/abs/2608.29005",
+  "authors": [
+    "Que, Haohua, Yao, Handong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-29005",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.443556+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.29005",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "nuscenes",
+      "carla",
+      "driving",
+      "car",
+      "驾驶",
+      "bird's-eye",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "A Degradation-Tolerance Benchmark for Camera-Only End-to-End Driving",
+  "title_zh": "仅依赖摄像头的端到端驾驶的抗退化基准",
+  "translation_url": "https://hjfy.top/arxiv/2608.29005"
+}

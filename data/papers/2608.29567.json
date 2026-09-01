@@ -1,0 +1,49 @@
+{
+  "abstract": "Three-dimensional box-and-track annotation is the cost bottleneck in autonomous-driving data engines, and the offline systems built to relieve it replace the online perception stack outright, so a team needing both regimes maintains and reconciles two. MotionSync makes the causal/non-causal boundary an explicit architectural seam instead. A strictly causal tracker, built on a strong published baseline and extended with innovation-driven uncertainty calibration, frame-rate-invariant kinematic association gates, and multi-hypothesis motion with learned mode selection, emits a valid online result. A non-causal pass then revises the buffered trajectories with Rauch--Tung--Striebel smoothing applied separately to pose, extent and yaw, physics-validated gap completion, and semantic pruning of ghost tracks against LiDAR point labels. The refiner never writes back, so one system serves both regimes and refinement's effect is a delta over an unaltered causal estimate. Used as an auto-labeller, a fixed 3D detector trained on 25% human labels plus MotionSync pseudo-labels reaches 96.9% of its full-supervision mean average precision (mAP) on Waymo, and at a 10% budget the non-causal pass accounts for +3.3 mAP/L2 over pseudo-labels from the same tracker's causal stage. Re-fitting the online tracker on its own refined output recovers 73% of the benefit of human supervision, while its causal output is worse supervision than no re-fitting at all. As a tracker MotionSync is at parity with the leading published offline entries on the headline metric and ahead of them on error composition, which is where a refinement pass can act at all: it reduces misses and fragmentations together, the signature of gap completion rather than of a tuned detector.",
+  "abstract_zh": "三维框和轨迹标注是自动驾驶数据引擎中的成本瓶颈，而为缓解这一问题而建立的离线系统则完全取代了在线感知堆栈，因此需要同时使用这两种模式的团队必须维护和协调两者。MotionSync则将因果/非因果边界作为一个明确的架构缝合。一个严格的因果跟踪器，基于一个强大的已发布基线，并通过创新驱动的不确定性校准、帧率不变的运动关联门和带有学习模式选择的多假设运动进行扩展，能够输出有效的在线结果。随后，非因果处理对缓冲的轨迹进行修正，分别对姿态、范围和偏航应用Rauch-Tung-Striebel平滑，进行物理验证的间隙填补，并对比LiDAR点标签进行语义修剪。精炼器从不回写，因此一个系统可以同时服务于两种模式，而精炼的效果是对未改变的因果估计的增量。作为自动标注器，一个在25%人类标签和MotionSync伪标签上训练的固定3D检测器在Waymo上达到了其全监督平均精度（mAP）的96.9%，而在10%的预算下，非因果处理相较于同一跟踪器的因果阶段的伪标签增加了+3.3 mAP/L2。单独对其精炼输出重新拟合在线跟踪器可恢复73%的人类监督收益，而其因果输出的监督效果甚至不如完全不进行重新拟合。作为一个跟踪器，MotionSync在主要指标上与领先的已发布离线条目处于同一水平，并在错误组成上领先于它们，而这正是精炼处理可以发挥作用的地方：它同时减少遗漏和碎片，这是间隙填补的特征，而不是调优检测器的特征。",
+  "arxiv_id": "2608.29567",
+  "arxiv_url": "https://arxiv.org/abs/2608.29567",
+  "authors": [
+    "Ahuja, Rahul, Sudhakar, Bala Murali Manoghar Sai, Gupta, Shashwata, Narayanan, Venkatraman, Kumar, Varun Ravi, Yogamani, Senthil"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-29567",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.548154+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.29567",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "预测/规划"
+    ]
+  },
+  "title": "MotionSync: Non-Causal Refinement of Causal Tracker for Label-Efficient 3D Perception",
+  "title_zh": "MotionSync：用于标签高效3D感知的因果跟踪器的非因果精炼",
+  "translation_url": "https://hjfy.top/arxiv/2608.29567"
+}

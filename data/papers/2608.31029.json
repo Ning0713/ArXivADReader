@@ -1,0 +1,51 @@
+{
+  "abstract": "End-to-end autonomous driving models plan future trajectories from raw sensor input. While earlier driving benchmarks often measured deviation from the human trajectory, current benchmarks such as NAVSIM and Bench2Drive evaluate models with richer simulation-based metrics intended to capture safe and compliant driving. A high benchmark score should reflect that a model can understand the scene in front of it and act accordingly. But how much of that score specifically comes from reacting to the dynamic part of that scene? To probe this, we remove a model's camera input and replace it with memories from prior drives at the same location. The retrieved memories can provide persistent scene information, including road layout and location-conditioned regularities, but not the current traffic state. Surprisingly, memory is nearly sufficient on NAVSIM, reaching or even exceeding the performance of leading end-to-end methods without actually observing the evaluated scene. Our results suggest that a high NAVSIM score does not require a planner to react to the current traffic scene and should be treated with caution. This effect is benchmark-dependent: driving from memory causes substantially larger performance drops on Bench2Drive and RealEngine. We provide our code at https://github.com/boschresearch/MemoryDrivoR .",
+  "abstract_zh": "端到端的自主驾驶模型从原始传感器输入中规划未来轨迹。尽管早期的驾驶基准通常测量与人类轨迹的偏差，但当前的基准如NAVSIM和Bench2Drive则使用更丰富的基于仿真的指标来评估模型，以捕捉安全和合规的驾驶行为。高基准分数应反映模型能够理解其面前的场景并作出相应的反应。但这个分数中有多少是具体来自于对场景动态部分的反应呢？为了探讨这一点，我们移除了模型的摄像头输入，并用先前在同一位置驾驶时的记忆进行替代。检索到的记忆可以提供持久的场景信息，包括道路布局和位置条件下的规律性，但无法反映当前的交通状态。令人惊讶的是，在NAVSIM上，记忆几乎足以达到或甚至超过领先的端到端方法的性能，而无需实际观察被评估的场景。我们的结果表明，高NAVSIM分数并不要求规划者对当前交通场景作出反应，因此应谨慎对待这一结果。该效应依赖于基准：基于记忆的驾驶在Bench2Drive和RealEngine上导致性能显著下降。我们的代码可在 https://github.com/boschresearch/MemoryDrivoR 获取。",
+  "arxiv_id": "2608.31029",
+  "arxiv_url": "https://arxiv.org/abs/2608.31029",
+  "authors": [
+    "Löwens, Christian, Funke, Thorben, Condurache, Alexandru Paul"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-31029",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.632686+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.31029",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Driving on Memory",
+  "title_zh": "基于记忆的驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2608.31029"
+}

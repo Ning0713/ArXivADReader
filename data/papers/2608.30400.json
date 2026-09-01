@@ -1,0 +1,49 @@
+{
+  "abstract": "High-dynamic-range (HDR) images, with their rich tone and detail reproduction, hold significant potential to enhance computer vision systems, particularly in autonomous driving. However, most neural networks for embedded systems are trained on low-dynamic-range (LDR) inputs and suffer substantial performance degradation when handling high-bit-depth HDR images due to the challenges posed by extreme dynamic ranges. In this paper, we propose a novel tone mapping method that not only bridges the gap between HDR RAW inputs and the LDR sRGB requirements of detection networks but also achieves end-to-end optimization with downstream tasks. Instead of relying on the traditional image signal processing (ISP) pipeline, we introduce neural photometric calibration to regularize dynamic ranges and a scaling-invariant local tone mapping model to preserve image details. In addition, our architecture also supports performance transfer finetuning, enabling efficient adaptation from the LDR sRGB images to the HDR RAW images with minimal cost. The proposed method outperforms traditional tone mapping algorithms and advanced AI-ISP methods in challenging automotive HDR scenes. Moreover, our pipeline achieves real-time processing of 4K high-bit-depth HDR inputs on NVIDIA Jetson platforms.",
+  "abstract_zh": "高动态范围（HDR）图像以其丰富的色调和细节再现能力，在增强计算机视觉系统，特别是在自动驾驶领域中具有重要潜力。然而，大多数嵌入式系统的神经网络是在低动态范围（LDR）输入上训练的，当处理高位深度HDR图像时，由于极端动态范围带来的挑战，性能显著下降。本文提出了一种新颖的色调映射方法，不仅弥合了HDR RAW输入与检测网络所需的LDR sRGB之间的差距，还实现了与下游任务的端到端优化。我们引入神经光度校准来规范动态范围，并采用尺度不变的局部色调映射模型以保留图像细节，而不是依赖传统的图像信号处理（ISP）流程。此外，我们的架构还支持性能迁移微调，使得从LDR sRGB图像到HDR RAW图像的高效适应成本最小化。所提出的方法在具有挑战性的汽车HDR场景中超越了传统色调映射算法和先进的AI-ISP方法。此外，我们的流程在NVIDIA Jetson平台上实现了对4K高位深HDR输入的实时处理。",
+  "arxiv_id": "2608.30400",
+  "arxiv_url": "https://arxiv.org/abs/2608.30400",
+  "authors": [
+    "Li, Gongzhe, Qiu, Linwei, Cao, Peibei, Xie, Fengying, Ji, Xiangyang, Sun, Qilin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-30400",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.595540+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.30400",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "automotive",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Real-Time Scene-Adaptive Tone Mapping for High-Dynamic Range Object Detection",
+  "title_zh": "实时场景自适应高动态范围目标检测色调映射",
+  "translation_url": "https://hjfy.top/arxiv/2608.30400"
+}

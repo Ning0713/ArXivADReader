@@ -1,0 +1,50 @@
+{
+  "abstract": "Thermal Infrared detection is widely used in autonomous driving, medical AI, etc., but its security has only attracted attention recently. We propose infrared adversarial clothing designed to evade thermal person detectors in real-world scenarios. The design of the adversarial clothing is based on 3D modeling, which makes it easier to simulate multiangle scenes near the real world compared to 2D modeling. We optimized the black patch layout pattern of 3D clothing based on the adversarial example technique and made physical adversarial clothing using the aerogel. The idea is to paste a set of square aerogel patches, which display black squares in thermal images, in the inner side of clothing at specific locations with specific orientations. To enhance realism, we propose a method to build infrared 3D models with real infrared photos and develop texture maps for 3D models to simulate varied infrared characteristics over time and location. In physical attacks, we achieved an attack success rate of 80.11\\% indoors and 76.85\\% outdoors against YOLOv9. In contrast, randomly placed patches yielded much lower success rates (26.53\\% indoors and 23.03\\% outdoors). The adversarial clothing also showed good transferability to unknown detectors with an ensemble attack method, demonstrating the effectiveness of our approach.",
+  "abstract_zh": "热红外检测广泛应用于自动驾驶、医疗人工智能等领域，但其安全性最近才引起关注。我们提出了一种旨在规避现实场景中热人检测器的红外对抗服装。对抗服装的设计基于三维建模，相较于二维建模，更容易模拟接近现实世界的多角度场景。我们基于对抗样本技术优化了三维服装的黑色补丁布局模式，并使用气凝胶制作了物理对抗服装。其思路是在服装的内侧特定位置和特定方向粘贴一组方形气凝胶补丁，这些补丁在热成像中显示为黑色方块。为了增强真实感，我们提出了一种方法，通过真实的红外照片构建红外三维模型，并为三维模型开发纹理图，以模拟随时间和地点变化的不同红外特征。在物理攻击中，我们在室内对YOLOv9实现了80.11%的攻击成功率，在室外则为76.85%。相比之下，随机放置的补丁成功率要低得多（室内为26.53%，室外为23.03%）。对抗服装在未知检测器上也表现出了良好的迁移性，采用集成攻击方法，证明了我们方法的有效性。",
+  "arxiv_id": "2608.30839",
+  "arxiv_url": "https://arxiv.org/abs/2608.30839",
+  "authors": [
+    "Zhu, Xiaopei, Huang, Siyuan, Hu, Zhanhao, Li, Jianmin, Zhu, Jun, Hu, Xiaolin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-01#paper-2608-30839",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T10:33:04.622063+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.30839",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "medical",
+      "医疗"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-01"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "安全/异常"
+    ]
+  },
+  "title": "Physical Adversarial Examples for Person Detectors in Thermal Images Based on 3D Modeling",
+  "title_zh": "基于三维建模的热成像中人检测器的物理对抗样本",
+  "translation_url": "https://hjfy.top/arxiv/2608.30839"
+}
