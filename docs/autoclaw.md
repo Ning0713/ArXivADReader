@@ -20,10 +20,10 @@ GitHub Actions: Update And Deploy Papers
 
 ```yaml
 schedule:
-  - cron: "30 13 * * 1-5"
+  - cron: "0 0 * * 1-5"
 ```
 
-GitHub Actions cron 使用 UTC，因此它会在工作日北京时间 21:30 自动运行。自动更新不依赖本地电脑、AutoClaw 或 QQ Bot 在线。
+GitHub Actions cron 使用 UTC，因此它会在工作日北京时间 08:00 自动运行。自动更新不依赖本地电脑、AutoClaw 或 QQ Bot 在线。
 
 不要再创建同一时间执行论文更新的 AutoClaw cron，否则可能重复触发工作流。旧任务可以在 AutoClaw 的计划任务页面删除，也可以使用 OpenClaw CLI：
 
@@ -35,7 +35,7 @@ openclaw cron rm <job-id>       # 永久删除任务定义
 
 不同 AutoClaw 安装方式可能需要指定 profile、Gateway URL 或凭据，具体以本机 `openclaw cron --help` 为准。不要手工编辑 `cron/jobs.json`，除非 Gateway 已停止并且已经备份文件。
 
-如果只想在更新结束后收到 QQ 状态通知，可以单独安排一个 22:30 左右的“状态”任务；它只应调用 `ops/autoclaw.ps1 status`，不能再次触发更新。
+如果只想在更新结束后收到 QQ 状态通知，可以单独安排一个 08:30 左右的“状态”任务；它只应调用 `ops/autoclaw.ps1 status`，不能再次触发更新。
 
 ## 首次准备
 
@@ -148,7 +148,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<repo-root>\ops\autocla
 
 ### 日常自动更新
 
-无需向 QQ 发送命令。GitHub Actions 会在工作日北京时间 21:30 自动运行。22:00 以后发送：
+无需向 QQ 发送命令。GitHub Actions 会在工作日北京时间 08:00 自动运行。08:30 以后发送：
 
 ```text
 状态
