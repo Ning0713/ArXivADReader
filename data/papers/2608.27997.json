@@ -1,0 +1,55 @@
+{
+  "abstract": "Air-ground cross-view referring person detection is a necessary component in the language-to-perception-to-control chain of collective embodied intelligence, grounding a language command into the same physical target before ground and aerial agents can coordinate downstream actions. Existing referring expression comprehension and open-vocabulary grounding methods do not jointly account for cross-view identity consistency, making them insufficient for Air-Ground Cross-View Referring Person Detection (AGCV-RPD), which involves similar pedestrian distractors, weak aerial appearance cues, and cross-view identity consistency. To study this problem, we introduce Air-Ground Paired Identity-Aware Referring (A-PAIR), the first comprehensive AGCV-RPD benchmark, containing 22,137 cross-view referring samples. To construct A-PAIR efficiently, we propose Factorized Annotation and Referential Alignment (FARA), a semi-automatic annotation framework that generates factorized referring descriptions and identity-consistency supervision at reduced cost. We propose Identity-Consistent Referring Grounding (ICRG), a framework that combines factorized referential grounding, candidate-completeness supervision, and cross-view consistency calibration for joint air-ground pair selection. ICRG improves ground, aerial, and pair-level detection over strong baselines, increasing pair F1 from 16.65% to 22.28%. These results show that AGCV-RPD requires paired detection and identity-consistent reasoning.",
+  "abstract_zh": "空地交叉视角指称人物检测是集体具身智能中语言-感知-控制链的重要组成部分，它将语言指令定位到同一物理目标上，以便地面和空中代理能够协调后续行动。现有的指称表达理解和开放词汇基础方法未能共同考虑交叉视角身份一致性，因此不足以满足空地交叉视角指称人物检测（AGCV-RPD）的需求，该任务涉及相似的行人干扰物、弱的空中外观线索以及交叉视角身份一致性。为了解决这一问题，我们提出了空地配对身份感知指称（A-PAIR），这是第一个综合性的AGCV-RPD基准，包含22,137个交叉视角指称样本。为了高效构建A-PAIR，我们提出了因子化注释和指称对齐（FARA），这是一种半自动注释框架，可以以较低的成本生成因子化的指称描述和身份一致性监督。我们还提出了身份一致性指称基础（ICRG），这是一个结合了因子化指称基础、候选完整性监督和交叉视角一致性校准的框架，用于联合选择空地配对。ICRG在强基线之上提高了地面、空中和配对级别的检测，将配对F1从16.65%提高到22.28%。这些结果表明，AGCV-RPD需要配对检测和身份一致性推理。",
+  "arxiv_id": "2608.27997",
+  "arxiv_url": "https://arxiv.org/abs/2608.27997v1",
+  "authors": [
+    "Zhoupeng Guo",
+    "Xinjie Yao",
+    "Yunqi Zhu",
+    "Zhihe Fan",
+    "Siqi Zhao",
+    "Jianjun Chen",
+    "Yichen Dong",
+    "Yan Fan",
+    "Pengfei Zhu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-31#paper-2608-27997",
+  "categories": [
+    "cs.CV",
+    "cs.MM"
+  ],
+  "fetched_at": "2026-09-01T11:25:06.305655+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.27997v1",
+  "published_at": "2026-08-28T07:05:43Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-08-31"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.27997v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-31"
+  },
+  "summary_zh": "本文研究结合语言指令的空地跨视角行人检测与身份一致性匹配，构建了A-PAIR基准和FARA标注框架，并提出ICRG模型联合进行地面、空中及配对级目标检测。该方法面向空地多智能体协同感知，技术上与自动驾驶中的多视角行人感知、跨平台目标关联和协同感知相关。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "协同/V2X"
+    ]
+  },
+  "title": "A-PAIR: A Benchmark and Identity-Consistent Grounding Framework for Air-Ground Cross-View Referring Person Detection",
+  "title_zh": "A-PAIR：一种用于空地交叉视角指称人物检测的基准和身份一致性基础框架",
+  "translation_url": "https://hjfy.top/arxiv/2608.27997"
+}

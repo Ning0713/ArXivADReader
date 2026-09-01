@@ -1,0 +1,50 @@
+{
+  "abstract": "Predicting non-periodic traffic congestion caused by sudden incidents (e.g., accidents and road damage) is crucial for advanced intelligent transportation systems. However, incident-driven congestion is difficult to forecast because incidents are extremely sparse, occur at specific times and locations, and have heterogeneous impacts depending on the traffic context. While recent deep learning approaches have significantly improved periodic traffic forecasting, their performance on non-periodic congestion remains limited, partly because incident records are not explicitly incorporated and their occurrence is strongly biased in space and time. To address these challenges, we propose CASTANET, which integrates spatio-temporal graph neural networks and causal treatment effect estimation to utilize incident records while mitigating selection bias. Experiments on real-world traffic data and accident records from Tokyo, which we treat as incidents, show that CASTANET reduces RMSE by 4.0% overall compared to the best baseline and by 10.1% on incident-conditioned evaluation, with gains reaching 14.55% under severe congestion.",
+  "abstract_zh": "预测由突发事件（例如事故和道路损坏）引起的非周期性交通拥堵对于先进的智能交通系统至关重要。然而，由于事件极为稀疏、发生在特定的时间和地点，并且根据交通背景具有异质性影响，因此事件驱动的拥堵难以预测。尽管最近的深度学习方法显著改善了周期性交通预测，但它们在非周期性拥堵上的表现仍然有限，部分原因是事件记录未被明确纳入，并且其发生在空间和时间上存在强烈的偏差。为了解决这些挑战，我们提出了CASTANET，该方法结合了时空图神经网络和因果处理效应估计，以利用事件记录，同时减轻选择偏差。在对东京的真实交通数据和事故记录进行的实验中，我们将这些记录视为事件，结果表明CASTANET在整体上将均方根误差（RMSE）降低了4.0%，在基于事件的评估中降低了10.1%，在严重拥堵情况下的增益达到14.55%。",
+  "arxiv_id": "2608.27942",
+  "arxiv_url": "https://arxiv.org/abs/2608.27942v1",
+  "authors": [
+    "Toshiya Kitahara",
+    "Ryu Shirakami",
+    "Koh Takeuchi",
+    "Hisashi Kashima"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-31#paper-2608-27942",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-01T11:25:06.398832+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.27942v1",
+  "published_at": "2026-08-28T05:34:07Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-08-31"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.27942v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-31"
+  },
+  "summary_zh": "本文面向事故、道路损坏等突发事件导致的非周期性交通拥堵预测。方法将时空图神经网络与因果处理效应估计结合，显式建模交通事件对路网状态的影响，并处理事件记录在时空分布上的选择偏差。该类事件感知的交通预测可为自动驾驶车辆的路径规划、出行决策及风险规避提供路网级先验信息。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "CASTANET: Causality-Aware Spatio-Temporal Adversarial Network Using Traffic Incident Effects",
+  "title_zh": "CASTANET：基于交通事件影响的因果意识时空对抗网络",
+  "translation_url": "https://hjfy.top/arxiv/2608.27942"
+}

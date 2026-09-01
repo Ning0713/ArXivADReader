@@ -1,0 +1,48 @@
+{
+  "abstract": "Vision foundation models are capable of generalizing across 3-dimensional (3D) scenes with high-fidelity estimates; their empirical success can be attributed to training on large-scale datasets of perspective images. However, when transferred to wide field-of-view (FoV) images, such as those captured by fisheye cameras, they return erroneous outputs due to a covariate shift stemming from the radial distortion on the image pixels. We propose a method to generalize vision foundation models to fisheye cameras. The crux of our method lies in a set of learnable parameters, termed Distortion Extenders (DEX), that model the fisheye distortion coefficients and the distributional shift between fisheye and perspective images encoded in the latent space. By minimizing a self-supervised alignment loss, DEX transforms the latent embeddings of fisheye images to resemble those of perspective images to recover high-fidelity estimates. DEX is architecture- and task-agnostic: We demonstrate DEX on monocular depth estimation and open-vocabulary segmentation for convolution- and Transformer-based architectures, where we consistently improve over baselines across indoor and outdoor fisheye datasets. As a byproduct, the activations of DEX can also be decoded to distortion coefficients to support camera calibration. Code available at: https://github.com/Suchisrit/DEX.",
+  "abstract_zh": "视觉基础模型能够在三维（3D）场景中进行高保真度的泛化估计；其经验成功可归因于在大规模透视图像数据集上的训练。然而，当这些模型转移到广视场（FoV）图像时，例如鱼眼相机捕获的图像，由于图像像素的径向失真引起的协变量转移，它们会返回错误的输出。我们提出了一种将视觉基础模型推广到鱼眼相机的方法。我们方法的关键在于一组可学习的参数，称为失真扩展器（Distortion Extenders, DEX），它们建模鱼眼失真系数以及在潜在空间中编码的鱼眼图像与透视图像之间的分布转移。通过最小化自监督对齐损失，DEX将鱼眼图像的潜在嵌入转换为类似透视图像的形式，以恢复高保真度的估计。DEX与架构和任务无关：我们在基于卷积和变换器的架构上展示了DEX在单目深度估计和开放词汇分割中的应用，在室内和室外鱼眼数据集上，我们始终在基准测试中取得了改进。作为附带成果，DEX的激活也可以解码为失真系数，以支持相机校准。代码可在：https://github.com/Suchisrit/DEX.",
+  "arxiv_id": "2608.27860",
+  "arxiv_url": "https://arxiv.org/abs/2608.27860v1",
+  "authors": [
+    "Rit Gangopadhyay",
+    "Alex Wong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-31#paper-2608-27860",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-01T11:25:06.293867+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.27860v1",
+  "published_at": "2026-08-28T03:10:18Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-08-31"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.27860v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-31"
+  },
+  "summary_zh": "本文提出失真扩展器（DEX），通过自监督潜在空间对齐，将基于透视图像训练的视觉基础模型适配到鱼眼相机，缓解径向畸变造成的分布偏移。该方法可用于单目深度估计和开放词汇分割，并支持从模型激活中解码相机畸变系数以进行标定。在室内和室外鱼眼数据集上的实验表明，DEX能够提升多种卷积和Transformer架构的性能。该技术可用于自动驾驶车辆中的鱼眼视觉感知与相机标定。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "From Perspective to Fisheye Depth Estimation and Open-Vocabulary Segmentation",
+  "title_zh": "从透视到鱼眼深度估计与开放词汇分割",
+  "translation_url": "https://hjfy.top/arxiv/2608.27860"
+}

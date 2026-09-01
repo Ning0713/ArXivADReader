@@ -1,0 +1,52 @@
+{
+  "abstract": "Heuristic search underlies planning in autonomous systems ranging from warehouse logistics to robotic navigation, yet generic heuristics fail to exploit the structural constraints that govern constrained spatial domains, causing search performance to degrade catastrophically on harder instances. We study this problem through the two-column Flying Block Puzzle, a rigorously NP-complete spatial planning microworld whose bottleneck geometry mirrors clearance-to-size constraints encountered in multi-agent path finding, autonomous vehicle navigation, and block relocation systems. We introduce the Class-Based Heuristic A* (CBHA*) algorithm, which integrates a General Move Constraint to capture minimum displacement costs when vacant units are scarce, a formal kinematic taxonomy partitioning the state space into seven mutually exclusive classes with provably admissible heuristics based on vacancy ratio and goal-piece geometry, and a class-conditional tie-breaking mechanism that dynamically switches between depth-priority and vertical-distance ordering to overcome f-value plateaus. Over 146 benchmark instances, CBHA* achieves a 93.4% success rate against 64% for Depth-Prioritized A*, 39% for Standard A*, and 17% for BFS, while reducing node expansions by 87.98% relative to Standard A* and sustaining an average effective branching factor of approximately 3, demonstrating that class-triggered adaptive heuristics constitute a principled mechanism for efficient spatial planning that generalizes structurally to physical constraint systems.",
+  "abstract_zh": "启发式搜索是从仓库物流到机器人导航等自主系统规划的基础，但通用启发式方法未能利用约束空间领域中支配的结构性约束，导致在更难实例上的搜索性能急剧下降。我们通过双列飞行块拼图研究这一问题，该拼图是一个严格的 NP 完全空间规划微观世界，其瓶颈几何形状反映了在多智能体路径寻找、自动驾驶导航和块重定位系统中遇到的清除与尺寸约束。我们提出了基于类别的启发式 A* (CBHA*) 算法，该算法整合了一种通用移动约束，以捕捉在空闲单元稀缺时的最小位移成本，采用一种形式的运动学分类法将状态空间划分为七个相互独立的类别，并基于空闲比率和目标块几何形状提供可证明的可接受启发式，同时引入了一种类别条件的平局打破机制，动态切换深度优先和垂直距离排序，以克服 f 值平台。在 146 个基准实例中，CBHA* 的成功率达到了 93.4%，而深度优先 A* 为 64%，标准 A* 为 39%，广度优先搜索 (BFS) 为 17%，同时相较于标准 A* 减少了 87.98% 的节点扩展，并维持了大约 3 的平均有效分支因子，证明了基于类别触发的自适应启发式方法构成了一种高效空间规划的原则性机制，能够在结构上推广到物理约束系统。",
+  "arxiv_id": "2608.27476",
+  "arxiv_url": "https://arxiv.org/abs/2608.27476v1",
+  "authors": [
+    "Sanyar Ahmadi",
+    "Pedram Asadzadeh",
+    "Amanj Khorramian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-31#paper-2608-27476",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-01T11:25:06.358115+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.27476v1",
+  "published_at": "2026-08-20T09:18:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "自动驾驶",
+      "autonomous",
+      "vehicle",
+      "驾驶",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-08-31"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.27476v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-31"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "地图/定位"
+    ]
+  },
+  "title": "Class-Based Heuristic Selection for Solving the Flying Block Puzzle",
+  "title_zh": "基于类别的启发式选择用于解决飞行块拼图",
+  "translation_url": "https://hjfy.top/arxiv/2608.27476"
+}

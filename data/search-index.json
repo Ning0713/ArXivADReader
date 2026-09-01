@@ -390,6 +390,167 @@
       "url": "/daily/2026-09-01/#paper-2608-28656"
     },
     {
+      "abstract": "Video generation for autonomous driving cannot follow the web-scale route: driving data is expensive to collect, bound by privacy requirements, and cannot be scraped at will, so models must make the most of a fixed corpus. We present a systematic scaling-law study of video diffusion models trained from scratch on driving data: a family of models from 1M to 9B parameters, trained at different exposures on up to 5,500 hours of driving. Validation loss follows consistent power laws in both model size and training exposure, answering the questions that shape a training budget: whether compute is better spent on longer training or on a larger model, and whether more data is needed. Loss improves much faster with training exposure than with model size, making longer training the most effective way to improve a fixed model under limited compute. However, larger models continue to achieve lower asymptotic loss, so compute-optimal scaling still favors increasing model size when sufficient compute and data are available. Guided by these laws, we train a 9B-parameter model, to our knowledge the largest video diffusion model trained from scratch on driving data: it sets a new open-source state of the art for driving video generation, as measured on nuScenes. Our code and pretrained models are available at https://github.com/valeoai/VATIX. NATIX is separately releasing the underlying driving data in stages.",
+      "abstract_zh": "自主驾驶的视频生成无法遵循网络规模的路线：驾驶数据的收集成本高昂，受到隐私要求的限制，且无法随意抓取，因此模型必须充分利用固定的语料库。我们提出了一项系统的尺度法则研究，针对从头开始在驾驶数据上训练的视频扩散模型：一系列从1M到9B参数的模型，在多达5500小时的驾驶数据上以不同的曝光量进行训练。验证损失在模型规模和训练曝光上遵循一致的幂律，回答了影响训练预算的问题：计算资源是更适合用于更长的训练还是更大的模型，以及是否需要更多的数据。与模型规模相比，训练曝光带来的损失改善速度更快，使得在有限计算资源下，延长训练成为提升固定模型性能的最有效方式。然而，更大的模型仍然能够实现更低的渐近损失，因此在计算资源和数据充足的情况下，计算最优的扩展仍然倾向于增加模型规模。在这些法则的指导下，我们训练了一个9B参数的模型，至今为止这是在驾驶数据上从头开始训练的最大视频扩散模型：它在nuScenes上设定了驾驶视频生成的新开源状态的最佳表现。我们的代码和预训练模型可在https://github.com/valeoai/VATIX获取。NATIX将分阶段发布基础驾驶数据。",
+      "authors": [
+        "Victor Besnier",
+        "Anh-Quan Cao",
+        "Elias Ramzi",
+        "Spyros Gidaris",
+        "Tuan-Hung Vu",
+        "Andrei Bursuc",
+        "Eloi Zablocki",
+        "Matthieu Cord"
+      ],
+      "date": "2026-08-31",
+      "id": "2608.28404",
+      "tags": [
+        "世界模型/生成"
+      ],
+      "title": "How Far Can 5,500 Hours of Driving Take You? A Scaling Law Analysis of Video Diffusion Models",
+      "title_zh": "5500小时驾驶能带你多远？视频扩散模型的尺度法则分析",
+      "url": "/daily/2026-08-31/#paper-2608-28404"
+    },
+    {
+      "abstract": "Air-ground cross-view referring person detection is a necessary component in the language-to-perception-to-control chain of collective embodied intelligence, grounding a language command into the same physical target before ground and aerial agents can coordinate downstream actions. Existing referring expression comprehension and open-vocabulary grounding methods do not jointly account for cross-view identity consistency, making them insufficient for Air-Ground Cross-View Referring Person Detection (AGCV-RPD), which involves similar pedestrian distractors, weak aerial appearance cues, and cross-view identity consistency. To study this problem, we introduce Air-Ground Paired Identity-Aware Referring (A-PAIR), the first comprehensive AGCV-RPD benchmark, containing 22,137 cross-view referring samples. To construct A-PAIR efficiently, we propose Factorized Annotation and Referential Alignment (FARA), a semi-automatic annotation framework that generates factorized referring descriptions and identity-consistency supervision at reduced cost. We propose Identity-Consistent Referring Grounding (ICRG), a framework that combines factorized referential grounding, candidate-completeness supervision, and cross-view consistency calibration for joint air-ground pair selection. ICRG improves ground, aerial, and pair-level detection over strong baselines, increasing pair F1 from 16.65% to 22.28%. These results show that AGCV-RPD requires paired detection and identity-consistent reasoning.",
+      "abstract_zh": "空地交叉视角指称人物检测是集体具身智能中语言-感知-控制链的重要组成部分，它将语言指令定位到同一物理目标上，以便地面和空中代理能够协调后续行动。现有的指称表达理解和开放词汇基础方法未能共同考虑交叉视角身份一致性，因此不足以满足空地交叉视角指称人物检测（AGCV-RPD）的需求，该任务涉及相似的行人干扰物、弱的空中外观线索以及交叉视角身份一致性。为了解决这一问题，我们提出了空地配对身份感知指称（A-PAIR），这是第一个综合性的AGCV-RPD基准，包含22,137个交叉视角指称样本。为了高效构建A-PAIR，我们提出了因子化注释和指称对齐（FARA），这是一种半自动注释框架，可以以较低的成本生成因子化的指称描述和身份一致性监督。我们还提出了身份一致性指称基础（ICRG），这是一个结合了因子化指称基础、候选完整性监督和交叉视角一致性校准的框架，用于联合选择空地配对。ICRG在强基线之上提高了地面、空中和配对级别的检测，将配对F1从16.65%提高到22.28%。这些结果表明，AGCV-RPD需要配对检测和身份一致性推理。",
+      "authors": [
+        "Zhoupeng Guo",
+        "Xinjie Yao",
+        "Yunqi Zhu",
+        "Zhihe Fan",
+        "Siqi Zhao",
+        "Jianjun Chen",
+        "Yichen Dong",
+        "Yan Fan",
+        "Pengfei Zhu"
+      ],
+      "date": "2026-08-31",
+      "id": "2608.27997",
+      "tags": [
+        "感知",
+        "多传感器融合",
+        "协同/V2X"
+      ],
+      "title": "A-PAIR: A Benchmark and Identity-Consistent Grounding Framework for Air-Ground Cross-View Referring Person Detection",
+      "title_zh": "A-PAIR：一种用于空地交叉视角指称人物检测的基准和身份一致性基础框架",
+      "url": "/daily/2026-08-31/#paper-2608-27997"
+    },
+    {
+      "abstract": "For cooperative perception in the internet of vehicles, this paper proposes a generative adversarial network-based semantic communication framework to address the efficiency and fidelity bottlenecks of traditional communication systems in visual data transmission under limited bandwidth and dynamic channel conditions. At the transmitter, the framework adopts a pyramid attention network to extract semantic label maps and introduces a semantic priority preservation mechanism. It assigns differentiated weights to distinct semantic categories based on driving safety, guiding bit allocation and loss function design. At the receiver, an image reconstruction module integrating a coarse to-fine multi-resolution generator and multi-scale discriminator is designed. Combined with the temporal consistency branch, spatial pyramid pooling and class-aware convolutional layers, it achieves high-fidelity reconstruction of high-quality images from corrupted semantic labels. The model is trained with combined adversarial, feature matching and perceptual losses, effectively improving semantic consistency and visual realism of generated images. Experimental results on the Cityscapes dataset show that the proposed method outperforms existing counterparts in both semantic segmentation accuracy and reconstructed image quality, and maintains stable reconstruction performance under AWGN and Rayleigh channels.",
+      "abstract_zh": "针对车联网中的协同感知，本文提出了一种基于生成对抗网络的语义通信框架，以解决传统通信系统在有限带宽和动态信道条件下视觉数据传输的效率和保真度瓶颈。在发射端，该框架采用金字塔注意力网络提取语义标签图，并引入语义优先级保留机制。它根据驾驶安全性为不同的语义类别分配差异化权重，从而指导比特分配和损失函数设计。在接收端，设计了一个图像重建模块，该模块集成了粗到细的多分辨率生成器和多尺度判别器。结合时间一致性分支、空间金字塔池化和类别感知卷积层，实现了从损坏的语义标签中高保真重建高质量图像。该模型通过结合对抗损失、特征匹配损失和感知损失进行训练，有效提高了生成图像的语义一致性和视觉真实感。在Cityscapes数据集上的实验结果表明，所提方法在语义分割精度和重建图像质量上均优于现有方法，并在AWGN和Rayleigh信道下保持稳定的重建性能。",
+      "authors": [
+        "Ruixing Ren",
+        "Shan Chen",
+        "Junhui Zhao",
+        "Xiaoke Sun"
+      ],
+      "date": "2026-08-31",
+      "id": "2608.27989",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "仿真/数据"
+      ],
+      "title": "GAN-Based Semantic Communication for Image Transmission in IoV",
+      "title_zh": "基于GAN的车联网图像传输语义通信",
+      "url": "/daily/2026-08-31/#paper-2608-27989"
+    },
+    {
+      "abstract": "Predicting non-periodic traffic congestion caused by sudden incidents (e.g., accidents and road damage) is crucial for advanced intelligent transportation systems. However, incident-driven congestion is difficult to forecast because incidents are extremely sparse, occur at specific times and locations, and have heterogeneous impacts depending on the traffic context. While recent deep learning approaches have significantly improved periodic traffic forecasting, their performance on non-periodic congestion remains limited, partly because incident records are not explicitly incorporated and their occurrence is strongly biased in space and time. To address these challenges, we propose CASTANET, which integrates spatio-temporal graph neural networks and causal treatment effect estimation to utilize incident records while mitigating selection bias. Experiments on real-world traffic data and accident records from Tokyo, which we treat as incidents, show that CASTANET reduces RMSE by 4.0% overall compared to the best baseline and by 10.1% on incident-conditioned evaluation, with gains reaching 14.55% under severe congestion.",
+      "abstract_zh": "预测由突发事件（例如事故和道路损坏）引起的非周期性交通拥堵对于先进的智能交通系统至关重要。然而，由于事件极为稀疏、发生在特定的时间和地点，并且根据交通背景具有异质性影响，因此事件驱动的拥堵难以预测。尽管最近的深度学习方法显著改善了周期性交通预测，但它们在非周期性拥堵上的表现仍然有限，部分原因是事件记录未被明确纳入，并且其发生在空间和时间上存在强烈的偏差。为了解决这些挑战，我们提出了CASTANET，该方法结合了时空图神经网络和因果处理效应估计，以利用事件记录，同时减轻选择偏差。在对东京的真实交通数据和事故记录进行的实验中，我们将这些记录视为事件，结果表明CASTANET在整体上将均方根误差（RMSE）降低了4.0%，在基于事件的评估中降低了10.1%，在严重拥堵情况下的增益达到14.55%。",
+      "authors": [
+        "Toshiya Kitahara",
+        "Ryu Shirakami",
+        "Koh Takeuchi",
+        "Hisashi Kashima"
+      ],
+      "date": "2026-08-31",
+      "id": "2608.27942",
+      "tags": [
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "CASTANET: Causality-Aware Spatio-Temporal Adversarial Network Using Traffic Incident Effects",
+      "title_zh": "CASTANET：基于交通事件影响的因果意识时空对抗网络",
+      "url": "/daily/2026-08-31/#paper-2608-27942"
+    },
+    {
+      "abstract": "Vision foundation models are capable of generalizing across 3-dimensional (3D) scenes with high-fidelity estimates; their empirical success can be attributed to training on large-scale datasets of perspective images. However, when transferred to wide field-of-view (FoV) images, such as those captured by fisheye cameras, they return erroneous outputs due to a covariate shift stemming from the radial distortion on the image pixels. We propose a method to generalize vision foundation models to fisheye cameras. The crux of our method lies in a set of learnable parameters, termed Distortion Extenders (DEX), that model the fisheye distortion coefficients and the distributional shift between fisheye and perspective images encoded in the latent space. By minimizing a self-supervised alignment loss, DEX transforms the latent embeddings of fisheye images to resemble those of perspective images to recover high-fidelity estimates. DEX is architecture- and task-agnostic: We demonstrate DEX on monocular depth estimation and open-vocabulary segmentation for convolution- and Transformer-based architectures, where we consistently improve over baselines across indoor and outdoor fisheye datasets. As a byproduct, the activations of DEX can also be decoded to distortion coefficients to support camera calibration. Code available at: https://github.com/Suchisrit/DEX.",
+      "abstract_zh": "视觉基础模型能够在三维（3D）场景中进行高保真度的泛化估计；其经验成功可归因于在大规模透视图像数据集上的训练。然而，当这些模型转移到广视场（FoV）图像时，例如鱼眼相机捕获的图像，由于图像像素的径向失真引起的协变量转移，它们会返回错误的输出。我们提出了一种将视觉基础模型推广到鱼眼相机的方法。我们方法的关键在于一组可学习的参数，称为失真扩展器（Distortion Extenders, DEX），它们建模鱼眼失真系数以及在潜在空间中编码的鱼眼图像与透视图像之间的分布转移。通过最小化自监督对齐损失，DEX将鱼眼图像的潜在嵌入转换为类似透视图像的形式，以恢复高保真度的估计。DEX与架构和任务无关：我们在基于卷积和变换器的架构上展示了DEX在单目深度估计和开放词汇分割中的应用，在室内和室外鱼眼数据集上，我们始终在基准测试中取得了改进。作为附带成果，DEX的激活也可以解码为失真系数，以支持相机校准。代码可在：https://github.com/Suchisrit/DEX.",
+      "authors": [
+        "Rit Gangopadhyay",
+        "Alex Wong"
+      ],
+      "date": "2026-08-31",
+      "id": "2608.27860",
+      "tags": [
+        "深度/几何",
+        "感知"
+      ],
+      "title": "From Perspective to Fisheye Depth Estimation and Open-Vocabulary Segmentation",
+      "title_zh": "从透视到鱼眼深度估计与开放词汇分割",
+      "url": "/daily/2026-08-31/#paper-2608-27860"
+    },
+    {
+      "abstract": "Simultaneously optimizing the trajectories of multiple agents is a challenging problem plagued by nonlinearity, nonconvexity, and the curse of dimensionality. A collection of interacting aerial vehicles or self-driving cars in an intersection are examples of complex multi-agent systems that remain difficult to solve without many simplifying assumptions. The presence of communication latency between agents further increases the difficulty. In this paper, we analyze Distributed Model-Based Diffusion: a sampling-based Model-Predictive Control method suitable for highly nonlinear, nonconvex, nonsmooth, multi-agent systems. We prove contraction and robustness to latency for multi-agent, nonconvex problems, showing applicability to real-world constraints. We test the algorithm on a circleswap task, a cooperative medium-fidelity driving task, and in an aerial combat scenario. Despite the addition of latency, our algorithm improves circleswap makespan by 31% and increases aerial combat win rate by 25% compared to centralized Model-Based Diffusion.",
+      "abstract_zh": "同时优化多个智能体的轨迹是一个具有挑战性的问题，受到非线性、非凸性和维度诅咒的困扰。一组相互作用的空中车辆或在交叉口的自动驾驶汽车是复杂多智能体系统的例子，这些系统在没有许多简化假设的情况下仍然难以解决。智能体之间的通信延迟进一步增加了难度。在本文中，我们分析了分布式基于模型的扩散：一种适用于高度非线性、非凸、非光滑多智能体系统的基于采样的模型预测控制方法。我们证明了在多智能体非凸问题中，收缩性和对延迟的鲁棒性，显示其适用于现实世界的约束条件。我们在一个圆形交换任务、一个合作中等保真度的驾驶任务以及一个空中战斗场景中测试了该算法。尽管增加了延迟，我们的算法在圆形交换的完成时间上提高了31%，并且在空中战斗的胜率上提高了25%，与集中式基于模型的扩散相比。",
+      "authors": [
+        "Seth Golembeski",
+        "Keith L. Gibson",
+        "Alexander Gross",
+        "Shreyas Kousik",
+        "Anirban Mazumdar"
+      ],
+      "date": "2026-08-31",
+      "id": "2608.27685",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "协同/V2X"
+      ],
+      "title": "Distributed Model-Based Diffusion: Finite Horizon Contraction under Bounded Delay",
+      "title_zh": "分布式基于模型的扩散：有限时间范围内的收缩在有界延迟下",
+      "url": "/daily/2026-08-31/#paper-2608-27685"
+    },
+    {
+      "abstract": "Pothole detection and its severity measurement is still an important challenges in urban infrastructure management, where late maintenance directly contributes to vehicle damage, road accidents, and escalating repair costs. Existing automated approaches depend on 2D RGB images and cannot measure physical depth of potholes. In this paper, we present a depthaware pothole detection framework and then compare five architectures: YOLOv8n, YOLOv8nSeg, YOLOv9t, RTDETRL, and RTDETRX for RGB-D sensor fusion-based detection and automated depth measurement. A custom offline augmentation pipeline is used here to simulate adverse road monitoring conditions. All models are trained on the PothRGBD dataset with an 80% training and 20% validation split and evaluated using Precision, Recall, mAP@50, and mAP@50_95. Before measuring the depth data, all depth maps are corrected for camera tilt using RANSAC ground-plane orthorectification and all zero-valued sensor pixels are cast to NaN before any statistic is computed. YOLOv8nSeg achieves the highest mAP@50 of 0.9556 and mAP@50_95 of 0.6758 with the most accurate depth estimate of 2.96 cm with the pixel-precise Dseg algorithm. YOLOv8n achieves the fastest inference at 3.6ms. RTDETRX achieves the highest detection confidence at 92.70%. An important finding is that even after full RANSAC orthorectification, bounding box models overestimate pothole depth by 0.16 to 0.21 cm compared to pixel precise segmentation masks. This confirms that the pavement inclusion bias is structural rather than a calibration artifact.",
+      "abstract_zh": "坑洞检测及其严重性测量仍然是城市基础设施管理中的重要挑战，延迟维护直接导致车辆损坏、道路事故以及不断上升的修复成本。现有的自动化方法依赖于2D RGB图像，无法测量坑洞的物理深度。本文提出了一种深度感知的坑洞检测框架，并比较了五种架构：YOLOv8n、YOLOv8nSeg、YOLOv9t、RT-DETRL和RTDETRX，基于RGB-D传感器融合进行检测和自动深度测量。这里使用自定义的离线增强管道来模拟不利的道路监测条件。所有模型在PothRGBD数据集上进行训练，采用80%的训练集和20%的验证集，并使用精确度、召回率、mAP@50和mAP@50_95进行评估。在测量深度数据之前，所有深度图通过RANSAC地面平面正射校正来校正相机倾斜，所有零值传感器像素在计算任何统计数据之前被转换为NaN。YOLOv8nSeg以0.9556的最高mAP@50和0.6758的mAP@50_95，以及最准确的深度估计2.96厘米（使用像素精确的Dseg算法）取得了最佳表现。YOLOv8n以3.6毫秒的推理时间实现了最快的推理速度。RTDETRX则以92.70%的最高检测置信度取得了最佳结果。一个重要发现是，即使在完全的RANSAC正射校正后，边界框模型相比于像素精确的分割掩膜仍高估了0.16到0.21厘米的坑洞深度。这确认了路面包含偏差是结构性的问题，而非校准伪影。",
+      "authors": [
+        "Md Monjurul Ahsan Prodhan",
+        "Md Nour Hossain"
+      ],
+      "date": "2026-08-31",
+      "id": "2608.27633",
+      "tags": [
+        "感知",
+        "多传感器融合",
+        "深度/几何"
+      ],
+      "title": "Depth-Aware Pothole Detection Using YOLO and RT-DETR at the Edge",
+      "title_zh": "基于YOLO和RT-DETR的边缘深度感知坑洞检测",
+      "url": "/daily/2026-08-31/#paper-2608-27633"
+    },
+    {
+      "abstract": "Heuristic search underlies planning in autonomous systems ranging from warehouse logistics to robotic navigation, yet generic heuristics fail to exploit the structural constraints that govern constrained spatial domains, causing search performance to degrade catastrophically on harder instances. We study this problem through the two-column Flying Block Puzzle, a rigorously NP-complete spatial planning microworld whose bottleneck geometry mirrors clearance-to-size constraints encountered in multi-agent path finding, autonomous vehicle navigation, and block relocation systems. We introduce the Class-Based Heuristic A* (CBHA*) algorithm, which integrates a General Move Constraint to capture minimum displacement costs when vacant units are scarce, a formal kinematic taxonomy partitioning the state space into seven mutually exclusive classes with provably admissible heuristics based on vacancy ratio and goal-piece geometry, and a class-conditional tie-breaking mechanism that dynamically switches between depth-priority and vertical-distance ordering to overcome f-value plateaus. Over 146 benchmark instances, CBHA* achieves a 93.4% success rate against 64% for Depth-Prioritized A*, 39% for Standard A*, and 17% for BFS, while reducing node expansions by 87.98% relative to Standard A* and sustaining an average effective branching factor of approximately 3, demonstrating that class-triggered adaptive heuristics constitute a principled mechanism for efficient spatial planning that generalizes structurally to physical constraint systems.",
+      "abstract_zh": "启发式搜索是从仓库物流到机器人导航等自主系统规划的基础，但通用启发式方法未能利用约束空间领域中支配的结构性约束，导致在更难实例上的搜索性能急剧下降。我们通过双列飞行块拼图研究这一问题，该拼图是一个严格的 NP 完全空间规划微观世界，其瓶颈几何形状反映了在多智能体路径寻找、自动驾驶导航和块重定位系统中遇到的清除与尺寸约束。我们提出了基于类别的启发式 A* (CBHA*) 算法，该算法整合了一种通用移动约束，以捕捉在空闲单元稀缺时的最小位移成本，采用一种形式的运动学分类法将状态空间划分为七个相互独立的类别，并基于空闲比率和目标块几何形状提供可证明的可接受启发式，同时引入了一种类别条件的平局打破机制，动态切换深度优先和垂直距离排序，以克服 f 值平台。在 146 个基准实例中，CBHA* 的成功率达到了 93.4%，而深度优先 A* 为 64%，标准 A* 为 39%，广度优先搜索 (BFS) 为 17%，同时相较于标准 A* 减少了 87.98% 的节点扩展，并维持了大约 3 的平均有效分支因子，证明了基于类别触发的自适应启发式方法构成了一种高效空间规划的原则性机制，能够在结构上推广到物理约束系统。",
+      "authors": [
+        "Sanyar Ahmadi",
+        "Pedram Asadzadeh",
+        "Amanj Khorramian"
+      ],
+      "date": "2026-08-31",
+      "id": "2608.27476",
+      "tags": [
+        "深度/几何",
+        "预测/规划",
+        "地图/定位"
+      ],
+      "title": "Class-Based Heuristic Selection for Solving the Flying Block Puzzle",
+      "title_zh": "基于类别的启发式选择用于解决飞行块拼图",
+      "url": "/daily/2026-08-31/#paper-2608-27476"
+    },
+    {
       "abstract": "Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn local urban perception into reliable action in a complicated real-scale city. We propose UrbanGround, the first sandbox to make this question testable in a physically constrained replica of Hong Kong built from territory-wide 3D geospatial data. UrbanGround supports closed-loop interaction from a first-person view and provides an interactive map for navigation. Agents can directly enter the 3D city and explore from a first-person view. Our analysis follows the growth of the spatial problem through three research questions. We first test whether an agent can ground a local scene well enough to answer spatial questions after active observation. Then we ask whether that grounding supports navigation as destinations become farther away and less explicit. Finally, we examine whether the resulting behavior survives changes in route availability and pedestrian motion. Contemporary MLLM agents usually show useful atomic abilities in visual recognition and short-range spatial reasoning, while orientation and pedestrian-aware movement remain unreliable. Their central failure emerges over extended exploration, where local abilities do not compose into sustained goal-directed behavior and errors accumulate without effective correction. We hope UrbanGround will support broader study of how far current MLLM agents can explore reliably in complex, open-ended urban environments.",
       "abstract_zh": "多模态大型语言模型（MLLMs）能够解读街景，但城市代理的有效性取决于在代理开始移动后，这些地方证据是否仍然有用。本文探讨了当前的MLLM代理在复杂的真实规模城市中，将地方城市感知转化为可靠行动的能力。我们提出了UrbanGround，这是第一个沙盒，旨在通过基于全境3D地理空间数据构建的香港物理复制品，使这一问题可测试。UrbanGround支持从第一人称视角的闭环交互，并提供用于导航的互动地图。代理可以直接进入3D城市并从第一人称视角进行探索。我们的分析通过三个研究问题跟踪空间问题的增长。首先，我们测试代理是否能够在主动观察后，将地方场景扎根到足够的程度，以回答空间问题。然后，我们询问这种扎根是否支持导航，因为目的地变得越来越远且不那么明确。最后，我们检查在路线可用性和行人运动变化时，所产生的行为是否能够持续。现代MLLM代理通常在视觉识别和短距离空间推理方面表现出有用的原子能力，而方向感和考虑行人的移动仍然不可靠。它们的主要失败出现在扩展探索中，地方能力无法组合成持续的目标导向行为，错误在没有有效纠正的情况下累积。我们希望UrbanGround能够支持更广泛的研究，探讨当前的MLLM代理在复杂、开放的城市环境中能够可靠探索的范围。",
       "authors": [

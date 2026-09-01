@@ -1,0 +1,54 @@
+{
+  "abstract": "Simultaneously optimizing the trajectories of multiple agents is a challenging problem plagued by nonlinearity, nonconvexity, and the curse of dimensionality. A collection of interacting aerial vehicles or self-driving cars in an intersection are examples of complex multi-agent systems that remain difficult to solve without many simplifying assumptions. The presence of communication latency between agents further increases the difficulty. In this paper, we analyze Distributed Model-Based Diffusion: a sampling-based Model-Predictive Control method suitable for highly nonlinear, nonconvex, nonsmooth, multi-agent systems. We prove contraction and robustness to latency for multi-agent, nonconvex problems, showing applicability to real-world constraints. We test the algorithm on a circleswap task, a cooperative medium-fidelity driving task, and in an aerial combat scenario. Despite the addition of latency, our algorithm improves circleswap makespan by 31% and increases aerial combat win rate by 25% compared to centralized Model-Based Diffusion.",
+  "abstract_zh": "同时优化多个智能体的轨迹是一个具有挑战性的问题，受到非线性、非凸性和维度诅咒的困扰。一组相互作用的空中车辆或在交叉口的自动驾驶汽车是复杂多智能体系统的例子，这些系统在没有许多简化假设的情况下仍然难以解决。智能体之间的通信延迟进一步增加了难度。在本文中，我们分析了分布式基于模型的扩散：一种适用于高度非线性、非凸、非光滑多智能体系统的基于采样的模型预测控制方法。我们证明了在多智能体非凸问题中，收缩性和对延迟的鲁棒性，显示其适用于现实世界的约束条件。我们在一个圆形交换任务、一个合作中等保真度的驾驶任务以及一个空中战斗场景中测试了该算法。尽管增加了延迟，我们的算法在圆形交换的完成时间上提高了31%，并且在空中战斗的胜率上提高了25%，与集中式基于模型的扩散相比。",
+  "arxiv_id": "2608.27685",
+  "arxiv_url": "https://arxiv.org/abs/2608.27685v1",
+  "authors": [
+    "Seth Golembeski",
+    "Keith L. Gibson",
+    "Alexander Gross",
+    "Shreyas Kousik",
+    "Anirban Mazumdar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-31#paper-2608-27685",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-01T11:25:06.264838+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.27685v1",
+  "published_at": "2026-08-27T20:16:41Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "自动驾驶",
+      "driving",
+      "intersection",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-08-31"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.27685v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-31"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "协同/V2X"
+    ]
+  },
+  "title": "Distributed Model-Based Diffusion: Finite Horizon Contraction under Bounded Delay",
+  "title_zh": "分布式基于模型的扩散：有限时间范围内的收缩在有界延迟下",
+  "translation_url": "https://hjfy.top/arxiv/2608.27685"
+}
