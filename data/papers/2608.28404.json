@@ -1,0 +1,54 @@
+{
+  "abstract": "Video generation for autonomous driving cannot follow the web-scale route: driving data is expensive to collect, bound by privacy requirements, and cannot be scraped at will, so models must make the most of a fixed corpus. We present a systematic scaling-law study of video diffusion models trained from scratch on driving data: a family of models from 1M to 9B parameters, trained at different exposures on up to 5,500 hours of driving. Validation loss follows consistent power laws in both model size and training exposure, answering the questions that shape a training budget: whether compute is better spent on longer training or on a larger model, and whether more data is needed. Loss improves much faster with training exposure than with model size, making longer training the most effective way to improve a fixed model under limited compute. However, larger models continue to achieve lower asymptotic loss, so compute-optimal scaling still favors increasing model size when sufficient compute and data are available. Guided by these laws, we train a 9B-parameter model, to our knowledge the largest video diffusion model trained from scratch on driving data: it sets a new open-source state of the art for driving video generation, as measured on nuScenes. Our code and pretrained models are available at https://github.com/valeoai/VATIX. NATIX is separately releasing the underlying driving data in stages.",
+  "abstract_zh": "自主驾驶的视频生成无法遵循网络规模的路线：驾驶数据的收集成本高昂，受到隐私要求的限制，且无法随意抓取，因此模型必须充分利用固定的语料库。我们提出了一项系统的尺度法则研究，针对从头开始在驾驶数据上训练的视频扩散模型：一系列从1M到9B参数的模型，在多达5500小时的驾驶数据上以不同的曝光量进行训练。验证损失在模型规模和训练曝光上遵循一致的幂律，回答了影响训练预算的问题：计算资源是更适合用于更长的训练还是更大的模型，以及是否需要更多的数据。与模型规模相比，训练曝光带来的损失改善速度更快，使得在有限计算资源下，延长训练成为提升固定模型性能的最有效方式。然而，更大的模型仍然能够实现更低的渐近损失，因此在计算资源和数据充足的情况下，计算最优的扩展仍然倾向于增加模型规模。在这些法则的指导下，我们训练了一个9B参数的模型，至今为止这是在驾驶数据上从头开始训练的最大视频扩散模型：它在nuScenes上设定了驾驶视频生成的新开源状态的最佳表现。我们的代码和预训练模型可在https://github.com/valeoai/VATIX获取。NATIX将分阶段发布基础驾驶数据。",
+  "arxiv_id": "2608.28404",
+  "arxiv_url": "https://arxiv.org/abs/2608.28404v1",
+  "authors": [
+    "Victor Besnier",
+    "Anh-Quan Cao",
+    "Elias Ramzi",
+    "Spyros Gidaris",
+    "Tuan-Hung Vu",
+    "Andrei Bursuc",
+    "Eloi Zablocki",
+    "Matthieu Cord"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-31#paper-2608-28404",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-01T11:25:06.341396+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.28404v1",
+  "published_at": "2026-08-28T14:56:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-08-31"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.28404v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-31"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": []
+  },
+  "title": "How Far Can 5,500 Hours of Driving Take You? A Scaling Law Analysis of Video Diffusion Models",
+  "title_zh": "5500小时驾驶能带你多远？视频扩散模型的尺度法则分析",
+  "translation_url": "https://hjfy.top/arxiv/2608.28404"
+}

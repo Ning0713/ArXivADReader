@@ -1,0 +1,53 @@
+{
+  "abstract": "For cooperative perception in the internet of vehicles, this paper proposes a generative adversarial network-based semantic communication framework to address the efficiency and fidelity bottlenecks of traditional communication systems in visual data transmission under limited bandwidth and dynamic channel conditions. At the transmitter, the framework adopts a pyramid attention network to extract semantic label maps and introduces a semantic priority preservation mechanism. It assigns differentiated weights to distinct semantic categories based on driving safety, guiding bit allocation and loss function design. At the receiver, an image reconstruction module integrating a coarse to-fine multi-resolution generator and multi-scale discriminator is designed. Combined with the temporal consistency branch, spatial pyramid pooling and class-aware convolutional layers, it achieves high-fidelity reconstruction of high-quality images from corrupted semantic labels. The model is trained with combined adversarial, feature matching and perceptual losses, effectively improving semantic consistency and visual realism of generated images. Experimental results on the Cityscapes dataset show that the proposed method outperforms existing counterparts in both semantic segmentation accuracy and reconstructed image quality, and maintains stable reconstruction performance under AWGN and Rayleigh channels.",
+  "abstract_zh": "针对车联网中的协同感知，本文提出了一种基于生成对抗网络的语义通信框架，以解决传统通信系统在有限带宽和动态信道条件下视觉数据传输的效率和保真度瓶颈。在发射端，该框架采用金字塔注意力网络提取语义标签图，并引入语义优先级保留机制。它根据驾驶安全性为不同的语义类别分配差异化权重，从而指导比特分配和损失函数设计。在接收端，设计了一个图像重建模块，该模块集成了粗到细的多分辨率生成器和多尺度判别器。结合时间一致性分支、空间金字塔池化和类别感知卷积层，实现了从损坏的语义标签中高保真重建高质量图像。该模型通过结合对抗损失、特征匹配损失和感知损失进行训练，有效提高了生成图像的语义一致性和视觉真实感。在Cityscapes数据集上的实验结果表明，所提方法在语义分割精度和重建图像质量上均优于现有方法，并在AWGN和Rayleigh信道下保持稳定的重建性能。",
+  "arxiv_id": "2608.27989",
+  "arxiv_url": "https://arxiv.org/abs/2608.27989v1",
+  "authors": [
+    "Ruixing Ren",
+    "Shan Chen",
+    "Junhui Zhao",
+    "Xiaoke Sun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-08-31#paper-2608-27989",
+  "categories": [
+    "cs.CV",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-01T11:25:06.304748+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2608.27989v1",
+  "published_at": "2026-08-28T06:58:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes",
+      "driving",
+      "驾驶",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 34
+  },
+  "seen_dates": [
+    "2026-08-31"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2608.27989v1",
+    "axi": "https://paper.axi404.top/daily/2026-08-31"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "GAN-Based Semantic Communication for Image Transmission in IoV",
+  "title_zh": "基于GAN的车联网图像传输语义通信",
+  "translation_url": "https://hjfy.top/arxiv/2608.27989"
+}
