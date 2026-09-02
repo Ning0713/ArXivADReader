@@ -1,0 +1,49 @@
+{
+  "abstract": "Autonomous highway overtaking demands foresighted decision-making to handle complex interactions, stochastic traffic evolution, and temporal risk accumulation. However, standard safe reinforcement learning approaches typically rely on implicit value-based risk estimations rather than explicit dynamics modeling, thereby struggling to accurately capture complex risk propagation over multi-step horizons. This limitation frequently results in behaviors that are locally safe but induce substantial latent risks in the long term. To address this, a World Model-based Risk-aware Mixture-of-Experts (WM-RMoE) framework is proposed. First, a learned latent dynamics model facilitates parallel multi-step rollouts, elevating safety assessment from the action level to the trajectory level via cumulative risk evaluation. Second, to enhance robustness under varying interaction intensities, a hierarchical gating mechanism dynamically coordinates experts across long-horizon, short-horizon, and rule-based safety modules. Furthermore, a Gaussian Mixture Model is integrated to preserve multimodal maneuvering branches, thereby mitigating the issue of behavioral mode averaging. Experimental results demonstrate that WM-RMoE significantly outperforms representative baselines in terms of safety compliance, decision stability, and generalization capability. Furthermore, benefiting from the risk-aware formulation, the proposed framework uniquely exhibits the ability to generate foresighted and semantically distinct overtaking maneuvers across diverse traffic densities.",
+  "abstract_zh": "自主高速公路超车要求前瞻性的决策，以应对复杂的交互、随机的交通演变和时间风险的累积。然而，标准的安全强化学习方法通常依赖于隐式的基于价值的风险估计，而非显式的动态建模，从而难以准确捕捉多步视野下复杂的风险传播。这一局限性常常导致局部安全的行为，但在长期内引发显著的潜在风险。为此，提出了一种基于世界模型的风险感知专家混合框架（WM-RMoE）。首先，学习的潜在动态模型促进了并行的多步展开，将安全评估从动作层面提升到轨迹层面，通过累积风险评估实现。其次，为了增强在不同交互强度下的鲁棒性，层次化的门控机制动态协调长时间视野、短时间视野和基于规则的安全模块中的专家。此外，集成了高斯混合模型以保留多模态的机动分支，从而减轻行为模式平均化的问题。实验结果表明，WM-RMoE在安全合规性、决策稳定性和泛化能力方面显著优于代表性基线。此外，得益于风险感知的框架，所提出的方法独特地展现出在不同交通密度下生成前瞻性和语义上独特的超车机动的能力。",
+  "arxiv_id": "2609.00385",
+  "arxiv_url": "https://arxiv.org/abs/2609.00385",
+  "authors": [
+    "Liu, Yongzhi, Zhang, Sunan, Xu, Jinchang, Wang, Jiawei, Qiu, Yushu, Lv, Chen, Zhuang, Weichao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-00385",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.219213+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.00385",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "traffic",
+      "highway",
+      "交通",
+      "world model"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "安全/异常"
+    ]
+  },
+  "title": "Risk-Aware Decision-Making for Autonomous Overtaking: A World Model-Based Mixture-of-Experts Framework",
+  "title_zh": "基于世界模型的风险感知自主超车决策框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.00385"
+}

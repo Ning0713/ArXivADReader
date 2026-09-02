@@ -20,10 +20,10 @@ GitHub Actions: Update And Deploy Papers
 
 ```yaml
 schedule:
-  - cron: "0 0 * * 1-5"
+  - cron: "0 5 * * 1-5"
 ```
 
-GitHub Actions cron 使用 UTC，因此它会在工作日北京时间 08:00 自动运行。自动更新不依赖本地电脑、AutoClaw 或 QQ Bot 在线。
+GitHub Actions cron 使用 UTC，因此它会在工作日北京时间 13:00 自动运行。自动更新不依赖本地电脑、AutoClaw 或 QQ Bot 在线。
 
 不要再创建同一时间执行论文更新的 AutoClaw cron，否则可能重复触发工作流。旧任务可以在 AutoClaw 的计划任务页面删除，也可以使用 OpenClaw CLI：
 
@@ -35,7 +35,7 @@ openclaw cron rm <job-id>       # 永久删除任务定义
 
 不同 AutoClaw 安装方式可能需要指定 profile、Gateway URL 或凭据，具体以本机 `openclaw cron --help` 为准。不要手工编辑 `cron/jobs.json`，除非 Gateway 已停止并且已经备份文件。
 
-如果只想在更新结束后收到 QQ 状态通知，可以单独安排一个 08:30 左右的“状态”任务；它只应调用 `ops/autoclaw.ps1 status`，不能再次触发更新。
+如果只想在更新结束后收到 QQ 状态通知，可以单独安排一个 13:30 左右的“状态”任务；它只应调用 `ops/autoclaw.ps1 status`，不能再次触发更新。
 
 ## 首次准备
 
@@ -142,13 +142,13 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<repo-root>\ops\autocla
 
 `预览` 不提交数据，也不会创建 GitHub Pages 部署记录，但仍会访问 Axi、arXiv 和已配置的 LLM，因此可能消耗 API 配额。脚本输出 `dispatched` 只表示 GitHub 已接受任务，不表示工作流已经完成；随后发送“状态”查看结果。
 
-正式的定时、更新或补跑工作流会在同一次运行中生成并推送 `data/`，然后直接上传已构建的 Pages 产物并部署。这是因为使用 GitHub Actions 内置 `GITHUB_TOKEN` 推送的数据提交不会再次触发 `push` 工作流。预览和无数据变化的运行不会创建 Pages 部署记录。
+正式的定时、更新或补跑工作流会在同一次运行中生成并推送 `data/`，然后直接上传已构建的 Pages 产物并部署。这是因为使用 GitHub Actions 内置 `GITHUB_TOKEN` 推送的数据提交不会再次触发 `push` 工作流。预览或更新失败不会部署；即使当天数据已经存在，成功的 `unchanged` 运行也会重新构建并部署，避免因状态检测误判而跳过 `deploy`。
 
 ## 常用操作流程
 
 ### 日常自动更新
 
-无需向 QQ 发送命令。GitHub Actions 会在工作日北京时间 08:00 自动运行。08:30 以后发送：
+无需向 QQ 发送命令。GitHub Actions 会在工作日北京时间 13:00 自动运行。13:30 以后发送：
 
 ```text
 状态

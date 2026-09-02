@@ -1,0 +1,53 @@
+{
+  "abstract": "Monocular depth estimation has long stood as a fundamental challenge in computer vision, enabling a wide range of applications including 3D reconstruction, robotics, autonomous driving, and augmented reality. This survey traces the field's evolution from early learning-based methods to the emergence of transformative foundation models. We begin by framing the problem, distinguishing between relative and metric depth estimation, and highlighting the key challenges that have shaped a decade of research. We then present common problem formulations and introduce the most widely used datasets, covering indoor, outdoor, and synthetic data. Following this, we review major advances prior to the foundation model era, distilling core insights from influential methods that contributed to improvements in accuracy, efficiency, and robustness. The survey then turns to the recent surge of foundation-model-based approaches, categorizing them into discriminative and generative paradigms and emphasizing the critical roles of large-scale pretraining (e.g., DINOv3) and synthetic data. We compare representative models using both quantitative benchmarks and qualitative examples, and discuss natural extensions to video-based depth estimation. Further, to illustrate real-world impact, we highlight the integration of depth estimation into applications such as visual SLAM, content generation, and robot perception. Finally, we outline open challenges and promising research directions as the field advances further into the era of foundation models.",
+  "abstract_zh": "单目深度估计长期以来一直是计算机视觉中的一个基本挑战，能够支持包括三维重建、机器人技术、自动驾驶和增强现实等广泛应用。本文回顾了该领域从早期基于学习的方法到变革性基础模型出现的演变过程。我们首先框定了问题，区分了相对深度估计和度量深度估计，并强调了塑造十年研究的关键挑战。接着，我们介绍了常见的问题表述，并列出了最广泛使用的数据集，涵盖室内、室外和合成数据。随后，我们回顾了基础模型时代之前的主要进展，提炼出对提高准确性、效率和鲁棒性有重要贡献的影响方法的核心见解。调查接着转向最近涌现的基于基础模型的方法，将其分为判别性和生成性范式，并强调大规模预训练（例如，DINOv3）和合成数据的关键作用。我们使用定量基准和定性示例比较了代表性模型，并讨论了基于视频的深度估计的自然扩展。此外，为了说明其在现实世界中的影响，我们强调了深度估计在视觉SLAM、内容生成和机器人感知等应用中的集成。最后，我们概述了随着该领域进一步进入基础模型时代而面临的开放挑战和有前景的研究方向。",
+  "arxiv_id": "2609.01172",
+  "arxiv_url": "https://arxiv.org/abs/2609.01172",
+  "authors": [
+    "Liu, Muxin, Lyu, Xiaoyang, Sun, Yang-Tian, Huang, Yi-Hua, Yang, Ziyi, Dai, Peng, Qi, Xiaojuan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-01172",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.313903+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.01172",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "monocular depth",
+      "depth estimation",
+      "深度估计",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "Monocular Depth Estimation from a Single Image: Progress and Opportunities",
+  "title_zh": "基于单幅图像的单目深度估计：进展与机遇",
+  "translation_url": "https://hjfy.top/arxiv/2609.01172"
+}

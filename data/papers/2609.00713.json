@@ -1,0 +1,45 @@
+{
+  "abstract": "Estimation of the absolute pose of an object is an essential task for various robotic applications. Recently, incorporating gravity direction as prior information has emerged as a popular approach to simplify absolute pose estimation. However, developing a robust and efficient algorithm to solve this challenging problem remains a difficult question due to large amounts of mismatches. In addition, obtaining an accurate pose solution from selected inlier correspondences with gravity prior is still a research gap. In this paper, we propose a novel transformation strategy that exploits geometric relations derived from the gravity prior. Through transformation decoupling, the original 6 degrees of freedom (DoF) absolute pose estimation problem is simplified into a 4-DoFs problem: 1-DoF for the rotation angle and 3-DoFs for translation, significantly improving the efficiency. For the 1-DoF rotation angle, we apply a one-dimensional global voting algorithm for optimal estimation. Once the optimal rotation is obtained, the mismatched correspondences are preliminarily filtered, and translation estimation, a linear problem, can be easily solved. Furthermore, to obtain accurate pose results, we introduce a novel pose refinement algorithm to enhance the accuracy of both rotation and translation. Extensive experiments on synthetic data and three publicly available real-world datasets (TUM RGB-D, ETH3D, and RobotCar) demonstrate that the proposed method achieves stronger performance compared to existing state-of-the-art (SOTA) approaches. To further validate our method, we integrated it into ORB-SLAM2. The results on the KITTI dataset show it effectively reduces drift and improves trajectory alignment during relocalization. The source code will be released upon acceptance.",
+  "abstract_zh": "物体绝对姿态的估计是各种机器人应用中的一项重要任务。最近，利用重力方向作为先验信息已成为简化绝对姿态估计的热门方法。然而，由于大量的匹配错误，开发一种鲁棒且高效的算法来解决这一挑战性问题仍然是一个难题。此外，从选定的内点对应关系中获得准确的姿态解仍然是一个研究空白。本文提出了一种新颖的变换策略，利用从重力先验推导的几何关系。通过变换解耦，原始的6自由度（DoF）绝对姿态估计问题被简化为一个4自由度的问题：1自由度用于旋转角度，3自由度用于平移，显著提高了效率。对于1自由度的旋转角度，我们应用了一种一维全局投票算法进行最优估计。一旦获得最优旋转，初步过滤掉不匹配的对应关系，平移估计作为一个线性问题可以轻松解决。此外，为了获得准确的姿态结果，我们引入了一种新颖的姿态优化算法，以提高旋转和平移的准确性。在合成数据和三个公开可用的真实世界数据集（TUM RGB-D、ETH3D和RobotCar）上的大量实验表明，所提出的方法相比现有的最先进（SOTA）方法具有更强的性能。为了进一步验证我们的方法，我们将其集成到ORB-SLAM2中。在KITTI数据集上的结果表明，它有效减少了漂移并改善了重定位过程中的轨迹对齐。源代码将在接受后发布。",
+  "arxiv_id": "2609.00713",
+  "arxiv_url": "https://arxiv.org/abs/2609.00713",
+  "authors": [
+    "Cao, Hu, Yang, Qianyi, Li, Xinyi, Liu, Jiong, Liu, Yinlong, Knoll, Alois"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-00713",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.279170+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.00713",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "robotic"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "Efficient and Robust Absolute Pose Estimation via Gravity-Prior-Driven Transformation Decoupling and Pose Refinement",
+  "title_zh": "通过重力先验驱动的变换解耦和姿态优化实现高效且鲁棒的绝对姿态估计",
+  "translation_url": "https://hjfy.top/arxiv/2609.00713"
+}

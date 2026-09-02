@@ -1,0 +1,57 @@
+{
+  "abstract": "We present Qwen-Drive-1.0, an initial step towards a vision-language foundation model for autonomous driving. Qwen-Drive-1.0 retains the architecture of the pretrained vision-language model (VLM) and integrates 3D perception, visual question answering, and motion planning within a unified framework. An external bird's-eye-view (BEV) perception head jointly performs 3D object detection, semantic occupancy prediction, and BEV map segmentation. It serves as a probe of the 3D information accessible from the shared representations and provides an explicit, inspectable interface to 3D scene structure. A Planning Expert conditions on shared VLM representations to generate future ego trajectories. A staged training recipe combines driving supervision with general-purpose vision-language data to acquire driving-specific competence while helping preserve broad visual understanding and instruction-following capabilities. Experiments demonstrate strong 3D perception and driving scene understanding while largely preserving general vision-language capability. Comprehensive evaluations across open-loop, pseudo-closed-loop, and closed-loop settings further show highly competitive motion-planning performance.",
+  "abstract_zh": "我们提出了Qwen-Drive-1.0，这是迈向自动驾驶视觉-语言基础模型的初步步骤。Qwen-Drive-1.0保留了预训练视觉-语言模型（VLM）的架构，并在统一框架内整合了3D感知、视觉问答和运动规划。一个外部鸟瞰视图（BEV）感知头共同执行3D物体检测、语义占用预测和BEV地图分割。它作为从共享表示中获取的3D信息的探针，提供了一个明确的、可检查的3D场景结构接口。规划专家基于共享的VLM表示生成未来的自我轨迹。分阶段的训练方案结合了驾驶监督与通用视觉-语言数据，以获取特定于驾驶的能力，同时帮助保持广泛的视觉理解和遵循指令的能力。实验表明，强大的3D感知和驾驶场景理解能力得以实现，同时在很大程度上保留了通用视觉-语言能力。在开放环路、伪闭环和闭环设置下的全面评估进一步显示出高度竞争的运动规划性能。",
+  "arxiv_id": "2609.00111",
+  "arxiv_url": "https://arxiv.org/abs/2609.00111",
+  "authors": [
+    "Zhou, Xin, Zhao, Zongchuang, Yang, Zhibo, Li, Mingsheng, Zhong, Humen, Bai, Shuai, Chu, Du, Chen, Ruizhe, Li, Zhaohai, Tang, Jun, Wang, Qiuyue, Yang, Mingkun, Zhang, Jiazhao, Liu, Dayiheng, Liang, Dingkang, Bai, Xiang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-00111",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.247266+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.00111",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "occupancy",
+      "3d object detection",
+      "motion planning",
+      "运动规划",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "预测/规划"
+    ]
+  },
+  "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+  "title_zh": "Qwen-Drive-1.0：迈向自动驾驶视觉-语言基础模型的初步步骤",
+  "translation_url": "https://hjfy.top/arxiv/2609.00111"
+}

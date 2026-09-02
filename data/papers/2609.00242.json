@@ -1,0 +1,50 @@
+{
+  "abstract": "Long-tail autonomous driving failures are often framed as rare-object recognition errors. We argue that this view is incomplete: the decision-critical question is not only whether a model recognizes an unusual object, but whether it infers how that object changes the ego vehicle's feasible high-level actions. We formalize this problem as decision-level driving affordance prediction, where a model maps a front-view image, ego-motion history, and navigation command to a structured longitudinal--lateral meta-action. To evaluate this capability, we introduce CoLT-Drive, a 3,536-sample counterfactual long-tail benchmark that inserts rare objects into otherwise fixed driving scenes and measures whether models predict acceptable action pairs. To improve deployable small VLMs, we propose KPA, a knowledge-preserving adaptation framework that combines structured perception-to-decision prompting, SLERP-based expert merging, and RegMoE, a regime-aware LoRA mixture-of-experts module. KPA preserves the pretrained model's open-world knowledge while allocating lightweight adaptation capacity to different driving decision regimes. Experiments on an in-domain driving split and CoLT-Drive show that KPA achieves 60.8\\% pair accuracy on CoLT-Drive, outperforming the pretrained Qwen3-VL-2B baseline (50.3\\%) and LoRA SFT (32.4\\%) while maintaining competitive in-domain accuracy. Our benchmark and code are available at https://huggingface.co/datasets/tangzx2024/CoLT-Drive and https://github.com/tangzhengxu/CoLT-Drive.",
+  "abstract_zh": "长尾自主驾驶失败通常被视为稀有物体识别错误。我们认为这种观点是不完整的：决策关键问题不仅在于模型是否识别出不寻常的物体，还在于它是否推断出该物体如何改变自我车辆的可行高层次动作。我们将这个问题形式化为决策层面的驾驶能力预测，其中模型将前视图像、自我运动历史和导航命令映射到结构化的纵向-横向元动作。为了评估这一能力，我们引入了CoLT-Drive，一个包含3,536个样本的反事实长尾基准，向固定驾驶场景中插入稀有物体，并测量模型是否预测出可接受的动作对。为了改善可部署的小型VLM（视觉语言模型），我们提出了KPA（知识保留适应框架），该框架结合了结构化感知到决策的提示、基于SLERP的专家合并和RegMoE（基于模式的LoRA专家混合模块）。KPA在分配轻量级适应能力到不同驾驶决策模式的同时，保留了预训练模型的开放世界知识。在一个领域内的驾驶分割和CoLT-Drive上的实验表明，KPA在CoLT-Drive上达到了60.8%的配对准确率，超越了预训练的Qwen3-VL-2B基线（50.3%）和LoRA SFT（32.4%），同时保持了竞争性的领域内准确率。我们的基准和代码可在https://huggingface.co/datasets/tangzx2024/CoLT-Drive和https://github.com/tangzhengxu/CoLT-Drive获取。",
+  "arxiv_id": "2609.00242",
+  "arxiv_url": "https://arxiv.org/abs/2609.00242",
+  "authors": [
+    "Tang, Zhengxu, Cui, Guofeng, Gong, Ziyu, Zhang, Xiaozhou, Deng, Ruifeng, Qi, Chengzhi, Chen, Ke, Patil, Sachin, Xiao, Tianjun, Liu, Langechuan, Wang, Pichao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-00242",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.252266+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.00242",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego vehicle",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "VLM/VLA"
+    ]
+  },
+  "title": "CoLT-Drive: Counterfactual Long-Tail Benchmarking and Knowledge-Preserving Adaptation for Driving Affordance Prediction",
+  "title_zh": "CoLT-Drive：反事实长尾基准测试与知识保留适应用于驾驶能力预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.00242"
+}

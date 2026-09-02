@@ -1,0 +1,49 @@
+{
+  "abstract": "Unmanned Aerial Vehicles (UAVs) have emerged as a promising platform for firefighting operations due to their flexibility, low operational cost, and ability to acquire high-resolution imagery in locations that may be difficult or dangerous to access using conventional methods. Recent advances in deep learning have significantly improved the capabilities of UAV-based wildfire monitoring systems. The present work investigates RGB-infrared fusion for binary wildfire segmentation on the FLAME3 dataset. In this Study, RGB and Infrared baselines are compared with three representative fusion strategies across three segmentation architectures, including U-Net, DeepLabV3+, and SegFormer. The key motivation of this work is to analyze the contribution of each modality, evaluate the impact of fusion timing, and examine how different network architectures exploit multimodal information for UAV wildfire delineation. The findings indicate that thermal information plays a dominant role in UAV segmentation and that feature-level multimodal fusion combined with transformer-based architectures offers the most promising direction for future research.",
+  "abstract_zh": "无人驾驶飞行器（UAV）因其灵活性、低运营成本以及能够在传统方法难以或危险进入的地点获取高分辨率图像，已成为消防作业的有前景的平台。近年来，深度学习的进步显著提升了基于UAV的野火监测系统的能力。本研究探讨了在FLAME3数据集上进行二元野火分割的RGB-红外融合。在本研究中，RGB和红外基线与三种代表性的融合策略在三种分割架构（包括U-Net、DeepLabV3+和SegFormer）中进行了比较。本研究的主要动机是分析每种模态的贡献，评估融合时机的影响，并考察不同网络架构如何利用多模态信息进行UAV野火划分。研究结果表明，热信息在UAV分割中起主导作用，而特征级多模态融合结合基于变换器的架构为未来研究提供了最有前景的方向。",
+  "arxiv_id": "2609.01390",
+  "arxiv_url": "https://arxiv.org/abs/2609.01390",
+  "authors": [
+    "Kovaleski, Matheus F., Garrote, Luís, Premebida, Cristiano, Mendes, Jérôme, Paulo, João Ruivo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-01390",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.325511+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.01390",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "无人驾驶",
+      "驾驶",
+      "multimodal fusion",
+      "uav",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 37
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "Multimodal RGB-Infrared Combination for UAV-Based Wildfire Segmentation: A Comparative Study on FLAME3",
+  "title_zh": "基于无人机的多模态RGB-红外组合用于野火分割：FLAME3上的比较研究",
+  "translation_url": "https://hjfy.top/arxiv/2609.01390"
+}

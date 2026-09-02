@@ -1,0 +1,49 @@
+{
+  "abstract": "Intelligent vehicles increasingly support adaptive applications beyond driving themselves, ranging from context-aware ADAS and automated driving to in-cabin monitoring and fleet management, all under tight requirements on accuracy, latency, cost, and reliability. Meeting these requirements is challenging because vehicles operate in complex, uncertain, and rapidly changing environments while running on resource-constrained computing platforms. This paper argues that context-situational factors that give meaning to sensor signals and constrain decisions-should be treated as a first-class principle for next-generation vehicle systems, and operationalized as a unified, shared state for learning, risk assessment, and closed-loop control across the software stack. We systematically review state-of-the- art (SOTA) context-aware methods spanning (i) environment understanding, (ii) planning and control, (iii) safety and security, and (iv) connected vehicles. Based on a trend analysis of context-aware design, we identify four key technical challenges in building a general contextual engine for future intelligent vehicles: multi-modal context fusion, temporal context modeling, handling rare events, and collaborative context sharing. We hope this survey will motivate the development of robust and efficient context-aware vehicle applications.",
+  "abstract_zh": "智能车辆越来越多地支持超越自我驾驶的自适应应用，包括情境感知的高级驾驶辅助系统（ADAS）、自动驾驶、车内监控和车队管理，所有这些都在对准确性、延迟、成本和可靠性有严格要求的情况下进行。满足这些要求具有挑战性，因为车辆在复杂、不确定和快速变化的环境中运行，同时依赖于资源受限的计算平台。本文认为，赋予传感器信号意义并限制决策的情境因素应作为下一代车辆系统的首要原则，并在软件堆栈中作为统一的共享状态进行操作，以便于学习、风险评估和闭环控制。我们系统回顾了涵盖（i）环境理解、（ii）规划与控制、（iii）安全与保障、（iv）联网车辆的最新情境感知方法。基于对情境感知设计的趋势分析，我们确定了构建未来智能车辆通用情境引擎的四个关键技术挑战：多模态情境融合、时间情境建模、处理稀有事件和协作情境共享。我们希望这项调查能够激励开发稳健且高效的情境感知车辆应用。",
+  "arxiv_id": "2609.00682",
+  "arxiv_url": "https://arxiv.org/abs/2609.00682",
+  "authors": [
+    "Liu, Liangkai, Shi, Shuyao, Wang, Mingke, Curran, Noah T., Li, Chuan, Bai, Fan, Shin, Kang G."
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-00682",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.227264+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.00682",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "Context-Aware Intelligent Vehicles",
+  "title_zh": "基于情境感知的智能车辆",
+  "translation_url": "https://hjfy.top/arxiv/2609.00682"
+}

@@ -1,0 +1,44 @@
+{
+  "abstract": "In camera-controlled video generation, geometry-aware positional encodings condition tokens on camera extrinsics and per-token viewing rays. Existing schemes, however, have a scale-dependent failure mode on real-world metric camera trajectories: homogeneous projective encodings cause attention logits and feature norms to grow unbounded with physical translation baselines. We propose MeRoPE (Metric Rotary Position Embedding), a norm-preserving relative camera encoding for attention. MeRoPE encodes relative orientations between calibrated viewing rays with orthogonal rotation blocks, maps raw metric displacements into multi-frequency rotary phases, and adds a disparity-anchored correspondence prior along the epipolar arc. This design strictly preserves feature norms, bounds pre-softmax attention logits regardless of the physical translation scale, and maintains exact invariance to global rigid coordinate changes. Across nuScenes and PanShot, which cover large-baseline trajectories and diverse camera optics, respectively, MeRoPE achieves stronger camera control than prior encodings, with the best consistency between generated camera motion and conditioning poses in both rotation and translation. Code will be made publicly available.",
+  "abstract_zh": "在摄像机控制的视频生成中，几何感知的位置编码将令牌条件化于摄像机外参和每个令牌的视线。然而，现有方案在真实世界的度量摄像机轨迹上存在依赖于尺度的失效模式：均匀的投影编码导致注意力 logits 和特征范数随着物理平移基线的增长而无界增长。我们提出了 MeRoPE（度量旋转位置嵌入），这是一种保持范数的相对摄像机编码，用于注意力机制。MeRoPE 使用正交旋转块编码经过校准的视线之间的相对方向，将原始度量位移映射到多频率旋转相位，并沿着极线弧添加一个基于视差的对应先验。该设计严格保持特征范数，无论物理平移尺度如何，都限制了预软最大注意力 logits，并保持对全局刚性坐标变化的精确不变性。在 nuScenes 和 PanShot 数据集中，分别涵盖了大基线轨迹和多样化的摄像机光学，MeRoPE 实现了比先前编码更强的摄像机控制，在旋转和位移方面生成的摄像机运动与条件姿态之间具有最佳一致性。代码将公开发布。",
+  "arxiv_id": "2609.01252",
+  "arxiv_url": "https://arxiv.org/abs/2609.01252",
+  "authors": [
+    "Qiao, Zhijian, Wang, Xinjiang, Chen, Jiajie, Huang, Haoming, Li, Meng, Chou, Chih-Chung, Wang, Jing, Shen, Shaojie"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-01252",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.317080+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.01252",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "MeRoPE: Metric Rotary Position Embedding for Camera-Controlled Video Generation",
+  "title_zh": "MeRoPE：用于摄像机控制视频生成的度量旋转位置嵌入",
+  "translation_url": "https://hjfy.top/arxiv/2609.01252"
+}

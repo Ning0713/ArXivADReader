@@ -1,0 +1,50 @@
+{
+  "abstract": "Extracting scenarios from unlabelled real-world sensor data streams is a critical but challenging task in the development process of automated driving systems (ADS). Automatically sifting through large datasets to spatially and temporally locate critical scenarios can enable scenario-based coverage analysis of ADS datasets. In this paper, we present a method for extracting scenarios from egocentric datasets using scene graphs and Linear Temporal Logic (LTL). We first process egocentric sensor data and HD maps to generate a sequence of scene graphs representing a driving scenario. Next, we use LTL to formally specify driving scenarios of interest, then extract all instances of the scenarios from the dataset using an off-the-shelf model checker, which evaluates the LTL formula against the sequence of scene graphs. Our approach can be used on both simulated and real world datasets. We evaluate the method on the training and validation datasets from Argoverse 2 consisting of 850 15-second real-world driving logs, and several videos of dashcam footage. We demonstrate the effectiveness of our approach for extracting and querying scenarios by evaluating against a rule-based benchmark based on track annotations and HD maps.",
+  "abstract_zh": "从未标记的真实世界传感器数据流中提取场景是自动驾驶系统（ADS）开发过程中的一项关键但具有挑战性的任务。自动筛选大型数据集以空间和时间上定位关键场景，可以实现基于场景的ADS数据集覆盖分析。本文提出了一种使用场景图和线性时序逻辑（LTL）从自我中心数据集中提取场景的方法。我们首先处理自我中心传感器数据和高清地图，以生成表示驾驶场景的场景图序列。接下来，我们使用LTL正式指定感兴趣的驾驶场景，然后利用现成的模型检查器从数据集中提取所有场景实例，该检查器根据场景图序列评估LTL公式。我们的方法可以应用于模拟和真实世界数据集。我们在包含850个15秒真实驾驶日志和若干行车记录仪视频的Argoverse 2训练和验证数据集上评估该方法。通过与基于轨迹注释和高清地图的规则基准进行评估，我们展示了我们的方法在提取和查询场景方面的有效性。",
+  "arxiv_id": "2609.00333",
+  "arxiv_url": "https://arxiv.org/abs/2609.00333",
+  "authors": [
+    "Ramdhan, Stefan, Dagenais, Kyanna, Pantelic, Vera, Bandur, Victor, Lawford, Mark"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-00333",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.218211+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.00333",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "argoverse",
+      "driving",
+      "automotive",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "仿真/数据",
+      "预测/规划"
+    ]
+  },
+  "title": "Scene Graph-based Driving Scenario Extraction for Automotive Egocentric Datasets",
+  "title_zh": "基于场景图的汽车自我中心数据集驾驶场景提取",
+  "translation_url": "https://hjfy.top/arxiv/2609.00333"
+}

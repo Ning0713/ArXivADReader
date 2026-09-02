@@ -1,0 +1,47 @@
+{
+  "abstract": "Early recognition of lane-change intention is essential for proactive decision-making in autonomous driving and advanced driver assistance systems. This paper proposes a Dual Neural-Calibrated Interacting Multiple Model (DNC-IMM) that improves adaptability to driving context while preserving the probabilistic structure and interpretability of a conventional IMM. The proposed method encodes driving-context information, including target-vehicle motion, gaps to surrounding vehicles, and relative velocities, with a neural network that calibrates both the transition-probability matrix and measurement likelihoods. The final intention is determined from the calibrated IMM mode posterior rather than from a separate direct classifier. Experiments on the highD dataset demonstrate that the proposed method reliably recognizes lane-change intentions before lane crossing and provides particularly strong performance at the earlier 2-3 s prediction horizons.",
+  "abstract_zh": "早期识别变道意图对于自主驾驶和高级驾驶辅助系统中的主动决策至关重要。本文提出了一种双神经校准交互多模型（DNC-IMM），该模型在保持传统交互多模型（IMM）概率结构和可解释性的同时，提高了对驾驶上下文的适应性。所提出的方法通过神经网络编码驾驶上下文信息，包括目标车辆运动、与周围车辆的间隙和相对速度，并校准转移概率矩阵和测量似然性。最终的意图是从校准后的IMM模式后验中确定，而不是通过单独的直接分类器。对highD数据集的实验表明，所提方法能够可靠地在变道前识别变道意图，并在早期的2-3秒预测范围内表现出特别强的性能。",
+  "arxiv_id": "2609.01120",
+  "arxiv_url": "https://arxiv.org/abs/2609.01120",
+  "authors": [
+    "Byun, Woong-Chan, Kong, Seung-Hyun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-01120",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.236484+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.01120",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "lane",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 58
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": []
+  },
+  "title": "DNC-IMM: Early Lane-Change Intention Recognition via Neural Calibration Based on Driving Context Information",
+  "title_zh": "DNC-IMM：基于驾驶上下文信息的早期变道意图识别的神经校准方法",
+  "translation_url": "https://hjfy.top/arxiv/2609.01120"
+}

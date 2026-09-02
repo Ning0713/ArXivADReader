@@ -1,0 +1,49 @@
+{
+  "abstract": "Public trust in Autonomous Vehicles (AVs) may depend not only on technical success but also on the fairness of their decision making. While a recent trend in AV research involves using general purpose \"common sense\" models to guide AV decision making, the degree to which these inherit human biases in driving is still understudied. Given that psychology studies have shown human driver biases exist, such as lower pedestrian-yielding rates to Black pedestrians in the US, we argue that analyses of model bias should also be part of AV evaluation. Concretely, in this paper we propose two new bias testing methodologies for Large Language Models (LLMs) and Visual-Language Models (VLMs)-\"All Else Being Equal\" tests and \"Self-Consistency\" tests-in order to assess bias in pedestrian-yielding decisions. Our findings show that both LLMs and VLMs make yielding decisions which are influenced by pedestrian gender, ethnicity, religion, disability, age, skin tone and socio-economic status. While the type and degree of bias is different from model to model, we highlight common patterns-and raise questions about the \"common sense\" model paradigm, particularly the need to either revise the paradigm or address issues of downstream bias.",
+  "abstract_zh": "公众对自主车辆（AVs）的信任不仅可能依赖于技术成功，还可能取决于其决策的公平性。尽管近期自主车辆研究的一个趋势是使用通用的“常识”模型来指导自主车辆的决策，但这些模型在驾驶中继承人类偏见的程度仍然研究不足。心理学研究表明，人类驾驶者存在偏见，例如在美国，黑人行人的让行率较低，因此我们认为模型偏见的分析也应成为自主车辆评估的一部分。具体而言，本文提出了两种针对大型语言模型（LLMs）和视觉语言模型（VLMs）的新偏见测试方法——“其他条件相同”测试和“自我一致性”测试，以评估行人让行决策中的偏见。我们的研究结果表明，LLMs和VLMs在让行决策中受到行人性别、种族、宗教、残疾、年龄、肤色和社会经济地位的影响。虽然不同模型之间偏见的类型和程度各不相同，但我们强调了共同模式，并提出了关于“常识”模型范式的问题，特别是需要修订该范式或解决下游偏见问题。",
+  "arxiv_id": "2609.00192",
+  "arxiv_url": "https://arxiv.org/abs/2609.00192",
+  "authors": [
+    "Yoldas, Irem, Brandão, Martim, Zhang, Jie, Rodrigues, Odinaldo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-00192",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.352300+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.00192",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 58
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "LLM-Driven Autonomous Vehicles Inherit Human Driver Biases in Pedestrian Yielding: Results and Implications From A New Benchmark",
+  "title_zh": "基于大型语言模型的自主车辆在行人让行中继承人类驾驶者偏见：新基准的结果与启示",
+  "translation_url": "https://hjfy.top/arxiv/2609.00192"
+}

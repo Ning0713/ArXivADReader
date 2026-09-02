@@ -66,7 +66,7 @@ python -m adpaper migrate --legacy-root "C:\path\to\legacy-workspace"
 3. 等待 HTTPS 证书签发。
 4. 在 Actions 中手动运行 `Update And Deploy Papers` 验证一次。
 
-工作流默认在工作日北京时间 08:00（UTC 00:00）运行。启用 AI 时，将真实 API Key 配置为 GitHub Actions Repository Secret，具体步骤见 [LLM 配置与密钥安全](docs/llm-configuration.md)。
+工作流默认在工作日北京时间 13:00（UTC 05:00）运行。启用 AI 时，将真实 API Key 配置为 GitHub Actions Repository Secret，具体步骤见 [LLM 配置与密钥安全](docs/llm-configuration.md)。
 
 ## AutoClaw/QQ
 
@@ -80,7 +80,7 @@ AutoClaw 只应调用仓库里的 `ops/autoclaw.ps1`，不直接修改数据或�
 帮助
 ```
 
-GitHub Actions 已在工作日北京时间 08:00 自动更新，不需要重复创建 AutoClaw 论文 cron。AutoClaw 只用于人工远程更新、补跑、无写入预览和状态查询。首次配置、QQ 白名单、操作流程、取消 cron 和故障排查见 [AutoClaw 与 QQ 远程操作](docs/autoclaw.md)。
+GitHub Actions 已在工作日北京时间 13:00 自动更新，不需要重复创建 AutoClaw 论文 cron。AutoClaw 只用于人工远程更新、补跑、无写入预览和状态查询。首次配置、QQ 白名单、操作流程、取消 cron 和故障排查见 [AutoClaw 与 QQ 远程操作](docs/autoclaw.md)。
 
 ## 数据来源与许可
 

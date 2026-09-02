@@ -1,0 +1,48 @@
+{
+  "abstract": "Obtaining labeled data for semantic segmentation in applied settings (e.g., autonomous driving, industrial waste sorting) is expensive and often infeasible at scale. We present a cross-modal pseudo-labeling pipeline that enables unsupervised domain adaptation without any target-domain annotations. The pipeline is built on two core foundation models: SAM generates class-agnostic region proposals, and EVA-CLIP assigns semantic labels based on region-text similarity, with confidence filtering ensuring that only reliable pseudo-labels are used for self-training a segmentation model. As an optional extension, BLIP provides language-grounded verification for ambiguous regions, thereby improving pseudo-label quality without altering the overall pipeline. Evaluated on two domain shifts, synthetic-to-real autonomous driving and, with a primary focus, lab-to-factory industrial waste sorting, the pipeline consistently improves over source-only baselines. Our results demonstrate that pseudo-label quality, not quantity, is a decisive factor in self-training under domain shift, and that cross-modal language grounding offers a practical path to reliable automatic annotation in deployment-critical applications.",
+  "abstract_zh": "在应用场景中（例如，自动驾驶、工业废物分类）获取语义分割的标注数据既昂贵又往往难以大规模实现。我们提出了一种跨模态伪标签生成管道，使得在没有任何目标领域注释的情况下实现无监督领域适应。该管道基于两个核心基础模型构建：SAM生成与类别无关的区域提议，EVA-CLIP根据区域与文本的相似性分配语义标签，并通过置信度过滤确保仅使用可靠的伪标签来进行分割模型的自我训练。作为可选扩展，BLIP提供了对模糊区域的语言基础验证，从而提高伪标签的质量而不改变整体管道。我们在两个领域迁移上进行了评估，分别是合成到真实的自动驾驶，以及主要关注的实验室到工厂的工业废物分类，该管道在源域基线之上始终表现出改进。我们的结果表明，在领域迁移下，伪标签的质量而非数量是自我训练的决定性因素，而跨模态语言基础提供了一条在关键应用中实现可靠自动注释的实用路径。",
+  "arxiv_id": "2609.00898",
+  "arxiv_url": "https://arxiv.org/abs/2609.00898",
+  "authors": [
+    "Schlegel, Udo, Shubhangi, Dax, Gabriel, Kaminwar, Sai Rahul, Karl, Florian, Seidl, Thomas"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-02#paper-2609-00898",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-02T09:53:36.292804+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.00898",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-02"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Vision-Language-Guided Pseudo-Labels for Unsupervised Domain Adaptation in Semantic Segmentation for Waste Sorting",
+  "title_zh": "基于视觉-语言引导的伪标签在废物分类语义分割中的无监督领域适应",
+  "translation_url": "https://hjfy.top/arxiv/2609.00898"
+}

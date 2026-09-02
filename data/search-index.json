@@ -1,6 +1,238 @@
 {
-  "generated_at": "2026-09-01T10:33:18.566738+00:00",
+  "generated_at": "2026-09-02T09:53:50.461613+00:00",
   "items": [
+    {
+      "abstract": "Unmanned Aerial Vehicles (UAVs) have emerged as a promising platform for firefighting operations due to their flexibility, low operational cost, and ability to acquire high-resolution imagery in locations that may be difficult or dangerous to access using conventional methods. Recent advances in deep learning have significantly improved the capabilities of UAV-based wildfire monitoring systems. The present work investigates RGB-infrared fusion for binary wildfire segmentation on the FLAME3 dataset. In this Study, RGB and Infrared baselines are compared with three representative fusion strategies across three segmentation architectures, including U-Net, DeepLabV3+, and SegFormer. The key motivation of this work is to analyze the contribution of each modality, evaluate the impact of fusion timing, and examine how different network architectures exploit multimodal information for UAV wildfire delineation. The findings indicate that thermal information plays a dominant role in UAV segmentation and that feature-level multimodal fusion combined with transformer-based architectures offers the most promising direction for future research.",
+      "abstract_zh": "无人驾驶飞行器（UAV）因其灵活性、低运营成本以及能够在传统方法难以或危险进入的地点获取高分辨率图像，已成为消防作业的有前景的平台。近年来，深度学习的进步显著提升了基于UAV的野火监测系统的能力。本研究探讨了在FLAME3数据集上进行二元野火分割的RGB-红外融合。在本研究中，RGB和红外基线与三种代表性的融合策略在三种分割架构（包括U-Net、DeepLabV3+和SegFormer）中进行了比较。本研究的主要动机是分析每种模态的贡献，评估融合时机的影响，并考察不同网络架构如何利用多模态信息进行UAV野火划分。研究结果表明，热信息在UAV分割中起主导作用，而特征级多模态融合结合基于变换器的架构为未来研究提供了最有前景的方向。",
+      "authors": [
+        "Kovaleski, Matheus F., Garrote, Luís, Premebida, Cristiano, Mendes, Jérôme, Paulo, João Ruivo"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.01390",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "多传感器融合"
+      ],
+      "title": "Multimodal RGB-Infrared Combination for UAV-Based Wildfire Segmentation: A Comparative Study on FLAME3",
+      "title_zh": "基于无人机的多模态RGB-红外组合用于野火分割：FLAME3上的比较研究",
+      "url": "/daily/2026-09-02/#paper-2609-01390"
+    },
+    {
+      "abstract": "In camera-controlled video generation, geometry-aware positional encodings condition tokens on camera extrinsics and per-token viewing rays. Existing schemes, however, have a scale-dependent failure mode on real-world metric camera trajectories: homogeneous projective encodings cause attention logits and feature norms to grow unbounded with physical translation baselines. We propose MeRoPE (Metric Rotary Position Embedding), a norm-preserving relative camera encoding for attention. MeRoPE encodes relative orientations between calibrated viewing rays with orthogonal rotation blocks, maps raw metric displacements into multi-frequency rotary phases, and adds a disparity-anchored correspondence prior along the epipolar arc. This design strictly preserves feature norms, bounds pre-softmax attention logits regardless of the physical translation scale, and maintains exact invariance to global rigid coordinate changes. Across nuScenes and PanShot, which cover large-baseline trajectories and diverse camera optics, respectively, MeRoPE achieves stronger camera control than prior encodings, with the best consistency between generated camera motion and conditioning poses in both rotation and translation. Code will be made publicly available.",
+      "abstract_zh": "在摄像机控制的视频生成中，几何感知的位置编码将令牌条件化于摄像机外参和每个令牌的视线。然而，现有方案在真实世界的度量摄像机轨迹上存在依赖于尺度的失效模式：均匀的投影编码导致注意力 logits 和特征范数随着物理平移基线的增长而无界增长。我们提出了 MeRoPE（度量旋转位置嵌入），这是一种保持范数的相对摄像机编码，用于注意力机制。MeRoPE 使用正交旋转块编码经过校准的视线之间的相对方向，将原始度量位移映射到多频率旋转相位，并沿着极线弧添加一个基于视差的对应先验。该设计严格保持特征范数，无论物理平移尺度如何，都限制了预软最大注意力 logits，并保持对全局刚性坐标变化的精确不变性。在 nuScenes 和 PanShot 数据集中，分别涵盖了大基线轨迹和多样化的摄像机光学，MeRoPE 实现了比先前编码更强的摄像机控制，在旋转和位移方面生成的摄像机运动与条件姿态之间具有最佳一致性。代码将公开发布。",
+      "authors": [
+        "Qiao, Zhijian, Wang, Xinjiang, Chen, Jiajie, Huang, Haoming, Li, Meng, Chou, Chih-Chung, Wang, Jing, Shen, Shaojie"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.01252",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "预测/规划"
+      ],
+      "title": "MeRoPE: Metric Rotary Position Embedding for Camera-Controlled Video Generation",
+      "title_zh": "MeRoPE：用于摄像机控制视频生成的度量旋转位置嵌入",
+      "url": "/daily/2026-09-02/#paper-2609-01252"
+    },
+    {
+      "abstract": "Monocular depth estimation has long stood as a fundamental challenge in computer vision, enabling a wide range of applications including 3D reconstruction, robotics, autonomous driving, and augmented reality. This survey traces the field's evolution from early learning-based methods to the emergence of transformative foundation models. We begin by framing the problem, distinguishing between relative and metric depth estimation, and highlighting the key challenges that have shaped a decade of research. We then present common problem formulations and introduce the most widely used datasets, covering indoor, outdoor, and synthetic data. Following this, we review major advances prior to the foundation model era, distilling core insights from influential methods that contributed to improvements in accuracy, efficiency, and robustness. The survey then turns to the recent surge of foundation-model-based approaches, categorizing them into discriminative and generative paradigms and emphasizing the critical roles of large-scale pretraining (e.g., DINOv3) and synthetic data. We compare representative models using both quantitative benchmarks and qualitative examples, and discuss natural extensions to video-based depth estimation. Further, to illustrate real-world impact, we highlight the integration of depth estimation into applications such as visual SLAM, content generation, and robot perception. Finally, we outline open challenges and promising research directions as the field advances further into the era of foundation models.",
+      "abstract_zh": "单目深度估计长期以来一直是计算机视觉中的一个基本挑战，能够支持包括三维重建、机器人技术、自动驾驶和增强现实等广泛应用。本文回顾了该领域从早期基于学习的方法到变革性基础模型出现的演变过程。我们首先框定了问题，区分了相对深度估计和度量深度估计，并强调了塑造十年研究的关键挑战。接着，我们介绍了常见的问题表述，并列出了最广泛使用的数据集，涵盖室内、室外和合成数据。随后，我们回顾了基础模型时代之前的主要进展，提炼出对提高准确性、效率和鲁棒性有重要贡献的影响方法的核心见解。调查接着转向最近涌现的基于基础模型的方法，将其分为判别性和生成性范式，并强调大规模预训练（例如，DINOv3）和合成数据的关键作用。我们使用定量基准和定性示例比较了代表性模型，并讨论了基于视频的深度估计的自然扩展。此外，为了说明其在现实世界中的影响，我们强调了深度估计在视觉SLAM、内容生成和机器人感知等应用中的集成。最后，我们概述了随着该领域进一步进入基础模型时代而面临的开放挑战和有前景的研究方向。",
+      "authors": [
+        "Liu, Muxin, Lyu, Xiaoyang, Sun, Yang-Tian, Huang, Yi-Hua, Yang, Ziyi, Dai, Peng, Qi, Xiaojuan"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.01172",
+      "tags": [
+        "深度/几何",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "Monocular Depth Estimation from a Single Image: Progress and Opportunities",
+      "title_zh": "基于单幅图像的单目深度估计：进展与机遇",
+      "url": "/daily/2026-09-02/#paper-2609-01172"
+    },
+    {
+      "abstract": "Early recognition of lane-change intention is essential for proactive decision-making in autonomous driving and advanced driver assistance systems. This paper proposes a Dual Neural-Calibrated Interacting Multiple Model (DNC-IMM) that improves adaptability to driving context while preserving the probabilistic structure and interpretability of a conventional IMM. The proposed method encodes driving-context information, including target-vehicle motion, gaps to surrounding vehicles, and relative velocities, with a neural network that calibrates both the transition-probability matrix and measurement likelihoods. The final intention is determined from the calibrated IMM mode posterior rather than from a separate direct classifier. Experiments on the highD dataset demonstrate that the proposed method reliably recognizes lane-change intentions before lane crossing and provides particularly strong performance at the earlier 2-3 s prediction horizons.",
+      "abstract_zh": "早期识别变道意图对于自主驾驶和高级驾驶辅助系统中的主动决策至关重要。本文提出了一种双神经校准交互多模型（DNC-IMM），该模型在保持传统交互多模型（IMM）概率结构和可解释性的同时，提高了对驾驶上下文的适应性。所提出的方法通过神经网络编码驾驶上下文信息，包括目标车辆运动、与周围车辆的间隙和相对速度，并校准转移概率矩阵和测量似然性。最终的意图是从校准后的IMM模式后验中确定，而不是通过单独的直接分类器。对highD数据集的实验表明，所提方法能够可靠地在变道前识别变道意图，并在早期的2-3秒预测范围内表现出特别强的性能。",
+      "authors": [
+        "Byun, Woong-Chan, Kong, Seung-Hyun"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.01120",
+      "tags": [
+        "仿真/数据"
+      ],
+      "title": "DNC-IMM: Early Lane-Change Intention Recognition via Neural Calibration Based on Driving Context Information",
+      "title_zh": "DNC-IMM：基于驾驶上下文信息的早期变道意图识别的神经校准方法",
+      "url": "/daily/2026-09-02/#paper-2609-01120"
+    },
+    {
+      "abstract": "In Model Predictive Control (MPC), cost-function weights shape closed-loop behavior, yet changing conditions often make fixed parametrizations suboptimal and motivate context-dependent online adaptation. Learning such policies is difficult because behavior depends implicitly on numerical MPC solutions, producing nonlinear, potentially nonsmooth, long-horizon dependencies on policy parameters. This creates a bias-variance tradeoff: Reinforcement Learning (RL) optimizes realized closed-loop return from environment samples but is sample-inefficient, whereas Gradient-Based Policy Learning (GB-PL) uses low-variance solver gradients from differentiable MPC to optimize surrogate losses on predicted trajectories but can be biased under model mismatch. We propose Solver-Gradient Guided Reinforcement Learning (SG-RL), a solver-sensitivity augmentation for RL-based online MPC cost-weight adaptation. SG-RL keeps sampled closed-loop return as the objective and uses bounded solver-derived gradients as auxiliary guidance to improve stability and sample efficiency. We instantiate SG-RL in Proximal Policy Optimization (PPO) with four modular algorithms that inject solver-gradient guidance into actor-update scaling, policy loss, advantage estimation, and value-function learning. On two full-scale autonomous racing platforms with intentional model mismatch, SG-RL reaches PPO's best closed-loop return with up to 70.6% fewer samples, outperforms GB-PL baselines by at least 54% in closed-loop return, and generalizes zero-shot to unseen environments.",
+      "abstract_zh": "在模型预测控制（MPC）中，成本函数权重塑造了闭环行为，但变化的条件常常使固定参数化变得次优，从而促使基于上下文的在线适应。学习这样的策略是困难的，因为行为隐含地依赖于数值MPC解决方案，产生对策略参数的非线性、潜在不光滑的长期依赖。这造成了偏差-方差权衡：强化学习（RL）优化来自环境样本的实际闭环回报，但样本效率低，而基于梯度的策略学习（GB-PL）利用来自可微分MPC的低方差求解器梯度来优化预测轨迹上的替代损失，但在模型不匹配时可能存在偏差。我们提出了解决器梯度引导的强化学习（SG-RL），这是一种基于RL的在线MPC成本权重适应的求解器敏感性增强方法。SG-RL将采样的闭环回报作为目标，并使用有界的求解器导出梯度作为辅助指导，以提高稳定性和样本效率。我们在近端策略优化（PPO）中实例化SG-RL，采用四种模块化算法将求解器梯度引导注入到演员更新缩放、策略损失、优势估计和价值函数学习中。在两个具有故意模型不匹配的全尺度自主赛车平台上，SG-RL以最多减少70.6%的样本达到了PPO的最佳闭环回报，闭环回报至少比GB-PL基线提高了54%，并且在未见环境中实现了零样本泛化。",
+      "authors": [
+        "Zarrouki, Baha, Thobani, Arslan, Hoffmann, Jasper, Piccinini, Mattia, Reiter, Rudolf, Jahncke, Felix, Gros, Sébastien, Scaramuzza, Davide, Betz, Johannes"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.01061",
+      "tags": [
+        "预测/规划"
+      ],
+      "title": "Accelerating Reinforcement Learning via MPC Solver-Gradient Guidance for Weights-varying MPC",
+      "title_zh": "通过MPC求解器梯度引导加速权重变化的MPC强化学习",
+      "url": "/daily/2026-09-02/#paper-2609-01061"
+    },
+    {
+      "abstract": "Obtaining labeled data for semantic segmentation in applied settings (e.g., autonomous driving, industrial waste sorting) is expensive and often infeasible at scale. We present a cross-modal pseudo-labeling pipeline that enables unsupervised domain adaptation without any target-domain annotations. The pipeline is built on two core foundation models: SAM generates class-agnostic region proposals, and EVA-CLIP assigns semantic labels based on region-text similarity, with confidence filtering ensuring that only reliable pseudo-labels are used for self-training a segmentation model. As an optional extension, BLIP provides language-grounded verification for ambiguous regions, thereby improving pseudo-label quality without altering the overall pipeline. Evaluated on two domain shifts, synthetic-to-real autonomous driving and, with a primary focus, lab-to-factory industrial waste sorting, the pipeline consistently improves over source-only baselines. Our results demonstrate that pseudo-label quality, not quantity, is a decisive factor in self-training under domain shift, and that cross-modal language grounding offers a practical path to reliable automatic annotation in deployment-critical applications.",
+      "abstract_zh": "在应用场景中（例如，自动驾驶、工业废物分类）获取语义分割的标注数据既昂贵又往往难以大规模实现。我们提出了一种跨模态伪标签生成管道，使得在没有任何目标领域注释的情况下实现无监督领域适应。该管道基于两个核心基础模型构建：SAM生成与类别无关的区域提议，EVA-CLIP根据区域与文本的相似性分配语义标签，并通过置信度过滤确保仅使用可靠的伪标签来进行分割模型的自我训练。作为可选扩展，BLIP提供了对模糊区域的语言基础验证，从而提高伪标签的质量而不改变整体管道。我们在两个领域迁移上进行了评估，分别是合成到真实的自动驾驶，以及主要关注的实验室到工厂的工业废物分类，该管道在源域基线之上始终表现出改进。我们的结果表明，在领域迁移下，伪标签的质量而非数量是自我训练的决定性因素，而跨模态语言基础提供了一条在关键应用中实现可靠自动注释的实用路径。",
+      "authors": [
+        "Schlegel, Udo, Shubhangi, Dax, Gabriel, Kaminwar, Sai Rahul, Karl, Florian, Seidl, Thomas"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.00898",
+      "tags": [
+        "感知",
+        "VLM/VLA",
+        "世界模型/生成"
+      ],
+      "title": "Vision-Language-Guided Pseudo-Labels for Unsupervised Domain Adaptation in Semantic Segmentation for Waste Sorting",
+      "title_zh": "基于视觉-语言引导的伪标签在废物分类语义分割中的无监督领域适应",
+      "url": "/daily/2026-09-02/#paper-2609-00898"
+    },
+    {
+      "abstract": "Many automobile and mobility companies deploy learned driving policies on embedded computers with limited memory and power. Pruning, knowledge distillation, and quantization are the standard methods to reduce the size and the inference cost of these policies. However, these methods are commonly assessed by aggregate numerical scores, and such scores may not reflect the ability of the policy to drive safely when interacting with other road users. In this study, we propose a stage-wise closed-loop evaluation approach to follow a driving policy through a compression pipeline. We formulate the driving task as a partially observable Markov decision process (POMDP) and train a belief-state policy with proximal policy optimization (PPO) in Gym-Duckietown. We then extract the actor, compress it one stage at a time, and evaluate it on five driving curricula. We show that structured pruning is the stage at which the driving capability is first lost. Meanwhile, distillation improves the pruned actor, but the improvement is limited by its rehearsal data. Integer quantization of the improved actor loses some of the curricula that require the vehicle to stop and then resume. Interestingly, the same procedure on the unpruned actor preserves all five curricula. Our study thus provides an empirical analysis aiming to answer the currently active discussions on how to accept a compressed driving policy, so as to achieve a safe and statistically reliable deployment of automated driving functions.",
+      "abstract_zh": "许多汽车和出行公司在内存和功耗有限的嵌入式计算机上部署学习到的驾驶策略。剪枝、知识蒸馏和量化是减少这些策略大小和推理成本的标准方法。然而，这些方法通常通过汇总的数值评分进行评估，而这些评分可能无法反映策略在与其他道路使用者互动时安全驾驶的能力。在本研究中，我们提出了一种阶段性闭环评估方法，以跟踪压缩管道中的驾驶策略。我们将驾驶任务形式化为部分可观察的马尔可夫决策过程（POMDP），并在Gym-Duckietown中使用近端策略优化（PPO）训练信念状态策略。然后，我们逐阶段提取演员，进行压缩，并在五个驾驶课程上进行评估。我们展示了结构化剪枝是驾驶能力首次丧失的阶段。同时，蒸馏改善了剪枝后的演员，但这种改善受到其重放数据的限制。改进后的演员的整数量化丢失了一些要求车辆停止然后重新启动的课程。有趣的是，在未剪枝的演员上进行相同的程序可以保留所有五个课程。因此，我们的研究提供了一项实证分析，旨在回答当前关于如何接受压缩驾驶策略的活跃讨论，以实现自动驾驶功能的安全和统计可靠部署。",
+      "authors": [
+        "Irfan, Ahmad Alfan Alfian, Khatim, Nur Ahmad, Arief, Mansur"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.00718",
+      "tags": [
+        "端到端驾驶",
+        "安全/异常"
+      ],
+      "title": "A Closed-Loop Evaluation of Capability Loss and Recovery in Compressed Driving Policies",
+      "title_zh": "压缩驾驶策略中能力损失与恢复的闭环评估",
+      "url": "/daily/2026-09-02/#paper-2609-00718"
+    },
+    {
+      "abstract": "Estimation of the absolute pose of an object is an essential task for various robotic applications. Recently, incorporating gravity direction as prior information has emerged as a popular approach to simplify absolute pose estimation. However, developing a robust and efficient algorithm to solve this challenging problem remains a difficult question due to large amounts of mismatches. In addition, obtaining an accurate pose solution from selected inlier correspondences with gravity prior is still a research gap. In this paper, we propose a novel transformation strategy that exploits geometric relations derived from the gravity prior. Through transformation decoupling, the original 6 degrees of freedom (DoF) absolute pose estimation problem is simplified into a 4-DoFs problem: 1-DoF for the rotation angle and 3-DoFs for translation, significantly improving the efficiency. For the 1-DoF rotation angle, we apply a one-dimensional global voting algorithm for optimal estimation. Once the optimal rotation is obtained, the mismatched correspondences are preliminarily filtered, and translation estimation, a linear problem, can be easily solved. Furthermore, to obtain accurate pose results, we introduce a novel pose refinement algorithm to enhance the accuracy of both rotation and translation. Extensive experiments on synthetic data and three publicly available real-world datasets (TUM RGB-D, ETH3D, and RobotCar) demonstrate that the proposed method achieves stronger performance compared to existing state-of-the-art (SOTA) approaches. To further validate our method, we integrated it into ORB-SLAM2. The results on the KITTI dataset show it effectively reduces drift and improves trajectory alignment during relocalization. The source code will be released upon acceptance.",
+      "abstract_zh": "物体绝对姿态的估计是各种机器人应用中的一项重要任务。最近，利用重力方向作为先验信息已成为简化绝对姿态估计的热门方法。然而，由于大量的匹配错误，开发一种鲁棒且高效的算法来解决这一挑战性问题仍然是一个难题。此外，从选定的内点对应关系中获得准确的姿态解仍然是一个研究空白。本文提出了一种新颖的变换策略，利用从重力先验推导的几何关系。通过变换解耦，原始的6自由度（DoF）绝对姿态估计问题被简化为一个4自由度的问题：1自由度用于旋转角度，3自由度用于平移，显著提高了效率。对于1自由度的旋转角度，我们应用了一种一维全局投票算法进行最优估计。一旦获得最优旋转，初步过滤掉不匹配的对应关系，平移估计作为一个线性问题可以轻松解决。此外，为了获得准确的姿态结果，我们引入了一种新颖的姿态优化算法，以提高旋转和平移的准确性。在合成数据和三个公开可用的真实世界数据集（TUM RGB-D、ETH3D和RobotCar）上的大量实验表明，所提出的方法相比现有的最先进（SOTA）方法具有更强的性能。为了进一步验证我们的方法，我们将其集成到ORB-SLAM2中。在KITTI数据集上的结果表明，它有效减少了漂移并改善了重定位过程中的轨迹对齐。源代码将在接受后发布。",
+      "authors": [
+        "Cao, Hu, Yang, Qianyi, Li, Xinyi, Liu, Jiong, Liu, Yinlong, Knoll, Alois"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.00713",
+      "tags": [
+        "地图/定位",
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "Efficient and Robust Absolute Pose Estimation via Gravity-Prior-Driven Transformation Decoupling and Pose Refinement",
+      "title_zh": "通过重力先验驱动的变换解耦和姿态优化实现高效且鲁棒的绝对姿态估计",
+      "url": "/daily/2026-09-02/#paper-2609-00713"
+    },
+    {
+      "abstract": "Intelligent vehicles increasingly support adaptive applications beyond driving themselves, ranging from context-aware ADAS and automated driving to in-cabin monitoring and fleet management, all under tight requirements on accuracy, latency, cost, and reliability. Meeting these requirements is challenging because vehicles operate in complex, uncertain, and rapidly changing environments while running on resource-constrained computing platforms. This paper argues that context-situational factors that give meaning to sensor signals and constrain decisions-should be treated as a first-class principle for next-generation vehicle systems, and operationalized as a unified, shared state for learning, risk assessment, and closed-loop control across the software stack. We systematically review state-of-the- art (SOTA) context-aware methods spanning (i) environment understanding, (ii) planning and control, (iii) safety and security, and (iv) connected vehicles. Based on a trend analysis of context-aware design, we identify four key technical challenges in building a general contextual engine for future intelligent vehicles: multi-modal context fusion, temporal context modeling, handling rare events, and collaborative context sharing. We hope this survey will motivate the development of robust and efficient context-aware vehicle applications.",
+      "abstract_zh": "智能车辆越来越多地支持超越自我驾驶的自适应应用，包括情境感知的高级驾驶辅助系统（ADAS）、自动驾驶、车内监控和车队管理，所有这些都在对准确性、延迟、成本和可靠性有严格要求的情况下进行。满足这些要求具有挑战性，因为车辆在复杂、不确定和快速变化的环境中运行，同时依赖于资源受限的计算平台。本文认为，赋予传感器信号意义并限制决策的情境因素应作为下一代车辆系统的首要原则，并在软件堆栈中作为统一的共享状态进行操作，以便于学习、风险评估和闭环控制。我们系统回顾了涵盖（i）环境理解、（ii）规划与控制、（iii）安全与保障、（iv）联网车辆的最新情境感知方法。基于对情境感知设计的趋势分析，我们确定了构建未来智能车辆通用情境引擎的四个关键技术挑战：多模态情境融合、时间情境建模、处理稀有事件和协作情境共享。我们希望这项调查能够激励开发稳健且高效的情境感知车辆应用。",
+      "authors": [
+        "Liu, Liangkai, Shi, Shuyao, Wang, Mingke, Curran, Noah T., Li, Chuan, Bai, Fan, Shin, Kang G."
+      ],
+      "date": "2026-09-02",
+      "id": "2609.00682",
+      "tags": [
+        "预测/规划",
+        "安全/异常",
+        "感知"
+      ],
+      "title": "Context-Aware Intelligent Vehicles",
+      "title_zh": "基于情境感知的智能车辆",
+      "url": "/daily/2026-09-02/#paper-2609-00682"
+    },
+    {
+      "abstract": "Autonomous highway overtaking demands foresighted decision-making to handle complex interactions, stochastic traffic evolution, and temporal risk accumulation. However, standard safe reinforcement learning approaches typically rely on implicit value-based risk estimations rather than explicit dynamics modeling, thereby struggling to accurately capture complex risk propagation over multi-step horizons. This limitation frequently results in behaviors that are locally safe but induce substantial latent risks in the long term. To address this, a World Model-based Risk-aware Mixture-of-Experts (WM-RMoE) framework is proposed. First, a learned latent dynamics model facilitates parallel multi-step rollouts, elevating safety assessment from the action level to the trajectory level via cumulative risk evaluation. Second, to enhance robustness under varying interaction intensities, a hierarchical gating mechanism dynamically coordinates experts across long-horizon, short-horizon, and rule-based safety modules. Furthermore, a Gaussian Mixture Model is integrated to preserve multimodal maneuvering branches, thereby mitigating the issue of behavioral mode averaging. Experimental results demonstrate that WM-RMoE significantly outperforms representative baselines in terms of safety compliance, decision stability, and generalization capability. Furthermore, benefiting from the risk-aware formulation, the proposed framework uniquely exhibits the ability to generate foresighted and semantically distinct overtaking maneuvers across diverse traffic densities.",
+      "abstract_zh": "自主高速公路超车要求前瞻性的决策，以应对复杂的交互、随机的交通演变和时间风险的累积。然而，标准的安全强化学习方法通常依赖于隐式的基于价值的风险估计，而非显式的动态建模，从而难以准确捕捉多步视野下复杂的风险传播。这一局限性常常导致局部安全的行为，但在长期内引发显著的潜在风险。为此，提出了一种基于世界模型的风险感知专家混合框架（WM-RMoE）。首先，学习的潜在动态模型促进了并行的多步展开，将安全评估从动作层面提升到轨迹层面，通过累积风险评估实现。其次，为了增强在不同交互强度下的鲁棒性，层次化的门控机制动态协调长时间视野、短时间视野和基于规则的安全模块中的专家。此外，集成了高斯混合模型以保留多模态的机动分支，从而减轻行为模式平均化的问题。实验结果表明，WM-RMoE在安全合规性、决策稳定性和泛化能力方面显著优于代表性基线。此外，得益于风险感知的框架，所提出的方法独特地展现出在不同交通密度下生成前瞻性和语义上独特的超车机动的能力。",
+      "authors": [
+        "Liu, Yongzhi, Zhang, Sunan, Xu, Jinchang, Wang, Jiawei, Qiu, Yushu, Lv, Chen, Zhuang, Weichao"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.00385",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "安全/异常"
+      ],
+      "title": "Risk-Aware Decision-Making for Autonomous Overtaking: A World Model-Based Mixture-of-Experts Framework",
+      "title_zh": "基于世界模型的风险感知自主超车决策框架",
+      "url": "/daily/2026-09-02/#paper-2609-00385"
+    },
+    {
+      "abstract": "Extracting scenarios from unlabelled real-world sensor data streams is a critical but challenging task in the development process of automated driving systems (ADS). Automatically sifting through large datasets to spatially and temporally locate critical scenarios can enable scenario-based coverage analysis of ADS datasets. In this paper, we present a method for extracting scenarios from egocentric datasets using scene graphs and Linear Temporal Logic (LTL). We first process egocentric sensor data and HD maps to generate a sequence of scene graphs representing a driving scenario. Next, we use LTL to formally specify driving scenarios of interest, then extract all instances of the scenarios from the dataset using an off-the-shelf model checker, which evaluates the LTL formula against the sequence of scene graphs. Our approach can be used on both simulated and real world datasets. We evaluate the method on the training and validation datasets from Argoverse 2 consisting of 850 15-second real-world driving logs, and several videos of dashcam footage. We demonstrate the effectiveness of our approach for extracting and querying scenarios by evaluating against a rule-based benchmark based on track annotations and HD maps.",
+      "abstract_zh": "从未标记的真实世界传感器数据流中提取场景是自动驾驶系统（ADS）开发过程中的一项关键但具有挑战性的任务。自动筛选大型数据集以空间和时间上定位关键场景，可以实现基于场景的ADS数据集覆盖分析。本文提出了一种使用场景图和线性时序逻辑（LTL）从自我中心数据集中提取场景的方法。我们首先处理自我中心传感器数据和高清地图，以生成表示驾驶场景的场景图序列。接下来，我们使用LTL正式指定感兴趣的驾驶场景，然后利用现成的模型检查器从数据集中提取所有场景实例，该检查器根据场景图序列评估LTL公式。我们的方法可以应用于模拟和真实世界数据集。我们在包含850个15秒真实驾驶日志和若干行车记录仪视频的Argoverse 2训练和验证数据集上评估该方法。通过与基于轨迹注释和高清地图的规则基准进行评估，我们展示了我们的方法在提取和查询场景方面的有效性。",
+      "authors": [
+        "Ramdhan, Stefan, Dagenais, Kyanna, Pantelic, Vera, Bandur, Victor, Lawford, Mark"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.00333",
+      "tags": [
+        "地图/定位",
+        "仿真/数据",
+        "预测/规划"
+      ],
+      "title": "Scene Graph-based Driving Scenario Extraction for Automotive Egocentric Datasets",
+      "title_zh": "基于场景图的汽车自我中心数据集驾驶场景提取",
+      "url": "/daily/2026-09-02/#paper-2609-00333"
+    },
+    {
+      "abstract": "Long-tail autonomous driving failures are often framed as rare-object recognition errors. We argue that this view is incomplete: the decision-critical question is not only whether a model recognizes an unusual object, but whether it infers how that object changes the ego vehicle's feasible high-level actions. We formalize this problem as decision-level driving affordance prediction, where a model maps a front-view image, ego-motion history, and navigation command to a structured longitudinal--lateral meta-action. To evaluate this capability, we introduce CoLT-Drive, a 3,536-sample counterfactual long-tail benchmark that inserts rare objects into otherwise fixed driving scenes and measures whether models predict acceptable action pairs. To improve deployable small VLMs, we propose KPA, a knowledge-preserving adaptation framework that combines structured perception-to-decision prompting, SLERP-based expert merging, and RegMoE, a regime-aware LoRA mixture-of-experts module. KPA preserves the pretrained model's open-world knowledge while allocating lightweight adaptation capacity to different driving decision regimes. Experiments on an in-domain driving split and CoLT-Drive show that KPA achieves 60.8\\% pair accuracy on CoLT-Drive, outperforming the pretrained Qwen3-VL-2B baseline (50.3\\%) and LoRA SFT (32.4\\%) while maintaining competitive in-domain accuracy. Our benchmark and code are available at https://huggingface.co/datasets/tangzx2024/CoLT-Drive and https://github.com/tangzhengxu/CoLT-Drive.",
+      "abstract_zh": "长尾自主驾驶失败通常被视为稀有物体识别错误。我们认为这种观点是不完整的：决策关键问题不仅在于模型是否识别出不寻常的物体，还在于它是否推断出该物体如何改变自我车辆的可行高层次动作。我们将这个问题形式化为决策层面的驾驶能力预测，其中模型将前视图像、自我运动历史和导航命令映射到结构化的纵向-横向元动作。为了评估这一能力，我们引入了CoLT-Drive，一个包含3,536个样本的反事实长尾基准，向固定驾驶场景中插入稀有物体，并测量模型是否预测出可接受的动作对。为了改善可部署的小型VLM（视觉语言模型），我们提出了KPA（知识保留适应框架），该框架结合了结构化感知到决策的提示、基于SLERP的专家合并和RegMoE（基于模式的LoRA专家混合模块）。KPA在分配轻量级适应能力到不同驾驶决策模式的同时，保留了预训练模型的开放世界知识。在一个领域内的驾驶分割和CoLT-Drive上的实验表明，KPA在CoLT-Drive上达到了60.8%的配对准确率，超越了预训练的Qwen3-VL-2B基线（50.3%）和LoRA SFT（32.4%），同时保持了竞争性的领域内准确率。我们的基准和代码可在https://huggingface.co/datasets/tangzx2024/CoLT-Drive和https://github.com/tangzhengxu/CoLT-Drive获取。",
+      "authors": [
+        "Tang, Zhengxu, Cui, Guofeng, Gong, Ziyu, Zhang, Xiaozhou, Deng, Ruifeng, Qi, Chengzhi, Chen, Ke, Patil, Sachin, Xiao, Tianjun, Liu, Langechuan, Wang, Pichao"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.00242",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "VLM/VLA"
+      ],
+      "title": "CoLT-Drive: Counterfactual Long-Tail Benchmarking and Knowledge-Preserving Adaptation for Driving Affordance Prediction",
+      "title_zh": "CoLT-Drive：反事实长尾基准测试与知识保留适应用于驾驶能力预测",
+      "url": "/daily/2026-09-02/#paper-2609-00242"
+    },
+    {
+      "abstract": "Public trust in Autonomous Vehicles (AVs) may depend not only on technical success but also on the fairness of their decision making. While a recent trend in AV research involves using general purpose \"common sense\" models to guide AV decision making, the degree to which these inherit human biases in driving is still understudied. Given that psychology studies have shown human driver biases exist, such as lower pedestrian-yielding rates to Black pedestrians in the US, we argue that analyses of model bias should also be part of AV evaluation. Concretely, in this paper we propose two new bias testing methodologies for Large Language Models (LLMs) and Visual-Language Models (VLMs)-\"All Else Being Equal\" tests and \"Self-Consistency\" tests-in order to assess bias in pedestrian-yielding decisions. Our findings show that both LLMs and VLMs make yielding decisions which are influenced by pedestrian gender, ethnicity, religion, disability, age, skin tone and socio-economic status. While the type and degree of bias is different from model to model, we highlight common patterns-and raise questions about the \"common sense\" model paradigm, particularly the need to either revise the paradigm or address issues of downstream bias.",
+      "abstract_zh": "公众对自主车辆（AVs）的信任不仅可能依赖于技术成功，还可能取决于其决策的公平性。尽管近期自主车辆研究的一个趋势是使用通用的“常识”模型来指导自主车辆的决策，但这些模型在驾驶中继承人类偏见的程度仍然研究不足。心理学研究表明，人类驾驶者存在偏见，例如在美国，黑人行人的让行率较低，因此我们认为模型偏见的分析也应成为自主车辆评估的一部分。具体而言，本文提出了两种针对大型语言模型（LLMs）和视觉语言模型（VLMs）的新偏见测试方法——“其他条件相同”测试和“自我一致性”测试，以评估行人让行决策中的偏见。我们的研究结果表明，LLMs和VLMs在让行决策中受到行人性别、种族、宗教、残疾、年龄、肤色和社会经济地位的影响。虽然不同模型之间偏见的类型和程度各不相同，但我们强调了共同模式，并提出了关于“常识”模型范式的问题，特别是需要修订该范式或解决下游偏见问题。",
+      "authors": [
+        "Yoldas, Irem, Brandão, Martim, Zhang, Jie, Rodrigues, Odinaldo"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.00192",
+      "tags": [
+        "VLM/VLA",
+        "仿真/数据"
+      ],
+      "title": "LLM-Driven Autonomous Vehicles Inherit Human Driver Biases in Pedestrian Yielding: Results and Implications From A New Benchmark",
+      "title_zh": "基于大型语言模型的自主车辆在行人让行中继承人类驾驶者偏见：新基准的结果与启示",
+      "url": "/daily/2026-09-02/#paper-2609-00192"
+    },
+    {
+      "abstract": "We present Qwen-Drive-1.0, an initial step towards a vision-language foundation model for autonomous driving. Qwen-Drive-1.0 retains the architecture of the pretrained vision-language model (VLM) and integrates 3D perception, visual question answering, and motion planning within a unified framework. An external bird's-eye-view (BEV) perception head jointly performs 3D object detection, semantic occupancy prediction, and BEV map segmentation. It serves as a probe of the 3D information accessible from the shared representations and provides an explicit, inspectable interface to 3D scene structure. A Planning Expert conditions on shared VLM representations to generate future ego trajectories. A staged training recipe combines driving supervision with general-purpose vision-language data to acquire driving-specific competence while helping preserve broad visual understanding and instruction-following capabilities. Experiments demonstrate strong 3D perception and driving scene understanding while largely preserving general vision-language capability. Comprehensive evaluations across open-loop, pseudo-closed-loop, and closed-loop settings further show highly competitive motion-planning performance.",
+      "abstract_zh": "我们提出了Qwen-Drive-1.0，这是迈向自动驾驶视觉-语言基础模型的初步步骤。Qwen-Drive-1.0保留了预训练视觉-语言模型（VLM）的架构，并在统一框架内整合了3D感知、视觉问答和运动规划。一个外部鸟瞰视图（BEV）感知头共同执行3D物体检测、语义占用预测和BEV地图分割。它作为从共享表示中获取的3D信息的探针，提供了一个明确的、可检查的3D场景结构接口。规划专家基于共享的VLM表示生成未来的自我轨迹。分阶段的训练方案结合了驾驶监督与通用视觉-语言数据，以获取特定于驾驶的能力，同时帮助保持广泛的视觉理解和遵循指令的能力。实验表明，强大的3D感知和驾驶场景理解能力得以实现，同时在很大程度上保留了通用视觉-语言能力。在开放环路、伪闭环和闭环设置下的全面评估进一步显示出高度竞争的运动规划性能。",
+      "authors": [
+        "Zhou, Xin, Zhao, Zongchuang, Yang, Zhibo, Li, Mingsheng, Zhong, Humen, Bai, Shuai, Chu, Du, Chen, Ruizhe, Li, Zhaohai, Tang, Jun, Wang, Qiuyue, Yang, Mingkun, Zhang, Jiazhao, Liu, Dayiheng, Liang, Dingkang, Bai, Xiang"
+      ],
+      "date": "2026-09-02",
+      "id": "2609.00111",
+      "tags": [
+        "感知",
+        "BEV/Occupancy",
+        "预测/规划"
+      ],
+      "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+      "title_zh": "Qwen-Drive-1.0：迈向自动驾驶视觉-语言基础模型的初步步骤",
+      "url": "/daily/2026-09-02/#paper-2609-00111"
+    },
     {
       "abstract": "End-to-end autonomous driving models plan future trajectories from raw sensor input. While earlier driving benchmarks often measured deviation from the human trajectory, current benchmarks such as NAVSIM and Bench2Drive evaluate models with richer simulation-based metrics intended to capture safe and compliant driving. A high benchmark score should reflect that a model can understand the scene in front of it and act accordingly. But how much of that score specifically comes from reacting to the dynamic part of that scene? To probe this, we remove a model's camera input and replace it with memories from prior drives at the same location. The retrieved memories can provide persistent scene information, including road layout and location-conditioned regularities, but not the current traffic state. Surprisingly, memory is nearly sufficient on NAVSIM, reaching or even exceeding the performance of leading end-to-end methods without actually observing the evaluated scene. Our results suggest that a high NAVSIM score does not require a planner to react to the current traffic scene and should be treated with caution. This effect is benchmark-dependent: driving from memory causes substantially larger performance drops on Bench2Drive and RealEngine. We provide our code at https://github.com/boschresearch/MemoryDrivoR .",
       "abstract_zh": "端到端的自主驾驶模型从原始传感器输入中规划未来轨迹。尽管早期的驾驶基准通常测量与人类轨迹的偏差，但当前的基准如NAVSIM和Bench2Drive则使用更丰富的基于仿真的指标来评估模型，以捕捉安全和合规的驾驶行为。高基准分数应反映模型能够理解其面前的场景并作出相应的反应。但这个分数中有多少是具体来自于对场景动态部分的反应呢？为了探讨这一点，我们移除了模型的摄像头输入，并用先前在同一位置驾驶时的记忆进行替代。检索到的记忆可以提供持久的场景信息，包括道路布局和位置条件下的规律性，但无法反映当前的交通状态。令人惊讶的是，在NAVSIM上，记忆几乎足以达到或甚至超过领先的端到端方法的性能，而无需实际观察被评估的场景。我们的结果表明，高NAVSIM分数并不要求规划者对当前交通场景作出反应，因此应谨慎对待这一结果。该效应依赖于基准：基于记忆的驾驶在Bench2Drive和RealEngine上导致性能显著下降。我们的代码可在 https://github.com/boschresearch/MemoryDrivoR 获取。",
