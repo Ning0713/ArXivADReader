@@ -1,0 +1,47 @@
+{
+  "abstract": "Guideline-consistent semantic segmentation requires more than category recognition, as real-world labeling policies demand fine-grained, task-specific decisions. Recent multi-agent refinement systems improve compliance with such textual guidelines by detecting and correcting errors. However, they are stateless: feedback from the critiquing agent is discarded, causing the same guideline-specific mistakes to be repeatedly rediscovered and corrected across the dataset at the cost of additional refinement. We introduce InsightSeg, an episodic memory mechanism that converts successful correction episodes into reusable, visually grounded insights. A meta-analyzer distills each qualifying episode into directive natural-language insights and anchors them to the local image regions that caused the error using patch-level visual concept vectors. On subsequent images, these concepts are matched against dense patch embeddings to retrieve relevant insights, which condition the segmenting agent before making its first prediction. This shifts the system from correcting recurring errors to preventing them, improving segmentation quality before any refinement occurs. Across Waymo and Cityscapes, InsightSeg improves both first-pass and final guideline-consistent segmentation performance while requiring fewer refinement steps, demonstrating that multi-agent refinement can become more accurate and efficient by drawing on past correction experience.",
+  "abstract_zh": "一致的语义分割不仅需要类别识别，因为现实世界的标注政策要求细粒度、任务特定的决策。近期的多代理精细化系统通过检测和纠正错误来提高对这些文本指导的遵从性。然而，它们是无状态的：批评代理的反馈被丢弃，导致相同的指导特定错误在数据集中被反复发现和纠正，从而增加了额外的精细化成本。我们提出了InsightSeg，一种情节记忆机制，将成功的纠正情节转化为可重用的、视觉基础的洞察。元分析器将每个合格的情节提炼为指令性自然语言洞察，并使用补丁级视觉概念向量将其锚定到导致错误的局部图像区域。在后续图像中，这些概念与密集补丁嵌入进行匹配，以检索相关洞察，从而在分割代理进行第一次预测之前对其进行调节。这使得系统从纠正重复错误转变为防止错误，提高了分割质量，而无需进行任何精细化。在Waymo和Cityscapes数据集上，InsightSeg提高了首次和最终一致的分割性能，同时减少了精细化步骤，证明多代理精细化可以通过借鉴过去的纠正经验变得更加准确和高效。",
+  "arxiv_id": "2609.02002",
+  "arxiv_url": "https://arxiv.org/abs/2609.02002v1",
+  "authors": [
+    "Vanshika Vats",
+    "Ashwani Rathee",
+    "James Davis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02002",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.841059+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02002v1",
+  "published_at": "2026-09-02T02:22:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02002v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "InsightSeg: Reusing Correction Insights for Guideline-Consistent Segmentation",
+  "title_zh": "InsightSeg：重用纠正洞察以实现一致的分割指导",
+  "translation_url": "https://hjfy.top/arxiv/2609.02002"
+}

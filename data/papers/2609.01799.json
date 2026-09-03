@@ -1,0 +1,54 @@
+{
+  "abstract": "Many current end-to-end driving policies emit a pool of candidate trajectories and select one, which makes selection a separable component: a scorer can be retrained while the planner, its backbone, and its trajectory generator all stay frozen. However, many strong planners concentrate their proposals around safe mode, providing limited supervision near decision boundaries. In this work, we design a training dataset that provides more informative supervision for the scorer. In particular, we construct two generators that perturb the logged human trajectory along the two axes a vehicle can be displaced: laterally toward the drivable boundary and longitudinally toward a leading vehicle. The designed dataset produces more informative positive and negative samples than the base planner's proposal pool. We attach a transformer-based scorer to two frozen generative planners, DiffusionDrive and MeanFuser, and train it on the NAVSIM navtrain dataset. The results of the experiments show that we achieve 90.1 EPDMS on DiffusionDrive and 90.4 EPDMS on MeanFuser when using ResNet-34, with 0.4 and 0.3 EPDMS respectively, from the designed training dataset.",
+  "abstract_zh": "许多当前的端到端驾驶策略会生成一组候选轨迹并选择其中一个，这使得选择成为一个可分离的组件：评分器可以在规划器（其主干）和轨迹生成器保持不变的情况下进行重新训练。然而，许多强大的规划器将其提议集中在安全模式附近，导致在决策边界附近提供的监督有限。在本研究中，我们设计了一个训练数据集，为评分器提供更具信息性的监督。具体而言，我们构建了两个生成器，沿着车辆可以位移的两个轴对记录的人类轨迹进行扰动：横向朝向可驾驶边界和纵向朝向前方车辆。所设计的数据集产生的正负样本比基础规划器的提议池更具信息性。我们将基于变换器的评分器附加到两个冻结的生成规划器，DiffusionDrive 和 MeanFuser，并在 NAVSIM navtrain 数据集上进行训练。实验结果表明，当使用 ResNet-34 时，我们在 DiffusionDrive 上达到了 90.1 EPDMS，在 MeanFuser 上达到了 90.4 EPDMS，分别来自设计的训练数据集的 EPDMS 为 0.4 和 0.3。",
+  "arxiv_id": "2609.01799",
+  "arxiv_url": "https://arxiv.org/abs/2609.01799v1",
+  "authors": [
+    "Yaguang Li",
+    "Jiaru Zhang",
+    "Chuheng Wei",
+    "Can Cui",
+    "Ziran Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-01799",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.805157+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.01799v1",
+  "published_at": "2026-09-01T19:08:05Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.01799v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Designing Versatile Samples for Learned Trajectory Scoring",
+  "title_zh": "为学习轨迹评分设计多功能样本",
+  "translation_url": "https://hjfy.top/arxiv/2609.01799"
+}

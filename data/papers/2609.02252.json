@@ -1,0 +1,57 @@
+{
+  "abstract": "In trajectory planning for autonomous driving, hybrid planning architectures are often realized as a collection of disparate modules, each with its own objectives. This lack of a unifying principle can lead to inconsistencies between the initial and refined trajectory, resulting in suboptimal behavior. We address this by introducing DiffuSearch, a novel hybrid planner that uses a unified set of objectives across generation and refinement. Our model encourages all components to follow the same shared driving goals: collision avoidance, drivable area compliance, comfort, and progress. DiffuSearch employs a two-stage architecture. First, a guided diffusion model generates a scene-consistent, joint trajectory prediction, using our driving objectives as differentiable guidance functions to implicitly steer the denoising process. Second, a Monte Carlo Tree Search (MCTS) in a discretized action space performs an explicit, local refinement of this proposal, leveraging the same driving objectives as its reward function. This synergistic design leverages the diffusion model's strength in finding scene-consistent solutions combined with the explainable, constraint-aware refinement of MCTS. Experiments on nuPlan and interPlan reactive closed-loop benchmarks demonstrate that DiffuSearch achieves strong and often state-of-the-art performance, substantially reducing collisions and improving comfort, particularly in complex, interactive scenarios. Our ablation studies indicate that MCTS refinement is the main mechanism behind the gains, while sharing objectives between implicit guidance and explicit search provides further consistent improvements.",
+  "abstract_zh": "在自动驾驶的轨迹规划中，混合规划架构通常被实现为一组各自具有不同目标的模块。这种缺乏统一原则的情况可能导致初始轨迹与优化轨迹之间的不一致，从而导致次优行为。我们通过引入DiffuSearch来解决这个问题，这是一种新颖的混合规划器，使用统一的目标集进行生成和优化。我们的模型鼓励所有组件遵循相同的共享驾驶目标：避免碰撞、符合可行驶区域、舒适性和进展。DiffuSearch采用两阶段架构。首先，一个引导扩散模型生成场景一致的联合轨迹预测，利用我们的驾驶目标作为可微分的引导函数，隐式地引导去噪过程。其次，在离散化的动作空间中，蒙特卡洛树搜索（Monte Carlo Tree Search, MCTS）对该提案进行显式的局部优化，利用相同的驾驶目标作为其奖励函数。这种协同设计结合了扩散模型在寻找场景一致解决方案方面的优势，以及MCTS在约束感知优化中的可解释性。我们在nuPlan和interPlan反应闭环基准上的实验表明，DiffuSearch实现了强大且常常是最先进的性能，显著减少了碰撞并提高了舒适性，尤其是在复杂的交互场景中。我们的消融研究表明，MCTS优化是性能提升的主要机制，而隐式引导与显式搜索之间共享目标则提供了进一步一致的改进。",
+  "arxiv_id": "2609.02252",
+  "arxiv_url": "https://arxiv.org/abs/2609.02252v1",
+  "authors": [
+    "Steffen Hagedorn",
+    "Aron Distelzweig",
+    "Alexandru P. Condurache"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02252",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.811786+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02252v1",
+  "published_at": "2026-09-02T08:00:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuplan",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02252v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "感知"
+    ]
+  },
+  "title": "DiffuSearch: How Hybrid Trajectory Planning Benefits from Aligned Objectives in Diffusion and Action Space",
+  "title_zh": "DiffuSearch：混合轨迹规划如何受益于扩散与动作空间中对齐的目标",
+  "translation_url": "https://hjfy.top/arxiv/2609.02252"
+}

@@ -1,0 +1,62 @@
+{
+  "abstract": "Generating safety-critical scenarios is essential for evaluating autonomous driving systems. However, existing generators primarily focus on inducing collisions and offer limited control over where contact occurs on the target vehicle. In this paper, we study fine-grained safety-critical scenario generation, where success requires both a target collision and a specified head, rear, or side contact region. We propose CrashDiffuser, a closed-loop VLM-guided diffusion framework that decouples semantic collision reasoning from continuous trajectory synthesis through a hierarchical collision-intent interface derived from the requested target contact region. At initialization, the VLM extracts reusable scene-level context; at each replanning step, it predicts a structured action tuple describing speed change, turning behavior, and collision stage. This intent conditions a diffusion model to generate executable adversarial trajectories, while collision-guided sampling, candidate selection, and short-horizon replanning adapt generation to the target vehicle's evolving behavior. On WOMD-derived closed-loop scenarios, CrashDiffuser achieves a target-collision rate of 50.33% in a single attempt and 67.98% after three attempts, together with a contact-region control success rate of 40.05% and competitive trajectory naturalness. Component ablations further support the proposed design.",
+  "abstract_zh": "生成安全关键场景对于评估自动驾驶系统至关重要。然而，现有的生成器主要集中于诱发碰撞，并且对目标车辆上接触发生的位置控制有限。本文研究了细粒度安全关键场景生成，其中成功不仅需要目标碰撞，还需要指定前部、后部或侧面接触区域。我们提出了CrashDiffuser，一个闭环的基于VLM的扩散框架，通过从请求的目标接触区域派生的分层碰撞意图接口，将语义碰撞推理与连续轨迹合成解耦。在初始化时，VLM提取可重用的场景级上下文；在每个重新规划步骤中，它预测一个结构化的动作元组，描述速度变化、转向行为和碰撞阶段。该意图为扩散模型提供条件，以生成可执行的对抗轨迹，同时碰撞引导的采样、候选选择和短期重新规划将生成适应于目标车辆不断变化的行为。在基于WOMD的闭环场景中，CrashDiffuser在一次尝试中实现了50.33%的目标碰撞率，三次尝试后达到67.98%，同时接触区域控制成功率为40.05%，并且轨迹自然性具有竞争力。组件消融实验进一步支持了所提出的设计。",
+  "arxiv_id": "2609.02270",
+  "arxiv_url": "https://arxiv.org/abs/2609.02270v1",
+  "authors": [
+    "Shucheng Zhang",
+    "Yuang Zhang",
+    "Bingzhang Wang",
+    "Muhammad Monjurul Karim",
+    "Kehua Chen",
+    "Yinhai Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02270",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.812393+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02270v1",
+  "published_at": "2026-09-02T08:18:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02270v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "安全/异常"
+    ]
+  },
+  "title": "CrashDiffuser: VLM-Guided Collision Intent Reasoning for Fine-Grained Safety-Critical Traffic Scenario Generation",
+  "title_zh": "CrashDiffuser：基于VLM的碰撞意图推理用于细粒度安全关键交通场景生成",
+  "translation_url": "https://hjfy.top/arxiv/2609.02270"
+}

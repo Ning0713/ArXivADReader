@@ -1,6 +1,371 @@
 {
-  "generated_at": "2026-09-02T09:53:50.461613+00:00",
+  "generated_at": "2026-09-03T09:24:29.757286+00:00",
   "items": [
+    {
+      "abstract": "LiDAR-based semantic segmentation is a core perception module for autonomous vehicles and mobile robots. Despite the strong performance of recent state-of-the-art methods on standard benchmarks, existing evaluation protocols remain focused on clean, single-domain settings and fine-grained label taxonomies, leaving deployment readiness largely unassessed. Real-world systems must handle safety-critical label semantics, degraded sensing conditions, and cross-domain variability, yet no unified protocol currently addresses all three aspects together. In this paper, we propose a structured evaluation protocol that assesses the deployment readiness of LiDAR semantic segmentation models along three complementary dimensions: (i) coarse-label evaluation aligned with autonomous driving safety priorities, revealing how label granularity affects different methods; (ii) robustness under eight types of LiDAR corruptions designed to emulate real-world atmospheric, geometric, and sensor degradations; and (iii) domain generalization across datasets without adaptation. The evaluation includes inference speed measured on an embedded Jetson AGX Orin platform, directly reflecting deployment constraints. Our results show that fine-grained benchmark rankings do not always reflect safety-relevant performance, that all methods experience substantial degradation under corruptions with architecture-dependent robustness characteristics, and that current domain generalization remains insufficient for reliable deployment. These findings expose concrete gaps between benchmark performance and deployment readiness, and provide a reference protocol for more practically grounded evaluation of LiDAR semantic segmentation.",
+      "abstract_zh": "基于LiDAR的语义分割是自动驾驶汽车和移动机器人核心的感知模块。尽管近期最先进的方法在标准基准测试中表现强劲，但现有的评估协议仍然集中于干净的单一领域设置和细粒度标签分类，导致部署准备情况未得到充分评估。现实世界的系统必须处理安全关键的标签语义、退化的感知条件和跨领域的变异性，但目前没有统一的协议能够同时解决这三个方面。在本文中，我们提出了一种结构化的评估协议，从三个互补的维度评估LiDAR语义分割模型的部署准备情况：(i) 与自动驾驶安全优先事项对齐的粗略标签评估，揭示标签粒度如何影响不同方法；(ii) 在八种LiDAR损坏类型下的鲁棒性评估，这些损坏旨在模拟现实世界中的大气、几何和传感器退化；(iii) 在不进行适应的情况下跨数据集的领域泛化。评估还包括在嵌入式Jetson AGX Orin平台上测量的推理速度，直接反映部署约束。我们的结果表明，细粒度基准排名并不总是反映与安全相关的性能，所有方法在损坏下都经历了显著的性能下降，且具有架构依赖的鲁棒性特征，而当前的领域泛化仍不足以实现可靠的部署。这些发现揭示了基准性能与部署准备之间的具体差距，并为更实际的LiDAR语义分割评估提供了参考协议。",
+      "authors": [
+        "Samir Abou Haidar",
+        "Alexandre Chariot",
+        "Mehdi Darouich",
+        "Cyril Joly",
+        "Jean-Emmanuel Deschaud"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02830",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Toward Robust LiDAR Semantic Segmentation for Real-World Deployment: Evaluation under Coarse Labels, Adverse Conditions, and Domain Shifts",
+      "title_zh": "面向实际部署的鲁棒LiDAR语义分割：在粗略标签、不利条件和领域转移下的评估",
+      "url": "/daily/2026-09-03/#paper-2609-02830"
+    },
+    {
+      "abstract": "Neural map matchers estimate an image's 3-DoF pose relative to a 2D map. These models are trained on large-scale datasets of geo-referenced images, whose position and heading labels often contain noise that affects the trained models. To address this, we present AutoCompass, a supervision approach for training neural map matchers from inaccurate absolute pose labels. First, we show that heading labels are unnecessary: trained from raw GPS labels, models learn to predict accurate headings, automatically. Second, defining a tolerance region around raw GPS improves positional accuracy. Third, if available, our supervision uses relative poses between training images, obtained via SLAM or SfM, which provide a more accurate training signal. Across driving and egocentric benchmarks, AutoCompass consistently outperforms counterparts trained with the usual strong reliance on absolute pose labels.",
+      "abstract_zh": "神经地图匹配器估计图像相对于二维地图的三自由度姿态。这些模型是在大规模的地理参考图像数据集上训练的，这些数据集的位置信息和朝向标签通常包含噪声，从而影响训练模型的效果。为了解决这个问题，我们提出了AutoCompass，一种从不准确的绝对姿态标签中训练神经地图匹配器的监督方法。首先，我们展示了朝向标签并非必要：从原始GPS标签训练的模型能够自动学习预测准确的朝向。其次，在原始GPS周围定义一个容忍区域可以提高位置精度。第三，如果可用，我们的监督方法利用通过SLAM或SfM获得的训练图像之间的相对姿态，这提供了更准确的训练信号。在驾驶和自我中心基准测试中，AutoCompass始终优于那些通常强烈依赖绝对姿态标签的对比方法。",
+      "authors": [
+        "Javier Tirado-Garín",
+        "Alan Savio Paul",
+        "Shuai Chen",
+        "Axel Barroso-Laguna",
+        "Tommaso Cavallari",
+        "Daniyar Turmukhambetov",
+        "Victor Adrian Prisacariu",
+        "Eric Brachmann"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02798",
+      "tags": [
+        "地图/定位",
+        "深度/几何"
+      ],
+      "title": "AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels",
+      "title_zh": "AutoCompass：通过从弱标签学习实现公共地图上的准确视觉定位",
+      "url": "/daily/2026-09-03/#paper-2609-02798"
+    },
+    {
+      "abstract": "Streaming video understanding is a critical capability for real-world applications, including embodied intelligence, autonomous driving, industrial monitoring, surveillance and early warning, and wearable assistants. However, processing continuous video streams with multimodal large language models (MLLMs) is computationally expensive. Existing efforts have explored reducing streaming overhead through visual token pruning, token merging, quantization, on-demand frame retrieval, and context offloading. However, most existing methods overlook the dimension of model depth. Repeatedly executing full-depth MLLM prefill over incoming frames is prohibitively expensive, incurring substantial computational overhead and causing the KV cache to grow at a rate directly proportional to the prefill depth. To address these challenges, we propose ShallowStream, a novel framework that leverages the shallow layers of an MLLM to simultaneously perform frame encoding and retrieval index building. During stream processing, ShallowStream maintains an always-on lightweight index using the KV cache of shallow layers. During query-time answering, we leverage the attention scores generated by the shallow layers to score context frames and employ a diversity-aware selection strategy to retrieve precise and comprehensive evidence. ShallowStream achieves performance on par with the strongest existing streaming methods, while reducing per-frame prefill latency and 10-second end-to-end latency by up to 52.1x and 11.9x, respectively. Our code is available at https://github.com/CURRENTF/ShallowStream.",
+      "abstract_zh": "流媒体视频理解是现实应用中的一项关键能力，包括具身智能、自动驾驶、工业监控、监视与预警以及可穿戴助手。然而，使用多模态大型语言模型（MLLMs）处理连续的视频流计算成本高昂。现有的研究已探索通过视觉令牌修剪、令牌合并、量化、按需帧检索和上下文卸载来减少流媒体开销。然而，大多数现有方法忽视了模型深度的维度。对输入帧重复执行全深度的MLLM预填充是极其昂贵的，导致显著的计算开销，并使KV缓存以与预填充深度成正比的速度增长。为了解决这些挑战，我们提出了ShallowStream，这是一种新颖的框架，利用MLLM的浅层同时执行帧编码和检索索引构建。在流处理过程中，ShallowStream使用浅层的KV缓存维护一个始终在线的轻量级索引。在查询时回答中，我们利用浅层生成的注意力分数对上下文帧进行评分，并采用一种关注多样性的选择策略来检索精确且全面的证据。ShallowStream在性能上与现有最强的流媒体方法相当，同时将每帧预填充延迟和10秒的端到端延迟分别减少了高达52.1倍和11.9倍。我们的代码可在 https://github.com/CURRENTF/ShallowStream 获取。",
+      "authors": [
+        "Jitai Hao",
+        "Ke Yang",
+        "Qiang Huang",
+        "Jun Yu"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02780",
+      "tags": [
+        "深度/几何",
+        "端到端驾驶",
+        "世界模型/生成"
+      ],
+      "title": "ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding",
+      "title_zh": "ShallowStream：先索引浅层再深入回答的流媒体视频理解",
+      "url": "/daily/2026-09-03/#paper-2609-02780"
+    },
+    {
+      "abstract": "Future-aware representations and world models are increasingly used in proposal-based autonomous-driving planners to improve trajectory selection. However, improvements in proxy objectives or restricted subsets are often interpreted as planning gains without verifying proposal ordering, selected trajectories, full-scale utility, and critical driving components. We propose the Proxy-to-Decision Transfer (PDT) Framework, an analysis framework that evaluates when learned future information supports a reliable driving-performance improvement claim. Its Decision-Transfer Decomposition Module localizes value loss through score margins, switch-conditioned utility, and support-versus-selection regret. Its Reliability-Constrained Validation Module requires exact pairing, a minimum meaningful effect, scale-expanded confirmation, safety non-compensation, sequential comparability, and family-level robustness. On a representative future-aware planner evaluated with NAVSIM-v1, component BCE decreases from 0.705 to 0.530 while held selected PDM decreases from 0.963 to 0.961. A separate candidate improves a 512-record prefix by 0.00909, with a scene-bootstrap 95% interval of [0.000744, 0.0177], but its 2048-record and complete-support intervals include zero. A proposal-level replay further confirms the switch-utility decomposition, yet none of 432 screened configurations passes the two-half, two-seed robustness gate. PDT therefore identifies where decision transfer fails or remains indeterminate across proxy, subset, aggregate, and selection evidence.",
+      "abstract_zh": "未来感知的表征和世界模型在基于提案的自主驾驶规划者中被越来越多地使用，以改善轨迹选择。然而，代理目标或限制子集的改进常常被解读为规划收益，而未验证提案排序、选定轨迹、全尺度效用和关键驾驶组件。我们提出了代理到决策转移（Proxy-to-Decision Transfer, PDT）框架，这是一个分析框架，用于评估何时学习到的未来信息支持可靠的驾驶性能提升声明。其决策转移分解模块通过得分边际、切换条件效用和支持与选择的遗憾来定位价值损失。其可靠性约束验证模块要求精确配对、最小有意义效应、规模扩展确认、安全非补偿、序列可比性和家族级鲁棒性。在使用NAVSIM-v1评估的代表性未来感知规划者上，组件BCE从0.705降至0.530，而保持选定的PDM从0.963降至0.961。一个单独的候选者将512条记录的前缀提高了0.00909，场景引导的95%区间为[0.000744, 0.0177]，但其2048条记录和完全支持区间包含零。提案级重放进一步确认了切换效用分解，但432个筛选配置中没有一个通过两个半、两个种子的鲁棒性门。因此，PDT识别出决策转移在代理、子集、聚合和选择证据中失败或保持不确定的地方。",
+      "authors": [
+        "Yikai Wu"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02688",
+      "tags": [
+        "预测/规划",
+        "安全/异常",
+        "感知"
+      ],
+      "title": "From Proxy Learning to Driving Decisions: A Transfer-Based Framework for Evaluating Future-Aware Autonomous Driving Planners",
+      "title_zh": "从代理学习到决策驱动：一个基于转移的框架用于评估未来感知的自主驾驶规划者",
+      "url": "/daily/2026-09-03/#paper-2609-02688"
+    },
+    {
+      "abstract": "This paper investigates how a production transitional autonomous vehicle (tAV) develops and executes mandatory lane-change decisions. Using 150 controlled mandatory lane changes from the NC-tALC experiments, the study examines whether the eventual target gap is observable before lateral movement begins and how the tAV progresses longitudinally from that pre-lane-change state to lane-change start. Signal time (SigT) is defined as an operational pre-lane-change-start reference point. A Firth logistic regression predicts whether the tAV eventually merges in front of or behind its nearest target-lane vehicle using relative position and relative speed at SigT. Longitudinal progression from SigT to lane-change start is then examined separately for in-position and repositioning cases. The traffic state at SigT contains substantial information about eventual target-gap choice and provides meaningful lead time before lateral movement begins. The proposed formulation predicts whether the tAV remains with its current gap or repositions to a neighboring gap by moving forward or dropping back, including cases with longitudinal overlap and ambiguous current-gap geometry. The model achieves an average five-fold cross-validated accuracy of 0.89. Results also provide preliminary evidence that in-position and repositioning cases follow different longitudinal pathways from SigT to lane-change start. These findings support a two-stage conjecture of the observable lane-change process: longitudinal preparation from SigT to lane-change start, followed by lateral maneuver execution. The formulation applies to in-position, repositioning, and longitudinally overlapping cases, and can support lane-change models that distinguish target-gap choice from lateral-onset timing while representing longitudinal preparation before lateral movement begins.",
+      "abstract_zh": "本文研究了一种生产型过渡性自动驾驶车辆（tAV）如何制定和执行强制变道决策。通过分析150次来自NC-tALC实验的受控强制变道，研究探讨了在横向移动开始之前，最终目标间隙是否可观察，以及tAV如何从该预变道状态纵向推进到变道开始。信号时间（SigT）被定义为一个操作性的预变道开始参考点。使用Firth逻辑回归预测tAV最终是在其最近目标车道车辆前方还是后方合并，依据SigT时的相对位置和相对速度。然后分别对在位和重新定位的情况考察从SigT到变道开始的纵向进展。SigT时的交通状态包含关于最终目标间隙选择的重要信息，并在横向移动开始之前提供了有意义的提前时间。所提出的模型预测tAV是保持当前间隙还是通过向前移动或后退来重新定位到相邻间隙，包括纵向重叠和当前间隙几何形状模糊的情况。该模型的平均五折交叉验证准确率为0.89。结果还提供了初步证据，表明在位和重新定位的情况在从SigT到变道开始的过程中遵循不同的纵向路径。这些发现支持了可观察变道过程的两阶段假设：从SigT到变道开始的纵向准备，随后是横向机动执行。该模型适用于在位、重新定位和纵向重叠的情况，并可以支持区分目标间隙选择与横向开始时机的变道模型，同时表示在横向移动开始之前的纵向准备。",
+      "authors": [
+        "Zeyu Mu",
+        "Danjue Chen",
+        "Abhinav Sharma",
+        "George F. List"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02575",
+      "tags": [
+        "深度/几何",
+        "地图/定位"
+      ],
+      "title": "Pre-Lane-change Signal in Transitional Autonomous Vehicles: Results from Controlled Experiments",
+      "title_zh": "过渡性自动驾驶车辆中的预变道信号：来自受控实验的结果",
+      "url": "/daily/2026-09-03/#paper-2609-02575"
+    },
+    {
+      "abstract": "Four-dimensional (4D) Radar is a powerful sensing modality capable of detecting surrounding three-dimensional (3D) objects under diverse weather conditions and providing Doppler-based motion information. However, raw 4D Radar signals contain significant clutter from road surfaces, guardrails, and surrounding vehicles, along with multipath-induced ghost reflections and the receiver's inherent noise floor. Consequently, preprocessing algorithms designed to remove such invalid measurements often make the Radar data excessively sparse. Moreover, the Doppler measurements provided by 4D Radar describe only the radial component of an object's velocity, limiting their ability to recover the full motion state. In this paper, we introduce a stereo 4D Radar-based 3D object detection framework that exploits the geometric disparity between left and right Radars to estimate the absolute velocity of objects and achieve more robust perception through the fusion of their complementary features. The effectiveness of the proposed framework is validated on our in-house stereo 4D Radar dataset, demonstrating performance gains of 8.82 points in AP 3D and 9.0 points in AP BEV over state-of-the-art mono 4D Radar baselines. These results demonstrate that absolute velocity estimation combined with stereo geometry-aware feature fusion leads to substantial improvements in 3D object detection.",
+      "abstract_zh": "四维（4D）雷达是一种强大的传感方式，能够在多种天气条件下检测周围的三维（3D）物体，并提供基于多普勒的运动信息。然而，原始的4D雷达信号包含来自路面、护栏和周围车辆的显著杂波，以及由于多路径效应引起的虚假反射和接收器固有的噪声底。因此，旨在去除这些无效测量的预处理算法往往使雷达数据过于稀疏。此外，4D雷达提供的多普勒测量仅描述物体速度的径向分量，限制了其恢复完整运动状态的能力。在本文中，我们提出了一种基于立体4D雷达的3D物体检测框架，该框架利用左右雷达之间的几何差异来估计物体的绝对速度，并通过融合其互补特征实现更强大的感知。我们在自建的立体4D雷达数据集上验证了所提出框架的有效性，结果显示在AP 3D上性能提升了8.82分，在AP BEV上提升了9.0分，相较于最先进的单通道4D雷达基线。这些结果表明，结合绝对速度估计与立体几何感知特征融合能够显著提升3D物体检测的性能。",
+      "authors": [
+        "Seung-Hyun Song",
+        "Dong-Hee Paek",
+        "Woong-Chan Byun",
+        "Seung-Hyun Kong"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02560",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "仿真/数据"
+      ],
+      "title": "Stereo 4D Radar for 3D Object Detection: Integrating Geometric Alignment and Absolute Velocity Estimation",
+      "title_zh": "立体4D雷达用于3D物体检测：几何对齐与绝对速度估计的结合",
+      "url": "/daily/2026-09-03/#paper-2609-02560"
+    },
+    {
+      "abstract": "End-to-end autonomous driving in urban environments requires robust decision-making under partial observability and complex multi-agent interactions. Severe occlusions and dense traffic at intersections limit the perception capability of single-agent systems, motivating recent efforts on Vehicle-to-Infrastructure (V2I) cooperation for perception and planning. However, existing evaluation protocols face a fundamental trade-off: open-loop evaluation fails to capture error accumulation and recovery from deviations, while closed-loop evaluation is costly, difficult to scale, and often relies on simulated environments that may suffer from domain gaps. To bridge this gap, we propose VIPS, a benchmark for cooperative autonomous driving in V2I settings based on pseudo-simulation. VIPS extends pseudo-simulation by integrating vehicle and infrastructure observations. This enables scalable yet realistic evaluation of robustness and error propagation without full simulation. We further present CoS-V2X, a cooperative planning framework based on sparse representations. CoS-V2X models vehicle-infrastructure interactions using compact features for efficient communication and robust decision-making under heterogeneous observations. Code and dataset are available at https://vips2026.github.io.",
+      "abstract_zh": "在城市环境中实现端到端的自动驾驶需要在部分可观测性和复杂的多智能体交互下进行稳健的决策。交叉口的严重遮挡和密集交通限制了单智能体系统的感知能力，这促使了近期对车辆与基础设施（Vehicle-to-Infrastructure, V2I）合作进行感知和规划的研究。然而，现有的评估协议面临着一个基本的权衡：开环评估无法捕捉错误积累和从偏差中恢复，而闭环评估成本高、难以扩展，并且通常依赖于可能存在领域差距的模拟环境。为了解决这一问题，我们提出了VIPS，一个基于伪仿真的V2I环境中的协同自动驾驶基准。VIPS通过整合车辆和基础设施的观测来扩展伪仿真。这使得在不进行全面仿真的情况下，能够对稳健性和错误传播进行可扩展且现实的评估。我们进一步提出了CoS-V2X，一个基于稀疏表示的协同规划框架。CoS-V2X使用紧凑特征建模车辆与基础设施的交互，以实现高效的通信和在异构观测下的稳健决策。代码和数据集可在 https://vips2026.github.io 获取。",
+      "authors": [
+        "Hoonhee Cho",
+        "Jae-Young Kang",
+        "Giwon Lee",
+        "Hyemin Yang",
+        "Heejun Park",
+        "Kuk-Jin Yoon"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02462",
+      "tags": [
+        "仿真/数据",
+        "协同/V2X",
+        "感知"
+      ],
+      "title": "VIPS: Vehicle-Infrastructure Cooperative Planning Benchmark via Pseudo-Simulation",
+      "title_zh": "VIPS：基于伪仿真的车辆-基础设施协同规划基准",
+      "url": "/daily/2026-09-03/#paper-2609-02462"
+    },
+    {
+      "abstract": "Traffic sign detection faces a long-tailed data distribution. Many rare signs matter as much as common ones from a regulatory standpoint, yet they have very few samples. Generative data augmentation is one way out. General-purpose inpainting models, however, distort digits, deform geometry and perspective, and shift colours when applied directly to sign regions. We trace this to a single gap: the conditioning signal is too abstract for the physical composition of a sign. We propose a structured-prior-guided diffusion inpainting framework with physical consistency. It injects the semantic, appearance and geometric priors of a sign through three orthogonal pathways: a JSON-formatted text prompt, a front-view vector template rendered with measured dominant colours (via IP-Adapter), and an affine-aligned vector template (via ControlNet). Two physical consistency losses constrain colour with a CIELAB chromaticity $L_1$ term and edge structure with a Sobel gradient term. We train by self-supervised reconstruction on a large set of images collected in-house at AMAP, then evaluate zero-shot on the public TT100K-2021 dataset, a different source. Our method uses a Stable Diffusion 1.5 backbone of about 1.4B parameters. It beats seven representative competitors on every metric of reconstruction fidelity, physical consistency and semantic controllability. Its OCR exact-match rate reaches 91.1\\%, against 44.2\\% for the 12B industrial model FLUX.1 Fill [dev], and it needs only $1/14$ of that model's inference time. Leave-one-out ablations confirm that each of the three prior pathways and both loss terms contribute on their own. In downstream detection, the synthetic data raises the group-pooled AP50 of rare classes by $1.23\\times$ to $7.40\\times$ over a real-data-only baseline. Code and pre-trained models are available at https://github.com/52hz-whale/TrafficSignInpaint.",
+      "abstract_zh": "交通标志检测面临长尾数据分布的问题。许多稀有标志在监管方面与常见标志同样重要，但样本数量却非常有限。生成数据增强是一种解决方案。然而，通用的修复模型在直接应用于标志区域时，会扭曲数字、变形几何和透视，并且改变颜色。我们将此归因于一个单一的缺口：条件信号对于标志的物理组成过于抽象。我们提出了一种基于结构先验引导的扩散修复框架，具有物理一致性。该框架通过三条正交路径注入标志的语义、外观和几何先验：一个JSON格式的文本提示、一个使用测量主导颜色（通过IP-Adapter）渲染的正视向量模板，以及一个仿射对齐的向量模板（通过ControlNet）。两个物理一致性损失通过CIELAB色度$L_1$项约束颜色，通过Sobel梯度项约束边缘结构。我们在AMAP内部收集的大量图像上进行自监督重建训练，然后在公共的TT100K-2021数据集上进行零-shot评估，该数据集来源不同。我们的方法使用约14亿参数的Stable Diffusion 1.5骨干网络。在重建保真度、物理一致性和语义可控性等各项指标上超越了七个代表性竞争对手。其OCR精确匹配率达到91.1\\%，而12B工业模型FLUX.1 Fill [dev]的匹配率为44.2\\%，且只需该模型推理时间的$1/14$。逐一剔除的消融实验确认了三条先验路径和两个损失项各自的贡献。在下游检测中，合成数据将稀有类别的组池AP50提高了$1.23 imes$至$7.40 imes$，相较于仅使用真实数据的基线。代码和预训练模型可在https://github.com/52hz-whale/TrafficSignInpaint获取。",
+      "authors": [
+        "Luo Li",
+        "Chongchong Huang",
+        "Jun Jia",
+        "Qiang Gao",
+        "Xinlong Liu",
+        "Gui Yang",
+        "Liang Cao"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02348",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "世界模型/生成"
+      ],
+      "title": "Structured-Prior-Guided Diffusion Inpainting with Physical Consistency for Traffic Sign Augmentation",
+      "title_zh": "基于结构先验引导的物理一致性扩散修复用于交通标志增强",
+      "url": "/daily/2026-09-03/#paper-2609-02348"
+    },
+    {
+      "abstract": "Vision-Language-Action models (VLAs) have shown strong potential in autonomous driving by leveraging multimodal pretraining for instruction following, visual reasoning, and scene-level generalization. In robotic manipulation, scaling VLA fine-tuning across multiple robot setups--especially when unifying representations across embodiments--has been shown to improve in-dataset performance and cross-embodiment generalization; in autonomous driving, however, VLAs remain largely trained on individual datasets and are rarely evaluated for zero-shot transfer to unseen datasets and camera rigs; furthermore naively adding more datasets to the training data does not necessarily lead to better performance within seen embodiments. To address these problems, we study multi-dataset training for the driving task and BEV-Forcing, an auxiliary objective that transfers ground-plane object-layout information from a specialized Bird's-Eye-View model into the VLA backbone. By encouraging the model to represent object position through a shared BEV spatial interface, we show that an auxiliary task such as BEV-Forcing can improve both in-distribution and out-of-distribution performance when training on a small number of camera rigs. As the number of training embodiments increases, however, the benefits of the auxiliary task are reduced; we present this as evidence that new techniques in the literature may see their benefits diminish when simply scaling up training diversity, which motivates presenting results taking into account data scaling.",
+      "abstract_zh": "视觉-语言-动作模型（VLAs）通过利用多模态预训练在指令遵循、视觉推理和场景级泛化方面展现了在自动驾驶中的强大潜力。在机器人操作中，跨多个机器人设置进行VLA微调的规模化——特别是在跨体态统一表示时——已被证明可以提高数据集内性能和跨体态泛化；然而，在自动驾驶中，VLAs仍然主要在单个数据集上进行训练，并且很少评估其在未见数据集和摄像机设备上的零样本迁移能力；此外，简单地将更多数据集添加到训练数据中并不一定会导致在已见体态中的更好性能。为了解决这些问题，我们研究了驾驶任务的多数据集训练和BEV-Forcing，这是一种辅助目标，将来自专门的鸟瞰图模型的地面平面物体布局信息转移到VLA主干中。通过鼓励模型通过共享的BEV空间接口表示物体位置，我们表明，像BEV-Forcing这样的辅助任务可以在少量摄像机设备上训练时提高数据集内和数据集外的性能。然而，随着训练体态数量的增加，辅助任务的益处会减少；我们将此视为证据，表明文献中的新技术在简单扩大训练多样性时可能会看到其益处减弱，这促使我们在考虑数据扩展的情况下呈现结果。",
+      "authors": [
+        "Caio Azevedo",
+        "Stefano Sabatini",
+        "Sascha Hornauer",
+        "Fabien Moutarde"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02341",
+      "tags": [
+        "VLM/VLA",
+        "BEV/Occupancy",
+        "仿真/数据"
+      ],
+      "title": "Towards Zero-Shot Transfer Across Embodiments For Driving VLAs",
+      "title_zh": "面向跨体态的零样本迁移驾驶视觉-语言-动作模型",
+      "url": "/daily/2026-09-03/#paper-2609-02341"
+    },
+    {
+      "abstract": "Referring multi-object tracking (RMOT) aims to track every instance in a video that matches a given language expression. Despite the recent integration of multimodal large language models (MLLMs) to enhance generalization, existing methods predominantly relegate them to the role of caption generators, necessitating external modules for final decision-making. This paradigm not only introduces extra latency but also severely underutilizes the inherent vision-language alignment capabilities of MLLMs. To address these limitations, we propose YesTrack, a novel two-stage RMOT method that reformulates referring as a discriminative task, directly leveraging MLLMs for Yes/No verification without explicit text generation. To further enhance the reliability and efficiency of this MLLM-based verification, we introduce two lightweight temporal consistency constraints: Temporal Confidence Prior (TCP) and Temporal Reference Propagation (TRP). We further validate the generality of this discriminative paradigm by proposing YesTrack-MOT, a straightforward yet highly effective instantiation for generic multi-object tracking (MOT). Experiments on Refer-KITTI and Refer-KITTI-V2 show that YesTrack significantly outperforms existing state-of-the-art methods while maintaining high efficiency, even when implemented with the smallest variant of Qwen3-VL. Code is released at https://github.com/ggbondrighthere24/YesTrack.",
+      "abstract_zh": "指称多目标跟踪（RMOT）旨在跟踪视频中与给定语言表达相匹配的每个实例。尽管最近将多模态大型语言模型（MLLMs）整合以增强泛化能力，但现有方法主要将其 relegated 为字幕生成器，需依赖外部模块进行最终决策。这一范式不仅引入了额外的延迟，还严重低估了MLLMs固有的视觉-语言对齐能力。为了解决这些限制，我们提出了YesTrack，一种新颖的两阶段RMOT方法，将指称重新表述为一个判别任务，直接利用MLLMs进行是/否验证，而无需显式的文本生成。为了进一步提高这种基于MLLM的验证的可靠性和效率，我们引入了两个轻量级的时间一致性约束：时间置信先验（Temporal Confidence Prior, TCP）和时间参考传播（Temporal Reference Propagation, TRP）。我们通过提出YesTrack-MOT，进一步验证了这一判别范式的通用性，这是一种简单但极为有效的通用多目标跟踪（MOT）实例。在Refer-KITTI和Refer-KITTI-V2上的实验表明，YesTrack显著优于现有的最先进方法，同时保持高效，即使在使用最小变体的Qwen3-VL时也是如此。代码已发布在 https://github.com/ggbondrighthere24/YesTrack。",
+      "authors": [
+        "Quansheng Hu",
+        "Qin Sun",
+        "Qiansen Dai",
+        "Jin Ding",
+        "Wan Zhang",
+        "Xue Zhou",
+        "Jianxiao Zou"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02318",
+      "tags": [
+        "感知",
+        "VLM/VLA",
+        "世界模型/生成"
+      ],
+      "title": "YesTrack: Referring Multi-Object Tracking via MLLM-based Yes/No Verification",
+      "title_zh": "YesTrack：基于MLLM的是/否验证的指称多目标跟踪",
+      "url": "/daily/2026-09-03/#paper-2609-02318"
+    },
+    {
+      "abstract": "Detectors trained on closed-set annotations can miss rare moving objects outside the training taxonomy. Automotive radar provides category-independent Doppler motion cues and is less affected by adverse illumination and weather, but sparse, noisy returns hinder class-aware 3D box detection. Surface location and velocity remain useful for motion reasoning and collision avoidance when full box geometry is difficult to recover. We present the Physics-Aware Radar Transformer (PART), a fully sparse radar-only detector that predicts existence confidence, a representative surface point, and 2D ground-plane velocity for each moving-object hypothesis. Doppler-Aware Query Initialization (DAQI) replaces scene-independent learned queries with input-dependent proposals by clustering radar returns in position and velocity, easing query-object assignment in sparse scenes. Physics-Guided Cross-Attention (PGCA) incorporates radial-Doppler consistency and radar cross section (RCS) into query-point association. Uncertainty-aware supervision randomly masks ground-truth objects and assigns soft existence targets to ambiguous radar-supported queries, reducing reliance on exhaustive annotations. With only 1.1 million parameters, PART achieves a class-agnostic average precision (CA-AP) of 0.8827, a mean average surface translation error (mASTE) of 0.3188 m, and a mean average velocity error (mAVE) of 0.8084 m/s on nuScenes. It attains 0.9203 recall on rare and safety-relevant categories excluded from the standard evaluation and remains effective at night, in rain, and under severe occlusion. Inspection of apparent false positives shows that some predictions correspond to moving objects absent from the nuScenes annotations. Code and pretrained model weights will be publicly available at https://github.com/sunyinghao-uestc/PART.",
+      "abstract_zh": "在封闭集注释上训练的检测器可能会错过训练分类法之外的稀有移动物体。汽车雷达提供类别无关的多普勒运动线索，并且不易受到不良光照和天气的影响，但稀疏和噪声的回波阻碍了基于类别的三维框检测。当完整的框几何形状难以恢复时，表面位置和速度仍然对运动推理和碰撞避免有用。我们提出了物理感知雷达变换器（PART），这是一种完全稀疏的仅雷达检测器，为每个移动物体假设预测存在置信度、代表性表面点和二维地面平面速度。多普勒感知查询初始化（DAQI）通过在位置和速度上聚类雷达回波，用输入依赖的提议替换场景无关的学习查询，从而简化稀疏场景中的查询-对象分配。物理引导的交叉注意力（PGCA）将径向多普勒一致性和雷达截面（RCS）纳入查询点关联。具有不确定性感知的监督随机掩盖真实对象，并将软存在目标分配给模糊的雷达支持查询，从而减少对详尽注释的依赖。在仅有110万个参数的情况下，PART在nuScenes上实现了0.8827的类别无关平均精度（CA-AP）、0.3188米的平均表面平移误差（mASTE）和0.8084米/秒的平均速度误差（mAVE）。它在标准评估中排除的稀有和安全相关类别上达到了0.9203的召回率，并在夜间、雨天和严重遮挡情况下仍然有效。对明显的假阳性进行检查显示，一些预测对应于nuScenes注释中缺失的移动物体。代码和预训练模型权重将公开发布于https://github.com/sunyinghao-uestc/PART。",
+      "authors": [
+        "Yinghao Sun",
+        "Shuguang Li",
+        "Jinliang Shao",
+        "Tieshan Li"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02289",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "安全/异常"
+      ],
+      "title": "If It Moves, Radar Knows: A Physics-Aware Radar Transformer for Class-Agnostic Moving-Object Detection",
+      "title_zh": "如果它移动，雷达就知道：一种物理感知雷达变换器用于类别无关的移动物体检测",
+      "url": "/daily/2026-09-03/#paper-2609-02289"
+    },
+    {
+      "abstract": "Generating safety-critical scenarios is essential for evaluating autonomous driving systems. However, existing generators primarily focus on inducing collisions and offer limited control over where contact occurs on the target vehicle. In this paper, we study fine-grained safety-critical scenario generation, where success requires both a target collision and a specified head, rear, or side contact region. We propose CrashDiffuser, a closed-loop VLM-guided diffusion framework that decouples semantic collision reasoning from continuous trajectory synthesis through a hierarchical collision-intent interface derived from the requested target contact region. At initialization, the VLM extracts reusable scene-level context; at each replanning step, it predicts a structured action tuple describing speed change, turning behavior, and collision stage. This intent conditions a diffusion model to generate executable adversarial trajectories, while collision-guided sampling, candidate selection, and short-horizon replanning adapt generation to the target vehicle's evolving behavior. On WOMD-derived closed-loop scenarios, CrashDiffuser achieves a target-collision rate of 50.33% in a single attempt and 67.98% after three attempts, together with a contact-region control success rate of 40.05% and competitive trajectory naturalness. Component ablations further support the proposed design.",
+      "abstract_zh": "生成安全关键场景对于评估自动驾驶系统至关重要。然而，现有的生成器主要集中于诱发碰撞，并且对目标车辆上接触发生的位置控制有限。本文研究了细粒度安全关键场景生成，其中成功不仅需要目标碰撞，还需要指定前部、后部或侧面接触区域。我们提出了CrashDiffuser，一个闭环的基于VLM的扩散框架，通过从请求的目标接触区域派生的分层碰撞意图接口，将语义碰撞推理与连续轨迹合成解耦。在初始化时，VLM提取可重用的场景级上下文；在每个重新规划步骤中，它预测一个结构化的动作元组，描述速度变化、转向行为和碰撞阶段。该意图为扩散模型提供条件，以生成可执行的对抗轨迹，同时碰撞引导的采样、候选选择和短期重新规划将生成适应于目标车辆不断变化的行为。在基于WOMD的闭环场景中，CrashDiffuser在一次尝试中实现了50.33%的目标碰撞率，三次尝试后达到67.98%，同时接触区域控制成功率为40.05%，并且轨迹自然性具有竞争力。组件消融实验进一步支持了所提出的设计。",
+      "authors": [
+        "Shucheng Zhang",
+        "Yuang Zhang",
+        "Bingzhang Wang",
+        "Muhammad Monjurul Karim",
+        "Kehua Chen",
+        "Yinhai Wang"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02270",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "安全/异常"
+      ],
+      "title": "CrashDiffuser: VLM-Guided Collision Intent Reasoning for Fine-Grained Safety-Critical Traffic Scenario Generation",
+      "title_zh": "CrashDiffuser：基于VLM的碰撞意图推理用于细粒度安全关键交通场景生成",
+      "url": "/daily/2026-09-03/#paper-2609-02270"
+    },
+    {
+      "abstract": "In trajectory planning for autonomous driving, hybrid planning architectures are often realized as a collection of disparate modules, each with its own objectives. This lack of a unifying principle can lead to inconsistencies between the initial and refined trajectory, resulting in suboptimal behavior. We address this by introducing DiffuSearch, a novel hybrid planner that uses a unified set of objectives across generation and refinement. Our model encourages all components to follow the same shared driving goals: collision avoidance, drivable area compliance, comfort, and progress. DiffuSearch employs a two-stage architecture. First, a guided diffusion model generates a scene-consistent, joint trajectory prediction, using our driving objectives as differentiable guidance functions to implicitly steer the denoising process. Second, a Monte Carlo Tree Search (MCTS) in a discretized action space performs an explicit, local refinement of this proposal, leveraging the same driving objectives as its reward function. This synergistic design leverages the diffusion model's strength in finding scene-consistent solutions combined with the explainable, constraint-aware refinement of MCTS. Experiments on nuPlan and interPlan reactive closed-loop benchmarks demonstrate that DiffuSearch achieves strong and often state-of-the-art performance, substantially reducing collisions and improving comfort, particularly in complex, interactive scenarios. Our ablation studies indicate that MCTS refinement is the main mechanism behind the gains, while sharing objectives between implicit guidance and explicit search provides further consistent improvements.",
+      "abstract_zh": "在自动驾驶的轨迹规划中，混合规划架构通常被实现为一组各自具有不同目标的模块。这种缺乏统一原则的情况可能导致初始轨迹与优化轨迹之间的不一致，从而导致次优行为。我们通过引入DiffuSearch来解决这个问题，这是一种新颖的混合规划器，使用统一的目标集进行生成和优化。我们的模型鼓励所有组件遵循相同的共享驾驶目标：避免碰撞、符合可行驶区域、舒适性和进展。DiffuSearch采用两阶段架构。首先，一个引导扩散模型生成场景一致的联合轨迹预测，利用我们的驾驶目标作为可微分的引导函数，隐式地引导去噪过程。其次，在离散化的动作空间中，蒙特卡洛树搜索（Monte Carlo Tree Search, MCTS）对该提案进行显式的局部优化，利用相同的驾驶目标作为其奖励函数。这种协同设计结合了扩散模型在寻找场景一致解决方案方面的优势，以及MCTS在约束感知优化中的可解释性。我们在nuPlan和interPlan反应闭环基准上的实验表明，DiffuSearch实现了强大且常常是最先进的性能，显著减少了碰撞并提高了舒适性，尤其是在复杂的交互场景中。我们的消融研究表明，MCTS优化是性能提升的主要机制，而隐式引导与显式搜索之间共享目标则提供了进一步一致的改进。",
+      "authors": [
+        "Steffen Hagedorn",
+        "Aron Distelzweig",
+        "Alexandru P. Condurache"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02252",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "感知"
+      ],
+      "title": "DiffuSearch: How Hybrid Trajectory Planning Benefits from Aligned Objectives in Diffusion and Action Space",
+      "title_zh": "DiffuSearch：混合轨迹规划如何受益于扩散与动作空间中对齐的目标",
+      "url": "/daily/2026-09-03/#paper-2609-02252"
+    },
+    {
+      "abstract": "Guideline-consistent semantic segmentation requires more than category recognition, as real-world labeling policies demand fine-grained, task-specific decisions. Recent multi-agent refinement systems improve compliance with such textual guidelines by detecting and correcting errors. However, they are stateless: feedback from the critiquing agent is discarded, causing the same guideline-specific mistakes to be repeatedly rediscovered and corrected across the dataset at the cost of additional refinement. We introduce InsightSeg, an episodic memory mechanism that converts successful correction episodes into reusable, visually grounded insights. A meta-analyzer distills each qualifying episode into directive natural-language insights and anchors them to the local image regions that caused the error using patch-level visual concept vectors. On subsequent images, these concepts are matched against dense patch embeddings to retrieve relevant insights, which condition the segmenting agent before making its first prediction. This shifts the system from correcting recurring errors to preventing them, improving segmentation quality before any refinement occurs. Across Waymo and Cityscapes, InsightSeg improves both first-pass and final guideline-consistent segmentation performance while requiring fewer refinement steps, demonstrating that multi-agent refinement can become more accurate and efficient by drawing on past correction experience.",
+      "abstract_zh": "一致的语义分割不仅需要类别识别，因为现实世界的标注政策要求细粒度、任务特定的决策。近期的多代理精细化系统通过检测和纠正错误来提高对这些文本指导的遵从性。然而，它们是无状态的：批评代理的反馈被丢弃，导致相同的指导特定错误在数据集中被反复发现和纠正，从而增加了额外的精细化成本。我们提出了InsightSeg，一种情节记忆机制，将成功的纠正情节转化为可重用的、视觉基础的洞察。元分析器将每个合格的情节提炼为指令性自然语言洞察，并使用补丁级视觉概念向量将其锚定到导致错误的局部图像区域。在后续图像中，这些概念与密集补丁嵌入进行匹配，以检索相关洞察，从而在分割代理进行第一次预测之前对其进行调节。这使得系统从纠正重复错误转变为防止错误，提高了分割质量，而无需进行任何精细化。在Waymo和Cityscapes数据集上，InsightSeg提高了首次和最终一致的分割性能，同时减少了精细化步骤，证明多代理精细化可以通过借鉴过去的纠正经验变得更加准确和高效。",
+      "authors": [
+        "Vanshika Vats",
+        "Ashwani Rathee",
+        "James Davis"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.02002",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "InsightSeg: Reusing Correction Insights for Guideline-Consistent Segmentation",
+      "title_zh": "InsightSeg：重用纠正洞察以实现一致的分割指导",
+      "url": "/daily/2026-09-03/#paper-2609-02002"
+    },
+    {
+      "abstract": "Multi-camera systems are increasingly practical for robotics, AR/VR, and autonomous driving because complementary views reduce depth ambiguity and preserve visibility under occlusion. Existing point-tracking benchmarks, however, focus on a single video or static multi-camera rigs. None test long-term 3D point tracking across several synchronized views under camera motion. We introduce TAPVid-MV (Tracking Any Point in Video across Multiple Views), the first benchmark for this setting. It contains a curated set of 284 sequences, 1,142 calibrated camera streams, and 109,769 point tracks across seven subsets spanning indoor and outdoor domains, from robotics and human activity to driving and synthetic procedural scenes. We obtain these trajectories using dataset-specific auxiliary modalities: sensor depth, LiDAR, SLAM and SfM points, human meshes, posed object meshes, and simulation. Every sequence and trajectory is visually verified by human annotators. Across more than 30 baselines, no method comes close to solving the task. Surprisingly, existing multi-view point trackers do not consistently outperform monocular point trackers. By evaluating reconstruction and point tracking on the same datasets, TAPVid-MV helps distinguish errors in recovered geometry from errors in point correspondence. Through this joint analysis, we identify geometry recovery as a major bottleneck for accurate 3D point tracking. Beyond multi-view 3D point tracking, our released annotations support monocular 2D and 3D point tracking, future-trajectory prediction, and 4D reconstruction.",
+      "abstract_zh": "多摄像头系统在机器人技术、增强现实/虚拟现实和自动驾驶等领域越来越实用，因为互补视角可以减少深度歧义并在遮挡情况下保持可见性。然而，现有的点跟踪基准主要集中在单一视频或静态多摄像头设备上。没有任何基准测试在相机运动下跨多个同步视角进行长期三维点跟踪。我们提出了TAPVid-MV（Tracking Any Point in Video across Multiple Views），这是第一个针对这种设置的基准。它包含了一组经过精心挑选的284个序列、1,142个校准的摄像头流和109,769个点轨迹，涵盖了室内和室外领域的七个子集，从机器人技术和人类活动到驾驶和合成程序场景。我们使用数据集特定的辅助模态获取这些轨迹：传感器深度、激光雷达、SLAM和SfM点、人类网格、姿态物体网格以及仿真。每个序列和轨迹都经过人工标注者的视觉验证。在超过30个基线方法中，没有任何方法接近解决这一任务。令人惊讶的是，现有的多视角点跟踪器并没有始终优于单目点跟踪器。通过在相同数据集上评估重建和点跟踪，TAPVid-MV帮助区分恢复几何体中的错误与点对应中的错误。通过这种联合分析，我们确定几何体恢复是准确的三维点跟踪的主要瓶颈。除了多视角三维点跟踪外，我们发布的注释还支持单目二维和三维点跟踪、未来轨迹预测和四维重建。",
+      "authors": [
+        "Skanda Koppula",
+        "Frano Rajic",
+        "Abdullah Faiz Ur Rahman",
+        "Yi Yang",
+        "Ignacio Rocco",
+        "Jeet Thakwani",
+        "Rishabh Kabra",
+        "Andrew Zisserman",
+        "Joao Carreira",
+        "Siyu Tang",
+        "Carl Doersch",
+        "Gabriel Brostow"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.01899",
+      "tags": [
+        "深度/几何",
+        "仿真/数据",
+        "LiDAR/点云"
+      ],
+      "title": "TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views",
+      "title_zh": "TAPVid-MV：一个用于在多个视角中跟踪任意三维点的基准",
+      "url": "/daily/2026-09-03/#paper-2609-01899"
+    },
+    {
+      "abstract": "Many current end-to-end driving policies emit a pool of candidate trajectories and select one, which makes selection a separable component: a scorer can be retrained while the planner, its backbone, and its trajectory generator all stay frozen. However, many strong planners concentrate their proposals around safe mode, providing limited supervision near decision boundaries. In this work, we design a training dataset that provides more informative supervision for the scorer. In particular, we construct two generators that perturb the logged human trajectory along the two axes a vehicle can be displaced: laterally toward the drivable boundary and longitudinally toward a leading vehicle. The designed dataset produces more informative positive and negative samples than the base planner's proposal pool. We attach a transformer-based scorer to two frozen generative planners, DiffusionDrive and MeanFuser, and train it on the NAVSIM navtrain dataset. The results of the experiments show that we achieve 90.1 EPDMS on DiffusionDrive and 90.4 EPDMS on MeanFuser when using ResNet-34, with 0.4 and 0.3 EPDMS respectively, from the designed training dataset.",
+      "abstract_zh": "许多当前的端到端驾驶策略会生成一组候选轨迹并选择其中一个，这使得选择成为一个可分离的组件：评分器可以在规划器（其主干）和轨迹生成器保持不变的情况下进行重新训练。然而，许多强大的规划器将其提议集中在安全模式附近，导致在决策边界附近提供的监督有限。在本研究中，我们设计了一个训练数据集，为评分器提供更具信息性的监督。具体而言，我们构建了两个生成器，沿着车辆可以位移的两个轴对记录的人类轨迹进行扰动：横向朝向可驾驶边界和纵向朝向前方车辆。所设计的数据集产生的正负样本比基础规划器的提议池更具信息性。我们将基于变换器的评分器附加到两个冻结的生成规划器，DiffusionDrive 和 MeanFuser，并在 NAVSIM navtrain 数据集上进行训练。实验结果表明，当使用 ResNet-34 时，我们在 DiffusionDrive 上达到了 90.1 EPDMS，在 MeanFuser 上达到了 90.4 EPDMS，分别来自设计的训练数据集的 EPDMS 为 0.4 和 0.3。",
+      "authors": [
+        "Yaguang Li",
+        "Jiaru Zhang",
+        "Chuheng Wei",
+        "Can Cui",
+        "Ziran Wang"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.01799",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "世界模型/生成"
+      ],
+      "title": "Designing Versatile Samples for Learned Trajectory Scoring",
+      "title_zh": "为学习轨迹评分设计多功能样本",
+      "url": "/daily/2026-09-03/#paper-2609-01799"
+    },
+    {
+      "abstract": "Chain-of-thought (CoT) reasoning powers generative models by eliciting intermediate steps before producing an answer. In autonomous driving, the answer is a continuous action. Thus its reasoning must share the same spatiotemporal structure as the physical world. This survey studies the resulting shift from textual CoT to action-grounded reasoning. Surveying 171 papers, including 130 method papers and 41 benchmarks, datasets, surveys, and analysis papers, we propose a representation-centered taxonomy that treats the form of the intermediate state as the organizing axis. We systematize the 130 methods into four categories: language-based, visual-spatial, latent-dynamic, and externalized reasoning, further divided into 13 subtypes tied to distinct regions of interests. Our synthesis shows that the open frontier of reasoning in driving agents lies in intermediate representations that can be grounded in the real world, coupled to real-time action, and verified under safety-critical systems. Project page: https://github.com/tangzhengxu/awesome-av-cot.",
+      "abstract_zh": "链式思维（Chain-of-thought, CoT）推理通过引导中间步骤来增强生成模型的能力，从而产生答案。在自动驾驶中，答案是一个连续的动作。因此，其推理必须与物理世界共享相同的时空结构。本调查研究了从文本链式思维到基于行动的推理的转变。我们调查了171篇论文，包括130篇方法论文和41篇基准、数据集、调查和分析论文，提出了一种以表示为中心的分类法，将中间状态的形式作为组织轴。我们将130种方法系统化为四个类别：基于语言的、视觉空间的、潜在动态的和外部化的推理，进一步细分为与不同兴趣区域相关的13个子类型。我们的综合表明，驾驶代理推理的开放前沿在于能够扎根于现实世界的中间表示，结合实时动作，并在安全关键系统下进行验证。项目页面：https://github.com/tangzhengxu/awesome-av-cot。",
+      "authors": [
+        "Zhengxu Tang",
+        "Xiaozhou Zhang",
+        "Guofeng Cui",
+        "Ziyu Gong",
+        "Zi Wang",
+        "Yunfei Shi",
+        "Ruifeng Deng",
+        "Chengzhi Qi",
+        "Ke Chen",
+        "Sachin Patil",
+        "Tianjun Xiao",
+        "Langechuan Liu",
+        "Pichao Wang"
+      ],
+      "date": "2026-09-03",
+      "id": "2609.01659",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "世界模型/生成"
+      ],
+      "title": "Beyond Textual Chain-of-Thought: A Survey on Action-Grounded Reasoning in Autonomous Driving",
+      "title_zh": "超越文本链式思维：关于自动驾驶中基于行动的推理的调查",
+      "url": "/daily/2026-09-03/#paper-2609-01659"
+    },
     {
       "abstract": "Unmanned Aerial Vehicles (UAVs) have emerged as a promising platform for firefighting operations due to their flexibility, low operational cost, and ability to acquire high-resolution imagery in locations that may be difficult or dangerous to access using conventional methods. Recent advances in deep learning have significantly improved the capabilities of UAV-based wildfire monitoring systems. The present work investigates RGB-infrared fusion for binary wildfire segmentation on the FLAME3 dataset. In this Study, RGB and Infrared baselines are compared with three representative fusion strategies across three segmentation architectures, including U-Net, DeepLabV3+, and SegFormer. The key motivation of this work is to analyze the contribution of each modality, evaluate the impact of fusion timing, and examine how different network architectures exploit multimodal information for UAV wildfire delineation. The findings indicate that thermal information plays a dominant role in UAV segmentation and that feature-level multimodal fusion combined with transformer-based architectures offers the most promising direction for future research.",
       "abstract_zh": "无人驾驶飞行器（UAV）因其灵活性、低运营成本以及能够在传统方法难以或危险进入的地点获取高分辨率图像，已成为消防作业的有前景的平台。近年来，深度学习的进步显著提升了基于UAV的野火监测系统的能力。本研究探讨了在FLAME3数据集上进行二元野火分割的RGB-红外融合。在本研究中，RGB和红外基线与三种代表性的融合策略在三种分割架构（包括U-Net、DeepLabV3+和SegFormer）中进行了比较。本研究的主要动机是分析每种模态的贡献，评估融合时机的影响，并考察不同网络架构如何利用多模态信息进行UAV野火划分。研究结果表明，热信息在UAV分割中起主导作用，而特征级多模态融合结合基于变换器的架构为未来研究提供了最有前景的方向。",

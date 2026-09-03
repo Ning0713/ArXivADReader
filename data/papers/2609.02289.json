@@ -1,0 +1,52 @@
+{
+  "abstract": "Detectors trained on closed-set annotations can miss rare moving objects outside the training taxonomy. Automotive radar provides category-independent Doppler motion cues and is less affected by adverse illumination and weather, but sparse, noisy returns hinder class-aware 3D box detection. Surface location and velocity remain useful for motion reasoning and collision avoidance when full box geometry is difficult to recover. We present the Physics-Aware Radar Transformer (PART), a fully sparse radar-only detector that predicts existence confidence, a representative surface point, and 2D ground-plane velocity for each moving-object hypothesis. Doppler-Aware Query Initialization (DAQI) replaces scene-independent learned queries with input-dependent proposals by clustering radar returns in position and velocity, easing query-object assignment in sparse scenes. Physics-Guided Cross-Attention (PGCA) incorporates radial-Doppler consistency and radar cross section (RCS) into query-point association. Uncertainty-aware supervision randomly masks ground-truth objects and assigns soft existence targets to ambiguous radar-supported queries, reducing reliance on exhaustive annotations. With only 1.1 million parameters, PART achieves a class-agnostic average precision (CA-AP) of 0.8827, a mean average surface translation error (mASTE) of 0.3188 m, and a mean average velocity error (mAVE) of 0.8084 m/s on nuScenes. It attains 0.9203 recall on rare and safety-relevant categories excluded from the standard evaluation and remains effective at night, in rain, and under severe occlusion. Inspection of apparent false positives shows that some predictions correspond to moving objects absent from the nuScenes annotations. Code and pretrained model weights will be publicly available at https://github.com/sunyinghao-uestc/PART.",
+  "abstract_zh": "在封闭集注释上训练的检测器可能会错过训练分类法之外的稀有移动物体。汽车雷达提供类别无关的多普勒运动线索，并且不易受到不良光照和天气的影响，但稀疏和噪声的回波阻碍了基于类别的三维框检测。当完整的框几何形状难以恢复时，表面位置和速度仍然对运动推理和碰撞避免有用。我们提出了物理感知雷达变换器（PART），这是一种完全稀疏的仅雷达检测器，为每个移动物体假设预测存在置信度、代表性表面点和二维地面平面速度。多普勒感知查询初始化（DAQI）通过在位置和速度上聚类雷达回波，用输入依赖的提议替换场景无关的学习查询，从而简化稀疏场景中的查询-对象分配。物理引导的交叉注意力（PGCA）将径向多普勒一致性和雷达截面（RCS）纳入查询点关联。具有不确定性感知的监督随机掩盖真实对象，并将软存在目标分配给模糊的雷达支持查询，从而减少对详尽注释的依赖。在仅有110万个参数的情况下，PART在nuScenes上实现了0.8827的类别无关平均精度（CA-AP）、0.3188米的平均表面平移误差（mASTE）和0.8084米/秒的平均速度误差（mAVE）。它在标准评估中排除的稀有和安全相关类别上达到了0.9203的召回率，并在夜间、雨天和严重遮挡情况下仍然有效。对明显的假阳性进行检查显示，一些预测对应于nuScenes注释中缺失的移动物体。代码和预训练模型权重将公开发布于https://github.com/sunyinghao-uestc/PART。",
+  "arxiv_id": "2609.02289",
+  "arxiv_url": "https://arxiv.org/abs/2609.02289v1",
+  "authors": [
+    "Yinghao Sun",
+    "Shuguang Li",
+    "Jinliang Shao",
+    "Tieshan Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02289",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.858466+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02289v1",
+  "published_at": "2026-09-02T08:39:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "automotive",
+      "radar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 29
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02289v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "安全/异常"
+    ]
+  },
+  "title": "If It Moves, Radar Knows: A Physics-Aware Radar Transformer for Class-Agnostic Moving-Object Detection",
+  "title_zh": "如果它移动，雷达就知道：一种物理感知雷达变换器用于类别无关的移动物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.02289"
+}

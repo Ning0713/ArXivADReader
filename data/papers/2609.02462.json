@@ -1,0 +1,61 @@
+{
+  "abstract": "End-to-end autonomous driving in urban environments requires robust decision-making under partial observability and complex multi-agent interactions. Severe occlusions and dense traffic at intersections limit the perception capability of single-agent systems, motivating recent efforts on Vehicle-to-Infrastructure (V2I) cooperation for perception and planning. However, existing evaluation protocols face a fundamental trade-off: open-loop evaluation fails to capture error accumulation and recovery from deviations, while closed-loop evaluation is costly, difficult to scale, and often relies on simulated environments that may suffer from domain gaps. To bridge this gap, we propose VIPS, a benchmark for cooperative autonomous driving in V2I settings based on pseudo-simulation. VIPS extends pseudo-simulation by integrating vehicle and infrastructure observations. This enables scalable yet realistic evaluation of robustness and error propagation without full simulation. We further present CoS-V2X, a cooperative planning framework based on sparse representations. CoS-V2X models vehicle-infrastructure interactions using compact features for efficient communication and robust decision-making under heterogeneous observations. Code and dataset are available at https://vips2026.github.io.",
+  "abstract_zh": "在城市环境中实现端到端的自动驾驶需要在部分可观测性和复杂的多智能体交互下进行稳健的决策。交叉口的严重遮挡和密集交通限制了单智能体系统的感知能力，这促使了近期对车辆与基础设施（Vehicle-to-Infrastructure, V2I）合作进行感知和规划的研究。然而，现有的评估协议面临着一个基本的权衡：开环评估无法捕捉错误积累和从偏差中恢复，而闭环评估成本高、难以扩展，并且通常依赖于可能存在领域差距的模拟环境。为了解决这一问题，我们提出了VIPS，一个基于伪仿真的V2I环境中的协同自动驾驶基准。VIPS通过整合车辆和基础设施的观测来扩展伪仿真。这使得在不进行全面仿真的情况下，能够对稳健性和错误传播进行可扩展且现实的评估。我们进一步提出了CoS-V2X，一个基于稀疏表示的协同规划框架。CoS-V2X使用紧凑特征建模车辆与基础设施的交互，以实现高效的通信和在异构观测下的稳健决策。代码和数据集可在 https://vips2026.github.io 获取。",
+  "arxiv_id": "2609.02462",
+  "arxiv_url": "https://arxiv.org/abs/2609.02462v1",
+  "authors": [
+    "Hoonhee Cho",
+    "Jae-Young Kang",
+    "Giwon Lee",
+    "Hyemin Yang",
+    "Heejun Park",
+    "Kuk-Jin Yoon"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02462",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.869007+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02462v1",
+  "published_at": "2026-09-02T11:32:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "v2x",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02462v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "协同/V2X",
+      "感知"
+    ]
+  },
+  "title": "VIPS: Vehicle-Infrastructure Cooperative Planning Benchmark via Pseudo-Simulation",
+  "title_zh": "VIPS：基于伪仿真的车辆-基础设施协同规划基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.02462"
+}

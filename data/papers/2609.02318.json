@@ -1,0 +1,51 @@
+{
+  "abstract": "Referring multi-object tracking (RMOT) aims to track every instance in a video that matches a given language expression. Despite the recent integration of multimodal large language models (MLLMs) to enhance generalization, existing methods predominantly relegate them to the role of caption generators, necessitating external modules for final decision-making. This paradigm not only introduces extra latency but also severely underutilizes the inherent vision-language alignment capabilities of MLLMs. To address these limitations, we propose YesTrack, a novel two-stage RMOT method that reformulates referring as a discriminative task, directly leveraging MLLMs for Yes/No verification without explicit text generation. To further enhance the reliability and efficiency of this MLLM-based verification, we introduce two lightweight temporal consistency constraints: Temporal Confidence Prior (TCP) and Temporal Reference Propagation (TRP). We further validate the generality of this discriminative paradigm by proposing YesTrack-MOT, a straightforward yet highly effective instantiation for generic multi-object tracking (MOT). Experiments on Refer-KITTI and Refer-KITTI-V2 show that YesTrack significantly outperforms existing state-of-the-art methods while maintaining high efficiency, even when implemented with the smallest variant of Qwen3-VL. Code is released at https://github.com/ggbondrighthere24/YesTrack.",
+  "abstract_zh": "指称多目标跟踪（RMOT）旨在跟踪视频中与给定语言表达相匹配的每个实例。尽管最近将多模态大型语言模型（MLLMs）整合以增强泛化能力，但现有方法主要将其 relegated 为字幕生成器，需依赖外部模块进行最终决策。这一范式不仅引入了额外的延迟，还严重低估了MLLMs固有的视觉-语言对齐能力。为了解决这些限制，我们提出了YesTrack，一种新颖的两阶段RMOT方法，将指称重新表述为一个判别任务，直接利用MLLMs进行是/否验证，而无需显式的文本生成。为了进一步提高这种基于MLLM的验证的可靠性和效率，我们引入了两个轻量级的时间一致性约束：时间置信先验（Temporal Confidence Prior, TCP）和时间参考传播（Temporal Reference Propagation, TRP）。我们通过提出YesTrack-MOT，进一步验证了这一判别范式的通用性，这是一种简单但极为有效的通用多目标跟踪（MOT）实例。在Refer-KITTI和Refer-KITTI-V2上的实验表明，YesTrack显著优于现有的最先进方法，同时保持高效，即使在使用最小变体的Qwen3-VL时也是如此。代码已发布在 https://github.com/ggbondrighthere24/YesTrack。",
+  "arxiv_id": "2609.02318",
+  "arxiv_url": "https://arxiv.org/abs/2609.02318v1",
+  "authors": [
+    "Quansheng Hu",
+    "Qin Sun",
+    "Qiansen Dai",
+    "Jin Ding",
+    "Wan Zhang",
+    "Xue Zhou",
+    "Jianxiao Zou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02318",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.860290+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02318v1",
+  "published_at": "2026-09-02T09:04:43Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02318v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "YesTrack: Referring Multi-Object Tracking via MLLM-based Yes/No Verification",
+  "title_zh": "YesTrack：基于MLLM的是/否验证的指称多目标跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2609.02318"
+}

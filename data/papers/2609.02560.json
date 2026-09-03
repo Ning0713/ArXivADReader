@@ -1,0 +1,55 @@
+{
+  "abstract": "Four-dimensional (4D) Radar is a powerful sensing modality capable of detecting surrounding three-dimensional (3D) objects under diverse weather conditions and providing Doppler-based motion information. However, raw 4D Radar signals contain significant clutter from road surfaces, guardrails, and surrounding vehicles, along with multipath-induced ghost reflections and the receiver's inherent noise floor. Consequently, preprocessing algorithms designed to remove such invalid measurements often make the Radar data excessively sparse. Moreover, the Doppler measurements provided by 4D Radar describe only the radial component of an object's velocity, limiting their ability to recover the full motion state. In this paper, we introduce a stereo 4D Radar-based 3D object detection framework that exploits the geometric disparity between left and right Radars to estimate the absolute velocity of objects and achieve more robust perception through the fusion of their complementary features. The effectiveness of the proposed framework is validated on our in-house stereo 4D Radar dataset, demonstrating performance gains of 8.82 points in AP 3D and 9.0 points in AP BEV over state-of-the-art mono 4D Radar baselines. These results demonstrate that absolute velocity estimation combined with stereo geometry-aware feature fusion leads to substantial improvements in 3D object detection.",
+  "abstract_zh": "四维（4D）雷达是一种强大的传感方式，能够在多种天气条件下检测周围的三维（3D）物体，并提供基于多普勒的运动信息。然而，原始的4D雷达信号包含来自路面、护栏和周围车辆的显著杂波，以及由于多路径效应引起的虚假反射和接收器固有的噪声底。因此，旨在去除这些无效测量的预处理算法往往使雷达数据过于稀疏。此外，4D雷达提供的多普勒测量仅描述物体速度的径向分量，限制了其恢复完整运动状态的能力。在本文中，我们提出了一种基于立体4D雷达的3D物体检测框架，该框架利用左右雷达之间的几何差异来估计物体的绝对速度，并通过融合其互补特征实现更强大的感知。我们在自建的立体4D雷达数据集上验证了所提出框架的有效性，结果显示在AP 3D上性能提升了8.82分，在AP BEV上提升了9.0分，相较于最先进的单通道4D雷达基线。这些结果表明，结合绝对速度估计与立体几何感知特征融合能够显著提升3D物体检测的性能。",
+  "arxiv_id": "2609.02560",
+  "arxiv_url": "https://arxiv.org/abs/2609.02560v1",
+  "authors": [
+    "Seung-Hyun Song",
+    "Dong-Hee Paek",
+    "Woong-Chan Byun",
+    "Seung-Hyun Kong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02560",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.875439+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02560v1",
+  "published_at": "2026-09-02T13:13:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "车辆",
+      "bev",
+      "3d object detection",
+      "4d radar",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "标题命中自动驾驶专用技术",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 26
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02560v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "Stereo 4D Radar for 3D Object Detection: Integrating Geometric Alignment and Absolute Velocity Estimation",
+  "title_zh": "立体4D雷达用于3D物体检测：几何对齐与绝对速度估计的结合",
+  "translation_url": "https://hjfy.top/arxiv/2609.02560"
+}

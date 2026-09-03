@@ -1,0 +1,58 @@
+{
+  "abstract": "This paper investigates how a production transitional autonomous vehicle (tAV) develops and executes mandatory lane-change decisions. Using 150 controlled mandatory lane changes from the NC-tALC experiments, the study examines whether the eventual target gap is observable before lateral movement begins and how the tAV progresses longitudinally from that pre-lane-change state to lane-change start. Signal time (SigT) is defined as an operational pre-lane-change-start reference point. A Firth logistic regression predicts whether the tAV eventually merges in front of or behind its nearest target-lane vehicle using relative position and relative speed at SigT. Longitudinal progression from SigT to lane-change start is then examined separately for in-position and repositioning cases. The traffic state at SigT contains substantial information about eventual target-gap choice and provides meaningful lead time before lateral movement begins. The proposed formulation predicts whether the tAV remains with its current gap or repositions to a neighboring gap by moving forward or dropping back, including cases with longitudinal overlap and ambiguous current-gap geometry. The model achieves an average five-fold cross-validated accuracy of 0.89. Results also provide preliminary evidence that in-position and repositioning cases follow different longitudinal pathways from SigT to lane-change start. These findings support a two-stage conjecture of the observable lane-change process: longitudinal preparation from SigT to lane-change start, followed by lateral maneuver execution. The formulation applies to in-position, repositioning, and longitudinally overlapping cases, and can support lane-change models that distinguish target-gap choice from lateral-onset timing while representing longitudinal preparation before lateral movement begins.",
+  "abstract_zh": "本文研究了一种生产型过渡性自动驾驶车辆（tAV）如何制定和执行强制变道决策。通过分析150次来自NC-tALC实验的受控强制变道，研究探讨了在横向移动开始之前，最终目标间隙是否可观察，以及tAV如何从该预变道状态纵向推进到变道开始。信号时间（SigT）被定义为一个操作性的预变道开始参考点。使用Firth逻辑回归预测tAV最终是在其最近目标车道车辆前方还是后方合并，依据SigT时的相对位置和相对速度。然后分别对在位和重新定位的情况考察从SigT到变道开始的纵向进展。SigT时的交通状态包含关于最终目标间隙选择的重要信息，并在横向移动开始之前提供了有意义的提前时间。所提出的模型预测tAV是保持当前间隙还是通过向前移动或后退来重新定位到相邻间隙，包括纵向重叠和当前间隙几何形状模糊的情况。该模型的平均五折交叉验证准确率为0.89。结果还提供了初步证据，表明在位和重新定位的情况在从SigT到变道开始的过程中遵循不同的纵向路径。这些发现支持了可观察变道过程的两阶段假设：从SigT到变道开始的纵向准备，随后是横向机动执行。该模型适用于在位、重新定位和纵向重叠的情况，并可以支持区分目标间隙选择与横向开始时机的变道模型，同时表示在横向移动开始之前的纵向准备。",
+  "arxiv_id": "2609.02575",
+  "arxiv_url": "https://arxiv.org/abs/2609.02575v1",
+  "authors": [
+    "Zeyu Mu",
+    "Danjue Chen",
+    "Abhinav Sharma",
+    "George F. List"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02575",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.817964+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02575v1",
+  "published_at": "2026-09-02T13:20:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "vehicle",
+      "traffic",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02575v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位"
+    ]
+  },
+  "title": "Pre-Lane-change Signal in Transitional Autonomous Vehicles: Results from Controlled Experiments",
+  "title_zh": "过渡性自动驾驶车辆中的预变道信号：来自受控实验的结果",
+  "translation_url": "https://hjfy.top/arxiv/2609.02575"
+}

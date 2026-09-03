@@ -1,0 +1,54 @@
+{
+  "abstract": "Neural map matchers estimate an image's 3-DoF pose relative to a 2D map. These models are trained on large-scale datasets of geo-referenced images, whose position and heading labels often contain noise that affects the trained models. To address this, we present AutoCompass, a supervision approach for training neural map matchers from inaccurate absolute pose labels. First, we show that heading labels are unnecessary: trained from raw GPS labels, models learn to predict accurate headings, automatically. Second, defining a tolerance region around raw GPS improves positional accuracy. Third, if available, our supervision uses relative poses between training images, obtained via SLAM or SfM, which provide a more accurate training signal. Across driving and egocentric benchmarks, AutoCompass consistently outperforms counterparts trained with the usual strong reliance on absolute pose labels.",
+  "abstract_zh": "神经地图匹配器估计图像相对于二维地图的三自由度姿态。这些模型是在大规模的地理参考图像数据集上训练的，这些数据集的位置信息和朝向标签通常包含噪声，从而影响训练模型的效果。为了解决这个问题，我们提出了AutoCompass，一种从不准确的绝对姿态标签中训练神经地图匹配器的监督方法。首先，我们展示了朝向标签并非必要：从原始GPS标签训练的模型能够自动学习预测准确的朝向。其次，在原始GPS周围定义一个容忍区域可以提高位置精度。第三，如果可用，我们的监督方法利用通过SLAM或SfM获得的训练图像之间的相对姿态，这提供了更准确的训练信号。在驾驶和自我中心基准测试中，AutoCompass始终优于那些通常强烈依赖绝对姿态标签的对比方法。",
+  "arxiv_id": "2609.02798",
+  "arxiv_url": "https://arxiv.org/abs/2609.02798v1",
+  "authors": [
+    "Javier Tirado-Garín",
+    "Alan Savio Paul",
+    "Shuai Chen",
+    "Axel Barroso-Laguna",
+    "Tommaso Cavallari",
+    "Daniyar Turmukhambetov",
+    "Victor Adrian Prisacariu",
+    "Eric Brachmann"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02798",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.887770+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02798v1",
+  "published_at": "2026-09-02T16:31:50Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "visual localization"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02798v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "本文研究自动驾驶及自我中心视觉场景中的地图匹配与视觉定位问题，提出从含噪GPS等弱标签以及SLAM或SfM生成的相对姿态中学习的监督方法，以提升图像相对于二维公共地图的位置和朝向估计精度。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "AutoCompass: Accurate Visual Localization on Public Maps by Learning from Weak Labels",
+  "title_zh": "AutoCompass：通过从弱标签学习实现公共地图上的准确视觉定位",
+  "translation_url": "https://hjfy.top/arxiv/2609.02798"
+}

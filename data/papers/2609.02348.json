@@ -1,0 +1,52 @@
+{
+  "abstract": "Traffic sign detection faces a long-tailed data distribution. Many rare signs matter as much as common ones from a regulatory standpoint, yet they have very few samples. Generative data augmentation is one way out. General-purpose inpainting models, however, distort digits, deform geometry and perspective, and shift colours when applied directly to sign regions. We trace this to a single gap: the conditioning signal is too abstract for the physical composition of a sign. We propose a structured-prior-guided diffusion inpainting framework with physical consistency. It injects the semantic, appearance and geometric priors of a sign through three orthogonal pathways: a JSON-formatted text prompt, a front-view vector template rendered with measured dominant colours (via IP-Adapter), and an affine-aligned vector template (via ControlNet). Two physical consistency losses constrain colour with a CIELAB chromaticity $L_1$ term and edge structure with a Sobel gradient term. We train by self-supervised reconstruction on a large set of images collected in-house at AMAP, then evaluate zero-shot on the public TT100K-2021 dataset, a different source. Our method uses a Stable Diffusion 1.5 backbone of about 1.4B parameters. It beats seven representative competitors on every metric of reconstruction fidelity, physical consistency and semantic controllability. Its OCR exact-match rate reaches 91.1\\%, against 44.2\\% for the 12B industrial model FLUX.1 Fill [dev], and it needs only $1/14$ of that model's inference time. Leave-one-out ablations confirm that each of the three prior pathways and both loss terms contribute on their own. In downstream detection, the synthetic data raises the group-pooled AP50 of rare classes by $1.23\\times$ to $7.40\\times$ over a real-data-only baseline. Code and pre-trained models are available at https://github.com/52hz-whale/TrafficSignInpaint.",
+  "abstract_zh": "交通标志检测面临长尾数据分布的问题。许多稀有标志在监管方面与常见标志同样重要，但样本数量却非常有限。生成数据增强是一种解决方案。然而，通用的修复模型在直接应用于标志区域时，会扭曲数字、变形几何和透视，并且改变颜色。我们将此归因于一个单一的缺口：条件信号对于标志的物理组成过于抽象。我们提出了一种基于结构先验引导的扩散修复框架，具有物理一致性。该框架通过三条正交路径注入标志的语义、外观和几何先验：一个JSON格式的文本提示、一个使用测量主导颜色（通过IP-Adapter）渲染的正视向量模板，以及一个仿射对齐的向量模板（通过ControlNet）。两个物理一致性损失通过CIELAB色度$L_1$项约束颜色，通过Sobel梯度项约束边缘结构。我们在AMAP内部收集的大量图像上进行自监督重建训练，然后在公共的TT100K-2021数据集上进行零-shot评估，该数据集来源不同。我们的方法使用约14亿参数的Stable Diffusion 1.5骨干网络。在重建保真度、物理一致性和语义可控性等各项指标上超越了七个代表性竞争对手。其OCR精确匹配率达到91.1\\%，而12B工业模型FLUX.1 Fill [dev]的匹配率为44.2\\%，且只需该模型推理时间的$1/14$。逐一剔除的消融实验确认了三条先验路径和两个损失项各自的贡献。在下游检测中，合成数据将稀有类别的组池AP50提高了$1.23 imes$至$7.40 imes$，相较于仅使用真实数据的基线。代码和预训练模型可在https://github.com/52hz-whale/TrafficSignInpaint获取。",
+  "arxiv_id": "2609.02348",
+  "arxiv_url": "https://arxiv.org/abs/2609.02348v1",
+  "authors": [
+    "Luo Li",
+    "Chongchong Huang",
+    "Jun Jia",
+    "Qiang Gao",
+    "Xinlong Liu",
+    "Gui Yang",
+    "Liang Cao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02348",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.862123+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02348v1",
+  "published_at": "2026-09-02T09:22:23Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02348v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "本文面向自动驾驶感知中的稀有交通标志样本不足问题，提出一种结合语义、颜色和几何结构先验的扩散式图像修复与数据增强方法。通过向量模板、IP-Adapter、ControlNet以及颜色和边缘一致性损失，生成具有更准确文字、形状、透视和颜色的交通标志图像。跨数据源实验和下游检测结果表明，该方法能够有效提升稀有交通标志类别的检测性能，适合作为交通标志感知的数据增强方案。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Structured-Prior-Guided Diffusion Inpainting with Physical Consistency for Traffic Sign Augmentation",
+  "title_zh": "基于结构先验引导的物理一致性扩散修复用于交通标志增强",
+  "translation_url": "https://hjfy.top/arxiv/2609.02348"
+}

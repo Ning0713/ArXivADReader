@@ -1,0 +1,48 @@
+{
+  "abstract": "Future-aware representations and world models are increasingly used in proposal-based autonomous-driving planners to improve trajectory selection. However, improvements in proxy objectives or restricted subsets are often interpreted as planning gains without verifying proposal ordering, selected trajectories, full-scale utility, and critical driving components. We propose the Proxy-to-Decision Transfer (PDT) Framework, an analysis framework that evaluates when learned future information supports a reliable driving-performance improvement claim. Its Decision-Transfer Decomposition Module localizes value loss through score margins, switch-conditioned utility, and support-versus-selection regret. Its Reliability-Constrained Validation Module requires exact pairing, a minimum meaningful effect, scale-expanded confirmation, safety non-compensation, sequential comparability, and family-level robustness. On a representative future-aware planner evaluated with NAVSIM-v1, component BCE decreases from 0.705 to 0.530 while held selected PDM decreases from 0.963 to 0.961. A separate candidate improves a 512-record prefix by 0.00909, with a scene-bootstrap 95% interval of [0.000744, 0.0177], but its 2048-record and complete-support intervals include zero. A proposal-level replay further confirms the switch-utility decomposition, yet none of 432 screened configurations passes the two-half, two-seed robustness gate. PDT therefore identifies where decision transfer fails or remains indeterminate across proxy, subset, aggregate, and selection evidence.",
+  "abstract_zh": "未来感知的表征和世界模型在基于提案的自主驾驶规划者中被越来越多地使用，以改善轨迹选择。然而，代理目标或限制子集的改进常常被解读为规划收益，而未验证提案排序、选定轨迹、全尺度效用和关键驾驶组件。我们提出了代理到决策转移（Proxy-to-Decision Transfer, PDT）框架，这是一个分析框架，用于评估何时学习到的未来信息支持可靠的驾驶性能提升声明。其决策转移分解模块通过得分边际、切换条件效用和支持与选择的遗憾来定位价值损失。其可靠性约束验证模块要求精确配对、最小有意义效应、规模扩展确认、安全非补偿、序列可比性和家族级鲁棒性。在使用NAVSIM-v1评估的代表性未来感知规划者上，组件BCE从0.705降至0.530，而保持选定的PDM从0.963降至0.961。一个单独的候选者将512条记录的前缀提高了0.00909，场景引导的95%区间为[0.000744, 0.0177]，但其2048条记录和完全支持区间包含零。提案级重放进一步确认了切换效用分解，但432个筛选配置中没有一个通过两个半、两个种子的鲁棒性门。因此，PDT识别出决策转移在代理、子集、聚合和选择证据中失败或保持不确定的地方。",
+  "arxiv_id": "2609.02688",
+  "arxiv_url": "https://arxiv.org/abs/2609.02688v1",
+  "authors": [
+    "Yikai Wu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02688",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.820306+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02688v1",
+  "published_at": "2026-09-02T14:55:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02688v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "From Proxy Learning to Driving Decisions: A Transfer-Based Framework for Evaluating Future-Aware Autonomous Driving Planners",
+  "title_zh": "从代理学习到决策驱动：一个基于转移的框架用于评估未来感知的自主驾驶规划者",
+  "translation_url": "https://hjfy.top/arxiv/2609.02688"
+}

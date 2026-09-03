@@ -1,0 +1,56 @@
+{
+  "abstract": "LiDAR-based semantic segmentation is a core perception module for autonomous vehicles and mobile robots. Despite the strong performance of recent state-of-the-art methods on standard benchmarks, existing evaluation protocols remain focused on clean, single-domain settings and fine-grained label taxonomies, leaving deployment readiness largely unassessed. Real-world systems must handle safety-critical label semantics, degraded sensing conditions, and cross-domain variability, yet no unified protocol currently addresses all three aspects together. In this paper, we propose a structured evaluation protocol that assesses the deployment readiness of LiDAR semantic segmentation models along three complementary dimensions: (i) coarse-label evaluation aligned with autonomous driving safety priorities, revealing how label granularity affects different methods; (ii) robustness under eight types of LiDAR corruptions designed to emulate real-world atmospheric, geometric, and sensor degradations; and (iii) domain generalization across datasets without adaptation. The evaluation includes inference speed measured on an embedded Jetson AGX Orin platform, directly reflecting deployment constraints. Our results show that fine-grained benchmark rankings do not always reflect safety-relevant performance, that all methods experience substantial degradation under corruptions with architecture-dependent robustness characteristics, and that current domain generalization remains insufficient for reliable deployment. These findings expose concrete gaps between benchmark performance and deployment readiness, and provide a reference protocol for more practically grounded evaluation of LiDAR semantic segmentation.",
+  "abstract_zh": "基于LiDAR的语义分割是自动驾驶汽车和移动机器人核心的感知模块。尽管近期最先进的方法在标准基准测试中表现强劲，但现有的评估协议仍然集中于干净的单一领域设置和细粒度标签分类，导致部署准备情况未得到充分评估。现实世界的系统必须处理安全关键的标签语义、退化的感知条件和跨领域的变异性，但目前没有统一的协议能够同时解决这三个方面。在本文中，我们提出了一种结构化的评估协议，从三个互补的维度评估LiDAR语义分割模型的部署准备情况：(i) 与自动驾驶安全优先事项对齐的粗略标签评估，揭示标签粒度如何影响不同方法；(ii) 在八种LiDAR损坏类型下的鲁棒性评估，这些损坏旨在模拟现实世界中的大气、几何和传感器退化；(iii) 在不进行适应的情况下跨数据集的领域泛化。评估还包括在嵌入式Jetson AGX Orin平台上测量的推理速度，直接反映部署约束。我们的结果表明，细粒度基准排名并不总是反映与安全相关的性能，所有方法在损坏下都经历了显著的性能下降，且具有架构依赖的鲁棒性特征，而当前的领域泛化仍不足以实现可靠的部署。这些发现揭示了基准性能与部署准备之间的具体差距，并为更实际的LiDAR语义分割评估提供了参考协议。",
+  "arxiv_id": "2609.02830",
+  "arxiv_url": "https://arxiv.org/abs/2609.02830v1",
+  "authors": [
+    "Samir Abou Haidar",
+    "Alexandre Chariot",
+    "Mehdi Darouich",
+    "Cyril Joly",
+    "Jean-Emmanuel Deschaud"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02830",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.821534+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02830v1",
+  "published_at": "2026-09-02T17:15:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02830v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Toward Robust LiDAR Semantic Segmentation for Real-World Deployment: Evaluation under Coarse Labels, Adverse Conditions, and Domain Shifts",
+  "title_zh": "面向实际部署的鲁棒LiDAR语义分割：在粗略标签、不利条件和领域转移下的评估",
+  "translation_url": "https://hjfy.top/arxiv/2609.02830"
+}

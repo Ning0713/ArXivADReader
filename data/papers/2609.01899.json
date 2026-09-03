@@ -1,0 +1,64 @@
+{
+  "abstract": "Multi-camera systems are increasingly practical for robotics, AR/VR, and autonomous driving because complementary views reduce depth ambiguity and preserve visibility under occlusion. Existing point-tracking benchmarks, however, focus on a single video or static multi-camera rigs. None test long-term 3D point tracking across several synchronized views under camera motion. We introduce TAPVid-MV (Tracking Any Point in Video across Multiple Views), the first benchmark for this setting. It contains a curated set of 284 sequences, 1,142 calibrated camera streams, and 109,769 point tracks across seven subsets spanning indoor and outdoor domains, from robotics and human activity to driving and synthetic procedural scenes. We obtain these trajectories using dataset-specific auxiliary modalities: sensor depth, LiDAR, SLAM and SfM points, human meshes, posed object meshes, and simulation. Every sequence and trajectory is visually verified by human annotators. Across more than 30 baselines, no method comes close to solving the task. Surprisingly, existing multi-view point trackers do not consistently outperform monocular point trackers. By evaluating reconstruction and point tracking on the same datasets, TAPVid-MV helps distinguish errors in recovered geometry from errors in point correspondence. Through this joint analysis, we identify geometry recovery as a major bottleneck for accurate 3D point tracking. Beyond multi-view 3D point tracking, our released annotations support monocular 2D and 3D point tracking, future-trajectory prediction, and 4D reconstruction.",
+  "abstract_zh": "多摄像头系统在机器人技术、增强现实/虚拟现实和自动驾驶等领域越来越实用，因为互补视角可以减少深度歧义并在遮挡情况下保持可见性。然而，现有的点跟踪基准主要集中在单一视频或静态多摄像头设备上。没有任何基准测试在相机运动下跨多个同步视角进行长期三维点跟踪。我们提出了TAPVid-MV（Tracking Any Point in Video across Multiple Views），这是第一个针对这种设置的基准。它包含了一组经过精心挑选的284个序列、1,142个校准的摄像头流和109,769个点轨迹，涵盖了室内和室外领域的七个子集，从机器人技术和人类活动到驾驶和合成程序场景。我们使用数据集特定的辅助模态获取这些轨迹：传感器深度、激光雷达、SLAM和SfM点、人类网格、姿态物体网格以及仿真。每个序列和轨迹都经过人工标注者的视觉验证。在超过30个基线方法中，没有任何方法接近解决这一任务。令人惊讶的是，现有的多视角点跟踪器并没有始终优于单目点跟踪器。通过在相同数据集上评估重建和点跟踪，TAPVid-MV帮助区分恢复几何体中的错误与点对应中的错误。通过这种联合分析，我们确定几何体恢复是准确的三维点跟踪的主要瓶颈。除了多视角三维点跟踪外，我们发布的注释还支持单目二维和三维点跟踪、未来轨迹预测和四维重建。",
+  "arxiv_id": "2609.01899",
+  "arxiv_url": "https://arxiv.org/abs/2609.01899v1",
+  "authors": [
+    "Skanda Koppula",
+    "Frano Rajic",
+    "Abdullah Faiz Ur Rahman",
+    "Yi Yang",
+    "Ignacio Rocco",
+    "Jeet Thakwani",
+    "Rishabh Kabra",
+    "Andrew Zisserman",
+    "Joao Carreira",
+    "Siyu Tang",
+    "Carl Doersch",
+    "Gabriel Brostow"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-01899",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.836971+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.01899v1",
+  "published_at": "2026-09-01T21:58:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.01899v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "TAPVid-MV: A Benchmark for Tracking Any Point in 3D Across Multiple Views",
+  "title_zh": "TAPVid-MV：一个用于在多个视角中跟踪任意三维点的基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.01899"
+}

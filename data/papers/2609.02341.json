@@ -1,0 +1,58 @@
+{
+  "abstract": "Vision-Language-Action models (VLAs) have shown strong potential in autonomous driving by leveraging multimodal pretraining for instruction following, visual reasoning, and scene-level generalization. In robotic manipulation, scaling VLA fine-tuning across multiple robot setups--especially when unifying representations across embodiments--has been shown to improve in-dataset performance and cross-embodiment generalization; in autonomous driving, however, VLAs remain largely trained on individual datasets and are rarely evaluated for zero-shot transfer to unseen datasets and camera rigs; furthermore naively adding more datasets to the training data does not necessarily lead to better performance within seen embodiments. To address these problems, we study multi-dataset training for the driving task and BEV-Forcing, an auxiliary objective that transfers ground-plane object-layout information from a specialized Bird's-Eye-View model into the VLA backbone. By encouraging the model to represent object position through a shared BEV spatial interface, we show that an auxiliary task such as BEV-Forcing can improve both in-distribution and out-of-distribution performance when training on a small number of camera rigs. As the number of training embodiments increases, however, the benefits of the auxiliary task are reduced; we present this as evidence that new techniques in the literature may see their benefits diminish when simply scaling up training diversity, which motivates presenting results taking into account data scaling.",
+  "abstract_zh": "视觉-语言-动作模型（VLAs）通过利用多模态预训练在指令遵循、视觉推理和场景级泛化方面展现了在自动驾驶中的强大潜力。在机器人操作中，跨多个机器人设置进行VLA微调的规模化——特别是在跨体态统一表示时——已被证明可以提高数据集内性能和跨体态泛化；然而，在自动驾驶中，VLAs仍然主要在单个数据集上进行训练，并且很少评估其在未见数据集和摄像机设备上的零样本迁移能力；此外，简单地将更多数据集添加到训练数据中并不一定会导致在已见体态中的更好性能。为了解决这些问题，我们研究了驾驶任务的多数据集训练和BEV-Forcing，这是一种辅助目标，将来自专门的鸟瞰图模型的地面平面物体布局信息转移到VLA主干中。通过鼓励模型通过共享的BEV空间接口表示物体位置，我们表明，像BEV-Forcing这样的辅助任务可以在少量摄像机设备上训练时提高数据集内和数据集外的性能。然而，随着训练体态数量的增加，辅助任务的益处会减少；我们将此视为证据，表明文献中的新技术在简单扩大训练多样性时可能会看到其益处减弱，这促使我们在考虑数据扩展的情况下呈现结果。",
+  "arxiv_id": "2609.02341",
+  "arxiv_url": "https://arxiv.org/abs/2609.02341v1",
+  "authors": [
+    "Caio Azevedo",
+    "Stefano Sabatini",
+    "Sascha Hornauer",
+    "Fabien Moutarde"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-03#paper-2609-02341",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-03T09:23:05.861499+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.02341v1",
+  "published_at": "2026-09-02T09:17:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "vision-language-action",
+      "robot",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-09-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.02341v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "BEV/Occupancy",
+      "仿真/数据"
+    ]
+  },
+  "title": "Towards Zero-Shot Transfer Across Embodiments For Driving VLAs",
+  "title_zh": "面向跨体态的零样本迁移驾驶视觉-语言-动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.02341"
+}
