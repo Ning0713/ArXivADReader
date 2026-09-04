@@ -1,0 +1,62 @@
+{
+  "abstract": "Bridging the gap between the discrete reasoning of Vision-Language Models and the continuous, physics-constrained nature of autonomous driving remains a significant challenge. In this work, we introduce LaPla, a unified Vision-Language-Action (VLA) framework featuring latent-aligned planning to seamlessly ground semantic understanding in precise motion execution. We first design an action tokenizer based on a residual vector-quantized variational autoencoder (VQ-VAE), capturing vehicle kinematics and encoding trajectory features into a structured latent space. Rather than discrete codebook lookups that inevitably introduce quantization errors, LaPla repurposes this representation as a physical prior to bridge the modality gap between high-dimensional semantics and the raw action space. Specifically, given multimodal inputs integrating multi-view images, historical actions, and textual instructions, LaPla incorporates concurrent action queries to causally attend to the multimodal context in a single forward pass, projecting hidden states directly into the pretrained VQ-VAE latent space. The frozen decoder then translates these continuous latents into actions, effectively eliminating quantization errors and ensuring physically plausible trajectories while bypassing time-consuming autoregressive generation. Extensive experiments on the nuScenes benchmark demonstrate that LaPla achieves competitive open-loop performance, reducing long-horizon L2 error by 15.52% compared to state-of-the-art VLA methods. Closed-loop evaluations on the NVIDIA AlpaSim simulator further confirm its superior capability in ensuring smooth driving progress, improving the success rate by 33.34 percentage points with significantly reduced inference latency.",
+  "abstract_zh": "弥合视觉-语言模型的离散推理与自主驾驶的连续、物理约束特性之间的差距仍然是一个重大挑战。在本研究中，我们提出了LaPla，一个统一的视觉-语言-动作（VLA）框架，采用潜在对齐规划，将语义理解无缝地与精确的运动执行结合起来。我们首先设计了一种基于残差向量量化变分自编码器（VQ-VAE）的动作标记器，捕捉车辆运动学并将轨迹特征编码到结构化的潜在空间中。与不可避免引入量化误差的离散代码本查找不同，LaPla将这种表示重新利用作为物理先验，以弥合高维语义与原始动作空间之间的模态差距。具体而言，LaPla在单次前向传递中，结合多视角图像、历史动作和文本指令的多模态输入，融入并发动作查询，以因果方式关注多模态上下文，直接将隐藏状态投影到预训练的VQ-VAE潜在空间中。冻结的解码器随后将这些连续潜在变量转换为动作，有效消除了量化误差，并确保物理上合理的轨迹，同时避免了耗时的自回归生成。在nuScenes基准上的广泛实验表明，LaPla在开放循环性能上具有竞争力，与最先进的VLA方法相比，长时间范围L2误差降低了15.52%。在NVIDIA AlpaSim模拟器上的闭环评估进一步确认了其在确保平稳驾驶进程方面的优越能力，成功率提高了33.34个百分点，同时显著减少了推理延迟。",
+  "arxiv_id": "2609.04070",
+  "arxiv_url": "https://arxiv.org/abs/2609.04070v1",
+  "authors": [
+    "Ruoyu Yao",
+    "Yusen Xie",
+    "Qingzhao Liu",
+    "Pei Liu",
+    "Zewei Yang",
+    "Yipeng Zhu",
+    "Xiaolong Wang",
+    "Jun Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-04070",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.623933+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04070v1",
+  "published_at": "2026-09-03T16:42:11Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 77
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04070v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving",
+  "title_zh": "来自离散思维的连续动作：端到端自主驾驶的潜在对齐规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.04070"
+}

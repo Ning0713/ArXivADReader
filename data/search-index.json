@@ -1,6 +1,323 @@
 {
-  "generated_at": "2026-09-03T09:24:29.757286+00:00",
+  "generated_at": "2026-09-04T09:18:06.573700+00:00",
   "items": [
+    {
+      "abstract": "Online 3D reconstruction models perform poorly on long videos. This happens because regressing poses relative to a fixed first-frame anchor forces extrapolation far beyond the training distribution. Small drifts accumulate and amplify into significant geometric collapse. However, we observe that per-frame depth remains stable throughout this failure. The backbone's local geometry remains intact; only the global pose head breaks down. Motivated by this decoupling, we introduce Scal3R. This approach reformulates online reconstruction as multi-reference relative pose querying. We use lightweight learnable tokens, which make up about ~1% of the parameters, and inject them into a completely frozen backbone via asymmetric attention. This setup queries poses relative to multiple past keyframes. An online pose-graph optimization system with loop closure suppresses long-range drift. Scal3R reaches convergence in 8 hours on a single GPU. It reduces the average ATE by over 60% on KITTI compared to the online baseline. It also achieves state-of-the-art performance across Virtual KITTI, Sintel, TUM-Dynamic, ScanNet, and 7-Scenes. Project page: https://linjohnss.github.io/scal3r/",
+      "abstract_zh": "在线三维重建模型在长视频上的表现较差。这是因为相对于固定的第一帧锚点回归姿态迫使模型进行超出训练分布的外推。小的漂移会累积并放大为显著的几何崩溃。然而，我们观察到每帧的深度在这一失败过程中保持稳定。主干网络的局部几何结构保持完整；只有全局姿态头崩溃。基于这一解耦现象，我们提出了Scal3R。该方法将在线重建重新表述为多参考相对姿态查询。我们使用轻量级可学习的标记，这些标记约占参数的1%，并通过非对称注意力将其注入到完全冻结的主干网络中。该设置相对于多个过去的关键帧查询姿态。一个带有环闭合的在线姿态图优化系统抑制了长距离漂移。Scal3R在单个GPU上8小时内达到收敛。与在线基线相比，它在KITTI上将平均绝对轨迹误差（ATE）降低了超过60%。它还在Virtual KITTI、Sintel、TUM-Dynamic、ScanNet和7-Scenes上实现了最先进的性能。项目页面：https://linjohnss.github.io/scal3r/",
+      "authors": [
+        "Chin-Yang Lin",
+        "Yang-Che Sun",
+        "Cheng Sun",
+        "Fu-En Yang",
+        "Min-Hung Chen",
+        "Yen-Yu Lin",
+        "Wei-Chen Chiu",
+        "Yu-Lun Liu"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.04201",
+      "tags": [
+        "深度/几何",
+        "预测/规划"
+      ],
+      "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
+      "title_zh": "Scal3R：学习高效的多相对姿态查询以实现可扩展的在线三维重建",
+      "url": "/daily/2026-09-04/#paper-2609-04201"
+    },
+    {
+      "abstract": "This paper presents a new method for headland coverage path planning for arable fields. Several earlier approaches suggest covering the headland with nested polygons and smooth turns, however, covering the field corners entirely requires manoeuvres with reversing. In the new method, the polygon corners are modified to allow a reversing turn. A comparison to two other methods considering gap, overlap, and crossing the field boundary shows an improvement in the coverage result especially in field corners of around 90 degrees, and 240 degrees and above. Applicability of the new method is shown with several examples of real polygonal field maps.",
+      "abstract_zh": "本文提出了一种新的农业耕作领域的边界覆盖路径规划方法。早期的一些方法建议使用嵌套多边形和光滑转弯来覆盖边界，然而，完全覆盖田地角落需要进行倒车操作。在新方法中，多边形的角落被修改以允许倒车转弯。与考虑间隙、重叠和穿越田地边界的其他两种方法的比较显示，特别是在约90度和240度及以上的田地角落，覆盖结果有所改善。通过多个实际多边形田地地图的示例展示了新方法的适用性。",
+      "authors": [
+        "Riikka Soitinaho",
+        "Timo Oksanen"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.04103",
+      "tags": [
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "Corner Cases: Headland Coverage Path Planning for Autonomous Driving in Arable Farming",
+      "title_zh": "边角案例：农业耕作中自主驾驶的边界覆盖路径规划",
+      "url": "/daily/2026-09-04/#paper-2609-04103"
+    },
+    {
+      "abstract": "Bridging the gap between the discrete reasoning of Vision-Language Models and the continuous, physics-constrained nature of autonomous driving remains a significant challenge. In this work, we introduce LaPla, a unified Vision-Language-Action (VLA) framework featuring latent-aligned planning to seamlessly ground semantic understanding in precise motion execution. We first design an action tokenizer based on a residual vector-quantized variational autoencoder (VQ-VAE), capturing vehicle kinematics and encoding trajectory features into a structured latent space. Rather than discrete codebook lookups that inevitably introduce quantization errors, LaPla repurposes this representation as a physical prior to bridge the modality gap between high-dimensional semantics and the raw action space. Specifically, given multimodal inputs integrating multi-view images, historical actions, and textual instructions, LaPla incorporates concurrent action queries to causally attend to the multimodal context in a single forward pass, projecting hidden states directly into the pretrained VQ-VAE latent space. The frozen decoder then translates these continuous latents into actions, effectively eliminating quantization errors and ensuring physically plausible trajectories while bypassing time-consuming autoregressive generation. Extensive experiments on the nuScenes benchmark demonstrate that LaPla achieves competitive open-loop performance, reducing long-horizon L2 error by 15.52% compared to state-of-the-art VLA methods. Closed-loop evaluations on the NVIDIA AlpaSim simulator further confirm its superior capability in ensuring smooth driving progress, improving the success rate by 33.34 percentage points with significantly reduced inference latency.",
+      "abstract_zh": "弥合视觉-语言模型的离散推理与自主驾驶的连续、物理约束特性之间的差距仍然是一个重大挑战。在本研究中，我们提出了LaPla，一个统一的视觉-语言-动作（VLA）框架，采用潜在对齐规划，将语义理解无缝地与精确的运动执行结合起来。我们首先设计了一种基于残差向量量化变分自编码器（VQ-VAE）的动作标记器，捕捉车辆运动学并将轨迹特征编码到结构化的潜在空间中。与不可避免引入量化误差的离散代码本查找不同，LaPla将这种表示重新利用作为物理先验，以弥合高维语义与原始动作空间之间的模态差距。具体而言，LaPla在单次前向传递中，结合多视角图像、历史动作和文本指令的多模态输入，融入并发动作查询，以因果方式关注多模态上下文，直接将隐藏状态投影到预训练的VQ-VAE潜在空间中。冻结的解码器随后将这些连续潜在变量转换为动作，有效消除了量化误差，并确保物理上合理的轨迹，同时避免了耗时的自回归生成。在nuScenes基准上的广泛实验表明，LaPla在开放循环性能上具有竞争力，与最先进的VLA方法相比，长时间范围L2误差降低了15.52%。在NVIDIA AlpaSim模拟器上的闭环评估进一步确认了其在确保平稳驾驶进程方面的优越能力，成功率提高了33.34个百分点，同时显著减少了推理延迟。",
+      "authors": [
+        "Ruoyu Yao",
+        "Yusen Xie",
+        "Qingzhao Liu",
+        "Pei Liu",
+        "Zewei Yang",
+        "Yipeng Zhu",
+        "Xiaolong Wang",
+        "Jun Ma"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.04070",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "端到端驾驶"
+      ],
+      "title": "Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving",
+      "title_zh": "来自离散思维的连续动作：端到端自主驾驶的潜在对齐规划",
+      "url": "/daily/2026-09-04/#paper-2609-04070"
+    },
+    {
+      "abstract": "Generating complete 3D scenes from sparse, unconstrained views is a fundamental challenge in 3D vision which requires reasoning beyond observed content while remaining computationally tractable. Existing feed-forward reconstruction methods are inherently limited to content visible in the input images, while 3D generative modeling is hindered by the high computational cost of dense volumetric representations and the scarcity of large-scale 3D supervision. We introduce SPAR3S, a sparse voxel-aligned 3D latent generative model for conditional scene completion without requiring ground-truth 3D data for supervision. Our key insight is to formulate 3D scene generation in a structured, compact, voxel-aligned 3D latent space where only occupied voxels are represented. We learn this sparse latent space directly from multi-view images using photometric supervision via differentiable 3D Gaussian Splatting. Given a partial set of observed voxels encoded from sparse input views, scene completion reduces to predicting the missing latent tokens and their spatial support within the voxel grid. To this end, we train a masked autoregressive transformer that jointly models voxel occupancy and latent token values, enabling efficient and spatially consistent generation of unseen regions. We demonstrate the effectiveness of our method on synthetic indoor scenes, achieving higher novel-view quality than prior work. We further validate its generalization on RealEstate10k, highlighting its applicability to real-world data.",
+      "abstract_zh": "从稀疏且不受限制的视角生成完整的3D场景是3D视觉中的一个基本挑战，这需要超越观察到的内容进行推理，同时保持计算上的可行性。现有的前馈重建方法本质上仅限于输入图像中可见的内容，而3D生成建模则受到密集体积表示的高计算成本和大规模3D监督稀缺的限制。我们提出了SPAR3S，一种稀疏体素对齐的3D潜在生成模型，用于条件场景补全，无需真实3D数据进行监督。我们的关键见解是将3D场景生成构建在一个结构化、紧凑的体素对齐3D潜在空间中，仅表示被占用的体素。我们通过可微分的3D高斯点云直接从多视角图像中学习这一稀疏潜在空间。给定从稀疏输入视角编码的部分观察体素集，场景补全简化为预测缺失的潜在标记及其在体素网格中的空间支持。为此，我们训练了一个掩蔽自回归变换器，该变换器联合建模体素占用和潜在标记值，从而实现高效且空间一致的未见区域生成。我们在合成室内场景上展示了我们方法的有效性，取得了比之前工作更高的新视角质量。我们进一步验证了其在RealEstate10k上的泛化能力，突显了其在真实世界数据中的适用性。",
+      "authors": [
+        "Thomas Lucas",
+        "Maxime Pietrantoni",
+        "Philippe Weinzaepfel",
+        "Wonjune Cho",
+        "Bardienus Pieter Duisterhof",
+        "Vincent Leroy",
+        "Jerome Revaud"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03931",
+      "tags": [
+        "世界模型/生成",
+        "BEV/Occupancy",
+        "深度/几何"
+      ],
+      "title": "Sparse auto-regressive modeling for scene generation from multi-view images",
+      "title_zh": "基于稀疏自回归建模的多视角图像场景生成",
+      "url": "/daily/2026-09-04/#paper-2609-03931"
+    },
+    {
+      "abstract": "Collaborative perception enhances environment understanding through multi-agent information sharing, but its performance in real-world scenarios is constrained by heterogeneous sensor modalities and model architectures. Recent protocol-based two-stage methods alleviate this problem by mapping heterogeneous features into a shared protocol space; however, independently trained modality-specific converters often generate modality-specific pseudo-protocol distributions, leading to semantic inconsistency and error accumulation, which is particularly pronounced in scenarios with large modality discrepancies. To address this issue, we propose CauseCollab, a causal unified and modality-agnostic network. CauseCollab formulates representation learning in the protocol space from a causal perspective, explicitly disentangling semantic factors from modality-specific statistical confounders via causal metric learning. Meanwhile, CauseCollab adopts context-guided Unified Converter for heterogeneous modalities to ensure cross-modal semantic consistency. In addition, integrating new modalities only requires training adapters with minimal parameters. Extensive experiments on the OPV2V and DAIR-V2X datasets demonstrate that CauseCollab achieves state-of-the-art performance, with more significant gains in scenarios involving large modality gaps.",
+      "abstract_zh": "协同感知通过多智能体信息共享增强环境理解，但其在现实场景中的表现受到异构传感器模态和模型架构的限制。近期基于协议的两阶段方法通过将异构特征映射到共享协议空间来缓解这一问题；然而，独立训练的模态特定转换器通常生成模态特定的伪协议分布，导致语义不一致和错误累积，这在模态差异较大的场景中尤为明显。为了解决这一问题，我们提出了CauseCollab，一种因果统一和模态无关的网络。CauseCollab从因果角度对协议空间中的表示学习进行公式化，明确地将语义因素与模态特定的统计混杂因素通过因果度量学习进行解耦。同时，CauseCollab采用上下文引导的统一转换器处理异构模态，以确保跨模态语义一致性。此外，集成新模态只需训练具有最小参数的适配器。在OPV2V和DAIR-V2X数据集上的大量实验表明，CauseCollab实现了最先进的性能，在涉及大模态差距的场景中获得了更显著的提升。",
+      "authors": [
+        "Weize Li",
+        "Yang Li",
+        "Quan Yuan",
+        "Xiaoyuan Fu",
+        "Guiyang Luo",
+        "Jinglin Li"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03818",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "协同/V2X"
+      ],
+      "title": "CauseCollab: Causal Unified and Modality-Agnostic Network for Heterogeneous Collaborative Perception",
+      "title_zh": "CauseCollab：用于异构协同感知的因果统一和模态无关网络",
+      "url": "/daily/2026-09-04/#paper-2609-03818"
+    },
+    {
+      "abstract": "Simulation is increasingly used to support safety-related decision-making in road transport, particularly for the assessment and approval of automated driving systems (ADS). The complexity of ADS behavior and size of their operational design domains make exclusive reliance on physical testing impractical, leading to extensive use of virtual testing (VT) during the approval phase. This shift raises critical questions regarding the credibility of modelling and simulation (M&S) results used to support road safety decisions. Current VT accreditation approaches in the ADS domain typically rely on validation-only practices, which have been shown to scale poorly when applied to complex, multi-tool simulation environments. To address this limitation, this paper proposes a risk-based framework for assessing the credibility of simulation toolchains used in ADS safety evaluation, drawing inspiration from established practices in other safety-critical domains, notably NASA's STD-7009 for models and simulations. The framework extends traditional verification and validation (V&V) by explicitly linking credibility requirements to the intended use of simulation outputs and to the safety criticality of the decisions they support within the approval process. It provides a lifecycle-oriented assessment scheme integrating toolchain management, modelling assumptions and limitations, verification, validation, and sensitivity analysis. Credibility acceptance thresholds are defined proportionally, allowing differentiated requirements depending on whether simulation is used for exploratory safety analysis, partial decision support, or as a substitute for physical testing. While demonstrated for ADS, the proposed approach is directly applicable to road safety and simulation studies where VT plays a central role in safety assessment and regulatory decision-making.",
+      "abstract_zh": "模拟在道路运输中越来越多地被用于支持与安全相关的决策，特别是在自动驾驶系统（ADS）的评估和批准方面。ADS行为的复杂性以及其操作设计域的广泛性使得单纯依赖物理测试变得不切实际，从而在批准阶段广泛采用虚拟测试（VT）。这一转变引发了关于用于支持道路安全决策的建模和模拟（M&S）结果可信性的重要问题。目前在ADS领域的VT认证方法通常依赖于仅进行验证的实践，而这种方法在应用于复杂的多工具模拟环境时效果不佳。为了解决这一局限性，本文提出了一种基于风险的框架，用于评估在ADS安全评估中使用的模拟工具链的可信性，该框架借鉴了其他安全关键领域的成熟实践，特别是NASA的STD-7009模型和模拟标准。该框架通过明确将可信性要求与模拟输出的预期用途及其在批准过程中支持的决策的安全关键性联系起来，扩展了传统的验证和确认（V&V）。它提供了一种面向生命周期的评估方案，整合了工具链管理、建模假设和局限性、验证、确认和敏感性分析。可信性接受阈值按比例定义，允许根据模拟是用于探索性安全分析、部分决策支持，还是作为物理测试的替代品而设定不同的要求。尽管该方法已在ADS中得到验证，但其提出的方法同样适用于道路安全和模拟研究，在这些研究中，VT在安全评估和监管决策中发挥着核心作用。",
+      "authors": [
+        "Riccardo Dona",
+        "Espedito Rusciano",
+        "Biagio Ciuffo"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03760",
+      "tags": [
+        "安全/异常",
+        "仿真/数据"
+      ],
+      "title": "Virtual Testing of Automated Driving Systems through Credible Simulations",
+      "title_zh": "通过可信模拟对自动驾驶系统进行虚拟测试",
+      "url": "/daily/2026-09-04/#paper-2609-03760"
+    },
+    {
+      "abstract": "As large language models (LLMs) become increasingly capable, the long-term value of AI systems depends not only on solving individual requests, but also on transforming experience and accumulated knowledge into durable, reusable competence. We introduce SimSkill, a self-evolving agent built around the Simulation of Urban MObility (SUMO) traffic simulator. SimSkill identifies capability gaps, generates and solves environment-grounded tasks, verifies solutions through an action--critic loop, and consolidates experience into episodic, procedural, and semantic memory without updating the backbone model. Through autonomous exploration, it builds a reusable library spanning the traffic-simulation workflow. We evaluate SimSkill on two held-out benchmarks with three backbone LLMs and independent artifact-based verification. SimSkill improves verified completion by up to 25 percentage points, while ablations show complementary contributions from procedural and semantic memory. Its benefits remain backbone- and budget-dependent: memory does not improve every model or uniformly reduce inference cost. More broadly, SimSkill illustrates a design paradigm in which natural language preserves and composes computational capabilities, while executable tools and code provide precise and reproducible execution. All code and experimental data are publicly available at https://github.com/qiliuchn/SimSkill-V1.",
+      "abstract_zh": "随着大型语言模型（LLMs）能力的不断增强，人工智能系统的长期价值不仅依赖于解决个别请求，还依赖于将经验和积累的知识转化为持久的、可重用的能力。我们介绍了SimSkill，一个围绕城市交通仿真（Simulation of Urban MObility, SUMO）交通仿真器构建的自我进化代理。SimSkill识别能力差距，生成并解决基于环境的任务，通过行动-评论循环验证解决方案，并将经验整合为情节记忆、程序记忆和语义记忆，而无需更新基础模型。通过自主探索，它建立了一个涵盖交通仿真工作流程的可重用库。我们在两个保留基准上评估SimSkill，使用三种基础LLM和独立的基于工件的验证。SimSkill提高了经过验证的完成率，最多可达25个百分点，而消融实验显示程序记忆和语义记忆的互补贡献。其效益依赖于基础模型和预算：记忆并不改善每个模型，也不均匀降低推理成本。更广泛地说，SimSkill展示了一种设计范式，其中自然语言保留并组合计算能力，而可执行工具和代码提供精确且可重复的执行。所有代码和实验数据均可在 https://github.com/qiliuchn/SimSkill-V1 上公开获取。",
+      "authors": [
+        "Qi Liu",
+        "Qinzheng Wang",
+        "Yiming Bie"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03753",
+      "tags": [
+        "仿真/数据"
+      ],
+      "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+      "title_zh": "SimSkill：一个用于自主掌握交通仿真的终身学习人工智能代理",
+      "url": "/daily/2026-09-04/#paper-2609-03753"
+    },
+    {
+      "abstract": "Autonomous navigation in space requires reliable terrain assessment for safe operations, especially in underground environments with limited communication, computing resources, and power budget. This paper presents a lightweight method for real-time vibration-aware traversability mapping using a Light Detecting And Ranging (LiDAR) point cloud and Inertial Measurement Unit (IMU) measurements. An initial vibration proxy is estimated from terrain geometry by applying Random sample consensus (RANSAC) to local point-cloud patches produced by a Simultaneous Localisation And Mapping (SLAM) algorithm. In parallel, the IMU provides local observations of the vibration experienced by the rover during traversal. The point-cloud-based prediction is then corrected online using Recursive Least Squares, allowing the system to adapt the geometric estimate to the measured rover response. The approach is evaluated in a lunar analogue environment, an outdoor field, and an underground mine.",
+      "abstract_zh": "在太空中的自主导航需要可靠的地形评估以确保安全操作，尤其是在通信、计算资源和电力预算有限的地下环境中。本文提出了一种轻量级的方法，通过光学探测与测距（LiDAR）点云和惯性测量单元（IMU）测量，实现实时振动感知的可通行性映射。通过对由同时定位与地图构建（SLAM）算法生成的局部点云块应用随机样本一致性（RANSAC），初步估计地形几何形状的振动代理。同时，IMU提供了探测器在穿越过程中经历的振动的局部观测。然后，基于点云的预测通过递归最小二乘法在线修正，使系统能够将几何估计适应于测量到的探测器响应。该方法在月球类比环境、户外场地和地下矿井中进行了评估。",
+      "authors": [
+        "Gabriel Manuel Garcia",
+        "Stephanie Aravecchia",
+        "Miguel Angel Olivares-Mendez"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03720",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "多传感器融合"
+      ],
+      "title": "RoughSense: Lightweight Terrain-Induced Rover Vibration Prediction Using Point Clouds and IMU Feedback",
+      "title_zh": "RoughSense：基于点云和IMU反馈的轻量级地形诱导探测器振动预测",
+      "url": "/daily/2026-09-04/#paper-2609-03720"
+    },
+    {
+      "abstract": "We present our submission to the IJCAI 2025 'Counterfactual Routing Competition' (CRC 25). The goal of the competition is to find counterfactual explanations for the shortest path problem. This requires deciding what the minimal changes to a road network would make a route chosen by the user the optimal route. This enables explanations such as \"Your suggested route would indeed have been optimal, if road X were not a bicycle path.\" Our solution models the problem as an integer program, iteratively incorporating constraints until an exact solution is found. In the final evaluation on held-out test instances, our method ranked fourth in solution quality and obtained its solution fastest on every instance, with an average runtime of 9.0 seconds compared to 118.8 seconds for the next-fastest submission.",
+      "abstract_zh": "我们提交了针对 IJCAI 2025 '反事实路径规划竞赛' (Counterfactual Routing Competition, CRC 25) 的方案。该竞赛的目标是为最短路径问题寻找反事实解释。这需要确定对道路网络的最小更改，以使用户选择的路线成为最佳路线。这使得可以提供诸如“如果道路 X 不是自行车道，您建议的路线确实会是最佳路线。”这样的解释。我们的解决方案将该问题建模为一个整数规划，迭代地加入约束，直到找到精确解。在对保留的测试实例进行的最终评估中，我们的方法在解决方案质量上排名第四，并且在每个实例上都以最快的速度获得了解决方案，平均运行时间为 9.0 秒，而下一个最快的提交则为 118.8 秒。",
+      "authors": [
+        "Daniël Vos",
+        "Sterre Lutz"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03707",
+      "tags": [
+        "预测/规划"
+      ],
+      "title": "Counterfactual Routing Using Integer Programming with Constraint Generation",
+      "title_zh": "基于整数规划和约束生成的反事实路径规划",
+      "url": "/daily/2026-09-04/#paper-2609-03707"
+    },
+    {
+      "abstract": "Understanding the composition of large-scale autonomous driving datasets is essential for safety, robustness, and reliable operation across domains. For example, domain shift between locations could lead to the operating environment being misaligned with the training data, resulting in potentially dangerous performance degradation. Yet, existing data analysis pipelines largely rely on metadata, predefined labels, or manual inspection, which provide limited semantic insight or do not scale. This paper studies set difference captioning: given two subsets of images, the goal is to produce a natural-language hypothesis describing differences between the target and reference set. Building on a two-stage formulation, we adapt the method to autonomous driving by focusing on object-centric patches derived from object detection, which simplifies aggregation and enables attribution of differences to specific object instances or categories. To evaluate this setting in-domain, we introduce a new benchmark, AD-Diff Bench. Low-concentration experiments assess the suitability of set-difference-captioning approaches to sparse, real-world differences. We restrict our experiments to open-weight models to support reproducibility and ease of deployment. The proposed benchmark and analysis provide a step towards practical, human-interpretable dataset introspection for autonomous driving datasets. Our implementation and benchmark dataset are available at https://github.com/KIT-MRT/AD-Diff",
+      "abstract_zh": "理解大规模自主驾驶数据集的组成对于安全性、鲁棒性以及跨领域的可靠操作至关重要。例如，地点之间的领域转移可能导致操作环境与训练数据不一致，从而导致潜在的危险性能下降。然而，现有的数据分析流程主要依赖于元数据、预定义标签或人工检查，这些方法提供的语义洞察有限或无法扩展。本文研究了集合差异描述：给定两个图像子集，目标是生成一个自然语言假设，描述目标集与参考集之间的差异。在两阶段的框架基础上，我们通过关注从目标检测中提取的以对象为中心的图像块，来将该方法适应于自主驾驶，这简化了聚合过程并使得差异归因于特定的对象实例或类别。为了在领域内评估这一设置，我们引入了一个新的基准，AD-Diff Bench。低浓度实验评估集合差异描述方法在稀疏、真实世界差异中的适用性。我们将实验限制在开放权重模型，以支持可重复性和易于部署。所提出的基准和分析为自主驾驶数据集的实用、可人类解释的数据集内省迈出了重要一步。我们的实现和基准数据集可在 https://github.com/KIT-MRT/AD-Diff 获取。",
+      "authors": [
+        "Julian Truetsch",
+        "Felix Hauser",
+        "Christoph Stiller",
+        "Frank Bieder"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03677",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "安全/异常"
+      ],
+      "title": "Understanding Autonomous Driving Datasets by Describing Differences between Image Subsets in Natural Language",
+      "title_zh": "通过自然语言描述图像子集之间的差异来理解自主驾驶数据集",
+      "url": "/daily/2026-09-04/#paper-2609-03677"
+    },
+    {
+      "abstract": "World models (WMs) have demonstrated strong potential for end-to-end autonomous driving by learning predictive representations of future scene dynamics. However, generating future videos during inference introduces substantial computational overhead, leading many recent driving WMs to adopt a single front camera as input for efficient deployment. This design restricts spatial coverage in safety-critical maneuvers such as lane changes, merges, and turns. To address this limitation, we propose SV-WAM, a surround-view world-action model (WAM) that preserves full six-camera observations while maintaining efficient inference. SV-WAM leverages future-video prediction as dense training supervision for action learning within a shared generative model, rather than as an inference-time output. At the core of this design is an action-centered causal mask that prevents action tokens from attending to future-video tokens during joint action-video denoising. Consequently, the video branch can be discarded at deployment, enabling efficient action-only planning. Furthermore, we introduce a differentiable drivable-area compliance regularizer that penalizes vehicle-footprint corners approaching or crossing drivable boundaries, improving planning safety and boundary awareness. Extensive experiments on the closed-loop NAVSIMv2 benchmark and the open-loop nuScenes benchmark demonstrate that SV-WAM achieves state-of-the-art planning performance with low inference latency and competitive zero-shot transfer capability.",
+      "abstract_zh": "世界模型（WMs）通过学习未来场景动态的预测表示，展示了在端到端自主驾驶中的强大潜力。然而，在推理过程中生成未来视频会引入大量计算开销，导致许多近期的驾驶世界模型采用单前置摄像头作为输入以实现高效部署。这种设计限制了在安全关键的操作（如变道、并入和转弯）中的空间覆盖。为了解决这一限制，我们提出了SV-WAM，一种全景世界-动作模型（WAM），它在保持高效推理的同时保留完整的六个摄像头观察。SV-WAM利用未来视频预测作为共享生成模型中动作学习的密集训练监督，而不是作为推理时的输出。这一设计的核心是一个以动作为中心的因果掩码，防止动作标记在联合动作-视频去噪过程中关注未来视频标记。因此，视频分支可以在部署时被丢弃，从而实现高效的仅动作规划。此外，我们引入了一种可微分的可行驶区域合规正则化器，惩罚接近或越过可行驶边界的车辆轮廓角，提高规划安全性和边界意识。在闭环NAVSIMv2基准和开放环nuScenes基准上的大量实验表明，SV-WAM在低推理延迟和竞争性的零-shot迁移能力下实现了最先进的规划性能。",
+      "authors": [
+        "Jinyang Wang",
+        "Shiwei Li",
+        "Junjian Wang",
+        "Zhiqiang Deng",
+        "Jianbin Gao",
+        "Yihang Zhao",
+        "Liu Liu",
+        "Yongjia Zhao",
+        "Jinlong Chen",
+        "Huirui Xu",
+        "Yifeng Pan",
+        "Kangwei Liu",
+        "Fan Ren",
+        "Ji Tao",
+        "Minghao Yang"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03602",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "世界模型/生成"
+      ],
+      "title": "SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving",
+      "title_zh": "SV-WAM：一种高效的全景世界-动作模型用于端到端自主驾驶",
+      "url": "/daily/2026-09-04/#paper-2609-03602"
+    },
+    {
+      "abstract": "World models offer a promising paradigm for autonomous driving by predicting how traffic scenes may evolve and using such predictions to support action generation. However, existing approaches either separate future prediction from action generation or jointly predict them at the same temporal scale, making it difficult to simultaneously achieve long-horizon anticipation and responsive, observation-grounded decision making. We present Drive-HWM, a hierarchical slow--fast world modeling framework that organizes future representation prediction and action generation at complementary temporal scales. The slow world model predicts multi-step future representations to capture extended scene evolution. To explicitly model the abundant motion dynamics in driving environments, we introduce Dynamic-Aware Latents learned through optical-flow prediction. Guided by these future representations, the fast model uses a lightweight multimodal backbone and an autoregressive expert to jointly predict the next frame and the immediate action from the latest observation. Next-frame prediction encourages the fast model to capture imminent scene evolution, while one-step action generation allows decisions to be continuously updated as new observations arrive. Extensive experiments on NAVSIM v1 and v2 demonstrate the strong driving performance of Drive-HWM. Comprehensive ablation studies further validate the effectiveness of the hierarchical slow--fast design, dynamics-aware future representations, and joint next-frame and action prediction.",
+      "abstract_zh": "世界模型为自主驾驶提供了一种有前景的范式，通过预测交通场景的演变并利用这些预测来支持行动生成。然而，现有的方法要么将未来预测与行动生成分开，要么在相同的时间尺度上共同预测这两者，这使得同时实现长期预判和基于观察的响应性决策变得困难。我们提出了Drive-HWM，一种分层的慢-快世界建模框架，它在互补的时间尺度上组织未来表示预测和行动生成。慢世界模型预测多步未来表示，以捕捉延续的场景演变。为了明确建模驾驶环境中丰富的运动动态，我们引入了通过光流预测学习的动态感知潜在变量。受到这些未来表示的引导，快模型使用轻量级的多模态骨干网络和自回归专家，联合预测下一帧和最新观察下的即时行动。下一帧预测促使快模型捕捉即将发生的场景演变，而一步行动生成则允许随着新观察的到来持续更新决策。在NAVSIM v1和v2上的广泛实验展示了Drive-HWM的强大驾驶性能。全面的消融研究进一步验证了分层慢-快设计、动态感知未来表示以及联合下一帧和行动预测的有效性。",
+      "authors": [
+        "Zhaoxin Fan",
+        "Tianbao Zhang",
+        "Wenjun Wu",
+        "Xiaofeng Wang",
+        "Yeying Jin",
+        "Jian Zhao",
+        "Zheng Zhu",
+        "Shuicheng Yan"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03572",
+      "tags": [
+        "世界模型/生成",
+        "感知"
+      ],
+      "title": "Drive-HWM: Hierarchical World Models for Dynamic-Latent Guided Autonomous Driving",
+      "title_zh": "Drive-HWM：用于动态潜在引导自主驾驶的分层世界模型",
+      "url": "/daily/2026-09-04/#paper-2609-03572"
+    },
+    {
+      "abstract": "Air-ground collaborative Vision-and-Language Navigation (VLN) pairs an unmanned aerial vehicle (UAV) with a global bird's-eye view and an unmanned ground vehicle (UGV) with a local first-person view, yet the setting remains largely unexplored: existing training-free methods solve single-agent tasks but offer no collaboration mechanism, and a recent CARLA-Air evaluation found no stable cooperative behavior across five state-of-the-art VLA models; naive semantic communication or bidirectional coupling even degrades performance. We establish AGC-VLN (Air-Ground Collaborative VLN), the first training-free baseline for air-ground collaborative VLN. The key insight is that training-free methods decompose navigation into VLM-based semantic reasoning and deterministic geometric execution, exposing a collaboration interface: the UAV's global view, over which it renders the UGV's reported pose and the VLM-anchored target as CAR/GOAL markers with distance labels, yielding a shared bird's-eye map. From this map, the UGV acquires global spatial context its first-person view cannot provide, plans a road-following path with a frozen VLM, and executes it under closed-loop control; in parallel, the UAV runs 3D-SPF, a spatial-search upgrade of SPF that localizes the target in the downward view and flies toward it. On 100 closed-loop episodes in CARLA-Air's Town10HD scene, AGC-VLN reaches a 77.0% joint success rate, a collaboration gain of +27.0% over the weaker individual agent (the UAV, 50.0%), and exceeds the strongest published single-agent baseline (Travel UAV, 53.0%) by 24.0 points, stemming from the complementarity of the UAV's global view and the UGV's road-following execution. Project page: https://github.com/ZSN2024/AGC-VLN.",
+      "abstract_zh": "空地协作视觉与语言导航（VLN）将无人机（UAV）与全球鸟瞰视图相结合，并将无人地面车辆（UGV）与局部第一人称视图相结合，但这一设置仍然在很大程度上未被探索：现有的无训练方法解决单一代理任务，但未提供协作机制，最近的CARLA-Air评估发现五种最先进的VLA模型之间没有稳定的合作行为；幼稚的语义通信或双向耦合甚至会降低性能。我们建立了AGC-VLN（空地协作VLN），这是空地协作VLN的第一个无训练基准。关键见解在于，无训练方法将导航分解为基于VLM的语义推理和确定性几何执行，暴露出一个协作接口：UAV的全球视图，在此基础上渲染UGV报告的姿态和VLM锚定的目标，作为带有距离标签的CAR/GOAL标记，从而生成共享的鸟瞰图。UGV从该地图中获取其第一人称视图无法提供的全球空间上下文，规划一条遵循道路的路径，并在闭环控制下执行；与此同时，UAV运行3D-SPF，这是SPF的空间搜索升级版，能够在向下视图中定位目标并朝其飞行。在CARLA-Air的Town10HD场景中进行的100个闭环实验中，AGC-VLN达到了77.0%的联合成功率，相较于较弱的单一代理（UAV，50.0%）提高了27.0%的协作增益，并超越了最强的已发布单一代理基准（Travel UAV，53.0%）24.0个百分点，这源于UAV的全球视图与UGV的道路跟随执行之间的互补性。项目页面：https://github.com/ZSN2024/AGC-VLN。",
+      "authors": [
+        "Shuning Zhang",
+        "Liang Li",
+        "Yunheng Wang",
+        "Tao Wang",
+        "Yihang Kang",
+        "Renjing Xu"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03483",
+      "tags": [
+        "地图/定位",
+        "VLM/VLA",
+        "BEV/Occupancy"
+      ],
+      "title": "Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps",
+      "title_zh": "基于共享鸟瞰图的空地协作视觉与语言导航",
+      "url": "/daily/2026-09-04/#paper-2609-03483"
+    },
+    {
+      "abstract": "Parking spot classification is a fundamental task in intelligent transportation systems, yet most deep learning approaches rely on large amounts of annotated data and exhibit limited generalization across heterogeneous environments. To address these limitations, we investigate a self-taught learning framework based on unsupervised representation learning with convolutional autoencoders. The proposed approach learns transferable visual representations from unlabeled data and reuses the learned encoders as fixed feature extractors for supervised classification with limited annotated samples in the target domain. To further enhance robustness and mitigate architectural bias, an ensemble of heterogeneous autoencoders is employed, with independent classifier heads and prediction fusion at inference time. Experiments conducted on the PKLot and CNRPark benchmarks under cross-dataset evaluation protocols show that the proposed ensemble-based strategy substantially reduces annotation requirements while improving robustness under significant domain shifts, achieving accuracies between 93\\% and 96\\% in data-constrained scenarios.",
+      "abstract_zh": "停车位分类是智能交通系统中的一项基础任务，然而大多数深度学习方法依赖于大量的标注数据，并且在异构环境中表现出有限的泛化能力。为了解决这些局限性，我们研究了一种基于卷积自编码器的无监督表示学习的自我学习框架。所提出的方法从未标注数据中学习可迁移的视觉表示，并将学习到的编码器作为固定特征提取器，重新用于目标领域中有限标注样本的监督分类。为了进一步增强鲁棒性并减轻结构偏差，采用了一组异构自编码器，具有独立的分类器头和推理时的预测融合。在PKLot和CNRPark基准数据集上进行的跨数据集评估协议的实验表明，所提出的基于集成的策略显著减少了标注需求，同时在显著的领域转移下提高了鲁棒性，在数据受限的场景中实现了93\\%至96\between%的准确率。",
+      "authors": [
+        "Lucas de Oliveira Cunha",
+        "Joelton Deonei Gotz",
+        "Paulo Lisboa de Almeida",
+        "Andre Gustavo Hochuli"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03258",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "An Ensemble-Based Self-Taught Learning Approach for Parking Space Classification Under Limited Data",
+      "title_zh": "基于集成的自我学习方法在有限数据下的停车位分类",
+      "url": "/daily/2026-09-04/#paper-2609-03258"
+    },
+    {
+      "abstract": "End-to-end autonomous driving has increasingly adopted world model-based reinforcement learning frameworks to improve learning efficiency through \\textit{imagined rollouts}. However, existing world models suffer from three key limitations: temporal inconsistency in long-horizon imagined rollouts, inadequate modeling of ego-environment interactions, and limited adaptability to diverse driving styles. To address these challenges, we propose \\textit{StyleDrive}, a world-model-based learning framework that jointly enforces long-horizon consistency, explicitly disentangles interactive traffic states, and supports multi-style policy optimization within a unified learning paradigm. First, we introduce a temporal consistency regularization that integrates historical latent states through gated cross-attention, stabilizing long-horizon imagined rollouts and mitigating error accumulation. Second, we design an explicit state disentanglement module that separates ego-relevant from ego-irrelevant interactive states, enabling more interpretable and efficient decision-making in complex traffic scenarios. Third, we enable multi-style driving behaviors through Group Relative Policy Optimization, which replaces per-step reward optimization with trajectory-wise relative advantages, reducing reward variance and supporting diverse driving styles without retraining. We evaluate StyleDrive on the Bench2Drive closed-loop driving benchmark, achieving a driving score of 88.44 (+17.08 over the previous best world model-based method) and a success rate of 66.82 (+16.58). Furthermore, we deploy StyleDrive on a real automated guided vehicle platform and demonstrate promising sim-to-real transfer capability in dynamic driving scenarios.",
+      "abstract_zh": "端到端自主驾驶越来越多地采用基于世界模型的强化学习框架，通过 extit{想象的滚动}提高学习效率。然而，现有的世界模型存在三个主要局限性：长时间想象滚动中的时间不一致性、对自我与环境交互的建模不足，以及对多样化驾驶风格的适应性有限。为了解决这些挑战，我们提出了 extit{StyleDrive}，这是一个基于世界模型的学习框架，旨在共同实现长时间一致性，明确解耦交互交通状态，并在统一学习范式中支持多风格策略优化。首先，我们引入了一种时间一致性正则化，通过门控交叉注意力集成历史潜在状态，稳定长时间想象滚动并减轻误差积累。其次，我们设计了一个显式状态解耦模块，将与自我相关的交互状态与无关状态分离，使得在复杂交通场景中能够进行更具可解释性和高效的决策。第三，我们通过组相对策略优化实现多风格驾驶行为，该方法用轨迹级相对优势替代逐步奖励优化，从而减少奖励方差，并在不重新训练的情况下支持多样化驾驶风格。我们在Bench2Drive闭环驾驶基准上评估了StyleDrive，取得了88.44的驾驶得分（比之前最佳的基于世界模型的方法提高了17.08）和66.82的成功率（提高了16.58）。此外，我们在一个真实的自动导引车平台上部署了StyleDrive，并在动态驾驶场景中展示了良好的仿真到现实的转移能力。",
+      "authors": [
+        "Yuxuan Han",
+        "Kunyuan Wu",
+        "Liyunong Yang",
+        "Zilu Wang",
+        "Cansen Jiang",
+        "Yi Xiao",
+        "Liang Hu"
+      ],
+      "date": "2026-09-04",
+      "id": "2609.03225",
+      "tags": [
+        "仿真/数据",
+        "预测/规划",
+        "端到端驾驶"
+      ],
+      "title": "Long-Horizon Consistent and Interaction-Aware World Models for Multi-Style End-to-End Driving",
+      "title_zh": "面向多风格端到端驾驶的长时间一致性与交互感知世界模型",
+      "url": "/daily/2026-09-04/#paper-2609-03225"
+    },
     {
       "abstract": "LiDAR-based semantic segmentation is a core perception module for autonomous vehicles and mobile robots. Despite the strong performance of recent state-of-the-art methods on standard benchmarks, existing evaluation protocols remain focused on clean, single-domain settings and fine-grained label taxonomies, leaving deployment readiness largely unassessed. Real-world systems must handle safety-critical label semantics, degraded sensing conditions, and cross-domain variability, yet no unified protocol currently addresses all three aspects together. In this paper, we propose a structured evaluation protocol that assesses the deployment readiness of LiDAR semantic segmentation models along three complementary dimensions: (i) coarse-label evaluation aligned with autonomous driving safety priorities, revealing how label granularity affects different methods; (ii) robustness under eight types of LiDAR corruptions designed to emulate real-world atmospheric, geometric, and sensor degradations; and (iii) domain generalization across datasets without adaptation. The evaluation includes inference speed measured on an embedded Jetson AGX Orin platform, directly reflecting deployment constraints. Our results show that fine-grained benchmark rankings do not always reflect safety-relevant performance, that all methods experience substantial degradation under corruptions with architecture-dependent robustness characteristics, and that current domain generalization remains insufficient for reliable deployment. These findings expose concrete gaps between benchmark performance and deployment readiness, and provide a reference protocol for more practically grounded evaluation of LiDAR semantic segmentation.",
       "abstract_zh": "基于LiDAR的语义分割是自动驾驶汽车和移动机器人核心的感知模块。尽管近期最先进的方法在标准基准测试中表现强劲，但现有的评估协议仍然集中于干净的单一领域设置和细粒度标签分类，导致部署准备情况未得到充分评估。现实世界的系统必须处理安全关键的标签语义、退化的感知条件和跨领域的变异性，但目前没有统一的协议能够同时解决这三个方面。在本文中，我们提出了一种结构化的评估协议，从三个互补的维度评估LiDAR语义分割模型的部署准备情况：(i) 与自动驾驶安全优先事项对齐的粗略标签评估，揭示标签粒度如何影响不同方法；(ii) 在八种LiDAR损坏类型下的鲁棒性评估，这些损坏旨在模拟现实世界中的大气、几何和传感器退化；(iii) 在不进行适应的情况下跨数据集的领域泛化。评估还包括在嵌入式Jetson AGX Orin平台上测量的推理速度，直接反映部署约束。我们的结果表明，细粒度基准排名并不总是反映与安全相关的性能，所有方法在损坏下都经历了显著的性能下降，且具有架构依赖的鲁棒性特征，而当前的领域泛化仍不足以实现可靠的部署。这些发现揭示了基准性能与部署准备之间的具体差距，并为更实际的LiDAR语义分割评估提供了参考协议。",

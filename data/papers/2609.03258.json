@@ -1,0 +1,48 @@
+{
+  "abstract": "Parking spot classification is a fundamental task in intelligent transportation systems, yet most deep learning approaches rely on large amounts of annotated data and exhibit limited generalization across heterogeneous environments. To address these limitations, we investigate a self-taught learning framework based on unsupervised representation learning with convolutional autoencoders. The proposed approach learns transferable visual representations from unlabeled data and reuses the learned encoders as fixed feature extractors for supervised classification with limited annotated samples in the target domain. To further enhance robustness and mitigate architectural bias, an ensemble of heterogeneous autoencoders is employed, with independent classifier heads and prediction fusion at inference time. Experiments conducted on the PKLot and CNRPark benchmarks under cross-dataset evaluation protocols show that the proposed ensemble-based strategy substantially reduces annotation requirements while improving robustness under significant domain shifts, achieving accuracies between 93\\% and 96\\% in data-constrained scenarios.",
+  "abstract_zh": "停车位分类是智能交通系统中的一项基础任务，然而大多数深度学习方法依赖于大量的标注数据，并且在异构环境中表现出有限的泛化能力。为了解决这些局限性，我们研究了一种基于卷积自编码器的无监督表示学习的自我学习框架。所提出的方法从未标注数据中学习可迁移的视觉表示，并将学习到的编码器作为固定特征提取器，重新用于目标领域中有限标注样本的监督分类。为了进一步增强鲁棒性并减轻结构偏差，采用了一组异构自编码器，具有独立的分类器头和推理时的预测融合。在PKLot和CNRPark基准数据集上进行的跨数据集评估协议的实验表明，所提出的基于集成的策略显著减少了标注需求，同时在显著的领域转移下提高了鲁棒性，在数据受限的场景中实现了93\\%至96\between%的准确率。",
+  "arxiv_id": "2609.03258",
+  "arxiv_url": "https://arxiv.org/abs/2609.03258v1",
+  "authors": [
+    "Lucas de Oliveira Cunha",
+    "Joelton Deonei Gotz",
+    "Paulo Lisboa de Almeida",
+    "Andre Gustavo Hochuli"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03258",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.580927+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03258v1",
+  "published_at": "2026-09-03T01:35:02Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "parking",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03258v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "本文面向有限标注数据下的停车位分类问题，提出基于卷积自编码器无监督表示学习和异构模型集成的自我学习方法。实验显示，该方法在跨数据集领域迁移场景中具有较好的鲁棒性和分类性能，可应用于智能停车及自动泊车相关视觉感知任务。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "An Ensemble-Based Self-Taught Learning Approach for Parking Space Classification Under Limited Data",
+  "title_zh": "基于集成的自我学习方法在有限数据下的停车位分类",
+  "translation_url": "https://hjfy.top/arxiv/2609.03258"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "Autonomous navigation in space requires reliable terrain assessment for safe operations, especially in underground environments with limited communication, computing resources, and power budget. This paper presents a lightweight method for real-time vibration-aware traversability mapping using a Light Detecting And Ranging (LiDAR) point cloud and Inertial Measurement Unit (IMU) measurements. An initial vibration proxy is estimated from terrain geometry by applying Random sample consensus (RANSAC) to local point-cloud patches produced by a Simultaneous Localisation And Mapping (SLAM) algorithm. In parallel, the IMU provides local observations of the vibration experienced by the rover during traversal. The point-cloud-based prediction is then corrected online using Recursive Least Squares, allowing the system to adapt the geometric estimate to the measured rover response. The approach is evaluated in a lunar analogue environment, an outdoor field, and an underground mine.",
+  "abstract_zh": "在太空中的自主导航需要可靠的地形评估以确保安全操作，尤其是在通信、计算资源和电力预算有限的地下环境中。本文提出了一种轻量级的方法，通过光学探测与测距（LiDAR）点云和惯性测量单元（IMU）测量，实现实时振动感知的可通行性映射。通过对由同时定位与地图构建（SLAM）算法生成的局部点云块应用随机样本一致性（RANSAC），初步估计地形几何形状的振动代理。同时，IMU提供了探测器在穿越过程中经历的振动的局部观测。然后，基于点云的预测通过递归最小二乘法在线修正，使系统能够将几何估计适应于测量到的探测器响应。该方法在月球类比环境、户外场地和地下矿井中进行了评估。",
+  "arxiv_id": "2609.03720",
+  "arxiv_url": "https://arxiv.org/abs/2609.03720v1",
+  "authors": [
+    "Gabriel Manuel Garcia",
+    "Stephanie Aravecchia",
+    "Miguel Angel Olivares-Mendez"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03720",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.565268+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03720v1",
+  "published_at": "2026-09-03T11:54:16Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 17
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03720v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "本文面向资源受限环境中的自主探测器导航，提出一种结合LiDAR点云与IMU反馈的轻量级振动预测和可通行性映射方法。系统利用局部点云几何通过RANSAC估计初始振动代理，并使用IMU观测通过递归最小二乘法在线修正预测，从而适应实际探测器响应。方法在月球类比环境、户外场地和地下矿井中进行了验证，可用于地形感知、风险评估和安全路径选择。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "多传感器融合"
+    ]
+  },
+  "title": "RoughSense: Lightweight Terrain-Induced Rover Vibration Prediction Using Point Clouds and IMU Feedback",
+  "title_zh": "RoughSense：基于点云和IMU反馈的轻量级地形诱导探测器振动预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.03720"
+}

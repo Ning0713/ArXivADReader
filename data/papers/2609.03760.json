@@ -1,0 +1,52 @@
+{
+  "abstract": "Simulation is increasingly used to support safety-related decision-making in road transport, particularly for the assessment and approval of automated driving systems (ADS). The complexity of ADS behavior and size of their operational design domains make exclusive reliance on physical testing impractical, leading to extensive use of virtual testing (VT) during the approval phase. This shift raises critical questions regarding the credibility of modelling and simulation (M&S) results used to support road safety decisions. Current VT accreditation approaches in the ADS domain typically rely on validation-only practices, which have been shown to scale poorly when applied to complex, multi-tool simulation environments. To address this limitation, this paper proposes a risk-based framework for assessing the credibility of simulation toolchains used in ADS safety evaluation, drawing inspiration from established practices in other safety-critical domains, notably NASA's STD-7009 for models and simulations. The framework extends traditional verification and validation (V&V) by explicitly linking credibility requirements to the intended use of simulation outputs and to the safety criticality of the decisions they support within the approval process. It provides a lifecycle-oriented assessment scheme integrating toolchain management, modelling assumptions and limitations, verification, validation, and sensitivity analysis. Credibility acceptance thresholds are defined proportionally, allowing differentiated requirements depending on whether simulation is used for exploratory safety analysis, partial decision support, or as a substitute for physical testing. While demonstrated for ADS, the proposed approach is directly applicable to road safety and simulation studies where VT plays a central role in safety assessment and regulatory decision-making.",
+  "abstract_zh": "模拟在道路运输中越来越多地被用于支持与安全相关的决策，特别是在自动驾驶系统（ADS）的评估和批准方面。ADS行为的复杂性以及其操作设计域的广泛性使得单纯依赖物理测试变得不切实际，从而在批准阶段广泛采用虚拟测试（VT）。这一转变引发了关于用于支持道路安全决策的建模和模拟（M&S）结果可信性的重要问题。目前在ADS领域的VT认证方法通常依赖于仅进行验证的实践，而这种方法在应用于复杂的多工具模拟环境时效果不佳。为了解决这一局限性，本文提出了一种基于风险的框架，用于评估在ADS安全评估中使用的模拟工具链的可信性，该框架借鉴了其他安全关键领域的成熟实践，特别是NASA的STD-7009模型和模拟标准。该框架通过明确将可信性要求与模拟输出的预期用途及其在批准过程中支持的决策的安全关键性联系起来，扩展了传统的验证和确认（V&V）。它提供了一种面向生命周期的评估方案，整合了工具链管理、建模假设和局限性、验证、确认和敏感性分析。可信性接受阈值按比例定义，允许根据模拟是用于探索性安全分析、部分决策支持，还是作为物理测试的替代品而设定不同的要求。尽管该方法已在ADS中得到验证，但其提出的方法同样适用于道路安全和模拟研究，在这些研究中，VT在安全评估和监管决策中发挥着核心作用。",
+  "arxiv_id": "2609.03760",
+  "arxiv_url": "https://arxiv.org/abs/2609.03760v1",
+  "authors": [
+    "Riccardo Dona",
+    "Espedito Rusciano",
+    "Biagio Ciuffo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03760",
+  "categories": [
+    "cs.RO",
+    "cs.SE"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.566441+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03760v1",
+  "published_at": "2026-09-03T12:28:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "driving",
+      "road",
+      "驾驶",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03760v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Virtual Testing of Automated Driving Systems through Credible Simulations",
+  "title_zh": "通过可信模拟对自动驾驶系统进行虚拟测试",
+  "translation_url": "https://hjfy.top/arxiv/2609.03760"
+}

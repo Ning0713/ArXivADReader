@@ -1,0 +1,46 @@
+{
+  "abstract": "We present our submission to the IJCAI 2025 'Counterfactual Routing Competition' (CRC 25). The goal of the competition is to find counterfactual explanations for the shortest path problem. This requires deciding what the minimal changes to a road network would make a route chosen by the user the optimal route. This enables explanations such as \"Your suggested route would indeed have been optimal, if road X were not a bicycle path.\" Our solution models the problem as an integer program, iteratively incorporating constraints until an exact solution is found. In the final evaluation on held-out test instances, our method ranked fourth in solution quality and obtained its solution fastest on every instance, with an average runtime of 9.0 seconds compared to 118.8 seconds for the next-fastest submission.",
+  "abstract_zh": "我们提交了针对 IJCAI 2025 '反事实路径规划竞赛' (Counterfactual Routing Competition, CRC 25) 的方案。该竞赛的目标是为最短路径问题寻找反事实解释。这需要确定对道路网络的最小更改，以使用户选择的路线成为最佳路线。这使得可以提供诸如“如果道路 X 不是自行车道，您建议的路线确实会是最佳路线。”这样的解释。我们的解决方案将该问题建模为一个整数规划，迭代地加入约束，直到找到精确解。在对保留的测试实例进行的最终评估中，我们的方法在解决方案质量上排名第四，并且在每个实例上都以最快的速度获得了解决方案，平均运行时间为 9.0 秒，而下一个最快的提交则为 118.8 秒。",
+  "arxiv_id": "2609.03707",
+  "arxiv_url": "https://arxiv.org/abs/2609.03707v1",
+  "authors": [
+    "Daniël Vos",
+    "Sterre Lutz"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03707",
+  "categories": [
+    "cs.AI",
+    "cs.DS"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.647705+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03707v1",
+  "published_at": "2026-09-03T11:43:53Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路",
+      "车道"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03707v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "本文针对道路网络中的反事实路径规划问题，提出一种结合整数规划与约束生成的精确求解方法，用于解释用户路线在何种最小道路网络变化下能够成为最优路线。该方法在竞赛测试中兼具较高解质量和显著计算效率，可为自动驾驶或智能导航中的高层路线规划与可解释决策提供参考。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Counterfactual Routing Using Integer Programming with Constraint Generation",
+  "title_zh": "基于整数规划和约束生成的反事实路径规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.03707"
+}

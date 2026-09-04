@@ -1,0 +1,47 @@
+{
+  "abstract": "As large language models (LLMs) become increasingly capable, the long-term value of AI systems depends not only on solving individual requests, but also on transforming experience and accumulated knowledge into durable, reusable competence. We introduce SimSkill, a self-evolving agent built around the Simulation of Urban MObility (SUMO) traffic simulator. SimSkill identifies capability gaps, generates and solves environment-grounded tasks, verifies solutions through an action--critic loop, and consolidates experience into episodic, procedural, and semantic memory without updating the backbone model. Through autonomous exploration, it builds a reusable library spanning the traffic-simulation workflow. We evaluate SimSkill on two held-out benchmarks with three backbone LLMs and independent artifact-based verification. SimSkill improves verified completion by up to 25 percentage points, while ablations show complementary contributions from procedural and semantic memory. Its benefits remain backbone- and budget-dependent: memory does not improve every model or uniformly reduce inference cost. More broadly, SimSkill illustrates a design paradigm in which natural language preserves and composes computational capabilities, while executable tools and code provide precise and reproducible execution. All code and experimental data are publicly available at https://github.com/qiliuchn/SimSkill-V1.",
+  "abstract_zh": "随着大型语言模型（LLMs）能力的不断增强，人工智能系统的长期价值不仅依赖于解决个别请求，还依赖于将经验和积累的知识转化为持久的、可重用的能力。我们介绍了SimSkill，一个围绕城市交通仿真（Simulation of Urban MObility, SUMO）交通仿真器构建的自我进化代理。SimSkill识别能力差距，生成并解决基于环境的任务，通过行动-评论循环验证解决方案，并将经验整合为情节记忆、程序记忆和语义记忆，而无需更新基础模型。通过自主探索，它建立了一个涵盖交通仿真工作流程的可重用库。我们在两个保留基准上评估SimSkill，使用三种基础LLM和独立的基于工件的验证。SimSkill提高了经过验证的完成率，最多可达25个百分点，而消融实验显示程序记忆和语义记忆的互补贡献。其效益依赖于基础模型和预算：记忆并不改善每个模型，也不均匀降低推理成本。更广泛地说，SimSkill展示了一种设计范式，其中自然语言保留并组合计算能力，而可执行工具和代码提供精确且可重复的执行。所有代码和实验数据均可在 https://github.com/qiliuchn/SimSkill-V1 上公开获取。",
+  "arxiv_id": "2609.03753",
+  "arxiv_url": "https://arxiv.org/abs/2609.03753v1",
+  "authors": [
+    "Qi Liu",
+    "Qinzheng Wang",
+    "Yiming Bie"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03753",
+  "categories": [
+    "cs.AI",
+    "cs.MA"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.649449+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03753v1",
+  "published_at": "2026-09-03T12:23:56Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03753v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "本文提出SimSkill，一种围绕SUMO交通仿真器构建的终身学习智能体。该系统能够发现能力缺口、自主生成并完成基于仿真环境的任务，通过行动-评论机制验证结果，并将经验存储为情节、程序和语义记忆，从而在不更新基础大模型的情况下积累可复用的交通仿真技能。实验表明，SimSkill在多个大模型和保留测试集上提升了经验证的任务完成率，最高提升25个百分点。该工作主要面向交通仿真智能体和自动驾驶仿真基础设施，具有间接的自动驾驶领域相关性。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": []
+  },
+  "title": "SimSkill: A Lifelong Learning AI Agent for Autonomous Mastery of Traffic Simulation",
+  "title_zh": "SimSkill：一个用于自主掌握交通仿真的终身学习人工智能代理",
+  "translation_url": "https://hjfy.top/arxiv/2609.03753"
+}

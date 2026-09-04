@@ -1,0 +1,55 @@
+{
+  "abstract": "Understanding the composition of large-scale autonomous driving datasets is essential for safety, robustness, and reliable operation across domains. For example, domain shift between locations could lead to the operating environment being misaligned with the training data, resulting in potentially dangerous performance degradation. Yet, existing data analysis pipelines largely rely on metadata, predefined labels, or manual inspection, which provide limited semantic insight or do not scale. This paper studies set difference captioning: given two subsets of images, the goal is to produce a natural-language hypothesis describing differences between the target and reference set. Building on a two-stage formulation, we adapt the method to autonomous driving by focusing on object-centric patches derived from object detection, which simplifies aggregation and enables attribution of differences to specific object instances or categories. To evaluate this setting in-domain, we introduce a new benchmark, AD-Diff Bench. Low-concentration experiments assess the suitability of set-difference-captioning approaches to sparse, real-world differences. We restrict our experiments to open-weight models to support reproducibility and ease of deployment. The proposed benchmark and analysis provide a step towards practical, human-interpretable dataset introspection for autonomous driving datasets. Our implementation and benchmark dataset are available at https://github.com/KIT-MRT/AD-Diff",
+  "abstract_zh": "理解大规模自主驾驶数据集的组成对于安全性、鲁棒性以及跨领域的可靠操作至关重要。例如，地点之间的领域转移可能导致操作环境与训练数据不一致，从而导致潜在的危险性能下降。然而，现有的数据分析流程主要依赖于元数据、预定义标签或人工检查，这些方法提供的语义洞察有限或无法扩展。本文研究了集合差异描述：给定两个图像子集，目标是生成一个自然语言假设，描述目标集与参考集之间的差异。在两阶段的框架基础上，我们通过关注从目标检测中提取的以对象为中心的图像块，来将该方法适应于自主驾驶，这简化了聚合过程并使得差异归因于特定的对象实例或类别。为了在领域内评估这一设置，我们引入了一个新的基准，AD-Diff Bench。低浓度实验评估集合差异描述方法在稀疏、真实世界差异中的适用性。我们将实验限制在开放权重模型，以支持可重复性和易于部署。所提出的基准和分析为自主驾驶数据集的实用、可人类解释的数据集内省迈出了重要一步。我们的实现和基准数据集可在 https://github.com/KIT-MRT/AD-Diff 获取。",
+  "arxiv_id": "2609.03677",
+  "arxiv_url": "https://arxiv.org/abs/2609.03677v1",
+  "authors": [
+    "Julian Truetsch",
+    "Felix Hauser",
+    "Christoph Stiller",
+    "Frank Bieder"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03677",
+  "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.NE",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.604507+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03677v1",
+  "published_at": "2026-09-03T11:15:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03677v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Understanding Autonomous Driving Datasets by Describing Differences between Image Subsets in Natural Language",
+  "title_zh": "通过自然语言描述图像子集之间的差异来理解自主驾驶数据集",
+  "translation_url": "https://hjfy.top/arxiv/2609.03677"
+}

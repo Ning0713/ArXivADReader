@@ -1,0 +1,56 @@
+{
+  "abstract": "Generating complete 3D scenes from sparse, unconstrained views is a fundamental challenge in 3D vision which requires reasoning beyond observed content while remaining computationally tractable. Existing feed-forward reconstruction methods are inherently limited to content visible in the input images, while 3D generative modeling is hindered by the high computational cost of dense volumetric representations and the scarcity of large-scale 3D supervision. We introduce SPAR3S, a sparse voxel-aligned 3D latent generative model for conditional scene completion without requiring ground-truth 3D data for supervision. Our key insight is to formulate 3D scene generation in a structured, compact, voxel-aligned 3D latent space where only occupied voxels are represented. We learn this sparse latent space directly from multi-view images using photometric supervision via differentiable 3D Gaussian Splatting. Given a partial set of observed voxels encoded from sparse input views, scene completion reduces to predicting the missing latent tokens and their spatial support within the voxel grid. To this end, we train a masked autoregressive transformer that jointly models voxel occupancy and latent token values, enabling efficient and spatially consistent generation of unseen regions. We demonstrate the effectiveness of our method on synthetic indoor scenes, achieving higher novel-view quality than prior work. We further validate its generalization on RealEstate10k, highlighting its applicability to real-world data.",
+  "abstract_zh": "从稀疏且不受限制的视角生成完整的3D场景是3D视觉中的一个基本挑战，这需要超越观察到的内容进行推理，同时保持计算上的可行性。现有的前馈重建方法本质上仅限于输入图像中可见的内容，而3D生成建模则受到密集体积表示的高计算成本和大规模3D监督稀缺的限制。我们提出了SPAR3S，一种稀疏体素对齐的3D潜在生成模型，用于条件场景补全，无需真实3D数据进行监督。我们的关键见解是将3D场景生成构建在一个结构化、紧凑的体素对齐3D潜在空间中，仅表示被占用的体素。我们通过可微分的3D高斯点云直接从多视角图像中学习这一稀疏潜在空间。给定从稀疏输入视角编码的部分观察体素集，场景补全简化为预测缺失的潜在标记及其在体素网格中的空间支持。为此，我们训练了一个掩蔽自回归变换器，该变换器联合建模体素占用和潜在标记值，从而实现高效且空间一致的未见区域生成。我们在合成室内场景上展示了我们方法的有效性，取得了比之前工作更高的新视角质量。我们进一步验证了其在RealEstate10k上的泛化能力，突显了其在真实世界数据中的适用性。",
+  "arxiv_id": "2609.03931",
+  "arxiv_url": "https://arxiv.org/abs/2609.03931v1",
+  "authors": [
+    "Thomas Lucas",
+    "Maxime Pietrantoni",
+    "Philippe Weinzaepfel",
+    "Wonjune Cho",
+    "Bardienus Pieter Duisterhof",
+    "Vincent Leroy",
+    "Jerome Revaud"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03931",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.618062+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03931v1",
+  "published_at": "2026-09-03T14:41:34Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "occupancy",
+      "gaussian splatting",
+      "场景生成",
+      "点云",
+      "scene completion"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03931v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "提出SPAR3S稀疏体素对齐的3D潜在生成模型，从稀疏多视角图像中学习场景表示，并通过掩蔽自回归变换器联合预测未观测区域的体素占用和潜在特征，实现无需真实3D标注的场景补全与新视角生成。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "Sparse auto-regressive modeling for scene generation from multi-view images",
+  "title_zh": "基于稀疏自回归建模的多视角图像场景生成",
+  "translation_url": "https://hjfy.top/arxiv/2609.03931"
+}

@@ -1,0 +1,62 @@
+{
+  "abstract": "Air-ground collaborative Vision-and-Language Navigation (VLN) pairs an unmanned aerial vehicle (UAV) with a global bird's-eye view and an unmanned ground vehicle (UGV) with a local first-person view, yet the setting remains largely unexplored: existing training-free methods solve single-agent tasks but offer no collaboration mechanism, and a recent CARLA-Air evaluation found no stable cooperative behavior across five state-of-the-art VLA models; naive semantic communication or bidirectional coupling even degrades performance. We establish AGC-VLN (Air-Ground Collaborative VLN), the first training-free baseline for air-ground collaborative VLN. The key insight is that training-free methods decompose navigation into VLM-based semantic reasoning and deterministic geometric execution, exposing a collaboration interface: the UAV's global view, over which it renders the UGV's reported pose and the VLM-anchored target as CAR/GOAL markers with distance labels, yielding a shared bird's-eye map. From this map, the UGV acquires global spatial context its first-person view cannot provide, plans a road-following path with a frozen VLM, and executes it under closed-loop control; in parallel, the UAV runs 3D-SPF, a spatial-search upgrade of SPF that localizes the target in the downward view and flies toward it. On 100 closed-loop episodes in CARLA-Air's Town10HD scene, AGC-VLN reaches a 77.0% joint success rate, a collaboration gain of +27.0% over the weaker individual agent (the UAV, 50.0%), and exceeds the strongest published single-agent baseline (Travel UAV, 53.0%) by 24.0 points, stemming from the complementarity of the UAV's global view and the UGV's road-following execution. Project page: https://github.com/ZSN2024/AGC-VLN.",
+  "abstract_zh": "空地协作视觉与语言导航（VLN）将无人机（UAV）与全球鸟瞰视图相结合，并将无人地面车辆（UGV）与局部第一人称视图相结合，但这一设置仍然在很大程度上未被探索：现有的无训练方法解决单一代理任务，但未提供协作机制，最近的CARLA-Air评估发现五种最先进的VLA模型之间没有稳定的合作行为；幼稚的语义通信或双向耦合甚至会降低性能。我们建立了AGC-VLN（空地协作VLN），这是空地协作VLN的第一个无训练基准。关键见解在于，无训练方法将导航分解为基于VLM的语义推理和确定性几何执行，暴露出一个协作接口：UAV的全球视图，在此基础上渲染UGV报告的姿态和VLM锚定的目标，作为带有距离标签的CAR/GOAL标记，从而生成共享的鸟瞰图。UGV从该地图中获取其第一人称视图无法提供的全球空间上下文，规划一条遵循道路的路径，并在闭环控制下执行；与此同时，UAV运行3D-SPF，这是SPF的空间搜索升级版，能够在向下视图中定位目标并朝其飞行。在CARLA-Air的Town10HD场景中进行的100个闭环实验中，AGC-VLN达到了77.0%的联合成功率，相较于较弱的单一代理（UAV，50.0%）提高了27.0%的协作增益，并超越了最强的已发布单一代理基准（Travel UAV，53.0%）24.0个百分点，这源于UAV的全球视图与UGV的道路跟随执行之间的互补性。项目页面：https://github.com/ZSN2024/AGC-VLN。",
+  "arxiv_id": "2609.03483",
+  "arxiv_url": "https://arxiv.org/abs/2609.03483v1",
+  "authors": [
+    "Shuning Zhang",
+    "Liang Li",
+    "Yunheng Wang",
+    "Tao Wang",
+    "Yihang Kang",
+    "Renjing Xu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03483",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.558404+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03483v1",
+  "published_at": "2026-09-03T07:38:41Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "vehicle",
+      "car",
+      "road",
+      "车辆",
+      "道路",
+      "bird's-eye",
+      "uav",
+      "aerial vehicle",
+      "无人机"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 49
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03483v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "VLM/VLA",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps",
+  "title_zh": "基于共享鸟瞰图的空地协作视觉与语言导航",
+  "translation_url": "https://hjfy.top/arxiv/2609.03483"
+}

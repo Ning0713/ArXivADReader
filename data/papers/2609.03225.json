@@ -1,0 +1,62 @@
+{
+  "abstract": "End-to-end autonomous driving has increasingly adopted world model-based reinforcement learning frameworks to improve learning efficiency through \\textit{imagined rollouts}. However, existing world models suffer from three key limitations: temporal inconsistency in long-horizon imagined rollouts, inadequate modeling of ego-environment interactions, and limited adaptability to diverse driving styles. To address these challenges, we propose \\textit{StyleDrive}, a world-model-based learning framework that jointly enforces long-horizon consistency, explicitly disentangles interactive traffic states, and supports multi-style policy optimization within a unified learning paradigm. First, we introduce a temporal consistency regularization that integrates historical latent states through gated cross-attention, stabilizing long-horizon imagined rollouts and mitigating error accumulation. Second, we design an explicit state disentanglement module that separates ego-relevant from ego-irrelevant interactive states, enabling more interpretable and efficient decision-making in complex traffic scenarios. Third, we enable multi-style driving behaviors through Group Relative Policy Optimization, which replaces per-step reward optimization with trajectory-wise relative advantages, reducing reward variance and supporting diverse driving styles without retraining. We evaluate StyleDrive on the Bench2Drive closed-loop driving benchmark, achieving a driving score of 88.44 (+17.08 over the previous best world model-based method) and a success rate of 66.82 (+16.58). Furthermore, we deploy StyleDrive on a real automated guided vehicle platform and demonstrate promising sim-to-real transfer capability in dynamic driving scenarios.",
+  "abstract_zh": "端到端自主驾驶越来越多地采用基于世界模型的强化学习框架，通过 extit{想象的滚动}提高学习效率。然而，现有的世界模型存在三个主要局限性：长时间想象滚动中的时间不一致性、对自我与环境交互的建模不足，以及对多样化驾驶风格的适应性有限。为了解决这些挑战，我们提出了 extit{StyleDrive}，这是一个基于世界模型的学习框架，旨在共同实现长时间一致性，明确解耦交互交通状态，并在统一学习范式中支持多风格策略优化。首先，我们引入了一种时间一致性正则化，通过门控交叉注意力集成历史潜在状态，稳定长时间想象滚动并减轻误差积累。其次，我们设计了一个显式状态解耦模块，将与自我相关的交互状态与无关状态分离，使得在复杂交通场景中能够进行更具可解释性和高效的决策。第三，我们通过组相对策略优化实现多风格驾驶行为，该方法用轨迹级相对优势替代逐步奖励优化，从而减少奖励方差，并在不重新训练的情况下支持多样化驾驶风格。我们在Bench2Drive闭环驾驶基准上评估了StyleDrive，取得了88.44的驾驶得分（比之前最佳的基于世界模型的方法提高了17.08）和66.82的成功率（提高了16.58）。此外，我们在一个真实的自动导引车平台上部署了StyleDrive，并在动态驾驶场景中展示了良好的仿真到现实的转移能力。",
+  "arxiv_id": "2609.03225",
+  "arxiv_url": "https://arxiv.org/abs/2609.03225v1",
+  "authors": [
+    "Yuxuan Han",
+    "Kunyuan Wu",
+    "Liyunong Yang",
+    "Zilu Wang",
+    "Cansen Jiang",
+    "Yi Xiao",
+    "Liang Hu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03225",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.555523+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03225v1",
+  "published_at": "2026-09-03T00:00:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "交通",
+      "world model",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 94
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03225v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Long-Horizon Consistent and Interaction-Aware World Models for Multi-Style End-to-End Driving",
+  "title_zh": "面向多风格端到端驾驶的长时间一致性与交互感知世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.03225"
+}

@@ -1,0 +1,68 @@
+{
+  "abstract": "World models (WMs) have demonstrated strong potential for end-to-end autonomous driving by learning predictive representations of future scene dynamics. However, generating future videos during inference introduces substantial computational overhead, leading many recent driving WMs to adopt a single front camera as input for efficient deployment. This design restricts spatial coverage in safety-critical maneuvers such as lane changes, merges, and turns. To address this limitation, we propose SV-WAM, a surround-view world-action model (WAM) that preserves full six-camera observations while maintaining efficient inference. SV-WAM leverages future-video prediction as dense training supervision for action learning within a shared generative model, rather than as an inference-time output. At the core of this design is an action-centered causal mask that prevents action tokens from attending to future-video tokens during joint action-video denoising. Consequently, the video branch can be discarded at deployment, enabling efficient action-only planning. Furthermore, we introduce a differentiable drivable-area compliance regularizer that penalizes vehicle-footprint corners approaching or crossing drivable boundaries, improving planning safety and boundary awareness. Extensive experiments on the closed-loop NAVSIMv2 benchmark and the open-loop nuScenes benchmark demonstrate that SV-WAM achieves state-of-the-art planning performance with low inference latency and competitive zero-shot transfer capability.",
+  "abstract_zh": "世界模型（WMs）通过学习未来场景动态的预测表示，展示了在端到端自主驾驶中的强大潜力。然而，在推理过程中生成未来视频会引入大量计算开销，导致许多近期的驾驶世界模型采用单前置摄像头作为输入以实现高效部署。这种设计限制了在安全关键的操作（如变道、并入和转弯）中的空间覆盖。为了解决这一限制，我们提出了SV-WAM，一种全景世界-动作模型（WAM），它在保持高效推理的同时保留完整的六个摄像头观察。SV-WAM利用未来视频预测作为共享生成模型中动作学习的密集训练监督，而不是作为推理时的输出。这一设计的核心是一个以动作为中心的因果掩码，防止动作标记在联合动作-视频去噪过程中关注未来视频标记。因此，视频分支可以在部署时被丢弃，从而实现高效的仅动作规划。此外，我们引入了一种可微分的可行驶区域合规正则化器，惩罚接近或越过可行驶边界的车辆轮廓角，提高规划安全性和边界意识。在闭环NAVSIMv2基准和开放环nuScenes基准上的大量实验表明，SV-WAM在低推理延迟和竞争性的零-shot迁移能力下实现了最先进的规划性能。",
+  "arxiv_id": "2609.03602",
+  "arxiv_url": "https://arxiv.org/abs/2609.03602v1",
+  "authors": [
+    "Jinyang Wang",
+    "Shiwei Li",
+    "Junjian Wang",
+    "Zhiqiang Deng",
+    "Jianbin Gao",
+    "Yihang Zhao",
+    "Liu Liu",
+    "Yongjia Zhao",
+    "Jinlong Chen",
+    "Huirui Xu",
+    "Yifeng Pan",
+    "Kangwei Liu",
+    "Fan Ren",
+    "Ji Tao",
+    "Minghao Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03602",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.597841+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03602v1",
+  "published_at": "2026-09-03T09:47:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "lane",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 78
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03602v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving",
+  "title_zh": "SV-WAM：一种高效的全景世界-动作模型用于端到端自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.03602"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "This paper presents a new method for headland coverage path planning for arable fields. Several earlier approaches suggest covering the headland with nested polygons and smooth turns, however, covering the field corners entirely requires manoeuvres with reversing. In the new method, the polygon corners are modified to allow a reversing turn. A comparison to two other methods considering gap, overlap, and crossing the field boundary shows an improvement in the coverage result especially in field corners of around 90 degrees, and 240 degrees and above. Applicability of the new method is shown with several examples of real polygonal field maps.",
+  "abstract_zh": "本文提出了一种新的农业耕作领域的边界覆盖路径规划方法。早期的一些方法建议使用嵌套多边形和光滑转弯来覆盖边界，然而，完全覆盖田地角落需要进行倒车操作。在新方法中，多边形的角落被修改以允许倒车转弯。与考虑间隙、重叠和穿越田地边界的其他两种方法的比较显示，特别是在约90度和240度及以上的田地角落，覆盖结果有所改善。通过多个实际多边形田地地图的示例展示了新方法的适用性。",
+  "arxiv_id": "2609.04103",
+  "arxiv_url": "https://arxiv.org/abs/2609.04103v1",
+  "authors": [
+    "Riikka Soitinaho",
+    "Timo Oksanen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-04103",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.572280+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04103v1",
+  "published_at": "2026-09-03T17:08:02Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "path planning",
+      "农业"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "标题明确属于非道路驾驶领域",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 17
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04103v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "研究农业自主驾驶场景下的田地边界覆盖路径规划，重点解决复杂角落区域的完整覆盖与倒车转弯问题。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Corner Cases: Headland Coverage Path Planning for Autonomous Driving in Arable Farming",
+  "title_zh": "边角案例：农业耕作中自主驾驶的边界覆盖路径规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.04103"
+}

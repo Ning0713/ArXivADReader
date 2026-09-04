@@ -1,0 +1,59 @@
+{
+  "abstract": "World models offer a promising paradigm for autonomous driving by predicting how traffic scenes may evolve and using such predictions to support action generation. However, existing approaches either separate future prediction from action generation or jointly predict them at the same temporal scale, making it difficult to simultaneously achieve long-horizon anticipation and responsive, observation-grounded decision making. We present Drive-HWM, a hierarchical slow--fast world modeling framework that organizes future representation prediction and action generation at complementary temporal scales. The slow world model predicts multi-step future representations to capture extended scene evolution. To explicitly model the abundant motion dynamics in driving environments, we introduce Dynamic-Aware Latents learned through optical-flow prediction. Guided by these future representations, the fast model uses a lightweight multimodal backbone and an autoregressive expert to jointly predict the next frame and the immediate action from the latest observation. Next-frame prediction encourages the fast model to capture imminent scene evolution, while one-step action generation allows decisions to be continuously updated as new observations arrive. Extensive experiments on NAVSIM v1 and v2 demonstrate the strong driving performance of Drive-HWM. Comprehensive ablation studies further validate the effectiveness of the hierarchical slow--fast design, dynamics-aware future representations, and joint next-frame and action prediction.",
+  "abstract_zh": "世界模型为自主驾驶提供了一种有前景的范式，通过预测交通场景的演变并利用这些预测来支持行动生成。然而，现有的方法要么将未来预测与行动生成分开，要么在相同的时间尺度上共同预测这两者，这使得同时实现长期预判和基于观察的响应性决策变得困难。我们提出了Drive-HWM，一种分层的慢-快世界建模框架，它在互补的时间尺度上组织未来表示预测和行动生成。慢世界模型预测多步未来表示，以捕捉延续的场景演变。为了明确建模驾驶环境中丰富的运动动态，我们引入了通过光流预测学习的动态感知潜在变量。受到这些未来表示的引导，快模型使用轻量级的多模态骨干网络和自回归专家，联合预测下一帧和最新观察下的即时行动。下一帧预测促使快模型捕捉即将发生的场景演变，而一步行动生成则允许随着新观察的到来持续更新决策。在NAVSIM v1和v2上的广泛实验展示了Drive-HWM的强大驾驶性能。全面的消融研究进一步验证了分层慢-快设计、动态感知未来表示以及联合下一帧和行动预测的有效性。",
+  "arxiv_id": "2609.03572",
+  "arxiv_url": "https://arxiv.org/abs/2609.03572v1",
+  "authors": [
+    "Zhaoxin Fan",
+    "Tianbao Zhang",
+    "Wenjun Wu",
+    "Xiaofeng Wang",
+    "Yeying Jin",
+    "Jian Zhao",
+    "Zheng Zhu",
+    "Shuicheng Yan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03572",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.596677+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03572v1",
+  "published_at": "2026-09-03T09:21:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 57
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03572v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Drive-HWM: Hierarchical World Models for Dynamic-Latent Guided Autonomous Driving",
+  "title_zh": "Drive-HWM：用于动态潜在引导自主驾驶的分层世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.03572"
+}

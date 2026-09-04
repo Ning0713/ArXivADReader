@@ -1,0 +1,51 @@
+{
+  "abstract": "Online 3D reconstruction models perform poorly on long videos. This happens because regressing poses relative to a fixed first-frame anchor forces extrapolation far beyond the training distribution. Small drifts accumulate and amplify into significant geometric collapse. However, we observe that per-frame depth remains stable throughout this failure. The backbone's local geometry remains intact; only the global pose head breaks down. Motivated by this decoupling, we introduce Scal3R. This approach reformulates online reconstruction as multi-reference relative pose querying. We use lightweight learnable tokens, which make up about ~1% of the parameters, and inject them into a completely frozen backbone via asymmetric attention. This setup queries poses relative to multiple past keyframes. An online pose-graph optimization system with loop closure suppresses long-range drift. Scal3R reaches convergence in 8 hours on a single GPU. It reduces the average ATE by over 60% on KITTI compared to the online baseline. It also achieves state-of-the-art performance across Virtual KITTI, Sintel, TUM-Dynamic, ScanNet, and 7-Scenes. Project page: https://linjohnss.github.io/scal3r/",
+  "abstract_zh": "在线三维重建模型在长视频上的表现较差。这是因为相对于固定的第一帧锚点回归姿态迫使模型进行超出训练分布的外推。小的漂移会累积并放大为显著的几何崩溃。然而，我们观察到每帧的深度在这一失败过程中保持稳定。主干网络的局部几何结构保持完整；只有全局姿态头崩溃。基于这一解耦现象，我们提出了Scal3R。该方法将在线重建重新表述为多参考相对姿态查询。我们使用轻量级可学习的标记，这些标记约占参数的1%，并通过非对称注意力将其注入到完全冻结的主干网络中。该设置相对于多个过去的关键帧查询姿态。一个带有环闭合的在线姿态图优化系统抑制了长距离漂移。Scal3R在单个GPU上8小时内达到收敛。与在线基线相比，它在KITTI上将平均绝对轨迹误差（ATE）降低了超过60%。它还在Virtual KITTI、Sintel、TUM-Dynamic、ScanNet和7-Scenes上实现了最先进的性能。项目页面：https://linjohnss.github.io/scal3r/",
+  "arxiv_id": "2609.04201",
+  "arxiv_url": "https://arxiv.org/abs/2609.04201v1",
+  "authors": [
+    "Chin-Yang Lin",
+    "Yang-Che Sun",
+    "Cheng Sun",
+    "Fu-En Yang",
+    "Min-Hung Chen",
+    "Yen-Yu Lin",
+    "Wei-Chen Chiu",
+    "Yu-Lun Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-04201",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.630846+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04201v1",
+  "published_at": "2026-09-03T17:59:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04201v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划"
+    ]
+  },
+  "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
+  "title_zh": "Scal3R：学习高效的多相对姿态查询以实现可扩展的在线三维重建",
+  "translation_url": "https://hjfy.top/arxiv/2609.04201"
+}

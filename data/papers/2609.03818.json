@@ -1,0 +1,53 @@
+{
+  "abstract": "Collaborative perception enhances environment understanding through multi-agent information sharing, but its performance in real-world scenarios is constrained by heterogeneous sensor modalities and model architectures. Recent protocol-based two-stage methods alleviate this problem by mapping heterogeneous features into a shared protocol space; however, independently trained modality-specific converters often generate modality-specific pseudo-protocol distributions, leading to semantic inconsistency and error accumulation, which is particularly pronounced in scenarios with large modality discrepancies. To address this issue, we propose CauseCollab, a causal unified and modality-agnostic network. CauseCollab formulates representation learning in the protocol space from a causal perspective, explicitly disentangling semantic factors from modality-specific statistical confounders via causal metric learning. Meanwhile, CauseCollab adopts context-guided Unified Converter for heterogeneous modalities to ensure cross-modal semantic consistency. In addition, integrating new modalities only requires training adapters with minimal parameters. Extensive experiments on the OPV2V and DAIR-V2X datasets demonstrate that CauseCollab achieves state-of-the-art performance, with more significant gains in scenarios involving large modality gaps.",
+  "abstract_zh": "协同感知通过多智能体信息共享增强环境理解，但其在现实场景中的表现受到异构传感器模态和模型架构的限制。近期基于协议的两阶段方法通过将异构特征映射到共享协议空间来缓解这一问题；然而，独立训练的模态特定转换器通常生成模态特定的伪协议分布，导致语义不一致和错误累积，这在模态差异较大的场景中尤为明显。为了解决这一问题，我们提出了CauseCollab，一种因果统一和模态无关的网络。CauseCollab从因果角度对协议空间中的表示学习进行公式化，明确地将语义因素与模态特定的统计混杂因素通过因果度量学习进行解耦。同时，CauseCollab采用上下文引导的统一转换器处理异构模态，以确保跨模态语义一致性。此外，集成新模态只需训练具有最小参数的适配器。在OPV2V和DAIR-V2X数据集上的大量实验表明，CauseCollab实现了最先进的性能，在涉及大模态差距的场景中获得了更显著的提升。",
+  "arxiv_id": "2609.03818",
+  "arxiv_url": "https://arxiv.org/abs/2609.03818v1",
+  "authors": [
+    "Weize Li",
+    "Yang Li",
+    "Quan Yuan",
+    "Xiaoyuan Fu",
+    "Guiyang Luo",
+    "Jinglin Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-04#paper-2609-03818",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-04T09:16:01.652909+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.03818v1",
+  "published_at": "2026-09-03T13:19:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "dair-v2x",
+      "opv2v"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 72
+  },
+  "seen_dates": [
+    "2026-09-04"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.03818v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-04"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "协同/V2X"
+    ]
+  },
+  "title": "CauseCollab: Causal Unified and Modality-Agnostic Network for Heterogeneous Collaborative Perception",
+  "title_zh": "CauseCollab：用于异构协同感知的因果统一和模态无关网络",
+  "translation_url": "https://hjfy.top/arxiv/2609.03818"
+}
