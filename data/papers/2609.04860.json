@@ -1,0 +1,58 @@
+{
+  "abstract": "3D perception plays a crucial role in real-world applications such as autonomous driving, robotics, and AR/VR. In practical scenarios, 3D perception models need to continually adapt to newly emerging 3D object categories, making class-incremental learning (CIL) particularly important. However, unlike 2D images, 3D point clouds are inherently heterogeneous: objects from the same class may not only come from the clean CAD domain, but also from RGB-D camera scans of varying quality, video reconstructions, or even corrupted observations. We discover that such heterogeneity introduces a new challenge beyond catastrophic forgetting: the degree of performance degradation can vary substantially across domains, a phenomenon we term performance discrepancy. To investigate this problem, we establish the Domain3D-CIL training and evaluation protocol, which contains point cloud categories from heterogeneous domains. We further adapt a wide range of mainstream CIL methods to the 3D modality. The results demonstrate that this performance discrepancy consistently appears across these baselines. To mitigate this issue, we introduce PolyMem, an exemplar-free approach that implicitly models rich high-order statistics of the feature distribution to enhance cross-domain robustness. Experiments demonstrate that our method effectively alleviates the performance discrepancy while improving the model's performance across domains. Code will be made publicly available upon acceptance.",
+  "abstract_zh": "3D感知在自动驾驶、机器人技术以及增强现实/虚拟现实等现实应用中发挥着至关重要的作用。在实际场景中，3D感知模型需要不断适应新出现的3D物体类别，这使得类增量学习（Class-Incremental Learning, CIL）变得尤为重要。然而，与2D图像不同，3D点云本质上是异质的：同一类别的物体不仅可能来自干净的CAD域，还可能来自不同质量的RGB-D相机扫描、视频重建，甚至是损坏的观测。我们发现，这种异质性引入了一个超出灾难性遗忘的新挑战：性能下降的程度在不同域之间可能存在显著差异，这一现象我们称之为性能差异。为了解决这个问题，我们建立了Domain3D-CIL训练和评估协议，该协议包含来自异质域的点云类别。我们进一步将一系列主流CIL方法适配到3D模态。结果表明，这种性能差异在这些基线方法中始终存在。为了缓解这一问题，我们引入了PolyMem，一种无示例的方法，隐式建模特征分布的丰富高阶统计量，以增强跨域鲁棒性。实验表明，我们的方法有效缓解了性能差异，同时提高了模型在不同域之间的性能。代码将在接受后公开发布。",
+  "arxiv_id": "2609.04860",
+  "arxiv_url": "https://arxiv.org/abs/2609.04860v1",
+  "authors": [
+    "Jinge Ma",
+    "Gautham Vinod",
+    "Bruce Coburn",
+    "Jui-Feng Chi",
+    "Siddeshwar Raghavan",
+    "Fengqing Zhu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04860",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.049835+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04860v1",
+  "published_at": "2026-09-04T08:20:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04860v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "Mitigating Performance Discrepancy in Cross-Domain 3D Class-Incremental Learning",
+  "title_zh": "缓解跨域3D类增量学习中的性能差异",
+  "translation_url": "https://hjfy.top/arxiv/2609.04860"
+}

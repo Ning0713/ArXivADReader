@@ -1,0 +1,55 @@
+{
+  "abstract": "Cross-view localization (CVL) estimates the pose of a ground image by matching it to a geo-referenced satellite image. To bridge the extreme viewpoint gap, mainstream pipelines rely on Bird's-Eye-View (BEV) transformations or 2D-to-3D lifting. However, deriving 3D structures from a single ground image is fundamentally ill-posed, causing these methods to endure geometric distortions and computational costs during 3D lifting or BEV projection. Furthermore, relying on external depth foundation models to resolve this introduces latency and remains susceptible to noisy predictions. In this work, we present a different approach inspired by a human navigation technique called resection, that can perform direct ground to satellite image matching and localization without relying on external depth foundation models. The key insights of our method are that (i) ground keypoints can be translated into azimuthal rays on the satellite map, and (ii) these rays ideally converge at the user location. Exploiting this geometric constraint through direct line-to-point correspondences, we introduce a minimal Azimuthal Ray Convergence (ARC) solver to identify the intersection, alongside an ARC loss to optimize the matching network. By eliminating dependencies on computationally heavy BEV transformations and external depth foundation models, our approach achieves faster, memory-efficient inference, while its explicit feature matching ensures straightforward compatibility with existing frameworks. Experiments on VIGOR and KITTI demonstrate that ARC-Loc maintains competitive localization accuracy compared to recent approaches, highlighting its practicality.",
+  "abstract_zh": "跨视图定位（CVL）通过将地面图像与地理参考的卫星图像进行匹配来估计地面图像的姿态。为了弥补极端视角差距，主流流程依赖于鸟瞰图（BEV）变换或2D到3D的提升。然而，从单一地面图像推导3D结构在本质上是一个病态问题，这导致这些方法在3D提升或BEV投影过程中遭受几何失真和计算成本的增加。此外，依赖外部深度基础模型来解决这一问题引入了延迟，并且仍然容易受到噪声预测的影响。在本研究中，我们提出了一种不同的方法，灵感来源于一种称为重设的人工导航技术，该技术可以在不依赖外部深度基础模型的情况下直接进行地面与卫星图像的匹配和定位。我们方法的关键见解是：（i）地面关键点可以转换为卫星地图上的方位射线，以及（ii）这些射线理想情况下在用户位置收敛。通过直接的点对线对应关系利用这一几何约束，我们引入了一种最小化的方位射线收敛（ARC）求解器来识别交点，同时引入ARC损失以优化匹配网络。通过消除对计算密集型BEV变换和外部深度基础模型的依赖，我们的方法实现了更快、更节省内存的推理，同时其显式特征匹配确保了与现有框架的简单兼容性。在VIGOR和KITTI上的实验表明，ARC-Loc在定位精度上与近期方法保持竞争力，突显了其实用性。",
+  "arxiv_id": "2609.04965",
+  "arxiv_url": "https://arxiv.org/abs/2609.04965v1",
+  "authors": [
+    "Hyeongsik Kim",
+    "Mincheol Kim",
+    "Heejoon Moon",
+    "Je Hyeong Hong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04965",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.055975+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04965v1",
+  "published_at": "2026-09-04T10:19:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "intersection",
+      "bev",
+      "bird's-eye",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04965v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "ARC-Loc: Leveraging Azimuthal Ray Convergence as a Geometric Cue for Direct Cross-View Localization",
+  "title_zh": "ARC-Loc：利用方位射线收敛作为直接跨视图定位的几何线索",
+  "translation_url": "https://hjfy.top/arxiv/2609.04965"
+}

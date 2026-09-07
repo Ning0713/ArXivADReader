@@ -1,0 +1,55 @@
+{
+  "abstract": "Reliable 3D understanding of the surrounding environment is a core requirement for autonomous driving. Multi-view surround camera rigs provide broad scene coverage, but the spatially adjacent images typically overlap only minimally. Consequently, the depth of most pixels must be inferred from monocular appearance cues. These cues can appear differently across images and may therefore be interpreted differently by the depth estimation model. We target two main sources of cross-image inconsistency: differences in camera intrinsics and the limited receptive field of each image. We address the former by conditioning the features on per-pixel camera-aware ray embeddings, enabling the network to account for camera-dependent variations in monocular cues. We address the latter by extending each pixel's context beyond its own image through cross-image attention constrained to geometrically plausible regions, derived from the calibrated rig setup. The model is trained in a fully self-supervised manner based on photometric consistency. Evaluations on DDAD and nuScenes show improved overall depth accuracy and cross-image depth consistency over state-of-the-art self-supervised methods under in-domain and cross-domain evaluation. Code is available at https://abualhanud.github.io/CrossDepthPage/.",
+  "abstract_zh": "对周围环境的可靠三维理解是自动驾驶的核心需求。多视图周围摄像头设备提供了广泛的场景覆盖，但空间上相邻的图像通常仅有最小的重叠。因此，大多数像素的深度必须通过单目外观线索进行推断。这些线索在不同图像中可能表现不同，因此可能会被深度估计模型以不同的方式解读。我们针对跨图像不一致性的两个主要来源：相机内参的差异和每个图像的有限感受野。我们通过对每个像素的相机感知光线嵌入进行特征条件化来解决前者，使网络能够考虑单目线索中的相机依赖性变化。我们通过扩展每个像素的上下文超出其自身图像，采用几何上合理的区域进行跨图像注意力机制来解决后者，这些区域是从标定的设备设置中推导而来的。该模型以完全自监督的方式基于光度一致性进行训练。在DDAD和nuScenes上的评估显示，在领域内和跨领域评估中，相较于最先进的自监督方法，整体深度准确性和跨图像深度一致性均有所改善。代码可在 https://abualhanud.github.io/CrossDepthPage/ 获取。",
+  "arxiv_id": "2609.05397",
+  "arxiv_url": "https://arxiv.org/abs/2609.05397v1",
+  "authors": [
+    "Samer Abualhanud",
+    "Max Mehltretter"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-05397",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.069301+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.05397v1",
+  "published_at": "2026-09-04T17:45:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.05397v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "CrossDepth: Geometry-Constrained Attention for Generalizable Multi-View Surround Depth Estimation",
+  "title_zh": "CrossDepth：几何约束注意力用于可泛化的多视图周围深度估计",
+  "translation_url": "https://hjfy.top/arxiv/2609.05397"
+}

@@ -1,0 +1,60 @@
+{
+  "abstract": "Multi-vehicle cooperative autonomous driving enhances the safety and reliability of autonomous driving systems through information sharing among connected vehicles, demonstrating significant potential for improving traffic safety. LLM-based approaches leverage strong reasoning capabilities of LLMs to enable effective inter-vehicle negotiation and improve cooperative driving performance. However, driving decisions in complex traffic scenarios are inherently multi-solution in nature. As a result, existing negotiation-based methods often converge prematurely to suboptimal solutions, hindering consensus formation and limiting the practical deployment of cooperative autonomous driving systems. To address this challenge, we propose CoLMIN, the LLM-based multi-decision path negotiation framework for cooperative autonomous driving, achieving stable decision consensus through multi-decision path negotiation and reflective reasoning. To achieve stable and high-quality consensus in cooperative autonomous driving, CoLMIN consists of three key components: (i) an LLM-based Multi-Intent Negotiation module (LMin), which adopts a Negotiator-Evaluator paradigm and generates multiple candidate driving intentions for joint evaluation; (ii) an Evaluation-based Shallow Reflection Module (ESRM), which analyzes negotiation outcomes and provides feedback to guide subsequent negotiations, thereby accelerating consensus formation; and (iii) an LLM-based Deep Reflection Module (LDRM), which performs long-term reflection over negotiation histories to mitigate cognitive fixation and prevent the system from converging to suboptimal solutions. Experimental results in the CARLA simulation environment demonstrate that CoLMIN significantly outperforms existing methods in challenging interactive driving scenarios.",
+  "abstract_zh": "多车辆合作自主驾驶通过连接车辆之间的信息共享增强了自主驾驶系统的安全性和可靠性，展现了显著提升交通安全的潜力。基于大型语言模型（LLM）的方法利用LLM强大的推理能力，促进有效的车际协商并改善合作驾驶性能。然而，复杂交通场景中的驾驶决策本质上具有多解性。因此，现有的基于协商的方法往往过早收敛到次优解，阻碍了共识的形成，限制了合作自主驾驶系统的实际部署。为了解决这一挑战，我们提出了CoLMIN，一种基于LLM的合作自主驾驶多决策路径协商框架，通过多决策路径协商和反思推理实现稳定的决策共识。为了在合作自主驾驶中实现稳定和高质量的共识，CoLMIN由三个关键组件组成：（i）基于LLM的多意图协商模块（LMin），采用协商者-评估者范式，生成多个候选驾驶意图以供联合评估；（ii）基于评估的浅层反思模块（ESRM），分析协商结果并提供反馈以指导后续协商，从而加速共识形成；（iii）基于LLM的深层反思模块（LDRM），对协商历史进行长期反思，以减轻认知固定并防止系统收敛到次优解。在CARLA仿真环境中的实验结果表明，CoLMIN在具有挑战性的互动驾驶场景中显著优于现有方法。",
+  "arxiv_id": "2609.04807",
+  "arxiv_url": "https://arxiv.org/abs/2609.04807v1",
+  "authors": [
+    "Zhe Huang",
+    "Zhaoxin Fan",
+    "Shuo Wang",
+    "Wenjun Wu",
+    "Xuan Zhao",
+    "Min Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04807",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.020170+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04807v1",
+  "published_at": "2026-09-04T07:03:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04807v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "世界模型/生成"
+    ]
+  },
+  "title": "CoLMIN: LLM-based Multi-Decision Path Negotiation for Cooperative Autonomous Driving",
+  "title_zh": "CoLMIN：基于大型语言模型的合作自主驾驶多决策路径协商",
+  "translation_url": "https://hjfy.top/arxiv/2609.04807"
+}

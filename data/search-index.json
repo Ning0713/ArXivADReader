@@ -1,6 +1,384 @@
 {
-  "generated_at": "2026-09-04T09:18:06.573700+00:00",
+  "generated_at": "2026-09-07T09:56:55.474557+00:00",
   "items": [
+    {
+      "abstract": "Reliable 3D understanding of the surrounding environment is a core requirement for autonomous driving. Multi-view surround camera rigs provide broad scene coverage, but the spatially adjacent images typically overlap only minimally. Consequently, the depth of most pixels must be inferred from monocular appearance cues. These cues can appear differently across images and may therefore be interpreted differently by the depth estimation model. We target two main sources of cross-image inconsistency: differences in camera intrinsics and the limited receptive field of each image. We address the former by conditioning the features on per-pixel camera-aware ray embeddings, enabling the network to account for camera-dependent variations in monocular cues. We address the latter by extending each pixel's context beyond its own image through cross-image attention constrained to geometrically plausible regions, derived from the calibrated rig setup. The model is trained in a fully self-supervised manner based on photometric consistency. Evaluations on DDAD and nuScenes show improved overall depth accuracy and cross-image depth consistency over state-of-the-art self-supervised methods under in-domain and cross-domain evaluation. Code is available at https://abualhanud.github.io/CrossDepthPage/.",
+      "abstract_zh": "对周围环境的可靠三维理解是自动驾驶的核心需求。多视图周围摄像头设备提供了广泛的场景覆盖，但空间上相邻的图像通常仅有最小的重叠。因此，大多数像素的深度必须通过单目外观线索进行推断。这些线索在不同图像中可能表现不同，因此可能会被深度估计模型以不同的方式解读。我们针对跨图像不一致性的两个主要来源：相机内参的差异和每个图像的有限感受野。我们通过对每个像素的相机感知光线嵌入进行特征条件化来解决前者，使网络能够考虑单目线索中的相机依赖性变化。我们通过扩展每个像素的上下文超出其自身图像，采用几何上合理的区域进行跨图像注意力机制来解决后者，这些区域是从标定的设备设置中推导而来的。该模型以完全自监督的方式基于光度一致性进行训练。在DDAD和nuScenes上的评估显示，在领域内和跨领域评估中，相较于最先进的自监督方法，整体深度准确性和跨图像深度一致性均有所改善。代码可在 https://abualhanud.github.io/CrossDepthPage/ 获取。",
+      "authors": [
+        "Samer Abualhanud",
+        "Max Mehltretter"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.05397",
+      "tags": [
+        "深度/几何",
+        "感知"
+      ],
+      "title": "CrossDepth: Geometry-Constrained Attention for Generalizable Multi-View Surround Depth Estimation",
+      "title_zh": "CrossDepth：几何约束注意力用于可泛化的多视图周围深度估计",
+      "url": "/daily/2026-09-07/#paper-2609-05397"
+    },
+    {
+      "abstract": "Achieving robust SLAM in large-scale underground coal mines with complex structures and severe degeneracies remains highly challenging. Dense smoke and dust cause substantial loss of visual information and degrade LiDAR point-cloud features, while long, self-similar corridors induce geometric degeneration, leading to pronounced odometry drift. To address these issues, we propose FIRE-LIVWO: Failure-Immune mmWave Radar-Enhanced LiDAR-Inertial-Visual-Wheel Odometry, a tightly coupled multi-modal odometry framework based on an iterated error-state Kalman filter (IESKF). The framework fuses 4D mmWave radar, LiDAR, and visual features within a unified VoxelMap and jointly constructs LiDAR-radar point-to-plane residuals and sparse visual photometric residuals. In smoke-filled environments, we exploit the strong penetration of 4D mmWave radar and introduce pointwise Doppler velocity constraints to preserve state observability. In geometrically degenerate corridors, we tightly couple wheel odometry using non-holonomic constraints (NHC) and online lever-arm compensation to reduce drift. Our central contribution is a degeneration detection and adaptive fusion model switching strategy grounded in geometric and visual observability analysis, which quantifies observability online and dynamically adjusts modality weights. Real-world experiments in underground coal mines demonstrate that FIRE-LIVWO accurately identifies failure boundaries, enabling reliable modality switching under extreme conditions. Compared with baselines, it achieves superior accuracy and robustness (average localization error of 5.677m). We open source our code on Github to benefit the robotics community.",
+      "abstract_zh": "在复杂结构和严重退化的地下煤矿中实现稳健的SLAM仍然具有很高的挑战性。浓密的烟雾和灰尘导致视觉信息的显著丢失，并降低激光雷达点云特征，而长且自相似的走廊则引发几何退化，导致明显的里程计漂移。为了解决这些问题，我们提出了FIRE-LIVWO：故障免疫毫米波雷达增强的激光雷达-惯性-视觉-轮式里程计，这是一个基于迭代误差状态卡尔曼滤波器（IESKF）的紧耦合多模态里程计框架。该框架在统一的体素地图中融合4D毫米波雷达、激光雷达和视觉特征，并共同构建激光雷达-雷达点到平面的残差和稀疏视觉光度残差。在充满烟雾的环境中，我们利用4D毫米波雷达的强穿透能力，并引入逐点多普勒速度约束以保持状态可观测性。在几何退化的走廊中，我们通过非完整约束（NHC）和在线杠杆臂补偿紧密耦合轮式里程计，以减少漂移。我们的核心贡献是基于几何和视觉可观测性分析的退化检测与自适应融合模型切换策略，该策略在线量化可观测性并动态调整模态权重。在地下煤矿的实际实验中，FIRE-LIVWO准确识别故障边界，使得在极端条件下能够可靠地进行模态切换。与基线相比，它实现了更优的准确性和鲁棒性（平均定位误差为5.677米）。我们在Github上开源了我们的代码，以造福机器人社区。",
+      "authors": [
+        "Kun Hu",
+        "Menggang Li",
+        "Kaidi Wu",
+        "Zhiwen Jin",
+        "Yingjie Zhao",
+        "Chaoquan Tang",
+        "Eryi Hu",
+        "Gongbo Zhou"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.05325",
+      "tags": [
+        "地图/定位",
+        "多传感器融合",
+        "Radar"
+      ],
+      "title": "FIRE-LIVWO: Robust LiDAR-Inertial-Visual-Wheel Odometry via Failure-Immune mmWave Radar Enhancement",
+      "title_zh": "FIRE-LIVWO：通过故障免疫毫米波雷达增强实现稳健的激光雷达-惯性-视觉-轮式里程计",
+      "url": "/daily/2026-09-07/#paper-2609-05325"
+    },
+    {
+      "abstract": "Explicit primitive-based radiance fields such as 3D Gaussian Splatting typically model view-dependent appearance using low-order spherical harmonics (SH). Although efficient to evaluate, SH coefficients dominate per-primitive storage and memory traffic, while their band-limited basis restricts angular detail. We present a thorough, end-to-end comparison of SH and recent spherical appearance models and introduce an implicit alternative that decodes compact per-primitive latent codes using a tiny shared MLP. We integrate all models into the same optimized pipeline, fusing their forward and backward passes into a differentiable CUDA rasterizer and provide a portable WebGL viewer for laptop and mobile GPUs. Our evaluation across reconstruction quality, memory use, and optimization and rendering performance shows that recent spherical models offer the strongest overall quality-efficiency trade-off. Our neural representation is the most compact model evaluated and, compared to third-degree SH, reduces the per-primitive appearance footprint from 192 to 28 bytes, accelerates optimization by 1.3$\\times$, while improving reconstruction quality. We further analyze how appearance parametrization shapes optimization, identifying differences in recovered geometry and the tendency of expressive models to absorb non-static scene content. Together, our framework and analysis provide practical guidance for replacing SH beyond what image metrics alone can capture.",
+      "abstract_zh": "显式基于原始的辐射场，如3D高斯点云，通常使用低阶球谐函数（SH）来建模视角依赖的外观。尽管评估效率较高，但SH系数在每个原始的存储和内存流量中占主导地位，而其带限基函数限制了角度细节。我们对SH和近期的球形外观模型进行了全面的端到端比较，并提出了一种隐式替代方案，该方案使用一个小型共享多层感知器（MLP）解码紧凑的每个原始潜在编码。我们将所有模型集成到同一优化管道中，将它们的前向和后向传递融合到一个可微分的CUDA光栅化器中，并提供了一个便携的WebGL查看器，适用于笔记本电脑和移动GPU。我们在重建质量、内存使用、优化和渲染性能方面的评估表明，近期的球形模型提供了最佳的整体质量效率权衡。我们的神经表示是评估中最紧凑的模型，与三阶SH相比，将每个原始的外观占用空间从192字节减少到28字节，优化速度提升了1.3倍，同时改善了重建质量。我们进一步分析了外观参数化如何影响优化，识别了恢复几何形状的差异以及表现力强的模型吸收非静态场景内容的倾向。我们的框架和分析共同为替代SH提供了实用指导，超越了仅依赖图像度量所能捕捉的内容。",
+      "authors": [
+        "Florian Hahlbohm",
+        "Jorge Condor",
+        "Linus Franke",
+        "Martin Eisemann",
+        "Marcus Magnor"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.05255",
+      "tags": [
+        "深度/几何",
+        "端到端驾驶",
+        "感知"
+      ],
+      "title": "Compact Neural Appearance Models for Efficient Gaussian Splatting",
+      "title_zh": "高效高斯点云的紧凑神经外观模型",
+      "url": "/daily/2026-09-07/#paper-2609-05255"
+    },
+    {
+      "abstract": "Cross-view localization (CVL) estimates the pose of a ground image by matching it to a geo-referenced satellite image. To bridge the extreme viewpoint gap, mainstream pipelines rely on Bird's-Eye-View (BEV) transformations or 2D-to-3D lifting. However, deriving 3D structures from a single ground image is fundamentally ill-posed, causing these methods to endure geometric distortions and computational costs during 3D lifting or BEV projection. Furthermore, relying on external depth foundation models to resolve this introduces latency and remains susceptible to noisy predictions. In this work, we present a different approach inspired by a human navigation technique called resection, that can perform direct ground to satellite image matching and localization without relying on external depth foundation models. The key insights of our method are that (i) ground keypoints can be translated into azimuthal rays on the satellite map, and (ii) these rays ideally converge at the user location. Exploiting this geometric constraint through direct line-to-point correspondences, we introduce a minimal Azimuthal Ray Convergence (ARC) solver to identify the intersection, alongside an ARC loss to optimize the matching network. By eliminating dependencies on computationally heavy BEV transformations and external depth foundation models, our approach achieves faster, memory-efficient inference, while its explicit feature matching ensures straightforward compatibility with existing frameworks. Experiments on VIGOR and KITTI demonstrate that ARC-Loc maintains competitive localization accuracy compared to recent approaches, highlighting its practicality.",
+      "abstract_zh": "跨视图定位（CVL）通过将地面图像与地理参考的卫星图像进行匹配来估计地面图像的姿态。为了弥补极端视角差距，主流流程依赖于鸟瞰图（BEV）变换或2D到3D的提升。然而，从单一地面图像推导3D结构在本质上是一个病态问题，这导致这些方法在3D提升或BEV投影过程中遭受几何失真和计算成本的增加。此外，依赖外部深度基础模型来解决这一问题引入了延迟，并且仍然容易受到噪声预测的影响。在本研究中，我们提出了一种不同的方法，灵感来源于一种称为重设的人工导航技术，该技术可以在不依赖外部深度基础模型的情况下直接进行地面与卫星图像的匹配和定位。我们方法的关键见解是：（i）地面关键点可以转换为卫星地图上的方位射线，以及（ii）这些射线理想情况下在用户位置收敛。通过直接的点对线对应关系利用这一几何约束，我们引入了一种最小化的方位射线收敛（ARC）求解器来识别交点，同时引入ARC损失以优化匹配网络。通过消除对计算密集型BEV变换和外部深度基础模型的依赖，我们的方法实现了更快、更节省内存的推理，同时其显式特征匹配确保了与现有框架的简单兼容性。在VIGOR和KITTI上的实验表明，ARC-Loc在定位精度上与近期方法保持竞争力，突显了其实用性。",
+      "authors": [
+        "Hyeongsik Kim",
+        "Mincheol Kim",
+        "Heejoon Moon",
+        "Je Hyeong Hong"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04965",
+      "tags": [
+        "深度/几何",
+        "地图/定位",
+        "BEV/Occupancy"
+      ],
+      "title": "ARC-Loc: Leveraging Azimuthal Ray Convergence as a Geometric Cue for Direct Cross-View Localization",
+      "title_zh": "ARC-Loc：利用方位射线收敛作为直接跨视图定位的几何线索",
+      "url": "/daily/2026-09-07/#paper-2609-04965"
+    },
+    {
+      "abstract": "Diffusion probabilistic models can capture the multi-modal, interaction-rich distribution of joint future trajectories in driving scenes. We show that a single pretrained diffusion traffic model can serve two complementary roles in the autonomous driving development loop: as an ego motion planner, and as a controllable generator of safety-critical scenarios for stress-testing the planners. On the planning side, we introduce a Single-Stream Dual-Stream (SSDS) diffusion-transformer decoder that fuses scene context via joint attention rather than late cross-attention, improving closed-loop performance on nuPlan. We further propose Decoupled Annealing Posterior Sampling with Energy (DAPSE), a training-free guidance scheme that injects arbitrary energy functions at the clean-sample level, avoiding the first-order approximation errors while requiring no auxiliary networks. Beyond planning, we leverage the same diffusion model as a controllable scenario generator to create realistic long-tail driving interactions for closed-loop evaluation. Through inference-time guidance, selected agents are steered toward safety-critical behaviors, including aggressive cut-ins, lead-vehicle braking, and combined longitudinal-lateral interactions, while preserving realistic traffic behaviors. Evaluated in closed-loop nuPlan simulations with independent black-box planners, the generated scenarios expose failure modes that remain hidden under standard benchmarks. Although the SSDS-based planner achieves stronger nominal performance, it experiences larger degradation under these challenging scenarios, demonstrating that benchmark superiority does not necessarily translate to robustness. These results demonstrate that a single learned traffic prior can simultaneously improve motion planning and provide a realistic framework for systematic planner robustness evaluation.",
+      "abstract_zh": "扩散概率模型能够捕捉驾驶场景中联合未来轨迹的多模态、丰富交互的分布。我们展示了一个预训练的扩散交通模型可以在自动驾驶开发循环中发挥两个互补的角色：作为自我运动规划器，以及作为可控的安全关键场景生成器，用于对规划器进行压力测试。在规划方面，我们引入了一种单流双流（Single-Stream Dual-Stream, SSDS）扩散变换器解码器，通过联合注意力而非后期交叉注意力融合场景上下文，从而提高了在nuPlan上的闭环性能。我们进一步提出了带能量的解耦退火后验采样（Decoupled Annealing Posterior Sampling with Energy, DAPSE），这是一种无训练的引导方案，在干净样本级别注入任意能量函数，避免了一阶近似误差，同时不需要辅助网络。除了规划，我们利用相同的扩散模型作为可控场景生成器，创建现实的长尾驾驶交互以进行闭环评估。通过推理时引导，选定的代理被引导向安全关键行为，包括激进的插入、前车刹车以及纵向-横向的组合交互，同时保持现实的交通行为。在与独立黑箱规划器的闭环nuPlan仿真中评估，生成的场景暴露出在标准基准下隐藏的失败模式。尽管基于SSDS的规划器在名义性能上表现更强，但在这些具有挑战性的场景下却经历了更大的性能下降，表明基准的优越性并不一定转化为鲁棒性。这些结果表明，单一学习的交通先验可以同时改善运动规划，并为系统的规划器鲁棒性评估提供现实的框架。",
+      "authors": [
+        "Arka Pal",
+        "Rajesh Kumar",
+        "Hannes Eriksson",
+        "Rémi Lacombe",
+        "Arvid Laveno Ling",
+        "Ankit Gupta",
+        "Maciej Wozniak"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04921",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "世界模型/生成"
+      ],
+      "title": "One Diffusion Model, Two Roles: Guided Trajectory Planning and Safety-Critical Scenario Generation in Closed-Loop Simulation",
+      "title_zh": "一个扩散模型，两个角色：闭环仿真中的引导轨迹规划和安全关键场景生成",
+      "url": "/daily/2026-09-07/#paper-2609-04921"
+    },
+    {
+      "abstract": "Large language models become consequential agents when surrounding systems let outputs change external state. Models now call tools, operate interfaces, delegate work, retain state, inhabit generated worlds, and control robots or laboratory equipment. Such advances are often narrated as one march toward autonomy, conflating model competence, system integration, persistence, and safe authority. This critical review synthesizes primary research and official technical specifications available by 31 August 2026. We organize the evidence along delegated authority, temporal persistence, and environmental coupling, while separating model, harness, and environment. Within the evidence examined, action-interface expansion is documented more convincingly than robust completion, recovery, authorization, or independent verification. Model Context Protocol and Agent2Agent improve interoperability but do not establish trustworthy delegation; multi-agent organization adds specialization alongside cost and correlated failure. Persistent simulations and world models support training and planning but do not themselves demonstrate agency; robotics and self-driving laboratories establish bounded feasibility rather than unattended open-world reliability. We propose justified delegation as an analytical and normative heuristic, not an observed law or certified score: expand action scope only where evidence supports provenance, bounded authority, failure detection, safe recovery, and calibrated human control. This framing yields a research agenda for coupled model-harness evaluation, capability-based permissions, durable state, cross-agent accountability, and staged physical validation.",
+      "abstract_zh": "当周围系统允许输出改变外部状态时，大型语言模型成为重要的代理。模型现在可以调用工具、操作接口、委派工作、保持状态、居住在生成的世界中，并控制机器人或实验室设备。这些进展常常被叙述为朝向自主性的单一进程，将模型能力、系统集成、持久性和安全权威混为一谈。本文的批判性综述综合了截至2026年8月31日可用的主要研究和官方技术规范。我们根据委派权威、时间持久性和环境耦合组织证据，同时区分模型、工具和环境。在所审查的证据中，行动接口的扩展比稳健的完成、恢复、授权或独立验证更具说服力。模型上下文协议（Model Context Protocol）和Agent2Agent提高了互操作性，但并未建立可信的委派；多代理组织在增加专业化的同时也带来了成本和相关失败。持久的模拟和世界模型支持训练和规划，但本身并未展示代理性；机器人技术和自动驾驶实验室建立了有限的可行性，而非无人值守的开放世界可靠性。我们提出合理的委派作为一种分析和规范的启发式方法，而非观察到的法律或认证分数：仅在证据支持来源、有限权威、失败检测、安全恢复和校准的人类控制的情况下扩展行动范围。这一框架为耦合模型-工具评估、基于能力的权限、持久状态、跨代理问责和分阶段的物理验证提供了研究议程。",
+      "authors": [
+        "Linsen Zhu",
+        "Mengqing Cai"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04894",
+      "tags": [
+        "感知",
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
+      "title_zh": "从语言模型到世界行动系统：代理人工智能在数字、社会、虚拟和物理环境中的进展与局限",
+      "url": "/daily/2026-09-07/#paper-2609-04894"
+    },
+    {
+      "abstract": "Changes in sensor height and viewpoint alter object-level point distributions, making cross-platform LiDAR unsupervised domain adaptation (UDA) difficult. Self-training uses labeled source scans and unlabeled target scans, yet a retained prediction may provide a useful target location while enclosing sparse foreground returns, background clutter, or points inconsistent with the predicted box. We refer to this mismatch as box-point inconsistency. We introduce SimFuse3D, which preserves the target placement and repairs the associated pseudo-object using measured geometry from labeled source scans. Object Memory retrieves a compatible labeled source instance. Target Simulation places its ground-truth box at the target location, aligns its points with the target viewing geometry, and filters the aligned crop to approximate the target observation. Confidence-Guided Multi-Stage Localization Reweighting (CMLR) maps each target pseudo-object confidence score to a bounded weight shared by RPN localization and R-CNN box regression. All components operate only during adaptation, leaving the detector architecture and inference graph unchanged. Across six cross-platform transfers, SimFuse3D exceeds Pi3DET-Net on every reported AP metric and ranks first among the compared adaptation methods on nearly all metrics. On nuScenes-to-KITTI, it ranks first among the compared adaptation methods with both evaluated detectors.",
+      "abstract_zh": "传感器高度和视角的变化会改变物体级点分布，使得跨平台激光雷达无监督领域适应（UDA）变得困难。自我训练利用标记的源扫描和未标记的目标扫描，然而保留的预测可能提供有用的目标位置，同时包围稀疏的前景返回、背景杂波或与预测框不一致的点。我们将这种不匹配称为框-点不一致。我们引入SimFuse3D，它保留目标放置并利用来自标记源扫描的测量几何修复相关的伪物体。对象记忆检索兼容的标记源实例。目标模拟将其真实框放置在目标位置，调整其点与目标视角几何对齐，并过滤对齐的裁剪以近似目标观察。信心引导的多阶段定位重加权（CMLR）将每个目标伪物体的信心得分映射到一个由RPN定位和R-CNN框回归共享的有界权重。所有组件仅在适应期间运行，保持检测器架构和推理图不变。在六个跨平台转移中，SimFuse3D在每个报告的AP指标上均超过Pi3DET-Net，并在几乎所有指标上在比较的适应方法中排名第一。在nuScenes到KITTI的转移中，它在比较的适应方法中排名第一，且评估的检测器均表现优异。",
+      "authors": [
+        "Yongchun Lin",
+        "Xinliang Zhang",
+        "Yun Zou",
+        "Zhixuan Xiao",
+        "Liang Lei",
+        "Jianya Guo",
+        "Yuqiang Zhai",
+        "Xiaofeng Wang",
+        "HaiKuo Xu",
+        "Haoang Li"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04886",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "深度/几何"
+      ],
+      "title": "SimFuse3D: Source-Guided Target Simulation and Confidence-Guided Multi-Stage Localization Reweighting for Cross-Platform 3D Object Detection",
+      "title_zh": "SimFuse3D：源引导目标模拟与信心引导的多阶段定位重加权用于跨平台3D物体检测",
+      "url": "/daily/2026-09-07/#paper-2609-04886"
+    },
+    {
+      "abstract": "3D perception plays a crucial role in real-world applications such as autonomous driving, robotics, and AR/VR. In practical scenarios, 3D perception models need to continually adapt to newly emerging 3D object categories, making class-incremental learning (CIL) particularly important. However, unlike 2D images, 3D point clouds are inherently heterogeneous: objects from the same class may not only come from the clean CAD domain, but also from RGB-D camera scans of varying quality, video reconstructions, or even corrupted observations. We discover that such heterogeneity introduces a new challenge beyond catastrophic forgetting: the degree of performance degradation can vary substantially across domains, a phenomenon we term performance discrepancy. To investigate this problem, we establish the Domain3D-CIL training and evaluation protocol, which contains point cloud categories from heterogeneous domains. We further adapt a wide range of mainstream CIL methods to the 3D modality. The results demonstrate that this performance discrepancy consistently appears across these baselines. To mitigate this issue, we introduce PolyMem, an exemplar-free approach that implicitly models rich high-order statistics of the feature distribution to enhance cross-domain robustness. Experiments demonstrate that our method effectively alleviates the performance discrepancy while improving the model's performance across domains. Code will be made publicly available upon acceptance.",
+      "abstract_zh": "3D感知在自动驾驶、机器人技术以及增强现实/虚拟现实等现实应用中发挥着至关重要的作用。在实际场景中，3D感知模型需要不断适应新出现的3D物体类别，这使得类增量学习（Class-Incremental Learning, CIL）变得尤为重要。然而，与2D图像不同，3D点云本质上是异质的：同一类别的物体不仅可能来自干净的CAD域，还可能来自不同质量的RGB-D相机扫描、视频重建，甚至是损坏的观测。我们发现，这种异质性引入了一个超出灾难性遗忘的新挑战：性能下降的程度在不同域之间可能存在显著差异，这一现象我们称之为性能差异。为了解决这个问题，我们建立了Domain3D-CIL训练和评估协议，该协议包含来自异质域的点云类别。我们进一步将一系列主流CIL方法适配到3D模态。结果表明，这种性能差异在这些基线方法中始终存在。为了缓解这一问题，我们引入了PolyMem，一种无示例的方法，隐式建模特征分布的丰富高阶统计量，以增强跨域鲁棒性。实验表明，我们的方法有效缓解了性能差异，同时提高了模型在不同域之间的性能。代码将在接受后公开发布。",
+      "authors": [
+        "Jinge Ma",
+        "Gautham Vinod",
+        "Bruce Coburn",
+        "Jui-Feng Chi",
+        "Siddeshwar Raghavan",
+        "Fengqing Zhu"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04860",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "深度/几何"
+      ],
+      "title": "Mitigating Performance Discrepancy in Cross-Domain 3D Class-Incremental Learning",
+      "title_zh": "缓解跨域3D类增量学习中的性能差异",
+      "url": "/daily/2026-09-07/#paper-2609-04860"
+    },
+    {
+      "abstract": "Weakly supervised 3D occupancy prediction reduces the reliance on costly 3D annotations by learning from 2D pseudo-labels generated by vision foundation models. However, existing methods typically use these imperfect pseudo-labels directly as supervision, making occupancy learning vulnerable to erroneous geometric and semantic targets. We observe that agreement across repeated observations provides an inexpensive and reliable cue for assessing pseudo-label reliability. Based on this observation, we propose \\textbf{LetOccVote}, a weakly supervised Gaussian-based occupancy framework that leverages cross-frame voting to improve both geometric and semantic supervision. For geometry, Depth Vote exploits cross-frame geometric agreement to refine supported pseudo depth and reject contradictory estimates before volumetric lifting and depth supervision. For semantics, Semantic Vote aggregates pseudo-semantic observations in a shared 3D space to identify reliable and contested evidence, strengthening reliable semantic supervision while filtering unreliable pseudo-label segments. The entire framework is trained solely with 2D pseudo-label supervision without requiring 3D occupancy annotations. On Occ3D-nuScenes, LetOccVote achieves 53.27 IoU and 20.39 mIoU, establishing state-of-the-art performance among methods with 2D pseudo-label supervision.",
+      "abstract_zh": "弱监督的3D占用预测通过利用视觉基础模型生成的2D伪标签，减少了对昂贵的3D标注的依赖。然而，现有方法通常直接将这些不完美的伪标签用作监督，这使得占用学习容易受到错误的几何和语义目标的影响。我们观察到，重复观察之间的一致性为评估伪标签的可靠性提供了一种廉价且可靠的线索。基于这一观察，我们提出了 extbf{LetOccVote}，一个基于高斯的弱监督占用框架，利用跨帧投票来改善几何和语义监督。在几何方面，Depth Vote利用跨帧几何一致性来精炼支持的伪深度，并在体积提升和深度监督之前拒绝矛盾的估计。在语义方面，Semantic Vote在共享的3D空间中聚合伪语义观察，以识别可靠和有争议的证据，增强可靠的语义监督，同时过滤不可靠的伪标签片段。整个框架仅使用2D伪标签监督进行训练，而无需3D占用标注。在Occ3D-nuScenes数据集上，LetOccVote达到了53.27的IoU和20.39的mIoU，在使用2D伪标签监督的方法中建立了最先进的性能。",
+      "authors": [
+        "Chi Zhang",
+        "Qi Song",
+        "Feifei Li",
+        "Jie Li",
+        "Rui Huang"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04846",
+      "tags": [
+        "深度/几何",
+        "BEV/Occupancy",
+        "世界模型/生成"
+      ],
+      "title": "LetOccVote: Learning Weakly Supervised 3D Occupancy through Consensus",
+      "title_zh": "LetOccVote：通过共识学习弱监督的3D占用预测",
+      "url": "/daily/2026-09-07/#paper-2609-04846"
+    },
+    {
+      "abstract": "Monocular depth estimation foundation models, such as the Depth Anything series, have achieved remarkable performance across diverse domains. However, they still suffer from critical failures under adverse weather conditions, such as fog, rain, snow, or at night. To address this, we present Weather-Conditioned Depth Anything (DA-W), a framework that explicitly disentangles style from content for weather-robust depth estimation. Specifically, we introduce a Style Filter trained on a curated mix of real and synthetic degradation datasets to extract content-independent, degradation-aware weather embeddings. This style embedding is then injected into the Depth Anything backbone using a parameter-efficient, zero-initialized adapter. Such a lightweight modulation allows a single unified model to robustly adapt to diverse conditions, including fog, rain, snow, and low-light, while avoiding catastrophic forgetting of its core generalization abilities in normal conditions. We train the adapter using a pseudo-label distillation and alignment strategy. Our comprehensive experiments demonstrate that our proposed DA-W achieves state-of-the-art robust depth estimation, improving AbsRel by an average of 3.7% on our curated weather benchmarks, while matching or slightly outperforming performance on standard clean benchmarks. Our project page is available at https://zhaoming-tamu.github.io/WCDA/.",
+      "abstract_zh": "单目深度估计基础模型，如Depth Anything系列，在多个领域取得了显著的性能。然而，它们在恶劣天气条件下（如雾、雨、雪或夜间）仍然面临严重的失效问题。为了解决这个问题，我们提出了天气条件下的深度估计模型（Weather-Conditioned Depth Anything, DA-W），该框架明确地将风格与内容分离，以实现对天气的鲁棒深度估计。具体而言，我们引入了一种风格过滤器，该过滤器在经过精心挑选的真实和合成降质数据集上进行训练，以提取内容无关、降质感知的天气嵌入。然后，这种风格嵌入通过一种参数高效、零初始化的适配器注入到Depth Anything主干网络中。这种轻量级的调制使得单一统一模型能够稳健地适应多种条件，包括雾、雨、雪和低光照，同时避免在正常条件下对其核心泛化能力的灾难性遗忘。我们使用伪标签蒸馏和对齐策略训练适配器。我们的全面实验表明，所提出的DA-W在鲁棒深度估计方面达到了最先进的水平，在我们精心挑选的天气基准上，AbsRel平均提高了3.7%，同时在标准清晰基准上表现相当或略有超越。我们的项目页面可访问 https://zhaoming-tamu.github.io/WCDA/。",
+      "authors": [
+        "Zhaoming Xu",
+        "Chan-Wei Hu",
+        "Kuan-Ru Huang",
+        "Zihao Zhu",
+        "Renjie Li",
+        "Yang Zhou",
+        "Zhengzhong Tu"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04827",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "安全/异常"
+      ],
+      "title": "Weather-Conditioned Depth Anything",
+      "title_zh": "天气条件下的深度估计模型",
+      "url": "/daily/2026-09-07/#paper-2609-04827"
+    },
+    {
+      "abstract": "Multi-vehicle cooperative autonomous driving enhances the safety and reliability of autonomous driving systems through information sharing among connected vehicles, demonstrating significant potential for improving traffic safety. LLM-based approaches leverage strong reasoning capabilities of LLMs to enable effective inter-vehicle negotiation and improve cooperative driving performance. However, driving decisions in complex traffic scenarios are inherently multi-solution in nature. As a result, existing negotiation-based methods often converge prematurely to suboptimal solutions, hindering consensus formation and limiting the practical deployment of cooperative autonomous driving systems. To address this challenge, we propose CoLMIN, the LLM-based multi-decision path negotiation framework for cooperative autonomous driving, achieving stable decision consensus through multi-decision path negotiation and reflective reasoning. To achieve stable and high-quality consensus in cooperative autonomous driving, CoLMIN consists of three key components: (i) an LLM-based Multi-Intent Negotiation module (LMin), which adopts a Negotiator-Evaluator paradigm and generates multiple candidate driving intentions for joint evaluation; (ii) an Evaluation-based Shallow Reflection Module (ESRM), which analyzes negotiation outcomes and provides feedback to guide subsequent negotiations, thereby accelerating consensus formation; and (iii) an LLM-based Deep Reflection Module (LDRM), which performs long-term reflection over negotiation histories to mitigate cognitive fixation and prevent the system from converging to suboptimal solutions. Experimental results in the CARLA simulation environment demonstrate that CoLMIN significantly outperforms existing methods in challenging interactive driving scenarios.",
+      "abstract_zh": "多车辆合作自主驾驶通过连接车辆之间的信息共享增强了自主驾驶系统的安全性和可靠性，展现了显著提升交通安全的潜力。基于大型语言模型（LLM）的方法利用LLM强大的推理能力，促进有效的车际协商并改善合作驾驶性能。然而，复杂交通场景中的驾驶决策本质上具有多解性。因此，现有的基于协商的方法往往过早收敛到次优解，阻碍了共识的形成，限制了合作自主驾驶系统的实际部署。为了解决这一挑战，我们提出了CoLMIN，一种基于LLM的合作自主驾驶多决策路径协商框架，通过多决策路径协商和反思推理实现稳定的决策共识。为了在合作自主驾驶中实现稳定和高质量的共识，CoLMIN由三个关键组件组成：（i）基于LLM的多意图协商模块（LMin），采用协商者-评估者范式，生成多个候选驾驶意图以供联合评估；（ii）基于评估的浅层反思模块（ESRM），分析协商结果并提供反馈以指导后续协商，从而加速共识形成；（iii）基于LLM的深层反思模块（LDRM），对协商历史进行长期反思，以减轻认知固定并防止系统收敛到次优解。在CARLA仿真环境中的实验结果表明，CoLMIN在具有挑战性的互动驾驶场景中显著优于现有方法。",
+      "authors": [
+        "Zhe Huang",
+        "Zhaoxin Fan",
+        "Shuo Wang",
+        "Wenjun Wu",
+        "Xuan Zhao",
+        "Min Liu"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04807",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "世界模型/生成"
+      ],
+      "title": "CoLMIN: LLM-based Multi-Decision Path Negotiation for Cooperative Autonomous Driving",
+      "title_zh": "CoLMIN：基于大型语言模型的合作自主驾驶多决策路径协商",
+      "url": "/daily/2026-09-07/#paper-2609-04807"
+    },
+    {
+      "abstract": "Vision transformers typically treat every image token as equally important, yet for most tasks in computer vision only a fraction are needed. Adaptive computation methods accelerate inference by choosing which tokens to process, but existing methods struggle at extreme sparsity and require heuristics that may not generalize like token diversity and attention scores. We address these limitations with LookThere, achieving a new pareto frontier in performance-compute trade-offs through an end-to-end reinforcement learning framework that jointly trains a shallow input selector and a deep representation extractor. The selector learns where to look and the extractor learns what to see, together saving computation by selecting only what is worth processing for a given task without relying on auxiliary signals. We show that LookThere only selects the task-specific input, excelling at sparse recognition in high-resolution settings (traffic signs, billiards), and maintaining accuracy with as little as 0.2% of the input. It generalizes across tasks and models, including global recognition (ImageNet classification), local recognition (ADE20K segmentation), zero-shot classification (by distillation), and regression (counting). Across all settings, LookThere surpasses state-of-the-art selection to provide a general and scalable framework for specialized and efficient adaptive computation.",
+      "abstract_zh": "视觉变换器通常将每个图像标记视为同等重要，然而在计算机视觉的大多数任务中，仅需处理一小部分标记。自适应计算方法通过选择处理哪些标记来加速推理，但现有方法在极端稀疏情况下表现不佳，并且需要一些可能无法泛化的启发式方法，如标记多样性和注意力分数。我们通过LookThere解决了这些限制，通过一个端到端的强化学习框架实现了性能与计算开销之间的新帕累托前沿，该框架共同训练一个浅层输入选择器和一个深层表示提取器。选择器学习在哪里观察，提取器学习观察什么，从而通过仅选择对特定任务值得处理的内容来节省计算，而无需依赖辅助信号。我们展示了LookThere仅选择任务特定的输入，在高分辨率设置下（如交通标志、台球）在稀疏识别方面表现出色，并且在输入量仅为0.2%的情况下仍能保持准确性。它在任务和模型之间具有良好的泛化能力，包括全局识别（ImageNet分类）、局部识别（ADE20K分割）、零样本分类（通过蒸馏）和回归（计数）。在所有设置中，LookThere超越了最先进的选择方法，为专门和高效的自适应计算提供了一个通用且可扩展的框架。",
+      "authors": [
+        "Sreehari Rammohan",
+        "Yousef Yassin",
+        "Anthony Fuller",
+        "Junfeng Wen",
+        "Carl Vondrick",
+        "Evan Shelhamer"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04698",
+      "tags": [
+        "感知"
+      ],
+      "title": "LookThere! Sparse Vision by Reinforced Selection",
+      "title_zh": "看这里！通过强化选择实现稀疏视觉",
+      "url": "/daily/2026-09-07/#paper-2609-04698"
+    },
+    {
+      "abstract": "Self-driving laboratories (SDLs) combine automated experimentation with adaptive decision-making to accelerate scientific discovery. Their operation nevertheless often depends on human specialists who translate scientific objectives into executable closed-loop campaigns. Specialists adjust them as data and operating conditions change. Here, we present La Agente \\'Optima, an agentic framework that constructs and supervises Bayesian optimization campaigns across computational and experimental systems while maintaining a persistent optimization state. By separating large language model (LLM) reasoning from executed campaigns, \\'Optima runs repetitive optimization loops consistently, returns control to the agent only when progress requires interpretation or campaign revision, and keeps every decision auditable. We evaluate \\'Optima across ablation studies, five digital discovery tasks, and two physical platforms. Throughout, \\'Optima maintained executable campaigns as both the scientific problem and execution environment evolved. In a closed-loop contact angle optimization campaign, \\'Optima identified and corrected a mid-run measurement failure, bringing the contact angle from 71.4 to 67.8 degrees, just above the 64-66 degree range. From this result, \\'Optima correctly inferred that the target was likely unattainable with the available reagents and recommended changing the formulation. In a five-day multi-objective flow-chemistry campaign, \\'Optima increased the yield from 30% to 59% over 23 experiments. Despite substantial inference costs, it cost less and used substantially less starting material than a human-directed campaign, while selecting a more mass-efficient operating point. These results show that LLM-based agents can make rigorous, long-running optimization campaigns accessible to domain scientists without specialist setup, expanding the scope of SDLs.",
+      "abstract_zh": "自主驱动实验室（SDLs）结合了自动化实验和自适应决策，旨在加速科学发现。然而，它们的运行往往依赖于人类专家将科学目标转化为可执行的闭环实验方案。专家会根据数据和操作条件的变化对其进行调整。在此，我们提出了La Agente 'Optima，一个自主框架，能够在计算和实验系统中构建和监督贝叶斯优化实验，同时保持持续的优化状态。通过将大型语言模型（LLM）推理与执行的实验方案分离，'Optima能够持续运行重复的优化循环，仅在进展需要解释或实验方案修订时将控制权交还给代理，并保持每个决策可审计。我们通过消融研究、五个数字发现任务和两个物理平台对'Optima进行了评估。在整个过程中，'Optima在科学问题和执行环境演变的同时维持了可执行的实验方案。在一个闭环接触角优化实验中，'Optima识别并纠正了中途测量失败，将接触角从71.4度降低到67.8度，刚好位于64-66度范围之上。基于这一结果，'Optima正确推断出在现有试剂下目标可能无法实现，并建议更改配方。在一个为期五天的多目标流动化学实验中，'Optima将产率从30%提高到59%，共进行了23次实验。尽管推理成本较高，但其成本低于人类主导的实验，并且使用的起始材料显著减少，同时选择了更具质量效率的操作点。这些结果表明，基于LLM的代理能够使严格的、长期的优化实验对领域科学家变得可及，而无需专家设置，从而扩展了SDLs的应用范围。",
+      "authors": [
+        "Marcel Müller",
+        "Jiaru Bai",
+        "Willi Gottstein",
+        "Abhijoy Mandal",
+        "Mohammad Nazeri",
+        "Elia Savino",
+        "Yanlin Fang",
+        "Sujoy Das",
+        "Sergio Pablo García Carrillo",
+        "Yeonghun Kang",
+        "Juan B. Pérez-Sánchez",
+        "Simone Pilon",
+        "Martin Fitzner",
+        "Timothy Noël",
+        "Frank Gu",
+        "Varinia Bernales",
+        "Alán Aspuru-Guzik"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04564",
+      "tags": [
+        "感知"
+      ],
+      "title": "La Agente \\'Optima: Towards Agentic Self-Driving Laboratories",
+      "title_zh": "La Agente 'Optima：迈向自主驱动实验室",
+      "url": "/daily/2026-09-07/#paper-2609-04564"
+    },
+    {
+      "abstract": "Unattended interactive autonomy - machines that step into danger in place of humans and complete tasks with human tools - remains a missing capability in mission-critical operations. These domains offer scarce training data and only onboard compute, yet deployed systems must face novelty without erasing prior competence. We introduce Continual Field-Adaptive Models (CFAMs), which learn efficiently in the lab and continue learning after deployment through autonomous, gradient-free, on-device updates. CFAM uses a complementary learning architecture with a frozen slow-learning component and a fast-learning Capsule Field. The slow component contains three cortices: Sensor, which maps multimodal input into 3D-grounded geometry; Reasoning, which decomposes tasks into skills and evaluates outcomes; and Action, which executes geometric skills. The Capsule Field stores field learning one-shot and gradient-free as Competence Capsules. Skill installation is few-shot in the lab and continual in the field; open-world novelty is outside scope. We evaluate CFAM across five embodiments: manipulator, quadruped, humanoid, quadrotor, and off-road vehicle. Baselines (pi0, CogACT, SpatialVLA) use the same in-house multi-embodiment dataset for physical-platform comparisons. CFAM reaches the operating point of a standard policy trained on the full prior-training dataset using 40% of the data, or 2.5x fewer trajectories. At test time, autonomous capture of verified near-OOD cases improves action success by 13.9 percentage points. In sequential simulation, backward transfer is -0.5 percentage points versus -11.4 for LoRA. CFAM therefore provides a bounded form of post-deployment physical intelligence: few-shot skill learning, autonomous field growth from verified near-OOD experience, and retention of prior competence.",
+      "abstract_zh": "无人值守的互动自主性——机器代替人类进入危险环境并使用人类工具完成任务——仍然是关键任务操作中缺失的一项能力。这些领域提供稀缺的训练数据且仅具备机载计算能力，但已部署的系统必须在不抹去先前能力的情况下面对新颖性。我们提出了持续场适应模型（CFAM），该模型能够在实验室中高效学习，并通过自主、无梯度的设备内更新在部署后继续学习。CFAM采用了一种互补的学习架构，包含一个冻结的慢学习组件和一个快速学习的胶囊场（Capsule Field）。慢组件包含三个皮层：传感器（Sensor），将多模态输入映射到三维基础几何；推理（Reasoning），将任务分解为技能并评估结果；以及行动（Action），执行几何技能。胶囊场以一次性和无梯度的方式存储场学习作为能力胶囊（Competence Capsules）。技能安装在实验室中是少样本的，而在现场是持续的；开放世界的新颖性超出范围。我们在五种实现上评估CFAM：操纵器、四足机器人、人形机器人、四旋翼和越野车。基准（pi0、CogACT、SpatialVLA）使用相同的内部多实现数据集进行物理平台比较。CFAM在使用40%的数据或2.5倍更少的轨迹时，达到了在完整先前训练数据集上训练的标准策略的操作点。在测试时，自动捕获经过验证的近OOD案例使得行动成功率提高了13.9个百分点。在顺序模拟中，反向转移为-0.5个百分点，而LoRA为-11.4个百分点。因此，CFAM提供了一种有限形式的部署后物理智能：少样本技能学习、基于经过验证的近OOD经验的自主场增长，以及对先前能力的保留。",
+      "authors": [
+        "Amarjot Singh",
+        "Tanmay R. Pancholi",
+        "Jainam Kothari",
+        "Shrirang Mahajan",
+        "Ketan Bansal",
+        "Zackory Erickson",
+        "Giuseppe Loianno",
+        "Alexandre M. Bayen",
+        "Jeff Schneider",
+        "Vince Nakayama"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04552",
+      "tags": [
+        "端到端驾驶",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Continual Field-Adaptive Models (CFAMs) for Post-Deployment Physical AI",
+      "title_zh": "持续场适应模型（CFAM）用于部署后的物理人工智能",
+      "url": "/daily/2026-09-07/#paper-2609-04552"
+    },
+    {
+      "abstract": "Benchmarks for the side effects an agent causes on the way to a goal already exist, but HarvestBench is the first to put a price on avoiding the side effect and to name that side effect as a living creature. It is a farm simulation: LLM sub-agents drive a crew of two tractors through a cooperative corn harvest, with animals in the field. The environment is a reinforcement learning gridworld, every decision is made without memory, and the harm is never named in the goal. When an animal blocks a tractor's route the autopilot stops and asks the model whether to drive on, at no fuel cost, or swerve around it for a posted fuel price. Kills are compared against two controls: rocks, which damage the tractor and are hit under 1% of the time by every model, and hay bales, which are harmless and not alive. Models can also take crops from the neighbor's field instead of their own, a second test of what they treat as moral. Across nine models and 7,201 priced decisions, 3,951 involved an animal rather than a hay bale or a rock. Kill rates range from 0.4% to 98.8%, with Terra and Sol the most merciful and GPT-4o-mini the most cruel, and they are not ordered by capability. Four of six models were sensitive to price at the 5% level, with elasticities from 0.09 to 1.69. All nine drove over wild animals more often than farmed animals on the default map, and the direction held at every map geometry in every model with room to move. The briefing mattered most: under the morality briefing the kill rate was under 6% in five of six reasoning models, and removing it raised the kill rate above 84% in all six. HarvestBench uses no LLM grader. The scorer counts events in the game log, so it is fully reproducible, and it measures what a model will pay to avoid harm rather than what it says about harm.",
+      "abstract_zh": "虽然已经存在代理在实现目标过程中造成副作用的基准，但HarvestBench是首个为避免副作用定价，并将该副作用命名为生物体的基准。它是一个农场模拟：大型语言模型（LLM）子代理驾驶两台拖拉机在合作的玉米收获中穿行，田野中有动物。环境是一个强化学习的网格世界，每个决策都是在没有记忆的情况下做出的，伤害从未在目标中被提及。当一只动物阻挡了拖拉机的路径时，自动驾驶系统会停止并询问模型是否在没有燃料成本的情况下继续前进，或者绕过它并支付标定的燃料费用。杀戮率与两个控制组进行比较：岩石，这会损坏拖拉机，每个模型被撞击的概率不到1%；以及干草堆，这些是无害且不活的。模型还可以从邻居的田地中收获作物，而不是自己的，这也是对其道德观的一次测试。在九个模型和7,201个定价决策中，3,951个涉及动物，而不是干草堆或岩石。杀戮率范围从0.4%到98.8%，其中Terra和Sol是最仁慈的，而GPT-4o-mini是最残忍的，且它们的能力并未按顺序排列。在六个模型中，有四个对价格在5%的水平上敏感，弹性范围从0.09到1.69。所有九个模型在默认地图上对野生动物的碾压频率高于对农场动物的碾压频率，这一趋势在每个模型的每个地图几何形状中都保持一致。简报内容至关重要：在道德简报下，六个推理模型中有五个的杀戮率低于6%，而去除该简报则使所有六个模型的杀戮率上升至84%以上。HarvestBench不使用LLM评分器。评分者在游戏日志中统计事件，因此其结果完全可重复，并且它测量的是模型愿意为避免伤害而支付的费用，而不是模型对伤害的表述。",
+      "authors": [
+        "Jasmine Brazilek",
+        "Miles Tidmarsh",
+        "Matthias Endres",
+        "Anshuman Singh",
+        "Jeremiah Miller"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04444",
+      "tags": [
+        "深度/几何",
+        "仿真/数据",
+        "地图/定位"
+      ],
+      "title": "HarvestBench: Measuring Whether LLM Agents Will Pay to Avoid Killing Animals",
+      "title_zh": "HarvestBench：测量大型语言模型代理是否愿意付费以避免杀死动物",
+      "url": "/daily/2026-09-07/#paper-2609-04444"
+    },
+    {
+      "abstract": "The planning algorithms inside an Autonomous Vehicle (AV) rely on information from on-board sensors whose line of sight is limited by emerging traffic conditions and occlusions. Edge-assisted creation of a unified world model fusing information from AVs and Road Side Units (RSUs) in a geographical locale, and the prediction of AVs' future trajectories, can enhance the planning algorithms inside AVs to improve quality metrics, such as better traffic flow and collision prevention. AVs participating in such enhancements are called Connected Autonomous Vehicles (CAVs). However, such information generated by the edge (world model and motion predictions) must reach the planners within a tight Age of Information (AoI) time budget to be useful. The state of the art fuses per-CAV information: each AV fuses inputs from other actors locally, which limits both scalability with actor count and quality of results. We present Conductor, an edge-based solution for creating a unified world model from the perspective of a fixed anchor (e.g., an RSU) in a locale and predicting future trajectories of AVs in that locale. Our solution adheres to the AoI time budget by dynamically limiting the number of AVs that would lead to the best quality of results. Specifically, we introduce an occlusion-aware selector that favors information contribution by AVs that detect objects in the locale not covered by RSUs. We pair this selector with a runtime controller that adapts both the number of AV inputs to fuse and the amount of trajectory predictions in each cycle to stay within the AoI time budget. Evaluation on CAV simulation infrastructure shows our joint selector-controller meets the AoI safety bound across traffic scenarios with up to 31 CAVs, with fusion fidelity close to an Oracle and much better than a random selector under the same AoI constraint.",
+      "abstract_zh": "自主车辆（AV）内部的规划算法依赖于车载传感器提供的信息，而这些传感器的视线受限于不断变化的交通状况和遮挡物。边缘辅助的统一世界模型创建，通过融合来自自主车辆（AVs）和路边单元（RSUs）在特定地理区域的信息，以及对AV未来轨迹的预测，可以增强AV内部的规划算法，从而改善质量指标，如更好的交通流和碰撞预防。参与此类增强的AV被称为连接自主车辆（CAVs）。然而，边缘生成的信息（世界模型和运动预测）必须在严格的信息年龄（AoI）时间预算内到达规划者，才能发挥作用。现有技术融合每个CAV的信息：每个AV在本地融合来自其他参与者的输入，这限制了参与者数量的可扩展性和结果的质量。我们提出了Conductor，这是一个基于边缘的解决方案，从固定锚点（例如RSU）的视角创建统一的世界模型，并预测该区域内AV的未来轨迹。我们的解决方案通过动态限制AV的数量来满足最佳结果质量，从而遵循AoI时间预算。具体而言，我们引入了一种考虑遮挡的选择器，优先考虑那些能够检测到RSU未覆盖区域内物体的AV的信息贡献。我们将该选择器与运行时控制器配对，后者在每个周期内调整融合的AV输入数量和轨迹预测的数量，以保持在AoI时间预算内。在CAV仿真基础设施上的评估表明，我们的联合选择器-控制器在多达31个CAV的交通场景中满足AoI安全界限，其融合精度接近于Oracle，并且在相同的AoI约束下远优于随机选择器。",
+      "authors": [
+        "Tyler Landle",
+        "Jackson Isenberg",
+        "Abhijit Chatterjee",
+        "Alexandros Daglis",
+        "Umakishore Ramachandran"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04364",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "仿真/数据"
+      ],
+      "title": "Scalable Edge-assisted Fusion and Path Prediction for Connected Autonomous Vehicles",
+      "title_zh": "可扩展的边缘辅助融合与路径预测用于连接自主车辆",
+      "url": "/daily/2026-09-07/#paper-2609-04364"
+    },
+    {
+      "abstract": "Object-centric visual representations are important for physical-world perception, but existing visual pretraining methods often capture semantic categories without preserving the identity and coherence of individual instances. We present a biologically inspired framework that learns object-centric representations for single images from raw videos. Our approach uses motion boundaries as a source of object-level grouping: off-the-shelf optical flow and clustering produce pseudo-instance masks, which supervise a single-image encoder with pixel-level pairwise metric learning. The framework requires neither human annotations nor camera calibration. We first obtain 195 million pseudo-labeled frames from 7,163 hours of driving and web videos, then expand the supervision to 421 million frames with Motion-Verified Self-Training, which combines model proposals with motion evidence. We train encoders up to Swin-H and distill the learned representations into a family of Swin backbones. Across monocular depth estimation, 3D object detection, 3D occupancy prediction, and end-to-end planning, the resulting models achieve competitive or superior performance relative to supervised and self-supervised pretraining baselines, with particularly strong transfer on geometry- and instance-sensitive tasks. These results show that motion-derived supervision can teach static image encoders to represent visual instances, providing a complementary direction for scalable visual pretraining.",
+      "abstract_zh": "以物体为中心的视觉表征对于物理世界的感知至关重要，但现有的视觉预训练方法往往捕捉语义类别，而未能保留单个实例的身份和一致性。我们提出了一种生物启发的框架，该框架从原始视频中学习单幅图像的以物体为中心的表征。我们的方法利用运动边界作为物体级分组的来源：现成的光流和聚类生成伪实例掩码，这些掩码用于监督单幅图像编码器的像素级成对度量学习。该框架不需要人工标注或相机校准。我们首先从7163小时的驾驶和网络视频中获得1.95亿个伪标记帧，然后通过运动验证自我训练（Motion-Verified Self-Training）将监督扩展到4.21亿帧，该方法结合了模型提议和运动证据。我们训练了高达Swin-H的编码器，并将学习到的表征提炼成一系列Swin主干网络。在单目深度估计、3D物体检测、3D占用预测和端到端规划等任务中，所得到的模型相较于监督和自监督预训练基线表现出竞争力或优越的性能，尤其在几何和实例敏感任务上具有强大的迁移能力。这些结果表明，基于运动的监督可以教会静态图像编码器表示视觉实例，为可扩展的视觉预训练提供了一种互补的方向。",
+      "authors": [
+        "Boshi Li",
+        "Xiaohui Wang",
+        "Xiaoyang Wu",
+        "Zhichao Li",
+        "Ya Yang",
+        "Naiyan Wang"
+      ],
+      "date": "2026-09-07",
+      "id": "2609.04348",
+      "tags": [
+        "感知",
+        "3D 检测",
+        "BEV/Occupancy"
+      ],
+      "title": "Object Concepts Emerge from Motion",
+      "title_zh": "运动中物体概念的出现",
+      "url": "/daily/2026-09-07/#paper-2609-04348"
+    },
     {
       "abstract": "Online 3D reconstruction models perform poorly on long videos. This happens because regressing poses relative to a fixed first-frame anchor forces extrapolation far beyond the training distribution. Small drifts accumulate and amplify into significant geometric collapse. However, we observe that per-frame depth remains stable throughout this failure. The backbone's local geometry remains intact; only the global pose head breaks down. Motivated by this decoupling, we introduce Scal3R. This approach reformulates online reconstruction as multi-reference relative pose querying. We use lightweight learnable tokens, which make up about ~1% of the parameters, and inject them into a completely frozen backbone via asymmetric attention. This setup queries poses relative to multiple past keyframes. An online pose-graph optimization system with loop closure suppresses long-range drift. Scal3R reaches convergence in 8 hours on a single GPU. It reduces the average ATE by over 60% on KITTI compared to the online baseline. It also achieves state-of-the-art performance across Virtual KITTI, Sintel, TUM-Dynamic, ScanNet, and 7-Scenes. Project page: https://linjohnss.github.io/scal3r/",
       "abstract_zh": "在线三维重建模型在长视频上的表现较差。这是因为相对于固定的第一帧锚点回归姿态迫使模型进行超出训练分布的外推。小的漂移会累积并放大为显著的几何崩溃。然而，我们观察到每帧的深度在这一失败过程中保持稳定。主干网络的局部几何结构保持完整；只有全局姿态头崩溃。基于这一解耦现象，我们提出了Scal3R。该方法将在线重建重新表述为多参考相对姿态查询。我们使用轻量级可学习的标记，这些标记约占参数的1%，并通过非对称注意力将其注入到完全冻结的主干网络中。该设置相对于多个过去的关键帧查询姿态。一个带有环闭合的在线姿态图优化系统抑制了长距离漂移。Scal3R在单个GPU上8小时内达到收敛。与在线基线相比，它在KITTI上将平均绝对轨迹误差（ATE）降低了超过60%。它还在Virtual KITTI、Sintel、TUM-Dynamic、ScanNet和7-Scenes上实现了最先进的性能。项目页面：https://linjohnss.github.io/scal3r/",

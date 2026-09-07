@@ -1,0 +1,49 @@
+{
+  "abstract": "Vision transformers typically treat every image token as equally important, yet for most tasks in computer vision only a fraction are needed. Adaptive computation methods accelerate inference by choosing which tokens to process, but existing methods struggle at extreme sparsity and require heuristics that may not generalize like token diversity and attention scores. We address these limitations with LookThere, achieving a new pareto frontier in performance-compute trade-offs through an end-to-end reinforcement learning framework that jointly trains a shallow input selector and a deep representation extractor. The selector learns where to look and the extractor learns what to see, together saving computation by selecting only what is worth processing for a given task without relying on auxiliary signals. We show that LookThere only selects the task-specific input, excelling at sparse recognition in high-resolution settings (traffic signs, billiards), and maintaining accuracy with as little as 0.2% of the input. It generalizes across tasks and models, including global recognition (ImageNet classification), local recognition (ADE20K segmentation), zero-shot classification (by distillation), and regression (counting). Across all settings, LookThere surpasses state-of-the-art selection to provide a general and scalable framework for specialized and efficient adaptive computation.",
+  "abstract_zh": "视觉变换器通常将每个图像标记视为同等重要，然而在计算机视觉的大多数任务中，仅需处理一小部分标记。自适应计算方法通过选择处理哪些标记来加速推理，但现有方法在极端稀疏情况下表现不佳，并且需要一些可能无法泛化的启发式方法，如标记多样性和注意力分数。我们通过LookThere解决了这些限制，通过一个端到端的强化学习框架实现了性能与计算开销之间的新帕累托前沿，该框架共同训练一个浅层输入选择器和一个深层表示提取器。选择器学习在哪里观察，提取器学习观察什么，从而通过仅选择对特定任务值得处理的内容来节省计算，而无需依赖辅助信号。我们展示了LookThere仅选择任务特定的输入，在高分辨率设置下（如交通标志、台球）在稀疏识别方面表现出色，并且在输入量仅为0.2%的情况下仍能保持准确性。它在任务和模型之间具有良好的泛化能力，包括全局识别（ImageNet分类）、局部识别（ADE20K分割）、零样本分类（通过蒸馏）和回归（计数）。在所有设置中，LookThere超越了最先进的选择方法，为专门和高效的自适应计算提供了一个通用且可扩展的框架。",
+  "arxiv_id": "2609.04698",
+  "arxiv_url": "https://arxiv.org/abs/2609.04698v1",
+  "authors": [
+    "Sreehari Rammohan",
+    "Yousef Yassin",
+    "Anthony Fuller",
+    "Junfeng Wen",
+    "Carl Vondrick",
+    "Evan Shelhamer"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04698",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.041639+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04698v1",
+  "published_at": "2026-09-04T04:00:43Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04698v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "本文提出LookThere，一种基于端到端强化学习的稀疏视觉方法，通过联合训练输入选择器和深层特征提取器，自适应选择与任务相关的少量图像标记，从而降低高分辨率视觉任务的计算开销。该方法在交通标志识别等与自动驾驶感知相关的场景中具有潜在应用，并可扩展到分类、分割、零样本识别和计数等任务。",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "LookThere! Sparse Vision by Reinforced Selection",
+  "title_zh": "看这里！通过强化选择实现稀疏视觉",
+  "translation_url": "https://hjfy.top/arxiv/2609.04698"
+}

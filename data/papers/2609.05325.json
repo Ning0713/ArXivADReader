@@ -1,0 +1,54 @@
+{
+  "abstract": "Achieving robust SLAM in large-scale underground coal mines with complex structures and severe degeneracies remains highly challenging. Dense smoke and dust cause substantial loss of visual information and degrade LiDAR point-cloud features, while long, self-similar corridors induce geometric degeneration, leading to pronounced odometry drift. To address these issues, we propose FIRE-LIVWO: Failure-Immune mmWave Radar-Enhanced LiDAR-Inertial-Visual-Wheel Odometry, a tightly coupled multi-modal odometry framework based on an iterated error-state Kalman filter (IESKF). The framework fuses 4D mmWave radar, LiDAR, and visual features within a unified VoxelMap and jointly constructs LiDAR-radar point-to-plane residuals and sparse visual photometric residuals. In smoke-filled environments, we exploit the strong penetration of 4D mmWave radar and introduce pointwise Doppler velocity constraints to preserve state observability. In geometrically degenerate corridors, we tightly couple wheel odometry using non-holonomic constraints (NHC) and online lever-arm compensation to reduce drift. Our central contribution is a degeneration detection and adaptive fusion model switching strategy grounded in geometric and visual observability analysis, which quantifies observability online and dynamically adjusts modality weights. Real-world experiments in underground coal mines demonstrate that FIRE-LIVWO accurately identifies failure boundaries, enabling reliable modality switching under extreme conditions. Compared with baselines, it achieves superior accuracy and robustness (average localization error of 5.677m). We open source our code on Github to benefit the robotics community.",
+  "abstract_zh": "在复杂结构和严重退化的地下煤矿中实现稳健的SLAM仍然具有很高的挑战性。浓密的烟雾和灰尘导致视觉信息的显著丢失，并降低激光雷达点云特征，而长且自相似的走廊则引发几何退化，导致明显的里程计漂移。为了解决这些问题，我们提出了FIRE-LIVWO：故障免疫毫米波雷达增强的激光雷达-惯性-视觉-轮式里程计，这是一个基于迭代误差状态卡尔曼滤波器（IESKF）的紧耦合多模态里程计框架。该框架在统一的体素地图中融合4D毫米波雷达、激光雷达和视觉特征，并共同构建激光雷达-雷达点到平面的残差和稀疏视觉光度残差。在充满烟雾的环境中，我们利用4D毫米波雷达的强穿透能力，并引入逐点多普勒速度约束以保持状态可观测性。在几何退化的走廊中，我们通过非完整约束（NHC）和在线杠杆臂补偿紧密耦合轮式里程计，以减少漂移。我们的核心贡献是基于几何和视觉可观测性分析的退化检测与自适应融合模型切换策略，该策略在线量化可观测性并动态调整模态权重。在地下煤矿的实际实验中，FIRE-LIVWO准确识别故障边界，使得在极端条件下能够可靠地进行模态切换。与基线相比，它实现了更优的准确性和鲁棒性（平均定位误差为5.677米）。我们在Github上开源了我们的代码，以造福机器人社区。",
+  "arxiv_id": "2609.05325",
+  "arxiv_url": "https://arxiv.org/abs/2609.05325v1",
+  "authors": [
+    "Kun Hu",
+    "Menggang Li",
+    "Kaidi Wu",
+    "Zhiwen Jin",
+    "Yingjie Zhao",
+    "Chaoquan Tang",
+    "Eryi Hu",
+    "Gongbo Zhou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-05325",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.027015+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.05325v1",
+  "published_at": "2026-09-04T16:19:58Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "lidar",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.05325v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "提出一种面向烟雾、粉尘和几何退化环境的多传感器紧耦合里程计系统，融合4D毫米波雷达、激光雷达、视觉、惯性和轮式里程计，并依据在线可观测性进行退化检测与自适应模态切换。论文主要贡献在于提升复杂环境下移动平台定位与建图的鲁棒性，对自动驾驶定位和恶劣环境感知具有较强的技术相关性，但实验场景主要是地下煤矿而非道路自动驾驶。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "多传感器融合",
+      "Radar"
+    ]
+  },
+  "title": "FIRE-LIVWO: Robust LiDAR-Inertial-Visual-Wheel Odometry via Failure-Immune mmWave Radar Enhancement",
+  "title_zh": "FIRE-LIVWO：通过故障免疫毫米波雷达增强实现稳健的激光雷达-惯性-视觉-轮式里程计",
+  "translation_url": "https://hjfy.top/arxiv/2609.05325"
+}

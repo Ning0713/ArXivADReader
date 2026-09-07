@@ -1,0 +1,51 @@
+{
+  "abstract": "Large language models become consequential agents when surrounding systems let outputs change external state. Models now call tools, operate interfaces, delegate work, retain state, inhabit generated worlds, and control robots or laboratory equipment. Such advances are often narrated as one march toward autonomy, conflating model competence, system integration, persistence, and safe authority. This critical review synthesizes primary research and official technical specifications available by 31 August 2026. We organize the evidence along delegated authority, temporal persistence, and environmental coupling, while separating model, harness, and environment. Within the evidence examined, action-interface expansion is documented more convincingly than robust completion, recovery, authorization, or independent verification. Model Context Protocol and Agent2Agent improve interoperability but do not establish trustworthy delegation; multi-agent organization adds specialization alongside cost and correlated failure. Persistent simulations and world models support training and planning but do not themselves demonstrate agency; robotics and self-driving laboratories establish bounded feasibility rather than unattended open-world reliability. We propose justified delegation as an analytical and normative heuristic, not an observed law or certified score: expand action scope only where evidence supports provenance, bounded authority, failure detection, safe recovery, and calibrated human control. This framing yields a research agenda for coupled model-harness evaluation, capability-based permissions, durable state, cross-agent accountability, and staged physical validation.",
+  "abstract_zh": "当周围系统允许输出改变外部状态时，大型语言模型成为重要的代理。模型现在可以调用工具、操作接口、委派工作、保持状态、居住在生成的世界中，并控制机器人或实验室设备。这些进展常常被叙述为朝向自主性的单一进程，将模型能力、系统集成、持久性和安全权威混为一谈。本文的批判性综述综合了截至2026年8月31日可用的主要研究和官方技术规范。我们根据委派权威、时间持久性和环境耦合组织证据，同时区分模型、工具和环境。在所审查的证据中，行动接口的扩展比稳健的完成、恢复、授权或独立验证更具说服力。模型上下文协议（Model Context Protocol）和Agent2Agent提高了互操作性，但并未建立可信的委派；多代理组织在增加专业化的同时也带来了成本和相关失败。持久的模拟和世界模型支持训练和规划，但本身并未展示代理性；机器人技术和自动驾驶实验室建立了有限的可行性，而非无人值守的开放世界可靠性。我们提出合理的委派作为一种分析和规范的启发式方法，而非观察到的法律或认证分数：仅在证据支持来源、有限权威、失败检测、安全恢复和校准的人类控制的情况下扩展行动范围。这一框架为耦合模型-工具评估、基于能力的权限、持久状态、跨代理问责和分阶段的物理验证提供了研究议程。",
+  "arxiv_id": "2609.04894",
+  "arxiv_url": "https://arxiv.org/abs/2609.04894v1",
+  "authors": [
+    "Linsen Zhu",
+    "Mengqing Cai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04894",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.MA"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.103876+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04894v1",
+  "published_at": "2026-09-04T08:52:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "自动驾驶",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 66
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04894v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
+  "title_zh": "从语言模型到世界行动系统：代理人工智能在数字、社会、虚拟和物理环境中的进展与局限",
+  "translation_url": "https://hjfy.top/arxiv/2609.04894"
+}

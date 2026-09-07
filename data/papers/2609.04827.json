@@ -1,0 +1,53 @@
+{
+  "abstract": "Monocular depth estimation foundation models, such as the Depth Anything series, have achieved remarkable performance across diverse domains. However, they still suffer from critical failures under adverse weather conditions, such as fog, rain, snow, or at night. To address this, we present Weather-Conditioned Depth Anything (DA-W), a framework that explicitly disentangles style from content for weather-robust depth estimation. Specifically, we introduce a Style Filter trained on a curated mix of real and synthetic degradation datasets to extract content-independent, degradation-aware weather embeddings. This style embedding is then injected into the Depth Anything backbone using a parameter-efficient, zero-initialized adapter. Such a lightweight modulation allows a single unified model to robustly adapt to diverse conditions, including fog, rain, snow, and low-light, while avoiding catastrophic forgetting of its core generalization abilities in normal conditions. We train the adapter using a pseudo-label distillation and alignment strategy. Our comprehensive experiments demonstrate that our proposed DA-W achieves state-of-the-art robust depth estimation, improving AbsRel by an average of 3.7% on our curated weather benchmarks, while matching or slightly outperforming performance on standard clean benchmarks. Our project page is available at https://zhaoming-tamu.github.io/WCDA/.",
+  "abstract_zh": "单目深度估计基础模型，如Depth Anything系列，在多个领域取得了显著的性能。然而，它们在恶劣天气条件下（如雾、雨、雪或夜间）仍然面临严重的失效问题。为了解决这个问题，我们提出了天气条件下的深度估计模型（Weather-Conditioned Depth Anything, DA-W），该框架明确地将风格与内容分离，以实现对天气的鲁棒深度估计。具体而言，我们引入了一种风格过滤器，该过滤器在经过精心挑选的真实和合成降质数据集上进行训练，以提取内容无关、降质感知的天气嵌入。然后，这种风格嵌入通过一种参数高效、零初始化的适配器注入到Depth Anything主干网络中。这种轻量级的调制使得单一统一模型能够稳健地适应多种条件，包括雾、雨、雪和低光照，同时避免在正常条件下对其核心泛化能力的灾难性遗忘。我们使用伪标签蒸馏和对齐策略训练适配器。我们的全面实验表明，所提出的DA-W在鲁棒深度估计方面达到了最先进的水平，在我们精心挑选的天气基准上，AbsRel平均提高了3.7%，同时在标准清晰基准上表现相当或略有超越。我们的项目页面可访问 https://zhaoming-tamu.github.io/WCDA/。",
+  "arxiv_id": "2609.04827",
+  "arxiv_url": "https://arxiv.org/abs/2609.04827v1",
+  "authors": [
+    "Zhaoming Xu",
+    "Chan-Wei Hu",
+    "Kuan-Ru Huang",
+    "Zihao Zhu",
+    "Renjie Li",
+    "Yang Zhou",
+    "Zhengzhong Tu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04827",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.048311+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04827v1",
+  "published_at": "2026-09-04T07:29:49Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04827v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "提出一种面向恶劣天气的鲁棒单目深度估计方法，通过天气条件建模和轻量化适配增强深度模型在雾、雨、雪及低照度环境下的泛化能力，适用于自动驾驶感知中的全天候环境理解。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Weather-Conditioned Depth Anything",
+  "title_zh": "天气条件下的深度估计模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.04827"
+}

@@ -1,0 +1,59 @@
+{
+  "abstract": "Changes in sensor height and viewpoint alter object-level point distributions, making cross-platform LiDAR unsupervised domain adaptation (UDA) difficult. Self-training uses labeled source scans and unlabeled target scans, yet a retained prediction may provide a useful target location while enclosing sparse foreground returns, background clutter, or points inconsistent with the predicted box. We refer to this mismatch as box-point inconsistency. We introduce SimFuse3D, which preserves the target placement and repairs the associated pseudo-object using measured geometry from labeled source scans. Object Memory retrieves a compatible labeled source instance. Target Simulation places its ground-truth box at the target location, aligns its points with the target viewing geometry, and filters the aligned crop to approximate the target observation. Confidence-Guided Multi-Stage Localization Reweighting (CMLR) maps each target pseudo-object confidence score to a bounded weight shared by RPN localization and R-CNN box regression. All components operate only during adaptation, leaving the detector architecture and inference graph unchanged. Across six cross-platform transfers, SimFuse3D exceeds Pi3DET-Net on every reported AP metric and ranks first among the compared adaptation methods on nearly all metrics. On nuScenes-to-KITTI, it ranks first among the compared adaptation methods with both evaluated detectors.",
+  "abstract_zh": "传感器高度和视角的变化会改变物体级点分布，使得跨平台激光雷达无监督领域适应（UDA）变得困难。自我训练利用标记的源扫描和未标记的目标扫描，然而保留的预测可能提供有用的目标位置，同时包围稀疏的前景返回、背景杂波或与预测框不一致的点。我们将这种不匹配称为框-点不一致。我们引入SimFuse3D，它保留目标放置并利用来自标记源扫描的测量几何修复相关的伪物体。对象记忆检索兼容的标记源实例。目标模拟将其真实框放置在目标位置，调整其点与目标视角几何对齐，并过滤对齐的裁剪以近似目标观察。信心引导的多阶段定位重加权（CMLR）将每个目标伪物体的信心得分映射到一个由RPN定位和R-CNN框回归共享的有界权重。所有组件仅在适应期间运行，保持检测器架构和推理图不变。在六个跨平台转移中，SimFuse3D在每个报告的AP指标上均超过Pi3DET-Net，并在几乎所有指标上在比较的适应方法中排名第一。在nuScenes到KITTI的转移中，它在比较的适应方法中排名第一，且评估的检测器均表现优异。",
+  "arxiv_id": "2609.04886",
+  "arxiv_url": "https://arxiv.org/abs/2609.04886v1",
+  "authors": [
+    "Yongchun Lin",
+    "Xinliang Zhang",
+    "Yun Zou",
+    "Zhixuan Xiao",
+    "Liang Lei",
+    "Jianya Guo",
+    "Yuqiang Zhai",
+    "Xiaofeng Wang",
+    "HaiKuo Xu",
+    "Haoang Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04886",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.050331+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04886v1",
+  "published_at": "2026-09-04T08:41:56Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "3d object detection",
+      "lidar",
+      "crop"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04886v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "SimFuse3D: Source-Guided Target Simulation and Confidence-Guided Multi-Stage Localization Reweighting for Cross-Platform 3D Object Detection",
+  "title_zh": "SimFuse3D：源引导目标模拟与信心引导的多阶段定位重加权用于跨平台3D物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.04886"
+}

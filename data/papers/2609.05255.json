@@ -1,0 +1,53 @@
+{
+  "abstract": "Explicit primitive-based radiance fields such as 3D Gaussian Splatting typically model view-dependent appearance using low-order spherical harmonics (SH). Although efficient to evaluate, SH coefficients dominate per-primitive storage and memory traffic, while their band-limited basis restricts angular detail. We present a thorough, end-to-end comparison of SH and recent spherical appearance models and introduce an implicit alternative that decodes compact per-primitive latent codes using a tiny shared MLP. We integrate all models into the same optimized pipeline, fusing their forward and backward passes into a differentiable CUDA rasterizer and provide a portable WebGL viewer for laptop and mobile GPUs. Our evaluation across reconstruction quality, memory use, and optimization and rendering performance shows that recent spherical models offer the strongest overall quality-efficiency trade-off. Our neural representation is the most compact model evaluated and, compared to third-degree SH, reduces the per-primitive appearance footprint from 192 to 28 bytes, accelerates optimization by 1.3$\\times$, while improving reconstruction quality. We further analyze how appearance parametrization shapes optimization, identifying differences in recovered geometry and the tendency of expressive models to absorb non-static scene content. Together, our framework and analysis provide practical guidance for replacing SH beyond what image metrics alone can capture.",
+  "abstract_zh": "显式基于原始的辐射场，如3D高斯点云，通常使用低阶球谐函数（SH）来建模视角依赖的外观。尽管评估效率较高，但SH系数在每个原始的存储和内存流量中占主导地位，而其带限基函数限制了角度细节。我们对SH和近期的球形外观模型进行了全面的端到端比较，并提出了一种隐式替代方案，该方案使用一个小型共享多层感知器（MLP）解码紧凑的每个原始潜在编码。我们将所有模型集成到同一优化管道中，将它们的前向和后向传递融合到一个可微分的CUDA光栅化器中，并提供了一个便携的WebGL查看器，适用于笔记本电脑和移动GPU。我们在重建质量、内存使用、优化和渲染性能方面的评估表明，近期的球形模型提供了最佳的整体质量效率权衡。我们的神经表示是评估中最紧凑的模型，与三阶SH相比，将每个原始的外观占用空间从192字节减少到28字节，优化速度提升了1.3倍，同时改善了重建质量。我们进一步分析了外观参数化如何影响优化，识别了恢复几何形状的差异以及表现力强的模型吸收非静态场景内容的倾向。我们的框架和分析共同为替代SH提供了实用指导，超越了仅依赖图像度量所能捕捉的内容。",
+  "arxiv_id": "2609.05255",
+  "arxiv_url": "https://arxiv.org/abs/2609.05255v1",
+  "authors": [
+    "Florian Hahlbohm",
+    "Jorge Condor",
+    "Linus Franke",
+    "Martin Eisemann",
+    "Marcus Magnor"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-05255",
+  "categories": [
+    "cs.CV",
+    "cs.GR"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.065175+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.05255v1",
+  "published_at": "2026-09-04T15:18:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.05255v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "端到端驾驶",
+      "感知"
+    ]
+  },
+  "title": "Compact Neural Appearance Models for Efficient Gaussian Splatting",
+  "title_zh": "高效高斯点云的紧凑神经外观模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.05255"
+}

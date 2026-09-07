@@ -1,0 +1,68 @@
+{
+  "abstract": "Diffusion probabilistic models can capture the multi-modal, interaction-rich distribution of joint future trajectories in driving scenes. We show that a single pretrained diffusion traffic model can serve two complementary roles in the autonomous driving development loop: as an ego motion planner, and as a controllable generator of safety-critical scenarios for stress-testing the planners. On the planning side, we introduce a Single-Stream Dual-Stream (SSDS) diffusion-transformer decoder that fuses scene context via joint attention rather than late cross-attention, improving closed-loop performance on nuPlan. We further propose Decoupled Annealing Posterior Sampling with Energy (DAPSE), a training-free guidance scheme that injects arbitrary energy functions at the clean-sample level, avoiding the first-order approximation errors while requiring no auxiliary networks. Beyond planning, we leverage the same diffusion model as a controllable scenario generator to create realistic long-tail driving interactions for closed-loop evaluation. Through inference-time guidance, selected agents are steered toward safety-critical behaviors, including aggressive cut-ins, lead-vehicle braking, and combined longitudinal-lateral interactions, while preserving realistic traffic behaviors. Evaluated in closed-loop nuPlan simulations with independent black-box planners, the generated scenarios expose failure modes that remain hidden under standard benchmarks. Although the SSDS-based planner achieves stronger nominal performance, it experiences larger degradation under these challenging scenarios, demonstrating that benchmark superiority does not necessarily translate to robustness. These results demonstrate that a single learned traffic prior can simultaneously improve motion planning and provide a realistic framework for systematic planner robustness evaluation.",
+  "abstract_zh": "扩散概率模型能够捕捉驾驶场景中联合未来轨迹的多模态、丰富交互的分布。我们展示了一个预训练的扩散交通模型可以在自动驾驶开发循环中发挥两个互补的角色：作为自我运动规划器，以及作为可控的安全关键场景生成器，用于对规划器进行压力测试。在规划方面，我们引入了一种单流双流（Single-Stream Dual-Stream, SSDS）扩散变换器解码器，通过联合注意力而非后期交叉注意力融合场景上下文，从而提高了在nuPlan上的闭环性能。我们进一步提出了带能量的解耦退火后验采样（Decoupled Annealing Posterior Sampling with Energy, DAPSE），这是一种无训练的引导方案，在干净样本级别注入任意能量函数，避免了一阶近似误差，同时不需要辅助网络。除了规划，我们利用相同的扩散模型作为可控场景生成器，创建现实的长尾驾驶交互以进行闭环评估。通过推理时引导，选定的代理被引导向安全关键行为，包括激进的插入、前车刹车以及纵向-横向的组合交互，同时保持现实的交通行为。在与独立黑箱规划器的闭环nuPlan仿真中评估，生成的场景暴露出在标准基准下隐藏的失败模式。尽管基于SSDS的规划器在名义性能上表现更强，但在这些具有挑战性的场景下却经历了更大的性能下降，表明基准的优越性并不一定转化为鲁棒性。这些结果表明，单一学习的交通先验可以同时改善运动规划，并为系统的规划器鲁棒性评估提供现实的框架。",
+  "arxiv_id": "2609.04921",
+  "arxiv_url": "https://arxiv.org/abs/2609.04921v1",
+  "authors": [
+    "Arka Pal",
+    "Rajesh Kumar",
+    "Hannes Eriksson",
+    "Rémi Lacombe",
+    "Arvid Laveno Ling",
+    "Ankit Gupta",
+    "Maciej Wozniak"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04921",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.052873+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04921v1",
+  "published_at": "2026-09-04T09:22:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuplan",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "交通",
+      "motion planning",
+      "场景生成",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04921v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "One Diffusion Model, Two Roles: Guided Trajectory Planning and Safety-Critical Scenario Generation in Closed-Loop Simulation",
+  "title_zh": "一个扩散模型，两个角色：闭环仿真中的引导轨迹规划和安全关键场景生成",
+  "translation_url": "https://hjfy.top/arxiv/2609.04921"
+}

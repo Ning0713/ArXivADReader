@@ -1,0 +1,60 @@
+{
+  "abstract": "Unattended interactive autonomy - machines that step into danger in place of humans and complete tasks with human tools - remains a missing capability in mission-critical operations. These domains offer scarce training data and only onboard compute, yet deployed systems must face novelty without erasing prior competence. We introduce Continual Field-Adaptive Models (CFAMs), which learn efficiently in the lab and continue learning after deployment through autonomous, gradient-free, on-device updates. CFAM uses a complementary learning architecture with a frozen slow-learning component and a fast-learning Capsule Field. The slow component contains three cortices: Sensor, which maps multimodal input into 3D-grounded geometry; Reasoning, which decomposes tasks into skills and evaluates outcomes; and Action, which executes geometric skills. The Capsule Field stores field learning one-shot and gradient-free as Competence Capsules. Skill installation is few-shot in the lab and continual in the field; open-world novelty is outside scope. We evaluate CFAM across five embodiments: manipulator, quadruped, humanoid, quadrotor, and off-road vehicle. Baselines (pi0, CogACT, SpatialVLA) use the same in-house multi-embodiment dataset for physical-platform comparisons. CFAM reaches the operating point of a standard policy trained on the full prior-training dataset using 40% of the data, or 2.5x fewer trajectories. At test time, autonomous capture of verified near-OOD cases improves action success by 13.9 percentage points. In sequential simulation, backward transfer is -0.5 percentage points versus -11.4 for LoRA. CFAM therefore provides a bounded form of post-deployment physical intelligence: few-shot skill learning, autonomous field growth from verified near-OOD experience, and retention of prior competence.",
+  "abstract_zh": "无人值守的互动自主性——机器代替人类进入危险环境并使用人类工具完成任务——仍然是关键任务操作中缺失的一项能力。这些领域提供稀缺的训练数据且仅具备机载计算能力，但已部署的系统必须在不抹去先前能力的情况下面对新颖性。我们提出了持续场适应模型（CFAM），该模型能够在实验室中高效学习，并通过自主、无梯度的设备内更新在部署后继续学习。CFAM采用了一种互补的学习架构，包含一个冻结的慢学习组件和一个快速学习的胶囊场（Capsule Field）。慢组件包含三个皮层：传感器（Sensor），将多模态输入映射到三维基础几何；推理（Reasoning），将任务分解为技能并评估结果；以及行动（Action），执行几何技能。胶囊场以一次性和无梯度的方式存储场学习作为能力胶囊（Competence Capsules）。技能安装在实验室中是少样本的，而在现场是持续的；开放世界的新颖性超出范围。我们在五种实现上评估CFAM：操纵器、四足机器人、人形机器人、四旋翼和越野车。基准（pi0、CogACT、SpatialVLA）使用相同的内部多实现数据集进行物理平台比较。CFAM在使用40%的数据或2.5倍更少的轨迹时，达到了在完整先前训练数据集上训练的标准策略的操作点。在测试时，自动捕获经过验证的近OOD案例使得行动成功率提高了13.9个百分点。在顺序模拟中，反向转移为-0.5个百分点，而LoRA为-11.4个百分点。因此，CFAM提供了一种有限形式的部署后物理智能：少样本技能学习、基于经过验证的近OOD经验的自主场增长，以及对先前能力的保留。",
+  "arxiv_id": "2609.04552",
+  "arxiv_url": "https://arxiv.org/abs/2609.04552v1",
+  "authors": [
+    "Amarjot Singh",
+    "Tanmay R. Pancholi",
+    "Jainam Kothari",
+    "Shrirang Mahajan",
+    "Ketan Bansal",
+    "Zackory Erickson",
+    "Giuseppe Loianno",
+    "Alexandre M. Bayen",
+    "Jeff Schneider",
+    "Vince Nakayama"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04552",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.016508+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04552v1",
+  "published_at": "2026-09-03T23:15:53Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "road",
+      "humanoid",
+      "人形机器人"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04552v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "本文提出一种面向部署后物理智能系统的持续场适应方法，通过冻结的基础模型与无梯度快速记忆模块相结合，实现少样本技能学习、现场经验积累和既有能力保持。方法在包括越野车辆在内的多种机器人平台上进行验证，并通过模拟和多平台数据集评估持续学习效果。",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Continual Field-Adaptive Models (CFAMs) for Post-Deployment Physical AI",
+  "title_zh": "持续场适应模型（CFAM）用于部署后的物理人工智能",
+  "translation_url": "https://hjfy.top/arxiv/2609.04552"
+}

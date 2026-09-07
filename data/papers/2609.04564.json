@@ -1,0 +1,61 @@
+{
+  "abstract": "Self-driving laboratories (SDLs) combine automated experimentation with adaptive decision-making to accelerate scientific discovery. Their operation nevertheless often depends on human specialists who translate scientific objectives into executable closed-loop campaigns. Specialists adjust them as data and operating conditions change. Here, we present La Agente \\'Optima, an agentic framework that constructs and supervises Bayesian optimization campaigns across computational and experimental systems while maintaining a persistent optimization state. By separating large language model (LLM) reasoning from executed campaigns, \\'Optima runs repetitive optimization loops consistently, returns control to the agent only when progress requires interpretation or campaign revision, and keeps every decision auditable. We evaluate \\'Optima across ablation studies, five digital discovery tasks, and two physical platforms. Throughout, \\'Optima maintained executable campaigns as both the scientific problem and execution environment evolved. In a closed-loop contact angle optimization campaign, \\'Optima identified and corrected a mid-run measurement failure, bringing the contact angle from 71.4 to 67.8 degrees, just above the 64-66 degree range. From this result, \\'Optima correctly inferred that the target was likely unattainable with the available reagents and recommended changing the formulation. In a five-day multi-objective flow-chemistry campaign, \\'Optima increased the yield from 30% to 59% over 23 experiments. Despite substantial inference costs, it cost less and used substantially less starting material than a human-directed campaign, while selecting a more mass-efficient operating point. These results show that LLM-based agents can make rigorous, long-running optimization campaigns accessible to domain scientists without specialist setup, expanding the scope of SDLs.",
+  "abstract_zh": "自主驱动实验室（SDLs）结合了自动化实验和自适应决策，旨在加速科学发现。然而，它们的运行往往依赖于人类专家将科学目标转化为可执行的闭环实验方案。专家会根据数据和操作条件的变化对其进行调整。在此，我们提出了La Agente 'Optima，一个自主框架，能够在计算和实验系统中构建和监督贝叶斯优化实验，同时保持持续的优化状态。通过将大型语言模型（LLM）推理与执行的实验方案分离，'Optima能够持续运行重复的优化循环，仅在进展需要解释或实验方案修订时将控制权交还给代理，并保持每个决策可审计。我们通过消融研究、五个数字发现任务和两个物理平台对'Optima进行了评估。在整个过程中，'Optima在科学问题和执行环境演变的同时维持了可执行的实验方案。在一个闭环接触角优化实验中，'Optima识别并纠正了中途测量失败，将接触角从71.4度降低到67.8度，刚好位于64-66度范围之上。基于这一结果，'Optima正确推断出在现有试剂下目标可能无法实现，并建议更改配方。在一个为期五天的多目标流动化学实验中，'Optima将产率从30%提高到59%，共进行了23次实验。尽管推理成本较高，但其成本低于人类主导的实验，并且使用的起始材料显著减少，同时选择了更具质量效率的操作点。这些结果表明，基于LLM的代理能够使严格的、长期的优化实验对领域科学家变得可及，而无需专家设置，从而扩展了SDLs的应用范围。",
+  "arxiv_id": "2609.04564",
+  "arxiv_url": "https://arxiv.org/abs/2609.04564v1",
+  "authors": [
+    "Marcel Müller",
+    "Jiaru Bai",
+    "Willi Gottstein",
+    "Abhijoy Mandal",
+    "Mohammad Nazeri",
+    "Elia Savino",
+    "Yanlin Fang",
+    "Sujoy Das",
+    "Sergio Pablo García Carrillo",
+    "Yeonghun Kang",
+    "Juan B. Pérez-Sánchez",
+    "Simone Pilon",
+    "Martin Fitzner",
+    "Timothy Noël",
+    "Frank Gu",
+    "Varinia Bernales",
+    "Alán Aspuru-Guzik"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04564",
+  "categories": [
+    "cs.AI",
+    "cs.MA",
+    "physics.chem-ph"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.083082+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04564v1",
+  "published_at": "2026-09-03T23:37:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "driving"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04564v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "La Agente \\'Optima: Towards Agentic Self-Driving Laboratories",
+  "title_zh": "La Agente 'Optima：迈向自主驱动实验室",
+  "translation_url": "https://hjfy.top/arxiv/2609.04564"
+}

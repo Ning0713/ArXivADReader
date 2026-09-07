@@ -1,0 +1,50 @@
+{
+  "abstract": "Benchmarks for the side effects an agent causes on the way to a goal already exist, but HarvestBench is the first to put a price on avoiding the side effect and to name that side effect as a living creature. It is a farm simulation: LLM sub-agents drive a crew of two tractors through a cooperative corn harvest, with animals in the field. The environment is a reinforcement learning gridworld, every decision is made without memory, and the harm is never named in the goal. When an animal blocks a tractor's route the autopilot stops and asks the model whether to drive on, at no fuel cost, or swerve around it for a posted fuel price. Kills are compared against two controls: rocks, which damage the tractor and are hit under 1% of the time by every model, and hay bales, which are harmless and not alive. Models can also take crops from the neighbor's field instead of their own, a second test of what they treat as moral. Across nine models and 7,201 priced decisions, 3,951 involved an animal rather than a hay bale or a rock. Kill rates range from 0.4% to 98.8%, with Terra and Sol the most merciful and GPT-4o-mini the most cruel, and they are not ordered by capability. Four of six models were sensitive to price at the 5% level, with elasticities from 0.09 to 1.69. All nine drove over wild animals more often than farmed animals on the default map, and the direction held at every map geometry in every model with room to move. The briefing mattered most: under the morality briefing the kill rate was under 6% in five of six reasoning models, and removing it raised the kill rate above 84% in all six. HarvestBench uses no LLM grader. The scorer counts events in the game log, so it is fully reproducible, and it measures what a model will pay to avoid harm rather than what it says about harm.",
+  "abstract_zh": "虽然已经存在代理在实现目标过程中造成副作用的基准，但HarvestBench是首个为避免副作用定价，并将该副作用命名为生物体的基准。它是一个农场模拟：大型语言模型（LLM）子代理驾驶两台拖拉机在合作的玉米收获中穿行，田野中有动物。环境是一个强化学习的网格世界，每个决策都是在没有记忆的情况下做出的，伤害从未在目标中被提及。当一只动物阻挡了拖拉机的路径时，自动驾驶系统会停止并询问模型是否在没有燃料成本的情况下继续前进，或者绕过它并支付标定的燃料费用。杀戮率与两个控制组进行比较：岩石，这会损坏拖拉机，每个模型被撞击的概率不到1%；以及干草堆，这些是无害且不活的。模型还可以从邻居的田地中收获作物，而不是自己的，这也是对其道德观的一次测试。在九个模型和7,201个定价决策中，3,951个涉及动物，而不是干草堆或岩石。杀戮率范围从0.4%到98.8%，其中Terra和Sol是最仁慈的，而GPT-4o-mini是最残忍的，且它们的能力并未按顺序排列。在六个模型中，有四个对价格在5%的水平上敏感，弹性范围从0.09到1.69。所有九个模型在默认地图上对野生动物的碾压频率高于对农场动物的碾压频率，这一趋势在每个模型的每个地图几何形状中都保持一致。简报内容至关重要：在道德简报下，六个推理模型中有五个的杀戮率低于6%，而去除该简报则使所有六个模型的杀戮率上升至84%以上。HarvestBench不使用LLM评分器。评分者在游戏日志中统计事件，因此其结果完全可重复，并且它测量的是模型愿意为避免伤害而支付的费用，而不是模型对伤害的表述。",
+  "arxiv_id": "2609.04444",
+  "arxiv_url": "https://arxiv.org/abs/2609.04444v1",
+  "authors": [
+    "Jasmine Brazilek",
+    "Miles Tidmarsh",
+    "Matthias Endres",
+    "Anshuman Singh",
+    "Jeremiah Miller"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04444",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.076316+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04444v1",
+  "published_at": "2026-09-03T20:05:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04444v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "地图/定位"
+    ]
+  },
+  "title": "HarvestBench: Measuring Whether LLM Agents Will Pay to Avoid Killing Animals",
+  "title_zh": "HarvestBench：测量大型语言模型代理是否愿意付费以避免杀死动物",
+  "translation_url": "https://hjfy.top/arxiv/2609.04444"
+}

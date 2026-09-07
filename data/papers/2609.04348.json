@@ -1,0 +1,58 @@
+{
+  "abstract": "Object-centric visual representations are important for physical-world perception, but existing visual pretraining methods often capture semantic categories without preserving the identity and coherence of individual instances. We present a biologically inspired framework that learns object-centric representations for single images from raw videos. Our approach uses motion boundaries as a source of object-level grouping: off-the-shelf optical flow and clustering produce pseudo-instance masks, which supervise a single-image encoder with pixel-level pairwise metric learning. The framework requires neither human annotations nor camera calibration. We first obtain 195 million pseudo-labeled frames from 7,163 hours of driving and web videos, then expand the supervision to 421 million frames with Motion-Verified Self-Training, which combines model proposals with motion evidence. We train encoders up to Swin-H and distill the learned representations into a family of Swin backbones. Across monocular depth estimation, 3D object detection, 3D occupancy prediction, and end-to-end planning, the resulting models achieve competitive or superior performance relative to supervised and self-supervised pretraining baselines, with particularly strong transfer on geometry- and instance-sensitive tasks. These results show that motion-derived supervision can teach static image encoders to represent visual instances, providing a complementary direction for scalable visual pretraining.",
+  "abstract_zh": "以物体为中心的视觉表征对于物理世界的感知至关重要，但现有的视觉预训练方法往往捕捉语义类别，而未能保留单个实例的身份和一致性。我们提出了一种生物启发的框架，该框架从原始视频中学习单幅图像的以物体为中心的表征。我们的方法利用运动边界作为物体级分组的来源：现成的光流和聚类生成伪实例掩码，这些掩码用于监督单幅图像编码器的像素级成对度量学习。该框架不需要人工标注或相机校准。我们首先从7163小时的驾驶和网络视频中获得1.95亿个伪标记帧，然后通过运动验证自我训练（Motion-Verified Self-Training）将监督扩展到4.21亿帧，该方法结合了模型提议和运动证据。我们训练了高达Swin-H的编码器，并将学习到的表征提炼成一系列Swin主干网络。在单目深度估计、3D物体检测、3D占用预测和端到端规划等任务中，所得到的模型相较于监督和自监督预训练基线表现出竞争力或优越的性能，尤其在几何和实例敏感任务上具有强大的迁移能力。这些结果表明，基于运动的监督可以教会静态图像编码器表示视觉实例，为可扩展的视觉预训练提供了一种互补的方向。",
+  "arxiv_id": "2609.04348",
+  "arxiv_url": "https://arxiv.org/abs/2609.04348v1",
+  "authors": [
+    "Boshi Li",
+    "Xiaohui Wang",
+    "Xiaoyang Wu",
+    "Zhichao Li",
+    "Ya Yang",
+    "Naiyan Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-07#paper-2609-04348",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-07T09:53:30.032764+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.04348v1",
+  "published_at": "2026-09-03T18:11:53Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "occupancy",
+      "3d object detection",
+      "monocular depth",
+      "depth estimation",
+      "深度估计",
+      "占用预测"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 34
+  },
+  "seen_dates": [
+    "2026-09-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.04348v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-07"
+  },
+  "summary_zh": "提出一种利用视频运动边界生成伪实例掩码的无标注视觉预训练方法，通过像素级成对度量学习获得物体中心表征，并以运动验证自训练扩展监督规模。该方法在单目深度估计、3D检测、3D占用预测和端到端规划等自动驾驶相关任务上展现出较强迁移能力。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "3D 检测",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Object Concepts Emerge from Motion",
+  "title_zh": "运动中物体概念的出现",
+  "translation_url": "https://hjfy.top/arxiv/2609.04348"
+}
