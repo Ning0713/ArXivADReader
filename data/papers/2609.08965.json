@@ -1,0 +1,65 @@
+{
+  "abstract": "Ensuring the safety of autonomous driving is a critical challenge. Scenario-based testing is a systematic process used to validate Autonomous Driving Systems (ADSs), but it remains a fragmented modular pipeline in which scenario generation, retrieval, modification, ADS execution, and results analysis are performed by separate tools with little interaction. Large Language Model (LLM) agents have shown promise across ADS sub-systems such as perception, planning, and control. However, no prior work covers the whole scenario-based testing pipeline for ADSs with a unified LLM-agent framework. We present PlannerForge, an LLM-agent framework that extends all scenario-based testing stages (from Scenario Generation to ADS Assessment) and adds two further LLM-enhanced stages: ADS Enhancement and ADS Benchmarking. We evaluate PlannerForge with 10 off-the-shelf LLMs across all tasks (Generation, Selection, Modification, Module Routing, Planner Testing, and Enhancement) under 5 prompt conditions. Best-per-task scores range from 0.88 to 1.00, and open-source 20-35B backends match commercial APIs on most tasks. Open-source models such as Qwen3.6:35B match commercial APIs on three of the five tasks. Chaining the modules end-to-end retains 83% / 78% of seed queries (commercial / open). It outperforms Scenario Factory 2.0 (Finkeldei et al., 2025) on natural-language generation (193 vs. 144 executable of 200) and realises 92-96% of requested city, road and vehicle attributes. It outperforms BM25 (Robertson and Zaragoza, 2009) at rank 1 selection (92.0% vs. 67.5%) and From-Words-to-Collisions (Gao et al., 2025) on physically valid edits (>=94% vs. 31%). At N=400, cost-tuning lifts planner success from 50.4% to 70.2% and cuts collisions from 19.0% to 8.4%, without domain-specific fine-tuning.",
+  "abstract_zh": "确保自主驾驶的安全性是一个关键挑战。场景基础测试是一种系统化的过程，用于验证自主驾驶系统（ADS），但它仍然是一个分散的模块化流程，其中场景生成、检索、修改、ADS执行和结果分析由不同的工具完成，彼此之间互动较少。大型语言模型（LLM）代理在感知、规划和控制等ADS子系统中显示出了良好的前景。然而，之前的研究没有涵盖整个基于场景的ADS测试流程的统一LLM代理框架。我们提出了PlannerForge，一个LLM代理框架，扩展了所有基于场景的测试阶段（从场景生成到ADS评估），并增加了两个进一步的LLM增强阶段：ADS增强和ADS基准测试。我们在5种提示条件下，使用10种现成的LLM对PlannerForge进行评估，涵盖所有任务（生成、选择、修改、模块路由、规划器测试和增强）。每个任务的最佳得分范围为0.88到1.00，开源的20-35B后端在大多数任务上与商业API相匹配。开源模型如Qwen3.6:35B在五个任务中的三个任务上与商业API相匹配。模块的端到端链式连接保留了83% / 78%的种子查询（商业/开源）。在自然语言生成方面，它在可执行性上超越了Scenario Factory 2.0（Finkeldei等，2025），实现了92-96%的请求城市、道路和车辆属性。它在排名1的选择上超越了BM25（Robertson和Zaragoza，2009）（92.0%对67.5%），并在物理有效编辑方面超越了From-Words-to-Collisions（Gao等，2025）（>=94%对31%）。在N=400时，成本调优将规划器的成功率从50.4%提升至70.2%，并将碰撞率从19.0%降低至8.4%，而无需领域特定的微调。",
+  "arxiv_id": "2609.08965",
+  "arxiv_url": "https://arxiv.org/abs/2609.08965v1",
+  "authors": [
+    "Yuan Gao",
+    "Sebastian Müller",
+    "Mattia Piccinini",
+    "Marc Kaufeld",
+    "Yuchen Zhang",
+    "Finn Rasmus Schäfer",
+    "Qunying Song",
+    "Johannes Betz"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-08965",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.652159+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.08965v1",
+  "published_at": "2026-09-08T16:19:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路",
+      "场景生成",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.08965v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "端到端驾驶"
+    ]
+  },
+  "title": "PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving",
+  "title_zh": "PlannerForge：用于自主驾驶运动规划器场景测试的LLM代理",
+  "translation_url": "https://hjfy.top/arxiv/2609.08965"
+}

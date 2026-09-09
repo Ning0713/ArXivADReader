@@ -1,0 +1,52 @@
+{
+  "abstract": "Multi-object tracking (MOT) has advanced rapidly in urban surveillance and autonomous driving, yet many trackers rely on ReID- and transformer-based appearance encoders and are designed for standard FoV cameras. These assumptions break down for low-cost omnidirectional deployments, where equirectangular projection introduces seam discontinuities and targets appear to be small and fast-moving. We address multi-object tracking of flying animals captured in remote environments using omnidirectional cameras. We propose a lightweight framework that re-engineers SORT-based tracking for this geometry, including (i) a Seam-Aware Motion Model that keeps the Kalman state continuous across the seam, (ii) a composite seam-aware association cost that pairs a wrapped Euclidean term with GIoU, and (iii) OmniSmall, a new benchmark of omnidirectional wildlife footage. On our new dataset, with ground-truth detections, our modifications improved over OCSORT by +8.51 HOTA, +9.41 MOTA, and +10.17 IDF1; with YOLOX detections the gain narrows to +1.95 HOTA. Our proposed methods improved tracking performance on OmniSmall and remained competitive on JRDB without adding appearance encoders while keeping the tracking stage CPU-only. Our dataset and source code are available at: https://github.com/Xin-Shu/OmniSORT.git.",
+  "abstract_zh": "多目标跟踪（MOT）在城市监控和自动驾驶领域迅速发展，但许多跟踪器依赖于基于ReID和变换器的外观编码器，并且设计用于标准视场（FoV）摄像头。这些假设在低成本全景部署中失效，因为等距矩形投影会引入接缝不连续性，目标看起来小且快速移动。我们针对在偏远环境中使用全景摄像头捕捉的飞行动物进行多目标跟踪。我们提出了一个轻量级框架，针对这种几何形状重构基于SORT的跟踪，包括（i）一个接缝感知运动模型，该模型保持卡尔曼状态在接缝处的连续性，（ii）一个复合接缝感知关联代价，将包裹的欧几里得项与GIoU配对，以及（iii）OmniSmall，一个新的全景野生动物视频基准。在我们的新数据集上，使用真实检测结果，我们的修改使OCSORT的性能提高了+8.51 HOTA，+9.41 MOTA和+10.17 IDF1；使用YOLOX检测时，增益缩小至+1.95 HOTA。我们提出的方法在OmniSmall上提高了跟踪性能，并在JRDB上保持竞争力，而无需添加外观编码器，同时保持跟踪阶段为仅CPU处理。我们的数据集和源代码可在以下链接获取：https://github.com/Xin-Shu/OmniSORT.git。",
+  "arxiv_id": "2609.07547",
+  "arxiv_url": "https://arxiv.org/abs/2609.07547v1",
+  "authors": [
+    "Xin Shu",
+    "Meegan Gower",
+    "Yvonne Buckley",
+    "Anil Kokaram"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07547",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.370102+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07547v1",
+  "published_at": "2026-09-07T14:29:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07547v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "Re-engineering SORT-based algorithms for low-cost small object tracking from omnidirectional footage",
+  "title_zh": "基于SORT的算法重构：低成本小物体从全景视频中跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2609.07547"
+}

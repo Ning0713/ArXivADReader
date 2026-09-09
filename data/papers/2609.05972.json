@@ -1,0 +1,46 @@
+{
+  "abstract": "We present an efficient and robust method for 3D geometric reconstruction that is based solely on the camera-independent linear relationships among a given set of points, which are stable over time and robustly estimated using multiple point matches. We essentially learn, from correspondences between points across several frames, a linear geometric auto-regression matrix $\\mathbf{W}$, which establishes how a point in 3D can be expressed as a linear combination of all the others. This matrix is constant and does not depend on the world coordinate system or the camera pose---it is an intrinsic property of the point set. We also show that the principal eigenvectors of $\\mathbf{W}$, which all have eigenvalue $1$, provide a homogeneous representation of the 3D point configuration. The first version of our method takes advantage of noisy monocular depth maps in order to obtain, from multiple frames, a robust geometric auto-regression matrix $\\mathbf{W}$ of linear relationships between the 3D points. Thus, we build on recent advances in deep learning, which now provide monocular depth estimation models that are fast but very often noisy. Our approach handles noise through robust linear estimation over several frames. The second version of our method does not need monocular depth estimation maps. It applies in cases of weak-perspective projection, when the linear combinations between the 3D points can be robustly estimated from their 2D projections in the image. Note that the camera projection matrix is never used in our derivations. Consequently, our method does not recover camera pose, but only 3D structure. This is a key difference between our method and the related literature on 3D geometric reconstruction.",
+  "abstract_zh": "我们提出了一种高效且鲁棒的三维几何重建方法，该方法仅基于给定点集之间的无相机依赖线性关系，这些关系在时间上是稳定的，并通过多点匹配进行鲁棒估计。我们基本上从多个帧之间点的对应关系中学习一个线性几何自回归矩阵 $ extbf{W}$，该矩阵确定了如何将三维空间中的一个点表示为所有其他点的线性组合。该矩阵是常数，不依赖于世界坐标系或相机姿态——它是点集的内在属性。我们还展示了 $ extbf{W}$ 的主特征向量均具有特征值 $1$，提供了三维点配置的齐次表示。我们方法的第一个版本利用噪声单目深度图，从多个帧中获得三维点之间线性关系的鲁棒几何自回归矩阵 $ extbf{W}$。因此，我们借鉴了深度学习的最新进展，这些进展现在提供了快速但通常噪声较大的单目深度估计模型。我们的方法通过对多个帧进行鲁棒线性估计来处理噪声。我们方法的第二个版本不需要单目深度估计图。它适用于弱透视投影的情况，当三维点之间的线性组合可以通过它们在图像中的二维投影进行鲁棒估计时。请注意，在我们的推导中从未使用相机投影矩阵。因此，我们的方法并不恢复相机姿态，而仅仅恢复三维结构。这是我们的方法与相关三维几何重建文献之间的一个关键区别。",
+  "arxiv_id": "2609.05972",
+  "arxiv_url": "https://arxiv.org/abs/2609.05972v1",
+  "authors": [
+    "Marius Leordeanu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-05972",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.223984+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.05972v1",
+  "published_at": "2026-09-05T08:20:53Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.05972v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文研究基于单目深度和多帧点匹配的相机无关三维结构重建，重点解决深度噪声、跨帧匹配和未知相机模型带来的鲁棒性问题。其核心是学习描述点集内在几何关系的线性自回归矩阵，并利用特征分解恢复三维点配置。该技术可作为自动驾驶视觉感知、深度估计和三维场景建模的基础模块，但论文未明确针对自动驾驶场景、数据集或任务进行验证，因此属于与自动驾驶感知相关的边界性论文。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Efficient and Robust Camera-independent Multiview 3D Geometric Reconstruction from Noisy Monocular Depth Estimation and Multiple Point Matching",
+  "title_zh": "高效且鲁棒的无相机依赖的多视角三维几何重建方法：基于噪声单目深度估计和多点匹配",
+  "translation_url": "https://hjfy.top/arxiv/2609.05972"
+}

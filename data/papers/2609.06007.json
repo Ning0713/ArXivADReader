@@ -1,0 +1,47 @@
+{
+  "abstract": "Guided depth completion methods heavily depend on RGB quality and alignment, while unguided ones often suffer from limited precision due to the absence of explicit visual cues. In this paper, we present Depth-to-Image Synthesis-Driven Generative Unguided Depth Completion (GUDC), a new completion paradigm that innovatively bridges advanced 2D generative models with unguided depth completion, enabling semantics-aware depth inference without real RGB inputs. Our key idea is to exploit ControlNet's powerful depth-conditioned generation capability to synthesize pseudo-images directly from sparse depth, effectively converting the original unguided setting into a semantics-guided one. To address the potential image-depth misalignment caused by depth sparsity, we propose a multi-level dense-to-sparse representation distillation strategy for ControlNet fine-tuning, where dense-depth features act as teacher signals to distill consistent structural representations for sparse-depth inputs. Furthermore, during pseudo-image-guided completion, we propose a pseudo-image semantic attention fusion module to adaptively extract informative semantic cues from pseudo-images while suppressing artifacts (e.g., texture hallucinations). Extensive experiments on KITTI and NYUv2 validate that our GUDC achieves superior accuracy and robustness over existing methods.",
+  "abstract_zh": "有导向的深度补全方法严重依赖于RGB图像的质量和对齐，而无导向的方法由于缺乏明确的视觉线索，往往精度有限。本文提出了一种新的补全范式——基于深度到图像合成驱动的生成无导向深度补全（GUDC），该方法创新性地将先进的2D生成模型与无导向深度补全相结合，实现了在没有真实RGB输入的情况下进行语义感知的深度推断。我们的关键思想是利用ControlNet强大的深度条件生成能力，从稀疏深度直接合成伪图像，有效地将原始的无导向设置转变为语义导向的设置。为了解决由于深度稀疏性引起的图像与深度之间的潜在不对齐问题，我们提出了一种多层次密集到稀疏表示蒸馏策略，用于对ControlNet进行微调，其中密集深度特征作为教师信号，蒸馏出一致的结构表示以适应稀疏深度输入。此外，在伪图像引导的补全过程中，我们提出了一种伪图像语义注意力融合模块，能够自适应地从伪图像中提取有用的语义线索，同时抑制伪影（例如，纹理幻觉）。在KITTI和NYUv2上的大量实验验证了我们的GUDC在准确性和鲁棒性方面优于现有方法。",
+  "arxiv_id": "2609.06007",
+  "arxiv_url": "https://arxiv.org/abs/2609.06007v1",
+  "authors": [
+    "Jiayi Yuan",
+    "Na Zhao",
+    "De Wen Soh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-06007",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.227865+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.06007v1",
+  "published_at": "2026-09-05T10:20:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.06007v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "Depth-to-Image Synthesis-Driven Generative Unguided Depth Completion",
+  "title_zh": "基于深度到图像合成驱动的生成无导向深度补全",
+  "translation_url": "https://hjfy.top/arxiv/2609.06007"
+}

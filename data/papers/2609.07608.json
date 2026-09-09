@@ -1,0 +1,62 @@
+{
+  "abstract": "Bridging the simulation-to-reality gap in roadside LiDAR requires addressing several coupled discrepancies, including scene geometry, sampling density, return patterns, and pedestrian scale. This report presents a multi-source collaborative training and class-aware fusion framework for Sim2Real 3D detection. The method organizes digital-twin scans, diffusion-redrawn scans, density-stabilized scans, and pedestrian morphology-aligned samples into a unified training pool with complementary roles. Within a common DSVT detection formulation, source-specialized expert branches preserve those roles while optimizing for the same detection objective. At inference, a predefined class-aware fusion pathway integrates geometry-stable and calibration-aware branches for vehicles, sampling-complementary branches for trucks, and morphology-consistent evidence for pedestrians. A label-free point-cloud center blend then refines geometric localization. On the UrbanTwin V2X-Real hidden test set, the unified system achieves a combined score of 0.7421, with 3D [email protected] of 0.4518 and a realism score of 0.8871. The results indicate that a stable, interpretable collaboration among data sources is more valuable than unconstrained aggregation of model outputs.",
+  "abstract_zh": "在路边LiDAR中弥合仿真与现实之间的差距需要解决多个耦合的不一致性，包括场景几何、采样密度、返回模式和行人尺度。本报告提出了一种多源协同训练和类感知融合框架，用于Sim2Real 3D检测。该方法将数字双胞胎扫描、扩散重绘扫描、密度稳定扫描和行人形态对齐样本组织成一个具有互补角色的统一训练池。在一个共同的DSVT检测公式中，源专用的专家分支保持这些角色，同时优化相同的检测目标。在推理阶段，预定义的类感知融合路径整合了几何稳定和校准感知的车辆分支、采样互补的卡车分支以及形态一致的行人证据。随后，无标签的点云中心混合进一步精炼几何定位。在UrbanTwin V2X-Real隐藏测试集上，统一系统实现了0.7421的综合得分，3D [email protected] 为0.4518，现实性得分为0.8871。结果表明，数据源之间稳定、可解释的协作比模型输出的无约束聚合更具价值。",
+  "arxiv_id": "2609.07608",
+  "arxiv_url": "https://arxiv.org/abs/2609.07608v1",
+  "authors": [
+    "Pu Luo",
+    "Cong Xu",
+    "Yumei Li",
+    "Kexin Zhang",
+    "Licheng Jiao",
+    "Wenping Ma",
+    "Lingling Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07608",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.375747+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07608v1",
+  "published_at": "2026-09-07T15:16:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "roadside",
+      "pedestrian",
+      "车辆",
+      "行人",
+      "3d object detection",
+      "3d detection",
+      "lidar",
+      "sim-to-real",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 72
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07608v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "3D 检测"
+    ]
+  },
+  "title": "Solution for UCF UrbanTwin V2X-Real Track: Sim-to-Real Urban LiDAR 3D Object Detection",
+  "title_zh": "UCF UrbanTwin V2X-Real Track的解决方案：从仿真到现实的城市LiDAR 3D物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.07608"
+}

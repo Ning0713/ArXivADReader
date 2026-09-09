@@ -1,0 +1,53 @@
+{
+  "abstract": "Real-time control often sits between two limiting regimes. Predictive optimization and model-based control are powerful when dynamics, parameters, objectives, and online planning models are specified; reinforcement learning can relax this requirement, but must infer long-horizon value signals from sequential data and interaction, making training slow, high-variance, and hard to scale in large action spaces. This middle regime is common in systems including autonomous driving, warehouse robotics, traffic control, and delivery drones: partial geometry, physics, rules, or constraints are known, yet the local direction of task progress remains uncertain. Geometric Distributional Control (GDC) is designed for this partial-knowledge setting. It factorizes control into feasibility and progress: known geometry, rules, constraints, and response maps define an executable scaffold, while progress-weighted feasible data learns the missing directional signal on that scaffold. The learned score acts as a Bellman-like local value-gradient, selecting actions that make progress without requiring global Bellman recursion, a fully specified planner, or a black-box policy that absorbs both feasibility and preference. This knowledge can be lightweight and partial, such as simple dynamics, safety filters, local maps, constraint projectors, or lower-level response maps; it need not encode full dynamics or a long-horizon objective. Offline, GDC fits a progress-tilted distribution from short known-feasible snippets with weak signed progress certificates. Online, its score is projected through the scaffold and applied in receding-horizon feedback. We prove that this score descends a data-induced soft progress value and validate GDC on structured multilevel optimization and SUMO route-progress driving, where it improves over known-only solvers and learning baselines while preserving scaffold-enforced feasibility.",
+  "abstract_zh": "实时控制通常处于两种极限状态之间。当动态、参数、目标和在线规划模型被明确指定时，预测优化和基于模型的控制是强大的；而强化学习可以放宽这一要求，但必须从序列数据和交互中推断长期价值信号，这使得训练过程缓慢、方差高，并且在大动作空间中难以扩展。这种中间状态在包括自动驾驶、仓库机器人、交通控制和送货无人机等系统中很常见：已知部分几何、物理、规则或约束，但任务进展的局部方向仍然不确定。几何分布控制（Geometric Distributional Control, GDC）旨在为这种部分知识环境而设计。它将控制分解为可行性和进展：已知的几何、规则、约束和响应映射定义了一个可执行的框架，而进展加权的可行数据则学习在该框架上缺失的方向信号。学习到的评分作为类似贝尔曼的局部价值梯度，选择能够推动进展的动作，而无需全局贝尔曼递归、完全指定的规划器或吸收可行性和偏好的黑箱策略。这种知识可以是轻量级和部分的，例如简单的动态、安全过滤器、局部地图、约束投影器或低级响应映射；它不需要编码完整的动态或长期目标。在离线阶段，GDC 从短期已知可行片段中拟合一个倾向于进展的分布，并使用弱签名进展证书。在在线阶段，其评分通过框架进行投影，并应用于递归地平反馈。我们证明了该评分下降于数据诱导的软进展值，并在结构化多级优化和 SUMO 路径进展驾驶中验证了 GDC，相较于仅知道的求解器和学习基线，GDC 在保持框架强制可行性的同时有所改进。",
+  "arxiv_id": "2609.06331",
+  "arxiv_url": "https://arxiv.org/abs/2609.06331v1",
+  "authors": [
+    "Tong Wu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-06331",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.080798+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.06331v1",
+  "published_at": "2026-09-06T01:39:05Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.06331v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "安全/异常"
+    ]
+  },
+  "title": "Geometric Distributional Control: Learning Progress with Partial Structural Knowledge",
+  "title_zh": "几何分布控制：具有部分结构知识的学习进展",
+  "translation_url": "https://hjfy.top/arxiv/2609.06331"
+}

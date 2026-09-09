@@ -1,0 +1,55 @@
+{
+  "abstract": "Object detectors have shown remarkable performance in various fields, among these medical imaging, surveillance, and autonomous driving. However, they are prone to overconfidence when encountering unseen objects in real-world deployments, causing potential safety issues. To address this, detecting out-of-distribution (OOD) objects is essential for reliable object detection. Modern approaches leverage the broad semantic knowledge of foundation models such as CLIP for post-hoc few- and zero-shot OOD detection. However, these methods typically perform OOD assessment in feature space, which can be sensitive to object detector localization errors and variations in object appearance. Moreover, the current state-of-the-art (SOTA) zero-shot method performs computationally costly diffusion in inference. In this work, for our proposed zero-shot object OOD detection method SAM3-O2D2, we employ the SAM3-image foundation model in an efficient manner. Specifically, we prompt SAM3 only with the object detector's predicted classes and compare the predictions of the object detector and SAM3. An object is in-distribution (ID), if SAM3 also detects an object at the corresponding location. If SAM3 does not detect the prompted object, this indicates a mismatch between the detector's prediction and the image content, suggesting that the object is OOD. Experimental results show that our method significantly surpasses the so-far zero-shot SOTA method. Specifically, we achieve new SOTA AuROC and FPR95 metrics over both ID datasets Pascal-VOC and BDD100K and both OOD datasets MS-COCO and OpenImages.",
+  "abstract_zh": "对象检测器在医疗成像、监控和自动驾驶等多个领域表现出色。然而，当在实际应用中遇到未见过的对象时，它们往往表现出过度自信，从而导致潜在的安全问题。为了解决这一问题，检测分布外（OOD）对象对于可靠的对象检测至关重要。现代方法利用基础模型（如CLIP）的广泛语义知识进行后期的少样本和零样本OOD检测。然而，这些方法通常在特征空间中进行OOD评估，这可能对对象检测器的定位误差和对象外观的变化敏感。此外，目前的最先进（SOTA）零样本方法在推理中执行计算成本高昂的扩散。在本研究中，我们提出的零样本对象OOD检测方法SAM3-O2D2，以高效的方式使用SAM3-图像基础模型。具体而言，我们仅用对象检测器预测的类别对SAM3进行提示，并比较对象检测器与SAM3的预测。如果SAM3在相应位置也检测到一个对象，则该对象为在分布内（ID）。如果SAM3未检测到提示的对象，则表明检测器的预测与图像内容不匹配，暗示该对象为OOD。实验结果表明，我们的方法显著超越了迄今为止的零样本SOTA方法。具体而言，我们在ID数据集Pascal-VOC和BDD100K以及OOD数据集MS-COCO和OpenImages上达到了新的SOTA AuROC和FPR95指标。",
+  "arxiv_id": "2609.08281",
+  "arxiv_url": "https://arxiv.org/abs/2609.08281v1",
+  "authors": [
+    "Lucas Görnhardt",
+    "Timo Bartels",
+    "Tim Fingscheidt"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-08281",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.413677+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.08281v1",
+  "published_at": "2026-09-08T05:51:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "bdd100k",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "medical",
+      "医疗"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.08281v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知",
+      "地图/定位"
+    ]
+  },
+  "title": "SAM3-O2D2: Zero-Shot Object Out-of-Distribution Detection by Object Class Prompting of the SAM3-Image Model",
+  "title_zh": "SAM3-O2D2：通过SAM3-图像模型的对象类别提示实现零样本对象分布外检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.08281"
+}

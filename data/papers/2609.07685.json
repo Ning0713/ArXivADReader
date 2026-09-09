@@ -1,0 +1,51 @@
+{
+  "abstract": "In real-world applications, pedestrian trajectory prediction models rely on inputs from detection and tracking systems. Prior trajectory prediction benchmarks either contain relatively sparse pedestrian interactions, assume perfect tracking inputs, or rely on overhead viewpoints that minimize occlusion and perspective distortion, limiting evaluation in realistic dense-crowd scenarios. We present CrowdTraj, a benchmark for pedestrian trajectory prediction in natural dense crowd scenes. Unlike previous datasets, CrowdTraj supports end-to-end evaluation from detection through tracking to trajectory prediction under severe occlusion in CCTV views. It also captures diverse, natural pedestrian behaviours, including abrupt directional changes rarely observed in existing benchmarks. CrowdTraj includes five diverse scenes, with an average of 1,146 unique pedestrians per scene, maximum frame-level densities ranging from 114 to 372 pedestrians, and over 3.2 million annotated head bounding boxes. CrowdTraj provides pixel and real-world coordinates via per-scene homography matrices for physically meaningful analysis. Our experimental results show that tracking accuracy (IDF1) drops to 0.68 to 0.70 in the densest scenes, compared with approximately 0.90 in less crowded scenes. Trajectory prediction training also becomes substantially more computationally expensive in dense scenes, with training times increasing by up to 8 times. These findings show that CrowdTraj exposes limitations in current trajectory prediction pipelines that remain hidden on existing sparse-crowd benchmarks, particularly in robustness to tracking noise and computational scalability.",
+  "abstract_zh": "在实际应用中，行人轨迹预测模型依赖于来自检测和跟踪系统的输入。之前的轨迹预测基准要么包含相对稀疏的行人交互，要么假设完美的跟踪输入，或者依赖于最小化遮挡和透视失真的俯视视角，从而限制了在现实密集人群场景中的评估。我们提出了CrowdTraj，这是一个针对自然密集人群场景中行人轨迹预测的基准。与之前的数据集不同，CrowdTraj支持从检测到跟踪再到轨迹预测的端到端评估，能够在闭路电视视角下的严重遮挡情况下进行。它还捕捉到多样化的自然行人行为，包括在现有基准中很少观察到的突然方向变化。CrowdTraj包含五个多样化的场景，每个场景平均有1,146个独特的行人，最大帧级密度范围从114到372个行人，并且有超过320万个标注的头部边界框。CrowdTraj通过每个场景的单应性矩阵提供像素和现实世界坐标，以便进行具有物理意义的分析。我们的实验结果表明，在最密集的场景中，跟踪准确率（IDF1）下降到0.68到0.70，而在较少拥挤的场景中约为0.90。轨迹预测训练在密集场景中也变得显著更具计算开销，训练时间增加了多达8倍。这些发现表明，CrowdTraj揭示了当前轨迹预测管道在现有稀疏人群基准中隐藏的局限性，特别是在对跟踪噪声的鲁棒性和计算可扩展性方面。",
+  "arxiv_id": "2609.07685",
+  "arxiv_url": "https://arxiv.org/abs/2609.07685v1",
+  "authors": [
+    "Antonius Bima Murti Wijaya",
+    "Paul Henderson",
+    "Marwa Mahmoud"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07685",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.377553+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07685v1",
+  "published_at": "2026-09-07T16:06:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07685v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "预测/规划"
+    ]
+  },
+  "title": "CrowdTraj: A Benchmark for Dense Crowd Trajectory Prediction in Realistic Crowded Environments",
+  "title_zh": "CrowdTraj：现实拥挤环境中密集人群轨迹预测的基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.07685"
+}

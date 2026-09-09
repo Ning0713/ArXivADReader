@@ -1,0 +1,54 @@
+{
+  "abstract": "Automation in underground mining has the potential to significantly enhance safety, operational efficiency, and sustainability. However, effectively coordinating fleets of autonomous vehicles in dynamic mine environments introduces substantial challenges in both optimization and motion planning. To address these challenges, we introduce and formalize the \\emph{Block Cave Mining (BCM)} problem, which focuses on computing a transport plan that maximizes ore throughput while satisfying draw ratio constraints. To solve this problem, we propose SAMM, an eventually optimal anytime solver that jointly integrates task assignment, scheduling, and path planning via a mixed-integer linear programming formulation. To improve scalability, we also introduce SAMMS, a variant of SAMM that trades optimality guarantees for efficiency by decomposing the problem into shorter planning subcycles. Experimental evaluations using realistic industrial mine scenarios demonstrate that SAMMS achieves near-optimal throughput and scales effectively to larger fleets and mine layouts.",
+  "abstract_zh": "地下采矿的自动化有潜力显著提高安全性、操作效率和可持续性。然而，在动态矿山环境中有效协调自主车辆队伍在优化和运动规划方面带来了重大挑战。为了解决这些挑战，我们引入并形式化了 extit{块崩矿（Block Cave Mining，BCM）}问题，该问题侧重于计算一种运输计划，以最大化矿石吞吐量，同时满足开采比约束。为了解决这个问题，我们提出了SAMM，这是一种最终最优的随时求解器，通过混合整数线性规划形式将任务分配、调度和路径规划进行联合整合。为了提高可扩展性，我们还引入了SAMMS，这是SAMM的一种变体，通过将问题分解为更短的规划子周期来以效率换取最优性保证。使用现实工业矿山场景的实验评估表明，SAMMS实现了接近最优的吞吐量，并能够有效扩展到更大的车队和矿山布局。",
+  "arxiv_id": "2609.07109",
+  "arxiv_url": "https://arxiv.org/abs/2609.07109v1",
+  "authors": [
+    "Christopher Leet",
+    "Paolo Forte",
+    "Uwe Köckemann",
+    "Henrik Andreasson",
+    "Sven Koenig"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07109",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.105395+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07109v1",
+  "published_at": "2026-09-07T06:49:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆",
+      "motion planning",
+      "path planning",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 50
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07109v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Eventually Optimal and Scalable Multi-Agent Planning for Block Cave Mining",
+  "title_zh": "最终最优且可扩展的块崩矿多智能体规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.07109"
+}

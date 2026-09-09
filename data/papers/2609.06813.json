@@ -1,0 +1,51 @@
+{
+  "abstract": "Urban traffic monitoring plays a critical role in safety analysis, congestion management, and incident response. The growing deployment of robotaxis creates a new opportunity for network-level traffic monitoring. Although robotaxis are primarily designed to serve passengers, they can also be leveraged as drive-by sensors to collect traffic data. Compared to conventional infrastructure sensors or probe vehicles, a fleet of robotaxis forms a cooperative perception environment, which can collectively gather spatially and temporally continuous traffic information. This paper proposes a novel dynamic robotaxi routing framework that explicitly incorporates traffic monitoring tasks as an objective. The framework introduces: (1) a cell-based network representation that aligns with sensing capabilities of robotaxis; (2) a cell-level monitoring metric to quantify spatiotemporal robotaxi coverage; and (3) a mixed-integer linear programming (MILP) formulation that jointly minimizes time-dependent travel time and maximizes traffic monitoring performance. A 5 by 5 urban grid network is built in SUMO to evaluate the framework under three robotaxi market penetration rates (2%, 5%, and 10%) with a range of objective weight combinations. Results show that incorporating spatiotemporal network coverage in the objective function can effectively improve the traffic monitoring performance. Interestingly, with appropriate weights between the two objectives, monitoring performance and robotaxi average speed can be improved simultaneously. This suggests better network monitoring leads to more accurate traffic state prediction and improved mobility. This win-win situation could incentivize robotaxi operators to contribute their vehicles as drive-by sensors for traffic monitoring.",
+  "abstract_zh": "城市交通监测在安全分析、拥堵管理和事故响应中发挥着关键作用。机器人出租车的日益普及为网络级交通监测创造了新的机会。尽管机器人出租车主要设计用于服务乘客，但它们也可以作为路过传感器来收集交通数据。与传统基础设施传感器或探测车辆相比，机器人出租车车队形成了一个合作感知环境，可以共同收集空间和时间上连续的交通信息。本文提出了一种新颖的动态机器人出租车路由框架，明确将交通监测任务作为目标。该框架引入了：(1) 与机器人出租车感知能力相一致的基于单元的网络表示；(2) 用于量化时空机器人出租车覆盖率的单元级监测指标；(3) 一种混合整数线性规划（MILP）模型，联合最小化时间依赖的旅行时间并最大化交通监测性能。在SUMO中构建了一个5x5的城市网格网络，以评估该框架在三种机器人出租车市场渗透率（2%、5%和10%）下的表现，结合多种目标权重组合。结果表明，将时空网络覆盖纳入目标函数可以有效提高交通监测性能。有趣的是，在两个目标之间适当权重的情况下，监测性能和机器人出租车的平均速度可以同时提高。这表明更好的网络监测能够导致更准确的交通状态预测和改善的流动性。这种双赢局面可能会激励机器人出租车运营商将其车辆作为路过传感器贡献于交通监测。",
+  "arxiv_id": "2609.06813",
+  "arxiv_url": "https://arxiv.org/abs/2609.06813v1",
+  "authors": [
+    "Yilin Wang",
+    "Yiheng Feng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-06813",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.093531+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.06813v1",
+  "published_at": "2026-09-06T20:12:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "车辆",
+      "交通",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.06813v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "预测/规划"
+    ]
+  },
+  "title": "RoboSense: Leveraging Robotaxi Fleets as Drive-by Sensors for Urban Traffic Monitoring",
+  "title_zh": "RoboSense：利用机器人出租车车队作为城市交通监测的路过传感器",
+  "translation_url": "https://hjfy.top/arxiv/2609.06813"
+}

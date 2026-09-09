@@ -1,0 +1,59 @@
+{
+  "abstract": "We present our solution to the LUMPI track of the UCF UrbanTwin Sim2Real LiDAR Challenge at the 6th DriveX Workshop, ECCV 2026. The detector must be trained only on synthetic data and is evaluated on 50 held-out real LiDAR frames; a separate 50-frame synthetic submission is evaluated for point-cloud realism. Our method addresses the Sim2Real gap at three levels. First, we align synthetic scans to the 50k-point test density and build a 30k-record training pool using UT-LUMPI geometry, RangeLDM-based sampling diversification, rare-class copy-paste, and pedestrian-oriented augmentation. Second, complementary DSVT detectors and Car/Bus PointPillars specialists are trained under the same synthetic-only constraint. Third, predictions are integrated by class-aware routing, asymmetric agreement fusion, constrained residual-recall supplementation, class-coverage auditing, and selective box-size calibration. The realism branch is optimized independently with radial-density matching, weak affine calibration, and calibrated set mixing. The final submission obtains a Combined Score of 0.4692, a Detection Score of 0.1797, a Realism Score of 0.9035, and 3D [email protected] of 0.1258.",
+  "abstract_zh": "我们提出了在第六届 DriveX 研讨会（ECCV 2026）上进行的 UCF UrbanTwin Sim2Real LiDAR 挑战 LUMPI 赛道的解决方案。该检测器仅需在合成数据上进行训练，并在 50 帧保留的真实 LiDAR 帧上进行评估；另有 50 帧合成提交用于评估点云的真实感。我们的方法在三个层面上解决了 Sim2Real 差距。首先，我们将合成扫描与 50k 点测试密度对齐，并使用 UT-LUMPI 几何、基于 RangeLDM 的采样多样化、稀有类别的复制粘贴以及面向行人的增强构建了一个 30k 记录的训练池。其次，互补的 DSVT 检测器和 Car/Bus PointPillars 专家在相同的合成数据约束下进行训练。第三，通过类别感知路由、不对称一致性融合、受限的残差召回补充、类别覆盖审计和选择性框大小校准来整合预测。真实感分支通过径向密度匹配、弱仿射校准和校准集混合独立优化。最终提交获得了 0.4692 的综合得分、0.1797 的检测得分、0.9035 的真实感得分，以及 0.1258 的 3D [email protected] 。",
+  "arxiv_id": "2609.07590",
+  "arxiv_url": "https://arxiv.org/abs/2609.07590v1",
+  "authors": [
+    "Pu Luo",
+    "Cong Xu",
+    "Yumei Li",
+    "Kexin Zhang",
+    "Licheng Jiao",
+    "Wenping Ma",
+    "Lingling Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07590",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.372876+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07590v1",
+  "published_at": "2026-09-07T15:03:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "car",
+      "pedestrian",
+      "行人",
+      "3d object detection",
+      "lidar",
+      "sim-to-real",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 31
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07590v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "Solution for UCF UrbanTwin LUMPI Track: Sim-to-Real Urban LiDAR 3D Object Detection",
+  "title_zh": "UCF UrbanTwin LUMPI 赛道解决方案：从仿真到现实的城市 LiDAR 3D 目标检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.07590"
+}

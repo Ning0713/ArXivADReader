@@ -1,0 +1,57 @@
+{
+  "abstract": "Many pedestrian trajectory prediction algorithms have been proposed to improve the safety of navigation for mobile robots working in human-robot coexistence environments. Some pedestrian trajectory prediction algorithms extract information about obstacles near pedestrians from top-down view images to improve the accuracy of trajectory prediction. However, mobile robots typically create local occupancy maps using LiDAR, rather than top-down view images. Meanwhile, the vision sensors on board robots provide egocentric view images, which contain fine-grained behavioral information about the pedestrians near the robot. To better use the information collected by LiDAR and on-board vision sensors, we propose MamMA, a Mamba-based pedestrian trajectory prediction algorithm considering occupancy maps and pedestrian awareness states. MamMA divides the occupancy map by patches and extracts obstacle features from each patch to create map features. Pedestrian awareness states are divided and considered, as some studies show that awareness states affect the perception and speed of pedestrians. Furthermore, a Mamba-based model is proposed to predict the future trajectories of pedestrians based on different types of features. Experiments on the STCrowd, SiT, JRDB, ETH, and UCY datasets show that MamMA achieves better average displacement error and final displacement error than the state-of-the-art algorithms.",
+  "abstract_zh": "为了提高在人与机器人共存环境中移动机器人导航的安全性，提出了许多行人轨迹预测算法。一些行人轨迹预测算法通过自上而下的视图图像提取行人附近障碍物的信息，以提高轨迹预测的准确性。然而，移动机器人通常使用激光雷达（LiDAR）创建局部占用地图，而不是自上而下的视图图像。同时，机器人上的视觉传感器提供自我中心的视图图像，其中包含有关靠近机器人的行人的细粒度行为信息。为了更好地利用激光雷达和车载视觉传感器收集的信息，我们提出了MamMA，一种基于Mamba的行人轨迹预测算法，考虑占用地图和行人意识状态。MamMA将占用地图划分为多个小块，并从每个小块中提取障碍物特征以创建地图特征。行人意识状态被划分并考虑，因为一些研究表明，意识状态会影响行人的感知和速度。此外，提出了一种基于Mamba的模型，根据不同类型的特征预测行人的未来轨迹。在STCrowd、SiT、JRDB、ETH和UCY数据集上的实验表明，MamMA在平均位移误差和最终位移误差方面优于最先进的算法。",
+  "arxiv_id": "2609.08041",
+  "arxiv_url": "https://arxiv.org/abs/2609.08041v1",
+  "authors": [
+    "Juncen Long",
+    "Xiaofeng Jin",
+    "Gianluca Bardaro",
+    "Simone Mentasti",
+    "Matteo Matteucci"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-08041",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.394927+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.08041v1",
+  "published_at": "2026-09-07T22:56:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "occupancy",
+      "lidar",
+      "trajectory prediction",
+      "轨迹预测",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 26
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.08041v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "MamMA: A Mamba-Based Pedestrian Trajectory Prediction Algorithm Considering Occupancy Map and Pedestrian Awareness States",
+  "title_zh": "MamMA：一种基于Mamba的行人轨迹预测算法，考虑占用地图和行人意识状态",
+  "translation_url": "https://hjfy.top/arxiv/2609.08041"
+}

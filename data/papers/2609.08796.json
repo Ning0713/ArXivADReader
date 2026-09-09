@@ -1,0 +1,48 @@
+{
+  "abstract": "Multi-agent traffic simulation seeks diverse, coordinated, and physically realistic futures from maps and observed history. Long-horizon closed-loop generation must reconcile multiple decision time scales while its context evolves with generated states. Existing methods often unfold long futures from the initial scene and resolve intent, interaction, and motion monolithically, weakening cross-scale consistency and adaptation. We present HI-FLOOP, a branch-consistent multi-timescale state-feedback framework. Eight scene-level Worlds represent joint hypotheses, and all agents share the selected World identity throughout an 8-second rollout. Within the branch, an 8-second Goal anchors intent, a 2-second Preview coordinates interactions, and 1-second Control produces physical motion. Every 0.5-second commit feeds back only its executed prefix as new facts, while unexecuted hypotheses never enter factual memory. Joint Preview Interaction (JPI) induces a sparse directed future graph from Preview and uses conflict probabilities and signed arrival-time differences to gate interaction refinement. For generated-state recovery, a prefix-frozen A-to-B cascade lets frozen Model A generate 0-1 seconds, then transfers typed physical state, admissible context, and the branch index, but no latent state, to an independent Model B for re-encoding and 1-2-second recovery. On the full H-D public-validation split of 955 scenarios, one complete S1 run yields an Overall score of 0.689987 with the official evaluator. Under agent-centric oracle evaluation, HI-FLOOP achieves oracle-minADE@8 of 1.196636 m over the 8-second horizon and 0.526 m over the 6-second horizon.",
+  "abstract_zh": "多智能体交通模拟旨在从地图和观察历史中寻求多样化、协调且物理上真实的未来。长时间跨度的闭环生成必须在上下文随着生成状态演变的同时调和多个决策时间尺度。现有方法通常从初始场景展开长时间的未来，并单一地解决意图、互动和运动，削弱了跨尺度的一致性和适应性。我们提出了HI-FLOOP，一个分支一致的多时间尺度状态反馈框架。八个场景级世界代表联合假设，所有智能体在8秒的展开过程中共享所选世界的身份。在分支内，8秒的目标锚定意图，2秒的预览协调互动，1秒的控制产生物理运动。每0.5秒的承诺仅将其执行的前缀作为新事实反馈，而未执行的假设则不会进入事实记忆。联合预览互动（Joint Preview Interaction, JPI）从预览中引导出稀疏的定向未来图，并使用冲突概率和带符号的到达时间差来控制互动的细化。为了生成状态的恢复，前缀冻结的A到B级联允许冻结的模型A生成0-1秒，然后将类型化的物理状态、可接受的上下文和分支索引传递给独立的模型B进行重新编码和1-2秒的恢复，而不传递潜在状态。在955个场景的完整H-D公共验证分割中，一次完整的S1运行在官方评估器下获得了0.689987的整体得分。在以智能体为中心的oracle评估下，HI-FLOOP在8秒的时间范围内达到了1.196636米的oracle-minADE@8，在6秒的时间范围内达到了0.526米。",
+  "arxiv_id": "2609.08796",
+  "arxiv_url": "https://arxiv.org/abs/2609.08796v1",
+  "authors": [
+    "Rx Fan",
+    "Zhan H"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-08796",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.449348+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.08796v1",
+  "published_at": "2026-09-08T14:25:11Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.08796v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文提出HI-FLOOP分层状态反馈框架，用于多智能体交通场景的多时间尺度闭环世界建模与生成。方法通过共享场景分支、分层目标—预览—控制循环、执行前缀反馈以及交互关系建模，实现长时域内意图、交互和运动的一致生成，并支持生成状态恢复。该方法面向交通仿真和自动驾驶场景预测，可用于评估规划与闭环驾驶系统。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "世界模型/生成",
+      "预测/规划"
+    ]
+  },
+  "title": "Hi-FLoop: Hierarchical State-Feedback Loops for Multi-Timescale World Modeling",
+  "title_zh": "Hi-FLoop：用于多时间尺度世界建模的分层状态反馈循环",
+  "translation_url": "https://hjfy.top/arxiv/2609.08796"
+}

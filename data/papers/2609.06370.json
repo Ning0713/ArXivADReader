@@ -1,0 +1,53 @@
+{
+  "abstract": "Predicting 3D occupancy from multi-view images requires preserving geometric detail during 2D-to-3D lifting while reasoning over sparse, volumetric scene representations. We present DualPathOcc, a camera-based framework that combines a Spatial Enhancer for high-resolution feature aggregation before BEV compression, a SENet-augmented dual-path BEV encoder for local-global context modeling, and height-aware weighted cross-entropy for near-ground occupancy. The final model is optimized with occupancy supervision and no explicit depth loss. On single-frame Occ3D-nuScenes, DualPathOcc achieves 37.37 mIoU. We further analyze how surface-centered depth targets interact with volumetric occupancy learning.",
+  "abstract_zh": "从多视角图像预测3D占用需要在2D到3D的提升过程中保留几何细节，同时对稀疏的体积场景表示进行推理。我们提出了DualPathOcc，这是一种基于摄像头的框架，结合了空间增强器用于在BEV压缩之前进行高分辨率特征聚合、增强SENet的双路径BEV编码器用于局部-全局上下文建模，以及针对近地面占用的高度感知加权交叉熵。最终模型通过占用监督进行优化，并且没有显式的深度损失。在单帧Occ3D-nuScenes数据集上，DualPathOcc达到了37.37 mIoU。我们进一步分析了以表面为中心的深度目标如何与体积占用学习相互作用。",
+  "arxiv_id": "2609.06370",
+  "arxiv_url": "https://arxiv.org/abs/2609.06370v1",
+  "authors": [
+    "Lihao Qiu",
+    "Jian Chen",
+    "Ruihao Wang",
+    "Ramu Gautam",
+    "Mei Yang",
+    "Yingtao Jiang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-06370",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.271647+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.06370v1",
+  "published_at": "2026-09-06T04:02:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "bev",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.06370v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "深度/几何",
+      "感知"
+    ]
+  },
+  "title": "DualPathOcc: Dual-Resolution BEV Encoder for 3D Occupancy Prediction",
+  "title_zh": "DualPathOcc：用于3D占用预测的双分辨率BEV编码器",
+  "translation_url": "https://hjfy.top/arxiv/2609.06370"
+}

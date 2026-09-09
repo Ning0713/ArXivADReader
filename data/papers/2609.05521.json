@@ -1,0 +1,70 @@
+{
+  "abstract": "The limitations of on-board sensors and blind spots caused by occlusion cause the reduction of perception quality in autonomous vehicles. In such cases, cooperative perception provides additional data via Vehicle-to-Everything communication to enhance local perception, causing a large volume of data transmission. The vehicle can focus on acquiring and utilizing relevant data according to the prevailing road context by identifying the current traffic situation. To achieve this, we propose a concept for the situation identification of the vehicle using Bird's-Eye-View images. Firstly, the situation around the vehicle is identified using object detection with semantic segmentation, followed by understanding the context of the traffic using a situation identification module consisting of an open-source projective transformation network Cam2BEV and a situation identification neural network. The concept was evaluated and validated by running the software on the CARLA simulator using the in-built RGB camera and the semantic segmentation camera. Additionally, the portability of the situation identification module for real-world applications was verified on Cityscapes and nuScenes urban driving datasets. Overall, the proposed situation identification approach enables efficient sensor data management by prioritizing relevant data to the current traffic situation. The source code is available in the following link: https://github.com/akshaynarla/DySi_Select",
+  "abstract_zh": "车载传感器的局限性和遮挡造成的盲区导致自动驾驶车辆的感知质量下降。在这种情况下，协同感知通过车与一切（Vehicle-to-Everything）通信提供额外数据，以增强本地感知，从而导致大量数据传输。通过识别当前交通状况，车辆可以专注于获取和利用与当前道路环境相关的数据。为此，我们提出了一种基于鸟瞰图（Bird's-Eye-View）图像的车辆情境识别概念。首先，利用语义分割的目标检测技术识别车辆周围的情境，然后通过一个由开源投影变换网络Cam2BEV和情境识别神经网络组成的情境识别模块理解交通背景。该概念通过在CARLA模拟器上运行软件，使用内置的RGB相机和语义分割相机进行了评估和验证。此外，情境识别模块在Cityscapes和nuScenes城市驾驶数据集上的可移植性也得到了验证。总体而言，所提出的情境识别方法通过优先处理与当前交通状况相关的数据，实现了高效的传感器数据管理。源代码可在以下链接获取：https://github.com/akshaynarla/DySi_Select",
+  "arxiv_id": "2609.05521",
+  "arxiv_url": "https://arxiv.org/abs/2609.05521v1",
+  "authors": [
+    "Falk Dettinger",
+    "Akshay Narla",
+    "Michael Weyrich"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-05521",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.NI",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.061113+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.05521v1",
+  "published_at": "2026-09-01T07:02:45Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "vehicle-to-everything",
+      "自动驾驶",
+      "nuscenes",
+      "carla",
+      "cityscapes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "bird's-eye",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.05521v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "协同/V2X",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Situation Awareness for Intelligent Data Distribution in Connected Vehicles",
+  "title_zh": "连接车辆智能数据分发的情境感知",
+  "translation_url": "https://hjfy.top/arxiv/2609.05521"
+}

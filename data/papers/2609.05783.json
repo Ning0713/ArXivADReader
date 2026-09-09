@@ -1,0 +1,67 @@
+{
+  "abstract": "In autonomous driving, Bird's-Eye View (BEV) representations provide a structured, top-down abstraction of the vehicle's surroundings and have become a key input modality for Behavioral Cloning (BC) policies. While ground-truth BEV maps are readily available in simulation, real-world deployment requires replacing them with camera-predicted counterparts - a substitution that introduces perceptual errors whose downstream impact on closed-loop driving performance is not well understood. In this work, we investigate the use of Cross-View Transformer (CVT)-predicted BEV maps as direct policy inputs for a BC agent in the CARLA simulator. We propose a six-channel BEV representation covering road surface, planned route, lane boundaries, vehicles, pedestrians, and traffic lights, and introduce a Kernel Density Estimation (KDE) weighting scheme that rebalances the segmentation loss towards underrepresented driving maneuvers such as curves and intersections. Closed-loop evaluation across two CARLA towns shows that the KDE-weighted model is the only predicted-BEV agent to complete a full episode without infractions, despite not achieving the highest aggregate IoU. This discrepancy reveals that global segmentation metrics are poor proxies for driving performance: what determines navigation success is prediction quality at geometrically critical locations, and the route channel emerges as the primary bottleneck for reliable agent navigation under predicted BEV inputs.",
+  "abstract_zh": "在自动驾驶中，鸟瞰视图（Bird's-Eye View, BEV）表示提供了车辆周围环境的结构化、自上而下的抽象，已成为行为克隆（Behavioral Cloning, BC）策略的关键输入方式。虽然在仿真中可以轻松获得真实的BEV地图，但在现实世界的部署中需要用摄像头预测的对应物替代它们，这一替代引入了感知误差，而这些误差对闭环驾驶性能的下游影响尚不清楚。在本研究中，我们探讨了在CARLA仿真器中将交叉视图变换器（Cross-View Transformer, CVT）预测的BEV地图作为BC代理的直接策略输入。我们提出了一种六通道BEV表示，涵盖了路面、规划路线、车道边界、车辆、行人和交通信号灯，并引入了一种核密度估计（Kernel Density Estimation, KDE）加权方案，该方案重新平衡了对曲线和交叉口等代表性不足的驾驶动作的分割损失。对两个CARLA城镇的闭环评估显示，KDE加权模型是唯一一个在没有违规的情况下完成完整剧集的预测BEV代理，尽管其总体IoU并不是最高的。这一差异揭示了全球分割指标对驾驶性能的代理效果较差：决定导航成功的因素是几何关键位置的预测质量，而路线通道则成为在预测BEV输入下可靠代理导航的主要瓶颈。",
+  "arxiv_id": "2609.05783",
+  "arxiv_url": "https://arxiv.org/abs/2609.05783v1",
+  "authors": [
+    "Felipe Carlos dos Santos",
+    "Eric Antonelo",
+    "Gustavo Claudio Karl Couto"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-05783",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.065851+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.05783v1",
+  "published_at": "2026-09-05T00:35:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通",
+      "车道",
+      "行人",
+      "bev",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.05783v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "仿真/数据"
+    ]
+  },
+  "title": "Closed-Loop Evaluation of Bird's-Eye-View Maps from Cross-View Transformers as Inputs to Behavior-Cloning Policies",
+  "title_zh": "基于交叉视图变换器的鸟瞰图闭环评估作为行为克隆策略的输入",
+  "translation_url": "https://hjfy.top/arxiv/2609.05783"
+}

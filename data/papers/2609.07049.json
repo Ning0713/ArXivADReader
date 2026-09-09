@@ -1,0 +1,62 @@
+{
+  "abstract": "Behavior policies are often formulated as continuous generative models, whose iterative denoising processes are expressive but difficult to interpret and prone to producing implausible actions. We propose the Large Discrete Policy (LDiP), a fully discrete behavior modeling framework that selects actions from a large vocabulary of physically plausible candidates. Rather than perturbing actions, LDiP improves expressivity through stochastic iterative scoring: it progressively re-scores and prunes candidates with score-space stochasticity, enabling fine-grained ranking and exploration among plausible actions while preserving an explicit decision process. Across end-to-end planning, closed-loop driving, robotic manipulation, and vision-language-action settings, LDiP consistently outperforms strong discrete and continuous baselines in autonomous driving, and exceeds or matches continuous generative policies in robotic manipulation. These results show that discrete policies, when equipped with effective scoring mechanisms, offer an expressive, plausible, and interpretable alternative for behavior modeling. Project website: https://zhenxinli.net/LargeDiscretePolicy/.",
+  "abstract_zh": "行为策略通常被表述为连续生成模型，其迭代去噪过程具有表达能力，但难以解释且容易产生不合理的动作。我们提出了大离散策略（Large Discrete Policy, LDiP），这是一种完全离散的行为建模框架，从大量物理上合理的候选动作中选择动作。LDiP并不是通过扰动动作来提高表达能力，而是通过随机迭代评分来实现：它逐步重新评分并修剪候选项，利用评分空间的随机性，使得在合理动作之间能够进行细致的排名和探索，同时保留显式的决策过程。在端到端规划、闭环驾驶、机器人操作和视觉-语言-动作设置中，LDiP在自主驾驶方面始终优于强大的离散和连续基线，并在机器人操作中超过或匹配连续生成策略。这些结果表明，当配备有效的评分机制时，离散策略提供了一种表达丰富、合理且可解释的行为建模替代方案。项目网站：https://zhenxinli.net/LargeDiscretePolicy/",
+  "arxiv_id": "2609.07049",
+  "arxiv_url": "https://arxiv.org/abs/2609.07049v1",
+  "authors": [
+    "Zhenxin Li",
+    "Nadine Chang",
+    "Xinglong Sun",
+    "Jingde Chen",
+    "Wenhao Yao",
+    "Zi Wang",
+    "Maying Shen",
+    "Yu-Gang Jiang",
+    "Zuxuan Wu",
+    "Shiyi Lan",
+    "Jose M. Alvarez"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07049",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.102726+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07049v1",
+  "published_at": "2026-09-07T05:12:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07049v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Large Discrete Policy: Advancing Explicit Behavior Modeling with Stochastic Iterative Scoring",
+  "title_zh": "大离散策略：通过随机迭代评分推进显式行为建模",
+  "translation_url": "https://hjfy.top/arxiv/2609.07049"
+}

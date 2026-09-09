@@ -1,0 +1,48 @@
+{
+  "abstract": "Target-based LiDAR-camera extrinsic calibration is a prerequisite for multi-sensor fusion in robotics. However, in the widely adopted four-hole pipeline, calibration accuracy is bottlenecked by LiDAR-side hole-center extraction, which suffers from sparse angular coverage and mixed-pixel corruption. This paper presents P$^2$Calib, which exploits pattern priors, geometric constraints specified by the CAD model of the target board, to improve calibration accuracy. First, we incorporate the known hole radius as a fitting constraint to prevent center estimates from degrading under sparse angular coverage. Building on the improved hole estimates, we further enforce the rigid rectangular layout of the four holes as a global consistency constraint to correct residual errors across holes. Both priors are integrated into an interactive calibration tool that provides a complete extrinsic calibration pipeline. Experiments on simulated and real datasets show that P$^2$Calib lowers the joint registration residual by 90\\% and 82\\% and the held-out reprojection error by 96\\% and 77\\% over the baseline. Code, https://github.com/JokerJohn/P2Calib.git, and data will be released to facilitate future research.",
+  "abstract_zh": "基于目标的激光雷达-相机外部标定是机器人多传感器融合的前提。然而，在广泛采用的四孔标定流程中，标定精度受到激光雷达侧孔中心提取的瓶颈限制，这一过程受到稀疏角度覆盖和混合像素干扰的影响。本文提出了P$^2$Calib，该方法利用模式先验，即由目标板的CAD模型指定的几何约束，以提高标定精度。首先，我们将已知的孔半径作为拟合约束，以防止在稀疏角度覆盖下中心估计的退化。在改进的孔估计基础上，我们进一步强制四个孔的刚性矩形布局作为全局一致性约束，以纠正孔之间的残余误差。这两种先验被整合到一个交互式标定工具中，提供完整的外部标定流程。在模拟和真实数据集上的实验表明，P$^2$Calib将联合配准残差降低了90%和82%，并将保留重投影误差降低了96%和77%，相较于基线方法。代码（https://github.com/JokerJohn/P2Calib.git）和数据将被发布，以促进未来的研究。",
+  "arxiv_id": "2609.07516",
+  "arxiv_url": "https://arxiv.org/abs/2609.07516v1",
+  "authors": [
+    "Xiangcheng Hu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07516",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.125567+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07516v1",
+  "published_at": "2026-09-07T14:01:24Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "sensor fusion",
+      "multi-sensor",
+      "lidar",
+      "多传感器融合"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07516v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文提出一种利用目标板几何模式先验的激光雷达-相机外部标定方法。通过在孔中心拟合中引入已知孔半径，并利用四孔矩形布局施加全局一致性约束，方法缓解了激光雷达点云稀疏角度覆盖和混合像素导致的定位误差，从而提升多传感器标定精度。该方法适用于自动驾驶中的激光雷达与相机传感器标定及融合系统。",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "P$^2$Calib: Utilizing Pattern Priors for LiDAR-Camera Extrinsic Calibration",
+  "title_zh": "P$^2$Calib：利用模式先验进行激光雷达-相机外部标定",
+  "translation_url": "https://hjfy.top/arxiv/2609.07516"
+}

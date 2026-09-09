@@ -1,0 +1,57 @@
+{
+  "abstract": "Autonomous driving relies on High Definition (HD) maps for safe navigation. Traditional HD maps construction is costly in hardware, data and human resources, which together with its update limitations hinders scalability. Recent works have proposed online alternatives for HD vectorized mapping from onboard sensors. However, sensor field of view is limited, and the range of the reconstructed maps ahead of the vehicle is insufficient for safe planning. This paper aims to address this limitation by proposing the novel beyond-view vectorized map generation problem: given vectorized maps of the area sensed by the vehicle (in-view), to generate plausible map continuations. To experimentally assess its feasibility, we propose BeyondFormer, which, to the best of out knowledge, is the first work designed towards beyond-view map generation. Given the novelty of the problem, we generate the first dataset specifically designed for it and evaluate the proposed approach. The results demonstrate consistent performance across diverse scenarios, establishing learning-based methods as a promising direction for map forecasting in autonomous driving. Beyond demonstrating the feasibility of the task, we provide an extensive discussion of the method's limitations and identify key future research directions for scaling it to more complex driving conditions. Code is available at https://git-autopia.car.upm-csic.es/beyondformer.",
+  "abstract_zh": "自主驾驶依赖于高清（HD）地图以实现安全导航。传统的高清地图构建在硬件、数据和人力资源上成本高昂，加之其更新限制，阻碍了可扩展性。近期的研究提出了基于车载传感器的在线高清矢量化地图替代方案。然而，传感器的视场有限，重建的地图在车辆前方的范围不足以支持安全规划。本文旨在通过提出新颖的超越视野矢量化地图生成问题来解决这一限制：给定车辆感知区域的矢量化地图（视野内），生成合理的地图延续。为了实验性地评估其可行性，我们提出了BeyondFormer，尽我们所知，这是首个针对超越视野地图生成设计的工作。鉴于该问题的新颖性，我们生成了首个专门为此设计的数据集，并评估了所提方法。结果表明，在多种场景下表现出一致的性能，确立了基于学习的方法作为自主驾驶地图预测的有前景方向。除了展示任务的可行性外，我们还对该方法的局限性进行了广泛讨论，并确定了将其扩展到更复杂驾驶条件的关键未来研究方向。代码可在 https://git-autopia.car.upm-csic.es/beyondformer 获取。",
+  "arxiv_id": "2609.07511",
+  "arxiv_url": "https://arxiv.org/abs/2609.07511v1",
+  "authors": [
+    "Clara Gomez",
+    "Alberto Jaenal",
+    "Antonio Artuñedo",
+    "Jorge Godoy",
+    "Jorge Villagra"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07511",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.124674+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07511v1",
+  "published_at": "2026-09-07T13:58:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "car",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 58
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07511v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "Generation of Vectorized Maps Beyond Vehicle View",
+  "title_zh": "超越车辆视野的矢量化地图生成",
+  "translation_url": "https://hjfy.top/arxiv/2609.07511"
+}

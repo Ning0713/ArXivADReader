@@ -1,0 +1,54 @@
+{
+  "abstract": "Autonomous mobile robots performing person-following tasks often suffer from temporary occlusions and sensor track loss in dynamic environments. This research presents an end-to-end autonomous navigation stack that addresses target occlusion through map-informed spatial reasoning. The proposed system features a multi-modal perception pipeline, fusing deep learning-based visual tracking with 2-dimensional LiDAR point clustering to maintain high-fidelity tracking of a tagged person. A continuous state estimator integrates this perception data with wheel odometry and IMU sensors for stable localization. When the active track is lost due to occlusion, the system activates a map-based recovery framework. Leveraging a predefined topological map, the system executes a graph-based search to propagate the target's last known trajectory along structurally defined walking lanes, adhering to left-hand regional conventions. By generating a discrete set of feasible future trajectories, the robot reasons about potential structural trajectory changes, such as continuing a heading or turning at an intersection. This map-informed prediction is fed directly to the local obstacle avoidance planner, enabling the robot to continue following its target safely and predictably until the person is visually reacquired. Real-world evaluations in dense multi-person environments demonstrate the system's robustness, achieving a 71.4\\% target reacquisition success rate during major occlusion events lasting up to 7 seconds.",
+  "abstract_zh": "在动态环境中执行跟随任务的自主移动机器人常常面临暂时遮挡和传感器跟踪丢失的问题。本研究提出了一种端到端的自主导航系统，通过基于地图的信息进行空间推理来解决目标遮挡问题。所提系统具有多模态感知管道，将基于深度学习的视觉跟踪与二维激光雷达（LiDAR）点云聚类相结合，以保持对标记人物的高保真跟踪。一个连续状态估计器将该感知数据与轮子里程计和惯性测量单元（IMU）传感器整合，以实现稳定的定位。当由于遮挡而丢失活动跟踪时，系统会激活基于地图的恢复框架。利用预定义的拓扑地图，系统执行基于图的搜索，以沿着结构定义的步行通道传播目标的最后已知轨迹，遵循左侧行驶的区域惯例。通过生成一组离散的可行未来轨迹，机器人能够推理潜在的结构轨迹变化，例如继续前进或在交叉口转弯。这种基于地图的预测直接输入到本地障碍物避免规划器，使机器人能够安全且可预测地继续跟随目标，直到重新获得对该人物的视觉识别。在密集多人的真实环境中的评估表明，该系统的鲁棒性，在持续长达7秒的主要遮挡事件中，实现了71.4%的目标重新获取成功率。",
+  "arxiv_id": "2609.07091",
+  "arxiv_url": "https://arxiv.org/abs/2609.07091v1",
+  "authors": [
+    "Sagar Gupta",
+    "Don Gideon",
+    "Seng W. Loke",
+    "Kevin Lee",
+    "Bijo Sebastian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07091",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.103630+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07091v1",
+  "published_at": "2026-09-07T06:31:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "intersection",
+      "lidar",
+      "点云",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07091v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Human-Aware Target Tracking and Navigation: Fusing Kinematic State Estimation with Structural Map Constraints",
+  "title_zh": "人类感知目标跟踪与导航：将运动状态估计与结构地图约束融合",
+  "translation_url": "https://hjfy.top/arxiv/2609.07091"
+}

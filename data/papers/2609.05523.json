@@ -1,0 +1,56 @@
+{
+  "abstract": "This paper presents a one-stage learning framework that maps monocular roadside-camera images directly to vehicle states in a ground-fixed coordinate frame. Unlike conventional approaches that first detect vehicles in the image plane and subsequently apply geometric post-processing, the proposed method leverages features from a pretrained object detector to jointly estimate each vehicle's ground-plane position, dimensions, and yaw angle. The framework therefore uses visual features not only for vehicle detection but also for direct spatial and orientation estimation. To support model training and evaluation, we develop a data-collection and label-generation pipeline based on synchronized video from a roadside camera and an unmanned aerial vehicle (UAV). Acting as a temporary top-view sensing platform, the UAV provides vehicle trajectories, dimensions, and orientations, which are transformed into the ground-fixed coordinate frame and temporally aligned with the roadside-camera images to generate ground-truth labels. The framework is evaluated using data collected during multiple experiments at the Mcity Test Facility. Results show that the proposed method can recover vehicle trajectories and orientations from monocular roadside imagery without a separate geometric post-processing stage, demonstrating its potential as a scalable approach to infrastructure-based perception at urban intersections.",
+  "abstract_zh": "本文提出了一种单阶段学习框架，直接将单目路边摄像头图像映射到地面固定坐标系中的车辆状态。与传统方法首先在图像平面中检测车辆并随后应用几何后处理不同，所提出的方法利用预训练物体检测器的特征，联合估计每辆车的地面位置、尺寸和偏航角。因此，该框架不仅利用视觉特征进行车辆检测，还用于直接的空间和方向估计。为了支持模型训练和评估，我们开发了一种基于路边摄像头和无人机（UAV）同步视频的数据收集和标签生成管道。作为一个临时的顶视感知平台，无人机提供车辆轨迹、尺寸和方向，这些信息被转换到地面固定坐标系中，并与路边摄像头图像进行时间对齐，以生成真实标签。该框架在Mcity测试设施的多次实验中进行了评估。结果表明，所提出的方法能够从单目路边图像中恢复车辆轨迹和方向，而无需单独的几何后处理阶段，展示了其作为城市交叉口基础设施感知的可扩展方法的潜力。",
+  "arxiv_id": "2609.05523",
+  "arxiv_url": "https://arxiv.org/abs/2609.05523v1",
+  "authors": [
+    "Akos T. Kopeczi-Bocz",
+    "Tian Mi",
+    "Gabor Orosz",
+    "Denes Takacs"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-05523",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.183463+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.05523v1",
+  "published_at": "2026-09-01T09:21:14Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "roadside",
+      "车辆",
+      "uav",
+      "aerial vehicle",
+      "无人机"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.05523v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文面向自动驾驶基础设施感知，提出一种基于单目路侧摄像头的单阶段三维车辆定位框架。模型利用检测器特征直接预测车辆在地面固定坐标系中的位置、尺寸和偏航角，避免额外的几何后处理；同时利用同步无人机视频生成车辆轨迹与姿态标注，并在Mcity测试场进行了实验验证。",
+  "tags": {
+    "primary": "3D 检测",
+    "secondary": [
+      "感知",
+      "地图/定位"
+    ]
+  },
+  "title": "Infrastructure-based Monocular 3D Vehicle Localization Framework with Experimental Validation",
+  "title_zh": "基于基础设施的单目三维车辆定位框架及其实验验证",
+  "translation_url": "https://hjfy.top/arxiv/2609.05523"
+}

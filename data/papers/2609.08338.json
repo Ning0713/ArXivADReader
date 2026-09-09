@@ -1,0 +1,67 @@
+{
+  "abstract": "Object detection and tracking are fundamental components of perception systems for autonomous driving. Achieving robust performance under adverse conditions such as limited visibility, sensor noise, and failures remains an open challenge, particularly in autonomous racing, where vehicles operate at very high speeds, experience strong vibrations, and interact under small safety margins. This paper presents a multi-modal late-fusion perception pipeline for object detection and tracking in the autonomous racing domain. The proposed system extends previous work by exploiting all onboard sensors through a late-fusion approach and a dedicated multi-object tracking framework. Independent detections from cameras, LiDARs, and RADARs are combined to provide timely and robust state estimates of surrounding vehicles. The tracking method explicitly compensates for detection delays and embeds in its model prior knowledge of vehicle dynamics and track layout. Experimental evaluation on real-world data across diverse critical scenarios, representative of challenging edge cases also in urban driving, confirms the effectiveness of the proposed pipeline and its suitability to support safe and adaptive planning decisions.",
+  "abstract_zh": "物体检测与跟踪是自主驾驶感知系统的基本组成部分。在有限能见度、传感器噪声和故障等不利条件下实现稳健性能仍然是一个开放的挑战，特别是在自主赛车中，车辆以极高的速度运行，经历强烈的振动，并在小安全边际下进行交互。本文提出了一种用于自主赛车领域的多模态后融合感知管道，以实现物体检测与跟踪。所提出的系统通过后融合方法和专门的多目标跟踪框架，利用所有车载传感器，扩展了之前的工作。来自摄像头、激光雷达（LiDAR）和雷达（RADAR）的独立检测结果被结合，以提供周围车辆的及时且稳健的状态估计。跟踪方法明确补偿检测延迟，并在其模型中嵌入了车辆动力学和赛道布局的先验知识。在真实世界数据上进行的实验评估，涵盖了多种关键场景，这些场景代表了城市驾驶中的挑战性边缘案例，证实了所提出管道的有效性及其支持安全和自适应规划决策的适用性。",
+  "arxiv_id": "2609.08338",
+  "arxiv_url": "https://arxiv.org/abs/2609.08338v1",
+  "authors": [
+    "Davide Malvezzi",
+    "Michele Pestarino",
+    "Vittoria Cavicchioli",
+    "Valentina La Gamba",
+    "Silvia Severi",
+    "Fabio Bagni",
+    "Luca Bartoli",
+    "Massimiliano Bosi",
+    "Francesco Gatti",
+    "Micaela Verucchi",
+    "Ayoub Raji",
+    "Marko Bertogna"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-08338",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.147214+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.08338v1",
+  "published_at": "2026-09-08T07:11:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous racing",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "lidar",
+      "radar",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.08338v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "预测/规划"
+    ]
+  },
+  "title": "A Multi-Modal Perception Pipeline for Object Detection and Tracking in Autonomous Racing",
+  "title_zh": "用于自主赛车的多模态感知管道：物体检测与跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2609.08338"
+}

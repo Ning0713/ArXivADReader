@@ -1,0 +1,56 @@
+{
+  "abstract": "Reasoning is a promising route to the generalization that autonomous driving requires in the long tail, as it can infer how the elements of a scene depend on one another and traverse those dependencies to conclusions beyond what is observed. Yet it is hard to tell whether a model's conclusions follow the scene's dependencies, because no driving representation makes them explicit enough to test against. Text-based reasoning traces lack spatio-temporal grounding, spatio-temporal scene graphs lack causal links, and reasoning annotations at scale are increasingly model-generated and hard to verify. To this end, we introduce CASCADE (Causal Spatio-Temporal Analysis of Driving Environments), which encompasses two components: (1) a structured scene representation for reasoning in driving scenes and (2) a human-annotated dataset built on it. For every actor that interacts with the ego vehicle, the CASCADE representation records frame-by-frame, for as long as the actor is visible, what action is taken, where it occurs, and how it depends on the actions and states of others. The resulting structure makes reasoning predictions machine-verifiable: they can be scored against it element by element, without relying on (M)LLM judges. The CASCADE dataset provides comprehensive human annotations for 2,066 driving clips of the PhysicalAI dataset, with over 34K elements that establish the spatio-temporal and causal context of each scene, including 8.6K time-stamped ego and agent actions, 3.7K causal links and 2.9K potential influences, and 6.1K annotations for agents, objects, traffic lights, and environments. Being entirely human-annotated, CASCADE provides the reference for this comparison: benchmarking the reasoning abilities of Physical AI models, and verifying the quality of automatically generated reasoning labels. The CASCADE dataset is available at https://huggingface.co/datasets/nvidia/cascade.",
+  "abstract_zh": "推理是实现自主驾驶在长尾场景中所需泛化的有前景途径，因为它能够推断场景中各元素之间的依赖关系，并通过这些依赖关系得出超出观察结果的结论。然而，很难判断模型的结论是否遵循场景的依赖关系，因为现有的驾驶表示并未明确到足以进行测试。基于文本的推理缺乏时空基础，时空场景图缺乏因果联系，而大规模的推理注释越来越多地依赖模型生成，且难以验证。为此，我们引入了CASCADE（驾驶环境的因果时空分析），它包含两个组成部分：（1）用于驾驶场景推理的结构化场景表示；（2）基于该表示构建的人类注释数据集。对于每个与自我车辆交互的参与者，CASCADE表示逐帧记录参与者可见时所采取的动作、发生地点及其如何依赖于其他参与者的动作和状态。由此产生的结构使得推理预测可以被机器验证：可以逐元素对其进行评分，而无需依赖（M）LLM评判者。CASCADE数据集为PhysicalAI数据集中的2,066个驾驶片段提供了全面的人类注释，包含超过34,000个元素，建立了每个场景的时空和因果背景，包括8,600个时间戳的自我和代理动作、3,700个因果链接和2,900个潜在影响，以及6,100个针对代理、物体、交通信号灯和环境的注释。CASCADE完全由人类注释，提供了这一比较的参考：基准测试Physical AI模型的推理能力，并验证自动生成的推理标签的质量。CASCADE数据集可在https://huggingface.co/datasets/nvidia/cascade获取。",
+  "arxiv_id": "2609.07094",
+  "arxiv_url": "https://arxiv.org/abs/2609.07094v1",
+  "authors": [
+    "Jenny Schmalfuss",
+    "Despoina Paschalidou",
+    "Simon Gerstenecker",
+    "German Ros",
+    "Jose M. Alvarez"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07094",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.335560+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07094v1",
+  "published_at": "2026-09-07T06:32:55Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego vehicle",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07094v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "CASCADE: A Spatio-Temporal-Causal Reasoning Representation and Dataset for Driving",
+  "title_zh": "CASCADE：一种用于驾驶的时空因果推理表示和数据集",
+  "translation_url": "https://hjfy.top/arxiv/2609.07094"
+}

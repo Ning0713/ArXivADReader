@@ -1,0 +1,52 @@
+{
+  "abstract": "Automated parking requires generating complete and executable trajectories in highly constrained spaces with low tolerance for goal pose error. Existing end-to-end parking methods struggle to jointly achieve inference efficiency, trajectory quality, and precise endpoint alignment, while conventional imitation objectives provide limited supervision on structured deviations from expert maneuver geometry. We propose DriftParking, a one-step trajectory generation framework that reconstructs the drifting-field paradigm for high-precision conditional trajectory generation. Specifically, we replace distribution-level attraction with conditional one-to-one attraction toward the paired expert trajectory, introduce expert-centered constructive repulsion, and adaptively attenuate repulsion near convergence. We further formulate trajectory generation in an endpoint-residual space by decomposing each trajectory into a start-to-goal baseline and a learnable residual, turning endpoint alignment into a representation-level structural constraint on the supervision target while providing a structured space for repulsive supervision. DriftParking achieves state-of-the-art performance across all evaluation metrics. Closed-loop on-vehicle experiments across diverse parking scenarios further show a 97% parking success rate, demonstrating strong zero-shot generalization.",
+  "abstract_zh": "自动停车需要在高度受限的空间中生成完整且可执行的轨迹，对目标姿态误差的容忍度极低。现有的端到端停车方法在推理效率、轨迹质量和精确的终点对齐方面难以共同实现，而传统的模仿目标对专家操控几何形状的结构性偏差提供的监督有限。我们提出了DriftParking，一种一步轨迹生成框架，重构了漂移场范式以实现高精度的条件轨迹生成。具体而言，我们用对配对专家轨迹的条件一对一吸引替代了分布级别的吸引，引入了以专家为中心的建设性排斥，并在收敛附近自适应地减弱排斥力。我们进一步通过将每条轨迹分解为从起点到目标的基线和可学习的残差，在终点残差空间中制定轨迹生成，将终点对齐转化为对监督目标的表示级结构约束，同时为排斥监督提供了结构化空间。DriftParking在所有评估指标上实现了最先进的性能。在多种停车场景下进行的闭环车载实验进一步显示出97%的停车成功率，证明了强大的零样本泛化能力。",
+  "arxiv_id": "2609.06923",
+  "arxiv_url": "https://arxiv.org/abs/2609.06923v1",
+  "authors": [
+    "Ziyan Wang",
+    "Dong Li",
+    "Weibo Wang",
+    "Yinyin Lu",
+    "Jiayu Xie",
+    "Jiamao Gu",
+    "Dongpeng Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-06923",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.098166+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.06923v1",
+  "published_at": "2026-09-07T01:42:57Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "parking"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.06923v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文面向端到端自动停车中的轨迹生成问题，提出基于漂移场的一步式条件轨迹生成方法。该方法采用针对配对专家轨迹的一对一吸引、以专家轨迹为中心的排斥以及收敛阶段的自适应排斥衰减，以改善轨迹质量和推理效率。通过在终点残差空间中分解起点到目标的基线轨迹与可学习残差，方法将终点姿态对齐显式融入监督表示。实验表明，该方法在各项指标上达到领先性能，并在多种场景的闭环车载测试中取得97%的停车成功率，展现出较强的零样本泛化能力。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "安全/异常"
+    ]
+  },
+  "title": "DriftParking: Trajectory Modeling via Drifting Field for End-to-End Automated Parking",
+  "title_zh": "DriftParking：通过漂移场进行端到端自动停车的轨迹建模",
+  "translation_url": "https://hjfy.top/arxiv/2609.06923"
+}

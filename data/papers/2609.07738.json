@@ -1,0 +1,64 @@
+{
+  "abstract": "LiDAR-based 3D Single Object Tracking (3D SOT) is critical for robotic perception and navigation and aims to localize dynamic objects across frames in sparse point clouds. Existing methods, rooted in the Siamese tracking paradigm from 2D vision, rely on costly dual-input designs and excessive motion modeling guided by template priors, hindering their efficiency. Our in-depth analysis reveals: (i) the template paradigm is redundant, as the previous bounding box center encodes sufficient historical context; (ii) complex motion modeling is unnecessary, as geometric alignment provides adequate motion priors. Based on the above findings, we propose the first Template-Free Tracking framework (TFTrack). The novel framework eliminates the need for template-search pairings and operates directly on the current frame guided solely by the prior bounding box center and size. We instantiate this paradigm into three variants: TFTrack-Voxel, TFTrack-Pillar, and TFTrack-Point, to explore different 3D representations under a unified framework, ensuring flexibility across sparse and dense scenes. Extensive experiments on KITTI and nuScenes benchmarks show that TFTrack is competitive with leading template-based trackers, while reducing FLOPs by approximately 50% and running at approximately 120 FPS. By simplifying overcomplicated motion-centric designs, TFTrack establishes a new minimalist paradigm for efficient 3D point cloud tracking, paving the way for real-time and resource-efficient deployment in embedded robotic systems, such as autonomous vehicles. The code is available at https://github.com/tftrack-anonymous/TFTrack/tree/main.",
+  "abstract_zh": "基于LiDAR的3D单目标跟踪（3D SOT）对于机器人感知和导航至关重要，旨在在稀疏点云中跨帧定位动态物体。现有方法根植于来自2D视觉的孪生跟踪范式，依赖于昂贵的双输入设计和过度的运动建模，这些都受到模板先验的指导，限制了其效率。我们的深入分析表明：（i）模板范式是多余的，因为先前的边界框中心编码了足够的历史上下文；（ii）复杂的运动建模是不必要的，因为几何对齐提供了足够的运动先验。基于上述发现，我们提出了第一个无模板跟踪框架（TFTrack）。该新框架消除了模板搜索配对的需要，直接在当前帧上操作，仅由先前的边界框中心和大小指导。我们将这一范式实例化为三种变体：TFTrack-Voxel、TFTrack-Pillar和TFTrack-Point，以在统一框架下探索不同的3D表示，确保在稀疏和密集场景中的灵活性。在KITTI和nuScenes基准上的大量实验表明，TFTrack与领先的基于模板的跟踪器具有竞争力，同时将FLOPs减少了约50%，并以约120 FPS的速度运行。通过简化过于复杂的以运动为中心的设计，TFTrack建立了一种新的极简主义范式，用于高效的3D点云跟踪，为嵌入式机器人系统（如自动驾驶汽车）的实时和资源高效部署铺平了道路。代码可在https://github.com/tftrack-anonymous/TFTrack/tree/main获取。",
+  "arxiv_id": "2609.07738",
+  "arxiv_url": "https://arxiv.org/abs/2609.07738v1",
+  "authors": [
+    "Zhaofeng Hu",
+    "Sifan Zhou",
+    "Jiahao Nie",
+    "Ziyu Zhao",
+    "Weizi Li",
+    "Ci-jyun Liang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07738",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.381143+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07738v1",
+  "published_at": "2026-09-07T16:43:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "nuscenes",
+      "kitti",
+      "autonomous",
+      "驾驶",
+      "道路",
+      "lidar",
+      "point cloud",
+      "点云",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07738v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "TFTrack: A Template-Free Framework for Efficient 3D Point Cloud Tracking",
+  "title_zh": "TFTrack：一种无模板的高效3D点云跟踪框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.07738"
+}

@@ -1,0 +1,56 @@
+{
+  "abstract": "High-fidelity vehicle assets are essential for controllable traffic scene generation, particularly for synthesizing rare and safety-critical long-tail scenarios. However, reconstructing a reusable vehicle representation from in-the-wild onboard images remains challenging for two reasons. First, image-to-3D generation methods generally produce models without reliable metric scale. Second, onboard cameras usually observe only one side of a target vehicle, making conventional multi-view reconstruction incomplete on unobserved regions. To solve these problems, we propose a feed-forward vehicle asset reconstruction method, which leverages two complementary priors to reconstruct 3D Gaussian representations for vehicles using sparse one-sided observations. To achieve metric-scale reconstruction, a visual foundation model is first utilized to serve as a visual prior for Gaussian initialization. The Gaussian attributes are then estimated by a learnable encoder-decoder module. A symmetry-aware cloning strategy is presented to complete the unobserved side directly in Gaussian space, which exploits the bilateral structure of vehicles as a geometric prior. Experiments on the public dataset demonstrate that the proposed method significantly outperforms existing approaches in both vehicle asset completeness and geometric accuracy.",
+  "abstract_zh": "高保真车辆资产对于可控交通场景生成至关重要，特别是在合成稀有和安全关键的长尾场景时。然而，从实际环境中的车载图像重建可重用的车辆表示仍然面临挑战，主要有两个原因。首先，图像到3D生成方法通常生成没有可靠度量尺度的模型。其次，车载摄像头通常只能观察到目标车辆的一侧，使得传统的多视角重建在未观察到的区域上不完整。为了解决这些问题，我们提出了一种前馈车辆资产重建方法，该方法利用两个互补的先验，通过稀疏的单侧观察重建车辆的3D高斯表示。为了实现度量尺度重建，首先利用视觉基础模型作为高斯初始化的视觉先验。然后，通过可学习的编码-解码模块估计高斯属性。提出了一种考虑对称性的克隆策略，直接在高斯空间中完成未观察到的一侧，利用车辆的双边结构作为几何先验。公共数据集上的实验表明，所提出的方法在车辆资产完整性和几何准确性方面显著优于现有方法。",
+  "arxiv_id": "2609.08841",
+  "arxiv_url": "https://arxiv.org/abs/2609.08841v1",
+  "authors": [
+    "Jinyu Miao",
+    "Jiusi Li",
+    "Yifei He",
+    "Miao Long",
+    "Kun Jiang",
+    "Mengmeng Yang",
+    "Diange Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-08841",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.453005+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.08841v1",
+  "published_at": "2026-09-08T14:58:11Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "车辆",
+      "交通",
+      "场景生成"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.08841v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "Leveraging Visual and Geometric Priors for Metric-scale and Complete Vehicle Gaussian Reconstruction from Limited Views",
+  "title_zh": "利用视觉和几何先验进行有限视角下的度量尺度和完整车辆高斯重建",
+  "translation_url": "https://hjfy.top/arxiv/2609.08841"
+}

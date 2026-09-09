@@ -1,0 +1,51 @@
+{
+  "abstract": "VLMs have shown promise for autonomous driving, yet still suffer from hallucination, weak spatio-temporal perception, and limited generalization. Recent methods improve reasoning and decision-making through CoT explanations, retrieval-augmented generation or the static injection of tool outputs. Although these mechanisms enrich the context, the model neither proactively perceives scene information nor accumulates experience after answering. To overcome these limitations, we present, to our knowledge, the first synergistic framework that tightly couples hierarchical memory with proactive tool invocation in a closed reasoning loop. Our contributions are threefold. (i) Hierarchical Driving Memory: a scene-level short-term memory maintains the dynamic scene state, and an evolving long-term memory retrieves reusable experience and tool strategies. (ii) Memory-Tool Synergistic Reasoning Framework: guided by the scene state and retrieved experience, the model adaptively invokes tools to refine its reasoning at inference time and consolidates reusable experience into a long-term memory pool offline. (iii) Data Generation and Two-stage Training Pipeline: verified memory-tool trajectories built by multi-step teacher rollout are used to train with SFT and GRPO. Our 7B model reaches an overall reasoning score of 80.03 and MCQ accuracy of 79.09% on DriveLMM-o1, surpassing the strongest baseline by 7.74 MCQ points and generalizes strongly across benchmarks. Notably, ablation and analysis studies validate the effectiveness of each component and further reveal the complementary roles of hierarchical memory. Short-term memory strengthens spatio-temporal understanding, improving STSBench accuracy by 24.2 points, while offline long-term memory consolidation yields an additional 3.57-point MCQ gain with all parameters frozen, demonstrating continual self-evolution through accumulated driving experience.",
+  "abstract_zh": "视觉语言模型（VLMs）在自主驾驶中展现出潜力，但仍存在幻觉、时空感知弱和泛化能力有限的问题。近期方法通过链式思维（CoT）解释、检索增强生成或静态注入工具输出来改善推理和决策。尽管这些机制丰富了上下文，但模型既未能主动感知场景信息，也未能在回答后积累经验。为了克服这些局限性，我们提出了迄今为止首个将层次记忆与主动工具调用紧密结合的协同框架，形成闭环推理。我们的贡献有三方面：（i）层次驾驶记忆：场景级短期记忆维护动态场景状态，而不断演变的长期记忆则检索可重用的经验和工具策略。（ii）记忆-工具协同推理框架：在场景状态和检索经验的指导下，模型在推理时自适应地调用工具以精炼推理，并在离线状态下将可重用经验整合到长期记忆池中。（iii）数据生成与两阶段训练流程：通过多步教师回放构建的验证记忆-工具轨迹用于训练SFT和GRPO。我们的7B模型在DriveLMM-o1上达到了80.03的整体推理得分和79.09%的多项选择题（MCQ）准确率，超越了最强基线7.74个MCQ点，并在各基准上表现出强泛化能力。值得注意的是，消融和分析研究验证了每个组件的有效性，并进一步揭示了层次记忆的互补作用。短期记忆增强了时空理解，使STSBench的准确率提高了24.2点，而离线长期记忆整合在所有参数冻结的情况下带来了额外的3.57点MCQ增益，展示了通过积累驾驶经验实现的持续自我演化。",
+  "arxiv_id": "2609.08217",
+  "arxiv_url": "https://arxiv.org/abs/2609.08217v1",
+  "authors": [
+    "Baojie Chen",
+    "Zijun Jia",
+    "Jing Zhong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-08217",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.408944+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.08217v1",
+  "published_at": "2026-09-08T03:59:10Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.08217v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Drive by Hindsight and Foresight: Tool-Grounded Synergistic Reasoning over Hierarchical Memory for Autonomous Driving",
+  "title_zh": "通过回顾与展望驱动：基于工具的协同推理与层次记忆在自主驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2609.08217"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Unified perception enables autonomous driving systems to perform object detection, drivable-area segmentation, and lane segmentation within a single network, improving efficiency and reducing deployment complexity. Jointly optimizing multiple perception tasks remains challenging because tasks exhibit different convergence rates, loss scales, and optimization stability. Existing task-weighting methods use loss magnitude, learned uncertainty, short-term loss changes, or gradient statistics; here, we explore the frequency structure of a recent loss-history window as a complementary signal. We implement and examine Frequency-aware Task Weighting (FTW), a dynamic task-balancing rule that estimates a loss-trajectory stability proxy from the low-frequency energy ratio of recent loss histories. FTW assigns larger weights to tasks whose mean-centered loss trajectories contain a larger proportion of low-frequency power. We document FTW and two baselines under full-network static training and progressive freezing using a unified YOLOv8-based perception framework with three task-specific heads. Experiments on Mapillary Vistas compare FTW with fixed and uncertainty-based weighting under both configurations. Final holdout metrics are reported for the checkpoint with the lowest per-epoch validation loss in each run. Across six single-run configurations, static FTW has the largest derived overall score and lane mIoU, progressive FTW has the largest detection mAP, and static uncertainty weighting has the largest drivable-area mIoU. Without repeated-seed estimates, single-task baselines, or FTW ablations, these rankings are descriptive. The evidence supports the feasibility of loss-frequency-based weighting in this pipeline, but does not establish improvement over the baselines or generalization beyond the reported runs.",
+  "abstract_zh": "统一感知使得自主驾驶系统能够在单一网络中执行物体检测、可行驶区域分割和车道分割，从而提高效率并减少部署复杂性。联合优化多个感知任务仍然具有挑战性，因为这些任务表现出不同的收敛速率、损失规模和优化稳定性。现有的任务加权方法使用损失大小、学习的不确定性、短期损失变化或梯度统计；在此，我们探索最近损失历史窗口的频率结构作为补充信号。我们实现并检验了频率感知任务加权（Frequency-aware Task Weighting, FTW），这是一种动态任务平衡规则，它从最近损失历史的低频能量比中估计损失轨迹的稳定性代理。FTW为那些均值中心损失轨迹包含较大比例低频功率的任务分配更大的权重。我们在全网络静态训练和渐进冻结下记录了FTW及两个基线，使用基于统一YOLOv8的感知框架，配备三个任务特定的头。Mapillary Vistas上的实验比较了FTW与固定和基于不确定性的加权在这两种配置下的表现。最终的保留指标报告了每次运行中每个周期验证损失最低的检查点。在六个单次运行配置中，静态FTW获得了最大的整体得分和车道mIoU，渐进FTW获得了最大的检测mAP，而静态不确定性加权获得了最大的可行驶区域mIoU。在没有重复种子估计、单任务基线或FTW消融的情况下，这些排名是描述性的。证据支持在该管道中基于损失频率的加权的可行性，但并未建立其相对于基线的改进或超出报告运行的泛化能力。",
+  "arxiv_id": "2609.05516",
+  "arxiv_url": "https://arxiv.org/abs/2609.05516v1",
+  "authors": [
+    "Zhiyuan Nie",
+    "Zixi Zhou",
+    "Xianbin Gu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-05516",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.178514+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.05516v1",
+  "published_at": "2026-08-31T14:29:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "车道",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.05516v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划"
+    ]
+  },
+  "title": "An Exploratory Study of Frequency-Aware Task Weighting for YOLOv8-Based Unified Driving Perception",
+  "title_zh": "基于YOLOv8的统一驾驶感知中的频率感知任务加权的探索性研究",
+  "translation_url": "https://hjfy.top/arxiv/2609.05516"
+}

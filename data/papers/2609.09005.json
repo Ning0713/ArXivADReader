@@ -1,0 +1,57 @@
+{
+  "abstract": "We present DXPR, a depth-based cross-modal place recognition (CMPR) framework that uses vision foundation models (VFMs) to match monocular camera queries against a LiDAR map without modality-specific encoders. This enables robots and autonomous vehicles to robustly localize using only cameras within pre-built LiDAR maps, even under severe seasonal, weather, and illumination changes. The key idea is to convert both camera images and LiDAR scans into a unified depth image representation so that a single VFM backbone with an aggregation head can learn modality-invariant global descriptors. To make pairwise metric learning faithful to scene geometry, we introduce a geometry-aware overlap miner: after cross-modal scale alignment of camera and LiDAR depth, we forward-warp measurements between views to compute a pixel-level overlap score. This score relabels ambiguous pairs and adaptively modulates the positive margin in a multi-similarity loss to avoid overfitting on weakly overlapping views. Extensive experiments on KITTI odometry and Boreas demonstrate strong performance and robustness across seasons, weather, and day/night. On KITTI, DXPR achieves near-perfect Recall@1 on most sequences and outperforms prior CMPR baselines. On Boreas, DXPR achieves intra-sequence performance on par with a strong single-modal baseline (DINOv2-SALAD), while showing clear improvements in the more challenging inter-sequence setting. Compared with RangeBEV, our method consistently performs better in both intra- and inter-sequence evaluations, demonstrating robustness under diverse seasonal and illumination changes.",
+  "abstract_zh": "我们提出了DXPR，一种基于深度的跨模态场所识别（CMPR）框架，利用视觉基础模型（VFM）将单目相机查询与激光雷达地图进行匹配，而无需特定于模态的编码器。这使得机器人和自动驾驶车辆能够仅使用相机在预构建的激光雷达地图中稳健地定位，即使在严重的季节、天气和光照变化下。其关键思想是将相机图像和激光雷达扫描转换为统一的深度图像表示，从而使得单一的VFM主干网络与聚合头能够学习模态不变的全局描述符。为了使成对度量学习忠实于场景几何，我们引入了一种几何感知重叠挖掘器：在相机和激光雷达深度的跨模态尺度对齐后，我们在视图之间进行前向变形测量，以计算像素级重叠分数。该分数重新标记模糊对，并自适应调节多相似性损失中的正边距，以避免在弱重叠视图上过拟合。在KITTI里程计和Boreas上的大量实验表明，DXPR在不同季节、天气和昼夜条件下表现出强大的性能和鲁棒性。在KITTI数据集中，DXPR在大多数序列上实现了近乎完美的Recall@1，并超越了先前的CMPR基线。在Boreas数据集中，DXPR在序列内部性能上与强大的单模态基线（DINOv2-SALAD）相当，同时在更具挑战性的序列间设置中显示出明显的改进。与RangeBEV相比，我们的方法在序列内和序列间评估中始终表现更好，展示了在多样的季节和光照变化下的鲁棒性。",
+  "arxiv_id": "2609.09005",
+  "arxiv_url": "https://arxiv.org/abs/2609.09005v1",
+  "authors": [
+    "Yungsoo Han",
+    "Youngseok Jang",
+    "Seungwon Roh",
+    "Jeongyeon Seo",
+    "H. Jin Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-09005",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.462072+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.09005v1",
+  "published_at": "2026-09-08T16:42:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "kitti",
+      "autonomous",
+      "驾驶",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.09005v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "地图/定位"
+    ]
+  },
+  "title": "DXPR: Depth-Based Vision-LiDAR Cross-Modal Place Recognition Using Vision Foundation Models",
+  "title_zh": "DXPR：基于深度的视觉-激光雷达跨模态场所识别，使用视觉基础模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.09005"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "Recent work, such as Vision Banana, shows that lightweight instruction tuning can enable an image generator to achieve state-of-the-art performance across multiple visual perception tasks. Motivated by this perspective, we ask how far image generators can go on public visual perception benchmarks in a zero-shot setting. We introduce ProbeGen, a benchmark for zero-shot generative perception that casts monocular depth estimation, referring/reasoning segmentation, and object counting as conditional generation tasks specified through text prompts, and compares 20 models in total---including proprietary and open-weight image generators, specialist perception models, and MLLMs---across 11 published benchmarks. We observe that pretrained image generators show measurable zero-shot perceptual competence, but with a clear trade-off: specialist models remain stronger for in-distribution accuracy and efficiency, while generative models are often more robust under distribution shift and better at compositional semantic reasoning. We hope this study helps establish zero-shot generative perception as a meaningful research direction and provides a useful foundation for future work at the intersection of visual generation and understanding.",
+  "abstract_zh": "近期的研究，如 Vision Banana，表明轻量级的指令调优可以使图像生成器在多个视觉感知任务中达到最先进的性能。基于这一观点，我们探讨图像生成器在零-shot 设置下在公共视觉感知基准上的表现。我们引入了 ProbeGen，这是一个用于零-shot 生成感知的基准，将单目深度估计、引用/推理分割和物体计数视为通过文本提示指定的条件生成任务，并对包括专有和开放权重图像生成器、专业感知模型以及 MLLMs 在内的 20 个模型进行了比较，涵盖 11 个已发布的基准。我们观察到，预训练的图像生成器展现出可测量的零-shot 感知能力，但存在明显的权衡：专业模型在分布内的准确性和效率上仍然更强，而生成模型在分布转移下通常更具鲁棒性，并且在组合语义推理方面表现更佳。我们希望这项研究有助于确立零-shot 生成感知作为一个有意义的研究方向，并为未来在视觉生成与理解交叉领域的工作提供有用的基础。",
+  "arxiv_id": "2609.07884",
+  "arxiv_url": "https://arxiv.org/abs/2609.07884v1",
+  "authors": [
+    "Shangzhe Di",
+    "Zhaokai Wang",
+    "Weidi Xie"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07884",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.385802+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07884v1",
+  "published_at": "2026-09-07T18:48:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "intersection",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 17
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07884v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Are Image Generators Zero-Shot Perceivers? A Rigorous Evaluation",
+  "title_zh": "图像生成器是零-shot 感知者吗？一项严格的评估",
+  "translation_url": "https://hjfy.top/arxiv/2609.07884"
+}

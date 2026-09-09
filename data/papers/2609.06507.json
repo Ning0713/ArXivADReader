@@ -1,0 +1,48 @@
+{
+  "abstract": "Accurate vehicle license plate detection is essential for applications such as intelligent transportation systems, toll collection, parking management, and law enforcement. In Bangladesh, this task presents distinct challenges due to the complexity of localized license plates and environmental factors like lighting, occlusion, motion blur, and obstructions such as dirt or mud. These challenges often render conventional methods ineffective. This paper introduces a novel hybrid approach, combining the YOLO Tiny deep learning model with the Haar-Cascade classifier, for enhanced detection and localization of Bengali license plates. A key innovation of our system is the integration of a dynamic retraining pipeline, which allows the model to adapt to evolving real-world conditions. This retraining mechanism significantly boosts performance in low-confidence scenarios by continuously improving the model's accuracy as new data is encountered. Additionally, a publicly accessible dataset of BRTA-compliant license plates, captured under diverse and challenging conditions, has been developed to support this approach. Experimental results demonstrate that our approach not only achieves superior detection accuracy and computational efficiency over conventional models but also ensures consistent performance in resource-constrained environments, particularly in Bangladesh.",
+  "abstract_zh": "准确的车辆车牌检测对于智能交通系统、收费收集、停车管理和执法等应用至关重要。在孟加拉国，由于本地化车牌的复杂性以及光照、遮挡、运动模糊和污垢或泥土等环境因素，这项任务面临着独特的挑战。这些挑战常常使传统方法无效。本文提出了一种新颖的混合方法，将YOLO Tiny深度学习模型与Haar-Cascade分类器相结合，以增强孟加拉车牌的检测和定位。我们系统的一个关键创新是集成了动态再训练管道，使模型能够适应不断变化的现实条件。该再训练机制通过在遇到新数据时持续提高模型的准确性，显著提升了低置信度场景下的性能。此外，我们开发了一个公开可访问的BRTA合规车牌数据集，该数据集在多样且具有挑战性的条件下捕获，以支持这一方法。实验结果表明，我们的方法不仅在检测准确性和计算效率上优于传统模型，而且在资源受限的环境中，特别是在孟加拉国，确保了一致的性能。",
+  "arxiv_id": "2609.06507",
+  "arxiv_url": "https://arxiv.org/abs/2609.06507v1",
+  "authors": [
+    "Debashis Kar Suvra",
+    "Tahsina Farah Sanam"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-06507",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.283076+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.06507v1",
+  "published_at": "2026-09-06T09:49:09Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "parking",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.06507v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文提出一种结合YOLO Tiny与Haar级联的混合车牌检测方法，用于在复杂光照、遮挡、运动模糊和污损条件下实时定位孟加拉车牌。系统引入动态再训练机制以适应新数据，并构建了公开车牌数据集，重点提升资源受限环境中的检测准确性与效率。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "A Cloud-Based Hybrid Model for Real-Time Detection of BRTA-Approved Licence Plates Using YOLO Tiny and Haar Cascade",
+  "title_zh": "基于云的混合模型用于实时检测BRTA批准的车牌，采用YOLO Tiny和Haar级联",
+  "translation_url": "https://hjfy.top/arxiv/2609.06507"
+}

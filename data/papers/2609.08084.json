@@ -1,0 +1,57 @@
+{
+  "abstract": "Monocular depth estimation is a ubiquitous yet highly ill-posed computer vision task, with downstream applications in scene reconstruction, computational photography, and robotics, among others. Despite the field's maturity, recent models still struggle to generalize to out-of-distribution inputs and to produce sharp and detailed depth maps. In this paper, we revisit Marigold, a set of techniques for repurposing modern image generation and editing models, powered by the diffusion transformer (DiT) architecture, into state-of-the-art monocular depth estimators. Our recipes target single-step inference from pretrained multi-step flow-matching models, with quantization where needed, preserving model capacity while remaining cheap to run. We analyze the artifacts of naive training and identify two effective remedies: aligning the model's internal representations with semantic features extracted from ground-truth, and adopting a 2-stage fine-tuning protocol built around a novel Sinkhorn-based loss. The results are crisper, cleaner depth maps that generalize well out-of-distribution, with 16-26% improvement in AbsRel over the previous best on KITTI and ETH3D. Qualitatively, our model resolves fur, foliage, and hair-thin edges that have eluded prior models. Furthermore, Marigold V2 achieves state-of-the-art results when applied to other dense regression tasks, such as surface normals estimation and intrinsic image decomposition. Project website: https://hf.co/spaces/huawei-bayerlab/marigold-v2-web",
+  "abstract_zh": "单目深度估计是一项普遍存在但高度不适定的计算机视觉任务，广泛应用于场景重建、计算摄影和机器人等领域。尽管该领域已相对成熟，近期模型仍然难以对分布外输入进行泛化，并且生成清晰且详细的深度图。在本文中，我们重新审视了万寿菊（Marigold），这是一组技术，旨在将现代图像生成和编辑模型（基于扩散变换器（DiT）架构）重新用于最先进的单目深度估计器。我们的方案针对从预训练的多步流匹配模型进行单步推理，必要时进行量化，既保留了模型的能力，又保持了低运行成本。我们分析了简单训练的伪影，并确定了两种有效的补救措施：将模型的内部表示与从真实标签中提取的语义特征对齐，以及采用围绕新颖的Sinkhorn基础损失构建的两阶段微调协议。结果是更清晰、更干净的深度图，在分布外泛化良好，相较于KITTI和ETH3D上的先前最佳模型，AbsRel指标提高了16-26%。在定性方面，我们的模型能够解决毛发、树叶和细发边缘等先前模型未能处理的细节。此外，万寿菊 V2 在应用于其他稠密回归任务（如表面法线估计和内在图像分解）时也取得了最先进的结果。项目网站：https://hf.co/spaces/huawei-bayerlab/marigold-v2-web",
+  "arxiv_id": "2609.08084",
+  "arxiv_url": "https://arxiv.org/abs/2609.08084v1",
+  "authors": [
+    "Igor Pavlovic",
+    "Thiemo Wandel",
+    "Anton Obukhov",
+    "Luca Bartolomei",
+    "Andrey Davydov",
+    "Fabio Tosi",
+    "Matteo Poggi",
+    "Sabine Süsstrunk",
+    "Dengxin Dai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-08084",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.399551+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.08084v1",
+  "published_at": "2026-09-08T00:52:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.08084v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "安全/异常"
+    ]
+  },
+  "title": "Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation",
+  "title_zh": "万寿菊 V2：重新审视用于单目深度估计的扩散变换器",
+  "translation_url": "https://hjfy.top/arxiv/2609.08084"
+}

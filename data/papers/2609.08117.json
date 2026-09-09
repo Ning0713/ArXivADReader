@@ -1,0 +1,53 @@
+{
+  "abstract": "Driver motion can provide cues to ongoing behavior, attention, and near-term driving intent. However, most existing driver-centric datasets focus on recognizing predefined driver behaviors from short video clips, while human motion forecasting benchmarks largely target motion outside the vehicle. We introduce DriveMotion, a multi-source benchmark for continuous driver motion forecasting. DriveMotion contains 393 hours of 133-keypoint motion sequences at 10 Hz from 360 drivers, integrating naturalistic driving data, curated public in-cabin videos, and the AIDE dataset into a unified representation with per-joint validity masks and synchronized driving context. Naturalistic driving contains long periods of limited body movement, making uniformly sampled evaluation dominated by persistence and less sensitive to brief but behaviorally meaningful motion. To address this, we use dynamics-anchored evaluation, placing forecasting windows around vehicle maneuvers identified offline from CAN signals without providing CAN to the model at inference. Arm motion in pre-maneuver windows is 3.4x greater than in route-matched stable-driving controls. On these anchored windows, learned models reduce forecasting error over persistence by up to 15%, while maneuver-enriched training improves forecast-derived Part-State F1 by 44% over the zero-motion reference. Training on the full multi-source corpus further reduces forecasting error on held-out web drivers by 38% compared with BATON-only training. DriveMotion provides identity-disjoint splits, fixed evaluation subsets, and reference implementations for reproducible evaluation of continuous driver motion forecasting. The dataset and benchmark are available at https://huggingface.co/datasets/HenryYHW/DriveMotion",
+  "abstract_zh": "驾驶员的运动可以提供关于正在进行的行为、注意力和近期驾驶意图的线索。然而，大多数现有的以驾驶员为中心的数据集专注于从短视频片段中识别预定义的驾驶员行为，而人类运动预测基准主要针对车辆外的运动。我们介绍了DriveMotion，这是一个用于连续驾驶员运动预测的多源基准。DriveMotion包含来自360名驾驶员的393小时、10 Hz的133关键点运动序列，整合了自然驾驶数据、策划的公共车内视频以及AIDE数据集，形成了一个统一的表示，具有每个关节的有效性掩码和同步的驾驶上下文。自然驾驶包含长时间的身体运动有限，使得均匀采样的评估受持久性主导，对短暂但行为上有意义的运动不够敏感。为了解决这个问题，我们使用动态锚定评估，在离线从CAN信号中识别的车辆机动周围放置预测窗口，而在推理时不向模型提供CAN。预机动窗口中的手臂运动比路线匹配的稳定驾驶控制大3.4倍。在这些锚定窗口上，学习模型将预测误差相较于持久性减少了多达15%，而丰富机动的训练使得预测导出的部分状态F1比零运动参考提高了44%。在完整的多源语料库上训练进一步减少了在保留的网络驾驶员上的预测误差，比仅使用BATON训练减少了38%。DriveMotion提供了身份不重叠的划分、固定的评估子集和参考实现，以便于连续驾驶员运动预测的可重复评估。该数据集和基准可在 https://huggingface.co/datasets/HenryYHW/DriveMotion 获取。",
+  "arxiv_id": "2609.08117",
+  "arxiv_url": "https://arxiv.org/abs/2609.08117v1",
+  "authors": [
+    "Yuhang Wang",
+    "Chuheng Wei",
+    "Jingxin Yang",
+    "Xishun Liao",
+    "Hao Zhou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-08117",
+  "categories": [
+    "cs.CV",
+    "cs.HC"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.401473+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.08117v1",
+  "published_at": "2026-09-08T01:49:18Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.08117v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "提出DriveMotion多源基准，用于连续驾驶员133关键点运动序列的建模与预测。数据集包含393小时、360名驾驶员的数据，融合自然驾驶、车内公开视频和AIDE数据，并通过基于车辆机动的动态锚定评估突出预机动阶段的行为变化。实验表明，学习模型优于持久性基线，多源训练显著提升跨数据源驾驶员的预测性能。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "DriveMotion: A Large-Scale Multi-Source Benchmark for Driver Motion Sequence Modeling and Forecasting",
+  "title_zh": "DriveMotion：一个大规模多源基准用于驾驶员运动序列建模与预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.08117"
+}

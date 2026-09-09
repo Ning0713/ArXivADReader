@@ -1,0 +1,54 @@
+{
+  "abstract": "Due to the proliferation of vehicle trajectory data enabled by advanced sensing technologies, path representation learning has become a pivotal task in intelligent transportation systems. Although existing self-supervised approaches have achieved promising performance, their dependence on deterministic contrastive learning paradigms and handcrafted view augmentation strategies inherently restricts their cross-scenario generalization capabilities. To address these limitations, we present DGCPath, an innovative Distribution-aware Generative Contrastive learning framework for Path representation. This framework establishes a synergistic connection between generative modeling and distributional contrastive learning, enabling the acquisition of robust and transferable feature embeddings. Specifically, our framework incorporates: (1) a diffusion-based view generator that autonomously produces semantically coherent yet diverse trajectory views from Gaussian noise; (2) a variational contrastive mechanism that enforces latent feature alignment at the distribution level, transcending conventional instance-wise consistency; and (3) a novel generative cross-supervision module that reinforces view-level consistency through cross-view reconstruction learning. Comprehensive evaluations on three real-world trajectory datasets demonstrate that DGCPath outperforms state-of-the-art baselines on two distinct downstream tasks, validating its enhanced generalization capability and representation effectiveness.",
+  "abstract_zh": "由于先进传感技术的推动，车辆轨迹数据的激增使得路径表示学习成为智能交通系统中的关键任务。尽管现有的自监督方法已取得了令人满意的性能，但它们对确定性对比学习范式和手工设计视图增强策略的依赖，固有地限制了其跨场景的泛化能力。为了解决这些局限性，我们提出了DGCPath，这是一种创新的基于分布感知的生成对比学习框架，用于路径表示。该框架建立了生成建模与分布对比学习之间的协同连接，使得能够获取稳健且可迁移的特征嵌入。具体而言，我们的框架包含：(1) 一个基于扩散的视图生成器，能够从高斯噪声中自主生成语义一致且多样的轨迹视图；(2) 一种变分对比机制，在分布层面上强制潜在特征对齐，超越传统的实例一致性；以及(3) 一个新颖的生成交叉监督模块，通过交叉视图重建学习增强视图级一致性。在三个真实世界的轨迹数据集上的全面评估表明，DGCPath在两个不同的下游任务上超越了最先进的基线，验证了其增强的泛化能力和表示有效性。",
+  "arxiv_id": "2609.07316",
+  "arxiv_url": "https://arxiv.org/abs/2609.07316v1",
+  "authors": [
+    "Sean Bin Yang",
+    "Hao Miao",
+    "Zongyi Xu",
+    "Jilin Hu",
+    "Xiangmeng Wang",
+    "Hua Lu",
+    "Bin Yang",
+    "Christian S. Jensen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07316",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.567873+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07316v1",
+  "published_at": "2026-09-07T10:34:04Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07316v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文提出DGCPath自监督路径表示学习框架，结合扩散模型生成多样化轨迹视图、分布级变分对比学习和跨视图重建监督，以提升车辆轨迹表示的稳健性与跨场景泛化能力。该方法在三个真实世界轨迹数据集和两个下游任务上取得了优于现有方法的表现，可为自动驾驶中的行为预测、轨迹预测与规划提供通用表示。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "DGCPath: Distribution-Aware Generative Contrastive Framework for Self-supervised Path Representation Learning -- Extended Version",
+  "title_zh": "DGCPath：一种基于分布感知的生成对比框架用于自监督路径表示学习 -- 扩展版",
+  "translation_url": "https://hjfy.top/arxiv/2609.07316"
+}

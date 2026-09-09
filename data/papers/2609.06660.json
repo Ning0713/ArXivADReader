@@ -1,0 +1,52 @@
+{
+  "abstract": "Accurate aerodynamic prediction is critical for designing fuel-efficient and safe transportation systems such as aircraft and automobiles, yet traditional computational fluid dynamics (CFD) simulations remain computationally expensive and expertise-intensive, severely limiting their use in iterative design and real-time analysis. Existing deep learning surrogates suffer from two major limitations: (i) they are evaluated on datasets with narrow flow-condition ranges, leaving their performance under complex flow conditions undemonstrated; (ii) they treat global flow conditions as a single vector injected uniformly across all surface points, ignoring that different geometric regions experience distinct local flow phenomena, which degrades prediction accuracy under complex flow conditions. To address these limitations, we propose the Flow State Attention Network (FSAN). FSAN separately encodes point cloud and flow conditions, then partitions the geometry into multiple flow states via learnable soft assignments, and uses flow features to update these state representations, which in turn influence point cloud features through state changes. This enables fine-grained, state-specific interaction between geometry and flow information. Extensive experiments on two well-recognized aerodynamic benchmarks demonstrate that FSAN achieves the highest accuracy among the methods compared in this work at a higher computational cost. On Emmi-Wing, FSAN reduces the Relative L2 (REL-L2) error by over 20\\% compared to the strongest baseline (Transolver), and on DrivAerNet++, it achieves a 10\\% reduction compared to the strongest baseline (AdaField). These results establish FSAN as a promising neural surrogate on public benchmarks with diverse flow conditions and geometries.",
+  "abstract_zh": "准确的气动预测对于设计燃油高效且安全的交通系统（如飞机和汽车）至关重要，然而传统的计算流体动力学（CFD）模拟仍然计算成本高且需要专业知识，严重限制了它们在迭代设计和实时分析中的应用。现有的深度学习代理存在两个主要限制：（i）它们在流动条件范围狭窄的数据集上进行评估，未能展示其在复杂流动条件下的性能；（ii）它们将全局流动条件视为一个均匀注入到所有表面点的单一向量，忽略了不同几何区域经历不同局部流动现象的事实，这在复杂流动条件下降低了预测准确性。为了解决这些限制，我们提出了流态注意力网络（Flow State Attention Network，FSAN）。FSAN分别编码点云和流动条件，然后通过可学习的软分配将几何体划分为多个流态，并利用流动特征更新这些状态表示，进而通过状态变化影响点云特征。这使得几何体与流动信息之间能够进行细粒度、状态特定的交互。在两个公认的气动基准测试上的大量实验表明，FSAN在本研究中比较的方法中实现了最高的准确性，尽管计算成本较高。在Emmi-Wing上，FSAN相比于最强基线（Transolver）将相对L2（REL-L2）误差降低了超过20\\%；在DrivAerNet++上，相比于最强基线（AdaField）实现了10\\%的降低。这些结果确立了FSAN作为在具有多样化流动条件和几何体的公共基准测试中有前景的神经代理。",
+  "arxiv_id": "2609.06660",
+  "arxiv_url": "https://arxiv.org/abs/2609.06660v1",
+  "authors": [
+    "Wenxuan Jin",
+    "Jianguo Yao",
+    "Haibing Guan",
+    "Xijun Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-06660",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.294304+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.06660v1",
+  "published_at": "2026-09-06T15:11:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "交通",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.06660v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "FSAN: Flow State Attention Network for Aerodynamic Prediction",
+  "title_zh": "FSAN：用于气动预测的流态注意力网络",
+  "translation_url": "https://hjfy.top/arxiv/2609.06660"
+}

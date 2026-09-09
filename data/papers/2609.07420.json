@@ -1,0 +1,48 @@
+{
+  "abstract": "Vision cues are available and informative for pedestrian action prediction, but obtaining stable target-centric representations from video frames remains challenging without frame-level external perception cues. Thus, most methods rely on additional perception modules or multi-source information fusion, leaving the reliability of vision-centric setting an open question. To this end, we propose ViCross, a vision-centric pedestrian crossing action prediction framework powered by multimodal large language models, which maintains target-centric reasoning from video frames without additional perception modules beyond first-frame target initialization. While multimodal large language models exhibit strong visual understanding, applying them directly to vision-centric action prediction faces two challenges. First, accurately perceiving target pedestrians often requires high resolution inputs and dense visual tokenization, making full-frame encoding computationally prohibitive. ViCross tackles this with Variable Resolution Patch Mapping module for efficient token allocation while preserving key pedestrian details. Second, missing spatiotemporal priors hinder consistent cross frame reasoning. ViCross mitigates this with a Spatial Constraint Enhancement Strategy that captures past motion, future locations, and action semantics for training-time proactive spatial rectification. Extensive experiments show that ViCross delivers clear gains in vision-centric prediction settings and is competitive with multi-source fusion approaches in several settings. Code is available at https://github.com/2tianyao1/ViCross.git.",
+  "abstract_zh": "视觉线索在行人动作预测中是可用且信息丰富的，但在没有帧级外部感知线索的情况下，从视频帧中获取稳定的目标中心表示仍然具有挑战性。因此，大多数方法依赖于额外的感知模块或多源信息融合，使得视觉中心设置的可靠性成为一个悬而未决的问题。为此，我们提出了ViCross，一个由多模态大型语言模型驱动的视觉中心行人过马路动作预测框架，该框架在不依赖于额外感知模块的情况下，保持了来自视频帧的目标中心推理，仅在第一帧目标初始化时需要额外模块。尽管多模态大型语言模型展现出强大的视觉理解能力，但将其直接应用于视觉中心动作预测面临两个挑战。首先，准确感知目标行人通常需要高分辨率输入和密集的视觉标记，使得全帧编码在计算上不可行。ViCross通过可变分辨率补丁映射模块解决了这一问题，实现了高效的标记分配，同时保留了关键的行人细节。其次，缺乏时空先验会阻碍跨帧一致推理。ViCross通过空间约束增强策略来缓解这一问题，该策略在训练期间捕捉过去的运动、未来的位置和动作语义，以实现主动的空间校正。大量实验表明，ViCross在视觉中心预测设置中显著提升了性能，并在多个设置中与多源融合方法具有竞争力。代码可在 https://github.com/2tianyao1/ViCross.git 获取。",
+  "arxiv_id": "2609.07420",
+  "arxiv_url": "https://arxiv.org/abs/2609.07420v1",
+  "authors": [
+    "Yao Tian",
+    "Le Yang",
+    "Binglu Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07420",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.360074+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07420v1",
+  "published_at": "2026-09-07T12:29:04Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07420v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文面向自动驾驶中的行人行为预测，提出基于多模态大语言模型的视觉中心框架ViCross，用视频帧预测行人是否及如何过街。方法通过可变分辨率补丁映射降低高分辨率视觉编码成本，并利用运动、未来位置和动作语义进行跨帧空间约束，从而增强目标跟踪式推理和动作预测能力。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "感知"
+    ]
+  },
+  "title": "Unified Vision-Centric Pedestrian Crossing Action Prediction via Adaptive Patch Projection and Proactive Spatial Rectification",
+  "title_zh": "通过自适应补丁投影和主动空间校正的统一视觉中心行人过马路动作预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.07420"
+}

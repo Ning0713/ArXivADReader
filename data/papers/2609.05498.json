@@ -1,0 +1,47 @@
+{
+  "abstract": "This technical report studies the local weak observability of a planar bicycle-model vehicle when vehicle pose, planar LiDAR extrinsic calibration, and steering-angle bias are estimated jointly. A Lie-derivative-based nonlinear observability analysis is used to examine stationary, straight-line, constant-curvature, and combined straight-plus-arc motion. The resulting observability matrices and nullspaces describe how pose, LiDAR translation and yaw offsets, and steering bias become coupled under different motion primitives. Stationary motion and individual motion primitives retain unobservable directions, whereas the combination of straight and curved motion removes the identified degeneracies and yields full local weak observability of the seven-state system. The analysis provides a theoretical basis for selecting calibration trajectories that sufficiently excite both steering and sensor-extrinsic parameters.",
+  "abstract_zh": "本技术报告研究了在联合估计车辆姿态、平面激光雷达外部标定和转向角偏差时，平面自行车模型车辆的局部弱可观测性。采用基于李导数的非线性可观测性分析，考察了静止、直线、恒曲率以及组合的直线加弧线运动。得到的可观测性矩阵和零空间描述了在不同运动原语下，姿态、激光雷达平移和偏航偏移以及转向偏差是如何耦合的。静止运动和单独的运动原语保留了不可观测方向，而直线和曲线运动的组合消除了识别出的退化现象，从而实现了七状态系统的完全局部弱可观测性。该分析为选择能够充分激励转向和传感器外部参数的标定轨迹提供了理论基础。",
+  "arxiv_id": "2609.05498",
+  "arxiv_url": "https://arxiv.org/abs/2609.05498v1",
+  "authors": [
+    "Subodh Mishra"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-05498",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.058277+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.05498v1",
+  "published_at": "2026-08-28T09:37:55Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.05498v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文针对自动驾驶车辆中的平面自行车模型，分析车辆姿态、平面激光雷达外部参数和转向角偏差联合估计时的局部弱可观测性。研究表明，静止、单独直线运动或恒曲率运动会导致部分状态和标定参数不可观测，而结合直线与弧线的运动能够消除相关退化，实现七状态系统的完全局部弱可观测性，为自动驾驶车辆的传感器标定轨迹设计提供理论依据。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Observability Analysis of Joint Steering and Extrinsic Calibration",
+  "title_zh": "联合转向与外部标定的可观测性分析",
+  "translation_url": "https://hjfy.top/arxiv/2609.05498"
+}

@@ -1,0 +1,57 @@
+{
+  "abstract": "This paper presents a novel framework designed to enhance key object identification in autonomous driving. Existing methods primarily focus on either detecting objects independently or leveraging visual relationships, but they do not explicitly consider the ego vehicle's perspective in determining object importance. To address this gap, we propose a structured approach that integrates a virtual ego-vehicle representation and a modular object state predictor, enabling a more accurate estimation of object behaviors relative to the ego-vehicle. Subsequently, our framework employs spatial-temporal reasoning to refine key object identification, prioritizing objects based on their states and relative spatial information rather than relying solely on visual relationships. Experimental results on real-world driving datasets demonstrate the effectiveness of our approach in accurately detecting critical objects in complex traffic environments.",
+  "abstract_zh": "本文提出了一种新颖的框架，旨在增强自动驾驶中的关键对象识别。现有方法主要集中在独立检测对象或利用视觉关系，但在确定对象重要性时并未明确考虑自我车辆的视角。为了解决这一问题，我们提出了一种结构化的方法，整合了虚拟自我车辆表示和模块化对象状态预测器，使得能够更准确地估计对象相对于自我车辆的行为。随后，我们的框架采用时空推理来优化关键对象识别，优先考虑基于对象状态和相对空间信息的对象，而不仅仅依赖于视觉关系。在真实驾驶数据集上的实验结果表明，我们的方法在复杂交通环境中准确检测关键对象的有效性。",
+  "arxiv_id": "2609.07125",
+  "arxiv_url": "https://arxiv.org/abs/2609.07125v1",
+  "authors": [
+    "Shihong Ling",
+    "Yue Wan",
+    "Xiaowei Jia",
+    "Na Du"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-07125",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.338278+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.07125v1",
+  "published_at": "2026-09-07T07:19:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego-vehicle",
+      "ego vehicle",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.07125v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "A Two-Stage Framework for Ego-Centric Key Object Identification via Object State Prediction",
+  "title_zh": "基于对象状态预测的自我中心关键对象识别的两阶段框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.07125"
+}

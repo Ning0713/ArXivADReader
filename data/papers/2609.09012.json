@@ -1,0 +1,59 @@
+{
+  "abstract": "Spherical observations provide global visual context for 3D scene understanding. However, visual information is encoded in an angular domain, whereas the physical world is represented in Cartesian coordinates. This cross-space representation gap complicates geometric correspondence and semantic evidence aggregation. To delve into this challenge, we introduce Spheriverse, comprising $64,400$ temporally aligned spherical image-LiDAR pairs organized into 644 sequences. The dataset spans diverse scenes, illumination, and weather conditions, with fine-grained semantic classes. We further establish benchmarks for semantic occupancy prediction, semantic mapping, and 3D object detection, evaluating 30+ methods through overall and scene-wise comparisons. For dense prediction, we propose SphereOcc, an occupancy framework that couples spherical geometry modeling with semantic evidence retrieval. Cartesian-Spherical Representation Remodeling (CSRR) incorporates spherical range-azimuth geometry into Cartesian voxel features through region-wise modulation. Spherical Evidence Re-querying (SER) then conditions queries on voxel content and range-height-azimuth geometry to adaptively retrieve relevant semantic evidence from source spherical image features. SphereOcc achieves 13.91% mIoU and 24.65% GeoIoU, outperforming the respective best-performing methods, TPVFormer and SurroundOcc, by 1.70 and 2.10 percentage points. It also ranks first in both metrics across all five scenes, with consistent advantages across the evaluated spatial partitions and reduced fields of view. The established benchmark and source code will be available at https://feit-feiteng.github.io/Spheriverse.",
+  "abstract_zh": "球形观测为三维场景理解提供了全球视觉上下文。然而，视觉信息以角度域编码，而物理世界则以笛卡尔坐标表示。这种跨空间表示的差距使得几何对应关系和语义证据聚合变得复杂。为了解决这一挑战，我们引入了Spheriverse，包含$64,400$个时间对齐的球形图像-激光雷达（LiDAR）配对，组织成644个序列。该数据集涵盖了多样的场景、光照和天气条件，并具有细粒度的语义类别。我们进一步建立了语义占用预测、语义映射和三维物体检测的基准，通过整体和场景级比较评估了30多种方法。对于密集预测，我们提出了SphereOcc，一个将球形几何建模与语义证据检索相结合的占用框架。笛卡尔-球形表示重塑（CSRR）通过区域调制将球形范围-方位几何纳入笛卡尔体素特征。随后，球形证据重新查询（SER）根据体素内容和范围-高度-方位几何条件查询，以自适应地从源球形图像特征中检索相关的语义证据。SphereOcc在mIoU上达到了13.91%，在GeoIoU上达到了24.65%，分别比最佳表现方法TPVFormer和SurroundOcc高出1.70和2.10个百分点。在所有五个场景中，它在这两个指标上均排名第一，并在评估的空间分区和减少的视场中保持了一致的优势。所建立的基准和源代码将可在https://feit-feiteng.github.io/Spheriverse获取。",
+  "arxiv_id": "2609.09012",
+  "arxiv_url": "https://arxiv.org/abs/2609.09012v1",
+  "authors": [
+    "Fei Teng",
+    "Sheng Wu",
+    "Mengfei Duan",
+    "Guoqiang Zhao",
+    "Junhui Ma",
+    "Kai Luo",
+    "Siyu Li",
+    "Hao Shi",
+    "Zhiyong Li",
+    "Kailun Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-09012",
+  "categories": [
+    "cs.CV",
+    "cs.RO",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.463954+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.09012v1",
+  "published_at": "2026-09-08T16:47:25Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "occupancy",
+      "3d object detection",
+      "lidar",
+      "占用预测"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.09012v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文面向球形视觉观测与笛卡尔三维空间之间的表示差异，提出包含球形图像和LiDAR配对数据的Spheriverse数据集及多项三维场景理解基准，并设计SphereOcc进行语义占用预测。方法利用范围、方位和高度等球形几何信息，对体素特征进行表示重塑，并从球形图像特征中自适应检索语义证据。该工作与自动驾驶中的环视感知、LiDAR-视觉融合、三维检测、占用预测和语义地图构建高度相关。",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "多传感器融合",
+      "3D 检测"
+    ]
+  },
+  "title": "Spheriverse: 3D Scene Understanding from Spherical Observations in the Wild",
+  "title_zh": "Spheriverse：来自自然环境中球形观测的三维场景理解",
+  "translation_url": "https://hjfy.top/arxiv/2609.09012"
+}

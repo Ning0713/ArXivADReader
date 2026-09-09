@@ -1,0 +1,54 @@
+{
+  "abstract": "Synthesizing photorealistic driving videos along specified trajectories is essential for scalable closed-loop simulation. Reconstruction-based methods leverage neural rendering to synthesize geometrically consistent views, but often exhibit diverse artifacts and missing content when the viewpoint deviates from the training trajectory. In contrast, generative models can synthesize realistic views along arbitrary trajectories from vehicle sensor data, yet often struggle to maintain temporal and geometric consistency across frames. To combine the strengths of both, we propose PRG-Fusion, a framework for driving view synthesis that uses reconstruction evidence to orchestrate generative priors across regions. Specifically, we extract region-wise degradation evidence from reconstructed driving scenes and convert it into Preserve, Repair, and Generate (PRG) labels. At inference, these labels serve as a unified routing policy for region-aware spatiotemporal synthesis, orchestrating 3DGS appearance preservation, LiDAR-guided structural correction, and video-prior-driven content completion across Preserve, Repair, and Generate regions, respectively. We then follow a two-stage training paradigm, first establish geometric control from sparse LiDAR projections and subsequently learning appearance control from dense 3DGS renderings. Extensive experiments on Waymo demonstrate that PRG-Fusion achieves state-of-the-art overall performance in novel trajectory video synthesis, with superior visual quality and geometric fidelity while maintaining competitive view consistency under large trajectory shifts.",
+  "abstract_zh": "沿指定轨迹合成逼真的驾驶视频对于可扩展的闭环仿真至关重要。基于重建的方法利用神经渲染合成几何一致的视图，但当视点偏离训练轨迹时，往往会出现各种伪影和缺失内容。相比之下，生成模型能够从车辆传感器数据中沿任意轨迹合成真实的视图，但在保持帧间的时间和几何一致性方面常常面临挑战。为了结合两者的优势，我们提出了PRG-Fusion，一个用于驾驶视图合成的框架，该框架利用重建证据在不同区域之间协调生成先验。具体而言，我们从重建的驾驶场景中提取区域级降解证据，并将其转换为保留、修复和生成（Preserve, Repair, and Generate，PRG）标签。在推理过程中，这些标签作为区域感知时空合成的统一路由策略，分别协调3DGS外观保留、基于LiDAR的结构修正以及视频先验驱动的内容补全。然后，我们遵循两阶段的训练范式，首先从稀疏的LiDAR投影建立几何控制，然后从密集的3DGS渲染学习外观控制。在Waymo上的大量实验表明，PRG-Fusion在新轨迹视频合成中实现了最先进的整体性能，具有优越的视觉质量和几何保真度，同时在较大轨迹偏移下保持竞争性的视图一致性。",
+  "arxiv_id": "2609.06948",
+  "arxiv_url": "https://arxiv.org/abs/2609.06948v1",
+  "authors": [
+    "Sipeng He",
+    "Jialei Chen",
+    "Zhen Fang",
+    "Dongchun Ren",
+    "Feng Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-09#paper-2609-06948",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-09T09:20:50.317450+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.06948v1",
+  "published_at": "2026-09-07T02:34:51Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-09-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.06948v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-09"
+  },
+  "summary_zh": "本文面向自动驾驶闭环仿真中的新轨迹驾驶视频合成，提出PRG-Fusion框架。该方法依据重建场景的区域级退化证据，将区域划分为保留、修复和生成，并分别利用3DGS、LiDAR结构校正和视频生成先验进行区域化时空合成，从而兼顾视觉真实感、几何保真度与跨帧一致性。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "世界模型/生成",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "PRG-Fusion: Orchestrating Generative Priors with Reconstruction Evidence for Driving View Synthesis",
+  "title_zh": "PRG-Fusion：利用重建证据协调生成先验以进行驾驶视图合成",
+  "translation_url": "https://hjfy.top/arxiv/2609.06948"
+}
