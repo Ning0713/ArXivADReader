@@ -1,0 +1,56 @@
+{
+  "abstract": "Reinforcement learning (RL) has demonstrated considerable potential for autonomous driving decision-making. However, its deployment in urban autonomous driving, particularly at highly interactive unsignalized intersections, remains challenging, as learned policies may struggle to maintain both safety and robust decision-making in complex traffic situations. Conventional safety-filtering approaches typically employ fixed conservative constraints, which may improve safety at the cost of excessive intervention and degraded traffic efficiency. To address these limitations, we propose a Risk-sensitive and Uncertainty-aware Decision-making and Control (RUDC) framework for safe and robust autonomous driving. RUDC couples risk-sensitive distributional RL with ensemble-based policy uncertainty quantification, jointly accounting for tail risks in return distributions and uncertainty in learned policies. An uncertainty-aware high-order control barrier function (HOCBF)-based safety correction mechanism adaptively adjusts constraint strictness according to policy uncertainty, while a learnable residual predictor compensates for CBF model mismatches and discretization errors. Extensive simulations at unsignalized intersections demonstrate that RUDC achieves a favorable balance among safety, efficiency, and robustness, outperforming representative safe RL baselines under both nominal and challenging OOD and long-tail scenarios while satisfying real-time requirements.",
+  "abstract_zh": "强化学习（RL）在自主驾驶决策中展现了相当大的潜力。然而，其在城市自主驾驶中的应用，特别是在高度互动的无信号交叉口，仍然面临挑战，因为学习到的策略可能难以在复杂交通情况下保持安全性和稳健的决策能力。传统的安全过滤方法通常采用固定的保守约束，这可能在提高安全性的同时导致过度干预和交通效率下降。为了解决这些局限性，我们提出了一种风险敏感与不确定性感知的决策与控制框架（RUDC），旨在实现安全和稳健的自主驾驶。RUDC将风险敏感的分布式强化学习与基于集成的策略不确定性量化相结合，联合考虑收益分布中的尾部风险和学习策略中的不确定性。基于不确定性感知的高阶控制屏障函数（HOCBF）安全修正机制根据策略不确定性自适应调整约束的严格性，同时可学习的残差预测器补偿CBF模型的不匹配和离散化误差。在无信号交叉口的大量仿真中，RUDC在安全性、效率和稳健性之间实现了良好的平衡，优于代表性的安全强化学习基线，在名义和具有挑战性的OOD及长尾场景下均满足实时要求。",
+  "arxiv_id": "2609.09650",
+  "arxiv_url": "https://arxiv.org/abs/2609.09650v1",
+  "authors": [
+    "Zhuoren Li",
+    "Ran Yu",
+    "Weiqi Zhang",
+    "Ming Liu",
+    "Lu Xiong",
+    "Chen Sun",
+    "Bo Leng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-10#paper-2609-09650",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-10T09:19:56.416605+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.09650v1",
+  "published_at": "2026-09-09T03:03:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-09-10"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.09650v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-10"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "A Risk-Sensitive and Uncertainty-Aware Decision-Making and Control Framework for Safe and Robust Autonomous Driving",
+  "title_zh": "一种风险敏感与不确定性感知的安全稳健自主驾驶决策与控制框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.09650"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "Despite significant progress in odometry estimation, long-term drift remains a fundamental limitation of incremental pose integration, especially in large-scale or loop-free environments. Existing map-assisted methods can reduce drift, but often depend on dense maps, sensor-specific processing, or complex matching pipelines. We propose a lightweight open-source, odometry-agnostic correction method that aligns short trajectory segments to OpenStreetMap (OSM) lane centerlines. By formulating drift correction as a direct alignment between recent odometry and sparse lane geometry, the method enables efficient online operation without dense priors or expensive preprocessing. Experiments with LiDAR and visual odometry backends demonstrate consistent improvements, with particularly strong gains under severe drift.",
+  "abstract_zh": "尽管在里程计估计方面取得了显著进展，但长期漂移仍然是增量位姿集成的一个基本限制，尤其是在大规模或无环环境中。现有的地图辅助方法可以减少漂移，但通常依赖于密集地图、特定传感器的处理或复杂的匹配流程。我们提出了一种轻量级的开源、与里程计无关的校正方法，该方法将短轨迹段与OpenStreetMap (OSM) 车道中心线对齐。通过将漂移校正公式化为近期里程计与稀疏车道几何之间的直接对齐，该方法实现了高效的在线操作，而无需密集先验或昂贵的预处理。使用激光雷达和视觉里程计后端的实验表明，方法在严重漂移情况下表现出一致的改进，特别是在漂移严重时获得了显著提升。",
+  "arxiv_id": "2609.10336",
+  "arxiv_url": "https://arxiv.org/abs/2609.10336v1",
+  "authors": [
+    "Joaquin Caballero",
+    "Emilio Garcia-Fidalgo",
+    "Alberto Ortiz",
+    "Jarno Ralli"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-10#paper-2609-10336",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-10T09:19:56.429233+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.10336v1",
+  "published_at": "2026-09-09T15:33:40Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "lane",
+      "车道",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-09-10"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.10336v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-10"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "Odometer-Agnostic Drift Correction Using OpenStreetMap Lane Geometry",
+  "title_zh": "与里程计无关的漂移校正方法：基于OpenStreetMap车道几何",
+  "translation_url": "https://hjfy.top/arxiv/2609.10336"
+}

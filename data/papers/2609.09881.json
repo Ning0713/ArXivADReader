@@ -1,0 +1,62 @@
+{
+  "abstract": "Semantic segmentation for autonomous driving requires reliable detection of vulnerable road users (VRUs) despite heavy class imbalance. We introduce CLFTv2, a hierarchical camera-LiDAR fusion framework replacing global ViT attention with a Swin-based multi-scale encoder and a lightweight FPN-style residual decoder. Operating in the 2D perspective domain, CLFTv2 integrates multi-scale geometric cues through shifted-window attention and per-scale residual fusion, avoiding the computational overhead of query-matching decoders. Across three driving datasets, CLFTv2 consistently improves VRU recall. On ZOD, CLFTv2-Large achieves 53.5\\% mIoU, improving pedestrian IoU from 35.5\\% to 44.9\\% over the prior CLFT model. On Waymo, CLFTv2 reaches 61.7\\% mIoU. Additionally, a modality-isolation study suggests ViT's global receptive field yields stronger fusion gains only under dense LiDAR returns. Compared to a Swin-based Mask2Former adaptation, CLFTv2 requires 1.4$\\times$ fewer GFLOPs and delivers 2.2$\\times$ higher throughput, while achieving comparable overall accuracy. These results demonstrate that hierarchical local-attention fusion offers an efficient, scalable alternative to global-attention and query-based decoders for real-time on-vehicle perception in intelligent transportation systems. Source code is publicly available.",
+  "abstract_zh": "自动驾驶的语义分割需要可靠地检测脆弱道路用户（VRUs），尽管存在严重的类别不平衡。我们提出了CLFTv2，一个层次化的相机-激光雷达融合框架，用Swin基础的多尺度编码器替代了全局ViT注意力，并采用轻量级的FPN风格残差解码器。CLFTv2在二维视角域内运行，通过移位窗口注意力和每尺度残差融合集成多尺度几何线索，避免了查询匹配解码器的计算开销。在三个驾驶数据集上，CLFTv2始终提高了VRU的召回率。在ZOD数据集上，CLFTv2-Large达到了53.5%的mIoU，相比于之前的CLFT模型，行人IoU从35.5%提高到44.9%。在Waymo数据集上，CLFTv2达到了61.7%的mIoU。此外，模态隔离研究表明，ViT的全局感受野仅在密集的激光雷达返回下产生更强的融合增益。与基于Swin的Mask2Former适配相比，CLFTv2所需的GFLOPs减少了1.4倍，并且提供了2.2倍的更高吞吐量，同时实现了相当的整体准确性。这些结果表明，层次化局部注意力融合为智能交通系统中的实时车载感知提供了一种高效、可扩展的替代方案，取代了全局注意力和基于查询的解码器。源代码已公开。",
+  "arxiv_id": "2609.09881",
+  "arxiv_url": "https://arxiv.org/abs/2609.09881v1",
+  "authors": [
+    "Toomas Tahves",
+    "Mauro Bellone",
+    "Raivo Sell"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-10#paper-2609-09881",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-10T09:19:56.456577+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.09881v1",
+  "published_at": "2026-09-09T08:37:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "pedestrian",
+      "驾驶",
+      "交通",
+      "道路",
+      "行人",
+      "lidar",
+      "camera-lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-10"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.09881v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-10"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "CLFTv2: Efficient Camera-LiDAR Fusion for Semantic Segmentation via Hierarchical Feature Pyramids",
+  "title_zh": "CLFTv2：通过层次特征金字塔实现高效的相机-激光雷达融合用于语义分割",
+  "translation_url": "https://hjfy.top/arxiv/2609.09881"
+}

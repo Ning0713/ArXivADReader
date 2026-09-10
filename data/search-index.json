@@ -1,6 +1,128 @@
 {
-  "generated_at": "2026-09-09T09:29:56.845334+00:00",
+  "generated_at": "2026-09-10T09:23:58.288868+00:00",
   "items": [
+    {
+      "abstract": "Safety is a fundamental requirement for autonomous driving, yet existing end-to-end driving models still lack explicit risk-aware learning capacities. Existing rule-based risk models provide interpretable safety priors, yet their absolute risk scores depend on handcrafted functions, coefficients, and thresholds. Learning-based risk representations reduce part of this manual design, but their supervision often relies on occupancy-derived labels or heuristic cost values, which may not capture ego-conditioned planning risk. In this paper, we propose DRiF, a data-driven risk-field framework for safer end-to-end autonomous driving. DRiF learns a shared BEV feature with static map segmentation, dynamic risk prediction, and vehicle planning. For dynamic risk learning, DRiF converts rule-based safety priors into pairwise risk labels, and trains the risk field to preserve relative risk ordering instead of regressing handcrafted absolute scores. Experiments on Bench2Drive show that DRiF achieves competitive overall performance, with consistent improvements in driving score, success rate, and collision-related metrics. These results establish relative risk supervision as an effective way to connect explicit safety structure with end-to-end planning. The data and code will be publicly available.",
+      "abstract_zh": "安全性是自动驾驶的基本要求，但现有的端到端驾驶模型仍然缺乏明确的风险感知学习能力。现有的基于规则的风险模型提供了可解释的安全先验，但其绝对风险评分依赖于手工设计的函数、系数和阈值。基于学习的风险表示减少了部分手动设计，但其监督通常依赖于基于占用的标签或启发式成本值，这可能无法捕捉到自我条件规划的风险。在本文中，我们提出了DRiF，一个数据驱动的风险场框架，以实现更安全的端到端自动驾驶。DRiF通过静态地图分割、动态风险预测和车辆规划学习共享的鸟瞰视图（BEV）特征。对于动态风险学习，DRiF将基于规则的安全先验转换为成对的风险标签，并训练风险场以保持相对风险排序，而不是回归手工设计的绝对评分。在Bench2Drive上的实验表明，DRiF实现了具有竞争力的整体性能，在驾驶评分、成功率和与碰撞相关的指标上均有一致的改善。这些结果确立了相对风险监督作为将明确的安全结构与端到端规划连接的有效方式。数据和代码将公开提供。",
+      "authors": [
+        "Yuanxin Tian",
+        "Zhiyuan Liu",
+        "Jinhao Li",
+        "Zhenhua Xu",
+        "Wenhao Yu",
+        "Jianqiang Wang"
+      ],
+      "date": "2026-09-10",
+      "id": "2609.10377",
+      "tags": [
+        "感知",
+        "BEV/Occupancy",
+        "预测/规划"
+      ],
+      "title": "Data-Driven Risk Fields for Safer End-to-End Autonomous Driving",
+      "title_zh": "数据驱动的风险场以实现更安全的端到端自动驾驶",
+      "url": "/daily/2026-09-10/#paper-2609-10377"
+    },
+    {
+      "abstract": "Despite significant progress in odometry estimation, long-term drift remains a fundamental limitation of incremental pose integration, especially in large-scale or loop-free environments. Existing map-assisted methods can reduce drift, but often depend on dense maps, sensor-specific processing, or complex matching pipelines. We propose a lightweight open-source, odometry-agnostic correction method that aligns short trajectory segments to OpenStreetMap (OSM) lane centerlines. By formulating drift correction as a direct alignment between recent odometry and sparse lane geometry, the method enables efficient online operation without dense priors or expensive preprocessing. Experiments with LiDAR and visual odometry backends demonstrate consistent improvements, with particularly strong gains under severe drift.",
+      "abstract_zh": "尽管在里程计估计方面取得了显著进展，但长期漂移仍然是增量位姿集成的一个基本限制，尤其是在大规模或无环环境中。现有的地图辅助方法可以减少漂移，但通常依赖于密集地图、特定传感器的处理或复杂的匹配流程。我们提出了一种轻量级的开源、与里程计无关的校正方法，该方法将短轨迹段与OpenStreetMap (OSM) 车道中心线对齐。通过将漂移校正公式化为近期里程计与稀疏车道几何之间的直接对齐，该方法实现了高效的在线操作，而无需密集先验或昂贵的预处理。使用激光雷达和视觉里程计后端的实验表明，方法在严重漂移情况下表现出一致的改进，特别是在漂移严重时获得了显著提升。",
+      "authors": [
+        "Joaquin Caballero",
+        "Emilio Garcia-Fidalgo",
+        "Alberto Ortiz",
+        "Jarno Ralli"
+      ],
+      "date": "2026-09-10",
+      "id": "2609.10336",
+      "tags": [
+        "LiDAR/点云",
+        "深度/几何",
+        "预测/规划"
+      ],
+      "title": "Odometer-Agnostic Drift Correction Using OpenStreetMap Lane Geometry",
+      "title_zh": "与里程计无关的漂移校正方法：基于OpenStreetMap车道几何",
+      "url": "/daily/2026-09-10/#paper-2609-10336"
+    },
+    {
+      "abstract": "Transferring the rich priors of large 2D foundation models to sparse 3D LiDAR remains challenging, as training native 3D foundation models at comparable scale is limited by data and annotation scarcity. We introduce a LiDAR-conditioned diffusion model trained on pseudo-labels from off-the-shelf 2D foundation models. The model supports multiple output modalities, including depth, semantic segmentation and instance prediction, selectable via a textual task prompt. Because the model is conditioned on LiDAR, both its outputs and its intermediate UNet features can be projected back onto the input point cloud, enabling analysis of a 3D representation learned entirely under 2D supervision. We study this representation directly in point-cloud space, explicitly excluding raw spatial coordinates to isolate feature content from projection geometry. Linear probes recover up to ~23% Mean Intersection over Union (MIoU) on 3D semantic classes, compared to ~3.5% for a matched Gaussian-noise control, indicating substantial non-trivial structure. Pairwise cosine similarity across modality-specific feature streams reveals a layered organization. Early encoder layers remain weakly aligned across modalities while individually decodable, intermediate layers converge toward a shared representation, and decoder layers re-specialize toward task-specific outputs. These findings indicate that LiDAR-conditioned diffusion models can induce structured 3D representations from 2D supervision alone, with a modality-dependent manifold that locally unifies near a shared bottleneck. This positions diffusion as a viable mechanism for transferring large-scale 2D priors into sparse 3D domains.",
+      "abstract_zh": "将大型2D基础模型的丰富先验知识转移到稀疏的3D LiDAR上仍然具有挑战性，因为在可比规模上训练原生3D基础模型受到数据和标注稀缺的限制。我们提出了一种基于LiDAR条件的扩散模型，该模型在现成的2D基础模型的伪标签上进行训练。该模型支持多种输出模式，包括深度、语义分割和实例预测，可以通过文本任务提示进行选择。由于模型是基于LiDAR条件的，因此其输出和中间的UNet特征都可以投影回输入点云，从而实现对完全在2D监督下学习的3D表示的分析。我们直接在点云空间中研究这种表示，明确排除原始空间坐标，以将特征内容与投影几何分离。线性探测器在3D语义类别上恢复了约23%的平均交并比（Mean Intersection over Union, MIoU），而匹配的高斯噪声对照组仅为约3.5%，这表明存在显著的非平凡结构。跨模态特征流的成对余弦相似性揭示了分层组织。早期编码器层在各模态间保持弱对齐，同时可以单独解码，中间层趋向于共享表示，而解码器层则重新专门化为任务特定的输出。这些发现表明，基于LiDAR条件的扩散模型可以仅通过2D监督诱导结构化的3D表示，并且具有依赖模态的流形，在共享瓶颈附近局部统一。这使得扩散成为将大规模2D先验知识转移到稀疏3D领域的可行机制。",
+      "authors": [
+        "Samed Doğan",
+        "Nico Leuze",
+        "Alfred Schöttl"
+      ],
+      "date": "2026-09-10",
+      "id": "2609.10322",
+      "tags": [
+        "深度/几何",
+        "LiDAR/点云",
+        "感知"
+      ],
+      "title": "Geometry Without Coordinates: LiDAR Diffusion as a 3D Feature Bridge",
+      "title_zh": "无坐标几何：LiDAR扩散作为3D特征桥梁",
+      "url": "/daily/2026-09-10/#paper-2609-10322"
+    },
+    {
+      "abstract": "Semantic segmentation for autonomous driving requires reliable detection of vulnerable road users (VRUs) despite heavy class imbalance. We introduce CLFTv2, a hierarchical camera-LiDAR fusion framework replacing global ViT attention with a Swin-based multi-scale encoder and a lightweight FPN-style residual decoder. Operating in the 2D perspective domain, CLFTv2 integrates multi-scale geometric cues through shifted-window attention and per-scale residual fusion, avoiding the computational overhead of query-matching decoders. Across three driving datasets, CLFTv2 consistently improves VRU recall. On ZOD, CLFTv2-Large achieves 53.5\\% mIoU, improving pedestrian IoU from 35.5\\% to 44.9\\% over the prior CLFT model. On Waymo, CLFTv2 reaches 61.7\\% mIoU. Additionally, a modality-isolation study suggests ViT's global receptive field yields stronger fusion gains only under dense LiDAR returns. Compared to a Swin-based Mask2Former adaptation, CLFTv2 requires 1.4$\\times$ fewer GFLOPs and delivers 2.2$\\times$ higher throughput, while achieving comparable overall accuracy. These results demonstrate that hierarchical local-attention fusion offers an efficient, scalable alternative to global-attention and query-based decoders for real-time on-vehicle perception in intelligent transportation systems. Source code is publicly available.",
+      "abstract_zh": "自动驾驶的语义分割需要可靠地检测脆弱道路用户（VRUs），尽管存在严重的类别不平衡。我们提出了CLFTv2，一个层次化的相机-激光雷达融合框架，用Swin基础的多尺度编码器替代了全局ViT注意力，并采用轻量级的FPN风格残差解码器。CLFTv2在二维视角域内运行，通过移位窗口注意力和每尺度残差融合集成多尺度几何线索，避免了查询匹配解码器的计算开销。在三个驾驶数据集上，CLFTv2始终提高了VRU的召回率。在ZOD数据集上，CLFTv2-Large达到了53.5%的mIoU，相比于之前的CLFT模型，行人IoU从35.5%提高到44.9%。在Waymo数据集上，CLFTv2达到了61.7%的mIoU。此外，模态隔离研究表明，ViT的全局感受野仅在密集的激光雷达返回下产生更强的融合增益。与基于Swin的Mask2Former适配相比，CLFTv2所需的GFLOPs减少了1.4倍，并且提供了2.2倍的更高吞吐量，同时实现了相当的整体准确性。这些结果表明，层次化局部注意力融合为智能交通系统中的实时车载感知提供了一种高效、可扩展的替代方案，取代了全局注意力和基于查询的解码器。源代码已公开。",
+      "authors": [
+        "Toomas Tahves",
+        "Mauro Bellone",
+        "Raivo Sell"
+      ],
+      "date": "2026-09-10",
+      "id": "2609.09881",
+      "tags": [
+        "感知",
+        "多传感器融合",
+        "LiDAR/点云"
+      ],
+      "title": "CLFTv2: Efficient Camera-LiDAR Fusion for Semantic Segmentation via Hierarchical Feature Pyramids",
+      "title_zh": "CLFTv2：通过层次特征金字塔实现高效的相机-激光雷达融合用于语义分割",
+      "url": "/daily/2026-09-10/#paper-2609-09881"
+    },
+    {
+      "abstract": "Reinforcement learning (RL) has demonstrated considerable potential for autonomous driving decision-making. However, its deployment in urban autonomous driving, particularly at highly interactive unsignalized intersections, remains challenging, as learned policies may struggle to maintain both safety and robust decision-making in complex traffic situations. Conventional safety-filtering approaches typically employ fixed conservative constraints, which may improve safety at the cost of excessive intervention and degraded traffic efficiency. To address these limitations, we propose a Risk-sensitive and Uncertainty-aware Decision-making and Control (RUDC) framework for safe and robust autonomous driving. RUDC couples risk-sensitive distributional RL with ensemble-based policy uncertainty quantification, jointly accounting for tail risks in return distributions and uncertainty in learned policies. An uncertainty-aware high-order control barrier function (HOCBF)-based safety correction mechanism adaptively adjusts constraint strictness according to policy uncertainty, while a learnable residual predictor compensates for CBF model mismatches and discretization errors. Extensive simulations at unsignalized intersections demonstrate that RUDC achieves a favorable balance among safety, efficiency, and robustness, outperforming representative safe RL baselines under both nominal and challenging OOD and long-tail scenarios while satisfying real-time requirements.",
+      "abstract_zh": "强化学习（RL）在自主驾驶决策中展现了相当大的潜力。然而，其在城市自主驾驶中的应用，特别是在高度互动的无信号交叉口，仍然面临挑战，因为学习到的策略可能难以在复杂交通情况下保持安全性和稳健的决策能力。传统的安全过滤方法通常采用固定的保守约束，这可能在提高安全性的同时导致过度干预和交通效率下降。为了解决这些局限性，我们提出了一种风险敏感与不确定性感知的决策与控制框架（RUDC），旨在实现安全和稳健的自主驾驶。RUDC将风险敏感的分布式强化学习与基于集成的策略不确定性量化相结合，联合考虑收益分布中的尾部风险和学习策略中的不确定性。基于不确定性感知的高阶控制屏障函数（HOCBF）安全修正机制根据策略不确定性自适应调整约束的严格性，同时可学习的残差预测器补偿CBF模型的不匹配和离散化误差。在无信号交叉口的大量仿真中，RUDC在安全性、效率和稳健性之间实现了良好的平衡，优于代表性的安全强化学习基线，在名义和具有挑战性的OOD及长尾场景下均满足实时要求。",
+      "authors": [
+        "Zhuoren Li",
+        "Ran Yu",
+        "Weiqi Zhang",
+        "Ming Liu",
+        "Lu Xiong",
+        "Chen Sun",
+        "Bo Leng"
+      ],
+      "date": "2026-09-10",
+      "id": "2609.09650",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "感知"
+      ],
+      "title": "A Risk-Sensitive and Uncertainty-Aware Decision-Making and Control Framework for Safe and Robust Autonomous Driving",
+      "title_zh": "一种风险敏感与不确定性感知的安全稳健自主驾驶决策与控制框架",
+      "url": "/daily/2026-09-10/#paper-2609-09650"
+    },
+    {
+      "abstract": "World Action Models (WAMs) couple predictive world modeling with action generation, allowing anticipated future states to guide agent behavior. Although WAMs are rapidly advancing embodied AI, general-purpose counterparts remain largely unexplored in games. Existing game-oriented approaches often combine action-conditioned world models with external policies and reward functions to realize WAM-like decision-making, yet they operate mainly in 2D visual observation space and do not instantiate persistent 3D geometry. Extending this paradigm to 3D games introduces a distinct challenge. In autonomous driving and robotics, the physical environment exists independently of the model, providing a persistent 3D world in which selected actions can be executed. Games have no such external substrate; the virtual world itself must be instantiated. Most playable games require a persistent and navigable space, while 3D games additionally require explicit geometry that supports movement and interaction. Action-conditioned video rollouts provide visual observations but not this spatial representation. We present \\textsc{Valerant}, a training-free framework that transforms a pretrained action-conditioned world model into a WAM for exploring and constructing 3D game maps. By coupling predictive visual rollouts with SLAM-based spatial reconstruction and exploration-driven action selection, \\textsc{Valerant} progressively transforms a single image into a persistent 3D game map. This framework extends WAM-based interaction beyond 2D visual simulation and offers a new approach to reducing manual effort in 3D game-map creation.",
+      "abstract_zh": "世界动作模型（WAMs）将预测性世界建模与动作生成相结合，使得预期的未来状态能够指导智能体行为。尽管WAMs在具身人工智能领域迅速发展，但其通用型对应物在游戏中仍然未得到充分探索。现有的面向游戏的方法通常将动作条件的世界模型与外部策略和奖励函数结合，以实现类似WAM的决策制定，但它们主要在二维视觉观察空间中运作，并未实例化持久的三维几何结构。将这一范式扩展到三维游戏中带来了独特的挑战。在自动驾驶和机器人技术中，物理环境独立于模型存在，提供了一个持久的三维世界，在其中可以执行选定的动作。而游戏并没有这样的外部基底；虚拟世界本身必须被实例化。大多数可玩游戏需要一个持久且可导航的空间，而三维游戏还需要支持移动和交互的显式几何结构。动作条件的视频回放提供了视觉观察，但并不具备这种空间表示。我们提出了 extsc{Valerant}，一个无训练框架，将预训练的动作条件世界模型转化为WAM，以探索和构建三维游戏地图。通过将预测性视觉回放与基于SLAM的空间重建和探索驱动的动作选择相结合， extsc{Valerant}逐步将单幅图像转化为持久的三维游戏地图。该框架将基于WAM的交互扩展到二维视觉模拟之外，并提供了一种减少三维游戏地图创建手动工作的新方法。",
+      "authors": [
+        "Yiran Qiao",
+        "Feng Wang",
+        "Jing Ma"
+      ],
+      "date": "2026-09-10",
+      "id": "2609.09418",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成",
+        "地图/定位"
+      ],
+      "title": "Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration",
+      "title_zh": "Valerant：一种通过动作条件的世界模型探索实现的自动可导航游戏地图生成器",
+      "url": "/daily/2026-09-10/#paper-2609-09418"
+    },
     {
       "abstract": "Spherical observations provide global visual context for 3D scene understanding. However, visual information is encoded in an angular domain, whereas the physical world is represented in Cartesian coordinates. This cross-space representation gap complicates geometric correspondence and semantic evidence aggregation. To delve into this challenge, we introduce Spheriverse, comprising $64,400$ temporally aligned spherical image-LiDAR pairs organized into 644 sequences. The dataset spans diverse scenes, illumination, and weather conditions, with fine-grained semantic classes. We further establish benchmarks for semantic occupancy prediction, semantic mapping, and 3D object detection, evaluating 30+ methods through overall and scene-wise comparisons. For dense prediction, we propose SphereOcc, an occupancy framework that couples spherical geometry modeling with semantic evidence retrieval. Cartesian-Spherical Representation Remodeling (CSRR) incorporates spherical range-azimuth geometry into Cartesian voxel features through region-wise modulation. Spherical Evidence Re-querying (SER) then conditions queries on voxel content and range-height-azimuth geometry to adaptively retrieve relevant semantic evidence from source spherical image features. SphereOcc achieves 13.91% mIoU and 24.65% GeoIoU, outperforming the respective best-performing methods, TPVFormer and SurroundOcc, by 1.70 and 2.10 percentage points. It also ranks first in both metrics across all five scenes, with consistent advantages across the evaluated spatial partitions and reduced fields of view. The established benchmark and source code will be available at https://feit-feiteng.github.io/Spheriverse.",
       "abstract_zh": "球形观测为三维场景理解提供了全球视觉上下文。然而，视觉信息以角度域编码，而物理世界则以笛卡尔坐标表示。这种跨空间表示的差距使得几何对应关系和语义证据聚合变得复杂。为了解决这一挑战，我们引入了Spheriverse，包含$64,400$个时间对齐的球形图像-激光雷达（LiDAR）配对，组织成644个序列。该数据集涵盖了多样的场景、光照和天气条件，并具有细粒度的语义类别。我们进一步建立了语义占用预测、语义映射和三维物体检测的基准，通过整体和场景级比较评估了30多种方法。对于密集预测，我们提出了SphereOcc，一个将球形几何建模与语义证据检索相结合的占用框架。笛卡尔-球形表示重塑（CSRR）通过区域调制将球形范围-方位几何纳入笛卡尔体素特征。随后，球形证据重新查询（SER）根据体素内容和范围-高度-方位几何条件查询，以自适应地从源球形图像特征中检索相关的语义证据。SphereOcc在mIoU上达到了13.91%，在GeoIoU上达到了24.65%，分别比最佳表现方法TPVFormer和SurroundOcc高出1.70和2.10个百分点。在所有五个场景中，它在这两个指标上均排名第一，并在评估的空间分区和减少的视场中保持了一致的优势。所建立的基准和源代码将可在https://feit-feiteng.github.io/Spheriverse获取。",

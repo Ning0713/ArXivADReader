@@ -1,0 +1,51 @@
+{
+  "abstract": "Transferring the rich priors of large 2D foundation models to sparse 3D LiDAR remains challenging, as training native 3D foundation models at comparable scale is limited by data and annotation scarcity. We introduce a LiDAR-conditioned diffusion model trained on pseudo-labels from off-the-shelf 2D foundation models. The model supports multiple output modalities, including depth, semantic segmentation and instance prediction, selectable via a textual task prompt. Because the model is conditioned on LiDAR, both its outputs and its intermediate UNet features can be projected back onto the input point cloud, enabling analysis of a 3D representation learned entirely under 2D supervision. We study this representation directly in point-cloud space, explicitly excluding raw spatial coordinates to isolate feature content from projection geometry. Linear probes recover up to ~23% Mean Intersection over Union (MIoU) on 3D semantic classes, compared to ~3.5% for a matched Gaussian-noise control, indicating substantial non-trivial structure. Pairwise cosine similarity across modality-specific feature streams reveals a layered organization. Early encoder layers remain weakly aligned across modalities while individually decodable, intermediate layers converge toward a shared representation, and decoder layers re-specialize toward task-specific outputs. These findings indicate that LiDAR-conditioned diffusion models can induce structured 3D representations from 2D supervision alone, with a modality-dependent manifold that locally unifies near a shared bottleneck. This positions diffusion as a viable mechanism for transferring large-scale 2D priors into sparse 3D domains.",
+  "abstract_zh": "将大型2D基础模型的丰富先验知识转移到稀疏的3D LiDAR上仍然具有挑战性，因为在可比规模上训练原生3D基础模型受到数据和标注稀缺的限制。我们提出了一种基于LiDAR条件的扩散模型，该模型在现成的2D基础模型的伪标签上进行训练。该模型支持多种输出模式，包括深度、语义分割和实例预测，可以通过文本任务提示进行选择。由于模型是基于LiDAR条件的，因此其输出和中间的UNet特征都可以投影回输入点云，从而实现对完全在2D监督下学习的3D表示的分析。我们直接在点云空间中研究这种表示，明确排除原始空间坐标，以将特征内容与投影几何分离。线性探测器在3D语义类别上恢复了约23%的平均交并比（Mean Intersection over Union, MIoU），而匹配的高斯噪声对照组仅为约3.5%，这表明存在显著的非平凡结构。跨模态特征流的成对余弦相似性揭示了分层组织。早期编码器层在各模态间保持弱对齐，同时可以单独解码，中间层趋向于共享表示，而解码器层则重新专门化为任务特定的输出。这些发现表明，基于LiDAR条件的扩散模型可以仅通过2D监督诱导结构化的3D表示，并且具有依赖模态的流形，在共享瓶颈附近局部统一。这使得扩散成为将大规模2D先验知识转移到稀疏3D领域的可行机制。",
+  "arxiv_id": "2609.10322",
+  "arxiv_url": "https://arxiv.org/abs/2609.10322v1",
+  "authors": [
+    "Samed Doğan",
+    "Nico Leuze",
+    "Alfred Schöttl"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-10#paper-2609-10322",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-10T09:19:56.471846+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.10322v1",
+  "published_at": "2026-09-09T15:26:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "intersection",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 17
+  },
+  "seen_dates": [
+    "2026-09-10"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.10322v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-10"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "感知"
+    ]
+  },
+  "title": "Geometry Without Coordinates: LiDAR Diffusion as a 3D Feature Bridge",
+  "title_zh": "无坐标几何：LiDAR扩散作为3D特征桥梁",
+  "translation_url": "https://hjfy.top/arxiv/2609.10322"
+}

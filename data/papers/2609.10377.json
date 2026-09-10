@@ -1,0 +1,61 @@
+{
+  "abstract": "Safety is a fundamental requirement for autonomous driving, yet existing end-to-end driving models still lack explicit risk-aware learning capacities. Existing rule-based risk models provide interpretable safety priors, yet their absolute risk scores depend on handcrafted functions, coefficients, and thresholds. Learning-based risk representations reduce part of this manual design, but their supervision often relies on occupancy-derived labels or heuristic cost values, which may not capture ego-conditioned planning risk. In this paper, we propose DRiF, a data-driven risk-field framework for safer end-to-end autonomous driving. DRiF learns a shared BEV feature with static map segmentation, dynamic risk prediction, and vehicle planning. For dynamic risk learning, DRiF converts rule-based safety priors into pairwise risk labels, and trains the risk field to preserve relative risk ordering instead of regressing handcrafted absolute scores. Experiments on Bench2Drive show that DRiF achieves competitive overall performance, with consistent improvements in driving score, success rate, and collision-related metrics. These results establish relative risk supervision as an effective way to connect explicit safety structure with end-to-end planning. The data and code will be publicly available.",
+  "abstract_zh": "安全性是自动驾驶的基本要求，但现有的端到端驾驶模型仍然缺乏明确的风险感知学习能力。现有的基于规则的风险模型提供了可解释的安全先验，但其绝对风险评分依赖于手工设计的函数、系数和阈值。基于学习的风险表示减少了部分手动设计，但其监督通常依赖于基于占用的标签或启发式成本值，这可能无法捕捉到自我条件规划的风险。在本文中，我们提出了DRiF，一个数据驱动的风险场框架，以实现更安全的端到端自动驾驶。DRiF通过静态地图分割、动态风险预测和车辆规划学习共享的鸟瞰视图（BEV）特征。对于动态风险学习，DRiF将基于规则的安全先验转换为成对的风险标签，并训练风险场以保持相对风险排序，而不是回归手工设计的绝对评分。在Bench2Drive上的实验表明，DRiF实现了具有竞争力的整体性能，在驾驶评分、成功率和与碰撞相关的指标上均有一致的改善。这些结果确立了相对风险监督作为将明确的安全结构与端到端规划连接的有效方式。数据和代码将公开提供。",
+  "arxiv_id": "2609.10377",
+  "arxiv_url": "https://arxiv.org/abs/2609.10377v1",
+  "authors": [
+    "Yuanxin Tian",
+    "Zhiyuan Liu",
+    "Jinhao Li",
+    "Zhenhua Xu",
+    "Wenhao Yu",
+    "Jianqiang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-10#paper-2609-10377",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-10T09:19:56.430458+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.10377v1",
+  "published_at": "2026-09-09T16:05:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "bev",
+      "occupancy"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-10"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.10377v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-10"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "预测/规划"
+    ]
+  },
+  "title": "Data-Driven Risk Fields for Safer End-to-End Autonomous Driving",
+  "title_zh": "数据驱动的风险场以实现更安全的端到端自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.10377"
+}
