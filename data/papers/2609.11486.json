@@ -1,0 +1,45 @@
+{
+  "abstract": "Optical flow methods typically rely on task-specific inductive biases, such as correlation volumes, feature warping, and iterative refinement, among others, to reach high accuracy. While effective, such biases constrain the model to predefined heuristics, which can limit its expressivity and lead to more complex pipelines and additional computational cost. We present FreeFlow, a hierarchical transformer built without any flow-specific components, using instead a single feed-forward encoder--decoder. FreeFlow combines three attention variants: window attention for local processing, shifted-window attention for cross-window information exchange, and a global attention operating at a reduced resolution. The resulting architecture scales naturally with model capacity, enabling a consistent accuracy gain from small to large variants. Despite the absence of standard inductive biases, FreeFlow achieves state-of-the-art results on major benchmarks, including Sintel (0.68/1.48 EPE on Clean/Final), KITTI-2015 (3.23 Fl-all), and Spring (3.192 1px), while remaining memory efficient at 1080p inference.",
+  "abstract_zh": "光流方法通常依赖于特定任务的归纳偏置，例如相关体积、特征扭曲和迭代优化等，以达到高准确率。虽然这些方法有效，但它们将模型限制在预定义的启发式规则中，这可能限制其表现力，并导致更复杂的管道和额外的计算成本。我们提出了FreeFlow，一种不包含任何光流特定组件的层次化变换器，而是使用一个单一的前馈编码器-解码器。FreeFlow结合了三种注意力变体：用于局部处理的窗口注意力、用于跨窗口信息交换的移位窗口注意力，以及在降低分辨率下运行的全局注意力。最终的架构自然地随着模型容量的增加而扩展，使得从小型到大型变体的一致准确性提升成为可能。尽管缺乏标准的归纳偏置，FreeFlow在主要基准测试中仍然取得了最先进的结果，包括Sintel（清晰/最终的EPE为0.68/1.48）、KITTI-2015（Fl-all为3.23）和Spring（1像素为3.192），同时在1080p推理时保持内存效率。",
+  "arxiv_id": "2609.11486",
+  "arxiv_url": "https://arxiv.org/abs/2609.11486v1",
+  "authors": [
+    "Vladislav Bargatin",
+    "Alexander Yakovenko",
+    "Khaled Abud",
+    "Dmitriy Vatolin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-11#paper-2609-11486",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-11T09:18:29.257694+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.11486v1",
+  "published_at": "2026-09-10T12:55:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.11486v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": []
+  },
+  "title": "FreeFlow: A Bias-free Hierarchical Transformer for Optical Flow Estimation",
+  "title_zh": "FreeFlow：一种无偏见的层次化变换器用于光流估计",
+  "translation_url": "https://hjfy.top/arxiv/2609.11486"
+}

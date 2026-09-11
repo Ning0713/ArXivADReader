@@ -1,0 +1,53 @@
+{
+  "abstract": "Language Gaussian fields implicitly assume that the primitive carrying semantics remains identifiable across views. This assumption breaks in scalable anchor-decoded representations, where persistent anchors generate view-conditioned child Gaussians whose geometry and appearance vary with the camera. We introduce Ours, a persistent language field for such structured Gaussian scenes. Our key idea is semantic ownership: transient children route observations, while persistent decoder slots and their parent anchors own the language field. We use alpha-compositing responsibilities to accumulate additive directional evidence at slots; these statistics marginalize exactly to anchors. We then complete weakly supported slots with anchor-aligned evidence while preserving the anchor direction, and represent slot detail through low-rank residuals in anchor-relative semantic coordinates. Our primary model, Ours (base), stores anchor features together with compact slot residuals. Ours (light) retains only anchor features, whereas Ours (max) stores the full-dimensional completed slot features explicitly. Without scene-specific semantic optimization, Ours (base) nearly matches Ours (max) across KITTI, Virtual KITTI, and Waymo. On KITTI, it achieves 34.19 2D mIoU with a 2.72 GiB effective feature footprint, compared with 34.20 mIoU and 12.90 GiB for Ours (max). The same accuracy-storage trend holds on Virtual KITTI and Waymo. These results show that language fields on view-conditioned splats require persistent semantic ownership, conserved evidence, and a hierarchy that balances stability, detail, and representation cost. Our code, checkpoints, and benchmark suite will be publicly available.",
+  "abstract_zh": "语言高斯场隐含假设承载语义的原始元素在不同视图中是可识别的。然而，在可扩展的锚点解码表示中，这一假设被打破，因为持久锚点生成的视图条件子高斯的几何形状和外观会随相机而变化。我们提出了Ours，这是一个用于此类结构化高斯场景的持久语言场。我们的关键思想是语义归属：短暂的子元素路由观测，而持久的解码器槽及其父锚点则拥有语言场。我们使用α合成责任在槽中累积附加的方向性证据；这些统计数据精确地边际化到锚点。然后，我们在保持锚点方向的同时，用与锚点对齐的证据来补全弱支持的槽，并通过锚点相对语义坐标中的低秩残差来表示槽的细节。我们的主要模型Ours (base)将锚点特征与紧凑的槽残差一起存储。Ours (light)仅保留锚点特征，而Ours (max)则显式存储完整维度的补全槽特征。在没有场景特定语义优化的情况下，Ours (base)在KITTI、Virtual KITTI和Waymo上的表现几乎与Ours (max)相当。在KITTI上，它以2.72 GiB的有效特征占用实现了34.19的2D mIoU，而Ours (max)则为34.20 mIoU和12.90 GiB。相同的准确性-存储趋势在Virtual KITTI和Waymo上也成立。这些结果表明，视图条件的喷溅上的语言场需要持久的语义归属、保留的证据以及一种平衡稳定性、细节和表示成本的层次结构。我们的代码、检查点和基准套件将公开发布。",
+  "arxiv_id": "2609.11616",
+  "arxiv_url": "https://arxiv.org/abs/2609.11616v1",
+  "authors": [
+    "Runyi Yang",
+    "Deheng Zhang",
+    "Xiaoye Wang",
+    "Mengjiao Ma",
+    "Lei Sun",
+    "Kanzhi Wu",
+    "Ajad Chhatkuli",
+    "Luc Van Gool",
+    "Danda Pani Paudel"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-11#paper-2609-11616",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-11T09:18:29.275689+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.11616v1",
+  "published_at": "2026-09-10T14:31:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.11616v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "世界模型/生成"
+    ]
+  },
+  "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+  "title_zh": "LangStreet：用于锚点解码街道高斯的持久语言场",
+  "translation_url": "https://hjfy.top/arxiv/2609.11616"
+}

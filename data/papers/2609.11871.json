@@ -1,0 +1,51 @@
+{
+  "abstract": "Agent-based model predictive control (AMPC) has recently been proposed as a distributed scheme that collaborates with all agents to achieve optimal holistic performance. However, its optimality highly depends on the prediction accuracy that requires all agents or their contributions to be known, which is too idealistic for actual implementation. This research proposes a novel practical hybrid control scheme - learning agent-based MPC (LAMPC), combining the model-based AMPC approach and data-based learning methods to improve the holistic vehicle performance for multi-agent systems. The Gaussian process regression (GPR) enhanced by an online data management strategy serves as the learning core to predict unknown contributions. A novel multi-step prediction mechanism leverages the GPR learning potential along the horizon. The predicted mean, representing the learned unknown contributions, completes the system model in the MPC for more accurate control. Meanwhile, a stochastic framework is formulated to guarantee control safety and feasibility using soft chance constraints based on the prediction variance. Both simulations and experiments show that, with the learning capability, LAMPC outperforms the traditional AMPC. LAMPC can achieve higher tracking performance in well-learned scenarios and always guarantee constraint satisfaction even in less-learned scenarios. Moreover, the proposed hybrid control scheme is efficient for real-time implementation and is flexible to any control agent topology.",
+  "abstract_zh": "基于智能体的模型预测控制（AMPC）最近被提出作为一种分布式方案，通过所有智能体的协作来实现最佳的整体性能。然而，其最优性高度依赖于预测精度，这要求所有智能体或其贡献必须是已知的，这对于实际实施来说过于理想化。本研究提出了一种新颖的实用混合控制方案——学习型基于智能体的模型预测控制（LAMPC），结合了基于模型的AMPC方法和基于数据的学习方法，以提高多智能体系统的整体车辆性能。增强的高斯过程回归（GPR）结合在线数据管理策略作为学习核心，用于预测未知贡献。一个新颖的多步预测机制利用GPR的学习潜力进行前瞻性预测。预测均值代表学习到的未知贡献，补全了MPC中的系统模型，从而实现更精确的控制。同时，构建了一个随机框架，以基于预测方差使用软机会约束来保证控制的安全性和可行性。仿真和实验结果表明，凭借学习能力，LAMPC的性能优于传统的AMPC。在经过良好学习的场景中，LAMPC能够实现更高的跟踪性能，并且即使在学习较少的场景中也始终保证约束的满足。此外，所提出的混合控制方案在实时实施中高效，并且对任何控制智能体拓扑具有灵活性。",
+  "arxiv_id": "2609.11871",
+  "arxiv_url": "https://arxiv.org/abs/2609.11871v1",
+  "authors": [
+    "Jiaming Zhong",
+    "Reza Valiollahi Mehrizi",
+    "Mohammad Pirani",
+    "Chao Yu",
+    "Alireza Kasaiezadeh",
+    "Yash Vardhan Pant",
+    "Amir Khajepour"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-11#paper-2609-11871",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-11T09:18:29.206051+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.11871v1",
+  "published_at": "2026-09-10T17:43:16Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.11871v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-11"
+  },
+  "summary_zh": "提出一种面向多智能体车辆控制的学习型MPC方法，利用高斯过程回归在线预测未知智能体贡献，并通过多步预测补全控制模型。方法结合基于预测不确定性的软机会约束，在提升车辆跟踪性能的同时保证控制约束、安全性和实时可行性。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Learning Agent-based Model Predictive Control for Holistic Vehicle Performance",
+  "title_zh": "基于智能体的模型预测控制学习以实现整体车辆性能",
+  "translation_url": "https://hjfy.top/arxiv/2609.11871"
+}

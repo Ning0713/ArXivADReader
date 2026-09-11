@@ -1,0 +1,56 @@
+{
+  "abstract": "The pedestrian crossing intention task involves predicting whether pedestrians are likely to cross the road from the point of view of an autonomous vehicle. We introduce TrajFusionNet+, a novel transformer-based model for pedestrian crossing intention prediction. TrajFusionNet+ combines sequential and visual representations of pedestrian trajectory with a graph-based representation of the scene context in order to predict pedestrian crossing intention. The proposed architecture builds upon our previous model, TrajFusionNet, and comprises three branches: a Sequence Attention Module (SAM), which processes a sequential representation of past and predicted pedestrian trajectories; a Visual Attention Module (VAM), which utilizes a visual representation of the pedestrian trajectories by overlaying observed and predicted bounding boxes onto scene images; and a Graph Attention Module (GAM), which extracts pedestrian-centric graphs from segmented scene images and captures the relational dependencies between pedestrians and traffic elements. TrajFusionNet+ achieves improved state-of-the-art performance on the two most widely used pedestrian crossing intention datasets, PIE and JAAD. Furthermore, we introduce a new evaluation protocol in which models are trained jointly on the PIE and JAAD datasets but evaluated separately on each. Under this setting, TrajFusionNet+ demonstrates superior generalization compared to existing approaches.",
+  "abstract_zh": "行人过马路意图任务涉及从自动驾驶车辆的视角预测行人是否可能过马路。我们提出了TrajFusionNet+，一种新颖的基于变换器的行人过马路意图预测模型。TrajFusionNet+结合了行人轨迹的序列表示和视觉表示，以及场景上下文的图形表示，以预测行人过马路的意图。该架构基于我们之前的模型TrajFusionNet，包含三个分支：序列注意力模块（Sequence Attention Module, SAM），处理过去和预测的行人轨迹的序列表示；视觉注意力模块（Visual Attention Module, VAM），通过将观察到的和预测的边界框叠加到场景图像上，利用行人轨迹的视觉表示；以及图形注意力模块（Graph Attention Module, GAM），从分割的场景图像中提取以行人为中心的图形，并捕捉行人与交通元素之间的关系依赖。TrajFusionNet+在两个最广泛使用的行人过马路意图数据集PIE和JAAD上实现了改进的最先进性能。此外，我们引入了一种新的评估协议，在该协议下模型在PIE和JAAD数据集上联合训练，但在每个数据集上分别评估。在这种设置下，TrajFusionNet+表现出比现有方法更优越的泛化能力。",
+  "arxiv_id": "2609.10806",
+  "arxiv_url": "https://arxiv.org/abs/2609.10806v1",
+  "authors": [
+    "François G. Landry",
+    "Moulay A. Akhloufi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-11#paper-2609-10806",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-11T09:18:29.219820+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.10806v1",
+  "published_at": "2026-09-09T20:17:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "自动驾驶",
+      "autonomous",
+      "vehicle",
+      "traffic",
+      "road",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "交通",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.10806v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "TrajFusionNet+: Transformer-Based Prediction of Pedestrian Crossing Intention via Fusion of Trajectory Representations and Scene Graphs",
+  "title_zh": "TrajFusionNet+: 基于变换器的行人过马路意图预测，通过轨迹表示与场景图的融合",
+  "translation_url": "https://hjfy.top/arxiv/2609.10806"
+}

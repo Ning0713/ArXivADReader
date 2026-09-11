@@ -1,0 +1,62 @@
+{
+  "abstract": "Unified models for object detection and trajectory forecasting aim to merge perception and prediction for autonomous driving, refining actor trajectories directly over shared bird's-eye-view (BEV) images rasterized from LiDAR and high-definition maps. Their accuracy on dynamic, moving actors, however, remains the hardest part of the task, and the strongest such model, DeTra, has no public implementation. We contribute an openly released DeTra reimplementation with documented approximations, and on top of it MC-DeTra: a family of motion-consistency mechanisms that add supervision through two annotation-derived auxiliary signals -- each actor's observed past motion and the occupancy of the surrounding traffic that forms its social context -- and one inter-output consistency constraint that aligns an actor's predicted heading with its predicted direction of motion. Every proposed loss is train-only and inference-safe: it shapes the shared BEV representation during training and is removed at test time, adding no inference latency. On the Waymo Open Dataset, evaluated under a strict, detection-conditioned forecasting protocol, MC-DeTra improves dynamic, socially-situated trajectory forecasting while preserving or improving detection accuracy; a gradient-based loss-calibration analysis exposes how the auxiliary objectives compete at the shared backbone, and our ablation identifies which signals contribute most. We release code, configurations, and evaluation tooling at https://github.com/diuzhevVlad/MC-DeTra.",
+  "abstract_zh": "统一的目标检测和轨迹预测模型旨在融合感知与预测，以支持自动驾驶，直接在从激光雷达和高清地图栅格化的共享鸟瞰图（BEV）图像上优化行为者轨迹。然而，对于动态移动的行为者，其准确性仍然是任务中最具挑战性的部分，而最强的此类模型DeTra并没有公开实现。我们贡献了一个公开发布的DeTra重实现，并附有文档化的近似方法，在此基础上开发了MC-DeTra：一系列运动一致性机制，通过两个源自注释的辅助信号添加监督——每个行为者的观察到的过去运动和形成其社会背景的周围交通的占用情况——以及一个输出间一致性约束，使得行为者的预测航向与其预测运动方向对齐。每个提出的损失函数仅在训练时使用且在推理时安全：它在训练期间塑造共享的BEV表示，并在测试时移除，不增加推理延迟。在Waymo开放数据集上，在严格的检测条件下评估的预测协议下，MC-DeTra在保持或提高检测准确性的同时，改善了动态社会情境下的轨迹预测；基于梯度的损失校准分析揭示了辅助目标如何在共享主干网络中竞争，我们的消融实验确定了哪些信号贡献最大。我们在https://github.com/diuzhevVlad/MC-DeTra发布代码、配置和评估工具。",
+  "arxiv_id": "2609.11717",
+  "arxiv_url": "https://arxiv.org/abs/2609.11717v1",
+  "authors": [
+    "Vladislav Diuzhev",
+    "Dmitry Yudin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-11#paper-2609-11717",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-11T09:18:29.286049+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.11717v1",
+  "published_at": "2026-09-10T15:34:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "waymo open",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "bev",
+      "bird's-eye",
+      "occupancy",
+      "lidar",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.11717v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "MC-DeTra: Motion-Consistent Joint Object Detection and Socially-Aware Trajectory Forecasting in Bird's-Eye-View Images",
+  "title_zh": "MC-DeTra：鸟瞰图像中运动一致的联合目标检测与社会意识轨迹预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.11717"
+}

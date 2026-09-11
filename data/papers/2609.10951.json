@@ -1,0 +1,59 @@
+{
+  "abstract": "AI-based automated vehicle testing is challenging because a model that passes every test condition can still fail in the real world. Formal verification offers a way to directly address this gap. On a simulated highway and an arterial road we trained two small end-to-end steering networks each in CARLA, one on clear conditions alone and one on clear, fog, night and low sun. All four models were driven against a 2.19 ft lane-departure budget. Without driving again, we used bound propagation, a formal method that reads the trained weights, to compute how far steering can drift at every disturbance strength between two captured images. One calculation covers more than a campaign could drive: on the arterial it spans 133 poses, where ten intensities each would be 10^133 combinations, in minutes on one GPU. Not only did formal verification find conditions that broke the clear-trained policy without simulation testing, it provided some preliminary evidence for potential failures between the test cases. Our overall conclusion is that formal verification is a viable complement to simulation, and could be adopted as a part of verification and validation for automated driving.",
+  "abstract_zh": "基于人工智能的自动驾驶车辆测试面临挑战，因为一个在所有测试条件下都通过的模型在现实世界中仍可能失败。形式验证提供了一种直接解决这一差距的方法。在模拟高速公路和主干道上，我们在CARLA中训练了两个小型的端到端转向网络，一个仅在清晰条件下训练，另一个则在清晰、雾霾、夜间和低阳光条件下训练。所有四个模型在2.19英尺的车道偏离预算下进行测试。在不再驾驶的情况下，我们使用边界传播（bound propagation）这一形式方法，读取训练权重，计算在两幅捕获图像之间每种干扰强度下转向可能的漂移距离。一项计算覆盖的范围超过了一次测试活动：在主干道上，它跨越了133个姿态，其中十种强度的组合将达到10^133种可能性，仅需在一台GPU上几分钟的时间。形式验证不仅发现了在没有模拟测试的情况下打破清晰训练策略的条件，还提供了一些潜在失败的初步证据。我们的总体结论是，形式验证是对模拟的可行补充，并可以作为自动驾驶验证和确认的一部分被采用。",
+  "arxiv_id": "2609.10951",
+  "arxiv_url": "https://arxiv.org/abs/2609.10951v1",
+  "authors": [
+    "Menuka Ghalan",
+    "Charles Rodgers",
+    "Zachary D. Asher"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-11#paper-2609-10951",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-11T09:18:29.175928+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.10951v1",
+  "published_at": "2026-09-10T01:19:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "automated vehicle",
+      "自动驾驶",
+      "carla",
+      "driving",
+      "vehicle",
+      "road",
+      "highway",
+      "lane",
+      "驾驶",
+      "车辆",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.10951v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Testing Between the Test Cases: Proving End-to-End Steering in Conditions You Never Drove",
+  "title_zh": "测试用例之间的测试：在您从未驾驶的条件下证明端到端转向",
+  "translation_url": "https://hjfy.top/arxiv/2609.10951"
+}

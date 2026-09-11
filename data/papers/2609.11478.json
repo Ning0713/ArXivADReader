@@ -1,0 +1,60 @@
+{
+  "abstract": "The development of autonomous driving demands comprehensive testing in mixed-traffic scenarios involving vulnerable road users (VRUs), where purely artificial agents often fail to capture authentic human social negotiations. While human-in-the-loop (HITL) simulators enable safe investigation of these interactions, existing multi-agent platforms struggle with the network latency and synchronization constraints required for high-fidelity haptic feedback. To resolve this, we present CARLAverse, an open-source, multimodal simulation ecosystem. Extending modular hardware abstraction, CARLAverse integrates driving (DrivoCARLA), cycling (CycloCARLA), and pedestrian (WalkoCARLA) simulators into a shared virtual environment. Its core methodological contribution is a distributed physics architecture: latency-critical ego dynamics and high-frequency force feedback are computed locally on client nodes, while a central CARLA server orchestrates non-player character (NPC) physics and global traffic. By decoupling haptic control loops from network bottlenecks, CARLAverse enables scalable, cross-institutional HITL experiments without compromising physical immersion. Code and documentation: https://git.ieem-ka.de/simulator-environments/carlaverse",
+  "abstract_zh": "自动驾驶的发展需要在涉及脆弱道路用户（VRUs）的混合交通场景中进行全面测试，而纯人工智能代理往往无法真实捕捉人类社会互动的复杂性。虽然人机协同（HITL）仿真器能够安全地研究这些互动，但现有的多智能体平台在高保真触觉反馈所需的网络延迟和同步约束方面面临挑战。为了解决这一问题，我们提出了CARLAverse，一个开源的多模态仿真生态系统。CARLAverse扩展了模块化硬件抽象，将驾驶（DrivoCARLA）、骑行（CycloCARLA）和行人（WalkoCARLA）仿真器整合到一个共享的虚拟环境中。其核心方法论贡献是一个分布式物理架构：延迟敏感的自我动态和高频力反馈在客户端节点上本地计算，而中央CARLA服务器则协调非玩家角色（NPC）的物理和全局交通。通过将触觉控制循环与网络瓶颈解耦，CARLAverse使得可扩展的跨机构HITL实验成为可能，而不妥协于物理沉浸感。代码和文档：https://git.ieem-ka.de/simulator-environments/carlaverse",
+  "arxiv_id": "2609.11478",
+  "arxiv_url": "https://arxiv.org/abs/2609.11478v1",
+  "authors": [
+    "Patrick Rebling",
+    "Philipp Nenninger",
+    "Reiner Kriesten"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-11#paper-2609-11478",
+  "categories": [
+    "cs.RO",
+    "cs.HC"
+  ],
+  "fetched_at": "2026-09-11T09:18:29.195778+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.11478v1",
+  "published_at": "2026-09-10T12:44:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "pedestrian",
+      "驾驶",
+      "交通",
+      "道路",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.11478v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "协同/V2X"
+    ]
+  },
+  "title": "CARLAverse: A Highly Modular, Distributed, and Multimodal Framework for Human-in-the-Loop Simulation",
+  "title_zh": "CARLAverse：一个高度模块化、分布式和多模态的人机协同仿真框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.11478"
+}

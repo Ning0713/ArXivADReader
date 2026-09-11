@@ -1,6 +1,221 @@
 {
-  "generated_at": "2026-09-10T09:23:58.288868+00:00",
+  "generated_at": "2026-09-11T09:20:28.598576+00:00",
   "items": [
+    {
+      "abstract": "Agent-based model predictive control (AMPC) has recently been proposed as a distributed scheme that collaborates with all agents to achieve optimal holistic performance. However, its optimality highly depends on the prediction accuracy that requires all agents or their contributions to be known, which is too idealistic for actual implementation. This research proposes a novel practical hybrid control scheme - learning agent-based MPC (LAMPC), combining the model-based AMPC approach and data-based learning methods to improve the holistic vehicle performance for multi-agent systems. The Gaussian process regression (GPR) enhanced by an online data management strategy serves as the learning core to predict unknown contributions. A novel multi-step prediction mechanism leverages the GPR learning potential along the horizon. The predicted mean, representing the learned unknown contributions, completes the system model in the MPC for more accurate control. Meanwhile, a stochastic framework is formulated to guarantee control safety and feasibility using soft chance constraints based on the prediction variance. Both simulations and experiments show that, with the learning capability, LAMPC outperforms the traditional AMPC. LAMPC can achieve higher tracking performance in well-learned scenarios and always guarantee constraint satisfaction even in less-learned scenarios. Moreover, the proposed hybrid control scheme is efficient for real-time implementation and is flexible to any control agent topology.",
+      "abstract_zh": "基于智能体的模型预测控制（AMPC）最近被提出作为一种分布式方案，通过所有智能体的协作来实现最佳的整体性能。然而，其最优性高度依赖于预测精度，这要求所有智能体或其贡献必须是已知的，这对于实际实施来说过于理想化。本研究提出了一种新颖的实用混合控制方案——学习型基于智能体的模型预测控制（LAMPC），结合了基于模型的AMPC方法和基于数据的学习方法，以提高多智能体系统的整体车辆性能。增强的高斯过程回归（GPR）结合在线数据管理策略作为学习核心，用于预测未知贡献。一个新颖的多步预测机制利用GPR的学习潜力进行前瞻性预测。预测均值代表学习到的未知贡献，补全了MPC中的系统模型，从而实现更精确的控制。同时，构建了一个随机框架，以基于预测方差使用软机会约束来保证控制的安全性和可行性。仿真和实验结果表明，凭借学习能力，LAMPC的性能优于传统的AMPC。在经过良好学习的场景中，LAMPC能够实现更高的跟踪性能，并且即使在学习较少的场景中也始终保证约束的满足。此外，所提出的混合控制方案在实时实施中高效，并且对任何控制智能体拓扑具有灵活性。",
+      "authors": [
+        "Jiaming Zhong",
+        "Reza Valiollahi Mehrizi",
+        "Mohammad Pirani",
+        "Chao Yu",
+        "Alireza Kasaiezadeh",
+        "Yash Vardhan Pant",
+        "Amir Khajepour"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.11871",
+      "tags": [
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "Learning Agent-based Model Predictive Control for Holistic Vehicle Performance",
+      "title_zh": "基于智能体的模型预测控制学习以实现整体车辆性能",
+      "url": "/daily/2026-09-11/#paper-2609-11871"
+    },
+    {
+      "abstract": "Unified models for object detection and trajectory forecasting aim to merge perception and prediction for autonomous driving, refining actor trajectories directly over shared bird's-eye-view (BEV) images rasterized from LiDAR and high-definition maps. Their accuracy on dynamic, moving actors, however, remains the hardest part of the task, and the strongest such model, DeTra, has no public implementation. We contribute an openly released DeTra reimplementation with documented approximations, and on top of it MC-DeTra: a family of motion-consistency mechanisms that add supervision through two annotation-derived auxiliary signals -- each actor's observed past motion and the occupancy of the surrounding traffic that forms its social context -- and one inter-output consistency constraint that aligns an actor's predicted heading with its predicted direction of motion. Every proposed loss is train-only and inference-safe: it shapes the shared BEV representation during training and is removed at test time, adding no inference latency. On the Waymo Open Dataset, evaluated under a strict, detection-conditioned forecasting protocol, MC-DeTra improves dynamic, socially-situated trajectory forecasting while preserving or improving detection accuracy; a gradient-based loss-calibration analysis exposes how the auxiliary objectives compete at the shared backbone, and our ablation identifies which signals contribute most. We release code, configurations, and evaluation tooling at https://github.com/diuzhevVlad/MC-DeTra.",
+      "abstract_zh": "统一的目标检测和轨迹预测模型旨在融合感知与预测，以支持自动驾驶，直接在从激光雷达和高清地图栅格化的共享鸟瞰图（BEV）图像上优化行为者轨迹。然而，对于动态移动的行为者，其准确性仍然是任务中最具挑战性的部分，而最强的此类模型DeTra并没有公开实现。我们贡献了一个公开发布的DeTra重实现，并附有文档化的近似方法，在此基础上开发了MC-DeTra：一系列运动一致性机制，通过两个源自注释的辅助信号添加监督——每个行为者的观察到的过去运动和形成其社会背景的周围交通的占用情况——以及一个输出间一致性约束，使得行为者的预测航向与其预测运动方向对齐。每个提出的损失函数仅在训练时使用且在推理时安全：它在训练期间塑造共享的BEV表示，并在测试时移除，不增加推理延迟。在Waymo开放数据集上，在严格的检测条件下评估的预测协议下，MC-DeTra在保持或提高检测准确性的同时，改善了动态社会情境下的轨迹预测；基于梯度的损失校准分析揭示了辅助目标如何在共享主干网络中竞争，我们的消融实验确定了哪些信号贡献最大。我们在https://github.com/diuzhevVlad/MC-DeTra发布代码、配置和评估工具。",
+      "authors": [
+        "Vladislav Diuzhev",
+        "Dmitry Yudin"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.11717",
+      "tags": [
+        "感知",
+        "BEV/Occupancy",
+        "LiDAR/点云"
+      ],
+      "title": "MC-DeTra: Motion-Consistent Joint Object Detection and Socially-Aware Trajectory Forecasting in Bird's-Eye-View Images",
+      "title_zh": "MC-DeTra：鸟瞰图像中运动一致的联合目标检测与社会意识轨迹预测",
+      "url": "/daily/2026-09-11/#paper-2609-11717"
+    },
+    {
+      "abstract": "Language Gaussian fields implicitly assume that the primitive carrying semantics remains identifiable across views. This assumption breaks in scalable anchor-decoded representations, where persistent anchors generate view-conditioned child Gaussians whose geometry and appearance vary with the camera. We introduce Ours, a persistent language field for such structured Gaussian scenes. Our key idea is semantic ownership: transient children route observations, while persistent decoder slots and their parent anchors own the language field. We use alpha-compositing responsibilities to accumulate additive directional evidence at slots; these statistics marginalize exactly to anchors. We then complete weakly supported slots with anchor-aligned evidence while preserving the anchor direction, and represent slot detail through low-rank residuals in anchor-relative semantic coordinates. Our primary model, Ours (base), stores anchor features together with compact slot residuals. Ours (light) retains only anchor features, whereas Ours (max) stores the full-dimensional completed slot features explicitly. Without scene-specific semantic optimization, Ours (base) nearly matches Ours (max) across KITTI, Virtual KITTI, and Waymo. On KITTI, it achieves 34.19 2D mIoU with a 2.72 GiB effective feature footprint, compared with 34.20 mIoU and 12.90 GiB for Ours (max). The same accuracy-storage trend holds on Virtual KITTI and Waymo. These results show that language fields on view-conditioned splats require persistent semantic ownership, conserved evidence, and a hierarchy that balances stability, detail, and representation cost. Our code, checkpoints, and benchmark suite will be publicly available.",
+      "abstract_zh": "语言高斯场隐含假设承载语义的原始元素在不同视图中是可识别的。然而，在可扩展的锚点解码表示中，这一假设被打破，因为持久锚点生成的视图条件子高斯的几何形状和外观会随相机而变化。我们提出了Ours，这是一个用于此类结构化高斯场景的持久语言场。我们的关键思想是语义归属：短暂的子元素路由观测，而持久的解码器槽及其父锚点则拥有语言场。我们使用α合成责任在槽中累积附加的方向性证据；这些统计数据精确地边际化到锚点。然后，我们在保持锚点方向的同时，用与锚点对齐的证据来补全弱支持的槽，并通过锚点相对语义坐标中的低秩残差来表示槽的细节。我们的主要模型Ours (base)将锚点特征与紧凑的槽残差一起存储。Ours (light)仅保留锚点特征，而Ours (max)则显式存储完整维度的补全槽特征。在没有场景特定语义优化的情况下，Ours (base)在KITTI、Virtual KITTI和Waymo上的表现几乎与Ours (max)相当。在KITTI上，它以2.72 GiB的有效特征占用实现了34.19的2D mIoU，而Ours (max)则为34.20 mIoU和12.90 GiB。相同的准确性-存储趋势在Virtual KITTI和Waymo上也成立。这些结果表明，视图条件的喷溅上的语言场需要持久的语义归属、保留的证据以及一种平衡稳定性、细节和表示成本的层次结构。我们的代码、检查点和基准套件将公开发布。",
+      "authors": [
+        "Runyi Yang",
+        "Deheng Zhang",
+        "Xiaoye Wang",
+        "Mengjiao Ma",
+        "Lei Sun",
+        "Kanzhi Wu",
+        "Ajad Chhatkuli",
+        "Luc Van Gool",
+        "Danda Pani Paudel"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.11616",
+      "tags": [
+        "深度/几何",
+        "BEV/Occupancy",
+        "世界模型/生成"
+      ],
+      "title": "LangStreet: Persistent Language Fields for Anchor-Decoded Street Gaussians",
+      "title_zh": "LangStreet：用于锚点解码街道高斯的持久语言场",
+      "url": "/daily/2026-09-11/#paper-2609-11616"
+    },
+    {
+      "abstract": "European Union (EU) policymakers adopted revolutionary data collection provisions for Automated Driving Systems (ADS) in the recently approved regulation that allows driverless vehicles to be operated on public roads. The framework is inspired by best practices developed at the United Nations Economic Commission for Europe(UNECE) level: the In-Service Monitoring and Reporting (ISMR); and by similar operational data collection regulatory approaches in nuclear energy production and transportation fields. The collection of real-world data will enable the competent safety authorities to gather the information needed to confirm the homologation safety target. Safety-relevant driving scenarios discovered during the real-world operation of a given ADS can also be stored in a scenario catalogue to investigate how other ADS types might have addressed such a traffic conflict. Moreover, lessons learnt deriving from the data collected can be shared among original equipment manufacturers (OEMs) and safety authorities. Ultimately, the ISMR is recognised as a necessary tool to properly tackle the challenges associated with ADS safety assessment given the number of unknowns that might remain undisclosed by leveraging the traditional homologation validation scheme only.",
+      "abstract_zh": "欧洲联盟（EU）政策制定者在最近批准的法规中采纳了革命性的自动驾驶系统（ADS）数据收集条款，该法规允许无人驾驶车辆在公共道路上运营。该框架受到在联合国欧洲经济委员会（UNECE）层面上制定的最佳实践的启发：在役监测与报告（ISMR）；以及核能生产和运输领域类似的运营数据收集监管方法。真实世界数据的收集将使相关安全主管部门能够获取确认同 homologation 安全目标所需的信息。在给定的 ADS 的真实世界操作中发现的与安全相关的驾驶场景也可以存储在场景目录中，以调查其他类型的 ADS 如何处理此类交通冲突。此外，从收集的数据中获得的经验教训可以在原始设备制造商（OEM）和安全主管部门之间共享。最终，ISMR 被认为是妥善应对与 ADS 安全评估相关挑战的必要工具，因为仅依靠传统的 homologation 验证方案可能仍会存在许多未知因素未被披露。",
+      "authors": [
+        "Riccardo Donà",
+        "Espedito Rusciano",
+        "Germana Trentadue",
+        "Anastasios Tsakalidis",
+        "Maria Cristina Galassi"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.11549",
+      "tags": [
+        "安全/异常"
+      ],
+      "title": "Using Automated Vehicles Operational Data to Confirm Safety and Anticipate Threats",
+      "title_zh": "利用自动驾驶车辆运营数据确认安全性并预测威胁",
+      "url": "/daily/2026-09-11/#paper-2609-11549"
+    },
+    {
+      "abstract": "Reliable, low-latency perception is crucial for Formula Student Driverless vehicles, yet many existing pipelines rely on deep learning and multi-sensor fusion, often requiring GPU acceleration. This paper presents a lightweight LiDAR-only perception pipeline tailored for CPU execution, combining ground removal, IMU-based motion compensation, DBSCAN clustering, and geometric feature-based Random Forest classification. Feature importance analysis reduced the model input from 12 to 7 features while preserving performance. Evaluated on 2,371 labeled clusters collected from real FSD events, the pipeline achieves an F1-score of 98.33% and an end-to-end runtime of 3.13 ms on CPU-only hardware. The released dataset, labeling tool, and trained models provide a practical and reproducible baseline for other resource-constrained autonomous racing teams.",
+      "abstract_zh": "可靠的低延迟感知对于Formula Student Driverless车辆至关重要，但许多现有的处理管道依赖于深度学习和多传感器融合，通常需要GPU加速。本文提出了一种轻量级的仅基于LiDAR的感知管道，专为CPU执行而设计，结合了地面去除、基于IMU的运动补偿、DBSCAN聚类和基于几何特征的随机森林分类。特征重要性分析将模型输入从12个特征减少到7个，同时保持了性能。该管道在真实FSD事件中收集的2,371个标记聚类上进行了评估，达到了98.33%的F1分数，并在仅使用CPU的硬件上实现了3.13毫秒的端到端运行时间。发布的数据集、标注工具和训练模型为其他资源受限的自主赛车团队提供了一个实用且可重复的基准。",
+      "authors": [
+        "Márk Mező-Kerekes",
+        "Péter Praksz",
+        "Chang Liu"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.11527",
+      "tags": [
+        "感知",
+        "多传感器融合",
+        "深度/几何"
+      ],
+      "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+      "title_zh": "基于轻量级LiDAR的锥体检测框架：使用随机森林算法针对Formula Student Driverless",
+      "url": "/daily/2026-09-11/#paper-2609-11527"
+    },
+    {
+      "abstract": "Optical flow methods typically rely on task-specific inductive biases, such as correlation volumes, feature warping, and iterative refinement, among others, to reach high accuracy. While effective, such biases constrain the model to predefined heuristics, which can limit its expressivity and lead to more complex pipelines and additional computational cost. We present FreeFlow, a hierarchical transformer built without any flow-specific components, using instead a single feed-forward encoder--decoder. FreeFlow combines three attention variants: window attention for local processing, shifted-window attention for cross-window information exchange, and a global attention operating at a reduced resolution. The resulting architecture scales naturally with model capacity, enabling a consistent accuracy gain from small to large variants. Despite the absence of standard inductive biases, FreeFlow achieves state-of-the-art results on major benchmarks, including Sintel (0.68/1.48 EPE on Clean/Final), KITTI-2015 (3.23 Fl-all), and Spring (3.192 1px), while remaining memory efficient at 1080p inference.",
+      "abstract_zh": "光流方法通常依赖于特定任务的归纳偏置，例如相关体积、特征扭曲和迭代优化等，以达到高准确率。虽然这些方法有效，但它们将模型限制在预定义的启发式规则中，这可能限制其表现力，并导致更复杂的管道和额外的计算成本。我们提出了FreeFlow，一种不包含任何光流特定组件的层次化变换器，而是使用一个单一的前馈编码器-解码器。FreeFlow结合了三种注意力变体：用于局部处理的窗口注意力、用于跨窗口信息交换的移位窗口注意力，以及在降低分辨率下运行的全局注意力。最终的架构自然地随着模型容量的增加而扩展，使得从小型到大型变体的一致准确性提升成为可能。尽管缺乏标准的归纳偏置，FreeFlow在主要基准测试中仍然取得了最先进的结果，包括Sintel（清晰/最终的EPE为0.68/1.48）、KITTI-2015（Fl-all为3.23）和Spring（1像素为3.192），同时在1080p推理时保持内存效率。",
+      "authors": [
+        "Vladislav Bargatin",
+        "Alexander Yakovenko",
+        "Khaled Abud",
+        "Dmitriy Vatolin"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.11486",
+      "tags": [
+        "仿真/数据"
+      ],
+      "title": "FreeFlow: A Bias-free Hierarchical Transformer for Optical Flow Estimation",
+      "title_zh": "FreeFlow：一种无偏见的层次化变换器用于光流估计",
+      "url": "/daily/2026-09-11/#paper-2609-11486"
+    },
+    {
+      "abstract": "The development of autonomous driving demands comprehensive testing in mixed-traffic scenarios involving vulnerable road users (VRUs), where purely artificial agents often fail to capture authentic human social negotiations. While human-in-the-loop (HITL) simulators enable safe investigation of these interactions, existing multi-agent platforms struggle with the network latency and synchronization constraints required for high-fidelity haptic feedback. To resolve this, we present CARLAverse, an open-source, multimodal simulation ecosystem. Extending modular hardware abstraction, CARLAverse integrates driving (DrivoCARLA), cycling (CycloCARLA), and pedestrian (WalkoCARLA) simulators into a shared virtual environment. Its core methodological contribution is a distributed physics architecture: latency-critical ego dynamics and high-frequency force feedback are computed locally on client nodes, while a central CARLA server orchestrates non-player character (NPC) physics and global traffic. By decoupling haptic control loops from network bottlenecks, CARLAverse enables scalable, cross-institutional HITL experiments without compromising physical immersion. Code and documentation: https://git.ieem-ka.de/simulator-environments/carlaverse",
+      "abstract_zh": "自动驾驶的发展需要在涉及脆弱道路用户（VRUs）的混合交通场景中进行全面测试，而纯人工智能代理往往无法真实捕捉人类社会互动的复杂性。虽然人机协同（HITL）仿真器能够安全地研究这些互动，但现有的多智能体平台在高保真触觉反馈所需的网络延迟和同步约束方面面临挑战。为了解决这一问题，我们提出了CARLAverse，一个开源的多模态仿真生态系统。CARLAverse扩展了模块化硬件抽象，将驾驶（DrivoCARLA）、骑行（CycloCARLA）和行人（WalkoCARLA）仿真器整合到一个共享的虚拟环境中。其核心方法论贡献是一个分布式物理架构：延迟敏感的自我动态和高频力反馈在客户端节点上本地计算，而中央CARLA服务器则协调非玩家角色（NPC）的物理和全局交通。通过将触觉控制循环与网络瓶颈解耦，CARLAverse使得可扩展的跨机构HITL实验成为可能，而不妥协于物理沉浸感。代码和文档：https://git.ieem-ka.de/simulator-environments/carlaverse",
+      "authors": [
+        "Patrick Rebling",
+        "Philipp Nenninger",
+        "Reiner Kriesten"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.11478",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "协同/V2X"
+      ],
+      "title": "CARLAverse: A Highly Modular, Distributed, and Multimodal Framework for Human-in-the-Loop Simulation",
+      "title_zh": "CARLAverse：一个高度模块化、分布式和多模态的人机协同仿真框架",
+      "url": "/daily/2026-09-11/#paper-2609-11478"
+    },
+    {
+      "abstract": "With the rising demand to decouple objects from 3D scenes, we propose SAMV-DUSt3R, an end-to-end model that injects SAM2 2D masks into MV-DUSt3R reconstruction. A Cross Flow Mask Block uses these masks to steer the network toward the target instance, jointly improving shape accuracy and achieving object-level disentanglement without multi-stage pipelines. To ensure reconstruction stability, a lightweight Spatial RankGNN selects the optimal reference view with a selection accuracy of 73.5\\%. Extensive experiments demonstrate that our method boosts average reconstruction precision by 11\\% across various metrics compared to state-of-the-art baselines. These results reveal a strong instance-disentanglement capability and clear benefits for driving, robotics, AR/VR, and heritage digitisation.",
+      "abstract_zh": "随着对从3D场景中解耦对象需求的增加，我们提出了SAMV-DUSt3R，这是一种端到端模型，将SAM2 2D掩膜注入MV-DUSt3R重建中。交叉流掩膜块利用这些掩膜引导网络朝向目标实例，联合提高形状准确性，并在没有多阶段管道的情况下实现对象级解耦。为了确保重建的稳定性，一个轻量级的空间RankGNN选择最优参考视图，选择准确率达到73.5%。大量实验表明，与最先进的基线相比，我们的方法在各种指标上平均提高了11%的重建精度。这些结果揭示了强大的实例解耦能力，并为驾驶、机器人技术、增强现实/虚拟现实以及遗产数字化带来了明显的好处。",
+      "authors": [
+        "Langxu Zhao",
+        "Zuan Gu",
+        "Yingdan Zhang",
+        "Pengfei Zhao",
+        "Tianhan Gao"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.11279",
+      "tags": [
+        "深度/几何",
+        "感知"
+      ],
+      "title": "SAMV-DUSt3R: Instance-Centric 3D Scene Decoupling from Sparse Multi-Views",
+      "title_zh": "SAMV-DUSt3R：基于实例的稀疏多视角3D场景解耦",
+      "url": "/daily/2026-09-11/#paper-2609-11279"
+    },
+    {
+      "abstract": "AI-based automated vehicle testing is challenging because a model that passes every test condition can still fail in the real world. Formal verification offers a way to directly address this gap. On a simulated highway and an arterial road we trained two small end-to-end steering networks each in CARLA, one on clear conditions alone and one on clear, fog, night and low sun. All four models were driven against a 2.19 ft lane-departure budget. Without driving again, we used bound propagation, a formal method that reads the trained weights, to compute how far steering can drift at every disturbance strength between two captured images. One calculation covers more than a campaign could drive: on the arterial it spans 133 poses, where ten intensities each would be 10^133 combinations, in minutes on one GPU. Not only did formal verification find conditions that broke the clear-trained policy without simulation testing, it provided some preliminary evidence for potential failures between the test cases. Our overall conclusion is that formal verification is a viable complement to simulation, and could be adopted as a part of verification and validation for automated driving.",
+      "abstract_zh": "基于人工智能的自动驾驶车辆测试面临挑战，因为一个在所有测试条件下都通过的模型在现实世界中仍可能失败。形式验证提供了一种直接解决这一差距的方法。在模拟高速公路和主干道上，我们在CARLA中训练了两个小型的端到端转向网络，一个仅在清晰条件下训练，另一个则在清晰、雾霾、夜间和低阳光条件下训练。所有四个模型在2.19英尺的车道偏离预算下进行测试。在不再驾驶的情况下，我们使用边界传播（bound propagation）这一形式方法，读取训练权重，计算在两幅捕获图像之间每种干扰强度下转向可能的漂移距离。一项计算覆盖的范围超过了一次测试活动：在主干道上，它跨越了133个姿态，其中十种强度的组合将达到10^133种可能性，仅需在一台GPU上几分钟的时间。形式验证不仅发现了在没有模拟测试的情况下打破清晰训练策略的条件，还提供了一些潜在失败的初步证据。我们的总体结论是，形式验证是对模拟的可行补充，并可以作为自动驾驶验证和确认的一部分被采用。",
+      "authors": [
+        "Menuka Ghalan",
+        "Charles Rodgers",
+        "Zachary D. Asher"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.10951",
+      "tags": [
+        "端到端驾驶",
+        "仿真/数据"
+      ],
+      "title": "Testing Between the Test Cases: Proving End-to-End Steering in Conditions You Never Drove",
+      "title_zh": "测试用例之间的测试：在您从未驾驶的条件下证明端到端转向",
+      "url": "/daily/2026-09-11/#paper-2609-10951"
+    },
+    {
+      "abstract": "The pedestrian crossing intention task involves predicting whether pedestrians are likely to cross the road from the point of view of an autonomous vehicle. We introduce TrajFusionNet+, a novel transformer-based model for pedestrian crossing intention prediction. TrajFusionNet+ combines sequential and visual representations of pedestrian trajectory with a graph-based representation of the scene context in order to predict pedestrian crossing intention. The proposed architecture builds upon our previous model, TrajFusionNet, and comprises three branches: a Sequence Attention Module (SAM), which processes a sequential representation of past and predicted pedestrian trajectories; a Visual Attention Module (VAM), which utilizes a visual representation of the pedestrian trajectories by overlaying observed and predicted bounding boxes onto scene images; and a Graph Attention Module (GAM), which extracts pedestrian-centric graphs from segmented scene images and captures the relational dependencies between pedestrians and traffic elements. TrajFusionNet+ achieves improved state-of-the-art performance on the two most widely used pedestrian crossing intention datasets, PIE and JAAD. Furthermore, we introduce a new evaluation protocol in which models are trained jointly on the PIE and JAAD datasets but evaluated separately on each. Under this setting, TrajFusionNet+ demonstrates superior generalization compared to existing approaches.",
+      "abstract_zh": "行人过马路意图任务涉及从自动驾驶车辆的视角预测行人是否可能过马路。我们提出了TrajFusionNet+，一种新颖的基于变换器的行人过马路意图预测模型。TrajFusionNet+结合了行人轨迹的序列表示和视觉表示，以及场景上下文的图形表示，以预测行人过马路的意图。该架构基于我们之前的模型TrajFusionNet，包含三个分支：序列注意力模块（Sequence Attention Module, SAM），处理过去和预测的行人轨迹的序列表示；视觉注意力模块（Visual Attention Module, VAM），通过将观察到的和预测的边界框叠加到场景图像上，利用行人轨迹的视觉表示；以及图形注意力模块（Graph Attention Module, GAM），从分割的场景图像中提取以行人为中心的图形，并捕捉行人与交通元素之间的关系依赖。TrajFusionNet+在两个最广泛使用的行人过马路意图数据集PIE和JAAD上实现了改进的最先进性能。此外，我们引入了一种新的评估协议，在该协议下模型在PIE和JAAD数据集上联合训练，但在每个数据集上分别评估。在这种设置下，TrajFusionNet+表现出比现有方法更优越的泛化能力。",
+      "authors": [
+        "François G. Landry",
+        "Moulay A. Akhloufi"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.10806",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "TrajFusionNet+: Transformer-Based Prediction of Pedestrian Crossing Intention via Fusion of Trajectory Representations and Scene Graphs",
+      "title_zh": "TrajFusionNet+: 基于变换器的行人过马路意图预测，通过轨迹表示与场景图的融合",
+      "url": "/daily/2026-09-11/#paper-2609-10806"
+    },
+    {
+      "abstract": "Dense 3D depth perception fails under smoke, fog, and darkness because optical sensors cannot penetrate airborne particulates. mmWave radar remains usable and measures range accurately under these conditions, but its small aperture limits angular resolution. We present GRADE, which grounds a pretrained generative prior in single-frame radar geometry to estimate high-fidelity metric depth. GRADE first maps raw 4D radar spectra to coarse metric depth. A latent diffusion backbone then recovers structural detail while conditioning every denoising step on this estimate. A pixel-space adapter uses residual camera cues when available and is trained across clear, smoke-degraded, and occluded inputs so the full output approaches the radar-conditioned path as visibility degrades. Trained and evaluated on ~95K frames across 12 buildings with real smoke, GRADE achieves an MAE of 0.303 m in clear scenes and 0.313 m under smoke, outperforming existing baselines. Code and datasets are available at https://phi-lab-rice.github.io/GRADE.",
+      "abstract_zh": "在烟雾、雾霾和黑暗条件下，密集的三维深度感知失效，因为光学传感器无法穿透空气中的颗粒物。毫米波雷达在这些条件下仍然可用，并能准确测量距离，但其小孔径限制了角分辨率。我们提出了GRADE，它将预训练的生成先验与单帧雷达几何结合，以估计高保真度的度量深度。GRADE首先将原始4D雷达光谱映射到粗略的度量深度。然后，潜在扩散骨干网络在每个去噪步骤中以此估计为条件，恢复结构细节。当可用时，像素空间适配器利用残余相机线索，并在清晰、烟雾退化和遮挡输入上进行训练，以便在能见度降低时，完整输出接近雷达条件路径。在12栋建筑的约95K帧真实烟雾数据上进行训练和评估，GRADE在清晰场景中实现了0.303米的平均绝对误差（MAE），在烟雾条件下为0.313米，超越了现有基准。代码和数据集可在https://phi-lab-rice.github.io/GRADE获取。",
+      "authors": [
+        "Bin Zhao",
+        "Patrick Chiou",
+        "Nakul Garg"
+      ],
+      "date": "2026-09-11",
+      "id": "2609.10756",
+      "tags": [
+        "深度/几何",
+        "Radar",
+        "多传感器融合"
+      ],
+      "title": "GRADE: Single-Frame Generative Radar Depth Estimation Under Visual Degradation",
+      "title_zh": "GRADE：在视觉退化条件下的单帧生成雷达深度估计",
+      "url": "/daily/2026-09-11/#paper-2609-10756"
+    },
     {
       "abstract": "Safety is a fundamental requirement for autonomous driving, yet existing end-to-end driving models still lack explicit risk-aware learning capacities. Existing rule-based risk models provide interpretable safety priors, yet their absolute risk scores depend on handcrafted functions, coefficients, and thresholds. Learning-based risk representations reduce part of this manual design, but their supervision often relies on occupancy-derived labels or heuristic cost values, which may not capture ego-conditioned planning risk. In this paper, we propose DRiF, a data-driven risk-field framework for safer end-to-end autonomous driving. DRiF learns a shared BEV feature with static map segmentation, dynamic risk prediction, and vehicle planning. For dynamic risk learning, DRiF converts rule-based safety priors into pairwise risk labels, and trains the risk field to preserve relative risk ordering instead of regressing handcrafted absolute scores. Experiments on Bench2Drive show that DRiF achieves competitive overall performance, with consistent improvements in driving score, success rate, and collision-related metrics. These results establish relative risk supervision as an effective way to connect explicit safety structure with end-to-end planning. The data and code will be publicly available.",
       "abstract_zh": "安全性是自动驾驶的基本要求，但现有的端到端驾驶模型仍然缺乏明确的风险感知学习能力。现有的基于规则的风险模型提供了可解释的安全先验，但其绝对风险评分依赖于手工设计的函数、系数和阈值。基于学习的风险表示减少了部分手动设计，但其监督通常依赖于基于占用的标签或启发式成本值，这可能无法捕捉到自我条件规划的风险。在本文中，我们提出了DRiF，一个数据驱动的风险场框架，以实现更安全的端到端自动驾驶。DRiF通过静态地图分割、动态风险预测和车辆规划学习共享的鸟瞰视图（BEV）特征。对于动态风险学习，DRiF将基于规则的安全先验转换为成对的风险标签，并训练风险场以保持相对风险排序，而不是回归手工设计的绝对评分。在Bench2Drive上的实验表明，DRiF实现了具有竞争力的整体性能，在驾驶评分、成功率和与碰撞相关的指标上均有一致的改善。这些结果确立了相对风险监督作为将明确的安全结构与端到端规划连接的有效方式。数据和代码将公开提供。",

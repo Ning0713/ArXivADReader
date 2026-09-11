@@ -1,0 +1,49 @@
+{
+  "abstract": "With the rising demand to decouple objects from 3D scenes, we propose SAMV-DUSt3R, an end-to-end model that injects SAM2 2D masks into MV-DUSt3R reconstruction. A Cross Flow Mask Block uses these masks to steer the network toward the target instance, jointly improving shape accuracy and achieving object-level disentanglement without multi-stage pipelines. To ensure reconstruction stability, a lightweight Spatial RankGNN selects the optimal reference view with a selection accuracy of 73.5\\%. Extensive experiments demonstrate that our method boosts average reconstruction precision by 11\\% across various metrics compared to state-of-the-art baselines. These results reveal a strong instance-disentanglement capability and clear benefits for driving, robotics, AR/VR, and heritage digitisation.",
+  "abstract_zh": "随着对从3D场景中解耦对象需求的增加，我们提出了SAMV-DUSt3R，这是一种端到端模型，将SAM2 2D掩膜注入MV-DUSt3R重建中。交叉流掩膜块利用这些掩膜引导网络朝向目标实例，联合提高形状准确性，并在没有多阶段管道的情况下实现对象级解耦。为了确保重建的稳定性，一个轻量级的空间RankGNN选择最优参考视图，选择准确率达到73.5%。大量实验表明，与最先进的基线相比，我们的方法在各种指标上平均提高了11%的重建精度。这些结果揭示了强大的实例解耦能力，并为驾驶、机器人技术、增强现实/虚拟现实以及遗产数字化带来了明显的好处。",
+  "arxiv_id": "2609.11279",
+  "arxiv_url": "https://arxiv.org/abs/2609.11279v1",
+  "authors": [
+    "Langxu Zhao",
+    "Zuan Gu",
+    "Yingdan Zhang",
+    "Pengfei Zhao",
+    "Tianhan Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-11#paper-2609-11279",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-11T09:18:29.245757+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.11279v1",
+  "published_at": "2026-09-10T09:12:48Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.11279v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-11"
+  },
+  "summary_zh": "该论文提出一种面向稀疏多视图的实例级三维重建方法，通过SAM2掩膜引导MV-DUSt3R聚焦目标对象，并利用图神经网络选择参考视图，从而改善对象形状重建与场景解耦。其与自动驾驶的联系主要体现在可用于道路场景中的实例级几何感知和三维环境建模，但论文并非专门针对自动驾驶任务或数据集。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "SAMV-DUSt3R: Instance-Centric 3D Scene Decoupling from Sparse Multi-Views",
+  "title_zh": "SAMV-DUSt3R：基于实例的稀疏多视角3D场景解耦",
+  "translation_url": "https://hjfy.top/arxiv/2609.11279"
+}

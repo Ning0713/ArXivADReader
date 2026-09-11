@@ -1,0 +1,55 @@
+{
+  "abstract": "Reliable, low-latency perception is crucial for Formula Student Driverless vehicles, yet many existing pipelines rely on deep learning and multi-sensor fusion, often requiring GPU acceleration. This paper presents a lightweight LiDAR-only perception pipeline tailored for CPU execution, combining ground removal, IMU-based motion compensation, DBSCAN clustering, and geometric feature-based Random Forest classification. Feature importance analysis reduced the model input from 12 to 7 features while preserving performance. Evaluated on 2,371 labeled clusters collected from real FSD events, the pipeline achieves an F1-score of 98.33% and an end-to-end runtime of 3.13 ms on CPU-only hardware. The released dataset, labeling tool, and trained models provide a practical and reproducible baseline for other resource-constrained autonomous racing teams.",
+  "abstract_zh": "可靠的低延迟感知对于Formula Student Driverless车辆至关重要，但许多现有的处理管道依赖于深度学习和多传感器融合，通常需要GPU加速。本文提出了一种轻量级的仅基于LiDAR的感知管道，专为CPU执行而设计，结合了地面去除、基于IMU的运动补偿、DBSCAN聚类和基于几何特征的随机森林分类。特征重要性分析将模型输入从12个特征减少到7个，同时保持了性能。该管道在真实FSD事件中收集的2,371个标记聚类上进行了评估，达到了98.33%的F1分数，并在仅使用CPU的硬件上实现了3.13毫秒的端到端运行时间。发布的数据集、标注工具和训练模型为其他资源受限的自主赛车团队提供了一个实用且可重复的基准。",
+  "arxiv_id": "2609.11527",
+  "arxiv_url": "https://arxiv.org/abs/2609.11527v1",
+  "authors": [
+    "Márk Mező-Kerekes",
+    "Péter Praksz",
+    "Chang Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-11#paper-2609-11527",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-11T09:18:29.347552+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.11527v1",
+  "published_at": "2026-09-10T13:28:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driverless",
+      "autonomous racing",
+      "autonomous",
+      "车辆",
+      "sensor fusion",
+      "multi-sensor",
+      "lidar",
+      "多传感器融合"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 82
+  },
+  "seen_dates": [
+    "2026-09-11"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.11527v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-11"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "深度/几何"
+    ]
+  },
+  "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+  "title_zh": "基于轻量级LiDAR的锥体检测框架：使用随机森林算法针对Formula Student Driverless",
+  "translation_url": "https://hjfy.top/arxiv/2609.11527"
+}
