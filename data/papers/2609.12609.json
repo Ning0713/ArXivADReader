@@ -1,0 +1,52 @@
+{
+  "abstract": "Differences in vehicle kinematic characteristics between production autonomous vehicles (PAVs) and human-driven vehicles (HVs) have been limitedly investigated by empirical studies. Most recent studies rely on simulation-based models, while some further investigate low-level adaptive cruise control (ACC) systems in controlled experiments. These methods commonly adapt some time-domain metrics to characterize PAV-HV differences across limited driving conditions. However, current PAVs equipped with high-level autonomous driving systems generate driving behaviors in a black box using data-driven models. These fundamentally different mechanisms for generating behaviors may produce distinct kinematic characteristics in traffic. More importantly, these time-domain metrics cannot reflect frequency-related traffic dynamics across different driving scenarios. Thus, this study adapted a real-world PAV dataset with four PAV platforms and developed a frequency-domain framework to quantify kinematic differences between PAVs and HVs across diverse driving scenarios, including varying driving states, lighting, weather, and vehicle densities. The framework transforms kinematic signals into the frequency domain and extracts spectral features, and then compares these features between PAVs and HVs based on kernel density estimation and Wasserstein distance. The results reveal clear scenario-dependent PAV-HV spectral differences. Specifically, speed-related differences were consistently smaller during car-following than cruising, while rainy conditions consistently enlarged acceleration-related differences compared with clear conditions. These findings highlight the necessity of multi-scenario evaluations and demonstrate the value of frequency-domain analysis for characterizing PAV-HV kinematic differences under real-world conditions.",
+  "abstract_zh": "生产型自主车辆（PAVs）与人类驾驶车辆（HVs）之间的运动学特征差异在实证研究中受到的关注有限。最近的研究大多依赖于基于仿真的模型，而一些研究则在受控实验中进一步探讨低级自适应巡航控制（ACC）系统。这些方法通常采用一些时域指标来表征PAV与HV之间的差异，且仅限于有限的驾驶条件。然而，当前配备高水平自主驾驶系统的PAVs通过数据驱动模型在黑箱中生成驾驶行为。这些生成行为的根本不同机制可能在交通中产生独特的运动学特征。更重要的是，这些时域指标无法反映不同驾驶场景下与频率相关的交通动态。因此，本研究采用了一个包含四种PAV平台的真实世界PAV数据集，并开发了一个频域框架，以量化PAV与HV在多种驾驶场景下的运动学差异，包括不同的驾驶状态、光照、天气和车辆密度。该框架将运动学信号转换为频域并提取光谱特征，然后基于核密度估计和Wasserstein距离比较PAV与HV之间的这些特征。结果揭示了明显依赖场景的PAV-HV光谱差异。具体而言，在跟车时速度相关的差异始终小于巡航时，而在雨天条件下，与晴天条件相比，加速度相关的差异始终增大。这些发现强调了多场景评估的必要性，并展示了频域分析在表征真实世界条件下PAV-HV运动学差异中的价值。",
+  "arxiv_id": "2609.12609",
+  "arxiv_url": "https://arxiv.org/abs/2609.12609",
+  "authors": [
+    "Fang, Peiyi, Li, Xiangyu, Weng, Yonglin, Ma, Ke"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12609",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.164169+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12609",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "car",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 96
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "Quantifying Spectral Differences in Vehicle Between Production Autonomous and Human-Driven Vehicles Across Driving Scenarios",
+  "title_zh": "量化生产型自主车辆与人类驾驶车辆在不同驾驶场景下的光谱差异",
+  "translation_url": "https://hjfy.top/arxiv/2609.12609"
+}

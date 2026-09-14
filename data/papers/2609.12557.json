@@ -1,0 +1,53 @@
+{
+  "abstract": "We present DRS-VPT, a feed-forward transformer architecture for foundational image-to-scan registration. Given query images and a reference 3D point cloud, the model predicts the scan pose and point map alongside the poses and point maps of each camera, all expressed in the first camera's frame. It additionally predicts a coarse-to- fine pyramid of per-point and per-pixel features for direct reprojective alignment of the scan to the first image. This formulation unifies downstream tasks such as camera-LiDAR calibration in autonomous driving and indoor camera-to-map relocalization. A single DRS-VPT model achieves state-of-the-art performance for image-to-LiDAR registration in autonomous driving, competitive indoor relocalization without training map-specific weights, and strong zero-shot transfer to unseen environments. We also show qualitatively that the model learns complex scan-to-image projection properties such as occlusion of back-facing points.",
+  "abstract_zh": "我们提出了DRS-VPT，这是一种用于基础图像与扫描配准的前馈变换器架构。给定查询图像和参考3D点云，该模型预测扫描姿态和点图，同时预测每个相机的姿态和点图，所有信息均以第一台相机的坐标系表示。它还预测了一种粗到细的金字塔结构，用于每个点和每个像素特征，以实现扫描与第一幅图像的直接重投影对齐。这种表述统一了下游任务，例如自动驾驶中的相机-LiDAR校准和室内相机到地图的重新定位。单个DRS-VPT模型在自动驾驶中的图像与LiDAR配准方面实现了最先进的性能，在无需训练特定地图权重的情况下实现了竞争力的室内重新定位，并在未见环境中表现出强大的零样本迁移能力。我们还定性地展示了该模型学习了复杂的扫描到图像投影特性，例如背向点的遮挡。",
+  "arxiv_id": "2609.12557",
+  "arxiv_url": "https://arxiv.org/abs/2609.12557",
+  "authors": [
+    "Fu, Lanke Frank Tarimo, Fallon, Maurice"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12557",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.203720+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12557",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "point cloud",
+      "点云",
+      "camera-lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "地图/定位",
+      "多传感器融合"
+    ]
+  },
+  "title": "DRS-VPT: Directly Relocalizing in a Scan with Vision Point Transformers",
+  "title_zh": "DRS-VPT：使用视觉点变换器直接在扫描中重新定位",
+  "translation_url": "https://hjfy.top/arxiv/2609.12557"
+}

@@ -1,0 +1,57 @@
+{
+  "abstract": "Increasing safety is the primary objective of automated vehicles. Achieving this goal requires reliable safety metrics that incorporate safety-relevant factors such as object type, velocity, and criticality. A key capability of such metrics is the distinction between critical and non-critical objects, which is addressed through criticality or relevance estimation. Existing criticality metrics are typically designed for specific scenarios and primarily focus on vehicle-to-vehicle interactions. In this paper, we therefore propose a novel criticality metric tailored to vulnerable road users (VRUs), which require special consideration due to their less predictable motion behavior. Furthermore, to avoid the complexity introduced by scenario-specific metrics, we introduce a scenario-independent criticality prediction framework applicable to all traffic participant classes. The effectiveness of both the proposed VRU-centric criticality metric and the criticality prediction framework is evaluated using the DeepAccident dataset, which contains a diverse set of safety-critical traffic scenarios. The proposed VRU-centric criticality metric improves pedestrian criticality classification performance by up to 50 %. In addition, the proposed criticality prediction framework outperforms state-of-the-art metrics by 275 %, achieving an F1-score of 0.96 and enabling scenario-independent criticality assessment across all object classes. These results demonstrate the strong potential of the proposed approaches to enhance criticality assessment for safety evaluation in automated driving systems.",
+  "abstract_zh": "提高安全性是自动化车辆的主要目标。实现这一目标需要可靠的安全指标，这些指标应考虑与安全相关的因素，如物体类型、速度和关键性。此类指标的一个关键能力是区分关键物体与非关键物体，这通过关键性或相关性估计来解决。现有的关键性指标通常针对特定场景设计，主要关注车辆与车辆之间的交互。因此，本文提出了一种针对脆弱道路用户（VRUs）的新型关键性指标，因其运动行为较不易预测而需特别考虑。此外，为了避免场景特定指标带来的复杂性，我们引入了一种适用于所有交通参与者类别的情景独立关键性预测框架。通过使用包含多样化安全关键交通场景的DeepAccident数据集，我们评估了所提出的以VRU为中心的关键性指标和关键性预测框架的有效性。所提出的以VRU为中心的关键性指标使行人关键性分类性能提高了多达50%。此外，所提出的关键性预测框架的表现超越了最先进的指标，提升幅度达到275%，实现了0.96的F1分数，并使得在所有物体类别中进行情景独立的关键性评估成为可能。这些结果展示了所提出方法在增强自动驾驶系统安全评估中的关键性评估潜力。",
+  "arxiv_id": "2609.11947",
+  "arxiv_url": "https://arxiv.org/abs/2609.11947",
+  "authors": [
+    "Gamerdinger, Jörg, Schwarzenberger, Victor, Schmid, Philipp, Teufel, Sven, Bringmann, Oliver"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-11947",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.141980+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.11947",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "automated driving",
+      "automated vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Scenario-Independent Criticality Assessment and Prediction for Vulnerable Road Users in Autonomous Driving",
+  "title_zh": "自动驾驶中脆弱道路用户的情景独立关键性评估与预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.11947"
+}

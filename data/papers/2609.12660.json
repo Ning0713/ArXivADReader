@@ -1,0 +1,51 @@
+{
+  "abstract": "This paper presents a Model Predictive Control-based motion planning and control pipeline for autonomous car racing capable of adapting to different driving contexts, such as overtaking, nominal driving, and countersteering. A Cost Blending state machine manages the identification of different driving contexts and the selection of their predefined weights to be applied to the Model Predictive Planning (MPP) and Control (MPC) modules. The two optimization-based solutions share the same problem formulation and model, differing only in horizon length, rate, tuning, and in their open-loop versus closed-loop approach to maximize the effectiveness of their interaction. The work is validated on the fully autonomous open-wheel racecar Superformula EAV-25, with a lap time achieved that is within 2% of the best human driver reference. The results demonstrate the capability of the solution in driving at the limit of handling, smoothly executing overtaking maneuvers, and quickly reacting to high oversteering conditions to recover the vehicle stability.",
+  "abstract_zh": "本文提出了一种基于模型预测控制（Model Predictive Control, MPC）的运动规划与控制管道，适用于自主赛车，能够适应不同的驾驶情境，如超车、正常驾驶和反打方向。一个成本混合状态机（Cost Blending state machine）管理不同驾驶情境的识别及其预定义权重的选择，这些权重将应用于模型预测规划（Model Predictive Planning, MPP）和控制模块。两种基于优化的解决方案共享相同的问题表述和模型，仅在时间范围、速率、调节和开放环路与闭环方法上有所不同，以最大化它们交互的有效性。该工作在完全自主的开放轮赛车Superformula EAV-25上进行了验证，所实现的圈速在最佳人类驾驶员参考值的2%以内。结果表明，该解决方案能够在极限操控下驾驶，平稳执行超车操作，并快速应对高过度转向条件以恢复车辆稳定性。",
+  "arxiv_id": "2609.12660",
+  "arxiv_url": "https://arxiv.org/abs/2609.12660",
+  "authors": [
+    "Raji, Ayoub, Sacco, Federico, Musiu, Nicola, Bertogna, Marko"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12660",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.167219+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12660",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "vehicle",
+      "car",
+      "驾驶",
+      "车辆",
+      "motion planning",
+      "运动规划"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "本文面向极限自主赛车场景，提出由成本混合状态机驱动的模型预测规划与控制框架，根据正常驾驶、超车和反打方向等驾驶情境动态调整规划与控制目标权重。该框架在同一车辆模型和优化问题基础上，结合不同预测时域、更新速率及开环/闭环策略，实现规划与控制的协同，并在Superformula EAV-25全自主赛车上进行验证。实验结果显示，其圈速接近最佳人类车手水平，能够完成平稳超车，并在高过度转向情况下快速恢复车辆稳定性。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Driving Context-guided Model Predictive Planning and Control for Autonomous Car Racing at the Limit and Beyond",
+  "title_zh": "基于驾驶情境引导的模型预测规划与控制在极限及超越极限的自主赛车中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2609.12660"
+}

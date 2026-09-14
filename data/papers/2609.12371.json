@@ -1,0 +1,54 @@
+{
+  "abstract": "Autonomous driving requires more than recognizing what is present in a scene: a planner must determine how road structure, surrounding agents, and their motion states should influence a future maneuver. Existing learning-based planners can capture these influences through latent scene features and trajectory decoders, but the relationship between environmental factors and candidate actions often remains implicit. This limits the ability to inspect, diagnose, or refine how scene context affects the safety of a predicted trajectory. Classical safety fields provide an explicit spatial representation of this relationship, but their risk shapes and relative weights are prescribed in advance and do not adapt to each scene. We introduce READ, a framework that learns an explicit, planning-aligned risk representation from complementary geometric and behavioral constraints. READ instantiates this representation as a continuous spatiotemporal field, enabling differentiable queries along candidate trajectories. The learned field connects scene understanding with action selection by encouraging predicted trajectories to align with low-risk regions, while retaining a differentiable interface for trajectory evaluation and refinement. READ integrates with both end-to-end planners and Vision-Language-Action models. Experiments on NAVSIM show consistent gains across matched end-to-end backbones and strong performance in a VLA setting; READ also achieves competitive results on NAVSIM v2. These results establish learned spatial risk as an explicit, adaptable representation for safe planning.",
+  "abstract_zh": "自动驾驶不仅需要识别场景中的物体：规划者还必须确定道路结构、周围代理及其运动状态如何影响未来的操作。现有的基于学习的规划器可以通过潜在场景特征和轨迹解码器捕捉这些影响，但环境因素与候选动作之间的关系往往仍然是隐含的。这限制了检查、诊断或优化场景上下文如何影响预测轨迹安全性的能力。经典的安全场提供了这种关系的显式空间表示，但它们的风险形状和相对权重是预先规定的，无法适应每个场景。我们提出了READ，一个从互补的几何和行为约束中学习显式、与规划对齐的风险表示的框架。READ将这种表示实例化为一个连续的时空场，使得沿候选轨迹的可微查询成为可能。学习到的场将场景理解与动作选择连接起来，鼓励预测轨迹与低风险区域对齐，同时保留用于轨迹评估和优化的可微接口。READ可以与端到端规划器和视觉-语言-动作（Vision-Language-Action，VLA）模型集成。在NAVSIM上的实验显示，在匹配的端到端骨干网络中取得了一致的提升，并在VLA设置中表现出强大的性能；READ在NAVSIM v2上也取得了竞争性的结果。这些结果确立了学习的空间风险作为安全规划的显式、可适应的表示。",
+  "arxiv_id": "2609.12371",
+  "arxiv_url": "https://arxiv.org/abs/2609.12371",
+  "authors": [
+    "Liu, Zhiyuan, Tian, Yuanxin, Ke, Zehong, Li, Jinhao, Cheng, Hao, Xu, Zhenhua, Yu, Wenhao, Wang, Jianqiang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12371",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.156985+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12371",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "道路",
+      "vision-language-action",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 85
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "端到端驾驶"
+    ]
+  },
+  "title": "READ: Learning Risk-Informed Fields for End-to-End Autonomous Driving",
+  "title_zh": "READ：学习风险信息场以实现端到端自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.12371"
+}

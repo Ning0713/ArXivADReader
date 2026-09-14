@@ -1,0 +1,47 @@
+{
+  "abstract": "Dashboard-mounted gaze trackers often lose sight of the driver's eyes during large head rotations, including shoulder checks, mirror glances, and intersection scanning. These maneuvers occur when information about the driver's visual attention is most useful. Offline gap-filling methods may reconstruct a missing interval using observations from both sides, but an online driver-monitoring system cannot rely on measurements that have not yet occurred. We therefore formulate causal gaze recovery: forecasting unavailable gaze at time t without target-tracker gaze at t or later. We introduce the Causal Context-Gated Forecaster (CCGF), which encodes a 60-frame pre-dropout history of gaze and head pose and combines it with DINOv3 scene features. A learned reliability gate controls the contribution of the history and scene representations as the dropout progresses. We evaluate two scene conditions: Live, in which the scene representation continues to update during tracker loss, and Frozen, in which the final pre-dropout representation is used throughout the missing interval. We evaluate CCGF on 2,047 eligible, naturally occurring GazeSense head\\_lost events drawn from 10.5 h of naturalistic driving by ten drivers. Across all recordings, head\\_lost accounts for 8.5 percent of GazeSense recording time. Synchronized gaze coordinates from a head-mounted Neon tracker provide supervision and evaluation targets but are never used as model inputs. Under leave-one-driver-out evaluation, CCGF achieves a mean per-driver median error of 175.7 px (10.5 deg) with Live scene updates, a 33 percent reduction relative to history-only causal forecasting. With Frozen scene input, the error increases to 210.8 px (12.9 deg), indicating that scene observations acquired during the dropout provide useful predictive information. We will release the dataset, evaluation protocol, and causal baselines.",
+  "abstract_zh": "安装在仪表盘上的注视追踪器在驾驶员进行大幅度头部旋转时（包括肩部检查、镜子瞥视和交叉路口扫描）常常无法捕捉到驾驶员的眼睛。这些动作发生时，关于驾驶员视觉注意力的信息最为重要。离线填补缺失数据的方法可以利用两侧的观察结果重建缺失的时间间隔，但在线驾驶员监测系统无法依赖尚未发生的测量。因此，我们提出了因果注视恢复：在时间 t 预测不可用的注视，而不依赖于时间 t 或之后的目标追踪器注视。我们引入了因果上下文门控预测器（Causal Context-Gated Forecaster, CCGF），它编码了 60 帧的预中断注视和头部姿态历史，并将其与 DINOv3 场景特征结合。一个学习的可靠性门控在中断进程中控制历史和场景表示的贡献。我们评估了两种场景条件：实时（Live），在追踪器丢失期间场景表示持续更新；以及冻结（Frozen），在整个缺失时间间隔内使用最后的预中断表示。我们在 10 名驾驶员的 10.5 小时自然驾驶中提取的 2,047 个符合条件的自然发生的 GazeSense 头部丢失事件上评估 CCGF。在所有录音中，头部丢失占 GazeSense 录音时间的 8.5%。来自头戴式 Neon 追踪器的同步注视坐标提供了监督和评估目标，但从未作为模型输入。在留一驾驶员评估下，CCGF 在实时场景更新下实现了每位驾驶员的平均中位误差为 175.7 像素（10.5 度），相较于仅使用历史的因果预测减少了 33%。使用冻结场景输入时，误差增加至 210.8 像素（12.9 度），表明在中断期间获取的场景观察提供了有用的预测信息。我们将发布数据集、评估协议和因果基线。",
+  "arxiv_id": "2609.12374",
+  "arxiv_url": "https://arxiv.org/abs/2609.12374",
+  "authors": [
+    "Shabani, Shabnam, Farhani, Ghazal"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12374",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.190427+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12374",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "intersection",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "本文面向自然驾驶中的驾驶员监测，研究车内注视追踪发生中断时的在线因果注视恢复问题。作者提出因果上下文门控预测器，结合中断前的注视与头部姿态历史以及持续更新的场景视觉特征，在不使用未来注视观测的条件下预测缺失注视。实验表明，实时场景更新相较仅依赖历史信息可将误差降低 33%，说明场景上下文有助于判断驾驶员视觉注意力。该方法可用于增强自动驾驶和高级驾驶辅助系统中的驾驶员状态感知与安全监测。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "预测/规划"
+    ]
+  },
+  "title": "Context-Aware Causal Gaze Forecasting for Human-Vehicle Interaction During In-Cabin Tracking Dropouts",
+  "title_zh": "基于上下文的因果注视预测在人车交互中的应用：应对车内跟踪中断",
+  "translation_url": "https://hjfy.top/arxiv/2609.12374"
+}

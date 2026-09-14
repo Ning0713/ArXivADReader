@@ -1,0 +1,44 @@
+{
+  "abstract": "As the number of autonomous robots continues to grow, safety becomes increasingly important. Control barrier functions (CBFs) provide a theoretically grounded framework for ensuring safety, but existing design methods often face limitations in effectiveness, scalability, or interpretability, and may result in overly conservative safe sets. In this paper, we propose \\emph{VertexCBF}, a framework for learning neural CBFs in a scalable, systematic, and explainable way. We approximate the stationary Hamilton--Jacobi value function using a neural network trained via a combination of physics-informed and sparsely supervised learning. By exploiting control-affine dynamics and a convex polytope control set, under which the Hamiltonian is maximized at the control vertices, we efficiently generate supervision points via GPU-parallel vertex-restricted tree search, while a residual architecture guarantees that the learned CBF is never larger than the specified constraint function. We evaluate the method on 15 systems and compare it against relevant baselines, showing that it reliably recovers large safe sets where the baselines are conservative or fail completely. In addition, we perform a hardware experiment in which a mobile robot safely avoids pedestrians using a neural CBF trained with our method.",
+  "abstract_zh": "随着自主机器人数量的不断增加，安全性变得愈发重要。控制屏障函数（CBFs）提供了一个理论基础框架来确保安全，但现有的设计方法往往在有效性、可扩展性或可解释性方面存在局限，可能导致过于保守的安全集合。在本文中，我们提出了 extit{VertexCBF}，一个以可扩展、系统化和可解释的方式学习神经控制屏障函数的框架。我们通过结合物理信息和稀疏监督学习训练的神经网络来近似静态哈密顿-雅可比值函数。通过利用控制仿射动态和凸多面体控制集，在该控制集下哈密顿量在控制顶点处达到最大值，我们通过GPU并行的顶点限制树搜索高效生成监督点，同时残差架构保证学习到的控制屏障函数不会超过指定的约束函数。我们在15个系统上评估该方法，并与相关基线进行比较，结果表明它能够可靠地恢复大型安全集合，而基线则显得保守或完全失效。此外，我们还进行了一个硬件实验，其中一台移动机器人使用我们的方法训练的神经控制屏障函数安全地避开行人。",
+  "arxiv_id": "2609.12831",
+  "arxiv_url": "https://arxiv.org/abs/2609.12831",
+  "authors": [
+    "Derajić, Bojan, Bernhard, Sebastian, Hönig, Wolfgang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12831",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.170796+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12831",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "行人",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "本文提出一种基于顶点限制控制搜索的神经控制屏障函数学习方法，用于提升机器人系统安全控制的可扩展性、可解释性和安全集大小。该方法结合物理信息学习、稀疏监督、GPU并行树搜索和残差网络结构，在多种系统及移动机器人行人避障实验中验证了有效性。虽然论文未直接针对自动驾驶车辆展开研究，但其安全约束学习与行人避障方法对自动驾驶决策和控制具有明显的迁移价值，属于自动驾驶安全控制方向的边界相关工作。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": []
+  },
+  "title": "VertexCBF: Improving Neural Control Barrier Functions via Vertex-Restricted Control Search",
+  "title_zh": "VertexCBF：通过顶点限制控制搜索改进神经控制屏障函数",
+  "translation_url": "https://hjfy.top/arxiv/2609.12831"
+}

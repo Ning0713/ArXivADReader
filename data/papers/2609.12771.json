@@ -1,0 +1,47 @@
+{
+  "abstract": "Cross-vehicle federated learning enables vehicles to collaboratively improve perception models while keeping locally collected driving data private. However, vehicle participation is transient, and a vehicle may depart before training converges while permanently taking its local data. When this departing vehicle holds most samples of a target class, the class becomes rare in the remaining FL network, and its recognition can silently degrade as the shared backbone continues to evolve. Recovering the class is difficult since the few remaining samples provide a noisy prototype estimate, while FL privacy constraints prevent centralized access to raw data or per-sample features. This paper presents MPT, a cross-vehicle FL framework that maintains rare-class recognition by reconstructing its prototype at every round from privacy-preserving class-level statistics. MPT combines a barycentric decomposition that tracks drift shared with remaining-class prototypes, a covariance-based residual prediction that estimates out-of-span drift, and an adaptive calibration that weighs the remaining rare-class samples according to their reliability. We evaluate MPT on three vehicle classification tasks and four backbones against representative calibration and drift-compensation baselines. MPT outperforms all baselines in rare class F1, reaching 0.516 on the nuImages dataset with only 1\\% of rare-class samples remaining, without raw data, per-sample features, or retraining.",
+  "abstract_zh": "跨车辆联邦学习使车辆能够在保持本地收集的驾驶数据私密的同时，共同改善感知模型。然而，车辆的参与是暂时的，车辆可能在训练收敛之前就离开，同时永久带走其本地数据。当离开的车辆持有目标类别的大部分样本时，该类别在剩余的联邦学习网络中变得稀有，并且其识别可能会随着共享骨干网络的持续演变而悄然下降。恢复该类别是困难的，因为剩余的少量样本提供了噪声原型估计，而联邦学习的隐私约束则阻止了对原始数据或每个样本特征的集中访问。本文提出了MPT，一个跨车辆的联邦学习框架，通过从隐私保护的类别级统计数据中在每一轮重建其原型来维持稀有类别的识别。MPT结合了跟踪与剩余类别原型共享的漂移的重心分解、基于协方差的残差预测以估计超出范围的漂移，以及根据剩余稀有类别样本的可靠性进行加权的自适应校准。我们在三个车辆分类任务和四个骨干网络上评估了MPT，并与代表性的校准和漂移补偿基线进行了比较。MPT在稀有类别F1上超越了所有基线，在nuImages数据集上仅剩1%的稀有类别样本时达到了0.516的成绩，且无需原始数据、每个样本特征或重新训练。",
+  "arxiv_id": "2609.12771",
+  "arxiv_url": "https://arxiv.org/abs/2609.12771",
+  "authors": [
+    "Jang, Hanju, Han, Gyeongmin, Lee, Sungmin, Lee, Kichang, Lee, Chunghan, Ko, JeongGil"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12771",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.274748+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12771",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "本文面向跨车辆联邦学习中的自动驾驶感知模型，研究车辆离网导致稀有类别样本和原型缺失、进而造成识别性能退化的问题。提出MPT框架，仅利用隐私保护的类别级统计信息，通过重心分解、协方差残差预测和自适应可靠性校准，在每轮联邦训练中重建并跟踪缺失类别原型。实验表明，该方法在多个车辆分类任务和骨干网络上提升了稀有类别识别性能，在nuImages仅保留1%稀有类别样本时取得0.516的F1分数。",
+  "tags": {
+    "primary": "协同/V2X",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "MPT: Missing Prototype Tracking via Barycentric Reconstruction in Vehicular Federated Learning",
+  "title_zh": "MPT：通过重心重建在车辆联邦学习中的缺失原型跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2609.12771"
+}

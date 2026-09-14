@@ -1,0 +1,44 @@
+{
+  "abstract": "Functional integration is a growing trend in vehicle control, often involving the coordination of multiple controllers to achieve various objectives simultaneously. The need for flexibility and reliability has led to a \"plug-and-play\" approach in control system design, which presents challenges for traditional integrated model predictive control (MPC). Agent-based model predictive control (AMPC) has recently emerged as a distributed solution that treats controllers as agents, creating a collaborative framework among them to reach a common goal. However, this approach struggles to manage distributed conflicting objectives when agents are coupled or interdependent. To address this, we propose a novel, practical distributed control scheme called multi-objective AMPC, which adapts the alternating direction method of multipliers (ADMM) into a general control strategy that approximates global optimization while decoupling objectives. We systematically develop three formulations that maintain convergence while addressing control regularization and inequality constraints, applying them to complex vehicle control systems for the first time. The proposed method has been tested on two vehicle control scenarios with a multi-objective topology. Different formulations are compared through simulations, and the most computationally efficient one was implemented on an electric vehicle for real-world evaluations. The results demonstrate that the proposed multi-objective AMPC can converge approximately to the same global optimum as integrated MPC with greater flexibility and the potential to reduce computational costs.",
+  "abstract_zh": "功能集成在车辆控制中是一种日益增长的趋势，通常涉及多个控制器的协调，以同时实现各种目标。对灵活性和可靠性的需求促使控制系统设计采用“即插即用”的方法，这给传统的集成模型预测控制（MPC）带来了挑战。基于代理的模型预测控制（AMPC）最近作为一种分布式解决方案出现，将控制器视为代理，创建了一个协作框架以实现共同目标。然而，当代理之间存在耦合或相互依赖时，这种方法在管理分布式冲突目标方面面临困难。为了解决这一问题，我们提出了一种新颖的实用分布式控制方案，称为多目标AMPC，该方案将交替方向乘子法（ADMM）应用于一种通用控制策略，以在解耦目标的同时近似全局优化。我们系统地开发了三种保持收敛性的公式，同时处理控制正则化和不等式约束，并首次将其应用于复杂的车辆控制系统。所提出的方法在具有多目标拓扑的两个车辆控制场景中进行了测试。通过仿真比较不同的公式，并在电动车上实施了计算效率最高的公式进行实际评估。结果表明，所提出的多目标AMPC能够以更大的灵活性和降低计算成本的潜力，近似收敛到与集成MPC相同的全局最优解。",
+  "arxiv_id": "2609.12108",
+  "arxiv_url": "https://arxiv.org/abs/2609.12108",
+  "authors": [
+    "Zhong, Jiaming, Khoshnevisan, Ladan, Huang, Shucheng, Pirani, Mohammad, Pant, Yash Vardhan, Khajepour, Amir"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12108",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.145862+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12108",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "本文提出一种基于ADMM的多目标代理模型预测控制方法，用于具有耦合和冲突控制目标的即插即用车辆控制系统。该方法通过分布式协调近似集成MPC的全局优化，并在仿真及电动车实车实验中验证了收敛性、计算效率和控制灵活性。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Multi-Objective Agent-Based Model Predictive Controller for Plug-and-Play Vehicle Control",
+  "title_zh": "多目标基于代理的模型预测控制器用于即插即用车辆控制",
+  "translation_url": "https://hjfy.top/arxiv/2609.12108"
+}

@@ -1,0 +1,48 @@
+{
+  "abstract": "Strategic flight plan validation in Advanced Air Mobility (AAM) environments requires robust methods for predicting aircraft state uncertainty and detecting potential conflicts with dynamic airspace hazards. This paper presents a novel framework for uncertainty-conditioned trajectory prediction combined with polyhedra hazard representation for pre-flight conflict detection. We introduce a closed-form uncertainty estimation method that couples non-uniform rational B-spline (NURBS) curve fitting for kinematic trajectory generation with a Kalman Filter for state covariance propagation. Drawing from the Light Propagation Algorithm (LPA) paradigm, we employ a sigmoid-blended measurement noise model that captures the uncertainty reduction behavior of flight management systems approaching the required time of arrival (RTA) for waypoints. The resulting temporal uncertainty bounds are derived through a velocity-to-time variance transformation, enabling probabilistic assessment of arrival time deviations along the flight path. For hazard representation, we develop an operator-conditioned classification scheme that transforms gridded environmental data, specifically weather phenomena, into three-dimensional polyhedra volumes with intensity-based stratification. These hazard polyhedra incorporate aircraft-specific safety buffers computed from vehicle performance characteristics. Conflict detection is performed through mesh intersection algorithms operating on the spatial uncertainty tube surrounding the mean trajectory against the hazard polyhedra and temporal overlap. The framework enables the continuous strategic validation of flight plans throughout the pre-flight planning time horizon as environmental conditions evolve.",
+  "abstract_zh": "在先进空中出行（AAM）环境中，战略飞行计划验证需要强大的方法来预测飞机状态的不确定性并检测与动态空域危险的潜在冲突。本文提出了一种新颖的框架，结合不确定性条件的轨迹预测与多面体危险表示，用于飞行前冲突检测。我们引入了一种闭式不确定性估计方法，该方法将非均匀有理B样条（NURBS）曲线拟合用于运动轨迹生成，并与卡尔曼滤波器结合以进行状态协方差传播。借鉴光传播算法（LPA）范式，我们采用了一种sigmoid混合测量噪声模型，捕捉飞行管理系统在接近航点所需到达时间（RTA）时的不确定性减少行为。通过速度到时间的方差变换，得出了结果的时间不确定性界限，从而能够对飞行路径上的到达时间偏差进行概率评估。对于危险表示，我们开发了一种操作员条件的分类方案，将网格化环境数据，特别是天气现象，转化为具有强度基础分层的三维多面体体积。这些危险多面体结合了根据飞行器性能特征计算的特定于飞机的安全缓冲区。冲突检测通过在围绕平均轨迹的空间不确定性管道与危险多面体及时间重叠之间操作的网格交集算法进行。该框架使得在环境条件演变的过程中，能够持续进行飞行计划的战略验证。",
+  "arxiv_id": "2609.12095",
+  "arxiv_url": "https://arxiv.org/abs/2609.12095",
+  "authors": [
+    "Kandoria, Balram, Kim, Seulki, Samyal, Aryaman Singh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12095",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.144370+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12095",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "intersection",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Uncertainty-Aware Conflict Detection Against Operator-Conditioned Weather Hazards",
+  "title_zh": "针对操作员条件下天气危险的基于不确定性的冲突检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.12095"
+}

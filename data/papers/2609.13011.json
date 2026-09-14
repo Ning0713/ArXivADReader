@@ -1,0 +1,47 @@
+{
+  "abstract": "Data-driven driving simulators command accelerations and steering rates from a fixed grid without constraining the realized accelerations and jerks. As a result, reinforcement-learning policies inflate safety metrics through abrupt, last-second maneuvers that lie far outside the range of human driving and would be unacceptable to occupants of a real vehicle, so the metrics measure simulator permissiveness rather than policy quality. Enforcing comfort bounds naively is not enough: lateral limits shrink quadratically with speed, so clamping a static grid saturates it and destroys fine-grained control (\"grid collapse\"). We propose an adaptive action parameterization that rediscretizes the grid at every step to span exactly the per-step feasible control set, via closed-form inversion of the lateral-jerk constraint. We further present PufferDrive-Editor, a browser-based tool to audit realized kinematics and author kinematically challenging scenes. On the Waymo Open Motion Dataset and a hand-authored slalom, our adaptive model holds comfort violations below 1% while outperforming clipped-grid and direct-jerk baselines in navigability.",
+  "abstract_zh": "数据驱动的驾驶模拟器从固定网格中指挥加速度和转向速率，而不限制实际的加速度和冲击。因此，强化学习策略通过突然的、最后一刻的操控来膨胀安全指标，这些操控远远超出了人类驾驶的范围，并且对于真实车辆的乘员来说是不可接受的，因此这些指标衡量的是模拟器的宽容性而非策略的质量。简单地强制执行舒适性约束是不够的：横向限制随着速度的增加而呈二次方缩小，因此固定网格的限制会使其饱和并破坏细粒度控制（“网格崩溃”）。我们提出了一种自适应的动作参数化方法，通过横向冲击约束的封闭形式反演，在每一步重新离散化网格，以准确涵盖每一步的可行控制集。我们进一步介绍了PufferDrive-Editor，这是一个基于浏览器的工具，用于审计实际运动学并创作运动学挑战场景。在Waymo开放运动数据集和手动创作的障碍赛中，我们的自适应模型将舒适性违规率保持在1%以下，同时在可导航性方面优于剪切网格和直接冲击基线。",
+  "arxiv_id": "2609.13011",
+  "arxiv_url": "https://arxiv.org/abs/2609.13011",
+  "authors": [
+    "Rothenhäusler, Anna, Jost, Daniel, Rajan, Raghu, Janjos, Faris, Scheel, Oliver, Look, Andreas, Boedecker, Joschka"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-13011",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.177925+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.13011",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "waymo open",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 40
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Comfort by Construction: Adaptive, Comfort-Bounded Action Spaces for Learned Driving Policies",
+  "title_zh": "通过构建实现舒适性：适应性、舒适性约束的动作空间用于学习驾驶策略",
+  "translation_url": "https://hjfy.top/arxiv/2609.13011"
+}

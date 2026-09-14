@@ -1,0 +1,49 @@
+{
+  "abstract": "In this paper, we describe the Mission Performance module implemented for a fully autonomous racing car to automatically manage the longitudinal, lateral, and combined performances, aiming to speedup the laptime progression while assuring safety. Motivated by the difficulty and risks of applying the real-time estimation of the grip to critical modules like the motion planner and controller, the Mission Performance guides these modules adapting their target performance instead of changing the vehicle model parameters. The module is formed by pre-defined progressions to warm up the tires at the beginning of a run. Then, the system continuously monitors safety and vehicle dynamics metrics on a per-sector basis to adaptively reduce, maintain, or increase the performance levels for each sector, progressively converging toward the maximum allowed value. The solution's effectiveness is demonstrated on the EAV-25, a fully autonomous Dallara Superformula, at the Yas Marina Circuit during the Abu Dhabi Autonomous Racing League (A2RL) Season 2.",
+  "abstract_zh": "本文描述了为完全自主赛车实现的任务性能模块，该模块旨在自动管理纵向、横向和综合性能，以加快圈速进度，同时确保安全。由于实时估计抓地力对运动规划器和控制器等关键模块的应用存在困难和风险，任务性能模块指导这些模块调整其目标性能，而不是改变车辆模型参数。该模块由预定义的进度组成，以在比赛开始时为轮胎预热。随后，系统持续监测每个赛段的安全性和车辆动态指标，以自适应地降低、维持或提高每个赛段的性能水平，逐步接近允许的最大值。该解决方案的有效性在阿布扎比自主赛车联赛（A2RL）第二季期间于雅斯码头赛道上的完全自主Dallara Superformula赛车EAV-25上得到了验证。",
+  "arxiv_id": "2609.12292",
+  "arxiv_url": "https://arxiv.org/abs/2609.12292",
+  "authors": [
+    "Lambertini, Giovanni, Pini, Matteo, Musiu, Nicola, Raji, Ayoub, Iacovacci, Francesco, Bertogna, Marko"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12292",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.154033+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12292",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "vehicle",
+      "car",
+      "车辆",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Mission Performance: Automatic and Adaptive Race Pace Progression for Autonomous Racing",
+  "title_zh": "任务性能：自动和自适应的自主赛车赛道进度管理",
+  "translation_url": "https://hjfy.top/arxiv/2609.12292"
+}

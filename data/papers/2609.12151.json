@@ -1,0 +1,44 @@
+{
+  "abstract": "The HSI-Road dataset provides paired RGB and 25-channel NIR (600--960~nm) images with binary masks but no surface-level labels.~This paper introduces a manually labeled six-class taxonomy: Background, Asphalt, Concrete, Dirt, Water, and Grass, and an RGB-to-NIR registration pipeline with corresponding annotations. Six semantic-segmentation models (SSMs) are evaluated under four input configurations: original-resolution RGB (RGB$_{\\text{ori}}$), registered low-resolution RGB (RGB$_{\\text{reg}}$), NIR, and channel-stacked RGB$_{\\text{reg}}$--NIR (RGBN$_{\\text{stk}}$). The comparison quantifies the effect of spatial-resolution reduction on RGB, along with evaluation of NIR and RGBN$_{\\text{stk}}$, with results reported using per-class and mean IoU and F1 scores. RGB$_{\\text{ori}}$ achieves the highest overall performance but contains 12$\\times$ more pixels than the matched-resolution inputs. At the matched 192$\\times$384 resolution, RGBN$_{\\text{stk}}$ outperforms NIR for all six SSMs and RGB$_{\\text{reg}}$ for five of six, with the most consistent gains for the Water class. These results highlight the importance of spatial resolution while showing that NIR provides complementary information to RGB.",
+  "abstract_zh": "HSI-Road数据集提供了配对的RGB和25通道近红外（NIR，600--960 nm）图像及其二进制掩膜，但缺乏表面级标签。本文引入了一种手动标注的六类分类法：背景、沥青、混凝土、泥土、水和草地，以及相应注释的RGB到NIR注册流程。评估了六种语义分割模型（SSMs）在四种输入配置下的表现：原始分辨率RGB（RGB$_{ ext{ori}}$）、注册低分辨率RGB（RGB$_{ ext{reg}}$）、NIR和通道堆叠的RGB$_{ ext{reg}}$--NIR（RGBN$_{ ext{stk}}$）。比较量化了空间分辨率降低对RGB的影响，同时评估了NIR和RGBN$_{ ext{stk}}$，结果通过每类和平均IoU及F1分数进行报告。RGB$_{ ext{ori}}$实现了最高的整体性能，但其像素数量是匹配分辨率输入的12倍。在匹配的192$ imes$384分辨率下，RGBN$_{ ext{stk}}$在所有六种SSMs中均优于NIR，并且在六种中有五种优于RGB$_{ ext{reg}}$，其中水类的增益最为一致。这些结果突显了空间分辨率的重要性，同时表明NIR为RGB提供了互补信息。",
+  "arxiv_id": "2609.12151",
+  "arxiv_url": "https://arxiv.org/abs/2609.12151",
+  "authors": [
+    "Shah, Imad Ali, Mehmood, Imran, Ward, Enda, Glavin, Martin, Jones, Edward, Deegan, Brian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12151",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.183046+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12151",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "本文面向道路场景表面语义分割，重新标注并扩展HSI-Road数据集，引入沥青、混凝土、泥土、水和草地等六类表面标签，同时研究RGB与多通道近红外信息的配准和融合。实验显示，多光谱融合在匹配分辨率下可提升道路场景分割效果，尤其有利于水面识别。该工作可用于自动驾驶环境感知中的道路与地表材质解析。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合"
+    ]
+  },
+  "title": "HSI-Road Relabeled: Surface-Aware Road-Scene Segmentation",
+  "title_zh": "HSI-Road重新标注：表面感知道路场景分割",
+  "translation_url": "https://hjfy.top/arxiv/2609.12151"
+}

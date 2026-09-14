@@ -1,6 +1,266 @@
 {
-  "generated_at": "2026-09-11T09:20:28.598576+00:00",
+  "generated_at": "2026-09-14T10:20:38.154594+00:00",
   "items": [
+    {
+      "abstract": "Data-driven driving simulators command accelerations and steering rates from a fixed grid without constraining the realized accelerations and jerks. As a result, reinforcement-learning policies inflate safety metrics through abrupt, last-second maneuvers that lie far outside the range of human driving and would be unacceptable to occupants of a real vehicle, so the metrics measure simulator permissiveness rather than policy quality. Enforcing comfort bounds naively is not enough: lateral limits shrink quadratically with speed, so clamping a static grid saturates it and destroys fine-grained control (\"grid collapse\"). We propose an adaptive action parameterization that rediscretizes the grid at every step to span exactly the per-step feasible control set, via closed-form inversion of the lateral-jerk constraint. We further present PufferDrive-Editor, a browser-based tool to audit realized kinematics and author kinematically challenging scenes. On the Waymo Open Motion Dataset and a hand-authored slalom, our adaptive model holds comfort violations below 1% while outperforming clipped-grid and direct-jerk baselines in navigability.",
+      "abstract_zh": "数据驱动的驾驶模拟器从固定网格中指挥加速度和转向速率，而不限制实际的加速度和冲击。因此，强化学习策略通过突然的、最后一刻的操控来膨胀安全指标，这些操控远远超出了人类驾驶的范围，并且对于真实车辆的乘员来说是不可接受的，因此这些指标衡量的是模拟器的宽容性而非策略的质量。简单地强制执行舒适性约束是不够的：横向限制随着速度的增加而呈二次方缩小，因此固定网格的限制会使其饱和并破坏细粒度控制（“网格崩溃”）。我们提出了一种自适应的动作参数化方法，通过横向冲击约束的封闭形式反演，在每一步重新离散化网格，以准确涵盖每一步的可行控制集。我们进一步介绍了PufferDrive-Editor，这是一个基于浏览器的工具，用于审计实际运动学并创作运动学挑战场景。在Waymo开放运动数据集和手动创作的障碍赛中，我们的自适应模型将舒适性违规率保持在1%以下，同时在可导航性方面优于剪切网格和直接冲击基线。",
+      "authors": [
+        "Rothenhäusler, Anna, Jost, Daniel, Rajan, Raghu, Janjos, Faris, Scheel, Oliver, Look, Andreas, Boedecker, Joschka"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.13011",
+      "tags": [
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Comfort by Construction: Adaptive, Comfort-Bounded Action Spaces for Learned Driving Policies",
+      "title_zh": "通过构建实现舒适性：适应性、舒适性约束的动作空间用于学习驾驶策略",
+      "url": "/daily/2026-09-14/#paper-2609-13011"
+    },
+    {
+      "abstract": "Datasets are a crucial element in the development of perception algorithms. They relate sensor measurement data to annotated reference information and allow for the deduction of sensor and object characteristics. In autonomous driving, the reference data commonly consist of semantic image segmentation, point-wise associations, or bounding box annotations. The dataset proposed in this work, however, aims to dig deeper into the evaluation of measurement principles and provides scanned 3D models of all vehicles together with a pose and continuous kinematics reference obtained by RTK-GNSS. Combined, the state of the complete dynamic surrounding of the sensor vehicle is known for any point in time. Subsequent reference formats can be easily computed in user-defined granularity. This dataset involves single-object and multi-object recordings with seven target vehicles. In particular, measurement effects such as occlusion, as well as reflections, can be evaluated, as the normals of the shape of the target vehicles are known. We describe the dataset, discuss the technical background of its development, and briefly present exemplary evaluations.",
+      "abstract_zh": "数据集是感知算法开发中的关键要素。它们将传感器测量数据与标注的参考信息关联起来，并允许推导传感器和物体的特性。在自动驾驶中，参考数据通常包括语义图像分割、逐点关联或边界框标注。然而，本研究提出的数据集旨在深入评估测量原理，并提供所有车辆的扫描3D模型，以及通过RTK-GNSS获得的姿态和连续运动学参考。结合起来，传感器车辆在任何时刻的完整动态环境状态都是已知的。后续的参考格式可以在用户定义的粒度下轻松计算。该数据集涉及七辆目标车辆的单对象和多对象录制。特别地，可以评估诸如遮挡和反射等测量效应，因为目标车辆的形状法线是已知的。我们描述了该数据集，讨论了其开发的技术背景，并简要介绍了示例评估。",
+      "authors": [
+        "Berthold, Philipp, Forkel, Bianca, Maehlisch, Mirko"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12871",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "仿真/数据"
+      ],
+      "title": "A Multi-Vehicle Dataset with Camera, LiDAR, and Radar Sensors and Scanned 3D Models for Custom Auto-Annotation using RTK-GNSS",
+      "title_zh": "一个包含摄像头、激光雷达和雷达传感器的多车辆数据集及用于自定义自动标注的扫描3D模型，采用RTK-GNSS",
+      "url": "/daily/2026-09-14/#paper-2609-12871"
+    },
+    {
+      "abstract": "As the number of autonomous robots continues to grow, safety becomes increasingly important. Control barrier functions (CBFs) provide a theoretically grounded framework for ensuring safety, but existing design methods often face limitations in effectiveness, scalability, or interpretability, and may result in overly conservative safe sets. In this paper, we propose \\emph{VertexCBF}, a framework for learning neural CBFs in a scalable, systematic, and explainable way. We approximate the stationary Hamilton--Jacobi value function using a neural network trained via a combination of physics-informed and sparsely supervised learning. By exploiting control-affine dynamics and a convex polytope control set, under which the Hamiltonian is maximized at the control vertices, we efficiently generate supervision points via GPU-parallel vertex-restricted tree search, while a residual architecture guarantees that the learned CBF is never larger than the specified constraint function. We evaluate the method on 15 systems and compare it against relevant baselines, showing that it reliably recovers large safe sets where the baselines are conservative or fail completely. In addition, we perform a hardware experiment in which a mobile robot safely avoids pedestrians using a neural CBF trained with our method.",
+      "abstract_zh": "随着自主机器人数量的不断增加，安全性变得愈发重要。控制屏障函数（CBFs）提供了一个理论基础框架来确保安全，但现有的设计方法往往在有效性、可扩展性或可解释性方面存在局限，可能导致过于保守的安全集合。在本文中，我们提出了 extit{VertexCBF}，一个以可扩展、系统化和可解释的方式学习神经控制屏障函数的框架。我们通过结合物理信息和稀疏监督学习训练的神经网络来近似静态哈密顿-雅可比值函数。通过利用控制仿射动态和凸多面体控制集，在该控制集下哈密顿量在控制顶点处达到最大值，我们通过GPU并行的顶点限制树搜索高效生成监督点，同时残差架构保证学习到的控制屏障函数不会超过指定的约束函数。我们在15个系统上评估该方法，并与相关基线进行比较，结果表明它能够可靠地恢复大型安全集合，而基线则显得保守或完全失效。此外，我们还进行了一个硬件实验，其中一台移动机器人使用我们的方法训练的神经控制屏障函数安全地避开行人。",
+      "authors": [
+        "Derajić, Bojan, Bernhard, Sebastian, Hönig, Wolfgang"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12831",
+      "tags": [
+        "安全/异常"
+      ],
+      "title": "VertexCBF: Improving Neural Control Barrier Functions via Vertex-Restricted Control Search",
+      "title_zh": "VertexCBF：通过顶点限制控制搜索改进神经控制屏障函数",
+      "url": "/daily/2026-09-14/#paper-2609-12831"
+    },
+    {
+      "abstract": "We present a custom high-fidelity vehicle dynamics simulation environment for testing and validation of Autonomous Racing software. The digital twin of the autonomous vehicle is developed in Dymola, using racecar dynamics modeling libraries to build a complete multi-body model. A 3D road surface, including elevation profiles and curbs, is implemented using the Curved Regular Grid (CRG) standard. The model is exported from Dymola as a Functional Mock-up Unit (FMU) and integrated into a custom software-in-the-loop simulator, where communication interfaces with the autonomous racing stack were developed in C++. A calibration procedure based on experimental data is also presented, along with a validation study to further support the quality of the proposed framework. The simulator runs in real time on a portable computer and provides reliable ground truth for algorithms validation prior to real-world deployment.",
+      "abstract_zh": "我们提出了一种定制的高保真车辆动力学仿真环境，用于测试和验证自主赛车软件。自主车辆的数字双胞胎在Dymola中开发，利用赛车动力学建模库构建完整的多体模型。采用曲面规则网格（Curved Regular Grid, CRG）标准实现了包含高程轮廓和路缘的3D路面。该模型从Dymola导出为功能模型单元（Functional Mock-up Unit, FMU），并集成到一个定制的软件在环仿真器中，其中与自主赛车堆栈的通信接口是用C++开发的。还提出了一种基于实验数据的校准程序，以及一项验证研究，以进一步支持所提框架的质量。该仿真器在便携式计算机上实时运行，并为算法验证提供可靠的真实数据，以便在实际部署之前进行验证。",
+      "authors": [
+        "Musiu, Nicola, Iacovacci, Francesco, Lupo, Fausto, Pini, Matteo, Scapicchi, Giovanni, Moretti, Francesco, Mascaro, Eugenio, Musso, Pietro, Raji, Ayoub, Bertogna, Marko, Arricale, Vincenzo Maria, Sapio, Angelo Lo, Piccarelli, Alessandro, Fish, Garron"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12795",
+      "tags": [
+        "仿真/数据"
+      ],
+      "title": "High-Fidelity Multi-Body Simulator for Autonomous Racing",
+      "title_zh": "高保真多体仿真器用于自主赛车",
+      "url": "/daily/2026-09-14/#paper-2609-12795"
+    },
+    {
+      "abstract": "Cross-vehicle federated learning enables vehicles to collaboratively improve perception models while keeping locally collected driving data private. However, vehicle participation is transient, and a vehicle may depart before training converges while permanently taking its local data. When this departing vehicle holds most samples of a target class, the class becomes rare in the remaining FL network, and its recognition can silently degrade as the shared backbone continues to evolve. Recovering the class is difficult since the few remaining samples provide a noisy prototype estimate, while FL privacy constraints prevent centralized access to raw data or per-sample features. This paper presents MPT, a cross-vehicle FL framework that maintains rare-class recognition by reconstructing its prototype at every round from privacy-preserving class-level statistics. MPT combines a barycentric decomposition that tracks drift shared with remaining-class prototypes, a covariance-based residual prediction that estimates out-of-span drift, and an adaptive calibration that weighs the remaining rare-class samples according to their reliability. We evaluate MPT on three vehicle classification tasks and four backbones against representative calibration and drift-compensation baselines. MPT outperforms all baselines in rare class F1, reaching 0.516 on the nuImages dataset with only 1\\% of rare-class samples remaining, without raw data, per-sample features, or retraining.",
+      "abstract_zh": "跨车辆联邦学习使车辆能够在保持本地收集的驾驶数据私密的同时，共同改善感知模型。然而，车辆的参与是暂时的，车辆可能在训练收敛之前就离开，同时永久带走其本地数据。当离开的车辆持有目标类别的大部分样本时，该类别在剩余的联邦学习网络中变得稀有，并且其识别可能会随着共享骨干网络的持续演变而悄然下降。恢复该类别是困难的，因为剩余的少量样本提供了噪声原型估计，而联邦学习的隐私约束则阻止了对原始数据或每个样本特征的集中访问。本文提出了MPT，一个跨车辆的联邦学习框架，通过从隐私保护的类别级统计数据中在每一轮重建其原型来维持稀有类别的识别。MPT结合了跟踪与剩余类别原型共享的漂移的重心分解、基于协方差的残差预测以估计超出范围的漂移，以及根据剩余稀有类别样本的可靠性进行加权的自适应校准。我们在三个车辆分类任务和四个骨干网络上评估了MPT，并与代表性的校准和漂移补偿基线进行了比较。MPT在稀有类别F1上超越了所有基线，在nuImages数据集上仅剩1%的稀有类别样本时达到了0.516的成绩，且无需原始数据、每个样本特征或重新训练。",
+      "authors": [
+        "Jang, Hanju, Han, Gyeongmin, Lee, Sungmin, Lee, Kichang, Lee, Chunghan, Ko, JeongGil"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12771",
+      "tags": [
+        "协同/V2X",
+        "感知",
+        "安全/异常"
+      ],
+      "title": "MPT: Missing Prototype Tracking via Barycentric Reconstruction in Vehicular Federated Learning",
+      "title_zh": "MPT：通过重心重建在车辆联邦学习中的缺失原型跟踪",
+      "url": "/daily/2026-09-14/#paper-2609-12771"
+    },
+    {
+      "abstract": "This paper presents a Model Predictive Control-based motion planning and control pipeline for autonomous car racing capable of adapting to different driving contexts, such as overtaking, nominal driving, and countersteering. A Cost Blending state machine manages the identification of different driving contexts and the selection of their predefined weights to be applied to the Model Predictive Planning (MPP) and Control (MPC) modules. The two optimization-based solutions share the same problem formulation and model, differing only in horizon length, rate, tuning, and in their open-loop versus closed-loop approach to maximize the effectiveness of their interaction. The work is validated on the fully autonomous open-wheel racecar Superformula EAV-25, with a lap time achieved that is within 2% of the best human driver reference. The results demonstrate the capability of the solution in driving at the limit of handling, smoothly executing overtaking maneuvers, and quickly reacting to high oversteering conditions to recover the vehicle stability.",
+      "abstract_zh": "本文提出了一种基于模型预测控制（Model Predictive Control, MPC）的运动规划与控制管道，适用于自主赛车，能够适应不同的驾驶情境，如超车、正常驾驶和反打方向。一个成本混合状态机（Cost Blending state machine）管理不同驾驶情境的识别及其预定义权重的选择，这些权重将应用于模型预测规划（Model Predictive Planning, MPP）和控制模块。两种基于优化的解决方案共享相同的问题表述和模型，仅在时间范围、速率、调节和开放环路与闭环方法上有所不同，以最大化它们交互的有效性。该工作在完全自主的开放轮赛车Superformula EAV-25上进行了验证，所实现的圈速在最佳人类驾驶员参考值的2%以内。结果表明，该解决方案能够在极限操控下驾驶，平稳执行超车操作，并快速应对高过度转向条件以恢复车辆稳定性。",
+      "authors": [
+        "Raji, Ayoub, Sacco, Federico, Musiu, Nicola, Bertogna, Marko"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12660",
+      "tags": [
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "Driving Context-guided Model Predictive Planning and Control for Autonomous Car Racing at the Limit and Beyond",
+      "title_zh": "基于驾驶情境引导的模型预测规划与控制在极限及超越极限的自主赛车中的应用",
+      "url": "/daily/2026-09-14/#paper-2609-12660"
+    },
+    {
+      "abstract": "Differences in vehicle kinematic characteristics between production autonomous vehicles (PAVs) and human-driven vehicles (HVs) have been limitedly investigated by empirical studies. Most recent studies rely on simulation-based models, while some further investigate low-level adaptive cruise control (ACC) systems in controlled experiments. These methods commonly adapt some time-domain metrics to characterize PAV-HV differences across limited driving conditions. However, current PAVs equipped with high-level autonomous driving systems generate driving behaviors in a black box using data-driven models. These fundamentally different mechanisms for generating behaviors may produce distinct kinematic characteristics in traffic. More importantly, these time-domain metrics cannot reflect frequency-related traffic dynamics across different driving scenarios. Thus, this study adapted a real-world PAV dataset with four PAV platforms and developed a frequency-domain framework to quantify kinematic differences between PAVs and HVs across diverse driving scenarios, including varying driving states, lighting, weather, and vehicle densities. The framework transforms kinematic signals into the frequency domain and extracts spectral features, and then compares these features between PAVs and HVs based on kernel density estimation and Wasserstein distance. The results reveal clear scenario-dependent PAV-HV spectral differences. Specifically, speed-related differences were consistently smaller during car-following than cruising, while rainy conditions consistently enlarged acceleration-related differences compared with clear conditions. These findings highlight the necessity of multi-scenario evaluations and demonstrate the value of frequency-domain analysis for characterizing PAV-HV kinematic differences under real-world conditions.",
+      "abstract_zh": "生产型自主车辆（PAVs）与人类驾驶车辆（HVs）之间的运动学特征差异在实证研究中受到的关注有限。最近的研究大多依赖于基于仿真的模型，而一些研究则在受控实验中进一步探讨低级自适应巡航控制（ACC）系统。这些方法通常采用一些时域指标来表征PAV与HV之间的差异，且仅限于有限的驾驶条件。然而，当前配备高水平自主驾驶系统的PAVs通过数据驱动模型在黑箱中生成驾驶行为。这些生成行为的根本不同机制可能在交通中产生独特的运动学特征。更重要的是，这些时域指标无法反映不同驾驶场景下与频率相关的交通动态。因此，本研究采用了一个包含四种PAV平台的真实世界PAV数据集，并开发了一个频域框架，以量化PAV与HV在多种驾驶场景下的运动学差异，包括不同的驾驶状态、光照、天气和车辆密度。该框架将运动学信号转换为频域并提取光谱特征，然后基于核密度估计和Wasserstein距离比较PAV与HV之间的这些特征。结果揭示了明显依赖场景的PAV-HV光谱差异。具体而言，在跟车时速度相关的差异始终小于巡航时，而在雨天条件下，与晴天条件相比，加速度相关的差异始终增大。这些发现强调了多场景评估的必要性，并展示了频域分析在表征真实世界条件下PAV-HV运动学差异中的价值。",
+      "authors": [
+        "Fang, Peiyi, Li, Xiangyu, Weng, Yonglin, Ma, Ke"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12609",
+      "tags": [
+        "仿真/数据",
+        "世界模型/生成"
+      ],
+      "title": "Quantifying Spectral Differences in Vehicle Between Production Autonomous and Human-Driven Vehicles Across Driving Scenarios",
+      "title_zh": "量化生产型自主车辆与人类驾驶车辆在不同驾驶场景下的光谱差异",
+      "url": "/daily/2026-09-14/#paper-2609-12609"
+    },
+    {
+      "abstract": "We present DRS-VPT, a feed-forward transformer architecture for foundational image-to-scan registration. Given query images and a reference 3D point cloud, the model predicts the scan pose and point map alongside the poses and point maps of each camera, all expressed in the first camera's frame. It additionally predicts a coarse-to- fine pyramid of per-point and per-pixel features for direct reprojective alignment of the scan to the first image. This formulation unifies downstream tasks such as camera-LiDAR calibration in autonomous driving and indoor camera-to-map relocalization. A single DRS-VPT model achieves state-of-the-art performance for image-to-LiDAR registration in autonomous driving, competitive indoor relocalization without training map-specific weights, and strong zero-shot transfer to unseen environments. We also show qualitatively that the model learns complex scan-to-image projection properties such as occlusion of back-facing points.",
+      "abstract_zh": "我们提出了DRS-VPT，这是一种用于基础图像与扫描配准的前馈变换器架构。给定查询图像和参考3D点云，该模型预测扫描姿态和点图，同时预测每个相机的姿态和点图，所有信息均以第一台相机的坐标系表示。它还预测了一种粗到细的金字塔结构，用于每个点和每个像素特征，以实现扫描与第一幅图像的直接重投影对齐。这种表述统一了下游任务，例如自动驾驶中的相机-LiDAR校准和室内相机到地图的重新定位。单个DRS-VPT模型在自动驾驶中的图像与LiDAR配准方面实现了最先进的性能，在无需训练特定地图权重的情况下实现了竞争力的室内重新定位，并在未见环境中表现出强大的零样本迁移能力。我们还定性地展示了该模型学习了复杂的扫描到图像投影特性，例如背向点的遮挡。",
+      "authors": [
+        "Fu, Lanke Frank Tarimo, Fallon, Maurice"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12557",
+      "tags": [
+        "LiDAR/点云",
+        "地图/定位",
+        "多传感器融合"
+      ],
+      "title": "DRS-VPT: Directly Relocalizing in a Scan with Vision Point Transformers",
+      "title_zh": "DRS-VPT：使用视觉点变换器直接在扫描中重新定位",
+      "url": "/daily/2026-09-14/#paper-2609-12557"
+    },
+    {
+      "abstract": "Dashboard-mounted gaze trackers often lose sight of the driver's eyes during large head rotations, including shoulder checks, mirror glances, and intersection scanning. These maneuvers occur when information about the driver's visual attention is most useful. Offline gap-filling methods may reconstruct a missing interval using observations from both sides, but an online driver-monitoring system cannot rely on measurements that have not yet occurred. We therefore formulate causal gaze recovery: forecasting unavailable gaze at time t without target-tracker gaze at t or later. We introduce the Causal Context-Gated Forecaster (CCGF), which encodes a 60-frame pre-dropout history of gaze and head pose and combines it with DINOv3 scene features. A learned reliability gate controls the contribution of the history and scene representations as the dropout progresses. We evaluate two scene conditions: Live, in which the scene representation continues to update during tracker loss, and Frozen, in which the final pre-dropout representation is used throughout the missing interval. We evaluate CCGF on 2,047 eligible, naturally occurring GazeSense head\\_lost events drawn from 10.5 h of naturalistic driving by ten drivers. Across all recordings, head\\_lost accounts for 8.5 percent of GazeSense recording time. Synchronized gaze coordinates from a head-mounted Neon tracker provide supervision and evaluation targets but are never used as model inputs. Under leave-one-driver-out evaluation, CCGF achieves a mean per-driver median error of 175.7 px (10.5 deg) with Live scene updates, a 33 percent reduction relative to history-only causal forecasting. With Frozen scene input, the error increases to 210.8 px (12.9 deg), indicating that scene observations acquired during the dropout provide useful predictive information. We will release the dataset, evaluation protocol, and causal baselines.",
+      "abstract_zh": "安装在仪表盘上的注视追踪器在驾驶员进行大幅度头部旋转时（包括肩部检查、镜子瞥视和交叉路口扫描）常常无法捕捉到驾驶员的眼睛。这些动作发生时，关于驾驶员视觉注意力的信息最为重要。离线填补缺失数据的方法可以利用两侧的观察结果重建缺失的时间间隔，但在线驾驶员监测系统无法依赖尚未发生的测量。因此，我们提出了因果注视恢复：在时间 t 预测不可用的注视，而不依赖于时间 t 或之后的目标追踪器注视。我们引入了因果上下文门控预测器（Causal Context-Gated Forecaster, CCGF），它编码了 60 帧的预中断注视和头部姿态历史，并将其与 DINOv3 场景特征结合。一个学习的可靠性门控在中断进程中控制历史和场景表示的贡献。我们评估了两种场景条件：实时（Live），在追踪器丢失期间场景表示持续更新；以及冻结（Frozen），在整个缺失时间间隔内使用最后的预中断表示。我们在 10 名驾驶员的 10.5 小时自然驾驶中提取的 2,047 个符合条件的自然发生的 GazeSense 头部丢失事件上评估 CCGF。在所有录音中，头部丢失占 GazeSense 录音时间的 8.5%。来自头戴式 Neon 追踪器的同步注视坐标提供了监督和评估目标，但从未作为模型输入。在留一驾驶员评估下，CCGF 在实时场景更新下实现了每位驾驶员的平均中位误差为 175.7 像素（10.5 度），相较于仅使用历史的因果预测减少了 33%。使用冻结场景输入时，误差增加至 210.8 像素（12.9 度），表明在中断期间获取的场景观察提供了有用的预测信息。我们将发布数据集、评估协议和因果基线。",
+      "authors": [
+        "Shabani, Shabnam, Farhani, Ghazal"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12374",
+      "tags": [
+        "感知",
+        "安全/异常",
+        "预测/规划"
+      ],
+      "title": "Context-Aware Causal Gaze Forecasting for Human-Vehicle Interaction During In-Cabin Tracking Dropouts",
+      "title_zh": "基于上下文的因果注视预测在人车交互中的应用：应对车内跟踪中断",
+      "url": "/daily/2026-09-14/#paper-2609-12374"
+    },
+    {
+      "abstract": "Autonomous driving requires more than recognizing what is present in a scene: a planner must determine how road structure, surrounding agents, and their motion states should influence a future maneuver. Existing learning-based planners can capture these influences through latent scene features and trajectory decoders, but the relationship between environmental factors and candidate actions often remains implicit. This limits the ability to inspect, diagnose, or refine how scene context affects the safety of a predicted trajectory. Classical safety fields provide an explicit spatial representation of this relationship, but their risk shapes and relative weights are prescribed in advance and do not adapt to each scene. We introduce READ, a framework that learns an explicit, planning-aligned risk representation from complementary geometric and behavioral constraints. READ instantiates this representation as a continuous spatiotemporal field, enabling differentiable queries along candidate trajectories. The learned field connects scene understanding with action selection by encouraging predicted trajectories to align with low-risk regions, while retaining a differentiable interface for trajectory evaluation and refinement. READ integrates with both end-to-end planners and Vision-Language-Action models. Experiments on NAVSIM show consistent gains across matched end-to-end backbones and strong performance in a VLA setting; READ also achieves competitive results on NAVSIM v2. These results establish learned spatial risk as an explicit, adaptable representation for safe planning.",
+      "abstract_zh": "自动驾驶不仅需要识别场景中的物体：规划者还必须确定道路结构、周围代理及其运动状态如何影响未来的操作。现有的基于学习的规划器可以通过潜在场景特征和轨迹解码器捕捉这些影响，但环境因素与候选动作之间的关系往往仍然是隐含的。这限制了检查、诊断或优化场景上下文如何影响预测轨迹安全性的能力。经典的安全场提供了这种关系的显式空间表示，但它们的风险形状和相对权重是预先规定的，无法适应每个场景。我们提出了READ，一个从互补的几何和行为约束中学习显式、与规划对齐的风险表示的框架。READ将这种表示实例化为一个连续的时空场，使得沿候选轨迹的可微查询成为可能。学习到的场将场景理解与动作选择连接起来，鼓励预测轨迹与低风险区域对齐，同时保留用于轨迹评估和优化的可微接口。READ可以与端到端规划器和视觉-语言-动作（Vision-Language-Action，VLA）模型集成。在NAVSIM上的实验显示，在匹配的端到端骨干网络中取得了一致的提升，并在VLA设置中表现出强大的性能；READ在NAVSIM v2上也取得了竞争性的结果。这些结果确立了学习的空间风险作为安全规划的显式、可适应的表示。",
+      "authors": [
+        "Liu, Zhiyuan, Tian, Yuanxin, Ke, Zehong, Li, Jinhao, Cheng, Hao, Xu, Zhenhua, Yu, Wenhao, Wang, Jianqiang"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12371",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "端到端驾驶"
+      ],
+      "title": "READ: Learning Risk-Informed Fields for End-to-End Autonomous Driving",
+      "title_zh": "READ：学习风险信息场以实现端到端自动驾驶",
+      "url": "/daily/2026-09-14/#paper-2609-12371"
+    },
+    {
+      "abstract": "In this paper, we describe the Mission Performance module implemented for a fully autonomous racing car to automatically manage the longitudinal, lateral, and combined performances, aiming to speedup the laptime progression while assuring safety. Motivated by the difficulty and risks of applying the real-time estimation of the grip to critical modules like the motion planner and controller, the Mission Performance guides these modules adapting their target performance instead of changing the vehicle model parameters. The module is formed by pre-defined progressions to warm up the tires at the beginning of a run. Then, the system continuously monitors safety and vehicle dynamics metrics on a per-sector basis to adaptively reduce, maintain, or increase the performance levels for each sector, progressively converging toward the maximum allowed value. The solution's effectiveness is demonstrated on the EAV-25, a fully autonomous Dallara Superformula, at the Yas Marina Circuit during the Abu Dhabi Autonomous Racing League (A2RL) Season 2.",
+      "abstract_zh": "本文描述了为完全自主赛车实现的任务性能模块，该模块旨在自动管理纵向、横向和综合性能，以加快圈速进度，同时确保安全。由于实时估计抓地力对运动规划器和控制器等关键模块的应用存在困难和风险，任务性能模块指导这些模块调整其目标性能，而不是改变车辆模型参数。该模块由预定义的进度组成，以在比赛开始时为轮胎预热。随后，系统持续监测每个赛段的安全性和车辆动态指标，以自适应地降低、维持或提高每个赛段的性能水平，逐步接近允许的最大值。该解决方案的有效性在阿布扎比自主赛车联赛（A2RL）第二季期间于雅斯码头赛道上的完全自主Dallara Superformula赛车EAV-25上得到了验证。",
+      "authors": [
+        "Lambertini, Giovanni, Pini, Matteo, Musiu, Nicola, Raji, Ayoub, Iacovacci, Francesco, Bertogna, Marko"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12292",
+      "tags": [
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "Mission Performance: Automatic and Adaptive Race Pace Progression for Autonomous Racing",
+      "title_zh": "任务性能：自动和自适应的自主赛车赛道进度管理",
+      "url": "/daily/2026-09-14/#paper-2609-12292"
+    },
+    {
+      "abstract": "The HSI-Road dataset provides paired RGB and 25-channel NIR (600--960~nm) images with binary masks but no surface-level labels.~This paper introduces a manually labeled six-class taxonomy: Background, Asphalt, Concrete, Dirt, Water, and Grass, and an RGB-to-NIR registration pipeline with corresponding annotations. Six semantic-segmentation models (SSMs) are evaluated under four input configurations: original-resolution RGB (RGB$_{\\text{ori}}$), registered low-resolution RGB (RGB$_{\\text{reg}}$), NIR, and channel-stacked RGB$_{\\text{reg}}$--NIR (RGBN$_{\\text{stk}}$). The comparison quantifies the effect of spatial-resolution reduction on RGB, along with evaluation of NIR and RGBN$_{\\text{stk}}$, with results reported using per-class and mean IoU and F1 scores. RGB$_{\\text{ori}}$ achieves the highest overall performance but contains 12$\\times$ more pixels than the matched-resolution inputs. At the matched 192$\\times$384 resolution, RGBN$_{\\text{stk}}$ outperforms NIR for all six SSMs and RGB$_{\\text{reg}}$ for five of six, with the most consistent gains for the Water class. These results highlight the importance of spatial resolution while showing that NIR provides complementary information to RGB.",
+      "abstract_zh": "HSI-Road数据集提供了配对的RGB和25通道近红外（NIR，600--960 nm）图像及其二进制掩膜，但缺乏表面级标签。本文引入了一种手动标注的六类分类法：背景、沥青、混凝土、泥土、水和草地，以及相应注释的RGB到NIR注册流程。评估了六种语义分割模型（SSMs）在四种输入配置下的表现：原始分辨率RGB（RGB$_{ ext{ori}}$）、注册低分辨率RGB（RGB$_{ ext{reg}}$）、NIR和通道堆叠的RGB$_{ ext{reg}}$--NIR（RGBN$_{ ext{stk}}$）。比较量化了空间分辨率降低对RGB的影响，同时评估了NIR和RGBN$_{ ext{stk}}$，结果通过每类和平均IoU及F1分数进行报告。RGB$_{ ext{ori}}$实现了最高的整体性能，但其像素数量是匹配分辨率输入的12倍。在匹配的192$ imes$384分辨率下，RGBN$_{ ext{stk}}$在所有六种SSMs中均优于NIR，并且在六种中有五种优于RGB$_{ ext{reg}}$，其中水类的增益最为一致。这些结果突显了空间分辨率的重要性，同时表明NIR为RGB提供了互补信息。",
+      "authors": [
+        "Shah, Imad Ali, Mehmood, Imran, Ward, Enda, Glavin, Martin, Jones, Edward, Deegan, Brian"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12151",
+      "tags": [
+        "感知",
+        "多传感器融合"
+      ],
+      "title": "HSI-Road Relabeled: Surface-Aware Road-Scene Segmentation",
+      "title_zh": "HSI-Road重新标注：表面感知道路场景分割",
+      "url": "/daily/2026-09-14/#paper-2609-12151"
+    },
+    {
+      "abstract": "Agent-based model predictive control (AMPC) has recently been proposed for vehicle systems with various controllers, such as differential braking and torque vectoring, where controllers are regarded as distributed agents contributing to the same objective. However, this scheme is challenging in handling multiple conflicting objectives with coupled agents. A common approach for such tasks is the integrated MPC, where all objectives and agents are stacked together in one optimization. Nevertheless, as more agents and objectives are involved, the integrated MPC will face challenges like computational burdens and maintenance difficulties in practice. To this end, this paper proposes a learning multi-objective AMPC that can improve design flexibility and computing efficiency. First, under the assumption of information exchange, a multi-objective AMPC tailored from the alternating direction method of multipliers (ADMM) is proposed to decouple the system and achieve the same performance as the integrated scheme iteratively. Second, a learning-based method for initializing iterations is proposed to accelerate convergence. In addition, a data management method is proposed for real-time efficiency, and an authentication module is designed for learning reliability. We compare the proposed scheme against the integrated scheme via a combined path-tracking simulation for autonomous vehicles with various controllers. The proposed scheme achieves the same control performance as the integrated one while reducing the computational time by 43.5%. Furthermore, the learning-based method saves 88.6% more computational time than without learning, making it suitable for real-time implementation.",
+      "abstract_zh": "基于代理的模型预测控制（AMPC）最近被提出用于具有各种控制器的车辆系统，例如差速制动和扭矩矢量控制，其中控制器被视为为实现相同目标而贡献的分布式代理。然而，这种方案在处理多个相互冲突的目标和耦合代理时面临挑战。对于此类任务，一种常见的方法是集成模型预测控制（MPC），其中所有目标和代理被堆叠在一个优化中。然而，随着涉及的代理和目标数量的增加，集成MPC在实践中将面临计算负担和维护困难等挑战。为此，本文提出了一种学习多目标AMPC，旨在提高设计灵活性和计算效率。首先，在信息交换的假设下，提出了一种基于交替方向乘子法（ADMM）定制的多目标AMPC，以解耦系统并迭代实现与集成方案相同的性能。其次，提出了一种基于学习的方法用于初始化迭代，以加速收敛。此外，提出了一种数据管理方法以提高实时效率，并设计了一个认证模块以确保学习的可靠性。我们通过对具有各种控制器的自主车辆进行的综合路径跟踪仿真，将所提方案与集成方案进行了比较。所提方案在实现与集成方案相同的控制性能的同时，将计算时间减少了43.5%。此外，基于学习的方法比不使用学习节省了88.6%的计算时间，使其适合实时实施。",
+      "authors": [
+        "Zhong, Jiaming, Mehrizi, Reza Valiollahi, Pant, Yash Vardhan, Khajepour, Amir"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12142",
+      "tags": [
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "A Data-Driven Distributed Control Scheme: Learning Multi-Objective Agent-Based MPC for Path-Tracking",
+      "title_zh": "基于数据驱动的分布式控制方案：学习多目标基于代理的模型预测控制用于路径跟踪",
+      "url": "/daily/2026-09-14/#paper-2609-12142"
+    },
+    {
+      "abstract": "Functional integration is a growing trend in vehicle control, often involving the coordination of multiple controllers to achieve various objectives simultaneously. The need for flexibility and reliability has led to a \"plug-and-play\" approach in control system design, which presents challenges for traditional integrated model predictive control (MPC). Agent-based model predictive control (AMPC) has recently emerged as a distributed solution that treats controllers as agents, creating a collaborative framework among them to reach a common goal. However, this approach struggles to manage distributed conflicting objectives when agents are coupled or interdependent. To address this, we propose a novel, practical distributed control scheme called multi-objective AMPC, which adapts the alternating direction method of multipliers (ADMM) into a general control strategy that approximates global optimization while decoupling objectives. We systematically develop three formulations that maintain convergence while addressing control regularization and inequality constraints, applying them to complex vehicle control systems for the first time. The proposed method has been tested on two vehicle control scenarios with a multi-objective topology. Different formulations are compared through simulations, and the most computationally efficient one was implemented on an electric vehicle for real-world evaluations. The results demonstrate that the proposed multi-objective AMPC can converge approximately to the same global optimum as integrated MPC with greater flexibility and the potential to reduce computational costs.",
+      "abstract_zh": "功能集成在车辆控制中是一种日益增长的趋势，通常涉及多个控制器的协调，以同时实现各种目标。对灵活性和可靠性的需求促使控制系统设计采用“即插即用”的方法，这给传统的集成模型预测控制（MPC）带来了挑战。基于代理的模型预测控制（AMPC）最近作为一种分布式解决方案出现，将控制器视为代理，创建了一个协作框架以实现共同目标。然而，当代理之间存在耦合或相互依赖时，这种方法在管理分布式冲突目标方面面临困难。为了解决这一问题，我们提出了一种新颖的实用分布式控制方案，称为多目标AMPC，该方案将交替方向乘子法（ADMM）应用于一种通用控制策略，以在解耦目标的同时近似全局优化。我们系统地开发了三种保持收敛性的公式，同时处理控制正则化和不等式约束，并首次将其应用于复杂的车辆控制系统。所提出的方法在具有多目标拓扑的两个车辆控制场景中进行了测试。通过仿真比较不同的公式，并在电动车上实施了计算效率最高的公式进行实际评估。结果表明，所提出的多目标AMPC能够以更大的灵活性和降低计算成本的潜力，近似收敛到与集成MPC相同的全局最优解。",
+      "authors": [
+        "Zhong, Jiaming, Khoshnevisan, Ladan, Huang, Shucheng, Pirani, Mohammad, Pant, Yash Vardhan, Khajepour, Amir"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12108",
+      "tags": [
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "Multi-Objective Agent-Based Model Predictive Controller for Plug-and-Play Vehicle Control",
+      "title_zh": "多目标基于代理的模型预测控制器用于即插即用车辆控制",
+      "url": "/daily/2026-09-14/#paper-2609-12108"
+    },
+    {
+      "abstract": "Strategic flight plan validation in Advanced Air Mobility (AAM) environments requires robust methods for predicting aircraft state uncertainty and detecting potential conflicts with dynamic airspace hazards. This paper presents a novel framework for uncertainty-conditioned trajectory prediction combined with polyhedra hazard representation for pre-flight conflict detection. We introduce a closed-form uncertainty estimation method that couples non-uniform rational B-spline (NURBS) curve fitting for kinematic trajectory generation with a Kalman Filter for state covariance propagation. Drawing from the Light Propagation Algorithm (LPA) paradigm, we employ a sigmoid-blended measurement noise model that captures the uncertainty reduction behavior of flight management systems approaching the required time of arrival (RTA) for waypoints. The resulting temporal uncertainty bounds are derived through a velocity-to-time variance transformation, enabling probabilistic assessment of arrival time deviations along the flight path. For hazard representation, we develop an operator-conditioned classification scheme that transforms gridded environmental data, specifically weather phenomena, into three-dimensional polyhedra volumes with intensity-based stratification. These hazard polyhedra incorporate aircraft-specific safety buffers computed from vehicle performance characteristics. Conflict detection is performed through mesh intersection algorithms operating on the spatial uncertainty tube surrounding the mean trajectory against the hazard polyhedra and temporal overlap. The framework enables the continuous strategic validation of flight plans throughout the pre-flight planning time horizon as environmental conditions evolve.",
+      "abstract_zh": "在先进空中出行（AAM）环境中，战略飞行计划验证需要强大的方法来预测飞机状态的不确定性并检测与动态空域危险的潜在冲突。本文提出了一种新颖的框架，结合不确定性条件的轨迹预测与多面体危险表示，用于飞行前冲突检测。我们引入了一种闭式不确定性估计方法，该方法将非均匀有理B样条（NURBS）曲线拟合用于运动轨迹生成，并与卡尔曼滤波器结合以进行状态协方差传播。借鉴光传播算法（LPA）范式，我们采用了一种sigmoid混合测量噪声模型，捕捉飞行管理系统在接近航点所需到达时间（RTA）时的不确定性减少行为。通过速度到时间的方差变换，得出了结果的时间不确定性界限，从而能够对飞行路径上的到达时间偏差进行概率评估。对于危险表示，我们开发了一种操作员条件的分类方案，将网格化环境数据，特别是天气现象，转化为具有强度基础分层的三维多面体体积。这些危险多面体结合了根据飞行器性能特征计算的特定于飞机的安全缓冲区。冲突检测通过在围绕平均轨迹的空间不确定性管道与危险多面体及时间重叠之间操作的网格交集算法进行。该框架使得在环境条件演变的过程中，能够持续进行飞行计划的战略验证。",
+      "authors": [
+        "Kandoria, Balram, Kim, Seulki, Samyal, Aryaman Singh"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.12095",
+      "tags": [
+        "预测/规划",
+        "感知",
+        "安全/异常"
+      ],
+      "title": "Uncertainty-Aware Conflict Detection Against Operator-Conditioned Weather Hazards",
+      "title_zh": "针对操作员条件下天气危险的基于不确定性的冲突检测",
+      "url": "/daily/2026-09-14/#paper-2609-12095"
+    },
+    {
+      "abstract": "Increasing safety is the primary objective of automated vehicles. Achieving this goal requires reliable safety metrics that incorporate safety-relevant factors such as object type, velocity, and criticality. A key capability of such metrics is the distinction between critical and non-critical objects, which is addressed through criticality or relevance estimation. Existing criticality metrics are typically designed for specific scenarios and primarily focus on vehicle-to-vehicle interactions. In this paper, we therefore propose a novel criticality metric tailored to vulnerable road users (VRUs), which require special consideration due to their less predictable motion behavior. Furthermore, to avoid the complexity introduced by scenario-specific metrics, we introduce a scenario-independent criticality prediction framework applicable to all traffic participant classes. The effectiveness of both the proposed VRU-centric criticality metric and the criticality prediction framework is evaluated using the DeepAccident dataset, which contains a diverse set of safety-critical traffic scenarios. The proposed VRU-centric criticality metric improves pedestrian criticality classification performance by up to 50 %. In addition, the proposed criticality prediction framework outperforms state-of-the-art metrics by 275 %, achieving an F1-score of 0.96 and enabling scenario-independent criticality assessment across all object classes. These results demonstrate the strong potential of the proposed approaches to enhance criticality assessment for safety evaluation in automated driving systems.",
+      "abstract_zh": "提高安全性是自动化车辆的主要目标。实现这一目标需要可靠的安全指标，这些指标应考虑与安全相关的因素，如物体类型、速度和关键性。此类指标的一个关键能力是区分关键物体与非关键物体，这通过关键性或相关性估计来解决。现有的关键性指标通常针对特定场景设计，主要关注车辆与车辆之间的交互。因此，本文提出了一种针对脆弱道路用户（VRUs）的新型关键性指标，因其运动行为较不易预测而需特别考虑。此外，为了避免场景特定指标带来的复杂性，我们引入了一种适用于所有交通参与者类别的情景独立关键性预测框架。通过使用包含多样化安全关键交通场景的DeepAccident数据集，我们评估了所提出的以VRU为中心的关键性指标和关键性预测框架的有效性。所提出的以VRU为中心的关键性指标使行人关键性分类性能提高了多达50%。此外，所提出的关键性预测框架的表现超越了最先进的指标，提升幅度达到275%，实现了0.96的F1分数，并使得在所有物体类别中进行情景独立的关键性评估成为可能。这些结果展示了所提出方法在增强自动驾驶系统安全评估中的关键性评估潜力。",
+      "authors": [
+        "Gamerdinger, Jörg, Schwarzenberger, Victor, Schmid, Philipp, Teufel, Sven, Bringmann, Oliver"
+      ],
+      "date": "2026-09-14",
+      "id": "2609.11947",
+      "tags": [
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Scenario-Independent Criticality Assessment and Prediction for Vulnerable Road Users in Autonomous Driving",
+      "title_zh": "自动驾驶中脆弱道路用户的情景独立关键性评估与预测",
+      "url": "/daily/2026-09-14/#paper-2609-11947"
+    },
     {
       "abstract": "Agent-based model predictive control (AMPC) has recently been proposed as a distributed scheme that collaborates with all agents to achieve optimal holistic performance. However, its optimality highly depends on the prediction accuracy that requires all agents or their contributions to be known, which is too idealistic for actual implementation. This research proposes a novel practical hybrid control scheme - learning agent-based MPC (LAMPC), combining the model-based AMPC approach and data-based learning methods to improve the holistic vehicle performance for multi-agent systems. The Gaussian process regression (GPR) enhanced by an online data management strategy serves as the learning core to predict unknown contributions. A novel multi-step prediction mechanism leverages the GPR learning potential along the horizon. The predicted mean, representing the learned unknown contributions, completes the system model in the MPC for more accurate control. Meanwhile, a stochastic framework is formulated to guarantee control safety and feasibility using soft chance constraints based on the prediction variance. Both simulations and experiments show that, with the learning capability, LAMPC outperforms the traditional AMPC. LAMPC can achieve higher tracking performance in well-learned scenarios and always guarantee constraint satisfaction even in less-learned scenarios. Moreover, the proposed hybrid control scheme is efficient for real-time implementation and is flexible to any control agent topology.",
       "abstract_zh": "基于智能体的模型预测控制（AMPC）最近被提出作为一种分布式方案，通过所有智能体的协作来实现最佳的整体性能。然而，其最优性高度依赖于预测精度，这要求所有智能体或其贡献必须是已知的，这对于实际实施来说过于理想化。本研究提出了一种新颖的实用混合控制方案——学习型基于智能体的模型预测控制（LAMPC），结合了基于模型的AMPC方法和基于数据的学习方法，以提高多智能体系统的整体车辆性能。增强的高斯过程回归（GPR）结合在线数据管理策略作为学习核心，用于预测未知贡献。一个新颖的多步预测机制利用GPR的学习潜力进行前瞻性预测。预测均值代表学习到的未知贡献，补全了MPC中的系统模型，从而实现更精确的控制。同时，构建了一个随机框架，以基于预测方差使用软机会约束来保证控制的安全性和可行性。仿真和实验结果表明，凭借学习能力，LAMPC的性能优于传统的AMPC。在经过良好学习的场景中，LAMPC能够实现更高的跟踪性能，并且即使在学习较少的场景中也始终保证约束的满足。此外，所提出的混合控制方案在实时实施中高效，并且对任何控制智能体拓扑具有灵活性。",

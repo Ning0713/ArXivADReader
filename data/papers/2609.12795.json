@@ -1,0 +1,46 @@
+{
+  "abstract": "We present a custom high-fidelity vehicle dynamics simulation environment for testing and validation of Autonomous Racing software. The digital twin of the autonomous vehicle is developed in Dymola, using racecar dynamics modeling libraries to build a complete multi-body model. A 3D road surface, including elevation profiles and curbs, is implemented using the Curved Regular Grid (CRG) standard. The model is exported from Dymola as a Functional Mock-up Unit (FMU) and integrated into a custom software-in-the-loop simulator, where communication interfaces with the autonomous racing stack were developed in C++. A calibration procedure based on experimental data is also presented, along with a validation study to further support the quality of the proposed framework. The simulator runs in real time on a portable computer and provides reliable ground truth for algorithms validation prior to real-world deployment.",
+  "abstract_zh": "我们提出了一种定制的高保真车辆动力学仿真环境，用于测试和验证自主赛车软件。自主车辆的数字双胞胎在Dymola中开发，利用赛车动力学建模库构建完整的多体模型。采用曲面规则网格（Curved Regular Grid, CRG）标准实现了包含高程轮廓和路缘的3D路面。该模型从Dymola导出为功能模型单元（Functional Mock-up Unit, FMU），并集成到一个定制的软件在环仿真器中，其中与自主赛车堆栈的通信接口是用C++开发的。还提出了一种基于实验数据的校准程序，以及一项验证研究，以进一步支持所提框架的质量。该仿真器在便携式计算机上实时运行，并为算法验证提供可靠的真实数据，以便在实际部署之前进行验证。",
+  "arxiv_id": "2609.12795",
+  "arxiv_url": "https://arxiv.org/abs/2609.12795",
+  "authors": [
+    "Musiu, Nicola, Iacovacci, Francesco, Lupo, Fausto, Pini, Matteo, Scapicchi, Giovanni, Moretti, Francesco, Mascaro, Eugenio, Musso, Pietro, Raji, Ayoub, Bertogna, Marko, Arricale, Vincenzo Maria, Sapio, Angelo Lo, Piccarelli, Alessandro, Fish, Garron"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12795",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.170084+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12795",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous racing",
+      "autonomous",
+      "vehicle",
+      "road",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": []
+  },
+  "title": "High-Fidelity Multi-Body Simulator for Autonomous Racing",
+  "title_zh": "高保真多体仿真器用于自主赛车",
+  "translation_url": "https://hjfy.top/arxiv/2609.12795"
+}

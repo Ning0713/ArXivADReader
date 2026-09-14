@@ -1,0 +1,46 @@
+{
+  "abstract": "Agent-based model predictive control (AMPC) has recently been proposed for vehicle systems with various controllers, such as differential braking and torque vectoring, where controllers are regarded as distributed agents contributing to the same objective. However, this scheme is challenging in handling multiple conflicting objectives with coupled agents. A common approach for such tasks is the integrated MPC, where all objectives and agents are stacked together in one optimization. Nevertheless, as more agents and objectives are involved, the integrated MPC will face challenges like computational burdens and maintenance difficulties in practice. To this end, this paper proposes a learning multi-objective AMPC that can improve design flexibility and computing efficiency. First, under the assumption of information exchange, a multi-objective AMPC tailored from the alternating direction method of multipliers (ADMM) is proposed to decouple the system and achieve the same performance as the integrated scheme iteratively. Second, a learning-based method for initializing iterations is proposed to accelerate convergence. In addition, a data management method is proposed for real-time efficiency, and an authentication module is designed for learning reliability. We compare the proposed scheme against the integrated scheme via a combined path-tracking simulation for autonomous vehicles with various controllers. The proposed scheme achieves the same control performance as the integrated one while reducing the computational time by 43.5%. Furthermore, the learning-based method saves 88.6% more computational time than without learning, making it suitable for real-time implementation.",
+  "abstract_zh": "基于代理的模型预测控制（AMPC）最近被提出用于具有各种控制器的车辆系统，例如差速制动和扭矩矢量控制，其中控制器被视为为实现相同目标而贡献的分布式代理。然而，这种方案在处理多个相互冲突的目标和耦合代理时面临挑战。对于此类任务，一种常见的方法是集成模型预测控制（MPC），其中所有目标和代理被堆叠在一个优化中。然而，随着涉及的代理和目标数量的增加，集成MPC在实践中将面临计算负担和维护困难等挑战。为此，本文提出了一种学习多目标AMPC，旨在提高设计灵活性和计算效率。首先，在信息交换的假设下，提出了一种基于交替方向乘子法（ADMM）定制的多目标AMPC，以解耦系统并迭代实现与集成方案相同的性能。其次，提出了一种基于学习的方法用于初始化迭代，以加速收敛。此外，提出了一种数据管理方法以提高实时效率，并设计了一个认证模块以确保学习的可靠性。我们通过对具有各种控制器的自主车辆进行的综合路径跟踪仿真，将所提方案与集成方案进行了比较。所提方案在实现与集成方案相同的控制性能的同时，将计算时间减少了43.5%。此外，基于学习的方法比不使用学习节省了88.6%的计算时间，使其适合实时实施。",
+  "arxiv_id": "2609.12142",
+  "arxiv_url": "https://arxiv.org/abs/2609.12142",
+  "authors": [
+    "Zhong, Jiaming, Mehrizi, Reza Valiollahi, Pant, Yash Vardhan, Khajepour, Amir"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12142",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.146596+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12142",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "A Data-Driven Distributed Control Scheme: Learning Multi-Objective Agent-Based MPC for Path-Tracking",
+  "title_zh": "基于数据驱动的分布式控制方案：学习多目标基于代理的模型预测控制用于路径跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2609.12142"
+}

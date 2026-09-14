@@ -1,0 +1,53 @@
+{
+  "abstract": "Datasets are a crucial element in the development of perception algorithms. They relate sensor measurement data to annotated reference information and allow for the deduction of sensor and object characteristics. In autonomous driving, the reference data commonly consist of semantic image segmentation, point-wise associations, or bounding box annotations. The dataset proposed in this work, however, aims to dig deeper into the evaluation of measurement principles and provides scanned 3D models of all vehicles together with a pose and continuous kinematics reference obtained by RTK-GNSS. Combined, the state of the complete dynamic surrounding of the sensor vehicle is known for any point in time. Subsequent reference formats can be easily computed in user-defined granularity. This dataset involves single-object and multi-object recordings with seven target vehicles. In particular, measurement effects such as occlusion, as well as reflections, can be evaluated, as the normals of the shape of the target vehicles are known. We describe the dataset, discuss the technical background of its development, and briefly present exemplary evaluations.",
+  "abstract_zh": "数据集是感知算法开发中的关键要素。它们将传感器测量数据与标注的参考信息关联起来，并允许推导传感器和物体的特性。在自动驾驶中，参考数据通常包括语义图像分割、逐点关联或边界框标注。然而，本研究提出的数据集旨在深入评估测量原理，并提供所有车辆的扫描3D模型，以及通过RTK-GNSS获得的姿态和连续运动学参考。结合起来，传感器车辆在任何时刻的完整动态环境状态都是已知的。后续的参考格式可以在用户定义的粒度下轻松计算。该数据集涉及七辆目标车辆的单对象和多对象录制。特别地，可以评估诸如遮挡和反射等测量效应，因为目标车辆的形状法线是已知的。我们描述了该数据集，讨论了其开发的技术背景，并简要介绍了示例评估。",
+  "arxiv_id": "2609.12871",
+  "arxiv_url": "https://arxiv.org/abs/2609.12871",
+  "authors": [
+    "Berthold, Philipp, Forkel, Bianca, Maehlisch, Mirko"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-14#paper-2609-12871",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-14T10:15:15.172252+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.12871",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-09-14"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "A Multi-Vehicle Dataset with Camera, LiDAR, and Radar Sensors and Scanned 3D Models for Custom Auto-Annotation using RTK-GNSS",
+  "title_zh": "一个包含摄像头、激光雷达和雷达传感器的多车辆数据集及用于自定义自动标注的扫描3D模型，采用RTK-GNSS",
+  "translation_url": "https://hjfy.top/arxiv/2609.12871"
+}
