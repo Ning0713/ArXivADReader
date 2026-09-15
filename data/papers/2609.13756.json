@@ -1,0 +1,47 @@
+{
+  "abstract": "One in every five vehicle accidents on the road today is caused simply due to driver fatigue. Fatigue or otherwise drowsiness, significantly reduces the concentration and vigilance of the driver thereby increasing the risk of inherent human error leading to injuries and fatalities. Hence, our primary motive being - to reduce road accidents using a non-intrusive image processing based alert system. In this regard, we have built a system that detects driver drowsiness by real time tracking and monitoring the pattern of the driver's eyes. The stand alone system consists of 3 interconnected components - a processor, a camera and an alarm. After initial facial detection, the eyes are located, extracted and continuously monitored to check whether they are open or closed on the basis of a pixel-by-pixel method. When the eyes are seen to be closed for a certain amount of time, drowsiness is said to be detected and an alarm is issued accordingly to alert the driver and hence, prevent a casualty.",
+  "abstract_zh": "目前每五起交通事故中就有一起是由于驾驶员疲劳引起的。疲劳或嗜睡显著降低了驾驶员的注意力和警觉性，从而增加了固有的人为错误风险，导致伤害和死亡。因此，我们的主要目标是通过一种非侵入式的基于图像处理的警报系统来减少道路事故。在这方面，我们构建了一个系统，通过实时跟踪和监测驾驶员眼睛的模式来检测驾驶员的疲劳。该独立系统由三个相互连接的组件组成——处理器、摄像头和警报。在初步的人脸检测后，眼睛被定位、提取并持续监测，以逐像素的方法检查其是睁开还是闭合。当眼睛在一定时间内被观察到闭合时，便认为检测到了疲劳，并相应发出警报以提醒驾驶员，从而防止事故的发生。",
+  "arxiv_id": "2609.13756",
+  "arxiv_url": "https://arxiv.org/abs/2609.13756",
+  "authors": [
+    "Khan, Fuzail, Sharma, Sandeep, Arulalan, M. R."
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-13756",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.146819+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.13756",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "驾驶",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "本文开发了一种低成本、实时且非侵入式的驾驶员疲劳检测系统。系统利用摄像头进行人脸和眼睛定位，通过眼睛中心追踪及逐像素分析判断眼睛持续闭合状态，并在检测到疲劳时触发报警，以降低因驾驶员疲劳导致的交通事故风险。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Development of Low-Cost Real-Time Driver Drowsiness Detection System using Eye Centre Tracking and Dynamic Thresholding",
+  "title_zh": "基于眼睛中心追踪和动态阈值的低成本实时驾驶员疲劳检测系统的开发",
+  "translation_url": "https://hjfy.top/arxiv/2609.13756"
+}

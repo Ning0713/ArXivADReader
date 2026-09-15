@@ -1,0 +1,49 @@
+{
+  "abstract": "Mobile robots typically rely on geometric maps for obstacle avoidance and path planning, but the resulting obstacle representation does not always match how an object should affect navigation. A low lying cable may be missed, a flexible curtain may create spurious blockage, and a traffic cone may require an exclusion region larger than its observed footprint. We present NavPatch, an object level correction layer that assigns ADD, REMOVE, or EXTEND to navigation relevant object categories through periodic scene understanding with a vision-language model. Open vocabulary grounding localizes object instances, and LiDAR and RGB-D observations provide 3D support. Observation quality filtering and cross frame maintenance determine when each correction patch is committed, replaced, or revoked. In 50 real robot trials across five layouts, NavPatch achieves an overall success rate of 86.0%. An ablation study of four configurations with 200 runs in total shows that NavPatch improves the success rate from 70.0% to 86.0% and reduces the false commit rate from 68.4% to 40.7% compared with updates based only on the current observation.",
+  "abstract_zh": "移动机器人通常依赖几何地图进行障碍物规避和路径规划，但由此产生的障碍物表示并不总是与物体对导航的影响相匹配。低悬的电缆可能会被忽略，灵活的窗帘可能会造成虚假的阻塞，而交通锥可能需要比其观察到的占地面积更大的排除区域。我们提出了NavPatch，一个对象级修正层，通过与视觉-语言模型的周期性场景理解，为与导航相关的对象类别分配添加（ADD）、移除（REMOVE）或扩展（EXTEND）。开放词汇基础定位对象实例，LiDAR和RGB-D观测提供三维支持。观测质量过滤和跨帧维护决定何时提交、替换或撤销每个修正补丁。在五个布局的50次真实机器人试验中，NavPatch的整体成功率达到了86.0%。对四种配置进行的消融研究，总共进行了200次实验，结果表明，与仅基于当前观测的更新相比，NavPatch将成功率从70.0%提高到86.0%，并将错误提交率从68.4%降低到40.7%。",
+  "arxiv_id": "2609.14543",
+  "arxiv_url": "https://arxiv.org/abs/2609.14543",
+  "authors": [
+    "Sun, Shiji, Tao, Xingyu, Wang, Hao, Wang, Ling, Chen, Zhengyi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14543",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.039663+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14543",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通",
+      "lidar",
+      "path planning",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "预测/规划",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "NavPatch: Evidence-Guided Object-Level Costmap Correction with Vision-Language Models",
+  "title_zh": "NavPatch：基于证据的对象级成本图修正与视觉-语言模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.14543"
+}

@@ -1,0 +1,47 @@
+{
+  "abstract": "Data-to-text driver coaching is often presented as a generic pipeline from telematics events to advice. This paper argues that its content requires localisation because usefulness and credibility depend on drivers' knowledge, prevalent risks, regulation, infrastructure, and available data. Two independently developed systems in the United Kingdom and Nigeria are compared by tracing requirements through content selection, generation, and field evaluation. The UK system prioritises post-trip reflection, explanations tied to road and place context, and tone-sensitive wording. The Nigerian system combines legally grounded, once-daily Tips based on detected events with weekly persuasive Reports; it foregrounds safety education and alcohol-related risk in response to reported gaps in formal training and traffic-rule knowledge, as well as local road-safety priorities. Reliable speed-limit metadata supported speeding feedback in the UK, whereas its scarcity led the Nigerian evaluation to exclude speeding from its outcome metric. Both interventions were associated with reduced distance-normalised unsafe-event rates in their own field studies, although their designs and metrics preclude an effect-size comparison. The analysis yields a requirements-to-content design process for localising safety-critical NLG without treating a high-income deployment as the default.",
+  "abstract_zh": "数据到文本的驾驶员辅导通常被视为从远程信息处理事件到建议的通用流程。本文认为，其内容需要本地化，因为有用性和可信度依赖于驾驶员的知识、普遍风险、法规、基础设施和可用数据。通过追踪内容选择、生成和现场评估的需求，比较了在英国和尼日利亚独立开发的两个系统。英国系统优先考虑行程后反思、与道路和地点背景相关的解释以及语气敏感的措辞。尼日利亚系统结合了基于检测事件的法律依据的每日一次提示和每周的劝导报告；它强调安全教育和与酒精相关的风险，以应对在正式培训和交通规则知识方面报告的差距，以及当地的道路安全优先事项。在英国，可靠的限速元数据支持了超速反馈，而其稀缺性导致尼日利亚评估将超速排除在结果指标之外。尽管两种干预措施在各自的实地研究中与减少距离标准化的不安全事件率相关，但其设计和指标使得效果大小比较不具可行性。该分析为本地化安全关键的自然语言生成（NLG）提供了一个需求到内容的设计过程，而不将高收入部署视为默认选项。",
+  "arxiv_id": "2609.14687",
+  "arxiv_url": "https://arxiv.org/abs/2609.14687",
+  "authors": [
+    "Thompson, Iniakpokeikiye Peter, Baig, Jawwad, Reiter, Ehud, Yi, Dewei"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14687",
+  "categories": [
+    "cs.CL"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.477945+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14687",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "本文比较英国和尼日利亚两套面向驾驶员的远程信息处理数据到文本辅导系统，研究如何根据当地驾驶员知识、道路风险、法规、基础设施和数据可用性对反馈内容进行本地化。研究表明，安全反馈的事件选择、解释方式、语气和评估指标都需要结合部署环境设计。两套系统的实地研究均观察到不安全事件率下降，但无法直接比较效果大小。论文主要面向有人驾驶安全辅导和安全关键自然语言生成，并非自动驾驶车辆的感知、决策或控制系统，但对自动驾驶中的人机交互、驾驶员监控和安全反馈设计具有邻近参考价值。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "地图/定位"
+    ]
+  },
+  "title": "One Feedback System Does Not Fit All: Localising Data-to-Text Driver Coaching for the United Kingdom and Nigeria",
+  "title_zh": "一种反馈系统并不适合所有人：为英国和尼日利亚本地化数据到文本的驾驶员辅导",
+  "translation_url": "https://hjfy.top/arxiv/2609.14687"
+}

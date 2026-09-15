@@ -1,0 +1,51 @@
+{
+  "abstract": "We present BLInD (Blind Learned Intent Distribution), a compact network that maps recent vehicle-state history (e.g. speed, curvature, indicator, and vehicle type) to a top-k distribution of future ego trajectories, with no camera, LiDAR, map, or object-track inputs. We find that vehiclestate history alone is sufficient to learn a useful multimodal distribution over near-term ego trajectories, and its low-latency nature makes it well-suited for safety-critical deployment. We investigate two distribution architectures, autoregressive (AR) and flow-matching, and train on both mixed-platform opensource and Wayve datasets. Both generalize without datasetspecific adaptation; the flow-matching model achieves best topk ADE/FDE of 0.15/0.37 m on Wayve, 0.15/0.36 m on Waymo, and 0.28/0.59 m on nuScenes, with the AR model reaching comparable coverage. Integrating the distributions into an AEB trigger task, a strict all-candidates policy reduces false positives from 1.51% to 0.11% with AR (13.7x reduction, 94.9% TP) and to 0.06% with flow-matching (25.1x reduction, 98.7% TP) compared to a 1-CTRV policy with 100% true positive score. BLInD runs in 0.87 ms with the AR head and 2.9 ms with the flow-matching head on an NVIDIA DRIVE Orin ECU making it compatible with real-time deployment on automotive ECUs. While existing learned distribution models rely on scene context and blind vehicle-state models typically collapse to a single path, BLInD is learned, blind, and cross-domain simultaneously, a combination not demonstrated by prior work. These results show that such a distribution provides a controllable and plausible intent sampling interface for downstream systems, with AEB as one instantiation.",
+  "abstract_zh": "我们提出了BLInD（盲学习意图分布），这是一个紧凑的网络，能够将近期的车辆状态历史（例如速度、曲率、转向灯和车辆类型）映射到未来自我轨迹的前k个分布，而无需摄像头、激光雷达、地图或物体跟踪输入。我们发现，仅凭车辆状态历史就足以学习出有用的多模态分布，用于近期的自我轨迹，其低延迟特性使其非常适合安全关键的部署。我们研究了两种分布架构，自回归（AR）和流匹配，并在混合平台的开源数据集和Wayve数据集上进行训练。两者均能在没有特定数据集适应的情况下进行泛化；流匹配模型在Wayve上实现了最佳的前k ADE/FDE为0.15/0.37米，在Waymo上为0.15/0.36米，在nuScenes上为0.28/0.59米，而AR模型则达到相似的覆盖率。在将这些分布集成到自动紧急制动（AEB）触发任务中时，严格的全候选策略使得AR的误报率从1.51%降低到0.11%（减少13.7倍，94.9%真阳性率），而流匹配则降低到0.06%（减少25.1倍，98.7%真阳性率），相比于具有100%真阳性率的1-CTRV策略。BLInD在NVIDIA DRIVE Orin ECU上以0.87毫秒的时间运行AR头，以2.9毫秒的时间运行流匹配头，使其适用于汽车ECU的实时部署。尽管现有的学习分布模型依赖于场景上下文，而盲车辆状态模型通常会崩溃为单一路径，BLInD则同时实现了学习、盲和跨域的结合，这是之前工作未曾展示的。这些结果表明，这种分布为下游系统提供了一个可控且合理的意图采样接口，以AEB作为一种实例。",
+  "arxiv_id": "2609.13941",
+  "arxiv_url": "https://arxiv.org/abs/2609.13941",
+  "authors": [
+    "Pegado, Flavian, Hire, Ronit, Rajesh, Shreyas, Phade, Soham"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-13941",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.158353+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.13941",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "vehicle",
+      "automotive",
+      "驾驶",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 44
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "BLInD: Learning Driver Intent as a Distribution over Future Ego Trajectories",
+  "title_zh": "BLInD：将驾驶员意图学习为未来自我轨迹的分布",
+  "translation_url": "https://hjfy.top/arxiv/2609.13941"
+}

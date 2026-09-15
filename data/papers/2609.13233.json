@@ -1,0 +1,46 @@
+{
+  "abstract": "Thin structures such as tree branches are among the hardest cases for stereo matching: a branch is only a few pixels wide, the background is cluttered, and dense ground truth for real branches is nearly impossible to label by hand. We make three contributions. First, EMCStereo integrates three lightweight attention modules into a PSMNet-style cost-volume backbone: Efficient Multi-scale Attention (EMA) on deep semantic features, a Multi-Scale Fusion block (MSFblock) learning spatial pyramid weights instead of concatenating them, and Coordinate Attention (CoordAtt) on final matching features. Because MSFblock collapses four pyramid branches into one, the modules leave the network 2.0% smaller and add only 1.7% inference time overhead. Second, VirtualTree is a synthetic stereo dataset rendered in Unreal Engine 5 with a simulated ZED Mini rig, providing 5,520 pairs with exact disparity for thin branches. Third, an eight-way ablation establishes a run-to-run noise floor of 0.009 px end-point error (EPE). EMCStereo achieves 1.31 px EPE (5.96% D1-all) on the VirtualTree test split, 1.00 px on SceneFlow, and 0.80, 0.73, 0.62, and 3.19 px on KITTI 2012, KITTI 2015, ETH3D, and Middlebury, with depth accuracy delta_1 from 92.6% to 98.7%. Evaluated against the noise floor, the attention stack is accuracy-neutral at a 100-epoch budget, while MSFblock and CoordAtt cost 0.03-0.05 px unless EMA is present.",
+  "abstract_zh": "薄结构如树枝是立体匹配中最具挑战性的案例之一：树枝宽度仅为几个像素，背景杂乱，并且真实树枝的密集真值几乎不可能手动标注。我们做出了三项贡献。首先，EMCStereo将三个轻量级注意力模块集成到PSMNet风格的代价体积骨干网络中：在深度语义特征上的高效多尺度注意力（Efficient Multi-scale Attention，EMA）、一个学习空间金字塔权重而不是简单拼接的多尺度融合模块（Multi-Scale Fusion block，MSFblock），以及在最终匹配特征上的坐标注意力（Coordinate Attention，CoordAtt）。由于MSFblock将四个金字塔分支合并为一个，这些模块使网络体积减少了2.0%，并仅增加了1.7%的推理时间开销。其次，VirtualTree是一个在虚幻引擎5中渲染的合成立体数据集，使用模拟的ZED Mini设备，提供了5520对具有精确视差的薄树枝。第三，八路消融实验建立了0.009像素端点误差（End-Point Error，EPE）的运行噪声基准。EMCStereo在VirtualTree测试集上达到了1.31像素EPE（5.96% D1-all），在SceneFlow上为1.00像素，在KITTI 2012、KITTI 2015、ETH3D和Middlebury上分别为0.80、0.73、0.62和3.19像素，深度准确度delta_1从92.6%提升至98.7%。在噪声基准下评估，注意力堆栈在100个训练周期的预算下保持准确性中立，而MSFblock和CoordAtt的成本为0.03-0.05像素，除非EMA存在。",
+  "arxiv_id": "2609.13233",
+  "arxiv_url": "https://arxiv.org/abs/2609.13233",
+  "authors": [
+    "Lin, Yida, Xue, Bing, Zhang, Mengjie, Schofield, Sam, Green, Richard"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-13233",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.099687+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.13233",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "多传感器融合"
+    ]
+  },
+  "title": "EMCStereo: Attention-Enhanced Stereo Matching for Thin-Structure Depth Estimation with a Synthetic Tree-Branch Benchmark",
+  "title_zh": "EMCStereo：基于注意力增强的立体匹配用于薄结构深度估计的合成树枝基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.13233"
+}

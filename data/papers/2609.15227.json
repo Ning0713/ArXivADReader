@@ -1,0 +1,49 @@
+{
+  "abstract": "While homographies are fundamental to many computer vision tasks, the majority of conventional estimation techniques provide only point estimates without directly quantifying uncertainty introduced by noisy observations. Uncertainty, though, propagates to subsequent processing steps such as camera calibration and 3D reconstruction and is particularly relevant in safety-critical and socially relevant fields including medical imaging, autonomous driving, and defense. We present a fast Bayesian formulation for homography estimation from point correspondences that explicitly incorporates measurement uncertainty and prior knowledge while providing a posterior distribution over the homography parameters. A closed-form solution of the posterior mean of the homography is derived in homogeneous coordinates and supplemented by an iterative Bayesian approach to handle non-linearities. Synthetic experiments demonstrate the applicability to projective transformations and show improved estimation accuracy over DLT under varying noise conditions. Image stitching experiments further demonstrate applicability to real image correspondences while additionally providing uncertainty information.",
+  "abstract_zh": "单应性在许多计算机视觉任务中是基础，但大多数传统估计技术仅提供点估计，而未直接量化由噪声观测引入的不确定性。然而，不确定性会传播到后续处理步骤，例如相机标定和三维重建，这在医疗成像、自动驾驶和国防等安全关键和社会相关领域尤为重要。我们提出了一种快速的贝叶斯单应性估计方法，该方法从点对应中显式地结合了测量不确定性和先验知识，同时提供了单应性参数的后验分布。我们在齐次坐标中推导了单应性后验均值的闭式解，并通过迭代贝叶斯方法来处理非线性。合成实验展示了该方法在投影变换中的适用性，并在不同噪声条件下显示出比直接线性变换（DLT）更高的估计精度。图像拼接实验进一步展示了该方法在真实图像对应中的适用性，同时提供了不确定性信息。",
+  "arxiv_id": "2609.15227",
+  "arxiv_url": "https://arxiv.org/abs/2609.15227",
+  "authors": [
+    "Beuter, Hanne, Dorn, Sebastian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-15227",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.239828+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.15227",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "medical",
+      "医疗"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Closed-form Bayesian homography estimation from noisy point correspondences",
+  "title_zh": "基于噪声点对应的闭式贝叶斯单应性估计",
+  "translation_url": "https://hjfy.top/arxiv/2609.15227"
+}

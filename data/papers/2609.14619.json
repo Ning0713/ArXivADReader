@@ -1,0 +1,51 @@
+{
+  "abstract": "LiDAR--4-D radar fusion combines accurate spatial geometry with motion and reflectivity cues from radar, offering a promising solution for 3-D object detection in complex driving environments. However, sparse radar observations and differences in spatial sampling between the two modalities complicate reliable cross-modal complementation. Moreover, the relative importance of modalities and feature scales varies across spatial regions, making adaptive fusion challenging. To address these challenges, we propose ESAFusion, an evidence-aware and scale-adaptive framework that combines local geometric complementation with multiscale adaptive interaction. Specifically, we introduce an Evidence-Aware Radar Selection (ERS) module to suppress radar clutter using motion and observation-quality evidence while retaining foreground confidence for subsequent fusion. Then, the Pillar-Level Complementary Encoder (PCE) improves cross-modal complementation under mismatched spatial sampling using local geometric support from neighboring LiDAR pillars. We further design an Intra- and Inter-Scale Adaptive Fusion (ISAF) module to adaptively adjust the contributions of different modalities and feature scales in bird's-eye-view (BEV) space. Extensive experiments on the View-of-Delft (VoD) dataset show that ESAFusion achieves the highest mean average precision (mAP) among the compared methods, reaching 74.60% in the Entire Annotated Area and 88.89% in the Driving Corridor. It also attains the highest average precision (AP) for Cyclist among these methods in both regions while running at 19.23 FPS. Evaluations on VoD-Fog further demonstrate robustness under progressively degraded LiDAR observations. The source code will be made publicly available at https://github.com/SenJieHu549/ESAFusion.",
+  "abstract_zh": "LiDAR--4-D雷达融合结合了来自雷达的准确空间几何、运动和反射率线索，为复杂驾驶环境中的3-D目标检测提供了有前景的解决方案。然而，稀疏的雷达观测和两种模态之间的空间采样差异使得可靠的跨模态补充变得复杂。此外，各空间区域模态和特征尺度的重要性相对不同，这使得自适应融合面临挑战。为了解决这些问题，我们提出了ESAFusion，这是一个证据感知和尺度自适应框架，结合了局部几何补充和多尺度自适应交互。具体而言，我们引入了证据感知雷达选择（ERS）模块，通过运动和观测质量证据抑制雷达杂波，同时保留前景置信度以便后续融合。然后，柱级补充编码器（PCE）利用邻近LiDAR柱的局部几何支持，在空间采样不匹配的情况下改善跨模态补充。我们进一步设计了内部和跨尺度自适应融合（ISAF）模块，以在鸟瞰图（BEV）空间中自适应调整不同模态和特征尺度的贡献。在View-of-Delft（VoD）数据集上的大量实验表明，ESAFusion在比较方法中实现了最高的平均精度均值（mAP），在整个标注区域达到74.60%，在驾驶走廊中达到88.89%。在这两个区域中，它还在骑自行车者的平均精度（AP）方面取得了最高成绩，同时以19.23 FPS的速度运行。对VoD-Fog的评估进一步证明了在逐渐退化的LiDAR观测下的鲁棒性。源代码将公开发布在https://github.com/SenJieHu549/ESAFusion。",
+  "arxiv_id": "2609.14619",
+  "arxiv_url": "https://arxiv.org/abs/2609.14619",
+  "authors": [
+    "Ma, Gang, Hu, Senjie, Liu, Junjie, Wang, Chao, Wei, Hui"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14619",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.206001+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14619",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "cyclist",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 31
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "ESAFusion: LiDAR--4-D Radar Fusion via Local Geometric Complementation and Multiscale Adaptive Interaction for 3-D Object Detection",
+  "title_zh": "ESAFusion：通过局部几何补充和多尺度自适应交互实现的LiDAR--4-D雷达融合用于3-D目标检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.14619"
+}

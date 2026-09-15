@@ -1,0 +1,47 @@
+{
+  "abstract": "Autonomous surface vehicles operating in inland waterways require a persistent representation of both surrounding structures and the water surface. LiDAR-based simultaneous localization and mapping often produces sparse or missing water returns, leaving this operational surface absent from the reconstructed scene. We propose HydroMap, an odometry-decoupled framework that reconstructs water surface elevation from stereo observations and integrates it with the structural map. Per-frame water points form joint cell observations with propagated stereo and pose uncertainty, and successive observations are fused into a persistent probabilistic elevation map. Semantic map conversion then combines the elevation map with structural geometry in a unified 2.5D representation of water, boundaries, structures, and overhead regions. On the Pohang Canal and Leuven Vaart datasets, the elevation RMSE remains below 5 cm relative to LiDAR references expressed in the same map frame. The elevation and semantic maps are published at 2 Hz and 1 Hz, respectively. HydroMap thereby complements LiDAR maps with a persistent representation of the water surface for downstream navigation in inland waterways.",
+  "abstract_zh": "在内陆水道中运行的自主水面车辆需要对周围结构和水面进行持续的表示。基于激光雷达的同时定位与地图构建（SLAM）往往会产生稀疏或缺失的水面回波，导致重建场景中缺少这一操作表面。我们提出了HydroMap，一个与里程计解耦的框架，通过立体观测重建水面高程，并将其与结构地图集成。每帧水点形成与传播的立体和姿态不确定性结合的联合单元观测，连续观测被融合为一个持久的概率高程地图。语义地图转换将高程地图与结构几何结合，形成水体、边界、结构和上方区域的统一2.5D表示。在浦项运河和鲁汶运河数据集上，高程的均方根误差（RMSE）相对于同一地图框架中的激光雷达参考保持在5厘米以下。高程和语义地图分别以2 Hz和1 Hz的频率发布。因此，HydroMap为内陆水道的下游导航提供了水面持久表示，补充了激光雷达地图。",
+  "arxiv_id": "2609.14903",
+  "arxiv_url": "https://arxiv.org/abs/2609.14903",
+  "authors": [
+    "Luo, Zhongbi, Wang, Yunjia, Bruyninckx, Herman, Slaets, Peter"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14903",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.053606+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14903",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "本文面向内陆水道自主水面车辆，提出一种基于立体视觉和不确定性融合的概率水面高程建图方法。该方法弥补激光雷达对水面回波稀疏或缺失造成的地图空缺，并将水面高程与结构几何融合为统一的2.5D语义场景表示，为自主导航提供持久地图。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "HydroMap: Probabilistic Water Surface Elevation Mapping for Semantic Scene Representation in Inland Waterways",
+  "title_zh": "HydroMap：用于内陆水道语义场景表示的概率水面高程映射",
+  "translation_url": "https://hjfy.top/arxiv/2609.14903"
+}

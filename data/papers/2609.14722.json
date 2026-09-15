@@ -1,0 +1,46 @@
+{
+  "abstract": "Low-cost and low-resolution sensors used in edge deployments can produce test point clouds that are substantially sparser than the normal training data. This train-test sampling-resolution gap changes the local geometry available to a 3D anomaly detector. We propose PC$^2$-AD, a point cloud upsampling framework that compensates sparse test inputs before downstream detection. Target Domain Candidate Generation (TCG) adapts a pretrained upsampler to normal training geometry and generates a dense candidate pool. Geometry-Aware Candidate Filtering (GACF) selects candidates according to geometric spacing and spatial coverage. Normality-Preserving Point Compensation (NPPC) refines the selection by comparing candidate normality scores with those of their input anchors. The selected points are combined with the unchanged input points and processed by the existing detector. Experiments with six detectors on two Anomaly-ShapeNet settings and Real3D-AD show improvements in the mean of object-level and point-level AUROC for all six detectors in each Anomaly-ShapeNet setting and four on Real3D-AD. These results support point cloud compensation as an input-level approach to improving 3D anomaly detection under low-resolution sensing conditions. Code is publicly available at https://github.com/gyutong406-commits/PC2-AD.",
+  "abstract_zh": "在边缘部署中使用的低成本低分辨率传感器可能会生成测试点云，这些点云的稀疏程度远低于正常的训练数据。这种训练-测试采样分辨率差异改变了3D异常检测器可用的局部几何结构。我们提出了PC$^2$-AD，一个点云上采样框架，在下游检测之前补偿稀疏的测试输入。目标领域候选生成（Target Domain Candidate Generation, TCG）将预训练的上采样器适应于正常的训练几何，并生成一个密集的候选池。几何感知候选过滤（Geometry-Aware Candidate Filtering, GACF）根据几何间距和空间覆盖选择候选。正常性保持点补偿（Normality-Preserving Point Compensation, NPPC）通过比较候选的正常性分数与其输入锚点的正常性分数来精炼选择。选定的点与未改变的输入点结合，并由现有检测器处理。在两个Anomaly-ShapeNet设置和Real3D-AD上的六个检测器实验表明，在每个Anomaly-ShapeNet设置中，所有六个检测器的对象级和点级AUROC均有所提高，在Real3D-AD上则有四个检测器表现出改进。这些结果支持点云补偿作为一种输入级方法，以改善低分辨率传感条件下的3D异常检测。代码已公开发布在 https://github.com/gyutong406-commits/PC2-AD。",
+  "arxiv_id": "2609.14722",
+  "arxiv_url": "https://arxiv.org/abs/2609.14722",
+  "authors": [
+    "Gu, Yutong, Xie, Yingxi, Huang, Kejin, Ning, Jian, Liang, Hanzhe, Shen, Linlin, Wang, Jinbao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14722",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.215537+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14722",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "point cloud",
+      "anomaly detection",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "提出PC$^2$-AD点云上采样与补偿框架，通过候选生成、几何感知过滤和正常性保持筛选，缓解低分辨率边缘传感器造成的测试点云稀疏问题，从而提升3D异常检测性能。该方法对自动驾驶中的低成本LiDAR点云质量增强和异常目标检测具有较强的潜在迁移价值。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "LiDAR/点云",
+      "3D 检测"
+    ]
+  },
+  "title": "PC$^2$-AD: Point Cloud Upsampling to Safeguard 3D Anomaly Detection with Resolution-constrained Edge Devices",
+  "title_zh": "PC$^2$-AD：点云上采样以保护具有分辨率限制的边缘设备中的3D异常检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.14722"
+}

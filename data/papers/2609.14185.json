@@ -1,0 +1,53 @@
+{
+  "abstract": "Bird's Eye View (BEV)-based multi-view 3D object detection suffers from challenges of computational complexity, multi-scale feature extraction, and efficiency of dense 2D-to-BEV view transformation. To address these problems, this paper proposes an improved BEV 3D object detection algorithm Sparse-BEVNet. Firstly, a Bi-Level Routing Attention (BRA) mechanism is introduced into the image feature extraction network to reduce the computational burden of the backbone. Second, Cascaded Group Attention (CGA) is employed in the feature fusion module, which enhances deep interaction across features of different hierarchical levels without introducing additional computational overhead. Furthermore, a Sparse Spatial Cross-Attention mechanism is adopted to replace the conventional dense view projection pipeline. Experimental results on the public nuScenes dataset demonstrate that the proposed method achieves a mean Average Precision (mAP) of 45.2% and a nuScenes Detection Score (NDS) of 54.5%, corresponding to 3.6% and 2.8% improvements relative to the baseline model, respectively.",
+  "abstract_zh": "基于鸟瞰图（BEV）的多视角3D物体检测面临计算复杂性、多尺度特征提取以及密集2D到BEV视图转换效率等挑战。为了解决这些问题，本文提出了一种改进的BEV 3D物体检测算法Sparse-BEVNet。首先，将双层路由注意力（Bi-Level Routing Attention, BRA）机制引入图像特征提取网络，以减少主干网络的计算负担。其次，在特征融合模块中采用级联组注意力（Cascaded Group Attention, CGA），增强不同层级特征之间的深度交互，而不引入额外的计算开销。此外，采用稀疏空间交叉注意力机制替代传统的密集视图投影管道。对公共nuScenes数据集的实验结果表明，所提方法实现了45.2%的平均精度均值（mean Average Precision, mAP）和54.5%的nuScenes检测得分（nuScenes Detection Score, NDS），分别相较于基线模型提高了3.6%和2.8%。",
+  "arxiv_id": "2609.14185",
+  "arxiv_url": "https://arxiv.org/abs/2609.14185",
+  "authors": [
+    "Zhang, Jing, Liu, Jiaqi, Wang, Zibo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14185",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.173814+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14185",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "3d object detection"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "3D 检测"
+    ]
+  },
+  "title": "Bi-Level Routing and Sparse Spatial Attention based Multi-View BEV 3D Object Detection for Autonomous Driving",
+  "title_zh": "基于双层路由和稀疏空间注意力的多视角鸟瞰图3D物体检测用于自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.14185"
+}

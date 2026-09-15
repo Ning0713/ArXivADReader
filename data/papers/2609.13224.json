@@ -1,0 +1,49 @@
+{
+  "abstract": "Autonomous vehicles are expected to improve road safety and efficiency, but passengers often remain uncertain about what the vehicle perceives and why it acts as it does. Virtual reality (VR) offers a safe and repeatable medium for presenting this information, yet most passenger-facing VR studies rely on fully simulated vehicles or pre-scripted scenarios, so the motion and perception shown to the user do not originate from a physically operating autonomous system. This paper presents a video-augmented VR framework that couples a physical ROS 2 autonomous robot vehicle to a Unity 6 application deployed on a Meta Quest 3S headset. The vehicle state and live onboard camera stream are transmitted over two independent communication channels, allowing the virtual vehicle to mirror the physical robot's motion while the passenger simultaneously views the vehicle's first-person camera feed and its navigation decisions through an in-vehicle dashboard interface. We evaluate the framework over 20 repeated closed-loop navigation trials. The system achieves a mean state-update latency of 29.63 ms, a mean relative route-progress error of 2.28% between the physical and virtual vehicles, and video delivery at 10.006 frames per second with 0.25% frame loss. All monitored navigation decisions were correctly reflected in the VR interface with no missed or incorrect notifications. The results indicate that the framework can support temporally synchronized, semantically consistent, and accurate route-progress representation for immersive observation of physical autonomous-vehicle behavior.",
+  "abstract_zh": "自主车辆有望提高道路安全性和效率，但乘客常常对车辆的感知及其行为原因感到不确定。虚拟现实（VR）提供了一种安全且可重复的信息呈现媒介，但大多数面向乘客的VR研究依赖于完全模拟的车辆或预先编写的场景，因此展示给用户的运动和感知并不源于实际操作的自主系统。本文提出了一种视频增强虚拟现实框架，将物理ROS 2自主机器人车辆与部署在Meta Quest 3S头显上的Unity 6应用程序相结合。车辆状态和实时车载摄像头流通过两个独立的通信通道传输，使虚拟车辆能够反映物理机器人运动，同时乘客可以通过车内仪表盘界面同时查看车辆的第一人称摄像头画面及其导航决策。我们在20次重复的闭环导航试验中评估了该框架。系统实现了29.63毫秒的平均状态更新延迟，物理和虚拟车辆之间的平均相对路线进度误差为2.28%，视频传输速率为每秒10.006帧，帧丢失率为0.25%。所有监测到的导航决策在VR界面中均得到了正确反映，没有遗漏或错误的通知。结果表明，该框架能够支持时间同步、语义一致和准确的路线进度表示，以便沉浸式观察物理自主车辆的行为。",
+  "arxiv_id": "2609.13224",
+  "arxiv_url": "https://arxiv.org/abs/2609.13224",
+  "authors": [
+    "Islam, Md Tanjemul, Shafin, Mohammad, Kabir, Md Rafiul"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-13224",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-15T09:43:57.986766+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.13224",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "vehicle",
+      "road",
+      "车辆",
+      "道路",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Seeing What the Vehicle Sees: Video-Augmented Virtual Reality for Physical Autonomous Vehicles",
+  "title_zh": "观察车辆所见：用于物理自主车辆的视频增强虚拟现实",
+  "translation_url": "https://hjfy.top/arxiv/2609.13224"
+}

@@ -1,0 +1,44 @@
+{
+  "abstract": "Learned components are increasingly integrated into geometric visual--inertial estimators to provide motion, depth, bias, uncertainty, or confidence cues. Yet it remains unclear whether gains arise from useful learned priors or from changes in the backend, calibration, initialization, temporal association, or evaluation gauge. We present a controlled framework for learning-augmented visual--inertial estimation that separates fusion gain from the incremental value of a learned prior and evaluates four evidence layers: local motion consistency, global trajectory accuracy, physical-state correctness, and numerical consistency. We instantiate the framework with a MonoViT-based monocular motion prior added as a local relative-motion factor to an unchanged VINS backend. We compare Original VINS and learned-prior VINS under matched sensor streams, timestamps, initialization, frontend/backend settings, and camera--IMU extrinsics, while probing calibration, initialization, state coupling, scale, bundle adjustment, and loop closure. On KITTI, with fixed reference extrinsics, translation APE RMSE is 31.4 m for Original VINS and 31.8 m with the learned prior. Across four recordings, the prior changes mean APE by only -0.2%, while a five-times-higher weight worsens it by 8.2%. Online extrinsic updates increase mean APE by 45.7% and 52.1%, respectively, while mean RPE changes by less than 2%. These results show that fusion performance alone cannot establish the value of learned priors. Reliable evaluation requires same-backend controls and joint analysis of prior compatibility, calibration, initialization, global drift, physical-state error, and backend consistency.",
+  "abstract_zh": "学习组件正日益被集成到几何视觉-惯性估计器中，以提供运动、深度、偏置、不确定性或置信度线索。然而，目前尚不清楚性能提升是源自有用的学习先验，还是由于后端、标定、初始化、时间关联或评估标准的变化。本文提出了一个受控框架，用于学习增强的视觉-惯性估计，该框架将融合增益与学习先验的增量价值分离开来，并评估四个证据层面：局部运动一致性、全局轨迹精度、物理状态正确性及数值一致性。我们以基于MonoViT的单目运动先验为例，将其作为局部相对运动因子添加到未更改的VINS后端中。我们在匹配的传感器数据流、时间戳、初始化、前端/后端设置及相机-IMU外参条件下，比较了原始VINS与含学习先验的VINS，并探讨了标定、初始化、状态耦合、尺度、束调整及闭环检测的影响。在KITTI数据集上，固定参考外参时，原始VINS的平移绝对位置误差（APE）均方根误差（RMSE）为31.4米，含学习先验时为31.8米。在四个录制序列中，先验仅使平均APE变化-0.2%，而权重提高五倍则使误差恶化8.2%。在线外参更新分别使平均APE增加45.7%和52.1%，而平均相对位置误差（RPE）变化不足2%。这些结果表明，仅凭融合性能无法确定学习先验的价值。可靠的评估需要相同后端的对照实验，并联合分析先验兼容性、标定、初始化、全局漂移、物理状态误差及后端一致性。",
+  "arxiv_id": "2609.13777",
+  "arxiv_url": "https://arxiv.org/abs/2609.13777",
+  "authors": [
+    "Zhang, Jinchang, Lu, Guoyu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-13777",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.013206+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.13777",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "When Do Learned Priors Help Visual Inertial Estimation? A Controlled Study of Prior Integration, Calibration, Initialization, and Backend Consistency",
+  "title_zh": "学习先验何时有助于视觉惯性估计？先验融合、标定、初始化与后端一致性的受控研究",
+  "translation_url": "https://hjfy.top/arxiv/2609.13777"
+}

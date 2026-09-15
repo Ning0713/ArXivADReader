@@ -1,0 +1,45 @@
+{
+  "abstract": "Spatio-temporal traffic forecasting is a fundamental big data analytics task for intelligent transportation systems, where massive urban sensor streams exhibit heterogeneous, non-stationary, and structurally dynamic patterns. Although recent deep learning and large language model (LLM)-based methods have advanced traffic forecasting, they often remain temporally centered and lack effective coordination of temporal, spectral, pairwise spatial, and higher-order structural cues under evolving traffic regimes. To address this heterogeneous dependency coordination problem, we propose STHMoE, a Spatio-Temporal Hypergraph-Enhanced Mixture of Experts framework for urban traffic data forecasting. STHMoE decouples traffic dynamics into frequency-domain, time-domain, spatio-domain, and higher-order spatial representations, which are modeled by prompt-guided heterogeneous experts built upon a partially frozen LLM backbone. The first three experts leverage domain-specific statistical prompts, while the higher-order spatio expert uses a structural placeholder prompt and obtains dependency information from an adaptive hypergraph module. To capture evolving spatial structures in traffic data,, STHMoE jointly learns first-order graph dependencies and higher-order group interactions without predefined topologies. An entropy-aware MoE router with coefficient-of-variation load balancing adaptively fuses expert outputs while improving expert utilization and routing confidence. Experiments on 10 real-world traffic benchmarks show that STHMoE achieves competitive performance against temporal, spatio-temporal graph, and LLM-based baselines.",
+  "abstract_zh": "时空交通预测是智能交通系统中的一项基础大数据分析任务，其中大量城市传感器流展现出异构、非平稳和结构动态的模式。尽管近期基于深度学习和大语言模型（LLM）的方法在交通预测方面取得了进展，但它们往往仍然以时间为中心，缺乏在不断变化的交通模式下对时间、频谱、成对空间和高阶结构线索的有效协调。为了解决这一异构依赖协调问题，我们提出了STHMoE，一种用于城市交通数据预测的时空超图增强专家混合框架。STHMoE将交通动态解耦为频域、时域、空间域和高阶空间表示，这些表示由基于部分冻结的LLM骨干网络构建的提示引导异构专家进行建模。前三个专家利用特定领域的统计提示，而高阶空间专家使用结构占位符提示，并从自适应超图模块中获取依赖信息。为了捕捉交通数据中不断演变的空间结构，STHMoE在没有预定义拓扑的情况下共同学习一阶图依赖和高阶组交互。一个具有熵感知的MoE路由器通过变异系数负载平衡自适应融合专家输出，同时提高专家利用率和路由信心。在10个真实世界交通基准上的实验表明，STHMoE在与时间、时空图和基于LLM的基准相比时，表现出竞争力的性能。",
+  "arxiv_id": "2609.15172",
+  "arxiv_url": "https://arxiv.org/abs/2609.15172",
+  "authors": [
+    "Chen, Jiawen, Shao, Qi, Chang, Yongjian, Zhou, Mingtong, Chen, Duxin, Yu, Wenwu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-15172",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.376312+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.15172",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "本文提出STHMoE，一种面向城市交通数据预测的时空超图增强混合专家框架。该方法利用部分冻结的LLM骨干和提示引导的异构专家，分别建模频域、时域、成对空间及高阶空间依赖，并通过自适应超图学习动态交通拓扑，再由熵感知路由器融合各专家输出。在10个真实交通数据集上的实验显示，该方法相较多类时序、时空图和LLM基线具有竞争力。其成果可为自动驾驶中的交通状态预测、宏观环境建模和规划决策提供支持，但论文主要面向城市交通预测，并非直接针对自动驾驶车辆感知或控制。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "STHMoE: Hypergraph-Enhanced Heterogeneous Dependency Coordination for LLM-Based Urban Traffic Data Forecasting",
+  "title_zh": "STHMoE：基于超图增强的异构依赖协调用于基于大语言模型的城市交通数据预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.15172"
+}

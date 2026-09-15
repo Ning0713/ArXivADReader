@@ -1,0 +1,49 @@
+{
+  "abstract": "Driving vision-language-action (VLA) models increasingly reason before acting, but their intermediate reasoning is often weakly grounded in physical scene evidence and loosely connected to executable behavior. We present GRAVA, a framework built around Grounded Reasoning-to-Action (GRA), which unifies grounding, reasoning, and action generation in a single autoregressive stream. GRA links action-relevant language references to 2D visual regions and ego-centric physical states, organizes object interactions and decisions in a trajectory-anchored typed graph, and serializes this structure into grounded reasoning. A single VLM generates this reasoning followed by a compact Executable Planner action that is deterministically decoded into a continuous trajectory. We further introduce an agentic GRA data construction pipeline that combines forward scene grounding with backward trajectory anchoring, and use it to build GR-NavSim with 2.2M grounded question-answer pairs and 70K GRA reasoning traces. A progressive training strategy develops grounded cognition through pre-training, establishes the reasoning-to-action interface through imitation, and improves driving behavior through reinforcement learning and exploration. Using about 60% of the available human driving demonstrations for action supervision, GRAVA-8B achieves state-of-the-art performance among purely autoregressive driving models on the full NAVSIM benchmark. On an internal long-tail benchmark, full GRA improves key-object compliance and Closed-loop Driving Score by 19.3% and 20.5% over action-only prediction, respectively. These results show the benefit of preserving action-relevant physical evidence from grounded reasoning through executable action generation.",
+  "abstract_zh": "驾驶视觉-语言-行动（VLA）模型越来越多地在行动之前进行推理，但它们的中间推理往往与物理场景证据的关联较弱，并且与可执行行为的连接较松散。我们提出了GRAVA，一个围绕基于实证的推理-行动（GRA）构建的框架，它将实证、推理和行动生成统一为一个自回归流。GRA将与行动相关的语言引用链接到二维视觉区域和自我中心的物理状态，组织对象交互和决策于一个基于轨迹的类型图中，并将该结构序列化为基于实证的推理。单个视觉语言模型（VLM）生成此推理，随后生成一个紧凑的可执行规划器动作，该动作被确定性解码为连续轨迹。我们进一步引入了一种代理GRA数据构建管道，该管道结合了前向场景实证与后向轨迹锚定，并利用它构建了GR-NavSim，包含220万个基于实证的问题-答案对和7万个GRA推理轨迹。渐进式训练策略通过预训练发展基于实证的认知，通过模仿建立推理-行动接口，并通过强化学习和探索改善驾驶行为。使用约60%的可用人类驾驶演示进行动作监督，GRAVA-8B在完整的NAVSIM基准测试中实现了纯自回归驾驶模型的最先进性能。在一个内部长尾基准测试中，完整的GRA在关键对象合规性和闭环驾驶得分上分别比仅基于动作的预测提高了19.3%和20.5%。这些结果表明，通过可执行动作生成保留基于实证的推理中的与行动相关的物理证据的好处。",
+  "arxiv_id": "2609.15169",
+  "arxiv_url": "https://arxiv.org/abs/2609.15169",
+  "authors": [
+    "Liu, Xiao, Li, Haoyu, Leng, Jianghao, Wang, Lin, Sun, Chao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-15169",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.234224+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.15169",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "GRAVA: Grounded Reasoning-to-Action Representation and Learning for Autonomous Driving",
+  "title_zh": "GRAVA：用于自主驾驶的基于实证的推理-行动表示与学习",
+  "translation_url": "https://hjfy.top/arxiv/2609.15169"
+}

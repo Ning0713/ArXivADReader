@@ -1,0 +1,51 @@
+{
+  "abstract": "Stable and reliable 4D spatial understanding is fundamental for autonomous driving systems. While feedforward reconstruction networks can estimate camera motion and 3D structure in one pass, pose estimation over long videos remains challenged by computational cost, long-context ambiguity, and temporal instability. To address these challenges, we propose Feedforward Visual Odometry (FFVO), a pose-specialized adaptation of joint reconstruction architectures for efficient and temporally stable camera-pose estimation. FFVO uses (i) a compact camera-token representation for computationally efficient temporal aggregation, (ii) a hierarchical local-to-global temporal decoder that mitigates geometric ambiguity by separating short-range motion aggregation from sequence-level integration, and (iii) intermediate trajectory supervision that promotes temporal stability. Extensive evaluation on the Waymo Open Dataset (WOD), KITTI, and a large-scale proprietary benchmark demonstrates that our method performs favorably against existing feedforward approaches, and greatly reduces jitter and drift. These results support FFVO as an effective feedforward camera-pose decoder in long-horizon visual odometry settings.",
+  "abstract_zh": "稳定可靠的四维空间理解是自动驾驶系统的基础。虽然前馈重建网络能够在一次传递中估计相机运动和三维结构，但在长视频中的姿态估计仍面临计算成本、长时间上下文模糊和时间不稳定性等挑战。为了解决这些问题，我们提出了前馈视觉里程计（FFVO），这是一种针对联合重建架构的姿态专用适配，旨在实现高效且时间稳定的相机姿态估计。FFVO使用（i）紧凑的相机标记表示，以实现计算上高效的时间聚合，（ii）一个层次化的局部到全局时间解码器，通过将短期运动聚合与序列级集成分离，从而减轻几何模糊，以及（iii）中间轨迹监督，以促进时间稳定性。在Waymo开放数据集（WOD）、KITTI和一个大规模专有基准上的广泛评估表明，我们的方法在性能上优于现有的前馈方法，并大大减少了抖动和漂移。这些结果支持FFVO作为长时间视觉里程计环境中有效的前馈相机姿态解码器。",
+  "arxiv_id": "2609.13733",
+  "arxiv_url": "https://arxiv.org/abs/2609.13733",
+  "authors": [
+    "Shih, Meng-Li, Su, Shih-Yang, Zou, Yuliang, Xiang, Hao, Zhu, Haidong, Casser, Vincent, Curless, Brian, Kalenichenko, Dmitry, Tan, Mingxing, Anguelov, Dragomir"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-13733",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.144990+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.13733",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "kitti",
+      "waymo open",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "预测/规划"
+    ]
+  },
+  "title": "FFVO: A Feedforward Pose Decoder for Long-Horizon Visual Odometry",
+  "title_zh": "FFVO：一种用于长时间视觉里程计的前馈姿态解码器",
+  "translation_url": "https://hjfy.top/arxiv/2609.13733"
+}

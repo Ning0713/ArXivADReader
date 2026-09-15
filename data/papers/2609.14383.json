@@ -1,0 +1,46 @@
+{
+  "abstract": "Real-time pedestrian detection in driving scenes is constrained by three coupled failure modes: tiny targets lose discriminative evidence, occlusion weakens geometric support, and weather or illumination changes distort appearance statistics. We formulate the detector through a unified \\emph{contour-guided spectral routing} view rather than treating frequency processing, attention, and boundary reasoning as independent add-ons. The detector routes information in a prescribed order: spatial evidence is first augmented with global spectral context, deep representations then exchange spatial and spectral cues, and cross-scale fusion is finally conditioned on boundary--semantic disagreement. This ordering yields a compact representation pipeline in which low-frequency context stabilizes global structure while high-frequency evidence protects small-object contours. We further retain a wavelet-subband training transformation that perturbs low- and high-frequency coefficients independently, targeting appearance shifts caused by fog, rain, snow, and low illumination. The formulation exposes a single routing variable at each stage and distinguishes reusable signal transforms from the task-specific policy that decides where each signal is injected. On CityPersons, the proposed detector obtains 70.4 AP$_{50}$ and 44.2 AP$_{50:95}$, compared with 68.1 and 42.2 for RT-DETR, while the full wavelet-augmented configuration reaches 71.1 and 44.6.",
+  "abstract_zh": "在驾驶场景中，实时行人检测受到三种耦合失效模式的限制：微小目标失去辨别证据，遮挡削弱几何支持，天气或光照变化扭曲外观统计。我们通过统一的 extit{轮廓引导光谱路由}视角来构建检测器，而不是将频率处理、注意力和边界推理视为独立的附加模块。检测器按照规定的顺序路由信息：首先用全局光谱上下文增强空间证据，然后深度表示交换空间和光谱线索，最后跨尺度融合依赖于边界-语义的不一致性。这种顺序产生了一个紧凑的表示管道，其中低频上下文稳定全局结构，而高频证据保护小物体的轮廓。我们进一步保留了一种小波子带训练变换，该变换独立扰动低频和高频系数，针对雾、雨、雪和低光照造成的外观变化。该公式在每个阶段暴露出一个单一的路由变量，并区分可重用的信号变换与决定每个信号注入位置的任务特定策略。在CityPersons数据集上，所提出的检测器获得了70.4 AP$_{50}$和44.2 AP$_{50:95}$，相比之下，RT-DETR分别为68.1和42.2，而完整的小波增强配置达到了71.1和44.6。",
+  "arxiv_id": "2609.14383",
+  "arxiv_url": "https://arxiv.org/abs/2609.14383",
+  "authors": [
+    "Williams, Sam, Xiang, Yuan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14383",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.188047+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14383",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "pedestrian",
+      "驾驶",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "面向自动驾驶驾驶场景中的实时行人检测，本文提出轮廓引导的光谱路由框架，按顺序融合空间、频域、边界和语义信息，并通过小波子带扰动增强对雾、雨、雪及低照度的鲁棒性。该方法重点改善小目标、遮挡行人和外观变化条件下的检测性能，在CityPersons上优于RT-DETR。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "Contour-Guided Spectral Routing for Robust Real-Time Pedestrian Detection",
+  "title_zh": "基于轮廓引导的光谱路由用于鲁棒的实时行人检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.14383"
+}

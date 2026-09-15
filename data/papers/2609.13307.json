@@ -1,0 +1,48 @@
+{
+  "abstract": "Object tracking is essential for autonomous vehicles to avoid obstacles and plan routes. Radar maintains detection performance even in adverse weather and can measure relative velocity through the Doppler effect, making it well suited for object tracking. In this paper, we propose a data-driven state PRedictor-based Interacting Multiple Model tracking method (PR-IMM) that improves nonlinear object-motion representation while preserving the stability and interpretability of physics-based motion models. The proposed method employs a transformer-based PRediction model (PR) that incorporates radar Doppler measurements to predict object displacement. The PR model is integrated into the IMM as a mode alongside the CV, CA, and CT motion models, and their prior positions are dynamically combined according to the mode probabilities. Experimental results show that PR-IMM reduces position-estimation error by 57.3% over the IMM and by 16.5% over the PR, while reducing ID switches by 25.3% and improving IDF1 by 9.6% over the IMM.",
+  "abstract_zh": "目标跟踪对于自主车辆避开障碍物和规划路线至关重要。雷达在恶劣天气条件下仍能保持检测性能，并通过多普勒效应测量相对速度，使其非常适合用于目标跟踪。本文提出了一种基于数据驱动的状态预测器交互多模型跟踪方法（PR-IMM），该方法在保持物理基础运动模型的稳定性和可解释性的同时，改善了非线性目标运动的表示。所提出的方法采用了一种基于变换器的预测模型（PR），该模型结合了雷达多普勒测量来预测目标位移。PR模型作为一种模式与恒速（CV）、加速（CA）和恒加速度（CT）运动模型一起集成到IMM中，并根据模式概率动态组合它们的先前位置。实验结果表明，PR-IMM在位置估计误差上比IMM减少了57.3%，比PR减少了16.5%，同时ID切换减少了25.3%，IDF1相较于IMM提高了9.6%。",
+  "arxiv_id": "2609.13307",
+  "arxiv_url": "https://arxiv.org/abs/2609.13307",
+  "authors": [
+    "Lim, Chan-Bin, Paek, Dong-Hee, Kong, Seung-Hyun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-13307",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-15T09:43:57.997333+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.13307",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 42
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "Radar",
+      "预测/规划"
+    ]
+  },
+  "title": "IMM-based Multiple Object Tracking using a State Prediction Neural Network",
+  "title_zh": "基于IMM的多目标跟踪方法：一种状态预测神经网络",
+  "translation_url": "https://hjfy.top/arxiv/2609.13307"
+}

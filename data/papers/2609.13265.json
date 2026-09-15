@@ -1,0 +1,50 @@
+{
+  "abstract": "Near-infrared (NIR) imaging does not consistently outperform standard color cameras for daytime agricultural traversability once spatial data leakage is eliminated. Prior benchmarks suggesting an NIR advantage used sequence-level splits that permitted spatially autocorrelated imagery into test sets, artificially inflating NIR performance, especially on difficult paddy-boundary segmentation. When evaluated across strictly held-out recording sites using the AI Hub autonomous driving corpus, none of the four tested configurations (color, NIR, a luminance control, or their fusion) reliably surpasses standard color across any of the five traversability classes. Furthermore, apparent performance gains observed at a single held-out site completely fail to replicate when the held-out site is rotated, demonstrating that the observed benefits were site-specific artifacts rather than generalizable improvements. Correcting for spatial leakage erases the apparent lead of NIR entirely rather than uniformly degrading performance across all sensor types. Consequently, adding a forward-facing NIR camera to a daylight agricultural vehicle sensor suite remains unproven, and evaluations compromised by location leakage risk distorting sensor rankings and misleading procurement decisions.",
+  "abstract_zh": "近红外（NIR）成像在消除空间数据泄漏后，并未在白天农业可通行性方面始终优于标准彩色相机。之前的基准测试表明NIR具有优势，但使用的序列级拆分允许空间自相关图像进入测试集，从而人为地提高了NIR性能，特别是在困难的稻田边界分割任务中。当使用AI Hub自主驾驶数据集在严格保留的录制场地进行评估时，四种测试配置（彩色、NIR、亮度控制或它们的融合）在五个可通行性类别中均未能可靠地超过标准彩色相机。此外，在单个保留场地观察到的明显性能提升在更换保留场地时完全无法复制，表明观察到的好处是场地特定的伪影，而非可推广的改进。纠正空间泄漏后，NIR的明显优势完全消失，而不是在所有传感器类型中均匀降低性能。因此，在白天农业车辆的传感器套件中添加前向NIR相机仍未得到证明，受位置泄漏影响的评估可能会扭曲传感器排名并误导采购决策。",
+  "arxiv_id": "2609.13265",
+  "arxiv_url": "https://arxiv.org/abs/2609.13265",
+  "authors": [
+    "Kang, Sungwoo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-13265",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.114738+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.13265",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "农业"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "Forward-Facing Near-Infrared Adds Little to Colour for Farm-Machinery Traversability: A Site-Disjoint Evaluation of Sensor-Dependent Spatial Leakage",
+  "title_zh": "前向近红外对农用机械可通行性贡献有限：传感器依赖的空间泄漏的场地不重叠评估",
+  "translation_url": "https://hjfy.top/arxiv/2609.13265"
+}

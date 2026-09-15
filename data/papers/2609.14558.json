@@ -1,0 +1,45 @@
+{
+  "abstract": "Autonomous Surface Vehicles (ASVs) are increasingly expected to operate in ports and harbour environments, where operators may specify navigation targets through language-based descriptions rather than predefined coordinates or fixed target identifiers. However, existing ASV navigation methods mainly execute predefined geometric goals or task-specific objectives and give limited attention to language-grounded target specification. This study proposes Semantically Grounded Navigation (SGNav), a framework that enables an ASV to identify and approach a maritime target from an operator-provided description. SGNav integrates text-guided semantic grounding, harbour-aware candidate filtering, CLIP-based semantic verification, grounded target control-state construction, and Proximal Policy Optimisation-based closed-loop control. It grounds the target description in onboard RGB observations, suppresses visually or semantically irrelevant distractors, and converts the selected target into a compact control-oriented representation for policy execution. Experiments in simulated port environments show that SGNav achieves success rates of $97.0\\pm1.2\\%$, $92.0\\pm1.5\\%$, and $90.0\\pm1.8\\%$ across three representative target-reaching tasks, with semantic target accuracy above $97\\%$ and wrong-target rates below $3\\%$. SGNav also maintains $97.7$--$98.7\\%$ success rates across held-out port layouts. In the Task~3 ablation study, removing harbour-aware filtering or semantic consistency reduces the success rate to $40.4\\pm2.6\\%$ and $50.4\\pm3.1\\%$, respectively. These findings demonstrate the importance of semantic grounding, harbour-aware filtering, and semantic verification for reliable language-grounded ASV navigation. These results indicate that the proposed perception-to-control framework can support language-grounded target approach manoeuvres of ASV under the complex port environments.",
+  "abstract_zh": "自主水面车辆（ASVs）越来越被期望在港口和海港环境中操作，在这些环境中，操作员可以通过基于语言的描述来指定导航目标，而不是使用预定义的坐标或固定目标标识符。然而，现有的ASV导航方法主要执行预定义的几何目标或特定任务目标，对基于语言的目标指定关注有限。本研究提出了语义基础导航（SGNav），这是一个框架，使ASV能够根据操作员提供的描述识别并接近海上目标。SGNav集成了文本引导的语义基础、港口感知的候选过滤、基于CLIP的语义验证、基础目标控制状态构建以及基于近端策略优化的闭环控制。它将目标描述与船载RGB观测相结合，抑制视觉或语义上不相关的干扰项，并将所选目标转换为紧凑的控制导向表示，以便执行策略。在模拟港口环境中的实验表明，SGNav在三个代表性目标到达任务中的成功率分别为$97.0 ext{±}1.2 ext{%}$、$92.0 ext{±}1.5 ext{%}$和$90.0 ext{±}1.8 ext{%}$，语义目标准确率超过$97 ext{%}$，错误目标率低于$3 ext{%}$。SGNav在保留的港口布局中也保持了$97.7$--$98.7 ext{%}$的成功率。在任务3的消融研究中，去除港口感知过滤或语义一致性分别将成功率降低至$40.4 ext{±}2.6 ext{%}$和$50.4 ext{±}3.1 ext{%}$。这些发现表明，语义基础、港口感知过滤和语义验证对于可靠的基于语言的ASV导航的重要性。这些结果表明，所提出的感知到控制框架可以支持ASV在复杂港口环境下的基于语言的目标接近机动。",
+  "arxiv_id": "2609.14558",
+  "arxiv_url": "https://arxiv.org/abs/2609.14558",
+  "authors": [
+    "Lin, Yuqing, Kim, Youngroung"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14558",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.040615+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14558",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "本文提出SGNav语言引导的语义目标导航框架，用于自主水面车辆在港口环境中根据自然语言描述识别并接近目标。系统结合船载RGB视觉、文本语义定位、港口先验候选过滤、CLIP语义验证和PPO闭环控制，实现从语言与感知输入到目标接近控制的处理流程。模拟实验显示，该方法在多类目标到达任务和未见布局中均取得较高成功率，并通过消融实验验证了港口感知过滤与语义一致性模块的作用。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "端到端驾驶",
+      "感知"
+    ]
+  },
+  "title": "Language-Grounded Semantic Target Navigation for Autonomous Surface Vehicles",
+  "title_zh": "基于语言的语义目标导航用于自主水面车辆",
+  "translation_url": "https://hjfy.top/arxiv/2609.14558"
+}

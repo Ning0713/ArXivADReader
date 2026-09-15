@@ -1,0 +1,48 @@
+{
+  "abstract": "Unsupervised registration of large-scale LiDAR point clouds remains challenging due to the geometric ambiguity inherent in outdoor scenes, which degrades pseudo-label quality and leads to suboptimal convergence, particularly for sparse, low-resolution scans such as those from nuScenes. We reveal that registration models intrinsically encode semantic awareness that strongly correlates with registration accuracy, albeit without explicit semantic supervision. However, this native awareness is fragile: noisy supervision arising from geometric ambiguity in unsupervised settings rapidly erodes the learned semantic structure, causing performance collapse. To this end, we propose CAESAR, a teacher-student framework guided by an off-the-shelf 3D segmentation model exclusively during training. We observe that potential inlier matches are often buried just beneath a few spurious neighbors in the noisy feature space, motivating Dual-Cue Guided Re-Matching to recover them through reselection rather than simply rejecting. Building on this, a train-only Semantic-Geometric Label Mining performs lightweight, batch-specific teacher refinement and mines reliable pseudo-labels under semantic guidance. We further introduce Semantic Predictive Distillation to consolidate the student's semantic awareness in the feature space. Extensive experiments on KITTI and nuScenes demonstrate state-of-the-art performance, with pronounced gains on the challenging nuScenes benchmark. Crucially, CAESAR incurs zero inference overhead and requires no semantic annotations on the registration data. Code will be released.",
+  "abstract_zh": "大规模LiDAR点云的无监督配准仍然面临挑战，因为户外场景固有的几何模糊性会降低伪标签质量，并导致次优收敛，尤其是在稀疏、低分辨率的扫描（如nuScenes数据集）中。我们揭示了配准模型本质上编码了与配准精度强相关的语义意识，尽管没有显式的语义监督。然而，这种内在的意识是脆弱的：在无监督环境中，由于几何模糊性产生的噪声监督迅速侵蚀了学习到的语义结构，导致性能崩溃。为此，我们提出了CAESAR，一个在训练期间仅由现成的3D分割模型指导的师生框架。我们观察到，潜在的内点匹配通常被埋藏在噪声特征空间中几个虚假邻居之下，这激励了双线索引导的重新匹配，通过重新选择而不是简单拒绝来恢复它们。在此基础上，训练专用的语义-几何标签挖掘执行轻量级的批次特定教师精炼，并在语义指导下挖掘可靠的伪标签。我们进一步引入语义预测蒸馏，以巩固学生在特征空间中的语义意识。在KITTI和nuScenes上的大量实验表明了最先进的性能，在具有挑战性的nuScenes基准上取得了显著提升。重要的是，CAESAR在推理时没有额外开销，并且不需要对配准数据进行语义注释。代码将会发布。",
+  "arxiv_id": "2609.15228",
+  "arxiv_url": "https://arxiv.org/abs/2609.15228",
+  "authors": [
+    "Xiong, Kezheng, Xu, Shiyun, Ao, Sheng, Shen, Siqi, Wang, Cheng, Wen, Chenglu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-15228",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.240760+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.15228",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Unsupervised Point Cloud Registration via Training-Time Semantic Guidance",
+  "title_zh": "基于训练时语义指导的无监督点云配准",
+  "translation_url": "https://hjfy.top/arxiv/2609.15228"
+}

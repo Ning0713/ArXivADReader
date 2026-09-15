@@ -1,0 +1,49 @@
+{
+  "abstract": "Joint motion forecasts pair each autonomous-vehicle (AV) future with surrounding traffic, but actor-level metrics do not show whether that structure matters to a planner. We study this question with a marginal-preserving product control that removes AV-traffic pairing among the learned modes while retaining the fixed constant-velocity pair and holding trajectories, actor-level marginals before planner conditioning, candidates, the cost terms and weights, and fallback fixed. The intervention also changes candidate-conditioned concentration. Across twelve runs on 1,400 held-out Argoverse 2 scenarios, the intervention changes 3.0% of route-level offline selections at $\\tau=4$ m. Control-minus-joint recorded-trajectory regret is $-0.026$ and $-0.118$ at the two training sizes; crossed and seed-$t$ intervals span zero. At $\\tau=1$ m, relative costs change in 87.9% of route evaluations and route-level offline selections in 8.1%. Before concentration matching, descriptive outcome estimates favor the control. Most of this gap disappears along an approximate concentration-matching path; the remaining contrasts are $+0.112$ and $-0.047$, and both crossed intervals span zero. Actor-level forecast metrics remain identical. Pairing-strength and temperature sweeps show that the decision contrast grows with pairing removal and sharper conditioning. The intervention changes planner decisions even though actor-level metrics remain unchanged. The matching analysis, however, cannot separate any recorded-outcome effect of learned-mode AV-traffic pairing from the accompanying change in conditioned concentration.",
+  "abstract_zh": "联合运动预测将每个自动驾驶车辆（AV）的未来与周围交通配对，但参与者级别的指标并未显示这种结构对规划者的重要性。我们通过一种边际保持的产品控制来研究这个问题，该控制在保留固定的恒定速度配对和保持轨迹、规划者条件之前的参与者级别边际、候选者、成本项和权重以及后备固定的同时，去除了学习模式中的 AV-交通配对。该干预还改变了候选者条件下的集中度。在对 1,400 个保留的 Argoverse 2 场景进行的十二次实验中，该干预在 $ au=4$ m 时改变了 3.0% 的路线级离线选择。控制减去联合记录轨迹的遗憾为 $-0.026$ 和 $-0.118$，在两个训练规模下；交叉和种子-$t$ 区间跨越零。在 $ au=1$ m 时，相对成本在 87.9% 的路线评估中发生变化，路线级离线选择中变化为 8.1%。在集中度匹配之前，描述性结果估计更倾向于控制。沿着近似的集中度匹配路径，大部分差距消失；剩余的对比为 $+0.112$ 和 $-0.047$，且两个交叉区间均跨越零。参与者级别的预测指标保持不变。配对强度和温度的变化显示，随着配对的去除和更严格的条件，决策对比增强。尽管参与者级别的指标保持不变，该干预仍改变了规划者的决策。然而，匹配分析无法将学习模式的 AV-交通配对的任何记录结果效应与伴随的条件集中度变化分开。",
+  "arxiv_id": "2609.14997",
+  "arxiv_url": "https://arxiv.org/abs/2609.14997",
+  "authors": [
+    "Wang, Jingyu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14997",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.057389+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14997",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "argoverse",
+      "autonomous",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 78
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "From Learned-Mode AV-Traffic Pairing to Planner Decisions: A Marginal-Preserving Study on Argoverse 2",
+  "title_zh": "从学习模式的自动驾驶车辆与交通配对到规划者决策：对 Argoverse 2 的边际保持研究",
+  "translation_url": "https://hjfy.top/arxiv/2609.14997"
+}

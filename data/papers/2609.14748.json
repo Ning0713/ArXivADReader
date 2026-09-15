@@ -1,0 +1,51 @@
+{
+  "abstract": "Road tunnels remove satellite visibility where connected and automated vehicles still require continuous, attributable, and integrity-bounded positioning. This Point of View argues that tunnel localization should be treated as infrastructure-assisted cross-modal track continuity, not as extrapolation from the last trusted satellite fix. A trusted portal satellite solution provides the global anchor, distributed acoustic sensing (DAS) continuous motion evidence, cameras sparse identity and lane anchors, onboard sensing short-term dynamics, and edge computing association, fusion, integrity monitoring, and guarded reacquisition. Ground truth is reserved for offline calibration and validation. The article develops a falsifiable research and deployment agenda for progressing from synchronized multimodal evidence to validated, integrity-aware tunnel positioning continuity.",
+  "abstract_zh": "道路隧道消除了卫星可见性，而连接和自动化车辆仍然需要持续、可归因且具有完整性的定位。本文观点认为，隧道定位应被视为基础设施辅助的跨模态轨迹连续性，而不是从最后一个可信卫星定位的外推。可信的门户卫星解决方案提供全球锚定，分布式声学传感（DAS）提供连续运动证据，摄像头提供稀疏身份和车道锚定，车载传感器提供短期动态，边缘计算则负责关联、融合、完整性监测和受保护的重新获取。地面真相保留用于离线校准和验证。本文制定了一个可证伪的研究和部署议程，以推动从同步的多模态证据到经过验证的、具有完整性意识的隧道定位连续性的进展。",
+  "arxiv_id": "2609.14748",
+  "arxiv_url": "https://arxiv.org/abs/2609.14748",
+  "authors": [
+    "Saoud, Lyes Saad, Rakha, Hesham A., Jaber, Mona, Ayyash, Moussa"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-14748",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.047100+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.14748",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated vehicles",
+      "road",
+      "lane",
+      "车辆",
+      "道路",
+      "车道",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "多传感器融合",
+      "预测/规划"
+    ]
+  },
+  "title": "Beyond Dead Reckoning: A Point of View on Camera--DAS--GNSS Continuity in Road Tunnels",
+  "title_zh": "超越死算：关于道路隧道中相机--DAS--GNSS 连续性的观点",
+  "translation_url": "https://hjfy.top/arxiv/2609.14748"
+}

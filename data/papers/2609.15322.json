@@ -1,0 +1,45 @@
+{
+  "abstract": "Pretrained driving vision-language models (VLMs) integrate visual, route, language, and driving context into rich driving priors, yet their representation objectives remain separated from continuous driving planning. Existing methods typically begin trajectory generation only after the VLM has formed a final condition, leaving depth-wise condition computation outside the stepwise formation of trajectory state. We introduce DiffAdapterVLA, which realizes Planning in the Backbone: it injects explicit trajectory tokens into selected VLM late layers, bringing trajectory state into backbone forward computation, where it co-evolves with driving conditions at different depths. Lightweight layer-wise DiffAdapters organize this computation into recursive trajectory refinement, while asymmetric joint attention preserves directed guidance from the condition stream to trajectory planning. By placing planning within existing backbone computation rather than relying on an independent trajectory planner, DiffAdapterVLA adapts only lightweight trajectory modules to turn existing driving priors into efficient continuous planning capability. NAVSIM results show that it achieves high-quality closed-loop planning with low end-to-end latency using few trainable parameters, and demonstrate that jointly evolving trajectory state and depth-wise driving conditions in VLM late-layer computation effectively realizes continuous trajectory planning.",
+  "abstract_zh": "预训练的驾驶视觉语言模型（VLMs）将视觉、路线、语言和驾驶上下文整合为丰富的驾驶先验，但它们的表征目标与连续驾驶规划仍然分离。现有方法通常在VLM形成最终条件后才开始轨迹生成，导致深度条件计算在轨迹状态的逐步形成之外。我们提出了DiffAdapterVLA，它实现了骨干网络中的规划：将显式轨迹标记注入选定的VLM后期层，将轨迹状态引入骨干前向计算中，在不同深度与驾驶条件共同演化。轻量级的逐层DiffAdapters将这一计算组织为递归轨迹精炼，而不对称的联合注意力则保留了从条件流到轨迹规划的定向引导。通过将规划置于现有的骨干计算中，而不是依赖独立的轨迹规划器，DiffAdapterVLA仅适配轻量级轨迹模块，将现有驾驶先验转化为高效的连续规划能力。NAVSIM结果表明，它在使用少量可训练参数的情况下，实现了高质量的闭环规划，并且具有低端到端延迟，证明了在VLM后期层计算中共同演化轨迹状态和深度驾驶条件有效实现了连续轨迹规划。",
+  "arxiv_id": "2609.15322",
+  "arxiv_url": "https://arxiv.org/abs/2609.15322",
+  "authors": [
+    "Lu, Changxin, Meng, Xiaoliang, Wu, Yu, Huang, Rui, Li, Honglin, Chen, Tao, Zhou, Kaixuan, Shao, Yadong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-15#paper-2609-15322",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-15T09:43:58.070531+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.15322",
+  "published_at": "",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-15"
+  ],
+  "source": {
+    "axi": "https://paper.axi404.top/daily/2026-09-15"
+  },
+  "summary_zh": "本文提出DiffAdapterVLA，一种将连续轨迹规划直接嵌入驾驶视觉语言模型骨干网络的方法。该方法在VLM后期层注入轨迹标记，通过逐层DiffAdapter和递归精炼机制，使轨迹状态与多层驾驶条件共同演化，并利用不对称联合注意力实现条件信息对规划的定向引导。相比在VLM输出最终条件后再使用独立规划器的方法，DiffAdapterVLA能够以较少参数完成端到端连续规划。NAVSIM结果显示，该方法兼具较高闭环规划质量和较低推理延迟。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Planning in the Backbone: DiffAdapterVLA for Native Continuous Trajectory Generation with Driving VLMs",
+  "title_zh": "骨干网络中的规划：DiffAdapterVLA用于具有驾驶视觉语言模型的原生连续轨迹生成",
+  "translation_url": "https://hjfy.top/arxiv/2609.15322"
+}
