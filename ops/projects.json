@@ -1,0 +1,15 @@
+{
+  "default_project": "ad",
+  "projects": {
+    "ad": {
+      "repository": "Ning0713/ArXivADReader",
+      "workflow": "update-and-deploy.yml",
+      "site_url": "https://adpaper.ning0713.top"
+    },
+    "ac": {
+      "repository": "Ning0713/ArXivACReader",
+      "workflow": "update-and-deploy.yml",
+      "site_url": "https://acpaper.ning0713.top"
+    }
+  }
+}

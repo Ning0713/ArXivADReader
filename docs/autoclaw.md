@@ -1,13 +1,15 @@
 # AutoClaw 与 QQ 远程操作
 
-AutoClaw 在本项目中只承担“远程操作入口”的角色。论文抓取、筛选、数据提交和 GitHub Pages 部署均由仓库中的 GitHub Actions 完成，AutoClaw 不应直接编辑 `data/`、运行筛选代码或接触 LLM API Key。
+AutoClaw 在本项目中只承担“远程操作入口”的角色。论文抓取、筛选、数据提交和 GitHub Pages 部署均由仓库中的 GitHub Actions 完成，AutoClaw 不应直接编辑 `data/`、运行筛选代码或接触 LLM API Key。一个入口可管理自动驾驶和情感计算两个独立仓库。
 
 ```text
 QQ 私聊命令
     ↓
 AutoClaw 严格解析白名单命令和日期
     ↓
-<repo-root>/ops/autoclaw.ps1
+<repo-root>/ops/qq_command.py（严格解析）
+    ↓
+<repo-root>/ops/autoclaw.ps1（固定参数）
     ↓
 GitHub Actions: Update And Deploy Papers
     ↓
@@ -48,7 +50,7 @@ git clone https://github.com/Ning0713/ArXivADReader.git
 Set-Location ArXivADReader
 ```
 
-公开使用者应将脚本中的 `$repo`、`$siteUrl` 修改为自己的仓库和域名。个人路径、QQ 账号、Bot Token 和聊天记录不能提交到本仓库。
+项目映射统一保存在 `ops/projects.json`。公开使用者应把其中的仓库和域名替换为自己的值。个人路径、QQ 账号、Bot Token 和聊天记录不能提交到本仓库。
 
 ### 2. 安装并登录 GitHub CLI
 
@@ -56,6 +58,7 @@ Set-Location ArXivADReader
 gh auth login -h github.com
 gh api user --jq .login
 gh workflow view update-and-deploy.yml --repo Ning0713/ArXivADReader
+gh workflow view update-and-deploy.yml --repo Ning0713/ArXivACReader
 ```
 
 第二条命令必须返回正确的 GitHub 用户名。`gh auth status` 只能显示本地凭据记录；如果实际 API 返回 `401 Unauthorized`，应重新执行 `gh auth logout -h github.com` 和 `gh auth login -h github.com`。
@@ -71,14 +74,16 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
   -File "<repo-root>\ops\autoclaw.ps1" help
 
 powershell.exe -NoProfile -ExecutionPolicy Bypass `
-  -File "<repo-root>\ops\autoclaw.ps1" status
+  -File "<repo-root>\ops\autoclaw.ps1" status -Project all
 ```
 
 脚本本身使用纯 ASCII 英文参数，以兼容 Windows PowerShell 5.1。中文 QQ 指令由 AutoClaw 映射为固定英文参数：
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass `
-  -File "<repo-root>\ops\autoclaw.ps1" preview 2026-08-11
+  -File "<repo-root>\ops\autoclaw.ps1" preview 2026-08-11 -Project ac
+
+python "<repo-root>\ops\qq_command.py" --plan --message "情感计算 预览 2026-08-11"
 ```
 
 只有上述命令在本机正常后，才应接入 AutoClaw。
@@ -88,43 +93,45 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
 在负责 QQ 私聊的 Agent 指令中加入以下规则，并将 `<repo-root>` 替换为实际路径：
 
 ```text
-你是 AutoDrive Papers 的远程操作入口。
+你是 AutoDrive Papers 与 Affective Computing Papers 的远程操作入口。
 
 只接受以下完整命令：
-- 更新论文
-- 更新论文 YYYY-MM-DD
-- 补跑 YYYY-MM-DD
-- 预览 YYYY-MM-DD
-- 预览论文 YYYY-MM-DD
-- 状态
-- 帮助
+- [自动驾驶|情感计算|全部] 更新论文 [YYYY-MM-DD|today]
+- [自动驾驶|情感计算|全部] 补跑 YYYY-MM-DD|today
+- [自动驾驶|情感计算|全部] 预览 YYYY-MM-DD|today
+- [自动驾驶|情感计算|全部] 状态
+- [自动驾驶|情感计算|全部] 帮助
+
+方括号中的项目前缀可省略；省略时默认自动驾驶。`全部` 会依次操作两个项目。
 
 日期必须完整匹配 YYYY-MM-DD，并且必须是有效日期。
 任何额外文字、路径、管道符、重定向、分号、引号或其他 shell 内容都必须拒绝。
 
-将中文命令映射为以下固定英文参数：
+将项目映射为固定参数：自动驾驶 -> ad，情感计算 -> ac，全部 -> all。
+将动作映射为以下固定英文参数：
 - 更新论文 -> update
 - 补跑 -> retry
 - 预览、预览论文 -> preview
 - 状态 -> status
 - 帮助 -> help
 
-只允许调用：
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<repo-root>\ops\autoclaw.ps1" <固定英文参数> [日期]
+只允许调用仓库中的白名单解析器，或在完整匹配后调用固定参数：
+python "<repo-root>\ops\qq_command.py" --message <作为单个 argv 值传入的完整消息>
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<repo-root>\ops\autoclaw.ps1" <固定动作> [日期] -Project <ad|ac|all>
 
 不要直接修改仓库文件、data 目录、GitHub Secrets、AutoClaw 配置或系统计划任务。
-不要把原始 QQ 文本直接拼接进 shell。
+不要把原始 QQ 文本用字符串拼接、引号包裹或模板插值的方式放进 shell；调用解析器时必须由进程 API 作为单个参数传入。无法保证这一点时，先在 Agent 层完整匹配，再只调用第二行的固定英文参数。
 执行后把脚本的简要结果返回当前 QQ 私聊。
 ```
 
 推荐在 Agent 层使用完整匹配，而不是“包含关键词”：
 
 ```text
-^更新论文(?:\s+(?:today|\d{4}-\d{2}-\d{2}))?$
-^补跑\s+(?:today|\d{4}-\d{2}-\d{2})$
-^(?:预览|预览论文)\s+(?:today|\d{4}-\d{2}-\d{2})$
-^状态$
-^帮助$
+^(?:(?:自动驾驶|情感计算|全部|ad|ac)\s+)?(?:更新论文|更新)(?:\s+(?:today|\d{4}-\d{2}-\d{2}))?$
+^(?:(?:自动驾驶|情感计算|全部|ad|ac)\s+)?补跑\s+(?:today|\d{4}-\d{2}-\d{2})$
+^(?:(?:自动驾驶|情感计算|全部|ad|ac)\s+)?(?:预览|预览论文)\s+(?:today|\d{4}-\d{2}-\d{2})$
+^(?:(?:自动驾驶|情感计算|全部|ad|ac)\s+)?状态$
+^(?:(?:自动驾驶|情感计算|全部|ad|ac)\s+)?帮助$
 ```
 
 正则通过后仍应由 `ops/autoclaw.ps1` 再次验证日期。两层验证用于防止任意 QQ 文本进入 PowerShell。
@@ -133,12 +140,12 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<repo-root>\ops\autocla
 
 | QQ 命令 | 脚本参数 | 行为 | 修改数据 | 部署网站 |
 | --- | --- | --- | --- | --- |
-| `更新论文` | `update` | 更新今天；日期已存在时返回 unchanged | 可能 | 可能 |
-| `更新论文 2026-08-12` | `update 2026-08-12` | 更新指定日期，不覆盖已存在日期 | 可能 | 可能 |
-| `补跑 2026-08-10` | `retry 2026-08-10` | 使用 `force=true` 重新抓取并覆盖该日清单 | 是 | 是 |
-| `预览 2026-08-12` | `preview 2026-08-12` | 完整抓取、规则筛选和可选 LLM 复核 | 否 | 否 |
-| `状态` | `status` | 返回最近 5 次工作流状态并检查站点 HTTP | 否 | 否 |
-| `帮助` | `help` | 返回白名单命令 | 否 | 否 |
+| `更新论文` | `update today -Project ad` | 默认更新自动驾驶今天的数据 | 可能 | 可能 |
+| `情感计算 更新论文 2026-09-16` | `update 2026-09-16 -Project ac` | 更新情感计算指定日期，不覆盖已存在日期 | 可能 | 可能 |
+| `自动驾驶 补跑 2026-08-10` | `retry 2026-08-10 -Project ad` | 强制重新抓取并覆盖自动驾驶该日清单 | 是 | 是 |
+| `情感计算 预览 2026-09-16` | `preview 2026-09-16 -Project ac` | 完整抓取和筛选，但不提交或部署 | 否 | 否 |
+| `全部 状态` | `status -Project all` | 返回两个项目最近 5 次运行和站点 HTTP | 否 | 否 |
+| `帮助` | `help` | 返回白名单参数，默认项目仍为自动驾驶 | 否 | 否 |
 
 `预览` 不提交数据，也不会创建 GitHub Pages 部署记录，但仍会访问 Axi、arXiv 和已配置的 LLM，因此可能消耗 API 配额。脚本输出 `dispatched` 只表示 GitHub 已接受任务，不表示工作流已经完成；随后发送“状态”查看结果。
 

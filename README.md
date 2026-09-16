@@ -70,15 +70,17 @@ python -m adpaper migrate --legacy-root "C:\path\to\legacy-workspace"
 
 ## AutoClaw/QQ
 
-AutoClaw 只应调用仓库里的 `ops/autoclaw.ps1`，不直接修改数据或执行任意 shell：
+AutoClaw 只应调用仓库里的固定白名单入口，不直接修改数据或执行任意 shell。当前入口同时管理自动驾驶（`ad`）和情感计算（`ac`）两个站点：
 
 ```text
 更新论文
-补跑 2026-08-10
-预览 2026-08-10
-状态
+自动驾驶 补跑 2026-08-10
+情感计算 预览 2026-08-10
+全部 状态
 帮助
 ```
+
+不写项目前缀时默认操作自动驾驶站点。`ops/qq_command.py` 负责完整匹配中文命令，`ops/projects.json` 集中保存项目、仓库、工作流和站点映射，`ops/autoclaw.ps1` 只把固定参数交给 GitHub CLI。
 
 GitHub Actions 已在工作日北京时间 13:00 自动更新，不需要重复创建 AutoClaw 论文 cron。AutoClaw 只用于人工远程更新、补跑、无写入预览和状态查询。首次配置、QQ 白名单、操作流程、取消 cron 和故障排查见 [AutoClaw 与 QQ 远程操作](docs/autoclaw.md)。
 
