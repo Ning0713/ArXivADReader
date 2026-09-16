@@ -90,7 +90,7 @@ python "<repo-root>\ops\qq_command.py" --plan --message "情感计算 预览 202
 
 ## AutoClaw Agent 配置
 
-在负责 QQ 私聊的 Agent 指令中加入以下规则，并将 `<repo-root>` 替换为实际路径：
+在负责 QQ 私聊的 Agent 指令中加入以下规则，并将 `<repo-root>` 替换为实际路径。可直接复制完整版本：[AutoClaw Agent 指令](autoclaw-agent-prompt.txt)。当前本机统一入口的实际路径是 `F:\All 资源集合\Coding\Engine\ArXivADReader`。
 
 ```text
 你是 AutoDrive Papers 与 Affective Computing Papers 的远程操作入口。
@@ -123,6 +123,12 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<repo-root>\ops\autocla
 不要把原始 QQ 文本用字符串拼接、引号包裹或模板插值的方式放进 shell；调用解析器时必须由进程 API 作为单个参数传入。无法保证这一点时，先在 Agent 层完整匹配，再只调用第二行的固定英文参数。
 执行后把脚本的简要结果返回当前 QQ 私聊。
 ```
+
+### 应用到当前 AutoClaw
+
+仓库文档不会自动修改 C 盘 AutoClaw 的受管提示词。请在 AutoClaw 的 Agent 配置面板中，将 [autoclaw-agent-prompt.txt](autoclaw-agent-prompt.txt) 的全文加入负责 QQ 私聊的 Agent 指令，然后重新加载该 Agent。不要直接覆盖 `AGENTS.md`、`TOOLS.md` 或 `MEMORY.md`；这些文件由 AutoClaw 的受管记忆/审批流程维护。
+
+应用后先在 QQ 私聊发送 `帮助`，再发送 `情感计算 状态` 验证项目路由。若 Agent 仍按旧命令执行，检查它是否还加载了旧的“只支持 AutoDrive Papers”提示词，并删除旧规则或将新规则置于其后作为明确优先级规则。
 
 推荐在 Agent 层使用完整匹配，而不是“包含关键词”：
 
