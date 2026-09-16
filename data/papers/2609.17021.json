@@ -1,0 +1,54 @@
+{
+  "abstract": "Autonomous wheel-loader control requires joint reasoning over task semantics, egocentric vision, proprioception, and 3D scene geometry. We present sensVLA, a Vision-Language-Action (VLA) architecture that combines a Qwen3-2B Vision-Language Model (VLM) with a fully trainable transformer action expert trained by flow-matching velocity regression. sensVLA routes Bird's-Eye-View (BEV) features, extracted from fused front and rear lidar, directly to the action expert through a dedicated cross-attention pathway, while the VLM consumes front and rear RGB views to provide task-conditioned semantic context. This design decouples spatial grounding from linguistic reasoning while preserving interaction between both streams at decision time. The expert predicts six action dimensions: longitudinal velocity, steering, body-frame displacement, arm rate, and bucket rate. On a real-world dataset from a wheel loader, sensVLA reaches aggregate per-step parity with a strong camera-only baseline and reduces longitudinal velocity RMSE by 28% and displacement error by 9% on loading centric scenarios. It also degrades 29% less when the camera stream is corrupted or removed, evidencing that explicit spatial grounding improves accuracy and fault-tolerance for heavy equipment autonomy.",
+  "abstract_zh": "自主轮式装载机的控制需要对任务语义、自我中心视觉、本体感觉和三维场景几何进行联合推理。我们提出了sensVLA，这是一种视觉-语言-动作（VLA）架构，它将Qwen3-2B视觉-语言模型（VLM）与通过流匹配速度回归训练的完全可训练的变换器动作专家相结合。sensVLA通过专用的跨注意力通道将从融合的前后激光雷达提取的鸟瞰图（BEV）特征直接传递给动作专家，同时VLM利用前后RGB视图提供任务条件的语义上下文。该设计将空间基础与语言推理解耦，同时在决策时保留两者之间的交互。专家预测六个动作维度：纵向速度、转向、车身框架位移、臂速和铲斗速率。在来自轮式装载机的真实世界数据集中，sensVLA在每步聚合上达到了强大的仅摄像头基线的平衡，并在以装载为中心的场景中将纵向速度均方根误差（RMSE）降低了28%，位移误差降低了9%。当摄像头流被损坏或移除时，它的性能下降幅度也减少了29%，这证明了显式空间基础提高了重型设备自主性的准确性和容错能力。",
+  "arxiv_id": "2609.17021",
+  "arxiv_url": "https://arxiv.org/abs/2609.17021v1",
+  "authors": [
+    "Gopi Krishna Erabati",
+    "Bjarne Johannsen",
+    "Angus Stewart",
+    "Vardeep Singh Sandhu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-17021",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.225814+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17021v1",
+  "published_at": "2026-09-15T11:29:50Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "bev",
+      "bird's-eye",
+      "lidar",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 21
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17021v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "提出面向自主轮式装载机的 sensVLA，将多视角 RGB 驱动的视觉语言模型与前后激光雷达融合生成的 BEV 几何特征结合，由动作专家直接预测车辆运动及装载机构控制量。该方法通过分离语义推理与空间基础建模，提高了装载场景中的控制精度，并增强了相机失效情况下的鲁棒性。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "端到端驾驶",
+      "多传感器融合"
+    ]
+  },
+  "title": "sensVLA: Spatially-Grounded Vision-Language-Action Model for Autonomous Wheel Loader",
+  "title_zh": "sensVLA：用于自主轮式装载机的空间基础视觉-语言-动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.17021"
+}

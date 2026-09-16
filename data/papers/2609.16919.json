@@ -1,0 +1,66 @@
+{
+  "abstract": "This paper introduces NeuroSymbEAD, a large-scale neuro-symbolic caption dataset featuring an ego-centric knowledge graph (KG) of static and dynamic objects annotated with classes, categories, heading directions, orientations, and distances from the ego-vehicle. These annotations are used on the KITTI-360 dataset to generate multilevel textual captions representing a lightweight version of an ego-centric scene map. Outdoor scene-map reconstruction, visual recognition, and object grounding establish baselines for driving common sense and traffic/scene understanding. For these purposes, natural language-based grounded captioning of objects and their complex relationships is a widely adopted contextual representation for indoor scene tasks. Neuro-symbolic representations have proven effective in handling structured information for various computer vision and language applications. Our data annotation pipeline allows the generation of varied map segments, populating simulated or real objects within the bounding boxes predicted by any 3D object detection network, and building hierarchical text captions. We benchmark our neuro-symbolic and ontological caption generation using pre-trained grounding and learned auto-regressive captioning networks. By converting 3D driving scenes into structured ego-centric language, NeuroSymbEAD provides a benchmark for vision-language and foundation models for traffic-scene explanation, 3D reasoning, and interpretable autonomous-driving perception.",
+  "abstract_zh": "本文介绍了NeuroSymbEAD，一个大规模的神经符号字幕数据集，包含一个以自我为中心的知识图谱（KG），该图谱对静态和动态物体进行了注释，包括类别、类型、朝向、方向和与自我车辆的距离。这些注释在KITTI-360数据集上用于生成多层次的文本字幕，代表自我中心场景地图的轻量版本。户外场景地图重建、视觉识别和物体定位为驾驶常识和交通/场景理解建立了基准。为此，基于自然语言的物体及其复杂关系的有根据字幕生成是室内场景任务中广泛采用的上下文表示。神经符号表示在处理各种计算机视觉和语言应用中的结构化信息方面已被证明是有效的。我们的数据注释管道允许生成多样的地图片段，在任何3D物体检测网络预测的边界框内填充模拟或真实物体，并构建层次文本字幕。我们使用预训练的定位和学习的自回归字幕生成网络对我们的神经符号和本体字幕生成进行基准测试。通过将3D驾驶场景转换为结构化的自我中心语言，NeuroSymbEAD为交通场景解释、3D推理和可解释的自主驾驶感知提供了基准。",
+  "arxiv_id": "2609.16919",
+  "arxiv_url": "https://arxiv.org/abs/2609.16919v1",
+  "authors": [
+    "Muhammad Ahmed Ullah Khan",
+    "Mohammed Elamine",
+    "Sheikh Talha Uddin",
+    "Didier Stricker",
+    "Sk Aziz Ali",
+    "Muhammad Zeshan Afzal"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16919",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.222786+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16919v1",
+  "published_at": "2026-09-15T09:52:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "ego-vehicle",
+      "kitti",
+      "kitti-360",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "3d object detection",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16919v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "NeuroSymbEAD: A Large Scale Neuro-Symbolic Caption Dataset for Omni-Directional Embodied Autonomous Driving",
+  "title_zh": "NeuroSymbEAD：一个用于全向具身自主驾驶的大规模神经符号字幕数据集",
+  "translation_url": "https://hjfy.top/arxiv/2609.16919"
+}

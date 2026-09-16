@@ -1,0 +1,53 @@
+{
+  "abstract": "Neuromorphic vision systems operate under strict constraints on bandwidth, memory, and energy, particularly at the edge, motivating early mechanisms for data reduction and selective processing. In this work, we investigate a multi-scale training-free, saliency-based, bottom-up visual attention model that operates directly on low-resolution event-based input and selects Regions of Interest (ROI) from the visual scene. The model is evaluated across multiple downscaling factors applied to the incoming event stream, with input resolutions reduced by up to 256x relative to full resolution. Performance is assessed on the Prophesee Automotive dataset, the largest publicly available event-based dataset, demonstrating robust ROI selection across different scales on a real-world use-case. The proposed approach is capable of detecting ROIs belonging to multiple object classes, including various vehicle types, pedestrians, traffic lights, and traffic signs, with accuracy up to 70.8%, while operating at millisecond temporal resolution, 16x finer than the temporal resolution provided by the dataset ground truth. These results highlight the potential of combining early event downscaling with saliency-based attention as an effective front-end for efficient edge neuromorphic vision systems.",
+  "abstract_zh": "神经形态视觉系统在带宽、内存和能量方面面临严格的限制，尤其是在边缘计算环境中，这促使了数据减少和选择性处理的早期机制。在本研究中，我们探讨了一种多尺度无训练、基于显著性的自下而上的视觉注意力模型，该模型直接在低分辨率的基于事件的输入上运行，并从视觉场景中选择兴趣区域（ROI）。该模型在对输入事件流应用多个下采样因子的情况下进行评估，输入分辨率相对于全分辨率降低了最多256倍。性能评估基于Prophesee汽车数据集，这是最大的公开可用的基于事件的数据集，展示了在真实世界应用中不同尺度下的稳健ROI选择。所提出的方法能够检测属于多种物体类别的ROI，包括各种车辆类型、行人、交通信号灯和交通标志，准确率高达70.8%，同时以毫秒级的时间分辨率运行，比数据集的真实值提供的时间分辨率细致16倍。这些结果突显了将早期事件下采样与基于显著性的注意力相结合的潜力，作为高效边缘神经形态视觉系统的有效前端。",
+  "arxiv_id": "2609.17134",
+  "arxiv_url": "https://arxiv.org/abs/2609.17134v1",
+  "authors": [
+    "Luca Peres",
+    "Giulia D'Angelo",
+    "Chiara Bartolozzi",
+    "Oliver Rhodes"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-17134",
+  "categories": [
+    "cs.CV",
+    "cs.NE"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.230063+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17134v1",
+  "published_at": "2026-09-15T13:02:14Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "automotive",
+      "traffic",
+      "车辆",
+      "交通",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17134v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "本文面向汽车道路场景中的高效事件视觉感知，提出一种无需训练的多尺度显著性注意力方法。该方法在大幅降低事件流空间分辨率的情况下快速筛选车辆、行人、交通灯和交通标志等目标的兴趣区域，为资源受限的自动驾驶边缘感知系统提供低延迟前端。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Event-based Selective Attention for Multi-resolution Fast Region of Interest (ROI) Detection",
+  "title_zh": "基于事件的选择性注意力用于多分辨率快速兴趣区域（ROI）检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.17134"
+}

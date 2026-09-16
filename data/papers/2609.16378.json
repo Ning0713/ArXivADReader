@@ -1,0 +1,58 @@
+{
+  "abstract": "Digital twins provide a scalable and cost-effective complement to real-world testing for validating autonomous-driving and advanced driver-assistance system (ADAS) sensor pipelines. However, quantifying their fidelity remains challenging, particularly for 3D LiDAR point clouds, where conventional geometric metrics may overlook important structural discrepancies. We present a graph-based framework for evaluating the structural fidelity of simulated LiDAR point clouds against real-world scans. While scan-level metrics such as Chamfer distance capture point-wise geometric similarity, they do not explicitly represent connectivity, topology, or object-level organization. Our framework constructs graphs from real and simulated point clouds, applies Louvain community detection to identify spatially coherent subgraphs, and matches corresponding communities using centroid proximity. For each matched pair, we compute $r_\\lambda$, a bounded graph-spectral metric motivated by Weyl's inequality, and compare it with density-aware Chamfer distance (CDC) as a geometric baseline. Controlled perturbation experiments demonstrate that $r_\\lambda$ is invariant to rigid transformations and robust to sensor noise while remaining sensitive to structural deformation. We evaluate the framework on 50 paired real and simulated LiDAR scans acquired using a Velodyne VLP-32C sensor and CARLA, respectively. The dataset contains more than 1,000 matched communities across four representative classes: vehicles, vegetation, trees, and building walls. The results show that geometric and structural measures capture complementary aspects of simulation fidelity, supporting graph-spectral analysis as an additional diagnostic layer for validating digital twins in ADAS and autonomous-driving applications.",
+  "abstract_zh": "数字双胞胎为验证自主驾驶和高级驾驶辅助系统（ADAS）传感器管道提供了一种可扩展且具有成本效益的补充，替代现实世界的测试。然而，量化其保真度仍然具有挑战性，特别是在3D LiDAR点云中，传统的几何度量可能忽视重要的结构差异。我们提出了一种基于图的框架，用于评估模拟LiDAR点云相对于现实世界扫描的结构保真度。尽管诸如Chamfer距离等扫描级度量捕捉了逐点的几何相似性，但它们并未明确表示连接性、拓扑或对象级组织。我们的框架从真实和模拟的点云构建图，应用Louvain社区检测以识别空间上连贯的子图，并通过质心接近度匹配相应的社区。对于每对匹配，我们计算$r_ heta$，这是一个受Weyl不等式启发的有界图谱度量，并将其与考虑密度的Chamfer距离（CDC）作为几何基线进行比较。控制扰动实验表明，$r_ heta$对刚性变换不变，对传感器噪声具有鲁棒性，同时对结构变形敏感。我们在使用Velodyne VLP-32C传感器和CARLA分别获取的50对真实和模拟LiDAR扫描上评估了该框架。该数据集包含超过1,000个匹配社区，涵盖四个代表性类别：车辆、植被、树木和建筑墙体。结果表明，几何和结构度量捕捉了仿真保真度的互补方面，支持图谱分析作为验证ADAS和自主驾驶应用中数字双胞胎的额外诊断层。",
+  "arxiv_id": "2609.16378",
+  "arxiv_url": "https://arxiv.org/abs/2609.16378v1",
+  "authors": [
+    "Ghazal Farhani",
+    "Taufiq Rahman"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16378",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.155005+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16378v1",
+  "published_at": "2026-09-14T21:41:08Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "lidar",
+      "点云",
+      "诊断"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "标题明确属于非道路驾驶领域",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16378v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "本文面向自动驾驶数字孪生验证，提出一种基于社区匹配和图谱度量的LiDAR点云仿真保真度诊断框架。该方法可补充Chamfer距离等几何指标，重点检测点云连通性、拓扑及目标级结构差异，并在真实传感器数据与CARLA仿真数据的配对实验中验证了其鲁棒性和结构形变敏感性。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "Geometry vs Structure: Graph-Based Diagnostics for LiDAR Point-Cloud Simulation Fidelity",
+  "title_zh": "几何与结构：基于图的LiDAR点云仿真保真度诊断",
+  "translation_url": "https://hjfy.top/arxiv/2609.16378"
+}

@@ -1,0 +1,47 @@
+{
+  "abstract": "Efficient perception is central to robotic systems operating under constrained computation, memory, and latency budgets. Knowledge transfer from larger pretrained models offers a practical route to stronger compact perception networks, but existing approaches commonly rely on fixed distillation objectives or manually designed interaction mechanisms. Building on Hereditary Knowledge Transfer (HKT), we propose LePoKet (Learnable Parameter Optimization for Knowledge Transfer), a structural transfer framework that embeds knowledge inheritance directly into the forward computation. LePoKet introduces a block-wise Extract-Transform-Mix interface whose interaction parameters are optimized jointly with the child network through a Learnable Genetic Attention (LGA) operator, without auxiliary distillation losses or temperature scaling. We first characterize the mechanism on CIFAR-10 and CIFAR-100 using ResNet parent-child pairs, obtaining relative error reductions of 24.57% and 25.1%, respectively, over standard child training. We then evaluate LePoKet for dense motion estimation by integrating it into a compact RAFT-based optical-flow model trained only on FlyingChairs and FlyingThings3D. LePoKet improves the compact RAFT baseline from 2.21 to 1.92 EPE on Sintel Clean, from 3.35 to 3.01 on Sintel Final, and from 7.51 to 6.39 on KITTI. A direct comparison with HKT further shows that LePoKet improves CIFAR-10 accuracy from 92.40% to 93.40% while achieving the best Sintel Final and KITTI errors among the evaluated compact transfer variants, with comparable performance on Sintel Clean. These results demonstrate that learnable structural transfer generalizes across recognition and motion perception tasks and provides a promising approach for efficient robotic vision.",
+  "abstract_zh": "高效的感知对于在计算、内存和延迟预算受限的机器人系统至关重要。通过从更大预训练模型中进行知识转移，为构建更强大的紧凑感知网络提供了一条实用的途径，但现有方法通常依赖于固定的蒸馏目标或手动设计的交互机制。在遗传知识转移（Hereditary Knowledge Transfer, HKT）的基础上，我们提出了LePoKet（可学习参数优化的知识转移），这是一种将知识继承直接嵌入前向计算的结构性转移框架。LePoKet引入了一种块级提取-转换-混合接口，其交互参数通过可学习的遗传注意力（Learnable Genetic Attention, LGA）操作符与子网络共同优化，无需辅助蒸馏损失或温度缩放。我们首先在CIFAR-10和CIFAR-100上使用ResNet父子对对该机制进行表征，分别获得相对于标准子训练的相对误差降低24.57%和25.1%。然后，我们通过将LePoKet集成到仅在FlyingChairs和FlyingThings3D上训练的紧凑RAFT基础光流模型中，评估其在密集运动估计中的表现。LePoKet将紧凑RAFT基线在Sintel Clean上的EPE从2.21提高到1.92，在Sintel Final上从3.35降低到3.01，在KITTI上从7.51降低到6.39。与HKT的直接比较进一步表明，LePoKet将CIFAR-10的准确率从92.40%提高到93.40%，同时在评估的紧凑转移变体中实现了最佳的Sintel Final和KITTI误差，并在Sintel Clean上表现相当。这些结果表明，可学习的结构转移在识别和运动感知任务中具有广泛的泛化能力，并为高效的机器人视觉提供了一种有前景的方法。",
+  "arxiv_id": "2609.16637",
+  "arxiv_url": "https://arxiv.org/abs/2609.16637v1",
+  "authors": [
+    "Yanick C. Tchenko",
+    "Felix Mohr",
+    "Hicham Hadj-Abdelkader",
+    "Hedi Tabia"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16637",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.201025+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16637v1",
+  "published_at": "2026-09-15T04:57:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "robotic"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16637v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "Can Knowledge Transfer Parameters Be Learned? LePoKet for Efficient Robotic Vision",
+  "title_zh": "知识转移参数可以被学习吗？LePoKet用于高效的机器人视觉",
+  "translation_url": "https://hjfy.top/arxiv/2609.16637"
+}

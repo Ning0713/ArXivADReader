@@ -1,0 +1,52 @@
+{
+  "abstract": "Reducing the number of cameras reduces the deployment cost but removes views that correct BEV responses stretched away from true pedestrian positions by projection and short score drops that can split tracks} in Bird's-Eye View (BEV) tracking. We introduce GRACE, a camera-efficient multi-view tracker with three components. Volumetric-Guided Fusion combines homography-based BEV features with features lifted through 3D space. Ray Conditioning exposes each camera's viewing direction to the fusion network. Its tracking component, BEV Track Recovery (BTR), uses low-confidence detections only to continue existing tracks. The same detections cannot start new tracks. With two WildTrack cameras, GRACE improves MOTA from 83.54 for TrackTacular, our baseline, to 91.07.",
+  "abstract_zh": "减少相机数量可以降低部署成本，但会移除那些通过投影修正从真实行人位置偏离的鸟瞰视图（BEV）响应的视角，以及可能导致轨迹分裂的短暂得分下降。我们提出了GRACE，一种高效的多视角跟踪器，包含三个组件。体积引导融合（Volumetric-Guided Fusion）将基于单应性的BEV特征与通过三维空间提升的特征相结合。光线条件化（Ray Conditioning）将每个相机的视角暴露给融合网络。其跟踪组件BEV轨迹恢复（BTR）仅使用低置信度检测来继续现有轨迹，而相同的检测不能启动新轨迹。在两个WildTrack相机的测试中，GRACE将我们的基线TrackTacular的MOTA从83.54提高到91.07。",
+  "arxiv_id": "2609.16872",
+  "arxiv_url": "https://arxiv.org/abs/2609.16872v1",
+  "authors": [
+    "Taigo Sakai",
+    "Kazuhiro Hotta",
+    "Hiroki Kouno",
+    "Naoki Kato"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16872",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.218480+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16872v1",
+  "published_at": "2026-09-15T09:04:10Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "bev",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16872v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "GRACE: Geometry- and Ray-Aware Camera-Efficient Multi-View Pedestrian Tracking",
+  "title_zh": "GRACE：几何和光线感知的相机高效多视角行人跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2609.16872"
+}

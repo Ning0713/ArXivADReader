@@ -1,0 +1,54 @@
+{
+  "abstract": "With the increasing deployment of deep neural networks in critical systems, such as medical diagnostics and autonomous vehicles, ensuring their interpretability is crucial to building trust in decision-making systems. In the field of explainable artificial intelligence, prototype-based reasoning has gained particular popularity, as it mimics human cognitive processes by explaining model decisions based on visual similarity under the looks like this paradigm. While this paradigm has been thoroughly investigated in the context of global image classification, the interpretability of dense predictions, particularly semantic segmentation, remains largely unexplored despite its immense importance in tasks requiring precise object localization. Existing prototype-based interpretable segmentation models rely on ante-hoc architectures, which entails significant limitations because they require costly training from scratch and modifications to the network structure, ultimately leading to a noticeable drop in predictive performance compared to standard black-box models. To address this issue, we propose PiPS (Post-hoc interpretable Prototypical Segmentation), the first fully post-hoc solution for generating prototypical explanations for semantic segmentation models. Our method enables the extraction of intuitive, spatially localized explanations from any pre-trained network without modification or fine-tuning, thereby preserving 100% of the model's original predictive performance. This approach opens a new avenue for the safe and cost-effective deployment of transparent systems in advanced computer vision tasks. Codebase available at https://github.com/gmum/PIPS.",
+  "abstract_zh": "随着深度神经网络在医疗诊断和自动驾驶等关键系统中的广泛应用，确保其可解释性对于建立决策系统的信任至关重要。在可解释人工智能领域，基于原型的推理因其通过在“看起来像这样”（looks like this）范式下基于视觉相似性解释模型决策而受到特别关注，模仿了人类的认知过程。尽管这一范式在全局图像分类的背景下得到了深入研究，但对于密集预测，特别是语义分割的可解释性仍然 largely 未被探索，尽管它在需要精确物体定位的任务中具有重要意义。现有的基于原型的可解释分割模型依赖于事前（ante-hoc）架构，这带来了显著的局限性，因为它们需要从头开始进行昂贵的训练并对网络结构进行修改，最终导致与标准黑箱模型相比，预测性能显著下降。为了解决这一问题，我们提出了PiPS（事后可解释原型分割），这是第一个完全事后的解决方案，用于为语义分割模型生成原型解释。我们的方法能够从任何预训练网络中提取直观的、空间上局部化的解释，而无需修改或微调，从而保持模型原始预测性能的100%。这种方法为在先进计算机视觉任务中安全且具有成本效益的透明系统的部署开辟了新的途径。代码库可在 https://github.com/gmum/PIPS 获取。",
+  "arxiv_id": "2609.16909",
+  "arxiv_url": "https://arxiv.org/abs/2609.16909v1",
+  "authors": [
+    "Miłosz Adamczyk",
+    "Tymoteusz Zapala",
+    "Piotr Borycki",
+    "Przemysław Spurek"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16909",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.222173+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16909v1",
+  "published_at": "2026-09-15T09:40:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "驾驶",
+      "medical",
+      "医疗",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 66
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16909v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "深度/几何"
+    ]
+  },
+  "title": "PiPS: Post-Hoc Prototypical Explanations for Interpretable Semantic Segmentation",
+  "title_zh": "PiPS：用于可解释语义分割的事后原型解释",
+  "translation_url": "https://hjfy.top/arxiv/2609.16909"
+}

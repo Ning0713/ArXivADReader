@@ -1,0 +1,59 @@
+{
+  "abstract": "Autonomous racing confronts significant challenges in safely overtaking Opponent Vehicles (OVs) that exhibit uncertain trajectories, stemming from unknown driving policies. To address these challenges, this study proposes heterogeneous kernel metrics for Deep Kernel Learning (DKL), designed to robustly capture the diverse driving policies of OVs, and carry out precise trajectory predictions along with the associated uncertainties. A key virtue of the proposed kernel metrics lies in their ability to align similar driving policies and disjoin dissimilar ones in an unsupervised manner, given the observed interactions between the Ego Vehicle (EV) and OVs. The efficacy of the proposed method is substantiated through experimental studies on a 1/10th scale racecar platform, demonstrating improved prediction accuracy and thereby safely overtaking against OVs. Furthermore, our method is computationally efficient for onboard computing units, affirming its viability in fast-paced racing environments. The video and source code can be found at https://github.com/HMCL-UNIST/OpponentPredictionWithKMDKL.git.",
+  "abstract_zh": "自主赛车在安全超越表现出不确定轨迹的对手车辆（OVs）时面临重大挑战，这些不确定性源于未知的驾驶策略。为了解决这些挑战，本研究提出了异构核度量，用于深度核学习（Deep Kernel Learning, DKL），旨在稳健地捕捉对手车辆的多样化驾驶策略，并进行精确的轨迹预测及相关的不确定性。所提核度量的一个关键优点在于其能够在无监督的情况下，根据自我车辆（Ego Vehicle, EV）与对手车辆之间的观察交互，自动对相似的驾驶策略进行对齐，并将不相似的策略分离。通过在1/10比例的赛车平台上的实验研究，验证了所提方法的有效性，显示出预测准确性的提升，从而安全地超越对手车辆。此外，我们的方法在车载计算单元上计算效率高，确认其在快速赛车环境中的可行性。视频和源代码可在 https://github.com/HMCL-UNIST/OpponentPredictionWithKMDKL.git 找到。",
+  "arxiv_id": "2609.17147",
+  "arxiv_url": "https://arxiv.org/abs/2609.17147v1",
+  "authors": [
+    "Hojin Lee",
+    "Youngim Nam",
+    "Sanghun Lee",
+    "Cheolhyeon Kwon"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-17147",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.173881+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17147v1",
+  "published_at": "2026-09-15T13:13:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "ego vehicle",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17147v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "安全/异常"
+    ]
+  },
+  "title": "Kernel-Based Metrics Learning for Uncertain Opponent Vehicle Trajectory Prediction in Autonomous Racing",
+  "title_zh": "基于核的度量学习用于自主赛车中不确定对手车辆轨迹预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.17147"
+}

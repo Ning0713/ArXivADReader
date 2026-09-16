@@ -1,0 +1,68 @@
+{
+  "abstract": "Robots operating in open environments act under partial observability, physical constraints, and dynamic task contexts. Beyond mapping observations and language instructions to actions, they must anticipate how candidate actions may affect future states and task-relevant outcomes. Recent advances in world models, video generation, and Vision-Language-Action (VLA) policies have motivated the development of World-Action Models (WAMs), which couple future world prediction with executable action generation. This survey provides a robotics-oriented review of WAMs. We clarify their scope relative to conventional world models, model-based reinforcement learning, action-conditioned video generation, and reactive VLA policies, and organize existing methods through a unified taxonomy covering representations, transition modeling, action interfaces, architectures, training pipelines, data modalities, and scaling strategies. We further review applications of WAMs in manipulation, navigation, and autonomous driving, and we summarize the datasets, benchmarks, metrics, and protocols used to evaluate WAM systems. Finally, we discuss key challenges in action alignment, world-action factorization, spatial and multi-view consistency, long-horizon memory, neural simulation for closed-loop policy learning, and efficient inference. Taken together, this survey aims to provide a concise technical foundation for integrating predictive world modeling with action generation, toward more reliable embodied robot intelligence. Project page: https://rcl-robotics.github.io/Awesome-World-Action-Models.",
+  "abstract_zh": "在开放环境中操作的机器人在部分可观测性、物理约束和动态任务背景下进行行动。除了将观察结果和语言指令映射到动作之外，它们还必须预测候选动作如何影响未来状态和与任务相关的结果。最近在世界模型、视频生成和视觉-语言-动作（Vision-Language-Action, VLA）策略方面的进展，促使了世界-动作模型（World-Action Models, WAMs）的发展，该模型将未来世界预测与可执行动作生成相结合。本综述提供了一个面向机器人领域的WAMs回顾。我们澄清了它们相对于传统世界模型、基于模型的强化学习、动作条件的视频生成和反应式VLA策略的范围，并通过一个统一的分类法组织现有方法，涵盖表示、转移建模、动作接口、架构、训练流程、数据模态和扩展策略。我们进一步回顾了WAMs在操控、导航和自动驾驶中的应用，并总结了用于评估WAM系统的数据集、基准、指标和协议。最后，我们讨论了在动作对齐、世界-动作因子分解、空间和多视图一致性、长时间记忆、用于闭环策略学习的神经仿真以及高效推理等方面的关键挑战。综上所述，本综述旨在为将预测性世界建模与动作生成相结合提供简明的技术基础，以实现更可靠的具身机器人智能。项目页面：https://rcl-robotics.github.io/Awesome-World-Action-Models。",
+  "arxiv_id": "2609.16074",
+  "arxiv_url": "https://arxiv.org/abs/2609.16074v1",
+  "authors": [
+    "Zuxing Lu",
+    "Hongjia Zhai",
+    "Guanzhi Wang",
+    "Huajian Zeng",
+    "Jiaqi Yang",
+    "Jingyu Liu",
+    "Lei Cheng",
+    "Yuantai Zhang",
+    "Yuheng Qiu",
+    "Zezhou Cheng",
+    "Ivan Laptev",
+    "Danfei Xu",
+    "Benjamin Riviere",
+    "Giuseppe Loianno",
+    "Eric Xing",
+    "Xingxing Zuo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16074",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.149345+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16074v1",
+  "published_at": "2026-09-13T16:35:56Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16074v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "World-Action Models for Robot Learning and Control: A Survey",
+  "title_zh": "机器人学习与控制的世界-动作模型：综述",
+  "translation_url": "https://hjfy.top/arxiv/2609.16074"
+}

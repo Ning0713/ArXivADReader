@@ -1,6 +1,391 @@
 {
-  "generated_at": "2026-09-15T09:52:08.639615+00:00",
+  "generated_at": "2026-09-16T09:39:25.317852+00:00",
   "items": [
+    {
+      "abstract": "This paper investigates easy strategies to boost the performance of existing networks for lidar semantic scene completion (SSC) without requiring complex architectural redesigns. The fact is that, over the last years, SSC methods have mostly pursued architectural innovations, making the models heavier and more complex, e.g., by jointly training a point cloud semantic segmentation branch. In this work, we take a step back and explore two priors used as simple ingredients (possibly noisy) to improve existing approaches: semantic pseudo-labels and sensor visibility information. Concretely, we provide both kinds of information directly as additional inputs to a given SSC network, requiring only a minimal adaptation of the original architecture. We first demonstrate that endowing input point clouds with semantic pseudo-labels from off-the-shelf segmenters significantly improves the performance of existing SSC models. In fact, by evaluating these models against an oracle, we establish that high-quality semantic priors are a primary driver of semantic gains (mIoU), and that the SSC model can be trained just once with ground-truth semantics and then exploited without retraining using any segmenter. Furthermore, we equip the input lidar point cloud with visibility information that distinguishes between empty spaces (between the lidar and a scanned point) and unknown spaces (outside of lines of sight), providing a secondary performance boost across the tested architectures. We study the design space of data for representing visibility information and bound the remaining headroom with a ground-truth oracle on the free-space labels. On SemanticKITTI, these enhancements make older models competitive with state-of-the-art systems across four architectures, in one case even outperforming them. On the SSCBench-nuScenes benchmark, both priors also transfer with the sparser 32-beam sensor.",
+      "abstract_zh": "本文研究了提升现有激光雷达语义场景补全（SSC）网络性能的简单策略，而无需复杂的架构重设计。事实上，在过去几年中，SSC 方法主要追求架构创新，使得模型变得更重且更复杂，例如，通过联合训练点云语义分割分支。在本研究中，我们退后一步，探索作为简单成分（可能带有噪声）的两种先验，以改善现有方法：语义伪标签和传感器可见性信息。具体而言，我们将这两种信息直接作为额外输入提供给特定的 SSC 网络，仅需对原始架构进行最小的适应。我们首先证明，赋予输入点云来自现成分割器的语义伪标签显著提高了现有 SSC 模型的性能。实际上，通过将这些模型与一个理想模型进行评估，我们确定高质量的语义先验是语义增益（mIoU）的主要驱动因素，并且 SSC 模型可以仅用真实语义训练一次，然后在不重新训练的情况下利用任何分割器。此外，我们为输入的激光雷达点云配备了可见性信息，以区分空白区域（激光雷达与扫描点之间）和未知区域（视线之外），在测试的架构中提供了二次性能提升。我们研究了表示可见性信息的数据设计空间，并通过真实标签的理想模型界定了剩余的提升空间。在 SemanticKITTI 数据集上，这些增强使得旧模型在四种架构中与最先进的系统具有竞争力，在某些情况下甚至超越了它们。在 SSCBench-nuScenes 基准测试中，这两种先验也能与更稀疏的 32 梯度传感器进行迁移。",
+      "authors": [
+        "Tetiana Martyniuk",
+        "Jonathan Seele",
+        "Alexandre Boulch",
+        "Gilles Puy",
+        "Renaud Marlet",
+        "Raoul de Charette"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.17413",
+      "tags": [
+        "LiDAR/点云",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "SSC-Priors: Exploring Semantic and Visibility Priors to Boost Lidar Semantic Scene Completion",
+      "title_zh": "SSC-Priors：探索语义和可见性先验以提升激光雷达语义场景补全",
+      "url": "/daily/2026-09-16/#paper-2609-17413"
+    },
+    {
+      "abstract": "Autonomous robots are increasingly deployed on long duration single- and multi-session missions in dynamic environments, where the ability to identify environmental changes such as fallen trees or opened doors provides important contextual information for online planning. We propose a framework called Change Detection via Scene Decomposition (CDSD) for accurate online geometric change detection using LiDAR or RGB-D sensors. Recent advances in geometric SLAM have made it possible to generate dense, tightly aligned maps without post processing, but comparing global maps across entire sessions is computationally expensive and does not allow for single-session online change detection. CDSD instead spatially decomposes mapped environments into unique scenes where changes can be found efficiently by comparing dense, local subsets of the global map called submaps. As the first submap-based approach for geometric change detection, we identify and address the following core challenges: 1) identifying appropriate scenes for change detection that require minimal redundant information; 2) generating dense and representative submaps for each scene; 3) detecting changes between submaps with differing fields of view; and 4) processing detected changes for real-time map reconstruction. Results demonstrate our algorithm on custom datasets collected at the Army Research Laboratory facility in Graces Quarters, Maryland, and on open-source multi-session change detection datasets.",
+      "abstract_zh": "自主机器人越来越多地在动态环境中执行长时间的单次和多次任务，其中识别环境变化（如倒下的树木或打开的门）为在线规划提供了重要的上下文信息。我们提出了一种名为通过场景分解进行变化检测（Change Detection via Scene Decomposition, CDSD）的框架，用于利用激光雷达（LiDAR）或RGB-D传感器进行准确的在线几何变化检测。最近在几何同步定位与地图构建（SLAM）方面的进展，使得在不进行后处理的情况下生成密集且紧密对齐的地图成为可能，但在整个会话中比较全局地图的计算成本很高，且不允许进行单次会话的在线变化检测。相反，CDSD将映射环境空间分解为独特的场景，通过比较称为子地图的全局地图的密集局部子集，能够高效地发现变化。作为首个基于子地图的几何变化检测方法，我们识别并解决了以下核心挑战：1）识别适合变化检测的场景，以最小化冗余信息；2）为每个场景生成密集且具有代表性的子地图；3）检测视场不同的子地图之间的变化；4）处理检测到的变化以实现实时地图重建。结果展示了我们在马里兰州Graces Quarters的陆军研究实验室设施收集的定制数据集以及开源多次会话变化检测数据集上的算法表现。",
+      "authors": [
+        "David Thorne",
+        "Samuel Jia Cong Chua",
+        "Nakul Joshi",
+        "Aiden Wong",
+        "Christa S. Robison",
+        "Philip Osteen",
+        "Brett T. Lopez"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.17302",
+      "tags": [
+        "地图/定位",
+        "LiDAR/点云",
+        "感知"
+      ],
+      "title": "Online Geometric Change Detection via Scene Decomposition",
+      "title_zh": "通过场景分解进行在线几何变化检测",
+      "url": "/daily/2026-09-16/#paper-2609-17302"
+    },
+    {
+      "abstract": "An agentic AI driver-assistance framework that integrates perception, compliance reasoning, vehicle-state interpretation, and safety arbitration into a modular and auditable pipeline. The architecture, referred to as DriveMCP, incorporates a sensor-like perception stack alongside DriveLM as the vision-language front end to generate a graph-structured scene understanding (Graph Visual Question Answering) and language-grounded driving information. Key compliance elements in world_state, including posted speed limits and jurisdiction cues, are derived from DriveLM outputs through a structured parsing layer rather than being injected as simulator ground truth. A stateful orchestration layer coordinates specialized experts exposed as Model Context Protocol (MCP) servers: (i) a Rules server that performs retrieval-augmented compliance reasoning over jurisdiction-specific traffic codes and sign conventions, (ii) a Weather server that estimates traction risk and contextual speed advisories, and (iii) an MCP-CAN server that surfaces Controller Area Network (CAN)/On-Board Diagnostics (OBD) telemetry and diagnostic context for health-aware risk shaping. These outputs are fused to generate a structured decision that prompts a recommended course of action. The outcome is then further filtered by a Responsibility-Sensitive Safety (RSS)-inspired guardrail that arbitrates speak versus act decisions under bounded online adaptation. In CARLA simulation across multilingual, cross-border, and dynamic speed-limit scenarios, DriveMCP reduces traffic infractions and overspeed relative to the VLM-Direct, VLM-Direct+RAG, and VLM-Tools-NoArbiter baselines, while improving hazard response time and maintaining sub-second advisory latency.",
+      "abstract_zh": "一种代理智能驾驶辅助框架，将感知、合规推理、车辆状态解释和安全仲裁集成到一个模块化和可审计的流程中。该架构称为DriveMCP，结合了类似传感器的感知堆栈和DriveLM作为视觉-语言前端，以生成图结构场景理解（图形视觉问答）和基于语言的驾驶信息。世界状态中的关键合规元素，包括发布的速度限制和管辖权提示，通过结构化解析层从DriveLM输出中提取，而不是作为模拟器的真实数据注入。一个有状态的协调层协调作为模型上下文协议（Model Context Protocol, MCP）服务器暴露的专业专家：（i）一个规则服务器，执行针对特定管辖区的交通法规和标志惯例的检索增强合规推理；（ii）一个天气服务器，估计牵引风险和上下文速度建议；（iii）一个MCP-CAN服务器，提供控制器局域网（Controller Area Network, CAN）/车载诊断（On-Board Diagnostics, OBD）遥测和健康感知风险塑造的诊断上下文。这些输出被融合以生成结构化决策，从而提示推荐的行动方案。结果随后通过受责任敏感安全（Responsibility-Sensitive Safety, RSS）启发的护栏进一步过滤，在有限的在线适应下仲裁说与行动的决策。在CARLA模拟中，针对多语言、跨境和动态速度限制场景，DriveMCP相较于VLM-Direct、VLM-Direct+RAG和VLM-Tools-NoArbiter基线减少了交通违规和超速，同时提高了危险响应时间并保持了亚秒级的建议延迟。",
+      "authors": [
+        "Farzad Nadiri",
+        "Mehdi Cina",
+        "Ahmad B. Rad"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.17247",
+      "tags": [
+        "感知",
+        "VLM/VLA",
+        "安全/异常"
+      ],
+      "title": "DriveMCP: An Agentic AI framework for Advanced Driver Assistance System",
+      "title_zh": "DriveMCP：一种用于高级驾驶辅助系统的代理智能框架",
+      "url": "/daily/2026-09-16/#paper-2609-17247"
+    },
+    {
+      "abstract": "Autonomous systems require reliable place recognition for efficient and effective simultaneous localisation and mapping (SLAM). Traditional geometric visual SLAM approaches rely on low-level features and geometric consistency, but remain vulnerable to perceptual aliasing, where different places appear similar, and perceptual variation, where the same place appears different. Although semantic SLAM and modern learned visual place recognition (VPR) methods improve robustness under challenging perceptual conditions, real-time deployment requires both high retrieval accuracy and low latency. Inspired by human memory and perception, we propose HuMem-VPR, which exploits the bidirectional relationship between bottom-up perceptual evidence and top-down contextual reasoning to achieve high-level place understanding. We further introduce HuMemSLAM, the integration of HuMem-VPR with ORB-SLAM3. HuMem VPR achieved the highest aggregate retrieval accuracy on the real-image benchmark, competitive accuracy on the CARLA benchmark, and approximately two to three times lower latency than the evaluated state-of-the-art VPR methods. Across the evaluated dataset families and online experiments, HuMemSLAM substantially improved integrated Recall @1 over ORB-SLAM3's native retrieval while reducing the proposals submitted to its geometric backend.",
+      "abstract_zh": "自主系统需要可靠的场所识别以实现高效且有效的同步定位与地图构建（SLAM）。传统的几何视觉SLAM方法依赖低级特征和几何一致性，但仍易受感知混淆（不同地点外观相似）和感知变化（同一地点外观不同）的影响。尽管语义SLAM和现代学习型视觉场所识别（VPR）方法在复杂感知条件下提升了鲁棒性，实时部署仍需兼顾高检索准确率和低延迟。受人类记忆与感知机制启发，我们提出了HuMem-VPR，该方法利用自底向上的感知证据与自顶向下的上下文推理之间的双向关系，实现高层次的场所理解。进一步地，我们引入了HuMemSLAM，将HuMem-VPR与ORB-SLAM3集成。HuMem-VPR在真实图像基准测试中取得了最高的综合检索准确率，在CARLA基准测试中表现出竞争力的准确率，且延迟约为评估的最先进VPR方法的二至三分之一。在所评估的数据集系列及在线实验中，HuMemSLAM显著提升了相较于ORB-SLAM3原生检索的集成Recall @1，同时减少了提交给其几何后端的候选提议数量。",
+      "authors": [
+        "Mayowa Adebambo",
+        "Sebastian Donnelly",
+        "Armand Amaritei",
+        "Andrew Bradley",
+        "Alexander Rast"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.17168",
+      "tags": [
+        "地图/定位",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "HuMemSLAM: Efficient Human-Inspired Semantic Place Recognition for Robust Visual SLAM",
+      "title_zh": "HuMemSLAM：高效类人语义场所识别用于鲁棒视觉SLAM",
+      "url": "/daily/2026-09-16/#paper-2609-17168"
+    },
+    {
+      "abstract": "Autonomous racing confronts significant challenges in safely overtaking Opponent Vehicles (OVs) that exhibit uncertain trajectories, stemming from unknown driving policies. To address these challenges, this study proposes heterogeneous kernel metrics for Deep Kernel Learning (DKL), designed to robustly capture the diverse driving policies of OVs, and carry out precise trajectory predictions along with the associated uncertainties. A key virtue of the proposed kernel metrics lies in their ability to align similar driving policies and disjoin dissimilar ones in an unsupervised manner, given the observed interactions between the Ego Vehicle (EV) and OVs. The efficacy of the proposed method is substantiated through experimental studies on a 1/10th scale racecar platform, demonstrating improved prediction accuracy and thereby safely overtaking against OVs. Furthermore, our method is computationally efficient for onboard computing units, affirming its viability in fast-paced racing environments. The video and source code can be found at https://github.com/HMCL-UNIST/OpponentPredictionWithKMDKL.git.",
+      "abstract_zh": "自主赛车在安全超越表现出不确定轨迹的对手车辆（OVs）时面临重大挑战，这些不确定性源于未知的驾驶策略。为了解决这些挑战，本研究提出了异构核度量，用于深度核学习（Deep Kernel Learning, DKL），旨在稳健地捕捉对手车辆的多样化驾驶策略，并进行精确的轨迹预测及相关的不确定性。所提核度量的一个关键优点在于其能够在无监督的情况下，根据自我车辆（Ego Vehicle, EV）与对手车辆之间的观察交互，自动对相似的驾驶策略进行对齐，并将不相似的策略分离。通过在1/10比例的赛车平台上的实验研究，验证了所提方法的有效性，显示出预测准确性的提升，从而安全地超越对手车辆。此外，我们的方法在车载计算单元上计算效率高，确认其在快速赛车环境中的可行性。视频和源代码可在 https://github.com/HMCL-UNIST/OpponentPredictionWithKMDKL.git 找到。",
+      "authors": [
+        "Hojin Lee",
+        "Youngim Nam",
+        "Sanghun Lee",
+        "Cheolhyeon Kwon"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.17147",
+      "tags": [
+        "预测/规划",
+        "深度/几何",
+        "安全/异常"
+      ],
+      "title": "Kernel-Based Metrics Learning for Uncertain Opponent Vehicle Trajectory Prediction in Autonomous Racing",
+      "title_zh": "基于核的度量学习用于自主赛车中不确定对手车辆轨迹预测",
+      "url": "/daily/2026-09-16/#paper-2609-17147"
+    },
+    {
+      "abstract": "Neuromorphic vision systems operate under strict constraints on bandwidth, memory, and energy, particularly at the edge, motivating early mechanisms for data reduction and selective processing. In this work, we investigate a multi-scale training-free, saliency-based, bottom-up visual attention model that operates directly on low-resolution event-based input and selects Regions of Interest (ROI) from the visual scene. The model is evaluated across multiple downscaling factors applied to the incoming event stream, with input resolutions reduced by up to 256x relative to full resolution. Performance is assessed on the Prophesee Automotive dataset, the largest publicly available event-based dataset, demonstrating robust ROI selection across different scales on a real-world use-case. The proposed approach is capable of detecting ROIs belonging to multiple object classes, including various vehicle types, pedestrians, traffic lights, and traffic signs, with accuracy up to 70.8%, while operating at millisecond temporal resolution, 16x finer than the temporal resolution provided by the dataset ground truth. These results highlight the potential of combining early event downscaling with saliency-based attention as an effective front-end for efficient edge neuromorphic vision systems.",
+      "abstract_zh": "神经形态视觉系统在带宽、内存和能量方面面临严格的限制，尤其是在边缘计算环境中，这促使了数据减少和选择性处理的早期机制。在本研究中，我们探讨了一种多尺度无训练、基于显著性的自下而上的视觉注意力模型，该模型直接在低分辨率的基于事件的输入上运行，并从视觉场景中选择兴趣区域（ROI）。该模型在对输入事件流应用多个下采样因子的情况下进行评估，输入分辨率相对于全分辨率降低了最多256倍。性能评估基于Prophesee汽车数据集，这是最大的公开可用的基于事件的数据集，展示了在真实世界应用中不同尺度下的稳健ROI选择。所提出的方法能够检测属于多种物体类别的ROI，包括各种车辆类型、行人、交通信号灯和交通标志，准确率高达70.8%，同时以毫秒级的时间分辨率运行，比数据集的真实值提供的时间分辨率细致16倍。这些结果突显了将早期事件下采样与基于显著性的注意力相结合的潜力，作为高效边缘神经形态视觉系统的有效前端。",
+      "authors": [
+        "Luca Peres",
+        "Giulia D'Angelo",
+        "Chiara Bartolozzi",
+        "Oliver Rhodes"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.17134",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Event-based Selective Attention for Multi-resolution Fast Region of Interest (ROI) Detection",
+      "title_zh": "基于事件的选择性注意力用于多分辨率快速兴趣区域（ROI）检测",
+      "url": "/daily/2026-09-16/#paper-2609-17134"
+    },
+    {
+      "abstract": "Autonomous wheel-loader control requires joint reasoning over task semantics, egocentric vision, proprioception, and 3D scene geometry. We present sensVLA, a Vision-Language-Action (VLA) architecture that combines a Qwen3-2B Vision-Language Model (VLM) with a fully trainable transformer action expert trained by flow-matching velocity regression. sensVLA routes Bird's-Eye-View (BEV) features, extracted from fused front and rear lidar, directly to the action expert through a dedicated cross-attention pathway, while the VLM consumes front and rear RGB views to provide task-conditioned semantic context. This design decouples spatial grounding from linguistic reasoning while preserving interaction between both streams at decision time. The expert predicts six action dimensions: longitudinal velocity, steering, body-frame displacement, arm rate, and bucket rate. On a real-world dataset from a wheel loader, sensVLA reaches aggregate per-step parity with a strong camera-only baseline and reduces longitudinal velocity RMSE by 28% and displacement error by 9% on loading centric scenarios. It also degrades 29% less when the camera stream is corrupted or removed, evidencing that explicit spatial grounding improves accuracy and fault-tolerance for heavy equipment autonomy.",
+      "abstract_zh": "自主轮式装载机的控制需要对任务语义、自我中心视觉、本体感觉和三维场景几何进行联合推理。我们提出了sensVLA，这是一种视觉-语言-动作（VLA）架构，它将Qwen3-2B视觉-语言模型（VLM）与通过流匹配速度回归训练的完全可训练的变换器动作专家相结合。sensVLA通过专用的跨注意力通道将从融合的前后激光雷达提取的鸟瞰图（BEV）特征直接传递给动作专家，同时VLM利用前后RGB视图提供任务条件的语义上下文。该设计将空间基础与语言推理解耦，同时在决策时保留两者之间的交互。专家预测六个动作维度：纵向速度、转向、车身框架位移、臂速和铲斗速率。在来自轮式装载机的真实世界数据集中，sensVLA在每步聚合上达到了强大的仅摄像头基线的平衡，并在以装载为中心的场景中将纵向速度均方根误差（RMSE）降低了28%，位移误差降低了9%。当摄像头流被损坏或移除时，它的性能下降幅度也减少了29%，这证明了显式空间基础提高了重型设备自主性的准确性和容错能力。",
+      "authors": [
+        "Gopi Krishna Erabati",
+        "Bjarne Johannsen",
+        "Angus Stewart",
+        "Vardeep Singh Sandhu"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.17021",
+      "tags": [
+        "VLM/VLA",
+        "端到端驾驶",
+        "多传感器融合"
+      ],
+      "title": "sensVLA: Spatially-Grounded Vision-Language-Action Model for Autonomous Wheel Loader",
+      "title_zh": "sensVLA：用于自主轮式装载机的空间基础视觉-语言-动作模型",
+      "url": "/daily/2026-09-16/#paper-2609-17021"
+    },
+    {
+      "abstract": "This paper introduces NeuroSymbEAD, a large-scale neuro-symbolic caption dataset featuring an ego-centric knowledge graph (KG) of static and dynamic objects annotated with classes, categories, heading directions, orientations, and distances from the ego-vehicle. These annotations are used on the KITTI-360 dataset to generate multilevel textual captions representing a lightweight version of an ego-centric scene map. Outdoor scene-map reconstruction, visual recognition, and object grounding establish baselines for driving common sense and traffic/scene understanding. For these purposes, natural language-based grounded captioning of objects and their complex relationships is a widely adopted contextual representation for indoor scene tasks. Neuro-symbolic representations have proven effective in handling structured information for various computer vision and language applications. Our data annotation pipeline allows the generation of varied map segments, populating simulated or real objects within the bounding boxes predicted by any 3D object detection network, and building hierarchical text captions. We benchmark our neuro-symbolic and ontological caption generation using pre-trained grounding and learned auto-regressive captioning networks. By converting 3D driving scenes into structured ego-centric language, NeuroSymbEAD provides a benchmark for vision-language and foundation models for traffic-scene explanation, 3D reasoning, and interpretable autonomous-driving perception.",
+      "abstract_zh": "本文介绍了NeuroSymbEAD，一个大规模的神经符号字幕数据集，包含一个以自我为中心的知识图谱（KG），该图谱对静态和动态物体进行了注释，包括类别、类型、朝向、方向和与自我车辆的距离。这些注释在KITTI-360数据集上用于生成多层次的文本字幕，代表自我中心场景地图的轻量版本。户外场景地图重建、视觉识别和物体定位为驾驶常识和交通/场景理解建立了基准。为此，基于自然语言的物体及其复杂关系的有根据字幕生成是室内场景任务中广泛采用的上下文表示。神经符号表示在处理各种计算机视觉和语言应用中的结构化信息方面已被证明是有效的。我们的数据注释管道允许生成多样的地图片段，在任何3D物体检测网络预测的边界框内填充模拟或真实物体，并构建层次文本字幕。我们使用预训练的定位和学习的自回归字幕生成网络对我们的神经符号和本体字幕生成进行基准测试。通过将3D驾驶场景转换为结构化的自我中心语言，NeuroSymbEAD为交通场景解释、3D推理和可解释的自主驾驶感知提供了基准。",
+      "authors": [
+        "Muhammad Ahmed Ullah Khan",
+        "Mohammed Elamine",
+        "Sheikh Talha Uddin",
+        "Didier Stricker",
+        "Sk Aziz Ali",
+        "Muhammad Zeshan Afzal"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16919",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "NeuroSymbEAD: A Large Scale Neuro-Symbolic Caption Dataset for Omni-Directional Embodied Autonomous Driving",
+      "title_zh": "NeuroSymbEAD：一个用于全向具身自主驾驶的大规模神经符号字幕数据集",
+      "url": "/daily/2026-09-16/#paper-2609-16919"
+    },
+    {
+      "abstract": "With the increasing deployment of deep neural networks in critical systems, such as medical diagnostics and autonomous vehicles, ensuring their interpretability is crucial to building trust in decision-making systems. In the field of explainable artificial intelligence, prototype-based reasoning has gained particular popularity, as it mimics human cognitive processes by explaining model decisions based on visual similarity under the looks like this paradigm. While this paradigm has been thoroughly investigated in the context of global image classification, the interpretability of dense predictions, particularly semantic segmentation, remains largely unexplored despite its immense importance in tasks requiring precise object localization. Existing prototype-based interpretable segmentation models rely on ante-hoc architectures, which entails significant limitations because they require costly training from scratch and modifications to the network structure, ultimately leading to a noticeable drop in predictive performance compared to standard black-box models. To address this issue, we propose PiPS (Post-hoc interpretable Prototypical Segmentation), the first fully post-hoc solution for generating prototypical explanations for semantic segmentation models. Our method enables the extraction of intuitive, spatially localized explanations from any pre-trained network without modification or fine-tuning, thereby preserving 100% of the model's original predictive performance. This approach opens a new avenue for the safe and cost-effective deployment of transparent systems in advanced computer vision tasks. Codebase available at https://github.com/gmum/PIPS.",
+      "abstract_zh": "随着深度神经网络在医疗诊断和自动驾驶等关键系统中的广泛应用，确保其可解释性对于建立决策系统的信任至关重要。在可解释人工智能领域，基于原型的推理因其通过在“看起来像这样”（looks like this）范式下基于视觉相似性解释模型决策而受到特别关注，模仿了人类的认知过程。尽管这一范式在全局图像分类的背景下得到了深入研究，但对于密集预测，特别是语义分割的可解释性仍然 largely 未被探索，尽管它在需要精确物体定位的任务中具有重要意义。现有的基于原型的可解释分割模型依赖于事前（ante-hoc）架构，这带来了显著的局限性，因为它们需要从头开始进行昂贵的训练并对网络结构进行修改，最终导致与标准黑箱模型相比，预测性能显著下降。为了解决这一问题，我们提出了PiPS（事后可解释原型分割），这是第一个完全事后的解决方案，用于为语义分割模型生成原型解释。我们的方法能够从任何预训练网络中提取直观的、空间上局部化的解释，而无需修改或微调，从而保持模型原始预测性能的100%。这种方法为在先进计算机视觉任务中安全且具有成本效益的透明系统的部署开辟了新的途径。代码库可在 https://github.com/gmum/PIPS 获取。",
+      "authors": [
+        "Miłosz Adamczyk",
+        "Tymoteusz Zapala",
+        "Piotr Borycki",
+        "Przemysław Spurek"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16909",
+      "tags": [
+        "感知",
+        "地图/定位",
+        "深度/几何"
+      ],
+      "title": "PiPS: Post-Hoc Prototypical Explanations for Interpretable Semantic Segmentation",
+      "title_zh": "PiPS：用于可解释语义分割的事后原型解释",
+      "url": "/daily/2026-09-16/#paper-2609-16909"
+    },
+    {
+      "abstract": "Reducing the number of cameras reduces the deployment cost but removes views that correct BEV responses stretched away from true pedestrian positions by projection and short score drops that can split tracks} in Bird's-Eye View (BEV) tracking. We introduce GRACE, a camera-efficient multi-view tracker with three components. Volumetric-Guided Fusion combines homography-based BEV features with features lifted through 3D space. Ray Conditioning exposes each camera's viewing direction to the fusion network. Its tracking component, BEV Track Recovery (BTR), uses low-confidence detections only to continue existing tracks. The same detections cannot start new tracks. With two WildTrack cameras, GRACE improves MOTA from 83.54 for TrackTacular, our baseline, to 91.07.",
+      "abstract_zh": "减少相机数量可以降低部署成本，但会移除那些通过投影修正从真实行人位置偏离的鸟瞰视图（BEV）响应的视角，以及可能导致轨迹分裂的短暂得分下降。我们提出了GRACE，一种高效的多视角跟踪器，包含三个组件。体积引导融合（Volumetric-Guided Fusion）将基于单应性的BEV特征与通过三维空间提升的特征相结合。光线条件化（Ray Conditioning）将每个相机的视角暴露给融合网络。其跟踪组件BEV轨迹恢复（BTR）仅使用低置信度检测来继续现有轨迹，而相同的检测不能启动新轨迹。在两个WildTrack相机的测试中，GRACE将我们的基线TrackTacular的MOTA从83.54提高到91.07。",
+      "authors": [
+        "Taigo Sakai",
+        "Kazuhiro Hotta",
+        "Hiroki Kouno",
+        "Naoki Kato"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16872",
+      "tags": [
+        "感知",
+        "BEV/Occupancy",
+        "深度/几何"
+      ],
+      "title": "GRACE: Geometry- and Ray-Aware Camera-Efficient Multi-View Pedestrian Tracking",
+      "title_zh": "GRACE：几何和光线感知的相机高效多视角行人跟踪",
+      "url": "/daily/2026-09-16/#paper-2609-16872"
+    },
+    {
+      "abstract": "Industrial IoT environments increasingly deploy autonomous mobile robots for tasks such as material handling, product assembly, or infrastructure inspection. In such deployments, collaborative perception enables robots to share LiDAR observations and collectively construct a richer model of their environment than an individual agent could produce alone. However, industrial environments are dynamic spaces where robot positions shift continuously, network bandwidth fluctuates, and the marginal contribution of robots to perception quality varies at runtime. Existing collaborative perception approaches are designed for static participation assumptions and cannot adapt to these dynamics without sacrificing either detection precision or communication efficiency. This paper presents CoAdapt, an adaptive collaborative perception framework for IIoT robotic swarms in which a Large Language Model (LLM) serves as a runtime fusion controller, jointly deciding which robots participate in the fusion process and which fusion algorithm to apply based on the current spatial configuration and network state. The LLM reasons over structured natural language descriptions of the scene derived from raw LiDAR point clouds, requiring no taskspecific training and generalizing to unseen swarm topologies. Evaluated on the OPV2V benchmark across 25 scenarios, our approach achieves a 38% reduction in communication cost while maintaining detection precision comparable to static baseline approaches.",
+      "abstract_zh": "工业物联网环境中越来越多地部署自主移动机器人，执行物料处理、产品组装或基础设施检查等任务。在这些部署中，协作感知使得机器人能够共享激光雷达（LiDAR）观测数据，并共同构建比单个代理能够独立生成的更丰富的环境模型。然而，工业环境是动态的空间，机器人位置持续变化，网络带宽波动，且机器人对感知质量的边际贡献在运行时也会有所不同。现有的协作感知方法是基于静态参与假设设计的，无法在不牺牲检测精度或通信效率的情况下适应这些动态变化。本文提出了CoAdapt，一种针对工业物联网机器人群体的自适应协作感知框架，其中大语言模型（LLM）作为运行时融合控制器，基于当前的空间配置和网络状态共同决定哪些机器人参与融合过程以及应用哪种融合算法。LLM对从原始LiDAR点云中提取的场景结构化自然语言描述进行推理，无需特定任务的训练，并能够推广到未见过的群体拓扑。在25个场景的OPV2V基准测试中，我们的方法实现了38%的通信成本降低，同时保持了与静态基线方法相当的检测精度。",
+      "authors": [
+        "Houssam Hajj Hassan",
+        "Antonia Maria Masucci",
+        "Lynda Zitoune",
+        "Salah-Eddine Elayoubi"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16852",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "多传感器融合"
+      ],
+      "title": "CoAdapt: An LLM-based Framework for Adaptive Collaborative Perception in IIoT Robotic Swarms",
+      "title_zh": "CoAdapt：一种基于大语言模型的工业物联网机器人群体自适应协作感知框架",
+      "url": "/daily/2026-09-16/#paper-2609-16852"
+    },
+    {
+      "abstract": "Generative video models can serve as a promising backbone for robot navigation by predicting future observations as video plans. Recent approaches often condition video planning on short-horizon guidance and recover geometric waypoints through scene reconstruction, leaving longer-horizon planning and precise video-to-action translation less explored. We present CueNav, a video model-based navigation framework combining visual cue guided video planning with an embodiment-specific Inverse-Dynamics Model (IDM). As visual cues, we use a Bird's-Eye View (BEV) map to convey global task context and retain part of the robot body in the egocentric observation to expose embodiment context. These cues guide the video planner, while the IDM translates dense flow fields extracted from the video plan into robot actions. With the visual cue encoding global task context, CueNav achieves nearly 2x higher success in maze navigation than planning without the cue. The body-aware view with the IDM enables precise navigation with 70% success in a narrow passage where comparison methods largely fail to complete the task. We further demonstrate zero-shot semantic-conditioned navigation and deployment of the same video planner across different robot platforms. Our results show that visual cue-guided video planning with embodiment-specific action grounding paves the way toward a generalizable navigation framework for longer-horizon planning and embodiment-aware control. Additional results and code are available on our project website: https://cuenav.github.io.",
+      "abstract_zh": "生成视频模型可以作为机器人导航的有前景的基础，通过预测未来观察作为视频规划。近期的方法通常依赖于短期指导进行视频规划，并通过场景重建恢复几何路径点，而对长期规划和精确的视频到动作转换的研究相对较少。我们提出了CueNav，一个基于视频模型的导航框架，将视觉线索引导的视频规划与特定于体现的逆动力学模型（Inverse-Dynamics Model, IDM）结合起来。作为视觉线索，我们使用鸟瞰图（Bird's-Eye View, BEV）地图来传达全局任务上下文，并在自我中心观察中保留部分机器人身体以揭示体现上下文。这些线索引导视频规划器，而IDM则将从视频规划中提取的密集流场转换为机器人动作。通过视觉线索编码全局任务上下文，CueNav在迷宫导航中的成功率几乎提高了2倍，相较于没有线索的规划。在狭窄通道中，IDM提供的身体感知视图使得导航精确成功率达到70%，而对比方法在完成任务方面大多失败。我们进一步展示了零样本语义条件导航，并在不同机器人平台上部署相同的视频规划器。我们的结果表明，基于视觉线索的引导视频规划与特定于体现的动作基础相结合，为长期规划和体现感知控制的可泛化导航框架铺平了道路。更多结果和代码可在我们的项目网站上获取：https://cuenav.github.io。",
+      "authors": [
+        "Hojin Lee",
+        "Sizhe Lester Li",
+        "Maximilian Hilger",
+        "Susie Lu",
+        "Achim J. Lilienthal",
+        "Vincent Sitzmann",
+        "Daniel A. Duecker"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16737",
+      "tags": [
+        "深度/几何",
+        "预测/规划",
+        "BEV/Occupancy"
+      ],
+      "title": "Seeing What Matters: Visual Cue Guided Video Planning for Generalizable Robot Navigation",
+      "title_zh": "关注重要信息：基于视觉线索的可泛化机器人导航视频规划",
+      "url": "/daily/2026-09-16/#paper-2609-16737"
+    },
+    {
+      "abstract": "World models connect perception and decision-making in embodied intelligence by maintaining hidden state, anticipating consequences, comparing interventions, and adapting when execution departs from expectations. Although progress is often measured by visual fidelity, their value lies in improving behavior. Before reaching for a cup, a person anticipates its weight and resistance to grasping, shaping the hand before contact. Such anticipation is coarse and rarely pictorial, yet it guides action. This raises a central question: which predictive capabilities improve behavior? Existing surveys, organized by architecture, output modality, or application domain, leave this question implicit. We introduce three progressively stronger capability levels: Plausible models preserve task-relevant temporal, geometric, or physical structure; Controllable models additionally predict how interventions alter that structure; and Actionable models translate predictions into measurable gains in planning, action, learning, evaluation, verification, recovery, or data selection. We complement this hierarchy with a 3 x 4 matrix crossing geometry, physics, and action grounding with improvement loops centered on data, rewards, policies, and the model itself. Using this framework, we survey manipulation, navigation, locomotion, autonomous driving, and general embodied learning, tracing technical progressions, clarifying capability requirements, and examining datasets, benchmarks, and evaluation protocols. We identify challenges in long-horizon consistency, uncertainty calibration, causal intervention testing, latency, verification and recovery, and cross-embodiment transfer. This perspective shifts evaluation from visual plausibility toward whether predictions capture task-relevant state, reflect intervention effects, and improve the closed-loop behavior of embodied agents.",
+      "abstract_zh": "世界模型通过维持隐藏状态、预测后果、比较干预措施以及在执行偏离预期时进行适应，连接了具身智能中的感知与决策。尽管进展通常通过视觉逼真度来衡量，但它们的价值在于改善行为。在伸手去拿杯子之前，人们会预期其重量和抓握时的阻力，从而在接触之前调整手的形状。这种预期是粗略的，且很少是图像化的，但它指导着行动。这引发了一个核心问题：哪些预测能力能够改善行为？现有的调查研究根据架构、输出方式或应用领域进行组织，但未明确回答这一问题。我们提出了三个逐渐增强的能力层次：可信模型保留与任务相关的时间、几何或物理结构；可控模型进一步预测干预如何改变该结构；可操作模型则将预测转化为在规划、行动、学习、评估、验证、恢复或数据选择中的可测量收益。我们用一个3 x 4的矩阵补充了这一层次结构，将几何、物理和行动基础与围绕数据、奖励、策略和模型本身的改进循环相交。利用这一框架，我们调查了操控、导航、运动、自动驾驶和一般的具身学习，追踪技术进展，澄清能力要求，并检查数据集、基准和评估协议。我们识别出在长时间一致性、不确定性校准、因果干预测试、延迟、验证与恢复以及跨具身转移方面的挑战。这一视角将评估从视觉可信性转向预测是否捕捉到与任务相关的状态、反映干预效果以及改善具身代理的闭环行为。",
+      "authors": [
+        "Nanjie Yao",
+        "Hao Wang",
+        "Chong Cheng",
+        "Zhikang Chen",
+        "Wenzhe Li",
+        "Jiafei Lyu",
+        "Li Shen",
+        "Peilin Zhao",
+        "Zongqing Lu",
+        "Gao Huang",
+        "Steven Hoi",
+        "Dacheng Tao",
+        "Deheng Ye"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16697",
+      "tags": [
+        "世界模型/生成",
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "World Models for Embodied Intelligence: From Plausible to Controllable to Actionable",
+      "title_zh": "具身智能的世界模型：从可信到可控再到可操作",
+      "url": "/daily/2026-09-16/#paper-2609-16697"
+    },
+    {
+      "abstract": "3D single object tracking (SOT) in LiDAR point clouds is essential for autonomous systems, but remains challenging under sparse and incomplete observations. In such cases, different target points provide highly uneven constraints on the object center, causing some point-to-center votes to be substantially less reliable than others. Existing point-based trackers typically aggregate these hypotheses without explicitly modeling their reliability, allowing inaccurate votes to contaminate proposal clustering and degrade localization accuracy. To address this issue, we propose \\textbf{SAVTrack}, a motion-aware tracking framework with \\textbf{Selective Vote Aggregation (SAV)}. SAVTrack estimates the reliability of each candidate vote from both local seed features and inter-frame motion context, and removes low-confidence hypotheses before proposal clustering. This pre-aggregation gating prevents unreliable hypotheses from affecting cluster formation while introducing only modest computational overhead. SAVTrack achieves competitive performance on KITTI and nuScenes, reaching 68.4/87.4 and 58.44/69.82 Success/Precision, respectively, while running at 82 FPS. It retains fewer than one-sixth of the candidate votes used by dense aggregation and remains particularly effective under sparse target observations.",
+      "abstract_zh": "在LiDAR点云中进行3D单目标跟踪（SOT）对自主系统至关重要，但在稀疏和不完整的观测条件下仍然具有挑战性。在这种情况下，不同的目标点对物体中心提供了高度不均匀的约束，导致一些点到中心的投票显著不可靠。现有的基于点的跟踪器通常在没有明确建模其可靠性的情况下聚合这些假设，允许不准确的投票污染提议聚类并降低定位精度。为了解决这个问题，我们提出了 extbf{SAVTrack}，一种具有 extbf{选择性投票聚合（SAV）}的运动感知跟踪框架。SAVTrack通过局部种子特征和帧间运动上下文来估计每个候选投票的可靠性，并在提议聚类之前去除低置信度的假设。这种预聚合门控防止了不可靠的假设影响聚类形成，同时仅引入适度的计算开销。SAVTrack在KITTI和nuScenes上实现了竞争性能，分别达到了68.4/87.4和58.44/69.82的成功率/精度，同时以82 FPS的速度运行。它保留的候选投票数量不到密集聚合的六分之一，并在稀疏目标观测下仍然特别有效。",
+      "authors": [
+        "Sifan Zhou",
+        "Linyue Tan",
+        "Qiwei Wang",
+        "Ziyu Zhao",
+        "Xiaobo Lu"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16662",
+      "tags": [
+        "LiDAR/点云",
+        "感知",
+        "地图/定位"
+      ],
+      "title": "SAVTrack: Selective Vote Aggregation for Reliability-Aware Point Cloud Tracking",
+      "title_zh": "SAVTrack：面向可靠性意识的点云跟踪的选择性投票聚合",
+      "url": "/daily/2026-09-16/#paper-2609-16662"
+    },
+    {
+      "abstract": "Efficient perception is central to robotic systems operating under constrained computation, memory, and latency budgets. Knowledge transfer from larger pretrained models offers a practical route to stronger compact perception networks, but existing approaches commonly rely on fixed distillation objectives or manually designed interaction mechanisms. Building on Hereditary Knowledge Transfer (HKT), we propose LePoKet (Learnable Parameter Optimization for Knowledge Transfer), a structural transfer framework that embeds knowledge inheritance directly into the forward computation. LePoKet introduces a block-wise Extract-Transform-Mix interface whose interaction parameters are optimized jointly with the child network through a Learnable Genetic Attention (LGA) operator, without auxiliary distillation losses or temperature scaling. We first characterize the mechanism on CIFAR-10 and CIFAR-100 using ResNet parent-child pairs, obtaining relative error reductions of 24.57% and 25.1%, respectively, over standard child training. We then evaluate LePoKet for dense motion estimation by integrating it into a compact RAFT-based optical-flow model trained only on FlyingChairs and FlyingThings3D. LePoKet improves the compact RAFT baseline from 2.21 to 1.92 EPE on Sintel Clean, from 3.35 to 3.01 on Sintel Final, and from 7.51 to 6.39 on KITTI. A direct comparison with HKT further shows that LePoKet improves CIFAR-10 accuracy from 92.40% to 93.40% while achieving the best Sintel Final and KITTI errors among the evaluated compact transfer variants, with comparable performance on Sintel Clean. These results demonstrate that learnable structural transfer generalizes across recognition and motion perception tasks and provides a promising approach for efficient robotic vision.",
+      "abstract_zh": "高效的感知对于在计算、内存和延迟预算受限的机器人系统至关重要。通过从更大预训练模型中进行知识转移，为构建更强大的紧凑感知网络提供了一条实用的途径，但现有方法通常依赖于固定的蒸馏目标或手动设计的交互机制。在遗传知识转移（Hereditary Knowledge Transfer, HKT）的基础上，我们提出了LePoKet（可学习参数优化的知识转移），这是一种将知识继承直接嵌入前向计算的结构性转移框架。LePoKet引入了一种块级提取-转换-混合接口，其交互参数通过可学习的遗传注意力（Learnable Genetic Attention, LGA）操作符与子网络共同优化，无需辅助蒸馏损失或温度缩放。我们首先在CIFAR-10和CIFAR-100上使用ResNet父子对对该机制进行表征，分别获得相对于标准子训练的相对误差降低24.57%和25.1%。然后，我们通过将LePoKet集成到仅在FlyingChairs和FlyingThings3D上训练的紧凑RAFT基础光流模型中，评估其在密集运动估计中的表现。LePoKet将紧凑RAFT基线在Sintel Clean上的EPE从2.21提高到1.92，在Sintel Final上从3.35降低到3.01，在KITTI上从7.51降低到6.39。与HKT的直接比较进一步表明，LePoKet将CIFAR-10的准确率从92.40%提高到93.40%，同时在评估的紧凑转移变体中实现了最佳的Sintel Final和KITTI误差，并在Sintel Clean上表现相当。这些结果表明，可学习的结构转移在识别和运动感知任务中具有广泛的泛化能力，并为高效的机器人视觉提供了一种有前景的方法。",
+      "authors": [
+        "Yanick C. Tchenko",
+        "Felix Mohr",
+        "Hicham Hadj-Abdelkader",
+        "Hedi Tabia"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16637",
+      "tags": [
+        "感知"
+      ],
+      "title": "Can Knowledge Transfer Parameters Be Learned? LePoKet for Efficient Robotic Vision",
+      "title_zh": "知识转移参数可以被学习吗？LePoKet用于高效的机器人视觉",
+      "url": "/daily/2026-09-16/#paper-2609-16637"
+    },
+    {
+      "abstract": "Digital twins provide a scalable and cost-effective complement to real-world testing for validating autonomous-driving and advanced driver-assistance system (ADAS) sensor pipelines. However, quantifying their fidelity remains challenging, particularly for 3D LiDAR point clouds, where conventional geometric metrics may overlook important structural discrepancies. We present a graph-based framework for evaluating the structural fidelity of simulated LiDAR point clouds against real-world scans. While scan-level metrics such as Chamfer distance capture point-wise geometric similarity, they do not explicitly represent connectivity, topology, or object-level organization. Our framework constructs graphs from real and simulated point clouds, applies Louvain community detection to identify spatially coherent subgraphs, and matches corresponding communities using centroid proximity. For each matched pair, we compute $r_\\lambda$, a bounded graph-spectral metric motivated by Weyl's inequality, and compare it with density-aware Chamfer distance (CDC) as a geometric baseline. Controlled perturbation experiments demonstrate that $r_\\lambda$ is invariant to rigid transformations and robust to sensor noise while remaining sensitive to structural deformation. We evaluate the framework on 50 paired real and simulated LiDAR scans acquired using a Velodyne VLP-32C sensor and CARLA, respectively. The dataset contains more than 1,000 matched communities across four representative classes: vehicles, vegetation, trees, and building walls. The results show that geometric and structural measures capture complementary aspects of simulation fidelity, supporting graph-spectral analysis as an additional diagnostic layer for validating digital twins in ADAS and autonomous-driving applications.",
+      "abstract_zh": "数字双胞胎为验证自主驾驶和高级驾驶辅助系统（ADAS）传感器管道提供了一种可扩展且具有成本效益的补充，替代现实世界的测试。然而，量化其保真度仍然具有挑战性，特别是在3D LiDAR点云中，传统的几何度量可能忽视重要的结构差异。我们提出了一种基于图的框架，用于评估模拟LiDAR点云相对于现实世界扫描的结构保真度。尽管诸如Chamfer距离等扫描级度量捕捉了逐点的几何相似性，但它们并未明确表示连接性、拓扑或对象级组织。我们的框架从真实和模拟的点云构建图，应用Louvain社区检测以识别空间上连贯的子图，并通过质心接近度匹配相应的社区。对于每对匹配，我们计算$r_ heta$，这是一个受Weyl不等式启发的有界图谱度量，并将其与考虑密度的Chamfer距离（CDC）作为几何基线进行比较。控制扰动实验表明，$r_ heta$对刚性变换不变，对传感器噪声具有鲁棒性，同时对结构变形敏感。我们在使用Velodyne VLP-32C传感器和CARLA分别获取的50对真实和模拟LiDAR扫描上评估了该框架。该数据集包含超过1,000个匹配社区，涵盖四个代表性类别：车辆、植被、树木和建筑墙体。结果表明，几何和结构度量捕捉了仿真保真度的互补方面，支持图谱分析作为验证ADAS和自主驾驶应用中数字双胞胎的额外诊断层。",
+      "authors": [
+        "Ghazal Farhani",
+        "Taufiq Rahman"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16378",
+      "tags": [
+        "仿真/数据",
+        "LiDAR/点云",
+        "深度/几何"
+      ],
+      "title": "Geometry vs Structure: Graph-Based Diagnostics for LiDAR Point-Cloud Simulation Fidelity",
+      "title_zh": "几何与结构：基于图的LiDAR点云仿真保真度诊断",
+      "url": "/daily/2026-09-16/#paper-2609-16378"
+    },
+    {
+      "abstract": "Vision-language models (VLMs) can generate routes directly from aerial imagery for off-road navigation, but their predictions provide no indication of reliability. We present UDAV, an Uncertainty-Driven Adaptive VLM Waypoint Planner for UAV-guided UGV navigation. UDAV draws multiple stochastic trajectory predictions, selects their medoid as a self-consistent nominal route, and estimates predictive uncertainty from their spatial dispersion. When the maximum uncertainty across interior waypoints exceeds a threshold, UDAV invokes a reconsideration stage; otherwise, it returns the medoid directly. We evaluate UDAV on 400 held-out trajectory queries from two UAV flights. Stochastic medoid selection reduces the mean average displacement error (ADE) from 147.4 pixels for a deterministic prediction to 115.9 pixels. The complete planner achieves a mean ADE of 110.4 pixels, a 25.1% reduction relative to deterministic planning, while producing valid trajectories for all queries. UDAV also yields the lowest 90th- and 95th-percentile errors among all evaluated configurations, including a higher-budget K=10 consensus baseline. Relative to the K=5 medoid, UDAV reduces these errors from 225.3 and 326.0 pixels to 199.0 and 290.8 pixels, respectively. These results demonstrate that stochastic VLM predictions provide both a stronger nominal route and an actionable uncertainty signal for selectively mitigating large planning errors.",
+      "abstract_zh": "视觉语言模型（VLM）可以直接从航拍图像生成越野导航路线，但其预测并未提供可靠性指示。我们提出了 UDAV，一种用于无人机引导的地面无人驾驶车辆（UGV）导航的基于不确定性的自适应 VLM 路径点规划器。UDAV 绘制多个随机轨迹预测，选择其质心作为自洽的名义路线，并根据其空间分散度估计预测不确定性。当内部路径点的最大不确定性超过阈值时，UDAV 启动重新考虑阶段；否则，直接返回质心。我们在两次无人机飞行的 400 个保留轨迹查询上评估了 UDAV。随机质心选择将确定性预测的平均位移误差（ADE）从 147.4 像素降低到 115.9 像素。完整的规划器实现了平均 ADE 为 110.4 像素，相较于确定性规划减少了 25.1%，同时为所有查询生成有效轨迹。UDAV 还在所有评估配置中产生了最低的 90 百分位和 95 百分位误差，包括更高预算的 K=10 共识基线。相较于 K=5 的质心，UDAV 将这些误差从 225.3 和 326.0 像素分别降低到 199.0 和 290.8 像素。这些结果表明，随机 VLM 预测不仅提供了更强的名义路线，还提供了可操作的不确定性信号，以选择性地减轻大规划误差。",
+      "authors": [
+        "Ghazal Farhani",
+        "Shabnam Shabani"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16368",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "世界模型/生成"
+      ],
+      "title": "UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner",
+      "title_zh": "UDAV：基于不确定性的自适应 VLM 路径点规划器",
+      "url": "/daily/2026-09-16/#paper-2609-16368"
+    },
+    {
+      "abstract": "Robots operating in open environments act under partial observability, physical constraints, and dynamic task contexts. Beyond mapping observations and language instructions to actions, they must anticipate how candidate actions may affect future states and task-relevant outcomes. Recent advances in world models, video generation, and Vision-Language-Action (VLA) policies have motivated the development of World-Action Models (WAMs), which couple future world prediction with executable action generation. This survey provides a robotics-oriented review of WAMs. We clarify their scope relative to conventional world models, model-based reinforcement learning, action-conditioned video generation, and reactive VLA policies, and organize existing methods through a unified taxonomy covering representations, transition modeling, action interfaces, architectures, training pipelines, data modalities, and scaling strategies. We further review applications of WAMs in manipulation, navigation, and autonomous driving, and we summarize the datasets, benchmarks, metrics, and protocols used to evaluate WAM systems. Finally, we discuss key challenges in action alignment, world-action factorization, spatial and multi-view consistency, long-horizon memory, neural simulation for closed-loop policy learning, and efficient inference. Taken together, this survey aims to provide a concise technical foundation for integrating predictive world modeling with action generation, toward more reliable embodied robot intelligence. Project page: https://rcl-robotics.github.io/Awesome-World-Action-Models.",
+      "abstract_zh": "在开放环境中操作的机器人在部分可观测性、物理约束和动态任务背景下进行行动。除了将观察结果和语言指令映射到动作之外，它们还必须预测候选动作如何影响未来状态和与任务相关的结果。最近在世界模型、视频生成和视觉-语言-动作（Vision-Language-Action, VLA）策略方面的进展，促使了世界-动作模型（World-Action Models, WAMs）的发展，该模型将未来世界预测与可执行动作生成相结合。本综述提供了一个面向机器人领域的WAMs回顾。我们澄清了它们相对于传统世界模型、基于模型的强化学习、动作条件的视频生成和反应式VLA策略的范围，并通过一个统一的分类法组织现有方法，涵盖表示、转移建模、动作接口、架构、训练流程、数据模态和扩展策略。我们进一步回顾了WAMs在操控、导航和自动驾驶中的应用，并总结了用于评估WAM系统的数据集、基准、指标和协议。最后，我们讨论了在动作对齐、世界-动作因子分解、空间和多视图一致性、长时间记忆、用于闭环策略学习的神经仿真以及高效推理等方面的关键挑战。综上所述，本综述旨在为将预测性世界建模与动作生成相结合提供简明的技术基础，以实现更可靠的具身机器人智能。项目页面：https://rcl-robotics.github.io/Awesome-World-Action-Models。",
+      "authors": [
+        "Zuxing Lu",
+        "Hongjia Zhai",
+        "Guanzhi Wang",
+        "Huajian Zeng",
+        "Jiaqi Yang",
+        "Jingyu Liu",
+        "Lei Cheng",
+        "Yuantai Zhang",
+        "Yuheng Qiu",
+        "Zezhou Cheng",
+        "Ivan Laptev",
+        "Danfei Xu",
+        "Benjamin Riviere",
+        "Giuseppe Loianno",
+        "Eric Xing",
+        "Xingxing Zuo"
+      ],
+      "date": "2026-09-16",
+      "id": "2609.16074",
+      "tags": [
+        "仿真/数据",
+        "VLM/VLA",
+        "世界模型/生成"
+      ],
+      "title": "World-Action Models for Robot Learning and Control: A Survey",
+      "title_zh": "机器人学习与控制的世界-动作模型：综述",
+      "url": "/daily/2026-09-16/#paper-2609-16074"
+    },
     {
       "abstract": "Streaming geometric foundation models are emerging as a compelling alternative to SLAM systems. Yet this streaming nature introduces a fundamental issue: each prediction is made from limited context, which is vulnerable to dynamic objects and weak textures. Small local errors accumulate into severe geometric distortion and long-horizon scale drift. We argue that reliable streaming reconstruction requires geometric foundation models to be not only predictive, but also self-correcting. We introduce SURE-Map, a self-correcting framework built upon two complementary principles. First, we explicitly model cross-view geometric uncertainty. Unlike conventional depth or point confidence, which primarily reflects the reliability of individual-view prediction, our uncertainty directly measures whether the jointly predicted pose and depth induce geometrically consistent cross-view pixel correspondences. Second, because local correction alone cannot eliminate slowly accumulating scale errors, we introduce multi-timescale self-correction: fast consecutive-frame inference preserves streaming efficiency, while sparse keyframe-window inference provides longer-range geometric evidence to periodically recalibrate the scale of recent trajectories. SURE-Map establishes new state-of-the-art performance for online feed-forward reconstruction across long-horizon benchmarks, reducing ATE-RMSE from 24.00 to 17.24 m on KITTI, 5.11 to 4.74 m on Oxford Spires, and 31.37 to 28.58 m on VBR, with further improvements to 15.17, 4.63, and 22.12 m when incorporating loop-closure refinement. Project page: https://mingkai-liu.github.io/projects/sure-map/.",
       "abstract_zh": "流式几何基础模型作为一种引人注目的替代方案正在兴起，取代传统的SLAM系统。然而，这种流式特性引入了一个根本性的问题：每次预测都是基于有限的上下文，这使其容易受到动态物体和弱纹理的影响。小的局部误差会累积成严重的几何失真和长时间尺度漂移。我们认为，可靠的流式重建不仅需要几何基础模型具备预测能力，还需要具备自我校正能力。我们提出了SURE-Map，这是一个基于两个互补原则构建的自我校正框架。首先，我们明确建模了视角间的几何不确定性。与传统的深度或点置信度主要反映单视图预测的可靠性不同，我们的几何不确定性直接衡量联合预测的姿态和深度是否引起几何一致的视角间像素对应关系。其次，由于单靠局部校正无法消除缓慢累积的尺度误差，我们引入了多时间尺度自我校正：快速的连续帧推理保持了流式效率，而稀疏的关键帧窗口推理则提供了更长范围的几何证据，以定期重新校准近期轨迹的尺度。SURE-Map在长时间基准测试中建立了在线前馈重建的新一流性能，将KITTI上的ATE-RMSE从24.00降低到17.24米，Oxford Spires上的从5.11降低到4.74米，以及VBR上的从31.37降低到28.58米，当结合回环闭合优化时，进一步改善到15.17、4.63和22.12米。项目页面：https://mingkai-liu.github.io/projects/sure-map/",

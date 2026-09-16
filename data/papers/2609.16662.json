@@ -1,0 +1,55 @@
+{
+  "abstract": "3D single object tracking (SOT) in LiDAR point clouds is essential for autonomous systems, but remains challenging under sparse and incomplete observations. In such cases, different target points provide highly uneven constraints on the object center, causing some point-to-center votes to be substantially less reliable than others. Existing point-based trackers typically aggregate these hypotheses without explicitly modeling their reliability, allowing inaccurate votes to contaminate proposal clustering and degrade localization accuracy. To address this issue, we propose \\textbf{SAVTrack}, a motion-aware tracking framework with \\textbf{Selective Vote Aggregation (SAV)}. SAVTrack estimates the reliability of each candidate vote from both local seed features and inter-frame motion context, and removes low-confidence hypotheses before proposal clustering. This pre-aggregation gating prevents unreliable hypotheses from affecting cluster formation while introducing only modest computational overhead. SAVTrack achieves competitive performance on KITTI and nuScenes, reaching 68.4/87.4 and 58.44/69.82 Success/Precision, respectively, while running at 82 FPS. It retains fewer than one-sixth of the candidate votes used by dense aggregation and remains particularly effective under sparse target observations.",
+  "abstract_zh": "在LiDAR点云中进行3D单目标跟踪（SOT）对自主系统至关重要，但在稀疏和不完整的观测条件下仍然具有挑战性。在这种情况下，不同的目标点对物体中心提供了高度不均匀的约束，导致一些点到中心的投票显著不可靠。现有的基于点的跟踪器通常在没有明确建模其可靠性的情况下聚合这些假设，允许不准确的投票污染提议聚类并降低定位精度。为了解决这个问题，我们提出了 extbf{SAVTrack}，一种具有 extbf{选择性投票聚合（SAV）}的运动感知跟踪框架。SAVTrack通过局部种子特征和帧间运动上下文来估计每个候选投票的可靠性，并在提议聚类之前去除低置信度的假设。这种预聚合门控防止了不可靠的假设影响聚类形成，同时仅引入适度的计算开销。SAVTrack在KITTI和nuScenes上实现了竞争性能，分别达到了68.4/87.4和58.44/69.82的成功率/精度，同时以82 FPS的速度运行。它保留的候选投票数量不到密集聚合的六分之一，并在稀疏目标观测下仍然特别有效。",
+  "arxiv_id": "2609.16662",
+  "arxiv_url": "https://arxiv.org/abs/2609.16662v1",
+  "authors": [
+    "Sifan Zhou",
+    "Linyue Tan",
+    "Qiwei Wang",
+    "Ziyu Zhao",
+    "Xiaobo Lu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16662",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.203469+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16662v1",
+  "published_at": "2026-09-15T05:36:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "autonomous",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 57
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16662v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "地图/定位"
+    ]
+  },
+  "title": "SAVTrack: Selective Vote Aggregation for Reliability-Aware Point Cloud Tracking",
+  "title_zh": "SAVTrack：面向可靠性意识的点云跟踪的选择性投票聚合",
+  "translation_url": "https://hjfy.top/arxiv/2609.16662"
+}

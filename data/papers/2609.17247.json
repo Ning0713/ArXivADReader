@@ -1,0 +1,56 @@
+{
+  "abstract": "An agentic AI driver-assistance framework that integrates perception, compliance reasoning, vehicle-state interpretation, and safety arbitration into a modular and auditable pipeline. The architecture, referred to as DriveMCP, incorporates a sensor-like perception stack alongside DriveLM as the vision-language front end to generate a graph-structured scene understanding (Graph Visual Question Answering) and language-grounded driving information. Key compliance elements in world_state, including posted speed limits and jurisdiction cues, are derived from DriveLM outputs through a structured parsing layer rather than being injected as simulator ground truth. A stateful orchestration layer coordinates specialized experts exposed as Model Context Protocol (MCP) servers: (i) a Rules server that performs retrieval-augmented compliance reasoning over jurisdiction-specific traffic codes and sign conventions, (ii) a Weather server that estimates traction risk and contextual speed advisories, and (iii) an MCP-CAN server that surfaces Controller Area Network (CAN)/On-Board Diagnostics (OBD) telemetry and diagnostic context for health-aware risk shaping. These outputs are fused to generate a structured decision that prompts a recommended course of action. The outcome is then further filtered by a Responsibility-Sensitive Safety (RSS)-inspired guardrail that arbitrates speak versus act decisions under bounded online adaptation. In CARLA simulation across multilingual, cross-border, and dynamic speed-limit scenarios, DriveMCP reduces traffic infractions and overspeed relative to the VLM-Direct, VLM-Direct+RAG, and VLM-Tools-NoArbiter baselines, while improving hazard response time and maintaining sub-second advisory latency.",
+  "abstract_zh": "一种代理智能驾驶辅助框架，将感知、合规推理、车辆状态解释和安全仲裁集成到一个模块化和可审计的流程中。该架构称为DriveMCP，结合了类似传感器的感知堆栈和DriveLM作为视觉-语言前端，以生成图结构场景理解（图形视觉问答）和基于语言的驾驶信息。世界状态中的关键合规元素，包括发布的速度限制和管辖权提示，通过结构化解析层从DriveLM输出中提取，而不是作为模拟器的真实数据注入。一个有状态的协调层协调作为模型上下文协议（Model Context Protocol, MCP）服务器暴露的专业专家：（i）一个规则服务器，执行针对特定管辖区的交通法规和标志惯例的检索增强合规推理；（ii）一个天气服务器，估计牵引风险和上下文速度建议；（iii）一个MCP-CAN服务器，提供控制器局域网（Controller Area Network, CAN）/车载诊断（On-Board Diagnostics, OBD）遥测和健康感知风险塑造的诊断上下文。这些输出被融合以生成结构化决策，从而提示推荐的行动方案。结果随后通过受责任敏感安全（Responsibility-Sensitive Safety, RSS）启发的护栏进一步过滤，在有限的在线适应下仲裁说与行动的决策。在CARLA模拟中，针对多语言、跨境和动态速度限制场景，DriveMCP相较于VLM-Direct、VLM-Direct+RAG和VLM-Tools-NoArbiter基线减少了交通违规和超速，同时提高了危险响应时间并保持了亚秒级的建议延迟。",
+  "arxiv_id": "2609.17247",
+  "arxiv_url": "https://arxiv.org/abs/2609.17247v1",
+  "authors": [
+    "Farzad Nadiri",
+    "Mehdi Cina",
+    "Ahmad B. Rad"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-17247",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.178179+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17247v1",
+  "published_at": "2026-09-15T14:29:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "智能驾驶",
+      "carla",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 78
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17247v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "VLM/VLA",
+      "安全/异常"
+    ]
+  },
+  "title": "DriveMCP: An Agentic AI framework for Advanced Driver Assistance System",
+  "title_zh": "DriveMCP：一种用于高级驾驶辅助系统的代理智能框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.17247"
+}

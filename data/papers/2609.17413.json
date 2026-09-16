@@ -1,0 +1,55 @@
+{
+  "abstract": "This paper investigates easy strategies to boost the performance of existing networks for lidar semantic scene completion (SSC) without requiring complex architectural redesigns. The fact is that, over the last years, SSC methods have mostly pursued architectural innovations, making the models heavier and more complex, e.g., by jointly training a point cloud semantic segmentation branch. In this work, we take a step back and explore two priors used as simple ingredients (possibly noisy) to improve existing approaches: semantic pseudo-labels and sensor visibility information. Concretely, we provide both kinds of information directly as additional inputs to a given SSC network, requiring only a minimal adaptation of the original architecture. We first demonstrate that endowing input point clouds with semantic pseudo-labels from off-the-shelf segmenters significantly improves the performance of existing SSC models. In fact, by evaluating these models against an oracle, we establish that high-quality semantic priors are a primary driver of semantic gains (mIoU), and that the SSC model can be trained just once with ground-truth semantics and then exploited without retraining using any segmenter. Furthermore, we equip the input lidar point cloud with visibility information that distinguishes between empty spaces (between the lidar and a scanned point) and unknown spaces (outside of lines of sight), providing a secondary performance boost across the tested architectures. We study the design space of data for representing visibility information and bound the remaining headroom with a ground-truth oracle on the free-space labels. On SemanticKITTI, these enhancements make older models competitive with state-of-the-art systems across four architectures, in one case even outperforming them. On the SSCBench-nuScenes benchmark, both priors also transfer with the sparser 32-beam sensor.",
+  "abstract_zh": "本文研究了提升现有激光雷达语义场景补全（SSC）网络性能的简单策略，而无需复杂的架构重设计。事实上，在过去几年中，SSC 方法主要追求架构创新，使得模型变得更重且更复杂，例如，通过联合训练点云语义分割分支。在本研究中，我们退后一步，探索作为简单成分（可能带有噪声）的两种先验，以改善现有方法：语义伪标签和传感器可见性信息。具体而言，我们将这两种信息直接作为额外输入提供给特定的 SSC 网络，仅需对原始架构进行最小的适应。我们首先证明，赋予输入点云来自现成分割器的语义伪标签显著提高了现有 SSC 模型的性能。实际上，通过将这些模型与一个理想模型进行评估，我们确定高质量的语义先验是语义增益（mIoU）的主要驱动因素，并且 SSC 模型可以仅用真实语义训练一次，然后在不重新训练的情况下利用任何分割器。此外，我们为输入的激光雷达点云配备了可见性信息，以区分空白区域（激光雷达与扫描点之间）和未知区域（视线之外），在测试的架构中提供了二次性能提升。我们研究了表示可见性信息的数据设计空间，并通过真实标签的理想模型界定了剩余的提升空间。在 SemanticKITTI 数据集上，这些增强使得旧模型在四种架构中与最先进的系统具有竞争力，在某些情况下甚至超越了它们。在 SSCBench-nuScenes 基准测试中，这两种先验也能与更稀疏的 32 梯度传感器进行迁移。",
+  "arxiv_id": "2609.17413",
+  "arxiv_url": "https://arxiv.org/abs/2609.17413v1",
+  "authors": [
+    "Tetiana Martyniuk",
+    "Jonathan Seele",
+    "Alexandre Boulch",
+    "Gilles Puy",
+    "Renaud Marlet",
+    "Raoul de Charette"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-17413",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.239423+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17413v1",
+  "published_at": "2026-09-15T16:37:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "semantickitti",
+      "lidar",
+      "point cloud",
+      "点云",
+      "scene completion"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17413v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "SSC-Priors: Exploring Semantic and Visibility Priors to Boost Lidar Semantic Scene Completion",
+  "title_zh": "SSC-Priors：探索语义和可见性先验以提升激光雷达语义场景补全",
+  "translation_url": "https://hjfy.top/arxiv/2609.17413"
+}

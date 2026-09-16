@@ -1,0 +1,55 @@
+{
+  "abstract": "Vision-language models (VLMs) can generate routes directly from aerial imagery for off-road navigation, but their predictions provide no indication of reliability. We present UDAV, an Uncertainty-Driven Adaptive VLM Waypoint Planner for UAV-guided UGV navigation. UDAV draws multiple stochastic trajectory predictions, selects their medoid as a self-consistent nominal route, and estimates predictive uncertainty from their spatial dispersion. When the maximum uncertainty across interior waypoints exceeds a threshold, UDAV invokes a reconsideration stage; otherwise, it returns the medoid directly. We evaluate UDAV on 400 held-out trajectory queries from two UAV flights. Stochastic medoid selection reduces the mean average displacement error (ADE) from 147.4 pixels for a deterministic prediction to 115.9 pixels. The complete planner achieves a mean ADE of 110.4 pixels, a 25.1% reduction relative to deterministic planning, while producing valid trajectories for all queries. UDAV also yields the lowest 90th- and 95th-percentile errors among all evaluated configurations, including a higher-budget K=10 consensus baseline. Relative to the K=5 medoid, UDAV reduces these errors from 225.3 and 326.0 pixels to 199.0 and 290.8 pixels, respectively. These results demonstrate that stochastic VLM predictions provide both a stronger nominal route and an actionable uncertainty signal for selectively mitigating large planning errors.",
+  "abstract_zh": "视觉语言模型（VLM）可以直接从航拍图像生成越野导航路线，但其预测并未提供可靠性指示。我们提出了 UDAV，一种用于无人机引导的地面无人驾驶车辆（UGV）导航的基于不确定性的自适应 VLM 路径点规划器。UDAV 绘制多个随机轨迹预测，选择其质心作为自洽的名义路线，并根据其空间分散度估计预测不确定性。当内部路径点的最大不确定性超过阈值时，UDAV 启动重新考虑阶段；否则，直接返回质心。我们在两次无人机飞行的 400 个保留轨迹查询上评估了 UDAV。随机质心选择将确定性预测的平均位移误差（ADE）从 147.4 像素降低到 115.9 像素。完整的规划器实现了平均 ADE 为 110.4 像素，相较于确定性规划减少了 25.1%，同时为所有查询生成有效轨迹。UDAV 还在所有评估配置中产生了最低的 90 百分位和 95 百分位误差，包括更高预算的 K=10 共识基线。相较于 K=5 的质心，UDAV 将这些误差从 225.3 和 326.0 像素分别降低到 199.0 和 290.8 像素。这些结果表明，随机 VLM 预测不仅提供了更强的名义路线，还提供了可操作的不确定性信号，以选择性地减轻大规划误差。",
+  "arxiv_id": "2609.16368",
+  "arxiv_url": "https://arxiv.org/abs/2609.16368v1",
+  "authors": [
+    "Ghazal Farhani",
+    "Shabnam Shabani"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16368",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.154390+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16368v1",
+  "published_at": "2026-09-14T21:30:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "无人驾驶",
+      "road",
+      "驾驶",
+      "车辆",
+      "轨迹预测",
+      "uav",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16368v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner",
+  "title_zh": "UDAV：基于不确定性的自适应 VLM 路径点规划器",
+  "translation_url": "https://hjfy.top/arxiv/2609.16368"
+}

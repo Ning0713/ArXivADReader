@@ -1,0 +1,58 @@
+{
+  "abstract": "Generative video models can serve as a promising backbone for robot navigation by predicting future observations as video plans. Recent approaches often condition video planning on short-horizon guidance and recover geometric waypoints through scene reconstruction, leaving longer-horizon planning and precise video-to-action translation less explored. We present CueNav, a video model-based navigation framework combining visual cue guided video planning with an embodiment-specific Inverse-Dynamics Model (IDM). As visual cues, we use a Bird's-Eye View (BEV) map to convey global task context and retain part of the robot body in the egocentric observation to expose embodiment context. These cues guide the video planner, while the IDM translates dense flow fields extracted from the video plan into robot actions. With the visual cue encoding global task context, CueNav achieves nearly 2x higher success in maze navigation than planning without the cue. The body-aware view with the IDM enables precise navigation with 70% success in a narrow passage where comparison methods largely fail to complete the task. We further demonstrate zero-shot semantic-conditioned navigation and deployment of the same video planner across different robot platforms. Our results show that visual cue-guided video planning with embodiment-specific action grounding paves the way toward a generalizable navigation framework for longer-horizon planning and embodiment-aware control. Additional results and code are available on our project website: https://cuenav.github.io.",
+  "abstract_zh": "生成视频模型可以作为机器人导航的有前景的基础，通过预测未来观察作为视频规划。近期的方法通常依赖于短期指导进行视频规划，并通过场景重建恢复几何路径点，而对长期规划和精确的视频到动作转换的研究相对较少。我们提出了CueNav，一个基于视频模型的导航框架，将视觉线索引导的视频规划与特定于体现的逆动力学模型（Inverse-Dynamics Model, IDM）结合起来。作为视觉线索，我们使用鸟瞰图（Bird's-Eye View, BEV）地图来传达全局任务上下文，并在自我中心观察中保留部分机器人身体以揭示体现上下文。这些线索引导视频规划器，而IDM则将从视频规划中提取的密集流场转换为机器人动作。通过视觉线索编码全局任务上下文，CueNav在迷宫导航中的成功率几乎提高了2倍，相较于没有线索的规划。在狭窄通道中，IDM提供的身体感知视图使得导航精确成功率达到70%，而对比方法在完成任务方面大多失败。我们进一步展示了零样本语义条件导航，并在不同机器人平台上部署相同的视频规划器。我们的结果表明，基于视觉线索的引导视频规划与特定于体现的动作基础相结合，为长期规划和体现感知控制的可泛化导航框架铺平了道路。更多结果和代码可在我们的项目网站上获取：https://cuenav.github.io。",
+  "arxiv_id": "2609.16737",
+  "arxiv_url": "https://arxiv.org/abs/2609.16737v1",
+  "authors": [
+    "Hojin Lee",
+    "Sizhe Lester Li",
+    "Maximilian Hilger",
+    "Susie Lu",
+    "Achim J. Lilienthal",
+    "Vincent Sitzmann",
+    "Daniel A. Duecker"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16737",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.164720+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16737v1",
+  "published_at": "2026-09-15T07:11:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "道路",
+      "bev",
+      "bird's-eye",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16737v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Seeing What Matters: Visual Cue Guided Video Planning for Generalizable Robot Navigation",
+  "title_zh": "关注重要信息：基于视觉线索的可泛化机器人导航视频规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.16737"
+}

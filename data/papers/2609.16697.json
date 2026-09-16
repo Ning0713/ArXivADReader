@@ -1,0 +1,67 @@
+{
+  "abstract": "World models connect perception and decision-making in embodied intelligence by maintaining hidden state, anticipating consequences, comparing interventions, and adapting when execution departs from expectations. Although progress is often measured by visual fidelity, their value lies in improving behavior. Before reaching for a cup, a person anticipates its weight and resistance to grasping, shaping the hand before contact. Such anticipation is coarse and rarely pictorial, yet it guides action. This raises a central question: which predictive capabilities improve behavior? Existing surveys, organized by architecture, output modality, or application domain, leave this question implicit. We introduce three progressively stronger capability levels: Plausible models preserve task-relevant temporal, geometric, or physical structure; Controllable models additionally predict how interventions alter that structure; and Actionable models translate predictions into measurable gains in planning, action, learning, evaluation, verification, recovery, or data selection. We complement this hierarchy with a 3 x 4 matrix crossing geometry, physics, and action grounding with improvement loops centered on data, rewards, policies, and the model itself. Using this framework, we survey manipulation, navigation, locomotion, autonomous driving, and general embodied learning, tracing technical progressions, clarifying capability requirements, and examining datasets, benchmarks, and evaluation protocols. We identify challenges in long-horizon consistency, uncertainty calibration, causal intervention testing, latency, verification and recovery, and cross-embodiment transfer. This perspective shifts evaluation from visual plausibility toward whether predictions capture task-relevant state, reflect intervention effects, and improve the closed-loop behavior of embodied agents.",
+  "abstract_zh": "世界模型通过维持隐藏状态、预测后果、比较干预措施以及在执行偏离预期时进行适应，连接了具身智能中的感知与决策。尽管进展通常通过视觉逼真度来衡量，但它们的价值在于改善行为。在伸手去拿杯子之前，人们会预期其重量和抓握时的阻力，从而在接触之前调整手的形状。这种预期是粗略的，且很少是图像化的，但它指导着行动。这引发了一个核心问题：哪些预测能力能够改善行为？现有的调查研究根据架构、输出方式或应用领域进行组织，但未明确回答这一问题。我们提出了三个逐渐增强的能力层次：可信模型保留与任务相关的时间、几何或物理结构；可控模型进一步预测干预如何改变该结构；可操作模型则将预测转化为在规划、行动、学习、评估、验证、恢复或数据选择中的可测量收益。我们用一个3 x 4的矩阵补充了这一层次结构，将几何、物理和行动基础与围绕数据、奖励、策略和模型本身的改进循环相交。利用这一框架，我们调查了操控、导航、运动、自动驾驶和一般的具身学习，追踪技术进展，澄清能力要求，并检查数据集、基准和评估协议。我们识别出在长时间一致性、不确定性校准、因果干预测试、延迟、验证与恢复以及跨具身转移方面的挑战。这一视角将评估从视觉可信性转向预测是否捕捉到与任务相关的状态、反映干预效果以及改善具身代理的闭环行为。",
+  "arxiv_id": "2609.16697",
+  "arxiv_url": "https://arxiv.org/abs/2609.16697v1",
+  "authors": [
+    "Nanjie Yao",
+    "Hao Wang",
+    "Chong Cheng",
+    "Zhikang Chen",
+    "Wenzhe Li",
+    "Jiafei Lyu",
+    "Li Shen",
+    "Peilin Zhao",
+    "Zongqing Lu",
+    "Gao Huang",
+    "Steven Hoi",
+    "Dacheng Tao",
+    "Deheng Ye"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16697",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.162835+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16697v1",
+  "published_at": "2026-09-15T06:22:42Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "grasping",
+      "embodied intelligence"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "标题明确属于非道路驾驶领域",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 41
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16697v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "本文是一篇面向具身智能世界模型的综述，提出“合理—可控—可行动”三级能力框架，并从几何、物理、动作基础以及数据、奖励、策略和模型优化闭环等维度分析世界模型。自动驾驶是其明确覆盖的重要应用领域之一，重点讨论世界模型如何支持后果预测、干预推演、规划决策、闭环评估、安全验证与故障恢复。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "World Models for Embodied Intelligence: From Plausible to Controllable to Actionable",
+  "title_zh": "具身智能的世界模型：从可信到可控再到可操作",
+  "translation_url": "https://hjfy.top/arxiv/2609.16697"
+}

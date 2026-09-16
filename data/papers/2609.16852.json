@@ -1,0 +1,55 @@
+{
+  "abstract": "Industrial IoT environments increasingly deploy autonomous mobile robots for tasks such as material handling, product assembly, or infrastructure inspection. In such deployments, collaborative perception enables robots to share LiDAR observations and collectively construct a richer model of their environment than an individual agent could produce alone. However, industrial environments are dynamic spaces where robot positions shift continuously, network bandwidth fluctuates, and the marginal contribution of robots to perception quality varies at runtime. Existing collaborative perception approaches are designed for static participation assumptions and cannot adapt to these dynamics without sacrificing either detection precision or communication efficiency. This paper presents CoAdapt, an adaptive collaborative perception framework for IIoT robotic swarms in which a Large Language Model (LLM) serves as a runtime fusion controller, jointly deciding which robots participate in the fusion process and which fusion algorithm to apply based on the current spatial configuration and network state. The LLM reasons over structured natural language descriptions of the scene derived from raw LiDAR point clouds, requiring no taskspecific training and generalizing to unseen swarm topologies. Evaluated on the OPV2V benchmark across 25 scenarios, our approach achieves a 38% reduction in communication cost while maintaining detection precision comparable to static baseline approaches.",
+  "abstract_zh": "工业物联网环境中越来越多地部署自主移动机器人，执行物料处理、产品组装或基础设施检查等任务。在这些部署中，协作感知使得机器人能够共享激光雷达（LiDAR）观测数据，并共同构建比单个代理能够独立生成的更丰富的环境模型。然而，工业环境是动态的空间，机器人位置持续变化，网络带宽波动，且机器人对感知质量的边际贡献在运行时也会有所不同。现有的协作感知方法是基于静态参与假设设计的，无法在不牺牲检测精度或通信效率的情况下适应这些动态变化。本文提出了CoAdapt，一种针对工业物联网机器人群体的自适应协作感知框架，其中大语言模型（LLM）作为运行时融合控制器，基于当前的空间配置和网络状态共同决定哪些机器人参与融合过程以及应用哪种融合算法。LLM对从原始LiDAR点云中提取的场景结构化自然语言描述进行推理，无需特定任务的训练，并能够推广到未见过的群体拓扑。在25个场景的OPV2V基准测试中，我们的方法实现了38%的通信成本降低，同时保持了与静态基线方法相当的检测精度。",
+  "arxiv_id": "2609.16852",
+  "arxiv_url": "https://arxiv.org/abs/2609.16852v1",
+  "authors": [
+    "Houssam Hajj Hassan",
+    "Antonia Maria Masucci",
+    "Lynda Zitoune",
+    "Salah-Eddine Elayoubi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-16#paper-2609-16852",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-16T09:38:00.268836+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.16852v1",
+  "published_at": "2026-09-15T08:44:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "opv2v",
+      "autonomous",
+      "lidar",
+      "点云",
+      "robot",
+      "robotic"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-09-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.16852v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "多传感器融合"
+    ]
+  },
+  "title": "CoAdapt: An LLM-based Framework for Adaptive Collaborative Perception in IIoT Robotic Swarms",
+  "title_zh": "CoAdapt：一种基于大语言模型的工业物联网机器人群体自适应协作感知框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.16852"
+}
