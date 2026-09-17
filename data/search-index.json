@@ -1,6 +1,356 @@
 {
-  "generated_at": "2026-09-16T09:39:25.317852+00:00",
+  "generated_at": "2026-09-17T09:47:25.157865+00:00",
   "items": [
+    {
+      "abstract": "Efficient perception models are essential for real-time autonomous driving, where accuracy and computational cost must be carefully balanced. However, applying knowledge distillation to multi-task driving scene segmentation is challenging because drivable-area and lane segmentation exhibit different spatial characteristics and class imbalance. We propose KDTwin, a task-aware distillation framework for lightweight multi-task segmentation networks. The proposed method performs distillation at both the shared encoder and task-specific decoders. Encoder-level pairwise distillation transfers spatial relational knowledge to enhance the student's shared representation. For the decoders, we use a weighted loss for drivable-area segmentation and a boundary-aware loss for lane segmentation, enabling task-adaptive knowledge transfer without increasing inference complexity. Experiments on BDD100K show consistent improvements across the evaluated CNN-based and Transformer-based student models without increasing inference-time parameters or FLOPs. The results show that designing distillation objectives according to task-specific characteristics can effectively enhance multi-task segmentation performance for autonomous driving. The source code is available at https://github.com/chequanghuy/KDTwin.",
+      "abstract_zh": "高效的感知模型对于实时自主驾驶至关重要，其中准确性和计算成本必须谨慎平衡。然而，将知识蒸馏应用于多任务驾驶场景分割面临挑战，因为可行驶区域和车道分割表现出不同的空间特征和类别不平衡。我们提出了KDTwin，一种面向任务的蒸馏框架，用于轻量级多任务分割网络。所提出的方法在共享编码器和任务特定解码器上进行蒸馏。编码器级的成对蒸馏传递空间关系知识，以增强学生的共享表示。对于解码器，我们使用加权损失进行可行驶区域分割，并使用边界感知损失进行车道分割，从而实现任务自适应的知识转移，而不增加推理复杂度。在BDD100K上的实验表明，在评估的基于CNN和基于Transformer的学生模型中，均取得了一致的改进，而没有增加推理时间参数或FLOPs。结果表明，根据任务特定特征设计蒸馏目标可以有效提升自主驾驶的多任务分割性能。源代码可在https://github.com/chequanghuy/KDTwin获取。",
+      "authors": [
+        "Huy Che",
+        "Minh-Khoi Do",
+        "Dinh-Duy Phan",
+        "Duc-Khai Lam"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.18955",
+      "tags": [
+        "感知"
+      ],
+      "title": "KDTwin: Task-Aware Knowledge Distillation for Lightweight Multi-Task Driving Scene Segmentation",
+      "title_zh": "KDTwin：面向任务的知识蒸馏用于轻量级多任务驾驶场景分割",
+      "url": "/daily/2026-09-17/#paper-2609-18955"
+    },
+    {
+      "abstract": "Automating robotic harvesting in intensive agriculture within Mediterranean greenhouses requires overcoming significant challenges related to the geometric complexity of plants and occluded fruits. Although existing literature offers solutions targeting crops that grow in isolation (e.g., apples, sweet peppers, or peaches), the fundamental challenge lies in cluster-growing vegetables, where fixed sensors mounted on robotic systems fail to detect fruits hidden behind the visible surface. To address this limitation, this study presents a comprehensive pipeline for the 3D reconstruction and precise localization of each fruit within a cluster, including heavily occluded instances. The proposed methodology is structured into five sequential stages: i) point cloud acquisition using the AgriSEE Next Best View (NBV) active planner; ii) stochastic noise filtering via Statistical Outlier Removal (SOR); iii) surface classification and segmentation using Region Growing (RG); iv) isolation and recovery of occluded fruits through Density-Based Spatial Clustering of Applications with Noise (DBSCAN); and v) 3D pose estimation (position and orientation). This approach extracts the complete cluster geometry, ensuring the reliable identification of partially hidden tomatoes. Evaluated across multiple scenarios with varying occlusion levels within a simulation framework rigorously validated against real-world conditions, the system achieves a precision exceeding 90\\%, an average recall of 82.8\\%, and a mean Intersection over Union (mIoU) of 80.7\\%. Furthermore, it demonstrates high repeatability in centroid estimation with a Root Mean Square Error (RMSE) of merely 4.2~mm, verifying its technical feasibility and high accuracy for autonomous harvesting operations.",
+      "abstract_zh": "在地中海温室中实现集约农业的机器人采摘自动化，需要克服与植物的几何复杂性和被遮挡水果相关的重大挑战。尽管现有文献提供了针对孤立生长作物（例如苹果、甜椒或桃子）的解决方案，但根本挑战在于簇生长的蔬菜，其中固定传感器无法检测到隐藏在可见表面后面的水果。为了解决这一局限性，本研究提出了一种全面的管道，用于对簇中每个水果进行三维重建和精确定位，包括严重遮挡的实例。所提出的方法论分为五个顺序阶段：i）使用 AgriSEE Next Best View (NBV) 主动规划器进行点云采集；ii）通过统计离群点去除 (SOR) 进行随机噪声过滤；iii）使用区域生长 (RG) 进行表面分类和分割；iv）通过基于密度的空间聚类应用与噪声 (DBSCAN) 隔离和恢复被遮挡的水果；v）进行三维姿态估计（位置和方向）。该方法提取了完整的簇几何形状，确保可靠识别部分隐藏的番茄。在一个经过严格验证的模拟框架中评估多个场景，具有不同的遮挡水平，系统的精度超过90%，平均召回率为82.8%，平均交并比 (mIoU) 为80.7%。此外，它在质心估计中表现出高重复性，均方根误差 (RMSE) 仅为4.2毫米，验证了其在自主采摘操作中的技术可行性和高准确性。",
+      "authors": [
+        "Fernando Cañadas-Aránega",
+        "Rowan Border",
+        "José C. Moreno",
+        "José L. Blanco-Claraco"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.18738",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "LiDAR/点云"
+      ],
+      "title": "Active perception for robotic harvesting: 3D reconstruction and localisation of tomatoes hidden within clusters in a Mediterranean greenhouse",
+      "title_zh": "机器人采摘的主动感知：地中海温室中隐藏在簇中的番茄的三维重建与定位",
+      "url": "/daily/2026-09-17/#paper-2609-18738"
+    },
+    {
+      "abstract": "State-of-the-art vision-language-action models (VLA) for autonomous driving face critical limitations: excessive parameter counts, inefficient high-resolution image processing, and lack of temporal memory. We introduce Fast and EffectIVE VLA (FIVE-VLA) to address these through two key contributions. First, we employ an efficient vision encoder that processes high-resolution ($448 \\times 896$) images while generating only 98 tokens, over $5\\times$ fewer than existing approaches, and bypass text generation entirely for single-pass trajectory prediction. Second, we propose Recurrent Action Memory (RAM), a lightweight module that conditions action prediction on previous action tokens, providing temporal context critical for manoeuvres such as overtaking and emergency braking. With only 641M parameters, FIVE-VLA completes $\\sim$10% more routes without traffic rule infractions than the previous state-of-the-art VLA on the challenging Bench2Drive closed-loop driving benchmark. Non-reactive open-loop simulation on the large-scale real-world NVIDIA Physical AI AV dataset shows 10.2% and 7.7% lower collision-violation rates than SimLingo in single- and four-view settings, respectively. Additionally, FIVE-VLA runs at $\\sim$30 fps on an A100 and $\\sim$4 fps on a T4 GPU (proxy to an edge device), representing an 8-30$\\times$ speedup over previous methods.",
+      "abstract_zh": "最先进的视觉-语言-动作模型（VLA）在自主驾驶中面临着关键的限制：过多的参数数量、低效的高分辨率图像处理以及缺乏时间记忆。我们提出了快速有效的 VLA（FIVE-VLA）来解决这些问题，主要有两个关键贡献。首先，我们采用了一种高效的视觉编码器，该编码器在处理高分辨率（$448 imes 896$）图像时仅生成 98 个标记，比现有方法少超过 $5 imes$，并且在单次轨迹预测中完全跳过文本生成。其次，我们提出了递归动作记忆（Recurrent Action Memory, RAM），这是一个轻量级模块，它根据先前的动作标记来调整动作预测，提供了对超车和紧急刹车等机动操作至关重要的时间上下文。FIVE-VLA 仅用 641M 参数，在具有挑战性的 Bench2Drive 闭环驾驶基准测试中，完成的路线比之前的最先进 VLA 多约 10%，且没有违反交通规则。在大规模真实世界的 NVIDIA Physical AI AV 数据集上进行的非反应性开环仿真显示，在单视图和四视图设置中，其碰撞违规率分别比 SimLingo 低 10.2% 和 7.7%。此外，FIVE-VLA 在 A100 GPU 上运行约 30 fps，在 T4 GPU（相当于边缘设备）上运行约 4 fps，较之前的方法实现了 8-30 倍的加速。",
+      "authors": [
+        "Kemal Oksuz",
+        "Alexandru Buburuzan",
+        "Yuhan Yao",
+        "Puneet K. Dokania"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.18623",
+      "tags": [
+        "仿真/数据",
+        "VLM/VLA",
+        "预测/规划"
+      ],
+      "title": "FIVE-VLA: Fast and EffectIVE Autonomous Driving with Recurrent Action Memory",
+      "title_zh": "FIVE-VLA：具有递归动作记忆的快速有效自主驾驶",
+      "url": "/daily/2026-09-17/#paper-2609-18623"
+    },
+    {
+      "abstract": "Track 2 of the AI City Challenge 2026 requires both visual question answering (VQA) and traffic event description generation under a challenging synthetic-to real domain shift. Existing vision-language approaches often entangle semantic understanding with language generation, making them susceptible to hallucination and inconsistent reasoning across event phases. In this work, we propose a decoupled semantic understanding framework that first resolves predefined traffic questions into structured semantic facts and subsequently uses these facts to guide caption generation. A frozen V-JEPA encoder extracts predictive scene representations, while a lightweight Llama-based predictor produces answers for VQA queries. To improve reliability, we introduce a training-free structured refinement mechanism that exploits statistical priors, inter-question relationships, and temporal event consistency to correct prediction errors. The refined semantic facts are then provided to Qwen3-VL-8B to generate pedestrian and vehicle descriptions for each traffic event. Experimental results on the official 2026 AI City Challenge Track 2 benchmark show that the proposed method achieves 87.09% VQA accuracy and an overall S2 score of 60.0853, ranking first among all participating teams. These results demonstrate that predictive world representations combined with structured semantic refinement enable more accurate and reliable traffic understanding, leading to higher-quality lan guage generation.",
+      "abstract_zh": "2026 年 AI 城市挑战赛的第二赛道要求在具有挑战性的合成到真实领域转变下进行视觉问答 (VQA) 和交通事件描述生成。现有的视觉语言方法通常将语义理解与语言生成纠缠在一起，使得它们容易受到幻觉和事件阶段之间不一致推理的影响。在本研究中，我们提出了一种解耦的语义理解框架，首先将预定义的交通问题转化为结构化的语义事实，随后利用这些事实指导标题生成。一个冻结的 V-JEPA 编码器提取预测场景表示，而一个轻量级的基于 Llama 的预测器为 VQA 查询生成答案。为了提高可靠性，我们引入了一种无训练的结构化精炼机制，利用统计先验、问题间关系和时间事件一致性来纠正预测错误。然后，将精炼后的语义事实提供给 Qwen3-VL-8B，以生成每个交通事件的行人和车辆描述。在 2026 年 AI 城市挑战赛第二赛道的官方基准测试中，实验结果表明，所提出的方法实现了 87.09% 的 VQA 准确率和 60.0853 的整体 S2 分数，排名所有参赛队伍第一。这些结果表明，结合结构化语义精炼的预测世界表示能够实现更准确和可靠的交通理解，从而提高语言生成的质量。",
+      "authors": [
+        "Nguyen Hoai Thuong Bui",
+        "Thanh Nguyen Vo",
+        "Trinh Tra Giang Nguyen",
+        "Ha Duc Bui"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.18562",
+      "tags": [
+        "仿真/数据",
+        "VLM/VLA",
+        "世界模型/生成"
+      ],
+      "title": "Sim-to-Real Traffic Scene Understanding by Decoupling Semantics from Caption Generation with V-JEPA",
+      "title_zh": "通过使用 V-JEPA 解耦语义与标题生成实现模拟到真实的交通场景理解",
+      "url": "/daily/2026-09-17/#paper-2609-18562"
+    },
+    {
+      "abstract": "4D radar has emerged as a promising next-generation sensor for improving the robustness of autonomous driving perception systems because of its stable sensing capability under adverse weather conditions. However, deploying 4D radar in embedded environments with limited hardware resources requires radar-representation preprocessing that jointly considers perception accuracy, real-time performance, and computational complexity. This paper proposes a preprocessing framework for 4D-radar-based 3D object detection. First, Percentile-based 3D Shape Preservation (P3DP) extracts point clouds from radar tensors while preserving object-shape information and suppressing noise and false alarms. Second, Multi-frame-based Noise Point Discrimination using Kernel Density Estimation (MF-KDE) improves the density and reliability of sparse radar point clouds. Finally, Embedded \\& NetScore (ENS) evaluates suitability for embedded deployment by jointly considering accuracy, real-time performance, adverse-weather robustness, and model complexity.",
+      "abstract_zh": "4D雷达作为一种有前景的下一代传感器，因其在恶劣天气条件下的稳定感知能力，正在改善自主驾驶感知系统的鲁棒性。然而，在硬件资源有限的嵌入式环境中部署4D雷达需要进行雷达表示预处理，以共同考虑感知准确性、实时性能和计算复杂性。本文提出了一种基于4D雷达的3D目标检测预处理框架。首先，基于百分位数的3D形状保留方法（Percentile-based 3D Shape Preservation, P3DP）从雷达张量中提取点云，同时保留物体形状信息并抑制噪声和误报。其次，基于多帧的噪声点区分方法（Multi-frame-based Noise Point Discrimination using Kernel Density Estimation, MF-KDE）提高了稀疏雷达点云的密度和可靠性。最后，嵌入式与网络评分（Embedded & NetScore, ENS）通过共同考虑准确性、实时性能、恶劣天气鲁棒性和模型复杂性来评估嵌入式部署的适用性。",
+      "authors": [
+        "Woo-Jin Jung",
+        "Dong-Hee Paek",
+        "Jeong-Su Park",
+        "Seung-Hyun Kong"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.18542",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "3D 检测"
+      ],
+      "title": "Accuracy- and Real-Time-Aware 4D Radar Preprocessing for Autonomous Driving Perception Systems",
+      "title_zh": "面向自主驾驶感知系统的准确性与实时性兼顾的4D雷达预处理",
+      "url": "/daily/2026-09-17/#paper-2609-18542"
+    },
+    {
+      "abstract": "In autonomous driving, perception models often struggle to generalize to new environments due to domain shifts. While unsupervised model adaptation offers a feasible solution without labor-intensive manual labeling, existing methods that rely solely on the ego-vehicle's data often lead to inferior pseudo-labeling performance. To address this critical issue, we propose LDE, Learning from Distributed ``Eyes\", a novel framework that transforms collaborative perception (CP) into a source of high-quality supervision for model adaptation. This pseudo-labeling approach is hyperparameter-insensitive and relatively reliable, assuming CP often outperforms single-agent's perception. However, naively implementing this approach encounters (1) the communication bottleneck of sharing rich features under time and bandwidth constraints, (2) the view discrepancy between the CP view and the learner's Field of View (FoV), and (3) the unreliability even in CP-generated labels. To address these issues, we design an adaptation-oriented feature sharing mechanism that selectively transmits the most critical information for adaptation, an FoV filtering method that meticulously eliminates mismatched labels, and a curriculum learning strategy to progressively exploit pseudo labels. Extensive experiments on 3D object detection tasks demonstrate that LDE consistently outperforms both the pre-trained models and state-of-the-art unsupervised adaptation methods.",
+      "abstract_zh": "在自动驾驶中，由于领域转移，感知模型往往难以在新环境中进行泛化。虽然无监督模型适应提供了一种无需劳动密集型手动标注的可行解决方案，但现有方法仅依赖自我车辆的数据，通常导致伪标注性能较差。为了解决这一关键问题，我们提出了LDE（Learning from Distributed ``Eyes''），一个将协同感知（CP）转化为模型适应高质量监督源的新框架。这种伪标注方法对超参数不敏感且相对可靠，假设CP通常优于单一代理的感知。然而，简单地实施这一方法会遇到（1）在时间和带宽限制下共享丰富特征的通信瓶颈，（2）CP视角与学习者视场（FoV）之间的视图差异，以及（3）即使在CP生成的标签中也存在的不可靠性。为了解决这些问题，我们设计了一种面向适应的特征共享机制，选择性地传输适应所需的最关键信息，一种FoV过滤方法，仔细消除不匹配的标签，以及一种课程学习策略，以逐步利用伪标签。在3D物体检测任务上的大量实验表明，LDE始终优于预训练模型和最先进的无监督适应方法。",
+      "authors": [
+        "Yanan Ma",
+        "Yihang Tao",
+        "Zhengru Fang",
+        "Zihan Fang",
+        "Yiqin Deng",
+        "Xianhao Chen",
+        "Yuguang Fang"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.18511",
+      "tags": [
+        "感知",
+        "3D 检测",
+        "世界模型/生成"
+      ],
+      "title": "Learning from Distributed Eyes: Leveraging Collaborative Perception for Automated Model Adaptation",
+      "title_zh": "来自分布式视角的学习：利用协同感知进行自动化模型适应",
+      "url": "/daily/2026-09-17/#paper-2609-18511"
+    },
+    {
+      "abstract": "Semantic labels for indoor mobile laser scanning (MLS) frames remain largely absent from current point cloud semantic segmentation benchmarks, which mainly focus on reconstructed indoor scenes or outdoor LiDAR perception. This paper introduces Semantic-ITC, to the best of our knowledge the first public dataset and benchmark for frame-wise indoor MLS semantic segmentation. The dataset contains 52 indoor sequences, 79,108 MLS frames, and 1.23 billion labeled points collected in classrooms, corridors, meeting rooms, offices, and study areas. Labels are attached directly to measured LiDAR points in each frame using 16 semantic classes covering structural elements, furniture, room equipment, vegetation, and other indoor objects. Semantic-ITC preserves the sparse, non-uniform, and frame-wise sampling pattern of indoor MLS, making it distinct from scene-level reconstructed point clouds and mesh-based indoor datasets. The annotations are produced by a hybrid workflow that combines predictions from a visual foundation model applied to synchronized RGB images, structural information from BIM, and manual refinement, with the final labels assigned to the original LiDAR frames. A single-frame benchmark is provided, and the best baseline reaches 79.27\\% mIoU. Remaining errors are concentrated around object boundaries and ambiguous indoor classes, indicating the challenges of indoor MLS segmentation under sparse frame geometry and long-tailed class distributions. The dataset provides a public benchmark for evaluating semantic segmentation directly on measured indoor MLS frames and supports future studies on frame-wise indoor MLS semantic segmentation.",
+      "abstract_zh": "当前的点云语义分割基准主要集中在重建的室内场景或户外激光雷达感知上，室内移动激光扫描（MLS）帧的语义标签仍然缺乏。本文介绍了Semantic-ITC，这是我们所知的第一个公开的逐帧室内MLS语义分割数据集和基准。该数据集包含52个室内序列、79,108个MLS帧和12.3亿个标注点，这些数据是在教室、走廊、会议室、办公室和学习区域收集的。标签直接附加到每帧中测量的激光雷达点上，使用16个语义类别覆盖结构元素、家具、房间设备、植物和其他室内物体。Semantic-ITC保留了室内MLS的稀疏、不均匀和逐帧采样模式，使其与场景级重建点云和基于网格的室内数据集有所不同。注释是通过一种混合工作流程生成的，该流程结合了应用于同步RGB图像的视觉基础模型的预测、来自建筑信息模型（BIM）的结构信息以及人工精细化，最终标签分配给原始的激光雷达帧。提供了单帧基准，最佳基线达到79.27%的mIoU。剩余的错误集中在物体边界和模糊的室内类别周围，表明在稀疏帧几何和长尾类别分布下进行室内MLS分割的挑战。该数据集为直接在测量的室内MLS帧上评估语义分割提供了一个公共基准，并支持未来对逐帧室内MLS语义分割的研究。",
+      "authors": [
+        "Haiyang Wu",
+        "Muhammad Affan",
+        "George Vosselman",
+        "Ville Lehtola"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.18493",
+      "tags": [
+        "LiDAR/点云",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Semantic-ITC: A Frame-wise Indoor Mobile Laser Scanning Dataset and Benchmark for Semantic Segmentation",
+      "title_zh": "Semantic-ITC：一个用于语义分割的逐帧室内移动激光扫描数据集和基准",
+      "url": "/daily/2026-09-17/#paper-2609-18493"
+    },
+    {
+      "abstract": "Safe motion planning in automated driving requires anticipating evolving traffic risks and deciding when to revise the current planned trajectory. We introduce RiskWorld, a risk-aware world modeling framework for shared occupancy forecasting and selective trajectory replacement. Spatial risk fields and temporal actor context are fused with visual bird's-eye-view features. Flow-guided evolution transports occupancy and scene features, while signed residuals correct occupancy after transport. One forecast is generated per planning step and reused across candidates. Each candidate is compared with a current-state persistence reference, yielding a nonnegative collision-score correction. The trajectory selected by current-world evaluation serves as the planning anchor and is replaced only when additional predicted risk triggers intervention and an alternative satisfies component-wise constraints on predicted risk and trajectory error. Candidate geometries remain unchanged. We evaluate RiskWorld for open-loop planning on nuScenes using camera features, annotation-derived current and historical actor states, and dataset-provided map context. RiskWorld achieves the lowest collision rate at a long evaluation horizon of 3 s, and the second-best average L2 error among various state-of-the-art baselines, while running at 11.5 FPS on a single NVIDIA RTX 4090 with 90.81 M parameters. Within-setting ablations show that RiskWorld achieves lower collision rates than the current-state rescoring baseline, while forecast reuse enables additional candidates to be evaluated at low marginal computational cost.",
+      "abstract_zh": "在自动驾驶中，安全的运动规划需要预测不断变化的交通风险，并决定何时修订当前规划的轨迹。我们提出了RiskWorld，一个风险感知的世界建模框架，用于共享占用预测和选择性轨迹替换。空间风险场和时间行为者上下文与视觉鸟瞰特征相融合。流引导演化传输占用和场景特征，而带符号的残差在传输后校正占用。每个规划步骤生成一个预测，并在候选者之间重用。每个候选者与当前状态持久性参考进行比较，产生非负的碰撞评分校正。通过当前世界评估选择的轨迹作为规划锚，仅在额外预测风险触发干预且替代方案满足预测风险和轨迹误差的分量约束时才进行替换。候选几何形状保持不变。我们在nuScenes上评估RiskWorld的开环规划，使用相机特征、注释派生的当前和历史行为者状态，以及数据集提供的地图上下文。RiskWorld在3秒的长评估时间范围内实现了最低的碰撞率，并在各种最先进的基线中获得第二低的平均L2误差，同时在单个NVIDIA RTX 4090上以11.5 FPS的速度运行，参数量为90.81M。设置内消融实验表明，RiskWorld的碰撞率低于当前状态重评分基线，而预测重用使得可以以低边际计算成本评估额外候选者。",
+      "authors": [
+        "Rongxiang Zeng",
+        "Linsen Cai",
+        "Jiafu Zhang",
+        "Yijie Zhong",
+        "Yide Tao",
+        "Shuai Wang",
+        "Nan Zheng",
+        "Hai L. Vu",
+        "Alvaro Garcia Hernandez",
+        "Yongqi Dong"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.18442",
+      "tags": [
+        "预测/规划",
+        "BEV/Occupancy",
+        "世界模型/生成"
+      ],
+      "title": "Risk-Aware World Modeling with Flow-Guided Occupancy Evolution for Selective Trajectory Planning in Automated Driving",
+      "title_zh": "基于流引导占用演化的风险感知世界建模用于自动驾驶中的选择性轨迹规划",
+      "url": "/daily/2026-09-17/#paper-2609-18442"
+    },
+    {
+      "abstract": "The integration of large-scale foundation models with physical embodiments has led to significant advancements in robotics known as Generative Physical Artificial Intelligence (GPAI). These agentic AI systems autonomously perceive, reason, and act in complex real-world situations. This survey comprehensively analyzes GPAI systems, focusing on their architectural foundations, current applications, and key limitations. We introduce a taxonomy of five distinct approaches: Robot Foundation Models (RFMs) for cross-platform skill transfer; Vision-Language Action (VLA) models for end-to-end multi-modal perception and control; Large Behavior Models (LBMs) for human-like movement generation; Diffusion Policy Models (DPMs) for diffusion model-based temporally coherent action generation; and World Foundation Models (WFMs) for physics-compliant simulation and data generation. We examine how these approaches complement each other: WFMs generate training data for VLAs and DPMs, RFMs enable cross-platform deployment of learned policies, while LBMs provide motion priors for natural behavior. Through examples across autonomous vehicles, industrial automation, healthcare robotics, and humanoid systems, we identify significant performance improvements and summarize promising research directions in data-efficient learning, sim-to-real transfer, edge-compatible architectures, and safety frameworks. These insights advance embodied AI for IoT-connected environments where intelligent agents interact with networked sensors, actuators, and edge devices.",
+      "abstract_zh": "大规模基础模型与物理实体的结合推动了机器人技术的显著进展，这被称为生成物理人工智能（Generative Physical Artificial Intelligence, GPAI）。这些自主智能系统能够在复杂的现实世界情境中感知、推理和行动。本文全面分析了GPAI系统，重点关注其架构基础、当前应用及主要局限性。我们提出了五种不同方法的分类：跨平台技能转移的机器人基础模型（Robot Foundation Models, RFMs）；用于端到端多模态感知与控制的视觉-语言行动（Vision-Language Action, VLA）模型；用于人类般运动生成的大行为模型（Large Behavior Models, LBMs）；基于扩散模型的时间一致性动作生成的扩散策略模型（Diffusion Policy Models, DPMs）；以及用于符合物理规律的仿真和数据生成的世界基础模型（World Foundation Models, WFMs）。我们考察了这些方法如何相辅相成：WFMs为VLAs和DPMs生成训练数据，RFMs使学习到的策略能够跨平台部署，而LBMs则为自然行为提供运动先验。通过在自主车辆、工业自动化、医疗机器人和类人系统中的实例，我们识别出显著的性能提升，并总结了在数据高效学习、仿真到现实转移、边缘兼容架构和安全框架等领域的有前景的研究方向。这些见解推动了物联网连接环境中具身人工智能的发展，在这些环境中，智能代理与网络传感器、执行器和边缘设备进行交互。",
+      "authors": [
+        "Satyam Gaba",
+        "Krutiksinh Rana",
+        "Siva Sai",
+        "Vinay Chamola",
+        "Dusit Niyato"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.18111",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "端到端驾驶"
+      ],
+      "title": "A Comprehensive Review of Generative Physical Artificial Intelligence",
+      "title_zh": "生成物理人工智能的综合评述",
+      "url": "/daily/2026-09-17/#paper-2609-18111"
+    },
+    {
+      "abstract": "Vision-Language Models (VLMs) can produce Natural Language Explanations (NLEs) that sound plausible yet remain inconsistent with the visual evidence they cite. We present Explanation-Driven Counterfactual Testing (EDCT), an intervention-based protocol that extracts visual concepts cited in a model's explanation, applies verified minimal edits to them, and tests whether the resulting answer and explanation remain consistent with the edited image. Using this protocol, we create EDCT-Bench, a comprehensive benchmark spanning three complementary domains: knowledge-intensive visual question answering (OK-VQA), safety-critical driving (DriveLM), and 3D spatial reasoning (3DSRBench). Across the evaluated VLMs, EDCT reveals substantial faithfulness gaps, with models frequently producing responses inconsistent with verified visual changes. Finally, our fine-tuning study suggests that EDCT-generated counterfactuals provide high-impact training signals.",
+      "abstract_zh": "视觉语言模型（VLMs）能够生成听起来合理但与其引用的视觉证据不一致的自然语言解释（NLEs）。我们提出了解释驱动的反事实测试（EDCT），这是一种基于干预的协议，提取模型解释中引用的视觉概念，对其进行经过验证的最小编辑，并测试结果的答案和解释是否与编辑后的图像保持一致。通过该协议，我们创建了EDCT-Bench，这是一个涵盖三个互补领域的综合基准：知识密集型视觉问答（OK-VQA）、安全关键驾驶（DriveLM）和三维空间推理（3DSRBench）。在评估的VLMs中，EDCT揭示了显著的可信度差距，模型经常生成与经过验证的视觉变化不一致的响应。最后，我们的微调研究表明，EDCT生成的反事实提供了高影响力的训练信号。",
+      "authors": [
+        "Sihao Ding",
+        "Santosh Vasa",
+        "Aditi Ramadwar",
+        "Thomas Monninger"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.17953",
+      "tags": [
+        "VLM/VLA",
+        "安全/异常",
+        "仿真/数据"
+      ],
+      "title": "EDCT-Bench: Uncovering Faithfulness Gaps in VLMs via Explanation-Driven Counterfactual Testing",
+      "title_zh": "EDCT-Bench：通过解释驱动的反事实测试揭示视觉语言模型中的可信度差距",
+      "url": "/daily/2026-09-17/#paper-2609-17953"
+    },
+    {
+      "abstract": "An important component of urban accessibility, particularly for wheelchair users and people with reduced mobility, is sidewalk compliance with measurable requirements. We test whether effective width, longitudinal slope, cross slope, and pavement condition can be assessed reliably from pedestrian-level imagery using vision-language models (VLMs). We present the first application of sampling-based conformal prediction (CP) for VLM-based accessibility assessment. We evaluate four VLMs on 514 sidewalk images from Seoul, South Korea, with field-measured ground truth. Conformal calibration attains the nominal 90% coverage for all models and attributes, but the calibrated regions differ in informativeness. Effective width yields the most informative estimates, with a mean interval half-width of about 1.0 m for the best model. Since every model overestimates width, asymmetric calibration shortens the intervals by up to 33% at unchanged coverage. Longitudinal slope is marginally informative, cross-slope intervals are too wide to resolve regulatory thresholds, and pavement-condition sets degenerate to all five grades (A-E) for three of the four models. Uncalibrated intervals from raw sampling dispersion cover only 17-47% of field-measured values at a nominal 90% level. Among the images with the most self-consistent responses, these intervals miss the field-measured value in up to 96% of cases. Response self-consistency is therefore not evidence of accuracy, and sampling dispersion cannot be interpreted as uncertainty until it has been calibrated against field-measured ground truth. No quantitative attribute reaches the precision required for general compliance assessment, but CP identifies from calibration data alone which attributes can support screening of segments far from the thresholds. We release the annotated pedestrian-level images and their corresponding field-measured attribute values.",
+      "abstract_zh": "城市无障碍的一个重要组成部分，特别是对于轮椅用户和行动不便的人士，是人行道是否符合可测量的要求。我们测试了有效宽度、纵向坡度、横向坡度和路面状况是否可以通过使用视觉语言模型（VLMs）从行人视角的图像中可靠地评估。我们展示了基于采样的符合预测（CP）在基于VLM的无障碍评估中的首次应用。我们在来自韩国首尔的514张人行道图像上评估了四个VLM，使用实地测量的真实值进行验证。符合校准在所有模型和属性上达到了名义上的90%覆盖率，但校准区域在信息量上存在差异。有效宽度提供了最具信息量的估计，最佳模型的平均区间半宽度约为1.0米。由于每个模型都高估了宽度，非对称校准在不改变覆盖率的情况下将区间缩短了最多33%。纵向坡度的信息量边际，横向坡度的区间过宽，无法解决监管阈值，而路面状况的分类在四个模型中的三个退化为所有五个等级（A-E）。未经校准的原始采样分散区间在名义90%的水平下仅覆盖了17-47%的实地测量值。在响应最自洽的图像中，这些区间在多达96%的情况下未能覆盖实地测量值。因此，响应自洽性并不能证明准确性，采样分散在未经过实地测量的真实值校准之前无法被解释为不确定性。没有任何定量属性达到了进行一般合规评估所需的精度，但CP仅通过校准数据识别出哪些属性可以支持远离阈值的区段筛选。我们发布了标注的人行道图像及其对应的实地测量属性值。",
+      "authors": [
+        "Seung Jae Lieu",
+        "Diego Morra",
+        "Chiara Cadoni",
+        "Wonseop Song",
+        "Martina Mazzarello",
+        "Carlo Ratti"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.17882",
+      "tags": [
+        "VLM/VLA",
+        "地图/定位"
+      ],
+      "title": "Can VLMs Reliably Assess Sidewalk Accessibility Attributes from Pedestrian-Level Imagery?",
+      "title_zh": "视觉语言模型能否可靠地评估人行道无障碍属性？",
+      "url": "/daily/2026-09-17/#paper-2609-17882"
+    },
+    {
+      "abstract": "Video anomaly detection (VAD) is an actively studied task, having wide applications in typical scenarios such as public surveillance and road traffic safety. The task is also relevant for robotic arm interactions, where it has several downstream applications, including learning better interaction and manipulation abilities, triggering recovery procedures when anomalies occur, etc. Despite its relevance, the exploration of anomaly detection in robotic arm manipulation videos is limited by the low number of available resources. To this end, we introduce RoboVAD, a large-scale benchmark for video anomaly detection that comprises challenging cross-domain evaluation scenarios, where certain actions (tasks executed by a robotic arm) and anomaly types (mistakes that occur while performing certain tasks) remain unseen during training. RoboVAD is designed to benchmark VAD methods in realistic scenarios, where robotic arms can perform unforeseen tasks, and thereby encounter new anomaly types. We train and evaluate several state-of-the-art VAD methods, including a novel method specifically adapted for robotic arm manipulation. While the proposed method outperforms many state-of-the-art competitors, all methods remain below a micro-averaged frame-level AUC threshold of 70% in the most challenging evaluation setup, confirming the difficulty of the proposed benchmark. We publicly release our dataset and code at https://zenodo.org/records/22754659.",
+      "abstract_zh": "视频异常检测（VAD）是一个积极研究的任务，广泛应用于公共监控和道路交通安全等典型场景。该任务在机器人臂交互中也具有相关性，涉及多个下游应用，包括学习更好的交互和操作能力、在发生异常时触发恢复程序等。尽管其相关性明显，但在机器人臂操作视频中的异常检测探索受到可用资源数量有限的限制。为此，我们提出了RoboVAD，一个大规模的视频异常检测基准，包含具有挑战性的跨领域评估场景，其中某些动作（机器人臂执行的任务）和异常类型（在执行某些任务时发生的错误）在训练过程中未曾见过。RoboVAD旨在基准化VAD方法在现实场景中的表现，在这些场景中，机器人臂能够执行不可预见的任务，从而遇到新的异常类型。我们训练和评估了几种最先进的VAD方法，包括一种专门适应于机器人臂操作的新方法。尽管所提出的方法在许多最先进的竞争者中表现优异，但所有方法在最具挑战性的评估设置中仍低于70%的微平均帧级AUC阈值，确认了所提出基准的难度。我们在https://zenodo.org/records/22754659上公开发布了我们的数据集和代码。",
+      "authors": [
+        "Alexandru-Bogdan Dura",
+        "Sebastian Balmus",
+        "Radu Tudor Ionescu"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.17843",
+      "tags": [
+        "安全/异常",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "RoboVAD: A Large Cross-Domain Evaluation Benchmark for Anomaly Detection in Robotic Arm Manipulation Videos",
+      "title_zh": "RoboVAD：用于机器人臂操作视频异常检测的大规模跨领域评估基准",
+      "url": "/daily/2026-09-17/#paper-2609-17843"
+    },
+    {
+      "abstract": "A vehicle's heading affects both the surfaces beneath its tires and its pitch and roll. We present Vehicle-Conditioned Terrain Planning (VCTP), which retains these relationships by evaluating shared elevation and surface-ID layers at eight headings. Body geometry constrains admissibility, while loaded wheel contacts determine modeled surface cost and predicted pitch and roll. Established D* Lite and vehicle-state search use these evaluations to plan routes with forward and reverse motion. When observations change, VCTP recomputes every affected body or contact query. In fully observed two-track simulations, sampling at wheel contacts rather than at the vehicle center lowers modeled surface cost by 39.3% while shortening the route. In offline planning on RGator recordings, VCTP also reduces modeled costs over identified surfaces and observed support relative to distance-focused planning, although incomplete coverage leaves full-route rankings unresolved. Selective updates match full recomputation in all 474 comparisons using recorded map changes. These results identify when wheel-contact placement and vehicle heading affect route choice.",
+      "abstract_zh": "车辆的行驶方向影响其轮胎下的表面以及车辆的俯仰和横滚。我们提出了基于车辆状态的地形规划（Vehicle-Conditioned Terrain Planning, VCTP），通过在八个行驶方向上评估共享的高程和表面ID层，保持这些关系。车身几何形状限制了可接受性，而载荷轮接触则决定了建模表面的成本以及预测的俯仰和横滚。建立的 D* Lite 和车辆状态搜索利用这些评估来规划前进和后退的路线。当观测发生变化时，VCTP 会重新计算每个受影响的车身或接触查询。在完全观测的双轨模拟中，相较于在车辆中心进行采样，在轮接触点进行采样可将建模表面成本降低39.3%，同时缩短路线。在 RGator 记录的离线规划中，VCTP 也相对于以距离为重点的规划减少了对已识别表面和观察到的支撑的建模成本，尽管不完整的覆盖使得完整路线排名无法解决。在使用记录的地图变化进行的474次比较中，选择性更新与完全重新计算的结果相匹配。这些结果表明，轮接触位置和车辆行驶方向在路线选择中具有影响。",
+      "authors": [
+        "Akshay Naik",
+        "Ramavarapu S. Sreenivas",
+        "Dustin Nottage",
+        "Ahmet Soylemezoglu"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.17834",
+      "tags": [
+        "预测/规划",
+        "地图/定位",
+        "仿真/数据"
+      ],
+      "title": "VCTP: Vehicle-Conditioned Terrain Planning for Off-Road Navigation",
+      "title_zh": "VCTP：基于车辆状态的越野导航地形规划",
+      "url": "/daily/2026-09-17/#paper-2609-17834"
+    },
+    {
+      "abstract": "Approaches to incorporating human awareness into mobile robot decision-making mainly focus on collision avoidance in low-level motion planning, often overlooking the challenges posed by human presence and high-level behavior. To address this vacancy, we present HINT-Plan, a novel approach to integrate human intention prediction into robot task planning. HINT-Plan employs Vision Language Models (VLMs) to anticipate high-level human intentions from third-person image observations, convert them into goal states, and solve joint task-planning problems. To effectively enable scene awareness in context-rich environments, we use hierarchical Scene Graphs (SGs) as high-level representations of the environment, and translate environmental topology and actionable knowledge into formal planning language to ensure executable plans. Evaluated in a photorealistic simulation, HINT-Plan achieves an overall success rate of 69.71% in joint human-robot task planning, substantially outperforming the baselines by up to 35.29%, while also reducing functional conflicts. The results show the effectiveness of explicitly incorporating inferred human intentions into formal multi-agent task planning for proactive human-aware robot decision-making.",
+      "abstract_zh": "将人类意识融入移动机器人决策中的方法主要集中在低级运动规划中的避碰，往往忽视了人类存在和高级行为带来的挑战。为了解决这一空白，我们提出了HINT-Plan，一种将人类意图预测集成到机器人任务规划中的新方法。HINT-Plan利用视觉语言模型（Vision Language Models, VLMs）从第三人称图像观察中预测高级人类意图，将其转化为目标状态，并解决联合任务规划问题。为了有效地在丰富环境中实现场景感知，我们使用分层场景图（Scene Graphs, SGs）作为环境的高级表示，并将环境拓扑和可执行知识转化为正式的规划语言，以确保可执行的计划。在一个照片级真实感的仿真中，HINT-Plan在联合人机任务规划中实现了69.71%的整体成功率，显著优于基线，提升幅度达到35.29%，同时减少了功能冲突。结果表明，明确地将推断的人类意图融入正式的多智能体任务规划中，对于主动的人类感知机器人决策具有有效性。",
+      "authors": [
+        "Yuchen Liu",
+        "Luigi Palmieri",
+        "Lujun Li",
+        "Radu State",
+        "Ilche Georgievski",
+        "Marco Aiello"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.17771",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "HINT-Plan: Human Intention-Aware Robot Task Planning in Context-Rich Environments using Vision Language Models",
+      "title_zh": "HINT-Plan：在丰富环境中使用视觉语言模型进行人类意图感知的机器人任务规划",
+      "url": "/daily/2026-09-17/#paper-2609-17771"
+    },
+    {
+      "abstract": "Radar-based navigation is appealing for its robustness to adverse conditions involving airborne particles, such as precipitation, dust, fog, and smoke, that can cause lidar-based systems to fail. Recently, direct methods that retain and use the entire radar scan rather than sparse points have improved on-road global localization performance. However, they have yet to be deployed in off-road environments or in closed-loop systems. Additionally, even direct global maps may lose information: their global nature leads to a smoothing out of viewpoint-dependent radar artifacts, which can provide pose information when mapping and localization occur along similar trajectories. This paper introduces Direct Radar Teach & Repeat (DRT&R): a direct spinning radar-based navigation stack that maximizes the amount of retained information by combining direct radar processing with local mapping. DRT&R yields state-of-the-art (SOTA) localization performance in both on-road and off-road environments. Using 344 km of on-road data and 20 km of off-road data, DRT&R is able to localize to within 4 cm in most on-road and off-road conditions, and 12 cm in geometrically degenerate and sparse environments. DRT&R is also evaluated autonomously in closed loop with an MPC controller for more than 10 km using a Clearpath Warthog off-road vehicle, demonstrating that it runs in real time and achieves SOTA tracking performance for off-road radar navigation.",
+      "abstract_zh": "基于雷达的导航因其对不利条件的鲁棒性而备受关注，这些不利条件包括降水、灰尘、雾霾和烟雾等，这些因素可能导致基于激光雷达的系统失效。最近，直接方法通过保留和使用整个雷达扫描而非稀疏点，改善了公路全球定位性能。然而，这些方法尚未在越野环境或闭环系统中部署。此外，即使是直接的全球地图也可能会丢失信息：其全球性质导致视点依赖的雷达伪影被平滑化，而这些伪影在沿相似轨迹进行映射和定位时可以提供位姿信息。本文介绍了直接雷达教学与重复（DRT&R）：一种基于直接旋转雷达的导航系统，通过将直接雷达处理与局部映射相结合，最大化保留信息的量。DRT&R在公路和越野环境中均实现了最先进的定位性能。利用344公里的公路数据和20公里的越野数据，DRT&R能够在大多数公路和越野条件下实现4厘米的定位精度，并在几何退化和稀疏环境中实现12厘米的定位精度。DRT&R还在闭环中使用模型预测控制（MPC）控制器进行了超过10公里的自主评估，展示了其实时运行能力，并在越野雷达导航中实现了最先进的跟踪性能。",
+      "authors": [
+        "Alexander Krawciw",
+        "Daniil Lisus",
+        "Cedric Le Gentil",
+        "Timothy D. Barfoot"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.17766",
+      "tags": [
+        "地图/定位",
+        "LiDAR/点云",
+        "感知"
+      ],
+      "title": "DRT&R: Direct Radar Teach & Repeat",
+      "title_zh": "DRT&R：直接雷达教学与重复",
+      "url": "/daily/2026-09-17/#paper-2609-17766"
+    },
+    {
+      "abstract": "Behavioral cloning trains a policy offline on expert demonstrations, but deployment is closed loop: each action affects the observations the policy receives next. We study how much closed-loop driving competence a compact multimodal policy can acquire from offline demonstrations in the CARLA simulator. The policy uses five-frame histories of RGB images, LiDAR, vehicle telemetry, and lane waypoints to predict throttle, brake, and steering at 20 Hz. Demonstrations were collected in three stages, ending with a systematic route-generation procedure that enumerates spawn points and feasible maneuvers and verifies completed autopilot routes. The released 1.36 million parameter policy was trained on 236,882 windows, representing about 3.3 hours of driving from 448 captures. The resulting policy drives autonomously for hours on training and held-out routes. In our runs, it did so without collisions and also transferred qualitatively to an unseen CARLA town with different road geometry. We also observed recovery from large trajectory deviations, although we do not claim systematic recovery without controlled evaluation. We report offline metrics and distinguish measured results from qualitative closed-loop observations. We release the code, trained checkpoint, ONNX model, data sample, and an evidence audit for the reported claims.",
+      "abstract_zh": "行为克隆在专家演示上离线训练策略，但部署是闭环的：每个动作都会影响策略接下来接收到的观测。我们研究了紧凑的多模态策略能够从CARLA模拟器中的离线演示中获得多少闭环驾驶能力。该策略使用五帧历史的RGB图像、激光雷达（LiDAR）、车辆遥测和车道航点，以20 Hz的频率预测油门、刹车和转向。演示分三个阶段收集，最后通过系统的路线生成程序枚举生成点和可行的机动，并验证完成的自动驾驶路线。发布的136万参数策略是在236,882个窗口上训练的，代表约3.3小时的驾驶，来自448次捕获。最终的策略在训练和保留的路线中能够自主驾驶数小时。在我们的实验中，它在没有碰撞的情况下完成了驾驶，并且在不同道路几何的未见CARLA城镇中也实现了定性迁移。我们还观察到从大轨迹偏差中恢复，尽管我们不声称在没有控制评估的情况下实现系统恢复。我们报告了离线指标，并区分了测量结果与定性闭环观察。我们发布了代码、训练检查点、ONNX模型、数据样本和报告声明的证据审计。",
+      "authors": [
+        "Jordy Kieto"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.17757",
+      "tags": [
+        "LiDAR/点云",
+        "深度/几何",
+        "预测/规划"
+      ],
+      "title": "Imitation Learning for Autonomous Driving in CARLA",
+      "title_zh": "在CARLA中用于自主驾驶的模仿学习",
+      "url": "/daily/2026-09-17/#paper-2609-17757"
+    },
+    {
+      "abstract": "Recent Vision-Language-Action (VLA) models for autonomous driving have incorporated world modeling by predicting future driving scenes alongside driving actions, demonstrating strong planning performance. Future driving scenes are utilized as dense supervision, encouraging the policy to learn rich internal representations useful for planning. However, these World-Modeling VLAs rely on explicit future generation to learn such representations, thereby introducing two key limitations: additional training burden and inference latency. To address these limitations, we propose RAF-VLA (Representation Alignment with the Future), a VLA-based autonomous driving framework that shapes planning-relevant internal representations through direct guidance from future-frame representations. RAF-VLA employs Future-Aligned Supervised Fine-Tuning, in which a straightforward regularization aligns the policy's hidden states with future-frame representations obtained from a pretrained world encoder while learning driving actions. This simple alignment allows RAF-VLA to avoid the training burden and inference latency associated with future generation. Extensive experiments on the NAVSIM benchmark show that RAF-VLA achieves competitive planning performance against state-of-the-art VLA planners with substantially fewer training samples seen. Moreover, RAF-VLA incurs only 3.8% training overhead and a negligible 1 ms inference overhead.",
+      "abstract_zh": "近期的视觉-语言-动作（VLA）模型在自主驾驶中通过预测未来驾驶场景与驾驶动作相结合，融入了世界建模，展现出强大的规划性能。未来驾驶场景作为密集监督的来源，促使策略学习对规划有用的丰富内部表征。然而，这些世界建模的VLA依赖于显式的未来生成来学习这些表征，从而引入了两个关键限制：额外的训练负担和推理延迟。为了解决这些限制，我们提出了RAF-VLA（与未来对齐的表征），这是一种基于VLA的自主驾驶框架，通过来自未来帧表征的直接指导来塑造与规划相关的内部表征。RAF-VLA采用未来对齐的监督微调，其中一种简单的正则化方法将策略的隐藏状态与从预训练世界编码器获得的未来帧表征对齐，同时学习驾驶动作。这种简单的对齐使RAF-VLA能够避免与未来生成相关的训练负担和推理延迟。在NAVSIM基准上的大量实验表明，RAF-VLA在规划性能上与最先进的VLA规划器具有竞争力，同时所需的训练样本显著减少。此外，RAF-VLA仅产生3.8%的训练开销和可忽略的1毫秒推理开销。",
+      "authors": [
+        "Dogun Kim",
+        "Yongjae Lee",
+        "Joonhee Lim",
+        "Yeina Lee",
+        "Junhyeok Park",
+        "Moogeun Park",
+        "Dongsuk Kum"
+      ],
+      "date": "2026-09-17",
+      "id": "2609.17728",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "端到端驾驶"
+      ],
+      "title": "RAF-VLA: Representation Alignment with the Future for End-to-End Autonomous Driving",
+      "title_zh": "RAF-VLA：与未来对齐的表征用于端到端自主驾驶",
+      "url": "/daily/2026-09-17/#paper-2609-17728"
+    },
     {
       "abstract": "This paper investigates easy strategies to boost the performance of existing networks for lidar semantic scene completion (SSC) without requiring complex architectural redesigns. The fact is that, over the last years, SSC methods have mostly pursued architectural innovations, making the models heavier and more complex, e.g., by jointly training a point cloud semantic segmentation branch. In this work, we take a step back and explore two priors used as simple ingredients (possibly noisy) to improve existing approaches: semantic pseudo-labels and sensor visibility information. Concretely, we provide both kinds of information directly as additional inputs to a given SSC network, requiring only a minimal adaptation of the original architecture. We first demonstrate that endowing input point clouds with semantic pseudo-labels from off-the-shelf segmenters significantly improves the performance of existing SSC models. In fact, by evaluating these models against an oracle, we establish that high-quality semantic priors are a primary driver of semantic gains (mIoU), and that the SSC model can be trained just once with ground-truth semantics and then exploited without retraining using any segmenter. Furthermore, we equip the input lidar point cloud with visibility information that distinguishes between empty spaces (between the lidar and a scanned point) and unknown spaces (outside of lines of sight), providing a secondary performance boost across the tested architectures. We study the design space of data for representing visibility information and bound the remaining headroom with a ground-truth oracle on the free-space labels. On SemanticKITTI, these enhancements make older models competitive with state-of-the-art systems across four architectures, in one case even outperforming them. On the SSCBench-nuScenes benchmark, both priors also transfer with the sparser 32-beam sensor.",
       "abstract_zh": "本文研究了提升现有激光雷达语义场景补全（SSC）网络性能的简单策略，而无需复杂的架构重设计。事实上，在过去几年中，SSC 方法主要追求架构创新，使得模型变得更重且更复杂，例如，通过联合训练点云语义分割分支。在本研究中，我们退后一步，探索作为简单成分（可能带有噪声）的两种先验，以改善现有方法：语义伪标签和传感器可见性信息。具体而言，我们将这两种信息直接作为额外输入提供给特定的 SSC 网络，仅需对原始架构进行最小的适应。我们首先证明，赋予输入点云来自现成分割器的语义伪标签显著提高了现有 SSC 模型的性能。实际上，通过将这些模型与一个理想模型进行评估，我们确定高质量的语义先验是语义增益（mIoU）的主要驱动因素，并且 SSC 模型可以仅用真实语义训练一次，然后在不重新训练的情况下利用任何分割器。此外，我们为输入的激光雷达点云配备了可见性信息，以区分空白区域（激光雷达与扫描点之间）和未知区域（视线之外），在测试的架构中提供了二次性能提升。我们研究了表示可见性信息的数据设计空间，并通过真实标签的理想模型界定了剩余的提升空间。在 SemanticKITTI 数据集上，这些增强使得旧模型在四种架构中与最先进的系统具有竞争力，在某些情况下甚至超越了它们。在 SSCBench-nuScenes 基准测试中，这两种先验也能与更稀疏的 32 梯度传感器进行迁移。",

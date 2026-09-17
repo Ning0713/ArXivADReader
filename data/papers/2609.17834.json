@@ -1,0 +1,50 @@
+{
+  "abstract": "A vehicle's heading affects both the surfaces beneath its tires and its pitch and roll. We present Vehicle-Conditioned Terrain Planning (VCTP), which retains these relationships by evaluating shared elevation and surface-ID layers at eight headings. Body geometry constrains admissibility, while loaded wheel contacts determine modeled surface cost and predicted pitch and roll. Established D* Lite and vehicle-state search use these evaluations to plan routes with forward and reverse motion. When observations change, VCTP recomputes every affected body or contact query. In fully observed two-track simulations, sampling at wheel contacts rather than at the vehicle center lowers modeled surface cost by 39.3% while shortening the route. In offline planning on RGator recordings, VCTP also reduces modeled costs over identified surfaces and observed support relative to distance-focused planning, although incomplete coverage leaves full-route rankings unresolved. Selective updates match full recomputation in all 474 comparisons using recorded map changes. These results identify when wheel-contact placement and vehicle heading affect route choice.",
+  "abstract_zh": "车辆的行驶方向影响其轮胎下的表面以及车辆的俯仰和横滚。我们提出了基于车辆状态的地形规划（Vehicle-Conditioned Terrain Planning, VCTP），通过在八个行驶方向上评估共享的高程和表面ID层，保持这些关系。车身几何形状限制了可接受性，而载荷轮接触则决定了建模表面的成本以及预测的俯仰和横滚。建立的 D* Lite 和车辆状态搜索利用这些评估来规划前进和后退的路线。当观测发生变化时，VCTP 会重新计算每个受影响的车身或接触查询。在完全观测的双轨模拟中，相较于在车辆中心进行采样，在轮接触点进行采样可将建模表面成本降低39.3%，同时缩短路线。在 RGator 记录的离线规划中，VCTP 也相对于以距离为重点的规划减少了对已识别表面和观察到的支撑的建模成本，尽管不完整的覆盖使得完整路线排名无法解决。在使用记录的地图变化进行的474次比较中，选择性更新与完全重新计算的结果相匹配。这些结果表明，轮接触位置和车辆行驶方向在路线选择中具有影响。",
+  "arxiv_id": "2609.17834",
+  "arxiv_url": "https://arxiv.org/abs/2609.17834v1",
+  "authors": [
+    "Akshay Naik",
+    "Ramavarapu S. Sreenivas",
+    "Dustin Nottage",
+    "Ahmet Soylemezoglu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-17834",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-17T09:46:21.888056+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17834v1",
+  "published_at": "2026-09-15T20:53:09Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17834v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "面向越野自动驾驶导航的地形感知路径规划方法。VCTP 将车辆朝向、车身几何、轮胎接触位置及载荷纳入高程和地表类型地图上的可通行性与代价评估，并利用 D* Lite 和车辆状态搜索生成可前进或倒退的低代价路径；同时支持观测地图变化后的增量更新。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "VCTP: Vehicle-Conditioned Terrain Planning for Off-Road Navigation",
+  "title_zh": "VCTP：基于车辆状态的越野导航地形规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.17834"
+}

@@ -1,0 +1,61 @@
+{
+  "abstract": "In autonomous driving, perception models often struggle to generalize to new environments due to domain shifts. While unsupervised model adaptation offers a feasible solution without labor-intensive manual labeling, existing methods that rely solely on the ego-vehicle's data often lead to inferior pseudo-labeling performance. To address this critical issue, we propose LDE, Learning from Distributed ``Eyes\", a novel framework that transforms collaborative perception (CP) into a source of high-quality supervision for model adaptation. This pseudo-labeling approach is hyperparameter-insensitive and relatively reliable, assuming CP often outperforms single-agent's perception. However, naively implementing this approach encounters (1) the communication bottleneck of sharing rich features under time and bandwidth constraints, (2) the view discrepancy between the CP view and the learner's Field of View (FoV), and (3) the unreliability even in CP-generated labels. To address these issues, we design an adaptation-oriented feature sharing mechanism that selectively transmits the most critical information for adaptation, an FoV filtering method that meticulously eliminates mismatched labels, and a curriculum learning strategy to progressively exploit pseudo labels. Extensive experiments on 3D object detection tasks demonstrate that LDE consistently outperforms both the pre-trained models and state-of-the-art unsupervised adaptation methods.",
+  "abstract_zh": "在自动驾驶中，由于领域转移，感知模型往往难以在新环境中进行泛化。虽然无监督模型适应提供了一种无需劳动密集型手动标注的可行解决方案，但现有方法仅依赖自我车辆的数据，通常导致伪标注性能较差。为了解决这一关键问题，我们提出了LDE（Learning from Distributed ``Eyes''），一个将协同感知（CP）转化为模型适应高质量监督源的新框架。这种伪标注方法对超参数不敏感且相对可靠，假设CP通常优于单一代理的感知。然而，简单地实施这一方法会遇到（1）在时间和带宽限制下共享丰富特征的通信瓶颈，（2）CP视角与学习者视场（FoV）之间的视图差异，以及（3）即使在CP生成的标签中也存在的不可靠性。为了解决这些问题，我们设计了一种面向适应的特征共享机制，选择性地传输适应所需的最关键信息，一种FoV过滤方法，仔细消除不匹配的标签，以及一种课程学习策略，以逐步利用伪标签。在3D物体检测任务上的大量实验表明，LDE始终优于预训练模型和最先进的无监督适应方法。",
+  "arxiv_id": "2609.18511",
+  "arxiv_url": "https://arxiv.org/abs/2609.18511v1",
+  "authors": [
+    "Yanan Ma",
+    "Yihang Tao",
+    "Zhengru Fang",
+    "Zihan Fang",
+    "Yiqin Deng",
+    "Xianhao Chen",
+    "Yuguang Fang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-18511",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-17T09:46:22.021423+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.18511v1",
+  "published_at": "2026-09-16T11:44:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego-vehicle",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "3d object detection"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.18511v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "3D 检测",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Learning from Distributed Eyes: Leveraging Collaborative Perception for Automated Model Adaptation",
+  "title_zh": "来自分布式视角的学习：利用协同感知进行自动化模型适应",
+  "translation_url": "https://hjfy.top/arxiv/2609.18511"
+}

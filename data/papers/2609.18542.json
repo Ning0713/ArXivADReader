@@ -1,0 +1,58 @@
+{
+  "abstract": "4D radar has emerged as a promising next-generation sensor for improving the robustness of autonomous driving perception systems because of its stable sensing capability under adverse weather conditions. However, deploying 4D radar in embedded environments with limited hardware resources requires radar-representation preprocessing that jointly considers perception accuracy, real-time performance, and computational complexity. This paper proposes a preprocessing framework for 4D-radar-based 3D object detection. First, Percentile-based 3D Shape Preservation (P3DP) extracts point clouds from radar tensors while preserving object-shape information and suppressing noise and false alarms. Second, Multi-frame-based Noise Point Discrimination using Kernel Density Estimation (MF-KDE) improves the density and reliability of sparse radar point clouds. Finally, Embedded \\& NetScore (ENS) evaluates suitability for embedded deployment by jointly considering accuracy, real-time performance, adverse-weather robustness, and model complexity.",
+  "abstract_zh": "4D雷达作为一种有前景的下一代传感器，因其在恶劣天气条件下的稳定感知能力，正在改善自主驾驶感知系统的鲁棒性。然而，在硬件资源有限的嵌入式环境中部署4D雷达需要进行雷达表示预处理，以共同考虑感知准确性、实时性能和计算复杂性。本文提出了一种基于4D雷达的3D目标检测预处理框架。首先，基于百分位数的3D形状保留方法（Percentile-based 3D Shape Preservation, P3DP）从雷达张量中提取点云，同时保留物体形状信息并抑制噪声和误报。其次，基于多帧的噪声点区分方法（Multi-frame-based Noise Point Discrimination using Kernel Density Estimation, MF-KDE）提高了稀疏雷达点云的密度和可靠性。最后，嵌入式与网络评分（Embedded & NetScore, ENS）通过共同考虑准确性、实时性能、恶劣天气鲁棒性和模型复杂性来评估嵌入式部署的适用性。",
+  "arxiv_id": "2609.18542",
+  "arxiv_url": "https://arxiv.org/abs/2609.18542v1",
+  "authors": [
+    "Woo-Jin Jung",
+    "Dong-Hee Paek",
+    "Jeong-Su Park",
+    "Seung-Hyun Kong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-18542",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-17T09:46:22.023247+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.18542v1",
+  "published_at": "2026-09-16T12:06:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "3d object detection",
+      "4d radar",
+      "radar",
+      "点云",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 87
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.18542v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "3D 检测"
+    ]
+  },
+  "title": "Accuracy- and Real-Time-Aware 4D Radar Preprocessing for Autonomous Driving Perception Systems",
+  "title_zh": "面向自主驾驶感知系统的准确性与实时性兼顾的4D雷达预处理",
+  "translation_url": "https://hjfy.top/arxiv/2609.18542"
+}

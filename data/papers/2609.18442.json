@@ -1,0 +1,72 @@
+{
+  "abstract": "Safe motion planning in automated driving requires anticipating evolving traffic risks and deciding when to revise the current planned trajectory. We introduce RiskWorld, a risk-aware world modeling framework for shared occupancy forecasting and selective trajectory replacement. Spatial risk fields and temporal actor context are fused with visual bird's-eye-view features. Flow-guided evolution transports occupancy and scene features, while signed residuals correct occupancy after transport. One forecast is generated per planning step and reused across candidates. Each candidate is compared with a current-state persistence reference, yielding a nonnegative collision-score correction. The trajectory selected by current-world evaluation serves as the planning anchor and is replaced only when additional predicted risk triggers intervention and an alternative satisfies component-wise constraints on predicted risk and trajectory error. Candidate geometries remain unchanged. We evaluate RiskWorld for open-loop planning on nuScenes using camera features, annotation-derived current and historical actor states, and dataset-provided map context. RiskWorld achieves the lowest collision rate at a long evaluation horizon of 3 s, and the second-best average L2 error among various state-of-the-art baselines, while running at 11.5 FPS on a single NVIDIA RTX 4090 with 90.81 M parameters. Within-setting ablations show that RiskWorld achieves lower collision rates than the current-state rescoring baseline, while forecast reuse enables additional candidates to be evaluated at low marginal computational cost.",
+  "abstract_zh": "在自动驾驶中，安全的运动规划需要预测不断变化的交通风险，并决定何时修订当前规划的轨迹。我们提出了RiskWorld，一个风险感知的世界建模框架，用于共享占用预测和选择性轨迹替换。空间风险场和时间行为者上下文与视觉鸟瞰特征相融合。流引导演化传输占用和场景特征，而带符号的残差在传输后校正占用。每个规划步骤生成一个预测，并在候选者之间重用。每个候选者与当前状态持久性参考进行比较，产生非负的碰撞评分校正。通过当前世界评估选择的轨迹作为规划锚，仅在额外预测风险触发干预且替代方案满足预测风险和轨迹误差的分量约束时才进行替换。候选几何形状保持不变。我们在nuScenes上评估RiskWorld的开环规划，使用相机特征、注释派生的当前和历史行为者状态，以及数据集提供的地图上下文。RiskWorld在3秒的长评估时间范围内实现了最低的碰撞率，并在各种最先进的基线中获得第二低的平均L2误差，同时在单个NVIDIA RTX 4090上以11.5 FPS的速度运行，参数量为90.81M。设置内消融实验表明，RiskWorld的碰撞率低于当前状态重评分基线，而预测重用使得可以以低边际计算成本评估额外候选者。",
+  "arxiv_id": "2609.18442",
+  "arxiv_url": "https://arxiv.org/abs/2609.18442v1",
+  "authors": [
+    "Rongxiang Zeng",
+    "Linsen Cai",
+    "Jiafu Zhang",
+    "Yijie Zhong",
+    "Yide Tao",
+    "Shuai Wang",
+    "Nan Zheng",
+    "Hai L. Vu",
+    "Alvaro Garcia Hernandez",
+    "Yongqi Dong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-18442",
+  "categories": [
+    "cs.AI",
+    "cs.ET",
+    "cs.LG",
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-17T09:46:22.102389+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.18442v1",
+  "published_at": "2026-09-16T10:32:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "nuscenes",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "bird's-eye",
+      "occupancy",
+      "motion planning",
+      "运动规划",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.18442v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "BEV/Occupancy",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Risk-Aware World Modeling with Flow-Guided Occupancy Evolution for Selective Trajectory Planning in Automated Driving",
+  "title_zh": "基于流引导占用演化的风险感知世界建模用于自动驾驶中的选择性轨迹规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.18442"
+}

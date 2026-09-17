@@ -1,0 +1,55 @@
+{
+  "abstract": "Automating robotic harvesting in intensive agriculture within Mediterranean greenhouses requires overcoming significant challenges related to the geometric complexity of plants and occluded fruits. Although existing literature offers solutions targeting crops that grow in isolation (e.g., apples, sweet peppers, or peaches), the fundamental challenge lies in cluster-growing vegetables, where fixed sensors mounted on robotic systems fail to detect fruits hidden behind the visible surface. To address this limitation, this study presents a comprehensive pipeline for the 3D reconstruction and precise localization of each fruit within a cluster, including heavily occluded instances. The proposed methodology is structured into five sequential stages: i) point cloud acquisition using the AgriSEE Next Best View (NBV) active planner; ii) stochastic noise filtering via Statistical Outlier Removal (SOR); iii) surface classification and segmentation using Region Growing (RG); iv) isolation and recovery of occluded fruits through Density-Based Spatial Clustering of Applications with Noise (DBSCAN); and v) 3D pose estimation (position and orientation). This approach extracts the complete cluster geometry, ensuring the reliable identification of partially hidden tomatoes. Evaluated across multiple scenarios with varying occlusion levels within a simulation framework rigorously validated against real-world conditions, the system achieves a precision exceeding 90\\%, an average recall of 82.8\\%, and a mean Intersection over Union (mIoU) of 80.7\\%. Furthermore, it demonstrates high repeatability in centroid estimation with a Root Mean Square Error (RMSE) of merely 4.2~mm, verifying its technical feasibility and high accuracy for autonomous harvesting operations.",
+  "abstract_zh": "在地中海温室中实现集约农业的机器人采摘自动化，需要克服与植物的几何复杂性和被遮挡水果相关的重大挑战。尽管现有文献提供了针对孤立生长作物（例如苹果、甜椒或桃子）的解决方案，但根本挑战在于簇生长的蔬菜，其中固定传感器无法检测到隐藏在可见表面后面的水果。为了解决这一局限性，本研究提出了一种全面的管道，用于对簇中每个水果进行三维重建和精确定位，包括严重遮挡的实例。所提出的方法论分为五个顺序阶段：i）使用 AgriSEE Next Best View (NBV) 主动规划器进行点云采集；ii）通过统计离群点去除 (SOR) 进行随机噪声过滤；iii）使用区域生长 (RG) 进行表面分类和分割；iv）通过基于密度的空间聚类应用与噪声 (DBSCAN) 隔离和恢复被遮挡的水果；v）进行三维姿态估计（位置和方向）。该方法提取了完整的簇几何形状，确保可靠识别部分隐藏的番茄。在一个经过严格验证的模拟框架中评估多个场景，具有不同的遮挡水平，系统的精度超过90%，平均召回率为82.8%，平均交并比 (mIoU) 为80.7%。此外，它在质心估计中表现出高重复性，均方根误差 (RMSE) 仅为4.2毫米，验证了其在自主采摘操作中的技术可行性和高准确性。",
+  "arxiv_id": "2609.18738",
+  "arxiv_url": "https://arxiv.org/abs/2609.18738v1",
+  "authors": [
+    "Fernando Cañadas-Aránega",
+    "Rowan Border",
+    "José C. Moreno",
+    "José L. Blanco-Claraco"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-18738",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-17T09:46:21.945170+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.18738v1",
+  "published_at": "2026-09-16T14:33:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "intersection",
+      "point cloud",
+      "点云",
+      "agriculture",
+      "robotic",
+      "农业"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.18738v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Active perception for robotic harvesting: 3D reconstruction and localisation of tomatoes hidden within clusters in a Mediterranean greenhouse",
+  "title_zh": "机器人采摘的主动感知：地中海温室中隐藏在簇中的番茄的三维重建与定位",
+  "translation_url": "https://hjfy.top/arxiv/2609.18738"
+}

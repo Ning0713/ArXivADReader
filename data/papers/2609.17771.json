@@ -1,0 +1,55 @@
+{
+  "abstract": "Approaches to incorporating human awareness into mobile robot decision-making mainly focus on collision avoidance in low-level motion planning, often overlooking the challenges posed by human presence and high-level behavior. To address this vacancy, we present HINT-Plan, a novel approach to integrate human intention prediction into robot task planning. HINT-Plan employs Vision Language Models (VLMs) to anticipate high-level human intentions from third-person image observations, convert them into goal states, and solve joint task-planning problems. To effectively enable scene awareness in context-rich environments, we use hierarchical Scene Graphs (SGs) as high-level representations of the environment, and translate environmental topology and actionable knowledge into formal planning language to ensure executable plans. Evaluated in a photorealistic simulation, HINT-Plan achieves an overall success rate of 69.71% in joint human-robot task planning, substantially outperforming the baselines by up to 35.29%, while also reducing functional conflicts. The results show the effectiveness of explicitly incorporating inferred human intentions into formal multi-agent task planning for proactive human-aware robot decision-making.",
+  "abstract_zh": "将人类意识融入移动机器人决策中的方法主要集中在低级运动规划中的避碰，往往忽视了人类存在和高级行为带来的挑战。为了解决这一空白，我们提出了HINT-Plan，一种将人类意图预测集成到机器人任务规划中的新方法。HINT-Plan利用视觉语言模型（Vision Language Models, VLMs）从第三人称图像观察中预测高级人类意图，将其转化为目标状态，并解决联合任务规划问题。为了有效地在丰富环境中实现场景感知，我们使用分层场景图（Scene Graphs, SGs）作为环境的高级表示，并将环境拓扑和可执行知识转化为正式的规划语言，以确保可执行的计划。在一个照片级真实感的仿真中，HINT-Plan在联合人机任务规划中实现了69.71%的整体成功率，显著优于基线，提升幅度达到35.29%，同时减少了功能冲突。结果表明，明确地将推断的人类意图融入正式的多智能体任务规划中，对于主动的人类感知机器人决策具有有效性。",
+  "arxiv_id": "2609.17771",
+  "arxiv_url": "https://arxiv.org/abs/2609.17771v1",
+  "authors": [
+    "Yuchen Liu",
+    "Luigi Palmieri",
+    "Lujun Li",
+    "Radu State",
+    "Ilche Georgievski",
+    "Marco Aiello"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-17771",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-17T09:46:21.884469+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17771v1",
+  "published_at": "2026-09-15T19:24:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "行人",
+      "motion planning",
+      "运动规划",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17771v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "HINT-Plan: Human Intention-Aware Robot Task Planning in Context-Rich Environments using Vision Language Models",
+  "title_zh": "HINT-Plan：在丰富环境中使用视觉语言模型进行人类意图感知的机器人任务规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.17771"
+}

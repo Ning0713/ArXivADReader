@@ -1,0 +1,52 @@
+{
+  "abstract": "An important component of urban accessibility, particularly for wheelchair users and people with reduced mobility, is sidewalk compliance with measurable requirements. We test whether effective width, longitudinal slope, cross slope, and pavement condition can be assessed reliably from pedestrian-level imagery using vision-language models (VLMs). We present the first application of sampling-based conformal prediction (CP) for VLM-based accessibility assessment. We evaluate four VLMs on 514 sidewalk images from Seoul, South Korea, with field-measured ground truth. Conformal calibration attains the nominal 90% coverage for all models and attributes, but the calibrated regions differ in informativeness. Effective width yields the most informative estimates, with a mean interval half-width of about 1.0 m for the best model. Since every model overestimates width, asymmetric calibration shortens the intervals by up to 33% at unchanged coverage. Longitudinal slope is marginally informative, cross-slope intervals are too wide to resolve regulatory thresholds, and pavement-condition sets degenerate to all five grades (A-E) for three of the four models. Uncalibrated intervals from raw sampling dispersion cover only 17-47% of field-measured values at a nominal 90% level. Among the images with the most self-consistent responses, these intervals miss the field-measured value in up to 96% of cases. Response self-consistency is therefore not evidence of accuracy, and sampling dispersion cannot be interpreted as uncertainty until it has been calibrated against field-measured ground truth. No quantitative attribute reaches the precision required for general compliance assessment, but CP identifies from calibration data alone which attributes can support screening of segments far from the thresholds. We release the annotated pedestrian-level images and their corresponding field-measured attribute values.",
+  "abstract_zh": "城市无障碍的一个重要组成部分，特别是对于轮椅用户和行动不便的人士，是人行道是否符合可测量的要求。我们测试了有效宽度、纵向坡度、横向坡度和路面状况是否可以通过使用视觉语言模型（VLMs）从行人视角的图像中可靠地评估。我们展示了基于采样的符合预测（CP）在基于VLM的无障碍评估中的首次应用。我们在来自韩国首尔的514张人行道图像上评估了四个VLM，使用实地测量的真实值进行验证。符合校准在所有模型和属性上达到了名义上的90%覆盖率，但校准区域在信息量上存在差异。有效宽度提供了最具信息量的估计，最佳模型的平均区间半宽度约为1.0米。由于每个模型都高估了宽度，非对称校准在不改变覆盖率的情况下将区间缩短了最多33%。纵向坡度的信息量边际，横向坡度的区间过宽，无法解决监管阈值，而路面状况的分类在四个模型中的三个退化为所有五个等级（A-E）。未经校准的原始采样分散区间在名义90%的水平下仅覆盖了17-47%的实地测量值。在响应最自洽的图像中，这些区间在多达96%的情况下未能覆盖实地测量值。因此，响应自洽性并不能证明准确性，采样分散在未经过实地测量的真实值校准之前无法被解释为不确定性。没有任何定量属性达到了进行一般合规评估所需的精度，但CP仅通过校准数据识别出哪些属性可以支持远离阈值的区段筛选。我们发布了标注的人行道图像及其对应的实地测量属性值。",
+  "arxiv_id": "2609.17882",
+  "arxiv_url": "https://arxiv.org/abs/2609.17882v1",
+  "authors": [
+    "Seung Jae Lieu",
+    "Diego Morra",
+    "Chiara Cadoni",
+    "Wonseop Song",
+    "Martina Mazzarello",
+    "Carlo Ratti"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-17882",
+  "categories": [
+    "cs.CV",
+    "cs.CY",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-17T09:46:21.977375+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17882v1",
+  "published_at": "2026-09-15T22:15:04Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17882v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "论文评估VLM能否从行人视角街景中估计人行道宽度、坡度和路面状况，并以保形预测校准不确定性。研究表明，原始VLM采样结果的自洽性和离散度不能可靠反映真实精度；经校准后，宽度估计可支持部分筛查，但坡度和路面状态尚不足以进行通用合规判断。该工作与自动驾驶中的城市道路环境语义理解、基础设施属性提取及VLM可靠性评估具有邻近关联。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "地图/定位"
+    ]
+  },
+  "title": "Can VLMs Reliably Assess Sidewalk Accessibility Attributes from Pedestrian-Level Imagery?",
+  "title_zh": "视觉语言模型能否可靠地评估人行道无障碍属性？",
+  "translation_url": "https://hjfy.top/arxiv/2609.17882"
+}

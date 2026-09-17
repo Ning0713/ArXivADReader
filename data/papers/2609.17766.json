@@ -1,0 +1,52 @@
+{
+  "abstract": "Radar-based navigation is appealing for its robustness to adverse conditions involving airborne particles, such as precipitation, dust, fog, and smoke, that can cause lidar-based systems to fail. Recently, direct methods that retain and use the entire radar scan rather than sparse points have improved on-road global localization performance. However, they have yet to be deployed in off-road environments or in closed-loop systems. Additionally, even direct global maps may lose information: their global nature leads to a smoothing out of viewpoint-dependent radar artifacts, which can provide pose information when mapping and localization occur along similar trajectories. This paper introduces Direct Radar Teach & Repeat (DRT&R): a direct spinning radar-based navigation stack that maximizes the amount of retained information by combining direct radar processing with local mapping. DRT&R yields state-of-the-art (SOTA) localization performance in both on-road and off-road environments. Using 344 km of on-road data and 20 km of off-road data, DRT&R is able to localize to within 4 cm in most on-road and off-road conditions, and 12 cm in geometrically degenerate and sparse environments. DRT&R is also evaluated autonomously in closed loop with an MPC controller for more than 10 km using a Clearpath Warthog off-road vehicle, demonstrating that it runs in real time and achieves SOTA tracking performance for off-road radar navigation.",
+  "abstract_zh": "基于雷达的导航因其对不利条件的鲁棒性而备受关注，这些不利条件包括降水、灰尘、雾霾和烟雾等，这些因素可能导致基于激光雷达的系统失效。最近，直接方法通过保留和使用整个雷达扫描而非稀疏点，改善了公路全球定位性能。然而，这些方法尚未在越野环境或闭环系统中部署。此外，即使是直接的全球地图也可能会丢失信息：其全球性质导致视点依赖的雷达伪影被平滑化，而这些伪影在沿相似轨迹进行映射和定位时可以提供位姿信息。本文介绍了直接雷达教学与重复（DRT&R）：一种基于直接旋转雷达的导航系统，通过将直接雷达处理与局部映射相结合，最大化保留信息的量。DRT&R在公路和越野环境中均实现了最先进的定位性能。利用344公里的公路数据和20公里的越野数据，DRT&R能够在大多数公路和越野条件下实现4厘米的定位精度，并在几何退化和稀疏环境中实现12厘米的定位精度。DRT&R还在闭环中使用模型预测控制（MPC）控制器进行了超过10公里的自主评估，展示了其实时运行能力，并在越野雷达导航中实现了最先进的跟踪性能。",
+  "arxiv_id": "2609.17766",
+  "arxiv_url": "https://arxiv.org/abs/2609.17766v1",
+  "authors": [
+    "Alexander Krawciw",
+    "Daniil Lisus",
+    "Cedric Le Gentil",
+    "Timothy D. Barfoot"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-17766",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-17T09:46:21.883555+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17766v1",
+  "published_at": "2026-09-15T19:13:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17766v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "LiDAR/点云",
+      "感知"
+    ]
+  },
+  "title": "DRT&R: Direct Radar Teach & Repeat",
+  "title_zh": "DRT&R：直接雷达教学与重复",
+  "translation_url": "https://hjfy.top/arxiv/2609.17766"
+}

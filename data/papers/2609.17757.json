@@ -1,0 +1,61 @@
+{
+  "abstract": "Behavioral cloning trains a policy offline on expert demonstrations, but deployment is closed loop: each action affects the observations the policy receives next. We study how much closed-loop driving competence a compact multimodal policy can acquire from offline demonstrations in the CARLA simulator. The policy uses five-frame histories of RGB images, LiDAR, vehicle telemetry, and lane waypoints to predict throttle, brake, and steering at 20 Hz. Demonstrations were collected in three stages, ending with a systematic route-generation procedure that enumerates spawn points and feasible maneuvers and verifies completed autopilot routes. The released 1.36 million parameter policy was trained on 236,882 windows, representing about 3.3 hours of driving from 448 captures. The resulting policy drives autonomously for hours on training and held-out routes. In our runs, it did so without collisions and also transferred qualitatively to an unseen CARLA town with different road geometry. We also observed recovery from large trajectory deviations, although we do not claim systematic recovery without controlled evaluation. We report offline metrics and distinguish measured results from qualitative closed-loop observations. We release the code, trained checkpoint, ONNX model, data sample, and an evidence audit for the reported claims.",
+  "abstract_zh": "行为克隆在专家演示上离线训练策略，但部署是闭环的：每个动作都会影响策略接下来接收到的观测。我们研究了紧凑的多模态策略能够从CARLA模拟器中的离线演示中获得多少闭环驾驶能力。该策略使用五帧历史的RGB图像、激光雷达（LiDAR）、车辆遥测和车道航点，以20 Hz的频率预测油门、刹车和转向。演示分三个阶段收集，最后通过系统的路线生成程序枚举生成点和可行的机动，并验证完成的自动驾驶路线。发布的136万参数策略是在236,882个窗口上训练的，代表约3.3小时的驾驶，来自448次捕获。最终的策略在训练和保留的路线中能够自主驾驶数小时。在我们的实验中，它在没有碰撞的情况下完成了驾驶，并且在不同道路几何的未见CARLA城镇中也实现了定性迁移。我们还观察到从大轨迹偏差中恢复，尽管我们不声称在没有控制评估的情况下实现系统恢复。我们报告了离线指标，并区分了测量结果与定性闭环观察。我们发布了代码、训练检查点、ONNX模型、数据样本和报告声明的证据审计。",
+  "arxiv_id": "2609.17757",
+  "arxiv_url": "https://arxiv.org/abs/2609.17757v1",
+  "authors": [
+    "Jordy Kieto"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-17757",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-17T09:46:22.062695+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17757v1",
+  "published_at": "2026-09-15T19:08:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "lane",
+      "驾驶",
+      "车辆",
+      "道路",
+      "车道",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17757v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "Imitation Learning for Autonomous Driving in CARLA",
+  "title_zh": "在CARLA中用于自主驾驶的模仿学习",
+  "translation_url": "https://hjfy.top/arxiv/2609.17757"
+}

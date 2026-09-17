@@ -1,0 +1,59 @@
+{
+  "abstract": "State-of-the-art vision-language-action models (VLA) for autonomous driving face critical limitations: excessive parameter counts, inefficient high-resolution image processing, and lack of temporal memory. We introduce Fast and EffectIVE VLA (FIVE-VLA) to address these through two key contributions. First, we employ an efficient vision encoder that processes high-resolution ($448 \\times 896$) images while generating only 98 tokens, over $5\\times$ fewer than existing approaches, and bypass text generation entirely for single-pass trajectory prediction. Second, we propose Recurrent Action Memory (RAM), a lightweight module that conditions action prediction on previous action tokens, providing temporal context critical for manoeuvres such as overtaking and emergency braking. With only 641M parameters, FIVE-VLA completes $\\sim$10% more routes without traffic rule infractions than the previous state-of-the-art VLA on the challenging Bench2Drive closed-loop driving benchmark. Non-reactive open-loop simulation on the large-scale real-world NVIDIA Physical AI AV dataset shows 10.2% and 7.7% lower collision-violation rates than SimLingo in single- and four-view settings, respectively. Additionally, FIVE-VLA runs at $\\sim$30 fps on an A100 and $\\sim$4 fps on a T4 GPU (proxy to an edge device), representing an 8-30$\\times$ speedup over previous methods.",
+  "abstract_zh": "最先进的视觉-语言-动作模型（VLA）在自主驾驶中面临着关键的限制：过多的参数数量、低效的高分辨率图像处理以及缺乏时间记忆。我们提出了快速有效的 VLA（FIVE-VLA）来解决这些问题，主要有两个关键贡献。首先，我们采用了一种高效的视觉编码器，该编码器在处理高分辨率（$448 imes 896$）图像时仅生成 98 个标记，比现有方法少超过 $5 imes$，并且在单次轨迹预测中完全跳过文本生成。其次，我们提出了递归动作记忆（Recurrent Action Memory, RAM），这是一个轻量级模块，它根据先前的动作标记来调整动作预测，提供了对超车和紧急刹车等机动操作至关重要的时间上下文。FIVE-VLA 仅用 641M 参数，在具有挑战性的 Bench2Drive 闭环驾驶基准测试中，完成的路线比之前的最先进 VLA 多约 10%，且没有违反交通规则。在大规模真实世界的 NVIDIA Physical AI AV 数据集上进行的非反应性开环仿真显示，在单视图和四视图设置中，其碰撞违规率分别比 SimLingo 低 10.2% 和 7.7%。此外，FIVE-VLA 在 A100 GPU 上运行约 30 fps，在 T4 GPU（相当于边缘设备）上运行约 4 fps，较之前的方法实现了 8-30 倍的加速。",
+  "arxiv_id": "2609.18623",
+  "arxiv_url": "https://arxiv.org/abs/2609.18623v1",
+  "authors": [
+    "Kemal Oksuz",
+    "Alexandru Buburuzan",
+    "Yuhan Yao",
+    "Puneet K. Dokania"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-18623",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-17T09:46:22.030471+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.18623v1",
+  "published_at": "2026-09-16T13:13:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "trajectory prediction",
+      "vision-language-action",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 65
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.18623v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "VLM/VLA",
+      "预测/规划"
+    ]
+  },
+  "title": "FIVE-VLA: Fast and EffectIVE Autonomous Driving with Recurrent Action Memory",
+  "title_zh": "FIVE-VLA：具有递归动作记忆的快速有效自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.18623"
+}

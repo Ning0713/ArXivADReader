@@ -1,0 +1,55 @@
+{
+  "abstract": "Track 2 of the AI City Challenge 2026 requires both visual question answering (VQA) and traffic event description generation under a challenging synthetic-to real domain shift. Existing vision-language approaches often entangle semantic understanding with language generation, making them susceptible to hallucination and inconsistent reasoning across event phases. In this work, we propose a decoupled semantic understanding framework that first resolves predefined traffic questions into structured semantic facts and subsequently uses these facts to guide caption generation. A frozen V-JEPA encoder extracts predictive scene representations, while a lightweight Llama-based predictor produces answers for VQA queries. To improve reliability, we introduce a training-free structured refinement mechanism that exploits statistical priors, inter-question relationships, and temporal event consistency to correct prediction errors. The refined semantic facts are then provided to Qwen3-VL-8B to generate pedestrian and vehicle descriptions for each traffic event. Experimental results on the official 2026 AI City Challenge Track 2 benchmark show that the proposed method achieves 87.09% VQA accuracy and an overall S2 score of 60.0853, ranking first among all participating teams. These results demonstrate that predictive world representations combined with structured semantic refinement enable more accurate and reliable traffic understanding, leading to higher-quality lan guage generation.",
+  "abstract_zh": "2026 年 AI 城市挑战赛的第二赛道要求在具有挑战性的合成到真实领域转变下进行视觉问答 (VQA) 和交通事件描述生成。现有的视觉语言方法通常将语义理解与语言生成纠缠在一起，使得它们容易受到幻觉和事件阶段之间不一致推理的影响。在本研究中，我们提出了一种解耦的语义理解框架，首先将预定义的交通问题转化为结构化的语义事实，随后利用这些事实指导标题生成。一个冻结的 V-JEPA 编码器提取预测场景表示，而一个轻量级的基于 Llama 的预测器为 VQA 查询生成答案。为了提高可靠性，我们引入了一种无训练的结构化精炼机制，利用统计先验、问题间关系和时间事件一致性来纠正预测错误。然后，将精炼后的语义事实提供给 Qwen3-VL-8B，以生成每个交通事件的行人和车辆描述。在 2026 年 AI 城市挑战赛第二赛道的官方基准测试中，实验结果表明，所提出的方法实现了 87.09% 的 VQA 准确率和 60.0853 的整体 S2 分数，排名所有参赛队伍第一。这些结果表明，结合结构化语义精炼的预测世界表示能够实现更准确和可靠的交通理解，从而提高语言生成的质量。",
+  "arxiv_id": "2609.18562",
+  "arxiv_url": "https://arxiv.org/abs/2609.18562v1",
+  "authors": [
+    "Nguyen Hoai Thuong Bui",
+    "Thanh Nguyen Vo",
+    "Trinh Tra Giang Nguyen",
+    "Ha Duc Bui"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-18562",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-17T09:46:22.026840+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.18562v1",
+  "published_at": "2026-09-16T12:21:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "pedestrian",
+      "车辆",
+      "交通",
+      "行人",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 34
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.18562v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Sim-to-Real Traffic Scene Understanding by Decoupling Semantics from Caption Generation with V-JEPA",
+  "title_zh": "通过使用 V-JEPA 解耦语义与标题生成实现模拟到真实的交通场景理解",
+  "translation_url": "https://hjfy.top/arxiv/2609.18562"
+}

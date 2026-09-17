@@ -1,0 +1,50 @@
+{
+  "abstract": "Semantic labels for indoor mobile laser scanning (MLS) frames remain largely absent from current point cloud semantic segmentation benchmarks, which mainly focus on reconstructed indoor scenes or outdoor LiDAR perception. This paper introduces Semantic-ITC, to the best of our knowledge the first public dataset and benchmark for frame-wise indoor MLS semantic segmentation. The dataset contains 52 indoor sequences, 79,108 MLS frames, and 1.23 billion labeled points collected in classrooms, corridors, meeting rooms, offices, and study areas. Labels are attached directly to measured LiDAR points in each frame using 16 semantic classes covering structural elements, furniture, room equipment, vegetation, and other indoor objects. Semantic-ITC preserves the sparse, non-uniform, and frame-wise sampling pattern of indoor MLS, making it distinct from scene-level reconstructed point clouds and mesh-based indoor datasets. The annotations are produced by a hybrid workflow that combines predictions from a visual foundation model applied to synchronized RGB images, structural information from BIM, and manual refinement, with the final labels assigned to the original LiDAR frames. A single-frame benchmark is provided, and the best baseline reaches 79.27\\% mIoU. Remaining errors are concentrated around object boundaries and ambiguous indoor classes, indicating the challenges of indoor MLS segmentation under sparse frame geometry and long-tailed class distributions. The dataset provides a public benchmark for evaluating semantic segmentation directly on measured indoor MLS frames and supports future studies on frame-wise indoor MLS semantic segmentation.",
+  "abstract_zh": "当前的点云语义分割基准主要集中在重建的室内场景或户外激光雷达感知上，室内移动激光扫描（MLS）帧的语义标签仍然缺乏。本文介绍了Semantic-ITC，这是我们所知的第一个公开的逐帧室内MLS语义分割数据集和基准。该数据集包含52个室内序列、79,108个MLS帧和12.3亿个标注点，这些数据是在教室、走廊、会议室、办公室和学习区域收集的。标签直接附加到每帧中测量的激光雷达点上，使用16个语义类别覆盖结构元素、家具、房间设备、植物和其他室内物体。Semantic-ITC保留了室内MLS的稀疏、不均匀和逐帧采样模式，使其与场景级重建点云和基于网格的室内数据集有所不同。注释是通过一种混合工作流程生成的，该流程结合了应用于同步RGB图像的视觉基础模型的预测、来自建筑信息模型（BIM）的结构信息以及人工精细化，最终标签分配给原始的激光雷达帧。提供了单帧基准，最佳基线达到79.27%的mIoU。剩余的错误集中在物体边界和模糊的室内类别周围，表明在稀疏帧几何和长尾类别分布下进行室内MLS分割的挑战。该数据集为直接在测量的室内MLS帧上评估语义分割提供了一个公共基准，并支持未来对逐帧室内MLS语义分割的研究。",
+  "arxiv_id": "2609.18493",
+  "arxiv_url": "https://arxiv.org/abs/2609.18493v1",
+  "authors": [
+    "Haiyang Wu",
+    "Muhammad Affan",
+    "George Vosselman",
+    "Ville Lehtola"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-18493",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-17T09:46:22.019615+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.18493v1",
+  "published_at": "2026-09-16T11:30:15Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.18493v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "本文发布面向逐帧室内移动激光扫描点云语义分割的数据集与基准。虽然采集场景不是道路自动驾驶，但其针对原始稀疏LiDAR帧的语义感知、RGB辅助标注流程及长尾/边界误差分析，与自动驾驶激光雷达感知研究具有方法和数据层面的可迁移性。",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Semantic-ITC: A Frame-wise Indoor Mobile Laser Scanning Dataset and Benchmark for Semantic Segmentation",
+  "title_zh": "Semantic-ITC：一个用于语义分割的逐帧室内移动激光扫描数据集和基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.18493"
+}

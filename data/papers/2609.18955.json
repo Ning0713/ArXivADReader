@@ -1,0 +1,53 @@
+{
+  "abstract": "Efficient perception models are essential for real-time autonomous driving, where accuracy and computational cost must be carefully balanced. However, applying knowledge distillation to multi-task driving scene segmentation is challenging because drivable-area and lane segmentation exhibit different spatial characteristics and class imbalance. We propose KDTwin, a task-aware distillation framework for lightweight multi-task segmentation networks. The proposed method performs distillation at both the shared encoder and task-specific decoders. Encoder-level pairwise distillation transfers spatial relational knowledge to enhance the student's shared representation. For the decoders, we use a weighted loss for drivable-area segmentation and a boundary-aware loss for lane segmentation, enabling task-adaptive knowledge transfer without increasing inference complexity. Experiments on BDD100K show consistent improvements across the evaluated CNN-based and Transformer-based student models without increasing inference-time parameters or FLOPs. The results show that designing distillation objectives according to task-specific characteristics can effectively enhance multi-task segmentation performance for autonomous driving. The source code is available at https://github.com/chequanghuy/KDTwin.",
+  "abstract_zh": "高效的感知模型对于实时自主驾驶至关重要，其中准确性和计算成本必须谨慎平衡。然而，将知识蒸馏应用于多任务驾驶场景分割面临挑战，因为可行驶区域和车道分割表现出不同的空间特征和类别不平衡。我们提出了KDTwin，一种面向任务的蒸馏框架，用于轻量级多任务分割网络。所提出的方法在共享编码器和任务特定解码器上进行蒸馏。编码器级的成对蒸馏传递空间关系知识，以增强学生的共享表示。对于解码器，我们使用加权损失进行可行驶区域分割，并使用边界感知损失进行车道分割，从而实现任务自适应的知识转移，而不增加推理复杂度。在BDD100K上的实验表明，在评估的基于CNN和基于Transformer的学生模型中，均取得了一致的改进，而没有增加推理时间参数或FLOPs。结果表明，根据任务特定特征设计蒸馏目标可以有效提升自主驾驶的多任务分割性能。源代码可在https://github.com/chequanghuy/KDTwin获取。",
+  "arxiv_id": "2609.18955",
+  "arxiv_url": "https://arxiv.org/abs/2609.18955v1",
+  "authors": [
+    "Huy Che",
+    "Minh-Khoi Do",
+    "Dinh-Duy Phan",
+    "Duc-Khai Lam"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-18955",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-17T09:46:22.046360+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.18955v1",
+  "published_at": "2026-07-28T03:58:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "bdd100k",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.18955v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "KDTwin: Task-Aware Knowledge Distillation for Lightweight Multi-Task Driving Scene Segmentation",
+  "title_zh": "KDTwin：面向任务的知识蒸馏用于轻量级多任务驾驶场景分割",
+  "translation_url": "https://hjfy.top/arxiv/2609.18955"
+}

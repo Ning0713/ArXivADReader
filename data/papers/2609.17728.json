@@ -1,0 +1,56 @@
+{
+  "abstract": "Recent Vision-Language-Action (VLA) models for autonomous driving have incorporated world modeling by predicting future driving scenes alongside driving actions, demonstrating strong planning performance. Future driving scenes are utilized as dense supervision, encouraging the policy to learn rich internal representations useful for planning. However, these World-Modeling VLAs rely on explicit future generation to learn such representations, thereby introducing two key limitations: additional training burden and inference latency. To address these limitations, we propose RAF-VLA (Representation Alignment with the Future), a VLA-based autonomous driving framework that shapes planning-relevant internal representations through direct guidance from future-frame representations. RAF-VLA employs Future-Aligned Supervised Fine-Tuning, in which a straightforward regularization aligns the policy's hidden states with future-frame representations obtained from a pretrained world encoder while learning driving actions. This simple alignment allows RAF-VLA to avoid the training burden and inference latency associated with future generation. Extensive experiments on the NAVSIM benchmark show that RAF-VLA achieves competitive planning performance against state-of-the-art VLA planners with substantially fewer training samples seen. Moreover, RAF-VLA incurs only 3.8% training overhead and a negligible 1 ms inference overhead.",
+  "abstract_zh": "近期的视觉-语言-动作（VLA）模型在自主驾驶中通过预测未来驾驶场景与驾驶动作相结合，融入了世界建模，展现出强大的规划性能。未来驾驶场景作为密集监督的来源，促使策略学习对规划有用的丰富内部表征。然而，这些世界建模的VLA依赖于显式的未来生成来学习这些表征，从而引入了两个关键限制：额外的训练负担和推理延迟。为了解决这些限制，我们提出了RAF-VLA（与未来对齐的表征），这是一种基于VLA的自主驾驶框架，通过来自未来帧表征的直接指导来塑造与规划相关的内部表征。RAF-VLA采用未来对齐的监督微调，其中一种简单的正则化方法将策略的隐藏状态与从预训练世界编码器获得的未来帧表征对齐，同时学习驾驶动作。这种简单的对齐使RAF-VLA能够避免与未来生成相关的训练负担和推理延迟。在NAVSIM基准上的大量实验表明，RAF-VLA在规划性能上与最先进的VLA规划器具有竞争力，同时所需的训练样本显著减少。此外，RAF-VLA仅产生3.8%的训练开销和可忽略的1毫秒推理开销。",
+  "arxiv_id": "2609.17728",
+  "arxiv_url": "https://arxiv.org/abs/2609.17728v1",
+  "authors": [
+    "Dogun Kim",
+    "Yongjae Lee",
+    "Joonhee Lim",
+    "Yeina Lee",
+    "Junhyeok Park",
+    "Moogeun Park",
+    "Dongsuk Kum"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-17728",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-17T09:46:21.881718+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17728v1",
+  "published_at": "2026-09-15T18:39:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17728v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "端到端驾驶"
+    ]
+  },
+  "title": "RAF-VLA: Representation Alignment with the Future for End-to-End Autonomous Driving",
+  "title_zh": "RAF-VLA：与未来对齐的表征用于端到端自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.17728"
+}

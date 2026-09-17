@@ -1,0 +1,61 @@
+{
+  "abstract": "The integration of large-scale foundation models with physical embodiments has led to significant advancements in robotics known as Generative Physical Artificial Intelligence (GPAI). These agentic AI systems autonomously perceive, reason, and act in complex real-world situations. This survey comprehensively analyzes GPAI systems, focusing on their architectural foundations, current applications, and key limitations. We introduce a taxonomy of five distinct approaches: Robot Foundation Models (RFMs) for cross-platform skill transfer; Vision-Language Action (VLA) models for end-to-end multi-modal perception and control; Large Behavior Models (LBMs) for human-like movement generation; Diffusion Policy Models (DPMs) for diffusion model-based temporally coherent action generation; and World Foundation Models (WFMs) for physics-compliant simulation and data generation. We examine how these approaches complement each other: WFMs generate training data for VLAs and DPMs, RFMs enable cross-platform deployment of learned policies, while LBMs provide motion priors for natural behavior. Through examples across autonomous vehicles, industrial automation, healthcare robotics, and humanoid systems, we identify significant performance improvements and summarize promising research directions in data-efficient learning, sim-to-real transfer, edge-compatible architectures, and safety frameworks. These insights advance embodied AI for IoT-connected environments where intelligent agents interact with networked sensors, actuators, and edge devices.",
+  "abstract_zh": "大规模基础模型与物理实体的结合推动了机器人技术的显著进展，这被称为生成物理人工智能（Generative Physical Artificial Intelligence, GPAI）。这些自主智能系统能够在复杂的现实世界情境中感知、推理和行动。本文全面分析了GPAI系统，重点关注其架构基础、当前应用及主要局限性。我们提出了五种不同方法的分类：跨平台技能转移的机器人基础模型（Robot Foundation Models, RFMs）；用于端到端多模态感知与控制的视觉-语言行动（Vision-Language Action, VLA）模型；用于人类般运动生成的大行为模型（Large Behavior Models, LBMs）；基于扩散模型的时间一致性动作生成的扩散策略模型（Diffusion Policy Models, DPMs）；以及用于符合物理规律的仿真和数据生成的世界基础模型（World Foundation Models, WFMs）。我们考察了这些方法如何相辅相成：WFMs为VLAs和DPMs生成训练数据，RFMs使学习到的策略能够跨平台部署，而LBMs则为自然行为提供运动先验。通过在自主车辆、工业自动化、医疗机器人和类人系统中的实例，我们识别出显著的性能提升，并总结了在数据高效学习、仿真到现实转移、边缘兼容架构和安全框架等领域的有前景的研究方向。这些见解推动了物联网连接环境中具身人工智能的发展，在这些环境中，智能代理与网络传感器、执行器和边缘设备进行交互。",
+  "arxiv_id": "2609.18111",
+  "arxiv_url": "https://arxiv.org/abs/2609.18111v1",
+  "authors": [
+    "Satyam Gaba",
+    "Krutiksinh Rana",
+    "Siva Sai",
+    "Vinay Chamola",
+    "Dusit Niyato"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-18111",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CL",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-17T09:46:21.901849+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.18111v1",
+  "published_at": "2026-09-16T04:29:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆",
+      "sim-to-real",
+      "healthcare",
+      "robot",
+      "humanoid",
+      "医疗"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 42
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.18111v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "端到端驾驶"
+    ]
+  },
+  "title": "A Comprehensive Review of Generative Physical Artificial Intelligence",
+  "title_zh": "生成物理人工智能的综合评述",
+  "translation_url": "https://hjfy.top/arxiv/2609.18111"
+}

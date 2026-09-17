@@ -1,0 +1,56 @@
+{
+  "abstract": "Video anomaly detection (VAD) is an actively studied task, having wide applications in typical scenarios such as public surveillance and road traffic safety. The task is also relevant for robotic arm interactions, where it has several downstream applications, including learning better interaction and manipulation abilities, triggering recovery procedures when anomalies occur, etc. Despite its relevance, the exploration of anomaly detection in robotic arm manipulation videos is limited by the low number of available resources. To this end, we introduce RoboVAD, a large-scale benchmark for video anomaly detection that comprises challenging cross-domain evaluation scenarios, where certain actions (tasks executed by a robotic arm) and anomaly types (mistakes that occur while performing certain tasks) remain unseen during training. RoboVAD is designed to benchmark VAD methods in realistic scenarios, where robotic arms can perform unforeseen tasks, and thereby encounter new anomaly types. We train and evaluate several state-of-the-art VAD methods, including a novel method specifically adapted for robotic arm manipulation. While the proposed method outperforms many state-of-the-art competitors, all methods remain below a micro-averaged frame-level AUC threshold of 70% in the most challenging evaluation setup, confirming the difficulty of the proposed benchmark. We publicly release our dataset and code at https://zenodo.org/records/22754659.",
+  "abstract_zh": "视频异常检测（VAD）是一个积极研究的任务，广泛应用于公共监控和道路交通安全等典型场景。该任务在机器人臂交互中也具有相关性，涉及多个下游应用，包括学习更好的交互和操作能力、在发生异常时触发恢复程序等。尽管其相关性明显，但在机器人臂操作视频中的异常检测探索受到可用资源数量有限的限制。为此，我们提出了RoboVAD，一个大规模的视频异常检测基准，包含具有挑战性的跨领域评估场景，其中某些动作（机器人臂执行的任务）和异常类型（在执行某些任务时发生的错误）在训练过程中未曾见过。RoboVAD旨在基准化VAD方法在现实场景中的表现，在这些场景中，机器人臂能够执行不可预见的任务，从而遇到新的异常类型。我们训练和评估了几种最先进的VAD方法，包括一种专门适应于机器人臂操作的新方法。尽管所提出的方法在许多最先进的竞争者中表现优异，但所有方法在最具挑战性的评估设置中仍低于70%的微平均帧级AUC阈值，确认了所提出基准的难度。我们在https://zenodo.org/records/22754659上公开发布了我们的数据集和代码。",
+  "arxiv_id": "2609.17843",
+  "arxiv_url": "https://arxiv.org/abs/2609.17843v1",
+  "authors": [
+    "Alexandru-Bogdan Dura",
+    "Sebastian Balmus",
+    "Radu Tudor Ionescu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-17#paper-2609-17843",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-17T09:46:21.974565+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.17843v1",
+  "published_at": "2026-09-15T21:02:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "交通",
+      "道路",
+      "anomaly detection",
+      "robotic"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-09-17"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.17843v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-17"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "RoboVAD: A Large Cross-Domain Evaluation Benchmark for Anomaly Detection in Robotic Arm Manipulation Videos",
+  "title_zh": "RoboVAD：用于机器人臂操作视频异常检测的大规模跨领域评估基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.17843"
+}
