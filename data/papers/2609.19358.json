@@ -1,0 +1,57 @@
+{
+  "abstract": "Three-dimensional object detection for autonomous driving is dominated by detectors trained on large corpora of human-annotated 3D boxes. Such a detector learns a fixed category list, and everything outside it is invisible. This paper asks whether the task can be solved training-free and open-vocabulary. A promptable segmentation model (SAM3), queried with class names as text prompts, supplies instance masks in the vehicle's six surround-view cameras, and the masks are turned into metric 3D boxes using the geometry of the scene. The core is a controlled three-stage comparison on nuScenes in which 2D detection is held fixed and only the source of 3D geometry changes. Geometry predicted from images alone reaches 0.183 mean average precision (mAP) under the official protocol; fitting boxes from raw LiDAR points inside the same masks with training-free rules reaches 0.298 mAP / 0.348 nuScenes detection score (NDS) at zero labeling cost; borrowing supervised box geometry at inference time lifts the same detections to 0.413 mAP / 0.555 NDS, which locates the pipeline's largest deficit in measurement precision rather than 2D detection, while class confusion and confidence calibration survive that substitution. Reversing the direction, a three-state camera-witness rule built from the same masks improves a supervised LiDAR-only detector from 0.596 to 0.630 mAP, roughly half the gain of fully supervised camera fusion, with no training. A coverage analysis shows that SAM3 finds 84% of in-range objects with a correctly named mask; the classes that fail in the official metric are misnamed or geometrically unforgiving, not unseen.",
+  "abstract_zh": "针对自动驾驶的三维物体检测主要依赖于在大量人工标注的3D框上训练的检测器。这种检测器学习一个固定的类别列表，超出该列表的内容则不可见。本文探讨是否可以在无训练和开放词汇的情况下解决该任务。一个可提示的分割模型（SAM3），通过文本提示的类别名称进行查询，为车辆的六个环视摄像头提供实例掩码，并利用场景的几何信息将掩码转化为度量3D框。核心是对nuScenes进行的受控三阶段比较，其中2D检测保持不变，仅3D几何的来源发生变化。仅从图像预测的几何在官方协议下达到0.183的平均精度（mAP）；在相同掩码内，使用无训练规则从原始LiDAR点拟合框达到0.298 mAP / 0.348 nuScenes检测分数（NDS），且标注成本为零；在推理时借用监督框几何将相同检测提升至0.413 mAP / 0.555 NDS，这表明管道的最大缺陷在于测量精度而非2D检测，同时类别混淆和置信度校准在该替代中依然存在。反向推导，基于相同掩码构建的三状态摄像头见证规则将一个仅使用LiDAR的监督检测器的mAP从0.596提升至0.630，约为完全监督摄像头融合增益的一半，且无需训练。覆盖分析表明，SAM3能够以正确命名的掩码找到84%的范围内物体；在官方指标中失败的类别是命名错误或几何上不宽容，而非未见。",
+  "arxiv_id": "2609.19358",
+  "arxiv_url": "https://arxiv.org/abs/2609.19358v1",
+  "authors": [
+    "Ömer Faruk Deniz",
+    "Mustafa Taha Koçyiğit"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19358",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.090813+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19358v1",
+  "published_at": "2026-09-16T19:31:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "3d object detection",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19358v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "3D 检测"
+    ]
+  },
+  "title": "Open-vocabulary 3D object detection with promptable segmentation",
+  "title_zh": "开放词汇的3D物体检测与可提示分割",
+  "translation_url": "https://hjfy.top/arxiv/2609.19358"
+}

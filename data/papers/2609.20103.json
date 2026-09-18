@@ -1,0 +1,62 @@
+{
+  "abstract": "Safety-critical driving scenario generation has largely focused on manipulating the behavior of surrounding agents while starting from an initial scene from driving data. This assumption can limit the space of discoverable failures, since driving data can provide little opportunity for meaningful interaction. For example, in the Waymo Open Motion Dataset, 20.44% of recorded slices feature a stationary ego vehicle that never moves, and 30.39% of initial frames contain no nearby traffic participants within 10 meters. We instead study safety-critical scenario generation as an initialization problem: given agnostic black-box driving policies, we learn to generate realistic initial scenes that are more likely to evolve into critical interactions. We propose AdvScene, a conditional latent diffusion model that is trained in two stages. Starting from pretraining on naturalistic driving data, we post-train the adversarial-agent generation branch using reinforcement learning with feedback from closed-loop simulator rollouts. Conditioning on ego driving displacement prevents the ego from remaining static, and RL finetuning induces criticality directly with non-differentiable safety-critical metrics. Experiments on the Waymo dataset across 12 combinations of ego and traffic policies show that our AdvScene substantially increases the rate of ego-fault collision events and TTC<3s events.",
+  "abstract_zh": "安全关键驾驶场景生成主要集中在操控周围代理的行为，同时从驾驶数据的初始场景出发。这一假设可能限制可发现故障的空间，因为驾驶数据提供了有限的有意义交互机会。例如，在Waymo开放运动数据集中，20.44%的记录片段中，静止的自我车辆从未移动，而30.39%的初始帧在10米内没有附近的交通参与者。我们将安全关键场景生成视为一个初始化问题：在不考虑具体驾驶策略的情况下，我们学习生成更可能演变为关键交互的现实初始场景。我们提出了AdvScene，一种条件潜在扩散模型，分两个阶段进行训练。从自然驾驶数据的预训练开始，我们使用闭环模拟器回放的反馈，通过强化学习对对抗代理生成分支进行后训练。对自我驾驶位移的条件限制防止自我车辆保持静止，而强化学习微调则直接利用不可微分的安全关键指标引发关键性。在Waymo数据集上进行的实验显示，在12种自我和交通策略组合下，我们的AdvScene显著增加了自我故障碰撞事件和TTC<3秒事件的发生率。",
+  "arxiv_id": "2609.20103",
+  "arxiv_url": "https://arxiv.org/abs/2609.20103v1",
+  "authors": [
+    "Yin Wu",
+    "Jiarong Wei",
+    "Carl Esselborn",
+    "Shubham Phoolari",
+    "Ahmed Abouelazm",
+    "Daniel Slieter",
+    "J. Marius Zöllner"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20103",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.044230+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20103v1",
+  "published_at": "2026-09-17T12:05:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "ego vehicle",
+      "waymo open",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 82
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20103v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Safety-Critical Scenanrio Emerges from Initial Scene",
+  "title_zh": "从初始场景中产生安全关键场景",
+  "translation_url": "https://hjfy.top/arxiv/2609.20103"
+}

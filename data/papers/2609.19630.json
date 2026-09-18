@@ -1,0 +1,51 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly integrated into vehicle voice assistants. But linking natural-language requests to vehicle functions creates a safety-critical authorization problem. Before executing a command, the system must choose whether to execute, refuse, clarify, require confirmation, defer to manual control, trigger an emergency response, or make no tool call. To our knowledge, prior evaluations do not isolate this pre-action decision across speaker role, authentication status, vehicle state, and tool availability. We introduce a 202-scenario benchmark with Reference Decisions under a seven-class taxonomy. We evaluate two local open-weight models and three API-based LLMs using Decision Alignment and safety-specific error metrics. Alignment ranges from 40.1% for Llama 3.2 3B to 89.1% for Gemini 3.1 Pro Preview. The API-based models score between 83.2% and 89.1%, with no statistically significant differences among them. Even these models produce two to three False Executes among 161 non-execution scenarios, and persistent errors remain in confirmation and manual-control decisions. A controlled Llama 3.2 3B ablation increases alignment to 40.1% under the structured authorization policy, versus 28.2-29.2% under schema-only and generic-safety baselines, but it does not eliminate False Executes. Structured LLM decisions are therefore insufficient as a standalone safety mechanism, and deployment requires an independent enforcement layer that verifies tool permissions and vehicle-state constraints before invoking any vehicle function.",
+  "abstract_zh": "大型语言模型（LLMs）越来越多地被集成到车辆语音助手中。然而，将自然语言请求与车辆功能关联起来会产生一个安全关键的授权问题。在执行命令之前，系统必须选择是执行、拒绝、澄清、要求确认、推迟手动控制、触发紧急响应，还是不进行任何工具调用。根据我们的了解，之前的评估并未在说话者角色、认证状态、车辆状态和工具可用性之间隔离这一前行动决策。我们引入了一个包含202种场景的基准测试，并在七类分类法下提供参考决策。我们使用决策一致性和安全特定错误指标评估了两个本地开放权重模型和三个基于API的LLMs。Llama 3.2 3B的对齐率为40.1%，而Gemini 3.1 Pro Preview的对齐率为89.1%。基于API的模型得分在83.2%到89.1%之间，且它们之间没有统计学上显著的差异。即便如此，这些模型在161个非执行场景中仍然产生了两到三个错误执行，并且在确认和手动控制决策中仍然存在持续的错误。经过控制的Llama 3.2 3B消融实验在结构化授权政策下将对齐率提高至40.1%，而在仅使用模式和通用安全基线下则为28.2-29.2%，但并未消除错误执行。因此，结构化LLM决策作为单独的安全机制是不够的，部署需要一个独立的执行层，在调用任何车辆功能之前验证工具权限和车辆状态约束。",
+  "arxiv_id": "2609.19630",
+  "arxiv_url": "https://arxiv.org/abs/2609.19630v1",
+  "authors": [
+    "Diba Afroze",
+    "Xingli Zhang",
+    "Yazhou Tu",
+    "Xiali Hei"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19630",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.199680+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19630v1",
+  "published_at": "2026-09-17T03:20:22Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19630v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "本文面向车载语音助手中的安全关键命令授权，构建了一个含202种场景、七类决策的LLM评测基准，系统考察身份、认证、车辆状态及工具可用性对执行前决策的影响。实验显示，先进API模型虽达到较高决策一致性，仍会错误执行本应拒绝或延迟的车辆命令。研究据此指出，LLM不应单独承担车辆功能授权，系统必须配置独立执行层以强制校验权限与车辆状态约束。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "仿真/数据",
+      "VLM/VLA"
+    ]
+  },
+  "title": "From Intent to Action: Benchmarking LLM Safety in Vehicle Voice Command Authorization",
+  "title_zh": "从意图到行动：车辆语音命令授权中的大型语言模型安全性基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2609.19630"
+}

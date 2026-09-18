@@ -1,0 +1,61 @@
+{
+  "abstract": "As scaling pre-training data alone yields diminishing returns, post-training is becoming increasingly important across physical AI domains such as autonomous driving. End-to-end driving policies are pre-trained in open loop with behavior cloning on human demonstrations. However, compounding errors during closed-loop deployment can take the vehicle outside the training data distribution, increasing the risk of safety-critical incidents. Closed-loop post-training can mitigate this risk but requires costly simulation for sensor-based policies. We propose OPTED (on-policy fine-tuning for end-to-end driving) which decouples reinforcement learning from the post-training of the end-to-end policy: a privileged teacher is trained using RL on vectorized inputs (HD-map and bounding boxes). This teacher then provides supervision to the pre-trained student during closed-loop post-training. We apply OPTED to two camera-based models, TransFuser and VaVAM, and fine-tune them in AlpaSim, using neural reconstructions (3DGS) of real driving logs. Driving scores increase by factors of 1.6$\\times$ and 9.5$\\times$, respectively. In controlled experiments OPTED matches closed-loop performance with approximately three orders of magnitude fewer simulator interactions than direct RL post-training, while staying closer to the human prior. Project page: https://01dami23.github.io/opted/",
+  "abstract_zh": "随着单纯扩大预训练数据的收益递减，后训练在物理人工智能领域（如自动驾驶）变得愈发重要。端到端驾驶策略在开放循环中通过行为克隆对人类示范进行预训练。然而，在闭环部署过程中，累积误差可能使车辆超出训练数据分布，从而增加安全关键事件的风险。闭环后训练可以缓解这一风险，但需要为基于传感器的策略进行昂贵的仿真。我们提出了OPTED（基于策略的端到端驾驶微调），该方法将强化学习与端到端策略的后训练解耦：一个特权教师使用强化学习在向量化输入（高清地图和边界框）上进行训练。该教师随后在闭环后训练期间为预训练的学生提供监督。我们将OPTED应用于两个基于摄像头的模型，TransFuser和VaVAM，并在AlpaSim中进行微调，使用真实驾驶日志的神经重建（3DGS）。驾驶评分分别提高了1.6倍和9.5倍。在受控实验中，OPTED的闭环性能与直接强化学习后训练相比，所需的仿真交互次数减少了大约三个数量级，同时更接近人类先验。项目页面：https://01dami23.github.io/opted/",
+  "arxiv_id": "2609.20756",
+  "arxiv_url": "https://arxiv.org/abs/2609.20756v1",
+  "authors": [
+    "Damiano Da Col",
+    "Maximilian Igl",
+    "Peter Karkus",
+    "Kashyap Chitta",
+    "Boris Ivanovic",
+    "Marco Pavone",
+    "Konrad Schindler",
+    "Christos Sakaridis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20756",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.082567+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20756v1",
+  "published_at": "2026-09-17T17:41:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20756v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "端到端驾驶",
+      "仿真/数据"
+    ]
+  },
+  "title": "OPTED: On-Policy Fine-Tuning for End-to-End Driving using a Render-Free Teacher",
+  "title_zh": "OPTED：基于策略的端到端驾驶微调方法，使用无渲染教师",
+  "translation_url": "https://hjfy.top/arxiv/2609.20756"
+}

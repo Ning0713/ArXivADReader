@@ -1,0 +1,55 @@
+{
+  "abstract": "Between a screenplay and a film sits a planning problem that is spatial first: who stands where, and what a camera sees from where it stands. An image diffusion model asked for a shot in free text settles that plan by its own defaults. We present PACE (Precise AI Cinematic Expression), a typed representation for the plan: the screenplay evidence, the characters, props and locations it needs, where each subject stands, and what the camera does. A value is written once at the level it belongs to (script, scene, shot or panel) and inherited below it. A compiler turns the result into both the prompt sent to the diffusion model and a 3D scene built in metres, and a camera solver places the camera so that the declared framing is the framing built. Where a declared value becomes geometry, PACE measures, field by field, how far the compiled camera and the staged render sit from the declaration, rather than asking a model to judge. On the 11-scene Automatic Drive screenplay, every staged single-subject panel places its subject within 1.2% of frame width of its declared position; with two or three subjects one camera pose cannot satisfy every position, and the residual is reported rather than absorbed. On 204 external director-storyboard shots, delivered head height is 1.906 times the staged target from the director's words, 1.733 from the compiled prompt, and 0.955 with the greybox control; the condition that holds framing best draws the described action least. Declaring the pose on 30 shots raises the action drawn from 58.9% to 74.4% without moving the framing. Transitions, fitted motion and human review of the generated panels remain open. Code: https://github.com/StudioPiLabs/pace-core",
+  "abstract_zh": "在剧本与电影之间存在一个空间优先的规划问题：谁站在哪里，摄像机从何处看到什么。一个基于自由文本的图像扩散模型通过其自身的默认设置来解决这一规划。我们提出了PACE（Precise AI Cinematic Expression），这是一种用于该计划的类型化表示：剧本证据、所需的角色、道具和场景、每个主体的位置以及摄像机的动作。一个值在其所属的层级（剧本、场景、镜头或面板）上写入一次，并在其下层继承。编译器将结果转化为发送给扩散模型的提示和以米为单位构建的3D场景，而摄像机求解器则将摄像机放置在声明的构图所构建的位置。PACE在声明的值变为几何时，逐字段测量编译后的摄像机和布置渲染与声明之间的距离，而不是要求模型进行判断。在11场景的《自动驾驶》剧本中，每个布置的单主体面板将其主体放置在声明位置的1.2%框宽度内；对于两个或三个主体，一个摄像机姿态无法满足每个位置，残差被报告而不是吸收。在204个外部导演-分镜头的镜头中，交付的头部高度是导演所述目标的1.906倍，从编译的提示中为1.733倍，而灰盒控制为0.955倍；保持构图最佳的条件使描述的动作最少。对30个镜头声明姿态将绘制的动作从58.9%提高到74.4%，而不移动构图。过渡、适配运动和对生成面板的人类审查仍然是开放的。代码链接： https://github.com/StudioPiLabs/pace-core",
+  "arxiv_id": "2609.19853",
+  "arxiv_url": "https://arxiv.org/abs/2609.19853v1",
+  "authors": [
+    "Bing Duan",
+    "Qiang Guo",
+    "Linpu Li",
+    "Zhijian Mao",
+    "Min Zhu",
+    "Zhirui Ren",
+    "Yiwei Yan",
+    "Xi Chu",
+    "Xiaoding Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19853",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.119859+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19853v1",
+  "published_at": "2026-09-17T08:05:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19853v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "PACE: Precise AI Cinematic Expression: A Typed Specification for Script-Grounded Previsualization and Geometric Conformance",
+  "title_zh": "PACE：精确的人工智能电影表现：一种基于脚本的预可视化和几何一致性的类型化规范",
+  "translation_url": "https://hjfy.top/arxiv/2609.19853"
+}

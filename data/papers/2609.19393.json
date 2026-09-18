@@ -1,0 +1,69 @@
+{
+  "abstract": "Work zones alter lane geometry through temporary traffic controls and closures that may be absent from on-board maps, challenging autonomous vehicle (AV) perception and planning. Generalization is also limited by scarce public datasets with structured geometric supervision. We present WorkZonePlan, a dataset comprising 149K+ synthetic and 5K+ real-world multimodal samples with 3D annotations for lane boundaries, work zone boundaries, and driving trajectory options. It also provides 76 closed-loop CARLA scenarios replayed under three weather conditions, yielding 228 Bench2Drive-format evaluation routes. We introduce WAVE (Work-zone-focused AV data generation in Virtual and rEal Environments), a semi-automated pipeline for creating the dataset, and BoundaryFormer (BF), a transformer-based model that jointly predicts lane and work zone boundary polynomials and driving trajectories. BF uses slot attention for boundary prediction. Ablations show that a separate trajectory decoder using boundary slot features substantially improves trajectory prediction over a slot-attention-only approach. Building on this finding, BF++ offers Camera and Camera+LiDAR variants with metric ground-plane encoding, typed boundary/trajectory queries, long-range point anchors, image-space curve refinement, and conservative gated LiDAR fusion. On the 211 routes common to all four models at the evaluation freeze, BF++-Camera and BF++-Camera+LiDAR achieve Driving Scores of 63.0 and 64.4, respectively, compared with 59.3 for SimLingo and 26.1 for TransFuser++ (TF++). BF++ is 40 times smaller than SimLingo and more than 10 times smaller than TF++, while achieving higher Driving Scores. These results support jointly predicting lane boundaries, work zone boundaries, and driving trajectories as a promising direction toward safer AV operation in work zones. Code and dataset: https://github.com/Nishad-Sahu/WZPlanner.",
+  "abstract_zh": "施工区域通过临时交通控制和封闭改变车道几何形状，这些变化可能在车载地图中缺失，从而对自动驾驶车辆（AV）的感知和规划提出挑战。由于缺乏具有结构化几何监督的公共数据集，泛化能力也受到限制。我们提出了WorkZonePlan，一个包含149K+合成样本和5K+真实世界多模态样本的数据集，提供了车道边界、施工区域边界和驾驶轨迹选项的3D标注。该数据集还提供了76个在三种天气条件下重播的闭环CARLA场景，生成228条Bench2Drive格式的评估路线。我们引入了WAVE（Work-zone-focused AV data generation in Virtual and rEal Environments），一个用于创建该数据集的半自动化管道，以及BoundaryFormer（BF），一个基于变换器的模型，能够联合预测车道和施工区域边界多项式及驾驶轨迹。BF使用槽注意力进行边界预测。消融实验表明，使用边界槽特征的独立轨迹解码器在轨迹预测上显著优于仅使用槽注意力的方法。基于这一发现，BF++提供了Camera和Camera+LiDAR变体，具有度量平面编码、类型边界/轨迹查询、长距离点锚、图像空间曲线细化和保守的门控LiDAR融合。在评估冻结时，四个模型共有的211条路线中，BF++-Camera和BF++-Camera+LiDAR的驾驶得分分别为63.0和64.4，而SimLingo为59.3，TransFuser++（TF++）为26.1。BF++的体积是SimLingo的40倍小，且比TF++小10倍以上，同时实现了更高的驾驶得分。这些结果支持联合预测车道边界、施工区域边界和驾驶轨迹作为在施工区域中实现更安全的自动驾驶操作的有前景的方向。代码和数据集链接：https://github.com/Nishad-Sahu/WZPlanner。",
+  "arxiv_id": "2609.19393",
+  "arxiv_url": "https://arxiv.org/abs/2609.19393v1",
+  "authors": [
+    "Nishad Sahu",
+    "Changzhong Qian",
+    "Guangzhou Cai",
+    "Shounak Sural",
+    "Ragunathan",
+    "Rajkumar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19393",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.093598+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19393v1",
+  "published_at": "2026-09-16T20:22:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicle",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通",
+      "车道",
+      "lidar",
+      "trajectory prediction",
+      "path planning",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19393v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "WZPlanner: Safe End-to-End Path Planning for Autonomous Driving in Work Zones",
+  "title_zh": "WZPlanner：在施工区域中进行安全的端到端路径规划的自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.19393"
+}

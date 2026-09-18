@@ -1,0 +1,57 @@
+{
+  "abstract": "Reliable and low-latency communication is a fundamental requirement for smart city services and Industry 4.0 applications enabled by NR-V2X networks. However, limited Road-Side Unit (RSU) deployment and complex urban propagation conditions often prevent Connected and Automated Vehicles (CAVs) from maintaining stable connectivity. This paper proposes an AI-driven Learning-to-Optimise (L2O) framework based on Graph Neural Networks (GNNs) for real-time multi-hop relay selection in NR-V2X systems. The vehicular network is modelled as a graph, where nodes represent CAVs and RSUs, and edges encode radio-link characteristics. An offline Mixed-Integer Linear Programming (MILP) formulation provides optimal relay decisions used as supervision for training an edge-aware Graph Isomorphism Network with Edge Features (GINE). Extensive experiments on realistic urban datasets demonstrate that the proposed approach achieves near-optimal connectivity performance, recovering up to 11.3% connectivity gain, while reducing execution time by orders of magnitude (up to 100 x speed-up) compared to MILP. The framework enables scalable and real-time network control, making it suitable for smart city and Industry 4.0 deployments.",
+  "abstract_zh": "可靠且低延迟的通信是由NR-V2X网络支持的智能城市服务和工业4.0应用的基本要求。然而，有限的路边单元（RSU）部署和复杂的城市传播条件常常阻碍连接与自动驾驶车辆（CAVs）维持稳定的连接性。本文提出了一种基于图神经网络（GNNs）的人工智能驱动的学习优化（L2O）框架，用于NR-V2X系统中的实时多跳中继选择。车辆网络被建模为一个图，其中节点代表CAV和RSU，边缘编码无线链路特性。离线的混合整数线性规划（MILP）模型提供了用于训练具有边特征的图同构网络（GINE）的监督的最优中继决策。对真实城市数据集的广泛实验表明，所提出的方法实现了接近最优的连接性能，恢复了高达11.3%的连接增益，同时与MILP相比，执行时间减少了几个数量级（最高可达100倍加速）。该框架实现了可扩展的实时网络控制，适用于智能城市和工业4.0的部署。",
+  "arxiv_id": "2609.20271",
+  "arxiv_url": "https://arxiv.org/abs/2609.20271v1",
+  "authors": [
+    "Giambattista Amati",
+    "Federica Mangiatordi",
+    "Emiliano Pallotti",
+    "Simone Angelini"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20271",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.NI"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.240592+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20271v1",
+  "published_at": "2026-07-29T07:55:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated vehicles",
+      "v2x",
+      "自动驾驶",
+      "road",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20271v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划",
+      "协同/V2X"
+    ]
+  },
+  "title": "AI-Driven Real-Time Relay Optimisation in Smart Urban NR-V2X Networks via Learning-to-Optimise Graph Neural Networks",
+  "title_zh": "基于人工智能的智能城市NR-V2X网络实时中继优化：学习优化图神经网络方法",
+  "translation_url": "https://hjfy.top/arxiv/2609.20271"
+}

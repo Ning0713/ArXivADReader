@@ -1,0 +1,61 @@
+{
+  "abstract": "Occlusion creates fundamental uncertainty in autonomous driving. Existing methods often propagate frame-wise hypotheses or optimize ego behavior against prescribed hidden-agent predictions, leaving the worst history-consistent interaction unexplored. We introduce History-Conditioned Minimax Trajectory Search (HC-MTS), which combines temporal occlusion reasoning with response-aware search. First, HC-MTS constructs finite hidden-state modes, each certified by a backward witness satisfying multi-frame visibility, occupancy, semantic-map support, and class-specific kinematic constraints. It then solves a bilevel minimax problem: an inner finite oracle maximizes the ego driving score over destination attainment and ride comfort, while the outer search selects the legal hidden-vehicle trajectory that minimizes this best-response value. Across eight Waymo Open Motion Dataset scenarios, increasing the visibility-memory horizon from K=1 to K=20 reduces the mean per-scenario vehicle, pedestrian, and total retained hidden-seed counts by 18.12%, 21.67%, and 18.45%, respectively. HC-MTS identifies six avoidable counterexamples, while no legal collision-producing attacker is found in the remaining two scenes within the finite search budget.",
+  "abstract_zh": "遮挡在自动驾驶中造成了根本的不确定性。现有方法通常传播逐帧假设或针对规定的隐蔽代理预测优化自我行为，未能探讨最坏的历史一致交互。我们提出了历史条件下的极小极大轨迹搜索（History-Conditioned Minimax Trajectory Search, HC-MTS），该方法将时间遮挡推理与响应感知搜索相结合。首先，HC-MTS 构建有限的隐状态模式，每个模式都由满足多帧可见性、占用、语义地图支持和类别特定运动约束的向后见证进行认证。然后，它解决一个双层极小极大问题：内部有限神谕最大化自我驾驶得分，考虑目的地到达和乘坐舒适性，而外部搜索选择最小化此最佳响应值的合法隐蔽车辆轨迹。在八个 Waymo Open Motion Dataset 场景中，将可见性记忆范围从 K=1 增加到 K=20，分别减少了每个场景的平均车辆、行人和总保留隐蔽种子数量的 18.12%、21.67% 和 18.45%。HC-MTS 识别出六个可避免的反例，而在有限搜索预算内，剩余两个场景中未发现合法的产生碰撞的攻击者。",
+  "arxiv_id": "2609.20480",
+  "arxiv_url": "https://arxiv.org/abs/2609.20480v1",
+  "authors": [
+    "Ruichen Tan",
+    "Zengxiang Lei",
+    "Satish Ukkusuri"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20480",
+  "categories": [
+    "cs.RO",
+    "cs.CR"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.057825+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20480v1",
+  "published_at": "2026-09-17T14:33:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "waymo open",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "行人",
+      "occupancy"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20480v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions",
+  "title_zh": "时空遮挡区域中最坏情况隐蔽车辆轨迹搜索",
+  "translation_url": "https://hjfy.top/arxiv/2609.20480"
+}

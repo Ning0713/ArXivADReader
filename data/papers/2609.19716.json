@@ -1,0 +1,53 @@
+{
+  "abstract": "Pre-trained 3D vision models have substantially advanced point cloud analysis, yet adapting them to downstream tasks via full fine-tuning is computationally expensive and storage-intensive. Parameter-Efficient Fine-Tuning (PEFT) offers a promising alternative by reducing both adaptation cost and storage burden. However, existing prompting-based approaches ignore the intrinsic geometric structures of point clouds, thereby limiting their adaptation capability. This limitation stems from their inability to encode both fine-grained geometric cues and coarse-grained structural semantics, as well as failing to propagate such information effectively through the model hierarchy. To address these challenges, we propose GAPrompt++, a multi-granular geometry-aware prompting method that provides richer geometric guidance for efficient 3D task adaptation. Specifically, we introduce a Point Shift Prompter that extracts multi-granular geometric features across different scales, enabling instance-specific geometric adjustments during adaptation. Next, a Keypoint Prompter adaptively generates point-level prompts to highlight local geometric saliency and fine-grained structural details. Furthermore, a Prompt Propagation mechanism injects these multi-granular geometric cues throughout the feature extraction hierarchy, strengthening the ability to capture essential geometric characteristics. Extensive experiments show that GAPrompt++ achieves state-of-the-art performance among prompting-based PEFT methods and even surpasses full fine-tuning across diverse benchmarks, while requiring less than 2\\% trainable parameters. In addition, to address the saturation of existing evaluation datasets, we construct two more challenging benchmarks derived from 3D Gaussian Splatting and Multi-View Stereo reconstruction, offering diverse and realistic point cloud scenarios to promote future research.",
+  "abstract_zh": "预训练的3D视觉模型在点云分析方面取得了显著进展，但通过完全微调将其适应于下游任务的计算成本高且存储需求大。参数高效微调（PEFT）提供了一种有前景的替代方案，通过降低适应成本和存储负担。然而，现有的基于提示的方法忽视了点云的内在几何结构，从而限制了它们的适应能力。这一限制源于它们无法有效编码细粒度的几何线索和粗粒度的结构语义，并且未能通过模型层次有效传播这些信息。为了解决这些挑战，我们提出了GAPrompt++，一种多粒度几何感知提示方法，为高效的3D任务适应提供更丰富的几何指导。具体而言，我们引入了一种点位移提示器（Point Shift Prompter），该提示器在不同尺度上提取多粒度几何特征，使得在适应过程中能够进行实例特定的几何调整。接下来，关键点提示器（Keypoint Prompter）自适应生成点级提示，以突出局部几何显著性和细粒度结构细节。此外，提示传播机制（Prompt Propagation）将这些多粒度几何线索注入到特征提取层次中，增强了捕捉重要几何特征的能力。大量实验表明，GAPrompt++在基于提示的PEFT方法中实现了最先进的性能，甚至在多个基准测试中超越了完全微调，同时所需的可训练参数少于2%。此外，为了解决现有评估数据集的饱和问题，我们构建了两个更具挑战性的基准，源自3D高斯溅射（3D Gaussian Splatting）和多视图立体重建（Multi-View Stereo），提供多样化和真实的点云场景，以促进未来研究。",
+  "arxiv_id": "2609.19716",
+  "arxiv_url": "https://arxiv.org/abs/2609.19716v1",
+  "authors": [
+    "Zixiang Ai",
+    "Zhenyu Cui",
+    "Yufei Guo",
+    "Wenwen Qiang",
+    "Lei Chen",
+    "Jiwen Lu",
+    "Jiahuan Zhou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19716",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.109832+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19716v1",
+  "published_at": "2026-09-17T05:14:34Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "point cloud",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19716v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "本文提出面向预训练3D视觉模型的参数高效适配方法GAPrompt++，通过点位移提示、关键点提示和层次化提示传播建模多尺度点云几何信息。该方法对自动驾驶点云模型的低成本任务适配具有潜在价值，但论文并未明确聚焦道路场景、车载激光雷达或具体自动驾驶任务。",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "GAPrompt++: Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model",
+  "title_zh": "GAPrompt++：用于3D视觉模型的多粒度几何感知点云提示",
+  "translation_url": "https://hjfy.top/arxiv/2609.19716"
+}

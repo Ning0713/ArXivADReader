@@ -1,0 +1,48 @@
+{
+  "abstract": "We present AMB3R-SLAM, a real-time monocular SLAM system capable of reconstructing kilometer-scale trajectories over 10k frames on a single consumer-grade GPU. Our model couples a lightweight front-end for low-latency online tracking with a hierarchical backend that progressively enforces local, mid-level, and global consistency. By avoiding bundle adjustment that relies on the static world assumption, our system naturally handles complex dynamic scenes out of the box. Furthermore, we demonstrate that our method can be extended to leverage stereo, RGB-D, and LiDAR as additional inputs. AMB3R-SLAM achieves strong camera tracking performance across 9 datasets, reducing the absolute trajectory error (ATE) of previous state-of-the-art methods on VBR and Oxford Spires by over 70%. With additional LiDAR input, our model further reduces ATE to sub-meter level on KITTI and VBR datasets.",
+  "abstract_zh": "我们提出了AMB3R-SLAM，一种实时单目SLAM系统，能够在单个消费级GPU上重建超过10,000帧的公里级轨迹。我们的模型结合了一个轻量级前端，用于低延迟在线跟踪，以及一个分层后端，逐步强制执行局部、中级和全局一致性。通过避免依赖静态世界假设的束调整，我们的系统自然地处理复杂的动态场景。此外，我们证明了我们的方法可以扩展以利用立体视觉、RGB-D和激光雷达作为额外输入。AMB3R-SLAM在9个数据集上实现了强大的相机跟踪性能，将之前最先进方法在VBR和Oxford Spires上的绝对轨迹误差（ATE）降低了超过70%。在额外的激光雷达输入下，我们的模型进一步将ATE降低到KITTI和VBR数据集的亚米级。",
+  "arxiv_id": "2609.19518",
+  "arxiv_url": "https://arxiv.org/abs/2609.19518v1",
+  "authors": [
+    "Hengyi Wang",
+    "Lourdes Agapito"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19518",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.099003+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19518v1",
+  "published_at": "2026-09-17T00:11:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19518v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend",
+  "title_zh": "AMB3R-SLAM：具有分层后端的公里级SLAM",
+  "translation_url": "https://hjfy.top/arxiv/2609.19518"
+}

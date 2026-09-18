@@ -1,0 +1,53 @@
+{
+  "abstract": "Autonomous vehicles depend entirely on Simultaneous Localization and Mapping (SLAM) to navigate safely in unknown environments. However, relying on a single sensory modality introduces critical failure points: LiDAR systems degrade in featureless corridors, Inertial Measurement Units (IMUs) accumulate mathematical drift, and GPS drops frequently in urban canyons. This paper presents the implementation of a tightly-coupled SLAM fusion architecture that integrates a Velodyne 3D LiDAR, a high-frequency IMU, and GPS to achieve continuous spatial awareness. Utilizing a phased development methodology, we establish a 2D baseline to validate hardware synchronization and transform geometries before upgrading to a full 3D architecture driven by FAST-LIO2. This advanced approach uses an Iterated Error-State Kalman Filter (IESKF) to process dense 3D laser points alongside continuous inertial data, eliminating motion blur at high speeds. To eradicate long-term drift, a GTSAM pose-graph optimization back-end executes multi-modal loop closures. Evaluated across simulated environments and physical deployments, the results demonstrate that tightly-coupled 3D fusion effectively overcomes individual sensor blind spots to generate highly detailed point clouds, providing the foundational High-Definition (HD) maps required for advanced downstream autonomous planners.",
+  "abstract_zh": "自主车辆完全依赖于同时定位与地图构建（SLAM）在未知环境中安全导航。然而，依赖单一传感器模态会引入关键的故障点：LiDAR系统在无特征的走廊中性能下降，惯性测量单元（IMU）会累积数学漂移，而GPS在城市峡谷中频繁失效。本文提出了一种紧耦合SLAM融合架构的实现，该架构集成了Velodyne 3D LiDAR、高频IMU和GPS，以实现连续的空间感知。通过分阶段开发的方法，我们建立了一个二维基线，以验证硬件同步和变换几何形状，然后升级到由FAST-LIO2驱动的完整三维架构。这种先进的方法使用迭代误差状态卡尔曼滤波器（IESKF）处理密集的3D激光点和连续的惯性数据，从而消除高速下的运动模糊。为了消除长期漂移，GTSAM姿态图优化后端执行多模态回环闭合。在模拟环境和实际部署中进行评估，结果表明，紧耦合的3D融合有效克服了单个传感器的盲点，生成高度详细的点云，为先进的下游自主规划器提供所需的高清（HD）地图基础。",
+  "arxiv_id": "2609.20321",
+  "arxiv_url": "https://arxiv.org/abs/2609.20321v1",
+  "authors": [
+    "Amr O. Elmehrath",
+    "Farah Khaled",
+    "Rana Nahas",
+    "Catherine M. Elias"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20321",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.050522+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20321v1",
+  "published_at": "2026-07-31T15:58:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 46
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20321v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "LiDAR/点云",
+      "预测/规划"
+    ]
+  },
+  "title": "Implementation of Tightly-Coupled SLAM Fusion of GPS, IMU, and LiDAR for Autonomous Vehicles",
+  "title_zh": "紧耦合SLAM融合GPS、IMU和LiDAR在自主车辆中的实现",
+  "translation_url": "https://hjfy.top/arxiv/2609.20321"
+}

@@ -1,0 +1,60 @@
+{
+  "abstract": "Testing Autonomous Driving Systems (ADS) requires realistic safety-critical scenarios, but collecting such data from real-world driving is costly and unsafe. This paper presents an automated pipeline that transforms safe driving scenes into safety-critical scenarios by combining computer vision, Large Language Models (LLMs), and Augmented Reality (AR). The system detects and tracks road users, extracts safety features including distance, velocity, motion direction, and Time-to-Collision (TTC), and assesses scene criticality. Safe scenes are modified by an LLM, which generates realistic collision-inducing objects and behaviors that are integrated into the original scene using AR. The proposed pipeline was evaluated on the nuScenes dataset, achieving 97.52% safety classification accuracy and successfully generating realistic scenarios such as pedestrian crossings, rear overtaking vehicles, and sudden-stop events. The results demonstrate an effective and flexible approach for automated generation of safety-critical scenarios to support the testing and validation of autonomous driving systems.",
+  "abstract_zh": "测试自动驾驶系统（ADS）需要现实的安全关键场景，但从真实驾驶中收集此类数据既昂贵又不安全。本文提出了一种自动化管道，通过结合计算机视觉、大型语言模型（LLMs）和增强现实（AR），将安全驾驶场景转化为安全关键场景。该系统检测和跟踪道路使用者，提取包括距离、速度、运动方向和碰撞时间（TTC）在内的安全特征，并评估场景的关键性。安全场景由LLM进行修改，生成逼真的引发碰撞的物体和行为，并通过AR集成到原始场景中。所提议的管道在nuScenes数据集上进行了评估，达到了97.52%的安全分类准确率，并成功生成了行人过马路、后方超车车辆和突然停车事件等现实场景。结果表明，这是一种有效且灵活的自动生成安全关键场景的方法，以支持自动驾驶系统的测试和验证。",
+  "arxiv_id": "2609.20318",
+  "arxiv_url": "https://arxiv.org/abs/2609.20318v1",
+  "authors": [
+    "Noura Fady",
+    "Farah Khaled",
+    "Catherine M. Elias"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20318",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.049633+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20318v1",
+  "published_at": "2026-07-31T15:37:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "road",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "道路",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20318v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "LLM-Guided Transformation of Non-Critical Driving Scenes into Safety-Critical Scenarios Using Augmented Reality",
+  "title_zh": "利用增强现实将非关键驾驶场景转化为安全关键场景的LLM引导转化",
+  "translation_url": "https://hjfy.top/arxiv/2609.20318"
+}

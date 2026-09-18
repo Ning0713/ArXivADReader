@@ -1,0 +1,54 @@
+{
+  "abstract": "Mission-level autonomy for disaster response, search and rescue, and tactical UGV operations requires repeated path and mission planning as terrain conditions, agent types, and objectives change. Pixel-grid search is costly for repeated kilometer-scale queries, while semantic abstractions must maintain valid costs and connectivity as conditions change. We present HOPHY (Hierarchical Off-Road Planning using Hypergraphs), a reusable hierarchical terrain representation that organizes map-scale terrain into geometrically connected semantic regions (GSNodes), connectivity-preserving critical regions (Coarse Regions), and typed hyperedges for terrain, agent, and weather context. Hyperedge intersections select affected regions and incident edges for state updates without rebuilding the hierarchy. Across real off-road maps spanning kilometer-scale areas, HOPHY achieves 100% planning success and less than 0.01% median cost deviation from the oracle (pixel A*), with substantially lower query and replanning latency than the evaluated pixel and abstraction baselines. Applied to a multi-robot task-allocation (MRTA) problem, these gains reduce total computation by 79x over pixel A* and 7.2x over the fastest abstraction baseline, with mission makespan comparable to pixel A*. Finally, we demonstrate HOPHY on a physical Clearpath Jackal that successfully executes a 1.5-km, eight-task mission across mixed-surface outdoor terrain and a blockage-triggered replanned route.",
+  "abstract_zh": "灾害响应、搜索与救援以及战术无人地面车辆（UGV）操作的任务级自主性要求在地形条件、代理类型和目标变化时进行重复的路径和任务规划。对于重复的公里级查询，像素网格搜索成本高昂，而语义抽象必须在条件变化时保持有效的成本和连通性。我们提出了HOPHY（使用超图的分层越野规划），这是一种可重用的分层地形表示，将地图规模的地形组织为几何上连接的语义区域（GSNodes）、保持连通性的关键区域（Coarse Regions）和用于地形、代理和天气上下文的类型化超边。超边交集选择受影响区域和事件边，以便在不重建层次结构的情况下进行状态更新。在跨越公里级区域的真实越野地图上，HOPHY实现了100%的规划成功率，且与oracle（像素A*）的中位成本偏差小于0.01%，查询和重新规划延迟显著低于评估的像素和抽象基线。在应用于多机器人任务分配（MRTA）问题时，这些改进使得总计算量比像素A*减少了79倍，比最快的抽象基线减少了7.2倍，任务完成时间与像素A*相当。最后，我们在一台物理的Clearpath Jackal上演示了HOPHY，该机器人成功执行了一个1.5公里、八任务的使命，跨越混合表面的户外地形，并重新规划了因阻塞触发的路线。",
+  "arxiv_id": "2609.20694",
+  "arxiv_url": "https://arxiv.org/abs/2609.20694v1",
+  "authors": [
+    "Pranay Meshram",
+    "Charuvahan Adhivarahan",
+    "Prithvi Poddar",
+    "Ehsan Tarkesh Esfahani",
+    "Chen Wang",
+    "Souma Chowdhury",
+    "Karthik Dantu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20694",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.078959+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20694v1",
+  "published_at": "2026-09-17T16:59:19Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "车辆",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20694v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "本文提出HOPHY分层超图表示，用于越野无人地面车辆的可复用路径与任务规划。该方法通过语义区域和类型化超边高效更新受地形、代理及天气变化影响的局部状态，避免重建完整规划层次结构。在真实越野地图和Clearpath Jackal实机任务中，HOPHY显著降低了查询、重规划及多机器人任务分配的计算开销，同时保持接近像素级A*的规划质量。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "HOPHY: A Hierarchical Hypergraph Representation for Off-Road Path and Mission Planning",
+  "title_zh": "HOPHY：一种用于越野路径和任务规划的分层超图表示",
+  "translation_url": "https://hjfy.top/arxiv/2609.20694"
+}

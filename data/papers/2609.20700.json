@@ -1,0 +1,54 @@
+{
+  "abstract": "Episodic test-time adaptation resets a frozen segmenter to source weights $M_0$ on each case and adapts for a fixed step count. A fixed horizon conflates a cohort-level question, how far to adapt, with an irreducibly per-case one, whether this case should be adapted at all. Cohort means hide that decision: on cross-vendor cardiac MRI the mean $\\Delta$Dice from adaptation is statistically indistinguishable from zero while 58.7% of cases are individually made worse. We quantify this harm as harmful accepted area (HA), the harmful fraction of the edited area a controller deploys. Held-out tuning gives a stronger baseline than a fixed horizon, but the budget it selects transfers on neither of the two main medical benchmarks, and no global budget can condition on the case. We show that prediction fragmentation---the disagreement geometry between $M_0$ and the adapted mask $M_k$---predicts HA with no labels or extra backward passes at decision time, comparably on three benchmarks (Spearman $\\rho$ 0.50--0.60), at a quarter of gradient-norm's latency. A case-level router built on it cuts HA from 0.228 to 0.139 on a benchmark that took no part in its design, with the design frozen and only cut-points recalibrated there. On the cardiac benchmark the design was selected on, the router cuts HA from 0.129 to 0.013 at matched Dice and 1.10 deployed updates, against the retrospective-best budget found post hoc on evaluation labels, and reduces that 58.7% to 20.0%, an upper bound we quantify. Where the retained cases are not net-helped (as on prostate), the router still cuts HA but concedes accuracy, a boundary we report. Thresholds are fit once on a labeled split disjoint from evaluation; decisions use no labels or gradients. The template ports across architecture and domain (nnU-Net$\\to$SegFormer, Cityscapes$\\to$ACDC) with coordinate, thresholds and per-bucket actions instantiated per domain.",
+  "abstract_zh": "情景测试时适应在每个案例上将冻结的分割器重置为源权重 $M_0$，并进行固定步数的适应。固定的时间范围将一个群体层面的问题（适应多远）与一个不可简化的每个案例的问题（这个案例是否应该被适应）混为一谈。群体的含义掩盖了这一决策：在跨供应商的心脏MRI中，适应后的平均 $ ext{ΔDice}$ 在统计上与零无显著差异，而58.7%的案例在个体上变得更差。我们将这种伤害量化为有害接受区域（HA），即控制器部署的编辑区域中的有害部分。与固定时间范围相比，保留调优提供了更强的基线，但所选择的预算在两个主要医学基准上都无法转移，且没有全球预算可以针对案例进行条件设置。我们展示了预测碎片化——$M_0$与适应后的掩模 $M_k$ 之间的不一致几何——在决策时无需标签或额外的反向传递即可预测HA，在三个基准上表现相当（Spearman $ ho$ 0.50--0.60），延迟为梯度范数的四分之一。基于此构建的案例级路由器在一个未参与设计的基准上将HA从0.228降低到0.139，设计保持不变，仅在此处重新校准切点。在心脏基准上，路由器在匹配的Dice和1.10次部署更新的情况下，将HA从0.129降低到0.013，优于在评估标签上事后发现的回顾最佳预算，并将58.7%降低到20.0%，这是我们量化的上限。在保留的案例未获得净帮助（如前列腺案例）时，路由器仍然减少HA，但牺牲了准确性，这是我们报告的一个边界。阈值在与评估不重合的标记拆分上进行一次拟合；决策不使用标签或梯度。该模板可跨架构和领域移植（nnU-Net$ o$SegFormer，Cityscapes$ o$ACDC），坐标、阈值和每个桶的操作在每个领域中实例化。",
+  "arxiv_id": "2609.20700",
+  "arxiv_url": "https://arxiv.org/abs/2609.20700v1",
+  "authors": [
+    "Lili Wang",
+    "Jing Li",
+    "Xiaowen Sun",
+    "Xiangyu Hu",
+    "Zhuangzhuang Gu",
+    "Jian Liu",
+    "Srihari Nelakuditi",
+    "Yan Tong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20700",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.173570+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20700v1",
+  "published_at": "2026-09-17T17:02:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes",
+      "medical",
+      "医学"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20700v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Should This Case Be Adapted? Prediction Fragmentation Controls Test-Time Adaptation",
+  "title_zh": "这个案例应该被调整吗？预测碎片化控制测试时适应",
+  "translation_url": "https://hjfy.top/arxiv/2609.20700"
+}

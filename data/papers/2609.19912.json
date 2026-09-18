@@ -1,0 +1,50 @@
+{
+  "abstract": "Teams of mobile robots rely on continuous communication with their neighbors for coordination, yet most distributed model predictive control (DMPC) schemes assume the communication network stays connected rather than actively enforcing it. Adding such a guarantee is hard since the usual mathematical condition for connectivity is nonconvex and links every agent to every other, which is incompatible with a scalable distributed real-time controller. We propose a DMPC framework in which each agent is assigned a connectivity contract: a local region prescribing where its predicted positions may lie over the prediction horizon. The contracts are designed so that, as long as every agent stays within its own contract, the team is guaranteed to remain connected. Given the maintained contract graph, an agent builds its contract from a single exchange with its immediate neighbors, after which every agent solves its own optimization problem independently. We prove that the resulting closed-loop system maintains connectivity, avoids collisions, and respects local state and input constraints. Simulation and hardware experiments on miniature autonomous car-like robots demonstrate the approach.",
+  "abstract_zh": "移动机器人团队依赖于与邻居的持续通信进行协调，但大多数分布式模型预测控制（DMPC）方案假设通信网络保持连通，而不是主动强制这一点。增加这样的保证是困难的，因为通常的连通性数学条件是非凸的，并且将每个代理与其他每个代理相连，这与可扩展的分布式实时控制器不兼容。我们提出了一种DMPC框架，其中每个代理被分配一个连通性合同：一个局部区域，规定其预测位置在预测视界内可能的位置。合同的设计使得，只要每个代理保持在自己的合同范围内，团队就能保证保持连通。在维护的合同图下，代理通过与其直接邻居的单次交换构建自己的合同，之后每个代理独立解决自己的优化问题。我们证明了所得到的闭环系统保持连通，避免碰撞，并遵守局部状态和输入约束。对微型自主汽车类机器人的仿真和硬件实验验证了该方法。",
+  "arxiv_id": "2609.19912",
+  "arxiv_url": "https://arxiv.org/abs/2609.19912v1",
+  "authors": [
+    "Jorit Geurts",
+    "Danilo Saccani",
+    "Melanie N. Zeilinger",
+    "Andrea Carron"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19912",
+  "categories": [
+    "cs.RO",
+    "math.OC"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.034370+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19912v1",
+  "published_at": "2026-09-17T08:53:28Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "car"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19912v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "提出一种面向多车式移动机器人协同控制的分布式模型预测控制方法，通过邻车间交换构建局部连通性契约，在分布式独立优化的同时保证通信连通、碰撞避免及状态和控制约束。该工作可用于自动驾驶中的多车协同规划与V2X连通性保持，但实验对象为微型自主车式机器人，属于与自动驾驶相关的边界研究。",
+  "tags": {
+    "primary": "协同/V2X",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "Distributed Model Predictive Control with Connectivity-based Contracts",
+  "title_zh": "基于连通性合同的分布式模型预测控制",
+  "translation_url": "https://hjfy.top/arxiv/2609.19912"
+}

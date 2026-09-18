@@ -1,0 +1,56 @@
+{
+  "abstract": "Accurately predicting pedestrian intentions is crucial for ensuring safe and proactive interaction between autonomous vehicles and pedestrians. However, existing approaches often depend on architectures that either model temporal dependencies within individual modalities or fuse modalities only at coarse semantic levels. To address these limitations, we propose MTF-Net, a novel Multi-Modal Temporal Feature Fusion Network that jointly models kinematic, appearance, and contextual cues for pedestrian intention prediction. MTF-Net integrates four complementary modalities-bounding-box dynamics, human pose keypoints, local context, and scene-level semantics within a recurrent fusion framework enhanced by gated linear units (GLUs). These GLU-based modules adaptively regulate cross-modal information flow, enabling interpretable and efficient feature interaction across temporal scales. Through three dedicated temporal encoding branches and an attention-guided fusion head, the proposed model robustly anticipates pedestrian crossing intentions several frames before they occur. Extensive evaluations on the PIE and JAAD benchmarks demonstrate that MTF-Net surpasses recent transformer- and graph-based models, achieving up to 0.95 AUC on PIE and 0.94 AUC on JAAD, while maintaining real-time performance. The results highlight that reliable pedestrian intention prediction arises from principled multi-modal fusion rather than excessive architectural complexity.",
+  "abstract_zh": "准确预测行人意图对于确保自动驾驶车辆与行人之间的安全和主动互动至关重要。然而，现有的方法往往依赖于仅在单一模态内建模时间依赖关系或仅在粗略语义层面融合模态的架构。为了解决这些局限性，我们提出了MTF-Net，一种新颖的多模态时间特征融合网络，能够联合建模运动学、外观和上下文线索以进行行人意图预测。MTF-Net在一个增强了门控线性单元（GLUs）的递归融合框架内集成了四种互补模态——边界框动态、人类姿态关键点、局部上下文和场景级语义。这些基于GLU的模块自适应地调节跨模态信息流，使得在时间尺度上实现可解释和高效的特征交互。通过三个专门的时间编码分支和一个基于注意力的融合头，所提出的模型能够在行人过马路意图发生前的多个帧内稳健地预测其意图。在PIE和JAAD基准上的广泛评估表明，MTF-Net超越了最近的基于变换器和图的模型，在PIE上达到高达0.95的AUC，在JAAD上达到0.94的AUC，同时保持实时性能。结果突显出，可靠的行人意图预测源于有原则的多模态融合，而非过度的架构复杂性。",
+  "arxiv_id": "2609.20178",
+  "arxiv_url": "https://arxiv.org/abs/2609.20178v1",
+  "authors": [
+    "Md Mahfuzur Rahman",
+    "Pengzhan Zhou",
+    "A. F. M. Abdun Noor",
+    "Md Imam Ahasan",
+    "Md Mustafizur Rahman",
+    "Fang Qu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20178",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.143179+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20178v1",
+  "published_at": "2026-07-24T08:38:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20178v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "MTF-Net: Multi-Modal Temporal Feature Fusion Network for Pedestrian Intention Prediction",
+  "title_zh": "MTF-Net：用于行人意图预测的多模态时间特征融合网络",
+  "translation_url": "https://hjfy.top/arxiv/2609.20178"
+}

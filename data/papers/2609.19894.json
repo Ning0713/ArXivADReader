@@ -1,0 +1,57 @@
+{
+  "abstract": "Parking is a routine yet safety-critical task for autonomous vehicles operating in urban environments. However, cluttered and weakly structured parking spaces, compounded by the interactive uncertainty from surrounding vehicles, hinder reliable maneuver generation. To address these challenges, we develop a waypoint-level offline reinforcement learning framework for interaction-aware autonomous parking. Specifically, a dedicated parking dataset is constructed from hierarchical expert rollouts with rotational waypoint augmentation, covering both non-interactive scenarios and interactive ones. The policy is then conditioned on a compact state representation, in which LiDAR-based obstacle features are adapted to the target pose via feature-wise linear modulation. A state-conditioned tokenizer further quantizes continuous waypoint sequences into discrete action tokens, over which conservative Q-learning is performed to suppress value overestimation on poorly supported actions. Extensive closed-loop experiments are conducted in the high-fidelity CARLA simulator. The proposed framework attains the highest parking success rate among all baselines and transfers reliably to unseen parking slots.",
+  "abstract_zh": "停车是自动驾驶车辆在城市环境中进行的日常但至关重要的任务。然而，杂乱且结构不清晰的停车空间，加上周围车辆带来的交互不确定性，阻碍了可靠的机动生成。为了解决这些挑战，我们开发了一种面向交互的自动停车的航点级离线强化学习框架。具体而言，我们从分层专家回放中构建了一个专用的停车数据集，并通过旋转航点增强，涵盖了非交互场景和交互场景。然后，策略基于紧凑的状态表示进行条件化，其中基于激光雷达的障碍物特征通过特征线性调制适应目标姿态。状态条件化的标记器进一步将连续航点序列量化为离散动作标记，并在其上执行保守的Q学习，以抑制对支持不足动作的价值高估。在高保真度的CARLA模拟器中进行了广泛的闭环实验。所提出的框架在所有基线中实现了最高的停车成功率，并可靠地转移到未见过的停车位。",
+  "arxiv_id": "2609.19894",
+  "arxiv_url": "https://arxiv.org/abs/2609.19894v1",
+  "authors": [
+    "Zewei Yang",
+    "Zengqi Peng",
+    "Jun Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19894",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.032627+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19894v1",
+  "published_at": "2026-09-17T08:40:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "parking",
+      "驾驶",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19894v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Learning Reliable Parking Policies via Offline Reinforcement Learning with Quantized Action Representations",
+  "title_zh": "通过离线强化学习与量化动作表示学习可靠的停车策略",
+  "translation_url": "https://hjfy.top/arxiv/2609.19894"
+}

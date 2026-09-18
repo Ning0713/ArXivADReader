@@ -1,0 +1,60 @@
+{
+  "abstract": "Predicting the future trajectories of surrounding vehicles in autonomous driving is important for collision risk assessment and safe ego-vehicle path planning. Conventional neural network-based trajectory predictors typically achieve strong prediction performance by exploiting agent history, dynamic scene graphs, and semantic maps. However, in specific motion regimes such as acceleration, deceleration, and turning, these predictors may fail to reflect physically feasible trajectories. To address this issue, this study proposes a framework that fuses the output of Trajectron++, a neural network-based trajectory predictor, with extended Kalman filter (EKF)-based multiple trajectory candidates at a late stage. On the nuScenes dataset, the proposed method reduces the average displacement error and final displacement error of the Trajectron++ robot baseline by 13.7% and 14.6%, respectively, without modifying the baseline architecture. These results indicate that EKF-based trajectory candidates can effectively complement neural trajectory prediction through learned fusion.",
+  "abstract_zh": "在自动驾驶中，预测周围车辆的未来轨迹对于碰撞风险评估和安全的自我车辆路径规划至关重要。传统的基于神经网络的轨迹预测器通常通过利用代理历史、动态场景图和语义地图来实现强大的预测性能。然而，在加速、减速和转弯等特定运动状态下，这些预测器可能无法反映物理上可行的轨迹。为了解决这个问题，本研究提出了一个框架，该框架在后期融合了基于神经网络的轨迹预测器Trajectron++的输出与基于扩展卡尔曼滤波（EKF）的多种轨迹候选。在nuScenes数据集上，所提出的方法分别将Trajectron++机器人基线的平均位移误差和最终位移误差降低了13.7%和14.6%，而无需修改基线架构。这些结果表明，基于EKF的轨迹候选可以通过学习融合有效补充神经轨迹预测。",
+  "arxiv_id": "2609.19813",
+  "arxiv_url": "https://arxiv.org/abs/2609.19813v1",
+  "authors": [
+    "Seong-Jun Kim",
+    "Seung-Hyun Kong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19813",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.027161+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19813v1",
+  "published_at": "2026-09-17T07:24:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego-vehicle",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "trajectory prediction",
+      "path planning",
+      "轨迹预测",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19813v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "Vehicle Trajectory Prediction via Neural Fusion of Multiple EKF-Based Trajectory Candidates",
+  "title_zh": "通过神经融合多种基于扩展卡尔曼滤波的轨迹候选进行车辆轨迹预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.19813"
+}

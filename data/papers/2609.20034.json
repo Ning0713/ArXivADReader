@@ -1,0 +1,53 @@
+{
+  "abstract": "We present Astronex-World 1.0, an open controllable video world-model foundation. Given a text prompt (text-to-video) or an initial observation (image-to-video), the model predicts future visual states under frame-aligned camera trajectories, continuous actions, and an embodiment identifier, and accepts text events inserted at a specified position of a rollout. The family provides a bidirectional model for full-context generation and a causal model with block-causal attention and cross-block KV caching for persistent generation, both built on the Wan2.2-TI2V-5B prior. PRoPE injects camera intrinsics and extrinsics, while a 64-dimensional action stream modulates every Transformer layer. A five-stage training path develops bidirectional camera and action control, converts the backbone to block-causal generation, distills a few-step student, restores mixed-domain dynamics, and applies asymmetric DMD/DMD2 distribution matching. The causal model generates 832x480 video at 24 fps. All five training stages run on two NVIDIA L20 48 GB GPUs, and the causal model streams in real time on one. It scores 73.5 on WBench Navi and 70.0 on WBench Full. On Full, this 5B model is above the 13.6B LongCat-Video and the 14B Helios, within one point of the 22B LTX-2.3, and above YUME 1.5, which is post-trained from the same 5B prior on NVIDIA A100 GPUs. The reserved action input and output interfaces allow post-training for embodied intelligence and autonomous driving.",
+  "abstract_zh": "我们提出了Astronex-World 1.0，这是一个开放可控的视频世界模型基础。该模型根据文本提示（文本到视频）或初始观察（图像到视频），在帧对齐的相机轨迹、连续动作和具身标识符下预测未来的视觉状态，并接受在指定位置插入的文本事件。该系列提供了一个双向模型用于全上下文生成，以及一个具有块因果注意力和跨块KV缓存的因果模型用于持久生成，二者均基于Wan2.2-TI2V-5B先验。PRoPE注入了相机的内参和外参，同时一个64维的动作流调制每个Transformer层。五阶段的训练路径发展了双向相机和动作控制，将主干转换为块因果生成，提炼出几步学生模型，恢复混合域动态，并应用非对称DMD/DMD2分布匹配。因果模型以24帧每秒生成832x480的视频。所有五个训练阶段在两台NVIDIA L20 48 GB GPU上运行，而因果模型在一台GPU上实时流式传输。它在WBench Navi上得分73.5，在WBench Full上得分70.0。在Full上，这个5B模型的表现超过了13.6B的LongCat-Video和14B的Helios，接近22B的LTX-2.3，并且高于同样在NVIDIA A100 GPU上从相同5B先验后训练的YUME 1.5。保留的动作输入和输出接口允许进行具身智能和自主驾驶的后续训练。",
+  "arxiv_id": "2609.20034",
+  "arxiv_url": "https://arxiv.org/abs/2609.20034v1",
+  "authors": [
+    "Xin Zhou",
+    "Cong Miao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20034",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.133389+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20034v1",
+  "published_at": "2026-09-17T10:38:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20034v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "LiDAR/点云",
+      "地图/定位"
+    ]
+  },
+  "title": "Astronex-World 1.0: Real-Time Interactive World Model Foundation",
+  "title_zh": "Astronex-World 1.0：实时互动世界模型基础",
+  "translation_url": "https://hjfy.top/arxiv/2609.20034"
+}

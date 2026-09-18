@@ -1,0 +1,56 @@
+{
+  "abstract": "Autonomous driving involves coupled decision-making and scene evolution under multi-mode uncertainty. To capture this coupling and uncertainty, we introduce MM-Future, a world-action model that generates multiple paired scene-action hypotheses and models bidirectional interaction within each pair. Each hypothesis is initialized from a structured action prior and an independent future scene source, which are then co-evolved through a modality-aware diffusion Transformer. To support efficient multi-mode rollout, MM-Future compresses multi-view video into planning-oriented representations, dubbed MM-Tokens. Finally, a future-conditioned proposal scorer ranks trajectory candidates by shared history context and their paired predicted future. On NAVSIM navtest, MM-Future achieves 94.0 PDMS and 91.5 EPDMS, while attaining a 32.3 HD-Score in zero-shot closed-loop evaluation on HUGSIM. Ablations show consistent improvements over both single-mode and action-only variants, validating the benefit of multi-mode joint world-action modeling.",
+  "abstract_zh": "自动驾驶涉及在多模式不确定性下的耦合决策和场景演变。为了捕捉这种耦合和不确定性，我们提出了MM-Future，这是一种世界-动作模型，能够生成多个配对的场景-动作假设，并在每对中建模双向交互。每个假设从结构化的动作先验和独立的未来场景源初始化，随后通过一种感知模式的扩散Transformer共同演化。为了支持高效的多模式展开，MM-Future将多视角视频压缩为面向规划的表示，称为MM-Tokens。最后，基于未来条件的提案评分器通过共享历史上下文及其配对的预测未来对轨迹候选进行排名。在NAVSIM navtest上，MM-Future达到了94.0的PDMS和91.5的EPDMS，同时在HUGSIM的零-shot闭环评估中获得了32.3的HD-Score。消融实验显示，相较于单模式和仅动作变体，MM-Future在性能上有一致的提升，验证了多模式联合世界-动作建模的优势。",
+  "arxiv_id": "2609.20377",
+  "arxiv_url": "https://arxiv.org/abs/2609.20377v1",
+  "authors": [
+    "Shuai Liu",
+    "Hechangle Gong",
+    "Hao Jiang",
+    "Runlin He",
+    "Junxiang Zhan",
+    "Kai Huang",
+    "Sheng Yang",
+    "Shaoqing Ren"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20377",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.157862+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20377v1",
+  "published_at": "2026-09-17T13:31:59Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20377v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "感知"
+    ]
+  },
+  "title": "MM-Future: Multi-Mode Joint World-Action Modeling for Autonomous Driving",
+  "title_zh": "MM-Future：用于自动驾驶的多模式联合世界-动作建模",
+  "translation_url": "https://hjfy.top/arxiv/2609.20377"
+}

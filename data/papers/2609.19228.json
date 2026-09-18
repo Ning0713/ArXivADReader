@@ -1,0 +1,50 @@
+{
+  "abstract": "Dexterous robot hands must often grasp objects whose shape, size, and pose are known only approximately. Grasp planners typically require accurate object models or correct errors with feedback, but how much inaccuracy a closing motion can tolerate on its own remains unclear. To address this question, we designed a motion planner based on four principles: a coarse template of the object, human grasp types, an object-centric interaction, and compliant, sliding contacts instead of prescribed contact points. This paper presents the planner, implemented through virtual model control, and its evaluation on a Shadow Dexterous Hand. Without feedback, the planned closing motions tolerated size errors of about 1cm and pose errors of several centimeters and tens of degrees, a wider range than a state-of-the-art data-driven planner in 25 of 27 tested conditions. They also grasped 82.5% of 80 everyday objects and succeeded within an autonomous pipeline. Robustness can thus be designed into the closing motion itself, rather than left only to feedback. This planner opens a path toward reliable manipulation in uncertain settings, which we will pursue by combining it with adaptive feedback control on the physical hand.",
+  "abstract_zh": "灵巧的机器人手通常需要抓取形状、大小和姿态仅大致已知的物体。抓取规划器通常需要准确的物体模型或通过反馈来纠正误差，但闭合动作自身可以容忍多少不准确性仍不清楚。为了解决这个问题，我们设计了一种基于四个原则的运动规划器：物体的粗略模板、人类抓取类型、以物体为中心的交互，以及使用顺应性滑动接触而非预设接触点。本文展示了该规划器的实现，采用虚拟模型控制，并在Shadow Dexterous Hand上进行了评估。在没有反馈的情况下，规划的闭合动作能够容忍约1厘米的大小误差和几厘米及数十度的姿态误差，这一范围比在27种测试条件下的最先进数据驱动规划器更广泛。它们还成功抓取了80个日常物体中的82.5%，并在自主流程中取得成功。因此，稳健性可以被设计到闭合动作本身，而不仅仅依赖于反馈。该规划器为在不确定环境中实现可靠操控开辟了一条道路，我们将通过将其与物理手的自适应反馈控制相结合来进一步探索。",
+  "arxiv_id": "2609.19228",
+  "arxiv_url": "https://arxiv.org/abs/2609.19228v1",
+  "authors": [
+    "Julien Vanderheyden",
+    "Guillaume Drion",
+    "Fulvio Forni",
+    "Pierre Sacré"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-19228",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-18T09:20:01.987142+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.19228v1",
+  "published_at": "2026-09-16T14:41:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "道路",
+      "运动规划",
+      "robot",
+      "grasping"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.19228v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Grasping by interconnection: robust closing motions from coarse object templates",
+  "title_zh": "通过互连实现抓取：基于粗略物体模板的稳健闭合动作",
+  "translation_url": "https://hjfy.top/arxiv/2609.19228"
+}

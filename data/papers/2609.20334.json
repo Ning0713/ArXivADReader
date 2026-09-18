@@ -1,0 +1,49 @@
+{
+  "abstract": "Traffic regulations are written for human interpretation and therefore rely on shared background knowledge and flexible phrasing, which inherently introduce ambiguity, context dependence, and semantic underspecification. These linguistic characteristics conflict with the precision required by computational reasoning engines such as Prolog, which demand explicit logical structure. This study evaluates two baseline translation approaches, Natural Language to Prolog ($NL\\rightarrow Prolog$) and Logical English to Prolog ($LE\\rightarrow Prolog$), and introduces a new reasoning-guided translation framework called Structured Four-Stage Legal Translation ($S4L\\rightarrow Prolog$). The proposed S4L framework performs semantic role extraction, scene completion, logical mapping, and Prolog rule generation within a single guided prompt, enabling direct translation of raw traffic rules into executable logic without human intervention. A benchmark consisting of twenty real-world traffic rules was used to evaluate each approach in terms of syntactic validity, semantic correctness, and logical completeness. $S4L\\rightarrow Prolog$ achieves the highest accuracy, correctly formalizing 75 percent of the rules, while $NL\\rightarrow Prolog$ reaches 60 percent and $LE\\rightarrow Prolog$ reaches 55 percent. Qualitative analysis further shows that S4L captures implicit causal relations, deontic modality, and exception structure more reliably than the baselines. These results demonstrate that structured reasoning prompts can substantially improve the reliability of natural-language-to-logic translation for legal and safety-critical applications.",
+  "abstract_zh": "交通法规是为人类解读而编写的，因此依赖于共享的背景知识和灵活的措辞，这本质上引入了模糊性、上下文依赖性和语义不完全性。这些语言特征与计算推理引擎（如Prolog）所需的精确性相冲突，后者要求明确的逻辑结构。本研究评估了两种基线翻译方法：自然语言到Prolog（$NL ightarrow Prolog$）和逻辑英语到Prolog（$LE ightarrow Prolog$），并引入了一种新的推理引导翻译框架，称为结构化四阶段法律翻译（$S4L ightarrow Prolog$）。所提出的S4L框架在单个引导提示中执行语义角色提取、场景补全、逻辑映射和Prolog规则生成，从而实现将原始交通规则直接翻译为可执行逻辑，而无需人工干预。使用包含二十条真实交通规则的基准来评估每种方法在语法有效性、语义正确性和逻辑完整性方面的表现。$S4L ightarrow Prolog$ 达到最高准确率，正确形式化了75%的规则，而 $NL ightarrow Prolog$ 达到60%，$LE ightarrow Prolog$ 达到55%。定性分析进一步表明，S4L在捕捉隐含因果关系、义务情态和例外结构方面比基线方法更可靠。这些结果表明，结构化推理提示可以显著提高自然语言到逻辑翻译在法律和安全关键应用中的可靠性。",
+  "arxiv_id": "2609.20334",
+  "arxiv_url": "https://arxiv.org/abs/2609.20334v1",
+  "authors": [
+    "May Myo Zin",
+    "Wachara Fungwacharakorn",
+    "Ken Satoh",
+    "Katsumi Nitta"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-18#paper-2609-20334",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-18T09:20:02.245227+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20334v1",
+  "published_at": "2026-09-17T13:05:49Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通",
+      "scene completion"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-18"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20334v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-18"
+  },
+  "summary_zh": "论文提出四阶段提示框架，将自然语言交通法规自动转换为可执行的 Prolog 规则，并在真实交通规则基准上提升了逻辑形式化的准确性与完整性。该技术可为自动驾驶规划决策中的交通规则约束、合规推理和安全验证提供机器可执行的规则表示。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Structured Four-Stage Legal Translation: From Natural-Language Traffic Rules to PROLOG",
+  "title_zh": "结构化四阶段法律翻译：从自然语言交通规则到PROLOG",
+  "translation_url": "https://hjfy.top/arxiv/2609.20334"
+}
