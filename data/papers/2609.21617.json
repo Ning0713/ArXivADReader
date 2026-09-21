@@ -1,0 +1,54 @@
+{
+  "abstract": "Self-play in high-throughput simulators yields driving policies with robust closed-loop performance, but improvement per unit of simulation diminishes as training scales. Policies learn to handle common situations early, while further rollouts repeatedly encounter unresolved failures. Post-training offers an opportunity to target these failures, but existing methods primarily evaluate alternative actions or continuations at visited states, although successful recovery may require changing driving style earlier. We propose CounterPlay, a counterfactual self-play post-training approach that backtracks from failed tasks and retries them under alternate driving styles. CounterPlay rests on three key components. First, failure-driven backtracking uses the policy's value estimates to select an earlier stored state from which to retry the task. Second, reward conditioning enables a single policy to retry the task from this state using candidate styles ranging from cautious to aggressive. Third, CounterPlay retains task-completing retries only if no other vehicle incurs a new or earlier collision or off-road event relative to the factual branch. Retries that pass verification with fresh randomness are then distilled into the policy under its deployment condition. On BehaviorBench, CounterPlay achieves state-of-the-art scores on both the Interactive and Random splits across all eight traffic regimes using 1B post-training transitions, which is just 1% of the anchor's 100B self-play training budget. Improvements over the anchor hold across all three evaluated driving styles. CounterPlay resolves a substantial fraction of the anchor's timeout cases on BehaviorBench and achieves a balance between task completion and safety that neither continued self-play nor adopting a more aggressive driving style attains.",
+  "abstract_zh": "在高吞吐量模拟器中进行自我对抗训练能够产生具有稳健闭环性能的驾驶策略，但随着训练规模的扩大，每单位模拟的改进效果逐渐减弱。策略在早期学习处理常见情况，而后续的回合则反复遭遇未解决的失败。后训练提供了针对这些失败的机会，但现有方法主要评估在已访问状态下的替代动作或继续，尽管成功的恢复可能需要更早地改变驾驶风格。我们提出了CounterPlay，一种反事实自我对抗后训练方法，它从失败的任务回溯并在不同的驾驶风格下重试这些任务。CounterPlay基于三个关键组件。首先，失败驱动的回溯利用策略的价值估计选择一个早期存储的状态，从该状态重试任务。其次，奖励条件化使得单一策略能够从该状态重试任务，使用从谨慎到激进的候选风格。第三，CounterPlay仅在相对于事实分支没有其他车辆发生新的或早期的碰撞或越界事件时，才保留完成任务的重试。通过新的随机性验证的重试随后被提炼到策略中以供其部署条件下使用。在BehaviorBench上，CounterPlay在所有八种交通模式下，使用10亿次后训练过渡，达到了互动和随机分割的最先进分数，这仅占锚点1000亿自我对抗训练预算的1%。在评估的三种驾驶风格中，CounterPlay的改进在所有情况下均保持有效。CounterPlay解决了BehaviorBench上锚点大量超时案例，并在任务完成与安全之间实现了平衡，这一平衡是继续自我对抗训练或采用更激进的驾驶风格所无法达到的。",
+  "arxiv_id": "2609.21617",
+  "arxiv_url": "https://arxiv.org/abs/2609.21617v1",
+  "authors": [
+    "Jiarong Wei",
+    "Yin Wu",
+    "Runkai He",
+    "Abhinav Valada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21617",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.413875+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21617v1",
+  "published_at": "2026-09-18T11:00:14Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 35
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21617v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "提出CounterPlay反事实自我对抗后训练方法，通过从失败任务回溯到更早状态、切换驾驶风格并进行安全验证，筛选成功重试轨迹以蒸馏改进驾驶策略。在BehaviorBench上，该方法以远低于基础自我对抗训练的模拟预算提升了任务完成率，并兼顾碰撞、越界等安全指标。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "CounterPlay: Counterfactual Post-Training for Self-Play Driving Policies",
+  "title_zh": "CounterPlay：自我对抗驾驶策略的反事实后训练",
+  "translation_url": "https://hjfy.top/arxiv/2609.21617"
+}

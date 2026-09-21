@@ -1,0 +1,58 @@
+{
+  "abstract": "Multimodal trajectory prediction improves behavioral coverage in end-to-end autonomous driving, but existing methods remain limited by sparse scene representations. Incomplete evidence leads to low-quality candidate generation and unreliable ranking among geometrically similar trajectories. On a register-based baseline, bad and poor candidates constitute 19.74% of the candidate set, while the oracle-best candidate ranks only 33.9th on average. We propose RRDrive, which introduces risk-aware occupancy as a dense, temporally aligned, and trajectory-queryable representation. Its global structure guides high-quality multimodal generation, while candidate-conditioned risk queries support fine-grained selection. We further construct RiskOcc4D-NAVSIM with automatic risk annotations. RRDrive achieves a selected-trajectory PDMS of 0.951, representing a 1.5% relative improvement over the baseline (0.937), and improves the average candidate PDMS by 7.7%. In challenging scenes, it improves candidate PDMS by 30.2% and increases the Spearman correlation among good candidates by 0.41, from 0.26 to 0.67. To move beyond this oracle setting, we further develop an external RiskOcc predictor, a perception module that estimates risk-aware occupancy directly from sensor inputs. The competitive performance validates the representation's feasibility.",
+  "abstract_zh": "多模态轨迹预测提高了端到端自主驾驶中的行为覆盖，但现有方法仍受限于稀疏的场景表示。不完整的证据导致低质量候选生成和几何相似轨迹之间的不可靠排序。在基于寄存器的基线中，劣质和不良候选占候选集的19.74%，而最佳候选的平均排名仅为第33.9位。我们提出了RRDrive，引入风险感知占用作为一种密集、时间对齐且可查询轨迹的表示。其全局结构指导高质量的多模态生成，而候选条件下的风险查询支持细粒度选择。我们进一步构建了带有自动风险注释的RiskOcc4D-NAVSIM。RRDrive实现了0.951的选定轨迹PDMS，相较于基线（0.937）提高了1.5%的相对改进，并将平均候选PDMS提高了7.7%。在具有挑战性的场景中，它将候选PDMS提高了30.2%，并将良好候选之间的Spearman相关性从0.26提高到0.67，增加了0.41。为了超越这一最佳设置，我们进一步开发了外部RiskOcc预测器，这是一个直接从传感器输入估计风险感知占用的感知模块。竞争力的性能验证了该表示的可行性。",
+  "arxiv_id": "2609.21486",
+  "arxiv_url": "https://arxiv.org/abs/2609.21486v1",
+  "authors": [
+    "Jiaxing Chen",
+    "Hengduo Zou",
+    "YuKai Qin",
+    "Yiren Zhao",
+    "Lidong Yu",
+    "Bolin Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21486",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.534316+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21486v1",
+  "published_at": "2026-09-18T08:39:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "trajectory prediction",
+      "轨迹预测",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 59
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21486v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "预测/规划"
+    ]
+  },
+  "title": "Driving on Registers, Reasoning on Risk: Risk-Aware Occupancy for Register-Based End-to-End Autonomous Driving",
+  "title_zh": "基于寄存器的驾驶，风险推理：面向风险的寄存器基础端到端自主驾驶占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.21486"
+}

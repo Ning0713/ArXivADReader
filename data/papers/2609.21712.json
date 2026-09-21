@@ -1,0 +1,73 @@
+{
+  "abstract": "Generative world models offer controllable and repeatable closed-loop simulation for end-to-end and vision-language-action driving policies, but production deployment exposes three unresolved requirements: faithfully reproducing a mixed fisheye-pinhole rig at native resolutions; reconciling causal, per-timestep interaction with long-horizon stability and low latency; and preserving scene identity when a location is revisited. We present ZYT-World, a single architecture that natively generates four fisheye views with field of view > 180{\\deg} and three pinhole views. Projection-specific Plucker adapters encode camera geometry, ego-motion adaptive layer normalization provides global motion control, and a lightweight pixel-aligned layout conditions traffic participants and signals through instance-level boxes, headings and colors. Heterogeneous training combines full-rig geometric coverage with high-resolution detail. Teacher forcing, causal consistency distillation, self-rollout distribution matching distillation, and RigCritic transform a 40-step bidirectional teacher into a one-step, per-latent streaming generator, with RigCritic evaluating the seven-view rig jointly. A 19M-parameter variational autoencoder decoder (TinyVAE), W8A8 quantization, and our inference engine reduce decoding, backbone, and incremental-execution costs, respectively. Finally, cross-trajectory pairs derived from real captures train a plug-in implicit-memory module that preserves place-specific evidence. On the internal multi-view test set, the one-step model retains more than 90% of the teacher's PSNR and SSIM, while FID, FVD, and LPIPS stay within 11% of the teacher. Under the generator-only timing in Figure 2, it is 107.7 times faster than the 40-step bidirectional teacher. TinyVAE decodes 59.8 times faster than Wan. 30s rollouts and cross-trajectory revisits show the intended long-horizon and memory behavior.",
+  "abstract_zh": "生成世界模型为端到端和视觉-语言-动作驾驶策略提供了可控且可重复的闭环仿真，但在生产部署中暴露出三个未解决的需求：忠实再现混合鱼眼-针孔设备的原生分辨率；调和因果、逐时间步的交互与长时间稳定性和低延迟；以及在重新访问位置时保持场景身份。我们提出了ZYT-World，这是一种单一架构，能够原生生成四个视场大于180°的鱼眼视图和三个针孔视图。投影特定的Plucker适配器编码相机几何，适应自我运动的层归一化提供全局运动控制，而轻量级像素对齐布局通过实例级框、朝向和颜色条件化交通参与者和信号。异构训练结合了全设备几何覆盖与高分辨率细节。教师强制、因果一致性蒸馏、自我回滚分布匹配蒸馏和RigCritic将一个40步的双向教师转化为一个一步、每潜在流的生成器，RigCritic联合评估七视图设备。在内部多视图测试集上，一步模型保留了教师PSNR和SSIM的90%以上，而FID、FVD和LPIPS保持在教师的11%以内。在图2的仅生成器计时下，它比40步双向教师快107.7倍。TinyVAE的解码速度比Wan快59.8倍。30秒的回滚和跨轨迹重访显示了预期的长时间和记忆行为。",
+  "arxiv_id": "2609.21712",
+  "arxiv_url": "https://arxiv.org/abs/2609.21712v1",
+  "authors": [
+    "Boni Hu",
+    "Xiong Wei",
+    "Haoming Huang",
+    "Yong Huang",
+    "Chenbo Wang",
+    "Yi Yang",
+    "Jiancheng Wang",
+    "Ruicheng Zhu",
+    "Zhimin Yang",
+    "Guanglai Liu",
+    "Qiaowan Jin",
+    "Dongzhuo Wang",
+    "Haiwei Kuang",
+    "Jiajun Fan",
+    "Yue Wu",
+    "Jiaxin Wei",
+    "Hao Sun",
+    "Feihong Yan",
+    "Wei Bi",
+    "Kaixuan Wang",
+    "Zichao Guo",
+    "Xiaozhi Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21712",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.495413+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21712v1",
+  "published_at": "2026-09-18T12:49:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "vision-language-action",
+      "world model"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21712v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "ZYT-World: A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation",
+  "title_zh": "ZYT-World：一种可实时控制的闭环自主驾驶仿真世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.21712"
+}

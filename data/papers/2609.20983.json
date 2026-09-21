@@ -1,0 +1,51 @@
+{
+  "abstract": "Terrain assessment is a critical capability for off-road mobile robots, enabling safe and reliable navigation through unstructured and geometrically complex environments. Conventional geometry-based terrain assessment is fast to compute but often overly conservative in unstructured environments. We present PIVOT: a Physically Informed Vision-Language Off-Road Traversability navigation system that augments conventional geometry-based planning with vision-language-model (VLM)-based semantic reasoning for field robots. To physically ground this assessment, we quantify how strongly the VLM's predicted traversal energy cost, robot vibration, and wheel slip correlate with real-world measurements and introduce a unified traversability score that weights each modality by its prediction-measurement correlation. For efficiency, we design a two-level navigation architecture that retains geometry-based planning as the nominal mode and invokes semantic replanning only when that mode fails to find a path. Across five repeated closed-loop trials on a mixed-terrain route totalling around $6.4$ km, the proposed system increases overall autonomy from $59.6\\%$ to $97.0\\%$, reduces human interventions from $11$ to $3$, and increases the mean distance between interventions (MDBI) from $69.2$ m to $412.9$ m compared with geometry-only navigation. These results demonstrate that physically grounded VLM-based terrain assessment can substantially extend autonomous navigation beyond the limitations of geometry alone, while preserving efficient geometric planning as the nominal mode.",
+  "abstract_zh": "地形评估是越野移动机器人一项关键能力，使其能够在非结构化和几何复杂的环境中安全可靠地导航。传统的基于几何的地形评估计算速度快，但在非结构化环境中往往过于保守。我们提出了PIVOT：一种基于物理信息的视觉-语言越野可通行性导航系统，该系统通过视觉-语言模型（VLM）基础的语义推理来增强传统的基于几何的规划。为了将这种评估与实际情况相结合，我们量化了VLM预测的行驶能耗、机器人振动和轮胎打滑与实际测量之间的相关性，并引入了一个统一的可通行性评分，该评分根据每种模态的预测-测量相关性进行加权。为了提高效率，我们设计了一个两级导航架构，保留基于几何的规划作为常规模式，仅在该模式未能找到路径时调用语义重规划。在对总长约6.4公里的混合地形路线进行的五次重复闭环试验中，所提系统将整体自主性从59.6%提高到97.0%，将人工干预次数从11次减少到3次，并将干预之间的平均距离（MDBI）从69.2米增加到412.9米，相较于仅基于几何的导航。这些结果表明，基于物理信息的VLM地形评估能够显著扩展自主导航的能力，超越仅依赖几何的局限，同时保持高效的几何规划作为常规模式。",
+  "arxiv_id": "2609.20983",
+  "arxiv_url": "https://arxiv.org/abs/2609.20983v1",
+  "authors": [
+    "Aoran Jiao",
+    "Wenda Zhao",
+    "Hshmat Sahak",
+    "Timothy D. Barfoot"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-20983",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.359473+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.20983v1",
+  "published_at": "2026-09-17T18:34:18Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "road",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.20983v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "本文提出PIVOT，一种面向越野场地机器人导航的物理信息视觉-语言可通行性系统。该方法利用VLM预测行驶能耗、振动和轮胎打滑，并依据预测值与真实测量值的相关性构建统一可通行性评分。在两级导航架构中，几何规划作为默认模式，仅在其无法找到路径时触发语义重规划。混合地形闭环实验表明，该方法显著提升自主运行比例并减少人工干预，说明物理约束下的VLM语义推理能够有效补充几何导航。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "PIVOT: Physically Informed Vision-Language Off-Road Traversability for Field Robot Navigation",
+  "title_zh": "PIVOT：基于物理信息的视觉-语言越野可通行性系统用于场地机器人导航",
+  "translation_url": "https://hjfy.top/arxiv/2609.20983"
+}

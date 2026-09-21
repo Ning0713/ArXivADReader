@@ -1,0 +1,62 @@
+{
+  "abstract": "Sparse representation formulates the environment perception for the end-to-end driving system as a set of discrete elements like objects and lane lines. This formulation meets safety risks in crowded, occluded scenes dealing with unstructured obstacles, uncertain regions, and intricate interactions. In this paper, we propose a dense representation, risk-aware occupancy, to characterize planning-relevant risks in an explicit and uniform manner. It jointly encodes global scene occupancy, map-derived traffic constraints, and future dynamic agent occupancy into a unified BEV map. The unified BEV map captures the risk evidence for trajectory planning in both spatial and temporal dimensions. We design an E2E network, ROIDrive, to realize risk-aware occupancy. It predicts risk-aware occupancy with an independent branch and injects it into planning queries for safety-oriented trajectory generation. In addition, to quantify the safety problem, we introduce RiskOcc4D-nuScenes built upon nuscenes and occ3d-nuscenes. Our risk-aware occupancy yields relative open-loop collision reductions of 52.9% under the UniAD metric and 35.0% under the ST-P3 metric on nuScenes.",
+  "abstract_zh": "稀疏表示将环境感知为端到端驾驶系统中的一组离散元素，如物体和车道线。这种表述在处理拥挤、遮挡场景中的非结构化障碍物、不确定区域和复杂交互时面临安全风险。本文提出了一种密集表示，即风险感知占用，以明确和统一的方式表征与规划相关的风险。它将全球场景占用、基于地图的交通约束和未来动态代理的占用共同编码为一个统一的鸟瞰图（BEV）地图。该统一的BEV地图在空间和时间维度上捕捉了轨迹规划的风险证据。我们设计了一个端到端网络ROIDrive，以实现风险感知占用。它通过一个独立的分支预测风险感知占用，并将其注入规划查询中，以生成面向安全的轨迹。此外，为了量化安全问题，我们引入了基于nuScenes和occ3d-nuScenes构建的RiskOcc4D-nuScenes。我们的风险感知占用在nuScenes上在UniAD指标下实现了52.9%的相对开环碰撞减少，在ST-P3指标下实现了35.0%的减少。",
+  "arxiv_id": "2609.21470",
+  "arxiv_url": "https://arxiv.org/abs/2609.21470v1",
+  "authors": [
+    "Jiaxing Chen",
+    "Hengduo Zou",
+    "Yiren Zhao",
+    "Bolin Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21470",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.533453+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21470v1",
+  "published_at": "2026-09-18T08:18:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "traffic",
+      "lane",
+      "驾驶",
+      "交通",
+      "车道",
+      "bev",
+      "occupancy"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21470v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "BEV/Occupancy",
+      "感知"
+    ]
+  },
+  "title": "Risk-Aware Occupancy for Safety-Oriented End-to-End Autonomous Driving",
+  "title_zh": "面向安全的端到端自主驾驶的风险感知占用",
+  "translation_url": "https://hjfy.top/arxiv/2609.21470"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "Artificial Intelligence (AI) is becoming a fundamental design principle of future AI-native communication networks, enabling autonomous resource management, adaptive control, and zero-touch network operation. While current AI-native architectures increasingly embed intelligence across network functions, they provide little guidance on how optimisation knowledge should be systematically generated, transferred, and exploited by AI models. This paper argues that the Learning-to-Optimize (L2O) represents the missing architectural layer between optimisation and AI-native intelligence. Rather than viewing optimisation merely as an online decision engine, the proposed paradigm redefines optimisation algorithms as offline knowledge generators that produce high-quality supervisory information for neural surrogate models. The resulting models inherit optimisation expertise while enabling low-latency runtime inference suitable for dynamic network environments. A generic four-stage L2O workflow is introduced, comprising optimisation, knowledge generation, surrogate learning, and runtime inference. Unlike existing Learning-to-Optimize approaches, which primarily focus on algorithm acceleration, the proposed framework establishes L2O as an architectural abstraction applicable across heterogeneous communication and computing systems. The proposed paradigm is illustrated by an NR-V2X relay-selection problem, in which optimisation-generated solutions from a Mixed-Integer Linear Programming (MILP) solver are used to train a Graph Neural Network that can reproduce near-optimal decisions in real time. The presented perspective positions Learning-to-Optimize as a key architectural enabler for future AI-native networks.",
+  "abstract_zh": "人工智能（AI）正成为未来人工智能原生通信网络的基本设计原则，使得自主资源管理、自适应控制和零接触网络操作成为可能。尽管当前的人工智能原生架构在网络功能中越来越多地嵌入智能，但它们对如何系统性地生成、转移和利用优化知识提供的指导仍然有限。本文认为，学习优化（Learning-to-Optimize, L2O）代表了优化与人工智能原生智能之间缺失的架构层。所提出的范式将优化算法重新定义为离线知识生成器，而不仅仅是在线决策引擎，这些生成器为神经代理模型提供高质量的监督信息。由此产生的模型继承了优化专业知识，同时实现了适合动态网络环境的低延迟运行推理。本文介绍了一个通用的四阶段L2O工作流程，包括优化、知识生成、代理学习和运行时推理。与现有的学习优化方法主要关注算法加速不同，所提出的框架将L2O确立为适用于异构通信和计算系统的架构抽象。通过一个NR-V2X中继选择问题来说明所提出的范式，其中来自混合整数线性规划（Mixed-Integer Linear Programming, MILP）求解器生成的优化解决方案用于训练图神经网络，以实时再现近乎最优的决策。所呈现的视角将学习优化定位为未来人工智能原生网络的关键架构推动者。",
+  "arxiv_id": "2609.21519",
+  "arxiv_url": "https://arxiv.org/abs/2609.21519v1",
+  "authors": [
+    "Giambattista Amati",
+    "Federica Mangiatordi",
+    "Pierpaolo Salvo",
+    "Emiliano Pallotti",
+    "Simone Angelini"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21519",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.538000+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21519v1",
+  "published_at": "2026-09-18T09:09:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "autonomous"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 37
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21519v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Learning-to-Optimize as the Missing Architectural Layer of AI-Native Networks",
+  "title_zh": "学习优化作为人工智能原生网络缺失的架构层",
+  "translation_url": "https://hjfy.top/arxiv/2609.21519"
+}

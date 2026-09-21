@@ -1,0 +1,51 @@
+{
+  "abstract": "Traffic sign recognition (TSR) is an important perception task for autonomous driving and advanced driver-assistance systems, where a system must both localize traffic signs and determine their semantic classes efficiently. This work presents a TSR system based on YOLOv2 for simultaneous detection and classification. Two complementary modifications are studied. First, YOLOv2 is extended with intermediate prediction layers, forming a branched architecture that can terminate inference early for easy cases and reduce computation time. Both whole-image and cell-wise branching strategies are investigated. Second, geometric information is introduced to reduce classification errors between visually similar signs. An unsupervised Bayesian image-segmentation method produces binary representations that are compared with class-specific geometric templates inside YOLOv2 bounding boxes. This information is used either during inference or as an additional signal during training. A dedicated dataset is constructed by combining GTSDB and GTSRB samples using seamless cloning and controlled image transformations. Experiments cover ten traffic-sign classes, with 3,000 training and 300 test samples. The selected branched architecture reports 0.647 s runtime and 0.680 mAP, compared with 0.6607 s and 0.680 mAP for baseline YOLOv2. Geometric verification during inference increases mAP to 0.713, while the geometric-feature training variant achieves 0.697 mAP with a reported runtime of 0.6608 s.",
+  "abstract_zh": "交通标志识别（TSR）是自动驾驶和高级驾驶辅助系统中的一项重要感知任务，系统必须高效地定位交通标志并确定其语义类别。本研究提出了一种基于YOLOv2的TSR系统，用于同时检测和分类。研究了两种互补的改进方法。首先，YOLOv2通过中间预测层进行扩展，形成一种分支架构，可以在简单案例中提前终止推理，从而减少计算时间。研究了整幅图像和单元格分支策略。其次，引入几何信息以减少视觉相似标志之间的分类错误。一种无监督的贝叶斯图像分割方法生成二进制表示，并与YOLOv2边界框内的类别特定几何模板进行比较。这些信息在推理期间使用或作为训练过程中的额外信号。通过无缝克隆和受控图像变换构建了一个专用数据集，结合了GTSDB和GTSRB样本。实验涵盖了十个交通标志类别，共有3000个训练样本和300个测试样本。所选的分支架构报告的运行时间为0.647秒，mAP为0.680，而基线YOLOv2的运行时间为0.6607秒，mAP为0.680。在推理期间进行几何验证将mAP提高到0.713，而几何特征训练变体的mAP达到0.697，报告的运行时间为0.6608秒。",
+  "arxiv_id": "2609.22060",
+  "arxiv_url": "https://arxiv.org/abs/2609.22060v1",
+  "authors": [
+    "Arefeh Rezaei"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-22060",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.510047+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22060v1",
+  "published_at": "2026-09-18T17:52:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22060v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "Traffic Sign Recognition for Autonomous Driving Using Branched YOLOv2 and Geometric Features",
+  "title_zh": "基于分支YOLOv2和几何特征的自动驾驶交通标志识别",
+  "translation_url": "https://hjfy.top/arxiv/2609.22060"
+}

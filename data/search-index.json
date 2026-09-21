@@ -1,6 +1,327 @@
 {
-  "generated_at": "2026-09-18T09:25:06.758268+00:00",
+  "generated_at": "2026-09-21T10:23:57.834600+00:00",
   "items": [
+    {
+      "abstract": "Traffic sign recognition (TSR) is an important perception task for autonomous driving and advanced driver-assistance systems, where a system must both localize traffic signs and determine their semantic classes efficiently. This work presents a TSR system based on YOLOv2 for simultaneous detection and classification. Two complementary modifications are studied. First, YOLOv2 is extended with intermediate prediction layers, forming a branched architecture that can terminate inference early for easy cases and reduce computation time. Both whole-image and cell-wise branching strategies are investigated. Second, geometric information is introduced to reduce classification errors between visually similar signs. An unsupervised Bayesian image-segmentation method produces binary representations that are compared with class-specific geometric templates inside YOLOv2 bounding boxes. This information is used either during inference or as an additional signal during training. A dedicated dataset is constructed by combining GTSDB and GTSRB samples using seamless cloning and controlled image transformations. Experiments cover ten traffic-sign classes, with 3,000 training and 300 test samples. The selected branched architecture reports 0.647 s runtime and 0.680 mAP, compared with 0.6607 s and 0.680 mAP for baseline YOLOv2. Geometric verification during inference increases mAP to 0.713, while the geometric-feature training variant achieves 0.697 mAP with a reported runtime of 0.6608 s.",
+      "abstract_zh": "交通标志识别（TSR）是自动驾驶和高级驾驶辅助系统中的一项重要感知任务，系统必须高效地定位交通标志并确定其语义类别。本研究提出了一种基于YOLOv2的TSR系统，用于同时检测和分类。研究了两种互补的改进方法。首先，YOLOv2通过中间预测层进行扩展，形成一种分支架构，可以在简单案例中提前终止推理，从而减少计算时间。研究了整幅图像和单元格分支策略。其次，引入几何信息以减少视觉相似标志之间的分类错误。一种无监督的贝叶斯图像分割方法生成二进制表示，并与YOLOv2边界框内的类别特定几何模板进行比较。这些信息在推理期间使用或作为训练过程中的额外信号。通过无缝克隆和受控图像变换构建了一个专用数据集，结合了GTSDB和GTSRB样本。实验涵盖了十个交通标志类别，共有3000个训练样本和300个测试样本。所选的分支架构报告的运行时间为0.647秒，mAP为0.680，而基线YOLOv2的运行时间为0.6607秒，mAP为0.680。在推理期间进行几何验证将mAP提高到0.713，而几何特征训练变体的mAP达到0.697，报告的运行时间为0.6608秒。",
+      "authors": [
+        "Arefeh Rezaei"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.22060",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "Traffic Sign Recognition for Autonomous Driving Using Branched YOLOv2 and Geometric Features",
+      "title_zh": "基于分支YOLOv2和几何特征的自动驾驶交通标志识别",
+      "url": "/daily/2026-09-21/#paper-2609-22060"
+    },
+    {
+      "abstract": "Current Vision-Language-Action (VLA) models for autonomous driving operate primarily through feedforward inference across the perception--reasoning--planning hierarchy. While modern architectures maintain temporal recurrence within the perceptual module, early perception remains blind to downstream reasoning and navigation goals, processing visual inputs agnostically without prioritizing cues informed by prior decisions. To bridge this gap, this paper introduces PRIME, a learned feedback mechanism that conditions the VLA perceptual queries on a novel Situational Memory. By aggregating latent representations of past perception, reasoning, navigation goals, and predicted behaviors across an L-step window via cross-attention, PRIME enables intent-driven perceptual attention at minimal computational cost, adding only a maximum of 29.7M parameters (0.41% of the 7.3B-parameter base model). Evaluated on the Bench2Drive closed-loop benchmark, PRIME achieves a state-of-the-art Driving Score of 82.47 (+4.73 over ORION) and a Success Rate of 60.00% (+5.38 percentage points), the highest reported Driving Score among published VLAs trained on Think2Drive demonstrations.",
+      "abstract_zh": "当前用于自主驾驶的视觉-语言-行动（VLA）模型主要通过感知-推理-规划层次结构中的前馈推理进行操作。尽管现代架构在感知模块中保持了时间递归，但早期感知仍然对下游推理和导航目标视而不见，处理视觉输入时没有优先考虑先前决策所提供的线索。为了解决这一问题，本文提出了PRIME，一种学习的反馈机制，它基于一种新颖的情境记忆对VLA感知查询进行条件化。通过跨注意力聚合过去的感知、推理、导航目标和预测行为的潜在表示，PRIME能够以最小的计算成本实现意图驱动的感知注意，仅增加最多29.7M参数（占7.3B参数基础模型的0.41%）。在Bench2Drive闭环基准测试中评估，PRIME实现了82.47的最新驾驶得分（比ORION高出4.73）和60.00%的成功率（高出5.38个百分点），这是在Think2Drive演示上训练的已发布VLA中报告的最高驾驶得分。",
+      "authors": [
+        "Erik Deinzer",
+        "Naya Baslan",
+        "Luca Paparusso",
+        "Narunas Vaskevicius",
+        "Peter Knott",
+        "Luigi Palmieri"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.22040",
+      "tags": [
+        "VLM/VLA",
+        "感知",
+        "预测/规划"
+      ],
+      "title": "PRIME: Perception Feedback with Situational Memory Embeddings in VLA Models",
+      "title_zh": "PRIME：在视觉-语言-行动（VLA）模型中结合情境记忆嵌入的感知反馈",
+      "url": "/daily/2026-09-21/#paper-2609-22040"
+    },
+    {
+      "abstract": "Transformer-based models have recently achieved strong performance on 3D reconstruction from images, and recent works extend them to process video streams in an online manner for real-world deployment. However, existing methods overlook two key signals when handling long image streams: the importance of each incoming frame and the information saturation of the model's internal state. In this paper, we propose Info3R, a novel information-adaptive test-time training method for the online 3D reconstruction. We introduce an information-aware state update that modulates the state update strength based on the redundancy and informativeness of each incoming frame. To restore the state's plasticity -- its capacity to incorporate new observations -- we propose a dynamic state reset, triggered by the cumulative magnitude of state updates and the model's prediction confidence and accompanied by an anchor-to-world alignment. Our method achieves consistent improvements on camera pose estimation, video depth estimation, and 3D reconstruction, while substantially mitigating the performance degradation in the long sequence evaluation. Notably, on KITTI Odometry, our method achieves on average 1.68x lower ATE than LongStream, demonstrating its robustness on extended outdoor sequences.",
+      "abstract_zh": "基于Transformer的模型最近在从图像进行3D重建方面取得了强劲的性能，近期的研究将其扩展到以在线方式处理视频流，以便于实际应用。然而，现有方法在处理长图像流时忽视了两个关键信号：每个输入帧的重要性和模型内部状态的信息饱和度。本文提出了Info3R，一种用于在线3D重建的新颖信息自适应测试时训练方法。我们引入了一种信息感知的状态更新机制，根据每个输入帧的冗余性和信息量调节状态更新的强度。为了恢复状态的可塑性——即其整合新观察的能力——我们提出了一种动态状态重置机制，该机制由状态更新的累积幅度和模型的预测置信度触发，并伴随有锚点与世界的对齐。我们的方法在相机位姿估计、视频深度估计和3D重建方面取得了一致的改进，同时显著减轻了长序列评估中的性能下降。值得注意的是，在KITTI Odometry数据集上，我们的方法在平均上比LongStream降低了1.68倍的绝对位姿误差（ATE），展示了其在扩展户外序列上的鲁棒性。",
+      "authors": [
+        "Sunghyun Baek",
+        "Hanna Bae",
+        "Minchan Kwon",
+        "Junmo Kim"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21938",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction",
+      "title_zh": "Info3R：用于3D重建的信息自适应测试时训练",
+      "url": "/daily/2026-09-21/#paper-2609-21938"
+    },
+    {
+      "abstract": "While object detection has advanced through improved architectures and open-vocabulary models, we provide strong evidence that benchmark quality is limited by annotation incompleteness. Across four widely used datasets (COCO, Pascal VOC, Cityscapes, KITTI), re-annotation reveals substantial increases in annotated objects (e.g., up to +60% on KITTI and +40% on COCO), driven primarily by previously unlabeled small, occluded, or densely packed instances. While some differences arise from dataset-specific annotation conventions, we consistently find that missing annotations are the main source of label errors across all datasets. To achieve high data quality, we introduce a scalable annotation pipeline that emphasizes high recall and captures ambiguity through soft labels aggregated from at least 11 annotators per object. The resulting annotations improve coverage and align well with human calibration. We show that benchmark performance is highly sensitive to annotation quality, although model rankings remain largely stable. We introduce two large-scale benchmarks: (i) an uncertainty-aware object detection benchmark, and (ii) a label error detection benchmark grounded in real label errors. We show that current detectors are strongly depended on annotation quality and are misaligned with human perception. Current label error detection methods, which have been shown to perform well on synthetic noise, struggle to achieve high recall and precision on real label errors. Our results highlight the need for future object detection benchmarks to move beyond deterministic annotations toward high-recall, uncertainty-aware evaluation that maximizes valid instances and better reflects real-world ambiguity.",
+      "abstract_zh": "尽管目标检测通过改进的架构和开放词汇模型取得了进展，但我们提供了强有力的证据表明基准测试的质量受到注释不完整性的限制。在四个广泛使用的数据集（COCO、Pascal VOC、Cityscapes、KITTI）中，重新注释揭示了标注对象的显著增加（例如，KITTI上增加了多达60%，COCO上增加了40%），主要是由于之前未标记的小型、被遮挡或密集堆叠的实例。虽然一些差异源于数据集特定的注释规范，但我们始终发现缺失的注释是所有数据集中标签错误的主要来源。为了实现高数据质量，我们引入了一种可扩展的注释流程，强调高召回率，并通过每个对象至少11名注释者聚合的软标签捕捉模糊性。最终的注释提高了覆盖率，并与人类校准良好对齐。我们展示了基准性能对注释质量高度敏感，尽管模型排名基本保持稳定。我们引入了两个大规模基准测试：（i）一个关注不确定性的目标检测基准，以及（ii）一个基于真实标签错误的标签错误检测基准。我们表明，当前的检测器在很大程度上依赖于注释质量，并与人类感知不一致。当前的标签错误检测方法在合成噪声上表现良好，但在真实标签错误上难以实现高召回率和精确度。我们的结果强调了未来目标检测基准需要超越确定性注释，朝着高召回率、不确定性意识的评估发展，以最大化有效实例并更好地反映现实世界的模糊性。",
+      "authors": [
+        "Sarina Penquitt",
+        "Jonathan Klees",
+        "Antonia van Betteray",
+        "Parssa Jashnieh",
+        "Peter Stehr",
+        "Matthias Rottmann",
+        "Lars Schmarje"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21822",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Object Detection Benchmarks are Incomplete: The Role of Label Errors and Annotation Uncertainty",
+      "title_zh": "目标检测基准测试不完整：标签错误和注释不确定性的作用",
+      "url": "/daily/2026-09-21/#paper-2609-21822"
+    },
+    {
+      "abstract": "3D object detection from LiDAR point clouds faces a fundamental dilemma: voxel-based methods achieve efficiency at the cost of geometric quantization, while point-based methods preserve fidelity but suffer from prohibitive computational bottlenecks. Specifically, point-based architectures are crippled by slow downsampling strategies (e.g., FPS) and expensive dynamic neighbor queries (e.g., k-NN) coupled with costly continuous interactions. To tackle these systemic inefficiencies, we propose PointLAM, a highly efficient and powerful point-based architecture driven by two synergistic innovations. First, to resolve the downsampling bottleneck, we develop the Laplacian Point Sampler (LPS). LPS employs an implicit discrete Laplacian high-pass filter and Doubly Sorted Sampling to achieve fast, structure-aware foreground preservation. Second, to overcome local modeling latency, we design the Local Hadamard Aggregator (LHA). LHA decouples spatial indexing from feature representation using transient grids, and replaces complex continuous interactions with a Hadamard Gating mechanism for topology-aware, attentive modulation. By coupling this local gating with Bi-Directional Mamba (BDM) layers for global sequence modeling, we formulate the Local Attentive Mamba (LAM) block. Powered by this architecture, PointLAM achieves competitive performance on nuScenes and Waymo for point-based detectors. It rivals highly optimized voxel competitors while requiring a fraction of the computational footprint, demonstrating marked superiority in detecting small instances and handling extreme sparsity. Project page: https://pointlam.github.io/.",
+      "abstract_zh": "从LiDAR点云进行3D物体检测面临一个基本的困境：基于体素的方法在几何量化的代价下实现了效率，而基于点的方法则保持了保真度，但遭遇了巨大的计算瓶颈。具体而言，基于点的架构受到缓慢下采样策略（例如，FPS）和昂贵的动态邻域查询（例如，k-NN）以及高成本的连续交互的限制。为了解决这些系统性低效问题，我们提出了PointLAM，这是一种高效且强大的基于点的架构，依赖于两项协同创新。首先，为了解决下采样瓶颈，我们开发了拉普拉斯点采样器（Laplacian Point Sampler, LPS）。LPS采用隐式离散拉普拉斯高通滤波器和双重排序采样，以实现快速、结构感知的前景保留。其次，为了克服局部建模延迟，我们设计了局部哈达玛聚合器（Local Hadamard Aggregator, LHA）。LHA使用瞬态网格将空间索引与特征表示解耦，并用哈达玛门控机制替代复杂的连续交互，以实现拓扑感知和注意力调制。通过将这种局部门控与双向Mamba（Bi-Directional Mamba, BDM）层结合用于全局序列建模，我们形成了局部注意力Mamba（Local Attentive Mamba, LAM）模块。得益于这一架构，PointLAM在nuScenes和Waymo的数据集上实现了竞争力的性能，作为基于点的检测器，其性能可与高度优化的体素竞争者相媲美，同时所需的计算资源仅为其一小部分，显示出在检测小实例和处理极端稀疏方面的显著优势。项目页面：https://pointlam.github.io/",
+      "authors": [
+        "Xuanming Shang",
+        "Weijia Zhang",
+        "Chao Ma"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21780",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "3D 检测"
+      ],
+      "title": "PointLAM: Local Attentive Mamba for Efficient Point-based 3D Object Detection",
+      "title_zh": "PointLAM：高效点云3D物体检测的局部注意力Mamba",
+      "url": "/daily/2026-09-21/#paper-2609-21780"
+    },
+    {
+      "abstract": "Generative world models offer controllable and repeatable closed-loop simulation for end-to-end and vision-language-action driving policies, but production deployment exposes three unresolved requirements: faithfully reproducing a mixed fisheye-pinhole rig at native resolutions; reconciling causal, per-timestep interaction with long-horizon stability and low latency; and preserving scene identity when a location is revisited. We present ZYT-World, a single architecture that natively generates four fisheye views with field of view > 180{\\deg} and three pinhole views. Projection-specific Plucker adapters encode camera geometry, ego-motion adaptive layer normalization provides global motion control, and a lightweight pixel-aligned layout conditions traffic participants and signals through instance-level boxes, headings and colors. Heterogeneous training combines full-rig geometric coverage with high-resolution detail. Teacher forcing, causal consistency distillation, self-rollout distribution matching distillation, and RigCritic transform a 40-step bidirectional teacher into a one-step, per-latent streaming generator, with RigCritic evaluating the seven-view rig jointly. A 19M-parameter variational autoencoder decoder (TinyVAE), W8A8 quantization, and our inference engine reduce decoding, backbone, and incremental-execution costs, respectively. Finally, cross-trajectory pairs derived from real captures train a plug-in implicit-memory module that preserves place-specific evidence. On the internal multi-view test set, the one-step model retains more than 90% of the teacher's PSNR and SSIM, while FID, FVD, and LPIPS stay within 11% of the teacher. Under the generator-only timing in Figure 2, it is 107.7 times faster than the 40-step bidirectional teacher. TinyVAE decodes 59.8 times faster than Wan. 30s rollouts and cross-trajectory revisits show the intended long-horizon and memory behavior.",
+      "abstract_zh": "生成世界模型为端到端和视觉-语言-动作驾驶策略提供了可控且可重复的闭环仿真，但在生产部署中暴露出三个未解决的需求：忠实再现混合鱼眼-针孔设备的原生分辨率；调和因果、逐时间步的交互与长时间稳定性和低延迟；以及在重新访问位置时保持场景身份。我们提出了ZYT-World，这是一种单一架构，能够原生生成四个视场大于180°的鱼眼视图和三个针孔视图。投影特定的Plucker适配器编码相机几何，适应自我运动的层归一化提供全局运动控制，而轻量级像素对齐布局通过实例级框、朝向和颜色条件化交通参与者和信号。异构训练结合了全设备几何覆盖与高分辨率细节。教师强制、因果一致性蒸馏、自我回滚分布匹配蒸馏和RigCritic将一个40步的双向教师转化为一个一步、每潜在流的生成器，RigCritic联合评估七视图设备。在内部多视图测试集上，一步模型保留了教师PSNR和SSIM的90%以上，而FID、FVD和LPIPS保持在教师的11%以内。在图2的仅生成器计时下，它比40步双向教师快107.7倍。TinyVAE的解码速度比Wan快59.8倍。30秒的回滚和跨轨迹重访显示了预期的长时间和记忆行为。",
+      "authors": [
+        "Boni Hu",
+        "Xiong Wei",
+        "Haoming Huang",
+        "Yong Huang",
+        "Chenbo Wang",
+        "Yi Yang",
+        "Jiancheng Wang",
+        "Ruicheng Zhu",
+        "Zhimin Yang",
+        "Guanglai Liu",
+        "Qiaowan Jin",
+        "Dongzhuo Wang",
+        "Haiwei Kuang",
+        "Jiajun Fan",
+        "Yue Wu",
+        "Jiaxin Wei",
+        "Hao Sun",
+        "Feihong Yan",
+        "Wei Bi",
+        "Kaixuan Wang",
+        "Zichao Guo",
+        "Xiaozhi Chen"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21712",
+      "tags": [
+        "深度/几何",
+        "预测/规划",
+        "端到端驾驶"
+      ],
+      "title": "ZYT-World: A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation",
+      "title_zh": "ZYT-World：一种可实时控制的闭环自主驾驶仿真世界模型",
+      "url": "/daily/2026-09-21/#paper-2609-21712"
+    },
+    {
+      "abstract": "Self-play in high-throughput simulators yields driving policies with robust closed-loop performance, but improvement per unit of simulation diminishes as training scales. Policies learn to handle common situations early, while further rollouts repeatedly encounter unresolved failures. Post-training offers an opportunity to target these failures, but existing methods primarily evaluate alternative actions or continuations at visited states, although successful recovery may require changing driving style earlier. We propose CounterPlay, a counterfactual self-play post-training approach that backtracks from failed tasks and retries them under alternate driving styles. CounterPlay rests on three key components. First, failure-driven backtracking uses the policy's value estimates to select an earlier stored state from which to retry the task. Second, reward conditioning enables a single policy to retry the task from this state using candidate styles ranging from cautious to aggressive. Third, CounterPlay retains task-completing retries only if no other vehicle incurs a new or earlier collision or off-road event relative to the factual branch. Retries that pass verification with fresh randomness are then distilled into the policy under its deployment condition. On BehaviorBench, CounterPlay achieves state-of-the-art scores on both the Interactive and Random splits across all eight traffic regimes using 1B post-training transitions, which is just 1% of the anchor's 100B self-play training budget. Improvements over the anchor hold across all three evaluated driving styles. CounterPlay resolves a substantial fraction of the anchor's timeout cases on BehaviorBench and achieves a balance between task completion and safety that neither continued self-play nor adopting a more aggressive driving style attains.",
+      "abstract_zh": "在高吞吐量模拟器中进行自我对抗训练能够产生具有稳健闭环性能的驾驶策略，但随着训练规模的扩大，每单位模拟的改进效果逐渐减弱。策略在早期学习处理常见情况，而后续的回合则反复遭遇未解决的失败。后训练提供了针对这些失败的机会，但现有方法主要评估在已访问状态下的替代动作或继续，尽管成功的恢复可能需要更早地改变驾驶风格。我们提出了CounterPlay，一种反事实自我对抗后训练方法，它从失败的任务回溯并在不同的驾驶风格下重试这些任务。CounterPlay基于三个关键组件。首先，失败驱动的回溯利用策略的价值估计选择一个早期存储的状态，从该状态重试任务。其次，奖励条件化使得单一策略能够从该状态重试任务，使用从谨慎到激进的候选风格。第三，CounterPlay仅在相对于事实分支没有其他车辆发生新的或早期的碰撞或越界事件时，才保留完成任务的重试。通过新的随机性验证的重试随后被提炼到策略中以供其部署条件下使用。在BehaviorBench上，CounterPlay在所有八种交通模式下，使用10亿次后训练过渡，达到了互动和随机分割的最先进分数，这仅占锚点1000亿自我对抗训练预算的1%。在评估的三种驾驶风格中，CounterPlay的改进在所有情况下均保持有效。CounterPlay解决了BehaviorBench上锚点大量超时案例，并在任务完成与安全之间实现了平衡，这一平衡是继续自我对抗训练或采用更激进的驾驶风格所无法达到的。",
+      "authors": [
+        "Jiarong Wei",
+        "Yin Wu",
+        "Runkai He",
+        "Abhinav Valada"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21617",
+      "tags": [
+        "预测/规划",
+        "安全/异常",
+        "仿真/数据"
+      ],
+      "title": "CounterPlay: Counterfactual Post-Training for Self-Play Driving Policies",
+      "title_zh": "CounterPlay：自我对抗驾驶策略的反事实后训练",
+      "url": "/daily/2026-09-21/#paper-2609-21617"
+    },
+    {
+      "abstract": "Artificial Intelligence (AI) is becoming a fundamental design principle of future AI-native communication networks, enabling autonomous resource management, adaptive control, and zero-touch network operation. While current AI-native architectures increasingly embed intelligence across network functions, they provide little guidance on how optimisation knowledge should be systematically generated, transferred, and exploited by AI models. This paper argues that the Learning-to-Optimize (L2O) represents the missing architectural layer between optimisation and AI-native intelligence. Rather than viewing optimisation merely as an online decision engine, the proposed paradigm redefines optimisation algorithms as offline knowledge generators that produce high-quality supervisory information for neural surrogate models. The resulting models inherit optimisation expertise while enabling low-latency runtime inference suitable for dynamic network environments. A generic four-stage L2O workflow is introduced, comprising optimisation, knowledge generation, surrogate learning, and runtime inference. Unlike existing Learning-to-Optimize approaches, which primarily focus on algorithm acceleration, the proposed framework establishes L2O as an architectural abstraction applicable across heterogeneous communication and computing systems. The proposed paradigm is illustrated by an NR-V2X relay-selection problem, in which optimisation-generated solutions from a Mixed-Integer Linear Programming (MILP) solver are used to train a Graph Neural Network that can reproduce near-optimal decisions in real time. The presented perspective positions Learning-to-Optimize as a key architectural enabler for future AI-native networks.",
+      "abstract_zh": "人工智能（AI）正成为未来人工智能原生通信网络的基本设计原则，使得自主资源管理、自适应控制和零接触网络操作成为可能。尽管当前的人工智能原生架构在网络功能中越来越多地嵌入智能，但它们对如何系统性地生成、转移和利用优化知识提供的指导仍然有限。本文认为，学习优化（Learning-to-Optimize, L2O）代表了优化与人工智能原生智能之间缺失的架构层。所提出的范式将优化算法重新定义为离线知识生成器，而不仅仅是在线决策引擎，这些生成器为神经代理模型提供高质量的监督信息。由此产生的模型继承了优化专业知识，同时实现了适合动态网络环境的低延迟运行推理。本文介绍了一个通用的四阶段L2O工作流程，包括优化、知识生成、代理学习和运行时推理。与现有的学习优化方法主要关注算法加速不同，所提出的框架将L2O确立为适用于异构通信和计算系统的架构抽象。通过一个NR-V2X中继选择问题来说明所提出的范式，其中来自混合整数线性规划（Mixed-Integer Linear Programming, MILP）求解器生成的优化解决方案用于训练图神经网络，以实时再现近乎最优的决策。所呈现的视角将学习优化定位为未来人工智能原生网络的关键架构推动者。",
+      "authors": [
+        "Giambattista Amati",
+        "Federica Mangiatordi",
+        "Pierpaolo Salvo",
+        "Emiliano Pallotti",
+        "Simone Angelini"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21519",
+      "tags": [
+        "地图/定位",
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "Learning-to-Optimize as the Missing Architectural Layer of AI-Native Networks",
+      "title_zh": "学习优化作为人工智能原生网络缺失的架构层",
+      "url": "/daily/2026-09-21/#paper-2609-21519"
+    },
+    {
+      "abstract": "Multimodal trajectory prediction improves behavioral coverage in end-to-end autonomous driving, but existing methods remain limited by sparse scene representations. Incomplete evidence leads to low-quality candidate generation and unreliable ranking among geometrically similar trajectories. On a register-based baseline, bad and poor candidates constitute 19.74% of the candidate set, while the oracle-best candidate ranks only 33.9th on average. We propose RRDrive, which introduces risk-aware occupancy as a dense, temporally aligned, and trajectory-queryable representation. Its global structure guides high-quality multimodal generation, while candidate-conditioned risk queries support fine-grained selection. We further construct RiskOcc4D-NAVSIM with automatic risk annotations. RRDrive achieves a selected-trajectory PDMS of 0.951, representing a 1.5% relative improvement over the baseline (0.937), and improves the average candidate PDMS by 7.7%. In challenging scenes, it improves candidate PDMS by 30.2% and increases the Spearman correlation among good candidates by 0.41, from 0.26 to 0.67. To move beyond this oracle setting, we further develop an external RiskOcc predictor, a perception module that estimates risk-aware occupancy directly from sensor inputs. The competitive performance validates the representation's feasibility.",
+      "abstract_zh": "多模态轨迹预测提高了端到端自主驾驶中的行为覆盖，但现有方法仍受限于稀疏的场景表示。不完整的证据导致低质量候选生成和几何相似轨迹之间的不可靠排序。在基于寄存器的基线中，劣质和不良候选占候选集的19.74%，而最佳候选的平均排名仅为第33.9位。我们提出了RRDrive，引入风险感知占用作为一种密集、时间对齐且可查询轨迹的表示。其全局结构指导高质量的多模态生成，而候选条件下的风险查询支持细粒度选择。我们进一步构建了带有自动风险注释的RiskOcc4D-NAVSIM。RRDrive实现了0.951的选定轨迹PDMS，相较于基线（0.937）提高了1.5%的相对改进，并将平均候选PDMS提高了7.7%。在具有挑战性的场景中，它将候选PDMS提高了30.2%，并将良好候选之间的Spearman相关性从0.26提高到0.67，增加了0.41。为了超越这一最佳设置，我们进一步开发了外部RiskOcc预测器，这是一个直接从传感器输入估计风险感知占用的感知模块。竞争力的性能验证了该表示的可行性。",
+      "authors": [
+        "Jiaxing Chen",
+        "Hengduo Zou",
+        "YuKai Qin",
+        "Yiren Zhao",
+        "Lidong Yu",
+        "Bolin Gao"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21486",
+      "tags": [
+        "感知",
+        "BEV/Occupancy",
+        "预测/规划"
+      ],
+      "title": "Driving on Registers, Reasoning on Risk: Risk-Aware Occupancy for Register-Based End-to-End Autonomous Driving",
+      "title_zh": "基于寄存器的驾驶，风险推理：面向风险的寄存器基础端到端自主驾驶占用预测",
+      "url": "/daily/2026-09-21/#paper-2609-21486"
+    },
+    {
+      "abstract": "Sparse representation formulates the environment perception for the end-to-end driving system as a set of discrete elements like objects and lane lines. This formulation meets safety risks in crowded, occluded scenes dealing with unstructured obstacles, uncertain regions, and intricate interactions. In this paper, we propose a dense representation, risk-aware occupancy, to characterize planning-relevant risks in an explicit and uniform manner. It jointly encodes global scene occupancy, map-derived traffic constraints, and future dynamic agent occupancy into a unified BEV map. The unified BEV map captures the risk evidence for trajectory planning in both spatial and temporal dimensions. We design an E2E network, ROIDrive, to realize risk-aware occupancy. It predicts risk-aware occupancy with an independent branch and injects it into planning queries for safety-oriented trajectory generation. In addition, to quantify the safety problem, we introduce RiskOcc4D-nuScenes built upon nuscenes and occ3d-nuscenes. Our risk-aware occupancy yields relative open-loop collision reductions of 52.9% under the UniAD metric and 35.0% under the ST-P3 metric on nuScenes.",
+      "abstract_zh": "稀疏表示将环境感知为端到端驾驶系统中的一组离散元素，如物体和车道线。这种表述在处理拥挤、遮挡场景中的非结构化障碍物、不确定区域和复杂交互时面临安全风险。本文提出了一种密集表示，即风险感知占用，以明确和统一的方式表征与规划相关的风险。它将全球场景占用、基于地图的交通约束和未来动态代理的占用共同编码为一个统一的鸟瞰图（BEV）地图。该统一的BEV地图在空间和时间维度上捕捉了轨迹规划的风险证据。我们设计了一个端到端网络ROIDrive，以实现风险感知占用。它通过一个独立的分支预测风险感知占用，并将其注入规划查询中，以生成面向安全的轨迹。此外，为了量化安全问题，我们引入了基于nuScenes和occ3d-nuScenes构建的RiskOcc4D-nuScenes。我们的风险感知占用在nuScenes上在UniAD指标下实现了52.9%的相对开环碰撞减少，在ST-P3指标下实现了35.0%的减少。",
+      "authors": [
+        "Jiaxing Chen",
+        "Hengduo Zou",
+        "Yiren Zhao",
+        "Bolin Gao"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21470",
+      "tags": [
+        "预测/规划",
+        "BEV/Occupancy",
+        "感知"
+      ],
+      "title": "Risk-Aware Occupancy for Safety-Oriented End-to-End Autonomous Driving",
+      "title_zh": "面向安全的端到端自主驾驶的风险感知占用",
+      "url": "/daily/2026-09-21/#paper-2609-21470"
+    },
+    {
+      "abstract": "End-to-End autonomous driving models commonly predict future waypoints from sensor inputs and convert them into vehicle control commands through a downstream controller. However, conventional waypoint-based imitation learning mainly minimizes coordinate-level errors, making it difficult to capture scene-dependent path-speed changes and temporal instability across waypoint outputs. In this paper, we propose an offline teacher-signal generation and learning method for trajectory-output stabilization based on a Scene-Conditioned Interacting Multiple Model (SC-IMM) to mitigate this issue. The proposed method converts expert trajectories into path-speed states and performs IMM updates conditioned on scene cues to generate path-speed teacher labels and mode posterior probabilities. The generated signals are added to the original trajectory loss as auxiliary supervision during training, while the inference structure and waypoint controller remain unchanged. In closed-loop evaluation on 100 short routes in CARLA Town12, the proposed method improved the driving score by 28.0% and reduced Collision/km by 62.3% compared with the baseline, while also improving jerk and trajectory-variation metrics. These results demonstrate that offline teacher signals embedding scene-conditioned motion-model cues can guide trajectory-output driving models toward more stable closed-loop behavior.",
+      "abstract_zh": "端到端自主驾驶模型通常根据传感器输入预测未来的航点，并通过下游控制器将其转换为车辆控制命令。然而，传统的基于航点的模仿学习主要最小化坐标级别的误差，这使得捕捉场景依赖的路径速度变化和航点输出的时间不稳定性变得困难。本文提出了一种基于场景条件交互多模型（SC-IMM）的离线教师信号生成和学习方法，以缓解这一问题。该方法将专家轨迹转换为路径速度状态，并基于场景线索执行IMM更新，以生成路径速度教师标签和模式后验概率。生成的信号作为辅助监督添加到原始轨迹损失中进行训练，同时推理结构和航点控制器保持不变。在CARLA Town12的100条短路线的闭环评估中，所提方法相比基线提高了28.0%的驾驶评分，并将每公里碰撞率降低了62.3%，同时改善了颠簸和轨迹变化指标。这些结果表明，嵌入场景条件运动模型线索的离线教师信号能够引导轨迹输出驾驶模型朝向更稳定的闭环行为。",
+      "authors": [
+        "Siewoo Kim",
+        "Seung-Hyun Kong"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21404",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "世界模型/生成"
+      ],
+      "title": "Stabilizing Trajectory Outputs in End-to-End Autonomous Driving via SC-IMM Based Teacher Signals",
+      "title_zh": "通过基于 SC-IMM 的教师信号稳定端到端自主驾驶中的轨迹输出",
+      "url": "/daily/2026-09-21/#paper-2609-21404"
+    },
+    {
+      "abstract": "Accurate traffic forecasting requires both understanding scene dynamics and synthesizing realistic future observations. Recent diffusion-based video generation models produce visually plausible predictions but require expensive end-to-end training and often entangle scene understanding with image synthesis. In this work, we propose a decoupled forecasting framework that separates future representation learning from video generation. A frozen V-JEPA encoder first extracts predictive latent representations from the observed traffic videos, capturing the underlying scene dynamics in a semantic latent space. A lightweight latent alignment module then projects these representations into the conditioning space of a frozen Cosmos diffusion module, enabling future video synthesis without retraining the large generative model. By freezing all foundation models and training only the lightweight alignment module, the proposed framework substantially reduces optimization complexity while preserving forecasting capability. Experimental results on the AI City Challenge 2026 Track 5 benchmark demonstrate that the proposed method achieved a score of 75.1297, ranking third in the competition. These results suggest that predictive world representations learned by V-JEPA can effectively guide downstream video generation, providing a practical and efficient alternative to end-to-end diffusion-based forecasting.",
+      "abstract_zh": "准确的交通预测需要理解场景动态并合成现实的未来观察。最近的基于扩散的视频生成模型能够产生视觉上可信的预测，但需要昂贵的端到端训练，并且通常将场景理解与图像合成纠缠在一起。在本研究中，我们提出了一种解耦的预测框架，将未来表示学习与视频生成分开。一个冻结的V-JEPA编码器首先从观察到的交通视频中提取预测潜在表示，捕捉语义潜在空间中的基本场景动态。然后，一个轻量级的潜在对齐模块将这些表示投影到冻结的Cosmos扩散模块的条件空间中，使得未来视频合成无需重新训练大型生成模型。通过冻结所有基础模型，仅训练轻量级对齐模块，所提出的框架显著降低了优化复杂性，同时保持了预测能力。在AI City Challenge 2026 Track 5基准测试中的实验结果表明，所提出的方法获得了75.1297的分数，在比赛中排名第三。这些结果表明，V-JEPA学习的预测世界表示可以有效引导下游视频生成，提供了一种实用且高效的替代端到端基于扩散的预测方法。",
+      "authors": [
+        "Trinh Tra Giang Nguyen",
+        "Thanh Nguyen Vo",
+        "Nguyen Hoai Thuong Bui",
+        "Ha Duc Bui"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21379",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "仿真/数据"
+      ],
+      "title": "JEPA Guided Diffusion: Predictive Vision-Language Conditioning for Generative Traffic Forecasting",
+      "title_zh": "JEPA引导的扩散：用于生成交通预测的预测视觉-语言条件",
+      "url": "/daily/2026-09-21/#paper-2609-21379"
+    },
+    {
+      "abstract": "Vision-language models (VLMs) have demonstrated strong scene understanding and semantic judgment across diverse tasks, but their appropriate role in cooperative perception remains unclear. Directly asking a VLM to regress 3D detections is unreliable and computationally expensive, whereas using it to select the output of a single source discards useful information from other agents. We introduce VeriFuse, a bounded arbitration framework for vehicle-infrastructure cooperative 3D detection. Each agent first produces detections independently. Around each vehicle and roadside proposal, VeriFuse generates source-conditioned geometric candidates and combines the original detections, their perturbations, and cross-source hypotheses into a unified candidate pool. A frozen VLM then chooses among three admissible actions: SELECT an adequate candidate; REFINE an existing anchor when an object is supported but all candidates are geometrically inadequate; or REJECT an unsupported infrastructure-only proposal. Experiments on the DAIR-V2X dataset show that VeriFuse achieves 0.494/0.357 cooperative 3D AP50/AP70 and limits the relative vehicle-side BEV AP50 drop under a 300 ms delay to 1.7%. Overall, VeriFuse assigns the VLM a clear and constrained role in cooperative perception: semantic reasoning resolves ambiguity among cross-agent hypotheses, while deterministic constraints determine the final 3D geometry.",
+      "abstract_zh": "视觉-语言模型（VLMs）在多种任务中展示了强大的场景理解和语义判断能力，但它们在合作感知中的适当角色仍不明确。直接要求VLM回归3D检测结果既不可靠又计算成本高，而使用它选择单一来源的输出则会丢弃来自其他代理的有用信息。我们提出了VeriFuse，一种用于车辆-基础设施合作3D检测的有界仲裁框架。每个代理首先独立产生检测结果。在每个车辆和路边提案周围，VeriFuse生成源条件的几何候选，并将原始检测、其扰动和跨源假设结合成一个统一的候选池。然后，一个冻结的VLM在三个可接受的行动中进行选择：选择（SELECT）一个合适的候选；当一个物体被支持但所有候选在几何上不合适时，精炼（REFINE）一个现有的锚点；或者拒绝（REJECT）一个不支持的仅基础设施提案。对DAIR-V2X数据集的实验表明，VeriFuse在合作3D AP50/AP70上分别达到了0.494/0.357，并将相对车辆侧BEV AP50在300毫秒延迟下的下降限制在1.7%以内。总体而言，VeriFuse为VLM在合作感知中分配了一个明确且受限的角色：语义推理解决了跨代理假设之间的歧义，而确定性约束则决定了最终的3D几何形状。",
+      "authors": [
+        "Hongyi Lin",
+        "Yiyao Liu",
+        "Qi Kang",
+        "Heye Huang",
+        "Yang Liu",
+        "Haris Koutsopoulos",
+        "Jinhua Zhao"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21323",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "VLM/VLA"
+      ],
+      "title": "VeriFuse: Bounded Vision-Language Arbitration and Reason-Guided Refinement for Cooperative 3D Perception",
+      "title_zh": "VeriFuse：用于合作3D感知的有界视觉-语言仲裁与推理引导的精炼",
+      "url": "/daily/2026-09-21/#paper-2609-21323"
+    },
+    {
+      "abstract": "Spinning frequency-modulated continuous-wave (FMCW) radars have been gaining popularity in autonomous vehicle perception on account of their robustness to adverse weather conditions and 360{\\deg} field of view. Recently, scanning radars have also been shown capable of generating per-azimuth Doppler velocity. In this paper, we investigate whether these Doppler velocity measurements improve spinning radar vehicle detection and tracking performance. For detection, we estimate the ego motion and use it to undo the Doppler range distortion of the radar image before passing it to a network. For tracking, we propose a new way to estimate a per-vehicle velocity and use it as a prior for the tracker's motion model. Since Doppler-enabled spinning radar data is not available in any dataset with ground-truth dynamic object labels, our first contribution is an automatic labelling pipeline that uses an ensemble of fine-tuned off-the-shelf lidar detectors to label all 643 km of the Boreas Road Trip dataset. We then transfer detections to radar, and use over 250 km of vehicle-dense sequences as ground-truth training data. By training and evaluating two state-of-the-art detectors, we show that Doppler undistortion can improve detection accuracy by up to $2.37$ points on mean average precision. Furthermore, we show that the Doppler velocity prior can improve tracking accuracy by $13.68$ points on multi-object tracking accuracy (MOTA) versus the zero-velocity initialization baseline, while achieving $99.7\\%$ of the MOTA obtained using ground-truth velocities as the prior.",
+      "abstract_zh": "旋转频率调制连续波（FMCW）雷达因其对恶劣天气条件的鲁棒性和360°视场而在自动驾驶车辆感知中越来越受到欢迎。最近，扫描雷达也被证明能够生成每个方位角的多普勒速度。本文研究了这些多普勒速度测量是否改善了旋转雷达的车辆检测和跟踪性能。在检测方面，我们估计自我运动，并利用它来消除雷达图像的多普勒范围失真，然后将其传递给网络。在跟踪方面，我们提出了一种新的方法来估计每辆车的速度，并将其作为跟踪器运动模型的先验。由于没有任何包含真实动态物体标签的数据集提供支持多普勒的旋转雷达数据，我们的第一个贡献是一个自动标注管道，利用一组经过微调的现成激光雷达检测器对Boreas Road Trip数据集的643公里进行标注。然后，我们将检测结果转移到雷达上，并使用超过250公里的车辆密集序列作为真实训练数据。通过训练和评估两种最先进的检测器，我们展示了多普勒去失真可以将平均精度提高最多2.37个点。此外，我们还表明，与零速度初始化基线相比，多普勒速度先验可以将多目标跟踪精度（MOTA）提高13.68个点，同时达到使用真实速度作为先验时获得的99.7%的MOTA。",
+      "authors": [
+        "Eric Xie",
+        "Daniil Lisus",
+        "Timothy D. Barfoot"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.21000",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "仿真/数据"
+      ],
+      "title": "Do Spinning Radar Doppler Velocity Measurements Improve Vehicle Detection and Tracking?",
+      "title_zh": "旋转雷达多普勒速度测量是否改善了车辆检测和跟踪？",
+      "url": "/daily/2026-09-21/#paper-2609-21000"
+    },
+    {
+      "abstract": "Terrain assessment is a critical capability for off-road mobile robots, enabling safe and reliable navigation through unstructured and geometrically complex environments. Conventional geometry-based terrain assessment is fast to compute but often overly conservative in unstructured environments. We present PIVOT: a Physically Informed Vision-Language Off-Road Traversability navigation system that augments conventional geometry-based planning with vision-language-model (VLM)-based semantic reasoning for field robots. To physically ground this assessment, we quantify how strongly the VLM's predicted traversal energy cost, robot vibration, and wheel slip correlate with real-world measurements and introduce a unified traversability score that weights each modality by its prediction-measurement correlation. For efficiency, we design a two-level navigation architecture that retains geometry-based planning as the nominal mode and invokes semantic replanning only when that mode fails to find a path. Across five repeated closed-loop trials on a mixed-terrain route totalling around $6.4$ km, the proposed system increases overall autonomy from $59.6\\%$ to $97.0\\%$, reduces human interventions from $11$ to $3$, and increases the mean distance between interventions (MDBI) from $69.2$ m to $412.9$ m compared with geometry-only navigation. These results demonstrate that physically grounded VLM-based terrain assessment can substantially extend autonomous navigation beyond the limitations of geometry alone, while preserving efficient geometric planning as the nominal mode.",
+      "abstract_zh": "地形评估是越野移动机器人一项关键能力，使其能够在非结构化和几何复杂的环境中安全可靠地导航。传统的基于几何的地形评估计算速度快，但在非结构化环境中往往过于保守。我们提出了PIVOT：一种基于物理信息的视觉-语言越野可通行性导航系统，该系统通过视觉-语言模型（VLM）基础的语义推理来增强传统的基于几何的规划。为了将这种评估与实际情况相结合，我们量化了VLM预测的行驶能耗、机器人振动和轮胎打滑与实际测量之间的相关性，并引入了一个统一的可通行性评分，该评分根据每种模态的预测-测量相关性进行加权。为了提高效率，我们设计了一个两级导航架构，保留基于几何的规划作为常规模式，仅在该模式未能找到路径时调用语义重规划。在对总长约6.4公里的混合地形路线进行的五次重复闭环试验中，所提系统将整体自主性从59.6%提高到97.0%，将人工干预次数从11次减少到3次，并将干预之间的平均距离（MDBI）从69.2米增加到412.9米，相较于仅基于几何的导航。这些结果表明，基于物理信息的VLM地形评估能够显著扩展自主导航的能力，超越仅依赖几何的局限，同时保持高效的几何规划作为常规模式。",
+      "authors": [
+        "Aoran Jiao",
+        "Wenda Zhao",
+        "Hshmat Sahak",
+        "Timothy D. Barfoot"
+      ],
+      "date": "2026-09-21",
+      "id": "2609.20983",
+      "tags": [
+        "VLM/VLA",
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "PIVOT: Physically Informed Vision-Language Off-Road Traversability for Field Robot Navigation",
+      "title_zh": "PIVOT：基于物理信息的视觉-语言越野可通行性系统用于场地机器人导航",
+      "url": "/daily/2026-09-21/#paper-2609-20983"
+    },
     {
       "abstract": "As scaling pre-training data alone yields diminishing returns, post-training is becoming increasingly important across physical AI domains such as autonomous driving. End-to-end driving policies are pre-trained in open loop with behavior cloning on human demonstrations. However, compounding errors during closed-loop deployment can take the vehicle outside the training data distribution, increasing the risk of safety-critical incidents. Closed-loop post-training can mitigate this risk but requires costly simulation for sensor-based policies. We propose OPTED (on-policy fine-tuning for end-to-end driving) which decouples reinforcement learning from the post-training of the end-to-end policy: a privileged teacher is trained using RL on vectorized inputs (HD-map and bounding boxes). This teacher then provides supervision to the pre-trained student during closed-loop post-training. We apply OPTED to two camera-based models, TransFuser and VaVAM, and fine-tune them in AlpaSim, using neural reconstructions (3DGS) of real driving logs. Driving scores increase by factors of 1.6$\\times$ and 9.5$\\times$, respectively. In controlled experiments OPTED matches closed-loop performance with approximately three orders of magnitude fewer simulator interactions than direct RL post-training, while staying closer to the human prior. Project page: https://01dami23.github.io/opted/",
       "abstract_zh": "随着单纯扩大预训练数据的收益递减，后训练在物理人工智能领域（如自动驾驶）变得愈发重要。端到端驾驶策略在开放循环中通过行为克隆对人类示范进行预训练。然而，在闭环部署过程中，累积误差可能使车辆超出训练数据分布，从而增加安全关键事件的风险。闭环后训练可以缓解这一风险，但需要为基于传感器的策略进行昂贵的仿真。我们提出了OPTED（基于策略的端到端驾驶微调），该方法将强化学习与端到端策略的后训练解耦：一个特权教师使用强化学习在向量化输入（高清地图和边界框）上进行训练。该教师随后在闭环后训练期间为预训练的学生提供监督。我们将OPTED应用于两个基于摄像头的模型，TransFuser和VaVAM，并在AlpaSim中进行微调，使用真实驾驶日志的神经重建（3DGS）。驾驶评分分别提高了1.6倍和9.5倍。在受控实验中，OPTED的闭环性能与直接强化学习后训练相比，所需的仿真交互次数减少了大约三个数量级，同时更接近人类先验。项目页面：https://01dami23.github.io/opted/",

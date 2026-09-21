@@ -1,0 +1,50 @@
+{
+  "abstract": "Transformer-based models have recently achieved strong performance on 3D reconstruction from images, and recent works extend them to process video streams in an online manner for real-world deployment. However, existing methods overlook two key signals when handling long image streams: the importance of each incoming frame and the information saturation of the model's internal state. In this paper, we propose Info3R, a novel information-adaptive test-time training method for the online 3D reconstruction. We introduce an information-aware state update that modulates the state update strength based on the redundancy and informativeness of each incoming frame. To restore the state's plasticity -- its capacity to incorporate new observations -- we propose a dynamic state reset, triggered by the cumulative magnitude of state updates and the model's prediction confidence and accompanied by an anchor-to-world alignment. Our method achieves consistent improvements on camera pose estimation, video depth estimation, and 3D reconstruction, while substantially mitigating the performance degradation in the long sequence evaluation. Notably, on KITTI Odometry, our method achieves on average 1.68x lower ATE than LongStream, demonstrating its robustness on extended outdoor sequences.",
+  "abstract_zh": "基于Transformer的模型最近在从图像进行3D重建方面取得了强劲的性能，近期的研究将其扩展到以在线方式处理视频流，以便于实际应用。然而，现有方法在处理长图像流时忽视了两个关键信号：每个输入帧的重要性和模型内部状态的信息饱和度。本文提出了Info3R，一种用于在线3D重建的新颖信息自适应测试时训练方法。我们引入了一种信息感知的状态更新机制，根据每个输入帧的冗余性和信息量调节状态更新的强度。为了恢复状态的可塑性——即其整合新观察的能力——我们提出了一种动态状态重置机制，该机制由状态更新的累积幅度和模型的预测置信度触发，并伴随有锚点与世界的对齐。我们的方法在相机位姿估计、视频深度估计和3D重建方面取得了一致的改进，同时显著减轻了长序列评估中的性能下降。值得注意的是，在KITTI Odometry数据集上，我们的方法在平均上比LongStream降低了1.68倍的绝对位姿误差（ATE），展示了其在扩展户外序列上的鲁棒性。",
+  "arxiv_id": "2609.21938",
+  "arxiv_url": "https://arxiv.org/abs/2609.21938v1",
+  "authors": [
+    "Sunghyun Baek",
+    "Hanna Bae",
+    "Minchan Kwon",
+    "Junmo Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21938",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.508175+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21938v1",
+  "published_at": "2026-09-18T15:55:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21938v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction",
+  "title_zh": "Info3R：用于3D重建的信息自适应测试时训练",
+  "translation_url": "https://hjfy.top/arxiv/2609.21938"
+}

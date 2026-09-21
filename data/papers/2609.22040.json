@@ -1,0 +1,56 @@
+{
+  "abstract": "Current Vision-Language-Action (VLA) models for autonomous driving operate primarily through feedforward inference across the perception--reasoning--planning hierarchy. While modern architectures maintain temporal recurrence within the perceptual module, early perception remains blind to downstream reasoning and navigation goals, processing visual inputs agnostically without prioritizing cues informed by prior decisions. To bridge this gap, this paper introduces PRIME, a learned feedback mechanism that conditions the VLA perceptual queries on a novel Situational Memory. By aggregating latent representations of past perception, reasoning, navigation goals, and predicted behaviors across an L-step window via cross-attention, PRIME enables intent-driven perceptual attention at minimal computational cost, adding only a maximum of 29.7M parameters (0.41% of the 7.3B-parameter base model). Evaluated on the Bench2Drive closed-loop benchmark, PRIME achieves a state-of-the-art Driving Score of 82.47 (+4.73 over ORION) and a Success Rate of 60.00% (+5.38 percentage points), the highest reported Driving Score among published VLAs trained on Think2Drive demonstrations.",
+  "abstract_zh": "当前用于自主驾驶的视觉-语言-行动（VLA）模型主要通过感知-推理-规划层次结构中的前馈推理进行操作。尽管现代架构在感知模块中保持了时间递归，但早期感知仍然对下游推理和导航目标视而不见，处理视觉输入时没有优先考虑先前决策所提供的线索。为了解决这一问题，本文提出了PRIME，一种学习的反馈机制，它基于一种新颖的情境记忆对VLA感知查询进行条件化。通过跨注意力聚合过去的感知、推理、导航目标和预测行为的潜在表示，PRIME能够以最小的计算成本实现意图驱动的感知注意，仅增加最多29.7M参数（占7.3B参数基础模型的0.41%）。在Bench2Drive闭环基准测试中评估，PRIME实现了82.47的最新驾驶得分（比ORION高出4.73）和60.00%的成功率（高出5.38个百分点），这是在Think2Drive演示上训练的已发布VLA中报告的最高驾驶得分。",
+  "arxiv_id": "2609.22040",
+  "arxiv_url": "https://arxiv.org/abs/2609.22040v1",
+  "authors": [
+    "Erik Deinzer",
+    "Naya Baslan",
+    "Luca Paparusso",
+    "Narunas Vaskevicius",
+    "Peter Knott",
+    "Luigi Palmieri"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-22040",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.509063+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22040v1",
+  "published_at": "2026-09-18T17:31:34Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22040v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "PRIME: Perception Feedback with Situational Memory Embeddings in VLA Models",
+  "title_zh": "PRIME：在视觉-语言-行动（VLA）模型中结合情境记忆嵌入的感知反馈",
+  "translation_url": "https://hjfy.top/arxiv/2609.22040"
+}

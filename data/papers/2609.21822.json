@@ -1,0 +1,51 @@
+{
+  "abstract": "While object detection has advanced through improved architectures and open-vocabulary models, we provide strong evidence that benchmark quality is limited by annotation incompleteness. Across four widely used datasets (COCO, Pascal VOC, Cityscapes, KITTI), re-annotation reveals substantial increases in annotated objects (e.g., up to +60% on KITTI and +40% on COCO), driven primarily by previously unlabeled small, occluded, or densely packed instances. While some differences arise from dataset-specific annotation conventions, we consistently find that missing annotations are the main source of label errors across all datasets. To achieve high data quality, we introduce a scalable annotation pipeline that emphasizes high recall and captures ambiguity through soft labels aggregated from at least 11 annotators per object. The resulting annotations improve coverage and align well with human calibration. We show that benchmark performance is highly sensitive to annotation quality, although model rankings remain largely stable. We introduce two large-scale benchmarks: (i) an uncertainty-aware object detection benchmark, and (ii) a label error detection benchmark grounded in real label errors. We show that current detectors are strongly depended on annotation quality and are misaligned with human perception. Current label error detection methods, which have been shown to perform well on synthetic noise, struggle to achieve high recall and precision on real label errors. Our results highlight the need for future object detection benchmarks to move beyond deterministic annotations toward high-recall, uncertainty-aware evaluation that maximizes valid instances and better reflects real-world ambiguity.",
+  "abstract_zh": "尽管目标检测通过改进的架构和开放词汇模型取得了进展，但我们提供了强有力的证据表明基准测试的质量受到注释不完整性的限制。在四个广泛使用的数据集（COCO、Pascal VOC、Cityscapes、KITTI）中，重新注释揭示了标注对象的显著增加（例如，KITTI上增加了多达60%，COCO上增加了40%），主要是由于之前未标记的小型、被遮挡或密集堆叠的实例。虽然一些差异源于数据集特定的注释规范，但我们始终发现缺失的注释是所有数据集中标签错误的主要来源。为了实现高数据质量，我们引入了一种可扩展的注释流程，强调高召回率，并通过每个对象至少11名注释者聚合的软标签捕捉模糊性。最终的注释提高了覆盖率，并与人类校准良好对齐。我们展示了基准性能对注释质量高度敏感，尽管模型排名基本保持稳定。我们引入了两个大规模基准测试：（i）一个关注不确定性的目标检测基准，以及（ii）一个基于真实标签错误的标签错误检测基准。我们表明，当前的检测器在很大程度上依赖于注释质量，并与人类感知不一致。当前的标签错误检测方法在合成噪声上表现良好，但在真实标签错误上难以实现高召回率和精确度。我们的结果强调了未来目标检测基准需要超越确定性注释，朝着高召回率、不确定性意识的评估发展，以最大化有效实例并更好地反映现实世界的模糊性。",
+  "arxiv_id": "2609.21822",
+  "arxiv_url": "https://arxiv.org/abs/2609.21822v1",
+  "authors": [
+    "Sarina Penquitt",
+    "Jonathan Klees",
+    "Antonia van Betteray",
+    "Parssa Jashnieh",
+    "Peter Stehr",
+    "Matthias Rottmann",
+    "Lars Schmarje"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21822",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.502699+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21822v1",
+  "published_at": "2026-09-18T14:25:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 40
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21822v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Object Detection Benchmarks are Incomplete: The Role of Label Errors and Annotation Uncertainty",
+  "title_zh": "目标检测基准测试不完整：标签错误和注释不确定性的作用",
+  "translation_url": "https://hjfy.top/arxiv/2609.21822"
+}

@@ -1,0 +1,49 @@
+{
+  "abstract": "Accurate traffic forecasting requires both understanding scene dynamics and synthesizing realistic future observations. Recent diffusion-based video generation models produce visually plausible predictions but require expensive end-to-end training and often entangle scene understanding with image synthesis. In this work, we propose a decoupled forecasting framework that separates future representation learning from video generation. A frozen V-JEPA encoder first extracts predictive latent representations from the observed traffic videos, capturing the underlying scene dynamics in a semantic latent space. A lightweight latent alignment module then projects these representations into the conditioning space of a frozen Cosmos diffusion module, enabling future video synthesis without retraining the large generative model. By freezing all foundation models and training only the lightweight alignment module, the proposed framework substantially reduces optimization complexity while preserving forecasting capability. Experimental results on the AI City Challenge 2026 Track 5 benchmark demonstrate that the proposed method achieved a score of 75.1297, ranking third in the competition. These results suggest that predictive world representations learned by V-JEPA can effectively guide downstream video generation, providing a practical and efficient alternative to end-to-end diffusion-based forecasting.",
+  "abstract_zh": "准确的交通预测需要理解场景动态并合成现实的未来观察。最近的基于扩散的视频生成模型能够产生视觉上可信的预测，但需要昂贵的端到端训练，并且通常将场景理解与图像合成纠缠在一起。在本研究中，我们提出了一种解耦的预测框架，将未来表示学习与视频生成分开。一个冻结的V-JEPA编码器首先从观察到的交通视频中提取预测潜在表示，捕捉语义潜在空间中的基本场景动态。然后，一个轻量级的潜在对齐模块将这些表示投影到冻结的Cosmos扩散模块的条件空间中，使得未来视频合成无需重新训练大型生成模型。通过冻结所有基础模型，仅训练轻量级对齐模块，所提出的框架显著降低了优化复杂性，同时保持了预测能力。在AI City Challenge 2026 Track 5基准测试中的实验结果表明，所提出的方法获得了75.1297的分数，在比赛中排名第三。这些结果表明，V-JEPA学习的预测世界表示可以有效引导下游视频生成，提供了一种实用且高效的替代端到端基于扩散的预测方法。",
+  "arxiv_id": "2609.21379",
+  "arxiv_url": "https://arxiv.org/abs/2609.21379v1",
+  "authors": [
+    "Trinh Tra Giang Nguyen",
+    "Thanh Nguyen Vo",
+    "Nguyen Hoai Thuong Bui",
+    "Ha Duc Bui"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21379",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.467545+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21379v1",
+  "published_at": "2026-09-18T06:45:37Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21379v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "本文提出一种用于交通场景未来视频预测的解耦式生成框架。方法利用冻结的V-JEPA从观测交通视频中提取具有场景动态信息的预测潜在表示，再通过轻量级对齐模块将其映射至冻结的Cosmos扩散模型，以生成未来视频。该方案仅训练对齐模块，降低了大规模端到端扩散训练的成本，并在AI City Challenge 2026 Track 5中取得第三名。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "JEPA Guided Diffusion: Predictive Vision-Language Conditioning for Generative Traffic Forecasting",
+  "title_zh": "JEPA引导的扩散：用于生成交通预测的预测视觉-语言条件",
+  "translation_url": "https://hjfy.top/arxiv/2609.21379"
+}

@@ -1,0 +1,53 @@
+{
+  "abstract": "End-to-End autonomous driving models commonly predict future waypoints from sensor inputs and convert them into vehicle control commands through a downstream controller. However, conventional waypoint-based imitation learning mainly minimizes coordinate-level errors, making it difficult to capture scene-dependent path-speed changes and temporal instability across waypoint outputs. In this paper, we propose an offline teacher-signal generation and learning method for trajectory-output stabilization based on a Scene-Conditioned Interacting Multiple Model (SC-IMM) to mitigate this issue. The proposed method converts expert trajectories into path-speed states and performs IMM updates conditioned on scene cues to generate path-speed teacher labels and mode posterior probabilities. The generated signals are added to the original trajectory loss as auxiliary supervision during training, while the inference structure and waypoint controller remain unchanged. In closed-loop evaluation on 100 short routes in CARLA Town12, the proposed method improved the driving score by 28.0% and reduced Collision/km by 62.3% compared with the baseline, while also improving jerk and trajectory-variation metrics. These results demonstrate that offline teacher signals embedding scene-conditioned motion-model cues can guide trajectory-output driving models toward more stable closed-loop behavior.",
+  "abstract_zh": "端到端自主驾驶模型通常根据传感器输入预测未来的航点，并通过下游控制器将其转换为车辆控制命令。然而，传统的基于航点的模仿学习主要最小化坐标级别的误差，这使得捕捉场景依赖的路径速度变化和航点输出的时间不稳定性变得困难。本文提出了一种基于场景条件交互多模型（SC-IMM）的离线教师信号生成和学习方法，以缓解这一问题。该方法将专家轨迹转换为路径速度状态，并基于场景线索执行IMM更新，以生成路径速度教师标签和模式后验概率。生成的信号作为辅助监督添加到原始轨迹损失中进行训练，同时推理结构和航点控制器保持不变。在CARLA Town12的100条短路线的闭环评估中，所提方法相比基线提高了28.0%的驾驶评分，并将每公里碰撞率降低了62.3%，同时改善了颠簸和轨迹变化指标。这些结果表明，嵌入场景条件运动模型线索的离线教师信号能够引导轨迹输出驾驶模型朝向更稳定的闭环行为。",
+  "arxiv_id": "2609.21404",
+  "arxiv_url": "https://arxiv.org/abs/2609.21404v1",
+  "authors": [
+    "Siewoo Kim",
+    "Seung-Hyun Kong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21404",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.400334+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21404v1",
+  "published_at": "2026-09-18T07:17:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 73
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21404v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Stabilizing Trajectory Outputs in End-to-End Autonomous Driving via SC-IMM Based Teacher Signals",
+  "title_zh": "通过基于 SC-IMM 的教师信号稳定端到端自主驾驶中的轨迹输出",
+  "translation_url": "https://hjfy.top/arxiv/2609.21404"
+}

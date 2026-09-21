@@ -1,0 +1,59 @@
+{
+  "abstract": "Spinning frequency-modulated continuous-wave (FMCW) radars have been gaining popularity in autonomous vehicle perception on account of their robustness to adverse weather conditions and 360{\\deg} field of view. Recently, scanning radars have also been shown capable of generating per-azimuth Doppler velocity. In this paper, we investigate whether these Doppler velocity measurements improve spinning radar vehicle detection and tracking performance. For detection, we estimate the ego motion and use it to undo the Doppler range distortion of the radar image before passing it to a network. For tracking, we propose a new way to estimate a per-vehicle velocity and use it as a prior for the tracker's motion model. Since Doppler-enabled spinning radar data is not available in any dataset with ground-truth dynamic object labels, our first contribution is an automatic labelling pipeline that uses an ensemble of fine-tuned off-the-shelf lidar detectors to label all 643 km of the Boreas Road Trip dataset. We then transfer detections to radar, and use over 250 km of vehicle-dense sequences as ground-truth training data. By training and evaluating two state-of-the-art detectors, we show that Doppler undistortion can improve detection accuracy by up to $2.37$ points on mean average precision. Furthermore, we show that the Doppler velocity prior can improve tracking accuracy by $13.68$ points on multi-object tracking accuracy (MOTA) versus the zero-velocity initialization baseline, while achieving $99.7\\%$ of the MOTA obtained using ground-truth velocities as the prior.",
+  "abstract_zh": "旋转频率调制连续波（FMCW）雷达因其对恶劣天气条件的鲁棒性和360°视场而在自动驾驶车辆感知中越来越受到欢迎。最近，扫描雷达也被证明能够生成每个方位角的多普勒速度。本文研究了这些多普勒速度测量是否改善了旋转雷达的车辆检测和跟踪性能。在检测方面，我们估计自我运动，并利用它来消除雷达图像的多普勒范围失真，然后将其传递给网络。在跟踪方面，我们提出了一种新的方法来估计每辆车的速度，并将其作为跟踪器运动模型的先验。由于没有任何包含真实动态物体标签的数据集提供支持多普勒的旋转雷达数据，我们的第一个贡献是一个自动标注管道，利用一组经过微调的现成激光雷达检测器对Boreas Road Trip数据集的643公里进行标注。然后，我们将检测结果转移到雷达上，并使用超过250公里的车辆密集序列作为真实训练数据。通过训练和评估两种最先进的检测器，我们展示了多普勒去失真可以将平均精度提高最多2.37个点。此外，我们还表明，与零速度初始化基线相比，多普勒速度先验可以将多目标跟踪精度（MOTA）提高13.68个点，同时达到使用真实速度作为先验时获得的99.7%的MOTA。",
+  "arxiv_id": "2609.21000",
+  "arxiv_url": "https://arxiv.org/abs/2609.21000v1",
+  "authors": [
+    "Eric Xie",
+    "Daniil Lisus",
+    "Timothy D. Barfoot"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21000",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "eess.SP"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.360387+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21000v1",
+  "published_at": "2026-09-17T18:56:43Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "自动驾驶",
+      "autonomous",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 94
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21000v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "Do Spinning Radar Doppler Velocity Measurements Improve Vehicle Detection and Tracking?",
+  "title_zh": "旋转雷达多普勒速度测量是否改善了车辆检测和跟踪？",
+  "translation_url": "https://hjfy.top/arxiv/2609.21000"
+}

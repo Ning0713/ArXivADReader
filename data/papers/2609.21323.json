@@ -1,0 +1,61 @@
+{
+  "abstract": "Vision-language models (VLMs) have demonstrated strong scene understanding and semantic judgment across diverse tasks, but their appropriate role in cooperative perception remains unclear. Directly asking a VLM to regress 3D detections is unreliable and computationally expensive, whereas using it to select the output of a single source discards useful information from other agents. We introduce VeriFuse, a bounded arbitration framework for vehicle-infrastructure cooperative 3D detection. Each agent first produces detections independently. Around each vehicle and roadside proposal, VeriFuse generates source-conditioned geometric candidates and combines the original detections, their perturbations, and cross-source hypotheses into a unified candidate pool. A frozen VLM then chooses among three admissible actions: SELECT an adequate candidate; REFINE an existing anchor when an object is supported but all candidates are geometrically inadequate; or REJECT an unsupported infrastructure-only proposal. Experiments on the DAIR-V2X dataset show that VeriFuse achieves 0.494/0.357 cooperative 3D AP50/AP70 and limits the relative vehicle-side BEV AP50 drop under a 300 ms delay to 1.7%. Overall, VeriFuse assigns the VLM a clear and constrained role in cooperative perception: semantic reasoning resolves ambiguity among cross-agent hypotheses, while deterministic constraints determine the final 3D geometry.",
+  "abstract_zh": "视觉-语言模型（VLMs）在多种任务中展示了强大的场景理解和语义判断能力，但它们在合作感知中的适当角色仍不明确。直接要求VLM回归3D检测结果既不可靠又计算成本高，而使用它选择单一来源的输出则会丢弃来自其他代理的有用信息。我们提出了VeriFuse，一种用于车辆-基础设施合作3D检测的有界仲裁框架。每个代理首先独立产生检测结果。在每个车辆和路边提案周围，VeriFuse生成源条件的几何候选，并将原始检测、其扰动和跨源假设结合成一个统一的候选池。然后，一个冻结的VLM在三个可接受的行动中进行选择：选择（SELECT）一个合适的候选；当一个物体被支持但所有候选在几何上不合适时，精炼（REFINE）一个现有的锚点；或者拒绝（REJECT）一个不支持的仅基础设施提案。对DAIR-V2X数据集的实验表明，VeriFuse在合作3D AP50/AP70上分别达到了0.494/0.357，并将相对车辆侧BEV AP50在300毫秒延迟下的下降限制在1.7%以内。总体而言，VeriFuse为VLM在合作感知中分配了一个明确且受限的角色：语义推理解决了跨代理假设之间的歧义，而确定性约束则决定了最终的3D几何形状。",
+  "arxiv_id": "2609.21323",
+  "arxiv_url": "https://arxiv.org/abs/2609.21323v1",
+  "authors": [
+    "Hongyi Lin",
+    "Yiyao Liu",
+    "Qi Kang",
+    "Heye Huang",
+    "Yang Liu",
+    "Haris Koutsopoulos",
+    "Jinhua Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21323",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.462209+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21323v1",
+  "published_at": "2026-09-18T04:59:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "dair-v2x",
+      "vehicle",
+      "roadside",
+      "车辆",
+      "bev",
+      "3d detection",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21323v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "VLM/VLA"
+    ]
+  },
+  "title": "VeriFuse: Bounded Vision-Language Arbitration and Reason-Guided Refinement for Cooperative 3D Perception",
+  "title_zh": "VeriFuse：用于合作3D感知的有界视觉-语言仲裁与推理引导的精炼",
+  "translation_url": "https://hjfy.top/arxiv/2609.21323"
+}

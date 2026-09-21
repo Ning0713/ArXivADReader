@@ -1,0 +1,50 @@
+{
+  "abstract": "3D object detection from LiDAR point clouds faces a fundamental dilemma: voxel-based methods achieve efficiency at the cost of geometric quantization, while point-based methods preserve fidelity but suffer from prohibitive computational bottlenecks. Specifically, point-based architectures are crippled by slow downsampling strategies (e.g., FPS) and expensive dynamic neighbor queries (e.g., k-NN) coupled with costly continuous interactions. To tackle these systemic inefficiencies, we propose PointLAM, a highly efficient and powerful point-based architecture driven by two synergistic innovations. First, to resolve the downsampling bottleneck, we develop the Laplacian Point Sampler (LPS). LPS employs an implicit discrete Laplacian high-pass filter and Doubly Sorted Sampling to achieve fast, structure-aware foreground preservation. Second, to overcome local modeling latency, we design the Local Hadamard Aggregator (LHA). LHA decouples spatial indexing from feature representation using transient grids, and replaces complex continuous interactions with a Hadamard Gating mechanism for topology-aware, attentive modulation. By coupling this local gating with Bi-Directional Mamba (BDM) layers for global sequence modeling, we formulate the Local Attentive Mamba (LAM) block. Powered by this architecture, PointLAM achieves competitive performance on nuScenes and Waymo for point-based detectors. It rivals highly optimized voxel competitors while requiring a fraction of the computational footprint, demonstrating marked superiority in detecting small instances and handling extreme sparsity. Project page: https://pointlam.github.io/.",
+  "abstract_zh": "从LiDAR点云进行3D物体检测面临一个基本的困境：基于体素的方法在几何量化的代价下实现了效率，而基于点的方法则保持了保真度，但遭遇了巨大的计算瓶颈。具体而言，基于点的架构受到缓慢下采样策略（例如，FPS）和昂贵的动态邻域查询（例如，k-NN）以及高成本的连续交互的限制。为了解决这些系统性低效问题，我们提出了PointLAM，这是一种高效且强大的基于点的架构，依赖于两项协同创新。首先，为了解决下采样瓶颈，我们开发了拉普拉斯点采样器（Laplacian Point Sampler, LPS）。LPS采用隐式离散拉普拉斯高通滤波器和双重排序采样，以实现快速、结构感知的前景保留。其次，为了克服局部建模延迟，我们设计了局部哈达玛聚合器（Local Hadamard Aggregator, LHA）。LHA使用瞬态网格将空间索引与特征表示解耦，并用哈达玛门控机制替代复杂的连续交互，以实现拓扑感知和注意力调制。通过将这种局部门控与双向Mamba（Bi-Directional Mamba, BDM）层结合用于全局序列建模，我们形成了局部注意力Mamba（Local Attentive Mamba, LAM）模块。得益于这一架构，PointLAM在nuScenes和Waymo的数据集上实现了竞争力的性能，作为基于点的检测器，其性能可与高度优化的体素竞争者相媲美，同时所需的计算资源仅为其一小部分，显示出在检测小实例和处理极端稀疏方面的显著优势。项目页面：https://pointlam.github.io/",
+  "arxiv_id": "2609.21780",
+  "arxiv_url": "https://arxiv.org/abs/2609.21780v1",
+  "authors": [
+    "Xuanming Shang",
+    "Weijia Zhang",
+    "Chao Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-21#paper-2609-21780",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-21T10:20:57.500004+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.21780v1",
+  "published_at": "2026-09-18T13:53:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "3d object detection",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-09-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.21780v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "3D 检测"
+    ]
+  },
+  "title": "PointLAM: Local Attentive Mamba for Efficient Point-based 3D Object Detection",
+  "title_zh": "PointLAM：高效点云3D物体检测的局部注意力Mamba",
+  "translation_url": "https://hjfy.top/arxiv/2609.21780"
+}
