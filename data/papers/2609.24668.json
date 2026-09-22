@@ -1,0 +1,50 @@
+{
+  "abstract": "Reliable uncertainty estimation is essential for deploying object detectors in autonomous systems operating in uncertain environments. Evidential Deep Learning (EDL) provides a principled framework for uncertainty-aware classification by representing network outputs as evidence and interpreting predictions through subjective logic. However, existing evidential object detectors typically combine evidential classification with regression uncertainty models that do not share the same theoretical foundation. In this work, we propose an evidential version of YOLOv8 in which both classification and bounding-box regression are formulated within a common evidential framework. Our approach exploits YOLOv8's distribution-based bounding-box representation, allowing the evidential formulation to be applied not only to classification but also to localisation. As a result, both tasks produce belief, uncertainty, and probability estimates that can be interpreted within the Dempster--Shafer framework. Experiments on KITTI, MUSES, and nuScenes show that the resulting detector remains broadly competitive with standard YOLOv8 in terms of detection accuracy while providing a localisation uncertainty that effectively discriminates between correct and erroneous detections. Moreover, this uncertainty becomes increasingly discriminative under domain shift.",
+  "abstract_zh": "可靠的不确定性估计对于在不确定环境中部署目标检测器的自主系统至关重要。证据深度学习（Evidential Deep Learning, EDL）提供了一个有原则的框架，通过将网络输出表示为证据，并通过主观逻辑解释预测，从而实现不确定性感知的分类。然而，现有的证据目标检测器通常将证据分类与不共享相同理论基础的回归不确定性模型相结合。在本研究中，我们提出了一种YOLOv8的证据版本，其中分类和边界框回归均在一个共同的证据框架内进行公式化。我们的方法利用YOLOv8基于分布的边界框表示，使得证据公式不仅可以应用于分类，还可以应用于定位。因此，这两个任务都产生了信念、不确定性和概率估计，这些估计可以在邓普斯特-谢弗（Dempster--Shafer）框架内进行解释。在KITTI、MUSES和nuScenes上的实验表明，所得到的检测器在检测精度方面与标准YOLOv8保持广泛竞争，同时提供了有效区分正确和错误检测的定位不确定性。此外，这种不确定性在领域转移下变得越来越具辨别力。",
+  "arxiv_id": "2609.24668",
+  "arxiv_url": "https://arxiv.org/abs/2609.24668v1",
+  "authors": [
+    "Simon Barbarit-Gaboriau",
+    "Hind Laghmara",
+    "Rémi Boutteau",
+    "Samia Ainouz"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24668",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.311599+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24668v1",
+  "published_at": "2026-09-21T14:31:45Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "autonomous"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 45
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24668v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "Ev-YOLO: Uncertainty-Aware Object Detection via a Unified Evidential Formulation",
+  "title_zh": "Ev-YOLO：通过统一证据公式实现的不确定性感知目标检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.24668"
+}

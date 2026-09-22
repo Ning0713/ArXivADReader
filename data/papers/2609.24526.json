@@ -1,0 +1,48 @@
+{
+  "abstract": "Physical AI requires models to ground visual and linguistic understanding in real-world environments while accounting for environmental constraints and execution feedback. We introduce MachEmbodied-VLM (ME-VLM), a unified vision-language model with two variants, 4B and 35B-A3B, that brings together embodied cognition and multimodal agent capabilities. Our work emphasizes physical perception and spatiotemporal reasoning, together with planning, interaction, and outcome assessment in both digital and physical environments. We construct training data spanning embodied and multimodal agent tasks, including execution observations and feedback to support outcome assessment and decision refinement. The training pipeline comprises embodied capability injection, separate reinforcement learning of embodied and multimodal-agent experts, and multi-teacher on-policy distillation that consolidates their complementary capabilities into a single model. Experiments show competitive performance on both embodied and agent benchmarks, as well as on autonomous-driving and embodied-navigation tasks. For edge deployment, visual token compression, W4A8 quantization, and hardware--software co-optimization enable on-device inference of the 4B variant on the M100, reducing prefill latency from 400 ms to 188 ms. Project Page: https://machembodied.com/ME-Brain/ME-VLM.html Code Repository: https://github.com/MachEmbodied/ME-VLM",
+  "abstract_zh": "物理人工智能要求模型在真实世界环境中将视觉和语言理解与环境约束和执行反馈相结合。我们介绍了MachEmbodied-VLM（ME-VLM），这是一种统一的视觉-语言模型，具有两个变体，4B和35B-A3B，旨在结合具身认知和多模态智能体能力。我们的工作强调物理感知和时空推理，以及在数字和物理环境中的规划、互动和结果评估。我们构建了涵盖具身和多模态智能体任务的训练数据，包括执行观察和反馈，以支持结果评估和决策优化。训练流程包括具身能力注入、具身和多模态智能体专家的独立强化学习，以及将其互补能力整合到单一模型中的多教师在线蒸馏。实验结果表明，在具身和智能体基准测试，以及自主驾驶和具身导航任务上表现出竞争力。为了边缘部署，视觉标记压缩、W4A8量化和硬件-软件协同优化使得4B变体能够在M100设备上进行推理，将预填充延迟从400毫秒减少到188毫秒。项目页面：https://machembodied.com/ME-Brain/ME-VLM.html 代码库：https://github.com/MachEmbodied/ME-VLM",
+  "arxiv_id": "2609.24526",
+  "arxiv_url": "https://arxiv.org/abs/2609.24526v1",
+  "authors": [
+    "Foundation Model",
+    "Li Auto Inc"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24526",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.301761+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24526v1",
+  "published_at": "2026-09-21T12:59:59Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24526v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文提出统一视觉语言模型ME-VLM，通过具身能力注入、专家强化学习和多教师在线蒸馏，融合视觉语言理解、时空推理、规划、交互和结果反馈能力。模型在包括自主驾驶在内的具身任务上进行评测，并针对端侧部署采用视觉标记压缩、W4A8量化及软硬件协同优化。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "端到端驾驶",
+      "预测/规划"
+    ]
+  },
+  "title": "ME-VLM:A Unified VLM for Embodied Cognition and Agent Coordination",
+  "title_zh": "ME-VLM：一种统一的用于具身认知和智能体协调的视觉语言模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.24526"
+}

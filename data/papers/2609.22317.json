@@ -1,0 +1,57 @@
+{
+  "abstract": "World models support autonomous driving by predicting the scene evolution associated with candidate trajectories. Driving dynamics differ in predictability, motivating a distinction between regular evolution and event-induced deviations that call for selective correction. We propose EditWM, a world model that decomposes future prediction into normal evolution and event-driven incremental correction in compact visual feature space. A trajectory-conditioned normal predictor provides the base forecast and is then frozen for correction learning. A correction decoder compares this forecast with observation history and planned actions, producing a bounded feature update whose contribution is regulated by a learned gate. The corrected future features condition trajectory scoring through candidate-specific cross-attention, linking world modeling to plan selection. At inference, EditWM uses only past and current observations, ego state, and candidate trajectories. Across all 12,146 NAVSIM navtest scenes, expert-trajectory-conditioned evaluation shows a 5.35\\% reduction in future-feature MSE over Normal, with improvements in 83.54\\% of scenes. The system achieves 91.05 EPDMS on a 100-point scale using the official EPDMS evaluator. These results demonstrate improved future-feature prediction and competitive trajectory selection when corrected future representations are integrated into planning.",
+  "abstract_zh": "世界模型通过预测与候选轨迹相关的场景演变来支持自主驾驶。驾驶动态在可预测性上存在差异，这促使我们区分常规演变和事件引发的偏差，后者需要选择性修正。我们提出了EditWM，这是一种世界模型，它将未来预测分解为正常演变和事件驱动的增量修正，使用紧凑的视觉特征空间。一个基于轨迹的正常预测器提供基础预测，并在修正学习中被冻结。修正解码器将该预测与观察历史和计划动作进行比较，生成一个有界特征更新，其贡献由学习的门控机制调节。修正后的未来特征通过候选特定的交叉注意力来条件化轨迹评分，将世界建模与计划选择联系起来。在推理时，EditWM仅使用过去和当前的观察、主体状态以及候选轨迹。在所有12,146个NAVSIM导航测试场景中，基于专家轨迹的评估显示，与正常模型相比，未来特征均方误差（MSE）减少了5.35%，在83.54%的场景中有所改善。该系统在100分的评分标准下使用官方EPDMS评估器达到了91.05的EPDMS。这些结果表明，当修正后的未来表示被整合到规划中时，未来特征预测得到了改善，并且轨迹选择具有竞争力。",
+  "arxiv_id": "2609.22317",
+  "arxiv_url": "https://arxiv.org/abs/2609.22317v1",
+  "authors": [
+    "Junjie Yang",
+    "Qingwei Zeng",
+    "Youyou Li",
+    "Zicheng Ding",
+    "Ziyi Shi",
+    "Shuqi Shen",
+    "Hongliang Lu",
+    "Hai Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22317",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.028318+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22317v1",
+  "published_at": "2026-09-15T14:47:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22317v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "EditWM: Event-Decomposed World Modeling with Incremental Correction for End-to-End Autonomous Driving",
+  "title_zh": "EditWM：基于事件分解的世界建模与增量修正用于端到端自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.22317"
+}

@@ -1,0 +1,58 @@
+{
+  "abstract": "Autonomous vehicles operating in open-world scenarios are inevitably confronted with previously unknown objects, such as exotic animals or loose cargo. The reliable detection and segmentation of these out-of-distribution (OOD) objects is therefore crucial for a safe understanding of the environment and decision-making. Most existing approaches require access to OOD training samples, retraining of the segmentation backbone, or dedicated auxiliary architectures, limiting their practical applicability. We propose a training-free method that derives dense OOD scores directly from the confidence predictions of a foundation segmentation model, without any task-specific fine-tuning or access to anomalous data. To improve the robustness of our OOD segmentation, geometric information from monocular depth estimation is incorporated into the decision process, providing complementary cues to uncertainty-based predictions. We evaluate the proposed method on the SegmentMeIfYouCan benchmark and additionally assess its performance on OOD tracking in video sequences, reflecting the temporal nature of real-world perception systems. The method performs strongly on road-centered benchmarks.",
+  "abstract_zh": "在开放世界场景中运行的自动驾驶车辆不可避免地会遇到以前未知的物体，例如异国动物或松散货物。因此，可靠地检测和分割这些分布外（OOD）物体对于安全理解环境和决策至关重要。大多数现有方法需要访问OOD训练样本、重新训练分割主干网络或专用辅助架构，这限制了它们的实际适用性。我们提出了一种无训练的方法，该方法直接从基础分割模型的置信度预测中推导出密集的OOD分数，无需任何特定任务的微调或访问异常数据。为了提高我们OOD分割的鲁棒性，我们将单目深度估计的几何信息纳入决策过程中，为基于不确定性的预测提供补充线索。我们在SegmentMeIfYouCan基准上评估了所提方法，并额外评估其在视频序列中的OOD跟踪性能，反映了现实世界感知系统的时间特性。该方法在以道路为中心的基准上表现出色。",
+  "arxiv_id": "2609.22896",
+  "arxiv_url": "https://arxiv.org/abs/2609.22896v1",
+  "authors": [
+    "Serin Varghese",
+    "Fabian Hüger",
+    "Kira Maag"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22896",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.193154+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22896v1",
+  "published_at": "2026-09-19T09:04:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 93
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22896v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "安全/异常"
+    ]
+  },
+  "title": "Combining Foundation Model Confidence and Monocular Depth for Training-Free Out-of-Distribution Segmentation",
+  "title_zh": "结合基础模型置信度和单目深度实现无训练的分布外分割",
+  "translation_url": "https://hjfy.top/arxiv/2609.22896"
+}

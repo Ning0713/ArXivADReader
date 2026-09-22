@@ -1,0 +1,55 @@
+{
+  "abstract": "Multi-agent unmanned systems are moving from isolated, ego-centric sensing toward collaborative intelligence, in which distributed agents exchange compact features to overcome a local observation trap that no single agent can escape: occlusions, finite sensor range, and environmental degradation. The field has matured across architectural, communication, embodied, resilience, and trust dimensions, yet existing surveys examine these dimensions in isolation and rarely expose their dependencies. This review offers a unified synthesis through two complementary lenses. The first is a five-dimensional taxonomy spanning collaboration stage, communication paradigm, fusion architecture, learning strategy, and application domain. The second is three cognitive synergy conditions, Semantic Disambiguation, Pragmatic Information Exchange, and Proactive Informational Foraging, that turn cognitive synergy into operational criteria. Across these lenses we survey collaboration architectures and topologies, neural-communication co-design that treats the channel as a differentiable pipeline component, embodied action-perception loops via multi-agent reinforcement learning, and resilience mechanisms for synchronization, uncertainty quantification, and label-efficient learning. We then map these advances onto four operational domains, V2X, unmanned aerial, industrial logistics, and smart cities, and onto the safety-privacy-utility triad. To counter benchmark saturation and evaluation fragmentation, we propose GCI-Bench, a five-pillar scoring protocol with a maturity model that makes the trade-offs of collaborative methods comparable across studies. A critical reflection on reproducibility, the sim-to-real gulf, and conditions under which collaboration degrades performance identifies open challenges and charts directions toward general collaborative intelligence under real-world uncertainty.",
+  "abstract_zh": "多智能体无人系统正从孤立的自我中心感知向协作智能转变，在这一过程中，分布式智能体交换紧凑特征，以克服单个智能体无法逃脱的局部观察陷阱：遮挡、有限的传感器范围和环境退化。该领域在架构、通信、体现、弹性和信任等维度上已经成熟，然而现有的调查往往孤立地考察这些维度，鲜有揭示它们之间的依赖关系。本文通过两个互补的视角提供了统一的综合。第一个视角是一个涵盖协作阶段、通信范式、融合架构、学习策略和应用领域的五维分类法。第二个视角是三个认知协同条件：语义消歧、务实信息交换和主动信息觅食，这些条件将认知协同转化为操作标准。通过这些视角，我们调查了协作架构和拓扑、将通道视为可微分管道组件的神经通信共同设计、通过多智能体强化学习实现的体现行动-感知循环，以及用于同步、不确定性量化和标签高效学习的弹性机制。随后，我们将这些进展映射到四个操作领域：车联网（V2X）、无人机、工业物流和智慧城市，以及安全-隐私-效用三元组。为了应对基准饱和和评估碎片化的问题，我们提出了GCI-Bench，一个包含五个支柱的评分协议和成熟度模型，使协作方法的权衡在各研究之间可比。对可重复性、模拟与现实之间的鸿沟以及协作性能下降的条件进行的批判性反思，识别了开放挑战，并为在现实世界不确定性下实现通用协作智能指明了方向。",
+  "arxiv_id": "2609.22967",
+  "arxiv_url": "https://arxiv.org/abs/2609.22967v1",
+  "authors": [
+    "Lei Zhang",
+    "Chun Ye",
+    "Le Yang",
+    "Zhaozhong Wang",
+    "Deng-Ping Fan",
+    "Hang Dai",
+    "Binglu Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22967",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.199264+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22967v1",
+  "published_at": "2026-09-19T11:38:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "sim-to-real",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 36
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22967v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "General Collaborative Intelligence: Architecting Cognition for Resilient Multi-Agent Ecosystems",
+  "title_zh": "通用协作智能：为弹性多智能体生态系统构建认知架构",
+  "translation_url": "https://hjfy.top/arxiv/2609.22967"
+}

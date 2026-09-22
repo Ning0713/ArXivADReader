@@ -1,0 +1,61 @@
+{
+  "abstract": "Image-to-LiDAR registration estimates the camera pose of an image with respect to a LiDAR point cloud. It has diverse applications in autonomous driving, robot navigation etc. However, state-of-the-art (SOTA) methods still 1) mostly assume same-frame inputs, struggling with the image and point cloud from distant frames; 2) rely on domain-specific training, failing to generalize to unseen scenarios. We propose ZIL, the first foundation model for zero-shot non-synchronized image-to-LiDAR registration. ZIL encodes the input image and point cloud with the Vision and Point Transformers. In addition to regressing the relative pose, ZIL also learns to predict 3D coordinates, which substantially improves the pose accuracy without additional annotations. Interestingly, naive mix-data training cannot enable zero-shot generalization, which requires normalization on both camera intrinsics and the LiDAR vertical-axis origin. Trained on 7 public datasets with 1.4M LiDAR frames, ZIL consistently and significantly outperforms previous SOTA with a single model across 5 in-domain and zero-shot benchmarks, reducing the translation and rotation errors by up to 87% and 76% (shown in Fig. 1). Code and models are available at https://github.com/ZijunLi7/ZIL.",
+  "abstract_zh": "图像与激光雷达配准估计图像相对于激光雷达点云的相机姿态。它在自动驾驶、机器人导航等领域有着广泛的应用。然而，当前的最先进方法（SOTA）仍然存在以下问题：1）大多数假设输入来自同一帧，难以处理来自不同帧的图像和点云；2）依赖于特定领域的训练，无法在未见过的场景中进行推广。我们提出了ZIL，这是首个用于零样本非同步图像与激光雷达配准的基础模型。ZIL使用视觉和点云变换器对输入图像和点云进行编码。除了回归相对姿态外，ZIL还学习预测3D坐标，这在没有额外标注的情况下显著提高了姿态精度。有趣的是，简单的混合数据训练无法实现零样本泛化，这需要对相机内参和激光雷达垂直轴原点进行归一化。在7个公共数据集上训练，包含140万帧激光雷达数据，ZIL在5个领域内和零样本基准测试中，始终显著超越之前的最先进方法，使用单一模型将平移和旋转误差分别降低了高达87%和76%（如图1所示）。代码和模型可在 https://github.com/ZijunLi7/ZIL 获取。",
+  "arxiv_id": "2609.22716",
+  "arxiv_url": "https://arxiv.org/abs/2609.22716v1",
+  "authors": [
+    "Zijun Li",
+    "Xiaotian Sun",
+    "Xuelun Shen",
+    "Yao Dai",
+    "Sheng Ao",
+    "Yangyang Shi",
+    "Jakob Engel",
+    "Zhipeng Cai",
+    "Cheng Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22716",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.185342+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22716v1",
+  "published_at": "2026-09-19T03:04:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "point cloud",
+      "点云",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22716v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "ZIL: Zero-shot Image-to-LiDAR Registration",
+  "title_zh": "ZIL：零样本图像与激光雷达配准",
+  "translation_url": "https://hjfy.top/arxiv/2609.22716"
+}

@@ -1,0 +1,53 @@
+{
+  "abstract": "We present M3GA-Wild, the first benchmark for multi-modal, multi-session ground-to-aerial place recognition in forests. M3GA-Wild unifies and extends existing forest localisation datasets, providing a holistic benchmark with synchronised RGB imagery and LiDAR from ground traversals spanning 36 km, aligned high-resolution aerial imagery and multi-altitude LiDAR covering 370 hectares, and accurate geo-referenced 6-DoF poses for precise evaluation. M3GA-Wild captures diverse forest scenes with varying viewpoints, occlusion, and environmental conditions, enabling systematic evaluation of visual, LiDAR, cross-modal, and multi-modal methods. Baseline experiments show that LiDAR-based approaches significantly outperform vision-only methods under severe viewpoint differences, while current multi-modal fusion strategies yield limited gains due to poor cross-modal alignment. By pairing aerial RGB imagery with geo-referenced aerial LiDAR, M3GA-Wild also enables evaluation of foundation models for monocular depth estimation as a cheap source of 3D geometry from forest imagery, with initial experiments revealing shortfalls of current methods. These results highlight key challenges in cross-platform localisation, including modality misalignment and severe domain gaps. M3GA-Wild establishes a new benchmark to support research in robust multi-modal localisation and long-term autonomy in unstructured natural environments. The dataset and code will be available upon acceptance.",
+  "abstract_zh": "我们提出了M3GA-Wild，这是第一个用于森林中多模态、多会话地面到空中地点识别的基准。M3GA-Wild统一并扩展了现有的森林定位数据集，提供了一个整体基准，包括来自36公里地面行走的同步RGB图像和激光雷达（LiDAR），对齐的高分辨率空中图像和覆盖370公顷的多高度LiDAR，以及用于精确评估的准确地理参考6自由度（6-DoF）姿态。M3GA-Wild捕捉了具有不同视角、遮挡和环境条件的多样森林场景，使得对视觉、LiDAR、跨模态和多模态方法的系统评估成为可能。基线实验表明，在严重的视角差异下，基于LiDAR的方法显著优于仅依赖视觉的方法，而当前的多模态融合策略由于跨模态对齐不佳而获得的提升有限。通过将空中RGB图像与地理参考的空中LiDAR配对，M3GA-Wild还使得对单目深度估计基础模型的评估成为可能，作为从森林图像中获取3D几何形状的廉价来源，初步实验揭示了当前方法的不足。这些结果突显了跨平台定位中的关键挑战，包括模态不对齐和严重的领域差距。M3GA-Wild建立了一个新的基准，以支持在非结构化自然环境中进行稳健的多模态定位和长期自主研究。数据集和代码将在接受后提供。",
+  "arxiv_id": "2609.23003",
+  "arxiv_url": "https://arxiv.org/abs/2609.23003v1",
+  "authors": [
+    "Ethan Griffiths",
+    "Maryam Haghighat",
+    "Simon Denman",
+    "Clinton Fookes",
+    "Milad Ramezani"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-23003",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.200039+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.23003v1",
+  "published_at": "2026-09-19T13:05:09Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "lidar",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.23003v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文提出M3GA-Wild森林地面到空中地点识别数据集与基准，融合地面和航空RGB、LiDAR及精确6-DoF位姿，重点研究跨视角、跨模态和跨会话定位。实验显示LiDAR在大视角差异下优势明显，而多模态融合受限于配准误差。该工作虽不直接面向道路车辆驾驶，但其多传感器定位、长期自主运行和非结构化环境感知能力可迁移至自动驾驶，尤其适用于越野或复杂自然环境中的自主导航。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "LiDAR/点云",
+      "多传感器融合"
+    ]
+  },
+  "title": "M3GA-Wild: A Large-Scale Dataset and Benchmark for Multi-Modal Multi-session Ground-to-Aerial Place Recognition in Forests",
+  "title_zh": "M3GA-Wild：一个用于森林中多模态多会话地面到空中地点识别的大规模数据集和基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.23003"
+}

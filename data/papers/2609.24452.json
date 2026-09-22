@@ -1,0 +1,59 @@
+{
+  "abstract": "Recent 4D LiDAR language models aim to reason about objects and their evolving spatial relationships. Yet, in our evaluation, always selecting the same option nearly matches the multiple-choice accuracy of two B4DL-derived configurations. We introduce LiDAR-Hallu, a geometry-referenced benchmark and diagnostic protocol with 10,000 questions across 150 nuScenes scenes. It covers object existence, ego-relative position, distance ordering, relative motion, and temporal localization, with explicit rules for selecting objects, comparing times, and determining reference answers. Our protocol combines fixed-answer and candidate-content controls, cross-scene pairs with identical prompts but opposite reference answers, and relation-specific recall. Analysis of 100,000 recorded responses reveals failures hidden by aggregate accuracy. Candidate duration alone makes temporal answers predictable without observing LiDAR. On paired questions, the models frequently give the same answer to scenes requiring opposite answers. Relation-specific analysis further shows that both configurations miss every positive lateral-motion case across all tested conditions. Temporal-shuffle contrastive decoding provides little net improvement, as repairs are largely offset by new errors and the main failures persist. These results show that evaluating spatio-temporal reasoning requires testing whether models distinguish the queried physical relationships, rather than relying on individual-answer accuracy alone. The source code, checkpoints, and data are released at https://github.com/Awesome4D/4DMLLM_Hallucination_Bench.",
+  "abstract_zh": "近期的4D LiDAR语言模型旨在推理对象及其不断变化的空间关系。然而，在我们的评估中，始终选择相同选项的准确率几乎与两个基于B4DL的配置的多项选择准确率相匹配。我们引入了LiDAR-Hallu，这是一个几何参考基准和诊断协议，包含150个nuScenes场景中的10,000个问题。该基准涵盖了对象存在、相对位置、距离排序、相对运动和时间定位，并设有明确的规则用于选择对象、比较时间和确定参考答案。我们的协议结合了固定答案和候选内容控制、具有相同提示但相反参考答案的跨场景对，以及特定关系的回忆分析。对100,000个记录响应的分析揭示了被聚合准确性掩盖的失败。仅候选持续时间就使得时间答案在不观察LiDAR的情况下变得可预测。在配对问题中，模型经常对需要相反答案的场景给出相同的答案。特定关系的分析进一步表明，这两个配置在所有测试条件下都错过了每一个正向侧向运动的案例。时间洗牌对比解码几乎没有带来净改善，因为修复大部分被新错误抵消，主要失败依然存在。这些结果表明，评估时空推理需要测试模型是否区分所查询的物理关系，而不仅仅依赖于单个答案的准确性。源代码、检查点和数据已发布在 https://github.com/Awesome4D/4DMLLM_Hallucination_Bench。",
+  "arxiv_id": "2609.24452",
+  "arxiv_url": "https://arxiv.org/abs/2609.24452v1",
+  "authors": [
+    "Runyi Yang",
+    "Murat Akkoyun",
+    "Di Wen",
+    "Ruiping Liu",
+    "Yufan Chen",
+    "Junwei Zheng",
+    "Xiaoye Wang",
+    "Kailun Yang",
+    "Danda Pani Paudel",
+    "Luc Van Gool",
+    "Kunyu Peng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24452",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.293313+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24452v1",
+  "published_at": "2026-09-21T11:59:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "lidar",
+      "诊断"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24452v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Do LiDAR Language Models Really Understand Spatio-temporal Relationships?",
+  "title_zh": "LiDAR语言模型真的理解时空关系吗？",
+  "translation_url": "https://hjfy.top/arxiv/2609.24452"
+}

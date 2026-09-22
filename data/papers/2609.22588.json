@@ -1,0 +1,50 @@
+{
+  "abstract": "Vision-language models (VLMs) perform strongly on visual question answering benchmarks, yet often make decisions that contradict visual evidence they have already identified correctly. We distinguish perceptual failure, where relevant evidence is not recognized, from process failure, where recognized evidence fails to constrain the final decision. We introduce VPAC-Bench, a benchmark spanning nine real-image process families, with each image annotated by its current activity stage and nearby stage transition. We also propose State-Relevance-Target (SRT), a family of structured process-prior interventions that requires models to connect visible evidence to the relevant process state before answering. Across multiple VLMs, process failure is widespread: models that correctly enumerate visual candidates still over-commit to a single answer in more than 95% of ambiguous cases. An explicit process-structured intervention reduces this rate to below 13% without degrading performance on unambiguous cases. However, the transfer of process priors is model-dependent, and generic SRT does not consistently outperform strong chain-of-thought baselines. When the relevant stage transition is known, boundary-aligned SRT substantially outperforms generic process prompting and all tested chain-of-thought baselines across assembly, physical state transition, navigation and traffic, and object-use affordance tasks. These results show that process priors are most useful when aligned with the scene's specific decision boundary, motivating boundary-aware prior selection for process-grounded visual reasoning.",
+  "abstract_zh": "视觉-语言模型（VLMs）在视觉问答基准测试中表现出色，但常常做出与其已正确识别的视觉证据相矛盾的决策。我们将感知失败（即未能识别相关证据）与过程失败（即已识别的证据未能约束最终决策）区分开来。我们引入了VPAC-Bench，这是一个涵盖九个真实图像处理类别的基准，每个图像都标注了其当前活动阶段和附近的阶段转换。我们还提出了状态相关目标（State-Relevance-Target, SRT），这是一系列结构化的过程先验干预，要求模型在回答之前将可见证据与相关的过程状态联系起来。在多个VLM中，过程失败普遍存在：即使模型正确列举了视觉候选项，在超过95%的模糊案例中仍然过度依赖单一答案。显式的过程结构干预将这一比例降低到13%以下，而不降低在明确案例中的表现。然而，过程先验的转移依赖于模型，通用的SRT并未始终优于强大的思维链基线。当相关的阶段转换已知时，边界对齐的SRT在装配、物理状态转换、导航与交通以及物体使用可供性任务中显著优于通用过程提示和所有测试的思维链基线。这些结果表明，当过程先验与场景的特定决策边界对齐时，其最为有效，激励了基于边界的过程选择以进行过程基础的视觉推理。",
+  "arxiv_id": "2609.22588",
+  "arxiv_url": "https://arxiv.org/abs/2609.22588v1",
+  "authors": [
+    "Yuyang Dai",
+    "Bofei Huang",
+    "Hongbo Zhang",
+    "Haoran Xie"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22588",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.180130+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22588v1",
+  "published_at": "2026-09-18T21:13:03Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22588v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文研究视觉-语言模型中的过程失败问题：模型能够识别视觉证据，却无法据此做出一致决策。作者构建VPAC-Bench并提出SRT过程先验干预，通过将视觉证据与活动阶段及��段转换关联起来，显著降低模糊场景中的错误决策。在导航与交通任务上的实验表明，边界对齐的过程先验有助于提升视觉推理可靠性。该方法对自动驾驶中的交通场景理解、决策辅助和VLM/VLA安全性具有潜在参考价值，但论文总体并非专门面向自动驾驶系统。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "Seeing is not Enough: Vision-Language Models Perceive Evidence but Fail to Act",
+  "title_zh": "视觉并不足够：视觉-语言模型感知证据但未能采取行动",
+  "translation_url": "https://hjfy.top/arxiv/2609.22588"
+}

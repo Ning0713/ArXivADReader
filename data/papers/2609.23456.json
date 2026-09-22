@@ -1,0 +1,46 @@
+{
+  "abstract": "High-precision positioning using the global navigation satellite system (GNSS) embedded in smartphones is demanded for sidewalk-level pedestrian navigation and pinpoint location-based applications. However, current smartphone positioning accuracy for pedestrians remains at the meter level. This is mainly because limitations of the compact linearly polarized (LP) antenna in smartphones increase GNSS observation noise and hinder stable carrier phase tracking. In this paper, we propose an external GNSS signal re-radiation system that boosts smartphone GNSS observation quality while still using the smartphone's built-in GNSS receiver and antenna. The system directly connects a compact active helical antenna and a thin passive patch antenna for re-radiation, and is designed to be attached directly to the smartphone. The proposed GNSS booster achieves (1) reduced thermal noise and stable signal tracking via increased received signal strength, (2) improved multipath robustness compared with a LP antenna, and (3) stabilization of antenna phase center variation. Static experiments confirm a substantial improvement in the observation quality of GNSS carrier phase measurements compared with standard smartphone positioning. Furthermore, in pedestrian experiments, the proposed booster enabled stable carrier phase integer ambiguity resolutions, achieving centimeter-level positioning using a smartphone.",
+  "abstract_zh": "在智能手机中嵌入的全球导航卫星系统（GNSS）对人行道级别的行人导航和精准位置应用的高精度定位需求日益增加。然而，目前智能手机对行人的定位精度仍停留在米级。这主要是由于智能手机中紧凑的线性极化（LP）天线的限制，增加了GNSS观测噪声，并妨碍了稳定的载波相位跟踪。本文提出了一种外部GNSS信号再辐射系统，该系统在使用智能手机内置GNSS接收器和天线的同时，提高了智能手机的GNSS观测质量。该系统直接连接一个紧凑的有源螺旋天线和一个薄型无源贴片天线进行再辐射，并设计为直接附加在智能手机上。所提出的GNSS增强器实现了（1）通过提高接收信号强度降低热噪声和稳定信号跟踪，（2）与LP天线相比提高了多径鲁棒性，以及（3）稳定天线相位中心变化。静态实验确认，与标准智能手机定位相比，GNSS载波相位测量的观测质量有了显著改善。此外，在行人实验中，所提出的增强器实现了稳定的载波相位整数模糊解，使用智能手机实现了厘米级定位。",
+  "arxiv_id": "2609.23456",
+  "arxiv_url": "https://arxiv.org/abs/2609.23456v1",
+  "authors": [
+    "Taro Suzuki"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-23456",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.086688+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.23456v1",
+  "published_at": "2026-09-20T08:33:25Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.23456v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文提出一种可附加于智能手机的GNSS信号再辐射增强器，通过有源螺旋天线和无源贴片天线提升接收信号强度、降低噪声、增强多径鲁棒性并稳定天线相位中心变化。实验表明，该系统能够改善GNSS载波相位观测质量，并在行人场景中实现稳定的整数模糊度固定和厘米级定位。该技术面向行人导航，但其高精度GNSS观测增强思路对自动驾驶车辆的定位系统具有潜在参考价值。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": []
+  },
+  "title": "Smartphone GNSS Booster: Centimeter-Level Pedestrian Positioning Using a Portable Signal Re-Radiator",
+  "title_zh": "智能手机GNSS增强器：使用便携式信号再辐射器实现厘米级行人定位",
+  "translation_url": "https://hjfy.top/arxiv/2609.23456"
+}

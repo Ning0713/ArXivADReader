@@ -1,0 +1,57 @@
+{
+  "abstract": "Pedestrian head orientation recognition plays an important role in autonomous driving by providing valuable cues for understanding pedestrian attention and anticipating potential crossing behavior. However, reliable recognition in real-world traffic scenes remains challenging because pedestrian head regions are often captured at low resolution. To address this challenge, we propose a lightweight Low-Resolution Head Orientation Convolutional Neural Network (LRHO-CNN) for pedestrian head orientation recognition. We construct a new dataset by extracting pedestrian head images from multiple public datasets and manually annotating them into eight orientation categories. The collected images are systematically preprocessed and augmented to increase data diversity and better represent variations in illumination and image quality. The experimental analysis compares LRHO-CNN with three fine-tuned baseline models, namely ResNet-18, ResNet-34, and VGG-16. The results demonstrate that LRHO-CNN achieves the highest classification accuracy among the evaluated models. LRHO-CNN is further evaluated on the JAAD and PIE datasets, demonstrating its effectiveness in recognizing pedestrian head orientation in real-world traffic scenes and providing informative head-orientation cues that can support downstream pedestrian behavior and intention prediction.",
+  "abstract_zh": "行人头部朝向识别在自动驾驶中发挥着重要作用，因为它提供了理解行人注意力和预测潜在过马路行为的宝贵线索。然而，由于行人头部区域通常在低分辨率下捕获，因此在真实交通场景中实现可靠的识别仍然具有挑战性。为了解决这一挑战，我们提出了一种轻量级的低分辨率头部朝向卷积神经网络（Low-Resolution Head Orientation Convolutional Neural Network, LRHO-CNN）用于行人头部朝向识别。我们通过从多个公共数据集中提取行人头部图像，并手动将其标注为八个朝向类别，构建了一个新的数据集。收集的图像经过系统预处理和增强，以增加数据多样性，更好地代表光照和图像质量的变化。实验分析将LRHO-CNN与三个微调的基线模型进行比较，即ResNet-18、ResNet-34和VGG-16。结果表明，LRHO-CNN在评估的模型中实现了最高的分类准确率。LRHO-CNN还在JAAD和PIE数据集上进行了进一步评估，证明其在真实交通场景中识别行人头部朝向的有效性，并提供了有助于下游行人行为和意图预测的信息性头部朝向线索。",
+  "arxiv_id": "2609.24193",
+  "arxiv_url": "https://arxiv.org/abs/2609.24193v1",
+  "authors": [
+    "Yuanzhe Li",
+    "Yidi Huang",
+    "Xiaotong Chang",
+    "Hounian Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24193",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.275143+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24193v1",
+  "published_at": "2026-09-21T07:06:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "交通",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24193v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Lightweight Pedestrian Head-Orientation Recognition Network for Safe Pedestrian-Vehicle Interaction",
+  "title_zh": "轻量级行人头部朝向识别网络用于安全的行人-车辆互动",
+  "translation_url": "https://hjfy.top/arxiv/2609.24193"
+}

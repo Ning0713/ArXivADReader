@@ -1,0 +1,62 @@
+{
+  "abstract": "The increasing reliance on mobile phones has made phone-induced pedestrian distraction increasingly prevalent. Activities such as texting, watching videos, and making phone calls have become significant contributors to traffic accidents. Reliable detection of pedestrian distraction is essential for autonomous vehicles, as it improves situational awareness and enables timely risk assessment, thereby supporting safe motion planning and vehicle control. We propose a multimodal fusion Transformer (MFT) for detecting phone-induced pedestrian distraction. MFT jointly extracts skeletal dynamics from body pose keypoints and visual appearance features from pedestrian images, effectively leveraging the complementary information provided by the two modalities. A cross-modal attention module is proposed to capture inter-modal dependencies through multi-head cross-attention, facilitating effective fusion of complementary information across the two modalities. Then, a temporal attention fusion module, implemented with a Transformer encoder, is employed to capture temporal dependencies. MFT is trained and evaluated on a manually annotated dataset comprising 287 pedestrian instances with 20,741 images. Extensive experiments demonstrate that MFT attains an overall accuracy of 95%, exceeding the performance of six baseline approaches by 6%.",
+  "abstract_zh": "对手机的日益依赖使得手机引发的行人分心现象愈加普遍。发送短信、观看视频和拨打电话等活动已成为交通事故的重要因素。可靠的行人分心检测对自动驾驶车辆至关重要，因为它提高了情境意识并能够及时评估风险，从而支持安全的运动规划和车辆控制。我们提出了一种多模态融合变换器（Multimodal Fusion Transformer, MFT）用于检测手机引发的行人分心。MFT联合提取来自身体姿态关键点的骨骼动态和来自行人图像的视觉外观特征，有效利用了两种模态提供的互补信息。我们提出了一种跨模态注意力模块，通过多头跨注意力捕捉模态间的依赖关系，促进了两种模态之间互补信息的有效融合。然后，采用实现了变换器编码器的时间注意力融合模块来捕捉时间依赖性。MFT在一个手动标注的数据集中进行了训练和评估，该数据集包含287个行人实例和20,741张图像。大量实验表明，MFT的整体准确率达到95%，比六种基线方法的表现高出6%。",
+  "arxiv_id": "2609.23507",
+  "arxiv_url": "https://arxiv.org/abs/2609.23507v1",
+  "authors": [
+    "Yuanzhe Li",
+    "Hounian Liu",
+    "Xiaotong Chang",
+    "Yidi Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-23507",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.230562+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.23507v1",
+  "published_at": "2026-09-20T09:46:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "vehicle",
+      "traffic",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "交通",
+      "行人",
+      "multimodal fusion",
+      "motion planning",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.23507v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "Detecting Phone-Induced Pedestrian Distraction via a Multimodal Fusion Transformer",
+  "title_zh": "通过多模态融合变换器检测手机引发的行人分心",
+  "translation_url": "https://hjfy.top/arxiv/2609.23507"
+}

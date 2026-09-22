@@ -1,0 +1,53 @@
+{
+  "abstract": "Feed-forward 3D Gaussian Splatting now reconstructs renderable scenes from unposed, uncalibrated images. Yet, most models supervise only photometric consistency and predict Gaussians pixel by pixel, which leaves global structure fragile and ties primitive count to image resolution and view count. To this end, GrapeSplat amalgamates multi-view cues into a voxel-aligned scene representation and decodes Gaussians directly from the learned grid, requiring no per-scene optimization or post-processing. An Atlas Encoder lifts all views into pixel-wise geometry-and-appearance features anchored at predicted 3D points. PEACH-Vox compands the unbounded scene into a bounded sparse grid through a smooth per-axis map with an exact closed-form inverse. The Sparse Decoder then consolidates the grid with sparse convolutions and decodes the full scene as multiple Gaussians per occupied cell. This amalgamated representation exploits sparse voxel occupancy, where the Gaussian count follows the occupied cells and saturates as views cover the scene, while grid resolution sets its ceiling. GrapeSplat turns unposed images into a renderable Gaussian scene in a single forward pass. Trained with 2D and 3D supervision on 8-view sequences, it generalizes zero-shot from 4 to 64 views across indoor and unbounded scenes. Code and trained weights are available at https://github.com/VAISR/GrapeSplat",
+  "abstract_zh": "前馈3D高斯点云现已能够从无姿态、未校准的图像中重建可渲染场景。然而，大多数模型仅监督光度一致性，并逐像素预测高斯，这使得全局结构脆弱，并将原始体素数量与图像分辨率和视图数量绑定在一起。为此，GrapeSplat将多视角线索融合为体素对齐的场景表示，并直接从学习到的网格中解码高斯，无需对每个场景进行优化或后处理。Atlas编码器将所有视图提升为锚定在预测3D点的逐像素几何和外观特征。PEACH-Vox通过具有精确闭式逆映射的平滑轴向映射将无界场景压缩为有界稀疏网格。稀疏解码器随后通过稀疏卷积整合网格，并将完整场景解码为每个占用单元多个高斯。这种融合表示利用了稀疏体素占用，其中高斯数量随占用单元而变化，并随着视图覆盖场景而饱和，而网格分辨率则设定了其上限。GrapeSplat将无姿态图像转化为可渲染的高斯场景，仅需一次前向传递。在对8视图序列进行2D和3D监督训练后，它能够在室内和无界场景中实现从4到64视图的零样本泛化。代码和训练权重可在 https://github.com/VAISR/GrapeSplat 获取。",
+  "arxiv_id": "2609.23182",
+  "arxiv_url": "https://arxiv.org/abs/2609.23182v1",
+  "authors": [
+    "Si-Yu Lu",
+    "Yung-Yao Chen",
+    "Yi Jan Chen",
+    "Shang-Lin Li",
+    "Ching-Chan Liao",
+    "Wen-Huang Cheng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-23182",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.210784+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.23182v1",
+  "published_at": "2026-09-19T19:11:37Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "occupancy",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.23182v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文提出GrapeSplat，一种无需相机姿态、标定或逐场景优化的前馈式3D高斯点云重建方法。模型利用Atlas编码器提取多视角几何与外观特征，通过PEACH-Vox将无界场景映射到有界稀疏体素网格，再由稀疏解码器按占用单元生成高斯，从而提升全局几何一致性并控制高斯数量。该方法在8视图监督下训练，并可从4至64个视图进行零样本泛化。虽然论文未针对自动驾驶数据或任务进行实验，但其多视角几何重建、稀疏占用建模和可渲染场景表示可作为自动驾驶环境感知与建图的基础技术。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "感知"
+    ]
+  },
+  "title": "GrapeSplat: Geometry-Grounded Reconstruction via Amalgamated Pose-Free Encoding for Feed-Forward 3D Gaussian Splatting",
+  "title_zh": "GrapeSplat：通过融合无姿态编码的几何基础重建实现前馈3D高斯点云",
+  "translation_url": "https://hjfy.top/arxiv/2609.23182"
+}

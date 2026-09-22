@@ -1,0 +1,53 @@
+{
+  "abstract": "Accurate monocular depth estimation serves as a core enabler for single camera scene understanding. However, existing self-supervised monocular depth estimation methods generally suffer from the bottleneck of inefficient cross-scale information interaction and difficulty in balancing local and global spatial modeling. In this paper, we propose CMambaDepth, a self-supervised framework that achieves efficient multi-scale feature fusion and fine-grained contextual modeling via channel-wise selective state propagation. Specifically, Bidirectional Channel Mamba (Bi-CMamba) aligns encoder features across scales and enables bidirectional information exchange among ordered scale groups. Unidirectional Channel Mamba (Uni-CMamba) progressively aggregates decoder features and retains fine-grained scale groups through a group selection mechanism for subsequent fusion. Furthermore, a Hybrid Attention Module (HAM) is introduced to combine large-kernel local context and Manhattan self-attention for complementary spatial modeling. Experimental results demonstrate that our method achieves highly competitive performance. Specifically, our model achieves an AbsRel of 0.094 and an RMSE of 4.156 on KITTI, and an AbsRel of 0.140 on DDAD. In the zero-shot cross-dataset generalization test on NYUv2, it attains an AbsRel of 0.232, outperforming the baseline RA-Depth by 7.2%.",
+  "abstract_zh": "准确的单目深度估计是单摄像头场景理解的核心推动力。然而，现有的自监督单目深度估计方法通常面临着跨尺度信息交互效率低下和局部与全局空间建模平衡困难的瓶颈。本文提出了CMambaDepth，一个自监督框架，通过通道选择性状态传播实现高效的多尺度特征融合和细粒度上下文建模。具体而言，双向通道Mamba（Bi-CMamba）在各尺度之间对齐编码器特征，并实现有序尺度组之间的双向信息交换。单向通道Mamba（Uni-CMamba）逐步聚合解码器特征，并通过组选择机制保留细粒度尺度组以便后续融合。此外，引入了混合注意力模块（HAM），结合大核局部上下文和曼哈顿自注意力进行互补空间建模。实验结果表明，我们的方法实现了高度竞争的性能。具体而言，我们的模型在KITTI数据集上达到了0.094的绝对相对误差（AbsRel）和4.156的均方根误差（RMSE），在DDAD数据集上达到了0.140的AbsRel。在NYUv2的零-shot跨数据集泛化测试中，达到了0.232的AbsRel，超越了基线RA-Depth 7.2%。",
+  "arxiv_id": "2609.24494",
+  "arxiv_url": "https://arxiv.org/abs/2609.24494v1",
+  "authors": [
+    "Xuezhi Xiang",
+    "Jiayao Liu",
+    "Heqi Xiang",
+    "Yuqi Hu",
+    "Yiming Chen",
+    "Shanjun Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24494",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.299426+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24494v1",
+  "published_at": "2026-09-21T12:31:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24494v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "CMAMBADEPTH: Self-supervised Monocular Depth Estimation with Channel Mamba and Hybrid Attention",
+  "title_zh": "CMAMBADEPTH：基于通道Mamba和混合注意力的自监督单目深度估计",
+  "translation_url": "https://hjfy.top/arxiv/2609.24494"
+}

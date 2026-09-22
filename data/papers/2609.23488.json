@@ -1,0 +1,53 @@
+{
+  "abstract": "End-to-end autonomous driving maps current observations directly to future trajectories, yet those trajectories must remain valid as the scene evolves. Future state modeling aims to address this temporal mismatch, but general representations often contain information unrelated to ego planning and affect trajectory generation only through auxiliary supervision, static conditioning, or proposal evaluation. We propose FeasibleFlow, a one-step end-to-end generative framework that jointly transports a configuration-space feasibility field and multimodal ego trajectories. Our Asymmetric Joint MeanFlow uses the pathwise Jacobian-vector product in the MeanFlow identity to incorporate field evolution into trajectory transport. Because safety feedback is sparser than progress feedback, we further introduce the Anchor-relative ranker (ARR) and Pareto-ReinFlow to balance safety and progress in candidate selection and generation, respectively. Experiments on the NAVSIM benchmark demonstrate the strong performance of FeasibleFlow and validate both the joint transport of feasibility and trajectories and the proposed safety-first mechanisms.",
+  "abstract_zh": "端到端自动驾驶将当前观察直接映射到未来轨迹，但这些轨迹必须在场景演变时保持有效。未来状态建模旨在解决这种时间不匹配，但一般表示通常包含与自我规划无关的信息，并且仅通过辅助监督、静态条件或提案评估影响轨迹生成。我们提出了FeasibleFlow，这是一种一步端到端生成框架，联合传输配置空间可行性场和多模态自我轨迹。我们的非对称联合均值流（Asymmetric Joint MeanFlow）利用均值流恒等式中的路径雅可比-向量积，将场演变纳入轨迹传输中。由于安全反馈比进展反馈稀疏，我们进一步引入了锚点相对排序器（Anchor-relative ranker, ARR）和帕累托再流（Pareto-ReinFlow），以分别平衡候选选择和生成中的安全性与进展。NAVSIM基准上的实验表明FeasibleFlow的强大性能，并验证了可行性与轨迹的联合传输以及所提出的安全优先机制。",
+  "arxiv_id": "2609.23488",
+  "arxiv_url": "https://arxiv.org/abs/2609.23488v1",
+  "authors": [
+    "Xiang Li",
+    "Bikun Wang",
+    "Qing Xu",
+    "Jianjun Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-23488",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.089724+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.23488v1",
+  "published_at": "2026-09-20T09:22:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.23488v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "安全/异常"
+    ]
+  },
+  "title": "FeasibleFlow: One-Step Joint Transport of Configuration Feasibility and Trajectories for End-to-End Driving",
+  "title_zh": "FeasibleFlow：端到端驾驶中配置可行性与轨迹的一步联合传输",
+  "translation_url": "https://hjfy.top/arxiv/2609.23488"
+}

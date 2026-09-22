@@ -1,0 +1,56 @@
+{
+  "abstract": "Latent world models learn predictive representations for autonomous driving, but the relational semantics these states preserve often remain implicit. We investigate whether traffic scene graphs can serve as privileged semantic supervision for latent world representations. Building on LAW, we construct actor-centric scene graphs from nuScenes 3D annotations, encode their serialized relational structure using a frozen text embedding model, and align the visual latent representations with this semantic target during training. We remove the supervision branch at inference, so it requires neither scene graphs nor 3D annotations and adds no test-time computation. On nuScenes, our method reduces average trajectory L2 error from 0.661 to 0.622 (5.9%) and collision rate from 0.456 to 0.217 (52.4%) relative to our retrained LAW baseline. It also outperforms an unstructured caption-style semantic target, supporting the benefit of explicit relational structure for latent world-model representation learning.",
+  "abstract_zh": "潜在世界模型为自动驾驶学习预测性表征，但这些状态所保留的关系语义通常是隐含的。我们研究交通场景图是否可以作为潜在世界表征的特权语义监督。在此基础上，我们从nuScenes的3D注释构建以行为者为中心的场景图，使用冻结的文本嵌入模型对其序列化的关系结构进行编码，并在训练过程中将视觉潜在表征与这一语义目标对齐。在推理时，我们去除了监督分支，因此不需要场景图或3D注释，并且不会增加测试时的计算负担。在nuScenes数据集上，我们的方法将平均轨迹L2误差从0.661降低到0.622（减少5.9%），将碰撞率从0.456降低到0.217（减少52.4%），相较于我们重新训练的LAW基线。它还优于无结构的标题式语义目标，支持了显式关系结构在潜在世界模型表征学习中的优势。",
+  "arxiv_id": "2609.24626",
+  "arxiv_url": "https://arxiv.org/abs/2609.24626v1",
+  "authors": [
+    "Fabian Schmidt",
+    "Markus Enzweiler",
+    "Abhinav Valada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24626",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.309287+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24626v1",
+  "published_at": "2026-09-21T14:10:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24626v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "Relationally Grounded Latent World Models for Autonomous Driving",
+  "title_zh": "基于关系的潜在世界模型在自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2609.24626"
+}

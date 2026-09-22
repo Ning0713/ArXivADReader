@@ -1,0 +1,58 @@
+{
+  "abstract": "End-to-end driving requires planning-relevant bird's-eye-view (BEV) representations, but existing pretraining approaches often rely on task annotations or dense scene reconstruction. We introduce PAVER, Planning-Aligned BEV Encoder Pretraining. From a single LiDAR sweep, PAVER constructs sparse risk and unknown targets describing occupied and unobserved evidence along rule-based ego motions. A 10K-parameter head predicts these targets from masked BEV features conditioned on the action state, directing supervision toward geometric constraints on candidate motions. Pretraining requires no driving-task annotations or dense reconstruction. Only the BEV encoder is transferred, preserving the downstream architecture and camera-only inference. On nuScenes, PAVER reduces VAD-Tiny's average collision rate from 0.51% to 0.19%, while improving planning L2, motion prediction, detection, and mapping. The selected VAD-Tiny and VAD-Base schedules use about 36% less estimated total training time than scratch training, including pretraining. On Bench2Drive Town05 Long, PAVER improves UniAD-Tiny's closed-loop Driving Score from 48.45 to 58.79. The project page is available at https://archiiive99.github.io/PAVER.",
+  "abstract_zh": "端到端驾驶需要与规划相关的鸟瞰视图（BEV）表示，但现有的预训练方法通常依赖于任务注释或密集场景重建。我们提出了PAVER，规划对齐的BEV编码器预训练。从单次激光雷达扫描中，PAVER构建稀疏的风险和未知目标，描述沿基于规则的自我运动的占用和未观察到的证据。一个拥有10K参数的头部从基于动作状态的掩蔽BEV特征中预测这些目标，将监督引导到候选运动的几何约束上。预训练不需要驾驶任务注释或密集重建。仅转移BEV编码器，保留下游架构和仅依赖摄像头的推理。在nuScenes数据集上，PAVER将VAD-Tiny的平均碰撞率从0.51%降低到0.19%，同时改善了规划L2、运动预测、检测和映射。所选的VAD-Tiny和VAD-Base训练计划的估计总训练时间比从头训练减少约36%，包括预训练。在Bench2Drive Town05 Long上，PAVER将UniAD-Tiny的闭环驾驶评分从48.45提高到58.79。项目页面可访问 https://archiiive99.github.io/PAVER。",
+  "arxiv_id": "2609.22868",
+  "arxiv_url": "https://arxiv.org/abs/2609.22868v1",
+  "authors": [
+    "Jaeha Song",
+    "Soonmin Hwang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22868",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.192333+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22868v1",
+  "published_at": "2026-09-19T08:13:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "lidar",
+      "motion prediction"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22868v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "Planning-Aligned Pretraining of BEV Representations with Sparse Action-Conditioned Targets for End-to-End Autonomous Driving",
+  "title_zh": "基于稀疏动作条件目标的鸟瞰视图（BEV）表示的规划对齐预训练用于端到端自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.22868"
+}

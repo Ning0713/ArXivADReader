@@ -1,0 +1,56 @@
+{
+  "abstract": "LiDAR point clouds acquired in underground environments exhibit severe geometric incompleteness due to occlusions and limited sensor viewpoints, making reliable point cloud completion challenging without large supervised datasets. We propose ZVeC, a zero-shot, instance-driven framework that reformulates scene-level completion as compositional object-level reconstruction. By decomposing a scene into semantic object instances, ZVeC reduces reconstruction ambiguity in cluttered environments while eliminating the need for scenario-specific training. Each segmented vehicle is completed independently using a depth- and 3D Gaussian-conditioned diffusion model that exploits generalized geometric priors before the reconstructed instances are recomposed into the original scene. To evaluate our approach, we construct a real-world dense LiDAR benchmark of underground parking environments. Experimental results demonstrate consistent improvements over representative scene-level baselines in both quantitative metrics and visual quality. The completed point cloud differs substantially from the measured input (average KL divergence ~ 2.1), yet reducing the input to only 1% of the original LiDAR measurements changes the completed reconstruction only marginally (KL divergence < 0.50). This demonstrates that ZVeC produces geometrically consistent completions even under extreme input sparsity.",
+  "abstract_zh": "在地下环境中获取的激光雷达（LiDAR）点云由于遮挡和传感器视角有限，表现出严重的几何不完整性，这使得在没有大规模监督数据集的情况下，可靠的点云补全变得具有挑战性。我们提出了ZVeC，一个零样本、实例驱动的框架，将场景级补全重新表述为组合对象级重建。通过将场景分解为语义对象实例，ZVeC减少了在杂乱环境中的重建模糊性，同时消除了对特定场景训练的需求。每个分割出的车辆都使用一个基于深度和3D高斯条件的扩散模型独立进行补全，该模型利用了广义几何先验，然后将重建的实例重新组合成原始场景。为了评估我们的方法，我们构建了一个真实世界的地下停车环境密集LiDAR基准。实验结果表明，在定量指标和视觉质量上，相较于代表性的场景级基线，我们的方法在各方面均有一致的提升。补全后的点云与测量输入之间存在显著差异（平均KL散度约为2.1），然而将输入减少至原始LiDAR测量的仅1%时，补全重建的变化仅为微小（KL散度<0.50）。这表明ZVeC即使在极端输入稀疏的情况下也能产生几何一致的补全结果。",
+  "arxiv_id": "2609.24825",
+  "arxiv_url": "https://arxiv.org/abs/2609.24825v1",
+  "authors": [
+    "Daisy Li",
+    "Kyle Gao",
+    "Quanyun Wu",
+    "Boris Jutzi",
+    "John S. Zelek",
+    "Jonathan Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24825",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.321500+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24825v1",
+  "published_at": "2026-09-21T16:13:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "parking",
+      "车辆",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 27
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24825v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "ZVeC: A Zero-Shot Framework for Instance-Level Vehicle Extraction and Generative Point Cloud Completion",
+  "title_zh": "ZVeC：一种零样本实例级车辆提取与生成点云补全框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.24825"
+}

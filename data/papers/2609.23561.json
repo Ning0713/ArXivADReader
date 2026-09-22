@@ -1,0 +1,51 @@
+{
+  "abstract": "Deploying efficient neural networks is essential in resource-constrained environments, yet compact models often sacrifice interpretability - a critical in safety-critical domains such as autonomous driving and medicine. This study investigates whether Knowledge Distillation transfers the spatial feature attribution of a large teacher network to a compact student. To assess the influence of the KD scheme on interpretability, we distill a ResNet-152 teacher into a ResNet-34 student on ImageNet-1K across five configurations by systematically varying the distillation temperature and soft-label loss weight. Models are evaluated on top-1 accuracy, along with two interpretability metrics: Relevance Mass Accuracy and Relevance Rank Accuracy. These metrics are computed via Grad-CAM heatmaps benchmarked against ground-truth object masks. Our results show that top-1 accuracy ranges from 71.6% to 74.0%. For Grad-CAM, RMA ranges from 7.7% to 9.7% and RRA from 7.3% to 10.1%; for Guided Grad-CAM, RMA ranges from 16.1% to 18.6% and RRA from 15.9% to 21.5%. Interpretability proves far more sensitive to the soft-label weight than to the temperature: keeping the student anchored to hard labels preserves both accuracy and coarse localization, whereas weighting the teacher heavily degrades both. Fine-grained attribution, however, fell below the undistilled baseline in every configuration tested, indicating that logit distillation transmits where a model attends more readily than the pixel-level structure of that attention. We evaluate 12 cross-architecture combinations of convolutional and transformer-based models, revealing that the inheritance of fine-grained spatial reasoning is fundamentally bottlenecked by the student's intrinsic structural biases. To our knowledge, this is the first application of this interpretability-aware evaluation framework - previously used for neural network pruning - to KD.",
+  "abstract_zh": "在资源受限的环境中部署高效的神经网络至关重要，但紧凑模型往往牺牲可解释性，这在自动驾驶和医学等安全关键领域尤为重要。本研究探讨知识蒸馏（Knowledge Distillation）是否能够将大型教师网络的空间特征归因转移到紧凑的学生网络上。为了评估知识蒸馏方案对可解释性的影响，我们将ResNet-152教师模型蒸馏为ResNet-34学生模型，并在ImageNet-1K上通过系统性地改变蒸馏温度和软标签损失权重进行五种配置的实验。模型在top-1准确率以及两个可解释性指标上进行评估：相关性质量准确率（Relevance Mass Accuracy, RMA）和相关性排名准确率（Relevance Rank Accuracy, RRA）。这些指标通过Grad-CAM热图与真实对象掩码进行基准测试。我们的结果显示，top-1准确率范围为71.6%到74.0%。对于Grad-CAM，RMA范围为7.7%到9.7%，RRA范围为7.3%到10.1%；对于Guided Grad-CAM，RMA范围为16.1%到18.6%，RRA范围为15.9%到21.5%。可解释性对软标签权重的敏感性远高于温度：将学生模型固定在硬标签上能够同时保持准确性和粗略定位，而对教师模型的重权重则会显著降低这两者。然而，细粒度归因在每种测试配置中均低于未蒸馏的基线，表明logit蒸馏更容易传递模型关注的区域，而非该关注的像素级结构。我们评估了12种卷积和基于变换器的模型的跨架构组合，揭示了细粒度空间推理的继承在根本上受到学生模型内在结构偏差的瓶颈。我们所知，这是首次将这种关注可解释性的评估框架应用于知识蒸馏，此框架之前用于神经网络剪枝。",
+  "arxiv_id": "2609.23561",
+  "arxiv_url": "https://arxiv.org/abs/2609.23561v1",
+  "authors": [
+    "Aleks Czufarow",
+    "Ihor Babin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-23561",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.235925+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.23561v1",
+  "published_at": "2026-09-20T11:27:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "医学"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.23561v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "Transferring Visual Explanations: How Cross-Architecture Knowledge Distillation Affects Model Interpretability",
+  "title_zh": "转移视觉解释：跨架构知识蒸馏如何影响模型可解释性",
+  "translation_url": "https://hjfy.top/arxiv/2609.23561"
+}

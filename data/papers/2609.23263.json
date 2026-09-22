@@ -1,0 +1,50 @@
+{
+  "abstract": "Temporal logic is a formal language for reasoning about system behaviors over time. Signal temporal logic (STL), in particular, has been used to encode spatio-temporal requirements for control synthesis in multi-agent systems, often under the assumption that agents are cooperative and their dynamics are known. However, real-world multi-agent applications, such as autonomous driving, typically involve stochastic and uncontrollable agents. Recent work explored robust control with worst-case or probabilistic formulations, but remains limited in that it either (1) certifies strict satisfaction of STL constraints without addressing feasibility recovery, or (2) relaxes infeasible constraints with ego-centric objectives. In this paper, we propose a model predictive control (MPC) framework that treats feasibility repair as a Pareto optimization problem to explicitly characterize tradeoffs among agent objectives. We further provide a probabilistic certificate on STL violation rate to formally quantify uncertainty under stochastic and uncontrollable agents. The proposed framework is evaluated on two autonomous driving scenarios. Results show that the framework recovers feasible control with demonstrated safe behaviors.",
+  "abstract_zh": "时序逻辑是一种用于推理系统行为随时间变化的形式语言。特别是，信号时序逻辑（STL）已被用于编码多智能体系统中控制合成的时空要求，通常假设智能体是合作的且其动态是已知的。然而，现实世界中的多智能体应用，如自动驾驶，通常涉及随机和不可控的智能体。近期的研究探讨了使用最坏情况或概率形式的鲁棒控制，但仍然存在局限性，即要么（1）证明严格满足 STL 约束而不解决可行性恢复，要么（2）以自我中心的目标放宽不可行的约束。本文提出了一种模型预测控制（MPC）框架，将可行性修复视为一个帕累托优化问题，以明确表征智能体目标之间的权衡。我们进一步提供了关于 STL 违反率的概率证明，以正式量化在随机和不可控智能体下的不确定性。所提出的框架在两个自动驾驶场景中进行了评估。结果表明，该框架能够恢复可行控制，并展示出安全行为。",
+  "arxiv_id": "2609.23263",
+  "arxiv_url": "https://arxiv.org/abs/2609.23263v1",
+  "authors": [
+    "Tianhao Wu",
+    "Yiwei Lyu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-23263",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.075821+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.23263v1",
+  "published_at": "2026-09-20T00:45:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.23263v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "协同/V2X"
+    ]
+  },
+  "title": "Scenario MPC with STL Specifications and Pareto-Based Feasibility Repair",
+  "title_zh": "具有 STL 规范和基于帕累托的可行性修复的情景模型预测控制",
+  "translation_url": "https://hjfy.top/arxiv/2609.23263"
+}

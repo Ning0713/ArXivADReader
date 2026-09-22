@@ -1,0 +1,54 @@
+{
+  "abstract": "Autonomous parking in nonconvex and narrow environments remains challenging. Although optimal-control methods can explicitly enforce vehicle dynamics and collision constraints, nonconvexity compromises solver robustness and can cause failures. Large language models (LLMs) exhibit strong semantic reasoning capabilities, but directly generating dense trajectories makes it difficult to guarantee physical feasibility. We introduce SE-LLM-OCP, a unified framework in which LLMs make high-level discrete maneuver decisions, while an optimal-control module enforces low-level vehicle dynamics and collision constraints. Online, the LLM proposes sparse maneuver plans, decomposing the parking task into a sequence of short-horizon trajectory-optimization problems. A low-level solver then sequentially solves optimal-control problems. If the solver fails, the LLM aggregates failure evidence from the solver and validation stages to guide replanning. Offline, SE-LLM-OCP automatically evolves a structured decision-making knowledge base from scratch, driven by accumulated online failures. We validate our proposed framework in simulation on a car-like vehicle model and on a differential-drive robot. Our experimental results show that SE-LLM-OCP enables safer autonomous parking in narrow scenarios and demonstrates transfer of the same maneuver representation to a different kinematic platform.",
+  "abstract_zh": "在非凸和狭窄环境中的自主停车仍然具有挑战性。尽管最优控制方法可以明确执行车辆动力学和碰撞约束，但非凸性会影响求解器的鲁棒性并可能导致失败。大型语言模型（LLMs）表现出强大的语义推理能力，但直接生成密集轨迹使得保证物理可行性变得困难。我们提出了SE-LLM-OCP，这是一个统一框架，其中LLMs做出高层次的离散操控决策，而一个最优控制模块则执行低层次的车辆动力学和碰撞约束。在在线过程中，LLM提出稀疏的操控计划，将停车任务分解为一系列短时间范围的轨迹优化问题。然后，低层求解器依次解决最优控制问题。如果求解器失败，LLM会从求解器和验证阶段聚合失败证据，以指导重新规划。在离线过程中，SE-LLM-OCP自动从零开始演化出一个结构化的决策知识库，驱动因素是累积的在线失败。我们在模拟中验证了我们提出的框架，使用了类车模型和差分驱动机器人。实验结果表明，SE-LLM-OCP能够在狭窄场景中实现更安全的自主停车，并展示了相同操控表示在不同运动平台上的迁移能力。",
+  "arxiv_id": "2609.24631",
+  "arxiv_url": "https://arxiv.org/abs/2609.24631v1",
+  "authors": [
+    "Zhengbao Yao",
+    "Yuanfu Luo",
+    "Kehan Xue"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24631",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.144345+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24631v1",
+  "published_at": "2026-09-21T14:12:27Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "car",
+      "parking",
+      "车辆",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24631v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文面向非凸、狭窄空间中的自主停车问题，提出一种LLM高层语义决策与最优控制低层轨迹优化相结合的框架。LLM不直接生成可能违反动力学约束的稠密轨迹，而是生成稀疏的离散操控序列；最优控制器负责在每个短时域内求解满足车辆动力学与碰撞约束的可行轨迹。当规划或验证失败时，系统利用失败证据反馈给LLM进行重规划，并通过在线失败经验离线构建和演化决策知识库。该方法属于自动驾驶中的运动规划与控制方向，同时涉及大语言模型辅助驾驶决策和安全约束处理。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "安全/异常"
+    ]
+  },
+  "title": "From Semantic Decisions to Feasible Trajectories: Self-Evolving LLM-Guided Optimal Control for Narrow-Space Parking",
+  "title_zh": "从语义决策到可行轨迹：自我演化的LLM引导的窄空间停车最优控制",
+  "translation_url": "https://hjfy.top/arxiv/2609.24631"
+}

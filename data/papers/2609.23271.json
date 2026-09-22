@@ -1,0 +1,48 @@
+{
+  "abstract": "Trajectory planning and control in field robotics rely on predicting how propulsion and steering affect vehicle motion when contact points undergo slip. For articulated vehicles, the point-contact kinematic model (PCK) accounts for the linkage geometry but neglects the rotational resistance distributed along the contacts. We propose a finite-support quadratic model (FSQ) for single-track, center-articulated vehicles that incorporates this resistance through a quasi-static balance of lateral slip. Our approach generalizes the standard PCK formulation by relaxing the contact-point assumption. An exact reduction of the quadratic slip cost to contact moments gives a compact closed-form solution for real-time prediction of lateral velocity and yaw rate. We evaluate the proposed method in real-world experiments across asphalt, grass, ice, and mixed routes, using more than 7 km of data. For five-second predictions, FSQ reduces the weighted median translation and yaw errors by 53.5% and 68.9%, respectively, relative to PCK.",
+  "abstract_zh": "在野外机器人领域，轨迹规划和控制依赖于预测推进和转向如何影响车辆运动，尤其是在接触点发生滑移时。对于铰接车辆，点接触运动学模型（PCK）考虑了连杆几何形状，但忽略了沿接触点分布的旋转阻力。我们提出了一种有限支撑二次模型（FSQ），用于单轨中心铰接车辆，该模型通过准静态的侧向滑移平衡引入了这种阻力。我们的方法通过放宽接触点假设，推广了标准的PCK公式。将二次滑移成本精确简化为接触力矩，提供了用于实时预测侧向速度和偏航率的紧凑封闭形式解。我们在沥青、草地、冰面和混合路线的实际实验中评估了所提方法，使用了超过7公里的数据。对于五秒的预测，FSQ相对于PCK分别减少了53.5%和68.9%的加权中位数平移和偏航误差。",
+  "arxiv_id": "2609.23271",
+  "arxiv_url": "https://arxiv.org/abs/2609.23271v1",
+  "authors": [
+    "Mohamed Dhia Ounally",
+    "Nicolas Samson",
+    "Mathis Turgeon-Roy",
+    "Veronica Vannini",
+    "Johann Laconte",
+    "François Pomerleau"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-23271",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.077422+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.23271v1",
+  "published_at": "2026-09-20T01:04:45Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.23271v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文针对存在接触滑移的单轨中心铰接车辆，提出有限支撑二次运动模型FSQ，用于更准确地预测侧向速度、偏航率及车辆轨迹。模型通过考虑接触区域内的旋转阻力，改进了传统点接触运动学模型，并以闭式形式实现实时计算。多种地面条件下的实验证明，该方法显著降低了中长期运动预测误差，可为越野自动驾驶或移动机器人的轨迹规划与控制提供更可靠的车辆运动模型。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Steering Through Contact: A Finite-Support Motion Model for Single-Track Center-Articulated Robots",
+  "title_zh": "通过接触引导：单轨中心铰接机器人有限支撑运动模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.23271"
+}

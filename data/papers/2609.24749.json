@@ -1,0 +1,59 @@
+{
+  "abstract": "Latent world models predict the consequences of actions, but accurate prediction does not guarantee that latent distance reflects which candidate will execute successfully. We identify a decision-local prediction gap: among the few futures competing for execution, a candidate predicted closer to the goal can produce a worse realized outcome than an available alternative. We introduce D-JEPA, a decision-aligned latent world model that learns decision-relevant relations among candidate futures from executed outcomes. A bounded, permutation-equivariant operator jointly reasons over goal-relative predictive features and ordinal evidence, refining pretrained predictive geometry where action choices are most consequential. Restricted predictor adaptation and a shared ordinal interface extend this alignment across complementary predictive geometries. D-JEPA further realizes the learned decision structure in JEPA-compatible future representations, enabling deployment through native latent-distance planning. Evaluations across latent control, manipulation, pretrained action-producing models, physical robots and autonomous driving demonstrate improved action selection, including 87.89% success on PushT, a 15.04-point average gain on RoboTwin, and a 17-point gain on physical robot tasks. These results establish decision-relevant relational structure as a direct bridge between predictive world modeling and effective control.",
+  "abstract_zh": "潜在世界模型预测行动的后果，但准确的预测并不保证潜在距离反映出哪个候选者能够成功执行。我们识别出一个决策局部预测差距：在为执行竞争的少数未来中，预测更接近目标的候选者可能产生比可用替代方案更糟的实际结果。我们引入了D-JEPA，一个与决策对齐的潜在世界模型，它从执行结果中学习候选未来之间与决策相关的关系。一个有界的、排列不变的算子共同推理目标相关的预测特征和序数证据，精炼预训练的预测几何，特别是在行动选择最具影响力的地方。受限的预测器适应和共享的序数接口将这种对齐扩展到互补的预测几何中。D-JEPA进一步在与JEPA兼容的未来表示中实现学习到的决策结构，从而通过原生潜在距离规划进行部署。在潜在控制、操控、预训练的行动生成模型、物理机器人和自主驾驶等方面的评估显示出改进的行动选择，包括在PushT上87.89%的成功率、在RoboTwin上15.04点的平均增益，以及在物理机器人任务上17点的增益。这些结果确立了与决策相关的关系结构作为预测世界建模与有效控制之间的直接桥梁。",
+  "arxiv_id": "2609.24749",
+  "arxiv_url": "https://arxiv.org/abs/2609.24749v1",
+  "authors": [
+    "Shuaijun Liu",
+    "Chengyu Wu",
+    "Qifu Wen",
+    "Feiyang You",
+    "Chenglong Zhang",
+    "Shuyang Hao",
+    "Xi Lin",
+    "Ningxin Su"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24749",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.150538+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24749v1",
+  "published_at": "2026-09-21T15:17:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "world model",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24749v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "D-JEPA: A Decision-Aligned Latent World Model",
+  "title_zh": "D-JEPA：一个与决策对齐的潜在世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.24749"
+}

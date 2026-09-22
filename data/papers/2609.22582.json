@@ -1,0 +1,65 @@
+{
+  "abstract": "End-to-end and vision-language-action (VLA) driving policies are compared by leaderboard rank, but a rank reports an outcome, not the behaviour behind it, so it predicts poorly how a policy will behave at a new site. On six released policies, rank on nuScenes open-loop error or on NAVSIM's leaderboard does not carry over to scenes with a pedestrian near the ego corridor at a new site. We propose a counterfactual check-up: a few hundred real frames, each edited two ways (pedestrian removed, or re-lit by a night-style perturbation), every edit verified by an independent detector, and the change in the planned trajectory read as a diagnosis rather than a score. From these edits two causal axes are read, and five exams built on them separate what a score merges: how far the policy plans to drive, whether seeing the pedestrian buys safety, whether that response scales with danger, whether the plan moves when nothing requires it, and how much an irrelevant lighting change moves it. On 246 NAVSIM near-pedestrian scenes, in the cells where the pedestrian lies on the planned path only 1.9% of responses are genuine avoidance, and under our open-loop protocol the median clearance change is at most 0.03 m and the median change in planned distance at most 0.08 m for every policy. In a pre-registered test from left- to right-hand drive, the exposure and specificity orderings, the lighting verdict and the collision outcome transfer, while point values and the hazard-sensitivity verdict do not. Read as a selection report, the profiles say which policy is safe because it plans short, which covers a human-like distance without yielding, and which is unsteady under a change that requires no reaction, and they price each verdict: most settle within a few dozen frames, hazard sensitivity needs hundreds. Code and edited frames will be released.",
+  "abstract_zh": "端到端和视觉-语言-行动（VLA）驾驶策略通过排行榜排名进行比较，但排名仅报告结果，而非背后的行为，因此在新场景中预测策略的表现较差。在六个发布的策略中，nuScenes的开放环错误排名或NAVSIM排行榜的排名在新场景中与行人靠近自我车道的场景并不一致。我们提出了一种反事实检查方法：几百帧真实画面，每帧以两种方式编辑（移除行人或通过夜间风格扰动重新照明），每次编辑都由独立检测器验证，计划轨迹的变化被视为诊断而非评分。通过这些编辑，可以提取两个因果轴，并基于这两个轴构建五个考试，区分评分所合并的内容：策略计划行驶的距离、是否看到行人能提高安全性、该反应是否随危险程度而变化、在没有任何要求时计划是否会变动，以及不相关的照明变化对其影响的程度。在246个NAVSIM近行人场景中，当行人位于计划路径上时，仅有1.9%的反应是真正的避让，而在我们的开放环协议下，所有策略的中位清除变化最多为0.03米，计划距离的中位变化最多为0.08米。在一个预注册的从左侧驾驶到右侧驾驶的测试中，曝光和特异性排序、照明判决和碰撞结果能够转移，而点值和危险敏感性判决则无法转移。作为选择报告阅读时，分析结果表明哪种策略是安全的，因为它计划的距离较短，哪种策略在不让步的情况下覆盖了人类般的距离，以及哪种策略在不需要反应的变化下表现不稳定，并对每个判决进行定价：大多数在几十帧内稳定，而危险敏感性需要数百帧。代码和编辑后的帧将会发布。",
+  "arxiv_id": "2609.22582",
+  "arxiv_url": "https://arxiv.org/abs/2609.22582v1",
+  "authors": [
+    "Ruolin Yang",
+    "Zilin Huang",
+    "Buoyue Wang",
+    "Zhengyang Wan",
+    "Yuhao Luo",
+    "Zihao Sheng",
+    "Sikai Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22582",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.179303+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22582v1",
+  "published_at": "2026-09-18T21:06:13Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "driving",
+      "pedestrian",
+      "驾驶",
+      "车道",
+      "行人",
+      "vision-language-action",
+      "diagnosis",
+      "诊断"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中",
+      "标题明确属于非道路驾驶领域",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22582v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文针对端到端和视觉-语言-行动驾驶策略在领域转移下的可靠性评估问题，提出基于行人移除和光照扰动的反事实诊断框架。该框架通过分析计划轨迹在相关与无关场景编辑下的变化，评估策略的行驶距离、行人响应、安全敏感性、无关扰动稳定性及碰撞表现。实验显示，排行榜排名难以反映跨场景行为，许多策略对计划路径上的行人缺乏真实避让反应；部分诊断结论可跨驾驶侧转移，而精确数值和危险敏感性结论稳定性较弱。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "端到端驾驶",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Beyond the Leaderboard: Counterfactual Diagnosis of End-to-End and VLA Driving Policies Under Domain Shift",
+  "title_zh": "超越排行榜：在领域转移下对端到端和视觉-语言-行动（VLA）驾驶策略的反事实诊断",
+  "translation_url": "https://hjfy.top/arxiv/2609.22582"
+}

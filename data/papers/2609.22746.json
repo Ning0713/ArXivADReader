@@ -1,0 +1,49 @@
+{
+  "abstract": "Large Language Models (LLMs) have recently been introduced into traffic signal control (TSC) as decision agents due to their strengths in human-readable reasoning generation. Yet, existing LLM TSC methods optimize only from final outcomes and fail to distinguish valid from flawed reasoning steps, causing useful or misleading steps to be jointly updated and thus impairing the model's learning of effective reasoning. To bridge this gap, we propose an LLM-based framework ProcessLight to decompose signal decisions into verifiable semantic steps. Building on ProcessLight, we further develop Step-wise Traffic Process Policy Optimization (STeP-PO), a novel reinforcement learning framework that optimizes structured reasoning processes through step-level credit assignment. Specifically, STeP-PO uses step quality scores to evaluate local reasoning quality and step importance to measure each step's influence on the final action, and then assigns step-level advantages over a semantic step tree structure. The resulting step-level advantages are propagated to reasoning tokens, enabling fine-grained policy optimization beyond outcome-only rewards. Extensive experiments over multiple real-world datasets demonstrate the superiority of our methods. Our code is available at https://github.com/wenzhaoabc/processlight.",
+  "abstract_zh": "大型语言模型（LLMs）由于其在可读性推理生成方面的优势，最近被引入到交通信号控制（TSC）中作为决策代理。然而，现有的LLM TSC方法仅从最终结果进行优化，未能区分有效推理步骤与错误推理步骤，导致有用或误导性的步骤被共同更新，从而损害了模型对有效推理的学习。为了解决这一问题，我们提出了一种基于LLM的框架ProcessLight，将信号决策分解为可验证的语义步骤。在此基础上，我们进一步开发了逐步交通过程策略优化（Step-wise Traffic Process Policy Optimization，STeP-PO），这是一种新颖的强化学习框架，通过逐步信用分配优化结构化推理过程。具体而言，STeP-PO使用步骤质量评分来评估局部推理质量，使用步骤重要性来衡量每个步骤对最终行动的影响，然后在语义步骤树结构上分配步骤级优势。最终得到的步骤级优势被传播到推理标记，从而实现超越仅基于结果奖励的细粒度策略优化。对多个真实世界数据集的广泛实验表明了我们方法的优越性。我们的代码可在 https://github.com/wenzhaoabc/processlight 获取。",
+  "arxiv_id": "2609.22746",
+  "arxiv_url": "https://arxiv.org/abs/2609.22746v1",
+  "authors": [
+    "Huaitao Zhao",
+    "Tianlong Zhou",
+    "Weijie Wang",
+    "Jiasheng Shi",
+    "Weixiong Rao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22746",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.348903+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22746v1",
+  "published_at": "2026-09-19T04:00:55Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22746v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文面向基于大型语言模型的交通信号控制，提出ProcessLight及其配套的STeP-PO强化学习方法。核心思想是将信号决策拆解为可验证的语义推理步骤，并依据每一步的质量和对最终动作的重要性进行信用分配，使模型能够针对具体推理步骤优化，而非仅根据最终控制结果更新。该研究主要属于智能交通基础设施控制，与自动驾驶中的交通环境交互、决策规划和语言模型智能体研究具有较强关联，但并不直接研究车辆感知、定位或车端自动驾驶控制。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA"
+    ]
+  },
+  "title": "ProcessLight: Process Supervision for Large Language Model Based Traffic Signal Control",
+  "title_zh": "ProcessLight：基于大型语言模型的交通信号控制过程监督",
+  "translation_url": "https://hjfy.top/arxiv/2609.22746"
+}

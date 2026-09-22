@@ -1,0 +1,57 @@
+{
+  "abstract": "Dynamic object segmentation and ego-motion estimation are closely coupled problems in autonomous driving, as accurate ego-motion estimation typically requires static scene observations, while identifying static observations requires knowledge of the ego motion. We present Radar-Dot, a radar--RGB framework that exploits radar Doppler measurements to address this coupling. Radar returns are first used to estimate ego velocity through a linear Doppler constraint, with residual-based static/dynamic segmentation and robust estimation used to reduce the influence of moving objects. The estimated motion is then combined with metric depth and dense optical flow to identify image regions whose observed motion is inconsistent with the rigid scene motion. Experiments on 10 nuScenes scenes (part of nuscenes-mini) demonstrate that the resulting geometric pipeline achieves 20.24% dynamic IoU and 33.67% F1-score over 394 frame pairs, while radar-based static-point filtering improves ego-velocity estimation compared with using all radar returns. These results demonstrate the potential of radar as a modality for jointly improving ego-motion estimation and dynamic object segmentation.",
+  "abstract_zh": "动态物体分割与自我运动估计是自动驾驶中密切相关的问题，因为准确的自我运动估计通常需要静态场景观察，而识别静态观察又需要对自我运动的了解。我们提出了Radar-Dot，一个利用雷达多普勒测量的雷达-RGB框架，以解决这一耦合问题。首先，利用雷达回波通过线性多普勒约束估计自我速度，并采用基于残差的静态/动态分割和鲁棒估计来减少移动物体的影响。然后，将估计的运动与度量深度和稠密光流结合，以识别观察到的运动与刚性场景运动不一致的图像区域。在10个nuScenes场景（nuscenes-mini的一部分）上的实验表明，所得到的几何管道在394帧对上实现了20.24%的动态IoU和33.67%的F1-score，而基于雷达的静态点过滤相比使用所有雷达回波改善了自我速度估计。这些结果展示了雷达作为一种模态在共同改善自我运动估计和动态物体分割方面的潜力。",
+  "arxiv_id": "2609.22857",
+  "arxiv_url": "https://arxiv.org/abs/2609.22857v1",
+  "authors": [
+    "Astik Srivastava",
+    "Suhani Grover",
+    "Avinash Sharma",
+    "Madhava Krishna"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22857",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.191603+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22857v1",
+  "published_at": "2026-09-19T07:54:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22857v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "Image Frame Dynamic Object Segmentation and Ego Motion Estimation using Radar Image Fusion",
+  "title_zh": "基于雷达图像融合的图像帧动态物体分割与自我运动估计",
+  "translation_url": "https://hjfy.top/arxiv/2609.22857"
+}

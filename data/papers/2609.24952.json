@@ -1,0 +1,52 @@
+{
+  "abstract": "Autonomous navigation on Mars requires vehicles to distinguish between traversable terrains across diverse and visually challenging environments. However, progress in learning-based navigation for off-world environments has been limited by the lack of large-scale datasets. Since landing in Jezero Crater, the Mars 2020 Perseverance rover has traversed terrain ranging from sandy dunes, rocky patches, and flat bedrocks. As a result, this paper presents a dataset spanning 500 sols and 45km of trajectories driven by both human operators and the onboard planner, ENav. Our dataset contains grayscale stereo image pairs, poses, accelerometer readings, rocker-bogie angles, and estimates of tilt and wheel slip. Building on this dataset, we introduce an uncertainty-aware traversability-estimation framework that learns terrain representations from multimodal driving experience. We compare our proposed method against existing approaches on the Mars 2020 dataset and show that our method achieves an AUROC of 0.874 and an F1 score of 0.758, outperforming the strongest baseline by 0.058 and 0.156, respectively, while also achieving the highest average precision and recall. Finally, we show that the visual representations can be integrated into path planners, such as ENav, on a physical rover test bed. Videos, code, and the M2020 dataset will be available at https://darren-chiu.github.io/learning-to-drive-on-mars.",
+  "abstract_zh": "在火星上的自主导航要求车辆能够在多样化且视觉上具有挑战性的环境中区分可通行地形。然而，基于学习的外星环境导航的进展受到缺乏大规模数据集的限制。自从在耶泽罗陨石坑着陆以来，火星2020探测车“毅力”已经穿越了从沙丘、岩石地带到平坦基岩的多种地形。因此，本文提出了一个涵盖500个火星日和45公里轨迹的数据集，这些轨迹由人类操作员和机载规划器ENav共同驱动。我们的数据集包含灰度立体图像对、姿态、加速度计读数、摇摆轮角度以及倾斜和轮滑的估计。基于该数据集，我们引入了一种不确定性感知的可通行性估计框架，该框架从多模态驾驶经验中学习地形表示。我们将所提出的方法与现有的火星2020数据集方法进行了比较，结果表明我们的方法达到了0.874的AUROC和0.758的F1分数，分别比最强基线高出0.058和0.156，同时还实现了最高的平均精度和召回率。最后，我们展示了视觉表示可以集成到物理探测车测试平台上的路径规划器，如ENav。视频、代码和M2020数据集将可在https://darren-chiu.github.io/learning-to-drive-on-mars获取。",
+  "arxiv_id": "2609.24952",
+  "arxiv_url": "https://arxiv.org/abs/2609.24952v1",
+  "authors": [
+    "Darren Chiu",
+    "Cole Wilson",
+    "Andrei Tumbar",
+    "Gaurav S. Sukhatme",
+    "Steven Myint"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24952",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.159521+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24952v1",
+  "published_at": "2026-09-21T17:45:18Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24952v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文面向火星探测车自主导航，构建了包含立体视觉、位姿、惯性与车辆状态信息的大规模真实行驶数据集，并提出不确定性感知的多模态地形可通行性估计方法。该方法显著优于现有基线，且可接入实体探测车的路径规划系统。虽然应用场景是外星探测而非道路汽车，但其核心问题属于自主车辆的环境感知、可通行区域判断与规划支持。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "预测/规划"
+    ]
+  },
+  "title": "Learning to Drive on Mars: Visual Multimodal Traversability Estimation for Off-World Navigation",
+  "title_zh": "在火星上学习驾驶：用于外星导航的视觉多模态可通行性估计",
+  "translation_url": "https://hjfy.top/arxiv/2609.24952"
+}

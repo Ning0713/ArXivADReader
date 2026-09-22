@@ -1,0 +1,55 @@
+{
+  "abstract": "Generative world-action models (WAMs) jointly generate future video and vehicle actions, while their action branches remain primarily optimized by expert imitation. Yet imitation provides no explicit closed-loop geometric verdict for generated trajectories, making verification important during both training and deployment. Closed-loop evaluators can check collision and drivable-area violations, but require privileged scene state unavailable at deployment. Existing approaches often close this gap by learning a verifier from sensor features. For these geometric checks, the rule itself is explicit. For example, collision is determined by whether the rolled-out ego footprint overlaps occupied vehicle space. What is unavailable at deployment is the scene state needed to apply the rule. We introduce DriveReferee, which uses a learned geometry readout to predict the scene representation from camera observations and executes the geometric safety rule directly rather than learning it. The resulting analytic referee evaluates collision and drivable-area safety from a scene state and candidate trajectory. During training, it scores self-sampled trajectories on ground-truth state and distills the resulting preferences into the WAM policy. At deployment, the same referee evaluates generated trajectories on this predicted state and selects a safer alternative when needed. The analytic referee requires no verdict-specific training, and its decisions follow an explicit geometric rule. Under matched candidates and inference budgets, it matches or outperforms all learned-verifier and heuristic baselines. Given the same predicted state and trajectory, learning the verdict provides no measurable downstream gain despite requiring tens of thousands of evaluator-labeled training examples. On the full NAVSIM navtest, DriveReferee reaches 92.02 PDMS with single-camera visual input and no external training data.",
+  "abstract_zh": "生成性世界行动模型（WAMs）共同生成未来的视频和车辆动作，而它们的动作分支主要通过专家模仿进行优化。然而，模仿并未为生成的轨迹提供明确的闭环几何裁决，因此在训练和部署过程中进行验证显得尤为重要。闭环评估器可以检查碰撞和可行驶区域的违规情况，但需要在部署时无法获得的特权场景状态。现有方法通常通过从传感器特征中学习验证器来弥补这一差距。对于这些几何检查，规则本身是明确的。例如，碰撞的判断依据是展开的自我足迹是否与占用的车辆空间重叠。在部署时缺失的是应用该规则所需的场景状态。我们引入了DriveReferee，它利用学习到的几何读出从相机观察中预测场景表示，并直接执行几何安全规则，而不是学习该规则。最终的分析性裁判从场景状态和候选轨迹中评估碰撞和可行驶区域的安全性。在训练过程中，它在真实状态上对自采样轨迹进行评分，并将结果偏好提炼到WAM策略中。在部署时，同样的裁判在这一预测状态上评估生成的轨迹，并在必要时选择更安全的替代方案。分析性裁判不需要特定裁决的训练，其决策遵循明确的几何规则。在匹配的候选者和推理预算下，它的表现与所有学习验证器和启发式基线相当或更优。在相同的预测状态和轨迹下，学习裁决并未提供可测量的下游收益，尽管需要数万个评估器标记的训练样本。在完整的NAVSIM导航测试中，DriveReferee在单摄像头视觉输入和没有外部训练数据的情况下达到了92.02 PDMS。",
+  "arxiv_id": "2609.22762",
+  "arxiv_url": "https://arxiv.org/abs/2609.22762v1",
+  "authors": [
+    "Fengcheng Yu",
+    "Dhruv Parikh",
+    "Junjie Ye",
+    "Maulik Bhatt",
+    "Thang Vu",
+    "Igor Vasiljevic",
+    "Vitor Guizilini",
+    "Yue Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-22762",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.186854+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.22762v1",
+  "published_at": "2026-09-19T04:43:06Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.22762v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "本文面向生成性世界行动模型的驾驶安全验证问题，提出DriveReferee分析式安全裁判。其核心思想是将场景状态估计与安全规则执行解耦：先从相机观测预测几何场景表示，再依据自车足迹与占用车辆空间的重叠关系以及可行驶区域约束，直接判断候选轨迹的碰撞和道路可行性。该方法在训练时利用真实状态产生安全偏好并蒸馏至策略，在部署时基于预测状态筛选更安全的生成轨迹，从而避免学习裁决规则所需的大规模标注。实验表明，该方法在多种基线中具有竞争力，并在NAVSIM测试集上取得92.02 PDMS。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "端到端驾驶",
+      "深度/几何"
+    ]
+  },
+  "title": "DriveReferee: Geometric Safety Verdicts Need Not Be Learned for Driving World-Action Models",
+  "title_zh": "DriveReferee：几何安全裁决不需要为驾驶世界行动模型学习",
+  "translation_url": "https://hjfy.top/arxiv/2609.22762"
+}

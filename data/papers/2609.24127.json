@@ -1,0 +1,55 @@
+{
+  "abstract": "Atomic activity understanding aims to recognize and localize structured traffic behaviors that jointly encode motion patterns and their grounding in road topology. Unlike conventional action recognition, atomic activities are multi-agent, multi-label, and topology-aware: multiple activities co-occur while many agents remain inactive. We introduce Action-Slot, a structured action-centric representation learning framework. Slot attention is widely used for object-centric decomposition, but its permutation-invariant design and object-level inductive bias are misaligned with atomic activity semantics. We reformulate slot learning as structured activity decomposition through three designs: (1) category-aligned action slots that anchor slots to predefined activity categories, (2) parallel spatio-temporal slot updating for holistic video-level reasoning, and (3) background and negative-slot regularization that enforces competition between foreground activities and irrelevant regions. Together these establish an activity-centric inductive bias that disentangles concurrent and asynchronous activities directly from raw video. Beyond recognition, the learned representations encode transferable spatio-temporal grounding signals. We further propose an attention-difference-based pseudo mask selection framework that suppresses false positives by measuring attention changes before and after candidate region removal, enabling weakly supervised localization without dense annotations. To support systematic evaluation, we introduce TACO, a balanced synthetic dataset with full atomic activity coverage and pixel-level annotations. Experiments on OATS, TACO, and annotated nuScenes show superior recognition, strong sim-to-real transfer, and state-of-the-art weakly supervised localization.",
+  "abstract_zh": "原子活动理解旨在识别和定位结构化的交通行为，这些行为共同编码运动模式及其在道路拓扑中的基础。与传统的动作识别不同，原子活动是多智能体、多标签且具有拓扑意识的：多个活动同时发生，而许多智能体保持不活动。我们提出了Action-Slot，一个结构化的动作中心表示学习框架。槽注意力广泛用于以对象为中心的分解，但其置换不变设计和对象级归纳偏差与原子活动语义不一致。我们通过三种设计将槽学习重新表述为结构化活动分解：（1）类别对齐的动作槽，将槽锚定到预定义的活动类别；（2）并行时空槽更新，用于整体视频级推理；（3）背景和负槽正则化，强制前景活动与无关区域之间的竞争。这些设计共同建立了一种活动中心的归纳偏差，能够直接从原始视频中解开并发和异步活动。除了识别，学习到的表示还编码可转移的时空基础信号。我们进一步提出了一种基于注意力差异的伪掩码选择框架，通过测量候选区域移除前后的注意力变化来抑制假阳性，从而实现无需密集注释的弱监督定位。为了支持系统评估，我们引入了TACO，一个具有完整原子活动覆盖和像素级注释的平衡合成数据集。在OATS、TACO和注释的nuScenes上的实验显示出优越的识别性能、强大的模拟到现实转移能力，以及最先进的弱监督定位效果。",
+  "arxiv_id": "2609.24127",
+  "arxiv_url": "https://arxiv.org/abs/2609.24127v1",
+  "authors": [
+    "Yu-Ho Chang",
+    "Chi-Hsi Kung",
+    "Yi-Hsuan Tsai",
+    "Yi-Ting Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24127",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.269863+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24127v1",
+  "published_at": "2026-09-21T05:29:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "traffic",
+      "road",
+      "交通",
+      "道路",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 44
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24127v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "地图/定位"
+    ]
+  },
+  "title": "Action-Slot: Structured Action-Centric Representation Learning for Multi-Agent Atomic Activity Understanding",
+  "title_zh": "Action-Slot：面向多智能体原子活动理解的结构化动作中心表示学习",
+  "translation_url": "https://hjfy.top/arxiv/2609.24127"
+}

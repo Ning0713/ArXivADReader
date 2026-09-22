@@ -1,0 +1,54 @@
+{
+  "abstract": "Intelligent transportation systems require Incremental Learning (IL) to continually improve their overall performance in dynamic environments. However, most edge devices lack the computational resources to support on-device IL, requiring updates to be transmitted from centralized servers. We propose using this setup to obtain dense, specialized module coverage that adapts a fixed base model to specific spatiotemporal contexts, such as parking lots, gas stations, ferries, or construction sites. However, in order to reliably transmit these modules to the edge device, using TCP, UDP, and BTP over V2X, Wi-Fi, and 2G-5G hardware, we establish a strict limit of 14.6 KB per module to fit within the first TCP window and to minimize UDP/BTP fragmentation. We further introduce Mixture-of-Experts for Communication-Aware Incremental Learning (MECAIL), the first method that meets this strict requirement, in which each new domain or environment is served by a small expert network that adapts the base model. We validate MECAIL on D-RICO and ODinW-13, where it largely matches the performance of parameter-heavy approaches while enabling practical, bandwidth-efficient large-scale deployment. This allows comprehensive coverage by experts for highly specific, focused, and temporary situations.",
+  "abstract_zh": "智能交通系统需要增量学习（Incremental Learning, IL）以在动态环境中不断提升整体性能。然而，大多数边缘设备缺乏支持设备内增量学习的计算资源，因此需要从集中式服务器传输更新。我们提出利用这种设置获取密集的、专业化的模块覆盖，以使固定的基础模型适应特定的时空上下文，例如停车场、加油站、渡轮或施工现场。然而，为了可靠地将这些模块传输到边缘设备，我们使用TCP、UDP和BTP通过V2X、Wi-Fi和2G-5G硬件建立了每个模块14.6 KB的严格限制，以适应第一个TCP窗口并最小化UDP/BTP的分片。我们进一步引入了面向通信的增量学习的专家混合模型（Mixture-of-Experts for Communication-Aware Incremental Learning, MECAIL），这是第一个满足这一严格要求的方法，其中每个新领域或环境由一个小型专家网络提供服务，以适应基础模型。我们在D-RICO和ODinW-13上验证了MECAIL，其性能在很大程度上与参数密集型方法相匹配，同时实现了实用的、带宽高效的大规模部署。这使得专家能够全面覆盖高度特定、集中且临时的情况。",
+  "arxiv_id": "2609.24455",
+  "arxiv_url": "https://arxiv.org/abs/2609.24455v1",
+  "authors": [
+    "Matthias Neuwirth-Trapp",
+    "Maarten Bieshaar",
+    "Danda Paudel",
+    "Konrad Schindler",
+    "Luc Van Gool",
+    "Christos Sakaridis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-24455",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.294169+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.24455v1",
+  "published_at": "2026-09-21T12:02:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "parking",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 42
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.24455v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "协同/V2X"
+    ]
+  },
+  "title": "MECAIL: Communication-Aware Incremental Learning for Object Detection with 14.6 KB Spatiotemporal Experts",
+  "title_zh": "MECAIL：面向通信的增量学习在对象检测中的应用，具有14.6 KB时空专家",
+  "translation_url": "https://hjfy.top/arxiv/2609.24455"
+}

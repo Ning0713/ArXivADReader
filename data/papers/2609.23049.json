@@ -1,0 +1,62 @@
+{
+  "abstract": "Large-scale scene reconstruction is a critical foundational technology in robotic autonomous systems such as 3D mapping and autonomous driving. In recent years, 3D Gaussian Splatting (3DGS) has demonstrated remarkable advantages in both visual quality and computational efficiency, making it a promising representation for large-scale scene reconstruction. However, it still faces challenges in large-scale scenes, including excessive memory consumption and uneven viewpoint coverage caused by UAV acquisition, limiting its real-world applications. To address this, we propose VDGS, a novel 3DGS framework that incorporates camera distribution into scene modeling. VDGS introduces visibility-driven statistics for scene anchors to quantify supervision strength. These statistics are further leveraged for scene partitioning and for gradient compensation in under-optimized regions, thereby promoting balanced optimization across different regions. Extensive experiments on multiple large-scale aerial scene datasets demonstrate that, under imbalanced viewpoint distributions, VDGS consistently outperforms existing methods, while maintaining competitive performance in scenarios with more uniform view distributions.",
+  "abstract_zh": "大规模场景重建是机器人自主系统中的一项关键基础技术，广泛应用于3D地图构建和自动驾驶等领域。近年来，3D高斯点云重建（3D Gaussian Splatting, 3DGS）在视觉质量和计算效率方面表现出显著优势，使其成为大规模场景重建的有前景的表示方法。然而，在大规模场景中，它仍面临着过高的内存消耗和无人机（UAV）获取导致的视角覆盖不均等挑战，限制了其在实际应用中的效果。为了解决这些问题，我们提出了VDGS，一种新颖的3DGS框架，将相机分布纳入场景建模中。VDGS引入了基于可见性的统计数据，用于量化场景锚点的监督强度。这些统计数据进一步用于场景分割和在未优化区域的梯度补偿，从而促进不同区域之间的平衡优化。在多个大规模空中场景数据集上的广泛实验表明，在视角分布不均的情况下，VDGS始终优于现有方法，同时在视角分布更均匀的场景中保持竞争力。",
+  "arxiv_id": "2609.23049",
+  "arxiv_url": "https://arxiv.org/abs/2609.23049v1",
+  "authors": [
+    "Haolin Yu",
+    "Jiadong Tang",
+    "YiXian Wang",
+    "Yu Gao",
+    "Shi He",
+    "Zhilin Lai",
+    "Yi Yang",
+    "Mengyin Fu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-22#paper-2609-23049",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-22T09:35:21.204662+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.23049v1",
+  "published_at": "2026-09-19T14:29:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "gaussian splatting",
+      "点云",
+      "uav",
+      "robotic",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-09-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.23049v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "VDGS: Visibility-Driven Large-Scale 3D Gaussian Splatting for Aerial Scene Reconstruction",
+  "title_zh": "VDGS：基于可见性驱动的大规模3D高斯点云重建用于空中场景重建",
+  "translation_url": "https://hjfy.top/arxiv/2609.23049"
+}
