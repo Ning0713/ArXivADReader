@@ -1,0 +1,49 @@
+{
+  "abstract": "Frozen visual foundation models provide transferable features for visual place recognition, but fixed aggregation can suppress useful distinctions in new environments. We introduce TFA, a reliability-guided, training-free aggregation method requiring neither place labels nor task-specific weight updates. Our key observation is that reproducible retrieval need not be discriminative: independent codebooks can consistently retrieve a few database hubs. TFA combines cross-codebook agreement, retrieval coverage, and spectral statistics to control residual assignment, spectral shaping, and global-feature fusion. Its spectral kernel exactly recovers original descriptor similarity at zero intervention. Database-only TFA fixes its rules before accessing queries; TFA-C64 uses 64 disjoint unlabeled target images to calibrate retrieval for subsequent queries. Across 20 ground protocols with a fixed DINOv2-B backbone and matched resolution, database-only TFA improves Recall@1 over AnyLoc by 17.39 percentage points on MSLS-val and 9.55 on SPED. C64 mitigates failures of database-only calibration in driving environments. Across eight aerial/cross-view protocols, TFA achieves the highest Recall@1 among compared training-free heads in 14 of 16 DINOv2/DINOv3 backbone-protocol combinations. In a separate native-system comparison, DINOv2-G-based TFA-C64 reaches 91.46% Recall@1 on Pitts30k and 76.29% on VPAIR, outperforming the displayed training-free comparators on all five benchmarks. These results show that reliability-guided aggregation can recover additional retrieval capability from frozen representations, providing a practical baseline for new environments with scarce place supervision.",
+  "abstract_zh": "冻结的视觉基础模型为视觉地点识别提供了可迁移的特征，但固定的聚合方式可能会抑制新环境中的有用区分。我们提出了TFA（可靠性引导的无训练聚合）方法，该方法不需要地点标签或特定任务的权重更新。我们的关键观察是，可重复的检索不必具备区分性：独立的代码本可以一致地检索到少数数据库中心。TFA结合了跨代码本一致性、检索覆盖率和谱统计，以控制残差分配、谱塑形和全局特征融合。其谱核在零干预的情况下准确恢复原始描述符相似性。仅数据库的TFA在访问查询之前就固定了其规则；TFA-C64使用64个不重叠的未标记目标图像来校准后续查询的检索。在20个固定DINOv2-B骨干网和匹配分辨率的基础协议中，仅数据库的TFA在MSLS-val上将Recall@1提高了17.39个百分点，在SPED上提高了9.55个百分点。C64在驾驶环境中缓解了仅数据库校准的失败。在八个航空/交叉视角协议中，TFA在16种DINOv2/DINOv3骨干网-协议组合中实现了最高的Recall@1。在一个单独的本地系统比较中，基于DINOv2-G的TFA-C64在Pitts30k上达到了91.46%的Recall@1，在VPAIR上达到了76.29%，在所有五个基准测试中均优于显示的无训练比较方法。这些结果表明，基于可靠性的聚合可以从冻结的表示中恢复额外的检索能力，为新环境中稀缺的地点监督提供了一个实用的基准。",
+  "arxiv_id": "2609.25937",
+  "arxiv_url": "https://arxiv.org/abs/2609.25937v1",
+  "authors": [
+    "Xin Li",
+    "Zhimin Mao",
+    "Shang Wang",
+    "Siyuan Duan",
+    "Geng Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-25937",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.527273+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.25937v1",
+  "published_at": "2026-09-22T09:43:37Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.25937v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "本文提出一种无需训练的可靠性引导检索聚合方法TFA，通过跨代码本一致性、检索覆盖率和谱统计校准冻结视觉基础模型的特征，用于提升视觉地点识别性能。该方法在包含驾驶场景的MSLS等基准上取得显著改进，可为自动驾驶中的视觉定位和地点识别提供通用基线。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Calibrating Retrieval Geometry: Reliability-Guided Training-Free Aggregation for Visual Place Recognition",
+  "title_zh": "校准检索几何：基于可靠性的无训练聚合方法用于视觉地点识别",
+  "translation_url": "https://hjfy.top/arxiv/2609.25937"
+}

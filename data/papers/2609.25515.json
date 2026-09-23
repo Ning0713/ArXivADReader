@@ -1,0 +1,54 @@
+{
+  "abstract": "Standard deployment-ready object detectors for autonomous vehicles degrade in adverse weather and lighting conditions without being trained on extensive domain-specific data. While large-scale vision foundation models offer robust zero-shot generalization, their high computational cost makes them impractical for real-time deployment. To bridge this gap, we propose a foundation-guided auto-annotation pipeline that enhances standard detectors without architectural changes. We first benchmark three distinct models, YOLOv8, Co-DETR, and SAM3, on our custom real-world driving dataset spanning 25 unique operational scenarios across various route, weather, and lighting conditions. Based on our analysis, SAM3 demonstrates superior accuracy and resilience across all scenarios. Thus, we deploy it as an offline auto-annotator to generate pseudo-labels on the unannotated subset of our dataset. Fine-tuning the baseline YOLOv8 on these annotations yields a 16.04% higher overall mean Average Precision (mAP) and improves cross-environmental stability compared to the baseline model, highlighted by a 32.73% and 28.65% mAP increase in Residential Direct Sunlight and Highway Fog, respectively. These results demonstrate that standard detectors can achieve environmental resilience without the need for extensive manual annotation or architectural modifications.",
+  "abstract_zh": "针对自动驾驶车辆的标准部署准备对象检测器在恶劣天气和光照条件下表现不佳，且未经过广泛领域特定数据训练。尽管大规模视觉基础模型提供了强大的零样本泛化能力，但其高计算成本使得实时部署变得不切实际。为了解决这一问题，我们提出了一种基础引导自动标注管道，能够在不改变架构的情况下增强标准检测器。我们首先在自定义的现实驾驶数据集上对三种不同模型（YOLOv8、Co-DETR 和 SAM3）进行基准测试，该数据集涵盖了25种独特的操作场景，涉及各种路线、天气和光照条件。根据我们的分析，SAM3在所有场景中表现出更高的准确性和韧性。因此，我们将其作为离线自动标注器，生成未标注数据集子集的伪标签。在这些标注上对基线 YOLOv8 进行微调，整体平均精度（mAP）提高了16.04%，并且与基线模型相比，跨环境稳定性得到了改善，住宅直射阳光和高速公路雾霭场景的mAP分别提高了32.73%和28.65%。这些结果表明，标准检测器可以在无需大量手动标注或架构修改的情况下实现环境韧性。",
+  "arxiv_id": "2609.25515",
+  "arxiv_url": "https://arxiv.org/abs/2609.25515v1",
+  "authors": [
+    "Sepideh Gohari",
+    "Goodarz Mehr",
+    "Azim Eskandarian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-25515",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.505926+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.25515v1",
+  "published_at": "2026-09-22T00:17:45Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "highway",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.25515v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Real-World Perception for Autonomous Driving in Adverse Weather: Enhancing Standard Detectors via Foundation-Guided Auto-Annotation",
+  "title_zh": "恶劣天气下自动驾驶的现实感知：通过基础引导自动标注增强标准检测器",
+  "translation_url": "https://hjfy.top/arxiv/2609.25515"
+}

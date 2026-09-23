@@ -1,0 +1,52 @@
+{
+  "abstract": "This paper introduces Dr-LiSA, a first-of-its-kind direct method for localizing 2D spinning radar intensity measurements in $SE(3)$ against 3D lidar maps. Radar-lidar localization combines the complementary strengths of the two sensing modalities: radar is robust to adverse weather and precipitation, while lidar provides high-fidelity 3D maps in favourable conditions. However, existing radar-lidar localization methods are restricted to planar $SE(2)$ localization and have generally fallen short of the accuracy achieved by lidar-lidar and even radar-radar systems. A key challenge is the substantial sensing-modality gap between radar and lidar, which observe and represent scene structure in fundamentally different ways. Dr-LiSA bridges this gap using a learned forward model that predicts radar measurements from a lidar submap at a candidate pose, enabling direct photometric alignment of predicted and observed radar scans in $SE(3)$. Dr-LiSA outperforms prior radar-lidar approaches in $SE(2)$ while achieving planar accuracy competitive with state-of-the-art radar-radar localization across more than 90 km of on-road data.",
+  "abstract_zh": "本文介绍了 Dr-LiSA，这是一种首创的直接方法，用于在 $SE(3)$ 中将二维旋转雷达强度测量与三维激光雷达地图进行定位。雷达-激光雷达定位结合了两种传感方式的互补优势：雷达对恶劣天气和降水具有鲁棒性，而激光雷达在良好条件下提供高保真度的三维地图。然而，现有的雷达-激光雷达定位方法仅限于平面 $SE(2)$ 定位，通常未能达到激光雷达-激光雷达甚至雷达-雷达系统所实现的准确性。一个关键挑战是雷达和激光雷达之间显著的传感方式差距，它们以根本不同的方式观察和表示场景结构。Dr-LiSA 通过使用学习的前向模型来弥合这一差距，该模型可以在候选姿态下从激光雷达子图预测雷达测量，从而实现 $SE(3)$ 中预测和观察到的雷达扫描的直接光度对齐。Dr-LiSA 在 $SE(2)$ 中超越了之前的雷达-激光雷达方法，同时在超过 90 公里的道路数据中实现了与最先进的雷达-雷达定位相竞争的平面准确性。",
+  "arxiv_id": "2609.26423",
+  "arxiv_url": "https://arxiv.org/abs/2609.26423v1",
+  "authors": [
+    "Alex Zhang",
+    "Daniil Lisus",
+    "Cedric Le Gentil",
+    "Timothy D. Barfoot"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-26423",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.487975+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.26423v1",
+  "published_at": "2026-09-22T13:50:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.26423v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "LiDAR/点云",
+      "Radar"
+    ]
+  },
+  "title": "Dr-LiSA: Direct Radar-Lidar Scan Alignment for $SE(3)$ Localization",
+  "title_zh": "Dr-LiSA：用于 $SE(3)$ 定位的直接雷达-激光雷达扫描对齐",
+  "translation_url": "https://hjfy.top/arxiv/2609.26423"
+}

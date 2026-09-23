@@ -1,0 +1,63 @@
+{
+  "abstract": "Sparse instance representations provide a compact interface for spatial LiDAR-camera and temporal past-current interaction in multimodal perception and E2EAD. Effective interaction requires reliable instance correspondences despite geometric discrepancies and heterogeneous semantic representations. Attention-based methods exploit contextual semantics but often require specialized representation alignment, increasing computational overhead. In contrast, association based on structured object states is efficient and interpretable but lacks contextual evidence to resolve ambiguous matches. To combine these complementary strengths, we propose MatchFusion, a learnable instance matching and fusion module for spatio-temporal multimodal autonomous driving. MatchFusion initializes pairwise affinities using geometric similarity and category consistency, then selectively refines structurally plausible associations using instance embeddings. The resulting soft matchmap guides a common residual aggregation operator for adaptive information exchange. This unified matching-fusion formulation supports spatial LiDAR-camera and temporal past-current interaction, using multi-view image-plane geometry and motion-compensated BEV geometry as the respective structural priors. Experiments on nuScenes demonstrate consistent perception gains across diverse front-end configurations. Compared with a prior instance-centric fusion method, the MatchFusion-equipped system achieves higher perception accuracy while reducing FLOPs by 55.3% and GPU memory usage by 39.3%, with the matching-fusion module accounting for only 3.7% of total perception latency. Integrating temporal MatchFusion into SparseDrive further improves perception within an E2E framework without additional supervision. These results establish explicit-implicit matching as an effective and efficient mechanism for spatio-temporal instance interaction.",
+  "abstract_zh": "稀疏实例表示为时空LiDAR-摄像头和过去-当前交互提供了紧凑的接口，以实现多模态感知和端到端自主驾驶（E2EAD）。有效的交互需要可靠的实例对应关系，尽管存在几何差异和异构语义表示。基于注意力的方法利用上下文语义，但通常需要专门的表示对齐，从而增加计算开销。相比之下，基于结构化对象状态的关联方法高效且可解释，但缺乏上下文证据来解决模糊匹配。为了结合这些互补的优势，我们提出了MatchFusion，一个可学习的实例匹配和融合模块，适用于时空多模态自主驾驶。MatchFusion通过几何相似性和类别一致性初始化成对的亲和度，然后选择性地使用实例嵌入细化结构上合理的关联。生成的软匹配图引导一个通用的残差聚合算子，以实现自适应信息交换。该统一的匹配-融合公式支持空间LiDAR-摄像头和时间上的过去-当前交互，使用多视角图像平面几何和运动补偿的鸟瞰视图（BEV）几何作为各自的结构先验。在nuScenes上的实验表明，在不同的前端配置中，感知性能一致提升。与之前的以实例为中心的融合方法相比，配备MatchFusion的系统在提高感知精度的同时，将FLOPs减少了55.3%，GPU内存使用量减少了39.3%，而匹配-融合模块仅占总感知延迟的3.7%。将时间MatchFusion集成到SparseDrive中进一步改善了在端到端框架内的感知，而无需额外的监督。这些结果确立了显式-隐式匹配作为时空实例交互的有效且高效的机制。",
+  "arxiv_id": "2609.25860",
+  "arxiv_url": "https://arxiv.org/abs/2609.25860v1",
+  "authors": [
+    "Xiaoyu Li",
+    "Jiajia Fu",
+    "Long Shi",
+    "Tianyu Du",
+    "Ruihang Li",
+    "Xian Wu",
+    "Lijun Zhao",
+    "Yingtao Zhang",
+    "Lining Sun",
+    "Ruifeng Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-25860",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.524262+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.25860v1",
+  "published_at": "2026-09-22T08:24:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.25860v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "MatchFusion: Explicit-Implicit Instance Matching for Spatio-Temporal Multimodal Autonomous Driving",
+  "title_zh": "MatchFusion：时空多模态自主驾驶的显式-隐式实例匹配",
+  "translation_url": "https://hjfy.top/arxiv/2609.25860"
+}

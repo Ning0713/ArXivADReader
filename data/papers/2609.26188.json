@@ -1,0 +1,51 @@
+{
+  "abstract": "Video Odometry (VO) is the process of estimating the ego-motion of an object by analyzing visual information such as a sequence of frames from one or multiple cameras. It has been a popular research topic in computer vision and robotics, and its applications include mobile robotic systems as well as autonomous driving. In this project, we investigate existing end-to-end deep-learning approaches to VO, and propose a novel temporal attention-based model to improve upon the baseline. In addition, while the vast majority of existing deep-learning-based approaches to VO are trained on driving data, we investigate the performance of deep-learning-based VO to the more dynamic and complex problem of hand-held cameras.",
+  "abstract_zh": "视频里程计（VO）是通过分析视觉信息（如来自一个或多个摄像头的帧序列）来估计物体自我运动的过程。它一直是计算机视觉和机器人领域的热门研究课题，其应用包括移动机器人系统和自动驾驶。在本项目中，我们研究了现有的端到端深度学习方法在视觉里程计中的应用，并提出了一种新颖的基于时间注意力机制的模型，以改进基线方法。此外，尽管现有的大多数基于深度学习的视觉里程计方法都是在驾驶数据上进行训练的，但我们还探讨了基于深度学习的视觉里程计在更动态和复杂的手持摄像机问题上的表现。",
+  "arxiv_id": "2609.26188",
+  "arxiv_url": "https://arxiv.org/abs/2609.26188v1",
+  "authors": [
+    "Ruiyu Li",
+    "Yinjia Liu",
+    "Alexander Yu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-26188",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.537837+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.26188v1",
+  "published_at": "2026-08-10T05:19:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.26188v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "End-to-End Visual Odometry with RNNs and Attention",
+  "title_zh": "基于 RNN 和注意力机制的端到端视觉里程计",
+  "translation_url": "https://hjfy.top/arxiv/2609.26188"
+}

@@ -1,0 +1,61 @@
+{
+  "abstract": "End-to-end (E2E) driving policies have progressed rapidly on open-loop (OL) benchmarks, yet OL evaluation cannot reveal whether a policy withstands compounding errors, recovers from failures, or interacts safely with surrounding actors. We introduce NavSafe-$\\infty$, a photorealistic closed-loop (CL) benchmark of 280 scenarios spanning 28 event types, each with success and failure criteria defined within a structured traffic-safety taxonomy, which yields category-level capability scores for Traffic Crashes, Vulnerable Road User Crashes, Traffic Violations, and Traffic Incidents. Evaluating 20 E2E policies, we find that OL gains do not reliably transfer to CL safety. Analyzing two common remedies further shows that passive demonstration perturbation helps mainly when CL rollouts stay near its perturbed training states, and that OL reinforcement-learning fine-tuning exhibits reward hacking by trading safety margin for ego progress, which CL feedback amplifies into compounding safety-critical errors. Together, these results demonstrate the blind spot of OL benchmarks indicating CL safety success. The benchmark and an extensible toolbox for customizable event curation and policy diagnosis will be open-sourced and maintained to facilitate future research.",
+  "abstract_zh": "端到端（E2E）驾驶策略在开放环（OL）基准测试中迅速发展，但OL评估无法揭示策略是否能够抵御累积错误、从失败中恢复或与周围参与者安全互动。我们引入了NavSafe-$ ext{∞}$，这是一个包含280个场景的照片级闭环（CL）基准，涵盖28种事件类型，每种类型都有在结构化交通安全分类法中定义的成功和失败标准，从而为交通事故、易受伤道路用户事故、交通违规和交通事件提供类别级能力评分。对20个E2E策略的评估发现，OL的进展并不能可靠地转移到CL安全性上。对两种常见补救措施的分析进一步表明，被动演示扰动主要在CL回放接近其扰动训练状态时有效，而OL强化学习微调则通过将安全边际与自我进展进行权衡而出现奖励黑客行为，这种行为在CL反馈中被放大为累积的安全关键错误。综合来看，这些结果展示了OL基准在指示CL安全成功方面的盲点。该基准及其可扩展的工具箱将开源并维护，以促进未来的研究。",
+  "arxiv_id": "2609.26618",
+  "arxiv_url": "https://arxiv.org/abs/2609.26618v1",
+  "authors": [
+    "Yuxin Bao",
+    "Hongwei Ruan",
+    "Luobin Wang",
+    "Seth Z. Zhao",
+    "Ziyang Leng",
+    "Zihan Zhang",
+    "Yu Zeng",
+    "Rowan McAllister",
+    "Henrik Christensen",
+    "Bolei Zhou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-26618",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.492904+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.26618v1",
+  "published_at": "2026-09-22T15:51:07Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路",
+      "diagnosis"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.26618v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "提出 NavSafe-$\\infty$ 闭环驾驶安全基准，使用280个照片级真实场景覆盖28类交通事件，并对20种端到端驾驶策略进行评测。研究发现，开放环指标与闭环安全表现缺乏可靠对应关系；演示扰动的收益依赖于状态分布，而开放环强化学习可能诱发奖励投机并放大安全风险。该工作重点关注端到端自动驾驶策略的闭环安全评估、失败诊断和基准构建。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "端到端驾驶",
+      "仿真/数据"
+    ]
+  },
+  "title": "NavSafe-$\\infty$: Benchmarking Closed-Loop Driving Safety in Photorealistic Environments",
+  "title_zh": "NavSafe-$ ext{∞}$：在照片级真实环境中评估闭环驾驶安全性",
+  "translation_url": "https://hjfy.top/arxiv/2609.26618"
+}

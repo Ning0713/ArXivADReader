@@ -1,0 +1,59 @@
+{
+  "abstract": "Recent VLM-based autonomous driving planners adopt GRPO-style reinforcement learning to optimize driving performance. However, existing GRPO recipes either optimize driving efficiency, risking progress-seeking but unsafe behavior, or enforce early safety constraints, leading to overly conservative behavior; both require lengthy training. To solve these problems, we first reveal two distinct RL regimes: a progress regime (Run-GRPO) that aggressively explores high progress, and a safety regime (Walk-GRPO) that restores safety under stable progress. Based on this finding, we propose $\\textit{Run-then-Walk}$, a simple yet effective two-stage reward scheduling strategy for GRPO, achieving both better performance and faster convergence. Unlike one-stage RL, which may focus on progress, safety, or a mixture of both within a single training phase, this schedule explicitly separates progress discovery from safety repair. In the $\\textit{Run}$ phase, we focus on progress, allowing the policy to escape the conservative bias and discover high-progress modes. In the subsequent $\\textit{Walk}$ phase, we introduce endpoint and safety strategy to repair unsafe behaviors from the Run phase. This reversed schedule overcomes the conservatism of Walk-first methods and the unsafe progress-seeking of joint optimization. We validate it with various VLM-based planners on multiple benchmarks: NAVSIMv1, NAVSIMv2, Navhard, and nuScenes. Extensive experiments demonstrate improved driving performance while requiring 40--50\\% fewer RL training epochs than the baselines.",
+  "abstract_zh": "近期基于VLM的自主驾驶规划器采用GRPO风格的强化学习来优化驾驶性能。然而，现有的GRPO方法要么优化驾驶效率，导致寻求进展但不安全的行为，要么强制施加早期安全约束，导致过于保守的行为；这两者都需要较长的训练时间。为了解决这些问题，我们首先揭示了两种不同的强化学习模式：一种是进展模式（Run-GRPO），它积极探索高进展；另一种是安全模式（Walk-GRPO），它在稳定进展下恢复安全。基于这一发现，我们提出了$ extit{Run-then-Walk}$，一种简单而有效的GRPO两阶段奖励调度策略，既实现了更好的性能，又加快了收敛速度。与可能在单一训练阶段内关注进展、安全或两者混合的一阶段强化学习不同，该调度明确将进展发现与安全修复分开。在$ extit{Run}$阶段，我们专注于进展，允许策略摆脱保守偏见并发现高进展模式。在随后的$ extit{Walk}$阶段，我们引入终点和安全策略来修复Run阶段的不安全行为。这种反向调度克服了Walk-first方法的保守性和联合优化的不安全进展寻求。我们在多个基准上使用各种基于VLM的规划器进行了验证：NAVSIMv1、NAVSIMv2、Navhard和nuScenes。大量实验表明，在比基线少40%至50%的强化学习训练周期的情况下，驾驶性能得到了改善。",
+  "arxiv_id": "2609.25831",
+  "arxiv_url": "https://arxiv.org/abs/2609.25831v1",
+  "authors": [
+    "Yuqi Ye",
+    "Shangkun Sun",
+    "Junhong Lin",
+    "Jiayi Zhao",
+    "Changhao Peng",
+    "Wei Zheng",
+    "Guoqing Liu",
+    "Tiesong Zhao",
+    "Wei Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-25831",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.467437+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.25831v1",
+  "published_at": "2026-09-22T07:58:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.25831v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Sometimes You Gotta Run Before You Can Walk: Run-then-Walk Scheduling Strategy for VLM Autonomous Driving",
+  "title_zh": "有时你得先跑才能走：VLM自主驾驶的跑-走调度策略",
+  "translation_url": "https://hjfy.top/arxiv/2609.25831"
+}

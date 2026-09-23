@@ -1,0 +1,51 @@
+{
+  "abstract": "The repeated forward-reverse maneuvers performed by wheel loaders during earthmoving operations make them well suited for automation. However, the nonlinear dynamics of articulated vehicles and complex vehicle-terrain interactions limit the effectiveness of conventional model-based approaches. This paper presents a hierarchical framework that combines long-horizon geometric planning with data-driven predictive control for autonomous wheel-loader operation. A reduced-order articulated kinematic model is used to generate the maneuver geometry, where the forward and reverse trajectories are jointly optimized through a shared intermediate state. To capture the vehicle dynamics, two data-driven deep bilinear Koopman models are learned for the forward and reverse motions using data generated from high-fidelity simulations in Algoryx Dynamics. The learned Koopman representations are subsequently incorporated into a computationally efficient model predictive control (MPC) formulation for trajectory tracking. The resulting controller operates in real time within a 50-ms execution loop. High-fidelity simulation results demonstrate that the proposed end-to-end framework enables accurate and computationally efficient execution of wheel-loader V-cycle maneuvers, providing a promising approach toward autonomous operation of articulated heavy-duty machinery.",
+  "abstract_zh": "轮式装载机在土方作业中执行的重复前后移动操作使其非常适合自动化。然而，关节式车辆的非线性动力学和复杂的车辆-地形交互限制了传统基于模型的方法的有效性。本文提出了一种分层框架，将长时间地理规划与数据驱动的预测控制相结合，以实现轮式装载机的自主操作。该框架使用降阶关节运动学模型生成操作几何形状，其中前进和后退轨迹通过共享的中间状态进行联合优化。为了捕捉车辆动力学，使用从高保真模拟（在Algoryx Dynamics中生成的数据）中学习的两个数据驱动的深度双线性Koopman模型来描述前进和后退运动。学习到的Koopman表示随后被纳入计算效率高的模型预测控制（MPC）公式中，以实现轨迹跟踪。最终的控制器在50毫秒的执行循环内实时运行。高保真模拟结果表明，所提出的端到端框架能够准确且计算高效地执行轮式装载机的V循环操作，为关节式重型机械的自主操作提供了一种有前景的方法。",
+  "arxiv_id": "2609.26580",
+  "arxiv_url": "https://arxiv.org/abs/2609.26580v1",
+  "authors": [
+    "Armin Abdolmohammadi",
+    "Navid Mojahed",
+    "Dinesh Kumar",
+    "Bahram Ravani",
+    "Shima Nazari"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-26580",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.492267+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.26580v1",
+  "published_at": "2026-09-22T15:27:23Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.26580v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "本文面向轮式装载机重复V循环作业的自主化，提出分层规划与控制框架：利用降阶关节运动学模型联合优化前进和后退轨迹，再通过高保真仿真数据学习深度双线性Koopman模型，并将其用于实时MPC轨迹跟踪。仿真结果表明，该方法可在50毫秒控制周期内实现高效、准确的自主作业。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Wheel-loader V-Cycle Automation with Deep Koopman MPC",
+  "title_zh": "基于深度Koopman MPC的轮式装载机V循环自动化",
+  "translation_url": "https://hjfy.top/arxiv/2609.26580"
+}

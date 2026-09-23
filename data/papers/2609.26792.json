@@ -1,0 +1,61 @@
+{
+  "abstract": "Faithfully evaluating end-to-end driving policies in simulation requires observations that are not merely photo-realistic, but preserve the scene features a policy relies on to make decisions. Existing platforms, however, exhibit a sim-to-real visual gap that corrupts policy perception, undermining their ability to assess a policy's closed-loop decision-making. To this end, we propose DreamStream, a generative, closed-loop simulator that achieves policy-oriented fidelity using a simulator-grounded autoregressive video model. Our video model is distilled from a large pretrained video model via traffic layout guidance, varying visual appearance while preserving policy-relevant features such as scenario layout and the temporal consistency of dynamic objects. We further observe that perceptual metrics like FID misrank how well these features are preserved. To tackle this, we introduce FD$\\pi$, a new multi-representation metric that measures the sim-to-real gap as the Fr\\'echet distance over scene-context features from public E2E policies. Under FD$\\pi$, DreamStream improves over the strongest prior closed-loop simulator by $1.6\\times$ on nuScenes and $4.7\\times$ on NAVSIM, and induces the least perturbation to policy's perceptual observability. Based on DreamStream, we construct Navhard-CL benchmark, which turns non-reactive real-world benchmark NAVSIM into interactive testing environments with adversarial driving behaviors and weather variations. This benchmark exposes many failure modes of driving policies, such as scorer bias and lack of recovery behaviors, that prior closed-loop benchmarks overlook. Code and data are available at https://github.com/VAIL-UCLA/DreamStream.",
+  "abstract_zh": "在模拟中忠实评估端到端驾驶策略需要的观察不仅仅是照片级真实的，还要保留策略做出决策所依赖的场景特征。然而，现有平台存在模拟与现实之间的视觉差距，这会破坏策略感知，削弱其评估策略闭环决策能力的能力。为此，我们提出了DreamStream，一个生成的闭环模拟器，利用基于模拟器的自回归视频模型实现政策导向的保真度。我们的视频模型通过交通布局指导从一个大型预训练视频模型中提炼而来，能够在保留与政策相关的特征（如场景布局和动态物体的时间一致性）的同时，变化视觉外观。我们进一步观察到，像FID这样的感知指标在评估这些特征的保留程度时存在误排名的问题。为了解决这个问题，我们引入了FD$ ext{π}$，一种新的多表示度量，测量模拟与现实之间的差距，作为来自公共E2E策略的场景上下文特征的Fréchet距离。在FD$ ext{π}$下，DreamStream在nuScenes上比最强的先前闭环模拟器提高了1.6倍，在NAVSIM上提高了4.7倍，并对策略的感知可观察性造成了最小的干扰。基于DreamStream，我们构建了Navhard-CL基准，将非反应性的现实世界基准NAVSIM转变为具有对抗性驾驶行为和天气变化的互动测试环境。该基准揭示了许多驾驶策略的失败模式，如评分偏差和缺乏恢复行为，而先前的闭环基准未能考虑这些问题。代码和数据可在https://github.com/VAIL-UCLA/DreamStream获取。",
+  "arxiv_id": "2609.26792",
+  "arxiv_url": "https://arxiv.org/abs/2609.26792v1",
+  "authors": [
+    "Ziyang Leng",
+    "Sicheng Mo",
+    "Seth Z. Zhao",
+    "Haoyuan Cai",
+    "Yu Zeng",
+    "Rowan McAllister",
+    "Bolei Zhou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-26792",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.495283+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.26792v1",
+  "published_at": "2026-09-22T17:59:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "nuscenes",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 72
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.26792v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "端到端驾驶"
+    ]
+  },
+  "title": "DreamStream: Towards Policy-Oriented Generative Simulation for End-to-End Driving",
+  "title_zh": "DreamStream：面向政策导向的端到端驾驶生成模拟",
+  "translation_url": "https://hjfy.top/arxiv/2609.26792"
+}

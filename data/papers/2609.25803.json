@@ -1,0 +1,55 @@
+{
+  "abstract": "High-rate dense perception in dynamic environments is limited by the low update rate of RGB cameras, as rapid scene changes can occur between frames. Event cameras offer temporally dense but spatially sparse measurements, complementary to spatially dense RGB observations. Direct fusion cannot fully exploit this complementarity, while event-guided propagation fails on newly appearing or disoccluded regions without valid RGB support. We present LiFR v2, a unified propagation-completion-memory framework for causal anytime and streaming dense prediction from an RGB keyframe and events. LiFR v2 introduces an Event-Guided Completion Module (EGCM) to recover task-relevant representations where propagation is unsupported, and a History Retrieval Module (HRM) to reuse completed representations across successive queries. The framework supports semantic segmentation, monocular depth estimation, and multi-task dense prediction, and we further introduce SHF-Emerge to evaluate rapid object emergence and disocclusion. LiFR v2 achieves 74.37% mIoU on DSEC and 56.13% on SHF-Emerge, improving LiFR-Seg by 1.85 percentage points on the latter, while reducing SHF-Emerge depth RMSE from 1.564 m to 1.118 m over the propagation baseline. It also exceeds 100 FPS for both segmentation and depth, demonstrating accurate and efficient high-rate perception beyond RGB frame rates.",
+  "abstract_zh": "在动态环境中，高频率密集感知受到RGB相机低更新率的限制，因为在帧之间可能会发生快速的场景变化。事件相机提供了时间上密集但空间上稀疏的测量，与空间上密集的RGB观测互为补充。直接融合无法充分利用这种互补性，而事件引导的传播在没有有效RGB支持的新出现或去遮挡区域上表现不佳。我们提出了LiFR v2，一个统一的传播-补全-记忆框架，用于从RGB关键帧和事件中进行因果的任意时间和流式密集预测。LiFR v2引入了事件引导补全模块（Event-Guided Completion Module, EGCM），以恢复在传播不支持的情况下与任务相关的表示，并引入历史检索模块（History Retrieval Module, HRM）以在连续查询中重用已完成的表示。该框架支持语义分割、单目深度估计和多任务密集预测，并进一步引入SHF-Emerge来评估快速物体出现和去遮挡。LiFR v2在DSEC上实现了74.37%的mIoU，在SHF-Emerge上实现了56.13%，在后者上比LiFR-Seg提高了1.85个百分点，同时将SHF-Emerge深度均方根误差从1.564米降低到1.118米，超越了传播基线。此外，在分割和深度任务中均超过100 FPS，展示了超越RGB帧率的准确高效高频率感知能力。",
+  "arxiv_id": "2609.25803",
+  "arxiv_url": "https://arxiv.org/abs/2609.25803v1",
+  "authors": [
+    "Tao Wan",
+    "Xiaoshan Wu",
+    "Yifei Yu",
+    "Bo Wang",
+    "Xiaoyang Lyu",
+    "Muxin Liu",
+    "Aoxuan Pan",
+    "Zhongrui Wang",
+    "Xiaojuan Qi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-25803",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.520185+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.25803v1",
+  "published_at": "2026-09-22T07:36:01Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.25803v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "提出结合事件引导补全与历史检索的高频密集感知框架 LiFR v2，用于 RGB 与事件流上的语义分割和单目深度估计，并在 DSEC、SHF-Emerge 上验证效果。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "深度/几何"
+    ]
+  },
+  "title": "LiFR v2: Completion-Augmented Event Propagation for High-Rate Dense Prediction",
+  "title_zh": "LiFR v2：用于高频率密集预测的补全增强事件传播",
+  "translation_url": "https://hjfy.top/arxiv/2609.25803"
+}

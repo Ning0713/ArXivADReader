@@ -1,0 +1,61 @@
+{
+  "abstract": "Camera-based 3D object detection and online vectorized HD mapping provide compact scene representations for autonomous driving, but both depend on accurate metric geometry and remain limited by depth ambiguity. Over long-term deployment, observations from repeated traversals can be accumulated into persistent point cloud priors that provide geometric context beyond the current observations. Existing explicit point cloud prior approaches, however, rely on LiDAR-based map construction and therefore require expensive 3D ranging sensors. We propose a framework that constructs a static point cloud prior map from previous camera traversals using Pi3X and augments each point with DINOv3 features. At runtime, a local prior patch is retrieved using global localization, encoded with a sparse voxel backbone, and fused in bird's-eye view (BEV) with lifted multi-view camera features. Task-specific sparse transformer heads then predict 3D objects and vectorized map elements from the fused representation. On Argoverse 2, the vision-based prior improves a strong baseline from 0.287 to 0.299 CDS and from 0.669 to 0.750 vectorized mapping mAP. Ablations show that semantic DINOv3 features are particularly important for vectorized mapping. These results demonstrate that vision-built geometric-semantic priors provide an effective form of long-term scene memory for camera-based perception, improving both tasks without LiDAR for prior-map construction or online inference.",
+  "abstract_zh": "基于摄像头的3D物体检测和在线矢量化高清映射为自动驾驶提供了紧凑的场景表示，但两者都依赖于准确的度量几何，并受到深度模糊的限制。在长期部署中，通过重复行驶的观察可以积累成持久的点云先验，这些先验提供了超越当前观察的几何上下文。然而，现有的显式点云先验方法依赖于基于激光雷达（LiDAR）的地图构建，因此需要昂贵的3D测距传感器。我们提出了一个框架，该框架利用之前的摄像头行驶构建静态点云先验地图，使用Pi3X并用DINOv3特征增强每个点。在运行时，通过全局定位检索局部先验补丁，使用稀疏体素骨干网络编码，并与提升的多视角摄像头特征在鸟瞰图（BEV）中融合。特定任务的稀疏变换头随后从融合表示中预测3D物体和矢量化地图元素。在Argoverse 2上，基于视觉的先验将强基线的CDS从0.287提高到0.299，将矢量化映射的mAP从0.669提高到0.750。消融实验表明，语义DINOv3特征对于矢量化映射尤为重要。这些结果表明，基于视觉构建的几何-语义先验为基于摄像头的感知提供了一种有效的长期场景记忆形式，在不使用激光雷达进行先验地图构建或在线推理的情况下，改善了两个任务的表现。",
+  "arxiv_id": "2609.26325",
+  "arxiv_url": "https://arxiv.org/abs/2609.26325v1",
+  "authors": [
+    "Markus Käppeler",
+    "Rohit Mohan",
+    "Abhinav Valada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-26325",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.541951+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.26325v1",
+  "published_at": "2026-09-22T12:36:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "argoverse",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "3d object detection",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.26325v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Leveraging Vision-Based Point Cloud Map Priors for Camera-Based 3D Object Detection and Online Vectorized HD Mapping",
+  "title_zh": "利用基于视觉的点云地图先验进行基于摄像头的3D物体检测和在线矢量化高清映射",
+  "translation_url": "https://hjfy.top/arxiv/2609.26325"
+}

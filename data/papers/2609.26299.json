@@ -1,0 +1,63 @@
+{
+  "abstract": "Existing latent world models are typically optimized for future predictability, yet the resulting representations are not necessarily useful for planning in autonomous driving. Predictions are commonly used for pretraining or auxiliary supervision rather than as direct conditioning signals for trajectory generation. We propose ForeDrive, which learns a planning-relevant latent representation and couples it asymmetrically to a Diffusion Transformer (DiT) planner. The planner consumes multi-horizon latent future representations learned with a JEPA-style world model; planning gradients update the shared online encoder, while stop-gradient routing trains the latent predictor with forecasting losses only. Because predicted futures have varying reliability across horizons and BEV trajectories are misaligned with image tokens, we use gated visual fusion, future-status injection, and Trajectory-Adaptive Bias (TAB) to inject future latents as guidance without overriding the current observation. Trained with pure imitation learning and using only the current front-view image as visual input at inference, ForeDrive attains 89.9 PDMS on NAVSIM v1 and 90.0 one-stage EPDMS on NAVSIM v2, without reinforcement learning or an external trajectory scorer.",
+  "abstract_zh": "现有的潜在世界模型通常是针对未来可预测性进行优化的，但由此产生的表示并不一定对自主驾驶中的规划有用。预测通常用于预训练或辅助监督，而不是作为轨迹生成的直接条件信号。我们提出了ForeDrive，它学习一种与规划相关的潜在表示，并将其不对称地与扩散变换器（Diffusion Transformer, DiT）规划器耦合。该规划器使用JEPA风格的世界模型学习的多视角潜在未来表示；规划梯度更新共享的在线编码器，而停止梯度路由仅使用预测损失来训练潜在预测器。由于预测的未来在不同时间范围内具有不同的可靠性，并且鸟瞰视图（BEV）轨迹与图像标记不对齐，我们使用门控视觉融合、未来状态注入和轨迹自适应偏置（Trajectory-Adaptive Bias, TAB）将未来潜在表示作为指导注入，而不覆盖当前观察。通过纯模仿学习进行训练，并在推理时仅使用当前的前视图图像作为视觉输入，ForeDrive在NAVSIM v1上达到了89.9的PDMS，在NAVSIM v2上达到了90.0的一阶段EPDMS，而无需强化学习或外部轨迹评分器。",
+  "arxiv_id": "2609.26299",
+  "arxiv_url": "https://arxiv.org/abs/2609.26299v1",
+  "authors": [
+    "Sinuo Wang",
+    "Zichong Gu",
+    "Yuhan Huang",
+    "Wenxin Wen",
+    "Xun Yang",
+    "Yiqing Zhang",
+    "Xingyu Zhang",
+    "Ningyu Che",
+    "Jie Ling",
+    "Qiankun Yu",
+    "Wei Liu",
+    "Jing Xu",
+    "Xinggang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-26299",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.541366+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.26299v1",
+  "published_at": "2026-09-22T12:11:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 51
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.26299v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "端到端驾驶"
+    ]
+  },
+  "title": "ForeDrive: Foresight-Guided End-to-End Autonomous Driving with a Planning-Relevant Latent World Model",
+  "title_zh": "ForeDrive：基于前瞻引导的端到端自主驾驶与规划相关的潜在世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.26299"
+}

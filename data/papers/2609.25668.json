@@ -1,0 +1,52 @@
+{
+  "abstract": "Multi-Object Tracking (MOT) is essential for EdgeAI perception systems, where accurate object localization and reliable identification enable safe decision-making. Singleagent MOT suffers from occlusions, sensor noise, and partial scene understanding in complex real-world scenarios. While multi-agent systems improve robustness by exploiting shared information, they introduce redundant measurements that lead to false data associations, and still struggle to capture nonlinear object dynamics. To address these challenges, we propose CDKFTrack, a Cluster-aware Data-Driven Kalman Filtering framework for Cooperative 3D MOT. The proposed method first fuses multivehicle 3D LiDAR detections through a Graph Laplacian-based formulation. Then, a cluster-aware redundancy reduction scheme groups spatially related detections and selects representative observations to reduce duplicate inputs to the tracker. The resulting detections are processed by a data-driven Kalman filter that learns object motion dynamics from data, reducing dependence on predefined linear motion assumptions. Furthermore, a wavelet-based temporal refinement module leverages the multiresolution decomposition property of wavelets to attenuate shortterm positional fluctuations and improve trajectory continuity. To the best of our knowledge, CDKF-Track is the first framework to jointly address detection-level fusion redundancy and learnable motion modeling in cooperative 3D MOT. Experimental results on the real-world V2V4Real dataset indicate that CDKF-Track achieves up to 27.99% improvements in tracking accuracy over state-of-the-art multi-agent MOT methods.",
+  "abstract_zh": "多目标跟踪（MOT）对于边缘人工智能感知系统至关重要，准确的目标定位和可靠的识别能够支持安全决策。单代理MOT在复杂的现实场景中面临遮挡、传感器噪声和部分场景理解的问题。虽然多代理系统通过利用共享信息提高了鲁棒性，但它们引入了冗余测量，导致错误的数据关联，并且仍然难以捕捉非线性目标动态。为了解决这些挑战，我们提出了CDKF-Track，一个面向集群的基于数据驱动的卡尔曼滤波框架，用于协作3D多目标跟踪。该方法首先通过基于图拉普拉斯的公式融合多车辆3D LiDAR检测。然后，集群感知的冗余减少方案将空间相关的检测进行分组，并选择代表性观测值，以减少输入跟踪器的重复数据。得到的检测结果由一个数据驱动的卡尔曼滤波器处理，该滤波器从数据中学习目标运动动态，减少对预定义线性运动假设的依赖。此外，一个基于小波的时间精化模块利用小波的多分辨率分解特性来减弱短期位置波动，提高轨迹连续性。根据我们所知，CDKF-Track是第一个在协作3D多目标跟踪中共同解决检测级融合冗余和可学习运动建模的框架。在真实世界的V2V4Real数据集上的实验结果表明，CDKF-Track在跟踪精度上比最先进的多代理MOT方法提高了多达27.99%。",
+  "arxiv_id": "2609.25668",
+  "arxiv_url": "https://arxiv.org/abs/2609.25668v1",
+  "authors": [
+    "Maria Damanaki",
+    "Nikos Piperigkos",
+    "Alexandros Gkillas",
+    "Aris S. Lalos"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-25668",
+  "categories": [
+    "cs.RO",
+    "eess.SP"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.457576+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.25668v1",
+  "published_at": "2026-09-22T04:18:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2v4real",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 29
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.25668v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "预测/规划"
+    ]
+  },
+  "title": "CDKF-Track: Cluster-aware Data-Driven Kalman Filtering for Cooperative 3D Multi-Object Tracking",
+  "title_zh": "CDKF-Track：面向集群的基于数据驱动的卡尔曼滤波框架用于协作3D多目标跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2609.25668"
+}

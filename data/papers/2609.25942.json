@@ -1,0 +1,49 @@
+{
+  "abstract": "Robots operating around pedestrians often reason over a finite set of predicted human futures. Repeated online updates can concentrate this limited prediction budget on dominant destinations and leave plausible alternatives underrepresented or absent, removing those alternatives from the finite representation available to downstream decision making. We introduce Destination Support Restoration (DSR), a causal post-selection operator that repairs destination support without retraining the host predictor or increasing the maintained set size. At a repair step, DSR evaluates a temporary destination-stratified candidate bank from the observed prefix, converts candidate evidence into integer target counts, protects representatives of active modes, and reallocates redundant surplus hypotheses to deficient modes. The maintained and returned sets retain exactly $N$ hypotheses, and DSR replaces at most $\\lceil\\rho N\\rceil$ entries. Protected representatives preserve current categorical support; lineage-aware particle filters also preserve surviving resampling ancestors. Each replacement reduces the allocation mismatch to the evidence-driven target by one. On the complete 3,719-trajectory Edinburgh protocol over three seeds, DSR reduces MIF weighted ADE and FDE by 13.36% and 13.30% at $N=64$. Paired integrations with CLiFF, PPT, causal GDTS, Social Informer, and PECNet improve both metrics in every evaluated pair. These results show that finite-set support allocation is a useful prediction-side control point when a fixed hypothesis set serves as the interface to downstream systems.",
+  "abstract_zh": "在行人周围操作的机器人通常会对有限集的预测人类未来进行推理。重复的在线更新可能会将这一有限的预测预算集中在主导目的地上，而使得可行的替代方案被低估或缺失，从而将这些替代方案从下游决策所能利用的有限表示中移除。我们提出了目标支持恢复（Destination Support Restoration, DSR），这是一种因果后选择操作符，能够在不重新训练主预测器或增加维护集大小的情况下修复目标支持。在修复步骤中，DSR评估来自观察前缀的临时目标分层候选库，将候选证据转换为整数目标计数，保护活跃模式的代表，并将冗余的多余假设重新分配给不足的模式。维护和返回的集合恰好保留$N$个假设，DSR最多替换$ ext{ceil}( ho N)$个条目。受保护的代表保持当前的类别支持；考虑谱系的粒子滤波器也保留幸存的重采样祖先。每次替换将分配不匹配减少一个，以符合证据驱动的目标。在完整的3,719轨迹爱丁堡协议上，经过三个种子的实验，DSR在$N=64$时将加权平均绝对误差（MIF weighted ADE）和最终误差（FDE）分别减少了13.36%和13.30%。与CLiFF、PPT、因果GDTS、Social Informer和PECNet的配对集成在每个评估对中均提高了这两个指标。这些结果表明，当固定假设集作为下游系统的接口时，有限集支持分配是一个有用的预测侧控制点。",
+  "arxiv_id": "2609.25942",
+  "arxiv_url": "https://arxiv.org/abs/2609.25942v1",
+  "authors": [
+    "Fengrui Liu",
+    "Jiajun Peng",
+    "Duo Peng",
+    "Feng Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-23#paper-2609-25942",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-23T09:40:58.471546+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.25942v1",
+  "published_at": "2026-09-22T09:47:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "行人",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-09-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.25942v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Destination Support Restoration for Finite-Set Multimodal Trajectory Prediction",
+  "title_zh": "有限集多模态轨迹预测中的目标支持恢复",
+  "translation_url": "https://hjfy.top/arxiv/2609.25942"
+}
