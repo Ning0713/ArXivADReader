@@ -1,0 +1,53 @@
+{
+  "abstract": "Navigation in off-road conditions is challenging due to the lack of structure. There is no fixed vocabulary for what is traversable. The traversability depends on both the environment and the embodiment's dynamics. Neither of these two variables can be hand-labeled at scale. Thus, traversability has to be learned by the embodiment's own experience. Modern platforms tend to use multiple sensors to estimate traversability and navigate: RGBD cameras, lidar, radar, IMU, with computationally intensive platforms to run inference on neural networks. Against this trend, we propose FLINT, a lightweight traversability estimator: a 21.6M-parameter backbone, 38\\times smaller than a comparable foundation-model backbone, that scores higher on held-out terrain probes and runs at 14.7 FPS on CPU alone using a RGB camera has the only sensor. Despite that gap in scale, FLINT produces a cheaper, more accurate costmap than a deployed foundation-model system (WildOS) on 23 of 24 replayed field logs. We compare different self-supervised learning signals and deploy the resulting models on a real platform in closed-loop field trials: the best self-supervised head reaches 99% autonomy over the route, outperforming a human-label-trained baseline deployed live on the same course. Our results show that heavy sensing and computing are not necessary for traversability estimation.",
+  "abstract_zh": "在越野条件下进行导航具有挑战性，因为缺乏结构。可通行性的定义没有固定的词汇，它依赖于环境和实体的动态特性。这两个变量都无法大规模手动标注。因此，可通行性必须通过实体自身的经验进行学习。现代平台倾向于使用多种传感器来估计可通行性并进行导航：RGBD摄像头、激光雷达、雷达、惯性测量单元（IMU），并依赖计算密集型平台在神经网络上进行推断。针对这一趋势，我们提出了FLINT，一个轻量级的可通行性估计器：一个具有2160万个参数的主干网络，其规模比可比的基础模型主干小38倍，在保留的地形探测中得分更高，并且在仅使用RGB摄像头作为唯一传感器的情况下，在CPU上以14.7帧每秒（FPS）运行。尽管在规模上存在差距，FLINT在24个重放的实地日志中，有23个的成本图比已部署的基础模型系统（WildOS）更便宜且更准确。我们比较了不同的自监督学习信号，并在闭环实地试验中将生成的模型部署到真实平台上：最佳的自监督头在路线上的自主性达到了99%，超越了在同一课程上实时部署的人类标注训练基线。我们的结果表明，重型传感和计算并不是可通行性估计的必要条件。",
+  "arxiv_id": "2609.26857",
+  "arxiv_url": "https://arxiv.org/abs/2609.26857v1",
+  "authors": [
+    "William Bonilla",
+    "Maxime Boisvert",
+    "David-Alexandre Poissant",
+    "David Meger",
+    "Louis Petit"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-26857",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.084929+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.26857v1",
+  "published_at": "2026-09-22T14:46:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.26857v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "Radar",
+      "世界模型/生成"
+    ]
+  },
+  "title": "FLINT: Fast Lightweight Inference for Traversability",
+  "title_zh": "FLINT：快速轻量级可通行性推断",
+  "translation_url": "https://hjfy.top/arxiv/2609.26857"
+}

@@ -1,6 +1,397 @@
 {
-  "generated_at": "2026-09-23T09:46:43.221458+00:00",
+  "generated_at": "2026-09-24T09:42:24.370227+00:00",
   "items": [
+    {
+      "abstract": "Vision-language models (VLMs) offer a promising approach to long-tail autonomous driving, but existing driving datasets provide limited supervision for connecting decision-critical visual evidence with reasoning and planning. We introduce AnchorReasoning, a visually grounded reasoning dataset built on WOD-E2E, containing 416,119 annotated frames and 395,379 decision-critical elements across four major categories and 19 fine-grained types. Each frame is organized as a visually grounded chain-of-thought (VG-CoT) that links decision-critical element identification and localization, element attributes and implications, driving-action rationale, and action and trajectory planning. We further develop a curriculum supervised fine-tuning strategy that progressively learns these hierarchical capabilities, together with an object-size-aware grounding metric for evaluating localization quality. Experiments across eight general-purpose, embodied-AI, and AV-specific backbones show that VG-CoT supervision improves grounded reasoning and trajectory prediction. Across models, 5-s ADE and FDE decrease by 7.84 and 11.86, while RFS Frame and Cluster improve by 1.66 and 1.70. These gains are achieved with 18.5 fewer reasoning tokens and 0.32 s/frame lower inference latency on average, demonstrating the value of visually grounded, decision-focused supervision for VLM reasoning and planning in long-tail autonomous driving.",
+      "abstract_zh": "视觉语言模型（VLMs）为长尾自动驾驶提供了一种有前景的方法，但现有的驾驶数据集在连接决策关键的视觉证据与推理和规划方面提供的监督有限。我们引入了AnchorReasoning，这是一个基于WOD-E2E构建的视觉基础推理数据集，包含416,119个标注帧和395,379个决策关键元素，涵盖四个主要类别和19个细分类型。每个帧被组织为一个视觉基础的思维链（VG-CoT），将决策关键元素的识别和定位、元素属性及其影响、驾驶动作的理由，以及动作和轨迹规划联系起来。我们进一步开发了一种课程监督微调策略，逐步学习这些层次化能力，并提出了一种关注对象大小的基础度量标准，用于评估定位质量。在八个通用、具身人工智能和自动驾驶特定的基础模型上的实验表明，VG-CoT监督提高了基础推理和轨迹预测。在不同模型中，5秒的平均绝对误差（ADE）和最终位置误差（FDE）分别减少了7.84和11.86，而RFS帧和聚类分别提高了1.66和1.70。这些提升是在平均减少18.5个推理标记和每帧降低0.32秒推理延迟的情况下实现的，展示了视觉基础、以决策为中心的监督在长尾自动驾驶中对VLM推理和规划的价值。",
+      "authors": [
+        "Zhipeng Bao",
+        "Wenjie Zhao",
+        "Tianle Zhu",
+        "Haohua Que",
+        "Chence Yang",
+        "Geng Yuan",
+        "Qianwen Li"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.28366",
+      "tags": [
+        "预测/规划",
+        "地图/定位",
+        "VLM/VLA"
+      ],
+      "title": "AnchorReasoning: A Visual Grounding and Causal Reasoning Dataset in Long-Tail Autonomous Driving Scenarios",
+      "title_zh": "AnchorReasoning：长尾自动驾驶场景中的视觉基础和因果推理数据集",
+      "url": "/daily/2026-09-24/#paper-2609-28366"
+    },
+    {
+      "abstract": "With the development of applications like autonomous driving, object detection has gained significant attention, while also highlighting critical vulnerabilities like backdoor attacks that severely compromise model integrity. Specifically, such attacks involve altering the categories of objects (i.e., object misclassification), removing bounding boxes (i.e., object disappearance), or generating bounding box proposals for non-existent objects (i.e., object generation) when a predefined trigger is present in the input. Although backdoor defenses for image classification are well-established, the research for object detection remains comparatively underexplored. Existing defenses address these threats by scanning outputs or models for potential backdoors but require discarding either malicious data or models. This remedy fails to enable a continuous and accurate perceptual stream for the object detection pipeline. To address such limitations, we propose ODPure, a novel input-stage black-box defense for object detection, which is based on input purification that ensures stable perception flows. Tailored to the dense prediction nature of object detectors, our Corruption-Reconstruction-Selection (CRS) paradigm operates by neutralizing triggers through a diverse portfolio of corruptions to generate a massive pool of redundant proposals, then recovering fine-grained structural cues via generative priors, and finally employing voting to reach a consensus on the resulting detections. Comprehensive experiments demonstrate that our method provides robust defense against diverse backdoor attacks and trigger types while preserving baseline accuracy. Our code is available at https://github.com/Alex66366/ODPure.",
+      "abstract_zh": "随着自动驾驶等应用的发展，目标检测受到了极大的关注，同时也暴露了如后门攻击等严重危害模型完整性的关键漏洞。具体而言，这类攻击涉及在输入中存在预定义触发器时，改变物体类别（即物体误分类）、移除边界框（即物体消失）或为不存在的物体生成边界框提议（即物体生成）。尽管针对图像分类的后门防御已相对成熟，但针对目标检测的研究仍然相对欠缺。现有的防御方法通过扫描输出或模型来识别潜在的后门，但需要丢弃恶意数据或模型。这种补救措施未能为目标检测管道提供连续且准确的感知流。为了解决这些局限性，我们提出了ODPure，这是一种新颖的输入阶段黑箱防御方法，基于输入净化以确保稳定的感知流。针对目标检测的密集预测特性，我们的腐蚀-重建-选择（Corruption-Reconstruction-Selection, CRS）范式通过多样化的腐蚀组合来中和触发器，生成大量冗余提议，然后通过生成先验恢复细粒度结构线索，最后通过投票达成对结果检测的共识。全面的实验表明，我们的方法对多种后门攻击和触发器类型提供了强有力的防御，同时保持了基线准确性。我们的代码可在 https://github.com/Alex66366/ODPure 获取。",
+      "authors": [
+        "Li Zeng",
+        "Mingcheng Duan",
+        "Longfei Fan",
+        "Hangtao Zhang",
+        "Xianlong Wang",
+        "Yanchun Li",
+        "Xia Wen",
+        "Leo Yu Zhang"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.28239",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "LiDAR/点云"
+      ],
+      "title": "ODPure: Backdoor Purification for Object Detection via Ensemble Corruption Consensus",
+      "title_zh": "ODPure：通过集成腐蚀共识进行目标检测的后门净化",
+      "url": "/daily/2026-09-24/#paper-2609-28239"
+    },
+    {
+      "abstract": "Driving world-action models improve planning by coupling multimodal reasoning with future prediction, but their growing inference cost increasingly conflicts with the real-time latency requirements of vehicle control. Existing acceleration methods reduce tokens, layers, or sampling steps with policies selected prior to deployment, yet leave residual runtime variation largely unexploited after offline profiling and static scheduling on shared onboard compute. We observe that the largest admissible compute budget varies systematically with the residual runtime state, while recent realized latency provides a direct signal of the available compute slack. Motivated by this observation, we propose \\textbf{SlackDrive}, a pre-inference compute allocator that reuses realized latency to select the compute budget of each control step before model execution. SlackDrive profiles the latency and planning utility of a small discrete budget set once, estimates online compute state from completed forwards, and selects the highest-utility budget predicted to remain within the admissible latency envelope, complementing existing profiling and resource scheduling while preserving the driving backbone and its compute actuator. On NAVSIM v2 with DriveDreamer-Policy, SlackDrive improves latency-constrained EPDMS by $21.7\\%$ over the strongest baseline under a stringent latency regime, while the full-budget model and preconfigured token-pruning baselines exceed the admissible latency envelope under runtime contention.",
+      "abstract_zh": "驾驶世界行动模型通过将多模态推理与未来预测相结合来改善规划，但其日益增长的推理成本与车辆控制的实时延迟要求之间的冲突越来越明显。现有的加速方法通过在部署前选择策略来减少令牌、层或采样步骤，但在离线分析和静态调度共享车载计算后，仍然未充分利用剩余的运行时变化。我们观察到，最大的可接受计算预算与剩余运行时状态系统性地变化，而最近实现的延迟则直接提供了可用计算余量的信号。基于这一观察，我们提出了 extbf{SlackDrive}，一种预推理计算分配器，它重用已实现的延迟，在模型执行之前选择每个控制步骤的计算预算。SlackDrive 一次性分析小离散预算集的延迟和规划效用，从已完成的前向推理中估计在线计算状态，并选择预测将在可接受延迟范围内保持的最高效用预算，补充现有的分析和资源调度，同时保留驾驶骨干和其计算执行器。在使用 DriveDreamer-Policy 的 NAVSIM v2 上，SlackDrive 在严格的延迟条件下，相较于最强基线提高了 21.7 ext{%} 的延迟受限 EPDMS，而全预算模型和预配置的令牌修剪基线在运行时竞争下超过了可接受的延迟范围。",
+      "authors": [
+        "Xiaohuan Pei",
+        "Hengguang Zhou",
+        "Yuanhao Ban",
+        "Justin Cui",
+        "Jiaqi Feng",
+        "Haoyu Xie",
+        "Tao Huang",
+        "Pichao Wang",
+        "Yanchao Yang",
+        "Cho-Jui Hsieh"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.28064",
+      "tags": [
+        "端到端驾驶",
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "SlackDrive: Reclaiming Runtime Slack for Adaptive Driving Inference",
+      "title_zh": "SlackDrive：重新利用运行时余量以适应驾驶推理",
+      "url": "/daily/2026-09-24/#paper-2609-28064"
+    },
+    {
+      "abstract": "We study hidden-target seeking in an anchor-free regime where neither the vehicle, the relay, nor the target has an accessible global pose. The vehicle never senses the target directly; it receives only range-bearing observations through a single relay of unknown position and orientation, with motion known only via integrated body-frame odometry. Absolute localization is fundamentally impossible: the joint configuration retains an exact three-dimensional SE(2) gauge no estimator can resolve. Yet the quantities needed for control remain fully recoverable: motion collapses calibration to a task-relevant quotient, the relay-to-odometry yaw and target displacement, identifiable in closed form from two distinct vehicle views. We introduce an O(K) multi-view self-calibration estimator with an exact first-order yaw-uncertainty certificate that propagates the cross-view correlations integrated odometry induces: the full certificate attains 95.0% pooled coverage at the nominal 95% level, versus 82.1% when correlated poses are treated as independent. The certificate drives a hybrid policy that excites until calibration is trustworthy, refuses uncertified estimates, seeks using continuously re-measured geometry, and detects relay-frame changes via persistent certified inconsistency, avoiding unbounded dead-reckoning drift. Across 200 randomized closed-loop trials, the method attains 0.064 m median station error versus 0.065 m for an oracle given the true relay yaw, despite 27 m median dead-reckoning drift over long horizons; 90 physics-based ROS 2/Gazebo trials retain 30/30 success under nominal operation, communication degradation, and relay-frame disturbances. These results show global localization is unnecessary for reliable hidden-target seeking under this single-relay model, even when both the sensing infrastructure and the vehicle's own reference frame are uncalibrated.",
+      "abstract_zh": "我们研究了一种无锚的隐藏目标寻址机制，其中车辆、中继和目标均没有可访问的全局位姿。车辆从未直接感知目标；它仅通过一个未知位置和方向的中继接收范围-方位观测，运动信息仅通过集成的机体框架里程计得知。绝对定位在根本上是不可能的：联合配置保持一个精确的三维 SE(2) 量规，没有任何估计器可以解决。然而，控制所需的量仍然可以完全恢复：运动将校准简化为与任务相关的商，即中继到里程计的偏航角和目标位移，可以从两个不同的车辆视角中以封闭形式识别。我们引入了一种 O(K) 多视角自校准估计器，具有精确的一阶偏航不确定性证书，该证书传播了跨视角相关性所导致的集成里程计：完整证书在名义 95% 水平下达到 95.0% 的汇总覆盖率，而当相关位姿被视为独立时，仅为 82.1%。该证书驱动一种混合策略，直到校准可靠为止，拒绝未认证的估计，使用持续重新测量的几何形状进行寻址，并通过持久的认证不一致性检测中继框架的变化，从而避免无限制的死算漂移。在 200 次随机闭环试验中，该方法实现了 0.064 米的中位站点误差，而在给定真实中继偏航的情况下，oracle 的误差为 0.065 米，尽管在长时间范围内存在 27 米的中位死算漂移；在 90 次基于物理的 ROS 2/Gazebo 试验中，在名义操作、通信降级和中继框架干扰下，均保持 30/30 的成功率。这些结果表明，在这种单中继模型下，即使感知基础设施和车辆自身的参考框架均未校准，全球定位对于可靠的隐藏目标寻址也是不必要的。",
+      "authors": [
+        "Yash Bagla"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27905",
+      "tags": [
+        "地图/定位",
+        "安全/异常",
+        "仿真/数据"
+      ],
+      "title": "Anchor-Free Hidden-Target Seeking via Certified Self-Calibration under Correlated Odometry",
+      "title_zh": "基于相关里程计的无锚隐藏目标寻址通过认证自校准",
+      "url": "/daily/2026-09-24/#paper-2609-27905"
+    },
+    {
+      "abstract": "Vision-language-action models (VLA) promise human-steerable autonomous driving, but their training is bottlenecked by the scarcity of frames paired with natural-language instructions: while camera streams and expert trajectories are logged at scale, language annotations (e.g., turn left at the intersection) remain scarce and expensive to acquire. To address this challenge, we introduce Latent Action Driving Annotations (LADA), a three-stage pipeline that transforms abundant unlabelled observation-trajectory pairs into a substrate for language-conditioned control. First, we train a latent action model with a vector-quantised bottleneck, producing a compact codebook of high-level vehicle intents. Second, a small language-annotated subset is used to train a vision-language translator to map observations and language instructions into this codebook. Third, we train a driving VLA on observation-latent-action pairs over the full unlabelled corpus. Using fewer than 5% of language annotations and without leveraging any auxiliary chain-of-thought reasoning or visual question answering streams, LADA achieves a Driving Score of 87.98 and a Success Rate of 70.46% on the closed-loop Bench2Drive benchmark, matching or surpassing fully supervised baselines.",
+      "abstract_zh": "视觉-语言-行动模型（VLA）承诺实现人类可操控的自主驾驶，但其训练受到与自然语言指令配对的帧稀缺的瓶颈限制：尽管摄像头流和专家轨迹在大规模下被记录，但语言注释（例如，在交叉口左转）仍然稀缺且获取成本高。为了解决这一挑战，我们提出了潜在行动驾驶注释（LADA），这是一种三阶段流程，将丰富的未标记观察-轨迹对转化为语言条件控制的基础。首先，我们训练一个具有向量量化瓶颈的潜在行动模型，生成一个高层次车辆意图的紧凑代码本。其次，使用一个小的语言注释子集训练视觉-语言翻译器，将观察和语言指令映射到该代码本中。第三，我们在整个未标记语料库上对观察-潜在行动对训练驾驶VLA。使用不到5%的语言注释，并且不利用任何辅助的思维链推理或视觉问答流，LADA在闭环Bench2Drive基准测试中实现了87.98的驾驶得分和70.46%的成功率，达到或超过了完全监督的基准。",
+      "authors": [
+        "Alexey Zakharov",
+        "Kemal Oksuz",
+        "Puneet K. Dokania"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27747",
+      "tags": [
+        "VLM/VLA",
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "Less Language, More Latents: Annotation-Efficient VLAs for Driving",
+      "title_zh": "更少的语言，更丰富的潜在信息：用于驾驶的注释高效视觉语言行动模型",
+      "url": "/daily/2026-09-24/#paper-2609-27747"
+    },
+    {
+      "abstract": "Fixed roadside cameras repeatedly observe a stable scene overlaid by sparse moving traffic. Temporal memory can recover weak observations, but reusing moving evidence at stale locations can corrupt occupancy predictions. Motion compensation addresses displacement, while reliance on the resulting history remains a separate learning problem. We introduce RoadOcc, which learns soft routing among fixed-coordinate history (\\emph{Persist}), velocity-addressed history (\\emph{Transport}), and current evidence (\\emph{Refresh}). Motion state and class-consistent historical support supervise these source choices. Dynamic-aware cross-attention (DCA) updates candidate locations, multi-scale voxel velocity estimation (VVE) constructs transport addresses from multi-scale current--history correspondence, and velocity-guided dynamic sparse fusion (VDSF) combines routed evidence under fixed sparse-token budgets. On InfraOcc, RoadOcc reaches 65.29 mIoU and 32.37 dynamic mIoU, gains of 4.44 and 4.71 over STCOcc. Controlled address experiments show that VVE raises dynamic mIoU by 0.87 over fixed-coordinate reading. Across three seeds, supervised P/T/R adds 1.40 dynamic points over motion-corrected retrieval, while removing Refresh costs 0.32 points. Results from two transfer models, Occ3D-nuScenes, and longer intervals provide additional support. Code will be released.",
+      "abstract_zh": "固定的路边摄像头反复观察一个稳定的场景，场景上叠加着稀疏的移动交通。时间记忆可以恢复微弱的观测，但在陈旧位置重用移动证据可能会破坏占用预测。运动补偿解决了位移问题，而依赖于由此产生的历史仍然是一个独立的学习问题。我们提出了 RoadOcc，它在固定坐标历史（ extit{Persist}）、速度地址历史（ extit{Transport}）和当前证据（ extit{Refresh}）之间学习软路由。运动状态和类别一致的历史支持监督这些来源选择。动态感知交叉注意力（DCA）更新候选位置，多尺度体素速度估计（VVE）从多尺度当前-历史对应关系构建传输地址，而速度引导的动态稀疏融合（VDSF）在固定稀疏令牌预算下组合路由证据。在 InfraOcc 数据集上，RoadOcc 达到 65.29 mIoU 和 32.37 动态 mIoU，相较于 STCOcc 提升了 4.44 和 4.71。控制地址实验表明，VVE 在固定坐标读取上提高了 0.87 的动态 mIoU。在三个种子实验中，监督的 P/T/R 相较于运动校正检索增加了 1.40 动态点，而去除 Refresh 则损失了 0.32 点。来自两个迁移模型 Occ3D-nuScenes 和更长时间间隔的结果提供了额外支持。代码将会发布。",
+      "authors": [
+        "Xiaokai Bai",
+        "Lei Yang",
+        "Songkai Wang",
+        "Lianqing Zheng",
+        "Si-Yuan Cao",
+        "Hui-liang Shen"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27677",
+      "tags": [
+        "BEV/Occupancy",
+        "感知",
+        "多传感器融合"
+      ],
+      "title": "RoadOcc Learns When to Persist, Transport, or Refresh Memory for Roadside Occupancy Prediction",
+      "title_zh": "RoadOcc 学习何时坚持、传输或刷新记忆以进行路边占用预测",
+      "url": "/daily/2026-09-24/#paper-2609-27677"
+    },
+    {
+      "abstract": "4D radar complements dense image semantics with long-range geometry and radial motion, but existing radar--camera detectors largely solve \\emph{where} to align the modalities while leaving \\emph{whether} a piece of evidence supports an evolving object hypothesis implicit. An image token may describe an occluder, a nearby radar return may belong to another object, and a pose-aligned memory slot may carry incompatible motion. We formulate \\emph{hypothesis-conditioned evidence grounding}, which separates candidate access from evidence use: semantic, geometric, or temporal evidence is filtered or conditioned by the evolving 3D state before updating the corresponding query. \\sgdetpp{} instantiates this principle through Anchor-Grounded Semantic Retrieval (AGR), which conditions deformable image retrieval on pooled anchor-consistent radar support; Geometry-Consistent Anchor Refinement (GCR), which attentively aggregates individual associated returns; and Doppler-Verified Correspondence (DVC), which replaces history only when current radial motion contradicts it. \\sgdetpp{} improves the strongest compared method by 3.82 mAP and 6.82 ODS on OmniHD-Scenes and by 6.82 mAP and 9.22 NDS on ManTruckScenes, while also leading the listed methods in the TJ4DRadSet test comparison. Mechanism-targeted evaluations show that AGR improves strict AP in every projected-occlusion bin, the yaw-aligned box gate raises target-return purity from 29.95\\% to 58.87\\%, and DVC preserves 96.11\\% of motion-consistent history while retaining 75.90\\% contradiction recall. Code will be released.",
+      "abstract_zh": "4D雷达通过长距离几何信息和径向运动补充了密集图像语义，但现有的雷达-相机检测器主要解决 extit{如何}对齐模态，而将 extit{是否}一条证据支持一个不断演变的目标假设隐含化。图像标记可能描述一个遮挡物，附近的雷达回波可能属于另一个物体，而姿态对齐的记忆槽可能承载不兼容的运动。我们提出了 extit{假设条件证据基础}，将候选访问与证据使用分开：语义、几何或时间证据在更新相应查询之前，经过不断演变的3D状态进行过滤或条件化。SGDet3D++通过锚点基础语义检索（Anchor-Grounded Semantic Retrieval, AGR）实现这一原则，该方法基于池化的锚点一致雷达支持条件化可变形图像检索；几何一致锚点细化（Geometry-Consistent Anchor Refinement, GCR），该方法关注地聚合个体相关回波；以及多普勒验证对应（Doppler-Verified Correspondence, DVC），该方法仅在当前径向运动与历史相矛盾时替换历史。SGDet3D++在OmniHD-Scenes上提高了最强比较方法3.82 mAP和6.82 ODS，在ManTruckScenes上提高了6.82 mAP和9.22 NDS，同时在TJ4DRadSet测试比较中领先于列出的其他方法。机制针对性评估显示，AGR在每个投影遮挡区间提高了严格AP，偏航对齐的框门将目标回波纯度从29.95 ext{%}提高到58.87 ext{%}，而DVC在保留96.11 ext{%}运动一致历史的同时保持75.90 ext{%}矛盾召回率。代码将会发布。",
+      "authors": [
+        "Xiaokai Bai",
+        "Zhenyu Fan",
+        "Lianqing Zheng",
+        "Songkai Wang",
+        "Si-Yuan Cao",
+        "Hui-liang Shen"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27671",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "3D 检测"
+      ],
+      "title": "SGDet3D++: Geometry-Grounded Semantics for 4D Radar and Camera 3D Object Detection",
+      "title_zh": "SGDet3D++：基于几何的4D雷达与相机3D目标检测的语义",
+      "url": "/daily/2026-09-24/#paper-2609-27671"
+    },
+    {
+      "abstract": "The growing demand for automation in the mining industry, particularly for the autonomous operation of articulated dump trucks (ADTs), has drawn increased attention to accurate vehicle modeling. The importance of such models lies in their use in model predictive control (MPC), model-based estimation methods, and vehicle simulation. While dynamic modeling offers a viable solution for these purposes, it is associated with complex setup and parametrization and may require recalibration in changing operating environments. As a result, kinematic models have dominated ADT modeling, especially in MPCs, at the expense of reduced prediction accuracy. In this work, we propose an approach using Gaussian Process Regression (GPR) to learn the sideslip angle of the vehicle, which is identified as the primary contributor to the reduced accuracy of kinematic models. The learned GPR function is augmented into the kinematic model to form a gray-box model that aims to reduce the gap to dynamic models. We show that the gray-box model can predict the sideslip angle and, consequently, the vehicle's lateral velocity, thereby improving the MPC's prediction performance. The resulting gray-box MPC is compared against two white-box MPCs in a simulation environment. The results indicate an improvement in terms of maximum lateral tracking error from over 2 m to 0.56 m.",
+      "abstract_zh": "随着矿业行业对自动化需求的不断增长，特别是对关节式自卸卡车（ADTs）自主操作的需求，准确的车辆建模受到了越来越多的关注。这类模型的重要性体现在其在模型预测控制（MPC）、基于模型的估计方法和车辆仿真中的应用。尽管动态建模为这些目的提供了可行的解决方案，但其通常伴随着复杂的设置和参数化，并且在变化的操作环境中可能需要重新校准。因此，运动学模型在ADTs建模中占主导地位，尤其是在MPC中，但这也导致了预测精度的降低。在本研究中，我们提出了一种使用高斯过程回归（GPR）学习车辆侧滑角的方法，侧滑角被确定为运动学模型精度降低的主要因素。将学习到的GPR函数与运动学模型相结合，形成一个灰箱模型，旨在缩小与动态模型之间的差距。我们展示了灰箱模型能够预测侧滑角，从而预测车辆的横向速度，进而提高MPC的预测性能。最终的灰箱MPC在仿真环境中与两个白箱MPC进行了比较。结果表明，最大横向跟踪误差从超过2米改善至0.56米。",
+      "authors": [
+        "Arash Shahirpour",
+        "Jens Ahlers",
+        "Christopher Schulte",
+        "Tim Reuscher"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27597",
+      "tags": [
+        "预测/规划"
+      ],
+      "title": "Gray-Box Model Predictive Control for Articulated Dump Trucks via Gaussian Process Learning of Sideslip",
+      "title_zh": "基于高斯过程学习侧滑的关节式自卸卡车灰箱模型预测控制",
+      "url": "/daily/2026-09-24/#paper-2609-27597"
+    },
+    {
+      "abstract": "Unsupervised domain adaptation (UDA) for semantic segmentation remains challenging under adverse weather conditions because severe appearance changes enlarge the domain gap and degrade the reliability of pseudo labels in the target domain. To address this problem, we propose an Intra-Class Mixing Consistency (ICM) framework that enforces prediction consistency between an intra-class mixed image and its original counterpart. Unlike previous mixing-based consistency methods that combine regions across different images or domains and may introduce unrealistic semantic inconsistencies, ICM performs mixing within the same image and semantic class, preserving realistic semantic layout for consistency regularization. With ICM, we establish a new state-of-the-art performance for clear-to-adverse-weather unsupervised domain adaptation (UDA) in semantic segmentation. On the Cityscapes $\\rightarrow$ ACDC benchmark, our method achieves 75.7\\% mIoU, outperforming the previous state of the art by +1.9 pp, demonstrating its effectiveness in mitigating class confusion under challenging environmental conditions. The code is provided in the supplementary material.",
+      "abstract_zh": "在逆天气条件下，语义分割的无监督领域适应（UDA）仍然面临挑战，因为严重的外观变化扩大了领域间的差距，并降低了目标领域伪标签的可靠性。为了解决这个问题，我们提出了一种类内混合一致性（Intra-Class Mixing Consistency, ICM）框架，该框架强制要求类内混合图像与其原始对应图像之间的预测一致性。与以往通过不同图像或领域组合区域的混合一致性方法不同，这些方法可能引入不现实的语义不一致，ICM 在同一图像和语义类别内进行混合，保持了现实的语义布局以进行一致性正则化。通过 ICM，我们在语义分割的清晰到逆天气无监督领域适应（UDA）中建立了新的最先进性能。在 Cityscapes $ ightarrow$ ACDC 基准测试中，我们的方法达到了 75.7\\% 的 mIoU，超越了之前的最先进水平 +1.9 个百分点，证明了其在挑战性环境条件下减轻类别混淆的有效性。代码已在补充材料中提供。",
+      "authors": [
+        "Boying Li",
+        "Chang Liu",
+        "Britta Ayano Wilde",
+        "György Kovács",
+        "Tosin Adewumi",
+        "Björn Backe",
+        "Hamam Mokayed"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27533",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "ICM: Intra-class Mixing for Domain Adaptation in Adverse Weather",
+      "title_zh": "ICM：逆天气条件下的领域适应中的类内混合",
+      "url": "/daily/2026-09-24/#paper-2609-27533"
+    },
+    {
+      "abstract": "Stereo visual SLAM systems built on local descriptors suffer from semantic ambiguity, instance-level confusion, and independently moving objects, each corrupting data association and accumulating as trajectory drift. Prevailing semantic and dynamic SLAM methods address this through binary feature rejection, sacrificing correspondence density for outlier suppression. We contend that contextual implausibility is better expressed as a graded quantity than an exclusion criterion. We present Know-Your-Scene (KYS)-SLAM, a modular extension of ORB-SLAM3 that supplants feature rejection with continuous correspondence modulation. The contribution is the reframing of contextual evidence as correspondence cost, applied within feature matching and leaving the geometric backend unmodified. Each keypoint is augmented with semantic, panoptic, and motion priors fused through a hierarchical compatibility formulation, in which semantic class and instance identity enforce structural plausibility while a zero-shot motion score down-weights features on independently moving objects. That score comes from a training-free module fitting a depth-aware ego-motion model to background optical flow and classifying panoptic segments via self-calibrating, coverage-aware thresholds, so only segments with sufficient motion evidence are penalized and static structure is left unpenalized. Penalizing correspondences rather than discarding them preserves the geometric support bundle adjustment depends on. Under one fixed configuration, no coefficient retuned per sequence or dataset, KYS-SLAM reduces per-sequence ATE RMSE by 17.4% on outdoor KITTI and 27.7% on indoor EuRoC across 21 stereo sequences with no regressions, and by 6.6% on dynamic subsets of KITTI Tracking and 17.8%, up to 31.2%, on Virtual KITTI 2 -- cross-domain transfer across outdoor driving, indoor flight, and synthetic imagery under one set of constants.",
+      "abstract_zh": "基于局部描述子的立体视觉SLAM系统面临语义模糊、实例级混淆和独立移动物体等问题，这些问题会破坏数据关联并导致轨迹漂移。现有的语义和动态SLAM方法通过二元特征拒绝来解决这一问题，牺牲了对应密度以抑制离群值。我们认为，上下文的不合理性更适合用分级量来表达，而不是作为排除标准。我们提出了Know-Your-Scene (KYS)-SLAM，这是ORB-SLAM3的一个模块化扩展，它用连续对应调制取代了特征拒绝。我们的贡献在于将上下文证据重新框架为对应成本，应用于特征匹配，同时保持几何后端不变。每个关键点都通过层次兼容性公式增强了语义、全景和运动先验，其中语义类别和实例身份强制执行结构合理性，而零样本运动评分则降低了独立移动物体上的特征权重。该评分来自一个无训练模块，它将深度感知的自我运动模型拟合到背景光流，并通过自校准、覆盖感知的阈值对全景段进行分类，因此只有具有足够运动证据的段会受到惩罚，而静态结构则不受惩罚。惩罚对应关系而不是丢弃它们，保留了几何支持束调整所依赖的内容。在一个固定配置下，没有针对每个序列或数据集重新调整的系数，KYS-SLAM在21个立体序列上将户外KITTI的每序列平均绝对误差根均方根（ATE RMSE）降低了17.4%，在室内EuRoC上降低了27.7%，且没有回归，在KITTI Tracking的动态子集上降低了6.6%，在Virtual KITTI 2上降低了17.8%，最高可达31.2%——在一个常数集下实现了户外驾驶、室内飞行和合成图像之间的跨域迁移。",
+      "authors": [
+        "Preeti Chatterjee",
+        "Jin Lu",
+        "Jin Sun",
+        "Suchendra M. Bhandarkar"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27509",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "预测/规划"
+      ],
+      "title": "Know-Your-Scene (KYS)-SLAM: Hierarchical Semantic-Motion Priors for Feature Matching in Stereo Visual SLAM",
+      "title_zh": "Know-Your-Scene (KYS)-SLAM：用于立体视觉SLAM中特征匹配的层次语义运动先验",
+      "url": "/daily/2026-09-24/#paper-2609-27509"
+    },
+    {
+      "abstract": "Long-term autonomy in human-populated environments requires anticipating whether and how people will move at times a robot has not yet observed. Existing representations of pedestrian motion face a tradeoff: they either forecast future activity, reducing each location to a scalar rate, or model the full directional distribution, holding it fixed in time. We present Kairos, a predictive directional-flow memory that extends a hierarchical 3D scene graph (3DSG) to a 4D scene graph (4DSG). Every observed voxel of the reconstructed geometry stores a directional mixture and a presence rate, and spectral predictors forecast, for any future query time, both the probability that people are present and the full directional distribution of their motion. Pairwise flow dependence between adjacent voxels supports conditional queries, and per-voxel predictive variances yield calibrated credible intervals that tighten as observations accumulate. We evaluate Kairos on three real pedestrian environments: a robot-collected campus dataset, a shopping mall, and a station concourse recorded continuously for eleven months. Its learned state remains consistent under loop-closure corrections, and its forecasts are competitive with dedicated occupancy and flow models trained on the full detection stream, although Kairos learns from only the small fraction available to a patrolling robot. Finally, we validate the representation on a downstream encounter-probability planning task, where plans computed over the Kairos forecasts encounter more people than plans computed over any time-invariant map at an equal success rate. We provide the code at https://github.com/IacopomC/kairos.",
+      "abstract_zh": "在有人类居住的环境中实现长期自主性需要预测人们在机器人尚未观察到的时刻将如何移动。现有的行人运动表示面临权衡：它们要么预测未来活动，将每个位置简化为一个标量速率，要么建模完整的方向分布，并在时间上保持不变。我们提出了Kairos，一种预测性方向流记忆，它将层次化的3D场景图（3DSG）扩展到4D场景图（4DSG）。每个观察到的重建几何体的体素存储一个方向混合和一个存在率，谱预测器预测在任何未来查询时间，人们存在的概率以及他们运动的完整方向分布。相邻体素之间的成对流依赖关系支持条件查询，且每个体素的预测方差产生经过校准的可信区间，随着观察的积累而收紧。我们在三个真实的行人环境中评估Kairos：一个机器人收集的校园数据集、一个购物中心和一个连续记录了十一个月的车站大厅。其学习状态在闭环校正下保持一致，其预测与在完整检测流上训练的专用占用和流模型相竞争，尽管Kairos仅从巡逻机器人可用的小部分数据中学习。最后，我们在下游的遇见概率规划任务中验证了该表示，在该任务中，基于Kairos预测计算的计划在相同成功率下遇到的人数多于基于任何时间不变地图计算的计划。我们在https://github.com/IacopomC/kairos提供了代码。",
+      "authors": [
+        "Iacopo Catalano",
+        "Julio A. Placed",
+        "Javier Civera",
+        "Jorge Peña Queralta"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27467",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "BEV/Occupancy"
+      ],
+      "title": "Kairos: Grounded Forecasting of Presence and Directional Flow in 4D Scene Graphs",
+      "title_zh": "Kairos：在4D场景图中对存在性和方向流的基于实证的预测",
+      "url": "/daily/2026-09-24/#paper-2609-27467"
+    },
+    {
+      "abstract": "Automotive spinning FMCW radar provides dense, $360^\\circ$ sensing and remains reliable under poor illumination and adverse weather, making it well-suited to autonomous navigation. Place recognition uses these observations to identify previously visited locations for re-localization and long-term navigation. However, heading changes appear as circular shifts in the polar radar representation, and conventional global aggregation can lose relationships among radar responses that are important for distinguishing similar places. We propose SGCA-Net, a spinning radar place recognition framework that combines rotation-robust feature extraction with Spatially Gated Correlation Aggregation (SGCA). SGCA learns spatial weights to reduce the influence of unstable and ambiguous radar regions, while aggregating pairwise correlations among local responses to preserve informative feature relationships. Experiments on the MulRan dataset show that SGCA-Net consistently outperforms SOTA methods across urban, campus, and open-road environments, while remaining robust to substantial heading variation. Evaluation on the HeRCULES dataset further demonstrates that SGCA-Net generalizes to unseen environments and radar sensors without fine-tuning.",
+      "abstract_zh": "汽车旋转FMCW雷达提供密集的360°感知，并在光照不足和恶劣天气下保持可靠性，使其非常适合于自主导航。位置识别利用这些观测数据来识别先前访问过的位置，以实现重新定位和长期导航。然而，航向变化在极坐标雷达表示中表现为圆形移位，而传统的全局聚合可能会丢失雷达响应之间的重要关系，这些关系对于区分相似地点至关重要。我们提出了SGCA-Net，一种结合旋转鲁棒特征提取与空间门控相关聚合（SGCA）的旋转雷达位置识别框架。SGCA学习空间权重，以减少不稳定和模糊雷达区域的影响，同时聚合局部响应之间的成对相关性，以保留信息丰富的特征关系。在MulRan数据集上的实验表明，SGCA-Net在城市、校园和开放道路环境中始终优于当前最先进的方法，同时对显著的航向变化保持鲁棒性。在HeRCULES数据集上的评估进一步证明，SGCA-Net在未见环境和雷达传感器上具有良好的泛化能力，无需微调。",
+      "authors": [
+        "Saimunur Rahman",
+        "Sagun Singh Shrestha",
+        "Abdelwahed Khamis",
+        "Peyman Moghadam"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27394",
+      "tags": [
+        "Radar",
+        "地图/定位",
+        "仿真/数据"
+      ],
+      "title": "Automotive mmWave Spinning Radar Place Recognition with Spatially Gated Feature-Correlation Representation",
+      "title_zh": "汽车毫米波旋转雷达位置识别与空间门控特征相关表示",
+      "url": "/daily/2026-09-24/#paper-2609-27394"
+    },
+    {
+      "abstract": "Reliable localization of non-line-of-sight (NLOS) pedestrians is critical for safe urban autonomous driving, yet it remains highly challenging in ego-dynamic outdoor environments, where ego-vehicle motion makes radar multipath propagation complex and noisy. In this paper, we present a reflection-aware framework for NLOS pedestrian localization with a moving ego-vehicle in outdoor testbed scenarios. Our framework fuses front-view camera images and 2D radar point clouds to infer reflection orders and reflective surface distributions in bird's-eye-view space. It then uses physics-guided ray tracing to reconstruct distorted reflection paths and localize the hidden pedestrian. We validate the framework in outdoor testbed scenarios under ego-dynamic conditions. The results demonstrate the effectiveness of the proposed framework for NLOS pedestrian localization with a moving ego-vehicle.",
+      "abstract_zh": "可靠的非视距（NLOS）行人定位对于安全的城市自动驾驶至关重要，但在自我动态的户外环境中仍然面临极大的挑战，因为自我车辆的运动使得雷达多径传播变得复杂且噪声较大。本文提出了一种考虑反射的框架，用于在户外测试场景中实现移动自我车辆的NLOS行人定位。我们的框架融合了前视摄像头图像和二维雷达点云，以推断鸟瞰图空间中的反射顺序和反射面分布。然后，它利用物理引导的光线追踪重建扭曲的反射路径并定位隐藏的行人。我们在自我动态条件下的户外测试场景中验证了该框架。结果表明，所提出的框架在移动自我车辆的NLOS行人定位中具有良好的效果。",
+      "authors": [
+        "Byeonggyu Park",
+        "Mingu Jeon",
+        "Seong-Woo Kim"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27346",
+      "tags": [
+        "LiDAR/点云",
+        "地图/定位",
+        "BEV/Occupancy"
+      ],
+      "title": "Reflection-Aware Reasoning for Non-Line-of-Sight Pedestrian Localization",
+      "title_zh": "考虑反射的非视距行人定位推理",
+      "url": "/daily/2026-09-24/#paper-2609-27346"
+    },
+    {
+      "abstract": "Infrared (IR) imaging is crucial for autonomous driving, remote sensing, and other perception tasks. However, adverse weather may introduce fake structural responses that are entangled with real thermal structures. Existing IR restoration methods are typically designed for a single degradation type or directly reconstruct from degradation-entangled representations. Consequently, they struggle to distinguish intrinsic thermal structures from weather-induced fake responses and to accommodate spatially varying degradation severity, leading to artifacts or the over-suppression of weak but meaningful thermal responses. To address these issues, we propose TSGPD-IR, a type-severity guided progressive disentanglement network for all-in-one infrared restoration that factorizes restoration guidance into task-level weather semantics and region-level degradation severity. Specifically, a Weather and Semantic Co-Guided Multi-Level Prompt Generation Module combines global weather semantics with stage-wise local features to generate adaptive prompts that progressively suppress degradation-induced responses while preserving intrinsic thermal structures. To complement global weather semantics with spatial restoration control, a Proxy-Supervised Regional Degradation Estimator derives severity supervision without manual annotations and predicts spatially varying degradation priors. Guided by these cues, a Multi-Source Collaborative Expert Selection Strategy uses a shared branch to preserve weather-invariant thermal structures and hierarchical routing to select weather-specific expert pools and severity-compatible regional experts. This design progressively separates degradation interference from genuine thermal content and enables region-adaptive restoration, reducing both residual artifacts and over-suppression.",
+      "abstract_zh": "红外成像在自动驾驶、遥感及其他感知任务中至关重要。然而，不利天气可能会引入与真实热结构交织的虚假结构响应。现有的红外恢复方法通常针对单一退化类型设计，或直接从退化交织的表示中进行重建。因此，它们难以区分内在热结构与天气引起的虚假响应，并且难以适应空间变化的退化严重性，导致伪影或对微弱但有意义的热响应的过度抑制。为了解决这些问题，我们提出了TSGPD-IR，一种基于类型-严重性引导的渐进式解耦网络，用于一体化红外恢复，将恢复指导分解为任务级天气语义和区域级退化严重性。具体而言，天气与语义共同引导的多级提示生成模块结合了全球天气语义与阶段性局部特征，生成自适应提示，逐步抑制退化引起的响应，同时保留内在热结构。为了用空间恢复控制补充全球天气语义，代理监督区域退化估计器在没有人工标注的情况下推导出严重性监督，并预测空间变化的退化先验。在这些线索的引导下，多源协作专家选择策略使用共享分支来保留天气不变的热结构，并通过分层路由选择特定于天气的专家池和与严重性兼容的区域专家。该设计逐步将退化干扰与真实热内容分离，并实现区域自适应恢复，减少残余伪影和过度抑制。",
+      "authors": [
+        "Xinyao Wang",
+        "Lijun He",
+        "Zhihan Ren",
+        "Fan Li"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27317",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "世界模型/生成"
+      ],
+      "title": "Breaking Weather-Content Coupling: Type-Severity Guided Progressive Disentanglement for All-in-One Infrared Restoration",
+      "title_zh": "打破天气-内容耦合：基于类型-严重性引导的渐进式解耦用于一体化红外恢复",
+      "url": "/daily/2026-09-24/#paper-2609-27317"
+    },
+    {
+      "abstract": "Most autonomous-driving datasets record only the action executed by a behavior policy and the single future that followed, providing limited supervision for comparing alternative ego decisions. We introduce BranchDrive, a branch-structured CARLA dataset and benchmark that pairs one canonical pre-decision history with one nominal expert future and twelve physically executed intervention futures spanning acceleration, braking, and left- and right-steering policies at three magnitudes. Each intervention lasts 2.5 s and is followed by expert recovery. Following control-compliance, modality-completeness, replay-fidelity, and action-leakage audits, the frozen benchmark contains 606 independent branch groups and 7,878 associated trajectories. We evaluate prediction of six continuous short-horizon outcomes and a ten-step ego trajectory using action-only, history-only, structured, visual, multimodal, and privileged bird's-eye-view models. On the held-out test split, the structured history-and-action model achieves a macro normalized mean absolute error of 0.5036 and an average displacement error of 2.2042 m, significantly outperforming both restricted baselines. In full-information offline evaluation, its outcome-derived selector increases balanced policy value from 0.5364 to 0.5704 and reduces normalized regret from 0.2674 to 0.1495 relative to the frozen action prior. However, a validation-calibrated minimum-separation guard rejects every intervention, showing that conservative execution remains unresolved. BranchDrive therefore supports action-conditioned short-horizon prediction and fixed-bank offline decision evaluation, but does not establish exact causal effects, binary safety prediction, or closed-loop safety improvement.",
+      "abstract_zh": "大多数自主驾驶数据集仅记录行为策略执行的动作及其后续的单一未来，这为比较替代自我决策提供了有限的监督。我们引入了BranchDrive，一个基于分支结构的CARLA数据集和基准，它将一个典型的决策前历史与一个标准的专家未来和十二个物理执行的干预未来相配对，这些干预涵盖了加速、制动以及左转和右转的策略，分为三种幅度。每个干预持续2.5秒，并随后由专家进行恢复。经过控制合规性、模态完整性、重放保真度和动作泄漏审计后，冻结基准包含606个独立的分支组和7,878条相关轨迹。我们评估了六个连续短期结果和一个十步自我轨迹的预测，使用仅动作、仅历史、结构化、视觉、多模态和特权鸟瞰模型。在保留的测试集上，结构化历史与动作模型的宏观归一化平均绝对误差为0.5036，平均位移误差为2.2042米，显著优于两个受限基线。在全信息离线评估中，其结果导向选择器将平衡策略值从0.5364提高到0.5704，并将归一化遗憾从0.2674降低到0.1495，相对于冻结的动作先验。然而，经过验证校准的最小分离保护机制拒绝了每个干预，显示出保守执行的问题仍未解决。因此，BranchDrive支持基于行动的短期预测和固定银行的离线决策评估，但并未确立确切的因果效应、二元安全预测或闭环安全改进。",
+      "authors": [
+        "Feeza Khan Khanzada",
+        "Sudarshan Sridhar",
+        "Jaerock Kwon"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27275",
+      "tags": [
+        "仿真/数据",
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "BranchDrive: A Branch-Structured Dataset for Action-Conditioned Driving Prediction",
+      "title_zh": "BranchDrive：一种基于分支结构的行动条件驾驶预测数据集",
+      "url": "/daily/2026-09-24/#paper-2609-27275"
+    },
+    {
+      "abstract": "Infrastructure-based radar systems offer robust and long-range solutions for traffic monitoring, yet their detection and tracking performance under real-world conditions remains insufficiently evaluated. This study introduces DRaT (Drone and Radar Trajectories), a dual-modality dataset of naturalistic vehicle trajectories collected at a highway merging segment in Fort Worth, Texas, to systematically assess radar sensing performance against drone-derived ground truth. The performance is evaluated at three levels: individual vehicle detection, trajectory tracking, and macroscopic traffic parameter estimation. For individual vehicle detection, the radar achieves an overall precision of 78% and a recall of 57%, with degraded performance under congested traffic conditions and at longer distances. At the trajectory level, the radar demonstrates reasonably strong tracking performance (IDF1 = 0.699), maintaining reliable vehicle identities when tracks are successfully established. For macroscopic traffic flow metrics, the radar accurately estimates space-mean speed (MAPE < 4%) but underestimates density and volume by approximately 23% due to missed detections. The paper also discusses practical deployment considerations and potential downstream applications of roadside radar sensing systems. To support reproducible research on infrastructure-based sensing systems, we have open-sourced the DRaT dataset on Zenodo: https://zenodo.org/records/20171110.",
+      "abstract_zh": "基于基础设施的雷达系统为交通监测提供了稳健且长距离的解决方案，但其在现实条件下的检测和跟踪性能仍然缺乏充分评估。本研究引入了DRaT（无人机与雷达轨迹），这是一个在德克萨斯州沃斯堡高速公路合流段收集的自然车辆轨迹的双模态数据集，以系统性评估雷达传感性能与无人机获取的地面真实数据的对比。性能评估分为三个层次：单个车辆检测、轨迹跟踪和宏观交通参数估计。在单个车辆检测方面，雷达的整体精确度为78%，召回率为57%，在拥堵交通条件和较长距离下性能有所下降。在轨迹层面，雷达表现出相当强的跟踪性能（IDF1 = 0.699），在成功建立轨迹时能够保持可靠的车辆身份。在宏观交通流量指标方面，雷达准确估计了空间平均速度（MAPE < 4%），但由于漏检，密度和流量的估计低于实际值约23%。本文还讨论了实际部署考虑因素及路边雷达传感系统的潜在下游应用。为了支持基于基础设施的传感系统的可重复研究，我们已在Zenodo上开源了DRaT数据集：https://zenodo.org/records/20171110。",
+      "authors": [
+        "Tianheng Zhu",
+        "Woei-chyi Chang",
+        "Alamss Riaz",
+        "Sogand Hasanzadeh",
+        "Yiheng Feng"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27143",
+      "tags": [
+        "感知",
+        "预测/规划",
+        "仿真/数据"
+      ],
+      "title": "A Systematic Evaluation of Infrastructure-Based Radar System for Highway Traffic Monitoring",
+      "title_zh": "基于基础设施的雷达系统在高速公路交通监测中的系统评估",
+      "url": "/daily/2026-09-24/#paper-2609-27143"
+    },
+    {
+      "abstract": "Heterogeneity across Collaborative Perception (CP) agents is a major challenge for emerging CP frameworks due to domain gaps from differing sensors, architectures, and training data. Prior works mitigate this challenge by aligning features in a unified space via model retraining or per-agent-type interpreters. These strategies (a) require access to neighbor configurations, (b) do not fully address real-time CP deployment, and (c) generalize poorly to unseen agents joining at run time. To overcome these challenges, we present PEARL, a Prompt-Embedding framework for Anonymous and Real-time Lightweight heterogeneous CP. PEARL supports multiple CP interpreters and selects one for a new-joining agent in real time using two lightweight, multi-scale interpreters trained in parallel: a sparse-detection (LWSD) interpreter that aligns salient regions for cooperative detection, and a dense, domain-invariant (LWDDI) interpreter that produces agent-invariant features for fast interpreter selection. Both interpreters use low-rank visual prompts to reduce computation, storage, and model complexity. Extensive experiments on simulated (OPV2V, V2XSet) and real (DAIR-V2X) datasets show that PEARL generalizes across simulated and real-world cooperative driving scenarios. Its real-time model-selection strategy yields an 8.2% Average Precision (AP) gain over a random-selection baseline while running in 1.67 ms on average. Although primarily designed for real-time CP, PEARL also outperforms state-of-the-art heterogeneous CP frameworks under traditional offline training by 5.6% AP on average while reducing communication cost by up to 34.7 times. Equally important, PEARL does not require sharing agents' configurations or model settings, thereby protecting information that may be proprietary or private. These results establish PEARL as a scalable and practical framework for heterogeneous collaborative perception.",
+      "abstract_zh": "协作感知（Collaborative Perception, CP）代理之间的异构性是新兴CP框架面临的主要挑战，这源于不同传感器、架构和训练数据之间的领域差距。以往的研究通过模型重训练或每种代理类型的解释器在统一空间中对齐特征来缓解这一挑战。这些策略（a）需要访问邻居配置，（b）未能完全解决实时CP部署的问题，以及（c）对在运行时加入的未见代理的泛化能力较差。为克服这些挑战，我们提出了PEARL，一个用于匿名和实时轻量级异构CP的提示嵌入框架。PEARL支持多个CP解释器，并通过两个并行训练的轻量级多尺度解释器实时为新加入的代理选择一个：稀疏检测（LWSD）解释器对齐显著区域以实现协作检测，以及密集的领域不变（LWDDI）解释器生成代理不变特征以快速选择解释器。这两个解释器使用低秩视觉提示来减少计算、存储和模型复杂性。在模拟（OPV2V, V2XSet）和真实（DAIR-V2X）数据集上的大量实验表明，PEARL在模拟和真实世界的协作驾驶场景中具有良好的泛化能力。其实时模型选择策略在平均运行时间为1.67毫秒的情况下，相较于随机选择基线提高了8.2%的平均精度（Average Precision, AP）。尽管PEARL主要设计用于实时CP，但在传统离线训练下，其平均AP也比最先进的异构CP框架提高了5.6%，同时通信成本降低了多达34.7倍。同样重要的是，PEARL不需要共享代理的配置或模型设置，从而保护可能是专有或私密的信息。这些结果确立了PEARL作为一个可扩展且实用的异构协作感知框架。",
+      "authors": [
+        "Armin Maleki",
+        "Hayder Radha"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.27123",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "协同/V2X"
+      ],
+      "title": "PEARL: A Lightweight Prompt-based Feature Interpreter Framework for Real-Time, Anonymous, and Heterogeneous Collaborative Perception",
+      "title_zh": "PEARL：一种轻量级基于提示的特征解释框架，用于实时、匿名和异构协作感知",
+      "url": "/daily/2026-09-24/#paper-2609-27123"
+    },
+    {
+      "abstract": "Event cameras promise low-latency perception for high-speed robotic systems, where even short delays can render detections stale by the time they inform downstream robotic decisions. Yet modern event detectors still require tens of milliseconds of computation before their predictions become available. Conventional evaluation ignores this delay by comparing predictions with annotations at the observation timestamp, even though the scene may have changed by the time those predictions are produced. We study this observation-availability mismatch in event-based multi-object detection and show that state-of-the-art event detectors degrade substantially when evaluated at prediction availability rather than observation time. To address this, we introduce ChronoFuse, a causal availability-time detector that predicts object states for when its output becomes available rather than for when its input was observed. ChronoFuse performs causal cross-time fusion over a multi-scale feature hierarchy, combining current representations with cached temporal features to expose short-term temporal cues without using future observations. The fusion pathway is lightweight, adding only 0.17 million parameters and 0.84 ms of mean end-to-end latency overhead. ChronoFuse recovers 71% of the accuracy lost to latency on 1Mpx driving data and 90.8% under rapid drone motion on FRED, nearly restoring zero-delay performance. Under the extreme motion of EV-Flying, ChronoFuse reaches 20.95 sAP, compared with 2.25 for the strongest standard event detector (9.3x gain). These results show that predicting ahead can be critical for robots operating in fast-changing scenes, including autonomous driving, agile flight, and robotic interception.",
+      "abstract_zh": "事件相机为高速机器人系统提供了低延迟感知，其中即使是短暂的延迟也可能导致检测结果在通知下游机器人决策时变得过时。然而，现代事件检测器在其预测可用之前仍需数十毫秒的计算。传统评估忽略了这一延迟，通过在观察时间戳处将预测与标注进行比较，尽管在这些预测生成时场景可能已经发生变化。我们研究了事件驱动多物体检测中的观察可用性不匹配，并表明当在预测可用性而非观察时间进行评估时，最先进的事件检测器的性能显著下降。为了解决这个问题，我们引入了ChronoFuse，一种因果可用性时间检测器，它预测对象状态时基于其输出可用的时间，而不是输入被观察的时间。ChronoFuse在多尺度特征层次上执行因果跨时间融合，将当前表示与缓存的时间特征相结合，以在不使用未来观察的情况下揭示短期时间线索。融合路径轻量，仅增加0.17百万参数和0.84毫秒的平均端到端延迟开销。ChronoFuse在1Mpx驾驶数据上恢复了71%的因延迟而损失的准确性，在FRED上快速无人机运动下恢复了90.8%的准确性，几乎恢复了零延迟性能。在EV-Flying的极端运动下，ChronoFuse达到了20.95的sAP，而最强标准事件检测器仅为2.25（增益为9.3倍）。这些结果表明，提前预测对于在快速变化场景中操作的机器人至关重要，包括自动驾驶、灵活飞行和机器人拦截。",
+      "authors": [
+        "Biswadeep Sen",
+        "Benoit R. Cottereau",
+        "Nicolas Cuperlier",
+        "Terence Sim"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.26919",
+      "tags": [
+        "感知",
+        "端到端驾驶",
+        "多传感器融合"
+      ],
+      "title": "Bend the Clock: Predicting Ahead to Beat Latency in Event-Based Object Detection",
+      "title_zh": "弯曲时钟：提前预测以克服事件驱动物体检测中的延迟",
+      "url": "/daily/2026-09-24/#paper-2609-26919"
+    },
+    {
+      "abstract": "Navigation in off-road conditions is challenging due to the lack of structure. There is no fixed vocabulary for what is traversable. The traversability depends on both the environment and the embodiment's dynamics. Neither of these two variables can be hand-labeled at scale. Thus, traversability has to be learned by the embodiment's own experience. Modern platforms tend to use multiple sensors to estimate traversability and navigate: RGBD cameras, lidar, radar, IMU, with computationally intensive platforms to run inference on neural networks. Against this trend, we propose FLINT, a lightweight traversability estimator: a 21.6M-parameter backbone, 38\\times smaller than a comparable foundation-model backbone, that scores higher on held-out terrain probes and runs at 14.7 FPS on CPU alone using a RGB camera has the only sensor. Despite that gap in scale, FLINT produces a cheaper, more accurate costmap than a deployed foundation-model system (WildOS) on 23 of 24 replayed field logs. We compare different self-supervised learning signals and deploy the resulting models on a real platform in closed-loop field trials: the best self-supervised head reaches 99% autonomy over the route, outperforming a human-label-trained baseline deployed live on the same course. Our results show that heavy sensing and computing are not necessary for traversability estimation.",
+      "abstract_zh": "在越野条件下进行导航具有挑战性，因为缺乏结构。可通行性的定义没有固定的词汇，它依赖于环境和实体的动态特性。这两个变量都无法大规模手动标注。因此，可通行性必须通过实体自身的经验进行学习。现代平台倾向于使用多种传感器来估计可通行性并进行导航：RGBD摄像头、激光雷达、雷达、惯性测量单元（IMU），并依赖计算密集型平台在神经网络上进行推断。针对这一趋势，我们提出了FLINT，一个轻量级的可通行性估计器：一个具有2160万个参数的主干网络，其规模比可比的基础模型主干小38倍，在保留的地形探测中得分更高，并且在仅使用RGB摄像头作为唯一传感器的情况下，在CPU上以14.7帧每秒（FPS）运行。尽管在规模上存在差距，FLINT在24个重放的实地日志中，有23个的成本图比已部署的基础模型系统（WildOS）更便宜且更准确。我们比较了不同的自监督学习信号，并在闭环实地试验中将生成的模型部署到真实平台上：最佳的自监督头在路线上的自主性达到了99%，超越了在同一课程上实时部署的人类标注训练基线。我们的结果表明，重型传感和计算并不是可通行性估计的必要条件。",
+      "authors": [
+        "William Bonilla",
+        "Maxime Boisvert",
+        "David-Alexandre Poissant",
+        "David Meger",
+        "Louis Petit"
+      ],
+      "date": "2026-09-24",
+      "id": "2609.26857",
+      "tags": [
+        "LiDAR/点云",
+        "Radar",
+        "世界模型/生成"
+      ],
+      "title": "FLINT: Fast Lightweight Inference for Traversability",
+      "title_zh": "FLINT：快速轻量级可通行性推断",
+      "url": "/daily/2026-09-24/#paper-2609-26857"
+    },
     {
       "abstract": "Faithfully evaluating end-to-end driving policies in simulation requires observations that are not merely photo-realistic, but preserve the scene features a policy relies on to make decisions. Existing platforms, however, exhibit a sim-to-real visual gap that corrupts policy perception, undermining their ability to assess a policy's closed-loop decision-making. To this end, we propose DreamStream, a generative, closed-loop simulator that achieves policy-oriented fidelity using a simulator-grounded autoregressive video model. Our video model is distilled from a large pretrained video model via traffic layout guidance, varying visual appearance while preserving policy-relevant features such as scenario layout and the temporal consistency of dynamic objects. We further observe that perceptual metrics like FID misrank how well these features are preserved. To tackle this, we introduce FD$\\pi$, a new multi-representation metric that measures the sim-to-real gap as the Fr\\'echet distance over scene-context features from public E2E policies. Under FD$\\pi$, DreamStream improves over the strongest prior closed-loop simulator by $1.6\\times$ on nuScenes and $4.7\\times$ on NAVSIM, and induces the least perturbation to policy's perceptual observability. Based on DreamStream, we construct Navhard-CL benchmark, which turns non-reactive real-world benchmark NAVSIM into interactive testing environments with adversarial driving behaviors and weather variations. This benchmark exposes many failure modes of driving policies, such as scorer bias and lack of recovery behaviors, that prior closed-loop benchmarks overlook. Code and data are available at https://github.com/VAIL-UCLA/DreamStream.",
       "abstract_zh": "在模拟中忠实评估端到端驾驶策略需要的观察不仅仅是照片级真实的，还要保留策略做出决策所依赖的场景特征。然而，现有平台存在模拟与现实之间的视觉差距，这会破坏策略感知，削弱其评估策略闭环决策能力的能力。为此，我们提出了DreamStream，一个生成的闭环模拟器，利用基于模拟器的自回归视频模型实现政策导向的保真度。我们的视频模型通过交通布局指导从一个大型预训练视频模型中提炼而来，能够在保留与政策相关的特征（如场景布局和动态物体的时间一致性）的同时，变化视觉外观。我们进一步观察到，像FID这样的感知指标在评估这些特征的保留程度时存在误排名的问题。为了解决这个问题，我们引入了FD$ ext{π}$，一种新的多表示度量，测量模拟与现实之间的差距，作为来自公共E2E策略的场景上下文特征的Fréchet距离。在FD$ ext{π}$下，DreamStream在nuScenes上比最强的先前闭环模拟器提高了1.6倍，在NAVSIM上提高了4.7倍，并对策略的感知可观察性造成了最小的干扰。基于DreamStream，我们构建了Navhard-CL基准，将非反应性的现实世界基准NAVSIM转变为具有对抗性驾驶行为和天气变化的互动测试环境。该基准揭示了许多驾驶策略的失败模式，如评分偏差和缺乏恢复行为，而先前的闭环基准未能考虑这些问题。代码和数据可在https://github.com/VAIL-UCLA/DreamStream获取。",

@@ -1,0 +1,58 @@
+{
+  "abstract": "Driving world-action models improve planning by coupling multimodal reasoning with future prediction, but their growing inference cost increasingly conflicts with the real-time latency requirements of vehicle control. Existing acceleration methods reduce tokens, layers, or sampling steps with policies selected prior to deployment, yet leave residual runtime variation largely unexploited after offline profiling and static scheduling on shared onboard compute. We observe that the largest admissible compute budget varies systematically with the residual runtime state, while recent realized latency provides a direct signal of the available compute slack. Motivated by this observation, we propose \\textbf{SlackDrive}, a pre-inference compute allocator that reuses realized latency to select the compute budget of each control step before model execution. SlackDrive profiles the latency and planning utility of a small discrete budget set once, estimates online compute state from completed forwards, and selects the highest-utility budget predicted to remain within the admissible latency envelope, complementing existing profiling and resource scheduling while preserving the driving backbone and its compute actuator. On NAVSIM v2 with DriveDreamer-Policy, SlackDrive improves latency-constrained EPDMS by $21.7\\%$ over the strongest baseline under a stringent latency regime, while the full-budget model and preconfigured token-pruning baselines exceed the admissible latency envelope under runtime contention.",
+  "abstract_zh": "驾驶世界行动模型通过将多模态推理与未来预测相结合来改善规划，但其日益增长的推理成本与车辆控制的实时延迟要求之间的冲突越来越明显。现有的加速方法通过在部署前选择策略来减少令牌、层或采样步骤，但在离线分析和静态调度共享车载计算后，仍然未充分利用剩余的运行时变化。我们观察到，最大的可接受计算预算与剩余运行时状态系统性地变化，而最近实现的延迟则直接提供了可用计算余量的信号。基于这一观察，我们提出了 extbf{SlackDrive}，一种预推理计算分配器，它重用已实现的延迟，在模型执行之前选择每个控制步骤的计算预算。SlackDrive 一次性分析小离散预算集的延迟和规划效用，从已完成的前向推理中估计在线计算状态，并选择预测将在可接受延迟范围内保持的最高效用预算，补充现有的分析和资源调度，同时保留驾驶骨干和其计算执行器。在使用 DriveDreamer-Policy 的 NAVSIM v2 上，SlackDrive 在严格的延迟条件下，相较于最强基线提高了 21.7 ext{%} 的延迟受限 EPDMS，而全预算模型和预配置的令牌修剪基线在运行时竞争下超过了可接受的延迟范围。",
+  "arxiv_id": "2609.28064",
+  "arxiv_url": "https://arxiv.org/abs/2609.28064v1",
+  "authors": [
+    "Xiaohuan Pei",
+    "Hengguang Zhou",
+    "Yuanhao Ban",
+    "Justin Cui",
+    "Jiaqi Feng",
+    "Haoyu Xie",
+    "Tao Huang",
+    "Pichao Wang",
+    "Yanchao Yang",
+    "Cho-Jui Hsieh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-28064",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.171175+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.28064v1",
+  "published_at": "2026-09-23T13:13:19Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.28064v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "本文面向自动驾驶中的世界行动模型和端到端驾驶推理，研究共享车载计算资源与实时控制延迟之间的矛盾。SlackDrive 根据最近完成的推理延迟动态估计可用运行时余量，并在每个控制周期执行前选择合适的计算预算，从而在不改变驾驶骨干网络和计算执行器的情况下，自适应平衡规划性能与延迟约束。实验表明，该方法能够有效提升严格延迟条件下的驾驶规划性能。",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "SlackDrive: Reclaiming Runtime Slack for Adaptive Driving Inference",
+  "title_zh": "SlackDrive：重新利用运行时余量以适应驾驶推理",
+  "translation_url": "https://hjfy.top/arxiv/2609.28064"
+}

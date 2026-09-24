@@ -1,0 +1,57 @@
+{
+  "abstract": "With the development of applications like autonomous driving, object detection has gained significant attention, while also highlighting critical vulnerabilities like backdoor attacks that severely compromise model integrity. Specifically, such attacks involve altering the categories of objects (i.e., object misclassification), removing bounding boxes (i.e., object disappearance), or generating bounding box proposals for non-existent objects (i.e., object generation) when a predefined trigger is present in the input. Although backdoor defenses for image classification are well-established, the research for object detection remains comparatively underexplored. Existing defenses address these threats by scanning outputs or models for potential backdoors but require discarding either malicious data or models. This remedy fails to enable a continuous and accurate perceptual stream for the object detection pipeline. To address such limitations, we propose ODPure, a novel input-stage black-box defense for object detection, which is based on input purification that ensures stable perception flows. Tailored to the dense prediction nature of object detectors, our Corruption-Reconstruction-Selection (CRS) paradigm operates by neutralizing triggers through a diverse portfolio of corruptions to generate a massive pool of redundant proposals, then recovering fine-grained structural cues via generative priors, and finally employing voting to reach a consensus on the resulting detections. Comprehensive experiments demonstrate that our method provides robust defense against diverse backdoor attacks and trigger types while preserving baseline accuracy. Our code is available at https://github.com/Alex66366/ODPure.",
+  "abstract_zh": "随着自动驾驶等应用的发展，目标检测受到了极大的关注，同时也暴露了如后门攻击等严重危害模型完整性的关键漏洞。具体而言，这类攻击涉及在输入中存在预定义触发器时，改变物体类别（即物体误分类）、移除边界框（即物体消失）或为不存在的物体生成边界框提议（即物体生成）。尽管针对图像分类的后门防御已相对成熟，但针对目标检测的研究仍然相对欠缺。现有的防御方法通过扫描输出或模型来识别潜在的后门，但需要丢弃恶意数据或模型。这种补救措施未能为目标检测管道提供连续且准确的感知流。为了解决这些局限性，我们提出了ODPure，这是一种新颖的输入阶段黑箱防御方法，基于输入净化以确保稳定的感知流。针对目标检测的密集预测特性，我们的腐蚀-重建-选择（Corruption-Reconstruction-Selection, CRS）范式通过多样化的腐蚀组合来中和触发器，生成大量冗余提议，然后通过生成先验恢复细粒度结构线索，最后通过投票达成对结果检测的共识。全面的实验表明，我们的方法对多种后门攻击和触发器类型提供了强有力的防御，同时保持了基线准确性。我们的代码可在 https://github.com/Alex66366/ODPure 获取。",
+  "arxiv_id": "2609.28239",
+  "arxiv_url": "https://arxiv.org/abs/2609.28239v1",
+  "authors": [
+    "Li Zeng",
+    "Mingcheng Duan",
+    "Longfei Fan",
+    "Hangtao Zhang",
+    "Xianlong Wang",
+    "Yanchun Li",
+    "Xia Wen",
+    "Leo Yu Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-28239",
+  "categories": [
+    "cs.CV",
+    "cs.CR"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.147511+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.28239v1",
+  "published_at": "2026-09-23T15:03:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.28239v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "ODPure: Backdoor Purification for Object Detection via Ensemble Corruption Consensus",
+  "title_zh": "ODPure：通过集成腐蚀共识进行目标检测的后门净化",
+  "translation_url": "https://hjfy.top/arxiv/2609.28239"
+}

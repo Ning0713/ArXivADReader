@@ -1,0 +1,56 @@
+{
+  "abstract": "Event cameras promise low-latency perception for high-speed robotic systems, where even short delays can render detections stale by the time they inform downstream robotic decisions. Yet modern event detectors still require tens of milliseconds of computation before their predictions become available. Conventional evaluation ignores this delay by comparing predictions with annotations at the observation timestamp, even though the scene may have changed by the time those predictions are produced. We study this observation-availability mismatch in event-based multi-object detection and show that state-of-the-art event detectors degrade substantially when evaluated at prediction availability rather than observation time. To address this, we introduce ChronoFuse, a causal availability-time detector that predicts object states for when its output becomes available rather than for when its input was observed. ChronoFuse performs causal cross-time fusion over a multi-scale feature hierarchy, combining current representations with cached temporal features to expose short-term temporal cues without using future observations. The fusion pathway is lightweight, adding only 0.17 million parameters and 0.84 ms of mean end-to-end latency overhead. ChronoFuse recovers 71% of the accuracy lost to latency on 1Mpx driving data and 90.8% under rapid drone motion on FRED, nearly restoring zero-delay performance. Under the extreme motion of EV-Flying, ChronoFuse reaches 20.95 sAP, compared with 2.25 for the strongest standard event detector (9.3x gain). These results show that predicting ahead can be critical for robots operating in fast-changing scenes, including autonomous driving, agile flight, and robotic interception.",
+  "abstract_zh": "事件相机为高速机器人系统提供了低延迟感知，其中即使是短暂的延迟也可能导致检测结果在通知下游机器人决策时变得过时。然而，现代事件检测器在其预测可用之前仍需数十毫秒的计算。传统评估忽略了这一延迟，通过在观察时间戳处将预测与标注进行比较，尽管在这些预测生成时场景可能已经发生变化。我们研究了事件驱动多物体检测中的观察可用性不匹配，并表明当在预测可用性而非观察时间进行评估时，最先进的事件检测器的性能显著下降。为了解决这个问题，我们引入了ChronoFuse，一种因果可用性时间检测器，它预测对象状态时基于其输出可用的时间，而不是输入被观察的时间。ChronoFuse在多尺度特征层次上执行因果跨时间融合，将当前表示与缓存的时间特征相结合，以在不使用未来观察的情况下揭示短期时间线索。融合路径轻量，仅增加0.17百万参数和0.84毫秒的平均端到端延迟开销。ChronoFuse在1Mpx驾驶数据上恢复了71%的因延迟而损失的准确性，在FRED上快速无人机运动下恢复了90.8%的准确性，几乎恢复了零延迟性能。在EV-Flying的极端运动下，ChronoFuse达到了20.95的sAP，而最强标准事件检测器仅为2.25（增益为9.3倍）。这些结果表明，提前预测对于在快速变化场景中操作的机器人至关重要，包括自动驾驶、灵活飞行和机器人拦截。",
+  "arxiv_id": "2609.26919",
+  "arxiv_url": "https://arxiv.org/abs/2609.26919v1",
+  "authors": [
+    "Biswadeep Sen",
+    "Benoit R. Cottereau",
+    "Nicolas Cuperlier",
+    "Terence Sim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-26919",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.086087+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.26919v1",
+  "published_at": "2026-09-22T18:15:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "drone",
+      "robotic",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.26919v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "端到端驾驶",
+      "多传感器融合"
+    ]
+  },
+  "title": "Bend the Clock: Predicting Ahead to Beat Latency in Event-Based Object Detection",
+  "title_zh": "弯曲时钟：提前预测以克服事件驱动物体检测中的延迟",
+  "translation_url": "https://hjfy.top/arxiv/2609.26919"
+}

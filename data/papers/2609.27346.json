@@ -1,0 +1,61 @@
+{
+  "abstract": "Reliable localization of non-line-of-sight (NLOS) pedestrians is critical for safe urban autonomous driving, yet it remains highly challenging in ego-dynamic outdoor environments, where ego-vehicle motion makes radar multipath propagation complex and noisy. In this paper, we present a reflection-aware framework for NLOS pedestrian localization with a moving ego-vehicle in outdoor testbed scenarios. Our framework fuses front-view camera images and 2D radar point clouds to infer reflection orders and reflective surface distributions in bird's-eye-view space. It then uses physics-guided ray tracing to reconstruct distorted reflection paths and localize the hidden pedestrian. We validate the framework in outdoor testbed scenarios under ego-dynamic conditions. The results demonstrate the effectiveness of the proposed framework for NLOS pedestrian localization with a moving ego-vehicle.",
+  "abstract_zh": "可靠的非视距（NLOS）行人定位对于安全的城市自动驾驶至关重要，但在自我动态的户外环境中仍然面临极大的挑战，因为自我车辆的运动使得雷达多径传播变得复杂且噪声较大。本文提出了一种考虑反射的框架，用于在户外测试场景中实现移动自我车辆的NLOS行人定位。我们的框架融合了前视摄像头图像和二维雷达点云，以推断鸟瞰图空间中的反射顺序和反射面分布。然后，它利用物理引导的光线追踪重建扭曲的反射路径并定位隐藏的行人。我们在自我动态条件下的户外测试场景中验证了该框架。结果表明，所提出的框架在移动自我车辆的NLOS行人定位中具有良好的效果。",
+  "arxiv_id": "2609.27346",
+  "arxiv_url": "https://arxiv.org/abs/2609.27346v1",
+  "authors": [
+    "Byeonggyu Park",
+    "Mingu Jeon",
+    "Seong-Woo Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27346",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.096411+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27346v1",
+  "published_at": "2026-09-23T04:33:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego-vehicle",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "行人",
+      "bird's-eye",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27346v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "地图/定位",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Reflection-Aware Reasoning for Non-Line-of-Sight Pedestrian Localization",
+  "title_zh": "考虑反射的非视距行人定位推理",
+  "translation_url": "https://hjfy.top/arxiv/2609.27346"
+}

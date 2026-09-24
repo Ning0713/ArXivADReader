@@ -1,0 +1,51 @@
+{
+  "abstract": "Stereo visual SLAM systems built on local descriptors suffer from semantic ambiguity, instance-level confusion, and independently moving objects, each corrupting data association and accumulating as trajectory drift. Prevailing semantic and dynamic SLAM methods address this through binary feature rejection, sacrificing correspondence density for outlier suppression. We contend that contextual implausibility is better expressed as a graded quantity than an exclusion criterion. We present Know-Your-Scene (KYS)-SLAM, a modular extension of ORB-SLAM3 that supplants feature rejection with continuous correspondence modulation. The contribution is the reframing of contextual evidence as correspondence cost, applied within feature matching and leaving the geometric backend unmodified. Each keypoint is augmented with semantic, panoptic, and motion priors fused through a hierarchical compatibility formulation, in which semantic class and instance identity enforce structural plausibility while a zero-shot motion score down-weights features on independently moving objects. That score comes from a training-free module fitting a depth-aware ego-motion model to background optical flow and classifying panoptic segments via self-calibrating, coverage-aware thresholds, so only segments with sufficient motion evidence are penalized and static structure is left unpenalized. Penalizing correspondences rather than discarding them preserves the geometric support bundle adjustment depends on. Under one fixed configuration, no coefficient retuned per sequence or dataset, KYS-SLAM reduces per-sequence ATE RMSE by 17.4% on outdoor KITTI and 27.7% on indoor EuRoC across 21 stereo sequences with no regressions, and by 6.6% on dynamic subsets of KITTI Tracking and 17.8%, up to 31.2%, on Virtual KITTI 2 -- cross-domain transfer across outdoor driving, indoor flight, and synthetic imagery under one set of constants.",
+  "abstract_zh": "基于局部描述子的立体视觉SLAM系统面临语义模糊、实例级混淆和独立移动物体等问题，这些问题会破坏数据关联并导致轨迹漂移。现有的语义和动态SLAM方法通过二元特征拒绝来解决这一问题，牺牲了对应密度以抑制离群值。我们认为，上下文的不合理性更适合用分级量来表达，而不是作为排除标准。我们提出了Know-Your-Scene (KYS)-SLAM，这是ORB-SLAM3的一个模块化扩展，它用连续对应调制取代了特征拒绝。我们的贡献在于将上下文证据重新框架为对应成本，应用于特征匹配，同时保持几何后端不变。每个关键点都通过层次兼容性公式增强了语义、全景和运动先验，其中语义类别和实例身份强制执行结构合理性，而零样本运动评分则降低了独立移动物体上的特征权重。该评分来自一个无训练模块，它将深度感知的自我运动模型拟合到背景光流，并通过自校准、覆盖感知的阈值对全景段进行分类，因此只有具有足够运动证据的段会受到惩罚，而静态结构则不受惩罚。惩罚对应关系而不是丢弃它们，保留了几何支持束调整所依赖的内容。在一个固定配置下，没有针对每个序列或数据集重新调整的系数，KYS-SLAM在21个立体序列上将户外KITTI的每序列平均绝对误差根均方根（ATE RMSE）降低了17.4%，在室内EuRoC上降低了27.7%，且没有回归，在KITTI Tracking的动态子集上降低了6.6%，在Virtual KITTI 2上降低了17.8%，最高可达31.2%——在一个常数集下实现了户外驾驶、室内飞行和合成图像之间的跨域迁移。",
+  "arxiv_id": "2609.27509",
+  "arxiv_url": "https://arxiv.org/abs/2609.27509v1",
+  "authors": [
+    "Preeti Chatterjee",
+    "Jin Lu",
+    "Jin Sun",
+    "Suchendra M. Bhandarkar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27509",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.130457+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27509v1",
+  "published_at": "2026-09-23T08:07:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27509v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "Know-Your-Scene (KYS)-SLAM: Hierarchical Semantic-Motion Priors for Feature Matching in Stereo Visual SLAM",
+  "title_zh": "Know-Your-Scene (KYS)-SLAM：用于立体视觉SLAM中特征匹配的层次语义运动先验",
+  "translation_url": "https://hjfy.top/arxiv/2609.27509"
+}

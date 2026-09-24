@@ -1,0 +1,58 @@
+{
+  "abstract": "Vision-language-action models (VLA) promise human-steerable autonomous driving, but their training is bottlenecked by the scarcity of frames paired with natural-language instructions: while camera streams and expert trajectories are logged at scale, language annotations (e.g., turn left at the intersection) remain scarce and expensive to acquire. To address this challenge, we introduce Latent Action Driving Annotations (LADA), a three-stage pipeline that transforms abundant unlabelled observation-trajectory pairs into a substrate for language-conditioned control. First, we train a latent action model with a vector-quantised bottleneck, producing a compact codebook of high-level vehicle intents. Second, a small language-annotated subset is used to train a vision-language translator to map observations and language instructions into this codebook. Third, we train a driving VLA on observation-latent-action pairs over the full unlabelled corpus. Using fewer than 5% of language annotations and without leveraging any auxiliary chain-of-thought reasoning or visual question answering streams, LADA achieves a Driving Score of 87.98 and a Success Rate of 70.46% on the closed-loop Bench2Drive benchmark, matching or surpassing fully supervised baselines.",
+  "abstract_zh": "视觉-语言-行动模型（VLA）承诺实现人类可操控的自主驾驶，但其训练受到与自然语言指令配对的帧稀缺的瓶颈限制：尽管摄像头流和专家轨迹在大规模下被记录，但语言注释（例如，在交叉口左转）仍然稀缺且获取成本高。为了解决这一挑战，我们提出了潜在行动驾驶注释（LADA），这是一种三阶段流程，将丰富的未标记观察-轨迹对转化为语言条件控制的基础。首先，我们训练一个具有向量量化瓶颈的潜在行动模型，生成一个高层次车辆意图的紧凑代码本。其次，使用一个小的语言注释子集训练视觉-语言翻译器，将观察和语言指令映射到该代码本中。第三，我们在整个未标记语料库上对观察-潜在行动对训练驾驶VLA。使用不到5%的语言注释，并且不利用任何辅助的思维链推理或视觉问答流，LADA在闭环Bench2Drive基准测试中实现了87.98的驾驶得分和70.46%的成功率，达到或超过了完全监督的基准。",
+  "arxiv_id": "2609.27747",
+  "arxiv_url": "https://arxiv.org/abs/2609.27747v1",
+  "authors": [
+    "Alexey Zakharov",
+    "Kemal Oksuz",
+    "Puneet K. Dokania"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27747",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.104731+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27747v1",
+  "published_at": "2026-09-23T12:00:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "intersection",
+      "驾驶",
+      "车辆",
+      "vision-language-action",
+      "driving vla"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 66
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27747v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Less Language, More Latents: Annotation-Efficient VLAs for Driving",
+  "title_zh": "更少的语言，更丰富的潜在信息：用于驾驶的注释高效视觉语言行动模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.27747"
+}

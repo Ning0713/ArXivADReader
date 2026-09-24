@@ -1,0 +1,52 @@
+{
+  "abstract": "4D radar complements dense image semantics with long-range geometry and radial motion, but existing radar--camera detectors largely solve \\emph{where} to align the modalities while leaving \\emph{whether} a piece of evidence supports an evolving object hypothesis implicit. An image token may describe an occluder, a nearby radar return may belong to another object, and a pose-aligned memory slot may carry incompatible motion. We formulate \\emph{hypothesis-conditioned evidence grounding}, which separates candidate access from evidence use: semantic, geometric, or temporal evidence is filtered or conditioned by the evolving 3D state before updating the corresponding query. \\sgdetpp{} instantiates this principle through Anchor-Grounded Semantic Retrieval (AGR), which conditions deformable image retrieval on pooled anchor-consistent radar support; Geometry-Consistent Anchor Refinement (GCR), which attentively aggregates individual associated returns; and Doppler-Verified Correspondence (DVC), which replaces history only when current radial motion contradicts it. \\sgdetpp{} improves the strongest compared method by 3.82 mAP and 6.82 ODS on OmniHD-Scenes and by 6.82 mAP and 9.22 NDS on ManTruckScenes, while also leading the listed methods in the TJ4DRadSet test comparison. Mechanism-targeted evaluations show that AGR improves strict AP in every projected-occlusion bin, the yaw-aligned box gate raises target-return purity from 29.95\\% to 58.87\\%, and DVC preserves 96.11\\% of motion-consistent history while retaining 75.90\\% contradiction recall. Code will be released.",
+  "abstract_zh": "4D雷达通过长距离几何信息和径向运动补充了密集图像语义，但现有的雷达-相机检测器主要解决 extit{如何}对齐模态，而将 extit{是否}一条证据支持一个不断演变的目标假设隐含化。图像标记可能描述一个遮挡物，附近的雷达回波可能属于另一个物体，而姿态对齐的记忆槽可能承载不兼容的运动。我们提出了 extit{假设条件证据基础}，将候选访问与证据使用分开：语义、几何或时间证据在更新相应查询之前，经过不断演变的3D状态进行过滤或条件化。SGDet3D++通过锚点基础语义检索（Anchor-Grounded Semantic Retrieval, AGR）实现这一原则，该方法基于池化的锚点一致雷达支持条件化可变形图像检索；几何一致锚点细化（Geometry-Consistent Anchor Refinement, GCR），该方法关注地聚合个体相关回波；以及多普勒验证对应（Doppler-Verified Correspondence, DVC），该方法仅在当前径向运动与历史相矛盾时替换历史。SGDet3D++在OmniHD-Scenes上提高了最强比较方法3.82 mAP和6.82 ODS，在ManTruckScenes上提高了6.82 mAP和9.22 NDS，同时在TJ4DRadSet测试比较中领先于列出的其他方法。机制针对性评估显示，AGR在每个投影遮挡区间提高了严格AP，偏航对齐的框门将目标回波纯度从29.95 ext{%}提高到58.87 ext{%}，而DVC在保留96.11 ext{%}运动一致历史的同时保持75.90 ext{%}矛盾召回率。代码将会发布。",
+  "arxiv_id": "2609.27671",
+  "arxiv_url": "https://arxiv.org/abs/2609.27671v1",
+  "authors": [
+    "Xiaokai Bai",
+    "Zhenyu Fan",
+    "Lianqing Zheng",
+    "Songkai Wang",
+    "Si-Yuan Cao",
+    "Hui-liang Shen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27671",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.132557+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27671v1",
+  "published_at": "2026-09-23T10:42:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "3d object detection",
+      "4d radar",
+      "radar"
+    ],
+    "reasons": [
+      "标题命中自动驾驶专用技术"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27671v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "3D 检测"
+    ]
+  },
+  "title": "SGDet3D++: Geometry-Grounded Semantics for 4D Radar and Camera 3D Object Detection",
+  "title_zh": "SGDet3D++：基于几何的4D雷达与相机3D目标检测的语义",
+  "translation_url": "https://hjfy.top/arxiv/2609.27671"
+}

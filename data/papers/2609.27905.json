@@ -1,0 +1,47 @@
+{
+  "abstract": "We study hidden-target seeking in an anchor-free regime where neither the vehicle, the relay, nor the target has an accessible global pose. The vehicle never senses the target directly; it receives only range-bearing observations through a single relay of unknown position and orientation, with motion known only via integrated body-frame odometry. Absolute localization is fundamentally impossible: the joint configuration retains an exact three-dimensional SE(2) gauge no estimator can resolve. Yet the quantities needed for control remain fully recoverable: motion collapses calibration to a task-relevant quotient, the relay-to-odometry yaw and target displacement, identifiable in closed form from two distinct vehicle views. We introduce an O(K) multi-view self-calibration estimator with an exact first-order yaw-uncertainty certificate that propagates the cross-view correlations integrated odometry induces: the full certificate attains 95.0% pooled coverage at the nominal 95% level, versus 82.1% when correlated poses are treated as independent. The certificate drives a hybrid policy that excites until calibration is trustworthy, refuses uncertified estimates, seeks using continuously re-measured geometry, and detects relay-frame changes via persistent certified inconsistency, avoiding unbounded dead-reckoning drift. Across 200 randomized closed-loop trials, the method attains 0.064 m median station error versus 0.065 m for an oracle given the true relay yaw, despite 27 m median dead-reckoning drift over long horizons; 90 physics-based ROS 2/Gazebo trials retain 30/30 success under nominal operation, communication degradation, and relay-frame disturbances. These results show global localization is unnecessary for reliable hidden-target seeking under this single-relay model, even when both the sensing infrastructure and the vehicle's own reference frame are uncalibrated.",
+  "abstract_zh": "我们研究了一种无锚的隐藏目标寻址机制，其中车辆、中继和目标均没有可访问的全局位姿。车辆从未直接感知目标；它仅通过一个未知位置和方向的中继接收范围-方位观测，运动信息仅通过集成的机体框架里程计得知。绝对定位在根本上是不可能的：联合配置保持一个精确的三维 SE(2) 量规，没有任何估计器可以解决。然而，控制所需的量仍然可以完全恢复：运动将校准简化为与任务相关的商，即中继到里程计的偏航角和目标位移，可以从两个不同的车辆视角中以封闭形式识别。我们引入了一种 O(K) 多视角自校准估计器，具有精确的一阶偏航不确定性证书，该证书传播了跨视角相关性所导致的集成里程计：完整证书在名义 95% 水平下达到 95.0% 的汇总覆盖率，而当相关位姿被视为独立时，仅为 82.1%。该证书驱动一种混合策略，直到校准可靠为止，拒绝未认证的估计，使用持续重新测量的几何形状进行寻址，并通过持久的认证不一致性检测中继框架的变化，从而避免无限制的死算漂移。在 200 次随机闭环试验中，该方法实现了 0.064 米的中位站点误差，而在给定真实中继偏航的情况下，oracle 的误差为 0.065 米，尽管在长时间范围内存在 27 米的中位死算漂移；在 90 次基于物理的 ROS 2/Gazebo 试验中，在名义操作、通信降级和中继框架干扰下，均保持 30/30 的成功率。这些结果表明，在这种单中继模型下，即使感知基础设施和车辆自身的参考框架均未校准，全球定位对于可靠的隐藏目标寻址也是不必要的。",
+  "arxiv_id": "2609.27905",
+  "arxiv_url": "https://arxiv.org/abs/2609.27905v1",
+  "authors": [
+    "Yash Bagla"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27905",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.105790+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27905v1",
+  "published_at": "2026-08-26T11:47:11Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27905v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "论文研究无全局定位、无直接目标感知条件下的车辆隐藏目标寻址问题，提出考虑相关里程计误差的多视角自校准方法，并为偏航不确定性提供认证证书。系统根据认证结果进行主动校准、目标寻址和中继坐标系异常检测，在仿真与 ROS 2/Gazebo 闭环试验中表现出较高的定位精度和鲁棒性。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "Anchor-Free Hidden-Target Seeking via Certified Self-Calibration under Correlated Odometry",
+  "title_zh": "基于相关里程计的无锚隐藏目标寻址通过认证自校准",
+  "translation_url": "https://hjfy.top/arxiv/2609.27905"
+}

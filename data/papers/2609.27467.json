@@ -1,0 +1,53 @@
+{
+  "abstract": "Long-term autonomy in human-populated environments requires anticipating whether and how people will move at times a robot has not yet observed. Existing representations of pedestrian motion face a tradeoff: they either forecast future activity, reducing each location to a scalar rate, or model the full directional distribution, holding it fixed in time. We present Kairos, a predictive directional-flow memory that extends a hierarchical 3D scene graph (3DSG) to a 4D scene graph (4DSG). Every observed voxel of the reconstructed geometry stores a directional mixture and a presence rate, and spectral predictors forecast, for any future query time, both the probability that people are present and the full directional distribution of their motion. Pairwise flow dependence between adjacent voxels supports conditional queries, and per-voxel predictive variances yield calibrated credible intervals that tighten as observations accumulate. We evaluate Kairos on three real pedestrian environments: a robot-collected campus dataset, a shopping mall, and a station concourse recorded continuously for eleven months. Its learned state remains consistent under loop-closure corrections, and its forecasts are competitive with dedicated occupancy and flow models trained on the full detection stream, although Kairos learns from only the small fraction available to a patrolling robot. Finally, we validate the representation on a downstream encounter-probability planning task, where plans computed over the Kairos forecasts encounter more people than plans computed over any time-invariant map at an equal success rate. We provide the code at https://github.com/IacopomC/kairos.",
+  "abstract_zh": "在有人类居住的环境中实现长期自主性需要预测人们在机器人尚未观察到的时刻将如何移动。现有的行人运动表示面临权衡：它们要么预测未来活动，将每个位置简化为一个标量速率，要么建模完整的方向分布，并在时间上保持不变。我们提出了Kairos，一种预测性方向流记忆，它将层次化的3D场景图（3DSG）扩展到4D场景图（4DSG）。每个观察到的重建几何体的体素存储一个方向混合和一个存在率，谱预测器预测在任何未来查询时间，人们存在的概率以及他们运动的完整方向分布。相邻体素之间的成对流依赖关系支持条件查询，且每个体素的预测方差产生经过校准的可信区间，随着观察的积累而收紧。我们在三个真实的行人环境中评估Kairos：一个机器人收集的校园数据集、一个购物中心和一个连续记录了十一个月的车站大厅。其学习状态在闭环校正下保持一致，其预测与在完整检测流上训练的专用占用和流模型相竞争，尽管Kairos仅从巡逻机器人可用的小部分数据中学习。最后，我们在下游的遇见概率规划任务中验证了该表示，在该任务中，基于Kairos预测计算的计划在相同成功率下遇到的人数多于基于任何时间不变地图计算的计划。我们在https://github.com/IacopomC/kairos提供了代码。",
+  "arxiv_id": "2609.27467",
+  "arxiv_url": "https://arxiv.org/abs/2609.27467v1",
+  "authors": [
+    "Iacopo Catalano",
+    "Julio A. Placed",
+    "Javier Civera",
+    "Jorge Peña Queralta"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27467",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.099933+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27467v1",
+  "published_at": "2026-09-23T07:30:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "occupancy",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27467v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Kairos: Grounded Forecasting of Presence and Directional Flow in 4D Scene Graphs",
+  "title_zh": "Kairos：在4D场景图中对存在性和方向流的基于实证的预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.27467"
+}

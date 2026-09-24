@@ -1,0 +1,58 @@
+{
+  "abstract": "Infrastructure-based radar systems offer robust and long-range solutions for traffic monitoring, yet their detection and tracking performance under real-world conditions remains insufficiently evaluated. This study introduces DRaT (Drone and Radar Trajectories), a dual-modality dataset of naturalistic vehicle trajectories collected at a highway merging segment in Fort Worth, Texas, to systematically assess radar sensing performance against drone-derived ground truth. The performance is evaluated at three levels: individual vehicle detection, trajectory tracking, and macroscopic traffic parameter estimation. For individual vehicle detection, the radar achieves an overall precision of 78% and a recall of 57%, with degraded performance under congested traffic conditions and at longer distances. At the trajectory level, the radar demonstrates reasonably strong tracking performance (IDF1 = 0.699), maintaining reliable vehicle identities when tracks are successfully established. For macroscopic traffic flow metrics, the radar accurately estimates space-mean speed (MAPE < 4%) but underestimates density and volume by approximately 23% due to missed detections. The paper also discusses practical deployment considerations and potential downstream applications of roadside radar sensing systems. To support reproducible research on infrastructure-based sensing systems, we have open-sourced the DRaT dataset on Zenodo: https://zenodo.org/records/20171110.",
+  "abstract_zh": "基于基础设施的雷达系统为交通监测提供了稳健且长距离的解决方案，但其在现实条件下的检测和跟踪性能仍然缺乏充分评估。本研究引入了DRaT（无人机与雷达轨迹），这是一个在德克萨斯州沃斯堡高速公路合流段收集的自然车辆轨迹的双模态数据集，以系统性评估雷达传感性能与无人机获取的地面真实数据的对比。性能评估分为三个层次：单个车辆检测、轨迹跟踪和宏观交通参数估计。在单个车辆检测方面，雷达的整体精确度为78%，召回率为57%，在拥堵交通条件和较长距离下性能有所下降。在轨迹层面，雷达表现出相当强的跟踪性能（IDF1 = 0.699），在成功建立轨迹时能够保持可靠的车辆身份。在宏观交通流量指标方面，雷达准确估计了空间平均速度（MAPE < 4%），但由于漏检，密度和流量的估计低于实际值约23%。本文还讨论了实际部署考虑因素及路边雷达传感系统的潜在下游应用。为了支持基于基础设施的传感系统的可重复研究，我们已在Zenodo上开源了DRaT数据集：https://zenodo.org/records/20171110。",
+  "arxiv_id": "2609.27143",
+  "arxiv_url": "https://arxiv.org/abs/2609.27143v1",
+  "authors": [
+    "Tianheng Zhu",
+    "Woei-chyi Chang",
+    "Alamss Riaz",
+    "Sogand Hasanzadeh",
+    "Yiheng Feng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27143",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.122140+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27143v1",
+  "published_at": "2026-09-22T23:06:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "roadside",
+      "highway",
+      "车辆",
+      "交通",
+      "radar",
+      "drone",
+      "无人机"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 34
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27143v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "A Systematic Evaluation of Infrastructure-Based Radar System for Highway Traffic Monitoring",
+  "title_zh": "基于基础设施的雷达系统在高速公路交通监测中的系统评估",
+  "translation_url": "https://hjfy.top/arxiv/2609.27143"
+}

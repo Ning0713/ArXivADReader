@@ -1,0 +1,55 @@
+{
+  "abstract": "Automotive spinning FMCW radar provides dense, $360^\\circ$ sensing and remains reliable under poor illumination and adverse weather, making it well-suited to autonomous navigation. Place recognition uses these observations to identify previously visited locations for re-localization and long-term navigation. However, heading changes appear as circular shifts in the polar radar representation, and conventional global aggregation can lose relationships among radar responses that are important for distinguishing similar places. We propose SGCA-Net, a spinning radar place recognition framework that combines rotation-robust feature extraction with Spatially Gated Correlation Aggregation (SGCA). SGCA learns spatial weights to reduce the influence of unstable and ambiguous radar regions, while aggregating pairwise correlations among local responses to preserve informative feature relationships. Experiments on the MulRan dataset show that SGCA-Net consistently outperforms SOTA methods across urban, campus, and open-road environments, while remaining robust to substantial heading variation. Evaluation on the HeRCULES dataset further demonstrates that SGCA-Net generalizes to unseen environments and radar sensors without fine-tuning.",
+  "abstract_zh": "汽车旋转FMCW雷达提供密集的360°感知，并在光照不足和恶劣天气下保持可靠性，使其非常适合于自主导航。位置识别利用这些观测数据来识别先前访问过的位置，以实现重新定位和长期导航。然而，航向变化在极坐标雷达表示中表现为圆形移位，而传统的全局聚合可能会丢失雷达响应之间的重要关系，这些关系对于区分相似地点至关重要。我们提出了SGCA-Net，一种结合旋转鲁棒特征提取与空间门控相关聚合（SGCA）的旋转雷达位置识别框架。SGCA学习空间权重，以减少不稳定和模糊雷达区域的影响，同时聚合局部响应之间的成对相关性，以保留信息丰富的特征关系。在MulRan数据集上的实验表明，SGCA-Net在城市、校园和开放道路环境中始终优于当前最先进的方法，同时对显著的航向变化保持鲁棒性。在HeRCULES数据集上的评估进一步证明，SGCA-Net在未见环境和雷达传感器上具有良好的泛化能力，无需微调。",
+  "arxiv_id": "2609.27394",
+  "arxiv_url": "https://arxiv.org/abs/2609.27394v1",
+  "authors": [
+    "Saimunur Rahman",
+    "Sagun Singh Shrestha",
+    "Abdelwahed Khamis",
+    "Peyman Moghadam"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27394",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.097812+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27394v1",
+  "published_at": "2026-09-23T05:51:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "automotive",
+      "road",
+      "道路",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27394v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "Radar",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "Automotive mmWave Spinning Radar Place Recognition with Spatially Gated Feature-Correlation Representation",
+  "title_zh": "汽车毫米波旋转雷达位置识别与空间门控特征相关表示",
+  "translation_url": "https://hjfy.top/arxiv/2609.27394"
+}

@@ -1,0 +1,59 @@
+{
+  "abstract": "Vision-language models (VLMs) offer a promising approach to long-tail autonomous driving, but existing driving datasets provide limited supervision for connecting decision-critical visual evidence with reasoning and planning. We introduce AnchorReasoning, a visually grounded reasoning dataset built on WOD-E2E, containing 416,119 annotated frames and 395,379 decision-critical elements across four major categories and 19 fine-grained types. Each frame is organized as a visually grounded chain-of-thought (VG-CoT) that links decision-critical element identification and localization, element attributes and implications, driving-action rationale, and action and trajectory planning. We further develop a curriculum supervised fine-tuning strategy that progressively learns these hierarchical capabilities, together with an object-size-aware grounding metric for evaluating localization quality. Experiments across eight general-purpose, embodied-AI, and AV-specific backbones show that VG-CoT supervision improves grounded reasoning and trajectory prediction. Across models, 5-s ADE and FDE decrease by 7.84 and 11.86, while RFS Frame and Cluster improve by 1.66 and 1.70. These gains are achieved with 18.5 fewer reasoning tokens and 0.32 s/frame lower inference latency on average, demonstrating the value of visually grounded, decision-focused supervision for VLM reasoning and planning in long-tail autonomous driving.",
+  "abstract_zh": "视觉语言模型（VLMs）为长尾自动驾驶提供了一种有前景的方法，但现有的驾驶数据集在连接决策关键的视觉证据与推理和规划方面提供的监督有限。我们引入了AnchorReasoning，这是一个基于WOD-E2E构建的视觉基础推理数据集，包含416,119个标注帧和395,379个决策关键元素，涵盖四个主要类别和19个细分类型。每个帧被组织为一个视觉基础的思维链（VG-CoT），将决策关键元素的识别和定位、元素属性及其影响、驾驶动作的理由，以及动作和轨迹规划联系起来。我们进一步开发了一种课程监督微调策略，逐步学习这些层次化能力，并提出了一种关注对象大小的基础度量标准，用于评估定位质量。在八个通用、具身人工智能和自动驾驶特定的基础模型上的实验表明，VG-CoT监督提高了基础推理和轨迹预测。在不同模型中，5秒的平均绝对误差（ADE）和最终位置误差（FDE）分别减少了7.84和11.86，而RFS帧和聚类分别提高了1.66和1.70。这些提升是在平均减少18.5个推理标记和每帧降低0.32秒推理延迟的情况下实现的，展示了视觉基础、以决策为中心的监督在长尾自动驾驶中对VLM推理和规划的价值。",
+  "arxiv_id": "2609.28366",
+  "arxiv_url": "https://arxiv.org/abs/2609.28366v1",
+  "authors": [
+    "Zhipeng Bao",
+    "Wenjie Zhao",
+    "Tianle Zhu",
+    "Haohua Que",
+    "Chence Yang",
+    "Geng Yuan",
+    "Qianwen Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-28366",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.150631+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.28366v1",
+  "published_at": "2026-09-23T16:38:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.28366v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "VLM/VLA"
+    ]
+  },
+  "title": "AnchorReasoning: A Visual Grounding and Causal Reasoning Dataset in Long-Tail Autonomous Driving Scenarios",
+  "title_zh": "AnchorReasoning：长尾自动驾驶场景中的视觉基础和因果推理数据集",
+  "translation_url": "https://hjfy.top/arxiv/2609.28366"
+}

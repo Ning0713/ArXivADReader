@@ -1,0 +1,50 @@
+{
+  "abstract": "Unsupervised domain adaptation (UDA) for semantic segmentation remains challenging under adverse weather conditions because severe appearance changes enlarge the domain gap and degrade the reliability of pseudo labels in the target domain. To address this problem, we propose an Intra-Class Mixing Consistency (ICM) framework that enforces prediction consistency between an intra-class mixed image and its original counterpart. Unlike previous mixing-based consistency methods that combine regions across different images or domains and may introduce unrealistic semantic inconsistencies, ICM performs mixing within the same image and semantic class, preserving realistic semantic layout for consistency regularization. With ICM, we establish a new state-of-the-art performance for clear-to-adverse-weather unsupervised domain adaptation (UDA) in semantic segmentation. On the Cityscapes $\\rightarrow$ ACDC benchmark, our method achieves 75.7\\% mIoU, outperforming the previous state of the art by +1.9 pp, demonstrating its effectiveness in mitigating class confusion under challenging environmental conditions. The code is provided in the supplementary material.",
+  "abstract_zh": "在逆天气条件下，语义分割的无监督领域适应（UDA）仍然面临挑战，因为严重的外观变化扩大了领域间的差距，并降低了目标领域伪标签的可靠性。为了解决这个问题，我们提出了一种类内混合一致性（Intra-Class Mixing Consistency, ICM）框架，该框架强制要求类内混合图像与其原始对应图像之间的预测一致性。与以往通过不同图像或领域组合区域的混合一致性方法不同，这些方法可能引入不现实的语义不一致，ICM 在同一图像和语义类别内进行混合，保持了现实的语义布局以进行一致性正则化。通过 ICM，我们在语义分割的清晰到逆天气无监督领域适应（UDA）中建立了新的最先进性能。在 Cityscapes $ ightarrow$ ACDC 基准测试中，我们的方法达到了 75.7\\% 的 mIoU，超越了之前的最先进水平 +1.9 个百分点，证明了其在挑战性环境条件下减轻类别混淆的有效性。代码已在补充材料中提供。",
+  "arxiv_id": "2609.27533",
+  "arxiv_url": "https://arxiv.org/abs/2609.27533v1",
+  "authors": [
+    "Boying Li",
+    "Chang Liu",
+    "Britta Ayano Wilde",
+    "György Kovács",
+    "Tosin Adewumi",
+    "Björn Backe",
+    "Hamam Mokayed"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27533",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.131505+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27533v1",
+  "published_at": "2026-09-23T08:26:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27533v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "ICM: Intra-class Mixing for Domain Adaptation in Adverse Weather",
+  "title_zh": "ICM：逆天气条件下的领域适应中的类内混合",
+  "translation_url": "https://hjfy.top/arxiv/2609.27533"
+}

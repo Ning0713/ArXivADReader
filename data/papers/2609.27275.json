@@ -1,0 +1,52 @@
+{
+  "abstract": "Most autonomous-driving datasets record only the action executed by a behavior policy and the single future that followed, providing limited supervision for comparing alternative ego decisions. We introduce BranchDrive, a branch-structured CARLA dataset and benchmark that pairs one canonical pre-decision history with one nominal expert future and twelve physically executed intervention futures spanning acceleration, braking, and left- and right-steering policies at three magnitudes. Each intervention lasts 2.5 s and is followed by expert recovery. Following control-compliance, modality-completeness, replay-fidelity, and action-leakage audits, the frozen benchmark contains 606 independent branch groups and 7,878 associated trajectories. We evaluate prediction of six continuous short-horizon outcomes and a ten-step ego trajectory using action-only, history-only, structured, visual, multimodal, and privileged bird's-eye-view models. On the held-out test split, the structured history-and-action model achieves a macro normalized mean absolute error of 0.5036 and an average displacement error of 2.2042 m, significantly outperforming both restricted baselines. In full-information offline evaluation, its outcome-derived selector increases balanced policy value from 0.5364 to 0.5704 and reduces normalized regret from 0.2674 to 0.1495 relative to the frozen action prior. However, a validation-calibrated minimum-separation guard rejects every intervention, showing that conservative execution remains unresolved. BranchDrive therefore supports action-conditioned short-horizon prediction and fixed-bank offline decision evaluation, but does not establish exact causal effects, binary safety prediction, or closed-loop safety improvement.",
+  "abstract_zh": "大多数自主驾驶数据集仅记录行为策略执行的动作及其后续的单一未来，这为比较替代自我决策提供了有限的监督。我们引入了BranchDrive，一个基于分支结构的CARLA数据集和基准，它将一个典型的决策前历史与一个标准的专家未来和十二个物理执行的干预未来相配对，这些干预涵盖了加速、制动以及左转和右转的策略，分为三种幅度。每个干预持续2.5秒，并随后由专家进行恢复。经过控制合规性、模态完整性、重放保真度和动作泄漏审计后，冻结基准包含606个独立的分支组和7,878条相关轨迹。我们评估了六个连续短期结果和一个十步自我轨迹的预测，使用仅动作、仅历史、结构化、视觉、多模态和特权鸟瞰模型。在保留的测试集上，结构化历史与动作模型的宏观归一化平均绝对误差为0.5036，平均位移误差为2.2042米，显著优于两个受限基线。在全信息离线评估中，其结果导向选择器将平衡策略值从0.5364提高到0.5704，并将归一化遗憾从0.2674降低到0.1495，相对于冻结的动作先验。然而，经过验证校准的最小分离保护机制拒绝了每个干预，显示出保守执行的问题仍未解决。因此，BranchDrive支持基于行动的短期预测和固定银行的离线决策评估，但并未确立确切的因果效应、二元安全预测或闭环安全改进。",
+  "arxiv_id": "2609.27275",
+  "arxiv_url": "https://arxiv.org/abs/2609.27275v1",
+  "authors": [
+    "Feeza Khan Khanzada",
+    "Sudarshan Sridhar",
+    "Jaerock Kwon"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27275",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.093667+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27275v1",
+  "published_at": "2026-09-23T03:02:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 39
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27275v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "BranchDrive: A Branch-Structured Dataset for Action-Conditioned Driving Prediction",
+  "title_zh": "BranchDrive：一种基于分支结构的行动条件驾驶预测数据集",
+  "translation_url": "https://hjfy.top/arxiv/2609.27275"
+}

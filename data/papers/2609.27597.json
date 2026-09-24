@@ -1,0 +1,48 @@
+{
+  "abstract": "The growing demand for automation in the mining industry, particularly for the autonomous operation of articulated dump trucks (ADTs), has drawn increased attention to accurate vehicle modeling. The importance of such models lies in their use in model predictive control (MPC), model-based estimation methods, and vehicle simulation. While dynamic modeling offers a viable solution for these purposes, it is associated with complex setup and parametrization and may require recalibration in changing operating environments. As a result, kinematic models have dominated ADT modeling, especially in MPCs, at the expense of reduced prediction accuracy. In this work, we propose an approach using Gaussian Process Regression (GPR) to learn the sideslip angle of the vehicle, which is identified as the primary contributor to the reduced accuracy of kinematic models. The learned GPR function is augmented into the kinematic model to form a gray-box model that aims to reduce the gap to dynamic models. We show that the gray-box model can predict the sideslip angle and, consequently, the vehicle's lateral velocity, thereby improving the MPC's prediction performance. The resulting gray-box MPC is compared against two white-box MPCs in a simulation environment. The results indicate an improvement in terms of maximum lateral tracking error from over 2 m to 0.56 m.",
+  "abstract_zh": "随着矿业行业对自动化需求的不断增长，特别是对关节式自卸卡车（ADTs）自主操作的需求，准确的车辆建模受到了越来越多的关注。这类模型的重要性体现在其在模型预测控制（MPC）、基于模型的估计方法和车辆仿真中的应用。尽管动态建模为这些目的提供了可行的解决方案，但其通常伴随着复杂的设置和参数化，并且在变化的操作环境中可能需要重新校准。因此，运动学模型在ADTs建模中占主导地位，尤其是在MPC中，但这也导致了预测精度的降低。在本研究中，我们提出了一种使用高斯过程回归（GPR）学习车辆侧滑角的方法，侧滑角被确定为运动学模型精度降低的主要因素。将学习到的GPR函数与运动学模型相结合，形成一个灰箱模型，旨在缩小与动态模型之间的差距。我们展示了灰箱模型能够预测侧滑角，从而预测车辆的横向速度，进而提高MPC的预测性能。最终的灰箱MPC在仿真环境中与两个白箱MPC进行了比较。结果表明，最大横向跟踪误差从超过2米改善至0.56米。",
+  "arxiv_id": "2609.27597",
+  "arxiv_url": "https://arxiv.org/abs/2609.27597v1",
+  "authors": [
+    "Arash Shahirpour",
+    "Jens Ahlers",
+    "Christopher Schulte",
+    "Tim Reuscher"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27597",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.101971+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27597v1",
+  "published_at": "2026-09-23T09:11:23Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27597v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "面向自主运行的矿用关节式自卸卡车，论文通过学习侧滑角改进车辆模型及模型预测控制，显著降低仿真中的横向跟踪误差。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Gray-Box Model Predictive Control for Articulated Dump Trucks via Gaussian Process Learning of Sideslip",
+  "title_zh": "基于高斯过程学习侧滑的关节式自卸卡车灰箱模型预测控制",
+  "translation_url": "https://hjfy.top/arxiv/2609.27597"
+}

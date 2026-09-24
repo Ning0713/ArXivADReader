@@ -1,0 +1,57 @@
+{
+  "abstract": "Fixed roadside cameras repeatedly observe a stable scene overlaid by sparse moving traffic. Temporal memory can recover weak observations, but reusing moving evidence at stale locations can corrupt occupancy predictions. Motion compensation addresses displacement, while reliance on the resulting history remains a separate learning problem. We introduce RoadOcc, which learns soft routing among fixed-coordinate history (\\emph{Persist}), velocity-addressed history (\\emph{Transport}), and current evidence (\\emph{Refresh}). Motion state and class-consistent historical support supervise these source choices. Dynamic-aware cross-attention (DCA) updates candidate locations, multi-scale voxel velocity estimation (VVE) constructs transport addresses from multi-scale current--history correspondence, and velocity-guided dynamic sparse fusion (VDSF) combines routed evidence under fixed sparse-token budgets. On InfraOcc, RoadOcc reaches 65.29 mIoU and 32.37 dynamic mIoU, gains of 4.44 and 4.71 over STCOcc. Controlled address experiments show that VVE raises dynamic mIoU by 0.87 over fixed-coordinate reading. Across three seeds, supervised P/T/R adds 1.40 dynamic points over motion-corrected retrieval, while removing Refresh costs 0.32 points. Results from two transfer models, Occ3D-nuScenes, and longer intervals provide additional support. Code will be released.",
+  "abstract_zh": "固定的路边摄像头反复观察一个稳定的场景，场景上叠加着稀疏的移动交通。时间记忆可以恢复微弱的观测，但在陈旧位置重用移动证据可能会破坏占用预测。运动补偿解决了位移问题，而依赖于由此产生的历史仍然是一个独立的学习问题。我们提出了 RoadOcc，它在固定坐标历史（ extit{Persist}）、速度地址历史（ extit{Transport}）和当前证据（ extit{Refresh}）之间学习软路由。运动状态和类别一致的历史支持监督这些来源选择。动态感知交叉注意力（DCA）更新候选位置，多尺度体素速度估计（VVE）从多尺度当前-历史对应关系构建传输地址，而速度引导的动态稀疏融合（VDSF）在固定稀疏令牌预算下组合路由证据。在 InfraOcc 数据集上，RoadOcc 达到 65.29 mIoU 和 32.37 动态 mIoU，相较于 STCOcc 提升了 4.44 和 4.71。控制地址实验表明，VVE 在固定坐标读取上提高了 0.87 的动态 mIoU。在三个种子实验中，监督的 P/T/R 相较于运动校正检索增加了 1.40 动态点，而去除 Refresh 则损失了 0.32 点。来自两个迁移模型 Occ3D-nuScenes 和更长时间间隔的结果提供了额外支持。代码将会发布。",
+  "arxiv_id": "2609.27677",
+  "arxiv_url": "https://arxiv.org/abs/2609.27677v1",
+  "authors": [
+    "Xiaokai Bai",
+    "Lei Yang",
+    "Songkai Wang",
+    "Lianqing Zheng",
+    "Si-Yuan Cao",
+    "Hui-liang Shen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27677",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.133253+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27677v1",
+  "published_at": "2026-09-23T10:47:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "traffic",
+      "roadside",
+      "交通",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27677v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "RoadOcc Learns When to Persist, Transport, or Refresh Memory for Roadside Occupancy Prediction",
+  "title_zh": "RoadOcc 学习何时坚持、传输或刷新记忆以进行路边占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.27677"
+}

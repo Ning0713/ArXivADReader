@@ -1,0 +1,54 @@
+{
+  "abstract": "Heterogeneity across Collaborative Perception (CP) agents is a major challenge for emerging CP frameworks due to domain gaps from differing sensors, architectures, and training data. Prior works mitigate this challenge by aligning features in a unified space via model retraining or per-agent-type interpreters. These strategies (a) require access to neighbor configurations, (b) do not fully address real-time CP deployment, and (c) generalize poorly to unseen agents joining at run time. To overcome these challenges, we present PEARL, a Prompt-Embedding framework for Anonymous and Real-time Lightweight heterogeneous CP. PEARL supports multiple CP interpreters and selects one for a new-joining agent in real time using two lightweight, multi-scale interpreters trained in parallel: a sparse-detection (LWSD) interpreter that aligns salient regions for cooperative detection, and a dense, domain-invariant (LWDDI) interpreter that produces agent-invariant features for fast interpreter selection. Both interpreters use low-rank visual prompts to reduce computation, storage, and model complexity. Extensive experiments on simulated (OPV2V, V2XSet) and real (DAIR-V2X) datasets show that PEARL generalizes across simulated and real-world cooperative driving scenarios. Its real-time model-selection strategy yields an 8.2% Average Precision (AP) gain over a random-selection baseline while running in 1.67 ms on average. Although primarily designed for real-time CP, PEARL also outperforms state-of-the-art heterogeneous CP frameworks under traditional offline training by 5.6% AP on average while reducing communication cost by up to 34.7 times. Equally important, PEARL does not require sharing agents' configurations or model settings, thereby protecting information that may be proprietary or private. These results establish PEARL as a scalable and practical framework for heterogeneous collaborative perception.",
+  "abstract_zh": "协作感知（Collaborative Perception, CP）代理之间的异构性是新兴CP框架面临的主要挑战，这源于不同传感器、架构和训练数据之间的领域差距。以往的研究通过模型重训练或每种代理类型的解释器在统一空间中对齐特征来缓解这一挑战。这些策略（a）需要访问邻居配置，（b）未能完全解决实时CP部署的问题，以及（c）对在运行时加入的未见代理的泛化能力较差。为克服这些挑战，我们提出了PEARL，一个用于匿名和实时轻量级异构CP的提示嵌入框架。PEARL支持多个CP解释器，并通过两个并行训练的轻量级多尺度解释器实时为新加入的代理选择一个：稀疏检测（LWSD）解释器对齐显著区域以实现协作检测，以及密集的领域不变（LWDDI）解释器生成代理不变特征以快速选择解释器。这两个解释器使用低秩视觉提示来减少计算、存储和模型复杂性。在模拟（OPV2V, V2XSet）和真实（DAIR-V2X）数据集上的大量实验表明，PEARL在模拟和真实世界的协作驾驶场景中具有良好的泛化能力。其实时模型选择策略在平均运行时间为1.67毫秒的情况下，相较于随机选择基线提高了8.2%的平均精度（Average Precision, AP）。尽管PEARL主要设计用于实时CP，但在传统离线训练下，其平均AP也比最先进的异构CP框架提高了5.6%，同时通信成本降低了多达34.7倍。同样重要的是，PEARL不需要共享代理的配置或模型设置，从而保护可能是专有或私密的信息。这些结果确立了PEARL作为一个可扩展且实用的异构协作感知框架。",
+  "arxiv_id": "2609.27123",
+  "arxiv_url": "https://arxiv.org/abs/2609.27123v1",
+  "authors": [
+    "Armin Maleki",
+    "Hayder Radha"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-24#paper-2609-27123",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-24T09:40:04.120794+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.27123v1",
+  "published_at": "2026-09-22T22:27:59Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "dair-v2x",
+      "v2xset",
+      "opv2v",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-24"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.27123v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-24"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "协同/V2X"
+    ]
+  },
+  "title": "PEARL: A Lightweight Prompt-based Feature Interpreter Framework for Real-Time, Anonymous, and Heterogeneous Collaborative Perception",
+  "title_zh": "PEARL：一种轻量级基于提示的特征解释框架，用于实时、匿名和异构协作感知",
+  "translation_url": "https://hjfy.top/arxiv/2609.27123"
+}
