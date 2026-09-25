@@ -1,0 +1,54 @@
+{
+  "abstract": "We present S2Planner, a trajectory planner that combines three front-facing cameras with ego-motion history and the current driving command. A fine-tuned DINOv3 backbone and a Spatial Tuning Adapter produce multi-scale image features; a coarse-to-fine decoder then uses trajectory self-attention and camera-projected cross-attention to refine candidate waypoints. The contribution is the integration of ego-conditioned trajectory initialization with iterative, geometry-guided sampling of multi-scale image features, rather than a new visual backbone or attention operator. On the NAVSIM v1 non-reactive evaluation, the previously reported navtest run obtained 88.03 PDMS. Because that run was selected using navtest performance, this number is exploratory and cannot be interpreted as an unbiased test estimate. Validation-selected evaluation on unexposed data, repeated runs, and computational measurements are needed to establish generalization and efficiency.",
+  "abstract_zh": "我们提出了S2Planner，一种轨迹规划器，它结合了三台前置摄像头、车辆自运动历史和当前驾驶指令。经过精细调优的DINOv3主干网络和空间调节适配器生成多尺度图像特征；然后，粗到细的解码器利用轨迹自注意力和摄像头投影的交叉注意力来细化候选路径点。我们的贡献在于将自我条件轨迹初始化与多尺度图像特征的迭代几何引导采样相结合，而不是提出新的视觉主干或注意力操作符。在NAVSIM v1非反应性评估中，之前报告的navtest运行获得了88.03 PDMS。由于该运行是基于navtest性能选择的，因此这个数字是探索性的，不能被解释为无偏测试估计。需要在未暴露数据上的验证选择评估、重复运行和计算测量，以建立泛化能力和效率。",
+  "arxiv_id": "2609.29813",
+  "arxiv_url": "https://arxiv.org/abs/2609.29813v1",
+  "authors": [
+    "Zhaowei Lu",
+    "Liguo Zhou",
+    "Yujie Guo",
+    "Lei Yu",
+    "Alois Knoll"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-29813",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.488885+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.29813v1",
+  "published_at": "2026-09-24T13:48:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.29813v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "端到端驾驶"
+    ]
+  },
+  "title": "S2Planner: Multi-Scale Semantic Planner for End-to-End Autonomous Driving",
+  "title_zh": "S2Planner：用于端到端自主驾驶的多尺度语义规划器",
+  "translation_url": "https://hjfy.top/arxiv/2609.29813"
+}

@@ -1,0 +1,55 @@
+{
+  "abstract": "While end-to-end autonomous driving systems show promise, their application to micromobility vehicles is hindered by simulators failing to capture specific kinematics, such as differential drives and omni-wheels. This paper pro- poses a sim-to-real-aware, vehicle-specific end-to-end learning environment for the WHILL Model CR on AWSIM and ROS 2. To minimize the sim-to-real gap, physical parameters are optimized via Bayesian optimization using real-world data, reducing trajectory errors across various driving scenarios. Additionally, this study introduces a synchronized architecture tailored for the stable training of world model-based agents. An end-to-end policy trained with DreamerV3 exhibited learning progress and achieved task completion in a simulated obstacle avoidance setting. Furthermore, this policy demonstrated direct sim-to-real transfer to the physical vehicle, enabling the vehicle to navigate around a cardboard box in a real-world corridor replica without fine-tuning. This paper provides a practical foundation for sim-to-real micromobility policy studies.",
+  "abstract_zh": "尽管端到端的自动驾驶系统展现出良好的前景，但其在微型出行车辆中的应用受到模拟器无法捕捉特定运动学（如差速驱动和全向轮）的限制。本文提出了一种面向仿真到现实的、特定于车辆的端到端学习环境，适用于WHILL Model CR，基于AWSIM和ROS 2。为了最小化仿真到现实的差距，利用真实世界数据通过贝叶斯优化优化物理参数，从而减少各种驾驶场景下的轨迹误差。此外，本研究引入了一种同步架构，旨在为基于世界模型的智能体的稳定训练提供支持。使用DreamerV3训练的端到端策略在模拟的障碍物避让环境中表现出了学习进展，并成功完成了任务。此外，该策略还展示了直接的仿真到现实转移能力，使得车辆能够在真实世界的走廊复制环境中绕过纸箱，而无需进行微调。本文为仿真到现实的微型出行政策研究提供了实用的基础。",
+  "arxiv_id": "2609.28969",
+  "arxiv_url": "https://arxiv.org/abs/2609.28969v1",
+  "authors": [
+    "Shouma Amano",
+    "Takuya Azumi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-28969",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.372435+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.28969v1",
+  "published_at": "2026-09-24T03:35:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "world model",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.28969v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "仿真/数据"
+    ]
+  },
+  "title": "Sim-to-Real Aware End-to-End Learning Environment for Micromobility",
+  "title_zh": "面向微型出行的仿真到现实感知端到端学习环境",
+  "translation_url": "https://hjfy.top/arxiv/2609.28969"
+}

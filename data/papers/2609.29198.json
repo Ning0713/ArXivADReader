@@ -1,0 +1,58 @@
+{
+  "abstract": "Accurate digital maps are essential for Advanced Driver Assistance Systems (ADAS) or Autonomous Driving (AD), providing critical information such as road geometry, traffic signs and speed limits required by safety functions including Intelligent Speed Assistance (ISA). Maintaining these map layers using traditional surveying methods is costly and difficult to scale. Crowdsourced approaches based on fleets provide a promising alternative for continuously validating and updating map information. However, the relationship between the number of contributing vehicles and the quality of the resulting map remains poorly understood. To address this gap, this paper presents a simulation-based framework for evaluating crowdsourced traffic sign maintenance using a dissimilarity measure called GOSPAM (Generalized Optimal SubPattern Assignment for Maps), which combines localization errors with detection performance by accounting for False Positives (FP) and False Negatives (FN). The proposed system models multivehicle observations with representative sensor noise, detection errors, and semantic recognition uncertainties. Observations from multiple vehicles are aggregated using spatial clustering and semantic filtering to estimate traffic sign locations. Using simulated trajectories generated from data carried out by an experimental vehicle in an area containing ground-truth traffic signs, we assess the influence of fleet size on the performance of crowdsourced mapping. The number of vehicles ranges from 5 to 50, and performance is analyzed using standard evaluation metrics which are compared to the GOSPAM . The results show that GOSPAM can be used to effectively assess the quality of crowdsourced mapping, such as the contributions made by the first vehicles or the improvements made by numerous vehicles.",
+  "abstract_zh": "准确的数字地图对于高级驾驶辅助系统（ADAS）或自动驾驶（AD）至关重要，它提供了安全功能所需的关键信息，如道路几何、交通标志和限速标志，包括智能限速辅助（ISA）。使用传统测量方法维护这些地图层成本高昂且难以扩展。基于车队的众包方法为持续验证和更新地图信息提供了一种有前景的替代方案。然而，贡献车辆数量与最终地图质量之间的关系仍然不够清楚。为了解决这一问题，本文提出了一种基于仿真的框架，用于评估众包交通标志维护，采用了一种名为 GOSPAM（Generalized Optimal SubPattern Assignment for Maps）的不相似性度量，该度量通过考虑假阳性（FP）和假阴性（FN）将定位误差与检测性能相结合。所提出的系统模拟了多车辆观察，考虑了代表性的传感器噪声、检测误差和语义识别不确定性。通过空间聚类和语义过滤，聚合来自多辆车辆的观察数据，以估计交通标志的位置。利用从实验车辆在包含真实交通标志的区域内收集的数据生成的模拟轨迹，我们评估了车队规模对众包地图性能的影响。车辆数量范围从 5 到 50，性能使用标准评估指标进行分析，并与 GOSPAM 进行比较。结果表明，GOSPAM 可以有效评估众包地图的质量，例如第一辆车的贡献或多辆车所带来的改进。",
+  "arxiv_id": "2609.29198",
+  "arxiv_url": "https://arxiv.org/abs/2609.29198v1",
+  "authors": [
+    "Marie-Ngoïe Badibanga Kalenda",
+    "Philippe Bonnifait",
+    "Marie-Anne Mittet"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-29198",
+  "categories": [
+    "cs.RO",
+    "physics.data-an"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.388606+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.29198v1",
+  "published_at": "2026-09-24T08:08:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.29198v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "Assessing the Impact of Fleet Size on Crowdsourced Mapping Using a Dissimilarity Measure",
+  "title_zh": "评估车队规模对众包地图的影响：基于不相似性度量",
+  "translation_url": "https://hjfy.top/arxiv/2609.29198"
+}

@@ -1,0 +1,58 @@
+{
+  "abstract": "Collaborative perception improves autonomous perception by sharing intermediate Bird's-Eye-View (BEV) features across connected agents, but dense feature exchange is difficult to deploy under strict Vehicle-to-Everything (V2X) bandwidth limits. Existing efficient methods typically either compress the full feature map uniformly, spending bits on low-value background, or sparsify communication, risking the loss of useful context. We propose a coverage-refinement design for byte-constrained cooperative perception: each agent transmits a highly compressed coarse layer over the full BEV map and allocates the remaining budget to selected high-resolution patches. A Task-Aware Benefit Selector ranks cells by estimated downstream utility, enabling deterministic budgeted refinement and zero-retraining adaptation to changing bandwidth. The receiver reconstructs a dense BEV tensor compatible with standard fusion modules. Experiments on DAIR-V2X and OPV2V show strong accuracy-payload trade-offs at kilobyte-scale budgets. On DAIR-V2X, our method reaches 0.60 [email protected] at only 1.87 KB per non-ego agent, compared with 0.52 at 4.61 KB for uniform SimVQ compression. Controlled diagnostics further show that the gain arises from coverage-refinement allocation rather than quantization alone. Code will be published.",
+  "abstract_zh": "协同感知通过在连接的代理之间共享中间鸟瞰图（Bird's-Eye-View, BEV）特征来提升自主感知能力，但在严格的车对一切（Vehicle-to-Everything, V2X）带宽限制下，密集特征交换的部署十分困难。现有的高效方法通常要么均匀压缩完整特征图，浪费位于低价值背景上的比特，要么稀疏通信，冒着丢失有用上下文的风险。我们提出了一种针对字节受限协同感知的覆盖-精炼设计：每个代理在完整的BEV图上发送一个高度压缩的粗层，并将剩余预算分配给选定的高分辨率补丁。任务感知收益选择器（Task-Aware Benefit Selector）根据估计的下游效用对单元进行排名，从而实现确定性的预算精炼和对带宽变化的零重训练适应。接收方重建与标准融合模块兼容的密集BEV张量。在DAIR-V2X和OPV2V上的实验表明，在千字节级预算下，准确性与负载之间的权衡表现出色。在DAIR-V2X上，我们的方法在每个非自我代理仅需1.87 KB时达到了0.60 [email protected] ，而均匀的SimVQ压缩则需4.61 KB时仅达到0.52。受控诊断进一步表明，增益源于覆盖-精炼分配，而非单纯的量化。代码将会发布。",
+  "arxiv_id": "2609.29456",
+  "arxiv_url": "https://arxiv.org/abs/2609.29456v1",
+  "authors": [
+    "Melih Yazgan",
+    "Timon Müller",
+    "J. Marius Zöllner"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-29456",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.468391+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.29456v1",
+  "published_at": "2026-09-24T12:10:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle-to-everything",
+      "v2x",
+      "dair-v2x",
+      "opv2v",
+      "autonomous",
+      "vehicle",
+      "bev",
+      "bird's-eye",
+      "cooperative perception",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.29456v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "协同/V2X",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Dense Coverage, Sparse Refinement: Byte-Constrained Cooperative Perception",
+  "title_zh": "密集覆盖，稀疏精炼：字节受限的协同感知",
+  "translation_url": "https://hjfy.top/arxiv/2609.29456"
+}

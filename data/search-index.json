@@ -1,6 +1,241 @@
 {
-  "generated_at": "2026-09-24T09:42:24.370227+00:00",
+  "generated_at": "2026-09-25T09:59:48.602375+00:00",
   "items": [
+    {
+      "abstract": "While 2D Vision Foundation Models offer a pathway to automate 3D semantic pseudo-labelling, translating these priors into robust 3D representations typically requires complex heuristics or multi-model ensembles. We introduce SplatLabel, an automated pipeline that leverages a 4D Gaussian representation to extract LiDAR segmentation with predictive confidence, as well as semantic occupancy grids at arbitrary voxel resolutions. At its core, SplatLabel handles dynamic environments through an explicit temporal manifold that models the trajectories and lifespans of individual 3D primitives. This allows the system to accurately track moving actors and strictly define when objects appear and disappear, completely eliminating the need for pre-annotated 3D bounding boxes. To robustly support this dynamic tracking, the representation is grounded by structural and semantic priors: we guide scene geometry in unobserved regions by integrating 360-degree LiDAR via virtual depth maps, and rather than relying on domain-specific prompt engineering, we directly distill continuous soft probabilities from 2D models to inherently resolve semantic ambiguities over time and space. Finally, to accurately reflect the real-world trade-off between precision and recall, we reframe pseudo-label evaluation as a selective classification task using a generalized risk-recall metric. Experiments on SemanticKITTI demonstrate that SplatLabel consistently outperforms state-of-the-art baselines across multiple recall levels, establishing a highly robust framework for both 3D LiDAR segmentation and occupancy prediction.",
+      "abstract_zh": "虽然2D视觉基础模型为自动化3D语义伪标注提供了一条路径，但将这些先验转化为稳健的3D表示通常需要复杂的启发式方法或多模型集成。我们提出了SplatLabel，一个自动化管道，利用4D高斯表示提取具有预测置信度的LiDAR分割以及任意体素分辨率的语义占用网格。SplatLabel的核心通过显式的时间流形处理动态环境，建模个体3D原语的轨迹和生命周期。这使得系统能够准确跟踪移动的对象，并严格定义物体出现和消失的时刻，完全消除了对预标注3D边界框的需求。为了稳健地支持这种动态跟踪，该表示由结构和语义先验支撑：我们通过虚拟深度图集成360度LiDAR来指导未观测区域的场景几何，而不是依赖于领域特定的提示工程，我们直接从2D模型中提炼连续的软概率，以固有地解决时间和空间上的语义模糊性。最后，为了准确反映现实世界中精确度与召回率之间的权衡，我们将伪标签评估重新框定为使用广义风险-召回指标的选择性分类任务。在SemanticKITTI上的实验表明，SplatLabel在多个召回水平上始终优于最先进的基线，建立了一个高度稳健的框架，用于3D LiDAR分割和占用预测。",
+      "authors": [
+        "Nitya Nanvani",
+        "Andras Palffy",
+        "Holger Caesar"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.29836",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "BEV/Occupancy"
+      ],
+      "title": "SplatLabel: Pseudo-Labelling through 4D Gaussian Splatting",
+      "title_zh": "SplatLabel：通过4D高斯点云进行伪标注",
+      "url": "/daily/2026-09-25/#paper-2609-29836"
+    },
+    {
+      "abstract": "LiDAR provides precise geometric information for spatial perception tasks such as object detection in autonomous driving and outdoor robotics. However, recognizing and localizing individual objects is not sufficient to answer questions that require composing spatial relations and grounding the intended target. Motivated by recent advances in large language models (LLMs) for autonomous driving, we leverage their language priors to interpret complex spatial questions and ground the referred target in LiDAR geometry. To support this spatial grounding capability, we introduce SpatialLiDAR-QA, which combines single- and multi-step relational grounding with complementary spatial understanding tasks. We further propose SpatialLiDAR-LM, which aligns LiDAR point features with an LLM and grounds target coordinates through language-conditioned, position-aware proposal retrieval and local point refinement. This design derives target coordinates directly from local LiDAR geometry rather than through textual language decoding. Experiments demonstrate substantial improvements over representative LiDAR--language models and multi-camera VLMs on precise coordinate prediction tasks. Our dataset and model training code will be publicly released.",
+      "abstract_zh": "LiDAR为空间感知任务提供了精确的几何信息，例如在自动驾驶和户外机器人中的物体检测。然而，识别和定位单个物体不足以回答需要组合空间关系和定位目标的问题。受到最近大型语言模型（LLMs）在自动驾驶领域的进展的启发，我们利用它们的语言先验来解释复杂的空间问题，并在LiDAR几何中定位所指的目标。为了支持这一空间定位能力，我们引入了SpatialLiDAR-QA，它结合了单步和多步关系定位以及互补的空间理解任务。我们进一步提出了SpatialLiDAR-LM，它将LiDAR点特征与LLM对齐，并通过基于语言条件的、位置感知的提案检索和局部点细化来定位目标坐标。该设计直接从局部LiDAR几何中推导目标坐标，而不是通过文本语言解码。实验表明，在精确坐标预测任务上，相较于代表性的LiDAR-语言模型和多摄像头视觉语言模型（VLMs），我们的模型有显著的提升。我们的数据集和模型训练代码将公开发布。",
+      "authors": [
+        "Byounggun Park",
+        "Giyong Moon",
+        "Jusung Kim",
+        "Soonmin Hwang"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.29835",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "仿真/数据"
+      ],
+      "title": "Retrieve-to-Localize: Bridging Large Language Models and LiDAR Geometry for Spatial Grounding",
+      "title_zh": "检索-定位：连接大型语言模型与LiDAR几何以实现空间定位",
+      "url": "/daily/2026-09-25/#paper-2609-29835"
+    },
+    {
+      "abstract": "We present S2Planner, a trajectory planner that combines three front-facing cameras with ego-motion history and the current driving command. A fine-tuned DINOv3 backbone and a Spatial Tuning Adapter produce multi-scale image features; a coarse-to-fine decoder then uses trajectory self-attention and camera-projected cross-attention to refine candidate waypoints. The contribution is the integration of ego-conditioned trajectory initialization with iterative, geometry-guided sampling of multi-scale image features, rather than a new visual backbone or attention operator. On the NAVSIM v1 non-reactive evaluation, the previously reported navtest run obtained 88.03 PDMS. Because that run was selected using navtest performance, this number is exploratory and cannot be interpreted as an unbiased test estimate. Validation-selected evaluation on unexposed data, repeated runs, and computational measurements are needed to establish generalization and efficiency.",
+      "abstract_zh": "我们提出了S2Planner，一种轨迹规划器，它结合了三台前置摄像头、车辆自运动历史和当前驾驶指令。经过精细调优的DINOv3主干网络和空间调节适配器生成多尺度图像特征；然后，粗到细的解码器利用轨迹自注意力和摄像头投影的交叉注意力来细化候选路径点。我们的贡献在于将自我条件轨迹初始化与多尺度图像特征的迭代几何引导采样相结合，而不是提出新的视觉主干或注意力操作符。在NAVSIM v1非反应性评估中，之前报告的navtest运行获得了88.03 PDMS。由于该运行是基于navtest性能选择的，因此这个数字是探索性的，不能被解释为无偏测试估计。需要在未暴露数据上的验证选择评估、重复运行和计算测量，以建立泛化能力和效率。",
+      "authors": [
+        "Zhaowei Lu",
+        "Liguo Zhou",
+        "Yujie Guo",
+        "Lei Yu",
+        "Alois Knoll"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.29813",
+      "tags": [
+        "预测/规划",
+        "深度/几何",
+        "端到端驾驶"
+      ],
+      "title": "S2Planner: Multi-Scale Semantic Planner for End-to-End Autonomous Driving",
+      "title_zh": "S2Planner：用于端到端自主驾驶的多尺度语义规划器",
+      "url": "/daily/2026-09-25/#paper-2609-29813"
+    },
+    {
+      "abstract": "Computational models of careful and competent human drivers are essential for scenario-based evaluation of automated driving systems (ADS). However, most existing safety reference models primarily focus on longitudinal braking, neglecting the role of evasive steering in human collision avoidance. This paper proposes a hybrid Fuzzy-Safety Model (FSM-H) that integrates longitudinal mitigation and lateral avoidance within a unified behavioral framework. The braking component is governed by Proactive Fuzzy Safety (PFS) metrics, representing the erosion of longitudinal safety margins, while the steering component is driven by Criticality Fuzzy Safety for lane-change (CFS-LC), capturing lateral conflict severity and maneuver feasibility. A finite-state architecture models the sequential escalation from nominal driving to braking and, when necessary, to evasive steering, incorporating perception-reaction time and lane-check delays to reflect human decision processes. The model is evaluated in reconstructed high-criticality cut-in scenarios and compared with braking-only and steering-only reference strategies. Results show that the hybrid approach expands the preventability envelope while maintaining behavioral plausibility and computational tractability. The proposed framework provides a transparent and explainable human reference model suitable for simulation-based ADS safety benchmarking and regulatory assessment.",
+      "abstract_zh": "谨慎且能干的人类驾驶员的计算模型对于基于场景的自动驾驶系统（ADS）评估至关重要。然而，现有的大多数安全参考模型主要集中于纵向刹车，忽视了人类在避免碰撞中规避转向的作用。本文提出了一种混合模糊安全模型（FSM-H），在统一的行为框架内整合了纵向减速和横向规避。刹车部分由主动模糊安全（PFS）指标控制，代表纵向安全边际的侵蚀，而转向部分则由车道变更的关键模糊安全（CFS-LC）驱动，捕捉横向冲突的严重性和机动的可行性。有限状态架构模拟了从正常驾驶到刹车，再到必要时的规避转向的逐步升级，结合感知-反应时间和车道检查延迟，以反映人类决策过程。该模型在重建的高关键性插入场景中进行了评估，并与仅刹车和仅转向的参考策略进行了比较。结果表明，混合方法在保持行为合理性和计算可行性的同时，扩展了可预防性范围。所提出的框架提供了一个透明且可解释的人类参考模型，适用于基于仿真的ADS安全基准测试和监管评估。",
+      "authors": [
+        "Riccardo Donà",
+        "Konstantinos Mattas",
+        "Biagio Ciuffo"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.29738",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "安全/异常"
+      ],
+      "title": "Combining Evasive and Braking Reactions for Safety Reference Models in Automated Vehicles",
+      "title_zh": "结合规避与刹车反应的自动驾驶安全参考模型",
+      "url": "/daily/2026-09-25/#paper-2609-29738"
+    },
+    {
+      "abstract": "Video object detection on edge devices runs computationally expensive detectors over long frame streams, causing high energy consumption and sustained GPU utilization. Although consecutive frames are highly redundant, naive frame skipping is content-blind: it skips during critical moments such as object entry, occlusion recovery, and abrupt motion, degrading detection quality. We present Albireo, a detector-agnostic, codec-free adaptive inference framework that wraps off-the-shelf detectors and decides when detector invocation can be safely skipped based on scene content and per-object temporal state, requiring no detector modification or retraining. Albireo maintains a 10-dimensional Kalman filter (KF) per active object and invokes the detector only when prediction uncertainty exceeds a threshold; on skipped frames, boxes are predicted from the KF state at near-zero GPU cost. A KF-based rescue mechanism preserves confirmed objects through brief detector misses to prevent output fragmentation, while a lightweight empty-scene screen avoids detector calls on objectless frames. We evaluate Albireo on the BDD100K MOT validation split with three architecturally distinct detectors (YOLO11x, YOLO26x, RF-DETR-Large) on two NVIDIA Jetson platforms (AGX Thor, AGX Orin). Across all configurations, Albireo keeps AP@50 within +/-1.2 pp of per-frame inference while reducing total energy by 12.1-17.6%. On YOLO26x, it improves AP@50 by +0.8 pp while reducing energy by 17.6% (Thor) and 14.4% (Orin) and per-frame energy-delay product by 24.9% and 26.1%, respectively. Thus, the default operating point improves accuracy, energy, and latency together. In contrast, FixedSkip-2, a fixed-interval baseline with a 50% skip rate, loses 8.6 pp AP@50. Source code, evaluation pipeline, and per-clip results are available at https://github.com/amirtaherin/albireo",
+      "abstract_zh": "边缘设备上的视频目标检测需要在长帧流中运行计算开销大的检测器，这导致高能耗和持续的GPU利用率。尽管连续帧之间高度冗余，但简单的帧跳过方法是内容盲的：它在关键时刻（如目标进入、遮挡恢复和突然运动）跳过帧，从而降低检测质量。我们提出了Albireo，这是一种与检测器无关、无编码器的自适应推理框架，它封装现成的检测器，并根据场景内容和每个目标的时间状态决定何时可以安全跳过检测器调用，而无需对检测器进行修改或重新训练。Albireo为每个活动目标维护一个10维的卡尔曼滤波器（Kalman Filter, KF），仅在预测不确定性超过阈值时调用检测器；在跳过的帧上，框是从KF状态预测的，几乎不消耗GPU资源。基于KF的救援机制通过短暂的检测器失误来保护已确认的目标，以防止输出碎片化，同时轻量级的空场景屏幕避免在无目标帧上调用检测器。我们在BDD100K MOT验证集上评估了Albireo，使用三种架构上不同的检测器（YOLO11x、YOLO26x、RF-DETR-Large）在两个NVIDIA Jetson平台（AGX Thor、AGX Orin）上进行测试。在所有配置中，Albireo将AP@50保持在每帧推理的±1.2 pp范围内，同时总能耗降低了12.1-17.6%。在YOLO26x上，它将AP@50提高了+0.8 pp，同时在Thor和Orin平台上分别减少了17.6%和14.4%的能耗，以及每帧能量-延迟乘积分别降低了24.9%和26.1%。因此，默认操作点在准确性、能耗和延迟上实现了共同改善。相比之下，FixedSkip-2（一个固定间隔基线，跳过率为50%）损失了8.6 pp的AP@50。源代码、评估管道和每个剪辑的结果可在https://github.com/amirtaherin/albireo获取。",
+      "authors": [
+        "Amir Taherin",
+        "José Cano",
+        "Bin Ren",
+        "Yanzhi Wang",
+        "David Kaeli"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.29648",
+      "tags": [
+        "感知",
+        "安全/异常"
+      ],
+      "title": "Albireo: Adaptive, Energy-Efficient Inference Framework for Video Object Detection on the Edge",
+      "title_zh": "Albireo：用于边缘视频目标检测的自适应节能推理框架",
+      "url": "/daily/2026-09-25/#paper-2609-29648"
+    },
+    {
+      "abstract": "Collaborative perception improves autonomous perception by sharing intermediate Bird's-Eye-View (BEV) features across connected agents, but dense feature exchange is difficult to deploy under strict Vehicle-to-Everything (V2X) bandwidth limits. Existing efficient methods typically either compress the full feature map uniformly, spending bits on low-value background, or sparsify communication, risking the loss of useful context. We propose a coverage-refinement design for byte-constrained cooperative perception: each agent transmits a highly compressed coarse layer over the full BEV map and allocates the remaining budget to selected high-resolution patches. A Task-Aware Benefit Selector ranks cells by estimated downstream utility, enabling deterministic budgeted refinement and zero-retraining adaptation to changing bandwidth. The receiver reconstructs a dense BEV tensor compatible with standard fusion modules. Experiments on DAIR-V2X and OPV2V show strong accuracy-payload trade-offs at kilobyte-scale budgets. On DAIR-V2X, our method reaches 0.60 [email protected] at only 1.87 KB per non-ego agent, compared with 0.52 at 4.61 KB for uniform SimVQ compression. Controlled diagnostics further show that the gain arises from coverage-refinement allocation rather than quantization alone. Code will be published.",
+      "abstract_zh": "协同感知通过在连接的代理之间共享中间鸟瞰图（Bird's-Eye-View, BEV）特征来提升自主感知能力，但在严格的车对一切（Vehicle-to-Everything, V2X）带宽限制下，密集特征交换的部署十分困难。现有的高效方法通常要么均匀压缩完整特征图，浪费位于低价值背景上的比特，要么稀疏通信，冒着丢失有用上下文的风险。我们提出了一种针对字节受限协同感知的覆盖-精炼设计：每个代理在完整的BEV图上发送一个高度压缩的粗层，并将剩余预算分配给选定的高分辨率补丁。任务感知收益选择器（Task-Aware Benefit Selector）根据估计的下游效用对单元进行排名，从而实现确定性的预算精炼和对带宽变化的零重训练适应。接收方重建与标准融合模块兼容的密集BEV张量。在DAIR-V2X和OPV2V上的实验表明，在千字节级预算下，准确性与负载之间的权衡表现出色。在DAIR-V2X上，我们的方法在每个非自我代理仅需1.87 KB时达到了0.60 [email protected] ，而均匀的SimVQ压缩则需4.61 KB时仅达到0.52。受控诊断进一步表明，增益源于覆盖-精炼分配，而非单纯的量化。代码将会发布。",
+      "authors": [
+        "Melih Yazgan",
+        "Timon Müller",
+        "J. Marius Zöllner"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.29456",
+      "tags": [
+        "协同/V2X",
+        "感知",
+        "BEV/Occupancy"
+      ],
+      "title": "Dense Coverage, Sparse Refinement: Byte-Constrained Cooperative Perception",
+      "title_zh": "密集覆盖，稀疏精炼：字节受限的协同感知",
+      "url": "/daily/2026-09-25/#paper-2609-29456"
+    },
+    {
+      "abstract": "Autonomous navigation in dynamic environments is hindered by two fundamental challenges: perception instability and uncertainty-optimization mismatch. The former leads to identity switches and unreliable motion estimation, while the latter prevents principled incorporation of motion uncertainty into trajectory optimization. To address these challenges, we propose UCON, an uncertainty-aware navigation algorithm in dynamic environments. For perception instability, we present a point-level historical re-association mechanism that leverages historical point cloud fragments to recover lost targets while maintaining identity continuity. Subsequently, a Kalman filter is employed to provide anisotropic motion state estimation and covariance propagation. To resolve the uncertainty-optimization mismatch, we transform predicted states and their covariances into uncertainty sectors, which are embedded as differentiable cost terms within a trajectory optimization framework. This achieves consistent uncertainty-aware dynamic obstacle avoidance while maintaining smoothness and feasibility. Extensive simulations and real-world experiments demonstrate that, while maintaining high computational efficiency, UCON achieves superior perception stability and robust navigation performance in dynamic environments compared to state-of-the-art methods. The code will be open-sourced to facilitate further research.",
+      "abstract_zh": "在动态环境中，自主导航面临两个基本挑战：感知不稳定性和不确定性优化不匹配。前者导致身份切换和不可靠的运动估计，而后者则阻碍了将运动不确定性原则性地纳入轨迹优化。为了解决这些挑战，我们提出了UCON，一种在动态环境中具有不确定性意识的导航算法。针对感知不稳定性，我们提出了一种点级历史重关联机制，该机制利用历史点云片段来恢复丢失的目标，同时保持身份连续性。随后，采用卡尔曼滤波器提供各向异性的运动状态估计和协方差传播。为了解决不确定性优化不匹配的问题，我们将预测状态及其协方差转化为不确定性区域，并将其嵌入到轨迹优化框架中的可微分成本项中。这实现了一致的不确定性意识动态障碍物避让，同时保持了平滑性和可行性。大量的仿真和真实世界实验表明，UCON在保持高计算效率的同时，相较于最先进的方法，能够在动态环境中实现更优的感知稳定性和鲁棒的导航性能。代码将开源以促进进一步研究。",
+      "authors": [
+        "Bing Sun",
+        "Yue Lin",
+        "Yongsheng Yuan",
+        "Yang Liu",
+        "Dong Wang",
+        "Huchuan Lu"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.29419",
+      "tags": [
+        "预测/规划",
+        "感知",
+        "LiDAR/点云"
+      ],
+      "title": "UCON: Uncertainty-aware Navigation with Historical Re-association in Dynamic Environments",
+      "title_zh": "UCON：动态环境中基于历史重关联的感知不确定性导航",
+      "url": "/daily/2026-09-25/#paper-2609-29419"
+    },
+    {
+      "abstract": "Camera-LiDAR fusion has become a prevailing paradigm for 3D object detection in autonomous driving. However, existing fusion detectors often establish strong inter-modality dependencies by decoding object queries from tightly coupled multimodal representations. Under corrupted driving conditions, such dependencies make the detector vulnerable to unreliable modalities, where degraded observations may interfere with reliable modality-specific evidence and lead to suboptimal predictions. Moreover, modality reliability can vary across both global driving scenes and individual object queries, requiring adaptive fusion decisions at a finer granularity. To bridge this gap, we reformulate robust camera-LiDAR fusion as a scene-aware branch routing problem and propose SARFusion, a robust 3D object detector. Instead of producing detections from a single fused representation, SARFusion decouples object-query decoding into three parallel reasoning branches: a camera branch, a LiDAR branch, and a camera-LiDAR fusion branch. Guided by a Scene Reliability Prior estimated from the global driving context, SARFusion further incorporates object-level evidence to route each query to the most suitable branch. This query-wise routing strategy alleviates harmful cross-modal interference while preserving the benefits of multimodal fusion when complementary cues are trustworthy. On the nuScenes test set, SARFusion achieves strong performance with 72.5 mAP and 74.4 NDS. Extensive analyses demonstrate its robustness under challenging conditions, including sensor corruptions and environmental changes.",
+      "abstract_zh": "相机-LiDAR融合已成为自动驾驶中3D物体检测的主流范式。然而，现有的融合检测器通常通过从紧密耦合的多模态表示中解码物体查询来建立强烈的跨模态依赖关系。在恶劣的驾驶条件下，这种依赖关系使得检测器容易受到不可靠模态的影响，其中降级的观测可能干扰可靠的模态特定证据，导致次优的预测。此外，模态的可靠性在全球驾驶场景和个体物体查询之间可能会有所不同，因此需要在更细粒度上进行自适应融合决策。为了解决这一问题，我们将鲁棒的相机-LiDAR融合重新表述为一个基于场景感知的分支路由问题，并提出了SARFusion，一个鲁棒的3D物体检测器。SARFusion并不是从单一的融合表示中产生检测结果，而是将物体查询解码解耦为三个并行推理分支：相机分支、LiDAR分支和相机-LiDAR融合分支。在全球驾驶上下文中估计的场景可靠性先验的指导下，SARFusion进一步结合物体级证据，将每个查询路由到最合适的分支。这种按查询路由的策略减轻了有害的跨模态干扰，同时在互补线索可靠时保留了多模态融合的优势。在nuScenes测试集上，SARFusion取得了72.5 mAP和74.4 NDS的优异表现。大量分析表明其在传感器损坏和环境变化等挑战条件下的鲁棒性。",
+      "authors": [
+        "Yuting Zhao",
+        "Ziyi Zheng",
+        "Shuxiao Li"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.29235",
+      "tags": [
+        "感知",
+        "多传感器融合",
+        "3D 检测"
+      ],
+      "title": "SARFusion: Scene-Aware Routing Fusion for Robust Camera-LiDAR 3D Object Detection",
+      "title_zh": "SARFusion：基于场景感知的路由融合用于鲁棒的相机-LiDAR 3D物体检测",
+      "url": "/daily/2026-09-25/#paper-2609-29235"
+    },
+    {
+      "abstract": "Accurate digital maps are essential for Advanced Driver Assistance Systems (ADAS) or Autonomous Driving (AD), providing critical information such as road geometry, traffic signs and speed limits required by safety functions including Intelligent Speed Assistance (ISA). Maintaining these map layers using traditional surveying methods is costly and difficult to scale. Crowdsourced approaches based on fleets provide a promising alternative for continuously validating and updating map information. However, the relationship between the number of contributing vehicles and the quality of the resulting map remains poorly understood. To address this gap, this paper presents a simulation-based framework for evaluating crowdsourced traffic sign maintenance using a dissimilarity measure called GOSPAM (Generalized Optimal SubPattern Assignment for Maps), which combines localization errors with detection performance by accounting for False Positives (FP) and False Negatives (FN). The proposed system models multivehicle observations with representative sensor noise, detection errors, and semantic recognition uncertainties. Observations from multiple vehicles are aggregated using spatial clustering and semantic filtering to estimate traffic sign locations. Using simulated trajectories generated from data carried out by an experimental vehicle in an area containing ground-truth traffic signs, we assess the influence of fleet size on the performance of crowdsourced mapping. The number of vehicles ranges from 5 to 50, and performance is analyzed using standard evaluation metrics which are compared to the GOSPAM . The results show that GOSPAM can be used to effectively assess the quality of crowdsourced mapping, such as the contributions made by the first vehicles or the improvements made by numerous vehicles.",
+      "abstract_zh": "准确的数字地图对于高级驾驶辅助系统（ADAS）或自动驾驶（AD）至关重要，它提供了安全功能所需的关键信息，如道路几何、交通标志和限速标志，包括智能限速辅助（ISA）。使用传统测量方法维护这些地图层成本高昂且难以扩展。基于车队的众包方法为持续验证和更新地图信息提供了一种有前景的替代方案。然而，贡献车辆数量与最终地图质量之间的关系仍然不够清楚。为了解决这一问题，本文提出了一种基于仿真的框架，用于评估众包交通标志维护，采用了一种名为 GOSPAM（Generalized Optimal SubPattern Assignment for Maps）的不相似性度量，该度量通过考虑假阳性（FP）和假阴性（FN）将定位误差与检测性能相结合。所提出的系统模拟了多车辆观察，考虑了代表性的传感器噪声、检测误差和语义识别不确定性。通过空间聚类和语义过滤，聚合来自多辆车辆的观察数据，以估计交通标志的位置。利用从实验车辆在包含真实交通标志的区域内收集的数据生成的模拟轨迹，我们评估了车队规模对众包地图性能的影响。车辆数量范围从 5 到 50，性能使用标准评估指标进行分析，并与 GOSPAM 进行比较。结果表明，GOSPAM 可以有效评估众包地图的质量，例如第一辆车的贡献或多辆车所带来的改进。",
+      "authors": [
+        "Marie-Ngoïe Badibanga Kalenda",
+        "Philippe Bonnifait",
+        "Marie-Anne Mittet"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.29198",
+      "tags": [
+        "地图/定位",
+        "感知",
+        "深度/几何"
+      ],
+      "title": "Assessing the Impact of Fleet Size on Crowdsourced Mapping Using a Dissimilarity Measure",
+      "title_zh": "评估车队规模对众包地图的影响：基于不相似性度量",
+      "url": "/daily/2026-09-25/#paper-2609-29198"
+    },
+    {
+      "abstract": "While end-to-end autonomous driving systems show promise, their application to micromobility vehicles is hindered by simulators failing to capture specific kinematics, such as differential drives and omni-wheels. This paper pro- poses a sim-to-real-aware, vehicle-specific end-to-end learning environment for the WHILL Model CR on AWSIM and ROS 2. To minimize the sim-to-real gap, physical parameters are optimized via Bayesian optimization using real-world data, reducing trajectory errors across various driving scenarios. Additionally, this study introduces a synchronized architecture tailored for the stable training of world model-based agents. An end-to-end policy trained with DreamerV3 exhibited learning progress and achieved task completion in a simulated obstacle avoidance setting. Furthermore, this policy demonstrated direct sim-to-real transfer to the physical vehicle, enabling the vehicle to navigate around a cardboard box in a real-world corridor replica without fine-tuning. This paper provides a practical foundation for sim-to-real micromobility policy studies.",
+      "abstract_zh": "尽管端到端的自动驾驶系统展现出良好的前景，但其在微型出行车辆中的应用受到模拟器无法捕捉特定运动学（如差速驱动和全向轮）的限制。本文提出了一种面向仿真到现实的、特定于车辆的端到端学习环境，适用于WHILL Model CR，基于AWSIM和ROS 2。为了最小化仿真到现实的差距，利用真实世界数据通过贝叶斯优化优化物理参数，从而减少各种驾驶场景下的轨迹误差。此外，本研究引入了一种同步架构，旨在为基于世界模型的智能体的稳定训练提供支持。使用DreamerV3训练的端到端策略在模拟的障碍物避让环境中表现出了学习进展，并成功完成了任务。此外，该策略还展示了直接的仿真到现实转移能力，使得车辆能够在真实世界的走廊复制环境中绕过纸箱，而无需进行微调。本文为仿真到现实的微型出行政策研究提供了实用的基础。",
+      "authors": [
+        "Shouma Amano",
+        "Takuya Azumi"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.28969",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "仿真/数据"
+      ],
+      "title": "Sim-to-Real Aware End-to-End Learning Environment for Micromobility",
+      "title_zh": "面向微型出行的仿真到现实感知端到端学习环境",
+      "url": "/daily/2026-09-25/#paper-2609-28969"
+    },
+    {
+      "abstract": "Driving world models provide a promising route toward scalable counterfactual data generation and interactive simulation beyond recorded driving logs. Realizing this potential requires a system that can generalize across diverse scenes, respond faithfully to prescribed controls, generate coherent multi-sensor observations, and operate efficiently under repeated inference. We present \\textbf{HelloWorld}, a 2B driving world model system designed around these requirements. HelloWorld progressively specializes broad visual and motion priors from heterogeneous video data into controllable driving generation using ego pose, HD maps, and 3D boxes. A block-causal generation interface, together with adaptation to self-generated context, aligns the model with sequential simulation. The system further supports synchronized seven-camera RGB generation and conditional LiDAR synthesis, and is distilled toward few-step inference for efficient deployment. Experiments evaluate visual quality, control fidelity, cross-view consistency, robustness under repeated generation, inference efficiency, and LiDAR synthesis. Together, HelloWorld provides a unified framework for scalable driving data generation and interactive simulation.",
+      "abstract_zh": "驾驶世界模型为可扩展的反事实数据生成和超越记录驾驶日志的互动仿真提供了一个有前景的途径。实现这一潜力需要一个能够在多样场景中进行泛化、忠实响应指定控制、生成一致的多传感器观测，并在重复推理下高效运行的系统。我们提出了 extbf{HelloWorld}，这是一个围绕这些要求设计的2B驾驶世界模型系统。HelloWorld逐步将来自异构视频数据的广泛视觉和运动先验专业化为可控的驾驶生成，利用自我姿态、高清地图和三维框。一个块因果生成接口，以及对自生成上下文的适应，使模型与顺序仿真对齐。该系统进一步支持同步的七摄像头RGB生成和条件激光雷达（LiDAR）合成，并朝着少步推理进行提炼，以实现高效部署。实验评估了视觉质量、控制保真度、跨视图一致性、在重复生成下的鲁棒性、推理效率和激光雷达合成。总之，HelloWorld提供了一个统一的框架，用于可扩展的驾驶数据生成和互动仿真。",
+      "authors": [
+        "Fan Lu",
+        "Hanshi Wang",
+        "Zijing Wang",
+        "Quan Feng",
+        "Zhi Wang",
+        "Shijie Chen",
+        "Xianming Zeng",
+        "Yujian Zhang",
+        "Jiazhe Wang",
+        "Xin Zha",
+        "Kai Wang",
+        "Zhijie Zhao",
+        "Lin Zhu",
+        "Tianyi Yang",
+        "Yucheng Xu",
+        "Tao Ji",
+        "Haodong Zhang",
+        "Zhipeng Zhang",
+        "Peixi Peng",
+        "Guang Chen",
+        "Xingliang Liu",
+        "Lei Yang",
+        "Jianyun Xu"
+      ],
+      "date": "2026-09-25",
+      "id": "2609.28931",
+      "tags": [
+        "世界模型/生成",
+        "仿真/数据",
+        "多传感器融合"
+      ],
+      "title": "HelloWorld: Towards Practical Applications of Generative Driving World Models",
+      "title_zh": "HelloWorld：朝着生成驾驶世界模型的实际应用迈进",
+      "url": "/daily/2026-09-25/#paper-2609-28931"
+    },
     {
       "abstract": "Vision-language models (VLMs) offer a promising approach to long-tail autonomous driving, but existing driving datasets provide limited supervision for connecting decision-critical visual evidence with reasoning and planning. We introduce AnchorReasoning, a visually grounded reasoning dataset built on WOD-E2E, containing 416,119 annotated frames and 395,379 decision-critical elements across four major categories and 19 fine-grained types. Each frame is organized as a visually grounded chain-of-thought (VG-CoT) that links decision-critical element identification and localization, element attributes and implications, driving-action rationale, and action and trajectory planning. We further develop a curriculum supervised fine-tuning strategy that progressively learns these hierarchical capabilities, together with an object-size-aware grounding metric for evaluating localization quality. Experiments across eight general-purpose, embodied-AI, and AV-specific backbones show that VG-CoT supervision improves grounded reasoning and trajectory prediction. Across models, 5-s ADE and FDE decrease by 7.84 and 11.86, while RFS Frame and Cluster improve by 1.66 and 1.70. These gains are achieved with 18.5 fewer reasoning tokens and 0.32 s/frame lower inference latency on average, demonstrating the value of visually grounded, decision-focused supervision for VLM reasoning and planning in long-tail autonomous driving.",
       "abstract_zh": "视觉语言模型（VLMs）为长尾自动驾驶提供了一种有前景的方法，但现有的驾驶数据集在连接决策关键的视觉证据与推理和规划方面提供的监督有限。我们引入了AnchorReasoning，这是一个基于WOD-E2E构建的视觉基础推理数据集，包含416,119个标注帧和395,379个决策关键元素，涵盖四个主要类别和19个细分类型。每个帧被组织为一个视觉基础的思维链（VG-CoT），将决策关键元素的识别和定位、元素属性及其影响、驾驶动作的理由，以及动作和轨迹规划联系起来。我们进一步开发了一种课程监督微调策略，逐步学习这些层次化能力，并提出了一种关注对象大小的基础度量标准，用于评估定位质量。在八个通用、具身人工智能和自动驾驶特定的基础模型上的实验表明，VG-CoT监督提高了基础推理和轨迹预测。在不同模型中，5秒的平均绝对误差（ADE）和最终位置误差（FDE）分别减少了7.84和11.86，而RFS帧和聚类分别提高了1.66和1.70。这些提升是在平均减少18.5个推理标记和每帧降低0.32秒推理延迟的情况下实现的，展示了视觉基础、以决策为中心的监督在长尾自动驾驶中对VLM推理和规划的价值。",

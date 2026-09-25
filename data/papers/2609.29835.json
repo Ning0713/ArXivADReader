@@ -1,0 +1,55 @@
+{
+  "abstract": "LiDAR provides precise geometric information for spatial perception tasks such as object detection in autonomous driving and outdoor robotics. However, recognizing and localizing individual objects is not sufficient to answer questions that require composing spatial relations and grounding the intended target. Motivated by recent advances in large language models (LLMs) for autonomous driving, we leverage their language priors to interpret complex spatial questions and ground the referred target in LiDAR geometry. To support this spatial grounding capability, we introduce SpatialLiDAR-QA, which combines single- and multi-step relational grounding with complementary spatial understanding tasks. We further propose SpatialLiDAR-LM, which aligns LiDAR point features with an LLM and grounds target coordinates through language-conditioned, position-aware proposal retrieval and local point refinement. This design derives target coordinates directly from local LiDAR geometry rather than through textual language decoding. Experiments demonstrate substantial improvements over representative LiDAR--language models and multi-camera VLMs on precise coordinate prediction tasks. Our dataset and model training code will be publicly released.",
+  "abstract_zh": "LiDAR为空间感知任务提供了精确的几何信息，例如在自动驾驶和户外机器人中的物体检测。然而，识别和定位单个物体不足以回答需要组合空间关系和定位目标的问题。受到最近大型语言模型（LLMs）在自动驾驶领域的进展的启发，我们利用它们的语言先验来解释复杂的空间问题，并在LiDAR几何中定位所指的目标。为了支持这一空间定位能力，我们引入了SpatialLiDAR-QA，它结合了单步和多步关系定位以及互补的空间理解任务。我们进一步提出了SpatialLiDAR-LM，它将LiDAR点特征与LLM对齐，并通过基于语言条件的、位置感知的提案检索和局部点细化来定位目标坐标。该设计直接从局部LiDAR几何中推导目标坐标，而不是通过文本语言解码。实验表明，在精确坐标预测任务上，相较于代表性的LiDAR-语言模型和多摄像头视觉语言模型（VLMs），我们的模型有显著的提升。我们的数据集和模型训练代码将公开发布。",
+  "arxiv_id": "2609.29835",
+  "arxiv_url": "https://arxiv.org/abs/2609.29835v1",
+  "authors": [
+    "Byounggun Park",
+    "Giyong Moon",
+    "Jusung Kim",
+    "Soonmin Hwang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-29835",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.491178+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.29835v1",
+  "published_at": "2026-09-24T14:05:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.29835v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "Retrieve-to-Localize: Bridging Large Language Models and LiDAR Geometry for Spatial Grounding",
+  "title_zh": "检索-定位：连接大型语言模型与LiDAR几何以实现空间定位",
+  "translation_url": "https://hjfy.top/arxiv/2609.29835"
+}

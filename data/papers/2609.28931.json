@@ -1,0 +1,72 @@
+{
+  "abstract": "Driving world models provide a promising route toward scalable counterfactual data generation and interactive simulation beyond recorded driving logs. Realizing this potential requires a system that can generalize across diverse scenes, respond faithfully to prescribed controls, generate coherent multi-sensor observations, and operate efficiently under repeated inference. We present \\textbf{HelloWorld}, a 2B driving world model system designed around these requirements. HelloWorld progressively specializes broad visual and motion priors from heterogeneous video data into controllable driving generation using ego pose, HD maps, and 3D boxes. A block-causal generation interface, together with adaptation to self-generated context, aligns the model with sequential simulation. The system further supports synchronized seven-camera RGB generation and conditional LiDAR synthesis, and is distilled toward few-step inference for efficient deployment. Experiments evaluate visual quality, control fidelity, cross-view consistency, robustness under repeated generation, inference efficiency, and LiDAR synthesis. Together, HelloWorld provides a unified framework for scalable driving data generation and interactive simulation.",
+  "abstract_zh": "驾驶世界模型为可扩展的反事实数据生成和超越记录驾驶日志的互动仿真提供了一个有前景的途径。实现这一潜力需要一个能够在多样场景中进行泛化、忠实响应指定控制、生成一致的多传感器观测，并在重复推理下高效运行的系统。我们提出了 extbf{HelloWorld}，这是一个围绕这些要求设计的2B驾驶世界模型系统。HelloWorld逐步将来自异构视频数据的广泛视觉和运动先验专业化为可控的驾驶生成，利用自我姿态、高清地图和三维框。一个块因果生成接口，以及对自生成上下文的适应，使模型与顺序仿真对齐。该系统进一步支持同步的七摄像头RGB生成和条件激光雷达（LiDAR）合成，并朝着少步推理进行提炼，以实现高效部署。实验评估了视觉质量、控制保真度、跨视图一致性、在重复生成下的鲁棒性、推理效率和激光雷达合成。总之，HelloWorld提供了一个统一的框架，用于可扩展的驾驶数据生成和互动仿真。",
+  "arxiv_id": "2609.28931",
+  "arxiv_url": "https://arxiv.org/abs/2609.28931v1",
+  "authors": [
+    "Fan Lu",
+    "Hanshi Wang",
+    "Zijing Wang",
+    "Quan Feng",
+    "Zhi Wang",
+    "Shijie Chen",
+    "Xianming Zeng",
+    "Yujian Zhang",
+    "Jiazhe Wang",
+    "Xin Zha",
+    "Kai Wang",
+    "Zhijie Zhao",
+    "Lin Zhu",
+    "Tianyi Yang",
+    "Yucheng Xu",
+    "Tao Ji",
+    "Haodong Zhang",
+    "Zhipeng Zhang",
+    "Peixi Peng",
+    "Guang Chen",
+    "Xingliang Liu",
+    "Lei Yang",
+    "Jianyun Xu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-28931",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.437057+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.28931v1",
+  "published_at": "2026-09-24T02:28:50Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "multi-sensor",
+      "lidar",
+      "world model"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 22
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.28931v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "本文提出 HelloWorld，一个面向实际应用的生成式驾驶世界模型，可根据自车位姿、高清地图和三维框等条件生成可控、连贯的多传感器驾驶场景，用于可扩展的数据生成与交互式仿真。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "HelloWorld: Towards Practical Applications of Generative Driving World Models",
+  "title_zh": "HelloWorld：朝着生成驾驶世界模型的实际应用迈进",
+  "translation_url": "https://hjfy.top/arxiv/2609.28931"
+}

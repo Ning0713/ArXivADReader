@@ -1,0 +1,59 @@
+{
+  "abstract": "Camera-LiDAR fusion has become a prevailing paradigm for 3D object detection in autonomous driving. However, existing fusion detectors often establish strong inter-modality dependencies by decoding object queries from tightly coupled multimodal representations. Under corrupted driving conditions, such dependencies make the detector vulnerable to unreliable modalities, where degraded observations may interfere with reliable modality-specific evidence and lead to suboptimal predictions. Moreover, modality reliability can vary across both global driving scenes and individual object queries, requiring adaptive fusion decisions at a finer granularity. To bridge this gap, we reformulate robust camera-LiDAR fusion as a scene-aware branch routing problem and propose SARFusion, a robust 3D object detector. Instead of producing detections from a single fused representation, SARFusion decouples object-query decoding into three parallel reasoning branches: a camera branch, a LiDAR branch, and a camera-LiDAR fusion branch. Guided by a Scene Reliability Prior estimated from the global driving context, SARFusion further incorporates object-level evidence to route each query to the most suitable branch. This query-wise routing strategy alleviates harmful cross-modal interference while preserving the benefits of multimodal fusion when complementary cues are trustworthy. On the nuScenes test set, SARFusion achieves strong performance with 72.5 mAP and 74.4 NDS. Extensive analyses demonstrate its robustness under challenging conditions, including sensor corruptions and environmental changes.",
+  "abstract_zh": "相机-LiDAR融合已成为自动驾驶中3D物体检测的主流范式。然而，现有的融合检测器通常通过从紧密耦合的多模态表示中解码物体查询来建立强烈的跨模态依赖关系。在恶劣的驾驶条件下，这种依赖关系使得检测器容易受到不可靠模态的影响，其中降级的观测可能干扰可靠的模态特定证据，导致次优的预测。此外，模态的可靠性在全球驾驶场景和个体物体查询之间可能会有所不同，因此需要在更细粒度上进行自适应融合决策。为了解决这一问题，我们将鲁棒的相机-LiDAR融合重新表述为一个基于场景感知的分支路由问题，并提出了SARFusion，一个鲁棒的3D物体检测器。SARFusion并不是从单一的融合表示中产生检测结果，而是将物体查询解码解耦为三个并行推理分支：相机分支、LiDAR分支和相机-LiDAR融合分支。在全球驾驶上下文中估计的场景可靠性先验的指导下，SARFusion进一步结合物体级证据，将每个查询路由到最合适的分支。这种按查询路由的策略减轻了有害的跨模态干扰，同时在互补线索可靠时保留了多模态融合的优势。在nuScenes测试集上，SARFusion取得了72.5 mAP和74.4 NDS的优异表现。大量分析表明其在传感器损坏和环境变化等挑战条件下的鲁棒性。",
+  "arxiv_id": "2609.29235",
+  "arxiv_url": "https://arxiv.org/abs/2609.29235v1",
+  "authors": [
+    "Yuting Zhao",
+    "Ziyi Zheng",
+    "Shuxiao Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-29235",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.455002+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.29235v1",
+  "published_at": "2026-09-24T08:43:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "3d object detection",
+      "multimodal fusion",
+      "lidar",
+      "camera-lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.29235v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "3D 检测"
+    ]
+  },
+  "title": "SARFusion: Scene-Aware Routing Fusion for Robust Camera-LiDAR 3D Object Detection",
+  "title_zh": "SARFusion：基于场景感知的路由融合用于鲁棒的相机-LiDAR 3D物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.29235"
+}

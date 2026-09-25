@@ -1,0 +1,52 @@
+{
+  "abstract": "Video object detection on edge devices runs computationally expensive detectors over long frame streams, causing high energy consumption and sustained GPU utilization. Although consecutive frames are highly redundant, naive frame skipping is content-blind: it skips during critical moments such as object entry, occlusion recovery, and abrupt motion, degrading detection quality. We present Albireo, a detector-agnostic, codec-free adaptive inference framework that wraps off-the-shelf detectors and decides when detector invocation can be safely skipped based on scene content and per-object temporal state, requiring no detector modification or retraining. Albireo maintains a 10-dimensional Kalman filter (KF) per active object and invokes the detector only when prediction uncertainty exceeds a threshold; on skipped frames, boxes are predicted from the KF state at near-zero GPU cost. A KF-based rescue mechanism preserves confirmed objects through brief detector misses to prevent output fragmentation, while a lightweight empty-scene screen avoids detector calls on objectless frames. We evaluate Albireo on the BDD100K MOT validation split with three architecturally distinct detectors (YOLO11x, YOLO26x, RF-DETR-Large) on two NVIDIA Jetson platforms (AGX Thor, AGX Orin). Across all configurations, Albireo keeps AP@50 within +/-1.2 pp of per-frame inference while reducing total energy by 12.1-17.6%. On YOLO26x, it improves AP@50 by +0.8 pp while reducing energy by 17.6% (Thor) and 14.4% (Orin) and per-frame energy-delay product by 24.9% and 26.1%, respectively. Thus, the default operating point improves accuracy, energy, and latency together. In contrast, FixedSkip-2, a fixed-interval baseline with a 50% skip rate, loses 8.6 pp AP@50. Source code, evaluation pipeline, and per-clip results are available at https://github.com/amirtaherin/albireo",
+  "abstract_zh": "边缘设备上的视频目标检测需要在长帧流中运行计算开销大的检测器，这导致高能耗和持续的GPU利用率。尽管连续帧之间高度冗余，但简单的帧跳过方法是内容盲的：它在关键时刻（如目标进入、遮挡恢复和突然运动）跳过帧，从而降低检测质量。我们提出了Albireo，这是一种与检测器无关、无编码器的自适应推理框架，它封装现成的检测器，并根据场景内容和每个目标的时间状态决定何时可以安全跳过检测器调用，而无需对检测器进行修改或重新训练。Albireo为每个活动目标维护一个10维的卡尔曼滤波器（Kalman Filter, KF），仅在预测不确定性超过阈值时调用检测器；在跳过的帧上，框是从KF状态预测的，几乎不消耗GPU资源。基于KF的救援机制通过短暂的检测器失误来保护已确认的目标，以防止输出碎片化，同时轻量级的空场景屏幕避免在无目标帧上调用检测器。我们在BDD100K MOT验证集上评估了Albireo，使用三种架构上不同的检测器（YOLO11x、YOLO26x、RF-DETR-Large）在两个NVIDIA Jetson平台（AGX Thor、AGX Orin）上进行测试。在所有配置中，Albireo将AP@50保持在每帧推理的±1.2 pp范围内，同时总能耗降低了12.1-17.6%。在YOLO26x上，它将AP@50提高了+0.8 pp，同时在Thor和Orin平台上分别减少了17.6%和14.4%的能耗，以及每帧能量-延迟乘积分别降低了24.9%和26.1%。因此，默认操作点在准确性、能耗和延迟上实现了共同改善。相比之下，FixedSkip-2（一个固定间隔基线，跳过率为50%）损失了8.6 pp的AP@50。源代码、评估管道和每个剪辑的结果可在https://github.com/amirtaherin/albireo获取。",
+  "arxiv_id": "2609.29648",
+  "arxiv_url": "https://arxiv.org/abs/2609.29648v1",
+  "authors": [
+    "Amir Taherin",
+    "José Cano",
+    "Bin Ren",
+    "Yanzhi Wang",
+    "David Kaeli"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-29648",
+  "categories": [
+    "cs.CV",
+    "cs.AR",
+    "cs.LG",
+    "cs.PF",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.480918+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.29648v1",
+  "published_at": "2026-08-29T12:42:45Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "bdd100k"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.29648v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Albireo: Adaptive, Energy-Efficient Inference Framework for Video Object Detection on the Edge",
+  "title_zh": "Albireo：用于边缘视频目标检测的自适应节能推理框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.29648"
+}

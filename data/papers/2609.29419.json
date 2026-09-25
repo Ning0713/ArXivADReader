@@ -1,0 +1,53 @@
+{
+  "abstract": "Autonomous navigation in dynamic environments is hindered by two fundamental challenges: perception instability and uncertainty-optimization mismatch. The former leads to identity switches and unreliable motion estimation, while the latter prevents principled incorporation of motion uncertainty into trajectory optimization. To address these challenges, we propose UCON, an uncertainty-aware navigation algorithm in dynamic environments. For perception instability, we present a point-level historical re-association mechanism that leverages historical point cloud fragments to recover lost targets while maintaining identity continuity. Subsequently, a Kalman filter is employed to provide anisotropic motion state estimation and covariance propagation. To resolve the uncertainty-optimization mismatch, we transform predicted states and their covariances into uncertainty sectors, which are embedded as differentiable cost terms within a trajectory optimization framework. This achieves consistent uncertainty-aware dynamic obstacle avoidance while maintaining smoothness and feasibility. Extensive simulations and real-world experiments demonstrate that, while maintaining high computational efficiency, UCON achieves superior perception stability and robust navigation performance in dynamic environments compared to state-of-the-art methods. The code will be open-sourced to facilitate further research.",
+  "abstract_zh": "在动态环境中，自主导航面临两个基本挑战：感知不稳定性和不确定性优化不匹配。前者导致身份切换和不可靠的运动估计，而后者则阻碍了将运动不确定性原则性地纳入轨迹优化。为了解决这些挑战，我们提出了UCON，一种在动态环境中具有不确定性意识的导航算法。针对感知不稳定性，我们提出了一种点级历史重关联机制，该机制利用历史点云片段来恢复丢失的目标，同时保持身份连续性。随后，采用卡尔曼滤波器提供各向异性的运动状态估计和协方差传播。为了解决不确定性优化不匹配的问题，我们将预测状态及其协方差转化为不确定性区域，并将其嵌入到轨迹优化框架中的可微分成本项中。这实现了一致的不确定性意识动态障碍物避让，同时保持了平滑性和可行性。大量的仿真和真实世界实验表明，UCON在保持高计算效率的同时，相较于最先进的方法，能够在动态环境中实现更优的感知稳定性和鲁棒的导航性能。代码将开源以促进进一步研究。",
+  "arxiv_id": "2609.29419",
+  "arxiv_url": "https://arxiv.org/abs/2609.29419v1",
+  "authors": [
+    "Bing Sun",
+    "Yue Lin",
+    "Yongsheng Yuan",
+    "Yang Liu",
+    "Dong Wang",
+    "Huchuan Lu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-29419",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.399535+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.29419v1",
+  "published_at": "2026-09-24T11:41:24Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.29419v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "本文提出UCON动态环境自主导航算法，通过点级历史点云重关联和卡尔曼滤波提升动态目标跟踪稳定性，并将状态协方差转换为不确定性区域，融入可微分轨迹优化以实现不确定性感知的动态障碍物避让。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "UCON: Uncertainty-aware Navigation with Historical Re-association in Dynamic Environments",
+  "title_zh": "UCON：动态环境中基于历史重关联的感知不确定性导航",
+  "translation_url": "https://hjfy.top/arxiv/2609.29419"
+}

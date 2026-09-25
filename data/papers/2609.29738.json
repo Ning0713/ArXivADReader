@@ -1,0 +1,53 @@
+{
+  "abstract": "Computational models of careful and competent human drivers are essential for scenario-based evaluation of automated driving systems (ADS). However, most existing safety reference models primarily focus on longitudinal braking, neglecting the role of evasive steering in human collision avoidance. This paper proposes a hybrid Fuzzy-Safety Model (FSM-H) that integrates longitudinal mitigation and lateral avoidance within a unified behavioral framework. The braking component is governed by Proactive Fuzzy Safety (PFS) metrics, representing the erosion of longitudinal safety margins, while the steering component is driven by Criticality Fuzzy Safety for lane-change (CFS-LC), capturing lateral conflict severity and maneuver feasibility. A finite-state architecture models the sequential escalation from nominal driving to braking and, when necessary, to evasive steering, incorporating perception-reaction time and lane-check delays to reflect human decision processes. The model is evaluated in reconstructed high-criticality cut-in scenarios and compared with braking-only and steering-only reference strategies. Results show that the hybrid approach expands the preventability envelope while maintaining behavioral plausibility and computational tractability. The proposed framework provides a transparent and explainable human reference model suitable for simulation-based ADS safety benchmarking and regulatory assessment.",
+  "abstract_zh": "谨慎且能干的人类驾驶员的计算模型对于基于场景的自动驾驶系统（ADS）评估至关重要。然而，现有的大多数安全参考模型主要集中于纵向刹车，忽视了人类在避免碰撞中规避转向的作用。本文提出了一种混合模糊安全模型（FSM-H），在统一的行为框架内整合了纵向减速和横向规避。刹车部分由主动模糊安全（PFS）指标控制，代表纵向安全边际的侵蚀，而转向部分则由车道变更的关键模糊安全（CFS-LC）驱动，捕捉横向冲突的严重性和机动的可行性。有限状态架构模拟了从正常驾驶到刹车，再到必要时的规避转向的逐步升级，结合感知-反应时间和车道检查延迟，以反映人类决策过程。该模型在重建的高关键性插入场景中进行了评估，并与仅刹车和仅转向的参考策略进行了比较。结果表明，混合方法在保持行为合理性和计算可行性的同时，扩展了可预防性范围。所提出的框架提供了一个透明且可解释的人类参考模型，适用于基于仿真的ADS安全基准测试和监管评估。",
+  "arxiv_id": "2609.29738",
+  "arxiv_url": "https://arxiv.org/abs/2609.29738v1",
+  "authors": [
+    "Riccardo Donà",
+    "Konstantinos Mattas",
+    "Biagio Ciuffo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-25#paper-2609-29738",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-25T09:57:30.405834+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.29738v1",
+  "published_at": "2026-09-24T12:55:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "automated vehicles",
+      "自动驾驶",
+      "driving",
+      "lane",
+      "驾驶",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-25"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.29738v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-25"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Combining Evasive and Braking Reactions for Safety Reference Models in Automated Vehicles",
+  "title_zh": "结合规避与刹车反应的自动驾驶安全参考模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.29738"
+}
