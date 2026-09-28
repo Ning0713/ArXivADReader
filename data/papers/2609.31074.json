@@ -1,0 +1,47 @@
+{
+  "abstract": "Resource constraints make high-dimensional hyperspectral imaging challenging in autonomous perception, motivating the use of band selection methods. However, the sensitivity of band-selection methods to sampled data and their relationship to semantic segmentation models (SSMs) remain underexplored. This study evaluates six band selection methods on ten independently sampled, class-balanced region-of-interest (ROI) sets, yielding 60 top-25 band subsets from the Hyperspectral City V2 (128 bands: 450-950nm) dataset. Top-$K$ bands ($K\\in\\{3,5, ... 13\\}$) from the first three ROI sets are evaluated with three SSMs against the corresponding 128-band baseline. Experiments show that intra-method stability is method-dependent: Sim-LP shows the highest stability (pairwise Jaccard similarity) and, together with JMIM+CSNR, yields the best segmentation results. Top-$K$ based SSMs remain competitive with baselines, with gains of up to 2.01 mIoU and 1.72 mF1 points, and 18-22x faster CPU inference for $K=9$. However, performance does not improve monotonically with $K$, and stability shows no consistent association with SSM performance. These findings suggest that intra-method stability is informative but an unreliable indicator of downstream segmentation performance, highlighting the need to evaluate band-selection methods across repeated samples, subset sizes, and SSMs.",
+  "abstract_zh": "高维高光谱成像的资源开销给自主感知带来挑战，因此需要采用波段选择方法。然而，波段选择对采样数据的敏感性，以及这种敏感性与语义分割模型性能的关系，仍缺乏充分研究。本研究在 Hyperspectral City V2 数据集（128 个波段，450–950 nm）上，使用十组独立采样且类别平衡的感兴趣区域，评估六种波段选择方法，得到 60 个包含前 25 个波段的子集。研究从前三组样本中选取不同数量的前 K 个波段（K 为 3 至 13 的若干取值），使用三种语义分割模型进行评估，并与对应的 128 波段基线比较。结果表明，同一方法在不同采样下的稳定性因方法而异：Sim-LP 的成对 Jaccard 相似度最高，并与 JMIM+CSNR 一同取得最佳分割结果。使用少量优选波段的模型与全波段基线性能相当，最高提升 2.01 个 mIoU 点和 1.72 个 mF1 点；K=9 时，CPU 推理速度提高 18–22 倍。不过，性能并不随 K 单调提升，稳定性与分割性能之间也没有一致的关联。这表明，方法自身的选择稳定性虽有参考价值，却不能可靠预测下游分割性能；评估波段选择方法时，应覆盖重复采样、不同子集大小和多种分割模型。",
+  "arxiv_id": "2609.31074",
+  "arxiv_url": "https://arxiv.org/abs/2609.31074v1",
+  "authors": [
+    "Jiarong Li",
+    "Imad Ali Shah",
+    "Enda Ward",
+    "Martin Glavin",
+    "Edward Jones",
+    "Brian Deegan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-31074",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.471293+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31074v1",
+  "published_at": "2026-09-25T10:13:32Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 5
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31074v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "研究高光谱城市影像的波段选择稳定性及其对语义分割的影响。少量优选波段可维持或改善分割效果并显著加快推理，但选择稳定性不能可靠预测下游性能。",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "Band-Selection Stability and Semantic Segmentation Performance: A Study on Hyperspectral City",
+  "title_zh": "波段选择稳定性与语义分割性能：基于 Hyperspectral City 的研究",
+  "translation_url": "https://hjfy.top/arxiv/2609.31074"
+}

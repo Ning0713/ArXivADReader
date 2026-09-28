@@ -1,0 +1,53 @@
+{
+  "abstract": "Bringing an aerial robotics method from simulation to flight should not require rebuilding a mature autopilot or adding a companion computer. Cybflight is an open-source embedded Rust research autopilot whose typed, replaceable interfaces connect hardware access, perception, state estimation, trajectory planning, and control. This modular development and compile-time optimization workflow is demonstrated with replaceable Rust implementations of model predictive contour-tracking control (MPCTC) and incremental nonlinear dynamic inversion (INDI) running on one STM32H743 without a companion computer. Using this configuration, the vehicle reaches 12.38 m/s during indoor flight, while an outdoor flight using global navigation satellite system (GNSS) position updates reaches 31.4 m/s. These flights show that running demanding estimation and nonlinear control entirely on a flight-controller microcontroller need not come at the expense of a modular autopilot structure.",
+  "abstract_zh": "将空中机器人方法从仿真转化为飞行不应需要重建成熟的自动驾驶仪或添加伴随计算机。Cybflight 是一个开源的嵌入式 Rust 研究自动驾驶仪，其类型化、可替换的接口连接了硬件访问、感知、状态估计、轨迹规划和控制。这种模块化开发和编译时优化工作流程通过在一台 STM32H743 上运行的可替换 Rust 实现的模型预测轮廓跟踪控制（Model Predictive Contour-Tracking Control, MPCTC）和增量非线性动态反演（Incremental Nonlinear Dynamic Inversion, INDI）得以展示，而无需伴随计算机。使用这种配置，车辆在室内飞行时达到 12.38 m/s，而在使用全球导航卫星系统（Global Navigation Satellite System, GNSS）位置更新的室外飞行中达到 31.4 m/s。这些飞行表明，完全在飞行控制微控制器上运行高要求的估计和非线性控制并不需要以模块化自动驾驶仪结构为代价。",
+  "arxiv_id": "2609.31232",
+  "arxiv_url": "https://arxiv.org/abs/2609.31232v1",
+  "authors": [
+    "Yifan Lin",
+    "Chao Qin",
+    "H S Helson Go",
+    "Hugh H. -T. Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-31232",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.436779+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31232v1",
+  "published_at": "2026-09-25T13:10:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31232v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Cybflight: An Embedded Rust Autopilot for Aerial Robotics Research",
+  "title_zh": "Cybflight：一种用于空中机器人研究的嵌入式 Rust 自动驾驶仪",
+  "translation_url": "https://hjfy.top/arxiv/2609.31232"
+}

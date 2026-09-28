@@ -1,6 +1,346 @@
 {
-  "generated_at": "2026-09-25T09:59:48.602375+00:00",
+  "generated_at": "2026-09-28T11:25:19.032384+00:00",
   "items": [
+    {
+      "abstract": "End-to-end driving policies are commonly trained through open-loop behavior cloning, yet they must ultimately operate in closed-loop when deployed on a vehicle, creating a fundamental mismatch between training and execution. Beyond the commonly studied effects of covariate shift and causal confusion, we identify a complementary factor for this open-loop/closed-loop gap: waypoint-based supervision and displacement metrics do not ensure that the intermediate trajectory is physically coherent or easy for the controller to track. We observe that these inconsistencies concentrate primarily at intermediate waypoints, while the predicted endpoint remains comparatively reliable. Based on this observation, we introduce Endpoint-Constrained Optimization (ECO), a lightweight postprocessing layer that anchors the trajectory to the vehicle's executed history, preserves the policy's predicted endpoint, and reshapes the intermediate waypoints to improve feasibility. ECO requires no map, privileged simulator state, or additional training, and can be inserted between a broad range of waypoint-emitting policies and their controllers. Across two closed-loop simulators, it improves the aggregate closed-loop score of all six evaluated generative and regression-based driving policies, and the gains tend to increase with how often the base plans violate motion limits. On HUGSIM, ECO improves VaVAM from 18.1 to 31.0 HD-Score (+71%), achieving 1st place on the HUGSIM Closed-Loop Driving Challenge. Similarly, on AlpaSim, ECO increases the scene scores of VaVAM and DiffusionDrive by 123% and 22%, respectively. These results show that for a broad collection of end-to-end driving models, repairing the intermediate geometry of predicted trajectories without changing the policy's predicted endpoint can substantially improve closed-loop performance.",
+      "abstract_zh": "端到端驾驶策略通常通过开放循环行为克隆进行训练，但在部署到车辆上时，它们最终必须在闭环中操作，这导致训练与执行之间存在根本的不匹配。除了常见的协变量偏移和因果混淆效应外，我们还识别出一个补充因素，导致这种开放循环/闭环差距：基于航点的监督和位移度量并不能确保中间轨迹在物理上是一致的，或者对控制器来说易于跟踪。我们观察到，这些不一致主要集中在中间航点，而预测的端点相对可靠。基于这一观察，我们引入了端点约束优化（Endpoint-Constrained Optimization, ECO），这是一种轻量级的后处理层，它将轨迹锚定到车辆的执行历史，保留策略的预测端点，并重塑中间航点以提高可行性。ECO不需要地图、特权模拟器状态或额外训练，可以插入到广泛的航点生成策略和它们的控制器之间。在两个闭环模拟器中，它提高了所有六种评估的生成和回归驱动策略的整体闭环得分，且增益往往随着基础计划违反运动限制的频率增加而增加。在HUGSIM上，ECO将VaVAM的HD-Score从18.1提高到31.0（+71%），在HUGSIM闭环驾驶挑战中获得第一名。同样，在AlpaSim上，ECO分别将VaVAM和DiffusionDrive的场景得分提高了123%和22%。这些结果表明，对于广泛的端到端驾驶模型，修复预测轨迹的中间几何形状而不改变策略的预测端点可以显著改善闭环性能。",
+      "authors": [
+        "Brayden Zhang",
+        "Mahsa Golchoubian",
+        "Igor Gilitschenski",
+        "Boris Ivanovic",
+        "Kashyap Chitta"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.31383",
+      "tags": [
+        "深度/几何",
+        "预测/规划",
+        "端到端驾驶"
+      ],
+      "title": "Guiding End-to-End Driving Models with Endpoint-Constrained Trajectory Optimization",
+      "title_zh": "通过端点约束轨迹优化引导端到端驾驶模型",
+      "url": "/daily/2026-09-28/#paper-2609-31383"
+    },
+    {
+      "abstract": "Closed-loop driving simulation requires rendered observations to remain reliable as the ego vehicle and surrounding actors move beyond their recorded trajectories, exposing views absent from the source log. Existing data-driven simulators reconstruct dynamic actors from sparse observations, which can result in rendering artifacts under these viewpoint changes. We introduce RECAST (REconstructing Controllable Actors for Simulation and Testing), a 3D Gaussian Splatting framework that generates a view-complete actor from a single segmented vehicle observation in a driving log and registers the generated actor in the reconstructed scene. RECAST supports planner-in-the-loop rendering under controlled ego-actor interactions. To adapt an image-to-3D prior to real vehicles, we further introduce RECAR, a dataset of approximately 20K real vehicles with 600K background-free RGBA images spanning diverse vehicle colors and types. We use two-stage adaptation to improve vehicle generation from real driving-log observations. At the actor level, RECAST reduces $\\mathrm{FD}_{\\mathrm{incep}}$ from 9.788 to 7.992 relative to unadapted TRELLIS. At the scene level, under actor motion beyond logged trajectories, RECAST reduces $\\mathrm{FD}_{\\mathrm{incep}}$ from 129.35 to 112.10 and increases $\\mathrm{CLIP}_{\\mathrm{margin}}$ ($\\times1000$) from 0.14 to 3.47 relative to Street Gaussians. We demonstrate planner-in-the-loop simulation with the image-conditioned planner GTRS-Dense. Compared with native Street Gaussians actors, RECAST increases the no-collision (NC) rate from 22.2% (12/54) to 63.0% (34/54) and the mean minimum predicted time-to-collision (TTC) from 0.798 s to 2.150 s. These experiments show that RECAST supports closed-loop planner evaluation under controlled ego-actor interactions beyond log replay. Visit our project page at https://zijunkr.github.io/RECAST/",
+      "abstract_zh": "闭环驾驶仿真要求在自我车辆和周围行为者超出其记录轨迹移动时，渲染的观察结果保持可靠，这暴露了源日志中缺失的视图。现有的数据驱动仿真器从稀疏观察中重建动态行为者，这可能导致在这些视点变化下出现渲染伪影。我们提出了RECAST（REconstructing Controllable Actors for Simulation and Testing），一个3D高斯点云框架，它从驾驶日志中的单个分割车辆观察生成视图完整的行为者，并将生成的行为者注册到重建的场景中。RECAST支持在受控的自我-行为者交互下的规划者环路渲染。为了将图像到3D的先验适应于真实车辆，我们进一步引入了RECAR，一个包含约2万辆真实车辆的数据库，提供60万张无背景的RGBA图像，涵盖多种车辆颜色和类型。我们使用两阶段适应来改善从真实驾驶日志观察中生成车辆的效果。在行为者层面，RECAST将相对于未适应的TRELLIS的$ ext{FD}_{ ext{incep}}$从9.788降低到7.992。在场景层面，在行为者运动超出记录轨迹的情况下，RECAST将$ ext{FD}_{ ext{incep}}$从129.35降低到112.10，并将相对于Street Gaussians的$ ext{CLIP}_{ ext{margin}}$（$ imes1000$）从0.14提高到3.47。我们展示了与图像条件规划者GTRS-Dense的规划者环路仿真。与原生Street Gaussians行为者相比，RECAST将无碰撞（NC）率从22.2%（12/54）提高到63.0%（34/54），并将平均最小预测碰撞时间（TTC）从0.798秒提高到2.150秒。这些实验表明，RECAST支持在超出日志重放的受控自我-行为者交互下进行闭环规划者评估。请访问我们的项目页面 https://zijunkr.github.io/RECAST/",
+      "authors": [
+        "Zijun Zhao",
+        "Liewen Liao",
+        "Kang Shen",
+        "Songan Zhang",
+        "Ming Yang"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.31374",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "RECAST: From Log Replay to Closed-Loop Driving Simulation with View-Complete Actors",
+      "title_zh": "RECAST：从日志重放到闭环驾驶仿真与视图完整的行为者",
+      "url": "/daily/2026-09-28/#paper-2609-31374"
+    },
+    {
+      "abstract": "Vision-Language Models (VLMs) exhibit remarkable zero-shot generalization, yet they often encode unwanted or hazardous stylistic domains such as idealized textbook diagrams in medical AI or cartoon vehicles in autonomous driving. Approximate Domain Unlearning (ADU) aims to selectively erase a model's recognition of a target visual domain while preserving accuracy on the remaining domains. However, existing ADU methods operate under a flawed closed-vocabulary assumption: they evaluate unlearning solely on the specific object classes seen during the unlearning fine-tuning phase. Consequently, these methods do not unlearn the domain itself; they merely overfit to seen class-domain pairs, leaving the domain easily recognizable for unseen classes and providing a false sense of removal. We argue that true domain erasure must be class-agnostic. To address this, we formalize Open-Vocabulary Domain Unlearning (OVDU), a rigorous protocol that mandates domain forgetting must transfer to held-out classes. To solve the OVDU challenge, we propose a surgical parameter-editing framework. First, a Fisher Information mask isolates domain-sensitive weights, mathematically protecting foundational zero-shot generalization. Second, our Targeted Manifold Scattering (TMS) objective uses preference-based mining to locally scatter the forget domain's stylistic geometry. Evaluated across PACS, OfficeHome, and DomainNet, our method vastly improves open-vocabulary generalization over existing baselines. Crucially, it delivers exceptional sample efficiency, outperforming peak 8-shot baseline results with only 4 shots.",
+      "abstract_zh": "视觉-语言模型（VLMs）展现了显著的零-shot 泛化能力，但它们往往编码了不必要或有害的风格领域，例如医疗人工智能中的理想化教科书图示或自动驾驶中的卡通车辆。近似领域遗忘（Approximate Domain Unlearning, ADU）旨在选择性地抹去模型对目标视觉领域的识别，同时保持对其余领域的准确性。然而，现有的 ADU 方法在一个有缺陷的封闭词汇假设下运作：它们仅在遗忘微调阶段评估所见的特定对象类别。因此，这些方法并没有真正遗忘领域本身；它们只是过拟合于已见的类别-领域对，使得未见类别仍然容易识别，从而产生虚假的移除感。我们认为，真正的领域抹除必须是与类别无关的。为了解决这个问题，我们正式化了开放词汇领域遗忘（Open-Vocabulary Domain Unlearning, OVDU），这是一种严格的协议，要求领域遗忘必须转移到保留的类别。为了解决 OVDU 挑战，我们提出了一种手术式参数编辑框架。首先，Fisher 信息掩码隔离领域敏感权重，数学上保护基础的零-shot 泛化能力。其次，我们的目标导向流形散射（Targeted Manifold Scattering, TMS）目标使用基于偏好的挖掘方法局部散射遗忘领域的风格几何。通过在 PACS、OfficeHome 和 DomainNet 上进行评估，我们的方法在开放词汇泛化方面显著优于现有基线。关键是，它提供了卓越的样本效率，仅用 4 次样本就超越了峰值 8-shot 基线结果。",
+      "authors": [
+        "Sumanth Udupa",
+        "Mehrtash Harandi",
+        "Yadan Luo",
+        "Mahsa Baktashmotlagh"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.31356",
+      "tags": [
+        "深度/几何",
+        "VLM/VLA"
+      ],
+      "title": "Open Vocabulary Domain Unlearning",
+      "title_zh": "开放词汇领域遗忘",
+      "url": "/daily/2026-09-28/#paper-2609-31356"
+    },
+    {
+      "abstract": "Bringing an aerial robotics method from simulation to flight should not require rebuilding a mature autopilot or adding a companion computer. Cybflight is an open-source embedded Rust research autopilot whose typed, replaceable interfaces connect hardware access, perception, state estimation, trajectory planning, and control. This modular development and compile-time optimization workflow is demonstrated with replaceable Rust implementations of model predictive contour-tracking control (MPCTC) and incremental nonlinear dynamic inversion (INDI) running on one STM32H743 without a companion computer. Using this configuration, the vehicle reaches 12.38 m/s during indoor flight, while an outdoor flight using global navigation satellite system (GNSS) position updates reaches 31.4 m/s. These flights show that running demanding estimation and nonlinear control entirely on a flight-controller microcontroller need not come at the expense of a modular autopilot structure.",
+      "abstract_zh": "将空中机器人方法从仿真转化为飞行不应需要重建成熟的自动驾驶仪或添加伴随计算机。Cybflight 是一个开源的嵌入式 Rust 研究自动驾驶仪，其类型化、可替换的接口连接了硬件访问、感知、状态估计、轨迹规划和控制。这种模块化开发和编译时优化工作流程通过在一台 STM32H743 上运行的可替换 Rust 实现的模型预测轮廓跟踪控制（Model Predictive Contour-Tracking Control, MPCTC）和增量非线性动态反演（Incremental Nonlinear Dynamic Inversion, INDI）得以展示，而无需伴随计算机。使用这种配置，车辆在室内飞行时达到 12.38 m/s，而在使用全球导航卫星系统（Global Navigation Satellite System, GNSS）位置更新的室外飞行中达到 31.4 m/s。这些飞行表明，完全在飞行控制微控制器上运行高要求的估计和非线性控制并不需要以模块化自动驾驶仪结构为代价。",
+      "authors": [
+        "Yifan Lin",
+        "Chao Qin",
+        "H S Helson Go",
+        "Hugh H. -T. Liu"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.31232",
+      "tags": [
+        "预测/规划",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Cybflight: An Embedded Rust Autopilot for Aerial Robotics Research",
+      "title_zh": "Cybflight：一种用于空中机器人研究的嵌入式 Rust 自动驾驶仪",
+      "url": "/daily/2026-09-28/#paper-2609-31232"
+    },
+    {
+      "abstract": "Driving in dense urban traffic is interactive: whether a merge or an unprotected turn succeeds depends on how surrounding agents respond to the ego vehicle. Conventional planners predict first and plan second and, therefore, cannot account for this dependency. Methods that integrate prediction and planning either train both jointly, which introduces task interference, or keep them separate and are restricted to a predefined set of proposals. We present INTERACT: Interactive Planning for Autonomous Driving via Anchor-Conditioned Prediction and Trust-Region Refinement. Our key insight is that surrounding agents react to the intent a trajectory expresses rather than to its exact realization, so a single reactive prediction stays valid across an entire family of plans. INTERACT therefore decomposes interactive planning into prediction across driving intents and optimization within each intent. We derive a small set of diverse intents, which we call anchors, from map geometry, query a dedicated ego-conditioned prediction model once per anchor, and refine every anchor with the Cross-Entropy Method under a trust-region penalty that keeps the refined plan close enough to its anchor for the conditioned reaction to still apply. Prediction thus remains a separate model, avoiding task interference, while conditioning on anchors preserves the dependency. Because each anchor is refined continuously, the final plan is not restricted to the anchor set, yet INTERACT requires only one predictor query per anchor rather than one per candidate plan, with all anchors processed in parallel. On the nuPlan and interPlan closed-loop benchmarks, INTERACT sets a new state of the art, with the largest gains precisely in the interactive scenarios that motivate the method. The code will be released upon acceptance.",
+      "abstract_zh": "在密集的城市交通中驾驶是一个交互过程：合并或无保护转弯的成功与否取决于周围代理对自我车辆的反应。传统的规划者首先进行预测，然后进行规划，因此无法考虑这种依赖关系。将预测与规划相结合的方法要么共同训练两者，这会引入任务干扰，要么将两者分开，限制于预定义的一组提案。我们提出了INTERACT：通过锚定条件预测和信任区域优化实现自主驾驶的交互式规划。我们的关键见解是，周围代理对轨迹所表达的意图作出反应，而不是对其确切实现作出反应，因此单一的反应预测在整个计划家族中保持有效。因此，INTERACT将交互式规划分解为对驾驶意图的预测和在每个意图内的优化。我们从地图几何中导出一小组多样的意图，称之为锚点，针对每个锚点查询一次专用的自我条件预测模型，并在信任区域惩罚下使用交叉熵方法优化每个锚点，以确保优化后的计划与其锚点保持足够接近，以便条件反应仍然适用。因此，预测仍然是一个独立的模型，避免了任务干扰，而对锚点的条件化则保留了依赖关系。由于每个锚点都在持续优化，最终计划不受锚点集的限制，但INTERACT每个锚点只需一次预测查询，而不是每个候选计划一次，所有锚点可以并行处理。在nuPlan和interPlan闭环基准测试中，INTERACT设定了新的最先进水平，尤其在激励该方法的交互场景中取得了最大的进展。代码将在接受后发布。",
+      "authors": [
+        "Aron Distelzweig",
+        "Andreas Look",
+        "Faris Janjoš",
+        "Steffen Hagedorn",
+        "Luigi Palmieri",
+        "Joschka Boedecker"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.31137",
+      "tags": [
+        "预测/规划",
+        "深度/几何",
+        "地图/定位"
+      ],
+      "title": "INTERACT: Interactive Planning for Autonomous Driving via Anchor-Conditioned Prediction and Trust-Region Refinement",
+      "title_zh": "INTERACT：通过锚定条件预测和信任区域优化实现自主驾驶的交互式规划",
+      "url": "/daily/2026-09-28/#paper-2609-31137"
+    },
+    {
+      "abstract": "Large language models are increasingly used as high-level planners for mobile robots, robot manipulators, and autonomous vehicles. Recent studies show that these systems can be influenced through malicious text, speech, visual instructions, retrieved documents, and poisoned sensory context. Most defenses ask whether a proposed action is physically safe. This paper studies a different problem: an action may be physically safe and still violate the mission authorized by the user. An attacker may redirect a delivery robot, replace an approved object, extend a robot's operating region, activate an unnecessary sensor, or delay a mission without creating an immediate physical hazard. We call this attack \\emph{safety-compliant mission hijacking}. We propose MissionPAIR, an adaptive attack framework that searches for executable plans that pass a safety gate while violating an authenticated mission. We also propose AuthGuard-R, a deterministic authorization layer that binds every executable action to a signed mission, robot identity, object and region scope, current state, time, and input provenance. AuthGuard-R operates with an independent safety gate, giving a dual-gate architecture. We formalize mission policies over robot traces, define security games, and prove authorization soundness, mission non-escalation, replay resistance, robot binding, provenance separation, threshold-approval security, audit-log tamper evidence, and trace-level composition. We report a preliminary cross-model evaluation with Claude Haiku~4.5 and the open-source Qwen2.5~7B planner. Across 240 live attack trials, the planners followed an injected mission deviation in 109 trials; AuthGuard-R rejected all 109 resulting unauthorized actions. A separate hand-constructed suite of eleven protocol- and policy-level attacks was also blocked completely.",
+      "abstract_zh": "大型语言模型越来越多地被用作移动机器人、机器人操纵器和自主车辆的高级规划器。最近的研究表明，这些系统可能会受到恶意文本、语音、视觉指令、检索文档和被污染的感知上下文的影响。大多数防御措施关注于所提议的行动是否在物理上是安全的。本文研究了一个不同的问题：一个行动可能在物理上是安全的，但仍然违反用户授权的任务。攻击者可能会重定向送货机器人、替换已批准的物体、扩展机器人的操作区域、激活不必要的传感器，或在不造成直接物理危害的情况下延迟任务。我们称这种攻击为“安全合规的任务劫持”（safety-compliant mission hijacking）。我们提出了MissionPAIR，一个自适应攻击框架，旨在寻找能够通过安全门而又违反经过认证的任务的可执行计划。我们还提出了AuthGuard-R，一个确定性的授权层，将每个可执行的行动绑定到一个签名的任务、机器人身份、对象和区域范围、当前状态、时间和输入来源。AuthGuard-R与独立的安全门一起工作，形成双重防御架构。我们对机器人轨迹上的任务政策进行了形式化定义，定义了安全游戏，并证明了授权的有效性、任务的不升级性、重放抵抗、机器人绑定、来源分离、阈值批准安全性、审计日志篡改证据和轨迹级组合。我们报告了与Claude Haiku~4.5和开源Qwen2.5~7B规划器的初步跨模型评估。在240次实时攻击试验中，规划器在109次试验中遵循了注入的任务偏差；AuthGuard-R拒绝了所有109个由此产生的未经授权的行动。一个单独手工构建的包含十一种协议和政策级攻击的套件也被完全阻止。",
+      "authors": [
+        "Saidattu Chepuri",
+        "Vikas Srivastava"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.31110",
+      "tags": [
+        "预测/规划",
+        "安全/异常",
+        "感知"
+      ],
+      "title": "AuthGuard-R: Safety-Compliant Mission Hijacking and Dual-Gate Defense for LLM-Controlled Robots",
+      "title_zh": "AuthGuard-R：安全合规的任务劫持与双重防御机制用于大语言模型控制的机器人",
+      "url": "/daily/2026-09-28/#paper-2609-31110"
+    },
+    {
+      "abstract": "Resource constraints make high-dimensional hyperspectral imaging challenging in autonomous perception, motivating the use of band selection methods. However, the sensitivity of band-selection methods to sampled data and their relationship to semantic segmentation models (SSMs) remain underexplored. This study evaluates six band selection methods on ten independently sampled, class-balanced region-of-interest (ROI) sets, yielding 60 top-25 band subsets from the Hyperspectral City V2 (128 bands: 450-950nm) dataset. Top-$K$ bands ($K\\in\\{3,5, ... 13\\}$) from the first three ROI sets are evaluated with three SSMs against the corresponding 128-band baseline. Experiments show that intra-method stability is method-dependent: Sim-LP shows the highest stability (pairwise Jaccard similarity) and, together with JMIM+CSNR, yields the best segmentation results. Top-$K$ based SSMs remain competitive with baselines, with gains of up to 2.01 mIoU and 1.72 mF1 points, and 18-22x faster CPU inference for $K=9$. However, performance does not improve monotonically with $K$, and stability shows no consistent association with SSM performance. These findings suggest that intra-method stability is informative but an unreliable indicator of downstream segmentation performance, highlighting the need to evaluate band-selection methods across repeated samples, subset sizes, and SSMs.",
+      "abstract_zh": "高维高光谱成像的资源开销给自主感知带来挑战，因此需要采用波段选择方法。然而，波段选择对采样数据的敏感性，以及这种敏感性与语义分割模型性能的关系，仍缺乏充分研究。本研究在 Hyperspectral City V2 数据集（128 个波段，450–950 nm）上，使用十组独立采样且类别平衡的感兴趣区域，评估六种波段选择方法，得到 60 个包含前 25 个波段的子集。研究从前三组样本中选取不同数量的前 K 个波段（K 为 3 至 13 的若干取值），使用三种语义分割模型进行评估，并与对应的 128 波段基线比较。结果表明，同一方法在不同采样下的稳定性因方法而异：Sim-LP 的成对 Jaccard 相似度最高，并与 JMIM+CSNR 一同取得最佳分割结果。使用少量优选波段的模型与全波段基线性能相当，最高提升 2.01 个 mIoU 点和 1.72 个 mF1 点；K=9 时，CPU 推理速度提高 18–22 倍。不过，性能并不随 K 单调提升，稳定性与分割性能之间也没有一致的关联。这表明，方法自身的选择稳定性虽有参考价值，却不能可靠预测下游分割性能；评估波段选择方法时，应覆盖重复采样、不同子集大小和多种分割模型。",
+      "authors": [
+        "Jiarong Li",
+        "Imad Ali Shah",
+        "Enda Ward",
+        "Martin Glavin",
+        "Edward Jones",
+        "Brian Deegan"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.31074",
+      "tags": [
+        "感知"
+      ],
+      "title": "Band-Selection Stability and Semantic Segmentation Performance: A Study on Hyperspectral City",
+      "title_zh": "波段选择稳定性与语义分割性能：基于 Hyperspectral City 的研究",
+      "url": "/daily/2026-09-28/#paper-2609-31074"
+    },
+    {
+      "abstract": "Self-supervised monocular depth estimation (MDE) enables depth prediction from monocular images without requiring ground-truth supervision, making it attractive for large-scale and real-world applications. Despite steady improvements in accuracy, most existing methods remain difficult to interpret, as depth is inferred from RGB representations that obscure the impact of individual perceptual image components. This lack of transparency limits systematic analysis of failure cases and reduces confidence in safety-critical settings. This paper presents a self-supervised framework for perceptually interpretable monocular depth estimation (PIMDE), designed to associate depth predictions with distinct perceptual components of the input image. Rather than operating directly on RGB inputs, the proposed method decomposes each image into a set of perceptual feature maps (PFMs), each encoding a specific visual cue. Distinct depth estimation branches process these PFMs independently to produce depth estimates (PIDEs), which are subsequently combined through an explicit fusion strategy. This formulation allows us to examine directly the contribution of each perceptual cue to the final depth prediction. Experiments conducted on the KITTI benchmark dataset demonstrate that PIMDE achieves performance comparable to established self-supervised MDE methods while providing additional insight into how different perceptual cues influence depth estimation. These results indicate that perceptual decomposition can support interpretability without sacrificing depth estimation accuracy.",
+      "abstract_zh": "自监督单目深度估计（MDE）能够从单目图像中进行深度预测，而无需真实标签的监督，这使其在大规模和现实世界应用中具有吸引力。尽管准确性稳步提高，但大多数现有方法仍然难以解释，因为深度是从RGB表示中推断的，这掩盖了单个感知图像成分的影响。这种缺乏透明度限制了对失败案例的系统分析，并降低了在安全关键环境中的信心。本文提出了一种自监督框架，用于感知可解释的单目深度估计（PIMDE），旨在将深度预测与输入图像的不同感知成分关联起来。该方法并非直接处理RGB输入，而是将每幅图像分解为一组感知特征图（PFMs），每个图都编码了特定的视觉线索。不同的深度估计分支独立处理这些PFMs，以产生深度估计（PIDEs），然后通过显式融合策略将其组合。这种公式化使我们能够直接检查每个感知线索对最终深度预测的贡献。在KITTI基准数据集上进行的实验表明，PIMDE的性能与现有的自监督MDE方法相当，同时提供了关于不同感知线索如何影响深度估计的额外见解。这些结果表明，感知分解可以支持可解释性，而不牺牲深度估计的准确性。",
+      "authors": [
+        "Zain Ul Abidin",
+        "George Dimas",
+        "Dimitris K. Iakovidis"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.30987",
+      "tags": [
+        "仿真/数据",
+        "深度/几何",
+        "安全/异常"
+      ],
+      "title": "Self-Supervised Perceptually Interpretable Monocular Depth Estimation",
+      "title_zh": "自监督感知可解释的单目深度估计",
+      "url": "/daily/2026-09-28/#paper-2609-30987"
+    },
+    {
+      "abstract": "Multi-modal planning is promising for autonomous driving by representing multiple plausible behaviors in ambiguous and long-tail scenarios. Existing methods mainly focus on improving trajectory multi-modality, enhancing trajectory representations, or reshaping the candidate distribution. Nevertheless, we identify a pronounced generation-evaluation asymmetry in multi-modal planning: despite strong oracle performance, existing planners often fail to reliably select the best available candidate, leaving substantial planning potential unrealized. To address this challenge, we propose iDriveVLA, a multi-modal planning framework that improves the candidate trajectory space while enabling more reliable and context-aware trajectory evaluation. Specifically, iDriveVLA introduces a unified trajectory evaluator comprising a Safety-aware Scorer for quality and risk estimation, together with a VLM-guided Modulator for scene-adaptive criterion weighting. We further develop an oracle-aligned progressive training strategy consisting of candidate imitation pretraining, candidate space refinement, and semantic ranking alignment. On the public NAVSIM v1 leaderboard, iDriveVLA achieves a new state-of-the-art performance of 94.95 PDMS, surpassing the human-expert reference.",
+      "abstract_zh": "多模态规划在自动驾驶中具有良好的前景，因为它能够在模糊和长尾场景中表示多种可能的行为。现有方法主要集中在提高轨迹的多模态性、增强轨迹表示或重塑候选分布。然而，我们发现多模态规划中存在明显的生成-评估不对称性：尽管具有强大的oracle性能，现有规划器往往无法可靠地选择最佳候选，导致大量规划潜力未能实现。为了解决这一挑战，我们提出了iDriveVLA，一个多模态规划框架，旨在改善候选轨迹空间，同时实现更可靠和上下文感知的轨迹评估。具体而言，iDriveVLA引入了一个统一的轨迹评估器，包括一个用于质量和风险估计的安全感知评分器，以及一个基于视觉语言模型（VLM）的调节器，用于场景自适应标准加权。我们进一步开发了一种与oracle对齐的渐进训练策略，包括候选模仿预训练、候选空间精炼和语义排名对齐。在公共NAVSIM v1排行榜上，iDriveVLA实现了94.95 PDMS的新状态-of-the-art性能，超越了人类专家参考。",
+      "authors": [
+        "Zeyu He",
+        "Shiqi Liu",
+        "Ke Chen",
+        "Yun Yan",
+        "Jinzi Wu",
+        "Dianqiao Lei",
+        "Sirui Wang",
+        "ShuRui Peng",
+        "Tao Chen",
+        "Zhuo Huang",
+        "Yu Wu",
+        "Yadong Shao",
+        "Zhichao Li",
+        "Ke Sun",
+        "Yang Guan",
+        "Keqiang Li",
+        "Shengbo Eben Li"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.30818",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "安全/异常"
+      ],
+      "title": "Evaluation Is All You Need for Multi-Modal Autonomous Driving",
+      "title_zh": "评估是多模态自动驾驶所需的一切",
+      "url": "/daily/2026-09-28/#paper-2609-30818"
+    },
+    {
+      "abstract": "Existing roadside traffic datasets support perception, forecasting, and visual question answering, but they do not evaluate counterfactual video generation, in which a selected actor is modified and the generated future should remain consistent with road topology and unrelated traffic. We introduce TrafficImag, the first benchmark for counterfactual roadside traffic video generation. TrafficImag combines a large-scale roadside dataset (9,022 annotated images, 7,043 deduplicated video clips, and 31,145 actor-centered history-future samples) with an executable protocol that supports behavior reasoning, intervention-aware image editing, and conditional video generation. Each intervention is represented as an actor-level program describing the target actor, intended behavior, legal route, interaction order, and temporal constraints, enabling a unified evaluation interface across heterogeneous foundation models. TrafficImag evaluates four complementary validity dimensions: initial-state correctness, route and behavior validity, interaction consistency, and non-target preservation, and considers an end-to-end counterfactual successful only when all four are satisfied. Across state-of-the-art foundation models, the strongest reasoner reaches 80.4% macro F1, the complete condition interface raises end-to-end success from 23.3% to 55.0% for the best generator. Oracle studies further show that conditional video execution is the primary remaining bottleneck. TrafficImag provides a reproducible benchmark for evaluating and diagnosing counterfactual traffic video generation beyond perceptual video quality.",
+      "abstract_zh": "现有的路边交通数据集支持感知、预测和视觉问答，但并未评估反事实视频生成，其中选定的参与者被修改，生成的未来应与道路拓扑和无关的交通保持一致。我们介绍了TrafficImag，这是第一个针对反事实路边交通视频生成的基准。TrafficImag结合了一个大规模的路边数据集（9,022张标注图像、7,043个去重视频片段和31,145个以参与者为中心的历史-未来样本），以及一个可执行的协议，支持行为推理、干预感知图像编辑和条件视频生成。每个干预被表示为一个参与者级别的程序，描述目标参与者、预期行为、合法路线、交互顺序和时间约束，从而实现跨异构基础模型的统一评估接口。TrafficImag评估四个互补的有效性维度：初始状态正确性、路线和行为有效性、交互一致性以及非目标保留，并认为仅当四个条件都得到满足时，端到端的反事实生成才算成功。在最先进的基础模型中，最强的推理器达到了80.4%的宏观F1，完整的条件接口将最佳生成器的端到端成功率从23.3%提高到55.0%。Oracle研究进一步表明，条件视频执行是主要的瓶颈。TrafficImag提供了一个可重复的基准，用于评估和诊断超越感知视频质量的反事实交通视频生成。",
+      "authors": [
+        "Xiangyu Li",
+        "Tianyi Wang",
+        "Zhihao Dou",
+        "Christian Claudel",
+        "Zhaomiao Guo"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.30722",
+      "tags": [
+        "世界模型/生成",
+        "仿真/数据"
+      ],
+      "title": "TrafficImag: A Benchmark for Counterfactual Roadside Traffic Video Generation",
+      "title_zh": "TrafficImag：反事实路边交通视频生成的基准",
+      "url": "/daily/2026-09-28/#paper-2609-30722"
+    },
+    {
+      "abstract": "Traffic signal control (TSC) is essential for mitigating urban congestion. Recent advances in vision-language models (VLMs) enable richer interpretation of intersection scenes, opening new opportunities for visual-context-aware TSC. However, the loose coupling and repeated information conversion between modules can lead to the loss of fine-grained visual details, while sequential inference introduces substantial latency. To address these limitations, we propose VLALight, a lightweight end-to-end vision-language-action framework that directly maps intersection observations and signal-phase information to discrete signal actions. To handle the multi-view nature of TSC, VLALight combines multiple directional camera views into a unified visual input and uses textual instructions to establish their correspondence with traffic movements and signal phases. This design enables direct action prediction with a compact 0.5 B-parameter model, without intermediate image-to-text descriptions or handcrafted traffic-state representations. Experiments show that VLALight delivers the best emergency-vehicle service of all compared methods, reducing pooled emergency waiting time by 21.1% over the cascaded VLMLight while running in real time on local hardware and generalizing to unseen intersection topologies and traffic-flow patterns.",
+      "abstract_zh": "交通信号控制（TSC）对于缓解城市拥堵至关重要。最近在视觉-语言模型（VLMs）方面的进展使得对交叉口场景的解读更加丰富，为视觉上下文感知的TSC开辟了新的机会。然而，模块之间的松散耦合和重复的信息转换可能导致细粒度视觉细节的丢失，而顺序推理则引入了显著的延迟。为了解决这些局限性，我们提出了VLALight，一个轻量级的端到端视觉-语言-动作框架，直接将交叉口观察和信号相位信息映射到离散的信号动作。为了处理TSC的多视角特性，VLALight将多个方向的摄像头视图合并为统一的视觉输入，并使用文本指令来建立它们与交通运动和信号相位之间的对应关系。这一设计使得在没有中间图像到文本描述或手工交通状态表示的情况下，能够通过一个紧凑的0.5 B参数模型直接进行动作预测。实验表明，VLALight在所有比较方法中提供了最佳的应急车辆服务，减少了21.1%的合并应急等待时间，相较于级联的VLMLight，同时在本地硬件上实时运行，并能够推广到未见过的交叉口拓扑和交通流模式。",
+      "authors": [
+        "Kemou Jiang",
+        "Maonan Wang",
+        "Xingchen Zou",
+        "Jiayue Zhu",
+        "Yuhang Fu",
+        "Sicheng Wang",
+        "Xi Chen",
+        "Yirong Chen",
+        "Zhiyong Cui"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.30709",
+      "tags": [
+        "VLM/VLA",
+        "端到端驾驶",
+        "感知"
+      ],
+      "title": "VLALight: Lightweight Vision-Language-Action Models for Emergency-Aware Traffic Signal Control",
+      "title_zh": "VLALight：用于应急感知交通信号控制的轻量级视觉-语言-动作模型",
+      "url": "/daily/2026-09-28/#paper-2609-30709"
+    },
+    {
+      "abstract": "Runtime failure monitors can use a model's internal representations to anticipate failures. We audit this monitoring strategy across two autonomous-driving tasks: online vectorized map generation with LaneSegNet and end-to-end planning with VAD. We find that frame-level errors are predictable at inference in both tasks. For LaneSegNet, a supervised latent probe reaches Area Under the Receiver Operating Characteristic curve (AUROC) 0.780 for high Chamfer error; to our knowledge, this is the first post-hoc frame-level failure monitor for online vectorized map generation. For VAD, a supervised planning-latent probe reaches AUROC 0.868 for mean-ADE failure. Our audit shows that internal access is not necessary for strong failure prediction. A monitor using only LaneSegNet's prediction outputs reaches AUROC 0.825, while for VAD, ego state, driving command, and the planner's predicted trajectory reach 0.924 on the same mean-ADE endpoint. Adding latent features to either baseline yields no statistically resolved improvement. This observation persists across a broad suite of planning failure endpoints, including endpoints whose labels depend on geometry unavailable to the non-latent baseline. Thus, predicting failure from an internal representation does not establish that the representation provides useful information beyond observable inputs and outputs. We propose an evaluation protocol for testing the incremental value of latent access and release our per-frame failure endpoint labels.",
+      "abstract_zh": "运行时故障监测器可以利用模型的内部表示来预测故障。我们在两个自主驾驶任务中审计这一监测策略：使用 LaneSegNet 的在线向量化地图生成和使用 VAD 的端到端规划。我们发现，在这两个任务中，帧级错误在推理时是可预测的。对于 LaneSegNet，一个监督的潜在探测器在高 Chamfer 错误的情况下达到了 0.780 的接收者操作特征曲线下面积（AUROC）；据我们所知，这是在线向量化地图生成的第一个事后帧级故障监测器。对于 VAD，一个监督的规划潜在探测器在平均绝对误差（mean-ADE）故障上达到了 0.868 的 AUROC。我们的审计表明，内部访问并不是强故障预测的必要条件。仅使用 LaneSegNet 的预测输出的监测器达到了 0.825 的 AUROC，而对于 VAD，ego 状态、驾驶命令和规划器的预测轨迹在相同的平均绝对误差终点上达到了 0.924。将潜在特征添加到任一基线并未带来统计上显著的改善。这个观察结果在广泛的规划故障终点中持续存在，包括那些标签依赖于对非潜在基线不可用的几何形状的终点。因此，从内部表示中预测故障并不表明该表示提供了超出可观察输入和输出的有用信息。我们提出了一种评估协议，用于测试潜在访问的增量价值，并发布我们的每帧故障终点标签。",
+      "authors": [
+        "Nikhil Kamalkumar Advani",
+        "Vishwajeet Shivaji Hogale",
+        "Saurav Kumar"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.30557",
+      "tags": [
+        "预测/规划",
+        "深度/几何",
+        "端到端驾驶"
+      ],
+      "title": "Auditing Latent-Space Monitors for Autonomous Driving",
+      "title_zh": "审计自主驾驶的潜在空间监测器",
+      "url": "/daily/2026-09-28/#paper-2609-30557"
+    },
+    {
+      "abstract": "Large language models (LLMs) have recently demonstrated promising capabilities as in-context policy optimizers for Reinforcement Learning (RL), enabling policy search driven by both numerical reward signals and natural language reasoning. However, deploying such methods in practice requires transmitting raw policy parameters and rewards history to cloud-based LLM APIs, exposing proprietary control strategies to third-party service providers. To address this issue, this paper introduces Privacy-Preserving Prompted Policy Search (PP-ProPS), a framework that enables LLM-guided policy optimization while keeping policy and environmental parameters confidential. PP-ProPS encodes policy parameters and reward values using secret client-side transformations before they are included in each API request, ensuring that the LLM provider observes only encoded policy parameters and scaled reward information. Furthermore, unlike Vanilla ProPS, the proposed framework does not require the true optimal episodic return to be known or disclosed to the LLM. Beyond protecting the optimization data, PP-ProPS improves the search process in two ways. First, it provides the LLM with individual reward components instead of only a single total return, offering more informative feedback about each candidate policy. Second, it uses a bounded history that prevents the prompt from growing indefinitely, improving search with high-dimensional policies and supporting the use of open-weight LLMs. The proposed PP-ProPS is evaluated on both continuous and discrete control problems spanning Multi-Joint dynamics with Contact (MuJoCo) locomotion, classic control, highway driving, and robotic arm manipulation. Compared to Vanilla ProPS, the proposed PP-ProPS outperforms ProPS in seven of the ten evaluated tasks, and surpasses conventional RL methods including PPO, SAC, and TRPO, in five of the six tasks.",
+      "abstract_zh": "大型语言模型（LLMs）最近展示了作为强化学习（RL）中的上下文策略优化器的良好能力，使得策略搜索能够同时受到数值奖励信号和自然语言推理的驱动。然而，在实践中部署此类方法需要将原始策略参数和奖励历史传输到基于云的LLM API，这使得专有的控制策略暴露给第三方服务提供商。为了解决这一问题，本文提出了隐私保护的提示策略搜索（PP-ProPS）框架，该框架在保持策略和环境参数机密的同时，支持LLM引导的策略优化。PP-ProPS在每个API请求中包含之前，使用秘密的客户端转换对策略参数和奖励值进行编码，确保LLM提供者仅观察到编码后的策略参数和缩放的奖励信息。此外，与Vanilla ProPS不同，所提出的框架不需要知道或披露真实的最优情节回报。除了保护优化数据外，PP-ProPS还通过两种方式改善搜索过程。首先，它向LLM提供单独的奖励组成部分，而不仅仅是一个总回报，从而提供关于每个候选策略的更具信息量的反馈。其次，它使用有限的历史记录，防止提示无限增长，从而改善高维策略的搜索，并支持开放权重LLM的使用。所提出的PP-ProPS在包括多关节动力学与接触（MuJoCo）运动、经典控制、高速公路驾驶和机器人手臂操作等连续和离散控制问题上进行了评估。与Vanilla ProPS相比，所提出的PP-ProPS在十个评估任务中的七个任务中表现优于ProPS，并在六个任务中的五个任务中超越了传统的RL方法，包括PPO、SAC和TRPO。",
+      "authors": [
+        "Ali Irshayyid",
+        "Feng Lin",
+        "Chong Li",
+        "Jun Chen"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.30554",
+      "tags": [
+        "预测/规划"
+      ],
+      "title": "Privacy-Preserving Prompted Policy Search for Robotic Control",
+      "title_zh": "隐私保护的提示策略搜索用于机器人控制",
+      "url": "/daily/2026-09-28/#paper-2609-30554"
+    },
+    {
+      "abstract": "Autonomous navigation in previously unseen environments requires effective perception, persistent environmental representation, and collision avoidance while maintaining progress toward a goal. Existing perception-based methods often rely on prior maps or short-horizon observations, limiting their ability to exploit previously observed structure. We propose a memory-aware multi-sensor navigation framework that integrates LiDAR and RGB perception, online distance-field representation learning, and a stage-adaptive Modulated Control Barrier Function Quadratic Program (MCBF-QP). The framework persistently represents static infrastructure while tracking dynamic obstacles, enabling the MCBF-QP controller to exploit previously observed geometry for obstacle circumvention and adapt its safety constraints and guidance to local conditions. Experiments in complex indoor and outdoor environments demonstrate improved navigation efficiency and goal-reaching performance while maintaining collision avoidance in narrow passages and around dynamic obstacles.",
+      "abstract_zh": "在以前未见的环境中进行自主导航需要有效的感知、持久的环境表征以及在保持朝向目标进展的同时避免碰撞。现有的基于感知的方法通常依赖于先前的地图或短期观察，这限制了它们利用先前观察到的结构的能力。我们提出了一种记忆感知的多传感器导航框架，该框架集成了激光雷达（LiDAR）和RGB感知、在线距离场表征学习，以及阶段自适应的调制控制障碍函数二次规划（Modulated Control Barrier Function Quadratic Program, MCBF-QP）。该框架在跟踪动态障碍物的同时持久地表征静态基础设施，使得MCBF-QP控制器能够利用先前观察到的几何信息进行障碍规避，并根据当地条件调整其安全约束和引导策略。在复杂的室内和室外环境中的实验表明，该方法在保持在狭窄通道和动态障碍物周围避免碰撞的同时，提高了导航效率和目标到达性能。",
+      "authors": [
+        "Jingshuo Li",
+        "Yifan Xue",
+        "Yifei Li",
+        "Shubhodeep Shiv Aditya",
+        "Nadia Figueroa"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.30495",
+      "tags": [
+        "多传感器融合",
+        "安全/异常",
+        "LiDAR/点云"
+      ],
+      "title": "Memory-Aware Multi-Sensor Perception for Efficient and Safe Navigation in Dynamic Environments",
+      "title_zh": "面向动态环境的高效安全导航的记忆感知多传感器感知",
+      "url": "/daily/2026-09-28/#paper-2609-30495"
+    },
+    {
+      "abstract": "Off-road traversability is direction-dependent and vehicle specific, yet most global maps assign a single isotropic cost to each location. Existing learned estimators are also commonly trained independently for each vehicle; this preserves vehicle-specific behavior but prevents vehicles from sharing common terrain representations. DGT-MAP addresses both limitations through a self-supervised framework that learns global, directional, and vehicle-conditioned traversability costmaps from RGB-D observations and locomotion signals. A shared multi-task backbone learns common terrain features across training vehicles while vehicle-specific prediction heads preserve platform-dependent responses. At inference, DGT-MAP produces a heading-indexed costmap that can be used by a direction-aware planner. We evaluate DGT-MAP in simulation by integrating it into a Hybrid A* navigation stack and measuring downstream task success on challenging terrains, including slopes that are traversable downhill but not uphill and a ridge obstacle that is traversable by some vehicles, but not by others. Across evaluated tasks, DGT-MAP achieves the highest or tied-highest navigation success rate when compared against geometric, binary, and learned direction-agnostic baselines.",
+      "abstract_zh": "越野可通行性依赖于方向和特定车辆，但大多数全球地图为每个位置分配单一的各向同性成本。现有的学习估计器通常独立为每辆车进行训练；这种方法保留了车辆特定的行为，但阻碍了车辆共享共同的地形表示。DGT-MAP通过一个自监督框架解决了这两个限制，从RGB-D观测和运动信号中学习全球、方向性和车辆条件的可通行性成本图。一个共享的多任务主干网络学习训练车辆之间的共同地形特征，而车辆特定的预测头则保留了平台依赖的响应。在推理阶段，DGT-MAP生成一个以航向为索引的成本图，可供方向感知规划器使用。我们通过将DGT-MAP集成到混合A*导航框架中，在模拟中评估其性能，并测量在具有挑战性的地形上的下游任务成功率，包括可向下通行但不可向上通行的坡道，以及某些车辆可通行但其他车辆不可通行的山脊障碍。在评估的任务中，DGT-MAP在与几何、二元和学习的方向无关基线相比时，达到了最高或并列最高的导航成功率。",
+      "authors": [
+        "Jaskrit Singh",
+        "Kashif K. Noori",
+        "Jing Xiao",
+        "Constantinos Chamzas"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.30461",
+      "tags": [
+        "预测/规划",
+        "深度/几何",
+        "仿真/数据"
+      ],
+      "title": "DGT-Map: Directional Global Traversability Mapping Utilizing Multi-Task Learning for Heterogeneous Vehicles",
+      "title_zh": "DGT-Map：利用多任务学习为异构车辆构建方向性全球可通行性地图",
+      "url": "/daily/2026-09-28/#paper-2609-30461"
+    },
+    {
+      "abstract": "Driving world models learn rich predictive representations of the surrounding environment from visual observations, yet accurate visual prediction does not necessarily translate into effective trajectory planning. We argue that a key bottleneck lies in the mismatch between visual world states and raw geometric trajectories, which may limit the planner's ability to exploit action-relevant semantics encoded by the world model. To address this issue, we propose World-Model Alignment for Latent Trajectories (WALT), which learns a compact generative trajectory latent space by transferring information from a frozen pretrained driving world model without modifying the world model itself. Rather than directly generating raw waypoints, WALT maps them into compact representations through a dual-branch trajectory autoencoder and transfers semantic knowledge from the frozen visual world model into this trajectory space, encouraging the learned action representation to capture scene-level cues relevant to future motion and planning. Beyond our proposed formulation, we systematically study latent learning based on Joint-Embedding Predictive Architectures (JEPA) and feature alignment following Representation Alignment (REPA) to investigate how trajectory-only representation learning affects downstream planning. We evaluate WALT on the NAVSIM benchmarks. Relative to the raw-waypoint baseline, WALT improves PDMS from 89.4 to 89.8 on NAVSIMv1 and EPDMS from 87.3 to 87.9 on NAVSIMv2 while reducing trajectory planner FLOPs by 30.5%. These results suggest that preserving world representations while extracting action-relevant information provides an effective interface for world-model-based trajectory planning.",
+      "abstract_zh": "驾驶世界模型从视觉观察中学习周围环境的丰富预测表示，但准确的视觉预测并不一定能转化为有效的轨迹规划。我们认为，关键瓶颈在于视觉世界状态与原始几何轨迹之间的不匹配，这可能限制规划者利用世界模型编码的与动作相关的语义。为了解决这个问题，我们提出了潜在轨迹的世界模型对齐（World-Model Alignment for Latent Trajectories，WALT），该方法通过从一个冻结的预训练驾驶世界模型中转移信息，学习一个紧凑的生成轨迹潜在空间，而不修改世界模型本身。WALT并不是直接生成原始的路径点，而是通过双分支轨迹自编码器将其映射为紧凑表示，并将冻结的视觉世界模型中的语义知识转移到这个轨迹空间，鼓励学习到的动作表示捕捉与未来运动和规划相关的场景级线索。除了我们提出的公式外，我们还系统地研究了基于联合嵌入预测架构（Joint-Embedding Predictive Architectures，JEPA）的潜在学习和基于表示对齐（Representation Alignment，REPA）的特征对齐，以探讨仅基于轨迹的表示学习如何影响下游规划。我们在NAVSIM基准上评估了WALT。相较于原始路径点基线，WALT在NAVSIMv1上将PDMS从89.4提高到89.8，在NAVSIMv2上将EPDMS从87.3提高到87.9，同时将轨迹规划器的FLOPs减少了30.5%。这些结果表明，保留世界表示的同时提取与动作相关的信息，为基于世界模型的轨迹规划提供了有效的接口。",
+      "authors": [
+        "Mingkai Jia",
+        "Jiaxin Guo",
+        "Zhijian Shu",
+        "Jiawei Xu",
+        "Mingxiao Li",
+        "Jintao Cheng",
+        "Ping Tan",
+        "Wei Yin"
+      ],
+      "date": "2026-09-28",
+      "id": "2609.30436",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "深度/几何"
+      ],
+      "title": "WALT: Learning World-Model-Aligned Latent Trajectories for Autonomous Driving",
+      "title_zh": "WALT：学习与世界模型对齐的潜在轨迹用于自主驾驶",
+      "url": "/daily/2026-09-28/#paper-2609-30436"
+    },
     {
       "abstract": "While 2D Vision Foundation Models offer a pathway to automate 3D semantic pseudo-labelling, translating these priors into robust 3D representations typically requires complex heuristics or multi-model ensembles. We introduce SplatLabel, an automated pipeline that leverages a 4D Gaussian representation to extract LiDAR segmentation with predictive confidence, as well as semantic occupancy grids at arbitrary voxel resolutions. At its core, SplatLabel handles dynamic environments through an explicit temporal manifold that models the trajectories and lifespans of individual 3D primitives. This allows the system to accurately track moving actors and strictly define when objects appear and disappear, completely eliminating the need for pre-annotated 3D bounding boxes. To robustly support this dynamic tracking, the representation is grounded by structural and semantic priors: we guide scene geometry in unobserved regions by integrating 360-degree LiDAR via virtual depth maps, and rather than relying on domain-specific prompt engineering, we directly distill continuous soft probabilities from 2D models to inherently resolve semantic ambiguities over time and space. Finally, to accurately reflect the real-world trade-off between precision and recall, we reframe pseudo-label evaluation as a selective classification task using a generalized risk-recall metric. Experiments on SemanticKITTI demonstrate that SplatLabel consistently outperforms state-of-the-art baselines across multiple recall levels, establishing a highly robust framework for both 3D LiDAR segmentation and occupancy prediction.",
       "abstract_zh": "虽然2D视觉基础模型为自动化3D语义伪标注提供了一条路径，但将这些先验转化为稳健的3D表示通常需要复杂的启发式方法或多模型集成。我们提出了SplatLabel，一个自动化管道，利用4D高斯表示提取具有预测置信度的LiDAR分割以及任意体素分辨率的语义占用网格。SplatLabel的核心通过显式的时间流形处理动态环境，建模个体3D原语的轨迹和生命周期。这使得系统能够准确跟踪移动的对象，并严格定义物体出现和消失的时刻，完全消除了对预标注3D边界框的需求。为了稳健地支持这种动态跟踪，该表示由结构和语义先验支撑：我们通过虚拟深度图集成360度LiDAR来指导未观测区域的场景几何，而不是依赖于领域特定的提示工程，我们直接从2D模型中提炼连续的软概率，以固有地解决时间和空间上的语义模糊性。最后，为了准确反映现实世界中精确度与召回率之间的权衡，我们将伪标签评估重新框定为使用广义风险-召回指标的选择性分类任务。在SemanticKITTI上的实验表明，SplatLabel在多个召回水平上始终优于最先进的基线，建立了一个高度稳健的框架，用于3D LiDAR分割和占用预测。",

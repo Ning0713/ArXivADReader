@@ -1,0 +1,52 @@
+{
+  "abstract": "Autonomous navigation in previously unseen environments requires effective perception, persistent environmental representation, and collision avoidance while maintaining progress toward a goal. Existing perception-based methods often rely on prior maps or short-horizon observations, limiting their ability to exploit previously observed structure. We propose a memory-aware multi-sensor navigation framework that integrates LiDAR and RGB perception, online distance-field representation learning, and a stage-adaptive Modulated Control Barrier Function Quadratic Program (MCBF-QP). The framework persistently represents static infrastructure while tracking dynamic obstacles, enabling the MCBF-QP controller to exploit previously observed geometry for obstacle circumvention and adapt its safety constraints and guidance to local conditions. Experiments in complex indoor and outdoor environments demonstrate improved navigation efficiency and goal-reaching performance while maintaining collision avoidance in narrow passages and around dynamic obstacles.",
+  "abstract_zh": "在以前未见的环境中进行自主导航需要有效的感知、持久的环境表征以及在保持朝向目标进展的同时避免碰撞。现有的基于感知的方法通常依赖于先前的地图或短期观察，这限制了它们利用先前观察到的结构的能力。我们提出了一种记忆感知的多传感器导航框架，该框架集成了激光雷达（LiDAR）和RGB感知、在线距离场表征学习，以及阶段自适应的调制控制障碍函数二次规划（Modulated Control Barrier Function Quadratic Program, MCBF-QP）。该框架在跟踪动态障碍物的同时持久地表征静态基础设施，使得MCBF-QP控制器能够利用先前观察到的几何信息进行障碍规避，并根据当地条件调整其安全约束和引导策略。在复杂的室内和室外环境中的实验表明，该方法在保持在狭窄通道和动态障碍物周围避免碰撞的同时，提高了导航效率和目标到达性能。",
+  "arxiv_id": "2609.30495",
+  "arxiv_url": "https://arxiv.org/abs/2609.30495v1",
+  "authors": [
+    "Jingshuo Li",
+    "Yifan Xue",
+    "Yifei Li",
+    "Shubhodeep Shiv Aditya",
+    "Nadia Figueroa"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-30495",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.409792+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.30495v1",
+  "published_at": "2026-09-24T19:33:28Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "multi-sensor",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.30495v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "本文提出一种面向未知动态环境的记忆感知多传感器自主导航框架，融合LiDAR与RGB感知、在线距离场表示学习和阶段自适应的调制控制障碍函数二次规划。方法持续记忆静态环境结构并跟踪动态障碍物，从而利用历史几何信息进行避障，并根据局部环境调整安全约束与导航引导。室内外实验表明，该方法在狭窄通道和动态障碍物场景中能够保持无碰撞，同时提升导航效率和目标到达性能。",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "安全/异常",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Memory-Aware Multi-Sensor Perception for Efficient and Safe Navigation in Dynamic Environments",
+  "title_zh": "面向动态环境的高效安全导航的记忆感知多传感器感知",
+  "translation_url": "https://hjfy.top/arxiv/2609.30495"
+}

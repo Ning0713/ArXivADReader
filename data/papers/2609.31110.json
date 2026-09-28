@@ -1,0 +1,50 @@
+{
+  "abstract": "Large language models are increasingly used as high-level planners for mobile robots, robot manipulators, and autonomous vehicles. Recent studies show that these systems can be influenced through malicious text, speech, visual instructions, retrieved documents, and poisoned sensory context. Most defenses ask whether a proposed action is physically safe. This paper studies a different problem: an action may be physically safe and still violate the mission authorized by the user. An attacker may redirect a delivery robot, replace an approved object, extend a robot's operating region, activate an unnecessary sensor, or delay a mission without creating an immediate physical hazard. We call this attack \\emph{safety-compliant mission hijacking}. We propose MissionPAIR, an adaptive attack framework that searches for executable plans that pass a safety gate while violating an authenticated mission. We also propose AuthGuard-R, a deterministic authorization layer that binds every executable action to a signed mission, robot identity, object and region scope, current state, time, and input provenance. AuthGuard-R operates with an independent safety gate, giving a dual-gate architecture. We formalize mission policies over robot traces, define security games, and prove authorization soundness, mission non-escalation, replay resistance, robot binding, provenance separation, threshold-approval security, audit-log tamper evidence, and trace-level composition. We report a preliminary cross-model evaluation with Claude Haiku~4.5 and the open-source Qwen2.5~7B planner. Across 240 live attack trials, the planners followed an injected mission deviation in 109 trials; AuthGuard-R rejected all 109 resulting unauthorized actions. A separate hand-constructed suite of eleven protocol- and policy-level attacks was also blocked completely.",
+  "abstract_zh": "大型语言模型越来越多地被用作移动机器人、机器人操纵器和自主车辆的高级规划器。最近的研究表明，这些系统可能会受到恶意文本、语音、视觉指令、检索文档和被污染的感知上下文的影响。大多数防御措施关注于所提议的行动是否在物理上是安全的。本文研究了一个不同的问题：一个行动可能在物理上是安全的，但仍然违反用户授权的任务。攻击者可能会重定向送货机器人、替换已批准的物体、扩展机器人的操作区域、激活不必要的传感器，或在不造成直接物理危害的情况下延迟任务。我们称这种攻击为“安全合规的任务劫持”（safety-compliant mission hijacking）。我们提出了MissionPAIR，一个自适应攻击框架，旨在寻找能够通过安全门而又违反经过认证的任务的可执行计划。我们还提出了AuthGuard-R，一个确定性的授权层，将每个可执行的行动绑定到一个签名的任务、机器人身份、对象和区域范围、当前状态、时间和输入来源。AuthGuard-R与独立的安全门一起工作，形成双重防御架构。我们对机器人轨迹上的任务政策进行了形式化定义，定义了安全游戏，并证明了授权的有效性、任务的不升级性、重放抵抗、机器人绑定、来源分离、阈值批准安全性、审计日志篡改证据和轨迹级组合。我们报告了与Claude Haiku~4.5和开源Qwen2.5~7B规划器的初步跨模型评估。在240次实时攻击试验中，规划器在109次试验中遵循了注入的任务偏差；AuthGuard-R拒绝了所有109个由此产生的未经授权的行动。一个单独手工构建的包含十一种协议和政策级攻击的套件也被完全阻止。",
+  "arxiv_id": "2609.31110",
+  "arxiv_url": "https://arxiv.org/abs/2609.31110v1",
+  "authors": [
+    "Saidattu Chepuri",
+    "Vikas Srivastava"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-31110",
+  "categories": [
+    "cs.RO",
+    "cs.CR"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.432266+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31110v1",
+  "published_at": "2026-09-25T10:56:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31110v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "AuthGuard-R: Safety-Compliant Mission Hijacking and Dual-Gate Defense for LLM-Controlled Robots",
+  "title_zh": "AuthGuard-R：安全合规的任务劫持与双重防御机制用于大语言模型控制的机器人",
+  "translation_url": "https://hjfy.top/arxiv/2609.31110"
+}

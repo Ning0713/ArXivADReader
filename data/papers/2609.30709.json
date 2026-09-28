@@ -1,0 +1,60 @@
+{
+  "abstract": "Traffic signal control (TSC) is essential for mitigating urban congestion. Recent advances in vision-language models (VLMs) enable richer interpretation of intersection scenes, opening new opportunities for visual-context-aware TSC. However, the loose coupling and repeated information conversion between modules can lead to the loss of fine-grained visual details, while sequential inference introduces substantial latency. To address these limitations, we propose VLALight, a lightweight end-to-end vision-language-action framework that directly maps intersection observations and signal-phase information to discrete signal actions. To handle the multi-view nature of TSC, VLALight combines multiple directional camera views into a unified visual input and uses textual instructions to establish their correspondence with traffic movements and signal phases. This design enables direct action prediction with a compact 0.5 B-parameter model, without intermediate image-to-text descriptions or handcrafted traffic-state representations. Experiments show that VLALight delivers the best emergency-vehicle service of all compared methods, reducing pooled emergency waiting time by 21.1% over the cascaded VLMLight while running in real time on local hardware and generalizing to unseen intersection topologies and traffic-flow patterns.",
+  "abstract_zh": "交通信号控制（TSC）对于缓解城市拥堵至关重要。最近在视觉-语言模型（VLMs）方面的进展使得对交叉口场景的解读更加丰富，为视觉上下文感知的TSC开辟了新的机会。然而，模块之间的松散耦合和重复的信息转换可能导致细粒度视觉细节的丢失，而顺序推理则引入了显著的延迟。为了解决这些局限性，我们提出了VLALight，一个轻量级的端到端视觉-语言-动作框架，直接将交叉口观察和信号相位信息映射到离散的信号动作。为了处理TSC的多视角特性，VLALight将多个方向的摄像头视图合并为统一的视觉输入，并使用文本指令来建立它们与交通运动和信号相位之间的对应关系。这一设计使得在没有中间图像到文本描述或手工交通状态表示的情况下，能够通过一个紧凑的0.5 B参数模型直接进行动作预测。实验表明，VLALight在所有比较方法中提供了最佳的应急车辆服务，减少了21.1%的合并应急等待时间，相较于级联的VLMLight，同时在本地硬件上实时运行，并能够推广到未见过的交叉口拓扑和交通流模式。",
+  "arxiv_id": "2609.30709",
+  "arxiv_url": "https://arxiv.org/abs/2609.30709v1",
+  "authors": [
+    "Kemou Jiang",
+    "Maonan Wang",
+    "Xingchen Zou",
+    "Jiayue Zhu",
+    "Yuhang Fu",
+    "Sicheng Wang",
+    "Xi Chen",
+    "Yirong Chen",
+    "Zhiyong Cui"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-30709",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.454590+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.30709v1",
+  "published_at": "2026-09-25T02:36:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "intersection",
+      "车辆",
+      "交通",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 29
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.30709v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "端到端驾驶",
+      "感知"
+    ]
+  },
+  "title": "VLALight: Lightweight Vision-Language-Action Models for Emergency-Aware Traffic Signal Control",
+  "title_zh": "VLALight：用于应急感知交通信号控制的轻量级视觉-语言-动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.30709"
+}

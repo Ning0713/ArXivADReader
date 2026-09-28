@@ -1,0 +1,51 @@
+{
+  "abstract": "Runtime failure monitors can use a model's internal representations to anticipate failures. We audit this monitoring strategy across two autonomous-driving tasks: online vectorized map generation with LaneSegNet and end-to-end planning with VAD. We find that frame-level errors are predictable at inference in both tasks. For LaneSegNet, a supervised latent probe reaches Area Under the Receiver Operating Characteristic curve (AUROC) 0.780 for high Chamfer error; to our knowledge, this is the first post-hoc frame-level failure monitor for online vectorized map generation. For VAD, a supervised planning-latent probe reaches AUROC 0.868 for mean-ADE failure. Our audit shows that internal access is not necessary for strong failure prediction. A monitor using only LaneSegNet's prediction outputs reaches AUROC 0.825, while for VAD, ego state, driving command, and the planner's predicted trajectory reach 0.924 on the same mean-ADE endpoint. Adding latent features to either baseline yields no statistically resolved improvement. This observation persists across a broad suite of planning failure endpoints, including endpoints whose labels depend on geometry unavailable to the non-latent baseline. Thus, predicting failure from an internal representation does not establish that the representation provides useful information beyond observable inputs and outputs. We propose an evaluation protocol for testing the incremental value of latent access and release our per-frame failure endpoint labels.",
+  "abstract_zh": "运行时故障监测器可以利用模型的内部表示来预测故障。我们在两个自主驾驶任务中审计这一监测策略：使用 LaneSegNet 的在线向量化地图生成和使用 VAD 的端到端规划。我们发现，在这两个任务中，帧级错误在推理时是可预测的。对于 LaneSegNet，一个监督的潜在探测器在高 Chamfer 错误的情况下达到了 0.780 的接收者操作特征曲线下面积（AUROC）；据我们所知，这是在线向量化地图生成的第一个事后帧级故障监测器。对于 VAD，一个监督的规划潜在探测器在平均绝对误差（mean-ADE）故障上达到了 0.868 的 AUROC。我们的审计表明，内部访问并不是强故障预测的必要条件。仅使用 LaneSegNet 的预测输出的监测器达到了 0.825 的 AUROC，而对于 VAD，ego 状态、驾驶命令和规划器的预测轨迹在相同的平均绝对误差终点上达到了 0.924。将潜在特征添加到任一基线并未带来统计上显著的改善。这个观察结果在广泛的规划故障终点中持续存在，包括那些标签依赖于对非潜在基线不可用的几何形状的终点。因此，从内部表示中预测故障并不表明该表示提供了超出可观察输入和输出的有用信息。我们提出了一种评估协议，用于测试潜在访问的增量价值，并发布我们的每帧故障终点标签。",
+  "arxiv_id": "2609.30557",
+  "arxiv_url": "https://arxiv.org/abs/2609.30557v1",
+  "authors": [
+    "Nikhil Kamalkumar Advani",
+    "Vishwajeet Shivaji Hogale",
+    "Saurav Kumar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-30557",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.413722+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.30557v1",
+  "published_at": "2026-09-24T21:09:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.30557v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Auditing Latent-Space Monitors for Autonomous Driving",
+  "title_zh": "审计自主驾驶的潜在空间监测器",
+  "translation_url": "https://hjfy.top/arxiv/2609.30557"
+}

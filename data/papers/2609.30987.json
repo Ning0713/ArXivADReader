@@ -1,0 +1,50 @@
+{
+  "abstract": "Self-supervised monocular depth estimation (MDE) enables depth prediction from monocular images without requiring ground-truth supervision, making it attractive for large-scale and real-world applications. Despite steady improvements in accuracy, most existing methods remain difficult to interpret, as depth is inferred from RGB representations that obscure the impact of individual perceptual image components. This lack of transparency limits systematic analysis of failure cases and reduces confidence in safety-critical settings. This paper presents a self-supervised framework for perceptually interpretable monocular depth estimation (PIMDE), designed to associate depth predictions with distinct perceptual components of the input image. Rather than operating directly on RGB inputs, the proposed method decomposes each image into a set of perceptual feature maps (PFMs), each encoding a specific visual cue. Distinct depth estimation branches process these PFMs independently to produce depth estimates (PIDEs), which are subsequently combined through an explicit fusion strategy. This formulation allows us to examine directly the contribution of each perceptual cue to the final depth prediction. Experiments conducted on the KITTI benchmark dataset demonstrate that PIMDE achieves performance comparable to established self-supervised MDE methods while providing additional insight into how different perceptual cues influence depth estimation. These results indicate that perceptual decomposition can support interpretability without sacrificing depth estimation accuracy.",
+  "abstract_zh": "自监督单目深度估计（MDE）能够从单目图像中进行深度预测，而无需真实标签的监督，这使其在大规模和现实世界应用中具有吸引力。尽管准确性稳步提高，但大多数现有方法仍然难以解释，因为深度是从RGB表示中推断的，这掩盖了单个感知图像成分的影响。这种缺乏透明度限制了对失败案例的系统分析，并降低了在安全关键环境中的信心。本文提出了一种自监督框架，用于感知可解释的单目深度估计（PIMDE），旨在将深度预测与输入图像的不同感知成分关联起来。该方法并非直接处理RGB输入，而是将每幅图像分解为一组感知特征图（PFMs），每个图都编码了特定的视觉线索。不同的深度估计分支独立处理这些PFMs，以产生深度估计（PIDEs），然后通过显式融合策略将其组合。这种公式化使我们能够直接检查每个感知线索对最终深度预测的贡献。在KITTI基准数据集上进行的实验表明，PIMDE的性能与现有的自监督MDE方法相当，同时提供了关于不同感知线索如何影响深度估计的额外见解。这些结果表明，感知分解可以支持可解释性，而不牺牲深度估计的准确性。",
+  "arxiv_id": "2609.30987",
+  "arxiv_url": "https://arxiv.org/abs/2609.30987v1",
+  "authors": [
+    "Zain Ul Abidin",
+    "George Dimas",
+    "Dimitris K. Iakovidis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-30987",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.467343+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.30987v1",
+  "published_at": "2026-09-25T08:34:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.30987v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "安全/异常"
+    ]
+  },
+  "title": "Self-Supervised Perceptually Interpretable Monocular Depth Estimation",
+  "title_zh": "自监督感知可解释的单目深度估计",
+  "translation_url": "https://hjfy.top/arxiv/2609.30987"
+}

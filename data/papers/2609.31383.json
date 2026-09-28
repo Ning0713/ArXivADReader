@@ -1,0 +1,56 @@
+{
+  "abstract": "End-to-end driving policies are commonly trained through open-loop behavior cloning, yet they must ultimately operate in closed-loop when deployed on a vehicle, creating a fundamental mismatch between training and execution. Beyond the commonly studied effects of covariate shift and causal confusion, we identify a complementary factor for this open-loop/closed-loop gap: waypoint-based supervision and displacement metrics do not ensure that the intermediate trajectory is physically coherent or easy for the controller to track. We observe that these inconsistencies concentrate primarily at intermediate waypoints, while the predicted endpoint remains comparatively reliable. Based on this observation, we introduce Endpoint-Constrained Optimization (ECO), a lightweight postprocessing layer that anchors the trajectory to the vehicle's executed history, preserves the policy's predicted endpoint, and reshapes the intermediate waypoints to improve feasibility. ECO requires no map, privileged simulator state, or additional training, and can be inserted between a broad range of waypoint-emitting policies and their controllers. Across two closed-loop simulators, it improves the aggregate closed-loop score of all six evaluated generative and regression-based driving policies, and the gains tend to increase with how often the base plans violate motion limits. On HUGSIM, ECO improves VaVAM from 18.1 to 31.0 HD-Score (+71%), achieving 1st place on the HUGSIM Closed-Loop Driving Challenge. Similarly, on AlpaSim, ECO increases the scene scores of VaVAM and DiffusionDrive by 123% and 22%, respectively. These results show that for a broad collection of end-to-end driving models, repairing the intermediate geometry of predicted trajectories without changing the policy's predicted endpoint can substantially improve closed-loop performance.",
+  "abstract_zh": "端到端驾驶策略通常通过开放循环行为克隆进行训练，但在部署到车辆上时，它们最终必须在闭环中操作，这导致训练与执行之间存在根本的不匹配。除了常见的协变量偏移和因果混淆效应外，我们还识别出一个补充因素，导致这种开放循环/闭环差距：基于航点的监督和位移度量并不能确保中间轨迹在物理上是一致的，或者对控制器来说易于跟踪。我们观察到，这些不一致主要集中在中间航点，而预测的端点相对可靠。基于这一观察，我们引入了端点约束优化（Endpoint-Constrained Optimization, ECO），这是一种轻量级的后处理层，它将轨迹锚定到车辆的执行历史，保留策略的预测端点，并重塑中间航点以提高可行性。ECO不需要地图、特权模拟器状态或额外训练，可以插入到广泛的航点生成策略和它们的控制器之间。在两个闭环模拟器中，它提高了所有六种评估的生成和回归驱动策略的整体闭环得分，且增益往往随着基础计划违反运动限制的频率增加而增加。在HUGSIM上，ECO将VaVAM的HD-Score从18.1提高到31.0（+71%），在HUGSIM闭环驾驶挑战中获得第一名。同样，在AlpaSim上，ECO分别将VaVAM和DiffusionDrive的场景得分提高了123%和22%。这些结果表明，对于广泛的端到端驾驶模型，修复预测轨迹的中间几何形状而不改变策略的预测端点可以显著改善闭环性能。",
+  "arxiv_id": "2609.31383",
+  "arxiv_url": "https://arxiv.org/abs/2609.31383v1",
+  "authors": [
+    "Brayden Zhang",
+    "Mahsa Golchoubian",
+    "Igor Gilitschenski",
+    "Boris Ivanovic",
+    "Kashyap Chitta"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-31383",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.439760+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31383v1",
+  "published_at": "2026-09-25T15:17:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31383v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Guiding End-to-End Driving Models with Endpoint-Constrained Trajectory Optimization",
+  "title_zh": "通过端点约束轨迹优化引导端到端驾驶模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.31383"
+}

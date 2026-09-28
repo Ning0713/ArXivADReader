@@ -1,0 +1,58 @@
+{
+  "abstract": "Driving world models learn rich predictive representations of the surrounding environment from visual observations, yet accurate visual prediction does not necessarily translate into effective trajectory planning. We argue that a key bottleneck lies in the mismatch between visual world states and raw geometric trajectories, which may limit the planner's ability to exploit action-relevant semantics encoded by the world model. To address this issue, we propose World-Model Alignment for Latent Trajectories (WALT), which learns a compact generative trajectory latent space by transferring information from a frozen pretrained driving world model without modifying the world model itself. Rather than directly generating raw waypoints, WALT maps them into compact representations through a dual-branch trajectory autoencoder and transfers semantic knowledge from the frozen visual world model into this trajectory space, encouraging the learned action representation to capture scene-level cues relevant to future motion and planning. Beyond our proposed formulation, we systematically study latent learning based on Joint-Embedding Predictive Architectures (JEPA) and feature alignment following Representation Alignment (REPA) to investigate how trajectory-only representation learning affects downstream planning. We evaluate WALT on the NAVSIM benchmarks. Relative to the raw-waypoint baseline, WALT improves PDMS from 89.4 to 89.8 on NAVSIMv1 and EPDMS from 87.3 to 87.9 on NAVSIMv2 while reducing trajectory planner FLOPs by 30.5%. These results suggest that preserving world representations while extracting action-relevant information provides an effective interface for world-model-based trajectory planning.",
+  "abstract_zh": "驾驶世界模型从视觉观察中学习周围环境的丰富预测表示，但准确的视觉预测并不一定能转化为有效的轨迹规划。我们认为，关键瓶颈在于视觉世界状态与原始几何轨迹之间的不匹配，这可能限制规划者利用世界模型编码的与动作相关的语义。为了解决这个问题，我们提出了潜在轨迹的世界模型对齐（World-Model Alignment for Latent Trajectories，WALT），该方法通过从一个冻结的预训练驾驶世界模型中转移信息，学习一个紧凑的生成轨迹潜在空间，而不修改世界模型本身。WALT并不是直接生成原始的路径点，而是通过双分支轨迹自编码器将其映射为紧凑表示，并将冻结的视觉世界模型中的语义知识转移到这个轨迹空间，鼓励学习到的动作表示捕捉与未来运动和规划相关的场景级线索。除了我们提出的公式外，我们还系统地研究了基于联合嵌入预测架构（Joint-Embedding Predictive Architectures，JEPA）的潜在学习和基于表示对齐（Representation Alignment，REPA）的特征对齐，以探讨仅基于轨迹的表示学习如何影响下游规划。我们在NAVSIM基准上评估了WALT。相较于原始路径点基线，WALT在NAVSIMv1上将PDMS从89.4提高到89.8，在NAVSIMv2上将EPDMS从87.3提高到87.9，同时将轨迹规划器的FLOPs减少了30.5%。这些结果表明，保留世界表示的同时提取与动作相关的信息，为基于世界模型的轨迹规划提供了有效的接口。",
+  "arxiv_id": "2609.30436",
+  "arxiv_url": "https://arxiv.org/abs/2609.30436v1",
+  "authors": [
+    "Mingkai Jia",
+    "Jiaxin Guo",
+    "Zhijian Shu",
+    "Jiawei Xu",
+    "Mingxiao Li",
+    "Jintao Cheng",
+    "Ping Tan",
+    "Wei Yin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-30436",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.406777+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.30436v1",
+  "published_at": "2026-09-24T18:32:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.30436v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "深度/几何"
+    ]
+  },
+  "title": "WALT: Learning World-Model-Aligned Latent Trajectories for Autonomous Driving",
+  "title_zh": "WALT：学习与世界模型对齐的潜在轨迹用于自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.30436"
+}

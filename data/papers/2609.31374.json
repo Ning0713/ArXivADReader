@@ -1,0 +1,57 @@
+{
+  "abstract": "Closed-loop driving simulation requires rendered observations to remain reliable as the ego vehicle and surrounding actors move beyond their recorded trajectories, exposing views absent from the source log. Existing data-driven simulators reconstruct dynamic actors from sparse observations, which can result in rendering artifacts under these viewpoint changes. We introduce RECAST (REconstructing Controllable Actors for Simulation and Testing), a 3D Gaussian Splatting framework that generates a view-complete actor from a single segmented vehicle observation in a driving log and registers the generated actor in the reconstructed scene. RECAST supports planner-in-the-loop rendering under controlled ego-actor interactions. To adapt an image-to-3D prior to real vehicles, we further introduce RECAR, a dataset of approximately 20K real vehicles with 600K background-free RGBA images spanning diverse vehicle colors and types. We use two-stage adaptation to improve vehicle generation from real driving-log observations. At the actor level, RECAST reduces $\\mathrm{FD}_{\\mathrm{incep}}$ from 9.788 to 7.992 relative to unadapted TRELLIS. At the scene level, under actor motion beyond logged trajectories, RECAST reduces $\\mathrm{FD}_{\\mathrm{incep}}$ from 129.35 to 112.10 and increases $\\mathrm{CLIP}_{\\mathrm{margin}}$ ($\\times1000$) from 0.14 to 3.47 relative to Street Gaussians. We demonstrate planner-in-the-loop simulation with the image-conditioned planner GTRS-Dense. Compared with native Street Gaussians actors, RECAST increases the no-collision (NC) rate from 22.2% (12/54) to 63.0% (34/54) and the mean minimum predicted time-to-collision (TTC) from 0.798 s to 2.150 s. These experiments show that RECAST supports closed-loop planner evaluation under controlled ego-actor interactions beyond log replay. Visit our project page at https://zijunkr.github.io/RECAST/",
+  "abstract_zh": "闭环驾驶仿真要求在自我车辆和周围行为者超出其记录轨迹移动时，渲染的观察结果保持可靠，这暴露了源日志中缺失的视图。现有的数据驱动仿真器从稀疏观察中重建动态行为者，这可能导致在这些视点变化下出现渲染伪影。我们提出了RECAST（REconstructing Controllable Actors for Simulation and Testing），一个3D高斯点云框架，它从驾驶日志中的单个分割车辆观察生成视图完整的行为者，并将生成的行为者注册到重建的场景中。RECAST支持在受控的自我-行为者交互下的规划者环路渲染。为了将图像到3D的先验适应于真实车辆，我们进一步引入了RECAR，一个包含约2万辆真实车辆的数据库，提供60万张无背景的RGBA图像，涵盖多种车辆颜色和类型。我们使用两阶段适应来改善从真实驾驶日志观察中生成车辆的效果。在行为者层面，RECAST将相对于未适应的TRELLIS的$ ext{FD}_{ ext{incep}}$从9.788降低到7.992。在场景层面，在行为者运动超出记录轨迹的情况下，RECAST将$ ext{FD}_{ ext{incep}}$从129.35降低到112.10，并将相对于Street Gaussians的$ ext{CLIP}_{ ext{margin}}$（$ imes1000$）从0.14提高到3.47。我们展示了与图像条件规划者GTRS-Dense的规划者环路仿真。与原生Street Gaussians行为者相比，RECAST将无碰撞（NC）率从22.2%（12/54）提高到63.0%（34/54），并将平均最小预测碰撞时间（TTC）从0.798秒提高到2.150秒。这些实验表明，RECAST支持在超出日志重放的受控自我-行为者交互下进行闭环规划者评估。请访问我们的项目页面 https://zijunkr.github.io/RECAST/",
+  "arxiv_id": "2609.31374",
+  "arxiv_url": "https://arxiv.org/abs/2609.31374v1",
+  "authors": [
+    "Zijun Zhao",
+    "Liewen Liao",
+    "Kang Shen",
+    "Songan Zhang",
+    "Ming Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-31374",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.439228+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31374v1",
+  "published_at": "2026-09-25T15:12:05Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "ego vehicle",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 56
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31374v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "RECAST: From Log Replay to Closed-Loop Driving Simulation with View-Complete Actors",
+  "title_zh": "RECAST：从日志重放到闭环驾驶仿真与视图完整的行为者",
+  "translation_url": "https://hjfy.top/arxiv/2609.31374"
+}

@@ -1,0 +1,55 @@
+{
+  "abstract": "Existing roadside traffic datasets support perception, forecasting, and visual question answering, but they do not evaluate counterfactual video generation, in which a selected actor is modified and the generated future should remain consistent with road topology and unrelated traffic. We introduce TrafficImag, the first benchmark for counterfactual roadside traffic video generation. TrafficImag combines a large-scale roadside dataset (9,022 annotated images, 7,043 deduplicated video clips, and 31,145 actor-centered history-future samples) with an executable protocol that supports behavior reasoning, intervention-aware image editing, and conditional video generation. Each intervention is represented as an actor-level program describing the target actor, intended behavior, legal route, interaction order, and temporal constraints, enabling a unified evaluation interface across heterogeneous foundation models. TrafficImag evaluates four complementary validity dimensions: initial-state correctness, route and behavior validity, interaction consistency, and non-target preservation, and considers an end-to-end counterfactual successful only when all four are satisfied. Across state-of-the-art foundation models, the strongest reasoner reaches 80.4% macro F1, the complete condition interface raises end-to-end success from 23.3% to 55.0% for the best generator. Oracle studies further show that conditional video execution is the primary remaining bottleneck. TrafficImag provides a reproducible benchmark for evaluating and diagnosing counterfactual traffic video generation beyond perceptual video quality.",
+  "abstract_zh": "现有的路边交通数据集支持感知、预测和视觉问答，但并未评估反事实视频生成，其中选定的参与者被修改，生成的未来应与道路拓扑和无关的交通保持一致。我们介绍了TrafficImag，这是第一个针对反事实路边交通视频生成的基准。TrafficImag结合了一个大规模的路边数据集（9,022张标注图像、7,043个去重视频片段和31,145个以参与者为中心的历史-未来样本），以及一个可执行的协议，支持行为推理、干预感知图像编辑和条件视频生成。每个干预被表示为一个参与者级别的程序，描述目标参与者、预期行为、合法路线、交互顺序和时间约束，从而实现跨异构基础模型的统一评估接口。TrafficImag评估四个互补的有效性维度：初始状态正确性、路线和行为有效性、交互一致性以及非目标保留，并认为仅当四个条件都得到满足时，端到端的反事实生成才算成功。在最先进的基础模型中，最强的推理器达到了80.4%的宏观F1，完整的条件接口将最佳生成器的端到端成功率从23.3%提高到55.0%。Oracle研究进一步表明，条件视频执行是主要的瓶颈。TrafficImag提供了一个可重复的基准，用于评估和诊断超越感知视频质量的反事实交通视频生成。",
+  "arxiv_id": "2609.30722",
+  "arxiv_url": "https://arxiv.org/abs/2609.30722v1",
+  "authors": [
+    "Xiangyu Li",
+    "Tianyi Wang",
+    "Zhihao Dou",
+    "Christian Claudel",
+    "Zhaomiao Guo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-30722",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.455079+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.30722v1",
+  "published_at": "2026-09-25T02:49:06Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "roadside",
+      "交通",
+      "道路",
+      "诊断"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.30722v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "提出面向路边交通场景的反事实视频生成基准，通过参与者级干预和四维有效性评估，检验生成模型能否产生符合道路与交通交互约束的未来视频。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "TrafficImag: A Benchmark for Counterfactual Roadside Traffic Video Generation",
+  "title_zh": "TrafficImag：反事实路边交通视频生成的基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.30722"
+}

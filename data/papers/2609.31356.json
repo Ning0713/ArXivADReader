@@ -1,0 +1,56 @@
+{
+  "abstract": "Vision-Language Models (VLMs) exhibit remarkable zero-shot generalization, yet they often encode unwanted or hazardous stylistic domains such as idealized textbook diagrams in medical AI or cartoon vehicles in autonomous driving. Approximate Domain Unlearning (ADU) aims to selectively erase a model's recognition of a target visual domain while preserving accuracy on the remaining domains. However, existing ADU methods operate under a flawed closed-vocabulary assumption: they evaluate unlearning solely on the specific object classes seen during the unlearning fine-tuning phase. Consequently, these methods do not unlearn the domain itself; they merely overfit to seen class-domain pairs, leaving the domain easily recognizable for unseen classes and providing a false sense of removal. We argue that true domain erasure must be class-agnostic. To address this, we formalize Open-Vocabulary Domain Unlearning (OVDU), a rigorous protocol that mandates domain forgetting must transfer to held-out classes. To solve the OVDU challenge, we propose a surgical parameter-editing framework. First, a Fisher Information mask isolates domain-sensitive weights, mathematically protecting foundational zero-shot generalization. Second, our Targeted Manifold Scattering (TMS) objective uses preference-based mining to locally scatter the forget domain's stylistic geometry. Evaluated across PACS, OfficeHome, and DomainNet, our method vastly improves open-vocabulary generalization over existing baselines. Crucially, it delivers exceptional sample efficiency, outperforming peak 8-shot baseline results with only 4 shots.",
+  "abstract_zh": "视觉-语言模型（VLMs）展现了显著的零-shot 泛化能力，但它们往往编码了不必要或有害的风格领域，例如医疗人工智能中的理想化教科书图示或自动驾驶中的卡通车辆。近似领域遗忘（Approximate Domain Unlearning, ADU）旨在选择性地抹去模型对目标视觉领域的识别，同时保持对其余领域的准确性。然而，现有的 ADU 方法在一个有缺陷的封闭词汇假设下运作：它们仅在遗忘微调阶段评估所见的特定对象类别。因此，这些方法并没有真正遗忘领域本身；它们只是过拟合于已见的类别-领域对，使得未见类别仍然容易识别，从而产生虚假的移除感。我们认为，真正的领域抹除必须是与类别无关的。为了解决这个问题，我们正式化了开放词汇领域遗忘（Open-Vocabulary Domain Unlearning, OVDU），这是一种严格的协议，要求领域遗忘必须转移到保留的类别。为了解决 OVDU 挑战，我们提出了一种手术式参数编辑框架。首先，Fisher 信息掩码隔离领域敏感权重，数学上保护基础的零-shot 泛化能力。其次，我们的目标导向流形散射（Targeted Manifold Scattering, TMS）目标使用基于偏好的挖掘方法局部散射遗忘领域的风格几何。通过在 PACS、OfficeHome 和 DomainNet 上进行评估，我们的方法在开放词汇泛化方面显著优于现有基线。关键是，它提供了卓越的样本效率，仅用 4 次样本就超越了峰值 8-shot 基线结果。",
+  "arxiv_id": "2609.31356",
+  "arxiv_url": "https://arxiv.org/abs/2609.31356v1",
+  "authors": [
+    "Sumanth Udupa",
+    "Mehrtash Harandi",
+    "Yadan Luo",
+    "Mahsa Baktashmotlagh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-31356",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.481291+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31356v1",
+  "published_at": "2026-09-25T14:52:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "medical",
+      "surgical",
+      "医疗"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31356v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "VLM/VLA"
+    ]
+  },
+  "title": "Open Vocabulary Domain Unlearning",
+  "title_zh": "开放词汇领域遗忘",
+  "translation_url": "https://hjfy.top/arxiv/2609.31356"
+}

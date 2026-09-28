@@ -1,0 +1,50 @@
+{
+  "abstract": "Off-road traversability is direction-dependent and vehicle specific, yet most global maps assign a single isotropic cost to each location. Existing learned estimators are also commonly trained independently for each vehicle; this preserves vehicle-specific behavior but prevents vehicles from sharing common terrain representations. DGT-MAP addresses both limitations through a self-supervised framework that learns global, directional, and vehicle-conditioned traversability costmaps from RGB-D observations and locomotion signals. A shared multi-task backbone learns common terrain features across training vehicles while vehicle-specific prediction heads preserve platform-dependent responses. At inference, DGT-MAP produces a heading-indexed costmap that can be used by a direction-aware planner. We evaluate DGT-MAP in simulation by integrating it into a Hybrid A* navigation stack and measuring downstream task success on challenging terrains, including slopes that are traversable downhill but not uphill and a ridge obstacle that is traversable by some vehicles, but not by others. Across evaluated tasks, DGT-MAP achieves the highest or tied-highest navigation success rate when compared against geometric, binary, and learned direction-agnostic baselines.",
+  "abstract_zh": "越野可通行性依赖于方向和特定车辆，但大多数全球地图为每个位置分配单一的各向同性成本。现有的学习估计器通常独立为每辆车进行训练；这种方法保留了车辆特定的行为，但阻碍了车辆共享共同的地形表示。DGT-MAP通过一个自监督框架解决了这两个限制，从RGB-D观测和运动信号中学习全球、方向性和车辆条件的可通行性成本图。一个共享的多任务主干网络学习训练车辆之间的共同地形特征，而车辆特定的预测头则保留了平台依赖的响应。在推理阶段，DGT-MAP生成一个以航向为索引的成本图，可供方向感知规划器使用。我们通过将DGT-MAP集成到混合A*导航框架中，在模拟中评估其性能，并测量在具有挑战性的地形上的下游任务成功率，包括可向下通行但不可向上通行的坡道，以及某些车辆可通行但其他车辆不可通行的山脊障碍。在评估的任务中，DGT-MAP在与几何、二元和学习的方向无关基线相比时，达到了最高或并列最高的导航成功率。",
+  "arxiv_id": "2609.30461",
+  "arxiv_url": "https://arxiv.org/abs/2609.30461v1",
+  "authors": [
+    "Jaskrit Singh",
+    "Kashif K. Noori",
+    "Jing Xiao",
+    "Constantinos Chamzas"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-30461",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.408308+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.30461v1",
+  "published_at": "2026-09-24T18:54:06Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.30461v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "提出一种面向异构越野车辆的方向性全球可通行性地图方法，通过共享多任务特征提取器和车辆特定预测头，从RGB-D观测及运动信号中学习方向和车辆条件相关的通行成本，并将其用于方向感知的Hybrid A*规划。仿真结果表明，该方法在复杂坡地和车辆相关障碍场景中提升了导航成功率。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "DGT-Map: Directional Global Traversability Mapping Utilizing Multi-Task Learning for Heterogeneous Vehicles",
+  "title_zh": "DGT-Map：利用多任务学习为异构车辆构建方向性全球可通行性地图",
+  "translation_url": "https://hjfy.top/arxiv/2609.30461"
+}

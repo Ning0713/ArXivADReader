@@ -1,0 +1,50 @@
+{
+  "abstract": "Large language models (LLMs) have recently demonstrated promising capabilities as in-context policy optimizers for Reinforcement Learning (RL), enabling policy search driven by both numerical reward signals and natural language reasoning. However, deploying such methods in practice requires transmitting raw policy parameters and rewards history to cloud-based LLM APIs, exposing proprietary control strategies to third-party service providers. To address this issue, this paper introduces Privacy-Preserving Prompted Policy Search (PP-ProPS), a framework that enables LLM-guided policy optimization while keeping policy and environmental parameters confidential. PP-ProPS encodes policy parameters and reward values using secret client-side transformations before they are included in each API request, ensuring that the LLM provider observes only encoded policy parameters and scaled reward information. Furthermore, unlike Vanilla ProPS, the proposed framework does not require the true optimal episodic return to be known or disclosed to the LLM. Beyond protecting the optimization data, PP-ProPS improves the search process in two ways. First, it provides the LLM with individual reward components instead of only a single total return, offering more informative feedback about each candidate policy. Second, it uses a bounded history that prevents the prompt from growing indefinitely, improving search with high-dimensional policies and supporting the use of open-weight LLMs. The proposed PP-ProPS is evaluated on both continuous and discrete control problems spanning Multi-Joint dynamics with Contact (MuJoCo) locomotion, classic control, highway driving, and robotic arm manipulation. Compared to Vanilla ProPS, the proposed PP-ProPS outperforms ProPS in seven of the ten evaluated tasks, and surpasses conventional RL methods including PPO, SAC, and TRPO, in five of the six tasks.",
+  "abstract_zh": "大型语言模型（LLMs）最近展示了作为强化学习（RL）中的上下文策略优化器的良好能力，使得策略搜索能够同时受到数值奖励信号和自然语言推理的驱动。然而，在实践中部署此类方法需要将原始策略参数和奖励历史传输到基于云的LLM API，这使得专有的控制策略暴露给第三方服务提供商。为了解决这一问题，本文提出了隐私保护的提示策略搜索（PP-ProPS）框架，该框架在保持策略和环境参数机密的同时，支持LLM引导的策略优化。PP-ProPS在每个API请求中包含之前，使用秘密的客户端转换对策略参数和奖励值进行编码，确保LLM提供者仅观察到编码后的策略参数和缩放的奖励信息。此外，与Vanilla ProPS不同，所提出的框架不需要知道或披露真实的最优情节回报。除了保护优化数据外，PP-ProPS还通过两种方式改善搜索过程。首先，它向LLM提供单独的奖励组成部分，而不仅仅是一个总回报，从而提供关于每个候选策略的更具信息量的反馈。其次，它使用有限的历史记录，防止提示无限增长，从而改善高维策略的搜索，并支持开放权重LLM的使用。所提出的PP-ProPS在包括多关节动力学与接触（MuJoCo）运动、经典控制、高速公路驾驶和机器人手臂操作等连续和离散控制问题上进行了评估。与Vanilla ProPS相比，所提出的PP-ProPS在十个评估任务中的七个任务中表现优于ProPS，并在六个任务中的五个任务中超越了传统的RL方法，包括PPO、SAC和TRPO。",
+  "arxiv_id": "2609.30554",
+  "arxiv_url": "https://arxiv.org/abs/2609.30554v1",
+  "authors": [
+    "Ali Irshayyid",
+    "Feng Lin",
+    "Chong Li",
+    "Jun Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-30554",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.413198+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.30554v1",
+  "published_at": "2026-09-24T21:03:32Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "highway",
+      "驾驶",
+      "robotic"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.30554v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "提出一种保护策略参数和奖励信息的 LLM 引导式控制策略搜索方法，并将高速公路驾驶纳入评估。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Privacy-Preserving Prompted Policy Search for Robotic Control",
+  "title_zh": "隐私保护的提示策略搜索用于机器人控制",
+  "translation_url": "https://hjfy.top/arxiv/2609.30554"
+}

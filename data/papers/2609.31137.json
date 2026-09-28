@@ -1,0 +1,60 @@
+{
+  "abstract": "Driving in dense urban traffic is interactive: whether a merge or an unprotected turn succeeds depends on how surrounding agents respond to the ego vehicle. Conventional planners predict first and plan second and, therefore, cannot account for this dependency. Methods that integrate prediction and planning either train both jointly, which introduces task interference, or keep them separate and are restricted to a predefined set of proposals. We present INTERACT: Interactive Planning for Autonomous Driving via Anchor-Conditioned Prediction and Trust-Region Refinement. Our key insight is that surrounding agents react to the intent a trajectory expresses rather than to its exact realization, so a single reactive prediction stays valid across an entire family of plans. INTERACT therefore decomposes interactive planning into prediction across driving intents and optimization within each intent. We derive a small set of diverse intents, which we call anchors, from map geometry, query a dedicated ego-conditioned prediction model once per anchor, and refine every anchor with the Cross-Entropy Method under a trust-region penalty that keeps the refined plan close enough to its anchor for the conditioned reaction to still apply. Prediction thus remains a separate model, avoiding task interference, while conditioning on anchors preserves the dependency. Because each anchor is refined continuously, the final plan is not restricted to the anchor set, yet INTERACT requires only one predictor query per anchor rather than one per candidate plan, with all anchors processed in parallel. On the nuPlan and interPlan closed-loop benchmarks, INTERACT sets a new state of the art, with the largest gains precisely in the interactive scenarios that motivate the method. The code will be released upon acceptance.",
+  "abstract_zh": "在密集的城市交通中驾驶是一个交互过程：合并或无保护转弯的成功与否取决于周围代理对自我车辆的反应。传统的规划者首先进行预测，然后进行规划，因此无法考虑这种依赖关系。将预测与规划相结合的方法要么共同训练两者，这会引入任务干扰，要么将两者分开，限制于预定义的一组提案。我们提出了INTERACT：通过锚定条件预测和信任区域优化实现自主驾驶的交互式规划。我们的关键见解是，周围代理对轨迹所表达的意图作出反应，而不是对其确切实现作出反应，因此单一的反应预测在整个计划家族中保持有效。因此，INTERACT将交互式规划分解为对驾驶意图的预测和在每个意图内的优化。我们从地图几何中导出一小组多样的意图，称之为锚点，针对每个锚点查询一次专用的自我条件预测模型，并在信任区域惩罚下使用交叉熵方法优化每个锚点，以确保优化后的计划与其锚点保持足够接近，以便条件反应仍然适用。因此，预测仍然是一个独立的模型，避免了任务干扰，而对锚点的条件化则保留了依赖关系。由于每个锚点都在持续优化，最终计划不受锚点集的限制，但INTERACT每个锚点只需一次预测查询，而不是每个候选计划一次，所有锚点可以并行处理。在nuPlan和interPlan闭环基准测试中，INTERACT设定了新的最先进水平，尤其在激励该方法的交互场景中取得了最大的进展。代码将在接受后发布。",
+  "arxiv_id": "2609.31137",
+  "arxiv_url": "https://arxiv.org/abs/2609.31137v1",
+  "authors": [
+    "Aron Distelzweig",
+    "Andreas Look",
+    "Faris Janjoš",
+    "Steffen Hagedorn",
+    "Luigi Palmieri",
+    "Joschka Boedecker"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-28#paper-2609-31137",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-28T11:23:02.433802+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31137v1",
+  "published_at": "2026-09-25T11:27:27Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego vehicle",
+      "nuplan",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31137v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "INTERACT: Interactive Planning for Autonomous Driving via Anchor-Conditioned Prediction and Trust-Region Refinement",
+  "title_zh": "INTERACT：通过锚定条件预测和信任区域优化实现自主驾驶的交互式规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.31137"
+}
