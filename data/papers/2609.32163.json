@@ -1,0 +1,49 @@
+{
+  "abstract": "Temporal context is essential for camera-only multi-view 3D object detection. Existing streaming detectors maintain and propagate query states from one frame to the next, requiring sequence-aware training and chronological inference. We propose PQR3D, which performs progressive query refinement within referenceconditioned temporal windows. This design enables random frame sampling and independent inference without persistent query memory. Within each window, PQR3D progressively transfers motion-aligned high-confidence queries from earlier timestamps toward the target frame. We further introduce masked selfattention to regulate interactions among regular, propagated, and denoising queries while keeping denoising supervision isolated from detection queries. In addition, a stage-decoupled anchor embedding injects position before self-attention and size, orientation, and velocity afterward, reducing interference from temporally inconsistent attributes. With a ViT-L backbone, PQR3D sets a new state of the art on the nuScenes test set, achieving 71.6 NDS and 64.9 mAP. Source code is available at https://github.com/huiyegit/PQR3D",
+  "abstract_zh": "时间上下文对于仅使用相机的多视角3D物体检测至关重要。现有的流式检测器在帧与帧之间维护并传播查询状态，这要求进行序列感知训练和时间顺序推理。我们提出了PQR3D，它在参考条件时间窗口内执行渐进查询细化。该设计支持随机帧采样和独立推理，而无需持久的查询记忆。在每个窗口内，PQR3D逐步将早期时间戳中的运动对齐的高置信度查询转移到目标帧。我们进一步引入了掩蔽自注意力机制，以调节常规查询、传播查询和去噪查询之间的交互，同时保持去噪监督与检测查询的隔离。此外，阶段解耦的锚嵌入在自注意力之前注入位置信息，并在之后注入大小、方向和速度，从而减少时间不一致属性的干扰。使用ViT-L主干，PQR3D在nuScenes测试集上设定了新的最先进水平，达到了71.6的NDS和64.9的mAP。源代码可在https://github.com/huiyegit/PQR3D获取。",
+  "arxiv_id": "2609.32163",
+  "arxiv_url": "https://arxiv.org/abs/2609.32163v1",
+  "authors": [
+    "Hui Ye",
+    "Yudong Liu",
+    "Yiran Chen",
+    "Rajshekhar Sunderraman",
+    "Shihao Ji"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32163",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.395514+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32163v1",
+  "published_at": "2026-09-26T02:40:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "3d object detection"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32163v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "3D 检测"
+    ]
+  },
+  "title": "PQR3D: Progressive Query Refinement over Reference-Conditioned Temporal Windows for Multi-View 3D Object Detection",
+  "title_zh": "PQR3D：基于参考条件时间窗口的多视角3D物体检测中的渐进查询细化",
+  "translation_url": "https://hjfy.top/arxiv/2609.32163"
+}

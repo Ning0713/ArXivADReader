@@ -1,0 +1,53 @@
+{
+  "abstract": "Driving policies require capabilities of scene understanding and future evolution prediction. To achieve this goal, current end-to-end models typically construct complex perception-planning pipelines or introduce world models that explicitly predict future states, resulting in a complex system architecture. Inspired by the transferability of general-purpose visual representations, we argue that combining sufficiently strong visual representations with representation world modeling can support effective planning without relying on complex inference-time auxiliary modules. Based on this insight, we present ReDrive, an end-to-end driving framework that strengthens planning-oriented visual features via future representation prediction. To achieve this, ReDrive adopts a three-stage training pipeline consisting of driving video pretraining, joint world-modeling and planning training, and planner adaptation. This yields a strong planning-oriented representation and a high-performance planner, while requiring neither auxiliary perception modules nor future prediction at inference time. Experiments on NAVSIM demonstrate strong performance, achieving 91.0 PDMS on NAVSIM v1 and 90.8 EPDMS on NAVSIM v2. These results show that shaping representations with world modeling is sufficient to enable high-performance end-to-end planning while retaining a simple encoder-planner inference pipeline.",
+  "abstract_zh": "驾驶策略需要具备场景理解和未来演变预测的能力。为实现这一目标，目前的端到端模型通常构建复杂的感知-规划管道或引入明确预测未来状态的世界模型，从而导致复杂的系统架构。受到通用视觉表征可迁移性的启发，我们认为将足够强大的视觉表征与表征世界建模相结合，可以支持有效的规划，而无需依赖复杂的推理时辅助模块。基于这一见解，我们提出了ReDrive，一个端到端驾驶框架，通过未来表征预测增强规划导向的视觉特征。为此，ReDrive采用了一个三阶段的训练管道，包括驾驶视频预训练、联合世界建模与规划训练，以及规划器适应。这产生了一个强大的规划导向表征和高性能的规划器，同时在推理时既不需要辅助感知模块，也不需要未来预测。在NAVSIM上的实验表明了强大的性能，在NAVSIM v1上达到了91.0 PDMS，在NAVSIM v2上达到了90.8 EPDMS。这些结果表明，通过世界建模塑造表征足以实现高性能的端到端规划，同时保持简单的编码器-规划器推理管道。",
+  "arxiv_id": "2609.33854",
+  "arxiv_url": "https://arxiv.org/abs/2609.33854v1",
+  "authors": [
+    "Yueting Zhu",
+    "Shaoyu Chen",
+    "Yuehao Song",
+    "Hui Sun",
+    "Qian Zhang",
+    "Wenyu Liu",
+    "Xinggang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-33854",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.507080+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.33854v1",
+  "published_at": "2026-09-27T19:12:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.33854v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "端到端驾驶"
+    ]
+  },
+  "title": "ReDrive: Shaping Representations with World Modeling for End-to-End Driving",
+  "title_zh": "ReDrive：通过世界建模塑造表征以实现端到端驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.33854"
+}

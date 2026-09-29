@@ -1,0 +1,56 @@
+{
+  "abstract": "Retrieval-augmented generation (RAG) gives vision--language driving systems access to external safety knowledge, yet a retrieved risk rule may be relevant without applying to the current scene. A vision--language model (VLM) receiving such knowledge must ground objects, bind entities across time, and verify relations before deciding how to act, leaving the support for risk conclusions implicit. We address this relevance--applicability gap with a Driving-Risk Knowledge Graph (DRKG) and Semantic Web Rule Language (SWRL) reasoning stage before VLM decision-making. Structured perception instantiates scene facts, from which SWRL rules derive events and directed risk relations when their antecedents are jointly satisfied. Recognized events, bound risk relations, and semantic descriptions of activated rules form compact evidence that conditions the VLM and diffusion planner. In matched comparisons on nuReasoning, our method improved the nuReasoning planning score (NPS) by 1.30 points and the non-at-fault collision score (NC) by 2.76 points over the relevance retrieval-based baseline. These gains indicate that scene-applicable risk evidence improves safety-weighted planning relative to semantically retrieved risk knowledge.",
+  "abstract_zh": "检索增强生成（RAG）为视觉-语言驾驶系统提供了外部安全知识的访问，但检索到的风险规则可能是相关的，却不一定适用于当前场景。接收此类知识的视觉-语言模型（VLM）必须对物体进行定位，跨时间绑定实体，并验证关系，然后才能决定如何行动，这使得风险结论的支持变得隐含。我们通过驾驶风险知识图（DRKG）和语义网规则语言（SWRL）推理阶段来解决这种相关性与适用性之间的差距，进而为VLM的决策提供支持。结构化感知实例化场景事实，从中SWRL规则在其前提共同满足时推导出事件和有向风险关系。被识别的事件、绑定的风险关系以及激活规则的语义描述形成了紧凑的证据，条件化VLM和扩散规划器。在nuReasoning的匹配比较中，我们的方法将nuReasoning规划分数（NPS）提高了1.30分，非过失碰撞分数（NC）提高了2.76分，相较于基于相关性检索的基线。这些提升表明，适用于场景的风险证据相较于语义检索的风险知识改善了安全加权规划。",
+  "arxiv_id": "2609.34145",
+  "arxiv_url": "https://arxiv.org/abs/2609.34145v1",
+  "authors": [
+    "Jiaxin Liu",
+    "Ruilin Yu",
+    "Liang Peng",
+    "Jingkai Wang",
+    "Chengxiang Zhao",
+    "Zhenxin Zhu",
+    "Bing Wang",
+    "Guang Chen",
+    "Hangjun Ye",
+    "Hong Wang",
+    "Jun Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-34145",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.289537+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.34145v1",
+  "published_at": "2026-09-28T02:26:15Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.34145v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "本文针对驾驶场景中检索到的风险规则未必真正适用的问题，使用知识图谱与规则推理从结构化场景事实中提取事件和风险关系，再将这些证据提供给视觉-语言模型及扩散规划器，以改善安全加权驾驶规划。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "预测/规划",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Beyond Retrieval Relevance: Scene-Grounded Risk Entailment for Vision-Language Driving",
+  "title_zh": "超越检索相关性：基于场景的风险推理在视觉-语言驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2609.34145"
+}

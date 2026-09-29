@@ -1,0 +1,60 @@
+{
+  "abstract": "Evaluating VLM-based autonomous driving remains difficult because driving competence is composite, where a capable system must ground traffic participants and hazards, integrate context across views and time, reason about future evolution, and act appropriately under closed-loop interaction. Existing benchmarks usually assess either open-loop understanding or closed-loop driving but provide limited structure for explaining how these abilities are organized, how they relate, and how they may inform model diagnosis and improvement. We present \\textsc{DriveHierarchy}, a hierarchical benchmark that organizes VLM-based autonomous driving into four ranks, spanning perceptual grounding, contextual memory, mental reasoning, and closed-loop execution. To instantiate this hierarchy, we integrate multiple open-source autonomous-driving datasets into a unified open-loop benchmark with 76,798 question-answer pairs over 84,279 frames and develop a closed-loop simulation platform with interactive scenario construction on a real-world road network, from which 100 driving scenarios are curated for embodied evaluation. Experiments on 15 VLMs show that \\textsc{DriveHierarchy} captures structured but non-redundant capability variation, relates open-loop understanding to closed-loop driving, and provides a practical basis for diagnosis and benchmark-guided optimization. \\textsc{DriveHierarchy} therefore serves as a unified framework for evaluating and improving VLM-based autonomous driving systems. An anonymized project has been released on https://github.com/PerfectXu88/DriveHierarchy",
+  "abstract_zh": "评估基于VLM的自主驾驶仍然困难，因为驾驶能力是复合的，能够胜任的系统必须能够识别交通参与者和危险，整合跨视角和时间的上下文，推理未来的发展，并在闭环交互中适当地行动。现有基准通常评估开放环路理解或闭环驾驶，但对这些能力如何组织、如何关联以及如何为模型诊断和改进提供信息的结构性支持有限。我们提出了 extsc{DriveHierarchy}，一个将基于VLM的自主驾驶组织为四个等级的分层基准，涵盖感知基础、上下文记忆、心理推理和闭环执行。为了实现这一层次结构，我们将多个开源自主驾驶数据集整合为一个统一的开放环路基准，其中包含76,798个问答对，覆盖84,279帧，并开发了一个闭环仿真平台，能够在真实世界道路网络上进行互动场景构建，从中策划出100个驾驶场景以进行具体评估。对15个VLM的实验表明， extsc{DriveHierarchy}捕捉到了结构化但不冗余的能力变化，将开放环路理解与闭环驾驶关联起来，并为诊断和基准指导的优化提供了实用基础。因此， extsc{DriveHierarchy}作为一个统一框架，服务于评估和改进基于VLM的自主驾驶系统。一个匿名项目已在https://github.com/PerfectXu88/DriveHierarchy上发布。",
+  "arxiv_id": "2609.31814",
+  "arxiv_url": "https://arxiv.org/abs/2609.31814v1",
+  "authors": [
+    "Chengkai Xu",
+    "Jiaqi Liu",
+    "Yicheng Guo",
+    "Peng Hang",
+    "Jian Sun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-31814",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.547832+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31814v1",
+  "published_at": "2026-09-25T13:57:44Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路",
+      "diagnosis",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "标题明确属于非道路驾驶领域",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31814v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "提出面向 VLM 自动驾驶系统的分层评测基准，涵盖感知、上下文记忆、推理和闭环执行，并结合大规模开放环路问答数据与闭环仿真场景，诊断模型能力及其与实际驾驶表现的关系。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "DriveHierarchy: A Benchmark for Diagnosing VLM Driving Capabilities from Open-Loop Understanding to Closed-Loop Execution",
+  "title_zh": "DriveHierarchy：从开放环路理解到闭环执行的VLM驾驶能力诊断基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.31814"
+}

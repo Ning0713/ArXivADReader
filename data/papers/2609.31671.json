@@ -1,0 +1,48 @@
+{
+  "abstract": "Event cameras are well suited to pedestrian crossing detection, and spiking neural networks (SNNs) can process their output natively, but current SNN detectors are trained with supervised backpropagation and therefore require costly frame-level crossing labels. We investigate crossing detection with no labels in feature learning and report the first unsupervised results on the recent DVS-PedX pedestrian-crossing benchmark. A single spiking layer trained with winner-take-all spike-timing-dependent plasticity learns a dictionary from unlabelled event-frame patches; frames are encoded by cosine similarity to the learned filters with spatial pooling and read out by a linear classifier, the only supervised component. On the 24,454-frame test split the method attains 90.3% accuracy and an area under the receiver operating characteristic curve (AUROC) of 0.936, compared with 92.0% and 0.943 for a supervised spiking network trained end-to-end on the same frames; under adverse weather the AUROC is 0.913. The result is insensitive to the choice of plasticity rule but depends strongly on the readout protocol: with the classical neuron-assignment readout the same network attains only 0.70 AUROC. On the benchmark's real converted portion, a readout refit lifts performance from chance (0.53) to 0.67 AUROC, within the published supervised range. These findings indicate that the accuracy cost of removing labels from feature learning is small on this benchmark, and that reported weaknesses of unsupervised spiking networks may be attributable to the readout protocol rather than to the learning rule.",
+  "abstract_zh": "事件相机非常适合行人过马路检测，而脉冲神经网络（SNN）能够原生处理其输出，但目前的 SNN 检测器是通过监督反向传播训练的，因此需要昂贵的帧级过马路标签。我们研究了在无标签的特征学习中进行过马路检测，并报告了在最近的 DVS-PedX 行人过马路基准测试中首次获得的无监督结果。一个使用赢家通吃的脉冲时序依赖可塑性训练的单层脉冲网络从无标签的事件帧补丁中学习字典；帧通过与学习到的滤波器的余弦相似度进行编码，并通过线性分类器读取，这是唯一的监督组件。在 24,454 帧的测试集上，该方法达到了 90.3% 的准确率和 0.936 的接收者操作特征曲线下面积（AUROC），而在同一帧上经过端到端训练的监督脉冲网络的准确率为 92.0%，AUROC 为 0.943；在恶劣天气条件下，AUROC 为 0.913。结果对可塑性规则的选择不敏感，但对读取协议高度依赖：使用经典的神经元分配读取时，同一网络仅达到 0.70 AUROC。在基准测试的真实转换部分，重新调整读取将性能从偶然（0.53）提升至 0.67 AUROC，处于已发布的监督范围内。这些发现表明，在该基准测试中，从特征学习中去除标签的准确性成本较小，并且无监督脉冲网络的报告弱点可能是由于读取协议而非学习规则造成的。",
+  "arxiv_id": "2609.31671",
+  "arxiv_url": "https://arxiv.org/abs/2609.31671v1",
+  "authors": [
+    "Henok Teklu",
+    "Mustafa Sakhai",
+    "Matej Mertik",
+    "Maciej Wielgosz"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-31671",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.NE"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.350135+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31671v1",
+  "published_at": "2026-09-15T20:07:06Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31671v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "本文利用无监督脉冲时序学习，从事件相机数据中提取行人过街特征，并以线性读出完成检测。其结果接近监督式 SNN，展示了减少自动驾驶行人检测对标注数据依赖的可能性。",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "Unsupervised spiking feature learning for event-based pedestrian crossing detection: approaching supervised accuracy without labelled training data",
+  "title_zh": "无监督脉冲特征学习用于基于事件的行人过马路检测：在没有标注训练数据的情况下接近监督精度",
+  "translation_url": "https://hjfy.top/arxiv/2609.31671"
+}

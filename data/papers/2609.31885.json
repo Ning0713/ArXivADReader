@@ -1,0 +1,54 @@
+{
+  "abstract": "Autonomous micro-mobility vehicles (MMVs) such as wheelchairs, scooters, and bicycles have the potential to improve mobility access and support safe low-speed transportation in pedestrian-shared spaces. Achieving MMV autonomy will require realistic, predictable MMV motion. However, many existing autonomous vehicle stacks rely on simplified kinematic models that fail to capture key MMV characteristics such as tire slip, friction, and wheel layouts, limiting realism and gradient-based optimization. In this paper, we explore differentiable formulations of dynamics models for autonomous micro-mobility systems. We first construct DiffKBM, a differentiable version of the kinematic bicycle model (KBM). Then, we introduce DiffGM3, a differentiable formulation of the General Micro-Mobility Model (GM3), a unified tire-based dynamics formulation for micro-mobility vehicles that supports a wide range of MMV configurations. DiffKBM and DiffGM3 enable end-to-end differentiable optimization through MMV dynamics, making them suitable for integration into differentiable autonomy stacks. We evaluate these dynamics models in both open-loop and closed-loop settings: (1) open-loop trajectory matching, where DiffKBM and DiffGM3 are integrated as a dynamics layer within DiffStack and optimized to reproduce real-world MMV trajectories, and (2) closed-loop autonomous navigation, where DiffKBM and DiffGM3 are paired with a differentiable MPC controller in CrowdNav pedestrian scenarios. In the open-loop setting, DiffGM3 outperforms DiffKBM in reproducing trajectories with improvements in ADE and NLL across bicycle, scooter, and motorcycle modes, and reductions in planning loss for bicycle and motorcycle trajectories. We also find that, in closed-loop settings, DiffGM3 improves on DiffKBM's CrowdNav performance by producing 55\\% fewer collisions and a 75\\% lower discomfort frequency for the bicycle mode.",
+  "abstract_zh": "自主微移动车辆（MMVs），如轮椅、电动滑板车和自行车，有潜力改善出行便利性，并支持在行人共享空间中的安全低速运输。实现MMV的自主性需要现实且可预测的MMV运动。然而，许多现有的自主车辆系统依赖于简化的运动学模型，这些模型未能捕捉到MMV的关键特性，如轮胎滑移、摩擦和轮布局，从而限制了现实性和基于梯度的优化。本文探讨了自主微移动系统的可微分动力学模型的形式化。我们首先构建了DiffKBM，这是运动学自行车模型（KBM）的可微分版本。然后，我们引入了DiffGM3，这是通用微移动模型（GM3）的可微分形式，该模型为微移动车辆提供了一种统一的基于轮胎的动力学形式，支持广泛的MMV配置。DiffKBM和DiffGM3通过MMV动力学实现了端到端的可微分优化，使其适合集成到可微分自主系统中。我们在开放环路和闭环设置中评估这些动力学模型：（1）开放环路轨迹匹配，其中DiffKBM和DiffGM3作为DiffStack中的动力学层集成，并优化以重现真实世界的MMV轨迹；（2）闭环自主导航，其中DiffKBM和DiffGM3与可微分模型预测控制器（MPC）配对，在CrowdNav行人场景中进行测试。在开放环路设置中，DiffGM3在重现轨迹方面优于DiffKBM，在自行车、电动滑板车和摩托车模式下的平均距离误差（ADE）和负对数似然（NLL）均有所改善，并且在自行车和摩托车轨迹的规划损失上有所减少。我们还发现，在闭环设置中，DiffGM3在CrowdNav性能上优于DiffKBM，摩托车模式下的碰撞数量减少了55\\%，不适频率降低了75\\%。",
+  "arxiv_id": "2609.31885",
+  "arxiv_url": "https://arxiv.org/abs/2609.31885v1",
+  "authors": [
+    "Grace Cai",
+    "Joey Lee",
+    "Nithin Parepally",
+    "Laura Zheng",
+    "Ming C. Lin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-31885",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.221091+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31885v1",
+  "published_at": "2026-09-25T18:22:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous",
+      "vehicle",
+      "pedestrian",
+      "车辆",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 58
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31885v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "安全/异常"
+    ]
+  },
+  "title": "Differentiable Dynamics for Autonomous Micro-Mobility Navigation",
+  "title_zh": "用于自主微移动导航的可微分动力学",
+  "translation_url": "https://hjfy.top/arxiv/2609.31885"
+}

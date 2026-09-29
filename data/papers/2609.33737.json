@@ -1,0 +1,62 @@
+{
+  "abstract": "Long-horizon planning enables autonomous vehicles to anticipate scene evolution and potential risks, supporting safe and stable decisions in complex interactions. However, existing methods struggle to propagate motion trends from observed history into the future. Long rollouts based on a single latent state may further attenuate useful dynamics, retain stale motion patterns, and disrupt reliable near-term plans. We introduce MomWorld, a momentum-aware latent world model for long-horizon planning. MomWorld extracts scene motion trends from historical-to-current observations and propagates latent momentum into future horizons, jointly predicting future configuration and momentum states. A learnable momentum persistence mechanism preserves stable trends, scene-conditioned momentum updates adapt future dynamics, and a scene-adaptive reset gate suppresses stale momentum under abrupt changes. We further propose MoFlow, a momentum-conditioned flow-matching module that refines a base trajectory to align with the predicted future scene evolution in only a few integration steps, with a horizon-aware residual fusion that preserves near-term planning stability while permitting stronger long-range corrections. Extensive experiments on NAVSIM, nuScenes and Bench2Drive demonstrate that MomWorld improves long-horizon planning consistency and reduces the average collision rate by 12.2% relative to MomAD over a 6-second planning horizon.",
+  "abstract_zh": "长时间规划使自主车辆能够预测场景演变和潜在风险，从而在复杂交互中支持安全和稳定的决策。然而，现有方法在将观察历史中的运动趋势传播到未来方面存在困难。基于单一潜在状态的长时间展开可能进一步削弱有用的动态，保留过时的运动模式，并干扰可靠的短期计划。我们提出了MomWorld，一种面向长时间规划的动量感知潜在世界模型。MomWorld从历史到当前的观察中提取场景运动趋势，并将潜在动量传播到未来的时间范围，联合预测未来的配置和动量状态。可学习的动量持续机制保持稳定趋势，场景条件下的动量更新适应未来动态，而场景自适应重置门在突变情况下抑制过时动量。我们进一步提出了MoFlow，一种动量条件流匹配模块，它在仅需少量整合步骤的情况下，细化基础轨迹以与预测的未来场景演变对齐，并通过时间感知的残差融合保持短期规划的稳定性，同时允许更强的长距离修正。在NAVSIM、nuScenes和Bench2Drive上的大量实验表明，MomWorld提高了长时间规划的一致性，并相对于MomAD在6秒的规划范围内将平均碰撞率降低了12.2%。",
+  "arxiv_id": "2609.33737",
+  "arxiv_url": "https://arxiv.org/abs/2609.33737v1",
+  "authors": [
+    "Ziying Song",
+    "Shengkai Zhang",
+    "Lei Yang",
+    "Haozhuang Chi",
+    "Yuchen Liu",
+    "Jiangtao Su",
+    "Lin Liu",
+    "Ziyang Liu",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-33737",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.276120+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.33737v1",
+  "published_at": "2026-09-27T16:39:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.33737v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "MomWorld: Momentum-Aware Latent World Model for Long-Horizon Autonomous Driving",
+  "title_zh": "MomWorld：面向长时间自主驾驶的动量感知潜在世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.33737"
+}

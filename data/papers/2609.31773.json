@@ -1,0 +1,53 @@
+{
+  "abstract": "We study whether a manually specified runtime supervisor can correct recurring failures of an existing end-to-end parking policy in a fixed CARLA parking lot. The vision-based Transformer architecture is inherited from Yang et al.; our contribution is a timed, rule-based Parametric Safety Shield (PSS) applied to its control outputs. The PSS uses hand-calibrated speed, position, and duration thresholds to intervene in observed failure modes, including boundary exits, delayed braking, and stalled or oscillatory control. In the reported closed-loop evaluation, 16 held-out target slots and six initial poses are each evaluated in four rounds (384 attempts per configuration). Target success increases from 327/384 (85.16%) for the retrained policy to 375/384 (97.66%) with the PSS; mean position and orientation errors among successful attempts are 0.21m and 0.33 degrees. These results show an improvement within this simulator setup. The repeated attempts share one map, vehicle, and sensor configuration, and the PSS uses simulator world coordinates; thus the results do not establish generalization to other lots or real vehicles, or a formal safety guarantee.",
+  "abstract_zh": "我们研究了手动指定的运行时监督是否能够纠正现有端到端停车策略在固定CARLA停车场中出现的重复性故障。基于视觉的Transformer架构继承自Yang等人的研究；我们的贡献是将基于时间的规则参数安全保护盾（Parametric Safety Shield, PSS）应用于其控制输出。PSS使用手动校准的速度、位置和持续时间阈值来干预观察到的故障模式，包括边界退出、延迟刹车以及失控或振荡控制。在报告的闭环评估中，16个保留目标车位和六个初始姿态在四轮中各自进行了评估（每个配置384次尝试）。目标成功率从重新训练的策略的327/384（85.16%）提高到使用PSS的375/384（97.66%）；成功尝试的平均位置和方向误差分别为0.21米和0.33度。这些结果表明在该模拟器设置中有所改善。重复尝试共享一个地图、车辆和传感器配置，PSS使用模拟器世界坐标；因此，结果并未建立对其他停车场或真实车辆的泛化，或提供正式的安全保证。",
+  "arxiv_id": "2609.31773",
+  "arxiv_url": "https://arxiv.org/abs/2609.31773v1",
+  "authors": [
+    "Kejia Gao",
+    "Liguo Zhou",
+    "Lei Yu",
+    "Alois Knoll"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-31773",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.217786+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.31773v1",
+  "published_at": "2026-09-24T15:55:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "autonomous",
+      "vehicle",
+      "parking",
+      "车辆"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 40
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.31773v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "安全/异常",
+      "地图/定位"
+    ]
+  },
+  "title": "Timed Rule-Based Supervision of an End-to-End Autonomous Parking Policy",
+  "title_zh": "基于时间的端到端自主停车策略的规则监督",
+  "translation_url": "https://hjfy.top/arxiv/2609.31773"
+}

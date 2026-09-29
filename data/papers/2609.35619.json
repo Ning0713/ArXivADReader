@@ -1,0 +1,50 @@
+{
+  "abstract": "Incorporating dense visual information into motion planning remains challenging, as geometric planners rely on abstracted scene representations that discard visual richness, while learned visual models often lack geometric interpretability and computational efficiency. This paper introduces CollisionSplatting, a simple, modular, GPU-accelerated, probability-inspired distance metric with tunable conservatism that operates directly on standard 3D Gaussian Splatting (3DGS) scenes. When combined with learned image-conditioned reward functions, this metric enables joint geometric and visual planning by unifying collision-aware costs with image-space objectives. We integrate the metric into GPU-accelerated Model Predictive Path Integral (MPPI) and Rapidly-Exploring Random Tree (RRT) planners, and show on-par or better collision-classification performance compared to representative baselines while achieving substantially higher collision-checking throughput and significantly lower VRAM usage. Finally, we demonstrate the effectiveness of our metric in real-world vision-guided navigation and manipulation tasks, highlighting 3DGS as a practical bridge between rich perception and real-time motion planning.",
+  "abstract_zh": "将密集视觉信息纳入运动规划仍然具有挑战性，因为几何规划器依赖于抽象的场景表示，这些表示丢弃了视觉丰富性，而学习的视觉模型往往缺乏几何可解释性和计算效率。本文介绍了CollisionSplatting，这是一种简单、模块化、基于概率的距离度量，具有可调的保守性，能够直接在标准的3D高斯点云（3DGS）场景中操作。当与学习的图像条件奖励函数结合时，该度量通过将碰撞感知成本与图像空间目标统一起来，从而实现了几何与视觉的联合规划。我们将该度量集成到GPU加速的模型预测路径积分（MPPI）和快速探索随机树（RRT）规划器中，并展示了与代表性基线相比，碰撞分类性能持平或更优，同时实现了显著更高的碰撞检测吞吐量和显著更低的显存使用。最后，我们展示了该度量在现实世界视觉引导的导航和操作任务中的有效性，强调了3DGS作为丰富感知与实时运动规划之间的实用桥梁。",
+  "arxiv_id": "2609.35619",
+  "arxiv_url": "https://arxiv.org/abs/2609.35619v1",
+  "authors": [
+    "R. Khorrambakht",
+    "Joaquim Ortiz-Haro",
+    "Stephan Weiss",
+    "Ludovic Righetti"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-35619",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.338057+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.35619v1",
+  "published_at": "2026-09-28T16:57:15Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "motion planning",
+      "gaussian splatting",
+      "运动规划",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.35619v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "提出一种直接在3DGS场景中计算碰撞感知代价的方法，并将其与图像条件目标结合用于运动规划；在MPPI和RRT上的实验表明，该方法兼具竞争性的碰撞分类性能和较高计算效率。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "CollisionSplatting: Collision-Aware Motion Planning in 3DGS Scenes with Image-Conditioned Objectives and Adjustable Conservatism",
+  "title_zh": "CollisionSplatting：在具有图像条件目标和可调保守性的3DGS场景中进行碰撞感知的运动规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.35619"
+}

@@ -1,0 +1,68 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models for autonomous driving produce natural-language reasoning alongside predicted trajectories, but whether this reasoning reflects the causal structure of the scene remains untested. We introduce CausalDriveBench, an evaluation framework grounded in Pearl's Causal Hierarchy (PCH) that tests causal reasoning in driving-specific VLAs through structured visual question answering (QA) and alternative-trajectory prediction. To this end, we construct causal scene graphs over nuScenes that distinguish causally active, dormant, and distractor entities, separating perceptual salience from causal relevance. The benchmark spans all four rungs of PCH (association, intervention, and counterfactual along with causal discovery) for QA generation. For the higher rungs, we additionally provide reference trajectories under specified scene modifications, enabling action-level verification that complements reasoning-level evaluation. In total, the benchmark contains 7,285 verified causal QA pairs and 1,000 counterfactual trajectories derived from nuScenes. We evaluate 10 driving-specific VLAs and 3 general-purpose VLMs, and report three findings. First, the best model reaches only 70.6% QA accuracy, and 4 of 13 models score below random chance. Second, comparing each driving VLA to the general-purpose VLM that shares its language backbone, the cost of driving fine-tuning ranges from 2 to 34 percentage points on causal QA, with post-training design explaining the spread. Third, causal QA and trajectory accuracy are statistically uncorrelated across models: under counterfactual prompts, predicted trajectories either over-react or collapse onto the observed-scene baseline. Taken together, these results show that neither fluent rationales nor accurate observed-scene trajectories constitute evidence of causal understanding.",
+  "abstract_zh": "自主驾驶的视觉-语言-行动（VLA）模型在预测轨迹的同时生成自然语言推理，但这种推理是否反映场景的因果结构尚未经过检验。我们引入了CausalDriveBench，一个基于Pearl的因果层级（PCH）的评估框架，通过结构化的视觉问答（QA）和替代轨迹预测来测试驾驶特定VLA的因果推理。为此，我们在nuScenes上构建了因果场景图，区分因果活跃、休眠和干扰实体，将感知显著性与因果相关性分开。该基准涵盖了PCH的四个层级（关联、干预、反事实及因果发现）用于QA生成。对于较高层级，我们还提供了在特定场景修改下的参考轨迹，使得行动级别的验证能够补充推理级别的评估。总的来说，该基准包含7,285对经过验证的因果QA对和1,000条来自nuScenes的反事实轨迹。我们评估了10个驾驶特定的VLA和3个通用VLM，并报告了三个发现。首先，最佳模型的QA准确率仅为70.6%，而13个模型中有4个得分低于随机机会。其次，将每个驾驶VLA与共享语言基础的通用VLM进行比较，驾驶微调的成本在因果QA上范围从2到34个百分点，后训练设计解释了这种差异。第三，因果QA和轨迹准确性在模型之间统计上不相关：在反事实提示下，预测轨迹要么过度反应，要么收敛到观察场景基线。综合来看，这些结果表明，流畅的推理或准确的观察场景轨迹都不能构成因果理解的证据。",
+  "arxiv_id": "2609.32157",
+  "arxiv_url": "https://arxiv.org/abs/2609.32157v1",
+  "authors": [
+    "Narendiran Chembu",
+    "Navvrat Rao",
+    "Shreedhar Shreeshail Kodate",
+    "Gayatri Srujana Banda",
+    "Arko Sarkar",
+    "Abhinav Khanna",
+    "Rajarshee Das",
+    "Umesh Kanala",
+    "Siddarth Khandelwal",
+    "Kumar Aman",
+    "Aish Dubey",
+    "Kaustubh Beedkar",
+    "Arjun Jain"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32157",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.394188+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32157v1",
+  "published_at": "2026-09-26T02:21:05Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "trajectory prediction",
+      "vision-language-action",
+      "driving vla",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32157v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "CausalDriveBench: Evaluating Causal Reasoning in Vision-Language-Action Models for Autonomous Driving",
+  "title_zh": "CausalDriveBench：评估自主驾驶中视觉-语言-行动模型的因果推理",
+  "translation_url": "https://hjfy.top/arxiv/2609.32157"
+}

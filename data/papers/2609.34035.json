@@ -1,0 +1,53 @@
+{
+  "abstract": "Tracking any point of a dynamic scene in metric 3D - in absolute meters, not up to an unknown scale - underpins 3D and 4D reconstruction, robot navigation, and autonomous driving, where decisions are made in meters, not pixels. Our objective is a 3D point tracker accurate in those absolute terms and operating within a single commodity GPU, pose-free, monocular budget. Our method rests on one observation: once a point's 2D image trajectory is fixed, the quantity that governs its metric accuracy is the depth along its pixel ray. Rather than learning tracking end-to-end, we therefore compose two frozen front-ends - dense optical flow for 2D correspondence and a monocular metric-depth network for the third dimension - and learn only the residual they cannot supply: that depth, refined by a compact state space model (Mamba-3) conditioned on appearance features (DINOv3). A state space model rather than the transformers the strongest 3D trackers adopt is what makes a single-GPU budget attainable: it summarises a track in a fixed-size recurrent state whose memory cost is constant in the number of frames, whereas attention requires a key-value cache that grows linearly with them. On the TAPVid-3D minival benchmark our best configuration attains the highest absolute metric accuracy among methods evaluated under identical conditions (mean metric Average Jaccard, 0.256), exceeding strong feed-forward trackers, while a companion analysis, reproduced with each competitor's own evaluator, explains why several published trackers lose most of their accuracy under this budget.",
+  "abstract_zh": "在绝对米制下（而非未知尺度下）跟踪动态场景中的任意点是三维和四维重建、机器人导航和自主驾驶的基础，其中决策是以米为单位，而非像素。我们的目标是开发一个在这些绝对条件下准确的三维点跟踪器，并且能够在单个普通GPU的、无需姿态估计的单目预算下运行。我们的方法基于一个观察：一旦一个点的二维图像轨迹被固定，决定其度量准确性的量是沿着其像素光线的深度。因此，我们并不是端到端地学习跟踪，而是组合两个固定的前端——用于二维对应的稠密光流和用于第三维的单目度量深度网络——并仅学习它们无法提供的残差：即由基于外观特征（DINOv3）条件化的紧凑状态空间模型（Mamba-3）细化的深度。选择状态空间模型而非当前最强三维跟踪器所采用的变换器，使得单GPU预算成为可能：它以固定大小的递归状态总结一个轨迹，其内存成本在帧数上是恒定的，而注意力机制则需要一个随着帧数线性增长的键值缓存。在TAPVid-3D minival基准测试中，我们的最佳配置在相同条件下评估的方法中达到了最高的绝对度量准确性（平均度量Jaccard为0.256），超越了强大的前馈跟踪器。同时，伴随的分析通过每个竞争者自己的评估器重现，解释了为什么一些已发布的跟踪器在该预算下失去了大部分准确性。",
+  "arxiv_id": "2609.34035",
+  "arxiv_url": "https://arxiv.org/abs/2609.34035v1",
+  "authors": [
+    "Masahiro Ogawa",
+    "Qi An",
+    "Atsushi Yamashita"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-34035",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.515191+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.34035v1",
+  "published_at": "2026-09-27T23:56:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.34035v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "3D Point Tracking with State Space Models",
+  "title_zh": "基于状态空间模型的三维点跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2609.34035"
+}

@@ -1,0 +1,60 @@
+{
+  "abstract": "Traffic lights are a key regulatory signal for autonomous driving at urban intersections, yet existing traffic signal perception is still predominantly formulated as instance-level detection or color recognition. Such formulations identify where traffic lights are and what colors they display, but leave a critical semantic gap before downstream planning: which ego maneuver is controlled by each visible signal and what dynamic permission the signal expresses for that maneuver. In this paper, we formulate Directional Traffic Signal Understanding, a decision-oriented task that predicts structured signal states for straight, left-turn, right-turn, and U-turn maneuvers from a front-view image. Each state contains the associated signal color and signal-implied passability. Based on OpenLane-V2, we provide a direction-level benchmark with maneuver-level supervision and metrics for color recognition, passability, full-frame consistency, and safety-critical errors. A direction-aware baseline combines global context, localized traffic-light evidence, and maneuver-specific representations. Experiments show that direction-level modeling improves passability prediction over image-level classifiers and detection-oriented pipelines, particularly at complex multi-signal intersections. The resulting representation provides a direct and interpretable traffic-signal interface for downstream planning together with topology, route, and surrounding-agent information.",
+  "abstract_zh": "交通信号灯是城市交叉口自动驾驶的重要调控信号，但现有的交通信号感知仍主要以实例级检测或颜色识别为主。这种表述方式识别了交通信号灯的位置及其显示的颜色，但在下游规划中留下了一个关键的语义空白：每个可见信号控制的自我操控是什么，以及该信号对该操控所表达的动态许可是什么。本文提出了方向性交通信号理解（Directional Traffic Signal Understanding），这是一项面向决策的任务，旨在从前视图图像中预测直行、左转、右转和掉头操控的结构化信号状态。每个状态包含相关的信号颜色和信号隐含的通行性。基于OpenLane-V2，我们提供了一个方向级基准，具有操控级监督和针对颜色识别、通行性、全帧一致性及安全关键错误的评估指标。方向感知基线结合了全局上下文、本地化的交通信号证据和特定操控的表示。实验表明，方向级建模在复杂多信号交叉口的通行性预测上优于图像级分类器和检测导向的管道。最终的表示为下游规划提供了一个直接且可解释的交通信号接口，并结合了拓扑、路线和周围代理的信息。",
+  "arxiv_id": "2609.32316",
+  "arxiv_url": "https://arxiv.org/abs/2609.32316v1",
+  "authors": [
+    "Ang Zou",
+    "Runzhe Zheng",
+    "Zhigang li",
+    "Zhen Yang",
+    "Han Xia",
+    "Xuewei Li",
+    "Zequn Qin",
+    "Xi Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32316",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.406836+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32316v1",
+  "published_at": "2026-09-26T07:19:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "openlane",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32316v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "One Perception, All Maneuvers: Directional Traffic Signal Understanding for Maneuver-Level Signal Intent Prediction",
+  "title_zh": "一种感知，所有操控：用于操控级信号意图预测的方向性交通信号理解",
+  "translation_url": "https://hjfy.top/arxiv/2609.32316"
+}

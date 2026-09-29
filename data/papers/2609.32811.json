@@ -1,0 +1,49 @@
+{
+  "abstract": "Accident anticipation aims to recognize anomalous driving cues before a crash while avoiding false alarms during normal driving. Existing approaches typically formulate this task as binary classification, focusing on whether an accident will occur rather than when it will occur. We propose PRE-ACT, a framework that models accident risk as a continuously evolving signal that increases as the crash approaches. By explicitly enforcing temporal ordering and distance-to-accident awareness, our method progressively raises risk while suppressing premature alarms, leading to significant improvements on MM-AU subsets and Nexar. We further introduce a Separation Score to evaluate the global behavior of predicted risk curves beyond local temporal windows. Code and visualizations are available at https://github.com/giddyyupp/PRE-ACT.",
+  "abstract_zh": "事故预警旨在在碰撞发生之前识别异常驾驶信号，同时在正常驾驶过程中避免误报。现有方法通常将此任务表述为二分类问题，关注的是事故是否会发生，而非何时发生。我们提出了PRE-ACT框架，该框架将事故风险建模为一个持续演变的信号，随着碰撞的临近而增加。通过明确强制时间顺序和对事故距离的意识，我们的方法逐步提高风险，同时抑制过早的警报，从而在MM-AU子集和Nexar上实现显著改进。我们进一步引入了分离评分（Separation Score），以评估预测风险曲线在局部时间窗口之外的全局行为。代码和可视化结果可在 https://github.com/giddyyupp/PRE-ACT 获取。",
+  "arxiv_id": "2609.32811",
+  "arxiv_url": "https://arxiv.org/abs/2609.32811v1",
+  "authors": [
+    "Samet Hicsonmez",
+    "Eray Çakar",
+    "Nermin Samet",
+    "Fatma Güney"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32811",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.442322+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32811v1",
+  "published_at": "2026-09-26T17:35:18Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32811v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "本文提出 PRE-ACT，用逐渐变化的风险曲线预测事故临近程度，而不是仅判断事故是否会发生。该方法结合时间顺序与事故距离信息，在提升事故临近时风险分数的同时减少过早误报，并提出分离评分评估风险曲线的整体行为。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "Progressive Risk Estimation for Accident Anticipation",
+  "title_zh": "渐进式事故预警风险评估",
+  "translation_url": "https://hjfy.top/arxiv/2609.32811"
+}

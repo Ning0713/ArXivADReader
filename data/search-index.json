@@ -1,6 +1,677 @@
 {
-  "generated_at": "2026-09-28T11:25:19.032384+00:00",
+  "generated_at": "2026-09-29T11:06:05.395939+00:00",
   "items": [
+    {
+      "abstract": "Incorporating dense visual information into motion planning remains challenging, as geometric planners rely on abstracted scene representations that discard visual richness, while learned visual models often lack geometric interpretability and computational efficiency. This paper introduces CollisionSplatting, a simple, modular, GPU-accelerated, probability-inspired distance metric with tunable conservatism that operates directly on standard 3D Gaussian Splatting (3DGS) scenes. When combined with learned image-conditioned reward functions, this metric enables joint geometric and visual planning by unifying collision-aware costs with image-space objectives. We integrate the metric into GPU-accelerated Model Predictive Path Integral (MPPI) and Rapidly-Exploring Random Tree (RRT) planners, and show on-par or better collision-classification performance compared to representative baselines while achieving substantially higher collision-checking throughput and significantly lower VRAM usage. Finally, we demonstrate the effectiveness of our metric in real-world vision-guided navigation and manipulation tasks, highlighting 3DGS as a practical bridge between rich perception and real-time motion planning.",
+      "abstract_zh": "将密集视觉信息纳入运动规划仍然具有挑战性，因为几何规划器依赖于抽象的场景表示，这些表示丢弃了视觉丰富性，而学习的视觉模型往往缺乏几何可解释性和计算效率。本文介绍了CollisionSplatting，这是一种简单、模块化、基于概率的距离度量，具有可调的保守性，能够直接在标准的3D高斯点云（3DGS）场景中操作。当与学习的图像条件奖励函数结合时，该度量通过将碰撞感知成本与图像空间目标统一起来，从而实现了几何与视觉的联合规划。我们将该度量集成到GPU加速的模型预测路径积分（MPPI）和快速探索随机树（RRT）规划器中，并展示了与代表性基线相比，碰撞分类性能持平或更优，同时实现了显著更高的碰撞检测吞吐量和显著更低的显存使用。最后，我们展示了该度量在现实世界视觉引导的导航和操作任务中的有效性，强调了3DGS作为丰富感知与实时运动规划之间的实用桥梁。",
+      "authors": [
+        "R. Khorrambakht",
+        "Joaquim Ortiz-Haro",
+        "Stephan Weiss",
+        "Ludovic Righetti"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.35619",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "CollisionSplatting: Collision-Aware Motion Planning in 3DGS Scenes with Image-Conditioned Objectives and Adjustable Conservatism",
+      "title_zh": "CollisionSplatting：在具有图像条件目标和可调保守性的3DGS场景中进行碰撞感知的运动规划",
+      "url": "/daily/2026-09-29/#paper-2609-35619"
+    },
+    {
+      "abstract": "Camera-LiDAR detectors can continue to consume unreliable features even when both sensors remain present, synchronized, and calibrated. We introduce \\emph{Boundary Feature Repair} (BFR), a frozen-host adaptation framework that learns task-supervised residual corrections at modality interfaces the detector already consumes. BFR-C repairs each camera feature level read by fusion, whereas BFR-L aligns host-conditioned LiDAR candidates to a selected boundary and routes site-wise innovations relative to the frozen anchor. Their jointly trained composition is BFR-CL. Zero-initialized per-channel scales make every variant an exact detector-level identity before optimization; only the repair modules train, while the encoders, fusion consumer, router, detection head, and host normalization statistics remain fixed. At inference, BFR requires neither clean references, corruption metadata, temporal history, nor online updates. Across the complete 20-corruption, five-severity KITTI-C grid, BFR-C reduces RCE from $14.07$ to $11.92$ on MVX-Net and from $14.29$ to $11.00$ on Focals Conv-F relative to their reproduced frozen baselines. On the latter host, BFR-L raises AP$_{\\mathrm{cor}}$ from $73.65$ to $74.48$, while BFR-CL reaches $77.01$ AP$_{\\mathrm{cor}}$ and $10.46$ RCE with $86.02$ clean AP. On nuScenes-R, BFR-CL raises the reproduced MoME baseline's mAP robustness ratio from $80.1$ to $81.4$. These results establish boundary repair as a targeted retrofit for corrupted-but-present sensing without retraining the deployed detector.",
+      "abstract_zh": "相机-激光雷达检测器即使在两个传感器都存在、同步且已校准的情况下，仍然可以继续使用不可靠的特征。我们提出了 extit{边界特征修复}（Boundary Feature Repair, BFR）框架，这是一种冻结主机适应框架，能够在检测器已使用的模态接口上学习任务监督的残差修正。BFR-C修复每个由融合读取的相机特征级别，而BFR-L则将主机条件的激光雷达候选对齐到选定的边界，并根据冻结的锚点进行现场创新的路由。它们的联合训练组合为BFR-CL。每个变体在优化前都是零初始化的逐通道尺度，使其成为精确的检测器级别身份；只有修复模块进行训练，而编码器、融合消费者、路由器、检测头和主机归一化统计保持固定。在推理时，BFR不需要干净的参考、损坏元数据、时间历史或在线更新。在完整的20种损坏、五种严重程度的KITTI-C网格上，BFR-C将MVX-Net的RCE从$14.07$降低到$11.92$，将Focals Conv-F的RCE从$14.29$降低到$11.00$，相对于其再现的冻结基线。在后者主机上，BFR-L将AP$_{ ext{cor}}$从$73.65$提升至$74.48$，而BFR-CL则达到了$77.01$的AP$_{ ext{cor}}$和$10.46$的RCE，且干净AP为$86.02$。在nuScenes-R上，BFR-CL将再现的MoME基线的mAP鲁棒性比率从$80.1$提升至$81.4$。这些结果确立了边界修复作为一种针对损坏但存在的传感的有针对性的改造，而无需重新训练已部署的检测器。",
+      "authors": [
+        "Gia-Huy Thai",
+        "Quang-Thinh Ly",
+        "Anh-Minh Phan",
+        "Tuan Dang"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.35264",
+      "tags": [
+        "感知",
+        "多传感器融合",
+        "LiDAR/点云"
+      ],
+      "title": "Repair Before You Fuse: Frozen-Host Adaptation for Corrupted-but-Present Sensors",
+      "title_zh": "修复再融合：针对损坏但存在传感器的冻结主机适应",
+      "url": "/daily/2026-09-29/#paper-2609-35264"
+    },
+    {
+      "abstract": "Future Mars missions will require rover autonomy that can operate across unstructured terrain, changing illumination, atmospheric dust, and limited communication. Simulation is a practical way to study these conditions before deployment, but existing Mars-relevant resources differ in scope, including mission-oriented simulators, fixed analog datasets, task-specific environments, and open robotics interfaces. In this context, we present MarsLab, an open-source, ROS2-native Mars rover simulator for autonomy and navigation algorithm development. MarsLab combines HiRISE-derived and procedural terrain with customizable rock, crater, solar-illumination, and atmospheric-dust settings, and runs a Perseverance-class rover model in NVIDIA Isaac Sim. The runtime publishes RGB, depth, RGB-D point clouds, LiDAR, IMU, wheel odometry, and Ground Truth (GT) pose data through standard ROS2 topics. We demonstrate MarsLab with Simultaneous Localization and Mapping (SLAM) benchmarks across sensing modalities, dust levels, scene geometry, and route length, and with Visual Place Recognition (VPR) benchmarks over repeated Mars Base traversals under illumination and dust changes. The results illustrate how controlled scene variation and shared GT trajectories can be used to compare trajectory-level estimation and image-level place recognition within the same simulator. Our Project Page: https://kimhoyun-robotair.github.io/MarsLab/.",
+      "abstract_zh": "未来的火星任务将需要能够在非结构化地形、变化的光照、气候尘埃和有限通信条件下操作的探测车自主性。模拟是一种在部署前研究这些条件的实用方法，但现有的与火星相关的资源在范围上各不相同，包括以任务为导向的模拟器、固定的类比数据集、特定任务的环境和开放的机器人接口。在此背景下，我们提出了MarsLab，一个开源的、基于ROS2的火星探测车模拟器，用于自主性和导航算法的开发。MarsLab结合了基于HiRISE的和程序生成的地形，具有可定制的岩石、陨石坑、太阳光照和气候尘埃设置，并在NVIDIA Isaac Sim中运行一个与“毅力号”（Perseverance）相当的探测车模型。运行时通过标准的ROS2主题发布RGB、深度、RGB-D点云、激光雷达（LiDAR）、惯性测量单元（IMU）、轮子里程计和真实位姿（Ground Truth, GT）数据。我们通过不同的传感模式、尘埃水平、场景几何和路线长度的同时定位与地图构建（SLAM）基准测试，以及在光照和尘埃变化下重复火星基地穿越的视觉位置识别（VPR）基准测试来演示MarsLab。结果展示了如何利用受控场景变化和共享的GT轨迹在同一模拟器内比较轨迹级估计和图像级位置识别。我们的项目页面：https://kimhoyun-robotair.github.io/MarsLab/",
+      "authors": [
+        "Hoyun Kim",
+        "Beomsu Kim",
+        "Giseop Kim"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.34702",
+      "tags": [
+        "仿真/数据",
+        "地图/定位"
+      ],
+      "title": "MarsLab: A Martian Rover Simulator for Planetary Rover Autonomous Navigation",
+      "title_zh": "MarsLab：一个用于行星探测车自主导航的火星探测车模拟器",
+      "url": "/daily/2026-09-29/#paper-2609-34702"
+    },
+    {
+      "abstract": "Retrieval-augmented generation (RAG) gives vision--language driving systems access to external safety knowledge, yet a retrieved risk rule may be relevant without applying to the current scene. A vision--language model (VLM) receiving such knowledge must ground objects, bind entities across time, and verify relations before deciding how to act, leaving the support for risk conclusions implicit. We address this relevance--applicability gap with a Driving-Risk Knowledge Graph (DRKG) and Semantic Web Rule Language (SWRL) reasoning stage before VLM decision-making. Structured perception instantiates scene facts, from which SWRL rules derive events and directed risk relations when their antecedents are jointly satisfied. Recognized events, bound risk relations, and semantic descriptions of activated rules form compact evidence that conditions the VLM and diffusion planner. In matched comparisons on nuReasoning, our method improved the nuReasoning planning score (NPS) by 1.30 points and the non-at-fault collision score (NC) by 2.76 points over the relevance retrieval-based baseline. These gains indicate that scene-applicable risk evidence improves safety-weighted planning relative to semantically retrieved risk knowledge.",
+      "abstract_zh": "检索增强生成（RAG）为视觉-语言驾驶系统提供了外部安全知识的访问，但检索到的风险规则可能是相关的，却不一定适用于当前场景。接收此类知识的视觉-语言模型（VLM）必须对物体进行定位，跨时间绑定实体，并验证关系，然后才能决定如何行动，这使得风险结论的支持变得隐含。我们通过驾驶风险知识图（DRKG）和语义网规则语言（SWRL）推理阶段来解决这种相关性与适用性之间的差距，进而为VLM的决策提供支持。结构化感知实例化场景事实，从中SWRL规则在其前提共同满足时推导出事件和有向风险关系。被识别的事件、绑定的风险关系以及激活规则的语义描述形成了紧凑的证据，条件化VLM和扩散规划器。在nuReasoning的匹配比较中，我们的方法将nuReasoning规划分数（NPS）提高了1.30分，非过失碰撞分数（NC）提高了2.76分，相较于基于相关性检索的基线。这些提升表明，适用于场景的风险证据相较于语义检索的风险知识改善了安全加权规划。",
+      "authors": [
+        "Jiaxin Liu",
+        "Ruilin Yu",
+        "Liang Peng",
+        "Jingkai Wang",
+        "Chengxiang Zhao",
+        "Zhenxin Zhu",
+        "Bing Wang",
+        "Guang Chen",
+        "Hangjun Ye",
+        "Hong Wang",
+        "Jun Li"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.34145",
+      "tags": [
+        "安全/异常",
+        "预测/规划",
+        "VLM/VLA"
+      ],
+      "title": "Beyond Retrieval Relevance: Scene-Grounded Risk Entailment for Vision-Language Driving",
+      "title_zh": "超越检索相关性：基于场景的风险推理在视觉-语言驾驶中的应用",
+      "url": "/daily/2026-09-29/#paper-2609-34145"
+    },
+    {
+      "abstract": "Refining a sequence of coarse 3D bounding boxes against a LiDAR point-cloud stream demands tracks that are geometrically accurate (high IoU) and temporally coherent (low roughness), preferably without training data. The usual recipe keeps the two concerns apart: register each frame independently, then smooth the trajectory afterwards with a Kalman~RTS or Savitzky--Golay filter. Smoothing displaces boxes from a geometric optimum and never re-optimises, so it trades accuracy for smoothness. We instead fold the temporal smoothness constraint into a training-free registration objective and solve for all poses jointly with L-BFGS. The payoff depends on how well the object is seen. On well-observed tracks it is large: within the low-roughness budget, the joint objective beats both post-hoc smoothers on paired multi-seed statistics and cuts roughness several-fold relative to frame-wise registration at matched accuracy. Treating visibility as an experimental variable exposes the limit. The advantage decays monotonically as views become one-sided, until it is indistinguishable from zero for near-edge-on objects and slightly negative under a ray-cast simulator with range-dependent density and ego motion, where the decoupled pipeline is in fact ahead at tight roughness budgets. We locate that boundary and trace it to one term: orientation alignment ties yaw to the estimated velocity and fails once that estimate is noisy. A ground-truth-free rule can choose the temporal scale and keep every track inside the roughness budget.",
+      "abstract_zh": "对LiDAR点云流进行粗糙3D边界框序列的精细化要求几何上准确的轨迹（高IoU）和时间上连贯的轨迹（低粗糙度），最好不依赖训练数据。通常的方法将这两个问题分开处理：独立地注册每一帧，然后使用卡尔曼~RTS或Savitzky--Golay滤波器对轨迹进行平滑处理。平滑处理会使边界框偏离几何最优解，并且从不重新优化，因此在平滑性和准确性之间进行了权衡。我们则将时间平滑性约束融入无训练数据的注册目标中，并使用L-BFGS联合求解所有姿态。收益取决于物体的可见性。在观察良好的轨迹上，收益很大：在低粗糙度预算内，联合目标在配对多种子统计上优于两种后处理平滑方法，并在匹配准确度的情况下将粗糙度降低了几倍。将可见性视为实验变量揭示了其极限。当视角变得单侧时，优势单调递减，直到对于近边缘物体几乎无法区分为零，并且在具有范围依赖密度和自我运动的光线投射模拟器下略微为负，此时解耦管道在紧凑的粗糙度预算中实际上处于领先地位。我们确定了这一边界，并将其追溯到一个因素：方向对齐将偏航与估计速度联系在一起，并在该估计噪声较大时失败。一个无真实值的规则可以选择时间尺度，并将每个轨迹保持在粗糙度预算内。",
+      "authors": [
+        "Xuesong Li",
+        "Jinguang Tong",
+        "Jie Hong"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.34103",
+      "tags": [
+        "3D 检测",
+        "LiDAR/点云",
+        "感知"
+      ],
+      "title": "A Differentiable Optimization Framework for Registering Sequential Bounding Boxes with Point Cloud Stream",
+      "title_zh": "用于注册顺序边界框与点云流的可微优化框架",
+      "url": "/daily/2026-09-29/#paper-2609-34103"
+    },
+    {
+      "abstract": "Autonomous driving requires \\textit{world models} that can understand the physical world, reason and plan, and operate safely. In this paper, we first systematically evaluate existing action-conditioned joint-embedding predictive architecture (JEPA) world models, including LeWM, DINO-WM, and JEPA-WM for end-to-end autonomous driving (E2EAD). To isolate world-model quality from policy learning, we employ a goal-conditioned zero-shot planning setting that evaluates these models using ground-truth future observations as goals, without training any driving policy. We find that existing JEPA-based world models are either accurate for driving but computationally expensive, or computationally efficient but insufficient for planning. To address this trade-off, we propose \\textbf{AD-E2E-JEPA}, which introduces a SIGReg-regularized learnable projector applied to projected patch embeddings. The projector reduces the number of planning patches by $16\\times$ and the embedding dimension by $4\\times$, achieving a $100\\times$ inference speedup while retaining planning performance, with a 0.8-second runtime for an 8-frame rollout over 256 candidate trajectories. \\textit{Without} training any driving policy, the world model itself reaches the goals located 20 meters away on average within the displacement of respectively 4.0/2.8 meters, using world-model rollouts over trajectory vocabularies of respectively 256/8,192 candidates. On the NAVSIMv2 benchmark, it achieves 67.3/72.9 EPDMS with multiplicative safety metrics and 84.1/86.5 EPDMS$^{\\dagger}$ without them in goal-conditioned zero-shot planning. Experiments further show that the self-supervised pretrained projector improves downstream imitation learning performance from 80.2 to 85.4 EPDMS. The source code is available at https://github.com/HaoranZhuExplorer/AD-E2E-JEPA",
+      "abstract_zh": "自主驾驶需要能够理解物理世界、进行推理和规划并安全操作的 extit{世界模型}。在本文中，我们首先系统性地评估现有的基于动作条件的联合嵌入预测架构（JEPA）世界模型，包括LeWM、DINO-WM和JEPA-WM，以用于端到端自主驾驶（E2EAD）。为了将世界模型的质量与策略学习隔离，我们采用了一种目标条件的零样本规划设置，该设置使用真实未来观测作为目标来评估这些模型，而不训练任何驾驶策略。我们发现现有的基于JEPA的世界模型要么在驾驶上准确但计算成本高，要么计算效率高但规划能力不足。为了解决这一权衡问题，我们提出了 extbf{AD-E2E-JEPA}，该模型引入了一种应用于投影补丁嵌入的SIGReg正则化可学习投影器。该投影器将规划补丁的数量减少了$16 imes$，将嵌入维度减少了$4 imes$，在保持规划性能的同时，实现了$100 imes$的推理加速，对于256条候选轨迹的8帧展开，其运行时间为0.8秒。 extit{在不}训练任何驾驶策略的情况下，世界模型本身在平均位移分别为4.0/2.8米的情况下，能够达到距离20米的目标，使用的世界模型展开分别为256/8,192条轨迹词汇。在NAVSIMv2基准测试中，它在目标条件的零样本规划中实现了67.3/72.9的EPDMS，使用乘法安全指标时为84.1/86.5 EPDMS$^{ extdagger}$。实验进一步表明，自监督预训练的投影器将下游模仿学习性能从80.2提升至85.4 EPDMS。源代码可在https://github.com/HaoranZhuExplorer/AD-E2E-JEPA获取。",
+      "authors": [
+        "Haoran Zhu",
+        "Wancong Zhang",
+        "Yann LeCun",
+        "Anna Choromanska"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.34085",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "安全/异常"
+      ],
+      "title": "AD-E2E-JEPA: A Joint-Embedding Predictive Architecture For End-to-End Autonomous Driving",
+      "title_zh": "AD-E2E-JEPA：一种用于端到端自主驾驶的联合嵌入预测架构",
+      "url": "/daily/2026-09-29/#paper-2609-34085"
+    },
+    {
+      "abstract": "Tracking any point of a dynamic scene in metric 3D - in absolute meters, not up to an unknown scale - underpins 3D and 4D reconstruction, robot navigation, and autonomous driving, where decisions are made in meters, not pixels. Our objective is a 3D point tracker accurate in those absolute terms and operating within a single commodity GPU, pose-free, monocular budget. Our method rests on one observation: once a point's 2D image trajectory is fixed, the quantity that governs its metric accuracy is the depth along its pixel ray. Rather than learning tracking end-to-end, we therefore compose two frozen front-ends - dense optical flow for 2D correspondence and a monocular metric-depth network for the third dimension - and learn only the residual they cannot supply: that depth, refined by a compact state space model (Mamba-3) conditioned on appearance features (DINOv3). A state space model rather than the transformers the strongest 3D trackers adopt is what makes a single-GPU budget attainable: it summarises a track in a fixed-size recurrent state whose memory cost is constant in the number of frames, whereas attention requires a key-value cache that grows linearly with them. On the TAPVid-3D minival benchmark our best configuration attains the highest absolute metric accuracy among methods evaluated under identical conditions (mean metric Average Jaccard, 0.256), exceeding strong feed-forward trackers, while a companion analysis, reproduced with each competitor's own evaluator, explains why several published trackers lose most of their accuracy under this budget.",
+      "abstract_zh": "在绝对米制下（而非未知尺度下）跟踪动态场景中的任意点是三维和四维重建、机器人导航和自主驾驶的基础，其中决策是以米为单位，而非像素。我们的目标是开发一个在这些绝对条件下准确的三维点跟踪器，并且能够在单个普通GPU的、无需姿态估计的单目预算下运行。我们的方法基于一个观察：一旦一个点的二维图像轨迹被固定，决定其度量准确性的量是沿着其像素光线的深度。因此，我们并不是端到端地学习跟踪，而是组合两个固定的前端——用于二维对应的稠密光流和用于第三维的单目度量深度网络——并仅学习它们无法提供的残差：即由基于外观特征（DINOv3）条件化的紧凑状态空间模型（Mamba-3）细化的深度。选择状态空间模型而非当前最强三维跟踪器所采用的变换器，使得单GPU预算成为可能：它以固定大小的递归状态总结一个轨迹，其内存成本在帧数上是恒定的，而注意力机制则需要一个随着帧数线性增长的键值缓存。在TAPVid-3D minival基准测试中，我们的最佳配置在相同条件下评估的方法中达到了最高的绝对度量准确性（平均度量Jaccard为0.256），超越了强大的前馈跟踪器。同时，伴随的分析通过每个竞争者自己的评估器重现，解释了为什么一些已发布的跟踪器在该预算下失去了大部分准确性。",
+      "authors": [
+        "Masahiro Ogawa",
+        "Qi An",
+        "Atsushi Yamashita"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.34035",
+      "tags": [
+        "深度/几何",
+        "预测/规划",
+        "端到端驾驶"
+      ],
+      "title": "3D Point Tracking with State Space Models",
+      "title_zh": "基于状态空间模型的三维点跟踪",
+      "url": "/daily/2026-09-29/#paper-2609-34035"
+    },
+    {
+      "abstract": "This paper proposes a residual learning-based control framework for heterogeneous vehicle platoons subject to parametric uncertainty and external disturbances. A nominal controller designed via Linear Matrix Inequalities (LMIs), along with disturbance-observer compensation, is enhanced by a Recurrent Equilibrium Network (REN) trained offline using stored trajectories and nominal-model prediction errors. The REN is constrained to satisfy a prescribed $\\ell_2$-gain bound, enabling sufficient small-gain conditions for local closed-loop stability and disturbance string stability. Experiments demonstrate reduced spacing and velocity errors relative to the nominal controller.",
+      "abstract_zh": "本文提出了一种基于残差学习的控制框架，适用于受参数不确定性和外部干扰影响的异构车辆编队。通过线性矩阵不等式（Linear Matrix Inequalities, LMIs）设计的名义控制器，结合干扰观测器补偿，利用离线训练的递归平衡网络（Recurrent Equilibrium Network, REN）进行增强，该网络使用存储的轨迹和名义模型预测误差进行训练。REN被约束以满足规定的 $ ext{l}_2$ 增益界限，从而实现局部闭环稳定性和干扰串稳定性的充分小增益条件。实验结果表明，相较于名义控制器，所提方法在间距和速度误差方面有显著降低。",
+      "authors": [
+        "Brian Delgado",
+        "Anh-Tu Nguyen",
+        "Hamid Taghavifar"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.33892",
+      "tags": [
+        "预测/规划",
+        "协同/V2X"
+      ],
+      "title": "Residual Learning-Based Control of Vehicle Platoons with $\\ell_2$ Stability Guarantees via Recurrent Equilibrium Networks",
+      "title_zh": "基于残差学习的车辆编队控制方法：通过递归平衡网络实现 $ ext{l}_2$ 稳定性保证",
+      "url": "/daily/2026-09-29/#paper-2609-33892"
+    },
+    {
+      "abstract": "Driving policies require capabilities of scene understanding and future evolution prediction. To achieve this goal, current end-to-end models typically construct complex perception-planning pipelines or introduce world models that explicitly predict future states, resulting in a complex system architecture. Inspired by the transferability of general-purpose visual representations, we argue that combining sufficiently strong visual representations with representation world modeling can support effective planning without relying on complex inference-time auxiliary modules. Based on this insight, we present ReDrive, an end-to-end driving framework that strengthens planning-oriented visual features via future representation prediction. To achieve this, ReDrive adopts a three-stage training pipeline consisting of driving video pretraining, joint world-modeling and planning training, and planner adaptation. This yields a strong planning-oriented representation and a high-performance planner, while requiring neither auxiliary perception modules nor future prediction at inference time. Experiments on NAVSIM demonstrate strong performance, achieving 91.0 PDMS on NAVSIM v1 and 90.8 EPDMS on NAVSIM v2. These results show that shaping representations with world modeling is sufficient to enable high-performance end-to-end planning while retaining a simple encoder-planner inference pipeline.",
+      "abstract_zh": "驾驶策略需要具备场景理解和未来演变预测的能力。为实现这一目标，目前的端到端模型通常构建复杂的感知-规划管道或引入明确预测未来状态的世界模型，从而导致复杂的系统架构。受到通用视觉表征可迁移性的启发，我们认为将足够强大的视觉表征与表征世界建模相结合，可以支持有效的规划，而无需依赖复杂的推理时辅助模块。基于这一见解，我们提出了ReDrive，一个端到端驾驶框架，通过未来表征预测增强规划导向的视觉特征。为此，ReDrive采用了一个三阶段的训练管道，包括驾驶视频预训练、联合世界建模与规划训练，以及规划器适应。这产生了一个强大的规划导向表征和高性能的规划器，同时在推理时既不需要辅助感知模块，也不需要未来预测。在NAVSIM上的实验表明了强大的性能，在NAVSIM v1上达到了91.0 PDMS，在NAVSIM v2上达到了90.8 EPDMS。这些结果表明，通过世界建模塑造表征足以实现高性能的端到端规划，同时保持简单的编码器-规划器推理管道。",
+      "authors": [
+        "Yueting Zhu",
+        "Shaoyu Chen",
+        "Yuehao Song",
+        "Hui Sun",
+        "Qian Zhang",
+        "Wenyu Liu",
+        "Xinggang Wang"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.33854",
+      "tags": [
+        "预测/规划",
+        "感知",
+        "端到端驾驶"
+      ],
+      "title": "ReDrive: Shaping Representations with World Modeling for End-to-End Driving",
+      "title_zh": "ReDrive：通过世界建模塑造表征以实现端到端驾驶",
+      "url": "/daily/2026-09-29/#paper-2609-33854"
+    },
+    {
+      "abstract": "Motorized two-wheelers (MTW) dominate Indian roads but remain underrepresented in driver behavior research. This study presents the first large-scale analysis of MTW driver gaze behavior in naturalistic, heterogeneous urban traffic, using the \\textit{myEye2Wheeler} dataset. A semantic segmentation pipeline (YOLOv11 + SAM2) was used to extract object-level gaze metrics under two attention modes: direct gaze (foveal overlap) and central vision (parafoveal monitoring). Results reveal a functional division: central vision supports broad monitoring, while direct gaze enables brief, selective sampling. Novice riders exhibit road-anchored scanning, returning to the road between object fixations, while experienced riders form longer chains of attention across multiple objects. The findings suggest that experience primarily refines temporal rhythm rather than altering allocation strategy and reduces object-class effects in gaze patterns. These findings offer new insight into MTW attention structures and inform future work on behavior modeling and safety systems.",
+      "abstract_zh": "机动车两轮车（MTW）在印度道路上占据主导地位，但在驾驶行为研究中仍然被低估。本研究首次对自然环境中异质城市交通中的MTW驾驶者注视行为进行了大规模分析，使用了 extit{myEye2Wheeler}数据集。采用语义分割管道（YOLOv11 + SAM2）提取了在两种注意模式下的对象级注视指标：直接注视（中央重叠）和中央视觉（旁中央监测）。结果揭示了功能上的划分：中央视觉支持广泛监测，而直接注视则使得短暂的选择性采样成为可能。新手骑行者表现出以道路为锚点的扫描行为，在对象注视之间回归道路，而经验丰富的骑行者则在多个对象之间形成更长的注意链。这些发现表明，经验主要是精炼时间节奏，而不是改变分配策略，并减少了注视模式中对象类别的影响。这些发现为MTW注意结构提供了新的见解，并为未来的行为建模和安全系统研究提供了参考。",
+      "authors": [
+        "Prerak Srivastava",
+        "Bhaiya Vaibhaw Kumar",
+        "Kavita Vemuri"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.33811",
+      "tags": [
+        "安全/异常"
+      ],
+      "title": "Eyes on the Road: A Naturalistic Comparison of MTW Rider Gaze in Urban Indian Traffic",
+      "title_zh": "关注道路：城市印度交通中摩托车骑行者注视行为的自然比较",
+      "url": "/daily/2026-09-29/#paper-2609-33811"
+    },
+    {
+      "abstract": "Long-horizon planning enables autonomous vehicles to anticipate scene evolution and potential risks, supporting safe and stable decisions in complex interactions. However, existing methods struggle to propagate motion trends from observed history into the future. Long rollouts based on a single latent state may further attenuate useful dynamics, retain stale motion patterns, and disrupt reliable near-term plans. We introduce MomWorld, a momentum-aware latent world model for long-horizon planning. MomWorld extracts scene motion trends from historical-to-current observations and propagates latent momentum into future horizons, jointly predicting future configuration and momentum states. A learnable momentum persistence mechanism preserves stable trends, scene-conditioned momentum updates adapt future dynamics, and a scene-adaptive reset gate suppresses stale momentum under abrupt changes. We further propose MoFlow, a momentum-conditioned flow-matching module that refines a base trajectory to align with the predicted future scene evolution in only a few integration steps, with a horizon-aware residual fusion that preserves near-term planning stability while permitting stronger long-range corrections. Extensive experiments on NAVSIM, nuScenes and Bench2Drive demonstrate that MomWorld improves long-horizon planning consistency and reduces the average collision rate by 12.2% relative to MomAD over a 6-second planning horizon.",
+      "abstract_zh": "长时间规划使自主车辆能够预测场景演变和潜在风险，从而在复杂交互中支持安全和稳定的决策。然而，现有方法在将观察历史中的运动趋势传播到未来方面存在困难。基于单一潜在状态的长时间展开可能进一步削弱有用的动态，保留过时的运动模式，并干扰可靠的短期计划。我们提出了MomWorld，一种面向长时间规划的动量感知潜在世界模型。MomWorld从历史到当前的观察中提取场景运动趋势，并将潜在动量传播到未来的时间范围，联合预测未来的配置和动量状态。可学习的动量持续机制保持稳定趋势，场景条件下的动量更新适应未来动态，而场景自适应重置门在突变情况下抑制过时动量。我们进一步提出了MoFlow，一种动量条件流匹配模块，它在仅需少量整合步骤的情况下，细化基础轨迹以与预测的未来场景演变对齐，并通过时间感知的残差融合保持短期规划的稳定性，同时允许更强的长距离修正。在NAVSIM、nuScenes和Bench2Drive上的大量实验表明，MomWorld提高了长时间规划的一致性，并相对于MomAD在6秒的规划范围内将平均碰撞率降低了12.2%。",
+      "authors": [
+        "Ziying Song",
+        "Shengkai Zhang",
+        "Lei Yang",
+        "Haozhuang Chi",
+        "Yuchen Liu",
+        "Jiangtao Su",
+        "Lin Liu",
+        "Ziyang Liu",
+        "Chen Lv"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.33737",
+      "tags": [
+        "预测/规划",
+        "感知",
+        "多传感器融合"
+      ],
+      "title": "MomWorld: Momentum-Aware Latent World Model for Long-Horizon Autonomous Driving",
+      "title_zh": "MomWorld：面向长时间自主驾驶的动量感知潜在世界模型",
+      "url": "/daily/2026-09-29/#paper-2609-33737"
+    },
+    {
+      "abstract": "Manual dense annotation remains a major obstacle to deploying semantic segmentation models in new driving environments. Active domain adaptation (ADA) seeks label-efficient transfer by annotating only a selected portion of the target domain. Existing ADA methods commonly implement this process through multiple rounds of acquisition, annotation, and retraining. We study a practical one-shot image-level setting that selects and densely annotates a fixed target subset in a single round, followed by uninterrupted adaptation. Within this setting, we develop Target-Calibrated Active Domain Adaptation (TC-ADA) as a joint design of complete-image acquisition and target-calibrated adaptation. Stage~1 uses visual representations from a vision foundation model (VFM) together with semantic predictions from a fixed unsupervised domain adaptation model to select representative and informative target images without target annotations. Stage~2 jointly uses labeled source data, labeled target data, and the remaining unlabeled target data, while calibrating source and target supervision under limited target labels. Extensive experiments across five synthetic-to-real and real-to-real driving transfers show consistent improvements over representative ADA baselines. With only 23 to 46 labeled target images on four transfers and 140 on Mapillary, TC-ADA stays within 1.9 mean intersection over union (mIoU) points of target-only full supervision. Code will be available at https://github.com/ywher/TC-ADA.",
+      "abstract_zh": "手动密集标注仍然是将语义分割模型部署到新驾驶环境中的主要障碍。主动领域适应（ADA）通过仅对目标领域的选定部分进行标注，寻求标签高效的迁移。现有的ADA方法通常通过多轮获取、标注和再训练来实现这一过程。我们研究了一种实用的一次性图像级设置，该设置在单轮中选择并密集标注固定的目标子集，随后进行不间断的适应。在这一设置中，我们开发了目标校准主动领域适应（TC-ADA），作为完整图像获取和目标校准适应的联合设计。第一阶段使用来自视觉基础模型（VFM）的视觉表示以及来自固定无监督领域适应模型的语义预测，以在没有目标标注的情况下选择具有代表性和信息量的目标图像。第二阶段共同使用标注的源数据、标注的目标数据和剩余的未标注目标数据，同时在有限的目标标签下校准源和目标监督。在五个合成到真实和真实到真实的驾驶迁移中的广泛实验表明，相较于代表性的ADA基线，TC-ADA consistently shows consistent improvements。仅在四个迁移中使用23到46个标注的目标图像以及在Mapillary上使用140个，TC-ADA的平均交并比（mIoU）仅比目标仅全监督低1.9个点。代码将可在https://github.com/ywher/TC-ADA获取。",
+      "authors": [
+        "Weihao Yan",
+        "Yeqiang Qian",
+        "Yueyuan Li",
+        "Tao Li",
+        "Chunxiang Wang",
+        "Ming Yang"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.33432",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "TC-ADA: One-Shot Active Domain Adaptation for Semantic Segmentation",
+      "title_zh": "TC-ADA：用于语义分割的一次性主动领域适应",
+      "url": "/daily/2026-09-29/#paper-2609-33432"
+    },
+    {
+      "abstract": "Video world models are emerging as data engines, action planners, and generative simulators for autonomous driving, but existing benchmarks primarily assess visual fidelity and coarse physical plausibility, providing limited evidence on whether generated driving futures obey realistic vehicle kinematics and dynamics. This limitation is further compounded by the lack of datasets in which vehicle, road, maneuver, and speed conditions are independently controlled, and ground-truth vehicle states are recorded in synchrony with videos. We introduce VehDyn, a driving world model benchmark for vehicle dynamics. VehDyn is built on a CARLA-CarSim co-simulation platform where photorealistic rendering is coupled with a validated multi-body dynamics model, and it contains 10,080 configurations from a full factorial design over five vehicle types, four tire-road friction coefficients, three maneuvers, four target speeds, 14 scenes, and three illuminations, each paired with synchronized position, velocity, and attitude sequences. Built on this dataset, VehDyn introduces a hierarchical evaluation framework that measures trajectory alignment, kinematic consistency, and dynamic consistency, and benchmarks 12 state-of-the-art video world models. We further assess the video quality using two established protocols and correlate it with the VehDyn score. Trajectory-level metrics are nearly saturated, with ten of twelve models within 20\\% of ground truth, while no model reaches 92\\% of ground truth on dynamic consistency, and visual-quality metrics are only weakly correlated with vehicle-dynamics fidelity. DrivingWorld achieves the highest VehDyn score, followed by Cosmos 3 Nano and LTX-Video 2.5, and the VehDyn score agrees closely with human judgment. VehDyn provides a systematic foundation for developing driving world models that are physically consistent and visually realistic.",
+      "abstract_zh": "视频世界模型正在成为自动驾驶的数据引擎、行动规划者和生成模拟器，但现有基准主要评估视觉逼真度和粗略的物理合理性，提供的证据有限，无法判断生成的驾驶未来是否遵循现实的车辆运动学和动力学。这一局限性进一步加剧，原因在于缺乏能够独立控制车辆、道路、机动和速度条件的数据集，并且地面真实车辆状态与视频同步记录。我们介绍了VehDyn，一种用于车辆动力学的驾驶世界模型基准。VehDyn建立在CARLA-CarSim协同仿真平台上，其中光线逼真的渲染与经过验证的多体动力学模型相结合，包含来自五种车辆类型、四种轮胎-道路摩擦系数、三种机动、四种目标速度、14个场景和三种光照条件的10,080种配置，每种配置都配有同步的位置、速度和姿态序列。在此数据集的基础上，VehDyn引入了一个分层评估框架，用于测量轨迹对齐、运动学一致性和动力学一致性，并对12种最先进的视频世界模型进行基准测试。我们进一步使用两种已建立的协议评估视频质量，并将其与VehDyn评分相关联。轨迹级别的指标几乎达到饱和，12种模型中有十种在动态一致性上与地面真实值相差20 ext{%}以内，但没有模型在动态一致性上达到92 ext{%}的地面真实值，而视觉质量指标与车辆动力学的逼真度仅呈弱相关。DrivingWorld获得了最高的VehDyn评分，其次是Cosmos 3 Nano和LTX-Video 2.5，VehDyn评分与人类判断高度一致。VehDyn为开发在物理上一致且视觉上真实的驾驶世界模型提供了系统性的基础。",
+      "authors": [
+        "Tianyi Wang",
+        "Wangsheng Du",
+        "Jiazhou Chen",
+        "Tianyi Zeng",
+        "Xiangyu Li",
+        "Jiseop Byeon",
+        "Yujin Wang",
+        "Yiming Xu",
+        "Yangyang Wang",
+        "Bingzhao Gao",
+        "Sikai Chen",
+        "Zhaomiao Guo",
+        "Junfeng Jiao",
+        "Christian Claudel",
+        "Alexandre Bayen"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.33264",
+      "tags": [
+        "仿真/数据",
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "VehDyn: A Driving World Model Benchmark for Vehicle Dynamics",
+      "title_zh": "VehDyn：一种用于车辆动力学的驾驶世界模型基准",
+      "url": "/daily/2026-09-29/#paper-2609-33264"
+    },
+    {
+      "abstract": "FMCW LiDAR measures per-point radial Doppler velocity alongside range, providing a motion cue unavailable in conventional time-of-flight sensors. Exploiting this signal at long range remains understudied. We present an FMCW LiDAR dataset of 575 sequences (57.5K frames) with over 8 million annotated 3D boxes across 16 detection classes and per-point labels across 24 semantic classes, captured by six commercial FMCW LiDAR sensors and six paired 4K cameras across eight Bay Area cities, including 237 nighttime sequences, with annotations extending to 400m. We define a benchmark with three tasks: 3D object detection, scene flow estimation, and semantic segmentation. Detection and scene flow are evaluated across three range bins to 400m, with a public evaluation server. We explore the impact of Doppler measurements on flagship recognition tasks, and find significant improvements up to 2X in detection AP of far-away vehicles and pedestrians, particularly in low-latency single-frame settings. We similarly find scene flow accuracy is significantly improved with Doppler measurements across all ranges. Our dataset and benchmark have been publicly released at https://scenes.aeva.com.",
+      "abstract_zh": "FMCW LiDAR在测量每个点的径向多普勒速度的同时提供了距离信息，这为传统的飞行时间传感器所无法提供的运动线索。利用这一信号进行长距离感知的研究仍然较少。我们呈现了一个FMCW LiDAR数据集，包含575个序列（57.5K帧），在16个检测类别中标注了超过800万个3D框，并在24个语义类别中提供了每点标签。该数据集由六个商业FMCW LiDAR传感器和六个配对的4K摄像头在八个旧金山湾区城市捕获，包括237个夜间序列，标注范围延伸至400米。我们定义了一个基准测试，包含三个任务：3D物体检测、场景流估计和语义分割。在三个范围区间内（最高至400米）评估检测和场景流，并设立了公共评估服务器。我们探讨了多普勒测量对主要识别任务的影响，发现远处车辆和行人的检测平均精度（AP）显著提高，最高可达2倍，尤其是在低延迟的单帧设置中。我们同样发现，所有范围内的场景流准确性在有多普勒测量的情况下显著提高。我们的数据集和基准测试已在 https://scenes.aeva.com 上公开发布。",
+      "authors": [
+        "Gautham Narayan Narasimhan",
+        "Heethesh Vhavle",
+        "Kumar Bhargav Viswanatha",
+        "James Reuther",
+        "Deva Ramanan"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.33230",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "LiDAR/点云"
+      ],
+      "title": "AevaScenes: An FMCW LiDAR Dataset and Benchmark for Long-Range Perception",
+      "title_zh": "AevaScenes：一种用于长距离感知的FMCW LiDAR数据集和基准测试",
+      "url": "/daily/2026-09-29/#paper-2609-33230"
+    },
+    {
+      "abstract": "Driving decisions depend on both where to focus and how to act on what is seen. Effective driving reasoning must establish which objects matter, where they are, and how they inform the intended action. Text-based rationales can describe a driving response while leaving its correspondence to specific visual evidence implicit. Visual focus provides a concrete starting point for this connection by identifying what matters in the scene and where it is. We propose FocusDrive, a structured multimodal reasoning framework that organizes end-to-end planning around explicit visual focus. It pairs descriptions of decision-relevant objects with image-patch references, bringing explicit visual focus into the reasoning that generates driving plans and trajectories. We first assess this focus representation through driver gaze prediction, then investigate its role in planning reasoning using driving-focus annotations within existing NAVSIM training scenes. Experiments on W3DA and NAVSIM demonstrate competitive gaze prediction and end-to-end planning performance, with FocusDrive improving over text-based chain-of-thought. These results support visual focus as an effective link between scene understanding and driving action.",
+      "abstract_zh": "驾驶决策依赖于关注的对象以及如何对所见进行反应。有效的驾驶推理必须确定哪些对象重要、它们的位置以及它们如何影响预期的行动。基于文本的推理可以描述驾驶反应，但其与特定视觉证据的对应关系往往是隐含的。视觉焦点为这一联系提供了一个具体的起点，通过识别场景中重要的内容及其位置。我们提出了FocusDrive，一个结构化的多模态推理框架，围绕显式视觉焦点组织端到端的规划。它将与决策相关的对象描述与图像块引用相结合，将显式视觉焦点引入生成驾驶计划和轨迹的推理中。我们首先通过驾驶员注视预测评估这一焦点表示，然后利用现有NAVSIM训练场景中的驾驶焦点注释研究其在规划推理中的作用。在W3DA和NAVSIM上的实验表明，FocusDrive在注视预测和端到端规划性能上表现出竞争力，且优于基于文本的思维链。这些结果支持视觉焦点作为场景理解与驾驶行动之间有效的联系。",
+      "authors": [
+        "Zhiyuan Liu",
+        "Zehong Ke",
+        "Yuanxin Tian",
+        "Hao Cheng",
+        "Jinhao Li",
+        "Yining Xing",
+        "Yanbo Jiang",
+        "Zhenhua Xu",
+        "Wenhao Yu",
+        "Jianqiang Wang"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.33190",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "世界模型/生成"
+      ],
+      "title": "FocusDrive: Reasoning with Visual Focus for Autonomous Driving",
+      "title_zh": "FocusDrive：基于视觉焦点的自主驾驶推理",
+      "url": "/daily/2026-09-29/#paper-2609-33190"
+    },
+    {
+      "abstract": "Predicting how drivers, vehicles, and road scenes interact and evolve together is central to driver monitoring. Prior work models in-cabin activity or traffic-conditioned driver motion in isolation, motivating joint driver, vehicle, and road modeling with real-time on-vehicle evaluation. We introduce TriDrive, to our knowledge the first unified framework that jointly forecasts driver kinematics, vehicle dynamics, and road demands through an automation-conditioned transition model. Modality-specific encoders (an anchored kinematic representation of the driver, causal CAN-bus dynamics, and frozen V-JEPA 2 road latents with structured road margins) are connected by directed residual connections through which driver and road context refine vehicle forecasts. We evaluate TriDrive on three downstream tasks. On the public AIDE benchmark, its kinematic encoder recipe sets a new full-set state of the art (SOTA) among published baselines (48.05 versus 71.47 All-MPJPE). On 197.2 hours of naturalistic BATON subset, directed connections and road margins raise assistance-engaged PR-AUC by 0.084 for steering onset and 0.286 for time-to-collision drops. For real-time use, we distill the road encoders and run TriDrive on a comma four with an external 8 GB GPU, where a lightweight current-state warning probe updates at 5 Hz with 177 ms p95 latency while the joint model forecasts concurrently. The probe is above an openpilot-based baseline on human-labeled manual-driving warnings (AUROC 0.725 versus 0.563), and in a paired on-road study 14 drivers rate its warnings as more appropriate (+1.79) and timely (+2.67) than those of openpilot's driver-monitoring system.",
+      "abstract_zh": "预测驾驶员、车辆和道路场景如何相互作用并共同演变是驾驶员监控的核心。以往的研究通常孤立地建模车内活动或交通条件下的驾驶员运动，这促使我们提出联合驾驶员、车辆和道路建模，并进行实时车载评估。我们介绍了TriDrive，这是我们所知的第一个统一框架，通过自动化条件下的转移模型联合预测驾驶员运动学、车辆动力学和道路需求。特定模态的编码器（驾驶员的锚定运动学表示、因果CAN总线动力学以及带有结构化道路边界的冻结V-JEPA 2道路潜变量）通过有向残差连接相连，驾驶员和道路上下文通过这些连接来优化车辆预测。我们在三个下游任务上评估了TriDrive。在公共AIDE基准测试中，其运动学编码器的配方在已发布的基线中设定了新的全集状态的最佳（SOTA）记录（48.05对比71.47 All-MPJPE）。在197.2小时的自然驾驶BATON子集中，有向连接和道路边界使得转向开始的协助参与PR-AUC提高了0.084，碰撞时间下降的PR-AUC提高了0.286。为了实现实时使用，我们提炼了道路编码器，并在配备外部8 GB GPU的comma four上运行TriDrive，其中轻量级的当前状态警告探针以5 Hz的频率更新，具有177毫秒的p95延迟，同时联合模型同时进行预测。该探针在人工标注的手动驾驶警告上优于基于openpilot的基线（AUROC 0.725对比0.563），在一项配对的道路研究中，14名驾驶员评价其警告比openpilot的驾驶员监控系统更合适（+1.79）和及时（+2.67）。",
+      "authors": [
+        "Yuhang Wang",
+        "Jingxin Yang",
+        "Chuheng Wei",
+        "Yuechen Guo",
+        "Jinghan Xu",
+        "Zhao Han",
+        "Hao Zhou"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.33000",
+      "tags": [
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "TriDrive: Joint Driver, Vehicle, and Road Modeling for Forecasting and Driver Monitoring",
+      "title_zh": "TriDrive：联合驾驶员、车辆和道路建模用于预测和驾驶员监控",
+      "url": "/daily/2026-09-29/#paper-2609-33000"
+    },
+    {
+      "abstract": "Wildlife-vehicle collisions remain a significant road safety concern, particularly during nighttime and low-visibility conditions when RGB-based perception systems are often unreliable. Thermal imaging offers a promising alternative for detecting animals under poor illumination. However, the limited availability of annotated infrared animal datasets restricts the development of robust deep learning-based detection models. This paper investigates synthetic thermal image generation as a scalable approach for real-time animal detection under low-visibility conditions. A subset of 514 annotated visible-spectrum animal images from the NTLNP dataset is translated into synthetic thermal representations using CycleGAN-Turbo, while a limited real thermal dataset of 60 images is expanded through thermal-focused augmentation. Multiple object detection architectures, including YOLOv8, YOLOv9, YOLOv10, and RT-DETR, are trained independently on synthetic and real thermal datasets and evaluated using precision, recall, [email protected] , [email protected] :0.95, model size, and inference latency. Experimental results show that synthetic thermal images provide competitive detection performance, with RT-DETR achieving the highest synthetic-data [email protected] of 0.9613. Models trained on augmented real thermal data achieve the strongest overall performance, with YOLOv10s obtaining 0.9879 [email protected] and 0.9571 [email protected] :0.95. Computational analysis further indicates that lightweight YOLO variants provide favorable inference latency, supporting their potential for real-time deployment. These findings demonstrate that synthetic thermal imagery can reduce dependence on scarce infrared datasets and support the development of efficient animal detection systems for future vehicle-mounted wildlife collision mitigation applications.",
+      "abstract_zh": "野生动物与车辆的碰撞仍然是一个重要的道路安全问题，尤其是在夜间和低能见度条件下，基于RGB的感知系统往往不可靠。热成像为在光照不足的情况下检测动物提供了一种有前景的替代方案。然而，标注的红外动物数据集的有限可用性限制了基于深度学习的检测模型的开发。本文研究了合成热图像生成作为一种可扩展的方法，用于在低能见度条件下进行实时动物检测。我们从NTLNP数据集中提取了514幅标注的可见光谱动物图像，并使用CycleGAN-Turbo将其转换为合成热表示，同时通过热成像专注的增强扩展了一个有限的真实热数据集，包含60幅图像。包括YOLOv8、YOLOv9、YOLOv10和RT-DETR在内的多种目标检测架构分别在合成和真实热数据集上进行训练，并使用精确度、召回率、 [email protected] 、 [email protected] :0.95、模型大小和推理延迟进行评估。实验结果表明，合成热图像提供了具有竞争力的检测性能，其中RT-DETR在合成数据上达到最高的 [email protected] 为0.9613。基于增强真实热数据训练的模型表现出最强的整体性能，YOLOv10s获得了0.9879的 [email protected] 和0.9571的 [email protected] :0.95。计算分析进一步表明，轻量级的YOLO变体提供了良好的推理延迟，支持其在实时部署中的潜力。这些发现表明，合成热成像可以减少对稀缺红外数据集的依赖，并支持未来车辆安装的野生动物碰撞缓解应用中高效动物检测系统的发展。",
+      "authors": [
+        "James Momoh",
+        "Khandaker Mamun Ahmed"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32944",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Synthetic Thermal Image Generation for Real-Time Animal Detection Under Low-Visibility Conditions",
+      "title_zh": "低能见度条件下实时动物检测的合成热图像生成",
+      "url": "/daily/2026-09-29/#paper-2609-32944"
+    },
+    {
+      "abstract": "Vehicle-to-Vehicle (V2V) cooperative perception enhances autonomous driving by enabling vehicles to share information beyond their direct line of sight. However, existing V2V datasets are limited by a small number of participating agents, static collaborator selection strategies, and a significant domain gap between simulated and real-world environments. To overcome these challenges, we introduce SV2V-RSim, a large-scale, multi-modal, near-realistic simulation dataset engineered to elevate agent diversity and realism. Additionally, we present the Select Vehicles Adaptively (SVA) module, which optimizes collaborator selection to balance perception performance against communication bandwidth constraints. Our dataset is generated using the Unreal Engine 5-based simulator that integrates high-fidelity 3D assets, diverse environments, and intricate traffic scenarios. All vehicles within a specified range of the ego vehicle are equipped with sensor suites, enabling dynamic and adaptive collaborator selection. SV2V-RSim encompasses four maps, four weather conditions, six time periods from sunrise to night, 203K LiDAR frames, 402K RGB frames, and 788K annotated 3D bounding boxes across 17 object classes, supporting a range of cooperative perception tasks such as 3D object detection, segmentation, and depth estimation. Benchmarking on recent cooperative perception algorithms demonstrates that SVA achieves a superior performance-bandwidth trade-off, while sim-to-real experiments and No-Reference Image Quality Assessment validate the dataset's high realism and practical effectiveness. Our dataset and code will be publicly available.",
+      "abstract_zh": "车对车（V2V）协作感知通过使车辆能够共享超出其直接视线的信息，从而增强了自主驾驶。然而，现有的V2V数据集受限于参与代理数量少、静态协作选择策略以及模拟与现实环境之间显著的领域差距。为了解决这些挑战，我们引入了SV2V-RSim，这是一个大规模、多模态、近真实的模拟数据集，旨在提升代理的多样性和真实感。此外，我们还提出了自适应选择车辆（SVA）模块，该模块优化了协作伙伴选择，以在感知性能与通信带宽限制之间取得平衡。我们的数据集是使用基于虚幻引擎5的模拟器生成的，该模拟器集成了高保真3D资产、多样化环境和复杂的交通场景。所有在自我车辆指定范围内的车辆都配备了传感器套件，使得动态和自适应的协作伙伴选择成为可能。SV2V-RSim涵盖了四个地图、四种天气条件、从日出到夜晚的六个时间段、203K LiDAR帧、402K RGB帧以及跨17个物体类别的788K标注3D边界框，支持一系列协作感知任务，如3D物体检测、分割和深度估计。对近期协作感知算法的基准测试表明，SVA在性能与带宽的权衡上表现优越，而模拟到现实的实验和无参考图像质量评估验证了数据集的高真实感和实际有效性。我们的数据集和代码将公开发布。",
+      "authors": [
+        "Yulu Wu",
+        "Chao Wei",
+        "Jujun Cheng",
+        "Zhangkai Ni",
+        "Haowen Wang",
+        "Dengyang Suo",
+        "Cong Chen",
+        "Xinyi Liu",
+        "Shangce Gao"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32863",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "SV2V-RSim: A Comprehensive Benchmark for Self-Selective V2V Cooperative Perception with Near-Realistic Data",
+      "title_zh": "SV2V-RSim：自选择V2V协作感知的综合基准，基于近真实数据",
+      "url": "/daily/2026-09-29/#paper-2609-32863"
+    },
+    {
+      "abstract": "Vector polygon generation converts visual inputs, e.g., remote sensing (RS) images, into vectorized polygonal geometries, supporting applications such as autonomous driving, vector map construction, and remote sensing. Early pipelines predict raster masks and post-process them into polygons, which prevents end-to-end optimization and may miss small objects or introduce inaccurate vertices. Recent methods directly generate vector polygons, but most focus on simple exterior contours, while they either cannot represent complex polygons with holes or fail to preserve their topology. In this paper, we propose PolyTopoBench, a unified evaluation framework for vector polygon generation from RS images with explicit emphasis on complex polygons. PolyTopoBench evaluates both exterior and interior rings, and benchmarks 11 representative methods, including segmentation-based polygonization pipelines, vision foundation model baselines, and specialized vector polygon generators, on two RS-image datasets covering buildings, roads, vegetation, and unvegetated regions. Experiments show that existing methods often recover simple exterior boundaries but degrade substantially on polygons with holes or multiple rings. These results reveal complex polygon generation as an unresolved challenge and motivate topology-aware benchmarks and model designs. Code and data are available at https://github.com/seai-lab/PolyTopoBench.",
+      "abstract_zh": "矢量多边形生成将视觉输入（例如遥感（RS）图像）转换为矢量化的多边形几何体，支持自主驾驶、矢量地图构建和遥感等应用。早期的处理流程预测栅格掩膜并将其后处理为多边形，这阻碍了端到端的优化，并可能错过小物体或引入不准确的顶点。最近的方法直接生成矢量多边形，但大多数集中于简单的外部轮廓，而无法表示带孔的复杂多边形或未能保持其拓扑结构。本文提出了PolyTopoBench，一个统一的评估框架，用于从RS图像生成矢量多边形，明确强调复杂多边形。PolyTopoBench评估外部和内部环，并在涵盖建筑、道路、植被和非植被区域的两个RS图像数据集上对11种代表性方法进行基准测试，包括基于分割的多边形化流程、视觉基础模型基线和专门的矢量多边形生成器。实验表明，现有方法通常能够恢复简单的外部边界，但在带孔或多个环的多边形上表现显著下降。这些结果揭示了复杂多边形生成作为一个未解决的挑战，并激励了对拓扑感知基准和模型设计的需求。代码和数据可在 https://github.com/seai-lab/PolyTopoBench 获取。",
+      "authors": [
+        "Zeping Liu",
+        "Ni Lao",
+        "Weiwei Sun",
+        "Gil Wolff",
+        "Yiqun Xie",
+        "Liang Zhao",
+        "Junfeng Jiao",
+        "Gengchen Mai"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32856",
+      "tags": [
+        "地图/定位",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "PolyTopoBench: A Benchmark for Complex Vector Polygon Generation from Remote Sensing Imagery",
+      "title_zh": "PolyTopoBench：一种基于遥感影像的复杂矢量多边形生成基准测试",
+      "url": "/daily/2026-09-29/#paper-2609-32856"
+    },
+    {
+      "abstract": "Accident anticipation aims to recognize anomalous driving cues before a crash while avoiding false alarms during normal driving. Existing approaches typically formulate this task as binary classification, focusing on whether an accident will occur rather than when it will occur. We propose PRE-ACT, a framework that models accident risk as a continuously evolving signal that increases as the crash approaches. By explicitly enforcing temporal ordering and distance-to-accident awareness, our method progressively raises risk while suppressing premature alarms, leading to significant improvements on MM-AU subsets and Nexar. We further introduce a Separation Score to evaluate the global behavior of predicted risk curves beyond local temporal windows. Code and visualizations are available at https://github.com/giddyyupp/PRE-ACT.",
+      "abstract_zh": "事故预警旨在在碰撞发生之前识别异常驾驶信号，同时在正常驾驶过程中避免误报。现有方法通常将此任务表述为二分类问题，关注的是事故是否会发生，而非何时发生。我们提出了PRE-ACT框架，该框架将事故风险建模为一个持续演变的信号，随着碰撞的临近而增加。通过明确强制时间顺序和对事故距离的意识，我们的方法逐步提高风险，同时抑制过早的警报，从而在MM-AU子集和Nexar上实现显著改进。我们进一步引入了分离评分（Separation Score），以评估预测风险曲线在局部时间窗口之外的全局行为。代码和可视化结果可在 https://github.com/giddyyupp/PRE-ACT 获取。",
+      "authors": [
+        "Samet Hicsonmez",
+        "Eray Çakar",
+        "Nermin Samet",
+        "Fatma Güney"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32811",
+      "tags": [
+        "安全/异常",
+        "预测/规划",
+        "感知"
+      ],
+      "title": "Progressive Risk Estimation for Accident Anticipation",
+      "title_zh": "渐进式事故预警风险评估",
+      "url": "/daily/2026-09-29/#paper-2609-32811"
+    },
+    {
+      "abstract": "4D radar provides geometric and motion cues that complement visual semantics, but integrating it into vision-language-action (VLA) models requires both radar--language alignment for semantic reasoning and explicit use of radar measurements for trajectory refinement and selection. To support these capabilities, we construct Cap4DR with 86,016 radar-image-text samples for alignment pretraining and OmniHD-QA with 520,161 question-answer pairs for instruction tuning across scene description, key-object reasoning, occupancy understanding, and trajectory planning. Building on these datasets, we propose RCVLA, a radar-camera VLA framework consisting of a radar-grounded semantic reasoning stage (RCVLA-Sem) and a trajectory arbitration stage (RCVLA-Phys). RCVLA-Sem performs gated bidirectional interaction between camera and radar tokens for driving question answering and reference trajectory generation, while auxiliary heads provide object and occupancy queries. RCVLA-Phys refines reference-guided trajectory candidates through truncated diffusion conditioned on these queries and cluster-level radar measurements, then calibrates candidate scores using radar-derived time-to-collision risk. On OmniHD-QA, RCVLA-Sem improves CIDEr by 9.92 points and reduces key-object velocity error by $21.9\\%$ relative to OmniDrive. RCVLA-Phys further reduces average L2 error from $0.348$ to $0.259\\,\\mathrm{m}$ and average open-loop collision rate from $0.576\\%$ to $0.175\\%$ relative to RCVLA-Sem. Ablation studies further show that language-aligned radar tokens improve semantic reasoning, while cluster-level radar measurements and risk calibration improve trajectory arbitration. Code will be released.",
+      "abstract_zh": "4D雷达提供几何和运动线索，补充视觉语义，但将其整合到视觉-语言-动作（VLA）模型中需要雷达与语言的对齐以进行语义推理，以及明确使用雷达测量进行轨迹细化和选择。为了支持这些功能，我们构建了Cap4DR，包含86,016个雷达-图像-文本样本用于对齐预训练，以及OmniHD-QA，包含520,161个问答对用于场景描述、关键对象推理、占用理解和轨迹规划的指令调优。在这些数据集的基础上，我们提出了RCVLA，一个雷达-摄像头VLA框架，包括一个基于雷达的语义推理阶段（RCVLA-Sem）和一个轨迹仲裁阶段（RCVLA-Phys）。RCVLA-Sem在摄像头和雷达标记之间执行门控双向交互，以进行驾驶问答和参考轨迹生成，同时辅助头提供对象和占用查询。RCVLA-Phys通过基于这些查询和集群级雷达测量的截断扩散细化参考引导的轨迹候选，然后使用雷达推导的碰撞风险时间对候选分数进行校准。在OmniHD-QA上，RCVLA-Sem将CIDEr提高了9.92分，并相对于OmniDrive减少了关键对象速度误差$21.9\\%$。RCVLA-Phys进一步将平均L2误差从$0.348$减少到$0.259 \\, ext{m}$，将平均开环碰撞率从$0.576\\\\%$减少到$0.175\\\\%$，相对于RCVLA-Sem。消融研究进一步表明，语言对齐的雷达标记改善了语义推理，而集群级雷达测量和风险校准改善了轨迹仲裁。代码将会发布。",
+      "authors": [
+        "Lianqing Zheng",
+        "Xiaokai Bai",
+        "Yixuan Luo",
+        "Runwei Guan",
+        "Minghao Liu",
+        "Zhiqiang Wei",
+        "Hui-liang Shen",
+        "Xichan Zhu",
+        "Zhixiong Ma"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32681",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "BEV/Occupancy"
+      ],
+      "title": "RCVLA: 4D Radar-Grounded Semantic Reasoning and Trajectory Arbitration for Autonomous Driving",
+      "title_zh": "RCVLA：基于4D雷达的语义推理与自主驾驶轨迹仲裁",
+      "url": "/daily/2026-09-29/#paper-2609-32681"
+    },
+    {
+      "abstract": "Autonomous-driving question answering requires reasoning over structured scene information, yet existing vision-language approaches largely delegate heterogeneous reasoning operations to a single neural inference process. We argue that this uniform strategy overlooks a fundamental distinction: some queries admit exact symbolic solutions, while others require semantic interpretation. We introduce a query-adaptive neuro-symbolic reasoning framework that explicitly allocates computation according to the nature of the query. At its core is a hierarchical Spatiotemporal Scene Graph (STSG) that separates persistent object identities from frame-specific states and represents spatial relations and temporal transitions as explicit directed structures. Given a query, a symbolic executor first attempts to resolve it through exact graph operations; only when symbolic execution abstains is an LLM invoked for semantic reasoning. For these unresolved queries, query-conditioned graph retrieval and evidence filtering preserve relation direction, temporal locality, and object semantics, providing the LLM with compact and verified task-relevant evidence. This design shifts the role of the LLM from a universal reasoning engine to a targeted semantic reasoner, while allowing deterministic computation to be handled exactly and efficiently. We evaluate the framework on 5,916 NuScenes-QA questions across all ten scenes of nuScenes v1.0-mini under an oracle-perception setting. The complete system achieves 80.63 percent overall accuracy with GPT-5.4-mini, improving over the corresponding LLM-only configuration by 5.48 percentage points; with DeepSeek-V4-Flash, the improvement reaches 6.64 points. The largest gains occur on counting questions, with improvements of 10.20 and 12.61 points, respectively. These results show that selective reasoning improves both accuracy and inference efficiency.",
+      "abstract_zh": "自动驾驶问答需要对结构化场景信息进行推理，但现有的视觉-语言方法在很大程度上将异构推理操作委托给单一的神经推理过程。我们认为，这种统一策略忽视了一个基本区别：某些查询可以通过精确的符号解决方案来解决，而其他查询则需要语义解释。我们提出了一种查询自适应的神经符号推理框架，该框架根据查询的性质明确分配计算资源。其核心是一个分层时空场景图（Spatiotemporal Scene Graph, STSG），该图将持久对象身份与帧特定状态分开，并将空间关系和时间过渡表示为明确的有向结构。给定一个查询，符号执行器首先尝试通过精确的图操作来解决该查询；只有在符号执行无法解决时，才会调用大型语言模型（LLM）进行语义推理。对于这些未解决的查询，基于查询的图检索和证据过滤保持关系方向、时间局部性和对象语义，为LLM提供紧凑且经过验证的任务相关证据。这种设计将LLM的角色从通用推理引擎转变为有针对性的语义推理器，同时允许确定性计算被精确且高效地处理。我们在nuScenes v1.0-mini的十个场景中对5,916个NuScenes-QA问题评估了该框架，采用了oracle感知设置。完整系统在使用GPT-5.4-mini时实现了80.63%的整体准确率，相较于相应的仅LLM配置提高了5.48个百分点；使用DeepSeek-V4-Flash时，提升达到了6.64个百分点。最大增益出现在计数问题上，分别提高了10.20和12.61个百分点。这些结果表明，选择性推理提高了准确性和推理效率。",
+      "authors": [
+        "Yiyao Wang",
+        "Pei Liu",
+        "Fangzhou Liu",
+        "Jun Ma"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32645",
+      "tags": [
+        "感知",
+        "VLM/VLA"
+      ],
+      "title": "From Scene Graphs to Answers: Selective Neuro-Symbolic Reasoning for Autonomous Driving",
+      "title_zh": "从场景图到答案：用于自动驾驶的选择性神经符号推理",
+      "url": "/daily/2026-09-29/#paper-2609-32645"
+    },
+    {
+      "abstract": "Traffic lights are a key regulatory signal for autonomous driving at urban intersections, yet existing traffic signal perception is still predominantly formulated as instance-level detection or color recognition. Such formulations identify where traffic lights are and what colors they display, but leave a critical semantic gap before downstream planning: which ego maneuver is controlled by each visible signal and what dynamic permission the signal expresses for that maneuver. In this paper, we formulate Directional Traffic Signal Understanding, a decision-oriented task that predicts structured signal states for straight, left-turn, right-turn, and U-turn maneuvers from a front-view image. Each state contains the associated signal color and signal-implied passability. Based on OpenLane-V2, we provide a direction-level benchmark with maneuver-level supervision and metrics for color recognition, passability, full-frame consistency, and safety-critical errors. A direction-aware baseline combines global context, localized traffic-light evidence, and maneuver-specific representations. Experiments show that direction-level modeling improves passability prediction over image-level classifiers and detection-oriented pipelines, particularly at complex multi-signal intersections. The resulting representation provides a direct and interpretable traffic-signal interface for downstream planning together with topology, route, and surrounding-agent information.",
+      "abstract_zh": "交通信号灯是城市交叉口自动驾驶的重要调控信号，但现有的交通信号感知仍主要以实例级检测或颜色识别为主。这种表述方式识别了交通信号灯的位置及其显示的颜色，但在下游规划中留下了一个关键的语义空白：每个可见信号控制的自我操控是什么，以及该信号对该操控所表达的动态许可是什么。本文提出了方向性交通信号理解（Directional Traffic Signal Understanding），这是一项面向决策的任务，旨在从前视图图像中预测直行、左转、右转和掉头操控的结构化信号状态。每个状态包含相关的信号颜色和信号隐含的通行性。基于OpenLane-V2，我们提供了一个方向级基准，具有操控级监督和针对颜色识别、通行性、全帧一致性及安全关键错误的评估指标。方向感知基线结合了全局上下文、本地化的交通信号证据和特定操控的表示。实验表明，方向级建模在复杂多信号交叉口的通行性预测上优于图像级分类器和检测导向的管道。最终的表示为下游规划提供了一个直接且可解释的交通信号接口，并结合了拓扑、路线和周围代理的信息。",
+      "authors": [
+        "Ang Zou",
+        "Runzhe Zheng",
+        "Zhigang li",
+        "Zhen Yang",
+        "Han Xia",
+        "Xuewei Li",
+        "Zequn Qin",
+        "Xi Li"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32316",
+      "tags": [
+        "感知",
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "One Perception, All Maneuvers: Directional Traffic Signal Understanding for Maneuver-Level Signal Intent Prediction",
+      "title_zh": "一种感知，所有操控：用于操控级信号意图预测的方向性交通信号理解",
+      "url": "/daily/2026-09-29/#paper-2609-32316"
+    },
+    {
+      "abstract": "Autoregressive video diffusion is a promising render-time fixer for 3D Gaussian Splatting (3DGS) in autonomous-driving simulation, but deployment demands high visual quality and temporal consistency at low latency. This is especially hard for one-step causal generation, where each imperfect prediction immediately becomes context for subsequent frames. Existing approaches stabilize rollouts through staged training with multiple modules and rollout-aware regularization, yet one-step quality still falls short of what deployment requires. We introduce OneFixer, a one-step autoregressive video-diffusion fixer trained in a single task-specific adaptation stage. Our key idea is a deployment-matched shared rollout: the model's own one-step predictions serve as the causal context for flow matching, exposing training to deployment-time errors, while the same rollout receives direct pixel-space perceptual supervision to preserve fine detail. Because the predictions optimized for current-frame quality are exactly those reused as future context, fidelity and autoregressive robustness are learned jointly, without bidirectional-to-causal conversion or teacher-student distillation. OneFixer further exploits cues that driving simulation readily provides, lane geometry and dynamic-agent states, to improve geometric fidelity. On Waymo and proprietary driving scenes with 900-frame rollouts, OneFixer achieves the lowest FVD, LPIPS, and DISTS among all baselines at one step, with temporal consistency matching or exceeding multi-stage DMD pipelines. Under identical backbone and conditioning, it matches a multi-stage DMD-with-Self-Forcing pipeline in under half the GPU-hours and keeps improving beyond its plateau. In closed-loop simulation with a driving policy, OneFixer reduces the collision rate by a third relative to raw 3DGS rendering. Project page: https://onefixer-web.vercel.app/",
+      "abstract_zh": "自回归视频扩散是一种有前景的渲染时间修复器，用于自主驾驶模拟中的3D高斯点云（3DGS），但部署要求在低延迟下实现高视觉质量和时间一致性。这对于一步因果生成尤其困难，因为每个不完美的预测立即成为后续帧的上下文。现有方法通过多模块的分阶段训练和滚动预测感知正则化来稳定生成过程，但一步的质量仍然未能达到部署的要求。我们提出了OneFixer，一种在单一任务特定适应阶段训练的一步自回归视频扩散修复器。我们的关键思想是与部署相匹配的共享滚动：模型自身的一步预测作为流匹配的因果上下文，使训练暴露于部署时的错误，同时相同的滚动接收直接的像素空间感知监督，以保留细节。由于为当前帧质量优化的预测正是作为未来上下文重复使用的，因此保真度和自回归鲁棒性是共同学习的，无需双向到因果的转换或教师-学生蒸馏。OneFixer进一步利用驾驶模拟提供的线道几何和动态代理状态等线索，以提高几何保真度。在包含900帧滚动的Waymo和专有驾驶场景中，OneFixer在一步中实现了所有基线中最低的FVD、LPIPS和DISTS，时间一致性与多阶段DMD管道相匹配或超过。在相同的骨干网络和条件下，它在不到一半的GPU小时内匹配了多阶段DMD与自我强制管道，并在其平台上持续改进。在与驾驶策略的闭环模拟中，OneFixer将碰撞率相对于原始3DGS渲染降低了三分之一。项目页面：https://onefixer-web.vercel.app/",
+      "authors": [
+        "Boseong Jeon",
+        "Junhyeop Lee",
+        "Juhan Cha",
+        "Hayoung Kim"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32175",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成",
+        "感知"
+      ],
+      "title": "OneFixer: High-Quality and Consistent One-Step Autoregressive 3DGS Refinement for Driving Scenes",
+      "title_zh": "OneFixer：高质量且一致的一步自回归3D高斯点云（3DGS）驾驶场景精细化",
+      "url": "/daily/2026-09-29/#paper-2609-32175"
+    },
+    {
+      "abstract": "Temporal context is essential for camera-only multi-view 3D object detection. Existing streaming detectors maintain and propagate query states from one frame to the next, requiring sequence-aware training and chronological inference. We propose PQR3D, which performs progressive query refinement within referenceconditioned temporal windows. This design enables random frame sampling and independent inference without persistent query memory. Within each window, PQR3D progressively transfers motion-aligned high-confidence queries from earlier timestamps toward the target frame. We further introduce masked selfattention to regulate interactions among regular, propagated, and denoising queries while keeping denoising supervision isolated from detection queries. In addition, a stage-decoupled anchor embedding injects position before self-attention and size, orientation, and velocity afterward, reducing interference from temporally inconsistent attributes. With a ViT-L backbone, PQR3D sets a new state of the art on the nuScenes test set, achieving 71.6 NDS and 64.9 mAP. Source code is available at https://github.com/huiyegit/PQR3D",
+      "abstract_zh": "时间上下文对于仅使用相机的多视角3D物体检测至关重要。现有的流式检测器在帧与帧之间维护并传播查询状态，这要求进行序列感知训练和时间顺序推理。我们提出了PQR3D，它在参考条件时间窗口内执行渐进查询细化。该设计支持随机帧采样和独立推理，而无需持久的查询记忆。在每个窗口内，PQR3D逐步将早期时间戳中的运动对齐的高置信度查询转移到目标帧。我们进一步引入了掩蔽自注意力机制，以调节常规查询、传播查询和去噪查询之间的交互，同时保持去噪监督与检测查询的隔离。此外，阶段解耦的锚嵌入在自注意力之前注入位置信息，并在之后注入大小、方向和速度，从而减少时间不一致属性的干扰。使用ViT-L主干，PQR3D在nuScenes测试集上设定了新的最先进水平，达到了71.6的NDS和64.9的mAP。源代码可在https://github.com/huiyegit/PQR3D获取。",
+      "authors": [
+        "Hui Ye",
+        "Yudong Liu",
+        "Yiran Chen",
+        "Rajshekhar Sunderraman",
+        "Shihao Ji"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32163",
+      "tags": [
+        "感知",
+        "3D 检测"
+      ],
+      "title": "PQR3D: Progressive Query Refinement over Reference-Conditioned Temporal Windows for Multi-View 3D Object Detection",
+      "title_zh": "PQR3D：基于参考条件时间窗口的多视角3D物体检测中的渐进查询细化",
+      "url": "/daily/2026-09-29/#paper-2609-32163"
+    },
+    {
+      "abstract": "Vision-Language-Action (VLA) models for autonomous driving produce natural-language reasoning alongside predicted trajectories, but whether this reasoning reflects the causal structure of the scene remains untested. We introduce CausalDriveBench, an evaluation framework grounded in Pearl's Causal Hierarchy (PCH) that tests causal reasoning in driving-specific VLAs through structured visual question answering (QA) and alternative-trajectory prediction. To this end, we construct causal scene graphs over nuScenes that distinguish causally active, dormant, and distractor entities, separating perceptual salience from causal relevance. The benchmark spans all four rungs of PCH (association, intervention, and counterfactual along with causal discovery) for QA generation. For the higher rungs, we additionally provide reference trajectories under specified scene modifications, enabling action-level verification that complements reasoning-level evaluation. In total, the benchmark contains 7,285 verified causal QA pairs and 1,000 counterfactual trajectories derived from nuScenes. We evaluate 10 driving-specific VLAs and 3 general-purpose VLMs, and report three findings. First, the best model reaches only 70.6% QA accuracy, and 4 of 13 models score below random chance. Second, comparing each driving VLA to the general-purpose VLM that shares its language backbone, the cost of driving fine-tuning ranges from 2 to 34 percentage points on causal QA, with post-training design explaining the spread. Third, causal QA and trajectory accuracy are statistically uncorrelated across models: under counterfactual prompts, predicted trajectories either over-react or collapse onto the observed-scene baseline. Taken together, these results show that neither fluent rationales nor accurate observed-scene trajectories constitute evidence of causal understanding.",
+      "abstract_zh": "自主驾驶的视觉-语言-行动（VLA）模型在预测轨迹的同时生成自然语言推理，但这种推理是否反映场景的因果结构尚未经过检验。我们引入了CausalDriveBench，一个基于Pearl的因果层级（PCH）的评估框架，通过结构化的视觉问答（QA）和替代轨迹预测来测试驾驶特定VLA的因果推理。为此，我们在nuScenes上构建了因果场景图，区分因果活跃、休眠和干扰实体，将感知显著性与因果相关性分开。该基准涵盖了PCH的四个层级（关联、干预、反事实及因果发现）用于QA生成。对于较高层级，我们还提供了在特定场景修改下的参考轨迹，使得行动级别的验证能够补充推理级别的评估。总的来说，该基准包含7,285对经过验证的因果QA对和1,000条来自nuScenes的反事实轨迹。我们评估了10个驾驶特定的VLA和3个通用VLM，并报告了三个发现。首先，最佳模型的QA准确率仅为70.6%，而13个模型中有4个得分低于随机机会。其次，将每个驾驶VLA与共享语言基础的通用VLM进行比较，驾驶微调的成本在因果QA上范围从2到34个百分点，后训练设计解释了这种差异。第三，因果QA和轨迹准确性在模型之间统计上不相关：在反事实提示下，预测轨迹要么过度反应，要么收敛到观察场景基线。综合来看，这些结果表明，流畅的推理或准确的观察场景轨迹都不能构成因果理解的证据。",
+      "authors": [
+        "Narendiran Chembu",
+        "Navvrat Rao",
+        "Shreedhar Shreeshail Kodate",
+        "Gayatri Srujana Banda",
+        "Arko Sarkar",
+        "Abhinav Khanna",
+        "Rajarshee Das",
+        "Umesh Kanala",
+        "Siddarth Khandelwal",
+        "Kumar Aman",
+        "Aish Dubey",
+        "Kaustubh Beedkar",
+        "Arjun Jain"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32157",
+      "tags": [
+        "VLM/VLA",
+        "预测/规划",
+        "感知"
+      ],
+      "title": "CausalDriveBench: Evaluating Causal Reasoning in Vision-Language-Action Models for Autonomous Driving",
+      "title_zh": "CausalDriveBench：评估自主驾驶中视觉-语言-行动模型的因果推理",
+      "url": "/daily/2026-09-29/#paper-2609-32157"
+    },
+    {
+      "abstract": "We present TriO, a multi-modal unsupervised world model that predicts 4D occupancy, obstacle segmentation, flow and LiDAR. In contrast to prior work, TriO utilizes three distinct sensor modalities (camera, LiDAR, and RADAR) as both inputs and sources of self-supervision, eliminating the need for additional human annotations. Thanks to its novel supervision, the model is able to segment any occupancy from the drivable surface, overcoming the limitations of existing open-set methods in handling long-tail objects. TriO achieves state-of-the-art results in multiple 3D and 4D tasks, including occupancy, flow, and LiDAR prediction, as well as zero-shot road obstacle segmentation across multiple datasets such as Argoverse 2, and Spotting the Unexpected.",
+      "abstract_zh": "我们提出了TriO，一种多模态无监督世界模型，能够预测4D占用、障碍物分割、流动和激光雷达（LiDAR）。与之前的工作相比，TriO利用三种不同的传感器模态（相机、激光雷达和雷达）作为输入和自我监督的来源，消除了对额外人工标注的需求。得益于其新颖的监督方式，该模型能够从可行驶表面中分割出任何占用，克服了现有开放集方法在处理长尾物体时的局限性。TriO在多个3D和4D任务中取得了最先进的结果，包括占用、流动和激光雷达预测，以及在多个数据集（如Argoverse 2和Spotting the Unexpected）上进行零样本道路障碍物分割。",
+      "authors": [
+        "Quinlan Sykora",
+        "Sourav Biswas",
+        "Christopher Diehl",
+        "Andrew Cunningham",
+        "Thomas Gilles",
+        "Raquel Urtasun"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.32013",
+      "tags": [
+        "感知",
+        "BEV/Occupancy",
+        "LiDAR/点云"
+      ],
+      "title": "TriO: Tri-Modal Unsupervised Occupancy World Model for Anything Perception",
+      "title_zh": "TriO：用于任何感知的三模态无监督占用世界模型",
+      "url": "/daily/2026-09-29/#paper-2609-32013"
+    },
+    {
+      "abstract": "Autonomous micro-mobility vehicles (MMVs) such as wheelchairs, scooters, and bicycles have the potential to improve mobility access and support safe low-speed transportation in pedestrian-shared spaces. Achieving MMV autonomy will require realistic, predictable MMV motion. However, many existing autonomous vehicle stacks rely on simplified kinematic models that fail to capture key MMV characteristics such as tire slip, friction, and wheel layouts, limiting realism and gradient-based optimization. In this paper, we explore differentiable formulations of dynamics models for autonomous micro-mobility systems. We first construct DiffKBM, a differentiable version of the kinematic bicycle model (KBM). Then, we introduce DiffGM3, a differentiable formulation of the General Micro-Mobility Model (GM3), a unified tire-based dynamics formulation for micro-mobility vehicles that supports a wide range of MMV configurations. DiffKBM and DiffGM3 enable end-to-end differentiable optimization through MMV dynamics, making them suitable for integration into differentiable autonomy stacks. We evaluate these dynamics models in both open-loop and closed-loop settings: (1) open-loop trajectory matching, where DiffKBM and DiffGM3 are integrated as a dynamics layer within DiffStack and optimized to reproduce real-world MMV trajectories, and (2) closed-loop autonomous navigation, where DiffKBM and DiffGM3 are paired with a differentiable MPC controller in CrowdNav pedestrian scenarios. In the open-loop setting, DiffGM3 outperforms DiffKBM in reproducing trajectories with improvements in ADE and NLL across bicycle, scooter, and motorcycle modes, and reductions in planning loss for bicycle and motorcycle trajectories. We also find that, in closed-loop settings, DiffGM3 improves on DiffKBM's CrowdNav performance by producing 55\\% fewer collisions and a 75\\% lower discomfort frequency for the bicycle mode.",
+      "abstract_zh": "自主微移动车辆（MMVs），如轮椅、电动滑板车和自行车，有潜力改善出行便利性，并支持在行人共享空间中的安全低速运输。实现MMV的自主性需要现实且可预测的MMV运动。然而，许多现有的自主车辆系统依赖于简化的运动学模型，这些模型未能捕捉到MMV的关键特性，如轮胎滑移、摩擦和轮布局，从而限制了现实性和基于梯度的优化。本文探讨了自主微移动系统的可微分动力学模型的形式化。我们首先构建了DiffKBM，这是运动学自行车模型（KBM）的可微分版本。然后，我们引入了DiffGM3，这是通用微移动模型（GM3）的可微分形式，该模型为微移动车辆提供了一种统一的基于轮胎的动力学形式，支持广泛的MMV配置。DiffKBM和DiffGM3通过MMV动力学实现了端到端的可微分优化，使其适合集成到可微分自主系统中。我们在开放环路和闭环设置中评估这些动力学模型：（1）开放环路轨迹匹配，其中DiffKBM和DiffGM3作为DiffStack中的动力学层集成，并优化以重现真实世界的MMV轨迹；（2）闭环自主导航，其中DiffKBM和DiffGM3与可微分模型预测控制器（MPC）配对，在CrowdNav行人场景中进行测试。在开放环路设置中，DiffGM3在重现轨迹方面优于DiffKBM，在自行车、电动滑板车和摩托车模式下的平均距离误差（ADE）和负对数似然（NLL）均有所改善，并且在自行车和摩托车轨迹的规划损失上有所减少。我们还发现，在闭环设置中，DiffGM3在CrowdNav性能上优于DiffKBM，摩托车模式下的碰撞数量减少了55\\%，不适频率降低了75\\%。",
+      "authors": [
+        "Grace Cai",
+        "Joey Lee",
+        "Nithin Parepally",
+        "Laura Zheng",
+        "Ming C. Lin"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.31885",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "安全/异常"
+      ],
+      "title": "Differentiable Dynamics for Autonomous Micro-Mobility Navigation",
+      "title_zh": "用于自主微移动导航的可微分动力学",
+      "url": "/daily/2026-09-29/#paper-2609-31885"
+    },
+    {
+      "abstract": "Evaluating VLM-based autonomous driving remains difficult because driving competence is composite, where a capable system must ground traffic participants and hazards, integrate context across views and time, reason about future evolution, and act appropriately under closed-loop interaction. Existing benchmarks usually assess either open-loop understanding or closed-loop driving but provide limited structure for explaining how these abilities are organized, how they relate, and how they may inform model diagnosis and improvement. We present \\textsc{DriveHierarchy}, a hierarchical benchmark that organizes VLM-based autonomous driving into four ranks, spanning perceptual grounding, contextual memory, mental reasoning, and closed-loop execution. To instantiate this hierarchy, we integrate multiple open-source autonomous-driving datasets into a unified open-loop benchmark with 76,798 question-answer pairs over 84,279 frames and develop a closed-loop simulation platform with interactive scenario construction on a real-world road network, from which 100 driving scenarios are curated for embodied evaluation. Experiments on 15 VLMs show that \\textsc{DriveHierarchy} captures structured but non-redundant capability variation, relates open-loop understanding to closed-loop driving, and provides a practical basis for diagnosis and benchmark-guided optimization. \\textsc{DriveHierarchy} therefore serves as a unified framework for evaluating and improving VLM-based autonomous driving systems. An anonymized project has been released on https://github.com/PerfectXu88/DriveHierarchy",
+      "abstract_zh": "评估基于VLM的自主驾驶仍然困难，因为驾驶能力是复合的，能够胜任的系统必须能够识别交通参与者和危险，整合跨视角和时间的上下文，推理未来的发展，并在闭环交互中适当地行动。现有基准通常评估开放环路理解或闭环驾驶，但对这些能力如何组织、如何关联以及如何为模型诊断和改进提供信息的结构性支持有限。我们提出了 extsc{DriveHierarchy}，一个将基于VLM的自主驾驶组织为四个等级的分层基准，涵盖感知基础、上下文记忆、心理推理和闭环执行。为了实现这一层次结构，我们将多个开源自主驾驶数据集整合为一个统一的开放环路基准，其中包含76,798个问答对，覆盖84,279帧，并开发了一个闭环仿真平台，能够在真实世界道路网络上进行互动场景构建，从中策划出100个驾驶场景以进行具体评估。对15个VLM的实验表明， extsc{DriveHierarchy}捕捉到了结构化但不冗余的能力变化，将开放环路理解与闭环驾驶关联起来，并为诊断和基准指导的优化提供了实用基础。因此， extsc{DriveHierarchy}作为一个统一框架，服务于评估和改进基于VLM的自主驾驶系统。一个匿名项目已在https://github.com/PerfectXu88/DriveHierarchy上发布。",
+      "authors": [
+        "Chengkai Xu",
+        "Jiaqi Liu",
+        "Yicheng Guo",
+        "Peng Hang",
+        "Jian Sun"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.31814",
+      "tags": [
+        "VLM/VLA",
+        "仿真/数据"
+      ],
+      "title": "DriveHierarchy: A Benchmark for Diagnosing VLM Driving Capabilities from Open-Loop Understanding to Closed-Loop Execution",
+      "title_zh": "DriveHierarchy：从开放环路理解到闭环执行的VLM驾驶能力诊断基准",
+      "url": "/daily/2026-09-29/#paper-2609-31814"
+    },
+    {
+      "abstract": "We study whether a manually specified runtime supervisor can correct recurring failures of an existing end-to-end parking policy in a fixed CARLA parking lot. The vision-based Transformer architecture is inherited from Yang et al.; our contribution is a timed, rule-based Parametric Safety Shield (PSS) applied to its control outputs. The PSS uses hand-calibrated speed, position, and duration thresholds to intervene in observed failure modes, including boundary exits, delayed braking, and stalled or oscillatory control. In the reported closed-loop evaluation, 16 held-out target slots and six initial poses are each evaluated in four rounds (384 attempts per configuration). Target success increases from 327/384 (85.16%) for the retrained policy to 375/384 (97.66%) with the PSS; mean position and orientation errors among successful attempts are 0.21m and 0.33 degrees. These results show an improvement within this simulator setup. The repeated attempts share one map, vehicle, and sensor configuration, and the PSS uses simulator world coordinates; thus the results do not establish generalization to other lots or real vehicles, or a formal safety guarantee.",
+      "abstract_zh": "我们研究了手动指定的运行时监督是否能够纠正现有端到端停车策略在固定CARLA停车场中出现的重复性故障。基于视觉的Transformer架构继承自Yang等人的研究；我们的贡献是将基于时间的规则参数安全保护盾（Parametric Safety Shield, PSS）应用于其控制输出。PSS使用手动校准的速度、位置和持续时间阈值来干预观察到的故障模式，包括边界退出、延迟刹车以及失控或振荡控制。在报告的闭环评估中，16个保留目标车位和六个初始姿态在四轮中各自进行了评估（每个配置384次尝试）。目标成功率从重新训练的策略的327/384（85.16%）提高到使用PSS的375/384（97.66%）；成功尝试的平均位置和方向误差分别为0.21米和0.33度。这些结果表明在该模拟器设置中有所改善。重复尝试共享一个地图、车辆和传感器配置，PSS使用模拟器世界坐标；因此，结果并未建立对其他停车场或真实车辆的泛化，或提供正式的安全保证。",
+      "authors": [
+        "Kejia Gao",
+        "Liguo Zhou",
+        "Lei Yu",
+        "Alois Knoll"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.31773",
+      "tags": [
+        "端到端驾驶",
+        "安全/异常",
+        "地图/定位"
+      ],
+      "title": "Timed Rule-Based Supervision of an End-to-End Autonomous Parking Policy",
+      "title_zh": "基于时间的端到端自主停车策略的规则监督",
+      "url": "/daily/2026-09-29/#paper-2609-31773"
+    },
+    {
+      "abstract": "Event cameras are well suited to pedestrian crossing detection, and spiking neural networks (SNNs) can process their output natively, but current SNN detectors are trained with supervised backpropagation and therefore require costly frame-level crossing labels. We investigate crossing detection with no labels in feature learning and report the first unsupervised results on the recent DVS-PedX pedestrian-crossing benchmark. A single spiking layer trained with winner-take-all spike-timing-dependent plasticity learns a dictionary from unlabelled event-frame patches; frames are encoded by cosine similarity to the learned filters with spatial pooling and read out by a linear classifier, the only supervised component. On the 24,454-frame test split the method attains 90.3% accuracy and an area under the receiver operating characteristic curve (AUROC) of 0.936, compared with 92.0% and 0.943 for a supervised spiking network trained end-to-end on the same frames; under adverse weather the AUROC is 0.913. The result is insensitive to the choice of plasticity rule but depends strongly on the readout protocol: with the classical neuron-assignment readout the same network attains only 0.70 AUROC. On the benchmark's real converted portion, a readout refit lifts performance from chance (0.53) to 0.67 AUROC, within the published supervised range. These findings indicate that the accuracy cost of removing labels from feature learning is small on this benchmark, and that reported weaknesses of unsupervised spiking networks may be attributable to the readout protocol rather than to the learning rule.",
+      "abstract_zh": "事件相机非常适合行人过马路检测，而脉冲神经网络（SNN）能够原生处理其输出，但目前的 SNN 检测器是通过监督反向传播训练的，因此需要昂贵的帧级过马路标签。我们研究了在无标签的特征学习中进行过马路检测，并报告了在最近的 DVS-PedX 行人过马路基准测试中首次获得的无监督结果。一个使用赢家通吃的脉冲时序依赖可塑性训练的单层脉冲网络从无标签的事件帧补丁中学习字典；帧通过与学习到的滤波器的余弦相似度进行编码，并通过线性分类器读取，这是唯一的监督组件。在 24,454 帧的测试集上，该方法达到了 90.3% 的准确率和 0.936 的接收者操作特征曲线下面积（AUROC），而在同一帧上经过端到端训练的监督脉冲网络的准确率为 92.0%，AUROC 为 0.943；在恶劣天气条件下，AUROC 为 0.913。结果对可塑性规则的选择不敏感，但对读取协议高度依赖：使用经典的神经元分配读取时，同一网络仅达到 0.70 AUROC。在基准测试的真实转换部分，重新调整读取将性能从偶然（0.53）提升至 0.67 AUROC，处于已发布的监督范围内。这些发现表明，在该基准测试中，从特征学习中去除标签的准确性成本较小，并且无监督脉冲网络的报告弱点可能是由于读取协议而非学习规则造成的。",
+      "authors": [
+        "Henok Teklu",
+        "Mustafa Sakhai",
+        "Matej Mertik",
+        "Maciej Wielgosz"
+      ],
+      "date": "2026-09-29",
+      "id": "2609.31671",
+      "tags": [
+        "感知"
+      ],
+      "title": "Unsupervised spiking feature learning for event-based pedestrian crossing detection: approaching supervised accuracy without labelled training data",
+      "title_zh": "无监督脉冲特征学习用于基于事件的行人过马路检测：在没有标注训练数据的情况下接近监督精度",
+      "url": "/daily/2026-09-29/#paper-2609-31671"
+    },
     {
       "abstract": "End-to-end driving policies are commonly trained through open-loop behavior cloning, yet they must ultimately operate in closed-loop when deployed on a vehicle, creating a fundamental mismatch between training and execution. Beyond the commonly studied effects of covariate shift and causal confusion, we identify a complementary factor for this open-loop/closed-loop gap: waypoint-based supervision and displacement metrics do not ensure that the intermediate trajectory is physically coherent or easy for the controller to track. We observe that these inconsistencies concentrate primarily at intermediate waypoints, while the predicted endpoint remains comparatively reliable. Based on this observation, we introduce Endpoint-Constrained Optimization (ECO), a lightweight postprocessing layer that anchors the trajectory to the vehicle's executed history, preserves the policy's predicted endpoint, and reshapes the intermediate waypoints to improve feasibility. ECO requires no map, privileged simulator state, or additional training, and can be inserted between a broad range of waypoint-emitting policies and their controllers. Across two closed-loop simulators, it improves the aggregate closed-loop score of all six evaluated generative and regression-based driving policies, and the gains tend to increase with how often the base plans violate motion limits. On HUGSIM, ECO improves VaVAM from 18.1 to 31.0 HD-Score (+71%), achieving 1st place on the HUGSIM Closed-Loop Driving Challenge. Similarly, on AlpaSim, ECO increases the scene scores of VaVAM and DiffusionDrive by 123% and 22%, respectively. These results show that for a broad collection of end-to-end driving models, repairing the intermediate geometry of predicted trajectories without changing the policy's predicted endpoint can substantially improve closed-loop performance.",
       "abstract_zh": "端到端驾驶策略通常通过开放循环行为克隆进行训练，但在部署到车辆上时，它们最终必须在闭环中操作，这导致训练与执行之间存在根本的不匹配。除了常见的协变量偏移和因果混淆效应外，我们还识别出一个补充因素，导致这种开放循环/闭环差距：基于航点的监督和位移度量并不能确保中间轨迹在物理上是一致的，或者对控制器来说易于跟踪。我们观察到，这些不一致主要集中在中间航点，而预测的端点相对可靠。基于这一观察，我们引入了端点约束优化（Endpoint-Constrained Optimization, ECO），这是一种轻量级的后处理层，它将轨迹锚定到车辆的执行历史，保留策略的预测端点，并重塑中间航点以提高可行性。ECO不需要地图、特权模拟器状态或额外训练，可以插入到广泛的航点生成策略和它们的控制器之间。在两个闭环模拟器中，它提高了所有六种评估的生成和回归驱动策略的整体闭环得分，且增益往往随着基础计划违反运动限制的频率增加而增加。在HUGSIM上，ECO将VaVAM的HD-Score从18.1提高到31.0（+71%），在HUGSIM闭环驾驶挑战中获得第一名。同样，在AlpaSim上，ECO分别将VaVAM和DiffusionDrive的场景得分提高了123%和22%。这些结果表明，对于广泛的端到端驾驶模型，修复预测轨迹的中间几何形状而不改变策略的预测端点可以显著改善闭环性能。",

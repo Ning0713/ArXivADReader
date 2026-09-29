@@ -1,0 +1,51 @@
+{
+  "abstract": "Camera-LiDAR detectors can continue to consume unreliable features even when both sensors remain present, synchronized, and calibrated. We introduce \\emph{Boundary Feature Repair} (BFR), a frozen-host adaptation framework that learns task-supervised residual corrections at modality interfaces the detector already consumes. BFR-C repairs each camera feature level read by fusion, whereas BFR-L aligns host-conditioned LiDAR candidates to a selected boundary and routes site-wise innovations relative to the frozen anchor. Their jointly trained composition is BFR-CL. Zero-initialized per-channel scales make every variant an exact detector-level identity before optimization; only the repair modules train, while the encoders, fusion consumer, router, detection head, and host normalization statistics remain fixed. At inference, BFR requires neither clean references, corruption metadata, temporal history, nor online updates. Across the complete 20-corruption, five-severity KITTI-C grid, BFR-C reduces RCE from $14.07$ to $11.92$ on MVX-Net and from $14.29$ to $11.00$ on Focals Conv-F relative to their reproduced frozen baselines. On the latter host, BFR-L raises AP$_{\\mathrm{cor}}$ from $73.65$ to $74.48$, while BFR-CL reaches $77.01$ AP$_{\\mathrm{cor}}$ and $10.46$ RCE with $86.02$ clean AP. On nuScenes-R, BFR-CL raises the reproduced MoME baseline's mAP robustness ratio from $80.1$ to $81.4$. These results establish boundary repair as a targeted retrofit for corrupted-but-present sensing without retraining the deployed detector.",
+  "abstract_zh": "相机-激光雷达检测器即使在两个传感器都存在、同步且已校准的情况下，仍然可以继续使用不可靠的特征。我们提出了 extit{边界特征修复}（Boundary Feature Repair, BFR）框架，这是一种冻结主机适应框架，能够在检测器已使用的模态接口上学习任务监督的残差修正。BFR-C修复每个由融合读取的相机特征级别，而BFR-L则将主机条件的激光雷达候选对齐到选定的边界，并根据冻结的锚点进行现场创新的路由。它们的联合训练组合为BFR-CL。每个变体在优化前都是零初始化的逐通道尺度，使其成为精确的检测器级别身份；只有修复模块进行训练，而编码器、融合消费者、路由器、检测头和主机归一化统计保持固定。在推理时，BFR不需要干净的参考、损坏元数据、时间历史或在线更新。在完整的20种损坏、五种严重程度的KITTI-C网格上，BFR-C将MVX-Net的RCE从$14.07$降低到$11.92$，将Focals Conv-F的RCE从$14.29$降低到$11.00$，相对于其再现的冻结基线。在后者主机上，BFR-L将AP$_{ ext{cor}}$从$73.65$提升至$74.48$，而BFR-CL则达到了$77.01$的AP$_{ ext{cor}}$和$10.46$的RCE，且干净AP为$86.02$。在nuScenes-R上，BFR-CL将再现的MoME基线的mAP鲁棒性比率从$80.1$提升至$81.4$。这些结果确立了边界修复作为一种针对损坏但存在的传感的有针对性的改造，而无需重新训练已部署的检测器。",
+  "arxiv_id": "2609.35264",
+  "arxiv_url": "https://arxiv.org/abs/2609.35264v1",
+  "authors": [
+    "Gia-Huy Thai",
+    "Quang-Thinh Ly",
+    "Anh-Minh Phan",
+    "Tuan Dang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-35264",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.326593+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.35264v1",
+  "published_at": "2026-09-28T14:22:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "lidar",
+      "camera-lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 44
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.35264v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Repair Before You Fuse: Frozen-Host Adaptation for Corrupted-but-Present Sensors",
+  "title_zh": "修复再融合：针对损坏但存在传感器的冻结主机适应",
+  "translation_url": "https://hjfy.top/arxiv/2609.35264"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "FMCW LiDAR measures per-point radial Doppler velocity alongside range, providing a motion cue unavailable in conventional time-of-flight sensors. Exploiting this signal at long range remains understudied. We present an FMCW LiDAR dataset of 575 sequences (57.5K frames) with over 8 million annotated 3D boxes across 16 detection classes and per-point labels across 24 semantic classes, captured by six commercial FMCW LiDAR sensors and six paired 4K cameras across eight Bay Area cities, including 237 nighttime sequences, with annotations extending to 400m. We define a benchmark with three tasks: 3D object detection, scene flow estimation, and semantic segmentation. Detection and scene flow are evaluated across three range bins to 400m, with a public evaluation server. We explore the impact of Doppler measurements on flagship recognition tasks, and find significant improvements up to 2X in detection AP of far-away vehicles and pedestrians, particularly in low-latency single-frame settings. We similarly find scene flow accuracy is significantly improved with Doppler measurements across all ranges. Our dataset and benchmark have been publicly released at https://scenes.aeva.com.",
+  "abstract_zh": "FMCW LiDAR在测量每个点的径向多普勒速度的同时提供了距离信息，这为传统的飞行时间传感器所无法提供的运动线索。利用这一信号进行长距离感知的研究仍然较少。我们呈现了一个FMCW LiDAR数据集，包含575个序列（57.5K帧），在16个检测类别中标注了超过800万个3D框，并在24个语义类别中提供了每点标签。该数据集由六个商业FMCW LiDAR传感器和六个配对的4K摄像头在八个旧金山湾区城市捕获，包括237个夜间序列，标注范围延伸至400米。我们定义了一个基准测试，包含三个任务：3D物体检测、场景流估计和语义分割。在三个范围区间内（最高至400米）评估检测和场景流，并设立了公共评估服务器。我们探讨了多普勒测量对主要识别任务的影响，发现远处车辆和行人的检测平均精度（AP）显著提高，最高可达2倍，尤其是在低延迟的单帧设置中。我们同样发现，所有范围内的场景流准确性在有多普勒测量的情况下显著提高。我们的数据集和基准测试已在 https://scenes.aeva.com 上公开发布。",
+  "arxiv_id": "2609.33230",
+  "arxiv_url": "https://arxiv.org/abs/2609.33230v1",
+  "authors": [
+    "Gautham Narayan Narasimhan",
+    "Heethesh Vhavle",
+    "Kumar Bhargav Viswanatha",
+    "James Reuther",
+    "Deva Ramanan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-33230",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.469451+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.33230v1",
+  "published_at": "2026-09-27T05:16:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "车辆",
+      "行人",
+      "3d object detection",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.33230v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "AevaScenes: An FMCW LiDAR Dataset and Benchmark for Long-Range Perception",
+  "title_zh": "AevaScenes：一种用于长距离感知的FMCW LiDAR数据集和基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2609.33230"
+}

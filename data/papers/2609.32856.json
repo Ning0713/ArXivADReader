@@ -1,0 +1,62 @@
+{
+  "abstract": "Vector polygon generation converts visual inputs, e.g., remote sensing (RS) images, into vectorized polygonal geometries, supporting applications such as autonomous driving, vector map construction, and remote sensing. Early pipelines predict raster masks and post-process them into polygons, which prevents end-to-end optimization and may miss small objects or introduce inaccurate vertices. Recent methods directly generate vector polygons, but most focus on simple exterior contours, while they either cannot represent complex polygons with holes or fail to preserve their topology. In this paper, we propose PolyTopoBench, a unified evaluation framework for vector polygon generation from RS images with explicit emphasis on complex polygons. PolyTopoBench evaluates both exterior and interior rings, and benchmarks 11 representative methods, including segmentation-based polygonization pipelines, vision foundation model baselines, and specialized vector polygon generators, on two RS-image datasets covering buildings, roads, vegetation, and unvegetated regions. Experiments show that existing methods often recover simple exterior boundaries but degrade substantially on polygons with holes or multiple rings. These results reveal complex polygon generation as an unresolved challenge and motivate topology-aware benchmarks and model designs. Code and data are available at https://github.com/seai-lab/PolyTopoBench.",
+  "abstract_zh": "矢量多边形生成将视觉输入（例如遥感（RS）图像）转换为矢量化的多边形几何体，支持自主驾驶、矢量地图构建和遥感等应用。早期的处理流程预测栅格掩膜并将其后处理为多边形，这阻碍了端到端的优化，并可能错过小物体或引入不准确的顶点。最近的方法直接生成矢量多边形，但大多数集中于简单的外部轮廓，而无法表示带孔的复杂多边形或未能保持其拓扑结构。本文提出了PolyTopoBench，一个统一的评估框架，用于从RS图像生成矢量多边形，明确强调复杂多边形。PolyTopoBench评估外部和内部环，并在涵盖建筑、道路、植被和非植被区域的两个RS图像数据集上对11种代表性方法进行基准测试，包括基于分割的多边形化流程、视觉基础模型基线和专门的矢量多边形生成器。实验表明，现有方法通常能够恢复简单的外部边界，但在带孔或多个环的多边形上表现显著下降。这些结果揭示了复杂多边形生成作为一个未解决的挑战，并激励了对拓扑感知基准和模型设计的需求。代码和数据可在 https://github.com/seai-lab/PolyTopoBench 获取。",
+  "arxiv_id": "2609.32856",
+  "arxiv_url": "https://arxiv.org/abs/2609.32856v1",
+  "authors": [
+    "Zeping Liu",
+    "Ni Lao",
+    "Weiwei Sun",
+    "Gil Wolff",
+    "Yiqun Xie",
+    "Liang Zhao",
+    "Junfeng Jiao",
+    "Gengchen Mai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32856",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.446309+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32856v1",
+  "published_at": "2026-09-26T18:31:13Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "道路",
+      "remote sensing",
+      "遥感"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "标题明确属于非道路驾驶领域",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32856v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "提出并评估一个面向遥感影像复杂矢量多边形生成的基准，特别关注内外环及拓扑结构。由于生成的矢量几何可用于矢量地图构建，且基准包含道路要素，该工作与自动驾驶地图构建存在间接关联，但并非专门面向自动驾驶的方法或数据集。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "PolyTopoBench: A Benchmark for Complex Vector Polygon Generation from Remote Sensing Imagery",
+  "title_zh": "PolyTopoBench：一种基于遥感影像的复杂矢量多边形生成基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2609.32856"
+}

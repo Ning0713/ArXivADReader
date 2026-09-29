@@ -1,0 +1,61 @@
+{
+  "abstract": "4D radar provides geometric and motion cues that complement visual semantics, but integrating it into vision-language-action (VLA) models requires both radar--language alignment for semantic reasoning and explicit use of radar measurements for trajectory refinement and selection. To support these capabilities, we construct Cap4DR with 86,016 radar-image-text samples for alignment pretraining and OmniHD-QA with 520,161 question-answer pairs for instruction tuning across scene description, key-object reasoning, occupancy understanding, and trajectory planning. Building on these datasets, we propose RCVLA, a radar-camera VLA framework consisting of a radar-grounded semantic reasoning stage (RCVLA-Sem) and a trajectory arbitration stage (RCVLA-Phys). RCVLA-Sem performs gated bidirectional interaction between camera and radar tokens for driving question answering and reference trajectory generation, while auxiliary heads provide object and occupancy queries. RCVLA-Phys refines reference-guided trajectory candidates through truncated diffusion conditioned on these queries and cluster-level radar measurements, then calibrates candidate scores using radar-derived time-to-collision risk. On OmniHD-QA, RCVLA-Sem improves CIDEr by 9.92 points and reduces key-object velocity error by $21.9\\%$ relative to OmniDrive. RCVLA-Phys further reduces average L2 error from $0.348$ to $0.259\\,\\mathrm{m}$ and average open-loop collision rate from $0.576\\%$ to $0.175\\%$ relative to RCVLA-Sem. Ablation studies further show that language-aligned radar tokens improve semantic reasoning, while cluster-level radar measurements and risk calibration improve trajectory arbitration. Code will be released.",
+  "abstract_zh": "4D雷达提供几何和运动线索，补充视觉语义，但将其整合到视觉-语言-动作（VLA）模型中需要雷达与语言的对齐以进行语义推理，以及明确使用雷达测量进行轨迹细化和选择。为了支持这些功能，我们构建了Cap4DR，包含86,016个雷达-图像-文本样本用于对齐预训练，以及OmniHD-QA，包含520,161个问答对用于场景描述、关键对象推理、占用理解和轨迹规划的指令调优。在这些数据集的基础上，我们提出了RCVLA，一个雷达-摄像头VLA框架，包括一个基于雷达的语义推理阶段（RCVLA-Sem）和一个轨迹仲裁阶段（RCVLA-Phys）。RCVLA-Sem在摄像头和雷达标记之间执行门控双向交互，以进行驾驶问答和参考轨迹生成，同时辅助头提供对象和占用查询。RCVLA-Phys通过基于这些查询和集群级雷达测量的截断扩散细化参考引导的轨迹候选，然后使用雷达推导的碰撞风险时间对候选分数进行校准。在OmniHD-QA上，RCVLA-Sem将CIDEr提高了9.92分，并相对于OmniDrive减少了关键对象速度误差$21.9\\%$。RCVLA-Phys进一步将平均L2误差从$0.348$减少到$0.259 \\, ext{m}$，将平均开环碰撞率从$0.576\\\\%$减少到$0.175\\\\%$，相对于RCVLA-Sem。消融研究进一步表明，语言对齐的雷达标记改善了语义推理，而集群级雷达测量和风险校准改善了轨迹仲裁。代码将会发布。",
+  "arxiv_id": "2609.32681",
+  "arxiv_url": "https://arxiv.org/abs/2609.32681v1",
+  "authors": [
+    "Lianqing Zheng",
+    "Xiaokai Bai",
+    "Yixuan Luo",
+    "Runwei Guan",
+    "Minghao Liu",
+    "Zhiqiang Wei",
+    "Hui-liang Shen",
+    "Xichan Zhu",
+    "Zhixiong Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32681",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.433027+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32681v1",
+  "published_at": "2026-09-26T14:40:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "4d radar",
+      "radar",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 59
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32681v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "RCVLA: 4D Radar-Grounded Semantic Reasoning and Trajectory Arbitration for Autonomous Driving",
+  "title_zh": "RCVLA：基于4D雷达的语义推理与自主驾驶轨迹仲裁",
+  "translation_url": "https://hjfy.top/arxiv/2609.32681"
+}

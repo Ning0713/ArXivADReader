@@ -1,0 +1,49 @@
+{
+  "abstract": "Wildlife-vehicle collisions remain a significant road safety concern, particularly during nighttime and low-visibility conditions when RGB-based perception systems are often unreliable. Thermal imaging offers a promising alternative for detecting animals under poor illumination. However, the limited availability of annotated infrared animal datasets restricts the development of robust deep learning-based detection models. This paper investigates synthetic thermal image generation as a scalable approach for real-time animal detection under low-visibility conditions. A subset of 514 annotated visible-spectrum animal images from the NTLNP dataset is translated into synthetic thermal representations using CycleGAN-Turbo, while a limited real thermal dataset of 60 images is expanded through thermal-focused augmentation. Multiple object detection architectures, including YOLOv8, YOLOv9, YOLOv10, and RT-DETR, are trained independently on synthetic and real thermal datasets and evaluated using precision, recall, [email protected] , [email protected] :0.95, model size, and inference latency. Experimental results show that synthetic thermal images provide competitive detection performance, with RT-DETR achieving the highest synthetic-data [email protected] of 0.9613. Models trained on augmented real thermal data achieve the strongest overall performance, with YOLOv10s obtaining 0.9879 [email protected] and 0.9571 [email protected] :0.95. Computational analysis further indicates that lightweight YOLO variants provide favorable inference latency, supporting their potential for real-time deployment. These findings demonstrate that synthetic thermal imagery can reduce dependence on scarce infrared datasets and support the development of efficient animal detection systems for future vehicle-mounted wildlife collision mitigation applications.",
+  "abstract_zh": "野生动物与车辆的碰撞仍然是一个重要的道路安全问题，尤其是在夜间和低能见度条件下，基于RGB的感知系统往往不可靠。热成像为在光照不足的情况下检测动物提供了一种有前景的替代方案。然而，标注的红外动物数据集的有限可用性限制了基于深度学习的检测模型的开发。本文研究了合成热图像生成作为一种可扩展的方法，用于在低能见度条件下进行实时动物检测。我们从NTLNP数据集中提取了514幅标注的可见光谱动物图像，并使用CycleGAN-Turbo将其转换为合成热表示，同时通过热成像专注的增强扩展了一个有限的真实热数据集，包含60幅图像。包括YOLOv8、YOLOv9、YOLOv10和RT-DETR在内的多种目标检测架构分别在合成和真实热数据集上进行训练，并使用精确度、召回率、 [email protected] 、 [email protected] :0.95、模型大小和推理延迟进行评估。实验结果表明，合成热图像提供了具有竞争力的检测性能，其中RT-DETR在合成数据上达到最高的 [email protected] 为0.9613。基于增强真实热数据训练的模型表现出最强的整体性能，YOLOv10s获得了0.9879的 [email protected] 和0.9571的 [email protected] :0.95。计算分析进一步表明，轻量级的YOLO变体提供了良好的推理延迟，支持其在实时部署中的潜力。这些发现表明，合成热成像可以减少对稀缺红外数据集的依赖，并支持未来车辆安装的野生动物碰撞缓解应用中高效动物检测系统的发展。",
+  "arxiv_id": "2609.32944",
+  "arxiv_url": "https://arxiv.org/abs/2609.32944v1",
+  "authors": [
+    "James Momoh",
+    "Khandaker Mamun Ahmed"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32944",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.450556+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32944v1",
+  "published_at": "2026-09-26T21:10:52Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32944v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "本文通过生成合成热图像并扩充有限的真实热数据，研究低能见度条件下的实时动物检测。实验比较了多种检测器的检测性能与推理效率，显示合成数据具备应用潜力，增强真实热数据则取得最佳整体结果。该研究面向未来车载野生动物碰撞缓解应用，但未直接研究自动驾驶系统或其决策规划。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Synthetic Thermal Image Generation for Real-Time Animal Detection Under Low-Visibility Conditions",
+  "title_zh": "低能见度条件下实时动物检测的合成热图像生成",
+  "translation_url": "https://hjfy.top/arxiv/2609.32944"
+}

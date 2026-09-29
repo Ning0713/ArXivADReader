@@ -1,0 +1,58 @@
+{
+  "abstract": "Driving decisions depend on both where to focus and how to act on what is seen. Effective driving reasoning must establish which objects matter, where they are, and how they inform the intended action. Text-based rationales can describe a driving response while leaving its correspondence to specific visual evidence implicit. Visual focus provides a concrete starting point for this connection by identifying what matters in the scene and where it is. We propose FocusDrive, a structured multimodal reasoning framework that organizes end-to-end planning around explicit visual focus. It pairs descriptions of decision-relevant objects with image-patch references, bringing explicit visual focus into the reasoning that generates driving plans and trajectories. We first assess this focus representation through driver gaze prediction, then investigate its role in planning reasoning using driving-focus annotations within existing NAVSIM training scenes. Experiments on W3DA and NAVSIM demonstrate competitive gaze prediction and end-to-end planning performance, with FocusDrive improving over text-based chain-of-thought. These results support visual focus as an effective link between scene understanding and driving action.",
+  "abstract_zh": "驾驶决策依赖于关注的对象以及如何对所见进行反应。有效的驾驶推理必须确定哪些对象重要、它们的位置以及它们如何影响预期的行动。基于文本的推理可以描述驾驶反应，但其与特定视觉证据的对应关系往往是隐含的。视觉焦点为这一联系提供了一个具体的起点，通过识别场景中重要的内容及其位置。我们提出了FocusDrive，一个结构化的多模态推理框架，围绕显式视觉焦点组织端到端的规划。它将与决策相关的对象描述与图像块引用相结合，将显式视觉焦点引入生成驾驶计划和轨迹的推理中。我们首先通过驾驶员注视预测评估这一焦点表示，然后利用现有NAVSIM训练场景中的驾驶焦点注释研究其在规划推理中的作用。在W3DA和NAVSIM上的实验表明，FocusDrive在注视预测和端到端规划性能上表现出竞争力，且优于基于文本的思维链。这些结果支持视觉焦点作为场景理解与驾驶行动之间有效的联系。",
+  "arxiv_id": "2609.33190",
+  "arxiv_url": "https://arxiv.org/abs/2609.33190v1",
+  "authors": [
+    "Zhiyuan Liu",
+    "Zehong Ke",
+    "Yuanxin Tian",
+    "Hao Cheng",
+    "Jinhao Li",
+    "Yining Xing",
+    "Yanbo Jiang",
+    "Zhenhua Xu",
+    "Wenhao Yu",
+    "Jianqiang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-33190",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.465451+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.33190v1",
+  "published_at": "2026-09-27T04:17:40Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.33190v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "FocusDrive: Reasoning with Visual Focus for Autonomous Driving",
+  "title_zh": "FocusDrive：基于视觉焦点的自主驾驶推理",
+  "translation_url": "https://hjfy.top/arxiv/2609.33190"
+}

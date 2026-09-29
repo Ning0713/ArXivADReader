@@ -1,0 +1,49 @@
+{
+  "abstract": "Refining a sequence of coarse 3D bounding boxes against a LiDAR point-cloud stream demands tracks that are geometrically accurate (high IoU) and temporally coherent (low roughness), preferably without training data. The usual recipe keeps the two concerns apart: register each frame independently, then smooth the trajectory afterwards with a Kalman~RTS or Savitzky--Golay filter. Smoothing displaces boxes from a geometric optimum and never re-optimises, so it trades accuracy for smoothness. We instead fold the temporal smoothness constraint into a training-free registration objective and solve for all poses jointly with L-BFGS. The payoff depends on how well the object is seen. On well-observed tracks it is large: within the low-roughness budget, the joint objective beats both post-hoc smoothers on paired multi-seed statistics and cuts roughness several-fold relative to frame-wise registration at matched accuracy. Treating visibility as an experimental variable exposes the limit. The advantage decays monotonically as views become one-sided, until it is indistinguishable from zero for near-edge-on objects and slightly negative under a ray-cast simulator with range-dependent density and ego motion, where the decoupled pipeline is in fact ahead at tight roughness budgets. We locate that boundary and trace it to one term: orientation alignment ties yaw to the estimated velocity and fails once that estimate is noisy. A ground-truth-free rule can choose the temporal scale and keep every track inside the roughness budget.",
+  "abstract_zh": "对LiDAR点云流进行粗糙3D边界框序列的精细化要求几何上准确的轨迹（高IoU）和时间上连贯的轨迹（低粗糙度），最好不依赖训练数据。通常的方法将这两个问题分开处理：独立地注册每一帧，然后使用卡尔曼~RTS或Savitzky--Golay滤波器对轨迹进行平滑处理。平滑处理会使边界框偏离几何最优解，并且从不重新优化，因此在平滑性和准确性之间进行了权衡。我们则将时间平滑性约束融入无训练数据的注册目标中，并使用L-BFGS联合求解所有姿态。收益取决于物体的可见性。在观察良好的轨迹上，收益很大：在低粗糙度预算内，联合目标在配对多种子统计上优于两种后处理平滑方法，并在匹配准确度的情况下将粗糙度降低了几倍。将可见性视为实验变量揭示了其极限。当视角变得单侧时，优势单调递减，直到对于近边缘物体几乎无法区分为零，并且在具有范围依赖密度和自我运动的光线投射模拟器下略微为负，此时解耦管道在紧凑的粗糙度预算中实际上处于领先地位。我们确定了这一边界，并将其追溯到一个因素：方向对齐将偏航与估计速度联系在一起，并在该估计噪声较大时失败。一个无真实值的规则可以选择时间尺度，并将每个轨迹保持在粗糙度预算内。",
+  "arxiv_id": "2609.34103",
+  "arxiv_url": "https://arxiv.org/abs/2609.34103v1",
+  "authors": [
+    "Xuesong Li",
+    "Jinguang Tong",
+    "Jie Hong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-34103",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.728413+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.34103v1",
+  "published_at": "2026-09-28T01:41:58Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.34103v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "提出一种无训练数据的联合优化方法，将时间平滑约束融入 LiDAR 点云中连续 3D 边界框的配准，以同时改善几何准确性和轨迹连贯性；并分析该方法在目标可见性较差时的局限。",
+  "tags": {
+    "primary": "3D 检测",
+    "secondary": [
+      "LiDAR/点云",
+      "感知"
+    ]
+  },
+  "title": "A Differentiable Optimization Framework for Registering Sequential Bounding Boxes with Point Cloud Stream",
+  "title_zh": "用于注册顺序边界框与点云流的可微优化框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.34103"
+}

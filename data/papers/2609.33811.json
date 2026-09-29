@@ -1,0 +1,48 @@
+{
+  "abstract": "Motorized two-wheelers (MTW) dominate Indian roads but remain underrepresented in driver behavior research. This study presents the first large-scale analysis of MTW driver gaze behavior in naturalistic, heterogeneous urban traffic, using the \\textit{myEye2Wheeler} dataset. A semantic segmentation pipeline (YOLOv11 + SAM2) was used to extract object-level gaze metrics under two attention modes: direct gaze (foveal overlap) and central vision (parafoveal monitoring). Results reveal a functional division: central vision supports broad monitoring, while direct gaze enables brief, selective sampling. Novice riders exhibit road-anchored scanning, returning to the road between object fixations, while experienced riders form longer chains of attention across multiple objects. The findings suggest that experience primarily refines temporal rhythm rather than altering allocation strategy and reduces object-class effects in gaze patterns. These findings offer new insight into MTW attention structures and inform future work on behavior modeling and safety systems.",
+  "abstract_zh": "机动车两轮车（MTW）在印度道路上占据主导地位，但在驾驶行为研究中仍然被低估。本研究首次对自然环境中异质城市交通中的MTW驾驶者注视行为进行了大规模分析，使用了 extit{myEye2Wheeler}数据集。采用语义分割管道（YOLOv11 + SAM2）提取了在两种注意模式下的对象级注视指标：直接注视（中央重叠）和中央视觉（旁中央监测）。结果揭示了功能上的划分：中央视觉支持广泛监测，而直接注视则使得短暂的选择性采样成为可能。新手骑行者表现出以道路为锚点的扫描行为，在对象注视之间回归道路，而经验丰富的骑行者则在多个对象之间形成更长的注意链。这些发现表明，经验主要是精炼时间节奏，而不是改变分配策略，并减少了注视模式中对象类别的影响。这些发现为MTW注意结构提供了新的见解，并为未来的行为建模和安全系统研究提供了参考。",
+  "arxiv_id": "2609.33811",
+  "arxiv_url": "https://arxiv.org/abs/2609.33811v1",
+  "authors": [
+    "Prerak Srivastava",
+    "Bhaiya Vaibhaw Kumar",
+    "Kavita Vemuri"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-33811",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.504414+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.33811v1",
+  "published_at": "2026-09-27T18:03:16Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.33811v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "基于印度城市自然交通数据，研究比较了新手与经验丰富的摩托车骑行者如何注视道路及周围对象。结果表明，骑行经验主要改变注意切换的节奏和连续性，可为自动驾驶相关的道路安全与人类行为建模提供参考。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": []
+  },
+  "title": "Eyes on the Road: A Naturalistic Comparison of MTW Rider Gaze in Urban Indian Traffic",
+  "title_zh": "关注道路：城市印度交通中摩托车骑行者注视行为的自然比较",
+  "translation_url": "https://hjfy.top/arxiv/2609.33811"
+}

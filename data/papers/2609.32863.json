@@ -1,0 +1,69 @@
+{
+  "abstract": "Vehicle-to-Vehicle (V2V) cooperative perception enhances autonomous driving by enabling vehicles to share information beyond their direct line of sight. However, existing V2V datasets are limited by a small number of participating agents, static collaborator selection strategies, and a significant domain gap between simulated and real-world environments. To overcome these challenges, we introduce SV2V-RSim, a large-scale, multi-modal, near-realistic simulation dataset engineered to elevate agent diversity and realism. Additionally, we present the Select Vehicles Adaptively (SVA) module, which optimizes collaborator selection to balance perception performance against communication bandwidth constraints. Our dataset is generated using the Unreal Engine 5-based simulator that integrates high-fidelity 3D assets, diverse environments, and intricate traffic scenarios. All vehicles within a specified range of the ego vehicle are equipped with sensor suites, enabling dynamic and adaptive collaborator selection. SV2V-RSim encompasses four maps, four weather conditions, six time periods from sunrise to night, 203K LiDAR frames, 402K RGB frames, and 788K annotated 3D bounding boxes across 17 object classes, supporting a range of cooperative perception tasks such as 3D object detection, segmentation, and depth estimation. Benchmarking on recent cooperative perception algorithms demonstrates that SVA achieves a superior performance-bandwidth trade-off, while sim-to-real experiments and No-Reference Image Quality Assessment validate the dataset's high realism and practical effectiveness. Our dataset and code will be publicly available.",
+  "abstract_zh": "车对车（V2V）协作感知通过使车辆能够共享超出其直接视线的信息，从而增强了自主驾驶。然而，现有的V2V数据集受限于参与代理数量少、静态协作选择策略以及模拟与现实环境之间显著的领域差距。为了解决这些挑战，我们引入了SV2V-RSim，这是一个大规模、多模态、近真实的模拟数据集，旨在提升代理的多样性和真实感。此外，我们还提出了自适应选择车辆（SVA）模块，该模块优化了协作伙伴选择，以在感知性能与通信带宽限制之间取得平衡。我们的数据集是使用基于虚幻引擎5的模拟器生成的，该模拟器集成了高保真3D资产、多样化环境和复杂的交通场景。所有在自我车辆指定范围内的车辆都配备了传感器套件，使得动态和自适应的协作伙伴选择成为可能。SV2V-RSim涵盖了四个地图、四种天气条件、从日出到夜晚的六个时间段、203K LiDAR帧、402K RGB帧以及跨17个物体类别的788K标注3D边界框，支持一系列协作感知任务，如3D物体检测、分割和深度估计。对近期协作感知算法的基准测试表明，SVA在性能与带宽的权衡上表现优越，而模拟到现实的实验和无参考图像质量评估验证了数据集的高真实感和实际有效性。我们的数据集和代码将公开发布。",
+  "arxiv_id": "2609.32863",
+  "arxiv_url": "https://arxiv.org/abs/2609.32863v1",
+  "authors": [
+    "Yulu Wu",
+    "Chao Wei",
+    "Jujun Cheng",
+    "Zhangkai Ni",
+    "Haowen Wang",
+    "Dengyang Suo",
+    "Cong Chen",
+    "Xinyi Liu",
+    "Shangce Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32863",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.447651+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32863v1",
+  "published_at": "2026-09-26T18:47:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego vehicle",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "3d object detection",
+      "lidar",
+      "depth estimation",
+      "cooperative perception",
+      "sim-to-real",
+      "深度估计"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32863v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "SV2V-RSim: A Comprehensive Benchmark for Self-Selective V2V Cooperative Perception with Near-Realistic Data",
+  "title_zh": "SV2V-RSim：自选择V2V协作感知的综合基准，基于近真实数据",
+  "translation_url": "https://hjfy.top/arxiv/2609.32863"
+}

@@ -1,0 +1,48 @@
+{
+  "abstract": "This paper proposes a residual learning-based control framework for heterogeneous vehicle platoons subject to parametric uncertainty and external disturbances. A nominal controller designed via Linear Matrix Inequalities (LMIs), along with disturbance-observer compensation, is enhanced by a Recurrent Equilibrium Network (REN) trained offline using stored trajectories and nominal-model prediction errors. The REN is constrained to satisfy a prescribed $\\ell_2$-gain bound, enabling sufficient small-gain conditions for local closed-loop stability and disturbance string stability. Experiments demonstrate reduced spacing and velocity errors relative to the nominal controller.",
+  "abstract_zh": "本文提出了一种基于残差学习的控制框架，适用于受参数不确定性和外部干扰影响的异构车辆编队。通过线性矩阵不等式（Linear Matrix Inequalities, LMIs）设计的名义控制器，结合干扰观测器补偿，利用离线训练的递归平衡网络（Recurrent Equilibrium Network, REN）进行增强，该网络使用存储的轨迹和名义模型预测误差进行训练。REN被约束以满足规定的 $ ext{l}_2$ 增益界限，从而实现局部闭环稳定性和干扰串稳定性的充分小增益条件。实验结果表明，相较于名义控制器，所提方法在间距和速度误差方面有显著降低。",
+  "arxiv_id": "2609.33892",
+  "arxiv_url": "https://arxiv.org/abs/2609.33892v1",
+  "authors": [
+    "Brian Delgado",
+    "Anh-Tu Nguyen",
+    "Hamid Taghavifar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-33892",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.281541+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.33892v1",
+  "published_at": "2026-09-27T20:16:26Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.33892v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "研究异构车辆编队的学习增强控制，将带扰动补偿的名义控制器与受 ℓ₂ 增益约束的递归平衡网络结合，以改善间距和速度误差，并提供局部稳定性与扰动串稳定性保证。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "协同/V2X"
+    ]
+  },
+  "title": "Residual Learning-Based Control of Vehicle Platoons with $\\ell_2$ Stability Guarantees via Recurrent Equilibrium Networks",
+  "title_zh": "基于残差学习的车辆编队控制方法：通过递归平衡网络实现 $ ext{l}_2$ 稳定性保证",
+  "translation_url": "https://hjfy.top/arxiv/2609.33892"
+}

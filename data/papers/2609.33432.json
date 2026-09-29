@@ -1,0 +1,52 @@
+{
+  "abstract": "Manual dense annotation remains a major obstacle to deploying semantic segmentation models in new driving environments. Active domain adaptation (ADA) seeks label-efficient transfer by annotating only a selected portion of the target domain. Existing ADA methods commonly implement this process through multiple rounds of acquisition, annotation, and retraining. We study a practical one-shot image-level setting that selects and densely annotates a fixed target subset in a single round, followed by uninterrupted adaptation. Within this setting, we develop Target-Calibrated Active Domain Adaptation (TC-ADA) as a joint design of complete-image acquisition and target-calibrated adaptation. Stage~1 uses visual representations from a vision foundation model (VFM) together with semantic predictions from a fixed unsupervised domain adaptation model to select representative and informative target images without target annotations. Stage~2 jointly uses labeled source data, labeled target data, and the remaining unlabeled target data, while calibrating source and target supervision under limited target labels. Extensive experiments across five synthetic-to-real and real-to-real driving transfers show consistent improvements over representative ADA baselines. With only 23 to 46 labeled target images on four transfers and 140 on Mapillary, TC-ADA stays within 1.9 mean intersection over union (mIoU) points of target-only full supervision. Code will be available at https://github.com/ywher/TC-ADA.",
+  "abstract_zh": "手动密集标注仍然是将语义分割模型部署到新驾驶环境中的主要障碍。主动领域适应（ADA）通过仅对目标领域的选定部分进行标注，寻求标签高效的迁移。现有的ADA方法通常通过多轮获取、标注和再训练来实现这一过程。我们研究了一种实用的一次性图像级设置，该设置在单轮中选择并密集标注固定的目标子集，随后进行不间断的适应。在这一设置中，我们开发了目标校准主动领域适应（TC-ADA），作为完整图像获取和目标校准适应的联合设计。第一阶段使用来自视觉基础模型（VFM）的视觉表示以及来自固定无监督领域适应模型的语义预测，以在没有目标标注的情况下选择具有代表性和信息量的目标图像。第二阶段共同使用标注的源数据、标注的目标数据和剩余的未标注目标数据，同时在有限的目标标签下校准源和目标监督。在五个合成到真实和真实到真实的驾驶迁移中的广泛实验表明，相较于代表性的ADA基线，TC-ADA consistently shows consistent improvements。仅在四个迁移中使用23到46个标注的目标图像以及在Mapillary上使用140个，TC-ADA的平均交并比（mIoU）仅比目标仅全监督低1.9个点。代码将可在https://github.com/ywher/TC-ADA获取。",
+  "arxiv_id": "2609.33432",
+  "arxiv_url": "https://arxiv.org/abs/2609.33432v1",
+  "authors": [
+    "Weihao Yan",
+    "Yeqiang Qian",
+    "Yueyuan Li",
+    "Tao Li",
+    "Chunxiang Wang",
+    "Ming Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-33432",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.484951+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.33432v1",
+  "published_at": "2026-09-27T10:30:39Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "intersection",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.33432v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "本文提出面向驾驶场景语义分割的一次性主动领域适应方法 TC-ADA，通过选择少量有代表性的目标图像进行标注，并结合源域与目标域数据校准训练，提升跨驾驶环境迁移效果。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "TC-ADA: One-Shot Active Domain Adaptation for Semantic Segmentation",
+  "title_zh": "TC-ADA：用于语义分割的一次性主动领域适应",
+  "translation_url": "https://hjfy.top/arxiv/2609.33432"
+}

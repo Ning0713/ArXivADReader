@@ -1,0 +1,57 @@
+{
+  "abstract": "Autoregressive video diffusion is a promising render-time fixer for 3D Gaussian Splatting (3DGS) in autonomous-driving simulation, but deployment demands high visual quality and temporal consistency at low latency. This is especially hard for one-step causal generation, where each imperfect prediction immediately becomes context for subsequent frames. Existing approaches stabilize rollouts through staged training with multiple modules and rollout-aware regularization, yet one-step quality still falls short of what deployment requires. We introduce OneFixer, a one-step autoregressive video-diffusion fixer trained in a single task-specific adaptation stage. Our key idea is a deployment-matched shared rollout: the model's own one-step predictions serve as the causal context for flow matching, exposing training to deployment-time errors, while the same rollout receives direct pixel-space perceptual supervision to preserve fine detail. Because the predictions optimized for current-frame quality are exactly those reused as future context, fidelity and autoregressive robustness are learned jointly, without bidirectional-to-causal conversion or teacher-student distillation. OneFixer further exploits cues that driving simulation readily provides, lane geometry and dynamic-agent states, to improve geometric fidelity. On Waymo and proprietary driving scenes with 900-frame rollouts, OneFixer achieves the lowest FVD, LPIPS, and DISTS among all baselines at one step, with temporal consistency matching or exceeding multi-stage DMD pipelines. Under identical backbone and conditioning, it matches a multi-stage DMD-with-Self-Forcing pipeline in under half the GPU-hours and keeps improving beyond its plateau. In closed-loop simulation with a driving policy, OneFixer reduces the collision rate by a third relative to raw 3DGS rendering. Project page: https://onefixer-web.vercel.app/",
+  "abstract_zh": "自回归视频扩散是一种有前景的渲染时间修复器，用于自主驾驶模拟中的3D高斯点云（3DGS），但部署要求在低延迟下实现高视觉质量和时间一致性。这对于一步因果生成尤其困难，因为每个不完美的预测立即成为后续帧的上下文。现有方法通过多模块的分阶段训练和滚动预测感知正则化来稳定生成过程，但一步的质量仍然未能达到部署的要求。我们提出了OneFixer，一种在单一任务特定适应阶段训练的一步自回归视频扩散修复器。我们的关键思想是与部署相匹配的共享滚动：模型自身的一步预测作为流匹配的因果上下文，使训练暴露于部署时的错误，同时相同的滚动接收直接的像素空间感知监督，以保留细节。由于为当前帧质量优化的预测正是作为未来上下文重复使用的，因此保真度和自回归鲁棒性是共同学习的，无需双向到因果的转换或教师-学生蒸馏。OneFixer进一步利用驾驶模拟提供的线道几何和动态代理状态等线索，以提高几何保真度。在包含900帧滚动的Waymo和专有驾驶场景中，OneFixer在一步中实现了所有基线中最低的FVD、LPIPS和DISTS，时间一致性与多阶段DMD管道相匹配或超过。在相同的骨干网络和条件下，它在不到一半的GPU小时内匹配了多阶段DMD与自我强制管道，并在其平台上持续改进。在与驾驶策略的闭环模拟中，OneFixer将碰撞率相对于原始3DGS渲染降低了三分之一。项目页面：https://onefixer-web.vercel.app/",
+  "arxiv_id": "2609.32175",
+  "arxiv_url": "https://arxiv.org/abs/2609.32175v1",
+  "authors": [
+    "Boseong Jeon",
+    "Junhyeop Lee",
+    "Juhan Cha",
+    "Hayoung Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32175",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.396170+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32175v1",
+  "published_at": "2026-09-26T02:53:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving policy",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 56
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32175v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "感知"
+    ]
+  },
+  "title": "OneFixer: High-Quality and Consistent One-Step Autoregressive 3DGS Refinement for Driving Scenes",
+  "title_zh": "OneFixer：高质量且一致的一步自回归3D高斯点云（3DGS）驾驶场景精细化",
+  "translation_url": "https://hjfy.top/arxiv/2609.32175"
+}

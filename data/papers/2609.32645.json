@@ -1,0 +1,53 @@
+{
+  "abstract": "Autonomous-driving question answering requires reasoning over structured scene information, yet existing vision-language approaches largely delegate heterogeneous reasoning operations to a single neural inference process. We argue that this uniform strategy overlooks a fundamental distinction: some queries admit exact symbolic solutions, while others require semantic interpretation. We introduce a query-adaptive neuro-symbolic reasoning framework that explicitly allocates computation according to the nature of the query. At its core is a hierarchical Spatiotemporal Scene Graph (STSG) that separates persistent object identities from frame-specific states and represents spatial relations and temporal transitions as explicit directed structures. Given a query, a symbolic executor first attempts to resolve it through exact graph operations; only when symbolic execution abstains is an LLM invoked for semantic reasoning. For these unresolved queries, query-conditioned graph retrieval and evidence filtering preserve relation direction, temporal locality, and object semantics, providing the LLM with compact and verified task-relevant evidence. This design shifts the role of the LLM from a universal reasoning engine to a targeted semantic reasoner, while allowing deterministic computation to be handled exactly and efficiently. We evaluate the framework on 5,916 NuScenes-QA questions across all ten scenes of nuScenes v1.0-mini under an oracle-perception setting. The complete system achieves 80.63 percent overall accuracy with GPT-5.4-mini, improving over the corresponding LLM-only configuration by 5.48 percentage points; with DeepSeek-V4-Flash, the improvement reaches 6.64 points. The largest gains occur on counting questions, with improvements of 10.20 and 12.61 points, respectively. These results show that selective reasoning improves both accuracy and inference efficiency.",
+  "abstract_zh": "自动驾驶问答需要对结构化场景信息进行推理，但现有的视觉-语言方法在很大程度上将异构推理操作委托给单一的神经推理过程。我们认为，这种统一策略忽视了一个基本区别：某些查询可以通过精确的符号解决方案来解决，而其他查询则需要语义解释。我们提出了一种查询自适应的神经符号推理框架，该框架根据查询的性质明确分配计算资源。其核心是一个分层时空场景图（Spatiotemporal Scene Graph, STSG），该图将持久对象身份与帧特定状态分开，并将空间关系和时间过渡表示为明确的有向结构。给定一个查询，符号执行器首先尝试通过精确的图操作来解决该查询；只有在符号执行无法解决时，才会调用大型语言模型（LLM）进行语义推理。对于这些未解决的查询，基于查询的图检索和证据过滤保持关系方向、时间局部性和对象语义，为LLM提供紧凑且经过验证的任务相关证据。这种设计将LLM的角色从通用推理引擎转变为有针对性的语义推理器，同时允许确定性计算被精确且高效地处理。我们在nuScenes v1.0-mini的十个场景中对5,916个NuScenes-QA问题评估了该框架，采用了oracle感知设置。完整系统在使用GPT-5.4-mini时实现了80.63%的整体准确率，相较于相应的仅LLM配置提高了5.48个百分点；使用DeepSeek-V4-Flash时，提升达到了6.64个百分点。最大增益出现在计数问题上，分别提高了10.20和12.61个百分点。这些结果表明，选择性推理提高了准确性和推理效率。",
+  "arxiv_id": "2609.32645",
+  "arxiv_url": "https://arxiv.org/abs/2609.32645v1",
+  "authors": [
+    "Yiyao Wang",
+    "Pei Liu",
+    "Fangzhou Liu",
+    "Jun Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-29#paper-2609-32645",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-29T11:01:00.614922+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.32645v1",
+  "published_at": "2026-09-26T14:05:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-09-29"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.32645v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-29"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "VLM/VLA"
+    ]
+  },
+  "title": "From Scene Graphs to Answers: Selective Neuro-Symbolic Reasoning for Autonomous Driving",
+  "title_zh": "从场景图到答案：用于自动驾驶的选择性神经符号推理",
+  "translation_url": "https://hjfy.top/arxiv/2609.32645"
+}
