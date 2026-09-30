@@ -1,0 +1,53 @@
+{
+  "abstract": "Traffic signal control (TSC) is essential for improving urban mobility and reducing congestion. Although roadside cameras are widely deployed at signalized intersections and provide rich visual observations of evolving traffic, existing TSC methods typically rely on manually engineered traffic states or separate perception modules, creating a gap between physical observations and control decisions. We present VLALight, the first vision-language-action (VLA) model for end-to-end traffic signal control from multi-view roadside videos. VLALight directly maps visual observations to coordinated signal actions through multi-target spatiotemporal traffic reasoning and topology-aware cooperative perception across intersections. To establish this capability, we develop a two-stage supervised cold-start training strategy for visual traffic understanding and signal decision-making, followed by cooperative agentic reinforcement learning that jointly optimizes local control and network-wide traffic efficiency. Furthermore, VLALight introduces adaptive fast and slow reasoning modes, enabling the policy to allocate deeper reasoning only when additional deliberation provides sufficient control benefits. Through balanced mode-aware rollouts and relative advantage optimization, VLALight learns to trade off decision quality and inference cost. Extensive experiments on seven real-world traffic-flow datasets across three urban networks demonstrate that VLALight consistently outperforms transportation-based, RL-based, and LLM/VLM-based baselines. Ablation studies validate the effectiveness of cooperative perception, network-level optimization, and adaptive reasoning. These results demonstrate the potential of VLA models for real-world physical traffic control. Our project is available at https://github.com/usail-hkust/VLALight.git.",
+  "abstract_zh": "交通信号控制（TSC）对于改善城市流动性和减少拥堵至关重要。尽管路边摄像头在信号交叉口广泛部署，并提供了丰富的动态交通视觉观察，现有的TSC方法通常依赖于手工设计的交通状态或独立的感知模块，从而在物理观察与控制决策之间产生了差距。我们提出了VLALight，这是第一个用于从多视角路边视频进行端到端交通信号控制的视觉-语言-动作（VLA）模型。VLALight通过多目标时空交通推理和交叉口拓扑感知协作，直接将视觉观察映射到协调的信号动作。为了建立这一能力，我们开发了一种两阶段的监督冷启动训练策略，用于视觉交通理解和信号决策，随后进行协作智能体强化学习，以共同优化局部控制和网络范围内的交通效率。此外，VLALight引入了自适应快慢推理模式，使得策略能够在额外的深度推理提供足够的控制收益时，分配更深的推理。通过平衡模式感知的回合和相对优势优化，VLALight学会了在决策质量和推理成本之间进行权衡。在三个城市网络的七个真实交通流数据集上进行的广泛实验表明，VLALight始终优于基于交通的、基于强化学习的以及基于大语言模型/视觉语言模型的基线。消融研究验证了协作感知、网络级优化和自适应推理的有效性。这些结果展示了VLA模型在现实物理交通控制中的潜力。我们的项目可在 https://github.com/usail-hkust/VLALight.git 获取。",
+  "arxiv_id": "2609.36934",
+  "arxiv_url": "https://arxiv.org/abs/2609.36934v1",
+  "authors": [
+    "Pan Zhang",
+    "Siqi Lai",
+    "Kemu Dong",
+    "Hao Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36934",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.614399+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36934v1",
+  "published_at": "2026-09-29T07:48:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "roadside",
+      "交通",
+      "vision-language-action",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 23
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36934v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "端到端驾驶"
+    ]
+  },
+  "title": "VLALight: A Vision-Language-Action Model for Traffic Signal Control",
+  "title_zh": "VLALight：一种用于交通信号控制的视觉-语言-动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.36934"
+}

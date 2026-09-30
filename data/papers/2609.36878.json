@@ -1,0 +1,57 @@
+{
+  "abstract": "LiDAR return intensity provides complementary surface-response cues for robotic perception and state estimation, yet many simulation pipelines omit it or reproduce it using reconstruction methods that require real intensity supervision and per-scene optimization. These requirements increase data-collection and fitting costs and limit reuse across simulated scenes. We present NIDAR, a feed-forward framework that synthesizes dense intensity-like observations from RGB appearance and simulator geometry. NIDAR combines pretrained pseudo-NIR translation, hierarchical intrinsic decomposition, geometry-aware modulation, and source-domain distribution calibration to transfer reflectance-related image cues to simulated point clouds. Its learned components are trained offline using Waymo data; their weights and calibration remain fixed during evaluation on Waymo and nuScenes. Deployment therefore requires neither target-scene intensity labels nor target-scene gradient-based fitting. The reported comparisons show competitive pixel-wise accuracy and favorable structural and perceptual fidelity against the evaluated reconstruction baselines. A controlled pseudo-NIR-versus-RGB diagnostic further shows that the pseudo-NIR prior is most beneficial when used through the paper-aligned reflectance-and-remapping route, rather than as a simple direct intensity regressor. We further integrate NIDAR with Unreal Engine 5, Isaac Sim, and a generative LiDAR pipeline. Two intensity-aware SLAM systems evaluated in two simulated indoor scenes suggest potential downstream utility, but do not constitute real-robot validation. NIDAR therefore offers a scalable intensity-synthesis interface for the evaluated settings; cross-wavelength, camera-configuration, embedded, and real-sensor validation remain future work.",
+  "abstract_zh": "激光雷达返回强度为机器人感知和状态估计提供了补充的表面响应线索，但许多仿真管道要么省略了它，要么使用需要真实强度监督和逐场景优化的重建方法来再现它。这些要求增加了数据收集和拟合成本，并限制了在模拟场景中的重用。我们提出了NIDAR，这是一个前馈框架，能够从RGB外观和模拟器几何体合成密集的类似强度的观测。NIDAR结合了预训练的伪近红外（pseudo-NIR）转换、分层内在分解、几何感知调制和源域分布校准，将与反射率相关的图像线索转移到模拟点云。其学习组件使用Waymo数据进行离线训练；在Waymo和nuScenes的评估过程中，其权重和校准保持固定。因此，部署不需要目标场景的强度标签或基于梯度的拟合。报告的比较显示，与评估的重建基线相比，NIDAR在像素级准确性、结构和感知保真度方面具有竞争力。通过控制的伪近红外与RGB诊断进一步表明，伪近红外先验在通过纸张对齐的反射率和重映射路径使用时最为有利，而不是作为简单的直接强度回归器。我们进一步将NIDAR与虚幻引擎5、Isaac Sim和生成性激光雷达管道集成。在两个模拟室内场景中评估的两个强度感知SLAM系统表明了潜在的下游应用，但并不构成真实机器人验证。因此，NIDAR为评估的设置提供了可扩展的强度合成接口；跨波长、相机配置、嵌入式和真实传感器验证仍然是未来的工作。",
+  "arxiv_id": "2609.36878",
+  "arxiv_url": "https://arxiv.org/abs/2609.36878v1",
+  "authors": [
+    "Junjie Zhang",
+    "Jie Yin",
+    "Kefei Qian",
+    "Jie Li",
+    "Mengpei Jia",
+    "Yajuan Dun",
+    "Wenbo Chu",
+    "Guofa Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36878",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.398194+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36878v1",
+  "published_at": "2026-09-29T07:11:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "lidar",
+      "点云",
+      "robot",
+      "robotic",
+      "诊断"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36878v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "感知"
+    ]
+  },
+  "title": "NIDAR: NIR-Guided Intrinsic Decomposition for Scalable Scene-Agnostic LiDAR Intensity Reconstruction",
+  "title_zh": "NIDAR：基于近红外引导的内在分解用于可扩展的场景无关激光雷达强度重建",
+  "translation_url": "https://hjfy.top/arxiv/2609.36878"
+}

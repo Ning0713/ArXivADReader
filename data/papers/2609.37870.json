@@ -1,0 +1,53 @@
+{
+  "abstract": "Raindrops adhered to camera lens or windshield are inevitable in rainy scenes and can become an issue for many computer vision systems such as autonomous driving. Because raindrop appearance is affected by too many parameters, therefore it is unlikely to find an effective model based solution. Learning based methods are also problematic, because traditional learning method cannot properly model the complex appearance. Whereas deep learning method lacks sufficiently large and realistic training data. To solve it, in our work, we propose the first photo-realistic dataset of synthetic adherent raindrops for training. The rendering is physics based with consideration of the water dynamic, geometric and photometry. The dataset contains various types of rainy scenes and particularly the rainy driving scenes. Based on the modeling of raindrop imagery, we introduce a detection network which has the awareness of the raindrop refraction as well as its blurring. Based on that, we propose the removal network that can well recover the image structure. Rigorous experiments demonstrate the state-of-the-art performance of our proposed framework.",
+  "abstract_zh": "附着在相机镜头或挡风玻璃上的雨滴在雨天场景中是不可避免的，这对许多计算机视觉系统（如自动驾驶）造成了问题。由于雨滴的外观受到过多参数的影响，因此找到有效的基于模型的解决方案是不太可能的。基于学习的方法也存在问题，因为传统的学习方法无法正确建模复杂的外观。而深度学习方法则缺乏足够大且真实的训练数据。为了解决这个问题，我们提出了第一个用于训练的合成附着雨滴的照片级真实数据集。该渲染基于物理，考虑了水的动态、几何和光度。数据集包含各种类型的雨天场景，特别是雨天驾驶场景。基于雨滴图像的建模，我们引入了一个检测网络，该网络能够感知雨滴的折射及其模糊。基于此，我们提出了一个去除网络，可以很好地恢复图像结构。严格的实验表明我们提出的框架具有最先进的性能。",
+  "arxiv_id": "2609.37870",
+  "arxiv_url": "https://arxiv.org/abs/2609.37870v1",
+  "authors": [
+    "Zhixiang Hao",
+    "Shaodi You",
+    "Yu Li",
+    "Kunming Li",
+    "Feng Lu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-37870",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.540813+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.37870v1",
+  "published_at": "2026-09-29T15:48:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.37870v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "Learning from synthetic photorealistic raindrop for single image raindrop removal",
+  "title_zh": "基于合成照片级真实雨滴的单幅图像雨滴去除学习",
+  "translation_url": "https://hjfy.top/arxiv/2609.37870"
+}

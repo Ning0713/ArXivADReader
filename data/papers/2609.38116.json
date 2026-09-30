@@ -1,0 +1,53 @@
+{
+  "abstract": "Long-tailed 3D object detection is treated as a class-frequency problem, but LiDAR supervision quality depends on object observability: similar frequencies can hide different geometric evidence. We introduce Geometry-Augmented Exponentially Weighted Instance-Aware Repeat Factor Sampling (GA-EIRFS), a detector-agnostic method that modulates a frequency-based repeat factor with a fixed geometry score combining point count, surface-normal entropy, and surface coverage. GA-EIRFS changes only frame-sampling probabilities, leaving the detector and inference unchanged. On nuScenes it improves mean average precision (mAP) and the nuScenes detection score (NDS) in four converged experiments with CenterPoint and PointPillars over two seeds; for CenterPoint at seed 666, mAP rises from 0.552 to 0.563 and bicycle AP from 0.306 to 0.359. Per-class gains correlate with the class sampling-weight increase (Spearman rho=0.70, p=0.025) but not with geometry score alone (rho=0.32, p=0.37), so geometry amplifies frequency-driven need. KITTI results vary across seeds, most for the rarest class. Code: https://github.com/Multimodal-Sensing-Lab/GA-EIRFS.",
+  "abstract_zh": "长尾3D目标检测被视为一个类别频率问题，但LiDAR的监督质量依赖于目标的可观测性：相似的频率可能掩盖不同的几何证据。我们提出了几何增强指数加权实例感知重复因子采样（GA-EIRFS），这是一种与检测器无关的方法，通过结合点数、表面法线熵和表面覆盖率的固定几何得分来调节基于频率的重复因子。GA-EIRFS仅改变帧采样概率，保持检测器和推理不变。在nuScenes上，它在与CenterPoint和PointPillars的四个收敛实验中，提升了平均精度均值（mAP）和nuScenes检测得分（NDS），在两个种子上进行测试；对于种子666下的CenterPoint，mAP从0.552提高到0.563，自行车AP从0.306提高到0.359。每类的增益与类别采样权重的增加相关（Spearman rho=0.70，p=0.025），但与几何得分单独无关（rho=0.32，p=0.37），因此几何增强了基于频率的需求。KITTI的结果在不同种子间变化，尤其是对于最稀有的类别。代码：https://github.com/Multimodal-Sensing-Lab/GA-EIRFS。",
+  "arxiv_id": "2609.38116",
+  "arxiv_url": "https://arxiv.org/abs/2609.38116v1",
+  "authors": [
+    "Taufiq Ahmed",
+    "Constantino Álvarez Casado",
+    "Daniel Herrera Castro",
+    "Sasan Sharifipour",
+    "Abhishek Kumar",
+    "Miguel Bordallo López"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-38116",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.551609+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38116v1",
+  "published_at": "2026-09-29T17:50:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "3d object detection",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38116v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "3D 检测"
+    ]
+  },
+  "title": "GA-EIRFS: A Geometry-Augmented Repeat-Factor Sampling Method for Long-Tailed LiDAR 3D Object Detection",
+  "title_zh": "GA-EIRFS：一种用于长尾LiDAR 3D目标检测的几何增强重复因子采样方法",
+  "translation_url": "https://hjfy.top/arxiv/2609.38116"
+}

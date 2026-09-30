@@ -1,0 +1,61 @@
+{
+  "abstract": "Average performance on routine driving benchmarks does not establish planner reliability under rare, safety-critical hazards. We proposed ExceptionDrive, a counterfactual planning benchmark that uses VLM-assisted screening, localized multi-view editing, and quality auditing to insert hazards into real nuScenes scenes while preserving their context. Its 21 tasks span six safety families and define hazard or conflict regions, local safety constraints, and acceptable responses. Because hazard insertion can invalidate the recorded human trajectory, our reference-free protocol evaluates edited predictions using Unsafe Rate (UR), Hazard Clearance Compliance (HCC), Hazard Proximity Response (HPR), and Counterfactual Trajectory Shift (CTS), which measure core-region intrusion, clearance compliance, clearance relative to a prescribed margin, and counterfactual trajectory change. Seven representative planners frequently intrude into hazard regions or provide insufficient clearance. We also develop a Reminder Agent that, without sample-specific task labels, converts visual evidence and the shared taxonomy into structured records of hazard presence, type, and a recommended high-level strategy. The agent neither predicts trajectories nor controls the vehicle; its records guide a VLM-based decision agent. In zero-shot experiments, the reminders improve strategy accuracy and reduce under-warning.",
+  "abstract_zh": "在常规驾驶基准测试中的平均表现并不能确立规划者在稀有的、安全关键的危险情况下的可靠性。我们提出了ExceptionDrive，一个反事实规划基准，利用VLM辅助筛选、本地多视角编辑和质量审计，将危险插入真实的nuScenes场景中，同时保持其上下文。其21个任务涵盖六个安全类别，并定义了危险或冲突区域、本地安全约束和可接受的反应。由于危险插入可能使记录的人类轨迹失效，我们的无参考协议使用不安全率（Unsafe Rate, UR）、危险清除合规性（Hazard Clearance Compliance, HCC）、危险接近反应（Hazard Proximity Response, HPR）和反事实轨迹变化（Counterfactual Trajectory Shift, CTS）来评估编辑后的预测，这些指标分别衡量核心区域的侵入、清除合规性、相对于规定边际的清除情况以及反事实轨迹变化。七个代表性的规划者经常侵入危险区域或提供不足的清除。我们还开发了一个提醒代理（Reminder Agent），该代理在没有特定样本任务标签的情况下，将视觉证据和共享分类法转换为危险存在、类型和推荐的高层次策略的结构化记录。该代理既不预测轨迹，也不控制车辆；其记录为基于VLM的决策代理提供指导。在零样本实验中，提醒提高了策略的准确性并减少了预警不足的情况。",
+  "arxiv_id": "2609.37871",
+  "arxiv_url": "https://arxiv.org/abs/2609.37871v1",
+  "authors": [
+    "Ziyi Luo",
+    "Zhe Sun",
+    "Yehao Lu",
+    "Lei Zhou",
+    "Lisheng Wu",
+    "Xuewei Li",
+    "Zequn Qin",
+    "Xi Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-37871",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.425751+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.37871v1",
+  "published_at": "2026-09-29T15:48:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.37871v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "VLM/VLA"
+    ]
+  },
+  "title": "ExceptionDrive: A Planning-Oriented Counterfactual Corner-Case Benchmark for Autonomous Driving",
+  "title_zh": "ExceptionDrive：面向规划的反事实边缘案例基准测试用于自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2609.37871"
+}

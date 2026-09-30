@@ -1,0 +1,66 @@
+{
+  "abstract": "Vehicle-infrastructure cooperation can complement onboard sensing with broader and more informative observations of the traffic environment, providing valuable support for end-to-end autonomous driving. However, existing cooperative driving methods mainly exploit roadside information to enhance the representation of the current scene, while the future consequences of prospective driving actions are rarely modeled explicitly. This limits the ability of the planner to anticipate how its decisions may interact with the evolving traffic environment. To address this issue, we propose V2X-WAM, a cooperative world action model that tightly couples cooperative scene understanding, action generation, and future-world reasoning. V2X-WAM constructs a reliability-aware spatiotemporal representation from vehicle- and infrastructure-side observations, while compressing infrastructure information into a compact quantized message for efficient communication. Based on the resulting cooperative representation, a multimodal planner generates prospective trajectories, which explicitly condition future occupancy and dynamic-flow prediction. The predicted world consequences are then fed back to refine the planned trajectory, forming a closed interaction between action and future-world evolution. Experiments on a large-scale real-world cooperative driving dataset demonstrate that V2X-WAM consistently improves planning accuracy and safety over representative end-to-end cooperative driving methods, while achieving stronger future-world prediction and substantially lower communication overhead. Ablation studies further validate the effectiveness of the proposed design.",
+  "abstract_zh": "车辆与基础设施的合作可以通过更广泛和更具信息量的交通环境观察来补充车载传感器，为端到端自主驾驶提供宝贵支持。然而，现有的协作驾驶方法主要利用路边信息来增强当前场景的表示，而对未来潜在驾驶行为后果的建模却很少。这限制了规划者预测其决策如何与不断变化的交通环境相互作用的能力。为了解决这个问题，我们提出了V2X-WAM，一种紧密结合协作场景理解、动作生成和未来世界推理的协作世界动作模型。V2X-WAM从车辆和基础设施的观察中构建了一个可靠性感知的时空表示，同时将基础设施信息压缩成紧凑的量化消息以实现高效通信。基于所得到的协作表示，多模态规划器生成潜在轨迹，这些轨迹明确地影响未来的占用和动态流预测。然后，将预测的世界后果反馈以优化规划轨迹，形成动作与未来世界演变之间的闭环交互。在一个大规模的真实世界协作驾驶数据集上的实验表明，V2X-WAM在规划准确性和安全性方面始终优于代表性的端到端协作驾驶方法，同时实现了更强的未来世界预测和显著更低的通信开销。消融研究进一步验证了所提设计的有效性。",
+  "arxiv_id": "2609.37098",
+  "arxiv_url": "https://arxiv.org/abs/2609.37098v1",
+  "authors": [
+    "Junwei You",
+    "Weizhe Tang",
+    "Can Wang",
+    "Yan Zhao",
+    "Jun Hua",
+    "Haotian Shi",
+    "Wei Zhang",
+    "Lin Wang",
+    "Bin Ran"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-37098",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.404312+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.37098v1",
+  "published_at": "2026-09-29T09:20:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "v2x",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "roadside",
+      "驾驶",
+      "车辆",
+      "交通",
+      "occupancy"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.37098v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "BEV/Occupancy",
+      "端到端驾驶"
+    ]
+  },
+  "title": "V2X-WAM: A Cooperative World Action Model for End-to-End Autonomous Driving",
+  "title_zh": "V2X-WAM：一种用于端到端自主驾驶的协作世界动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.37098"
+}

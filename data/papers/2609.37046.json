@@ -1,0 +1,55 @@
+{
+  "abstract": "Vision-Language Models are increasingly used in autonomous-driving systems, yet their ability to recover dynamic physical state from visual input remains insufficiently characterized. We study velocity understanding as a controlled diagnostic across three tasks: surrounding-agent speed, current ego speed, and short-horizon future ego-speed proposal. On nuScenes, we evaluate open-weight general-purpose and PhysicalAI VLMs, together with the driving-oriented Alpamayo-1.5 Vision-Language-Action model, using multiple input and output formulations. We combine verbal evaluation with temporal perturbations, counterfactual ego-speed hints and linear probes of hidden representations. The tasks exhibit distinct failure modes. Surrounding-agent speed is weakly encoded in an agent-specific form, whereas current ego speed is often internally accessible but poorly verbalized: continuous probes achieve 4.7-5.8 km/h MAE compared with 10.2-16.8 km/h MAE for verbal outputs. Multiple frames provide inconsistent verbal gains to single frame inputs, and frame order is rarely exploited. Under non-optimized QLoRA, task-specific adaptation improves both task-relevant latent speed representations and verbal readout, but continuous surrounding-agent speed estimation remains weak, while most future-speed gains survive frame shuffling, indicating limited temporal grounding. Driving specialized Alpamayo-1.5 shows stronger latent representations for surrounding-agent and future ego speed, while current ego-speed decodability is comparable and substantial probe-verbal gaps remain. Thus, driving specialization can strengthen motion representations but does not guarantee stronger encoding across both scene and ego states or reliable readout. The results show that plausible planning outputs do not necessarily imply reliable recovery or temporal grounding of the underlying dynamic state.",
+  "abstract_zh": "视觉语言模型在自主驾驶系统中的应用日益增多，但它们从视觉输入中恢复动态物理状态的能力仍然不足以充分表征。我们将速度理解作为一个受控诊断，研究三个任务：周围代理的速度、当前自我速度和短期未来自我速度的提议。在 nuScenes 数据集上，我们评估了开放权重的通用模型和 PhysicalAI 视觉语言模型，以及专注于驾驶的 Alpamayo-1.5 视觉语言行动模型，采用多种输入和输出形式。我们结合了语言评估与时间扰动、反事实自我速度提示和隐藏表示的线性探测。这些任务展现出不同的失败模式。周围代理的速度以代理特定的形式弱编码，而当前自我速度通常在内部可访问，但口头表达较差：连续探测的平均绝对误差（MAE）为 4.7-5.8 km/h，而口头输出的 MAE 为 10.2-16.8 km/h。多个帧对单帧输入提供的不一致的语言增益，且帧顺序很少被利用。在未优化的 QLoRA 下，任务特定的适应性改善了任务相关的潜在速度表示和语言输出，但连续的周围代理速度估计仍然较弱，而大多数未来速度增益在帧洗牌后依然存在，表明时间基础有限。专注于驾驶的 Alpamayo-1.5 在周围代理和未来自我速度的潜在表示上表现更强，而当前自我速度的可解码性相当，且显著的探测与语言输出之间的差距依然存在。因此，驾驶专业化可以增强运动表示，但并不保证在场景和自我状态之间的更强编码或可靠的输出。结果表明，合理的规划输出并不一定意味着对潜在动态状态的可靠恢复或时间基础的可靠性。",
+  "arxiv_id": "2609.37046",
+  "arxiv_url": "https://arxiv.org/abs/2609.37046v1",
+  "authors": [
+    "Katharina Winter",
+    "Stefan Englmeier",
+    "Fabian B. Flohr"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-37046",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.489065+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.37046v1",
+  "published_at": "2026-09-29T08:54:45Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 67
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.37046v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "Speed in the Blind Spot: An Interpretability Analysis of Dynamic Perception in VLMs for Autonomous Driving",
+  "title_zh": "盲区中的速度：对自主驾驶中视觉语言模型动态感知的可解释性分析",
+  "translation_url": "https://hjfy.top/arxiv/2609.37046"
+}

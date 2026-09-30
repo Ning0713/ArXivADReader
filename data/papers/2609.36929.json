@@ -1,0 +1,48 @@
+{
+  "abstract": "Recent event-based depth estimation methods successfully transfer geometric priors from vision foundation models via cross-modal distillation. However, their reliance on synchronized RGB-event pairs or depth annotations during training severely restricts practical deployment. To overcome this bottleneck, we propose SFE-VGGT, a novel source-free framework that distills the geometric priors of VGGT to the event domain without any paired RGB observations. Our core idea is to reconstruct surrogate frames directly from the target event stream to act as a frozen geometric teacher, entirely eliminating the need for genuine source RGB data. Crucially, as these surrogate frames inherently yield imperfect and spatially varying supervision, directly distilling from them propagates artifacts. To resolve this, we introduce a novel reliability-aware distillation strategy. This includes Density-Aware Feature Distillation to emphasize informative event regions, and Confidence-Weighted Depth Distillation to dynamically regulate supervision based on relative teacher-student prediction confidence. Meanwhile, we propose a Cross-Frame Relational Consistency loss that enforces temporal geometric stability using reliable inter-frame correspondences, bypassing the need for temporally consistent teacher's depth. Extensive experiments demonstrate that, despite source-free, our SFE-VGGT closely matches the accuracy of RGB-dependent baselines under standard conditions and significantly surpasses them in challenging nighttime scenarios. Across MVSEC nighttime sequences, SFE-VGGT reduces the average 10 m depth error by 15.3% compared with EventVGGT. Moreover, our method exhibits robust zero-shot generalization across real-world datasets, proving that highly effective geometric priors can be transferred to event cameras using strictly source-free supervision.",
+  "abstract_zh": "近期基于事件的深度估计方法通过跨模态蒸馏成功地将几何先验从视觉基础模型转移。然而，它们在训练过程中对同步的 RGB-事件对或深度注释的依赖严重限制了实际应用。为了解决这一瓶颈，我们提出了 SFE-VGGT，这是一种新颖的无源框架，能够在没有任何配对 RGB 观测的情况下将 VGGT 的几何先验蒸馏到事件域。我们的核心思想是直接从目标事件流重建替代帧，以作为一个静态几何教师，完全消除对真实源 RGB 数据的需求。至关重要的是，由于这些替代帧本质上产生不完美且空间变化的监督，直接从它们进行蒸馏会传播伪影。为了解决这个问题，我们引入了一种新颖的可靠性感知蒸馏策略。这包括密度感知特征蒸馏，以强调信息丰富的事件区域，以及置信加权深度蒸馏，以根据相对教师-学生预测置信度动态调整监督。同时，我们提出了一种跨帧关系一致性损失，通过可靠的帧间对应关系强制执行时间几何稳定性，避免了对时间一致的教师深度的需求。大量实验表明，尽管是无源的，我们的 SFE-VGGT 在标准条件下的准确性与依赖 RGB 的基线模型非常接近，并在具有挑战性的夜间场景中显著超越它们。在 MVSEC 夜间序列中，与 EventVGGT 相比，SFE-VGGT 将平均 10 米深度误差降低了 15.3%。此外，我们的方法在真实世界数据集上表现出强大的零样本泛化能力，证明了高度有效的几何先验可以通过严格的无源监督转移到事件相机上。",
+  "arxiv_id": "2609.36929",
+  "arxiv_url": "https://arxiv.org/abs/2609.36929v1",
+  "authors": [
+    "Thai Duy Nguyen",
+    "Addison Lin Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36929",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.478305+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36929v1",
+  "published_at": "2026-09-29T07:44:38Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36929v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "本文提出一种无源事件相机单目深度估计方法 SFE-VGGT，通过从事件流重建替代帧，将 VGGT 的几何先验迁移到事件域，无需配对 RGB 图像或深度标注。方法结合密度感知特征蒸馏、置信加权深度蒸馏和跨帧关系一致性约束，以降低替代帧伪影并提升时序几何稳定性。在 MVSEC 夜间序列上，平均 10 米深度误差较 EventVGGT 降低 15.3%，并展现出跨真实数据集的零样本泛化能力。该方法属于自动驾驶感知中的事件视觉与单目深度估计方向，具有夜间和低照度环境应用价值。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "SFE-VGGT: Source-Free VGGT Distillation for Event-Based Monocular Depth Estimation",
+  "title_zh": "SFE-VGGT：无源 VGGT 蒸馏用于基于事件的单目深度估计",
+  "translation_url": "https://hjfy.top/arxiv/2609.36929"
+}

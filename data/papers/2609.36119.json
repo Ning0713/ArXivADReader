@@ -1,0 +1,47 @@
+{
+  "abstract": "Spatial-temporal (ST) forecasting underpins many real-world systems such as traffic, climate, and energy networks. While existing methods implicitly assume strong spatiotemporal coupling, we observe that real-world ST data exhibits distinct coupling regimes, ranging from temporal-dominated and spatial-dominated to strongly coupled patterns. This mismatch causes current models to suffer from spurious dependencies and degraded performance when one correlation dominates. To overcome this limitation, we aim to dynamically modulate spatial and temporal modeling based on the data's inherent coupling structure. However, three key challenges exist: unknown coupling structure, heterogeneous coupling dynamics, and suboptimal spatial modeling. We propose AdaST, an adaptive ST forecasting framework that tackles these challenges through a decompose-recompose paradigm. AdaST factorizes inputs into components capturing different coupling patterns using heterogeneity-aware experts. Each component is processed by role-aligned modules, and a correlation-informed adaptive recomposer integrates them for final prediction. Extensive experiments confirm that AdaST significantly outperforms state-of-the-art baselines, validating the necessity of an adaptive approach.",
+  "abstract_zh": "时空（ST）预测是许多现实世界系统的基础，例如交通、气候和能源网络。现有方法隐含地假设强时空耦合，但我们观察到现实世界的ST数据表现出不同的耦合模式，从以时间为主导、以空间为主导到强耦合模式。这种不匹配导致当前模型在某一相关性占主导时出现虚假依赖和性能下降。为了克服这一限制，我们旨在根据数据的固有耦合结构动态调节空间和时间建模。然而，存在三个关键挑战：未知的耦合结构、异质的耦合动态和次优的空间建模。我们提出了AdaST，一个自适应的ST预测框架，通过分解-重组范式来解决这些挑战。AdaST利用关注异质性的专家将输入分解为捕捉不同耦合模式的组件。每个组件由角色对齐的模块处理，相关性信息驱动的自适应重组器将它们整合以进行最终预测。大量实验确认AdaST显著优于最先进的基线，验证了自适应方法的必要性。",
+  "arxiv_id": "2609.36119",
+  "arxiv_url": "https://arxiv.org/abs/2609.36119v1",
+  "authors": [
+    "Zhenyu Lei",
+    "Chenghao Liu",
+    "Yushun Dong",
+    "Qi R. Wang",
+    "Jundong Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36119",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.571492+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36119v1",
+  "published_at": "2026-09-28T18:52:12Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36119v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "提出AdaST自适应时空预测框架，通过异质性感知专家分解不同耦合模式，并利用角色对齐模块和相关性驱动的自适应重组器完成预测。该方法面向交通等时空网络中的动态耦合变化，可为自动驾驶中的交通状态预测和行为预测提供潜在技术支持。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "AdaST: Adaptive Coupling for Spatial-Temporal Forecasting",
+  "title_zh": "AdaST：用于时空预测的自适应耦合",
+  "translation_url": "https://hjfy.top/arxiv/2609.36119"
+}

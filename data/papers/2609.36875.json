@@ -1,0 +1,53 @@
+{
+  "abstract": "Accurate instance segmentation in dynamic scenes is important for downstream applications such as robotics and autonomous driving. Existing Segment Anything models operate primarily on 2D image or video masks and preserve identity through sequential memory, while promptable 4D instance segmentation built upon feed-forward visual geometry remains underexplored. We introduce S4VY, a Segment Anything model built on feed-forward 4D visual geometry. From a set of RGB observations, S4VY transforms shared visual-geometric features into an exhaustive set of class-agnostic 4D instance masks through a space-time query decoder, with each persistent object query binding one entity across all observations. This representation supports prompt-independent segmentation as well as point- and box- conditioned selection, without requiring a seed mask or temporal ordering. We further develop an agentic harness for natural-language grounding in the large observation space of a 4D scene. Active tree search identifies relevant frames without scanning every fixed window; a dual-stream grounder combines fine-grained VLM visual priors with geometry-consistent instance features through complementary bounding-box prediction and object-query matching; and an independent critic selects the final 4D instance mask from their predictions. Extensive experiments demonstrate state-of-the-art 4D instance segmentation and strong language-guided grounding performance under a unified evaluation spanning static and dynamic scenes.",
+  "abstract_zh": "在动态场景中进行准确的实例分割对于机器人技术和自动驾驶等下游应用至关重要。现有的任意分割模型主要在2D图像或视频掩膜上运行，并通过序列记忆保持身份，而基于前馈视觉几何的可提示4D实例分割仍然未被充分探索。我们提出了S4VY，这是一种基于前馈4D视觉几何构建的任意分割模型。S4VY从一组RGB观测中，将共享的视觉几何特征转化为一组详尽的类无关4D实例掩膜，通过时空查询解码器实现，每个持久对象查询在所有观测中绑定一个实体。这种表示支持与提示无关的分割以及基于点和框的选择，而不需要种子掩膜或时间顺序。我们进一步开发了一种代理工具，用于在4D场景的大观测空间中进行自然语言的基础定位。主动树搜索在不扫描每个固定窗口的情况下识别相关帧；双流基础定位器通过互补的边界框预测和对象查询匹配，将细粒度的视觉语言模型（VLM）视觉先验与几何一致的实例特征相结合；独立的评估者从它们的预测中选择最终的4D实例掩膜。大量实验表明，在涵盖静态和动态场景的统一评估中，S4VY展现了最先进的4D实例分割和强大的语言引导基础定位性能。",
+  "arxiv_id": "2609.36875",
+  "arxiv_url": "https://arxiv.org/abs/2609.36875v1",
+  "authors": [
+    "Jingdong Zhang",
+    "Xin Li",
+    "Jan Kautz",
+    "Wenping Wang",
+    "Chris Choy"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36875",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.474646+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36875v1",
+  "published_at": "2026-09-29T07:09:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36875v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "S4VY: Segment Anything in Feed-Forward 4D Visual Geometry",
+  "title_zh": "S4VY：在前馈4D视觉几何中进行任意分割",
+  "translation_url": "https://hjfy.top/arxiv/2609.36875"
+}

@@ -1,0 +1,48 @@
+{
+  "abstract": "Object re-identification (ReID) faces a recurring challenge: different identities can share highly similar global appearances, while the cues that distinguish them are localized, heterogeneous, and visible only under particular viewpoints. This challenge arises in animal ReID through markings, contours, and scars, in person ReID through subtle clothing and accessory cues, and in vehicle ReID through localized appearance details. Although visual foundation models encode such information in dense tokens, a single holistic descriptor can obscure discriminative local signals. We propose FM-ReID, an end-to-end framework that formulates local representation learning as selective competitive token routing. Its Competitive Fine-grained Mining module uses multiple mining queries and a residual query to compete for dense DINOv3 tokens. Above-prior selection retains tokens preferentially allocated to each mining query, while the residual slot receives tokens excluded from the retrieval descriptors. The resulting multi-query descriptors are jointly trained with a holistic representation for retrieval, without fixed spatial partitions or equal-area constraints. FM-ReID achieves strong results on animal, person, and vehicle ReID benchmarks, supporting competitive token routing as an effective way to augment holistic foundation-model representations.",
+  "abstract_zh": "物体重识别（ReID）面临着一个反复出现的挑战：不同的身份可能共享高度相似的整体外观，而区分它们的线索则是局部的、异质的，并且仅在特定视角下可见。这个挑战在动物重识别中通过标记、轮廓和伤疤体现，在人重识别中通过细微的服装和配饰线索体现，在车辆重识别中通过局部外观细节体现。尽管视觉基础模型在密集的标记中编码了这些信息，但单一的整体描述符可能会掩盖具有区分性的局部信号。我们提出了FM-ReID，一个端到端的框架，将局部表示学习公式化为选择性竞争性标记路由。其竞争性细粒度挖掘模块使用多个挖掘查询和一个残差查询来竞争密集的DINOv3标记。优先选择保留优先分配给每个挖掘查询的标记，而残差槽接收从检索描述符中排除的标记。最终生成的多查询描述符与整体表示共同训练以进行检索，没有固定的空间划分或等面积约束。FM-ReID在动物、人和车辆重识别基准上取得了优异的结果，支持竞争性标记路由作为增强整体基础模型表示的有效方式。",
+  "arxiv_id": "2609.36560",
+  "arxiv_url": "https://arxiv.org/abs/2609.36560v1",
+  "authors": [
+    "Zhiqi Li",
+    "Xiaowei Zhou",
+    "Zeyuan Sun",
+    "Feng Gao",
+    "Junyu Dong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36560",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.453904+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36560v1",
+  "published_at": "2026-09-29T02:46:27Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36560v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "本文针对车辆等目标重识别中局部判别特征容易被整体表征掩盖的问题，提出基于视觉基础模型密集标记的选择性竞争路由方法。该方法通过多个查询动态挖掘不同局部线索，并结合整体特征形成多查询描述符，从而提升跨视角、细粒度身份区分能力。虽然论文并非专门面向自动驾驶，但车辆重识别技术可迁移到道路场景中的车辆检索、跨摄像头跟踪和交通参与者身份关联任务。",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "FM-ReID: Selective Competitive Token Routing for Object Re-Identification",
+  "title_zh": "FM-ReID：用于物体重识别的选择性竞争性标记路由",
+  "translation_url": "https://hjfy.top/arxiv/2609.36560"
+}

@@ -1,0 +1,65 @@
+{
+  "abstract": "End-to-end autonomous driving policies are commonly trained via imitation learning on logged demonstrations without observing the consequences of their own actions, leading to causal confusion in closed-loop real-world deployment. To address this issue, reinforcement learning (RL) post-training offers a promising alternative by leveraging world models as interactive training environments to enable future scene generation for policy improvement. Nevertheless, existing approaches either rely on reconstruction-based simulators, offering limited counterfactual interaction, or adopt synthetic simulators to enable long-horizon closed-loop interaction at the cost of a substantial sim-to-real gap. Recently, video world models have exhibited the ability to generate realistic multi-step future rollouts but may not faithfully reflect action conditions, resulting in action-vision mismatch. In this paper, we introduce RoXDrive, a plug-and-play closed-loop RL framework that enables reliable policy optimization by identifying action-faithful world-model rollouts, consisting of two stages: 1) Model pre-training: In addition to imitation-based policy pre-training, we devise an Action-Vision Faithfulness Evaluator for inverse dynamics estimation with our geometry-aware auxiliary trajectory supervision, enabling long-horizon assessment of whether visual dynamics faithfully reflect the conditioning ego actions. 2) Action-faithful RL post-training: Agents iteratively interact with world models to form long-horizon scene rollouts, retaining only action-faithful ones for dense safety-aware scoring and scene-level closed-loop RL post-training. Extensive experiments on nuScenes and an in-house dataset with over 130K training scenarios demonstrate consistent gains across planners, reducing safety violations by 27.6% with DiffusionDrive on nuScenes and 33.7% with Qwen3-VL on the internal data.",
+  "abstract_zh": "端到端自主驾驶策略通常通过模仿学习在记录的示例上进行训练，而不观察自身行为的后果，这导致在闭环实际部署中出现因果混淆。为了解决这个问题，强化学习（RL）后训练提供了一种有前景的替代方案，通过利用世界模型作为交互训练环境，以便生成未来场景以改善策略。然而，现有的方法要么依赖基于重建的模拟器，提供有限的反事实交互，要么采用合成模拟器以实现长时间闭环交互，但代价是显著的仿真与现实之间的差距。最近，视频世界模型展示了生成真实多步未来回放的能力，但可能无法忠实反映动作条件，导致动作与视觉的不匹配。在本文中，我们介绍了RoXDrive，一个即插即用的闭环RL框架，通过识别动作忠实的世界模型回放来实现可靠的策略优化，包含两个阶段：1）模型预训练：除了基于模仿的策略预训练外，我们设计了一个动作-视觉忠实性评估器，用于逆动力学估计，结合我们几何感知的辅助轨迹监督，使得能够长期评估视觉动态是否忠实反映条件自我动作。2）动作忠实的RL后训练：智能体与世界模型迭代交互，形成长时间场景回放，仅保留动作忠实的回放用于密集的安全意识评分和场景级闭环RL后训练。在nuScenes和一个包含超过130K训练场景的内部数据集上的广泛实验表明，各种规划器均表现出一致的提升，使用DiffusionDrive在nuScenes上减少了27.6%的安全违规，而在内部数据上使用Qwen3-VL减少了33.7%。",
+  "arxiv_id": "2609.36851",
+  "arxiv_url": "https://arxiv.org/abs/2609.36851v1",
+  "authors": [
+    "Hongbin Lin",
+    "Chaoda Zheng",
+    "Yiming Yang",
+    "Xiangyu Li",
+    "Shijia Chen",
+    "Jinhao Deng",
+    "Kangjie Chen",
+    "Dongbin Zhang",
+    "Jie Feng",
+    "Yu Zhang",
+    "Xianming Liu",
+    "Shuguang Cui",
+    "Boyang Wang",
+    "Zhen Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36851",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.473026+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36851v1",
+  "published_at": "2026-09-29T06:59:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 67
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36851v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "RoXDrive: Closed-Loop Reinforcement Learning for End-to-End Autonomous Driving via Action-Faithful Rollouts",
+  "title_zh": "RoXDrive：通过动作忠实回放实现端到端自主驾驶的闭环强化学习",
+  "translation_url": "https://hjfy.top/arxiv/2609.36851"
+}

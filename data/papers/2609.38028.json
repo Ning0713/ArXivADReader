@@ -1,0 +1,60 @@
+{
+  "abstract": "Autonomous vehicles interacting with passengers through natural language must reason beyond immediate commands. Passenger intent may span multiple stages of behavior, depend on future events, refer to surrounding agents or landmarks, and remain relevant as driving conditions evolve. Existing language-enabled driving datasets largely focus on short, localized interactions, leaving these longer-horizon forms of passenger intent comparatively underexplored. We introduce doPlan, to our knowledge the first publicly available, human-annotated real-world dataset designed to study passenger language as persistent task context. Built on nuPlan, doPlan contains 5,154 human-written passenger instructions spanning 169.1 hours of cumulative instruction-aligned context over 50.9 hours of unique driving, with annotation windows ranging from 30.0 to 508.8 s. The annotations capture immediate, deferred, event-conditioned, persistent, and multi-stage passenger intent. The dataset, annotation interface, and supporting resources are publicly available at https://github.com/Mi3-Lab/doPlan. We evaluate four language-conditioned driving models and find that sensitivity to passenger language does not reliably translate into behavior consistent with the requested direction. More broadly, among 2,161 examples with a matched future maneuver, the first associated maneuver occurs a median of 24.6 s after the evaluation point, and only 9.8% occur within the models' common 5 s prediction horizon. These findings highlight the need to connect persistent passenger intent with successive planning decisions. doPlan provides a setting for studying how unresolved goals can be retained, grounded in evolving scenes, and tracked across multiple stages, including how a planner determines when a future goal becomes relevant to the current plan.",
+  "abstract_zh": "自主车辆通过自然语言与乘客互动时，必须超越即时指令进行推理。乘客的意图可能跨越多个行为阶段，依赖于未来事件，涉及周围的代理或地标，并在驾驶条件变化时保持相关性。现有的语言驱动驾驶数据集主要集中在短期、局部的互动上，导致这些较长视野的乘客意图相对未被充分探索。我们介绍了 doPlan，据我们所知，这是第一个公开可用的、经过人工标注的真实世界数据集，旨在研究乘客语言作为持续任务上下文。doPlan 基于 nuPlan 构建，包含 5,154 条人类编写的乘客指令，涵盖 169.1 小时的指令对齐上下文，涉及 50.9 小时的独特驾驶，标注窗口范围从 30.0 秒到 508.8 秒不等。这些标注捕捉了即时、延迟、事件条件、持续和多阶段的乘客意图。数据集、标注接口和支持资源可在 https://github.com/Mi3-Lab/doPlan 上公开获取。我们评估了四种语言条件驾驶模型，发现对乘客语言的敏感性并不可靠地转化为与请求方向一致的行为。更广泛地说，在 2,161 个与未来机动匹配的示例中，第一个相关机动的发生中位数为 24.6 秒，而仅有 9.8% 的情况发生在模型常见的 5 秒预测视野内。这些发现突显了将持续的乘客意图与连续的规划决策相连接的必要性。doPlan 提供了一个研究未解决目标如何被保留、扎根于不断变化的场景并在多个阶段中跟踪的环境，包括规划者如何确定未来目标何时与当前计划相关。",
+  "arxiv_id": "2609.38028",
+  "arxiv_url": "https://arxiv.org/abs/2609.38028v1",
+  "authors": [
+    "Parthib Roy",
+    "Yash Tandon",
+    "Marcus Blennemann",
+    "Giovanni Tapia Lopez",
+    "Angel Martinez-Sanchez",
+    "Mohan M. Trivedi",
+    "Ross Greer"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-38028",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.427814+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38028v1",
+  "published_at": "2026-09-29T17:08:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "nuplan",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 96
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38028v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "doPlan: A Variable-Horizon Dataset for Multi-Stage Language-Conditioned Planning in Autonomous Driving",
+  "title_zh": "doPlan：用于自主驾驶中多阶段语言条件规划的可变视野数据集",
+  "translation_url": "https://hjfy.top/arxiv/2609.38028"
+}

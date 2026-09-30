@@ -1,0 +1,51 @@
+{
+  "abstract": "Remote photoplethysmography (rPPG) offers a promising non-contact solution for heart rate monitoring, yet its real-world robustness is fundamentally limited by an inherent hardware limitation: existing camera exposure control paradigms, whether fixed or auto-exposure, impose a uniform exposure time across all pixels within a frame. In high-dynamic-range scenes such as automotive cabins with strong directional sunlight, this spatially invariant exposure constraint inevitably leads to localized facial overexposure or underexposure, irreversibly corrupting the subtle pulsatile signals essential for rPPG at the point of capture, a physical degradation that no downstream algorithm can recover. To overcome this bottleneck, we propose PixExpo (Pixel-wise Exposure), a \"temporal-for-spatial\" framework that sequentially captures frames under a predefined cyclic exposure schedule and performs non-iterative pixel-wise fusion. At each pixel location, PixExpo selects the observation closest to an rPPG-motivated target intensity. This criterion seeks to reduce local saturation and severe underexposure rather than optimize perceptual appearance. PixExpo requires no sensor modification but assumes programmable frame-level exposure control. We validate the proposed PixExpo framework using our newly introduced MEX-Drive dataset, comprising 48 participants under real-world driving conditions. Experimental results demonstrate that PixExpo outperforms manufacture-default auto-exposure methods, reducing the mean absolute error (MAE) by 7.21 bpm (from 13.94 to 6.73 bpm) and increasing the success rate by 37.29 percentage points (from 25.95% to 63.24%) across challenging driving scenarios.",
+  "abstract_zh": "远程光电容积脉搏波监测（rPPG）为心率监测提供了一种有前景的非接触解决方案，但其在实际应用中的鲁棒性受到固有硬件限制的根本制约：现有的相机曝光控制模式，无论是固定曝光还是自动曝光，都在帧内所有像素上施加了统一的曝光时间。在汽车驾驶舱等高动态范围场景中，强烈的方向性阳光使得这种空间不变的曝光约束不可避免地导致局部面部过曝或欠曝，从而在捕获时不可逆转地破坏了rPPG所需的微弱脉动信号，这种物理降解是任何后续算法都无法恢复的。为了克服这一瓶颈，我们提出了PixExpo（像素级曝光），一种“时间换空间”的框架，该框架在预定义的循环曝光计划下顺序捕获帧，并进行非迭代的像素级融合。在每个像素位置，PixExpo选择最接近rPPG目标强度的观测值。该标准旨在减少局部饱和和严重欠曝，而不是优化感知外观。PixExpo不需要传感器修改，但假设可编程的帧级曝光控制。我们使用新引入的MEX-Drive数据集验证了所提出的PixExpo框架，该数据集包含48名参与者在真实驾驶条件下的数据。实验结果表明，PixExpo优于制造商默认的自动曝光方法，平均绝对误差（MAE）降低了7.21 bpm（从13.94降至6.73 bpm），成功率提高了37.29个百分点（从25.95%升至63.24%），在具有挑战性的驾驶场景中表现突出。",
+  "arxiv_id": "2609.36607",
+  "arxiv_url": "https://arxiv.org/abs/2609.36607v1",
+  "authors": [
+    "Jieying Wang",
+    "Xinqi Cai",
+    "Caifeng Shan",
+    "Wenjin Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36607",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.456483+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36607v1",
+  "published_at": "2026-09-29T03:23:30Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "automotive",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36607v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "本文面向汽车驾驶舱中的驾驶员状态感知，提出PixExpo像素级曝光框架，通过按预设周期采集不同曝光帧，并在像素级选择最接近目标强度的观测，缓解强方向性阳光造成的面部局部过曝与欠曝问题，从而提升车载远程心率监测的鲁棒性。基于包含48名参与者的MEX-Drive真实驾驶数据集，方法相比默认自动曝光将心率估计MAE从13.94 bpm降至6.73 bpm，成功率提升37.29个百分点。该研究属于车内驾驶员生理状态感知，可为驾驶安全监测和智能座舱系统提供支持，但并非自动驾驶车辆外部环境感知或决策规划方法。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Pixel-wise Exposure for Highly Robust In-Vehicle Remote-PPG",
+  "title_zh": "像素级曝光以实现高鲁棒性的车载远程光电容积脉搏波监测",
+  "translation_url": "https://hjfy.top/arxiv/2609.36607"
+}

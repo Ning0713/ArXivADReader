@@ -1,0 +1,55 @@
+{
+  "abstract": "Adaptive Cruise Control (ACC) systems are typically calibrated for an average driver, often resulting in a mismatch between vehicle behavior and individual expectations during time-critical maneuvers such as highway overtaking. When the ACC is perceived as too conservative and inconsistent, drivers intervene through throttle overrides, providing implicit feedback on the system's behavior. This paper reframes these override actions as human-in-theloop supervisory signals and proposes a data-driven framework for personalized vehicle adaptation, termed Context-driven Personalized ACC (CoP-ACC). Rather than relying solely on end-to-end regression, which tends to over-smooth dynamic responses, we introduce a hybrid pipeline combining: (i) unsupervised hierarchical clustering to extract representative acceleration profiles from override events; (ii) a context classifier that maps pre-maneuver driving conditions to the appropriate profile; and (iii) a residual regressor that refines the selected profile into a smooth, personalized acceleration profile tailored to the immediate context. Evaluated on real-world public-road data against a withheld forced-ACC baseline, the approach demonstrates high reconstruction fidelity and generates acceleration profiles that tend toward the driver's expected behavior in potential override contexts. The results highlight the potential of learning from shared-control overrides to enable anticipatory, personalized ACC behavior, reducing manual interventions and improving ride comfort.",
+  "abstract_zh": "自适应巡航控制（ACC）系统通常是针对平均驾驶员进行校准的，这往往导致在高速公路超车等时间关键的操作中，车辆行为与个体期望之间存在不匹配。当ACC被认为过于保守且不一致时，驾驶员会通过油门覆盖进行干预，从而对系统的行为提供隐性反馈。本文将这些覆盖行为重新框定为人机协同的监督信号，并提出了一种数据驱动的个性化车辆适应框架，称为情境驱动个性化ACC（CoP-ACC）。该框架并不单纯依赖于端到端回归，这种方法往往会过度平滑动态响应，而是引入了一个混合流程，结合了：（i）无监督的层次聚类，从覆盖事件中提取代表性的加速曲线；（ii）一个情境分类器，将操作前的驾驶条件映射到适当的加速曲线；（iii）一个残差回归器，将选定的加速曲线细化为平滑的、个性化的加速曲线，以适应即时情境。在与保留的强制ACC基线进行的真实世界公共道路数据评估中，该方法展示了高重建保真度，并生成了在潜在覆盖情境中趋向于驾驶员预期行为的加速曲线。结果突显了从共享控制覆盖中学习的潜力，以实现预期的个性化ACC行为，减少手动干预，提高乘坐舒适性。",
+  "arxiv_id": "2609.37684",
+  "arxiv_url": "https://arxiv.org/abs/2609.37684v1",
+  "authors": [
+    "Ruizheng Xu",
+    "Lounis Adouane",
+    "Javier Ibañez-Guzmán",
+    "Clément Zinoune"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-37684",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.648991+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.37684v1",
+  "published_at": "2026-09-29T14:32:04Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "road",
+      "highway",
+      "驾驶",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 35
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.37684v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "本文研究如何利用驾驶员对ACC的油门覆盖行为，预测高速公路超车场景下个性化的车辆加速曲线。方法通过聚类提取典型加速模式，再结合驾驶情境分类和残差回归生成平滑的个性化加速轨迹。研究重点是共享控制下的驾驶行为建模与纵向运动控制适配，属于自动驾驶相关的人机协同驾驶与预测控制研究。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Learning from Shared-Control Overrides: Context-Driven Acceleration Profile Prediction for Personalized Overtaking",
+  "title_zh": "从共享控制覆盖中学习：基于情境驱动的个性化超车加速曲线预测",
+  "translation_url": "https://hjfy.top/arxiv/2609.37684"
+}

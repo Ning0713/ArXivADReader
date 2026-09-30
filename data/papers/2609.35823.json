@@ -1,0 +1,59 @@
+{
+  "abstract": "Vision-language models (VLMs) have made substantial progress in autonomous driving, but their success has primarily been studied in ego-centric scenes. Infrastructure-side observations provide views beyond the ego vehicle's field of view, yet conventional cooperative-driving systems typically transform them into geometric representations for downstream perception and planning. Directly incorporating these views into VLMs offers an opportunity to improve cooperative scene understanding and trajectory planning. However, question answering and trajectory planning have not been jointly evaluated on the same real-world vehicle-infrastructure scenes. We present CoVLM-Bench, a benchmark for cooperative driving question answering (CDQA) and cooperative planning (CP) on vehicle-infrastructure paired scenes. CoVLM-Bench provides scene-grounded CDQA annotations, three-part rationales as auxiliary supervision, and future trajectory targets derived from recorded ego motion. It contains 2,196 paired frames with 35,136 CDQA annotations, while CP predicts six waypoints over a three-second horizon. The annotations combine model-assisted drafting, record-based computation, and human verification. Built upon CoVLM-Bench, we introduce CoVLM-Drive, a unified VLM baseline that directly uses paired views for both CDQA and CP. Experiments show that CDQA adaptation improves answer accuracy and that CoVLM-Drive reaches a lower FDE than the compared V2X planners; QA initialization and rationale supervision each reduce planning error. Together, CoVLM-Bench and CoVLM-Drive support the training and comparison of VLMs for cooperative scene understanding and planning.",
+  "abstract_zh": "视觉语言模型（VLMs）在自动驾驶领域取得了显著进展，但其成功主要是在自我中心场景中进行研究。基础设施侧的观察提供了超出自我车辆视野的视角，然而传统的合作驾驶系统通常将这些视角转换为几何表示，以便于后续的感知和规划。直接将这些视角纳入VLMs为改善合作场景理解和轨迹规划提供了机会。然而，问答和轨迹规划尚未在相同的真实世界车辆-基础设施场景中进行联合评估。我们提出了CoVLM-Bench，这是一个用于车辆-基础设施配对场景的合作驾驶问答（CDQA）和合作规划（CP）的基准。CoVLM-Bench提供了基于场景的CDQA注释、作为辅助监督的三部分推理以及基于记录的自我运动推导的未来轨迹目标。它包含2,196对帧和35,136个CDQA注释，而CP在三秒的时间范围内预测六个航点。这些注释结合了模型辅助草拟、基于记录的计算和人工验证。在CoVLM-Bench的基础上，我们引入了CoVLM-Drive，一个统一的VLM基线，直接使用配对视角进行CDQA和CP。实验表明，CDQA适应性提高了答案的准确性，而CoVLM-Drive的FDE低于比较的V2X规划器；问答初始化和推理监督各自减少了规划误差。总之，CoVLM-Bench和CoVLM-Drive支持VLMs在合作场景理解和规划中的训练与比较。",
+  "arxiv_id": "2609.35823",
+  "arxiv_url": "https://arxiv.org/abs/2609.35823v1",
+  "authors": [
+    "Kang Yang",
+    "Shuai Liu",
+    "Hang Li",
+    "Yance Fang",
+    "Deying Li",
+    "Yongcai Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-35823",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.434065+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.35823v1",
+  "published_at": "2026-09-22T10:40:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "v2x",
+      "ego vehicle",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.35823v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "VLM/VLA"
+    ]
+  },
+  "title": "CoVLM-Bench: A Real-World Benchmark for Cooperative Driving Question Answering and Planning",
+  "title_zh": "CoVLM-Bench：一个用于合作驾驶问答与规划的真实世界基准",
+  "translation_url": "https://hjfy.top/arxiv/2609.35823"
+}

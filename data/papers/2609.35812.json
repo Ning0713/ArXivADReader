@@ -1,0 +1,50 @@
+{
+  "abstract": "In-car conversational assistants (ICAs) are increasingly integrated into vehicles to support route planning, vehicle control, and information access. Ensuring their reliability is challenging due to multi-turn interactions, the absence of explicit ground truth, and strict safety constraints. Existing evaluation techniques fall short, as they target single-turn settings and fail to capture constraint handling, context retention, and safety-critical behavior across turns. We propose an automated framework for testing the multi-turn conversational capabilities of ICAs. The system is treated as a black box and evaluated via closed-loop simulation with a strategy-guided user simulator, an adversarial strategy manager, and a two-tier LLM judge assessing turn-level failures and conversation-level quality. We evaluate the approach on an industrial ICA with six LLM backends and twelve human annotators. The automated judge shows substantial agreement with humans, and strategy guidance uncovers 2.96 times more unique failure types per conversation and more than doubles the number of unique failing conversations compared to unguided simulation.",
+  "abstract_zh": "车载对话助手（ICAs）越来越多地集成到车辆中，以支持路线规划、车辆控制和信息访问。由于多轮交互、缺乏明确的真实标准以及严格的安全约束，确保其可靠性面临挑战。现有的评估技术不足以应对这一挑战，因为它们主要针对单轮设置，未能捕捉到跨轮次的约束处理、上下文保留和安全关键行为。我们提出了一种自动化框架，用于测试ICAs的多轮对话能力。该系统被视为一个黑箱，通过与策略引导的用户模拟器、对抗性策略管理器以及评估轮次级失败和对话级质量的双层大型语言模型（LLM）评判者的闭环模拟进行评估。我们在一个工业级ICAs上对该方法进行了评估，该ICAs具有六个LLM后端和十二名人工注释者。自动评判者与人类的评估结果显示出显著一致性，策略引导揭示了每次对话中2.96倍的独特失败类型，并且与无引导模拟相比，独特失败对话的数量增加了两倍以上。",
+  "arxiv_id": "2609.35812",
+  "arxiv_url": "https://arxiv.org/abs/2609.35812v1",
+  "authors": [
+    "Vaishnav Negi",
+    "Lev Sorokin",
+    "Soroosh Tayebi Arasteh",
+    "Andrea Stocco"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-35812",
+  "categories": [
+    "cs.CL",
+    "cs.SE"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.685001+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.35812v1",
+  "published_at": "2026-09-20T08:13:36Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "car",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.35812v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "本文提出一种面向车载对话助手的多轮交互自动评估框架，通过闭环仿真、策略引导的用户模拟器、对抗性策略管理器和双层LLM评判者，检测跨轮次的约束处理、上下文保持及安全关键行为。实验表明，该方法与人工评估具有较高一致性，并能显著发现更多失败类型和失败对话。论文与自动驾驶领域存在边界相关性，主要涉及车载智能系统的安全评测与仿真测试，而非自动驾驶感知、预测或控制算法本身。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Automated Evaluation of Multi-Turn Dialogues in In-Car Conversational Assistants",
+  "title_zh": "车载对话助手中多轮对话的自动评估",
+  "translation_url": "https://hjfy.top/arxiv/2609.35812"
+}

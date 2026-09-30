@@ -1,0 +1,64 @@
+{
+  "abstract": "World-action models (WAMs) jointly predict how a scene will evolve and how an agent should act, however joint generation alone does not necessarily impose a shared geometric constraint on these predictions. We present PhysWAM, a unified world-action model for autonomous driving that co-denoises multiview video, metric depth, and ego motion within a single flow-matching transformer. To ground world and action generation in measured scene geometry, we introduce Coupled Point Projection (CPP) that unprojects the generated depth into 3D points, transforms them using the generated $\\mathrm{SE}(3)$ ego motion, and minimizes their distance to LiDAR points transformed using the recorded ego motion. This geometric constraint promotes physical consistency with the measured scene by jointly supervising generated depth and motion alongside their standard flow-matching objectives. At inference, trajectory selection relies only on a simple label-free consensus rule, with no learned scorer or simulator feedback. We evaluate PhysWAM across NAVSIM v1 and v2 planning, zero-shot closed-loop transfer, and future video and metric-depth prediction. Despite PhysWAM's simple selection procedure, it achieves strong planning performance and transfers zero-shot to unseen driving environments. It also generates accurate metric depth and temporally coherent video, with CPP improving both planning and depth prediction. Together, these results demonstrate that the geometric relationship between scene depth and ego motion provides a direct way to couple world and action generation within a simple unified model.",
+  "abstract_zh": "世界行动模型（WAMs）共同预测场景如何演变以及代理应如何行动，然而单独的联合生成并不一定对这些预测施加共享的几何约束。我们提出了PhysWAM，一种用于自主驾驶的统一世界行动模型，它在单个流匹配变换器中共同去噪多视角视频、度量深度和自我运动。为了将世界和行动生成与测量的场景几何相结合，我们引入了耦合点投影（Coupled Point Projection, CPP），该方法将生成的深度反投影到3D点中，使用生成的$ ext{SE}(3)$自我运动对其进行变换，并最小化其与使用记录的自我运动变换的LiDAR点之间的距离。这一几何约束通过共同监督生成的深度和运动以及它们的标准流匹配目标，促进了与测量场景的物理一致性。在推理阶段，轨迹选择仅依赖于简单的无标签共识规则，无需学习的评分器或模拟器反馈。我们在NAVSIM v1和v2规划、零-shot闭环转移以及未来视频和度量深度预测中评估了PhysWAM。尽管PhysWAM的选择过程简单，但它在规划性能上表现出色，并能够零-shot转移到未见过的驾驶环境中。它还生成了准确的度量深度和时间一致的视频，CPP改善了规划和深度预测。总的来说，这些结果表明，场景深度与自我运动之间的几何关系为在一个简单的统一模型中耦合世界和行动生成提供了一种直接的方法。",
+  "arxiv_id": "2609.37970",
+  "arxiv_url": "https://arxiv.org/abs/2609.37970v1",
+  "authors": [
+    "Dhruv Parikh",
+    "Fengcheng Yu",
+    "Quankai Gao",
+    "Jiawei Yang",
+    "Junjie Ye",
+    "Maulik Bhatt",
+    "Thang Vu",
+    "Charles Ochoa",
+    "Rowan McAllister",
+    "Igor Vasiljevic",
+    "Rajgopal Kannan",
+    "Viktor Prasanna",
+    "Vitor Guizilini",
+    "Yue Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-37970",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.426764+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.37970v1",
+  "published_at": "2026-09-29T16:38:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.37970v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "PhysWAM: Physically Consistent World Action Model for Autonomous Driving",
+  "title_zh": "PhysWAM：用于自主驾驶的物理一致性世界行动模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.37970"
+}

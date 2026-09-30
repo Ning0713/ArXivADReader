@@ -1,0 +1,67 @@
+{
+  "abstract": "Autonomous driving requires choosing a safe and efficient plan as surrounding traffic evolves. Generate-and-select planners propose multiple trajectories and score them for execution, and they have outperformed representative direct-prediction baselines on NAVSIM. Their scorer must compare plans that were never executed. Driving logs record the future of only the executed trajectory, so matching the logged future can leave predictions for the alternatives unconstrained; a simulator, in contrast, can label the outcome of every candidate. We introduce World4Scorer, which builds the scorer as a trajectory-conditioned JEPA-style predictor: it predicts a state for each candidate and reads the candidate's scores from that state. Simulator outcome labels supervise the states of all candidates, and the observed future of the executed trajectory anchors the predictor to real scene evolution. Because one predictor produces every candidate's state, the anchor can constrain shared parameters used to score unexecuted plans, while the future itself is needed only during training. Generated candidates mostly score well, so a scene-matched bank adds low-scoring plans to the outcome supervision; framewise choices can conflict, so inertial re-ranking keeps consecutive selections consistent. World4Scorer achieves state-of-the-art NAVSIM-v2 performance and a strong adapted-system result on closed-loop Bench2Drive. With the LeWM world model and planning budget fixed, outcome-based scoring also improves manipulation planning on the OGBench-Cube benchmark.",
+  "abstract_zh": "自主驾驶需要在周围交通演变的过程中选择安全且高效的计划。生成与选择规划器提出了多条轨迹并对其进行评分以便执行，并且在NAVSIM上超越了代表性的直接预测基线。它们的评分器必须比较从未执行过的计划。驾驶日志仅记录已执行轨迹的未来，因此匹配记录的未来可能会使替代方案的预测不受约束；而模拟器则可以为每个候选方案标记结果。我们引入了World4Scorer，它将评分器构建为一种基于轨迹的JEPA风格预测器：它为每个候选方案预测一个状态，并从该状态读取候选方案的评分。模拟器的结果标签监督所有候选方案的状态，而已执行轨迹的观察未来则将预测器锚定到真实场景演变。由于一个预测器生成每个候选方案的状态，因此锚定可以约束用于评分未执行计划的共享参数，而未来仅在训练期间需要。生成的候选方案大多得分良好，因此场景匹配库将低评分计划添加到结果监督中；逐帧选择可能会发生冲突，因此惯性重新排序保持连续选择的一致性。World4Scorer在NAVSIM-v2上达到了最先进的性能，并在闭环Bench2Drive上取得了强大的适应系统结果。在固定LeWM世界模型和规划预算的情况下，基于结果的评分还改善了OGBench-Cube基准上的操作规划。",
+  "arxiv_id": "2609.36438",
+  "arxiv_url": "https://arxiv.org/abs/2609.36438v1",
+  "authors": [
+    "Jieyuan Pei",
+    "Meiyi Lu",
+    "Sining Ang",
+    "Yubo Zhao",
+    "Zhangyi Hu",
+    "Mingwei Xu",
+    "Haokai Ding",
+    "Wei Li",
+    "Zihan You",
+    "Jianwei Zheng",
+    "Li Yu",
+    "Yifeng Pan",
+    "Ji Tao",
+    "Rongjunchen Zhang",
+    "Yan Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36438",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.381035+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36438v1",
+  "published_at": "2026-09-29T00:55:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 57
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36438v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "World4Scorer: Outcome-Grounded World Modeling for Autonomous Driving",
+  "title_zh": "World4Scorer：基于结果的自主驾驶世界建模",
+  "translation_url": "https://hjfy.top/arxiv/2609.36438"
+}

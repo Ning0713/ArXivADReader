@@ -1,0 +1,49 @@
+{
+  "abstract": "3D Gaussian Splatting (3DGS) is a state-of-the-art technique for 3D scene rendering, offering high efficiency and excellent visual quality. However, because 3DGS relies on an initial sparse point set from Structure-from-Motion (SfM) and view-dependent properties, it can suffer from geometric inaccuracies and visual artifacts, particularly in complex scenes. To address these challenges, we propose an improved 3DGS approach that regularizes the optimization process by integrating geometric priors, including surface normals and dense depth information. Surface normal regularization improves geometric consistency by aligning Gaussian covariance with local surface structures, while dense depth priors combined with an initial points from SfM enhance per-pixel depth estimation, increasing accuracy and reducing ambiguities. These enhancements enable robust handling of diverse and complex real-world scenarios, minimizing visual distortions and improving reconstruction quality across various environments. To validate our method, we evaluate it on challenging datasets, including street-view scenes and highly reflective environments, while testing it across multiple SfM pipelines. Our results demonstrate compatibility across diverse environments and highlight the robustness of our approach. Experimental findings further show that our method enhances geometric accuracy and visual quality, establishing a reliable solution for real-time 3D scene rendering in complex environments.",
+  "abstract_zh": "3D高斯点云（3DGS）是一种先进的3D场景渲染技术，具有高效性和优异的视觉质量。然而，由于3DGS依赖于来自运动重建（Structure-from-Motion, SfM）的初始稀疏点集和视角相关属性，它可能会在复杂场景中遭遇几何不准确和视觉伪影。为了解决这些挑战，我们提出了一种改进的3DGS方法，通过整合几何先验（包括表面法线和稠密深度信息）来正则化优化过程。表面法线正则化通过将高斯协方差与局部表面结构对齐来提高几何一致性，而稠密深度先验结合来自SfM的初始点则增强了每像素深度估计，提高了准确性并减少了歧义。这些增强使得我们的方法能够稳健地处理多样且复杂的现实场景，最小化视觉失真，并在各种环境中提高重建质量。为了验证我们的方法，我们在具有挑战性的数据集上进行了评估，包括街景场景和高反射环境，并在多个SfM管道中进行了测试。我们的结果表明该方法在不同环境中的兼容性，并突出了我们方法的稳健性。实验结果进一步表明，我们的方法提高了几何准确性和视觉质量，为复杂环境中的实时3D场景渲染提供了一种可靠的解决方案。",
+  "arxiv_id": "2609.36969",
+  "arxiv_url": "https://arxiv.org/abs/2609.36969v1",
+  "authors": [
+    "Gyeonggwan Lee",
+    "Seunghwan Hong",
+    "Junghun Suh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-09-30#paper-2609-36969",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-09-30T10:51:20.480602+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.36969v1",
+  "published_at": "2026-09-29T08:06:24Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "depth estimation",
+      "gaussian splatting",
+      "点云",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-09-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.36969v1",
+    "axi": "https://paper.axi404.top/daily/2026-09-30"
+  },
+  "summary_zh": "本文改进3D高斯点云渲染，通过表面法线和稠密深度先验约束优化过程，提升复杂场景中的几何一致性、深度估计和重建质量。方法在街景等数据上验证，具有辅助自动驾驶视觉感知、深度理解和三维场景重建的潜在价值，但论文并未明确面向自动驾驶任务或数据集。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Prior-Driven Enhancements in 3D Gaussian Splatting: Normals and Depths Regularization",
+  "title_zh": "基于先验驱动的3D高斯点云增强：法线和深度正则化",
+  "translation_url": "https://hjfy.top/arxiv/2609.36969"
+}
