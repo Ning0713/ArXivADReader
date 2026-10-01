@@ -1,0 +1,57 @@
+{
+  "abstract": "Safe and efficient trajectory planning is essential in autonomous driving. However, existing end-to-end approaches often fall short in both computational efficiency and safety guarantees. Methods based on imitation learning suffer from causal confusion, while rule-based scoring approaches often incur heavy computational overhead and suffer from objective misalignment. Additionally, preference-based methods rely on strict pairwise annotations, limiting data utilization. To overcome these limitations, we propose EMPlan, an efficient multi-modal trajectory planning method powered by reward-guided fine-tuning. We design a hybrid architecture that combines sparse anchors with an offset refinement module for efficient multi-modal trajectory prediction. Sparse anchors provide coarse trajectory candidates with low latency, which are subsequently refined by the offset module for higher prediction accuracy. To enhance safety without incurring additional inference costs, we adopt a two-stage training paradigm consisting of pretraining and reward-guided fine-tuning. During fine-tuning, we leverage rule-based reward signals and unpaired preference supervision to refine the pretrained policy toward safer trajectory selection. We evaluate EMPlan on the non-reactive NAVSIM benchmark, where it strikes a favorable balance between planning accuracy and efficiency, demonstrating superior performance under real-time constraints.",
+  "abstract_zh": "安全高效的轨迹规划在自动驾驶中至关重要。然而，现有的端到端方法在计算效率和安全保障方面往往存在不足。基于模仿学习的方法受到因果混淆的影响，而基于规则的评分方法则常常带来较大的计算开销，并且存在目标不一致的问题。此外，基于偏好的方法依赖于严格的成对注释，限制了数据的利用。为了解决这些局限性，我们提出了EMPlan，一种基于奖励引导微调的高效多模态轨迹规划方法。我们设计了一种混合架构，将稀疏锚点与偏移细化模块相结合，以实现高效的多模态轨迹预测。稀疏锚点提供低延迟的粗略轨迹候选，随后通过偏移模块进行细化，以提高预测精度。为了在不增加额外推理成本的情况下增强安全性，我们采用了包括预训练和奖励引导微调的两阶段训练范式。在微调过程中，我们利用基于规则的奖励信号和无配对偏好监督来细化预训练策略，以实现更安全的轨迹选择。我们在非反应性NAVSIM基准上评估了EMPlan，结果表明其在规划精度和效率之间达成了良好的平衡，并在实时约束下表现出优越的性能。",
+  "arxiv_id": "2609.38862",
+  "arxiv_url": "https://arxiv.org/abs/2609.38862v1",
+  "authors": [
+    "Chenglin Chen",
+    "Lujia Wang",
+    "Xinhu Zheng",
+    "Jun Ma",
+    "Haoang Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-38862",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.634539+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38862v1",
+  "published_at": "2026-09-30T03:17:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38862v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "安全/异常"
+    ]
+  },
+  "title": "Efficient Multi-Modal Planning with Reward-Guided Preference Optimization for Autonomous Driving",
+  "title_zh": "基于奖励引导偏好优化的高效多模态规划在自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2609.38862"
+}

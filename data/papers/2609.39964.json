@@ -1,0 +1,55 @@
+{
+  "abstract": "Multi-modal integrated sensing and communication (ISAC) enables environmental perception and reliable connectivity for intelligent wireless networks. Data-driven multi-modal ISAC models depend heavily on annotated real-world data to learn relationships across sensing and wireless observations, thereby constraining scalable deployment. Although synthetic data generation reduces the burden, adapting existing simulation pipelines to a target deployment requires consistent scene, sensing, wireless, and learning configurations, while mismatches among these coupled components impair sim-to-real transferability. To address the challenge, we propose an agentic artificial intelligence (AI) framework for sim-to-real multi-modal ISAC, named AIMS. Given a natural-language deployment request specifying the target task, deployment conditions, and real-data budget, AIMS derives a deployment-specific sim-to-real configuration and coordinates its execution to produce a deployment-specific task model. A two-agent architecture coordinates scene construction with task learning. A scene construction agent generates geographically grounded, synchronized sensing and wireless records from shared physical states, while a scene understanding agent configures task-relevant modalities and mixture-of-experts (MoE) learning for zero-shot inference or few-shot adaptation. Structured domain knowledge guides dependency-aware planning, while validation evidence supports feedback-driven revision of affected decisions. Experiments on the real-world DeepSense~6G dataset demonstrate improved vehicle detection and beam prediction over the considered simulation and fusion baselines. A separate orchestration benchmark evaluates task interpretation, dependency reasoning, and feedback-driven replanning across diverse deployment requests, showing improved plan correctness with structured domain knowledge and validation feedback.",
+  "abstract_zh": "多模态集成感知与通信（ISAC）为智能无线网络提供了环境感知和可靠连接。基于数据驱动的多模态ISAC模型在学习感知与无线观测之间的关系时，严重依赖标注的真实世界数据，从而限制了可扩展的部署。尽管合成数据生成减轻了负担，但将现有的模拟管道适应于目标部署需要一致的场景、感知、无线和学习配置，而这些耦合组件之间的不匹配会影响模拟到现实的可转移性。为了解决这一挑战，我们提出了一种用于模拟到现实多模态ISAC的代理人工智能（AI）框架，命名为AIMS。AIMS根据指定目标任务、部署条件和真实数据预算的自然语言部署请求，推导出特定于部署的模拟到现实配置，并协调其执行以生成特定于部署的任务模型。一个双代理架构协调场景构建与任务学习。场景构建代理从共享的物理状态生成地理基础的、同步的感知和无线记录，而场景理解代理则为零样本推断或少样本适应配置与任务相关的模态和专家混合（MoE）学习。结构化领域知识指导依赖感知规划，而验证证据支持受影响决策的反馈驱动修订。在真实世界的DeepSense~6G数据集上的实验表明，相较于考虑的模拟和融合基线，车辆检测和波束预测得到了改善。一个独立的协调基准评估了不同部署请求下的任务解释、依赖推理和反馈驱动的重新规划，显示出在结构化领域知识和验证反馈的支持下，计划的正确性得到了提升。",
+  "arxiv_id": "2609.39964",
+  "arxiv_url": "https://arxiv.org/abs/2609.39964v1",
+  "authors": [
+    "Yijie Bian",
+    "Kai Zhang",
+    "Wei Guo",
+    "Zixin Wang",
+    "Shenghui Song",
+    "Jun Zhang",
+    "Khaled B. Letaief"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39964",
+  "categories": [
+    "cs.AI",
+    "cs.MA"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.943741+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39964v1",
+  "published_at": "2026-09-30T15:31:29Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39964v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "本文提出AIMS代理式人工智能框架，用于多模态集成感知与通信系统的模拟到现实迁移。框架通过场景构建代理和场景理解代理协同生成与学习部署相关的感知、无线数据及任务模型，并利用结构化领域知识和验证反馈进行依赖感知规划与迭代修正。基于DeepSense 6G真实数据的实验显示，该方法能够提升车辆检测和波束预测性能。论文与自动驾驶并非直接对应，重点是面向智能无线网络的ISAC及其仿真迁移，但其车辆感知、多模态融合和可扩展仿真数据生成方法对自动驾驶感知与车路协同具有潜在应用价值。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "AIMS: An Agentic AI Framework for Sim-to-Real Multi-Modal ISAC",
+  "title_zh": "AIMS：一种用于模拟到现实多模态集成感知与通信的代理人工智能框架",
+  "translation_url": "https://hjfy.top/arxiv/2609.39964"
+}

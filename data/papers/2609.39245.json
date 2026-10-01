@@ -1,0 +1,56 @@
+{
+  "abstract": "In interactive scenarios, an autonomous driving system is required to generate ego actions under the influence of other agents' behaviors. Existing World Action Models (WAMs) typically model other agents as components of the world model rather than as decision-makers that fundamentally shape the action of the ego agent, which impairs their performance in dense interaction scenarios. We introduce Reciprocal World Action Models (ReWAM), a game-theoretic world action modeling framework that captures the reciprocal influence between the ego agent and other agents by representing them as conditional responders whose actions are mutually influenced. We instantiate this framework with a Level-$k$ response hierarchy, where role-specific ego and other action DiTs exchange compact strategy tokens through cross-agent attention while remaining grounded in a shared representation of the future driving world. To learn the response policy of the ego agent from demonstrations, we formulate expert actions as samples from the best response distribution and jointly optimize the entire hierarchy using conditional flow matching. Our framework is evaluated on the NAVSIM dataset and achieves state-of-the-art performance compared to baselines. The improvement is particularly significant in interactive scenarios, validating that modeling reciprocal responses provides a more effective foundation for interaction-aware world action generation.",
+  "abstract_zh": "在互动场景中，自主驾驶系统需要在其他智能体行为的影响下生成自我行动。现有的世界行动模型（World Action Models, WAMs）通常将其他智能体视为世界模型的组成部分，而不是作为根本上影响自我智能体行动的决策者，这在密集互动场景中削弱了它们的性能。我们提出了互惠世界行动模型（Reciprocal World Action Models, ReWAM），这是一种博弈论的世界行动建模框架，通过将其他智能体表示为条件响应者，捕捉自我智能体与其他智能体之间的互惠影响，其行动是相互影响的。我们用Level-$k$响应层次结构实例化该框架，其中角色特定的自我和其他行动的决策信息传递（Decision Information Tokens, DiTs）通过跨智能体注意力交换紧凑的策略令牌，同时基于未来驾驶世界的共享表示保持扎根。为了从示范中学习自我智能体的响应策略，我们将专家行动形式化为最佳响应分布的样本，并使用条件流匹配共同优化整个层次结构。我们的框架在NAVSIM数据集上进行了评估，并与基线相比实现了最先进的性能。特别是在互动场景中，改进尤为显著，验证了建模互惠响应为互动感知的世界行动生成提供了更有效的基础。",
+  "arxiv_id": "2609.39245",
+  "arxiv_url": "https://arxiv.org/abs/2609.39245v1",
+  "authors": [
+    "Benshan Ma",
+    "Pei Liu",
+    "Ruiguo Zhong",
+    "Lang Zhang",
+    "Mingyue Feng",
+    "Yaonong Wang",
+    "Jun Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39245",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.658928+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39245v1",
+  "published_at": "2026-09-30T08:12:56Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39245v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "ReWAM: Reciprocal World Action Models for Interactive Autonomous Driving",
+  "title_zh": "ReWAM：用于互动自主驾驶的互惠世界行动模型",
+  "translation_url": "https://hjfy.top/arxiv/2609.39245"
+}

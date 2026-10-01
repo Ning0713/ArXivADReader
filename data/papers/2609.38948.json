@@ -1,0 +1,50 @@
+{
+  "abstract": "Frontier models excel at many digital benchmarks, yet their ability to drive a real car, an everyday human skill, remains largely untested. We present DrivingBench, to our knowledge the first benchmark where general-purpose vision-language models must drive a real car. Through three tools, the models see camera frames from a Toyota Corolla and directly command its steering and velocity around a parking lot cone course at low speeds. The car may continue moving while the model thinks and new commands replace the currently running one, so inference latency is part of the task, testing the models' abilities to observe, act, monitor, recover, and complete a long-horizon objective under such constraints. We benchmark GPT-6 Astra, Claude Fable 5.1, GPT-5.6 Sol, and Grok 4.6 in vendor-native harnesses (Codex, Claude Code, Cursor) with up to three attempts each in one conversation; Astra is the only model to finish the course, on its second attempt, with no other attempt passing 50% of the course. Two of the four models improved materially across attempts with retained context. We also detail the design principles behind our action interface, and show how the tool output format and the framing of the task combined to determine whether models would drive at all or refuse. We release our harness, prompts, course map, and traces with video and telemetry for reproducibility.",
+  "abstract_zh": "前沿模型在许多数字基准测试中表现出色，但它们驾驶真实汽车的能力，这是一项日常人类技能，仍然基本未经过测试。我们提出了DrivingBench，至今为止我们所知的第一个基准测试，要求通用视觉-语言模型驾驶真实汽车。通过三种工具，模型能够看到丰田卡罗拉的摄像头画面，并直接控制其在停车场锥形赛道上的转向和速度，速度较低。汽车在模型思考时可以继续移动，新命令会替代当前正在执行的命令，因此推理延迟是任务的一部分，测试模型在这种约束下观察、行动、监控、恢复和完成长期目标的能力。我们在供应商原生工具（Codex、Claude Code、Cursor）中对GPT-6 Astra、Claude Fable 5.1、GPT-5.6 Sol和Grok 4.6进行了基准测试，每个模型在一次对话中最多进行三次尝试；Astra是唯一一个在第二次尝试中完成赛道的模型，其他模型的尝试均未超过50%的赛道通过率。在四个模型中，有两个在保留上下文的情况下在尝试中有显著改善。我们还详细介绍了我们的行动接口设计原则，并展示了工具输出格式和任务框架如何共同决定模型是否会驾驶或拒绝驾驶。我们发布了我们的工具、提示、赛道地图以及带有视频和遥测的轨迹，以便于复现。",
+  "arxiv_id": "2609.38948",
+  "arxiv_url": "https://arxiv.org/abs/2609.38948v1",
+  "authors": [
+    "Aditya Ramabadran",
+    "Simon Mahns",
+    "Tobias Gessler"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-38948",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.639198+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38948v1",
+  "published_at": "2026-09-30T04:16:59Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "car",
+      "parking",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38948v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "本文构建DrivingBench，在真实丰田卡罗拉低速锥桶赛道上评估通用视觉语言模型的闭环驾驶能力。模型基于相机帧直接输出转向和速度指令，并需在车辆持续运动及推理延迟存在的条件下完成长时程控制、监控与恢复。研究同时揭示了当前VLM在真实车辆控制中的显著能力差距，以及动作接口和任务提示对驾驶行为与拒绝行为的关键影响。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "DrivingBench: Can Vision-Language Models Drive a Toyota Corolla?",
+  "title_zh": "DrivingBench：视觉-语言模型能否驾驶丰田卡罗拉？",
+  "translation_url": "https://hjfy.top/arxiv/2609.38948"
+}

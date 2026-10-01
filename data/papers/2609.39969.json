@@ -1,0 +1,57 @@
+{
+  "abstract": "Physical LiDAR attacks are often evaluated using fixed primitives and manually selected parameters, despite their strong dependence on surrounding traffic. We present TACTIC, a scene-aware framework that uses a multimodal large language model (MLLM) to coordinate state-adaptive roadside LiDAR attacks. Under a gray-box threat model, TACTIC relies only on an attacker-operated roadside perception stack, without accessing the victim LiDAR's native point clouds or internal processing. Local perception provides metric vehicle states, while the MLLM combines these measurements with roadside imagery to infer relational traffic context and construct a semantic scene graph. Based on this representation, TACTIC selects and configures two complementary primitives: \\emph{push-away}, which shifts the perceived range of a lead vehicle, and \\emph{phantom-obstacle braking}, which triggers emergency braking through obstacle injection. Measured traffic states and empirically calibrated constraints ground the generated tactics in physically feasible operating regions. To accommodate MLLM latency, TACTIC overlaps reasoning and execution asynchronously while high-rate local perception detects scene changes and triggers replanning. Across 280 randomized CARLA trials, the full policy achieves a 100% collision rate, compared with 35% for a fixed rule, 60% for random selection, and 75% for a restricted LLM using mode selection with default parameters. Joint physical-and-image input achieves 100% success, versus 65% with physical measurements alone and 75% with imagery alone, while asynchronous $\\Delta$ refresh reduces scene-mutation response from 7.4 s to 2.0 s. These results show that scene-dependent tactical planning can expose context-sensitive LiDAR failure modes that fixed attack policies may miss.",
+  "abstract_zh": "物理LiDAR攻击通常使用固定的原语和手动选择的参数进行评估，尽管它们强烈依赖于周围的交通情况。我们提出了TACTIC，一个场景感知框架，利用多模态大型语言模型（MLLM）来协调状态自适应的路边LiDAR攻击。在灰盒威胁模型下，TACTIC仅依赖攻击者操作的路边感知堆栈，而不访问受害者LiDAR的原始点云或内部处理。局部感知提供了度量车辆状态，而MLLM将这些测量与路边图像结合，以推断关系交通上下文并构建语义场景图。基于这一表示，TACTIC选择并配置两种互补的原语： extit{push-away}，它改变前车的感知范围，以及 extit{phantom-obstacle braking}，它通过障碍物注入触发紧急制动。测量的交通状态和经验校准的约束将生成的战术固定在物理可行的操作区域。为了适应MLLM的延迟，TACTIC在高频局部感知检测场景变化并触发重新规划的同时，异步重叠推理和执行。在280次随机化的CARLA试验中，完整策略实现了100%的碰撞率，而固定规则为35%，随机选择为60%，使用默认参数的受限LLM进行模式选择为75%。联合物理和图像输入实现了100%的成功率，而仅使用物理测量为65%，仅使用图像为75%，同时异步$ extDelta$刷新将场景突变响应时间从7.4秒减少到2.0秒。这些结果表明，依赖场景的战术规划可以揭示固定攻击策略可能遗漏的上下文敏感的LiDAR故障模式。",
+  "arxiv_id": "2609.39969",
+  "arxiv_url": "https://arxiv.org/abs/2609.39969v1",
+  "authors": [
+    "Yiming Gao",
+    "Shaocheng Luo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39969",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.688450+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39969v1",
+  "published_at": "2026-09-30T15:33:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "vehicle",
+      "traffic",
+      "roadside",
+      "车辆",
+      "交通",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39969v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "预测/规划"
+    ]
+  },
+  "title": "TACTIC: Temporal and Context-Aware LLM Tactical Planning for Roadside LiDAR Attacks",
+  "title_zh": "TACTIC：针对路边LiDAR攻击的时间和上下文感知的LLM战术规划",
+  "translation_url": "https://hjfy.top/arxiv/2609.39969"
+}

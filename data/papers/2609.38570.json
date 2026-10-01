@@ -1,0 +1,56 @@
+{
+  "abstract": "Class 8 trucks differ from passenger cars in geometry, dynamics, and maneuvering requirements. As a result, vision-language-action (VLA) models trained for passenger vehicles do not readily transfer to Class 8 trucks, particularly in unstructured scenarios such as accident scenes and construction zones. Rather than training a truck-driving VLA from scratch, we propose an adapt-then-steer strategy that adapts an off-the-shelf VLA to generate trajectories for Class-8 trucks in these challenging scenarios. In the adapt stage, we use NVIDIA's Alpamayo 1.5 as the base model, fine-tuning only its action-generation stack on a few hundred real-world construction and accident-related highway scenarios. In the steer stage, we introduce Flow Velocity Steering (FVS) to further refine the model's predictions while holding the adapted VLA fixed. FVS is a compact, flow-time-conditioned residual module that adds learned corrections to the action-space flow velocity used to update the action sequence at each generation step. In open-loop evaluation on a scenario-disjoint held-out set, targeted fine-tuning more than halves single-candidate average displacement error (ADE) and final displacement error (FDE) over the entire 6.4 s horizon compared to the base model. Using the same targeted demonstrations, FVS further reduces the fine-tuned model's full-horizon ADE and FDE by 13.9% and 16.5%, respectively. At matched data budgets, targeted supervision yields 19-26% lower full-horizon ADE than general truck-driving supervision, while the targeted model remains competitive with a model fine-tuned on approximately 65 times as many general truck-driving scenarios. These results support adapt-then-steer for data-efficient vehicle-domain transfer to Class 8 trucks. Our project website is available at https://truckvla.github.io.",
+  "abstract_zh": "8级卡车在几何形状、动力学和操控要求上与乘用车存在显著差异。因此，针对乘用车训练的视觉-语言-动作（VLA）模型无法直接迁移到8级卡车，尤其是在事故现场和施工区域等非结构化场景中。我们提出了一种适应-再调整策略，而不是从头开始训练一个卡车驾驶VLA，该策略将现成的VLA进行适应，以在这些具有挑战性的场景中生成8级卡车的轨迹。在适应阶段，我们使用NVIDIA的Alpamayo 1.5作为基础模型，仅对其动作生成模块进行微调，使用几百个真实世界的施工和事故相关的高速公路场景。在再调整阶段，我们引入了流速引导（Flow Velocity Steering, FVS）来进一步优化模型的预测，同时保持适应后的VLA不变。FVS是一个紧凑的、流时间条件的残差模块，它为用于在每个生成步骤更新动作序列的动作空间流速添加学习到的修正。在对一个场景不重叠的保留集进行开放式评估时，针对性的微调使得单候选平均位移误差（ADE）和最终位移误差（FDE）在整个6.4秒的时间范围内相比基础模型减少了一半以上。使用相同的针对性演示，FVS进一步将微调模型的全时域ADE和FDE分别降低了13.9%和16.5%。在相同的数据预算下，针对性监督比一般的卡车驾驶监督降低了19-26%的全时域ADE，而针对性模型在与一个微调了大约65倍于一般卡车驾驶场景的模型相比仍然具有竞争力。这些结果支持适应-再调整策略在8级卡车上实现数据高效的车辆领域迁移。我们的项目网站可访问 https://truckvla.github.io。",
+  "arxiv_id": "2609.38570",
+  "arxiv_url": "https://arxiv.org/abs/2609.38570v1",
+  "authors": [
+    "Satyajeet Das",
+    "Aaron Buxbaum",
+    "Niels Joubert",
+    "Gaurav S. Sukhatme"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-38570",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.619752+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38570v1",
+  "published_at": "2026-09-29T21:28:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "highway",
+      "驾驶",
+      "车辆",
+      "vision-language-action",
+      "driving vla"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "标题命中自动驾驶专用技术",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38570v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "Data-Efficient Adaptation of a Driving VLA to Class 8 Trucks",
+  "title_zh": "驾驶视觉-语言-动作模型对8级卡车的数据高效适应",
+  "translation_url": "https://hjfy.top/arxiv/2609.38570"
+}

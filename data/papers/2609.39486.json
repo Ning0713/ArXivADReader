@@ -1,0 +1,49 @@
+{
+  "abstract": "Estimating accident mechanics from real-world crashes is important for vehicle-safety analysis, injury modeling, crash-severity prediction, and operational workflows such as insurance claim triage. In standard crash records, key metadata such as impact configuration, principal direction of force, and change in velocity ($\\Delta V$) may be missing, delayed, or corrupted, while post-crash photographs are widely available and contain rich visual evidence of deformation. We study how much crash-mechanics information can be recovered directly from vehicle photos when structured signals are absent. We formulate crash understanding as supervised prediction from per-case multi-view photo sets. Targets include six Collision Deformation Classification (CDC) descriptors and the longitudinal and lateral components of reconstructed $\\Delta V$. Each photo is encoded by a shared visual backbone, and the resulting view-level features are fused into a case-level representation from which target-specific heads predict crash descriptors. Using 15.2k training cases from the Crash Investigation Sampling System, drawn from about 1.5M photos before filtering, together with 1.15k validation and 1.15k test cases, we define an evaluation protocol for vision-based crash descriptor estimation from incomplete multi-view evidence. Post-crash imagery alone provides usable signal for several non-trivial crash-mechanics descriptors, while weakly observable and long-tailed targets remain challenging. Within the compared training regimes, the selected joint-training recipe reduces mean absolute angular error for principal direction of force from 20.1 to 14.05 degrees and longitudinal $\\Delta V$ MAE from 8.04 to 7.45 km/h. Our work provides a reference point for future multimodal fusion with structured crash metadata.",
+  "abstract_zh": "从真实世界的事故中估计事故力学对于车辆安全分析、伤害建模、碰撞严重性预测以及保险索赔分流等操作流程至关重要。在标准的碰撞记录中，关键元数据如冲击配置、主力方向和速度变化（$\u0014 ext{ΔV}$）可能缺失、延迟或损坏，而事故后的照片则广泛可用，并包含丰富的变形视觉证据。我们研究在缺乏结构化信号的情况下，可以从车辆照片中直接恢复多少碰撞力学信息。我们将碰撞理解形式化为从每个案例的多视角照片集中进行监督预测。目标包括六个碰撞变形分类（Collision Deformation Classification, CDC）描述符以及重建的纵向和横向$ ext{ΔV}$分量。每张照片通过共享的视觉骨干网络进行编码，生成的视图级特征融合为案例级表示，从中目标特定的头部预测碰撞描述符。使用来自碰撞调查抽样系统的15.2k训练案例，这些案例来源于约1.5M张照片（经过筛选），以及1.15k验证和1.15k测试案例，我们定义了一种基于视觉的碰撞描述符估计的评估协议，适用于不完整的多视角证据。仅依靠事故后图像就能为多个非平凡的碰撞力学描述符提供可用信号，而弱可观察和长尾目标仍然具有挑战性。在比较的训练方案中，所选的联合训练方案将主力方向的平均绝对角度误差从20.1度降低到14.05度，纵向$ ext{ΔV}$的平均绝对误差从8.04 km/h降低到7.45 km/h。我们的工作为未来与结构化碰撞元数据的多模态融合提供了参考点。",
+  "arxiv_id": "2609.39486",
+  "arxiv_url": "https://arxiv.org/abs/2609.39486v1",
+  "authors": [
+    "Ondřej Valach",
+    "Václav Diviš",
+    "Ivan Gruber"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39486",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.790923+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39486v1",
+  "published_at": "2026-09-30T10:47:28Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆",
+      "multimodal fusion"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39486v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "研究从真实世界事故后的多视角车辆照片中恢复碰撞变形类别、主力方向及纵向和横向ΔV等碰撞力学信息。方法采用共享视觉骨干网络编码各视角图像，再融合为案例级表示并进行多任务预测。结果表明，事故照片能够支持部分碰撞力学估计，但弱可观测和长尾目标仍较困难。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "From Wrecks to Wisdom: Recovering Crash Mechanics from Real-World Multi-View Photos",
+  "title_zh": "从事故到智慧：从真实世界多视角照片中恢复碰撞力学",
+  "translation_url": "https://hjfy.top/arxiv/2609.39486"
+}

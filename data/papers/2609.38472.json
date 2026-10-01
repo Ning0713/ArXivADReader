@@ -1,0 +1,55 @@
+{
+  "abstract": "Behavior cloning provides an offline route to autonomous-driving policy learning, but mean-squared-error regression is poorly matched to demonstrations in which one observation admits several valid actions. Diffusion policies can represent conditional multimodal action distributions, yet their closed-loop performance may be unstable when visual features and control are learned from limited data. This paper presents Diffusion-2BC, which combines a diffusion denoising objective with an auxiliary deterministic behavior-cloning loss over a shared visual encoder. The auxiliary branch is used only during training; inference remains diffusion-based. The proposed method is evaluated in the controlled Claw environment and in bird's-eye-view CARLA navigation, including route-conditioned driving, route-free navigation through multiple intersections, and cross-map evaluation from Town01 to Town02. In the Claw task, Diffusion-2BC reduced the mean mask-distance error by approximately 10% relative to a diffusion-based behavior-cloning baseline and by 85% relative to standard deterministic behavior cloning. In route-free CARLA, Diffusion-2BC traveled substantially farther before termination under the evaluation protocol than both baselines in Town01 and Town02. Additional qualitative rollouts revealed distinct route choices, showing the multimodal behavior of the proposed diffusion-based agent. The results indicate that an auxiliary regression signal can improve the closed-loop reliability of diffusion behavior cloning while preserving multimodal prediction in the controlled benchmark.",
+  "abstract_zh": "行为克隆为自主驾驶策略学习提供了一条离线路径，但均方误差回归与那些一个观察值对应多个有效动作的演示不匹配。扩散策略能够表示条件多模态动作分布，但当视觉特征和控制从有限数据中学习时，其闭环性能可能不稳定。本文提出了Diffusion-2BC，它结合了扩散去噪目标与共享视觉编码器上的辅助确定性行为克隆损失。辅助分支仅在训练期间使用；推理仍基于扩散。所提出的方法在受控的Claw环境和鸟瞰视角的CARLA导航中进行了评估，包括基于路线的驾驶、通过多个交叉口的无路线导航，以及从Town01到Town02的跨地图评估。在Claw任务中，Diffusion-2BC相较于基于扩散的行为克隆基线减少了约10%的均值掩码距离误差，相较于标准确定性行为克隆减少了85%。在无路线的CARLA中，Diffusion-2BC在评估协议下的终止前行驶的距离明显超过了Town01和Town02中的两个基线。额外的定性回放揭示了不同的路线选择，展示了所提扩散基代理的多模态行为。结果表明，辅助回归信号可以提高扩散行为克隆的闭环可靠性，同时在受控基准中保持多模态预测。",
+  "arxiv_id": "2609.38472",
+  "arxiv_url": "https://arxiv.org/abs/2609.38472v1",
+  "authors": [
+    "Bruno Maciel Machado",
+    "Eric Aislan Antonelo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-38472",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.614996+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38472v1",
+  "published_at": "2026-09-29T20:04:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving policy",
+      "carla",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38472v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "地图/定位",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Diffusion-2BC: Hybrid Diffusion and Regression Training for Offline Behavior Cloning in Autonomous Driving",
+  "title_zh": "Diffusion-2BC：用于自主驾驶的离线行为克隆的混合扩散与回归训练",
+  "translation_url": "https://hjfy.top/arxiv/2609.38472"
+}

@@ -1,0 +1,63 @@
+{
+  "abstract": "Autonomous driving planners are typically evaluated using aggregate metrics such as driving score, destination rate, and collision rate, which do not explicitly measure compliance with traffic rules. As a result, planners can achieve high benchmark scores while still exhibiting unsafe or illegal behaviors, limiting their applicability to real-world deployment. To address this gap, we introduce TrafficSignBench, a large-scale, traffic sign-centric benchmark for systematic and interpretable evaluation of traffic-rule compliance in autonomous driving. Our framework combines real-map-based simulation for realistic road layouts with rule-targeted procedural scenario generation for scalable and balanced coverage of underrepresented rules. We implement traffic rules corresponding to 34 traffic signs, each equipped with an automatic rule checker for detecting violations during closed-loop execution. This design yields 29,000 diverse road scenes and 29 distinct testing scenario types, enabling controlled evaluation of rule-specific planner behavior. We construct 5,800 testing scenes and demonstrate that current autonomous driving planners can exhibit poor traffic-rule compliance despite strong performance on standard evaluation metrics. To address this limitation, we transform existing planners into rule-compliant trajectory experts via explicit traffic-sign constraints, enabling scalable generation of high-quality oracle trajectories for fine-tuning.",
+  "abstract_zh": "自动驾驶规划器通常通过驾驶评分、目的地到达率和碰撞率等聚合指标进行评估，这些指标并未明确衡量对交通规则的遵循。因此，规划器可能在基准测试中获得高分，但仍表现出不安全或非法的行为，从而限制了其在现实世界中的应用。为了解决这一问题，我们提出了TrafficSignBench，这是一个大规模、以交通标志为中心的基准，用于系统性和可解释地评估自动驾驶中的交通规则遵循情况。我们的框架结合了基于真实地图的模拟，以实现逼真的道路布局，并采用针对规则的程序场景生成，以实现对欠代表规则的可扩展和平衡覆盖。我们实现了与34个交通标志相对应的交通规则，每个规则都配备了自动规则检查器，以在闭环执行过程中检测违规行为。该设计产生了29,000个多样化的道路场景和29种不同的测试场景类型，使得对规则特定规划器行为的控制评估成为可能。我们构建了5,800个测试场景，并展示了当前的自动驾驶规划器在标准评估指标上表现良好，但仍可能表现出较差的交通规则遵循情况。为了解决这一局限性，我们通过明确的交通标志约束将现有规划器转变为遵循规则的轨迹专家，从而实现高质量的oracle轨迹的可扩展生成，以进行微调。",
+  "arxiv_id": "2609.38463",
+  "arxiv_url": "https://arxiv.org/abs/2609.38463v1",
+  "authors": [
+    "Victoria Smirnova",
+    "Viktoriia Zinkovich",
+    "Gregorii Bukhtuev",
+    "Artem Belyaev",
+    "Andrey Kuznetsov",
+    "Denis Shepelev",
+    "Vlad Shakhuro"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-38463",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.613363+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38463v1",
+  "published_at": "2026-09-29T19:52:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38463v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "TrafficSignBench: Rule-Centric Closed-Loop Evaluation of Traffic-Sign Compliance in Autonomous Driving",
+  "title_zh": "TrafficSignBench：基于规则的闭环评估自动驾驶中交通标志遵循情况",
+  "translation_url": "https://hjfy.top/arxiv/2609.38463"
+}

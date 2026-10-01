@@ -1,0 +1,44 @@
+{
+  "abstract": "We describe our winning entry to the Waymo Open Dataset 2D Video Panoptic Segmentation Challenge. The task asks for a semantic class at every pixel of every frame and, for countable objects, an identity that holds across 100 frames and across five overlapping cameras. We build on DVIS++, a cascade of a segmenter, a tracker, and a refiner, as our baseline. We propose hard region supervision (HRS) to improve the baseline. In particular, we use the baseline to define the hard region as where it makes mistakes, and design a loss and an auxiliary prediction head for this region. The auxiliary head is used only in training and removed at test time, so at inference the model trained with HRS has the same architecture as the baseline. In addition, we propose three test-time steps that further improve the results: a two-model ensemble, a merge of the segmenter's output into the final panoptic map, and cross-camera identity linking. On the challenge test set, our entry reaches 0.3547 wSTQ, 0.2071 wAQ, and 0.6075 mIoU, ranking first on all three metrics. It is 3.6 wSTQ points ahead of the second entry and 2.4 points ahead of our DVIS++ baseline.",
+  "abstract_zh": "我们描述了在Waymo开放数据集2D视频全景分割挑战中的获胜方案。该任务要求为每一帧的每一个像素提供一个语义类别，并且对于可计数的物体，提供一个在100帧和五个重叠摄像头之间保持一致的身份。我们以DVIS++为基础，DVIS++是一个由分割器、跟踪器和精细化器组成的级联模型。我们提出了硬区域监督（HRS）以改善基础模型。具体而言，我们利用基础模型来定义硬区域，即模型出错的地方，并为该区域设计了一种损失函数和一个辅助预测头。辅助预测头仅在训练时使用，在测试时移除，因此在推理时，使用HRS训练的模型与基础模型具有相同的架构。此外，我们提出了三个测试时步骤，进一步提高了结果：两个模型的集成、将分割器的输出合并到最终的全景图中，以及跨摄像头的身份链接。在挑战测试集上，我们的方案达到了0.3547 wSTQ、0.2071 wAQ和0.6075 mIoU，在所有三个指标上均排名第一。它比第二名高出3.6 wSTQ点，比我们的DVIS++基础模型高出2.4点。",
+  "arxiv_id": "2609.38714",
+  "arxiv_url": "https://arxiv.org/abs/2609.38714v1",
+  "authors": [
+    "Jinghan Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-38714",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.736619+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38714v1",
+  "published_at": "2026-09-30T00:50:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "waymo open"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38714v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Hard-Region Supervision: #1 on the Waymo Open Dataset 2D Video Panoptic Segmentation Leaderboard",
+  "title_zh": "硬区域监督：在Waymo开放数据集2D视频全景分割排行榜上排名第一",
+  "translation_url": "https://hjfy.top/arxiv/2609.38714"
+}

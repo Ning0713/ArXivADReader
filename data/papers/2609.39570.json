@@ -1,0 +1,58 @@
+{
+  "abstract": "Trajectory planning is a core component of autonomous driving systems, where real-time performance and solution quality directly affect safety and reliability. Sample-Based Motion Planning (SBMP) is widely adopted for its ability to approximate near-optimal solutions through parameter space sampling. However, achieving high-quality trajectories typically requires dense sampling, leading to substantial computational overhead and significant runtime variability in complex traffic scenarios. To address this limitation, we propose a Sparse Planner (SP) that improves sampling efficiency by learning the conditional relationship between scene context and effective trajectory parameters using a Conditional Variational Autoencoder (CVAE). By modeling the structure of high-quality sampling distributions, SP directly generates cost-effective samples in the parameter space, significantly reducing the required sampling density while preserving solution quality. Experimental results show that SP achieves lower trajectory cost than the state-of-the-art FISS+ planner while using only one-eighth of the sampling density. In addition, SP demonstrates improved distance-keeping capability in obstacle-rich scenarios and maintains reduced and more stable runtime characteristics, indicating enhanced computational efficiency and predictable runtime behavior.",
+  "abstract_zh": "轨迹规划是自动驾驶系统的核心组成部分，其中实时性能和解决方案质量直接影响安全性和可靠性。基于样本的运动规划（Sample-Based Motion Planning, SBMP）因其能够通过参数空间采样近似最优解而被广泛采用。然而，实现高质量轨迹通常需要密集采样，这导致在复杂交通场景中计算开销大且运行时间变动显著。为了解决这一限制，我们提出了一种稀疏规划器（Sparse Planner, SP），通过使用条件变分自编码器（Conditional Variational Autoencoder, CVAE）学习场景上下文与有效轨迹参数之间的条件关系，从而提高采样效率。SP通过建模高质量采样分布的结构，在参数空间中直接生成成本效益高的样本，显著降低所需的采样密度，同时保持解决方案质量。实验结果表明，SP在仅使用八分之一的采样密度的情况下，轨迹成本低于最先进的FISS+规划器。此外，SP在障碍物丰富的场景中表现出更好的保持距离能力，并保持了更低且更稳定的运行时间特性，表明其计算效率得到了提升，运行时间行为更加可预测。",
+  "arxiv_id": "2609.39570",
+  "arxiv_url": "https://arxiv.org/abs/2609.39570v1",
+  "authors": [
+    "Wenguang Xu",
+    "Giovanni Lucente",
+    "Karem Mohamed",
+    "Richard Membarth"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39570",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.670132+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39570v1",
+  "published_at": "2026-09-30T12:06:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "motion planning",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39570v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Sparse Planner: A Hybrid Planner for Efficient Sampling via a Conditional Variational Autoencoder",
+  "title_zh": "稀疏规划器：一种通过条件变分自编码器实现高效采样的混合规划器",
+  "translation_url": "https://hjfy.top/arxiv/2609.39570"
+}

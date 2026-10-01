@@ -1,0 +1,55 @@
+{
+  "abstract": "Reconstructing dynamic driving scenes from recorded sensor data supports closed-loop evaluation of autonomous driving systems by synthesizing observations beyond the original trajectory. Unlike cameras and LiDAR, radar measures radial velocity directly through Doppler. Yet existing radar novel-view synthesis fails to exploit this capability: methods addressing dynamic scenes reconstruct only range-azimuth tensors, while methods that render Doppler assume static scenes. Moreover, because radar processing spreads each reflection across multiple bins, existing representations absorb this spread into scene geometry, causing it to render incorrectly when the viewpoint moves. We present DyRAD, which models dynamic driving scenes using static background reflectors and motion-tracked dynamic point reflectors to render complete range-azimuth-Doppler (RAD) tensors. Reflector velocities are derived from object tracks and projected onto the line of sight, making Doppler both a rendered output and supervision for those tracks. Crucially, we render reflectors through a fixed analytic point-spread function (PSF) derived from the radar's signal-processing chain, preventing sensor-induced spread from being baked into the scene representation. Beyond improving scene reconstruction, this separation also enables zero-shot sensor-configuration transfer, allowing the same reconstructed scene to be rendered under different radar specifications without refitting. We evaluate DyRAD on RADIal, Boreas, and a synthetic benchmark across both on-path poses and displaced viewpoints untested by prior work. On RADIal, DyRAD recovers radar detections in 90.7% of reference-detected objects, compared with 26.9% for the strongest baseline.",
+  "abstract_zh": "从记录的传感器数据中重建动态驾驶场景，通过合成超出原始轨迹的观察，支持对自动驾驶系统的闭环评估。与摄像头和激光雷达不同，雷达通过多普勒直接测量径向速度。然而，现有的雷达新视图合成未能充分利用这一能力：处理动态场景的方法仅重建范围-方位张量，而渲染多普勒的方法则假设场景是静态的。此外，由于雷达处理将每个反射扩展到多个箱中，现有表示将这种扩展吸收到场景几何中，导致在视点移动时渲染不正确。我们提出了DyRAD，它通过静态背景反射器和运动跟踪的动态点反射器来建模动态驾驶场景，以渲染完整的范围-方位-多普勒（RAD）张量。反射器速度由物体轨迹推导并投影到视线方向，使多普勒既成为渲染输出又成为这些轨迹的监督。关键是，我们通过从雷达信号处理链中推导出的固定解析点扩散函数（PSF）来渲染反射器，防止传感器引起的扩展被固化到场景表示中。除了改善场景重建外，这种分离还使零-shot传感器配置转移成为可能，允许在不同雷达规格下渲染相同的重建场景而无需重新拟合。我们在RADIal、Boreas和一个合成基准上评估DyRAD，涵盖了未被先前工作测试的路径姿态和位移视点。在RADIal上，DyRAD在90.7%的参考检测对象中恢复了雷达检测，而最强基线仅为26.9%。",
+  "arxiv_id": "2609.39841",
+  "arxiv_url": "https://arxiv.org/abs/2609.39841v1",
+  "authors": [
+    "Merav Keidar",
+    "Tomer Borreda",
+    "Rajalakshmi Nandakumar",
+    "Or Litany"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39841",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.821884+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39841v1",
+  "published_at": "2026-09-30T14:35:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39841v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "DyRAD: Radar Novel View Synthesis for Dynamic Driving Scenes",
+  "title_zh": "DyRAD：动态驾驶场景的雷达新视图合成",
+  "translation_url": "https://hjfy.top/arxiv/2609.39841"
+}

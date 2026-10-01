@@ -1,0 +1,57 @@
+{
+  "abstract": "Mobile robots and vehicles carry synchronized multi-camera rigs, yet many streaming 3D foundation models are designed for monocular input, leaving efficient use of rig geometry a challenge. We present StreamRig, a freeze-and-stream framework that builds causal streaming odometry for calibrated rigs on a frozen multi-view 3D foundation model. The frozen front-end jointly perceives the synchronized views using rig calibration. A Rig-Resampler compresses their features, a CausalBridge applies causal attention with a key-value cache, and a lightweight head regresses rig poses. A periodic re-anchoring protocol supports stable pose estimation over long sequences. Only these modules are trained, 74.6M parameters in total, with relative poses as the sole supervision. Our two-stage training strategy combines group relocalization pretraining with causal rig training to transfer the geometric priors of the frozen front-end and the alignment ability of the pretrained modules to streaming odometry. We evaluate on NCLT, TartanGround, KITTI-360, and our self-collected humanoid-robot dataset ZJH, where training uses only simulation and real-world evaluation is zero-shot. Across all four datasets, StreamRig achieves lower translation and rotation drift than the evaluated non-oracle monocular streaming and rig-aware offline models, while maintaining low inference cost. Ablations and controlled camera-count experiments identify the sources of these gains. We further examine how longer training windows affect inference over longer horizons. Code has been released at https://github.com/WeiYuFei0217/StreamRig.",
+  "abstract_zh": "移动机器人和车辆携带同步的多摄像头设备，但许多流式3D基础模型是为单目输入设计的，这使得高效利用设备几何结构成为一项挑战。我们提出了StreamRig，一种冻结与流处理框架，基于冻结的多视角3D基础模型构建校准设备的因果流式里程计。冻结的前端通过设备校准共同感知同步视图。一个设备重采样器压缩它们的特征，一个因果桥接器应用带有键值缓存的因果注意力，而一个轻量级头部回归设备姿态。一个周期性重新锚定协议支持在长序列上的稳定姿态估计。仅这些模块被训练，总共有7460万个参数，相对姿态作为唯一的监督。我们的两阶段训练策略结合了组重定位预训练与因果设备训练，以将冻结前端的几何先验和预训练模块的对齐能力转移到流式里程计上。我们在NCLT、TartanGround、KITTI-360以及我们自收集的人形机器人数据集ZJH上进行了评估，其中训练仅使用模拟，真实世界评估为零样本。在所有四个数据集中，StreamRig实现了比评估的非oracle单目流式和设备感知离线模型更低的平移和旋转漂移，同时保持低推理成本。消融实验和受控摄像头数量实验识别了这些增益的来源。我们进一步研究了更长的训练窗口如何影响长时间范围内的推理。代码已发布在https://github.com/WeiYuFei0217/StreamRig。",
+  "arxiv_id": "2609.40244",
+  "arxiv_url": "https://arxiv.org/abs/2609.40244v1",
+  "authors": [
+    "Yufei Wei",
+    "Shuhao Ye",
+    "Qi Wang",
+    "Xin Zheng",
+    "Qing Huang",
+    "Rong Xiong",
+    "Yue Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-40244",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.840581+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.40244v1",
+  "published_at": "2026-09-30T17:34:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "kitti-360",
+      "车辆",
+      "robot",
+      "humanoid",
+      "人形机器人"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 45
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.40244v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "StreamRig: Exploiting Intra-Rig Geometry for Streaming Multi-Camera Odometry",
+  "title_zh": "StreamRig：利用内部设备几何结构进行多摄像头里程计流处理",
+  "translation_url": "https://hjfy.top/arxiv/2609.40244"
+}

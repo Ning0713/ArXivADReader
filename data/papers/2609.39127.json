@@ -1,0 +1,59 @@
+{
+  "abstract": "Satellite-ground localization estimates the planar position and yaw orientation of a ground camera within a geo-referenced satellite image. Most recent methods map ground and satellite features into a shared bird's-eye-view (BEV) space and establish spatial correspondences. However, insufficient depth constraints can assign one ground feature to different distances along a viewing direction, creating geometric ambiguity in BEV feature placement. Similar appearances at different locations can also create descriptor matching ambiguity, while existing descriptor learning lacks explicit semantic supervision to distinguish them. We propose GeoSem-BEV, a geometry-semantic constrained BEV representation learning method. Radial depth supervision constrains distance assignment, and vertical height supervision constrains height aggregation. Shared explicit semantic supervision promotes consistent semantic predictions across views and helps distinguish locations with similar semantics. These constraints improve feature placement and descriptor discriminability, enhancing state-of-the-art BEV localization models. On VIGOR with unknown orientation, GeoSem-BEV reduces mean orientation error by 37.2% and 38.1% in the cross-area and same-area settings, respectively. The corresponding errors are reduced by 10.8% and 15.6% on DReSS-D. On KITTI-CVL, it reduces same-area mean orientation error by 26.8% under 10 degree orientation noise.",
+  "abstract_zh": "卫星-地面定位估计地面相机在地理参考卫星图像中的平面位置和偏航方向。最近的方法大多将地面和卫星特征映射到共享的鸟瞰视图（BEV）空间，并建立空间对应关系。然而，深度约束不足可能导致一个地面特征在视线方向上被分配到不同的距离，从而在BEV特征放置中产生几何歧义。不同位置的相似外观也可能导致描述符匹配歧义，而现有的描述符学习缺乏明确的语义监督来区分它们。我们提出了GeoSem-BEV，一种几何-语义约束的BEV表示学习方法。径向深度监督约束距离分配，垂直高度监督约束高度聚合。共享的明确语义监督促进了跨视图的一致语义预测，并帮助区分具有相似语义的位置。这些约束改善了特征放置和描述符的可区分性，增强了最先进的BEV定位模型。在未知方向的VIGOR上，GeoSem-BEV在跨区域和同区域设置中分别减少了37.2%和38.1%的平均方向误差。在DReSS-D上，相应的误差分别减少了10.8%和15.6%。在KITTI-CVL上，它在10度方向噪声下减少了26.8%的同区域平均方向误差。",
+  "arxiv_id": "2609.39127",
+  "arxiv_url": "https://arxiv.org/abs/2609.39127v1",
+  "authors": [
+    "Junming Feng",
+    "Panwang Xia",
+    "Qiong Wu",
+    "Xudong Lu",
+    "Zeyu Jiao",
+    "Kun Lv",
+    "Zherong Wu",
+    "Yi Wan",
+    "Peifeng Ma",
+    "Li-Ta Hsu",
+    "Zhi Zheng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39127",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.766673+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39127v1",
+  "published_at": "2026-09-30T06:59:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "bev",
+      "bird's-eye",
+      "satellite",
+      "卫星"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39127v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "地图/定位"
+    ]
+  },
+  "title": "How to Reduce Localization Ambiguity? Geometry-Semantic Constrained BEV Representation Learning for Satellite-Ground Localization",
+  "title_zh": "如何减少定位歧义？几何-语义约束的鸟瞰视图（BEV）表示学习用于卫星-地面定位",
+  "translation_url": "https://hjfy.top/arxiv/2609.39127"
+}

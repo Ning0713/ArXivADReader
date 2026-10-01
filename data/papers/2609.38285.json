@@ -1,0 +1,56 @@
+{
+  "abstract": "Vision-language models (VLMs) can contradict themselves across views of the same spatial relation and fail to respond when that relation changes. Addressing these failures requires supervision that captures error magnitude and geometric dependencies across observations, both of which remain implicit in training on individual answers or ordinal preferences. Therefore, we introduce GaugeVLM, which makes this structure explicit through controlled object and camera interventions in explicit 3D scenes, producing linked observations with measured differences between spatial relations and shared truths across views. To translate this structure into learning signals, its core objective, GaugeDPO, converts measured errors into preference margins, directly supervises correct canonical rankings across views, and links intervention-induced answer-odds contrasts to measured relation changes with view-specific scales. Our analysis bounds canonical prediction error and establishes that the cross-view and intervention constraints can be jointly satisfied. Empirically, GaugeVLM improves all 10 established spatial metrics over supervised fine-tuning across three VLM backbones, with the main 7B model gaining 15.0 and 18.9 percentage points on MSMU distance and QSpatial+, respectively. These gains also extend to autonomous driving and embodied reasoning, demonstrating the robust generalization across domains.",
+  "abstract_zh": "视觉-语言模型（VLMs）在同一空间关系的不同视图中可能自相矛盾，并且在该关系发生变化时未能做出反应。解决这些失败需要一种能够捕捉误差幅度和观察之间几何依赖关系的监督，而这两者在对单个答案或序数偏好的训练中仍然是隐含的。因此，我们提出了GaugeVLM，它通过在明确的3D场景中进行受控的物体和相机干预，使这一结构变得显性，从而产生具有测量差异的关联观察，反映空间关系和跨视图的共享真相。为了将这一结构转化为学习信号，其核心目标GaugeDPO将测量的误差转换为偏好边际，直接监督跨视图的正确典范排名，并将干预引起的答案赔率对比与测量的关系变化通过视图特定的尺度相连接。我们的分析界定了典范预测误差，并建立了跨视图和干预约束可以共同满足的条件。从经验上看，GaugeVLM在三个VLM骨干网络上通过监督微调改善了所有10个已建立的空间指标，其中主模型7B在MSMU距离和QSpatial+上分别提高了15.0和18.9个百分点。这些提升也扩展到自动驾驶和具身推理，展示了跨领域的强健泛化能力。",
+  "arxiv_id": "2609.38285",
+  "arxiv_url": "https://arxiv.org/abs/2609.38285v1",
+  "authors": [
+    "Hongbo Wang",
+    "Zihan Lin",
+    "Wenkui Yang",
+    "Shiran Ge",
+    "Yuang Ai",
+    "Jie Cao",
+    "Huaibo Huang",
+    "Ran He"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-38285",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.705088+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38285v1",
+  "published_at": "2026-09-29T16:26:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38285v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "GaugeVLM: Structuring Spatial Supervision with Measured Geometric Interventions",
+  "title_zh": "GaugeVLM：通过测量几何干预构建空间监督",
+  "translation_url": "https://hjfy.top/arxiv/2609.38285"
+}

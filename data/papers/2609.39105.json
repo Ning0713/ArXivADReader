@@ -1,0 +1,53 @@
+{
+  "abstract": "Autonomous navigation in unstructured off-road environments requires reasoning about both vehicle--terrain interaction and environmental unknowns. We propose a model-based framework for generating quasi-static, stability-oriented reference trajectories for rigid, non-articulated four-wheeled vehicles on highly uneven terrain. Our work makes three primary contributions. First, we model blind spots caused by terrain occlusion as coverage-induced epistemic uncertainty in a fixed-feature Fourier terrain representation, quantified through a regularized inverse-Hessian estimate. Second, we propagate this uncertainty through the Nonlinear Least-Squares (NLS) pose/contact model using implicit differentiation and incorporate the resulting pose, contact-point, and per-wheel surface-normal uncertainty terms into trajectory optimization based on the Cross-Entropy Method (CEM). Third, we introduce a Flow Matching model that warm-starts terrain fitting, and we evaluate its fitting-accuracy--latency trade-off while retaining model-based refinement. Across six synthetic terrains with 30 matched start--goal pairs per terrain, the complete framework produced an observed failure rate of 18.9%, compared with 46.1% and 41.7% for two representative baselines and 34.4% for an ablation that removed the propagated-uncertainty scoring. Hardware evaluations span six distinct outdoor environments, with two representative executions presented in the paper and four additional executions included in the supplementary video. The evaluation also reports the accuracy--latency trade-off for the Flow Matching warm start.",
+  "abstract_zh": "在非结构化的越野环境中进行自主导航需要考虑车辆与地形的相互作用以及环境的不确定性。我们提出了一种基于模型的框架，用于在高度不平坦的地形上为刚性非关节四轮车辆生成准静态的稳定性导向参考轨迹。我们的工作主要有三个贡献。首先，我们将地形遮挡造成的盲区建模为固定特征傅里叶地形表示中的覆盖引起的认知不确定性，通过正则化的逆海森矩阵估计进行量化。其次，我们通过隐式微分法将这种不确定性传播到非线性最小二乘（Nonlinear Least-Squares, NLS）姿态/接触模型中，并将得到的姿态、接触点和每个轮子的表面法线不确定性项纳入基于交叉熵方法（Cross-Entropy Method, CEM）的轨迹优化中。第三，我们引入了一种流匹配（Flow Matching）模型来热启动地形拟合，并在保持基于模型的细化的同时评估其拟合精度与延迟之间的权衡。在六个合成地形上，每个地形有30对匹配的起始-目标对，完整框架的观察到的失败率为18.9%，而两个代表性基线的失败率分别为46.1%和41.7%，去除传播不确定性评分的消融实验失败率为34.4%。硬件评估涵盖六个不同的户外环境，论文中展示了两个代表性执行案例，并在补充视频中包含了四个额外的执行案例。评估还报告了流匹配热启动的精度与延迟之间的权衡。",
+  "arxiv_id": "2609.39105",
+  "arxiv_url": "https://arxiv.org/abs/2609.39105v1",
+  "authors": [
+    "Amith Manoharan",
+    "Chinmay Mundane",
+    "Aayush Bahukhandi",
+    "K. Madhava Krishna",
+    "Karel Zimmermann",
+    "Arun Kumar Singh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39105",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.649472+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39105v1",
+  "published_at": "2026-09-30T06:43:44Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "road",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39105v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "本文研究四轮自动驾驶车辆在非结构化越野不平坦地形上的轨迹规划。方法显式建模地形遮挡导致的认知不确定性，将其传播到车辆姿态、轮地接触点和表面法向估计，并在交叉熵轨迹优化中以稳定性为导向进行评分；同时使用流匹配模型加速地形拟合。仿真与实车实验表明，该方法可显著降低复杂地形导航的失败率。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "安全/异常"
+    ]
+  },
+  "title": "Occlusion-Aware, Quasi-Static, Stability-Oriented Trajectory Planning on Uneven Terrain",
+  "title_zh": "考虑遮挡的准静态稳定性导向轨迹规划在不平坦地形上的应用",
+  "translation_url": "https://hjfy.top/arxiv/2609.39105"
+}

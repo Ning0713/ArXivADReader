@@ -1,0 +1,63 @@
+{
+  "abstract": "Vision-Language-Action (VLA) foundation models have recently emerged as one of the prevailing solutions for autonomous driving, as they can utilize knowledge acquired during vision-language pretraining for accurate and interpretable driving. However, VLAs can take only a limited number of frames as visual input due to the high token cost of an image, which is problematic for memory-dependent tasks such as determining the arrival order at all-way stops and long-horizon driving scene understanding. Existing solutions use latent vector memories accessed through cross-attention, which are neither interpretable nor portable. In this paper, we propose AD-Memo, a general-purpose VLA driving agent with language-based memory. The agent outputs memory as an extension of its Chain-of-Thought (CoT) to record surrounding objects critical to driving; this memory becomes part of the agent's future input. We curate memory-based datasets and train VLAs with a two-stage recipe: Supervised Fine-Tuning (SFT) and \\textit{Da Capo}, a novel semi-closed-loop Reinforcement Learning (RL) algorithm which uses trajectory-level advantage for memory and step-level advantage for driving, leading to better credit assignment. Across scenarios such as all-way stops and general driving, AD-Memo improves driving quality, enables better question answering on driving scenes, and produces plug-and-play memory for other models.",
+  "abstract_zh": "视觉-语言-行动（VLA）基础模型最近成为自主驾驶的主要解决方案之一，因为它们能够利用在视觉-语言预训练中获得的知识，实现准确且可解释的驾驶。然而，由于图像的高令牌成本，VLA只能接受有限数量的帧作为视觉输入，这对依赖记忆的任务（如确定四向停靠点的到达顺序和长时间驾驶场景理解）构成了问题。现有解决方案使用通过交叉注意力访问的潜在向量记忆，这些记忆既不可解释也不可移植。本文提出了AD-Memo，一种具有基于语言记忆的通用VLA驾驶代理。该代理将记忆作为其思维链（Chain-of-Thought, CoT）的扩展，记录对驾驶至关重要的周围物体；这段记忆成为代理未来输入的一部分。我们策划了基于记忆的数据集，并采用两阶段方案训练VLA：监督微调（Supervised Fine-Tuning, SFT）和 extit{Da Capo}，一种新颖的半闭环强化学习（Reinforcement Learning, RL）算法，利用轨迹级优势进行记忆，利用步级优势进行驾驶，从而实现更好的信用分配。在四向停靠点和一般驾驶等场景中，AD-Memo提高了驾驶质量，增强了对驾驶场景的问答能力，并为其他模型提供了即插即用的记忆。",
+  "arxiv_id": "2609.38641",
+  "arxiv_url": "https://arxiv.org/abs/2609.38641v1",
+  "authors": [
+    "Kai Yan",
+    "Xiangyu Chen",
+    "Yulong Cao",
+    "Alex Naumann",
+    "Peter Karkus",
+    "Yan Wang",
+    "Jef Packer",
+    "Alex Schwing",
+    "Yuxiong Wang",
+    "Boris Ivanovic",
+    "Wenjie Luo",
+    "Marco Pavone"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-38641",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.731872+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.38641v1",
+  "published_at": "2026-09-29T23:00:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.38641v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "Vision-Language-Action Autonomous Driving Agent with Language-based Memory",
+  "title_zh": "基于语言记忆的视觉-语言-行动自主驾驶代理",
+  "translation_url": "https://hjfy.top/arxiv/2609.38641"
+}

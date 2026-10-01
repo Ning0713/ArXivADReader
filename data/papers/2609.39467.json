@@ -1,0 +1,55 @@
+{
+  "abstract": "Pedestrian detection plays a crucial role in computer vision with applications in autonomous driving, surveillance, and public safety. However, real-world dense scenes bring severe challenges, including heavy occlusion, drastic scale variations, and strict real-time requirements. Existing lightweight detectors struggle to balance accuracy and efficiency while often neglecting quality-aware feature modeling and consistency between classification and localization, leading to unstable performance under crowded conditions. To address these issues, we propose DensePed-Lite, a unified framework built on a single principle: under occlusion the network should adapt its behavior to the quality of what it observes rather than assume complete information. This principle is realized at three points where occlusion does the most damage: unreliable confidence scoring (UQE), fragmented spatial coverage (MPSC), and incoherent multi-scale fusion (CTDM). The three mechanisms reinforce one another instead of acting in isolation, all without significantly increasing complexity. Experiments on CityPersons and CrowdHuman validate that DensePed-Lite achieves a superior accuracy-efficiency trade-off compared with recent state-of-the-art lightweight methods, making it suitable for real-time deployment in dense pedestrian scenarios.",
+  "abstract_zh": "行人检测在计算机视觉中扮演着至关重要的角色，广泛应用于自动驾驶、监控和公共安全。然而，现实世界中的密集场景带来了严重的挑战，包括严重的遮挡、剧烈的尺度变化和严格的实时要求。现有的轻量级检测器在准确性和效率之间难以取得平衡，往往忽视了质量感知特征建模以及分类与定位之间的一致性，导致在拥挤条件下性能不稳定。为了解决这些问题，我们提出了DensePed-Lite，一个基于单一原则的统一框架：在遮挡情况下，网络应根据观察到的信息质量调整其行为，而不是假设获得了完整的信息。该原则在遮挡造成最大损害的三个点上得以实现：不可靠的置信评分（UQE）、碎片化的空间覆盖（MPSC）和不一致的多尺度融合（CTDM）。这三种机制相互强化，而不是孤立工作，且在不显著增加复杂性的情况下实现。对CityPersons和CrowdHuman的实验验证了DensePed-Lite在准确性与效率的权衡上优于最近的最先进轻量级方法，使其适合于密集行人场景下的实时部署。",
+  "arxiv_id": "2609.39467",
+  "arxiv_url": "https://arxiv.org/abs/2609.39467v1",
+  "authors": [
+    "ZiAn Wang",
+    "MingZhe Liu",
+    "Chaoyi Guo",
+    "ChangChun Li",
+    "Fangming Gu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39467",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.790137+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39467v1",
+  "published_at": "2026-09-30T10:31:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "pedestrian",
+      "驾驶",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39467v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "安全/异常"
+    ]
+  },
+  "title": "DensePed-Lite: Quality-Aware Adaptive Detection for Dense Pedestrians under Occlusion",
+  "title_zh": "DensePed-Lite：针对遮挡下密集行人的质量感知自适应检测",
+  "translation_url": "https://hjfy.top/arxiv/2609.39467"
+}

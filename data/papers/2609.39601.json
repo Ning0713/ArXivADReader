@@ -1,0 +1,82 @@
+{
+  "abstract": "Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforcement learning with GRPO, using supervision from public datasets and dedicated data engines. Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI establishes a new state of the art, averaging 73.68%, above the larger GPT-6 Astra (71.54%). As a downstream visual backbone, GroundingPI improves performance on robotic manipulation and autonomous driving. On RoboTwin 2.0, it outperforms every mainstream backbone we evaluate in all four out-of-distribution settings, by up to 24.8% relative to the strongest backbone. On RoboCasa-GR1, GroundingPI trained with 50% of the demonstrations outperforms those baselines trained with 75%. On nuScenes, used as the visual backbone, GroundingPI attains an average open-loop L2 error of 0.296 m. We systematically analyze GroundingPI's pretraining in scale and data composition. Downstream autonomous driving and robotic manipulation improve as the pretraining is scaled. Analyzing the data recipe across these 11 perceptual capabilities shows dense grounding's substantial benefits for both, and OCR's potential as a catalyst for perceptual learning. These results support grounding as a perceptual foundation, and dedicated perceptual pretraining as a promising direction for foundation models of physical intelligence.",
+  "abstract_zh": "精确的定位至关重要。它明确了哪个对象是目标以及该对象的位置，即使在杂乱环境和小型物体中，也必须足够快速以支持闭环控制。然而，视觉-语言-动作（VLA）和世界-动作模型（WAMs）依赖于通用的视觉-语言和视频生成骨干网络，这在这些场景中仍然表现不佳。我们提出了GroundingPI，一个具有40亿参数的基础模型，能够生成点和框作为共享词汇中的量化坐标。训练结合了多模态和空间预训练、监督微调以及使用GRPO的强化学习，利用公共数据集和专用数据引擎提供的监督。在跨越11种感知能力的34个定位基准测试中，GroundingPI在44个基线模型中建立了新的最先进水平，平均达到73.68%，超过了更大的GPT-6 Astra（71.54%）。作为下游视觉骨干，GroundingPI提升了机器人操作和自动驾驶的性能。在RoboTwin 2.0上，它在所有四种分布外设置中超越了我们评估的每一个主流骨干，最高相对提升达24.8%。在RoboCasa-GR1上，使用50%演示训练的GroundingPI超越了那些使用75%演示训练的基线。在作为视觉骨干的nuScenes上，GroundingPI达到了平均开放循环L2误差为0.296米。我们系统地分析了GroundingPI在规模和数据组成上的预训练。随着预训练规模的扩大，下游的自动驾驶和机器人操作性能得以提升。对这11种感知能力的数据配方进行分析显示，密集定位对两者都有显著的好处，而OCR作为感知学习的催化剂的潜力也得以体现。这些结果支持定位作为感知基础，专门的感知预训练作为物理智能基础模型的一个有前景的方向。",
+  "arxiv_id": "2609.39601",
+  "arxiv_url": "https://arxiv.org/abs/2609.39601v1",
+  "authors": [
+    "Qize Yu",
+    "Lianrui Fan",
+    "Boyu Chen",
+    "Jiaqi Liang",
+    "Xini Ding",
+    "Yue Chen",
+    "Zetian Song",
+    "Yuran Wang",
+    "Yi Zou",
+    "Kaixuan Wang",
+    "Tianxing Chen",
+    "Wenxuan Song",
+    "Bohan Zhou",
+    "Mingleyang Li",
+    "Siqiao Huang",
+    "Yuqi Ye",
+    "Caigao Jiang",
+    "Wei Wei",
+    "Ruihai Wu",
+    "Hang Zhang",
+    "Yixiao Ge",
+    "Shuchang Zhou",
+    "Shilong Liu",
+    "Xianming Liu",
+    "Ping Luo",
+    "Shiyu Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-01#paper-2609-39601",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-01T11:18:04.804065+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2609.39601v1",
+  "published_at": "2026-09-30T12:20:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-10-01"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2609.39601v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-01"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
+  "title_zh": "GroundingPI：面向物理智能的基础模型与视觉原语的结合",
+  "translation_url": "https://hjfy.top/arxiv/2609.39601"
+}
