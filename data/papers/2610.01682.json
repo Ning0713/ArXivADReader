@@ -1,0 +1,47 @@
+{
+  "abstract": "Mobile robots operating among pedestrians need trajectories that become available quickly, remain spatially credible through missed observations, preserve identity, and fit within an embedded computing budget. Aggregate tracking scores provide limited insight into when and how trajectories fail, while varying detector inputs can confound tracker and detector quality. We present a deployment-focused, tracker-only evaluation protocol that uses shared detections to isolate tracker behavior and directly evaluates initialization, detector-gap continuation, identity recovery, close-neighbor association, and load-dependent tracker-step runtime, while Higher Order Tracking Accuracy (HOTA) is retained as a complementary aggregate measure. We apply the protocol to the JackRabbot Dataset and Benchmark (JRDB) using six open-source trackers and our lightweight Pedestrian Reference Tracker (PedRefTrack), together with a GT-assisted variant that estimates the remaining tracker-side gap under idealized association and motion. Under fixed detections, the non-GT trackers span only 24.26%-29.67% HOTA yet exhibit markedly different capability profiles. After 1.0 s without detector support, no tracker without GT assistance maintains spatially correct, same-identity output in more than half of eligible cases, making missing-observation continuation the dominant limitation among the tested properties. Close-neighbor failures are smaller and increase mainly at the shortest separations. Tracker-step runtime on an NVIDIA Jetson Orin is heavy-tailed and load-sensitive, causing several trackers to fall below the 10 Hz real-time target in crowded frames. The protocol provides a reproducible way to characterize tracker behavior and deployment suitability in pedestrian-centric environments. Code and evaluation scripts are released at https://github.com/SCAI-Lab/tracker_eval.",
+  "abstract_zh": "在行人中运行的移动机器人需要快速可用的轨迹，这些轨迹在错过观测时保持空间可信性，保持身份一致，并适应嵌入式计算预算。聚合跟踪分数对轨迹失败的时间和方式提供的洞察有限，而不同的检测器输入可能会混淆跟踪器和检测器的质量。我们提出了一种以部署为中心的仅跟踪器评估协议，该协议利用共享检测来隔离跟踪器行为，并直接评估初始化、检测器间隙延续、身份恢复、近邻关联以及负载依赖的跟踪器步骤运行时，同时保留高阶跟踪准确度（Higher Order Tracking Accuracy, HOTA）作为补充的聚合度量。我们将该协议应用于JackRabbot数据集和基准（JRDB），使用六个开源跟踪器和我们的轻量级行人参考跟踪器（Pedestrian Reference Tracker, PedRefTrack），以及一个基于GT（Ground Truth）辅助的变体，该变体在理想化关联和运动下估计剩余的跟踪器侧间隙。在固定检测下，非GT跟踪器的HOTA仅为24.26%-29.67%，但表现出显著不同的能力特征。在没有检测器支持的情况下，经过1.0秒后，任何没有GT辅助的跟踪器在超过一半的合格案例中都无法保持空间正确的同一身份输出，使得缺失观测的延续成为测试属性中主要的限制。近邻失败较小，主要在最短的分离中增加。在NVIDIA Jetson Orin上的跟踪器步骤运行时呈重尾分布且对负载敏感，导致多个跟踪器在拥挤帧中低于10 Hz实时目标。该协议提供了一种可重复的方法来表征跟踪器行为和在行人中心环境中的部署适宜性。代码和评估脚本已发布在 https://github.com/SCAI-Lab/tracker_eval。",
+  "arxiv_id": "2610.01682",
+  "arxiv_url": "https://arxiv.org/abs/2610.01682v1",
+  "authors": [
+    "Dominik Wojcikiewicz",
+    "Diego Paez-Granados"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01682",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.333758+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01682v1",
+  "published_at": "2026-10-01T13:39:25Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01682v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "本文提出面向部署的行人跟踪评估协议，在统一检测输入下分别衡量初始化、观测缺失期间的轨迹延续、身份恢复、近邻关联与嵌入式运行效率。JRDB 实验表明，相近的 HOTA 分数可能掩盖显著能力差异；检测中断后的轨迹延续是主要瓶颈，拥挤场景中的运行时间长尾也会影响实时性。该方法可为自动驾驶行人跟踪模块的评估与选型提供参考。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Beyond Leaderboard Scores: A Deployment-Focused Protocol for Interpretable Tracking Evaluation in Pedestrian-Centric Environments",
+  "title_zh": "超越排行榜分数：一种针对行人中心环境的可解释跟踪评估的部署聚焦协议",
+  "translation_url": "https://hjfy.top/arxiv/2610.01682"
+}

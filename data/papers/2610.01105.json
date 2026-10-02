@@ -1,0 +1,49 @@
+{
+  "abstract": "Autonomous robots on one-shot missions run over horizons far longer than the trajectories seen during training, under a fixed onboard compute budget. We present FRANK, a 507K-parameter recurrent architecture that combines tau-gated recurrent modules, content-addressable memory, and a feedforward reflex pathway. We evaluate it against recurrent, state-space, and reduced modular baselines at matched parameter count on four algorithmic sequence tasks, trained at length 5-20 and evaluated out to two million tokens. At 100,000x the maximum training length, 6 of 10 FRANK seeds retain exactly 100.0% accuracy, while none of the 50 baseline configurations does, five architectures at ten seeds each with none left incomplete (Fisher exact, two-sided p = 4.2E-6. Targeted lesions across the four tasks yield four distinct component-reliance profiles, consistent with task-dependent allocation across the recurrent, memory, and reflex pathways. Separately, a FRANK policy trained in simulation drives a physical ground vehicle to commanded waypoints through obstacles without teleoperation.",
+  "abstract_zh": "在一次性任务中，自主机器人在固定的机载计算预算下，执行的时间范围远超训练期间所见的轨迹。我们提出了FRANK，这是一种507K参数的递归架构，结合了tau门控递归模块、内容寻址存储器和前馈反射通路。我们在四个算法序列任务上对其进行评估，参数数量匹配的情况下与递归、状态空间和简化模块基线进行比较，训练长度为5-20，并评估至两百万个标记。在最大训练长度的100,000倍时，10个FRANK种子中有6个保持了100.0%的准确率，而50个基线配置中没有一个达到该准确率，五种架构各有十个种子，且没有一个未完成（Fisher精确检验，双侧p = 4.2E-6）。在四个任务上进行的有针对性损伤实验显示出四种不同的组件依赖特征，与递归、记忆和反射通路的任务依赖分配一致。此外，在仿真中训练的FRANK策略能够驱动物理地面车辆在没有遥控操作的情况下，通过障碍物到达指定的航点。",
+  "arxiv_id": "2610.01105",
+  "arxiv_url": "https://arxiv.org/abs/2610.01105v1",
+  "authors": [
+    "Izen Thornton",
+    "Aaron Shey",
+    "William Su"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01105",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.317813+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01105v1",
+  "published_at": "2026-10-01T05:44:47Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01105v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "本文提出FRANK紧凑递归架构，将tau门控递归模块、内容寻址记忆和前馈反射通路结合，用于固定计算预算下的超长时域一次性探索。实验表明，该架构在远超训练长度的算法序列任务上具有显著的长度泛化能力，并通过组件损伤实验分析了不同模块的任务依赖性。进一步地，仿真训练的策略能够在实体地面车辆上完成避障航点导航，体现了从仿真到现实的自主驾驶控制潜力。",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "仿真/数据",
+      "预测/规划"
+    ]
+  },
+  "title": "Extreme Length Generalization in a Compact Recurrent Architecture for One-Shot Exploration",
+  "title_zh": "紧凑递归架构中的极端长度泛化用于一次性探索",
+  "translation_url": "https://hjfy.top/arxiv/2610.01105"
+}

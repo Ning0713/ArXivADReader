@@ -1,0 +1,54 @@
+{
+  "abstract": "Vision-Language models (VLMs) are increasingly being explored in autonomous driving for tasks such as scene understanding, driving reasoning, decision-making, and end-to-end driving. As their role becomes more prominent, ensuring their robustness and reliability is increasingly important. In real-world conditions, visual inputs may be degraded by sensor imperfections and environmental conditions, potentially affecting both model predictions and their associated confidence. Such degradation is especially concerning in autonomous driving, where safety-critical decisions require models to make accurate predictions and recognize when their predictions may be unreliable. In this work, we evaluate five VLMs (Qwen3.5-9B, Gemma4-E4B, LLaVA-OneVision-7B, DriveFusion/DriveFusionQA-4B, and NVIDIA Alpamayo-1.5-10B) across four driving-related QA datasets with different visual input settings, including single-frame, multi-view, multi-frame, and monocular inputs. Our results show that the effects of visual corruption vary across models, datasets, and input settings, with changes in accuracy and confidence reliability and also differing across conditions. We then apply Visual Evidence Augmentation ($\\mathrm{V}{\\scriptstyle \\mathrm{EA}}$), a recent inference-time method to examine whether it can improve model reliability under degraded visual conditions. We find that $\\mathrm{V}{\\scriptstyle \\mathrm{EA}}$ improves performance for some models and datasets, although the gains are not consistent across all settings.",
+  "abstract_zh": "视觉-语言模型（VLMs）在自动驾驶领域的应用日益受到关注，涉及场景理解、驾驶推理、决策制定和端到端驾驶等任务。随着其作用的日益突出，确保模型的鲁棒性和可靠性变得愈加重要。在现实世界条件下，视觉输入可能受到传感器缺陷和环境条件的影响，从而可能影响模型的预测及其相关的置信度。这种退化在自动驾驶中尤其令人担忧，因为安全关键的决策要求模型做出准确的预测，并能够识别其预测可能不可靠的情况。在本研究中，我们评估了五个视觉-语言模型（Qwen3.5-9B、Gemma4-E4B、LLaVA-OneVision-7B、DriveFusion/DriveFusionQA-4B 和 NVIDIA Alpamayo-1.5-10B），并在四个与驾驶相关的问答数据集上进行测试，这些数据集具有不同的视觉输入设置，包括单帧、多视角、多帧和单目输入。我们的结果表明，视觉干扰对模型、数据集和输入设置的影响各不相同，准确性和置信度的可靠性也因条件而异。随后，我们应用了视觉证据增强（Visual Evidence Augmentation, $ ext{V}{ extstyle ext{EA}}$），这是一种最新的推理时方法，以检验其是否能在退化的视觉条件下提高模型的可靠性。我们发现，$ ext{V}{ extstyle ext{EA}}$在某些模型和数据集上提高了性能，尽管在所有设置中收益并不一致。",
+  "arxiv_id": "2610.01531",
+  "arxiv_url": "https://arxiv.org/abs/2610.01531v1",
+  "authors": [
+    "Manasa Mariam Mammen",
+    "Priyanka Mary Mammen",
+    "Zafer Kayatas",
+    "Stefan Wagner"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01531",
+  "categories": [
+    "cs.AI",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.578377+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01531v1",
+  "published_at": "2026-10-01T12:06:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01531v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "VLM/VLA",
+      "仿真/数据"
+    ]
+  },
+  "title": "Towards Reliable Vision-Language Models for Autonomous Driving",
+  "title_zh": "迈向可靠的视觉-语言模型用于自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.01531"
+}

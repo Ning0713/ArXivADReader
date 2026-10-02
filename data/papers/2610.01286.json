@@ -1,0 +1,51 @@
+{
+  "abstract": "Recent depth foundation models like Depth Anything 3 (DA3) achieve remarkable multi-view depth estimation but assume static 3D scenes, limiting their applicability to real-world dynamic environments. Existing training-free 4D methods like Easi3R and VGGT4D rely on correspondence-trained backbones whose attention encodes cross-frame matching, a property absent in depth-only models like DA3. We present Dyna3, a training-free framework that extends DA3 for 4D dynamic scene reconstruction without any fine-tuning. Our key insight is that DA3's cross-view features, though trained only for depth consistency, implicitly encode motion-discriminative signals when combined with best-match feature search across frames. Its static surfaces find consistent matches globally, while dynamic objects cannot. We further adopt vision-language models (VLM) to automatically generate scene-specific semantic prompts for SAM 3, enabling precise instance-level segmentation that distinguishes which objects move from what objects exist. For reconstruction, we decouple the scene into a cross-frame aligned static background and per-frame dynamic point clouds. Experiments on four datasets demonstrate that Dyna3 surpasses correspondence-trained methods with +5.5pp J-Mean over state-of-the-art VGGT4D on dynamic object segmentation, while achieving up to 13x faster pose estimation and 3x faster 4D reconstruction with 4 to 8x lower memory. Dyna3 could therefore enable much denser temporal sampling that prior methods cannot support.",
+  "abstract_zh": "近期的深度基础模型如Depth Anything 3 (DA3)在多视角深度估计方面取得了显著的成果，但假设场景为静态三维，这限制了其在真实动态环境中的适用性。现有的无训练4D方法如Easi3R和VGGT4D依赖于经过对应训练的主干网络，其注意力机制编码了跨帧匹配的特性，而这一特性在仅处理深度的模型如DA3中并不存在。我们提出了Dyna3，这是一个无训练的框架，扩展了DA3以实现4D动态场景重建，无需任何微调。我们的关键见解是，尽管DA3的跨视图特征仅针对深度一致性进行训练，但在结合跨帧最佳匹配特征搜索时，隐含地编码了运动区分信号。其静态表面能够在全局范围内找到一致的匹配，而动态物体则无法做到。我们进一步采用视觉语言模型（VLM）自动生成场景特定的语义提示，以支持SAM 3，实现精确的实例级分割，区分哪些物体在移动，哪些物体是存在的。对于重建，我们将场景解耦为跨帧对齐的静态背景和每帧的动态点云。在四个数据集上的实验表明，Dyna3在动态物体分割方面超越了经过对应训练的方法，J-Mean提高了5.5个百分点，相较于最先进的VGGT4D，同时实现了高达13倍的姿态估计速度和3倍的4D重建速度，内存需求降低了4到8倍。因此，Dyna3能够支持比以往方法更密集的时间采样。",
+  "arxiv_id": "2610.01286",
+  "arxiv_url": "https://arxiv.org/abs/2610.01286v1",
+  "authors": [
+    "Xinhao Xiang",
+    "Weiyang Li",
+    "Zhijie Zheng",
+    "Abhijeet Rastogi",
+    "Jiawei Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01286",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.420620+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01286v1",
+  "published_at": "2026-10-01T08:24:21Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "depth estimation",
+      "点云",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01286v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "本文提出Dyna3，一个结合深度基础模型、跨帧特征匹配和VLM引导实例分割的无训练4D动态场景重建方法。其可从多视角时序图像中分离静态环境与动态目标，并生成逐帧动态点云及对齐背景。虽然论文未直接面向自动驾驶数据或任务，但动态环境几何重建、运动目标分离和高效时序感知与自动驾驶环境感知高度相关。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Dyna3: VLM-Guided Training-Free 4D Reconstruction via Depth Foundation Models",
+  "title_zh": "Dyna3：基于视觉语言模型的无训练4D重建框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.01286"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "Adverse conditions such as rain, snow, fog, and dust remain challenging for camera-based perception in autonomous driving. We study multi-class weather recognition from street-view images under domain shift, where most available training data come from non-street-view sources that differ markedly from real driving scenes. We propose Weather-Aware Adversarial Discriminative Domain Adaptation (WA-ADDA), which conditions the domain discriminator on predicted weather to promote features that are both domain-invariant and weather-sensitive. We also assemble a multi-dataset benchmark by unifying diverse non-street-view weather collections as sources and real street-view images as targets, and define a standardized evaluation protocol with macro accuracy as the primary metric. Across backbones (ResNet-50, EfficientNet, VGG, DenseNet), WA-ADDA consistently improves street-view performance and yields strong per-class recalls in challenging conditions while preserving clear-weather accuracy. These findings highlight the feasibility of domain-adapted weather recognition and the value of our benchmark for advancing robust, on-board perception.",
+  "abstract_zh": "恶劣天气条件，如雨、雪、雾和尘埃，仍然对自动驾驶中的基于摄像头的感知构成挑战。我们研究了在领域转移下的街景图像的多类别天气识别，其中大多数可用的训练数据来自与真实驾驶场景显著不同的非街景来源。我们提出了天气感知对抗性判别领域适应（Weather-Aware Adversarial Discriminative Domain Adaptation，WA-ADDA），该方法将领域判别器的条件设置为预测的天气，以促进特征的领域不变性和天气敏感性。我们还通过将多样的非街景天气数据集统一为来源，并将真实街景图像作为目标，构建了一个多数据集基准，并定义了以宏观准确率为主要指标的标准化评估协议。在不同的骨干网络（ResNet-50、EfficientNet、VGG、DenseNet）中，WA-ADDA 一致地提高了街景性能，并在恶劣条件下实现了强大的每类召回率，同时保持了良好的晴天准确率。这些发现突显了领域适应天气识别的可行性，以及我们的基准在推动强健的车载感知方面的价值。",
+  "arxiv_id": "2610.02000",
+  "arxiv_url": "https://arxiv.org/abs/2610.02000v1",
+  "authors": [
+    "Hossein Maghsoumi",
+    "George Atia",
+    "Yaser P. Fallah"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-02000",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.470202+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.02000v1",
+  "published_at": "2026-10-01T16:31:43Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.02000v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Weather-Aware Domain Adaptation for Street-View Weather Recognition",
+  "title_zh": "天气感知的街景天气识别领域适应",
+  "translation_url": "https://hjfy.top/arxiv/2610.02000"
+}

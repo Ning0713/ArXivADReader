@@ -1,0 +1,61 @@
+{
+  "abstract": "Online vectorized HD map construction is essential for scaling safe autonomous driving and requires accurate, real-time inference. Prior methods typically rely on dense bird's-eye-view (BEV) grids as the intermediate representation. We propose \\textit{MapLightning}, which replaces the dense BEV grid with a compact set of 1D learnable map tokens. To construct map tokens from image features, we choose self-attention over vanilla cross-attention because it enables joint interactions and contextual aggregation among image and map tokens. Our transformer-based mapper concatenates map and image tokens, applies full self-attention, discards the image tokens, and retains the updated map tokens for decoding. This design offers three advantages. First, our representation is efficient, using fewer tokens, consuming less memory, and running faster. Second, the lightweight design allows the map decoder to use full rather than deformable cross-attention for better global context. Third, unlike BEV-based methods, our network does not use camera projection parameters, making it robust to camera-extrinsic perturbations. MapLightning uses up to 16.7$\\times$ fewer intermediate tokens than dense BEV-based methods and achieves state-of-the-art accuracy and efficiency on nuScenes and Argoverse~2. Its lightweight variant surpasses MapTRv2 by +10.1 mAP on nuScenes and +16.2 mAP on Argoverse~2, while delivering 1.73$\\times$ faster inference (40+ FPS) with 53\\% less memory. We further show improvements on uncertainty-aware map construction and downstream trajectory prediction. Code and models will be released.",
+  "abstract_zh": "在线矢量化高清地图构建对于扩展安全的自动驾驶至关重要，并且需要准确的实时推理。以往的方法通常依赖于密集的鸟瞰图（BEV）网格作为中间表示。我们提出了 extit{MapLightning}，它用一组紧凑的1D可学习地图标记替代了密集的BEV网格。为了从图像特征构建地图标记，我们选择自注意力机制而非普通的交叉注意力机制，因为它能够实现图像标记和地图标记之间的联合交互和上下文聚合。我们的基于变换器的映射器将地图和图像标记进行连接，应用全自注意力，丢弃图像标记，并保留更新后的地图标记进行解码。这一设计提供了三个优势。首先，我们的表示高效，使用更少的标记，消耗更少的内存，并且运行更快。其次，轻量化设计使得地图解码器能够使用全交叉注意力而非可变形交叉注意力，从而获得更好的全局上下文。第三，与基于BEV的方法不同，我们的网络不使用相机投影参数，使其对相机外部扰动具有更强的鲁棒性。MapLightning使用的中间标记数量比密集BEV方法少多达16.7倍，并在nuScenes和Argoverse~2上实现了最先进的准确性和效率。其轻量化变体在nuScenes上比MapTRv2提高了+10.1 mAP，在Argoverse~2上提高了+16.2 mAP，同时提供了1.73倍更快的推理速度（40+ FPS）和53%的内存减少。我们进一步展示了在不确定性感知地图构建和下游轨迹预测方面的改进。代码和模型将会发布。",
+  "arxiv_id": "2610.01905",
+  "arxiv_url": "https://arxiv.org/abs/2610.01905v1",
+  "authors": [
+    "Shen Zheng",
+    "Anurag Ghosh",
+    "Mani Ramanagopal",
+    "Srinivasa Narasimhan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01905",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.459902+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01905v1",
+  "published_at": "2026-10-01T15:50:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "argoverse",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "trajectory prediction",
+      "hd map",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01905v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "地图/定位",
+      "预测/规划"
+    ]
+  },
+  "title": "MapLightning: Online Vectorized HD Map Construction with 1D Map Tokens",
+  "title_zh": "MapLightning：基于1D地图标记的在线矢量化高清地图构建",
+  "translation_url": "https://hjfy.top/arxiv/2610.01905"
+}

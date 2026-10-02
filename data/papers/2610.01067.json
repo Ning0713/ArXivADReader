@@ -1,0 +1,50 @@
+{
+  "abstract": "Unmanned aerial vehicles (UAVs) searching for ground targets from a high altitude face a unique challenge, particularly when the target is already within the field of view but effectively unobservable because of its small apparent scale. Standard object detectors often underperform in such scenarios because of resolution downscaling and limited context. In contrast, active object search frameworks address this challenge by directing the agent to a suitable pose to gather richer visual information. However, flight regulations in urban airspace often restrict such physical movements for UAVs. As an alternative active sensing approach, the UAV can leverage the pan-tilt-zoom (PTZ) mechanism of the onboard camera to dynamically adjust its field of view and sequentially gather enhanced visual information from specific regions of interest. Once the candidate locations of the target are identified, it can deploy more expensive object detection schemes, such as an ensemble of multiple models, to get better reasoning at a fixed scale. In this work, we formulate the sequential exploration with PTZ operation as a partially observable Markov decision process (POMDP), in which the agent maintains a belief state over the target's true location. To solve the POMDP, we deploy partially observable Monte Carlo planning (POMCP), where we condition the sensing reliability on target object scale and deploy selective ensemble detection as an additional reasoning step. We validate our methodology with experiments in a photorealistic simulator under different environmental conditions and vehicle states, showing detection of ground targets at variable scales with significantly fewer steps and minimal dependence on sensor resolution compared to baseline methods.",
+  "abstract_zh": "高空搜索地面目标的无人驾驶飞行器（UAV）面临独特的挑战，尤其是在目标已在视野内但由于其小的表观尺度而有效不可观测的情况下。标准物体检测器在这种情况下往往表现不佳，因为分辨率降低和上下文信息有限。相比之下，主动物体搜索框架通过引导代理采取适当的姿态以获取更丰富的视觉信息来应对这一挑战。然而，城市空域的飞行法规通常限制了无人机的这种物理移动。作为一种替代的主动感知方法，无人机可以利用机载摄像头的平移-倾斜-变焦（PTZ）机制动态调整其视野，并依次从特定兴趣区域收集增强的视觉信息。一旦识别出目标的候选位置，就可以部署更昂贵的物体检测方案，例如多个模型的集成，以在固定尺度下获得更好的推理。在本研究中，我们将带有PTZ操作的顺序探索形式化为部分可观测马尔可夫决策过程（POMDP），其中代理保持对目标真实位置的信念状态。为了解决POMDP，我们部署了部分可观测蒙特卡洛规划（POMCP），在此过程中我们将感知可靠性与目标物体尺度相关联，并将选择性集成检测作为额外的推理步骤。我们在不同环境条件和车辆状态下的逼真模拟器中验证了我们的方法，结果显示与基线方法相比，在可变尺度下以显著更少的步骤和对传感器分辨率的最小依赖成功检测地面目标。",
+  "arxiv_id": "2610.01067",
+  "arxiv_url": "https://arxiv.org/abs/2610.01067v1",
+  "authors": [
+    "Ashik E Rasul",
+    "Hyung-Jin Yoon"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01067",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.313765+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01067v1",
+  "published_at": "2026-10-01T05:06:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "无人驾驶",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "uav",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01067v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划"
+    ]
+  },
+  "title": "Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability",
+  "title_zh": "高空无人机在部分可观测条件下进行稀疏地面目标搜索的在线规划",
+  "translation_url": "https://hjfy.top/arxiv/2610.01067"
+}

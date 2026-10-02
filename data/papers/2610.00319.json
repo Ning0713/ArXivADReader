@@ -1,0 +1,57 @@
+{
+  "abstract": "Collaborative perception enables connected agents to share complementary observations for 3D object detection, extending sensing range and mitigating occlusion. Under asynchronous communication, however, cooperative features arrive with temporal delay. Existing prediction-based methods compensate for these features mainly from the transmitting agent's own history, leaving residual misalignment with the ego agent's current observation; subsequent fusion also often overlooks spatial variations in alignment quality. We propose EgoRefine, an ego-referenced predictive alignment and reliability-aware fusion framework for asynchronous collaborative perception. Its Ego-referenced Predictive Alignment module uses the current ego feature to guide cooperative trajectory-field prediction and refines the sampling offsets along an ego-referenced trajectory direction. Its Trajectory-conditioned Reliability-aware Fusion module treats the trajectory discrepancy between the ego and cooperative streams and the directional refinement magnitude as alignment cues, using them to condition the relation between aligned features and adaptively reweight the two streams before convolutional fusion. Experiments on V2V4Real and DAIR-V2X-Seq show that EgoRefine outperforms TraF-Align by 1.6 and 2.9 points on average in [email protected] and [email protected] , respectively. The source code will be made publicly available at https://github.com/godk0509/EgoRefine.",
+  "abstract_zh": "协作感知使得连接的智能体能够共享互补的观察数据，以实现三维物体检测，扩展感知范围并减轻遮挡。然而，在异步通信的情况下，协作特征会伴随时间延迟到达。现有的基于预测的方法主要依赖于传输智能体自身的历史来补偿这些特征，导致与自我智能体当前观察的残余不对齐；后续的融合过程往往也忽视了对齐质量的空间变化。我们提出了EgoRefine，一个用于异步协作感知的自我参考预测对齐和可靠性感知融合框架。其自我参考预测对齐模块利用当前的自我特征来指导协作轨迹场的预测，并沿着自我参考轨迹方向细化采样偏移量。其轨迹条件可靠性感知融合模块将自我智能体与协作流之间的轨迹差异和方向性细化幅度视为对齐线索，利用这些线索来调节对齐特征之间的关系，并在卷积融合之前自适应地重新加权这两个流。在V2V4Real和DAIR-V2X-Seq上的实验表明，EgoRefine在 [email protected] 和 [email protected] 上分别比TraF-Align平均提高了1.6和2.9分。源代码将公开发布于https://github.com/godk0509/EgoRefine。",
+  "arxiv_id": "2610.00319",
+  "arxiv_url": "https://arxiv.org/abs/2610.00319v1",
+  "authors": [
+    "Lingzhao Kong",
+    "Yongsheng Zang",
+    "Yu Kang",
+    "Kailun Yang",
+    "Jie Fu",
+    "Yukun Zuo",
+    "Zhiyong Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-00319",
+  "categories": [
+    "cs.CV",
+    "cs.RO",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.366310+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.00319v1",
+  "published_at": "2026-09-29T04:07:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "dair-v2x",
+      "v2v4real",
+      "3d object detection"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.00319v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "协同/V2X"
+    ]
+  },
+  "title": "EgoRefine: Ego-Referenced Predictive Alignment and Trajectory-Conditioned Reliability-Aware Fusion for Asynchronous Collaborative Perception",
+  "title_zh": "EgoRefine：用于异步协作感知的自我参考预测对齐与轨迹条件可靠性感知融合",
+  "translation_url": "https://hjfy.top/arxiv/2610.00319"
+}

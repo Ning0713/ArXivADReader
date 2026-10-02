@@ -1,0 +1,49 @@
+{
+  "abstract": "Mesh extraction from 3D Gaussian Splatting (3DGS) aims to endow 3D Gaussians with accurate geometric structures, enabling explicit and precise 3D occupancy. However, existing methods primarily focus on scene-level mesh extraction, making them unable to represent object-level occupancy and often resulting in non-watertight surfaces. To overcome these limitations, we propose \\textbf{MEGA} (\\underline{M}esh \\underline{E}xtraction from \\underline{GA}ussians), a ``segment-then-mesh'' framework for extracting object-level, watertight meshes from complex 3DGS scenes. At the core of MEGA are \\textbf{Spatial Visual Distillation (SVD)} and a mask-guided neural surface reconstruction module. SVD treats the 3DGS model as a teacher, sampling diverse camera poses and rendering the corresponding views of each segmented object. These observations are then used to train a mesh reconstruction model through photometric supervision. Extensive experiments on several widely used benchmarks demonstrate that MEGA achieves state-of-the-art performance in recovering accurate object-level 3D occupancy. Moreover, MEGA enables complex physical interactions by combining high-quality object-level meshes for geometric occupancy with 3DGS representations for photorealistic rendering.",
+  "abstract_zh": "从3D高斯点云（3DGS）提取网格的目标是为3D高斯赋予准确的几何结构，从而实现明确和精确的3D占用表示。然而，现有方法主要集中在场景级网格提取，无法表示物体级占用，且常常导致非水密表面。为克服这些局限性，我们提出了 extbf{MEGA}（ extunderline{M}esh extunderline{E}xtraction from extunderline{GA}ussians），一种“先分割再网格”的框架，用于从复杂的3DGS场景中提取物体级水密网格。MEGA的核心是 extbf{空间视觉蒸馏（SVD）}和一个掩模引导的神经表面重建模块。SVD将3DGS模型视为教师，采样多样的相机姿态并渲染每个分割物体的相应视图。这些观察结果随后用于通过光度监督训练网格重建模型。在多个广泛使用的基准测试上的大量实验表明，MEGA在恢复准确的物体级3D占用方面达到了最先进的性能。此外，MEGA通过将高质量的物体级网格与3DGS表示结合，实现了复杂的物理交互，支持几何占用和照片级真实感渲染。",
+  "arxiv_id": "2610.01707",
+  "arxiv_url": "https://arxiv.org/abs/2610.01707v1",
+  "authors": [
+    "Liwei Liao",
+    "Yingkui Zhang",
+    "Qianqian Tong",
+    "Ronggang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01707",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.445648+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01707v1",
+  "published_at": "2026-10-01T13:52:12Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "occupancy",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01707v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "本文提出面向3D高斯溅射场景的物体级水密网格提取方法。通过先进行物体分割，再利用多视角渲染蒸馏和掩模引导的神经表面重建，恢复可用于显式三维占用、几何建模和物理交互的物体级网格。该技术可为自动驾驶中的场景占用建模、可编辑数字场景及仿真环境构建提供通用几何表示能力。",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "MEGA: Object-Level Mesh Extraction from 3D Gaussian Splatting via Spatial Visual Distillation",
+  "title_zh": "MEGA：通过空间视觉蒸馏从3D高斯点云提取物体级网格",
+  "translation_url": "https://hjfy.top/arxiv/2610.01707"
+}

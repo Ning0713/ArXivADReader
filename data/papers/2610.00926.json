@@ -1,0 +1,59 @@
+{
+  "abstract": "Autonomous driving is a cornerstone technology for the future of intelligent transportation, where end-to-end learning has emerged as a transformative paradigm that directly maps multimodal sensory inputs to driving actions through unified differentiable models. While offering advantages, the effectiveness of end-to-end autonomous driving (E2E-AD) is ultimately determined by the quality of its training ecosystem. This paper provides a comprehensive review of training methods and ecosystem for E2E-AD. We introduce a Data-Strategy-Platform taxonomy that conceptualizes training as an interdependent system. The data layer defines what can be learned, the strategy layer governs how learning aligns with driving objectives, and the platform layer supports scalability and continuous evolution. Within this framework, we survey recent advances across data-centric pipelines, learning paradigms, and training infrastructures, and analyze their interplay in shaping model performance, robustness, and deployability. Finally, we reflect on current limitations and articulate a forward-looking vision that emphasizes a shift from data quantity to data value, from isolated optimization to foundation-driven generalization, and from static training to integrated training-testing loops, aiming toward robust, scalable, and trustworthy autonomous driving systems. We maintain a continuously updated repository tracking cutting-edge literature and works at \\href{https://github.com/Jiaaqiliu/Awesome-Training-Ecosystem-for-E2E-AD}{Our Project Page}.",
+  "abstract_zh": "自主驾驶是未来智能交通的基石技术，其中端到端学习作为一种变革性范式，直接将多模态传感器输入映射到驾驶动作，通过统一的可微模型实现。尽管端到端自主驾驶（E2E-AD）具有优势，但其有效性最终取决于训练生态系统的质量。本文对E2E-AD的训练方法和生态系统进行了全面回顾。我们引入了数据-策略-平台的分类法，将训练概念化为一个相互依赖的系统。数据层定义了可以学习的内容，策略层管理学习如何与驾驶目标对齐，而平台层则支持可扩展性和持续演进。在这一框架下，我们调查了数据驱动的管道、学习范式和训练基础设施的最新进展，并分析了它们在塑造模型性能、鲁棒性和可部署性方面的相互作用。最后，我们反思了当前的局限性，并阐明了一个前瞻性的愿景，强调从数据数量向数据价值的转变，从孤立优化向基础驱动的泛化转变，以及从静态训练向集成训练-测试循环的转变，旨在实现鲁棒、可扩展和可信赖的自主驾驶系统。我们维护一个持续更新的仓库，跟踪前沿文献和研究成果，网址为 exttt{https://github.com/Jiaaqiliu/Awesome-Training-Ecosystem-for-E2E-AD}。",
+  "arxiv_id": "2610.00926",
+  "arxiv_url": "https://arxiv.org/abs/2610.00926v1",
+  "authors": [
+    "Chengkai Xu",
+    "Yiming Cui",
+    "Jiaqi Liu",
+    "Yicheng Guo",
+    "Cheng Qin",
+    "Geyuan Zhang",
+    "Xinwei Dong",
+    "Shiyu Fang",
+    "Peng Hang",
+    "Jian Sun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-00926",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.310516+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.00926v1",
+  "published_at": "2026-10-01T02:00:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.00926v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "A Survey on End-to-End Autonomous Driving Training from the Perspectives of Data, Strategy, and Platform",
+  "title_zh": "从数据、策略和平台的视角看端到端自主驾驶训练的综述",
+  "translation_url": "https://hjfy.top/arxiv/2610.00926"
+}

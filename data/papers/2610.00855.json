@@ -1,0 +1,57 @@
+{
+  "abstract": "Accurate 3D semantic perception is critical for safe autonomous navigation. However, supervised LiDAR segmentation remains tied to closed taxonomies and to the cost of point-wise manual annotation. Open-vocabulary methods avoid that cost by projecting the output of 2D vision-language models onto LiDAR and distilling it into a 3D network. These methods rely almost exclusively on voxel-based sparse convolutions, and point transformers have so far been limited to indoor environments, where 3D data is dense and bounded. We present Lang3DSeg, which establishes a point transformer as the backbone for annotation-free open-vocabulary segmentation of outdoor 3D LiDAR, and is trained from scratch without geometric pre-training. This training paradigm necessitates addressing the inherent noise in 2D-to-3D label projections; specifically, naive projection often suffers from depth ambiguity, where points behind an object are erroneously assigned its semantic label. We therefore composite masks using an explicit class-priority rule and truncate each projected instance at the first gap in its depth distribution, correcting the projection error directly rather than averaging it over registered sequences. Lang3DSeg achieves 52.8% mIoU on nuScenes validation and 41.4% on SemanticKITTI, the highest among published annotation-free methods on both benchmarks. Every 3D semantic segmentation is on a single LiDAR sweep, and inference operates in real-time without running vision-language models.",
+  "abstract_zh": "准确的3D语义感知对于安全的自主导航至关重要。然而，监督式激光雷达分割仍然依赖于封闭的分类法以及逐点手动标注的成本。开放词汇方法通过将2D视觉-语言模型的输出投影到激光雷达上，并将其提炼为3D网络，从而避免了这一成本。这些方法几乎完全依赖于基于体素的稀疏卷积，而点变换器迄今为止仅限于室内环境，在这些环境中，3D数据是密集且有限的。我们提出了Lang3DSeg，它将点变换器作为无注释开放词汇的户外3D激光雷达分割的骨干，并从零开始训练，而无需几何预训练。这种训练范式需要解决2D到3D标签投影中的固有噪声；具体而言，简单的投影往往会遭遇深度模糊问题，即物体后面的点错误地被分配为其语义标签。因此，我们使用显式的类别优先规则合成掩膜，并在其深度分布的第一个间隙处截断每个投影实例，直接纠正投影错误，而不是在注册序列中对其进行平均。Lang3DSeg在nuScenes验证集上达到了52.8%的mIoU，在SemanticKITTI上达到了41.4%，在这两个基准上都是已发布的无注释方法中最高的。每个3D语义分割都是在单次激光雷达扫描上进行的，推理实时进行，无需运行视觉-语言模型。",
+  "arxiv_id": "2610.00855",
+  "arxiv_url": "https://arxiv.org/abs/2610.00855v1",
+  "authors": [
+    "Cigdem Kokenoz",
+    "Amir Salarpour",
+    "Alkim Domeke",
+    "Christopher Salas",
+    "Pedram MohajerAnsari",
+    "Long Cheng",
+    "Mert D. Pesé",
+    "Bing Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-00855",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.388795+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.00855v1",
+  "published_at": "2026-10-01T00:15:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "semantickitti",
+      "autonomous",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 49
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.00855v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Lang3DSeg: Annotation-Free Open-Vocabulary 3D Segmentation with Point Transformers",
+  "title_zh": "Lang3DSeg：无注释开放词汇的点变换器3D分割",
+  "translation_url": "https://hjfy.top/arxiv/2610.00855"
+}

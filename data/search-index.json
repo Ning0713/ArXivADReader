@@ -1,6 +1,379 @@
 {
-  "generated_at": "2026-10-01T11:21:18.357263+00:00",
+  "generated_at": "2026-10-02T10:53:17.091295+00:00",
   "items": [
+    {
+      "abstract": "Adverse conditions such as rain, snow, fog, and dust remain challenging for camera-based perception in autonomous driving. We study multi-class weather recognition from street-view images under domain shift, where most available training data come from non-street-view sources that differ markedly from real driving scenes. We propose Weather-Aware Adversarial Discriminative Domain Adaptation (WA-ADDA), which conditions the domain discriminator on predicted weather to promote features that are both domain-invariant and weather-sensitive. We also assemble a multi-dataset benchmark by unifying diverse non-street-view weather collections as sources and real street-view images as targets, and define a standardized evaluation protocol with macro accuracy as the primary metric. Across backbones (ResNet-50, EfficientNet, VGG, DenseNet), WA-ADDA consistently improves street-view performance and yields strong per-class recalls in challenging conditions while preserving clear-weather accuracy. These findings highlight the feasibility of domain-adapted weather recognition and the value of our benchmark for advancing robust, on-board perception.",
+      "abstract_zh": "恶劣天气条件，如雨、雪、雾和尘埃，仍然对自动驾驶中的基于摄像头的感知构成挑战。我们研究了在领域转移下的街景图像的多类别天气识别，其中大多数可用的训练数据来自与真实驾驶场景显著不同的非街景来源。我们提出了天气感知对抗性判别领域适应（Weather-Aware Adversarial Discriminative Domain Adaptation，WA-ADDA），该方法将领域判别器的条件设置为预测的天气，以促进特征的领域不变性和天气敏感性。我们还通过将多样的非街景天气数据集统一为来源，并将真实街景图像作为目标，构建了一个多数据集基准，并定义了以宏观准确率为主要指标的标准化评估协议。在不同的骨干网络（ResNet-50、EfficientNet、VGG、DenseNet）中，WA-ADDA 一致地提高了街景性能，并在恶劣条件下实现了强大的每类召回率，同时保持了良好的晴天准确率。这些发现突显了领域适应天气识别的可行性，以及我们的基准在推动强健的车载感知方面的价值。",
+      "authors": [
+        "Hossein Maghsoumi",
+        "George Atia",
+        "Yaser P. Fallah"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.02000",
+      "tags": [
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "Weather-Aware Domain Adaptation for Street-View Weather Recognition",
+      "title_zh": "天气感知的街景天气识别领域适应",
+      "url": "/daily/2026-10-02/#paper-2610-02000"
+    },
+    {
+      "abstract": "Online vectorized HD map construction is essential for scaling safe autonomous driving and requires accurate, real-time inference. Prior methods typically rely on dense bird's-eye-view (BEV) grids as the intermediate representation. We propose \\textit{MapLightning}, which replaces the dense BEV grid with a compact set of 1D learnable map tokens. To construct map tokens from image features, we choose self-attention over vanilla cross-attention because it enables joint interactions and contextual aggregation among image and map tokens. Our transformer-based mapper concatenates map and image tokens, applies full self-attention, discards the image tokens, and retains the updated map tokens for decoding. This design offers three advantages. First, our representation is efficient, using fewer tokens, consuming less memory, and running faster. Second, the lightweight design allows the map decoder to use full rather than deformable cross-attention for better global context. Third, unlike BEV-based methods, our network does not use camera projection parameters, making it robust to camera-extrinsic perturbations. MapLightning uses up to 16.7$\\times$ fewer intermediate tokens than dense BEV-based methods and achieves state-of-the-art accuracy and efficiency on nuScenes and Argoverse~2. Its lightweight variant surpasses MapTRv2 by +10.1 mAP on nuScenes and +16.2 mAP on Argoverse~2, while delivering 1.73$\\times$ faster inference (40+ FPS) with 53\\% less memory. We further show improvements on uncertainty-aware map construction and downstream trajectory prediction. Code and models will be released.",
+      "abstract_zh": "在线矢量化高清地图构建对于扩展安全的自动驾驶至关重要，并且需要准确的实时推理。以往的方法通常依赖于密集的鸟瞰图（BEV）网格作为中间表示。我们提出了 extit{MapLightning}，它用一组紧凑的1D可学习地图标记替代了密集的BEV网格。为了从图像特征构建地图标记，我们选择自注意力机制而非普通的交叉注意力机制，因为它能够实现图像标记和地图标记之间的联合交互和上下文聚合。我们的基于变换器的映射器将地图和图像标记进行连接，应用全自注意力，丢弃图像标记，并保留更新后的地图标记进行解码。这一设计提供了三个优势。首先，我们的表示高效，使用更少的标记，消耗更少的内存，并且运行更快。其次，轻量化设计使得地图解码器能够使用全交叉注意力而非可变形交叉注意力，从而获得更好的全局上下文。第三，与基于BEV的方法不同，我们的网络不使用相机投影参数，使其对相机外部扰动具有更强的鲁棒性。MapLightning使用的中间标记数量比密集BEV方法少多达16.7倍，并在nuScenes和Argoverse~2上实现了最先进的准确性和效率。其轻量化变体在nuScenes上比MapTRv2提高了+10.1 mAP，在Argoverse~2上提高了+16.2 mAP，同时提供了1.73倍更快的推理速度（40+ FPS）和53%的内存减少。我们进一步展示了在不确定性感知地图构建和下游轨迹预测方面的改进。代码和模型将会发布。",
+      "authors": [
+        "Shen Zheng",
+        "Anurag Ghosh",
+        "Mani Ramanagopal",
+        "Srinivasa Narasimhan"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01905",
+      "tags": [
+        "BEV/Occupancy",
+        "地图/定位",
+        "预测/规划"
+      ],
+      "title": "MapLightning: Online Vectorized HD Map Construction with 1D Map Tokens",
+      "title_zh": "MapLightning：基于1D地图标记的在线矢量化高清地图构建",
+      "url": "/daily/2026-10-02/#paper-2610-01905"
+    },
+    {
+      "abstract": "Cooperative 3D tracking must integrate complementary observations across agents and time while maintaining consistent identities. When evidence integration and identity inheritance share a matching decision, errors arising from cross-view appearance differences and spatial misalignment can compromise both feature fusion and track continuity. We propose FFBL-Coop, a fuse first, bind later framework that separates instance admission from identity management. Confidence-ranked Slot Admission (CSA) allocates cooperative queries to available ego slots using confidence and spatial proximity. Unified Representation Aggregation (URA) uses cooperative semantic features and aligned anchors to guide ego-feature retrieval, refining the augmented query bank within a shared transformer decoder. After refinement, Cooperative-Priority Identity Anchoring (CPIA) combines learned association with persistent mappings to establish accepted identity assignments across frames. A shared codebook reduces transmitted payload while retaining AP and AMOTA close to the uncompressed variant. FFBL-Coop achieves AMOTA/AP of 0.611/0.548 on V2X-Seq and 0.688/0.653 on Griffin-25M. Code will be released.",
+      "abstract_zh": "协作三维跟踪必须整合跨代理和时间的互补观察，同时保持身份的一致性。当证据整合和身份继承共享匹配决策时，由于视角间外观差异和空间错位引起的错误可能会影响特征融合和轨迹连续性。我们提出了FFBL-Coop，一个先融合后绑定的框架，旨在将实例接纳与身份管理分开。信心排名的槽接纳（Confidence-ranked Slot Admission, CSA）利用信心和空间接近性将协作查询分配给可用的自我槽。统一表示聚合（Unified Representation Aggregation, URA）使用协作语义特征和对齐锚点来指导自我特征检索，在共享的变换解码器中细化增强的查询库。经过细化后，协作优先身份锚定（Cooperative-Priority Identity Anchoring, CPIA）结合学习到的关联与持久映射，以在帧之间建立接受的身份分配。共享代码本减少了传输负载，同时保持接近未压缩变体的AP和AMOTA。FFBL-Coop在V2X-Seq上实现了AMOTA/AP为0.611/0.548，在Griffin-25M上实现了0.688/0.653。代码将会发布。",
+      "authors": [
+        "Haoxin Wu",
+        "Xiaokai Bai"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01750",
+      "tags": [
+        "协同/V2X",
+        "感知",
+        "多传感器融合"
+      ],
+      "title": "FFBL-Coop: Association-Decoupled Cooperative 3D Multi-Object Tracking",
+      "title_zh": "FFBL-Coop：关联解耦的协作三维多目标跟踪",
+      "url": "/daily/2026-10-02/#paper-2610-01750"
+    },
+    {
+      "abstract": "Autonomous driving systems have become a central focus of intelligent transportation research, with End-to-End Learning and Modular Architectures offering two prominent design paradigms for their implementation. E2E Learning uses deep learning algorithms to map raw sensory inputs directly to driving actuators, providing a streamlined and adaptable solution. while Modular Architectures employ a pipeline-based approach, dividing the system into distinct subsystems for perception, cognition, planning, and control. This paper presents a comprehensive comparative analysis of these paradigms, focusing on their strengths, limitations, and trade-offs to provide insights into their suitability for various autonomous driving applications. The study evaluates key factors such as interpretability, scalability, robustness, and real-world applicability. While End-to-End Learning emphasizes simplicity and adaptability in dynamic environments, it lacks transparency and is highly dependent on large datasets. Conversely, Modular Architectures offer superior interpretability and task-specific optimization, but face challenges related to integration complexity and scalability. To address these limitations, hybrid approaches that combine the strengths of both paradigms have emerged, offering a promising direction for overcoming these challenges. Beyond this comparative synthesis, following work proposes a Four-Dimensional Architecture Selection Framework, comprising twelve binary criteria across safety, operating environment, data/computational resources, and deployment context, and validate it against ten published autonomous driving systems, correctly recommending 7/10 deployed architectures. This work synthesizes existing literature to highlight key trade-offs between the paradigms and identifies hybrid architectures as a promising direction for future research.",
+      "abstract_zh": "自主驾驶系统已成为智能交通研究的核心焦点，端到端学习（End-to-End Learning）和模块化架构（Modular Architectures）提供了两种突出的设计范式用于其实现。端到端学习利用深度学习算法将原始传感器输入直接映射到驾驶执行器，提供了一种简化且适应性强的解决方案，而模块化架构则采用基于管道的方法，将系统划分为感知、认知、规划和控制等不同子系统。本文对这两种范式进行了全面的比较分析，重点关注它们的优点、局限性和权衡，以提供对其在各种自主驾驶应用中的适用性的洞察。研究评估了可解释性、可扩展性、鲁棒性和现实应用等关键因素。尽管端到端学习强调在动态环境中的简单性和适应性，但其缺乏透明性且高度依赖于大规模数据集。相反，模块化架构提供了更好的可解释性和特定任务优化，但面临与集成复杂性和可扩展性相关的挑战。为了解决这些局限性，结合两种范式优势的混合方法应运而生，提供了克服这些挑战的有希望的方向。除了这种比较综合，后续工作提出了一个四维架构选择框架，包含跨安全性、操作环境、数据/计算资源和部署背景的十二个二元标准，并在十个已发布的自主驾驶系统中进行了验证，正确推荐了7/10个已部署架构。该研究综合现有文献，强调了这两种范式之间的关键权衡，并确定混合架构作为未来研究的有希望方向。",
+      "authors": [
+        "Kartik B. Kapse"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01746",
+      "tags": [
+        "感知",
+        "预测/规划",
+        "端到端驾驶"
+      ],
+      "title": "End-to-End Learning vs. Modular Architectures: Comparative Insights into Autonomous Driving Systems",
+      "title_zh": "端到端学习与模块化架构：对自主驾驶系统的比较洞察",
+      "url": "/daily/2026-10-02/#paper-2610-01746"
+    },
+    {
+      "abstract": "Mesh extraction from 3D Gaussian Splatting (3DGS) aims to endow 3D Gaussians with accurate geometric structures, enabling explicit and precise 3D occupancy. However, existing methods primarily focus on scene-level mesh extraction, making them unable to represent object-level occupancy and often resulting in non-watertight surfaces. To overcome these limitations, we propose \\textbf{MEGA} (\\underline{M}esh \\underline{E}xtraction from \\underline{GA}ussians), a ``segment-then-mesh'' framework for extracting object-level, watertight meshes from complex 3DGS scenes. At the core of MEGA are \\textbf{Spatial Visual Distillation (SVD)} and a mask-guided neural surface reconstruction module. SVD treats the 3DGS model as a teacher, sampling diverse camera poses and rendering the corresponding views of each segmented object. These observations are then used to train a mesh reconstruction model through photometric supervision. Extensive experiments on several widely used benchmarks demonstrate that MEGA achieves state-of-the-art performance in recovering accurate object-level 3D occupancy. Moreover, MEGA enables complex physical interactions by combining high-quality object-level meshes for geometric occupancy with 3DGS representations for photorealistic rendering.",
+      "abstract_zh": "从3D高斯点云（3DGS）提取网格的目标是为3D高斯赋予准确的几何结构，从而实现明确和精确的3D占用表示。然而，现有方法主要集中在场景级网格提取，无法表示物体级占用，且常常导致非水密表面。为克服这些局限性，我们提出了 extbf{MEGA}（ extunderline{M}esh extunderline{E}xtraction from extunderline{GA}ussians），一种“先分割再网格”的框架，用于从复杂的3DGS场景中提取物体级水密网格。MEGA的核心是 extbf{空间视觉蒸馏（SVD）}和一个掩模引导的神经表面重建模块。SVD将3DGS模型视为教师，采样多样的相机姿态并渲染每个分割物体的相应视图。这些观察结果随后用于通过光度监督训练网格重建模型。在多个广泛使用的基准测试上的大量实验表明，MEGA在恢复准确的物体级3D占用方面达到了最先进的性能。此外，MEGA通过将高质量的物体级网格与3DGS表示结合，实现了复杂的物理交互，支持几何占用和照片级真实感渲染。",
+      "authors": [
+        "Liwei Liao",
+        "Yingkui Zhang",
+        "Qianqian Tong",
+        "Ronggang Wang"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01707",
+      "tags": [
+        "BEV/Occupancy",
+        "深度/几何"
+      ],
+      "title": "MEGA: Object-Level Mesh Extraction from 3D Gaussian Splatting via Spatial Visual Distillation",
+      "title_zh": "MEGA：通过空间视觉蒸馏从3D高斯点云提取物体级网格",
+      "url": "/daily/2026-10-02/#paper-2610-01707"
+    },
+    {
+      "abstract": "Mobile robots operating among pedestrians need trajectories that become available quickly, remain spatially credible through missed observations, preserve identity, and fit within an embedded computing budget. Aggregate tracking scores provide limited insight into when and how trajectories fail, while varying detector inputs can confound tracker and detector quality. We present a deployment-focused, tracker-only evaluation protocol that uses shared detections to isolate tracker behavior and directly evaluates initialization, detector-gap continuation, identity recovery, close-neighbor association, and load-dependent tracker-step runtime, while Higher Order Tracking Accuracy (HOTA) is retained as a complementary aggregate measure. We apply the protocol to the JackRabbot Dataset and Benchmark (JRDB) using six open-source trackers and our lightweight Pedestrian Reference Tracker (PedRefTrack), together with a GT-assisted variant that estimates the remaining tracker-side gap under idealized association and motion. Under fixed detections, the non-GT trackers span only 24.26%-29.67% HOTA yet exhibit markedly different capability profiles. After 1.0 s without detector support, no tracker without GT assistance maintains spatially correct, same-identity output in more than half of eligible cases, making missing-observation continuation the dominant limitation among the tested properties. Close-neighbor failures are smaller and increase mainly at the shortest separations. Tracker-step runtime on an NVIDIA Jetson Orin is heavy-tailed and load-sensitive, causing several trackers to fall below the 10 Hz real-time target in crowded frames. The protocol provides a reproducible way to characterize tracker behavior and deployment suitability in pedestrian-centric environments. Code and evaluation scripts are released at https://github.com/SCAI-Lab/tracker_eval.",
+      "abstract_zh": "在行人中运行的移动机器人需要快速可用的轨迹，这些轨迹在错过观测时保持空间可信性，保持身份一致，并适应嵌入式计算预算。聚合跟踪分数对轨迹失败的时间和方式提供的洞察有限，而不同的检测器输入可能会混淆跟踪器和检测器的质量。我们提出了一种以部署为中心的仅跟踪器评估协议，该协议利用共享检测来隔离跟踪器行为，并直接评估初始化、检测器间隙延续、身份恢复、近邻关联以及负载依赖的跟踪器步骤运行时，同时保留高阶跟踪准确度（Higher Order Tracking Accuracy, HOTA）作为补充的聚合度量。我们将该协议应用于JackRabbot数据集和基准（JRDB），使用六个开源跟踪器和我们的轻量级行人参考跟踪器（Pedestrian Reference Tracker, PedRefTrack），以及一个基于GT（Ground Truth）辅助的变体，该变体在理想化关联和运动下估计剩余的跟踪器侧间隙。在固定检测下，非GT跟踪器的HOTA仅为24.26%-29.67%，但表现出显著不同的能力特征。在没有检测器支持的情况下，经过1.0秒后，任何没有GT辅助的跟踪器在超过一半的合格案例中都无法保持空间正确的同一身份输出，使得缺失观测的延续成为测试属性中主要的限制。近邻失败较小，主要在最短的分离中增加。在NVIDIA Jetson Orin上的跟踪器步骤运行时呈重尾分布且对负载敏感，导致多个跟踪器在拥挤帧中低于10 Hz实时目标。该协议提供了一种可重复的方法来表征跟踪器行为和在行人中心环境中的部署适宜性。代码和评估脚本已发布在 https://github.com/SCAI-Lab/tracker_eval。",
+      "authors": [
+        "Dominik Wojcikiewicz",
+        "Diego Paez-Granados"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01682",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Beyond Leaderboard Scores: A Deployment-Focused Protocol for Interpretable Tracking Evaluation in Pedestrian-Centric Environments",
+      "title_zh": "超越排行榜分数：一种针对行人中心环境的可解释跟踪评估的部署聚焦协议",
+      "url": "/daily/2026-10-02/#paper-2610-01682"
+    },
+    {
+      "abstract": "Autonomous underwater vehicles (AUVs) assisting human divers must continuously track not only the diver's 3D position but also their full-body orientation. However, vision-based perception is unreliable underwater, and forward-looking sonar -- despite being widely used -- discards the elevation information needed for orientation estimation, posing a fundamental limitation. Recently commercialized 3D sonar preserves elevation but produces sparse, noisy returns, and existing detectors are built for dense LiDAR data and for targets that remain upright and rotate only about the yaw axis (e.g., vehicles, pedestrians), making them unable to represent a freely pitching and rolling diver. To address this gap, we present two contributions. First, SonarVoxNet adapts a voxel-based encoder and an anchor-free center-based detection head to 3D sonar data, replacing the conventional yaw-only rotation representation with a continuous 6D rotation parameterization to predict full 9-DoF oriented bounding boxes -- to our knowledge, the first 3D sonar diver detector to do so. Second, Diver3D is the first public 3D sonar dataset with full 3D orientation labels for divers in diverse, non-upright poses, collected at a natural cave-diving site. Through controlled ablations over the backbone and detection head, we show that the dominant factor behind accurate 3D sonar-based diver detection is the transition from yaw-only rotation to full-SO(3) rotation. This transition substantially improves detection accuracy and reduces orientation error. These results demonstrate that full-body diver orientation is recoverable from 3D sonar alone, laying the groundwork for future work on diver pose estimation and diver-robot interaction.",
+      "abstract_zh": "辅助人类潜水员的自主水下航行器（AUV）必须持续跟踪潜水员的3D位置以及全身姿态。然而，基于视觉的感知在水下不可靠，尽管前视声纳被广泛使用，但它丢弃了进行姿态估计所需的高度信息，这构成了一个基本限制。最近商业化的3D声纳保留了高度信息，但产生稀疏且噪声较大的回波，而现有的检测器是为密集的激光雷达数据和仅在偏航轴上旋转的目标（例如，车辆、行人）构建的，无法表示自由俯仰和滚动的潜水员。为了解决这一问题，我们提出了两个贡献。首先，SonarVoxNet将基于体素的编码器和无锚点中心检测头适配于3D声纳数据，用连续的6D旋转参数化替代传统的仅偏航旋转表示，以预测完整的9自由度定向边界框——据我们所知，这是首个实现这一目标的3D声纳潜水员检测器。其次，Diver3D是首个公开的3D声纳数据集，包含多样化非直立姿态的潜水员的完整3D姿态标签，数据收集于一个自然的洞穴潜水地点。通过对主干网络和检测头的控制性消融实验，我们展示了准确的基于3D声纳的潜水员检测的主要因素是从仅偏航旋转过渡到完整的SO(3)旋转。这一过渡显著提高了检测精度并减少了姿态误差。这些结果表明，仅通过3D声纳即可恢复全身潜水员的姿态，为未来的潜水员姿态估计和潜水员与机器人交互的研究奠定了基础。",
+      "authors": [
+        "Eugene Park",
+        "Jiwon Lee",
+        "Seyoung Kan",
+        "Trung Dong",
+        "Xiaomin Lin",
+        "Jane Shin"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01644",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "仿真/数据"
+      ],
+      "title": "SonarVoxNet: Diver Detection in 3D Bounding Box using 3D Sonar",
+      "title_zh": "SonarVoxNet：基于3D声纳的3D边界框潜水员检测",
+      "url": "/daily/2026-10-02/#paper-2610-01644"
+    },
+    {
+      "abstract": "Generative AI models are increasingly used for scenario generation in autonomous driving. While they can generate realistic-looking scenarios, they often provide limited transparency into learned representations and consistency with real-world vehicle dynamics. This lack of formal assurance limits their use in safety-critical validation and certification workflows. To address this aspect, we introduce a layered evaluation protocol that complements existing methods by assessing models across five layers. The first four layers inspect internal representations and network layers through kinematic alignment, statistical baseline comparison, latent controllability, and activation analysis. The fifth layer evaluates model outputs against vehicle dynamics constraints such as lateral jerk thresholds. We demonstrate the protocol on a Variational Autoencoder (VAE)-based scenario generator. Although standard output-level metrics and visualizations suggest that the generated scenarios are realistic, our protocol provides deeper insight into the extent to which the model's latent space aligns with kinematic features and whether visually plausible trajectories satisfy vehicle-dynamics constraints. We further apply the protocol to additional generative models, demonstrating its applicability beyond the VAE architecture.",
+      "abstract_zh": "生成性人工智能模型在自动驾驶的场景生成中越来越多地被使用。尽管它们能够生成看似真实的场景，但通常对学习到的表征和与现实世界车辆动力学的一致性提供有限的透明度。这种缺乏正式保证的情况限制了它们在安全关键的验证和认证工作流程中的应用。为了解决这一问题，我们引入了一种分层评估协议，该协议通过在五个层面上评估模型来补充现有方法。前四个层面通过运动学对齐、统计基线比较、潜在可控性和激活分析检查内部表征和网络层。第五个层面则将模型输出与车辆动力学约束（如横向加速度阈值）进行评估。我们在基于变分自编码器（Variational Autoencoder, VAE）的场景生成器上展示了该协议。尽管标准的输出级别指标和可视化结果表明生成的场景是现实的，但我们的协议提供了更深入的洞察，揭示模型的潜在空间在多大程度上与运动学特征对齐，以及视觉上合理的轨迹是否满足车辆动力学约束。我们进一步将该协议应用于其他生成模型，展示了其在超越VAE架构的适用性。",
+      "authors": [
+        "Manasa Mariam Mammen",
+        "Zafer Kayatas",
+        "Stefan Wagner"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01581",
+      "tags": [
+        "安全/异常",
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "Evaluating Physical Consistency and Plausibility in Generative Scenario Models for Autonomous Driving",
+      "title_zh": "评估自动驾驶生成场景模型的物理一致性和合理性",
+      "url": "/daily/2026-10-02/#paper-2610-01581"
+    },
+    {
+      "abstract": "Vision-Language models (VLMs) are increasingly being explored in autonomous driving for tasks such as scene understanding, driving reasoning, decision-making, and end-to-end driving. As their role becomes more prominent, ensuring their robustness and reliability is increasingly important. In real-world conditions, visual inputs may be degraded by sensor imperfections and environmental conditions, potentially affecting both model predictions and their associated confidence. Such degradation is especially concerning in autonomous driving, where safety-critical decisions require models to make accurate predictions and recognize when their predictions may be unreliable. In this work, we evaluate five VLMs (Qwen3.5-9B, Gemma4-E4B, LLaVA-OneVision-7B, DriveFusion/DriveFusionQA-4B, and NVIDIA Alpamayo-1.5-10B) across four driving-related QA datasets with different visual input settings, including single-frame, multi-view, multi-frame, and monocular inputs. Our results show that the effects of visual corruption vary across models, datasets, and input settings, with changes in accuracy and confidence reliability and also differing across conditions. We then apply Visual Evidence Augmentation ($\\mathrm{V}{\\scriptstyle \\mathrm{EA}}$), a recent inference-time method to examine whether it can improve model reliability under degraded visual conditions. We find that $\\mathrm{V}{\\scriptstyle \\mathrm{EA}}$ improves performance for some models and datasets, although the gains are not consistent across all settings.",
+      "abstract_zh": "视觉-语言模型（VLMs）在自动驾驶领域的应用日益受到关注，涉及场景理解、驾驶推理、决策制定和端到端驾驶等任务。随着其作用的日益突出，确保模型的鲁棒性和可靠性变得愈加重要。在现实世界条件下，视觉输入可能受到传感器缺陷和环境条件的影响，从而可能影响模型的预测及其相关的置信度。这种退化在自动驾驶中尤其令人担忧，因为安全关键的决策要求模型做出准确的预测，并能够识别其预测可能不可靠的情况。在本研究中，我们评估了五个视觉-语言模型（Qwen3.5-9B、Gemma4-E4B、LLaVA-OneVision-7B、DriveFusion/DriveFusionQA-4B 和 NVIDIA Alpamayo-1.5-10B），并在四个与驾驶相关的问答数据集上进行测试，这些数据集具有不同的视觉输入设置，包括单帧、多视角、多帧和单目输入。我们的结果表明，视觉干扰对模型、数据集和输入设置的影响各不相同，准确性和置信度的可靠性也因条件而异。随后，我们应用了视觉证据增强（Visual Evidence Augmentation, $ ext{V}{ extstyle ext{EA}}$），这是一种最新的推理时方法，以检验其是否能在退化的视觉条件下提高模型的可靠性。我们发现，$ ext{V}{ extstyle ext{EA}}$在某些模型和数据集上提高了性能，尽管在所有设置中收益并不一致。",
+      "authors": [
+        "Manasa Mariam Mammen",
+        "Priyanka Mary Mammen",
+        "Zafer Kayatas",
+        "Stefan Wagner"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01531",
+      "tags": [
+        "端到端驾驶",
+        "VLM/VLA",
+        "仿真/数据"
+      ],
+      "title": "Towards Reliable Vision-Language Models for Autonomous Driving",
+      "title_zh": "迈向可靠的视觉-语言模型用于自动驾驶",
+      "url": "/daily/2026-10-02/#paper-2610-01531"
+    },
+    {
+      "abstract": "Robust perception in intelligent vehicles demands 3D object detectors that remain dependable under domain shifts, such as changes in time of day, location, or weather. However, due to costly annotation and rare shifts, some environments lack sufficient data to train a standalone detector. Federated learning offers a privacy-preserving framework for collaborative model training, enabling clients to benefit from shared learning across diverse environments. Yet, this framework traditionally relies on a single global consensus model, which struggles to perform across heterogeneous local data distributions. Local conditions are better captured by adapting a subset of the model, but many personalization approaches rely on predefined layer partitions or fixed personalization ratios, thereby limiting adaptation to client-specific divergence. To reduce this rigidity, we propose FedCKA, a Centered Kernel Alignment (CKA)-based strategy that dynamically handles the personalization-globalization trade-off. Specifically, FedCKA computes layer-wise feature similarities between local client models and the global consensus model during training. By converting layer-wise similarity scores into client-specific aggregation masks, FedCKA selectively shares representation-consistent layers. Evaluation on a unified multi-domain benchmark based on nuScenes shows that FedCKA outperforms established federated baselines, including FedBN, FedRep, and FedSelect, improving average NDS by 7 percentage points over the strongest baseline. The findings offer both a comparative benchmark and a promising direction for robust federated 3D perception across shifts in location, weather, and illumination. Code is available at https://github.com/j-verhoog/FedCKA.",
+      "abstract_zh": "智能车辆的稳健感知要求3D物体检测器在领域转变（如时间、地点或天气变化）下依然可靠。然而，由于标注成本高昂和转变稀少，某些环境缺乏足够的数据来训练独立的检测器。联邦学习提供了一种保护隐私的协作模型训练框架，使得客户端能够从不同环境的共享学习中受益。然而，这一框架传统上依赖于单一的全局共识模型，在异构本地数据分布下表现不佳。通过适应模型的子集，可以更好地捕捉本地条件，但许多个性化方法依赖于预定义的层划分或固定的个性化比例，从而限制了对客户端特定差异的适应。为减少这种刚性，我们提出了FedCKA，一种基于中心核对齐（CKA）的策略，动态处理个性化与全局化之间的权衡。具体而言，FedCKA在训练过程中计算本地客户端模型与全局共识模型之间的层级特征相似性。通过将层级相似性得分转换为客户端特定的聚合掩码，FedCKA选择性地共享表示一致的层。在基于nuScenes的统一多领域基准测试中的评估表明，FedCKA的表现优于现有的联邦基线，包括FedBN、FedRep和FedSelect，平均NDS比最强基线提高了7个百分点。这些发现为在位置、天气和光照变化下稳健的联邦3D感知提供了比较基准和有前景的方向。代码可在 https://github.com/j-verhoog/FedCKA 获取。",
+      "authors": [
+        "Jolle Verhoog",
+        "Ali Burak Ünal",
+        "Holger Caesar"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01510",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "FedCKA: Representation-Guided Layer Personalization for Federated 3D Perception Across Driving Domains",
+      "title_zh": "FedCKA：基于表示引导的联邦3D感知层个性化方法",
+      "url": "/daily/2026-10-02/#paper-2610-01510"
+    },
+    {
+      "abstract": "Recent depth foundation models like Depth Anything 3 (DA3) achieve remarkable multi-view depth estimation but assume static 3D scenes, limiting their applicability to real-world dynamic environments. Existing training-free 4D methods like Easi3R and VGGT4D rely on correspondence-trained backbones whose attention encodes cross-frame matching, a property absent in depth-only models like DA3. We present Dyna3, a training-free framework that extends DA3 for 4D dynamic scene reconstruction without any fine-tuning. Our key insight is that DA3's cross-view features, though trained only for depth consistency, implicitly encode motion-discriminative signals when combined with best-match feature search across frames. Its static surfaces find consistent matches globally, while dynamic objects cannot. We further adopt vision-language models (VLM) to automatically generate scene-specific semantic prompts for SAM 3, enabling precise instance-level segmentation that distinguishes which objects move from what objects exist. For reconstruction, we decouple the scene into a cross-frame aligned static background and per-frame dynamic point clouds. Experiments on four datasets demonstrate that Dyna3 surpasses correspondence-trained methods with +5.5pp J-Mean over state-of-the-art VGGT4D on dynamic object segmentation, while achieving up to 13x faster pose estimation and 3x faster 4D reconstruction with 4 to 8x lower memory. Dyna3 could therefore enable much denser temporal sampling that prior methods cannot support.",
+      "abstract_zh": "近期的深度基础模型如Depth Anything 3 (DA3)在多视角深度估计方面取得了显著的成果，但假设场景为静态三维，这限制了其在真实动态环境中的适用性。现有的无训练4D方法如Easi3R和VGGT4D依赖于经过对应训练的主干网络，其注意力机制编码了跨帧匹配的特性，而这一特性在仅处理深度的模型如DA3中并不存在。我们提出了Dyna3，这是一个无训练的框架，扩展了DA3以实现4D动态场景重建，无需任何微调。我们的关键见解是，尽管DA3的跨视图特征仅针对深度一致性进行训练，但在结合跨帧最佳匹配特征搜索时，隐含地编码了运动区分信号。其静态表面能够在全局范围内找到一致的匹配，而动态物体则无法做到。我们进一步采用视觉语言模型（VLM）自动生成场景特定的语义提示，以支持SAM 3，实现精确的实例级分割，区分哪些物体在移动，哪些物体是存在的。对于重建，我们将场景解耦为跨帧对齐的静态背景和每帧的动态点云。在四个数据集上的实验表明，Dyna3在动态物体分割方面超越了经过对应训练的方法，J-Mean提高了5.5个百分点，相较于最先进的VGGT4D，同时实现了高达13倍的姿态估计速度和3倍的4D重建速度，内存需求降低了4到8倍。因此，Dyna3能够支持比以往方法更密集的时间采样。",
+      "authors": [
+        "Xinhao Xiang",
+        "Weiyang Li",
+        "Zhijie Zheng",
+        "Abhijeet Rastogi",
+        "Jiawei Zhang"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01286",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "VLM/VLA"
+      ],
+      "title": "Dyna3: VLM-Guided Training-Free 4D Reconstruction via Depth Foundation Models",
+      "title_zh": "Dyna3：基于视觉语言模型的无训练4D重建框架",
+      "url": "/daily/2026-10-02/#paper-2610-01286"
+    },
+    {
+      "abstract": "Autonomous robots on one-shot missions run over horizons far longer than the trajectories seen during training, under a fixed onboard compute budget. We present FRANK, a 507K-parameter recurrent architecture that combines tau-gated recurrent modules, content-addressable memory, and a feedforward reflex pathway. We evaluate it against recurrent, state-space, and reduced modular baselines at matched parameter count on four algorithmic sequence tasks, trained at length 5-20 and evaluated out to two million tokens. At 100,000x the maximum training length, 6 of 10 FRANK seeds retain exactly 100.0% accuracy, while none of the 50 baseline configurations does, five architectures at ten seeds each with none left incomplete (Fisher exact, two-sided p = 4.2E-6. Targeted lesions across the four tasks yield four distinct component-reliance profiles, consistent with task-dependent allocation across the recurrent, memory, and reflex pathways. Separately, a FRANK policy trained in simulation drives a physical ground vehicle to commanded waypoints through obstacles without teleoperation.",
+      "abstract_zh": "在一次性任务中，自主机器人在固定的机载计算预算下，执行的时间范围远超训练期间所见的轨迹。我们提出了FRANK，这是一种507K参数的递归架构，结合了tau门控递归模块、内容寻址存储器和前馈反射通路。我们在四个算法序列任务上对其进行评估，参数数量匹配的情况下与递归、状态空间和简化模块基线进行比较，训练长度为5-20，并评估至两百万个标记。在最大训练长度的100,000倍时，10个FRANK种子中有6个保持了100.0%的准确率，而50个基线配置中没有一个达到该准确率，五种架构各有十个种子，且没有一个未完成（Fisher精确检验，双侧p = 4.2E-6）。在四个任务上进行的有针对性损伤实验显示出四种不同的组件依赖特征，与递归、记忆和反射通路的任务依赖分配一致。此外，在仿真中训练的FRANK策略能够驱动物理地面车辆在没有遥控操作的情况下，通过障碍物到达指定的航点。",
+      "authors": [
+        "Izen Thornton",
+        "Aaron Shey",
+        "William Su"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01105",
+      "tags": [
+        "端到端驾驶",
+        "仿真/数据",
+        "预测/规划"
+      ],
+      "title": "Extreme Length Generalization in a Compact Recurrent Architecture for One-Shot Exploration",
+      "title_zh": "紧凑递归架构中的极端长度泛化用于一次性探索",
+      "url": "/daily/2026-10-02/#paper-2610-01105"
+    },
+    {
+      "abstract": "Unmanned aerial vehicles (UAVs) searching for ground targets from a high altitude face a unique challenge, particularly when the target is already within the field of view but effectively unobservable because of its small apparent scale. Standard object detectors often underperform in such scenarios because of resolution downscaling and limited context. In contrast, active object search frameworks address this challenge by directing the agent to a suitable pose to gather richer visual information. However, flight regulations in urban airspace often restrict such physical movements for UAVs. As an alternative active sensing approach, the UAV can leverage the pan-tilt-zoom (PTZ) mechanism of the onboard camera to dynamically adjust its field of view and sequentially gather enhanced visual information from specific regions of interest. Once the candidate locations of the target are identified, it can deploy more expensive object detection schemes, such as an ensemble of multiple models, to get better reasoning at a fixed scale. In this work, we formulate the sequential exploration with PTZ operation as a partially observable Markov decision process (POMDP), in which the agent maintains a belief state over the target's true location. To solve the POMDP, we deploy partially observable Monte Carlo planning (POMCP), where we condition the sensing reliability on target object scale and deploy selective ensemble detection as an additional reasoning step. We validate our methodology with experiments in a photorealistic simulator under different environmental conditions and vehicle states, showing detection of ground targets at variable scales with significantly fewer steps and minimal dependence on sensor resolution compared to baseline methods.",
+      "abstract_zh": "高空搜索地面目标的无人驾驶飞行器（UAV）面临独特的挑战，尤其是在目标已在视野内但由于其小的表观尺度而有效不可观测的情况下。标准物体检测器在这种情况下往往表现不佳，因为分辨率降低和上下文信息有限。相比之下，主动物体搜索框架通过引导代理采取适当的姿态以获取更丰富的视觉信息来应对这一挑战。然而，城市空域的飞行法规通常限制了无人机的这种物理移动。作为一种替代的主动感知方法，无人机可以利用机载摄像头的平移-倾斜-变焦（PTZ）机制动态调整其视野，并依次从特定兴趣区域收集增强的视觉信息。一旦识别出目标的候选位置，就可以部署更昂贵的物体检测方案，例如多个模型的集成，以在固定尺度下获得更好的推理。在本研究中，我们将带有PTZ操作的顺序探索形式化为部分可观测马尔可夫决策过程（POMDP），其中代理保持对目标真实位置的信念状态。为了解决POMDP，我们部署了部分可观测蒙特卡洛规划（POMCP），在此过程中我们将感知可靠性与目标物体尺度相关联，并将选择性集成检测作为额外的推理步骤。我们在不同环境条件和车辆状态下的逼真模拟器中验证了我们的方法，结果显示与基线方法相比，在可变尺度下以显著更少的步骤和对传感器分辨率的最小依赖成功检测地面目标。",
+      "authors": [
+        "Ashik E Rasul",
+        "Hyung-Jin Yoon"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01067",
+      "tags": [
+        "感知",
+        "预测/规划"
+      ],
+      "title": "Online Planning for Sparse Ground Target Search from a High-Altitude UAV under Partial Observability",
+      "title_zh": "高空无人机在部分可观测条件下进行稀疏地面目标搜索的在线规划",
+      "url": "/daily/2026-10-02/#paper-2610-01067"
+    },
+    {
+      "abstract": "We argue that as video generation extends to longer durations, subject consistency should be evaluated over \\textit{dynamic subject sets}. We therefore introduce \\textbf{DynSC-Eval}, an evaluation framework that dynamically tracks eligible subjects throughout their visible lifespans and measures local continuity and global identity preservation using six complementary object-level metrics, with explicit detection of inconsistency events. To validate its effectiveness, we design synthetic experiments that actively inject inconsistency events, demonstrating both the sensitivity of DynSC-Eval and the limitations of existing metrics. Evaluations of diverse models on 5s, 15s, and 60s video generation further reveal substantial subject consistency differences that are obscured by conventional metrics. Beyond evaluation, we construct rewards from DynSC-Eval and apply DiffusionNFT post-training in an autonomous-driving testbed. On 5s generation, our approach reduces the six inconsistency metrics by an average of 13.82\\% for Wan-2.1-1.3B and 5.66\\% for SANA-2B, with improvements also observed on the I2V model ReSim. Qualitative comparisons further demonstrate the effectiveness of our method. We then extend generation to 10s and 30s through curriculum learning and show that consistency optimization remains effective while largely preserving other capabilities.",
+      "abstract_zh": "我们认为，随着视频生成时间的延长，主题一致性应在 extit{动态主题集}上进行评估。因此，我们提出了 extbf{DynSC-Eval}，一个评估框架，动态跟踪在可见生命周期内的合格主题，并使用六个互补的对象级指标来测量局部连续性和全局身份保持，同时明确检测不一致事件。为了验证其有效性，我们设计了合成实验，主动注入不一致事件，展示了DynSC-Eval的敏感性以及现有指标的局限性。在5秒、15秒和60秒的视频生成中对多种模型的评估进一步揭示了被传统指标掩盖的显著主题一致性差异。除了评估，我们还从DynSC-Eval构建奖励，并在自主驾驶测试平台中应用DiffusionNFT后训练。在5秒生成中，我们的方法使Wan-2.1-1.3B的六个不一致指标平均降低了13.82\\%，SANA-2B降低了5.66\\,同时在I2V模型ReSim上也观察到了改进。定性比较进一步证明了我们方法的有效性。随后，我们通过课程学习将生成扩展到10秒和30秒，并显示一致性优化仍然有效，同时在很大程度上保持了其他能力。",
+      "authors": [
+        "Tongcheng Zhang",
+        "Jun Zhu",
+        "Jianfei Chen"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.01052",
+      "tags": [
+        "世界模型/生成",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Towards Subject Consistency over Dynamic Subject Sets in Video Generation",
+      "title_zh": "在视频生成中实现动态主题集的主题一致性",
+      "url": "/daily/2026-10-02/#paper-2610-01052"
+    },
+    {
+      "abstract": "Autonomous driving is a cornerstone technology for the future of intelligent transportation, where end-to-end learning has emerged as a transformative paradigm that directly maps multimodal sensory inputs to driving actions through unified differentiable models. While offering advantages, the effectiveness of end-to-end autonomous driving (E2E-AD) is ultimately determined by the quality of its training ecosystem. This paper provides a comprehensive review of training methods and ecosystem for E2E-AD. We introduce a Data-Strategy-Platform taxonomy that conceptualizes training as an interdependent system. The data layer defines what can be learned, the strategy layer governs how learning aligns with driving objectives, and the platform layer supports scalability and continuous evolution. Within this framework, we survey recent advances across data-centric pipelines, learning paradigms, and training infrastructures, and analyze their interplay in shaping model performance, robustness, and deployability. Finally, we reflect on current limitations and articulate a forward-looking vision that emphasizes a shift from data quantity to data value, from isolated optimization to foundation-driven generalization, and from static training to integrated training-testing loops, aiming toward robust, scalable, and trustworthy autonomous driving systems. We maintain a continuously updated repository tracking cutting-edge literature and works at \\href{https://github.com/Jiaaqiliu/Awesome-Training-Ecosystem-for-E2E-AD}{Our Project Page}.",
+      "abstract_zh": "自主驾驶是未来智能交通的基石技术，其中端到端学习作为一种变革性范式，直接将多模态传感器输入映射到驾驶动作，通过统一的可微模型实现。尽管端到端自主驾驶（E2E-AD）具有优势，但其有效性最终取决于训练生态系统的质量。本文对E2E-AD的训练方法和生态系统进行了全面回顾。我们引入了数据-策略-平台的分类法，将训练概念化为一个相互依赖的系统。数据层定义了可以学习的内容，策略层管理学习如何与驾驶目标对齐，而平台层则支持可扩展性和持续演进。在这一框架下，我们调查了数据驱动的管道、学习范式和训练基础设施的最新进展，并分析了它们在塑造模型性能、鲁棒性和可部署性方面的相互作用。最后，我们反思了当前的局限性，并阐明了一个前瞻性的愿景，强调从数据数量向数据价值的转变，从孤立优化向基础驱动的泛化转变，以及从静态训练向集成训练-测试循环的转变，旨在实现鲁棒、可扩展和可信赖的自主驾驶系统。我们维护一个持续更新的仓库，跟踪前沿文献和研究成果，网址为 exttt{https://github.com/Jiaaqiliu/Awesome-Training-Ecosystem-for-E2E-AD}。",
+      "authors": [
+        "Chengkai Xu",
+        "Yiming Cui",
+        "Jiaqi Liu",
+        "Yicheng Guo",
+        "Cheng Qin",
+        "Geyuan Zhang",
+        "Xinwei Dong",
+        "Shiyu Fang",
+        "Peng Hang",
+        "Jian Sun"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.00926",
+      "tags": [
+        "端到端驾驶",
+        "感知"
+      ],
+      "title": "A Survey on End-to-End Autonomous Driving Training from the Perspectives of Data, Strategy, and Platform",
+      "title_zh": "从数据、策略和平台的视角看端到端自主驾驶训练的综述",
+      "url": "/daily/2026-10-02/#paper-2610-00926"
+    },
+    {
+      "abstract": "Accurate 3D semantic perception is critical for safe autonomous navigation. However, supervised LiDAR segmentation remains tied to closed taxonomies and to the cost of point-wise manual annotation. Open-vocabulary methods avoid that cost by projecting the output of 2D vision-language models onto LiDAR and distilling it into a 3D network. These methods rely almost exclusively on voxel-based sparse convolutions, and point transformers have so far been limited to indoor environments, where 3D data is dense and bounded. We present Lang3DSeg, which establishes a point transformer as the backbone for annotation-free open-vocabulary segmentation of outdoor 3D LiDAR, and is trained from scratch without geometric pre-training. This training paradigm necessitates addressing the inherent noise in 2D-to-3D label projections; specifically, naive projection often suffers from depth ambiguity, where points behind an object are erroneously assigned its semantic label. We therefore composite masks using an explicit class-priority rule and truncate each projected instance at the first gap in its depth distribution, correcting the projection error directly rather than averaging it over registered sequences. Lang3DSeg achieves 52.8% mIoU on nuScenes validation and 41.4% on SemanticKITTI, the highest among published annotation-free methods on both benchmarks. Every 3D semantic segmentation is on a single LiDAR sweep, and inference operates in real-time without running vision-language models.",
+      "abstract_zh": "准确的3D语义感知对于安全的自主导航至关重要。然而，监督式激光雷达分割仍然依赖于封闭的分类法以及逐点手动标注的成本。开放词汇方法通过将2D视觉-语言模型的输出投影到激光雷达上，并将其提炼为3D网络，从而避免了这一成本。这些方法几乎完全依赖于基于体素的稀疏卷积，而点变换器迄今为止仅限于室内环境，在这些环境中，3D数据是密集且有限的。我们提出了Lang3DSeg，它将点变换器作为无注释开放词汇的户外3D激光雷达分割的骨干，并从零开始训练，而无需几何预训练。这种训练范式需要解决2D到3D标签投影中的固有噪声；具体而言，简单的投影往往会遭遇深度模糊问题，即物体后面的点错误地被分配为其语义标签。因此，我们使用显式的类别优先规则合成掩膜，并在其深度分布的第一个间隙处截断每个投影实例，直接纠正投影错误，而不是在注册序列中对其进行平均。Lang3DSeg在nuScenes验证集上达到了52.8%的mIoU，在SemanticKITTI上达到了41.4%，在这两个基准上都是已发布的无注释方法中最高的。每个3D语义分割都是在单次激光雷达扫描上进行的，推理实时进行，无需运行视觉-语言模型。",
+      "authors": [
+        "Cigdem Kokenoz",
+        "Amir Salarpour",
+        "Alkim Domeke",
+        "Christopher Salas",
+        "Pedram MohajerAnsari",
+        "Long Cheng",
+        "Mert D. Pesé",
+        "Bing Li"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.00855",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "LiDAR/点云"
+      ],
+      "title": "Lang3DSeg: Annotation-Free Open-Vocabulary 3D Segmentation with Point Transformers",
+      "title_zh": "Lang3DSeg：无注释开放词汇的点变换器3D分割",
+      "url": "/daily/2026-10-02/#paper-2610-00855"
+    },
+    {
+      "abstract": "This paper develops a meta-multi-agent reinforcement learning (meta-MARL) framework to enable fast adaptation of interactive policies in a multi-agent system (MAS). Meta-reinforcement learning (meta-RL) enables agents to rapidly adapt to new tasks/environments using a bi-level optimization mechanism. However, existing meta-RL generally focuses on single-agent systems. Extending these frameworks and algorithms to multi-agent systems poses additional challenges, as tasks are characterized by not only the environment but also agents' strategic interactions. To address these challenges, we model multi-agent reinforcement learning (MARL) problems as Markov games (MGs) and develop a meta-MARL framework for rapid interactive policy adaptation across a distribution of MGs. A new concept, called meta-NE, is defined to describe the desired solution concept in a meta-MARL problem. Sufficient conditions for the equivalence between a meta-NE and a stationary point of the gradient-play-based meta-MARL algorithm are established. Our evaluation on autonomous-driving tasks demonstrates that the proposed meta-MARL method achieves faster adaptation than pretrained MARL baselines, validating the effectiveness of our framework.",
+      "abstract_zh": "本文开发了一种元多智能体强化学习（meta-MARL）框架，以实现多智能体系统（MAS）中交互策略的快速适应。元强化学习（meta-RL）使得智能体能够通过双层优化机制迅速适应新的任务/环境。然而，现有的元强化学习通常集中于单智能体系统。将这些框架和算法扩展到多智能体系统面临额外的挑战，因为任务不仅由环境特征决定，还受到智能体战略互动的影响。为了解决这些挑战，我们将多智能体强化学习（MARL）问题建模为马尔可夫博弈（MG），并开发了一种元-MARL框架，以便在一系列MG中快速适应交互策略。我们定义了一个新的概念，称为meta-NE，用以描述元-MARL问题中所需的解概念。我们建立了meta-NE与基于梯度博弈的元-MARL算法的平稳点之间等价的充分条件。我们在自动驾驶任务上的评估表明，所提出的meta-MARL方法实现了比预训练的MARL基线更快的适应，验证了我们框架的有效性。",
+      "authors": [
+        "Huiwen Yan",
+        "Kyriakos G. Vamvoudakis",
+        "Mushuang Liu"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.00705",
+      "tags": [
+        "感知"
+      ],
+      "title": "Meta-Multi-Agent Reinforcement Learning for Fast Adaptation of Interactive Policies with Applications to Autonomous Driving",
+      "title_zh": "用于交互策略快速适应的元多智能体强化学习及其在自动驾驶中的应用",
+      "url": "/daily/2026-10-02/#paper-2610-00705"
+    },
+    {
+      "abstract": "Reasoning-enabled VLA policies expose chain-of-thought (CoT) traces that appear to explain and guide their actions, creating a potential interface for runtime safety through reasoning monitoring and correction. In this work, we define and operationalize two evaluation axes for assessing when this interface can improve embodied behavior: correctability, which measures whether unreliable reasoning can be detected and improved during generation, and actionability, which measures whether reasoning corrections produce behaviorally meaningful changes in the intended direction. To enable correctability, we introduce Token-level Reward for Utility-Steered Chain-of-Thought (TRUST), an offline-trained value model that predicts eventual reasoning correctness from partial prefixes and uses these estimates to monitor and selectively steer reasoning generation in frozen VLA policies. On the Alpamayo 1.5 driving VLA, TRUST monitors correctness with 88.9% accuracy and improves reasoning correctness from 75.9% to 90.0%. On a baseline-defined challenging subset in AlpaSim, TRUST reduces collision rate by 30.4% and maximum trajectory error by 11.5% relative to the unsteered policy, outperforming a compute-matched Best-of-4 baseline. On the DeepThinkVLA manipulation VLA, TRUST improves the correctness of grasp-state claims from 69.3% to 90.2% and action-choice claims from 68.8% to 85.9%, yet closed-loop task performance on LIBERO-Plus remains largely unchanged. Empirical analysis reveals intent-consistent behavioral effects in Alpamayo 1.5 but limited effects in DeepThinkVLA, helping interpret these different task-level outcomes. Together, our results show that gains in reasoning correctness do not automatically imply gains in embodied performance, motivating evaluation of correctability and actionability when using CoT as a runtime safety interface.",
+      "abstract_zh": "启用推理的视觉-语言-行动（VLA）政策展示了思维链（CoT）轨迹，这些轨迹似乎能够解释和指导其行动，从而通过推理监控和修正创造了潜在的运行时安全接口。在本研究中，我们定义并实现了两个评估维度，以评估该接口何时能够改善具身行为：可修正性（correctability），衡量在生成过程中是否能够检测和改善不可靠的推理；可行动性（actionability），衡量推理修正是否能在预期方向上产生行为上有意义的变化。为了实现可修正性，我们引入了基于效用引导的思维链的令牌级奖励（Token-level Reward for Utility-Steered Chain-of-Thought, TRUST），这是一种离线训练的价值模型，能够从部分前缀预测最终的推理正确性，并利用这些估计来监控和选择性地引导冻结的VLA政策中的推理生成。在Alpamayo 1.5驾驶VLA上，TRUST以88.9%的准确率监控正确性，并将推理正确性从75.9%提高到90.0%。在AlpaSim中定义的基线挑战子集上，TRUST相对于未引导政策将碰撞率降低了30.4%，最大轨迹误差降低了11.5%，优于计算匹配的最佳四选一基线。在DeepThinkVLA操作VLA上，TRUST将抓取状态声明的正确性从69.3%提高到90.2%，将行动选择声明的正确性从68.8%提高到85.9%，但在LIBERO-Plus上的闭环任务性能基本保持不变。实证分析揭示了Alpamayo 1.5中的意图一致行为效应，但在DeepThinkVLA中的效果有限，有助于解释这些不同的任务级结果。总的来说，我们的结果表明，推理正确性的提升并不自动意味着具身表现的提升，这促使我们在使用思维链作为运行时安全接口时评估可修正性和可行动性。",
+      "authors": [
+        "Sathwik Karnik",
+        "Joseph JR. Lee",
+        "Aryaman Gupta",
+        "Somil Bansal"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.00601",
+      "tags": [
+        "VLM/VLA",
+        "安全/异常",
+        "端到端驾驶"
+      ],
+      "title": "When Reasoning Helps Action: Monitoring and Steering Chain-of-Thought in Vision-Language-Action Policies",
+      "title_zh": "推理如何促进行动：监控和引导视觉-语言-行动政策中的思维链",
+      "url": "/daily/2026-10-02/#paper-2610-00601"
+    },
+    {
+      "abstract": "Collaborative perception enables connected agents to share complementary observations for 3D object detection, extending sensing range and mitigating occlusion. Under asynchronous communication, however, cooperative features arrive with temporal delay. Existing prediction-based methods compensate for these features mainly from the transmitting agent's own history, leaving residual misalignment with the ego agent's current observation; subsequent fusion also often overlooks spatial variations in alignment quality. We propose EgoRefine, an ego-referenced predictive alignment and reliability-aware fusion framework for asynchronous collaborative perception. Its Ego-referenced Predictive Alignment module uses the current ego feature to guide cooperative trajectory-field prediction and refines the sampling offsets along an ego-referenced trajectory direction. Its Trajectory-conditioned Reliability-aware Fusion module treats the trajectory discrepancy between the ego and cooperative streams and the directional refinement magnitude as alignment cues, using them to condition the relation between aligned features and adaptively reweight the two streams before convolutional fusion. Experiments on V2V4Real and DAIR-V2X-Seq show that EgoRefine outperforms TraF-Align by 1.6 and 2.9 points on average in [email protected] and [email protected] , respectively. The source code will be made publicly available at https://github.com/godk0509/EgoRefine.",
+      "abstract_zh": "协作感知使得连接的智能体能够共享互补的观察数据，以实现三维物体检测，扩展感知范围并减轻遮挡。然而，在异步通信的情况下，协作特征会伴随时间延迟到达。现有的基于预测的方法主要依赖于传输智能体自身的历史来补偿这些特征，导致与自我智能体当前观察的残余不对齐；后续的融合过程往往也忽视了对齐质量的空间变化。我们提出了EgoRefine，一个用于异步协作感知的自我参考预测对齐和可靠性感知融合框架。其自我参考预测对齐模块利用当前的自我特征来指导协作轨迹场的预测，并沿着自我参考轨迹方向细化采样偏移量。其轨迹条件可靠性感知融合模块将自我智能体与协作流之间的轨迹差异和方向性细化幅度视为对齐线索，利用这些线索来调节对齐特征之间的关系，并在卷积融合之前自适应地重新加权这两个流。在V2V4Real和DAIR-V2X-Seq上的实验表明，EgoRefine在 [email protected] 和 [email protected] 上分别比TraF-Align平均提高了1.6和2.9分。源代码将公开发布于https://github.com/godk0509/EgoRefine。",
+      "authors": [
+        "Lingzhao Kong",
+        "Yongsheng Zang",
+        "Yu Kang",
+        "Kailun Yang",
+        "Jie Fu",
+        "Yukun Zuo",
+        "Zhiyong Li"
+      ],
+      "date": "2026-10-02",
+      "id": "2610.00319",
+      "tags": [
+        "感知",
+        "预测/规划",
+        "协同/V2X"
+      ],
+      "title": "EgoRefine: Ego-Referenced Predictive Alignment and Trajectory-Conditioned Reliability-Aware Fusion for Asynchronous Collaborative Perception",
+      "title_zh": "EgoRefine：用于异步协作感知的自我参考预测对齐与轨迹条件可靠性感知融合",
+      "url": "/daily/2026-10-02/#paper-2610-00319"
+    },
     {
       "abstract": "Mobile robots and vehicles carry synchronized multi-camera rigs, yet many streaming 3D foundation models are designed for monocular input, leaving efficient use of rig geometry a challenge. We present StreamRig, a freeze-and-stream framework that builds causal streaming odometry for calibrated rigs on a frozen multi-view 3D foundation model. The frozen front-end jointly perceives the synchronized views using rig calibration. A Rig-Resampler compresses their features, a CausalBridge applies causal attention with a key-value cache, and a lightweight head regresses rig poses. A periodic re-anchoring protocol supports stable pose estimation over long sequences. Only these modules are trained, 74.6M parameters in total, with relative poses as the sole supervision. Our two-stage training strategy combines group relocalization pretraining with causal rig training to transfer the geometric priors of the frozen front-end and the alignment ability of the pretrained modules to streaming odometry. We evaluate on NCLT, TartanGround, KITTI-360, and our self-collected humanoid-robot dataset ZJH, where training uses only simulation and real-world evaluation is zero-shot. Across all four datasets, StreamRig achieves lower translation and rotation drift than the evaluated non-oracle monocular streaming and rig-aware offline models, while maintaining low inference cost. Ablations and controlled camera-count experiments identify the sources of these gains. We further examine how longer training windows affect inference over longer horizons. Code has been released at https://github.com/WeiYuFei0217/StreamRig.",
       "abstract_zh": "移动机器人和车辆携带同步的多摄像头设备，但许多流式3D基础模型是为单目输入设计的，这使得高效利用设备几何结构成为一项挑战。我们提出了StreamRig，一种冻结与流处理框架，基于冻结的多视角3D基础模型构建校准设备的因果流式里程计。冻结的前端通过设备校准共同感知同步视图。一个设备重采样器压缩它们的特征，一个因果桥接器应用带有键值缓存的因果注意力，而一个轻量级头部回归设备姿态。一个周期性重新锚定协议支持在长序列上的稳定姿态估计。仅这些模块被训练，总共有7460万个参数，相对姿态作为唯一的监督。我们的两阶段训练策略结合了组重定位预训练与因果设备训练，以将冻结前端的几何先验和预训练模块的对齐能力转移到流式里程计上。我们在NCLT、TartanGround、KITTI-360以及我们自收集的人形机器人数据集ZJH上进行了评估，其中训练仅使用模拟，真实世界评估为零样本。在所有四个数据集中，StreamRig实现了比评估的非oracle单目流式和设备感知离线模型更低的平移和旋转漂移，同时保持低推理成本。消融实验和受控摄像头数量实验识别了这些增益的来源。我们进一步研究了更长的训练窗口如何影响长时间范围内的推理。代码已发布在https://github.com/WeiYuFei0217/StreamRig。",

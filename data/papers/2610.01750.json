@@ -1,0 +1,46 @@
+{
+  "abstract": "Cooperative 3D tracking must integrate complementary observations across agents and time while maintaining consistent identities. When evidence integration and identity inheritance share a matching decision, errors arising from cross-view appearance differences and spatial misalignment can compromise both feature fusion and track continuity. We propose FFBL-Coop, a fuse first, bind later framework that separates instance admission from identity management. Confidence-ranked Slot Admission (CSA) allocates cooperative queries to available ego slots using confidence and spatial proximity. Unified Representation Aggregation (URA) uses cooperative semantic features and aligned anchors to guide ego-feature retrieval, refining the augmented query bank within a shared transformer decoder. After refinement, Cooperative-Priority Identity Anchoring (CPIA) combines learned association with persistent mappings to establish accepted identity assignments across frames. A shared codebook reduces transmitted payload while retaining AP and AMOTA close to the uncompressed variant. FFBL-Coop achieves AMOTA/AP of 0.611/0.548 on V2X-Seq and 0.688/0.653 on Griffin-25M. Code will be released.",
+  "abstract_zh": "协作三维跟踪必须整合跨代理和时间的互补观察，同时保持身份的一致性。当证据整合和身份继承共享匹配决策时，由于视角间外观差异和空间错位引起的错误可能会影响特征融合和轨迹连续性。我们提出了FFBL-Coop，一个先融合后绑定的框架，旨在将实例接纳与身份管理分开。信心排名的槽接纳（Confidence-ranked Slot Admission, CSA）利用信心和空间接近性将协作查询分配给可用的自我槽。统一表示聚合（Unified Representation Aggregation, URA）使用协作语义特征和对齐锚点来指导自我特征检索，在共享的变换解码器中细化增强的查询库。经过细化后，协作优先身份锚定（Cooperative-Priority Identity Anchoring, CPIA）结合学习到的关联与持久映射，以在帧之间建立接受的身份分配。共享代码本减少了传输负载，同时保持接近未压缩变体的AP和AMOTA。FFBL-Coop在V2X-Seq上实现了AMOTA/AP为0.611/0.548，在Griffin-25M上实现了0.688/0.653。代码将会发布。",
+  "arxiv_id": "2610.01750",
+  "arxiv_url": "https://arxiv.org/abs/2610.01750v1",
+  "authors": [
+    "Haoxin Wu",
+    "Xiaokai Bai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01750",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.448729+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01750v1",
+  "published_at": "2026-10-01T14:16:55Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01750v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "协同/V2X",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "FFBL-Coop: Association-Decoupled Cooperative 3D Multi-Object Tracking",
+  "title_zh": "FFBL-Coop：关联解耦的协作三维多目标跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2610.01750"
+}

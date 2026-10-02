@@ -1,0 +1,49 @@
+{
+  "abstract": "We argue that as video generation extends to longer durations, subject consistency should be evaluated over \\textit{dynamic subject sets}. We therefore introduce \\textbf{DynSC-Eval}, an evaluation framework that dynamically tracks eligible subjects throughout their visible lifespans and measures local continuity and global identity preservation using six complementary object-level metrics, with explicit detection of inconsistency events. To validate its effectiveness, we design synthetic experiments that actively inject inconsistency events, demonstrating both the sensitivity of DynSC-Eval and the limitations of existing metrics. Evaluations of diverse models on 5s, 15s, and 60s video generation further reveal substantial subject consistency differences that are obscured by conventional metrics. Beyond evaluation, we construct rewards from DynSC-Eval and apply DiffusionNFT post-training in an autonomous-driving testbed. On 5s generation, our approach reduces the six inconsistency metrics by an average of 13.82\\% for Wan-2.1-1.3B and 5.66\\% for SANA-2B, with improvements also observed on the I2V model ReSim. Qualitative comparisons further demonstrate the effectiveness of our method. We then extend generation to 10s and 30s through curriculum learning and show that consistency optimization remains effective while largely preserving other capabilities.",
+  "abstract_zh": "我们认为，随着视频生成时间的延长，主题一致性应在 extit{动态主题集}上进行评估。因此，我们提出了 extbf{DynSC-Eval}，一个评估框架，动态跟踪在可见生命周期内的合格主题，并使用六个互补的对象级指标来测量局部连续性和全局身份保持，同时明确检测不一致事件。为了验证其有效性，我们设计了合成实验，主动注入不一致事件，展示了DynSC-Eval的敏感性以及现有指标的局限性。在5秒、15秒和60秒的视频生成中对多种模型的评估进一步揭示了被传统指标掩盖的显著主题一致性差异。除了评估，我们还从DynSC-Eval构建奖励，并在自主驾驶测试平台中应用DiffusionNFT后训练。在5秒生成中，我们的方法使Wan-2.1-1.3B的六个不一致指标平均降低了13.82\\%，SANA-2B降低了5.66\\,同时在I2V模型ReSim上也观察到了改进。定性比较进一步证明了我们方法的有效性。随后，我们通过课程学习将生成扩展到10秒和30秒，并显示一致性优化仍然有效，同时在很大程度上保持了其他能力。",
+  "arxiv_id": "2610.01052",
+  "arxiv_url": "https://arxiv.org/abs/2610.01052v1",
+  "authors": [
+    "Tongcheng Zhang",
+    "Jun Zhu",
+    "Jianfei Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01052",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.401479+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01052v1",
+  "published_at": "2026-10-01T04:47:36Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01052v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "本文研究长时视频生成中的动态主体一致性评估与优化，提出DynSC-Eval以跟踪主体生命周期并检测局部连续性和全局身份不一致。方法通过奖励建模和扩散模型后训练得到优化，并在自动驾驶测试平台的视频生成场景中验证了有效性，具有仿真数据生成和世界模型构建的潜在应用价值。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Towards Subject Consistency over Dynamic Subject Sets in Video Generation",
+  "title_zh": "在视频生成中实现动态主题集的主题一致性",
+  "translation_url": "https://hjfy.top/arxiv/2610.01052"
+}

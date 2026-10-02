@@ -1,0 +1,55 @@
+{
+  "abstract": "Generative AI models are increasingly used for scenario generation in autonomous driving. While they can generate realistic-looking scenarios, they often provide limited transparency into learned representations and consistency with real-world vehicle dynamics. This lack of formal assurance limits their use in safety-critical validation and certification workflows. To address this aspect, we introduce a layered evaluation protocol that complements existing methods by assessing models across five layers. The first four layers inspect internal representations and network layers through kinematic alignment, statistical baseline comparison, latent controllability, and activation analysis. The fifth layer evaluates model outputs against vehicle dynamics constraints such as lateral jerk thresholds. We demonstrate the protocol on a Variational Autoencoder (VAE)-based scenario generator. Although standard output-level metrics and visualizations suggest that the generated scenarios are realistic, our protocol provides deeper insight into the extent to which the model's latent space aligns with kinematic features and whether visually plausible trajectories satisfy vehicle-dynamics constraints. We further apply the protocol to additional generative models, demonstrating its applicability beyond the VAE architecture.",
+  "abstract_zh": "生成性人工智能模型在自动驾驶的场景生成中越来越多地被使用。尽管它们能够生成看似真实的场景，但通常对学习到的表征和与现实世界车辆动力学的一致性提供有限的透明度。这种缺乏正式保证的情况限制了它们在安全关键的验证和认证工作流程中的应用。为了解决这一问题，我们引入了一种分层评估协议，该协议通过在五个层面上评估模型来补充现有方法。前四个层面通过运动学对齐、统计基线比较、潜在可控性和激活分析检查内部表征和网络层。第五个层面则将模型输出与车辆动力学约束（如横向加速度阈值）进行评估。我们在基于变分自编码器（Variational Autoencoder, VAE）的场景生成器上展示了该协议。尽管标准的输出级别指标和可视化结果表明生成的场景是现实的，但我们的协议提供了更深入的洞察，揭示模型的潜在空间在多大程度上与运动学特征对齐，以及视觉上合理的轨迹是否满足车辆动力学约束。我们进一步将该协议应用于其他生成模型，展示了其在超越VAE架构的适用性。",
+  "arxiv_id": "2610.01581",
+  "arxiv_url": "https://arxiv.org/abs/2610.01581v1",
+  "authors": [
+    "Manasa Mariam Mammen",
+    "Zafer Kayatas",
+    "Stefan Wagner"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01581",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.580723+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01581v1",
+  "published_at": "2026-10-01T12:36:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 85
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01581v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Evaluating Physical Consistency and Plausibility in Generative Scenario Models for Autonomous Driving",
+  "title_zh": "评估自动驾驶生成场景模型的物理一致性和合理性",
+  "translation_url": "https://hjfy.top/arxiv/2610.01581"
+}

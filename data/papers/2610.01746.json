@@ -1,0 +1,51 @@
+{
+  "abstract": "Autonomous driving systems have become a central focus of intelligent transportation research, with End-to-End Learning and Modular Architectures offering two prominent design paradigms for their implementation. E2E Learning uses deep learning algorithms to map raw sensory inputs directly to driving actuators, providing a streamlined and adaptable solution. while Modular Architectures employ a pipeline-based approach, dividing the system into distinct subsystems for perception, cognition, planning, and control. This paper presents a comprehensive comparative analysis of these paradigms, focusing on their strengths, limitations, and trade-offs to provide insights into their suitability for various autonomous driving applications. The study evaluates key factors such as interpretability, scalability, robustness, and real-world applicability. While End-to-End Learning emphasizes simplicity and adaptability in dynamic environments, it lacks transparency and is highly dependent on large datasets. Conversely, Modular Architectures offer superior interpretability and task-specific optimization, but face challenges related to integration complexity and scalability. To address these limitations, hybrid approaches that combine the strengths of both paradigms have emerged, offering a promising direction for overcoming these challenges. Beyond this comparative synthesis, following work proposes a Four-Dimensional Architecture Selection Framework, comprising twelve binary criteria across safety, operating environment, data/computational resources, and deployment context, and validate it against ten published autonomous driving systems, correctly recommending 7/10 deployed architectures. This work synthesizes existing literature to highlight key trade-offs between the paradigms and identifies hybrid architectures as a promising direction for future research.",
+  "abstract_zh": "自主驾驶系统已成为智能交通研究的核心焦点，端到端学习（End-to-End Learning）和模块化架构（Modular Architectures）提供了两种突出的设计范式用于其实现。端到端学习利用深度学习算法将原始传感器输入直接映射到驾驶执行器，提供了一种简化且适应性强的解决方案，而模块化架构则采用基于管道的方法，将系统划分为感知、认知、规划和控制等不同子系统。本文对这两种范式进行了全面的比较分析，重点关注它们的优点、局限性和权衡，以提供对其在各种自主驾驶应用中的适用性的洞察。研究评估了可解释性、可扩展性、鲁棒性和现实应用等关键因素。尽管端到端学习强调在动态环境中的简单性和适应性，但其缺乏透明性且高度依赖于大规模数据集。相反，模块化架构提供了更好的可解释性和特定任务优化，但面临与集成复杂性和可扩展性相关的挑战。为了解决这些局限性，结合两种范式优势的混合方法应运而生，提供了克服这些挑战的有希望的方向。除了这种比较综合，后续工作提出了一个四维架构选择框架，包含跨安全性、操作环境、数据/计算资源和部署背景的十二个二元标准，并在十个已发布的自主驾驶系统中进行了验证，正确推荐了7/10个已部署架构。该研究综合现有文献，强调了这两种范式之间的关键权衡，并确定混合架构作为未来研究的有希望方向。",
+  "arxiv_id": "2610.01746",
+  "arxiv_url": "https://arxiv.org/abs/2610.01746v1",
+  "authors": [
+    "Kartik B. Kapse"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01746",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.336958+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01746v1",
+  "published_at": "2026-10-01T14:15:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01746v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "End-to-End Learning vs. Modular Architectures: Comparative Insights into Autonomous Driving Systems",
+  "title_zh": "端到端学习与模块化架构：对自主驾驶系统的比较洞察",
+  "translation_url": "https://hjfy.top/arxiv/2610.01746"
+}

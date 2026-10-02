@@ -1,0 +1,49 @@
+{
+  "abstract": "Robust perception in intelligent vehicles demands 3D object detectors that remain dependable under domain shifts, such as changes in time of day, location, or weather. However, due to costly annotation and rare shifts, some environments lack sufficient data to train a standalone detector. Federated learning offers a privacy-preserving framework for collaborative model training, enabling clients to benefit from shared learning across diverse environments. Yet, this framework traditionally relies on a single global consensus model, which struggles to perform across heterogeneous local data distributions. Local conditions are better captured by adapting a subset of the model, but many personalization approaches rely on predefined layer partitions or fixed personalization ratios, thereby limiting adaptation to client-specific divergence. To reduce this rigidity, we propose FedCKA, a Centered Kernel Alignment (CKA)-based strategy that dynamically handles the personalization-globalization trade-off. Specifically, FedCKA computes layer-wise feature similarities between local client models and the global consensus model during training. By converting layer-wise similarity scores into client-specific aggregation masks, FedCKA selectively shares representation-consistent layers. Evaluation on a unified multi-domain benchmark based on nuScenes shows that FedCKA outperforms established federated baselines, including FedBN, FedRep, and FedSelect, improving average NDS by 7 percentage points over the strongest baseline. The findings offer both a comparative benchmark and a promising direction for robust federated 3D perception across shifts in location, weather, and illumination. Code is available at https://github.com/j-verhoog/FedCKA.",
+  "abstract_zh": "智能车辆的稳健感知要求3D物体检测器在领域转变（如时间、地点或天气变化）下依然可靠。然而，由于标注成本高昂和转变稀少，某些环境缺乏足够的数据来训练独立的检测器。联邦学习提供了一种保护隐私的协作模型训练框架，使得客户端能够从不同环境的共享学习中受益。然而，这一框架传统上依赖于单一的全局共识模型，在异构本地数据分布下表现不佳。通过适应模型的子集，可以更好地捕捉本地条件，但许多个性化方法依赖于预定义的层划分或固定的个性化比例，从而限制了对客户端特定差异的适应。为减少这种刚性，我们提出了FedCKA，一种基于中心核对齐（CKA）的策略，动态处理个性化与全局化之间的权衡。具体而言，FedCKA在训练过程中计算本地客户端模型与全局共识模型之间的层级特征相似性。通过将层级相似性得分转换为客户端特定的聚合掩码，FedCKA选择性地共享表示一致的层。在基于nuScenes的统一多领域基准测试中的评估表明，FedCKA的表现优于现有的联邦基线，包括FedBN、FedRep和FedSelect，平均NDS比最强基线提高了7个百分点。这些发现为在位置、天气和光照变化下稳健的联邦3D感知提供了比较基准和有前景的方向。代码可在 https://github.com/j-verhoog/FedCKA 获取。",
+  "arxiv_id": "2610.01510",
+  "arxiv_url": "https://arxiv.org/abs/2610.01510v1",
+  "authors": [
+    "Jolle Verhoog",
+    "Ali Burak Ünal",
+    "Holger Caesar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-01510",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.432694+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.01510v1",
+  "published_at": "2026-10-01T11:46:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "driving",
+      "车辆"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.01510v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "FedCKA: Representation-Guided Layer Personalization for Federated 3D Perception Across Driving Domains",
+  "title_zh": "FedCKA：基于表示引导的联邦3D感知层个性化方法",
+  "translation_url": "https://hjfy.top/arxiv/2610.01510"
+}

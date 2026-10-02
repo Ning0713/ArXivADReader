@@ -1,0 +1,53 @@
+{
+  "abstract": "Reasoning-enabled VLA policies expose chain-of-thought (CoT) traces that appear to explain and guide their actions, creating a potential interface for runtime safety through reasoning monitoring and correction. In this work, we define and operationalize two evaluation axes for assessing when this interface can improve embodied behavior: correctability, which measures whether unreliable reasoning can be detected and improved during generation, and actionability, which measures whether reasoning corrections produce behaviorally meaningful changes in the intended direction. To enable correctability, we introduce Token-level Reward for Utility-Steered Chain-of-Thought (TRUST), an offline-trained value model that predicts eventual reasoning correctness from partial prefixes and uses these estimates to monitor and selectively steer reasoning generation in frozen VLA policies. On the Alpamayo 1.5 driving VLA, TRUST monitors correctness with 88.9% accuracy and improves reasoning correctness from 75.9% to 90.0%. On a baseline-defined challenging subset in AlpaSim, TRUST reduces collision rate by 30.4% and maximum trajectory error by 11.5% relative to the unsteered policy, outperforming a compute-matched Best-of-4 baseline. On the DeepThinkVLA manipulation VLA, TRUST improves the correctness of grasp-state claims from 69.3% to 90.2% and action-choice claims from 68.8% to 85.9%, yet closed-loop task performance on LIBERO-Plus remains largely unchanged. Empirical analysis reveals intent-consistent behavioral effects in Alpamayo 1.5 but limited effects in DeepThinkVLA, helping interpret these different task-level outcomes. Together, our results show that gains in reasoning correctness do not automatically imply gains in embodied performance, motivating evaluation of correctability and actionability when using CoT as a runtime safety interface.",
+  "abstract_zh": "启用推理的视觉-语言-行动（VLA）政策展示了思维链（CoT）轨迹，这些轨迹似乎能够解释和指导其行动，从而通过推理监控和修正创造了潜在的运行时安全接口。在本研究中，我们定义并实现了两个评估维度，以评估该接口何时能够改善具身行为：可修正性（correctability），衡量在生成过程中是否能够检测和改善不可靠的推理；可行动性（actionability），衡量推理修正是否能在预期方向上产生行为上有意义的变化。为了实现可修正性，我们引入了基于效用引导的思维链的令牌级奖励（Token-level Reward for Utility-Steered Chain-of-Thought, TRUST），这是一种离线训练的价值模型，能够从部分前缀预测最终的推理正确性，并利用这些估计来监控和选择性地引导冻结的VLA政策中的推理生成。在Alpamayo 1.5驾驶VLA上，TRUST以88.9%的准确率监控正确性，并将推理正确性从75.9%提高到90.0%。在AlpaSim中定义的基线挑战子集上，TRUST相对于未引导政策将碰撞率降低了30.4%，最大轨迹误差降低了11.5%，优于计算匹配的最佳四选一基线。在DeepThinkVLA操作VLA上，TRUST将抓取状态声明的正确性从69.3%提高到90.2%，将行动选择声明的正确性从68.8%提高到85.9%，但在LIBERO-Plus上的闭环任务性能基本保持不变。实证分析揭示了Alpamayo 1.5中的意图一致行为效应，但在DeepThinkVLA中的效果有限，有助于解释这些不同的任务级结果。总的来说，我们的结果表明，推理正确性的提升并不自动意味着具身表现的提升，这促使我们在使用思维链作为运行时安全接口时评估可修正性和可行动性。",
+  "arxiv_id": "2610.00601",
+  "arxiv_url": "https://arxiv.org/abs/2610.00601v1",
+  "authors": [
+    "Sathwik Karnik",
+    "Joseph JR. Lee",
+    "Aryaman Gupta",
+    "Somil Bansal"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-02#paper-2610-00601",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-02T10:50:24.296737+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.00601v1",
+  "published_at": "2026-09-30T19:04:58Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "vision-language-action",
+      "driving vla"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-10-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.00601v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-02"
+  },
+  "summary_zh": "本文研究自动驾驶 VLA 策略中思维链的运行时监控与干预，提出词元级价值模型 TRUST，从部分推理序列预测最终正确性并选择性引导生成。在 Alpamayo 1.5 和 AlpaSim 上，该方法显著提高推理正确率，并降低碰撞率与轨迹误差。研究同时指出，推理更正确不一定带来闭环行为性能提升，因而需要联合评估推理的可修正性与对实际驾驶行为的可行动性。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "安全/异常",
+      "端到端驾驶"
+    ]
+  },
+  "title": "When Reasoning Helps Action: Monitoring and Steering Chain-of-Thought in Vision-Language-Action Policies",
+  "title_zh": "推理如何促进行动：监控和引导视觉-语言-行动政策中的思维链",
+  "translation_url": "https://hjfy.top/arxiv/2610.00601"
+}
