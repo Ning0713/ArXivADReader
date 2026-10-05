@@ -1,0 +1,61 @@
+{
+  "abstract": "Large-scale vectorized HD maps provide structured road information that is essential for perception, localization, and planning in autonomous driving. Constructing such maps requires aggregating noisy, fragmented, and overlapping local predictions collected along a vehicle trajectory into a coherent global map. Existing aggregation methods typically rely on hand-crafted rules for fragment association and refinement. However, a fixed set of thresholds cannot effectively handle variations in road structures and prediction errors, often requiring detector-specific tuning or manual adjustment. To address this limitation, we propose MapMergeLLM, a data-driven framework that formulates vectorized map aggregation as conditional sequence generation with a large language model. Given serialized local vectorized maps, our model directly predicts the aggregated global map polylines. To reduce dependence on any particular upstream detector, we train the model on synthetic local maps generated from clean vector maps using corruptions that simulate representative prediction errors. We further introduce a coordinate tokenizer with geometry-aware pretraining to precisely represent map coordinates. In addition, we propose a line-level association loss that explicitly supervises correspondences between local observations of the same map element. Experiments on Argoverse2 and nuScenes using multiple recent upstream detectors demonstrate that MapMergeLLM substantially outperforms heuristic and optimization-based aggregation baselines without detector-specific retraining.",
+  "abstract_zh": "大规模向量化高清地图提供了结构化的道路信息，这对于自动驾驶中的感知、定位和规划至关重要。构建这样的地图需要将沿车辆轨迹收集的嘈杂、碎片化和重叠的局部预测聚合成一个连贯的全球地图。现有的聚合方法通常依赖于手工制定的规则来进行碎片关联和精炼。然而，固定的阈值集无法有效处理道路结构和预测误差的变化，通常需要特定检测器的调优或手动调整。为了解决这一限制，我们提出了MapMergeLLM，这是一个数据驱动的框架，将向量化地图聚合公式化为使用大型语言模型的条件序列生成。在给定序列化的局部向量化地图的情况下，我们的模型直接预测聚合的全球地图多边形线。为了减少对任何特定上游检测器的依赖，我们在从干净的向量地图生成的合成局部地图上训练模型，使用模拟代表性预测误差的损坏。我们进一步引入了一种具有几何感知预训练的坐标标记器，以精确表示地图坐标。此外，我们提出了一种线级关联损失，明确监督同一地图元素的局部观测之间的对应关系。在使用多个最新上游检测器的Argoverse2和nuScenes上的实验表明，MapMergeLLM在没有特定检测器重新训练的情况下，显著优于启发式和基于优化的聚合基线。",
+  "arxiv_id": "2610.02513",
+  "arxiv_url": "https://arxiv.org/abs/2610.02513v1",
+  "authors": [
+    "Ziwei Li",
+    "Yi-Tang Chen",
+    "Xiaoqi Wang",
+    "Wenbin He",
+    "Han-Wei Shen",
+    "Liu Ren"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-02513",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-05T11:58:58.944695+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.02513v1",
+  "published_at": "2026-10-01T21:35:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.02513v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "From Fragments to Global Maps: Learning Vectorized Map Aggregation with Large Language Models",
+  "title_zh": "从碎片到全球地图：利用大型语言模型学习向量化地图聚合",
+  "translation_url": "https://hjfy.top/arxiv/2610.02513"
+}

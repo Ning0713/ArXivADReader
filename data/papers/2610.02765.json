@@ -1,0 +1,56 @@
+{
+  "abstract": "Monitoring planned driving trajectories requires accurately estimating the collision likelihood with actors whose motion is itself impacted by the ego motion. Existing classical approaches are often limited by the quality of their forecasting model. Vision-language models (VLMs) have shown promise in reasoning about the consequences of high-level actions, yet their approximate predictions are unsuitable for safety-critical applications such as autonomous driving. Conformal prediction (CP) has emerged as a data-driven framework for quantifying the uncertainty of black-box model predictions. We propose Split Label-Localized Conformal Prediction (SLLCP), a post-hoc calibration layer over frozen VLMs that transforms their unreliable predictions into probabilistically calibrated safety prediction sets. We consider how the ability to estimate safety can depend on the observed driving scene and introduce a localized procedure that upweights relevant past experience when calculating uncertainty thresholds. We provide label-conditional finite-sample distribution-free coverage under exchangeability. Evaluated over 15k CARLA trajectories from unseen scenarios, SLLCP correctly flags 89.6% of collision-causing trajectories with a Qwen backbone and 88.4% with a Cosmos backbone, while the base VLMs only flagged 4.6% and 39.1% of the collision-causing trajectories, respectively. These results indicate that local, label-conditional calibration can reduce missed unsafe trajectories.",
+  "abstract_zh": "监测规划的驾驶轨迹需要准确估计与运动体发生碰撞的可能性，而运动体的运动又受到自我运动的影响。现有的经典方法往往受到其预测模型质量的限制。视觉-语言模型（VLMs）在推理高层次动作的后果方面显示出潜力，但其近似预测不适合用于安全关键的应用，如自动驾驶。一致性预测（CP）作为一种数据驱动框架，已被提出用于量化黑箱模型预测的不确定性。我们提出了分裂标签局部一致性预测（SLLCP），这是一种在冻结的VLMs上进行后处理校准的层，将其不可靠的预测转化为概率校准的安全预测集。我们考虑到安全估计的能力可能依赖于观察到的驾驶场景，并引入了一种局部程序，在计算不确定性阈值时加权相关的过去经验。我们在可交换性条件下提供了标签条件的有限样本分布无关覆盖。在对来自未见场景的15,000条CARLA轨迹进行评估时，SLLCP正确标记了89.6%的导致碰撞的轨迹（使用Qwen骨干网络）和88.4%的轨迹（使用Cosmos骨干网络），而基础的VLMs仅标记了4.6%和39.1%的导致碰撞的轨迹。这些结果表明，局部的标签条件校准可以减少漏标不安全轨迹的情况。",
+  "arxiv_id": "2610.02765",
+  "arxiv_url": "https://arxiv.org/abs/2610.02765v1",
+  "authors": [
+    "Luís Marques",
+    "Rong Fang",
+    "Disha Kamale",
+    "Dmitry Berenson"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-02765",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-05T11:58:58.921705+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.02765v1",
+  "published_at": "2026-10-02T03:46:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.02765v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "安全/异常"
+    ]
+  },
+  "title": "Localized Conformal Safety Monitoring with Vision-Language Models for Autonomous Driving",
+  "title_zh": "基于视觉-语言模型的局部一致性安全监测在自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2610.02765"
+}

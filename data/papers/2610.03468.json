@@ -1,0 +1,51 @@
+{
+  "abstract": "Editable 3D models of field-grown crops support high-throughput phenotyping and in silico breeding trials, but building them from scanned point clouds requires organ-level segmentation and fitting. Procedural generators can turn an organ-level parameter set into an analysis-suitable 3D model, but obtaining that set requires hours of manual tuning per plant or segmentation models trained on species-specific labels. We present an automated pipeline that reconstructs procedural maize models from raw 3D point clouds without manual tuning or species-specific training data. A multimodal vision-language model (VLM) annotates leaf midlines in rendered orthographic views. Deterministic geometric algorithms back-project the annotations onto the point cloud, merge them into 3D leaves by cross-view consensus, and grow the midlines to full blades on an orientation-weighted surface graph. Measured organ parameters populate a plant descriptor for a Non-Uniform Rational B-Spline (NURBS)-based procedural model generator. Each leaf surface is then refined against its scan points by differentiable NURBS fitting. The pipeline reached a median whole-plant Chamfer distance of 5.4 mm on 100 genotypically diverse field-grown maize plants from the MaizeField3D dataset. The reconstructions were closer to the scans than those of an earlier semi-automated pipeline based on manual annotations. The pipeline recovered 1,017 of 1,023 (99.4%) curated reference leaves at an intersection-over-union of at least 0.5 without using those labels as input. These results show that VLM annotations become usable organ-level measurements when downstream geometric stages can correct them. This makes automated generation of editable 3D plant assets feasible at the scale of modern phenotyping experiments.",
+  "abstract_zh": "可编辑的田间生长作物的三维模型支持高通量表型分析和计算机模拟育种试验，但从扫描的点云构建这些模型需要进行器官级分割和拟合。程序生成器可以将器官级参数集转换为适合分析的三维模型，但获取该参数集需要每株植物数小时的手动调节或基于特定物种标签训练的分割模型。我们提出了一种自动化管道，可以从原始三维点云重建程序玉米模型，而无需手动调节或特定物种的训练数据。多模态视觉-语言模型（VLM）在渲染的正交视图中标注叶片中线。确定性几何算法将标注反投影到点云上，通过交叉视图共识将其合并为三维叶片，并在加权方向的表面图上将中线生长为完整的叶片。测量的器官参数填充了基于非均匀有理B样条（NURBS）的程序模型生成器的植物描述符。然后，通过可微分的NURBS拟合对每个叶片表面进行精细化处理。该管道在MaizeField3D数据集中对100株基因型多样的田间生长玉米植物的整体植物Chamfer距离达到了5.4毫米的中位数。重建结果比早期基于手动标注的半自动化管道更接近扫描结果。该管道在没有使用这些标签作为输入的情况下，恢复了1,017片中的1,023片（99.4%）经过整理的参考叶，交并比至少为0.5。这些结果表明，当下游几何阶段能够纠正VLM标注时，这些标注变得可用作为器官级测量。这使得在现代表型实验的规模下，自动生成可编辑的三维植物资产成为可能。",
+  "arxiv_id": "2610.03468",
+  "arxiv_url": "https://arxiv.org/abs/2610.03468v1",
+  "authors": [
+    "Mozhgan Hadadi",
+    "Talukder Z. Jubery",
+    "Adarsh Krishnamurthy",
+    "Baskar Ganapathysubramanian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-03468",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-05T11:58:58.976724+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.03468v1",
+  "published_at": "2026-10-02T15:41:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "intersection",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.03468v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "A Vision-Language Model (VLM)-based Pipeline for End-to-End Procedural Modeling of Field-Grown Maize from Point Clouds",
+  "title_zh": "基于视觉-语言模型（VLM）的端到端田间生长玉米的程序建模管道",
+  "translation_url": "https://hjfy.top/arxiv/2610.03468"
+}

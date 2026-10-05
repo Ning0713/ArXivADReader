@@ -1,0 +1,58 @@
+{
+  "abstract": "Scalable driving simulators typically execute vehicle commands using prescribed behavioral or kinematic rules, overlooking the physics of tire-road interfaces, thereby limiting their ability to capture how adverse road and environmental conditions alter vehicle execution and propagate through traffic. To address this limitation, we present SceneFactory-3D, a GPU-batched, physics-grounded multi-agent driving simulator. Vehicles execute acceleration and steering commands via suspension- and friction-limited forces evaluated at each wheel-contact point. Spatially varying friction, per-world 3D heightfields, gravity, and rigid contact consistently govern wheel motion and chassis collisions. Per-world terrain isolation and GPU batching enable SceneFactory-3D to run matched physical counterfactuals in parallel: traffic scenario setup and vehicle controllers remain fixed while only the road condition changes, enabling the resulting closed-loop effects to be evaluated across parallel worlds. To demonstrate the advantage of the SceneFactory-3D-enabled counterfactual evaluation, we conduct an empirical study on vehicle controllers' sensitivity to road conditions. We study three learned-policy families on 1,024 matched 12-vehicle worlds per condition, and two classical planners on a shared 32-world subset, across 21 friction and grade conditions. When friction drops from 1.0 to 0.18, the share of vehicles that clear the work zone safely falls by 6 to 90 percentage points across learned policies (18-19 for classical planners), and near-collision situations become more frequent for every learned policy. Code: https://github.com/SmallWorldLab/SceneFactory_3D",
+  "abstract_zh": "可扩展的驾驶模拟器通常使用规定的行为或运动学规则执行车辆指令，忽视了轮胎与路面接口的物理特性，从而限制了它们捕捉不利路况和环境条件如何改变车辆执行并在交通中传播的能力。为了解决这一局限性，我们提出了SceneFactory-3D，这是一种基于GPU批处理的物理基础多智能体驾驶模拟器。车辆通过在每个轮接触点评估的悬挂和摩擦限制力执行加速和转向指令。空间变化的摩擦、每个世界的3D高度场、重力和刚性接触始终支配着轮子运动和底盘碰撞。每个世界的地形隔离和GPU批处理使得SceneFactory-3D能够并行运行匹配的物理反事实：交通场景设置和车辆控制器保持不变，而只有路况发生变化，从而使得结果的闭环效应能够在平行世界中进行评估。为了展示SceneFactory-3D启用的反事实评估的优势，我们对车辆控制器对路况的敏感性进行了实证研究。我们在每种条件下研究了三种学习策略家族在1,024个匹配的12辆车世界中的表现，以及在共享的32个世界子集上研究了两种经典规划器，涵盖了21种摩擦和坡度条件。当摩擦从1.0降至0.18时，安全通过施工区域的车辆比例在学习策略中下降了6到90个百分点（经典规划器为18-19个百分点），而每种学习策略的近碰撞情况变得更加频繁。代码：https://github.com/SmallWorldLab/SceneFactory_3D",
+  "arxiv_id": "2610.02874",
+  "arxiv_url": "https://arxiv.org/abs/2610.02874v1",
+  "authors": [
+    "Yicheng Zhu",
+    "Linfeng Tian",
+    "Tianmu Zhao",
+    "Yang Chen",
+    "Fan Zuo",
+    "Tao Li",
+    "Zilin Bian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-02874",
+  "categories": [
+    "cs.RO",
+    "cs.MA"
+  ],
+  "fetched_at": "2026-10-05T11:58:58.926941+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.02874v1",
+  "published_at": "2026-10-02T06:12:12Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 35
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.02874v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "本文提出SceneFactory-3D，一种支持GPU批处理的物理基础多智能体自动驾驶模拟器。该方法通过轮胎接触力、悬挂、摩擦、3D地形、重力和刚体碰撞建模车辆执行过程，并在保持交通场景与控制器不变的情况下并行生成不同路况下的物理反事实，用于评估自动驾驶控制器和规划器在低摩擦、坡度等不利条件下的闭环安全表现。实验表明，恶劣路况会显著降低车辆安全通行率并增加近碰撞事件。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "预测/规划"
+    ]
+  },
+  "title": "SceneFactory-3D: Lifting 2D Traffic Scenes into 3D Physical Counterfactuals for Scalable Physically Grounded Safety Evaluation",
+  "title_zh": "SceneFactory-3D：将2D交通场景提升为3D物理反事实，以实现可扩展的物理基础安全评估",
+  "translation_url": "https://hjfy.top/arxiv/2610.02874"
+}

@@ -1,0 +1,48 @@
+{
+  "abstract": "Explainability is increasingly required for perception models in intelligent vehicles, yet whether explanations remain faithful under driving domain shift is still poorly understood. This work audits post-hoc explanations of a fixed YOLOv8s pedestrian detector across PIE and JAAD using ROI-based D-Deletion, frozen confidence terciles, rank-based tests, bootstrap intervals, and Holm correction. The audit shows that deletion-based faithfulness is strongly coupled to detection strength at explanation time, with Spearman correlations between 0.70 and 0.82 for D-RISE, making naive confidence-stratified comparisons unreliable. After controlling for detection strength within fixed f0 bins, D-RISE faithfulness remains domain-dependent in the central f0 range, with PIE showing higher D-Deletion than JAAD and Holm-adjusted significance. A non-perturbative EigenCAM baseline is less faithful than D-RISE but also exhibits score coupling, suggesting that the effect is not specific to D-RISE and is related to the deletion-based evaluation setup. These results motivate confidence-controlled XAI audits for safety-critical perception under domain shift.",
+  "abstract_zh": "在智能车辆的感知模型中，解释性越来越受到重视，但在驾驶领域转移下，解释是否仍然保持真实的情况仍然不甚了解。本研究对固定的YOLOv8s行人检测器在PIE和JAAD数据集上的事后解释进行了审计，采用了基于ROI的D-Deletion、冻结的置信度三分位数、基于排名的测试、引导区间和Holm校正。审计结果表明，基于删除的真实度与解释时的检测强度密切相关，D-RISE的斯皮尔曼相关系数在0.70到0.82之间，使得简单的置信度分层比较不可靠。在固定的f0区间内控制检测强度后，D-RISE的真实度在中央f0范围内仍然依赖于领域，PIE的D-Deletion高于JAAD，并且经过Holm调整的显著性更强。非扰动的EigenCAM基线的真实度低于D-RISE，但也表现出得分耦合，表明这一效应并非特定于D-RISE，而与基于删除的评估设置有关。这些结果促使我们对在领域转移下安全关键感知进行信心控制的可解释性审计。",
+  "arxiv_id": "2610.02364",
+  "arxiv_url": "https://arxiv.org/abs/2610.02364v1",
+  "authors": [
+    "Ruben Dario Florez-Zela"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-02364",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-05T11:58:58.940835+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.02364v1",
+  "published_at": "2026-10-01T18:39:57Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.02364v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "本文面向自动驾驶场景下的行人检测感知模型，研究域转移条件下事后可解释性方法的可靠性。作者在PIE和JAAD数据集上审计固定YOLOv8s检测器的D-RISE与EigenCAM解释，发现基于删除的解释忠实度与检测置信度高度耦合，导致朴素的置信度分层比较存在偏差。在控制检测强度后，D-RISE的解释忠实度仍呈现显著的领域差异，说明安全关键感知系统需要采用信心控制的可解释性评估方法。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Confidence-Controlled XAI Auditing for Pedestrian Detection under Domain Shift",
+  "title_zh": "域转移下行人检测的信心控制可解释性审计",
+  "translation_url": "https://hjfy.top/arxiv/2610.02364"
+}

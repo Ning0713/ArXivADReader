@@ -1,0 +1,57 @@
+{
+  "abstract": "Flow-matching-based multi-view world models generate realistic videos, but are commonly restricted to fixed camera rigs. Extending them to continuously varying camera poses requires paired pose--video observations with dense pose coverage, which are costly to acquire. We introduce \\emph{SymRegFlow}, a symmetry-regularized flow-matching framework for multi-view-consistent video generation across continuous viewpoints without ground-truth novel-view RGB supervision. For each target pose, SymRegFlow geometrically warps source views into noisy anchors and combines masked dual-anchor supervision with cross-anchor denoising-output consistency to mitigate anchor-specific errors. Under an affine Gaussian surrogate, we prove that suitable consistency regularization recovers the clean-reference optimum at fixed noise levels, strictly outperforming single- and merged-anchor baselines. Experiments on Cosmos-Drive-Dreams and nuScenes demonstrate high-quality, multi-view-consistent autonomous-driving video generation: on nuScenes, SymRegFlow achieves the lowest FVD and FVMD among the evaluated baselines, reducing FVD by over 31\\% relative to the best baseline, and source-conditioned inference also attains the best FID and instance preservation.",
+  "abstract_zh": "基于流匹配的多视角世界模型能够生成真实感视频，但通常限制于固定相机设备。将其扩展到连续变化的相机姿态需要配对的姿态-视频观测，并且需要密集的姿态覆盖，这在获取上成本较高。我们提出了 extit{SymRegFlow}，一种对称正则化流匹配框架，用于在没有真实新视角RGB监督的情况下，实现跨连续视点的一致视频生成。对于每个目标姿态，SymRegFlow将源视图几何变形为噪声锚点，并结合掩蔽的双锚点监督与跨锚点去噪输出一致性，以减轻特定锚点的误差。在仿射高斯替代下，我们证明了合适的一致性正则化能够在固定噪声水平下恢复干净参考的最优解，严格优于单锚点和合并锚点的基线。在Cosmos-Drive-Dreams和nuScenes上的实验表明，SymRegFlow能够生成高质量的多视角一致的自动驾驶视频：在nuScenes上，SymRegFlow在评估的基线中实现了最低的FVD和FVMD，相较于最佳基线FVD降低超过31\\%，并且源条件推理也达到了最佳的FID和实例保留。",
+  "arxiv_id": "2610.02726",
+  "arxiv_url": "https://arxiv.org/abs/2610.02726v1",
+  "authors": [
+    "Xi Ye",
+    "Yuzhu Wang",
+    "Xiaoyang Liu",
+    "Jiayi Wang",
+    "Yangyang Xu",
+    "Ruyu Wang",
+    "Wenlin Chen",
+    "Duo Su",
+    "Jun Zhu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-02726",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-05T11:58:58.949943+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.02726v1",
+  "published_at": "2026-10-02T03:02:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.02726v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "SymRegFlow: Symmetry-Regularized Flow Matching for Video World Models",
+  "title_zh": "SymRegFlow：用于视频世界模型的对称正则化流匹配",
+  "translation_url": "https://hjfy.top/arxiv/2610.02726"
+}

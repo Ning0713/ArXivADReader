@@ -1,0 +1,48 @@
+{
+  "abstract": "Event cameras hold excellent dynamic properties, showing great potential for monocular depth estimation (MDE). However, existing methods mainly improve performance by optimizing contextual features, but still struggle with the ill-posed and nonlinear nature of direct full-depth regression. In this paper, we propose HypoDepth, the first event-image monocular depth iterative refinement framework. By introducing a discrete Depth Hypothesis Volume (DHV), we transform the depth regression problem into a constrained depth search task. Specifically, we construct a 3D cost volume between the DHV features and contextual features and perform a multi-scale correlation search to guide stable residual optimization. This lightweight cost volume enables efficient global-to-local refinement across multi-resolution. Our method outperforms existing approaches on DSEC and MVSEC with state-of-the-art results and strong zero-shot generalization. Meanwhile, our tiny model achieves an excellent balance between accuracy and efficiency, enabling real-time performance on resource-limited devices.",
+  "abstract_zh": "事件相机具有出色的动态特性，展现了在单目深度估计（MDE）中的巨大潜力。然而，现有方法主要通过优化上下文特征来提高性能，但仍然在直接全深度回归的病态和非线性特性上面临挑战。本文提出了HypoDepth，这是第一个事件图像单目深度迭代优化框架。通过引入离散深度假设体积（Depth Hypothesis Volume, DHV），我们将深度回归问题转化为一个受限的深度搜索任务。具体而言，我们在DHV特征和上下文特征之间构建了一个三维代价体积，并执行多尺度相关性搜索以引导稳定的残差优化。这个轻量级的代价体积使得在多分辨率下实现高效的全局到局部优化成为可能。我们的方法在DSEC和MVSEC数据集上超越了现有方法，取得了最先进的结果和强大的零样本泛化能力。同时，我们的小型模型在准确性和效率之间实现了出色的平衡，使其能够在资源有限的设备上实现实时性能。",
+  "arxiv_id": "2610.03439",
+  "arxiv_url": "https://arxiv.org/abs/2610.03439v1",
+  "authors": [
+    "Daikun Liu",
+    "Teng Wang",
+    "Changyin Sun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-03439",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-05T11:58:58.974816+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.03439v1",
+  "published_at": "2026-10-02T15:23:56Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.03439v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "提出一种面向事件相机单目深度估计的深度假设引导迭代优化方法，通过离散深度假设体积和多尺度代价体积提升深度预测的稳定性、精度与效率，适合作为自动驾驶感知中的深度与几何估计技术。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Depth Hypothesis Guided Iterative Refinement for Event-Image Monocular Depth Estimation",
+  "title_zh": "基于深度假设引导的事件图像单目深度估计迭代优化",
+  "translation_url": "https://hjfy.top/arxiv/2610.03439"
+}

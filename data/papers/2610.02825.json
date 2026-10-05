@@ -1,0 +1,57 @@
+{
+  "abstract": "Road geometry (e.g., crests, sags, and speed humps) and surface conditions (e.g., wet or icy pavement) affect how vehicles move, what drivers and onboard cameras observe, and how much clearance remains between vehicles. Editing these properties in a driving scene therefore requires corresponding changes in vehicle motion. Capturing these differences in a driving video requires a road edit to propagate to vehicle motion, camera viewpoint, and the clearance between vehicles. We present TerrainForge, a framework for generating road geometry-focused counterfactuals from reconstructed multi-vehicle driving episodes. A unified road model connects scene deformation with four-wheel vehicle dynamics, allowing crests, sags, speed humps, and friction changes to propagate through vehicle motion, camera viewpoint, and inter-vehicle clearance. Vehicle dynamics are evaluated against CarSim, and prescribed road geometry is verified in reconstructed Waymo scenes. Across 18 episodes, leaving surrounding vehicles on their recorded trajectories instead of recomputing their responses produces median peak differences in predicted ego-lead distance of 1.52 m for crests and 1.41 m for sags. We further simulate the ego response to 15,758 road edits across 983 braking episodes, pairing each edit with its safety outcomes relative to an unedited replay. These pairs train a first-stage screening surrogate that takes the original driving context and candidate road-edit parameters as input and predicts the resulting change in the ego's terminal gap. On held-out scenes, this prediction achieves 22-40% lower mean absolute error than predicting no change, so candidates can be screened cheaply before the full multi-vehicle rollout.",
+  "abstract_zh": "道路几何（例如，隆起、凹陷和减速带）和表面条件（例如，湿滑或结冰的路面）影响车辆的运动、驾驶员和车载摄像头的观察以及车辆之间的间隙。因此，在驾驶场景中编辑这些属性需要相应地改变车辆的运动。捕捉驾驶视频中的这些差异需要对道路进行编辑，以使其影响车辆运动、摄像头视角和车辆间的间隙。我们提出了TerrainForge，一个从重建的多车辆驾驶情节中生成以道路几何为中心的反事实的框架。一个统一的道路模型将场景变形与四轮车辆动力学连接起来，使得隆起、凹陷、减速带和摩擦变化能够通过车辆运动、摄像头视角和车辆间的间隙传播。车辆动力学与CarSim进行评估，规定的道路几何在重建的Waymo场景中得到验证。在18个情节中，保持周围车辆在其记录轨迹上而不是重新计算其响应，导致隆起的预测自我领先距离的中位峰值差为1.52米，凹陷为1.41米。我们进一步模拟了在983个制动情节中对15,758个道路编辑的自我响应，将每个编辑与其相对于未编辑重播的安全结果配对。这些配对训练了一个第一阶段筛选代理，该代理以原始驾驶上下文和候选道路编辑参数作为输入，预测自我的终端间隙的变化。在保留的场景中，这一预测的平均绝对误差比预测没有变化低22-40%，因此可以在全面的多车辆推广之前廉价筛选候选项。",
+  "arxiv_id": "2610.02825",
+  "arxiv_url": "https://arxiv.org/abs/2610.02825v1",
+  "authors": [
+    "Yang Chen",
+    "Yicheng Zhu",
+    "zhenning Li",
+    "Tao Li",
+    "Zilin Bian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-02825",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-05T11:58:58.952317+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.02825v1",
+  "published_at": "2026-10-02T05:16:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.02825v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "安全/异常",
+      "预测/规划"
+    ]
+  },
+  "title": "TerrainForge: Physics-Grounded road geometry Editing for Counterfactual Autonomous Driving",
+  "title_zh": "TerrainForge：基于物理的反事实道路几何编辑用于自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.02825"
+}

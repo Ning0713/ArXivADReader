@@ -1,6 +1,206 @@
 {
-  "generated_at": "2026-10-02T10:53:17.091295+00:00",
+  "generated_at": "2026-10-05T12:01:16.090276+00:00",
   "items": [
+    {
+      "abstract": "We present a generalized implementation of Look-Back and Look-Ahead Adaptive Model Predictive Control (LLA-MPC), a learning-free framework for real-time, rapid adaptive system identification and control. The original formulation was demonstrated only in simulation, for autonomous racing with a fixed model structure. Our implementation has modular dynamics and integrators, and we validate it on the F1TENTH platform under constrained computation and noisy state estimation. The system identifies tire parameters online by evaluating thousands of candidate models in real time on an embedded computer. Experiments with low-friction tires across changing surfaces show that LLA-MPC completes high-speed tracking tasks where a fixed nominal model fails. Code, videos, and our related work are available at: https://lla-control.github.io.",
+      "abstract_zh": "我们提出了一种广义的回顾与展望自适应模型预测控制（LLA-MPC）实现，这是一个无学习框架，用于实时、快速的自适应系统识别与控制。原始的公式仅在仿真中展示，适用于具有固定模型结构的自主赛车。我们的实现具有模块化的动力学和积分器，并在受限计算和噪声状态估计的条件下在F1TENTH平台上进行了验证。该系统通过实时评估数千个候选模型在线识别轮胎参数，运行于嵌入式计算机上。针对不同表面上的低摩擦轮胎进行的实验表明，LLA-MPC能够完成固定名义模型失败的高速跟踪任务。代码、视频及相关工作可在以下链接获取：https://lla-control.github.io。",
+      "authors": [
+        "Henry Z. Liao",
+        "Maitham F. AL-Sunni",
+        "John M. Dolan"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.03616",
+      "tags": [
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "LLA-MPC on Embedded Hardware: Rapid Adaptive Control with Thousands of Parallel Models",
+      "title_zh": "嵌入式硬件上的LLA-MPC：千个并行模型的快速自适应控制",
+      "url": "/daily/2026-10-05/#paper-2610-03616"
+    },
+    {
+      "abstract": "Editable 3D models of field-grown crops support high-throughput phenotyping and in silico breeding trials, but building them from scanned point clouds requires organ-level segmentation and fitting. Procedural generators can turn an organ-level parameter set into an analysis-suitable 3D model, but obtaining that set requires hours of manual tuning per plant or segmentation models trained on species-specific labels. We present an automated pipeline that reconstructs procedural maize models from raw 3D point clouds without manual tuning or species-specific training data. A multimodal vision-language model (VLM) annotates leaf midlines in rendered orthographic views. Deterministic geometric algorithms back-project the annotations onto the point cloud, merge them into 3D leaves by cross-view consensus, and grow the midlines to full blades on an orientation-weighted surface graph. Measured organ parameters populate a plant descriptor for a Non-Uniform Rational B-Spline (NURBS)-based procedural model generator. Each leaf surface is then refined against its scan points by differentiable NURBS fitting. The pipeline reached a median whole-plant Chamfer distance of 5.4 mm on 100 genotypically diverse field-grown maize plants from the MaizeField3D dataset. The reconstructions were closer to the scans than those of an earlier semi-automated pipeline based on manual annotations. The pipeline recovered 1,017 of 1,023 (99.4%) curated reference leaves at an intersection-over-union of at least 0.5 without using those labels as input. These results show that VLM annotations become usable organ-level measurements when downstream geometric stages can correct them. This makes automated generation of editable 3D plant assets feasible at the scale of modern phenotyping experiments.",
+      "abstract_zh": "可编辑的田间生长作物的三维模型支持高通量表型分析和计算机模拟育种试验，但从扫描的点云构建这些模型需要进行器官级分割和拟合。程序生成器可以将器官级参数集转换为适合分析的三维模型，但获取该参数集需要每株植物数小时的手动调节或基于特定物种标签训练的分割模型。我们提出了一种自动化管道，可以从原始三维点云重建程序玉米模型，而无需手动调节或特定物种的训练数据。多模态视觉-语言模型（VLM）在渲染的正交视图中标注叶片中线。确定性几何算法将标注反投影到点云上，通过交叉视图共识将其合并为三维叶片，并在加权方向的表面图上将中线生长为完整的叶片。测量的器官参数填充了基于非均匀有理B样条（NURBS）的程序模型生成器的植物描述符。然后，通过可微分的NURBS拟合对每个叶片表面进行精细化处理。该管道在MaizeField3D数据集中对100株基因型多样的田间生长玉米植物的整体植物Chamfer距离达到了5.4毫米的中位数。重建结果比早期基于手动标注的半自动化管道更接近扫描结果。该管道在没有使用这些标签作为输入的情况下，恢复了1,017片中的1,023片（99.4%）经过整理的参考叶，交并比至少为0.5。这些结果表明，当下游几何阶段能够纠正VLM标注时，这些标注变得可用作为器官级测量。这使得在现代表型实验的规模下，自动生成可编辑的三维植物资产成为可能。",
+      "authors": [
+        "Mozhgan Hadadi",
+        "Talukder Z. Jubery",
+        "Adarsh Krishnamurthy",
+        "Baskar Ganapathysubramanian"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.03468",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "LiDAR/点云"
+      ],
+      "title": "A Vision-Language Model (VLM)-based Pipeline for End-to-End Procedural Modeling of Field-Grown Maize from Point Clouds",
+      "title_zh": "基于视觉-语言模型（VLM）的端到端田间生长玉米的程序建模管道",
+      "url": "/daily/2026-10-05/#paper-2610-03468"
+    },
+    {
+      "abstract": "Event cameras hold excellent dynamic properties, showing great potential for monocular depth estimation (MDE). However, existing methods mainly improve performance by optimizing contextual features, but still struggle with the ill-posed and nonlinear nature of direct full-depth regression. In this paper, we propose HypoDepth, the first event-image monocular depth iterative refinement framework. By introducing a discrete Depth Hypothesis Volume (DHV), we transform the depth regression problem into a constrained depth search task. Specifically, we construct a 3D cost volume between the DHV features and contextual features and perform a multi-scale correlation search to guide stable residual optimization. This lightweight cost volume enables efficient global-to-local refinement across multi-resolution. Our method outperforms existing approaches on DSEC and MVSEC with state-of-the-art results and strong zero-shot generalization. Meanwhile, our tiny model achieves an excellent balance between accuracy and efficiency, enabling real-time performance on resource-limited devices.",
+      "abstract_zh": "事件相机具有出色的动态特性，展现了在单目深度估计（MDE）中的巨大潜力。然而，现有方法主要通过优化上下文特征来提高性能，但仍然在直接全深度回归的病态和非线性特性上面临挑战。本文提出了HypoDepth，这是第一个事件图像单目深度迭代优化框架。通过引入离散深度假设体积（Depth Hypothesis Volume, DHV），我们将深度回归问题转化为一个受限的深度搜索任务。具体而言，我们在DHV特征和上下文特征之间构建了一个三维代价体积，并执行多尺度相关性搜索以引导稳定的残差优化。这个轻量级的代价体积使得在多分辨率下实现高效的全局到局部优化成为可能。我们的方法在DSEC和MVSEC数据集上超越了现有方法，取得了最先进的结果和强大的零样本泛化能力。同时，我们的小型模型在准确性和效率之间实现了出色的平衡，使其能够在资源有限的设备上实现实时性能。",
+      "authors": [
+        "Daikun Liu",
+        "Teng Wang",
+        "Changyin Sun"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.03439",
+      "tags": [
+        "深度/几何",
+        "感知"
+      ],
+      "title": "Depth Hypothesis Guided Iterative Refinement for Event-Image Monocular Depth Estimation",
+      "title_zh": "基于深度假设引导的事件图像单目深度估计迭代优化",
+      "url": "/daily/2026-10-05/#paper-2610-03439"
+    },
+    {
+      "abstract": "Designing effective heuristics for diverse combinatorial optimization problems requires substantial expertise and repeated search. Large language models (LLMs) automate heuristic generation and refinement, but heuristic search typically depends on evaluation feedback from the problem being optimized. Generalizing to new problem definitions using only source-task feedback therefore remains a central challenge. We introduce MECo, an LLM-driven multi-task evolutionary framework for zero-shot cross-problem generalization. MECo maintains task-conditioned heuristic populations and uses a transfer gap based on cross-task population performance to guide their interactions. These interactions enable the transfer and recombination of heuristics. A complementary selection criterion then constructs a compact heuristic set by rewarding each member's additional coverage of source combinations. The selected set is applied to target problems without further search or adaptation. Experiments on 32 problem variants across vehicle routing (VRP) and flexible job-shop scheduling (FJSP) show that MECo achieves the lowest mean costs compared with eight automated heuristic design (AHD) baselines under the same budgets. On out-of-domain problems, it outperforms the strongest baseline in each family. Moreover, integrating the framework of MECo with different AHD methods improves their ID and OOD performance in both families, supporting its effectiveness across different methods.",
+      "abstract_zh": "为多样的组合优化问题设计有效的启发式方法需要大量的专业知识和反复的搜索。大型语言模型（LLMs）能够自动化启发式生成和优化，但启发式搜索通常依赖于被优化问题的评估反馈。因此，仅依靠源任务反馈对新问题定义进行泛化仍然是一个核心挑战。我们提出了MECo，一个基于LLM的多任务进化框架，用于零-shot跨问题泛化。MECo维护任务条件的启发式种群，并利用基于跨任务种群表现的转移差距来指导它们的交互。这些交互使得启发式的转移和重组成为可能。一个互补的选择标准通过奖励每个成员对源组合的额外覆盖来构建一个紧凑的启发式集合。所选集合在没有进一步搜索或适应的情况下应用于目标问题。在车辆路径规划（VRP）和灵活作业车间调度（FJSP）上的32个问题变体实验表明，MECo在相同预算下实现了最低的平均成本，相较于八个自动化启发式设计（AHD）基线。在域外问题上，它在每个家族中超越了最强基线。此外，将MECo框架与不同的AHD方法结合使用，提高了这两种家族中的ID和OOD性能，支持了其在不同方法中的有效性。",
+      "authors": [
+        "Zhouliang Xie",
+        "Changliang Zhou",
+        "Genghui Li",
+        "Zhenkun Wang"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.03316",
+      "tags": [
+        "预测/规划"
+      ],
+      "title": "Multi-Task Evolution for Zero-Shot Cross-Problem Generalization using LLMs",
+      "title_zh": "基于大型语言模型的零-shot跨问题泛化的多任务进化",
+      "url": "/daily/2026-10-05/#paper-2610-03316"
+    },
+    {
+      "abstract": "Scalable driving simulators typically execute vehicle commands using prescribed behavioral or kinematic rules, overlooking the physics of tire-road interfaces, thereby limiting their ability to capture how adverse road and environmental conditions alter vehicle execution and propagate through traffic. To address this limitation, we present SceneFactory-3D, a GPU-batched, physics-grounded multi-agent driving simulator. Vehicles execute acceleration and steering commands via suspension- and friction-limited forces evaluated at each wheel-contact point. Spatially varying friction, per-world 3D heightfields, gravity, and rigid contact consistently govern wheel motion and chassis collisions. Per-world terrain isolation and GPU batching enable SceneFactory-3D to run matched physical counterfactuals in parallel: traffic scenario setup and vehicle controllers remain fixed while only the road condition changes, enabling the resulting closed-loop effects to be evaluated across parallel worlds. To demonstrate the advantage of the SceneFactory-3D-enabled counterfactual evaluation, we conduct an empirical study on vehicle controllers' sensitivity to road conditions. We study three learned-policy families on 1,024 matched 12-vehicle worlds per condition, and two classical planners on a shared 32-world subset, across 21 friction and grade conditions. When friction drops from 1.0 to 0.18, the share of vehicles that clear the work zone safely falls by 6 to 90 percentage points across learned policies (18-19 for classical planners), and near-collision situations become more frequent for every learned policy. Code: https://github.com/SmallWorldLab/SceneFactory_3D",
+      "abstract_zh": "可扩展的驾驶模拟器通常使用规定的行为或运动学规则执行车辆指令，忽视了轮胎与路面接口的物理特性，从而限制了它们捕捉不利路况和环境条件如何改变车辆执行并在交通中传播的能力。为了解决这一局限性，我们提出了SceneFactory-3D，这是一种基于GPU批处理的物理基础多智能体驾驶模拟器。车辆通过在每个轮接触点评估的悬挂和摩擦限制力执行加速和转向指令。空间变化的摩擦、每个世界的3D高度场、重力和刚性接触始终支配着轮子运动和底盘碰撞。每个世界的地形隔离和GPU批处理使得SceneFactory-3D能够并行运行匹配的物理反事实：交通场景设置和车辆控制器保持不变，而只有路况发生变化，从而使得结果的闭环效应能够在平行世界中进行评估。为了展示SceneFactory-3D启用的反事实评估的优势，我们对车辆控制器对路况的敏感性进行了实证研究。我们在每种条件下研究了三种学习策略家族在1,024个匹配的12辆车世界中的表现，以及在共享的32个世界子集上研究了两种经典规划器，涵盖了21种摩擦和坡度条件。当摩擦从1.0降至0.18时，安全通过施工区域的车辆比例在学习策略中下降了6到90个百分点（经典规划器为18-19个百分点），而每种学习策略的近碰撞情况变得更加频繁。代码：https://github.com/SmallWorldLab/SceneFactory_3D",
+      "authors": [
+        "Yicheng Zhu",
+        "Linfeng Tian",
+        "Tianmu Zhao",
+        "Yang Chen",
+        "Fan Zuo",
+        "Tao Li",
+        "Zilin Bian"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.02874",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "预测/规划"
+      ],
+      "title": "SceneFactory-3D: Lifting 2D Traffic Scenes into 3D Physical Counterfactuals for Scalable Physically Grounded Safety Evaluation",
+      "title_zh": "SceneFactory-3D：将2D交通场景提升为3D物理反事实，以实现可扩展的物理基础安全评估",
+      "url": "/daily/2026-10-05/#paper-2610-02874"
+    },
+    {
+      "abstract": "Road geometry (e.g., crests, sags, and speed humps) and surface conditions (e.g., wet or icy pavement) affect how vehicles move, what drivers and onboard cameras observe, and how much clearance remains between vehicles. Editing these properties in a driving scene therefore requires corresponding changes in vehicle motion. Capturing these differences in a driving video requires a road edit to propagate to vehicle motion, camera viewpoint, and the clearance between vehicles. We present TerrainForge, a framework for generating road geometry-focused counterfactuals from reconstructed multi-vehicle driving episodes. A unified road model connects scene deformation with four-wheel vehicle dynamics, allowing crests, sags, speed humps, and friction changes to propagate through vehicle motion, camera viewpoint, and inter-vehicle clearance. Vehicle dynamics are evaluated against CarSim, and prescribed road geometry is verified in reconstructed Waymo scenes. Across 18 episodes, leaving surrounding vehicles on their recorded trajectories instead of recomputing their responses produces median peak differences in predicted ego-lead distance of 1.52 m for crests and 1.41 m for sags. We further simulate the ego response to 15,758 road edits across 983 braking episodes, pairing each edit with its safety outcomes relative to an unedited replay. These pairs train a first-stage screening surrogate that takes the original driving context and candidate road-edit parameters as input and predicts the resulting change in the ego's terminal gap. On held-out scenes, this prediction achieves 22-40% lower mean absolute error than predicting no change, so candidates can be screened cheaply before the full multi-vehicle rollout.",
+      "abstract_zh": "道路几何（例如，隆起、凹陷和减速带）和表面条件（例如，湿滑或结冰的路面）影响车辆的运动、驾驶员和车载摄像头的观察以及车辆之间的间隙。因此，在驾驶场景中编辑这些属性需要相应地改变车辆的运动。捕捉驾驶视频中的这些差异需要对道路进行编辑，以使其影响车辆运动、摄像头视角和车辆间的间隙。我们提出了TerrainForge，一个从重建的多车辆驾驶情节中生成以道路几何为中心的反事实的框架。一个统一的道路模型将场景变形与四轮车辆动力学连接起来，使得隆起、凹陷、减速带和摩擦变化能够通过车辆运动、摄像头视角和车辆间的间隙传播。车辆动力学与CarSim进行评估，规定的道路几何在重建的Waymo场景中得到验证。在18个情节中，保持周围车辆在其记录轨迹上而不是重新计算其响应，导致隆起的预测自我领先距离的中位峰值差为1.52米，凹陷为1.41米。我们进一步模拟了在983个制动情节中对15,758个道路编辑的自我响应，将每个编辑与其相对于未编辑重播的安全结果配对。这些配对训练了一个第一阶段筛选代理，该代理以原始驾驶上下文和候选道路编辑参数作为输入，预测自我的终端间隙的变化。在保留的场景中，这一预测的平均绝对误差比预测没有变化低22-40%，因此可以在全面的多车辆推广之前廉价筛选候选项。",
+      "authors": [
+        "Yang Chen",
+        "Yicheng Zhu",
+        "zhenning Li",
+        "Tao Li",
+        "Zilin Bian"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.02825",
+      "tags": [
+        "深度/几何",
+        "安全/异常",
+        "预测/规划"
+      ],
+      "title": "TerrainForge: Physics-Grounded road geometry Editing for Counterfactual Autonomous Driving",
+      "title_zh": "TerrainForge：基于物理的反事实道路几何编辑用于自主驾驶",
+      "url": "/daily/2026-10-05/#paper-2610-02825"
+    },
+    {
+      "abstract": "Monitoring planned driving trajectories requires accurately estimating the collision likelihood with actors whose motion is itself impacted by the ego motion. Existing classical approaches are often limited by the quality of their forecasting model. Vision-language models (VLMs) have shown promise in reasoning about the consequences of high-level actions, yet their approximate predictions are unsuitable for safety-critical applications such as autonomous driving. Conformal prediction (CP) has emerged as a data-driven framework for quantifying the uncertainty of black-box model predictions. We propose Split Label-Localized Conformal Prediction (SLLCP), a post-hoc calibration layer over frozen VLMs that transforms their unreliable predictions into probabilistically calibrated safety prediction sets. We consider how the ability to estimate safety can depend on the observed driving scene and introduce a localized procedure that upweights relevant past experience when calculating uncertainty thresholds. We provide label-conditional finite-sample distribution-free coverage under exchangeability. Evaluated over 15k CARLA trajectories from unseen scenarios, SLLCP correctly flags 89.6% of collision-causing trajectories with a Qwen backbone and 88.4% with a Cosmos backbone, while the base VLMs only flagged 4.6% and 39.1% of the collision-causing trajectories, respectively. These results indicate that local, label-conditional calibration can reduce missed unsafe trajectories.",
+      "abstract_zh": "监测规划的驾驶轨迹需要准确估计与运动体发生碰撞的可能性，而运动体的运动又受到自我运动的影响。现有的经典方法往往受到其预测模型质量的限制。视觉-语言模型（VLMs）在推理高层次动作的后果方面显示出潜力，但其近似预测不适合用于安全关键的应用，如自动驾驶。一致性预测（CP）作为一种数据驱动框架，已被提出用于量化黑箱模型预测的不确定性。我们提出了分裂标签局部一致性预测（SLLCP），这是一种在冻结的VLMs上进行后处理校准的层，将其不可靠的预测转化为概率校准的安全预测集。我们考虑到安全估计的能力可能依赖于观察到的驾驶场景，并引入了一种局部程序，在计算不确定性阈值时加权相关的过去经验。我们在可交换性条件下提供了标签条件的有限样本分布无关覆盖。在对来自未见场景的15,000条CARLA轨迹进行评估时，SLLCP正确标记了89.6%的导致碰撞的轨迹（使用Qwen骨干网络）和88.4%的轨迹（使用Cosmos骨干网络），而基础的VLMs仅标记了4.6%和39.1%的导致碰撞的轨迹。这些结果表明，局部的标签条件校准可以减少漏标不安全轨迹的情况。",
+      "authors": [
+        "Luís Marques",
+        "Rong Fang",
+        "Disha Kamale",
+        "Dmitry Berenson"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.02765",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "安全/异常"
+      ],
+      "title": "Localized Conformal Safety Monitoring with Vision-Language Models for Autonomous Driving",
+      "title_zh": "基于视觉-语言模型的局部一致性安全监测在自动驾驶中的应用",
+      "url": "/daily/2026-10-05/#paper-2610-02765"
+    },
+    {
+      "abstract": "Flow-matching-based multi-view world models generate realistic videos, but are commonly restricted to fixed camera rigs. Extending them to continuously varying camera poses requires paired pose--video observations with dense pose coverage, which are costly to acquire. We introduce \\emph{SymRegFlow}, a symmetry-regularized flow-matching framework for multi-view-consistent video generation across continuous viewpoints without ground-truth novel-view RGB supervision. For each target pose, SymRegFlow geometrically warps source views into noisy anchors and combines masked dual-anchor supervision with cross-anchor denoising-output consistency to mitigate anchor-specific errors. Under an affine Gaussian surrogate, we prove that suitable consistency regularization recovers the clean-reference optimum at fixed noise levels, strictly outperforming single- and merged-anchor baselines. Experiments on Cosmos-Drive-Dreams and nuScenes demonstrate high-quality, multi-view-consistent autonomous-driving video generation: on nuScenes, SymRegFlow achieves the lowest FVD and FVMD among the evaluated baselines, reducing FVD by over 31\\% relative to the best baseline, and source-conditioned inference also attains the best FID and instance preservation.",
+      "abstract_zh": "基于流匹配的多视角世界模型能够生成真实感视频，但通常限制于固定相机设备。将其扩展到连续变化的相机姿态需要配对的姿态-视频观测，并且需要密集的姿态覆盖，这在获取上成本较高。我们提出了 extit{SymRegFlow}，一种对称正则化流匹配框架，用于在没有真实新视角RGB监督的情况下，实现跨连续视点的一致视频生成。对于每个目标姿态，SymRegFlow将源视图几何变形为噪声锚点，并结合掩蔽的双锚点监督与跨锚点去噪输出一致性，以减轻特定锚点的误差。在仿射高斯替代下，我们证明了合适的一致性正则化能够在固定噪声水平下恢复干净参考的最优解，严格优于单锚点和合并锚点的基线。在Cosmos-Drive-Dreams和nuScenes上的实验表明，SymRegFlow能够生成高质量的多视角一致的自动驾驶视频：在nuScenes上，SymRegFlow在评估的基线中实现了最低的FVD和FVMD，相较于最佳基线FVD降低超过31\\%，并且源条件推理也达到了最佳的FID和实例保留。",
+      "authors": [
+        "Xi Ye",
+        "Yuzhu Wang",
+        "Xiaoyang Liu",
+        "Jiayi Wang",
+        "Yangyang Xu",
+        "Ruyu Wang",
+        "Wenlin Chen",
+        "Duo Su",
+        "Jun Zhu"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.02726",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成"
+      ],
+      "title": "SymRegFlow: Symmetry-Regularized Flow Matching for Video World Models",
+      "title_zh": "SymRegFlow：用于视频世界模型的对称正则化流匹配",
+      "url": "/daily/2026-10-05/#paper-2610-02726"
+    },
+    {
+      "abstract": "Large-scale vectorized HD maps provide structured road information that is essential for perception, localization, and planning in autonomous driving. Constructing such maps requires aggregating noisy, fragmented, and overlapping local predictions collected along a vehicle trajectory into a coherent global map. Existing aggregation methods typically rely on hand-crafted rules for fragment association and refinement. However, a fixed set of thresholds cannot effectively handle variations in road structures and prediction errors, often requiring detector-specific tuning or manual adjustment. To address this limitation, we propose MapMergeLLM, a data-driven framework that formulates vectorized map aggregation as conditional sequence generation with a large language model. Given serialized local vectorized maps, our model directly predicts the aggregated global map polylines. To reduce dependence on any particular upstream detector, we train the model on synthetic local maps generated from clean vector maps using corruptions that simulate representative prediction errors. We further introduce a coordinate tokenizer with geometry-aware pretraining to precisely represent map coordinates. In addition, we propose a line-level association loss that explicitly supervises correspondences between local observations of the same map element. Experiments on Argoverse2 and nuScenes using multiple recent upstream detectors demonstrate that MapMergeLLM substantially outperforms heuristic and optimization-based aggregation baselines without detector-specific retraining.",
+      "abstract_zh": "大规模向量化高清地图提供了结构化的道路信息，这对于自动驾驶中的感知、定位和规划至关重要。构建这样的地图需要将沿车辆轨迹收集的嘈杂、碎片化和重叠的局部预测聚合成一个连贯的全球地图。现有的聚合方法通常依赖于手工制定的规则来进行碎片关联和精炼。然而，固定的阈值集无法有效处理道路结构和预测误差的变化，通常需要特定检测器的调优或手动调整。为了解决这一限制，我们提出了MapMergeLLM，这是一个数据驱动的框架，将向量化地图聚合公式化为使用大型语言模型的条件序列生成。在给定序列化的局部向量化地图的情况下，我们的模型直接预测聚合的全球地图多边形线。为了减少对任何特定上游检测器的依赖，我们在从干净的向量地图生成的合成局部地图上训练模型，使用模拟代表性预测误差的损坏。我们进一步引入了一种具有几何感知预训练的坐标标记器，以精确表示地图坐标。此外，我们提出了一种线级关联损失，明确监督同一地图元素的局部观测之间的对应关系。在使用多个最新上游检测器的Argoverse2和nuScenes上的实验表明，MapMergeLLM在没有特定检测器重新训练的情况下，显著优于启发式和基于优化的聚合基线。",
+      "authors": [
+        "Ziwei Li",
+        "Yi-Tang Chen",
+        "Xiaoqi Wang",
+        "Wenbin He",
+        "Han-Wei Shen",
+        "Liu Ren"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.02513",
+      "tags": [
+        "地图/定位",
+        "预测/规划",
+        "感知"
+      ],
+      "title": "From Fragments to Global Maps: Learning Vectorized Map Aggregation with Large Language Models",
+      "title_zh": "从碎片到全球地图：利用大型语言模型学习向量化地图聚合",
+      "url": "/daily/2026-10-05/#paper-2610-02513"
+    },
+    {
+      "abstract": "Explainability is increasingly required for perception models in intelligent vehicles, yet whether explanations remain faithful under driving domain shift is still poorly understood. This work audits post-hoc explanations of a fixed YOLOv8s pedestrian detector across PIE and JAAD using ROI-based D-Deletion, frozen confidence terciles, rank-based tests, bootstrap intervals, and Holm correction. The audit shows that deletion-based faithfulness is strongly coupled to detection strength at explanation time, with Spearman correlations between 0.70 and 0.82 for D-RISE, making naive confidence-stratified comparisons unreliable. After controlling for detection strength within fixed f0 bins, D-RISE faithfulness remains domain-dependent in the central f0 range, with PIE showing higher D-Deletion than JAAD and Holm-adjusted significance. A non-perturbative EigenCAM baseline is less faithful than D-RISE but also exhibits score coupling, suggesting that the effect is not specific to D-RISE and is related to the deletion-based evaluation setup. These results motivate confidence-controlled XAI audits for safety-critical perception under domain shift.",
+      "abstract_zh": "在智能车辆的感知模型中，解释性越来越受到重视，但在驾驶领域转移下，解释是否仍然保持真实的情况仍然不甚了解。本研究对固定的YOLOv8s行人检测器在PIE和JAAD数据集上的事后解释进行了审计，采用了基于ROI的D-Deletion、冻结的置信度三分位数、基于排名的测试、引导区间和Holm校正。审计结果表明，基于删除的真实度与解释时的检测强度密切相关，D-RISE的斯皮尔曼相关系数在0.70到0.82之间，使得简单的置信度分层比较不可靠。在固定的f0区间内控制检测强度后，D-RISE的真实度在中央f0范围内仍然依赖于领域，PIE的D-Deletion高于JAAD，并且经过Holm调整的显著性更强。非扰动的EigenCAM基线的真实度低于D-RISE，但也表现出得分耦合，表明这一效应并非特定于D-RISE，而与基于删除的评估设置有关。这些结果促使我们对在领域转移下安全关键感知进行信心控制的可解释性审计。",
+      "authors": [
+        "Ruben Dario Florez-Zela"
+      ],
+      "date": "2026-10-05",
+      "id": "2610.02364",
+      "tags": [
+        "感知",
+        "安全/异常"
+      ],
+      "title": "Confidence-Controlled XAI Auditing for Pedestrian Detection under Domain Shift",
+      "title_zh": "域转移下行人检测的信心控制可解释性审计",
+      "url": "/daily/2026-10-05/#paper-2610-02364"
+    },
     {
       "abstract": "Adverse conditions such as rain, snow, fog, and dust remain challenging for camera-based perception in autonomous driving. We study multi-class weather recognition from street-view images under domain shift, where most available training data come from non-street-view sources that differ markedly from real driving scenes. We propose Weather-Aware Adversarial Discriminative Domain Adaptation (WA-ADDA), which conditions the domain discriminator on predicted weather to promote features that are both domain-invariant and weather-sensitive. We also assemble a multi-dataset benchmark by unifying diverse non-street-view weather collections as sources and real street-view images as targets, and define a standardized evaluation protocol with macro accuracy as the primary metric. Across backbones (ResNet-50, EfficientNet, VGG, DenseNet), WA-ADDA consistently improves street-view performance and yields strong per-class recalls in challenging conditions while preserving clear-weather accuracy. These findings highlight the feasibility of domain-adapted weather recognition and the value of our benchmark for advancing robust, on-board perception.",
       "abstract_zh": "恶劣天气条件，如雨、雪、雾和尘埃，仍然对自动驾驶中的基于摄像头的感知构成挑战。我们研究了在领域转移下的街景图像的多类别天气识别，其中大多数可用的训练数据来自与真实驾驶场景显著不同的非街景来源。我们提出了天气感知对抗性判别领域适应（Weather-Aware Adversarial Discriminative Domain Adaptation，WA-ADDA），该方法将领域判别器的条件设置为预测的天气，以促进特征的领域不变性和天气敏感性。我们还通过将多样的非街景天气数据集统一为来源，并将真实街景图像作为目标，构建了一个多数据集基准，并定义了以宏观准确率为主要指标的标准化评估协议。在不同的骨干网络（ResNet-50、EfficientNet、VGG、DenseNet）中，WA-ADDA 一致地提高了街景性能，并在恶劣条件下实现了强大的每类召回率，同时保持了良好的晴天准确率。这些发现突显了领域适应天气识别的可行性，以及我们的基准在推动强健的车载感知方面的价值。",

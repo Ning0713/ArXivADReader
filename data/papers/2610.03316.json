@@ -1,0 +1,46 @@
+{
+  "abstract": "Designing effective heuristics for diverse combinatorial optimization problems requires substantial expertise and repeated search. Large language models (LLMs) automate heuristic generation and refinement, but heuristic search typically depends on evaluation feedback from the problem being optimized. Generalizing to new problem definitions using only source-task feedback therefore remains a central challenge. We introduce MECo, an LLM-driven multi-task evolutionary framework for zero-shot cross-problem generalization. MECo maintains task-conditioned heuristic populations and uses a transfer gap based on cross-task population performance to guide their interactions. These interactions enable the transfer and recombination of heuristics. A complementary selection criterion then constructs a compact heuristic set by rewarding each member's additional coverage of source combinations. The selected set is applied to target problems without further search or adaptation. Experiments on 32 problem variants across vehicle routing (VRP) and flexible job-shop scheduling (FJSP) show that MECo achieves the lowest mean costs compared with eight automated heuristic design (AHD) baselines under the same budgets. On out-of-domain problems, it outperforms the strongest baseline in each family. Moreover, integrating the framework of MECo with different AHD methods improves their ID and OOD performance in both families, supporting its effectiveness across different methods.",
+  "abstract_zh": "为多样的组合优化问题设计有效的启发式方法需要大量的专业知识和反复的搜索。大型语言模型（LLMs）能够自动化启发式生成和优化，但启发式搜索通常依赖于被优化问题的评估反馈。因此，仅依靠源任务反馈对新问题定义进行泛化仍然是一个核心挑战。我们提出了MECo，一个基于LLM的多任务进化框架，用于零-shot跨问题泛化。MECo维护任务条件的启发式种群，并利用基于跨任务种群表现的转移差距来指导它们的交互。这些交互使得启发式的转移和重组成为可能。一个互补的选择标准通过奖励每个成员对源组合的额外覆盖来构建一个紧凑的启发式集合。所选集合在没有进一步搜索或适应的情况下应用于目标问题。在车辆路径规划（VRP）和灵活作业车间调度（FJSP）上的32个问题变体实验表明，MECo在相同预算下实现了最低的平均成本，相较于八个自动化启发式设计（AHD）基线。在域外问题上，它在每个家族中超越了最强基线。此外，将MECo框架与不同的AHD方法结合使用，提高了这两种家族中的ID和OOD性能，支持了其在不同方法中的有效性。",
+  "arxiv_id": "2610.03316",
+  "arxiv_url": "https://arxiv.org/abs/2610.03316v1",
+  "authors": [
+    "Zhouliang Xie",
+    "Changliang Zhou",
+    "Genghui Li",
+    "Zhenkun Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-03316",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-05T11:58:59.034152+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.03316v1",
+  "published_at": "2026-10-02T13:53:34Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.03316v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "提出MECo多任务进化框架，利用大型语言模型生成、迁移和重组组合优化启发式方法，在车辆路径规划和柔性作业车间调度中实现零样本跨问题泛化，并提升域内外性能。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Multi-Task Evolution for Zero-Shot Cross-Problem Generalization using LLMs",
+  "title_zh": "基于大型语言模型的零-shot跨问题泛化的多任务进化",
+  "translation_url": "https://hjfy.top/arxiv/2610.03316"
+}

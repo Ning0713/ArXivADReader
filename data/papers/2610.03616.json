@@ -1,0 +1,48 @@
+{
+  "abstract": "We present a generalized implementation of Look-Back and Look-Ahead Adaptive Model Predictive Control (LLA-MPC), a learning-free framework for real-time, rapid adaptive system identification and control. The original formulation was demonstrated only in simulation, for autonomous racing with a fixed model structure. Our implementation has modular dynamics and integrators, and we validate it on the F1TENTH platform under constrained computation and noisy state estimation. The system identifies tire parameters online by evaluating thousands of candidate models in real time on an embedded computer. Experiments with low-friction tires across changing surfaces show that LLA-MPC completes high-speed tracking tasks where a fixed nominal model fails. Code, videos, and our related work are available at: https://lla-control.github.io.",
+  "abstract_zh": "我们提出了一种广义的回顾与展望自适应模型预测控制（LLA-MPC）实现，这是一个无学习框架，用于实时、快速的自适应系统识别与控制。原始的公式仅在仿真中展示，适用于具有固定模型结构的自主赛车。我们的实现具有模块化的动力学和积分器，并在受限计算和噪声状态估计的条件下在F1TENTH平台上进行了验证。该系统通过实时评估数千个候选模型在线识别轮胎参数，运行于嵌入式计算机上。针对不同表面上的低摩擦轮胎进行的实验表明，LLA-MPC能够完成固定名义模型失败的高速跟踪任务。代码、视频及相关工作可在以下链接获取：https://lla-control.github.io。",
+  "arxiv_id": "2610.03616",
+  "arxiv_url": "https://arxiv.org/abs/2610.03616v1",
+  "authors": [
+    "Henry Z. Liao",
+    "Maitham F. AL-Sunni",
+    "John M. Dolan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-05#paper-2610-03616",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-05T11:58:58.937482+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.03616v1",
+  "published_at": "2026-10-02T17:13:34Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-10-05"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.03616v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-05"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "LLA-MPC on Embedded Hardware: Rapid Adaptive Control with Thousands of Parallel Models",
+  "title_zh": "嵌入式硬件上的LLA-MPC：千个并行模型的快速自适应控制",
+  "translation_url": "https://hjfy.top/arxiv/2610.03616"
+}
