@@ -1,0 +1,58 @@
+{
+  "abstract": "This paper reports on the challenges encountered and lessons learned during the development and deployment of a flexible multi-sensor platform for autonomous driving research. It aims to serve as a reference for researchers developing new multi-sensor systems. As the need for reliable, diverse datasets increases, novel environments and sensing configurations are essential to tackle real-world operational challenges. Consequently, many research groups create custom multi-sensory data collection platforms, where fundamental issues, such as mechanical design, sensor calibration, power management, and time synchronization, arise regardless of sensor types. We reflect on these challenges and share key insights to guide future platform designs, enhancing reproducibility and robustness in autonomous vehicle testing. We also summarize the mitigation strategies we adopted, for instance, system-wide time synchronization using GNSS timing and NTP protocols, custom calibration routines for different sensor configurations, and design practices to improve reliability and data integrity during field deployments.",
+  "abstract_zh": "本文报告了在开发和部署灵活的多传感器平台用于自动驾驶研究过程中遇到的挑战和获得的经验教训。旨在为开发新多传感器系统的研究人员提供参考。随着对可靠、多样化数据集需求的增加，新颖的环境和传感配置对于应对现实世界的操作挑战至关重要。因此，许多研究小组创建了定制的多传感器数据采集平台，其中无论传感器类型如何，都会出现机械设计、传感器校准、电源管理和时间同步等基本问题。我们反思了这些挑战，并分享了关键见解，以指导未来平台设计，增强自动驾驶车辆测试的可重复性和稳健性。我们还总结了所采用的缓解策略，例如，使用GNSS时间同步和NTP协议进行系统范围的时间同步，为不同传感器配置定制校准程序，以及在现场部署中改善可靠性和数据完整性的设计实践。",
+  "arxiv_id": "2610.05604",
+  "arxiv_url": "https://arxiv.org/abs/2610.05604v1",
+  "authors": [
+    "Paulo Ricardo Marques de Araujo",
+    "Eslam Mounier",
+    "Qamar Bader",
+    "Emma Dawson",
+    "Aboelmagd Noureldin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-05604",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.269267+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.05604v1",
+  "published_at": "2026-10-04T23:15:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicle",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "multi-sensor"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.05604v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "多传感器融合"
+    ]
+  },
+  "title": "Building A Multi-Sensor Platform For Autonomous Driving Research: Challenges and Lessons Learned",
+  "title_zh": "构建用于自动驾驶研究的多传感器平台：挑战与经验教训",
+  "translation_url": "https://hjfy.top/arxiv/2610.05604"
+}

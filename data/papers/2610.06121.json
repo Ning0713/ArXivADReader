@@ -1,0 +1,57 @@
+{
+  "abstract": "Adverse weather and poor illumination remain major challenges for robust ego-trajectory planning in mobile autonomy. 4D radar offers reliable sensing under adverse conditions and direct radial-velocity measurements. However, sensing robustness does not necessarily translate into robust downstream planning, while existing 4D radar benchmarks focus primarily on perception rather than trajectory planning. We present Radar2Plan, a modular benchmark for open-loop ego-trajectory planning using real-world 4D radar data. Radar2Plan connects sensor encoders, scene representations, and planning heads through common interfaces, enabling controlled comparisons between different sensor and planner configurations. Using DSERT-RoLL and MAN TruckScenes, we evaluated seven combinations of camera, 4D radar, and LiDAR in four representative planning baselines and 12 weather and illumination conditions under a unified protocol. To our knowledge, Radar2Plan is the first benchmark dedicated to evaluating real-world 4D radars for autonomous driving planning. Experiments show that 4D radar alone supports competitive ego-trajectory planning and robust performance under adverse conditions. Sensor-configuration comparisons further demonstrate its complementary value to other modalities, while revealing dependencies on sensor combination and planning architecture. The modular design also supports additional datasets, sensing modalities, and planners, providing a flexible foundation for future research on radar-based autonomous driving planning.",
+  "abstract_zh": "恶劣天气和光照不足仍然是移动自主系统中稳健自我轨迹规划的主要挑战。4D雷达在不利条件下提供可靠的感知和直接的径向速度测量。然而，感知的稳健性并不一定能转化为下游规划的稳健性，而现有的4D雷达基准主要集中在感知而非轨迹规划上。我们提出了Radar2Plan，这是一个基于真实世界4D雷达数据的开放环路自我轨迹规划的模块化基准。Radar2Plan通过公共接口连接传感器编码器、场景表示和规划头，能够在不同传感器和规划器配置之间进行受控比较。使用DSERT-RoLL和MAN TruckScenes，我们在统一协议下评估了七种相机、4D雷达和激光雷达的组合，涵盖四个代表性的规划基线和12种天气及光照条件。根据我们的了解，Radar2Plan是第一个专门用于评估真实世界4D雷达在自动驾驶规划中表现的基准。实验表明，单独使用4D雷达支持竞争性的自我轨迹规划，并在不利条件下表现稳健。传感器配置的比较进一步展示了其对其他模态的互补价值，同时揭示了对传感器组合和规划架构的依赖。模块化设计还支持额外的数据集、感知模态和规划器，为未来基于雷达的自动驾驶规划研究提供了灵活的基础。",
+  "arxiv_id": "2610.06121",
+  "arxiv_url": "https://arxiv.org/abs/2610.06121v1",
+  "authors": [
+    "Ling Yao",
+    "Yichun Xiao",
+    "Jin Jin",
+    "Yihan Zhang",
+    "Fangqiang Ding"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-06121",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.287053+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.06121v1",
+  "published_at": "2026-10-05T10:52:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "4d radar",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.06121v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "Radar2Plan: Benchmarking 4D Radar for End-to-End Open-Loop Ego-Trajectory Planning",
+  "title_zh": "Radar2Plan：基于4D雷达的端到端开放环路自我轨迹规划基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2610.06121"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Tracking the 6DoF pose of a moving rigid object is fundamental to robotics and autonomous driving, but existing trackers assume that object appearance is stable across a sequence, an assumption that breaks down on reflective surfaces whose appearance changes as they mirror the environment. We introduce a light field based reflection-robust 6DoF tracker that turns this apparent nuisance into a pose cue. Per frame, our method recovers depth robustly against reflections, back-projects it into a point cloud, and estimates surface normals. It then decomposes the object's view-dependent appearance into a diffuse albedo and the environment map it reflects, resulting in a relightable surface light field. Starting from a coarse initialization, we relight it by the recovered environment map and optimize the pose on the photometric loss. Because a moving object mirrors new parts of the scene, the environment map fills in as the sequence proceeds, sharpening this signal over time. To evaluate this approach, we introduce a light field tracking dataset re-rendered from a robotic manipulation benchmark at four controlled reflectivity levels, each paired with simulated depth that reproduces how consumer RGB-D sensors fail on shiny surfaces. Additionally, we evaluate on two captured light field sequences. Our method trails the strongest baselines on diffuse objects and is the only one that holds its accuracy on fully reflective objects, where every baseline degrades.",
+  "abstract_zh": "跟踪移动刚性物体的6自由度姿态是机器人技术和自动驾驶的基础，但现有的跟踪器假设物体外观在序列中是稳定的，这一假设在反射表面上失效，因为其外观会随着环境的变化而改变。我们提出了一种基于光场的反射鲁棒6自由度跟踪器，将这一表面反射的显著问题转化为姿态线索。我们的算法在每帧中稳健地恢复深度，抵抗反射影响，将其反投影到点云中，并估计表面法线。然后，它将物体的视依赖外观分解为漫反射反照率和环境映射，从而生成一个可重光照的表面光场。从粗略的初始化开始，我们通过恢复的环境映射对其进行重光照，并在光度损失上优化姿态。由于移动物体会反射场景的新部分，环境映射在序列进行时逐渐填充，随着时间的推移增强这一信号。为了评估该方法，我们引入了一个光场跟踪数据集，该数据集是从一个机器人操作基准在四个受控反射率水平下重新渲染的，每个数据集都配有模拟深度，重现了消费级RGB-D传感器在光滑表面上的失效情况。此外，我们还在两个捕获的光场序列上进行了评估。我们的算法在漫反射物体上落后于最强的基线，但在完全反射物体上保持了其准确性，而所有基线在此情况下均出现性能下降。",
+  "arxiv_id": "2610.04883",
+  "arxiv_url": "https://arxiv.org/abs/2610.04883v1",
+  "authors": [
+    "Nikolai Goncharov",
+    "Donald G. Dansereau"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-04883",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.345465+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.04883v1",
+  "published_at": "2026-10-04T02:45:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "point cloud",
+      "点云",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.04883v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "Reflection-Robust 6DoF Object Tracking with Light Fields",
+  "title_zh": "基于光场的反射鲁棒6自由度物体跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2610.04883"
+}

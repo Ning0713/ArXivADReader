@@ -1,0 +1,62 @@
+{
+  "abstract": "Autonomous driving decision systems must balance safety, efficiency, and social norms in complex traffic interactions. Philosophical and ethical considerations have received limited attention in existing autonomous driving decision-making approaches based on numerical optimization, sequence prediction, and large language models (LLMs). We propose Chinese Philosophical Wisdom-Guided Driving (CPW-Drive), a closed-loop retrieval-augmented generation (RAG) framework that incorporates value guidance derived from Chinese philosophy into autonomous driving decision-making. Using Chinese Confucian thought as its knowledge source, CPW-Drive consolidates LLM-extracted keywords from relevant classical texts into driving-relevant value principles through manual screening and validation. It then contextualizes these principles through scenario-specific cases to form retrievable and reusable value guidance. We further propose Physics-aware Spatial Similarity Retrieval (PSSR), which compares vehicle layouts and velocity-extrapolated states to retrieve physically relevant historical cases. On Highway-env's multilane highway-driving task, CPW-Drive achieves success rates of 93.0%, 86.0%, and 72.0% across three traffic configurations. These results outperform the strongest baseline by 8.0, 22.5, and 25.0 percentage points, respectively. Across all configurations, CPW-Drive achieves the highest collision-free step count and maintains a low lane-change frequency. The results suggest that structured value guidance can improve simulated closed-loop safety and stability while introducing efficiency and latency trade-offs.",
+  "abstract_zh": "自主驾驶决策系统必须在复杂的交通互动中平衡安全性、效率和社会规范。现有基于数值优化、序列预测和大型语言模型（LLMs）的自主驾驶决策方法对哲学和伦理考量的关注有限。我们提出了中国哲学智慧引导驾驶（CPW-Drive），这是一个闭环的增强检索生成（RAG）框架，旨在将源自中国哲学的价值引导融入自主驾驶决策中。CPW-Drive以中国儒家思想为知识来源，通过手动筛选和验证，将相关经典文本中提取的LLM关键词整合为与驾驶相关的价值原则。然后，通过特定场景案例对这些原则进行情境化，以形成可检索和可重用的价值引导。我们进一步提出了物理感知空间相似性检索（PSSR），该方法比较车辆布局和速度外推状态，以检索物理相关的历史案例。在Highway-env的多车道高速驾驶任务中，CPW-Drive在三种交通配置下的成功率分别为93.0%、86.0%和72.0%。这些结果分别比最强基线高出8.0、22.5和25.0个百分点。在所有配置中，CPW-Drive实现了最高的无碰撞步骤数，并保持了较低的变道频率。结果表明，结构化的价值引导可以提高模拟闭环的安全性和稳定性，同时引入效率和延迟的权衡。",
+  "arxiv_id": "2610.03948",
+  "arxiv_url": "https://arxiv.org/abs/2610.03948v1",
+  "authors": [
+    "Xiaojun Bi",
+    "Xiaoyuan Ma",
+    "Yiwen Sun",
+    "Tianren Huang",
+    "Chaoran Liu",
+    "Bokai Huang",
+    "Hao Yang",
+    "Baichuan Mo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-03948",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.425124+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.03948v1",
+  "published_at": "2026-10-02T19:07:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "highway",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 78
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.03948v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom",
+  "title_zh": "基于中国哲学智慧的增强检索大型语言模型决策在自主驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2610.03948"
+}

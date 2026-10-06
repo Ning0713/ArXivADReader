@@ -1,0 +1,52 @@
+{
+  "abstract": "Optimisation-based parking planners usually impose collision constraints only at the time samples, so a vehicle corner can cut an obstacle between samples, and no executable trajectory exists until the solver converges. We present a planner for car-like vehicles with reverse gear in which every iterate of the optimisation phase satisfies the discretised dynamics exactly and keeps the whole vehicle rectangle clear of obstacles between the samples. Each time interval receives one convex corridor that holds all vehicle corners at both ends and is shrunk by a sweep margin bounding how far the corner paths leave their chords. Separating half-planes give the corridors a direction out of obstacles when the initial guess is in collision; later, heading-aligned boxes are grown from the speed, curvature and step of the current iterate and rebuilt after accepted steps. A feasibility-perturbed trust-region sequential quadratic programming method projects each step onto the dynamics by feedback and verifies it exactly; the cost decreases monotonically, and once the corridors stop changing, limit points are Karush-Kuhn-Tucker points of the corridor-constrained problem or violate a constraint qualification. On 820 benchmark cases the planner succeeds in 818 without penetration (797 from the first initial guess), none of the 7103 evaluated optimisation-phase iterates is unusable, and it succeeds in 96.5% of the cases when 99% of the initial guesses intersect an obstacle. Its maneuvers take 0.7% longer in the median than those of a similarly certified exact-collision baseline. The guarantees hold for the planning model, not for a physical vehicle.",
+  "abstract_zh": "基于优化的停车规划器通常仅在时间样本处施加碰撞约束，因此车辆的角落可能在样本之间切割障碍物，并且在求解器收敛之前不存在可执行的轨迹。我们提出了一种适用于具有倒车档的类汽车车辆的规划器，其中优化阶段的每一次迭代都准确满足离散化的动力学，并保持整个车辆矩形在样本之间远离障碍物。每个时间间隔接收一个凸通道，该通道在两端保持所有车辆角落，并通过一个扫掠边界缩小，限制角落路径离开其弦的距离。当初始猜测发生碰撞时，分离半平面为通道提供了逃离障碍物的方向；随后，从当前迭代的速度、曲率和步长生长出与航向对齐的盒子，并在接受的步骤后重建。可行性扰动的信任域序列二次规划方法通过反馈将每一步投影到动力学上并准确验证；成本单调下降，一旦通道停止变化，极限点就是通道约束问题的Karush-Kuhn-Tucker点或违反约束资格。在820个基准案例中，该规划器在818个案例中成功且没有穿透（797个来自第一次初始猜测），7103个评估的优化阶段迭代中没有一个是不可用的，当99%的初始猜测与障碍物相交时，它在96.5%的案例中成功。其机动的中位数时间比类似认证的精确碰撞基线长0.7%。这些保证适用于规划模型，而不适用于物理车辆。",
+  "arxiv_id": "2610.05796",
+  "arxiv_url": "https://arxiv.org/abs/2610.05796v1",
+  "authors": [
+    "Yang Shi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-05796",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.277904+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.05796v1",
+  "published_at": "2026-10-05T04:40:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "car",
+      "parking",
+      "车辆",
+      "motion planning",
+      "运动规划"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.05796v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "Dynamics-Aware Adaptive Corridors with Feasibility-Perturbed Trust-Region SQP for Certified Nonholonomic Motion Planning",
+  "title_zh": "动态感知自适应通道与可行性扰动信任域平方规划用于认证的非完整运动规划",
+  "translation_url": "https://hjfy.top/arxiv/2610.05796"
+}

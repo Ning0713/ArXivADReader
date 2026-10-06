@@ -1,0 +1,54 @@
+{
+  "abstract": "Short-wave infrared (SWIR) imaging has emerged as a promising modality for autonomous driving, yet its practical benefits over RGB remain poorly characterized across diverse conditions. This paper presents a systematic comparative study of paired RGB and SWIR object detection on the RASMD dataset, covering four weather conditions and two real-time detection architectures, with various fine-tunings evaluated against a unified ground truth. Overall, RGB demonstrates comparable or superior performance in most scenarios, while RF-DETR exhibits greater robustness across varying conditions. Beyond aggregate metrics, we propose a sensor-dominance mining framework that combines multi-model agreement with targeted manual inspection to identify scenarios where one sensing modality provides more reliable detections using largely unannotated paired data. This analysis reveals that SWIR offers clear advantages in four safety-critical situations, including windshield glare, water droplets on the windshield, low-contrast object visibility, and long-range vehicle detection. The findings suggest that SWIR should be viewed as a complementary modality that enhances perception in rare but challenging conditions. The datasets will be available upon request, and all code and trained model weights are publicly released at https://github.com/comsee-research/swir-adverse-env-analysis.",
+  "abstract_zh": "短波红外（SWIR）成像已成为自主驾驶的一种有前景的模式，但其在不同条件下相对于RGB的实际优势仍然缺乏充分的表征。本文对RASMD数据集上的RGB和SWIR物体检测进行了系统的比较研究，涵盖了四种天气条件和两种实时检测架构，并针对统一的真实标签评估了各种微调。总体而言，RGB在大多数场景中表现出可比或更优的性能，而RF-DETR在不同条件下展现出更大的鲁棒性。除了汇总指标外，我们提出了一种传感器主导性挖掘框架，该框架结合了多模型一致性与针对性的人工检查，以识别在大部分未标注的配对数据中，某一传感模式提供更可靠检测的场景。分析结果显示，SWIR在四种安全关键情境中具有明显优势，包括挡风玻璃眩光、挡风玻璃上的水滴、低对比度物体可见性和远程车辆检测。研究结果表明，SWIR应被视为一种补充模式，能够在稀有但具有挑战性的条件下增强感知。数据集可根据请求提供，所有代码和训练模型权重已在 https://github.com/comsee-research/swir-adverse-env-analysis 上公开发布。",
+  "arxiv_id": "2610.06596",
+  "arxiv_url": "https://arxiv.org/abs/2610.06596v1",
+  "authors": [
+    "Rohan Mehra",
+    "Alexandre Riffard",
+    "Yannis Loumouamou",
+    "Mathieu Labussière"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-06596",
+  "categories": [
+    "cs.CV",
+    "eess.IV"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.412487+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.06596v1",
+  "published_at": "2026-10-05T16:07:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.06596v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Analysis of SWIR Imaging Detection Performance Under Adverse Environmental Conditions for Autonomous Driving Systems",
+  "title_zh": "在恶劣环境条件下自主驾驶系统的短波红外成像检测性能分析",
+  "translation_url": "https://hjfy.top/arxiv/2610.06596"
+}

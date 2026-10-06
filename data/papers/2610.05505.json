@@ -1,0 +1,52 @@
+{
+  "abstract": "Autonomous Mobile Robots (AMRs) on active construction sites face severe navigational challenges: geometry-based traversability mapping (e.g., LiDAR) misses visually hazardous but geometrically flat surfaces like wet mud and ponding concrete, while abrupt geometry on drivable speed-breakers and inclines produces phantom obstacles. We propose a real-time, failure-mode-aware multimodal traversability pipeline on an NVIDIA Jetson AGX Orin, where LiDAR is the primary geometric safety estimate and monocular semantics act as a selective, class- and confidence-gated corrective signal. The representation retains distinct traversable classes, namely flat road, terrain, and rocky terrain, while flagging construction hazards. We also release a multimodal construction-site dataset from a custom AMR: four closed-loop ROS 2 sequences from two active sites (RGB, depth, LiDAR, IMU, GPS-RTK, odometry) plus 506 annotated frames across 28 semantic classes. By projecting LiDAR onto dense semantic masks, resolving sparsity via morphological in-painting, and applying failure-mode-aware fusion with Patchwork++, the system corrects complementary geometric failure modes for a local AMR costmap.",
+  "abstract_zh": "在活跃的建筑工地上，自主移动机器人（AMRs）面临严峻的导航挑战：基于几何的可通行性映射（如LiDAR）无法识别视觉上危险但几何上平坦的表面，如湿泥和积水混凝土，而可行驶的减速带和坡道上的突变几何则会产生虚假障碍物。我们提出了一种基于NVIDIA Jetson AGX Orin的实时故障模式感知多模态可通行性处理流程，其中LiDAR作为主要的几何安全估计手段，单目语义则作为选择性、基于类别和置信度门控的校正信号。该表示保留了不同的可通行类别，即平坦道路、地形和岩石地形，同时标记建筑危险。我们还发布了一个来自定制AMR的多模态建筑工地数据集：包含两个活跃工地的四个闭环ROS 2序列（RGB、深度、LiDAR、IMU、GPS-RTK、里程计）以及涵盖28个语义类别的506帧标注数据。通过将LiDAR投影到密集的语义掩码上，利用形态学修复解决稀疏性问题，并结合Patchwork++进行故障模式感知融合，系统为本地AMR代价地图校正了互补的几何故障模式。",
+  "arxiv_id": "2610.05505",
+  "arxiv_url": "https://arxiv.org/abs/2610.05505v1",
+  "authors": [
+    "Manoj Karnekar",
+    "Om Mandhane",
+    "Gautham Ramkumar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-05505",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.267291+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.05505v1",
+  "published_at": "2026-10-04T20:20:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "road",
+      "道路",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.05505v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "Robust 2D Traversability Mapping for Construction AMRs via Failure-Mode-Aware Fusion of LiDAR Geometry and Monocular Semantics",
+  "title_zh": "基于故障模式感知的LiDAR几何与单目语义融合的建筑自动移动机器人二维可通行性鲁棒映射",
+  "translation_url": "https://hjfy.top/arxiv/2610.05505"
+}

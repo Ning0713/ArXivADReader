@@ -1,0 +1,51 @@
+{
+  "abstract": "Predicting future spatial states supports collision avoidance and timely decision-making in dynamic environments. However, existing vision-language models (VLMs) and benchmarks for spatial reasoning primarily focus on observed scenes, leaving predictive spatial reasoning beyond the observed interval underexplored. To this end, we introduce SpatialMind, a metric-scale VLM for spatial reasoning and future prediction. Its metric depth adapter anchors spatial reasoning to real-world scale, while its progressive state chain establishes current spatial states and observed dynamics as the foundation for future prediction. Given a video prefix, SpatialMind predicts distances, motion directions, and spatial relations in both observed and unseen future frames. For training and evaluation, we build a scalable data engine that grounds entity descriptions in metric geometry to generate question-answer pairs and state supervision. Using this engine, we construct the SpatialMind-30K dataset and the SpatialMind-2K benchmark, both covering driving and everyday egocentric scenes. The benchmark spans eight tasks across three levels: current-state understanding, observed-dynamics understanding, and future prediction. Experiments show that SpatialMind substantially outperforms both general and spatially specialized models on our benchmark while achieving competitive zero-shot performance on VSI-Bench, OSI-Bench, and VLM4D.",
+  "abstract_zh": "预测未来的空间状态有助于在动态环境中避免碰撞和及时决策。然而，现有的视觉语言模型（VLMs）和空间推理基准主要集中于观察到的场景，对于观察区间之外的预测空间推理研究相对较少。为此，我们引入了SpatialMind，一个用于空间推理和未来预测的度量级VLM。其度量深度适配器将空间推理锚定于真实世界的尺度，而其渐进状态链则将当前空间状态和观察到的动态作为未来预测的基础。在给定视频前缀的情况下，SpatialMind能够预测观察到的和未见未来帧中的距离、运动方向和空间关系。为了进行训练和评估，我们构建了一个可扩展的数据引擎，将实体描述与度量几何相结合，以生成问答对和状态监督。利用该引擎，我们构建了SpatialMind-30K数据集和SpatialMind-2K基准，涵盖了驾驶和日常自我中心场景。该基准跨越三个层次的八个任务：当前状态理解、观察动态理解和未来预测。实验表明，SpatialMind在我们的基准上显著优于一般模型和空间专业模型，同时在VSI-Bench、OSI-Bench和VLM4D上实现了具有竞争力的零样本表现。",
+  "arxiv_id": "2610.04139",
+  "arxiv_url": "https://arxiv.org/abs/2610.04139v1",
+  "authors": [
+    "Feiran Wang",
+    "Xiaoqi Wang",
+    "Ziwei Li",
+    "Wenbin He",
+    "Yan Yan",
+    "Liu Ren"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-04139",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.317770+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.04139v1",
+  "published_at": "2026-10-02T23:27:47Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.04139v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "提出SpatialMind度量级视觉语言模型，通过度量深度适配器和渐进状态链，基于视频前缀预测距离、运动方向及空间关系，并构建SpatialMind-30K数据集与SpatialMind-2K基准。其覆盖驾驶场景，可为自动驾驶中的环境理解、碰撞规避和未来状态预测提供支持。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "预测/规划",
+      "深度/几何"
+    ]
+  },
+  "title": "From Sight to Foresight: Predictive Spatial Reasoning in Vision-Language Models",
+  "title_zh": "从视觉到预见：视觉语言模型中的预测空间推理",
+  "translation_url": "https://hjfy.top/arxiv/2610.04139"
+}

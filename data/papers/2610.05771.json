@@ -1,0 +1,62 @@
+{
+  "abstract": "Lane and road markings provide critical guidance for vehicle navigation and multi-agent coordination, yet authoring them at scale remains a manual workflow that limits quantitative analysis and scenario testing. We introduce Controllable Road Marking Generation, which synthesizes a missing center-region marking layout from a drivable-area mask, optional outer-ring markings, and a textual description. Our benchmark uses deterministic, metadata-derived prompts and three output channels: lane dividers, road dividers, and pedestrian crossings. We develop a conditional bird's-eye-view (BEV) pipeline that combines (i) a text-conditioned latent rectified-flow DiT trained with a topology-aware auxiliary loss, (ii) Gaussian-blurred training targets that stabilize learning of thin, sparse markings, and (iii) Structured Gaussian Render (SGR), a training-free post-process that recovers crisp divider geometry by extracting polylines, fitting cubic B\\'ezier curves, and re-rendering them as anisotropic super-Gaussian primitives. On 4,597 Argoverse~2 test tiles, our system achieves Buffered F1 of 80.8 and clDice of 50.2, compared with 38.8 and 24.6 for an adapted state-of-the-art mask-refinement baseline. On Waymo dataset, it yields 88.0 Buffered F1 and 66.2 clDice. Component ablations show complementary connectivity gains from topology-aware supervision and SGR. Text-editing experiments reveal that stronger guidance improves edit success but also increases changes to non-target structures. We see this framework as a step toward simulation-ready road-marking variation, automated map completion, and early-stage infrastructure design exploration.",
+  "abstract_zh": "车道和道路标线为车辆导航和多智能体协调提供了关键指导，然而大规模创作这些标线仍然是一个手动工作流程，这限制了定量分析和场景测试。我们提出了可控道路标线生成（Controllable Road Marking Generation），该方法从可行驶区域掩膜、可选的外环标线和文本描述中合成缺失的中心区域标线布局。我们的基准使用确定性的、基于元数据的提示和三个输出通道：车道分隔线、道路分隔线和人行横道。我们开发了一个条件鸟瞰视图（BEV）管道，该管道结合了（i）一个经过拓扑感知辅助损失训练的文本条件潜在修正流（latent rectified-flow）DiT，（ii）高斯模糊训练目标以稳定稀疏细标线的学习，以及（iii）结构化高斯渲染（Structured Gaussian Render，SGR），这是一个无训练的后处理过程，通过提取多边形线、拟合三次贝塞尔曲线并将其重新渲染为各向异性超高斯原语来恢复清晰的分隔几何形状。在4,597个Argoverse~2测试瓦片上，我们的系统实现了80.8的缓冲F1和50.2的clDice，而经过改编的最先进的掩膜细化基线分别为38.8和24.6。在Waymo数据集上，它产生了88.0的缓冲F1和66.2的clDice。组件消融实验表明，拓扑感知监督和SGR带来了互补的连接增益。文本编辑实验表明，较强的指导提高了编辑成功率，但也增加了对非目标结构的变化。我们将这一框架视为朝着模拟就绪的道路标线变体、自动地图补全和早期基础设施设计探索迈出的重要一步。",
+  "arxiv_id": "2610.05771",
+  "arxiv_url": "https://arxiv.org/abs/2610.05771v1",
+  "authors": [
+    "Zhiyu",
+    "Cai",
+    "Yufan Zhang",
+    "Ruichen Tan",
+    "Zengxiang Lei",
+    "Satish Ukkusuri"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-05771",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.379386+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.05771v1",
+  "published_at": "2026-10-05T04:15:43Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "argoverse",
+      "vehicle",
+      "road",
+      "lane",
+      "pedestrian",
+      "车辆",
+      "道路",
+      "车道",
+      "bev",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.05771v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Controllable Road Marking Generation",
+  "title_zh": "可控道路标线生成",
+  "translation_url": "https://hjfy.top/arxiv/2610.05771"
+}

@@ -1,0 +1,44 @@
+{
+  "abstract": "Object detection under image degradation can benefit from clean-image supervision, but aggregate gains do not imply that transferred representation changes are uniformly useful. We study how clean task knowledge affects degraded-image representations and whether local responses to structured representation directions can be characterized geometrically. Using paired clean and Gaussian-degraded BDD100K images, we show that clean-teacher distillation improves observed detection accuracy while producing heterogeneous object-level transfer. We isolate a representation component complementary to direct clean-teacher alignment and map it into the distilled student space through an orthogonal bridge. Controlled interventions rescue 13.22% of objects lost under the distilled representation, versus 4.30% under norm-matched random perturbations, with very low harm on preserved objects. We introduce task-sensitive geometry, a gradient-derived channel-space geometry constructed from normalized detection-loss gradients. On a reserved cohort, mapped-complement orientation within this frozen geometry is positively associated with local intervention-response magnitude after controlling for intervention magnitude (partial Spearman $\\rho$ = 0.242, 95% CI [0.108, 0.359]). The relationship eplicates on independent data ($\\rho$ = 0.180) and with RT-DETR-L ($\\rho$ = 0.227), but not for the direct clean-teacher residual family, and it weakens for large interventions. Routing rules and specialized distillation objectives based on these signals do not yield statistically reliable gains over CLEANKD. These results support a local, direction-family-dependent task-sensitive geometry while showing that converting such structure into improved global training remains an open problem.",
+  "abstract_zh": "图像退化下的物体检测可以从干净图像的监督中受益，但整体增益并不意味着转移的表示变化在各个方面都是有用的。我们研究了干净任务知识如何影响退化图像的表示，以及结构化表示方向的局部响应是否可以在几何上进行表征。通过使用配对的干净图像和高斯退化的BDD100K图像，我们表明，干净教师蒸馏提高了观察到的检测准确性，同时产生了异质的物体级转移。我们隔离出一个与直接干净教师对齐互补的表示成分，并通过正交桥将其映射到蒸馏学生空间。受控干预在蒸馏表示下挽救了13.22%的丢失物体，而在规范匹配的随机扰动下仅为4.30%，对保留物体的损害非常小。我们引入了任务敏感几何，这是一种基于归一化检测损失梯度构建的梯度导出通道空间几何。在一个保留的队列中，在这个冻结几何内映射的补充方向与局部干预响应幅度呈正相关，控制干预幅度后（偏相关Spearman $ ho$ = 0.242, 95% CI [0.108, 0.359]）。这一关系在独立数据上得到了重复（$ ho$ = 0.180）以及在RT-DETR-L上（$ ho$ = 0.227），但在直接干净教师残差家族中并不成立，并且在大干预时减弱。基于这些信号的路由规则和专门的蒸馏目标未能在统计上可靠地超越CLEANKD。这些结果支持了一种局部的、依赖于方向家族的任务敏感几何，同时表明将这种结构转化为改进的全局训练仍然是一个未解决的问题。",
+  "arxiv_id": "2610.04627",
+  "arxiv_url": "https://arxiv.org/abs/2610.04627v1",
+  "authors": [
+    "Van Vung Pham"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-04627",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.335939+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.04627v1",
+  "published_at": "2026-10-03T16:14:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "bdd100k"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.04627v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Task-Sensitive Geometry of Representation Transfer for Object Detection under Image Degradation",
+  "title_zh": "图像退化下物体检测的任务敏感表示转移几何",
+  "translation_url": "https://hjfy.top/arxiv/2610.04627"
+}

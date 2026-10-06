@@ -1,0 +1,59 @@
+{
+  "abstract": "Roadside traffic reasoning requires every free-form textual claim to be backed by visual evidence. Existing grounded multimodal large language models (MLLMs) frequently exhibit say-point mismatch, in which the textual answer contradicts the bounding boxes the model localizes. Evaluation metrics that score answers and boxes separately leave this failure unpenalized. We trace the mismatch to the conventional answer-then-ground factorization, which commits to a numerical claim before any object is enumerated. To measure it, we build RoadSceneVQA-G, a benchmark of 34.7K question-answer pairs in which every free-form answer is linked to the set of boxes that witnesses it, and we propose the Answer-Grounding Consistency (AGC) evaluation suite. To address it, we introduce Enumerate-then-Answer (EtA), which reverses the generation order so that answer-evidence agreement becomes a property of the output structure, and Enumeration-Consistent Policy Optimization (ECPO), a reinforcement learning stage that uses the union of multiple rollouts as a recall teacher without ground-truth boxes. EtA raises say-point consistency from 26.6\\% to 93.7\\% and grounding F1 from 52.2\\% to 73.0\\%, and ECPO further increases F1 to 75.6\\% without per-box supervision. On gRefCOCO, the same framework outperforms the strongest compared method, indicating that it transfers beyond traffic scenes. The project is available at \\url{https://github.com/GuanRunwei/RoadSceneVQA-G}.",
+  "abstract_zh": "路边交通推理要求每一个自由形式的文本声明都必须有视觉证据支持。现有的基础多模态大型语言模型（MLLMs）常常表现出说点不匹配的问题，即文本答案与模型定位的边界框相矛盾。单独对答案和框进行评分的评估指标未能对此类失误进行惩罚。我们将这种不匹配追溯到传统的先回答再基础化的分解方法，该方法在列举任何物体之前就承诺了一个数值声明。为了衡量这一点，我们构建了RoadSceneVQA-G，这是一个包含34.7K问答对的基准数据集，其中每个自由形式的答案都与见证该答案的边界框集合相联系，并提出了答案-基础一致性（AGC）评估套件。为了解决这一问题，我们引入了先列举后回答（EtA）的方法，该方法逆转了生成顺序，使得答案与证据的一致性成为输出结构的一个特性，并提出了枚举一致性策略优化（ECPO），这是一个强化学习阶段，利用多个回合的联合结果作为没有真实边界框的召回教师。EtA将说点一致性从26.6\\%提高到93.7\\%，将基础F1从52.2\\%提高到73.0\\%，而ECPO进一步将F1提高到75.6\\%，且无需逐框监督。在gRefCOCO上，相同的框架超越了最强的对比方法，表明其在交通场景之外也具有迁移能力。该项目可在 {https://github.com/GuanRunwei/RoadSceneVQA-G} 获取。",
+  "arxiv_id": "2610.05274",
+  "arxiv_url": "https://arxiv.org/abs/2610.05274v1",
+  "authors": [
+    "Runwei Guan",
+    "Rongsheng Hu",
+    "Shangshu Chen",
+    "Ningwei Ouyang",
+    "Shaofeng Liang",
+    "Heyi Lin",
+    "Jinjing Zhu",
+    "Yang Shi",
+    "Dongming Wu",
+    "Daizong Liu",
+    "Henghui Ding",
+    "Hui Xiong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-05274",
+  "categories": [
+    "cs.CV",
+    "cs.HC"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.363113+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.05274v1",
+  "published_at": "2026-10-04T14:48:54Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "roadside",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.05274v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "本文研究路边交通场景中的视觉问答与视觉证据对齐问题，针对多模态模型文本回答与目标定位框不一致的现象，构建RoadSceneVQA-G数据集并提出AGC评估指标。通过先列举目标再回答的EtA生成框架，以及利用多次生成结果进行无框监督强化学习的ECPO方法，显著提升了回答与视觉证据之间的一致性及定位性能。该工作主要服务于自动驾驶场景理解和可解释感知，也具有一定的跨场景迁移能力。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Answer with Evidence: Consistency-Aware Grounded Visual Question Answering for Roadside Traffic Scenes",
+  "title_zh": "基于证据的回答：面向路边交通场景的一致性意识基础视觉问答",
+  "translation_url": "https://hjfy.top/arxiv/2610.05274"
+}

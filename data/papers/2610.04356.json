@@ -1,0 +1,57 @@
+{
+  "abstract": "Comprehensive 3D scene understanding for autonomous driving requires modeling geometry, semantics, and motion. However, camera-based occupancy and scene flow prediction are sensitive to unreliable spatial and temporal aggregation, caused by semantically incompatible image features, misaligned historical observations, and incomplete voxel structures. To address this issue, we propose SelectOccFlow, a selective spatiotemporal aggregation framework that progressively refines contextual evidence across image, temporal, and voxel domains. To obtain semantically compatible image evidence, we design Semantic-Guided Sampling (SGS) to regulate feature sampling with semantic priors. Since reliable image evidence alone cannot resolve temporal inconsistency, we then present State-Conditioned Temporal Aggregation (SCTA) to selectively retrieve historical evidence according to voxel states. To further enhance the structural completeness of voxel representations, we introduce Extent-Aware Spatial Aggregation (ESA), which exploits directional structural support to refine foreground geometry. Experiments on OpenOcc demonstrate that SelectOccFlow achieves a state-of-the-art OccScore of 44.9, improving the previous best by +4.2%. It also maintains competitive occupancy performance on Occ3D-nus and improves the mean OccScore under nuScenes-C corruptions by +11.1%, demonstrating improved robustness to visual corruptions. The source code will be made publicly available at https://github.com/muchen1021/SelectOccFlow.",
+  "abstract_zh": "全面的三维场景理解对于自动驾驶来说需要对几何、语义和运动进行建模。然而，基于摄像头的占用和场景流预测对不可靠的空间和时间聚合非常敏感，这种不可靠性源于语义不兼容的图像特征、未对齐的历史观测和不完整的体素结构。为了解决这个问题，我们提出了SelectOccFlow，一个选择性时空聚合框架，逐步在图像、时间和体素域中精炼上下文证据。为了获得语义兼容的图像证据，我们设计了语义引导采样（Semantic-Guided Sampling, SGS），以语义先验来调节特征采样。由于仅依赖可靠的图像证据无法解决时间不一致性，我们随后提出了状态条件时间聚合（State-Conditioned Temporal Aggregation, SCTA），根据体素状态选择性地检索历史证据。为了进一步增强体素表示的结构完整性，我们引入了范围感知空间聚合（Extent-Aware Spatial Aggregation, ESA），利用方向性结构支持来精炼前景几何。在OpenOcc上的实验表明，SelectOccFlow达到了44.9的最新OccScore，较之前的最佳结果提高了4.2%。它在Occ3D-nus上也保持了竞争力的占用性能，并在nuScenes-C损坏下将平均OccScore提高了11.1%，显示出对视觉损坏的增强鲁棒性。源代码将公开发布在https://github.com/muchen1021/SelectOccFlow。",
+  "arxiv_id": "2610.04356",
+  "arxiv_url": "https://arxiv.org/abs/2610.04356v1",
+  "authors": [
+    "Yuhang Wang",
+    "Kai Luo",
+    "Yuanfan Zheng",
+    "Kailun Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-04356",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.325997+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.04356v1",
+  "published_at": "2026-10-03T07:51:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.04356v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "深度/几何",
+      "感知"
+    ]
+  },
+  "title": "SelectOccFlow: Selective Spatiotemporal Aggregation for 3D Occupancy and Scene Flow Prediction",
+  "title_zh": "SelectOccFlow：用于三维占用和场景流预测的选择性时空聚合",
+  "translation_url": "https://hjfy.top/arxiv/2610.04356"
+}

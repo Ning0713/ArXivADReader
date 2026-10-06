@@ -1,0 +1,65 @@
+{
+  "abstract": "Generating corner-case scenarios with appropriate adversity in a simulation environment is critical for testing an autonomous vehicle (AV) software stack's safety performance before deployment. Existing autonomous-driving scenario generators can enforce specific behavior, adversity, or feasibility conditions, but they provide limited control over how extreme a generated scenario is relative to plausible futures in the same traffic context. This study represents the adversity of a generated scenario as its percentile in the conditional distribution of future risk given the observed history. This view supports calibrated answers to two questions: how \"corner\" a generated corner-case scenario is and how its \"cornerness\" can be fine-tuned. To this end, we formulate history-conditioned risk-percentile requests and learn a reference risk distribution that maps each requested percentile to a physical risk target. We then use a percentile-conditioned joint diffusion model with sampling-time risk guidance to generate multi-agent futures, together with a reference-based criterion for evaluating percentile realization. Experiments use the minimum post-encroachment time (PET) between the ego and its surrounding vehicles as the risk surrogate on highD. On the primary evaluation set, our method realizes 1,422 of 1,440 requests within a 0.05 percentile tolerance (98.75%), with mean percentile error 0.00673 and PET-target error 0.00991 seconds. The resulting interface connects context-relative risk specification, physical realization, and evaluation through a common risk scale. Project website and videos of generated scenarios are available at https://hhj233.github.io/CornerPercentile/.",
+  "abstract_zh": "在模拟环境中生成具有适当困难的角落案例场景对于在部署前测试自动驾驶汽车（AV）软件堆栈的安全性能至关重要。现有的自动驾驶场景生成器可以强制特定的行为、困难或可行性条件，但对于生成的场景在相同交通背景下相对于合理未来的极端程度提供的控制有限。本研究将生成场景的困难程度表示为给定观察历史的未来风险的条件分布中的百分位数。这一视角支持对两个问题的校准回答：生成的角落案例场景有多“角落”，以及如何微调其“角落性”。为此，我们制定了历史条件风险百分位请求，并学习了一个参考风险分布，将每个请求的百分位数映射到一个物理风险目标。然后，我们使用一个基于百分位条件的联合扩散模型，并结合采样时间风险指导生成多智能体未来场景，同时采用基于参考的标准来评估百分位实现。实验使用自我与周围车辆之间的最小侵入后时间（PET）作为高D中的风险替代。在主要评估集上，我们的方法在0.05百分位容忍度内实现了1,422个请求中的1,440个（98.75%），平均百分位误差为0.00673，PET目标误差为0.00991秒。最终的接口通过一个共同的风险尺度连接了上下文相关的风险规范、物理实现和评估。项目网站和生成场景的视频可在 https://hhj233.github.io/CornerPercentile/ 获取。",
+  "arxiv_id": "2610.05003",
+  "arxiv_url": "https://arxiv.org/abs/2610.05003v1",
+  "authors": [
+    "Jiaxi Liu",
+    "Hang Zhou",
+    "Hangyu Li",
+    "Yifan Wang",
+    "Keke Long",
+    "Chengyuan Ma",
+    "Bin Ran",
+    "Xiaopeng Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-05003",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.483559+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.05003v1",
+  "published_at": "2026-10-04T06:52:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "highway",
+      "驾驶",
+      "车辆",
+      "交通",
+      "corner case",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.05003v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "How corner is a corner case? Percentile control for highway scenario generation",
+  "title_zh": "角落案例有多“角落”？高速公路场景生成的百分位控制",
+  "translation_url": "https://hjfy.top/arxiv/2610.05003"
+}

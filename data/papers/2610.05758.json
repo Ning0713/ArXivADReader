@@ -1,0 +1,51 @@
+{
+  "abstract": "Holes in LiDAR scans of environments with glass windows remain an unresolved problem in three-dimensional reconstruction. This study presents a pipeline for point cloud acquisition, filtering, completion, and surface reconstruction to address sparse sampling and missing window regions in scans of a high-speed train nose. FAST-LIVO2 provides the initial point cloud through multisensor odometry and mapping, and moving least squares (MLS) smooths the observations. We then introduce three-axis projection-based subdivision and interpolation with reverse hole boundary identification, referred to as three-axis reverse completion. The method interpolates missing regions from observations around each hole. Greedy projection triangulation, Poisson surface reconstruction, and a Marching Cubes-based pipeline generate meshes from the completed point cloud. Experiments on a proportionally scaled display model of a high-speed train nose show that the proposed method fills missing point cloud regions around the glass windows. Under the evaluation setting used in this study, greedy projection triangulation yields lower geometric distance errors than the other two reconstruction pipelines. The pipeline supports non-contact digital modeling of train nose geometry and provides a practical approach to reconstructing objects with glass windows.",
+  "abstract_zh": "在具有玻璃窗的环境中，LiDAR扫描中出现的孔洞仍然是三维重建中的一个未解决问题。本研究提出了一种点云获取、过滤、补全和表面重建的流程，以解决高速列车车头扫描中的稀疏采样和缺失窗区域问题。FAST-LIVO2通过多传感器里程计和映射提供初始点云，移动最小二乘法（MLS）对观测结果进行平滑处理。然后，我们引入基于三轴投影的细分和插值方法，并进行反向孔边界识别，称为三轴反向补全。该方法从每个孔周围的观测结果中插值缺失区域。贪婪投影三角化、泊松表面重建和基于Marching Cubes的流程从补全的点云生成网格。在一个比例缩放的高速列车车头展示模型上的实验表明，所提出的方法能够填补玻璃窗周围缺失的点云区域。在本研究使用的评估设置下，贪婪投影三角化的几何距离误差低于其他两种重建流程。该流程支持高速列车车头几何形状的非接触数字建模，并为重建具有玻璃窗的物体提供了一种实用的方法。",
+  "arxiv_id": "2610.05758",
+  "arxiv_url": "https://arxiv.org/abs/2610.05758v1",
+  "authors": [
+    "Xiaozhen Ma",
+    "Zhao Tang",
+    "Hanbin Lai",
+    "Ruiqi Chen",
+    "Jin Jin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-05758",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.378874+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.05758v1",
+  "published_at": "2026-10-05T04:07:36Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.05758v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "本文针对玻璃等透明区域导致的LiDAR稀疏点云孔洞问题，提出三轴反向投影补全方法，并结合MLS平滑和多种表面重建算法恢复物体几何。实验对象为高速列车车头模型，验证了方法对缺失点云区域的补全能力。该方法与自动驾驶中的LiDAR点云补全和三维几何重建具有技术迁移价值，但论文未直接涉及车辆、道路或自动驾驶任务。",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "感知"
+    ]
+  },
+  "title": "A Three-Dimensional Reverse-Projection Method for Sparse Point Cloud Completion and Its Application to High-Speed Train Nose Reconstruction",
+  "title_zh": "一种用于稀疏点云补全的三维反投影方法及其在高速列车车头重建中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2610.05758"
+}

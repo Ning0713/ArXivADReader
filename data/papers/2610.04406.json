@@ -1,0 +1,52 @@
+{
+  "abstract": "Safe robot control often requires combining long-horizon performance optimization with hard state and input constraints, but existing approaches tend to address this tradeoff partially. Sampling-based model predictive control (MPC) methods such as model predictive path integral (MPPI) are effective in handling nonlinear and nonconvex environments, yet their finite-sample rollouts and unconstrained weighted-average update can return an unsafe control. Deterministic nonlinear MPC can explicitly incorporate constraints, but its real-time safety and performance depends strongly on warm starts and local convergence. Hamilton--Jacobi reachability (HJR) provides rigorous safety certificates, but offline value-function computation remains practical only for reduced-order models. We propose ReSQ-MPPI, a reachability-informed generation--refinement architecture that combines these complementary strengths. An HJR value function computed offline for a reduced-order model guides online MPPI sampling toward safe, promising trajectory candidates. The MPPI solution is then refined by a small number of sequential quadratic programming (SQP) iterations in a full-order MPC problem. A key observation is that the standard MPPI inference step is an unconstrained weighted least-squares problem; ReSQ-MPPI replaces it with a constrained MPC refinement that recovers the MPPI update when it is feasible and minimally modifies it otherwise. Simulations in cluttered navigation and autonomous racing environments demonstrate that ReSQ-MPPI improves safety and performance over standalone MPPI, MPC, and reachability-filtered sampling-based control baselines.",
+  "abstract_zh": "安全的机器人控制通常需要将长时间范围的性能优化与严格的状态和输入约束相结合，但现有的方法往往仅部分解决这一权衡。基于采样的模型预测控制（MPC）方法，如模型预测路径积分（MPPI），在处理非线性和非凸环境方面有效，但其有限样本的回放和无约束的加权平均更新可能导致不安全的控制。确定性非线性MPC可以明确地纳入约束，但其实时安全性和性能强烈依赖于热启动和局部收敛。汉密尔顿-雅可比可达性（HJR）提供了严格的安全证书，但离线值函数计算在实际应用中仅适用于降阶模型。我们提出了ReSQ-MPPI，一种基于可达性信息的生成-精炼架构，结合了这些互补的优势。为降阶模型离线计算的HJR值函数引导在线MPPI采样朝向安全且有前景的轨迹候选。然后，通过在全阶MPC问题中进行少量的序列二次规划（SQP）迭代来精炼MPPI解。一个关键观察是，标准的MPPI推理步骤是一个无约束的加权最小二乘问题；ReSQ-MPPI用一个约束的MPC精炼替代它，当可行时恢复MPPI更新，否则进行最小修改。在拥挤的导航和自主赛车环境中的仿真表明，ReSQ-MPPI在安全性和性能上优于独立的MPPI、MPC和基于可达性过滤的采样控制基线。",
+  "arxiv_id": "2610.04406",
+  "arxiv_url": "https://arxiv.org/abs/2610.04406v1",
+  "authors": [
+    "Alexandre Didier",
+    "Jason J. Choi",
+    "Namhoon Cho",
+    "Claire J. Tomlin",
+    "Melanie N. Zeilinger"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-04406",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.243739+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.04406v1",
+  "published_at": "2026-10-03T09:51:55Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous racing",
+      "autonomous",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.04406v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Reachability-Guided Sequential Quadratic Programming-Guarded Model Predictive Path Integral for Safe Nonlinear Predictive Control",
+  "title_zh": "基于可达性引导的序列二次规划保护模型预测路径积分用于安全非线性预测控制",
+  "translation_url": "https://hjfy.top/arxiv/2610.04406"
+}

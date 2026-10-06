@@ -1,0 +1,70 @@
+{
+  "abstract": "Closed-loop evaluation of end-to-end driving requires continuous rollouts that reveal how earlier decisions affect subsequent driving. However, existing benchmarks evaluate only short segments and fail to capture later consequences. Ambiguous directional commands also obscure the intended navigation objective. We introduce Odyssey, a closed-loop benchmark for long-horizon driving comprising 100 scenarios, each reconstructed from a 100-second nuPlan driving log to preserve the context of navigation maneuvers and traffic interactions. To provide a consistent navigation objective, Odyssey replaces directional commands with explicit standard-definition (SD) map routes that specify which roads to follow, while sensor-based planning determines local driving actions. Throughout these rollouts, diffusion-based refinement of 3DGS-rendered images reduces rendering artifacts along the ego trajectory. To assess how effectively planners follow these routes and prepare for upcoming maneuvers, we introduce SD Route Compliance and Pre-Lane Change Score. These assessments are complemented by RouteDS, which extends the Driving Score with penalties for SD-route deviations and failed lane preparation. We adapt state-of-the-art planners, including vision-language-action (VLA) models, and evaluate their navigation performance using these metrics. Odyssey highlights open questions in route representation and integration for E2E driving. Benchmark code and adapted baselines will be released publicly.",
+  "abstract_zh": "闭环评估端到端驾驶需要持续的执行，以揭示早期决策如何影响后续驾驶。然而，现有基准仅评估短段，未能捕捉后续后果。模糊的方向指令也使得预期的导航目标变得不明确。我们引入了奥德赛（Odyssey），这是一个用于长时间驾驶的闭环基准，包含100个场景，每个场景均由100秒的nuPlan驾驶日志重建，以保留导航操作和交通互动的上下文。为了提供一致的导航目标，奥德赛用明确的标准定义（SD）地图路线替代方向指令，指明应遵循的道路，而基于传感器的规划则决定局部驾驶动作。在这些执行过程中，基于扩散的3DGS渲染图像的细化减少了自我轨迹上的渲染伪影。为了评估规划者多有效地遵循这些路线并为即将到来的操作做好准备，我们引入了SD路线合规性和预变道评分。这些评估通过RouteDS得到补充，后者在驾驶评分中增加了对SD路线偏离和未能准备变道的惩罚。我们调整了最先进的规划者，包括视觉-语言-动作（VLA）模型，并使用这些指标评估其导航性能。奥德赛突出了端到端驾驶中路线表示和整合的开放性问题。基准代码和调整后的基线将公开发布。",
+  "arxiv_id": "2610.06469",
+  "arxiv_url": "https://arxiv.org/abs/2610.06469v1",
+  "authors": [
+    "Jungho Kim",
+    "Hongjae Shin",
+    "Seunghoon Yu",
+    "Heecheol Yoo",
+    "Myeongjun Kim",
+    "Jiyong Oh",
+    "Donghyuk Kwak",
+    "Seunghyeop Nam",
+    "Haesung Oh",
+    "Hyunju Kim",
+    "Hyungchan Cho",
+    "Jaehyun Park",
+    "Soo Won Seo",
+    "Jun Won Choi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-06469",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.297507+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.06469v1",
+  "published_at": "2026-10-05T15:00:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "nuplan",
+      "driving",
+      "traffic",
+      "lane",
+      "驾驶",
+      "交通",
+      "道路",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 82
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.06469v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Odyssey: A Closed-Loop Benchmark for Long-Horizon Real-World Driving with Explicit Navigation Routes",
+  "title_zh": "奥德赛：一个用于长时间真实驾驶的闭环基准，具有明确的导航路线",
+  "translation_url": "https://hjfy.top/arxiv/2610.06469"
+}

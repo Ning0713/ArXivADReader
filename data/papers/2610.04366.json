@@ -1,0 +1,68 @@
+{
+  "abstract": "Reliable safety evaluation of autonomous vehicles (AVs) is essential to improving road safety, yet it depends critically on realistic simulation of rare crashes. Existing crash scenario generation methods can increase collision occurrence, but often fail to realistically reproduce how crashes evolve before impact or the distribution of crash types observed in the real world. Here, we present CrashSim, a human behavior-informed crash scenario generation framework that uses real-world crash priors to guide generative multi-agent traffic simulation for more reliable AV safety evaluation. These priors capture how real-world crashes evolve before impact and how different crash types are distributed, allowing limited crash data to guide realistic and scalable scenario generation across naturalistic driving contexts. We evaluate CrashSim against competing methods, showing that it more closely reproduces real-world pre-impact behavior, collision dynamics, collision geometry and crash-type distributions. We further use CrashSim to construct nuCrash dataset, containing over 4,000 crash and near-crash scenarios. Closed-loop evaluation of five AV planners shows that nuCrash more effectively exposes differences in planner safety capabilities than nuScenes. An LLM-assisted evaluation agent further analyzes planner failures to provide capability-level diagnoses and targeted improvement guidance. Together, CrashSim enables realistic and scalable crash generation for more informative AV safety evaluation.",
+  "abstract_zh": "对自动驾驶车辆（AV）的可靠安全评估对于提高道路安全至关重要，但这在很大程度上依赖于对稀有碰撞的现实模拟。现有的碰撞场景生成方法可以增加碰撞发生的频率，但往往未能真实再现碰撞在撞击前的演变过程或现实世界中观察到的碰撞类型分布。在此，我们提出了CrashSim，一个基于人类行为的碰撞场景生成框架，利用真实世界的碰撞先验来指导生成多智能体交通模拟，从而实现更可靠的自动驾驶车辆安全评估。这些先验捕捉了现实世界碰撞在撞击前的演变过程以及不同碰撞类型的分布，使得有限的碰撞数据能够指导在自然驾驶环境中进行现实且可扩展的场景生成。我们将CrashSim与竞争方法进行评估，结果表明其更接近于真实世界的撞击前行为、碰撞动态、碰撞几何形状和碰撞类型分布。此外，我们进一步利用CrashSim构建了nuCrash数据集，包含超过4000个碰撞和近碰撞场景。对五种自动驾驶规划器的闭环评估显示，nuCrash比nuScenes更有效地揭示了规划器安全能力的差异。一个基于大型语言模型（LLM）的评估代理进一步分析规划器的失败，以提供能力级别的诊断和针对性的改进指导。总之，CrashSim实现了现实且可扩展的碰撞生成，为更具信息量的自动驾驶车辆安全评估提供了支持。",
+  "arxiv_id": "2610.04366",
+  "arxiv_url": "https://arxiv.org/abs/2610.04366v1",
+  "authors": [
+    "Mingxing Peng",
+    "Xusen Guo",
+    "Long Chen",
+    "Xintao Yan",
+    "Siyu Teng",
+    "Jun Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-04366",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.242102+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.04366v1",
+  "published_at": "2026-10-03T08:04:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous vehicles",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "场景生成",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.04366v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "Human Behavior-Informed Crash Scenario Generation with Real-World Crash Priors for Autonomous Vehicle Safety Evaluation",
+  "title_zh": "基于人类行为的碰撞场景生成与真实世界碰撞先验用于自动驾驶车辆安全评估",
+  "translation_url": "https://hjfy.top/arxiv/2610.04366"
+}

@@ -1,0 +1,50 @@
+{
+  "abstract": "A pedestrian with a phone could be shown where nearby people will be in the next few seconds, if the forecast stays on the ground while the phone moves, is calibrated, and needs only a monocular camera and visual-inertial odometry (VIO). We build and evaluate such a system. People are detected, lifted onto the floor by ray-plane intersection, tracked in a gravity-aligned metric frame, and forecast as per-step probability maps by a small U-Net trained with a negative log-likelihood (NLL) loss on bird's-eye (SDD) and first-person (EgoTraj-Bench) trajectories. On handheld ADVIO recordings, vertical VIO drift and the user's own changes of level silently rescale monocular ground positions (by 87% within 90 s on one clip; on another, all tracks are lost for the last 31% of the clip); keeping the camera's height above the floor constant under a low-pass-filtered altitude avoids this, though it lags on escalators. On the SDD and EgoTraj-Bench test splits, the final forecaster lowers the NLL at 4.8 s by 1.51 and 1.37 nats relative to a fitted constant-velocity Gaussian. Lacking ground truth for people in handheld video, we score forecasts against the tracker's own later raw measurements. In an internally pre-registered evaluation on seven held-out clips, the final forecaster's NLL is lower than the benchmark-fitted baseline's at 1.2, 2.4 and 4.8 s (by 0.17, 0.23 and 0.47 nats; 95% intervals over people exclude zero), but by less than half as much as on the development clips. Exploratory analyses cut both ways: resampling clips instead of people widens the intervals to include zero at 1.2 and 2.4 s, and once both forecasters are recalibrated on the development clips the network is significantly better only at 1.2 s; but two clips run with ADVIO's reference poses favour the network much more when re-run with the phone's own poses. We discuss what such self-consistency scores can and cannot show.",
+  "abstract_zh": "使用手机的行人可以被告知在接下来的几秒钟内附近的人将会在哪里，如果预测保持在地面上，而手机在移动、经过校准，并且只需要单目相机和视觉惯性测距（VIO）。我们构建并评估了这样一个系统。通过光线与平面的交点检测到人，将其提升到地面，并在与重力对齐的度量框架中进行跟踪，使用经过负对数似然（NLL）损失训练的小型 U-Net 生成每一步的概率图。在手持 ADVIO 录制的视频中，垂直 VIO 漂移和用户自身的高度变化会默默地重新缩放单目地面位置（在一个片段中，90 秒内缩放了 87%；在另一个片段中，最后 31% 的轨迹全部丢失）；保持相机高度在地面上方恒定（在低通滤波的高度下）可以避免这一问题，尽管在扶梯上会出现滞后。在 SDD 和 EgoTraj-Bench 测试集上，最终的预测器在 4.8 秒时相对于拟合的恒速高斯模型降低了 1.51 和 1.37 nats 的 NLL。由于手持视频中缺乏真实值，我们将预测结果与跟踪器后续的原始测量进行评分。在对七个保留片段进行的内部预注册评估中，最终预测器的 NLL 在 1.2、2.4 和 4.8 秒时均低于基准拟合基线（分别降低 0.17、0.23 和 0.47 nats；95% 的区间排除了零），但降低幅度不到开发片段的一半。探索性分析结果相互矛盾：对片段进行重采样而非对人进行重采样会使 1.2 和 2.4 秒的区间扩大到包含零，一旦两个预测器在开发片段上重新校准，网络在 1.2 秒时显著优于其他时刻；但在使用 ADVIO 的参考姿态运行的两个片段中，当使用手机自身的姿态重新运行时，网络的表现更为优越。我们讨论了这种自一致性评分所能展示和不能展示的内容。",
+  "arxiv_id": "2610.04736",
+  "arxiv_url": "https://arxiv.org/abs/2610.04736v1",
+  "authors": [
+    "Danial Safaei"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-04736",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.339711+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.04736v1",
+  "published_at": "2026-10-03T20:01:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "intersection",
+      "pedestrian",
+      "行人",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.04736v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "Probabilistic Pedestrian Forecasts from a Handheld Phone: World-Frame Heat Maps, Visual-Inertial Height Drift, and Evaluation without Ground Truth",
+  "title_zh": "来自手持手机的概率行人预测：世界坐标系热图、视觉惯性高度漂移及无真实值的评估",
+  "translation_url": "https://hjfy.top/arxiv/2610.04736"
+}

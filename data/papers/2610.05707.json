@@ -1,0 +1,50 @@
+{
+  "abstract": "In autonomous driving perception, visual object tracking systems must satisfy stringent latency and power constraints while remaining robust in complex and dynamic environments. Although transformer-based trackers achieve state-of-the-art accuracy, their substantial computational and memory overheads hinder deployment on real-time, resource-constrained platforms. To move toward this goal, we propose Difference Feature Map Knowledge Distillation (DFM-KD), a novel relational distillation framework tailored for transformer-based visual object tracking. Unlike conventional feature distillation methods that minimize point-wise discrepancies (e.g., mean squared error) between teacher and student feature representations, DFM-KD transfers knowledge through inter-sample feature differences, explicitly aligning the relational structure of the feature space. By distilling how the teacher models appearance variation and consistency across samples, rather than enforcing similarity in absolute activations, DFM-KD enables the student to better capture the structural dynamics of visual changes within a batch. As a result, the distilled model exhibits enhanced feature robustness and improved tracking performance. Extensive experiments demonstrate that DFM-KD consistently outperforms conventional feature-level distillation methods in both tracking precision and success rates.",
+  "abstract_zh": "在自动驾驶感知中，视觉目标跟踪系统必须在复杂和动态环境中满足严格的延迟和功耗限制，同时保持鲁棒性。尽管基于变换器的跟踪器实现了最先进的准确性，但其巨大的计算和内存开销阻碍了在实时、资源受限平台上的部署。为此，我们提出了差异特征图知识蒸馏（Difference Feature Map Knowledge Distillation, DFM-KD），这是一种针对基于变换器的视觉目标跟踪的全新关系蒸馏框架。与传统的特征蒸馏方法通过最小化教师和学生特征表示之间的逐点差异（例如，均方误差）不同，DFM-KD通过样本间特征差异转移知识，明确对齐特征空间的关系结构。通过蒸馏教师如何建模样本间的外观变化和一致性，而不是强制绝对激活值的相似性，DFM-KD使学生能够更好地捕捉批次内视觉变化的结构动态。因此，蒸馏后的模型展现出增强的特征鲁棒性和改进的跟踪性能。大量实验表明，DFM-KD在跟踪精度和成功率方面始终优于传统的特征级蒸馏方法。",
+  "arxiv_id": "2610.05707",
+  "arxiv_url": "https://arxiv.org/abs/2610.05707v1",
+  "authors": [
+    "Zhicheng Ding",
+    "Xinyu Chu",
+    "Qing Tian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-05707",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.375096+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.05707v1",
+  "published_at": "2026-10-05T02:43:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.05707v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "Difference Feature Map Distillation: Transferring Inter-Sample Relational Knowledge Towards Efficient Transformer-Based Tracking",
+  "title_zh": "差异特征图蒸馏：将样本间关系知识转移至高效的基于变换器的跟踪",
+  "translation_url": "https://hjfy.top/arxiv/2610.05707"
+}

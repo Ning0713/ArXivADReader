@@ -1,0 +1,60 @@
+{
+  "abstract": "Before autonomous driving systems can be deployed on public roads, it is vital that these systems comply with safety standards, traffic rules, and social norms. Although neural networks trained on large amounts of driving data perform well in routine driving tasks, these models often struggle in novel situations that are not well-represented in the data. In this work, we propose a novel framework that combines a neural network for intuitive, learning-based planning in routine driving tasks with model predictive control for reasoning-based planning in unfamiliar situations, inspired by Dual Process Theory. A meta-cognitive component is designed to switch between the two, using a knowledge graph to reason about contextual risk based on explicit perceptual information and relevant traffic rules and social norms. Contextual risk is represented through risk fields, guiding both the switching mechanism in the meta-cognitive component and compliance with safety standards, traffic rules, and social norms in the reasoning-based planner. The effectiveness of our framework is tested in CARLA for variations of a typical out-of-distribution situations involving (emergency) vehicles running a red light. We show that the novel architecture reduces the number of collisions in the scenarios by 89% and improves compliance with the special right-of-way rules, compared to the NN-only planner.",
+  "abstract_zh": "在自动驾驶系统能够在公共道路上部署之前，确保这些系统符合安全标准、交通规则和社会规范至关重要。尽管在大量驾驶数据上训练的神经网络在常规驾驶任务中表现良好，但这些模型在数据中未充分代表的新情况中往往表现不佳。在本研究中，我们提出了一种新颖的框架，该框架结合了用于常规驾驶任务的直观学习型规划的神经网络和用于不熟悉情况的基于推理的规划的模型预测控制，灵感来源于双过程理论。设计了一个元认知组件，以在两者之间切换，利用知识图谱根据显式感知信息和相关交通规则及社会规范推理上下文风险。上下文风险通过风险场表示，指导元认知组件中的切换机制以及基于推理的规划器在遵守安全标准、交通规则和社会规范方面的表现。我们的框架在CARLA中进行了测试，针对涉及（紧急）车辆闯红灯的典型分布外情况的变体。与仅使用神经网络的规划器相比，我们展示了新架构在这些场景中将碰撞数量减少了89%，并改善了对特殊优先通行规则的遵守。",
+  "arxiv_id": "2610.04088",
+  "arxiv_url": "https://arxiv.org/abs/2610.04088v1",
+  "authors": [
+    "Simon Janssen",
+    "Michiel Braat",
+    "Chris van der Ploeg",
+    "Serge Thill",
+    "Jan-Pieter Paardekooper"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-04088",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.433047+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.04088v1",
+  "published_at": "2026-10-02T21:51:41Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.04088v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "Towards Safer Autonomous Driving in an Open World: A Dual-Process Approach",
+  "title_zh": "迈向开放世界中更安全的自动驾驶：一种双过程方法",
+  "translation_url": "https://hjfy.top/arxiv/2610.04088"
+}

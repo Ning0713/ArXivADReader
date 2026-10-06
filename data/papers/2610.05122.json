@@ -1,0 +1,56 @@
+{
+  "abstract": "In recent years, Unmanned Aerial Vehicles (UAVs) or drones have been increasingly adopted in urban environments for applications such as parcel delivery, infrastructure inspection, emergency response, and drone light shows. A non-negligible issue is how to manage the increasing number of drones operated by different entities, to enable them to cooperatively avoid potential collisions and determine conflict-free short-term flight paths in urban airspace. This paper presents a Prediction-Based Short-Term Decentralized Greedy (PB-STDG) guidance algorithm for a structured Drone Road System (DRS). PB-STDG extends the original STDG algorithm by introducing a prediction mechanism that enables drones to anticipate the decisions of neighboring drones using additional information shared in beacon packets, aiming to address the over-conservative behavior observed in the STDG algorithm. Several simulation scenarios are conducted to evaluate and compare the proposed algorithm with STDG. The results show that PB-STDG improves traffic efficiency while maintaining a safety level comparable to that of STDG.",
+  "abstract_zh": "近年来，无人驾驶飞行器（UAV）或无人机在城市环境中的应用日益增多，涉及包裹投递、基础设施检查、紧急响应和无人机灯光秀等多个领域。一个不可忽视的问题是如何管理由不同实体操作的日益增多的无人机，以使它们能够协同避免潜在碰撞，并在城市空域中确定无冲突的短期飞行路径。本文提出了一种基于预测的短期去中心化贪婪（PB-STDG）引导算法，用于结构化的无人机道路系统（DRS）。PB-STDG通过引入预测机制扩展了原始的STDG算法，使无人机能够利用在信标数据包中共享的额外信息预测邻近无人机的决策，旨在解决在STDG算法中观察到的过于保守的行为。进行了多个仿真场景以评估和比较所提出的算法与STDG的性能。结果表明，PB-STDG在提高交通效率的同时保持了与STDG相当的安全水平。",
+  "arxiv_id": "2610.05122",
+  "arxiv_url": "https://arxiv.org/abs/2610.05122v1",
+  "authors": [
+    "Zhouyu Qu",
+    "Andreas Willig",
+    "Xiaobing Wu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-05122",
+  "categories": [
+    "cs.RO",
+    "cs.NI"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.260153+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.05122v1",
+  "published_at": "2026-10-04T11:04:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "无人驾驶",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路",
+      "uav",
+      "drone",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.05122v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "协同/V2X"
+    ]
+  },
+  "title": "PB-STDG: A Prediction-Based Short-Term Decentralized Greedy Guidance Algorithm for a Drone Road System",
+  "title_zh": "PB-STDG：一种基于预测的短期去中心化贪婪引导算法用于无人机道路系统",
+  "translation_url": "https://hjfy.top/arxiv/2610.05122"
+}

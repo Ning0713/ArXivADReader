@@ -1,0 +1,48 @@
+{
+  "abstract": "Feed-forward visual geometry transformers such as VGGT reconstruct dense 3D structure from images in a single forward pass, simplifying multi-view 3D reconstruction. However, their quadratic attention complexity makes them difficult to scale to long sequences with thousands of frames. Chunk-and-align frameworks address this by splitting a long sequence into overlapping chunks and stitching their local reconstructions into a pose graph. Yet existing methods connect only sequentially adjacent chunks, so small per-frame errors accumulate along the chain into large-scale drift. To move beyond sequential edges, we propose VGGT-Bridge, which adds long-range skip edges that directly constrain non-adjacent chunks without retraining. By running VGGT on sparsely sampled coarse chunks, each coarse chunk bridges distant fine chunks into a single direct constraint. We further turn VGGT's first-frame scale bias into a drift correction by feeding selected coarse chunks in reverse, and a loop-aware policy keeps this reversal compatible with existing loop closures. VGGT-Bridge reduces ATE by 28.3% on KITTI Odometry, 18.8% on Virtual KITTI, and 10.0% on Waymo Open over the SwiftVGGT baseline, achieving the best performance among all chunk-and-align methods.",
+  "abstract_zh": "前馈视觉几何变换器（如 VGGT）能够在单次前向传递中从图像中重建稠密的三维结构，从而简化了多视图三维重建。然而，它们的二次注意力复杂度使得在包含数千帧的长序列中扩展变得困难。块对齐框架通过将长序列拆分为重叠块并将其局部重建拼接成姿态图来解决这个问题。然而，现有方法仅连接顺序相邻的块，因此每帧的小误差沿着链条累积成大规模漂移。为了超越顺序边缘，我们提出了 VGGT-桥接，它添加了长距离跳跃边缘，直接约束非相邻块而无需重新训练。通过在稀疏采样的粗块上运行 VGGT，每个粗块将远处的细块桥接成一个直接约束。我们进一步将 VGGT 的首帧尺度偏差转化为漂移校正，通过反向输入选定的粗块，并且一个循环感知策略保持这种反转与现有循环闭合的兼容性。VGGT-桥接在 KITTI 里程测试中将 ATE 降低了 28.3%，在虚拟 KITTI 中降低了 18.8%，在 Waymo Open 中降低了 10.0%，相较于 SwiftVGGT 基线，达到了所有块对齐方法中的最佳性能。",
+  "arxiv_id": "2610.06594",
+  "arxiv_url": "https://arxiv.org/abs/2610.06594v1",
+  "authors": [
+    "Sungjae Choi",
+    "Hanna Bae",
+    "Sunghyun Baek",
+    "Junmo Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-06594",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.411972+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.06594v1",
+  "published_at": "2026-10-05T16:07:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "waymo open"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 40
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.06594v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges",
+  "title_zh": "VGGT-桥接：超越顺序姿态图的粗步跳跃边缘",
+  "translation_url": "https://hjfy.top/arxiv/2610.06594"
+}

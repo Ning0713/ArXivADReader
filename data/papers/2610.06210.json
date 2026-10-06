@@ -1,0 +1,48 @@
+{
+  "abstract": "Autoregressive generation is natural for language, where predicted tokens can be directly reused as the next prediction state, but trajectory forecasting lacks such a clean token: motion is continuous, multimodal, and expressed in local coordinate frames that evolve with the predicted trajectory. We present MoCAR (Motion-code Coordinate-aware AutoRegression), a decoder-only framework that casts trajectory forecasting as next-code prediction in a coordinate-aware continuous latent space. MoCAR learns a continuous motion-code space from endpoint-normalized trajectory segments, where each code jointly captures local trajectory geometry and the reference-frame transition induced by that segment. Historical motion codes are used as a teacher-forced prefix, future codes are generated autoregressively under temporal, map, agent, and mode interactions, and predicted codes persist in latent memory while decoded endpoints update the local scene context. This enables rollout without trajectory-space re-tokenization, trajectory queries, goal candidates, or proposal-and-refinement pipelines. On Argoverse (AV) benchmarks, MoCAR achieves top-tier performance with a simple single-stage architecture, transfers strongly from AV2 to AV1 in zero-shot evaluation, and improves on turn-heavy scenarios. Ablations confirm that the learned continuous motion-code space, latent alignment, weak KL regularization, and joint tokenizer-predictor optimization are essential for stable latent autoregression.",
+  "abstract_zh": "自回归生成在语言中是自然的，其中预测的标记可以直接作为下一个预测状态重用，但轨迹预测缺乏这样的清晰标记：运动是连续的、多模态的，并且在随着预测轨迹演变的局部坐标系中表达。我们提出了MoCAR（运动编码坐标感知自回归），这是一个仅解码器框架，将轨迹预测视为坐标感知连续潜在空间中的下一个编码预测。MoCAR从端点归一化的轨迹片段中学习连续运动编码空间，其中每个编码共同捕捉局部轨迹几何形状和由该片段引起的参考框架转换。历史运动编码作为教师强制前缀使用，未来编码在时间、地图、代理和模式交互下自回归生成，预测的编码在潜在记忆中保持，而解码的端点更新局部场景上下文。这使得在不进行轨迹空间重新标记、轨迹查询、目标候选或提案与精炼管道的情况下进行展开。在Argoverse（AV）基准测试中，MoCAR以简单的单阶段架构实现了顶级性能，在零样本评估中从AV2强力迁移到AV1，并在转弯密集场景中表现出色。消融实验确认，学习到的连续运动编码空间、潜在对齐、弱KL正则化和联合标记器-预测器优化对于稳定的潜在自回归至关重要。",
+  "arxiv_id": "2610.06210",
+  "arxiv_url": "https://arxiv.org/abs/2610.06210v1",
+  "authors": [
+    "Yiming Xu",
+    "Hao Cheng",
+    "Monika Sester"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-06210",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.399113+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.06210v1",
+  "published_at": "2026-10-05T12:22:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "argoverse",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.06210v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "MoCAR: Motion-code Coordinate-aware AutoRegression for Continuous Trajectory Forecasting",
+  "title_zh": "MoCAR：运动编码坐标感知自回归用于连续轨迹预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.06210"
+}

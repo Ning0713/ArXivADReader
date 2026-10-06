@@ -1,0 +1,60 @@
+{
+  "abstract": "Autoware is an open-source autonomous driving software platform widely adopted by researchers and industry developers. Originally developed primarily for public-road applications, including passenger vehicles, taxis, and buses, Autoware is increasingly being extended to off-road environments such as construction and agricultural sites. Construction sites, however, differ fundamentally from public roads and challenge many assumptions underlying conventional autonomous driving systems. They are characterized by unstructured terrain, airborne dust, continuously evolving site conditions, and construction-specific objects. This paper presents lessons learned from ongoing efforts to extend an Autoware-based autonomous driving system to large dump trucks operating at construction sites. We identify gaps between public-road and off-road construction applications across the sensing, mapping, localization, perception, planning, and control modules of the Autoware stack. We then discuss potential solutions for addressing these gaps, with particular emphasis on ongoing LiDAR-based perception pipeline development and findings from field testing. Finally, we propose a roadmap toward end-to-end autonomous driving for construction vehicles.",
+  "abstract_zh": "Autoware是一个开源的自动驾驶软件平台，广泛被研究人员和行业开发者采用。最初主要为公共道路应用开发，包括乘用车、出租车和公交车，Autoware正逐渐扩展到建筑和农业等越野环境。然而，建筑工地在根本上与公共道路不同，挑战了传统自动驾驶系统的许多假设。建筑工地的特点包括非结构化地形、空气中的尘埃、不断变化的现场条件以及特定于建筑的物体。本文总结了将基于Autoware的自动驾驶系统扩展到在建筑工地上运行的大型自卸卡车的持续努力中获得的经验教训。我们识别了公共道路与越野建筑应用之间在Autoware堆栈的传感、映射、定位、感知、规划和控制模块方面的差距。接着，我们讨论了针对这些差距的潜在解决方案，特别强调了正在进行的基于LiDAR的感知管道开发及现场测试的发现。最后，我们提出了一条通往建筑车辆端到端自动驾驶的路线图。",
+  "arxiv_id": "2610.04187",
+  "arxiv_url": "https://arxiv.org/abs/2610.04187v1",
+  "authors": [
+    "Yu Otsuki",
+    "Teja Emmey",
+    "Sena Matsushita",
+    "Akiro Harada",
+    "Takeshi Miura"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-04187",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.237011+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.04187v1",
+  "published_at": "2026-10-03T00:56:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路",
+      "lidar",
+      "农业"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 90
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.04187v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "Autoware in Construction: Gap Analysis and LiDAR Perception Toward Off-Road Autonomous Driving",
+  "title_zh": "建筑中的Autoware：差距分析与LiDAR感知在越野自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2610.04187"
+}

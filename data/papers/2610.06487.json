@@ -1,0 +1,55 @@
+{
+  "abstract": "Heterogeneous multi-robot path planning is a well-studied problem in which agents with disparate kinematic and dynamic models must coordinate to achieve shared objectives. These formulations, however, treat all agents as robotic-their cost models are mechanical and their traversability is sensor-derived. In human-robot teaming, the human partner remains relegated to command and supervisory roles rather than being modeled as a physical co-navigator with distinct mobility constraints and dynamic energy reserves. This work investigates joint path planning for a two-agent human-UGV team in search-and-rescue casualty retrieval scenarios. We model the human agent using the Pandolf-Santee metabolic cost model with fatigue-modulated speed, and the UGV using a rolling-resistance energy model with terrain-dependent speed limits. By exploiting the complementary traversability of each agent-the human's ability to traverse dense vegetation and shallow water versus the UGV's superior speed on open terrain and roads-we optimize casualty transfer locations, termed switch points, to minimize total mission time. Evaluated across multiple synthetic 1km2 environments with procedurally generated elevation and land-cover data, the optimized strategy reduces mean mission time by 5.3% relative to a human-only baseline and by 7.0% relative to a naive human-UGV strategy without switch point optimization, while reducing human energy expenditure by 17.8% relative to baseline. Notably, the naive strategy reduces human energy expenditure by a larger margin (22.4%) but incurs a 2% increase in mission time relative to baseline, illustrating that switch point optimization is necessary to realize time savings from human-UGV teaming.",
+  "abstract_zh": "异构多机器人路径规划是一个研究较为深入的问题，其中具有不同运动学和动力学模型的代理需要协调以实现共同目标。然而，这些模型将所有代理视为机器人，其成本模型是机械的，通行能力是基于传感器的。在人机协作中，人类伙伴通常被 relegated 到指挥和监督角色，而不是被建模为具有独特移动约束和动态能量储备的物理共同导航者。本研究探讨了在搜索与救援伤员检索场景中，针对两代理人类-无人地面车辆（UGV）团队的联合路径规划。我们使用 Pandolf-Santee 代谢成本模型来建模人类代理，考虑疲劳调节速度，并使用滚动阻力能量模型来建模 UGV，考虑地形依赖的速度限制。通过利用每个代理的互补通行能力——人类在密集植被和浅水区域的通行能力与 UGV 在开阔地形和道路上的优越速度——我们优化了伤员转移位置，称为切换点，以最小化总任务时间。在多个合成的 1km² 环境中进行评估，这些环境具有程序生成的高程和地表覆盖数据，优化策略相较于仅人类基线减少了 5.3% 的平均任务时间，相较于未进行切换点优化的天真人类-UGV 策略减少了 7.0%，同时相较于基线减少了 17.8% 的人类能量消耗。值得注意的是，天真策略虽然减少了人类能量消耗的幅度更大（22.4%），但相较于基线任务时间增加了 2%，这表明切换点优化对于实现人类-UGV 合作带来的时间节省是必要的。",
+  "arxiv_id": "2610.06487",
+  "arxiv_url": "https://arxiv.org/abs/2610.06487v1",
+  "authors": [
+    "Kristian Dalland",
+    "Prithvi Poddar",
+    "Souma Chowdhury",
+    "Karthik Dantu",
+    "Ehsan T. Esfahani"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-06487",
+  "categories": [
+    "cs.RO",
+    "cs.HC"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.298069+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.06487v1",
+  "published_at": "2026-10-05T15:12:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "车辆",
+      "道路",
+      "path planning",
+      "robot",
+      "robotic"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.06487v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "协同/V2X"
+    ]
+  },
+  "title": "Traversability-Aware Cooperative Path Planning for Human-UGV Casualty Evacuation",
+  "title_zh": "考虑可通行性的合作路径规划用于人类-无人地面车辆伤员撤离",
+  "translation_url": "https://hjfy.top/arxiv/2610.06487"
+}

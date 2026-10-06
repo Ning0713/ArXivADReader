@@ -1,0 +1,67 @@
+{
+  "abstract": "Evaluating end-to-end autonomous driving under rare, safety-critical vehicle-pedestrian interactions requires photorealistic, sensor-level scenarios. However, trajectory-based scenario generators cannot synthesize raw visual observations, whereas video-based approaches lack controllability. To bridge this gap, we present ControlPed, a novel framework that combines trajectory-level conflict synthesis with 3D Gaussian Splatting (3DGS) to generate photorealistic, motion-controllable safety-critical scenarios. Built upon HazardPed, a dataset derived from 10,352 traffic videos comprising 422 conflict trajectories, HD maps, and 857 annotated 3D human motions, ControlPed first generates conflict trajectories, lifts them into 3D human motion sequences via text-conditioned motion diffusion, and finally renders multi-view sensor observations using animatable 3DGS avatars. Safety evaluation in 88 rendered photorealistic scenarios reveals that seven leading end-to-end driving models suffer a severe performance drop, with their mean HDScore plunging from 88.8 to 47.4, exposing major failure modes under dangerous pedestrian behaviors. The dataset and testing benchmarks will be released to facilitate safety assessment of vehicle-pedestrian interactions.",
+  "abstract_zh": "在稀有的、安全关键的车辆与行人交互下评估端到端自动驾驶需要逼真的传感器级场景。然而，基于轨迹的场景生成器无法合成原始视觉观测，而基于视频的方法则缺乏可控性。为了解决这一问题，我们提出了ControlPed，一个新颖的框架，它将轨迹级冲突合成与3D高斯点云（3D Gaussian Splatting, 3DGS）相结合，以生成逼真且可控的安全关键场景。ControlPed基于HazardPed，一个由10,352个交通视频衍生而来的数据集，包含422个冲突轨迹、高清地图和857个标注的3D人类动作，首先生成冲突轨迹，通过文本条件的运动扩散将其提升为3D人类运动序列，最后使用可动画的3DGS虚拟角色渲染多视角传感器观测。在88个渲染的逼真场景中的安全评估显示，七个领先的端到端驾驶模型的性能严重下降，其平均HDScore从88.8骤降至47.4，暴露出在危险行人行为下的主要失效模式。该数据集和测试基准将被发布，以促进车辆与行人交互的安全评估。",
+  "arxiv_id": "2610.06171",
+  "arxiv_url": "https://arxiv.org/abs/2610.06171v1",
+  "authors": [
+    "Siyuan Liu",
+    "Miao Li",
+    "Haibao Yu",
+    "Haohong Lin",
+    "Qing Zhou",
+    "Bingbing Nie",
+    "Ding Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-06#paper-2610-06171",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-06T11:40:39.289122+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.06171v1",
+  "published_at": "2026-10-05T11:43:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "交通",
+      "行人",
+      "gaussian splatting",
+      "场景生成",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-06"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.06171v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-06"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "地图/定位",
+      "预测/规划"
+    ]
+  },
+  "title": "Controllable and Photorealistic Pedestrian Risky Motion Generation for End-to-End Driving Safety Evaluation",
+  "title_zh": "可控且逼真的行人危险动作生成用于端到端驾驶安全评估",
+  "translation_url": "https://hjfy.top/arxiv/2610.06171"
+}
