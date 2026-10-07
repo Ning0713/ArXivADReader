@@ -1,0 +1,62 @@
+{
+  "abstract": "Driving models increasingly ground reasoning in causal relations, spatial structure, perceptual evidence, and predicted futures. These advances make reasoning more faithful to the driving scene, but leave a fundamental question unresolved: what should groundedness mean when the model ultimately outputs an action? Correctly grounded reasoning does not, by itself, ensure desirable driving outcomes. We introduce GroundAct, which starts from a simple premise: driving unfolds through physical entities and their interactions. Entities therefore become the unit of grounding; a lightweight reference token keeps each selected entity's continuous state addressable through symbolic reasoning; and only the referenced entities' interactions with the evolving proposal correct the plan. The result is an explicit path from what reasoning grounds to what the plan does, which we call grounded planning. To assess its practical value, we evaluate GroundAct in both open- and closed-loop settings. GroundAct shows strong open-loop planning across normal, out-of-distribution, and safety-critical scenarios, with closed-loop results extending this evidence to driving in simulation.",
+  "abstract_zh": "驾驶模型越来越多地将推理建立在因果关系、空间结构、感知证据和预测未来之上。这些进展使得推理更加忠实于驾驶场景，但仍然留下一个基本问题未得到解决：当模型最终输出一个动作时，基础性应该意味着什么？正确的基础性推理本身并不能确保理想的驾驶结果。我们引入了GroundAct，该方法基于一个简单的前提：驾驶通过物理实体及其相互作用展开。因此，实体成为基础的单位；一个轻量级的参考标记使每个选定实体的连续状态能够通过符号推理进行寻址；只有被引用实体与不断演变的提案的相互作用才能修正计划。最终结果是从推理基础到计划执行的明确路径，我们称之为基础规划。为了评估其实际价值，我们在开放和闭环设置中对GroundAct进行了评估。GroundAct在正常、超出分布和安全关键场景中显示出强大的开放环规划能力，闭环结果将这一证据扩展到模拟驾驶中。",
+  "arxiv_id": "2610.07521",
+  "arxiv_url": "https://arxiv.org/abs/2610.07521v1",
+  "authors": [
+    "Minkyoung Cho",
+    "Zewei Zhou",
+    "Wenhao Ding",
+    "Shuhan Tan",
+    "Boyi Li",
+    "Yuxiao Chen",
+    "Yan Wang",
+    "Zheng Lian",
+    "Min-Hung Chen",
+    "Chaowei Xiao",
+    "Zhuoqing Mao",
+    "Boris Ivanovic",
+    "Marco Pavone",
+    "Yulong Cao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-07521",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.422719+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.07521v1",
+  "published_at": "2026-10-05T23:39:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.07521v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "Grounding What Shapes the Plan: Rethinking Groundedness for Physical Intelligence in Autonomous Driving",
+  "title_zh": "重塑计划的基础：重新思考自主驾驶中物理智能的基础性",
+  "translation_url": "https://hjfy.top/arxiv/2610.07521"
+}

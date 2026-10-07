@@ -1,0 +1,50 @@
+{
+  "abstract": "Language-based trajectory predictors represent coordinates as discrete tokens and learn auxiliary tasks such as destination and group reasoning. This formulation enables the model to capture behavioral intent and social context beyond coordinate dynamics alone. However, token-level objectives provide only indirect guidance for continuous coordinate-space dynamics. To address this limitation, we introduce MoRE (Mixture of Reward Experts), a refinement framework that transfers numerical forecasting priors into a pretrained language-based predictor through reinforcement learning. Five frozen numerical predictors provide complementary coordinate-level knowledge of motion and interactions. Their predictions are converted into expert rewards and combined through an uncertainty-weighted consensus that penalizes disagreement. A ground-truth reward anchors the prediction to the target trajectory. To focus refinement on difficult cases, MoRE refines the policy using the top 1% of training samples ranked by predictive entropy. Expert predictions are computed once and cached before PPO training, so the experts are not run during policy updates or inference. In this way, MoRE combines the contextual modeling of the language-based predictor with coordinate-level feedback from numerical experts. On ETH-UCY, MoRE reduces ADE from 0.22 to 0.20 m and FDE from 0.32 to 0.29 m. Relative to the base policy, ADE decreases by 17.9% on SDD and 12.7% on NBA. On ETH-UCY, MoRE also reduces collision rates and better matches ground-truth pedestrian spacing, without increasing measured inference memory or latency. The project page is available at https://jungyu0413.github.io/MoRE/.",
+  "abstract_zh": "基于语言的轨迹预测器将坐标表示为离散的标记，并学习辅助任务，如目的地和群体推理。这种表述使模型能够捕捉行为意图和社会背景，而不仅仅是坐标动态。然而，标记级目标仅为连续坐标空间动态提供间接指导。为了解决这一局限性，我们引入了 MoRE（Mixture of Reward Experts），一个通过强化学习将数值预测先验转移到预训练的基于语言的预测器的精炼框架。五个冻结的数值预测器提供了运动和交互的互补坐标级知识。它们的预测被转换为专家奖励，并通过惩罚不一致的加权共识进行组合。真实奖励将预测锚定到目标轨迹。为了将精炼重点放在困难案例上，MoRE 使用按预测熵排名的前 1% 训练样本来精炼策略。专家预测在 PPO 训练之前计算一次并缓存，因此在策略更新或推理期间不运行专家。通过这种方式，MoRE 将基于语言的预测器的上下文建模与来自数值专家的坐标级反馈相结合。在 ETH-UCY 数据集上，MoRE 将 ADE 从 0.22 降低到 0.20 米，FDE 从 0.32 降低到 0.29 米。相对于基础策略，ADE 在 SDD 上减少了 17.9%，在 NBA 上减少了 12.7%。在 ETH-UCY 上，MoRE 还减少了碰撞率，并更好地匹配真实行人间距，而没有增加测量的推理内存或延迟。项目页面可访问 https://jungyu0413.github.io/MoRE/。",
+  "arxiv_id": "2610.07954",
+  "arxiv_url": "https://arxiv.org/abs/2610.07954v1",
+  "authors": [
+    "JunGyu Lee",
+    "Inhwan Bae",
+    "Hae-Gon Jeon"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-07954",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.331780+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.07954v1",
+  "published_at": "2026-10-06T08:28:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.07954v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Revisiting Numerical Forecasting Models for Language-Based Trajectory Prediction",
+  "title_zh": "重新审视基于语言的轨迹预测的数值预测模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.07954"
+}

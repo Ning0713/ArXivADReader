@@ -1,0 +1,49 @@
+{
+  "abstract": "Scenario-based MPC is an attractive strategy for chance-constrained motion planning that approximates uncertainty via a finite set of sampled scenarios. As a sampling-based method, scenario-based MPC is sensitive to distribution mismatch. We address this problem in the context of Safe-Horizon Model Predictive Control (SH-MPC) with obstacles governed by switching dynamic modes. From finite mode observations, we construct a confidence set for the unknown categorical mode law and derive a multiplicative domination bound that transfers a Safe-Horizon collision-risk certificate from a selected scenario-sampling distribution to every law in the confidence set. Wasserstein geometry is used to regularize probability reallocation among modes according to the similarity of their induced trajectory predictions, while a collision-risk surrogate biases sampling toward dangerous modes. The resulting certificate explicitly quantifies the additional tightening required under distribution mismatch and exposes the multiplicative conservatism that arises when several obstacle-wise transfer factors are combined",
+  "abstract_zh": "基于情景的模型预测控制（MPC）是一种吸引人的机会约束运动规划策略，通过有限的采样情景集来近似不确定性。作为一种基于采样的方法，基于情景的MPC对分布不匹配非常敏感。我们在安全视界模型预测控制（Safe-Horizon Model Predictive Control, SH-MPC）的背景下解决了这个问题，该控制方法涉及由切换动态模式主导的障碍物。通过有限的模式观察，我们为未知的分类模式法则构建了一个置信集，并推导出一个乘法主导界限，该界限将从选定的情景采样分布转移到置信集中的每个法则的安全视界碰撞风险证书。Wasserstein几何用于根据模式引起的轨迹预测的相似性来规范概率在模式之间的重新分配，而碰撞风险替代物则使采样偏向于危险模式。最终的证书明确量化了在分布不匹配下所需的额外收紧，并揭示了当多个障碍物转移因子结合时所产生的乘法保守性。",
+  "arxiv_id": "2610.07277",
+  "arxiv_url": "https://arxiv.org/abs/2610.07277v1",
+  "authors": [
+    "Stephen Crawford",
+    "Nora Ayanian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-07277",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.200732+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.07277v1",
+  "published_at": "2026-10-05T19:16:37Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "motion planning",
+      "轨迹预测",
+      "运动规划"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.07277v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "本文提出一种面向模式不确定性和分布迁移的安全视界模型预测控制方法，通过分布置信集、Wasserstein正则化和危险模式偏置采样，提高基于情景的运动规划在障碍物动态模式不确定条件下的碰撞风险保证能力。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "Distribution-Transfer Safe-Horizon MPC under Mode Uncertainty",
+  "title_zh": "模式不确定性下的分布-转移安全视界模型预测控制",
+  "translation_url": "https://hjfy.top/arxiv/2610.07277"
+}

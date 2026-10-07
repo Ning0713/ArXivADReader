@@ -1,0 +1,53 @@
+{
+  "abstract": "Monocular metric depth estimation and 3D visual grounding represent the two complementary cornerstones of monocular 3D spatial understanding (M3Sun), from which the fundamental 3D spatial information required by M3Sun can be acquired. However, these complementary tasks are generally conducted by separate frameworks, which pose challenges of inflexible and unaligned spatial information access for embodied intelligence systems. In this paper, we propose a unified agent for monocular 3D spatial understanding (M3SunAgent) that leverages a large language model (LLM) as a task planner for spatial visual programming, which flexibly generate structured programs and coordinate tools. For instance-level metric depth estimation task, M3SunAgent invokes an object detector tool to locate the target, estimates depth at selected points with a depth estimation tool, and aggregates these predictions into an instance-level depth estimate. We also construct the M3Sun Instance (M3SI) dataset, a benchmark with 2,910 samples for evaluation. For monocular 3D visual grounding task, M3SunAgent uses a vision-language model (VLM) tool to locate the target and output basic spatial attributes, then combines back-projection tool with a dimension-lifting tool to predict its 3D bounding box. Experimental results demonstrate the superior performance of M3SunAgent. Specifically, in evaluations of instance-level monocular metric depth estimation, M3SunAgent achieves the best performance among all compared models, 52.61% of predicted instances are distributed below depth error 0.25 ($\\delta < 0.25$). In evaluations of monocular 3D visual grounding, M3SunAgent demonstrates overall competitive performance than vision and VLM models, reaching a 3D mean intersection over union (mIoU) of 41.73% and exceeding the state-of-the-art MonoVLM model by 3.62%.",
+  "abstract_zh": "单目度量深度估计和3D视觉定位代表了单目3D空间理解（M3Sun）的两个互补基石，从中可以获取M3Sun所需的基本3D空间信息。然而，这些互补任务通常由独立的框架进行，这给具身智能系统带来了空间信息访问不灵活和不对齐的挑战。本文提出了一种用于单目3D空间理解的统一智能体（M3SunAgent），它利用大型语言模型（LLM）作为空间视觉编程的任务规划器，灵活生成结构化程序并协调工具。在实例级度量深度估计任务中，M3SunAgent调用对象检测工具来定位目标，使用深度估计工具在选定点估计深度，并将这些预测聚合为实例级深度估计。我们还构建了M3Sun实例（M3SI）数据集，这是一个包含2910个样本的基准数据集用于评估。在单目3D视觉定位任务中，M3SunAgent使用视觉-语言模型（VLM）工具定位目标并输出基本空间属性，然后结合反投影工具和维度提升工具预测其3D边界框。实验结果表明M3SunAgent的优越性能。具体而言，在实例级单目度量深度估计的评估中，M3SunAgent在所有对比模型中表现最佳，52.61%的预测实例的深度误差低于0.25（$ ext{δ} < 0.25$）。在单目3D视觉定位的评估中，M3SunAgent的整体表现优于视觉和VLM模型，达到41.73%的3D平均交并比（mIoU），并超过了最先进的MonoVLM模型3.62%。",
+  "arxiv_id": "2610.07982",
+  "arxiv_url": "https://arxiv.org/abs/2610.07982v1",
+  "authors": [
+    "Jinsong Zhang",
+    "Kejun Wu",
+    "Ming Zhu",
+    "Renjie Qiao",
+    "Chengtao Cai",
+    "Zhengguo Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-07982",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.334169+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.07982v1",
+  "published_at": "2026-10-06T08:45:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "intersection",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.07982v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "M3SunAgent: Monocular 3D Spatial Understanding Agent for Metric Depth Estimation and 3D Visual Grounding",
+  "title_zh": "M3SunAgent：用于度量深度估计和3D视觉定位的单目3D空间理解智能体",
+  "translation_url": "https://hjfy.top/arxiv/2610.07982"
+}

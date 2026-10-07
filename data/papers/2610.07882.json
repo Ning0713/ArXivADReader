@@ -1,0 +1,51 @@
+{
+  "abstract": "Off-road navigation exposes a robot to potentially hazardous terrain en route. Although learning-based navigation uses safety supervision to choose which path to drive, it provides no runtime alarm when the robot following that path is heading into danger. Such an alarm must be learned from field logs, where human intervention preempts the failure and the failure itself is therefore never observed. The human judges driving unsafe early but typically intervenes only once failure is clearly near, so the intervention marks that judgment late. That earlier judgment is what a runtime alarm must detect, yet no prior intervention-supervised method has targeted it. To address this problem, we introduce CUSP (CUSUM-governed Survival model of the Perception onset), a model-agnostic runtime hazard alarm that learns this moment from intervention-terminated logs. \"Cusp\" is a word for the point at which one state is about to turn into another, and the moment we target is exactly such a cusp: the point at which safe driving turns unsafe in a human's judgment. We call this point the perception onset and annotate it separately from the intervention. A visual hazard head is trained on the annotated onset with a discrete-time survival objective so that driving with and without an onset both supervise the head, and a CUSUM accumulates the predicted onset risk into alarms. We evaluate CUSP at five unseen sites, two autonomous and three teleoperated, with 142 events and every method tuned to the same rate of ten false alarms per hour. CUSP detected 85 events compared to 26 for the best of nine adapted baselines, and the margin comes from hazards to which every signal in the navigation model is blind.",
+  "abstract_zh": "越野导航使机器人暴露于潜在危险的地形中。尽管基于学习的导航使用安全监督来选择行驶路径，但在机器人沿该路径行驶时并未提供运行时警报以警示即将面临的危险。这种警报必须从现场日志中学习，而在这些日志中，人为干预会预先阻止故障，因此故障本身从未被观察到。人类评判在早期就能识别出不安全的驾驶，但通常只在故障明显临近时才会进行干预，因此干预标志着这一判断的时机较晚。运行时警报必须检测到的正是这一早期判断，但之前的任何干预监督方法都未针对这一点。为了解决这个问题，我们提出了CUSP（基于CUSUM的感知开始生存模型），这是一种模型无关的运行时危险警报，能够从干预终止的日志中学习这一时刻。“Cusp”是指一个状态即将转变为另一个状态的点，而我们所关注的时刻正是这样的一个拐点：人类判断安全驾驶转变为不安全驾驶的时刻。我们将这一点称为感知开始，并将其与干预分开标注。一个视觉危险头部在带有离散时间生存目标的标注开始上进行训练，以便在有和没有开始的情况下都能监督该头部，并且CUSUM将预测的开始风险累积为警报。我们在五个未见过的地点评估了CUSP，包括两个自主和三个遥控地点，共142个事件，并且每种方法都调整到每小时十次误报的相同速率。CUSP检测到了85个事件，而九个适应基线中表现最佳的仅检测到26个，差距来自于导航模型中每个信号都无法识别的危险。",
+  "arxiv_id": "2610.07882",
+  "arxiv_url": "https://arxiv.org/abs/2610.07882v1",
+  "authors": [
+    "Inuk Kang",
+    "Seung-Woo Seo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-07882",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.232109+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.07882v1",
+  "published_at": "2026-10-06T07:29:48Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.07882v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "本文面向自动驾驶及机器人越野导航中的运行时安全监测，提出CUSP危险预警方法。该方法利用人工干预日志和独立标注的风险“感知起始”时刻，通过离散时间生存模型预测危险开始概率，并使用CUSUM累积风险以触发实时警报。实验表明，在相同误报率下，CUSP对未见环境和导航模型盲区中的危险具有显著更高的检出能力。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "CUSP: CUSUM-Governed Survival Hazard Alarms at the Perception Onset for Off-Road Navigation",
+  "title_zh": "CUSP：基于CUSUM的生存风险警报在越野导航感知开始时的应用",
+  "translation_url": "https://hjfy.top/arxiv/2610.07882"
+}

@@ -1,0 +1,52 @@
+{
+  "abstract": "Whether more accurate traffic forecasts or higher uncertainty coverage improve route decisions is unclear. We evaluate this question with a frozen protocol that separates speed error, joint candidate path upper bound coverage, route selection, and realized loss. Using processed road speed data from Beijing and Chengdu, we construct offline proxy tasks with 150 origin destination pairs, three candidate paths, and 14 test days per city. We compare raw 90th percentile path time bounds with jointly calibrated upper bounds under minimum bound route choice. Joint coverage rises from 83.19% to 92.26% in Beijing M1, from 75.14% to 88.33% in Chengdu M1, and from 74.01% to 90.64% in Chengdu M2. Yet C2 increases lateness by 0.1633, 0.7848, and 0.9200 percentage points, respectively, and mean travel time by 0.588, 3.082, and 4.418 seconds. In a separate Chengdu predictor comparison, a 14.91% reduction in speed mean absolute error accompanies a 1.4571 percentage point reduction in lateness under C0. Joint coverage is therefore not a surrogate for downstream route utility in these frozen tasks the offline results do not establish online or causal benefits.",
+  "abstract_zh": "更准确的交通预测或更高的不确定性覆盖是否能改善路线决策尚不清楚。我们通过一个冻结协议来评估这个问题，该协议将速度误差、联合候选路径上界覆盖、路线选择和实际损失分开。使用来自北京和成都的处理过的道路速度数据，我们构建了包含150个起点-终点对、三个候选路径和每个城市14个测试日的离线代理任务。我们比较了在最小上界路线选择下的原始90百分位路径时间上界与联合校准的上界。北京M1的联合覆盖率从83.19%上升到92.26%，成都M1从75.14%上升到88.33%，成都M2从74.01%上升到90.64%。然而，C2分别增加了0.1633、0.7848和0.9200个百分点的延迟，以及平均旅行时间增加了0.588、3.082和4.418秒。在单独的成都预测器比较中，C0下速度平均绝对误差减少了14.91%，同时延迟减少了1.4571个百分点。因此，在这些冻结任务中，联合覆盖并不是下游路线效用的替代，离线结果并未确立在线或因果效益。",
+  "arxiv_id": "2610.06995",
+  "arxiv_url": "https://arxiv.org/abs/2610.06995v1",
+  "authors": [
+    "Jianing Long",
+    "Xiaobin Li",
+    "Wuming Lei",
+    "Weiguang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-06995",
+  "categories": [
+    "cs.AI",
+    "cs.CY"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.388180+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.06995v1",
+  "published_at": "2026-10-04T07:48:03Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.06995v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "本文研究交通速度预测及其不确定性校准对路线选择效用的影响。结果显示，提高候选路径旅行时间上界的联合覆盖率并不必然改善实际路线决策，甚至可能增加延迟和旅行时间；相比之下，降低速度预测误差可能带来更好的路线选择结果。该研究虽未明确针对自动驾驶车辆控制，但与自动驾驶系统中的全局路径规划、交通预测和不确定性感知决策具有直接关联。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Joint upper-bound coverage and route-choice utility: an empirical evaluation on two urban proxy tasks",
+  "title_zh": "联合上界覆盖与路线选择效用：对两个城市代理任务的实证评估",
+  "translation_url": "https://hjfy.top/arxiv/2610.06995"
+}

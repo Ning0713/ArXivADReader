@@ -1,0 +1,52 @@
+{
+  "abstract": "Safe crowd navigation under distribution shift requires uncertainty representations that capture structured human-motion prediction errors and safety objectives that account for rare but consequential failures. Existing uncertainty-aware methods typically represent prediction errors using isotropic regions, which can be either overly conservative or poorly aligned with directional motion uncertainty. We introduce a risk-aware navigation framework that uses anisotropic conformal ellipsoids to translate structured prediction uncertainty into an episode-level conditional value-at-risk (CVaR) signal that regulates the Lagrangian safety penalty. In particular, adaptive ellipsoidal conformal prediction (AECP) captures directional prediction errors and adaptively calibrates uncertainty regions under distribution shift, while the resulting CVaR-regulated navigation policy is optimized using Lagrangian proximal policy optimization. We evaluate our proposed method under both in-distribution settings and out-of-distribution (OOD) settings involving shifts in pedestrian motion patterns. Compared with state-of-the-art baselines, our method maintains competitive in-distribution performance while improving success rates by 5.68-7.44 percentage points and reducing collision rates by 5.44-6.64 percentage points across OOD settings. We further deploy the trained policy without fine-tuning on a physical robot with onboard perception and CPU-only inference, showing that the full pipeline is feasible in physical crowd navigation.",
+  "abstract_zh": "在分布变化下的安全群体导航需要能够捕捉结构化人类运动预测误差的 uncertainty 表示，以及考虑到罕见但后果严重的失败的安全目标。现有的关注不确定性的方法通常使用各向同性区域来表示预测误差，这可能过于保守或与方向性运动不确定性不匹配。我们提出了一种风险意识导航框架，该框架使用各向异性保守椭球体将结构化预测不确定性转化为一个情节级条件风险价值（CVaR）信号，从而调节拉格朗日安全惩罚。特别地，自适应椭球体保守预测（AECP）捕捉方向性预测误差，并在分布变化下自适应地校准不确定性区域，而由此产生的 CVaR 调节导航策略则通过拉格朗日近端策略优化进行优化。我们在分布内设置和涉及行人运动模式变化的分布外（OOD）设置下评估了我们提出的方法。与最先进的基线相比，我们的方法在保持竞争力的分布内性能的同时，在 OOD 设置中提高了成功率 5.68-7.44 个百分点，并减少了 5.44-6.64 个百分点的碰撞率。我们进一步在具有板载感知和仅 CPU 推理的物理机器人上部署了训练好的策略，而无需微调，显示出完整的流程在物理群体导航中是可行的。",
+  "arxiv_id": "2610.07474",
+  "arxiv_url": "https://arxiv.org/abs/2610.07474v1",
+  "authors": [
+    "Ruihan A. Li",
+    "Ziyao Guo",
+    "Yingying Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-07474",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.212437+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.07474v1",
+  "published_at": "2026-10-05T22:40:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "motion prediction",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.07474v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知",
+      "预测/规划"
+    ]
+  },
+  "title": "Risk-Sensitive Crowd Navigation with Adaptive Ellipsoidal Conformal Prediction",
+  "title_zh": "风险敏感的群体导航与自适应椭球体保守预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.07474"
+}

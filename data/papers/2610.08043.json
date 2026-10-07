@@ -1,0 +1,51 @@
+{
+  "abstract": "Ensuring safety in autonomous driving requires continuous map maintenance supported by reliable quality indicators. In this context, it is crucial to identify when and where map updates should be triggered, for instance through crowdsourced data, and under which conditions a new map compilation should be deployed. This paper focuses on effective metrics for assessing the quality of vector maps and guiding such decisions. We present a new metric called GOSPAM designed to measure map discrepancies in terms of location errors, existence, and completeness. Through detailed simulations on both point and polyline feature maps, we analyze its sensitivity to common map degradation such as bias, false positives, false negatives, and coordinate errors. The results demonstrate that GOSPAM offers a unified and interpretable measure that effectively captures various forms of map deviation, making it a strong candidate for map quality assessment in automotive applications.",
+  "abstract_zh": "确保自主驾驶的安全性需要持续的地图维护，并依赖于可靠的质量指标。在这一背景下，识别何时何地应触发地图更新（例如通过众包数据）以及在何种条件下应部署新的地图编制至关重要。本文重点讨论评估矢量地图质量的有效指标，并指导相关决策。我们提出了一种新的指标，称为 GOSPAM，旨在测量地图在位置错误、存在性和完整性方面的差异。通过对点和折线特征地图进行详细的模拟，我们分析了其对常见地图退化（如偏差、假阳性、假阴性和坐标错误）的敏感性。结果表明，GOSPAM 提供了一种统一且可解释的度量，能够有效捕捉各种形式的地图偏差，使其成为汽车应用中地图质量评估的有力候选者。",
+  "arxiv_id": "2610.08043",
+  "arxiv_url": "https://arxiv.org/abs/2610.08043v1",
+  "authors": [
+    "Marie-Ngoïe Badibanga Kalenda",
+    "Philippe Bonnifait",
+    "Marie-Anne Mittet"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-08043",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.239159+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08043v1",
+  "published_at": "2026-10-06T09:42:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "automotive",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08043v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "Vector Map Quality Metrics for Contextual Autonomous Driving Systems",
+  "title_zh": "用于上下文自主驾驶系统的矢量地图质量指标",
+  "translation_url": "https://hjfy.top/arxiv/2610.08043"
+}

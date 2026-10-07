@@ -1,0 +1,60 @@
+{
+  "abstract": "End-to-end planners based on waypoint regression achieve strong open-loop accuracy, but they primarily learn to mimic expert geometry and remain difficult to adapt to deployment-time safety constraints. We propose a query-based cost-learning framework that estimates bounded costs for dynamically reachable ego trajectory queries, rather than dense BEV cells or a small regressed trajectory set. Compact joint scene tokens capture coherent multimodal agent futures, while contingency-aware cost aggregation and cost-guided intra-cluster MPPI mixing convert the learned cost topology into feasible ego plans. On nuScenes, our method improves over prior cost-estimation planners such as ST-P3 and NMP, outperforms most regression baselines in collision rate, while remaining competitive in L2, and retaining an interpretable cost interface. On real-world driving logs, the proposed planner reduces collision rates compared with SparseDrive and Alpamayo without fine-tuning, while maintaining a diverse set of candidate trajectories.",
+  "abstract_zh": "基于航点回归的端到端规划器在开放循环精度上表现出色，但它们主要学习模仿专家几何形状，且在适应部署时的安全约束方面仍然困难。我们提出了一种基于查询的成本学习框架，该框架估计动态可达自我轨迹查询的有界成本，而不是密集的鸟瞰视图（BEV）单元或小规模的回归轨迹集。紧凑的联合场景标记捕捉一致的多模态代理未来，而考虑应急情况的成本聚合和成本引导的簇内混合（MPPI）将学习到的成本拓扑转换为可行的自我规划。在nuScenes数据集上，我们的方法在成本估计规划器如ST-P3和NMP的基础上有所改进，在碰撞率上超越大多数回归基线，同时在L2上保持竞争力，并保留可解释的成本接口。在真实世界的驾驶日志中，所提议的规划器在不进行微调的情况下，相比SparseDrive和Alpamayo降低了碰撞率，同时保持了一组多样的候选轨迹。",
+  "arxiv_id": "2610.08123",
+  "arxiv_url": "https://arxiv.org/abs/2610.08123v1",
+  "authors": [
+    "Ahmed Abouelazm",
+    "Rupert Polley",
+    "Qingyuan Zhang",
+    "Yin Wu",
+    "Philip Schörner",
+    "Carl Esselborn",
+    "J. Marius Zöllner"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-08123",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.243814+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08123v1",
+  "published_at": "2026-10-06T10:43:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "nuscenes",
+      "driving",
+      "驾驶",
+      "bev"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 62
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08123v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Beyond Waypoint Regression: Query-Based Cost Learning over Reachable Ego Futures for End-to-End Driving",
+  "title_zh": "超越航点回归：基于查询的可达自我未来成本学习用于端到端驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.08123"
+}

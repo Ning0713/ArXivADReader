@@ -1,0 +1,53 @@
+{
+  "abstract": "Camera-based 3D perception for autonomous driving relies heavily on large annotated datasets, and deploying such a system to a new target region typically requires data collection and annotation. Generative augmentation has been proposed to reduce this cost, but existing approaches face a fundamental trade-off: label-conditioned methods consume the very annotations they aim to replace, while simulator-conditioned methods offer free annotations but lack visual grounding to specific real environments. This work investigates the extent to which a digital-twin-driven Real2Sim2Real pipeline (DT-R2S2R) can substitute for target-region real data. By reconstructing recorded driving clips inside a georeferenced digital twin (DT-R2S), we condition a diffusion model on geometrically aligned simulator renderings, establishing a digital twin-grounded Sim2Real model (DT-S2R). As a result, DT-S2R synthesizes photorealistic driving images given low-cost yet georeferenced simulator data across both reconstructed and novel simulator scenes within digital-twin coverage. The efficacy of generated data is verified on diverse 3D detectors. DETR3D, especially, reports 93.18% of mAP obtained by a target-region real-data oracle, without employing target images for detector training. Furthermore, simple co-training with existing out-of-target real data outperforms the oracle. Thus, DT-R2S2R can substantially reduce the cost of manual on-site data collection and annotation in digital twin-available districts, providing a practical foundation for scaling 3D perception.",
+  "abstract_zh": "基于相机的自动驾驶3D感知在很大程度上依赖于大型标注数据集，而将此类系统部署到新的目标区域通常需要数据收集和标注。生成增强技术被提出以降低这一成本，但现有方法面临一个基本的权衡：标签条件的方法消耗了它们试图替代的标注，而模拟器条件的方法提供了免费的标注，但缺乏与特定真实环境的视觉基础。本文研究了数字双胞胎驱动的Real2Sim2Real管道（DT-R2S2R）在多大程度上可以替代目标区域的真实数据。通过在地理参考的数字双胞胎（DT-R2S）内部重建录制的驾驶片段，我们将扩散模型条件化于几何对齐的模拟器渲染，从而建立了一个基于数字双胞胎的Sim2Real模型（DT-S2R）。因此，DT-S2R能够在数字双胞胎覆盖范围内，基于低成本但地理参考的模拟器数据合成逼真的驾驶图像，无论是在重建的还是新颖的模拟器场景中。生成数据的有效性在多种3D检测器上得到了验证。特别是，DETR3D报告了93.18%的mAP，获得于目标区域真实数据的oracle，而未使用目标图像进行检测器训练。此外，与现有的非目标真实数据进行简单的共同训练超越了oracle。因此，DT-R2S2R可以显著降低在数字双胞胎可用地区进行手动现场数据收集和标注的成本，为扩展3D感知提供了实用基础。",
+  "arxiv_id": "2610.08339",
+  "arxiv_url": "https://arxiv.org/abs/2610.08339v1",
+  "authors": [
+    "Hojun Lim",
+    "Hyeongseok Jeon",
+    "Donghyun Kim",
+    "Soonyoung Jung",
+    "Heecheol Yoo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-08339",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.348361+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08339v1",
+  "published_at": "2026-10-06T13:36:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08339v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Digital Twin-Driven Real2Sim2Real: Simulator-Conditioned Generation via Paired Driving-Scene Reconstruction",
+  "title_zh": "数字双胞胎驱动的Real2Sim2Real：通过配对驾驶场景重建的模拟器条件生成",
+  "translation_url": "https://hjfy.top/arxiv/2610.08339"
+}

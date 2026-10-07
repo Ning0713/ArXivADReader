@@ -1,0 +1,48 @@
+{
+  "abstract": "High-beam-count LiDAR sensors are costly, yet many perception pipelines require dense angular sampling. Using a pretrained Stable Diffusion model as the backbone, we fine-tune a LiDAR-conditioned depth model with pseudo-depth targets from a 2D foundation model. During training, the LiDAR conditioning is randomly decimated at different beam budgets. We then investigate how much of a LiDAR scan can be recovered from heavily decimated input and characterize performance across the input beam budget. We evaluate against physically held-out real beams on nuScenes and report recovery separately from fit accuracy. Our model yields its largest advantage in very sparse regimes, achieving a $\\delta_{1.25}$ accuracy of $66.8$% from $4$-beam input where scattered interpolation reaches only $45.1$%. A class-stratified error breakdown further reveals that planar surfaces recover first while objects introducing depth discontinuities degrade earliest. Together, these results quantify the recovery/resolution trade-off for foundation-model-guided LiDAR enhancement.",
+  "abstract_zh": "高光束计数的LiDAR传感器成本高昂，但许多感知管道需要密集的角度采样。我们使用预训练的Stable Diffusion模型作为骨干，微调一个基于LiDAR的深度模型，该模型利用来自2D基础模型的伪深度目标。在训练过程中，LiDAR条件随机以不同的光束预算进行降采样。我们随后研究在重度降采样输入下，能够恢复多少LiDAR扫描，并对输入光束预算的性能进行表征。我们在nuScenes上对真实光束进行物理保留评估，并将恢复结果与拟合精度分开报告。我们的模型在非常稀疏的情况下表现出最大的优势，在4光束输入下实现了66.8%的$ ext{δ}_{1.25}$精度，而散点插值仅达到45.1%。分类分层的错误分析进一步揭示，平面表面最先恢复，而引入深度不连续的物体最早降解。综合来看，这些结果量化了基于基础模型引导的LiDAR增强的恢复/分辨率权衡。",
+  "arxiv_id": "2610.08620",
+  "arxiv_url": "https://arxiv.org/abs/2610.08620v1",
+  "authors": [
+    "Samed Doğan",
+    "Nico Leuze",
+    "Alfred Schöttl"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-08620",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.365518+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08620v1",
+  "published_at": "2026-10-06T16:20:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08620v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "LiDAR Resolution Recovery via Foundation-Model-Guided Diffusion",
+  "title_zh": "基于基础模型引导的LiDAR分辨率恢复",
+  "translation_url": "https://hjfy.top/arxiv/2610.08620"
+}

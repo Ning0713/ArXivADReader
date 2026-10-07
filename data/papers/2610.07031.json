@@ -1,0 +1,58 @@
+{
+  "abstract": "Recent video world models have witnessed the paradigm shift from single-agent to multi-agent involvements, which can reveal more complicated dynamics and cross-agent interaction in the real world. However, existing approaches commonly adopt implicit inter-agent communications via cross attention, which lack explicit geometry constraints and unified 3D state, thereby leading to poor multi-view consistency and struggling with recovering out-of-sight agents. In addition, most of them assume a static background, failing to represent uncontrolled background dynamics. To address these problems, we propose Artemis: a geometry-grounded multi-agent world model with explicit memory sharing. An explicit 3D world map is reconstructed from multi-agent observations to enforce a unified 3D state across agents, offering high cross-view consistency. Specifically, an action-guided geometric injection module is developed to simultaneously render decomposed foreground-background control maps, which are then injected into a diffusion transformer through a designed GeoAdapter block. Compared to previous methods assuming static-only background, our GeoAdapter can also distinguish uncontrolled non-agent dynamics, which are conditioned on their own multi-frame history positions to provide consistent motion cues. Keyframes selected from progressive video rollouts are used to progressively update the reconstructed 3D world maps. To effectively capture complex dynamic patterns, we curate a novel dataset sampled from the CARLA simulator called MA-CARLA. Extensive experiments demonstrate the superiority of our proposed method in terms of visual fidelity and cross-view consistency in the generated videos. In addition, our Artemis can support simultaneous multi-modal rollouts with both 2D video and 3D point map maintenance, scale to scenarios beyond two agents and multi-camera setting.",
+  "abstract_zh": "近年来，视频世界模型经历了从单智能体到多智能体参与的范式转变，这能够揭示现实世界中更复杂的动态和跨智能体的互动。然而，现有的方法通常通过交叉注意力采用隐式的智能体间通信，缺乏明确的几何约束和统一的3D状态，从而导致多视角一致性差，并在恢复视野外的智能体时遇到困难。此外，大多数方法假设背景是静态的，未能表示不受控制的背景动态。为了解决这些问题，我们提出了阿耳忒弥斯：一种基于几何的多智能体世界模型，具有明确的记忆共享。通过多智能体观察重建明确的3D世界地图，以强制在智能体之间实现统一的3D状态，从而提供高跨视角一致性。具体而言，我们开发了一个基于动作引导的几何注入模块，能够同时渲染分解的前景-背景控制图，然后通过设计的GeoAdapter模块将其注入扩散变换器。与假设静态背景的先前方法相比，我们的GeoAdapter还能够区分不受控制的非智能体动态，这些动态基于自身的多帧历史位置提供一致的运动线索。从渐进式视频展开中选择的关键帧用于逐步更新重建的3D世界地图。为了有效捕捉复杂的动态模式，我们从CARLA模拟器中策划了一个新数据集，称为MA-CARLA。大量实验表明，我们提出的方法在生成视频的视觉保真度和跨视角一致性方面具有优越性。此外，我们的阿耳忒弥斯能够支持同时的多模态展开，同时维护2D视频和3D点图，扩展到超过两个智能体和多摄像头设置的场景。",
+  "arxiv_id": "2610.07031",
+  "arxiv_url": "https://arxiv.org/abs/2610.07031v1",
+  "authors": [
+    "Sitian Shen",
+    "Jiuming Liu",
+    "Mengmeng Liu",
+    "Yian Wang",
+    "Michael Ying Yang",
+    "Francesco Nex",
+    "Hao Cheng",
+    "Daniele De Martini",
+    "Ayush Tewari",
+    "Per Ola Kristensson"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-07031",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.288506+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.07031v1",
+  "published_at": "2026-10-04T18:54:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 34
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.07031v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "Artemis: Geometry-Grounded Multi-Agent Driving World Models with Shared 3D State and Progressive Memory Update",
+  "title_zh": "阿耳忒弥斯：基于几何的多智能体驾驶世界模型，具有共享的3D状态和渐进式记忆更新",
+  "translation_url": "https://hjfy.top/arxiv/2610.07031"
+}

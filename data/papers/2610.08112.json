@@ -1,0 +1,51 @@
+{
+  "abstract": "Path-following control strategies typically follow the bi-objective optimization dilemma: minimizing deviations from a reference path while maintaining smooth speed profiles. The latter objective is especially relevant for Electric Vehicles (EVs), since their limited driving range can be extended by recovering energy through regenerative braking, a feature that has not yet been sufficiently studied in the literature. In this work, we perform a comparative analysis of four controllers under one common Frenet frame-based kinematic vehicle model, utilizing a validated energy model (VT-CPEM) with explicit regenerative braking. Herein, we implement the following controllers: Nonlinear Model Predictive Control (NMPC), Proximal Policy Optimization (PPO), gain-scheduled Ackermann state-feedback baseline (PID-SF), and a Stanley geometric baseline. To satisfy real-time requirements, we implement the NMPC using JIT-compiled CasADi. Moreover, we train the PPO using traditional straight and S-curve tracks, after which we successfully transfer the unmodified policy to unseen tracks, including: an ISO 3888-1 lane-change, a chicane, randomly-generated parameterized-splines, and a $\\pm3^\\circ$ graded road. In addition, the policy transfers to a dynamic single-track vehicle model with linear tires, zero-shot with an acceptable initial performance, which was optimized after brief fine-tuning. Thereby, we demonstrate that our PPO is readily transferable to more comprehensive vehicle models. We conclude with a performance analysis of developed controllers and discuss ideas for future work.",
+  "abstract_zh": "路径跟踪控制策略通常面临双目标优化困境：在最小化与参考路径的偏差的同时保持平滑的速度曲线。后者的目标对于电动车辆（EVs）尤其重要，因为其有限的行驶范围可以通过再生制动来回收能量，而这一特性在文献中尚未得到充分研究。在本研究中，我们在一个共同的基于Frenet框架的运动学车辆模型下，对四种控制器进行了比较分析，利用了具有显式再生制动的经过验证的能量模型（VT-CPEM）。在此，我们实现了以下控制器：非线性模型预测控制（NMPC）、近端策略优化（PPO）、增益调度的Ackermann状态反馈基线（PID-SF）以及Stanley几何基线。为了满足实时要求，我们使用JIT编译的CasADi实现了NMPC。此外，我们使用传统的直线路径和S型曲线路径训练PPO，随后成功地将未修改的策略转移到未见过的轨道上，包括：ISO 3888-1变道、急弯、随机生成的参数化样条曲线以及$ ext{±}3^ ext{°}$的坡道。此外，该策略还成功转移到具有线性轮胎的动态单轨车辆模型上，零次学习下表现良好，并在短暂的微调后进行了优化。因此，我们证明了我们的PPO可以方便地转移到更复杂的车辆模型上。最后，我们对所开发的控制器进行了性能分析，并讨论了未来工作的思路。",
+  "arxiv_id": "2610.08112",
+  "arxiv_url": "https://arxiv.org/abs/2610.08112v1",
+  "authors": [
+    "Mohamed Sabaa",
+    "Mostafa Emam"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-08112",
+  "categories": [
+    "cs.RO",
+    "cs.LG",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.241427+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08112v1",
+  "published_at": "2026-10-06T10:35:13Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "road",
+      "lane",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08112v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "本文面向电动车辆能量管理场景，比较NMPC、强化学习和经典几何控制器在路径跟踪、速度平滑及再生制动能量回收方面的表现，重点分析PPO策略对未见路径和更复杂车辆动力学模型的迁移能力。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Energy-Aware Path Following: Comparative Analysis of Reinforcement Learning and NMPC for Electric Vehicles",
+  "title_zh": "能量感知路径跟踪：电动车辆强化学习与非线性模型预测控制的比较分析",
+  "translation_url": "https://hjfy.top/arxiv/2610.08112"
+}

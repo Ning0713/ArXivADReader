@@ -1,0 +1,51 @@
+{
+  "abstract": "Teleoperation serves as the fallback solution to autonomous driving but reliable functions of the teleoperation require a certain amount of mobile network resources, which cannot be guaranteed at all times. Therefore, predictive quality of service (pQoS) is introduced as a concept to increase the resilience of the teleoperation. In this paper, based on a data measurement campaign, we propose a prediction framework to prediction two important network KPIs of teleoperation: uplink data-rate and round-trip latency. Furthermore, we introduce a method to alleviate the performance degradation of machine-learning-based prediction models on previously unseen data due to concept drift by incorporating historic data into the prediction pipeline. Additionally, we introduce the metric of critical scenario detection to evaluate the prediction performance specifically for teleoperation.",
+  "abstract_zh": "远程操作作为自主驾驶的后备解决方案，但远程操作的可靠功能需要一定量的移动网络资源，而这些资源并不能始终得到保证。因此，引入预测服务质量（predictive quality of service，pQoS）作为一个概念，以增强远程操作的弹性。在本文中，基于数据测量活动，我们提出了一个预测框架，以预测远程操作的两个重要网络关键性能指标（KPI）：上行数据速率和往返延迟。此外，我们提出了一种方法，通过将历史数据纳入预测流程，缓解由于概念漂移导致的机器学习预测模型在以前未见数据上的性能下降。此外，我们引入了关键场景检测的指标，以专门评估远程操作的预测性能。",
+  "arxiv_id": "2610.08297",
+  "arxiv_url": "https://arxiv.org/abs/2610.08297v1",
+  "authors": [
+    "Xiyan Su",
+    "Jianning Gao",
+    "Mahmoud Ashri",
+    "Frank Diermeyer"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-08297",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.250067+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08297v1",
+  "published_at": "2026-10-06T13:01:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08297v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "Mitigating Concept Drift in QoS Prediction for Teleoperation of Autonomous Vehicles Using Historic Data",
+  "title_zh": "利用历史数据减缓自主车辆远程操作中的QoS预测概念漂移",
+  "translation_url": "https://hjfy.top/arxiv/2610.08297"
+}

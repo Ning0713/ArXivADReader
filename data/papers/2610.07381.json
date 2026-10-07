@@ -1,0 +1,54 @@
+{
+  "abstract": "Modeling 3D scene geometry and its evolution over time is essential for autonomous driving and robotics. A common paradigm is to use world models to predict future images or latent representations of the environment and subsequently recover geometry from these predictions. However, this paradigm does not explicitly model geometric structure and typically relies on recursive rollouts to reach longer prediction horizons, leading to error accumulation and increasing computational cost. To address these limitations, we present GeoWM, a geometry world model that directly forecasts future scene geometry at specified future horizons without recursive rollout. The key idea is to leverage a geometry foundation model to transform observed RGB frames into a geometric history, which conditions a flow-matching transformer to predict the scene geometry at a specified future horizon. We further show that a lightweight camera-motion predictor can accurately estimate the future viewpoint, and that projecting the observed geometry into the predicted viewpoint provides an effective geometric prior for future geometry forecasting. Extensive experiments on four datasets spanning urban driving, aerial flight, and dynamic manipulation demonstrate that GeoWM outperforms the evaluated world models in forecasting depth, camera pose, and 3D scene geometry, while substantially reducing inference time at longer horizons.",
+  "abstract_zh": "建模三维场景几何及其随时间的演变对于自动驾驶和机器人技术至关重要。一种常见的范式是使用世界模型来预测未来的图像或环境的潜在表示，随后从这些预测中恢复几何结构。然而，这种范式并未显式建模几何结构，通常依赖递归展开以达到更长的预测视野，导致误差累积和计算成本增加。为了解决这些局限性，我们提出了GeoWM，一种几何世界模型，能够在指定的未来视野下直接预测未来场景几何，而无需递归展开。其关键思想是利用几何基础模型将观察到的RGB帧转换为几何历史，这为流匹配变换器预测指定未来视野下的场景几何提供条件。我们进一步展示了一种轻量级相机运动预测器能够准确估计未来视点，并且将观察到的几何投影到预测的视点中，为未来几何预测提供了有效的几何先验。在涵盖城市驾驶、空中飞行和动态操作的四个数据集上的广泛实验表明，GeoWM在预测深度、相机姿态和三维场景几何方面优于评估的世界模型，同时在更长的视野下显著减少了推理时间。",
+  "arxiv_id": "2610.07381",
+  "arxiv_url": "https://arxiv.org/abs/2610.07381v1",
+  "authors": [
+    "Mehrdad Noori",
+    "Guile Wu",
+    "Sam Hosseini",
+    "Dongfeng Bai"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-07381",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.304389+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.07381v1",
+  "published_at": "2026-10-05T20:52:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.07381v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "GeoWM: Efficient Direct World Modeling in Explicit Geometry",
+  "title_zh": "GeoWM：显式几何中的高效直接世界建模",
+  "translation_url": "https://hjfy.top/arxiv/2610.07381"
+}

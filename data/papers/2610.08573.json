@@ -1,0 +1,69 @@
+{
+  "abstract": "Cooperative perception improves autonomous driving by sharing complementary observations among vehicles and roadside infrastructure for 3D object detection. However, practical deployment is constrained by limited bandwidth and unreliable cooperation, where packet loss, transmission delay, and spatial misalignment jointly degrade the cooperative feature stream. Existing methods often reduce communication cost or compensate for one degradation type, leaving coupled disturbances insufficiently addressed. To address this problem, we propose Sparse2comm, a bandwidth-efficient and robust cooperative 3D object detection framework that treats unreliable cooperation as progressive restoration over degraded cooperative features. Sparse Feature Encoding first encodes communication as randomly mask-sampled foreground features transmitted by collaborating agents, from which the ego vehicle reconstructs dense semantic representations. This sparse-to-dense mechanism learns to infer missing object-centric content from sparse observations, enabling ultra-low-bandwidth communication and packet-loss recovery within the same representation. On the semantically restored features, Latency-Aware Alignment predicts motion flow to compensate delayed messages, and Self-Calibrating Fusion estimates residual spatial offsets in a self-supervised manner before adaptive cross-agent fusion. Sparse2comm therefore restores semantic completeness, temporal consistency, and spatial alignment in an ordered pipeline. Extensive experiments on DAIR-V2X, OpenV2V, and V2V4Real show that Sparse2comm maintains competitive clean accuracy and consistently improves robustness under individual and mixed real-world degradations. Compared with the selective feature communication baseline Where2comm, Sparse2comm improves mixed-setting [email protected] / [email protected] by +20.15/+11.79, +12.66/+11.07, and +15.36/+12.61 on the three datasets, respectively.",
+  "abstract_zh": "协作感知通过在车辆和路边基础设施之间共享互补观测来改善自动驾驶，以实现三维物体检测。然而，实际部署受到带宽有限和协作不可靠的限制，其中数据包丢失、传输延迟和空间不对齐共同降低了协作特征流的质量。现有方法通常减少通信成本或补偿一种降级类型，但对耦合干扰的处理不足。为了解决这一问题，我们提出了Sparse2comm，一种带宽高效且稳健的协作三维物体检测框架，将不可靠的协作视为对降级协作特征的渐进恢复。稀疏特征编码首先将通信编码为由协作代理随机掩码采样的前景特征，随后自我车辆从中重建密集语义表示。这一稀疏到密集的机制学习从稀疏观测中推断缺失的物体中心内容，从而实现超低带宽通信和在同一表示中的数据包丢失恢复。在语义恢复的特征上，延迟感知对齐预测运动流以补偿延迟消息，自我校准融合以自监督方式估计残余空间偏移，然后进行自适应跨代理融合。因此，Sparse2comm在有序管道中恢复语义完整性、时间一致性和空间对齐。在DAIR-V2X、OpenV2V和V2V4Real上的大量实验表明，Sparse2comm保持了竞争性的清晰准确性，并在个体和混合现实世界降级下持续提高了稳健性。与选择性特征通信基线Where2comm相比，Sparse2comm在三个数据集上分别提高了混合设置下的 [email protected] / [email protected] +20.15/+11.79、+12.66/+11.07和+15.36/+12.61。",
+  "arxiv_id": "2610.08573",
+  "arxiv_url": "https://arxiv.org/abs/2610.08573v1",
+  "authors": [
+    "Lei Yang",
+    "Boqi Li",
+    "Chunmian Lin",
+    "Li Wang",
+    "Ziying Song",
+    "Shaoqing Xu",
+    "Heye Huang",
+    "Haibao Yu",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-08573",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.363972+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08573v1",
+  "published_at": "2026-10-06T15:48:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "v2x",
+      "ego vehicle",
+      "自动驾驶",
+      "dair-v2x",
+      "v2v4real",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "roadside",
+      "驾驶",
+      "车辆",
+      "3d object detection",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08573v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "协同/V2X"
+    ]
+  },
+  "title": "Sparse2comm: Towards Robust Cooperative 3D Object Detection",
+  "title_zh": "Sparse2comm：迈向稳健的协作三维物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2610.08573"
+}

@@ -1,0 +1,57 @@
+{
+  "abstract": "Bird's-eye-view (BEV) representations have become a widely used interface between perception and planning in autonomous driving, but they encode what is in a scene, not what is behaviorally relevant to a human driver. Gaze offers a compelling behavioral signal for this gap, yet wearable eye trackers are routinely deployed as if their spatial output were ground truth, despite known sensitivity to head motion, illumination, and calibration drift. We present, to our knowledge, the first unified framework for quantifying wearable gaze accuracy under real driving conditions. Our on-road study contains 41 validated scenes in which one driver fixated a vehicle's license plate. Gaze error is measured as the angular difference between the plate center and the gaze direction estimated by the glasses. Separate indoor studies with the same driver and device systematically analyze how distance, illumination, head motion, target motion, and gaze eccentricity affect both systematic bias and gaze precision. The mean on-road error was 4.58 degrees. Applying an offset estimated from the indoor recordings reduced it to 1.10 degrees and improved all 41 scenes. Because this offset varied between sessions, reliable BEV supervision may require online recalibration and condition-dependent estimates of gaze uncertainty.",
+  "abstract_zh": "鸟瞰图（BEV）表示已成为自动驾驶中感知与规划之间广泛使用的接口，但它们编码的是场景中的内容，而不是对人类驾驶员行为相关的信息。注视提供了一个引人注目的行为信号来填补这一空白，然而可穿戴眼动仪的空间输出常常被当作真实值使用，尽管已知其对头部运动、光照和校准漂移敏感。我们提出了一个统一框架，用于量化在真实驾驶条件下的可穿戴注视精度，这是我们所知的首个此类框架。我们的道路研究包含41个经过验证的场景，其中一名驾驶员注视了一辆车的车牌。注视误差被测量为车牌中心与眼镜估计的注视方向之间的角度差。与同一驾驶员和设备进行的独立室内研究系统地分析了距离、光照、头部运动、目标运动和注视偏心度如何影响系统偏差和注视精度。平均道路误差为4.58度。应用从室内记录中估计的偏移量将其减少到1.10度，并改善了所有41个场景。由于该偏移量在不同会话之间有所变化，可靠的BEV监督可能需要在线重新校准和依赖条件的注视不确定性估计。",
+  "arxiv_id": "2610.07783",
+  "arxiv_url": "https://arxiv.org/abs/2610.07783v1",
+  "authors": [
+    "William Engel",
+    "Fabian Flohr"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-07#paper-2610-07783",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-07T11:28:07.319994+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.07783v1",
+  "published_at": "2026-10-06T05:19:10Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "道路",
+      "bev",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 94
+  },
+  "seen_dates": [
+    "2026-10-07"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.07783v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-07"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "预测/规划"
+    ]
+  },
+  "title": "From Laboratory to Road: Evaluating Wearable Gaze Accuracy for Driving",
+  "title_zh": "从实验室到道路：评估驾驶中的可穿戴注视精度",
+  "translation_url": "https://hjfy.top/arxiv/2610.07783"
+}
