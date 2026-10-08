@@ -1,0 +1,51 @@
+{
+  "abstract": "Deep-space crews cannot rely on real-time ground support for urgent off-nominal events. Initial alerts may underdetermine cause, while discriminating evidence may reside in crew observations or at locations that are unsafe, costly, or unavailable for crew inspection. We present an evidence-driven architecture for human-agent-robot teaming in Earth-independent anomaly triage. Agentic AI is treated as a stateful coordinator over bounded, inspectable services rather than as a fully autonomous vehicle controller. A triage state manager maintains hypotheses, evidence provenance, uncertainty, operational context, and tool status; a crew-facing embodied agent elicits observations and explains assessment changes; and a mobile robot acquires targeted, localized evidence. Typed interfaces separate dialogue and orchestration from monitoring, robot command, context retrieval, and safety-critical control. Two scenarios illustrate the architecture: a crewed deep-space mission based on an actual ISS ammonia false alarm, where suspected contamination restricts crew access, and a power-interface anomaly at a crewed lunar base, where robotic inspection distinguishes a local connector fault from other causes ambiguous in remote telemetry. Our main contribution is an authority-bounded closed evidence-loop architecture, exercised in a hardware-in-the-loop integration prototype using Reachy Mini and an Innate MARS mobile robot.",
+  "abstract_zh": "深空任务的船员无法依赖实时的地面支持来应对紧急的非正常事件。初步警报可能无法确定原因，而有价值的证据可能存在于船员的观察中，或位于不安全、成本高昂或无法供船员检查的位置。我们提出了一种证据驱动的人机机器人团队协作架构，用于地球独立的异常分类。在该架构中，智能代理被视为对有限、可检查服务的有状态协调者，而非完全自主的车辆控制器。分类状态管理器维护假设、证据来源、不确定性、操作背景和工具状态；面向船员的具身代理引导观察并解释评估变化；移动机器人获取针对性的、局部的证据。类型化接口将对话和协调与监控、机器人指令、上下文检索和安全关键控制分开。两个场景展示了该架构：一个基于实际国际空间站氨气误报的载人深空任务，其中怀疑的污染限制了船员的接触；另一个是在载人月球基地的电源接口异常，机器人检查区分了局部连接器故障与远程遥测中模糊的其他原因。我们的主要贡献是一个权威边界的闭合证据循环架构，该架构在使用Reachy Mini和Innate MARS移动机器人的硬件在环集成原型中得以实现。",
+  "arxiv_id": "2610.08933",
+  "arxiv_url": "https://arxiv.org/abs/2610.08933v1",
+  "authors": [
+    "Ignacio G Lopez-Francos",
+    "Alexis Gallagher",
+    "Samira Shalal"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-08933",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.HC"
+  ],
+  "fetched_at": "2026-10-08T11:43:52.894892+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08933v1",
+  "published_at": "2026-10-06T18:03:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "robot",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08933v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": []
+  },
+  "title": "Toward Evidence-Driven Human-Agent-Robot Teaming for Earth-Independent Anomaly Triage",
+  "title_zh": "面向证据驱动的人机机器人团队协作以应对地球独立的异常分类",
+  "translation_url": "https://hjfy.top/arxiv/2610.08933"
+}

@@ -1,0 +1,60 @@
+{
+  "abstract": "Forecasting future 3D occupancy from surround-view cameras is essential for autonomous driving, yet existing approaches rely on dense voxel or bird's-eye-view representations whose cost grows rapidly with spatial resolution and prediction horizon. Because these representations do not explicitly maintain object identities, they also struggle to preserve instance consistency over time. We present LighTROcc, a lightweight instance-centric framework that represents movable objects with a compact set of learned queries and predicts present and future occupancy in a single forward pass. LighTROcc localizes each query through attention-guided forward lifting, combining image-space cross-attention, query-specific depth, and camera geometry to estimate its 3D center. Each instance is modeled as a mixture of anisotropic 3D Gaussians and propagated across future steps using predicted displacements, producing continuous, temporally consistent occupancy forecasts. Experiments on nuScenes and supplemented nuScenes-Occupancy show that LighTROcc outperforms the evaluated dense and instance-wise baselines in instance-level forecasting accuracy while maintaining strong voxel-level occupancy quality. Across different model configurations, LighTROcc achieves a favorable balance between forecasting accuracy and computational efficiency, demonstrating the potential of compact instance-centric modeling for camera-based 4D occupancy forecasting.",
+  "abstract_zh": "从全景摄像头预测未来的3D占用对于自动驾驶至关重要，但现有方法依赖于密集体素或鸟瞰图表示，这些表示的成本随着空间分辨率和预测范围的增加而迅速增长。由于这些表示并未明确维护物体身份，因此在时间上也难以保持实例一致性。我们提出了LighTROcc，一个轻量级的实例中心框架，通过一组紧凑的学习查询表示可移动物体，并在单次前向推理中预测当前和未来的占用。LighTROcc通过注意力引导的前向提升定位每个查询，结合图像空间的交叉注意力、查询特定的深度和相机几何来估计其3D中心。每个实例被建模为各向异性3D高斯的混合体，并通过预测的位移在未来步骤中传播，从而生成连续、时间一致的占用预测。在nuScenes和补充的nuScenes-Occupancy上的实验表明，LighTROcc在实例级预测准确性方面优于评估的密集和实例级基准，同时保持强大的体素级占用质量。在不同的模型配置中，LighTROcc在预测准确性和计算效率之间实现了良好的平衡，展示了基于紧凑实例中心建模的摄像头4D占用预测的潜力。",
+  "arxiv_id": "2610.09444",
+  "arxiv_url": "https://arxiv.org/abs/2610.09444v1",
+  "authors": [
+    "Hwanhee Jung",
+    "SeungHyeon Kim",
+    "Inkyu Koo",
+    "Qixing Huang",
+    "Sang Ho Yoon",
+    "Sangpil Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-09444",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-08T11:43:53.008574+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.09444v1",
+  "published_at": "2026-10-07T04:52:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bird's-eye",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.09444v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy",
+      "地图/定位"
+    ]
+  },
+  "title": "LighTROcc: Lightweight 4D Occupancy Forecasting via Instance-Centric 3D Gaussians",
+  "title_zh": "LighTROcc：通过实例中心的3D高斯实现轻量级4D占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.09444"
+}

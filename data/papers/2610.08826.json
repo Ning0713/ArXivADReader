@@ -1,0 +1,54 @@
+{
+  "abstract": "Full-sphere panoramic cameras let fixed monitoring systems and mobile robots track people in every direction, but a planar bounding box does not fully describe where a person is on the sphere. We introduce PanoPed, a sim-to-real benchmark for pedestrian tracking on the full sphere. PanoPed-S contains 108,000 frames from fixed, quadruped-mounted, and drone-mounted cameras, with synchronized masks, depth, camera poses, and 3D pedestrian states. PanoPed-R adds 28,002 real frames from fixed cameras, 16,247 of them densely annotated. We find that an ERP rectangle cannot uniquely determine the spherical center and angular extent of the visible person, while the detector's visual query still carries information about them. Inspired by the sextant's use of angular measurements to locate objects, we propose Sextant, a plug-and-play angular localization head with only about 0.035M parameters. It reuses a frozen detector, keeps track identities unchanged, and needs no extra image encoder. Sextant gives the best result in our PanoPed-S test comparison, raising the strongest baseline, MOTIP, from 47.30 to 49.49 HOTA, with gains on all eight test sequences. Without fine-tuning on real data, the same synthetic-trained heads improve MOTIP and HAT by 0.96-1.14 HOTA on real video, and both seeds improve every real sequence. HAT+Sextant scores best among the compared systems that add no localization image encoder.",
+  "abstract_zh": "全球面全景相机使固定监控系统和移动机器人能够在各个方向上跟踪行人，但平面边界框并不能完全描述一个人在球面上的位置。我们提出了PanoPed，这是一个针对全球面行人跟踪的从仿真到现实的基准。PanoPed-S包含来自固定、四足动物装载和无人机装载相机的108,000帧图像，配有同步的掩膜、深度信息、相机姿态和3D行人状态。PanoPed-R则增加了来自固定相机的28,002帧真实图像，其中16,247帧经过密集标注。我们发现，ERP矩形无法唯一确定可见行人的球心和角度范围，而检测器的视觉查询仍然携带关于他们的信息。受到六分仪使用角度测量定位物体的启发，我们提出了Sextant，这是一种即插即用的角度定位头，参数量仅约0.035M。它重用一个冻结的检测器，保持跟踪身份不变，并且不需要额外的图像编码器。在我们的PanoPed-S测试比较中，Sextant取得了最佳结果，将最强基线MOTIP从47.30提升至49.49 HOTA，并在所有八个测试序列中均有提升。在未对真实数据进行微调的情况下，相同的合成训练头在真实视频上将MOTIP和HAT分别提升了0.96-1.14 HOTA，并且两个种子在每个真实序列上均有提升。在比较的系统中，HAT+Sextant在未添加定位图像编码器的情况下获得最佳成绩。",
+  "arxiv_id": "2610.08826",
+  "arxiv_url": "https://arxiv.org/abs/2610.08826v1",
+  "authors": [
+    "Qinfeng Zhu",
+    "Weiguang Zhao",
+    "Yunxi Jiang",
+    "Anh Nguyen",
+    "Lei Fan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-08826",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-08T11:43:52.966753+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08826v1",
+  "published_at": "2026-09-25T17:52:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "sim-to-real",
+      "drone",
+      "无人机"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08826v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "PanoPed: Beyond Bounding Boxes for Sim-to-Real Panoramic Pedestrian Tracking",
+  "title_zh": "PanoPed：超越边界框的全景行人跟踪从仿真到现实",
+  "translation_url": "https://hjfy.top/arxiv/2610.08826"
+}

@@ -1,0 +1,57 @@
+{
+  "abstract": "Collaborative perception extends the sensing range of autonomous vehicles, but its performance degrades when shared features arrive stale or incomplete. Most latency-robust methods compensate delayed collaborator features through flow-guided alignment or direct feature transport. In this work, we formulate asynchronous collaborative perception as temporal residual prediction. Our Temporal Residual Bottleneck keeps a deterministic pose-warped collaborator feature as a conservative anchor and uses a $\\Delta t$-conditioned xLSTM to extract residual temporal evidence from the available history. A detector-facing residual bottleneck then applies only gated, regularized corrections before ego-side fusion, reducing the risk of overwriting reliable static structure when temporal correspondence is uncertain. Experiments on DAIR-V2X and OPV2V show that our method is especially effective under severe fixed/irregular delays and packet drops. On DAIR-V2X, the reported checkpoint trades a small amount of synchronized peak accuracy for better robustness under stronger communication degradation. Controlled diagnostics further indicate that direct feature transport has oracle headroom but can become unreliable when deployed without accurate correspondence. These results support temporal residual fusion as a practical alternative for asynchronous and incomplete collaborative perception. Code will be publicly released at https://url.fzi.de/8dk38.",
+  "abstract_zh": "协作感知扩展了自动驾驶车辆的感知范围，但当共享特征变得过时或不完整时，其性能会下降。大多数抗延迟方法通过流引导对齐或直接特征传输来补偿延迟的协作特征。在本研究中，我们将异步协作感知形式化为时间残差预测。我们的时间残差瓶颈保持一个确定性的姿态扭曲协作特征作为保守锚点，并使用 $ ext{Δ}t$ 条件的 xLSTM 从可用历史中提取残差时间证据。面向检测器的残差瓶颈在自我侧融合之前仅应用门控的正则化修正，从而降低在时间对应不确定时覆盖可靠静态结构的风险。在 DAIR-V2X 和 OPV2V 上的实验表明，我们的方法在严重的固定/不规则延迟和数据包丢失情况下尤其有效。在 DAIR-V2X 上，报告的检查点在更强的通信退化下以较小的同步峰值精度换取了更好的鲁棒性。控制诊断进一步表明，直接特征传输具有理想的潜力，但在没有准确对应的情况下部署时可能变得不可靠。这些结果支持时间残差融合作为异步和不完整协作感知的实用替代方案。代码将公开发布在 https://url.fzi.de/8dk38。",
+  "arxiv_id": "2610.10090",
+  "arxiv_url": "https://arxiv.org/abs/2610.10090v1",
+  "authors": [
+    "Melih Yazgan",
+    "Ahmed Abouelazm",
+    "J. Marius Zöllner"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-10090",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-08T11:43:53.057025+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.10090v1",
+  "published_at": "2026-10-07T13:49:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "v2x",
+      "自动驾驶",
+      "dair-v2x",
+      "opv2v",
+      "autonomous",
+      "驾驶",
+      "车辆",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.10090v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "协同/V2X"
+    ]
+  },
+  "title": "Temporal Residual Bottleneck for Robust Asynchronous Collaborative Perception",
+  "title_zh": "用于鲁棒异步协作感知的时间残差瓶颈",
+  "translation_url": "https://hjfy.top/arxiv/2610.10090"
+}

@@ -1,6 +1,346 @@
 {
-  "generated_at": "2026-10-07T11:29:56.193007+00:00",
+  "generated_at": "2026-10-08T11:45:51.424439+00:00",
   "items": [
+    {
+      "abstract": "Vision-language-action~(VLA) models have emerged as a promising paradigm for autonomous driving. However, existing VLA models still suffer from a fundamental mismatch: driving actions require precise 3D geometric cues, while visual-language understanding and reasoning are largely conducted in a 2D semantic space. In this paper, we propose GeoCoTDrive, an explicit geometric chain-of-thought framework that grounds geometry in a planning-oriented manner. GeoCoTDrive follows a think with 2D first, drive with dedicated 3D priors paradigm. It first grounds 2D regions corresponding to decision-critical cues, and then retrieves localized 3D priors by sampling features from a geometric foundation model within the grounded regions. These localized geometric features are interleaved into the autoregressive context to support the trajectory generation. To supervise this process, we introduce planning-relevant grounding, a new region-level grounding task that focuses on local spatial cues directly affecting ego planning decisions, and construct the PlanningGrounding dataset to endow VLAs with planning-oriented grounding capability. Experiments across multiple end-to-end autonomous driving benchmarks show that GeoCoTDrive consistently improves safety-critical planning performance, demonstrating the effectiveness of the explicit geometric chain-of-thought process for VLA-based planning.",
+      "abstract_zh": "视觉-语言-行动（VLA）模型已成为自主驾驶的一个有前景的范式。然而，现有的VLA模型仍然存在一个基本的不匹配：驾驶行为需要精确的三维几何线索，而视觉-语言理解和推理主要在二维语义空间中进行。本文提出了GeoCoTDrive，一个显式几何思维链框架，以规划导向的方式将几何信息与之结合。GeoCoTDrive遵循‘先用二维思考，再用专用三维先验进行驾驶’的范式。它首先将与决策关键线索对应的二维区域进行定位，然后通过从几何基础模型中采样特征来检索局部三维先验。这些局部几何特征被交错融入自回归上下文中，以支持轨迹生成。为了监督这一过程，我们引入了与规划相关的定位，这是一个新的区域级定位任务，专注于直接影响自我规划决策的局部空间线索，并构建了PlanningGrounding数据集，以赋予VLA规划导向的定位能力。在多个端到端自主驾驶基准测试中的实验表明，GeoCoTDrive始终提高了安全关键的规划性能，证明了显式几何思维链过程在基于VLA的规划中的有效性。",
+      "authors": [
+        "Xingtai Gui",
+        "Yucheng Zhou",
+        "Dongqian Guo",
+        "Jiahao Gong",
+        "Feiyang Tan",
+        "Jianbing Shen"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.10390",
+      "tags": [
+        "预测/规划",
+        "VLM/VLA",
+        "仿真/数据"
+      ],
+      "title": "Explicit Geometric Chain-of-Thought for Vision-Language-Action in Autonomous Driving",
+      "title_zh": "自主驾驶中的视觉-语言-行动显式几何思维链",
+      "url": "/daily/2026-10-08/#paper-2610-10390"
+    },
+    {
+      "abstract": "Semantic segmentation networks operate on a fixed set of classes and therefore fail when out-of-distribution (OOD) objects appear during deployment, a critical limitation for safety-critical applications such as autonomous driving. Reliably identifying OOD objects requires well-calibrated epistemic uncertainty, yet common softmax-based confidence scores remain overconfident, while Bayesian alternatives such as Monte Carlo dropout or deep ensembles require costly repeated forward passes. Evidential Deep Learning (EDL) offers an efficient alternative by modeling class probabilities as a Dirichlet distribution learned from a single deterministic forward pass. Existing EDL formulations rely on Euclidean objectives that push predictions towards the simplex vertices, encouraging overconfidence rather than preserving uncertainty for unfamiliar inputs. We instead employ Wasserstein-based objectives, which respect the geometry of the probability simplex, and study the influence of the Wasserstein order on segmentation accuracy and OOD detection within a unified evidential framework. We evaluate this framework on a convolutional (DeepLabV3+) and a transformer-based (SegFormer) architecture on the SegmentMeIfYouCan benchmark, including LostAndFound, RoadObstacle21, RoadAnomaly21, and Fishyscapes. Our results show the optimal Wasserstein order is architecture-dependent: second-order objectives dominate on the convolutional backbone, third-order objectives on the transformer backbone, and our framework surpasses comparable baselines on most metrics, with a single deterministic forward pass.",
+      "abstract_zh": "语义分割网络在固定类别集上运行，因此在部署过程中出现分布外（OOD）对象时会失败，这对于诸如自动驾驶等安全关键应用来说是一个重要的限制。可靠地识别OOD对象需要良好校准的认知不确定性，然而常见的基于softmax的置信度评分往往过于自信，而贝叶斯替代方法如蒙特卡洛丢弃（Monte Carlo dropout）或深度集成（deep ensembles）则需要昂贵的重复前向传播。证据深度学习（Evidential Deep Learning, EDL）通过将类别概率建模为从单次确定性前向传播中学习的Dirichlet分布，提供了一种高效的替代方案。现有的EDL公式依赖于欧几里得目标，这会将预测推向简单形状的顶点，鼓励过度自信，而不是为不熟悉的输入保留不确定性。相反，我们采用基于Wasserstein的目标，这尊重概率简单形状的几何特性，并在统一的证据框架内研究Wasserstein阶数对分割精度和OOD检测的影响。我们在SegmentMeIfYouCan基准上评估该框架，包括LostAndFound、RoadObstacle21、RoadAnomaly21和Fishyscapes，使用了卷积（DeepLabV3+）和基于变换器（SegFormer）的架构。我们的结果表明，最佳的Wasserstein阶数依赖于架构：在卷积骨干网络上，二阶目标占主导地位，而在变换器骨干网络上，三阶目标更为有效，并且我们的框架在大多数指标上超越了可比基线，且仅需一次确定性前向传播。",
+      "authors": [
+        "Arnold Brosch",
+        "Abdelrahman Eldesokey",
+        "Michael Felsberg",
+        "Kira Maag"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.10116",
+      "tags": [
+        "感知",
+        "安全/异常",
+        "深度/几何"
+      ],
+      "title": "A Probabilistic Perspective on Wasserstein-Based Evidential Uncertainty for Out-of-Distribution Segmentation",
+      "title_zh": "基于Wasserstein的证据不确定性的概率视角：针对分布外分割",
+      "url": "/daily/2026-10-08/#paper-2610-10116"
+    },
+    {
+      "abstract": "Collaborative perception extends the sensing range of autonomous vehicles, but its performance degrades when shared features arrive stale or incomplete. Most latency-robust methods compensate delayed collaborator features through flow-guided alignment or direct feature transport. In this work, we formulate asynchronous collaborative perception as temporal residual prediction. Our Temporal Residual Bottleneck keeps a deterministic pose-warped collaborator feature as a conservative anchor and uses a $\\Delta t$-conditioned xLSTM to extract residual temporal evidence from the available history. A detector-facing residual bottleneck then applies only gated, regularized corrections before ego-side fusion, reducing the risk of overwriting reliable static structure when temporal correspondence is uncertain. Experiments on DAIR-V2X and OPV2V show that our method is especially effective under severe fixed/irregular delays and packet drops. On DAIR-V2X, the reported checkpoint trades a small amount of synchronized peak accuracy for better robustness under stronger communication degradation. Controlled diagnostics further indicate that direct feature transport has oracle headroom but can become unreliable when deployed without accurate correspondence. These results support temporal residual fusion as a practical alternative for asynchronous and incomplete collaborative perception. Code will be publicly released at https://url.fzi.de/8dk38.",
+      "abstract_zh": "协作感知扩展了自动驾驶车辆的感知范围，但当共享特征变得过时或不完整时，其性能会下降。大多数抗延迟方法通过流引导对齐或直接特征传输来补偿延迟的协作特征。在本研究中，我们将异步协作感知形式化为时间残差预测。我们的时间残差瓶颈保持一个确定性的姿态扭曲协作特征作为保守锚点，并使用 $ ext{Δ}t$ 条件的 xLSTM 从可用历史中提取残差时间证据。面向检测器的残差瓶颈在自我侧融合之前仅应用门控的正则化修正，从而降低在时间对应不确定时覆盖可靠静态结构的风险。在 DAIR-V2X 和 OPV2V 上的实验表明，我们的方法在严重的固定/不规则延迟和数据包丢失情况下尤其有效。在 DAIR-V2X 上，报告的检查点在更强的通信退化下以较小的同步峰值精度换取了更好的鲁棒性。控制诊断进一步表明，直接特征传输具有理想的潜力，但在没有准确对应的情况下部署时可能变得不可靠。这些结果支持时间残差融合作为异步和不完整协作感知的实用替代方案。代码将公开发布在 https://url.fzi.de/8dk38。",
+      "authors": [
+        "Melih Yazgan",
+        "Ahmed Abouelazm",
+        "J. Marius Zöllner"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.10090",
+      "tags": [
+        "感知",
+        "多传感器融合",
+        "协同/V2X"
+      ],
+      "title": "Temporal Residual Bottleneck for Robust Asynchronous Collaborative Perception",
+      "title_zh": "用于鲁棒异步协作感知的时间残差瓶颈",
+      "url": "/daily/2026-10-08/#paper-2610-10090"
+    },
+    {
+      "abstract": "Visual foundation models (VFMs) are increasingly integrated into end-to-end autonomous driving for their powerful representations, yet it remains unclear when these representations improve driving performance. To investigate this question, we introduce ViRA, a planner-agnostic visual representation alignment framework that keeps the planner architecture and inference cost unchanged. Our study reveals three findings: (1) VFM-guided visual representations consistently improve driving performance across diverse end-to-end planners, with gains extending to zero-shot closed-loop evaluation. (2) The choice of VFM target matters for planning performance, and alignment to a different VFM can further benefit planners with pre-trained VFM encoders. (3) Auxiliary perception supervision reduces sensitivity to VFM target selection, narrowing the EPDMS spread across five targets from 2.7 to 0.5 points and potentially compensating for less effective VFM targets. Guided by these findings, we develop ViRA-Diffusion, a diffusion-based planner trained without auxiliary perception supervision, which achieves 92.3 EPDMS on NAVSIM v2 navtest, outperforming recent methods in our comparison by at least 1.9 points. The results motivate jointly considering target selection and planner supervision when integrating VFMs into end-to-end autonomous driving. The results and demo are available at https://github.com/OpenDriveLab/ViRA.",
+      "abstract_zh": "视觉基础模型（VFMs）因其强大的表示能力而越来越多地被整合到端到端自主驾驶中，但这些表示何时能改善驾驶性能仍不清楚。为了解决这个问题，我们引入了ViRA，一个与规划器无关的视觉表示对齐框架，它保持规划器架构和推理成本不变。我们的研究揭示了三个发现：（1）VFM引导的视觉表示在多种端到端规划器中始终改善驾驶性能，增益甚至扩展到零样本闭环评估。（2）VFM目标的选择对规划性能至关重要，与不同VFM的对齐可以进一步使带有预训练VFM编码器的规划器受益。（3）辅助感知监督减少了对VFM目标选择的敏感性，将五个目标之间的EPDMS差距从2.7缩小到0.5分，并可能弥补效果较差的VFM目标。根据这些发现，我们开发了ViRA-Diffusion，一个在没有辅助感知监督的情况下训练的基于扩散的规划器，在NAVSIM v2 navtest上达到了92.3的EPDMS，至少比我们比较中的最新方法高出1.9分。结果促使我们在将VFMs整合到端到端自主驾驶时共同考虑目标选择和规划器监督。结果和演示可在https://github.com/OpenDriveLab/ViRA获取。",
+      "authors": [
+        "Zihao Zhang",
+        "Haochen Tian",
+        "Tianyu Li",
+        "Changhui Jing",
+        "Jingliang He",
+        "Naisheng Ye",
+        "Ziyuan Pu",
+        "Zhenjie Yang"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.09695",
+      "tags": [
+        "预测/规划",
+        "感知",
+        "端到端驾驶"
+      ],
+      "title": "Do Better Visual Representations Always Lead to Better End-to-End Autonomous Driving?",
+      "title_zh": "更好的视觉表示是否总是能带来更好的端到端自主驾驶？",
+      "url": "/daily/2026-10-08/#paper-2610-09695"
+    },
+    {
+      "abstract": "Large vision-language models (VLMs) provide powerful open-world perception and reasoning for autonomous driving, but their high computational cost and inference latency make continuous cloud-side use impractical. This motivates fast--slow collaboration, where efficient onboard modules handle real-time perception and control while cloud models provide high-level reasoning only when needed. The key challenge is deciding when cloud reasoning should influence time-critical driving decisions. Existing methods often rely on perception uncertainty, heuristic triggers, or resource-driven policies, without assessing whether resolving an uncertainty will improve planning. We propose \\textbf{SIGMA}, a simulation-in-the-loop framework for task-oriented fast--slow collaboration. SIGMA embeds the planner into uncertainty assessment and evaluates how plausible scene realizations under semantic and geometric uncertainty affect feasible trajectories and planning cost. Based on these outcomes, it estimates the expected reduction in planning cost from resolving uncertainty. We further introduce expected planning gain (EPG), a decision-level metric for cloud invocation, cloud-guidance integration, and request prioritization under deadline and resource constraints. Experiments in CARLA show that SIGMA reduces unnecessary cloud interactions while improving planning, efficiency, and navigation success in static and dynamic obstacle scenarios. Compared with fixed-period collaboration, SIGMA reduces unnecessary cloud interactions by 50\\%, improves navigation success by more than 6\\%, and cuts finish time by up to 26.2\\% in dynamic scenarios.",
+      "abstract_zh": "大型视觉-语言模型（VLMs）为自动驾驶提供了强大的开放世界感知和推理能力，但其高计算成本和推理延迟使得持续的云端使用变得不切实际。这促使了快慢协作的产生，其中高效的车载模块处理实时感知和控制，而云模型仅在需要时提供高层次的推理。关键挑战在于决定何时云推理应影响时间关键的驾驶决策。现有方法通常依赖于感知不确定性、启发式触发或资源驱动的策略，而未评估解决不确定性是否会改善规划。我们提出了 extbf{SIGMA}，一种用于任务导向快慢协作的循环仿真框架。SIGMA将规划者嵌入不确定性评估中，并评估在语义和几何不确定性下，合理场景实现如何影响可行轨迹和规划成本。基于这些结果，它估算了解决不确定性所带来的规划成本预期降低。我们进一步引入了期望规划增益（EPG），这是一个用于云调用、云指导集成和在截止日期与资源约束下请求优先级排序的决策级指标。在CARLA中的实验表明，SIGMA减少了不必要的云交互，同时提高了静态和动态障碍场景下的规划、效率和导航成功率。与固定周期协作相比，SIGMA减少了50 ext{%}的不必要云交互，提高了超过6 ext{%}的导航成功率，并在动态场景中将完成时间缩短了最多26.2 ext{%}。",
+      "authors": [
+        "Jiayi Chen",
+        "Shuai Wang",
+        "Guangxu Zhu",
+        "Derrick Wing Kwan Ng",
+        "Chengzhong Xu",
+        "Kaibin Huang"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.09520",
+      "tags": [
+        "预测/规划",
+        "感知",
+        "VLM/VLA"
+      ],
+      "title": "Not All Uncertainty Matters: Simulation-in-the-Loop Fast-Slow Reasoning for Decision-Critical Autonomous Driving System",
+      "title_zh": "并非所有的不确定性都重要：决策关键型自动驾驶系统的循环仿真快慢推理",
+      "url": "/daily/2026-10-08/#paper-2610-09520"
+    },
+    {
+      "abstract": "Frozen vision-language models increasingly provide safety signals for reinforcement learning. Their use assumes that similarity to language describing danger indicates the hazard itself. Yet policy return and collision rate cannot reveal whether a score detects hazards or responds to correlated features of the scene. VLM-based methods have reported gains in driving and safe-RL benchmarks by converting image-text similarity into rewards, costs, or confidence weights. Such signals promise to reduce reliance on manually designed feedback. They may also reflect prompt structure, embedding geometry, or camera viewpoint, leaving their safety meaning unverified. To address this gap, we present a controlled evaluation of a frozen CLIP prompt-margin safety score. We apply the score to trajectories generated by policies that never receive it, match pre-contact observations to contact-free observations with comparable hazard geometry, and vary the captions, encoder, and camera view. Across three policies, 180 episodes, and 130 isolated contact onsets, the score decreases for about twenty steps before contact. Mechanism controls indicate that the score mainly tracks resemblance to the scene shared by its captions and changes with caption separation and camera view. A constant-confidence control retains the lower catastrophe-rate point estimate, so policy gains do not establish hazard perception.",
+      "abstract_zh": "冻结的视觉-语言模型越来越多地为强化学习提供安全信号。它们的使用假设与描述危险的语言相似性表明了危险本身。然而，政策回报和碰撞率无法揭示一个评分是否检测到危险，或是对场景的相关特征做出反应。基于视觉-语言模型（VLM）的方法通过将图像-文本相似性转化为奖励、成本或置信权重，在驾驶和安全强化学习基准测试中报告了收益。这些信号有望减少对手动设计反馈的依赖。它们也可能反映提示结构、嵌入几何或相机视角，使其安全含义未得到验证。为了解决这一问题，我们提出了对一个冻结的CLIP提示边际安全评分的控制评估。我们将该评分应用于从未接收到该评分的策略生成的轨迹，将接触前的观察与具有可比危险几何的无接触观察进行匹配，并改变标题、编码器和相机视角。在三个策略、180个回合和130个孤立接触起始点中，该评分在接触前约二十步内下降。机制控制表明，该评分主要跟踪与其标题共享的场景的相似性，并随着标题分离和相机视角的变化而变化。一个常量置信控制保留了较低灾难率的点估计，因此政策收益并未建立危险感知。",
+      "authors": [
+        "Samuel Tetteh",
+        "Cody Fleming"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.09517",
+      "tags": [
+        "安全/异常",
+        "VLM/VLA",
+        "端到端驾驶"
+      ],
+      "title": "It Is Not Seeing the Hazard: A Frozen Vision-Language Safety Score Measures Its Caption Bank",
+      "title_zh": "看不到危险：一个冻结的视觉-语言安全评分衡量其描述库",
+      "url": "/daily/2026-10-08/#paper-2610-09517"
+    },
+    {
+      "abstract": "Pixel-space diffusion models avoid the lossy VAE of latent models, which suggests an advantage on downstream tasks where fine-grained detail matters. We test this claim along both routes to a pixel-space backbone. We pretrain Iris-3B, a 3B-parameter pixel-space text-to-image transformer, from scratch through a $256\\to512\\to1024$ curriculum, after first ablating the prediction target and representation alignment at $256^2$ to decide what to scale. We also convert a pretrained latent model, FLUX.2 Klein base 4B, to pixel space. We fine-tune both families for monocular depth estimation and for image restoration/super-resolution. We find no significant improvement from using a pixel-space generative prior. Fine-tuned for depth with one matched direct-regression recipe, Iris-3B is level with the latent FLUX.2 Klein and the converted pixel FLUX.2 Klein falls behind it, and on $4\\times$ DIV2K restoration neither pixel model beats a latent FLUX.2 Klein fine-tune, the converted one trailing it slightly. We document the recipes, the failure modes and the remaining confounds behind this negative result. Nevertheless, Iris-3B shows that pixel-space pretraining with the pixel-transformer (PiT) head of PixelDiT scales to 3B parameters and to text-to-image quality competitive with latent models, matching Qwen-Image on OneIG under the official evaluators at $1024^2$. We release its weights and training code in the hope that they help pave the way for further work on pixel-space generation.",
+      "abstract_zh": "像素空间扩散模型避免了潜在模型的有损变分自编码器（VAE），这在细节至关重要的下游任务中显示出优势。我们沿着两条路径测试这一主张，以建立像素空间基础。我们从头开始预训练Iris-3B，一个具有30亿参数的像素空间文本到图像变换器，通过$256 o512 o1024$的课程，首先在$256^2$上消融预测目标和表示对齐，以决定扩展的内容。我们还将一个预训练的潜在模型FLUX.2 Klein base 4B转换为像素空间。我们对这两类模型进行了微调，以进行单目深度估计和图像恢复/超分辨率。我们发现使用像素空间生成先验并没有显著改善。经过与一个匹配的直接回归方案微调后，Iris-3B的深度估计与潜在的FLUX.2 Klein相当，而转换后的像素FLUX.2 Klein稍微落后于它，在$4 imes$ DIV2K恢复任务中，两个像素模型均未能超越潜在的FLUX.2 Klein微调，转换后的模型稍微落后。我们记录了这些方案、失败模式以及导致这一负面结果的剩余混淆因素。尽管如此，Iris-3B表明，使用PixelDiT的像素变换器（PiT）头进行像素空间预训练可以扩展到30亿参数，并在文本到图像质量上与潜在模型竞争，在官方评估者的$1024^2$下与Qwen-Image相匹配。我们发布了其权重和训练代码，希望能为进一步的像素空间生成工作铺平道路。",
+      "authors": [
+        "Hanqiu Li Cai",
+        "Chema Garabito"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.09450",
+      "tags": [
+        "深度/几何",
+        "世界模型/生成"
+      ],
+      "title": "Iris-3B: Going Beyond the Latent with Pixel-Space Diffusion Training, Conversion and Fine-Tuning",
+      "title_zh": "Iris-3B：超越潜在空间的像素空间扩散训练、转换与微调",
+      "url": "/daily/2026-10-08/#paper-2610-09450"
+    },
+    {
+      "abstract": "Forecasting future 3D occupancy from surround-view cameras is essential for autonomous driving, yet existing approaches rely on dense voxel or bird's-eye-view representations whose cost grows rapidly with spatial resolution and prediction horizon. Because these representations do not explicitly maintain object identities, they also struggle to preserve instance consistency over time. We present LighTROcc, a lightweight instance-centric framework that represents movable objects with a compact set of learned queries and predicts present and future occupancy in a single forward pass. LighTROcc localizes each query through attention-guided forward lifting, combining image-space cross-attention, query-specific depth, and camera geometry to estimate its 3D center. Each instance is modeled as a mixture of anisotropic 3D Gaussians and propagated across future steps using predicted displacements, producing continuous, temporally consistent occupancy forecasts. Experiments on nuScenes and supplemented nuScenes-Occupancy show that LighTROcc outperforms the evaluated dense and instance-wise baselines in instance-level forecasting accuracy while maintaining strong voxel-level occupancy quality. Across different model configurations, LighTROcc achieves a favorable balance between forecasting accuracy and computational efficiency, demonstrating the potential of compact instance-centric modeling for camera-based 4D occupancy forecasting.",
+      "abstract_zh": "从全景摄像头预测未来的3D占用对于自动驾驶至关重要，但现有方法依赖于密集体素或鸟瞰图表示，这些表示的成本随着空间分辨率和预测范围的增加而迅速增长。由于这些表示并未明确维护物体身份，因此在时间上也难以保持实例一致性。我们提出了LighTROcc，一个轻量级的实例中心框架，通过一组紧凑的学习查询表示可移动物体，并在单次前向推理中预测当前和未来的占用。LighTROcc通过注意力引导的前向提升定位每个查询，结合图像空间的交叉注意力、查询特定的深度和相机几何来估计其3D中心。每个实例被建模为各向异性3D高斯的混合体，并通过预测的位移在未来步骤中传播，从而生成连续、时间一致的占用预测。在nuScenes和补充的nuScenes-Occupancy上的实验表明，LighTROcc在实例级预测准确性方面优于评估的密集和实例级基准，同时保持强大的体素级占用质量。在不同的模型配置中，LighTROcc在预测准确性和计算效率之间实现了良好的平衡，展示了基于紧凑实例中心建模的摄像头4D占用预测的潜力。",
+      "authors": [
+        "Hwanhee Jung",
+        "SeungHyeon Kim",
+        "Inkyu Koo",
+        "Qixing Huang",
+        "Sang Ho Yoon",
+        "Sangpil Kim"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.09444",
+      "tags": [
+        "深度/几何",
+        "BEV/Occupancy",
+        "地图/定位"
+      ],
+      "title": "LighTROcc: Lightweight 4D Occupancy Forecasting via Instance-Centric 3D Gaussians",
+      "title_zh": "LighTROcc：通过实例中心的3D高斯实现轻量级4D占用预测",
+      "url": "/daily/2026-10-08/#paper-2610-09444"
+    },
+    {
+      "abstract": "Crowd simulation plays a central role in robot navigation, autonomous driving, and urban planning. For these applications, realistic simulation requires crowds to adapt their behavior to environmental changes and user objectives. However, existing methods that rely on predefined control settings have limited flexibility in accommodating new user-specified objectives. To address this limitation, we propose Ctrl-CWM, a multi-agent Controllable Crowd World Model that integrates crowd generation and run-time control. Our key idea is to adapt the world-model principle of planning using imagined futures to crowd simulation. To this end, Ctrl-CWM consists of an encoder that learns a representation of human motion dynamics, an actor that proposes pedestrian displacements, a critic that evaluates imagined crowd trajectories, and a planner that selects actions. We first learn human motion dynamics through trajectory prediction on real-world pedestrian videos and then freeze the encoder to preserve them. Using this representation, the actor generates imagined crowd trajectories through repeated state updates, and the planner combines the critic's scores with user costs to select actions. Repeated planning advances the simulated crowd, while additional user costs introduce new control objectives without retraining. We extensively evaluate crowd generation under varied agent arrival conditions and run-time control across avoidance and attraction scenarios. Ctrl-CWM outperforms the state-of-the-art method on most crowd realism and collision metrics, and adapts crowd behaviors to user-specified objectives introduced during simulation. The project page is available at https://jungyu0413.github.io/Ctrl-CWM",
+      "abstract_zh": "人群模拟在机器人导航、自动驾驶和城市规划中发挥着核心作用。对于这些应用，现实的模拟要求人群能够根据环境变化和用户目标调整其行为。然而，现有依赖于预定义控制设置的方法在适应新的用户指定目标方面灵活性有限。为了解决这一局限性，我们提出了Ctrl-CWM，一个多智能体可控人群世界模型，集成人群生成和实时控制。我们的关键思想是将使用想象未来的世界模型规划原则应用于人群模拟。为此，Ctrl-CWM由一个学习人类运动动态表示的编码器、一个提出行人位移的执行者、一个评估想象人群轨迹的评论者和一个选择行动的规划者组成。我们首先通过对真实世界行人视频的轨迹预测学习人类运动动态，然后冻结编码器以保留这些动态。利用这一表示，执行者通过重复状态更新生成想象的人群轨迹，而规划者将评论者的评分与用户成本结合以选择行动。重复规划推动模拟人群的前进，而额外的用户成本在不重新训练的情况下引入新的控制目标。我们在不同的代理到达条件下广泛评估人群生成，并在避让和吸引场景中进行实时控制。Ctrl-CWM在大多数人群真实感和碰撞指标上优于现有最先进的方法，并能够将人群行为适应于模拟过程中引入的用户指定目标。项目页面可访问：https://jungyu0413.github.io/Ctrl-CWM",
+      "authors": [
+        "JunGyu Lee",
+        "Jisu Shin",
+        "Seunghyun Shin",
+        "Hae-Gon Jeon"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.09438",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "仿真/数据"
+      ],
+      "title": "Controllable Crowd Generation through World-Model Planning",
+      "title_zh": "通过世界模型规划实现可控人群生成",
+      "url": "/daily/2026-10-08/#paper-2610-09438"
+    },
+    {
+      "abstract": "Rapid progress in AI agents has brought growing attention to agent safety, with extensive evaluation focused on digital environments. As agents move into the physical world, embodied safety becomes increasingly important: failures can cause human injury and costly hardware damage. Beyond selecting safe actions, embodied agents must also operate under real-time constraints: the physical world does not pause while an agent reasons. As pedestrians move and vehicles approach during inference, an action that appears safe at observation time may become unsafe before execution. Real-time embodied safety therefore depends on both decision quality and decision latency. We introduce RT-SAFE, a simulated urban benchmark for evaluating embodied-agent safety under real-time constraints. RT-SAFE combines navigation tasks with moving actors, environmental hazards, and traffic rules, while allowing the world to evolve throughout inference and action execution. Across eight VLMs, agents achieve high task completion yet almost never complete safely: in the hardest setting, only 0.7% of episodes finish without a safety event. More strikingly, matched static and real-time evaluations yield task completion rates of 91.3% and 94.1%, respectively, while real-time execution increases collisions by $12.3\\times$. These results reveal that standard task success can mask substantial safety failures, and that decision latency itself can become a source of physical risk. Finally, we show that RT-SAFE can support offline RL training and substantially reduce collision rates while achieving strong task completion.",
+      "abstract_zh": "人工智能代理的快速进展引起了对代理安全性日益增长的关注，现有的广泛评估主要集中在数字环境中。随着代理进入物理世界，具身安全变得愈发重要：失败可能导致人身伤害和昂贵的硬件损坏。除了选择安全的行动外，具身代理还必须在实时约束下操作：物理世界在代理推理时并不会暂停。当行人移动和车辆接近时，在观察时看似安全的行动在执行前可能变得不安全。因此，实时具身安全依赖于决策质量和决策延迟。我们引入了RT-SAFE，这是一个模拟城市基准，用于评估在实时约束下的具身代理安全性。RT-SAFE结合了导航任务、移动参与者、环境危害和交通规则，同时允许世界在推理和行动执行过程中不断演变。在八个视觉语言模型（VLMs）中，代理实现了高任务完成率，但几乎从未安全完成：在最困难的设置中，只有0.7%的回合在没有安全事件的情况下结束。更引人注目的是，静态评估和实时评估的任务完成率分别为91.3%和94.1%，而实时执行则使碰撞增加了12.3倍。这些结果表明，标准任务成功可能掩盖了重大的安全失败，而决策延迟本身也可能成为物理风险的来源。最后，我们展示了RT-SAFE可以支持离线强化学习训练，并在实现强大任务完成的同时显著降低碰撞率。",
+      "authors": [
+        "Tianruo Rose Xu",
+        "Jiawei Ren",
+        "Yichi Yang",
+        "Zhaoxu Zheng",
+        "Lianhui Qin"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.09294",
+      "tags": [
+        "安全/异常",
+        "仿真/数据",
+        "VLM/VLA"
+      ],
+      "title": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
+      "title_zh": "RT-Safe：实时具身环境中代理安全性的基准测试",
+      "url": "/daily/2026-10-08/#paper-2610-09294"
+    },
+    {
+      "abstract": "Topology reasoning jointly detects 3D lanes and traffic elements from multi-view images and infers their structural connectivity. Current methods model lanes as discrete polylines, lacking smoothness, analytical tangent directions, and global spatial support for attention, while providing sparse topology supervision. We propose TopoCurve, a geometry-driven architecture for 3D topology reasoning grounded in a structured parametric lane representation. Lanes are modeled as endpoint-fixed cubic B\\'ezier curves, enabling continuous geometry with exact endpoints and analytically defined directionality. We exploit this shared curve geometry across the entire pipeline. Endpoint distance and tangent alignment are encoded with multi-scale Fourier features and injected into the topology head. Sampled curve points serve as geometry-aligned references for deformable cross-attention spanning the full lane. Parallel curve-anchored attention branches provide diverse predictions for one-to-many topology supervision. These components form a tightly coupled cascade where representation enables geometric reasoning, guides feature aggregation, and supports denser supervision. TopoCurve achieves 50.6 OLS on the OpenLane-V2 benchmark without any post-processing, establishing a new state-of-the-art among end-to-end camera-only methods, and outperforms all existing approaches on endpoint detection (56.8 vs. 52.6 on DET_p).",
+      "abstract_zh": "拓扑推理通过多视角图像联合检测三维车道和交通元素，并推断其结构连接性。目前的方法将车道建模为离散的多边形线，缺乏平滑性、解析切线方向和全局空间支持，同时提供稀疏的拓扑监督。我们提出了TopoCurve，一种基于结构化参数化车道表示的几何驱动架构，用于三维拓扑推理。车道被建模为端点固定的三次贝塞尔曲线，使得几何形状连续，具有精确的端点和解析定义的方向性。我们在整个流程中利用这种共享的曲线几何。端点距离和切线对齐通过多尺度傅里叶特征编码，并注入到拓扑头中。采样的曲线点作为几何对齐的参考，用于跨越整个车道的可变形交叉注意力。平行的曲线锚定注意力分支为一对多的拓扑监督提供多样化的预测。这些组件形成一个紧密耦合的级联，其中表示促进几何推理，指导特征聚合，并支持更密集的监督。TopoCurve在OpenLane-V2基准测试中实现了50.6的OLS，无需任何后处理，确立了端到端仅使用摄像头的方法中的新状态，并在端点检测上超越了所有现有方法（56.8对比52.6在DET_p上）。",
+      "authors": [
+        "Mihai Bogdan Deaconu",
+        "Laura Dioşan"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.09118",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "端到端驾驶"
+      ],
+      "title": "TopoCurve: Geometry-Aware Topology Reasoning via B\\'ezier Curves in Autonomous Driving",
+      "title_zh": "TopoCurve：基于贝塞尔曲线的几何感知拓扑推理在自动驾驶中的应用",
+      "url": "/daily/2026-10-08/#paper-2610-09118"
+    },
+    {
+      "abstract": "Reliable robotic disassembly requires part-level representations that distinguish genuine component geometry from scanning and reconstruction artifacts. In point clouds of hard disk drives (HDDs), structured ghost artifacts can resemble valid components locally while remaining inconsistent with the overall geometry, allowing erroneous measurements to receive plausible semantic labels. This creates an engineering information problem: semantic prediction confidence alone does not establish whether the underlying geometry is reliable. We propose \\textbf{GUARD}, a geometric uncertainty-aware framework that performs point filtering and segmentation within a single forward pass by modeling the reliability of learned geometric representations. GUARD combines a multi-scale geometric transformer with a multi-bandwidth random Fourier feature Gaussian Process to estimate per-point geometric uncertainty, complemented by predictive entropy to suppress unreliable measurements while preserving informative structures. Evaluation on 2,745 real HDD point clouds shows that GUARD improves PointNet++ segmentation mean intersection over union from 0.7739 to 0.8318. Additional experiments on ShapeNetPart and ScanNet examine robustness across corruption types, point-cloud domains, and segmentation backbones. On manually annotated ScanNet samples, geometric uncertainty achieves a corrupted-point detection F1 score of 0.7931, compared with 0.2212 for predictive entropy. The results demonstrate the value of distinguishing geometric reliability from semantic confidence and reveal a tradeoff between artifact suppression and preservation of informative structures. GUARD contributes a reliability-aware approach to interpreting imperfect 3D measurements for component identification and subsequent robotic handling. Project website: https://001-wang.github.io/GUARD_Point_denoiser/.",
+      "abstract_zh": "可靠的机器人拆卸需要能够区分真实组件几何形状与扫描和重建伪影的部件级表示。在硬盘驱动器（HDD）的点云中，结构化的伪影在局部上可能与有效组件相似，但与整体几何形状不一致，从而导致错误的测量结果获得合理的语义标签。这造成了一个工程信息问题：仅凭语义预测的置信度无法确定底层几何形状的可靠性。我们提出了 extbf{GUARD}，一种几何不确定性感知框架，通过建模学习到的几何表示的可靠性，在单次前向传递中执行点过滤和分割。GUARD结合了多尺度几何变换器和多带宽随机傅里叶特征高斯过程，以估计每个点的几何不确定性，并辅以预测熵以抑制不可靠的测量，同时保留信息结构。在2,745个真实HDD点云上的评估表明，GUARD将PointNet++的分割平均交并比从0.7739提高到0.8318。对ShapeNetPart和ScanNet的额外实验考察了在不同损坏类型、点云域和分割骨干网络下的鲁棒性。在手动注释的ScanNet样本中，几何不确定性实现了0.7931的损坏点检测F1分数，而预测熵为0.2212。结果表明区分几何可靠性与语义置信度的价值，并揭示了伪影抑制与信息结构保留之间的权衡。GUARD为解释不完美的3D测量以进行组件识别和后续机器人处理提供了一种关注可靠性的方法。项目网站：https://001-wang.github.io/GUARD_Point_denoiser/",
+      "authors": [
+        "Zuoxu Wang",
+        "Xiao Liang"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.09068",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "LiDAR/点云"
+      ],
+      "title": "GUARD: Geometric Uncertainty-Aware Point Cloud Denoising and Segmentation for Robotic Hard Disk Drive Disassembly",
+      "title_zh": "GUARD：用于机器人硬盘驱动器拆卸的几何不确定性感知点云去噪与分割",
+      "url": "/daily/2026-10-08/#paper-2610-09068"
+    },
+    {
+      "abstract": "Deep-space crews cannot rely on real-time ground support for urgent off-nominal events. Initial alerts may underdetermine cause, while discriminating evidence may reside in crew observations or at locations that are unsafe, costly, or unavailable for crew inspection. We present an evidence-driven architecture for human-agent-robot teaming in Earth-independent anomaly triage. Agentic AI is treated as a stateful coordinator over bounded, inspectable services rather than as a fully autonomous vehicle controller. A triage state manager maintains hypotheses, evidence provenance, uncertainty, operational context, and tool status; a crew-facing embodied agent elicits observations and explains assessment changes; and a mobile robot acquires targeted, localized evidence. Typed interfaces separate dialogue and orchestration from monitoring, robot command, context retrieval, and safety-critical control. Two scenarios illustrate the architecture: a crewed deep-space mission based on an actual ISS ammonia false alarm, where suspected contamination restricts crew access, and a power-interface anomaly at a crewed lunar base, where robotic inspection distinguishes a local connector fault from other causes ambiguous in remote telemetry. Our main contribution is an authority-bounded closed evidence-loop architecture, exercised in a hardware-in-the-loop integration prototype using Reachy Mini and an Innate MARS mobile robot.",
+      "abstract_zh": "深空任务的船员无法依赖实时的地面支持来应对紧急的非正常事件。初步警报可能无法确定原因，而有价值的证据可能存在于船员的观察中，或位于不安全、成本高昂或无法供船员检查的位置。我们提出了一种证据驱动的人机机器人团队协作架构，用于地球独立的异常分类。在该架构中，智能代理被视为对有限、可检查服务的有状态协调者，而非完全自主的车辆控制器。分类状态管理器维护假设、证据来源、不确定性、操作背景和工具状态；面向船员的具身代理引导观察并解释评估变化；移动机器人获取针对性的、局部的证据。类型化接口将对话和协调与监控、机器人指令、上下文检索和安全关键控制分开。两个场景展示了该架构：一个基于实际国际空间站氨气误报的载人深空任务，其中怀疑的污染限制了船员的接触；另一个是在载人月球基地的电源接口异常，机器人检查区分了局部连接器故障与远程遥测中模糊的其他原因。我们的主要贡献是一个权威边界的闭合证据循环架构，该架构在使用Reachy Mini和Innate MARS移动机器人的硬件在环集成原型中得以实现。",
+      "authors": [
+        "Ignacio G Lopez-Francos",
+        "Alexis Gallagher",
+        "Samira Shalal"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.08933",
+      "tags": [
+        "安全/异常"
+      ],
+      "title": "Toward Evidence-Driven Human-Agent-Robot Teaming for Earth-Independent Anomaly Triage",
+      "title_zh": "面向证据驱动的人机机器人团队协作以应对地球独立的异常分类",
+      "url": "/daily/2026-10-08/#paper-2610-08933"
+    },
+    {
+      "abstract": "Self-driving laboratories (SDLs) are transforming chemical and materials discovery through closed-loop automation, yet automated infrastructure for physical manipulation of soft, deformable matter remains beyond current robotic platforms. A critical instance is autonomous droplet transport on an open surface, where contact-angle hysteresis, capillary pinning, and surface heterogeneity produce partially observable dynamics that pose significant challenges for classical model-based controllers. We introduce the first robotic platform for closed-loop autonomous liquid droplet navigation on an open, unconfined surface using model-based reinforcement learning. A two-axis tilting board coated with a thin silicone oil film drives the droplet, while an overhead camera provides real-time feedback. A learned policy was trained on just 50 to 150 physical episodes depending on geometric complexity, without simulation or analytical models. Beyond performance alone, the platform demonstrates three capabilities of interest to the SDL community: it robustly transfers zero-shot to unseen geometries; it autonomously discovers an oscillatory depinning strategy to free the droplet when it sticks; and it completes its full training pipeline in under 90 minutes. These results extend reinforcement-learning manipulation from rigid microrobots to deformable soft-matter systems for next-generation SDLs.",
+      "abstract_zh": "自驱动实验室（SDL）通过闭环自动化正在改变化学和材料的发现，然而，针对软性可变形物质的物理操作的自动化基础设施仍超出当前机器人平台的能力。一种关键情况是开放表面上的自主液滴运输，其中接触角滞后、毛细钉扎和表面异质性产生部分可观测的动态，这对经典的基于模型的控制器构成了重大挑战。我们介绍了第一个用于开放、无约束表面上闭环自主液滴导航的机器人平台，该平台采用基于模型的强化学习。一个涂有薄硅油膜的双轴倾斜板驱动液滴，而一个悬挂摄像头提供实时反馈。学习策略的训练仅依赖于50到150个物理实验，具体数量取决于几何复杂性，且没有使用仿真或解析模型。除了性能本身，该平台还展示了三个对SDL社区感兴趣的能力：它能够稳健地实现零样本迁移到未见几何形状；它自主发现了一种振荡去钉策略，以在液滴粘附时将其释放；并且它在90分钟内完成了整个训练流程。这些结果将强化学习操作从刚性微型机器人扩展到可变形软物质系统，为下一代SDL提供了新的可能性。",
+      "authors": [
+        "Rajneesh Anand",
+        "Mayuresh V. Kothare"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.08852",
+      "tags": [
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "Autonomous Droplet Navigation via Model-Based Reinforcement Learning: Zero-Shot Transfer and Emergent Dynamics",
+      "title_zh": "基于模型的强化学习实现自主液滴导航：零样本迁移与涌现动力学",
+      "url": "/daily/2026-10-08/#paper-2610-08852"
+    },
+    {
+      "abstract": "Full-sphere panoramic cameras let fixed monitoring systems and mobile robots track people in every direction, but a planar bounding box does not fully describe where a person is on the sphere. We introduce PanoPed, a sim-to-real benchmark for pedestrian tracking on the full sphere. PanoPed-S contains 108,000 frames from fixed, quadruped-mounted, and drone-mounted cameras, with synchronized masks, depth, camera poses, and 3D pedestrian states. PanoPed-R adds 28,002 real frames from fixed cameras, 16,247 of them densely annotated. We find that an ERP rectangle cannot uniquely determine the spherical center and angular extent of the visible person, while the detector's visual query still carries information about them. Inspired by the sextant's use of angular measurements to locate objects, we propose Sextant, a plug-and-play angular localization head with only about 0.035M parameters. It reuses a frozen detector, keeps track identities unchanged, and needs no extra image encoder. Sextant gives the best result in our PanoPed-S test comparison, raising the strongest baseline, MOTIP, from 47.30 to 49.49 HOTA, with gains on all eight test sequences. Without fine-tuning on real data, the same synthetic-trained heads improve MOTIP and HAT by 0.96-1.14 HOTA on real video, and both seeds improve every real sequence. HAT+Sextant scores best among the compared systems that add no localization image encoder.",
+      "abstract_zh": "全球面全景相机使固定监控系统和移动机器人能够在各个方向上跟踪行人，但平面边界框并不能完全描述一个人在球面上的位置。我们提出了PanoPed，这是一个针对全球面行人跟踪的从仿真到现实的基准。PanoPed-S包含来自固定、四足动物装载和无人机装载相机的108,000帧图像，配有同步的掩膜、深度信息、相机姿态和3D行人状态。PanoPed-R则增加了来自固定相机的28,002帧真实图像，其中16,247帧经过密集标注。我们发现，ERP矩形无法唯一确定可见行人的球心和角度范围，而检测器的视觉查询仍然携带关于他们的信息。受到六分仪使用角度测量定位物体的启发，我们提出了Sextant，这是一种即插即用的角度定位头，参数量仅约0.035M。它重用一个冻结的检测器，保持跟踪身份不变，并且不需要额外的图像编码器。在我们的PanoPed-S测试比较中，Sextant取得了最佳结果，将最强基线MOTIP从47.30提升至49.49 HOTA，并在所有八个测试序列中均有提升。在未对真实数据进行微调的情况下，相同的合成训练头在真实视频上将MOTIP和HAT分别提升了0.96-1.14 HOTA，并且两个种子在每个真实序列上均有提升。在比较的系统中，HAT+Sextant在未添加定位图像编码器的情况下获得最佳成绩。",
+      "authors": [
+        "Qinfeng Zhu",
+        "Weiguang Zhao",
+        "Yunxi Jiang",
+        "Anh Nguyen",
+        "Lei Fan"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.08826",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "深度/几何"
+      ],
+      "title": "PanoPed: Beyond Bounding Boxes for Sim-to-Real Panoramic Pedestrian Tracking",
+      "title_zh": "PanoPed：超越边界框的全景行人跟踪从仿真到现实",
+      "url": "/daily/2026-10-08/#paper-2610-08826"
+    },
+    {
+      "abstract": "Autonomous driving has made remarkable progress, with recent AI advances enabling commercial deployments that are reshaping urban mobility. Yet the field remains far from its universal social promise: autonomous systems that can operate robustly anywhere, anytime, for anyone. We posit that this gap is not merely a modeling problem, but a problem of the prevailing data paradigm. Current research relies heavily on a few benchmark datasets with limited spatial and scenario coverage, even though the community has collectively produced over 600 autonomous driving datasets across nearly 50 countries. However, this abundance has not translated into broad research impact: most datasets remain significantly underused due to fragmentation, limited visibility, incompatible protocols, and benchmark incentives that concentrate attention on a few dominant datasets. We therefore argue that autonomous driving research requires a collaborative, community-driven data paradigm. Such a paradigm would improve the discovery, reuse, integration, and evaluation of diverse datasets; make underexplored data easier and more rewarding to study; and lower the barrier for new contributors. We outline its key principles, illustrate an early realization, and call for collaboration across academia and industry to transform fragmented datasets into shared community infrastructure for anytime-anywhere autonomy.",
+      "abstract_zh": "自主驾驶取得了显著进展，近期的人工智能技术进步使得商业部署成为可能，正在重塑城市出行。然而，该领域距离其普遍的社会承诺仍然相去甚远：自主系统能够在任何时间、任何地点、为任何人稳健运行。我们认为，这一差距不仅仅是建模问题，而是当前数据范式的问题。现有研究在很大程度上依赖于少数具有有限空间和场景覆盖的基准数据集，尽管社区已经共同生成了超过600个自主驾驶数据集，覆盖近50个国家。然而，这种丰富性并没有转化为广泛的研究影响：大多数数据集由于碎片化、可见性有限、不兼容的协议以及集中关注少数主导数据集的基准激励而显著未被利用。因此，我们认为自主驾驶研究需要一个协作的、以社区为驱动的数据范式。这样的范式将改善各种数据集的发现、重用、整合和评估；使得未被充分探索的数据更易于研究并更具回报；并降低新贡献者的门槛。我们概述了其关键原则，展示了早期实现的实例，并呼吁学术界和工业界的合作，将碎片化的数据集转变为共享的社区基础设施，以实现随时随地的自主性。",
+      "authors": [
+        "Jinsu Yoo",
+        "Zanming Huang",
+        "Katie Z Luo",
+        "Zheda Mai",
+        "Qiyuan Wu",
+        "Bharath Hariharan",
+        "Mark Campbell",
+        "Wei-Lun Chao"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.08825",
+      "tags": [
+        "仿真/数据",
+        "世界模型/生成"
+      ],
+      "title": "Autonomous Driving Research Requires a Community-Driven Data Paradigm",
+      "title_zh": "自主驾驶研究需要以社区为驱动的数据范式",
+      "url": "/daily/2026-10-08/#paper-2610-08825"
+    },
+    {
+      "abstract": "We present Go2-DrivoR, a goal-conditioned adaptation of the end-to-end autonomous driving trajectory planning framework DrivoR for urban navigation with quadrupedal robots. By conditioning trajectory generation on a local-frame subgoal through a goal token and adapting the vehicle-centric scoring formulation, the method extends DrivoR to short-horizon goal-conditioned local planning without redesigning its core decoders. Specifically, we redefine drivable-area compliance for sidewalk-oriented navigation and reformulate the original ego progress term as goal-conditioned ego progress. Trained exclusively on TartanGround simulation data, Go2-DrivoR improves waypoint-conditioned planning performance on unseen simulation environments and transfers zero-shot to open-loop real-world trajectory prediction.",
+      "abstract_zh": "我们提出了Go2-DrivoR，这是一个基于目标条件的适应性框架，将端到端自主驾驶轨迹规划框架DrivoR应用于四足机器人在城市导航中的任务。通过通过目标标记对局部框架子目标进行条件化轨迹生成，并调整以车辆为中心的评分公式，该方法扩展了DrivoR，使其能够在不重新设计核心解码器的情况下进行短期目标条件的局部规划。具体而言，我们重新定义了适合人行道导航的可行驶区域合规性，并将原始自我进展项重新公式化为目标条件的自我进展。在仅使用TartanGround仿真数据进行训练的情况下，Go2-DrivoR在未见过的仿真环境中提高了基于航点的规划性能，并实现了零样本转移到开放环路的真实世界轨迹预测。",
+      "authors": [
+        "Joochan Kim",
+        "Chanuk Yang",
+        "Tackgeun You",
+        "Ziran Wang",
+        "Hwasup Lim"
+      ],
+      "date": "2026-10-08",
+      "id": "2610.08812",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "仿真/数据"
+      ],
+      "title": "Taming an End-to-End Autonomous Driving Policy for Urban Navigation of Quadruped Robots",
+      "title_zh": "驯化端到端自主驾驶策略以实现四足机器人在城市导航中的应用",
+      "url": "/daily/2026-10-08/#paper-2610-08812"
+    },
     {
       "abstract": "High-beam-count LiDAR sensors are costly, yet many perception pipelines require dense angular sampling. Using a pretrained Stable Diffusion model as the backbone, we fine-tune a LiDAR-conditioned depth model with pseudo-depth targets from a 2D foundation model. During training, the LiDAR conditioning is randomly decimated at different beam budgets. We then investigate how much of a LiDAR scan can be recovered from heavily decimated input and characterize performance across the input beam budget. We evaluate against physically held-out real beams on nuScenes and report recovery separately from fit accuracy. Our model yields its largest advantage in very sparse regimes, achieving a $\\delta_{1.25}$ accuracy of $66.8$% from $4$-beam input where scattered interpolation reaches only $45.1$%. A class-stratified error breakdown further reveals that planar surfaces recover first while objects introducing depth discontinuities degrade earliest. Together, these results quantify the recovery/resolution trade-off for foundation-model-guided LiDAR enhancement.",
       "abstract_zh": "高光束计数的LiDAR传感器成本高昂，但许多感知管道需要密集的角度采样。我们使用预训练的Stable Diffusion模型作为骨干，微调一个基于LiDAR的深度模型，该模型利用来自2D基础模型的伪深度目标。在训练过程中，LiDAR条件随机以不同的光束预算进行降采样。我们随后研究在重度降采样输入下，能够恢复多少LiDAR扫描，并对输入光束预算的性能进行表征。我们在nuScenes上对真实光束进行物理保留评估，并将恢复结果与拟合精度分开报告。我们的模型在非常稀疏的情况下表现出最大的优势，在4光束输入下实现了66.8%的$ ext{δ}_{1.25}$精度，而散点插值仅达到45.1%。分类分层的错误分析进一步揭示，平面表面最先恢复，而引入深度不连续的物体最早降解。综合来看，这些结果量化了基于基础模型引导的LiDAR增强的恢复/分辨率权衡。",

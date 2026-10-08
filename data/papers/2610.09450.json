@@ -1,0 +1,50 @@
+{
+  "abstract": "Pixel-space diffusion models avoid the lossy VAE of latent models, which suggests an advantage on downstream tasks where fine-grained detail matters. We test this claim along both routes to a pixel-space backbone. We pretrain Iris-3B, a 3B-parameter pixel-space text-to-image transformer, from scratch through a $256\\to512\\to1024$ curriculum, after first ablating the prediction target and representation alignment at $256^2$ to decide what to scale. We also convert a pretrained latent model, FLUX.2 Klein base 4B, to pixel space. We fine-tune both families for monocular depth estimation and for image restoration/super-resolution. We find no significant improvement from using a pixel-space generative prior. Fine-tuned for depth with one matched direct-regression recipe, Iris-3B is level with the latent FLUX.2 Klein and the converted pixel FLUX.2 Klein falls behind it, and on $4\\times$ DIV2K restoration neither pixel model beats a latent FLUX.2 Klein fine-tune, the converted one trailing it slightly. We document the recipes, the failure modes and the remaining confounds behind this negative result. Nevertheless, Iris-3B shows that pixel-space pretraining with the pixel-transformer (PiT) head of PixelDiT scales to 3B parameters and to text-to-image quality competitive with latent models, matching Qwen-Image on OneIG under the official evaluators at $1024^2$. We release its weights and training code in the hope that they help pave the way for further work on pixel-space generation.",
+  "abstract_zh": "像素空间扩散模型避免了潜在模型的有损变分自编码器（VAE），这在细节至关重要的下游任务中显示出优势。我们沿着两条路径测试这一主张，以建立像素空间基础。我们从头开始预训练Iris-3B，一个具有30亿参数的像素空间文本到图像变换器，通过$256 o512 o1024$的课程，首先在$256^2$上消融预测目标和表示对齐，以决定扩展的内容。我们还将一个预训练的潜在模型FLUX.2 Klein base 4B转换为像素空间。我们对这两类模型进行了微调，以进行单目深度估计和图像恢复/超分辨率。我们发现使用像素空间生成先验并没有显著改善。经过与一个匹配的直接回归方案微调后，Iris-3B的深度估计与潜在的FLUX.2 Klein相当，而转换后的像素FLUX.2 Klein稍微落后于它，在$4 imes$ DIV2K恢复任务中，两个像素模型均未能超越潜在的FLUX.2 Klein微调，转换后的模型稍微落后。我们记录了这些方案、失败模式以及导致这一负面结果的剩余混淆因素。尽管如此，Iris-3B表明，使用PixelDiT的像素变换器（PiT）头进行像素空间预训练可以扩展到30亿参数，并在文本到图像质量上与潜在模型竞争，在官方评估者的$1024^2$下与Qwen-Image相匹配。我们发布了其权重和训练代码，希望能为进一步的像素空间生成工作铺平道路。",
+  "arxiv_id": "2610.09450",
+  "arxiv_url": "https://arxiv.org/abs/2610.09450v1",
+  "authors": [
+    "Hanqiu Li Cai",
+    "Chema Garabito"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-09450",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-08T11:43:53.010164+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.09450v1",
+  "published_at": "2026-10-07T05:07:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "道路",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 17
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.09450v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "Iris-3B: Going Beyond the Latent with Pixel-Space Diffusion Training, Conversion and Fine-Tuning",
+  "title_zh": "Iris-3B：超越潜在空间的像素空间扩散训练、转换与微调",
+  "translation_url": "https://hjfy.top/arxiv/2610.09450"
+}

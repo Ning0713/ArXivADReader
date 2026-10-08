@@ -1,0 +1,51 @@
+{
+  "abstract": "Reliable robotic disassembly requires part-level representations that distinguish genuine component geometry from scanning and reconstruction artifacts. In point clouds of hard disk drives (HDDs), structured ghost artifacts can resemble valid components locally while remaining inconsistent with the overall geometry, allowing erroneous measurements to receive plausible semantic labels. This creates an engineering information problem: semantic prediction confidence alone does not establish whether the underlying geometry is reliable. We propose \\textbf{GUARD}, a geometric uncertainty-aware framework that performs point filtering and segmentation within a single forward pass by modeling the reliability of learned geometric representations. GUARD combines a multi-scale geometric transformer with a multi-bandwidth random Fourier feature Gaussian Process to estimate per-point geometric uncertainty, complemented by predictive entropy to suppress unreliable measurements while preserving informative structures. Evaluation on 2,745 real HDD point clouds shows that GUARD improves PointNet++ segmentation mean intersection over union from 0.7739 to 0.8318. Additional experiments on ShapeNetPart and ScanNet examine robustness across corruption types, point-cloud domains, and segmentation backbones. On manually annotated ScanNet samples, geometric uncertainty achieves a corrupted-point detection F1 score of 0.7931, compared with 0.2212 for predictive entropy. The results demonstrate the value of distinguishing geometric reliability from semantic confidence and reveal a tradeoff between artifact suppression and preservation of informative structures. GUARD contributes a reliability-aware approach to interpreting imperfect 3D measurements for component identification and subsequent robotic handling. Project website: https://001-wang.github.io/GUARD_Point_denoiser/.",
+  "abstract_zh": "可靠的机器人拆卸需要能够区分真实组件几何形状与扫描和重建伪影的部件级表示。在硬盘驱动器（HDD）的点云中，结构化的伪影在局部上可能与有效组件相似，但与整体几何形状不一致，从而导致错误的测量结果获得合理的语义标签。这造成了一个工程信息问题：仅凭语义预测的置信度无法确定底层几何形状的可靠性。我们提出了 extbf{GUARD}，一种几何不确定性感知框架，通过建模学习到的几何表示的可靠性，在单次前向传递中执行点过滤和分割。GUARD结合了多尺度几何变换器和多带宽随机傅里叶特征高斯过程，以估计每个点的几何不确定性，并辅以预测熵以抑制不可靠的测量，同时保留信息结构。在2,745个真实HDD点云上的评估表明，GUARD将PointNet++的分割平均交并比从0.7739提高到0.8318。对ShapeNetPart和ScanNet的额外实验考察了在不同损坏类型、点云域和分割骨干网络下的鲁棒性。在手动注释的ScanNet样本中，几何不确定性实现了0.7931的损坏点检测F1分数，而预测熵为0.2212。结果表明区分几何可靠性与语义置信度的价值，并揭示了伪影抑制与信息结构保留之间的权衡。GUARD为解释不完美的3D测量以进行组件识别和后续机器人处理提供了一种关注可靠性的方法。项目网站：https://001-wang.github.io/GUARD_Point_denoiser/",
+  "arxiv_id": "2610.09068",
+  "arxiv_url": "https://arxiv.org/abs/2610.09068v1",
+  "authors": [
+    "Zuoxu Wang",
+    "Xiao Liang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-09068",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-08T11:43:52.975450+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.09068v1",
+  "published_at": "2026-10-06T20:15:34Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "intersection",
+      "point cloud",
+      "点云",
+      "robotic"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.09068v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "GUARD: Geometric Uncertainty-Aware Point Cloud Denoising and Segmentation for Robotic Hard Disk Drive Disassembly",
+  "title_zh": "GUARD：用于机器人硬盘驱动器拆卸的几何不确定性感知点云去噪与分割",
+  "translation_url": "https://hjfy.top/arxiv/2610.09068"
+}

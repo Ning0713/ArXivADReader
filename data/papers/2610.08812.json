@@ -1,0 +1,59 @@
+{
+  "abstract": "We present Go2-DrivoR, a goal-conditioned adaptation of the end-to-end autonomous driving trajectory planning framework DrivoR for urban navigation with quadrupedal robots. By conditioning trajectory generation on a local-frame subgoal through a goal token and adapting the vehicle-centric scoring formulation, the method extends DrivoR to short-horizon goal-conditioned local planning without redesigning its core decoders. Specifically, we redefine drivable-area compliance for sidewalk-oriented navigation and reformulate the original ego progress term as goal-conditioned ego progress. Trained exclusively on TartanGround simulation data, Go2-DrivoR improves waypoint-conditioned planning performance on unseen simulation environments and transfers zero-shot to open-loop real-world trajectory prediction.",
+  "abstract_zh": "我们提出了Go2-DrivoR，这是一个基于目标条件的适应性框架，将端到端自主驾驶轨迹规划框架DrivoR应用于四足机器人在城市导航中的任务。通过通过目标标记对局部框架子目标进行条件化轨迹生成，并调整以车辆为中心的评分公式，该方法扩展了DrivoR，使其能够在不重新设计核心解码器的情况下进行短期目标条件的局部规划。具体而言，我们重新定义了适合人行道导航的可行驶区域合规性，并将原始自我进展项重新公式化为目标条件的自我进展。在仅使用TartanGround仿真数据进行训练的情况下，Go2-DrivoR在未见过的仿真环境中提高了基于航点的规划性能，并实现了零样本转移到开放环路的真实世界轨迹预测。",
+  "arxiv_id": "2610.08812",
+  "arxiv_url": "https://arxiv.org/abs/2610.08812v1",
+  "authors": [
+    "Joochan Kim",
+    "Chanuk Yang",
+    "Tackgeun You",
+    "Ziran Wang",
+    "Hwasup Lim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-08812",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-08T11:43:52.887627+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08812v1",
+  "published_at": "2026-09-23T06:55:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving policy",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08812v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "仿真/数据"
+    ]
+  },
+  "title": "Taming an End-to-End Autonomous Driving Policy for Urban Navigation of Quadruped Robots",
+  "title_zh": "驯化端到端自主驾驶策略以实现四足机器人在城市导航中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2610.08812"
+}

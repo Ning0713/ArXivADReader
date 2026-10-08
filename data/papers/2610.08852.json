@@ -1,0 +1,50 @@
+{
+  "abstract": "Self-driving laboratories (SDLs) are transforming chemical and materials discovery through closed-loop automation, yet automated infrastructure for physical manipulation of soft, deformable matter remains beyond current robotic platforms. A critical instance is autonomous droplet transport on an open surface, where contact-angle hysteresis, capillary pinning, and surface heterogeneity produce partially observable dynamics that pose significant challenges for classical model-based controllers. We introduce the first robotic platform for closed-loop autonomous liquid droplet navigation on an open, unconfined surface using model-based reinforcement learning. A two-axis tilting board coated with a thin silicone oil film drives the droplet, while an overhead camera provides real-time feedback. A learned policy was trained on just 50 to 150 physical episodes depending on geometric complexity, without simulation or analytical models. Beyond performance alone, the platform demonstrates three capabilities of interest to the SDL community: it robustly transfers zero-shot to unseen geometries; it autonomously discovers an oscillatory depinning strategy to free the droplet when it sticks; and it completes its full training pipeline in under 90 minutes. These results extend reinforcement-learning manipulation from rigid microrobots to deformable soft-matter systems for next-generation SDLs.",
+  "abstract_zh": "自驱动实验室（SDL）通过闭环自动化正在改变化学和材料的发现，然而，针对软性可变形物质的物理操作的自动化基础设施仍超出当前机器人平台的能力。一种关键情况是开放表面上的自主液滴运输，其中接触角滞后、毛细钉扎和表面异质性产生部分可观测的动态，这对经典的基于模型的控制器构成了重大挑战。我们介绍了第一个用于开放、无约束表面上闭环自主液滴导航的机器人平台，该平台采用基于模型的强化学习。一个涂有薄硅油膜的双轴倾斜板驱动液滴，而一个悬挂摄像头提供实时反馈。学习策略的训练仅依赖于50到150个物理实验，具体数量取决于几何复杂性，且没有使用仿真或解析模型。除了性能本身，该平台还展示了三个对SDL社区感兴趣的能力：它能够稳健地实现零样本迁移到未见几何形状；它自主发现了一种振荡去钉策略，以在液滴粘附时将其释放；并且它在90分钟内完成了整个训练流程。这些结果将强化学习操作从刚性微型机器人扩展到可变形软物质系统，为下一代SDL提供了新的可能性。",
+  "arxiv_id": "2610.08852",
+  "arxiv_url": "https://arxiv.org/abs/2610.08852v1",
+  "authors": [
+    "Rajneesh Anand",
+    "Mayuresh V. Kothare"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-08852",
+  "categories": [
+    "cs.RO",
+    "cs.LG",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-08T11:43:52.888595+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.08852v1",
+  "published_at": "2026-10-03T04:06:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "autonomous",
+      "driving",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.08852v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何"
+    ]
+  },
+  "title": "Autonomous Droplet Navigation via Model-Based Reinforcement Learning: Zero-Shot Transfer and Emergent Dynamics",
+  "title_zh": "基于模型的强化学习实现自主液滴导航：零样本迁移与涌现动力学",
+  "translation_url": "https://hjfy.top/arxiv/2610.08852"
+}

@@ -1,0 +1,60 @@
+{
+  "abstract": "Crowd simulation plays a central role in robot navigation, autonomous driving, and urban planning. For these applications, realistic simulation requires crowds to adapt their behavior to environmental changes and user objectives. However, existing methods that rely on predefined control settings have limited flexibility in accommodating new user-specified objectives. To address this limitation, we propose Ctrl-CWM, a multi-agent Controllable Crowd World Model that integrates crowd generation and run-time control. Our key idea is to adapt the world-model principle of planning using imagined futures to crowd simulation. To this end, Ctrl-CWM consists of an encoder that learns a representation of human motion dynamics, an actor that proposes pedestrian displacements, a critic that evaluates imagined crowd trajectories, and a planner that selects actions. We first learn human motion dynamics through trajectory prediction on real-world pedestrian videos and then freeze the encoder to preserve them. Using this representation, the actor generates imagined crowd trajectories through repeated state updates, and the planner combines the critic's scores with user costs to select actions. Repeated planning advances the simulated crowd, while additional user costs introduce new control objectives without retraining. We extensively evaluate crowd generation under varied agent arrival conditions and run-time control across avoidance and attraction scenarios. Ctrl-CWM outperforms the state-of-the-art method on most crowd realism and collision metrics, and adapts crowd behaviors to user-specified objectives introduced during simulation. The project page is available at https://jungyu0413.github.io/Ctrl-CWM",
+  "abstract_zh": "人群模拟在机器人导航、自动驾驶和城市规划中发挥着核心作用。对于这些应用，现实的模拟要求人群能够根据环境变化和用户目标调整其行为。然而，现有依赖于预定义控制设置的方法在适应新的用户指定目标方面灵活性有限。为了解决这一局限性，我们提出了Ctrl-CWM，一个多智能体可控人群世界模型，集成人群生成和实时控制。我们的关键思想是将使用想象未来的世界模型规划原则应用于人群模拟。为此，Ctrl-CWM由一个学习人类运动动态表示的编码器、一个提出行人位移的执行者、一个评估想象人群轨迹的评论者和一个选择行动的规划者组成。我们首先通过对真实世界行人视频的轨迹预测学习人类运动动态，然后冻结编码器以保留这些动态。利用这一表示，执行者通过重复状态更新生成想象的人群轨迹，而规划者将评论者的评分与用户成本结合以选择行动。重复规划推动模拟人群的前进，而额外的用户成本在不重新训练的情况下引入新的控制目标。我们在不同的代理到达条件下广泛评估人群生成，并在避让和吸引场景中进行实时控制。Ctrl-CWM在大多数人群真实感和碰撞指标上优于现有最先进的方法，并能够将人群行为适应于模拟过程中引入的用户指定目标。项目页面可访问：https://jungyu0413.github.io/Ctrl-CWM",
+  "arxiv_id": "2610.09438",
+  "arxiv_url": "https://arxiv.org/abs/2610.09438v1",
+  "authors": [
+    "JunGyu Lee",
+    "Jisu Shin",
+    "Seunghyun Shin",
+    "Hae-Gon Jeon"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-09438",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-08T11:43:53.005421+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.09438v1",
+  "published_at": "2026-10-07T04:50:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "pedestrian",
+      "驾驶",
+      "行人",
+      "trajectory prediction",
+      "world model",
+      "轨迹预测",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 93
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.09438v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "Controllable Crowd Generation through World-Model Planning",
+  "title_zh": "通过世界模型规划实现可控人群生成",
+  "translation_url": "https://hjfy.top/arxiv/2610.09438"
+}

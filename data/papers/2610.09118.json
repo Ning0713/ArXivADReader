@@ -1,0 +1,56 @@
+{
+  "abstract": "Topology reasoning jointly detects 3D lanes and traffic elements from multi-view images and infers their structural connectivity. Current methods model lanes as discrete polylines, lacking smoothness, analytical tangent directions, and global spatial support for attention, while providing sparse topology supervision. We propose TopoCurve, a geometry-driven architecture for 3D topology reasoning grounded in a structured parametric lane representation. Lanes are modeled as endpoint-fixed cubic B\\'ezier curves, enabling continuous geometry with exact endpoints and analytically defined directionality. We exploit this shared curve geometry across the entire pipeline. Endpoint distance and tangent alignment are encoded with multi-scale Fourier features and injected into the topology head. Sampled curve points serve as geometry-aligned references for deformable cross-attention spanning the full lane. Parallel curve-anchored attention branches provide diverse predictions for one-to-many topology supervision. These components form a tightly coupled cascade where representation enables geometric reasoning, guides feature aggregation, and supports denser supervision. TopoCurve achieves 50.6 OLS on the OpenLane-V2 benchmark without any post-processing, establishing a new state-of-the-art among end-to-end camera-only methods, and outperforms all existing approaches on endpoint detection (56.8 vs. 52.6 on DET_p).",
+  "abstract_zh": "拓扑推理通过多视角图像联合检测三维车道和交通元素，并推断其结构连接性。目前的方法将车道建模为离散的多边形线，缺乏平滑性、解析切线方向和全局空间支持，同时提供稀疏的拓扑监督。我们提出了TopoCurve，一种基于结构化参数化车道表示的几何驱动架构，用于三维拓扑推理。车道被建模为端点固定的三次贝塞尔曲线，使得几何形状连续，具有精确的端点和解析定义的方向性。我们在整个流程中利用这种共享的曲线几何。端点距离和切线对齐通过多尺度傅里叶特征编码，并注入到拓扑头中。采样的曲线点作为几何对齐的参考，用于跨越整个车道的可变形交叉注意力。平行的曲线锚定注意力分支为一对多的拓扑监督提供多样化的预测。这些组件形成一个紧密耦合的级联，其中表示促进几何推理，指导特征聚合，并支持更密集的监督。TopoCurve在OpenLane-V2基准测试中实现了50.6的OLS，无需任何后处理，确立了端到端仅使用摄像头的方法中的新状态，并在端点检测上超越了所有现有方法（56.8对比52.6在DET_p上）。",
+  "arxiv_id": "2610.09118",
+  "arxiv_url": "https://arxiv.org/abs/2610.09118v1",
+  "authors": [
+    "Mihai Bogdan Deaconu",
+    "Laura Dioşan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-09118",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-08T11:43:52.979401+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.09118v1",
+  "published_at": "2026-10-06T21:07:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "openlane",
+      "autonomous",
+      "driving",
+      "traffic",
+      "lane",
+      "驾驶",
+      "交通",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.09118v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "端到端驾驶"
+    ]
+  },
+  "title": "TopoCurve: Geometry-Aware Topology Reasoning via B\\'ezier Curves in Autonomous Driving",
+  "title_zh": "TopoCurve：基于贝塞尔曲线的几何感知拓扑推理在自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2610.09118"
+}

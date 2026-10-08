@@ -1,0 +1,52 @@
+{
+  "abstract": "Semantic segmentation networks operate on a fixed set of classes and therefore fail when out-of-distribution (OOD) objects appear during deployment, a critical limitation for safety-critical applications such as autonomous driving. Reliably identifying OOD objects requires well-calibrated epistemic uncertainty, yet common softmax-based confidence scores remain overconfident, while Bayesian alternatives such as Monte Carlo dropout or deep ensembles require costly repeated forward passes. Evidential Deep Learning (EDL) offers an efficient alternative by modeling class probabilities as a Dirichlet distribution learned from a single deterministic forward pass. Existing EDL formulations rely on Euclidean objectives that push predictions towards the simplex vertices, encouraging overconfidence rather than preserving uncertainty for unfamiliar inputs. We instead employ Wasserstein-based objectives, which respect the geometry of the probability simplex, and study the influence of the Wasserstein order on segmentation accuracy and OOD detection within a unified evidential framework. We evaluate this framework on a convolutional (DeepLabV3+) and a transformer-based (SegFormer) architecture on the SegmentMeIfYouCan benchmark, including LostAndFound, RoadObstacle21, RoadAnomaly21, and Fishyscapes. Our results show the optimal Wasserstein order is architecture-dependent: second-order objectives dominate on the convolutional backbone, third-order objectives on the transformer backbone, and our framework surpasses comparable baselines on most metrics, with a single deterministic forward pass.",
+  "abstract_zh": "语义分割网络在固定类别集上运行，因此在部署过程中出现分布外（OOD）对象时会失败，这对于诸如自动驾驶等安全关键应用来说是一个重要的限制。可靠地识别OOD对象需要良好校准的认知不确定性，然而常见的基于softmax的置信度评分往往过于自信，而贝叶斯替代方法如蒙特卡洛丢弃（Monte Carlo dropout）或深度集成（deep ensembles）则需要昂贵的重复前向传播。证据深度学习（Evidential Deep Learning, EDL）通过将类别概率建模为从单次确定性前向传播中学习的Dirichlet分布，提供了一种高效的替代方案。现有的EDL公式依赖于欧几里得目标，这会将预测推向简单形状的顶点，鼓励过度自信，而不是为不熟悉的输入保留不确定性。相反，我们采用基于Wasserstein的目标，这尊重概率简单形状的几何特性，并在统一的证据框架内研究Wasserstein阶数对分割精度和OOD检测的影响。我们在SegmentMeIfYouCan基准上评估该框架，包括LostAndFound、RoadObstacle21、RoadAnomaly21和Fishyscapes，使用了卷积（DeepLabV3+）和基于变换器（SegFormer）的架构。我们的结果表明，最佳的Wasserstein阶数依赖于架构：在卷积骨干网络上，二阶目标占主导地位，而在变换器骨干网络上，三阶目标更为有效，并且我们的框架在大多数指标上超越了可比基线，且仅需一次确定性前向传播。",
+  "arxiv_id": "2610.10116",
+  "arxiv_url": "https://arxiv.org/abs/2610.10116v1",
+  "authors": [
+    "Arnold Brosch",
+    "Abdelrahman Eldesokey",
+    "Michael Felsberg",
+    "Kira Maag"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-10116",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-08T11:43:53.057826+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.10116v1",
+  "published_at": "2026-10-07T14:03:45Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.10116v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "深度/几何"
+    ]
+  },
+  "title": "A Probabilistic Perspective on Wasserstein-Based Evidential Uncertainty for Out-of-Distribution Segmentation",
+  "title_zh": "基于Wasserstein的证据不确定性的概率视角：针对分布外分割",
+  "translation_url": "https://hjfy.top/arxiv/2610.10116"
+}

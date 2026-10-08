@@ -1,0 +1,58 @@
+{
+  "abstract": "Visual foundation models (VFMs) are increasingly integrated into end-to-end autonomous driving for their powerful representations, yet it remains unclear when these representations improve driving performance. To investigate this question, we introduce ViRA, a planner-agnostic visual representation alignment framework that keeps the planner architecture and inference cost unchanged. Our study reveals three findings: (1) VFM-guided visual representations consistently improve driving performance across diverse end-to-end planners, with gains extending to zero-shot closed-loop evaluation. (2) The choice of VFM target matters for planning performance, and alignment to a different VFM can further benefit planners with pre-trained VFM encoders. (3) Auxiliary perception supervision reduces sensitivity to VFM target selection, narrowing the EPDMS spread across five targets from 2.7 to 0.5 points and potentially compensating for less effective VFM targets. Guided by these findings, we develop ViRA-Diffusion, a diffusion-based planner trained without auxiliary perception supervision, which achieves 92.3 EPDMS on NAVSIM v2 navtest, outperforming recent methods in our comparison by at least 1.9 points. The results motivate jointly considering target selection and planner supervision when integrating VFMs into end-to-end autonomous driving. The results and demo are available at https://github.com/OpenDriveLab/ViRA.",
+  "abstract_zh": "视觉基础模型（VFMs）因其强大的表示能力而越来越多地被整合到端到端自主驾驶中，但这些表示何时能改善驾驶性能仍不清楚。为了解决这个问题，我们引入了ViRA，一个与规划器无关的视觉表示对齐框架，它保持规划器架构和推理成本不变。我们的研究揭示了三个发现：（1）VFM引导的视觉表示在多种端到端规划器中始终改善驾驶性能，增益甚至扩展到零样本闭环评估。（2）VFM目标的选择对规划性能至关重要，与不同VFM的对齐可以进一步使带有预训练VFM编码器的规划器受益。（3）辅助感知监督减少了对VFM目标选择的敏感性，将五个目标之间的EPDMS差距从2.7缩小到0.5分，并可能弥补效果较差的VFM目标。根据这些发现，我们开发了ViRA-Diffusion，一个在没有辅助感知监督的情况下训练的基于扩散的规划器，在NAVSIM v2 navtest上达到了92.3的EPDMS，至少比我们比较中的最新方法高出1.9分。结果促使我们在将VFMs整合到端到端自主驾驶时共同考虑目标选择和规划器监督。结果和演示可在https://github.com/OpenDriveLab/ViRA获取。",
+  "arxiv_id": "2610.09695",
+  "arxiv_url": "https://arxiv.org/abs/2610.09695v1",
+  "authors": [
+    "Zihao Zhang",
+    "Haochen Tian",
+    "Tianyu Li",
+    "Changhui Jing",
+    "Jingliang He",
+    "Naisheng Ye",
+    "Ziyuan Pu",
+    "Zhenjie Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-09695",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-08T11:43:52.931501+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.09695v1",
+  "published_at": "2026-10-07T08:54:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "opendrivelab",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.09695v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Do Better Visual Representations Always Lead to Better End-to-End Autonomous Driving?",
+  "title_zh": "更好的视觉表示是否总是能带来更好的端到端自主驾驶？",
+  "translation_url": "https://hjfy.top/arxiv/2610.09695"
+}

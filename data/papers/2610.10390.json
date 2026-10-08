@@ -1,0 +1,55 @@
+{
+  "abstract": "Vision-language-action~(VLA) models have emerged as a promising paradigm for autonomous driving. However, existing VLA models still suffer from a fundamental mismatch: driving actions require precise 3D geometric cues, while visual-language understanding and reasoning are largely conducted in a 2D semantic space. In this paper, we propose GeoCoTDrive, an explicit geometric chain-of-thought framework that grounds geometry in a planning-oriented manner. GeoCoTDrive follows a think with 2D first, drive with dedicated 3D priors paradigm. It first grounds 2D regions corresponding to decision-critical cues, and then retrieves localized 3D priors by sampling features from a geometric foundation model within the grounded regions. These localized geometric features are interleaved into the autoregressive context to support the trajectory generation. To supervise this process, we introduce planning-relevant grounding, a new region-level grounding task that focuses on local spatial cues directly affecting ego planning decisions, and construct the PlanningGrounding dataset to endow VLAs with planning-oriented grounding capability. Experiments across multiple end-to-end autonomous driving benchmarks show that GeoCoTDrive consistently improves safety-critical planning performance, demonstrating the effectiveness of the explicit geometric chain-of-thought process for VLA-based planning.",
+  "abstract_zh": "视觉-语言-行动（VLA）模型已成为自主驾驶的一个有前景的范式。然而，现有的VLA模型仍然存在一个基本的不匹配：驾驶行为需要精确的三维几何线索，而视觉-语言理解和推理主要在二维语义空间中进行。本文提出了GeoCoTDrive，一个显式几何思维链框架，以规划导向的方式将几何信息与之结合。GeoCoTDrive遵循‘先用二维思考，再用专用三维先验进行驾驶’的范式。它首先将与决策关键线索对应的二维区域进行定位，然后通过从几何基础模型中采样特征来检索局部三维先验。这些局部几何特征被交错融入自回归上下文中，以支持轨迹生成。为了监督这一过程，我们引入了与规划相关的定位，这是一个新的区域级定位任务，专注于直接影响自我规划决策的局部空间线索，并构建了PlanningGrounding数据集，以赋予VLA规划导向的定位能力。在多个端到端自主驾驶基准测试中的实验表明，GeoCoTDrive始终提高了安全关键的规划性能，证明了显式几何思维链过程在基于VLA的规划中的有效性。",
+  "arxiv_id": "2610.10390",
+  "arxiv_url": "https://arxiv.org/abs/2610.10390v1",
+  "authors": [
+    "Xingtai Gui",
+    "Yucheng Zhou",
+    "Dongqian Guo",
+    "Jiahao Gong",
+    "Feiyang Tan",
+    "Jianbing Shen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-10390",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-08T11:43:53.076123+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.10390v1",
+  "published_at": "2026-10-07T16:47:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.10390v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "仿真/数据"
+    ]
+  },
+  "title": "Explicit Geometric Chain-of-Thought for Vision-Language-Action in Autonomous Driving",
+  "title_zh": "自主驾驶中的视觉-语言-行动显式几何思维链",
+  "translation_url": "https://hjfy.top/arxiv/2610.10390"
+}

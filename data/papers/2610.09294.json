@@ -1,0 +1,53 @@
+{
+  "abstract": "Rapid progress in AI agents has brought growing attention to agent safety, with extensive evaluation focused on digital environments. As agents move into the physical world, embodied safety becomes increasingly important: failures can cause human injury and costly hardware damage. Beyond selecting safe actions, embodied agents must also operate under real-time constraints: the physical world does not pause while an agent reasons. As pedestrians move and vehicles approach during inference, an action that appears safe at observation time may become unsafe before execution. Real-time embodied safety therefore depends on both decision quality and decision latency. We introduce RT-SAFE, a simulated urban benchmark for evaluating embodied-agent safety under real-time constraints. RT-SAFE combines navigation tasks with moving actors, environmental hazards, and traffic rules, while allowing the world to evolve throughout inference and action execution. Across eight VLMs, agents achieve high task completion yet almost never complete safely: in the hardest setting, only 0.7% of episodes finish without a safety event. More strikingly, matched static and real-time evaluations yield task completion rates of 91.3% and 94.1%, respectively, while real-time execution increases collisions by $12.3\\times$. These results reveal that standard task success can mask substantial safety failures, and that decision latency itself can become a source of physical risk. Finally, we show that RT-SAFE can support offline RL training and substantially reduce collision rates while achieving strong task completion.",
+  "abstract_zh": "人工智能代理的快速进展引起了对代理安全性日益增长的关注，现有的广泛评估主要集中在数字环境中。随着代理进入物理世界，具身安全变得愈发重要：失败可能导致人身伤害和昂贵的硬件损坏。除了选择安全的行动外，具身代理还必须在实时约束下操作：物理世界在代理推理时并不会暂停。当行人移动和车辆接近时，在观察时看似安全的行动在执行前可能变得不安全。因此，实时具身安全依赖于决策质量和决策延迟。我们引入了RT-SAFE，这是一个模拟城市基准，用于评估在实时约束下的具身代理安全性。RT-SAFE结合了导航任务、移动参与者、环境危害和交通规则，同时允许世界在推理和行动执行过程中不断演变。在八个视觉语言模型（VLMs）中，代理实现了高任务完成率，但几乎从未安全完成：在最困难的设置中，只有0.7%的回合在没有安全事件的情况下结束。更引人注目的是，静态评估和实时评估的任务完成率分别为91.3%和94.1%，而实时执行则使碰撞增加了12.3倍。这些结果表明，标准任务成功可能掩盖了重大的安全失败，而决策延迟本身也可能成为物理风险的来源。最后，我们展示了RT-SAFE可以支持离线强化学习训练，并在实现强大任务完成的同时显著降低碰撞率。",
+  "arxiv_id": "2610.09294",
+  "arxiv_url": "https://arxiv.org/abs/2610.09294v1",
+  "authors": [
+    "Tianruo Rose Xu",
+    "Jiawei Ren",
+    "Yichi Yang",
+    "Zhaoxu Zheng",
+    "Lianhui Qin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-08#paper-2610-09294",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-08T11:43:53.128035+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.09294v1",
+  "published_at": "2026-10-07T01:57:17Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "车辆",
+      "交通",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-08"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.09294v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-08"
+  },
+  "summary_zh": "本文提出模拟城市实时安全基准RT-SAFE，在包含动态行人、车辆、环境危险和交通规则的导航任务中，评估VLM智能体的决策安全性及推理延迟风险。实验发现，高任务完成率并不代表安全：实时执行可使碰撞增加12.3倍。该基准还可支持离线强化学习，以降低碰撞并维持较强的任务表现。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "仿真/数据",
+      "VLM/VLA"
+    ]
+  },
+  "title": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
+  "title_zh": "RT-Safe：实时具身环境中代理安全性的基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2610.09294"
+}
