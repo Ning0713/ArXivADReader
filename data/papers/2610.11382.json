@@ -1,0 +1,63 @@
+{
+  "abstract": "World models in end-to-end autonomous driving predict future scene evolution to provide foresight for trajectory planning. Existing methods mainly study how to predict the future and how to use it, but less often ask which future representation is actually most useful for planning. To this end, we propose PlanWAM, a Planning-Shaped World Action Model. The key idea is to let the planning task shape the future-state representation, so that it retains the information most useful for planning. A latent world model then predicts this planning-shaped future latent representation from historical observations and uses it for planning, enabling foresighted planning. Specifically, we first use a Temporal Register Pyramid to compress multi-frame historical information in a recency-aware manner, learning a compact history representation oriented toward future reasoning and planning. We then introduce a privileged future posterior branch that observes ground-truth future frames, and shape its future latent representation with trajectory-planning objectives to obtain a planning-shaped future latent representation. Hindsight-to-Foresight Distillation trains a prior branch that depends only on history to predict this future latent representation. The predicted future latent representation serves as planning context and guides trajectory generation and selection. PlanWAM achieves 93.8 PDMS / 90.9 EPDMS on NAVSIM-v1/v2 navtest and reaches 38.7 HD-Score on closed-loop HUGSIM in a zero-shot setting, demonstrating leading planning performance across both open-loop and closed-loop evaluations. Extensive experiments further demonstrate that planning-shaped future representations provide an effective and deployable form of foresight for world-action models.",
+  "abstract_zh": "在端到端自动驾驶中，世界模型预测未来场景演变，以为轨迹规划提供前瞻性。现有方法主要研究如何预测未来以及如何使用这些预测，但较少探讨哪种未来表征实际上对规划最有用。为此，我们提出了PlanWAM，一个规划形状的世界动作模型。其关键思想是让规划任务塑造未来状态表征，以保留对规划最有用的信息。然后，一个潜在的世界模型从历史观察中预测这种规划形状的未来潜在表征，并将其用于规划，从而实现前瞻性规划。具体而言，我们首先使用时间注册金字塔以关注近期的方式压缩多帧历史信息，学习一个面向未来推理和规划的紧凑历史表征。接着，我们引入一个特权未来后验分支，该分支观察真实的未来帧，并通过轨迹规划目标塑造其未来潜在表征，以获得规划形状的未来潜在表征。事后到前瞻蒸馏训练一个仅依赖历史的先验分支，以预测这种未来潜在表征。预测的未来潜在表征作为规划上下文，指导轨迹生成和选择。PlanWAM在NAVSIM-v1/v2 navtest上达到了93.8 PDMS / 90.9 EPDMS，并在零样本设置下在闭环HUGSIM上达到了38.7 HD-Score，展示了在开放环和闭环评估中领先的规划性能。大量实验进一步表明，规划形状的未来表征为世界动作模型提供了一种有效且可部署的前瞻性形式。",
+  "arxiv_id": "2610.11382",
+  "arxiv_url": "https://arxiv.org/abs/2610.11382v1",
+  "authors": [
+    "Jinchang Xu",
+    "Hongda Yu",
+    "Fengwei Dong",
+    "Wenhui Huang",
+    "Xi Wei",
+    "Yongzhi Liu",
+    "Sunan Zhang",
+    "Jirao Wang",
+    "Chen Lv",
+    "Bingbing Li",
+    "Guodong Yin",
+    "Weichao Zhuang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11382",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.497191+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11382v1",
+  "published_at": "2026-10-08T07:13:10Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11382v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "端到端驾驶"
+    ]
+  },
+  "title": "PlanWAM: Planning-Shaped Future Representations for End-to-End Autonomous Driving",
+  "title_zh": "PlanWAM：面向端到端自动驾驶的规划形状未来表征",
+  "translation_url": "https://hjfy.top/arxiv/2610.11382"
+}

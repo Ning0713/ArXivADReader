@@ -1,0 +1,52 @@
+{
+  "abstract": "VGGT provides a strong foundation for geometry-centric world models by recovering unified 3D scene geometry from visual observations. Although recent extensions enable temporal 3D prediction, their future evolution remains weakly conditioned on driving intentions and actions, limiting their ability to model alternative action-dependent futures. We propose VGGTWorld-VLA, an intention-conditioned extension of VGGT-World for controllable 3D world evolution in autonomous driving. First, we introduce an action--semantic conditioning mechanism that injects complementary driving semantics and ego-motion representations into the future-token stream, enabling different future geometry predictions for the same observed scene under alternative ego actions. Second, we develop a geometry--language--action bridge that adapts historical geometry, VLA semantic features, and maneuver and trajectory representations for joint conditioning of future geometry prediction. We evaluate future geometry prediction on NAVSIM, while conditioning ablations further examine the contributions of semantic and action information. Compared with the baseline, our method demonstrates competitive geometry prediction performance. Ablation studies further support the effectiveness of semantic and action conditioning. These results demonstrate the potential of semantic and action conditioning for controllable VGGT-based world prediction in autonomous driving.",
+  "abstract_zh": "VGGT为以几何为中心的世界模型提供了坚实的基础，通过从视觉观察中恢复统一的3D场景几何体。尽管最近的扩展使得时间维度的3D预测成为可能，但它们的未来演化仍然对驾驶意图和动作的条件设置较弱，限制了它们对依赖于动作的替代未来的建模能力。我们提出了VGGTWorld-VLA，这是VGGT-World的一个基于意图条件的扩展，旨在实现自主驾驶中可控的3D世界演化。首先，我们引入了一种动作-语义条件机制，将补充的驾驶语义和自我运动表示注入未来标记流中，使得在不同的自我动作下，对同一观察场景的未来几何预测能够有所不同。其次，我们开发了一个几何-语言-动作桥接，适应历史几何、VLA语义特征以及机动和轨迹表示，以共同条件化未来几何预测。我们在NAVSIM上评估未来几何预测，同时条件消融实验进一步考察了语义和动作信息的贡献。与基线相比，我们的方法展示了具有竞争力的几何预测性能。消融研究进一步支持了语义和动作条件化的有效性。这些结果展示了语义和动作条件化在自主驾驶中基于VGGT的世界预测的可控性潜力。",
+  "arxiv_id": "2610.11161",
+  "arxiv_url": "https://arxiv.org/abs/2610.11161v1",
+  "authors": [
+    "Zhaoyang Liu",
+    "Kun Jiang",
+    "Ziying Song",
+    "Diange Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11161",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.578980+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11161v1",
+  "published_at": "2026-10-08T03:20:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11161v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "VLM/VLA"
+    ]
+  },
+  "title": "VGGTWorld-VLA: Intent-Conditioned 3D World Evolution for Autonomous Driving",
+  "title_zh": "VGGTWorld-VLA：基于意图条件的自主驾驶3D世界演化",
+  "translation_url": "https://hjfy.top/arxiv/2610.11161"
+}

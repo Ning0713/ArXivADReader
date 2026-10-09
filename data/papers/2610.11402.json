@@ -1,0 +1,51 @@
+{
+  "abstract": "GoldenViewVQA requires models to jointly answer driving-scene questions and identify the camera view containing the supporting visual evidence, making precise evidence localization as important as answer correctness. We present \\textbf{CoVeR-VQA}, a training-free multi-stage verification and correction framework for grounded multi-view VQA. Starting from GPT-5.6 zero-shot predictions, CoVeR-VQA progressively applies view-specific verification with Gemini-3.6-Flash, prior-guided joint verification with Claude-Opus-5, and cross-split group-level verification that exploits semantically filtered question groups from shared multi-view scenes and validation-derived prior knowledge. On the official GoldenViewVQA test set, the four-stage CoVeR-VQA pipeline achieves 84.75\\% Joint Accuracy, improving the GPT-5.6 zero-shot baseline by 13.56 percentage points, while reaching 94.92\\% Answer Accuracy and 86.44\\% View Accuracy. The final submitted run achieves 88.14\\% Joint Accuracy after two additional evaluator-informed post-hoc corrections. Our analysis shows that supporting-view localization remains the primary source of residual errors, highlighting the importance of explicit evidence verification for reliable multi-view multimodal reasoning.",
+  "abstract_zh": "GoldenViewVQA 要求模型共同回答驾驶场景问题，并识别包含支持视觉证据的相机视角，使得精确的证据定位与答案的正确性同样重要。我们提出了 extbf{CoVeR-VQA}，这是一种无训练的多阶段验证和修正框架，旨在处理基于多视角的视觉问答（VQA）。从 GPT-5.6 的零样本预测开始，CoVeR-VQA 逐步应用视角特定的验证，使用 Gemini-3.6-Flash 进行验证，使用 Claude-Opus-5 进行先验引导的联合验证，以及利用来自共享多视角场景的语义过滤问题组和验证衍生的先验知识进行交叉拆分组级验证。在官方的 GoldenViewVQA 测试集上，四阶段的 CoVeR-VQA 流程实现了 84.75\\% 的联合准确率，比 GPT-5.6 的零样本基线提高了 13.56 个百分点，同时达到了 94.92\\\\% 的答案准确率和 86.44\\\\% 的视角准确率。最终提交的结果在经过两次额外的评估者指导的事后修正后，实现了 88.14\\\\% 的联合准确率。我们的分析表明，支持视角的定位仍然是残余错误的主要来源，强调了显式证据验证在可靠的多视角多模态推理中的重要性。",
+  "arxiv_id": "2610.11402",
+  "arxiv_url": "https://arxiv.org/abs/2610.11402v1",
+  "authors": [
+    "Kun Wang",
+    "Yupeng Hu",
+    "Ruping Cao",
+    "Hao Liu",
+    "Zhiran Li",
+    "Qianlong Xiang",
+    "Harry Cheng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11402",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.604908+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11402v1",
+  "published_at": "2026-10-08T07:34:26Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11402v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "本文研究自动驾驶多摄像头场景中的视觉问答与证据视角定位，提出免训练的多模型级联验证和纠错框架 CoVeR-VQA。该方法通过视角级、联合及跨问题组验证，显著提升驾驶场景问题回答与支撑视角定位的联合准确率，属于面向自动驾驶场景理解的视觉语言模型研究。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "GroundSight at GroundLM 2026 Shared Tasks: GoldenViewVQA",
+  "title_zh": "GroundSight 在 GroundLM 2026 共享任务中的表现：GoldenViewVQA",
+  "translation_url": "https://hjfy.top/arxiv/2610.11402"
+}

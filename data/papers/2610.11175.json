@@ -1,0 +1,52 @@
+{
+  "abstract": "Modern data-driven decision-making methods, such as imitation learning (IL) and reinforcement learning (RL), have achieved great success in solving many complex tasks. However, these methods often suffer from serious control instability and robustness issues when applied in real-world applications such as robotics and autonomous driving, posing notable challenges for their practical deployment. We argue that this instability issue stems largely from their limitations in solely supervising and optimizing zeroth-order actions (i.e., the action labels), failing to account for higher-order action dynamics and temporal consistency. In this paper, we show that simultaneously supervising both zeroth- and first-order actions can dramatically enhance policies' performance and control robustness. To achieve this, we introduce a novel and elegant loss scheme supported by formal theoretical guarantees that can equip any off-the-shelf policy model (e.g., deterministic, stochastic, or flow policies) with the capability for higher-order action supervision, without requiring any structural modifications. Moreover, our proposed method can serve as a lightweight plug-and-play module that seamlessly integrates with a broad spectrum of existing offline RL frameworks. Extensive evaluations on OGBench and D4RL demonstrate that our approach yields substantial performance and robustness improvements across a wide range of continuous control environments. Notably, our method can also enhance policies' out-of-distribution (OOD) generalization capability in the challenging low-data regime, making it an ideal tool in tackling many real-world control problems.",
+  "abstract_zh": "现代数据驱动的决策方法，如模仿学习（Imitation Learning, IL）和强化学习（Reinforcement Learning, RL），在解决许多复杂任务方面取得了巨大成功。然而，这些方法在实际应用中（如机器人技术和自动驾驶）往往面临严重的控制不稳定性和鲁棒性问题，这对其实际部署构成了显著挑战。我们认为，这种不稳定性问题主要源于它们仅对零阶动作（即动作标签）进行监督和优化，未能考虑高阶动作动态和时间一致性。在本文中，我们展示了同时对零阶和一阶动作进行监督可以显著提升策略的性能和控制鲁棒性。为此，我们提出了一种新颖而优雅的损失方案，并提供了形式化的理论保证，使任何现成的策略模型（例如，确定性策略、随机策略或流动策略）都能具备高阶动作监督的能力，而无需进行任何结构性修改。此外，我们提出的方法可以作为一个轻量级的即插即用模块，与广泛的现有离线强化学习框架无缝集成。在OGBench和D4RL上的广泛评估表明，我们的方法在各种连续控制环境中实现了显著的性能和鲁棒性提升。值得注意的是，我们的方法还可以增强策略在低数据环境下的分布外（Out-of-Distribution, OOD）泛化能力，使其成为解决许多现实世界控制问题的理想工具。",
+  "arxiv_id": "2610.11175",
+  "arxiv_url": "https://arxiv.org/abs/2610.11175v1",
+  "authors": [
+    "Peng Cheng",
+    "Yunxian Hou",
+    "Zhi Zhou",
+    "Qian Zhang",
+    "Chang Huang",
+    "Xianyuan Zhan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11175",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.490288+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11175v1",
+  "published_at": "2026-10-08T03:32:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11175v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": []
+  },
+  "title": "Higher-Order Action Supervision Makes A Strong Policy Class",
+  "title_zh": "高阶动作监督构建强大的策略类",
+  "translation_url": "https://hjfy.top/arxiv/2610.11175"
+}

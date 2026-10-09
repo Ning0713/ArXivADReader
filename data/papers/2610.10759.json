@@ -1,0 +1,48 @@
+{
+  "abstract": "Scene flow can capture low-level 3D motion displacements in dynamic scenarios. Early pairwise estimators relying on instantaneous two-frame motion lack long-term temporal correlation and also struggle with poor extrapolation ability in future prediction. Although some recent methods attempt to explore multi-frame scene flow estimation in a sequence-to-sequence manner, they typically suffer from heavy computational overhead with increasing input frames and long-horizon prediction degradation due to ineffective motion propagation. To address these problems, we propose a novel memory-enhanced sequential scene flow pipeline, called MESSENGER. To sufficiently mine long-term temporal dependencies naturally within consecutive sequences, a memory buffer is designed by explicitly storing multiple history flow estimates and latent states. For each input frame, the temporally stored flows and states are correlated and retrieved to predict the current initialized flow in a next-frame forecasting manner. Furthermore, we develop an uncertainty-aware reweighting module to filter unreliable retrievals and mitigate accumulated errors. Extensive experiments on nuScenes and Argoverse 2 demonstrate state-of-the-art performance of our MESSENGER, reducing EPE3D by 71.6% on nuScenes and 67.7% on Argoverse 2 in long-horizon future extrapolation. This superiority can be attributed to our designed autoregressive forecasting paradigm, which naturally forces the network to progressively learn the next-frame distribution based on history observations. Code will be released at https://github.com/liujiuming123/Messenger.",
+  "abstract_zh": "场景流可以捕捉动态场景中的低级三维运动位移。早期的成对估计器依赖于瞬时的两帧运动，缺乏长期的时间相关性，并且在未来预测中也面临较差的外推能力。尽管一些近期方法尝试以序列到序列的方式探索多帧场景流估计，但它们通常在输入帧数增加时遭遇较大的计算开销，并且由于运动传播效率低下，长时间预测性能下降。为了解决这些问题，我们提出了一种新颖的记忆增强序列场景流管道，称为 MESSENGER。为了充分挖掘连续序列中的长期时间依赖性，我们设计了一个记忆缓冲区，通过显式存储多个历史流估计和潜在状态。对于每个输入帧，时间存储的流和状态被关联并检索，以预测当前初始化的流，采用下一帧预测的方式。此外，我们开发了一个不确定性感知重加权模块，以过滤不可靠的检索结果并减轻累积误差。在 nuScenes 和 Argoverse 2 上进行的广泛实验表明，我们的 MESSENGER 达到了最先进的性能，在长时间未来外推中，nuScenes 上的 EPE3D 降低了 71.6%，Argoverse 2 上降低了 67.7%。这种优越性归因于我们设计的自回归预测范式，它自然地迫使网络基于历史观察逐步学习下一帧的分布。代码将发布在 https://github.com/liujiuming123/Messenger。",
+  "arxiv_id": "2610.10759",
+  "arxiv_url": "https://arxiv.org/abs/2610.10759v1",
+  "authors": [
+    "Jiuming Liu",
+    "Jianing Li",
+    "Mengmeng Liu",
+    "Hongyang He",
+    "Hesheng Wang",
+    "Per Ola Kristensson"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-10759",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.551430+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.10759v1",
+  "published_at": "2026-10-07T18:23:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "argoverse"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 40
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.10759v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "MESSENGER: Memory-Enhanced Sequential Scene Flow Estimation via Autoregressive Next-Frame Forecasting",
+  "title_zh": "MESSENGER：通过自回归下一帧预测的记忆增强序列场景流估计",
+  "translation_url": "https://hjfy.top/arxiv/2610.10759"
+}

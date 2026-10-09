@@ -1,0 +1,60 @@
+{
+  "abstract": "World-action models have recently improved autonomous driving by jointly learning future scene prediction and trajectory generation. Most existing approaches model the future primarily through RGB appearance, and recent works have begun to incorporate geometric prediction to improve spatial understanding. However, dense geometry describes the spatial layout of the entire scene without indicating which parts are most relevant to the ego vehicle's action. For driving, the model must also identify and anticipate where it can safely move and which regions may pose collision risks. Jointly modeling action-relevant regions and future geometry can provide the policy with both driving-relevant cues and their corresponding spatial structure. We therefore propose AffordDrive3D, an affordance- and geometry-aware world-action model that jointly learns future action-relevant regions and spatial structure. In order to capture the scene semantics and driving context needed for driving affordance prediction, we build AffordDrive3D on a VLM backbone to forecast drivable areas and collision-critical regions that directly affect ego motion, while predicting future geometry from RGB world-model latents. On NAVSIM, AffordDrive3D achieves state-of-the-art performance with 91.3 PDMS and 89.9 EPDMS, demonstrating the effectiveness of jointly modeling future affordances and geometry for trajectory planning.",
+  "abstract_zh": "世界-动作模型最近通过联合学习未来场景预测和轨迹生成来提升自主驾驶的能力。现有的大多数方法主要通过RGB外观建模未来，而最近的研究开始结合几何预测以改善空间理解。然而，密集几何描述了整个场景的空间布局，却未指明哪些部分与自我车辆的动作最为相关。对于驾驶而言，模型还必须识别和预测其可以安全移动的位置以及哪些区域可能存在碰撞风险。联合建模与动作相关的区域和未来几何可以为策略提供与驾驶相关的线索及其对应的空间结构。因此，我们提出了AffordDrive3D，这是一种可供性和几何感知的世界-动作模型，能够联合学习未来的动作相关区域和空间结构。为了捕捉驾驶可供性预测所需的场景语义和驾驶上下文，我们在VLM骨干网络上构建AffordDrive3D，以预测直接影响自我运动的可驾驶区域和碰撞关键区域，同时从RGB世界模型潜变量中预测未来几何。在NAVSIM上，AffordDrive3D以91.3 PDMS和89.9 EPDMS达到了最先进的性能，证明了联合建模未来可供性和几何在轨迹规划中的有效性。",
+  "arxiv_id": "2610.11060",
+  "arxiv_url": "https://arxiv.org/abs/2610.11060v1",
+  "authors": [
+    "Tianhui Cai",
+    "Xinglong Sun",
+    "Chao Fang",
+    "Zhenxin Li",
+    "Rui Song",
+    "Jose M. Alvarez",
+    "Yunxiang Mao",
+    "Jiaqi Ma",
+    "Langechuan Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11060",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.568053+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11060v1",
+  "published_at": "2026-10-08T01:16:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego vehicle",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11060v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "感知"
+    ]
+  },
+  "title": "AffordDrive3D: Affordance-Aware World-Action Modeling with Spatial Understanding",
+  "title_zh": "AffordDrive3D：具有空间理解的可供性感知世界-动作建模",
+  "translation_url": "https://hjfy.top/arxiv/2610.11060"
+}

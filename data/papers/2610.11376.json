@@ -1,0 +1,56 @@
+{
+  "abstract": "Latent LiDAR pipelines suffer from flying pixels: convolutional VAEs blur sharp radial depth discontinuities, yielding edge depths that back-project to points floating between surfaces. We identify this as a major, directly correctable decoder bottleneck and introduce CRISP: a pixel-space diffusion decoder with a backbone-agnostic latent adapter, DiT-based denoiser, and support mask predictor. CRISP replaces video-VAE and LiDAR-native decoders alike while keeping the encoder and latent generator fixed. Across KITTI-360, SemanticKITTI, and nuScenes, replacing only the decoder reduces FSVD/FPVD by 50.5% on average across frozen backbones; for generic video VAEs, the reductions reach 71%/74%. On the LiDAR-native LiDM backbone, FRID drops by 71%, with the largest gains at depth discontinuities. In a pretrained LiDM world model, the same zero-shot replacement improves FSVD by 15.5%, narrowing the sim-to-real gap.",
+  "abstract_zh": "潜在LiDAR管道存在飞行像素的问题：卷积变分自编码器（VAEs）模糊了锐利的径向深度不连续性，导致边缘深度回投到表面之间漂浮的点。我们将此识别为一个主要且可直接纠正的解码器瓶颈，并引入CRISP：一种具有骨干网络无关的潜在适配器、基于DiT的去噪器和支持掩码预测器的像素空间扩散解码器。CRISP替代了视频变分自编码器和LiDAR原生解码器，同时保持编码器和潜在生成器不变。在KITTI-360、SemanticKITTI和nuScenes数据集上，仅替换解码器平均减少了50.5%的FSVD/FPVD；对于通用视频变分自编码器，减少幅度达到71%/74%。在LiDAR原生的LiDM骨干网络上，FRID下降了71%，在深度不连续性处获得了最大的提升。在一个预训练的LiDM世界模型中，相同的零-shot替换使FSVD提高了15.5%，缩小了模拟与现实之间的差距。",
+  "arxiv_id": "2610.11376",
+  "arxiv_url": "https://arxiv.org/abs/2610.11376v1",
+  "authors": [
+    "Andrea Ceron",
+    "Michael Schmidt",
+    "Alvaro Marcos-Ramiro",
+    "Sebastian Schmidt",
+    "Benjamin Busam"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11376",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.602578+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11376v1",
+  "published_at": "2026-10-08T07:07:55Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "kitti-360",
+      "semantickitti",
+      "lidar",
+      "world model",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 92
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11376v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "CRISP: Fixing Flying Pixels in Latent LiDAR Generation via Diffusion Decoding",
+  "title_zh": "CRISP：通过扩散解码修复潜在LiDAR生成中的飞行像素",
+  "translation_url": "https://hjfy.top/arxiv/2610.11376"
+}

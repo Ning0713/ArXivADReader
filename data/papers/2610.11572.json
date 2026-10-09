@@ -1,0 +1,56 @@
+{
+  "abstract": "Adapting a pre-trained 3D Gaussian Splatting (3DGS) road scene to a new time of day requires learning appearance changes from a few anchor images while preserving consistent, real-time rendering. We propose PAM-ToD, a lightweight plug-in that learns color corrections while keeping the pre-trained 3DGS parameters fixed. PAM-ToD scales each Gaussian's existing color to model illumination changes and uses an additive term for additional brightness, such as when street lamps turn on at night. Under a simplified image formation model, unchanged surface albedo can be eliminated from the relation between source and target appearances, allowing us to learn these corrections without separately estimating albedo and illumination. The model corrects colors across the scene while allowing the corrections to vary by location and by Gaussian. To guide learning from a few anchor images, it discourages abrupt spatial changes in these corrections. We also introduce CARLA-ToD, a benchmark with matching geometry, camera poses, and moving-object trajectories across three times of day. A few target-time anchor images are used to train each plug-in, while separate views are used for evaluation. Across the static and dynamic settings, PAM-ToD achieves higher PSNR and lower LPIPS than the baselines, even when the anchor images come from a single synchronized capture across multiple cameras.",
+  "abstract_zh": "将预训练的3D高斯点云（3DGS）道路场景适应到新的时间段需要从少量锚点图像中学习外观变化，同时保持一致的实时渲染。我们提出了PAM-ToD，这是一种轻量级插件，通过保持预训练的3DGS参数不变来学习颜色校正。PAM-ToD对每个高斯的现有颜色进行缩放，以建模光照变化，并使用附加项来增加亮度，例如在夜间街灯开启时。在简化的图像形成模型下，可以消除源和目标外观之间的关系中的不变表面反照率，从而使我们能够在不单独估计反照率和光照的情况下学习这些校正。该模型在整个场景中校正颜色，同时允许校正因位置和高斯而异。为了指导从少量锚点图像中学习，它抑制这些校正中的突变空间变化。我们还引入了CARLA-ToD，这是一个基准，具有匹配的几何形状、相机姿态和跨越三个时间段的移动物体轨迹。少量目标时间的锚点图像用于训练每个插件，而单独的视图用于评估。在静态和动态设置中，PAM-ToD在PSNR上取得了更高的值，并在LPIPS上取得了更低的值，甚至当锚点图像来自多个相机的单次同步捕获时也是如此。",
+  "arxiv_id": "2610.11572",
+  "arxiv_url": "https://arxiv.org/abs/2610.11572v1",
+  "authors": [
+    "Kota Shimomura",
+    "Sungho Moon",
+    "Tsubasa Hirakawa",
+    "Takayoshi Yamashita",
+    "Sunghoon Im",
+    "Hironobu Fujiyoshi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11572",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.617726+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11572v1",
+  "published_at": "2026-10-08T09:27:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "road",
+      "道路",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11572v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "预测/规划"
+    ]
+  },
+  "title": "PAM-ToD: Plug-and-Play Appearance Modeling for Cross-Time-of-Day 3D Gaussian Splatting",
+  "title_zh": "PAM-ToD：跨时间段的即插即用外观建模用于3D高斯点云渲染",
+  "translation_url": "https://hjfy.top/arxiv/2610.11572"
+}

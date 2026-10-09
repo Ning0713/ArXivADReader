@@ -1,0 +1,51 @@
+{
+  "abstract": "Autonomous Surface Vehicles (ASVs) operating in dynamic marine environments require robust control policies for tasks such as path following and station keeping, making reinforcement learning (RL) a promising alternative to classical controllers. However, existing ASV simulators rarely support parallel environments for RL training. Such existing simulators require accurate hydrodynamic modeling from computational fluid dynamics solvers or towing tank tests for setting hydrodynamic parameters to address the sim-to-real gap. To address these challenges, we present an ASV simulator and accompanying pipeline that enables training policies starting from unknown vehicle dynamics. Our framework uses only a CAD model and brief set of open-water field trajectories for approximating and refining both hydrodynamic and thruster parameters. Real-world deployments on a BlueBoat ASV demonstrate successful zero-shot sim-to-real transfer in path following and station-keeping tasks without prior hydrodynamic and propeller information.",
+  "abstract_zh": "在动态海洋环境中运行的自主水面车辆（ASVs）需要强大的控制策略以执行路径跟踪和保持位置等任务，这使得强化学习（RL）成为经典控制器的一个有前景的替代方案。然而，现有的ASV仿真器很少支持用于RL训练的并行环境。这些现有的仿真器需要来自计算流体动力学求解器或拖曳水槽测试的准确水动力建模，以设置水动力参数，从而解决仿真到现实的差距。为了解决这些挑战，我们提出了一种ASV仿真器及其配套管道，使得从未知车辆动态开始训练策略成为可能。我们的框架仅使用CAD模型和一组简短的开放水域轨迹来近似和优化水动力和推进器参数。在BlueBoat ASV上的实际部署展示了在路径跟踪和保持位置任务中成功实现零-shot的仿真到现实转移，而无需事先的水动力和螺旋桨信息。",
+  "arxiv_id": "2610.12202",
+  "arxiv_url": "https://arxiv.org/abs/2610.12202v1",
+  "authors": [
+    "Cody Sheltraw",
+    "Tsimafei Lazouski",
+    "Maani Ghaffari",
+    "Alan Papalia"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-12202",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.529308+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12202v1",
+  "published_at": "2026-10-08T15:56:38Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12202v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "本文面向自主水面车辆，提出一种基于系统识别的仿真到现实强化学习框架。该方法仅利用CAD模型和少量真实水域轨迹，在未知水动力与推进器参数的情况下构建并优化仿真器，从而训练路径跟踪和定点保持策略。实验在BlueBoat自主水面车辆上实现了无需额外在线适应的零样本仿真到现实迁移。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划"
+    ]
+  },
+  "title": "Sim-to-Real RL for ASVs using SysID",
+  "title_zh": "基于系统识别的自主水面车辆的仿真到现实强化学习",
+  "translation_url": "https://hjfy.top/arxiv/2610.12202"
+}

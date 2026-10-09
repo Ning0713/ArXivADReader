@@ -1,0 +1,63 @@
+{
+  "abstract": "Autonomous vehicles often suffer from limited perception due to occlusions, blind spots, limited sensor range, and the complex nature of surrounding environments. Multi-agent collaborative perception (CP) addresses these challenges by allowing vehicles to share sensory information and reconstruct the scene cooperatively. However, camera-only perception remains fundamentally limited by the uncertainty of distance-dependent monocular depth estimation. We propose CoCam4D, a Bayesian framework for collaborative perception that explicitly models geometric uncertainty. It uses a VGGT-based feedforward network to generate 3D Gaussian scene representations with associated uncertainty estimates, enabling multiple vehicles or agents to efficiently combine their observations. By sharing compact Gaussian primitives, reliable observations from one agent can reduce the depth uncertainty of another without requiring LiDAR sensors. To support real-world deployment, we introduce Dynamic Object Primitives (DOPs), a compact 35-byte representation designed for efficient C-V2X communication. Extensive experiments show that our proposed method consistently outperforms recent vision-only methods, achieving improvements of 11.48% on OPV2V+ and 10.62% on DAIR-V2X-C, demonstrating the potential of geometrically grounded collaborative perception for LiDAR-free autonomous driving.",
+  "abstract_zh": "自主车辆常常因遮挡、盲区、传感器范围有限以及周围环境的复杂性而面临感知能力不足的问题。多智能体协作感知（CP）通过允许车辆共享传感信息并协同重建场景来应对这些挑战。然而，仅依赖相机的感知仍然受到依赖距离的单目深度估计不确定性的根本限制。我们提出了CoCam4D，一种显式建模几何不确定性的协作感知贝叶斯框架。该框架使用基于VGGT的前馈网络生成带有相关不确定性估计的3D高斯场景表示，使多个车辆或智能体能够高效地结合其观测结果。通过共享紧凑的高斯原语，一个智能体的可靠观测可以在不需要激光雷达（LiDAR）传感器的情况下减少另一个智能体的深度不确定性。为了支持实际部署，我们引入了动态物体原语（DOPs），这是一种为高效的C-V2X通信设计的紧凑35字节表示。大量实验表明，我们提出的方法在最近的仅基于视觉的方法中表现一致优越，在OPV2V+上提高了11.48%，在DAIR-V2X-C上提高了10.62%，展示了基于几何的协作感知在无激光雷达自主驾驶中的潜力。",
+  "arxiv_id": "2610.11577",
+  "arxiv_url": "https://arxiv.org/abs/2610.11577v1",
+  "authors": [
+    "Soham Pahari",
+    "Sudip Das",
+    "Arindam Das",
+    "Ujjwal Bhattacharya"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11577",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.503399+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11577v1",
+  "published_at": "2026-10-08T09:31:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "v2x",
+      "dair-v2x",
+      "opv2v",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "lidar",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11577v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "协同/V2X",
+      "感知"
+    ]
+  },
+  "title": "CoCam4D: Geometry-Aware Cooperative 4D Perception for Camera-Only Autonomous Driving",
+  "title_zh": "CoCam4D：面向相机的几何感知协作四维感知用于自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.11577"
+}

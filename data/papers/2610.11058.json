@@ -1,0 +1,64 @@
+{
+  "abstract": "In autonomous driving, understanding scene topology - the connectivity between lanes and traffic elements - is critical for safe path planning and motion control. While current methods excel at detecting individual map elements, their connectivity reasoning often falls short of its theoretical potential, leaving a significant performance gap relative to the theoretical upper-bound achievable given the underlying detections. Furthermore, the decision-ready topology graphs passed to downstream tasks often remain unreliable. Current approaches typically derive connectivity by thresholding continuous topology scores; however, these scores often fail to reflect the true logical likelihood of connectivity, resulting in false positives or missing connections. Existing benchmarks further overlook this issue by primarily evaluating continuous metrics, rather than assessing the discrete connectivity required for decision-making. To bridge these gaps, we propose TopoEnhance, a novel topology enhancement framework designed to unlock the latent potential of existing methods and improve the reliability of decision-ready topology. We formulate topology enhancement as a denoising-based reconstruction process, where the model learns to recover structural consistency from stochastically corrupted ground-truth graphs. This formulation enables the model to resolve logical inconsistencies and rectify unreliable connections, producing robust discrete topology graphs that closely approach theoretical maximum performance. Extensive experiments across different baselines show that TopoEnhance consistently improves both continuous topology metrics (TOP score), and discrete connectivity measured by our adapted Topology Jaccard Similarity (TJS) metric. As a flexible, source-agnostic framework, TopoEnhance delivers substantial gains across diverse state-of-the-art baselines without requiring retraining.",
+  "abstract_zh": "在自动驾驶中，理解场景拓扑——车道与交通元素之间的连接性——对于安全路径规划和运动控制至关重要。尽管当前方法在检测单个地图元素方面表现出色，但它们的连接性推理往往未能达到理论潜力，导致相对于给定基础检测的理论上限存在显著的性能差距。此外，传递给下游任务的决策准备拓扑图通常仍然不可靠。当前方法通常通过对连续拓扑得分进行阈值处理来推导连接性；然而，这些得分往往未能反映连接性的真实逻辑可能性，导致误报或遗漏连接。现有基准测试进一步忽视了这一问题，主要评估连续指标，而不是评估决策所需的离散连接性。为了解决这些问题，我们提出了TopoEnhance，一种新颖的拓扑增强框架，旨在释放现有方法的潜在能力，提高决策准备拓扑的可靠性。我们将拓扑增强形式化为基于去噪的重建过程，其中模型学习从随机损坏的真实图中恢复结构一致性。这一形式化使模型能够解决逻辑不一致性并纠正不可靠的连接，生成稳健的离散拓扑图，接近理论最大性能。通过对不同基线的广泛实验表明，TopoEnhance始终改善了连续拓扑指标（TOP得分）和通过我们改编的拓扑Jaccard相似度（TJS）指标测量的离散连接性。作为一个灵活的、源无关的框架，TopoEnhance在多种最先进的基线中提供了显著的提升，而无需重新训练。",
+  "arxiv_id": "2610.11058",
+  "arxiv_url": "https://arxiv.org/abs/2610.11058v1",
+  "authors": [
+    "Xiaoqi Wang",
+    "Dingyi Zhaung",
+    "David Paz",
+    "Wenbin He",
+    "Yucai Bai",
+    "Peng Zhou",
+    "Rui Zhang",
+    "Jinhua Zhao",
+    "Liu Ren"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11058",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.567278+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11058v1",
+  "published_at": "2026-10-08T01:15:14Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "车道",
+      "path planning"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11058v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "Refine Connections, Close the Gap: A Reliable Enhancement Framework for Driving Scene Topology",
+  "title_zh": "优化连接，缩小差距：一种可靠的驾驶场景拓扑增强框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.11058"
+}

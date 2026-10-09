@@ -1,0 +1,59 @@
+{
+  "abstract": "Globally consistent, real-time state estimation in large-scale, perceptually degraded environments is essential for autonomous vehicles and aerial robots, and requires fusing LiDAR, inertial, and GNSS measurements. Existing fusion methods, however, share a scan-to-map front-end with two failure modes. First, each scan is aligned to an incrementally built map that drifts under degeneracy, and once the estimate diverges the error is irrecoverable. Second, even without divergence, a registration biased by dynamic objects or wrong correspondences is propagated as a single pose constraint with an over-confident covariance, leaving its correspondences unavailable for GNSS to re-weight or relinearize. We propose GLIO2, a tightly-coupled LiDAR-Inertial-GNSS system whose GPU-parallel front-end jointly optimizes scan-to-multiscan LiDAR, IMU pre-integration, and raw GNSS measurements in a single sliding-window factor graph, sustaining real-time operation on edge hardware. A complementary offline back-end reuses the same cached factors to refine the entire trajectory in batch, completing the 30-min, 4.51-km UrbanNav Whampoa sequence in about 24 s. Across three public benchmarks (UrbanNav, MARS-LVIG, M3DGR) and self-collected UAV and vehicle data, GLIO2 attains the best overall accuracy among evaluated systems. On a 5.66-km bridge traversed at up to 96 km/h, where every competing baseline diverges under LiDAR degeneracy, it maintains 1.6 m horizontal accuracy. On an NVIDIA Jetson Orin NX, the full pipeline runs at about 25 Hz (39.60 ms per scan). The source code and datasets will be released.",
+  "abstract_zh": "在大规模、感知退化环境中进行全球一致的实时状态估计对于自主车辆和空中机器人至关重要，这需要融合LiDAR、惯性和GNSS测量。然而，现有的融合方法共享一个扫描到地图的前端，存在两种失效模式。首先，每个扫描都与逐步构建的地图对齐，而该地图在退化情况下会出现漂移，一旦估计发散，误差将无法恢复。其次，即使没有发散，由动态物体或错误对应关系引起的配准偏差也会作为单一姿态约束传播，并伴随过于自信的协方差，使得其对应关系无法供GNSS重新加权或重新线性化。我们提出了GLIO2，这是一种紧耦合的LiDAR-惯性-GNSS系统，其GPU并行前端在单个滑动窗口因子图中联合优化扫描到多扫描的LiDAR、IMU预积分和原始GNSS测量，从而在边缘硬件上维持实时操作。一个互补的离线后端重用相同的缓存因子，以批量方式精炼整个轨迹，完成30分钟、4.51公里的UrbanNav Whampoa序列仅需约24秒。在三个公共基准测试（UrbanNav、MARS-LVIG、M3DGR）和自收集的无人机及车辆数据中，GLIO2在评估的系统中获得了最佳的整体精度。在以最高96公里/小时的速度穿越的5.66公里桥梁上，所有竞争基线在LiDAR退化下均出现发散，而它保持了1.6米的水平精度。在NVIDIA Jetson Orin NX上，整个管道以约25 Hz（每扫描39.60毫秒）的速度运行。源代码和数据集将会发布。",
+  "arxiv_id": "2610.12411",
+  "arxiv_url": "https://arxiv.org/abs/2610.12411v1",
+  "authors": [
+    "Qi Zhang",
+    "Xikun Liu",
+    "Qijun Qin",
+    "Xiangru Wang",
+    "Junzhe Wang",
+    "Naigui Xiao",
+    "Jianhao Jiao",
+    "Weisong Wen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-12411",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.539437+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12411v1",
+  "published_at": "2026-10-08T17:49:33Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "lidar",
+      "uav",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12411v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "GLIO2: A GPU-Parallelized Tightly-Coupled LiDAR-Inertial-GNSS System for Robust and Real-Time Global Localization and Mapping",
+  "title_zh": "GLIO2：一种GPU并行化的紧耦合LiDAR-惯性-GNSS系统，用于稳健的实时全球定位与地图构建",
+  "translation_url": "https://hjfy.top/arxiv/2610.12411"
+}

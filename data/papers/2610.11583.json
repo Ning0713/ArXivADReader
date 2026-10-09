@@ -1,0 +1,57 @@
+{
+  "abstract": "End-to-end autonomous driving demands trajectory planners that are both highly accurate and cheap enough for edge deployment. State-of-the-art artificial neural network (ANN) planners meet the accuracy requirement at the cost of heavy dense computation, while spiking neural networks (SNNs)---though promising orders-of-magnitude energy savings through sparse, event-driven arithmetic---still lag far behind in planning accuracy. We present \\textbf{SDPAD}, a fully spike-driven end-to-end planning pipeline that closes this gap. SDPAD converts a pre-trained ANN perception stack into integer-spike form via quantized ANN2SNN conversion, lifts multi-view images into the bird's-eye-view (BEV) space with a spike-driven-max (SDM) depth distribution (Spike-3D-Lift), and plans through the Spike-QFormer, a spiking query transformer in which ego, agent, and map queries distilled from the BEV scene are fused by learnable waypoint queries via cross-attention, followed by deformable spike-cross-attention refinement. Every operation is gated by integer spikes and inference is a single feed-forward pass without temporal simulation loops. On the nuScenes open-loop benchmark, SDPAD achieves an average $L_2$ error of 0.40\\,m and a collision rate of 0.12\\%, on par with strong ANN planners while consuming 69.9\\,mJ---less than 2\\% of recent ANN baselines. In closed-loop evaluation on the NAVSIM navtest split, SDPAD reaches 86.3 PDMS, surpassing the previous SNN planner SAD by 4.3 points and matching mainstream ANN planners at a fraction of their energy. To our knowledge, SDPAD is the first fully spike-driven planner evaluated in end-to-end autonomous driving, demonstrating that SNNs can rival dense ANNs in complex driving tasks.",
+  "abstract_zh": "端到端自主驾驶需要既高精度又足够便宜以便于边缘部署的轨迹规划器。最先进的人工神经网络（ANN）规划器在满足精度要求的同时，代价是进行大量密集计算，而脉冲神经网络（SNN）虽然通过稀疏的事件驱动算术在能耗上具有数个数量级的节省，但在规划精度上仍远远落后。我们提出了 extbf{SDPAD}，一种完全基于脉冲的端到端规划管道，旨在弥补这一差距。SDPAD通过量化的ANN2SNN转换将预训练的ANN感知堆栈转换为整数脉冲形式，利用脉冲驱动的最大（SDM）深度分布将多视图图像提升到鸟瞰图（BEV）空间（Spike-3D-Lift），并通过脉冲查询变换器（Spike-QFormer）进行规划，其中从BEV场景提取的自我、代理和地图查询通过可学习的路径点查询通过交叉注意力进行融合，随后进行可变形脉冲交叉注意力的细化。每个操作都由整数脉冲控制，推理过程为单次前馈传递，无需时间模拟循环。在nuScenes开放循环基准测试中，SDPAD实现了平均$L_2$误差为0.40米，碰撞率为0.12%，与强大的ANN规划器相当，同时消耗69.9毫焦耳——不到最近ANN基线的2%。在NAVSIM导航测试集的闭环评估中，SDPAD达到了86.3 PDMS，超越了之前的SNN规划器SAD 4.3分，并在能耗上与主流ANN规划器相匹配。据我们所知，SDPAD是首个在端到端自主驾驶中评估的完全基于脉冲的规划器，证明了SNN在复杂驾驶任务中可以与密集的ANN相抗衡。",
+  "arxiv_id": "2610.11583",
+  "arxiv_url": "https://arxiv.org/abs/2610.11583v1",
+  "authors": [
+    "Chengjun Zhang",
+    "Yuhao Zhang",
+    "Jie Yang",
+    "Mohamad Sawan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11583",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.504174+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11583v1",
+  "published_at": "2026-10-08T09:33:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11583v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "SDPAD: A Fully Spike-Driven Pipeline for End-to-End Autonomous Driving",
+  "title_zh": "SDPAD：一种完全基于脉冲的端到端自主驾驶管道",
+  "translation_url": "https://hjfy.top/arxiv/2610.11583"
+}

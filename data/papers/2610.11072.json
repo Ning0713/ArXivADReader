@@ -1,0 +1,54 @@
+{
+  "abstract": "Autonomous navigation in cluttered and constrained environments typically assumes a fixed environment and searches only for paths within existing free space. However, a route can be blocked by an articulated structure, a movable object, or a pedestrian, and reaching the goal may therefore require appropriate embodied interaction with the environment. This paper formulates Path-Creative Navigation (PCN), a navigation paradigm in which the robot recovers free space by coordinating locomotion and embodied interaction, and addresses one class of PCN tasks with a mapless framework. The vision-LiDAR-odometry framework integrates local observations, obstacle geometry, and robot-state estimates through a unified navigation system, providing stable semantic and geometric information for navigation and interaction. The traversability-aware decision method utilizes visual and LiDAR distance information to determine whether a blockage is actionable and whether it can be safely bypassed, enabling the robot to interact only when necessary while supporting articulated structure pushing, movable object pushing, obstacle avoidance, and pedestrian requests. We design simulation scenarios and evaluate different methods in both simulation and two real-world tasks that cannot be completed by conventional navigation alone without embodied interaction. These results demonstrate that our framework achieves higher task completion than the baseline methods by coordinating navigation and interaction in cluttered and constrained environments. Code is available at:{https://anonymous.4open.science/r/path-creative-navigation/}.",
+  "abstract_zh": "自主导航在拥挤和受限环境中通常假设环境是固定的，仅在现有的自由空间内搜索路径。然而，路线可能会被关节结构、可移动物体或行人阻挡，因此到达目标可能需要与环境进行适当的具身互动。本文提出了路径创造性导航（Path-Creative Navigation, PCN），这一导航范式使机器人通过协调运动和具身互动来恢复自由空间，并针对无地图框架下的一类PCN任务进行了探讨。视觉-激光雷达-里程计框架通过统一的导航系统整合了局部观测、障碍几何形状和机器人状态估计，为导航和互动提供稳定的语义和几何信息。可通行性感知决策方法利用视觉和激光雷达距离信息来判断阻塞是否可操作以及是否可以安全绕过，使机器人仅在必要时进行互动，同时支持关节结构推送、可移动物体推送、障碍物规避和行人请求。我们设计了仿真场景，并在仿真和两个无法仅通过传统导航完成的真实任务中评估不同方法。这些结果表明，我们的框架通过在拥挤和受限环境中协调导航和互动，实现了比基线方法更高的任务完成率。代码可在以下链接获取：{https://anonymous.4open.science/r/path-creative-navigation/}。",
+  "arxiv_id": "2610.11072",
+  "arxiv_url": "https://arxiv.org/abs/2610.11072v1",
+  "authors": [
+    "Haoyu Xi",
+    "Siwei Cheng",
+    "Xiangyuan Liu",
+    "Brenda Li",
+    "Wei Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11072",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.487192+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11072v1",
+  "published_at": "2026-10-08T01:30:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "pedestrian",
+      "行人",
+      "lidar",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11072v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "Towards Path-Creative Navigation: Robot Navigation through Embodied Interaction",
+  "title_zh": "朝向路径创造性导航：通过具身互动实现机器人导航",
+  "translation_url": "https://hjfy.top/arxiv/2610.11072"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Given the inherent unpredictability of packet loss in vehicular wireless communications, V2X collaborative perception can yield practical benefits only if agents can achieve reliable collaboration under lossy and low-bandwidth communication conditions. Existing dense BEV feature fusion methods depend on redundant BEV feature exchange, which is infeasible in low-bandwidth scenarios, while compact-communication methods aggressively compress messages but can hardly recover the missing feature content after packet loss. In this paper, we present LR-V2X, a loss-resilient, latent-space reconstruction framework that converts corrupted received latents (even under severe 90% packet loss) into a spatial prior and then reconstructs the missing BEV information from this informative prior and using ego context as condition. Notably, the model can be trained under complete communication conditions and can be directly applied to lossy conditions at test time, eliminating the need for training under numerous lossy conditions. Experiments on DAIR-V2X and V2XREAL show that LR-V2X delivers the strongest robustness under severe packet loss and preserves reliable collaboration as communication quality degrades. And it reduces communication overhead by $64\\times$ compared to dense BEV feature fusion baselines. Code will be released at https://github.com/sidiangongyuan/LR-V2X.",
+  "abstract_zh": "鉴于车辆无线通信中数据包丢失的固有不可预测性，V2X协同感知只有在代理能够在丢包和低带宽通信条件下实现可靠协作时才能产生实际效益。现有的密集BEV特征融合方法依赖于冗余的BEV特征交换，这在低带宽场景中是不可行的，而紧凑通信方法则过度压缩消息，导致在数据包丢失后几乎无法恢复缺失的特征内容。本文提出了LR-V2X，一个抗损失的潜在空间重建框架，该框架将损坏的接收潜在信息（即使在严重的90%数据包丢失情况下）转换为空间先验，然后利用这一信息先验和自我上下文作为条件重建缺失的BEV信息。值得注意的是，该模型可以在完整通信条件下进行训练，并可以直接应用于测试时的丢包条件，消除了在多种丢包条件下训练的需求。在DAIR-V2X和V2XREAL上的实验表明，LR-V2X在严重数据包丢失情况下展现出最强的鲁棒性，并在通信质量下降时保持可靠的协作。同时，与密集BEV特征融合基线相比，它将通信开销减少了64倍。代码将发布在 https://github.com/sidiangongyuan/LR-V2X。",
+  "arxiv_id": "2610.11264",
+  "arxiv_url": "https://arxiv.org/abs/2610.11264v1",
+  "authors": [
+    "Kang Yang",
+    "Tianci Bu",
+    "Peng Wang",
+    "Deying Li",
+    "Yongcai Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11264",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.591483+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11264v1",
+  "published_at": "2026-10-08T05:19:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "dair-v2x",
+      "车辆",
+      "bev"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 61
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11264v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "协同/V2X"
+    ]
+  },
+  "title": "LR-V2X: Loss-Resilient Collaborative Perception under Low-Bandwidth Communication",
+  "title_zh": "LR-V2X：低带宽通信下的抗损失协同感知",
+  "translation_url": "https://hjfy.top/arxiv/2610.11264"
+}

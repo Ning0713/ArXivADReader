@@ -1,0 +1,58 @@
+{
+  "abstract": "Diffusion-based driving planners capture diverse behaviors but can generate unsafe trajectories under distribution shift. We propose BridgeGuard, a safety-constrained diffusion planning method that progressively strengthens a constraint term during denoising to drive intermediate trajectories toward a scene-dependent safety domain. Corrections operate in a low-dimensional curve space, promoting geometric coherence. A learned module, DistanceFieldNet, predicts a time-dependent distance field from bird's-eye-view features. Value and spatial-gradient supervision at queries sampled beyond expert trajectories teaches this field about both safe and unsafe regions. The learned field supplies the constraint term through safety injection while the pretrained perception backbone and planner remain frozen. We further establish sufficient conditions for terminal safety in an idealized continuous-time bridge. On Bench2Drive, BridgeGuard improves driving score/success rate from 87.99/74.99% to 90.88/76.36% for BridgeDrive and from 80.79/58.18% to 90.46/74.09% for $\\text{DiffusionDrive}^{\\text{geo}}$, demonstrating cross-model generalization.",
+  "abstract_zh": "基于扩散的驾驶规划器能够捕捉多样化的行为，但在分布转移下可能生成不安全的轨迹。我们提出了BridgeGuard，一种安全约束的扩散规划方法，该方法在去噪过程中逐步加强约束项，以将中间轨迹引导至场景依赖的安全域。修正操作在低维曲线空间中进行，促进几何一致性。一个学习模块DistanceFieldNet从鸟瞰视图特征中预测时间依赖的距离场。在超出专家轨迹的查询点上进行值和空间梯度监督，使该距离场了解安全和不安全区域。学习到的距离场通过安全注入提供约束项，同时预训练的感知骨干网络和规划器保持冻结。我们进一步为理想化的连续时间桥梁建立了终端安全的充分条件。在Bench2Drive上，BridgeGuard将BridgeDrive的驾驶得分/成功率从87.99/74.99%提升至90.88/76.36%，将$ ext{DiffusionDrive}^{ ext{geo}}$的驾驶得分/成功率从80.79/58.18%提升至90.46/74.09%，展示了跨模型的泛化能力。",
+  "arxiv_id": "2610.11483",
+  "arxiv_url": "https://arxiv.org/abs/2610.11483v1",
+  "authors": [
+    "Zhenjun Qiu",
+    "Jianing Huang",
+    "Dongang Liu",
+    "Baiyu Du",
+    "Yixun Niu",
+    "Hao Yang",
+    "Xinyu Huang",
+    "Chuan Hu",
+    "Shu Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-09#paper-2610-11483",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-09T11:36:51.725909+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.11483v1",
+  "published_at": "2026-10-08T08:26:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bird's-eye"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-10-09"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.11483v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-09"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "世界模型/生成"
+    ]
+  },
+  "title": "BridgeGuard: Explicit Safety Drift for Diffusion-based Autonomous Driving",
+  "title_zh": "BridgeGuard：基于扩散的自主驾驶中的显式安全漂移",
+  "translation_url": "https://hjfy.top/arxiv/2610.11483"
+}
