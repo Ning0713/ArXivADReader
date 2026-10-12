@@ -1,0 +1,55 @@
+{
+  "abstract": "Accurate detection of drivable area is essential for autonomous driving and advanced driver assistance systems. While state-of-the-art methods focus on general traversability estimation, they prove inadequate for snow-covered roads where following existing wheel tracks offers crucial advantages: improved traction, predictable vehicle dynamics, and verified path stability. To address this, we propose a low-cost, self-supervised approach detecting safety-critical wheel tracks using synchronized RGB-I (RGB + Long-Wave Infrared) imagery. Our method automatically generates training labels by projecting future wheel trajectories from recorded GNSS data. A neural network is designed to identify wheel tracks with the 4-channel RGB-I images from challenging, white-out road surfaces. Experimental results demonstrate the effectiveness of our approach in visually monotonous and featureless adverse environment, offering a robust and cost-effective alternative for winter autonomy. The newly introduced ThermalTrack dataset is available at: https://digitalcommons.mtu.edu/thermaltrack/.",
+  "abstract_zh": "准确检测可行驶区域对于自动驾驶和高级驾驶辅助系统至关重要。尽管最先进的方法专注于一般的可通行性评估，但它们在雪覆盖道路上的表现却显得不足，因为在这种情况下，遵循现有的轮轨提供了重要的优势：改善的牵引力、可预测的车辆动态以及经过验证的路径稳定性。为了解决这一问题，我们提出了一种低成本的自监督方法，通过同步的RGB-I（RGB + 长波红外）图像检测安全关键的轮轨。我们的方法通过从记录的GNSS数据中投影未来的轮轨迹自动生成训练标签。设计了一种神经网络，以识别来自具有挑战性的白色道路表面的4通道RGB-I图像中的轮轨。实验结果表明，我们的方法在视觉单调和特征缺乏的不利环境中有效，提供了一种稳健且具有成本效益的冬季自主替代方案。新引入的ThermalTrack数据集可在以下网址获取：https://digitalcommons.mtu.edu/thermaltrack/",
+  "arxiv_id": "2610.13872",
+  "arxiv_url": "https://arxiv.org/abs/2610.13872v1",
+  "authors": [
+    "Yiming Yang",
+    "Jeremy P. Bos"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-13872",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.741472+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.13872v1",
+  "published_at": "2026-10-09T17:21:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.13872v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Tracking the Invisible: Self-Supervised Wheel Track Detection with Thermal-RGB Fusion",
+  "title_zh": "追踪隐形轨迹：基于热成像与RGB融合的自监督轮轨检测",
+  "translation_url": "https://hjfy.top/arxiv/2610.13872"
+}

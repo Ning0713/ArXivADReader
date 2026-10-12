@@ -1,0 +1,52 @@
+{
+  "abstract": "Reconstructing 3D scenes from sparse views without per-scene optimization remains highly challenging, especially for recovering accurate geometry and fine textures. While recent feedforward approaches leverage generalizable 3D Gaussian Splatting (3DGS) for scene generation, they typically assign one or multiple Gaussians to each pixel. Such uniform allocation not only produces highly redundant representations by wasting primitives in homogeneous areas, but also fails to exploit the inherent geometric priors of planar surfaces, often resulting in sub-optimal structural modeling. To address these limitations, we present CompactSplat, a novel feedforward framework that enables a content-aware allocation of 3D Gaussians. By integrating texture-guided spatial partitioning with hierarchical sampling, CompactSplat adaptively distributes primitives - concentrating dense Gaussians in complex regions while tiling flat areas with expanded, scale-modulated primitives. Moreover, our framework inherently supports dynamic sparsity control at inference time, enabling seamless trade-offs between rendering fidelity and memory footprint without requiring network retraining. Extensive experiments on RealEstate10K, DL3DV, and ScanNet demonstrate that CompactSplat consistently outperforms prior methods on both standard metrics and high-resolution rendering consistency, achieving high-fidelity reconstructions with significantly fewer primitives.",
+  "abstract_zh": "从稀疏视图重建三维场景而无需对每个场景进行优化仍然具有很高的挑战性，尤其是在恢复准确的几何形状和细致纹理方面。虽然最近的前馈方法利用可泛化的三维高斯点云（3D Gaussian Splatting, 3DGS）进行场景生成，但它们通常将一个或多个高斯分配给每个像素。这种均匀分配不仅通过在同质区域浪费原始元素而产生高度冗余的表示，而且未能利用平面表面的固有几何先验，常常导致次优的结构建模。为了解决这些局限性，我们提出了CompactSplat，一种新颖的前馈框架，能够实现内容感知的三维高斯分配。通过将纹理引导的空间分区与层次采样相结合，CompactSplat自适应地分配原始元素——在复杂区域集中分布密集的高斯，而在平坦区域则使用扩展的、尺度调制的原始元素。此外，我们的框架在推理时本质上支持动态稀疏控制，实现渲染保真度与内存占用之间的无缝权衡，而无需重新训练网络。在RealEstate10K、DL3DV和ScanNet上的大量实验表明，CompactSplat在标准指标和高分辨率渲染一致性方面始终优于先前的方法，以显著更少的原始元素实现高保真重建。",
+  "arxiv_id": "2610.13177",
+  "arxiv_url": "https://arxiv.org/abs/2610.13177v1",
+  "authors": [
+    "Bing He",
+    "Jingnan Gao",
+    "Yunuo Chen",
+    "Zhengxue Cheng",
+    "Rong Xie",
+    "Li Song",
+    "Wenjun Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-13177",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.715776+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.13177v1",
+  "published_at": "2026-10-09T08:04:45Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "gaussian splatting",
+      "场景生成",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.13177v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "提出一种用于稀疏视图前馈式三维场景重建的空间自适应高斯分配方法，通过纹理引导的空间划分和分层采样，在复杂区域增加高斯密度、在平面区域使用更大尺度的高斯原语，从而减少表示冗余并改善几何结构建模。方法还支持推理时动态调节稀疏度，在重建质量和内存开销之间进行灵活权衡。该工作与自动驾驶中的三维环境建模和几何感知具有潜在关联，但论文摘要未明确涉及自动驾驶场景、车辆传感器或驾驶任务。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "CompactSplat: Spatially Adaptive Gaussian Distribution for Feedforward Scene Reconstruction",
+  "title_zh": "CompactSplat：用于前馈场景重建的空间自适应高斯分布",
+  "translation_url": "https://hjfy.top/arxiv/2610.13177"
+}

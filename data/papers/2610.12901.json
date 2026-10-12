@@ -1,0 +1,49 @@
+{
+  "abstract": "Domain adaptive object detection (DAOD) aims to reduce performance degradation due to distribution shifts between training (source) and testing (target) datasets. However, owing to insufficient modeling of fine-grained features and limited instance-level alignment, existing approaches become less effective under complex environmental conditions, such as extreme weather conditions and object occlusion. We overcome these challenges by proposing JMT-YOLO, a novel joint multi-task learning framework for DAOD. JMT-YOLO is based on the Mean Teacher architecture. It introduces an auxiliary semantic segmentation task and a masking mechanism to enhance the modeling of foreground-background semantic boundaries in the target domain. Specifically, fine-grained feature degradation is reduced by introducing a multiscale context-aware segmentation head equipped with a dense connection structure to effectively capture local and global contextual features. A mask-consistency loss is formulated by applying random masking operations to target images, thereby guiding the network to learn structural context and improving instance-level feature alignment. Extensive experiments on three benchmark domain adaptation tasks (Pascal VOC to Clipart1k, Cityscapes to Foggy Cityscapes, and KITTI to Cityscapes) demonstrate that JMT-YOLO achieves detection performances of 46.9%, 57.3%, and 61.0%, respectively. These results demonstrate superior performance over existing state-of-the-art and baseline methods, thereby validating the effectiveness and generalization of JMT-YOLO.",
+  "abstract_zh": "领域自适应目标检测（DAOD）旨在减少由于训练（源）数据集与测试（目标）数据集之间的分布变化而导致的性能下降。然而，由于对细粒度特征建模不足和实例级对齐有限，现有方法在复杂环境条件下（如极端天气和物体遮挡）变得不够有效。我们通过提出JMT-YOLO，克服了这些挑战，这是一种用于DAOD的新颖联合多任务学习框架。JMT-YOLO基于Mean Teacher架构，引入了辅助语义分割任务和掩膜机制，以增强目标领域中前景-背景语义边界的建模。具体而言，通过引入配备密集连接结构的多尺度上下文感知分割头，减少了细粒度特征的退化，从而有效捕捉局部和全局上下文特征。通过对目标图像应用随机掩膜操作，制定了掩膜一致性损失，从而引导网络学习结构上下文并改善实例级特征对齐。在三个基准领域适应任务（Pascal VOC到Clipart1k，Cityscapes到Foggy Cityscapes，以及KITTI到Cityscapes）上的大量实验表明，JMT-YOLO分别实现了46.9%、57.3%和61.0%的检测性能。这些结果显示出优于现有最先进和基线方法的性能，从而验证了JMT-YOLO的有效性和泛化能力。",
+  "arxiv_id": "2610.12901",
+  "arxiv_url": "https://arxiv.org/abs/2610.12901v1",
+  "authors": [
+    "Zhenhua Yu",
+    "Jiahao Zhang",
+    "Wenchao Zhang",
+    "Ou Ye",
+    "Hengxiang Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-12901",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.704185+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12901v1",
+  "published_at": "2026-10-09T02:47:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 40
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12901v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "JMT-YOLO: Multi-task Domain Adaptation via Segmentation-Guided Consistency Learning",
+  "title_zh": "JMT-YOLO：通过分割引导的一致性学习实现多任务领域适应",
+  "translation_url": "https://hjfy.top/arxiv/2610.12901"
+}

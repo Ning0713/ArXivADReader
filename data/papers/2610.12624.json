@@ -1,0 +1,57 @@
+{
+  "abstract": "Prior outdoor LiDAR registration works are commonly limited by the pair-wise input paradigm, which neglects temporal correlations inherent within streaming sequences. In this paper, we propose a novel multi-frame outdoor point cloud registration network for streaming LiDAR scans enhanced with pose-related memory buffers. The key observation is that long-term temporal LiDAR sequences can provide rich global contextual information to complete sparse measurements, filter outliers, and address low-overlap problems, thereby boosting registration performance. Specifically, two hybrid memory buffers are designed, including an implicit memory feature buffer and an explicit memory pose buffer, to store and dynamically update pose-related temporal features. Moreover, a novel dynamic history weighting module is developed to adaptively fuse current and history pose-related features. Extensive experiments on three outdoor datasets, including KITTI, nuScenes, and Apollo-Southbay, demonstrate state-of-the-art performance of MemReg, surpassing all previous pair-wise methods and also multi-frame SLAM systems. Our method also generalizes surprisingly well to multiview indoor registration scenarios with rather competitive performance on 3DMatch, 3DLoMatch, and ScanNet. Code will be released at https://github.com/IRMVLab/MemReg.",
+  "abstract_zh": "以往的户外LiDAR配准工作通常受到成对输入范式的限制，忽视了流式序列中固有的时间相关性。本文提出了一种新颖的多帧户外点云配准网络，用于增强姿态相关内存缓冲区的流式LiDAR扫描。关键观察是，长期的时间LiDAR序列可以提供丰富的全局上下文信息，以补全稀疏测量、过滤异常值并解决低重叠问题，从而提升配准性能。具体而言，设计了两个混合内存缓冲区，包括隐式内存特征缓冲区和显式内存姿态缓冲区，用于存储和动态更新与姿态相关的时间特征。此外，开发了一种新颖的动态历史加权模块，以自适应融合当前和历史的姿态相关特征。在三个户外数据集（包括KITTI、nuScenes和Apollo-Southbay）上的大量实验表明，MemReg的性能达到了最先进水平，超越了所有以前的成对方法以及多帧SLAM系统。我们的方法在多视角室内配准场景中也表现出惊人的泛化能力，在3DMatch、3DLoMatch和ScanNet上具有相当有竞争力的表现。代码将发布在https://github.com/IRMVLab/MemReg。",
+  "arxiv_id": "2610.12624",
+  "arxiv_url": "https://arxiv.org/abs/2610.12624v1",
+  "authors": [
+    "Jiuming Liu",
+    "Mengmeng Liu",
+    "Guangming Wang",
+    "Lihao Liu",
+    "Michael Ying Yang",
+    "Yunpeng Zhang",
+    "Francesco Nex",
+    "Hao Cheng",
+    "Hesheng Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-12624",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.696705+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12624v1",
+  "published_at": "2026-10-08T18:44:59Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12624v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "MemReg: Streaming Outdoor LiDAR Point Cloud Registration with Hybrid Memory Buffers",
+  "title_zh": "MemReg：具有混合内存缓冲区的流式户外LiDAR点云配准",
+  "translation_url": "https://hjfy.top/arxiv/2610.12624"
+}

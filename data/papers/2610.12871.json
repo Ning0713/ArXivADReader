@@ -1,0 +1,48 @@
+{
+  "abstract": "When a query must be matched against a database built with a different sensor or processed by a different encoder, the independently trained encoders impose distinct coordinate systems on the feature space. No canonical reference frame exists to which all encoders can be aligned, and no single training procedure has fully closed this gap. We show that the relative transformation between any two such systems is a spatially preserving rotation in whitened feature space, whose angular velocity exhibits white-noise characteristics: large in norm, temporally uncorrelated, and unpredictable from the features themselves. However, the cross-covariance between encoder outputs has low effective rank, constraining only a small fraction of the rotation parameters, therefore local alignment is tractable. ROSETTA is a training-free calibration layer that estimates the local rotation via an expectation-maximization procedure, requiring no coobservation at query time. We validate ROSETTA on three public driving datasets spanning LiDAR, camera, thermal, and event modalities in cross-modal, cross-device, cross-representation, and cross-backbone settings, with milliseconds overhead per query.",
+  "abstract_zh": "当查询必须与使用不同传感器构建或由不同编码器处理的数据库进行匹配时，独立训练的编码器在特征空间中施加了不同的坐标系统。不存在一个所有编码器都可以对齐的标准参考框架，也没有单一的训练过程能够完全弥补这一差距。我们表明，任何两个这样的系统之间的相对变换是在白化特征空间中保持空间不变的旋转，其角速度表现出白噪声特征：范数大、时间上不相关，并且无法从特征本身预测。然而，编码器输出之间的交叉协方差具有低有效秩，仅约束了一小部分旋转参数，因此局部对齐是可行的。ROSETTA是一个无训练的校准层，通过期望最大化程序估计局部旋转，在查询时无需共同观察。我们在三个公共驾驶数据集上验证了ROSETTA，这些数据集涵盖了激光雷达、相机、热成像和事件模态，涉及跨模态、跨设备、跨表示和跨骨干网的设置，每次查询的开销为毫秒级。",
+  "arxiv_id": "2610.12871",
+  "arxiv_url": "https://arxiv.org/abs/2610.12871v1",
+  "authors": [
+    "Alex Junho Lee"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-12871",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.702238+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12871v1",
+  "published_at": "2026-10-09T01:57:24Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12871v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "提出免训练的跨模态特征对齐方法 ROSETTA，通过期望最大化估计不同编码器或传感器特征空间之间的局部旋转变换，并在多个公共驾驶数据集上验证其效果。",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "地图/定位",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "ROSETTA: Rotation Subspace Estimation for Training-free Transmodal Alignment",
+  "title_zh": "ROSETTA：无训练的跨模态对齐中的旋转子空间估计",
+  "translation_url": "https://hjfy.top/arxiv/2610.12871"
+}

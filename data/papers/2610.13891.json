@@ -1,0 +1,51 @@
+{
+  "abstract": "Light Detection and Ranging (LiDAR) is critical for autonomous perception, yet its performance is known to degrade in adverse weather. While existing literature models snow as atmospheric noise that degrades performance, our granular evaluation on the WADS-3D and CADC datasets reveals a counter-intuitive phenomenon: detection accuracy consistently improves as snow intensity increases. Through ablation study and meta-information analysis, we reconcile this by confirming that while falling snow acts as noise, its negative impact is outweighed by a dominant, concurrent factor: significantly increased object point count. We hypothesize that this object point count boost acts as a geometric enhancement, driven by snow accumulation increasing vehicle surface area and a shift from specular to diffuse reflectance. Our findings demonstrate that evaluating perception systems using broad weather-severity bins without accounting for correlated object-level data can lead to misleading conclusions about detector robustness. We conclude that accurate evaluation requires decoupling atmospheric noise from surface accumulation effects and outline future research to validate these physical models. The WADS-3D dataset is available at: https://digitalcommons.mtu.edu/wads-3d/.",
+  "abstract_zh": "光探测与测距（LiDAR）对自主感知至关重要，但其性能在恶劣天气条件下会下降。现有文献将雪视为降低性能的气象噪声，而我们对WADS-3D和CADC数据集的细致评估揭示了一个反直觉的现象：随着雪强度的增加，检测准确率持续提高。通过消融研究和元信息分析，我们确认，尽管降雪作为噪声存在，其负面影响被一个主导的、同时发生的因素所抵消：显著增加的目标点数量。我们假设，这一目标点数量的提升作为几何增强，是由于雪的积累增加了车辆的表面积，并导致从镜面反射转向漫反射。我们的研究结果表明，在评估感知系统时，如果不考虑相关的目标级数据，仅使用广泛的天气严重性区间，可能会导致对检测器鲁棒性的误导性结论。我们得出结论，准确的评估需要将大气噪声与表面积累效应解耦，并概述了未来研究以验证这些物理模型的方向。WADS-3D数据集可在以下链接获取：https://digitalcommons.mtu.edu/wads-3d/",
+  "arxiv_id": "2610.13891",
+  "arxiv_url": "https://arxiv.org/abs/2610.13891v1",
+  "authors": [
+    "Yiming Yang",
+    "Jeremy P. Bos"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-13891",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.741853+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.13891v1",
+  "published_at": "2026-10-09T17:38:30Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.13891v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "研究分析降雪条件下激光雷达目标检测表现反而提升的原因，发现目标点数量增加这一混杂因素可能抵消降雪噪声的负面影响。论文强调，评估恶劣天气下的自动驾驶感知系统时，应将天气噪声与目标表面变化等因素分开考察。",
+  "tags": {
+    "primary": "3D 检测",
+    "secondary": [
+      "LiDAR/点云",
+      "安全/异常"
+    ]
+  },
+  "title": "Beyond the Snowflakes: Disentangling Weather Effects from Confounding Meta-Factors in LiDAR Object Detection",
+  "title_zh": "超越雪花：剔除激光雷达目标检测中的天气影响与混杂元因素",
+  "translation_url": "https://hjfy.top/arxiv/2610.13891"
+}

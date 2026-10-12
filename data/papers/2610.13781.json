@@ -1,0 +1,59 @@
+{
+  "abstract": "Driving world action models (WAMs) learn from paired trajectories and future observations. Post-training with reinforcement learning allows the policy to explore alternative trajectories and improve planning using driving rewards. However, driving logs contain future videos only for the recorded trajectories, leaving these alternatives without corresponding visual supervision. Thus, we introduce SimVTA, a simulation-grounded post-training framework that combines trajectory optimization with video supervision. First, we sample candidate trajectories for each observation and use a real-world simulator (e.g., World Engine) to render future videos for high-reward candidates in real-world scenes reconstructed with 3D Gaussian Splatting (3DGS). This provides trajectory-matched supervision independent of the model's own predictions. Under a limited rendering budget, we prioritize video supervision for higher-error futures among these rendered candidates. Finally, we optimize trajectory planning with Group Relative Policy Optimization (GRPO) and use a flow-matching loss on the matched videos to update shared representations. At inference time, the model predicts trajectories directly, without simulator calls. On NAVSIM v1, applying SimVTA to a WAM initialization improves PDMS from 86.2 to 91.3 (+5.1). It achieves 88.2 EPDMS on NAVSIM v2 and an average HD-Score of 38.8 in closed-loop evaluation on HUGSIM. Ablations show that updating shared representations with video supervision improves planning, while prioritizing higher-error futures among high-reward trajectories further improves performance.",
+  "abstract_zh": "驾驶世界动作模型（WAMs）通过配对轨迹和未来观察进行学习。使用强化学习进行后训练使得策略能够探索替代轨迹，并利用驾驶奖励改善规划。然而，驾驶日志仅包含记录轨迹的未来视频，导致这些替代轨迹缺乏相应的视觉监督。因此，我们提出了SimVTA，一种基于仿真的后训练框架，将轨迹优化与视频监督相结合。首先，我们为每个观察样本生成候选轨迹，并使用真实世界模拟器（如World Engine）在通过3D高斯点云重建的真实场景中为高奖励候选轨迹渲染未来视频。这提供了与模型自身预测无关的轨迹匹配监督。在有限的渲染预算下，我们优先考虑对这些渲染候选中高误差未来的视觉监督。最后，我们使用群体相对策略优化（GRPO）优化轨迹规划，并在匹配视频上使用流匹配损失更新共享表示。在推理时，模型直接预测轨迹，无需调用模拟器。在NAVSIM v1上，将SimVTA应用于WAM初始化将PDMS从86.2提高到91.3（+5.1）。在NAVSIM v2上实现88.2的EPDMS，并在HUGSIM的闭环评估中获得38.8的平均HD-Score。消融实验表明，通过视频监督更新共享表示改善了规划，而在高奖励轨迹中优先考虑高误差未来进一步提升了性能。",
+  "arxiv_id": "2610.13781",
+  "arxiv_url": "https://arxiv.org/abs/2610.13781v1",
+  "authors": [
+    "Changhui Jing",
+    "Haochen Tian",
+    "Hongchen Li",
+    "Tianyu Li",
+    "Caojun Wang",
+    "Zihao Zhang",
+    "Yanhao Liu",
+    "Chengen Xie",
+    "Bailin Li",
+    "Hao Zhao",
+    "Zhenjie Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-13781",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.738651+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.13781v1",
+  "published_at": "2026-10-09T16:01:09Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.13781v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "提出SimVTA仿真驱动的后训练框架，为候选驾驶轨迹渲染未来视频并提供匹配的视觉监督，再结合GRPO和流匹配损失优化驾驶世界动作模型的轨迹规划。该方法在NAVSIM和HUGSIM基准上显著提升了规划与闭环驾驶性能。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "SimVTA: Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models",
+  "title_zh": "SimVTA：基于仿真的视频轨迹对齐用于驾驶世界动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.13781"
+}

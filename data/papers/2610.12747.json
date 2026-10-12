@@ -1,0 +1,63 @@
+{
+  "abstract": "Ego-trajectory prediction in urban roadway work zones remains an underexplored topic in autonomous-driving research, with limited dedicated data and systematic evaluation. Roadway work zones involve temporary changes in the lane layouts and connectivity of the roads, complicating interactions with surrounding vehicles and workers. These changes make future vehicle trajectories difficult to predict. To address these challenges, we collect WZDrive-Data, a multimodal dataset comprising 1,183 work-zone driving segments from 33 drivers, using a human-in-the-loop driving simulator with prerecorded worker animations and VR-controlled workers. Driver control and gaze signals are recorded from human participants, while vehicle trajectories and scene information are obtained from the simulator. Our proposed multimodal ego-trajectory predictor, WZDrive, achieves a mean minADE (K=6) of 1.09 m and minFDE (K=6) of 2.12 m. Compared with the best-performing state-of-the-art baseline for each metric in our benchmark, WZDrive reduces minADE (K=6) by 7.18% and minFDE (K=6) by 13.18%. This research addresses a gap in autonomous-driving research on urban work zones by combining human-in-the-loop data collection with multimodal learning from human driving signals and in the context of work zones.",
+  "abstract_zh": "在城市道路施工区域中，自我轨迹预测仍然是自主驾驶研究中一个未被充分探索的主题，相关专门数据和系统评估有限。道路施工区域涉及车道布局和道路连接的临时变化，复杂化了与周围车辆和工人的互动。这些变化使得未来车辆轨迹的预测变得困难。为了解决这些挑战，我们收集了WZDrive-Data，这是一个多模态数据集，包含来自33名驾驶员的1,183段施工区域驾驶数据，使用带有预录工人动画和虚拟现实控制工人的人机协同驾驶模拟器。我们记录了人类参与者的驾驶控制和注视信号，同时从模拟器获取车辆轨迹和场景信息。我们提出的多模态自我轨迹预测模型WZDrive在平均最小ADE (K=6)上达到1.09米，最小FDE (K=6)为2.12米。与我们基准测试中每个指标的最佳表现的最先进基线相比，WZDrive在最小ADE (K=6)上减少了7.18%，在最小FDE (K=6)上减少了13.18%。本研究通过结合人机协同数据收集与来自人类驾驶信号的多模态学习，填补了城市施工区域自主驾驶研究中的空白。",
+  "arxiv_id": "2610.12747",
+  "arxiv_url": "https://arxiv.org/abs/2610.12747v1",
+  "authors": [
+    "Shuo Zhang",
+    "Aman Sunesh",
+    "Semiha Ergan",
+    "Kaan Ozbay"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-12747",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.672304+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12747v1",
+  "published_at": "2026-10-08T21:48:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "lane",
+      "驾驶",
+      "车辆",
+      "道路",
+      "车道",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12747v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划",
+      "协同/V2X"
+    ]
+  },
+  "title": "Trajectory Prediction for Autonomous Driving in Road Construction Zones Using Human-in-the-Loop Driving Data",
+  "title_zh": "基于人机协同驾驶数据的道路施工区域自主驾驶轨迹预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.12747"
+}

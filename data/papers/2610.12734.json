@@ -1,0 +1,58 @@
+{
+  "abstract": "Stereo vision is increasingly used for robotic manipulation, with a growing body of work incorporating it into Vision-Language-Action (VLA) models. However, the scarcity of large-scale, real-world stereo datasets remains a fundamental bottleneck for scaling such policies. Recent generative monocular-to-stereo methods target settings such as VR content and autonomous driving. No prior work produces realistic synthetic stereo data for robotic manipulation, where stereo supervision has come predominantly from simulation. We propose StereoEngine, which introduces two complementary methods to synthesize stereo data for robotic manipulation. In the first, we warp a monocular (left) video into the right view using estimated depth and inpaint the disoccluded regions with a video diffusion model, lifting monocular demonstrations into stereo pairs without training on real stereo. In the second, we render a stereo pair in simulation and jointly generate both photorealistic views, producing consistent left-right data without any real video as input. StereoEngine outperforms existing baselines in generated stereo quality, and using its synthetic data for policy mid-training or task-specific fine-tuning substantially improves downstream bimanual manipulation. Project website: https://stereoengine.github.io",
+  "abstract_zh": "立体视觉在机器人操作中越来越多地被应用，越来越多的研究将其纳入视觉-语言-动作（Vision-Language-Action, VLA）模型。然而，大规模真实世界立体数据集的稀缺仍然是扩展此类策略的根本瓶颈。近期的生成性单目到立体的方法针对虚拟现实内容和自动驾驶等场景。之前的工作没有为机器人操作生成真实的合成立体数据，而立体监督主要来自于仿真。我们提出了StereoEngine，引入了两种互补的方法来合成用于机器人操作的立体数据。在第一种方法中，我们使用估计的深度将单目（左）视频扭曲为右视图，并用视频扩散模型填补被遮挡的区域，将单目演示提升为立体对，而无需在真实立体数据上进行训练。在第二种方法中，我们在仿真中渲染一对立体图像，并共同生成两个照片级真实的视图，生成一致的左右数据，而不需要任何真实视频作为输入。StereoEngine在生成的立体质量上优于现有基线，并且使用其合成数据进行策略中期训练或任务特定微调显著改善了下游双手操作。项目网站：https://stereoengine.github.io",
+  "arxiv_id": "2610.12734",
+  "arxiv_url": "https://arxiv.org/abs/2610.12734v1",
+  "authors": [
+    "Jason Chen",
+    "I-Chun Arthur Liu",
+    "Gaurav Sukhatme",
+    "Daniel Seita"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-12734",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.671902+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12734v1",
+  "published_at": "2026-10-08T21:28:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action",
+      "robot",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12734v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "VLM/VLA",
+      "深度/几何"
+    ]
+  },
+  "title": "StereoEngine: Scaling Stereo Bimanual Robot Data without Stereo Cameras",
+  "title_zh": "StereoEngine：在没有立体摄像头的情况下扩展立体双手机器人数据",
+  "translation_url": "https://hjfy.top/arxiv/2610.12734"
+}

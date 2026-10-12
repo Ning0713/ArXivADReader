@@ -1,0 +1,51 @@
+{
+  "abstract": "Foundation models are increasingly used for high-level multi-robot task planning, yet independently generated symbolic plans can become jointly infeasible after geometric grounding because of shared spatial and temporal constraints. We study execution-aware coordination of large-language-model (LLM) planners for multi-robot navigation. We compare a centralized architecture, in which one LLM jointly reasons over the robot team, with a decentralized multi-LLM architecture in which each robot independently proposes a task plan. A geometric verifier grounds the candidate plans into robot trajectories, detects predicted inter-robot conflicts, and converts conflict information into structured feedback for targeted replanning. This verifier-mediated architecture separates semantic task reasoning from execution-level feasibility while enabling iterative coordination among LLM planners. Experiments in CARLA and on Crazyflie aerial robots evaluate coordination performance as task complexity increases and characterize the trade-offs between centralized reasoning, decentralized verifier-mediated coordination, and physical executability.",
+  "abstract_zh": "基础模型越来越多地用于高层次的多机器人任务规划，但独立生成的符号计划在几何基础化后可能由于共享的空间和时间约束而变得共同不可行。我们研究了大型语言模型（LLM）规划器在多机器人导航中的执行感知协调。我们比较了一种集中式架构，其中一个LLM对机器人团队进行联合推理，以及一种去中心化的多LLM架构，其中每个机器人独立提出任务计划。几何验证器将候选计划基础化为机器人轨迹，检测预测的机器人间冲突，并将冲突信息转换为结构化反馈以便于有针对性的重新规划。这种验证者介导的架构将语义任务推理与执行层面的可行性分离，同时实现了LLM规划器之间的迭代协调。在CARLA和Crazyflie空中机器人上的实验评估了随着任务复杂性增加的协调性能，并描述了集中推理、去中心化验证者介导协调与物理可执行性之间的权衡。",
+  "arxiv_id": "2610.12761",
+  "arxiv_url": "https://arxiv.org/abs/2610.12761v1",
+  "authors": [
+    "Vivek Khatana",
+    "Zijian Song",
+    "Naira Hovakimyan",
+    "Petros Voulgaris"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-12761",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.672679+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12761v1",
+  "published_at": "2026-10-08T22:12:10Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "path planning",
+      "robot"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12761v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "Verifier-Mediated Multi-LLM Coordination for Multi-Robot Path Planning",
+  "title_zh": "验证者介导的多LLM协调用于多机器人路径规划",
+  "translation_url": "https://hjfy.top/arxiv/2610.12761"
+}

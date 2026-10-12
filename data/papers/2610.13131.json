@@ -1,0 +1,53 @@
+{
+  "abstract": "Trajectory generation underpins urban applications such as traffic management and urban planning. Within road networks, vehicle movement along road segments is largely deterministic, whereas transitions at intersections are critical--multiple outgoing paths may appear equally plausible, yet they can lead to substantially different downstream routes. Existing generative methods such as diffusion models simulate location sequences and fail short of next transition selection, even producing trajectories that drift off the road network. To fill this gap, we advocate a fundamental shift: moving beyond location simulation toward behavior modeling on the road network. In this paper, we revisit trajectory generation through the lens of generative route planning, and introduce a new graph-constrained generative paradigm, Anticipatory Generative Modeling, which resolves next transition selection by incorporating the Anticipation of how the future route may unfold toward the destination. Concretely, we propose a novel generative model named Foresight that formulates a probabilistic model for an \"anticipate--select--update--re-anticipate\" loop that enables longer-term foresight while continuing sequential generation along the historical trajectory. Extensive experiments demonstrate that Foresight wins state-of-the-art baselines.",
+  "abstract_zh": "轨迹生成是城市应用的基础，例如交通管理和城市规划。在道路网络中，车辆沿道路段的运动在很大程度上是确定性的，而在交叉口的转变则至关重要——多个出发路径可能看似同样合理，但它们可能导致截然不同的下游路线。现有的生成方法，如扩散模型，模拟位置序列，但在下一个转变选择上存在不足，甚至会生成偏离道路网络的轨迹。为了填补这一空白，我们提倡一个根本性的转变：超越位置模拟，转向道路网络上的行为建模。在本文中，我们通过生成路线规划的视角重新审视轨迹生成，并引入一种新的图约束生成范式——预期生成建模（Anticipatory Generative Modeling），该方法通过结合对未来路线如何朝向目的地展开的预期来解决下一个转变选择问题。具体而言，我们提出了一种新颖的生成模型，命名为Foresight，它为“预期—选择—更新—再预期”循环制定了一个概率模型，使得在沿历史轨迹继续进行序列生成的同时，实现更长远的前瞻性。大量实验表明，Foresight在各项指标上超越了现有的最先进基准。",
+  "arxiv_id": "2610.13131",
+  "arxiv_url": "https://arxiv.org/abs/2610.13131v1",
+  "authors": [
+    "Zhenhao Huang",
+    "Li Sun",
+    "Philip S. Yu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-13131",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.761138+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.13131v1",
+  "published_at": "2026-10-09T07:23:32Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "road",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.13131v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "本文面向道路网络中的车辆轨迹生成，提出结合目的地导向长期预期的图约束生成模型Foresight，以改进交叉口路径选择并避免生成偏离道路的轨迹。该方法与自动驾驶中的轨迹预测、行为建模和路线规划具有直接关联，但论文主要聚焦城市交通管理与规划场景，未明确针对自动驾驶系统或车载感知输入。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "Looking Ahead and Back: Anticipatory Generative Modeling for Road-Network Trajectories",
+  "title_zh": "展望与回顾：道路网络轨迹的预期生成建模",
+  "translation_url": "https://hjfy.top/arxiv/2610.13131"
+}

@@ -1,0 +1,55 @@
+{
+  "abstract": "End-to-end autonomous driving models are typically trained on real-world driving logs, which record only the trajectory actually executed in each scene. This provides limited supervision for learning alternative valid behaviors. Multi-target supervision can mitigate this limitation, but broader trajectory coverage makes safe candidate selection more challenging. We propose FPD-Drive, an end-to-end planner that distills privileged future knowledge into a visual driving policy to improve both multi-trajectory supervision and safety selection. Specifically, we introduce Future-Privileged Multi-Target Distillation to transfer diverse, high-quality trajectory targets from a teacher with access to recorded future observations to the student. These targets extend supervision beyond the single recorded human trajectory. For candidate selection, we further introduce Safety-Aware Score Correction to correct ranking errors between nearby safe and unsafe candidates and raise underestimated safety scores of safe candidates. At deployment, the student requires neither future observations nor teacher inference. Our base model achieves 94.9 PDMS on NAVSIM v1 navtest and 55.9 EPDMS on NAVSIM v2 navhard. The scaled FPD-Drive-Pro improves these scores to 95.5 PDMS and 58.1 EPDMS, respectively, achieving SOTA performance among the compared methods on both benchmarks. Zero-shot closed-loop evaluation on HUGSIM further yields an HD-Score of 45.1 and RC of 55.3.",
+  "abstract_zh": "端到端自主驾驶模型通常是在真实世界驾驶日志上训练的，这些日志仅记录了每个场景中实际执行的轨迹。这为学习替代有效行为提供了有限的监督。多目标监督可以缓解这一限制，但更广泛的轨迹覆盖使得安全候选选择变得更加困难。我们提出了FPD-Drive，这是一种端到端规划器，将特权未来知识蒸馏为视觉驾驶策略，以改善多轨迹监督和安全选择。具体而言，我们引入了未来特权多目标蒸馏（Future-Privileged Multi-Target Distillation），以将来自能够访问记录未来观察的教师的多样化、高质量轨迹目标转移到学生。这些目标将监督扩展到单一记录的人类轨迹之外。对于候选选择，我们进一步引入了安全意识评分修正（Safety-Aware Score Correction），以纠正安全和不安全候选之间的排名错误，并提高安全候选的低估安全评分。在部署时，学生既不需要未来观察也不需要教师推理。我们的基础模型在NAVSIM v1 navtest上达到了94.9的PDMS，在NAVSIM v2 navhard上达到了55.9的EPDMS。经过扩展的FPD-Drive-Pro将这些分数提高到95.5 PDMS和58.1 EPDMS，分别在两个基准测试中实现了与比较方法相比的SOTA性能。在HUGSIM上的零-shot闭环评估进一步得到了45.1的HD-Score和55.3的RC。",
+  "arxiv_id": "2610.13232",
+  "arxiv_url": "https://arxiv.org/abs/2610.13232v1",
+  "authors": [
+    "Li-Heng Chen",
+    "Qifeng Chen",
+    "Chengwei Wu",
+    "Yingjie Zhang",
+    "Sheng Yang",
+    "Hongbo Fu",
+    "Shaoqing Ren"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-13232",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.718892+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.13232v1",
+  "published_at": "2026-10-09T08:50:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving policy",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.13232v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "安全/异常"
+    ]
+  },
+  "title": "FPD-Drive: Future Policy Distillation for End-to-End Autonomous Driving",
+  "title_zh": "FPD-Drive：端到端自主驾驶的未来策略蒸馏",
+  "translation_url": "https://hjfy.top/arxiv/2610.13232"
+}

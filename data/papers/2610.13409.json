@@ -1,0 +1,63 @@
+{
+  "abstract": "End-to-end planning in complex scenes must model diverse driving intentions and select the most appropriate trajectory using scene context and future risks. However, multi-query regression may collapse to one mode, while anchor-based and generative planners share a scaling bottleneck: small candidate sets limit maneuver coverage or discovery of high-quality trajectories, whereas large sets increase generation and scoring costs. We propose ManeuverFlow to generate trajectories for distinct intentions in one step and evaluate and refine them using current and future evidence. The model selects relevant maneuver modes, draws corresponding noise from the Gaussian mixture prior, and maps it to intention-specific trajectories through a maneuver-routed mixture-of-experts MeanFlow field. Current features and future features predicted by the world model are aggregated along each candidate path into trajectory-specific evidence for PDM-factor prediction. Using the same evidence, the refiner predicts local Frenet residuals for selected candidates; refined and retained candidates are then jointly re-scored for selection. With a lightweight TransFuser-style ResNet-34 backbone, ManeuverFlow achieves 90.6 PDMS and 90.1 EPDMS on NAVSIM v1/v2 navtest, respectively. On WorldEngine's recent 3DGS closed-loop benchmark, it attains the highest listed PDMS$^\\ast$ scores of 75.19 and 74.58 under logged and IDM-controlled traffic, respectively. Code: https://github.com/wyh-autonomy/maneuverflow.",
+  "abstract_zh": "在复杂场景中的端到端规划必须建模多样的驾驶意图，并利用场景上下文和未来风险选择最合适的轨迹。然而，多查询回归可能会崩溃为单一模式，而基于锚点和生成式规划器则面临一个扩展瓶颈：小候选集限制了机动覆盖或高质量轨迹的发现，而大候选集则增加了生成和评分的成本。我们提出了ManeuverFlow，以一步生成针对不同意图的轨迹，并利用当前和未来证据对其进行评估和优化。该模型选择相关的机动模式，从高斯混合先验中提取相应的噪声，并通过机动路由的专家混合均值场映射到特定意图的轨迹。当前特征和世界模型预测的未来特征沿每个候选路径聚合成轨迹特定的证据，用于PDM因子的预测。利用相同的证据，优化器为选定的候选轨迹预测局部Frenet残差；经过优化并保留的候选轨迹随后被联合重新评分以进行选择。凭借轻量级的TransFuser风格ResNet-34骨干网络，ManeuverFlow在NAVSIM v1/v2 navtest上分别达到了90.6的PDMS和90.1的EPDMS。在WorldEngine最近的3DGS闭环基准测试中，它在记录和IDM控制的交通下分别获得了75.19和74.58的最高PDMS$^\bullet$得分。代码： https://github.com/wyh-autonomy/maneuverflow.",
+  "arxiv_id": "2610.13409",
+  "arxiv_url": "https://arxiv.org/abs/2610.13409v1",
+  "authors": [
+    "Yuhao Wei",
+    "Yong Chen",
+    "Chen Yang",
+    "Yingchen Wang",
+    "Delin Ouyang",
+    "Lingfeng Qi",
+    "Qi Lan",
+    "Zhanhua Zhang",
+    "Jie Li",
+    "Guofa Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-13409",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.686335+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.13409v1",
+  "published_at": "2026-10-09T11:20:55Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "world model",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 61
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.13409v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "ManeuverFlow: Maneuver Hypothesis Generation with Future Evidence for Trajectory Evaluation and Refinement in End-to-End Autonomous Driving",
+  "title_zh": "ManeuverFlow：基于未来证据的机动假设生成用于端到端自主驾驶中的轨迹评估与优化",
+  "translation_url": "https://hjfy.top/arxiv/2610.13409"
+}

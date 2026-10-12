@@ -1,0 +1,62 @@
+{
+  "abstract": "Scene flow estimation is essential for many autonomous driving (AD) and robotic applications, but obtaining ground-truth scene flow for non-rigid objects such as pedestrians is highly difficult. We present MeshBind, an automatic annotation method that uses mesh models to generate per-point scene flow for non-rigid objects. The novelty of this work is threefold: 1) developing a multi-view module that reconstructs an articulated mesh model from six surround cameras and registers it to the LiDAR frame; 2) developing a local-frame binding technique that attaches each point to the mesh via a per-triangle tangent-normal frame, invariant under rigid motion yet adaptive to articulated deformation; 3) developing a three-layer flow registration pipeline that combines ego-vehicle motion compensation, box binding, and mesh binding to produce full-scene per-point flow. We implement MeshBind in SF-Studio, an interactive annotation tool that visualises flow and allows human mesh corrections with automatic recomputation. We also release SFB (SUScape-Flow Benchmark), a large-scale benchmark built on the public SUScape dataset, covering 41k frames with per-point non-rigid pedestrian annotations and a Rigid/Semi-Rigid/Non-Rigid evaluation protocol. Experiments show that fine-tuning on SFB reduces three-way endpoint error (EPE) by 2-3x, and brings non-rigid EPE to the same level as rigid EPE.",
+  "abstract_zh": "场景流估计对于许多自动驾驶（AD）和机器人应用至关重要，但获取非刚性物体（如行人）的真实场景流极为困难。我们提出了MeshBind，这是一种自动标注方法，利用网格模型为非刚性物体生成逐点场景流。本研究的创新之处有三：1）开发了一个多视角模块，从六个周围摄像头重建关节网格模型，并将其注册到激光雷达（LiDAR）帧；2）开发了一种局部框架绑定技术，通过每个三角形的切线法线框将每个点附着到网格上，该框架在刚性运动下保持不变，但对关节变形具有适应性；3）开发了一个三层流注册管道，结合自车运动补偿、框绑定和网格绑定，以生成全场景的逐点流。我们在SF-Studio中实现了MeshBind，这是一个交互式标注工具，能够可视化流并允许人工对网格进行修正及自动重新计算。我们还发布了SFB（SUScape-Flow基准），这是一个基于公共SUScape数据集的大规模基准，涵盖41,000帧的逐点非刚性行人标注以及刚性/半刚性/非刚性评估协议。实验表明，在SFB上进行微调可将三向端点误差（EPE）降低2-3倍，并使非刚性EPE达到与刚性EPE相同的水平。",
+  "arxiv_id": "2610.12895",
+  "arxiv_url": "https://arxiv.org/abs/2610.12895v1",
+  "authors": [
+    "Yinqi Chen",
+    "E Li",
+    "Shuaijun Wang",
+    "Weiyuan Peng",
+    "Meiying Zhang",
+    "Qi Hao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-12895",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.703003+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12895v1",
+  "published_at": "2026-10-09T02:31:10Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego-vehicle",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "pedestrian",
+      "驾驶",
+      "行人",
+      "lidar",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12895v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "MeshBind: Point-to-Mesh Binding for Non-Rigid Scene Flow Automatic Annotation",
+  "title_zh": "MeshBind：用于非刚性场景流自动标注的点到网格绑定",
+  "translation_url": "https://hjfy.top/arxiv/2610.12895"
+}

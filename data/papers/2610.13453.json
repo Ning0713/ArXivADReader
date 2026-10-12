@@ -1,0 +1,60 @@
+{
+  "abstract": "Reinforcement Learning (RL) substantially improves planning performance in autonomous-driving Vision-Language-Action (VLA) models. However, existing RL methods rely on scalar trajectory rewards that measure overall quality but fail to identify specific planning errors or provide actionable correction signals. In long-tail scenarios, errors in scene understanding, behavior selection, and trajectory execution are compressed into a single score. We observe that Reflective Guidance turns trajectory evaluation into explicit diagnoses and corrective instructions, substantially improving planning accuracy. Yet such guidance requires an initial prediction and its evaluation results, making it unavailable for direct single-pass inference. We propose Reflect-VLA, which treats Reflective Guidance as training-time privileged information and internalizes its planning benefits through Dual-Path On-Policy Self-Distillation (Dual-OPSD). Unlike scalar-reward optimization, Dual-OPSD uses the driving score only to route student-generated trajectories. It distills dense token-level corrective distributions from the teacher for risky trajectories while applying self-imitation to preserve reliable ones. To provide reliable corrective distributions on student rollouts, the teacher is progressively constructed through Driving-Knowledge Pretraining, Planning-and-Refinement SFT, and Self-Refinement Rejection Sampling. At inference time, Reflect-VLA generates trajectories in a single pass without explicit guidance or iterative refinement. Experiments on NAVSIM v1/v2 and Bench2Drive demonstrate competitive planning performance while reducing training time by over 90% compared with RL.",
+  "abstract_zh": "强化学习（RL）显著提高了自主驾驶视觉-语言-动作（VLA）模型的规划性能。然而，现有的RL方法依赖于标量轨迹奖励来衡量整体质量，但未能识别特定的规划错误或提供可操作的纠正信号。在长尾场景中，场景理解、行为选择和轨迹执行中的错误被压缩为一个单一的评分。我们观察到，反思指导将轨迹评估转化为明确的诊断和纠正指令，从而显著提高了规划的准确性。然而，这种指导需要初始预测及其评估结果，使其无法直接用于单次推理。我们提出了Reflect-VLA，将反思指导视为训练时的特权信息，并通过双路径在线自蒸馏（Dual-OPSD）内化其规划优势。与标量奖励优化不同，Dual-OPSD仅使用驾驶评分来引导学生生成的轨迹。它从教师那里提炼出密集的标记级纠正分布用于风险轨迹，同时应用自我模仿以保留可靠的轨迹。为了在学生的回滚中提供可靠的纠正分布，教师通过驾驶知识预训练、规划与精炼的监督微调（SFT）和自我精炼拒绝采样逐步构建。在推理时，Reflect-VLA能够在没有明确指导或迭代精炼的情况下生成轨迹。在NAVSIM v1/v2和Bench2Drive上的实验表明，与RL相比，规划性能具有竞争力，同时训练时间减少超过90%。",
+  "arxiv_id": "2610.13453",
+  "arxiv_url": "https://arxiv.org/abs/2610.13453v1",
+  "authors": [
+    "Yuechen Luo",
+    "He Chong",
+    "Fang Li",
+    "Shaoqing Xu",
+    "Hexin Zhang",
+    "Ruiqi Zhang",
+    "Ziying Song",
+    "Lei Yang",
+    "Zhi-Xin Yang",
+    "Fuxi Wen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-13453",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.686732+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.13453v1",
+  "published_at": "2026-10-09T11:52:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.13453v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Reflect-VLA: Internalizing Reflective Guidance via Dual-Path On-Policy Self-Distillation for Autonomous Driving",
+  "title_zh": "Reflect-VLA：通过双路径在线自蒸馏内化反思指导以实现自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.13453"
+}

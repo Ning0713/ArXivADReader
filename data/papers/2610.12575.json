@@ -1,0 +1,51 @@
+{
+  "abstract": "Modern video-language models are increasingly treated as general-purpose video reasoners, yet it remains unclear whether they robustly capture temporal dynamics in safety-critical settings such as driving. We study this question through controlled ego-motion tasks that require identifying actions from driving videos. Across video-language models, we find that standard prompting, visual prompting, few-shot prompting, and chain-of-thought prompting remain unreliable and highly task- and model-dependent, with persistent class biases, although newer models show substantial task-specific few-shot gains. In contrast, lightweight LoRA finetuning and simple probes trained on intermediate visual features recover strong motion-discriminative performance, indicating that motion-relevant cues are often present inside the models but are not reliably used by the final video-to-language pathway. These results suggest that, in driving, current video-language models remain unreliable temporal reasoners and often behave more like frame-level, bias-driven recognizers than dependable temporal world models.",
+  "abstract_zh": "现代视频语言模型越来越被视为通用的视频推理器，但在安全关键的环境中，如驾驶，它们是否能够稳健地捕捉时间动态仍不清楚。我们通过控制的自我运动任务来研究这个问题，这些任务要求从驾驶视频中识别动作。在不同的视频语言模型中，我们发现标准提示、视觉提示、少量示例提示和思维链提示都不可靠，并且高度依赖于任务和模型，存在持续的类别偏差，尽管较新的模型在特定任务上显示出显著的少量示例收益。相比之下，轻量级的LoRA微调和在中间视觉特征上训练的简单探测器恢复了强大的运动区分性能，表明与运动相关的线索通常存在于模型内部，但并未被最终的视频到语言路径可靠地利用。这些结果表明，在驾驶中，当前的视频语言模型仍然是不可靠的时间推理器，往往更像是基于帧级别的、受到偏见驱动的识别器，而不是可靠的时间世界模型。",
+  "arxiv_id": "2610.12575",
+  "arxiv_url": "https://arxiv.org/abs/2610.12575v1",
+  "authors": [
+    "Shiva Sreeram",
+    "Erfan Aasi",
+    "Tsun-Hsuan Wang",
+    "Alaa Maalouf",
+    "Daniela Rus"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-12#paper-2610-12575",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-12T12:39:16.696325+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.12575v1",
+  "published_at": "2026-10-08T18:02:22Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-12"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.12575v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-12"
+  },
+  "summary_zh": "本文评估视频语言模型在驾驶视频中的时间理解和自我运动识别能力。研究发现，标准提示、视觉提示、少样本提示和思维链提示均存在不稳定性、任务依赖性和类别偏差；而LoRA微调及基于中间视觉特征的线性探测能够显著提升运动判别性能。结果表明，模型内部可能已编码运动线索，但视频到语言的最终推理路径未能可靠利用这些信息，当前视频语言模型尚不足以作为驾驶场景中的可靠时间推理器。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Mind the Temporal Gap: Evaluating Video Models for Temporal Understanding in Driving",
+  "title_zh": "注意时间间隔：评估视频模型在驾驶中的时间理解能力",
+  "translation_url": "https://hjfy.top/arxiv/2610.12575"
+}
