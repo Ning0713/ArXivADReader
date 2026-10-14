@@ -1,0 +1,61 @@
+{
+  "abstract": "Multimodal 3D occupancy prediction underpins safe autonomous driving through comprehensive scene understanding. However, existing methods have largely pursued higher accuracy through sophisticated fusion, leaving resilience to missing sensors underexplored. In this paper, we investigate spiking neural networks (SNNs) as a means of building more resilient multimodal perception. Still, the discrete nature of spiking neurons makes optimization challenging. To overcome this difficulty, SpikeOcc is introduced with two complementary components, a Spiking Mixture-of-Experts (SMoE) and Sensor Availability Learning (SAL). Specifically, SMoE organizes RGB, LiDAR, and joint fusion into specialized pathways, enabling full-width unimodal representations while retaining the original multimodal features via a bounded residual. Beyond sensor dropout, SAL employs a staged curriculum with explicit routing supervision, progressively improving robustness under severe sensing conditions. Remarkably, SAL also yields notable gains for conventional models, highlighting its broader potential for resilient multimodal learning. Extensive experiments demonstrate that SpikeOcc maintains competitive full-sensor accuracy while markedly raising the performance floor under sensor outages. SpikeOcc illustrates the promise of neuromorphic computing, pointing toward more reliable and energy-efficient autonomous driving.",
+  "abstract_zh": "多模态三维占用预测是安全自主驾驶的基础，依赖于全面的场景理解。然而，现有方法主要通过复杂的融合追求更高的准确性，而对缺失传感器的韧性探索不足。本文研究了脉冲神经网络（SNNs）作为构建更具韧性的多模态感知的一种手段。然而，脉冲神经元的离散特性使得优化变得具有挑战性。为了解决这一难题，本文提出了SpikeOcc，包含两个互补组件：脉冲专家混合模型（Spiking Mixture-of-Experts, SMoE）和传感器可用性学习（Sensor Availability Learning, SAL）。具体而言，SMoE将RGB、LiDAR和联合融合组织成专门的路径，能够实现全宽单模态表示，同时通过有界残差保留原始的多模态特征。除了传感器失效，SAL采用分阶段的课程学习和明确的路由监督，逐步提高在严苛感知条件下的鲁棒性。值得注意的是，SAL还为传统模型带来了显著的提升，突显了其在韧性多模态学习中的更广泛潜力。大量实验表明，SpikeOcc在保持竞争性的全传感器准确度的同时，显著提高了在传感器故障情况下的性能底线。SpikeOcc展示了神经形态计算的潜力，指向更可靠和能效更高的自主驾驶。",
+  "arxiv_id": "2610.15745",
+  "arxiv_url": "https://arxiv.org/abs/2610.15745v1",
+  "authors": [
+    "Yiding Sun",
+    "Zijie Xu",
+    "Hongqiang Lin",
+    "Jiajun Cao",
+    "Dongxu Zhang",
+    "Kai Tang",
+    "Jihua Zhu",
+    "Wenxuan Liu",
+    "Zhaofei Yu",
+    "Tiejun Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15745",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.506767+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15745v1",
+  "published_at": "2026-10-11T16:28:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "lidar",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 55
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15745v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "多传感器融合"
+    ]
+  },
+  "title": "SpikeOcc: Towards Resilient Multimodal 3D Occupancy Perception via Spiking Experts",
+  "title_zh": "SpikeOcc：通过脉冲专家实现更具韧性的多模态三维占用感知",
+  "translation_url": "https://hjfy.top/arxiv/2610.15745"
+}

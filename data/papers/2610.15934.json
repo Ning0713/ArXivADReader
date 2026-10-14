@@ -1,0 +1,59 @@
+{
+  "abstract": "Motion planning for automated vehicles in interactive traffic has to simultaneously ensure safety, respect traffic rules, and maintain comfortable progress under multi-modal behavior uncertainty. Imposing all these requirements as hard constraints reduces feasibility, whereas treating them all as costs allows safety-critical requirements to be traded against progress. We propose a hybrid hard--soft Signal Temporal Logic (STL) MPC framework that optimizes a single shared ego trajectory against every retained behavior hypothesis: minimum-distance and speed predicates are imposed as explicit hard constraints, while soft STL robustness terms shape clearance, comfort, and interaction quality within the resulting feasible driving corridor. This retains robustness to discrete interaction modes without branch-specific contingent ego policies. We further identify substantial symbolic graph-construction overhead and introduce reachability-certified relevance screening and vectorized symbolic construction to reduce computational cost while preserving the feasible set and objective. Closed-loop Monte Carlo evaluation over six highway and intersection scenarios shows the highest strict success rate among the compared planners with no observed collisions or rule violations, at roughly a quarter of the planning latency of the unoptimized formulation. An ablation study separates the two layers: the hard constraints define the safety envelope, while the soft terms improve clearance and motion quality within it.",
+  "abstract_zh": "在交互式交通中，自动驾驶车辆的运动规划必须同时确保安全、遵守交通规则，并在多模态行为不确定性下保持舒适的行驶进度。将所有这些要求作为硬约束施加会降低可行性，而将它们视为成本则允许在安全关键要求与进度之间进行权衡。我们提出了一种混合硬-软信号时序逻辑（Signal Temporal Logic, STL）模型预测控制（MPC）框架，该框架针对每个保留的行为假设优化单一共享的自我轨迹：最小距离和速度谓词作为显式硬约束施加，而软STL鲁棒性项则在生成的可行行驶通道内塑造间隙、舒适度和交互质量。这种方法保持了对离散交互模式的鲁棒性，而无需特定于分支的应急自我策略。我们进一步识别出显著的符号图构建开销，并引入可达性认证的相关性筛选和向量化符号构建，以降低计算成本，同时保持可行集和目标。对六个高速公路和交叉口场景的闭环蒙特卡洛评估显示，在比较的规划者中具有最高的严格成功率，没有观察到碰撞或规则违反，且规划延迟约为未优化公式的四分之一。消融研究将这两个层次分开：硬约束定义了安全边界，而软项则在此边界内改善了间隙和运动质量。",
+  "arxiv_id": "2610.15934",
+  "arxiv_url": "https://arxiv.org/abs/2610.15934v1",
+  "authors": [
+    "Kumar Manas",
+    "Adrian Paschke"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15934",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.290966+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15934v1",
+  "published_at": "2026-10-11T21:36:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated vehicles",
+      "自动驾驶",
+      "driving",
+      "traffic",
+      "highway",
+      "intersection",
+      "驾驶",
+      "车辆",
+      "交通",
+      "motion planning",
+      "运动规划"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15934v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Efficient Hybrid Hard--Soft Signal Temporal Logic MPC for Driving under Multimodal Uncertainty",
+  "title_zh": "针对多模态不确定性的高效混合硬-软信号时序逻辑模型预测控制",
+  "translation_url": "https://hjfy.top/arxiv/2610.15934"
+}

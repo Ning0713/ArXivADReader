@@ -1,0 +1,49 @@
+{
+  "abstract": "3D Gaussian Splatting (3DGS) allows for high-quality real-time novel-view synthesis. Since its inception in 2023, its explicit and highly configurable scene representation has been extended toward sparse-view generation, dynamic reconstruction, efficiency and compression, streaming, and simultaneous localization and mapping (SLAM). Although Gaussian Splatting can provide real-time rendering, rendering an existing representation is distinct from constructing, updating, or maintaining the scene itself. In this survey, we synthesize current literature, categorize them and provide a connection of current approaches and tools towards an end-to-end pipeline. Explicitly, we categorize GS scene reconstruction into five overlapping families: single-shot generation, dynamic representations, efficiency and compression, streaming and immersive systems, and Gaussian Splatting SLAM. We distinguish render-only throughput from task-specific scene generation, update, tracking, mapping, and optimization costs, and combine controlled sparse-view benchmarking with native evaluations to identify cross-family quality, latency, memory, and update-cost trade-offs.",
+  "abstract_zh": "3D 高斯点云技术（3D Gaussian Splatting, 3DGS）能够实现高质量的实时新视角合成。自2023年首次提出以来，其明确且高度可配置的场景表示已扩展到稀疏视图生成、动态重建、效率与压缩、流媒体传输以及同时定位与地图构建（SLAM）。尽管高斯点云技术能够提供实时渲染，但渲染现有表示与构建、更新或维护场景本身是不同的。在本次综述中，我们综合了当前文献，对其进行了分类，并提供了当前方法和工具与端到端管道之间的联系。具体而言，我们将高斯点云场景重建分为五个重叠的类别：单次生成、动态表示、效率与压缩、流媒体和沉浸式系统，以及高斯点云 SLAM。我们区分了仅渲染的吞吐量与特定任务的场景生成、更新、跟踪、映射和优化成本，并结合受控的稀疏视图基准测试与原生评估，以识别跨类别的质量、延迟、内存和更新成本权衡。",
+  "arxiv_id": "2610.17513",
+  "arxiv_url": "https://arxiv.org/abs/2610.17513v1",
+  "authors": [
+    "Ashim Dahal",
+    "Rabab Abdelfattah",
+    "Nick Rahimi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17513",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.614841+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17513v1",
+  "published_at": "2026-10-13T00:20:10Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "gaussian splatting",
+      "场景生成",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17513v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "本文系统综述了 3D 高斯点云在实时场景重建、动态表示、流式处理和 SLAM 中的方法与系统权衡。虽然文章未明确聚焦自动驾驶，但其中的实时三维环境表示、定位建图和动态场景更新技术可直接支撑自动驾驶的高精地图、在线定位及环境建模，属于具有较强迁移价值的基础研究。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "世界模型/生成",
+      "深度/几何"
+    ]
+  },
+  "title": "Gaussian Splatting for Real-Time Scene Reconstruction: Methods, Systems, and Trade-offs",
+  "title_zh": "实时场景重建的高斯点云技术：方法、系统与权衡",
+  "translation_url": "https://hjfy.top/arxiv/2610.17513"
+}

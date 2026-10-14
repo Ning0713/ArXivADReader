@@ -1,0 +1,64 @@
+{
+  "abstract": "Multi-modal fusion for 3D object detection assumes that cameras and LiDAR are broadly complementary. In practice, how much each modality is trusted at a given location is decided by learned weights that are neither characterized nor auditable. We label every ground-truth object by which modalities detected it, then mine the resulting 0.4M-object database across nuScenes, KITTI, and Waymo. Because the patterns shift with distance from the ego vehicle, we read the mined model through Spatially Stratified Feature Attribution (SSFA), which conditions Shapley attribution on distance zones and exposes structure that global attribution averages away. Three assumptions built into the current fusion design do not hold. The modality-preference boundary tracks the object itself: a traffic cone is nearly six times as likely as a truck to be seen by the camera alone (16.8% vs. 2.9%), regardless of range. Camera-only detections peak at 10-30 m, inside the band usually ceded to LiDAR, and fall away on either side. The drivers of failure are not additive either: the distance - density interaction alone outweighs the entire main effect of viewing direction. We further find that modality dominance is directionally non-stationary, with objects behind the vehicle being markedly more LiDAR-dominant than those in front. We compile the mined structure into a Modality Reliability Map and inject it into four pretrained fusion detectors through a lightweight attention layer. This improves performance by up to 1.3 mean Average Precision (mAP) while fine-tuning under 4% of their parameters in 2-3 GPU-hours. Our work lifts reliability out of the weights and treats it as a quantity that can be examined before deployment. That is what a safety measure for multi-modal perception must rest on.",
+  "abstract_zh": "多模态融合用于三维物体检测假设摄像头与激光雷达在广泛上是互补的。实际上，在给定位置上每种模态的信任程度是由学习到的权重决定的，这些权重既没有特征化也无法审计。我们标记每个真实物体由哪些模态检测到，然后在nuScenes、KITTI和Waymo的数据集中挖掘出结果的40万物体数据库。由于模式随着距离自我车辆的变化而变化，我们通过空间分层特征归因（Spatially Stratified Feature Attribution, SSFA）读取挖掘模型，该方法根据距离区域条件化Shapley归因，并揭示了全局归因所平均掉的结构。目前融合设计中内置的三个假设并不成立。模态偏好边界跟踪物体本身：交通锥被摄像头单独看到的可能性几乎是卡车的六倍（16.8%对2.9%），与距离无关。仅摄像头的检测在10-30米处达到峰值，处于通常让位于激光雷达的范围内，并在两侧下降。失败的驱动因素也不是可加的：距离-密度交互单独就超过了观察方向的整体主要影响。我们进一步发现模态主导性在方向上是非平稳的，车辆后方的物体明显更倾向于激光雷达主导，而前方的物体则不然。我们将挖掘出的结构编制成模态可靠性图，并通过轻量级注意力层将其注入到四个预训练的融合检测器中。这在微调其参数不到4%的情况下，在2-3个GPU小时内将性能提升了最多1.3的平均精度（mean Average Precision, mAP）。我们的工作将可靠性从权重中提取出来，并将其视为在部署前可以检查的量。这是多模态感知的安全措施必须依赖的基础。",
+  "arxiv_id": "2610.16906",
+  "arxiv_url": "https://arxiv.org/abs/2610.16906v1",
+  "authors": [
+    "Hongsen Cao",
+    "Mona Jaber",
+    "Shanxin Yuan",
+    "Ahmed Sayed"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16906",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.587761+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16906v1",
+  "published_at": "2026-10-12T14:56:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego vehicle",
+      "自动驾驶",
+      "nuscenes",
+      "kitti",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "3d object detection",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16906v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "安全/异常"
+    ]
+  },
+  "title": "Mining Cross-Modal Perception Gaps in Autonomous Driving: When Camera and LiDAR Disagree",
+  "title_zh": "挖掘自动驾驶中的跨模态感知差异：当摄像头与激光雷达不一致时",
+  "translation_url": "https://hjfy.top/arxiv/2610.16906"
+}

@@ -1,0 +1,50 @@
+{
+  "abstract": "Recently, the integration of generative priors has revolutionized Monocular Depth Estimation (MDE), achieving state-of-the-art (SOTA) performance with remarkably high data efficiency. However, although methods based on Text-to-Image (T2I) models excel in general scenes, their efficacy degrades sharply when confronted with open-world environmental perturbations, such as illumination variations and adverse weather. Since T2I priors are optimized for semantic synthesis rather than preserving pixel-level structure, they struggle to decouple geometry from appearance under severe visual shifts, easily triggering structural hallucinations. Therefore, our core insight is to model open-world depth estimation as consistent geometric inference across multi-style images, fully leveraging the powerful structure-preserving editing priors of Image-to-Image (I2I) models. Based on this, we propose OpenDepth, a robust open-world MDE framework that introduces \"Intra-Domain Awareness\" -- the capability to map diverse stylistic inputs sharing identical geometry into a unified latent space. To achieve this, we first align shallow features within the Diffusion Transformer (DiT) to anchor degraded observations to unified geometric representations. Additionally, we introduce a joint RGB latent reconstruction task, requiring the model to recover clean RGB information from degraded inputs. This multi-stage strategy effectively decouples environmental style interference, compelling the model to focus strictly on underlying geometric recovery. Extensive evaluations show that OpenDepth sets new SOTA records for robust zero-shot depth estimation across standard and extreme weather benchmarks, demonstrating exceptional structural integrity and adaptability.",
+  "abstract_zh": "近年来，生成先验的整合彻底改变了单目深度估计（MDE），在数据效率极高的情况下实现了最先进（SOTA）的性能。然而，尽管基于文本到图像（T2I）模型的方法在一般场景中表现出色，但在面对开放世界环境扰动（如光照变化和恶劣天气）时，其有效性急剧下降。由于T2I先验是针对语义合成而优化的，而非保持像素级结构，它们在严重视觉变化下难以将几何与外观解耦，容易触发结构幻觉。因此，我们的核心见解是将开放世界深度估计建模为跨多样式图像的一致几何推断，充分利用图像到图像（I2I）模型强大的结构保持编辑先验。在此基础上，我们提出了OpenDepth，一个稳健的开放世界MDE框架，引入了“域内意识”（Intra-Domain Awareness）——将共享相同几何的多样式输入映射到统一潜在空间的能力。为此，我们首先在扩散变换器（Diffusion Transformer, DiT）中对齐浅层特征，以将降级观测锚定到统一的几何表示。此外，我们引入了一个联合RGB潜在重建任务，要求模型从降级输入中恢复干净的RGB信息。这一多阶段策略有效地解耦了环境风格干扰，迫使模型严格关注基础几何的恢复。广泛的评估表明，OpenDepth在标准和极端天气基准上设定了稳健的零-shot深度估计的新SOTA记录，展示了卓越的结构完整性和适应性。",
+  "arxiv_id": "2610.17610",
+  "arxiv_url": "https://arxiv.org/abs/2610.17610v1",
+  "authors": [
+    "Mengke Zhang",
+    "Tianyi Yang",
+    "Xinzhuo Li",
+    "Anlong Ming"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17610",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.881255+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17610v1",
+  "published_at": "2026-10-13T02:29:58Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17610v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "提出一种利用图像编辑扩散先验的开放世界单目深度估计框架，通过特征对齐和RGB潜在重建解耦场景几何与天气、光照等外观扰动，从而提高极端环境下零样本深度预测的稳健性。该技术可为自动驾驶视觉感知提供可靠的单目三维几何信息，但论文摘要未明确限定于自动驾驶场景。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "OpenDepth: Repurposing Image Editing Priors for Robust Open-World Monocular Depth Estimation",
+  "title_zh": "OpenDepth：重新利用图像编辑先验以实现稳健的开放世界单目深度估计",
+  "translation_url": "https://hjfy.top/arxiv/2610.17610"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "Collision-resilient airframes allow quadrotors to survive impacts, but do not ensure autonomous post-collision recovery. Innovation gating in stock onboard estimators often rejects valid external velocity measurements after high-speed impacts, compromising recovery. We present REFLEX, a collision-recovery flight mode that runs entirely on the flight controller, requiring neither contact sensors nor a companion computer. Its proprioceptive recurrent policy stabilizes the vehicle without position, velocity, heading, or altitude estimates. The translational estimate is reinitialized while REFLEX is active, and a trust gate checks estimator consistency before returning control to the stock autopilot. The policy is trained in simulation using proximal policy optimization, with episodes initialized from post-impact states measured in 47 real collisions. In hardware experiments, REFLEX recovered 19 of 22 wall impacts at 5.03 $\\pm$ 0.09 m/s, compared with 1 of 14 for the matched stock autopilot. These included 15 consecutive recoveries in a single flight. A separate exploratory flight demonstrated two additional recoveries at 6.02 and 6.05 m/s within the same flight, exceeding the previously reported velocity for autonomous wall-collision recovery by 64%.",
+  "abstract_zh": "抗碰撞机架使四旋翼能够承受冲击，但并不能确保自主的碰撞后恢复。现有的机载估计器中的创新门控机制往往在高速冲击后拒绝有效的外部速度测量，从而妨碍恢复。我们提出了REFLEX，一种完全在飞行控制器上运行的碰撞恢复飞行模式，既不需要接触传感器，也不需要伴随计算机。其自我感知的递归策略在没有位置、速度、航向或高度估计的情况下稳定飞行器。在REFLEX激活期间，平移估计会被重新初始化，并且信任门会在将控制权返回给标准自动驾驶仪之前检查估计器的一致性。该策略通过近端策略优化在仿真中进行训练，训练集由47次真实碰撞后的状态初始化。在硬件实验中，REFLEX在5.03 ± 0.09 m/s的速度下成功恢复了22次墙面冲击中的19次，而匹配的标准自动驾驶仪仅恢复了14次中的1次。这些恢复中包括在一次飞行中连续的15次恢复。一次单独的探索性飞行展示了在同一次飞行中以6.02和6.05 m/s的速度实现的另外两次恢复，超过了之前报告的自主墙面碰撞恢复的速度64%。",
+  "arxiv_id": "2610.15867",
+  "arxiv_url": "https://arxiv.org/abs/2610.15867v1",
+  "authors": [
+    "Jakob Hermeler",
+    "Luca Girardi",
+    "Gabriel Maquignaz",
+    "Stefan Leutenegger",
+    "Stefano Mintchev"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15867",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.290156+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15867v1",
+  "published_at": "2026-10-11T19:39:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "autonomous",
+      "vehicle",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15867v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "REFLEX: A Learned On-Board Reflex for Robust Autonomous Collision Recovery of Soft Quadrotors",
+  "title_zh": "REFLEX：一种用于软四旋翼稳健自主碰撞恢复的学习型机载反射机制",
+  "translation_url": "https://hjfy.top/arxiv/2610.15867"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "Freely swiveling casters are widely adopted in industrial AMRs/SDVs for their mechanical simplicity and load capacity. However, caster misalignment during low-speed or high-curvature maneuvers induces strong contact nonlinearities, widening the planning-execution gap between commanded $(v, \\omega)$ and realized motion. Existing caster-aware strategies are highly sensitive to state-estimation reliability, causing unstable execution in uncertain transition regimes. To address this, we present Multi-Stage Caster-aware Control (MSC), a planning-execution integrated hierarchical framework featuring two core mechanisms. First, an uncertainty-aware NMPC (CU-MPC) dynamically schedules caster-aware costs and input regularization using predictive uncertainty to suppress overly aggressive maneuvers. Second, a reinforcement learning-based execution layer estimates and predicts caster states under partial observability, transforming high-level velocity commands into physically executable wheel speeds adapted to current contact conditions. Validations in Isaac Sim and real robots demonstrate that MSC offers a clear comparative advantage over existing decoupled compensation approaches by significantly improving caster-state estimation accuracy, minimizing misalignment, and enhancing tracking robustness in caster-sensitive maneuvers.",
+  "abstract_zh": "自由旋转的轮子在工业自主移动机器人（AMRs）和自主驾驶车辆（SDVs）中被广泛采用，因其机械结构简单且承载能力强。然而，在低速或高曲率机动过程中，轮子错位会引发强烈的接触非线性，扩大指令 $(v, heta)$ 与实际运动之间的规划-执行差距。现有的轮子感知策略对状态估计的可靠性高度敏感，导致在不确定的过渡状态下执行不稳定。为了解决这一问题，我们提出了多阶段轮子感知控制（MSC），这是一个规划-执行集成的分层框架，具有两个核心机制。首先，不确定性感知的非线性模型预测控制（CU-MPC）动态调度轮子感知成本和输入正则化，利用预测不确定性抑制过于激进的机动。其次，基于强化学习的执行层在部分可观测性下估计和预测轮子状态，将高层速度指令转化为适应当前接触条件的物理可执行轮速。通过在Isaac Sim和真实机器人中的验证，MSC显示出相较于现有的解耦补偿方法具有明显的比较优势，显著提高了轮子状态估计的准确性，最小化了错位，并增强了在轮子敏感机动中的跟踪鲁棒性。",
+  "arxiv_id": "2610.16199",
+  "arxiv_url": "https://arxiv.org/abs/2610.16199v1",
+  "authors": [
+    "Jinho Park",
+    "Jeongtae Lee",
+    "Jeonghyeok Lim",
+    "Keun Ha Choi",
+    "Kyung-Soo Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16199",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.298256+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16199v1",
+  "published_at": "2026-10-12T05:29:44Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16199v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "本文研究带自由旋转脚轮的自主移动平台在低速和大曲率运动中的规划与控制问题，提出结合不确定性感知 NMPC 和强化学习执行层的分层框架，以缩小速度规划指令与真实车辆运动之间的差距。该工作属于自动驾驶广义范畴中的运动规划与底层控制研究，但应用场景更偏向工业自主移动机器人，而非典型道路车辆。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "MSC: Multi-Stage Caster-aware Control Framework with Uncertainty-Aware NMPC and RL-based Execution Layer",
+  "title_zh": "MSC：具有不确定性感知的非线性模型预测控制和基于强化学习的执行层的多阶段轮子感知控制框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.16199"
+}

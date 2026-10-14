@@ -1,0 +1,70 @@
+{
+  "abstract": "Vision-language-action (VLA) models show strong potential for end-to-end autonomous driving by leveraging world knowledge and understanding to excel in long-tail scenarios. However, current VLAs have two limitations: 1) Degeneration into vision-action (VA) models. For low latency, regression/flow-based methods directly generate actions but underuse VLM understanding, causing unsafe, unexplainable actions. 2) Autoregressive high latency. Autoregressive methods sequentially generate chain-of-thought (CoT) and action tokens, fully leveraging VLM understanding, but high latency hinders deployment. To enable low-latency deployment while using CoT to assist action generation, we propose AUGUstus, an Autonomous-driving VLA model with Unified Generation and Understanding. We unify diffusion-based action generation and autoregressive CoT understanding in one model, where understanding only serves generation. Joint CoT supervision preserves VLM spatial understanding in shared representation for safer, more accurate trajectories. AUGUstus-mode orders action generation before CoT, so CoT supervises reliable actions during training while inference needs only action output, enabling low latency. AUGUstus-GRPO, a unified GRPO algorithm, jointly optimizes action and CoT, improving action performance. Experiments show AUGUstus achieves 94.6 PDMS on NAVSIMv1 and 90.7 EPDMS on NAVSIMv2, SOTA planning without scorer module. On nuScenes, it achieves average L2 error 0.27 m and average collision rate 0.05%, best among compared methods. To validate AUGUstus practicality, we train on in-house data with 512 NVIDIA H800 GPUs for ~2 days, evaluate on an internal 1,000 km dataset, and preliminarily deploy on a real vehicle, achieving 12 Hz operation. Project page: https://augustus-ad.github.io",
+  "abstract_zh": "视觉-语言-动作（VLA）模型通过利用世界知识和理解，在端到端自主驾驶中展现出强大的潜力，尤其是在长尾场景中表现优异。然而，当前的VLA模型存在两个局限性：1）退化为视觉-动作（VA）模型。为了实现低延迟，回归/流基方法直接生成动作，但未充分利用VLM（视觉语言模型）的理解，导致不安全且不可解释的动作。2）自回归高延迟。自回归方法顺序生成思维链（CoT）和动作标记，充分利用VLM的理解，但高延迟阻碍了部署。为了在使用CoT辅助动作生成的同时实现低延迟部署，我们提出了AUGUstus，一个具有统一生成与理解的自主驾驶VLA模型。我们将基于扩散的动作生成与自回归CoT理解统一到一个模型中，其中理解仅用于生成。联合CoT监督在共享表示中保留了VLM的空间理解，从而实现更安全、更准确的轨迹。AUGUstus模型在CoT之前进行动作生成，因此在训练过程中CoT监督可靠的动作，而推理时仅需动作输出，从而实现低延迟。AUGUstus-GRPO，一个统一的GRPO算法，联合优化动作和CoT，提升动作性能。实验表明，AUGUstus在NAVSIMv1上达到了94.6的PDMS，在NAVSIMv2上达到了90.7的EPDMS，且在没有评分模块的情况下实现了SOTA（最先进技术）规划。在nuScenes上，它的平均L2误差为0.27米，平均碰撞率为0.05%，在比较方法中表现最佳。为了验证AUGUstus的实用性，我们在512个NVIDIA H800 GPU上训练了约2天，评估了一个内部的1000公里数据集，并初步在真实车辆上进行了部署，实现了12 Hz的操作频率。项目页面：https://augustus-ad.github.io",
+  "arxiv_id": "2610.16985",
+  "arxiv_url": "https://arxiv.org/abs/2610.16985v1",
+  "authors": [
+    "Yuqi Ye",
+    "Caigao Jiang",
+    "Zhuonan Wang",
+    "Congyuan Pei",
+    "Chao Qu",
+    "Changhao Peng",
+    "Junhong Lin",
+    "Qize Yu",
+    "Zetian Song",
+    "Guangzhao Fu",
+    "Chongruo Wu",
+    "Shiyu Huang",
+    "Shuchang Zhou",
+    "Honggou Yang",
+    "Wei Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16985",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.593528+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16985v1",
+  "published_at": "2026-10-12T15:42:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "vision-language-action",
+      "driving vla"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16985v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "AUGUstus: Autonomous Driving VLA Model with Unified Generation and Understanding",
+  "title_zh": "AUGUstus：具有统一生成与理解的自主驾驶视觉-语言-动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.16985"
+}

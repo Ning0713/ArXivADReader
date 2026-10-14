@@ -1,0 +1,58 @@
+{
+  "abstract": "Wheel-legged robots operating in outdoor spaces shared with humans require accurate perception, socially compliant navigation, future-scene reasoning, and scene reconstruction. However, existing datasets typically support these capabilities in isolation and rarely provide dense spatial and behavior-level supervision on real wheel-legged platforms. We introduce LynxScenes, a large-scale real-world dataset and benchmark collected with a LYNX M20 wheel-legged robot. It contains approximately 100K 30-s navigation clips spanning 833.6 h and 3,294.7 km, with 3.0M annotated frames. The synchronized recordings include four fisheye cameras, dual LiDARs, IMU, odometry, and robot states. Annotations comprise 20.82M oriented 3D boxes across 27 categories, 13.89M road-structure annotations, and 20 navigation instructions organized into three layers and aligned with continuous future trajectories. LynxScenes supports four complementary tasks: instruction-conditioned trajectory prediction, BEV-based perception of 3D objects and road structures, future scene prediction, and multi-view scene reconstruction. For trajectory prediction, we further introduce a log-replay-based pseudo-closed-loop evaluator that measures safety, progress, and instruction compliance beyond trajectory imitation. Extensive evaluations across representative navigation, perception, world-model, and reconstruction methods reveal substantial remaining challenges in close-range outdoor robot navigation. The dataset and evaluation toolkit are planned for public release.",
+  "abstract_zh": "在与人类共享的户外空间中操作的轮腿机器人需要准确的感知、社会适应的导航、未来场景推理和场景重建。然而，现有的数据集通常仅支持这些能力的孤立实现，且很少在真实的轮腿平台上提供密集的空间和行为级别的监督。我们介绍了LynxScenes，这是一个大规模的真实世界数据集和基准，使用LYNX M20轮腿机器人收集。该数据集包含大约100K个30秒的导航片段，覆盖833.6小时和3,294.7公里，标注帧数达到3.0M。同步录制的数据包括四个鱼眼摄像头、双激光雷达、惯性测量单元（IMU）、里程计和机器人状态。标注包括27个类别的20.82M个定向3D框、13.89M个道路结构标注，以及20个导航指令，这些指令分为三层，并与连续的未来轨迹对齐。LynxScenes支持四个互补任务：基于指令的轨迹预测、基于鸟瞰视图（BEV）的3D物体和道路结构感知、未来场景预测以及多视角场景重建。对于轨迹预测，我们进一步引入了一种基于日志重放的伪闭环评估器，该评估器在轨迹模仿之外测量安全性、进展和指令遵从性。在代表性的导航、感知、世界模型和重建方法上的广泛评估揭示了近距离户外机器人导航中仍然存在的重大挑战。该数据集和评估工具包计划公开发布。",
+  "arxiv_id": "2610.18093",
+  "arxiv_url": "https://arxiv.org/abs/2610.18093v1",
+  "authors": [
+    "Jun Tian",
+    "Hao Wu",
+    "Ruo Chen",
+    "Yili Liao",
+    "Hongyi Lin",
+    "Jincheng Yu",
+    "Chao Li",
+    "Yingjie Niu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-18093",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.366517+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.18093v1",
+  "published_at": "2026-10-13T10:12:55Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路",
+      "bev",
+      "trajectory prediction",
+      "轨迹预测",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 22
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.18093v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "LynxScenes: A Large-Scale Real-World Benchmark for Outdoor Wheel-Legged Robot Perception, Navigation, Imagination and Reconstruction",
+  "title_zh": "LynxScenes：一个大规模真实世界基准，用于户外轮腿机器人感知、导航、想象和重建",
+  "translation_url": "https://hjfy.top/arxiv/2610.18093"
+}

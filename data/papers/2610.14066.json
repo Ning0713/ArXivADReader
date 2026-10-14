@@ -1,0 +1,64 @@
+{
+  "abstract": "Bird's-Eye-View (BEV) representations are increasingly used as compact inputs for autonomous driving perception and planning. However, lightweight and interpretable methods for evaluating candidate ego trajectories directly on BEV outputs remain useful for vehicular safety workflows, rapid prototyping, and human-in-the-loop validation. This paper presents a modular trajectory ranking pipeline that consumes BEVFusion object detections and map segmentations derived from nuScenes sensor data and ranks manually specified candidate trajectories according to safety-first criteria. The ranking prioritizes avoiding collisions and walkway violations, then smaller end distance to the target, and finally path efficiency. To study whether these rule-based rankings resemble human judgment, we created seven BEV traffic scenarios and compared the script output with preferences from a survey of 21 participants. Across 146 pairwise votes, 124 matched the trajectory ranked first by the evaluator, corresponding to an overall agreement of 84.9 %. The results indicate that simple BEV-centric safety heuristics can approximate human preferences in constrained trajectory choice tasks while remaining transparent enough for analysis, dataset curation, and autonomous driving studies.",
+  "abstract_zh": "鸟瞰视角（BEV）表示法越来越多地被用作自动驾驶感知和规划的紧凑输入。然而，针对BEV输出直接评估候选自我轨迹的轻量级和可解释的方法仍然对车辆安全工作流程、快速原型设计和人机协同验证具有重要意义。本文提出了一种模块化轨迹排名管道，该管道使用来自nuScenes传感器数据的BEVFusion物体检测和地图分割，并根据安全优先标准对手动指定的候选轨迹进行排名。排名优先考虑避免碰撞和人行道违规，其次是与目标的较小最终距离，最后是路径效率。为了研究这些基于规则的排名是否类似于人类判断，我们创建了七个BEV交通场景，并将脚本输出与21名参与者的偏好进行了比较。在146对投票中，有124票与评估者排名第一的轨迹相匹配，总体一致性为84.9%。结果表明，简单的以BEV为中心的安全启发式方法可以在受限轨迹选择任务中近似人类偏好，同时足够透明以便于分析、数据集整理和自动驾驶研究。",
+  "arxiv_id": "2610.14066",
+  "arxiv_url": "https://arxiv.org/abs/2610.14066v1",
+  "authors": [
+    "Leon Pohl",
+    "Martin Frauendorfer",
+    "Corinna Schmitt",
+    "Mirko Maehlisch"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-14066",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.204727+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.14066v1",
+  "published_at": "2026-10-07T11:58:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "bev",
+      "bird's-eye",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.14066v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Safety-Oriented Trajectory Ranking from BEV Perception Outputs",
+  "title_zh": "基于安全导向的鸟瞰视角感知输出轨迹排名",
+  "translation_url": "https://hjfy.top/arxiv/2610.14066"
+}

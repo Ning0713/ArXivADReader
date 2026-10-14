@@ -1,0 +1,61 @@
+{
+  "abstract": "Cooperative driving at mixed-traffic unsignalized intersections is challenged by imperfect vehicle-to-everything (V2X) communication, human-driven vehicle (HV) intentions that cannot be directly communicated, and the potential incompatibility of independently generated crossing decisions. This paper proposes State-Intent-Aware Graph Multi-Agent Reinforcement Learning for Cooperative Driving under Imperfect V2X (SIGN-MAPPO) to address these challenges through three coordinated mechanisms. Each decision-eligible connected and automated vehicle (CAV) first reconstructs a receiver-specific traffic graph from its ego state and the peer-state records available to it, from which a shared graph-attention policy generates a raw Stop/Go intention augmented with predicted HV-intent features. CAV intentions are then exchanged through timestamped vehicle-to-vehicle (V2V) messages, and a local conflict-aware arbitration layer converts each CAV's intention into a safe executable action despite potentially inconsistent peer information. In the principal Simulation of Urban MObility (SUMO) evaluation, SIGN-MAPPO achieves a 97.53% completion rate, a 0.10% collision rate, and a mean intersection traversal time of 35.28 s. Ablation studies further confirm the complementary contributions of HV-intent prediction and CAV-intent exchange to this performance. The trained policy also remains robust under the evaluated communication-delay and packet-loss ranges, and cross-scenario tests show complete traffic clearance across the tested settings, though safety margins narrow under compound unpredictable HV behavior.",
+  "abstract_zh": "在混合交通无信号交叉口，协同驾驶面临着不完美的车对一切（V2X）通信、无法直接传达的人驾驶车辆（HV）意图以及独立生成的过路决策可能不兼容等挑战。本文提出了一种状态-意图感知图多智能体强化学习方法（SIGN-MAPPO），通过三种协调机制来应对这些挑战。每个具有决策资格的连接和自动化车辆（CAV）首先从其自我状态和可用的同行状态记录中重构一个特定接收者的交通图，然后通过共享的图注意力策略生成一个原始的停车/行驶意图，并增强预测的HV意图特征。CAV意图通过带时间戳的车对车（V2V）消息进行交换，局部冲突感知仲裁层将每个CAV的意图转换为安全可执行的动作，尽管同行信息可能不一致。在主要的城市交通模拟（SUMO）评估中，SIGN-MAPPO实现了97.53%的完成率，0.10%的碰撞率，以及35.28秒的平均交叉口通行时间。消融研究进一步确认了HV意图预测和CAV意图交换对这一性能的互补贡献。训练后的策略在评估的通信延迟和数据包丢失范围内仍然保持稳健，跨场景测试显示在测试设置中实现了完全的交通清理，尽管在复杂不可预测的HV行为下安全边际缩小。",
+  "arxiv_id": "2610.15577",
+  "arxiv_url": "https://arxiv.org/abs/2610.15577v1",
+  "authors": [
+    "Zide Fan",
+    "Jiahui Yuan",
+    "Kaixin Zhang",
+    "Junhao Fan",
+    "Xiaohe Li",
+    "Yiru Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15577",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.277890+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15577v1",
+  "published_at": "2026-10-11T12:43:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated vehicle",
+      "vehicle-to-everything",
+      "v2x",
+      "driving",
+      "vehicle",
+      "traffic",
+      "intersection",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15577v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "协同/V2X",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "SIGN-MAPPO: State-Intent-Aware Graph Multi-Agent Reinforcement Learning for Cooperative Driving under Imperfect V2X",
+  "title_zh": "SIGN-MAPPO：在不完美V2X环境下的状态-意图感知图多智能体强化学习用于协同驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.15577"
+}

@@ -1,0 +1,53 @@
+{
+  "abstract": "Multi-modal semantic segmentation adds an auxiliary sensing stream to RGB images (RGB-X), such as thermal, LiDAR, depth, event, polarization, or light field. This can improve robustness in poor lighting and under motion blur. But different sensors often produce features that do not match well, and fusion can become unstable. To alleviate these issues, we propose a bidirectional polarity-aware cross-modality fusion (BPCF) module that effectively captures complementary cues while enhancing feature alignment. We evaluate the framework on six modality pairings: RGB-Thermal, RGB-LiDAR, RGB-Depth, RGB-Event, RGB-Polarization, and RGB-Light Field. Our model achieve state-of-the-art (SOTA) results on eight public datasets, including MFNet, KITTI-360, DELIVER, DDD17, DSEC, MCubeS, ZJU, and UrbanLF. The codes and trained models will be released upon acceptance.",
+  "abstract_zh": "多模态语义分割在RGB图像（RGB-X）中添加辅助感知流，例如热成像、激光雷达（LiDAR）、深度、事件、偏振或光场。这可以在光线不足和运动模糊的情况下提高鲁棒性。然而，不同传感器通常产生的特征不匹配，融合可能变得不稳定。为了解决这些问题，我们提出了一种双向极性感知跨模态融合（BPCF）模块，该模块有效捕捉互补线索，同时增强特征对齐。我们在六种模态配对上评估该框架：RGB-热成像、RGB-激光雷达、RGB-深度、RGB-事件、RGB-偏振和RGB-光场。我们的模型在八个公共数据集上实现了最先进的（SOTA）结果，包括MFNet、KITTI-360、DELIVER、DDD17、DSEC、MCubeS、ZJU和UrbanLF。代码和训练模型将在接受后发布。",
+  "arxiv_id": "2610.17800",
+  "arxiv_url": "https://arxiv.org/abs/2610.17800v1",
+  "authors": [
+    "Hu Cao",
+    "Yifeng Cheng",
+    "Mu He",
+    "Mengyu Li",
+    "Yinlong Liu",
+    "Alois Knoll"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17800",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.633816+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17800v1",
+  "published_at": "2026-10-13T06:29:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "kitti-360",
+      "multimodal fusion",
+      "lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17800v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "Multimodal Fusion of RGB and Complementary Modalities for Semantic Segmentation",
+  "title_zh": "RGB及其互补模态的多模态融合用于语义分割",
+  "translation_url": "https://hjfy.top/arxiv/2610.17800"
+}

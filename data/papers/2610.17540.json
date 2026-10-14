@@ -1,0 +1,61 @@
+{
+  "abstract": "Textual reasoning before acting has improved vision-language-action (VLA) models, but at the cost of latency: every action conditioned on the reasoning text must wait for autoregressive decoding. We show that actions do not need to wait for or condition on the generated reasoning to benefit from it, because the reasoning supervision already improves the backbone representation. We introduce TacitVLA, a reasoning VLA whose action expert never attends to the reasoning it generates for the current call. On long-horizon tasks where the reasoning text also serves as episodic memory, it can generate each entry during action execution rather than before acting. We evaluate it in a controlled study on four benchmarks spanning manipulation and autonomous driving, memory and non-memory tasks: RoboMME, RMBench, LIBERO, and PhysicalAI-AV. On all four, TacitVLA matches the performance of its explicit-reasoning counterpart at up to 3.4x lower latency, and matches the latency of the same architecture trained without reasoning at up to +17.1% success. In absolute terms, it surpasses the best previously published results on the RoboMME Counting suite (82.7% vs. 66.8%) and RMBench (77.5% vs. 56.5%), and reaches 72.9% on LIBERO-Plus and a 52.5% scene score on the public split of the PhysicalAI-AV closed-loop driving challenge. Project page: https://tacitvla.github.io.",
+  "abstract_zh": "在行动之前进行文本推理改善了视觉-语言-行动（VLA）模型，但代价是延迟：每个基于推理文本的行动必须等待自回归解码。我们表明，行动不需要等待或依赖于生成的推理就能从中受益，因为推理监督已经改善了基础表示。我们提出了TacitVLA，这是一种推理VLA，其行动专家在当前调用中从不关注其生成的推理。在长时间跨度的任务中，推理文本也作为情节记忆，它可以在行动执行期间生成每个条目，而不是在行动之前。我们在四个基准上进行了受控研究，涵盖了操作和自主驾驶、记忆和非记忆任务：RoboMME、RMBench、LIBERO和PhysicalAI-AV。在所有四个基准上，TacitVLA的性能与其显式推理对应物相匹配，延迟降低至3.4倍，同时在没有推理的情况下训练的相同架构的延迟匹配成功率提高至17.1%。在绝对值上，它超越了之前在RoboMME Counting套件上发布的最佳结果（82.7%对66.8%）和RMBench（77.5%对56.5%），在LIBERO-Plus上达到了72.9%，并在PhysicalAI-AV闭环驾驶挑战的公共拆分中达到了52.5%的场景得分。项目页面：https://tacitvla.github.io。",
+  "arxiv_id": "2610.17540",
+  "arxiv_url": "https://arxiv.org/abs/2610.17540v1",
+  "authors": [
+    "Jack Lu",
+    "Yurong You",
+    "Boyi Li",
+    "Yulong Cao",
+    "Thomas Tian",
+    "Chaowei Xiao",
+    "Xiangyu Chen",
+    "Wenjie Luo",
+    "Boris Ivanovic",
+    "Marco Pavone",
+    "Yan Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17540",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.876557+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17540v1",
+  "published_at": "2026-10-13T01:09:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17540v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "TacitVLA: Reasoning Vision-Language-Action Models Without Reasoning Latency",
+  "title_zh": "TacitVLA：无推理延迟的视觉-语言-行动模型推理",
+  "translation_url": "https://hjfy.top/arxiv/2610.17540"
+}

@@ -1,0 +1,49 @@
+{
+  "abstract": "Reliable scene understanding requires deciding which predictions to trust, retain, or inspect. In semantic segmentation, component failure predictors support these decisions, but their predictive performance does not fully describe the value of the resulting selection. We develop a decision-centered evaluation framework that connects three questions: what an available score predicts, what can be learned from its existing fields, and what its ranking delivers. Across three segmentation systems on Cityscapes and ACDC at 90% retention, adapted MetaSeg reduces retained failure relative to forecast entropy in all twelve architecture-population comparisons, but does not establish a failure advantage over direct probability ranking. Image-nested source experiments reveal a different opportunity: reusing the full field set improves predictive and retained-loss performance under both learners in all three systems, while the raw OCRNet probe improves prediction with unresolved selective gains. Mapping a fixed prediction pair to conditional log-loss risk produces mixed selection effects, which we examine through the components exchanged by the two rankings. These findings distinguish the performance of a fitted score from the value obtainable from its inputs and the consequences of its use. The framework provides a practical basis for deciding whether to adopt an additional score, relearn existing fields, or revise a selection rule, and for explaining the gains and failures of component-level reliability methods.",
+  "abstract_zh": "可靠的场景理解需要决定哪些预测值得信任、保留或检查。在语义分割中，组件失败预测器支持这些决策，但它们的预测性能并不能完全描述结果选择的价值。我们开发了一个以决策为中心的评估框架，连接了三个问题：可用评分预测了什么、可以从其现有领域中学习到什么，以及其排名带来了什么。在Cityscapes和ACDC的三个分割系统中，在90%的保留率下，改进后的MetaSeg在所有十二个架构-人群比较中相对于预测熵减少了保留失败，但并未在直接概率排名上建立失败优势。图像嵌套源实验揭示了一个不同的机会：在所有三个系统中，重用完整的领域集在两个学习者下改善了预测和保留损失性能，而原始的OCRNet探针在未解决的选择性增益下改善了预测。将固定的预测对映射到条件对数损失风险产生了混合选择效果，我们通过两个排名之间交换的组件来检查这些效果。这些发现区分了拟合评分的性能与其输入所能获得的价值及其使用的后果。该框架为决定是否采用额外评分、重新学习现有领域或修订选择规则提供了实用基础，并为解释组件级可靠性方法的增益和失败提供了依据。",
+  "arxiv_id": "2610.16058",
+  "arxiv_url": "https://arxiv.org/abs/2610.16058v1",
+  "authors": [
+    "Minhui Kang",
+    "Yiyao Zhang",
+    "Peizhe Long",
+    "Jiafeng Qi",
+    "Hongyu Jin",
+    "Jiayun Zheng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16058",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.520696+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16058v1",
+  "published_at": "2026-10-12T01:59:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16058v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位"
+    ]
+  },
+  "title": "From Failure Prediction to Component Selection in Semantic Segmentation",
+  "title_zh": "从失败预测到语义分割中的组件选择",
+  "translation_url": "https://hjfy.top/arxiv/2610.16058"
+}

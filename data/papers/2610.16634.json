@@ -1,0 +1,78 @@
+{
+  "abstract": "Recent Vision-Language-Action (VLA) models increasingly use natural-language instructions to condition autonomous driving behavior. Yet existing closed-loop benchmarks primarily measure route completion, safety, and rule compliance, leaving a fundamental question unresolved: does language actually determine which feasible behavior the vehicle executes? A trajectory may be safe and successful while still violating or even ignoring the passenger's instruction. To address this, we introduce \\ltd, a benchmark designed to directly test this capability. Its key evaluation unit, the paired counterfactual unit (PCU), holds the initial driving scene fixed while changing only the instruction. This design enables us to distinguish isolated instruction success from counterfactual paired success across four instruction-following scopes. To test whether this distinction persists across evaluation regimes, we instantiate Language2Drive in complementary closed-loop CARLA simulation, reconstructed real-world scenes, and open-loop driving benchmarks, including our released CARLA-Language2Drive simulator with purpose-built maps. Evaluating representative driving VLAs across these settings reveals a striking mismatch between strong driving competence and weak language control: 93.2% of successful rollouts do not have a successful counterpart under the alternative feasible instruction. This failure is dominated by one-sided completion, where a model repeatedly executes one preferred behavior but fails when the same scene requires the counterfactual alternative. These results expose two fundamental limitations of current evaluation: isolated success and driving scores, which are widely used by conventional driving benchmarks, can substantially overstate language-following capability, while current driving VLAs themselves lack reliable instruction following under matched counterfactual tests.",
+  "abstract_zh": "近年来，视觉-语言-动作（VLA）模型越来越多地使用自然语言指令来调节自动驾驶行为。然而，现有的闭环基准主要测量路线完成情况、安全性和规则遵循，未能解决一个根本性问题：语言是否真正决定了车辆执行的可行行为？一条轨迹可能是安全和成功的，但仍然可能违反或忽视乘客的指令。为了解决这个问题，我们引入了Language2Drive（ extit{ltd}），这是一个旨在直接测试这一能力的基准。其关键评估单元是配对反事实单元（PCU），在固定初始驾驶场景的同时，仅改变指令。该设计使我们能够区分四个指令遵循范围内的孤立指令成功与反事实配对成功。为了测试这种区分是否在不同评估机制中持续存在，我们在互补的闭环CARLA仿真、重建的真实场景和开放环驾驶基准中实例化了Language2Drive，包括我们发布的具有专用地图的CARLA-Language2Drive仿真器。在这些设置中评估代表性的驾驶VLA，揭示了强大的驾驶能力与弱语言控制之间的显著不匹配：93.2%的成功执行在替代可行指令下没有成功的对应项。这种失败主要表现为单方面完成，即模型反复执行一种首选行为，但在同一场景需要反事实替代时却失败。这些结果揭示了当前评估的两个根本局限性：孤立成功和驾驶评分，这些评分在传统驾驶基准中被广泛使用，可能大幅夸大语言遵循能力，而当前的驾驶VLA在匹配反事实测试下缺乏可靠的指令遵循。",
+  "arxiv_id": "2610.16634",
+  "arxiv_url": "https://arxiv.org/abs/2610.16634v1",
+  "authors": [
+    "Zihan You",
+    "Zehua Fan",
+    "Wenqi Lyu",
+    "Aoqi Wang",
+    "Ni Wang",
+    "Yifei Yang",
+    "Linge Zhao",
+    "Huan Li",
+    "Sining Ang",
+    "Yuguang Yang",
+    "Jueyu Chen",
+    "Xiangyu Li",
+    "Qianshan Wei",
+    "Jieyuan Pei",
+    "Yuxin Wang",
+    "Zhiwen Chen",
+    "Jiaqi Li",
+    "Wenxuan Song",
+    "Yanyuan Qiao",
+    "Benjin Zhu",
+    "Haoang Li",
+    "Yan Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16634",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.313465+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16634v1",
+  "published_at": "2026-10-12T11:54:56Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16634v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "仿真/数据",
+      "预测/规划"
+    ]
+  },
+  "title": "Language2Drive: Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?",
+  "title_zh": "Language2Drive：视觉-语言-动作模型在自动驾驶中真的遵循指令吗？",
+  "translation_url": "https://hjfy.top/arxiv/2610.16634"
+}

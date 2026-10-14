@@ -1,0 +1,55 @@
+{
+  "abstract": "Traffic sign detection plays a vital role in intelligent transportation systems, supporting the safe operation of advanced driver assistance systems and autonomous vehicles. Despite significant progress in real-time object detection, accurately identifying traffic signs under challenging conditions remains difficult. Variations in lighting, adverse weather, motion blur, and partial occlusion often reduce detection performance, especially for small or visually degraded signs where important spatial information can be lost. To address these challenges, we propose Squeeze-Aware-YOLO, a lightweight traffic sign detection framework that introduces a multi-branch bottleneck module combining convolutional kernels of different sizes with a Squeeze-and-Excitation mechanism to improve feature extraction and adaptive channel weighting. In addition, we integrate the Multi-Branch Auxiliary Feature Pyramid Network and Re-parameterized Heterogeneous Multi-Scale modules to strengthen multi-scale feature representation and feature fusion while preserving real-time inference efficiency for practical deployment. The proposed approach is evaluated on the Bangladeshi Traffic Sign Detection Dataset, the CSUST Chinese Traffic Sign Detection Benchmark 2021, and the German Traffic Sign Detection Benchmark, achieving [email protected] scores of 74.7%, 79.4%, and 84.0%, respectively, while consistently outperforming recent state-of-the-art YOLO-based traffic sign detectors. These findings demonstrate that combining multi-scale receptive fields, channel attention, and enhanced feature fusion enables more accurate and robust traffic sign detection while maintaining the computational efficiency required for real-world deployment.",
+  "abstract_zh": "交通标志检测在智能交通系统中发挥着至关重要的作用，支持先进驾驶辅助系统和自动驾驶车辆的安全运行。尽管实时目标检测取得了显著进展，但在复杂条件下准确识别交通标志仍然困难。光照变化、恶劣天气、运动模糊和部分遮挡常常降低检测性能，特别是对于小型或视觉退化的标志，重要的空间信息可能会丢失。为了解决这些挑战，我们提出了压缩感知YOLO（Squeeze-Aware-YOLO），这是一种轻量级的交通标志检测框架，采用多分支瓶颈模块，将不同大小的卷积核与压缩与激励（Squeeze-and-Excitation）机制相结合，以改善特征提取和自适应通道加权。此外，我们集成了多分支辅助特征金字塔网络（Multi-Branch Auxiliary Feature Pyramid Network）和重新参数化异构多尺度模块（Re-parameterized Heterogeneous Multi-Scale），以增强多尺度特征表示和特征融合，同时保持实际部署所需的实时推理效率。所提出的方法在孟加拉国交通标志检测数据集、CSUST中国交通标志检测基准2021和德国交通标志检测基准上进行了评估，分别达到了74.7%、79.4%和84.0%的 [email protected] 分数，并且始终优于最近的基于YOLO的交通标志检测器。这些发现表明，结合多尺度感受野、通道注意力和增强特征融合能够实现更准确和更稳健的交通标志检测，同时保持实际部署所需的计算效率。",
+  "arxiv_id": "2610.15604",
+  "arxiv_url": "https://arxiv.org/abs/2610.15604v1",
+  "authors": [
+    "Mizbaul Haque Maruf",
+    "Syed Samin Sadaf",
+    "Syed Tamzid Bakht",
+    "Md. Hasanul Kabir",
+    "Sabbir Ahmed"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15604",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.496004+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15604v1",
+  "published_at": "2026-10-11T13:28:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15604v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "Squeeze-Aware-YOLO: Early Channel Recalibration and Multi-Scale Fusion for Real-Time Traffic Sign Detection",
+  "title_zh": "压缩感知YOLO：实时交通标志检测的早期通道重校准与多尺度融合",
+  "translation_url": "https://hjfy.top/arxiv/2610.15604"
+}

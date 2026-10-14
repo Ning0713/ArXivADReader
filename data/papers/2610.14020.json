@@ -1,0 +1,54 @@
+{
+  "abstract": "Self-driving laboratories (SDLs) aim to automate the full experimental loop, from scientific decision-making to physical execution. Ideally, AI-generated plans could be carried out directly by robotic systems, but reliable automation remains difficult in complex, open-world laboratory environments, where experiments often involve fine-grained manipulation, long-horizon procedures, and substantial variation across tasks and setups. Humans therefore remain an important execution interface between AI-generated plans and physical experiments, creating a need for clear and effective human-facing experimental guidance. Because laboratory procedures are inherently visual, spatial, and dynamic, video is particularly well suited to communicating apparatus configurations, manipulation actions, temporal dependencies, and state changes. Recent advances in video generation now make it possible to synthesize experimental demonstrations directly from an initial workspace image and a natural-language instruction. However, whether such models can reliably communicate real laboratory procedures has not been systematically studied. We introduce LabInstruct, a benchmark for situated instructional video generation in real laboratories. LabInstruct contains 204 tasks across 5 scientific disciplines, with real reference executions and structured annotations of objects, actions, contacts, and state transitions. Evaluating 8 frontier image-to-video models, we find that visually plausible generations frequently remain procedurally incorrect, revealing a substantial gap between visual realism and the reliability required for experimental instruction.",
+  "abstract_zh": "自驱动实验室（SDL）旨在自动化完整的实验循环，从科学决策到物理执行。理想情况下，AI生成的计划可以由机器人系统直接执行，但在复杂的开放世界实验室环境中，可靠的自动化仍然困难，因为实验通常涉及细致的操作、长时间的程序以及任务和设置之间的显著变化。因此，人类仍然是AI生成计划与物理实验之间的重要执行接口，这就需要清晰有效的人机实验指导。由于实验室程序本质上是视觉的、空间的和动态的，视频特别适合于传达设备配置、操作动作、时间依赖性和状态变化。最近在视频生成方面的进展使得可以直接从初始工作区图像和自然语言指令合成实验演示。然而，这些模型是否能够可靠地传达真实的实验室程序尚未系统地研究。我们介绍了LabInstruct，这是一个针对真实实验室的情境教学视频生成的基准测试。LabInstruct包含来自5个科学学科的204个任务，具有真实的参考执行和对象、动作、接触及状态转变的结构化注释。在评估8个前沿的图像到视频模型时，我们发现视觉上合理的生成往往在程序上不正确，揭示了视觉现实主义与实验指导所需可靠性之间的显著差距。",
+  "arxiv_id": "2610.14020",
+  "arxiv_url": "https://arxiv.org/abs/2610.14020v1",
+  "authors": [
+    "Yuming Fu",
+    "Weijia Wu",
+    "Jing Chen",
+    "Jiahao Tang",
+    "Feifei Chen",
+    "Hongyu Zhu",
+    "Xin Jin",
+    "Alex Jinpeng Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-14020",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.197296+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.14020v1",
+  "published_at": "2026-09-29T12:00:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "driving",
+      "robotic"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.14020v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "LabInstruct: Benchmarking Situated Instructional Video Generation for Lab Procedures",
+  "title_zh": "LabInstruct：实验室程序的情境教学视频生成基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2610.14020"
+}

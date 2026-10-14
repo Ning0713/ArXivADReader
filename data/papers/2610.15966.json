@@ -1,0 +1,53 @@
+{
+  "abstract": "We present a low-cost miniature Ackermann vehicle for embedded neural-driving research, organized as a hardware-partitioned perceive-decide-act agent: an ESP32 camera node streams frames over Wi-Fi to a host computer, where neural inference and state estimation run, while an ESP32-S3 chassis controller executes safety-critical actuation in a 100 Hz per-wheel proportional-integral-derivative (PID) loop beneath a micro-ROS client. The partition isolates real-time control and safety on the vehicle while learning-based components run off-board, supervised by an operator from a gamepad. We characterize the complete pipeline during real closed-loop neural driving. Wireless sensing, rather than neural inference, dominates latency, with a 59.5 ms median capture-to-actuation delay; the platform absorbed wireless variability by holding the last safe command under a firmware watchdog, operating across twelve autonomous sessions with zero collisions or manual interventions; and encoder-inertial-measurement-unit (IMU) fusion cut odometry loop-closure error by 22%. These results indicate that carefully partitioned microcontroller-class vehicles support reproducible experiments in embedded AI, wireless control, and operator-supervised autonomous driving. The platform software is open source.",
+  "abstract_zh": "我们提出了一种低成本的微型阿克曼车辆，用于嵌入式神经驾驶研究，组织为一个硬件分区的感知-决策-执行代理：一个ESP32摄像头节点通过Wi-Fi向主计算机传输帧，在主计算机上进行神经推理和状态估计，而ESP32-S3底盘控制器以每轮100 Hz的比例-积分-微分（PID）循环执行安全关键的驱动。该分区将车辆上的实时控制和安全隔离，同时基于学习的组件在板外运行，由操作员通过游戏手柄进行监督。我们在真实的闭环神经驾驶过程中对整个流程进行了表征。无线传感器的延迟高于神经推理，捕获到驱动的中位延迟为59.5毫秒；该平台通过在固件看门狗下保持最后一个安全命令来吸收无线变异，跨越十二个自主会话实现零碰撞或手动干预；编码器-惯性测量单元（IMU）融合将里程计闭环误差降低了22%。这些结果表明，经过精心分区的微控制器级车辆支持嵌入式人工智能、无线控制和操作员监督的自主驾驶中的可重复实验。该平台软件是开源的。",
+  "arxiv_id": "2610.15966",
+  "arxiv_url": "https://arxiv.org/abs/2610.15966v1",
+  "authors": [
+    "Gustavo Claudio Karl Couto",
+    "Eric Aislan Antonelo",
+    "Gabriel George Zipperer"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15966",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.292558+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15966v1",
+  "published_at": "2026-10-11T22:46:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "wireless sensing"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15966v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "A Hardware-Partitioned micro-ROS Mini-Vehicle for Operator-Supervised Neural Driving",
+  "title_zh": "一种硬件分区的微型ROS迷你车辆用于操作员监督的神经驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.15966"
+}

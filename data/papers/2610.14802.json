@@ -1,0 +1,58 @@
+{
+  "abstract": "End-to-end driving policies can achieve strong task performance while offering limited control over their driving style. Driving style describes how a vehicle accelerates, brakes, and maintains distance. Policies trained without explicit preference conditioning lack a direct mechanism for adjusting these behaviors at inference. We propose YOUDrive, a vision--language--action planner for continuous and composable driving-style control. Each teacher's behavior is distilled into a task vector, a learned parameter update that induces a style direction in the planner's representation. These directions can be scaled and combined at inference without retraining the backbone. Conditioned on these directions, a flow-matching decoder models a multimodal trajectory distribution and generates kinematically feasible motion alternatives. We introduce the Style Alignment Score (SAS) to describe human-referenced kinematic behavior after safety and task gating. On NAVSIM navtest, a single coefficient monotonically controls assertiveness across six teacher-derived personas, while PDMS remains above 0.90 across the tested individual and blended configurations, reaching 0.954. Further analyses reveal systematic policy-specific kinematics after controlling for scene context, whereas the evaluated discrete style labels provide limited additional explanatory power. Code, checkpoints, and the metric will be released.",
+  "abstract_zh": "端到端驾驶策略能够实现强大的任务性能，但对驾驶风格的控制有限。驾驶风格描述了车辆加速、刹车和保持距离的方式。未经过显式偏好条件训练的策略在推理时缺乏直接调整这些行为的机制。我们提出了YOUDrive，一种用于连续和可组合驾驶风格控制的视觉-语言-动作规划器。每个教师的行为被提炼为任务向量，这是一种学习的参数更新，能够在规划器的表示中引入风格方向。这些方向可以在推理时进行缩放和组合，而无需重新训练主干网络。在这些方向的条件下，流匹配解码器建模了多模态轨迹分布，并生成运动学上可行的运动替代方案。我们引入了风格对齐评分（Style Alignment Score, SAS）来描述在安全和任务门控后的人类参考运动行为。在NAVSIM navtest上，单一系数单调控制六个教师派生角色的果断性，同时PDMS在测试的个体和混合配置中保持在0.90以上，达到0.954。进一步分析显示，在控制场景上下文后，政策特定的运动学表现出系统性，而评估的离散风格标签提供的额外解释能力有限。代码、检查点和度量将会发布。",
+  "arxiv_id": "2610.14802",
+  "arxiv_url": "https://arxiv.org/abs/2610.14802v1",
+  "authors": [
+    "Guantian Zheng",
+    "Lidong Yu",
+    "Tianyu Gao",
+    "Jiaxing Chen",
+    "Jiashu Li",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-14802",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.452524+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.14802v1",
+  "published_at": "2026-10-10T10:52:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.14802v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "安全/异常"
+    ]
+  },
+  "title": "YOUDrive: Driving Style as a Composable Direction for End-to-End Autonomous Driving",
+  "title_zh": "YOUDrive：将驾驶风格作为端到端自主驾驶的可组合方向",
+  "translation_url": "https://hjfy.top/arxiv/2610.14802"
+}

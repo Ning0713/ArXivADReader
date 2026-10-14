@@ -1,0 +1,58 @@
+{
+  "abstract": "Robots sharing walkways need to know where people will be, yet semantic occupancy maps show only where they are. We present ReForesight, an open-source ROS 2 toolkit that adds instance-level future occupancy and re-identification after occlusion to a particle-based semantic mapping pipeline. A 36.6k-parameter MLP predicts each tracked person or vehicle up to 3 s ahead, guarded by a Kalman fallback and a stationary gate, and the object's own points are moved to the forecast pose, forming a \"ghost\" point cloud in the map frame without an occupancy decoder. An optional tracker re-associates objects after occlusion using keypoint descriptors the pipeline already computes and a metric 3D gate. On four held-out CODa sequences, the MLP lowers the mean 3 s final displacement error from 0.728 m (Kalman) to 0.662 m and beats a similar-size GRU (0.692 m) on every sequence, at 0.04 ms per instance on one CPU core. Code, all models, and a ROS-free demo are released; field demonstrations use an outdoor cleaning robot.",
+  "abstract_zh": "共享人行道的机器人需要知道人们将会在哪里，但语义占用地图仅显示他们当前的位置。我们提出了ReForesight，这是一个开源的ROS 2工具包，它在基于粒子的语义映射流程中增加了实例级的未来占用预测和遮挡后的再识别。一个具有36.6k参数的多层感知器（MLP）可以预测每个跟踪的人员或车辆在未来3秒内的位置，辅以卡尔曼滤波器和静态门的保护，并将物体自身的点移动到预测位置，形成一个在地图坐标系中没有占用解码器的“幽灵”点云。一个可选的跟踪器使用管道已经计算的关键点描述符和一个度量3D门在遮挡后重新关联物体。在四个保留的CODa序列上，MLP将平均3秒最终位移误差从0.728米（卡尔曼）降低到0.662米，并在每个序列中都超越了类似规模的GRU（0.692米），每个实例在一个CPU核心上耗时0.04毫秒。代码、所有模型和一个无ROS的演示已发布；现场演示使用了一台户外清扫机器人。",
+  "arxiv_id": "2610.17279",
+  "arxiv_url": "https://arxiv.org/abs/2610.17279v1",
+  "authors": [
+    "Didar Seyidov",
+    "Faith Ogunwoye",
+    "Hajira Amjad",
+    "Danil Tolkachev",
+    "Yuri Sarkisov",
+    "Dzmitry Tsetserukou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17279",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.328927+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17279v1",
+  "published_at": "2026-10-12T18:32:38Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆",
+      "occupancy",
+      "point cloud",
+      "点云",
+      "占用预测",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 11
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17279v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "提出一个面向动态语义地图的轻量级未来占用预测与遮挡后目标再识别系统。该方法基于目标轨迹预测未来三秒的位置，并移动目标点云生成实例级未来占用表示，适用于自动驾驶相关的行人和车辆运动预测、动态占用建图及遮挡处理。虽然实地平台是户外清扫机器人，但其数据、对象类型和核心任务与自动驾驶感知预测高度相关。",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "预测/规划",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "ReForesight: Occlusion-Robust Re-Identification and Future Occupancy Forecasting for Dynamic Semantic Mapping",
+  "title_zh": "ReForesight：针对动态语义映射的遮挡鲁棒性再识别与未来占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.17279"
+}

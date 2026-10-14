@@ -1,0 +1,62 @@
+{
+  "abstract": "Camera-based occupancy prediction provides geometric and semantic scene understanding for robot perception and has been adopted in autonomous vehicle and UAV perception systems. Gaussian primitives offer a promising alternative by potentially representing only occupied regions, thereby concentrating computation and representational capacity where needed and reducing wasted computation and memory in empty space. However, existing Gaussian-based methods suffer from poor primitive utilization, as ineffective training objectives leave some Gaussians in empty space, while the limited expressiveness of Gaussian functions restricts their ability to model complex shapes. To address these limitations, we propose a novel 3D representation, Gaussian Neural Field (GNF), which can accurately map voxel positions to semantic occupancies. In GNF, Gaussians and a neural network jointly parameterize the field, where the Gaussians define its spatial support and provide features for neural decoding, while the neural network enables more expressive occupancy modeling than Gaussian functions alone. We further develop the Gaussian Neural Field Transformer (GNFormer), a streamlined and flexible method that predicts GNFs for camera-based occupancy prediction. Across Occ-ScanNet, SSCBench-KITTI-360, and nuScenes-SurroundOcc benchmarks, GNFormer achieves the highest IoU and mIoU and the fastest inference among the compared single-frame methods. In the experiments, GNFormer can represent indoor and outdoor scenes with only 256 and 1024 Gaussians, respectively, substantially fewer primitives than prior Gaussian-based methods. The code will be released.",
+  "abstract_zh": "基于摄像头的占用预测为机器人感知提供了几何和语义场景理解，并已被应用于自主车辆和无人机感知系统。高斯原语通过潜在地仅表示占用区域，提供了一种有前景的替代方案，从而将计算和表示能力集中在需要的地方，减少在空白区域的计算和内存浪费。然而，现有的基于高斯的方法在原语利用率方面表现不佳，因为无效的训练目标使得一些高斯留在空白区域，而高斯函数的有限表达能力限制了它们建模复杂形状的能力。为了解决这些限制，我们提出了一种新颖的3D表示方法——高斯神经场（Gaussian Neural Field, GNF），该方法可以准确地将体素位置映射到语义占用。在GNF中，高斯和神经网络共同参数化该场，其中高斯定义其空间支持并为神经解码提供特征，而神经网络则使得占用建模比单独使用高斯函数更具表现力。我们进一步开发了高斯神经场变换器（GNFormer），这是一种简化且灵活的方法，用于预测基于摄像头的占用预测的GNF。在Occ-ScanNet、SSCBench-KITTI-360和nuScenes-SurroundOcc基准测试中，GNFormer在比较的单帧方法中实现了最高的IoU和mIoU，以及最快的推理速度。在实验中，GNFormer可以分别用仅256和1024个高斯表示室内和室外场景，显著少于之前基于高斯的方法。代码将会发布。",
+  "arxiv_id": "2610.15522",
+  "arxiv_url": "https://arxiv.org/abs/2610.15522v1",
+  "authors": [
+    "Guangcheng Chen",
+    "Li He",
+    "Hong Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15522",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.272862+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15522v1",
+  "published_at": "2026-10-11T10:39:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "nuscenes",
+      "kitti",
+      "kitti-360",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "occupancy",
+      "占用预测",
+      "uav",
+      "robot",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15522v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "GNFormer: Gaussian Neural Field Transformer for Efficient Camera-based Occupancy Prediction",
+  "title_zh": "GNFormer：高斯神经场变换器用于高效的基于摄像头的占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.15522"
+}

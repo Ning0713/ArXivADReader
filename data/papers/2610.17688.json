@@ -1,0 +1,62 @@
+{
+  "abstract": "Occupancy world models provide a structured, metric representation of future driving scenes, making them a promising basis for end-to-end autonomous driving. However, existing occupancy-aware planners typically couple occupancy prediction and action generation through either hierarchical coupling or parallel multi-task learning. Hierarchical methods use occupancy either as a fully predicted future preceding action generation or as an action-conditioned rollout for trajectory evaluation, whereas parallel multi-task methods predict occupancy alongside planning through a separate branch or auxiliary objective. These interfaces retain either an explicit generation order or a role asymmetry, limiting reciprocal interaction between world prediction and action generation during trajectory formation. We propose OccWAM, an occupancy-native world-action model that jointly generates dense future occupancy and continuous ego trajectories via flow matching conditioned on scene representations. Building on this joint formulation, we introduce scene-to-ego world-action flow matching, a two-stage formulation. The first stage predicts scene-centric occupancy together with an absolute ego trajectory, providing a stable representation of future scene evolution. The same predicted world is then re-indexed into the future ego frames induced by the initial trajectory, where ego motion is represented through adjacent pose increments and a second joint flow refines ego-centric occupancy and motion for action-aligned planning. Unlike video-based world-action models, OccWAM preserves explicit semantic geometry for direct planning reasoning without pixel synthesis. Extensive experiments on Bench2Drive and nuScenes demonstrate state-of-the-art performance in closed-loop driving, open-loop planning, and future occupancy prediction.",
+  "abstract_zh": "占用世界模型提供了未来驾驶场景的结构化度量表示，使其成为端到端自动驾驶的有希望基础。然而，现有的占用感知规划器通常通过层次耦合或并行多任务学习将占用预测与动作生成结合在一起。层次方法将占用作为完全预测的未来，先于动作生成，或作为动作条件的展开用于轨迹评估，而并行多任务方法则通过单独的分支或辅助目标在规划过程中同时预测占用。这些接口保留了明确的生成顺序或角色不对称，限制了在轨迹形成过程中世界预测与动作生成之间的相互作用。我们提出了OccWAM，一种占用原生的世界-动作模型，通过基于场景表示的流匹配联合生成密集的未来占用和连续的自我轨迹。在这一联合公式的基础上，我们引入了场景到自我世界-动作流匹配的两阶段公式。第一阶段预测以场景为中心的占用以及绝对自我轨迹，提供未来场景演变的稳定表示。然后，将相同预测的世界重新索引到由初始轨迹引发的未来自我帧中，其中自我运动通过相邻姿态增量表示，第二个联合流则细化自我中心的占用和运动，以便进行与动作对齐的规划。与基于视频的世界-动作模型不同，OccWAM保留了明确的语义几何形状，以便在不进行像素合成的情况下进行直接规划推理。在Bench2Drive和nuScenes上的大量实验表明，在闭环驾驶、开环规划和未来占用预测方面，OccWAM实现了最先进的性能。",
+  "arxiv_id": "2610.17688",
+  "arxiv_url": "https://arxiv.org/abs/2610.17688v1",
+  "authors": [
+    "Qihang Huang",
+    "Wenhui Huang",
+    "Collister Chua",
+    "Shiyu Fang",
+    "Zhan Chen",
+    "Songyan Zhang",
+    "Zhidong Wang",
+    "Daiying Tian",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17688",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.348511+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17688v1",
+  "published_at": "2026-10-13T04:10:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17688v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "OccWAM: Occupancy World-Action Models with Joint Scene-to-Ego Flow Matching",
+  "title_zh": "OccWAM：具有联合场景到自我流匹配的占用世界-动作模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.17688"
+}

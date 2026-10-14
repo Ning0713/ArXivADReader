@@ -1,0 +1,60 @@
+{
+  "abstract": "Vision-Language Models (VLMs) and world models have demonstrated strong capabilities in semantic understanding and future scene evolution for autonomous driving. However, effectively integrating both capabilities for trajectory generation remains challenging. In this work, we propose DriveWLA, a unified World-Language-Action model based on Mixture-of-Transformers (MoT) that jointly models semantic understanding, future scene dynamics, and trajectory generation. DriveWLA consists of three experts: a World Expert for future prediction, a Language Expert for semantic understanding, and an Action Expert for trajectory generation. We further introduce Cross-Expert Attention, which enables controlled information flow across experts while aligning semantic and dynamic representations. To improve trajectory generation beyond imitation learning, we apply Flow-GRPO reinforcement learning post-training to refine the Action Expert. Extensive experiments show that DriveWLA achieves superior performance in both open-loop and closed-loop evaluation. DriveWLA achieves 92.3 PDMS on NAVSIM v1 and 90.1 EPDMS on NAVSIM v2, demonstrating strong performance among VLM-based and world-model-based planners. Without specific fine-tuning, DriveWLA further demonstrates strong zero-shot generalization to HUGSIM, nuScenes, and Bench2Drive. These results validate the effectiveness of our unified World-Language-Action modeling, establishing DriveWLA as a generalizable framework for autonomous driving.",
+  "abstract_zh": "视觉-语言模型（VLMs）和世界模型在自动驾驶的语义理解和未来场景演变方面表现出强大的能力。然而，有效地将这两种能力整合以生成轨迹仍然具有挑战性。在本研究中，我们提出了DriveWLA，一种基于混合变换器（Mixture-of-Transformers, MoT）的统一世界-语言-动作模型，联合建模语义理解、未来场景动态和轨迹生成。DriveWLA由三个专家组成：用于未来预测的世界专家、用于语义理解的语言专家以及用于轨迹生成的动作专家。我们进一步引入了跨专家注意力（Cross-Expert Attention），该机制能够在专家之间控制信息流动，同时对齐语义和动态表示。为了改善轨迹生成超越模仿学习，我们在后期训练中应用Flow-GRPO强化学习来优化动作专家。大量实验表明，DriveWLA在开环和闭环评估中均表现出优越的性能。DriveWLA在NAVSIM v1上达到了92.3的PDMS，在NAVSIM v2上达到了90.1的EPDMS，显示出在基于VLM和基于世界模型的规划器中的强大表现。在没有特定微调的情况下，DriveWLA还在HUGSIM、nuScenes和Bench2Drive上展示了强大的零样本泛化能力。这些结果验证了我们统一的世界-语言-动作建模的有效性，确立了DriveWLA作为一个可泛化的自动驾驶框架。",
+  "arxiv_id": "2610.17903",
+  "arxiv_url": "https://arxiv.org/abs/2610.17903v1",
+  "authors": [
+    "Shuzheng Wang",
+    "Haoxuan Li",
+    "Shengzhen Li",
+    "Chenxi Wu",
+    "Yajing Sun",
+    "Lu Hou",
+    "Wenyu Liu",
+    "Xinggang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17903",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.641952+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17903v1",
+  "published_at": "2026-10-13T07:56:37Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17903v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "DriveWLA: Unifying Future Dynamics and Scene Semantics through World-Language-Action Modeling for Autonomous Driving",
+  "title_zh": "DriveWLA：通过世界-语言-动作建模统一未来动态与场景语义以实现自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.17903"
+}

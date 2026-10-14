@@ -1,0 +1,59 @@
+{
+  "abstract": "End-to-end autonomous driving has achieved remarkable progress by planning trajectories directly from raw sensor data. Yet the step from planning to control still relies on hand-tuned tracking controllers that block the gradient path from vehicle motion back to the network. This gap stems from non-differentiable vehicle dynamics, aliased supervision from coarsely sampled expert labels, rate mismatch between high-rate control and low-rate re-planning, and vehicle model discrepancies between training and deployment. This paper proposes DIVA (Differentiable Identified Vehicle dynamics for end-to-end Autonomous driving) to close this gap. An identified actuator-level vehicle model is embedded in the training loop of the end-to-end driving network, forming a differentiable chain from perception to vehicle states. A learning-based control decoder replaces the external controller and is supervised on the rolled-out vehicle states, bypassing the aliased control-input labels. A rate-consistent control-input parameterization reconciles the heterogeneous sampling rates and enables asynchronous execution with a 3.8 ms control-only cycle. On-policy re-identification and an online disturbance observer address training-time distribution shift and deployment-time model mismatch respectively. On the closed-loop Bench2Drive benchmark, DIVA achieves a driving score of 86.7, surpassing the widely adopted state-of-the-art approach by 3.3 points while nearly halving mean jerk and reducing brake switching by 64%, and maintains superior path tracking accuracy under significant vehicle model mismatch at deployment.",
+  "abstract_zh": "端到端自主驾驶通过直接从原始传感器数据规划轨迹取得了显著进展。然而，从规划到控制的步骤仍然依赖于手动调节的跟踪控制器，这阻碍了从车辆运动到网络的梯度传递。这一差距源于不可微分的车辆动力学、来自粗采样专家标签的别名监督、高频控制与低频重新规划之间的速率不匹配，以及训练与部署之间的车辆模型差异。本文提出了DIVA（可微分识别车辆动力学用于端到端自主驾驶）以填补这一差距。一个识别的执行器级车辆模型被嵌入到端到端驾驶网络的训练循环中，形成了从感知到车辆状态的可微分链。基于学习的控制解码器替代了外部控制器，并在展开的车辆状态上进行监督，从而绕过了别名控制输入标签。速率一致的控制输入参数化调和了异构采样速率，并使得以3.8毫秒的控制周期实现异步执行。在线策略再识别和在线干扰观测器分别解决了训练时分布转移和部署时模型不匹配的问题。在闭环Bench2Drive基准测试中，DIVA的驾驶得分达到86.7，超越了广泛采用的最先进方法3.3分，同时将平均抖动几乎减半，并将刹车切换减少了64%，在显著的车辆模型不匹配情况下仍保持优越的路径跟踪精度。",
+  "arxiv_id": "2610.18167",
+  "arxiv_url": "https://arxiv.org/abs/2610.18167v1",
+  "authors": [
+    "Zhidong Wang",
+    "Zirui Li",
+    "Zitong Shan",
+    "Zhiqi Mao",
+    "Qihang Huang",
+    "Zhan Chen",
+    "Jingsong Liang",
+    "Han Yu",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-18167",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.372295+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.18167v1",
+  "published_at": "2026-10-13T11:12:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.18167v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Beyond Planning: Differentiable Control-in-the-loop End-to-End Autonomous Driving",
+  "title_zh": "超越规划：可微分控制环路的端到端自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.18167"
+}

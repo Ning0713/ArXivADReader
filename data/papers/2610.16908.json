@@ -1,0 +1,58 @@
+{
+  "abstract": "End-to-end driving requires rich spatiotemporal representations to support scene understanding and trajectory planning under strict latency constraints. However, most systems initialize their visual encoders from generic image pretraining and densely process all patch tokens for each camera view and input frame, limiting both representation quality and inference efficiency. To address these challenges, we present ConDenseDrive, a knowledge-dense and token-sparse visual encoder for end-to-end autonomous driving. Our three-stage framework first makes the encoder knowledge-dense by distilling complementary visual, semantic, and geometric knowledge from three vision foundation models. It then adapts the distilled encoder to multi-frame end-to-end driving and integrates spatiotemporal context into register tokens for planning. Finally, it makes the encoder token-sparse by applying register-guided token compression, reducing redundant patch computation and yielding a 2.0$\\times$ speedup while improving planning performance. ConDenseDrive achieves 94.5 PDMS on NAVSIM v1 and 90.8 EPDMS on NAVSIM v2, and reaches 37.4 HD-Score in zero-shot evaluation on HUGSIM. Extensive experiments and qualitative analyses demonstrate that visual encoder design provides an effective route to reliable and efficient end-to-end driving.",
+  "abstract_zh": "端到端驾驶需要丰富的时空表示，以支持在严格延迟限制下的场景理解和轨迹规划。然而，大多数系统从通用图像预训练初始化其视觉编码器，并对每个相机视图和输入帧的所有补丁令牌进行密集处理，这限制了表示质量和推理效率。为了解决这些挑战，我们提出了ConDenseDrive，一种用于端到端自动驾驶的知识密集型和令牌稀疏视觉编码器。我们的三阶段框架首先通过从三个视觉基础模型中提取互补的视觉、语义和几何知识，使编码器变得知识密集。然后，它将提取的编码器适应于多帧端到端驾驶，并将时空上下文集成到注册令牌中以进行规划。最后，通过应用注册引导的令牌压缩，使编码器变得令牌稀疏，减少冗余的补丁计算，实现了2.0倍的速度提升，同时改善了规划性能。ConDenseDrive在NAVSIM v1上达到了94.5 PDMS，在NAVSIM v2上达到了90.8 EPDMS，并在HUGSIM的零-shot评估中达到了37.4 HD-Score。大量实验和定性分析表明，视觉编码器设计为可靠和高效的端到端驾驶提供了一条有效的途径。",
+  "arxiv_id": "2610.16908",
+  "arxiv_url": "https://arxiv.org/abs/2610.16908v1",
+  "authors": [
+    "Shengzhen Li",
+    "Yongkang Li",
+    "Hao Gao",
+    "Chenxi Wu",
+    "Yajing Sun",
+    "Lu Hou",
+    "Wenyu Liu",
+    "Xinggang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16908",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.588607+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16908v1",
+  "published_at": "2026-10-12T14:56:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16908v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "深度/几何"
+    ]
+  },
+  "title": "ConDenseDrive: Knowledge-Dense, Token-Sparse Visual Encoder for End-to-End Autonomous Driving",
+  "title_zh": "ConDenseDrive：用于端到端自动驾驶的知识密集型、令牌稀疏视觉编码器",
+  "translation_url": "https://hjfy.top/arxiv/2610.16908"
+}

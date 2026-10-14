@@ -1,0 +1,49 @@
+{
+  "abstract": "Traffic density estimation from camera feeds requires connecting visual perception with short-horizon forecasting. We present a two-stage pipeline that combines vehicle detection and tracking with a spatial logic layer, followed by a temporal estimator. The spatial layer filters bounding boxes by their overlap with a precomputed road mask and extracts per-frame traffic features. LSTM, GRU, and Temporal Convolutional Network (TCN) estimators use these features to predict five future steps from a ten-frame input window. We benchmark ten detector variants from six families on a dataset of 5,716 annotated frames using a single NVIDIA GPU. YOLOv5l achieves the highest mAP@50:95 of 0.524 at 56 frames per second, while YOLOv8n reaches 258 frames per second at 0.487 mAP@50:95; these rates measure detector inference without tracking or spatial filtering. Temporal evaluation on 29,243 held-out windows yields aggregate R-squared values of 0.858 for GRU, 0.856 for LSTM, and 0.840 for TCN. These metrics measure forecasts of detector-derived telemetry and are dominated by direction variance, rather than establishing absolute traffic-density accuracy. No road mask was available for the evaluation stream, limiting validation of the spatial filtering component. A live run on a third camera stream examines forecasting behavior within the complete pipeline. The results characterize detector speed-accuracy trade-offs and the limitations of short-window traffic telemetry forecasting.",
+  "abstract_zh": "从摄像头视频流中进行交通密度估计需要将视觉感知与短期预测相结合。我们提出了一种两阶段的管道，结合了车辆检测与跟踪以及空间逻辑层，随后是时间估计器。空间层通过与预先计算的道路掩膜的重叠情况过滤边界框，并提取每帧的交通特征。长短期记忆网络（LSTM）、门控循环单元（GRU）和时间卷积网络（TCN）估计器利用这些特征从十帧输入窗口中预测未来五个时间步。我们在一个包含5,716帧标注数据集上，使用单个NVIDIA GPU对六个家族的十种检测器变体进行了基准测试。YOLOv5l在56帧每秒的速度下达到了最高的mAP@50:95为0.524，而YOLOv8n在0.487 mAP@50:95的情况下达到了258帧每秒；这些速率是测量检测器推理时不考虑跟踪或空间过滤的结果。对29,243个保留窗口的时间评估得到了GRU的聚合R平方值为0.858，LSTM为0.856，TCN为0.840。这些指标测量了基于检测器推导的遥测的预测，主要受方向方差的影响，而不是建立绝对的交通密度准确性。评估流中没有可用的道路掩膜，限制了空间过滤组件的验证。在第三个摄像头流上的实时运行考察了整个管道内的预测行为。结果表征了检测器的速度-准确性权衡及短窗口交通遥测预测的局限性。",
+  "arxiv_id": "2610.14326",
+  "arxiv_url": "https://arxiv.org/abs/2610.14326v1",
+  "authors": [
+    "Prince Kwabena Appiah Boadu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-14326",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.422716+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.14326v1",
+  "published_at": "2026-10-09T21:07:44Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "road",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.14326v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "本文面向道路摄像头视频，构建了车辆检测与跟踪、道路区域过滤和短时交通状态预测相结合的实时管道。其核心贡献是评估多种车辆检测器的速度—精度权衡，并比较GRU、LSTM和TCN对检测所得交通遥测特征的短期预测能力。该工作并非直接研究自动驾驶车辆的车载感知或驾驶决策，但其车辆感知和交通状态预测方法可为自动驾驶环境理解、交通流预测及路侧感知系统提供参考。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划"
+    ]
+  },
+  "title": "Real-Time Traffic Density Estimation: A Hybrid Computer Vision and Predictive Machine Learning Pipeline",
+  "title_zh": "实时交通密度估计：一种混合计算机视觉与预测机器学习的管道",
+  "translation_url": "https://hjfy.top/arxiv/2610.14326"
+}

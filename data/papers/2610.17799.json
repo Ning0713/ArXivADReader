@@ -1,0 +1,54 @@
+{
+  "abstract": "Online reinforcement learning (RL) enables driving policies to adapt to changing deployment conditions, but requires safe exploration throughout training. Safety filtering alone does not ensure stable policy improvement or reduced dependence on corrections. We propose Safe Online Adaptive Refinement (SOAR-Flow), a framework for safe and stable online fine-tuning of offline-initialized Flow-based driving policies. A control barrier function (CBF)--model predictive control (MPC) filter corrects potentially unsafe actions before execution. To support stable policy updates, we introduce Gaussian-return-aware value calibration based on calibrated Q-learning (Cal-QL), using recorded behavior returns and predicted return variability to smooth conservative critic updates and mitigate policy degradation. Paired corrective learning teaches feasible action adjustments, while an intervention-to-go predictor encourages decisions requiring fewer future corrections. Its predictions also regulate guidance strength, allowing recovery supervision to weaken as predicted dependence decreases. Together with gradually reduced calibration regularization, this supports continued task improvement while preserving hard execution constraints. We analyze conditions for safe execution at control steps and diminishing auxiliary learning influences. We evaluate SOAR-Flow in simulation and on an uncrewed ground vehicle (UGV). The results demonstrate improved driving performance and reduced reliance on safety corrections during protected online fine-tuning. The demonstration video and project overview are available at https://lzqw.github.io/SOAR-Flow/.",
+  "abstract_zh": "在线强化学习（RL）使驾驶策略能够适应不断变化的部署条件，但在训练过程中需要安全探索。仅依靠安全过滤并不能确保稳定的策略改进或减少对修正的依赖。我们提出了安全在线自适应精细化（Safe Online Adaptive Refinement，SOAR-Flow）框架，用于安全且稳定的在线微调离线初始化的基于流的驾驶策略。控制障碍函数（Control Barrier Function，CBF）-模型预测控制（Model Predictive Control，MPC）过滤器在执行前纠正潜在的不安全动作。为了支持稳定的策略更新，我们引入了基于校准Q学习（Calibrated Q-learning，Cal-QL）的高斯回报感知价值校准，利用记录的行为回报和预测的回报变异性来平滑保守的评论家更新并减轻策略退化。配对的修正学习教授可行的动作调整，而干预预测器鼓励减少未来修正需求的决策。其预测还调节指导强度，使得随着预测依赖性的降低，恢复监督的强度减弱。结合逐渐减少的校准正则化，这支持了任务的持续改进，同时保持严格的执行约束。我们分析了控制步骤下安全执行的条件以及辅助学习影响的减弱。我们在仿真和无人地面车辆（Uncrewed Ground Vehicle，UGV）上评估了SOAR-Flow。结果表明，在受保护的在线微调过程中，驾驶性能得到了改善，并且对安全修正的依赖减少。演示视频和项目概述可在 https://lzqw.github.io/SOAR-Flow/ 获取。",
+  "arxiv_id": "2610.17799",
+  "arxiv_url": "https://arxiv.org/abs/2610.17799v1",
+  "authors": [
+    "Zeqiao Li",
+    "Yijing Wang",
+    "Haoyu Wang",
+    "Zheng Li",
+    "Zhiqiang Zuo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17799",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.353454+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17799v1",
+  "published_at": "2026-10-13T06:28:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17799v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "Beyond Safe Execution: Safe Online Reinforcement Learning for Autonomous Driving with Value Calibration and Adaptive Guidance",
+  "title_zh": "超越安全执行：具有价值校准和自适应指导的自主驾驶安全在线强化学习",
+  "translation_url": "https://hjfy.top/arxiv/2610.17799"
+}

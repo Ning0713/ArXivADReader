@@ -1,0 +1,56 @@
+{
+  "abstract": "Trailer sway is a persistent contributor to severe crashes among light passenger vehicles towing trailers, yet it remains largely unaddressed by the autonomous vehicle systems now entering this new era of automation. Improper cargo placement rearward of the trailer axle reduces, and can invert, the tongue load transmitted through the hitch. The resulting loss of vertical load at the tow vehicle's rear axle diminishes the lateral tire force available there and degrades yaw stability of the coupled system, admitting a divergent lateral oscillation of the trailer known as trailer sway. Under adverse combinations of speed and loading, this oscillation can progress to jackknifing, in which the articulation angle diverges rapidly and directional control is lost. This work develops a linear state-space model of the yaw-plane dynamics of a light vehicle-trailer combination, parameterized to expose tongue load as an explicit stability-determining quantity. From this model a linear quadratic regulator is synthesized to suppress articulation-angle divergence. Because consumer trailers carry no sensors, the two trailer states the controller needs, trailer yaw rate and articulation angle, are estimated by a Kalman filter from measurements taken only on the tow vehicle. The controller is then implemented and evaluated in a MuJoCo multibody simulation across a range of longitudinal speeds and tongue-load conditions, including the negative-tongue-load regime. Results show a significant decrease in trailer oscillation when controlling a given vehicle's steering with an LQR using tow-vehicle IMU and LiDAR data. These findings indicate that LQR controlled anti-sway systems are a viable control method for future autonomous vehicles.",
+  "abstract_zh": "拖车摆动是轻型乘用车拖曳拖车时导致严重碰撞的一个持续因素，但在当前进入自动化新纪元的自动驾驶系统中，这一问题仍然未得到充分解决。拖车轴后方不当的货物放置会减少甚至反转通过拖钩传递的舌头负载。随之而来的拖车后轴的垂直负载损失降低了可用的侧向轮胎力，并削弱了耦合系统的偏航稳定性，从而引发了被称为拖车摆动的侧向振荡。在不利的速度和负载组合下，这种振荡可能会发展为折叠（jackknifing），其中关节角度迅速发散，导致方向控制丧失。本研究开发了轻型车辆-拖车组合的偏航平面动力学的线性状态空间模型，参数化以明确舌头负载作为稳定性决定量。从该模型合成了线性二次调节器（LQR），以抑制关节角度的发散。由于消费者拖车不配备传感器，控制器所需的两个拖车状态（拖车偏航率和关节角度）通过卡尔曼滤波器从仅在拖车上测得的拖曳车辆数据中进行估计。然后在MuJoCo多体仿真中实现并评估该控制器，涵盖了多种纵向速度和舌头负载条件，包括负舌头负载状态。结果表明，当使用拖曳车辆的IMU和激光雷达数据通过LQR控制给定车辆的转向时，拖车振荡显著减少。这些发现表明，LQR控制的抗摆动系统是未来自动驾驶车辆的一种可行控制方法。",
+  "arxiv_id": "2610.15747",
+  "arxiv_url": "https://arxiv.org/abs/2610.15747v1",
+  "authors": [
+    "Alec McFadyen",
+    "Pablo Covarrubias De La Torre",
+    "Connor McGovern"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15747",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.283503+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15747v1",
+  "published_at": "2026-10-11T16:29:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15747v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Model-Based Trailer-Sway Suppression for Autonomous Passenger Vehicles",
+  "title_zh": "基于模型的自动驾驶乘用车拖车摆动抑制",
+  "translation_url": "https://hjfy.top/arxiv/2610.15747"
+}

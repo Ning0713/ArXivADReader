@@ -1,0 +1,58 @@
+{
+  "abstract": "Movable agents, such as autonomous vehicles and robots, should be able to autonomously adapt their pre-trained object recognition models to new environments without human annotations. While existing test-time adaptation (TTA) methods address label-free model adaptation, they typically treat test data as independent snapshots, without constructively exploiting a rich, unique source of supervision: the significant variance in prediction quality as an agent observes the same object from different distances and viewpoints. To capitalize on this, we propose \\texttt{MoCaFe}, a model-agnostic and hyperparameter-insensitive paradigm that leverages motion-induced prediction variance for unsupervised adaptation. Specifically, we first develop mobility-calibrated filtering of pseudo-labels, which constructs reliable pseudo-labels by fusing cross-view predictions using inverse-variance weights. The filtered pseudo-labels then guide the selection of ``hard samples'' for effective learning. To further suppress pseudo-label corruption, we introduce \\texttt{p-MoCaFe}, an optional extension that uses a public dataset to assign weighting factors to data samples, yielding an estimator of the clean loss with bounded bias. Extensive experiments on autonomous driving (nuScenes, KITTI) and embodied-agent datasets show that \\texttt{MoCaFe} significantly outperforms state-of-the-art TTA schemes, achieving up to approximately 20% accuracy gain.",
+  "abstract_zh": "可移动的智能体，如自主车辆和机器人，应能够在没有人工标注的情况下，自主地将其预训练的物体识别模型适应于新环境。虽然现有的测试时适应（Test-Time Adaptation, TTA）方法解决了无标签模型适应的问题，但它们通常将测试数据视为独立的快照，而未能有效利用一个丰富且独特的监督源：当智能体从不同距离和视角观察同一物体时，预测质量的显著差异。为了利用这一点，我们提出了 exttt{MoCaFe}，一种与模型无关且对超参数不敏感的范式，利用运动引起的预测方差进行无监督适应。具体而言，我们首先开发了移动性校准的伪标签过滤，通过使用逆方差权重融合跨视图预测来构建可靠的伪标签。过滤后的伪标签随后指导“困难样本”的选择，以实现有效学习。为了进一步抑制伪标签的污染，我们引入了 exttt{p-MoCaFe}，这是一个可选扩展，利用公共数据集为数据样本分配权重因子，从而得到一个具有有界偏差的干净损失估计器。在自主驾驶（nuScenes, KITTI）和具身智能体数据集上进行的广泛实验表明， exttt{MoCaFe}显著优于最先进的TTA方案，准确率提升可达约20%。",
+  "arxiv_id": "2610.15846",
+  "arxiv_url": "https://arxiv.org/abs/2610.15846v1",
+  "authors": [
+    "Yanan Ma",
+    "Yihang Tao",
+    "Zhengru Fang",
+    "Senkang Hu",
+    "Xianhao Chen",
+    "Yuguang Fang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15846",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.513360+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15846v1",
+  "published_at": "2026-10-11T18:58:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "nuscenes",
+      "kitti",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15846v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "多传感器融合"
+    ]
+  },
+  "title": "Mobility Helps Learning: Unsupervised Model Adaptation for Object Recognition via Movement",
+  "title_zh": "移动性促进学习：通过运动进行无监督模型适应的物体识别",
+  "translation_url": "https://hjfy.top/arxiv/2610.15846"
+}

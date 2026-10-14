@@ -1,0 +1,49 @@
+{
+  "abstract": "Depth estimation and Gaussian reconstruction share a need for multi-scale feature processing, yet use different prediction interfaces and training objectives. Whether a decoder's internal computation can be optimized once and reused across these systems remains a structural design question. Search over primitive configurations alone leaves the organization of transformations fixed. To address this gap, we propose GeoBridge, an evolutionary framework for transferable decoder topologies. First, GeoBridge makes stage-internal topology searchable through residual, sequential, and parallel composition of configurable primitives. Shape-preserving composition retains the stage interfaces of a fixed multi-scale scaffold. Second, a functional-tree encoding supports stage-aware crossover and hierarchical mutation, while a gradient sensitivity-alignment proxy evaluates candidates without training. Multi-objective evolution balances this proxy with computation and parameter cost. Third, selected topologies are instantiated and trained in target systems with task-specific prediction interfaces. A single source search takes approximately 12 GPU hours. GeoBridgeNet-A3 achieves the best depth accuracy among four adapted decoder baselines under a common encoder and training protocol on NYU Depth V2 and KITTI. The same topology reaches 27.11 dB PSNR in Gaussian novel-view synthesis on RealEstate10K, and its refined representations support open-vocabulary segmentation on LERF. These results support decoder topology as a reusable design object across the evaluated geometric vision systems. Code and pretrained weights are available at https://github.com/EMI-Group/GeoBridge-NAS.",
+  "abstract_zh": "深度估计和高斯重建都需要多尺度特征处理，但它们使用不同的预测接口和训练目标。解码器的内部计算是否可以一次优化并在这些系统中重复使用仍然是一个结构设计问题。仅对原始配置进行搜索会使变换的组织保持固定。为了解决这一问题，我们提出了GeoBridge，一个用于可迁移解码器拓扑的演化框架。首先，GeoBridge通过可配置原件的残差、顺序和并行组合，使阶段内部拓扑可搜索。保持形状的组合保留了固定多尺度支架的阶段接口。其次，功能树编码支持阶段感知的交叉和层次突变，而梯度敏感性对齐代理在不进行训练的情况下评估候选者。多目标演化在计算和参数成本之间平衡这一代理。第三，选定的拓扑在具有任务特定预测接口的目标系统中实例化并训练。单次源搜索大约需要12个GPU小时。GeoBridgeNet-A3在NYU Depth V2和KITTI的共同编码器和训练协议下，在四个适应解码器基线中实现了最佳深度准确性。同一拓扑在RealEstate10K的高斯新视图合成中达到了27.11 dB PSNR，其精细化表示支持在LERF上的开放词汇分割。这些结果支持解码器拓扑作为在评估的几何视觉系统中可重用的设计对象。代码和预训练权重可在https://github.com/EMI-Group/GeoBridge-NAS获取。",
+  "arxiv_id": "2610.15280",
+  "arxiv_url": "https://arxiv.org/abs/2610.15280v1",
+  "authors": [
+    "Rui Wang",
+    "Haoyu Zhang",
+    "Ran Cheng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15280",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.475570+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15280v1",
+  "published_at": "2026-10-11T02:23:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15280v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "GeoBridge: Evolving Transferable Decoder Topologies for Geometric Vision",
+  "title_zh": "GeoBridge：用于几何视觉的可迁移解码器拓扑的演化",
+  "translation_url": "https://hjfy.top/arxiv/2610.15280"
+}

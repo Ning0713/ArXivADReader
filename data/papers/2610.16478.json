@@ -1,0 +1,55 @@
+{
+  "abstract": "Deep reinforcement learning has shown strong potential for vision-based autonomous driving, but policies trained in simulation often suffer severe performance degradation when deployed in the real world. Existing sim-to-real methods commonly address this gap through image-transfer-based domain adaptation or policy-agnostic domain randomisation. However, the former requires laborious acquisition of target-domain data and is often limited to the deployment domain, whereas the latter introduces unguided perturbations that may not reflect the underlying sim-to-real discrepancy, leading to suboptimal transfer performance. To overcome these limitations, we propose XFD, an explainable artificial intelligence (XAI)-guided Fourier domain generalisation framework for pure-simulation sim-to-real reinforcement learning. The proposed framework extracts explainability attribution maps from simulated observations, and converts these attributions into policy-conditioned Fourier-domain interventions. By perturbing appearance-sensitive spectral components while preserving task-defining spatial structures, XFD constructs robustness-enhancing visual domains entirely within simulation. Subsequently, the proposed robust policy optimisation guides the policy towards attending to task-critical features while suppressing sensitivity to irrelevant visual information. Extensive experiments in simulation and zero-shot real-world deployment demonstrate that XFD consistently improves traveled distance and reward over standard policy and randomly domain-randomised baseline, especially on unseen maps with cluttered backgrounds. Attribution-based analysis further proves that the proposed policy preserves more consistent task-relevant visual evidence across simulation and real-world observations.",
+  "abstract_zh": "深度强化学习在基于视觉的自动驾驶中展现出强大的潜力，但在真实世界中部署时，模拟训练的策略往往会遭遇严重的性能下降。现有的仿真到现实方法通常通过基于图像的领域适应或无策略领域随机化来解决这一差距。然而，前者需要繁琐的目标领域数据获取，并且通常局限于部署领域，而后者则引入了无指导的扰动，这些扰动可能无法反映潜在的仿真到现实差异，从而导致次优的迁移性能。为克服这些限制，我们提出了XFD，一个基于可解释人工智能（XAI）的傅里叶域泛化框架，用于纯模拟的仿真到现实强化学习。该框架从模拟观察中提取可解释性归因图，并将这些归因转换为策略条件下的傅里叶域干预。通过扰动对外观敏感的频谱成分，同时保留任务定义的空间结构，XFD在模拟中构建了完全增强鲁棒性的视觉域。随后，提出的鲁棒策略优化引导策略关注任务关键特征，同时抑制对无关视觉信息的敏感性。在模拟和零样本真实世界部署中的广泛实验表明，XFD在行驶距离和奖励方面始终优于标准策略和随机领域随机化基线，特别是在背景复杂的未见地图上。基于归因的分析进一步证明，所提策略在模拟和真实世界观察中保持了更一致的任务相关视觉证据。",
+  "arxiv_id": "2610.16478",
+  "arxiv_url": "https://arxiv.org/abs/2610.16478v1",
+  "authors": [
+    "Wei Yao",
+    "Chuyao Wang",
+    "Ziwei Wang",
+    "Nabil Aouf"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16478",
+  "categories": [
+    "cs.AI",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.813375+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16478v1",
+  "published_at": "2026-10-12T09:31:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16478v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "XAI-Guided Fourier Domain Generalisation for Pure-Simulation Sim-to-Real Deep Reinforcement Learning",
+  "title_zh": "基于可解释人工智能的傅里叶域泛化用于纯模拟的仿真到现实深度强化学习",
+  "translation_url": "https://hjfy.top/arxiv/2610.16478"
+}

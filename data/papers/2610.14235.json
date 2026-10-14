@@ -1,0 +1,49 @@
+{
+  "abstract": "Information of the tire-road friction coefficient is critical for intelligent vehicle systems, as friction establishes the limits at which the vehicle can be manoeuvred without loss of control. While there is extensive literature on online friction estimation, no previous studies have explored post-processing and mapping friction coefficients along a driven trajectory based on recorded sensor data. Mapped friction information could be shared by connected vehicles, enabling proactive measures in low-friction areas. This paper presents an offline post-processing method, FrictionMap, for mapping friction coefficients from recorded driving data. The method operates on commonly available on-board vehicle sensor information, and requires only a basic vehicle parameter set and a slip threshold as prior knowledge. FrictionMap runs an extended Kalman filter combined with a Rauch-Tung-Striebel smoother to estimate vehicle dynamics. Data points where the friction limit is observable are identified by filtering points based on tire slip. A Gaussian process is fitted to these points to acquire a continuous estimate of the friction coefficient along the trajectory. FrictionMap is validated via a simulation study, and shown to outperform commonly used online friction estimation techniques. The code implementation and the simulation benchmark are released as open-source after paper acceptance to enable further research.",
+  "abstract_zh": "轮胎-路面摩擦系数的信息对于智能车辆系统至关重要，因为摩擦决定了车辆在不失控的情况下可以操控的极限。尽管关于在线摩擦估计的文献广泛，但之前的研究并未探讨基于记录的传感器数据对驱动轨迹上的摩擦系数进行后处理和映射。映射的摩擦信息可以被连接车辆共享，从而在低摩擦区域采取主动措施。本文提出了一种离线后处理方法FrictionMap，用于从记录的驾驶数据中映射摩擦系数。该方法基于常见的车载传感器信息，仅需基本的车辆参数集和滑移阈值作为先验知识。FrictionMap运行扩展卡尔曼滤波器，并结合Rauch-Tung-Striebel平滑器来估计车辆动态。通过基于轮胎滑移过滤点，识别出摩擦极限可观察的数据点。对这些点拟合高斯过程，以获得沿轨迹的摩擦系数的连续估计。FrictionMap通过仿真研究进行验证，并显示出优于常用的在线摩擦估计技术。代码实现和仿真基准将在论文接受后作为开源发布，以促进进一步研究。",
+  "arxiv_id": "2610.14235",
+  "arxiv_url": "https://arxiv.org/abs/2610.14235v1",
+  "authors": [
+    "Risto Ojala"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-14235",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.214501+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.14235v1",
+  "published_at": "2026-10-09T18:51:43Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.14235v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "提出 FrictionMap，通过车载传感器记录、车辆动力学状态估计、轮胎滑移筛选和高斯过程回归，离线生成沿行驶轨迹连续分布的路面摩擦系数地图。该地图可帮助自动驾驶车辆提前识别低附着路段，并可通过车联网在车辆间共享。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "安全/异常",
+      "协同/V2X"
+    ]
+  },
+  "title": "Mapping Tire-Road Friction Coefficients Along Driven Trajectories",
+  "title_zh": "沿驱动轨迹映射轮胎-路面摩擦系数",
+  "translation_url": "https://hjfy.top/arxiv/2610.14235"
+}

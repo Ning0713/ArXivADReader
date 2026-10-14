@@ -1,0 +1,59 @@
+{
+  "abstract": "High-fidelity closed-loop simulation for autonomous driving increasingly relies on dense multi-view 3D reconstruction. While recent feed-forward geometric foundation models have revolutionized per-scene optimization, applying them to continuous, long-horizon driving sequences is computationally intractable due to GPU memory limits and the quadratic complexity of global attention. Existing scaling strategies are fundamentally limited, as causal streaming suffers from compounding scale drift and trajectory deviation, while rigid \"chunk-then-align\" heuristics fragment global context and produce trajectory discontinuities. To address these limitations, we introduce Drive3R, a block-wise streaming geometric foundation model. Its block-wise causal attention resolves the scalability bottleneck of fully bidirectional attention while avoiding the loss of local future context in purely causal streaming. Its confidence-aware re-anchoring further mitigates long-range drift by detecting unreliable streaming states, re-initializing the KV cache, and stitching refreshed segments through SE(3) alignment. Extensive experiments demonstrate that Drive3R establishes a new state-of-the-art on nuScenes, KITTI, and Waymo. Specifically, on nuScenes, it improves over the recent DVGT-2 baseline from 0.1806 to 0.1081 in AbsRel, from 0.6750 to 0.5344 in point-cloud Accuracy, and from 1.5812 to 0.9092 in ATE.",
+  "abstract_zh": "高保真闭环仿真在自主驾驶中越来越依赖于密集的多视角三维重建。尽管近期的前馈几何基础模型已经彻底改变了每个场景的优化，但由于GPU内存限制和全局注意力的平方复杂性，将其应用于连续的长时间驾驶序列在计算上是不可行的。现有的扩展策略存在根本性限制，因为因果流式处理面临着累积的尺度漂移和轨迹偏差，而刚性的“块后对齐”启发式方法则会破坏全局上下文并产生轨迹不连续性。为了解决这些限制，我们提出了Drive3R，一种块级流式几何基础模型。其块级因果注意力解决了完全双向注意力的可扩展性瓶颈，同时避免了在纯因果流式处理中丢失局部未来上下文。其基于置信度的重新锚定进一步通过检测不可靠的流式状态、重新初始化KV缓存以及通过SE(3)对齐拼接更新的段落来减轻长距离漂移。大量实验表明，Drive3R在nuScenes、KITTI和Waymo上建立了新的最先进水平。具体而言，在nuScenes上，它在AbsRel上将近期的DVGT-2基线从0.1806提升至0.1081，在点云精度上从0.6750提升至0.5344，在ATE上从1.5812提升至0.9092。",
+  "arxiv_id": "2610.15112",
+  "arxiv_url": "https://arxiv.org/abs/2610.15112v1",
+  "authors": [
+    "Tianyi Yang",
+    "Haojun Yang",
+    "Jipeng Xiao",
+    "Xuesong Chen",
+    "Shaoshuai Shi",
+    "Li Jiang",
+    "Zhipeng Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15112",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.472358+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15112v1",
+  "published_at": "2026-10-10T18:35:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuscenes",
+      "kitti",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 87
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15112v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "Drive3R: Block-wise Streaming Geometric Foundation Models for Autonomous Driving",
+  "title_zh": "Drive3R：用于自主驾驶的块级流式几何基础模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.15112"
+}

@@ -1,0 +1,62 @@
+{
+  "abstract": "Safe autonomous driving requires more than accurate planning at a single frame: it demands reliable closed-loop execution in dynamic environments. Although end-to-end driving policies have advanced rapidly, the accumulated closed-loop errors, especially in unseen scenarios, can push vehicles into states from which the same policy struggles to recover. We address the challenge by treating closed-loop driving safety as a test-time execution problem. We introduce AutoAgent0, an agentic runtime and harness framework that augments existing driving experts with complementary detection skills, rule-based action verification, and feedback-driven recovery. To address inaccurate scene perception, an independent detection module constructs scene context using complementary perception skills, and a rule-based verifier checks proposed trajectories against this context before execution. When the nominal trajectories are unreliable, the orchestrator of the runtime activates Recovery Planning, where an agentic loop constructs alternative action proposals from action primitives and iteratively refines them using verification feedback. This design combines independent scene assessment with feasibility checks and online recovery, addressing both perception errors and the limited recovery capabilities of individual experts. Evaluations on Fail2Drive and NavSafe-$\\infty$ demonstrate improved closed-loop robustness over single-expert execution in long-tail and safety-critical scenarios. These results demonstrate that runtime supervision can improve closed-loop robustness across multiple driving experts without retraining the underlying policies.",
+  "abstract_zh": "安全的自动驾驶不仅需要在单帧下进行准确的规划，还要求在动态环境中可靠地执行闭环控制。尽管端到端的驾驶策略发展迅速，但在未见场景中积累的闭环误差可能会使车辆陷入同一策略难以恢复的状态。我们通过将闭环驾驶安全视为测试时执行问题来应对这一挑战。我们引入了AutoAgent0，一个智能运行时和框架，旨在增强现有驾驶专家的补充检测能力、基于规则的动作验证和反馈驱动的恢复能力。为了解决场景感知不准确的问题，一个独立的检测模块利用补充感知技能构建场景上下文，而一个基于规则的验证器在执行前检查提议的轨迹与该上下文的一致性。当名义轨迹不可靠时，运行时的协调者会激活恢复规划，其中智能循环从动作原语构建替代动作提议，并利用验证反馈进行迭代优化。该设计结合了独立的场景评估、可行性检查和在线恢复，解决了感知误差和单一专家有限恢复能力的问题。在Fail2Drive和NavSafe-$ ext{∞}$上的评估显示，在长尾和安全关键场景中，闭环的鲁棒性优于单一专家执行。这些结果表明，运行时监督可以在不重新训练基础策略的情况下，提升多个驾驶专家的闭环鲁棒性。",
+  "arxiv_id": "2610.18866",
+  "arxiv_url": "https://arxiv.org/abs/2610.18866v1",
+  "authors": [
+    "Jiageng Liu",
+    "Seth Z. Zhao",
+    "Zewei Zhou",
+    "Alejandro Huerta",
+    "Aidan Bayer-Calvert",
+    "Yuxin Bao",
+    "Haotian Lin",
+    "Robert Spataru",
+    "Zijun Cui",
+    "Yining Hong",
+    "Bolei Zhou",
+    "Jiaqi Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-18866",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.400822+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.18866v1",
+  "published_at": "2026-10-13T17:59:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.18866v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "AutoAgent0: An Agentic Runtime for Safe Closed-Loop Driving",
+  "title_zh": "AutoAgent0：一种安全闭环驾驶的智能运行时",
+  "translation_url": "https://hjfy.top/arxiv/2610.18866"
+}

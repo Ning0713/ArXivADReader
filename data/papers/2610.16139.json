@@ -1,0 +1,52 @@
+{
+  "abstract": "Learned world models for autonomous driving operate in unconstrained latent spaces, yet the physical systems they represent are governed by strict non-holonomic constraints: ground vehicles cannot realize instantaneous pure lateral motion. We study long-horizon latent rollout modeling for autonomous driving and ask whether rollout quality can be improved by assigning a motion-aware geometry to latent transitions, rather than by redesigning the predictor architecture. Starting from an unconstrained latent rollout baseline, we introduce Directional Pullback Regularization (DPR), a training time method that defines a kinematics-aware anisotropic Riemannian metric in decoded state space and pulls it back through the decoder Jacobian to the latent manifold. The resulting latent-space metric assigns higher cost to latent directions that decode to lateral vehicle motion, while preserving the original encoder-dynamics-decoder backbone. This yields a clean three-way comparison among an Unconstrained Latent Rollout model (ULR), an Euclidean Pullback Regularization ablation (EPR), and the full directional method (DPR). We evaluate all models on open-loop ego-motion rollout over a common 10-second test horizon, using training rollout lengths of 1, 3, 5, and 10 steps. Across all four training regimes, DPR achieves lower 10-second final displacement error than both ULR and EPR. The strongest relative accuracy gain appears for models trained with 3-step rollout supervision, where DPR reduces the 10-second final displacement error by approximately 44 percent relative to ULR. The strongest overall control-relevant tradeoff is obtained for longer rollout-trained models, especially at 10 steps, where DPR simultaneously improves displacement error, lateral motion consistency, and forward motion preservation relative to both ULR and EPR.",
+  "abstract_zh": "自主驾驶的学习型世界模型在无约束的潜在空间中运行，但它们所代表的物理系统受到严格的非完整约束的支配：地面车辆无法实现瞬时的纯横向运动。我们研究了自主驾驶的长时间潜在展望建模，并探讨通过为潜在转移分配运动感知几何体，是否可以改善展望质量，而不是重新设计预测器架构。从无约束潜在展望基线出发，我们引入了方向性回拉正则化（Directional Pullback Regularization, DPR），这是一种训练时方法，在解码状态空间中定义了一种运动学感知的各向异性黎曼度量，并通过解码器雅可比矩阵将其回拉到潜在流形。得到的潜在空间度量对解码为横向车辆运动的潜在方向赋予更高的成本，同时保留原有的编码器-动力学-解码器骨架。这使得无约束潜在展望模型（Unconstrained Latent Rollout, ULR）、欧几里得回拉正则化消融（Euclidean Pullback Regularization, EPR）和完整方向性方法（DPR）之间形成了清晰的三方比较。我们在一个共同的10秒测试时间范围内，对所有模型进行了开放环路自我运动展望的评估，使用的训练展望长度为1、3、5和10步。在所有四种训练方案中，DPR的10秒最终位移误差均低于ULR和EPR。相对准确性的最大增益出现在使用3步展望监督训练的模型中，DPR相对于ULR将10秒最终位移误差降低了约44%。对于经过较长展望训练的模型，特别是在10步时，获得了最强的整体控制相关权衡，此时DPR在相对于ULR和EPR的情况下，同时改善了位移误差、横向运动一致性和前向运动保持。",
+  "arxiv_id": "2610.16139",
+  "arxiv_url": "https://arxiv.org/abs/2610.16139v1",
+  "authors": [
+    "Shatadal Mishra",
+    "Ahmadreza Moradipari",
+    "Nejib Ammar"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16139",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.294991+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16139v1",
+  "published_at": "2026-10-12T03:59:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 53
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16139v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Directional Pullback Regularization for Long-Horizon Rollout of Latent World Models in Autonomous Driving",
+  "title_zh": "自主驾驶中潜在世界模型的长时间展望的方向性回拉正则化",
+  "translation_url": "https://hjfy.top/arxiv/2610.16139"
+}

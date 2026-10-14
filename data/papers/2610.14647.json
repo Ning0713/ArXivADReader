@@ -1,0 +1,56 @@
+{
+  "abstract": "Synthetic UAV imagery can expand pre-deployment test evidence when task-specific Real data are scarce, but visual plausibility or semantic label alignment alone does not establish validity for model selection. We study when Synthetic evaluation preserves the model-selection conclusions obtained from Real UAV data through two complementary cases under fixed evaluation protocols. In a requirement-specific road-debris benchmark, four language-conditioned perception systems obtain lower absolute F1 on Synthetic data, yet the point-estimate ordering and top-ranked model are preserved; bootstrap analysis yields no supported pairwise reversal, and size-matched resampling preserves the top-model decision. In contrast, a closed-set stress test on a separately materialized business corpus, using four VisDrone-compatible detectors over eight empirically supported classes, changes the point-estimate top-ranked detector and reverses three of six pairwise point-estimate preference directions. A complementary audit of five UAV business scenarios further reveals substantial Real-Synthetic mismatch in class composition, object density, and target scale, including systematic under-representation of small targets. These results show that Synthetic UAV benchmark trust is conditional: semantic coverage is insufficient, and validity must be established empirically for the task, operating regime, and model panel of interest.",
+  "abstract_zh": "合成无人机图像可以在任务特定的真实数据稀缺时扩展部署前测试证据，但仅凭视觉可信度或语义标签对齐并不能确立模型选择的有效性。我们研究了在固定评估协议下，合成评估何时能够保持从真实无人机数据中获得的模型选择结论。 在一个特定需求的道路碎片基准中，四个语言条件感知系统在合成数据上获得了较低的绝对 F1 分数，但点估计排序和排名最高的模型得以保留；自助法分析未发现支持的成对反转，且大小匹配的重采样保持了顶级模型的决策。相比之下，在一个独立构建的商业语料库上进行的封闭集压力测试，使用四个与 VisDrone 兼容的检测器对八个经验支持的类别进行评估，改变了点估计的排名最高检测器，并反转了六个成对点估计偏好方向中的三个。对五个无人机商业场景的补充审计进一步揭示了类组成、物体密度和目标规模方面的实质性真实-合成不匹配，包括小目标的系统性低估。这些结果表明，合成无人机基准的可信度是有条件的：语义覆盖不足，且有效性必须针对特定任务、操作模式和感兴趣的模型面板进行实证建立。",
+  "arxiv_id": "2610.14647",
+  "arxiv_url": "https://arxiv.org/abs/2610.14647v1",
+  "authors": [
+    "Yuyi Zhi",
+    "Min Du",
+    "Bill Shi",
+    "Guodong Yuan",
+    "Junheng Liang",
+    "Peifan Liao",
+    "Xin Guan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-14647",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.440194+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.14647v1",
+  "published_at": "2026-10-10T06:57:46Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路",
+      "uav",
+      "无人机"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.14647v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "研究评估合成无人机数据能否可靠替代真实数据进行感知模型选择。结果显示，合成基准在道路碎片检测任务中可保持模型排序，但在通用目标检测压力测试中会改变最佳模型及多组模型偏好；真实与合成数据在类别、密度和小目标分布上的差异是关键风险。该工作对自动驾驶中的合成数据验证、道路异常感知及部署前评测具有参考价值。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Can Synthetic UAV Benchmarks Be Trusted? Real-Synthetic Validation for UAV Model Selection",
+  "title_zh": "合成无人机基准是否可信？无人机模型选择的真实-合成验证",
+  "translation_url": "https://hjfy.top/arxiv/2610.14647"
+}

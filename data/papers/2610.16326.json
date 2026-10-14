@@ -1,0 +1,50 @@
+{
+  "abstract": "Multimodal model predictive control (MM-MPC) avoids local minima among moving obstacles by solving one optimal control problem (OCP) per combination of avoidance sides, so its computational cost grows exponentially with the number of decision-critical obstacles. We propose SideNet-MPC, which replaces this enumeration with a mode decision learned by imitating MM-MPC as an expert. A graph neural network is trained to predict the expert's minimum-cost mode, one avoidance side per obstacle. Its edges encode, for each obstacle pair, the gap predicted for the moment the vehicle first reaches either obstacle, so a neighbor that blocks a preferred passage can reverse the proposed side. The expert's selection rule compares its minimum-cost mode with the previously executed mode; SideNet-MPC keeps this rule and substitutes the network proposal for the minimum-cost mode. Hence at most two OCPs are solved per control period, and every applied input still comes from an OCP with control barrier function constraints rather than from the network. In $100$ seed-matched closed-loop Monte Carlo runs of mixed traffic, SideNet-MPC reaches $93\\%$ of the expert's success rate and needs \\SI{18.6}{ms} per control period on a single thread, 48\\% less than the expert's \\SI{35.5}{ms} on sixteen parallel threads. In a controlled gap sweep, its proposed side reverses in the same gap interval as the expert's, whereas proposers without pairwise edges, trained on the same data, never reverse and all deadlock at the blocked gates of a deterministic scene.",
+  "abstract_zh": "多模态模型预测控制（MM-MPC）通过为每种规避侧的组合解决一个最优控制问题（OCP），以避免在移动障碍物之间的局部最小值，因此其计算成本随着决策关键障碍物数量的增加而呈指数增长。我们提出了SideNet-MPC，它用模仿MM-MPC作为专家学习的模式决策替代了这种枚举。一个图神经网络被训练来预测专家的最低成本模式，为每个障碍物提供一个规避侧。其边缘编码了每对障碍物在车辆首次到达任一障碍物时预测的间隙，因此一个阻塞优选通道的邻居可以逆转提议的侧面。专家的选择规则将其最低成本模式与先前执行的模式进行比较；SideNet-MPC保留了这一规则，并用网络提议替代最低成本模式。因此，每个控制周期最多解决两个OCP，并且每个应用的输入仍然来自具有控制障碍函数约束的OCP，而不是来自网络。在$100$个种子匹配的闭环蒙特卡洛混合交通运行中，SideNet-MPC达到了专家成功率的$93 ext{%}$，在单线程上每个控制周期需要 ext{18.6 ms}，比专家在十六个并行线程上的 ext{35.5 ms}减少了48 ext{%}。在一个受控间隙扫描中，其提议的侧面在与专家相同的间隙区间内逆转，而没有成对边缘的提议者在相同数据上训练时从不逆转，并且在确定性场景的阻塞门口全部死锁。",
+  "arxiv_id": "2610.16326",
+  "arxiv_url": "https://arxiv.org/abs/2610.16326v1",
+  "authors": [
+    "Changyu Lee",
+    "Byung-Kwan Lee",
+    "Kanghoon Yoon"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16326",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.304584+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16326v1",
+  "published_at": "2026-10-12T07:44:08Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16326v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "本文面向自动驾驶车辆在动态混合交通中的实时避障规划，提出SideNet-MPC：利用图神经网络模仿多模态MPC专家，快速选择各障碍物的规避方向，并通过少量带控制障碍函数约束的最优控制问题生成安全控制输入。该方法显著降低了多模态MPC的计算开销，同时较好地保持了专家策略的避障成功率和复杂通道决策能力。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "Imitation Learning of Avoidance Modes for Efficient Multimodal Model Predictive Control",
+  "title_zh": "高效多模态模型预测控制的规避模式模仿学习",
+  "translation_url": "https://hjfy.top/arxiv/2610.16326"
+}

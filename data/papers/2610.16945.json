@@ -1,0 +1,54 @@
+{
+  "abstract": "Recent advances in multimodal foundation models, exemplified by GPT-6 Astra, raise the prospect of general-purpose embodied reasoning and planning. Using Internet videos for embodied pretraining calls for reliable physical-scale annotations. Yet visual geometry foundation models often recover scene structure and camera motion without reliable metric scale. We show that uncertain size priors of familiar objects can jointly constrain a reconstruction's shared scale. Building on this insight, we present UniMetric, a universal and training-free metric scale recovery framework for geometry foundation models, without additional sensors or task-specific metric supervision. Specifically, Metric Prior Acquisition elicits object height intervals from a vision-language model. Semantic-Geometric Alignment measures reconstructed object heights along the estimated support-surface normal in each frame and converts the priors into scale intervals. Global Scale Recovery reconciles these intervals through a convex objective, yielding a jointly feasible scale when they overlap and a unique compromise otherwise. The estimated sequence-level scale is applied uniformly to reconstructed points and camera translations. Controlled experiments with real VLM priors show that combining observations improves scale accuracy with exact relative object heights. To evaluate metric accuracy on GFM reconstructions without ground-truth scale alignment, we introduce MetricBench, covering twelve embodied, driving, and roadside subsets with sensor-derived ground truth. Across nine geometry foundation models, UniMetric reduces mean depth Abs Rel, reconstruction Chamfer distance, and trajectory error by 54.2%, 83.8%, and 65.6%, respectively, improving every model on all three tasks at the suite level. We release the UniMetric code and MetricBench data.",
+  "abstract_zh": "近期多模态基础模型的进展，以GPT-6 Astra为例，提升了通用化具身推理和规划的前景。利用互联网视频进行具身预训练需要可靠的物理尺度注释。然而，视觉几何基础模型通常在没有可靠度量尺度的情况下恢复场景结构和相机运动。我们表明，熟悉物体的不确定尺寸先验可以共同约束重建的共享尺度。基于这一见解，我们提出了UniMetric，一个通用且无训练的度量尺度恢复框架，适用于几何基础模型，无需额外传感器或特定任务的度量监督。具体而言，度量先验获取从视觉-语言模型中引出物体高度区间。语义-几何对齐在每帧中沿估计的支撑面法线测量重建物体的高度，并将先验转换为尺度区间。全局尺度恢复通过一个凸目标调和这些区间，当它们重叠时产生一个共同可行的尺度，否则则产生一个唯一的折衷。估计的序列级尺度均匀应用于重建点和相机平移。与真实的视觉语言模型先验进行的受控实验表明，结合观察结果提高了尺度准确性，得到了精确的相对物体高度。为了在没有真实尺度对齐的情况下评估几何基础模型重建的度量准确性，我们引入了MetricBench，涵盖了十二个具身、驾驶和路边子集，并提供传感器导出的真实数据。在九个几何基础模型中，UniMetric分别将平均深度绝对相对误差、重建Chamfer距离和轨迹误差降低了54.2%、83.8%和65.6%，在套件级别上改善了每个模型在所有三个任务上的表现。我们发布了UniMetric代码和MetricBench数据。",
+  "arxiv_id": "2610.16945",
+  "arxiv_url": "https://arxiv.org/abs/2610.16945v1",
+  "authors": [
+    "Lei Yang",
+    "Yuner Zhang",
+    "Ziyang Liu",
+    "Ziying Song",
+    "Kai WU",
+    "Yiyang Gao",
+    "Jiangtao Su",
+    "Yiming Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16945",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.590262+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16945v1",
+  "published_at": "2026-10-12T15:18:47Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "roadside",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16945v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "本文提出一种利用视觉语言模型提供的物体尺寸先验，为单目视觉几何重建恢复真实物理尺度的方法。它可统一校准场景深度、三维点和相机轨迹，并在驾驶及路侧数据上显著改善度量深度、三维重建和轨迹估计。该能力可用于自动驾驶中的单目三维感知、几何理解与视觉定位。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "UniMetric: Universal Metric Scale Recovery for Visual Geometry Foundation Models",
+  "title_zh": "UniMetric：视觉几何基础模型的通用度量尺度恢复",
+  "translation_url": "https://hjfy.top/arxiv/2610.16945"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Feed-forward transformer models have driven remarkable progress in 3D vision,yet their quadratic complexity renders them impractical for long video sequences. Streaming 3D reconstruction addresses this bottleneck by processing frames sequen?tially with constant memory. However, existing recurrent architectures inevitably suffer from progressive degradation over long sequences, as they fail to account for the intrinsic reliability of observations and the accumulated confidence of the historical state, leading to severe error accumulation. To address these issues, we introduce BAT3R, a training-free Bayesian adaptation framework comprising two synergistic modules: State Innovation Gating (SIG) and Bayesian-guided Adaptive State Updating (BASU). SIG acts as a distributional regularizer that anchors state evolution to its geometric initialization, effectively arresting representational drift during long-term inference. Building on this, BASU reformulates state update as a recursive Bayesian inference process within a Kalman filtering framework. By jointly modeling the temporal reliability of observations via information-theoretic gain and spatial relevance via cross-attention maps, BASU achieves an asymmetric spatio-temporal state fusion: well-consolidated historical regions are protected from redundant updates, while genuinely novel scene content is aggressively incor?porated. Extensive experiments on standard benchmarks (7-Scenes, TUM, ScanNet, KITTI, etc.) demonstrate that BAT3R consistently outperforms state-of-the-art online 3D reconstruction methods, with the most significant gains observed on long sequences and complex scenes.",
+  "abstract_zh": "前馈变换器模型在三维视觉领域取得了显著进展，但其二次复杂度使其在长视频序列中不切实际。流式三维重建通过以恒定内存顺序处理帧来解决这一瓶颈。然而，现有的递归架构在长序列中不可避免地遭受逐步退化，因为它们未能考虑观察的内在可靠性和历史状态的累积置信度，导致严重的误差积累。为了解决这些问题，我们提出了BAT3R，一个无训练的贝叶斯适应框架，包含两个协同模块：状态创新门控（State Innovation Gating, SIG）和贝叶斯引导的自适应状态更新（Bayesian-guided Adaptive State Updating, BASU）。SIG作为一个分布正则化器，将状态演变锚定到其几何初始化，有效地阻止了长期推理过程中的表示漂移。在此基础上，BASU将状态更新重新表述为卡尔曼滤波框架内的递归贝叶斯推理过程。通过信息论增益联合建模观察的时间可靠性和通过交叉注意力图建模空间相关性，BASU实现了不对称的时空状态融合：良好巩固的历史区域受到保护，避免冗余更新，而真正的新场景内容则被积极整合。在标准基准（7-Scenes, TUM, ScanNet, KITTI等）上的大量实验表明，BAT3R在在线三维重建方法中始终优于最先进的技术，尤其在长序列和复杂场景中表现出显著的提升。",
+  "arxiv_id": "2610.16330",
+  "arxiv_url": "https://arxiv.org/abs/2610.16330v1",
+  "authors": [
+    "Lijian Li",
+    "Yuanpeng He",
+    "Yudian Zheng",
+    "Chung-ju Huang",
+    "Linyu Li",
+    "Dongming Jin",
+    "Wenpin Jiao",
+    "Zhi Jin",
+    "Chi-Man Pun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-16330",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.546293+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.16330v1",
+  "published_at": "2026-10-12T07:47:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.16330v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "多传感器融合",
+      "仿真/数据"
+    ]
+  },
+  "title": "BAT3R: Robust Online 3D Reconstruction with Bayesian Adaptive State Updates",
+  "title_zh": "BAT3R：基于贝叶斯自适应状态更新的鲁棒在线三维重建",
+  "translation_url": "https://hjfy.top/arxiv/2610.16330"
+}

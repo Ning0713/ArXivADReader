@@ -1,0 +1,54 @@
+{
+  "abstract": "Collision rate remains a dominant metric for evaluating autonomous driving trajectory safety, but its binary nature obscures substantial safety differences among collision-free trajectories. Existing surrogate-safety metrics provide finer-grained assessments, yet often trade off physical interpretability against adaptivity to interaction context. We introduce FutureRisk, a continuous metric that quantifies the latent future risk of a trajectory by how closely and persistently its realized interactions approach unsafe states. At its core, our Context-Adaptive Risk Model (CARM) combines a context-dependent safety-time distribution with an independently supervised critical-event-time distribution. Its safety criterion is bounded around a closed-form physical prior, while a bounded residual provides additional adaptation without abandoning this physical anchor. Experiments on DeepAccident and Bench2Drive show that FutureRisk achieves stronger agreement with native collision labels than existing surrogate-safety measures, discriminates risk among collision-free trajectories, and transfers zero-shot across datasets. Comparisons across four planners further show that FutureRisk reveals safety differences hidden by binary collision outcomes. Together, these results establish FutureRisk as a fine-grained, interpretable, and context-adaptive metric for trajectory safety evaluation. Code is available at https://github.com/Xuewen2025/safety-evaluation.",
+  "abstract_zh": "碰撞率仍然是评估自动驾驶轨迹安全性的主要指标，但其二元性质掩盖了无碰撞轨迹之间的实质性安全差异。现有的替代安全指标提供了更细致的评估，但往往在物理可解释性与适应交互上下文之间存在权衡。我们引入了FutureRisk，这是一种连续指标，通过其实现的交互如何紧密且持续地接近不安全状态来量化轨迹的潜在未来风险。我们的上下文自适应风险模型（Context-Adaptive Risk Model, CARM）核心结合了上下文依赖的安全时间分布与独立监督的关键事件时间分布。其安全标准围绕一个封闭形式的物理先验进行界定，而一个有界的残差则提供了额外的适应性，而不放弃这一物理锚点。在DeepAccident和Bench2Drive上的实验表明，FutureRisk在与原生碰撞标签的一致性上优于现有的替代安全措施，能够区分无碰撞轨迹之间的风险，并在数据集间实现零样本迁移。对四个规划器的比较进一步表明，FutureRisk揭示了二元碰撞结果所隐藏的安全差异。这些结果共同确立了FutureRisk作为一种细致、可解释且上下文自适应的轨迹安全评估指标。代码可在 https://github.com/Xuewen2025/safety-evaluation 获取。",
+  "arxiv_id": "2610.17806",
+  "arxiv_url": "https://arxiv.org/abs/2610.17806v1",
+  "authors": [
+    "Xuewen Luo",
+    "Linlian Jiang",
+    "Bo Yu",
+    "Fan Ding",
+    "Xinxin Zuo",
+    "Yang Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17806",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.355131+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17806v1",
+  "published_at": "2026-10-13T06:34:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17806v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Which Trajectory Is Safer? Combining Rule and Learning for Safety Evaluation",
+  "title_zh": "哪种轨迹更安全？结合规则与学习进行安全评估",
+  "translation_url": "https://hjfy.top/arxiv/2610.17806"
+}

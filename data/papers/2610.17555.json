@@ -1,0 +1,46 @@
+{
+  "abstract": "We propose ATOM (Abstract Transition and Option Modeling), a hierarchical navigation framework that combines higher-level graph planning with reusable lower-level option policies for efficient repeated navigation in large-scale 3D environments represented by hierarchical structures such as 3D scene graphs (3DSGs). ATOM operates on a hierarchical graph representation, implemented using, for instance, the Rooms and Places layers of a 3DSG, where each directed abstract transition is associated with a navigation option. For each transition, ATOM computes and stores a reusable option policy along with its state-dependent cost-to-go. Across repeated navigation tasks, ATOM maintains a smoothed empirical distribution over option initiation states and uses it to progressively refine the corresponding abstract transition cost. Ablation studies show that ATOM reduces cumulative repeated-planning time by 97.5% relative to a monolithic MDP baseline while maintaining trajectories within approximately 7% of a Global Places A* shortest-path reference. Experience-informed refinement further reduces abstract transition-cost estimation error by 10.3%. Physical experiments validate ATOM on an F1Tenth vehicle, successfully completing all five navigation queries with 43% of inter-region option executions reusing previously generated solutions.",
+  "abstract_zh": "我们提出了ATOM（抽象转移与选项建模），这是一个分层导航框架，结合了高层次图规划与可重用的低层次选项策略，以实现对大型3D环境的高效重复导航，这些环境通过层次结构如3D场景图（3DSG）表示。ATOM在层次图表示上运行，例如使用3DSG的房间和地点层，其中每个有向抽象转移都与一个导航选项相关联。对于每个转移，ATOM计算并存储一个可重用的选项策略及其状态依赖的成本。通过重复导航任务，ATOM维持一个平滑的选项启动状态的经验分布，并利用它逐步优化相应的抽象转移成本。消融研究表明，ATOM相对于单一MDP基线将累计重复规划时间减少了97.5%，同时保持轨迹与全球地点A*最短路径参考的偏差约为7%。基于经验的优化进一步将抽象转移成本估计误差降低了10.3%。物理实验在F1Tenth车辆上验证了ATOM，成功完成了所有五个导航查询，其中43%的区域间选项执行重用了先前生成的解决方案。",
+  "arxiv_id": "2610.17555",
+  "arxiv_url": "https://arxiv.org/abs/2610.17555v1",
+  "authors": [
+    "Changxuan Yao",
+    "Panagiotis Tsiotras"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-17555",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.340372+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.17555v1",
+  "published_at": "2026-10-13T01:24:02Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.17555v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "提出一种用于自动驾驶小型车辆重复导航的分层规划方法，利用三维场景图进行高层路径规划，并复用低层导航策略。该方法通过历史执行经验更新转移代价，显著减少重复规划时间，并在 F1Tenth 实车平台上得到验证。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位"
+    ]
+  },
+  "title": "ATOM: Abstract Transition and Option Modeling - Experience-Informed Hierarchical Navigation",
+  "title_zh": "ATOM：抽象转移与选项建模 - 基于经验的分层导航",
+  "translation_url": "https://hjfy.top/arxiv/2610.17555"
+}

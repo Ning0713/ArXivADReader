@@ -1,0 +1,55 @@
+{
+  "abstract": "Efficient perception is a prerequisite for the small, low-power devices targeted by robotics, mixed reality, autonomous driving, and drone applications, all of which rely on Simultaneous Localization and Mapping (SLAM) to estimate their motion within their surroundings. Learning-based SLAM systems achieve state-of-the-art accuracy but are demanding in compute, whereas classical geometry-based methods retain a strong efficiency advantage with little to no loss in accuracy. In this work we present RootSLAM, a fully-featured visual-inertial SLAM system for multi-camera setups built on Basalt. RootSLAM achieves accuracy competitive with the state of the art while running up to 20 times faster, facilitating the deployment of perception systems in resource constrained environments. We adapt the square-root bundle adjustment formulation from structure from motion into the multi-camera visual-inertial SLAM setting through a novel reformulation that leverages the system's pose-graph, letting the global optimizer run in single-precision floating point, thus doubling its performance. We provide a thorough benchmark against the state of the art together with an ablation study of our contributions. Our new implementation, including its map management and loop detection module, pose-graph optimizer, and global mapping components, will be open-sourced.",
+  "abstract_zh": "高效的感知是机器人、混合现实、自动驾驶和无人机应用等小型低功耗设备的前提，这些应用依赖于同时定位与地图构建（SLAM）来估计其在环境中的运动。基于学习的SLAM系统实现了最先进的精度，但对计算资源的需求较高，而经典的基于几何的方法则在效率上保持了显著优势，并且几乎没有精度损失。在本研究中，我们提出了RootSLAM，一个基于Basalt构建的多摄像头设置的全功能视觉惯性SLAM系统。RootSLAM在精度上与最先进的技术相媲美，同时运行速度快达20倍，从而促进了在资源受限环境中感知系统的部署。我们通过一种新颖的重构方法，将结构光束调整中的平方根束调整公式适应于多摄像头视觉惯性SLAM设置，利用系统的位姿图，使得全局优化器能够以单精度浮点数运行，从而将其性能翻倍。我们提供了与最先进技术的全面基准测试，以及对我们贡献的消融研究。我们的新实现，包括地图管理和回环检测模块、位姿图优化器和全局映射组件，将开源发布。",
+  "arxiv_id": "2610.15157",
+  "arxiv_url": "https://arxiv.org/abs/2610.15157v1",
+  "authors": [
+    "Tomás Santucci",
+    "Mateo de Mayo",
+    "Daniel Cremers",
+    "Taihú Pire"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-15157",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.261312+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.15157v1",
+  "published_at": "2026-10-10T20:15:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "drone",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.15157v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "RootSLAM: Square Root Bundle Adjustment for Visual-Inertial SLAM",
+  "title_zh": "RootSLAM：用于视觉惯性SLAM的平方根束调整",
+  "translation_url": "https://hjfy.top/arxiv/2610.15157"
+}

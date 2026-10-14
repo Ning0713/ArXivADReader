@@ -1,0 +1,56 @@
+{
+  "abstract": "Quadruped robots performing outdoor deliveries must interpret complex scenes, anticipate changes, and navigate in socially compliant ways. Robot demonstrations are costly to collect at the scale needed for generalization. Egocentric web videos offer abundant human navigation experience, but differences in viewpoint and motion make this experience difficult to transfer to robots. We introduce DR-VLA, a Mixture-of-Transformers framework that transfers human navigation experience through a domain-invariant scene representation (DISR). The framework combines vision-language understanding and latent world modeling with a flow-matching action expert. We introduce EgoLynx, comprising 10,000 hours of curated egocentric web video (EgoLynx-Web) and 2,000 clips of teleoperated robot navigation collected during real-world deliveries (EgoLynx-Robot). We pretrain the understanding and world experts on EgoLynx-Web without action labels, then adapt the model to robot observations and train the action expert on EgoLynx-Robot to predict executable trajectories. We also propose the Quadruped Navigation Score (QNS), a pseudo-closed-loop metric combining safety, instruction compliance, comfort, and progress. On the held-out EgoLynx-Robot test split, DR-VLA improves QNS by approximately 5% and reduces open-loop final heading error (FHE) by 14.6%, each relative to the best competing result for that metric. Ablations show that web-video pretraining improves generalization and that the model's key components contribute to performance. As a future-prediction target, DISR outperforms five generic visual representations and yields performance close to task-specific 3D perception without dedicated geometric labels or point clouds for target construction. Trained separately on NAVSIM v1 without web pretraining, DR-VLA achieves 92.1 PDMS, suggesting that the framework also applies to autonomous driving.",
+  "abstract_zh": "进行户外配送的四足机器人必须解读复杂场景、预测变化，并以符合社会规范的方式进行导航。收集机器人演示所需的规模成本高昂，而自我中心的网络视频提供了丰富的人类导航经验，但视角和运动的差异使得这一经验难以转移到机器人上。我们提出了DR-VLA，一个通过领域不变场景表示（DISR）转移人类导航经验的混合变换器框架。该框架结合了视觉-语言理解和潜在世界建模，并配备了流匹配动作专家。我们引入了EgoLynx，包含10,000小时精心策划的自我中心网络视频（EgoLynx-Web）和2,000个在真实配送过程中收集的遥控机器人导航片段（EgoLynx-Robot）。我们在没有动作标签的情况下对EgoLynx-Web上的理解和世界专家进行预训练，然后将模型适应于机器人观察，并在EgoLynx-Robot上训练动作专家以预测可执行轨迹。我们还提出了四足导航评分（QNS），这是一个伪闭环指标，结合了安全性、指令合规性、舒适性和进展。在保留的EgoLynx-Robot测试集上，DR-VLA将QNS提高了约5%，并将开放环最终航向误差（FHE）降低了14.6%，相对于该指标的最佳竞争结果。消融实验表明，网络视频预训练提高了泛化能力，并且模型的关键组件对性能有贡献。作为未来预测目标，DISR的表现优于五种通用视觉表示，并且在没有专用几何标签或点云用于目标构建的情况下，其性能接近任务特定的3D感知。在没有网络预训练的情况下，单独在NAVSIM v1上训练的DR-VLA达到了92.1 PDMS，表明该框架也适用于自动驾驶。",
+  "arxiv_id": "2610.18373",
+  "arxiv_url": "https://arxiv.org/abs/2610.18373v1",
+  "authors": [
+    "Jun Tian",
+    "Yingjie Niu",
+    "Ruo Chen",
+    "Hongyi Lin",
+    "Chao Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-18373",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.377901+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.18373v1",
+  "published_at": "2026-10-13T13:28:59Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "点云",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.18373v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "VLM/VLA"
+    ]
+  },
+  "title": "DR-VLA: Learning Human-Like Quadruped Navigation from Egocentric Web Videos via Domain-Invariant Scene Representations",
+  "title_zh": "DR-VLA：通过领域不变场景表示从自我中心网络视频学习类人四足动物导航",
+  "translation_url": "https://hjfy.top/arxiv/2610.18373"
+}

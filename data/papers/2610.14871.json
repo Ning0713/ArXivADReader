@@ -1,0 +1,60 @@
+{
+  "abstract": "By predicting future states, latent world models provide rich self-supervision for end-to-end driving, but often inherit dense features from pretrained visual encoders as their world-state interface. This creates a mismatch: visual pretraining produces information-rich, spatially dense features, but their adaptation for motion-conditioned world modeling and planning is deferred to downstream training. The dense grid also makes future prediction more computationally expensive as visual resolution increases. We therefore argue that video pretraining should directly learn state representations suited to downstream world modeling and planning, rather than relying on downstream training to adapt inherited visual features. We propose ***MORE***, a V-JEPA framework that learns **M**otion-**O**riented **RE**gisters during video pretraining as a shared state interface for driving world models and planning. MORE injects temporally aligned ego motion into a small set of registers and uses them as the sole context for masked patch prediction, channeling dense patch-level supervision through a compact state bottleneck. A complementary blockwise register-masking objective further shapes predictive structure in the register space. During downstream training, the same register space defines the future states predicted by the world model and provides shared scene memory for trajectory generation and scoring. On NAVSIM-v2, MORE outperforms the state of the art by 1.6 in EPDMS, while achieving superior efficiency with only 1/10 the inference latency of DriveLaW. These results support learning the state interface for world modeling and planning directly during video pretraining.",
+  "abstract_zh": "通过预测未来状态，潜在的世界模型为端到端驾驶提供了丰富的自我监督，但通常将预训练视觉编码器的密集特征作为其世界状态接口。这造成了不匹配：视觉预训练产生了信息丰富、空间密集的特征，但其在运动条件下的世界建模和规划的适应性则推迟到下游训练。因此，我们认为视频预训练应直接学习适合下游世界建模和规划的状态表示，而不是依赖下游训练来适应继承的视觉特征。我们提出了***MORE***，一个V-JEPA框架，在视频预训练期间学习**M**otion-**O**riented **RE**gisters，作为驱动世界模型和规划的共享状态接口。MORE将时间对齐的自我运动注入一小组寄存器，并将其作为掩蔽补丁预测的唯一上下文，通过紧凑的状态瓶颈引导密集的补丁级监督。一个互补的块状寄存器掩蔽目标进一步塑造了寄存器空间中的预测结构。在下游训练期间，相同的寄存器空间定义了世界模型预测的未来状态，并为轨迹生成和评分提供共享场景记忆。在NAVSIM-v2上，MORE在EPDMS上超越了现有技术1.6的表现，同时以仅为DriveLaW的1/10的推理延迟实现了更高的效率。这些结果支持在视频预训练期间直接学习用于世界建模和规划的状态接口。",
+  "arxiv_id": "2610.14871",
+  "arxiv_url": "https://arxiv.org/abs/2610.14871v1",
+  "authors": [
+    "Yingdong Gu",
+    "Haoyu Wang",
+    "Shaocheng Yan",
+    "Zhenjun Zhao",
+    "Hao Han",
+    "Pengcheng Shi",
+    "Xianfei Li",
+    "Qinghua Tan",
+    "Wenlong Liao",
+    "Tao He",
+    "Jiayuan Li",
+    "Pai Peng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-14871",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.457426+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.14871v1",
+  "published_at": "2026-10-10T12:43:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 42
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.14871v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "MORE: Learning Motion-Oriented Registers for Driving World Models and Planning",
+  "title_zh": "MORE：学习面向运动的寄存器以驱动世界模型和规划",
+  "translation_url": "https://hjfy.top/arxiv/2610.14871"
+}

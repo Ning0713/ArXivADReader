@@ -1,0 +1,55 @@
+{
+  "abstract": "Roadside 4D occupancy forecasting predicts future semantic occupancy in a fixed infrastructure coordinate system. Roadside scenes are globally structured yet locally evolving, requiring comprehensive scene-level context while precisely modeling sparse localized motion. However, existing forecasting paradigms struggle to tackle both requirements. To address this limitation, we propose InfraWorld, a world model formulating roadside occupancy forecasting as selective state evolution. InfraWorld maintains a dense BEV state for the complete scene and persistent motion queries for moving regions, assigning complementary states to global context and local dynamics. Specifically, we propose Dynamic Query Initiation (DQI) to initialize queries in regions supported by motion in the observed history. During rollout, the dense state is updated through Long--Short Temporal Fusion (LST), which combines short-term adjacent-frame continuity with long-term motion trends to preserve stable context while capturing scene evolution. Motion-Aware Query Injection (MAQI) then refines the queries and injects confidence-weighted query information into corresponding BEV tokens, enabling targeted dynamic updates without perturbing global context. Together, InfraWorld concentrates predictive capacity on evolving traffic regions. Extensive experiments on the InfraOcc and Occ3D--nus datasets demonstrate that InfraWorld achieves state-of-the-art performance for roadside 4D occupancy forecasting while retaining its effectiveness under ego-centric settings. Code will be released.",
+  "abstract_zh": "路边4D占用预测在固定基础设施坐标系统中预测未来的语义占用。路边场景在全球上是结构化的，但在局部上是不断演变的，这要求在精确建模稀疏局部运动的同时，提供全面的场景级上下文。然而，现有的预测范式在满足这两个要求方面存在困难。为了解决这一局限性，我们提出了InfraWorld，一个将路边占用预测表述为选择性状态演变的世界模型。InfraWorld为完整场景维护一个密集的鸟瞰图（BEV）状态，并为运动区域保持持久的运动查询，将互补状态分配给全球上下文和局部动态。具体而言，我们提出了动态查询初始化（Dynamic Query Initiation, DQI），以在历史观察中支持运动的区域初始化查询。在推理过程中，通过长短期时间融合（Long-Short Temporal Fusion, LST）更新密集状态，该方法结合了短期相邻帧的连续性和长期运动趋势，以保持稳定的上下文，同时捕捉场景演变。运动感知查询注入（Motion-Aware Query Injection, MAQI）则进一步细化查询，并将置信加权的查询信息注入相应的BEV标记，从而实现针对性的动态更新，而不扰动全球上下文。总的来说，InfraWorld将预测能力集中于不断演变的交通区域。在InfraOcc和Occ3D-nus数据集上的大量实验表明，InfraWorld在路边4D占用预测方面实现了最先进的性能，同时在自我中心设置下保持其有效性。代码将会发布。",
+  "arxiv_id": "2610.14544",
+  "arxiv_url": "https://arxiv.org/abs/2610.14544v1",
+  "authors": [
+    "Songkai Wang",
+    "Xiaokai Bai",
+    "Lei Yang",
+    "Hui-liang Shen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-14#paper-2610-14544",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-14T09:52:32.432682+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.14544v1",
+  "published_at": "2026-10-10T04:00:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "roadside",
+      "交通",
+      "bev",
+      "occupancy",
+      "world model",
+      "占用预测"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 31
+  },
+  "seen_dates": [
+    "2026-10-14"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.14544v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-14"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "InfraWorld: Motion-Aware World Modeling for Roadside 4D Occupancy Forecasting",
+  "title_zh": "InfraWorld：基于运动感知的路边4D占用预测世界建模",
+  "translation_url": "https://hjfy.top/arxiv/2610.14544"
+}
