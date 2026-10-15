@@ -1,0 +1,52 @@
+{
+  "abstract": "Surface navigation on the Moon is subject to extreme illumination contrast and deployment-time perceptual disturbances. While modular navigation pipelines have long supported planetary rover navigation, robustness is compromised by measurement errors that propagate through hand-engineered components. End-to-end learned policies are an alternative approach to navigation, which maps observations directly to control actions without intermediate components. Vision-language-action models, in particular, have driven significant breakthroughs in robotics and autonomous vehicle research. By leveraging internet-scale vision-language pretraining, these models can be exploited for their commonsense reasoning and visual understanding to provide robust generalization with limited task-specific data. However, their applicability and performance have yet to be characterized for lunar surface operations. In this study, we design a vision-language-action policy for autonomous lunar rover docking and characterize its performance relative to a modular navigation pipeline. We develop a scalable training framework that generates safety-aware expert demonstrations in a high-fidelity lunar simulation environment. In closed-loop evaluations, our policy performs competitively relative to the modular baseline under perceptual disturbances unseen during training. To address the tradeoff between compute consumption and closed-loop safety, the policy adapts its execution horizon by determining how far the rover may safely travel in open loop. Adaptive-horizon execution reduces inference frequency while limiting hazard-contact rates relative to fixed horizons in the evaluated scenarios.",
+  "abstract_zh": "月球表面的导航受到极端光照对比和部署时感知干扰的影响。尽管模块化导航流程长期以来支持行星探测器的导航，但由于测量误差通过手工设计的组件传播，鲁棒性受到影响。端到端学习策略是一种替代导航的方法，它将观察结果直接映射到控制动作，而无需中间组件。特别是，视觉-语言-动作模型在机器人技术和自主车辆研究中推动了显著的突破。通过利用互联网规模的视觉-语言预训练，这些模型可以利用其常识推理和视觉理解能力，在有限的任务特定数据下提供鲁棒的泛化。然而，它们在月球表面操作中的适用性和性能尚未得到充分表征。在本研究中，我们设计了一种用于自主月球探测器对接的视觉-语言-动作策略，并相对于模块化导航流程表征其性能。我们开发了一个可扩展的训练框架，在高保真月球仿真环境中生成安全意识的专家演示。在闭环评估中，我们的策略在未见过的感知干扰下相对于模块化基线表现出竞争力。为了应对计算消耗与闭环安全之间的权衡，该策略通过确定探测器在开放环中可以安全行驶的距离来调整其执行时间范围。自适应时间范围执行在评估场景中减少了推理频率，同时限制了与固定时间范围相比的危险接触率。",
+  "arxiv_id": "2610.19224",
+  "arxiv_url": "https://arxiv.org/abs/2610.19224v1",
+  "authors": [
+    "Sitan Huang",
+    "Grace Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-15#paper-2610-19224",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-15T09:33:31.513697+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.19224v1",
+  "published_at": "2026-10-13T21:43:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 52
+  },
+  "seen_dates": [
+    "2026-10-15"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.19224v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-15"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "VLM/VLA",
+      "仿真/数据"
+    ]
+  },
+  "title": "End-to-End Vision-Language-Action Policies for Autonomous Lunar Rover Docking",
+  "title_zh": "端到端视觉-语言-动作策略用于自主月球探测器对接",
+  "translation_url": "https://hjfy.top/arxiv/2610.19224"
+}

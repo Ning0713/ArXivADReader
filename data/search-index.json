@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-10-14T09:55:35.205492+00:00",
+  "generated_at": "2026-10-15T09:33:31.970688+00:00",
   "items": [
+    {
+      "abstract": "Surface navigation on the Moon is subject to extreme illumination contrast and deployment-time perceptual disturbances. While modular navigation pipelines have long supported planetary rover navigation, robustness is compromised by measurement errors that propagate through hand-engineered components. End-to-end learned policies are an alternative approach to navigation, which maps observations directly to control actions without intermediate components. Vision-language-action models, in particular, have driven significant breakthroughs in robotics and autonomous vehicle research. By leveraging internet-scale vision-language pretraining, these models can be exploited for their commonsense reasoning and visual understanding to provide robust generalization with limited task-specific data. However, their applicability and performance have yet to be characterized for lunar surface operations. In this study, we design a vision-language-action policy for autonomous lunar rover docking and characterize its performance relative to a modular navigation pipeline. We develop a scalable training framework that generates safety-aware expert demonstrations in a high-fidelity lunar simulation environment. In closed-loop evaluations, our policy performs competitively relative to the modular baseline under perceptual disturbances unseen during training. To address the tradeoff between compute consumption and closed-loop safety, the policy adapts its execution horizon by determining how far the rover may safely travel in open loop. Adaptive-horizon execution reduces inference frequency while limiting hazard-contact rates relative to fixed horizons in the evaluated scenarios.",
+      "abstract_zh": "月球表面的导航受到极端光照对比和部署时感知干扰的影响。尽管模块化导航流程长期以来支持行星探测器的导航，但由于测量误差通过手工设计的组件传播，鲁棒性受到影响。端到端学习策略是一种替代导航的方法，它将观察结果直接映射到控制动作，而无需中间组件。特别是，视觉-语言-动作模型在机器人技术和自主车辆研究中推动了显著的突破。通过利用互联网规模的视觉-语言预训练，这些模型可以利用其常识推理和视觉理解能力，在有限的任务特定数据下提供鲁棒的泛化。然而，它们在月球表面操作中的适用性和性能尚未得到充分表征。在本研究中，我们设计了一种用于自主月球探测器对接的视觉-语言-动作策略，并相对于模块化导航流程表征其性能。我们开发了一个可扩展的训练框架，在高保真月球仿真环境中生成安全意识的专家演示。在闭环评估中，我们的策略在未见过的感知干扰下相对于模块化基线表现出竞争力。为了应对计算消耗与闭环安全之间的权衡，该策略通过确定探测器在开放环中可以安全行驶的距离来调整其执行时间范围。自适应时间范围执行在评估场景中减少了推理频率，同时限制了与固定时间范围相比的危险接触率。",
+      "authors": [
+        "Sitan Huang",
+        "Grace Gao"
+      ],
+      "date": "2026-10-15",
+      "id": "2610.19224",
+      "tags": [
+        "端到端驾驶",
+        "VLM/VLA",
+        "仿真/数据"
+      ],
+      "title": "End-to-End Vision-Language-Action Policies for Autonomous Lunar Rover Docking",
+      "title_zh": "端到端视觉-语言-动作策略用于自主月球探测器对接",
+      "url": "/daily/2026-10-15/#paper-2610-19224"
+    },
     {
       "abstract": "Safe autonomous driving requires more than accurate planning at a single frame: it demands reliable closed-loop execution in dynamic environments. Although end-to-end driving policies have advanced rapidly, the accumulated closed-loop errors, especially in unseen scenarios, can push vehicles into states from which the same policy struggles to recover. We address the challenge by treating closed-loop driving safety as a test-time execution problem. We introduce AutoAgent0, an agentic runtime and harness framework that augments existing driving experts with complementary detection skills, rule-based action verification, and feedback-driven recovery. To address inaccurate scene perception, an independent detection module constructs scene context using complementary perception skills, and a rule-based verifier checks proposed trajectories against this context before execution. When the nominal trajectories are unreliable, the orchestrator of the runtime activates Recovery Planning, where an agentic loop constructs alternative action proposals from action primitives and iteratively refines them using verification feedback. This design combines independent scene assessment with feasibility checks and online recovery, addressing both perception errors and the limited recovery capabilities of individual experts. Evaluations on Fail2Drive and NavSafe-$\\infty$ demonstrate improved closed-loop robustness over single-expert execution in long-tail and safety-critical scenarios. These results demonstrate that runtime supervision can improve closed-loop robustness across multiple driving experts without retraining the underlying policies.",
       "abstract_zh": "安全的自动驾驶不仅需要在单帧下进行准确的规划，还要求在动态环境中可靠地执行闭环控制。尽管端到端的驾驶策略发展迅速，但在未见场景中积累的闭环误差可能会使车辆陷入同一策略难以恢复的状态。我们通过将闭环驾驶安全视为测试时执行问题来应对这一挑战。我们引入了AutoAgent0，一个智能运行时和框架，旨在增强现有驾驶专家的补充检测能力、基于规则的动作验证和反馈驱动的恢复能力。为了解决场景感知不准确的问题，一个独立的检测模块利用补充感知技能构建场景上下文，而一个基于规则的验证器在执行前检查提议的轨迹与该上下文的一致性。当名义轨迹不可靠时，运行时的协调者会激活恢复规划，其中智能循环从动作原语构建替代动作提议，并利用验证反馈进行迭代优化。该设计结合了独立的场景评估、可行性检查和在线恢复，解决了感知误差和单一专家有限恢复能力的问题。在Fail2Drive和NavSafe-$ ext{∞}$上的评估显示，在长尾和安全关键场景中，闭环的鲁棒性优于单一专家执行。这些结果表明，运行时监督可以在不重新训练基础策略的情况下，提升多个驾驶专家的闭环鲁棒性。",
