@@ -1,0 +1,57 @@
+{
+  "abstract": "Autonomous driving planning requires selecting trajectories that remain safe, rule-compliant, and comfortable under complex multi-agent interactions, yet robust closed-loop decision making in planning-critical scenes remains challenging. Existing diffusion- and RL-based planners often rely on generic rewards and use relational structure mainly for representation, limiting how planning-critical rollouts shape policy improvement. We present GRID-Planner, a graph--reward integrated diffusion planning framework that aligns generative planning with structured relational signals. Specifically, GRID-Planner combines graph-aware importance weighting, a time-indexed relational reward surrogate, and an advantage-weighted diffusion objective with on-policy self-distillation, forming a rollout-return-advantage-update loop without explicit likelihoods. Experiments on nuPlan and interPlan show that, compared with the diffusion-only baseline, GRID-Planner reduces collision rate, lane deviation, and jerk by 35.8\\%, 60.8\\%, and 27.4\\%, respectively, and improves the planning score by 3.4\\%. Project website: https://github.com/yangzhaojason/GRID-Planner.",
+  "abstract_zh": "自主驾驶规划需要在复杂的多智能体交互中选择安全、遵守规则且舒适的轨迹，但在规划关键场景中进行稳健的闭环决策仍然具有挑战性。现有的基于扩散和强化学习（RL）的规划器通常依赖于通用奖励，并主要将关系结构用于表示，这限制了规划关键的回滚如何塑造策略改进。我们提出了GRID-Planner，一种图奖励集成的扩散规划框架，它将生成规划与结构化关系信号对齐。具体而言，GRID-Planner结合了图感知的重要性加权、时间索引的关系奖励替代以及带有策略自蒸馏的优势加权扩散目标，形成了一个没有显式似然性的回滚-回报-优势-更新循环。在nuPlan和interPlan上的实验表明，与仅使用扩散的基线相比，GRID-Planner分别将碰撞率、车道偏离和加速度变化减少了35.8%、60.8%和27.4%，并将规划得分提高了3.4%。项目网站：https://github.com/yangzhaojason/GRID-Planner。",
+  "arxiv_id": "2610.21984",
+  "arxiv_url": "https://arxiv.org/abs/2610.21984v1",
+  "authors": [
+    "Zhao Yang",
+    "Zezhong Qian",
+    "Yinan Shi",
+    "Longjun Liu",
+    "Yawei Jueluo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-21984",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.072136+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.21984v1",
+  "published_at": "2026-10-15T14:34:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "nuplan",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 73
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.21984v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "感知"
+    ]
+  },
+  "title": "GRID-Planner: Graph-Structured Relational Reward Shaping for Diffusion Planning",
+  "title_zh": "GRID-Planner：用于扩散规划的图结构关系奖励塑造",
+  "translation_url": "https://hjfy.top/arxiv/2610.21984"
+}

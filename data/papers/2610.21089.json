@@ -1,0 +1,53 @@
+{
+  "abstract": "Slip-induced falls when riding motorcycles are difficult to avoid even for expert riders and represent a major cause of single-vehicle accidents. Despite their prevalence, no practical solution has yet been proposed to suppress this phenomenon. We previously introduced a motorcycle model applicable to systems with both front- and rear- wheel steering. In this paper, we extend that model and formulate the suppression of slip-induced falls as an optimization problem that distributes assistive control inputs according to vehicle speed and road surface conditions. To evaluate the proposed method, we developed a remotely operated motorcycle and conducted experiments under two scenarios: slalom driving on a low-friction surface at 5.5 m/s, and turning maneuvers on synthetic ice to simulate driving over manholes on rainy days. The results demonstrate that our approach successfully suppresses falls under these challenging conditions.",
+  "abstract_zh": "在骑行摩托车时，由滑动引起的跌倒即使对于经验丰富的骑手来说也难以避免，并且是单车事故的主要原因。尽管这种现象普遍存在，但尚未提出有效的解决方案来抑制这一现象。我们之前介绍了一种适用于前后轮转向系统的摩托车模型。在本文中，我们扩展了该模型，并将滑动引起的跌倒抑制问题表述为一个优化问题，该问题根据车辆速度和路面状况分配辅助控制输入。为了评估所提出的方法，我们开发了一种远程操作摩托车，并在两种场景下进行了实验：在低摩擦表面以5.5 m/s进行蛇形驾驶，以及在合成冰上进行转弯操作，以模拟雨天骑行时经过井盖的情况。结果表明，我们的方法在这些具有挑战性的条件下成功抑制了跌倒。",
+  "arxiv_id": "2610.21089",
+  "arxiv_url": "https://arxiv.org/abs/2610.21089v1",
+  "authors": [
+    "Tadashi Sumioka",
+    "Kazushi Akimoto",
+    "Takuya Tsujimura",
+    "Sho Takayanagi",
+    "Kineo Tomura"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-21089",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.035697+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.21089v1",
+  "published_at": "2026-10-15T01:43:49Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.21089v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "本文面向摩托车在低附着路面转弯时的滑移倾倒风险，基于扩展车辆动力学模型，通过优化分配辅助控制输入实现主动防倾倒，并在远程操控摩托车的低摩擦路面实验中验证了有效性。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "预测/规划"
+    ]
+  },
+  "title": "Slip-Induced Fall Suppression During Cornering for a Remotely Operated Motorcycle with a Rear-Wheel-Swing Mechanism",
+  "title_zh": "在转弯过程中通过滑动引起的跌倒抑制：一种具有后轮摆动机制的远程操作摩托车",
+  "translation_url": "https://hjfy.top/arxiv/2610.21089"
+}

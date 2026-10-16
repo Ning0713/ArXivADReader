@@ -1,0 +1,57 @@
+{
+  "abstract": "Closed-loop evaluation is widely regarded as a more faithful way to assess end-to-end (E2E) driving models than open-loop evaluation, and Bench2Drive, built on the CARLA simulator, has become the dominant benchmark for it. We show that its evaluation protocol itself contains pitfalls that can misrepresent the models scored on it. Bench2Drive's comfort metric, adapted from nuPlan, has several implementation errors and a segmentation scheme that rewards standing still, so it mostly measures how long a vehicle stays stationary, correlating with stationary time at r = 0.97 across eight models. We propose a corrected, distance-based metric that cuts that correlation to r = 0.06. Under it, the strong driving-score/comfort tradeoff the original metric reports is no longer detectable once models are compared at matched driving speed, which suggests that comfort trades against how fast a model drives rather than against how well it drives. We also uncover two pitfalls in how the harness supplies navigation signals: the default controller can replace a model's own steering with an angle toward the route target point, and the target point supplied at evaluation time can differ substantially from what a model saw in training. We demonstrate both on UniAD and VAD, where their effects differ sharply, and argue that future closed-loop evaluations should check for them. We will release all fixes as standalone code, so corrected comfort scores can be obtained from logged trajectories without re-running closed-loop simulation.",
+  "abstract_zh": "闭环评估被广泛认为是评估端到端（E2E）驾驶模型比开放环评估更为真实的方法，而基于CARLA模拟器构建的Bench2Drive已成为这一领域的主导基准。我们展示了其评估协议本身存在的陷阱，这些陷阱可能会误导对模型的评分。Bench2Drive的舒适度指标源自nuPlan，存在多个实施错误，并且其分割方案奖励静止状态，因此它主要测量车辆静止的时间，八个模型的静止时间相关性为r = 0.97。我们提出了一种修正的基于距离的指标，将该相关性降低至r = 0.06。在这种情况下，原始指标报告的强驾驶评分与舒适度之间的权衡在模型以匹配的驾驶速度进行比较时不再可检测，这表明舒适度与模型的驾驶速度相关，而不是与驾驶质量相关。我们还发现了在导航信号提供方式中的两个陷阱：默认控制器可以用指向路线目标点的角度替代模型自身的转向，而在评估时提供的目标点可能与模型在训练中看到的有显著差异。我们在UniAD和VAD上展示了这两者的影响差异，并认为未来的闭环评估应对此进行检查。我们将以独立代码的形式发布所有修正，以便从记录的轨迹中获得修正后的舒适度评分，而无需重新运行闭环模拟。",
+  "arxiv_id": "2610.21741",
+  "arxiv_url": "https://arxiv.org/abs/2610.21741v1",
+  "authors": [
+    "Thomas Schwarzfischer",
+    "Emad Aghajanzadeh",
+    "Moritz Thoma",
+    "Nael Fasfous",
+    "Manoj Rohit Vemparala",
+    "Pierpaolo Mori",
+    "Daniel Mueller-Gritschneder",
+    "Ulf Schlichtmann"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-21741",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.063344+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.21741v1",
+  "published_at": "2026-10-15T11:59:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "carla",
+      "nuplan",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 60
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.21741v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "端到端驾驶",
+      "仿真/数据"
+    ]
+  },
+  "title": "Comfortably Stuck: Evaluation Pitfalls in Bench2Drive's Closed-Loop Protocol",
+  "title_zh": "舒适困境：Bench2Drive闭环协议中的评估陷阱",
+  "translation_url": "https://hjfy.top/arxiv/2610.21741"
+}

@@ -1,0 +1,49 @@
+{
+  "abstract": "We present a general declarative framework for anticipatory reasoning about interactive motion in complex dynamic environments. Our focus is on (explainable) anticipatory space-time mental model formation at a semantic level to heuristically guide low-level motion computation. Our method is hybrid, modular and elaboration tolerant integrating: 1) An ASP model characterising the dynamics of interactive motion trajectories; 2) Semantically-guided prediction for deriving `branching trajectory futures'; and 3) An energy-based {optimisation} model to evaluate, rank and filter anticipations. We evaluate with the Argoverse 2 benchmark, where each anticipated trajectory carries an explicit, inspectable event-level hypothesis, unlike end-to-end stochastic prediction.",
+  "abstract_zh": "我们提出了一个通用的声明性框架，用于在复杂动态环境中进行关于交互运动的预期推理。我们的重点是（可解释的）预期时空心理模型的形成，旨在语义层面上启发性地指导低级运动计算。我们的方法是混合的、模块化的，并且具有容错性，集成了：1）一个ASP模型，用于表征交互运动轨迹的动态；2）语义引导的预测，用于推导“分支轨迹未来”；以及3）一个基于能量的优化模型，用于评估、排序和过滤预期。我们使用Argoverse 2基准进行评估，其中每个预期轨迹都携带一个明确的、可检查的事件级假设，这与端到端的随机预测不同。",
+  "arxiv_id": "2610.20867",
+  "arxiv_url": "https://arxiv.org/abs/2610.20867v1",
+  "authors": [
+    "Julius Monsen",
+    "Jakob Suchan",
+    "Mehul Bhatt"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-20867",
+  "categories": [
+    "cs.AI",
+    "cs.LO"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.213345+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.20867v1",
+  "published_at": "2026-10-14T19:56:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "argoverse",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.20867v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "仿真/数据"
+    ]
+  },
+  "title": "Anticipatory Commonsense with Moving Objects: An ASP-Based Framework for Predictive Reasoning with Interacting Trajectories",
+  "title_zh": "移动物体的预期常识：基于ASP的交互轨迹预测推理框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.20867"
+}

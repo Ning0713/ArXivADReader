@@ -1,0 +1,57 @@
+{
+  "abstract": "Recent 3D world models increasingly use features from geometry foundation models (GFMs) as predictive world states, benefiting from their rich geometric priors. However, the view dependence of these features entangles scene dynamics with camera-induced variation, making the resulting state evolution harder to predict. We propose GeoState, a view-decoupled geometry representation for predictive 3D world modeling that separates scene-state evolution from camera-dependent observation. Specifically, a scene tokenizer aggregates multi-view GFM features into a view-decoupled scene state, which a geometry decoder queries using camera rays. An autoregressive world model then predicts future scene states, while camera motion is modeled separately. The predicted states can therefore be decoded under either predicted or externally specified cameras, while retaining a single context-derived scale throughout the rollout without per-frame scale alignment. Experiments show that GeoState outperforms prior 3D world models on Waymo, supports geometrically consistent cross-view querying, and generalizes zero-shot to KITTI and nuScenes. Project page: https://hongchang-liu.github.io/GeoState-project-page/",
+  "abstract_zh": "近年来，三维世界模型越来越多地使用几何基础模型（GFM）中的特征作为预测世界状态，受益于其丰富的几何先验。然而，这些特征的视图依赖性将场景动态与相机引起的变化纠缠在一起，使得结果状态演变更难以预测。我们提出了GeoState，一种用于预测三维世界建模的视图解耦几何表示，它将场景状态演变与相机依赖的观测分离。具体而言，场景标记器将多视图GFM特征聚合为视图解耦的场景状态，几何解码器使用相机光线进行查询。然后，自回归世界模型预测未来的场景状态，同时单独建模相机运动。因此，预测的状态可以在预测的或外部指定的相机下进行解码，同时在整个展开过程中保持单一的上下文派生尺度，而无需逐帧尺度对齐。实验表明，GeoState在Waymo数据集上优于先前的三维世界模型，支持几何一致的跨视图查询，并在KITTI和nuScenes上实现零样本泛化。项目页面：https://hongchang-liu.github.io/GeoState-project-page/",
+  "arxiv_id": "2610.22343",
+  "arxiv_url": "https://arxiv.org/abs/2610.22343v1",
+  "authors": [
+    "Hongchang Liu",
+    "Jian Liu",
+    "Yujuan Ding",
+    "Liang Peng",
+    "Xun Jiang",
+    "Fei Ma",
+    "Xing Xu",
+    "Yi Bin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-22343",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.192757+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.22343v1",
+  "published_at": "2026-10-15T17:56:18Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "world model"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 44
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.22343v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
+  "title_zh": "GeoState：用于三维世界建模的视图解耦几何状态学习",
+  "translation_url": "https://hjfy.top/arxiv/2610.22343"
+}

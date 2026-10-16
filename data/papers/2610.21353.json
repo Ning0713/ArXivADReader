@@ -1,0 +1,53 @@
+{
+  "abstract": "Accurate localization is critical for a wide range of applications, including navigation, augmented reality, safety management, and healthcare. However, achieving accurate positioning remains challenging, especially in GPS-degraded environments. Pedestrian Dead Reckoning (PDR), which estimates position based on inertial sensor data, offers a promising alternative but typically demands substantial effort in algorithm design and system integration. This complexity often leads to prolonged development timelines and elevated costs. To address these challenges, we present the PDR Sensor (PDRS), a plug-and-play, black-box PDR module optimized for seamless integration into wearable and IoT platforms. PDRS integrates a microprocessor and an inertial measurement unit (IMU) within a compact, low-power module. It executes real-time sensor fusion onboard, providing position updates via standard interfaces (I2C, SPI, UART). Experimental evaluations demonstrate its high robustness, achieving a step detection error of just 0.16% over 1250 steps and a traveled distance error of 1.87% under diverse conditions. The system further exhibits low latency (2.5 ms) and modest power consumption (52.35 mA). Unlike conventional studies, the PDRS leverages a holistic co-design of hardware and software to enhance performance and integration aspects, simplifying adoption without requiring deep expertise. By lowering technical barriers, PDRS enables developers and researchers to prioritize innovation in IoT and wearable technologies, accelerating prototyping, reducing development time, and advancing industry progress. Future work aims to enhance accuracy, reduce power usage and module size, and integrate AI-driven techniques to better mitigate drift.",
+  "abstract_zh": "准确定位对导航、增强现实、安全管理和医疗保健等广泛应用至关重要。然而，在GPS信号受限的环境中实现准确定位仍然具有挑战性。基于惯性传感器数据估算位置的行人航迹推算（Pedestrian Dead Reckoning, PDR）提供了一种有前景的替代方案，但通常需要在算法设计和系统集成方面付出大量努力。这种复杂性往往导致开发周期延长和成本增加。为了解决这些挑战，我们提出了PDR传感器（PDR Sensor, PDRS），这是一个即插即用的黑箱PDR模块，旨在无缝集成到可穿戴和物联网平台中。PDRS在一个紧凑、低功耗的模块内集成了微处理器和惯性测量单元（Inertial Measurement Unit, IMU）。它在设备上执行实时传感器融合，通过标准接口（I2C、SPI、UART）提供位置更新。实验评估表明其高鲁棒性，在1250步的步态检测中仅有0.16%的误差，在多种条件下的行驶距离误差为1.87%。该系统还表现出低延迟（2.5毫秒）和适度的功耗（52.35毫安）。与传统研究不同，PDRS利用硬件和软件的整体协同设计来增强性能和集成性，简化了采用过程，无需深厚的专业知识。通过降低技术门槛，PDRS使开发者和研究人员能够优先考虑物联网和可穿戴技术的创新，加速原型开发，缩短开发时间，推动行业进步。未来的工作旨在提高准确性，降低功耗和模块尺寸，并集成基于人工智能的技术以更好地减轻漂移问题。",
+  "arxiv_id": "2610.21353",
+  "arxiv_url": "https://arxiv.org/abs/2610.21353v1",
+  "authors": [
+    "Anh-Van Vu",
+    "Changmin Sung",
+    "Dongsoo Han"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-21353",
+  "categories": [
+    "cs.RO",
+    "cs.AR"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.045651+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.21353v1",
+  "published_at": "2026-10-15T06:32:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "sensor fusion",
+      "healthcare",
+      "医疗"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.21353v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "地图/定位"
+    ]
+  },
+  "title": "A Black-Box Positioning Solution for Effortless Integration in Wearable Navigation",
+  "title_zh": "便捷集成的黑箱定位解决方案用于可穿戴导航",
+  "translation_url": "https://hjfy.top/arxiv/2610.21353"
+}

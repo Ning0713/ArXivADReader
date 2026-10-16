@@ -1,0 +1,47 @@
+{
+  "abstract": "Vision Transformer architectures have showcased impressive performance on semantic segmentation, yet their quadratic attention complexity hinders practical applications. Recent works have focused on merging tokens to reduce sequence length and thus improve transformer efficiency. However, existing token merging methods primarily rely on feature similarity to identify similar tokens, overlooking spatial consistency, which may introduce segmentation errors in semantic segmentation. In this work, we propose SCMerge, a training-free token merging method that jointly considers feature similarity and spatial consistency in pairing similar tokens. The pairwise tokens are then merged within the encoder, and the resulting token sequences are reconstructed onto the original patch grid after decoding. The proposed method is flexible and can be plugged into existing vision Transformer-based semantic segmentation pipelines. Extensive experiments on the benchmark datasets ADE20K, Pascal Context, and Cityscapes show that SCMerge consistently achieves a better trade-off between segmentation accuracy and efficiency than baseline methods.",
+  "abstract_zh": "视觉变换器架构在语义分割任务中展现了令人印象深刻的性能，但其二次注意力复杂度限制了实际应用。近期的研究集中于合并令牌以减少序列长度，从而提高变换器的效率。然而，现有的令牌合并方法主要依赖于特征相似性来识别相似令牌，忽视了空间一致性，这可能在语义分割中引入分割错误。在本研究中，我们提出了SCMerge，这是一种无训练的令牌合并方法，联合考虑特征相似性和空间一致性来配对相似的令牌。然后，在编码器中合并成对的令牌，并在解码后将生成的令牌序列重构到原始补丁网格上。所提出的方法灵活且可以嵌入现有的基于视觉变换器的语义分割管道。在基准数据集ADE20K、Pascal Context和Cityscapes上的大量实验表明，SCMerge在分割准确性和效率之间始终实现了比基线方法更好的权衡。",
+  "arxiv_id": "2610.21642",
+  "arxiv_url": "https://arxiv.org/abs/2610.21642v1",
+  "authors": [
+    "Junfeng Ren",
+    "Yi Gong",
+    "Yuan Zeng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-21642",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.144460+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.21642v1",
+  "published_at": "2026-10-15T10:23:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.21642v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "世界模型/生成"
+    ]
+  },
+  "title": "SCMerge: Spatial-Consistency-Aware Token Pair Merging for Efficient Semantic Segmentation",
+  "title_zh": "SCMerge：考虑空间一致性的高效语义分割令牌对合并方法",
+  "translation_url": "https://hjfy.top/arxiv/2610.21642"
+}

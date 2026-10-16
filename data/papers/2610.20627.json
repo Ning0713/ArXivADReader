@@ -1,0 +1,57 @@
+{
+  "abstract": "Vision-language models are increasingly used for driving-scene understanding, yet their defensive reasoning under weakly structured Global South traffic remains unclear. We introduce BD-HazardVLM, a diagnostic benchmark of 500 Bangladesh road-scene images, comprising 375 from RSUD20K and 125 from TFP-BD, annotated for hazard presence, primary hazard category, risk timing, severity, defensive actions, visible evidence, and hallucination- and Western-road-bias traps. We evaluate Qwen2.5-VL-7B, InternVL3-8B, and MiniCPM-V-4.6 using a shared zero-shot task definition and structured output schema. Binary hazard-presence accuracy ranges from 88.0 percent to 89.2 percent, essentially matching the 89.0 percent majority-class baseline. Fine-grained reasoning is substantially weaker: category accuracy remains below 40 percent, risk-timing accuracy ranges from 1.6 percent to 12.4 percent, and exact defensive-action matching remains below 2 percent. Although InternVL3-8B achieves the highest severity accuracy at 61.2 percent, it has zero recall on the 58 high-severity cases. Qwen exhibits severe category mode collapse, while all models show weak latent-hazard anticipation and near-zero self-reported trap recognition. For the evaluated models, these findings show that coarse hazard recognition does not imply reliable fine-grained defensive-driving reasoning and motivate geographically diverse safety evaluation.",
+  "abstract_zh": "视觉-语言模型在驾驶场景理解中的应用日益增多，但它们在结构较弱的全球南方交通中的防御推理仍不明确。我们引入了BD-HazardVLM，这是一个包含500张孟加拉国道路场景图像的诊断基准，其中375张来自RSUD20K，125张来自TFP-BD，标注了危险存在、主要危险类别、风险时机、严重性、防御行动、可见证据以及幻觉和西方道路偏见陷阱。我们使用共享的零-shot任务定义和结构化输出模式对Qwen2.5-VL-7B、InternVL3-8B和MiniCPM-V-4.6进行了评估。二元危险存在准确率范围为88.0%至89.2%，基本匹配89.0%的多数类基线。细粒度推理显著较弱：类别准确率低于40%，风险时机准确率范围为1.6%至12.4%，而确切的防御行动匹配率低于2%。尽管InternVL3-8B在严重性准确率上达到了61.2%的最高值，但在58个高严重性案例中其召回率为零。Qwen表现出严重的类别模式崩溃，而所有模型在潜在危险预判和自我报告的陷阱识别方面均表现较弱。对于评估的模型，这些发现表明粗略的危险识别并不意味着可靠的细粒度防御驾驶推理，并推动了地理多样化的安全评估。",
+  "arxiv_id": "2610.20627",
+  "arxiv_url": "https://arxiv.org/abs/2610.20627v1",
+  "authors": [
+    "Abdullah Al Maruf",
+    "Md. Sajedul Islam",
+    "Tanmoy Mridha",
+    "Irfan Hossain Bhuiyan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-20627",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.092074+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.20627v1",
+  "published_at": "2026-09-28T18:54:45Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路",
+      "诊断"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.20627v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "本文构建了面向孟加拉国复杂道路场景的驾驶风险诊断基准BD-HazardVLM，并评估多种视觉语言模型对风险类别、发生时机、严重程度及防御动作的推理能力。实验显示，现有模型虽然在粗粒度风险识别上准确率较高，但接近多数类基线，在潜在风险预判、高严重性风险召回和防御动作生成等关键安全能力上表现很差，说明其尚不足以支持可靠的防御性驾驶决策。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "VLM/VLA",
+      "仿真/数据"
+    ]
+  },
+  "title": "BD-HazardVLM: Probing Vision-Language Models for Latent Defensive-Driving Hazards in Bangladesh Road Scenes",
+  "title_zh": "BD-HazardVLM：探测孟加拉国道路场景中的潜在防御驾驶危险的视觉-语言模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.20627"
+}

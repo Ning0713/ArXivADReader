@@ -1,0 +1,60 @@
+{
+  "abstract": "Pedestrian trajectory prediction holds significant applications across autonomous driving, intelligent surveillance, and smart cities. However, the complexity and unpredictability of pedestrian interactions make this task a persistent challenge. Current models face two common limitations: 1) Consider only a single type of social coupling. This introduces redundant interactions. More critically, it fails to account for the varying nature of trajectory coupled across different scenarios and between different pedestrians. Consequently, models cannot deeply adapt to diverse scenes. 2) Inadequate domain shift handling. Although very few methods address domain shift, they rely on statistical criterion-based domain distribution alignment. Such approaches exhibit strong dependency on predefined statistical metrics. This leads to significant limitations in complex and dynamic environments. To address these problems, a Hierarchical Envelope Adversarial Domain Adaptation with Loosely-Tightly coupled model (HEADA-LTCTPM) is proposed. First, an envelope sample construction mechanism was proposed. It constructs envelope samples and extends them into graph structures. Secondly, an adversarial domain adaptation module was proposed. This integrates both local and global domain adaptation strategies. It dynamically adapts to diverse coupled relationships across scenarios. These innovations collectively enhance prediction accuracy and robustness. In the experimental section, two representative public datasets were employed for validation and comprehensive comparisons with six relevant baseline algorithms were conducted. Results demonstrate that our model achieves significantly higher accuracy compared to existing methods, with the ADE and FDE metrics reduced by 17.6% and 19.1% respectively. The time overhead meets practical requirements, which verifies the effectiveness of our key innovations.",
+  "abstract_zh": "行人轨迹预测在自动驾驶、智能监控和智慧城市等领域具有重要应用。然而，行人之间的互动复杂性和不可预测性使得这一任务始终面临挑战。目前的模型存在两个常见的局限性：1）仅考虑单一类型的社会耦合。这引入了冗余的互动，更严重的是，它未能考虑在不同场景和不同行人之间轨迹耦合的变化特性。因此，模型无法深入适应多样化的场景。2）对领域转移处理不足。尽管很少有方法解决领域转移问题，但它们依赖于基于统计标准的领域分布对齐。这类方法对预定义的统计指标表现出强依赖性，导致在复杂和动态环境中存在显著局限性。为了解决这些问题，提出了一种基于分层包络对抗领域适应的松紧耦合模型（HEADA-LTCTPM）。首先，提出了一种包络样本构建机制。该机制构建包络样本并将其扩展为图结构。其次，提出了一种对抗领域适应模块，集成了局部和全局领域适应策略。该模块能够动态适应不同场景下的耦合关系。这些创新共同提升了预测的准确性和鲁棒性。在实验部分，采用了两个具有代表性的公共数据集进行验证，并与六个相关基线算法进行了全面比较。结果表明，我们的模型在准确性上显著高于现有方法，ADE和FDE指标分别降低了17.6%和19.1%。时间开销满足实际需求，验证了我们关键创新的有效性。",
+  "arxiv_id": "2610.21132",
+  "arxiv_url": "https://arxiv.org/abs/2610.21132v1",
+  "authors": [
+    "Wenqian Jiang",
+    "Qifeng Sun",
+    "Xiaosong Gao",
+    "Xin Zou",
+    "Xingrui Ni",
+    "Yuan Hu",
+    "Yongming Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-21132",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.111406+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.21132v1",
+  "published_at": "2026-10-15T02:40:43Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "pedestrian",
+      "驾驶",
+      "行人",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.21132v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Trajectory Prediction Method for person under WSN with Hierarchical Envelope Adversarial Domain Adaptation",
+  "title_zh": "基于分层包络对抗领域适应的行人轨迹预测方法",
+  "translation_url": "https://hjfy.top/arxiv/2610.21132"
+}

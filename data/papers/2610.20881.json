@@ -1,0 +1,53 @@
+{
+  "abstract": "While foundation models and vision transformers (ViTs) have redefined visual representations, current active learning (AL) strategies for these backbones largely operate at the patch or region level, where annotation requirements remain high due to extensive pixel labeling. Extending ViT-based AL to the pixel-level, low-budget regime is uniquely challenging: with as little as one pixel query per image, a method must simultaneously identify the most informative locations and train a reliable decoder head from an extremely sparse signal. We introduce TEAL (Token-space Efficient Active Learning), the first pixel-level AL framework built around ViT representations. TEAL uses a frozen ViT backbone and performs diversity-based selection directly on its native token lattice, avoiding the artifacts introduced by interpolating token embeddings to dense pixel resolutions. Our framework applies a two-level MaxHerding strategy over multi-layer token descriptors to select representative candidates, followed by margin-based uncertainty refinement on a finer decoder grid. Across CamVid, Cityscapes, ADE20K, and Pascal Context, TEAL consistently outperforms previous baselines under extreme label scarcity, improving over the strongest baseline by up to +24.36 mIoU with a single labeled pixel (px) per image, and reaching up to 97% of fully supervised performance with just 10 px. To rigorously establish the source of the gains, we further show that the improvements persist when all baselines are equipped with the same DINOv3 backbone, demonstrating that coupling token-space selection with uncertainty refinement on the decoder grid makes ViT token geometry an effective foundation for extremely low-budget active segmentation.",
+  "abstract_zh": "尽管基础模型和视觉变换器（ViTs）重新定义了视觉表征，但当前针对这些骨干网络的主动学习（AL）策略主要在补丁或区域级别操作，这导致由于广泛的像素标注而保持高昂的标注需求。将基于ViT的主动学习扩展到像素级的低预算环境是独特的挑战：在每幅图像仅有一个像素查询的情况下，方法必须同时识别出最具信息量的位置，并从极其稀疏的信号中训练出可靠的解码头。我们提出了TEAL（标记空间高效主动学习），这是第一个围绕ViT表征构建的像素级主动学习框架。TEAL使用一个冻结的ViT骨干网络，并直接在其原生标记格上执行基于多样性的选择，避免了将标记嵌入插值到密集像素分辨率时引入的伪影。我们的框架在多层标记描述符上应用两级MaxHerding策略以选择代表性候选者，随后在更精细的解码网格上进行基于边际的不确定性细化。在CamVid、Cityscapes、ADE20K和Pascal Context数据集上，TEAL在极端标签稀缺的情况下始终优于之前的基线，在每幅图像仅有一个标记像素（px）的情况下，提升了最高达+24.36 mIoU，并且仅用10个像素就达到了完全监督性能的97%。为了严格确定增益的来源，我们进一步展示了当所有基线都配备相同的DINOv3骨干网络时，改进依然存在，证明了将标记空间选择与解码网格上的不确定性细化相结合，使得ViT标记几何成为极低预算主动分割的有效基础。",
+  "arxiv_id": "2610.20881",
+  "arxiv_url": "https://arxiv.org/abs/2610.20881v1",
+  "authors": [
+    "Utku Cicek",
+    "Mahip Singh",
+    "Ziyao Shang",
+    "Kimathi Kaai",
+    "C Thomas",
+    "Pedro Pablo Guerrero Vela",
+    "Alexander Wong",
+    "Sirisha Rambhatla"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-20881",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.101699+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.20881v1",
+  "published_at": "2026-10-14T20:13:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.20881v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "Pixels to Tokens: Token Space Efficient Active Learning for Low-Budget Semantic Segmentation",
+  "title_zh": "从像素到标记：低预算语义分割的标记空间高效主动学习",
+  "translation_url": "https://hjfy.top/arxiv/2610.20881"
+}

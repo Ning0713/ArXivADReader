@@ -1,0 +1,52 @@
+{
+  "abstract": "Reliable absolute heading estimation is critical for road-vehicle navigation, particularly when magnetic, inertial, or GNSS-based references are degraded. This paper presents a skylight polarization navigation method that estimates vehicle heading by globally optimizing a Rayleigh sky model against measurements from a division-of-focal-plane polarimetric camera. The proposed framework combines a pinhole camera model, a single-scattering Rayleigh polarization model, and a solar position algorithm to synthesize the expected full image angle of polarization distribution for candidate vehicle states. A degree of polarization weighted root mean square error objective function compares measured and simulated polarization patterns, allowing the estimator to use all available sky information while attenuating low confidence pixels caused by clouds, buildings, foliage, and other depolarizing occlusions. Experimental evaluation is performed using three urban road vehicle trajectories collected with a roof mounted polarimetric camera and a high precision dual-antenna GNSS/INS reference system. Results show sub-degree RMS yaw error across all trajectories, ranging from $0.718^{\\circ}$ to $0.889^{\\circ}$. Compared with representative feature-based and model-based polarization navigation methods, the proposed approach reduces RMS heading error by up to 87% and demonstrates improved robustness to partial sky occlusion.",
+  "abstract_zh": "可靠的绝对航向估计对于道路车辆导航至关重要，尤其是在磁性、惯性或基于GNSS的参考信号受损时。本文提出了一种天光偏振导航方法，通过对来自焦平面分割偏振相机的测量数据进行全局优化Rayleigh天空模型来估计车辆航向。所提出的框架结合了针孔相机模型、单散射Rayleigh偏振模型和太阳位置算法，以合成候选车辆状态的预期全图像偏振分布角度。一个加权偏振度均方根误差目标函数比较测量和模拟的偏振模式，使得估计器能够利用所有可用的天空信息，同时减弱因云层、建筑物、树叶和其他去偏振遮挡物造成的低置信度像素。实验评估使用了三条城市道路车辆轨迹，这些轨迹是通过安装在车顶的偏振相机和高精度双天线GNSS/INS参考系统收集的。结果显示，在所有轨迹中，航向均方根误差低于1度，范围为$0.718^{ ext{°}}$到$0.889^{ ext{°}}$。与代表性的基于特征和基于模型的偏振导航方法相比，所提出的方法将均方根航向误差降低了多达87%，并在部分天空遮挡情况下表现出更好的鲁棒性。",
+  "arxiv_id": "2610.20797",
+  "arxiv_url": "https://arxiv.org/abs/2610.20797v1",
+  "authors": [
+    "Ben Potter",
+    "Eslam Mounier",
+    "Aboelmagd Noureldin",
+    "Yahia Antar",
+    "Muhammad Alam"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-20797",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.022027+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.20797v1",
+  "published_at": "2026-10-14T18:41:52Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.20797v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "提出一种面向道路车辆的天光偏振绝对航向估计方法，通过将偏振相机观测与Rayleigh天空模型进行全局匹配，在GNSS、惯性或磁力参考退化时提供亚度级车辆航向定位，并增强对城市环境天空遮挡的鲁棒性。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Navigation by Skylight Polarization via Rayleigh Model Optimization on a Road Vehicle",
+  "title_zh": "基于天光偏振的道路车辆导航：Rayleigh模型优化",
+  "translation_url": "https://hjfy.top/arxiv/2610.20797"
+}

@@ -1,0 +1,56 @@
+{
+  "abstract": "World-model planners evaluate candidate trajectories by predicting their future consequences, implicitly relying on the plan-to-motion relationship learned during training. At deployment, a different downstream controller may execute the same planned trajectory differently, creating a planning-execution gap between the frozen model's imagined future and actual execution. A natural remedy is to replace the planned trajectory with its predicted or observed execution. However, we find that better execution fidelity does not necessarily yield better decisions: directly substituting predicted execution trajectories yields only a 0.048 PDMS improvement across 10 unseen controller configurations, far smaller than the gain from our proposed adaptation. This suggests a semantic mismatch between a planned trajectory, which serves as a reference for downstream control, and an executed trajectory, which already describes the resulting post-controller motion. We introduce ExecutionBridge, which infers controller-specific execution characteristics from planned-executed trajectory pairs and uses them to adapt the native ego latent rollout while keeping the original planned trajectory unchanged. The planner, world model, and reward head remain frozen. On NAVSIM, ExecutionBridge consistently improves planning across unseen controller configurations and multiple frozen world-model planners, with substantially larger gains in challenging driving scenes where execution mismatch more strongly affects candidate evaluation.",
+  "abstract_zh": "世界模型规划器通过预测候选轨迹的未来后果来评估其有效性，隐含地依赖于训练期间学习的计划与运动之间的关系。在部署时，不同的下游控制器可能会以不同的方式执行相同的计划轨迹，从而在冻结模型想象的未来与实际执行之间产生规划与执行的差距。一个自然的解决方案是用预测或观察到的执行替代计划轨迹。然而，我们发现更好的执行保真度并不一定会带来更好的决策：直接替换预测的执行轨迹在10个未见控制器配置中仅带来了0.048的PDMS提升，远小于我们提出的适应方法所带来的增益。这表明计划轨迹（作为下游控制的参考）与执行轨迹（已经描述了控制器后的运动结果）之间存在语义不匹配。我们引入了ExecutionBridge，它从计划-执行轨迹对中推断控制器特定的执行特征，并利用这些特征在保持原计划轨迹不变的情况下适应原生自我潜在展开。规划器、世界模型和奖励头保持冻结。在NAVSIM上，ExecutionBridge在未见控制器配置和多个冻结的世界模型规划器中一致地改善了规划效果，在执行不匹配更强烈影响候选评估的挑战性驾驶场景中，增益更为显著。",
+  "arxiv_id": "2610.22041",
+  "arxiv_url": "https://arxiv.org/abs/2610.22041v1",
+  "authors": [
+    "Danqi Zhao",
+    "Keyu Chen",
+    "Wenchao Sun",
+    "Minglei Huang",
+    "Jianhe Zhang",
+    "Yan Zhu",
+    "Hao Cheng",
+    "Zifan Cao",
+    "Sifa Zheng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-22041",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.075284+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.22041v1",
+  "published_at": "2026-10-15T15:13:35Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "world model"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.22041v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "针对自动驾驶世界模型规划器在更换下游控制器后出现的规划—执行偏差，本文提出ExecutionBridge。该方法学习控制器特有的执行特性，并适配世界模型中的自车潜在状态展开，而不改变规划轨迹或更新原规划器、世界模型和奖励模块，从而提升跨控制器配置的驾驶规划性能。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Plans Are Not Executions: Adapting Frozen World-Model Planners to Controller-Induced Execution Shift",
+  "title_zh": "计划并非执行：将冻结的世界模型规划器适应于控制器引起的执行偏移",
+  "translation_url": "https://hjfy.top/arxiv/2610.22041"
+}

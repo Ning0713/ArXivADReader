@@ -1,0 +1,57 @@
+{
+  "abstract": "Map generation tasks feature extensive non-structural vectorized data (e.g., points, polylines, and polygons) and thus pose significant challenges to common pixel-wise generative models. Conventional approaches use multiple stages, first segmenting these features at the pixel level and then performing vectorized post-processing, with errors and complexity compounding at each stage. Motivated by the recent success of auto-regressive language modeling, we propose the first map foundation model, named Map Auto-Regressor (MARS), that is capable of generating both multi-polyline road networks and polygon buildings in a unified manner. For training MARS, we collected to our knowledge the largest multi-class map extraction dataset totaling 3.4M examples, which we call MAP-3M. Across four road and building datasets, MARS outperforms or matches the performance of multistage baselines. Additionally, we develop a \"Chat with MARS\" capability that enables interactive human-in-the-loop map generation and correction, supported by the auto-regressive nature of our end-to-end approach. We release our MAP-3M dataset and project demo page at (1) https://huggingface.co/datasets/bag-lab/MAP-3M and (2) https://huggingface.co/spaces/bag-lab/MARS, respectively.",
+  "abstract_zh": "地图生成任务涉及大量非结构化的矢量数据（例如，点、折线和多边形），因此对常见的逐像素生成模型提出了重大挑战。传统方法采用多阶段流程，首先在像素级别对这些特征进行分割，然后进行矢量后处理，每个阶段的错误和复杂性不断累积。受到近期自回归语言建模成功的启发，我们提出了首个地图基础模型，称为地图自回归模型（Map Auto-Regressor, MARS），能够以统一的方式生成多折线道路网络和多边形建筑。为了训练MARS，我们收集了迄今为止最大的多类地图提取数据集，总计3.4百万个样本，我们称之为MAP-3M。在四个道路和建筑数据集中，MARS的性能超越或匹配了多阶段基线。此外，我们开发了“与MARS对话”的功能，使得人机交互式地图生成和修正成为可能，这得益于我们端到端方法的自回归特性。我们在(1) https://huggingface.co/datasets/bag-lab/MAP-3M 和 (2) https://huggingface.co/spaces/bag-lab/MARS 发布了我们的MAP-3M数据集和项目演示页面。",
+  "arxiv_id": "2610.20843",
+  "arxiv_url": "https://arxiv.org/abs/2610.20843v1",
+  "authors": [
+    "Qi Zhang",
+    "Suvam Bag",
+    "Rupanjali Kukal",
+    "Lucas Thai",
+    "Jacob Kovarskiy",
+    "Mike Bianco",
+    "Xiaojie Guo",
+    "Raphael Tang",
+    "Mikael Figueroa",
+    "Rishi Madhok",
+    "Nikolaos Karianakis",
+    "Fuxun Yu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-20843",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.099308+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.20843v1",
+  "published_at": "2026-10-14T19:28:16Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.20843v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "提出面向道路网络和建筑矢量地图生成的自回归基础模型 MARS，并构建包含 340 万个样本的 MAP-3M 数据集。该工作虽未明确聚焦自动驾驶，但其道路地图自动提取、生成和交互式修正能力可用于自动驾驶高精地图的数据生产与维护。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "MARS - A foundational map auto-regressor",
+  "title_zh": "MARS - 基础地图自回归模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.20843"
+}

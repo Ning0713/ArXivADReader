@@ -1,0 +1,56 @@
+{
+  "abstract": "Accurate motion prediction is critical for safe autonomous driving, yet even strong forecasters leave residual errors in their multimodal proposals. Existing refiners compress complete proposals or update their segments sequentially, preventing the full proposed future from serving as explicit relational context for correction. We introduce FutureLift, a backbone-agnostic refiner that represents each multimodal proposal as a heterogeneous future graph, with spatially grounded temporal nodes connected to agent histories, map elements, alternative modes, and, for joint prediction, other agents future trajectories. Bidirectional temporal edges allow later evidence to revise earlier segments in a single pass, and the updated nodes predict residual coordinate and confidence corrections. Requiring only proposals, scores, and scene context, FutureLift provides a common refinement interface for structurally different forecasting backbones. On Argoverse2 and the Waymo Open Motion Dataset, it consistently improves frozen proposals and outperforms native and specialized refiners across marginal and joint forecasting. On the WOMD motion-prediction leaderboard, FutureLift ranks first in minADE (0.5049m) and minFDE (0.9942m) among the compared standard-input methods, without LiDAR or ensembling, while achieving a competitive 0.4874 Soft mAP.",
+  "abstract_zh": "准确的运动预测对于安全的自动驾驶至关重要，然而即使是强大的预测模型在其多模态提议中仍然会留下残余误差。现有的精炼器通常压缩完整的提议或顺序更新其各个部分，这限制了完整提议的未来作为显式关系上下文进行修正。我们提出了FutureLift，这是一种与主干网络无关的精炼器，将每个多模态提议表示为异构未来图，具有与代理历史、地图元素、替代模式以及对于联合预测的其他代理未来轨迹相连接的空间基础时间节点。双向时间边允许后续证据在单次传递中修正早期部分，更新后的节点预测残余坐标和置信度修正。FutureLift仅需提议、分数和场景上下文，便提供了一个适用于结构不同的预测主干的通用精炼接口。在Argoverse2和Waymo开放运动数据集中，它始终改善冻结提议，并在边际和联合预测中超越本地和专用精炼器。在WOMD运动预测排行榜上，FutureLift在比较的标准输入方法中，在minADE（0.5049m）和minFDE（0.9942m）方面排名第一，且未使用LiDAR或集成，同时实现了竞争力的0.4874 Soft mAP。",
+  "arxiv_id": "2610.22215",
+  "arxiv_url": "https://arxiv.org/abs/2610.22215v1",
+  "authors": [
+    "Daniel Grimm",
+    "J. Marius Zöllner"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-22215",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.177147+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.22215v1",
+  "published_at": "2026-10-15T17:00:40Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "waymo open",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "motion prediction"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.22215v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "FutureLift: Lifting Trajectory Proposals into Bidirectional Future Graphs for Motion Forecasting",
+  "title_zh": "FutureLift：将轨迹提议提升为双向未来图以进行运动预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.22215"
+}

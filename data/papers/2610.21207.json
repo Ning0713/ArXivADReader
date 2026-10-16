@@ -1,0 +1,56 @@
+{
+  "abstract": "Point-cloud streams are central to autonomous driving and robotics, yet existing segmentation networks process every frame from scratch, although consecutive frames largely overlap. We observe that the intermediate features of point-cloud transformers remain semantically consistent across frames for the same spatial region, especially in deep stages. Building on this, we present SpaceCache, a training-free feature cache that reuses these features across frames. Tokens of previously observed regions skip a sequence of transformer blocks and take their cached features, only the remaining tokens are computed, and the full token layout is restored for dense prediction. Lightweight cache management keeps reused features reliable by limiting each entry's age and evicting low-confidence entries. Unlike token merging, SpaceCache selects tokens at negligible cost and runs its cache operations once per encoder stage. On both outdoor and indoor benchmarks, such as nuScenes, Waymo, and ScanNet, with two transformer backbones of Utonia and LitePT-B, SpaceCache achieves up to 1.65x speedup with less than 1-point mIoU drop and consistently outperforms token-merging methods.",
+  "abstract_zh": "点云流在自动驾驶和机器人技术中至关重要，但现有的分割网络在处理每一帧时都是从头开始，尽管连续帧之间有很大重叠。我们观察到，点云变换器的中间特征在同一空间区域的帧之间保持语义一致性，尤其是在深层阶段。基于此，我们提出了SpaceCache，一种无训练的特征缓存，用于在帧之间重用这些特征。之前观察到区域的标记跳过一系列变换器块并采用其缓存特征，只有剩余的标记需要计算，并且完整的标记布局被恢复以进行密集预测。轻量级的缓存管理通过限制每个条目的年龄并驱逐低置信度条目来保持重用特征的可靠性。与标记合并不同，SpaceCache以微不足道的成本选择标记，并在每个编码器阶段运行其缓存操作一次。在包括nuScenes、Waymo和ScanNet在内的户外和室内基准测试中，使用Utonia和LitePT-B两个变换器骨干，SpaceCache实现了高达1.65倍的加速，同时mIoU下降不到1点，并且始终优于标记合并方法。",
+  "arxiv_id": "2610.21207",
+  "arxiv_url": "https://arxiv.org/abs/2610.21207v1",
+  "authors": [
+    "Dongheon Yang",
+    "Beomseok Kang",
+    "Jae-Joon Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-16#paper-2610-21207",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-16T09:26:22.114605+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.21207v1",
+  "published_at": "2026-10-15T04:02:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-10-16"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.21207v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-16"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "SpaceCache: Intermediate Feature Reuse for Efficient Semantic Segmentation on Point Cloud Streams",
+  "title_zh": "SpaceCache：用于点云流高效语义分割的中间特征重用",
+  "translation_url": "https://hjfy.top/arxiv/2610.21207"
+}
