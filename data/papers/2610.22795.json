@@ -1,0 +1,64 @@
+{
+  "abstract": "In autonomous driving, perceiving surrounding objects is not enough: failing to understand how they move and interact over time can lead to dangerous decisions. Evaluating vision-language models (VLMs) therefore requires testing whether they connect past spatial observations to future consequences. Yet existing benchmarks often assess edge cases through basic perception questions or test temporal understanding in simple scenarios, leaving complex spatiotemporal reasoning underexplored. We introduce STRIDE (SpatioTemporal Reasoning In Driving Edge Cases), an object-centric benchmark for long-tail, safety-critical driving scenarios. STRIDE covers six task families: spatial perception, spatial understanding, temporal memory, temporal extrapolation, trajectory prediction, and scene-context awareness. It pairs multiple-choice questions probing individual spatiotemporal judgments with related free-form visual question answering (VQA) requiring detailed scene explanations and justifications of driving decisions. We prioritize scenes with unusual object behaviors and complex traffic interactions, generate reference answers from structured dataset annotations through automated procedures, and use limited language-model assistance and human verification to ensure annotation quality. Across 12 proprietary, open-weight, and driving-specialized models, even the best performer, GPT-6-Astra, achieves only 43.4% average multiple-choice accuracy, versus an approximately 20% random-choice baseline. Further analysis reveals that strong performance in describing driving scenes does not necessarily translate to accurate safety-critical judgments, and that models struggle more with reconstructing object motion than recalling past positions. STRIDE thus exposes spatiotemporal driving limitations that aggregate VQA scores can conceal.",
+  "abstract_zh": "在自动驾驶中，仅仅感知周围物体是不够的：未能理解它们如何随时间移动和相互作用可能导致危险的决策。因此，评估视觉-语言模型（VLMs）需要测试它们是否能够将过去的空间观察与未来的后果联系起来。然而，现有基准通常通过基本的感知问题评估边缘案例，或在简单场景中测试时间理解，导致复杂的时空推理未得到充分探索。我们引入了STRIDE（驾驶边缘案例中的时空推理），这是一个以对象为中心的基准，针对长尾的、安全关键的驾驶场景。STRIDE涵盖六个任务类别：空间感知、空间理解、时间记忆、时间外推、轨迹预测和场景上下文意识。它将探测个体时空判断的多项选择题与需要详细场景解释和驾驶决策理由的自由形式视觉问答（VQA）相结合。我们优先考虑具有异常物体行为和复杂交通互动的场景，通过自动化程序从结构化数据集注释生成参考答案，并使用有限的语言模型辅助和人工验证来确保注释质量。在12个专有、开放权重和驾驶专用模型中，即使是表现最好的模型GPT-6-Astra，其平均多项选择准确率也仅为43.4%，而随机选择的基线约为20%。进一步分析表明，在描述驾驶场景方面的强大表现并不一定转化为准确的安全关键判断，模型在重建物体运动方面的表现更差于回忆过去的位置。因此，STRIDE揭示了时空驾驶的局限性，而聚合的VQA分数可能掩盖了这些局限性。",
+  "arxiv_id": "2610.22795",
+  "arxiv_url": "https://arxiv.org/abs/2610.22795v1",
+  "authors": [
+    "Lieqi Liu",
+    "Rui gao",
+    "Jia-Chen Gu",
+    "Wenbo Hu",
+    "Zhaobin Mo",
+    "Ahmadreza Moradipari",
+    "Nejib Ammar",
+    "Wei Wang",
+    "Nanyun Peng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-22795",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.466332+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.22795v1",
+  "published_at": "2026-10-16T01:13:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "驾驶",
+      "交通",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.22795v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "STRIDE: Evaluating Spatiotemporal Reasoning in Driving Edge Cases",
+  "title_zh": "STRIDE：评估驾驶边缘案例中的时空推理",
+  "translation_url": "https://hjfy.top/arxiv/2610.22795"
+}

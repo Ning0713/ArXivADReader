@@ -1,0 +1,54 @@
+{
+  "abstract": "Self-driving laboratories (SDLs) accelerate scientific discovery by automating experimental execution and optimization. AI agents can increasingly propose new experiments, but existing SDLs can only run the procedures they were built for. Adapting them to a new experiment still takes extensive manual engineering, which makes laboratory flexibility the bottleneck for scaling discovery. We introduce the self-building laboratory (SBL), which designs, configures, and operates its own laboratory setup given a high-level scientific goal. SBL starts from whatever already exists, from an empty room to a working SDL, and builds the missing capabilities: the lab layout, its digital twin, robot skills, and experimental workflows. We demonstrate the system working across different robots and setups, scaling from a single workstation to laboratories with several robots working together. We validate SBL's end-to-end capabilities through a real-world quantum-dot synthesis experiment. By shifting the role of human researchers from manually configuring and programming device automation to specifying scientific objectives, SBL makes scientific automation more accessible, flexible, and scalable. Project website: https://self-building-labs.github.io/",
+  "abstract_zh": "自驱动实验室（Self-driving laboratories, SDLs）通过自动化实验执行和优化加速科学发现。人工智能代理能够越来越多地提出新的实验，但现有的SDL只能执行其构建时设定的程序。将其适应于新实验仍然需要大量的手动工程，这使得实验室的灵活性成为扩展发现的瓶颈。我们提出了自建实验室（Self-building laboratory, SBL），它能够根据高层次的科学目标设计、配置和操作自己的实验室设置。SBL从现有的任何基础开始，从一个空房间到一个正在运行的SDL，并构建缺失的能力：实验室布局、数字双胞胎、机器人技能和实验工作流程。我们展示了该系统在不同机器人和设置下的工作，能够从单个工作站扩展到多个机器人协同工作的实验室。我们通过一个实际的量子点合成实验验证了SBL的端到端能力。通过将人类研究者的角色从手动配置和编程设备自动化转变为指定科学目标，SBL使科学自动化变得更加可及、灵活和可扩展。项目网站：https://self-building-labs.github.io/",
+  "arxiv_id": "2610.23826",
+  "arxiv_url": "https://arxiv.org/abs/2610.23826v1",
+  "authors": [
+    "Jiaru Bai",
+    "Yuchi Zhao",
+    "Han Hao",
+    "Miroslav Bogdanovic",
+    "Yang Cao",
+    "Varinia Bernales",
+    "Alán Aspuru-Guzik"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-23826",
+  "categories": [
+    "cs.AI",
+    "cs.MA",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.574837+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23826v1",
+  "published_at": "2026-10-16T17:48:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "driving",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23826v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "协同/V2X"
+    ]
+  },
+  "title": "Self-Building Labs",
+  "title_zh": "自建实验室",
+  "translation_url": "https://hjfy.top/arxiv/2610.23826"
+}

@@ -1,0 +1,53 @@
+{
+  "abstract": "Candidate-based end-to-end driving planners reason over a finite set of trajectory hypotheses. However, for sparse planners, a limited candidate set may provide insufficient support for scene-relevant maneuvers, while fixed downstream candidate budgets do not account for prediction uncertainty. To address these challenges, we introduce Expand-and-Prune, a test-time framework that jointly adapts candidate support and capacity without updating learned parameters. The framework expands the native candidate set using semantic driving intent and temporally propagated predictions and then uses uncertainty in intermediate trajectory scores to adaptively prune the resulting candidates. Across four heterogeneous candidate-based planners and four benchmarks, Expand-and-Prune consistently improves planning performance. It achieves state-of-the-art results on LangAuto, increasing the Driving Score from 68.2 to 75.9, while providing further improvement on Bench2Drive, Fail2Drive, and NAVSIMv2, with particularly strong improvements in out-of-distribution scenarios. Moreover, in its full instantiation, 72.5% of selected trajectories originate from the newly introduced intent-guided or temporal candidates, confirming that candidate-space expansion provides useful hypotheses beyond those generated natively by the planner. The code is available at https://github.com/iis-esslingen/Expand-and-Prune.",
+  "abstract_zh": "基于候选的端到端驾驶规划器在有限的轨迹假设集上进行推理。然而，对于稀疏规划器而言，有限的候选集可能无法为场景相关的机动提供足够的支持，而固定的下游候选预算并未考虑预测的不确定性。为了解决这些挑战，我们提出了扩展与修剪（Expand-and-Prune），一个在测试时共同适应候选支持和容量的框架，而无需更新学习的参数。该框架利用语义驾驶意图和时间传播的预测来扩展原生候选集，然后利用中间轨迹评分的不确定性自适应地修剪结果候选。在四个异构的基于候选的规划器和四个基准测试中，扩展与修剪始终提高了规划性能。在LangAuto上达到了最新的成果，将驾驶得分从68.2提高到75.9，同时在Bench2Drive、Fail2Drive和NAVSIMv2上也提供了进一步的改进，尤其在分布外场景中表现出显著的提升。此外，在其完整实例中，72.5%的选定轨迹来自新引入的意图引导或时间候选，确认候选空间的扩展提供了超出规划器原生生成的假设的有用假设。代码可在 https://github.com/iis-esslingen/Expand-and-Prune 获取。",
+  "arxiv_id": "2610.23262",
+  "arxiv_url": "https://arxiv.org/abs/2610.23262v1",
+  "authors": [
+    "Fabian Schmidt",
+    "Karol Fedurko",
+    "Markus Enzweiler",
+    "Abhinav Valada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-23262",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.435817+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23262v1",
+  "published_at": "2026-10-16T10:34:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23262v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Expand-and-Prune: Test-Time Candidate-Space Adaptation for End-to-End Autonomous Driving",
+  "title_zh": "扩展与修剪：端到端自主驾驶的测试时候候选空间适应",
+  "translation_url": "https://hjfy.top/arxiv/2610.23262"
+}

@@ -1,0 +1,48 @@
+{
+  "abstract": "Token merging improves the efficiency of Vision Transformers by combining redundant tokens, but existing methods largely rely on feature similarity to determine which tokens to merge. This criterion is effective for semantic segmentation, yet can fail in instance segmentation, where adjacent objects of the same class often have highly similar features. We identify this failure mode as cross-instance token fusion. We introduce MaskMerge, an instance-aware token merging method that uses coarse intermediate mask predictions to constrain feature-based merging and preserve instance boundaries. We evaluate MaskMerge on two diverse instance segmentation domains characterized by high inter-instance visual similarity: PanNuke and iSAID. Against the SOTA token merging method ALGM, MaskMerge improves mAP from 30.1 to 32.1 on PanNuke while reducing computation from 229 to 153 GFLOPs and running 1.18x faster, and from 33.1 to 36.2 on iSAID while reducing computation from 198 to 182 GFLOPs and running 1.23x faster. Additionally, we also test it on Cityscapes and match ALGM's performance while using fewer FLOPs. The gains also transfer to an MAE pretrained backbone, demonstrating that instance-aware merging enables more aggressive compression when appearance similarity alone cannot reliably preserve object identity.",
+  "abstract_zh": "标记合并通过组合冗余标记来提高视觉变换器的效率，但现有方法主要依赖特征相似性来确定合并哪些标记。该标准对于语义分割是有效的，但在实例分割中可能失效，因为同类相邻物体的特征往往高度相似。我们将这种失效模式称为跨实例标记融合。我们提出了MaskMerge，一种面向实例的标记合并方法，利用粗略的中间掩码预测来限制基于特征的合并并保持实例边界。我们在两个具有高实例间视觉相似性的多样化实例分割领域上评估了MaskMerge：PanNuke和iSAID。与当前最先进的标记合并方法ALGM相比，MaskMerge在PanNuke上将mAP从30.1提高到32.1，同时将计算量从229 GFLOPs减少到153 GFLOPs，运行速度提高了1.18倍；在iSAID上将mAP从33.1提高到36.2，同时将计算量从198 GFLOPs减少到182 GFLOPs，运行速度提高了1.23倍。此外，我们还在Cityscapes上进行了测试，表现与ALGM相当，但使用了更少的FLOPs。这些提升也转移到了MAE预训练的主干网络上，证明了面向实例的合并在单靠外观相似性无法可靠保持物体身份时，能够实现更激进的压缩。",
+  "arxiv_id": "2610.22921",
+  "arxiv_url": "https://arxiv.org/abs/2610.22921v1",
+  "authors": [
+    "Bavesh Balaji",
+    "Letian Jiang",
+    "Alexander Wong",
+    "David Clausi",
+    "Sirisha Rambhatla"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-22921",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.470759+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.22921v1",
+  "published_at": "2026-10-16T04:37:01Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.22921v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合"
+    ]
+  },
+  "title": "MaskMerge: Structure-aware Token Merging for Efficient Instance Segmentation",
+  "title_zh": "MaskMerge：面向结构的高效实例分割的标记合并",
+  "translation_url": "https://hjfy.top/arxiv/2610.22921"
+}

@@ -1,0 +1,56 @@
+{
+  "abstract": "While data collection for model training is relatively easy, curating high-quality datasets from large collections is inherently challenging. Coreset estimation methods address this problem by identifying the best data subsets to train models on. However, existing approaches often require proxy model training, extensive annotations, or task-specific tailoring. Unsupervised alternatives typically exploit geometric properties in foundation model feature spaces, but are limited to pairwise image-to-image comparisons or comparisons against a fixed subset. We introduce CoreDNA, an unsupervised, task-agnostic coreset estimation approach that pools neuron activations from vision foundation models into per-image and per-dataset distributions. By comparing each image's distribution to the dataset-level distribution, CoreDNA can capture both low-level visual structure and high-level semantic information across layers. We find that high-quality samples concentrate in the tails of the last layer's activation statistics, which we validate by relating them to training-based coreset methods. Building on these findings, we develop a computationally efficient selection mechanism to construct task-agnostic, high-quality coresets for selective annotation and model training. Across image classification, semantic segmentation, depth estimation, and imitation learning for end-to-end driving and mobile manipulation, CoreDNA matches or outperforms the state of the art, demonstrating unprecedented generalization across perception and action tasks. These results highlight the effectiveness of compact activation-based representations for data selection.",
+  "abstract_zh": "尽管模型训练的数据收集相对容易，但从大量数据集中策划高质量数据集本质上是具有挑战性的。核心集估计方法通过识别最佳数据子集来解决这一问题，以训练模型。然而，现有的方法通常需要代理模型训练、广泛的注释或特定任务的调整。无监督的替代方案通常利用基础模型特征空间中的几何属性，但仅限于成对的图像对图像比较或与固定子集的比较。我们提出了CoreDNA，这是一种无监督的、任务无关的核心集估计方法，它将视觉基础模型中的神经元激活汇聚成每图像和每数据集的分布。通过将每个图像的分布与数据集级别的分布进行比较，CoreDNA能够捕捉到跨层的低级视觉结构和高级语义信息。我们发现高质量样本集中在最后一层激活统计的尾部，我们通过将其与基于训练的核心集方法相关联来验证这一点。基于这些发现，我们开发了一种计算高效的选择机制，以构建任务无关的高质量核心集，用于选择性注释和模型训练。在图像分类、语义分割、深度估计以及端到端驾驶和移动操作的模仿学习中，CoreDNA的表现与最先进的方法相匹配或超越，展示了在感知与行动任务中的前所未有的泛化能力。这些结果突显了基于紧凑激活表示的数据选择的有效性。",
+  "arxiv_id": "2610.23642",
+  "arxiv_url": "https://arxiv.org/abs/2610.23642v1",
+  "authors": [
+    "Julia Hindel",
+    "Benjamin Ramtoula",
+    "Kyuhwan Yeon",
+    "Nick Heppert",
+    "Paul Newman",
+    "Daniele De Martini",
+    "Abhinav Valada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-23642",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.506182+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23642v1",
+  "published_at": "2026-10-16T15:43:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "driving",
+      "驾驶",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 46
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23642v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Diversity Without Labels: Task-Agnostic Coreset Selection Across Perception and Action",
+  "title_zh": "无标签的多样性：跨感知与行动的任务无关核心集选择",
+  "translation_url": "https://hjfy.top/arxiv/2610.23642"
+}

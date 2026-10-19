@@ -1,0 +1,55 @@
+{
+  "abstract": "Accurate prediction of pedestrian crossing intentions plays a critical role in enhancing the safety of pedestrian-vehicle interactions in autonomous driving. However, effectively capturing subtle spatiotemporal patterns in pedestrian pose sequences and integrating complementary visual and ego-vehicle motion information remain challenging. This paper proposes a spatial-temporal-channel attention-enhanced multimodal graph network (STC-MGNet) for pedestrian crossing intention prediction. STC-MGNet introduces a spatial-temporal-channel (STC) attention-enhanced pose graph encoder to learn discriminative representations from pedestrian pose sequences. Three parallel attention branches selectively emphasize informative skeletal joints, observation frames, and feature channels, with their outputs integrated through learnable fusion weights. To leverage complementary visual and ego-vehicle motion information, a multi-stage cross-modal channel modulation mechanism is introduced to adaptively refine pose representations through modality-specific channel gating at successive graph encoding stages. Experimental results demonstrate that STC-MGNet achieves accuracy rates of 70%, 87%, and 88% on the JAADbeh, JAADall, and PIE datasets, respectively, outperforming several representative baseline methods. Ablation experiments further highlight the complementary contributions of visual and ego-vehicle motion information to prediction performance.",
+  "abstract_zh": "准确预测行人过马路的意图在提升自动驾驶中行人-车辆交互的安全性方面至关重要。然而，有效捕捉行人姿态序列中的细微时空模式并整合互补的视觉信息和自我车辆运动信息仍然具有挑战性。本文提出了一种增强空间-时间-通道注意力的多模态图网络（STC-MGNet）用于行人过马路意图预测。STC-MGNet引入了一种空间-时间-通道（STC）注意力增强的姿态图编码器，从行人姿态序列中学习区分性表示。三个并行注意力分支选择性地强调信息丰富的骨骼关节、观察帧和特征通道，其输出通过可学习的融合权重进行整合。为了利用互补的视觉信息和自我车辆运动信息，提出了一种多阶段跨模态通道调制机制，通过在连续的图编码阶段进行模态特定的通道门控，自适应地细化姿态表示。实验结果表明，STC-MGNet在JAADbeh、JAADall和PIE数据集上的准确率分别达到了70%、87%和88%，超越了几种代表性的基线方法。消融实验进一步强调了视觉信息和自我车辆运动信息对预测性能的互补贡献。",
+  "arxiv_id": "2610.23356",
+  "arxiv_url": "https://arxiv.org/abs/2610.23356v1",
+  "authors": [
+    "Yuanzhe Li",
+    "Meng Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-23356",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.489899+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23356v1",
+  "published_at": "2026-10-16T12:01:05Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego-vehicle",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "行人"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23356v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常",
+      "多传感器融合"
+    ]
+  },
+  "title": "STC-MGNet: Spatial-Temporal-Channel Attention-Enhanced Multimodal Graph Network for Pedestrian Intention Prediction",
+  "title_zh": "STC-MGNet：增强空间-时间-通道注意力的多模态图网络用于行人意图预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.23356"
+}

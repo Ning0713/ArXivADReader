@@ -1,0 +1,64 @@
+{
+  "abstract": "Panoptic occupancy unifies 3D geometry, semantics, and instance identities, but its development is limited by scarce instance-aware annotations. Existing benchmarks mainly provide semantic labels reconstructed from incomplete sensor observations, while panoptic datasets have limited domain coverage or annotation completeness. We introduce PanoBench, a camera-centric panoptic occupancy prediction benchmark spanning synthetic and real-world driving scenes. It combines PanoBench-CarlaOcc, PanoBench-nuScenes, and PanoBench-KITTI360 through canonical data interfaces and unified evaluation protocols, providing multi-resolution annotations with persistent instance identities. The synthetic branch derives complete panoptic geometry from simulated meshes. For real-world data, a new pipeline reconstructs backgrounds using geometric priors and topology constraints, generates foreground mesh assets from multi-frame multi-view images, and fuses them into sparse panoptic voxels. A unified valid-mask protocol evaluates complete thing instances supported by temporal observations while scoring stuff regions at the voxel level. Analyses of observation fidelity, geometric completeness, spatial continuity, and temporal consistency demonstrate the benefits of the resulting annotations over existing occupancy benchmarks. We benchmark representative methods on semantic occupancy prediction, panoptic occupancy prediction, and 4D occupancy forecasting, and study voxel resolution, synthetic-to-real transfer, and storage efficiency. These results reveal complementary strengths of volumetric and ray-based metrics and persistent challenges in real-world instance-aware prediction. PanoBench is available at https://mias.group/PanoBench.",
+  "abstract_zh": "全景占用统一了三维几何、语义和实例身份，但其发展受到稀缺的实例感知注释的限制。现有基准主要提供从不完整传感器观测中重建的语义标签，而全景数据集在领域覆盖或注释完整性方面有限。我们引入了PanoBench，一个以相机为中心的全景占用预测基准，涵盖合成和真实世界的驾驶场景。它通过标准数据接口和统一的评估协议，结合了PanoBench-CarlaOcc、PanoBench-nuScenes和PanoBench-KITTI360，提供具有持久实例身份的多分辨率注释。合成分支从模拟网格中推导出完整的全景几何。对于真实世界数据，一个新的管道使用几何先验和拓扑约束重建背景，从多帧多视角图像生成前景网格资产，并将其融合为稀疏的全景体素。统一的有效掩码协议评估由时间观测支持的完整物体实例，同时在体素级别对物体区域进行评分。对观测保真度、几何完整性、空间连续性和时间一致性的分析表明，所得到的注释在现有占用基准上具有优势。我们对语义占用预测、全景占用预测和4D占用预测的代表性方法进行了基准测试，并研究了体素分辨率、合成到真实的转移和存储效率。这些结果揭示了体积度量和基于光线的度量的互补优势，以及在真实世界实例感知预测中的持续挑战。PanoBench可在https://mias.group/PanoBench获取。",
+  "arxiv_id": "2610.23537",
+  "arxiv_url": "https://arxiv.org/abs/2610.23537v1",
+  "authors": [
+    "Yi Feng",
+    "Zizhan Guo",
+    "Junwu E",
+    "Yu Ma",
+    "Mengtan Zhang",
+    "Jin Wu",
+    "Wei Ye",
+    "Hanli Wang",
+    "Qijun Chen",
+    "Danwei Wang",
+    "Rui Fan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-23537",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.499364+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23537v1",
+  "published_at": "2026-10-16T14:34:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23537v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "PanoBench: A Panoptic Occupancy Prediction Benchmark for Autonomous Driving",
+  "title_zh": "PanoBench：一种用于自动驾驶的全景占用预测基准",
+  "translation_url": "https://hjfy.top/arxiv/2610.23537"
+}

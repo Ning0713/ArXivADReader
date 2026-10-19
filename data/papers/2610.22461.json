@@ -1,0 +1,58 @@
+{
+  "abstract": "Refuse collection in pedestrian campuses, parks and mixed-use districts remains manual because compaction trucks cannot reach bins located on walkways, courtyards and building service doors. This paper presents Mothership, a two-tier autonomous refuse collection system in which an electric compaction truck (the mothership) carries two low-speed sidewalk robots (RoboCarts) that fetch standard two-wheel bins, deliver them to the truck, return the empty bins to their original positions and re-dock on the truck for charging. The architecture separates responsibilities by scale: the truck performs road driving, compaction, lifting and energy supply, while the carts perform only sidewalk transport and bin grasping. This split removes the lift-and-tip mechanism from the sidewalk vehicle, keeping it light and low, and relaxes cart-to-truck docking tolerance to the +/-100 mm capture window of a standard automated lifter. We describe the system architecture, the bin-handling and docking interfaces, and a mission-planning formulation that decomposes a route into truck stop points and cart tasks. A discrete-event simulation over synthetic campus layouts with 2-16 bins/ha quantifies throughput as a function of bin density, cart count and stop-point radius. A two-cart configuration serves 20-29 bins/h. Throughput is governed by an interaction between cart count and stop-point radius: a single cart performs best with many close stops, whereas three or four carts need wide stops (80 m) to stay busy, reaching 35-49 bins/h at moderate-to-high densities. The best stop radius therefore has to be chosen together with the fleet size, not fixed in advance.",
+  "abstract_zh": "在步行校园、公园和混合用途区域，垃圾收集仍然依赖人工，因为压缩垃圾车无法到达位于人行道、庭院和建筑服务门口的垃圾桶。本文提出了母舰（Mothership），一种双层自主垃圾收集系统，其中一辆电动压缩垃圾车（母舰）携带两辆低速人行道机器人（RoboCarts），这些机器人负责取回标准的双轮垃圾桶，将其送回垃圾车，返回空桶至原位，并在垃圾车上重新对接以进行充电。该架构按规模划分责任：垃圾车负责道路驾驶、压缩、提升和能源供应，而机器人仅负责在人行道上运输和抓取垃圾桶。这种分离使人行道车辆不再需要升降和倾倒机制，从而保持轻便和低矮，并放宽了机器人与垃圾车对接的容差，达到标准自动升降机的+/-100毫米捕获窗口。我们描述了系统架构、垃圾桶处理和对接接口，以及一种任务规划公式，该公式将路线分解为垃圾车停靠点和机器人任务。通过对具有2-16个垃圾桶/公顷的合成校园布局进行离散事件模拟，量化了垃圾收集的吞吐量与垃圾桶密度、机器人数量和停靠点半径之间的关系。两辆机器人的配置可以服务20-29个垃圾桶/小时。吞吐量受机器人数量与停靠点半径之间的相互作用影响：单辆机器人在多个近距离停靠点时表现最佳，而三辆或四辆机器人需要较宽的停靠点（80米）才能保持忙碌，在中到高密度下达到35-49个垃圾桶/小时。因此，最佳的停靠半径必须与车队规模一起选择，而不是事先固定。",
+  "arxiv_id": "2610.22461",
+  "arxiv_url": "https://arxiv.org/abs/2610.22461v1",
+  "authors": [
+    "Wei Wang",
+    "Yiru Veronika Wang",
+    "Yihan Wang",
+    "Zihao Li",
+    "Xiaohui Liang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-22461",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.413747+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.22461v1",
+  "published_at": "2026-10-15T16:57:17Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "pedestrian",
+      "驾驶",
+      "车辆",
+      "道路",
+      "grasping"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 40
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.22461v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "研究面向校园等步行区域的分层自动驾驶垃圾收集方案，重点解决自动驾驶垃圾车与人行道机器人之间的任务分解、停靠点选择和多机器人调度问题，并通过仿真评估不同车队配置的作业效率。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "协同/V2X"
+    ]
+  },
+  "title": "Mothership: A Two Tier Autonomous Refuse Collection System for Pedestrian Campuses",
+  "title_zh": "母舰：一种适用于步行校园的双层自主垃圾收集系统",
+  "translation_url": "https://hjfy.top/arxiv/2610.22461"
+}

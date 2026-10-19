@@ -1,0 +1,55 @@
+{
+  "abstract": "Reliable 3D person detection is important for rescue robotics to give first responders situational awareness. Yet most multimodal 3D detection research targets automotive scenarios in which pedestrians mostly appear in a narrow range of upright, near-road poses. It is therefore unclear how much of the reported performance transfers to rescue settings, as a person may be lying, partially occluded, or in unstructured indoor and outdoor environments. To investigate this gap, we introduce TriSAR-3D, a multimodal person detection dataset recorded with a high-resolution 128-channel LiDAR, an RGB camera, and a thermal camera. It captures varied poses in indoor as well as outdoor locations at different times of day to study their influence on 3D object detector performance. Furthermore, we propose a novel trimodal 3D detection pipeline, PaintFusion, that fuses PointPainting-based evidence using a simple MLP. We show that the derived method reaches 65.4 AP@50 and thereby outperforms strong LiDAR-only (CenterPoint, 53.4), RGB+LiDAR (BEVFusion, 60.5), and adapted trimodal (Tri-BEVFusion, 60.7) baselines on the dataset. At the same time, it is substantially faster than other fusion-based methods such as BEVFusion, with a per-frame latency of 51.6 ms compared to 101 ms. Additionally, we test how the performance of different 3D object detectors generalizes to unseen pose categories. Removing lying instances from training data collapses the lying-pose AP@50 to near zero across all evaluated detectors. The results indicate that dataset diversity exerts a large effect on 3D object detection performance. The dataset and code are available at https://github.com/MarkusKramer1/3D-Trimodal-People-Detection.",
+  "abstract_zh": "可靠的3D人员检测对于救援机器人提供现场情况意识至关重要。然而，大多数多模态3D检测研究主要集中在汽车场景中，在这些场景中，行人通常以直立、靠近道路的姿势出现。因此，目前尚不清楚报告的性能在救援环境中能转移多少，因为人员可能处于卧倒、部分遮挡或非结构化的室内外环境中。为了解决这一问题，我们引入了TriSAR-3D，这是一个使用高分辨率128通道LiDAR、RGB相机和热成像相机记录的多模态人员检测数据集。该数据集捕捉了不同时间段内室内和室外位置的多种姿势，以研究这些姿势对3D物体检测器性能的影响。此外，我们提出了一种新颖的三模态3D检测管道PaintFusion，该管道使用简单的多层感知器（MLP）融合基于PointPainting的证据。我们展示了所提出的方法在数据集上达到了65.4 AP@50，超越了强大的LiDAR单一（CenterPoint，53.4）、RGB+LiDAR（BEVFusion，60.5）和适应性三模态（Tri-BEVFusion，60.7）基准。同时，其速度显著快于其他基于融合的方法，如BEVFusion，帧延迟为51.6毫秒，而BEVFusion为101毫秒。此外，我们测试了不同3D物体检测器在未见姿势类别上的性能泛化能力。从训练数据中移除卧倒实例使得卧倒姿势的AP@50在所有评估的检测器中接近于零。结果表明，数据集的多样性对3D物体检测性能有很大影响。数据集和代码可在https://github.com/MarkusKramer1/3D-Trimodal-People-Detection获取。",
+  "arxiv_id": "2610.22509",
+  "arxiv_url": "https://arxiv.org/abs/2610.22509v1",
+  "authors": [
+    "Markus Kramer",
+    "Jan Wachenfeld",
+    "Oskar von Stryk"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-22509",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.454058+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.22509v1",
+  "published_at": "2026-10-15T18:03:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automotive",
+      "road",
+      "道路",
+      "行人",
+      "3d object detection",
+      "3d detection",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.22509v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "3D 检测",
+      "仿真/数据"
+    ]
+  },
+  "title": "TriSAR-3D and PaintFusion: A Novel Trimodal LiDAR-RGB-Thermal Dataset and Method for 3D Person Detection in Search and Rescue",
+  "title_zh": "TriSAR-3D与PaintFusion：一种新颖的三模态LiDAR-RGB-热成像数据集及其在搜索与救援中的3D人员检测方法",
+  "translation_url": "https://hjfy.top/arxiv/2610.22509"
+}

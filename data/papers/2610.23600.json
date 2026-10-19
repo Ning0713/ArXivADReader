@@ -1,0 +1,52 @@
+{
+  "abstract": "Self-supervised monocular depth estimation is appealing for its potential to scale with unlabeled data, yet existing methods often degrade when trained on diverse scenes. This study finds that, under self-supervision, models tend to encode dataset-specific structural biases rather than transferable scene geometry, leading to cross-domain optimization conflicts. To address this issue, this study proposes the MaSS framework, aiming to make self-supervised depth learning scalable to diverse data. MaSS introduces a dedicated structural representation pathway explicitly decoupled from contextual features, which is guided by a novel scene-structure discrimination objective to learn generalized, layout-aware structural representations for depth decoding. Trained and evaluated on four diverse datasets, both individually and jointly, MaSS substantially outperforms prior self-supervised methods and is the first to consistently benefit from mixed-domain training. Zero-shot evaluation on eight additional datasets further demonstrates its remarkable generalizability, particularly on those entirely out-of-distribution scenes. The source code is publicly available at https://mias.group/MaSS.",
+  "abstract_zh": "自监督单目深度估计因其在无标签数据上的扩展潜力而备受关注，但现有方法在多样化场景上训练时往往效果下降。本研究发现，在自监督的情况下，模型倾向于编码特定数据集的结构偏差，而非可迁移的场景几何形状，从而导致跨域优化冲突。为了解决这一问题，本研究提出了MaSS框架，旨在使自监督深度学习能够扩展到多样化数据。MaSS引入了一条专门的结构表示路径，该路径与上下文特征显式解耦，并通过一种新颖的场景结构区分目标进行引导，以学习通用的、布局感知的结构表示用于深度解码。在四个多样化数据集上进行的单独和联合训练与评估中，MaSS显著优于之前的自监督方法，并且是首个在混合域训练中持续受益的模型。在八个额外数据集上的零-shot评估进一步证明了其卓越的泛化能力，尤其是在完全超出分布的场景上。源代码已公开，地址为 https://mias.group/MaSS。",
+  "arxiv_id": "2610.23600",
+  "arxiv_url": "https://arxiv.org/abs/2610.23600v1",
+  "authors": [
+    "Mengtan Zhang",
+    "Yuchuan Cui",
+    "Yu Ma",
+    "Zizhan Guo",
+    "Wei Ye",
+    "Rui Fan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-23600",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.503691+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23600v1",
+  "published_at": "2026-10-16T15:17:07Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23600v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "提出 MaSS 自监督单目深度估计框架，通过解耦场景结构与上下文特征并引入结构判别目标，缓解多数据域联合训练中的结构偏差和优化冲突，提升深度估计的跨域泛化能力。该方法虽非专门面向自动驾驶，但可用于驾驶环境中的单目几何感知和深度估计。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Learning to Discriminate Scene Structures Makes Self-Supervised Depth Learning Scalable",
+  "title_zh": "学习区分场景结构使自监督深度学习具有可扩展性",
+  "translation_url": "https://hjfy.top/arxiv/2610.23600"
+}

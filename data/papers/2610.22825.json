@@ -1,0 +1,54 @@
+{
+  "abstract": "World models have shown considerable promise in sequential decision-making by anticipating the consequences of actions and providing predictive foresight for policy learning. However, learning to reason about counterfactual actions remains challenging, since predictive objectives may underemphasize information critical for action evaluation, while unexecuted actions lack observed futures for direct supervision. To address these challenges, we propose the World Action Critic (WAC) Model, which proposes multimodal action candidates and jointly learns candidate-conditioned future prediction and consequence evaluation. In our proposed framework, critic supervision directly shapes intermediate predictive representations during rollout, encouraging them to retain information needed to distinguish action quality. Observed futures supervise prediction for executed actions, while external task-quality targets provide evaluation signals for counterfactual candidates. Through joint optimization, critic signals from these candidates propagate into predictive representations without requiring their observed futures. Our theoretical analysis characterizes critic-guided feature retention and bounds candidate-selection regret. Applied to autonomous driving, WAC achieves 93.4 PDMS on NAVSIM-v1, demonstrating the effectiveness of jointly learning predictive foresight and consequence evaluation.",
+  "abstract_zh": "世界模型在顺序决策中展现出相当大的潜力，通过预测行动的后果并为政策学习提供前瞻性预测。然而，学习对反事实行动进行推理仍然具有挑战性，因为预测目标可能会低估对行动评估至关重要的信息，而未执行的行动缺乏可直接监督的观察未来。为了解决这些挑战，我们提出了世界行动评论家（WAC）模型，该模型提出了多模态行动候选，并联合学习候选条件的未来预测和后果评估。在我们提出的框架中，评论家监督直接塑造了在回滚过程中的中间预测表示，鼓励它们保留区分行动质量所需的信息。观察到的未来对已执行行动的预测进行监督，而外部任务质量目标则为反事实候选提供评估信号。通过联合优化，这些候选的评论家信号传播到预测表示中，而无需它们的观察未来。我们的理论分析描述了评论家引导的特征保留，并界定了候选选择的遗憾界限。在应用于自主驾驶时，WAC在NAVSIM-v1上达到了93.4 PDMS，证明了联合学习预测前瞻与后果评估的有效性。",
+  "arxiv_id": "2610.22825",
+  "arxiv_url": "https://arxiv.org/abs/2610.22825v1",
+  "authors": [
+    "Xiangteng Zhang",
+    "Haoyuan Liu",
+    "Yang Guan",
+    "Jingliang Duan",
+    "Yao Lyu",
+    "Tao Zhang",
+    "Shuai Zhang",
+    "Kehua Sheng",
+    "Bo Zhang",
+    "Shengbo Eben Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-19#paper-2610-22825",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-19T10:26:42.537088+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.22825v1",
+  "published_at": "2026-10-16T02:05:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-10-19"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.22825v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-19"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": []
+  },
+  "title": "World Action Critic (WAC) Model: Joint Foresight and Criticism for Policy Learning",
+  "title_zh": "世界行动评论家（WAC）模型：政策学习的联合前瞻与批评",
+  "translation_url": "https://hjfy.top/arxiv/2610.22825"
+}

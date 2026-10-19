@@ -1,6 +1,311 @@
 {
-  "generated_at": "2026-10-16T09:27:46.767145+00:00",
+  "generated_at": "2026-10-19T10:27:48.843618+00:00",
   "items": [
+    {
+      "abstract": "Self-driving laboratories (SDLs) accelerate scientific discovery by automating experimental execution and optimization. AI agents can increasingly propose new experiments, but existing SDLs can only run the procedures they were built for. Adapting them to a new experiment still takes extensive manual engineering, which makes laboratory flexibility the bottleneck for scaling discovery. We introduce the self-building laboratory (SBL), which designs, configures, and operates its own laboratory setup given a high-level scientific goal. SBL starts from whatever already exists, from an empty room to a working SDL, and builds the missing capabilities: the lab layout, its digital twin, robot skills, and experimental workflows. We demonstrate the system working across different robots and setups, scaling from a single workstation to laboratories with several robots working together. We validate SBL's end-to-end capabilities through a real-world quantum-dot synthesis experiment. By shifting the role of human researchers from manually configuring and programming device automation to specifying scientific objectives, SBL makes scientific automation more accessible, flexible, and scalable. Project website: https://self-building-labs.github.io/",
+      "abstract_zh": "自驱动实验室（Self-driving laboratories, SDLs）通过自动化实验执行和优化加速科学发现。人工智能代理能够越来越多地提出新的实验，但现有的SDL只能执行其构建时设定的程序。将其适应于新实验仍然需要大量的手动工程，这使得实验室的灵活性成为扩展发现的瓶颈。我们提出了自建实验室（Self-building laboratory, SBL），它能够根据高层次的科学目标设计、配置和操作自己的实验室设置。SBL从现有的任何基础开始，从一个空房间到一个正在运行的SDL，并构建缺失的能力：实验室布局、数字双胞胎、机器人技能和实验工作流程。我们展示了该系统在不同机器人和设置下的工作，能够从单个工作站扩展到多个机器人协同工作的实验室。我们通过一个实际的量子点合成实验验证了SBL的端到端能力。通过将人类研究者的角色从手动配置和编程设备自动化转变为指定科学目标，SBL使科学自动化变得更加可及、灵活和可扩展。项目网站：https://self-building-labs.github.io/",
+      "authors": [
+        "Jiaru Bai",
+        "Yuchi Zhao",
+        "Han Hao",
+        "Miroslav Bogdanovic",
+        "Yang Cao",
+        "Varinia Bernales",
+        "Alán Aspuru-Guzik"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.23826",
+      "tags": [
+        "端到端驾驶",
+        "协同/V2X"
+      ],
+      "title": "Self-Building Labs",
+      "title_zh": "自建实验室",
+      "url": "/daily/2026-10-19/#paper-2610-23826"
+    },
+    {
+      "abstract": "While data collection for model training is relatively easy, curating high-quality datasets from large collections is inherently challenging. Coreset estimation methods address this problem by identifying the best data subsets to train models on. However, existing approaches often require proxy model training, extensive annotations, or task-specific tailoring. Unsupervised alternatives typically exploit geometric properties in foundation model feature spaces, but are limited to pairwise image-to-image comparisons or comparisons against a fixed subset. We introduce CoreDNA, an unsupervised, task-agnostic coreset estimation approach that pools neuron activations from vision foundation models into per-image and per-dataset distributions. By comparing each image's distribution to the dataset-level distribution, CoreDNA can capture both low-level visual structure and high-level semantic information across layers. We find that high-quality samples concentrate in the tails of the last layer's activation statistics, which we validate by relating them to training-based coreset methods. Building on these findings, we develop a computationally efficient selection mechanism to construct task-agnostic, high-quality coresets for selective annotation and model training. Across image classification, semantic segmentation, depth estimation, and imitation learning for end-to-end driving and mobile manipulation, CoreDNA matches or outperforms the state of the art, demonstrating unprecedented generalization across perception and action tasks. These results highlight the effectiveness of compact activation-based representations for data selection.",
+      "abstract_zh": "尽管模型训练的数据收集相对容易，但从大量数据集中策划高质量数据集本质上是具有挑战性的。核心集估计方法通过识别最佳数据子集来解决这一问题，以训练模型。然而，现有的方法通常需要代理模型训练、广泛的注释或特定任务的调整。无监督的替代方案通常利用基础模型特征空间中的几何属性，但仅限于成对的图像对图像比较或与固定子集的比较。我们提出了CoreDNA，这是一种无监督的、任务无关的核心集估计方法，它将视觉基础模型中的神经元激活汇聚成每图像和每数据集的分布。通过将每个图像的分布与数据集级别的分布进行比较，CoreDNA能够捕捉到跨层的低级视觉结构和高级语义信息。我们发现高质量样本集中在最后一层激活统计的尾部，我们通过将其与基于训练的核心集方法相关联来验证这一点。基于这些发现，我们开发了一种计算高效的选择机制，以构建任务无关的高质量核心集，用于选择性注释和模型训练。在图像分类、语义分割、深度估计以及端到端驾驶和移动操作的模仿学习中，CoreDNA的表现与最先进的方法相匹配或超越，展示了在感知与行动任务中的前所未有的泛化能力。这些结果突显了基于紧凑激活表示的数据选择的有效性。",
+      "authors": [
+        "Julia Hindel",
+        "Benjamin Ramtoula",
+        "Kyuhwan Yeon",
+        "Nick Heppert",
+        "Paul Newman",
+        "Daniele De Martini",
+        "Abhinav Valada"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.23642",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "端到端驾驶"
+      ],
+      "title": "Diversity Without Labels: Task-Agnostic Coreset Selection Across Perception and Action",
+      "title_zh": "无标签的多样性：跨感知与行动的任务无关核心集选择",
+      "url": "/daily/2026-10-19/#paper-2610-23642"
+    },
+    {
+      "abstract": "Self-supervised monocular depth estimation is appealing for its potential to scale with unlabeled data, yet existing methods often degrade when trained on diverse scenes. This study finds that, under self-supervision, models tend to encode dataset-specific structural biases rather than transferable scene geometry, leading to cross-domain optimization conflicts. To address this issue, this study proposes the MaSS framework, aiming to make self-supervised depth learning scalable to diverse data. MaSS introduces a dedicated structural representation pathway explicitly decoupled from contextual features, which is guided by a novel scene-structure discrimination objective to learn generalized, layout-aware structural representations for depth decoding. Trained and evaluated on four diverse datasets, both individually and jointly, MaSS substantially outperforms prior self-supervised methods and is the first to consistently benefit from mixed-domain training. Zero-shot evaluation on eight additional datasets further demonstrates its remarkable generalizability, particularly on those entirely out-of-distribution scenes. The source code is publicly available at https://mias.group/MaSS.",
+      "abstract_zh": "自监督单目深度估计因其在无标签数据上的扩展潜力而备受关注，但现有方法在多样化场景上训练时往往效果下降。本研究发现，在自监督的情况下，模型倾向于编码特定数据集的结构偏差，而非可迁移的场景几何形状，从而导致跨域优化冲突。为了解决这一问题，本研究提出了MaSS框架，旨在使自监督深度学习能够扩展到多样化数据。MaSS引入了一条专门的结构表示路径，该路径与上下文特征显式解耦，并通过一种新颖的场景结构区分目标进行引导，以学习通用的、布局感知的结构表示用于深度解码。在四个多样化数据集上进行的单独和联合训练与评估中，MaSS显著优于之前的自监督方法，并且是首个在混合域训练中持续受益的模型。在八个额外数据集上的零-shot评估进一步证明了其卓越的泛化能力，尤其是在完全超出分布的场景上。源代码已公开，地址为 https://mias.group/MaSS。",
+      "authors": [
+        "Mengtan Zhang",
+        "Yuchuan Cui",
+        "Yu Ma",
+        "Zizhan Guo",
+        "Wei Ye",
+        "Rui Fan"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.23600",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Learning to Discriminate Scene Structures Makes Self-Supervised Depth Learning Scalable",
+      "title_zh": "学习区分场景结构使自监督深度学习具有可扩展性",
+      "url": "/daily/2026-10-19/#paper-2610-23600"
+    },
+    {
+      "abstract": "Panoptic occupancy unifies 3D geometry, semantics, and instance identities, but its development is limited by scarce instance-aware annotations. Existing benchmarks mainly provide semantic labels reconstructed from incomplete sensor observations, while panoptic datasets have limited domain coverage or annotation completeness. We introduce PanoBench, a camera-centric panoptic occupancy prediction benchmark spanning synthetic and real-world driving scenes. It combines PanoBench-CarlaOcc, PanoBench-nuScenes, and PanoBench-KITTI360 through canonical data interfaces and unified evaluation protocols, providing multi-resolution annotations with persistent instance identities. The synthetic branch derives complete panoptic geometry from simulated meshes. For real-world data, a new pipeline reconstructs backgrounds using geometric priors and topology constraints, generates foreground mesh assets from multi-frame multi-view images, and fuses them into sparse panoptic voxels. A unified valid-mask protocol evaluates complete thing instances supported by temporal observations while scoring stuff regions at the voxel level. Analyses of observation fidelity, geometric completeness, spatial continuity, and temporal consistency demonstrate the benefits of the resulting annotations over existing occupancy benchmarks. We benchmark representative methods on semantic occupancy prediction, panoptic occupancy prediction, and 4D occupancy forecasting, and study voxel resolution, synthetic-to-real transfer, and storage efficiency. These results reveal complementary strengths of volumetric and ray-based metrics and persistent challenges in real-world instance-aware prediction. PanoBench is available at https://mias.group/PanoBench.",
+      "abstract_zh": "全景占用统一了三维几何、语义和实例身份，但其发展受到稀缺的实例感知注释的限制。现有基准主要提供从不完整传感器观测中重建的语义标签，而全景数据集在领域覆盖或注释完整性方面有限。我们引入了PanoBench，一个以相机为中心的全景占用预测基准，涵盖合成和真实世界的驾驶场景。它通过标准数据接口和统一的评估协议，结合了PanoBench-CarlaOcc、PanoBench-nuScenes和PanoBench-KITTI360，提供具有持久实例身份的多分辨率注释。合成分支从模拟网格中推导出完整的全景几何。对于真实世界数据，一个新的管道使用几何先验和拓扑约束重建背景，从多帧多视角图像生成前景网格资产，并将其融合为稀疏的全景体素。统一的有效掩码协议评估由时间观测支持的完整物体实例，同时在体素级别对物体区域进行评分。对观测保真度、几何完整性、空间连续性和时间一致性的分析表明，所得到的注释在现有占用基准上具有优势。我们对语义占用预测、全景占用预测和4D占用预测的代表性方法进行了基准测试，并研究了体素分辨率、合成到真实的转移和存储效率。这些结果揭示了体积度量和基于光线的度量的互补优势，以及在真实世界实例感知预测中的持续挑战。PanoBench可在https://mias.group/PanoBench获取。",
+      "authors": [
+        "Yi Feng",
+        "Zizhan Guo",
+        "Junwu E",
+        "Yu Ma",
+        "Mengtan Zhang",
+        "Jin Wu",
+        "Wei Ye",
+        "Hanli Wang",
+        "Qijun Chen",
+        "Danwei Wang",
+        "Rui Fan"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.23537",
+      "tags": [
+        "深度/几何",
+        "仿真/数据",
+        "BEV/Occupancy"
+      ],
+      "title": "PanoBench: A Panoptic Occupancy Prediction Benchmark for Autonomous Driving",
+      "title_zh": "PanoBench：一种用于自动驾驶的全景占用预测基准",
+      "url": "/daily/2026-10-19/#paper-2610-23537"
+    },
+    {
+      "abstract": "Video world models must capture how a scene evolves beyond the current camera view to generate consistent observations when its content reappears. Existing approaches rely on observation history, static point clouds, or image caches constructed from past frames. These representations are often expensive and, more importantly, cannot update dynamic scene content outside the field of view: generated vehicles and pedestrians may be forgotten after leaving the field of view or reappear in physically inaccurate states. We represent an evolving scene through synchronized videos from reference-camera rigs, each comprising eight cameras that jointly cover the surrounding scene. We connect these rigs in a graph and propagate video generation between neighboring rigs to coordinate scene dynamics across locations and time. We introduce Momentum, a two-stage pipeline: WorldUpdate jointly generates reference-camera videos as a shared memory of scene dynamics, and WorldInteract grounds camera-controlled video generation in this evolving memory, allowing moving content to remain represented outside the target view and reappear consistently. To support training and evaluation, we develop a CARLA pipeline that captures synchronized videos from reference camera rigs and a moving target camera, together with an evaluation framework measuring consistency within the generated world state and the target observations.Experiments on generated street scenes show that grounding target videos in scene dynamics generated by Momentum improves dynamic scene consistency by 126.2% in unseen scenes over static image conditioning, while also improving visual fidelity. Our models and source code will be made publicly available.",
+      "abstract_zh": "视频世界模型必须捕捉场景如何在当前摄像机视野之外演变，以便在内容重新出现时生成一致的观察结果。现有的方法依赖于观察历史、静态点云或从过去帧构建的图像缓存。这些表示通常代价高昂，更重要的是，无法更新视野外的动态场景内容：生成的车辆和行人可能在离开视野后被遗忘，或以物理不准确的状态重新出现。我们通过来自参考摄像机装置的同步视频来表示一个不断演变的场景，每个装置由八个摄像机组成，共同覆盖周围场景。我们将这些装置连接成一个图，并在相邻装置之间传播视频生成，以协调不同位置和时间的场景动态。我们提出了动量（Momentum），一个两阶段的流程：WorldUpdate共同生成参考摄像机视频，作为场景动态的共享记忆，而WorldInteract则在这一不断演变的记忆中将摄像机控制的视频生成与之结合，使得移动内容能够在目标视野之外保持表示并一致地重新出现。为了支持训练和评估，我们开发了一个CARLA流程，捕捉来自参考摄像机装置和移动目标摄像机的同步视频，并建立一个评估框架，测量生成的世界状态与目标观察之间的一致性。在生成的街景实验中，基于动量生成的场景动态将目标视频的基础提高了126.2%，在未见场景中相较于静态图像条件，同时也提升了视觉保真度。我们的模型和源代码将公开发布。",
+      "authors": [
+        "Nedko Savov",
+        "Stefan Maria Ailuro",
+        "Danda Pani Paudel",
+        "Yilun Du",
+        "Xi Wang",
+        "Luc Van Gool"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.23423",
+      "tags": [
+        "LiDAR/点云",
+        "世界模型/生成"
+      ],
+      "title": "Momentum: Persistent Dynamics for Video World Models",
+      "title_zh": "动量：视频世界模型的持续动态",
+      "url": "/daily/2026-10-19/#paper-2610-23423"
+    },
+    {
+      "abstract": "Accurate prediction of pedestrian crossing intentions plays a critical role in enhancing the safety of pedestrian-vehicle interactions in autonomous driving. However, effectively capturing subtle spatiotemporal patterns in pedestrian pose sequences and integrating complementary visual and ego-vehicle motion information remain challenging. This paper proposes a spatial-temporal-channel attention-enhanced multimodal graph network (STC-MGNet) for pedestrian crossing intention prediction. STC-MGNet introduces a spatial-temporal-channel (STC) attention-enhanced pose graph encoder to learn discriminative representations from pedestrian pose sequences. Three parallel attention branches selectively emphasize informative skeletal joints, observation frames, and feature channels, with their outputs integrated through learnable fusion weights. To leverage complementary visual and ego-vehicle motion information, a multi-stage cross-modal channel modulation mechanism is introduced to adaptively refine pose representations through modality-specific channel gating at successive graph encoding stages. Experimental results demonstrate that STC-MGNet achieves accuracy rates of 70%, 87%, and 88% on the JAADbeh, JAADall, and PIE datasets, respectively, outperforming several representative baseline methods. Ablation experiments further highlight the complementary contributions of visual and ego-vehicle motion information to prediction performance.",
+      "abstract_zh": "准确预测行人过马路的意图在提升自动驾驶中行人-车辆交互的安全性方面至关重要。然而，有效捕捉行人姿态序列中的细微时空模式并整合互补的视觉信息和自我车辆运动信息仍然具有挑战性。本文提出了一种增强空间-时间-通道注意力的多模态图网络（STC-MGNet）用于行人过马路意图预测。STC-MGNet引入了一种空间-时间-通道（STC）注意力增强的姿态图编码器，从行人姿态序列中学习区分性表示。三个并行注意力分支选择性地强调信息丰富的骨骼关节、观察帧和特征通道，其输出通过可学习的融合权重进行整合。为了利用互补的视觉信息和自我车辆运动信息，提出了一种多阶段跨模态通道调制机制，通过在连续的图编码阶段进行模态特定的通道门控，自适应地细化姿态表示。实验结果表明，STC-MGNet在JAADbeh、JAADall和PIE数据集上的准确率分别达到了70%、87%和88%，超越了几种代表性的基线方法。消融实验进一步强调了视觉信息和自我车辆运动信息对预测性能的互补贡献。",
+      "authors": [
+        "Yuanzhe Li",
+        "Meng Wang"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.23356",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "多传感器融合"
+      ],
+      "title": "STC-MGNet: Spatial-Temporal-Channel Attention-Enhanced Multimodal Graph Network for Pedestrian Intention Prediction",
+      "title_zh": "STC-MGNet：增强空间-时间-通道注意力的多模态图网络用于行人意图预测",
+      "url": "/daily/2026-10-19/#paper-2610-23356"
+    },
+    {
+      "abstract": "Candidate-based end-to-end driving planners reason over a finite set of trajectory hypotheses. However, for sparse planners, a limited candidate set may provide insufficient support for scene-relevant maneuvers, while fixed downstream candidate budgets do not account for prediction uncertainty. To address these challenges, we introduce Expand-and-Prune, a test-time framework that jointly adapts candidate support and capacity without updating learned parameters. The framework expands the native candidate set using semantic driving intent and temporally propagated predictions and then uses uncertainty in intermediate trajectory scores to adaptively prune the resulting candidates. Across four heterogeneous candidate-based planners and four benchmarks, Expand-and-Prune consistently improves planning performance. It achieves state-of-the-art results on LangAuto, increasing the Driving Score from 68.2 to 75.9, while providing further improvement on Bench2Drive, Fail2Drive, and NAVSIMv2, with particularly strong improvements in out-of-distribution scenarios. Moreover, in its full instantiation, 72.5% of selected trajectories originate from the newly introduced intent-guided or temporal candidates, confirming that candidate-space expansion provides useful hypotheses beyond those generated natively by the planner. The code is available at https://github.com/iis-esslingen/Expand-and-Prune.",
+      "abstract_zh": "基于候选的端到端驾驶规划器在有限的轨迹假设集上进行推理。然而，对于稀疏规划器而言，有限的候选集可能无法为场景相关的机动提供足够的支持，而固定的下游候选预算并未考虑预测的不确定性。为了解决这些挑战，我们提出了扩展与修剪（Expand-and-Prune），一个在测试时共同适应候选支持和容量的框架，而无需更新学习的参数。该框架利用语义驾驶意图和时间传播的预测来扩展原生候选集，然后利用中间轨迹评分的不确定性自适应地修剪结果候选。在四个异构的基于候选的规划器和四个基准测试中，扩展与修剪始终提高了规划性能。在LangAuto上达到了最新的成果，将驾驶得分从68.2提高到75.9，同时在Bench2Drive、Fail2Drive和NAVSIMv2上也提供了进一步的改进，尤其在分布外场景中表现出显著的提升。此外，在其完整实例中，72.5%的选定轨迹来自新引入的意图引导或时间候选，确认候选空间的扩展提供了超出规划器原生生成的假设的有用假设。代码可在 https://github.com/iis-esslingen/Expand-and-Prune 获取。",
+      "authors": [
+        "Fabian Schmidt",
+        "Karol Fedurko",
+        "Markus Enzweiler",
+        "Abhinav Valada"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.23262",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "世界模型/生成"
+      ],
+      "title": "Expand-and-Prune: Test-Time Candidate-Space Adaptation for End-to-End Autonomous Driving",
+      "title_zh": "扩展与修剪：端到端自主驾驶的测试时候候选空间适应",
+      "url": "/daily/2026-10-19/#paper-2610-23262"
+    },
+    {
+      "abstract": "Token merging improves the efficiency of Vision Transformers by combining redundant tokens, but existing methods largely rely on feature similarity to determine which tokens to merge. This criterion is effective for semantic segmentation, yet can fail in instance segmentation, where adjacent objects of the same class often have highly similar features. We identify this failure mode as cross-instance token fusion. We introduce MaskMerge, an instance-aware token merging method that uses coarse intermediate mask predictions to constrain feature-based merging and preserve instance boundaries. We evaluate MaskMerge on two diverse instance segmentation domains characterized by high inter-instance visual similarity: PanNuke and iSAID. Against the SOTA token merging method ALGM, MaskMerge improves mAP from 30.1 to 32.1 on PanNuke while reducing computation from 229 to 153 GFLOPs and running 1.18x faster, and from 33.1 to 36.2 on iSAID while reducing computation from 198 to 182 GFLOPs and running 1.23x faster. Additionally, we also test it on Cityscapes and match ALGM's performance while using fewer FLOPs. The gains also transfer to an MAE pretrained backbone, demonstrating that instance-aware merging enables more aggressive compression when appearance similarity alone cannot reliably preserve object identity.",
+      "abstract_zh": "标记合并通过组合冗余标记来提高视觉变换器的效率，但现有方法主要依赖特征相似性来确定合并哪些标记。该标准对于语义分割是有效的，但在实例分割中可能失效，因为同类相邻物体的特征往往高度相似。我们将这种失效模式称为跨实例标记融合。我们提出了MaskMerge，一种面向实例的标记合并方法，利用粗略的中间掩码预测来限制基于特征的合并并保持实例边界。我们在两个具有高实例间视觉相似性的多样化实例分割领域上评估了MaskMerge：PanNuke和iSAID。与当前最先进的标记合并方法ALGM相比，MaskMerge在PanNuke上将mAP从30.1提高到32.1，同时将计算量从229 GFLOPs减少到153 GFLOPs，运行速度提高了1.18倍；在iSAID上将mAP从33.1提高到36.2，同时将计算量从198 GFLOPs减少到182 GFLOPs，运行速度提高了1.23倍。此外，我们还在Cityscapes上进行了测试，表现与ALGM相当，但使用了更少的FLOPs。这些提升也转移到了MAE预训练的主干网络上，证明了面向实例的合并在单靠外观相似性无法可靠保持物体身份时，能够实现更激进的压缩。",
+      "authors": [
+        "Bavesh Balaji",
+        "Letian Jiang",
+        "Alexander Wong",
+        "David Clausi",
+        "Sirisha Rambhatla"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.22921",
+      "tags": [
+        "感知",
+        "多传感器融合"
+      ],
+      "title": "MaskMerge: Structure-aware Token Merging for Efficient Instance Segmentation",
+      "title_zh": "MaskMerge：面向结构的高效实例分割的标记合并",
+      "url": "/daily/2026-10-19/#paper-2610-22921"
+    },
+    {
+      "abstract": "Autonomously navigating off-road terrain at high speed demands accurate control, which often relies on dynamics models that capture complex interactions between the robot and terrain. In off-road regimes, terrain interaction is a major component of the vehicle's dynamics. Prior work attempts to capture this effect by training learned models of the vehicle's dynamics, conditioned on its perception of the local environment. However, said conditioning is often overly simplistic, ignoring the spatial structure of the dynamics problem. Our approach, SpatialBEV, exploits this spatial structure. At each step, we query the bird's-eye-view (BEV) features around the predicted state, conditioning the next prediction on current geometric and semantic cues. We additionally present a benchmarking approach that mines a dataset's most difficult scenarios. On datasets collected across seasons, SpatialBEV reduces prediction error by 17.1%, compared to physics-based and learned baselines. We further evaluate on hardware on high-speed ($\\geq$10 m/s) and geometrically challenging courses with a 25.3% reduction in maximum cross-track error. More details can be found at https://theairlab.org/spatial-bev-dynamics .",
+      "abstract_zh": "在高速度下自主导航越野地形需要精确的控制，这通常依赖于捕捉机器人与地形之间复杂交互的动态模型。在越野状态下，地形交互是车辆动态的一个主要组成部分。之前的研究尝试通过训练基于车辆对局部环境感知的动态模型来捕捉这一效应。然而，这种条件化往往过于简单，忽视了动态问题的空间结构。我们的方法，SpatialBEV，利用了这种空间结构。在每一步中，我们查询预测状态周围的鸟瞰图（BEV）特征，将下一个预测条件化于当前的几何和语义线索。此外，我们还提出了一种基准方法，挖掘数据集中最困难的场景。在跨季节收集的数据集上，SpatialBEV相比于基于物理和学习的基线减少了17.1%的预测误差。我们还在硬件上进行了评估，在高速度（≥10 m/s）和几何挑战性课程中，最大横向误差减少了25.3%。更多细节请参见 https://theairlab.org/spatial-bev-dynamics 。",
+      "authors": [
+        "Micah Nye",
+        "Samuel Triest",
+        "Matthew Sivaprakasam",
+        "Isaiah Adu",
+        "Sebastian Scherer",
+        "Wenshan Wang"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.22900",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "BEV/Occupancy"
+      ],
+      "title": "Structured Perception Representations for Off-road Dynamics Learning",
+      "title_zh": "用于越野动态学习的结构化感知表示",
+      "url": "/daily/2026-10-19/#paper-2610-22900"
+    },
+    {
+      "abstract": "World models have shown considerable promise in sequential decision-making by anticipating the consequences of actions and providing predictive foresight for policy learning. However, learning to reason about counterfactual actions remains challenging, since predictive objectives may underemphasize information critical for action evaluation, while unexecuted actions lack observed futures for direct supervision. To address these challenges, we propose the World Action Critic (WAC) Model, which proposes multimodal action candidates and jointly learns candidate-conditioned future prediction and consequence evaluation. In our proposed framework, critic supervision directly shapes intermediate predictive representations during rollout, encouraging them to retain information needed to distinguish action quality. Observed futures supervise prediction for executed actions, while external task-quality targets provide evaluation signals for counterfactual candidates. Through joint optimization, critic signals from these candidates propagate into predictive representations without requiring their observed futures. Our theoretical analysis characterizes critic-guided feature retention and bounds candidate-selection regret. Applied to autonomous driving, WAC achieves 93.4 PDMS on NAVSIM-v1, demonstrating the effectiveness of jointly learning predictive foresight and consequence evaluation.",
+      "abstract_zh": "世界模型在顺序决策中展现出相当大的潜力，通过预测行动的后果并为政策学习提供前瞻性预测。然而，学习对反事实行动进行推理仍然具有挑战性，因为预测目标可能会低估对行动评估至关重要的信息，而未执行的行动缺乏可直接监督的观察未来。为了解决这些挑战，我们提出了世界行动评论家（WAC）模型，该模型提出了多模态行动候选，并联合学习候选条件的未来预测和后果评估。在我们提出的框架中，评论家监督直接塑造了在回滚过程中的中间预测表示，鼓励它们保留区分行动质量所需的信息。观察到的未来对已执行行动的预测进行监督，而外部任务质量目标则为反事实候选提供评估信号。通过联合优化，这些候选的评论家信号传播到预测表示中，而无需它们的观察未来。我们的理论分析描述了评论家引导的特征保留，并界定了候选选择的遗憾界限。在应用于自主驾驶时，WAC在NAVSIM-v1上达到了93.4 PDMS，证明了联合学习预测前瞻与后果评估的有效性。",
+      "authors": [
+        "Xiangteng Zhang",
+        "Haoyuan Liu",
+        "Yang Guan",
+        "Jingliang Duan",
+        "Yao Lyu",
+        "Tao Zhang",
+        "Shuai Zhang",
+        "Kehua Sheng",
+        "Bo Zhang",
+        "Shengbo Eben Li"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.22825",
+      "tags": [
+        "世界模型/生成"
+      ],
+      "title": "World Action Critic (WAC) Model: Joint Foresight and Criticism for Policy Learning",
+      "title_zh": "世界行动评论家（WAC）模型：政策学习的联合前瞻与批评",
+      "url": "/daily/2026-10-19/#paper-2610-22825"
+    },
+    {
+      "abstract": "In autonomous driving, perceiving surrounding objects is not enough: failing to understand how they move and interact over time can lead to dangerous decisions. Evaluating vision-language models (VLMs) therefore requires testing whether they connect past spatial observations to future consequences. Yet existing benchmarks often assess edge cases through basic perception questions or test temporal understanding in simple scenarios, leaving complex spatiotemporal reasoning underexplored. We introduce STRIDE (SpatioTemporal Reasoning In Driving Edge Cases), an object-centric benchmark for long-tail, safety-critical driving scenarios. STRIDE covers six task families: spatial perception, spatial understanding, temporal memory, temporal extrapolation, trajectory prediction, and scene-context awareness. It pairs multiple-choice questions probing individual spatiotemporal judgments with related free-form visual question answering (VQA) requiring detailed scene explanations and justifications of driving decisions. We prioritize scenes with unusual object behaviors and complex traffic interactions, generate reference answers from structured dataset annotations through automated procedures, and use limited language-model assistance and human verification to ensure annotation quality. Across 12 proprietary, open-weight, and driving-specialized models, even the best performer, GPT-6-Astra, achieves only 43.4% average multiple-choice accuracy, versus an approximately 20% random-choice baseline. Further analysis reveals that strong performance in describing driving scenes does not necessarily translate to accurate safety-critical judgments, and that models struggle more with reconstructing object motion than recalling past positions. STRIDE thus exposes spatiotemporal driving limitations that aggregate VQA scores can conceal.",
+      "abstract_zh": "在自动驾驶中，仅仅感知周围物体是不够的：未能理解它们如何随时间移动和相互作用可能导致危险的决策。因此，评估视觉-语言模型（VLMs）需要测试它们是否能够将过去的空间观察与未来的后果联系起来。然而，现有基准通常通过基本的感知问题评估边缘案例，或在简单场景中测试时间理解，导致复杂的时空推理未得到充分探索。我们引入了STRIDE（驾驶边缘案例中的时空推理），这是一个以对象为中心的基准，针对长尾的、安全关键的驾驶场景。STRIDE涵盖六个任务类别：空间感知、空间理解、时间记忆、时间外推、轨迹预测和场景上下文意识。它将探测个体时空判断的多项选择题与需要详细场景解释和驾驶决策理由的自由形式视觉问答（VQA）相结合。我们优先考虑具有异常物体行为和复杂交通互动的场景，通过自动化程序从结构化数据集注释生成参考答案，并使用有限的语言模型辅助和人工验证来确保注释质量。在12个专有、开放权重和驾驶专用模型中，即使是表现最好的模型GPT-6-Astra，其平均多项选择准确率也仅为43.4%，而随机选择的基线约为20%。进一步分析表明，在描述驾驶场景方面的强大表现并不一定转化为准确的安全关键判断，模型在重建物体运动方面的表现更差于回忆过去的位置。因此，STRIDE揭示了时空驾驶的局限性，而聚合的VQA分数可能掩盖了这些局限性。",
+      "authors": [
+        "Lieqi Liu",
+        "Rui gao",
+        "Jia-Chen Gu",
+        "Wenbo Hu",
+        "Zhaobin Mo",
+        "Ahmadreza Moradipari",
+        "Nejib Ammar",
+        "Wei Wang",
+        "Nanyun Peng"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.22795",
+      "tags": [
+        "仿真/数据",
+        "安全/异常",
+        "感知"
+      ],
+      "title": "STRIDE: Evaluating Spatiotemporal Reasoning in Driving Edge Cases",
+      "title_zh": "STRIDE：评估驾驶边缘案例中的时空推理",
+      "url": "/daily/2026-10-19/#paper-2610-22795"
+    },
+    {
+      "abstract": "Reliable 3D person detection is important for rescue robotics to give first responders situational awareness. Yet most multimodal 3D detection research targets automotive scenarios in which pedestrians mostly appear in a narrow range of upright, near-road poses. It is therefore unclear how much of the reported performance transfers to rescue settings, as a person may be lying, partially occluded, or in unstructured indoor and outdoor environments. To investigate this gap, we introduce TriSAR-3D, a multimodal person detection dataset recorded with a high-resolution 128-channel LiDAR, an RGB camera, and a thermal camera. It captures varied poses in indoor as well as outdoor locations at different times of day to study their influence on 3D object detector performance. Furthermore, we propose a novel trimodal 3D detection pipeline, PaintFusion, that fuses PointPainting-based evidence using a simple MLP. We show that the derived method reaches 65.4 AP@50 and thereby outperforms strong LiDAR-only (CenterPoint, 53.4), RGB+LiDAR (BEVFusion, 60.5), and adapted trimodal (Tri-BEVFusion, 60.7) baselines on the dataset. At the same time, it is substantially faster than other fusion-based methods such as BEVFusion, with a per-frame latency of 51.6 ms compared to 101 ms. Additionally, we test how the performance of different 3D object detectors generalizes to unseen pose categories. Removing lying instances from training data collapses the lying-pose AP@50 to near zero across all evaluated detectors. The results indicate that dataset diversity exerts a large effect on 3D object detection performance. The dataset and code are available at https://github.com/MarkusKramer1/3D-Trimodal-People-Detection.",
+      "abstract_zh": "可靠的3D人员检测对于救援机器人提供现场情况意识至关重要。然而，大多数多模态3D检测研究主要集中在汽车场景中，在这些场景中，行人通常以直立、靠近道路的姿势出现。因此，目前尚不清楚报告的性能在救援环境中能转移多少，因为人员可能处于卧倒、部分遮挡或非结构化的室内外环境中。为了解决这一问题，我们引入了TriSAR-3D，这是一个使用高分辨率128通道LiDAR、RGB相机和热成像相机记录的多模态人员检测数据集。该数据集捕捉了不同时间段内室内和室外位置的多种姿势，以研究这些姿势对3D物体检测器性能的影响。此外，我们提出了一种新颖的三模态3D检测管道PaintFusion，该管道使用简单的多层感知器（MLP）融合基于PointPainting的证据。我们展示了所提出的方法在数据集上达到了65.4 AP@50，超越了强大的LiDAR单一（CenterPoint，53.4）、RGB+LiDAR（BEVFusion，60.5）和适应性三模态（Tri-BEVFusion，60.7）基准。同时，其速度显著快于其他基于融合的方法，如BEVFusion，帧延迟为51.6毫秒，而BEVFusion为101毫秒。此外，我们测试了不同3D物体检测器在未见姿势类别上的性能泛化能力。从训练数据中移除卧倒实例使得卧倒姿势的AP@50在所有评估的检测器中接近于零。结果表明，数据集的多样性对3D物体检测性能有很大影响。数据集和代码可在https://github.com/MarkusKramer1/3D-Trimodal-People-Detection获取。",
+      "authors": [
+        "Markus Kramer",
+        "Jan Wachenfeld",
+        "Oskar von Stryk"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.22509",
+      "tags": [
+        "感知",
+        "3D 检测",
+        "仿真/数据"
+      ],
+      "title": "TriSAR-3D and PaintFusion: A Novel Trimodal LiDAR-RGB-Thermal Dataset and Method for 3D Person Detection in Search and Rescue",
+      "title_zh": "TriSAR-3D与PaintFusion：一种新颖的三模态LiDAR-RGB-热成像数据集及其在搜索与救援中的3D人员检测方法",
+      "url": "/daily/2026-10-19/#paper-2610-22509"
+    },
+    {
+      "abstract": "Refuse collection in pedestrian campuses, parks and mixed-use districts remains manual because compaction trucks cannot reach bins located on walkways, courtyards and building service doors. This paper presents Mothership, a two-tier autonomous refuse collection system in which an electric compaction truck (the mothership) carries two low-speed sidewalk robots (RoboCarts) that fetch standard two-wheel bins, deliver them to the truck, return the empty bins to their original positions and re-dock on the truck for charging. The architecture separates responsibilities by scale: the truck performs road driving, compaction, lifting and energy supply, while the carts perform only sidewalk transport and bin grasping. This split removes the lift-and-tip mechanism from the sidewalk vehicle, keeping it light and low, and relaxes cart-to-truck docking tolerance to the +/-100 mm capture window of a standard automated lifter. We describe the system architecture, the bin-handling and docking interfaces, and a mission-planning formulation that decomposes a route into truck stop points and cart tasks. A discrete-event simulation over synthetic campus layouts with 2-16 bins/ha quantifies throughput as a function of bin density, cart count and stop-point radius. A two-cart configuration serves 20-29 bins/h. Throughput is governed by an interaction between cart count and stop-point radius: a single cart performs best with many close stops, whereas three or four carts need wide stops (80 m) to stay busy, reaching 35-49 bins/h at moderate-to-high densities. The best stop radius therefore has to be chosen together with the fleet size, not fixed in advance.",
+      "abstract_zh": "在步行校园、公园和混合用途区域，垃圾收集仍然依赖人工，因为压缩垃圾车无法到达位于人行道、庭院和建筑服务门口的垃圾桶。本文提出了母舰（Mothership），一种双层自主垃圾收集系统，其中一辆电动压缩垃圾车（母舰）携带两辆低速人行道机器人（RoboCarts），这些机器人负责取回标准的双轮垃圾桶，将其送回垃圾车，返回空桶至原位，并在垃圾车上重新对接以进行充电。该架构按规模划分责任：垃圾车负责道路驾驶、压缩、提升和能源供应，而机器人仅负责在人行道上运输和抓取垃圾桶。这种分离使人行道车辆不再需要升降和倾倒机制，从而保持轻便和低矮，并放宽了机器人与垃圾车对接的容差，达到标准自动升降机的+/-100毫米捕获窗口。我们描述了系统架构、垃圾桶处理和对接接口，以及一种任务规划公式，该公式将路线分解为垃圾车停靠点和机器人任务。通过对具有2-16个垃圾桶/公顷的合成校园布局进行离散事件模拟，量化了垃圾收集的吞吐量与垃圾桶密度、机器人数量和停靠点半径之间的关系。两辆机器人的配置可以服务20-29个垃圾桶/小时。吞吐量受机器人数量与停靠点半径之间的相互作用影响：单辆机器人在多个近距离停靠点时表现最佳，而三辆或四辆机器人需要较宽的停靠点（80米）才能保持忙碌，在中到高密度下达到35-49个垃圾桶/小时。因此，最佳的停靠半径必须与车队规模一起选择，而不是事先固定。",
+      "authors": [
+        "Wei Wang",
+        "Yiru Veronika Wang",
+        "Yihan Wang",
+        "Zihao Li",
+        "Xiaohui Liang"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.22461",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "协同/V2X"
+      ],
+      "title": "Mothership: A Two Tier Autonomous Refuse Collection System for Pedestrian Campuses",
+      "title_zh": "母舰：一种适用于步行校园的双层自主垃圾收集系统",
+      "url": "/daily/2026-10-19/#paper-2610-22461"
+    },
+    {
+      "abstract": "Three dimensional modeling for autonomous driving must continuously estimate road geometry, obstacle occupancy, traffic participant behavior, and observational uncertainty under limited computational resources. Existing reconstruction methods can synthesize realistic novel views, but visual fidelity does not sufficiently characterize the geometric reliability required for driving. Generative world models can expand scenarios and predict future observations, yet may introduce content unsupported by measurements. We propose DriveWorld3D, a framework combining temporal video learning, measurement constraints from multiple sensors, and offline generative simulation. Its online component maintains a unified world state comprising road surfaces, volumetric occupancy, dynamic entities, and road relations, while separately representing physical occupancy, observability, and evidence provenance. Action conditioned future prediction and risk sensitive planning connect this representation to driving decisions. Its offline component reconstructs recorded scenes using neural radiance fields or 3D Gaussian Splatting, then expands long tail conditions using generative models while restricting the use of generated content as geometric ground truth. We specify data partitioning, sensor ablations, fault injection, paired closed loop testing, and real to simulation consistency assessment. The central hypothesis is that explicit evidence management can reduce dangerous false free space predictions and occlusion risk within a matched computational budget while retaining acceptable driving efficiency. All performance claims remain subject to experimental validation. Keywords: autonomous driving; 3D occupancy; sensor fusion; uncertainty; generative world models; NeRF; 3D Gaussian Splatting; closed loop simulation",
+      "abstract_zh": "自主驾驶的三维建模必须在有限的计算资源下持续估计道路几何、障碍物占用、交通参与者行为和观测不确定性。现有的重建方法能够合成逼真的新视图，但视觉保真度不足以充分表征驾驶所需的几何可靠性。生成世界模型可以扩展场景并预测未来观测，但可能会引入未被测量支持的内容。我们提出了DriveWorld3D，一个结合了时间视频学习、多传感器测量约束和离线生成仿真的框架。其在线组件维护一个统一的世界状态，包括道路表面、体积占用、动态实体和道路关系，同时分别表示物理占用、可观测性和证据来源。基于动作的未来预测和风险敏感规划将这一表征与驾驶决策连接起来。其离线组件使用神经辐射场（NeRF）或三维高斯点云重建记录的场景，然后使用生成模型扩展长尾条件，同时限制生成内容作为几何真实值的使用。我们指定了数据划分、传感器消融、故障注入、配对闭环测试和真实与仿真一致性评估。中心假设是，显式的证据管理可以在匹配的计算预算内减少危险的虚假自由空间预测和遮挡风险，同时保持可接受的驾驶效率。所有性能声明均需经过实验验证。关键词：自主驾驶；三维占用；传感器融合；不确定性；生成世界模型；神经辐射场（NeRF）；三维高斯点云；闭环仿真",
+      "authors": [
+        "Wei Wang",
+        "Yiru Veronika Wang",
+        "Yihan Wang",
+        "Zihao Li",
+        "Xiaohui Liang"
+      ],
+      "date": "2026-10-19",
+      "id": "2610.22450",
+      "tags": [
+        "深度/几何",
+        "BEV/Occupancy",
+        "多传感器融合"
+      ],
+      "title": "DriveWorld3D Evidence Constrained 3D World Modeling and Generative Simulation for Real-World Autonomous Driving",
+      "title_zh": "DriveWorld3D：基于证据约束的三维世界建模与真实世界自主驾驶的生成仿真",
+      "url": "/daily/2026-10-19/#paper-2610-22450"
+    },
     {
       "abstract": "Recent 3D world models increasingly use features from geometry foundation models (GFMs) as predictive world states, benefiting from their rich geometric priors. However, the view dependence of these features entangles scene dynamics with camera-induced variation, making the resulting state evolution harder to predict. We propose GeoState, a view-decoupled geometry representation for predictive 3D world modeling that separates scene-state evolution from camera-dependent observation. Specifically, a scene tokenizer aggregates multi-view GFM features into a view-decoupled scene state, which a geometry decoder queries using camera rays. An autoregressive world model then predicts future scene states, while camera motion is modeled separately. The predicted states can therefore be decoded under either predicted or externally specified cameras, while retaining a single context-derived scale throughout the rollout without per-frame scale alignment. Experiments show that GeoState outperforms prior 3D world models on Waymo, supports geometrically consistent cross-view querying, and generalizes zero-shot to KITTI and nuScenes. Project page: https://hongchang-liu.github.io/GeoState-project-page/",
       "abstract_zh": "近年来，三维世界模型越来越多地使用几何基础模型（GFM）中的特征作为预测世界状态，受益于其丰富的几何先验。然而，这些特征的视图依赖性将场景动态与相机引起的变化纠缠在一起，使得结果状态演变更难以预测。我们提出了GeoState，一种用于预测三维世界建模的视图解耦几何表示，它将场景状态演变与相机依赖的观测分离。具体而言，场景标记器将多视图GFM特征聚合为视图解耦的场景状态，几何解码器使用相机光线进行查询。然后，自回归世界模型预测未来的场景状态，同时单独建模相机运动。因此，预测的状态可以在预测的或外部指定的相机下进行解码，同时在整个展开过程中保持单一的上下文派生尺度，而无需逐帧尺度对齐。实验表明，GeoState在Waymo数据集上优于先前的三维世界模型，支持几何一致的跨视图查询，并在KITTI和nuScenes上实现零样本泛化。项目页面：https://hongchang-liu.github.io/GeoState-project-page/",
