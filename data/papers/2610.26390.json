@@ -1,0 +1,50 @@
+{
+  "abstract": "Every driving scene is logged once, but driving is one-to-many: the scene determines which behaviors are feasible, while an instruction selects among them. A log records only the action taken, leaving no direct supervision for alternative feasible actions or instructions the scene cannot support. Consequently, a policy that ignores language and one that follows it without regard to scene constraints can fit the same data. We present Cartender, which learns from the drives not taken. Counterfactual Branching constructs matched and mismatched instruction-action pairs from real recordings without a simulator: a vision-language model proposes alternative futures and their selecting instructions, while unsupported instructions provide negative labels. A learned scene-language compatibility score regulates language conditioning in trajectory generation, and a reward-trained language residual re-ranks generated candidates over a scene-based score. The branches are used for training; instruction following is evaluated by swapping instructions under identical recorded inputs and measuring behavior rather than agreement with generated targets. On WOD-E2E, the best of four proposals achieves an RFS of 8.642 across 3,603 feasible instruction conditions. Across 8,974 admitted proposals, mean RFS is 8.203 versus 7.906 for matched logged trajectories, and 67% score higher than their logged counterpart. Compared with matched-only imitation using the same backbone, Cartender improves same-scene paired instruction success from 23.67% to 57.00% and RFS from 6.32 to 7.10; its gate reduces infeasible-instruction execution from 53.36% to 14.18%.",
+  "abstract_zh": "每个驾驶场景仅记录一次，但驾驶是多对一的：场景决定了哪些行为是可行的，而指令则在这些行为中进行选择。日志仅记录了采取的行动，未能直接监督场景无法支持的其他可行行动或指令。因此，忽视语言的策略和在不考虑场景约束的情况下遵循语言的策略都可以适应相同的数据。我们提出了Cartender，它通过学习未采取的驾驶行为进行训练。反事实分支（Counterfactual Branching）从真实录音中构建匹配和不匹配的指令-行动对，而不需要模拟器：视觉-语言模型提出替代的未来及其选择指令，而不支持的指令则提供负标签。学习到的场景-语言兼容性评分调节轨迹生成中的语言条件，而奖励训练的语言残差则在基于场景的评分上重新排序生成的候选项。这些分支用于训练；指令遵循的评估通过在相同录制输入下交换指令并测量行为而非与生成目标的一致性来进行。在WOD-E2E上，四个提案中最好的一个在3,603个可行指令条件下达到了8.642的RFS。在8,974个被接受的提案中，平均RFS为8.203，而匹配的日志轨迹为7.906，67%的提案得分高于其记录的对应项。与仅使用相同骨干网络的匹配模仿相比，Cartender将同场景配对指令的成功率从23.67%提高到57.00%，RFS从6.32提高到7.10；其门控机制将不可行指令的执行率从53.36%降低到14.18%。",
+  "arxiv_id": "2610.26390",
+  "arxiv_url": "https://arxiv.org/abs/2610.26390v1",
+  "authors": [
+    "Zhiwen Chen",
+    "Benjin Zhu",
+    "Yan Xie",
+    "Jun Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-26390",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.559973+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.26390v1",
+  "published_at": "2026-10-19T13:38:00Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving scene",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.26390v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "世界模型/生成"
+    ]
+  },
+  "title": "Cartender: Verifiable Language-Conditioned Driving by Learning the Drives Not Taken",
+  "title_zh": "Cartender：通过学习未采取的驾驶行为实现可验证的语言条件驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.26390"
+}

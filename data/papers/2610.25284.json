@@ -1,0 +1,63 @@
+{
+  "abstract": "High-definition maps provide critical structural information for downstream autonomous driving tasks. Recent methods increasingly rely on external priors to improve prediction accuracy and robustness. Yet, existing prior representations expose a trade-off: dense rasters are easy to integrate but ignore certain map geometric properties, while sparse vectors preserve geometric structure but require dedicated encoders and are difficult to plug into existing architectures. Moreover, external priors can be inaccurate, costly to acquire, or difficult to maintain, motivating a structural representation that can provide geometric guidance while remaining learnable and broadly applicable. We address this limitation with the Lane Field, a dense BEV-aligned geometric representation that encodes local lane structure at each spatial location and can be either predicted from onboard observations or constructed from external map priors. Building on this representation, we introduce a plug-and-play framework that enhances online HD mapping through two complementary mechanisms: BEV feature modulation, which injects lane-structured cues into latent BEV features, and deformable attention guidance, which steers query sampling toward the underlying lane geometry. We primarily evaluate our method on OpenLane-V2, showing that conditioning BEV features and guiding deformable attention with local lane geometry enables our framework to consistently improve existing methods and achieve state-of-the-art performance on lane segment perception. Project page: https://andberto.github.io/LaneField/",
+  "abstract_zh": "高清地图为下游自动驾驶任务提供了关键的结构信息。最近的方法越来越依赖外部先验来提高预测的准确性和鲁棒性。然而，现有的先验表示存在一个权衡：密集栅格易于集成，但忽略了某些地图几何特性；而稀疏向量则保留了几何结构，但需要专门的编码器，并且难以融入现有架构。此外，外部先验可能不准确、获取成本高或难以维护，这促使我们寻求一种结构表示，能够提供几何指导，同时保持可学习性和广泛适用性。我们通过车道场（Lane Field）来解决这一限制，这是一种密集的鸟瞰视图（BEV）对齐的几何表示，能够在每个空间位置编码局部车道结构，并且可以从车载观测中预测或从外部地图先验中构建。在此基础上，我们引入了一种即插即用的框架，通过两种互补机制增强在线高清地图构建：BEV特征调制，将车道结构线索注入潜在的BEV特征，以及可变形注意力引导，将查询采样引导至基础的车道几何。我们主要在OpenLane-V2上评估我们的方法，结果表明，利用局部车道几何条件化BEV特征并引导可变形注意力，使我们的框架能够持续改进现有方法，并在车道段感知上实现最先进的性能。项目页面：https://andberto.github.io/LaneField/",
+  "arxiv_id": "2610.25284",
+  "arxiv_url": "https://arxiv.org/abs/2610.25284v1",
+  "authors": [
+    "Andrea Bertogalli",
+    "Anthony Dell'Eva",
+    "Marcello Ceresini",
+    "Federico Pirazzoli",
+    "Lorenzo Cipelli",
+    "Filippo D'Addeo",
+    "Nicola Marinello",
+    "Massimo Bertozzi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25284",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.622605+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25284v1",
+  "published_at": "2026-10-18T14:04:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "openlane",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "车道",
+      "bev"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25284v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "Learning Lane-Structured Conditioning Fields for Online HD Mapping",
+  "title_zh": "学习车道结构条件场用于在线高清地图构建",
+  "translation_url": "https://hjfy.top/arxiv/2610.25284"
+}

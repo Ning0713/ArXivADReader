@@ -1,0 +1,58 @@
+{
+  "abstract": "Autonomous driving fundamentally demands dense understanding of visual, semantic, and geometric information, yet existing Vision-Language-Action (VLA) models are typically trained with sparse supervision such as language instructions or trajectory signals. This direct mapping from dense visual observations to sparse representations forces the model to compress or even discard critical scene information essential for safe driving. We argue that this limitation does not stem from insufficient model capacity, but from the lack of explicit mechanisms that encourage the formation of dense world representations in the latent space. In this spirit, we propose a novel paradigm for driving intelligence, Think Densely, Act Sparsely, and instantiate it with an efficient and interpretable framework, LECDrive (Latent Expert Cognitive Chains for Vision-Language-Action autonomous Driving). The core idea is to mimic the hierarchical perception process of humans by embedding a progressive chain of latent expert cognition within the VLA model. Concretely, we inject a compact set of task-specific latent tokens as carriers, enabling the model to internalize dense knowledge from foundational vision models, including visual representations (DINOv3), semantic structures (SAM3), and spatial geometry (DepthAnything3), while maintaining efficient inference. This interdependent cognitive chain follows a curriculum learning principle, where supervision is progressively structured from representation to semantics and geometry. Extensive experiments demonstrate that LECDrive consistently improves the performance of base VLMs across multiple autonomous driving benchmarks, covering key tasks such as object perception, state prediction, and trajectory planning. These findings suggest that constructing dense world models through structured latent expert chains is a promising direction for VLA-based autonomous driving.",
+  "abstract_zh": "自主驾驶从根本上要求对视觉、语义和几何信息的密集理解，然而现有的视觉-语言-行动（VLA）模型通常是在稀疏监督下训练的，例如语言指令或轨迹信号。这种从密集视觉观测到稀疏表示的直接映射迫使模型压缩甚至丢弃对安全驾驶至关重要的关键场景信息。我们认为，这一限制并非源于模型能力不足，而是缺乏明确的机制来鼓励在潜在空间中形成密集的世界表示。基于此，我们提出了一种新的驾驶智能范式——密集思考，稀疏行动，并通过一个高效且可解释的框架LECDrive（用于视觉-语言-行动自主驾驶的潜在专家认知链）来实现。其核心思想是通过在VLA模型中嵌入一条渐进的潜在专家认知链，模仿人类的层次感知过程。具体而言，我们注入一组紧凑的任务特定潜在标记作为载体，使模型能够从基础视觉模型中内化密集知识，包括视觉表示（DINOv3）、语义结构（SAM3）和空间几何（DepthAnything3），同时保持高效推理。这条相互依赖的认知链遵循课程学习原则，监督从表示到语义和几何逐步结构化。大量实验表明，LECDrive在多个自主驾驶基准测试中持续提升基础视觉语言模型（VLM）的性能，涵盖了对象感知、状态预测和轨迹规划等关键任务。这些发现表明，通过结构化的潜在专家链构建密集的世界模型是基于VLA的自主驾驶的一个有前景的方向。",
+  "arxiv_id": "2610.25734",
+  "arxiv_url": "https://arxiv.org/abs/2610.25734v1",
+  "authors": [
+    "Jie Wang",
+    "Guang Li",
+    "Zhijian Huang",
+    "Jinlong Li",
+    "Chenxu Dang",
+    "Hangjun Ye",
+    "Yahong Han",
+    "Long Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25734",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.642582+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25734v1",
+  "published_at": "2026-10-19T03:37:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25734v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "深度/几何"
+    ]
+  },
+  "title": "Think Densely, Act Sparsely: Latent Expert Cognitive Chains for Vision-Language-Action Autonomous Driving",
+  "title_zh": "密集思考，稀疏行动：用于视觉-语言-行动自主驾驶的潜在专家认知链",
+  "translation_url": "https://hjfy.top/arxiv/2610.25734"
+}

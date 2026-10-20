@@ -1,0 +1,54 @@
+{
+  "abstract": "Online scene change detection requires an agent to detect what has changed in a previously mapped environment while it is still on site, observing from unconstrained viewpoints and without access to future observations. This causal setting is strictly harder than its offline counterpart, and online methods have consistently trailed offline accuracy. O-SCD closed that gap by treating change as a persistent property of a 3D Gaussian splatting map of the reference scene, surpassing the strongest offline methods in change detection accuracy while operating at over 10 frames per second. O-SCD optimizes a change field over the Gaussians of the reference map, refitting it to all past cue maps at every frame, a step that consumes more than half of the per-frame budget and forces accuracy to be traded against speed. We present a replay-free formulation that eliminates this trade-off. Because the reference map stays fixed, rendering the change field is a linear operation. Each new observation can therefore be carried onto the map's Gaussians directly, by a single backward pass of the renderer, which reduces multi-view fusion to an exact two-scalar recursion per Gaussian. Past observations are never stored or revisited. The self-supervised objective that O-SCD minimizes by descent also determines the decision threshold exactly, by sorting, yielding a label-free per-frame cutoff whose margin provides a selective-prediction signal. On PASLCD, our method improves mean intersection over union from 0.489 to 0.575 and throughput from 11.8 to 25.6 frames per second, even exceeding O-SCD's offline result while remaining strictly causal.",
+  "abstract_zh": "在线场景变化检测要求代理在现场检测先前映射环境中发生的变化，同时从不受限制的视角观察，并且无法访问未来的观测。这种因果设置比离线方法严格困难，在线方法的准确性始终落后于离线方法。O-SCD通过将变化视为参考场景的3D高斯点云图的持久属性，缩小了这一差距，在变化检测准确性上超越了最强的离线方法，同时以超过每秒10帧的速度运行。O-SCD在参考图的高斯分布上优化变化场，在每一帧中重新拟合所有过去的线索图，这一步骤消耗了每帧预算的一半以上，迫使准确性与速度之间进行权衡。我们提出了一种无重放的公式，消除了这种权衡。由于参考图保持固定，变化场的渲染是线性操作。因此，每个新的观测可以通过渲染器的单次反向传递直接应用到图的高斯分布上，将多视角融合简化为每个高斯的精确双标量递归。过去的观测从不被存储或重新访问。O-SCD通过下降法最小化的自监督目标也精确地确定了决策阈值，通过排序产生无标签的每帧截止，其边际提供了选择性预测信号。在PASLCD上，我们的方法将平均交并比从0.489提高到0.575，将吞吐量从11.8帧每秒提高到25.6帧每秒，甚至超过了O-SCD的离线结果，同时保持严格的因果性。",
+  "arxiv_id": "2610.24462",
+  "arxiv_url": "https://arxiv.org/abs/2610.24462v1",
+  "authors": [
+    "Chamuditha Jayanga Galappaththige",
+    "Jason Lai",
+    "Lloyd Windrim",
+    "Timothy Patten",
+    "Donald G. Dansereau",
+    "Niko Suenderhauf",
+    "Dimity Miller"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-24462",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.598476+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.24462v1",
+  "published_at": "2026-10-17T05:04:05Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "intersection",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.24462v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "O-SCD++: Replay-Free Online Scene Change Detection via Recursive Evidence Fusion",
+  "title_zh": "O-SCD++：通过递归证据融合实现无重放的在线场景变化检测",
+  "translation_url": "https://hjfy.top/arxiv/2610.24462"
+}

@@ -1,0 +1,61 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models offer a promising paradigm for autonomous driving. However, the massive parameter scale of VLAs strains onboard computational resources during real-time inference. This directly increases energy consumption and limits vehicle battery range, making it critical to minimize computational overhead without compromising driving capability and explainability. Current research on efficient VLA-based driving focuses on sequential adaptation (\\textit{e.g.}, Chain-of-Thought and token adjustment), leaving structural adaptation underexplored despite parameter redundancy across dynamic driving scenes. To address this gap, we propose Scene-Adaptive VLA, an efficient framework leveraging dynamic layer routing to adjust active parameters based on real-time scenes. Inspired by the temporal continuity of scenes and model predictive uncertainty, our approach characterizes model-perceived scene complexity via frame-level temporal scene variations and decision deviations. To uncover latent scene-to-parameter correspondences, we encode this characterization into scene-aware tokens, alongside two specialized queries. A budget-conditioned layer routing mechanism evaluates these refined queries to allocate a budget that determines the active parameter ratio and subsequently selects appropriate layer combinations. The entire framework is optimized end-to-end. Extensive evaluations on the Bench2Drive benchmark show that when adapted to a state-of-the-art VLA model, our approach significantly reduces inference-time computational overhead by 53.5\\% with negligible degradation in driving and language capabilities. Code is available at https:github.com/yang-luvu/Scene-Adaptive-VLA.",
+  "abstract_zh": "视觉-语言-动作（VLA）模型为自主驾驶提供了一种有前景的范式。然而，VLA的庞大参数规模在实时推理过程中对车载计算资源造成了压力。这直接增加了能耗并限制了车辆的电池续航，因此在不妥协驾驶能力和可解释性的前提下，减少计算开销变得至关重要。目前关于高效VLA驱动的研究主要集中在顺序适应（例如，思维链和令牌调整），而在动态驾驶场景中，尽管存在参数冗余，结构适应的研究仍然不足。为了解决这一问题，我们提出了场景自适应VLA，这是一种高效框架，利用动态层路由根据实时场景调整活动参数。我们的做法受到场景的时间连续性和模型预测不确定性的启发，通过帧级时间场景变化和决策偏差来表征模型感知的场景复杂性。为了揭示潜在的场景与参数之间的对应关系，我们将这种表征编码为场景感知令牌，并引入两个专门的查询。预算条件下的层路由机制评估这些精细化查询，以分配一个预算，从而确定活动参数的比例，并随后选择合适的层组合。整个框架经过端到端优化。在Bench2Drive基准上的广泛评估表明，当适应于一种最先进的VLA模型时，我们的方法显著减少了推理时间的计算开销，降低了53.5%，同时对驾驶和语言能力的影响微乎其微。代码可在https://github.com/yang-luvu/Scene-Adaptive-VLA获取。",
+  "arxiv_id": "2610.24590",
+  "arxiv_url": "https://arxiv.org/abs/2610.24590v1",
+  "authors": [
+    "Yujia Yang",
+    "Quan Yuan",
+    "Jiawei Fan",
+    "Yang Li",
+    "Tiange Fu",
+    "Xiaoyuan Fu",
+    "Guiyang Luo",
+    "Jinglin Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-24590",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.602591+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.24590v1",
+  "published_at": "2026-10-17T09:53:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 57
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.24590v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "端到端驾驶",
+      "感知"
+    ]
+  },
+  "title": "Scene-Adaptive VLA: Efficient Autonomous Driving via Dynamic Layer Routing",
+  "title_zh": "场景自适应VLA：通过动态层路由实现高效自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.24590"
+}

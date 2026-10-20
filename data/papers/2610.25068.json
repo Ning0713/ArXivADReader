@@ -1,0 +1,53 @@
+{
+  "abstract": "Resource-constrained robots and autonomous vehicles need scene memories that localize a camera and render nearby views without a desktop GPU. Scene-coordinate regression (SCR) and 3D Gaussian splatting (3DGS) fit because they avoid an SfM stage, but ACEsplat-style pipelines are GPU-centered, and moving them to an edge FPGA is hard because SCR is pose-sensitive and 3DGS rendering is irregular and capacity-sensitive. We present LENS, an edge scene-memory acceleration system on the AMD KR260 that brings an ACEsplat-style workload to a low-power FPGA/ARM platform. Rather than proposing a new scene model, LENS co-designs the two dominant kernels with the board data path: an INT16 SCR accelerator that preserves pose accuracy, and a bit-exact fixed-point ordered 3DGS renderer that rewrites alpha transmittance as a log-sum-exp recurrence and removes provably useless streamed Gaussians. All LENS latency, power, and quality results are board-measured. The SCR engine preserves DSAC* localization accuracy at 25.42 ms, the on-board renderer reaches 34.11 dB on Cambridge against ACEsplat's 33.20, novel-view synthesis on RealEstate10K reaches 27.84 dB against 26.11, and all ten Wayspots scenes reach the ACEsplat rendering target. LENS wins performance per watt over a Jetson Orin NX on every deployment task, by 1.9x to 5.7x at about a quarter of the power, and is faster in absolute latency on localization and Wayspots rendering. On-device training reaches ACEsplat-level quality but not the GPU's time or energy, marking the remaining boundary for a future training accelerator.",
+  "abstract_zh": "资源受限的机器人和自主车辆需要能够定位相机并在没有桌面GPU的情况下渲染附近视图的场景记忆。场景坐标回归（SCR）和3D高斯点云渲染（3DGS）适用，因为它们避免了结构从运动（SfM）阶段，但ACEsplat风格的管道以GPU为中心，将其移植到边缘FPGA上是困难的，因为SCR对姿态敏感，而3DGS渲染则不规则且对容量敏感。我们提出了LENS，一种在AMD KR260上加速边缘场景记忆的系统，将ACEsplat风格的工作负载引入低功耗FPGA/ARM平台。LENS并没有提出新的场景模型，而是与板级数据路径共同设计了两个主要内核：一个保持姿态准确性的INT16 SCR加速器，以及一个位精确的固定点有序3DGS渲染器，该渲染器将alpha透射率重写为对数和指数递归，并去除可证明无用的流式高斯。所有LENS的延迟、功耗和质量结果均为板上测量。SCR引擎在25.42毫秒内保持DSAC*定位精度，板载渲染器在剑桥达到了34.11 dB，相较于ACEsplat的33.20，RealEstate10K上的新视图合成达到了27.84 dB，相较于26.11，所有十个Wayspots场景达到了ACEsplat渲染目标。LENS在每个部署任务中以1.9倍到5.7倍的性能每瓦特超越了Jetson Orin NX，功耗约为其四分之一，并且在定位和Wayspots渲染的绝对延迟上更快。设备内训练达到了ACEsplat级别的质量，但未达到GPU的时间或能耗，标志着未来训练加速器的剩余边界。",
+  "arxiv_id": "2610.25068",
+  "arxiv_url": "https://arxiv.org/abs/2610.25068v1",
+  "authors": [
+    "Que Haohua",
+    "Mingkai Liu",
+    "Handong Yao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25068",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.540245+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25068v1",
+  "published_at": "2026-10-18T07:18:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 46
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25068v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "Localization and Neural Splatting on the Edge: An FPGA Scene Memory for Robots",
+  "title_zh": "边缘上的定位与神经点云渲染：一种用于机器人的FPGA场景记忆",
+  "translation_url": "https://hjfy.top/arxiv/2610.25068"
+}

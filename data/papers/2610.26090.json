@@ -1,0 +1,52 @@
+{
+  "abstract": "Autonomous vehicles must detect objects faster than a frame camera delivers images. Event cameras record brightness changes with microsecond resolution, so RGB--event detectors can decide between frames, at an operating frequency, the rate of decisions, far above the frame rate. As this rate rises, each decision receives a sparser event window, and the reliability of the events relative to the frame varies over the scene and over time. Existing detectors weight the sensors per sample and encode the frame at the reduced event resolution. Reliability-supervised routing assigns a fusion weight to every location and supervises it with targets from the losses of two single-modality classifiers used only in training, moving loss-based supervision of fusion weights from whole samples to individual locations. Asymmetric-resolution fusion lets the frame carry the decision where the events fail: it encodes the frame at native resolution and pools every feature level onto the event grid, reusing all pretrained weights. On the DSEC-Det dataset, routing halves the accuracy loss from 20 to 180 Hz, from 6.3 to 3.1 mAP, and lowers it in every seed. The resulting detector, ERA-Det, sets a new state of the art at 63.2 mAP, 3.7 mAP above FlexEvent, leads at every operating frequency, and at 180 Hz is more accurate than FlexEvent at 20 Hz. On two DAVIS346 datasets, the router lowers the frame weight at night and in low light and raises it when the events vanish. ERA-Det upgrades released FlexEvent weights in 5,000 iterations on one GPU.",
+  "abstract_zh": "自主车辆必须以比帧相机传递图像更快的速度检测物体。事件相机以微秒级的分辨率记录亮度变化，因此RGB-事件检测器可以在操作频率下，在帧之间做出决策，其决策速率远高于帧率。随着这一速率的提高，每个决策接收到的事件窗口变得更加稀疏，事件相对于帧的可靠性在场景和时间上变化。现有检测器对每个样本加权传感器，并以降低的事件分辨率编码帧。可靠性监督路由为每个位置分配融合权重，并通过仅在训练中使用的两个单模态分类器的损失进行监督，将基于损失的融合权重监督从整个样本转移到单个位置。不对称分辨率融合使得帧在事件失败时承载决策：它以原生分辨率编码帧，并将每个特征层汇聚到事件网格上，重用所有预训练权重。在DSEC-Det数据集上，路由将从20 Hz到180 Hz的准确性损失减半，从6.3降至3.1 mAP，并在每个种子中降低。最终的检测器ERA-Det在63.2 mAP上设定了新的最先进水平，比FlexEvent高出3.7 mAP，在每个操作频率下领先，并且在180 Hz时比20 Hz下的FlexEvent更准确。在两个DAVIS346数据集上，路由器在夜间和低光照条件下降低帧权重，并在事件消失时提高帧权重。ERA-Det在一台GPU上经过5,000次迭代升级了发布的FlexEvent权重。",
+  "arxiv_id": "2610.26090",
+  "arxiv_url": "https://arxiv.org/abs/2610.26090v1",
+  "authors": [
+    "Peijun Shi",
+    "Jiannan Zhao",
+    "Xiujin Zhu",
+    "Zhenguo Lao",
+    "Chee-Onn Chow",
+    "Wei Ru Wong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-26090",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.654672+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.26090v1",
+  "published_at": "2026-10-19T09:51:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.26090v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "RGB--Event Object Detection Across Operating Frequencies via Reliability-Supervised Routing and Asymmetric-Resolution Fusion",
+  "title_zh": "通过可靠性监督路由和不对称分辨率融合实现跨操作频率的RGB-事件物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2610.26090"
+}

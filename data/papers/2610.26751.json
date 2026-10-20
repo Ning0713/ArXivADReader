@@ -1,0 +1,54 @@
+{
+  "abstract": "Recent embodied systems increasingly build on multimodal large language models (MLLMs) for their pretrained understanding and reasoning capabilities, but their perception of the physical world remains largely limited to basic modalities such as vision and audio. However, broadening MLLMs to more diverse sensory modalities from the physical environment is challenging: their representations are often weakly connected to the MLLM and vary substantially in structure and statistics, while their interpretation still requires shared high-level understanding and reasoning. We therefore propose Unisense, a unified embodied MLLM framework that supports diverse physical sensory modalities within a shared multimodal architecture. Unisense follows a two-stage training process: (i) aligning sensory representations with language to establish a language-accessible interface; and (ii) tuning modality-specific experts within the shared LLM to provide specialized processing for different sensory modalities. To support broad sensory learning, we curate Unisense-1M, a large-scale embodied sensory training corpus comprising 1M samples across 8 sensory modalities. We further evaluate Unisense on 12 benchmarks spanning depth, point cloud, IMU, tactile, thermal, radar, motion, and smell understanding. Across these heterogeneous sensing tasks, Unisense achieves strong performance and outperforms both generalist and specialized models on most benchmarks, demonstrating the potential of pretrained MLLMs as unified models for embodied sensory understanding.",
+  "abstract_zh": "近年来，具身系统越来越依赖于多模态大语言模型（MLLMs）来获取其预训练的理解和推理能力，但它们对物理世界的感知仍然主要局限于视觉和音频等基本模态。然而，将MLLMs扩展到来自物理环境的更多样化感官模态是具有挑战性的：它们的表征通常与MLLM的连接较弱，并且在结构和统计上差异显著，同时其解释仍然需要共享的高层次理解和推理。因此，我们提出了Unisense，一个统一的具身MLLM框架，支持在共享的多模态架构中实现多样的物理感官模态。Unisense遵循两阶段的训练过程：（i）将感官表征与语言对齐，以建立一个可通过语言访问的接口；（ii）在共享的LLM中调整特定模态的专家，以为不同的感官模态提供专业处理。为了支持广泛的感官学习，我们策划了Unisense-1M，这是一个大规模的具身感官训练语料库，包含来自8种感官模态的100万样本。我们进一步在涵盖深度、点云、IMU、触觉、热量、雷达、运动和嗅觉理解的12个基准上评估Unisense。在这些异构感知任务中，Unisense表现出色，并在大多数基准上超越了通用模型和专业模型，展示了预训练MLLM作为统一模型在具身感知理解中的潜力。",
+  "arxiv_id": "2610.26751",
+  "arxiv_url": "https://arxiv.org/abs/2610.26751v1",
+  "authors": [
+    "Shiyun Xiong",
+    "Dongming Wu",
+    "Peiwen Sun",
+    "Bokang Yang",
+    "Jiaxu Wang",
+    "Xiaolou Sun",
+    "Mingxing Wen",
+    "Xiangyu Yue"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-26751",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.673651+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.26751v1",
+  "published_at": "2026-10-19T17:14:37Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "point cloud",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.26751v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "本文提出统一具身多模态大语言模型Unisense，通过语言对齐和模态专属专家共同处理深度、点云、IMU、雷达等多种传感信息。虽然论文并非专门面向自动驾驶，但其统一异构传感器理解方法可用于自动驾驶的多传感器感知与融合研究。",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "VLM/VLA",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Beyond Omni: A Unified MLLM for Embodied Sensory Understanding",
+  "title_zh": "超越全能：一种统一的具身感知理解多模态大语言模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.26751"
+}

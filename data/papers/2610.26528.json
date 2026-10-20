@@ -1,0 +1,61 @@
+{
+  "abstract": "Knowledge graphs (KGs) are increasingly used in autonomous driving (AD) to make traffic scene entities and relations explicit for prediction and reasoning. Existing traffic-scene KGs, however, primarily emphasize trajectory forecasting or general scene understanding. This paper presents the nuScenes Intention Knowledge Graph (NIKG), a focused Web Ontology Language (OWL)-based semantic representation and construction pipeline for ego-centric vehicle intention context. NIKG instantiates nuScenes scenes as a self-describing Turtle graph and promotes three intention-relevant relations to first-class properties of each scene participant: ego-relative motion, spatial configuration, and time to collision (TTC) risk. The pipeline uses a small input contract available in many ego-centric driving datasets: ego pose, tracked object annotations, and temporal keyframe order. NIKG is released as an ontology-backed, self-describing graph artifact together with a reproducible construction pipeline and validation protocol for ego-centric intention context. Applying this pipeline to nuScenes mini yields a graph of 211,335 triples across 404 keyframes; under the validation protocol, ego-relative motion labels achieve 92.5% forward consistency. Coverage, semantic consistency, and temporal coherence analyses over this artifact are further reported. NIKG occupies the space between scene-oriented traffic KGs and intention-prediction models: a small, explicit semantic layer intended to support downstream work such as knowledge graph embedding (KGE), SPARQL-based feature extraction, or hybrid neuro-symbolic reasoning.",
+  "abstract_zh": "知识图谱（KGs）在自动驾驶（AD）中越来越多地被用于使交通场景中的实体和关系明确化，以便进行预测和推理。然而，现有的交通场景知识图谱主要强调轨迹预测或一般场景理解。本文提出了nuScenes意图知识图谱（NIKG），这是一个基于Web本体语言（OWL）的语义表示和构建管道，专注于自我中心的车辆意图上下文。NIKG将nuScenes场景实例化为自描述的Turtle图，并将三种与意图相关的关系提升为每个场景参与者的第一类属性：自我相对运动、空间配置和碰撞时间（TTC）风险。该管道使用许多自我中心驾驶数据集中可用的小输入契约：自我姿态、跟踪对象注释和时间关键帧顺序。NIKG作为一个基于本体的自描述图形工件发布，并提供可重复的构建管道和自我中心意图上下文的验证协议。将该管道应用于nuScenes mini生成了一个包含211,335个三元组的图，跨越404个关键帧；在验证协议下，自我相对运动标签实现了92.5%的前向一致性。还报告了对该工件的覆盖率、语义一致性和时间一致性分析。NIKG占据了面向场景的交通知识图谱与意图预测模型之间的空间：这是一个小型、明确的语义层，旨在支持下游工作，如知识图谱嵌入（KGE）、基于SPARQL的特征提取或混合神经符号推理。",
+  "arxiv_id": "2610.26528",
+  "arxiv_url": "https://arxiv.org/abs/2610.26528v1",
+  "authors": [
+    "Khaled Nowara",
+    "Mohamed Manzour",
+    "Catherine Elias"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-26528",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.779346+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.26528v1",
+  "published_at": "2026-10-19T14:56:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.26528v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "A Semantic Knowledge Graph Construction Pipeline for Vehicle Intention Prediction in nuScenes",
+  "title_zh": "用于nuScenes中车辆意图预测的语义知识图谱构建管道",
+  "translation_url": "https://hjfy.top/arxiv/2610.26528"
+}

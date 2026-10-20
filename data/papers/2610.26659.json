@@ -1,0 +1,56 @@
+{
+  "abstract": "Spatial intelligence requires agents to actively acquire visual evidence and integrate observations into a coherent representation of the three-dimensional world. Yet spatial question answering offers limited evidence of whether models can construct accurate metric maps through autonomous exploration. We introduce SpatialScout, a benchmark for evaluating vision-language model (VLM) agents on active object-level 3D mapping. SpatialScout comprises 80 diverse indoor scenes containing 3,140 target objects. Given an object inventory, RGB observations, camera calibration, and camera poses, agents control a camera to explore each scene and estimate object centers in a shared coordinate frame. The task requires coordinating viewpoint selection, cross-view association, geometric estimation, and map revision under bounded interaction budgets. Evaluation jointly measures localization accuracy and target coverage through object-scale overlap scores that penalize missing predictions. Experiments with frontier VLMs reveal substantial limitations: the strongest evaluated model, Claude Opus 5.5, achieves a mean overlap score of 41.71%, with 47.23% of targets exceeding an intersection-over-union (IoU) threshold of 0.5 and only 3.25% exceeding 0.9. These results reveal a substantial gap between recovering coarse object layouts and constructing complete, precise metric maps. SpatialScout provides a quantitative testbed for developing agents that build reliable 3D spatial representations through active perception. Code is available at https://github.com/JesseZZZZZ/SpatialScout.",
+  "abstract_zh": "空间智能要求代理主动获取视觉证据，并将观察结果整合成对三维世界的连贯表征。然而，空间问答提供的证据有限，无法证明模型是否能够通过自主探索构建准确的度量地图。我们介绍了SpatialScout，这是一个用于评估视觉语言模型（VLM）代理在主动物体级三维绘图方面的基准。SpatialScout包含80个多样化的室内场景，包含3140个目标物体。给定物体清单、RGB观察、相机标定和相机姿态，代理控制相机探索每个场景，并在共享坐标系中估计物体中心。该任务要求协调视点选择、跨视图关联、几何估计和地图修订，且在有限的交互预算下进行评估。评估共同测量定位准确性和目标覆盖率，通过物体尺度重叠得分来惩罚缺失预测。对前沿VLM的实验揭示了显著的局限性：评估的最强模型Claude Opus 5.5的平均重叠得分为41.71%，其中47.23%的目标超过了0.5的交并比（IoU）阈值，只有3.25%的目标超过了0.9。这些结果揭示了恢复粗略物体布局与构建完整、精确的度量地图之间的显著差距。SpatialScout为开发通过主动感知构建可靠三维空间表征的代理提供了一个定量测试平台。代码可在 https://github.com/JesseZZZZZ/SpatialScout 获取。",
+  "arxiv_id": "2610.26659",
+  "arxiv_url": "https://arxiv.org/abs/2610.26659v1",
+  "authors": [
+    "Zhaoxi Zhang",
+    "Hao Liang",
+    "Linxuan Wu",
+    "Yiming Wu",
+    "Yifu Yuan",
+    "Kun Liang",
+    "Chenming Tang",
+    "Meiyi Qiang",
+    "Wentao Zhang",
+    "Weikang Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-26659",
+  "categories": [
+    "cs.CV",
+    "cs.CL"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.670282+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.26659v1",
+  "published_at": "2026-10-19T16:17:48Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "intersection"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.26659v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "提出面向VLM智能体的主动三维物体级建图基准，评估智能体在自主视点选择、跨视图关联、几何定位和地图更新方面的能力。论文场景并非道路自动驾驶，但其主动感知、三维建图和VLM智能体方法可迁移至自动驾驶环境感知与地图构建，因此按高召回原则纳入。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "地图/定位",
+      "深度/几何"
+    ]
+  },
+  "title": "SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?",
+  "title_zh": "SpatialScout：视觉语言模型代理能否主动探索和绘制三维场景？",
+  "translation_url": "https://hjfy.top/arxiv/2610.26659"
+}

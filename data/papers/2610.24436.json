@@ -1,0 +1,58 @@
+{
+  "abstract": "Simulation-to-real driving video diffusion models can translate photorealistic scenes, but they typically represent pedestrians and cyclists, vulnerable road users (VRUs), as generic object classes. This is insufficient for vulnerable road users whose safety-relevant appearance depends on articulated pose and identity. We present BodyBridge and Grounded Body Layers (GBL), a simulator-derived, pixel-aligned representation that combines scene geometry, canonical per-pixel body correspondence, and exact VRU masks. GBL provides explicit articulation to the video diffusion model, emphasizes VRU regions during control-branch post-training, and supports additive composition with scene-geometry control at inference. It also enables per-joint evaluation of generated VRUs and a failure taxonomy for identity errors. On CARLA-to-real translation, BodyBridge improves near-range [email protected] by 22% over the released depth-conditioned baseline. Replacing normal-map body control with canonical correspondence reduces body flips by 18%, while composition reduces near-range facing flips by 27%. These results show that explicit body grounding complements scene-level control and improves pose-faithful VRU generation. All code, data, and model checkpoints will be made publicly available to support reproducible, pedestrian-aware autonomous driving research.",
+  "abstract_zh": "仿真到现实的驾驶视频扩散模型能够转换照片级真实感场景，但通常将行人和骑自行车者等脆弱道路用户（VRUs）表示为通用物体类别。这对于脆弱道路用户来说是不够的，因为他们的安全相关外观依赖于关节姿态和身份。我们提出了BodyBridge和基础身体层（Grounded Body Layers, GBL），这是一种源自模拟器的、像素对齐的表示，结合了场景几何、标准每像素身体对应关系和精确的VRU掩码。GBL为视频扩散模型提供了明确的关节运动，强调了控制分支后训练期间的VRU区域，并支持在推理时与场景几何控制的加性组合。它还使得对生成的VRUs进行逐关节评估成为可能，并建立了身份错误的失败分类。 在CARLA到现实的转换中，BodyBridge在近距离 [email protected] 上比发布的深度条件基线提高了22%。用标准对应关系替代法线图身体控制将身体翻转减少了18%，而组合则减少了27%的近距离面朝翻转。这些结果表明，明确的身体基础补充了场景级控制，并改善了姿态忠实的VRU生成。所有代码、数据和模型检查点将公开提供，以支持可重复的、关注行人的自主驾驶研究。",
+  "arxiv_id": "2610.24436",
+  "arxiv_url": "https://arxiv.org/abs/2610.24436v1",
+  "authors": [
+    "Mark Azer",
+    "Fabian B. Flohr"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-24436",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.597326+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.24436v1",
+  "published_at": "2026-10-17T03:53:11Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "carla",
+      "autonomous",
+      "driving",
+      "road",
+      "pedestrian",
+      "驾驶",
+      "道路",
+      "行人",
+      "sim-to-real"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 87
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.24436v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "BodyBridge: Grounded Body Layers for Sim-to-Real Translation of Vulnerable Road Users",
+  "title_zh": "BodyBridge：用于脆弱道路用户的仿真到现实转换的基础身体层",
+  "translation_url": "https://hjfy.top/arxiv/2610.24436"
+}

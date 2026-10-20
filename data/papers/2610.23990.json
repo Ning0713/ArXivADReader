@@ -1,0 +1,55 @@
+{
+  "abstract": "Road scene understanding in automated driving (AD) aims to build a comprehensive analysis of video sequences taken on the road by embedded or fixed cameras (e.g., mounted on vertical road signals). One goal is to identify the relevant actors in the scene and another goal is to determine the causes that have triggered a specific action of the ego car (i.e., stop, slow down, turn left, etc.). In a complex urban environment, these causes can be multiple, confusing, possibly contradictory to other causes and not easily expressible using simplistic reasoning. Still, providing accurate {\\it automatic cause determination} supports a) user acceptance by providing appropriate explanations to the car passengers and road users; b) increased road safety by providing detailed road scene understanding to traffic. In this paper, we propose using spatiotemporal reasoning and Belnap's four-valued logic to formulate complex causes of AD action in a road scene. We compute these causes by analysing a Qualitative eXplainable Graph (QXG), which is an abstract representation of the road scene capturing spatiotemporal relations between road entities. Starting from a QXG, our approach called \\tool, is targeted to determine complex causes of a selected AD action occurring in a specific frame of a road scene. The usefulness of \\tool is demonstrated on several scenes extracted from the well-known NuScene dataset.",
+  "abstract_zh": "自动驾驶（AD）中的道路场景理解旨在对通过嵌入式或固定摄像头（例如，安装在垂直道路信号上的摄像头）拍摄的道路视频序列进行全面分析。一个目标是识别场景中的相关参与者，另一个目标是确定触发自车（即停车、减速、左转等）特定动作的原因。在复杂的城市环境中，这些原因可能是多重的、混淆的，甚至可能与其他原因相矛盾，并且不易用简单的推理来表达。然而，提供准确的自动因果判定有助于 a) 通过为车内乘客和道路使用者提供适当的解释来提高用户接受度；b) 通过为交通提供详细的道路场景理解来提高道路安全性。本文提出使用时空推理和贝尔纳普的四值逻辑来表述道路场景中自动驾驶动作的复杂原因。我们通过分析定性可解释图（Qualitative eXplainable Graph, QXG）来计算这些原因，QXG是捕捉道路实体之间时空关系的道路场景的抽象表示。基于QXG，我们的方法称为 ool，旨在确定在特定道路场景帧中发生的选定AD动作的复杂原因。 ool的有效性在多个从著名的NuScene数据集中提取的场景中得到了验证。",
+  "arxiv_id": "2610.23990",
+  "arxiv_url": "https://arxiv.org/abs/2610.23990v1",
+  "authors": [
+    "Nassim Belmecheri",
+    "Arnaud Gotlieb",
+    "Nadjib Lazaar",
+    "Helge Spieker"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-23990",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.587451+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23990v1",
+  "published_at": "2026-10-14T16:41:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "driving",
+      "car",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23990v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Automatic Cause Determination in Road Scene Understanding Using Qualitative Reasoning and Four-Valued Logic",
+  "title_zh": "基于定性推理和四值逻辑的道路场景理解中的自动因果判定",
+  "translation_url": "https://hjfy.top/arxiv/2610.23990"
+}

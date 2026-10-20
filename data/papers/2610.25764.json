@@ -1,0 +1,50 @@
+{
+  "abstract": "Time-series models increasingly condition on known future inputs. In controlled systems, some of these inputs are actions that can be changed, compared, and optimized before execution. A model must therefore do more than predict the realized future: it must predict how outcomes change under different actions from the same observed history and support reliable comparison of candidate plans. We introduce ActTime, an action-conditioned world model for time series. Over the observed history, ActTime updates variable-specific latent states through an action-conditioned transition and corrects them using observations. It then rolls the same transition forward under candidate actions to generate future trajectories. Training uses only factual trajectories, without paired alternative-action outcomes or planning supervision. We construct a simulator-grounded evaluation suite across building energy, traffic, greenhouse climate, and inventory management, covering factual prediction, intervention-effect prediction, offline decision making, and closed-loop planning. ActTime ranks first in 12 of 16 domain-task settings. Across eight methods, the mean pairwise model-ranking reversal rate is 17.8% between factual prediction and intervention fidelity, and rises to 28.4% between intervention fidelity and decision ranking. These results show that factual accuracy, intervention fidelity, and decision quality are related but not interchangeable.",
+  "abstract_zh": "时间序列模型越来越多地依赖已知的未来输入。在受控系统中，这些输入中的一些是可以在执行前进行更改、比较和优化的动作。因此，模型必须做的不仅仅是预测实现的未来：它还必须预测在相同观察历史下，不同动作如何改变结果，并支持候选计划的可靠比较。我们提出了ActTime，一种基于动作的时间序列世界模型。在观察历史中，ActTime通过基于动作的转移更新特定变量的潜在状态，并使用观察结果对其进行修正。然后，它在候选动作下向前滚动相同的转移，以生成未来轨迹。训练仅使用事实轨迹，而不需要配对的替代动作结果或规划监督。我们构建了一个基于模拟器的评估套件，涵盖建筑能源、交通、温室气候和库存管理，涉及事实预测、干预效果预测、离线决策和闭环规划。在16个领域任务设置中，ActTime在12个中排名第一。在八种方法中，事实预测与干预保真度之间的平均成对模型排名逆转率为17.8%，而干预保真度与决策排名之间的逆转率上升至28.4%。这些结果表明，事实准确性、干预保真度和决策质量是相关的，但并不可互换。",
+  "arxiv_id": "2610.25764",
+  "arxiv_url": "https://arxiv.org/abs/2610.25764v1",
+  "authors": [
+    "Xinxing Zhou",
+    "Xiaojie Yuan",
+    "Yanlong Wen",
+    "Ming Jin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25764",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.751873+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25764v1",
+  "published_at": "2026-10-19T04:24:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "交通",
+      "world model"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25764v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "ActTime: Action-Conditioned World Modeling for Time Series",
+  "title_zh": "ActTime：基于动作的时间序列世界建模",
+  "translation_url": "https://hjfy.top/arxiv/2610.25764"
+}

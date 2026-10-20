@@ -1,0 +1,53 @@
+{
+  "abstract": "Diffusion models have become a dominant paradigm for end-to-end autonomous driving, yet existing planners organize trajectory generation along the Gaussian-noise axis, treating driving utility only as an auxiliary guidance or selection signal. We instead formulate diffusion along a driving-quality axis. We propose QualiDrive, which constructs scene-specific quality ladders by ranking observed trajectories according to measured driving utility and learns to reverse this ordered degradation through ordered low-to-high-quality refinement. Each reverse step is conditioned on the scene, ego state, current trajectory, and target quality level, progressively refining trajectories toward higher driving quality. On NAVSIM, QualiDrive achieves 94.5 PDMS on v1 and a state-of-the-art 92.74 EPDMS on v2. QualiDrive improves Oracle EPDMS only modestly over endpoint-only quality supervision (98.52 to 98.57), but substantially increases the fractions of candidates above 0.95 and 0.98 EPDMS from 12.94%/9.71% to 21.53%/15.93%, raising selected EPDMS from 92.63 to 92.74. These results suggest that diffusion is not merely a process of denoising, but one of progressive quality-ordered refinement.",
+  "abstract_zh": "扩散模型已成为端到端自主驾驶的主导范式，但现有的规划器沿高斯噪声轴组织轨迹生成，仅将驾驶效用视为辅助指导或选择信号。我们则提出沿驾驶质量轴进行扩散的概念。我们提出了QualiDrive，它通过根据测量的驾驶效用对观察到的轨迹进行排名，构建场景特定的质量阶梯，并学习通过有序的低到高质量的细化来逆转这种有序的降级。每个逆转步骤都以场景、自我状态、当前轨迹和目标质量水平为条件，逐步将轨迹细化至更高的驾驶质量。在NAVSIM上，QualiDrive在v1上达到了94.5 PDMS，并在v2上取得了92.74的最新状态的EPDMS。QualiDrive在端点仅质量监督下对Oracle EPDMS的提升仅为微小（从98.52提升至98.57），但显著增加了超过0.95和0.98 EPDMS的候选比例，从12.94%/9.71%提升至21.53%/15.93%，将选定的EPDMS从92.63提升至92.74。这些结果表明，扩散不仅仅是去噪过程，而是一个逐步质量有序细化的过程。",
+  "arxiv_id": "2610.23885",
+  "arxiv_url": "https://arxiv.org/abs/2610.23885v1",
+  "authors": [
+    "Junjie Yang",
+    "Ziyi Shi",
+    "Shuqi Shen",
+    "Xinhu Zheng",
+    "Hongliang Lu",
+    "Hai Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-23885",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.521877+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23885v1",
+  "published_at": "2026-09-26T15:03:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23885v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "From Likelihood to Utility: Quality-Axis Diffusion for End-to-End Autonomous Driving",
+  "title_zh": "从似然性到效用：端到端自主驾驶的质量轴扩散",
+  "translation_url": "https://hjfy.top/arxiv/2610.23885"
+}

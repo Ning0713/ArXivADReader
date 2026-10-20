@@ -1,0 +1,60 @@
+{
+  "abstract": "Driving-scene reconstruction via feed-forward Gaussian splatting from sparse multi-view images remains challenging due to two factors. First, cross-camera photometric inconsistency, caused by variations in exposure, ISP, and illumination, can be incorrectly absorbed into Gaussian geometry. Second, unreliable local geometric supervision arises from normal-based constraints near depth discontinuities. To address these issues, we present \\textbf{MCSplat}, a multi-view consistent feed-forward Gaussian splatting framework for driving scenes. MCSplat constructs a canonical appearance space from depth-guided multi-camera correspondences to decouple geometry learning from camera-specific appearance. A multi-scale Bilateral Grid Transformer restores raw camera appearance from canonical renderings, enabling photometric supervision without contaminating Gaussian geometry. To improve local geometric reliability, we estimate Fisher-information-based uncertainty from photometric sensitivity and use it to adaptively weight surface-oriented self-supervision. Extensive experiments demonstrate improved reconstruction quality and generalization across driving datasets. Geometry-oriented evaluations further reveal enhanced cross-view depth consistency and local surface-normal agreement, while qualitative results show fewer geometric artifacts and more coherent structures across overlapping views.",
+  "abstract_zh": "通过稀疏多视图图像进行前馈高斯喷溅的驾驶场景重建仍然面临两大挑战。首先，由于曝光、图像信号处理（ISP）和照明的变化，跨相机的光度不一致性可能会错误地被吸收到高斯几何中。其次，深度不连续性附近的法线约束导致不可靠的局部几何监督。为了解决这些问题，我们提出了 extbf{MCSplat}，一种用于驾驶场景的多视图一致的前馈高斯喷溅框架。MCSplat通过深度引导的多相机对应关系构建一个规范外观空间，从而将几何学习与相机特定的外观解耦。多尺度双边网格变换器从规范渲染中恢复原始相机外观，使光度监督得以进行而不污染高斯几何。为了提高局部几何的可靠性，我们基于光度敏感性估计Fisher信息的不确定性，并利用它自适应地加权面向表面的自我监督。大量实验表明，在驾驶数据集上重建质量和泛化能力得到了改善。面向几何的评估进一步揭示了跨视图深度一致性和局部表面法线一致性得到了增强，而定性结果显示重叠视图之间的几何伪影减少，结构更加连贯。",
+  "arxiv_id": "2610.25345",
+  "arxiv_url": "https://arxiv.org/abs/2610.25345v1",
+  "authors": [
+    "Yifei Wang",
+    "Wei Tian",
+    "Wenhua Bao",
+    "Jia Zhou",
+    "Hanshi Wang",
+    "Fudong Ge",
+    "Jianhua Wu",
+    "Shuai Yuan",
+    "Zhipeng Zhang",
+    "Xingliang Liu",
+    "Xianming Zeng",
+    "Jianyun Xu",
+    "Bingzhao Gao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25345",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.625651+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25345v1",
+  "published_at": "2026-10-18T15:40:44Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "gaussian splatting"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25345v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "本文提出用于自动驾驶场景重建的 MCSplat，通过规范外观空间消除多相机光度差异对几何学习的干扰，并利用不确定性加权提升深度边界附近的局部几何监督可靠性，从而生成跨视角更一致、几何伪影更少的高斯场景表示。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "MCSplat: Multi-View Photometric and Geometric Consistent Feed-Forward Gaussian Splatting for Driving Scenes",
+  "title_zh": "MCSplat：用于驾驶场景的多视图光度和几何一致的前馈高斯喷溅",
+  "translation_url": "https://hjfy.top/arxiv/2610.25345"
+}

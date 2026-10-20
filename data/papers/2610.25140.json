@@ -1,0 +1,50 @@
+{
+  "abstract": "Traffic forecasting models based on spectral graph convolution offer an interpretable account of how information is mixed between sensors, but they rely on an eigendecomposition of the graph Laplacian. It costs cubic time, is fixed by the road network, and provides a symmetric operator that cannot represent the directed propagation of traffic congestion. Attention-based spatio-temporal transformers remove these limitations but generate a dense sensor-by-sensor attention map at each layer and time step, so memory, rather than accuracy, becomes the binding constraint on large networks. We introduce the spectral adaptive graph transformer, whose spatial operator is learned rather than derived from the Laplacian, directed rather than symmetric, and conditioned on the current traffic state rather than a static state, at a cost linear in the number of sensors. A sparse road graph diffusion branch provides the strictly local propagation that a low-rank operator cannot express, and a zero-initialized gate learns the balance between the two. Before spatial mixing, a unit-mean-gain frequency-bin attention module reweights each sensor's short-term periodicities according to its identity and current context. Across six public benchmarks spanning 170 to 1843 sensors, evaluated over three random seeds, the proposed model attains the lowest error of any single end-to-end model on one benchmark and remains competitive with the strongest current attention models on the others, while using about a quarter of their memory and training about twice as fast.",
+  "abstract_zh": "基于谱图卷积的交通预测模型提供了信息在传感器之间混合的可解释性，但它们依赖于图拉普拉斯算子的特征分解。这一过程的时间复杂度为立方级，且由道路网络固定，提供的对称算子无法表示交通拥堵的定向传播。基于注意力的时空变换器消除了这些限制，但在每一层和时间步生成密集的传感器间注意力图，因此，内存而非准确性成为大型网络的限制因素。我们提出了谱自适应图变换器，其空间算子是通过学习获得的，而非从拉普拉斯算子导出，且是定向的而非对称的，并且是基于当前交通状态而非静态状态进行条件化，计算复杂度与传感器数量呈线性关系。稀疏的道路图扩散分支提供了低秩算子无法表达的严格局部传播，而零初始化的门控机制学习了两者之间的平衡。在空间混合之前，单位均值增益频率-bin 注意力模块根据每个传感器的身份和当前上下文重新加权其短期周期性。在涵盖170到1843个传感器的六个公共基准测试中，经过三个随机种子的评估，所提出的模型在一个基准测试中达到了任何单一端到端模型中最低的误差，并在其他基准测试中与当前最强的注意力模型保持竞争力，同时使用了大约四分之一的内存，并且训练速度约为其两倍。",
+  "arxiv_id": "2610.25140",
+  "arxiv_url": "https://arxiv.org/abs/2610.25140v1",
+  "authors": [
+    "Amirhossein Ghaffari",
+    "Susanna Pirttikangas",
+    "Ekaterina Gilman"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25140",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.736489+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25140v1",
+  "published_at": "2026-10-18T09:48:51Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25140v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "提出一种面向大规模道路传感器网络的高效时空交通预测模型，通过状态自适应、定向且低秩的空间算子与稀疏道路图扩散分支，预测交通状态并显著降低内存和训练成本。该研究可为自动驾驶系统的交通态势预测、路径规划和决策提供环境级先验信息。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Spectral Adaptive Graph Transformer for Efficient and Scalable Traffic Forecasting",
+  "title_zh": "用于高效和可扩展交通预测的谱自适应图变换器",
+  "translation_url": "https://hjfy.top/arxiv/2610.25140"
+}

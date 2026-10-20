@@ -1,0 +1,61 @@
+{
+  "abstract": "Robust scene understanding under varying environmental conditions is essential for safe autonomous driving. While cameras and LiDAR degrade in adverse weather and poor lighting, Frequency-Modulated Continuous-Wave (FMCW) spinning radar provides dependable 360{\\deg} perception at extended ranges with minimal compute cost. However, real-time FMCW radar scene understanding is challenging due to complex signal returns, limited temporal resolution, and scarce annotated datasets. We introduce StreamRPS, a novel framework for streaming FMCW radar panoptic segmentation, comprising an automated label-generation pipeline via LiDAR scene completion and a real-time streaming network for semantic and panoptic segmentation. Our encoder-decoder streaming architecture comprises a radar-specific hierarchical Transformer encoder and task-specific decoders for semantic or panoptic prediction. Our encoder introduces a stem to capture range-dependent signatures, anisotropic patch embeddings to preserve angular resolution, and axial polar attention to separately model the periodic azimuth and bounded range axes. We further introduce azimuth roll rotation augmentation to simulate ego-vehicle rotation during training. Comprehensive experiments on the SAX and BOREAS datasets validate both our auto-labeling methodology and streaming segmentation network against established baselines. We outperform the strongest baseline by at least 1.4pp while processing sectors at over 400 FPS in a 4-sector streaming setting. We additionally provide manual annotations for 100 SAX radar scans, enabling independent evaluation of the entire framework.",
+  "abstract_zh": "在不同环境条件下进行稳健的场景理解对安全的自动驾驶至关重要。尽管在恶劣天气和光照不足的情况下，摄像头和激光雷达的性能会下降，但频率调制连续波（Frequency-Modulated Continuous-Wave, FMCW）旋转雷达能够以最低的计算成本提供可靠的360°感知，且有效范围更广。然而，由于复杂的信号返回、有限的时间分辨率和稀缺的标注数据集，实时FMCW雷达场景理解面临挑战。我们提出了StreamRPS，一个用于流式FMCW雷达全景分割的新框架，包含通过激光雷达场景补全实现的自动标签生成管道，以及用于语义和全景分割的实时流式网络。我们的编码-解码流式架构包括一个特定于雷达的层次化Transformer编码器和用于语义或全景预测的任务特定解码器。我们的编码器引入了一个用于捕捉与距离相关的特征的干，非各向同性的补丁嵌入以保持角度分辨率，以及轴向极坐标注意力以分别建模周期性方位和有限范围轴。我们进一步引入方位滚转旋转增强，以在训练过程中模拟自车的旋转。在SAX和BOREAS数据集上的全面实验验证了我们的自动标注方法和流式分割网络相较于已建立基线的有效性。在400 FPS以上的4扇区流式设置中，我们的性能至少超过最强基线1.4个百分点。此外，我们还为100个SAX雷达扫描提供了手动标注，以便对整个框架进行独立评估。",
+  "arxiv_id": "2610.26816",
+  "arxiv_url": "https://arxiv.org/abs/2610.26816v1",
+  "authors": [
+    "Santosh Parit",
+    "Julia Hindel",
+    "Rohit Mohan",
+    "Georgi Pramatarov",
+    "Paul Newman",
+    "Daniele De Martini",
+    "Abhinav Valada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-26816",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.675935+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.26816v1",
+  "published_at": "2026-10-19T17:51:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "ego-vehicle",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "lidar",
+      "radar",
+      "scene completion"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.26816v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "Real-Time Radar Semantic and Panoptic Scene Understanding",
+  "title_zh": "实时雷达语义与全景场景理解",
+  "translation_url": "https://hjfy.top/arxiv/2610.26816"
+}

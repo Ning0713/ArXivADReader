@@ -1,0 +1,52 @@
+{
+  "abstract": "This paper studies LiDAR-assisted RGB semantic segmentation, where LiDAR point-cloud features improve dense pixel-wise predictions in the RGB image plane rather than 3D point labels or detections. Existing 2D fusion methods often project point clouds into shallow depth/range maps and apply spatially uniform fusion, discarding rich 3D structure and ignoring the range-dependent reliability of outdoor LiDAR. We propose RAHF-Net, a Range-Aware Heterogeneous Fusion Network. Its Cylindrical-to-Perspective (C2P) module projects pretrained cylindrical voxel features into the image plane, preserving structured 3D semantic priors. A Range-Aware Heterogeneous Fusion (RAHF) module then uses a soft depth-derived range mask to perform LiDAR-guided geometric enhancement in reliable near-field regions and visual-context enhancement in sparse far-field regions. On KITTI-360, RAHF-Net achieves 65.76 mIoU, outperforming representative RGB-only and RGB-LiDAR baselines, including CMX by 1.45 points. Experiments on DELIVER further demonstrate improved robustness under adverse weather, illumination degradation, and sensor corruption.",
+  "abstract_zh": "本文研究了激光雷达辅助的RGB语义分割，其中激光雷达点云特征用于改善RGB图像平面中的密集像素级预测，而不是3D点标签或检测。现有的2D融合方法通常将点云投影到浅层深度/范围图中，并应用空间均匀融合，忽略了丰富的3D结构，并且未考虑户外激光雷达的范围依赖可靠性。我们提出了RAHF-Net，一个基于范围感知的异构融合网络。其圆柱体到透视（C2P）模块将预训练的圆柱体体素特征投影到图像平面，保留了结构化的3D语义先验。接着，范围感知异构融合（RAHF）模块使用软深度衍生的范围掩码，在可靠的近场区域执行激光雷达引导的几何增强，并在稀疏的远场区域进行视觉上下文增强。在KITTI-360数据集上，RAHF-Net达到了65.76的mIoU，超越了代表性的RGB-only和RGB-LiDAR基线，包括CMX提高了1.45个百分点。对DELIVER数据集的实验进一步证明了在恶劣天气、光照退化和传感器损坏下的增强鲁棒性。",
+  "arxiv_id": "2610.25400",
+  "arxiv_url": "https://arxiv.org/abs/2610.25400v1",
+  "authors": [
+    "R. D. Lin",
+    "Pengcheng Weng",
+    "Ge Wang",
+    "Han Ding",
+    "Fei Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25400",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.628689+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25400v1",
+  "published_at": "2026-10-18T16:54:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "kitti-360",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25400v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "RAHF-Net: Range-Aware Heterogeneous Fusion for LiDAR-Assisted RGB Semantic Segmentation",
+  "title_zh": "RAHF-Net：基于范围感知的异构融合用于激光雷达辅助的RGB语义分割",
+  "translation_url": "https://hjfy.top/arxiv/2610.25400"
+}

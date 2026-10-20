@@ -1,0 +1,47 @@
+{
+  "abstract": "Camera-based 3D semantic occupancy models can be trained without 3D labels by rendering their predictions into the images and supervising them with 2D pseudo labels. In sparse Gaussian representations trained this way, Gaussian positions are learned only through pixel-wise rendering losses, which we hypothesize give small foreground objects little weight. In trained GaussianFlowOcc models, the Gaussian density on foreground voxels is on average only 1.62 times that on background voxels. We propose a training-only foreground attraction loss that back-projects foreground pseudo-label pixels with pseudo depth and pulls nearby Gaussians toward these 3D points, favoring Gaussians that already predict the target class; the inference network is unchanged. On Occ3D-nuScenes, the loss raises this concentration to 2.40 over three seeds. Over three seeds, the mean foreground IoU increases from 6.29 to 6.96 and is higher for each seed, whereas the change in mean mIoU (13.53 to 13.82) is within the seed-to-seed variation of the baseline. Single-run ablations further indicate that pseudo-label targets outperform targets placed at ground-truth voxels and that acting on the Gaussian positions alone is not sufficient, and a single-seed test shows that the model degrades less when fewer Gaussians are kept at inference.",
+  "abstract_zh": "基于相机的3D语义占用模型可以在没有3D标签的情况下进行训练，通过将其预测渲染到图像中，并使用2D伪标签进行监督。在这种方式训练的稀疏高斯表示中，高斯位置仅通过逐像素渲染损失进行学习，我们假设这使得小型前景物体的权重较小。在训练的GaussianFlowOcc模型中，前景体素上的高斯密度平均仅为背景体素的1.62倍。我们提出了一种仅在训练期间使用的前景吸引损失，该损失通过伪深度反向投影前景伪标签像素，并将附近的高斯拉向这些3D点，优先考虑已经预测目标类别的高斯；推理网络保持不变。在Occ3D-nuScenes上，该损失将这种集中度提高到3个种子的2.40。在三个种子中，平均前景IoU从6.29增加到6.96，并且每个种子均较高，而平均mIoU的变化（从13.53到13.82）在基线的种子间变异范围内。单次实验的消融研究进一步表明，伪标签目标优于放置在真实体素上的目标，仅对高斯位置进行操作是不够的，而单种子测试显示，当推理时保留的高斯数量较少时，模型的退化程度较低。",
+  "arxiv_id": "2610.25631",
+  "arxiv_url": "https://arxiv.org/abs/2610.25631v1",
+  "authors": [
+    "Jeagon Song",
+    "Jhonghyun An"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25631",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.637500+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25631v1",
+  "published_at": "2026-10-19T01:13:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "occupancy"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25631v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Where Do the Gaussians Go? Foreground Attraction for Camera-Based Weakly Supervised 3D Occupancy",
+  "title_zh": "高斯分布的去向？基于相机的弱监督3D占用前景吸引",
+  "translation_url": "https://hjfy.top/arxiv/2610.25631"
+}

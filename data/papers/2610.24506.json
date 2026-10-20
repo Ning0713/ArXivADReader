@@ -1,0 +1,51 @@
+{
+  "abstract": "Self-supervised monocular depth estimation remains challenging due to the loss of fine-grained details and limited adaptability to varying scene structures. In this paper, we propose SAP-Depth, a novel architecture based on Scene-Adaptive Probabilistic. Unlike traditional methods, we introduce a Dynamic Bins mechanism powered by a Learnable Parameter Predictor, which adaptively estimates scene-specific depth distributions conditioned on the input image context. Furthermore, a Bin-wise Probability Distribution Decoder is designed to effectively fuse multi-scale representations to predict dense depth probability distributions, significantly enhancing boundary sharpness and structural recovery. Through the collaborative coupling of these proposed modules, our model achieves dynamic prediction of scene-specific depth distributions. Extensive experiments on the KITTI dataset show that SAP-Depth outperforms existing state-of-the-art methods in accuracy, particularly in its ability to better preserve complex edge details. Further, tests on the Make3D dataset validate the model's excellent generalization capability and robustness.",
+  "abstract_zh": "自监督单目深度估计由于细节损失和对不同场景结构的适应性有限而仍然具有挑战性。本文提出了SAP-Depth，一种基于场景自适应概率的新型架构。与传统方法不同，我们引入了一种由可学习参数预测器驱动的动态区间机制，该机制根据输入图像上下文自适应地估计特定场景的深度分布。此外，我们设计了一个区间概率分布解码器，以有效融合多尺度表示，预测稠密的深度概率分布，显著增强边界清晰度和结构恢复。通过这些提出模块的协同耦合，我们的模型实现了场景特定深度分布的动态预测。在KITTI数据集上的大量实验表明，SAP-Depth在准确性上优于现有的最先进方法，特别是在更好地保留复杂边缘细节方面。此外，在Make3D数据集上的测试验证了模型出色的泛化能力和鲁棒性。",
+  "arxiv_id": "2610.24506",
+  "arxiv_url": "https://arxiv.org/abs/2610.24506v1",
+  "authors": [
+    "Bowen He",
+    "Li Zhang",
+    "Yujie Chen",
+    "Chang Cheng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-24506",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.599986+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.24506v1",
+  "published_at": "2026-10-17T07:07:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.24506v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "多传感器融合"
+    ]
+  },
+  "title": "SAP-Depth: Scene-Adaptive Probability Framework for Self-Supervised Monocular Depth Estimation",
+  "title_zh": "SAP-Depth：用于自监督单目深度估计的场景自适应概率框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.24506"
+}

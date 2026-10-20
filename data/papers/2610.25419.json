@@ -1,0 +1,51 @@
+{
+  "abstract": "Pedestrians differ in whether they respond to a robot, yet many RL policies assume all are non-reactive to prioritize safety. Policies trained without conditioning on local pedestrians' reactivity may therefore be unnecessarily conservative or rely on cooperation that does not occur. We propose RCRA, an online adaptation framework that modulates a learned residual around a frozen conservative navigation policy according to estimated pedestrian reactivity. A Transformer-based estimator infers latent pedestrian reactivity from motion histories and robot context, providing a more accurate signal for navigation adaptation and improving scenario-averaged simulation accuracy by $12.62$ percentage points over the Bayesian baseline, which assumes known pedestrian goals. These estimates are spatially aggregated into an adaptation scale that gates LoRA modules, enabling cooperative behavior near reactive pedestrians and conservative behavior near non-reactive pedestrians. Among baselines achieving SR above $90\\%$ in every scenario, RCRA reduces scenario-averaged path length by $16.7\\%$ relative to the conservative backbone and by $7.3\\%$ relative to randomized-training baselines. It improves mean SR by $14.88$ percentage points over the reactive-trained policy.",
+  "abstract_zh": "行人对机器人的反应存在差异，但许多强化学习（RL）策略假设所有行人都是非反应性的，以优先考虑安全性。因此，在未考虑当地行人反应性的情况下训练的策略可能过于保守，或依赖于并不存在的合作。我们提出了RCRA（反应性条件残差适应），这是一种在线适应框架，根据估计的行人反应性调节围绕冻结的保守导航策略的学习残差。基于Transformer的估计器从运动历史和机器人上下文中推断潜在的行人反应性，为导航适应提供更准确的信号，并使得场景平均模拟准确性比假设已知行人目标的贝叶斯基线提高了12.62个百分点。这些估计在空间上聚合成一个适应尺度，控制LoRA模块，使得在反应性行人附近能够实现合作行为，而在非反应性行人附近则保持保守行为。在每个场景中实现SR超过90%的基线中，RCRA相对于保守基线减少了场景平均路径长度的16.7%，相对于随机训练基线减少了7.3%。它使得平均SR比反应性训练策略提高了14.88个百分点。",
+  "arxiv_id": "2610.25419",
+  "arxiv_url": "https://arxiv.org/abs/2610.25419v1",
+  "authors": [
+    "Immanuel R. Santjoko",
+    "Benedictus C. G. Cinun",
+    "Jing Chen",
+    "Bin Hu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25419",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.544782+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25419v1",
+  "published_at": "2026-10-18T17:18:11Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "pedestrian",
+      "行人",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25419v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "本文研究机器人在行人反应性存在分布偏移时的在线导航适应问题。方法通过Transformer估计行人是否会对机器人作出反应，并据此控制导航策略中的LoRA残差模块，在合作通行效率与保守安全行为之间动态切换。虽然实验对象更偏向通用移动机器人而非明确的自动驾驶车辆，但其行人交互建模、动态路径规划与安全决策方法可直接迁移至自动驾驶场景，因此按高召回原则纳入。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "Learning When to Adapt: Reactivity-Conditioned Residual Adaptation under Human-Robot Distribution Shift",
+  "title_zh": "学习何时适应：在人机分布变化下的反应性条件残差适应",
+  "translation_url": "https://hjfy.top/arxiv/2610.25419"
+}

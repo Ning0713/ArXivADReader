@@ -1,0 +1,59 @@
+{
+  "abstract": "Lane departure and traffic-sign negligence are leading contributors to road accidents, particularly in regions with non-standardized signage and limited annotated data. Existing Advanced Driver Assistance Systems (ADAS) solutions are often developed as disjointed submodules, are rarely validated for real-time operation, and struggle to balance accuracy with low-latency inference for embedded deployment. We address these gaps with a unified, edge-deployable ADAS framework that simultaneously performs lane-departure warning (LDW) and traffic-sign detection and recognition (TSD/TSR), and validate the proposed system on automotive-class devices. Our framework combines a lightweight, lane-segmentation-driven LDW, which includes a drivable-area fallback for degraded markings, with a two-stage TSD/TSR pipeline consisting of efficient sign localization followed by fine-grained classification, designed to preserve accuracy at embedded latency. To support region-specific deployment under data scarcity, we curate a 35-class local traffic-sign dataset and introduce a generalized augmentation and balancing profile, expanding the corpus from 359 images to 8,750 samples. On an NVIDIA Jetson Orin Nano, the integrated system sustains 15 FPS end to end (32 FPS for LDW and 18 FPS for TSD/TSR). The TSD/TSR branch achieves 97.4 mAP for detection and 95.6% validation accuracy (93.1% on a local real-world set) while maintaining an approximately 13.9 M parameter footprint. Relative to recent methods that target a single task or report results only on desktop-class GPUs, our approach delivers both LDW and TSD/TSR with real-time performance on edge hardware, providing a practical pathway to low-cost, field-ready ADAS in resource-constrained settings.",
+  "abstract_zh": "车道偏离和交通标志忽视是导致道路事故的主要因素，尤其是在标志不标准和注释数据有限的地区。现有的高级驾驶辅助系统（ADAS）解决方案通常作为离散的子模块开发，鲜有针对实时操作进行验证，并且在嵌入式部署中难以平衡准确性与低延迟推理。我们通过一个统一的边缘可部署ADAS框架来解决这些问题，该框架同时执行车道偏离警告（LDW）和交通标志检测与识别（TSD/TSR），并在汽车级设备上验证所提系统。我们的框架结合了一个轻量级的、基于车道分割的LDW，包含了针对标记退化的可行区域回退，以及一个由高效的标志定位和细粒度分类组成的两阶段TSD/TSR管道，旨在保持嵌入式延迟下的准确性。为了支持在数据稀缺情况下的区域特定部署，我们整理了一个包含35类本地交通标志的数据集，并引入了一种通用的增强和平衡配置，将数据集从359张图像扩展到8750个样本。在NVIDIA Jetson Orin Nano上，集成系统实现了端到端15 FPS（LDW为32 FPS，TSD/TSR为18 FPS）。TSD/TSR分支在检测中达到了97.4的mAP和95.6%的验证准确率（在本地真实世界数据集上为93.1%），同时保持了约13.9 M的参数规模。与近期针对单一任务或仅在桌面级GPU上报告结果的方法相比，我们的方法在边缘硬件上同时提供LDW和TSD/TSR的实时性能，为资源受限环境中的低成本、现场就绪ADAS提供了切实可行的路径。",
+  "arxiv_id": "2610.25340",
+  "arxiv_url": "https://arxiv.org/abs/2610.25340v1",
+  "authors": [
+    "Hassaan Ali Qureshi",
+    "Danish Hussain",
+    "Ali Hassan",
+    "Aon Safdar",
+    "Anas Bin Aqeel",
+    "Muhammad Rafiq",
+    "Zohaib Riaz",
+    "Farhan Hussain"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25340",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.624898+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25340v1",
+  "published_at": "2026-10-18T15:34:08Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "automotive",
+      "traffic",
+      "road",
+      "lane",
+      "驾驶",
+      "交通",
+      "道路",
+      "车道"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 40
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25340v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "提出面向汽车边缘设备的轻量级实时ADAS感知框架，集成基于车道分割的车道偏离预警和交通标志检测识别，并通过可行驶区域回退机制增强车道标线退化场景下的可靠性。系统在Jetson Orin Nano上实现15 FPS端到端运行，同时构建并增强区域性交通标志数据集，重点兼顾感知精度、驾驶安全和嵌入式部署效率。",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "Edge Deployable Lightweight Framework for Real-Time Driver Safety System with Integrated Lane Departure and Traffic Sign Recognition",
+  "title_zh": "边缘可部署轻量框架用于实时驾驶员安全系统，集成车道偏离和交通标志识别",
+  "translation_url": "https://hjfy.top/arxiv/2610.25340"
+}

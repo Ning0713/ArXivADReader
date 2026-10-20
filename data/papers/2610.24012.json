@@ -1,0 +1,53 @@
+{
+  "abstract": "Developing autonomous electric wheelchairs capable of long-horizon sidewalk navigation is critical for accessible personal mobility, yet existing approaches either focus on indoor map-based navigation or rely on expensive, complex sensor stacks to achieve full autonomy. In this work, we propose to tackle outdoor sidewalk navigation by leveraging visual navigation foundation models and large-scale navigation datasets, which offer strong generalization using lightweight hardware. To this end, we present ChairNav, a novel framework that adapts a general visual navigation model into a personalized electric wheelchair navigation system using a three-stage data pyramid. To address the scarcity of in-domain data, ChairNav first pre-trains on large-scale cross-embodiment datasets transformed into the wheelchair domain, followed by mid-training on a small number of wheelchair demonstrations to eliminate remaining domain gaps. Finally, a post-training stage refines the deployed model from user interventions to personalize its behavior. We deploy ChairNav on a commercial electric wheelchair equipped with an RGB-D camera and an onboard NVIDIA Jetson compute module. Experimental results validate the effectiveness of each stage in our data pyramid: pre-training reduces lateral ADE by 18%, and post-training increases the mean distance between user interventions from 29.2 m to 57.4 m. Further evaluation on kilometer-scale urban sidewalk routes shows that our system operates autonomously for 93.4% of total driving time, demonstrating its potential for everyday accessible mobility. Demo video and more details are at https://vail.cs.ucla.edu/ChairNav/.",
+  "abstract_zh": "开发能够进行长距离人行道导航的自主电动轮椅对可及个人出行至关重要，然而现有的方法要么专注于室内基于地图的导航，要么依赖昂贵且复杂的传感器堆栈以实现完全自主。在本研究中，我们提出通过利用视觉导航基础模型和大规模导航数据集来解决户外人行道导航问题，这些模型在轻量级硬件上提供了强大的泛化能力。为此，我们提出了ChairNav，一个新颖的框架，将通用视觉导航模型适配为个性化的电动轮椅导航系统，采用三阶段数据金字塔。为了解决领域内数据稀缺的问题，ChairNav首先在转化为轮椅领域的大规模跨体现数据集上进行预训练，然后在少量轮椅演示上进行中期训练，以消除剩余的领域差距。最后，后期训练阶段通过用户干预来优化已部署模型的行为，以实现个性化。我们在一台配备RGB-D相机和NVIDIA Jetson计算模块的商业电动轮椅上部署了ChairNav。实验结果验证了我们数据金字塔中每个阶段的有效性：预训练将横向平均定位误差（ADE）减少了18%，后期训练使用户干预的平均距离从29.2米增加到57.4米。进一步在公里级城市人行道路线上的评估表明，我们的系统在93.4%的总驾驶时间内实现了自主操作，展示了其在日常可及出行中的潜力。演示视频和更多细节请访问 https://vail.cs.ucla.edu/ChairNav/。",
+  "arxiv_id": "2610.24012",
+  "arxiv_url": "https://arxiv.org/abs/2610.24012v1",
+  "authors": [
+    "Junhua Huang",
+    "Zhizheng Liu",
+    "Honglin He",
+    "Xiang Zhang",
+    "Bolei Zhou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-24012",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.526343+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.24012v1",
+  "published_at": "2026-10-15T22:37:57Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "驾驶",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.24012v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "本文研究基于视觉导航基础模型的自主电动轮椅长距离人行道导航，通过跨载体数据预训练、少量轮椅示范适配和用户干预后训练，实现轻量级端到端导航与个性化。虽然载体是轮椅而非汽车，但其涉及自主移动平台的环境感知、轨迹决策和实际道路场景自主行驶，与广义自动驾驶研究高度相关。",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "预测/规划",
+      "仿真/数据"
+    ]
+  },
+  "title": "ChairNav: Cross-Embodiment Pre-training and Personalization for Long-Horizon Wheelchair Navigation",
+  "title_zh": "ChairNav：跨体现预训练与个性化的长距离轮椅导航",
+  "translation_url": "https://hjfy.top/arxiv/2610.24012"
+}

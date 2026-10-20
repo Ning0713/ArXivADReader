@@ -1,0 +1,68 @@
+{
+  "abstract": "Multimodal perception improves autonomous-driving performance by combining complementary sensor information. However, stronger multimodal predictions do not necessarily imply stronger representations in each modality-specific branch. Such branch-level weaknesses can remain hidden in conventional output-level evaluation. We introduce UBD-Bench, a systematic benchmark for studying unimodal branch degradation (UBD) in multimodal perception. UBD-Bench uses a Paired Frozen-Branch Probe to compare the task-relevant representation quality of the same modality after independent unimodal training and multimodal joint training under matched decoding conditions. Across four autonomous-driving perception tasks and 10 models, we find that Camera branches consistently degrade after multimodal joint training, whereas LiDAR branches exhibit weaker and more model-dependent changes, revealing a pronounced modality asymmetry. Hierarchical probing further shows that Camera-branch degradation extends from the visual backbone through the Camera-to-BEV pathway and is most severe at the pre-fusion Camera BEV representation. Guided by this diagnosis, we introduce unimodal-to-multimodal distillation at the degraded representation. This intervention consistently improves both Camera-branch Probe performance and full-model performance across all four tasks. These results show that multimodal gains can coexist with degraded unimodal representations, highlighting branch-level representation quality as an important dimension for evaluating and improving multimodal perception.",
+  "abstract_zh": "多模态感知通过结合互补的传感器信息来提高自动驾驶性能。然而，更强的多模态预测并不一定意味着每个模态特定分支中的表示更强。这种分支级别的弱点在传统的输出级别评估中可能会被隐藏。我们引入了UBD-Bench，这是一个系统的基准测试，用于研究多模态感知中的单模态分支退化（UBD）。UBD-Bench使用配对冻结分支探测器（Paired Frozen-Branch Probe）来比较在匹配解码条件下，经过独立单模态训练和多模态联合训练后的同一模态的任务相关表示质量。在四个自动驾驶感知任务和10个模型中，我们发现相机分支在多模态联合训练后持续退化，而激光雷达分支则表现出较弱且更依赖模型的变化，揭示出明显的模态不对称性。分层探测进一步表明，相机分支的退化从视觉主干延伸至相机到鸟瞰视图（Camera-to-BEV）路径，并且在融合前的相机鸟瞰视图表示中最为严重。在这一诊断的指导下，我们在退化表示处引入了单模态到多模态的蒸馏。这一干预在所有四个任务中持续改善了相机分支探测器性能和全模型性能。这些结果表明，多模态增益可以与退化的单模态表示共存，强调了分支级表示质量作为评估和改善多模态感知的重要维度。",
+  "arxiv_id": "2610.25448",
+  "arxiv_url": "https://arxiv.org/abs/2610.25448v1",
+  "authors": [
+    "Ang Liu",
+    "Xiang Gu",
+    "Ruikai Li",
+    "Qiyue Wang",
+    "Yizhe Fan",
+    "Hao Shan",
+    "Ziyang Yan",
+    "Han Jiang",
+    "Zhenning Li",
+    "Xiaoshuai Hao",
+    "Yilong Ren",
+    "Zhiyong Cui",
+    "Haiyang Yu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25448",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.631387+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25448v1",
+  "published_at": "2026-10-18T18:11:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "lidar",
+      "驾驶感知",
+      "diagnosis",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25448v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "UBD-Bench: Benchmarking and Analyzing Unimodal Branch Degradation in Multimodal Perception for Autonomous Driving",
+  "title_zh": "UBD-Bench：在多模态感知中基准测试和分析单模态分支退化的研究",
+  "translation_url": "https://hjfy.top/arxiv/2610.25448"
+}

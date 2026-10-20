@@ -1,0 +1,67 @@
+{
+  "abstract": "End-to-end autonomous driving systems have achieved rapid progress by learning unified policies that map sensor observations directly to driving trajectories. However, once deployed, these systems typically remain frozen: they may repeat similar decisions in similar scenes, and failures can only be addressed through costly data collection and retraining. This sharply contrasts with human drivers, who improve lifelong through experience, memory, and reflection. In this work, we ask whether autonomous driving systems can achieve similar post-deployment self-evolution to human drivers. We propose EvoAD, a self-evolving autonomous driving framework via latent world-model guided post-hoc reflection. EvoAD stores driving experiences in a bird's-eye-view feature memory pool, retrieves scene-relevant precedents according to geometric and semantic similarity, and uses a latent world model to evaluate the future consequences of candidate trajectories in a compact planning-oriented space. Instead of treating memory as external textual contexts or using world models only for pre-action simulation, EvoAD transforms executed driving outcomes into reusable improvement signals for future decisions. This enables the system to diagnose how prior trajectories could have been improved and to refine behavior in similar future scenarios without retraining the base driving policy. Experiments on NAVSIM v1 and v2 show consistent improvements across reflection rounds and state-of-the-art performance, demonstrating the potential of world models as reflective mechanisms for post-deployment self-evolution in autonomous driving.",
+  "abstract_zh": "端到端自主驾驶系统通过学习统一策略，将传感器观测直接映射到驾驶轨迹，取得了快速进展。然而，一旦部署，这些系统通常保持不变：它们可能在相似场景中重复类似决策，而故障只能通过昂贵的数据收集和再训练来解决。这与人类驾驶员形成鲜明对比，人类驾驶员通过经验、记忆和反思终身改进。在本研究中，我们探讨自主驾驶系统是否能够实现类似于人类驾驶员的部署后自我进化。我们提出了EvoAD，一个通过潜在世界模型引导的事后反思实现自我进化的自主驾驶框架。EvoAD将驾驶经验存储在鸟瞰图特征记忆池中，根据几何和语义相似性检索与场景相关的先例，并利用潜在世界模型在紧凑的规划导向空间中评估候选轨迹的未来后果。EvoAD并不将记忆视为外部文本上下文，或仅将世界模型用于行动前模拟，而是将执行的驾驶结果转化为未来决策的可重用改进信号。这使得系统能够诊断先前轨迹如何改进，并在类似的未来场景中优化行为，而无需重新训练基础驾驶策略。在NAVSIM v1和v2上的实验显示，反思轮次之间的一致性改进和最先进的性能，证明了世界模型作为自主驾驶中部署后自我进化的反思机制的潜力。",
+  "arxiv_id": "2610.23886",
+  "arxiv_url": "https://arxiv.org/abs/2610.23886v1",
+  "authors": [
+    "Junjie Yang",
+    "Qiming Zhang",
+    "Yuyan Li",
+    "Shuqi Shen",
+    "Yusong Huang",
+    "Yanggang Sheng",
+    "Wenpeng Xu",
+    "Ziyi Shi",
+    "Tianshun Li",
+    "Yijie Chen",
+    "Yujia Wang",
+    "Jun Ma",
+    "Xinhu Zheng",
+    "Hongliang Lu",
+    "Hai Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-23886",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.522252+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23886v1",
+  "published_at": "2026-09-26T15:11:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving policy",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bird's-eye",
+      "world model",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23886v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "EvoAD: Self-Evolving Autonomous Driving via Latent World-Model Guided Post-hoc Reflection",
+  "title_zh": "EvoAD：通过潜在世界模型引导的事后反思实现自我进化的自主驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.23886"
+}

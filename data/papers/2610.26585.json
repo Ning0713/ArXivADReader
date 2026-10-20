@@ -1,0 +1,58 @@
+{
+  "abstract": "Generating reusable driving environments requires both controllable future observations and an explicit representation that supports rendering from different viewpoints, yet existing methods still recover explicit scenes from generated RGB videos through optimization for each sequence. To overcome these limitations, we present Drive2Gauss, a feedforward framework that converts jointly generated RGB, metric depth, and dynamic flow into dynamic 4D Gaussian scenes. A Multimodal Video Generator predicts the three modalities from reference multiview images and future control signals. Furthermore, we introduce a Gaussian Query Decoder that uses depth to initialize sparse 3D queries and flow to associate the queries across time, and integrates appearance information through spatiotemporal feature aggregation and iterative query refinement. The reconstruction stage operates in a single feedforward pass without optimization for each scene. Extensive results on nuScenes demonstrate that our approach attains an FID of 6.38 and an FVD of 12.43 for future RGB generation, a PSNR of 29.91 dB when reconstructing its generated observations, and supports both direct rendering under lateral camera shifts and downstream video fixing. Code and more visualizations are available at https://zttt04. github.io/Drive2Gauss_page/.",
+  "abstract_zh": "生成可重用的驾驶环境需要可控的未来观测和支持从不同视角渲染的显式表示，然而现有方法仍然通过对每个序列进行优化，从生成的RGB视频中恢复显式场景。为克服这些限制，我们提出了Drive2Gauss，一个前馈框架，将联合生成的RGB、度量深度和动态流转换为动态4D高斯场景。多模态视频生成器从参考多视图图像和未来控制信号中预测这三种模态。此外，我们引入了一种高斯查询解码器，利用深度初始化稀疏3D查询，并通过流在时间上关联这些查询，同时通过时空特征聚合和迭代查询优化整合外观信息。重建阶段在单次前馈传递中进行，无需对每个场景进行优化。在nuScenes上的大量结果表明，我们的方法在未来RGB生成中达到了6.38的FID和12.43的FVD，在重建生成观测时达到了29.91 dB的PSNR，并支持在横向相机位移下的直接渲染和下游视频修复。代码和更多可视化结果可在https://zttt04.github.io/Drive2Gauss_page/获取。",
+  "arxiv_id": "2610.26585",
+  "arxiv_url": "https://arxiv.org/abs/2610.26585v1",
+  "authors": [
+    "Tong Zhao",
+    "Zhiyuan Han",
+    "Lin Chen",
+    "Bowen Xie",
+    "Yunxi Qiao",
+    "Bohan Li",
+    "Weiqing Xiao",
+    "Gen Li",
+    "Shu Han",
+    "Xuyang Dai",
+    "Cheng Bi",
+    "Hao Zhao",
+    "Chaojian Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-26585",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.668785+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.26585v1",
+  "published_at": "2026-10-19T15:34:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.26585v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "Drive2Gauss: FeedForward 4D Gaussian Reconstruction from Multimodal Generative Driving Videos",
+  "title_zh": "Drive2Gauss：基于多模态生成驾驶视频的前馈4D高斯重建",
+  "translation_url": "https://hjfy.top/arxiv/2610.26585"
+}

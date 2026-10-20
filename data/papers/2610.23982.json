@@ -1,0 +1,57 @@
+{
+  "abstract": "Video world models learn how visual environments evolve by predicting missing or future content. However, physical-state information can provide useful context for predicting how environments evolve. Prior work incorporates this information through different mechanisms: domain-specific physical laws can complicate multi-domain training, while supervision on individual frames or frame pairs gives limited attention to how physical state evolves over time. We introduce Time-JEPA, which fine-tunes a video world model using low-dimensional, temporally aligned physical time series as auxiliary supervision. Physical time series connect video representations with physical state at corresponding temporal positions, encouraging the model to preserve how physical state evolves. In multiple domains including autonomous driving, robot manipulation, and human motion, Time-JEPA improves current-state decoding, multi-horizon future-state prediction, and kinematic reconstruction over matched video-fine-tuned controls across both condition and state-variable distribution shifts. Multi-domain training provides aggregate gains over matched single-domain training in all three tasks. External evaluations further suggest that time-series supervision improves sensitivity to physical anomalies and the representation of physical interactions, including in unseen scenarios. Aggregate gains on a second video backbone indicate that the method can be applied to more backbones. These results suggest that physical time series help video world models better understand the physical world.",
+  "abstract_zh": "视频世界模型通过预测缺失或未来内容来学习视觉环境的演变。然而，物理状态信息可以为预测环境的演变提供有用的背景。之前的研究通过不同的机制整合了这些信息：特定领域的物理法则可能会使多领域训练变得复杂，而对单帧或帧对的监督则对物理状态随时间的演变关注有限。我们提出了时间-JEPA，它利用低维、时间对齐的物理时间序列作为辅助监督，微调视频世界模型。物理时间序列将视频表示与相应时间位置的物理状态连接起来，鼓励模型保留物理状态的演变。在包括自动驾驶、机器人操作和人类运动等多个领域中，时间-JEPA在当前状态解码、多时间段未来状态预测和运动学重建方面优于匹配的视频微调控制，且在条件和状态变量分布变化中表现出色。多领域训练在所有三项任务中提供了相较于匹配的单领域训练的整体提升。外部评估进一步表明，时间序列监督提高了对物理异常的敏感性和物理交互的表示能力，包括在未见场景中的表现。对第二个视频骨干网的整体提升表明该方法可以应用于更多的骨干网。这些结果表明，物理时间序列有助于视频世界模型更好地理解物理世界。",
+  "arxiv_id": "2610.23982",
+  "arxiv_url": "https://arxiv.org/abs/2610.23982v1",
+  "authors": [
+    "Shenyi Li",
+    "Ziyang Zhang",
+    "Wen Wu",
+    "Ming Liu",
+    "Chao Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-23982",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.585200+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23982v1",
+  "published_at": "2026-10-14T07:29:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "world model",
+      "robot manipulation",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23982v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "安全/异常"
+    ]
+  },
+  "title": "Time-JEPA: Grounding Video World Models with Physical Time Series",
+  "title_zh": "时间-JEPA：通过物理时间序列为视频世界模型提供基础",
+  "translation_url": "https://hjfy.top/arxiv/2610.23982"
+}

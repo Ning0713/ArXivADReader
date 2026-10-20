@@ -1,0 +1,64 @@
+{
+  "abstract": "Novel view synthesis under trajectory changes is essential for autonomous driving simulation, yet existing methods struggle to generate consistent videos when extrapolating to unseen viewpoints such as lane shifts. Reconstruction-based approaches maintain geometric consistency but degrade in visual quality under large viewpoint changes, while reconstruct-then-restore methods often produce visually plausible frames yet suffer from geometric and temporal inconsistencies. We present GeoV2V, a geometry-grounded video-to-video diffusion framework that synthesizes temporally coherent driving videos along novel trajectories by integrating LiDAR and depth-derived geometric priors with full-video conditioning in the Wan 2.1 backbone. A key challenge in learning cross-lane transformations is the lack of synchronized multi-trajectory supervision in real-world datasets. To address this, we also introduce Para4D, a synthetic dataset capturing synchronized multi-lane driving videos within dynamic scenes, which provides explicit supervision for lane-shift generation and serves as a strong training prior for geometry-consistent view synthesis. Experiments on Waymo, nuScenes, and Para4D demonstrate state-of-the-art performance in visual quality, geometric consistency, and robustness to complex lighting dynamics under large trajectory shifts. Project page: https://xiyuche.github.io/GeoV2V/",
+  "abstract_zh": "在轨迹变化下的新视图合成对于自动驾驶模拟至关重要，但现有方法在推断未见视点（如车道变换）时难以生成一致的视频。基于重建的方法保持几何一致性，但在大视点变化下视觉质量下降，而重建后恢复的方法虽然常常生成视觉上合理的帧，但在几何和时间一致性上存在问题。我们提出了GeoV2V，一种基于几何的视频到视频扩散框架，通过将LiDAR和深度衍生的几何先验与Wan 2.1主干网络中的全视频条件相结合，合成沿新轨迹的时间一致的驾驶视频。在学习跨车道变换时，一个主要挑战是现实世界数据集中缺乏同步的多轨迹监督。为了解决这个问题，我们还引入了Para4D，一个合成数据集，捕捉动态场景中同步的多车道驾驶视频，为车道变换生成提供明确的监督，并作为几何一致视图合成的强训练先验。在Waymo、nuScenes和Para4D上的实验表明，在视觉质量、几何一致性和对复杂光照动态的鲁棒性方面，GeoV2V达到了最先进的性能。项目页面：https://xiyuche.github.io/GeoV2V/",
+  "arxiv_id": "2610.25245",
+  "arxiv_url": "https://arxiv.org/abs/2610.25245v1",
+  "authors": [
+    "Yuchen Xi",
+    "Yuhan Guo",
+    "Chenwei Hou",
+    "Zixu Liu",
+    "Jin Fang",
+    "Jason Liu",
+    "Ruigang Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-25245",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.620386+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.25245v1",
+  "published_at": "2026-10-18T13:05:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "车道",
+      "lidar",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.25245v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "GeoV2V: Geometry-Grounded Video Diffusion Model for Driving Scene Generation",
+  "title_zh": "GeoV2V：基于几何的驾驶场景生成视频扩散模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.25245"
+}

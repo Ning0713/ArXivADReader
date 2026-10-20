@@ -1,0 +1,59 @@
+{
+  "abstract": "Feedforward 3D reconstruction has largely followed an {appearance-driven paradigm}: multi-view images are encoded into visual representations, cross-view correspondence is implicitly inferred from learned features, and 3D primitives are subsequently predicted from these representations. However, calibrated cameras and sparse metric measurements already provide explicit constraints on where the same physical point should appear across views. We propose a novel paradigm, \\textbf{Geometry-Conditioned Feedforward Reconstruction}, in which metric geometry establishes cross-view correspondence before the 3D representation is formed, while learned visual features refine rather than discover this correspondence. Based on this paradigm, we introduce \\textbf{GeoForward}. Sparse LiDAR points are unprojected into 3D and analytically projected across calibrated cameras to provide metric correspondence anchors. A bounded continuous local search then refines these anchors using visual features, and the resulting geometry-conditioned representation is fused with global multi-view context from VGGT. The shared representation drives separate metric-depth and Gaussian-attribute prediction, establishing a direct path from explicit geometry to both Gaussian centers and spatial attributes. A sparse 3D refinement module subsequently improves local attribute compatibility while preserving the geometrically determined centers. For temporal reconstruction, endpoint Gaussians are composed using vehicle masks and motion priors. On nuScenes, GeoForward achieves the lowest cross-camera depth-consistency error and Chamfer distance among the compared methods while maintaining competitive reconstruction quality. These results demonstrate that explicitly conditioning correspondence formation on metric geometry provides an effective alternative to purely appearance-driven feedforward 3D reconstruction.",
+  "abstract_zh": "前馈3D重建在很大程度上遵循了一种{外观驱动的范式}：多视图图像被编码为视觉表示，跨视图对应关系通过学习到的特征隐式推断，随后从这些表示中预测3D原始体。然而，经过校准的相机和稀疏的度量测量已经提供了关于同一物理点在不同视图中应出现位置的明确约束。我们提出了一种新颖的范式， extbf{几何条件前馈重建}，在该范式中，度量几何在3D表示形成之前建立跨视图对应关系，而学习到的视觉特征则用于细化而非发现这种对应关系。基于这一范式，我们引入了 extbf{GeoForward}。稀疏的LiDAR点被反投影到3D空间，并在经过校准的相机之间进行解析投影，以提供度量对应锚点。然后，通过视觉特征对这些锚点进行有界连续局部搜索以进行细化，最终得到的几何条件表示与来自VGGT的全局多视图上下文融合。共享表示驱动独立的度量深度和高斯属性预测，建立了从明确几何到高斯中心和空间属性的直接路径。随后，一个稀疏3D细化模块在保持几何确定中心的同时改善局部属性兼容性。对于时间重建，端点高斯使用车辆掩码和运动先验进行组合。在nuScenes数据集上，GeoForward在比较方法中实现了最低的跨相机深度一致性误差和Chamfer距离，同时保持竞争性的重建质量。这些结果表明，明确地将对应关系的形成条件化于度量几何，为纯粹外观驱动的前馈3D重建提供了一种有效的替代方案。",
+  "arxiv_id": "2610.23895",
+  "arxiv_url": "https://arxiv.org/abs/2610.23895v1",
+  "authors": [
+    "Yiming Shu",
+    "Peng Sun",
+    "Lang Zhang",
+    "Mingyue Feng",
+    "Yaonong Wang",
+    "Pei Liu",
+    "Chen Sun",
+    "Jun Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-20#paper-2610-23895",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-20T09:45:38.570977+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.23895v1",
+  "published_at": "2026-09-28T15:14:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "vehicle",
+      "车辆",
+      "lidar",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 42
+  },
+  "seen_dates": [
+    "2026-10-20"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.23895v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-20"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "多传感器融合"
+    ]
+  },
+  "title": "GeoForward: Geometry-Guided Cross-View Alignment for Feedforward 3D Gaussian Splatting",
+  "title_zh": "GeoForward：基于几何引导的跨视图对齐用于前馈3D高斯点云",
+  "translation_url": "https://hjfy.top/arxiv/2610.23895"
+}
