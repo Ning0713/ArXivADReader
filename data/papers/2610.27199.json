@@ -1,0 +1,49 @@
+{
+  "abstract": "The Jetson AGX Orin is a common computer for robots and vehicles, yet measured accuracy, speed and energy of current depth estimators on it are hard to find. We benchmark nine model families as of October 2026: the monocular Depth Anything V2 and 3, Depth Pro, MoGe-2, Metric3D v2 and UniDepth V2, and the stereo methods libSGM, NVIDIA ESS and Fast-FoundationStereo. Every method runs on the Orin as a TensorRT FP16 engine or native CUDA code at up to three input sizes, up to the full 5.7 MP, and is scored for metric accuracy against Middlebury 2014 ground truth (non-occluded pixels of the 10 scenes whose disparity stays below 256 px), GPU time, energy and licence. Stereo is far more accurate. At 30 fps, NVIDIA's ESS reaches 0.70% AbsRel in 8.6 ms and libSGM 0.73% in 25 ms; with more compute, Fast-FoundationStereo reaches 0.33%. The best monocular models reach 12% with the true focal length (Depth Anything 3 Metric-L in 33 ms, Depth Pro in 803 ms), and 3.8-4.0% only with an oracle per-image scale (MoGe-2-L, UniDepth V2-B, Metric3D v2-L). Stereo error falls as the input resolution grows; no monocular model improves, and the metric scale of most drifts away from the truth outside their training resolution. At depth discontinuities, which AbsRel barely registers, the monocular models scatter 17-46% of the edge points between foreground and background, learned stereo 2-9% and libSGM at full resolution 1%. We give recommendations per frame-rate budget and release all code, per-scene results and engine build scripts.",
+  "abstract_zh": "Jetson AGX Orin是机器人和车辆常用的计算机，但关于当前深度估计器在其上的测量精度、速度和能耗的数据较为稀缺。我们对截至2026年10月的九个模型家族进行了基准测试：单目方法Depth Anything V2和V3、Depth Pro、MoGe-2、Metric3D v2和UniDepth V2，以及立体方法libSGM、NVIDIA ESS和Fast-FoundationStereo。每种方法在Orin上以TensorRT FP16引擎或本地CUDA代码运行，支持最多三种输入尺寸，最高可达完整的5.7 MP，并根据Middlebury 2014的真实值（10个场景中视差低于256 px的非遮挡像素）对度量精度、GPU时间、能耗和许可证进行评分。立体方法的精度远高于单目方法。在30 fps下，NVIDIA的ESS在8.6毫秒内达到0.70%的绝对相对误差（AbsRel），libSGM在25毫秒内达到0.73%；通过更多计算，Fast-FoundationStereo达到0.33%。最佳的单目模型在真实焦距下达到12%（Depth Anything 3 Metric-L在33毫秒内，Depth Pro在803毫秒内），而仅在每幅图像的标定下（MoGe-2-L、UniDepth V2-B、Metric3D v2-L）则仅达到3.8-4.0%。随着输入分辨率的提高，立体误差降低；而单目模型没有改善，大多数模型的度量标定在其训练分辨率之外偏离真实值。在深度不连续性处，绝对相对误差几乎没有记录，单目模型在前景和背景之间散布了17-46%的边缘点，学习到的立体模型为2-9%，而libSGM在全分辨率下为1%。我们根据帧率预算提供了建议，并发布了所有代码、每场景结果和引擎构建脚本。",
+  "arxiv_id": "2610.27199",
+  "arxiv_url": "https://arxiv.org/abs/2610.27199v1",
+  "authors": [
+    "Leaf Jiang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-27199",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.464982+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.27199v1",
+  "published_at": "2026-10-19T19:34:27Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "车辆",
+      "monocular depth",
+      "深度估计"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.27199v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "本文系统评测多种单目和立体深度估计方法在Jetson AGX Orin上的精度、延迟、能耗及分辨率适应性。结果显示，立体方法在度量精度、深度边界质量和高分辨率收益方面显著优于单目方法，并可满足部分实时车辆感知需求。该工作可为自动驾驶系统选择车载深度估计方案及进行嵌入式部署提供参考。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Which Depth Estimator for Jetson AGX Orin? A 2026 Benchmark of Monocular and Stereo Methods",
+  "title_zh": "Jetson AGX Orin的深度估计器选择？2026年单目与立体方法的基准测试",
+  "translation_url": "https://hjfy.top/arxiv/2610.27199"
+}

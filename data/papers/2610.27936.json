@@ -1,0 +1,51 @@
+{
+  "abstract": "Unmanned aerial vehicles (UAVs) enable fast, flexible last-mile and emergency delivery, but their routing remains challenging as the number of clients varies. Classical approaches based on mixed-integer programming and heuristics can scale poorly or require problem-specific design, motivating learning-based alternatives. Reinforcement learning is particularly promising, provided a single policy can generalize across problem sizes without retraining. Although attention-based Pointer Networks are inherently size-agnostic, their solution quality degrades under both upscaling and downscaling. Using the Capacitated Vehicle Routing Problem (CVRP) as a controlled proxy, with fixed capacity reflecting drone payload constraints, we investigate this degradation and identify three contributing factors: shifts in node density, attention dispersion, and dilution of the mean-pooled graph context. We systematically compare architecture-wide, encoder-side, and decoder-side modifications to address these limitations and propose a learned, permutation-invariant graph-context aggregation mechanism, implemented as a weighted average and as Set2Set. Results reveal distinct requirements for transfer in each direction: entropy-based attention scaling reduces the CVRP20-to-CVRP100 performance gap by 1.41 percentage points, while the proposed aggregation methods achieve the largest improvement on the more challenging CVRP100-to-CVRP20 transfer, approximately 0.9 percentage points. Exploiting this complementarity, we introduce an approach selector that chooses the best model for each training-target size pair. The selector reduces cost relative to the reference model across all nine seen train-test pairs and eight of nine pairs involving unseen sizes (CVRP35, CVRP75, and CVRP200), achieving improvements of up to 3.2 percent.",
+  "abstract_zh": "无人驾驶飞行器（UAV）能够实现快速、灵活的最后一公里和紧急配送，但由于客户数量的变化，其路径规划仍然面临挑战。基于混合整数规划和启发式方法的经典方法在扩展性方面表现不佳，或需要针对特定问题的设计，这促使了基于学习的替代方案的出现。强化学习特别有前景，前提是单一策略能够在不同问题规模间泛化而无需重新训练。尽管基于注意力的指针网络在本质上对规模不敏感，但在上升和下降规模时，其解决方案质量会下降。以容量限制车辆路径规划问题（CVRP）作为受控代理，固定容量反映无人机的有效载荷限制，我们研究了这种下降现象并确定了三个影响因素：节点密度的变化、注意力的分散以及均值池化图上下文的稀释。我们系统地比较了架构范围内、编码器侧和解码器侧的修改，以解决这些限制，并提出了一种学习的、排列不变的图上下文聚合机制，分别实现为加权平均和Set2Set。结果显示在每个方向的转移中有不同的需求：基于熵的注意力缩放将CVRP20到CVRP100的性能差距减少了1.41个百分点，而所提出的聚合方法在更具挑战性的CVRP100到CVRP20的转移中实现了最大改进，约为0.9个百分点。利用这种互补性，我们引入了一种方法选择器，能够为每对训练目标大小选择最佳模型。该选择器在所有九个已见的训练-测试对和九个中涉及未见大小（CVRP35、CVRP75和CVRP200）的八个对中，相较于参考模型降低了成本，改善幅度高达3.2%。",
+  "arxiv_id": "2610.27936",
+  "arxiv_url": "https://arxiv.org/abs/2610.27936v1",
+  "authors": [
+    "Sofiene Lassoued",
+    "Devara Tertia",
+    "Stefan Lier",
+    "Andreas Schwung"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-27936",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.714634+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.27936v1",
+  "published_at": "2026-10-20T09:44:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "无人驾驶",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "uav",
+      "drone",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.27936v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "From Comparison to Selection: Enhancing Cross-Scale Generalization of Pointer Networks Trained with Reinforcement Learning for Capacitated Drone Delivery Routing",
+  "title_zh": "从比较到选择：增强使用强化学习训练的指针网络在容量限制无人机配送路径规划中的跨尺度泛化能力",
+  "translation_url": "https://hjfy.top/arxiv/2610.27936"
+}

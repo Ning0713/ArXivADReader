@@ -1,0 +1,55 @@
+{
+  "abstract": "Connected and Autonomous Vehicles (CAVs) face significant challenges in roundabout navigation due to dense traffic interactions and unpredictable agent behaviors, necessitating high levels of adaptability and safety. While the combination of Reinforcement Learning (RL) and Model Predictive Control (MPC) offers a promising approach, existing frameworks suffer from a structural mismatch where pointwise RL decisions fail to align with MPC's trajectory level optimization, and often lack rigorous safety guarantees. This work proposes RLTrajGen-PPMPC-CBF, a hierarchical framework for safe, smooth and comfort roundabout navigation, which regulates the coupling between RL-based planning and MPC-based control. We employ Prescribed Performance Constraints (PPC) to enforce a gradual, stable convergence between reference trajectories and control outputs, ensuring MPC tracking performance remains consistent with intended behavior from RL. Additionally, a Control Barrier Function (CBF) layer provides real-time safety corrections that are fed back into the RL process. Simulation results in the MetaDrive environment demonstrate that our method achieves a 6.25\\% increase in average success rate and a 65.87\\% reduction in Motion Sickness Dose Value (MSDV) compared to the optimal baseline, meanwhile accelerating training convergence.",
+  "abstract_zh": "连接与自动驾驶车辆（CAVs）在环形交叉口导航中面临着由于交通密集互动和不可预测的代理行为而带来的重大挑战，这要求其具备较高的适应性和安全性。尽管强化学习（RL）与模型预测控制（MPC）的结合提供了一种有前景的方法，但现有框架存在结构不匹配的问题，即逐点的RL决策未能与MPC的轨迹级优化对齐，并且通常缺乏严格的安全保障。本研究提出了RLTrajGen-PPMPC-CBF，一个用于安全、平稳和舒适环形交叉口导航的分层框架，该框架调节了基于RL的规划与基于MPC的控制之间的耦合。我们采用规定性能约束（PPC）来强制参考轨迹与控制输出之间的渐进、稳定收敛，确保MPC的跟踪性能与RL的预期行为保持一致。此外，控制屏障函数（CBF）层提供实时安全修正，并反馈到RL过程中。MetaDrive环境中的仿真结果表明，我们的方法相比于最佳基线实现了6.25%的平均成功率提升和65.87%的运动病剂量值（MSDV）降低，同时加速了训练收敛。",
+  "arxiv_id": "2610.27732",
+  "arxiv_url": "https://arxiv.org/abs/2610.27732v1",
+  "authors": [
+    "Wenhan Li",
+    "Yangrui Zhang",
+    "Hang Zhou",
+    "Peiran Liu",
+    "Yiding Ji"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-27732",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.484975+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.27732v1",
+  "published_at": "2026-10-20T06:54:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.27732v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "Prescribed Performance Guided Safe Reinforcement Learning for Roundabout Navigation of Autonomous Vehicles",
+  "title_zh": "基于规定性能的安全强化学习指导的自动驾驶车辆环形交叉口导航",
+  "translation_url": "https://hjfy.top/arxiv/2610.27732"
+}

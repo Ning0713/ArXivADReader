@@ -1,0 +1,61 @@
+{
+  "abstract": "Reliable lane markings are important for both human drivers and automated driving systems, but their condition is still commonly assessed through manual inspection. Existing autonomous-driving datasets primarily support lane detection and scene understanding and usually lack maintenance-oriented labels for lane-marking visibility, continuity, or degradation. In this study, we present a geo-referenced smartphone dashcam dataset and baseline framework for lane-marking quality assessment. The dataset contains 63,839 road-facing frames collected across South Texas using a GPS-enabled dashcam application. A subset of 3,339 frames is matched with OpenStreetMap-derived lane-count labels, which are used as weak supervision for lane-count regression and map-consistency evaluation. We propose three lane-quality measures: Contrast Stability Index (CSI), which captures lane-background contrast using Laplacian responses; Line Continuity Ratio (LCR), which estimates structural continuity using edge and Hough-line evidence; and Regression Lane Confidence Score (RLCS), which measures agreement between predicted and map-derived lane counts on matched frames. The baseline prediction models attained strong performance, with CSI (MAE $0.039$, $R^2=0.97$) and LCR (MAE $0.093$, $R^2=0.84$). Notably, CSI and LCR are no-reference, segmentation-derived quality metrics that can be computed without dense human labels. In a pilot validation using 50 human-ranked images, these proposed lane-specific metrics show stronger rank agreement with human lane-quality ordering (e.g., Spearman's $\\rho=0.7316$ and Kendall's $\\tau=0.5472$ for LCR) than general image-quality measures such as PSNR, SSIM, BRISQUE, NIQE, and LPIPS. We believe the dataset, metrics, and baseline provide an initial step toward scalable, low-cost, location-aware lane-marking quality assessment. Data and code: https://github.com/Shaif95/Road_Quality",
+  "abstract_zh": "可靠的车道标记对人类驾驶员和自动驾驶系统都至关重要，但其状况仍然通常通过人工检查来评估。现有的自动驾驶数据集主要支持车道检测和场景理解，通常缺乏针对车道标记可见性、连续性或退化的维护导向标签。在本研究中，我们提出了一个地理参考的智能手机行车记录仪数据集和车道标记质量评估的基线框架。该数据集包含63,839帧面向道路的图像，这些图像是通过一个支持GPS的行车记录仪应用在德克萨斯州南部收集的。数据集中的3,339帧与基于OpenStreetMap的车道数量标签相匹配，这些标签被用作车道数量回归和地图一致性评估的弱监督。我们提出了三种车道质量度量：对比稳定指数（Contrast Stability Index, CSI），通过拉普拉斯响应捕捉车道与背景的对比；线条连续性比率（Line Continuity Ratio, LCR），通过边缘和霍夫线证据估计结构连续性；回归车道置信评分（Regression Lane Confidence Score, RLCS），测量匹配帧上预测的车道数量与地图推导的车道数量之间的一致性。基线预测模型表现出色，CSI（平均绝对误差 $0.039$, $R^2=0.97$）和LCR（平均绝对误差 $0.093$, $R^2=0.84$）。值得注意的是，CSI和LCR是无参考的、基于分割的质量度量，可以在没有密集人工标签的情况下计算。在使用50张人工排名图像进行的初步验证中，这些提出的特定车道度量与人类车道质量排序的排名一致性更强（例如，LCR的Spearman相关系数 $ ho=0.7316$ 和Kendall相关系数 $ au=0.5472$），相比于一般的图像质量度量，如PSNR、SSIM、BRISQUE、NIQE和LPIPS。我们相信该数据集、度量和基线为可扩展、低成本、位置感知的车道标记质量评估提供了初步的步骤。数据和代码可在：https://github.com/Shaif95/Road_Quality",
+  "arxiv_id": "2610.28508",
+  "arxiv_url": "https://arxiv.org/abs/2610.28508v1",
+  "authors": [
+    "Shaif Chowdhury",
+    "Akhila Yeruvasu",
+    "Moshiur Rahman Tonmoy",
+    "Ayush Goyal",
+    "Dunren Che"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-28508",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.625017+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.28508v1",
+  "published_at": "2026-10-20T16:46:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "road",
+      "lane",
+      "驾驶",
+      "道路",
+      "车道",
+      "lane detection",
+      "车道检测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.28508v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "Deep Learning-Based Road Lane Quality Assessment from Egocentric Dashcam Video",
+  "title_zh": "基于深度学习的自我中心行车记录仪视频道路车道质量评估",
+  "translation_url": "https://hjfy.top/arxiv/2610.28508"
+}

@@ -1,0 +1,47 @@
+{
+  "abstract": "Class unlearning for video segmentation aims to ensure that a removed category cannot be reconstructed from a deployed model's outputs. Current leakage evaluation algorithms inspect one frame at a time, and we show that this understates leakage by a wide margin: an attacker that averages a model's output field over a two-second clip recovers the forgotten class from every method we evaluate on VSPW and most on Virtual KITTI~2, including models whose per-frame predictions are visually indistinguishable from a retrain oracle (a model trained from scratch without the forgotten class). We attribute the recoverable signal to cross-frame redundancy rather than object trajectory, establish this with a time-shuffled control that leaves leakage intact, and introduce PACE, an unlearning method that suppresses redundancy directly using an exactly permutation-invariant pooled adversarial discriminator and a two-sided temporal consistency objective. Across VSPW and Virtual KITTI~2, PACE lowers pooled attacker AP to $18.79$ (\\texttt{person}) and $12.10$ (\\texttt{car}) on VSPW and $9.11$ (\\texttt{car}) on Virtual KITTI~2, achieving on the latter the strongest suppression among verdict-safe methods retaining usable utility, while retaining $19.8$ mIoU on VSPW \\texttt{car} against at most $8.3$ for any baseline achieving comparable erasure.",
+  "abstract_zh": "视频分割中的类别遗忘旨在确保被移除的类别无法从已部署模型的输出中重构。目前的泄露评估算法逐帧检查，我们表明这大大低估了泄露程度：攻击者通过对两秒视频片段的模型输出进行平均，可以从我们在 VSPW 上评估的每种方法以及在 Virtual KITTI~2 上的大多数方法中恢复被遗忘的类别，包括那些每帧预测在视觉上与从头训练的无遗忘类别的模型（即 retrain oracle）无差异的模型。我们将可恢复信号归因于跨帧冗余，而非物体轨迹，通过一个时间洗牌的对照实验来验证这一点，该实验保持了泄露的完整性，并引入了 PACE，这是一种直接使用完全置换不变的池化对抗鉴别器和双侧时间一致性目标来抑制冗余的遗忘方法。在 VSPW 和 Virtual KITTI~2 上，PACE 将池化攻击者的平均精度（AP）降低至 $18.79$（ exttt{person}）和 $12.10$（ exttt{car}）在 VSPW 上，以及 $9.11$（ exttt{car}）在 Virtual KITTI~2 上，在后者中实现了在保持可用效用的情况下，判决安全方法中最强的抑制，同时在 VSPW exttt{car} 上保持 $19.8$ 的 mIoU，相比之下，任何基线在实现可比的遗忘时最多仅为 $8.3$。",
+  "arxiv_id": "2610.27982",
+  "arxiv_url": "https://arxiv.org/abs/2610.27982v1",
+  "authors": [
+    "Kavyansh Tyagi",
+    "Paolo Russo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-27982",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.582166+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.27982v1",
+  "published_at": "2026-10-20T10:24:33Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "car"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.27982v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "Beyond the Frame: Redundancy, Not Trajectory, Carries the Privacy Leak in Video Unlearning",
+  "title_zh": "超越框架：冗余，而非轨迹，导致视频遗忘中的隐私泄露",
+  "translation_url": "https://hjfy.top/arxiv/2610.27982"
+}

@@ -1,0 +1,63 @@
+{
+  "abstract": "LiDAR-based 3D object detection is a core perception service for autonomous driving, but deployment requires robustness to point-cloud corruption while meeting latency and memory requirements. Existing approaches address robustness and resource efficiency separately, resulting in compact detectors that are fragile under corruption or robust detectors that remain costly to deploy. We therefore formulate LiDAR perception provisioning as constructing a detector that remains accurate under point-cloud corruptions while meeting constraints on inference latency and peak GPU memory. To achieve robustness, we first craft corrupted samples that mimic extreme weather conditions. Then we train candidate detectors offline by ordering clean and corrupted samples by perturbation sensitivity, through which detectors learn more from hard corrupted samples. We estimate perturbation sensitivity using an ensemble of seven heterogeneous 3D detectors by tracking changes in confidence, BEV overlap, and unmatched detections. To improve efficiency, we narrow the network and use offline neighborhood-density measurements to determine how many points and neighbors each sampling stage processes. We evaluate our method using AP (Average Precision) under clean and corrupted conditions, inference latency, and peak allocated GPU memory. On KITTI for Car detection with PointRCNN, our method improves Moderate AP under corruption by 3.32 points over the original detector while reducing mean latency by 19.8% and peak allocated GPU memory by 53.9%. Across two datasets, two detector architectures, and three object classes, our method improves AP under corruption by 4.03 points on average over the corresponding original detectors, while reducing mean inference latency and peak allocated GPU memory by 14.4% and 38.0%, respectively. Our code is available at https://github.com/drunklibai/robust-efficient-lidar-perception.",
+  "abstract_zh": "基于LiDAR的3D物体检测是自动驾驶的核心感知服务，但其部署需要在满足延迟和内存要求的同时，对点云损坏具有稳健性。现有方法分别解决稳健性和资源效率，导致紧凑型检测器在损坏情况下脆弱，或稳健型检测器在部署时成本高昂。因此，我们将LiDAR感知的提供形式化为构建一个在点云损坏下仍能保持准确性的检测器，同时满足推理延迟和峰值GPU内存的约束。为了实现稳健性，我们首先制作模拟极端天气条件的损坏样本。然后，我们通过按扰动敏感性对干净样本和损坏样本进行排序，离线训练候选检测器，从而使检测器能够从困难的损坏样本中学习更多。我们使用七个异构3D检测器的集成来估计扰动敏感性，通过跟踪置信度、BEV重叠和未匹配检测的变化。为了提高效率，我们缩小网络，并使用离线邻域密度测量来确定每个采样阶段处理的点和邻居的数量。我们使用AP（平均精度）在干净和损坏条件下评估我们的方法，以及推理延迟和峰值分配的GPU内存。在KITTI数据集中使用PointRCNN进行汽车检测时，我们的方法在损坏情况下将Moderate AP提高了3.32个点，同时将平均延迟降低了19.8%，峰值分配的GPU内存降低了53.9%。在两个数据集、两种检测器架构和三个物体类别中，我们的方法在损坏情况下平均提高了4.03个点的AP，同时将平均推理延迟和峰值分配的GPU内存分别降低了14.4%和38.0%。我们的代码可在https://github.com/drunklibai/robust-efficient-lidar-perception获取。",
+  "arxiv_id": "2610.27617",
+  "arxiv_url": "https://arxiv.org/abs/2610.27617v1",
+  "authors": [
+    "Tingxu Han",
+    "Zijie Shen",
+    "An Guo",
+    "Lyuke Wang",
+    "Chunrong Fang",
+    "Zhenyu Chen",
+    "Wei Song"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-27617",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.555758+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.27617v1",
+  "published_at": "2026-10-20T04:31:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "kitti",
+      "autonomous",
+      "driving",
+      "car",
+      "驾驶",
+      "bev",
+      "3d object detection",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.27617v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "Provisioning Robust and Efficient LiDAR Perception for Autonomous Driving",
+  "title_zh": "为自动驾驶提供稳健高效的LiDAR感知",
+  "translation_url": "https://hjfy.top/arxiv/2610.27617"
+}

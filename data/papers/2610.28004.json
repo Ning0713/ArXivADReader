@@ -1,0 +1,51 @@
+{
+  "abstract": "Camera design heavily influences perception task performance, yet cameras are typically designed by domain experts through costly experimentation, in isolation from the tasks they serve. Existing joint-design methods either rely on differentiable simulation limited to pre-captured 2D images, restricting them to optics or image-processing pipeline design, or use non-differentiable camera simulators optimised with derivative-free or reinforcement-learning methods that scale poorly with the number of design parameters. We present a differentiable framework for jointly designing complex camera systems and downstream perception tasks. We use it to design two coded-aperture depth-from-defocus cameras, a monocular and a stereo configuration, by jointly optimising the coded aperture mask, camera parameters, and a depth estimation network end-to-end. Our framework represents scenes with 3D Gaussian Splatting reconstructed from real-world captures, providing a differentiable image formation process for gradient-based optimisation over design spaces intractable for prior differentiable approaches. Results demonstrate that our differentiable method improves over existing coded aperture design and non-differentiable camera design baselines, offering a step forward in automated and principled camera design for autonomous systems.",
+  "abstract_zh": "相机设计对感知任务的性能有着重要影响，但通常相机的设计是由领域专家通过昂贵的实验进行的，与其服务的任务相隔离。现有的联合设计方法要么依赖于限于预捕获的二维图像的可微分仿真，这使得它们仅限于光学或图像处理管道的设计，要么使用非可微分的相机仿真器，通过无导数或强化学习方法进行优化，这在设计参数数量增加时表现不佳。我们提出了一个可微分框架，用于联合设计复杂的相机系统和下游感知任务。我们利用该框架设计了两种编码孔径的深度从模糊（depth-from-defocus）相机，分别为单目和立体配置，通过端到端地联合优化编码孔径掩模、相机参数和深度估计网络。我们的框架使用从真实世界捕获的三维高斯点云（3D Gaussian Splatting）来表示场景，为基于梯度的优化提供了可微分的图像形成过程，这在之前的可微分方法中是不可行的。结果表明，我们的可微分方法在现有的编码孔径设计和非可微分相机设计基线之上有所改进，为自动化和原则性相机设计在自主系统中的应用迈出了重要一步。",
+  "arxiv_id": "2610.28004",
+  "arxiv_url": "https://arxiv.org/abs/2610.28004v1",
+  "authors": [
+    "Chengyang Yan",
+    "Donald G. Dansereau"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-28004",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.585319+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.28004v1",
+  "published_at": "2026-10-20T10:48:08Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "depth estimation",
+      "gaussian splatting",
+      "点云",
+      "深度估计"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 21
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.28004v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "本文利用三维高斯场景表示构建可微分成像流程，联合优化编码孔径、相机参数和深度估计网络，以设计面向自主系统的单目及双目离焦测深相机。虽然论文未明确聚焦道路自动驾驶，但其相机—感知联合设计和深度估计技术可直接服务于自动驾驶视觉感知系统，具有较强的领域相关性。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Differentiable Task-Driven Coded Aperture Camera Design with 3D Gaussian Scene Representations",
+  "title_zh": "基于任务驱动的可微分编码孔径相机设计与三维高斯场景表示",
+  "translation_url": "https://hjfy.top/arxiv/2610.28004"
+}

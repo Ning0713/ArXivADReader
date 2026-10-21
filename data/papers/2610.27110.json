@@ -1,0 +1,58 @@
+{
+  "abstract": "Autonomous Unmanned Aerial Vehicle (UAV) navigation in urban environments requires precise pose estimation. Because Global Navigation Satellite System (GNSS) signals are often unreliable in cities, visual localization serves as a crucial complement. Within this domain, textureless Level-of-Detail (LoD) city models provide a lightweight and privacy-preserving substitute for heavy 3D textured meshes. However, localizing against abstract geometry is challenging. Existing pipelines typically score 2D silhouette overlaps, which can suffer from severe geometric ambiguities. We present MatchCityLoc, a framework that shifts this paradigm to direct feature matching from a noisy 6-DoF pose prior. By extracting surface normals from the query image using a zero-shot foundation model and matching them against rendered LoD normals, we establish explicit 3D-to-2D correspondences. This enables a Perspective-n-Point (PnP) pose solve, which we iteratively refine through a render-and-match loop. Experiments demonstrate strong pose recall and accurate translation and rotation among the evaluated off-the-shelf LoD-based methods with very few renderings. By bridging the modality gap between aerial imagery and texture-free geometry, MatchCityLoc enables accurate localization using lightweight, privacy-preserving city models.",
+  "abstract_zh": "在城市环境中，无人驾驶飞行器（UAV）的自主导航需要精确的姿态估计。由于全球导航卫星系统（GNSS）信号在城市中往往不可靠，视觉定位成为了一个重要的补充。在这一领域，无纹理的细节层次（LoD）城市模型提供了一种轻量且保护隐私的替代方案，取代了重型的3D纹理网格。然而，针对抽象几何体的定位是具有挑战性的。现有的处理流程通常通过评分2D轮廓重叠来进行定位，但这可能会遭遇严重的几何模糊性。我们提出了MatchCityLoc，一个将这一范式转变为从噪声6自由度（6-DoF）姿态先验进行直接特征匹配的框架。通过使用零样本基础模型从查询图像中提取表面法线，并将其与渲染的LoD法线进行匹配，我们建立了明确的3D到2D的对应关系。这使得我们能够进行透视-n-点（PnP）姿态求解，并通过渲染和匹配循环进行迭代优化。实验表明，在评估的现成LoD方法中，姿态回忆强，平移和旋转准确，且渲染次数非常少。通过弥合空中图像与无纹理几何之间的模态差距，MatchCityLoc实现了使用轻量、保护隐私的城市模型进行准确定位。",
+  "arxiv_id": "2610.27110",
+  "arxiv_url": "https://arxiv.org/abs/2610.27110v1",
+  "authors": [
+    "Oussema Dhaouadi",
+    "Zuria Bauer",
+    "Johannes Michael Meier",
+    "Marc Pollefeys",
+    "Daniel Cremers",
+    "Olaf Wysocki"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-27110",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.532870+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.27110v1",
+  "published_at": "2026-10-19T18:10:59Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "无人驾驶",
+      "autonomous",
+      "vehicle",
+      "驾驶",
+      "visual localization",
+      "satellite",
+      "uav",
+      "aerial vehicle",
+      "卫星"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 47
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.27110v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位"
+    ]
+  },
+  "title": "MatchCityLoc: Aerial Localization in LoD City Models via Surface Normal Matching",
+  "title_zh": "MatchCityLoc：通过表面法线匹配实现城市模型中的空中定位",
+  "translation_url": "https://hjfy.top/arxiv/2610.27110"
+}

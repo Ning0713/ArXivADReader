@@ -1,6 +1,330 @@
 {
-  "generated_at": "2026-10-20T09:48:45.067272+00:00",
+  "generated_at": "2026-10-21T09:49:19.694552+00:00",
   "items": [
+    {
+      "abstract": "Collaborative perception enables agents to retrieve the scene semantics and geometry beyond the field of view of any individual agent. This broader scene understanding enhances transportation safety and improves efficiency in multi-robot systems. However, existing collaborative semantic occupancy methods rely on dense 3D voxel annotations and are limited to recognizing objects within a predefined set of semantic classes. To overcome these limitations, we present CoGaussian, an open-vocabulary Gaussian-based collaborative semantic occupancy prediction framework. CoGaussian represents a scene as a set of foundation model-aligned sparse 3D Gaussians, which serve as a compact representation for communicating and fusing geometric and semantic information across multiple agents. On the Semantic-OPV2V benchmark, our method outperforms existing open-vocabulary single-agent approaches, highlighting the effectiveness of open-vocabulary collaborative scene understanding.",
+      "abstract_zh": "协作感知使得智能体能够获取超出任何单个智能体视野的场景语义和几何信息。这种更广泛的场景理解增强了交通安全，并提高了多机器人系统的效率。然而，现有的协作语义占用方法依赖于密集的三维体素标注，并且仅限于识别预定义语义类别集合中的对象。为了解决这些限制，我们提出了CoGaussian，一种基于高斯的开放词汇协作语义占用预测框架。CoGaussian将场景表示为一组与基础模型对齐的稀疏三维高斯分布，这些高斯分布作为一种紧凑的表示方式，用于在多个智能体之间传递和融合几何与语义信息。在Semantic-OPV2V基准测试中，我们的方法优于现有的开放词汇单智能体方法，突显了开放词汇协作场景理解的有效性。",
+      "authors": [
+        "Om Shivam Verma",
+        "Shaya Farahmand",
+        "Lingjun Zhao",
+        "Lu Gan"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.28530",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "BEV/Occupancy"
+      ],
+      "title": "CoGaussian: Open-Vocabulary Gaussian-based Collaborative 3D Scene Understanding",
+      "title_zh": "CoGaussian：基于高斯的开放词汇协作三维场景理解",
+      "url": "/daily/2026-10-21/#paper-2610-28530"
+    },
+    {
+      "abstract": "Reliable lane markings are important for both human drivers and automated driving systems, but their condition is still commonly assessed through manual inspection. Existing autonomous-driving datasets primarily support lane detection and scene understanding and usually lack maintenance-oriented labels for lane-marking visibility, continuity, or degradation. In this study, we present a geo-referenced smartphone dashcam dataset and baseline framework for lane-marking quality assessment. The dataset contains 63,839 road-facing frames collected across South Texas using a GPS-enabled dashcam application. A subset of 3,339 frames is matched with OpenStreetMap-derived lane-count labels, which are used as weak supervision for lane-count regression and map-consistency evaluation. We propose three lane-quality measures: Contrast Stability Index (CSI), which captures lane-background contrast using Laplacian responses; Line Continuity Ratio (LCR), which estimates structural continuity using edge and Hough-line evidence; and Regression Lane Confidence Score (RLCS), which measures agreement between predicted and map-derived lane counts on matched frames. The baseline prediction models attained strong performance, with CSI (MAE $0.039$, $R^2=0.97$) and LCR (MAE $0.093$, $R^2=0.84$). Notably, CSI and LCR are no-reference, segmentation-derived quality metrics that can be computed without dense human labels. In a pilot validation using 50 human-ranked images, these proposed lane-specific metrics show stronger rank agreement with human lane-quality ordering (e.g., Spearman's $\\rho=0.7316$ and Kendall's $\\tau=0.5472$ for LCR) than general image-quality measures such as PSNR, SSIM, BRISQUE, NIQE, and LPIPS. We believe the dataset, metrics, and baseline provide an initial step toward scalable, low-cost, location-aware lane-marking quality assessment. Data and code: https://github.com/Shaif95/Road_Quality",
+      "abstract_zh": "可靠的车道标记对人类驾驶员和自动驾驶系统都至关重要，但其状况仍然通常通过人工检查来评估。现有的自动驾驶数据集主要支持车道检测和场景理解，通常缺乏针对车道标记可见性、连续性或退化的维护导向标签。在本研究中，我们提出了一个地理参考的智能手机行车记录仪数据集和车道标记质量评估的基线框架。该数据集包含63,839帧面向道路的图像，这些图像是通过一个支持GPS的行车记录仪应用在德克萨斯州南部收集的。数据集中的3,339帧与基于OpenStreetMap的车道数量标签相匹配，这些标签被用作车道数量回归和地图一致性评估的弱监督。我们提出了三种车道质量度量：对比稳定指数（Contrast Stability Index, CSI），通过拉普拉斯响应捕捉车道与背景的对比；线条连续性比率（Line Continuity Ratio, LCR），通过边缘和霍夫线证据估计结构连续性；回归车道置信评分（Regression Lane Confidence Score, RLCS），测量匹配帧上预测的车道数量与地图推导的车道数量之间的一致性。基线预测模型表现出色，CSI（平均绝对误差 $0.039$, $R^2=0.97$）和LCR（平均绝对误差 $0.093$, $R^2=0.84$）。值得注意的是，CSI和LCR是无参考的、基于分割的质量度量，可以在没有密集人工标签的情况下计算。在使用50张人工排名图像进行的初步验证中，这些提出的特定车道度量与人类车道质量排序的排名一致性更强（例如，LCR的Spearman相关系数 $ ho=0.7316$ 和Kendall相关系数 $ au=0.5472$），相比于一般的图像质量度量，如PSNR、SSIM、BRISQUE、NIQE和LPIPS。我们相信该数据集、度量和基线为可扩展、低成本、位置感知的车道标记质量评估提供了初步的步骤。数据和代码可在：https://github.com/Shaif95/Road_Quality",
+      "authors": [
+        "Shaif Chowdhury",
+        "Akhila Yeruvasu",
+        "Moshiur Rahman Tonmoy",
+        "Ayush Goyal",
+        "Dunren Che"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.28508",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "Deep Learning-Based Road Lane Quality Assessment from Egocentric Dashcam Video",
+      "title_zh": "基于深度学习的自我中心行车记录仪视频道路车道质量评估",
+      "url": "/daily/2026-10-21/#paper-2610-28508"
+    },
+    {
+      "abstract": "Lunar surface exploration increasingly relies on autonomous rovers that must perceive and traverse unstructured terrain under extreme illumination conditions. Near the lunar poles, low sun elevations produce long, high-contrast shadows that challenge stereo vision, terrain segmentation, and localization. Developing perception and navigation algorithms for these conditions requires large amounts of sensor data with accurate ground truth, which field campaigns and analog facilities can only provide at high cost and with limited variety. This paper presents MARE (Modular Autonomy and Rendering Environment), an open-source simulation suite for lunar rover perception and autonomy built on Unreal Engine 5 and ROS 2. MARE consists of three integrated components. Terrain Studio generates cratered and rocky lunar Digital Elevation Maps (DEMs) to build simulation scenes. A dedicated Unreal Engine project hosts two physics-based rovers with plugins for stereo, lidar, event, and Single-Photon Avalanche Diode (SPAD) cameras, streaming time-stamped sensor data and pixel-accurate ground truth. Lastly, a Guidance, Navigation, and Control (GNC) stack provides web-based mission control. Validation shows a mean Intersection over Union (IoU) of 0.79 between predicted and rendered shadows at low sun elevations, and stereo depth analysis verifies decreased pixel coverage in shadowed regions relative to sunlit terrain.",
+      "abstract_zh": "月球表面探索日益依赖于能够在极端照明条件下感知和穿越非结构化地形的自主探测车。在月球极地附近，低太阳高度产生长而高对比度的阴影，这对立体视觉、地形分割和定位提出了挑战。为这些条件开发感知和导航算法需要大量带有准确真实数据的传感器数据，而野外考察和模拟设施只能以高成本和有限的多样性提供这些数据。本文介绍了MARE（模块化自主与渲染环境），这是一个基于Unreal Engine 5和ROS 2构建的开源月球探测车感知与自主导航模拟套件。MARE由三个集成组件组成。地形工作室生成带有陨石坑和岩石的月球数字高程图（DEMs），用于构建模拟场景。一个专用的Unreal Engine项目托管两个基于物理的探测车，配备立体、激光雷达、事件和单光子雪崩二极管（SPAD）相机的插件，实时传输带时间戳的传感器数据和像素级准确的真实数据。最后，一个引导、导航和控制（GNC）堆栈提供基于网络的任务控制。验证结果显示，在低太阳高度下，预测阴影与渲染阴影之间的平均交并比（IoU）为0.79，立体深度分析验证了阴影区域相对于阳光照射地形的像素覆盖减少。",
+      "authors": [
+        "Raúl Castilla-Arquillo",
+        "Miguel Olivares-Mendez"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.28465",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "深度/几何"
+      ],
+      "title": "MARE: An Open-Source Lunar Rover Simulator with Shadow Ground Truth for Perception and Autonomy",
+      "title_zh": "MARE：一个具有阴影真实数据的开源月球探测车模拟器，用于感知与自主导航",
+      "url": "/daily/2026-10-21/#paper-2610-28465"
+    },
+    {
+      "abstract": "Feedforward reconstruction of dynamic driving scenes requires integrating observations across multiple views and time steps into a coherent 3D representation. PointForward established state-of-the-art feedforward driving reconstruction by lifting image observations into sparse 3D queries, demonstrating the effectiveness of point-aligned scene representations. However, these queries are largely processed independently, limiting information exchange across space and time, while direct global attention among tens of thousands of point queries is computationally prohibitive. In this work, we present \\textbf{PointForward V2}, which advances point-aligned representation to point-aligned interaction. Our key idea is to mediate query interaction through compact, scene-structured registers. For the static background, frame-wise Static Scene Registers compress point information, communicate across frames, and propagate the aggregated context back to the queries. For each dynamic instance, queries from different frames are aligned in an object-centric canonical space and interact through instance-specific Dynamic Instance Registers. We further employ 4D positional encoding that combines aligned spatial coordinates with original timestamps, enabling spatially aligned yet temporally distinguishable interactions. In this way, PointForward V2 enables scalable spatio-temporal reasoning directly among lifted 3D queries without dense global attention. Experiments on Waymo, nuScenes, and Argoverse 2 demonstrate state-of-the-art performance across large-scale driving benchmarks.",
+      "abstract_zh": "动态驾驶场景的前馈重建需要将来自多个视角和时间步的观察整合为一致的三维表示。PointForward通过将图像观察提升为稀疏三维查询，建立了前馈驾驶重建的最新技术，展示了点对齐场景表示的有效性。然而，这些查询在很大程度上是独立处理的，限制了跨空间和时间的信息交换，而在数万个点查询之间进行直接的全局注意力计算在计算上是不可行的。在本研究中，我们提出了 extbf{PointForward V2}，将点对齐表示推进到点对齐交互。我们的关键思想是通过紧凑的场景结构寄存器来调解查询交互。对于静态背景，逐帧的静态场景寄存器压缩点信息，在帧之间进行通信，并将聚合的上下文传播回查询。对于每个动态实例，来自不同帧的查询在以对象为中心的规范空间中对齐，并通过特定于实例的动态实例寄存器进行交互。我们进一步采用了4D位置编码，将对齐的空间坐标与原始时间戳结合，使得交互在空间上对齐而在时间上可区分。通过这种方式，PointForward V2使得在提升的三维查询之间直接进行可扩展的时空推理成为可能，而无需密集的全局注意力。在Waymo、nuScenes和Argoverse 2上的实验展示了在大规模驾驶基准测试中的最新性能。",
+      "authors": [
+        "Xianqi Wang",
+        "Cheng Chi",
+        "Yuechuan Pu",
+        "Hongcheng Luo",
+        "Junda Cheng",
+        "Guang Chen",
+        "Hangjun Ye",
+        "Bing Wang",
+        "Xin Yang"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.28120",
+      "tags": [
+        "深度/几何",
+        "仿真/数据"
+      ],
+      "title": "PointForward V2: Point-Aligned Interaction for Feedforward Driving Reconstruction",
+      "title_zh": "PointForward V2：面向前馈驾驶重建的点对齐交互",
+      "url": "/daily/2026-10-21/#paper-2610-28120"
+    },
+    {
+      "abstract": "Camera design heavily influences perception task performance, yet cameras are typically designed by domain experts through costly experimentation, in isolation from the tasks they serve. Existing joint-design methods either rely on differentiable simulation limited to pre-captured 2D images, restricting them to optics or image-processing pipeline design, or use non-differentiable camera simulators optimised with derivative-free or reinforcement-learning methods that scale poorly with the number of design parameters. We present a differentiable framework for jointly designing complex camera systems and downstream perception tasks. We use it to design two coded-aperture depth-from-defocus cameras, a monocular and a stereo configuration, by jointly optimising the coded aperture mask, camera parameters, and a depth estimation network end-to-end. Our framework represents scenes with 3D Gaussian Splatting reconstructed from real-world captures, providing a differentiable image formation process for gradient-based optimisation over design spaces intractable for prior differentiable approaches. Results demonstrate that our differentiable method improves over existing coded aperture design and non-differentiable camera design baselines, offering a step forward in automated and principled camera design for autonomous systems.",
+      "abstract_zh": "相机设计对感知任务的性能有着重要影响，但通常相机的设计是由领域专家通过昂贵的实验进行的，与其服务的任务相隔离。现有的联合设计方法要么依赖于限于预捕获的二维图像的可微分仿真，这使得它们仅限于光学或图像处理管道的设计，要么使用非可微分的相机仿真器，通过无导数或强化学习方法进行优化，这在设计参数数量增加时表现不佳。我们提出了一个可微分框架，用于联合设计复杂的相机系统和下游感知任务。我们利用该框架设计了两种编码孔径的深度从模糊（depth-from-defocus）相机，分别为单目和立体配置，通过端到端地联合优化编码孔径掩模、相机参数和深度估计网络。我们的框架使用从真实世界捕获的三维高斯点云（3D Gaussian Splatting）来表示场景，为基于梯度的优化提供了可微分的图像形成过程，这在之前的可微分方法中是不可行的。结果表明，我们的可微分方法在现有的编码孔径设计和非可微分相机设计基线之上有所改进，为自动化和原则性相机设计在自主系统中的应用迈出了重要一步。",
+      "authors": [
+        "Chengyang Yan",
+        "Donald G. Dansereau"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.28004",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Differentiable Task-Driven Coded Aperture Camera Design with 3D Gaussian Scene Representations",
+      "title_zh": "基于任务驱动的可微分编码孔径相机设计与三维高斯场景表示",
+      "url": "/daily/2026-10-21/#paper-2610-28004"
+    },
+    {
+      "abstract": "Class unlearning for video segmentation aims to ensure that a removed category cannot be reconstructed from a deployed model's outputs. Current leakage evaluation algorithms inspect one frame at a time, and we show that this understates leakage by a wide margin: an attacker that averages a model's output field over a two-second clip recovers the forgotten class from every method we evaluate on VSPW and most on Virtual KITTI~2, including models whose per-frame predictions are visually indistinguishable from a retrain oracle (a model trained from scratch without the forgotten class). We attribute the recoverable signal to cross-frame redundancy rather than object trajectory, establish this with a time-shuffled control that leaves leakage intact, and introduce PACE, an unlearning method that suppresses redundancy directly using an exactly permutation-invariant pooled adversarial discriminator and a two-sided temporal consistency objective. Across VSPW and Virtual KITTI~2, PACE lowers pooled attacker AP to $18.79$ (\\texttt{person}) and $12.10$ (\\texttt{car}) on VSPW and $9.11$ (\\texttt{car}) on Virtual KITTI~2, achieving on the latter the strongest suppression among verdict-safe methods retaining usable utility, while retaining $19.8$ mIoU on VSPW \\texttt{car} against at most $8.3$ for any baseline achieving comparable erasure.",
+      "abstract_zh": "视频分割中的类别遗忘旨在确保被移除的类别无法从已部署模型的输出中重构。目前的泄露评估算法逐帧检查，我们表明这大大低估了泄露程度：攻击者通过对两秒视频片段的模型输出进行平均，可以从我们在 VSPW 上评估的每种方法以及在 Virtual KITTI~2 上的大多数方法中恢复被遗忘的类别，包括那些每帧预测在视觉上与从头训练的无遗忘类别的模型（即 retrain oracle）无差异的模型。我们将可恢复信号归因于跨帧冗余，而非物体轨迹，通过一个时间洗牌的对照实验来验证这一点，该实验保持了泄露的完整性，并引入了 PACE，这是一种直接使用完全置换不变的池化对抗鉴别器和双侧时间一致性目标来抑制冗余的遗忘方法。在 VSPW 和 Virtual KITTI~2 上，PACE 将池化攻击者的平均精度（AP）降低至 $18.79$（ exttt{person}）和 $12.10$（ exttt{car}）在 VSPW 上，以及 $9.11$（ exttt{car}）在 Virtual KITTI~2 上，在后者中实现了在保持可用效用的情况下，判决安全方法中最强的抑制，同时在 VSPW exttt{car} 上保持 $19.8$ 的 mIoU，相比之下，任何基线在实现可比的遗忘时最多仅为 $8.3$。",
+      "authors": [
+        "Kavyansh Tyagi",
+        "Paolo Russo"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27982",
+      "tags": [
+        "感知",
+        "预测/规划",
+        "安全/异常"
+      ],
+      "title": "Beyond the Frame: Redundancy, Not Trajectory, Carries the Privacy Leak in Video Unlearning",
+      "title_zh": "超越框架：冗余，而非轨迹，导致视频遗忘中的隐私泄露",
+      "url": "/daily/2026-10-21/#paper-2610-27982"
+    },
+    {
+      "abstract": "Unmanned aerial vehicles (UAVs) enable fast, flexible last-mile and emergency delivery, but their routing remains challenging as the number of clients varies. Classical approaches based on mixed-integer programming and heuristics can scale poorly or require problem-specific design, motivating learning-based alternatives. Reinforcement learning is particularly promising, provided a single policy can generalize across problem sizes without retraining. Although attention-based Pointer Networks are inherently size-agnostic, their solution quality degrades under both upscaling and downscaling. Using the Capacitated Vehicle Routing Problem (CVRP) as a controlled proxy, with fixed capacity reflecting drone payload constraints, we investigate this degradation and identify three contributing factors: shifts in node density, attention dispersion, and dilution of the mean-pooled graph context. We systematically compare architecture-wide, encoder-side, and decoder-side modifications to address these limitations and propose a learned, permutation-invariant graph-context aggregation mechanism, implemented as a weighted average and as Set2Set. Results reveal distinct requirements for transfer in each direction: entropy-based attention scaling reduces the CVRP20-to-CVRP100 performance gap by 1.41 percentage points, while the proposed aggregation methods achieve the largest improvement on the more challenging CVRP100-to-CVRP20 transfer, approximately 0.9 percentage points. Exploiting this complementarity, we introduce an approach selector that chooses the best model for each training-target size pair. The selector reduces cost relative to the reference model across all nine seen train-test pairs and eight of nine pairs involving unseen sizes (CVRP35, CVRP75, and CVRP200), achieving improvements of up to 3.2 percent.",
+      "abstract_zh": "无人驾驶飞行器（UAV）能够实现快速、灵活的最后一公里和紧急配送，但由于客户数量的变化，其路径规划仍然面临挑战。基于混合整数规划和启发式方法的经典方法在扩展性方面表现不佳，或需要针对特定问题的设计，这促使了基于学习的替代方案的出现。强化学习特别有前景，前提是单一策略能够在不同问题规模间泛化而无需重新训练。尽管基于注意力的指针网络在本质上对规模不敏感，但在上升和下降规模时，其解决方案质量会下降。以容量限制车辆路径规划问题（CVRP）作为受控代理，固定容量反映无人机的有效载荷限制，我们研究了这种下降现象并确定了三个影响因素：节点密度的变化、注意力的分散以及均值池化图上下文的稀释。我们系统地比较了架构范围内、编码器侧和解码器侧的修改，以解决这些限制，并提出了一种学习的、排列不变的图上下文聚合机制，分别实现为加权平均和Set2Set。结果显示在每个方向的转移中有不同的需求：基于熵的注意力缩放将CVRP20到CVRP100的性能差距减少了1.41个百分点，而所提出的聚合方法在更具挑战性的CVRP100到CVRP20的转移中实现了最大改进，约为0.9个百分点。利用这种互补性，我们引入了一种方法选择器，能够为每对训练目标大小选择最佳模型。该选择器在所有九个已见的训练-测试对和九个中涉及未见大小（CVRP35、CVRP75和CVRP200）的八个对中，相较于参考模型降低了成本，改善幅度高达3.2%。",
+      "authors": [
+        "Sofiene Lassoued",
+        "Devara Tertia",
+        "Stefan Lier",
+        "Andreas Schwung"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27936",
+      "tags": [
+        "预测/规划"
+      ],
+      "title": "From Comparison to Selection: Enhancing Cross-Scale Generalization of Pointer Networks Trained with Reinforcement Learning for Capacitated Drone Delivery Routing",
+      "title_zh": "从比较到选择：增强使用强化学习训练的指针网络在容量限制无人机配送路径规划中的跨尺度泛化能力",
+      "url": "/daily/2026-10-21/#paper-2610-27936"
+    },
+    {
+      "abstract": "Hamilton-Jacobi (HJ) reachability analysis offers formal safety guarantees for control systems, but training accurate neural certificates remains difficult, particularly when unsafe regions are hard to characterize. We propose a verification-guided training framework that addresses this by using probabilistic enumeration of safety constraints to detect forward-invariance violations, i.e., states where the learned certificate incorrectly classifies unsafe behavior. This produces a compact, targeted set of counterexamples that more precisely captures the failure boundary than inputs generated by standard adversarial attack methods. Crucially, using this representation to fine-tune a pretrained HJ value function yields larger certified regions and reduces certification time across all tested benchmarks. We further introduce a shielding mechanism based on the refined certificates to enforce safety constraints at deployment time. We evaluate the proposed safety filter in a realistic, physics-based Isaac Sim environment and through real-world autonomous racing experiments, achieving zero safety constraint violations compared to a nominal controller and a backup policy based on Linear Quadratic Regulation (LQR). These results demonstrate the effectiveness of the proposed shielding mechanism in ensuring safe operation under high-speed, safety-critical conditions.",
+      "abstract_zh": "哈密顿-雅可比（Hamilton-Jacobi, HJ）可达性分析为控制系统提供了形式化的安全保证，但训练准确的神经证书仍然困难，特别是在不安全区域难以表征的情况下。我们提出了一种基于验证引导的训练框架，通过使用安全约束的概率枚举来检测前向不变性违例，即学习的证书错误分类不安全行为的状态。这产生了一组紧凑且针对性的反例，比标准对抗攻击方法生成的输入更精确地捕捉到失败边界。关键是，使用这种表示法对预训练的 HJ 值函数进行微调，可以获得更大的认证区域，并在所有测试基准中减少认证时间。我们进一步引入了一种基于精炼证书的保护机制，以在部署时强制执行安全约束。我们在一个基于物理的现实环境（Isaac Sim）和真实的自主赛车实验中评估了所提出的安全过滤器，与名义控制器和基于线性二次调节（Linear Quadratic Regulation, LQR）的备份策略相比，实现了零安全约束违例。这些结果证明了所提出的保护机制在确保高速、安全关键条件下的安全操作方面的有效性。",
+      "authors": [
+        "Mihaela-Larisa Clement",
+        "Tosca Pierro",
+        "Ezio Bartocci",
+        "Luca Marzari"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27870",
+      "tags": [
+        "安全/异常",
+        "感知",
+        "世界模型/生成"
+      ],
+      "title": "Enumeration-Guided Training of Neural Hamilton-Jacobi Safety Certificates",
+      "title_zh": "基于枚举引导的神经哈密顿-雅可比安全证书训练",
+      "url": "/daily/2026-10-21/#paper-2610-27870"
+    },
+    {
+      "abstract": "Car-following (CF) models is a fundamental component of microscopic traffic simulation and underpin the analysis of collective traffic dynamics, while its modeling becomes more challenging due to diverse human driving behaviors and the increasing presence of automated vehicle. Analytical CF models offer interpretable representations of longitudinal vehicle interactions, but their prescribed functional structures may limit the representation of heterogeneous driving behavior. This study proposes an agent-centered, physics-aware framework for the empirical discovery of CF laws from multi-source trajectory data. The framework iteratively combines agent-guided hypothesis generation, informed by traffic flow knowledge and state-dependent reconstruction errors, with evolutionary symbolic search and physics-aware multi-objective evaluation. Using NGSIM US-101, highD, and exiD, the framework discovers the Adaptive Equilibrium Response Model (AERM), which couples state-dependent relative-speed response with spacing-dependent equilibrium-speed restoration. AERM admits analytical equilibrium speed-spacing and flow-density relationships; its stability conditions are derived for the zero-delay formulation, and platoon simulations examine disturbance propagation. Evaluated against seven classical CF models on Shanghai naturalistic driving data, NGSIM I-80, and Waymo trajectories, AERM attains the lowest spacing and speed reconstruction errors under trajectory-specific calibration, reducing spacing RMSE by 9.11%, 7.59%, and 21.73% relative to the strongest baselines, and remains competitive under dataset-level shared parameters. These results demonstrate the fitting flexibility and analytical tractability of the discovered CF law, providing an interpretable basis for microscopic traffic simulation.",
+      "abstract_zh": "跟车（CF）模型是微观交通仿真的基本组成部分，并支撑着集体交通动态的分析。然而，由于人类驾驶行为的多样性和自动驾驶车辆的日益普及，其建模变得更加具有挑战性。分析性CF模型提供了对纵向车辆交互的可解释表示，但其规定的功能结构可能限制了对异质驾驶行为的表征。本研究提出了一种以代理为中心、考虑物理规律的框架，用于从多源轨迹数据中经验性地发现CF规律。该框架迭代地结合了代理引导的假设生成，基于交通流知识和状态依赖重构误差进行指导，以及进化符号搜索和物理意识的多目标评估。利用NGSIM US-101、highD和exiD数据集，该框架发现了自适应平衡响应模型（AERM），该模型将状态依赖的相对速度响应与间距依赖的平衡速度恢复相结合。AERM允许解析的平衡速度-间距和流量-密度关系；其稳定性条件为零延迟公式推导而来，并通过车队仿真考察了干扰传播。与七个经典CF模型在上海自然驾驶数据、NGSIM I-80和Waymo轨迹上的评估结果显示，AERM在轨迹特定校准下实现了最低的间距和速度重构误差，相对于最强基线分别减少了9.11%、7.59%和21.73%的间距均方根误差，并在数据集级共享参数下保持竞争力。这些结果展示了所发现的CF规律的拟合灵活性和解析可处理性，为微观交通仿真提供了可解释的基础。",
+      "authors": [
+        "Jiamei Xu",
+        "Jie Sun",
+        "Keshuang Tang",
+        "Jian Sun"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27836",
+      "tags": [
+        "仿真/数据",
+        "预测/规划",
+        "深度/几何"
+      ],
+      "title": "Agentic discovery of interpretable car-following laws from multi-source trajectory data",
+      "title_zh": "基于多源轨迹数据的可解释跟车规律的主动发现",
+      "url": "/daily/2026-10-21/#paper-2610-27836"
+    },
+    {
+      "abstract": "Connected and Autonomous Vehicles (CAVs) face significant challenges in roundabout navigation due to dense traffic interactions and unpredictable agent behaviors, necessitating high levels of adaptability and safety. While the combination of Reinforcement Learning (RL) and Model Predictive Control (MPC) offers a promising approach, existing frameworks suffer from a structural mismatch where pointwise RL decisions fail to align with MPC's trajectory level optimization, and often lack rigorous safety guarantees. This work proposes RLTrajGen-PPMPC-CBF, a hierarchical framework for safe, smooth and comfort roundabout navigation, which regulates the coupling between RL-based planning and MPC-based control. We employ Prescribed Performance Constraints (PPC) to enforce a gradual, stable convergence between reference trajectories and control outputs, ensuring MPC tracking performance remains consistent with intended behavior from RL. Additionally, a Control Barrier Function (CBF) layer provides real-time safety corrections that are fed back into the RL process. Simulation results in the MetaDrive environment demonstrate that our method achieves a 6.25\\% increase in average success rate and a 65.87\\% reduction in Motion Sickness Dose Value (MSDV) compared to the optimal baseline, meanwhile accelerating training convergence.",
+      "abstract_zh": "连接与自动驾驶车辆（CAVs）在环形交叉口导航中面临着由于交通密集互动和不可预测的代理行为而带来的重大挑战，这要求其具备较高的适应性和安全性。尽管强化学习（RL）与模型预测控制（MPC）的结合提供了一种有前景的方法，但现有框架存在结构不匹配的问题，即逐点的RL决策未能与MPC的轨迹级优化对齐，并且通常缺乏严格的安全保障。本研究提出了RLTrajGen-PPMPC-CBF，一个用于安全、平稳和舒适环形交叉口导航的分层框架，该框架调节了基于RL的规划与基于MPC的控制之间的耦合。我们采用规定性能约束（PPC）来强制参考轨迹与控制输出之间的渐进、稳定收敛，确保MPC的跟踪性能与RL的预期行为保持一致。此外，控制屏障函数（CBF）层提供实时安全修正，并反馈到RL过程中。MetaDrive环境中的仿真结果表明，我们的方法相比于最佳基线实现了6.25%的平均成功率提升和65.87%的运动病剂量值（MSDV）降低，同时加速了训练收敛。",
+      "authors": [
+        "Wenhan Li",
+        "Yangrui Zhang",
+        "Hang Zhou",
+        "Peiran Liu",
+        "Yiding Ji"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27732",
+      "tags": [
+        "预测/规划",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "Prescribed Performance Guided Safe Reinforcement Learning for Roundabout Navigation of Autonomous Vehicles",
+      "title_zh": "基于规定性能的安全强化学习指导的自动驾驶车辆环形交叉口导航",
+      "url": "/daily/2026-10-21/#paper-2610-27732"
+    },
+    {
+      "abstract": "LiDAR-based 3D object detection is a core perception service for autonomous driving, but deployment requires robustness to point-cloud corruption while meeting latency and memory requirements. Existing approaches address robustness and resource efficiency separately, resulting in compact detectors that are fragile under corruption or robust detectors that remain costly to deploy. We therefore formulate LiDAR perception provisioning as constructing a detector that remains accurate under point-cloud corruptions while meeting constraints on inference latency and peak GPU memory. To achieve robustness, we first craft corrupted samples that mimic extreme weather conditions. Then we train candidate detectors offline by ordering clean and corrupted samples by perturbation sensitivity, through which detectors learn more from hard corrupted samples. We estimate perturbation sensitivity using an ensemble of seven heterogeneous 3D detectors by tracking changes in confidence, BEV overlap, and unmatched detections. To improve efficiency, we narrow the network and use offline neighborhood-density measurements to determine how many points and neighbors each sampling stage processes. We evaluate our method using AP (Average Precision) under clean and corrupted conditions, inference latency, and peak allocated GPU memory. On KITTI for Car detection with PointRCNN, our method improves Moderate AP under corruption by 3.32 points over the original detector while reducing mean latency by 19.8% and peak allocated GPU memory by 53.9%. Across two datasets, two detector architectures, and three object classes, our method improves AP under corruption by 4.03 points on average over the corresponding original detectors, while reducing mean inference latency and peak allocated GPU memory by 14.4% and 38.0%, respectively. Our code is available at https://github.com/drunklibai/robust-efficient-lidar-perception.",
+      "abstract_zh": "基于LiDAR的3D物体检测是自动驾驶的核心感知服务，但其部署需要在满足延迟和内存要求的同时，对点云损坏具有稳健性。现有方法分别解决稳健性和资源效率，导致紧凑型检测器在损坏情况下脆弱，或稳健型检测器在部署时成本高昂。因此，我们将LiDAR感知的提供形式化为构建一个在点云损坏下仍能保持准确性的检测器，同时满足推理延迟和峰值GPU内存的约束。为了实现稳健性，我们首先制作模拟极端天气条件的损坏样本。然后，我们通过按扰动敏感性对干净样本和损坏样本进行排序，离线训练候选检测器，从而使检测器能够从困难的损坏样本中学习更多。我们使用七个异构3D检测器的集成来估计扰动敏感性，通过跟踪置信度、BEV重叠和未匹配检测的变化。为了提高效率，我们缩小网络，并使用离线邻域密度测量来确定每个采样阶段处理的点和邻居的数量。我们使用AP（平均精度）在干净和损坏条件下评估我们的方法，以及推理延迟和峰值分配的GPU内存。在KITTI数据集中使用PointRCNN进行汽车检测时，我们的方法在损坏情况下将Moderate AP提高了3.32个点，同时将平均延迟降低了19.8%，峰值分配的GPU内存降低了53.9%。在两个数据集、两种检测器架构和三个物体类别中，我们的方法在损坏情况下平均提高了4.03个点的AP，同时将平均推理延迟和峰值分配的GPU内存分别降低了14.4%和38.0%。我们的代码可在https://github.com/drunklibai/robust-efficient-lidar-perception获取。",
+      "authors": [
+        "Tingxu Han",
+        "Zijie Shen",
+        "An Guo",
+        "Lyuke Wang",
+        "Chunrong Fang",
+        "Zhenyu Chen",
+        "Wei Song"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27617",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "仿真/数据"
+      ],
+      "title": "Provisioning Robust and Efficient LiDAR Perception for Autonomous Driving",
+      "title_zh": "为自动驾驶提供稳健高效的LiDAR感知",
+      "url": "/daily/2026-10-21/#paper-2610-27617"
+    },
+    {
+      "abstract": "Online adaptation of the cornering stiffness keeps a model-based sideslip estimator valid as tires change, but competes with learned model correction for the same filter innovation. A corrector with enough parameters can absorb the innovation pattern that a stiffness change produces, and adaptation is suppressed while the fit improves. We propagate the stiffness sensitivities of the predicted measurements through the vehicle states and construct a corrector orthogonal to them. A null-space parameterization enforces the constraint without a penalty coefficient and preserves the static least-squares stiffness estimate on each identification segment. In full-vehicle simulation, the stiffness response of the unconstrained corrector declines as its parameter count grows, whereas the orthogonal corrector responds at least as fully as the uncorrected filter at all sizes and lowers sideslip error by 12.7% to 22.0%. In a simulated drive with a stiffness step, the orthogonal corrector adapts as quickly as the uncorrected filter and lowers sideslip error during and after the transient. On public real-vehicle data, the 430-parameter unconstrained corrector loses most of its response to deliberate offsets of the filter's nominal stiffness, whereas the orthogonal corrector of the same size retains most of it, with a sideslip error slightly above the uncorrected filter's.",
+      "abstract_zh": "在线适应转向刚度使基于模型的侧滑估计器在轮胎变化时保持有效，但与学习模型的修正在同一滤波创新上存在竞争。具有足够参数的修正器可以吸收刚度变化所产生的创新模式，而适应性在拟合改善的同时被抑制。我们通过车辆状态传播预测测量的刚度灵敏度，并构建一个与之正交的修正器。零空间参数化在不使用惩罚系数的情况下强制执行约束，并在每个识别段上保留静态最小二乘刚度估计。在全车仿真中，未约束修正器的刚度响应随着参数数量的增加而下降，而正交修正器在所有尺寸下的响应至少与未修正滤波器一样充分，并将侧滑误差降低了12.7%至22.0%。在具有刚度阶跃的模拟驾驶中，正交修正器的适应速度与未修正滤波器相当，并在瞬态期间及之后降低了侧滑误差。在公共真实车辆数据中，430参数的未约束修正器对滤波器名义刚度的故意偏移失去了大部分响应，而同样大小的正交修正器则保留了大部分响应，其侧滑误差略高于未修正滤波器。",
+      "authors": [
+        "Kyoungtae Ji",
+        "Dongyeol Won",
+        "Kyoungseok Han"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27586",
+      "tags": [
+        "地图/定位",
+        "安全/异常",
+        "仿真/数据"
+      ],
+      "title": "Sensitivity-Orthogonal Residual Learning for Adaptive Sideslip and Cornering Stiffness Estimation",
+      "title_zh": "自适应侧滑和转向刚度估计的灵敏度正交残差学习",
+      "url": "/daily/2026-10-21/#paper-2610-27586"
+    },
+    {
+      "abstract": "Omnidirectional cameras provide surround-view information, significantly overcoming the field-of-view constraints for traditional visual localization systems. However, existing localization systems fail to fully exploit the characteristics of omnidirectional cameras, struggling to deliver accurate and robust localization performance amidst scene content variations and illumination-induced appearance changes. In this work, we propose OmniVLoc, a surround-view localization system based on a topo-metric framework. By integrating state-of-the-art global place recognition and monocular depth estimation methods, we introduce a multi-constrained visual localization paradigm. By solving a scale-aware pose graph and performing precise spherical bundle adjustment, we accurately recover the metric-level pose for each query frame.Furthermore, a hierarchical verification mechanism is designed to filter out erroneous outputs across different stages, effectively bolstering the overall system robustness. Extensive experiments on both public and our custom datasets validate the superior accuracy and reliability of OmniVLoc. To benefit the community, our source code and dataset will be made publicly available upon publication.",
+      "abstract_zh": "全向摄像头提供了全景视图信息，显著克服了传统视觉定位系统的视野限制。然而，现有的定位系统未能充分利用全向摄像头的特性，在场景内容变化和光照引起的外观变化中，难以提供准确且稳健的定位性能。在本研究中，我们提出了OmniVLoc，一种基于拓扑度量框架的全景定位系统。通过整合最先进的全局位置识别和单目深度估计方法，我们引入了一种多约束视觉定位范式。通过求解一个考虑尺度的姿态图并进行精确的球面束调整，我们准确恢复了每个查询帧的度量级姿态。此外，我们设计了一个分层验证机制，以过滤不同阶段的错误输出，有效增强了整体系统的稳健性。在公共数据集和我们自定义数据集上的大量实验验证了OmniVLoc的卓越准确性和可靠性。为了造福学术界，我们的源代码和数据集将在发表后公开。",
+      "authors": [
+        "Zhuo Yu",
+        "Shuyang Zhang",
+        "Huihua Zhu",
+        "Wenjia Ouyang",
+        "Zuo Zuo",
+        "Jianhao Jiao",
+        "Yilong Zhu",
+        "Xiaopin Zhong",
+        "Zongze Wu"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27522",
+      "tags": [
+        "地图/定位",
+        "深度/几何",
+        "感知"
+      ],
+      "title": "OmniVLoc: Topo-metric Visual Localization for Omnidirectional Cameras",
+      "title_zh": "OmniVLoc：全景视觉定位系统用于全向摄像头",
+      "url": "/daily/2026-10-21/#paper-2610-27522"
+    },
+    {
+      "abstract": "The Jetson AGX Orin is a common computer for robots and vehicles, yet measured accuracy, speed and energy of current depth estimators on it are hard to find. We benchmark nine model families as of October 2026: the monocular Depth Anything V2 and 3, Depth Pro, MoGe-2, Metric3D v2 and UniDepth V2, and the stereo methods libSGM, NVIDIA ESS and Fast-FoundationStereo. Every method runs on the Orin as a TensorRT FP16 engine or native CUDA code at up to three input sizes, up to the full 5.7 MP, and is scored for metric accuracy against Middlebury 2014 ground truth (non-occluded pixels of the 10 scenes whose disparity stays below 256 px), GPU time, energy and licence. Stereo is far more accurate. At 30 fps, NVIDIA's ESS reaches 0.70% AbsRel in 8.6 ms and libSGM 0.73% in 25 ms; with more compute, Fast-FoundationStereo reaches 0.33%. The best monocular models reach 12% with the true focal length (Depth Anything 3 Metric-L in 33 ms, Depth Pro in 803 ms), and 3.8-4.0% only with an oracle per-image scale (MoGe-2-L, UniDepth V2-B, Metric3D v2-L). Stereo error falls as the input resolution grows; no monocular model improves, and the metric scale of most drifts away from the truth outside their training resolution. At depth discontinuities, which AbsRel barely registers, the monocular models scatter 17-46% of the edge points between foreground and background, learned stereo 2-9% and libSGM at full resolution 1%. We give recommendations per frame-rate budget and release all code, per-scene results and engine build scripts.",
+      "abstract_zh": "Jetson AGX Orin是机器人和车辆常用的计算机，但关于当前深度估计器在其上的测量精度、速度和能耗的数据较为稀缺。我们对截至2026年10月的九个模型家族进行了基准测试：单目方法Depth Anything V2和V3、Depth Pro、MoGe-2、Metric3D v2和UniDepth V2，以及立体方法libSGM、NVIDIA ESS和Fast-FoundationStereo。每种方法在Orin上以TensorRT FP16引擎或本地CUDA代码运行，支持最多三种输入尺寸，最高可达完整的5.7 MP，并根据Middlebury 2014的真实值（10个场景中视差低于256 px的非遮挡像素）对度量精度、GPU时间、能耗和许可证进行评分。立体方法的精度远高于单目方法。在30 fps下，NVIDIA的ESS在8.6毫秒内达到0.70%的绝对相对误差（AbsRel），libSGM在25毫秒内达到0.73%；通过更多计算，Fast-FoundationStereo达到0.33%。最佳的单目模型在真实焦距下达到12%（Depth Anything 3 Metric-L在33毫秒内，Depth Pro在803毫秒内），而仅在每幅图像的标定下（MoGe-2-L、UniDepth V2-B、Metric3D v2-L）则仅达到3.8-4.0%。随着输入分辨率的提高，立体误差降低；而单目模型没有改善，大多数模型的度量标定在其训练分辨率之外偏离真实值。在深度不连续性处，绝对相对误差几乎没有记录，单目模型在前景和背景之间散布了17-46%的边缘点，学习到的立体模型为2-9%，而libSGM在全分辨率下为1%。我们根据帧率预算提供了建议，并发布了所有代码、每场景结果和引擎构建脚本。",
+      "authors": [
+        "Leaf Jiang"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27199",
+      "tags": [
+        "深度/几何",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "Which Depth Estimator for Jetson AGX Orin? A 2026 Benchmark of Monocular and Stereo Methods",
+      "title_zh": "Jetson AGX Orin的深度估计器选择？2026年单目与立体方法的基准测试",
+      "url": "/daily/2026-10-21/#paper-2610-27199"
+    },
+    {
+      "abstract": "Autonomous Unmanned Aerial Vehicle (UAV) navigation in urban environments requires precise pose estimation. Because Global Navigation Satellite System (GNSS) signals are often unreliable in cities, visual localization serves as a crucial complement. Within this domain, textureless Level-of-Detail (LoD) city models provide a lightweight and privacy-preserving substitute for heavy 3D textured meshes. However, localizing against abstract geometry is challenging. Existing pipelines typically score 2D silhouette overlaps, which can suffer from severe geometric ambiguities. We present MatchCityLoc, a framework that shifts this paradigm to direct feature matching from a noisy 6-DoF pose prior. By extracting surface normals from the query image using a zero-shot foundation model and matching them against rendered LoD normals, we establish explicit 3D-to-2D correspondences. This enables a Perspective-n-Point (PnP) pose solve, which we iteratively refine through a render-and-match loop. Experiments demonstrate strong pose recall and accurate translation and rotation among the evaluated off-the-shelf LoD-based methods with very few renderings. By bridging the modality gap between aerial imagery and texture-free geometry, MatchCityLoc enables accurate localization using lightweight, privacy-preserving city models.",
+      "abstract_zh": "在城市环境中，无人驾驶飞行器（UAV）的自主导航需要精确的姿态估计。由于全球导航卫星系统（GNSS）信号在城市中往往不可靠，视觉定位成为了一个重要的补充。在这一领域，无纹理的细节层次（LoD）城市模型提供了一种轻量且保护隐私的替代方案，取代了重型的3D纹理网格。然而，针对抽象几何体的定位是具有挑战性的。现有的处理流程通常通过评分2D轮廓重叠来进行定位，但这可能会遭遇严重的几何模糊性。我们提出了MatchCityLoc，一个将这一范式转变为从噪声6自由度（6-DoF）姿态先验进行直接特征匹配的框架。通过使用零样本基础模型从查询图像中提取表面法线，并将其与渲染的LoD法线进行匹配，我们建立了明确的3D到2D的对应关系。这使得我们能够进行透视-n-点（PnP）姿态求解，并通过渲染和匹配循环进行迭代优化。实验表明，在评估的现成LoD方法中，姿态回忆强，平移和旋转准确，且渲染次数非常少。通过弥合空中图像与无纹理几何之间的模态差距，MatchCityLoc实现了使用轻量、保护隐私的城市模型进行准确定位。",
+      "authors": [
+        "Oussema Dhaouadi",
+        "Zuria Bauer",
+        "Johannes Michael Meier",
+        "Marc Pollefeys",
+        "Daniel Cremers",
+        "Olaf Wysocki"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.27110",
+      "tags": [
+        "深度/几何",
+        "地图/定位"
+      ],
+      "title": "MatchCityLoc: Aerial Localization in LoD City Models via Surface Normal Matching",
+      "title_zh": "MatchCityLoc：通过表面法线匹配实现城市模型中的空中定位",
+      "url": "/daily/2026-10-21/#paper-2610-27110"
+    },
+    {
+      "abstract": "Controllable object insertion provides a targeted approach to augmenting object detection datasets that require category--count fidelity, annotation alignment, and source-content preservation beyond visual realism. Several approaches have been proposed to address this grand challenge, but most suffer from different constraints in precise category--count requests and visual consistency, limited coordination across categories and instances, and poor localization of multiple objects of specific category and count. We design SceneP2F, a two-stage trainable framework that connects scene-aware joint planning with layout-aligned generation leveraging explicit instance-level layouts. SceneP2F consists of two novel designs. The first is ScenePlan which allocates one class-labeled query per requested instance, jointly predicts scene-compatible object centers, and separately estimates box sizes conditioned on the planned centers and scene context. The second is SceneAlign-Fill which combines geometry- and appearance-aware conditioning, box--class-guided regional attention, and an annotation-region-weighted flow-matching objective to render the planned objects while limiting unintended changes to source content. Extensive experiments on three challenging benchmarks UAVDT, VisDrone, and BDD100K show that SceneP2F outperforms representative general-purpose editors and object-insertion methods consistently, demonstrating the value of coordinating instance-level planning and generation for category-targeted detection augmentation.",
+      "abstract_zh": "可控对象插入提供了一种针对性的方式来增强需要类别-数量保真、注释对齐和源内容保留的目标检测数据集，超越了视觉真实感。虽然已经提出了几种方法来应对这一重大挑战，但大多数方法在精确的类别-数量请求和视觉一致性方面存在不同的限制，跨类别和实例的协调有限，以及特定类别和数量的多个对象的定位效果较差。我们设计了SceneP2F，这是一个两阶段可训练框架，结合了场景感知的联合规划与利用显式实例级布局的布局对齐生成。SceneP2F由两个新颖的设计组成。第一个是ScenePlan，它为每个请求的实例分配一个类别标记的查询，联合预测场景兼容的对象中心，并根据规划的中心和场景上下文单独估计框的大小。第二个是SceneAlign-Fill，它结合了几何和外观感知的条件、框-类别引导的区域注意力，以及注释区域加权的流匹配目标，以渲染规划的对象，同时限制对源内容的意外更改。在三个具有挑战性的基准测试UAVDT、VisDrone和BDD100K上的广泛实验表明，SceneP2F始终优于代表性的通用编辑器和对象插入方法，展示了协调实例级规划和生成在类别目标检测增强中的价值。",
+      "authors": [
+        "Jiyang Huang",
+        "Tianwei Zhang",
+        "Xiaoqin Zhang",
+        "Ling Shao",
+        "Shijian Lu"
+      ],
+      "date": "2026-10-21",
+      "id": "2610.26922",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "Controllable Multi-Object Insertion for Detection Data Augmentation",
+      "title_zh": "可控多对象插入用于检测数据增强",
+      "url": "/daily/2026-10-21/#paper-2610-26922"
+    },
     {
       "abstract": "Robust scene understanding under varying environmental conditions is essential for safe autonomous driving. While cameras and LiDAR degrade in adverse weather and poor lighting, Frequency-Modulated Continuous-Wave (FMCW) spinning radar provides dependable 360{\\deg} perception at extended ranges with minimal compute cost. However, real-time FMCW radar scene understanding is challenging due to complex signal returns, limited temporal resolution, and scarce annotated datasets. We introduce StreamRPS, a novel framework for streaming FMCW radar panoptic segmentation, comprising an automated label-generation pipeline via LiDAR scene completion and a real-time streaming network for semantic and panoptic segmentation. Our encoder-decoder streaming architecture comprises a radar-specific hierarchical Transformer encoder and task-specific decoders for semantic or panoptic prediction. Our encoder introduces a stem to capture range-dependent signatures, anisotropic patch embeddings to preserve angular resolution, and axial polar attention to separately model the periodic azimuth and bounded range axes. We further introduce azimuth roll rotation augmentation to simulate ego-vehicle rotation during training. Comprehensive experiments on the SAX and BOREAS datasets validate both our auto-labeling methodology and streaming segmentation network against established baselines. We outperform the strongest baseline by at least 1.4pp while processing sectors at over 400 FPS in a 4-sector streaming setting. We additionally provide manual annotations for 100 SAX radar scans, enabling independent evaluation of the entire framework.",
       "abstract_zh": "在不同环境条件下进行稳健的场景理解对安全的自动驾驶至关重要。尽管在恶劣天气和光照不足的情况下，摄像头和激光雷达的性能会下降，但频率调制连续波（Frequency-Modulated Continuous-Wave, FMCW）旋转雷达能够以最低的计算成本提供可靠的360°感知，且有效范围更广。然而，由于复杂的信号返回、有限的时间分辨率和稀缺的标注数据集，实时FMCW雷达场景理解面临挑战。我们提出了StreamRPS，一个用于流式FMCW雷达全景分割的新框架，包含通过激光雷达场景补全实现的自动标签生成管道，以及用于语义和全景分割的实时流式网络。我们的编码-解码流式架构包括一个特定于雷达的层次化Transformer编码器和用于语义或全景预测的任务特定解码器。我们的编码器引入了一个用于捕捉与距离相关的特征的干，非各向同性的补丁嵌入以保持角度分辨率，以及轴向极坐标注意力以分别建模周期性方位和有限范围轴。我们进一步引入方位滚转旋转增强，以在训练过程中模拟自车的旋转。在SAX和BOREAS数据集上的全面实验验证了我们的自动标注方法和流式分割网络相较于已建立基线的有效性。在400 FPS以上的4扇区流式设置中，我们的性能至少超过最强基线1.4个百分点。此外，我们还为100个SAX雷达扫描提供了手动标注，以便对整个框架进行独立评估。",

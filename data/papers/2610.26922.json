@@ -1,0 +1,49 @@
+{
+  "abstract": "Controllable object insertion provides a targeted approach to augmenting object detection datasets that require category--count fidelity, annotation alignment, and source-content preservation beyond visual realism. Several approaches have been proposed to address this grand challenge, but most suffer from different constraints in precise category--count requests and visual consistency, limited coordination across categories and instances, and poor localization of multiple objects of specific category and count. We design SceneP2F, a two-stage trainable framework that connects scene-aware joint planning with layout-aligned generation leveraging explicit instance-level layouts. SceneP2F consists of two novel designs. The first is ScenePlan which allocates one class-labeled query per requested instance, jointly predicts scene-compatible object centers, and separately estimates box sizes conditioned on the planned centers and scene context. The second is SceneAlign-Fill which combines geometry- and appearance-aware conditioning, box--class-guided regional attention, and an annotation-region-weighted flow-matching objective to render the planned objects while limiting unintended changes to source content. Extensive experiments on three challenging benchmarks UAVDT, VisDrone, and BDD100K show that SceneP2F outperforms representative general-purpose editors and object-insertion methods consistently, demonstrating the value of coordinating instance-level planning and generation for category-targeted detection augmentation.",
+  "abstract_zh": "可控对象插入提供了一种针对性的方式来增强需要类别-数量保真、注释对齐和源内容保留的目标检测数据集，超越了视觉真实感。虽然已经提出了几种方法来应对这一重大挑战，但大多数方法在精确的类别-数量请求和视觉一致性方面存在不同的限制，跨类别和实例的协调有限，以及特定类别和数量的多个对象的定位效果较差。我们设计了SceneP2F，这是一个两阶段可训练框架，结合了场景感知的联合规划与利用显式实例级布局的布局对齐生成。SceneP2F由两个新颖的设计组成。第一个是ScenePlan，它为每个请求的实例分配一个类别标记的查询，联合预测场景兼容的对象中心，并根据规划的中心和场景上下文单独估计框的大小。第二个是SceneAlign-Fill，它结合了几何和外观感知的条件、框-类别引导的区域注意力，以及注释区域加权的流匹配目标，以渲染规划的对象，同时限制对源内容的意外更改。在三个具有挑战性的基准测试UAVDT、VisDrone和BDD100K上的广泛实验表明，SceneP2F始终优于代表性的通用编辑器和对象插入方法，展示了协调实例级规划和生成在类别目标检测增强中的价值。",
+  "arxiv_id": "2610.26922",
+  "arxiv_url": "https://arxiv.org/abs/2610.26922v1",
+  "authors": [
+    "Jiyang Huang",
+    "Tianwei Zhang",
+    "Xiaoqin Zhang",
+    "Ling Shao",
+    "Shijian Lu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-26922",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.522435+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.26922v1",
+  "published_at": "2026-10-17T08:23:25Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "bdd100k"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.26922v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "Controllable Multi-Object Insertion for Detection Data Augmentation",
+  "title_zh": "可控多对象插入用于检测数据增强",
+  "translation_url": "https://hjfy.top/arxiv/2610.26922"
+}

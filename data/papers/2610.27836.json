@@ -1,0 +1,56 @@
+{
+  "abstract": "Car-following (CF) models is a fundamental component of microscopic traffic simulation and underpin the analysis of collective traffic dynamics, while its modeling becomes more challenging due to diverse human driving behaviors and the increasing presence of automated vehicle. Analytical CF models offer interpretable representations of longitudinal vehicle interactions, but their prescribed functional structures may limit the representation of heterogeneous driving behavior. This study proposes an agent-centered, physics-aware framework for the empirical discovery of CF laws from multi-source trajectory data. The framework iteratively combines agent-guided hypothesis generation, informed by traffic flow knowledge and state-dependent reconstruction errors, with evolutionary symbolic search and physics-aware multi-objective evaluation. Using NGSIM US-101, highD, and exiD, the framework discovers the Adaptive Equilibrium Response Model (AERM), which couples state-dependent relative-speed response with spacing-dependent equilibrium-speed restoration. AERM admits analytical equilibrium speed-spacing and flow-density relationships; its stability conditions are derived for the zero-delay formulation, and platoon simulations examine disturbance propagation. Evaluated against seven classical CF models on Shanghai naturalistic driving data, NGSIM I-80, and Waymo trajectories, AERM attains the lowest spacing and speed reconstruction errors under trajectory-specific calibration, reducing spacing RMSE by 9.11%, 7.59%, and 21.73% relative to the strongest baselines, and remains competitive under dataset-level shared parameters. These results demonstrate the fitting flexibility and analytical tractability of the discovered CF law, providing an interpretable basis for microscopic traffic simulation.",
+  "abstract_zh": "跟车（CF）模型是微观交通仿真的基本组成部分，并支撑着集体交通动态的分析。然而，由于人类驾驶行为的多样性和自动驾驶车辆的日益普及，其建模变得更加具有挑战性。分析性CF模型提供了对纵向车辆交互的可解释表示，但其规定的功能结构可能限制了对异质驾驶行为的表征。本研究提出了一种以代理为中心、考虑物理规律的框架，用于从多源轨迹数据中经验性地发现CF规律。该框架迭代地结合了代理引导的假设生成，基于交通流知识和状态依赖重构误差进行指导，以及进化符号搜索和物理意识的多目标评估。利用NGSIM US-101、highD和exiD数据集，该框架发现了自适应平衡响应模型（AERM），该模型将状态依赖的相对速度响应与间距依赖的平衡速度恢复相结合。AERM允许解析的平衡速度-间距和流量-密度关系；其稳定性条件为零延迟公式推导而来，并通过车队仿真考察了干扰传播。与七个经典CF模型在上海自然驾驶数据、NGSIM I-80和Waymo轨迹上的评估结果显示，AERM在轨迹特定校准下实现了最低的间距和速度重构误差，相对于最强基线分别减少了9.11%、7.59%和21.73%的间距均方根误差，并在数据集级共享参数下保持竞争力。这些结果展示了所发现的CF规律的拟合灵活性和解析可处理性，为微观交通仿真提供了可解释的基础。",
+  "arxiv_id": "2610.27836",
+  "arxiv_url": "https://arxiv.org/abs/2610.27836v1",
+  "authors": [
+    "Jiamei Xu",
+    "Jie Sun",
+    "Keshuang Tang",
+    "Jian Sun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-27836",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.487477+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.27836v1",
+  "published_at": "2026-10-20T08:25:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated vehicle",
+      "自动驾驶",
+      "driving",
+      "vehicle",
+      "car",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.27836v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划",
+      "深度/几何"
+    ]
+  },
+  "title": "Agentic discovery of interpretable car-following laws from multi-source trajectory data",
+  "title_zh": "基于多源轨迹数据的可解释跟车规律的主动发现",
+  "translation_url": "https://hjfy.top/arxiv/2610.27836"
+}

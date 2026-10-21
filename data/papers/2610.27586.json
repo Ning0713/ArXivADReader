@@ -1,0 +1,51 @@
+{
+  "abstract": "Online adaptation of the cornering stiffness keeps a model-based sideslip estimator valid as tires change, but competes with learned model correction for the same filter innovation. A corrector with enough parameters can absorb the innovation pattern that a stiffness change produces, and adaptation is suppressed while the fit improves. We propagate the stiffness sensitivities of the predicted measurements through the vehicle states and construct a corrector orthogonal to them. A null-space parameterization enforces the constraint without a penalty coefficient and preserves the static least-squares stiffness estimate on each identification segment. In full-vehicle simulation, the stiffness response of the unconstrained corrector declines as its parameter count grows, whereas the orthogonal corrector responds at least as fully as the uncorrected filter at all sizes and lowers sideslip error by 12.7% to 22.0%. In a simulated drive with a stiffness step, the orthogonal corrector adapts as quickly as the uncorrected filter and lowers sideslip error during and after the transient. On public real-vehicle data, the 430-parameter unconstrained corrector loses most of its response to deliberate offsets of the filter's nominal stiffness, whereas the orthogonal corrector of the same size retains most of it, with a sideslip error slightly above the uncorrected filter's.",
+  "abstract_zh": "在线适应转向刚度使基于模型的侧滑估计器在轮胎变化时保持有效，但与学习模型的修正在同一滤波创新上存在竞争。具有足够参数的修正器可以吸收刚度变化所产生的创新模式，而适应性在拟合改善的同时被抑制。我们通过车辆状态传播预测测量的刚度灵敏度，并构建一个与之正交的修正器。零空间参数化在不使用惩罚系数的情况下强制执行约束，并在每个识别段上保留静态最小二乘刚度估计。在全车仿真中，未约束修正器的刚度响应随着参数数量的增加而下降，而正交修正器在所有尺寸下的响应至少与未修正滤波器一样充分，并将侧滑误差降低了12.7%至22.0%。在具有刚度阶跃的模拟驾驶中，正交修正器的适应速度与未修正滤波器相当，并在瞬态期间及之后降低了侧滑误差。在公共真实车辆数据中，430参数的未约束修正器对滤波器名义刚度的故意偏移失去了大部分响应，而同样大小的正交修正器则保留了大部分响应，其侧滑误差略高于未修正滤波器。",
+  "arxiv_id": "2610.27586",
+  "arxiv_url": "https://arxiv.org/abs/2610.27586v1",
+  "authors": [
+    "Kyoungtae Ji",
+    "Dongyeol Won",
+    "Kyoungseok Han"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-27586",
+  "categories": [
+    "cs.RO",
+    "cs.LG",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.477718+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.27586v1",
+  "published_at": "2026-10-20T03:53:49Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.27586v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "本文面向车辆动态状态估计，提出灵敏度正交残差学习方法，避免学习式模型修正器掩盖轮胎侧偏刚度变化，使估计器能够同时保持刚度在线自适应能力并降低车辆侧滑估计误差。方法在整车仿真、刚度突变驾驶场景和真实车辆数据上得到验证，对自动驾驶车辆的稳定控制与状态感知具有直接价值。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "Sensitivity-Orthogonal Residual Learning for Adaptive Sideslip and Cornering Stiffness Estimation",
+  "title_zh": "自适应侧滑和转向刚度估计的灵敏度正交残差学习",
+  "translation_url": "https://hjfy.top/arxiv/2610.27586"
+}

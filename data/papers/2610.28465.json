@@ -1,0 +1,49 @@
+{
+  "abstract": "Lunar surface exploration increasingly relies on autonomous rovers that must perceive and traverse unstructured terrain under extreme illumination conditions. Near the lunar poles, low sun elevations produce long, high-contrast shadows that challenge stereo vision, terrain segmentation, and localization. Developing perception and navigation algorithms for these conditions requires large amounts of sensor data with accurate ground truth, which field campaigns and analog facilities can only provide at high cost and with limited variety. This paper presents MARE (Modular Autonomy and Rendering Environment), an open-source simulation suite for lunar rover perception and autonomy built on Unreal Engine 5 and ROS 2. MARE consists of three integrated components. Terrain Studio generates cratered and rocky lunar Digital Elevation Maps (DEMs) to build simulation scenes. A dedicated Unreal Engine project hosts two physics-based rovers with plugins for stereo, lidar, event, and Single-Photon Avalanche Diode (SPAD) cameras, streaming time-stamped sensor data and pixel-accurate ground truth. Lastly, a Guidance, Navigation, and Control (GNC) stack provides web-based mission control. Validation shows a mean Intersection over Union (IoU) of 0.79 between predicted and rendered shadows at low sun elevations, and stereo depth analysis verifies decreased pixel coverage in shadowed regions relative to sunlit terrain.",
+  "abstract_zh": "月球表面探索日益依赖于能够在极端照明条件下感知和穿越非结构化地形的自主探测车。在月球极地附近，低太阳高度产生长而高对比度的阴影，这对立体视觉、地形分割和定位提出了挑战。为这些条件开发感知和导航算法需要大量带有准确真实数据的传感器数据，而野外考察和模拟设施只能以高成本和有限的多样性提供这些数据。本文介绍了MARE（模块化自主与渲染环境），这是一个基于Unreal Engine 5和ROS 2构建的开源月球探测车感知与自主导航模拟套件。MARE由三个集成组件组成。地形工作室生成带有陨石坑和岩石的月球数字高程图（DEMs），用于构建模拟场景。一个专用的Unreal Engine项目托管两个基于物理的探测车，配备立体、激光雷达、事件和单光子雪崩二极管（SPAD）相机的插件，实时传输带时间戳的传感器数据和像素级准确的真实数据。最后，一个引导、导航和控制（GNC）堆栈提供基于网络的任务控制。验证结果显示，在低太阳高度下，预测阴影与渲染阴影之间的平均交并比（IoU）为0.79，立体深度分析验证了阴影区域相对于阳光照射地形的像素覆盖减少。",
+  "arxiv_id": "2610.28465",
+  "arxiv_url": "https://arxiv.org/abs/2610.28465v1",
+  "authors": [
+    "Raúl Castilla-Arquillo",
+    "Miguel Olivares-Mendez"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-28465",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.508991+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.28465v1",
+  "published_at": "2026-10-20T16:18:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "intersection",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.28465v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "MARE: An Open-Source Lunar Rover Simulator with Shadow Ground Truth for Perception and Autonomy",
+  "title_zh": "MARE：一个具有阴影真实数据的开源月球探测车模拟器，用于感知与自主导航",
+  "translation_url": "https://hjfy.top/arxiv/2610.28465"
+}

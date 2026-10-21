@@ -1,0 +1,57 @@
+{
+  "abstract": "Omnidirectional cameras provide surround-view information, significantly overcoming the field-of-view constraints for traditional visual localization systems. However, existing localization systems fail to fully exploit the characteristics of omnidirectional cameras, struggling to deliver accurate and robust localization performance amidst scene content variations and illumination-induced appearance changes. In this work, we propose OmniVLoc, a surround-view localization system based on a topo-metric framework. By integrating state-of-the-art global place recognition and monocular depth estimation methods, we introduce a multi-constrained visual localization paradigm. By solving a scale-aware pose graph and performing precise spherical bundle adjustment, we accurately recover the metric-level pose for each query frame.Furthermore, a hierarchical verification mechanism is designed to filter out erroneous outputs across different stages, effectively bolstering the overall system robustness. Extensive experiments on both public and our custom datasets validate the superior accuracy and reliability of OmniVLoc. To benefit the community, our source code and dataset will be made publicly available upon publication.",
+  "abstract_zh": "全向摄像头提供了全景视图信息，显著克服了传统视觉定位系统的视野限制。然而，现有的定位系统未能充分利用全向摄像头的特性，在场景内容变化和光照引起的外观变化中，难以提供准确且稳健的定位性能。在本研究中，我们提出了OmniVLoc，一种基于拓扑度量框架的全景定位系统。通过整合最先进的全局位置识别和单目深度估计方法，我们引入了一种多约束视觉定位范式。通过求解一个考虑尺度的姿态图并进行精确的球面束调整，我们准确恢复了每个查询帧的度量级姿态。此外，我们设计了一个分层验证机制，以过滤不同阶段的错误输出，有效增强了整体系统的稳健性。在公共数据集和我们自定义数据集上的大量实验验证了OmniVLoc的卓越准确性和可靠性。为了造福学术界，我们的源代码和数据集将在发表后公开。",
+  "arxiv_id": "2610.27522",
+  "arxiv_url": "https://arxiv.org/abs/2610.27522v1",
+  "authors": [
+    "Zhuo Yu",
+    "Shuyang Zhang",
+    "Huihua Zhu",
+    "Wenjia Ouyang",
+    "Zuo Zuo",
+    "Jianhao Jiao",
+    "Yilong Zhu",
+    "Xiaopin Zhong",
+    "Zongze Wu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-21#paper-2610-27522",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-21T09:46:49.547094+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.27522v1",
+  "published_at": "2026-10-20T02:35:56Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "visual localization",
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-10-21"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.27522v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-21"
+  },
+  "summary_zh": "提出面向全向相机的拓扑度量视觉定位系统，融合地点识别和单目深度估计，并利用尺度感知姿态图、球面束调整及分层验证实现稳健的度量级位姿估计，可用于自动驾驶车辆的环视视觉定位。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "深度/几何",
+      "感知"
+    ]
+  },
+  "title": "OmniVLoc: Topo-metric Visual Localization for Omnidirectional Cameras",
+  "title_zh": "OmniVLoc：全景视觉定位系统用于全向摄像头",
+  "translation_url": "https://hjfy.top/arxiv/2610.27522"
+}
