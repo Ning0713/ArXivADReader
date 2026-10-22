@@ -1,0 +1,60 @@
+{
+  "abstract": "Instruction-guided video generative models offer a scalable solution for stress-testing autonomous driving systems by simulating diverse environmental conditions. However, driving scenes operate within a dense Operational Design Domain (ODD) governed by strict traffic semantics. When applied to global driving-condition edits, general-purpose instruction-guided video editors frequently corrupt these semantics, leading to structural hallucinations and ``temporal shock.'' This work distills and protects traffic semantics during video editing at three levels. First, we construct a hybrid dataset by combining temporally aligned real-world videos with synthetic edits, balancing foundational scene structure with unambiguous appearance signals. Second, during training, we adapt advantage conditioning from offline reinforcement learning to align the model using dense rewards. We extract dense, pixel-level rewards from the hybrid data to serve as a localized signal and actively steer generation toward structurally reliable pixels. Finally, our model mitigates temporal shock by introducing thinking frames, a transition mechanism that seamlessly reconciles static image conditioning with dynamic video context. Extensive experiments demonstrate that our method prevents the corruption of multi-actor dynamics, establishing state-of-the-art spatiotemporal consistency, yielding consistent user preference (39% relative improvement in content preservation and 12% in temporal consistency), and achieving a significant 5% gain in downstream road line segmentation and 7% gain in downstream multi-object detection.",
+  "abstract_zh": "基于指令引导的视频生成模型为通过模拟多样化环境条件来压力测试自动驾驶系统提供了一种可扩展的解决方案。然而，驾驶场景在严格的交通语义下运作，属于密集的操作设计域（Operational Design Domain, ODD）。当应用于全球驾驶条件编辑时，通用的指令引导视频编辑器常常会破坏这些语义，导致结构性幻觉和“时间冲击”。本研究在视频编辑的三个层面上提炼并保护交通语义。首先，我们通过结合时间对齐的真实视频与合成编辑构建了一个混合数据集，平衡了基础场景结构与明确的外观信号。其次，在训练过程中，我们将离线强化学习中的优势条件适配到模型中，以使用密集奖励进行对齐。我们从混合数据中提取密集的像素级奖励，作为局部信号，积极引导生成朝向结构可靠的像素。最后，我们的模型通过引入思维帧（thinking frames）来减轻时间冲击，这是一种过渡机制，能够无缝地将静态图像条件与动态视频上下文调和。大量实验表明，我们的方法有效防止了多参与者动态的破坏，建立了最先进的时空一致性，用户偏好一致性显著提高（内容保留相对改善39%，时间一致性改善12%），并在下游道路线分割和多目标检测中分别实现了5%和7%的显著提升。",
+  "arxiv_id": "2610.28829",
+  "arxiv_url": "https://arxiv.org/abs/2610.28829v1",
+  "authors": [
+    "Mauricio Soroco",
+    "Yuqiu Liu",
+    "Zaid Tasneem",
+    "Francesco Pittaluga",
+    "Abhishek Aich",
+    "Wuyang Chen",
+    "Manmohan Chandraker",
+    "Ziyu Jiang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-22#paper-2610-28829",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-22T09:47:09.768281+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.28829v1",
+  "published_at": "2026-10-20T18:51:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-10-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.28829v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "世界模型/生成"
+    ]
+  },
+  "title": "HorizonComposer: Spatiotemporally Consistent Driving Video Editing with Enriched Traffic Semantics",
+  "title_zh": "HorizonComposer：具有丰富交通语义的时空一致性驾驶视频编辑",
+  "translation_url": "https://hjfy.top/arxiv/2610.28829"
+}

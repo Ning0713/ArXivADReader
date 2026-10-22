@@ -1,0 +1,58 @@
+{
+  "abstract": "The scarcity of high-quality annotated visual data remains a critical bottleneck for autonomous-driving perception. Simulators provide training data at scale, but the limited realism of synthetic videos compromises perception performance in real-world applications. To address this limitation, we propose NeuralSRender, a sim-to-real video translation framework that enhances the photorealism of synthetic videos while maintaining geometric consistency with the source scenes. Built on a pretrained video diffusion transformer (DiT), NeuralSRender uses a lightweight projector to inject geometric and material priors from G-buffers, and LoRA enables parameter-efficient adaptation. The model is trained in two stages: it first learns G-buffer conditioning from synthetic videos with accurate G-buffers, then adapts to real-world appearance using real videos with estimated G-buffers. During the second stage, an additional LoRA module is trained while the projector and first-stage LoRA remain frozen to reduce interference from estimation noise. NeuralSRender introduces only 1.45\\% parameter overhead and can be trained on consumer-grade GPUs with 24 GB of memory. To support training and evaluation, we introduce GenReal, a large-scale driving video dataset comprising synthetic and real-world videos with corresponding G-buffers. Experiments demonstrate improved photorealism with competitive geometric consistency. Training perception models on our translated videos instead of raw simulator renders improves detection $\\mathrm{AP}_{50}$ on nuImages from 35.1 to 40.6 and segmentation mIoU on Cityscapes from 32.4 to 40.8. Our code, data, and model weights are available at: https://github.com/WHU-USI3DV/NeuralSRender.",
+  "abstract_zh": "高质量标注视觉数据的稀缺仍然是自动驾驶感知的一个关键瓶颈。仿真器提供了大规模的训练数据，但合成视频的有限真实感妨碍了其在现实应用中的感知性能。为了解决这一限制，我们提出了NeuralSRender，一个从仿真到现实的视频翻译框架，旨在增强合成视频的照片真实感，同时保持与源场景的几何一致性。NeuralSRender基于预训练的视频扩散变换器（DiT），使用轻量级投影器从G-Buffer中注入几何和材料先验，并通过LoRA实现参数高效适应。该模型分两个阶段进行训练：首先从具有准确G-Buffer的合成视频中学习G-Buffer条件，然后使用具有估计G-Buffer的真实视频适应现实外观。在第二阶段，训练一个额外的LoRA模块，同时保持投影器和第一阶段的LoRA不变，以减少估计噪声的干扰。NeuralSRender仅引入1.45\\%的参数开销，并且可以在具有24GB内存的消费级GPU上进行训练。为了支持训练和评估，我们引入了GenReal，一个大规模的驾驶视频数据集，包含合成和真实世界的视频及其对应的G-Buffer。实验结果表明，照片真实感得到了改善，同时几何一致性具有竞争力。在我们的翻译视频上训练感知模型，而不是原始仿真器渲染，能够将nuImages上的检测$ ext{AP}_{50}$从35.1提高到40.6，将Cityscapes上的分割mIoU从32.4提高到40.8。我们的代码、数据和模型权重可在以下网址获取：https://github.com/WHU-USI3DV/NeuralSRender。",
+  "arxiv_id": "2610.29200",
+  "arxiv_url": "https://arxiv.org/abs/2610.29200v1",
+  "authors": [
+    "Yipeng Lu",
+    "Youqi Liao",
+    "Zhenyu Wang",
+    "Yuning Peng",
+    "Zhen Dong"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-22#paper-2610-29200",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-22T09:47:09.781762+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.29200v1",
+  "published_at": "2026-10-21T04:45:19Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving perception",
+      "自动驾驶",
+      "cityscapes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "sim-to-real",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 95
+  },
+  "seen_dates": [
+    "2026-10-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.29200v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "NeuralSRender: G-Buffer Guided Video Diffusion for Sim-to-Real Rendering",
+  "title_zh": "NeuralSRender：基于G-Buffer引导的视频扩散用于从仿真到现实的渲染",
+  "translation_url": "https://hjfy.top/arxiv/2610.29200"
+}

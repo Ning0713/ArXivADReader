@@ -1,0 +1,51 @@
+{
+  "abstract": "Object detection models for autonomous driving commonly experience substantial performance drops when deployed under adverse weather due to the domain shift between training data and real-world operating conditions. This degradation is especially evident when models trained on clear-weather images encounter foggy environments with reduced visibility and contrast. To address this challenge, we introduce FogTTA, an online test-time adaptation framework designed to improve the robustness of Transformer-based object detectors in fog. Using RF-DETR as the underlying object detector, FogTTA enables real-time adaptation to the streaming target domain without requiring source data or retraining. The framework follows a teacher-student design, where the deployed model serves as the teacher and generates pseudo labels from weakly augmented target inputs. These predictions are subsequently refined through non-maximum suppression and confidence filtering. The student model then learns from strongly augmented target sample using the Varifocal loss to mitigate pseudo-label noise. The teacher is updated via exponential moving averaging to ensure stable and continuous adaptation. Experiments show that FogTTA outperforms prior baselines, delivering improved detection accuracy and stability while maintaining real-time performance.",
+  "abstract_zh": "自主驾驶的物体检测模型在恶劣天气条件下部署时，通常会因训练数据与实际操作条件之间的领域转移而经历显著的性能下降。这种性能退化在模型在清晰天气图像上训练后遇到能见度和对比度降低的雾天环境时尤为明显。为了解决这一挑战，我们提出了FogTTA，一种在线测试时适应框架，旨在提高变换器基础物体检测器在雾天的鲁棒性。以RF-DETR作为基础物体检测器，FogTTA能够实时适应流式目标领域，而无需源数据或重新训练。该框架采用教师-学生设计，其中部署的模型作为教师，从弱增强的目标输入生成伪标签。这些预测随后通过非极大值抑制和置信度过滤进行精炼。学生模型则利用Varifocal损失从强增强的目标样本中学习，以减轻伪标签噪声。教师通过指数移动平均进行更新，以确保稳定和持续的适应。实验表明，FogTTA在检测准确性和稳定性方面优于先前的基线，同时保持实时性能。",
+  "arxiv_id": "2610.29618",
+  "arxiv_url": "https://arxiv.org/abs/2610.29618v1",
+  "authors": [
+    "Ali Abedi",
+    "Q. M. Jonathan Wu",
+    "Ning Zhang",
+    "Shiqi Tian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-22#paper-2610-29618",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-22T09:47:09.798140+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.29618v1",
+  "published_at": "2026-10-21T11:57:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-10-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.29618v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "FogTTA: Online Test-Time Adaptation for Robust Transformer-based Object Detection in Foggy Weather",
+  "title_zh": "FogTTA：用于雾天鲁棒性变换器基础物体检测的在线测试时适应",
+  "translation_url": "https://hjfy.top/arxiv/2610.29618"
+}

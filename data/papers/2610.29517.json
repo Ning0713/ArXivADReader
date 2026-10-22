@@ -1,0 +1,54 @@
+{
+  "abstract": "High-fidelity 4D physical simulation requires accurate physical parameter assignments that align with diverse material properties. Previous methods struggle with critical bottlenecks: they either rely on computationally intensive per-scene optimization or predict parameters from purely visual inputs. The latter suffers from inherent ambiguity, e.g., the inability to distinguish the stiffness of rubber from its appearance alone. To bridge this gap, we propose AutoPhyX, a text-conditioned framework for predicting spatially-varying physical properties. Since training robust feed-forward models requires fine-grained supervision, we first introduce a novel part-controllable data generation pipeline that decomposes complex 3D assets into semantically distinct components and pairs them with physically plausible, diverse parameters and corresponding text descriptions. Leveraging this dataset, AutoPhyX employs a cross-modal modulation mechanism where text features dynamically modulate visual features for precise physical grounding. By formulating property prediction within a voxel field, AutoPhyX ensures compatibility with diverse 3D representations, including meshes, point clouds, Gaussian Splatting, and NeRF. Experiments demonstrate that our method enables physically plausible, text-driven parameter assignment in a single forward pass. It achieves high accuracy and robust generalization to in-the-wild objects, paving the way for future physics-intensive embodied and robotic applications.",
+  "abstract_zh": "高保真度的四维物理仿真需要与多样化材料属性相一致的准确物理参数分配。以往的方法面临关键瓶颈：它们要么依赖于计算密集型的逐场景优化，要么仅从视觉输入预测参数。后者存在固有的模糊性，例如，仅凭外观无法区分橡胶的刚度。为了解决这一问题，我们提出了AutoPhyX，一个用于预测空间变化物理属性的文本条件框架。由于训练稳健的前馈模型需要细粒度的监督，我们首先引入了一种新颖的部件可控数据生成管道，该管道将复杂的三维资产分解为语义上不同的组件，并将其与物理上合理的多样化参数及相应的文本描述配对。利用该数据集，AutoPhyX采用了一种跨模态调制机制，其中文本特征动态调制视觉特征，以实现精确的物理基础。通过在体素场中制定属性预测，AutoPhyX确保与多种三维表示方式的兼容性，包括网格、点云、高斯溅射和神经辐射场（NeRF）。实验表明，我们的方法能够在单次前向传递中实现物理上合理的、以文本驱动的参数分配。它在准确性和对实际物体的稳健泛化方面表现出色，为未来物理密集型的具身和机器人应用铺平了道路。",
+  "arxiv_id": "2610.29517",
+  "arxiv_url": "https://arxiv.org/abs/2610.29517v1",
+  "authors": [
+    "Bei Huang",
+    "Yixin Chen",
+    "Hongbin Zha",
+    "Yuru Pei",
+    "Siyuan Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-22#paper-2610-29517",
+  "categories": [
+    "cs.CV",
+    "cs.GR"
+  ],
+  "fetched_at": "2026-10-22T09:47:09.793839+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.29517v1",
+  "published_at": "2026-10-21T10:05:23Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "道路",
+      "gaussian splatting",
+      "点云",
+      "robotic"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.29517v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "AutoPhyX: Automatic Text-Condition Physics Property Generation",
+  "title_zh": "AutoPhyX：自动文本条件物理属性生成",
+  "translation_url": "https://hjfy.top/arxiv/2610.29517"
+}

@@ -1,0 +1,62 @@
+{
+  "abstract": "We present WorldStream, an open-ended 3D world model with three simultaneous capabilities: it extends playable terrain beyond any pre-specified map, acts on open-ended language in the running world, and restores visited places with their edits. A hierarchical planner over a typed decision model emits structured decision state: Macro fixes settlement, ecology, transport, and hydrological structure across a group of tiles; Micro specializes that contract into tile semantics under measured terrain and accepted neighbor commitments. Deterministic local code compiles accepted plans into terrain, roads, settlements, vegetation, and entities. Streaming separates their reach: plans run ahead along the predicted corridor, compilation only where movement will soon need it, geometry behind the user released. One world record retains plans, seeds, object identities and mutable state, boundary commitments, and edits by attribute, revised as the user advances and edits; returning tiles recompile from it. The same record grounds interaction: the model acts on existing entities, including stateful NPCs that update as they act, edits the present region, or attaches intent to unplanned regions. Together they yield a world expanding under bounded budgets, connected across independently planned tiles, and interactive.",
+  "abstract_zh": "我们提出了WorldStream，这是一种开放式的3D世界模型，具备三种同时进行的能力：它扩展了可玩地形，超越任何预先指定的地图，能够在运行的世界中处理开放式语言，并恢复访问过的地点及其编辑。一个基于类型决策模型的层次规划器生成结构化的决策状态：宏观层面修复一组瓦片的定居点、生态、交通和水文结构；微观层面则专注于在测量地形和接受邻居承诺下收缩为瓦片语义。确定性局部代码将接受的计划编译为地形、道路、定居点、植被和实体。流媒体技术分离了它们的覆盖范围：计划沿着预测的走廊提前运行，编译仅在移动即将需要的地方进行，几何形状则在用户后方释放。一个世界记录保留计划、种子、对象身份和可变状态、边界承诺及按属性编辑，随着用户的推进和编辑而修订；返回的瓦片从中重新编译。同一记录支撑交互：模型作用于现有实体，包括在行动时更新的有状态非玩家角色（NPC），编辑当前区域，或将意图附加到未规划区域。它们共同产生一个在有限预算下扩展的世界，跨独立规划的瓦片相互连接，并具备交互性。",
+  "arxiv_id": "2610.28827",
+  "arxiv_url": "https://arxiv.org/abs/2610.28827v1",
+  "authors": [
+    "Xiaoxiao Ma",
+    "Weiyang Jin",
+    "Yanwen Ma",
+    "Haoran Li",
+    "Zhixiang Wei",
+    "Songchun Zhang",
+    "Yaowei Li",
+    "Junhao Zhuang",
+    "Zeyue Xue",
+    "Yuming Li",
+    "Zheming Fu",
+    "Haoyang Huang",
+    "Nan Duan",
+    "Feng Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-22#paper-2610-28827",
+  "categories": [
+    "cs.CV",
+    "cs.GR"
+  ],
+  "fetched_at": "2026-10-22T09:47:09.767885+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.28827v1",
+  "published_at": "2026-10-20T18:47:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "交通",
+      "道路",
+      "world model"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.28827v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "世界模型/生成"
+    ]
+  },
+  "title": "WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State",
+  "title_zh": "WorldStream：具有层次规划和持久状态的交互式3D世界流媒体",
+  "translation_url": "https://hjfy.top/arxiv/2610.28827"
+}

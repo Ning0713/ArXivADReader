@@ -1,0 +1,51 @@
+{
+  "abstract": "3D semantic occupancy prediction estimates voxel-wise occupancy and semantic labels throughout a scene. Our experiments reveal that conventional sparse transposed-convolution upsampling yields poorly differentiated voxel responses and that successive decoder layers discard previously correct semantic predictions. To address these issues, we present Feature-Diverse Upsampling and Memory-Aware Decoding for 3D Occupancy Prediction (FM-Occ), comprising two components. First, 3D Sparse Subvoxel Shuffle (3S) mitigates feature homogenization by constructing candidate child features in the channel dimension, jointly transforming and normalizing them, and then rearranging them onto a finer sparse grid with explicit feature-coordinate correspondence. Second, Entropy-Regulated Layer-wise Memory (ER-LM) retains semantic information across decoder layers by maintaining a layer-wise memory for each query through gated recurrent updates and using prediction entropy to regulate the historical information propagated to the next layer. During training, a class-weighted entropy loss Lcwe provides label-guided regularization for matched semantic queries. On SemanticKITTI, 3S increases the spatial coefficient of variation of normalized voxel-wise root-mean-square (RMS) responses from 0.41% to 4.03%, while ER-LM reduces semantic degradation and improves error correction across decoder layers. The combined FM-Occ improves mIoU from 12.16% to 12.73% with negligible memory overhead. ER-LM further improves mIoU in the BEV-based DISC framework from 16.78% to 17.17%, supporting its applicability across 3D voxel-based and BEV-based architectures.",
+  "abstract_zh": "3D语义占用预测在整个场景中估计体素级占用和语义标签。我们的实验表明，传统的稀疏转置卷积上采样产生的体素响应差异性较差，并且连续的解码器层会丢弃之前正确的语义预测。为了解决这些问题，我们提出了用于3D占用预测的特征多样化上采样和记忆感知解码（FM-Occ），其包含两个组成部分。首先，3D稀疏子体素洗牌（3S）通过在通道维度构建候选子特征，联合变换和归一化它们，然后将其重新排列到具有明确特征坐标对应关系的更精细稀疏网格上，从而减轻特征同质化。其次，熵调节层级记忆（ER-LM）通过通过门控递归更新为每个查询维护层级记忆，保持解码器层之间的语义信息，并使用预测熵来调节传播到下一层的历史信息。在训练过程中，类别加权熵损失 Lcwe 为匹配的语义查询提供标签引导的正则化。在SemanticKITTI数据集上，3S将归一化体素级均方根（RMS）响应的空间变异系数从0.41%提高到4.03%，而ER-LM减少了语义退化并改善了解码器层之间的错误修正。综合FM-Occ将mIoU从12.16%提高到12.73%，且内存开销微乎其微。ER-LM进一步将基于BEV的DISC框架中的mIoU从16.78%提高到17.17%，支持其在3D体素基础和基于BEV的架构中的适用性。",
+  "arxiv_id": "2610.29388",
+  "arxiv_url": "https://arxiv.org/abs/2610.29388v1",
+  "authors": [
+    "Yujia Zhai",
+    "Guoming Huang",
+    "Zhuanghuai Wang",
+    "Bangquan Xie"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-22#paper-2610-29388",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-22T09:47:09.789176+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.29388v1",
+  "published_at": "2026-10-21T08:14:31Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "semantickitti",
+      "bev",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 32
+  },
+  "seen_dates": [
+    "2026-10-22"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.29388v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-22"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "FM-Occ: Feature-Diverse Upsampling and Memory-Aware Decoding for 3D Occupancy Prediction",
+  "title_zh": "FM-Occ：用于3D占用预测的特征多样化上采样和记忆感知解码",
+  "translation_url": "https://hjfy.top/arxiv/2610.29388"
+}

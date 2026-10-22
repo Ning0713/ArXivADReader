@@ -1,6 +1,141 @@
 {
-  "generated_at": "2026-10-21T09:49:19.694552+00:00",
+  "generated_at": "2026-10-22T09:48:17.743259+00:00",
   "items": [
+    {
+      "abstract": "Object detection models for autonomous driving commonly experience substantial performance drops when deployed under adverse weather due to the domain shift between training data and real-world operating conditions. This degradation is especially evident when models trained on clear-weather images encounter foggy environments with reduced visibility and contrast. To address this challenge, we introduce FogTTA, an online test-time adaptation framework designed to improve the robustness of Transformer-based object detectors in fog. Using RF-DETR as the underlying object detector, FogTTA enables real-time adaptation to the streaming target domain without requiring source data or retraining. The framework follows a teacher-student design, where the deployed model serves as the teacher and generates pseudo labels from weakly augmented target inputs. These predictions are subsequently refined through non-maximum suppression and confidence filtering. The student model then learns from strongly augmented target sample using the Varifocal loss to mitigate pseudo-label noise. The teacher is updated via exponential moving averaging to ensure stable and continuous adaptation. Experiments show that FogTTA outperforms prior baselines, delivering improved detection accuracy and stability while maintaining real-time performance.",
+      "abstract_zh": "自主驾驶的物体检测模型在恶劣天气条件下部署时，通常会因训练数据与实际操作条件之间的领域转移而经历显著的性能下降。这种性能退化在模型在清晰天气图像上训练后遇到能见度和对比度降低的雾天环境时尤为明显。为了解决这一挑战，我们提出了FogTTA，一种在线测试时适应框架，旨在提高变换器基础物体检测器在雾天的鲁棒性。以RF-DETR作为基础物体检测器，FogTTA能够实时适应流式目标领域，而无需源数据或重新训练。该框架采用教师-学生设计，其中部署的模型作为教师，从弱增强的目标输入生成伪标签。这些预测随后通过非极大值抑制和置信度过滤进行精炼。学生模型则利用Varifocal损失从强增强的目标样本中学习，以减轻伪标签噪声。教师通过指数移动平均进行更新，以确保稳定和持续的适应。实验表明，FogTTA在检测准确性和稳定性方面优于先前的基线，同时保持实时性能。",
+      "authors": [
+        "Ali Abedi",
+        "Q. M. Jonathan Wu",
+        "Ning Zhang",
+        "Shiqi Tian"
+      ],
+      "date": "2026-10-22",
+      "id": "2610.29618",
+      "tags": [
+        "感知",
+        "世界模型/生成"
+      ],
+      "title": "FogTTA: Online Test-Time Adaptation for Robust Transformer-based Object Detection in Foggy Weather",
+      "title_zh": "FogTTA：用于雾天鲁棒性变换器基础物体检测的在线测试时适应",
+      "url": "/daily/2026-10-22/#paper-2610-29618"
+    },
+    {
+      "abstract": "High-fidelity 4D physical simulation requires accurate physical parameter assignments that align with diverse material properties. Previous methods struggle with critical bottlenecks: they either rely on computationally intensive per-scene optimization or predict parameters from purely visual inputs. The latter suffers from inherent ambiguity, e.g., the inability to distinguish the stiffness of rubber from its appearance alone. To bridge this gap, we propose AutoPhyX, a text-conditioned framework for predicting spatially-varying physical properties. Since training robust feed-forward models requires fine-grained supervision, we first introduce a novel part-controllable data generation pipeline that decomposes complex 3D assets into semantically distinct components and pairs them with physically plausible, diverse parameters and corresponding text descriptions. Leveraging this dataset, AutoPhyX employs a cross-modal modulation mechanism where text features dynamically modulate visual features for precise physical grounding. By formulating property prediction within a voxel field, AutoPhyX ensures compatibility with diverse 3D representations, including meshes, point clouds, Gaussian Splatting, and NeRF. Experiments demonstrate that our method enables physically plausible, text-driven parameter assignment in a single forward pass. It achieves high accuracy and robust generalization to in-the-wild objects, paving the way for future physics-intensive embodied and robotic applications.",
+      "abstract_zh": "高保真度的四维物理仿真需要与多样化材料属性相一致的准确物理参数分配。以往的方法面临关键瓶颈：它们要么依赖于计算密集型的逐场景优化，要么仅从视觉输入预测参数。后者存在固有的模糊性，例如，仅凭外观无法区分橡胶的刚度。为了解决这一问题，我们提出了AutoPhyX，一个用于预测空间变化物理属性的文本条件框架。由于训练稳健的前馈模型需要细粒度的监督，我们首先引入了一种新颖的部件可控数据生成管道，该管道将复杂的三维资产分解为语义上不同的组件，并将其与物理上合理的多样化参数及相应的文本描述配对。利用该数据集，AutoPhyX采用了一种跨模态调制机制，其中文本特征动态调制视觉特征，以实现精确的物理基础。通过在体素场中制定属性预测，AutoPhyX确保与多种三维表示方式的兼容性，包括网格、点云、高斯溅射和神经辐射场（NeRF）。实验表明，我们的方法能够在单次前向传递中实现物理上合理的、以文本驱动的参数分配。它在准确性和对实际物体的稳健泛化方面表现出色，为未来物理密集型的具身和机器人应用铺平了道路。",
+      "authors": [
+        "Bei Huang",
+        "Yixin Chen",
+        "Hongbin Zha",
+        "Yuru Pei",
+        "Siyuan Huang"
+      ],
+      "date": "2026-10-22",
+      "id": "2610.29517",
+      "tags": [
+        "仿真/数据",
+        "LiDAR/点云",
+        "深度/几何"
+      ],
+      "title": "AutoPhyX: Automatic Text-Condition Physics Property Generation",
+      "title_zh": "AutoPhyX：自动文本条件物理属性生成",
+      "url": "/daily/2026-10-22/#paper-2610-29517"
+    },
+    {
+      "abstract": "3D semantic occupancy prediction estimates voxel-wise occupancy and semantic labels throughout a scene. Our experiments reveal that conventional sparse transposed-convolution upsampling yields poorly differentiated voxel responses and that successive decoder layers discard previously correct semantic predictions. To address these issues, we present Feature-Diverse Upsampling and Memory-Aware Decoding for 3D Occupancy Prediction (FM-Occ), comprising two components. First, 3D Sparse Subvoxel Shuffle (3S) mitigates feature homogenization by constructing candidate child features in the channel dimension, jointly transforming and normalizing them, and then rearranging them onto a finer sparse grid with explicit feature-coordinate correspondence. Second, Entropy-Regulated Layer-wise Memory (ER-LM) retains semantic information across decoder layers by maintaining a layer-wise memory for each query through gated recurrent updates and using prediction entropy to regulate the historical information propagated to the next layer. During training, a class-weighted entropy loss Lcwe provides label-guided regularization for matched semantic queries. On SemanticKITTI, 3S increases the spatial coefficient of variation of normalized voxel-wise root-mean-square (RMS) responses from 0.41% to 4.03%, while ER-LM reduces semantic degradation and improves error correction across decoder layers. The combined FM-Occ improves mIoU from 12.16% to 12.73% with negligible memory overhead. ER-LM further improves mIoU in the BEV-based DISC framework from 16.78% to 17.17%, supporting its applicability across 3D voxel-based and BEV-based architectures.",
+      "abstract_zh": "3D语义占用预测在整个场景中估计体素级占用和语义标签。我们的实验表明，传统的稀疏转置卷积上采样产生的体素响应差异性较差，并且连续的解码器层会丢弃之前正确的语义预测。为了解决这些问题，我们提出了用于3D占用预测的特征多样化上采样和记忆感知解码（FM-Occ），其包含两个组成部分。首先，3D稀疏子体素洗牌（3S）通过在通道维度构建候选子特征，联合变换和归一化它们，然后将其重新排列到具有明确特征坐标对应关系的更精细稀疏网格上，从而减轻特征同质化。其次，熵调节层级记忆（ER-LM）通过通过门控递归更新为每个查询维护层级记忆，保持解码器层之间的语义信息，并使用预测熵来调节传播到下一层的历史信息。在训练过程中，类别加权熵损失 Lcwe 为匹配的语义查询提供标签引导的正则化。在SemanticKITTI数据集上，3S将归一化体素级均方根（RMS）响应的空间变异系数从0.41%提高到4.03%，而ER-LM减少了语义退化并改善了解码器层之间的错误修正。综合FM-Occ将mIoU从12.16%提高到12.73%，且内存开销微乎其微。ER-LM进一步将基于BEV的DISC框架中的mIoU从16.78%提高到17.17%，支持其在3D体素基础和基于BEV的架构中的适用性。",
+      "authors": [
+        "Yujia Zhai",
+        "Guoming Huang",
+        "Zhuanghuai Wang",
+        "Bangquan Xie"
+      ],
+      "date": "2026-10-22",
+      "id": "2610.29388",
+      "tags": [
+        "BEV/Occupancy",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "FM-Occ: Feature-Diverse Upsampling and Memory-Aware Decoding for 3D Occupancy Prediction",
+      "title_zh": "FM-Occ：用于3D占用预测的特征多样化上采样和记忆感知解码",
+      "url": "/daily/2026-10-22/#paper-2610-29388"
+    },
+    {
+      "abstract": "The scarcity of high-quality annotated visual data remains a critical bottleneck for autonomous-driving perception. Simulators provide training data at scale, but the limited realism of synthetic videos compromises perception performance in real-world applications. To address this limitation, we propose NeuralSRender, a sim-to-real video translation framework that enhances the photorealism of synthetic videos while maintaining geometric consistency with the source scenes. Built on a pretrained video diffusion transformer (DiT), NeuralSRender uses a lightweight projector to inject geometric and material priors from G-buffers, and LoRA enables parameter-efficient adaptation. The model is trained in two stages: it first learns G-buffer conditioning from synthetic videos with accurate G-buffers, then adapts to real-world appearance using real videos with estimated G-buffers. During the second stage, an additional LoRA module is trained while the projector and first-stage LoRA remain frozen to reduce interference from estimation noise. NeuralSRender introduces only 1.45\\% parameter overhead and can be trained on consumer-grade GPUs with 24 GB of memory. To support training and evaluation, we introduce GenReal, a large-scale driving video dataset comprising synthetic and real-world videos with corresponding G-buffers. Experiments demonstrate improved photorealism with competitive geometric consistency. Training perception models on our translated videos instead of raw simulator renders improves detection $\\mathrm{AP}_{50}$ on nuImages from 35.1 to 40.6 and segmentation mIoU on Cityscapes from 32.4 to 40.8. Our code, data, and model weights are available at: https://github.com/WHU-USI3DV/NeuralSRender.",
+      "abstract_zh": "高质量标注视觉数据的稀缺仍然是自动驾驶感知的一个关键瓶颈。仿真器提供了大规模的训练数据，但合成视频的有限真实感妨碍了其在现实应用中的感知性能。为了解决这一限制，我们提出了NeuralSRender，一个从仿真到现实的视频翻译框架，旨在增强合成视频的照片真实感，同时保持与源场景的几何一致性。NeuralSRender基于预训练的视频扩散变换器（DiT），使用轻量级投影器从G-Buffer中注入几何和材料先验，并通过LoRA实现参数高效适应。该模型分两个阶段进行训练：首先从具有准确G-Buffer的合成视频中学习G-Buffer条件，然后使用具有估计G-Buffer的真实视频适应现实外观。在第二阶段，训练一个额外的LoRA模块，同时保持投影器和第一阶段的LoRA不变，以减少估计噪声的干扰。NeuralSRender仅引入1.45\\%的参数开销，并且可以在具有24GB内存的消费级GPU上进行训练。为了支持训练和评估，我们引入了GenReal，一个大规模的驾驶视频数据集，包含合成和真实世界的视频及其对应的G-Buffer。实验结果表明，照片真实感得到了改善，同时几何一致性具有竞争力。在我们的翻译视频上训练感知模型，而不是原始仿真器渲染，能够将nuImages上的检测$ ext{AP}_{50}$从35.1提高到40.6，将Cityscapes上的分割mIoU从32.4提高到40.8。我们的代码、数据和模型权重可在以下网址获取：https://github.com/WHU-USI3DV/NeuralSRender。",
+      "authors": [
+        "Yipeng Lu",
+        "Youqi Liao",
+        "Zhenyu Wang",
+        "Yuning Peng",
+        "Zhen Dong"
+      ],
+      "date": "2026-10-22",
+      "id": "2610.29200",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "NeuralSRender: G-Buffer Guided Video Diffusion for Sim-to-Real Rendering",
+      "title_zh": "NeuralSRender：基于G-Buffer引导的视频扩散用于从仿真到现实的渲染",
+      "url": "/daily/2026-10-22/#paper-2610-29200"
+    },
+    {
+      "abstract": "Instruction-guided video generative models offer a scalable solution for stress-testing autonomous driving systems by simulating diverse environmental conditions. However, driving scenes operate within a dense Operational Design Domain (ODD) governed by strict traffic semantics. When applied to global driving-condition edits, general-purpose instruction-guided video editors frequently corrupt these semantics, leading to structural hallucinations and ``temporal shock.'' This work distills and protects traffic semantics during video editing at three levels. First, we construct a hybrid dataset by combining temporally aligned real-world videos with synthetic edits, balancing foundational scene structure with unambiguous appearance signals. Second, during training, we adapt advantage conditioning from offline reinforcement learning to align the model using dense rewards. We extract dense, pixel-level rewards from the hybrid data to serve as a localized signal and actively steer generation toward structurally reliable pixels. Finally, our model mitigates temporal shock by introducing thinking frames, a transition mechanism that seamlessly reconciles static image conditioning with dynamic video context. Extensive experiments demonstrate that our method prevents the corruption of multi-actor dynamics, establishing state-of-the-art spatiotemporal consistency, yielding consistent user preference (39% relative improvement in content preservation and 12% in temporal consistency), and achieving a significant 5% gain in downstream road line segmentation and 7% gain in downstream multi-object detection.",
+      "abstract_zh": "基于指令引导的视频生成模型为通过模拟多样化环境条件来压力测试自动驾驶系统提供了一种可扩展的解决方案。然而，驾驶场景在严格的交通语义下运作，属于密集的操作设计域（Operational Design Domain, ODD）。当应用于全球驾驶条件编辑时，通用的指令引导视频编辑器常常会破坏这些语义，导致结构性幻觉和“时间冲击”。本研究在视频编辑的三个层面上提炼并保护交通语义。首先，我们通过结合时间对齐的真实视频与合成编辑构建了一个混合数据集，平衡了基础场景结构与明确的外观信号。其次，在训练过程中，我们将离线强化学习中的优势条件适配到模型中，以使用密集奖励进行对齐。我们从混合数据中提取密集的像素级奖励，作为局部信号，积极引导生成朝向结构可靠的像素。最后，我们的模型通过引入思维帧（thinking frames）来减轻时间冲击，这是一种过渡机制，能够无缝地将静态图像条件与动态视频上下文调和。大量实验表明，我们的方法有效防止了多参与者动态的破坏，建立了最先进的时空一致性，用户偏好一致性显著提高（内容保留相对改善39%，时间一致性改善12%），并在下游道路线分割和多目标检测中分别实现了5%和7%的显著提升。",
+      "authors": [
+        "Mauricio Soroco",
+        "Yuqiu Liu",
+        "Zaid Tasneem",
+        "Francesco Pittaluga",
+        "Abhishek Aich",
+        "Wuyang Chen",
+        "Manmohan Chandraker",
+        "Ziyu Jiang"
+      ],
+      "date": "2026-10-22",
+      "id": "2610.28829",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "世界模型/生成"
+      ],
+      "title": "HorizonComposer: Spatiotemporally Consistent Driving Video Editing with Enriched Traffic Semantics",
+      "title_zh": "HorizonComposer：具有丰富交通语义的时空一致性驾驶视频编辑",
+      "url": "/daily/2026-10-22/#paper-2610-28829"
+    },
+    {
+      "abstract": "We present WorldStream, an open-ended 3D world model with three simultaneous capabilities: it extends playable terrain beyond any pre-specified map, acts on open-ended language in the running world, and restores visited places with their edits. A hierarchical planner over a typed decision model emits structured decision state: Macro fixes settlement, ecology, transport, and hydrological structure across a group of tiles; Micro specializes that contract into tile semantics under measured terrain and accepted neighbor commitments. Deterministic local code compiles accepted plans into terrain, roads, settlements, vegetation, and entities. Streaming separates their reach: plans run ahead along the predicted corridor, compilation only where movement will soon need it, geometry behind the user released. One world record retains plans, seeds, object identities and mutable state, boundary commitments, and edits by attribute, revised as the user advances and edits; returning tiles recompile from it. The same record grounds interaction: the model acts on existing entities, including stateful NPCs that update as they act, edits the present region, or attaches intent to unplanned regions. Together they yield a world expanding under bounded budgets, connected across independently planned tiles, and interactive.",
+      "abstract_zh": "我们提出了WorldStream，这是一种开放式的3D世界模型，具备三种同时进行的能力：它扩展了可玩地形，超越任何预先指定的地图，能够在运行的世界中处理开放式语言，并恢复访问过的地点及其编辑。一个基于类型决策模型的层次规划器生成结构化的决策状态：宏观层面修复一组瓦片的定居点、生态、交通和水文结构；微观层面则专注于在测量地形和接受邻居承诺下收缩为瓦片语义。确定性局部代码将接受的计划编译为地形、道路、定居点、植被和实体。流媒体技术分离了它们的覆盖范围：计划沿着预测的走廊提前运行，编译仅在移动即将需要的地方进行，几何形状则在用户后方释放。一个世界记录保留计划、种子、对象身份和可变状态、边界承诺及按属性编辑，随着用户的推进和编辑而修订；返回的瓦片从中重新编译。同一记录支撑交互：模型作用于现有实体，包括在行动时更新的有状态非玩家角色（NPC），编辑当前区域，或将意图附加到未规划区域。它们共同产生一个在有限预算下扩展的世界，跨独立规划的瓦片相互连接，并具备交互性。",
+      "authors": [
+        "Xiaoxiao Ma",
+        "Weiyang Jin",
+        "Yanwen Ma",
+        "Haoran Li",
+        "Zhixiang Wei",
+        "Songchun Zhang",
+        "Yaowei Li",
+        "Junhao Zhuang",
+        "Zeyue Xue",
+        "Yuming Li",
+        "Zheming Fu",
+        "Haoyang Huang",
+        "Nan Duan",
+        "Feng Zhao"
+      ],
+      "date": "2026-10-22",
+      "id": "2610.28827",
+      "tags": [
+        "预测/规划",
+        "深度/几何",
+        "世界模型/生成"
+      ],
+      "title": "WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State",
+      "title_zh": "WorldStream：具有层次规划和持久状态的交互式3D世界流媒体",
+      "url": "/daily/2026-10-22/#paper-2610-28827"
+    },
     {
       "abstract": "Collaborative perception enables agents to retrieve the scene semantics and geometry beyond the field of view of any individual agent. This broader scene understanding enhances transportation safety and improves efficiency in multi-robot systems. However, existing collaborative semantic occupancy methods rely on dense 3D voxel annotations and are limited to recognizing objects within a predefined set of semantic classes. To overcome these limitations, we present CoGaussian, an open-vocabulary Gaussian-based collaborative semantic occupancy prediction framework. CoGaussian represents a scene as a set of foundation model-aligned sparse 3D Gaussians, which serve as a compact representation for communicating and fusing geometric and semantic information across multiple agents. On the Semantic-OPV2V benchmark, our method outperforms existing open-vocabulary single-agent approaches, highlighting the effectiveness of open-vocabulary collaborative scene understanding.",
       "abstract_zh": "协作感知使得智能体能够获取超出任何单个智能体视野的场景语义和几何信息。这种更广泛的场景理解增强了交通安全，并提高了多机器人系统的效率。然而，现有的协作语义占用方法依赖于密集的三维体素标注，并且仅限于识别预定义语义类别集合中的对象。为了解决这些限制，我们提出了CoGaussian，一种基于高斯的开放词汇协作语义占用预测框架。CoGaussian将场景表示为一组与基础模型对齐的稀疏三维高斯分布，这些高斯分布作为一种紧凑的表示方式，用于在多个智能体之间传递和融合几何与语义信息。在Semantic-OPV2V基准测试中，我们的方法优于现有的开放词汇单智能体方法，突显了开放词汇协作场景理解的有效性。",
