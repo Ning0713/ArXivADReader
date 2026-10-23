@@ -1,0 +1,52 @@
+{
+  "abstract": "Reliable traversability estimation is essential for autonomous navigation on unstructured terrain. State-of-the-art approaches typically evaluate traversability from deterministic terrain elevation, thereby overlooking spatial correlations in the terrain and failing to account for how elevation uncertainty propagates through nonlinear traversability mappings. We propose ProTrav, a probabilistic terrain representation that uses function-space sampling to generate spatially correlated terrain realizations and propagate elevation uncertainty to traversability cost. First, a Sparse Variational Gaussian Process (SVGP) reconstructs a probabilistic elevation field from observations. Then, posterior function-space sampling generates spatially correlated terrain realizations, preserving spatial dependencies between neighboring locations while propagating elevation uncertainty through geometric features into traversability cost. Consequently, a distribution of traversability cost at arbitrary location is established, where the mean and standard deviation quantify the expected traversability cost and associated uncertainty, respectively. A risk term is defined by moment-based Upper Confidence Bound (UCB) and incorporated into a Model Predictive Path Integral (MPPI) controller for risk-aware navigation. Simulation experiments demonstrate navigation success rates exceeding 90\\% on different terrains, compared with below 40\\% for a baseline, while reducing attitude variations. Furthermore, the proposed approach is validated on a robot traversing real-world off-road terrain.",
+  "abstract_zh": "可靠的可通行性估计对于在非结构化地形上的自主导航至关重要。现有的最先进方法通常基于确定性地形高度评估可通行性，从而忽视了地形中的空间相关性，并未考虑高度不确定性如何通过非线性可通行性映射传播。我们提出了ProTrav，一种概率性地形表示，利用函数空间采样生成空间相关的地形实现，并将高度不确定性传播到可通行性成本中。首先，稀疏变分高斯过程（SVGP）从观测数据重构概率性高度场。然后，后验函数空间采样生成空间相关的地形实现，保持邻近位置之间的空间依赖性，同时将高度不确定性通过几何特征传播到可通行性成本中。因此，在任意位置建立了可通行性成本的分布，其中均值和标准差分别量化预期的可通行性成本和相关的不确定性。风险项通过基于矩的上置信界（UCB）定义，并纳入模型预测路径积分（MPPI）控制器中，以实现风险感知导航。仿真实验表明，在不同地形上的导航成功率超过90%，而基线方法的成功率低于40%，同时减少了姿态变化。此外，所提出的方法在机器人穿越真实世界越野地形时得到了验证。",
+  "arxiv_id": "2610.30839",
+  "arxiv_url": "https://arxiv.org/abs/2610.30839v1",
+  "authors": [
+    "Chuanlin Zuo",
+    "Miloš Prágr",
+    "Arun Kumar Singh",
+    "Mohammad Loni",
+    "Reza Ghabcheloo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30839",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.603610+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30839v1",
+  "published_at": "2026-10-22T07:08:09Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "road",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30839v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "本文面向非结构化越野环境中的自主导航，使用稀疏变分高斯过程构建概率高程场，并通过空间相关的函数采样将高程不确定性传播到可通行性代价。所得风险估计被整合进MPPI控制器，以规划更稳健的行驶路径。仿真与真实机器人实验均表明，该方法可显著提升复杂地形上的导航成功率和行驶稳定性。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "深度/几何",
+      "安全/异常"
+    ]
+  },
+  "title": "ProTrav: Probabilistic Traversability with Elevation Uncertainty Propagation for Risk-aware Off-road Navigation",
+  "title_zh": "ProTrav：考虑高度不确定性传播的风险感知越野导航的概率可通行性",
+  "translation_url": "https://hjfy.top/arxiv/2610.30839"
+}

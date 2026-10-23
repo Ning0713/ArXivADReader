@@ -1,0 +1,57 @@
+{
+  "abstract": "Driving vision-language-action (VLA) models bring an appealing form of explainability to a safety-critical domain, since a system that can state the reasons for its maneuvers offers the transparency that deployment and public trust in autonomous driving demand. These models read the world into language before they act on it, describing the scene and reasoning over it in text that ranges from chain-of-thought to multi-stage question answering on the way to a trajectory. That framing quietly assumes two separable properties, namely that the trajectory follows the generated reasoning and that the generated reasoning tracks the causes that actually produce the trajectory. To thoroughly investigate these properties, we apply causal, counterfactual interventions to four driving VLAs across different benchmarks. First, we perturb the models' own reasoning and show that altering its meaning produces small trajectory changes relative to blanking the same models' camera inputs, a pattern that persists across benchmarks and model architectures. We then construct scene-level counterfactuals through photorealistic removal of key objects named in the models' reasoning and analyze whether the generated reasoning and trajectories track these changes. Overall, our findings indicate that the reasoning these models present to account for their resulting driving behavior is weakly coupled to that behavior itself, pointing to limits on the explainability these systems are intended to provide.",
+  "abstract_zh": "驾驶视觉-语言-行动（VLA）模型为安全关键领域带来了令人信服的可解释性，因为能够说明其操作原因的系统提供了部署和公众对自动驾驶信任所需的透明度。这些模型在行动之前将世界转化为语言，通过描述场景并在文本中进行推理，涵盖从思维链到多阶段问答的内容，以便形成轨迹。这种框架默默假设了两个可分离的属性，即轨迹遵循生成的推理，并且生成的推理追踪实际产生轨迹的原因。为了深入研究这些属性，我们对四个不同基准的驾驶VLA应用因果反事实干预。首先，我们扰动模型自身的推理，并展示改变其含义相对于屏蔽同一模型的摄像头输入所产生的轨迹变化较小，这一模式在不同基准和模型架构中持续存在。然后，我们通过对模型推理中提到的关键对象进行照片级真实感的去除，构建场景级反事实，并分析生成的推理和轨迹是否跟踪这些变化。总体而言，我们的研究结果表明，这些模型为解释其驾驶行为所提供的推理与该行为本身的耦合较弱，指出了这些系统旨在提供的可解释性存在的局限性。",
+  "arxiv_id": "2610.30953",
+  "arxiv_url": "https://arxiv.org/abs/2610.30953v1",
+  "authors": [
+    "Gabriel Manalu",
+    "Saad Wazir",
+    "Thao Do",
+    "Seongah Kim",
+    "Hyeontaek Hwang",
+    "Tolcha Yalew Kidane",
+    "Daeyoung Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30953",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.678824+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30953v1",
+  "published_at": "2026-10-22T09:04:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 75
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30953v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "Measuring the Reasoning-Action Coupling in Driving Vision-Language-Action Models through Counterfactuals",
+  "title_zh": "通过反事实测量驾驶视觉-语言-行动模型中的推理-行动耦合",
+  "translation_url": "https://hjfy.top/arxiv/2610.30953"
+}

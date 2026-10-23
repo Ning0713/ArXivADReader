@@ -1,0 +1,62 @@
+{
+  "abstract": "End-to-end autonomous driving has achieved state-of-the-art performance on benchmarks and real-world deployments. Its standard training recipe, however, is expensive across all existing paradigms: imitation learning requires fleet-scale driving logs whose behavior distribution only thinly covers the safety-critical tail; closed-loop reinforcement learning in a photorealistic simulator, while offering diverse behaviors, is bottlenecked by sample-efficiency, per-step cost of rendering, and a forward pass through a large vision backbone. Self-play in vectorized simulators changes the economics: at millions of rollout steps per second, one can obtain a state distribution with natural diversity in collisions, near-misses, and recoveries that no driving log contains, and a highly reactive policy emerges from a basic driving-quality reward. Our approach exploits this asymmetry. We pretrain a single policy by self-play, distill its rollouts into a flow-matching trajectory teacher that also plans, and train lightweight adapters on a frozen pretrained vision backbone to reproduce the latent space of either teacher through the action KL divergence, a batch-relational low-rank structural loss, and, for the planner, a trajectory-matching loss. Every target traces back to the self-play policy, so alignment never supervises against a logged trajectory: a paired dataset of (image, scene-state) frames suffices, with no need for the curated expert demonstrations that imitation pretraining is built on. From this one self-play teacher we obtain two end-to-end students: a closed-loop policy that outperforms every published imitation-based end-to-end method on the photorealistic 3D Gaussian splatting closed-loop benchmark HUGSim, and a planner that reaches 59.4 EPDMS on NAVSIM navhard, above every published method including DriveZero-Scale (57.1), and 95.5 PDMS on navtest, without human demonstrations.",
+  "abstract_zh": "端到端自主驾驶在基准测试和现实世界部署中已实现了最先进的性能。然而，其标准训练方案在所有现有范式中都是昂贵的：模仿学习需要大规模车队的驾驶日志，而其行为分布仅薄薄覆盖了安全关键的尾部；在光真实感模拟器中进行闭环强化学习，虽然提供了多样化的行为，但受限于样本效率、每步渲染成本以及通过大型视觉主干网络的前向传递。向量化模拟器中的自我对弈改变了经济学：在每秒数百万次的回合步骤中，可以获得自然多样性的状态分布，包括碰撞、险些碰撞和恢复，这些在任何驾驶日志中都不存在，并且从基本的驾驶质量奖励中产生了高度反应的策略。我们的方法利用了这种不对称性。我们通过自我对弈预训练一个单一策略，将其回合提炼为一个流匹配轨迹教师，该教师也进行规划，并在冻结的预训练视觉主干上训练轻量级适配器，通过动作KL散度、批量关系低秩结构损失，以及对于规划器的轨迹匹配损失，重现任一教师的潜在空间。每个目标都追溯到自我对弈策略，因此对齐从不针对记录的轨迹进行监督：一对（图像，场景状态）帧的数据集就足够了，无需模仿预训练所依赖的精心策划的专家演示。从这个自我对弈教师中，我们获得了两个端到端的学生：一个闭环策略在光真实感3D高斯点云闭环基准HUGSim上超越了所有已发布的基于模仿的端到端方法，另一个规划器在NAVSIM navhard上达到了59.4 EPDMS，超越了所有已发布的方法，包括DriveZero-Scale（57.1），并在navtest上达到了95.5 PDMS，无需人类演示。",
+  "arxiv_id": "2610.30319",
+  "arxiv_url": "https://arxiv.org/abs/2610.30319v1",
+  "authors": [
+    "Zikang Xiong",
+    "Weixin Li",
+    "Zhouchonghao Wu",
+    "Akshay Rangesh",
+    "Saarth Bonde",
+    "Grantland Hall",
+    "Chen Tang",
+    "Yihan Hu",
+    "Wei Zhan"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30319",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.594825+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30319v1",
+  "published_at": "2026-10-21T18:31:28Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 51
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30319v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "TerraTransfer++: Demonstration-Free End-to-End Planner",
+  "title_zh": "TerraTransfer++：无演示的端到端规划器",
+  "translation_url": "https://hjfy.top/arxiv/2610.30319"
+}

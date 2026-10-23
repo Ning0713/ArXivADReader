@@ -1,0 +1,57 @@
+{
+  "abstract": "Traversability estimation is critical for ground vehicle teleoperation, yet existing methods often neglect the human operator's preferences for speed and risk tolerance. To address this gap, we propose PATH-Net, a Preference-Aware Traversability estimation Hierarchical Network that adaptively generates preference-conditioned traversability cost maps and speed profiles for off-road teleoperation. Our framework integrates visual and geometric bird's-eye-view features with short-term historical vehicle states through a multi-head shared-backbone architecture. Our PATH-Net infers traversability cost maps while optimizing speed recommendations by using maximum entropy inverse reinforcement learning and sparse speed supervision. Our method incorporates operator preference via an asymmetric feature aggregation mechanism, splitting inference into a cost branch that prioritizes high-risk traversability regions and a speed branch that outputs preference-adjusted recommended speeds. Experiments with 15 operators across 225 teleoperated trajectories show alignment with user-specific navigation strategies, achieving modified Hausdorff distance of 0.17 m (aggressive) and 0.15 m (conservative). In the questionnaire assessment, participants reported lower NASA-TLX workload scores with PATH-Net recommendations than without recommendations, decreasing from 34.7 to 22.2. These results support preference-conditioned trajectory and speed recommendation for off-road teleoperation.",
+  "abstract_zh": "越野车辆遥操作中的可 traversability 估计至关重要，但现有方法往往忽视了人类操作员对速度和风险容忍度的偏好。为了解决这一问题，我们提出了 PATH-Net，一种基于偏好的越野可 traversability 估计层次网络，该网络自适应地生成基于偏好的 traversability 成本图和速度配置文件，以支持越野遥操作。我们的框架通过多头共享主干架构，将视觉和几何鸟瞰特征与短期历史车辆状态相结合。PATH-Net 在推断 traversability 成本图的同时，通过最大熵逆强化学习和稀疏速度监督优化速度建议。我们的方法通过不对称特征聚合机制纳入操作员偏好，将推断分为一个优先考虑高风险 traversability 区域的成本分支和一个输出偏好调整推荐速度的速度分支。对 15 名操作员在 225 条遥操作轨迹上的实验表明，与用户特定的导航策略一致，获得了 0.17 米（激进）和 0.15 米（保守）的修改 Hausdorff 距离。在问卷评估中，参与者报告使用 PATH-Net 推荐时的 NASA-TLX 工作负荷评分低于未使用推荐时，从 34.7 降至 22.2。这些结果支持了基于偏好的轨迹和速度推荐，用于越野遥操作。",
+  "arxiv_id": "2610.30605",
+  "arxiv_url": "https://arxiv.org/abs/2610.30605v1",
+  "authors": [
+    "Xianghao Meng",
+    "Wenshuo Wang",
+    "Cheng Shao",
+    "Lewei Feng",
+    "Qingxiao Liu",
+    "Canyu Wang",
+    "Junqiang Xi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30605",
+  "categories": [
+    "cs.RO",
+    "cs.HC"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.599448+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30605v1",
+  "published_at": "2026-10-22T02:08:58Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "车辆",
+      "bird's-eye",
+      "robotic"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30605v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "BEV/Occupancy",
+      "深度/几何"
+    ]
+  },
+  "title": "PATH: Preference-Aware Traversability Estimation for Robotic Teleoperation in Off-Road Navigation",
+  "title_zh": "PATH：基于偏好的越野导航机器人遥操作可 traversability 估计",
+  "translation_url": "https://hjfy.top/arxiv/2610.30605"
+}

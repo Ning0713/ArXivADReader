@@ -1,0 +1,47 @@
+{
+  "abstract": "Neuro-symbolic (NeSy) predictors that supervise only the task label suffer from reasoning shortcuts: distinct concept mappings achieve the same maximum likelihood, leaving the recovered concepts unidentifiable and unsafe for downstream reuse. We attack this failure by injecting a soft ontology prior over the latent concepts into the training objective and compiling it together with the task constraint into a smooth, decomposable probabilistic circuit. Under independent Bernoulli perception, the normalisers of the resulting structured concept posterior reduce to weighted model counts that are linear in the compiled circuit size, because the neural leaf weights fold into the circuit before evaluation. The soft compilation strategy places expert axioms in the circuit's weights rather than its support (task-structural axioms guaranteed by the data-generating process stay hard), so noisy expert axioms only redistribute prior mass and cannot empty the support. We characterise how the prior reweights label-restricted shortcut mass through differences in ontology violation energy, show that soft priors incur bounded log-density perturbations under bounded axiom noise, and prove that the hard-support counterpart can be made degenerate by a single corrupted axiom. We validate these predictions on an audited six-concept view of the real-world BDD-OIA driving benchmark and on controlled NeSy tasks.",
+  "abstract_zh": "仅依赖任务标签进行监督的神经符号（NeSy）预测器面临推理捷径的问题：不同的概念映射可以实现相同的最大似然，导致恢复的概念无法识别，并且不安全用于后续重用。我们通过在训练目标中注入潜在概念的软本体先验来解决这一问题，并将其与任务约束编译成一个平滑的、可分解的概率电路。在独立的伯努利感知下，生成的结构化概念后验的归一化因子简化为与编译电路大小线性相关的加权模型计数，因为神经叶子权重在评估之前就已经折叠进电路中。软编译策略将专家公理置于电路的权重中，而不是其支持中（由数据生成过程保证的任务结构公理保持不变），因此嘈杂的专家公理仅重新分配先验质量，无法清空支持。我们描述了先验如何通过本体违反能量的差异重新加权标签限制的捷径质量，展示了在有界公理噪声下软先验会引入有界的对数密度扰动，并证明其硬支持对应物可以通过单个损坏的公理变得退化。我们在经过审计的六个概念视图的真实世界BDD-OIA驾驶基准和受控的NeSy任务上验证了这些预测。",
+  "arxiv_id": "2610.30391",
+  "arxiv_url": "https://arxiv.org/abs/2610.30391v1",
+  "authors": [
+    "Tengwei Song",
+    "Robert Hoehndorf"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30391",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.661484+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30391v1",
+  "published_at": "2026-10-21T19:50:06Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30391v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "本文提出一种用于弱监督神经符号学习的软本体先验，通过概率电路约束潜在概念，降低概念映射不可识别和推理捷径风险。方法在真实世界 BDD-OIA 驾驶基准及受控任务上进行验证，但研究重点是通用神经符号学习，并非自动驾驶方法本身。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Soft Ontology Priors over Latent Concept Posteriors for Weakly Supervised Neuro-Symbolic Learning",
+  "title_zh": "基于潜在概念后验的软本体先验用于弱监督神经符号学习",
+  "translation_url": "https://hjfy.top/arxiv/2610.30391"
+}

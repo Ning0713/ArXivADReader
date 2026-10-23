@@ -1,0 +1,81 @@
+{
+  "abstract": "We introduce Foundation4D, a unified feed-forward model for geometry estimation, 3D detection, semantic occupancy, and Gaussian reconstruction from multi-camera driving video. A shared backbone uses factorized spatiotemporal attention to efficiently combine observations across cameras and time. Our video inference pipeline uses pose graph optimization to refine camera trajectories and assembles object tracks across input windows. We also develop a data annotation pipeline and release PAI-Foundation4D, a benchmark with dense depth and semantic occupancy labels for 1,253 driving clips. With benchmark-specific fine-tuning, Foundation4D achieves the lowest depth AbsRel on Waymo and nuScenes, the highest detection mAP on nuScenes, and the highest occupancy mIoU on OpenOccupancy among the compared methods. Our task-combination study shows benefits for both detection and geometry: co-training detection with geometry and occupancy improves top-class mAP by 1.2 points over detection-only training, while co-training geometry with detection reduces camera-to-rig translation error by $13.4\\%$ relative to geometry-only training. We further use the predicted geometry and trajectories as priors for lidarless NuRec, supporting reconstruction of driving scenes for simulation.",
+  "abstract_zh": "我们介绍了Foundation4D，这是一种统一的前馈模型，用于几何估计、3D检测、语义占用和基于多摄像头驾驶视频的高斯重建。共享的主干网络采用分解的时空注意力机制，有效地结合了来自不同摄像头和时间的观测数据。我们的视视频推理管道利用姿态图优化来细化摄像头轨迹，并在输入窗口之间组装对象轨迹。我们还开发了数据标注管道，并发布了PAI-Foundation4D，这是一个包含1,253个驾驶片段的基准数据集，提供了密集深度和语义占用标签。通过基准特定的微调，Foundation4D在Waymo和nuScenes上实现了最低的深度绝对相对误差（AbsRel），在nuScenes上获得了最高的检测平均精度（mAP），并在OpenOccupancy上获得了最高的占用平均交并比（mIoU），在比较的方法中表现优异。我们的任务组合研究表明，对检测和几何都有益处：将检测与几何和占用共同训练，相较于仅进行检测训练，提升了1.2个点的顶级类别mAP，而将几何与检测共同训练则相较于仅进行几何训练，减少了$13.4\\%$的摄像头到设备的平移误差。我们进一步利用预测的几何和轨迹作为无激光雷达NuRec的先验，支持驾驶场景的重建以用于仿真。",
+  "arxiv_id": "2610.30340",
+  "arxiv_url": "https://arxiv.org/abs/2610.30340v1",
+  "authors": [
+    "NVIDIA",
+    ":",
+    "Sérgio Agostinho",
+    "Maximilian Apodaca",
+    "Emmanuel Attia",
+    "Guillem Braso",
+    "George Dong",
+    "Ilya Fedorov",
+    "Michele Fenzi",
+    "Gang Huang",
+    "Jiahui Huang",
+    "Shengyu Huang",
+    "Bingxin Ke",
+    "Laura Leal-Taixé",
+    "Kuan-Ting Lee",
+    "Mingxuan Liu",
+    "Tian Liu",
+    "Tim Meinhardt",
+    "Aljoša Ošep",
+    "Naveen Kumar Rai",
+    "Kefei Ren",
+    "Cristiano Saltori",
+    "Keqiang Wu",
+    "Ning Xu",
+    "Fei Xue",
+    "Jin-Bey Yu",
+    "Lei Zhang",
+    "Qunjie Zhou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30340",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.620191+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30340v1",
+  "published_at": "2026-10-21T19:00:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "occupancy",
+      "3d detection"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30340v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles",
+  "title_zh": "Foundation4D：面向自主车辆的统一感知与重建模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.30340"
+}

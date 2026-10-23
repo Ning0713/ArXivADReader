@@ -1,0 +1,56 @@
+{
+  "abstract": "This paper presents an integrated control framework for high-speed platooning of articulated vehicles, combining advanced longitudinal and lateral control strategies to address the challenges of safe and efficient autonomous driving. A novel proof of string stability for the proposed longitudinal control algorithm, based on a PID framework, ensures robust inter-vehicle distance regulation even under dynamic operating conditions. Additionally, an arc-length-based longitudinal error formulation enhances the applicability of the control system for curved roads, making it realistic for diverse driving scenarios. For lateral control, significant improvements to the clothoid-based path tracking algorithm are introduced to mitigate oscillations and enhance stability at high speeds. These enhancements include a tangential criterion for oscillation reduction, trajectory segment classification for adaptive lookahead distance tuning, a dual-adaptive mechanism for regulating the rate of lookahead distance adjustments based on both cross-track error (CTE) and anticipated road curvature, and extensions for articulated vehicle dynamics. The proposed integrated control framework is validated through simulations, demonstrating its effectiveness in maintaining stability, minimizing tracking errors, and ensuring robust performance in high-speed and challenging platooning scenarios.",
+  "abstract_zh": "本文提出了一种用于关节车辆高速度编队的综合控制框架，结合了先进的纵向和横向控制策略，以应对安全高效的自动驾驶挑战。基于PID框架的纵向控制算法的新颖字符串稳定性证明确保了在动态操作条件下的车辆间距离调节的稳健性。此外，基于弧长的纵向误差公式增强了控制系统在曲道路况下的适用性，使其适用于多样化的驾驶场景。在横向控制方面，引入了对基于克洛索伊德（clothoid）的路径跟踪算法的显著改进，以减轻振荡并提高高速度下的稳定性。这些改进包括用于减小振荡的切向标准、用于自适应前视距离调节的轨迹段分类、基于横向跟踪误差（CTE）和预期道路曲率的双自适应机制，以及对关节车辆动力学的扩展。通过仿真验证了所提出的综合控制框架，证明其在保持稳定性、最小化跟踪误差以及在高速度和具有挑战性的编队场景中确保稳健性能方面的有效性。",
+  "arxiv_id": "2610.30437",
+  "arxiv_url": "https://arxiv.org/abs/2610.30437v1",
+  "authors": [
+    "Aashish Shaju",
+    "Steve Southward",
+    "Mehdi Ahmadian"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30437",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.595989+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30437v1",
+  "published_at": "2026-10-21T20:47:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30437v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "Integrated Longitudinal and Lateral Control for High-Speed Platooning of Articulated Vehicles",
+  "title_zh": "高速度编队中关节车辆的综合纵向与横向控制",
+  "translation_url": "https://hjfy.top/arxiv/2610.30437"
+}

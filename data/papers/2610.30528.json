@@ -1,0 +1,61 @@
+{
+  "abstract": "Predicting surrounding vehicles' lane-change intentions enables autonomous vehicles to anticipate potential hazards and respond proactively rather than relying solely on reactive maneuvers. This study investigates the benefits of integrating lane-change prediction, based on knowledge graph embeddings and Bayesian inference, into autonomous vehicle decision-making. Three driving strategies are evaluated in risky merging scenarios simulated in CARLA: reactive driving, prediction-based longitudinal action, and prediction-based lateral action. The proposed prediction model anticipates the surrounding vehicle's lane change approximately 3-4 seconds before its occurrence, allowing the ego vehicle to adjust its behavior accordingly. In the representative simulation records, reactive driving results in a collision accompanied by aggressive deceleration. In contrast, prediction-based longitudinal action initiates early braking to establish a safe gap, while prediction-based lateral action performs a lane change when a safe adjacent lane is available. Both predictive strategies avoid collisions in the evaluated records. Compared with reactive driving, peak deceleration before impact is reduced by 31.5% with longitudinal action and 91.0% with lateral action. Additionally, an ISO 2631-1-based horizontal vibration estimate is used to provide a ride comfort assessment. Overall, the results highlight the potential of lane-change prediction to support safer and smoother driving through proactive decision-making, with additional insights into ride comfort provided by vibration-based estimates.",
+  "abstract_zh": "预测周围车辆的车道变换意图使自动驾驶车辆能够预见潜在危险并主动响应，而不仅仅依赖于被动的应对措施。本研究探讨了将基于知识图谱嵌入和贝叶斯推断的车道变换预测整合到自动驾驶车辆决策中的优势。在CARLA模拟的高风险并入场景中评估了三种驾驶策略：被动驾驶、基于预测的纵向动作和基于预测的横向动作。所提出的预测模型能够在车道变换发生前大约3-4秒预测周围车辆的车道变换，从而使自我车辆能够相应调整其行为。在代表性的模拟记录中，被动驾驶导致了碰撞，并伴随激烈的减速。相比之下，基于预测的纵向动作提前制动以建立安全间距，而基于预测的横向动作则在安全的相邻车道可用时进行车道变换。这两种预测策略在评估记录中均避免了碰撞。与被动驾驶相比，纵向动作在碰撞前的峰值减速减少了31.5%，而横向动作减少了91.0%。此外，基于ISO 2631-1的水平振动估计用于提供乘坐舒适性评估。总体而言，结果突显了车道变换预测通过主动决策支持更安全、更平稳驾驶的潜力，并通过基于振动的估计提供了对乘坐舒适性的额外见解。",
+  "arxiv_id": "2610.30528",
+  "arxiv_url": "https://arxiv.org/abs/2610.30528v1",
+  "authors": [
+    "Mohamed Manzour",
+    "Aditya Kumar",
+    "Rubén Izquierdo",
+    "Miguel Ángel Sotelo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30528",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.597897+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30528v1",
+  "published_at": "2026-10-21T23:22:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicle",
+      "autonomous vehicles",
+      "ego vehicle",
+      "自动驾驶",
+      "carla",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "lane",
+      "驾驶",
+      "车辆",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30528v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "Decision Making and Ride Comfort Evaluation Based on Lane-Change Prediction for Autonomous Vehicles",
+  "title_zh": "基于车道变换预测的自动驾驶决策与乘坐舒适性评估",
+  "translation_url": "https://hjfy.top/arxiv/2610.30528"
+}

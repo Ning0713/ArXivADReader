@@ -1,0 +1,63 @@
+{
+  "abstract": "Vehicle-to-everything (V2X) communication enables connected vehicles to make safety-critical decisions, but delayed, missing, or incorrect information can compromise driving safety. Systematically testing such failures is challenging because traffic interactions, communication conditions, and application responses must be jointly configured to produce meaningful scenarios. This paper presents LAST-V2X, a language-driven, adaptive framework for automated scenario synthesis and safety testing of V2X applications. LAST-V2X leverages large language models (LLMs) to translate natural-language test descriptions into executable scenarios grounded in roadway geometry, V2X communication semantics, and vehicle behavior. The framework integrates physical traffic simulation with spatially aware communication modeling and message-level fault injection to evaluate how information degradation affects vehicle decisions. To establish whether an observed safety failure is caused by communication rather than the underlying traffic conditions, LAST-V2X employs matched executions under degraded and ground-truth information. Furthermore, an execution-guided refinement mechanism combines parameter search and LLM self-reflection to identify ineffective test configurations, improve scenario effectiveness, and produce minimal reproducible failure cases. Experiments across diverse CARLA environments and V2X safety applications demonstrate the framework's ability to generate reliable scenarios, distinguish communication-induced failures from unrelated safety violations, and substantially improve failure discovery through adaptive refinement. These results establish LAST-V2X as a systematic approach to language-driven, causally verified, and adaptive safety testing for connected vehicle systems.",
+  "abstract_zh": "车对一切（V2X）通信使得联网车辆能够做出安全关键决策，但延迟、缺失或错误的信息可能会危及驾驶安全。系统地测试此类故障具有挑战性，因为交通交互、通信条件和应用响应必须联合配置，以产生有意义的场景。本文提出了LAST-V2X，一个基于语言驱动的自适应框架，用于V2X应用的自动化场景合成和安全测试。LAST-V2X利用大型语言模型（LLMs）将自然语言测试描述转换为基于道路几何、V2X通信语义和车辆行为的可执行场景。该框架将物理交通仿真与空间感知通信建模和消息级故障注入相结合，以评估信息退化如何影响车辆决策。为了确定观察到的安全故障是由通信引起而非基础交通条件，LAST-V2X采用在退化和真实信息下的匹配执行。此外，执行引导的精炼机制结合参数搜索和LLM自我反思，以识别无效的测试配置，改善场景有效性，并生成最小可重现的故障案例。在多样的CARLA环境和V2X安全应用中的实验表明，该框架能够生成可靠的场景，区分通信诱发的故障与无关的安全违规，并通过自适应精炼显著提高故障发现的效率。这些结果确立了LAST-V2X作为一种系统化的基于语言驱动、因果验证和自适应的联网车辆系统安全测试方法。",
+  "arxiv_id": "2610.30979",
+  "arxiv_url": "https://arxiv.org/abs/2610.30979v1",
+  "authors": [
+    "Keshu Wu",
+    "Hao Zhang",
+    "Rui Gan",
+    "Pei Li",
+    "Jiwan Jiang",
+    "Yang Zhou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30979",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.605128+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30979v1",
+  "published_at": "2026-10-22T09:24:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle-to-everything",
+      "v2x",
+      "carla",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30979v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "LAST-V2X: Language-Driven Adaptive Scenario Synthesis and Testing for Communication-Induced Failures in V2X Safety Applications",
+  "title_zh": "LAST-V2X：基于语言驱动的自适应场景合成与测试，用于V2X安全应用中的通信诱发故障",
+  "translation_url": "https://hjfy.top/arxiv/2610.30979"
+}

@@ -1,0 +1,49 @@
+{
+  "abstract": "Modern autonomous Cyber-Physical Systems (CPSs), such as self-driving cars, operate in increasingly complex environments while expected to maintain high reliability. The black-box nature of many of these systems makes it impossible to fully verify their behavior prior to deployment. When a failure occurs, it is important to analyze it to guide improvements to system robustness. A recent work introduced the novel concept of leveraging the framework of actual causality for CPS failure explanation. However, that work considered only a discrete, binary causal model that cannot capture continuous changes in system inputs. In this paper, we address these limitations by extending the actual causality framework with the notion of distance to account for the continuous characteristics of the system. Specifically, we introduce the novel concepts of distance-weighted actual cause and distance-weighted degree of responsibility, enabling causal influence to account for the magnitude of changes required to avoid a failure, rather than only its cardinality. While motivated by the continuous nature of CPSs, this constitutes a general extension of the theory of actual causality and enables more fine-grained analysis of continuous inputs in any causal model. Building on these notions, we present an efficient, practical, system-agnostic explanation-derivation algorithm that uses distance-weighted responsibility to guide the explanation search. We experimentally evaluate our approach across a number of environments from two autonomous-driving simulators with black-box neural controllers. The results show that the proposed extension provides more effective guidance than the current discrete approach.",
+  "abstract_zh": "现代自主网络物理系统（Cyber-Physical Systems, CPS），如自动驾驶汽车，在日益复杂的环境中运行，同时期望保持高可靠性。这些系统的黑箱特性使得在部署之前无法完全验证其行为。当发生故障时，分析故障以指导系统稳健性的改进变得至关重要。最近的研究引入了利用实际因果框架进行CPS故障解释的新概念。然而，该研究仅考虑了离散的二元因果模型，无法捕捉系统输入的连续变化。在本文中，我们通过扩展实际因果框架，引入距离的概念，以解决这些局限性，从而考虑系统的连续特性。具体而言，我们引入了距离加权的实际原因和距离加权的责任程度的新概念，使因果影响能够考虑避免故障所需的变化幅度，而不仅仅是其基数。尽管受到CPS连续特性的启发，这构成了实际因果理论的一个一般扩展，并使得在任何因果模型中对连续输入进行更细致的分析成为可能。基于这些概念，我们提出了一种高效、实用的系统无关的解释推导算法，该算法利用距离加权的责任来指导解释搜索。我们在两个具有黑箱神经控制器的自主驾驶模拟器的多个环境中对我们的方法进行了实验评估。结果表明，所提出的扩展提供了比当前离散方法更有效的指导。",
+  "arxiv_id": "2610.30737",
+  "arxiv_url": "https://arxiv.org/abs/2610.30737v1",
+  "authors": [
+    "Tom Yaacov",
+    "David A. Kelly",
+    "Khen Elimelech",
+    "Hana Chockler"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-30737",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.601676+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.30737v1",
+  "published_at": "2026-10-22T05:08:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.30737v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "Causal Analysis of Failures of Cyber-Physical Systems with Continuous Inputs",
+  "title_zh": "具有连续输入的网络物理系统故障的因果分析",
+  "translation_url": "https://hjfy.top/arxiv/2610.30737"
+}

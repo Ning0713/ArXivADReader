@@ -1,0 +1,55 @@
+{
+  "abstract": "Diffusion trajectory planners with domain-specific experts face a practical question in unseen regions: can they rely on selecting among existing experts, or must the planner itself adapt? We study this question using a planner with a shared adapter and per-domain expert adapters. Across three real-world held-out maps, none of eight test-time routing schemes improves the fleet-mean lateral offset over the static default, which uses the same expert for every scene. Even an oracle that selects the best expert for each scene reduces the mean offset by only 0.9 m. In contrast, reward-based fine-tuning on just 20 target-region scenes yields substantially larger gains. On matched evaluation slices, joint replay achieves a fleet-mean offset of 6.9 m, compared with 12.4 m for the static default. Comparisons under the same target-region training budget show that target-region training drives the improvement, while replaying training scenes limits forgetting on the original ODDs. On nuPlan, fine-tuning across training cities also improves open-loop offsets, although closed-loop performance deteriorates. Further diagnostics reveal that two test-time adaptation baselines achieve low offsets by producing degenerate trajectories. These results show the limited headroom for selecting among existing experts and the greater open-loop gains available from adapting the planner.",
+  "abstract_zh": "具有领域特定专家的扩散轨迹规划器在未见区域面临一个实际问题：它们能否依赖于在现有专家中进行选择，还是规划器本身必须进行适应？我们使用一个具有共享适配器和每个领域专家适配器的规划器来研究这个问题。在三个真实的保留地图上，八种测试时路由方案均未能改善舰队平均横向偏移，相较于静态默认方案，后者在每个场景中使用相同的专家。即使是一个选择每个场景最佳专家的神谕，平均偏移也仅减少了0.9米。相比之下，仅在20个目标区域场景上进行基于奖励的微调则带来了显著更大的收益。在匹配的评估片段中，联合重放实现了6.9米的舰队平均偏移，而静态默认方案为12.4米。在相同目标区域训练预算下的比较显示，目标区域训练推动了改进，而重放训练场景则限制了对原始ODDs的遗忘。在nuPlan上，跨训练城市的微调也改善了开环偏移，尽管闭环性能有所下降。进一步的诊断显示，两个测试时适应基线通过产生退化轨迹实现了低偏移。这些结果表明，在现有专家中进行选择的空间有限，而通过适应规划器可以获得更大的开环收益。",
+  "arxiv_id": "2610.31095",
+  "arxiv_url": "https://arxiv.org/abs/2610.31095v1",
+  "authors": [
+    "Yun Li",
+    "Ehsan Javanmardi",
+    "Simon Thompson",
+    "Jiachen Gong",
+    "Qunli Zhang",
+    "Zifan Zeng",
+    "Shiming Liu",
+    "Peng Wang",
+    "Yidu Zhang",
+    "Manabu Tsukada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-23#paper-2610-31095",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-23T09:42:16.609006+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.31095v1",
+  "published_at": "2026-10-22T11:06:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuplan",
+      "诊断"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-23"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.31095v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-23"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "世界模型/生成"
+    ]
+  },
+  "title": "To Route or to Adapt? Multi-Expert Diffusion Planners in Unseen Regions",
+  "title_zh": "选择还是适应？未见区域中的多专家扩散规划器",
+  "translation_url": "https://hjfy.top/arxiv/2610.31095"
+}
