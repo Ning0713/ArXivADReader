@@ -1,0 +1,60 @@
+{
+  "abstract": "Achieving accurate, real-time lane-keeping control during high-speed cornering on large-curvature roads while ensuring robust vehicle stability is a critical challenge in autonomous driving. To address this challenge, this study developed a robust offset-free model predictive control (OF-MPC) framework for vision-based autonomous vehicle lane-keeping. The regulation problem in this framework is solved using several algorithms. Numerical simulation results indicated that the interpolation-tube-based constrained iterative linear quadratic regulator (itube-CILQR) algorithm outperformed solvers based on the standard Interior Point Optimizer (IPOPT) and Operator Splitting Quadratic Program (OSQP), achieving a mean computation time of less than 5 ms. The itube-CILQR algorithm was then used for vehicle control in vision-based lane-keeping experiments in a simulation environment to quantify the perceptual uncertainty of a visual perception model (multitask UNet). This quantification was performed using the OF-MPC framework for traffic scenes that were not encountered during model training. Overall, the developed OF-MPC framework and the proposed method for characterizing the perceptual uncertainty of a visual perception system in unseen environments can contribute to the future development of advanced autonomous driving systems.",
+  "abstract_zh": "在高速转弯的大曲率道路上实现准确的实时车道保持控制，同时确保车辆的鲁棒稳定性，是自动驾驶中的一项关键挑战。为了解决这一挑战，本研究开发了一种面向视觉的自动驾驶车辆车道保持的鲁棒无偏差模型预测控制（Offset-Free Model Predictive Control, OF-MPC）框架。该框架中的调节问题通过多种算法进行求解。数值仿真结果表明，基于插值管的约束迭代线性二次调节器（interpolation-tube-based constrained iterative linear quadratic regulator, itube-CILQR）算法的性能优于基于标准内部点优化器（Interior Point Optimizer, IPOPT）和算子分裂二次规划（Operator Splitting Quadratic Program, OSQP）的求解器，平均计算时间低于5毫秒。随后，itube-CILQR算法被用于在仿真环境中进行视觉基础的车道保持实验，以量化视觉感知模型（多任务UNet）的感知不确定性。这一量化是在OF-MPC框架下针对在模型训练过程中未遇到的交通场景进行的。总体而言，所开发的OF-MPC框架及其在未知环境中表征视觉感知系统感知不确定性的方法，能够为未来先进自动驾驶系统的发展做出贡献。",
+  "arxiv_id": "2610.32666",
+  "arxiv_url": "https://arxiv.org/abs/2610.32666v1",
+  "authors": [
+    "Der-Hau Lee"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-26#paper-2610-32666",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-26T10:41:58.483544+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.32666v1",
+  "published_at": "2026-10-23T14:08:57Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicle",
+      "automated vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.32666v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-26"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "预测/规划"
+    ]
+  },
+  "title": "Robust Offset-Free Lane-Keeping Control Framework for Vision-Only Automated Vehicles",
+  "title_zh": "面向视觉的自动驾驶车辆的鲁棒无偏差车道保持控制框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.32666"
+}

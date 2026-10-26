@@ -1,0 +1,60 @@
+{
+  "abstract": "Production lane keeping assist (LKA) systems tell the driver whether they detect the lane markings, but whether this displayed status reflects what the system perceives, and what happens when it does not, has not been examined in real-world driving. This study introduces CANDID-LKA, a CAN-based Diagnosis of the Indicated Detection status in LKA. It evaluates a proprietary driver-facing status using three signals: the displayed status and the steering torque of the driver, both recorded from the controller area network (CAN) bus of the vehicle, and the lane perception confidence of a third-party vision system observing the same road. The framework examines how the status responds to driving conditions and estimates how completely it reports degraded lane perception by comparing it with the other two signals in a latent-class model. We apply it to 39,800 seconds of real-world driving from 13 vehicle models of three manufacturers. The results show that the status does not respond consistently to the conditions that make markings harder to see, and that the three makes differ widely in how often they report not detected. The latent-class model shows that the displayed status is incomplete: it reports only 47% of degraded seconds as not detected, compared with 80% for the third-party low perception confidence, and in half of the low-confidence episodes it never reports not detected. In the silent seconds in which the status reads detected while the perception confidence is low and the driver is not in control, the standard deviation of lateral position over the next 3 s is about 60% larger than when the status and the perception confidence agree. A detected status thus does not guarantee reliable lane perception, and silence with the driver not in control is the case that most needs attention.",
+  "abstract_zh": "生产线保持辅助（LKA）系统告知驾驶员是否检测到车道标记，但这种显示状态是否反映系统的感知，以及在未检测到时会发生什么，尚未在实际驾驶中进行研究。本研究引入了CANDID-LKA，一个基于CAN的LKA指示检测状态的诊断工具。它使用三个信号评估专有的面向驾驶员的状态：从车辆的控制器局域网络（CAN）总线记录的显示状态和驾驶员的转向扭矩，以及观察同一路段的第三方视觉系统的车道感知置信度。该框架考察状态如何响应驾驶条件，并通过在潜在类别模型中与其他两个信号进行比较，估计其报告退化车道感知的完整性。我们将其应用于来自三家制造商的13种车型的39,800秒的实际驾驶数据。结果表明，状态对使标记更难以看到的条件反应不一致，并且三种车型在报告未检测到的频率上差异显著。潜在类别模型显示，显示状态是不完整的：它仅将47%的退化秒报告为未检测到，而第三方低感知置信度的报告为80%，在一半的低置信度事件中，它从未报告未检测到。在状态显示为检测到而感知置信度低且驾驶员未控制的静默秒中，接下来3秒的横向位置标准差约比状态和感知置信度一致时大60%。因此，检测到的状态并不保证可靠的车道感知，而在驾驶员未控制的情况下的沉默是最需要关注的情况。",
+  "arxiv_id": "2610.31899",
+  "arxiv_url": "https://arxiv.org/abs/2610.31899v1",
+  "authors": [
+    "Tianjia Yang",
+    "Yuxin Ding",
+    "Ke Li",
+    "Kaidi Liang",
+    "Ruwen Qin",
+    "Xianbiao Hu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-26#paper-2610-31899",
+  "categories": [
+    "cs.RO",
+    "cs.HC",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-26T10:41:58.454094+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.31899v1",
+  "published_at": "2026-10-22T20:52:46Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "road",
+      "lane",
+      "驾驶",
+      "车辆",
+      "车道",
+      "diagnosis",
+      "诊断"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 35
+  },
+  "seen_dates": [
+    "2026-10-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.31899v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-26"
+  },
+  "summary_zh": "本文针对量产车道保持辅助系统的感知退化漏报问题，提出结合CAN显示状态、驾驶员转向扭矩与第三方视觉置信度的诊断框架。对13款车型的真实驾驶数据分析发现，系统仅报告约47%的感知退化时段；在低置信度、未警示且驾驶员未控制车辆时，随后3秒的横向位置波动约增加60%，揭示了辅助驾驶状态提示不完整所带来的安全风险。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Silence Is Not Assurance: When Production Lane Keeping Assist Does Not Warn, and What It Costs",
+  "title_zh": "沉默并不等于保障：当生产线保持辅助系统不发出警告时，以及其代价",
+  "translation_url": "https://hjfy.top/arxiv/2610.31899"
+}

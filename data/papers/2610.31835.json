@@ -1,0 +1,61 @@
+{
+  "abstract": "Temporary traffic control redirects vehicles through work zones, requiring automated vehicles to connect an interpretation of the visible devices to a continuous passing path. Geometric predictors can provide several plausible paths, yet selecting the one consistent with the temporary control remains difficult. We propose SAGE (Semantic-to-Action Grounded Execution), a read-decide-execute-check framework that separates path construction, path preference, and control compliance within a shared candidate space. The central idea is to use a vision-language model's (VLM's) trajectory as a preference over intact geometric candidates. A role-decoupled generator constructs the candidates, and rank fusion combines each candidate's geometric score with its agreement with the VLM trajectory. Supervision structured around the Manual on Uniform Traffic Control Devices (MUTCD) trains SAGE-VLM to state the lane status and hazard side before its passage decision and trajectory. The predicted hazard side enters image-space predicates derived from MUTCD provisions, which support a final intervention bounded in score and displacement. On 2,306 real-world ROADWork validation episodes, the candidates include a path within 10 px of the human demonstration in 87% of episodes, yet selection regret accounts for 53% of the geometric ranker's error. SAGE reduces average and final displacement errors by 8.3% and 12.0% relative to the ranker, mostly in the far field, and hard-constraint violations by 37%. The trajectory opinion improves all four tested generator-selector combinations. SAGE is comparable to state-of-the-art VLM modules in accuracy, with a faster-responding VLM, and outperforms four other adapted driving VLMs in displacement error and safety measures. Project page: https://hhjj233.github.io/SAGE-page/.",
+  "abstract_zh": "临时交通控制通过工作区重新引导车辆，这要求自动驾驶车辆将可见设备的解释与连续的通行路径相连接。几何预测器可以提供多条合理的路径，但选择与临时控制一致的路径仍然困难。我们提出了SAGE（语义到行动的基础执行），这是一个读-决策-执行-检查框架，它在共享候选空间内分离路径构建、路径偏好和控制合规性。核心思想是使用视觉-语言模型（VLM）的轨迹作为对完整几何候选的偏好。一个角色解耦生成器构建候选路径，而排名融合则将每个候选的几何得分与其与VLM轨迹的一致性结合起来。围绕《统一交通控制设备手册》（MUTCD）构建的监督训练SAGE-VLM，以在其通行决策和轨迹之前陈述车道状态和危险侧。预测的危险侧进入源自MUTCD条款的图像空间谓词，这支持一个在得分和位移上有界的最终干预。在2306个真实世界的ROADWork验证案例中，候选路径在87%的案例中与人类演示的路径相距10像素以内，但选择后悔占几何排名器错误的53%。SAGE相较于排名器减少了平均和最终位移错误8.3%和12.0%，主要在远场，并减少了硬约束违规37%。轨迹意见改善了所有四种测试的生成器-选择器组合。SAGE在准确性上与最先进的VLM模块相当，且响应更快，并在位移错误和安全措施上优于其他四种改编的驾驶VLM。项目页面：https://hhjj233.github.io/SAGE-page/",
+  "arxiv_id": "2610.31835",
+  "arxiv_url": "https://arxiv.org/abs/2610.31835v1",
+  "authors": [
+    "Jiaxi Liu",
+    "Keshu Wu",
+    "Weizhe Tang",
+    "Bofeng Cao",
+    "Sikai Chen",
+    "Xiaopeng Li",
+    "Steven T. Parker",
+    "Bin Ran"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-26#paper-2610-31835",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-26T10:41:58.498909+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.31835v1",
+  "published_at": "2026-10-22T19:14:17Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automated vehicles",
+      "自动驾驶",
+      "driving",
+      "traffic",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通",
+      "车道"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-10-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.31835v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-26"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "VLM/VLA"
+    ]
+  },
+  "title": "SAGE: A hybrid vision-language and geometry framework for work-zone pathway prediction under temporary traffic control",
+  "title_zh": "SAGE：一种用于临时交通控制下工作区路径预测的混合视觉-语言与几何框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.31835"
+}

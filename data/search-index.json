@@ -1,6 +1,196 @@
 {
-  "generated_at": "2026-10-23T09:43:21.404299+00:00",
+  "generated_at": "2026-10-26T10:44:29.190515+00:00",
   "items": [
+    {
+      "abstract": "Achieving accurate, real-time lane-keeping control during high-speed cornering on large-curvature roads while ensuring robust vehicle stability is a critical challenge in autonomous driving. To address this challenge, this study developed a robust offset-free model predictive control (OF-MPC) framework for vision-based autonomous vehicle lane-keeping. The regulation problem in this framework is solved using several algorithms. Numerical simulation results indicated that the interpolation-tube-based constrained iterative linear quadratic regulator (itube-CILQR) algorithm outperformed solvers based on the standard Interior Point Optimizer (IPOPT) and Operator Splitting Quadratic Program (OSQP), achieving a mean computation time of less than 5 ms. The itube-CILQR algorithm was then used for vehicle control in vision-based lane-keeping experiments in a simulation environment to quantify the perceptual uncertainty of a visual perception model (multitask UNet). This quantification was performed using the OF-MPC framework for traffic scenes that were not encountered during model training. Overall, the developed OF-MPC framework and the proposed method for characterizing the perceptual uncertainty of a visual perception system in unseen environments can contribute to the future development of advanced autonomous driving systems.",
+      "abstract_zh": "在高速转弯的大曲率道路上实现准确的实时车道保持控制，同时确保车辆的鲁棒稳定性，是自动驾驶中的一项关键挑战。为了解决这一挑战，本研究开发了一种面向视觉的自动驾驶车辆车道保持的鲁棒无偏差模型预测控制（Offset-Free Model Predictive Control, OF-MPC）框架。该框架中的调节问题通过多种算法进行求解。数值仿真结果表明，基于插值管的约束迭代线性二次调节器（interpolation-tube-based constrained iterative linear quadratic regulator, itube-CILQR）算法的性能优于基于标准内部点优化器（Interior Point Optimizer, IPOPT）和算子分裂二次规划（Operator Splitting Quadratic Program, OSQP）的求解器，平均计算时间低于5毫秒。随后，itube-CILQR算法被用于在仿真环境中进行视觉基础的车道保持实验，以量化视觉感知模型（多任务UNet）的感知不确定性。这一量化是在OF-MPC框架下针对在模型训练过程中未遇到的交通场景进行的。总体而言，所开发的OF-MPC框架及其在未知环境中表征视觉感知系统感知不确定性的方法，能够为未来先进自动驾驶系统的发展做出贡献。",
+      "authors": [
+        "Der-Hau Lee"
+      ],
+      "date": "2026-10-26",
+      "id": "2610.32666",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "预测/规划"
+      ],
+      "title": "Robust Offset-Free Lane-Keeping Control Framework for Vision-Only Automated Vehicles",
+      "title_zh": "面向视觉的自动驾驶车辆的鲁棒无偏差车道保持控制框架",
+      "url": "/daily/2026-10-26/#paper-2610-32666"
+    },
+    {
+      "abstract": "Recent advances in 3D semantic segmentation have significantly improved scene understanding in autonomous driving. However, existing methods are typically developed under a closed-set assumption and evaluated under standard driving conditions, where all categories are known in advance. In real-world driving, autonomous vehicles inevitably encounter previously unseen objects, making closed-set perception insufficient for safe deployment. To address this challenge, we introduce DriveOSS, which, to the best of our knowledge, is the first real-world multimodal dataset and benchmark specifically designed for 3D anomaly segmentation and open-set semantic segmentation. It contains 12,661 synchronized and annotated frames captured using six surround-view RGB cameras, a 128-beam LiDAR, and a GPS/IMU unit. The dataset comprises 52 real-world driving scenes collected under clear, nighttime, cloudy, rainy, and snowy conditions and is organized into ID (in-distribution) and OOD (out-of-distribution) subsets. The ID scenes contain only known classes and are used for training, whereas the OOD scenes additionally contain unknown objects annotated as the outlier class and are used for validation and testing. Extensive experiments show that unseen objects remain a major challenge for current 3D perception systems. The dataset, benchmark protocols, and code are available at https://github.com/chrisyan/DriveOSS.",
+      "abstract_zh": "近年来，3D语义分割的进展显著提高了自主驾驶中的场景理解能力。然而，现有方法通常是在封闭集假设下开发，并在标准驾驶条件下进行评估，其中所有类别均已提前知晓。在实际驾驶中，自主车辆不可避免地会遇到之前未见过的物体，这使得封闭集感知不足以确保安全部署。为了解决这一挑战，我们引入了DriveOSS，据我们所知，这是第一个专门为3D异常分割和开放集语义分割设计的真实世界多模态数据集和基准。该数据集包含12,661帧同步标注的图像，这些图像是使用六个环视RGB摄像头、一个128束激光雷达和一个GPS/IMU单元捕获的。数据集包括52个在晴天、夜间、多云、下雨和下雪条件下收集的真实世界驾驶场景，并分为ID（在分布内）和OOD（分布外）子集。ID场景仅包含已知类别，用于训练，而OOD场景则额外包含标注为异常类的未知物体，用于验证和测试。大量实验表明，未见物体仍然是当前3D感知系统面临的主要挑战。数据集、基准协议和代码可在https://github.com/chrisyan/DriveOSS获取。",
+      "authors": [
+        "Zhiran Yan",
+        "Savankumar Bhanderi",
+        "Sourabh Lolge",
+        "Rui Song",
+        "Girdharbhai Paneliya",
+        "Shiva Agrawal",
+        "Gordon Elger"
+      ],
+      "date": "2026-10-26",
+      "id": "2610.32612",
+      "tags": [
+        "感知",
+        "安全/异常",
+        "仿真/数据"
+      ],
+      "title": "DriveOSS: Dataset and Benchmark for 3D Anomaly Segmentation and Open-set Semantic Segmentation in Autonomous Driving",
+      "title_zh": "DriveOSS：用于自主驾驶中的3D异常分割和开放集语义分割的数据集与基准",
+      "url": "/daily/2026-10-26/#paper-2610-32612"
+    },
+    {
+      "abstract": "Vision-language models (VLMs) process images and text jointly, yet robustness evaluations often perturb these inputs separately or assess only predefined corruption levels. Such evaluations provide limited evidence of which modality is more susceptible to perturbations and whether smaller changes across both modalities can jointly expose failures. We present MoST, a black-box testing framework that characterizes modality sensitivity by comparing image-only, text-only, and joint perturbations. MoST uses multi-objective search to select and combine perturbations and adjust their severity, seeking prediction degradation while limiting changes to images and prompts. We evaluate MoST on four VLMs performing object localization on ImageNet and driving images. The models exhibit distinct sensitivities: textual perturbations dominate for some, whereas others are susceptible across both modalities. In several configurations, joint perturbations match or exceed the effectiveness of single-modality perturbations with smaller modifications to each input. In a human study, 60-76% of assessments across models judge the perturbed inputs sufficiently understandable to perform the task, and human localization is more accurate than that of the corresponding VLMs. These results show that evaluating modalities separately can overlook failure-inducing combinations and that modality sensitivity provides a more detailed account of VLM robustness than aggregate failure rates alone.",
+      "abstract_zh": "视觉语言模型（VLMs）同时处理图像和文本，但鲁棒性评估通常分别扰动这些输入或仅评估预定义的损坏水平。这种评估提供了有限的证据，无法确定哪种模态对扰动更敏感，以及是否在两个模态中较小的变化可以共同暴露出失败。我们提出了MoST，一个黑箱测试框架，通过比较仅图像、仅文本和联合扰动来表征模态敏感性。MoST使用多目标搜索来选择和组合扰动，并调整其严重性，寻求预测性能的下降，同时限制对图像和提示的更改。我们在四个VLMs上评估MoST，这些模型在ImageNet和驾驶图像上执行物体定位。模型表现出不同的敏感性：对于某些模型，文本扰动占主导地位，而其他模型在两个模态中都表现出敏感性。在多个配置中，联合扰动的效果与单模态扰动相匹配或超过，并且对每个输入的修改更小。在一项人类研究中，60-76%的评估认为扰动后的输入足够可理解以完成任务，而人类的定位准确性高于相应的VLMs。这些结果表明，单独评估模态可能会忽视导致失败的组合，而模态敏感性提供了比单纯的聚合失败率更详细的VLM鲁棒性描述。",
+      "authors": [
+        "Oliver Weißl",
+        "Eduardo Breitembach",
+        "Andrea Stocco"
+      ],
+      "date": "2026-10-26",
+      "id": "2610.32360",
+      "tags": [
+        "VLM/VLA",
+        "安全/异常",
+        "感知"
+      ],
+      "title": "Search-Based Testing of Modality Sensitivity in Vision Language Models",
+      "title_zh": "基于搜索的视觉语言模型模态敏感性测试",
+      "url": "/daily/2026-10-26/#paper-2610-32360"
+    },
+    {
+      "abstract": "Modern autonomous driving systems widely adopt multi-view Bird's-Eye-View (BEV) based 3D perception models due to their superior performance. Despite their success, the robustness of these models against adversarial camouflage attacks remains largely unexplored. Existing camouflage attacks primarily target single-view 2D detectors, limiting their effectiveness in multi-view 3D perception settings. To address this gap, we propose BEVCA, a novel adversarial camouflage generation framework tailored for multi-view BEV-based 3D perception. Our framework integrates a BEV-feature-based adversarial loss with a multi-view neural rendering module, enabling effective and transferable camouflage attacks across different models and tasks. Extensive experiments in both digital and physical settings demonstrate that BEVCA outperforms state-of-the-art baselines and exhibits strong robustness under real-world conditions. Our code is available at https://github.com/WAVE-AT-IDEA/BEVCA.",
+      "abstract_zh": "现代自动驾驶系统广泛采用基于多视角鸟瞰图（BEV）的3D感知模型，因其卓越的性能。尽管取得了成功，这些模型在面对对抗性伪装攻击时的鲁棒性仍然未得到充分探索。现有的伪装攻击主要针对单视角2D检测器，限制了其在多视角3D感知环境中的有效性。为了解决这一问题，我们提出了BEVCA，一种专为多视角BEV基础的3D感知量身定制的新型对抗性伪装生成框架。我们的框架将基于BEV特征的对抗损失与多视角神经渲染模块相结合，使得在不同模型和任务中实现有效且可转移的伪装攻击。大量在数字和物理环境中的实验表明，BEVCA在性能上优于现有的最先进基线，并在现实世界条件下表现出强大的鲁棒性。我们的代码可在https://github.com/WAVE-AT-IDEA/BEVCA获取。",
+      "authors": [
+        "Linye Lyu",
+        "Jiawei Zhou",
+        "Daojing He",
+        "Yu Li"
+      ],
+      "date": "2026-10-26",
+      "id": "2610.32230",
+      "tags": [
+        "感知",
+        "BEV/Occupancy",
+        "世界模型/生成"
+      ],
+      "title": "Towards Effective and Transferable Physical Camouflage against Multi-View BEV-based 3D Perception in Autonomous Driving",
+      "title_zh": "针对多视角鸟瞰图（BEV）基础的自动驾驶3D感知的有效且可转移的物理伪装",
+      "url": "/daily/2026-10-26/#paper-2610-32230"
+    },
+    {
+      "abstract": "Traversability analysis in off-road settings remains a fundamental challenge for mobile robots. Key difficulties include constructing an accurate and expressive local map from multimodal sensor data, and using the map to design traversability rules that yield desirable navigation behavior. Importantly, this system must be resilient to the limited sensing regime brought about by complex environments and high speeds. In this paper, we present TravSUITE, a traversability system suitable for high-speed navigation in off-road environments. TravSUITE consists of two major components: 1) an efficient voxel mapper that leverages visual foundation models (VFMs) to build a rich geometric-semantic local map from streams of on-board sensor data, and 2) a unified neural network that jointly predicts traversability-relevant quantities in bird's eye view (BEV), including geometry, semantics, speed and cost. Our training strategy is entirely annotation-free and self-supervised, leveraging tasks such as map inpainting and inverse reinforcement learning (IRL) to learn both map representations and traversability. We perform a thorough ablation study and comparison to state-of-the-art approaches, and the results indicate that cost learning and auxiliary inpainting each contribute significantly to planning quality, and their combination is critical for achieving state-of-the-art performance in off-road path planning. We also design a simple risk adaptation mechanism to leverage our method's uncertainty estimates at deploy-time, and demonstrate that a combination of inpainting and risk estimation can result in 80% fewer navigation errors and 5% faster autonomous traversal speeds in real-world hardware experiments.",
+      "abstract_zh": "越野环境中的可通行性分析仍然是移动机器人面临的一个基本挑战。主要困难包括从多模态传感器数据构建准确且富有表现力的局部地图，以及利用该地图设计可通行性规则以实现理想的导航行为。重要的是，该系统必须对复杂环境和高速带来的有限感知模式具有鲁棒性。本文提出了TravSUITE，一个适用于越野环境中高速导航的可通行性系统。TravSUITE由两个主要组件组成：1）一个高效的体素映射器，利用视觉基础模型（VFMs）从车载传感器数据流中构建丰富的几何-语义局部地图；2）一个统一的神经网络，联合预测鸟瞰图（BEV）中与可通行性相关的量，包括几何、语义、速度和成本。我们的训练策略完全无注释且自监督，利用地图修复和逆强化学习（IRL）等任务来学习地图表示和可通行性。我们进行了全面的消融研究，并与最先进的方法进行了比较，结果表明，成本学习和辅助修复对规划质量均有显著贡献，而它们的结合对于在越野路径规划中实现最先进的性能至关重要。我们还设计了一种简单的风险适应机制，以利用我们方法在部署时的不确定性估计，并证明修复与风险估计的结合可以在真实硬件实验中减少80%的导航错误，并使自主穿越速度提高5%。",
+      "authors": [
+        "Samuel Triest",
+        "Amirreza Shaban",
+        "David D. Fan",
+        "Wenshan Wang",
+        "Sebastian Scherer"
+      ],
+      "date": "2026-10-26",
+      "id": "2610.32130",
+      "tags": [
+        "深度/几何",
+        "预测/规划",
+        "感知"
+      ],
+      "title": "TravSUITE: Traversability via Self-Supervised, Uncertainty-Aware IRL and Terrain Estimation",
+      "title_zh": "TravSUITE：基于自监督和不确定性感知的逆强化学习与地形估计的可通行性分析",
+      "url": "/daily/2026-10-26/#paper-2610-32130"
+    },
+    {
+      "abstract": "Recent multimodal large language models (MLLMs) can perceive a traffic scene, reason about it, and propose a driving action within a single model. However, existing MLLM-based drivers reason from scratch at each frame and commit to a single explanation, discarding earlier hypotheses about the scene. When the scene is ambiguous, the agent locks in on the wrong interpretation and acts on it before evidence accumulates. In this paper, we propose DriveMind, an MLLM-based driving framework that keeps several hypotheses about the scene alive at the same time and updates their weights as new frames arrive. Inspired by particle filtering, DriveMind propagates each hypothesis through a VLM, scores it against the current observation, and resamples to maintain diversity. On Bench2Drive, adding belief tracking to the same driving pipeline improves the Driving Score (DS) from 68.50 to 81.37 and the Success Rate (SR) from 41.36% to 54.09%. The largest gains occur on ambiguous scenarios such as unsignalized intersections (+20.0 DS) and oncoming-traffic interactions (+20.5 DS). Beyond the overall metrics, DriveMind also improves fine-grained interactive driving abilities such as merging, emergency braking, and give-way.",
+      "abstract_zh": "最近的多模态大型语言模型（MLLMs）能够在单一模型中感知交通场景、进行推理并提出驾驶行动。然而，现有的基于MLLM的驾驶系统在每一帧中都是从头开始推理，并且只承诺于单一解释，抛弃了关于场景的早期假设。当场景模糊时，智能体会锁定错误的解释并在证据积累之前采取行动。本文提出了DriveMind，这是一种基于MLLM的驾驶框架，能够同时保持多个关于场景的假设，并在新帧到达时更新它们的权重。受粒子滤波的启发，DriveMind通过视觉语言模型（VLM）传播每个假设，并根据当前观察对其进行评分，然后重新采样以保持多样性。在Bench2Drive上，将信念追踪添加到相同的驾驶管道中使驾驶评分（Driving Score, DS）从68.50提高到81.37，成功率（Success Rate, SR）从41.36%提高到54.09%。在模糊场景中，如无信号交叉口（+20.0 DS）和迎面交通交互（+20.5 DS），获得的增益最大。除了整体指标外，DriveMind还改善了细粒度的互动驾驶能力，如并线、紧急制动和让行。",
+      "authors": [
+        "Yan Shi",
+        "Kehua Chen",
+        "Jiarui Qi",
+        "Yihong Tang",
+        "Haichen Liao",
+        "Yinhai Wang"
+      ],
+      "date": "2026-10-26",
+      "id": "2610.32069",
+      "tags": [
+        "感知",
+        "VLM/VLA"
+      ],
+      "title": "DriveMind: Mind-Evolving Belief Tracking for Closed-Loop Autonomous Driving",
+      "title_zh": "DriveMind：闭环自主驾驶的思维进化信念追踪",
+      "url": "/daily/2026-10-26/#paper-2610-32069"
+    },
+    {
+      "abstract": "Production lane keeping assist (LKA) systems tell the driver whether they detect the lane markings, but whether this displayed status reflects what the system perceives, and what happens when it does not, has not been examined in real-world driving. This study introduces CANDID-LKA, a CAN-based Diagnosis of the Indicated Detection status in LKA. It evaluates a proprietary driver-facing status using three signals: the displayed status and the steering torque of the driver, both recorded from the controller area network (CAN) bus of the vehicle, and the lane perception confidence of a third-party vision system observing the same road. The framework examines how the status responds to driving conditions and estimates how completely it reports degraded lane perception by comparing it with the other two signals in a latent-class model. We apply it to 39,800 seconds of real-world driving from 13 vehicle models of three manufacturers. The results show that the status does not respond consistently to the conditions that make markings harder to see, and that the three makes differ widely in how often they report not detected. The latent-class model shows that the displayed status is incomplete: it reports only 47% of degraded seconds as not detected, compared with 80% for the third-party low perception confidence, and in half of the low-confidence episodes it never reports not detected. In the silent seconds in which the status reads detected while the perception confidence is low and the driver is not in control, the standard deviation of lateral position over the next 3 s is about 60% larger than when the status and the perception confidence agree. A detected status thus does not guarantee reliable lane perception, and silence with the driver not in control is the case that most needs attention.",
+      "abstract_zh": "生产线保持辅助（LKA）系统告知驾驶员是否检测到车道标记，但这种显示状态是否反映系统的感知，以及在未检测到时会发生什么，尚未在实际驾驶中进行研究。本研究引入了CANDID-LKA，一个基于CAN的LKA指示检测状态的诊断工具。它使用三个信号评估专有的面向驾驶员的状态：从车辆的控制器局域网络（CAN）总线记录的显示状态和驾驶员的转向扭矩，以及观察同一路段的第三方视觉系统的车道感知置信度。该框架考察状态如何响应驾驶条件，并通过在潜在类别模型中与其他两个信号进行比较，估计其报告退化车道感知的完整性。我们将其应用于来自三家制造商的13种车型的39,800秒的实际驾驶数据。结果表明，状态对使标记更难以看到的条件反应不一致，并且三种车型在报告未检测到的频率上差异显著。潜在类别模型显示，显示状态是不完整的：它仅将47%的退化秒报告为未检测到，而第三方低感知置信度的报告为80%，在一半的低置信度事件中，它从未报告未检测到。在状态显示为检测到而感知置信度低且驾驶员未控制的静默秒中，接下来3秒的横向位置标准差约比状态和感知置信度一致时大60%。因此，检测到的状态并不保证可靠的车道感知，而在驾驶员未控制的情况下的沉默是最需要关注的情况。",
+      "authors": [
+        "Tianjia Yang",
+        "Yuxin Ding",
+        "Ke Li",
+        "Kaidi Liang",
+        "Ruwen Qin",
+        "Xianbiao Hu"
+      ],
+      "date": "2026-10-26",
+      "id": "2610.31899",
+      "tags": [
+        "安全/异常",
+        "感知"
+      ],
+      "title": "Silence Is Not Assurance: When Production Lane Keeping Assist Does Not Warn, and What It Costs",
+      "title_zh": "沉默并不等于保障：当生产线保持辅助系统不发出警告时，以及其代价",
+      "url": "/daily/2026-10-26/#paper-2610-31899"
+    },
+    {
+      "abstract": "Traffic safety videos provide rich evidence for understanding interactions between pedestrians and vehicles, but synthetic-to-real evaluation makes this setting challenging because models must learn from simulated scenes and generalize to real-world traffic. In this work, we present StateBridge, a traffic video-language framework designed to operate under this synthetic-only training protocol. Our approach uses phase-aware clip construction, pedestrian and vehicle track summaries, and structured prompts to ground vision-language models in stable traffic evidence rather than appearance alone. We fine-tune public vision-language models on synthetic captioning and visual question answering examples, then combine their outputs through fact-locked caption fusion and evidence-diverse VQA consensus to improve consistency across actor roles, behavioral phases, and question types. StateBridge achieves an official S2 score of 55.4679 on AI City Challenge 2026 Track 2 using only synthetic training data. These results demonstrate the effectiveness of structured evidence transfer for traffic safety captioning and visual question answering.",
+      "abstract_zh": "交通安全视频为理解行人和车辆之间的互动提供了丰富的证据，但合成到真实的评估使得这一设置变得具有挑战性，因为模型必须从模拟场景中学习并推广到真实世界的交通中。在本研究中，我们提出了StateBridge，一个旨在在这种仅限合成训练协议下操作的交通视频-语言框架。我们的方法使用阶段感知的片段构建、行人和车辆轨迹摘要以及结构化提示，将视觉-语言模型基于稳定的交通证据而非单纯的外观进行锚定。我们在合成字幕生成和视觉问答示例上对公共视觉-语言模型进行了微调，然后通过事实锁定的字幕融合和证据多样的视觉问答共识来结合它们的输出，以提高在参与者角色、行为阶段和问题类型之间的一致性。StateBridge在仅使用合成训练数据的情况下，在AI City Challenge 2026 Track 2上取得了官方S2得分55.4679。这些结果证明了结构化证据转移在交通安全字幕生成和视觉问答中的有效性。",
+      "authors": [
+        "Blessing Agyei Kyem",
+        "Richard Dzinyela",
+        "Joshua Kofi Asamoah",
+        "Eugene Denteh",
+        "Andrews Danyo",
+        "Solomon Owusu-Ansah",
+        "Dickson Gyimah Asiedu",
+        "Armstrong Aboah"
+      ],
+      "date": "2026-10-26",
+      "id": "2610.31898",
+      "tags": [
+        "VLM/VLA",
+        "仿真/数据",
+        "安全/异常"
+      ],
+      "title": "StateBridge: Phase- and Track-Grounded Reasoning for Synthetic-to-Real Traffic Video Captioning and VQA",
+      "title_zh": "StateBridge：基于阶段和轨迹的合成到真实交通视频字幕生成与视觉问答推理",
+      "url": "/daily/2026-10-26/#paper-2610-31898"
+    },
+    {
+      "abstract": "Temporary traffic control redirects vehicles through work zones, requiring automated vehicles to connect an interpretation of the visible devices to a continuous passing path. Geometric predictors can provide several plausible paths, yet selecting the one consistent with the temporary control remains difficult. We propose SAGE (Semantic-to-Action Grounded Execution), a read-decide-execute-check framework that separates path construction, path preference, and control compliance within a shared candidate space. The central idea is to use a vision-language model's (VLM's) trajectory as a preference over intact geometric candidates. A role-decoupled generator constructs the candidates, and rank fusion combines each candidate's geometric score with its agreement with the VLM trajectory. Supervision structured around the Manual on Uniform Traffic Control Devices (MUTCD) trains SAGE-VLM to state the lane status and hazard side before its passage decision and trajectory. The predicted hazard side enters image-space predicates derived from MUTCD provisions, which support a final intervention bounded in score and displacement. On 2,306 real-world ROADWork validation episodes, the candidates include a path within 10 px of the human demonstration in 87% of episodes, yet selection regret accounts for 53% of the geometric ranker's error. SAGE reduces average and final displacement errors by 8.3% and 12.0% relative to the ranker, mostly in the far field, and hard-constraint violations by 37%. The trajectory opinion improves all four tested generator-selector combinations. SAGE is comparable to state-of-the-art VLM modules in accuracy, with a faster-responding VLM, and outperforms four other adapted driving VLMs in displacement error and safety measures. Project page: https://hhjj233.github.io/SAGE-page/.",
+      "abstract_zh": "临时交通控制通过工作区重新引导车辆，这要求自动驾驶车辆将可见设备的解释与连续的通行路径相连接。几何预测器可以提供多条合理的路径，但选择与临时控制一致的路径仍然困难。我们提出了SAGE（语义到行动的基础执行），这是一个读-决策-执行-检查框架，它在共享候选空间内分离路径构建、路径偏好和控制合规性。核心思想是使用视觉-语言模型（VLM）的轨迹作为对完整几何候选的偏好。一个角色解耦生成器构建候选路径，而排名融合则将每个候选的几何得分与其与VLM轨迹的一致性结合起来。围绕《统一交通控制设备手册》（MUTCD）构建的监督训练SAGE-VLM，以在其通行决策和轨迹之前陈述车道状态和危险侧。预测的危险侧进入源自MUTCD条款的图像空间谓词，这支持一个在得分和位移上有界的最终干预。在2306个真实世界的ROADWork验证案例中，候选路径在87%的案例中与人类演示的路径相距10像素以内，但选择后悔占几何排名器错误的53%。SAGE相较于排名器减少了平均和最终位移错误8.3%和12.0%，主要在远场，并减少了硬约束违规37%。轨迹意见改善了所有四种测试的生成器-选择器组合。SAGE在准确性上与最先进的VLM模块相当，且响应更快，并在位移错误和安全措施上优于其他四种改编的驾驶VLM。项目页面：https://hhjj233.github.io/SAGE-page/",
+      "authors": [
+        "Jiaxi Liu",
+        "Keshu Wu",
+        "Weizhe Tang",
+        "Bofeng Cao",
+        "Sikai Chen",
+        "Xiaopeng Li",
+        "Steven T. Parker",
+        "Bin Ran"
+      ],
+      "date": "2026-10-26",
+      "id": "2610.31835",
+      "tags": [
+        "深度/几何",
+        "预测/规划",
+        "VLM/VLA"
+      ],
+      "title": "SAGE: A hybrid vision-language and geometry framework for work-zone pathway prediction under temporary traffic control",
+      "title_zh": "SAGE：一种用于临时交通控制下工作区路径预测的混合视觉-语言与几何框架",
+      "url": "/daily/2026-10-26/#paper-2610-31835"
+    },
     {
       "abstract": "LiDAR point cloud semantic segmentation is a fundamental component of 3D perception for autonomous driving and robotics. Projection-based methods map 3D point clouds into 2D representations for feature extraction using 2D networks. However, aggregating multiple points during projection can obscure geometric differences within each frustum, while local feature extraction limits the modeling of spatial relationships across scanning regions. Moreover, proximity in the projected representation does not necessarily imply proximity in 3D space, and interactions between point and projected features may mix features from different ranges, reducing semantic discriminability. To address these challenges, we propose the Ray-aligned and Scan-aware Fusion Network (RaSFNet), which incorporates point cloud geometry and LiDAR scanning characteristics into projection-based semantic segmentation. Specifically, the Ray-Aligned Geometric Distribution Encoding (RAGDE) module characterizes point distributions within each frustum using a ray-aligned coordinate system. To model spatial context, a Scan-Topology-Aware Mamba (STAM) block organizes frustum features according to the LiDAR azimuth sampling pattern and captures long-range dependencies across scanning regions. In addition, a Range-Constrained Point-Frustum Fusion (RCPFF) mechanism uses shared range information to guide feature exchange between point and frustum representations while maintaining spatial correspondence. RaSFNet achieves mIoU scores of 70.2% and 77.7% on the SemanticKITTI and nuScenes validation sets, respectively, indicating competitive segmentation performance compared with the evaluated methods.",
       "abstract_zh": "LiDAR点云语义分割是自动驾驶和机器人技术中3D感知的基础组成部分。基于投影的方法将3D点云映射到2D表示，以便使用2D网络进行特征提取。然而，在投影过程中聚合多个点可能会模糊每个视锥体内的几何差异，而局部特征提取限制了跨扫描区域空间关系的建模。此外，投影表示中的接近性并不一定意味着在3D空间中的接近性，点与投影特征之间的交互可能会混合来自不同范围的特征，从而降低语义可区分性。为了解决这些挑战，我们提出了光线对齐和扫描感知融合网络（RaSFNet），该网络将点云几何和LiDAR扫描特性纳入基于投影的语义分割中。具体而言，光线对齐几何分布编码（RAGDE）模块使用光线对齐坐标系统描述每个视锥体内的点分布。为了建模空间上下文，扫描拓扑感知Mamba（STAM）模块根据LiDAR方位采样模式组织视锥体特征，并捕捉扫描区域之间的长距离依赖关系。此外，范围约束点-视锥体融合（RCPFF）机制利用共享的范围信息指导点与视锥体表示之间的特征交换，同时保持空间对应关系。RaSFNet在SemanticKITTI和nuScenes验证集上分别达到了70.2%和77.7%的mIoU得分，表明与评估方法相比具有竞争力的分割性能。",

@@ -1,0 +1,49 @@
+{
+  "abstract": "Vision-language models (VLMs) process images and text jointly, yet robustness evaluations often perturb these inputs separately or assess only predefined corruption levels. Such evaluations provide limited evidence of which modality is more susceptible to perturbations and whether smaller changes across both modalities can jointly expose failures. We present MoST, a black-box testing framework that characterizes modality sensitivity by comparing image-only, text-only, and joint perturbations. MoST uses multi-objective search to select and combine perturbations and adjust their severity, seeking prediction degradation while limiting changes to images and prompts. We evaluate MoST on four VLMs performing object localization on ImageNet and driving images. The models exhibit distinct sensitivities: textual perturbations dominate for some, whereas others are susceptible across both modalities. In several configurations, joint perturbations match or exceed the effectiveness of single-modality perturbations with smaller modifications to each input. In a human study, 60-76% of assessments across models judge the perturbed inputs sufficiently understandable to perform the task, and human localization is more accurate than that of the corresponding VLMs. These results show that evaluating modalities separately can overlook failure-inducing combinations and that modality sensitivity provides a more detailed account of VLM robustness than aggregate failure rates alone.",
+  "abstract_zh": "视觉语言模型（VLMs）同时处理图像和文本，但鲁棒性评估通常分别扰动这些输入或仅评估预定义的损坏水平。这种评估提供了有限的证据，无法确定哪种模态对扰动更敏感，以及是否在两个模态中较小的变化可以共同暴露出失败。我们提出了MoST，一个黑箱测试框架，通过比较仅图像、仅文本和联合扰动来表征模态敏感性。MoST使用多目标搜索来选择和组合扰动，并调整其严重性，寻求预测性能的下降，同时限制对图像和提示的更改。我们在四个VLMs上评估MoST，这些模型在ImageNet和驾驶图像上执行物体定位。模型表现出不同的敏感性：对于某些模型，文本扰动占主导地位，而其他模型在两个模态中都表现出敏感性。在多个配置中，联合扰动的效果与单模态扰动相匹配或超过，并且对每个输入的修改更小。在一项人类研究中，60-76%的评估认为扰动后的输入足够可理解以完成任务，而人类的定位准确性高于相应的VLMs。这些结果表明，单独评估模态可能会忽视导致失败的组合，而模态敏感性提供了比单纯的聚合失败率更详细的VLM鲁棒性描述。",
+  "arxiv_id": "2610.32360",
+  "arxiv_url": "https://arxiv.org/abs/2610.32360v1",
+  "authors": [
+    "Oliver Weißl",
+    "Eduardo Breitembach",
+    "Andrea Stocco"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-26#paper-2610-32360",
+  "categories": [
+    "cs.CV",
+    "cs.SE"
+  ],
+  "fetched_at": "2026-10-26T10:41:58.537741+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.32360v1",
+  "published_at": "2026-10-23T08:52:02Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.32360v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-26"
+  },
+  "summary_zh": "本文提出MoST黑箱测试框架，利用多目标搜索构造图像、文本及联合扰动，以分析视觉语言模型在目标定位任务中的模态敏感性。实验覆盖ImageNet和驾驶图像，结果显示不同模型对文本、图像或联合扰动的脆弱性不同，联合的小幅扰动可能诱发与单模态大幅扰动相当甚至更严重的性能下降。该方法可用于评估自动驾驶视觉语言模型或相关感知系统的鲁棒性与异常失效模式。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "Search-Based Testing of Modality Sensitivity in Vision Language Models",
+  "title_zh": "基于搜索的视觉语言模型模态敏感性测试",
+  "translation_url": "https://hjfy.top/arxiv/2610.32360"
+}

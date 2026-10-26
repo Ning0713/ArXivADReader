@@ -1,0 +1,58 @@
+{
+  "abstract": "Recent advances in 3D semantic segmentation have significantly improved scene understanding in autonomous driving. However, existing methods are typically developed under a closed-set assumption and evaluated under standard driving conditions, where all categories are known in advance. In real-world driving, autonomous vehicles inevitably encounter previously unseen objects, making closed-set perception insufficient for safe deployment. To address this challenge, we introduce DriveOSS, which, to the best of our knowledge, is the first real-world multimodal dataset and benchmark specifically designed for 3D anomaly segmentation and open-set semantic segmentation. It contains 12,661 synchronized and annotated frames captured using six surround-view RGB cameras, a 128-beam LiDAR, and a GPS/IMU unit. The dataset comprises 52 real-world driving scenes collected under clear, nighttime, cloudy, rainy, and snowy conditions and is organized into ID (in-distribution) and OOD (out-of-distribution) subsets. The ID scenes contain only known classes and are used for training, whereas the OOD scenes additionally contain unknown objects annotated as the outlier class and are used for validation and testing. Extensive experiments show that unseen objects remain a major challenge for current 3D perception systems. The dataset, benchmark protocols, and code are available at https://github.com/chrisyan/DriveOSS.",
+  "abstract_zh": "近年来，3D语义分割的进展显著提高了自主驾驶中的场景理解能力。然而，现有方法通常是在封闭集假设下开发，并在标准驾驶条件下进行评估，其中所有类别均已提前知晓。在实际驾驶中，自主车辆不可避免地会遇到之前未见过的物体，这使得封闭集感知不足以确保安全部署。为了解决这一挑战，我们引入了DriveOSS，据我们所知，这是第一个专门为3D异常分割和开放集语义分割设计的真实世界多模态数据集和基准。该数据集包含12,661帧同步标注的图像，这些图像是使用六个环视RGB摄像头、一个128束激光雷达和一个GPS/IMU单元捕获的。数据集包括52个在晴天、夜间、多云、下雨和下雪条件下收集的真实世界驾驶场景，并分为ID（在分布内）和OOD（分布外）子集。ID场景仅包含已知类别，用于训练，而OOD场景则额外包含标注为异常类的未知物体，用于验证和测试。大量实验表明，未见物体仍然是当前3D感知系统面临的主要挑战。数据集、基准协议和代码可在https://github.com/chrisyan/DriveOSS获取。",
+  "arxiv_id": "2610.32612",
+  "arxiv_url": "https://arxiv.org/abs/2610.32612v1",
+  "authors": [
+    "Zhiran Yan",
+    "Savankumar Bhanderi",
+    "Sourabh Lolge",
+    "Rui Song",
+    "Girdharbhai Paneliya",
+    "Shiva Agrawal",
+    "Gordon Elger"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-26#paper-2610-32612",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-26T10:41:58.561252+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.32612v1",
+  "published_at": "2026-10-23T13:33:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "车辆",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 80
+  },
+  "seen_dates": [
+    "2026-10-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.32612v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-26"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "仿真/数据"
+    ]
+  },
+  "title": "DriveOSS: Dataset and Benchmark for 3D Anomaly Segmentation and Open-set Semantic Segmentation in Autonomous Driving",
+  "title_zh": "DriveOSS：用于自主驾驶中的3D异常分割和开放集语义分割的数据集与基准",
+  "translation_url": "https://hjfy.top/arxiv/2610.32612"
+}

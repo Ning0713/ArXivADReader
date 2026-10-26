@@ -1,0 +1,57 @@
+{
+  "abstract": "Traffic safety videos provide rich evidence for understanding interactions between pedestrians and vehicles, but synthetic-to-real evaluation makes this setting challenging because models must learn from simulated scenes and generalize to real-world traffic. In this work, we present StateBridge, a traffic video-language framework designed to operate under this synthetic-only training protocol. Our approach uses phase-aware clip construction, pedestrian and vehicle track summaries, and structured prompts to ground vision-language models in stable traffic evidence rather than appearance alone. We fine-tune public vision-language models on synthetic captioning and visual question answering examples, then combine their outputs through fact-locked caption fusion and evidence-diverse VQA consensus to improve consistency across actor roles, behavioral phases, and question types. StateBridge achieves an official S2 score of 55.4679 on AI City Challenge 2026 Track 2 using only synthetic training data. These results demonstrate the effectiveness of structured evidence transfer for traffic safety captioning and visual question answering.",
+  "abstract_zh": "交通安全视频为理解行人和车辆之间的互动提供了丰富的证据，但合成到真实的评估使得这一设置变得具有挑战性，因为模型必须从模拟场景中学习并推广到真实世界的交通中。在本研究中，我们提出了StateBridge，一个旨在在这种仅限合成训练协议下操作的交通视频-语言框架。我们的方法使用阶段感知的片段构建、行人和车辆轨迹摘要以及结构化提示，将视觉-语言模型基于稳定的交通证据而非单纯的外观进行锚定。我们在合成字幕生成和视觉问答示例上对公共视觉-语言模型进行了微调，然后通过事实锁定的字幕融合和证据多样的视觉问答共识来结合它们的输出，以提高在参与者角色、行为阶段和问题类型之间的一致性。StateBridge在仅使用合成训练数据的情况下，在AI City Challenge 2026 Track 2上取得了官方S2得分55.4679。这些结果证明了结构化证据转移在交通安全字幕生成和视觉问答中的有效性。",
+  "arxiv_id": "2610.31898",
+  "arxiv_url": "https://arxiv.org/abs/2610.31898v1",
+  "authors": [
+    "Blessing Agyei Kyem",
+    "Richard Dzinyela",
+    "Joshua Kofi Asamoah",
+    "Eugene Denteh",
+    "Andrews Danyo",
+    "Solomon Owusu-Ansah",
+    "Dickson Gyimah Asiedu",
+    "Armstrong Aboah"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-26#paper-2610-31898",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-26T10:41:58.501853+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.31898v1",
+  "published_at": "2026-10-22T20:52:22Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "traffic",
+      "pedestrian",
+      "车辆",
+      "交通",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-10-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.31898v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-26"
+  },
+  "summary_zh": "提出交通视频语言框架StateBridge，通过行为阶段划分、行人与车辆轨迹摘要及结构化提示增强视觉语言模型的证据锚定，并结合描述融合与问答共识机制，实现仅用合成数据训练、在真实交通视频上进行描述生成与视觉问答。其核心价值在于交通交互理解与合成到真实的泛化，而非直接完成车辆控制或驾驶规划。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": [
+      "仿真/数据",
+      "安全/异常"
+    ]
+  },
+  "title": "StateBridge: Phase- and Track-Grounded Reasoning for Synthetic-to-Real Traffic Video Captioning and VQA",
+  "title_zh": "StateBridge：基于阶段和轨迹的合成到真实交通视频字幕生成与视觉问答推理",
+  "translation_url": "https://hjfy.top/arxiv/2610.31898"
+}

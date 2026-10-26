@@ -1,0 +1,53 @@
+{
+  "abstract": "Traversability analysis in off-road settings remains a fundamental challenge for mobile robots. Key difficulties include constructing an accurate and expressive local map from multimodal sensor data, and using the map to design traversability rules that yield desirable navigation behavior. Importantly, this system must be resilient to the limited sensing regime brought about by complex environments and high speeds. In this paper, we present TravSUITE, a traversability system suitable for high-speed navigation in off-road environments. TravSUITE consists of two major components: 1) an efficient voxel mapper that leverages visual foundation models (VFMs) to build a rich geometric-semantic local map from streams of on-board sensor data, and 2) a unified neural network that jointly predicts traversability-relevant quantities in bird's eye view (BEV), including geometry, semantics, speed and cost. Our training strategy is entirely annotation-free and self-supervised, leveraging tasks such as map inpainting and inverse reinforcement learning (IRL) to learn both map representations and traversability. We perform a thorough ablation study and comparison to state-of-the-art approaches, and the results indicate that cost learning and auxiliary inpainting each contribute significantly to planning quality, and their combination is critical for achieving state-of-the-art performance in off-road path planning. We also design a simple risk adaptation mechanism to leverage our method's uncertainty estimates at deploy-time, and demonstrate that a combination of inpainting and risk estimation can result in 80% fewer navigation errors and 5% faster autonomous traversal speeds in real-world hardware experiments.",
+  "abstract_zh": "越野环境中的可通行性分析仍然是移动机器人面临的一个基本挑战。主要困难包括从多模态传感器数据构建准确且富有表现力的局部地图，以及利用该地图设计可通行性规则以实现理想的导航行为。重要的是，该系统必须对复杂环境和高速带来的有限感知模式具有鲁棒性。本文提出了TravSUITE，一个适用于越野环境中高速导航的可通行性系统。TravSUITE由两个主要组件组成：1）一个高效的体素映射器，利用视觉基础模型（VFMs）从车载传感器数据流中构建丰富的几何-语义局部地图；2）一个统一的神经网络，联合预测鸟瞰图（BEV）中与可通行性相关的量，包括几何、语义、速度和成本。我们的训练策略完全无注释且自监督，利用地图修复和逆强化学习（IRL）等任务来学习地图表示和可通行性。我们进行了全面的消融研究，并与最先进的方法进行了比较，结果表明，成本学习和辅助修复对规划质量均有显著贡献，而它们的结合对于在越野路径规划中实现最先进的性能至关重要。我们还设计了一种简单的风险适应机制，以利用我们方法在部署时的不确定性估计，并证明修复与风险估计的结合可以在真实硬件实验中减少80%的导航错误，并使自主穿越速度提高5%。",
+  "arxiv_id": "2610.32130",
+  "arxiv_url": "https://arxiv.org/abs/2610.32130v1",
+  "authors": [
+    "Samuel Triest",
+    "Amirreza Shaban",
+    "David D. Fan",
+    "Wenshan Wang",
+    "Sebastian Scherer"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-26#paper-2610-32130",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-26T10:41:58.461265+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.32130v1",
+  "published_at": "2026-10-23T03:56:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "road",
+      "bev",
+      "path planning"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 18
+  },
+  "seen_dates": [
+    "2026-10-26"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.32130v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-26"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "TravSUITE: Traversability via Self-Supervised, Uncertainty-Aware IRL and Terrain Estimation",
+  "title_zh": "TravSUITE：基于自监督和不确定性感知的逆强化学习与地形估计的可通行性分析",
+  "translation_url": "https://hjfy.top/arxiv/2610.32130"
+}
