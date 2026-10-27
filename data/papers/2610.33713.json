@@ -1,0 +1,55 @@
+{
+  "abstract": "Driver emotion provides an important indication of how drivers perceive and evaluate ongoing traffic situations, making reliable emotion recognition an important capability for effective human-vehicle interaction. Yet, most existing driver emotion recognition approaches rely primarily on in-cabin images and overlook how surrounding traffic interactions shape driver emotional responses. To address this limitation, we propose a traffic-context-aware driver emotion recognition (TADER) framework that integrates in-cabin signals with out-of-cabin traffic scenarios, modeling driver emotions as arising from expectation deviation represented by the discrepancy between predicted and observed vehicle trajectories. The proposed framework comprises two key components: (1) a vision-based base recognizer that extracts spatiotemporal representations from in-cabin facial images to infer driver emotions, and (2) a traffic-context-aware fusion module that quantifies expectation deviation from external traffic scenarios and integrates it into the base recognizer via attention-based embedding fusion. To overcome the scarcity of paired in-cabin and out-of-cabin data, we introduce a transfer learning strategy that transfers a trajectory prediction model trained on large-scale naturalistic datasets to smaller paired datasets. Extensive experiments demonstrate that TADER consistently outperforms state-of-the-art methods across both naturalistic and simulated driving environments by incorporating traffic context information into emotion recognition, resulting in improvements of 5% in accuracy on the AIDE and manD datasets.",
+  "abstract_zh": "驾驶员情绪是驾驶员如何感知和评估当前交通情况的重要指示，因此可靠的情绪识别是有效人车交互的重要能力。然而，大多数现有的驾驶员情绪识别方法主要依赖于车内图像，忽视了周围交通互动如何影响驾驶员的情绪反应。为了解决这一局限性，我们提出了一种基于交通情境的驾驶员情绪识别框架（Traffic-Context-Aware Driver Emotion Recognition，TADER），该框架将车内信号与车外交通场景相结合，将驾驶员情绪建模为期望偏差，这种偏差由预测的车辆轨迹与实际观察到的轨迹之间的差异表示。该框架包括两个关键组件：（1）一个基于视觉的基础识别器，从车内面部图像中提取时空表示以推断驾驶员情绪；（2）一个交通情境感知融合模块，量化来自外部交通场景的期望偏差，并通过基于注意力的嵌入融合将其整合到基础识别器中。为了克服车内和车外配对数据的稀缺性，我们引入了一种迁移学习策略，将在大规模自然驾驶数据集上训练的轨迹预测模型迁移到较小的配对数据集上。大量实验表明，TADER在自然驾驶和模拟驾驶环境中均优于最先进的方法，通过将交通情境信息纳入情绪识别，AIDE和manD数据集上的准确率提高了5%。",
+  "arxiv_id": "2610.33713",
+  "arxiv_url": "https://arxiv.org/abs/2610.33713v1",
+  "authors": [
+    "Longhao Yan",
+    "Jinhao Liang",
+    "Kaidi Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33713",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.960497+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33713v1",
+  "published_at": "2026-10-24T14:59:21Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "trajectory prediction",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33713v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "Traffic-Context-Aware Driver Emotion Recognition with Expectation-Deviation-Driven Inference",
+  "title_zh": "基于交通情境的驾驶员情绪识别：期望-偏差驱动推理",
+  "translation_url": "https://hjfy.top/arxiv/2610.33713"
+}

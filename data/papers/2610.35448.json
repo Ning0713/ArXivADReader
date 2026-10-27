@@ -1,0 +1,56 @@
+{
+  "abstract": "End-to-end driving models perform well on standard benchmarks but collide frequently in safety-critical scenarios. We present a failure-mode analysis on NeuroNCAP which shows that 95.9% of DiffusionDrive's collisions are planning failures despite reliable detection, pinpointing the bottleneck in planning rather than perception. We attribute this to a fundamental data imbalance, as safety-critical interactions are rare in real driving logs, so planners are hardly ever trained on them. We close this gap with a novel model-aware framework that generates safety-critical training scenes against a specific planner. Each planner is attacked at the bird's-eye-view (BEV) level through a differentiable surrogate distilled from its own planning head. This keeps the expensive video renderer out of the attack loop. We extract 50 scenes per planner, each pairing an attack with a safe escape trajectory that serves as the fine-tuning label. A fully automated quality-diversity search generates both the attacks and the escapes, so that their variety is not specified by hand. Only these scenes are rendered to fine-tune the planner, which reduces the computational cost significantly. Fine-tuning on these scenes roughly halves the closed-loop collision rate of two planners on NeuroNCAP (SparseDrive 28.0% to 12.2%, DiffusionDrive 37.5% to 19.2%) while largely preserving normal driving. A cross-planner transfer experiment shows that the gain comes from targeting the specific planner. Each planner improves most on the scenes generated against itself, and DiffusionDrive fine-tuned on SparseDrive's scenes retains only 6.7 of its 18.3-point collision-rate reduction.",
+  "abstract_zh": "端到端驾驶模型在标准基准测试中表现良好，但在安全关键场景中经常发生碰撞。我们对NeuroNCAP进行了故障模式分析，结果显示尽管检测可靠，DiffusionDrive的碰撞中有95.9%是规划失败，这表明瓶颈在于规划而非感知。我们将此归因于根本的数据不平衡，因为在真实驾驶日志中，安全关键交互是稀有的，因此规划者几乎从未在这些交互上进行训练。我们通过一种新颖的基于模型的框架来填补这一空白，该框架针对特定规划者生成安全关键的训练场景。每个规划者在鸟瞰图（BEV）层面上通过从其自身规划头提炼的可微分代理进行攻击。这使得昂贵的视频渲染器不在攻击循环中。我们为每个规划者提取50个场景，每个场景将攻击与安全逃逸轨迹配对，后者作为微调标签。一个完全自动化的质量多样性搜索生成攻击和逃逸，以便其多样性不需要手动指定。只有这些场景被渲染以微调规划者，从而显著降低计算成本。在这些场景上的微调大约将两个规划者在NeuroNCAP上的闭环碰撞率减半（SparseDrive从28.0%降至12.2%，DiffusionDrive从37.5%降至19.2%），同时在很大程度上保持正常驾驶。跨规划者的迁移实验表明，收益来自于针对特定规划者。每个规划者在针对自身生成的场景上改善最大，而在SparseDrive场景上微调的DiffusionDrive仅保留了其18.3点碰撞率降低中的6.7点。",
+  "arxiv_id": "2610.35448",
+  "arxiv_url": "https://arxiv.org/abs/2610.35448v1",
+  "authors": [
+    "Khaled M. Seyam",
+    "Julian Wiederer",
+    "Samar Fathalah",
+    "Markus Braun",
+    "Bin Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-35448",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.879546+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.35448v1",
+  "published_at": "2026-10-26T13:44:59Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "场景生成"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 50
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.35448v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Model-Aware Generation of Safety-Critical Scenes for Robust End-to-End Driving via Distilled Planner Surrogates",
+  "title_zh": "基于模型的安全关键场景生成以增强端到端驾驶的鲁棒性通过提炼规划代理",
+  "translation_url": "https://hjfy.top/arxiv/2610.35448"
+}

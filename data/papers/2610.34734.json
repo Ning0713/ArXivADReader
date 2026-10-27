@@ -1,0 +1,49 @@
+{
+  "abstract": "Frequency-domain information is beneficial for semantic segmentation. However, existing frequency-based methods often suffer from insufficient frequency utilization, inefficient fusion, and high computational complexity. To address these issues, we propose FGD2HF, a dual-domain fusion network that leverages frequency features to guide spatial-domain fusion and enhancement. Specifically, we introduce a novel Hybrid-Attention Encoder (NAHA) that jointly models local and global relationships through neighborhood and hypergraph attention, enhancing the network's ability to extract effective features. We further introduce a Wavelet Transform and Enhancement (WTE) module to extract and refine low- and high-frequency cues from preceding-stage features, followed by Frequency-guided Dual-domain Fusion (FGDF) modules that use frequency cues to condition current-stage spatial grouping and feature propagation. This design incorporates both global and local frequency guidance into spatial feature modulation, enhancement and fusion with low computational cost. Extensive comparisons with numerous state-of-the-art semantic segmentation methods demonstrate that our method is highly competitive. Our full FGD2HF-B model achieves 48.7% mIoU on ADE20K (+0.3% over SegMAN-B with 18% fewer GFLOPs), 83.2% mIoU on Cityscapes (comparable to SegMAN-B with 21% fewer GFLOPs), and 1.1% higher mIoU than VWFormer-T on SBD with 21% fewer GFLOPs, while also achieving significant improvements in boundary segmentation accuracy.",
+  "abstract_zh": "频域信息对语义分割有益。然而，现有的基于频率的方法往往面临频率利用不足、融合效率低下和计算复杂度高等问题。为了解决这些问题，我们提出了FGD2HF，一种利用频率特征引导空间域融合和增强的双域融合网络。具体而言，我们引入了一种新颖的混合注意力编码器（NAHA），通过邻域和超图注意力共同建模局部和全局关系，增强网络提取有效特征的能力。我们进一步引入了小波变换与增强（WTE）模块，从前一阶段特征中提取和细化低频和高频线索，随后使用频率引导的双域融合（FGDF）模块，以频率线索条件当前阶段的空间分组和特征传播。该设计将全局和局部频率引导纳入空间特征调制、增强和融合中，且计算成本低。与众多最先进的语义分割方法进行广泛比较，证明了我们的方法具有很强的竞争力。我们的完整FGD2HF-B模型在ADE20K上达到48.7%的mIoU（比SegMAN-B高0.3%，GFLOPs减少18%），在Cityscapes上达到83.2%的mIoU（与SegMAN-B相当，GFLOPs减少21%），在SBD上比VWFormer-T高出1.1%的mIoU，GFLOPs减少21%，同时在边界分割精度上也取得了显著提升。",
+  "arxiv_id": "2610.34734",
+  "arxiv_url": "https://arxiv.org/abs/2610.34734v1",
+  "authors": [
+    "Xiaofan Yang",
+    "Wei Pan",
+    "Yubin Liu",
+    "Junyu Wu",
+    "Junming Zhang",
+    "Jie Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34734",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.016883+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34734v1",
+  "published_at": "2026-10-26T02:33:54Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34734v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合"
+    ]
+  },
+  "title": "FGD2HF: Frequency-guided Dual-domain Hypergraph Fusion for Semantic Segmentation",
+  "title_zh": "FGD2HF：基于频率引导的双域超图融合用于语义分割",
+  "translation_url": "https://hjfy.top/arxiv/2610.34734"
+}

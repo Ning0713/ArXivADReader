@@ -1,0 +1,54 @@
+{
+  "abstract": "Modeling human driving behavior is fundamental to understanding driver decision-making and supporting autonomous vehicles (AVs) in mixed traffic. Reward learning offers a principled way to infer the latent objectives behind driving behaviors, yet most existing methods are formulated in single-agent settings and treat surrounding vehicles as dynamic obstacles. Directly extending reward learning to multi-agent scenarios is difficult because the joint action space grows exponentially with the number of interacting vehicles. In addition, existing approaches mainly rely on physical demonstrations and rarely exploit human feedback during reward recovery. To address these limitations, this paper proposes a Human-Feedback-Guided Multi-Agent Inverse Reinforcement Learning (HFG-MAIRL) framework for interactive driving behavior modeling. First, we develop a multi-agent maximum-entropy inverse reinforcement learning module that explicitly models each vehicle and its directly interacting neighbors in a localized Markov game, while using aggregated traffic states to capture the influence of the broader traffic environment. The resulting coupled multi-vehicle responses are approximated through finite marginal-response iterations over factorized vehicle-level policies, avoiding explicit enumeration of the full joint action space. Second, we incorporate human feedback as ordinal preference supervision through a Bradley-Terry likelihood. In our experiments, driver emotion labels are used as one instantiation of such feedback and converted into pairwise ordinal preference constraints. Experiments on the AIDE dataset show that HFG-MAIRL outperforms representative IRL baselines in decision modeling and produces interpretable feedback-aligned reward patterns.",
+  "abstract_zh": "建模人类驾驶行为对于理解驾驶者决策过程和支持混合交通中的自动驾驶车辆（AVs）至关重要。奖励学习提供了一种推断驾驶行为背后潜在目标的原则性方法，然而大多数现有方法是在单智能体环境中制定的，并将周围车辆视为动态障碍物。直接将奖励学习扩展到多智能体场景是困难的，因为随着交互车辆数量的增加，联合动作空间呈指数级增长。此外，现有方法主要依赖于物理演示，鲜有利用人类反馈进行奖励恢复。为了解决这些局限性，本文提出了一种基于人类反馈的多智能体逆强化学习（HFG-MAIRL）框架，用于交互驾驶行为建模。首先，我们开发了一个多智能体最大熵逆强化学习模块，该模块在局部马尔可夫博弈中显式建模每辆车及其直接交互的邻居，同时使用聚合的交通状态来捕捉更广泛交通环境的影响。通过对分解的车辆级策略进行有限边际响应迭代，近似得到的耦合多车辆响应，避免了对完整联合动作空间的显式枚举。其次，我们通过Bradley-Terry似然将人类反馈作为序数偏好监督纳入模型。在我们的实验中，驾驶者情感标签被用作这种反馈的一种实例，并转化为成对的序数偏好约束。在AIDE数据集上的实验表明，HFG-MAIRL在决策建模方面优于代表性的逆强化学习基线，并生成可解释的与反馈对齐的奖励模式。",
+  "arxiv_id": "2610.33726",
+  "arxiv_url": "https://arxiv.org/abs/2610.33726v1",
+  "authors": [
+    "Longhao Yan",
+    "Jinhao Liang",
+    "Kaidi Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33726",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.127377+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33726v1",
+  "published_at": "2026-10-24T15:14:41Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 91
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33726v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "Human-Feedback-Guided Multi-Agent Inverse Reinforcement Learning for Interactive Driving Behavior Modeling",
+  "title_zh": "基于人类反馈的多智能体逆强化学习用于交互驾驶行为建模",
+  "translation_url": "https://hjfy.top/arxiv/2610.33726"
+}

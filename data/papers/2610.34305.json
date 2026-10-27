@@ -1,0 +1,45 @@
+{
+  "abstract": "Object re-identification requires embeddings that are robust to intra-class variation in viewpoint, illumination, and occlusion, yet preserve sharp separation between visually similar identities. The hardest errors arise precisely where confusable identities meet, a region that pairwise losses shape only implicitly. We present PBR-ReID, a prototype-based framework that makes this inter-class geometry an explicit learning target. Each identity is represented by a learnable prototype jointly optimized with a DiNOv3 backbone and the resulting prototype similarity matrix reveals, at every training step, which identities are most confusable. On this signal we build Boundary Repulsion MixUp (BRM), a geometry-aware regularizer that converts standard MixUp's weakness into a discriminative signal. Rather than interpolating samples across confusable identities, which blurs the boundaries that matter most, BRM constructs an explicit boundary proxy between each confusable pair and repels their features away from it, converting boundary ambiguity into a discriminative signal. We adopt a two-stage training protocol consisting of a prototype warmup phase followed by EMA-stabilized joint fine-tuning. Extensive experiments on person and vehicle ReID benchmarks demonstrate strong performance, with thorough ablations confirming each component's contribution. Code is available at https://github.com/psaltaath/pbr-reid.",
+  "abstract_zh": "物体重识别需要对视角、光照和遮挡等类内变化具有鲁棒性的嵌入，同时保持视觉上相似身份之间的清晰分离。最难的错误恰恰出现在可混淆身份交汇的区域，而成对损失仅以隐式方式塑造这一区域。我们提出了PBR-ReID，这是一种基于原型的框架，使得这种类间几何关系成为明确的学习目标。每个身份由一个可学习的原型表示，并与DiNOv3骨干网络共同优化，生成的原型相似度矩阵在每个训练步骤中揭示了哪些身份最容易混淆。基于这一信号，我们构建了边界排斥混合（Boundary Repulsion MixUp，BRM），这是一种几何感知的正则化器，将标准MixUp的弱点转化为区分性信号。BRM并不是在可混淆身份之间插值样本，这会模糊最重要的边界，而是为每对可混淆身份构建一个明确的边界代理，并将它们的特征从该边界排斥开来，将边界模糊性转化为区分性信号。我们采用了一个两阶段的训练协议，包括原型预热阶段，随后是EMA稳定的联合微调。在人员和车辆重识别基准上的大量实验展示了强大的性能，全面的消融实验确认了每个组件的贡献。代码可在https://github.com/psaltaath/pbr-reid获取。",
+  "arxiv_id": "2610.34305",
+  "arxiv_url": "https://arxiv.org/abs/2610.34305v1",
+  "authors": [
+    "Athena Psalta",
+    "Vasileios Tsironis",
+    "Konstantinos Karantzalos"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34305",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.996560+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34305v1",
+  "published_at": "2026-10-25T14:16:01Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34305v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "提出一种面向人员和车辆重识别的原型学习框架，通过识别易混淆身份并利用边界排斥正则化增强特征判别能力。其车辆重识别能力可用于自动驾驶场景中的跨摄像头车辆关联、持续跟踪和交通参与者身份匹配。",
+  "tags": {
+    "primary": "感知",
+    "secondary": []
+  },
+  "title": "Learning Discriminative Prototypes via Boundary Repulsion MixUp for Object Re-Identification",
+  "title_zh": "通过边界排斥混合（Boundary Repulsion MixUp）学习区分性原型用于物体重识别",
+  "translation_url": "https://hjfy.top/arxiv/2610.34305"
+}

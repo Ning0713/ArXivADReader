@@ -1,0 +1,47 @@
+{
+  "abstract": "Depth boundaries remain a major source of error in stereo matching. For IGEV on Scene Flow, geometric edge pixels account for only 6% of evaluated pixels but about half of the total absolute disparity error. Photometric edges can respond to texture changes without corresponding depth discontinuities, making them unreliable cues for boundary refinement. We propose E3Stereo, which learns geometric edges from disparity supervision and combines these boundary cues with the backbone disparity and image details to predict full-resolution disparity corrections. The same edge map also emphasizes boundary errors during training, while joint optimization allows the edge predictor to adapt to disparity refinement. On the Scene Flow dataset, E3Stereo reduces end-point error (EPE) at depth boundaries by 9.5%-14.3% across RAFT-Stereo, IGEV, and MonSter, while also reducing overall EPE. After fine-tuning, our IGEV-based model improves upon IGEV on all eleven reported metrics across ETH3D, KITTI 2012, and KITTI 2015. The source code will be made publicly available upon acceptance.",
+  "abstract_zh": "深度边界仍然是立体匹配中的主要误差来源。在场景流（Scene Flow）中的IGEV，几何边缘像素仅占评估像素的6%，却约占总绝对视差误差的一半。光度边缘可以响应纹理变化，而不对应深度不连续性，使其在边界细化中变得不可靠。我们提出了E3Stereo，它通过视差监督学习几何边缘，并将这些边界线索与主干视差和图像细节结合，以预测全分辨率的视差修正。相同的边缘图在训练期间也强调了边界误差，而联合优化使得边缘预测器能够适应视差细化。在场景流数据集上，E3Stereo在RAFT-Stereo、IGEV和MonSter的深度边界处将端点误差（EPE）降低了9.5%-14.3%，同时也降低了整体EPE。在微调后，我们基于IGEV的模型在ETH3D、KITTI 2012和KITTI 2015的所有十一项报告指标上均优于IGEV。源代码将在接受后公开发布。",
+  "arxiv_id": "2610.33704",
+  "arxiv_url": "https://arxiv.org/abs/2610.33704v1",
+  "authors": [
+    "Qi Xiong",
+    "Qinghua Zhao",
+    "Yongqiang Xi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33704",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.959686+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33704v1",
+  "published_at": "2026-10-24T14:35:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33704v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "E3tereo: Improving Stereo Matching at Depth Boundaries with Learned Geometric Edges",
+  "title_zh": "E3Stereo：通过学习几何边缘改善深度边界的立体匹配",
+  "translation_url": "https://hjfy.top/arxiv/2610.33704"
+}

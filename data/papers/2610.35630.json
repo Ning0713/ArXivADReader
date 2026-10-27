@@ -1,0 +1,63 @@
+{
+  "abstract": "In autonomous driving, robot teleoperation serves as a critical safety fallback mechanism, requiring operators to assume direct control in the event of system failure. While recent research has pivoted toward high-level supervisory control or simulation-based studies, these approaches often fail to capture the physical dynamics and sensory demands of driving a full-scale vehicle. To address this gap, we evaluated the impact of spatial data representation on operator performance using a real car-sized vehicle in a field experiment with $N = 18$ participants. We compared three visualization interfaces: (i) a standard camera feed baseline, with two bird's-eye views (BEV) from (ii) a raw LiDAR point cloud, and (iii) a sensor fusion of LiDAR and camera data streams. Contrary to prior passive observation studies suggesting that sensor-fusion BEV may hinder awareness, our active-control results demonstrate that such representation significantly outperforms the standard LiDAR BEV in perceived usability ($p \\leq 0.0001$) and cognitive task load ($p = 0.01$, NASA-TLX score: 34.58/100) while also being significantly better than the Camera-only view ($p = 0.043$). The fused interface also led to statistically significant reductions in task completion time ($p = 0.0461$) and superior usability (SUS: 77.9/100) compared to those of the Camera-only and LiDAR-only views. By synthesizing objective performance data with comprehensive subjective assessments, we demonstrate that BEV fusion maximizes safety margins while minimizing the operator's mental demand. These findings challenge existing teleoperation conventions and provide an empirically validated approach for designing robust remote piloting systems.",
+  "abstract_zh": "在自主驾驶中，机器人遥操作作为一种关键的安全后备机制，要求操作员在系统故障时承担直接控制的责任。尽管近期研究已转向高层次的监督控制或基于模拟的研究，但这些方法往往无法捕捉到驾驶全尺度车辆的物理动态和感知需求。为了解决这一问题，我们在一项实地实验中评估了空间数据表示对操作员表现的影响，实验使用了一辆真实的车身大小的车辆，共有18名参与者。我们比较了三种可视化界面：（i）标准摄像头视频基线，（ii）来自原始激光雷达点云的两种鸟瞰视图（BEV），以及（iii）激光雷达与摄像头数据流的传感器融合。与之前的被动观察研究表明传感器融合的鸟瞰视图可能会妨碍意识的观点相反，我们的主动控制结果表明，这种表示在感知可用性（$p ext{≤} 0.0001$）和认知任务负荷（$p = 0.01$，NASA-TLX得分：34.58/100）方面显著优于标准激光雷达鸟瞰视图，同时在可用性方面也显著优于仅摄像头视图（$p = 0.043$）。融合界面还显著减少了任务完成时间（$p = 0.0461$）并在可用性（SUS：77.9/100）上优于仅摄像头和仅激光雷达视图。通过将客观性能数据与全面的主观评估相结合，我们证明了鸟瞰视图融合在最大化安全边际的同时，最小化了操作员的心理负担。这些发现挑战了现有的遥操作惯例，并为设计稳健的远程驾驶系统提供了实证验证的方法。",
+  "arxiv_id": "2610.35630",
+  "arxiv_url": "https://arxiv.org/abs/2610.35630v1",
+  "authors": [
+    "Stanisław Kuczma",
+    "Sławomir K. Tadeja",
+    "Michał R. Nowicki"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-35630",
+  "categories": [
+    "cs.RO",
+    "cs.HC"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.887697+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.35630v1",
+  "published_at": "2026-10-26T15:41:35Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "car",
+      "驾驶",
+      "车辆",
+      "bev",
+      "bird's-eye",
+      "sensor fusion",
+      "lidar",
+      "point cloud",
+      "点云",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.35630v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "BEV/Occupancy",
+      "多传感器融合"
+    ]
+  },
+  "title": "Revisiting Direct Control: A Field Evaluation of Sensor Fusion Efficacy in Teleoperating Full-Scale Autonomous Vehicles via Bird's Eye View",
+  "title_zh": "重新审视直接控制：通过鸟瞰视角评估传感器融合在全尺度自主车辆遥操作中的有效性",
+  "translation_url": "https://hjfy.top/arxiv/2610.35630"
+}

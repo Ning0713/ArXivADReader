@@ -1,0 +1,50 @@
+{
+  "abstract": "Construction robots operating near workers require navigation that can anticipate human motion while remaining robust to dynamic and unstructured site conditions. However, existing social navigation methods depend on hand-crafted interaction rules, labeled demonstrations, or robot-specific control policies, limiting their scalability and transferability in construction environments. We propose a real-time, LiDAR-only framework that learns interaction-aware path corrections from unlabeled demonstrations. Constant-velocity extrapolation generates residual learning targets, while a GNN models relationships among the robot, pedestrians, and goal context. During deployment, an extended Kalman filter tracks LiDAR detections to construct dynamic graphs, and the GNN offsets planner-generated waypoints through a planner-agnostic interface. Within the bricklaying trial, the GNN reduced path irregularity by 39.2\\% and increased minimum TTC. Across Dynablox sequences, it increased minimum TTC by 38.3\\% while producing shorter, smoother paths than the baselines. Ablation studies supported a 1.0-s prediction interval and confirmed the benefits of target context, reflection augmentation, and feature normalization.",
+  "abstract_zh": "在工人附近操作的建筑机器人需要能够预测人类运动的导航，同时对动态和非结构化的现场条件保持鲁棒性。然而，现有的社会导航方法依赖于手工制作的交互规则、标记的示范或特定于机器人的控制策略，这限制了它们在建筑环境中的可扩展性和可转移性。我们提出了一种实时的、仅基于LiDAR的框架，从未标记的示范中学习交互感知的路径修正。恒速外推生成残差学习目标，而图神经网络（GNN）则建模机器人、行人和目标上下文之间的关系。在部署过程中，扩展卡尔曼滤波器跟踪LiDAR检测以构建动态图，GNN通过与规划器无关的接口对规划器生成的航点进行偏移。在砌砖试验中，GNN将路径不规则性降低了39.2%，并增加了最小时间到碰撞（TTC）。在Dynablox序列中，它将最小TTC提高了38.3%，同时生成的路径比基线更短、更平滑。消融研究支持1.0秒的预测区间，并确认了目标上下文、反射增强和特征归一化的好处。",
+  "arxiv_id": "2610.34060",
+  "arxiv_url": "https://arxiv.org/abs/2610.34060v1",
+  "authors": [
+    "Yilong Chen",
+    "Yong K. Cho"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34060",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.836504+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34060v1",
+  "published_at": "2026-10-25T04:45:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "行人",
+      "lidar",
+      "sim-to-real",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34060v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "预测/规划",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "Learning Interaction-Aware Path Corrections from Unlabeled Trajectories: A LiDAR-Based Sim-to-Real GNN Framework for Construction Robots",
+  "title_zh": "从未标记轨迹中学习交互感知路径修正：一种基于LiDAR的用于建筑机器人的Sim-to-Real GNN框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.34060"
+}

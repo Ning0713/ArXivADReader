@@ -1,0 +1,46 @@
+{
+  "abstract": "Control barrier functions (CBFs) support collision avoidance, yet dense dynamic encounters can leave a vehicle with no feasible command. Geometric refinements and soft constraints help preserve motion choices. Using these choices also requires accounting for the vehicle's changing turning response. For a steering-limited bicycle, braking can lower closing speed while slowing the lateral motion needed before an obstacle arrives. We propose SCET-CBF, a speed-calibrated soft guidance law for one-step dynamic navigation. A short lateral escape maneuver gives an allowable approach speed. Its speed derivative allows a quadratic program to weigh both effects of braking when choosing acceleration and steering. Soft penalties accommodate competing obstacle preferences within the input set permitted by segment and braking constraints. We derive the guidance and establish protection over each accepted motion segment, together with conditional braking invariance for a single obstacle. On 2500 paired tasks with a 60 s deadline, SCET achieves 72.8% completion, compared with 49.8% for CBF/velocity-obstacle control and 69.8% for an enhanced 1 s CBF-MPC. At 100 obstacles, SCET and the enhanced MPC complete 52.4% and 33.6% of tasks. Paired studies identify the contributions of speed feedback and early activation. Further evaluations examine the operating range under lateral acceleration limits and bounded motion and execution errors.",
+  "abstract_zh": "控制障碍函数（CBFs）支持避免碰撞，但密集的动态接触可能使车辆无法发出可行指令。几何细化和软约束有助于保持运动选择。使用这些选择还需要考虑车辆不断变化的转向响应。对于转向受限的自行车，制动可以降低闭合速度，同时减缓在障碍物到达之前所需的横向运动。我们提出了SCET-CBF，这是一种用于一步动态导航的速度校准软引导法则。短暂的横向逃逸机动提供了一个允许的接近速度。其速度导数使得二次规划能够在选择加速度和转向时权衡制动的双重影响。软惩罚适应于输入集中的竞争障碍偏好，这些偏好受到段和制动约束的限制。我们推导了引导法则，并在每个接受的运动段上建立了保护，同时为单个障碍物提供条件制动不变性。在2500个配对任务中，SCET的完成率为72.8%，而CBF/速度障碍控制为49.8%，增强的1秒CBF-MPC为69.8%。在100个障碍物的情况下，SCET和增强的MPC分别完成52.4%和33.6%的任务。配对研究识别了速度反馈和早期激活的贡献。进一步评估考察了在横向加速度限制和有界运动及执行误差下的操作范围。",
+  "arxiv_id": "2610.33471",
+  "arxiv_url": "https://arxiv.org/abs/2610.33471v1",
+  "authors": [
+    "Xiaoyu Han",
+    "Dongkun Han"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33471",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.808827+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33471v1",
+  "published_at": "2026-10-24T05:49:07Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33471v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "提出 SCET-CBF 动态避障控制方法，通过速度校准的软引导，在制动降低接近速度与制动削弱横向避让能力之间进行权衡。该方法针对受限自行车模型规划加速度和转向，并在密集障碍场景中取得了高于基线方法的任务完成率。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "预测/规划"
+    ]
+  },
+  "title": "SCET-CBF: Speed-Calibrated Soft Guidance for One-Step Dynamic Navigation",
+  "title_zh": "SCET-CBF：用于一步动态导航的速度校准软引导",
+  "translation_url": "https://hjfy.top/arxiv/2610.33471"
+}

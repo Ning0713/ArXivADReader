@@ -1,0 +1,57 @@
+{
+  "abstract": "Automotive millimeter-wave (mmWave) radar has attracted increasing attention for semantic segmentation in autonomous driving, owing to its robustness under adverse weather and lighting conditions. Recent works have introduced radar-specific neural operators such as PeakConv (PKC), inspired by constant false alarm rate (CFAR) detection, to better model the peak-dominated characteristics of radar images. However, existing methods typically treat the guard bandwidth as learnable parameters, without explicitly characterizing the frequency response of the PKC operator. In this work, we revisit PKC from a frequency-domain perspective and propose Frequency-Aware PeakConv (FreqPKC), which explicitly models and exploits its underlying spectral characteristics. By analyzing the frequency response of PKC, FreqPKC enables the network to capture a broader range of frequency components and adaptively adjust its effective bandwidth. With the proposed Frequency-Aware (FA) module, the network can infer appropriate guard bandwidths to balance high- and low-frequency information: it enhances high-frequency components in target regions for more precise segmentation while suppressing noise through low-frequency filtering in background areas. Building on FreqPKC, we further develop FreqPKC-Net, a radar semantic segmentation (RSS) framework that integrates frequency-guided adaptive modulation with cross-view fusion for multi-view inputs, and can also be adapted to single-view data. Experiments on the public datasets CARRADA, CARRADA-RAC, and a self-built dataset named RS-SAR demonstrate that FreqPKC-Net consistently outperforms existing SoTA methods on both range-Doppler and range-angle views.",
+  "abstract_zh": "汽车毫米波（mmWave）雷达因其在恶劣天气和光照条件下的鲁棒性，越来越受到自动驾驶语义分割领域的关注。近期的研究引入了雷达特定的神经算子，如峰值卷积（PeakConv, PKC），受恒虚警率（Constant False Alarm Rate, CFAR）检测的启发，以更好地建模雷达图像的峰值主导特性。然而，现有方法通常将保护带宽视为可学习参数，而未明确表征PKC算子的频率响应。在本研究中，我们从频域的角度重新审视PKC，并提出了频率感知峰值卷积（Frequency-Aware PeakConv, FreqPKC），该方法明确建模并利用其潜在的频谱特性。通过分析PKC的频率响应，FreqPKC使网络能够捕捉更广泛的频率成分，并自适应调整其有效带宽。借助所提出的频率感知（Frequency-Aware, FA）模块，网络可以推断出适当的保护带宽，以平衡高频和低频信息：在目标区域增强高频成分以实现更精确的分割，同时通过在背景区域进行低频滤波来抑制噪声。在FreqPKC的基础上，我们进一步开发了FreqPKC-Net，一个雷达语义分割（Radar Semantic Segmentation, RSS）框架，该框架将频率引导的自适应调制与跨视图融合集成，以处理多视图输入，并且也可以适应单视图数据。在公共数据集CARRADA、CARRADA-RAC以及自建数据集RS-SAR上的实验表明，FreqPKC-Net在范围-多普勒和范围-角度视图上始终优于现有的最先进（SoTA）方法。",
+  "arxiv_id": "2610.33504",
+  "arxiv_url": "https://arxiv.org/abs/2610.33504v1",
+  "authors": [
+    "Yangyong Deng",
+    "Pengyu Zhang",
+    "Shaoqiu Song",
+    "Xiaotao Huang",
+    "Jian Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33504",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.940000+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33504v1",
+  "published_at": "2026-10-24T07:22:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "automotive",
+      "驾驶",
+      "radar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 80
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33504v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "Radar",
+      "仿真/数据"
+    ]
+  },
+  "title": "FreqPKC: Frequency-Aware PeakConv for Radar Semantic Segmentation",
+  "title_zh": "FreqPKC：频率感知峰值卷积用于雷达语义分割",
+  "translation_url": "https://hjfy.top/arxiv/2610.33504"
+}

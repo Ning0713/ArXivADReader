@@ -1,0 +1,49 @@
+{
+  "abstract": "Single-Domain Generalized Object Detection (S-DGOD) aims to generalize from a single source domain to unseen domains under distribution shifts. Existing efforts mainly focus on simulating unseen domains or suppressing domain-specific factors. However, they largely overlook the intrinsic generalization capability embedded in Vision Foundation Models (VFMs). In this work, we show that unconstrained fine-tuning disrupts the geometric structure of pre-trained representations, which encodes domain-invariant semantics. Motivated by this, we propose Geometric-Invariance Fine-Tuning (GIFT), a geometric-aware fine-tuning method for VFMs. Specifically, we introduce a series of learnable Householder reflections to the pre-trained weights to encourage geometry-consistent adaptation under domain shift. In addition, we propose a lightweight channel-wise scaling to facilitate effective task-specific adaptation. Extensive experiments demonstrate that GIFT consistently outperforms state-of-the-art (SOTA) approaches on two S-DGOD benchmarks. Notably, by introducing fewer than 1% additional trainable parameters into the frozen backbone, the proposed method achieves improvements of +7.9% and +2.9% in mPC over the previous SOTA on the Cityscapes-C and Diverse Weather Dataset, respectively. This finding highlights that preserving representation geometry is crucial for robust cross-domain generalization, establishing GIFT as a principled and efficient solution to domain shift.",
+  "abstract_zh": "单域广义目标检测（S-DGOD）旨在在分布变化下从单一源域推广到未见域。现有的研究主要集中在模拟未见域或抑制域特定因素上。然而，它们在很大程度上忽视了嵌入在视觉基础模型（VFMs）中的内在泛化能力。在本研究中，我们表明，无约束的微调会破坏预训练表示的几何结构，而该结构编码了域不变的语义。基于此，我们提出了几何不变微调（GIFT），这是一种针对VFMs的几何感知微调方法。具体而言，我们向预训练权重引入了一系列可学习的霍斯特德反射，以鼓励在域变化下保持几何一致的适应。此外，我们提出了一种轻量级的通道级缩放，以促进有效的任务特定适应。大量实验表明，GIFT在两个S-DGOD基准上始终优于最新的（SOTA）方法。值得注意的是，通过在冻结的主干网络中引入不到1%的额外可训练参数，该方法在Cityscapes-C和多样天气数据集上分别实现了+7.9%和+2.9%的mPC提升。这一发现强调了保持表示几何对于稳健的跨域泛化至关重要，确立了GIFT作为应对域变化的原则性和高效解决方案。",
+  "arxiv_id": "2610.35374",
+  "arxiv_url": "https://arxiv.org/abs/2610.35374v1",
+  "authors": [
+    "Yin Zhang",
+    "Yaoyue Zheng",
+    "Yongqiang Zhang",
+    "Bogdan Raducanu",
+    "Dan Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-35374",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.065205+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.35374v1",
+  "published_at": "2026-10-26T12:58:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.35374v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "GIFT: Representation Geometry Matters for Single-Domain Generalized Object Detection",
+  "title_zh": "GIFT：表示几何对单域广义目标检测的重要性",
+  "translation_url": "https://hjfy.top/arxiv/2610.35374"
+}

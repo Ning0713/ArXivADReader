@@ -1,0 +1,55 @@
+{
+  "abstract": "Direct-policy World Action Models (WAM) have demonstrated the benefits of decoupling action generation from explicit future visual prediction for efficient inference in autonomous driving and embodied control. However, they still require tens of denoising steps to achieve competitive action quality, incurring substantial latency and hindering real-time deployment. Simply reducing the number of denoising steps will collapse the nonlinear multi-step denoising trajectory into coarse updates, substantially degrading action quality. To reduce the denoising steps while enabling real-time action generation, we present an effective world action model with one-step action generation, namely OSWAM, for autonomous driving and embodied control. We argue that it is the absence of structured action priors in random noise initialization that forces direct-policy WAMs to recover coherent action sequences through iterative denoising. Hence, we construct imagination tokens to initialize the diffusion process, providing physical priors and action-conditioned representations. We further introduce privileged information distillation with future conditioning to enhance future-aware action generation. As a result, OSWAM can efficiently and effectively generate high quality actions in just one diffusion step. Our experiments demonstrate that OSWAM achieves comparable or even better results in both autonomous driving and embodied control than direct-policy WAM and Joint-WAM that require tens of steps. It obtains approximately $3\\times$ speedup over direct-policy WAM baselines and supports real-time compiled inference with latency as low as 40ms on an NVIDIA RTX 5090 GPU. The project page is available at https://gwenzhang.github.io/OSWAM/",
+  "abstract_zh": "直接策略世界动作模型（WAM）已证明将动作生成与明确的未来视觉预测解耦在自主驾驶和具身控制中的高效推理方面具有优势。然而，它们仍然需要数十个去噪步骤才能实现具有竞争力的动作质量，这导致了显著的延迟，妨碍了实时部署。简单地减少去噪步骤将使非线性多步去噪轨迹崩溃为粗糙更新，显著降低动作质量。为了减少去噪步骤，同时实现实时动作生成，我们提出了一种有效的世界动作模型，具有一步动作生成，即OSWAM，适用于自主驾驶和具身控制。我们认为，随机噪声初始化中缺乏结构化的动作先验迫使直接策略WAM通过迭代去噪来恢复一致的动作序列。因此，我们构建了想象令牌以初始化扩散过程，提供物理先验和动作条件表示。我们进一步引入了带有未来条件的特权信息蒸馏，以增强未来感知的动作生成。因此，OSWAM能够在仅一步扩散中高效且有效地生成高质量的动作。我们的实验表明，OSWAM在自主驾驶和具身控制中实现了与需要数十个步骤的直接策略WAM和联合WAM相当甚至更好的结果。与直接策略WAM基线相比，它的速度提升约为3倍，并支持在NVIDIA RTX 5090 GPU上以低至40毫秒的延迟进行实时编译推理。项目页面可访问 https://gwenzhang.github.io/OSWAM/",
+  "arxiv_id": "2610.35850",
+  "arxiv_url": "https://arxiv.org/abs/2610.35850v1",
+  "authors": [
+    "Guowen Zhang",
+    "Liyi Chen",
+    "Xu Hu",
+    "Pengfei Wang",
+    "Jingfan Chen",
+    "Chenhang He",
+    "Lei Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-35850",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.085517+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.35850v1",
+  "published_at": "2026-10-26T17:57:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.35850v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "OSWAM: An Effective World Action Model with One-Step Action Generation",
+  "title_zh": "OSWAM：一种有效的世界动作模型，具有一步动作生成",
+  "translation_url": "https://hjfy.top/arxiv/2610.35850"
+}

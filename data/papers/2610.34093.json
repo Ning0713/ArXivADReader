@@ -1,0 +1,54 @@
+{
+  "abstract": "Open-vocabulary 3D occupancy prediction is important for embodied agents operating in complex environments whose semantic categories extend beyond fixed taxonomies. While recent studies have explored open-vocabulary occupancy in outdoor driving scenarios, indoor environments remain challenging due to dense occlusions, complex geometry, and fine-grained long-tailed semantics. To reduce the need for expensive voxel-level semantic annotations, we study a geometry-only supervision setting requiring only binary occupancy labels. We build upon Language-Embedded Gaussians as a unified representation coupling 3D geometry with language-aligned semantics. For geometry learning, we introduce an opacity-aware Poisson-based Gaussian-to-Occupancy formulation that enables stable volumetric aggregation under binary occupancy supervision. For semantic learning, we render Gaussian features into images and align them with a frozen open-vocabulary model, together with Progressive Temperature Decay to reduce feature mixing during Gaussian splatting. Building on this framework, we further introduce Instance-Level Semantic Consistency to alleviate fragmented object predictions, and Covisibility-Aware Support-View Selection to provide informative and less redundant multi-view semantic supervision. We also extend our framework to outdoor driving scenarios to evaluate its generality across substantially different environments. Extensive experiments on indoor and outdoor benchmarks demonstrate that our method achieves strong open-vocabulary occupancy performance, validating the effectiveness and generality of our framework. Code will be available at https://github.com/JuIvyy/LegoOcc.",
+  "abstract_zh": "开放词汇的3D占用预测对于在复杂环境中操作的具身智能体至关重要，这些环境的语义类别超出了固定的分类法。尽管近期研究探讨了户外驾驶场景中的开放词汇占用，但由于密集的遮挡、复杂的几何形状以及细粒度的长尾语义，室内环境仍然具有挑战性。为了减少对昂贵的体素级语义标注的需求，我们研究了一种仅需二进制占用标签的仅几何监督设置。我们基于语言嵌入高斯（Language-Embedded Gaussians）构建了一种统一表示，将3D几何与语言对齐的语义相结合。在几何学习方面，我们引入了一种考虑不透明度的基于泊松的高斯到占用的公式，使得在二进制占用监督下能够稳定地进行体积聚合。在语义学习方面，我们将高斯特征渲染为图像，并与冻结的开放词汇模型对齐，同时使用渐进温度衰减（Progressive Temperature Decay）来减少高斯喷溅过程中的特征混合。在此框架基础上，我们进一步引入实例级语义一致性（Instance-Level Semantic Consistency）以缓解碎片化的物体预测，并采用可见性感知支持视图选择（Covisibility-Aware Support-View Selection）提供信息丰富且冗余较少的多视图语义监督。我们还将框架扩展到户外驾驶场景，以评估其在显著不同环境中的通用性。在室内和户外基准上的大量实验表明，我们的方法实现了强大的开放词汇占用性能，验证了我们框架的有效性和通用性。代码将发布在 https://github.com/JuIvyy/LegoOcc。",
+  "arxiv_id": "2610.34093",
+  "arxiv_url": "https://arxiv.org/abs/2610.34093v1",
+  "authors": [
+    "Changqing Zhou",
+    "Yueru Luo",
+    "Han Zhang",
+    "Zeyu Jiang",
+    "Changhao Chen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34093",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.980064+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34093v1",
+  "published_at": "2026-10-25T06:44:50Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "occupancy",
+      "gaussian splatting",
+      "占用预测"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 22
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34093v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "本文提出一种结合语言嵌入高斯、二值占用几何监督和开放词汇视觉模型的三维语义占用预测框架，通过改进高斯到占用聚合、实例语义一致性及多视图选择，提高复杂环境中的开放类别占用预测效果，并验证了其在户外驾驶场景中的适用性。",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "LegoOcc++: Towards Consistent Open-Vocabulary 3D Occupancy Prediction",
+  "title_zh": "LegoOcc++：朝着一致的开放词汇3D占用预测迈进",
+  "translation_url": "https://hjfy.top/arxiv/2610.34093"
+}

@@ -1,0 +1,58 @@
+{
+  "abstract": "World models are emerging as a fundamental component of policy learning for real-world agents, enabling agents to predict future world states and plan actions within a learned representation of the dynamic environment. Existing approaches, however, often model appearance, metric geometry represented by projected LiDAR depth, and ego motion either partially or independently, overlooking the fact that these modalities are different projections of a shared underlying world state. This separation can lead to information loss and cross-modal inconsistency, ultimately limiting downstream performance. Motivated by this unified view of the world, we propose DriveUniTok, a unified multimodal tokenizer for driving world-action models (WAMs) that encodes these modalities in a single decodable continuous latent. We freeze DriveUniTok and adapt a pretrained diffusion model, DriveUniWAM, to predict future unified latents; the tokenizer then decodes them into future appearance, projected LiDAR depth, and ego trajectories. Experiments on NAVSIM demonstrate that our unified design achieves better future prediction and planning performance at lower downstream computational cost than separate-stream alternatives. With reinforcement learning post-training, DriveUniWAM achieves a PDMS of 91.54, reaching state-of-the-art performance among the evaluated WAM-based planners.",
+  "abstract_zh": "世界模型作为现实世界代理政策学习的基本组成部分正在兴起，使代理能够预测未来的世界状态并在动态环境的学习表示中规划行动。然而，现有的方法往往部分或独立地建模外观、由投影的激光雷达深度表示的度量几何和自我运动，忽视了这些模态是共享的基础世界状态的不同投影。这种分离可能导致信息丢失和跨模态不一致，最终限制下游性能。基于对世界的统一视角，我们提出了DriveUniTok，一种用于驾驶世界动作模型（WAMs）的统一多模态分词器，它将这些模态编码为一个可解码的连续潜在表示。我们冻结DriveUniTok，并调整一个预训练的扩散模型DriveUniWAM，以预测未来的统一潜在表示；然后，分词器将其解码为未来的外观、投影的激光雷达深度和自我轨迹。在NAVSIM上的实验表明，我们的统一设计在较低的下游计算成本下实现了更好的未来预测和规划性能，优于分流替代方案。通过强化学习后训练，DriveUniWAM实现了91.54的PDMS，在评估的基于WAM的规划器中达到了最先进的性能。",
+  "arxiv_id": "2610.35044",
+  "arxiv_url": "https://arxiv.org/abs/2610.35044v1",
+  "authors": [
+    "Jingbo Xu",
+    "Hanchao Leng",
+    "JiaHui Huang",
+    "Hanbing Li",
+    "Jingwei Zhao",
+    "Kuiyuan Yang",
+    "Chen Gao",
+    "Guang Chen",
+    "Hangjun Ye",
+    "Yong Li"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-35044",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.042915+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.35044v1",
+  "published_at": "2026-10-26T08:55:30Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.35044v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "提出统一多模态分词器 DriveUniTok，将驾驶场景外观、激光雷达深度和自车运动编码到同一潜在表示，并用于预测未来状态与规划动作。在 NAVSIM 上，该方法提升了预测和规划表现，同时降低下游计算成本；强化学习后训练后的 PDMS 为 91.54。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "预测/规划",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "DriveUniTok: A Unified Multimodal Tokenizer for Driving World-Action Models",
+  "title_zh": "DriveUniTok：一种用于驾驶世界动作模型的统一多模态分词器",
+  "translation_url": "https://hjfy.top/arxiv/2610.35044"
+}

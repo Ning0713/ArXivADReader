@@ -1,0 +1,54 @@
+{
+  "abstract": "Knowledge distillation can transfer large multimodal models to compact models for autonomous driving, but uniform token-level matching can dilute planning-relevant semantics and amplify teacher errors. We propose RSKD, a semantic-consistency-guided distillation framework that routes supervision according to both the task importance of an answer phrase and its semantic consistency with the teacher prediction. Task-critical semantic phrases are localized in the ground-truth answer, and a phrase-level consistency score controls the balance between Jensen--Shannon divergence (JSD) distillation and ground-truth supervision. Teacher information is emphasized only where it is semantically consistent, while semantically inconsistent phrases receive stronger ground-truth supervision. We evaluate RSKD on DrivingVQA, LingoQA, and MapLMv2. RSKD improves over the compared student-based baselines on DrivingVQA and LingoQA and remains competitive on MapLMv2.",
+  "abstract_zh": "知识蒸馏可以将大型多模态模型转化为紧凑型模型以用于自动驾驶，但统一的令牌级匹配可能会稀释与规划相关的语义并放大教师模型的错误。我们提出了RSKD，一种以语义一致性为指导的蒸馏框架，根据答案短语的任务重要性及其与教师预测的语义一致性来引导监督。任务关键的语义短语在真实答案中被定位，而短语级一致性得分则控制了Jensen–Shannon散度（JSD）蒸馏与真实监督之间的平衡。教师信息仅在语义一致的地方被强调，而语义不一致的短语则接受更强的真实监督。我们在DrivingVQA、LingoQA和MapLMv2上评估了RSKD。RSKD在DrivingVQA和LingoQA上优于比较的基于学生的基线，并在MapLMv2上保持竞争力。",
+  "arxiv_id": "2610.34689",
+  "arxiv_url": "https://arxiv.org/abs/2610.34689v1",
+  "authors": [
+    "Chuchu Xie",
+    "Yang Zhong",
+    "Kangan Qian",
+    "Hao Ye",
+    "Kun Jiang",
+    "Diange Yang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34689",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.016106+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34689v1",
+  "published_at": "2026-10-26T01:25:38Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34689v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "地图/定位",
+      "VLM/VLA"
+    ]
+  },
+  "title": "RSKD: Grounding Semantic Consistency in Driving VLMs via Distillation",
+  "title_zh": "RSKD：通过蒸馏在驾驶视觉语言模型中建立语义一致性",
+  "translation_url": "https://hjfy.top/arxiv/2610.34689"
+}

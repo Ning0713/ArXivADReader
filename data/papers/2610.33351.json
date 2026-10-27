@@ -1,0 +1,53 @@
+{
+  "abstract": "Motion perception is fundamental to computer vision and physical AI, and plays a central role in robotics, autonomous vehicles, human-computer interaction, and video compression. Traditional approaches such as background subtraction, frame-differencing and optical flow algorithms often struggle in complex or dynamic scenes, typically sacrificing spatial resolution for computational tractability. Here we introduce MoViD (Motion estimation via Virtual dispersion and phase Detection), a physics-inspired algorithm grounded in the principles that govern photonic time stretch - a highly successful ultrafast realtime data acquisition platform. Drawing inspiration from the optical physics therein, MoViD treats video as a collection of optical time series waveforms associated with pixels. Motion of an object through a pixel broadens the time series spectrum and, after group delay dispersion, induces a temporal phase that exists only if there is motion. Spatiotemporal group delay dispersion templates, corresponding to dielectric functions, classify specific motion trajectories. Unlike conventional empirical phase-based motion-analysis pipelines that require narrow-band spatial channelization and pyramid reconstruction, the physics-based MoViD operates directly on the broadband video signal, vastly increasing its computational speed. The resulting algorithm achieves unprecedented performance in both motion characterization and motion magnification, providing full-resolution motion mapping in real time at nearly 200 frames per second at 4K resolution and 70 frames per second for 8K video - orders of magnitude faster than classical optical flow approaches or learning-based methods. Notably, such extreme performance enables real time motion analysis at ultrahigh resolution for motion detection and compensation in robotics and other autonomous devices.",
+  "abstract_zh": "运动感知是计算机视觉和物理人工智能的基础，在机器人技术、自动驾驶车辆、人机交互和视频压缩中发挥着核心作用。传统方法如背景减法、帧差法和光流算法在复杂或动态场景中往往面临挑战，通常需要牺牲空间分辨率以提高计算可行性。在此，我们介绍了MoViD（基于虚拟色散和相位检测的运动估计），这是一种基于物理原理的算法，根植于光子时间拉伸的基本原理——一种非常成功的超快实时数据采集平台。MoViD从其中的光学物理中汲取灵感，将视频视为与像素相关的光学时间序列波形的集合。物体通过像素的运动会扩展时间序列光谱，并在群延迟色散后引入一种仅在存在运动时才存在的时间相位。与介电函数对应的时空群延迟色散模板可以对特定的运动轨迹进行分类。与传统的基于相位的运动分析管道需要窄带空间通道化和金字塔重建不同，基于物理的MoViD直接在宽带视频信号上操作，大大提高了其计算速度。该算法在运动特征提取和运动放大方面实现了前所未有的性能，能够在接近200帧每秒的4K分辨率下实时提供全分辨率的运动映射，并在8K视频下以70帧每秒的速度运行——比经典光流方法或基于学习的方法快几个数量级。值得注意的是，这种极端性能使得在超高分辨率下进行实时运动分析成为可能，从而实现机器人及其他自主设备中的运动检测和补偿。",
+  "arxiv_id": "2610.33351",
+  "arxiv_url": "https://arxiv.org/abs/2610.33351v1",
+  "authors": [
+    "Callen MacPhee",
+    "Yiming Zhou",
+    "Bahram Jalali"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33351",
+  "categories": [
+    "cs.CV",
+    "eess.IV",
+    "physics.optics"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.927702+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33351v1",
+  "published_at": "2026-10-23T22:39:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33351v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "地图/定位"
+    ]
+  },
+  "title": "Real Time Motion Detection in Video Inspired by Photonic Time Stretch",
+  "title_zh": "受光子时间拉伸启发的视频实时运动检测",
+  "translation_url": "https://hjfy.top/arxiv/2610.33351"
+}

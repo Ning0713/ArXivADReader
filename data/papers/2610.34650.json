@@ -1,0 +1,66 @@
+{
+  "abstract": "Assistive agents in shared-control settings face a dual challenge: acting proactively to align with the human's intentions while remaining legible enough for the human to comprehend and fluently respond in real time. We present Dream2Assist, a model-based reinforcement learning framework for tightly-coupled shared decision making that addresses both sides of this challenge. Our approach extends a recurrent state-space world model with intent inference, enabling an assistive policy trained via fictitious co-play to anticipate and support discrete human objectives without overriding human agency. Beyond the computational framework, we describe the full deployment pipeline needed to translate a world-model-based policy into a safe, human-centered system in a resource-efficient way. Crucially, we address the sim-to-real-human gap via policy down-selection and reward restructuring within an iterative human-machine interface design. We validate the framework through three human-subjects studies and a preliminary on-vehicle deployment spanning two qualitatively distinct domains: high-speed racing (N=30) and urban driving with richer intent structure (N=10). Our results demonstrate that intent conditioning yields measurable improvements in torque alignment and collision rate. We surface key design insights and practices for deploying learning-based assistive agents in safety-critical, real-time human-robot teaming.",
+  "abstract_zh": "在共享控制环境中，辅助代理面临双重挑战：主动行动以与人类意图保持一致，同时保持足够的可理解性，以便人类能够实时理解并流畅响应。我们提出了Dream2Assist，这是一个基于模型的强化学习框架，旨在解决这一挑战的两个方面。我们的方法扩展了带有意图推断的递归状态空间世界模型，使得通过虚拟共同游戏训练的辅助策略能够预测并支持离散的人类目标，而不干扰人类的自主性。除了计算框架外，我们还描述了将基于世界模型的策略转化为安全、以人为本的系统所需的完整部署流程，且资源效率高。关键在于，我们通过策略下选择和奖励重构来解决模拟到真实人类的差距，这一过程是在迭代的人机界面设计中进行的。我们通过三项人类受试者研究和一次初步的车辆部署进行了验证，涵盖了两个质上不同的领域：高速赛车（N=30）和具有更丰富意图结构的城市驾驶（N=10）。我们的结果表明，意图条件化在扭矩对齐和碰撞率方面带来了可测量的改善。我们总结了在安全关键的实时人机协作中部署基于学习的辅助代理的关键设计见解和实践。",
+  "arxiv_id": "2610.34650",
+  "arxiv_url": "https://arxiv.org/abs/2610.34650v1",
+  "authors": [
+    "Jonathan DeCastro",
+    "Thomas Balch",
+    "Emily Sumner",
+    "Deepak Gopinath",
+    "Laporsha Dees",
+    "Patricio Reyes Gomez",
+    "Elliot Weiss",
+    "Megan Applegate-Kenton",
+    "Todd Rowell",
+    "John Leonard",
+    "Avinash Balachandran",
+    "Guy Rosman"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34650",
+  "categories": [
+    "cs.RO",
+    "cs.HC",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.855894+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34650v1",
+  "published_at": "2026-10-26T00:28:48Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "world model",
+      "sim-to-real",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34650v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "提出意图条件化世界模型，用于共享车辆控制中的辅助决策；在人类受试者研究及赛车、城市驾驶部署中验证了其对扭矩对齐和碰撞率的改善。",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "预测/规划",
+      "安全/异常"
+    ]
+  },
+  "title": "Dream to Assist: Intent-Conditioned World Models for Shared Vehicle Control",
+  "title_zh": "助力梦想：基于意图条件的共享车辆控制世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.34650"
+}

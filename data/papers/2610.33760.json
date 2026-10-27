@@ -1,0 +1,67 @@
+{
+  "abstract": "Simulation is widely used in autonomous-driving validation, but matching task outputs between real and synthetic images does not guarantee that a system relies on the same visual evidence. This creates a validation gap for transfer, especially in safety-critical perception functions. We present Concept-Decisive Feature Fidelity (C-DFF), a concept-level mechanism-parity diagnostic for paired real-synthetic evaluation. Starting from decisive evidence extracted from a frozen system-under-test (SUT), C-DFF projects that evidence into a shared semantic concept space using off-the-shelf segmentation and compares real and synthetic concept-importance vectors. The result is not only a scalar mechanism-parity score, but also a concept-shift diagnostic that identifies which scene concepts become more or less decisive in simulation. We evaluate C-DFF on KITTI $\\leftrightarrow$ Virtual KITTI 2 with 2126 matched pairs across three frozen SUTs (steering regression, YOLOP drivable-area, YOLOP lane-line). Across these tasks, C-DFF is SUT-discriminative and yields interpretable concept-level summaries that support validation triage and simulator debugging. When reported alongside task-specific output-value context metrics, C-DFF shows that output agreement does not by itself establish mechanism parity. These results position C-DFF as a practical semantic diagnostic layer for validation and verification workflows in simulation-based AV testing.",
+  "abstract_zh": "仿真在自主驾驶验证中被广泛使用，但真实图像与合成图像之间的任务输出匹配并不能保证系统依赖于相同的视觉证据。这为转移验证创造了差距，尤其是在安全关键的感知功能中。我们提出了概念决定性特征保真度（C-DFF），这是一种用于配对真实与合成评估的概念级机制一致性诊断。C-DFF从冻结的被测系统（SUT）中提取决定性证据，将这些证据投影到共享的语义概念空间中，使用现成的分割技术，并比较真实和合成的概念重要性向量。结果不仅是一个标量机制一致性分数，还包括一个概念转变诊断，识别在仿真中哪些场景概念变得更加或不那么决定性。我们在KITTI与Virtual KITTI 2的2126对匹配样本上评估了C-DFF，涉及三个冻结的SUT（转向回归、YOLOP可驾驶区域、YOLOP车道线）。在这些任务中，C-DFF具有SUT区分性，并产生可解释的概念级摘要，支持验证分类和仿真器调试。当与特定任务的输出值上下文指标一起报告时，C-DFF显示输出一致性本身并不能建立机制一致性。这些结果使C-DFF成为仿真基础的自动驾驶测试中验证和确认工作流的实用语义诊断层。",
+  "arxiv_id": "2610.33760",
+  "arxiv_url": "https://arxiv.org/abs/2610.33760v1",
+  "authors": [
+    "Danial Safaei",
+    "Siddartha Khastgir",
+    "Matthew Higgins",
+    "Jeroen Ploeg",
+    "Mohsen Alirezaei",
+    "Son Tong",
+    "Ludo Gielen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33760",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.963878+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33760v1",
+  "published_at": "2026-10-24T16:02:43Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "自动驾驶",
+      "kitti",
+      "autonomous",
+      "driving",
+      "lane",
+      "驾驶",
+      "车道",
+      "驾驶感知",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "标题明确属于非道路驾驶领域",
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 70.0
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33760v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "提出C-DFF，通过比较配对真实与仿真图像中的语义概念重要性，诊断自动驾驶系统是否依赖一致的视觉证据。在2126对KITTI与Virtual KITTI 2样本及三个被测系统上的实验表明，该方法可揭示任务输出一致时仍存在的机制差异，并为仿真验证与调试提供可解释依据。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "C-DFF: Concept-Level Diagnostics for Mechanism Parity in Simulation-Based Validation of Autonomous Driving Perception",
+  "title_zh": "C-DFF：基于概念级诊断的机制一致性在自主驾驶感知的仿真验证中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2610.33760"
+}

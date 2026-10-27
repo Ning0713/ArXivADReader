@@ -1,0 +1,51 @@
+{
+  "abstract": "For safety of the intended functionality (SOTIF) analysis according to ISO 21448, a machine learning object detector for light detection and ranging (LiDAR) point clouds can meet a performance target, a limit on the mean per-frame share of wrong detections among accepted detections, by rejecting detections above an uncertainty threshold. A threshold selected on data of one condition carries a statistical guarantee only for data distributed like its selection data, whereas SOTIF analysis covers every triggering condition. This paper presents an uncertainty evaluation in which the threshold is transferred into a triggering condition, a test decides at a stated error probability whether the target is applicable there, not applicable or not determined, and a lower bound counts the independent units an applicable outcome requires. For PointPillars ensembles on KITTI and nuScenes, counted in recorded sequences, as the dependence between frames requires, neither dataset held enough independent units for any target limit, and no transfer had a not applicable outcome. Counted in frames, the same data gave not applicable outcomes at limits fixed in advance after transfers into far distance, into rain and between two separately trained detectors, thresholds that met the target limit after a transfer rejected most correct detections, and in rain the area under the receiver operating characteristic curve did not decrease. A performance target met under one condition therefore counts as evidence under a triggering condition only after a test there, reported with its share of accepted correct detections and its number of independent recorded sequences.",
+  "abstract_zh": "根据ISO 21448的意图功能安全（SOTIF）分析，针对光学探测与测距（LiDAR）点云的机器学习目标检测器可以通过拒绝超过不确定性阈值的检测来满足性能目标，即在接受的检测中错误检测的每帧平均比例的限制。在一个条件的数据上选择的阈值仅对与其选择数据分布相似的数据提供统计保证，而SOTIF分析涵盖每个触发条件。本文提出了一种不确定性评估方法，其中阈值被转移到触发条件下，测试在规定的错误概率下决定目标在该条件下是否适用、是否不适用或未确定，并且下限计算适用结果所需的独立单位数量。对于在KITTI和nuScenes上进行的PointPillars集成，记录序列中计数，由于帧之间的依赖关系，任何目标限制都没有足够的独立单位，并且没有转移产生不适用的结果。在帧计数中，同样的数据在转移到远距离、雨天和两个分别训练的检测器之间后，在预先固定的限制下给出了不适用的结果，这些阈值在转移后拒绝了大多数正确检测，而在雨天接收器操作特征曲线下的面积并没有减少。因此，在一个条件下满足的性能目标仅在经过该条件的测试后，报告其接受的正确检测比例和独立记录序列的数量后，才算作在触发条件下的证据。",
+  "arxiv_id": "2610.35092",
+  "arxiv_url": "https://arxiv.org/abs/2610.35092v1",
+  "authors": [
+    "Milin Patel",
+    "Rolf Jung"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-35092",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.049822+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.35092v1",
+  "published_at": "2026-10-26T09:32:55Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "lidar",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.35092v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Uncertainty Evaluation to Support Safety of the Intended Functionality Analysis for Determining the Applicability of Performance Targets Across Triggering Conditions in ML-Based LiDAR Object Detection",
+  "title_zh": "不确定性评估以支持意图功能安全分析，确定基于机器学习的LiDAR目标检测在触发条件下性能目标适用性的可行性",
+  "translation_url": "https://hjfy.top/arxiv/2610.35092"
+}

@@ -1,0 +1,51 @@
+{
+  "abstract": "Rapid illumination transitions can disturb Visual SLAM (VSLAM) by saturating images before the Automatic Exposure (AE) policy adapts, removing the visual correspondences needed to maintain tracking. Our proposed methods mitigate this disturbance at two levels: B-Adapt acquires adaptive exposure brackets to cover the scene dynamic range while promoting photometric overlap, and BVSLAM directly uses the multi-exposure sequence as constraints in a factor graph state estimator without relying on High Dynamic Range (HDR) merging. We evaluate both methods against state-of-the-art approaches in nominal environments and during a repeated tunnel-exit transition at an emulated vehicle speed of 32 m s-1. In the tunnel, combining our B-Adapt with BVSLAM reduces the state estimation error by 78 % compared with AE images. These results suggest that bracketing efficiently improves visual pose estimation robustness to rapid illumination disturbances while retaining low error under nominal conditions. Our code is available at https://github.com/norlab-ulaval/bracketing-shows-the-way.",
+  "abstract_zh": "快速的光照变化可能会干扰视觉SLAM（VSLAM），因为在自动曝光（AE）策略适应之前，图像会饱和，从而消除维持跟踪所需的视觉对应关系。我们提出的方法在两个层面上缓解了这种干扰：B-Adapt获取自适应曝光包围，以覆盖场景的动态范围，同时促进光度重叠；而BVSLAM则直接将多曝光序列作为约束用于因子图状态估计器，而不依赖于高动态范围（HDR）合并。我们在标准环境和模拟车辆速度为32 m/s的重复隧道出口过渡中，将这两种方法与最先进的方法进行了评估。在隧道中，将我们的B-Adapt与BVSLAM结合使用，使状态估计误差相比于AE图像降低了78%。这些结果表明，包围法则有效提高了视觉姿态估计对快速光照干扰的鲁棒性，同时在标准条件下保持低误差。我们的代码可在https://github.com/norlab-ulaval/bracketing-shows-the-way获取。",
+  "arxiv_id": "2610.33174",
+  "arxiv_url": "https://arxiv.org/abs/2610.33174v1",
+  "authors": [
+    "Olivier Gamache",
+    "Anthony Lavertu",
+    "David-Alexandre Duclos",
+    "Jean-Michel Fortin",
+    "François Pomerleau",
+    "Philippe Giguère"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33174",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.801472+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33174v1",
+  "published_at": "2026-10-23T18:16:24Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "车辆"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33174v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "提出面向快速明暗转换场景的自适应多曝光采集策略B-Adapt和多曝光视觉SLAM系统BVSLAM，直接利用曝光序列进行因子图状态估计。在模拟车辆高速驶出隧道的实验中，该方法显著降低定位误差，提升了自动驾驶视觉定位在极端光照变化下的稳健性。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Bracketing Shows the Way: Adaptive Multi-Exposure Policy as Input for Robust Visual SLAM",
+  "title_zh": "包围法则引导方向：自适应多曝光策略作为稳健视觉SLAM的输入",
+  "translation_url": "https://hjfy.top/arxiv/2610.33174"
+}

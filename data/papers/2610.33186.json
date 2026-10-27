@@ -1,0 +1,54 @@
+{
+  "abstract": "Autonomous vehicles (AVs) operating in dynamic, challenging conditions such as intersections and roundabouts must guarantee collision avoidance under uncertainty while maintaining real-time feasibility. Most existing planners struggle to simultaneously guarantee both requirements. Chance-constrained formulations embed safety constraints directly in the optimization but become infeasible as uncertainty compounds; deterministic planners provide feasible solutions but fail to address the uncertainty that causes collisions; end-to-end learned policies provide neither guarantee in an interpretable form. We present a modular perception-prediction-planning pipeline that closes this gap by propagating uncertainty as structured, interpretable quantities across module boundaries. Rather than embedding probabilistic risk directly in the optimization, our pipeline resolves collision probabilities upstream and constructs convex safe sets within which the planner provides a guaranteed feasible solution at every cycle -- decoupling the safety guarantee from solver feasibility. Across Monte Carlo trials in a four-way unsignalized intersection, our pipeline achieves 0% collisions and 0% solver infeasibility at 12.7ms per cycle, compared to 36% and 10% collision rates for deterministic and chance-constrained baselines respectively. The ablation study confirms the necessity of each uncertainty source and the hardware deployment on Clearpath Jackal UGVs validates the pipeline's real-time viability on physical platforms.",
+  "abstract_zh": "在动态且具有挑战性的环境中（如交叉口和环形交叉道）运行的自动驾驶车辆（AVs）必须在不确定性下保证碰撞避免，同时保持实时可行性。大多数现有的规划器在同时保证这两个要求方面存在困难。机会约束形式将安全约束直接嵌入优化中，但随着不确定性的增加而变得不可行；确定性规划器提供可行解，但未能解决导致碰撞的不确定性；端到端学习的策略则未能以可解释的形式提供任何保证。我们提出了一种模块化的感知-预测-规划管道，通过在模块边界传播不确定性作为结构化的、可解释的量来填补这一空白。我们的管道并未将概率风险直接嵌入优化，而是在上游解决碰撞概率，并构建出凸安全集，在此集内，规划器在每个周期提供保证的可行解——将安全保证与求解器的可行性解耦。在四向无信号交叉口的蒙特卡洛试验中，我们的管道在每个周期12.7毫秒的时间内实现了0%的碰撞率和0%的求解器不可行性，而确定性和机会约束基线的碰撞率分别为36%和10%。消融研究确认了每个不确定性源的必要性，而在Clearpath Jackal UGVs上的硬件部署验证了该管道在物理平台上的实时可行性。",
+  "arxiv_id": "2610.33186",
+  "arxiv_url": "https://arxiv.org/abs/2610.33186v1",
+  "authors": [
+    "Doris Xu",
+    "Jin Hyun Park",
+    "Guadalupe Alvarado Fernandez",
+    "Adhyan Prasad",
+    "Mark Campbell"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33186",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.802287+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33186v1",
+  "published_at": "2026-10-23T18:29:09Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "intersection",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33186v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Interpretable Collision Avoidance and Feasibility Guarantees through an Uncertainty Aware Pipeline",
+  "title_zh": "通过不确定性感知管道实现可解释的碰撞避免和可行性保证",
+  "translation_url": "https://hjfy.top/arxiv/2610.33186"
+}

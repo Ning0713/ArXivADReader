@@ -1,0 +1,51 @@
+{
+  "abstract": "Accurate localization in GPS-denied and visually degraded environments affected by smoke, dust, or fog remains a critical challenge for autonomous systems. While LiDAR provides high-resolution spatial perception, its performance deteriorates under particulate occlusion. In contrast, frequency-modulated continuous-wave (FMCW) radar offers robustness under such conditions but suffers from sparse measurements and outliers. This article presents a resilient decentralized LiDAR Radar Inertial Odometry (LRIO) framework that fuses the complementary strengths of LiDAR, radar, and inertial sensing to achieve robust pose estimation in challenging subterranean environments. At the core of the framework is an Adaptive Residual Thresholding (ART) mechanism that autonomously detects temporal sensor degradation and selectively adjusts the fusion process to minimize unreliable measurements. Building on this, a Robust Error-Tolerant Optimal Information Filter (RETOIF) is employed within a decentralized fusion architecture to integrate LiDAR-inertial and multiple radar-inertial odometry estimates in a fault-aware manner, enhancing resilience to environmental disturbances and intermittent sensor failures. The proposed framework is evaluated using real-world sensor data collected in GPS-denied subterranean tunnels under smoke-free and smoke-degraded conditions. In the smoke-free experiment, the proposed RETOIF framework achieves a root mean square localization error (RMSE) of 2.1733, compared with 2.9929 for the conventional centralized LRIO approach, corresponding to a 27.4\\% reduction in RMSE. Experimental results further demonstrate the framework's ability to maintain pose estimation under smoke-induced sensor degradation, highlighting its potential for resilient autonomous navigation and mapping in challenging subterranean environments.",
+  "abstract_zh": "在GPS不可用和视觉受损的环境中，烟雾、灰尘或雾霾影响下的准确定位仍然是自主系统面临的重大挑战。虽然激光雷达（LiDAR）提供高分辨率的空间感知，但其性能在颗粒物遮挡下会下降。相比之下，频率调制连续波（FMCW）雷达在此类条件下表现出更强的鲁棒性，但却面临稀疏测量和异常值的问题。本文提出了一种韧性的分散式激光雷达-雷达-惯性里程计（LRIO）框架，融合了激光雷达、雷达和惯性传感器的互补优势，以实现挑战性地下环境中的稳健姿态估计。该框架的核心是自适应残差阈值（ART）机制，能够自主检测传感器的时间衰减，并选择性地调整融合过程，以最小化不可靠测量。基于此，采用了鲁棒误差容忍最优信息滤波器（RETOIF）在分散式融合架构中集成激光雷达-惯性和多雷达-惯性里程计估计，以故障感知的方式增强对环境干扰和间歇性传感器故障的韧性。通过在无烟和烟雾影响条件下的GPS不可用地下隧道中收集的真实传感器数据对所提出的框架进行了评估。在无烟实验中，所提出的RETOIF框架实现了2.1733的均方根定位误差（RMSE），而传统集中式LRIO方法的RMSE为2.9929，减少了27.4%的RMSE。实验结果进一步表明，该框架能够在烟雾引起的传感器衰减下维持姿态估计，突显了其在挑战性地下环境中实现韧性自主导航和地图构建的潜力。",
+  "arxiv_id": "2610.35363",
+  "arxiv_url": "https://arxiv.org/abs/2610.35363v1",
+  "authors": [
+    "Moumita Mukherjee",
+    "Avijit Banerjee",
+    "Anton Koval",
+    "George Nikolakopoulos"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-35363",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.876952+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.35363v1",
+  "published_at": "2026-10-23T15:58:05Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "LLM 边界复核纳入"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.35363v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "提出面向复杂地下环境的分散式雷达-激光雷达-惯性里程计，通过自适应传感器退化检测和鲁棒信息融合提升定位精度与故障韧性，并在烟雾条件下验证了其自主导航潜力。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "多传感器融合",
+      "安全/异常"
+    ]
+  },
+  "title": "Resilient Decentralized Radar-LiDAR-Inertial Odometry in Challenging Subterranean Environments",
+  "title_zh": "在挑战性地下环境中具有韧性的分散式雷达-激光雷达-惯性里程计",
+  "translation_url": "https://hjfy.top/arxiv/2610.35363"
+}

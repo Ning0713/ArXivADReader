@@ -1,0 +1,49 @@
+{
+  "abstract": "Road anomalies such as collisions, violations, and sudden hazards demand more from video understanding than detection: a practical system must verify what happened, describe the scene, and explain the cause. We find these competences pull in opposite directions for vision-language models: closed-form questions reward precise, evidence-grounded reasoning, while open-ended answers are scored by similarity to reference text, where matching the annotation style matters as much as reasoning correctly. We present Reason-or-Recite (RoR), a two-specialist framework for the Traffic Anomaly Reasoning track of the 2026 AI City Challenge. RoR (1) rewrites the official chain-of-thought annotations into a structured, temporally grounded schema and LoRA-tunes a 9B vision-language model on the enhanced traces; (2) fine-tunes a 4-bit-quantized 27B model on answers alone, absorbing the annotation style; and (3) selects between the two candidates per question with a training-free LLM judge. RoR ranks first on the in-domain leaderboard with mean score 0.6788.",
+  "abstract_zh": "道路异常事件，如碰撞、违规和突发危险，要求视频理解不仅仅是检测：一个实用的系统必须验证发生了什么，描述场景，并解释原因。我们发现这些能力在视觉-语言模型中朝着相反的方向发展：封闭式问题奖励精确、基于证据的推理，而开放式答案则根据与参考文本的相似性进行评分，其中匹配注释风格与正确推理同样重要。我们提出了推理或复述（Reason-or-Recite, RoR），这是2026年人工智能城市挑战赛交通异常推理赛道的一个双专家框架。RoR (1) 将官方的思维链注释重写为结构化、时间上有据的模式，并对增强的轨迹进行LoRA调优，使用一个9B的视觉-语言模型；(2) 单独对答案进行微调，使用一个4位量化的27B模型，吸收注释风格；(3) 使用无训练的LLM评判者在每个问题中选择两个候选者。RoR在领域内排行榜上以平均得分0.6788排名第一。",
+  "arxiv_id": "2610.34993",
+  "arxiv_url": "https://arxiv.org/abs/2610.34993v1",
+  "authors": [
+    "Mayur Kulkarni"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34993",
+  "categories": [
+    "cs.CV",
+    "cs.CL"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.037138+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34993v1",
+  "published_at": "2026-10-26T08:05:21Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "road",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34993v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "本文面向道路碰撞、违规和突发危险等交通异常的视频理解与因果解释，构建了一个由推理专家、风格复述专家和 LLM 评审器组成的视觉语言框架。其核心贡献是分别优化基于时序视觉证据的异常推理能力和与标注风格匹配的回答生成能力，再动态选择更合适的答案。该研究可用于自动驾驶系统的道路风险理解、异常事件解释和安全分析。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "VLM/VLA",
+      "感知"
+    ]
+  },
+  "title": "Reason or Recite: Complementary Specialists with an LLM Judge for Traffic Anomaly Reasoning",
+  "title_zh": "推理还是复述：与大型语言模型协作的交通异常推理的互补专家",
+  "translation_url": "https://hjfy.top/arxiv/2610.34993"
+}

@@ -1,0 +1,46 @@
+{
+  "abstract": "Goal reasoning (GR) is the process by which intelligent agents continually reason about the goals they are pursuing, which may lead to goal change, for instance when opportunities arise, or when events cause discrepancies among expected and actual outcomes of actions planned to achieve goals. In this paper we investigate whether Hierarchical Task Network (HTN) planning can provide a uniform implementation of the Goal Lifecycle, a flexible process model for goal reasoning in dynamic environments. The Goal Lifecycle progressively refines goals by adding constraints to them through a series of strategies (e.g., {\\it formulate, select, expand}) and uses other strategies (e.g., {\\it defer, re-expand, repair}) to resolve the current goal when an event impacts it. We present a novel GR agent architecture that employs HTN planning in this Goal Lifecycle. In addition to using HTN planning for the \\textit{expand} and \\textit{re-expand} strategies, as is frequently done in GR and planning research, we also use it in the \\textit{formulate} strategy, to obtain a uniform planning approach that provides several benefits (e.g., the possibility to formulate new goals in view of achieving higher level overarching goals). We also explain how we use an enhanced HTN action representation to process discrepancies among expected and actual action outcomes that can trigger the transition from one goal to another. Finally, we empirically demonstrate that our GR architecture enables simulated autonomous vehicles to adaptively conduct missions in dynamic environments.",
+  "abstract_zh": "目标推理（Goal reasoning, GR）是智能体持续推理其追求目标的过程，这可能导致目标的变化，例如在机会出现时，或当事件导致预期与实际行动结果之间存在差异时。在本文中，我们探讨分层任务网络（Hierarchical Task Network, HTN）规划是否能够提供目标生命周期（Goal Lifecycle）的统一实现，这是一个在动态环境中进行目标推理的灵活过程模型。目标生命周期通过一系列策略（例如，{ extit formulate, select, expand}）逐步细化目标，通过其他策略（例如，{ extit defer, re-expand, repair}）来解决受到事件影响的当前目标。我们提出了一种新颖的GR代理架构，该架构在目标生命周期中采用HTN规划。除了在GR和规划研究中常用HTN规划用于{ extit expand}和{ extit re-expand}策略外，我们还在{ extit formulate}策略中使用HTN规划，以获得一种统一的规划方法，提供多种好处（例如，能够在实现更高层次的总体目标时制定新目标）。我们还解释了如何使用增强的HTN动作表示来处理预期与实际行动结果之间的差异，这些差异可能触发从一个目标转向另一个目标的过渡。最后，我们通过实证研究证明我们的GR架构使模拟的自主车辆能够在动态环境中自适应地执行任务。",
+  "arxiv_id": "2610.34668",
+  "arxiv_url": "https://arxiv.org/abs/2610.34668v1",
+  "authors": [
+    "Paola Rizzo",
+    "Hector Munoz-Avila",
+    "David W. Aha"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34668",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.159582+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34668v1",
+  "published_at": "2026-10-26T01:01:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34668v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Hierarchical Task Network planning in the Goal Lifecycle",
+  "title_zh": "目标生命周期中的分层任务网络规划",
+  "translation_url": "https://hjfy.top/arxiv/2610.34668"
+}

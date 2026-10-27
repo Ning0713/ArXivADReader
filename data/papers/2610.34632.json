@@ -1,0 +1,57 @@
+{
+  "abstract": "Driving video captured through a windshield violates the world-space consistency assumed by 3D Gaussian Splatting (3DGS): the road scene exhibits parallax while cabin reflections remain attached to the camera, causing standard 3DGS to embed reflected content into the reconstructed scene. We introduce RIDE-Splat, a pipeline for reflection-free 3D reconstruction from posed driving video without clean images, reflection masks, or pretrained networks. RIDE-Splat assigns world-consistent transmission through the windshield to a 3DGS scene and the dominant camera-attached reflection to one shared, signed RGB image. It builds the clean reconstruction in two passes. First, it learns the 3D geometry and the signed reflection image, representing both added radiance and transmission attenuation. Then, it uses the reflection-removed training images to fit a clean 3DGS model. At inference, the reflection image is discarded, preserving the standard 3DGS rendering path. We also introduce the RIDE-Splat Dataset, the first 3D reconstruction benchmark for reflection removal from driving video -- with real driving scenes, physical windshield reflections in training views, and separately captured non-reflective evaluation images. Across the RIDE-Splat Dataset, XLD, and Wayve, RIDE-Splat outperforms 3DGS, DC-Gaussian, and RobustSplat on all nine aggregate metrics, improving PSNR by up to 3.59 dB and reducing LPIPS by up to 0.0876. We achieve the highest metrics in 38 out of 42 per-scene comparisons and removes windshield reflections that remain visible in the baselines while preserving the transmitted scene.",
+  "abstract_zh": "通过挡风玻璃捕获的驾驶视频违反了3D高斯点云（3D Gaussian Splatting, 3DGS）所假设的世界空间一致性：道路场景表现出视差，而车厢反射则与相机相连，导致标准3DGS将反射内容嵌入重建场景中。我们提出了RIDE-Splat，一个用于从带有姿态的驾驶视频中进行无反射3D重建的流程，无需干净图像、反射掩膜或预训练网络。RIDE-Splat将通过挡风玻璃的世界一致性传输分配给3DGS场景，并将主要的相机附加反射分配给一个共享的、有符号的RGB图像。它通过两个阶段构建干净的重建。首先，它学习3D几何形状和有符号的反射图像，表示添加的辐射和传输衰减。然后，它使用去除反射的训练图像来拟合一个干净的3DGS模型。在推理阶段，反射图像被丢弃，保留标准的3DGS渲染路径。我们还介绍了RIDE-Splat数据集，这是第一个用于从驾驶视频中去除反射的3D重建基准——包含真实的驾驶场景、训练视图中的物理挡风玻璃反射，以及单独捕获的非反射评估图像。在RIDE-Splat数据集、XLD和Wayve上，RIDE-Splat在所有九个综合指标上超越了3DGS、DC-Gaussian和RobustSplat，将PSNR提高了最多3.59 dB，并将LPIPS降低了最多0.0876。在42个逐场景比较中，我们在38个场景中达到了最高指标，并去除了在基线中仍然可见的挡风玻璃反射，同时保留了传输场景。",
+  "arxiv_id": "2610.34632",
+  "arxiv_url": "https://arxiv.org/abs/2610.34632v1",
+  "authors": [
+    "Kevin David Hayes",
+    "Alex Hanson",
+    "Allen Tu",
+    "Pranav Asthana",
+    "Matthias Zwicker",
+    "Tom Goldstein"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34632",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.012873+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34632v1",
+  "published_at": "2026-10-25T23:11:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "road",
+      "驾驶",
+      "道路",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34632v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "仿真/数据",
+      "LiDAR/点云"
+    ]
+  },
+  "title": "RIDE-Splat: Reflection Removal for In-the-Wild Driving Environments",
+  "title_zh": "RIDE-Splat：野外驾驶环境中的反射去除",
+  "translation_url": "https://hjfy.top/arxiv/2610.34632"
+}

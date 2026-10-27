@@ -1,0 +1,50 @@
+{
+  "abstract": "High-resolution 3D Gaussian Splatting training increases pixel and Gaussian-tile intersection counts, expanding rasterization caches that coexist with projection and gradient state at peak memory. A complete-view update aggregates gradients across the view; each region's forward and backward caches can be released after its contribution is collected. BoundedGS separates rasterization and projection backward passes and bounds the active local rasterization working set according to its measured load. Candidate-indexed projection and compact gradient storage address the view-level peaks exposed by this change, while CPU-assisted structure rebuilding and bounded image supply manage resources outside rendering. In a resolution sweep at a fixed count of about 6M Gaussians, the measured rendering working set stays within 1.073-1.077 GiB from 1K to 16K; at 11K, a warm pass takes 19.79 seconds versus 21.76 for full-frame execution. Across five native 5K outdoor scenes, full training reduces the mean rendering working set from 9.97 to 1.76 GiB (82.3%), retains similar reconstruction quality, and shortens training time from 36.7 to 33.9 minutes. Project page: https://xiaobin2001.github.io/BoundedGS-Web/",
+  "abstract_zh": "高分辨率3D高斯点云训练增加了像素和高斯瓦片的交集数量，扩展了与投影和梯度状态共存的光栅化缓存，达到峰值内存。完整视图更新在视图之间聚合梯度；每个区域的前向和后向缓存可以在其贡献被收集后释放。BoundedGS将光栅化和投影的后向传递分开，并根据测量的负载限制活动的局部光栅化工作集。候选索引投影和紧凑梯度存储解决了这一变化所暴露的视图级峰值，而CPU辅助的结构重建和有界图像供应则管理渲染外的资源。在以约600万高斯点的固定数量进行的分辨率扫描中，测量的渲染工作集在1K到16K之间保持在1.073-1.077 GiB；在11K时，热身传递耗时19.79秒，而全帧执行则为21.76秒。在五个本地5K户外场景中，完整训练将平均渲染工作集从9.97 GiB减少到1.76 GiB（减少82.3%），保持了相似的重建质量，并将训练时间从36.7分钟缩短至33.9分钟。项目页面：https://xiaobin2001.github.io/BoundedGS-Web/",
+  "arxiv_id": "2610.34233",
+  "arxiv_url": "https://arxiv.org/abs/2610.34233v1",
+  "authors": [
+    "Xiaobin Deng",
+    "Changyu Diao",
+    "Min Li",
+    "Duanqing Xu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34233",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.990794+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34233v1",
+  "published_at": "2026-10-25T12:00:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "intersection",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34233v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云"
+    ]
+  },
+  "title": "BoundedGS: Memory-Efficient High-Resolution Training for 3D Gaussian Splatting",
+  "title_zh": "BoundedGS：高效内存的高分辨率3D高斯点云训练",
+  "translation_url": "https://hjfy.top/arxiv/2610.34233"
+}

@@ -1,0 +1,56 @@
+{
+  "abstract": "A cooperative 3D detector can miss a vehicle even when the LiDAR points on it remain unchanged. We study this failure under adverse weather as Weather-Induced Context Interference. To our knowledge, this is the first controlled study of how weather-related exterior changes remove cooperative benefits while preserving all points inside annotated objects. Controlled experiments on simulated and real roadside inputs show that exterior loss changes object representations before fusion and removes previously useful assistance. On real inputs, restoring object-neighborhood features recovers 30 of 31 induced failures; three equal-area exterior controls recover none. The failure condition also appears with a second fusion model. These findings motivate Adverse-Weather Cooperative Repair (AWCR), with separate implementations for the available supervision. Point Classifier filters added weather returns in simulation. On real inputs, Local Correction refines candidates and Quality Selection checks them against current measurements, without naturally paired clear/adverse-weather recordings. Candidate tracing shows that correction supplies accurate geometry for some targets that original candidates cannot localize at the evaluation threshold. On natural adverse-weather CoInfra development data, AWCR improves car bird's-eye-view (BEV) [email protected] by 4.66 points with V2X-ViT and 5.56 with AttFuse. On simulated V2X-R fog, it improves vehicle BEV [email protected] by 4.47 points at a fixed 4,096-candidate budget.",
+  "abstract_zh": "协作3D检测器即使在激光雷达（LiDAR）点云保持不变的情况下也可能漏检车辆。我们将这种在恶劣天气下的失效现象研究为天气引起的上下文干扰。根据我们的了解，这是首个关于天气相关外部变化如何在保留所有标注对象内部点的情况下消除协作效益的控制研究。对模拟和真实路边输入的控制实验表明，外部信息的丧失在融合之前改变了对象的表示，并移除了先前有用的协助。在真实输入中，恢复对象邻域特征可以恢复31个诱发失效中的30个；而三个等面积的外部控制则没有恢复任何。该失效条件在第二个融合模型中也出现。这些发现促使了恶劣天气协作修复（Adverse-Weather Cooperative Repair, AWCR）的提出，针对可用监督进行了单独实现。在模拟中，点分类器过滤器添加了天气返回。在真实输入中，本地修正（Local Correction）优化候选对象，质量选择（Quality Selection）则将其与当前测量进行对比，而无需自然配对的清晰/恶劣天气录音。候选追踪表明，修正为一些目标提供了准确的几何信息，而原始候选在评估阈值下无法定位。在自然恶劣天气的CoInfra开发数据上，AWCR使得车辆鸟瞰图（BEV）在 [email protected] 上提高了4.66分（使用V2X-ViT）和5.56分（使用AttFuse）。在模拟的V2X-R雾霾条件下，它在固定的4,096候选预算下提高了车辆BEV [email protected] 的4.47分。",
+  "arxiv_id": "2610.35110",
+  "arxiv_url": "https://arxiv.org/abs/2610.35110v1",
+  "authors": [
+    "Mengxu Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-35110",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.050786+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.35110v1",
+  "published_at": "2026-10-26T09:49:39Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "vehicle",
+      "car",
+      "roadside",
+      "车辆",
+      "bev",
+      "bird's-eye",
+      "lidar",
+      "cooperative perception",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 72
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.35110v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Understanding and Repairing Cooperative Perception under Adverse Weather",
+  "title_zh": "在恶劣天气下理解与修复协作感知",
+  "translation_url": "https://hjfy.top/arxiv/2610.35110"
+}

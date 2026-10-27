@@ -1,0 +1,60 @@
+{
+  "abstract": "Camera-based bird's-eye view (BEV) perception methods such as Fast-BEV have demonstrated promising results with fast inference speed and competitive accuracy. However, their robustness to real-world corruptions remains insufficiently explored, posing risks for autonomous driving deployment where environmental variations are inevitable. In this paper, we propose Sparse Recovery Bird's-Eye View Model Soup (SR-BEVS), a sparse recovery learning approach that simultaneously improves clean accuracy and corruption robustness without requiring additional data or architectural modifications. Our method identifies pruning candidates based on layer-wise weight magnitudes, applies random pruning to create diverse sparse models, and retrains each model with a randomly sampled learning rate. By averaging these diverse recovered models into a single dense model, we achieve enhanced robustness against various corruptions while introducing zero inference overhead. We further provide a mode connectivity analysis demonstrating that our pruning-based diversification preserves the connected low-loss basin necessary for stable weight averaging. Experiments on the nuScenes dataset demonstrate up to 33.8% improvement in corruption robustness and a 1.8% gain in clean accuracy over the Fast-BEV baseline, with consistent improvements across sensor noise, weather distortions, and illumination changes. Our simple yet effective approach may be applicable to other BEV models.",
+  "abstract_zh": "基于摄像头的鸟瞰视图（BEV）感知方法，如Fast-BEV，已展示出快速推理速度和竞争性准确率的良好结果。然而，它们对现实世界干扰的鲁棒性仍然不足，给自动驾驶部署带来了风险，因为环境变化是不可避免的。本文提出了稀疏恢复鸟瞰视图模型汤（SR-BEVS），这是一种稀疏恢复学习方法，能够同时提高干净准确率和干扰鲁棒性，而无需额外的数据或架构修改。我们的方法基于层级权重大小识别剪枝候选，应用随机剪枝以创建多样化的稀疏模型，并使用随机采样的学习率对每个模型进行再训练。通过将这些多样化的恢复模型平均为一个单一的密集模型，我们在引入零推理开销的同时，增强了对各种干扰的鲁棒性。我们进一步提供了一种模式连通性分析，证明我们的剪枝基础多样化保持了稳定权重平均所需的低损失盆地的连通性。在nuScenes数据集上的实验表明，相较于Fast-BEV基线，我们在干扰鲁棒性上提高了33.8%，在干净准确率上提高了1.8%，并且在传感器噪声、天气失真和光照变化等方面均表现出一致的改善。我们这种简单而有效的方法可能适用于其他BEV模型。",
+  "arxiv_id": "2610.34976",
+  "arxiv_url": "https://arxiv.org/abs/2610.34976v1",
+  "authors": [
+    "Jinwoo Chung",
+    "Sangho An",
+    "Hyunsung Park",
+    "Jangho Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34976",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-27T10:09:35.036356+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34976v1",
+  "published_at": "2026-10-26T07:49:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "bird's-eye",
+      "3d object detection"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34976v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "BEV/Occupancy",
+      "仿真/数据"
+    ]
+  },
+  "title": "Sparse Recovery Bird's-Eye View Model Soup for Robust Camera-Based 3D Object Detection",
+  "title_zh": "稀疏恢复鸟瞰视图模型汤用于鲁棒的基于摄像头的三维物体检测",
+  "translation_url": "https://hjfy.top/arxiv/2610.34976"
+}

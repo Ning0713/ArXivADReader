@@ -1,0 +1,54 @@
+{
+  "abstract": "Achieving safety in autonomous driving through Multi-Agent Reinforcement Learning (MARL) is a critical yet challenging task due to non-stationarity, partial observability, and the need for effective coordination among agents. Although earlier cooperative MARL methods have aimed to improve coordination by sharing encoded state observations, we find these strategies are insufficient in safety-critical scenarios. To address this gap, we present IntNet, a novel MARL framework that enhances safety by incorporating the transmission of vehicle intent and adaptive communication scheduling into a unified end-to-end learning paradigm, jointly optimising all components for safe coordination. Central to our approach is an observation prediction module that enables agents to forecast subsequent policy outputs, which they can then share across a vehicle-to-vehicle network. Our model-free architecture employs a Graph Attention Network to process incoming messages and a scheduler component to dynamically optimise the communication graph for bandwidth efficiency. We compare IntNet against state-of-the-art communicative MARL methods in complex urban environments with both autonomous and human-operated vehicles, achieving improved coordination, lower collision rates, and reducing communication efforts by up to 60\\%. Through extensive experiments, we assess the framework's learning efficiency, scalability, and the balance between information sharing and bandwidth usage for collision-free trajectories.",
+  "abstract_zh": "通过多智能体强化学习（MARL）实现自动驾驶的安全性是一项关键但具有挑战性的任务，主要由于非平稳性、部分可观察性以及智能体之间有效协调的需求。尽管早期的协作MARL方法旨在通过共享编码状态观测来改善协调，但我们发现这些策略在安全关键场景中是不够的。为了解决这一问题，我们提出了IntNet，一种新颖的MARL框架，通过将车辆意图的传输和自适应通信调度纳入统一的端到端学习范式，增强安全性，并共同优化所有组件以实现安全协调。我们方法的核心是一个观测预测模块，使智能体能够预测后续的策略输出，并在车辆对车辆网络中共享这些输出。我们的无模型架构采用图注意力网络处理传入消息，并通过调度组件动态优化通信图以提高带宽效率。我们在复杂的城市环境中将IntNet与最先进的通信MARL方法进行比较，涉及自主和人工操作的车辆，取得了更好的协调效果、较低的碰撞率，并将通信工作量减少了多达60%。通过广泛的实验，我们评估了该框架的学习效率、可扩展性以及信息共享与带宽使用之间的平衡，以实现无碰撞轨迹。",
+  "arxiv_id": "2610.34466",
+  "arxiv_url": "https://arxiv.org/abs/2610.34466v1",
+  "authors": [
+    "Leandro Parada",
+    "Kevin Yu",
+    "Panagiotis Angeloudis"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34466",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.849382+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34466v1",
+  "published_at": "2026-10-25T17:38:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34466v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "安全/异常",
+      "预测/规划"
+    ]
+  },
+  "title": "IntNet: A Communication-Driven Multi-Agent Reinforcement Learning Framework for Cooperative Autonomous Driving",
+  "title_zh": "IntNet：一种基于通信驱动的多智能体强化学习框架用于协作自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.34466"
+}

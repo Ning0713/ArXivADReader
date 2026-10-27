@@ -1,0 +1,68 @@
+{
+  "abstract": "Road infrastructure perception is a fundamental component of autonomous driving, as it recovers the structured road elements that define roadway geometry, delimit operational space, and encode traffic regulations. Although individual tasks such as lane detection, drivable-space estimation, traffic-sign recognition, and online map construction have been extensively studied, the field remains fragmented across task definitions, sensing assumptions, output representations, datasets, and evaluation protocols. This survey provides a function-oriented synthesis of road infrastructure perception. We first clarify its scope and organize existing studies into three complementary categories: geometric-structural, functional-spatial, and regulatory-semantic infrastructure. Based on this taxonomy, we review sensing modalities, scene representations, representative methods, benchmarks, and evaluation protocols, emphasizing the field's evolution from image-space recognition toward metric, vectorized, topology-aware, occupancy-based, and rule-grounded scene modeling. We further examine how representation choices affect evaluation and downstream usability, revealing limitations of current benchmarks in relation reasoning, temporal consistency, robustness, and planning-oriented assessment. Finally, we discuss open challenges and future directions toward unified infrastructure representation, open-environment generalization, relation- and rule-aware reasoning, and downstream-oriented evaluation. By connecting tasks, representations, and evaluation under a common functional framework, this survey aims to establish road infrastructure perception as a coherent foundation for map-compatible and behavior-relevant autonomous-driving scene understanding.",
+  "abstract_zh": "道路基础设施感知是自动驾驶的一个基本组成部分，它恢复了定义道路几何形状、划定操作空间和编码交通法规的结构化道路元素。尽管车道检测、可行驶空间估计、交通标志识别和在线地图构建等单独任务已被广泛研究，但该领域在任务定义、传感假设、输出表征、数据集和评估协议等方面仍然存在碎片化现象。本调查提供了道路基础设施感知的功能导向综合。我们首先明确其范围，并将现有研究组织为三类互补的类别：几何-结构性、功能-空间性和规制-语义性基础设施。基于这一分类法，我们回顾了传感方式、场景表征、代表性方法、基准测试和评估协议，强调该领域从图像空间识别向度量、向量化、拓扑感知、基于占用和基于规则的场景建模的演变。我们进一步考察了表征选择如何影响评估和下游可用性，揭示了当前基准在关系推理、时间一致性、鲁棒性和面向规划的评估方面的局限性。最后，我们讨论了统一基础设施表征、开放环境泛化、关系和规则感知推理以及面向下游的评估等开放挑战和未来方向。通过在一个共同的功能框架下连接任务、表征和评估，本调查旨在将道路基础设施感知建立为地图兼容和行为相关的自动驾驶场景理解的连贯基础。",
+  "arxiv_id": "2610.33758",
+  "arxiv_url": "https://arxiv.org/abs/2610.33758v1",
+  "authors": [
+    "Guoyang Zhao",
+    "Weiqing Qi",
+    "Kai Zhang",
+    "Zhihai Bi",
+    "Tianshuai Hu",
+    "Zeying Gong",
+    "Dezong Zhao",
+    "Jun Ma"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-33758",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.963034+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.33758v1",
+  "published_at": "2026-10-24T16:01:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving scene",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "lane",
+      "驾驶",
+      "交通",
+      "道路",
+      "车道",
+      "occupancy",
+      "lane detection",
+      "车道检测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.33758v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Road Infrastructure Perception for Autonomous Driving: Taxonomy, Representations, Tasks, and Challenges",
+  "title_zh": "自动驾驶的道路基础设施感知：分类、表征、任务与挑战",
+  "translation_url": "https://hjfy.top/arxiv/2610.33758"
+}

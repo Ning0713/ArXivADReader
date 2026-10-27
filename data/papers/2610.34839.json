@@ -1,0 +1,51 @@
+{
+  "abstract": "Human behaviour models are increasingly used to provide simulated human interactions for training robots via reinforcement learning (RL). Existing approaches primarily evaluate these models according to how closely their generated behaviours resemble real human data, while their usefulness as training partners is less commonly assessed. This creates a potential objective mismatch: a model that performs well according to behavioural evaluation metrics may not necessarily provide useful training experiences for downstream robot policy learning. Across two human-robot interaction (HRI) domains, highway driving and object handover, we evaluate different types of human behaviour models using common generative-model evaluation metrics. We consider multiple human trajectory representations and compare the resulting evaluations with the downstream performance of RL policies trained using the corresponding models. We find that existing behavioural evaluation metrics do not consistently predict downstream policy performance across domains and trajectory representations, while their evaluations are sensitive to the choice of trajectory representation. We also show that even when the true testing behaviour distribution is known, training against a different distribution may yield better downstream performance than training directly against the true distribution.",
+  "abstract_zh": "人类行为模型越来越多地被用于通过强化学习（RL）为机器人提供模拟的人际互动。现有的方法主要根据这些模型生成的行为与真实人类数据的相似度来评估，而它们作为训练伙伴的有效性则较少被评估。这造成了潜在的目标不匹配：一个在行为评估指标上表现良好的模型不一定能为下游机器人策略学习提供有用的训练体验。在两个人机交互（HRI）领域，即高速公路驾驶和物体交接中，我们使用常见的生成模型评估指标评估不同类型的人类行为模型。我们考虑多种人类轨迹表示，并将结果评估与使用相应模型训练的RL策略的下游性能进行比较。我们发现，现有的行为评估指标在不同领域和轨迹表示中并不能一致地预测下游策略性能，而它们的评估对轨迹表示的选择非常敏感。我们还表明，即使已知真实的测试行为分布，针对不同分布进行训练也可能比直接针对真实分布进行训练获得更好的下游性能。",
+  "arxiv_id": "2610.34839",
+  "arxiv_url": "https://arxiv.org/abs/2610.34839v1",
+  "authors": [
+    "Haoyang Jiang",
+    "Dana Kulic",
+    "Michael Burke",
+    "Pamela Carreno-Medrano"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-27#paper-2610-34839",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-27T10:09:34.861613+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.34839v1",
+  "published_at": "2026-10-26T04:38:02Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "highway",
+      "驾驶",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-10-27"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.34839v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-27"
+  },
+  "summary_zh": "本文研究人类行为模型的行为逼真度与其对机器人强化学习的训练效用之间的差异，并在高速公路驾驶和物体交接任务中验证。结果显示，常用生成模型评估指标无法可靠预测下游策略性能，且受轨迹表示影响；与测试行为分布不同的训练分布也可能带来更好的策略表现。对自动驾驶而言，该研究提示，交通参与者行为仿真模型的评估应关注其对驾驶策略训练的实际效用。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划"
+    ]
+  },
+  "title": "Behavioural Quality Is Not Learning Utility: Objective Mismatch in Human Behaviour Models for Robot Learning",
+  "title_zh": "行为质量并非学习效用：人类行为模型在机器人学习中的目标不匹配",
+  "translation_url": "https://hjfy.top/arxiv/2610.34839"
+}
