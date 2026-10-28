@@ -1,0 +1,55 @@
+{
+  "abstract": "Self-driving laboratories (SDLs) are laboratory systems that couple experimental planning, automated execution, and measurement feedback in a closed loop. Integrating flexible robot control with the typed application programming interfaces (APIs) and continuous measurements exposed by laboratory instruments remains an execution-interface challenge. To address this challenge, we propose a traceable framework comprising four components: LAM (Lab Action Model), OpenSDL, Safe-SDL, and L3-Bench. LAM is a proposed measurement-conditioned policy architecture that extends vision-language-action paradigms to generate both continuous robot trajectories and typed instrument API calls. OpenSDL is an execution substrate with an initial control implementation, designed to map role-level operations to heterogeneous devices, coordinate execution, and record timestamped causal events. The proposed Safe-SDL runtime gate combines pre-dispatch schema and resource checks with signal temporal logic monitoring during execution, including extended waiting periods. L3-Bench (Level-3 Laboratory Benchmark) specifies an episode-level evaluation protocol covering physical outcomes, timing, reproducibility, safety violations, and fault recovery. Together, these components provide an end-to-end design for linking hybrid action generation, monitored device execution, measurement feedback, and experimental evaluation, addressing coordination and traceability challenges in SDL workflows.",
+  "abstract_zh": "自驾实验室（SDLs）是将实验规划、自动执行和测量反馈结合在一个闭环中的实验室系统。将灵活的机器人控制与实验室仪器所暴露的类型化应用程序接口（APIs）和连续测量集成，仍然是一个执行接口挑战。为了解决这一挑战，我们提出了一个可追溯的框架，包含四个组件：LAM（实验动作模型）、OpenSDL、安全-SDL和L3-Bench。LAM是一个提出的基于测量的策略架构，扩展了视觉-语言-动作范式，以生成连续的机器人轨迹和类型化的仪器API调用。OpenSDL是一个执行基础，具有初始控制实现，旨在将角色级操作映射到异构设备，协调执行并记录带时间戳的因果事件。所提出的安全-SDL运行时门结合了调度前模式和资源检查，以及在执行过程中包括扩展等待时间的信号时序逻辑监控。L3-Bench（三级实验室基准）指定了一个涵盖物理结果、时序、可重复性、安全违规和故障恢复的情节级评估协议。这些组件共同提供了一个端到端的设计，用于连接混合动作生成、监控设备执行、测量反馈和实验评估，解决SDL工作流程中的协调和可追溯性挑战。",
+  "arxiv_id": "2610.36761",
+  "arxiv_url": "https://arxiv.org/abs/2610.36761v1",
+  "authors": [
+    "Zihan Zhang",
+    "Zeyu Wu",
+    "Xin Zhang",
+    "Mingyu Luo",
+    "Haohui Que",
+    "Tong Zhu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-36761",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-28T10:55:46.009176+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.36761v1",
+  "published_at": "2026-10-27T07:17:24Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "self-driving",
+      "driving",
+      "vision-language-action",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 37
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.36761v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Making Self-Driving Laboratories Auditable:A Unified Framework for Hybrid Actions,Measurements, and Safe Execution",
+  "title_zh": "使自驾实验室可审计：混合动作、测量和安全执行的统一框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.36761"
+}

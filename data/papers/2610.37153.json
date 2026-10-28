@@ -1,0 +1,61 @@
+{
+  "abstract": "Reliable real-time 3D object detection based on LiDAR and camera data is critical for safety in autonomous driving, where systems must accurately perceive their surroundings with minimal latency. Many state-of-the-art systems achieve high-quality detection results but fail to meet real-time constraints, limiting their practical use. To address this challenge, we propose FastBEVFusion, a simple, fast, and robust fusion system for 3D object detection. Based on modality-specific features, FastBEVFusion projects these features into semi-aligned modality-specific BEV spaces, without relying on a computationally intensive and potentially error-prone depth estimation. Given these BEV spaces, we propose a light-weight, soft, and dynamic fusion module based on cross-attention, which adapts dynamically to the scene context and enables feature fusion across the entire BEV spaces. Experiments on the complex nuScenes dataset show that FastBEVFusion outperforms state-of-the-art real-time systems, and achieves over 50 FPS without deployment libraries. Additionally, our system shows strong robustness to calibration errors, making FastBEVFusion a powerful 3D object detection system for real-world applications.",
+  "abstract_zh": "基于LiDAR和摄像头数据的可靠实时3D目标检测对于自动驾驶的安全至关重要，系统必须以最小的延迟准确感知周围环境。许多最先进的系统虽然能够实现高质量的检测结果，但未能满足实时性要求，限制了其实际应用。为了解决这一挑战，我们提出了FastBEVFusion，这是一种简单、快速且稳健的3D目标检测融合系统。FastBEVFusion基于特定模态的特征，将这些特征投影到半对齐的模态特定鸟瞰视图（BEV）空间中，而无需依赖计算密集且可能出错的深度估计。基于这些BEV空间，我们提出了一种轻量级、柔性和动态的融合模块，基于交叉注意力（cross-attention），该模块能够根据场景上下文动态调整，实现整个BEV空间的特征融合。在复杂的nuScenes数据集上的实验表明，FastBEVFusion超越了最先进的实时系统，且在没有部署库的情况下实现了超过50 FPS的性能。此外，我们的系统对校准误差表现出强大的鲁棒性，使FastBEVFusion成为现实世界应用中强大的3D目标检测系统。",
+  "arxiv_id": "2610.37153",
+  "arxiv_url": "https://arxiv.org/abs/2610.37153v1",
+  "authors": [
+    "Tom Sanitz",
+    "Emre Gülsoylu",
+    "Simone Frintrop",
+    "Christian Wilms"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-37153",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-28T10:55:46.116715+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.37153v1",
+  "published_at": "2026-10-27T12:51:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "bev",
+      "3d object detection",
+      "lidar",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.37153v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "FastBEVFusion: Simple Multi-Modal Fusion for 3D Object Detection at 50 FPS",
+  "title_zh": "FastBEVFusion：一种简单的多模态融合方法，实现50 FPS的3D目标检测",
+  "translation_url": "https://hjfy.top/arxiv/2610.37153"
+}

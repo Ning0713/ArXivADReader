@@ -1,0 +1,50 @@
+{
+  "abstract": "Autonomous vehicles in enclosed spaces such as tunnels and mines rely on range maps that smoke, dust and fog make inaccurate. Conformal prediction calibrates a keepout around the mapped walls that covers the true unsafe set at a chosen probability. Typically an unmodified planner treats the keepout as an inflated obstacle, and nothing ensures that the vehicle can stop before the keepout as it moves when sensing degrades. In narrow passages this margin and the planner's buffer close the route, and existing remedies recover reach by relaxing the coverage level. This paper conditions the conformal margin on a label-free severity estimate to hold coverage near its target as degradation varies. A planning and control layer enforces one braking-distance condition on the keepout at plan time and at every command, takes the measured tracking residual as its only margin and never alters the keepout. The keepout is validated on ground-robot smoke recordings and the closed loop in simulated quadrotor flights in a foggy tunnel against the standard deployment. In closed-loop simulation the proposed system substantially reduces entries into the calibrated keepout and reaches numerically more goals than the deployment pattern in both calibration regimes, an observed gain of 3.2 percentage points pooled whose per-regime confidence intervals include zero. The per-class keepout holds its coverage near the target on held-out recordings.",
+  "abstract_zh": "在隧道和矿井等封闭空间中，自主车辆依赖于受烟雾、灰尘和雾霾影响而不准确的范围图。保守预测在映射墙壁周围校准一个避让区域，以在选择的概率下覆盖真实的不安全区域。通常，未经修改的规划器将避让区域视为膨胀的障碍物，并且没有任何机制确保车辆在感知退化时能够在避让区域之前停下。在狭窄通道中，这一余量和规划器的缓冲区会关闭路线，而现有的解决方案通过放宽覆盖水平来恢复可达性。本文将保守余量的条件设定为无标签的严重性估计，以在退化变化时保持覆盖接近目标。规划和控制层在规划时和每个命令时对避让区域施加一个制动距离条件，将测量的跟踪残差作为唯一的余量，并且从不改变避让区域。该避让区域在地面机器人烟雾记录和模拟四旋翼在雾霭隧道中的闭环飞行中进行了验证，与标准部署相比。在闭环模拟中，所提出的系统显著减少了进入校准避让区域的次数，并在两个校准方案中比部署模式达到更多的目标，观察到的增益为3.2个百分点，且每个方案的置信区间包括零。每类避让区域在保留的记录上保持其覆盖接近目标。",
+  "arxiv_id": "2610.37217",
+  "arxiv_url": "https://arxiv.org/abs/2610.37217v1",
+  "authors": [
+    "Eric Minwoo Kim",
+    "Jong-Kook Kim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-37217",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-28T10:55:46.027387+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.37217v1",
+  "published_at": "2026-10-27T13:28:42Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "vehicle",
+      "车辆",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.37217v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "KEPT: Conformal Keepouts Kept in Planning for Enclosed-Space Navigation in Degraded Sensing",
+  "title_zh": "KEPT：在感知退化情况下规划封闭空间导航的保守避让区域",
+  "translation_url": "https://hjfy.top/arxiv/2610.37217"
+}

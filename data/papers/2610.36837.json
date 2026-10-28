@@ -1,0 +1,51 @@
+{
+  "abstract": "Generative planners are often evaluated by the trajectories they can generate, although closed-loop driving ultimately depends on the single candidate committed to control. We identify this mismatch as the sample-to-execution gap and show that improving proposal quality alone can worsen the executed decision. Here, we introduce ExecDiffuser, a recurrent proposal-to-execution framework that couples candidate generation, trajectory selection, and subsequent replanning through shared execution semantics. Intent-Guided Diffusion Proposal (IGD) assigns hypothesis responsibility and shapes trajectories with execution-conditioned supervision. Execution-Grounded Selection (EGS) learns a candidate-conditioned publication utility, commits one trajectory to control, and returns it as context for the next planning cycle. Across nuPlan, InterPlan, and NAVSIM, ExecDiffuser achieves leading closed-loop performance against strong state-of-the-art baselines. Under a unified five-seed protocol, it obtains an average score of 85.62, improving over Diffusion Planner and FlowDrive by 4.02 and 1.31 points, respectively. On NAVSIM, it achieves 92.6 PDMS under the official evaluation pipeline. Matched counterfactual analysis further shows that ExecDiffuser more reliably converts strong candidates into committed decisions, while prefix interventions confirm that this advantage persists after physical execution and subsequent replanning.",
+  "abstract_zh": "生成规划器通常通过其能够生成的轨迹进行评估，尽管闭环驾驶最终依赖于承诺控制的单一候选者。我们将这种不匹配称为样本与执行差距，并表明仅仅提高提议质量可能会恶化执行决策。在此，我们介绍了ExecDiffuser，一个递归的提议到执行框架，它通过共享执行语义将候选生成、轨迹选择和后续重新规划结合在一起。意图引导扩散提议（Intent-Guided Diffusion Proposal, IGD）分配假设责任，并通过执行条件监督塑造轨迹。执行基础选择（Execution-Grounded Selection, EGS）学习候选条件的出版效用，承诺一条轨迹进行控制，并将其作为下一个规划周期的上下文返回。在nuPlan、InterPlan和NAVSIM上，ExecDiffuser在强大的最先进基准测试中实现了领先的闭环性能。在统一的五种种子协议下，它获得了85.62的平均分，相较于Diffusion Planner和FlowDrive分别提高了4.02和1.31分。在NAVSIM上，它在官方评估流程下达到了92.6的PDMS。匹配的反事实分析进一步表明，ExecDiffuser更可靠地将强候选者转化为承诺决策，而前缀干预确认这一优势在物理执行和后续重新规划后仍然存在。",
+  "arxiv_id": "2610.36837",
+  "arxiv_url": "https://arxiv.org/abs/2610.36837v1",
+  "authors": [
+    "Shuo Pei",
+    "Bosun Liang",
+    "Saihui Zha",
+    "Chen Sun",
+    "Huachun Tan",
+    "Yong Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-36837",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-28T10:55:46.014884+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.36837v1",
+  "published_at": "2026-10-27T08:36:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuplan",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.36837v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "ExecDiffuser: Closing the Sample-to-Execution Gap in Diffusion Planning",
+  "title_zh": "ExecDiffuser：缩小扩散规划中的样本与执行差距",
+  "translation_url": "https://hjfy.top/arxiv/2610.36837"
+}

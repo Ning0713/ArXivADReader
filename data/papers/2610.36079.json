@@ -1,0 +1,62 @@
+{
+  "abstract": "End-to-end autonomous driving has predominantly relied on open-loop imitation learning for training, which presents two limitations. First, expert demonstrations show only one behavior per scenario, so the model cannot learn alternative valid behaviors and, in turn, cannot adapt to user-specified preferences at test time. Second, noise or ambiguity in these demonstrations can produce inconsistent, unreliable supervision for the end-to-end models. Driving is inherently multi-modal: multiple different behaviors can be valid responses to the same scene, and this diversity arises largely from speed rather than path. We introduce a planning paradigm that learns the path through imitation while scoring a set of candidate speeds across multiple criteria with a learned function supervised by physically grounded safety constraints. We realize this paradigm as Closed-Loop Aware Planning for Autonomous Driving (CLAP-AD), a plug-in planning head that integrates with existing end-to-end driving models and, to our knowledge, is the first to enable explicit test-time control over their speed selection without speed-conditioned training. On Bench2Drive-Speed, CLAP-AD sets a new state of the art Speed-Adherence Score of 82.53, topping TFv6, the strongest baseline on this metric, by 12.9 points while retaining strong closed-loop driving performance. On Bench2Drive, it improves driving score by +28.5 and +32.7 over UniAD and VAD, and on NAVSIM v2, built on real-world driving data, EPDMS by +6.1 over its backbone. Project page: https://clap-ad.github.io",
+  "abstract_zh": "端到端自动驾驶主要依赖于开放式模仿学习进行训练，这存在两个局限性。首先，专家演示在每个场景中仅展示一种行为，因此模型无法学习替代的有效行为，从而无法在测试时适应用户指定的偏好。其次，这些演示中的噪声或模糊性可能导致对端到端模型的不一致和不可靠的监督。驾驶本质上是多模态的：对同一场景的多种不同行为都可以是有效的反应，而这种多样性主要源于速度而非路径。我们提出了一种规划范式，通过模仿学习路径，同时根据多个标准对一组候选速度进行评分，评分函数由基于物理的安全约束进行监督。我们将这一范式实现为自动驾驶的闭环感知规划（Closed-Loop Aware Planning for Autonomous Driving，CLAP-AD），这是一个与现有端到端驾驶模型集成的插件式规划头，据我们所知，这是首个在不进行速度条件训练的情况下，能够显式控制测试时速度选择的模型。在Bench2Drive-Speed上，CLAP-AD设定了新的速度遵循评分（Speed-Adherence Score）82.53，领先于该指标上最强基线TFv6 12.9分，同时保持强大的闭环驾驶性能。在Bench2Drive上，其驾驶评分比UniAD和VAD分别提高了+28.5和+32.7，而在基于真实世界驾驶数据的NAVSIM v2上，EPDMS比其基础模型提高了+6.1。项目页面：https://clap-ad.github.io",
+  "arxiv_id": "2610.36079",
+  "arxiv_url": "https://arxiv.org/abs/2610.36079v1",
+  "authors": [
+    "Emad Aghajanzadeh",
+    "Thomas Schwarzfischer",
+    "Marc Kaufeld",
+    "Moritz Thoma",
+    "Ryan Pégoud",
+    "Manoj Rohit Vemparala",
+    "Pierpaolo Mori",
+    "Nael Fasfous",
+    "Johannes Betz",
+    "Daniel Mueller-Gritschneder",
+    "Ulf Schlichtmann"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-36079",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-10-28T10:55:45.987875+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.36079v1",
+  "published_at": "2026-10-26T18:05:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.36079v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "安全/异常"
+    ]
+  },
+  "title": "Closed-Loop Aware Planning via Imitation-Free Speed Scoring for End-to-End Autonomous Driving",
+  "title_zh": "通过无模仿速度评分实现闭环感知规划的端到端自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2610.36079"
+}

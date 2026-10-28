@@ -1,0 +1,51 @@
+{
+  "abstract": "This paper presents an approach to achieve side-by-side autonomous motion with a pair of personal mobility vehicles (PMVs). Given a global path, two PMVs plan cooperatively so as to hold a social formation that lets the passengers hold a conversation, while keeping the ride safe and smooth. Each vehicle runs its own sampling-based model-predictive planner; the planners exchange nothing but the odometry each vehicle could observe of the other, and the joint decision is expressed as a pair of utility matrices over pairs of candidate trajectories, resolved by a common rule. The behavioural parameters are fitted by inverse reinforcement learning from 409 minutes of driving by ten pairs of people in human-driven PMVs in an indoor environment, and the lanes the pair can use are derived offline from the corridor itself rather than fixed by hand. A safety layer the cost cannot override executes a move only if the vehicle can still brake clear, measured from its whole body, and a vehicle that is stuck reverses along its own path and continues. In closed-loop simulation over 24 runs in the conditions the drivers were recorded in and 24 in four generated obstacle layouts, no vehicle entered a wall or a cone. The pair holds conversational formation for 60.5 and 68.9 percent of the time among obstacles (anticlockwise and clockwise) and 81.2 and 91.5 percent in a clear aisle, against the drivers' 34.0 and 36.0 percent, and 52.9 and 56.0 percent, and it matches their speed. It keeps one lateral formation where the drivers alternated between a close diagonal and a wide abreast one, and it varies far less. Experimental results are based on a differential drive kinematic simulator running on ROS 2.",
+  "abstract_zh": "本文提出了一种实现一对个人移动车辆（PMVs）并行自主运动的方法。在给定全局路径的情况下，两辆PMV协同规划，以保持一种社交队形，使乘客能够进行对话，同时确保乘坐安全平稳。每辆车运行其独立的基于采样的模型预测规划器；规划器之间仅交换每辆车能够观察到的另一辆车的里程计数据，联合决策通过一对候选轨迹的效用矩阵表达，并通过一个共同规则进行解决。行为参数通过对十对人类驾驶的PMVs在室内环境中进行409分钟的驾驶数据进行逆强化学习进行拟合，而这对车辆可以使用的车道是从走廊本身离线推导的，而不是手动固定的。一个安全层的成本不能被覆盖，仅在车辆仍然能够安全刹车的情况下执行移动，该安全距离是从车辆的整体结构测量的，卡住的车辆沿着自己的路径倒退并继续。在记录驾驶员的条件下进行的24次闭环仿真和在四种生成障碍布局下的24次仿真中，没有车辆撞上墙壁或锥形标志。该对车辆在障碍物中保持对话队形的时间分别为60.5%和68.9%（逆时针和顺时针），在清晰通道中为81.2%和91.5%，而驾驶员的对话队形保持时间为34.0%和36.0%，以及52.9%和56.0%，并且速度匹配。它保持一种侧向队形，驾驶员在紧密对角线和宽阔平行之间交替，变化幅度较小。实验结果基于在ROS 2上运行的差分驱动运动学仿真器。",
+  "arxiv_id": "2610.36726",
+  "arxiv_url": "https://arxiv.org/abs/2610.36726v1",
+  "authors": [
+    "Luis Yoichi Morales",
+    "Florent Ferreri"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-36726",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-28T10:55:46.008350+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.36726v1",
+  "published_at": "2026-10-27T06:45:45Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "vehicle",
+      "驾驶",
+      "车辆",
+      "车道"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.36726v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "研究面向两辆个人移动车辆的协同自主导航，通过基于采样的模型预测规划、逆强化学习和车辆间里程计信息共享，使车辆在室内障碍环境中安全、平稳地保持并行社交队形。系统还采用不可覆盖的制动安全层和倒车脱困机制，并在闭环仿真中验证了无碰撞表现及相较人类驾驶更稳定的队形保持能力。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "协同/V2X",
+      "安全/异常"
+    ]
+  },
+  "title": "Learning Side-by-Side Navigation for Personal Mobility Vehicles from Human Drivers",
+  "title_zh": "从人类驾驶员学习个人移动车辆的并行导航",
+  "translation_url": "https://hjfy.top/arxiv/2610.36726"
+}

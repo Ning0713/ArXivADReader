@@ -1,0 +1,55 @@
+{
+  "abstract": "Modern simulators can generate synthetic camera and LiDAR data with accurate annotations for downstream tasks. In contrast, automotive radar simulation remains less mature because it requires not only a 3D engine to model dynamic objects in the scenes but also electromagnetic material properties, antenna configurations, wave propagation mechanisms, and coherent signal synthesis. Existing frameworks are either proprietary or overly simplified, limiting the scalability of radar raw measurements. This paper presents AuRaSim, a ray-tracing-based automotive frequency-modulated continuous wave (FMCW) radar simulation framework for dynamic scenarios. Rather than implementing all components from scratch, AuRaSim builds on Blender for efficient dynamic-scene construction and Sionna RT for graphics processing unit (GPU) accelerated electromagnetic ray tracing, while introducing radar-specific adaptations for path-resolved propagation with complex coefficients, motion-aware Doppler modeling, and subsequently coherent multi-channel analog-to-digital converter (ADC) cube synthesis based on waveform configurations. Quantitative comparison between simulated and measured range-Doppler maps in digital-twin scenarios achieves a root-mean-square error (RMSE) of 0.147 and a peak signal-to-noise ratio (PSNR) of 16.93 dB, demonstrating the accuracy and fidelity of the synthetic signal. AuRaSim therefore provides a complete and extensible platform for reproducible automotive radar simulation and research. Project homepage: https://wangzhaoze.github.io/aurasim.",
+  "abstract_zh": "现代模拟器能够生成带有准确注释的合成相机和激光雷达数据，以支持下游任务。相比之下，汽车雷达模拟仍然不够成熟，因为它不仅需要一个三维引擎来建模场景中的动态物体，还需要电磁材料特性、天线配置、波传播机制和相干信号合成。现有的框架要么是专有的，要么过于简化，限制了雷达原始测量的可扩展性。本文提出了AuRaSim，一个基于光线追踪的汽车频率调制连续波（FMCW）雷达模拟框架，专为动态场景设计。AuRaSim并不是从头开始实现所有组件，而是基于Blender构建高效的动态场景，并利用Sionna RT进行图形处理单元（GPU）加速的电磁光线追踪，同时引入雷达特定的适应性，以实现具有复杂系数的路径解析传播、运动感知的多普勒建模，以及基于波形配置的相干多通道模数转换器（ADC）立方体合成。在数字双胞胎场景中，模拟与测量的距离-多普勒图的定量比较实现了0.147的均方根误差（RMSE）和16.93 dB的峰值信噪比（PSNR），展示了合成信号的准确性和保真度。因此，AuRaSim提供了一个完整且可扩展的平台，用于可重复的汽车雷达模拟和研究。项目主页：https://wangzhaoze.github.io/aurasim。",
+  "arxiv_id": "2610.37403",
+  "arxiv_url": "https://arxiv.org/abs/2610.37403v1",
+  "authors": [
+    "Zhaoze Wang",
+    "Changxu Zhang",
+    "Tai Fei",
+    "Christopher Grimm",
+    "Yi Jin",
+    "Claas Tebruegge",
+    "Markus Gardill"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-37403",
+  "categories": [
+    "cs.RO",
+    "eess.SP"
+  ],
+  "fetched_at": "2026-10-28T10:55:46.032865+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.37403v1",
+  "published_at": "2026-10-27T15:19:08Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "automotive",
+      "lidar",
+      "radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 13
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.37403v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "Radar"
+    ]
+  },
+  "title": "AuRaSim: A Ray-Tracing Based Automotive FMCW Radar Simulator for Dynamic Scenarios",
+  "title_zh": "AuRaSim：基于光线追踪的动态场景汽车频率调制连续波（FMCW）雷达模拟器",
+  "translation_url": "https://hjfy.top/arxiv/2610.37403"
+}

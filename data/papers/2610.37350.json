@@ -1,0 +1,50 @@
+{
+  "abstract": "Accurate camera-LiDAR calibration is an essential prerequisite for robust multi-modal perception in robotics. Recent target-less methods based on learned pixel-point correspondences achieve high extrinsic calibration accuracy and generalize across environments. However, they operate on rectified images with known camera intrinsics, restricting their applicability to systems whose cameras have already been individually calibrated. We present a fully automatic, target-less framework that jointly estimates camera intrinsics, radial-tangential distortion, and camera-LiDAR extrinsics from raw images and LiDAR scans. Our method generalizes deep correspondence-based calibration from rectified images to raw cameras through intrinsic- and distortion-aware correspondence learning via synthetic augmentations. During calibration, we iteratively couple correspondence prediction and nonlinear optimization to jointly refine the camera parameters and relative sensor transformation. We evaluate our approach on an unseen camera-LiDAR configuration from the KITTI dataset and on three real robotic platforms in a zero-shot manner. The results demonstrate that joint calibration with our generalized pixel-point correspondence network improves extrinsic accuracy over correspondence-based methods using pre-calibrated cameras, while additionally recovering accurate intrinsics.",
+  "abstract_zh": "准确的相机-激光雷达标定是机器人多模态感知的基本前提。最近基于学习的像素-点对应的无目标方法实现了高精度的外参标定，并且在不同环境中具有良好的推广能力。然而，这些方法依赖于具有已知相机内参的校正图像，这限制了它们在尚未单独校准的相机系统中的适用性。我们提出了一种完全自动的无目标框架，该框架能够从原始图像和激光雷达扫描中联合估计相机内参、径向-切向畸变以及相机-激光雷达外参。我们的方法通过合成增强实现了内参和畸变感知的对应学习，将基于深度对应的标定从校正图像推广到原始相机。在标定过程中，我们迭代地结合对应预测和非线性优化，联合优化相机参数和传感器相对变换。我们在KITTI数据集中未见过的相机-激光雷达配置以及三个真实机器人平台上以零样本方式评估了我们的方法。结果表明，使用我们推广的像素-点对应网络进行联合标定，相较于使用预校准相机的对应方法，外参精度得到了提升，同时也恢复了准确的内参。",
+  "arxiv_id": "2610.37350",
+  "arxiv_url": "https://arxiv.org/abs/2610.37350v1",
+  "authors": [
+    "Simon Bultmann",
+    "Daniele Cattaneo",
+    "Abhinav Valada"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-37350",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-28T10:55:46.029675+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.37350v1",
+  "published_at": "2026-10-27T14:51:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "lidar",
+      "camera-lidar",
+      "robotic"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 24
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.37350v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "Generalizable Target-Less Joint Intrinsic-Extrinsic Camera-LiDAR Calibration using Deep Pixel-Point Correspondences",
+  "title_zh": "基于深度像素-点对应的可推广无目标联合内外参相机-激光雷达标定",
+  "translation_url": "https://hjfy.top/arxiv/2610.37350"
+}

@@ -1,0 +1,53 @@
+{
+  "abstract": "Achieving high-quality reconstruction and responsive camera tracking remains challenging for monocular RGB Gaussian splatting SLAM under a limited optimization budget. We present an online system that addresses this challenge by combining learned geometric priors with explicit geometric camera tracking, which can substantially outperform learned camera prediction in terms of tracking accuracy. A frozen streaming 3D foundation model serves as a virtual RGB-D sensor, providing depth estimation from monocular video. An explicit geometric solver then estimates camera motion through feature reprojection, and a streaming Gaussian mapper integrates the resulting observations into a dense scene representation. We further show that geometric tracking improves camera pose accuracy across representative streaming geometry backbones, demonstrating the broader applicability of our approach. Extensive experiments on indoor and outdoor datasets show that our method significantly improves reconstruction quality over existing approaches, achieving about 7 FPS on a single RTX 4090 and delivering 2-3 times the throughput of the evaluated prior SLAM systems.",
+  "abstract_zh": "在有限的优化预算下，实现高质量重建和响应式相机跟踪对于单目RGB高斯点云SLAM仍然具有挑战性。我们提出了一种在线系统，通过将学习的几何先验与显式几何相机跟踪相结合，来应对这一挑战，该系统在跟踪精度方面显著优于学习的相机预测。一个冻结的流式3D基础模型作为虚拟RGB-D传感器，从单目视频中提供深度估计。然后，显式几何求解器通过特征重投影估计相机运动，而流式高斯映射器将得到的观察结果整合到密集场景表示中。我们进一步展示了几何跟踪在代表性的流式几何骨干网络中提高相机姿态精度，证明了我们方法的更广泛适用性。在室内和室外数据集上的大量实验表明，我们的方法显著提高了重建质量，相较于现有方法，在单个RTX 4090上实现约7帧每秒，并提供2-3倍于评估的先前SLAM系统的吞吐量。",
+  "arxiv_id": "2610.36853",
+  "arxiv_url": "https://arxiv.org/abs/2610.36853v1",
+  "authors": [
+    "Da Li",
+    "Yihan Zang",
+    "Ivan Viola",
+    "Zeyu Wang",
+    "Dominik Engel"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-36853",
+  "categories": [
+    "cs.CV",
+    "cs.GR"
+  ],
+  "fetched_at": "2026-10-28T10:55:46.093638+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.36853v1",
+  "published_at": "2026-10-27T08:51:00Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "depth estimation",
+      "gaussian splatting",
+      "点云",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 16
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.36853v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "提出一种将前馈几何预测与显式相机跟踪解耦的单目高斯SLAM系统，结合流式3D基础模型、几何位姿估计和高斯场景建图，实现高精度定位与高保真重建。",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "深度/几何",
+      "感知"
+    ]
+  },
+  "title": "LingGS: Decoupling Feed-Forward Geometry Prediction from Camera Tracking for High-Fidelity Gaussian SLAM",
+  "title_zh": "LingGS：将前馈几何预测与相机跟踪解耦以实现高保真高斯SLAM",
+  "translation_url": "https://hjfy.top/arxiv/2610.36853"
+}

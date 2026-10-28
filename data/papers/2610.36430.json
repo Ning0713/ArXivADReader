@@ -1,0 +1,55 @@
+{
+  "abstract": "A track fitting pipeline is presented that converts a measured racetrack point cloud into a closed, $C^4$ differentiable, three-dimensional surface model suitable for high-fidelity Modelica race-car optimization. The surface is a Monge patch, parametrised by a curvilinear arc-length coordinate measured along the minimum-curvature line (MCL) and a signed lateral offset, with a height polynomial of user-selectable degree capturing the cross-sectional elevation profile. The choice of MCL as the reference line is deliberate since anchoring the same surface on the geometric centre-line can cause adjacent normals to cross inside the drivable region on tight corners. The resulting non-injective parametrisation assigns multiple curvilinear addresses to the same three-dimensional point and returns invalid road geometry. The MCL is obtained from a quadratic program that minimises integrated curvature subject to track-boundary, periodicity, and jerk-regularisation constraints. By reducing total curvature while remaining within the track bounds, the MCL moves the region of parametrisation breakdown outside the drivable strip on all circuits studied, keeps the normal map injective across the full track width, and yields a more linear time-to-arc-length transformation for minimum lap-time problems. The fitted surface and the associated track widths are exported as periodic piecewise-quintic $C^4$ B-splines, solved as a nonlinear program.",
+  "abstract_zh": "本文提出了一种轨道拟合流程，将测量得到的赛车轨道点云转换为闭合的、$C^4$ 可微分的三维表面模型，适用于高保真度的 Modelica 赛车优化。该表面为 Monge 补丁，由沿最小曲率线（MCL）测量的曲线弧长坐标和一个带符号的横向偏移参数化，且高度多项式的阶数可由用户选择，以捕捉横截面的高程轮廓。选择 MCL 作为参考线是经过深思熟虑的，因为在几何中心线上锚定同一表面可能导致相邻法线在紧凑的转弯处交叉于可驾驶区域内。由此产生的非单射参数化将多个曲线地址分配给同一三维点，并返回无效的道路几何。MCL 是通过一个二次规划获得的，该规划在轨道边界、周期性和加速度正则化约束下最小化积分曲率。通过减少总曲率并保持在轨道边界内，MCL 将参数化失效区域移动到所有研究电路的可驾驶带外，保持法线图在整个轨道宽度上是单射的，并为最小圈速问题提供了更线性的时间与弧长转换。拟合的表面及相关轨道宽度被导出为周期性分段五次 $C^4$ B样条，并作为非线性规划求解。",
+  "arxiv_id": "2610.36430",
+  "arxiv_url": "https://arxiv.org/abs/2610.36430v1",
+  "authors": [
+    "Adwait Verulkar",
+    "Behzad Danaei",
+    "Srikanth Sivaramakrishnan",
+    "Ryan Trinter"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-36430",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-28T10:55:45.994092+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.36430v1",
+  "published_at": "2026-10-27T00:24:49Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "car",
+      "road",
+      "驾驶",
+      "道路",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 28
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.36430v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "A Singularity Avoiding Track Model for Race Car Optimization",
+  "title_zh": "一种避免奇点的赛车轨道优化模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.36430"
+}

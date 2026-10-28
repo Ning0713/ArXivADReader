@@ -1,6 +1,278 @@
 {
-  "generated_at": "2026-10-27T10:13:50.500149+00:00",
+  "generated_at": "2026-10-28T10:59:10.063684+00:00",
   "items": [
+    {
+      "abstract": "Modern simulators can generate synthetic camera and LiDAR data with accurate annotations for downstream tasks. In contrast, automotive radar simulation remains less mature because it requires not only a 3D engine to model dynamic objects in the scenes but also electromagnetic material properties, antenna configurations, wave propagation mechanisms, and coherent signal synthesis. Existing frameworks are either proprietary or overly simplified, limiting the scalability of radar raw measurements. This paper presents AuRaSim, a ray-tracing-based automotive frequency-modulated continuous wave (FMCW) radar simulation framework for dynamic scenarios. Rather than implementing all components from scratch, AuRaSim builds on Blender for efficient dynamic-scene construction and Sionna RT for graphics processing unit (GPU) accelerated electromagnetic ray tracing, while introducing radar-specific adaptations for path-resolved propagation with complex coefficients, motion-aware Doppler modeling, and subsequently coherent multi-channel analog-to-digital converter (ADC) cube synthesis based on waveform configurations. Quantitative comparison between simulated and measured range-Doppler maps in digital-twin scenarios achieves a root-mean-square error (RMSE) of 0.147 and a peak signal-to-noise ratio (PSNR) of 16.93 dB, demonstrating the accuracy and fidelity of the synthetic signal. AuRaSim therefore provides a complete and extensible platform for reproducible automotive radar simulation and research. Project homepage: https://wangzhaoze.github.io/aurasim.",
+      "abstract_zh": "现代模拟器能够生成带有准确注释的合成相机和激光雷达数据，以支持下游任务。相比之下，汽车雷达模拟仍然不够成熟，因为它不仅需要一个三维引擎来建模场景中的动态物体，还需要电磁材料特性、天线配置、波传播机制和相干信号合成。现有的框架要么是专有的，要么过于简化，限制了雷达原始测量的可扩展性。本文提出了AuRaSim，一个基于光线追踪的汽车频率调制连续波（FMCW）雷达模拟框架，专为动态场景设计。AuRaSim并不是从头开始实现所有组件，而是基于Blender构建高效的动态场景，并利用Sionna RT进行图形处理单元（GPU）加速的电磁光线追踪，同时引入雷达特定的适应性，以实现具有复杂系数的路径解析传播、运动感知的多普勒建模，以及基于波形配置的相干多通道模数转换器（ADC）立方体合成。在数字双胞胎场景中，模拟与测量的距离-多普勒图的定量比较实现了0.147的均方根误差（RMSE）和16.93 dB的峰值信噪比（PSNR），展示了合成信号的准确性和保真度。因此，AuRaSim提供了一个完整且可扩展的平台，用于可重复的汽车雷达模拟和研究。项目主页：https://wangzhaoze.github.io/aurasim。",
+      "authors": [
+        "Zhaoze Wang",
+        "Changxu Zhang",
+        "Tai Fei",
+        "Christopher Grimm",
+        "Yi Jin",
+        "Claas Tebruegge",
+        "Markus Gardill"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.37403",
+      "tags": [
+        "LiDAR/点云",
+        "感知",
+        "Radar"
+      ],
+      "title": "AuRaSim: A Ray-Tracing Based Automotive FMCW Radar Simulator for Dynamic Scenarios",
+      "title_zh": "AuRaSim：基于光线追踪的动态场景汽车频率调制连续波（FMCW）雷达模拟器",
+      "url": "/daily/2026-10-28/#paper-2610-37403"
+    },
+    {
+      "abstract": "Accurate camera-LiDAR calibration is an essential prerequisite for robust multi-modal perception in robotics. Recent target-less methods based on learned pixel-point correspondences achieve high extrinsic calibration accuracy and generalize across environments. However, they operate on rectified images with known camera intrinsics, restricting their applicability to systems whose cameras have already been individually calibrated. We present a fully automatic, target-less framework that jointly estimates camera intrinsics, radial-tangential distortion, and camera-LiDAR extrinsics from raw images and LiDAR scans. Our method generalizes deep correspondence-based calibration from rectified images to raw cameras through intrinsic- and distortion-aware correspondence learning via synthetic augmentations. During calibration, we iteratively couple correspondence prediction and nonlinear optimization to jointly refine the camera parameters and relative sensor transformation. We evaluate our approach on an unseen camera-LiDAR configuration from the KITTI dataset and on three real robotic platforms in a zero-shot manner. The results demonstrate that joint calibration with our generalized pixel-point correspondence network improves extrinsic accuracy over correspondence-based methods using pre-calibrated cameras, while additionally recovering accurate intrinsics.",
+      "abstract_zh": "准确的相机-激光雷达标定是机器人多模态感知的基本前提。最近基于学习的像素-点对应的无目标方法实现了高精度的外参标定，并且在不同环境中具有良好的推广能力。然而，这些方法依赖于具有已知相机内参的校正图像，这限制了它们在尚未单独校准的相机系统中的适用性。我们提出了一种完全自动的无目标框架，该框架能够从原始图像和激光雷达扫描中联合估计相机内参、径向-切向畸变以及相机-激光雷达外参。我们的方法通过合成增强实现了内参和畸变感知的对应学习，将基于深度对应的标定从校正图像推广到原始相机。在标定过程中，我们迭代地结合对应预测和非线性优化，联合优化相机参数和传感器相对变换。我们在KITTI数据集中未见过的相机-激光雷达配置以及三个真实机器人平台上以零样本方式评估了我们的方法。结果表明，使用我们推广的像素-点对应网络进行联合标定，相较于使用预校准相机的对应方法，外参精度得到了提升，同时也恢复了准确的内参。",
+      "authors": [
+        "Simon Bultmann",
+        "Daniele Cattaneo",
+        "Abhinav Valada"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.37350",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "仿真/数据"
+      ],
+      "title": "Generalizable Target-Less Joint Intrinsic-Extrinsic Camera-LiDAR Calibration using Deep Pixel-Point Correspondences",
+      "title_zh": "基于深度像素-点对应的可推广无目标联合内外参相机-激光雷达标定",
+      "url": "/daily/2026-10-28/#paper-2610-37350"
+    },
+    {
+      "abstract": "Semi-supervised semantic segmentation, which aims to utilize large volumes of unlabeled images to achieve accurate segmentation results with fewer human annotations, has attracted increasing attention. Prior methods were primarily based on the assumption that the pseudo-labels generated by each branch were sufficiently reliable to supervise the remaining branches. However, there is a concern that the errors in pseudo-labels could accumulate during co-training, potentially resulting in suboptimal performance. To this end, we present a novel framework called heterogeneous dual-branch voting supervision (HDVS), which is designed to enhance the reliability of pseudo-labels and mitigate the issues arising from pseudo-labeling. Specifically, based on the cross-supervision framework, we introduce a voting mechanism that correlates pseudo-labels from heterogeneous branches to produce pseudo-labels with enhanced reliability. Concurrently, we employ a feature communication module to introduce perturbations at the feature level in each branch to maximize prediction diversity across the dual branches while maintaining convergence. Comprehensive evaluations of the proposed HDVS on two benchmark datasets (PASCAL VOC 2012 and Cityscapes) demonstrate its superiority to the state-of-the-art approaches.",
+      "abstract_zh": "半监督语义分割旨在利用大量未标记图像，以较少的人为注释实现准确的分割结果，因而引起了越来越多的关注。之前的方法主要基于这样一个假设：每个分支生成的伪标签足够可靠，可以监督其余分支。然而，伪标签中的错误在共同训练过程中可能会累积，从而导致次优的性能。为此，我们提出了一种新颖的框架，称为异构双分支投票监督（HDVS），旨在增强伪标签的可靠性，并减轻伪标签带来的问题。具体而言，基于交叉监督框架，我们引入了一种投票机制，将来自异构分支的伪标签进行关联，以生成具有增强可靠性的伪标签。同时，我们采用了特征通信模块，在每个分支的特征层引入扰动，以最大化双分支之间的预测多样性，同时保持收敛性。对两个基准数据集（PASCAL VOC 2012 和 Cityscapes）上提出的 HDVS 进行的全面评估表明，其优于最先进的方法。",
+      "authors": [
+        "Yongqi Shan",
+        "Yunzhi Zhuge",
+        "Huchuan Lu"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.37236",
+      "tags": [
+        "仿真/数据",
+        "感知",
+        "世界模型/生成"
+      ],
+      "title": "HDVS: semi-supervised semantic segmentation via heterogeneous dual-branch voting supervision",
+      "title_zh": "HDVS：通过异构双分支投票监督的半监督语义分割",
+      "url": "/daily/2026-10-28/#paper-2610-37236"
+    },
+    {
+      "abstract": "Autonomous vehicles in enclosed spaces such as tunnels and mines rely on range maps that smoke, dust and fog make inaccurate. Conformal prediction calibrates a keepout around the mapped walls that covers the true unsafe set at a chosen probability. Typically an unmodified planner treats the keepout as an inflated obstacle, and nothing ensures that the vehicle can stop before the keepout as it moves when sensing degrades. In narrow passages this margin and the planner's buffer close the route, and existing remedies recover reach by relaxing the coverage level. This paper conditions the conformal margin on a label-free severity estimate to hold coverage near its target as degradation varies. A planning and control layer enforces one braking-distance condition on the keepout at plan time and at every command, takes the measured tracking residual as its only margin and never alters the keepout. The keepout is validated on ground-robot smoke recordings and the closed loop in simulated quadrotor flights in a foggy tunnel against the standard deployment. In closed-loop simulation the proposed system substantially reduces entries into the calibrated keepout and reaches numerically more goals than the deployment pattern in both calibration regimes, an observed gain of 3.2 percentage points pooled whose per-regime confidence intervals include zero. The per-class keepout holds its coverage near the target on held-out recordings.",
+      "abstract_zh": "在隧道和矿井等封闭空间中，自主车辆依赖于受烟雾、灰尘和雾霾影响而不准确的范围图。保守预测在映射墙壁周围校准一个避让区域，以在选择的概率下覆盖真实的不安全区域。通常，未经修改的规划器将避让区域视为膨胀的障碍物，并且没有任何机制确保车辆在感知退化时能够在避让区域之前停下。在狭窄通道中，这一余量和规划器的缓冲区会关闭路线，而现有的解决方案通过放宽覆盖水平来恢复可达性。本文将保守余量的条件设定为无标签的严重性估计，以在退化变化时保持覆盖接近目标。规划和控制层在规划时和每个命令时对避让区域施加一个制动距离条件，将测量的跟踪残差作为唯一的余量，并且从不改变避让区域。该避让区域在地面机器人烟雾记录和模拟四旋翼在雾霭隧道中的闭环飞行中进行了验证，与标准部署相比。在闭环模拟中，所提出的系统显著减少了进入校准避让区域的次数，并在两个校准方案中比部署模式达到更多的目标，观察到的增益为3.2个百分点，且每个方案的置信区间包括零。每类避让区域在保留的记录上保持其覆盖接近目标。",
+      "authors": [
+        "Eric Minwoo Kim",
+        "Jong-Kook Kim"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.37217",
+      "tags": [
+        "预测/规划",
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "KEPT: Conformal Keepouts Kept in Planning for Enclosed-Space Navigation in Degraded Sensing",
+      "title_zh": "KEPT：在感知退化情况下规划封闭空间导航的保守避让区域",
+      "url": "/daily/2026-10-28/#paper-2610-37217"
+    },
+    {
+      "abstract": "Reliable real-time 3D object detection based on LiDAR and camera data is critical for safety in autonomous driving, where systems must accurately perceive their surroundings with minimal latency. Many state-of-the-art systems achieve high-quality detection results but fail to meet real-time constraints, limiting their practical use. To address this challenge, we propose FastBEVFusion, a simple, fast, and robust fusion system for 3D object detection. Based on modality-specific features, FastBEVFusion projects these features into semi-aligned modality-specific BEV spaces, without relying on a computationally intensive and potentially error-prone depth estimation. Given these BEV spaces, we propose a light-weight, soft, and dynamic fusion module based on cross-attention, which adapts dynamically to the scene context and enables feature fusion across the entire BEV spaces. Experiments on the complex nuScenes dataset show that FastBEVFusion outperforms state-of-the-art real-time systems, and achieves over 50 FPS without deployment libraries. Additionally, our system shows strong robustness to calibration errors, making FastBEVFusion a powerful 3D object detection system for real-world applications.",
+      "abstract_zh": "基于LiDAR和摄像头数据的可靠实时3D目标检测对于自动驾驶的安全至关重要，系统必须以最小的延迟准确感知周围环境。许多最先进的系统虽然能够实现高质量的检测结果，但未能满足实时性要求，限制了其实际应用。为了解决这一挑战，我们提出了FastBEVFusion，这是一种简单、快速且稳健的3D目标检测融合系统。FastBEVFusion基于特定模态的特征，将这些特征投影到半对齐的模态特定鸟瞰视图（BEV）空间中，而无需依赖计算密集且可能出错的深度估计。基于这些BEV空间，我们提出了一种轻量级、柔性和动态的融合模块，基于交叉注意力（cross-attention），该模块能够根据场景上下文动态调整，实现整个BEV空间的特征融合。在复杂的nuScenes数据集上的实验表明，FastBEVFusion超越了最先进的实时系统，且在没有部署库的情况下实现了超过50 FPS的性能。此外，我们的系统对校准误差表现出强大的鲁棒性，使FastBEVFusion成为现实世界应用中强大的3D目标检测系统。",
+      "authors": [
+        "Tom Sanitz",
+        "Emre Gülsoylu",
+        "Simone Frintrop",
+        "Christian Wilms"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.37153",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "仿真/数据"
+      ],
+      "title": "FastBEVFusion: Simple Multi-Modal Fusion for 3D Object Detection at 50 FPS",
+      "title_zh": "FastBEVFusion：一种简单的多模态融合方法，实现50 FPS的3D目标检测",
+      "url": "/daily/2026-10-28/#paper-2610-37153"
+    },
+    {
+      "abstract": "Achieving high-quality reconstruction and responsive camera tracking remains challenging for monocular RGB Gaussian splatting SLAM under a limited optimization budget. We present an online system that addresses this challenge by combining learned geometric priors with explicit geometric camera tracking, which can substantially outperform learned camera prediction in terms of tracking accuracy. A frozen streaming 3D foundation model serves as a virtual RGB-D sensor, providing depth estimation from monocular video. An explicit geometric solver then estimates camera motion through feature reprojection, and a streaming Gaussian mapper integrates the resulting observations into a dense scene representation. We further show that geometric tracking improves camera pose accuracy across representative streaming geometry backbones, demonstrating the broader applicability of our approach. Extensive experiments on indoor and outdoor datasets show that our method significantly improves reconstruction quality over existing approaches, achieving about 7 FPS on a single RTX 4090 and delivering 2-3 times the throughput of the evaluated prior SLAM systems.",
+      "abstract_zh": "在有限的优化预算下，实现高质量重建和响应式相机跟踪对于单目RGB高斯点云SLAM仍然具有挑战性。我们提出了一种在线系统，通过将学习的几何先验与显式几何相机跟踪相结合，来应对这一挑战，该系统在跟踪精度方面显著优于学习的相机预测。一个冻结的流式3D基础模型作为虚拟RGB-D传感器，从单目视频中提供深度估计。然后，显式几何求解器通过特征重投影估计相机运动，而流式高斯映射器将得到的观察结果整合到密集场景表示中。我们进一步展示了几何跟踪在代表性的流式几何骨干网络中提高相机姿态精度，证明了我们方法的更广泛适用性。在室内和室外数据集上的大量实验表明，我们的方法显著提高了重建质量，相较于现有方法，在单个RTX 4090上实现约7帧每秒，并提供2-3倍于评估的先前SLAM系统的吞吐量。",
+      "authors": [
+        "Da Li",
+        "Yihan Zang",
+        "Ivan Viola",
+        "Zeyu Wang",
+        "Dominik Engel"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.36853",
+      "tags": [
+        "地图/定位",
+        "深度/几何",
+        "感知"
+      ],
+      "title": "LingGS: Decoupling Feed-Forward Geometry Prediction from Camera Tracking for High-Fidelity Gaussian SLAM",
+      "title_zh": "LingGS：将前馈几何预测与相机跟踪解耦以实现高保真高斯SLAM",
+      "url": "/daily/2026-10-28/#paper-2610-36853"
+    },
+    {
+      "abstract": "Generative planners are often evaluated by the trajectories they can generate, although closed-loop driving ultimately depends on the single candidate committed to control. We identify this mismatch as the sample-to-execution gap and show that improving proposal quality alone can worsen the executed decision. Here, we introduce ExecDiffuser, a recurrent proposal-to-execution framework that couples candidate generation, trajectory selection, and subsequent replanning through shared execution semantics. Intent-Guided Diffusion Proposal (IGD) assigns hypothesis responsibility and shapes trajectories with execution-conditioned supervision. Execution-Grounded Selection (EGS) learns a candidate-conditioned publication utility, commits one trajectory to control, and returns it as context for the next planning cycle. Across nuPlan, InterPlan, and NAVSIM, ExecDiffuser achieves leading closed-loop performance against strong state-of-the-art baselines. Under a unified five-seed protocol, it obtains an average score of 85.62, improving over Diffusion Planner and FlowDrive by 4.02 and 1.31 points, respectively. On NAVSIM, it achieves 92.6 PDMS under the official evaluation pipeline. Matched counterfactual analysis further shows that ExecDiffuser more reliably converts strong candidates into committed decisions, while prefix interventions confirm that this advantage persists after physical execution and subsequent replanning.",
+      "abstract_zh": "生成规划器通常通过其能够生成的轨迹进行评估，尽管闭环驾驶最终依赖于承诺控制的单一候选者。我们将这种不匹配称为样本与执行差距，并表明仅仅提高提议质量可能会恶化执行决策。在此，我们介绍了ExecDiffuser，一个递归的提议到执行框架，它通过共享执行语义将候选生成、轨迹选择和后续重新规划结合在一起。意图引导扩散提议（Intent-Guided Diffusion Proposal, IGD）分配假设责任，并通过执行条件监督塑造轨迹。执行基础选择（Execution-Grounded Selection, EGS）学习候选条件的出版效用，承诺一条轨迹进行控制，并将其作为下一个规划周期的上下文返回。在nuPlan、InterPlan和NAVSIM上，ExecDiffuser在强大的最先进基准测试中实现了领先的闭环性能。在统一的五种种子协议下，它获得了85.62的平均分，相较于Diffusion Planner和FlowDrive分别提高了4.02和1.31分。在NAVSIM上，它在官方评估流程下达到了92.6的PDMS。匹配的反事实分析进一步表明，ExecDiffuser更可靠地将强候选者转化为承诺决策，而前缀干预确认这一优势在物理执行和后续重新规划后仍然存在。",
+      "authors": [
+        "Shuo Pei",
+        "Bosun Liang",
+        "Saihui Zha",
+        "Chen Sun",
+        "Huachun Tan",
+        "Yong Wang"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.36837",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "ExecDiffuser: Closing the Sample-to-Execution Gap in Diffusion Planning",
+      "title_zh": "ExecDiffuser：缩小扩散规划中的样本与执行差距",
+      "url": "/daily/2026-10-28/#paper-2610-36837"
+    },
+    {
+      "abstract": "Self-driving laboratories (SDLs) are laboratory systems that couple experimental planning, automated execution, and measurement feedback in a closed loop. Integrating flexible robot control with the typed application programming interfaces (APIs) and continuous measurements exposed by laboratory instruments remains an execution-interface challenge. To address this challenge, we propose a traceable framework comprising four components: LAM (Lab Action Model), OpenSDL, Safe-SDL, and L3-Bench. LAM is a proposed measurement-conditioned policy architecture that extends vision-language-action paradigms to generate both continuous robot trajectories and typed instrument API calls. OpenSDL is an execution substrate with an initial control implementation, designed to map role-level operations to heterogeneous devices, coordinate execution, and record timestamped causal events. The proposed Safe-SDL runtime gate combines pre-dispatch schema and resource checks with signal temporal logic monitoring during execution, including extended waiting periods. L3-Bench (Level-3 Laboratory Benchmark) specifies an episode-level evaluation protocol covering physical outcomes, timing, reproducibility, safety violations, and fault recovery. Together, these components provide an end-to-end design for linking hybrid action generation, monitored device execution, measurement feedback, and experimental evaluation, addressing coordination and traceability challenges in SDL workflows.",
+      "abstract_zh": "自驾实验室（SDLs）是将实验规划、自动执行和测量反馈结合在一个闭环中的实验室系统。将灵活的机器人控制与实验室仪器所暴露的类型化应用程序接口（APIs）和连续测量集成，仍然是一个执行接口挑战。为了解决这一挑战，我们提出了一个可追溯的框架，包含四个组件：LAM（实验动作模型）、OpenSDL、安全-SDL和L3-Bench。LAM是一个提出的基于测量的策略架构，扩展了视觉-语言-动作范式，以生成连续的机器人轨迹和类型化的仪器API调用。OpenSDL是一个执行基础，具有初始控制实现，旨在将角色级操作映射到异构设备，协调执行并记录带时间戳的因果事件。所提出的安全-SDL运行时门结合了调度前模式和资源检查，以及在执行过程中包括扩展等待时间的信号时序逻辑监控。L3-Bench（三级实验室基准）指定了一个涵盖物理结果、时序、可重复性、安全违规和故障恢复的情节级评估协议。这些组件共同提供了一个端到端的设计，用于连接混合动作生成、监控设备执行、测量反馈和实验评估，解决SDL工作流程中的协调和可追溯性挑战。",
+      "authors": [
+        "Zihan Zhang",
+        "Zeyu Wu",
+        "Xin Zhang",
+        "Mingyu Luo",
+        "Haohui Que",
+        "Tong Zhu"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.36761",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "VLM/VLA"
+      ],
+      "title": "Making Self-Driving Laboratories Auditable:A Unified Framework for Hybrid Actions,Measurements, and Safe Execution",
+      "title_zh": "使自驾实验室可审计：混合动作、测量和安全执行的统一框架",
+      "url": "/daily/2026-10-28/#paper-2610-36761"
+    },
+    {
+      "abstract": "This paper presents an approach to achieve side-by-side autonomous motion with a pair of personal mobility vehicles (PMVs). Given a global path, two PMVs plan cooperatively so as to hold a social formation that lets the passengers hold a conversation, while keeping the ride safe and smooth. Each vehicle runs its own sampling-based model-predictive planner; the planners exchange nothing but the odometry each vehicle could observe of the other, and the joint decision is expressed as a pair of utility matrices over pairs of candidate trajectories, resolved by a common rule. The behavioural parameters are fitted by inverse reinforcement learning from 409 minutes of driving by ten pairs of people in human-driven PMVs in an indoor environment, and the lanes the pair can use are derived offline from the corridor itself rather than fixed by hand. A safety layer the cost cannot override executes a move only if the vehicle can still brake clear, measured from its whole body, and a vehicle that is stuck reverses along its own path and continues. In closed-loop simulation over 24 runs in the conditions the drivers were recorded in and 24 in four generated obstacle layouts, no vehicle entered a wall or a cone. The pair holds conversational formation for 60.5 and 68.9 percent of the time among obstacles (anticlockwise and clockwise) and 81.2 and 91.5 percent in a clear aisle, against the drivers' 34.0 and 36.0 percent, and 52.9 and 56.0 percent, and it matches their speed. It keeps one lateral formation where the drivers alternated between a close diagonal and a wide abreast one, and it varies far less. Experimental results are based on a differential drive kinematic simulator running on ROS 2.",
+      "abstract_zh": "本文提出了一种实现一对个人移动车辆（PMVs）并行自主运动的方法。在给定全局路径的情况下，两辆PMV协同规划，以保持一种社交队形，使乘客能够进行对话，同时确保乘坐安全平稳。每辆车运行其独立的基于采样的模型预测规划器；规划器之间仅交换每辆车能够观察到的另一辆车的里程计数据，联合决策通过一对候选轨迹的效用矩阵表达，并通过一个共同规则进行解决。行为参数通过对十对人类驾驶的PMVs在室内环境中进行409分钟的驾驶数据进行逆强化学习进行拟合，而这对车辆可以使用的车道是从走廊本身离线推导的，而不是手动固定的。一个安全层的成本不能被覆盖，仅在车辆仍然能够安全刹车的情况下执行移动，该安全距离是从车辆的整体结构测量的，卡住的车辆沿着自己的路径倒退并继续。在记录驾驶员的条件下进行的24次闭环仿真和在四种生成障碍布局下的24次仿真中，没有车辆撞上墙壁或锥形标志。该对车辆在障碍物中保持对话队形的时间分别为60.5%和68.9%（逆时针和顺时针），在清晰通道中为81.2%和91.5%，而驾驶员的对话队形保持时间为34.0%和36.0%，以及52.9%和56.0%，并且速度匹配。它保持一种侧向队形，驾驶员在紧密对角线和宽阔平行之间交替，变化幅度较小。实验结果基于在ROS 2上运行的差分驱动运动学仿真器。",
+      "authors": [
+        "Luis Yoichi Morales",
+        "Florent Ferreri"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.36726",
+      "tags": [
+        "预测/规划",
+        "协同/V2X",
+        "安全/异常"
+      ],
+      "title": "Learning Side-by-Side Navigation for Personal Mobility Vehicles from Human Drivers",
+      "title_zh": "从人类驾驶员学习个人移动车辆的并行导航",
+      "url": "/daily/2026-10-28/#paper-2610-36726"
+    },
+    {
+      "abstract": "A track fitting pipeline is presented that converts a measured racetrack point cloud into a closed, $C^4$ differentiable, three-dimensional surface model suitable for high-fidelity Modelica race-car optimization. The surface is a Monge patch, parametrised by a curvilinear arc-length coordinate measured along the minimum-curvature line (MCL) and a signed lateral offset, with a height polynomial of user-selectable degree capturing the cross-sectional elevation profile. The choice of MCL as the reference line is deliberate since anchoring the same surface on the geometric centre-line can cause adjacent normals to cross inside the drivable region on tight corners. The resulting non-injective parametrisation assigns multiple curvilinear addresses to the same three-dimensional point and returns invalid road geometry. The MCL is obtained from a quadratic program that minimises integrated curvature subject to track-boundary, periodicity, and jerk-regularisation constraints. By reducing total curvature while remaining within the track bounds, the MCL moves the region of parametrisation breakdown outside the drivable strip on all circuits studied, keeps the normal map injective across the full track width, and yields a more linear time-to-arc-length transformation for minimum lap-time problems. The fitted surface and the associated track widths are exported as periodic piecewise-quintic $C^4$ B-splines, solved as a nonlinear program.",
+      "abstract_zh": "本文提出了一种轨道拟合流程，将测量得到的赛车轨道点云转换为闭合的、$C^4$ 可微分的三维表面模型，适用于高保真度的 Modelica 赛车优化。该表面为 Monge 补丁，由沿最小曲率线（MCL）测量的曲线弧长坐标和一个带符号的横向偏移参数化，且高度多项式的阶数可由用户选择，以捕捉横截面的高程轮廓。选择 MCL 作为参考线是经过深思熟虑的，因为在几何中心线上锚定同一表面可能导致相邻法线在紧凑的转弯处交叉于可驾驶区域内。由此产生的非单射参数化将多个曲线地址分配给同一三维点，并返回无效的道路几何。MCL 是通过一个二次规划获得的，该规划在轨道边界、周期性和加速度正则化约束下最小化积分曲率。通过减少总曲率并保持在轨道边界内，MCL 将参数化失效区域移动到所有研究电路的可驾驶带外，保持法线图在整个轨道宽度上是单射的，并为最小圈速问题提供了更线性的时间与弧长转换。拟合的表面及相关轨道宽度被导出为周期性分段五次 $C^4$ B样条，并作为非线性规划求解。",
+      "authors": [
+        "Adwait Verulkar",
+        "Behzad Danaei",
+        "Srikanth Sivaramakrishnan",
+        "Ryan Trinter"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.36430",
+      "tags": [
+        "LiDAR/点云",
+        "深度/几何",
+        "预测/规划"
+      ],
+      "title": "A Singularity Avoiding Track Model for Race Car Optimization",
+      "title_zh": "一种避免奇点的赛车轨道优化模型",
+      "url": "/daily/2026-10-28/#paper-2610-36430"
+    },
+    {
+      "abstract": "Monocular outdoor navigation requires robust camera motion estimation and a dense, navigable map, where 3D Gaussian Splatting SLAM serves this task through an explicit differentiable parameterization and closed-form projection. However, typically, the geometry is recovered by associating 2D pixels with 3D points, so a modular SLAM system absorbs tracking error into the map, leading to cascading degradation. To address these gaps, we present SG^2SLAM, which couples streaming spatial geometry with a ray-conditioned 3DGS kernel. Streaming spatial geometry replaces the per- frame cross-dimensional correspondence with a chunk-level metric prior that supervises tracking and mapping from one source. A ray-conditioned kernel extends each primitive with a viewing-direction subspace that senses the monocular camera viewpoints. The joint optimization over spatial geometry and poses ensures a globally consistent map and trajectory outcome. Experiments on the KITTI and Waymo Open datasets show that our SG^2SLAM surpasses the per-frame association baselines in the monocular outdoor navigation task. Code will be made publicly available upon acceptance.",
+      "abstract_zh": "单目户外导航需要稳健的相机运动估计和密集的可导航地图，其中3D高斯点云SLAM通过显式可微参数化和闭式投影来完成这一任务。然而，通常情况下，几何信息是通过将2D像素与3D点关联来恢复的，因此模块化SLAM系统将跟踪误差吸收到地图中，导致级联退化。为了解决这些问题，我们提出了SG^2SLAM，它将流式空间几何与光线条件3D高斯核相结合。流式空间几何用块级度量先验替代了每帧的跨维对应关系，从一个源头监督跟踪和映射。光线条件核扩展了每个原始体素，增加了一个感知单目相机视角的视向子空间。对空间几何和姿态的联合优化确保了全局一致的地图和轨迹结果。在KITTI和Waymo开放数据集上的实验表明，我们的SG^2SLAM在单目户外导航任务中超越了每帧关联的基线。代码将在接受后公开发布。",
+      "authors": [
+        "Ziang Guo",
+        "Didar Seyidov",
+        "Yixiao Zhou",
+        "Xuefeng Zhang",
+        "Ali Alridha Abdulkarim",
+        "Chen Min",
+        "Zufeng Zhang",
+        "Dzmitry Tsetserukou"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.36312",
+      "tags": [
+        "深度/几何",
+        "地图/定位",
+        "感知"
+      ],
+      "title": "SG^2SLAM: Spatial Geometry-Informed 3D Gaussian Splatting SLAM for Monocular Outdoor Navigation",
+      "title_zh": "SG^2SLAM：基于空间几何信息的单目户外导航3D高斯点云SLAM",
+      "url": "/daily/2026-10-28/#paper-2610-36312"
+    },
+    {
+      "abstract": "Coding agents can adapt robotic software by revising executable programs, but successful responses to an evolving opponent may not remain effective. We present a framework for program-level adversarial co-adaptive self-play in which coding agents generate attacks and defenses from tested opponent code and mission feedback, without model fine-tuning. Environment-specific interfaces support external programs for autonomous driving and SDK-level defenses for humanoid locomotion. Two eight-generation case studies reveal concrete software responses: a driving defender introduces direct-actuation recovery, while a humanoid defender revises incoming-state validation. These responses provide local task recovery but do not establish sustained robustness. The framework makes such adaptation and limitations observable through executable artifacts and task-level evidence.",
+      "abstract_zh": "编码代理可以通过修订可执行程序来适应机器人软件，但对不断演变的对手的成功响应可能不会保持有效。我们提出了一种程序级对抗共适应自我博弈的框架，在该框架中，编码代理根据经过测试的对手代码和任务反馈生成攻击和防御，而无需对模型进行微调。环境特定接口支持用于自主驾驶的外部程序和用于类人运动的SDK级防御。两个八代案例研究揭示了具体的软件响应：一个驾驶防御者引入了直接驱动恢复，而一个类人防御者修订了传入状态验证。这些响应提供了局部任务恢复，但并未建立持续的鲁棒性。该框架通过可执行工件和任务级证据使这种适应性及其局限性可观察。",
+      "authors": [
+        "Leo Benaharon",
+        "Chi Zhang",
+        "Wei Zheng",
+        "Weifan Zhang",
+        "Yifan Wei"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.36143",
+      "tags": [
+        "世界模型/生成",
+        "安全/异常"
+      ],
+      "title": "Program-Level Adversarial Co-Adaptive Self-Play for Robotic Security",
+      "title_zh": "程序级对抗共适应自我博弈在机器人安全中的应用",
+      "url": "/daily/2026-10-28/#paper-2610-36143"
+    },
+    {
+      "abstract": "End-to-end autonomous driving has predominantly relied on open-loop imitation learning for training, which presents two limitations. First, expert demonstrations show only one behavior per scenario, so the model cannot learn alternative valid behaviors and, in turn, cannot adapt to user-specified preferences at test time. Second, noise or ambiguity in these demonstrations can produce inconsistent, unreliable supervision for the end-to-end models. Driving is inherently multi-modal: multiple different behaviors can be valid responses to the same scene, and this diversity arises largely from speed rather than path. We introduce a planning paradigm that learns the path through imitation while scoring a set of candidate speeds across multiple criteria with a learned function supervised by physically grounded safety constraints. We realize this paradigm as Closed-Loop Aware Planning for Autonomous Driving (CLAP-AD), a plug-in planning head that integrates with existing end-to-end driving models and, to our knowledge, is the first to enable explicit test-time control over their speed selection without speed-conditioned training. On Bench2Drive-Speed, CLAP-AD sets a new state of the art Speed-Adherence Score of 82.53, topping TFv6, the strongest baseline on this metric, by 12.9 points while retaining strong closed-loop driving performance. On Bench2Drive, it improves driving score by +28.5 and +32.7 over UniAD and VAD, and on NAVSIM v2, built on real-world driving data, EPDMS by +6.1 over its backbone. Project page: https://clap-ad.github.io",
+      "abstract_zh": "端到端自动驾驶主要依赖于开放式模仿学习进行训练，这存在两个局限性。首先，专家演示在每个场景中仅展示一种行为，因此模型无法学习替代的有效行为，从而无法在测试时适应用户指定的偏好。其次，这些演示中的噪声或模糊性可能导致对端到端模型的不一致和不可靠的监督。驾驶本质上是多模态的：对同一场景的多种不同行为都可以是有效的反应，而这种多样性主要源于速度而非路径。我们提出了一种规划范式，通过模仿学习路径，同时根据多个标准对一组候选速度进行评分，评分函数由基于物理的安全约束进行监督。我们将这一范式实现为自动驾驶的闭环感知规划（Closed-Loop Aware Planning for Autonomous Driving，CLAP-AD），这是一个与现有端到端驾驶模型集成的插件式规划头，据我们所知，这是首个在不进行速度条件训练的情况下，能够显式控制测试时速度选择的模型。在Bench2Drive-Speed上，CLAP-AD设定了新的速度遵循评分（Speed-Adherence Score）82.53，领先于该指标上最强基线TFv6 12.9分，同时保持强大的闭环驾驶性能。在Bench2Drive上，其驾驶评分比UniAD和VAD分别提高了+28.5和+32.7，而在基于真实世界驾驶数据的NAVSIM v2上，EPDMS比其基础模型提高了+6.1。项目页面：https://clap-ad.github.io",
+      "authors": [
+        "Emad Aghajanzadeh",
+        "Thomas Schwarzfischer",
+        "Marc Kaufeld",
+        "Moritz Thoma",
+        "Ryan Pégoud",
+        "Manoj Rohit Vemparala",
+        "Pierpaolo Mori",
+        "Nael Fasfous",
+        "Johannes Betz",
+        "Daniel Mueller-Gritschneder",
+        "Ulf Schlichtmann"
+      ],
+      "date": "2026-10-28",
+      "id": "2610.36079",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶",
+        "安全/异常"
+      ],
+      "title": "Closed-Loop Aware Planning via Imitation-Free Speed Scoring for End-to-End Autonomous Driving",
+      "title_zh": "通过无模仿速度评分实现闭环感知规划的端到端自动驾驶",
+      "url": "/daily/2026-10-28/#paper-2610-36079"
+    },
     {
       "abstract": "Direct-policy World Action Models (WAM) have demonstrated the benefits of decoupling action generation from explicit future visual prediction for efficient inference in autonomous driving and embodied control. However, they still require tens of denoising steps to achieve competitive action quality, incurring substantial latency and hindering real-time deployment. Simply reducing the number of denoising steps will collapse the nonlinear multi-step denoising trajectory into coarse updates, substantially degrading action quality. To reduce the denoising steps while enabling real-time action generation, we present an effective world action model with one-step action generation, namely OSWAM, for autonomous driving and embodied control. We argue that it is the absence of structured action priors in random noise initialization that forces direct-policy WAMs to recover coherent action sequences through iterative denoising. Hence, we construct imagination tokens to initialize the diffusion process, providing physical priors and action-conditioned representations. We further introduce privileged information distillation with future conditioning to enhance future-aware action generation. As a result, OSWAM can efficiently and effectively generate high quality actions in just one diffusion step. Our experiments demonstrate that OSWAM achieves comparable or even better results in both autonomous driving and embodied control than direct-policy WAM and Joint-WAM that require tens of steps. It obtains approximately $3\\times$ speedup over direct-policy WAM baselines and supports real-time compiled inference with latency as low as 40ms on an NVIDIA RTX 5090 GPU. The project page is available at https://gwenzhang.github.io/OSWAM/",
       "abstract_zh": "直接策略世界动作模型（WAM）已证明将动作生成与明确的未来视觉预测解耦在自主驾驶和具身控制中的高效推理方面具有优势。然而，它们仍然需要数十个去噪步骤才能实现具有竞争力的动作质量，这导致了显著的延迟，妨碍了实时部署。简单地减少去噪步骤将使非线性多步去噪轨迹崩溃为粗糙更新，显著降低动作质量。为了减少去噪步骤，同时实现实时动作生成，我们提出了一种有效的世界动作模型，具有一步动作生成，即OSWAM，适用于自主驾驶和具身控制。我们认为，随机噪声初始化中缺乏结构化的动作先验迫使直接策略WAM通过迭代去噪来恢复一致的动作序列。因此，我们构建了想象令牌以初始化扩散过程，提供物理先验和动作条件表示。我们进一步引入了带有未来条件的特权信息蒸馏，以增强未来感知的动作生成。因此，OSWAM能够在仅一步扩散中高效且有效地生成高质量的动作。我们的实验表明，OSWAM在自主驾驶和具身控制中实现了与需要数十个步骤的直接策略WAM和联合WAM相当甚至更好的结果。与直接策略WAM基线相比，它的速度提升约为3倍，并支持在NVIDIA RTX 5090 GPU上以低至40毫秒的延迟进行实时编译推理。项目页面可访问 https://gwenzhang.github.io/OSWAM/",

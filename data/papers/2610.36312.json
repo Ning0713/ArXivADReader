@@ -1,0 +1,55 @@
+{
+  "abstract": "Monocular outdoor navigation requires robust camera motion estimation and a dense, navigable map, where 3D Gaussian Splatting SLAM serves this task through an explicit differentiable parameterization and closed-form projection. However, typically, the geometry is recovered by associating 2D pixels with 3D points, so a modular SLAM system absorbs tracking error into the map, leading to cascading degradation. To address these gaps, we present SG^2SLAM, which couples streaming spatial geometry with a ray-conditioned 3DGS kernel. Streaming spatial geometry replaces the per- frame cross-dimensional correspondence with a chunk-level metric prior that supervises tracking and mapping from one source. A ray-conditioned kernel extends each primitive with a viewing-direction subspace that senses the monocular camera viewpoints. The joint optimization over spatial geometry and poses ensures a globally consistent map and trajectory outcome. Experiments on the KITTI and Waymo Open datasets show that our SG^2SLAM surpasses the per-frame association baselines in the monocular outdoor navigation task. Code will be made publicly available upon acceptance.",
+  "abstract_zh": "单目户外导航需要稳健的相机运动估计和密集的可导航地图，其中3D高斯点云SLAM通过显式可微参数化和闭式投影来完成这一任务。然而，通常情况下，几何信息是通过将2D像素与3D点关联来恢复的，因此模块化SLAM系统将跟踪误差吸收到地图中，导致级联退化。为了解决这些问题，我们提出了SG^2SLAM，它将流式空间几何与光线条件3D高斯核相结合。流式空间几何用块级度量先验替代了每帧的跨维对应关系，从一个源头监督跟踪和映射。光线条件核扩展了每个原始体素，增加了一个感知单目相机视角的视向子空间。对空间几何和姿态的联合优化确保了全局一致的地图和轨迹结果。在KITTI和Waymo开放数据集上的实验表明，我们的SG^2SLAM在单目户外导航任务中超越了每帧关联的基线。代码将在接受后公开发布。",
+  "arxiv_id": "2610.36312",
+  "arxiv_url": "https://arxiv.org/abs/2610.36312v1",
+  "authors": [
+    "Ziang Guo",
+    "Didar Seyidov",
+    "Yixiao Zhou",
+    "Xuefeng Zhang",
+    "Ali Alridha Abdulkarim",
+    "Chen Min",
+    "Zufeng Zhang",
+    "Dzmitry Tsetserukou"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-28#paper-2610-36312",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-28T10:55:45.991727+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.36312v1",
+  "published_at": "2026-10-26T21:34:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "waymo open",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 48
+  },
+  "seen_dates": [
+    "2026-10-28"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.36312v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-28"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "感知"
+    ]
+  },
+  "title": "SG^2SLAM: Spatial Geometry-Informed 3D Gaussian Splatting SLAM for Monocular Outdoor Navigation",
+  "title_zh": "SG^2SLAM：基于空间几何信息的单目户外导航3D高斯点云SLAM",
+  "translation_url": "https://hjfy.top/arxiv/2610.36312"
+}
