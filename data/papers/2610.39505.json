@@ -1,0 +1,56 @@
+{
+  "abstract": "Intermediate-fusion cooperative perception lets a vehicle detect objects beyond its own field of view by fusing features shared by nearby agents. When only a collaborator's cameras are degraded by fog, motion blur or exposure errors, the features it shares drift away from the training distribution while the ego input stays clean, and cooperation can become worse than not cooperating at all. Test-time batch-normalization adaptation, the standard training-free remedy, estimates statistics over the pooled batch of all agents and therefore normalizes both the clean ego and the corrupted collaborator with a mixture of two distributions. We show that this mixing harms even the clean ego: when the ego shares BN statistics with a corrupted collaborator, its detection from its own features drops by 3.58 to 6.68 [email protected] points although its cameras are untouched. We propose AgentNorm, an agent-wise test-time normalization that i) estimates the normalization statistics of every collaborator from its own current observation and ii) anchors the ego to its source statistics, so that the ego path remains exactly the original model. AgentNorm has no learnable parameters, needs no gradients or labels, is independent of the order of test frames, and runs locally on each agent without changing the transmitted features. On camera-based OPV2V with four fusion checkpoints and collaborator-only corruptions, AgentNorm raises [email protected] under severity-5 fog from 29.42-37.25 to 43.32-58.86 and outperforms pooled normalization by 5.53-12.94 points under fog and motion blur, at an extra latency of 2.3 ms per frame. On the real-world DAIR-V2X-C dataset, it outperforms pooled normalization in all ten infrastructure-corruption settings. We also report the cases it does not fix: occlusion, which removes image content rather than shifting feature statistics, and the case in which all agents share the same shift.",
+  "abstract_zh": "中间融合的协作感知使得车辆能够通过融合附近代理共享的特征来检测超出其自身视野的物体。当只有协作伙伴的相机受到雾霾、运动模糊或曝光错误的影响时，它共享的特征会偏离训练分布，而自我输入保持清晰，合作的效果可能会比不合作更糟。测试时批量归一化适应（test-time batch-normalization adaptation）作为一种标准的无训练补救措施，通过对所有代理的汇总批次估计统计数据，从而用两种分布的混合来归一化清晰的自我输入和受损的协作伙伴。我们展示了这种混合对清晰的自我输入也有害：当自我输入与受损的协作伙伴共享批量归一化统计时，尽管其相机未受影响，其基于自身特征的检测性能下降了3.58到6.68 [email protected] 点。我们提出了AgentNorm，一种代理级测试时归一化方法，它i) 从每个协作伙伴当前的观察中估计归一化统计数据，ii) 将自我输入锚定到其源统计数据，从而使自我路径保持与原始模型完全一致。AgentNorm没有可学习的参数，不需要梯度或标签，独立于测试帧的顺序，并且在每个代理上本地运行而不改变传输的特征。在基于相机的OPV2V中，使用四个融合检查点和仅协作伙伴的损坏情况下，AgentNorm在严重程度为5的雾霾下将 [email protected] 从29.42-37.25提高到43.32-58.86，并在雾霾和运动模糊下比汇总归一化提高了5.53-12.94点，额外延迟为每帧2.3毫秒。在真实世界的DAIR-V2X-C数据集上，它在所有十种基础设施损坏设置中均优于汇总归一化。我们还报告了它未能修复的情况：遮挡，这会移除图像内容而不是移动特征统计，以及所有代理共享相同偏移的情况。",
+  "arxiv_id": "2610.39505",
+  "arxiv_url": "https://arxiv.org/abs/2610.39505v1",
+  "authors": [
+    "Yu Wang",
+    "Shaohua Wang",
+    "Yicheng Li",
+    "Kecheng Sun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-39505",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.453090+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.39505v1",
+  "published_at": "2026-10-29T07:05:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "v2x",
+      "dair-v2x",
+      "opv2v",
+      "vehicle",
+      "车辆",
+      "cooperative perception"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 86
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.39505v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "协同/V2X",
+      "仿真/数据"
+    ]
+  },
+  "title": "Agent-Wise Test-Time Normalization for Camera-Based Cooperative Perception with Corrupted Collaborators",
+  "title_zh": "针对受损协作伙伴的基于相机的协同感知的代理级测试时归一化",
+  "translation_url": "https://hjfy.top/arxiv/2610.39505"
+}

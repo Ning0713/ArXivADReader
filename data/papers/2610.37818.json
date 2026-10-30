@@ -1,0 +1,62 @@
+{
+  "abstract": "Robots, autonomous vehicles, and consumer 360{\\deg} cameras use fisheye lenses for wide fields of view (FoVs). Simulation-ready digital twins require photorealistic rendering across the full FoV and an aligned collision mesh. However, prior fisheye Gaussian Splatting methods only rasterize up to 180{\\deg} and do not produce meshes, while Gaussian surface reconstruction methods assume pinhole training images. We present GOFish, the first 3D Gaussian Splatting surface reconstruction method to train directly on fisheye images, rasterize FoVs beyond 180{\\deg}, and extract an aligned mesh from the same scene. Calibrated densification recovers the surface across the entire FoV, while Calibrated Mip Filtering and Wide-Angle Appearance Modeling keep pixel blur and lens falloff out of the scene and mesh. Across the 200{\\deg} FIORD and 205{\\deg} FullCircle benchmarks, GOFish improves PSNR over the best prior method by 2.28 and 1.97 dB, respectively. It also outperforms fisheye rendering baselines within their own FoVs and achieves the highest mesh F-score on FIORD and the main ScanNet++ set. Together, the Gaussian scene and mesh form a LiDAR-free, simulation-ready digital twin that renders in real time, ray traces the full FoV, and provides collision geometry.",
+  "abstract_zh": "机器人、自动驾驶车辆和消费者360度相机使用鱼眼镜头以获得宽广的视场（FoV）。模拟准备的数字双胞胎需要在全视场内进行照片真实感渲染，并且需要一个对齐的碰撞网格。然而，以往的鱼眼高斯点云渲染方法仅能光栅化至180度，并且不生成网格，而高斯表面重建方法则假设使用针孔相机的训练图像。我们提出了GOFish，这是首个直接在鱼眼图像上进行训练的3D高斯点云表面重建方法，能够光栅化超过180度的视场，并从同一场景中提取对齐的网格。经过校准的密集化恢复了整个视场的表面，而校准的Mip过滤和广角外观建模则将像素模糊和镜头衰减排除在场景和网格之外。在200度的FIORD和205度的FullCircle基准测试中，GOFish分别比最佳的先前方法提高了2.28和1.97 dB的峰值信噪比（PSNR）。它还在自身视场内超越了鱼眼渲染基线，并在FIORD和主要的ScanNet++数据集上实现了最高的网格F-score。高斯场景和网格共同形成了一个无激光雷达的、准备模拟的数字双胞胎，能够实时渲染、光线追踪全视场，并提供碰撞几何信息。",
+  "arxiv_id": "2610.37818",
+  "arxiv_url": "https://arxiv.org/abs/2610.37818v1",
+  "authors": [
+    "Allen Tu",
+    "Meher Gitika Karumuri",
+    "Shifan Zhu",
+    "Hailing Wang",
+    "Yen-Liang Lin",
+    "David Held",
+    "Matthias Zwicker",
+    "Tom Goldstein"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-37818",
+  "categories": [
+    "cs.CV",
+    "cs.GR",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.398885+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.37818v1",
+  "published_at": "2026-10-27T18:32:45Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "自动驾驶",
+      "autonomous",
+      "驾驶",
+      "车辆",
+      "lidar",
+      "gaussian splatting",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 83
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.37818v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "仿真/数据"
+    ]
+  },
+  "title": "GOFish: Full Field-of-View Gaussian Splatting and Mesh Extraction",
+  "title_zh": "GOFish：全视场高斯点云渲染与网格提取",
+  "translation_url": "https://hjfy.top/arxiv/2610.37818"
+}

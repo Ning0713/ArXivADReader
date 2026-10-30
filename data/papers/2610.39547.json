@@ -1,0 +1,63 @@
+{
+  "abstract": "Learning-enabled cyber-physical systems (CPS), including autonomous vehicles and UAVs, increasingly incorporate foundation models, yet fragmented assurance practices provide insufficient support for system-level guarantees. We argue that restoring engineering control across stochastic neural, symbolic, and physical boundaries requires a shift from model-centric evaluation to system-level assurance. We introduce the Foundation Model Assurance Stack, connecting three directions: (i) neuro-symbolic architectures that constrain foundation models through explicit symbolic world models, reasoning layers, and interfaces; (ii) semantically grounded, conformance-based testing that combines formal specifications and symbolic world models with foundation-model-assisted specification mining, scenario generation, and test synthesis; and (iii) compositional verification and runtime assurance that target formally tractable components and interfaces through modular contracts, equivalence checking, verified synthesis, uncertainty-aware reasoning, and runtime monitoring and enforcement. Symbolic abstractions establish assurance boundaries between stochastic learning and formal reasoning, connecting testing, verification, and runtime evidence across the system lifecycle. Foundation models serve as constrained assistants whose outputs are independently checked wherever correctness can be formally specified. We identify research challenges in specification engineering, abstraction fidelity, evidence composition, and lifecycle certification, and outline a staged agenda toward trustworthy, deployable, and certifiable learning-enabled CPS.",
+  "abstract_zh": "学习驱动的网络物理系统（CPS），包括自主车辆和无人机，越来越多地融入基础模型，但零散的保证实践对系统级保证的支持不足。我们认为，恢复在随机神经、符号和物理边界之间的工程控制需要从以模型为中心的评估转向系统级保证。我们提出了基础模型保证堆栈，连接三个方向：（i）通过显式的符号世界模型、推理层和接口来约束基础模型的神经符号架构；（ii）基于语义的符合性测试，结合形式规范和符号世界模型，以及基础模型辅助的规范挖掘、场景生成和测试合成；（iii）目标明确的组合验证和运行时保证，通过模块化合同、等价性检查、验证合成、不确定性感知推理以及运行时监控和执行，针对形式可处理的组件和接口。符号抽象在随机学习和形式推理之间建立了保证边界，连接了系统生命周期中的测试、验证和运行时证据。基础模型作为受限助手，其输出在可以形式化指定正确性的地方进行独立检查。我们识别了在规范工程、抽象保真度、证据组合和生命周期认证方面的研究挑战，并概述了朝向可信、可部署和可认证的学习驱动CPS的分阶段议程。",
+  "arxiv_id": "2610.39547",
+  "arxiv_url": "https://arxiv.org/abs/2610.39547v1",
+  "authors": [
+    "Xi Zheng",
+    "Ivan Ruchkin",
+    "Hong Jin Kang",
+    "Tevfik Bultan",
+    "Vijay Ganesh",
+    "Taylor T. Johnson",
+    "Ziyang Li",
+    "Lei Ma",
+    "Aloysius K. Mok",
+    "Daniel Neider",
+    "Ruzica Piskac",
+    "Nalini Venkatasubramanian",
+    "Simon Thompson",
+    "Sanjoy Baruah"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-39547",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.377345+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.39547v1",
+  "published_at": "2026-10-29T07:48:59Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆",
+      "场景生成",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 42
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.39547v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "世界模型/生成",
+    "secondary": [
+      "感知"
+    ]
+  },
+  "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
+  "title_zh": "利用基础模型确保学习驱动的网络物理系统：测试、验证和运行时保证的神经符号议程",
+  "translation_url": "https://hjfy.top/arxiv/2610.39547"
+}

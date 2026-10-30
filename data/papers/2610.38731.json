@@ -1,0 +1,48 @@
+{
+  "abstract": "Autonomous navigation in off-road terrain is commonly achieved using hierarchical control and planning architectures that rely on explicit cost maps and one-way information flow from a high-level planner to a low-level controller, decoupling planning from the true execution cost experienced during control. We propose a hierarchical planning and control framework in which information flows bidirectionally, allowing the low-level controller to guide trajectory selection at the planning level. The highest level of the hierarchy is a Model Predictive Path Integral (MPPI) control-style planner that determines optimal trajectories and passes these waypoints to a pretrained low-level reinforcement learning (RL) controller. Rather than drawing from an explicit cost map, our MPPI planner leverages the value function of the RL controller as an implicit cost representation. In this formulation, MPPI serves as a trajectory exploration mechanism, while the low-level controller's value function guides the search. To account for the distribution shift seen by the value function between training and evaluation, we propose an online policy evaluation process that adapts the value function to unseen driving experiences, and we demonstrate this adaptation in unseen off-road simulation environments. We evaluate our approach in a high-fidelity off-road driving simulator across a range of challenging terrain conditions and compare its performance against a baseline MPPI controller. The results demonstrate that our method achieves safer and more effective navigation to goal locations while eliminating the need for explicit cost maps and enabling tighter coupling between planning and control.",
+  "abstract_zh": "在越野地形中的自主导航通常采用层次控制和规划架构，这些架构依赖于明确的成本地图以及从高层规划者到低层控制器的单向信息流，从而将规划与控制过程中实际经历的执行成本解耦。我们提出了一种层次规划与控制框架，其中信息双向流动，允许低层控制器在规划层面引导轨迹选择。层次结构的最高层是一个模型预测路径积分（Model Predictive Path Integral, MPPI）控制风格的规划器，它确定最佳轨迹并将这些路径点传递给预训练的低层强化学习（Reinforcement Learning, RL）控制器。我们的MPPI规划器并不是从明确的成本地图中获取信息，而是利用RL控制器的价值函数作为隐式成本表示。在这种表述中，MPPI充当轨迹探索机制，而低层控制器的价值函数则引导搜索。为了考虑训练与评估之间价值函数所见的分布变化，我们提出了一种在线策略评估过程，该过程将价值函数适应于未见的驾驶经验，并在未见的越野仿真环境中展示了这种适应性。我们在高保真越野驾驶模拟器中评估了我们的方法，涵盖了一系列具有挑战性的地形条件，并将其性能与基线MPPI控制器进行了比较。结果表明，我们的方法在实现更安全、更有效的目标位置导航的同时，消除了对明确成本地图的需求，并实现了规划与控制之间的更紧密耦合。",
+  "arxiv_id": "2610.38731",
+  "arxiv_url": "https://arxiv.org/abs/2610.38731v1",
+  "authors": [
+    "Anoushka Alavilli",
+    "Raymond Song",
+    "Guanya Shi",
+    "Jeff Schneider"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-38731",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.360428+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.38731v1",
+  "published_at": "2026-10-28T19:25:23Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.38731v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "本文面向越野自动驾驶，提出价值函数引导的分层MPPI规划与控制框架：利用预训练强化学习控制器的价值函数评估候选轨迹，以隐式代价表示替代显式代价地图，并通过在线策略评估适应未知驾驶环境。在高保真越野仿真中的实验表明，相比基线MPPI，该方法能够提升导航安全性与有效性。",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Value Function-Guided MPPI for Hierarchical Planning and Control in Off-Road Autonomous Navigation",
+  "title_zh": "基于价值函数引导的MPPI在越野自主导航中的层次规划与控制",
+  "translation_url": "https://hjfy.top/arxiv/2610.38731"
+}

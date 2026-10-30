@@ -1,0 +1,52 @@
+{
+  "abstract": "Reliable perception is essential to intelligent transportation systems, yet deep neural networks can silently miss safety-critical objects while continuing to produce apparently plausible outputs. Existing run-time monitors for 3D object detection generally assess each frame independently and therefore cannot exploit the temporal evolution of occlusion, point sparsity, and scene complexity. We present TRIM, a lightweight temporal monitor that detects missed-object failures without modifying or retraining the underlying detector. TRIM summarises intermediate activations using compact channel-wise statistics and processes short sequences of these summaries with a temporal convolutional network. Experiments on NuScenes show that temporal monitoring improves AUROC from 0.686 to 0.704 and reduces the false alarm rate at 95% recall from 0.818 to 0.759 compared with single-frame monitoring. Early and intermediate backbone features provide the strongest monitoring signal, while the temporal inference head requires only 0.159 ms on a CPU.",
+  "abstract_zh": "可靠的感知对于智能交通系统至关重要，然而深度神经网络可能在未发出警告的情况下错过安全关键物体，同时继续产生看似合理的输出。现有的3D物体检测运行时监控通常独立评估每一帧，因此无法利用遮挡、点稀疏和场景复杂性的时间演变。我们提出了TRIM，一种轻量级的时间监控器，可以在不修改或重新训练基础检测器的情况下检测漏检物体的失败。TRIM通过紧凑的通道统计信息总结中间激活，并使用时间卷积网络处理这些摘要的短序列。在NuScenes上的实验表明，与单帧监控相比，时间监控将AUROC从0.686提高到0.704，并将95%召回率下的误报率从0.818降低到0.759。早期和中间的主干特征提供了最强的监控信号，而时间推理头在CPU上仅需0.159毫秒。",
+  "arxiv_id": "2610.38613",
+  "arxiv_url": "https://arxiv.org/abs/2610.38613v1",
+  "authors": [
+    "Hakan Yekta Yatbaz",
+    "Konstantinos Koufos",
+    "Mehrdad Dianati"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-38613",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.428618+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.38613v1",
+  "published_at": "2026-10-28T10:31:46Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "交通",
+      "3d object detection"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 29
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.38613v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常",
+      "3D 检测"
+    ]
+  },
+  "title": "TRIM: Temporal Run-Time Monitoring of 3D Object Detection via Activation Statistics",
+  "title_zh": "TRIM：基于激活统计的3D物体检测的时间运行监控",
+  "translation_url": "https://hjfy.top/arxiv/2610.38613"
+}

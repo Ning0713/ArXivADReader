@@ -1,0 +1,56 @@
+{
+  "abstract": "LiDAR-based 3D perception underpins autonomous driving and robotics, yet deploying these models safely requires stress-testing them against adversarial inputs before real-world use. Although state-of-the-art adversarial attacks exist, their implementations are often fragmented across individual repositories, each tied to a specific architecture or task and requiring manual environment reconstruction and model-specific integration code. We present LIDARSHIELD, a unified and fully Dockerized framework that reverses this workflow: rather than installing the target model inside the toolkit, LIDARSHIELD exposes any model through three lightweight HTTP endpoints, namely /info, /forward, and /gradient As a result, connecting a new model or dataset requires only a single loader function or adapter. The framework supports both 3D semantic segmentation and 3D object detection through the same engine-service protocol, integrating a task-aware suite of state-of-the-art attacks, including PGD and Square Attack for segmentation, and point perturbation, point removal, point injection, and LiDAttack for detection. This enables systematic exposure of corner cases and vulnerabilities across heterogeneous LiDAR backbones. The LiDAR-Shield codebase is publicly available at https://github.com/alexandrosgk/LiDAR-shield.",
+  "abstract_zh": "基于LiDAR的3D感知是自动驾驶和机器人技术的基础，但在实际使用之前，安全部署这些模型需要对其进行对抗输入的压力测试。尽管存在最先进的对抗攻击，但其实现通常分散在各个独立的代码库中，每个库都与特定的架构或任务相关，并且需要手动重建环境和特定于模型的集成代码。我们提出了LIDARSHIELD，一个统一且完全Docker化的框架，逆转了这一工作流程：LIDARSHIELD通过三个轻量级的HTTP端点（即/info、/forward和/gradient）暴露任何模型，而不是将目标模型安装在工具包内。因此，连接新模型或数据集只需一个加载函数或适配器。该框架通过相同的引擎服务协议支持3D语义分割和3D目标检测，集成了一套任务感知的最先进攻击，包括用于分割的PGD和Square Attack，以及用于检测的点扰动、点移除、点注入和LiDAttack。这使得系统地暴露异构LiDAR骨干网络中的边界情况和脆弱性成为可能。LiDAR-Shield代码库已公开发布在https://github.com/alexandrosgk/LiDAR-shield。",
+  "arxiv_id": "2610.39848",
+  "arxiv_url": "https://arxiv.org/abs/2610.39848v1",
+  "authors": [
+    "Alexandros Gkillas",
+    "Ioulia Kapsali",
+    "Christos Anagnostopoulos",
+    "Aris S. Lalos"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-39848",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.469365+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.39848v1",
+  "published_at": "2026-10-29T11:27:53Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "3d object detection",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.39848v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "仿真/数据"
+    ]
+  },
+  "title": "LiDAR-SHIELD: A Fully Dockerized Adversarial Robustness Assessment Framework for LiDAR-Based 3D Perception Models",
+  "title_zh": "LiDAR-SHIELD：一个完全Docker化的对抗鲁棒性评估框架，用于基于LiDAR的3D感知模型",
+  "translation_url": "https://hjfy.top/arxiv/2610.39848"
+}

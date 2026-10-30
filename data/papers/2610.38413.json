@@ -1,0 +1,50 @@
+{
+  "abstract": "Real-world deployment of computer vision models, particularly in outdoor scenarios, is often limited by environmental interferences, such as adverse weather. Improving model robustness across weather conditions is thus critical for reliability. However, sourcing high-quality data relevant to isolated weather effects is a significant challenge. Most datasets include changes in dynamic elements across observations of the same scene: subjects such as pedestrians and vehicles change between shots, while camera viewpoints vary. These aspects make it difficult to decouple solely weather-induced distribution shifts from the scene. In this work, we address this with a novel weather synthesis framework that utilizes structure-retaining Low-Rank Adapters (LoRA). We analyze the attention blocks in Stable Diffusion XL (SDXL) and identify where relevant structural information is mostly processed during image-to-image translation. Through an architectural analysis of SDXL, we learn structural LoRA matrices for the corresponding blocks and then leverage them for weather synthesis, eliminating the need for external conditioning such as ControlNet. Experimental results demonstrate that our method improves upon existing synthesis approaches, achieving greater realism while preserving structure. This provides a robust pipeline for generating high-fidelity training and evaluation data for outdoor computer vision applications.",
+  "abstract_zh": "计算机视觉模型在现实世界中的部署，尤其是在户外场景中，常常受到环境干扰的限制，例如恶劣天气。因此，提高模型在不同天气条件下的鲁棒性对于可靠性至关重要。然而，获取与孤立天气效应相关的高质量数据是一个重大挑战。大多数数据集包含同一场景观察中动态元素的变化：行人和车辆等主体在镜头之间发生变化，同时相机视角也不同。这些因素使得仅仅从场景中解耦出天气引起的分布变化变得困难。在本研究中，我们提出了一种新颖的天气合成框架，利用保留结构的低秩适配器（Low-Rank Adapters, LoRA）。我们分析了稳定扩散XL（Stable Diffusion XL, SDXL）中的注意力模块，并识别出在图像到图像转换过程中相关结构信息主要处理的位置。通过对SDXL的架构分析，我们为相应模块学习了结构化的LoRA矩阵，并利用它们进行天气合成，消除了对外部条件（如ControlNet）的需求。实验结果表明，我们的方法在现有合成方法的基础上有所改进，达到了更高的真实感，同时保留了结构。这为生成高保真度的户外计算机视觉应用的训练和评估数据提供了一个稳健的流程。",
+  "arxiv_id": "2610.38413",
+  "arxiv_url": "https://arxiv.org/abs/2610.38413v1",
+  "authors": [
+    "Shunxin Wang",
+    "Alexandros Stergiou",
+    "Luuk Spreeuwers",
+    "Estefania Talavera",
+    "Nicola Strisciuglio"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-38413",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.420170+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.38413v1",
+  "published_at": "2026-10-28T08:00:41Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "车辆",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.38413v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "本文通过分析 SDXL 注意力模块并训练结构保持 LoRA，在无需 ControlNet 等外部条件控制的情况下实现保留场景结构的天气合成。该方法旨在分离天气变化与场景内容变化，可为自动驾驶感知模型的恶劣天气数据增强和鲁棒性评估提供支持，但摘要未报告自动驾驶任务上的直接验证。",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "世界模型/生成",
+      "安全/异常"
+    ]
+  },
+  "title": "Structure-retained low-rank adapters for weather synthesis",
+  "title_zh": "保留结构的低秩适配器用于天气合成",
+  "translation_url": "https://hjfy.top/arxiv/2610.38413"
+}

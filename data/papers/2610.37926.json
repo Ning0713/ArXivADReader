@@ -1,0 +1,49 @@
+{
+  "abstract": "Cooperative multi-agent reinforcement learning (MARL) enables teams of agents, such as robots and autonomous vehicles, to learn coordinated behavior, but what such teams learn is largely determined by their reward function. Because task success alone provides too little guidance for learning, intermediate rewards are usually designed by hand, and this effort must often be repeated whenever the environment or the team changes. Large language models (LLMs) can automate the effort by writing reward functions as code, yet the resulting rewards are typically designed and tested in a single setting. To enable their reuse across settings, GARDEN (Generalist Autonomous Reward Design through Evidence Navigation) is proposed, in which one reward program is developed for a family of related scenarios and transferred, unchanged, to scenarios that were not available during its design. During development, environment code, training records, and agent behavior are investigated by an LLM reward engineer, and draft rewards are tested in trial training runs, while the learning algorithm and the rule for selecting the final reward are held fixed. On unseen scenarios of the Overcooked and SMAX benchmarks, task returns were increased by 58.2% and 52.5% over the default rewards on two kitchen layouts, and the mean win rate in two combat scenarios was raised from 51.0% to 89.9%. Under matched candidate and probe budgets, this exceeded the 84.2% and 79.2% obtained with fixed diagnostic feedback and Eureka-inspired reward reflection. These results show that a single autonomously engineered reward can be reused effectively across related cooperative scenarios.",
+  "abstract_zh": "合作多智能体强化学习（MARL）使得机器人和自主车辆等智能体团队能够学习协调行为，但这些团队所学习的内容在很大程度上取决于它们的奖励函数。由于仅靠任务成功提供的指导过于有限，通常需要手动设计中间奖励，而每当环境或团队发生变化时，这一工作往往需要重复进行。大型语言模型（LLMs）可以通过将奖励函数编写为代码来自动化这一过程，但所得到的奖励通常是在单一环境中设计和测试的。为实现奖励在不同环境中的重用，提出了GARDEN（通过证据导航进行通用自主奖励设计），在该方法中，为一系列相关场景开发一个奖励程序，并将其不加修改地转移到设计时未考虑的场景。在开发过程中，LLM奖励工程师会调查环境代码、训练记录和智能体行为，并在试验训练运行中测试草拟的奖励，同时保持学习算法和最终奖励选择规则不变。在未见过的Overcooked和SMAX基准测试场景中，两个厨房布局的任务回报分别比默认奖励提高了58.2%和52.5%，而在两个战斗场景中的平均胜率从51.0%提高到89.9%。在匹配的候选和探测预算下，这一结果超过了使用固定诊断反馈和受Eureka启发的奖励反思所获得的84.2%和79.2%。这些结果表明，单个自主设计的奖励可以在相关的合作场景中有效重用。",
+  "arxiv_id": "2610.37926",
+  "arxiv_url": "https://arxiv.org/abs/2610.37926v1",
+  "authors": [
+    "Dogan Urgun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-37926",
+  "categories": [
+    "cs.AI",
+    "cs.MA",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.511872+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.37926v1",
+  "published_at": "2026-10-27T20:11:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "车辆",
+      "诊断"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.37926v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "协同/V2X"
+    ]
+  },
+  "title": "GARDEN: Generalist Autonomous Reward Design Through Evidence Navigation for Cooperative Multi-Agent Reinforcement Learning",
+  "title_zh": "GARDEN：通过证据导航进行通用自主奖励设计的合作多智能体强化学习",
+  "translation_url": "https://hjfy.top/arxiv/2610.37926"
+}

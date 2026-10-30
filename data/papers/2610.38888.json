@@ -1,0 +1,51 @@
+{
+  "abstract": "Tracked vehicles are widely used in off-road applications, but their conventional motion models often rely on no-slip assumptions that become inaccurate on low-adherence surfaces. Rather than treating inertial effects arising from slip as a disturbance to be minimized, this work investigates how inertial effects arising from a moving mass can be deliberately exploited for steering on low-friction surfaces. A dynamic model for an articulated tracked vehicle with a passive trailer is developed, allowing inertial effects from trailer motion to be captured. The approach is experimentally evaluated on ice, where our dynamic model outperforms the kinematic baseline. We also propose a mixed dynamic-kinematic model to adapt predictions to both surface and situation by exploiting predictions from both methods. Finally, we demonstrate inertial steering on a mono-track vehicle without a conventional steering mechanism, showing that controlled movements of an internal mass can generate turning motion on ice. The resulting behavior can be predicted using the proposed dynamic model by representing the internal mass as a frictionless trailer, revealing the analogous dynamics between the two configurations. These results demonstrate the feasibility of inertial steering as an alternative steering mechanism for tracked vehicles operating in low-adherence environments.",
+  "abstract_zh": "履带车辆广泛应用于越野场景，但其传统运动模型通常依赖于无滑移假设，这在低附着力表面上变得不准确。本研究并未将因滑移产生的惯性效应视为需最小化的干扰，而是探讨如何故意利用来自运动质量的惯性效应在低摩擦表面上进行转向。我们开发了一种具有被动拖车的关节式履带车辆的动态模型，以捕捉拖车运动带来的惯性效应。该方法在冰面上进行了实验评估，结果表明我们的动态模型优于运动学基线。我们还提出了一种混合动态-运动学模型，通过利用两种方法的预测，来适应不同的表面和情境。最后，我们展示了一种在没有传统转向机制的单轨车辆上进行的惯性转向，表明内部质量的受控运动可以在冰面上产生转向运动。通过将内部质量表示为无摩擦拖车，所产生的行为可以使用所提出的动态模型进行预测，揭示了两种配置之间的相似动力学。这些结果证明了惯性转向作为在低附着力环境中操作的履带车辆的一种替代转向机制的可行性。",
+  "arxiv_id": "2610.38888",
+  "arxiv_url": "https://arxiv.org/abs/2610.38888v1",
+  "authors": [
+    "Mathis Turgeon-Roy",
+    "Mohamed Ounally",
+    "Veronica Vannini",
+    "Olivier Roy",
+    "François Pomerleau"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-38888",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.361492+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.38888v1",
+  "published_at": "2026-10-28T20:50:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "road",
+      "车辆",
+      "motion prediction"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.38888v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": []
+  },
+  "title": "Inertial Steering and Motion Prediction of Tracked Vehicles on Low-Adherence Surfaces",
+  "title_zh": "低附着力表面上履带车辆的惯性转向与运动预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.38888"
+}

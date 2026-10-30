@@ -1,0 +1,57 @@
+{
+  "abstract": "Online vectorized map construction provides autonomous vehicles with essential, real-time semantic and geometric scene understanding. While leveraging prior maps presents an opportunity to improve accuracy, they are often biased due to outdated information or temporary road changes. Existing methods, which typically treat priors as fully reliable or only consider limited noise patterns, suffer severe performance degradation when these priors are imperfect. To address this, we propose PriorMaskMap, a robust framework for prior-guided vectorized map construction. Its first innovation is a Prior-Aware Confidence Estimator (PACE) that evaluates the input rasterized map against current visual observations. It assigns confidence scores to regions classified as reliable, erroneous, or blank, creating a foundational mask that guides two subsequent branches. In one branch, the Dual-Prior Query Generator (DPQG) selectively filters and embeds both rasterized and vectorized priors to initialize informative queries from trustworthy map structures. In the other, the Confidence-Guided Prior Fusion (CGPF) module spatially propagates and refines the mask, using the refined version to govern the fusion of BEV features with the prior map, thereby providing rich contextual representations for the map decoder. Evaluation on the nuScenes dataset shows that PriorMaskMap achieves superior mapping precision over existing approaches and exhibits marked robustness when provided with priors containing apparent errors. Our code is released at https://github.com/healenrens/PriorMaskMap.",
+  "abstract_zh": "在线矢量地图构建为自主车辆提供了必要的实时语义和几何场景理解。虽然利用先验地图有助于提高准确性，但由于信息过时或临时道路变化，它们往往存在偏差。现有方法通常将先验视为完全可靠，或仅考虑有限的噪声模式，当这些先验不完美时，性能会严重下降。为了解决这一问题，我们提出了PriorMaskMap，一个基于先验指导的鲁棒矢量地图构建框架。其首个创新是先验感知置信度估计器（Prior-Aware Confidence Estimator，PACE），该估计器根据当前视觉观测评估输入的光栅化地图。它为被分类为可靠、错误或空白的区域分配置信度分数，创建一个基础掩模以指导后续的两个分支。在一个分支中，双先验查询生成器（Dual-Prior Query Generator，DPQG）选择性地过滤并嵌入光栅化和矢量化的先验，以从可信的地图结构初始化信息丰富的查询。在另一个分支中，置信度引导的先验融合模块（Confidence-Guided Prior Fusion，CGPF）在空间上传播和细化掩模，使用细化后的版本来指导BEV特征与先验地图的融合，从而为地图解码器提供丰富的上下文表示。在nuScenes数据集上的评估表明，PriorMaskMap在地图精度上优于现有方法，并在提供明显错误的先验时表现出显著的鲁棒性。我们的代码已发布在 https://github.com/healenrens/PriorMaskMap。",
+  "arxiv_id": "2610.39283",
+  "arxiv_url": "https://arxiv.org/abs/2610.39283v1",
+  "authors": [
+    "Haoming Xu",
+    "Wei Li",
+    "Yu Hu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-39283",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.442500+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.39283v1",
+  "published_at": "2026-10-29T03:33:29Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "nuscenes",
+      "autonomous",
+      "road",
+      "车辆",
+      "道路",
+      "bev"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 72
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.39283v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "PriorMaskMap: Robust Online Vectorized Map Construction with Biased Priors",
+  "title_zh": "PriorMaskMap：基于偏置先验的鲁棒在线矢量地图构建",
+  "translation_url": "https://hjfy.top/arxiv/2610.39283"
+}

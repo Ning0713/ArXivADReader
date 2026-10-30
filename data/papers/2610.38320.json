@@ -1,0 +1,57 @@
+{
+  "abstract": "Perception tasks for navigation in robotics, including aerial platforms such as drones and autonomous driving systems, are inherently structured. Drone-mounted cameras typically capture sky above, terrain below, and obstacles or man-made structures in between, while driving data often contains organized road layouts, lane markings, and surrounding agents. Motivated by these axis-aligned structural priors, we note that such information is typically more structured than in generic image tasks. We hypothesize that processing information in a quadtree-esque manner can not only model features effectively in a hierarchical manner, but also offers an efficient linear-time alternative to vanilla attention mechanisms, which run in quadratic time. In this paper, we propose Sibling-Selective Quadtree Attention (SSQA), which models image tokens hierarchically as a structured, full quadtree. We show analytical complexity analysis that guarantees linear-time feature modeling, in addition to empirical experiments comparing inference speeds with other popular modeling approaches, such as Mamba 2 and Quadtree Attention. Our results, benchmarked across several tasks, show that we achieve results at least as good, if not notably better, as others at a fraction of the computational costs.",
+  "abstract_zh": "机器人导航中的感知任务，包括无人机等空中平台和自主驾驶系统，具有内在的结构性。无人机搭载的摄像头通常捕捉到上方的天空、下方的地形以及中间的障碍物或人造结构，而驾驶数据通常包含有组织的道路布局、车道标记和周围的代理。基于这些轴对齐的结构先验，我们注意到这些信息通常比一般图像任务更具结构性。我们假设以类似四叉树的方式处理信息不仅可以有效地以层次化的方式建模特征，还提供了一种高效的线性时间替代方案，相较于运行在二次时间的传统注意力机制。本文提出了兄弟选择四叉树注意力（SSQA），它将图像标记作为结构化的完整四叉树进行层次建模。我们展示了分析复杂度分析，保证了线性时间特征建模，并通过与其他流行建模方法（如 Mamba 2 和 Quadtree Attention）的推理速度比较进行实证实验。我们的结果在多个任务上进行基准测试，显示我们在计算成本的很小一部分下，至少达到了与其他方法同样好的结果，甚至显著更好。",
+  "arxiv_id": "2610.38320",
+  "arxiv_url": "https://arxiv.org/abs/2610.38320v1",
+  "authors": [
+    "Yufan Chen",
+    "Arnav Bali",
+    "Angela Liu",
+    "Laura Zheng",
+    "Ming C. Lin"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-38320",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.416451+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.38320v1",
+  "published_at": "2026-10-28T06:14:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "road",
+      "lane",
+      "驾驶",
+      "道路",
+      "车道",
+      "drone",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.38320v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "SSQA: Sibling-Selective Quadtree Attention for Hierarchical Modeling in Perception Tasks",
+  "title_zh": "SSQA：用于感知任务的兄弟选择四叉树注意力的层次建模",
+  "translation_url": "https://hjfy.top/arxiv/2610.38320"
+}

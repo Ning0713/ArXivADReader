@@ -1,0 +1,51 @@
+{
+  "abstract": "Monocular RGB tracking is useful for robots operating near people, but perception errors affect binary stop/proceed decisions in ways that geometric accuracy metrics do not capture. We examine how much decision error arises from the safety rule versus perception. We prove that lateral-only distance is a lower bound on planar distance: with accurate positions, it cannot miss dangers identified by the planar rule, but it produces unnecessary stops. We introduce a two-factor Shapley attribution separating rule and perception contributions, and further distinguish missed detections from localization errors. Experiments use ETH and UCY pedestrian videos with simulated stationary robots, disjoint calibration and evaluation pedestrians, and time-block bootstrap intervals. Across 898 pedestrians in three scenes, the lateral rule missed no dangers on annotated positions but achieved only 5.6-31.9% stop precision. In two scenes with RGB perception, calibrated ground-plane localization achieved 0.59 m and 0.51 m planar RMSE, compared with 1.72 m and 1.39 m for a geometric baseline and 0.81 m and 0.68 m for calibrated Depth Anything V2. Detection recall of 0.43 and 0.26 made missed detections the leading source of missed danger. A two-standard-deviation safety margin with ground-plane localization matched or improved on the lateral rule's missed-danger rate in all eight scene-threshold settings and reduced unnecessary stops in seven. All robot interactions are simulated, and outcomes are offline decision classifications, not demonstrations of collision avoidance.",
+  "abstract_zh": "单目RGB跟踪对于在人员附近操作的机器人非常有用，但感知错误以几何精度指标无法捕捉的方式影响二元停止/继续决策。我们研究了安全规则与感知之间产生的决策错误的程度。我们证明了仅考虑横向距离是平面距离的下限：在准确的位置下，它不会错过平面规则识别的危险，但会导致不必要的停止。我们引入了一种两因素Shapley归因方法，将规则和感知的贡献分开，并进一步区分漏检与定位错误。实验使用ETH和UCY行人视频，模拟静态机器人，分离的标定和评估行人，以及时间块自助间隔。在三个场景中对898名行人的研究表明，横向规则在标注位置上未漏检任何危险，但仅实现了5.6%-31.9%的停止精度。在两个具有RGB感知的场景中，经过标定的地面平面定位实现了0.59米和0.51米的平面均方根误差（RMSE），而几何基线为1.72米和1.39米，经过标定的Depth Anything V2为0.81米和0.68米。检测召回率为0.43和0.26，使得漏检成为漏掉危险的主要来源。使用地面平面定位的两倍标准差安全边际在所有八个场景阈值设置中匹配或改善了横向规则的漏检危险率，并在七个场景中减少了不必要的停止。所有机器人交互均为模拟，结果为离线决策分类，而非碰撞避免的演示。",
+  "arxiv_id": "2610.40199",
+  "arxiv_url": "https://arxiv.org/abs/2610.40199v1",
+  "authors": [
+    "Abdulahi Taiwo",
+    "Chijioke Cyriacus Ekechi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-40199",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.386291+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.40199v1",
+  "published_at": "2026-10-29T14:52:38Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "pedestrian",
+      "行人",
+      "robot"
+    ],
+    "reasons": [
+      "非自动驾驶领域排除词占主导",
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.40199v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "本文面向自主机器人在人群附近导航的停止决策，提出决策级误差归因与深度感知安全评估方法，分析安全规则、目标漏检和定位误差对危险漏判及不必要停车的影响。研究涉及单目RGB行人感知、地平面深度定位和安全裕度设计，对自动驾驶中的行人感知与决策安全评估具有直接借鉴价值，但实验对象是模拟静止机器人而非道路车辆。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知",
+      "深度/几何"
+    ]
+  },
+  "title": "Decision-Level Error Attribution and Depth-Aware Safety Evaluation of Monocular RGB Human Tracking for Autonomous Robot Navigation",
+  "title_zh": "单目RGB人类跟踪的决策级错误归因与深度感知安全评估在自主机器人导航中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2610.40199"
+}

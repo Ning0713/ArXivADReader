@@ -1,0 +1,53 @@
+{
+  "abstract": "We study domain generalization for LIDAR semantic segmentation. Deep neural networks achieve strong performance on 3D point clouds, yet real-world LIDAR exhibits sensor-specific sampling patterns that hinder transfer across datasets. In many applications, performance on completely unseen sensors is crucial. A model should preferably work on a new setup without prior access to its data or labels. To this end, we introduce a source-only training scheme that adds an occupancy prediction auxiliary objective. We aggregate source-domain scans into a simple world model and use it as the supervision signal, replacing single-scan standard segmentation training. A key property of our approach is that it does not alter the input scan. During training and testing the network consumes the same single-frame LIDAR input, only the supervision signal is enriched via the occupancy objective. At deployment, there is no runtime overhead as the auxiliary head can be dropped for pure segmentation, or kept to obtain scene completion alongside semantic segmentation. In an experimental evaluation across distinct LIDAR datasets, we demonstrate that a model's generalization to new domains can be significantly affected by how it is supervised. In certain setups, performance on unseen domains improves without any explicit domain adaptation (no target scans, no target labels, no sensor priors) and without prediction refinement. At the same time, our method maintains competitive source-domain segmentation performance and incurs no additional inference cost.",
+  "abstract_zh": "我们研究了激光雷达语义分割的领域泛化问题。深度神经网络在3D点云上表现出强大的性能，但现实世界中的激光雷达展现出特定传感器的采样模式，这阻碍了跨数据集的迁移。在许多应用中，对完全未见过的传感器的性能至关重要。理想情况下，模型应在没有先前访问其数据或标签的情况下在新的设置上工作。为此，我们提出了一种仅源训练方案，增加了占用预测的辅助目标。我们将源域扫描聚合成一个简单的世界模型，并将其作为监督信号，替代单扫描标准分割训练。我们方法的一个关键特性是它不改变输入扫描。在训练和测试过程中，网络消耗相同的单帧激光雷达输入，只有监督信号通过占用目标得到了增强。在部署时，没有运行时开销，因为辅助头可以去掉以进行纯分割，或者保留以获得场景补全和语义分割。在对不同激光雷达数据集的实验评估中，我们证明了模型对新领域的泛化能力可以显著受到监督方式的影响。在某些设置中，对未见领域的性能在没有任何显式领域适应（没有目标扫描、没有目标标签、没有传感器先验）和没有预测精炼的情况下得到了改善。同时，我们的方法保持了竞争性的源域分割性能，并且没有额外的推理成本。",
+  "arxiv_id": "2610.39516",
+  "arxiv_url": "https://arxiv.org/abs/2610.39516v1",
+  "authors": [
+    "Christoph B Rist",
+    "Larissa T Triess",
+    "Markus Enzweiler",
+    "Dariu M Gavrila"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-39516",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.453629+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.39516v1",
+  "published_at": "2026-10-29T07:14:26Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "occupancy",
+      "lidar",
+      "world model",
+      "点云",
+      "占用预测",
+      "scene completion"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.39516v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "本文面向自动驾驶激光雷达感知中的传感器间领域泛化问题，提出一种仅使用源域数据训练的占用预测辅助学习方法。该方法将源域多帧扫描聚合为场景级世界模型，并以此为监督信号，增强单帧点云语义分割训练，而不改变输入形式。模型在测试时仍仅接收单帧激光雷达点云，可移除辅助头以保持纯语义分割推理，或同时输出场景补全结果。跨不同激光雷达数据集的实验表明，该方法无需目标域扫描、标签、传感器先验或显式预测后处理，即可提升部分未见传感器上的泛化性能，且不增加推理开销。",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "Robust LIDAR Sensor-to-Sensor Domain Generalization via Accumulated-Point Scene Completion",
+  "title_zh": "通过累积点场景补全实现稳健的激光雷达传感器间领域泛化",
+  "translation_url": "https://hjfy.top/arxiv/2610.39516"
+}

@@ -1,0 +1,47 @@
+{
+  "abstract": "Segmentation networks that predict at an output stride are trained against label maps downsampled by strided sampling, nearest-neighbor resampling or majority pooling. These methods label each coarse grid cell on its own, so a region that wins no cell is absent from the target and receives no positive label. We present MatchDown, which builds the coarse target from a minimum-cost matching between regions and the grid cells they occupy. It keeps as many regions as any one-region-per-cell target can, certifies how many losses are unavoidable, and with priority tiers (MatchDown-P) keeps every evaluated region (a region that a metric scores) of at least one cell's area. On COCO, Cityscapes and BBBC038 at factors 2 to 16, MatchDown-P loses exactly the minimum number of regions, whereas the downsampling used by StarDist, nnU-Net and connectomics pyramids loses four to five times as many on COCO at factor 8. Keeping a region in the target and reconstructing its shape are different problems: we show that no region lost by majority pooling can be reconstructed above IoU 0.5 by upsampling any coarse target, yet on BBBC038 a star-convex head trained on MatchDown targets segments 35% of the nuclei that majority pooling loses above IoU 0.5, against 15% when trained on majority targets and 24% on StarDist's strided target. On two nucleus datasets, with thresholds cross-validated for count error, this head has instance accuracy at IoU 0.5 (Acc50) 2.6 to 4.2 points above the strided target and at most 2.8 points below cell-center sampling, and a lower count error than the strided and cell-center targets on BBBC039. On BBBC039, an affinity head, which outputs one label per cell, lowers count error relative to majority targets by 9.3 nuclei per image at 7.2 points lower Acc50. MatchDown runs once, before training, in place of the label-downsampling step.",
+  "abstract_zh": "预测输出步幅的分割网络是针对通过步幅采样、最近邻重采样或多数池化下采样的标签图进行训练的。这些方法单独为每个粗网格单元标记，因此未在任何单元中获胜的区域在目标中缺失，并且没有获得正标签。我们提出了MatchDown，它通过区域与其占据的网格单元之间的最小成本匹配来构建粗略目标。它保留了尽可能多的区域，确保不可避免的损失数量，并通过优先级层（MatchDown-P）保留每个评估区域（一个指标评分的区域）至少一个单元的面积。在COCO、Cityscapes和BBBC038数据集上，MatchDown-P恰好损失了最少数量的区域，而StarDist、nnU-Net和连接主义金字塔所使用的下采样在COCO上以因子8损失了四到五倍的区域。将区域保留在目标中和重建其形状是不同的问题：我们展示了通过上采样任何粗略目标，无法重建多数池化损失的区域的IoU超过0.5，然而在BBBC038上，基于MatchDown目标训练的星状凸头部能够分割35%的细胞核，而多数池化损失的IoU超过0.5，仅为15%，而基于StarDist的步幅目标为24%。在两个细胞核数据集上，经过交叉验证的阈值用于计数误差，该头部在IoU 0.5（Acc50）下的实例准确率比步幅目标高出2.6到4.2个百分点，比细胞中心采样低最多2.8个百分点，并且在BBBC039上计数误差低于步幅和细胞中心目标。在BBBC039上，输出每个单元一个标签的亲和头部相对于多数目标降低了每幅图像9.3个细胞核的计数误差，Acc50低7.2个百分点。MatchDown在训练之前运行一次，取代标签下采样步骤。",
+  "arxiv_id": "2610.39880",
+  "arxiv_url": "https://arxiv.org/abs/2610.39880v1",
+  "authors": [
+    "Zhiyuan Zhang",
+    "Yukun Ou",
+    "San Tek Choi"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-39880",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.471444+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.39880v1",
+  "published_at": "2026-10-29T11:57:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 20
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.39880v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "仿真/数据",
+      "深度/几何"
+    ]
+  },
+  "title": "What Survives Label Downsampling? Exact Region Survival for Coarse Segmentation Targets",
+  "title_zh": "标签下采样后存活了什么？粗略分割目标的精确区域存活",
+  "translation_url": "https://hjfy.top/arxiv/2610.39880"
+}

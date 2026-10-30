@@ -1,0 +1,53 @@
+{
+  "abstract": "Measurements of tree diameter at breast height (DBH) are fundamental to forest inventories, but manual surveys across entire stands or regions are impractical. UAV-borne laser scanning (ULS) enables scalable automated forest surveys, yet canopy occlusion makes accurate DBH estimation from ULS point clouds non-trivial. Limited stem-level point density of ULS data constrains approaches relying on detailed stem reconstruction, such as Quantitative Structure Models (QSMs) and circle fitting. Empirical machine learning methods based on predefined point cloud metrics are an alternative. New deep learning approaches offer an even more principled solution, allowing models to learn directly from point clouds. Sparse tensor networks have shown particular promise, transforming forestry tasks such as tree species classification. We investigate whether these strengths can be extended to estimate individual tree DBH from ULS data across four mixed-species temperate forest plots in Germany. We further advance existing sparse tensor networks by introducing TreeNext, a lightweight deep learning architecture for direct individual tree parameter estimation from voxelized LiDAR point clouds. We present a fully automated forest inventory pipeline from individual tree instance segmentation to DBH regression, and quantify the impact of segmentation errors by comparing performance on automatically segmented and ground truth instances. TreeNext achieves an $R^2$ of 0.8355 on automatically segmented trees and 0.9380 on ground truth segments, outperforming strong tabular baselines including Random Forest and XGBoost. Segmentation quality emerges as the dominant error source in the automated pipeline. TreeNext proves highly data-efficient, performing well even in small data scenarios. Our findings establish sparse tensor networks as a practical foundation for automated individual tree DBH estimation from ULS.",
+  "abstract_zh": "树木胸径（DBH）的测量是森林清查的基础，但在整个林分或区域内进行人工调查是不切实际的。无人机激光扫描（ULS）使得可扩展的自动化森林调查成为可能，但树冠遮挡使得从ULS点云中准确估计DBH变得复杂。ULS数据的有限干茎级点密度限制了依赖于详细干茎重建的方法，例如定量结构模型（QSMs）和圆形拟合。基于预定义点云指标的经验机器学习方法是一种替代方案。新的深度学习方法提供了更为原则性的解决方案，允许模型直接从点云中学习。稀疏张量网络显示出特别的前景，能够转变森林任务，例如树种分类。我们研究了这些优势是否可以扩展到从德国四个混合种类温带森林样地的ULS数据中估计个体树木的DBH。我们进一步通过引入TreeNext，推进现有的稀疏张量网络，这是一种轻量级深度学习架构，旨在从体素化的LiDAR点云中直接估计个体树木参数。我们展示了一个从个体树木实例分割到DBH回归的全自动森林清查流程，并通过比较自动分割和真实标签实例的性能来量化分割错误的影响。TreeNext在自动分割的树木上达到了0.8355的$R^2$，在真实标签分割上达到了0.9380，超越了包括随机森林（Random Forest）和XGBoost在内的强大表格基线。分割质量成为自动化流程中主要的错误来源。TreeNext证明了其高度的数据效率，即使在小数据场景中也表现良好。我们的研究结果确立了稀疏张量网络作为从ULS进行自动化个体树木DBH估计的实用基础。",
+  "arxiv_id": "2610.37784",
+  "arxiv_url": "https://arxiv.org/abs/2610.37784v1",
+  "authors": [
+    "Clara Lößl",
+    "Fabian Ewald Fassnacht",
+    "Viacheslav Barkov"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-37784",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.398339+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.37784v1",
+  "published_at": "2026-10-27T18:05:13Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "行人",
+      "lidar",
+      "point cloud",
+      "点云",
+      "uav",
+      "无人机"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 17
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.37784v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "深度/几何",
+      "感知"
+    ]
+  },
+  "title": "Sparse tensor networks for individual tree diameter estimation in mixed forests",
+  "title_zh": "用于混合森林中个体树木直径估计的稀疏张量网络",
+  "translation_url": "https://hjfy.top/arxiv/2610.37784"
+}

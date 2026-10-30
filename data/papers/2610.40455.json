@@ -1,0 +1,64 @@
+{
+  "abstract": "Aerial imagery provides complementary spatial context for autonomous driving by exposing road structure beyond the immediate perception range of onboard sensors. Yet map construction from aerial imagery, aerial-assisted online HD mapping, and cross-view localization are typically studied on separate data and benchmarks. We introduce KITScenes Aerial, an extension of the KITScenes Multimodal dataset that augments synchronized onboard sensor data, vehicle poses, and rich Lanelet2 map annotations with spatially associated aerial imagery and higher-resolution neural representations, providing a common basis for a variety of research tasks. Our mapping evaluation focuses on all 53 KITScenes map classes across different model designs, spatial ranges, and aerial resolutions, while retaining compatibility with the widely used three-class setting. Representative baselines show that aerial context is particularly beneficial for fine-grained and extended-range mapping, more than doubling 53-class mAP at the larger mapping extent. Higher-resolution aerial imagery yields a further 4.3 mAP (+24 %) improvement, with gains extending to challenging map elements such as traffic lights. We additionally evaluate cross-view localization under geographically disjoint conditions, where an adapted fine-grained feature-matching baseline achieves a mean translation error of 5.13 m. KITScenes Aerial thus enables unified study of aerial and ground-level information across complementary mapping and localization tasks. Project page: https://kitscenes.com/aerial",
+  "abstract_zh": "空中影像通过揭示超出车载传感器即时感知范围的道路结构，为自主驾驶提供了补充的空间背景。然而，从空中影像构建地图、空中辅助在线高清地图制作以及跨视图定位通常是在不同的数据和基准上进行研究的。我们介绍了KITScenes Aerial，这是KITScenes多模态数据集的扩展，增强了同步的车载传感器数据、车辆姿态和丰富的Lanelet2地图注释，并结合了空间关联的空中影像和更高分辨率的神经表示，为各种研究任务提供了共同基础。我们的地图评估集中于53个KITScenes地图类别，涵盖不同的模型设计、空间范围和空中分辨率，同时保持与广泛使用的三类设置的兼容性。代表性的基准显示，空中背景对细粒度和扩展范围的地图制作特别有利，在更大地图范围内，53类的平均精度（mAP）提高了两倍以上。更高分辨率的空中影像进一步提高了4.3 mAP（+24%），增益扩展到交通信号灯等具有挑战性的地图元素。我们还在地理上不相交的条件下评估了跨视图定位，其中经过调整的细粒度特征匹配基准实现了5.13米的平均平移误差。因此，KITScenes Aerial使得在互补的地图制作和定位任务中统一研究空中和地面信息成为可能。项目页面：https://kitscenes.com/aerial",
+  "arxiv_id": "2610.40455",
+  "arxiv_url": "https://arxiv.org/abs/2610.40455v1",
+  "authors": [
+    "Daniel Lengerer",
+    "Richard Schwarzkopf",
+    "Jonas Merkert",
+    "Fabian Immel",
+    "Rupert Polley",
+    "Frank Bieder",
+    "Jan-Hendrik Pauls",
+    "J. Marius Zöllner",
+    "Klaus Bogenberger",
+    "Christoph Stiller",
+    "Carsten Markgraf"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-10-30#paper-2610-40455",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-10-30T11:08:05.493019+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.40455v1",
+  "published_at": "2026-10-29T17:01:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "road",
+      "驾驶",
+      "车辆",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 73
+  },
+  "seen_dates": [
+    "2026-10-30"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.40455v1",
+    "axi": "https://paper.axi404.top/daily/2026-10-30"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "地图/定位",
+    "secondary": [
+      "仿真/数据",
+      "感知"
+    ]
+  },
+  "title": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+  "title_zh": "空中增强自主驾驶的统一基准：KITScenes空中数据集",
+  "translation_url": "https://hjfy.top/arxiv/2610.40455"
+}

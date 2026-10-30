@@ -1,6 +1,395 @@
 {
-  "generated_at": "2026-10-28T10:59:10.063684+00:00",
+  "generated_at": "2026-10-30T11:11:22.197878+00:00",
   "items": [
+    {
+      "abstract": "Aerial imagery provides complementary spatial context for autonomous driving by exposing road structure beyond the immediate perception range of onboard sensors. Yet map construction from aerial imagery, aerial-assisted online HD mapping, and cross-view localization are typically studied on separate data and benchmarks. We introduce KITScenes Aerial, an extension of the KITScenes Multimodal dataset that augments synchronized onboard sensor data, vehicle poses, and rich Lanelet2 map annotations with spatially associated aerial imagery and higher-resolution neural representations, providing a common basis for a variety of research tasks. Our mapping evaluation focuses on all 53 KITScenes map classes across different model designs, spatial ranges, and aerial resolutions, while retaining compatibility with the widely used three-class setting. Representative baselines show that aerial context is particularly beneficial for fine-grained and extended-range mapping, more than doubling 53-class mAP at the larger mapping extent. Higher-resolution aerial imagery yields a further 4.3 mAP (+24 %) improvement, with gains extending to challenging map elements such as traffic lights. We additionally evaluate cross-view localization under geographically disjoint conditions, where an adapted fine-grained feature-matching baseline achieves a mean translation error of 5.13 m. KITScenes Aerial thus enables unified study of aerial and ground-level information across complementary mapping and localization tasks. Project page: https://kitscenes.com/aerial",
+      "abstract_zh": "空中影像通过揭示超出车载传感器即时感知范围的道路结构，为自主驾驶提供了补充的空间背景。然而，从空中影像构建地图、空中辅助在线高清地图制作以及跨视图定位通常是在不同的数据和基准上进行研究的。我们介绍了KITScenes Aerial，这是KITScenes多模态数据集的扩展，增强了同步的车载传感器数据、车辆姿态和丰富的Lanelet2地图注释，并结合了空间关联的空中影像和更高分辨率的神经表示，为各种研究任务提供了共同基础。我们的地图评估集中于53个KITScenes地图类别，涵盖不同的模型设计、空间范围和空中分辨率，同时保持与广泛使用的三类设置的兼容性。代表性的基准显示，空中背景对细粒度和扩展范围的地图制作特别有利，在更大地图范围内，53类的平均精度（mAP）提高了两倍以上。更高分辨率的空中影像进一步提高了4.3 mAP（+24%），增益扩展到交通信号灯等具有挑战性的地图元素。我们还在地理上不相交的条件下评估了跨视图定位，其中经过调整的细粒度特征匹配基准实现了5.13米的平均平移误差。因此，KITScenes Aerial使得在互补的地图制作和定位任务中统一研究空中和地面信息成为可能。项目页面：https://kitscenes.com/aerial",
+      "authors": [
+        "Daniel Lengerer",
+        "Richard Schwarzkopf",
+        "Jonas Merkert",
+        "Fabian Immel",
+        "Rupert Polley",
+        "Frank Bieder",
+        "Jan-Hendrik Pauls",
+        "J. Marius Zöllner",
+        "Klaus Bogenberger",
+        "Christoph Stiller",
+        "Carsten Markgraf"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.40455",
+      "tags": [
+        "地图/定位",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
+      "title_zh": "空中增强自主驾驶的统一基准：KITScenes空中数据集",
+      "url": "/daily/2026-10-30/#paper-2610-40455"
+    },
+    {
+      "abstract": "Monocular RGB tracking is useful for robots operating near people, but perception errors affect binary stop/proceed decisions in ways that geometric accuracy metrics do not capture. We examine how much decision error arises from the safety rule versus perception. We prove that lateral-only distance is a lower bound on planar distance: with accurate positions, it cannot miss dangers identified by the planar rule, but it produces unnecessary stops. We introduce a two-factor Shapley attribution separating rule and perception contributions, and further distinguish missed detections from localization errors. Experiments use ETH and UCY pedestrian videos with simulated stationary robots, disjoint calibration and evaluation pedestrians, and time-block bootstrap intervals. Across 898 pedestrians in three scenes, the lateral rule missed no dangers on annotated positions but achieved only 5.6-31.9% stop precision. In two scenes with RGB perception, calibrated ground-plane localization achieved 0.59 m and 0.51 m planar RMSE, compared with 1.72 m and 1.39 m for a geometric baseline and 0.81 m and 0.68 m for calibrated Depth Anything V2. Detection recall of 0.43 and 0.26 made missed detections the leading source of missed danger. A two-standard-deviation safety margin with ground-plane localization matched or improved on the lateral rule's missed-danger rate in all eight scene-threshold settings and reduced unnecessary stops in seven. All robot interactions are simulated, and outcomes are offline decision classifications, not demonstrations of collision avoidance.",
+      "abstract_zh": "单目RGB跟踪对于在人员附近操作的机器人非常有用，但感知错误以几何精度指标无法捕捉的方式影响二元停止/继续决策。我们研究了安全规则与感知之间产生的决策错误的程度。我们证明了仅考虑横向距离是平面距离的下限：在准确的位置下，它不会错过平面规则识别的危险，但会导致不必要的停止。我们引入了一种两因素Shapley归因方法，将规则和感知的贡献分开，并进一步区分漏检与定位错误。实验使用ETH和UCY行人视频，模拟静态机器人，分离的标定和评估行人，以及时间块自助间隔。在三个场景中对898名行人的研究表明，横向规则在标注位置上未漏检任何危险，但仅实现了5.6%-31.9%的停止精度。在两个具有RGB感知的场景中，经过标定的地面平面定位实现了0.59米和0.51米的平面均方根误差（RMSE），而几何基线为1.72米和1.39米，经过标定的Depth Anything V2为0.81米和0.68米。检测召回率为0.43和0.26，使得漏检成为漏掉危险的主要来源。使用地面平面定位的两倍标准差安全边际在所有八个场景阈值设置中匹配或改善了横向规则的漏检危险率，并在七个场景中减少了不必要的停止。所有机器人交互均为模拟，结果为离线决策分类，而非碰撞避免的演示。",
+      "authors": [
+        "Abdulahi Taiwo",
+        "Chijioke Cyriacus Ekechi"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.40199",
+      "tags": [
+        "安全/异常",
+        "感知",
+        "深度/几何"
+      ],
+      "title": "Decision-Level Error Attribution and Depth-Aware Safety Evaluation of Monocular RGB Human Tracking for Autonomous Robot Navigation",
+      "title_zh": "单目RGB人类跟踪的决策级错误归因与深度感知安全评估在自主机器人导航中的应用",
+      "url": "/daily/2026-10-30/#paper-2610-40199"
+    },
+    {
+      "abstract": "Efficient crowd navigation requires anticipating dynamic collision-free space without relying on fragile object tracking. We propose the Don't Risk It Planner (DRIP), an end-to-end LiDAR-only planning framework that couples occupancy forecasting with trajectory-conditioned clearance and uncertainty estimation. Operating directly on LiDAR-derived occupancy grid histories, DRIP predicts a distribution over minimum robot-obstacle clearance for candidate control sequences to evaluate collision risk. The model is trained using a risk cost that grounds predictive uncertainty directly in empirical collision outcomes rather than geometric regression alone. In closed-loop experiments with up to 45 pedestrians, DRIP achieves higher success rates with fewer collisions and reduced freezing behavior compared to state-of-the-art baselines.",
+      "abstract_zh": "高效的人群导航需要在不依赖脆弱的物体跟踪的情况下，预测动态的无碰撞空间。我们提出了“别冒险规划器”（Don't Risk It Planner，DRIP），这是一个端到端的仅基于LiDAR的规划框架，它将占用预测与轨迹条件的间隙和不确定性估计相结合。DRIP直接在LiDAR生成的占用网格历史上运行，预测候选控制序列的最小机器人-障碍物间隙的分布，以评估碰撞风险。该模型的训练使用了一种风险成本，该成本将预测不确定性直接与经验碰撞结果关联，而不仅仅是几何回归。在与多达45名行人的闭环实验中，DRIP相比于最先进的基线方法，取得了更高的成功率，减少了碰撞次数，并降低了停滞行为。",
+      "authors": [
+        "Mathai Mathew Pulicken",
+        "Laksh Nanwani",
+        "Basant Sharma",
+        "Phani Teja Singamaneni",
+        "Arun Kumar Singh",
+        "K. Madhava Krishna"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.40050",
+      "tags": [
+        "预测/规划",
+        "BEV/Occupancy",
+        "端到端驾驶"
+      ],
+      "title": "Don't Risk It!: Trajectory-Conditioned Distributional Risk for LiDAR-Only Crowd Navigation",
+      "title_zh": "别冒险！：基于轨迹条件的分布式风险用于仅依赖LiDAR的人群导航",
+      "url": "/daily/2026-10-30/#paper-2610-40050"
+    },
+    {
+      "abstract": "Reasoning vision-language-action (VLA) policies write a reasoning trace and then decode the action from it. A wrong trace yields a wrong action, and even a correct-looking trace can mislead the plan. Existing remedies ask whether the reasoning is right. We ask how strongly it should steer. CoC-CFG applies classifier-free guidance between the policy's context and the same context without the reasoning span. One weight per Euler step attenuates or amplifies the reasoning, and w=1 recovers the original policy. We treat the choice of this weight as a Markov decision process whose action values are measured, not bootstrapped. With the expert frozen and the noise fixed, applying a weight for one step and finishing the plan under the current controller returns that weight's value exactly. Q-adaptive guidance fits these values with small critics and improves the controller conservatively. In the Alpasim driving simulator it outperforms every fixed weight and online RL (SAC, GRPO) in open loop, and in closed loop it passes 262 of 300 scenes, against 252 for the original policy. On held-out frames of the Waymo end-to-end driving benchmark, its first three stages outperform every fixed weight, four adaptive-guidance methods, SAC and GRPO. On the hidden test set, a frozen Alpamayo 1.5 with rule-based camera and vehicle conversions and Q-adaptive guidance sets a new state of the art among published methods: 8.135159 rater feedback score, against 8.079 for the best published method.",
+      "abstract_zh": "推理视觉-语言-行动（VLA）策略编写推理轨迹，然后从中解码行动。错误的轨迹会导致错误的行动，即使是看似正确的轨迹也可能误导计划。现有的补救措施关注推理是否正确，而我们关注推理应该多强地引导。CoC-CFG 在策略的上下文与没有推理跨度的相同上下文之间应用无分类器指导。每个欧拉步骤的一个权重会减弱或增强推理，w=1 恢复原始策略。我们将这个权重的选择视为一个马尔可夫决策过程，其行动价值是测量的，而不是自举的。在专家被冻结且噪声固定的情况下，为一步应用一个权重并在当前控制器下完成计划，正好返回该权重的值。Q 自适应指导使用小型评论者拟合这些值，并保守地改善控制器。在 Alpasim 驾驶模拟器中，它在开环中优于每个固定权重和在线强化学习（SAC, GRPO），在闭环中通过了 300 个场景中的 262 个，而原始策略通过了 252 个。在 Waymo 端到端驾驶基准的保留帧上，其前三个阶段优于每个固定权重、四种自适应指导方法、SAC 和 GRPO。在隐藏测试集中，一个冻结的 Alpamayo 1.5 配合基于规则的相机和车辆转换以及 Q 自适应指导在已发布方法中设定了新的最优状态：8.135159 的反馈评分，优于最佳已发布方法的 8.079。",
+      "authors": [
+        "Dabin Seo",
+        "Eunhyek Joa"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.40002",
+      "tags": [
+        "VLM/VLA",
+        "端到端驾驶",
+        "预测/规划"
+      ],
+      "title": "How Much Should a VLA Trust Its Reasoning? Step-Level Guidance as a Measured Action-Value Function",
+      "title_zh": "VLA 应该多大程度上信任其推理？逐步指导作为一种测量的行动价值函数",
+      "url": "/daily/2026-10-30/#paper-2610-40002"
+    },
+    {
+      "abstract": "Segmentation networks that predict at an output stride are trained against label maps downsampled by strided sampling, nearest-neighbor resampling or majority pooling. These methods label each coarse grid cell on its own, so a region that wins no cell is absent from the target and receives no positive label. We present MatchDown, which builds the coarse target from a minimum-cost matching between regions and the grid cells they occupy. It keeps as many regions as any one-region-per-cell target can, certifies how many losses are unavoidable, and with priority tiers (MatchDown-P) keeps every evaluated region (a region that a metric scores) of at least one cell's area. On COCO, Cityscapes and BBBC038 at factors 2 to 16, MatchDown-P loses exactly the minimum number of regions, whereas the downsampling used by StarDist, nnU-Net and connectomics pyramids loses four to five times as many on COCO at factor 8. Keeping a region in the target and reconstructing its shape are different problems: we show that no region lost by majority pooling can be reconstructed above IoU 0.5 by upsampling any coarse target, yet on BBBC038 a star-convex head trained on MatchDown targets segments 35% of the nuclei that majority pooling loses above IoU 0.5, against 15% when trained on majority targets and 24% on StarDist's strided target. On two nucleus datasets, with thresholds cross-validated for count error, this head has instance accuracy at IoU 0.5 (Acc50) 2.6 to 4.2 points above the strided target and at most 2.8 points below cell-center sampling, and a lower count error than the strided and cell-center targets on BBBC039. On BBBC039, an affinity head, which outputs one label per cell, lowers count error relative to majority targets by 9.3 nuclei per image at 7.2 points lower Acc50. MatchDown runs once, before training, in place of the label-downsampling step.",
+      "abstract_zh": "预测输出步幅的分割网络是针对通过步幅采样、最近邻重采样或多数池化下采样的标签图进行训练的。这些方法单独为每个粗网格单元标记，因此未在任何单元中获胜的区域在目标中缺失，并且没有获得正标签。我们提出了MatchDown，它通过区域与其占据的网格单元之间的最小成本匹配来构建粗略目标。它保留了尽可能多的区域，确保不可避免的损失数量，并通过优先级层（MatchDown-P）保留每个评估区域（一个指标评分的区域）至少一个单元的面积。在COCO、Cityscapes和BBBC038数据集上，MatchDown-P恰好损失了最少数量的区域，而StarDist、nnU-Net和连接主义金字塔所使用的下采样在COCO上以因子8损失了四到五倍的区域。将区域保留在目标中和重建其形状是不同的问题：我们展示了通过上采样任何粗略目标，无法重建多数池化损失的区域的IoU超过0.5，然而在BBBC038上，基于MatchDown目标训练的星状凸头部能够分割35%的细胞核，而多数池化损失的IoU超过0.5，仅为15%，而基于StarDist的步幅目标为24%。在两个细胞核数据集上，经过交叉验证的阈值用于计数误差，该头部在IoU 0.5（Acc50）下的实例准确率比步幅目标高出2.6到4.2个百分点，比细胞中心采样低最多2.8个百分点，并且在BBBC039上计数误差低于步幅和细胞中心目标。在BBBC039上，输出每个单元一个标签的亲和头部相对于多数目标降低了每幅图像9.3个细胞核的计数误差，Acc50低7.2个百分点。MatchDown在训练之前运行一次，取代标签下采样步骤。",
+      "authors": [
+        "Zhiyuan Zhang",
+        "Yukun Ou",
+        "San Tek Choi"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.39880",
+      "tags": [
+        "感知",
+        "仿真/数据",
+        "深度/几何"
+      ],
+      "title": "What Survives Label Downsampling? Exact Region Survival for Coarse Segmentation Targets",
+      "title_zh": "标签下采样后存活了什么？粗略分割目标的精确区域存活",
+      "url": "/daily/2026-10-30/#paper-2610-39880"
+    },
+    {
+      "abstract": "LiDAR-based 3D perception underpins autonomous driving and robotics, yet deploying these models safely requires stress-testing them against adversarial inputs before real-world use. Although state-of-the-art adversarial attacks exist, their implementations are often fragmented across individual repositories, each tied to a specific architecture or task and requiring manual environment reconstruction and model-specific integration code. We present LIDARSHIELD, a unified and fully Dockerized framework that reverses this workflow: rather than installing the target model inside the toolkit, LIDARSHIELD exposes any model through three lightweight HTTP endpoints, namely /info, /forward, and /gradient As a result, connecting a new model or dataset requires only a single loader function or adapter. The framework supports both 3D semantic segmentation and 3D object detection through the same engine-service protocol, integrating a task-aware suite of state-of-the-art attacks, including PGD and Square Attack for segmentation, and point perturbation, point removal, point injection, and LiDAttack for detection. This enables systematic exposure of corner cases and vulnerabilities across heterogeneous LiDAR backbones. The LiDAR-Shield codebase is publicly available at https://github.com/alexandrosgk/LiDAR-shield.",
+      "abstract_zh": "基于LiDAR的3D感知是自动驾驶和机器人技术的基础，但在实际使用之前，安全部署这些模型需要对其进行对抗输入的压力测试。尽管存在最先进的对抗攻击，但其实现通常分散在各个独立的代码库中，每个库都与特定的架构或任务相关，并且需要手动重建环境和特定于模型的集成代码。我们提出了LIDARSHIELD，一个统一且完全Docker化的框架，逆转了这一工作流程：LIDARSHIELD通过三个轻量级的HTTP端点（即/info、/forward和/gradient）暴露任何模型，而不是将目标模型安装在工具包内。因此，连接新模型或数据集只需一个加载函数或适配器。该框架通过相同的引擎服务协议支持3D语义分割和3D目标检测，集成了一套任务感知的最先进攻击，包括用于分割的PGD和Square Attack，以及用于检测的点扰动、点移除、点注入和LiDAttack。这使得系统地暴露异构LiDAR骨干网络中的边界情况和脆弱性成为可能。LiDAR-Shield代码库已公开发布在https://github.com/alexandrosgk/LiDAR-shield。",
+      "authors": [
+        "Alexandros Gkillas",
+        "Ioulia Kapsali",
+        "Christos Anagnostopoulos",
+        "Aris S. Lalos"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.39848",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "仿真/数据"
+      ],
+      "title": "LiDAR-SHIELD: A Fully Dockerized Adversarial Robustness Assessment Framework for LiDAR-Based 3D Perception Models",
+      "title_zh": "LiDAR-SHIELD：一个完全Docker化的对抗鲁棒性评估框架，用于基于LiDAR的3D感知模型",
+      "url": "/daily/2026-10-30/#paper-2610-39848"
+    },
+    {
+      "abstract": "Artificial intelligence for science (AI4S) is extending from interpretation of existing data to the design and execution of experiments. Space offers distinctive scientific opportunities while restricting physical support. Microgravity and extraterrestrial environments expose phenomena that terrestrial experiments cannot fully reproduce; finite samples, constrained resources, and limited opportunities for intervention complicate sustained investigation. This critical review examines orbital laboratories and planetary in situ science across biology, materials, fluid and thermal physics, and adaptive exploration. We distinguish learning from space-derived data, selecting scientific actions, executing them, and preserving experimental validity. Terrestrial self-driving laboratories provide complementary evidence on optimization, dedicated automation, robotic manipulation, and the support needed for unattended operation. The synthesis connects scientific gains already demonstrated by bounded AI systems to gaps in observation, executable actions, and continuity of valid evidence. Space robots can expand the attainable scope of autonomous science when necessary interventions exceed validated instrument capabilities and timely human support is unavailable. Their value must be established against dedicated mechanisms, redundancy, and human-supported operation. We develop a framework connecting sample history, scientific decisions, physical execution, and claim-specific validity. A worked orbital design, a planetary extension, and matched evaluation schemes separate the contributions of sensing, decision policies, and physical actions. The resulting agenda measures autonomy through valid scientific return, task coverage, intervention costs, and evidence integrity across complete campaigns.",
+      "abstract_zh": "面向科学的人工智能（AI4S）正在从对现有数据的解释扩展到实验的设计和执行。太空提供了独特的科学机会，但同时限制了物理支持。微重力和外星环境揭示了地球实验无法完全重现的现象；有限的样本、受限的资源以及干预机会的有限性使得持续调查变得复杂。本文对轨道实验室和行星原位科学进行了关键性回顾，涵盖生物学、材料学、流体与热物理学以及自适应探索。我们区分了从太空衍生数据中学习、选择科学行动、执行这些行动以及保持实验有效性。地面自驾实验室提供了关于优化、专用自动化、机器人操作和无人操作所需支持的补充证据。该综合体将已经由有限的人工智能系统展示的科学收益与观察、可执行行动和有效证据的连续性之间的差距联系起来。当必要的干预超出验证仪器的能力且及时的人类支持不可用时，太空机器人可以扩展自主科学的可达范围。它们的价值必须与专用机制、冗余和人类支持的操作进行比较。我们开发了一个框架，将样本历史、科学决策、物理执行和特定主张的有效性联系起来。一个经过设计的轨道实验方案、一个行星扩展和匹配的评估方案将传感、决策政策和物理行动的贡献分开。最终的议程通过有效的科学回报、任务覆盖、干预成本和完整活动中的证据完整性来衡量自主性。",
+      "authors": [
+        "Zizhe Wang",
+        "Jia Deng",
+        "Xin Lu",
+        "Zehao Jia",
+        "Yi Huang",
+        "Yao Zhu",
+        "Jianing Li"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.39689",
+      "tags": [
+        "感知"
+      ],
+      "title": "AI for Science in Space: Orbital Laboratories, Planetary Fieldwork, and Embodied Autonomy",
+      "title_zh": "太空科学中的人工智能：轨道实验室、行星现场工作与具身自主性",
+      "url": "/daily/2026-10-30/#paper-2610-39689"
+    },
+    {
+      "abstract": "Learning-enabled cyber-physical systems (CPS), including autonomous vehicles and UAVs, increasingly incorporate foundation models, yet fragmented assurance practices provide insufficient support for system-level guarantees. We argue that restoring engineering control across stochastic neural, symbolic, and physical boundaries requires a shift from model-centric evaluation to system-level assurance. We introduce the Foundation Model Assurance Stack, connecting three directions: (i) neuro-symbolic architectures that constrain foundation models through explicit symbolic world models, reasoning layers, and interfaces; (ii) semantically grounded, conformance-based testing that combines formal specifications and symbolic world models with foundation-model-assisted specification mining, scenario generation, and test synthesis; and (iii) compositional verification and runtime assurance that target formally tractable components and interfaces through modular contracts, equivalence checking, verified synthesis, uncertainty-aware reasoning, and runtime monitoring and enforcement. Symbolic abstractions establish assurance boundaries between stochastic learning and formal reasoning, connecting testing, verification, and runtime evidence across the system lifecycle. Foundation models serve as constrained assistants whose outputs are independently checked wherever correctness can be formally specified. We identify research challenges in specification engineering, abstraction fidelity, evidence composition, and lifecycle certification, and outline a staged agenda toward trustworthy, deployable, and certifiable learning-enabled CPS.",
+      "abstract_zh": "学习驱动的网络物理系统（CPS），包括自主车辆和无人机，越来越多地融入基础模型，但零散的保证实践对系统级保证的支持不足。我们认为，恢复在随机神经、符号和物理边界之间的工程控制需要从以模型为中心的评估转向系统级保证。我们提出了基础模型保证堆栈，连接三个方向：（i）通过显式的符号世界模型、推理层和接口来约束基础模型的神经符号架构；（ii）基于语义的符合性测试，结合形式规范和符号世界模型，以及基础模型辅助的规范挖掘、场景生成和测试合成；（iii）目标明确的组合验证和运行时保证，通过模块化合同、等价性检查、验证合成、不确定性感知推理以及运行时监控和执行，针对形式可处理的组件和接口。符号抽象在随机学习和形式推理之间建立了保证边界，连接了系统生命周期中的测试、验证和运行时证据。基础模型作为受限助手，其输出在可以形式化指定正确性的地方进行独立检查。我们识别了在规范工程、抽象保真度、证据组合和生命周期认证方面的研究挑战，并概述了朝向可信、可部署和可认证的学习驱动CPS的分阶段议程。",
+      "authors": [
+        "Xi Zheng",
+        "Ivan Ruchkin",
+        "Hong Jin Kang",
+        "Tevfik Bultan",
+        "Vijay Ganesh",
+        "Taylor T. Johnson",
+        "Ziyang Li",
+        "Lei Ma",
+        "Aloysius K. Mok",
+        "Daniel Neider",
+        "Ruzica Piskac",
+        "Nalini Venkatasubramanian",
+        "Simon Thompson",
+        "Sanjoy Baruah"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.39547",
+      "tags": [
+        "世界模型/生成",
+        "感知"
+      ],
+      "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
+      "title_zh": "利用基础模型确保学习驱动的网络物理系统：测试、验证和运行时保证的神经符号议程",
+      "url": "/daily/2026-10-30/#paper-2610-39547"
+    },
+    {
+      "abstract": "We study domain generalization for LIDAR semantic segmentation. Deep neural networks achieve strong performance on 3D point clouds, yet real-world LIDAR exhibits sensor-specific sampling patterns that hinder transfer across datasets. In many applications, performance on completely unseen sensors is crucial. A model should preferably work on a new setup without prior access to its data or labels. To this end, we introduce a source-only training scheme that adds an occupancy prediction auxiliary objective. We aggregate source-domain scans into a simple world model and use it as the supervision signal, replacing single-scan standard segmentation training. A key property of our approach is that it does not alter the input scan. During training and testing the network consumes the same single-frame LIDAR input, only the supervision signal is enriched via the occupancy objective. At deployment, there is no runtime overhead as the auxiliary head can be dropped for pure segmentation, or kept to obtain scene completion alongside semantic segmentation. In an experimental evaluation across distinct LIDAR datasets, we demonstrate that a model's generalization to new domains can be significantly affected by how it is supervised. In certain setups, performance on unseen domains improves without any explicit domain adaptation (no target scans, no target labels, no sensor priors) and without prediction refinement. At the same time, our method maintains competitive source-domain segmentation performance and incurs no additional inference cost.",
+      "abstract_zh": "我们研究了激光雷达语义分割的领域泛化问题。深度神经网络在3D点云上表现出强大的性能，但现实世界中的激光雷达展现出特定传感器的采样模式，这阻碍了跨数据集的迁移。在许多应用中，对完全未见过的传感器的性能至关重要。理想情况下，模型应在没有先前访问其数据或标签的情况下在新的设置上工作。为此，我们提出了一种仅源训练方案，增加了占用预测的辅助目标。我们将源域扫描聚合成一个简单的世界模型，并将其作为监督信号，替代单扫描标准分割训练。我们方法的一个关键特性是它不改变输入扫描。在训练和测试过程中，网络消耗相同的单帧激光雷达输入，只有监督信号通过占用目标得到了增强。在部署时，没有运行时开销，因为辅助头可以去掉以进行纯分割，或者保留以获得场景补全和语义分割。在对不同激光雷达数据集的实验评估中，我们证明了模型对新领域的泛化能力可以显著受到监督方式的影响。在某些设置中，对未见领域的性能在没有任何显式领域适应（没有目标扫描、没有目标标签、没有传感器先验）和没有预测精炼的情况下得到了改善。同时，我们的方法保持了竞争性的源域分割性能，并且没有额外的推理成本。",
+      "authors": [
+        "Christoph B Rist",
+        "Larissa T Triess",
+        "Markus Enzweiler",
+        "Dariu M Gavrila"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.39516",
+      "tags": [
+        "LiDAR/点云",
+        "感知",
+        "BEV/Occupancy"
+      ],
+      "title": "Robust LIDAR Sensor-to-Sensor Domain Generalization via Accumulated-Point Scene Completion",
+      "title_zh": "通过累积点场景补全实现稳健的激光雷达传感器间领域泛化",
+      "url": "/daily/2026-10-30/#paper-2610-39516"
+    },
+    {
+      "abstract": "Intermediate-fusion cooperative perception lets a vehicle detect objects beyond its own field of view by fusing features shared by nearby agents. When only a collaborator's cameras are degraded by fog, motion blur or exposure errors, the features it shares drift away from the training distribution while the ego input stays clean, and cooperation can become worse than not cooperating at all. Test-time batch-normalization adaptation, the standard training-free remedy, estimates statistics over the pooled batch of all agents and therefore normalizes both the clean ego and the corrupted collaborator with a mixture of two distributions. We show that this mixing harms even the clean ego: when the ego shares BN statistics with a corrupted collaborator, its detection from its own features drops by 3.58 to 6.68 [email protected] points although its cameras are untouched. We propose AgentNorm, an agent-wise test-time normalization that i) estimates the normalization statistics of every collaborator from its own current observation and ii) anchors the ego to its source statistics, so that the ego path remains exactly the original model. AgentNorm has no learnable parameters, needs no gradients or labels, is independent of the order of test frames, and runs locally on each agent without changing the transmitted features. On camera-based OPV2V with four fusion checkpoints and collaborator-only corruptions, AgentNorm raises [email protected] under severity-5 fog from 29.42-37.25 to 43.32-58.86 and outperforms pooled normalization by 5.53-12.94 points under fog and motion blur, at an extra latency of 2.3 ms per frame. On the real-world DAIR-V2X-C dataset, it outperforms pooled normalization in all ten infrastructure-corruption settings. We also report the cases it does not fix: occlusion, which removes image content rather than shifting feature statistics, and the case in which all agents share the same shift.",
+      "abstract_zh": "中间融合的协作感知使得车辆能够通过融合附近代理共享的特征来检测超出其自身视野的物体。当只有协作伙伴的相机受到雾霾、运动模糊或曝光错误的影响时，它共享的特征会偏离训练分布，而自我输入保持清晰，合作的效果可能会比不合作更糟。测试时批量归一化适应（test-time batch-normalization adaptation）作为一种标准的无训练补救措施，通过对所有代理的汇总批次估计统计数据，从而用两种分布的混合来归一化清晰的自我输入和受损的协作伙伴。我们展示了这种混合对清晰的自我输入也有害：当自我输入与受损的协作伙伴共享批量归一化统计时，尽管其相机未受影响，其基于自身特征的检测性能下降了3.58到6.68 [email protected] 点。我们提出了AgentNorm，一种代理级测试时归一化方法，它i) 从每个协作伙伴当前的观察中估计归一化统计数据，ii) 将自我输入锚定到其源统计数据，从而使自我路径保持与原始模型完全一致。AgentNorm没有可学习的参数，不需要梯度或标签，独立于测试帧的顺序，并且在每个代理上本地运行而不改变传输的特征。在基于相机的OPV2V中，使用四个融合检查点和仅协作伙伴的损坏情况下，AgentNorm在严重程度为5的雾霾下将 [email protected] 从29.42-37.25提高到43.32-58.86，并在雾霾和运动模糊下比汇总归一化提高了5.53-12.94点，额外延迟为每帧2.3毫秒。在真实世界的DAIR-V2X-C数据集上，它在所有十种基础设施损坏设置中均优于汇总归一化。我们还报告了它未能修复的情况：遮挡，这会移除图像内容而不是移动特征统计，以及所有代理共享相同偏移的情况。",
+      "authors": [
+        "Yu Wang",
+        "Shaohua Wang",
+        "Yicheng Li",
+        "Kecheng Sun"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.39505",
+      "tags": [
+        "感知",
+        "协同/V2X",
+        "仿真/数据"
+      ],
+      "title": "Agent-Wise Test-Time Normalization for Camera-Based Cooperative Perception with Corrupted Collaborators",
+      "title_zh": "针对受损协作伙伴的基于相机的协同感知的代理级测试时归一化",
+      "url": "/daily/2026-10-30/#paper-2610-39505"
+    },
+    {
+      "abstract": "Online vectorized map construction provides autonomous vehicles with essential, real-time semantic and geometric scene understanding. While leveraging prior maps presents an opportunity to improve accuracy, they are often biased due to outdated information or temporary road changes. Existing methods, which typically treat priors as fully reliable or only consider limited noise patterns, suffer severe performance degradation when these priors are imperfect. To address this, we propose PriorMaskMap, a robust framework for prior-guided vectorized map construction. Its first innovation is a Prior-Aware Confidence Estimator (PACE) that evaluates the input rasterized map against current visual observations. It assigns confidence scores to regions classified as reliable, erroneous, or blank, creating a foundational mask that guides two subsequent branches. In one branch, the Dual-Prior Query Generator (DPQG) selectively filters and embeds both rasterized and vectorized priors to initialize informative queries from trustworthy map structures. In the other, the Confidence-Guided Prior Fusion (CGPF) module spatially propagates and refines the mask, using the refined version to govern the fusion of BEV features with the prior map, thereby providing rich contextual representations for the map decoder. Evaluation on the nuScenes dataset shows that PriorMaskMap achieves superior mapping precision over existing approaches and exhibits marked robustness when provided with priors containing apparent errors. Our code is released at https://github.com/healenrens/PriorMaskMap.",
+      "abstract_zh": "在线矢量地图构建为自主车辆提供了必要的实时语义和几何场景理解。虽然利用先验地图有助于提高准确性，但由于信息过时或临时道路变化，它们往往存在偏差。现有方法通常将先验视为完全可靠，或仅考虑有限的噪声模式，当这些先验不完美时，性能会严重下降。为了解决这一问题，我们提出了PriorMaskMap，一个基于先验指导的鲁棒矢量地图构建框架。其首个创新是先验感知置信度估计器（Prior-Aware Confidence Estimator，PACE），该估计器根据当前视觉观测评估输入的光栅化地图。它为被分类为可靠、错误或空白的区域分配置信度分数，创建一个基础掩模以指导后续的两个分支。在一个分支中，双先验查询生成器（Dual-Prior Query Generator，DPQG）选择性地过滤并嵌入光栅化和矢量化的先验，以从可信的地图结构初始化信息丰富的查询。在另一个分支中，置信度引导的先验融合模块（Confidence-Guided Prior Fusion，CGPF）在空间上传播和细化掩模，使用细化后的版本来指导BEV特征与先验地图的融合，从而为地图解码器提供丰富的上下文表示。在nuScenes数据集上的评估表明，PriorMaskMap在地图精度上优于现有方法，并在提供明显错误的先验时表现出显著的鲁棒性。我们的代码已发布在 https://github.com/healenrens/PriorMaskMap。",
+      "authors": [
+        "Haoming Xu",
+        "Wei Li",
+        "Yu Hu"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.39283",
+      "tags": [
+        "地图/定位",
+        "仿真/数据",
+        "感知"
+      ],
+      "title": "PriorMaskMap: Robust Online Vectorized Map Construction with Biased Priors",
+      "title_zh": "PriorMaskMap：基于偏置先验的鲁棒在线矢量地图构建",
+      "url": "/daily/2026-10-30/#paper-2610-39283"
+    },
+    {
+      "abstract": "Tracked vehicles are widely used in off-road applications, but their conventional motion models often rely on no-slip assumptions that become inaccurate on low-adherence surfaces. Rather than treating inertial effects arising from slip as a disturbance to be minimized, this work investigates how inertial effects arising from a moving mass can be deliberately exploited for steering on low-friction surfaces. A dynamic model for an articulated tracked vehicle with a passive trailer is developed, allowing inertial effects from trailer motion to be captured. The approach is experimentally evaluated on ice, where our dynamic model outperforms the kinematic baseline. We also propose a mixed dynamic-kinematic model to adapt predictions to both surface and situation by exploiting predictions from both methods. Finally, we demonstrate inertial steering on a mono-track vehicle without a conventional steering mechanism, showing that controlled movements of an internal mass can generate turning motion on ice. The resulting behavior can be predicted using the proposed dynamic model by representing the internal mass as a frictionless trailer, revealing the analogous dynamics between the two configurations. These results demonstrate the feasibility of inertial steering as an alternative steering mechanism for tracked vehicles operating in low-adherence environments.",
+      "abstract_zh": "履带车辆广泛应用于越野场景，但其传统运动模型通常依赖于无滑移假设，这在低附着力表面上变得不准确。本研究并未将因滑移产生的惯性效应视为需最小化的干扰，而是探讨如何故意利用来自运动质量的惯性效应在低摩擦表面上进行转向。我们开发了一种具有被动拖车的关节式履带车辆的动态模型，以捕捉拖车运动带来的惯性效应。该方法在冰面上进行了实验评估，结果表明我们的动态模型优于运动学基线。我们还提出了一种混合动态-运动学模型，通过利用两种方法的预测，来适应不同的表面和情境。最后，我们展示了一种在没有传统转向机制的单轨车辆上进行的惯性转向，表明内部质量的受控运动可以在冰面上产生转向运动。通过将内部质量表示为无摩擦拖车，所产生的行为可以使用所提出的动态模型进行预测，揭示了两种配置之间的相似动力学。这些结果证明了惯性转向作为在低附着力环境中操作的履带车辆的一种替代转向机制的可行性。",
+      "authors": [
+        "Mathis Turgeon-Roy",
+        "Mohamed Ounally",
+        "Veronica Vannini",
+        "Olivier Roy",
+        "François Pomerleau"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.38888",
+      "tags": [
+        "预测/规划"
+      ],
+      "title": "Inertial Steering and Motion Prediction of Tracked Vehicles on Low-Adherence Surfaces",
+      "title_zh": "低附着力表面上履带车辆的惯性转向与运动预测",
+      "url": "/daily/2026-10-30/#paper-2610-38888"
+    },
+    {
+      "abstract": "Autonomous navigation in off-road terrain is commonly achieved using hierarchical control and planning architectures that rely on explicit cost maps and one-way information flow from a high-level planner to a low-level controller, decoupling planning from the true execution cost experienced during control. We propose a hierarchical planning and control framework in which information flows bidirectionally, allowing the low-level controller to guide trajectory selection at the planning level. The highest level of the hierarchy is a Model Predictive Path Integral (MPPI) control-style planner that determines optimal trajectories and passes these waypoints to a pretrained low-level reinforcement learning (RL) controller. Rather than drawing from an explicit cost map, our MPPI planner leverages the value function of the RL controller as an implicit cost representation. In this formulation, MPPI serves as a trajectory exploration mechanism, while the low-level controller's value function guides the search. To account for the distribution shift seen by the value function between training and evaluation, we propose an online policy evaluation process that adapts the value function to unseen driving experiences, and we demonstrate this adaptation in unseen off-road simulation environments. We evaluate our approach in a high-fidelity off-road driving simulator across a range of challenging terrain conditions and compare its performance against a baseline MPPI controller. The results demonstrate that our method achieves safer and more effective navigation to goal locations while eliminating the need for explicit cost maps and enabling tighter coupling between planning and control.",
+      "abstract_zh": "在越野地形中的自主导航通常采用层次控制和规划架构，这些架构依赖于明确的成本地图以及从高层规划者到低层控制器的单向信息流，从而将规划与控制过程中实际经历的执行成本解耦。我们提出了一种层次规划与控制框架，其中信息双向流动，允许低层控制器在规划层面引导轨迹选择。层次结构的最高层是一个模型预测路径积分（Model Predictive Path Integral, MPPI）控制风格的规划器，它确定最佳轨迹并将这些路径点传递给预训练的低层强化学习（Reinforcement Learning, RL）控制器。我们的MPPI规划器并不是从明确的成本地图中获取信息，而是利用RL控制器的价值函数作为隐式成本表示。在这种表述中，MPPI充当轨迹探索机制，而低层控制器的价值函数则引导搜索。为了考虑训练与评估之间价值函数所见的分布变化，我们提出了一种在线策略评估过程，该过程将价值函数适应于未见的驾驶经验，并在未见的越野仿真环境中展示了这种适应性。我们在高保真越野驾驶模拟器中评估了我们的方法，涵盖了一系列具有挑战性的地形条件，并将其性能与基线MPPI控制器进行了比较。结果表明，我们的方法在实现更安全、更有效的目标位置导航的同时，消除了对明确成本地图的需求，并实现了规划与控制之间的更紧密耦合。",
+      "authors": [
+        "Anoushka Alavilli",
+        "Raymond Song",
+        "Guanya Shi",
+        "Jeff Schneider"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.38731",
+      "tags": [
+        "预测/规划"
+      ],
+      "title": "Value Function-Guided MPPI for Hierarchical Planning and Control in Off-Road Autonomous Navigation",
+      "title_zh": "基于价值函数引导的MPPI在越野自主导航中的层次规划与控制",
+      "url": "/daily/2026-10-30/#paper-2610-38731"
+    },
+    {
+      "abstract": "Reliable perception is essential to intelligent transportation systems, yet deep neural networks can silently miss safety-critical objects while continuing to produce apparently plausible outputs. Existing run-time monitors for 3D object detection generally assess each frame independently and therefore cannot exploit the temporal evolution of occlusion, point sparsity, and scene complexity. We present TRIM, a lightweight temporal monitor that detects missed-object failures without modifying or retraining the underlying detector. TRIM summarises intermediate activations using compact channel-wise statistics and processes short sequences of these summaries with a temporal convolutional network. Experiments on NuScenes show that temporal monitoring improves AUROC from 0.686 to 0.704 and reduces the false alarm rate at 95% recall from 0.818 to 0.759 compared with single-frame monitoring. Early and intermediate backbone features provide the strongest monitoring signal, while the temporal inference head requires only 0.159 ms on a CPU.",
+      "abstract_zh": "可靠的感知对于智能交通系统至关重要，然而深度神经网络可能在未发出警告的情况下错过安全关键物体，同时继续产生看似合理的输出。现有的3D物体检测运行时监控通常独立评估每一帧，因此无法利用遮挡、点稀疏和场景复杂性的时间演变。我们提出了TRIM，一种轻量级的时间监控器，可以在不修改或重新训练基础检测器的情况下检测漏检物体的失败。TRIM通过紧凑的通道统计信息总结中间激活，并使用时间卷积网络处理这些摘要的短序列。在NuScenes上的实验表明，与单帧监控相比，时间监控将AUROC从0.686提高到0.704，并将95%召回率下的误报率从0.818降低到0.759。早期和中间的主干特征提供了最强的监控信号，而时间推理头在CPU上仅需0.159毫秒。",
+      "authors": [
+        "Hakan Yekta Yatbaz",
+        "Konstantinos Koufos",
+        "Mehrdad Dianati"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.38613",
+      "tags": [
+        "感知",
+        "安全/异常",
+        "3D 检测"
+      ],
+      "title": "TRIM: Temporal Run-Time Monitoring of 3D Object Detection via Activation Statistics",
+      "title_zh": "TRIM：基于激活统计的3D物体检测的时间运行监控",
+      "url": "/daily/2026-10-30/#paper-2610-38613"
+    },
+    {
+      "abstract": "Real-world deployment of computer vision models, particularly in outdoor scenarios, is often limited by environmental interferences, such as adverse weather. Improving model robustness across weather conditions is thus critical for reliability. However, sourcing high-quality data relevant to isolated weather effects is a significant challenge. Most datasets include changes in dynamic elements across observations of the same scene: subjects such as pedestrians and vehicles change between shots, while camera viewpoints vary. These aspects make it difficult to decouple solely weather-induced distribution shifts from the scene. In this work, we address this with a novel weather synthesis framework that utilizes structure-retaining Low-Rank Adapters (LoRA). We analyze the attention blocks in Stable Diffusion XL (SDXL) and identify where relevant structural information is mostly processed during image-to-image translation. Through an architectural analysis of SDXL, we learn structural LoRA matrices for the corresponding blocks and then leverage them for weather synthesis, eliminating the need for external conditioning such as ControlNet. Experimental results demonstrate that our method improves upon existing synthesis approaches, achieving greater realism while preserving structure. This provides a robust pipeline for generating high-fidelity training and evaluation data for outdoor computer vision applications.",
+      "abstract_zh": "计算机视觉模型在现实世界中的部署，尤其是在户外场景中，常常受到环境干扰的限制，例如恶劣天气。因此，提高模型在不同天气条件下的鲁棒性对于可靠性至关重要。然而，获取与孤立天气效应相关的高质量数据是一个重大挑战。大多数数据集包含同一场景观察中动态元素的变化：行人和车辆等主体在镜头之间发生变化，同时相机视角也不同。这些因素使得仅仅从场景中解耦出天气引起的分布变化变得困难。在本研究中，我们提出了一种新颖的天气合成框架，利用保留结构的低秩适配器（Low-Rank Adapters, LoRA）。我们分析了稳定扩散XL（Stable Diffusion XL, SDXL）中的注意力模块，并识别出在图像到图像转换过程中相关结构信息主要处理的位置。通过对SDXL的架构分析，我们为相应模块学习了结构化的LoRA矩阵，并利用它们进行天气合成，消除了对外部条件（如ControlNet）的需求。实验结果表明，我们的方法在现有合成方法的基础上有所改进，达到了更高的真实感，同时保留了结构。这为生成高保真度的户外计算机视觉应用的训练和评估数据提供了一个稳健的流程。",
+      "authors": [
+        "Shunxin Wang",
+        "Alexandros Stergiou",
+        "Luuk Spreeuwers",
+        "Estefania Talavera",
+        "Nicola Strisciuglio"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.38413",
+      "tags": [
+        "仿真/数据",
+        "世界模型/生成",
+        "安全/异常"
+      ],
+      "title": "Structure-retained low-rank adapters for weather synthesis",
+      "title_zh": "保留结构的低秩适配器用于天气合成",
+      "url": "/daily/2026-10-30/#paper-2610-38413"
+    },
+    {
+      "abstract": "Perception tasks for navigation in robotics, including aerial platforms such as drones and autonomous driving systems, are inherently structured. Drone-mounted cameras typically capture sky above, terrain below, and obstacles or man-made structures in between, while driving data often contains organized road layouts, lane markings, and surrounding agents. Motivated by these axis-aligned structural priors, we note that such information is typically more structured than in generic image tasks. We hypothesize that processing information in a quadtree-esque manner can not only model features effectively in a hierarchical manner, but also offers an efficient linear-time alternative to vanilla attention mechanisms, which run in quadratic time. In this paper, we propose Sibling-Selective Quadtree Attention (SSQA), which models image tokens hierarchically as a structured, full quadtree. We show analytical complexity analysis that guarantees linear-time feature modeling, in addition to empirical experiments comparing inference speeds with other popular modeling approaches, such as Mamba 2 and Quadtree Attention. Our results, benchmarked across several tasks, show that we achieve results at least as good, if not notably better, as others at a fraction of the computational costs.",
+      "abstract_zh": "机器人导航中的感知任务，包括无人机等空中平台和自主驾驶系统，具有内在的结构性。无人机搭载的摄像头通常捕捉到上方的天空、下方的地形以及中间的障碍物或人造结构，而驾驶数据通常包含有组织的道路布局、车道标记和周围的代理。基于这些轴对齐的结构先验，我们注意到这些信息通常比一般图像任务更具结构性。我们假设以类似四叉树的方式处理信息不仅可以有效地以层次化的方式建模特征，还提供了一种高效的线性时间替代方案，相较于运行在二次时间的传统注意力机制。本文提出了兄弟选择四叉树注意力（SSQA），它将图像标记作为结构化的完整四叉树进行层次建模。我们展示了分析复杂度分析，保证了线性时间特征建模，并通过与其他流行建模方法（如 Mamba 2 和 Quadtree Attention）的推理速度比较进行实证实验。我们的结果在多个任务上进行基准测试，显示我们在计算成本的很小一部分下，至少达到了与其他方法同样好的结果，甚至显著更好。",
+      "authors": [
+        "Yufan Chen",
+        "Arnav Bali",
+        "Angela Liu",
+        "Laura Zheng",
+        "Ming C. Lin"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.38320",
+      "tags": [
+        "感知",
+        "仿真/数据"
+      ],
+      "title": "SSQA: Sibling-Selective Quadtree Attention for Hierarchical Modeling in Perception Tasks",
+      "title_zh": "SSQA：用于感知任务的兄弟选择四叉树注意力的层次建模",
+      "url": "/daily/2026-10-30/#paper-2610-38320"
+    },
+    {
+      "abstract": "Cooperative multi-agent reinforcement learning (MARL) enables teams of agents, such as robots and autonomous vehicles, to learn coordinated behavior, but what such teams learn is largely determined by their reward function. Because task success alone provides too little guidance for learning, intermediate rewards are usually designed by hand, and this effort must often be repeated whenever the environment or the team changes. Large language models (LLMs) can automate the effort by writing reward functions as code, yet the resulting rewards are typically designed and tested in a single setting. To enable their reuse across settings, GARDEN (Generalist Autonomous Reward Design through Evidence Navigation) is proposed, in which one reward program is developed for a family of related scenarios and transferred, unchanged, to scenarios that were not available during its design. During development, environment code, training records, and agent behavior are investigated by an LLM reward engineer, and draft rewards are tested in trial training runs, while the learning algorithm and the rule for selecting the final reward are held fixed. On unseen scenarios of the Overcooked and SMAX benchmarks, task returns were increased by 58.2% and 52.5% over the default rewards on two kitchen layouts, and the mean win rate in two combat scenarios was raised from 51.0% to 89.9%. Under matched candidate and probe budgets, this exceeded the 84.2% and 79.2% obtained with fixed diagnostic feedback and Eureka-inspired reward reflection. These results show that a single autonomously engineered reward can be reused effectively across related cooperative scenarios.",
+      "abstract_zh": "合作多智能体强化学习（MARL）使得机器人和自主车辆等智能体团队能够学习协调行为，但这些团队所学习的内容在很大程度上取决于它们的奖励函数。由于仅靠任务成功提供的指导过于有限，通常需要手动设计中间奖励，而每当环境或团队发生变化时，这一工作往往需要重复进行。大型语言模型（LLMs）可以通过将奖励函数编写为代码来自动化这一过程，但所得到的奖励通常是在单一环境中设计和测试的。为实现奖励在不同环境中的重用，提出了GARDEN（通过证据导航进行通用自主奖励设计），在该方法中，为一系列相关场景开发一个奖励程序，并将其不加修改地转移到设计时未考虑的场景。在开发过程中，LLM奖励工程师会调查环境代码、训练记录和智能体行为，并在试验训练运行中测试草拟的奖励，同时保持学习算法和最终奖励选择规则不变。在未见过的Overcooked和SMAX基准测试场景中，两个厨房布局的任务回报分别比默认奖励提高了58.2%和52.5%，而在两个战斗场景中的平均胜率从51.0%提高到89.9%。在匹配的候选和探测预算下，这一结果超过了使用固定诊断反馈和受Eureka启发的奖励反思所获得的84.2%和79.2%。这些结果表明，单个自主设计的奖励可以在相关的合作场景中有效重用。",
+      "authors": [
+        "Dogan Urgun"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.37926",
+      "tags": [
+        "仿真/数据",
+        "协同/V2X"
+      ],
+      "title": "GARDEN: Generalist Autonomous Reward Design Through Evidence Navigation for Cooperative Multi-Agent Reinforcement Learning",
+      "title_zh": "GARDEN：通过证据导航进行通用自主奖励设计的合作多智能体强化学习",
+      "url": "/daily/2026-10-30/#paper-2610-37926"
+    },
+    {
+      "abstract": "Robots, autonomous vehicles, and consumer 360{\\deg} cameras use fisheye lenses for wide fields of view (FoVs). Simulation-ready digital twins require photorealistic rendering across the full FoV and an aligned collision mesh. However, prior fisheye Gaussian Splatting methods only rasterize up to 180{\\deg} and do not produce meshes, while Gaussian surface reconstruction methods assume pinhole training images. We present GOFish, the first 3D Gaussian Splatting surface reconstruction method to train directly on fisheye images, rasterize FoVs beyond 180{\\deg}, and extract an aligned mesh from the same scene. Calibrated densification recovers the surface across the entire FoV, while Calibrated Mip Filtering and Wide-Angle Appearance Modeling keep pixel blur and lens falloff out of the scene and mesh. Across the 200{\\deg} FIORD and 205{\\deg} FullCircle benchmarks, GOFish improves PSNR over the best prior method by 2.28 and 1.97 dB, respectively. It also outperforms fisheye rendering baselines within their own FoVs and achieves the highest mesh F-score on FIORD and the main ScanNet++ set. Together, the Gaussian scene and mesh form a LiDAR-free, simulation-ready digital twin that renders in real time, ray traces the full FoV, and provides collision geometry.",
+      "abstract_zh": "机器人、自动驾驶车辆和消费者360度相机使用鱼眼镜头以获得宽广的视场（FoV）。模拟准备的数字双胞胎需要在全视场内进行照片真实感渲染，并且需要一个对齐的碰撞网格。然而，以往的鱼眼高斯点云渲染方法仅能光栅化至180度，并且不生成网格，而高斯表面重建方法则假设使用针孔相机的训练图像。我们提出了GOFish，这是首个直接在鱼眼图像上进行训练的3D高斯点云表面重建方法，能够光栅化超过180度的视场，并从同一场景中提取对齐的网格。经过校准的密集化恢复了整个视场的表面，而校准的Mip过滤和广角外观建模则将像素模糊和镜头衰减排除在场景和网格之外。在200度的FIORD和205度的FullCircle基准测试中，GOFish分别比最佳的先前方法提高了2.28和1.97 dB的峰值信噪比（PSNR）。它还在自身视场内超越了鱼眼渲染基线，并在FIORD和主要的ScanNet++数据集上实现了最高的网格F-score。高斯场景和网格共同形成了一个无激光雷达的、准备模拟的数字双胞胎，能够实时渲染、光线追踪全视场，并提供碰撞几何信息。",
+      "authors": [
+        "Allen Tu",
+        "Meher Gitika Karumuri",
+        "Shifan Zhu",
+        "Hailing Wang",
+        "Yen-Liang Lin",
+        "David Held",
+        "Matthias Zwicker",
+        "Tom Goldstein"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.37818",
+      "tags": [
+        "深度/几何",
+        "LiDAR/点云",
+        "仿真/数据"
+      ],
+      "title": "GOFish: Full Field-of-View Gaussian Splatting and Mesh Extraction",
+      "title_zh": "GOFish：全视场高斯点云渲染与网格提取",
+      "url": "/daily/2026-10-30/#paper-2610-37818"
+    },
+    {
+      "abstract": "Measurements of tree diameter at breast height (DBH) are fundamental to forest inventories, but manual surveys across entire stands or regions are impractical. UAV-borne laser scanning (ULS) enables scalable automated forest surveys, yet canopy occlusion makes accurate DBH estimation from ULS point clouds non-trivial. Limited stem-level point density of ULS data constrains approaches relying on detailed stem reconstruction, such as Quantitative Structure Models (QSMs) and circle fitting. Empirical machine learning methods based on predefined point cloud metrics are an alternative. New deep learning approaches offer an even more principled solution, allowing models to learn directly from point clouds. Sparse tensor networks have shown particular promise, transforming forestry tasks such as tree species classification. We investigate whether these strengths can be extended to estimate individual tree DBH from ULS data across four mixed-species temperate forest plots in Germany. We further advance existing sparse tensor networks by introducing TreeNext, a lightweight deep learning architecture for direct individual tree parameter estimation from voxelized LiDAR point clouds. We present a fully automated forest inventory pipeline from individual tree instance segmentation to DBH regression, and quantify the impact of segmentation errors by comparing performance on automatically segmented and ground truth instances. TreeNext achieves an $R^2$ of 0.8355 on automatically segmented trees and 0.9380 on ground truth segments, outperforming strong tabular baselines including Random Forest and XGBoost. Segmentation quality emerges as the dominant error source in the automated pipeline. TreeNext proves highly data-efficient, performing well even in small data scenarios. Our findings establish sparse tensor networks as a practical foundation for automated individual tree DBH estimation from ULS.",
+      "abstract_zh": "树木胸径（DBH）的测量是森林清查的基础，但在整个林分或区域内进行人工调查是不切实际的。无人机激光扫描（ULS）使得可扩展的自动化森林调查成为可能，但树冠遮挡使得从ULS点云中准确估计DBH变得复杂。ULS数据的有限干茎级点密度限制了依赖于详细干茎重建的方法，例如定量结构模型（QSMs）和圆形拟合。基于预定义点云指标的经验机器学习方法是一种替代方案。新的深度学习方法提供了更为原则性的解决方案，允许模型直接从点云中学习。稀疏张量网络显示出特别的前景，能够转变森林任务，例如树种分类。我们研究了这些优势是否可以扩展到从德国四个混合种类温带森林样地的ULS数据中估计个体树木的DBH。我们进一步通过引入TreeNext，推进现有的稀疏张量网络，这是一种轻量级深度学习架构，旨在从体素化的LiDAR点云中直接估计个体树木参数。我们展示了一个从个体树木实例分割到DBH回归的全自动森林清查流程，并通过比较自动分割和真实标签实例的性能来量化分割错误的影响。TreeNext在自动分割的树木上达到了0.8355的$R^2$，在真实标签分割上达到了0.9380，超越了包括随机森林（Random Forest）和XGBoost在内的强大表格基线。分割质量成为自动化流程中主要的错误来源。TreeNext证明了其高度的数据效率，即使在小数据场景中也表现良好。我们的研究结果确立了稀疏张量网络作为从ULS进行自动化个体树木DBH估计的实用基础。",
+      "authors": [
+        "Clara Lößl",
+        "Fabian Ewald Fassnacht",
+        "Viacheslav Barkov"
+      ],
+      "date": "2026-10-30",
+      "id": "2610.37784",
+      "tags": [
+        "LiDAR/点云",
+        "深度/几何",
+        "感知"
+      ],
+      "title": "Sparse tensor networks for individual tree diameter estimation in mixed forests",
+      "title_zh": "用于混合森林中个体树木直径估计的稀疏张量网络",
+      "url": "/daily/2026-10-30/#paper-2610-37784"
+    },
     {
       "abstract": "Modern simulators can generate synthetic camera and LiDAR data with accurate annotations for downstream tasks. In contrast, automotive radar simulation remains less mature because it requires not only a 3D engine to model dynamic objects in the scenes but also electromagnetic material properties, antenna configurations, wave propagation mechanisms, and coherent signal synthesis. Existing frameworks are either proprietary or overly simplified, limiting the scalability of radar raw measurements. This paper presents AuRaSim, a ray-tracing-based automotive frequency-modulated continuous wave (FMCW) radar simulation framework for dynamic scenarios. Rather than implementing all components from scratch, AuRaSim builds on Blender for efficient dynamic-scene construction and Sionna RT for graphics processing unit (GPU) accelerated electromagnetic ray tracing, while introducing radar-specific adaptations for path-resolved propagation with complex coefficients, motion-aware Doppler modeling, and subsequently coherent multi-channel analog-to-digital converter (ADC) cube synthesis based on waveform configurations. Quantitative comparison between simulated and measured range-Doppler maps in digital-twin scenarios achieves a root-mean-square error (RMSE) of 0.147 and a peak signal-to-noise ratio (PSNR) of 16.93 dB, demonstrating the accuracy and fidelity of the synthetic signal. AuRaSim therefore provides a complete and extensible platform for reproducible automotive radar simulation and research. Project homepage: https://wangzhaoze.github.io/aurasim.",
       "abstract_zh": "现代模拟器能够生成带有准确注释的合成相机和激光雷达数据，以支持下游任务。相比之下，汽车雷达模拟仍然不够成熟，因为它不仅需要一个三维引擎来建模场景中的动态物体，还需要电磁材料特性、天线配置、波传播机制和相干信号合成。现有的框架要么是专有的，要么过于简化，限制了雷达原始测量的可扩展性。本文提出了AuRaSim，一个基于光线追踪的汽车频率调制连续波（FMCW）雷达模拟框架，专为动态场景设计。AuRaSim并不是从头开始实现所有组件，而是基于Blender构建高效的动态场景，并利用Sionna RT进行图形处理单元（GPU）加速的电磁光线追踪，同时引入雷达特定的适应性，以实现具有复杂系数的路径解析传播、运动感知的多普勒建模，以及基于波形配置的相干多通道模数转换器（ADC）立方体合成。在数字双胞胎场景中，模拟与测量的距离-多普勒图的定量比较实现了0.147的均方根误差（RMSE）和16.93 dB的峰值信噪比（PSNR），展示了合成信号的准确性和保真度。因此，AuRaSim提供了一个完整且可扩展的平台，用于可重复的汽车雷达模拟和研究。项目主页：https://wangzhaoze.github.io/aurasim。",
