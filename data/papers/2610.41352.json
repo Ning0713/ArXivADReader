@@ -1,0 +1,53 @@
+{
+  "abstract": "Camera--LiDAR perception on mobile robots and intelligent vehicles depends on reliable sensor geometry throughout deployment. Installation variations create uncertainty in the initial extrinsics, while changing observation quality makes frame-wise estimates fluctuate during operation. This paper presents CalibSwitch, an observation-driven framework that separates absolute extrinsic recovery from selective state maintenance. A cross-modal absolute extrinsic generator (CAEG) combines projection-free bidirectional feature interaction with geometry-regularized learning to recover complete SE(3) candidates from image--point observations and coarse view context, without a supplied numerical initial transform. A selective recurrent calibration policy (SRCP) combines observation quality and temporal history to determine when a candidate should replace the working geometry consumed by a frozen multimodal detector. On nuScenes, CAEG achieves mean translation and rotation errors of 0.248 m and 5.884$^\\circ$. Under sustained geometric transitions, SRCP reaches a mean composite error of 1.46 with 9.70\\% candidate commitments, outperforming quality-based and temporal-consistency gating at comparable commitment rates. Relative to unconditional per-frame updating, it improves frozen-detector mAP and NDS by 1.43 and 0.92 points. Paired geometry--observation uncertainty tests, two real-vehicle platforms, and 13.5-FPS single-camera Jetson execution demonstrate the system value of selective geometric-state maintenance for continuous perception.",
+  "abstract_zh": "移动机器人和智能车辆的相机-激光雷达感知依赖于整个部署过程中可靠的传感器几何结构。安装差异导致初始外参的不确定性，而观察质量的变化使得操作期间的逐帧估计波动。本文提出了CalibSwitch，一个将绝对外参恢复与选择性状态维护分开的基于观测驱动的框架。交叉模态绝对外参生成器（CAEG）结合了无投影的双向特征交互与几何正则化学习，从图像-点观测和粗略视图上下文中恢复完整的SE(3)候选项，而无需提供数值初始变换。选择性递归校准策略（SRCP）结合观察质量和时间历史，以确定何时应替换由冻结的多模态检测器消耗的工作几何。 在nuScenes数据集上，CAEG实现了平均平移和旋转误差分别为0.248米和5.884°。在持续的几何变换下，SRCP达到了1.46的平均复合误差，候选承诺率为9.70%，在可比的承诺率下优于基于质量和时间一致性的门控。与无条件逐帧更新相比，它将冻结检测器的mAP和NDS分别提高了1.43和0.92分。配对的几何-观测不确定性测试、两个真实车辆平台和13.5 FPS单摄像头Jetson执行展示了选择性几何状态维护在连续感知中的系统价值。",
+  "arxiv_id": "2610.41352",
+  "arxiv_url": "https://arxiv.org/abs/2610.41352v1",
+  "authors": [
+    "Haifa Zhang",
+    "Yijing Wang",
+    "Zhiqiang Zuo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-02#paper-2610-41352",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-02T13:00:18.307407+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.41352v1",
+  "published_at": "2026-10-30T07:14:52Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "vehicle",
+      "车辆",
+      "lidar",
+      "camera-lidar"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 34
+  },
+  "seen_dates": [
+    "2026-11-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.41352v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "CalibSwitch: Observation-Driven Camera-LiDAR Extrinsic Recovery and Selective Maintenance for Multimodal Perception",
+  "title_zh": "CalibSwitch：基于观测驱动的相机-激光雷达外参恢复与选择性维护用于多模态感知",
+  "translation_url": "https://hjfy.top/arxiv/2610.41352"
+}

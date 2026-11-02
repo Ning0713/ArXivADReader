@@ -1,0 +1,60 @@
+{
+  "abstract": "Highway work zones are critical edge cases for autonomous vehicles (AVs), combining atypical geometries and jurisdiction-specific regulations that existing benchmarks fail to capture: real-world datasets lack 360{\\deg} multi-modal, full-scene 3D work zone annotation, and no single recorded site can span the layouts and regulatory variants needed for generalizable models. We present WorkIng, a dual-domain benchmark and training resource. WorkIng-Highway provides a 360{\\deg} multi-modal work zone benchmark with synchronized 128-channel LiDAR, six RGB cameras, and RTK-GPS across 32 km, yielding 12,000+ annotated frames and 227,399 tracked 3D bounding boxes. WorkIng-CARLA complements this with procedural simulation spanning 24 regulation-aware scenarios across six canonical topologies and six international traffic standards, populated by 100+ custom 3D assets. Benchmarking representative 3D detection and end-to-end planning architectures shows that real-world data remains the primary performance driver, and that scenario-stratified synthetic augmentation improves architectures across 2D recognition, 3D detection, and trajectory planning. Resources: https://github.com/cvims/WorkIng",
+  "abstract_zh": "高速公路施工区是自主车辆（AVs）面临的重要边缘案例，结合了非典型几何形状和特定于管辖区的法规，而现有基准无法捕捉这些特征：真实世界数据集缺乏360°多模态、全场景的3D施工区标注，且没有单一记录站点能够涵盖通用模型所需的布局和法规变体。我们提出了WorkIng，一个双领域基准和训练资源。WorkIng-Highway提供了一个360°多模态施工区基准，配备同步的128通道激光雷达、六个RGB摄像头和RTK-GPS，覆盖32公里，生成了12,000多个标注帧和227,399个跟踪的3D边界框。WorkIng-CARLA则通过程序化仿真补充了这一点，涵盖了24种考虑法规的场景，涉及六种典型拓扑和六种国际交通标准，配备了100多个自定义3D资产。对代表性3D检测和端到端规划架构的基准测试表明，真实世界数据仍然是主要的性能驱动因素，而情景分层的合成增强在2D识别、3D检测和轨迹规划方面改善了架构。资源链接：https://github.com/cvims/WorkIng",
+  "arxiv_id": "2610.41772",
+  "arxiv_url": "https://arxiv.org/abs/2610.41772v1",
+  "authors": [
+    "Xujun Xie",
+    "Dominik Rößle",
+    "Adithya Mohan",
+    "Daniel Cremers",
+    "Torsten Schön"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-02#paper-2610-41772",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-02T13:00:18.369050+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.41772v1",
+  "published_at": "2026-10-30T14:11:34Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "carla",
+      "autonomous",
+      "traffic",
+      "highway",
+      "车辆",
+      "交通",
+      "3d detection",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 81
+  },
+  "seen_dates": [
+    "2026-11-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.41772v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "WorkIng: A Real-World and Synthetic Highway Work-Zone Benchmark Dataset for Autonomous Navigation",
+  "title_zh": "WorkIng：用于自主导航的真实世界与合成高速公路施工区基准数据集",
+  "translation_url": "https://hjfy.top/arxiv/2610.41772"
+}

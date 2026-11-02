@@ -1,0 +1,53 @@
+{
+  "abstract": "Autonomous wheelchairs can improve the quality of life for individuals with mobility impairments by providing greater independence. However, reliable navigation especially in human environments is a major challenge due to factors such as dynamic obstacles, unpredictable pedestrian behavior, and the users' need to complete multiple stops along the way before reaching their final destination. This paper presents a hybrid path planning framework for multi-goal navigation in dynamic environments. The framework integrates the Traveling Salesman Problem (TSP) for global task ordering with the Potential Field (PF) method and heuristic local planners such as Rapidly-exploring Random Tree (RRT) and A-star (A*) to achieve collision-free navigation. Within this hybrid framework, TSP determines the visiting order of intermediate stations, PF transfers global path information, and local planners avoid obstacles while guiding the robot to the stations. The local planners generate feasible paths that allow the robot to follow the global trajectory and reroute to avoid static and dynamic obstacles. For this purpose, two algorithms have been developed: (i) TSP-PF-RRT and (ii) TSP-PF-A*. The performance of the proposed algorithms are evaluated using Monte Carlo simulations in crowded and extra-crowded scenarios that contain heterogeneous dynamic and static obstacles. Experimental results demonstrate that the proposed hybrid framework enables efficient multi-goal navigation while maintaining safe operation in dynamic environments with humans, with TSP-PF-RRT achieving fewer or no collisions and shorter travel distances.",
+  "abstract_zh": "自主轮椅可以通过提供更大的独立性来改善行动不便者的生活质量。然而，在人类环境中，可靠导航面临重大挑战，原因包括动态障碍物、不可预测的行人行为，以及用户在到达最终目的地之前需要完成多个停靠点。本文提出了一种用于动态环境中多目标导航的混合路径规划框架。该框架将旅行商问题（Traveling Salesman Problem, TSP）用于全局任务排序，并结合潜在场（Potential Field, PF）方法和启发式局部规划器，如快速探索随机树（Rapidly-exploring Random Tree, RRT）和A星（A-star, A*），以实现无碰撞导航。在这个混合框架中，TSP确定中间站点的访问顺序，PF传递全局路径信息，而局部规划器则在引导机器人到达站点的同时避免障碍物。局部规划器生成可行路径，使机器人能够遵循全局轨迹并重新规划以避开静态和动态障碍物。为此，开发了两种算法：（i）TSP-PF-RRT和（ii）TSP-PF-A*。通过在包含异构动态和静态障碍物的拥挤和超拥挤场景中进行蒙特卡洛模拟，评估了所提算法的性能。实验结果表明，所提出的混合框架能够在与人类的动态环境中实现高效的多目标导航，同时保持安全操作，其中TSP-PF-RRT实现了更少或没有碰撞以及更短的行驶距离。",
+  "arxiv_id": "2610.42049",
+  "arxiv_url": "https://arxiv.org/abs/2610.42049v1",
+  "authors": [
+    "Damla Leblebicioğlu",
+    "Rachel Barume",
+    "Taşkın Padır"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-02#paper-2610-42049",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "fetched_at": "2026-11-02T13:00:18.329596+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.42049v1",
+  "published_at": "2026-10-30T17:16:59Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "pedestrian",
+      "行人",
+      "path planning",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 19
+  },
+  "seen_dates": [
+    "2026-11-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.42049v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "世界模型/生成",
+      "仿真/数据"
+    ]
+  },
+  "title": "A Hybrid Path Planning Framework for Assistive Wheelchair Navigation in Dynamic Pedestrian Environments",
+  "title_zh": "动态行人环境中助行轮椅导航的混合路径规划框架",
+  "translation_url": "https://hjfy.top/arxiv/2610.42049"
+}

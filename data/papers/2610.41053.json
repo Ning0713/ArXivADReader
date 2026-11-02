@@ -1,0 +1,53 @@
+{
+  "abstract": "Recent years have witnessed increased momentum towards memory-safe programming languages for safety-critical systems. Memory-safe languages can eliminate entire classes of common software errors that have historically required extensive analysis and expenditure to avoid. Nevertheless, memory-safe language adoption in aerospace remains fragmented and incomplete, particularly for unmanned aerial vehicles (UAVs). Recent Rust UAV projects either run only in simulation, are closed source, or have not been integrated with an established autonomy ecosystem and tested against existing C/C++ firmware. To address this gap, we present Veloxity: an open-source embedded UAV autopilot written in the memory-safe Rust programming language. Veloxity lowers the barrier to using memory-safe languages within modern ecosystems by providing a minimal, modular foundation for autonomous UAVs. We compare Veloxity to equivalent autopilots written in C++ in simulation, with hardware testbenches, and via outdoor waypoint-following flight tests, demonstrating functional parity with improved performance. These results indicate that modern memory-safe languages are a viable option for reliable and performant firmware for autonomous aerospace systems.",
+  "abstract_zh": "近年来，针对安全关键系统的内存安全编程语言的关注度不断上升。内存安全语言可以消除历史上需要大量分析和开支以避免的常见软件错误的整个类别。然而，内存安全语言在航空航天领域的应用仍然是零散和不完整的，特别是在无人机（UAV）方面。近期的Rust无人机项目要么仅在模拟环境中运行，要么是闭源的，或者尚未与现有的自主生态系统集成并与现有的C/C++固件进行测试。为了解决这一问题，我们提出了Veloxity：一个用内存安全的Rust编程语言编写的开源嵌入式无人机自动驾驶仪。Veloxity通过提供一个最小化、模块化的基础，降低了在现代生态系统中使用内存安全语言的门槛。我们将Veloxity与用C++编写的等效自动驾驶仪进行了比较，包括在模拟环境中、硬件测试台上以及通过户外航点跟随飞行测试，结果表明功能相当且性能有所提升。这些结果表明，现代内存安全语言是可靠且高效的自主航空系统固件的可行选择。",
+  "arxiv_id": "2610.41053",
+  "arxiv_url": "https://arxiv.org/abs/2610.41053v1",
+  "authors": [
+    "Derek Ward",
+    "Brian Bascom",
+    "Tyler Larsen",
+    "James Usevitch",
+    "Phil Tokumaru",
+    "Tim McLain"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-02#paper-2610-41053",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-11-02T13:00:18.298796+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.41053v1",
+  "published_at": "2026-10-29T22:51:34Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "autonomous",
+      "驾驶",
+      "uav",
+      "无人机"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 38
+  },
+  "seen_dates": [
+    "2026-11-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.41053v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "仿真/数据"
+    ]
+  },
+  "title": "Veloxity: Towards Memory-Safe UAV Embedded Firmware using the Rust Programming Language",
+  "title_zh": "Veloxity：基于Rust编程语言的内存安全无人机嵌入式固件研究",
+  "translation_url": "https://hjfy.top/arxiv/2610.41053"
+}

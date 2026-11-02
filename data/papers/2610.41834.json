@@ -1,0 +1,63 @@
+{
+  "abstract": "Accurate BEV map prediction is a critical component of autonomous driving systems, enabling downstream planning and control. Recent approaches such as Mask2Map achieve strong performance by predicting vectorized, instance-level map elements directly from multi-view images. However, existing BEV map prediction models operate largely independently of object-level scene understanding, despite the fact that traffic participants frequently occlude or implicitly encode information about road geometry. In this work, we propose a multitask architecture that jointly predicts BEV maps and 3D objects, explicitly enabling information exchange between the two tasks. Building upon Mask2Map, we introduce an object detection branch and incorporate cross-task feature fusion at both the BEV feature level and the instance-query level via deformable attention and cross-attention mechanisms. This design allows map instances to leverage object context while remaining robust to occlusions caused by traffic participants. Experimental results on the nuScenes and Argoverse 2 datasets demonstrate that our approach consistently improves BEV map prediction accuracy, with particularly significant gains of 21% mAP in scenes containing heavy object occlusion.",
+  "abstract_zh": "准确的鸟瞰图（BEV）地图预测是自动驾驶系统的关键组成部分，能够支持后续的规划和控制。最近的研究方法如Mask2Map通过直接从多视角图像中预测向量化的实例级地图元素，取得了良好的性能。然而，现有的BEV地图预测模型在很大程度上独立于对象级场景理解，尽管交通参与者经常会遮挡或隐含编码道路几何信息。在本研究中，我们提出了一种多任务架构，联合预测BEV地图和3D对象，明确地实现了两个任务之间的信息交换。在Mask2Map的基础上，我们引入了一个目标检测分支，并通过可变形注意力和交叉注意力机制在BEV特征层和实例查询层融合跨任务特征。这种设计使得地图实例能够利用对象上下文，同时对交通参与者造成的遮挡保持稳健。在nuScenes和Argoverse 2数据集上的实验结果表明，我们的方法在BEV地图预测准确性上持续提升，特别是在包含大量对象遮挡的场景中，mAP的显著提升达21%。",
+  "arxiv_id": "2610.41834",
+  "arxiv_url": "https://arxiv.org/abs/2610.41834v1",
+  "authors": [
+    "Christian Bohn",
+    "Harsh Yadav",
+    "Klaus Friedrichs",
+    "Hasan Tercan",
+    "Tobias Meisen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-02#paper-2610-41834",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-02T13:00:18.372343+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.41834v1",
+  "published_at": "2026-10-30T14:51:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "argoverse",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路",
+      "bev"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-11-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.41834v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "深度/几何",
+      "预测/规划"
+    ]
+  },
+  "title": "ObjectGuidedMap: An Object-Aware Model for Robust Bird's Eye View Map Prediction in High-Occlusion Scenarios",
+  "title_zh": "ObjectGuidedMap：一种面向对象的模型，用于在高遮挡场景中稳健的鸟瞰图地图预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.41834"
+}

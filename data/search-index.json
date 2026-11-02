@@ -1,6 +1,169 @@
 {
-  "generated_at": "2026-10-30T11:11:22.197878+00:00",
+  "generated_at": "2026-11-02T13:01:02.133268+00:00",
   "items": [
+    {
+      "abstract": "Autonomous wheelchairs can improve the quality of life for individuals with mobility impairments by providing greater independence. However, reliable navigation especially in human environments is a major challenge due to factors such as dynamic obstacles, unpredictable pedestrian behavior, and the users' need to complete multiple stops along the way before reaching their final destination. This paper presents a hybrid path planning framework for multi-goal navigation in dynamic environments. The framework integrates the Traveling Salesman Problem (TSP) for global task ordering with the Potential Field (PF) method and heuristic local planners such as Rapidly-exploring Random Tree (RRT) and A-star (A*) to achieve collision-free navigation. Within this hybrid framework, TSP determines the visiting order of intermediate stations, PF transfers global path information, and local planners avoid obstacles while guiding the robot to the stations. The local planners generate feasible paths that allow the robot to follow the global trajectory and reroute to avoid static and dynamic obstacles. For this purpose, two algorithms have been developed: (i) TSP-PF-RRT and (ii) TSP-PF-A*. The performance of the proposed algorithms are evaluated using Monte Carlo simulations in crowded and extra-crowded scenarios that contain heterogeneous dynamic and static obstacles. Experimental results demonstrate that the proposed hybrid framework enables efficient multi-goal navigation while maintaining safe operation in dynamic environments with humans, with TSP-PF-RRT achieving fewer or no collisions and shorter travel distances.",
+      "abstract_zh": "自主轮椅可以通过提供更大的独立性来改善行动不便者的生活质量。然而，在人类环境中，可靠导航面临重大挑战，原因包括动态障碍物、不可预测的行人行为，以及用户在到达最终目的地之前需要完成多个停靠点。本文提出了一种用于动态环境中多目标导航的混合路径规划框架。该框架将旅行商问题（Traveling Salesman Problem, TSP）用于全局任务排序，并结合潜在场（Potential Field, PF）方法和启发式局部规划器，如快速探索随机树（Rapidly-exploring Random Tree, RRT）和A星（A-star, A*），以实现无碰撞导航。在这个混合框架中，TSP确定中间站点的访问顺序，PF传递全局路径信息，而局部规划器则在引导机器人到达站点的同时避免障碍物。局部规划器生成可行路径，使机器人能够遵循全局轨迹并重新规划以避开静态和动态障碍物。为此，开发了两种算法：（i）TSP-PF-RRT和（ii）TSP-PF-A*。通过在包含异构动态和静态障碍物的拥挤和超拥挤场景中进行蒙特卡洛模拟，评估了所提算法的性能。实验结果表明，所提出的混合框架能够在与人类的动态环境中实现高效的多目标导航，同时保持安全操作，其中TSP-PF-RRT实现了更少或没有碰撞以及更短的行驶距离。",
+      "authors": [
+        "Damla Leblebicioğlu",
+        "Rachel Barume",
+        "Taşkın Padır"
+      ],
+      "date": "2026-11-02",
+      "id": "2610.42049",
+      "tags": [
+        "预测/规划",
+        "世界模型/生成",
+        "仿真/数据"
+      ],
+      "title": "A Hybrid Path Planning Framework for Assistive Wheelchair Navigation in Dynamic Pedestrian Environments",
+      "title_zh": "动态行人环境中助行轮椅导航的混合路径规划框架",
+      "url": "/daily/2026-11-02/#paper-2610-42049"
+    },
+    {
+      "abstract": "Accurate BEV map prediction is a critical component of autonomous driving systems, enabling downstream planning and control. Recent approaches such as Mask2Map achieve strong performance by predicting vectorized, instance-level map elements directly from multi-view images. However, existing BEV map prediction models operate largely independently of object-level scene understanding, despite the fact that traffic participants frequently occlude or implicitly encode information about road geometry. In this work, we propose a multitask architecture that jointly predicts BEV maps and 3D objects, explicitly enabling information exchange between the two tasks. Building upon Mask2Map, we introduce an object detection branch and incorporate cross-task feature fusion at both the BEV feature level and the instance-query level via deformable attention and cross-attention mechanisms. This design allows map instances to leverage object context while remaining robust to occlusions caused by traffic participants. Experimental results on the nuScenes and Argoverse 2 datasets demonstrate that our approach consistently improves BEV map prediction accuracy, with particularly significant gains of 21% mAP in scenes containing heavy object occlusion.",
+      "abstract_zh": "准确的鸟瞰图（BEV）地图预测是自动驾驶系统的关键组成部分，能够支持后续的规划和控制。最近的研究方法如Mask2Map通过直接从多视角图像中预测向量化的实例级地图元素，取得了良好的性能。然而，现有的BEV地图预测模型在很大程度上独立于对象级场景理解，尽管交通参与者经常会遮挡或隐含编码道路几何信息。在本研究中，我们提出了一种多任务架构，联合预测BEV地图和3D对象，明确地实现了两个任务之间的信息交换。在Mask2Map的基础上，我们引入了一个目标检测分支，并通过可变形注意力和交叉注意力机制在BEV特征层和实例查询层融合跨任务特征。这种设计使得地图实例能够利用对象上下文，同时对交通参与者造成的遮挡保持稳健。在nuScenes和Argoverse 2数据集上的实验结果表明，我们的方法在BEV地图预测准确性上持续提升，特别是在包含大量对象遮挡的场景中，mAP的显著提升达21%。",
+      "authors": [
+        "Christian Bohn",
+        "Harsh Yadav",
+        "Klaus Friedrichs",
+        "Hasan Tercan",
+        "Tobias Meisen"
+      ],
+      "date": "2026-11-02",
+      "id": "2610.41834",
+      "tags": [
+        "感知",
+        "深度/几何",
+        "预测/规划"
+      ],
+      "title": "ObjectGuidedMap: An Object-Aware Model for Robust Bird's Eye View Map Prediction in High-Occlusion Scenarios",
+      "title_zh": "ObjectGuidedMap：一种面向对象的模型，用于在高遮挡场景中稳健的鸟瞰图地图预测",
+      "url": "/daily/2026-11-02/#paper-2610-41834"
+    },
+    {
+      "abstract": "Highway work zones are critical edge cases for autonomous vehicles (AVs), combining atypical geometries and jurisdiction-specific regulations that existing benchmarks fail to capture: real-world datasets lack 360{\\deg} multi-modal, full-scene 3D work zone annotation, and no single recorded site can span the layouts and regulatory variants needed for generalizable models. We present WorkIng, a dual-domain benchmark and training resource. WorkIng-Highway provides a 360{\\deg} multi-modal work zone benchmark with synchronized 128-channel LiDAR, six RGB cameras, and RTK-GPS across 32 km, yielding 12,000+ annotated frames and 227,399 tracked 3D bounding boxes. WorkIng-CARLA complements this with procedural simulation spanning 24 regulation-aware scenarios across six canonical topologies and six international traffic standards, populated by 100+ custom 3D assets. Benchmarking representative 3D detection and end-to-end planning architectures shows that real-world data remains the primary performance driver, and that scenario-stratified synthetic augmentation improves architectures across 2D recognition, 3D detection, and trajectory planning. Resources: https://github.com/cvims/WorkIng",
+      "abstract_zh": "高速公路施工区是自主车辆（AVs）面临的重要边缘案例，结合了非典型几何形状和特定于管辖区的法规，而现有基准无法捕捉这些特征：真实世界数据集缺乏360°多模态、全场景的3D施工区标注，且没有单一记录站点能够涵盖通用模型所需的布局和法规变体。我们提出了WorkIng，一个双领域基准和训练资源。WorkIng-Highway提供了一个360°多模态施工区基准，配备同步的128通道激光雷达、六个RGB摄像头和RTK-GPS，覆盖32公里，生成了12,000多个标注帧和227,399个跟踪的3D边界框。WorkIng-CARLA则通过程序化仿真补充了这一点，涵盖了24种考虑法规的场景，涉及六种典型拓扑和六种国际交通标准，配备了100多个自定义3D资产。对代表性3D检测和端到端规划架构的基准测试表明，真实世界数据仍然是主要的性能驱动因素，而情景分层的合成增强在2D识别、3D检测和轨迹规划方面改善了架构。资源链接：https://github.com/cvims/WorkIng",
+      "authors": [
+        "Xujun Xie",
+        "Dominik Rößle",
+        "Adithya Mohan",
+        "Daniel Cremers",
+        "Torsten Schön"
+      ],
+      "date": "2026-11-02",
+      "id": "2610.41772",
+      "tags": [
+        "仿真/数据",
+        "预测/规划",
+        "感知"
+      ],
+      "title": "WorkIng: A Real-World and Synthetic Highway Work-Zone Benchmark Dataset for Autonomous Navigation",
+      "title_zh": "WorkIng：用于自主导航的真实世界与合成高速公路施工区基准数据集",
+      "url": "/daily/2026-11-02/#paper-2610-41772"
+    },
+    {
+      "abstract": "Camera--LiDAR perception on mobile robots and intelligent vehicles depends on reliable sensor geometry throughout deployment. Installation variations create uncertainty in the initial extrinsics, while changing observation quality makes frame-wise estimates fluctuate during operation. This paper presents CalibSwitch, an observation-driven framework that separates absolute extrinsic recovery from selective state maintenance. A cross-modal absolute extrinsic generator (CAEG) combines projection-free bidirectional feature interaction with geometry-regularized learning to recover complete SE(3) candidates from image--point observations and coarse view context, without a supplied numerical initial transform. A selective recurrent calibration policy (SRCP) combines observation quality and temporal history to determine when a candidate should replace the working geometry consumed by a frozen multimodal detector. On nuScenes, CAEG achieves mean translation and rotation errors of 0.248 m and 5.884$^\\circ$. Under sustained geometric transitions, SRCP reaches a mean composite error of 1.46 with 9.70\\% candidate commitments, outperforming quality-based and temporal-consistency gating at comparable commitment rates. Relative to unconditional per-frame updating, it improves frozen-detector mAP and NDS by 1.43 and 0.92 points. Paired geometry--observation uncertainty tests, two real-vehicle platforms, and 13.5-FPS single-camera Jetson execution demonstrate the system value of selective geometric-state maintenance for continuous perception.",
+      "abstract_zh": "移动机器人和智能车辆的相机-激光雷达感知依赖于整个部署过程中可靠的传感器几何结构。安装差异导致初始外参的不确定性，而观察质量的变化使得操作期间的逐帧估计波动。本文提出了CalibSwitch，一个将绝对外参恢复与选择性状态维护分开的基于观测驱动的框架。交叉模态绝对外参生成器（CAEG）结合了无投影的双向特征交互与几何正则化学习，从图像-点观测和粗略视图上下文中恢复完整的SE(3)候选项，而无需提供数值初始变换。选择性递归校准策略（SRCP）结合观察质量和时间历史，以确定何时应替换由冻结的多模态检测器消耗的工作几何。 在nuScenes数据集上，CAEG实现了平均平移和旋转误差分别为0.248米和5.884°。在持续的几何变换下，SRCP达到了1.46的平均复合误差，候选承诺率为9.70%，在可比的承诺率下优于基于质量和时间一致性的门控。与无条件逐帧更新相比，它将冻结检测器的mAP和NDS分别提高了1.43和0.92分。配对的几何-观测不确定性测试、两个真实车辆平台和13.5 FPS单摄像头Jetson执行展示了选择性几何状态维护在连续感知中的系统价值。",
+      "authors": [
+        "Haifa Zhang",
+        "Yijing Wang",
+        "Zhiqiang Zuo"
+      ],
+      "date": "2026-11-02",
+      "id": "2610.41352",
+      "tags": [
+        "感知",
+        "LiDAR/点云",
+        "深度/几何"
+      ],
+      "title": "CalibSwitch: Observation-Driven Camera-LiDAR Extrinsic Recovery and Selective Maintenance for Multimodal Perception",
+      "title_zh": "CalibSwitch：基于观测驱动的相机-激光雷达外参恢复与选择性维护用于多模态感知",
+      "url": "/daily/2026-11-02/#paper-2610-41352"
+    },
+    {
+      "abstract": "End-to-end (E2E) autonomous driving models achieve strong planning performance but remain largely opaque, limiting observability and trust. We apply mechanistic interpretability to E2E driving by training Sparse Autoencoders (SAEs) on the internal activations of a simple, single-camera end-to-end path planning model. Unsupervised clustering of SAE latents reveals interpretable structure aligned with route intent, vehicle speed, and braking behavior, recovering route intent with 98.3% accuracy without supervision. Through paired counterfactual image edits, we further show that specific SAE features are visually grounded and systematically respond to scene changes such as traffic light state and stop sign presence. Steering individual SAE latents produces predictable, monotonic changes in planner outputs including lateral displacement, curvature, and braking. Finally, we demonstrate a practical application of these representations: we build a lightweight adapter trained on SAE latents that reduces trajectory selection error by 3.44%, outperforming an equivalent adapter that omits SAE latents, confirming that the sparse representation captures useful information for interpretability. Code and visualizations are available at https://mgagvani.github.io/mechanistic-interpretability-for-e2e-driving/",
+      "abstract_zh": "端到端（E2E）自主驾驶模型在规划性能上表现出色，但仍然相对不透明，限制了可观察性和信任度。我们通过在一个简单的单摄像头端到端路径规划模型的内部激活上训练稀疏自编码器（Sparse Autoencoders, SAEs），将机制可解释性应用于E2E驾驶。对SAE潜变量的无监督聚类揭示了与路线意图、车辆速度和制动行为对齐的可解释结构，在没有监督的情况下以98.3%的准确率恢复路线意图。通过成对的反事实图像编辑，我们进一步展示了特定SAE特征是视觉上有依据的，并且系统性地响应场景变化，例如交通信号灯状态和停车标志的存在。单独操控SAE潜变量会在规划器输出中产生可预测的单调变化，包括横向位移、曲率和制动。最后，我们展示了这些表示的实际应用：我们构建了一个基于SAE潜变量训练的轻量级适配器，减少了3.44%的轨迹选择误差，优于一个省略SAE潜变量的等效适配器，确认稀疏表示捕获了有助于可解释性的信息。代码和可视化结果可在 https://mgagvani.github.io/mechanistic-interpretability-for-e2e-driving/ 获取。",
+      "authors": [
+        "Manav Gagvani",
+        "Benjamin Namikas",
+        "Sivamurugan Velmurugan",
+        "Nysa Kumar",
+        "Shrey Sharma",
+        "Thomas Peterson",
+        "Pratyush Mathur",
+        "Hyunseo Chang",
+        "Rohan Paleja"
+      ],
+      "date": "2026-11-02",
+      "id": "2610.41185",
+      "tags": [
+        "预测/规划",
+        "端到端驾驶"
+      ],
+      "title": "Mechanistic Interpretability for End-to-End Self-Driving",
+      "title_zh": "端到端自动驾驶的机制可解释性",
+      "url": "/daily/2026-11-02/#paper-2610-41185"
+    },
+    {
+      "abstract": "Recent years have witnessed increased momentum towards memory-safe programming languages for safety-critical systems. Memory-safe languages can eliminate entire classes of common software errors that have historically required extensive analysis and expenditure to avoid. Nevertheless, memory-safe language adoption in aerospace remains fragmented and incomplete, particularly for unmanned aerial vehicles (UAVs). Recent Rust UAV projects either run only in simulation, are closed source, or have not been integrated with an established autonomy ecosystem and tested against existing C/C++ firmware. To address this gap, we present Veloxity: an open-source embedded UAV autopilot written in the memory-safe Rust programming language. Veloxity lowers the barrier to using memory-safe languages within modern ecosystems by providing a minimal, modular foundation for autonomous UAVs. We compare Veloxity to equivalent autopilots written in C++ in simulation, with hardware testbenches, and via outdoor waypoint-following flight tests, demonstrating functional parity with improved performance. These results indicate that modern memory-safe languages are a viable option for reliable and performant firmware for autonomous aerospace systems.",
+      "abstract_zh": "近年来，针对安全关键系统的内存安全编程语言的关注度不断上升。内存安全语言可以消除历史上需要大量分析和开支以避免的常见软件错误的整个类别。然而，内存安全语言在航空航天领域的应用仍然是零散和不完整的，特别是在无人机（UAV）方面。近期的Rust无人机项目要么仅在模拟环境中运行，要么是闭源的，或者尚未与现有的自主生态系统集成并与现有的C/C++固件进行测试。为了解决这一问题，我们提出了Veloxity：一个用内存安全的Rust编程语言编写的开源嵌入式无人机自动驾驶仪。Veloxity通过提供一个最小化、模块化的基础，降低了在现代生态系统中使用内存安全语言的门槛。我们将Veloxity与用C++编写的等效自动驾驶仪进行了比较，包括在模拟环境中、硬件测试台上以及通过户外航点跟随飞行测试，结果表明功能相当且性能有所提升。这些结果表明，现代内存安全语言是可靠且高效的自主航空系统固件的可行选择。",
+      "authors": [
+        "Derek Ward",
+        "Brian Bascom",
+        "Tyler Larsen",
+        "James Usevitch",
+        "Phil Tokumaru",
+        "Tim McLain"
+      ],
+      "date": "2026-11-02",
+      "id": "2610.41053",
+      "tags": [
+        "安全/异常",
+        "仿真/数据"
+      ],
+      "title": "Veloxity: Towards Memory-Safe UAV Embedded Firmware using the Rust Programming Language",
+      "title_zh": "Veloxity：基于Rust编程语言的内存安全无人机嵌入式固件研究",
+      "url": "/daily/2026-11-02/#paper-2610-41053"
+    },
+    {
+      "abstract": "Real-time 4D occupancy forecasting requires reliably extrapolating both ego motion and surrounding actor motion under strict latency budgets. Recent occupancy world models improve long-horizon fidelity through generative decoders and 3D volumetric modeling, yet their computational cost makes real-time deployment challenging. Light-weight BEV forecasters meet latency requirements but often blur or suppress fast-moving actors at longer horizons. We present UFMF (Ultra-Fast Multi-modal Forecaster), a real-time forecaster that keeps an attention-free diagonal state-space temporal core while injecting targeted kinematic and geometric structure where lightweight models typically fail. A radar-guided velocity-aware dynamic prior (VADP) decomposes future displacement into a linear extrapolation plus a learned horizon-dependent residual. The resulting per-cell flow fields transport a compact dynamic latent subspace during rollout. Two auxiliary training constraints complement this branch: world-frame dynamic supervision enforces inter-horizon trajectory coherence, and class-conditioned vertical-profile supervision regularizes BEV-to-3D lifting. UFMF operates at 122 FPS on a single RTX 4090 and reaches 0.45 fast-displacement mIoU on nuScenes, outperforming recent occupancy world models at a fraction of their computational cost.",
+      "abstract_zh": "实时4D占用预测需要在严格的延迟预算下可靠地推断自我运动和周围行为者的运动。最近的占用世界模型通过生成解码器和3D体积建模提高了长时间范围的保真度，但其计算成本使得实时部署具有挑战性。轻量级的鸟瞰图（BEV）预测器满足延迟要求，但在较长的时间范围内往往会模糊或抑制快速移动的行为者。我们提出了UFMF（超快速多模态预测器），这是一种实时预测器，保持无注意力的对角状态空间时间核心，同时在轻量级模型通常失效的地方注入有针对性的运动学和几何结构。基于雷达的速度感知动态先验（VADP）将未来位移分解为线性外推加上学习的依赖于时间范围的残差。结果是每个单元的流场在展开过程中传输一个紧凑的动态潜在子空间。两个辅助训练约束补充了这一分支：世界坐标系动态监督强制执行跨时间范围轨迹一致性，而类别条件的垂直剖面监督则规范化了BEV到3D的提升。UFMF在单个RTX 4090上以122帧每秒的速度运行，并在nuScenes上达到0.45的快速位移mIoU，超越了最近的占用世界模型，同时计算成本仅为其一小部分。",
+      "authors": [
+        "Zeping Zhang",
+        "Zhuoya Zhao",
+        "Robert Laganière"
+      ],
+      "date": "2026-11-02",
+      "id": "2610.40947",
+      "tags": [
+        "BEV/Occupancy",
+        "预测/规划",
+        "世界模型/生成"
+      ],
+      "title": "UFMF: Radar-Guided Kinematic Priors for Real-Time 4D Occupancy Forecasting",
+      "title_zh": "UFMF：基于雷达的运动学先验用于实时4D占用预测",
+      "url": "/daily/2026-11-02/#paper-2610-40947"
+    },
+    {
+      "abstract": "Vision-centric autonomous driving models encode thousands of image tokens per frame, yet most depict sky, buildings, or empty road---content irrelevant to planning. Worse, these tokens dilute the planner's attention: we show that randomly discarding 75% of tokens already outperforms the dense model, because the planner can concentrate on the remaining driving-critical content. Building on this finding, we present Geometry-Aware Token Selection (GATS), which uses LiDAR and radar point projections to select a small fraction of image tokens before the vision backbone runs. Because the selector operates on measured 3D geometry rather than visual features, the backbone encodes only the selected patches, cutting end-to-end FLOPs by up to $18\\times$. Each kept token receives a 3D anchor from its LiDAR point and is fed to a self-supervised latent world model that predicts future features and 3D displacements without box annotations. At 25% budget, GATS achieves a 3-sec L2 displacement error of 0.520 m on nuScenes and an EPDMS of 88.9 on NAVSIM---surpassing the dense baseline (0.573 m / 85.9) at $6.6\\times$ fewer total FLOPs. At an extreme 10% budget (24 GFLOPs, $18\\times$ reduction), it still beats the dense baseline on both nuScenes (0.537 m vs. 0.573 m L2) and NAVSIM (87.9 vs. 85.9 EPDMS). On 739 intent-critical scenarios, GATS covers 95.8% of hazardous vehicles and achieves a 0.09% collision rate---73.5% lower than the dense model (0.34%).",
+      "abstract_zh": "以视觉为中心的自动驾驶模型在每帧中编码数千个图像标记，但大多数内容是天空、建筑或空旷的道路——与规划无关的内容。更糟糕的是，这些标记稀释了规划者的注意力：我们展示了随机丢弃 75% 的标记已经优于密集模型，因为规划者可以集中注意力于剩余的驾驶关键内容。在此基础上，我们提出了几何感知标记选择（Geometry-Aware Token Selection, GATS），该方法利用 LiDAR 和雷达点投影在视觉骨干网络运行之前选择少量图像标记。由于选择器基于测量的 3D 几何而非视觉特征进行操作，因此骨干网络仅编码所选的图像块，从而将端到端的 FLOPs 降低至最高 $18 imes$。每个保留的标记从其 LiDAR 点接收一个 3D 锚点，并被输入到一个自监督的潜在世界模型中，该模型在没有框注释的情况下预测未来特征和 3D 位移。在 25% 的预算下，GATS 在 nuScenes 上实现了 0.520 m 的 3 秒 L2 位移误差，在 NAVSIM 上实现了 88.9 的 EPDMS——在总 FLOPs 少 $6.6 imes$ 的情况下超越了密集基线（0.573 m / 85.9）。在极端的 10% 预算下（24 GFLOPs，$18 imes$ 降低），它仍然在 nuScenes（0.537 m 对比 0.573 m L2）和 NAVSIM（87.9 对比 85.9 EPDMS）上超越密集基线。在 739 个意图关键场景中，GATS 覆盖了 95.8% 的危险车辆，并实现了 0.09% 的碰撞率——比密集模型（0.34%）低 73.5%。",
+      "authors": [
+        "Zeping Zhang",
+        "Zhuoya Zhao",
+        "Robert Laganière"
+      ],
+      "date": "2026-11-02",
+      "id": "2610.40935",
+      "tags": [
+        "预测/规划",
+        "深度/几何",
+        "端到端驾驶"
+      ],
+      "title": "Let LiDAR Decide Where to Look: Geometry-Measured Token Selection for Efficient Sparse Latent World Models",
+      "title_zh": "让 LiDAR 决定观察位置：基于几何测量的高效稀疏潜在世界模型的标记选择",
+      "url": "/daily/2026-11-02/#paper-2610-40935"
+    },
     {
       "abstract": "Aerial imagery provides complementary spatial context for autonomous driving by exposing road structure beyond the immediate perception range of onboard sensors. Yet map construction from aerial imagery, aerial-assisted online HD mapping, and cross-view localization are typically studied on separate data and benchmarks. We introduce KITScenes Aerial, an extension of the KITScenes Multimodal dataset that augments synchronized onboard sensor data, vehicle poses, and rich Lanelet2 map annotations with spatially associated aerial imagery and higher-resolution neural representations, providing a common basis for a variety of research tasks. Our mapping evaluation focuses on all 53 KITScenes map classes across different model designs, spatial ranges, and aerial resolutions, while retaining compatibility with the widely used three-class setting. Representative baselines show that aerial context is particularly beneficial for fine-grained and extended-range mapping, more than doubling 53-class mAP at the larger mapping extent. Higher-resolution aerial imagery yields a further 4.3 mAP (+24 %) improvement, with gains extending to challenging map elements such as traffic lights. We additionally evaluate cross-view localization under geographically disjoint conditions, where an adapted fine-grained feature-matching baseline achieves a mean translation error of 5.13 m. KITScenes Aerial thus enables unified study of aerial and ground-level information across complementary mapping and localization tasks. Project page: https://kitscenes.com/aerial",
       "abstract_zh": "空中影像通过揭示超出车载传感器即时感知范围的道路结构，为自主驾驶提供了补充的空间背景。然而，从空中影像构建地图、空中辅助在线高清地图制作以及跨视图定位通常是在不同的数据和基准上进行研究的。我们介绍了KITScenes Aerial，这是KITScenes多模态数据集的扩展，增强了同步的车载传感器数据、车辆姿态和丰富的Lanelet2地图注释，并结合了空间关联的空中影像和更高分辨率的神经表示，为各种研究任务提供了共同基础。我们的地图评估集中于53个KITScenes地图类别，涵盖不同的模型设计、空间范围和空中分辨率，同时保持与广泛使用的三类设置的兼容性。代表性的基准显示，空中背景对细粒度和扩展范围的地图制作特别有利，在更大地图范围内，53类的平均精度（mAP）提高了两倍以上。更高分辨率的空中影像进一步提高了4.3 mAP（+24%），增益扩展到交通信号灯等具有挑战性的地图元素。我们还在地理上不相交的条件下评估了跨视图定位，其中经过调整的细粒度特征匹配基准实现了5.13米的平均平移误差。因此，KITScenes Aerial使得在互补的地图制作和定位任务中统一研究空中和地面信息成为可能。项目页面：https://kitscenes.com/aerial",

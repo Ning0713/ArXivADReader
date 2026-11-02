@@ -1,0 +1,51 @@
+{
+  "abstract": "Real-time 4D occupancy forecasting requires reliably extrapolating both ego motion and surrounding actor motion under strict latency budgets. Recent occupancy world models improve long-horizon fidelity through generative decoders and 3D volumetric modeling, yet their computational cost makes real-time deployment challenging. Light-weight BEV forecasters meet latency requirements but often blur or suppress fast-moving actors at longer horizons. We present UFMF (Ultra-Fast Multi-modal Forecaster), a real-time forecaster that keeps an attention-free diagonal state-space temporal core while injecting targeted kinematic and geometric structure where lightweight models typically fail. A radar-guided velocity-aware dynamic prior (VADP) decomposes future displacement into a linear extrapolation plus a learned horizon-dependent residual. The resulting per-cell flow fields transport a compact dynamic latent subspace during rollout. Two auxiliary training constraints complement this branch: world-frame dynamic supervision enforces inter-horizon trajectory coherence, and class-conditioned vertical-profile supervision regularizes BEV-to-3D lifting. UFMF operates at 122 FPS on a single RTX 4090 and reaches 0.45 fast-displacement mIoU on nuScenes, outperforming recent occupancy world models at a fraction of their computational cost.",
+  "abstract_zh": "实时4D占用预测需要在严格的延迟预算下可靠地推断自我运动和周围行为者的运动。最近的占用世界模型通过生成解码器和3D体积建模提高了长时间范围的保真度，但其计算成本使得实时部署具有挑战性。轻量级的鸟瞰图（BEV）预测器满足延迟要求，但在较长的时间范围内往往会模糊或抑制快速移动的行为者。我们提出了UFMF（超快速多模态预测器），这是一种实时预测器，保持无注意力的对角状态空间时间核心，同时在轻量级模型通常失效的地方注入有针对性的运动学和几何结构。基于雷达的速度感知动态先验（VADP）将未来位移分解为线性外推加上学习的依赖于时间范围的残差。结果是每个单元的流场在展开过程中传输一个紧凑的动态潜在子空间。两个辅助训练约束补充了这一分支：世界坐标系动态监督强制执行跨时间范围轨迹一致性，而类别条件的垂直剖面监督则规范化了BEV到3D的提升。UFMF在单个RTX 4090上以122帧每秒的速度运行，并在nuScenes上达到0.45的快速位移mIoU，超越了最近的占用世界模型，同时计算成本仅为其一小部分。",
+  "arxiv_id": "2610.40947",
+  "arxiv_url": "https://arxiv.org/abs/2610.40947v1",
+  "authors": [
+    "Zeping Zhang",
+    "Zhuoya Zhao",
+    "Robert Laganière"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-02#paper-2610-40947",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-02T13:00:18.338554+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2610.40947v1",
+  "published_at": "2026-10-29T20:24:44Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "bev",
+      "occupancy",
+      "radar",
+      "占用预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 36
+  },
+  "seen_dates": [
+    "2026-11-02"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2610.40947v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-02"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "预测/规划",
+      "世界模型/生成"
+    ]
+  },
+  "title": "UFMF: Radar-Guided Kinematic Priors for Real-Time 4D Occupancy Forecasting",
+  "title_zh": "UFMF：基于雷达的运动学先验用于实时4D占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2610.40947"
+}
