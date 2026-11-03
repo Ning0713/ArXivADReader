@@ -1,0 +1,86 @@
+{
+  "abstract": "Deploying generative world models for end-to-end closed-loop evaluation and policy learning requires precise scenario control, consistent observations, and sustained generation quality during extended interactions. This report presents \\emph{X-World~1.6}, advancing X-World~1.0 toward a more reliable and versatile driving simulator. The upgraded base model offers finer-grained control over traffic semantics, including traffic lights and road markings, together with improved spatial consistency across cameras. Virtual City capabilities broaden scenario construction through a family of models conditioned on diverse 2D and 3D references, including support for generating multi-camera future videos from a single image. An enhanced post-training framework enables efficient causal, few-step generation with stronger temporal coherence, better quality retention over longer rollouts, and improved alignment with human preferences. We also introduce a dedicated evaluation suite to support systematic assessment and guide model iteration. Together, these upgrades expand the scenarios X-World can simulate and improve the efficiency and reliability of its generated observations, supporting broader use in autonomous-driving development.",
+  "abstract_zh": "部署生成性世界模型以进行端到端闭环评估和策略学习需要精确的场景控制、一致的观察结果以及在长期交互过程中持续的生成质量。本报告介绍了 extit{X-World~1.6}，将 X-World~1.0 推进到一个更可靠和多功能的驾驶模拟器。升级后的基础模型提供了对交通语义的更细粒度控制，包括交通信号灯和道路标记，同时改善了跨摄像头的空间一致性。虚拟城市功能通过一系列基于多样化 2D 和 3D 参考的模型扩展了场景构建能力，包括支持从单幅图像生成多摄像头未来视频。增强的后训练框架实现了高效的因果、少步生成，具有更强的时间一致性、更好的长期生成质量保持，以及与人类偏好的更好对齐。我们还引入了一个专门的评估套件，以支持系统评估并指导模型迭代。这些升级共同扩展了 X-World 可以模拟的场景，提升了其生成观察结果的效率和可靠性，支持在自动驾驶开发中的更广泛应用。",
+  "arxiv_id": "2611.00596",
+  "arxiv_url": "https://arxiv.org/abs/2611.00596v1",
+  "authors": [
+    "XPeng",
+    ":",
+    "Boyang Wang",
+    "Boyi Sun",
+    "Chaoda Zheng",
+    "Dongbin Zhang",
+    "Guangfeng Jiang",
+    "Hanlong Chen",
+    "Hongbin Lin",
+    "Jianlei Zheng",
+    "Jinhao Deng",
+    "Kai Yang",
+    "Kangjie Chen",
+    "Linkun Xu",
+    "Minqi Wang",
+    "Puyi Wang",
+    "Rongliang Cheng",
+    "Ruixin Liu",
+    "Shijia Chen",
+    "Shuang Deng",
+    "Sijia Chen",
+    "Sin Wai Choo",
+    "Tianyuan Xie",
+    "Xiangyu Li",
+    "Xianming Liu",
+    "Xingjie Liu",
+    "Xinlong Zheng",
+    "Xuejie Lv",
+    "Xuezhi Yang",
+    "Yi Guo",
+    "Yixiao Zeng",
+    "Yu Zhang",
+    "Yuecheng Ma",
+    "Yuhao Wang",
+    "Yuqi Zhang",
+    "Yuxin Peng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-00596",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.239231+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.00596v1",
+  "published_at": "2026-10-31T03:45:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.00596v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "端到端驾驶",
+    "secondary": [
+      "世界模型/生成"
+    ]
+  },
+  "title": "X-World 1.6: Building Controllable Virtual Cities with World Models",
+  "title_zh": "X-World 1.6：构建可控的虚拟城市与世界模型",
+  "translation_url": "https://hjfy.top/arxiv/2611.00596"
+}

@@ -1,0 +1,49 @@
+{
+  "abstract": "This report presents GatedVLA, our entry for the Physical AI AV (PAI-AV) track. Our learned vision-language-action (VLA) policy pairs the driving-pretrained Qwen-Drive-1.0-4B vision-language model with a layer-wise flow-matching action expert that outputs a 2.5 s horizon of acceleration and curvature controls, augmented with a soft visual mask applied to the expert's cross-attention. Compared to an identically trained baseline, the masked policy achieves comparable overall open-loop error while reducing error on left turns. In local closed-loop evaluation across the same 150 scenes (two rollouts per scene), the visual mask increases the mean scene score from 0.479 to 0.517 (paired difference +0.038, 95% bootstrap CI [-0.018, +0.093], wins/losses 37/26, sign test p = 0.21). Incorporating a rule-based automatic emergency braking (AEB) module at deployment further increases the mean score to 0.599 (+0.082, CI [+0.023, +0.143]) and reduces the mean number of scenes with at-fault collisions from 34.0 to 11.0.",
+  "abstract_zh": "本报告介绍了 GatedVLA，这是我们在物理人工智能自动驾驶（PAI-AV）赛道上的参赛作品。我们学习的视觉-语言-动作（VLA）策略将经过驾驶预训练的 Qwen-Drive-1.0-4B 视觉-语言模型与逐层流匹配的动作专家相结合，输出 2.5 秒的加速度和曲率控制，并在专家的交叉注意力上应用了软视觉掩码。与同样训练的基线相比，掩码策略在整体开放环错误上表现相当，同时减少了左转时的错误。在相同的 150 个场景（每个场景两次回放）的局部闭环评估中，视觉掩码将平均场景得分从 0.479 提高至 0.517（配对差异 +0.038，95% 自助法置信区间 [-0.018, +0.093]，胜/负 37/26，符号检验 p = 0.21）。在部署时加入基于规则的自动紧急制动（AEB）模块，进一步将平均得分提高至 0.599 (+0.082, CI [+0.023, +0.143])，并将有责任碰撞的场景平均数量从 34.0 降低至 11.0。",
+  "arxiv_id": "2611.01663",
+  "arxiv_url": "https://arxiv.org/abs/2611.01663v1",
+  "authors": [
+    "Kaneyoshi Hiratsuka",
+    "Naoki Takada",
+    "Makoto Kawano"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-01663",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.096449+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.01663v1",
+  "published_at": "2026-11-01T07:16:10Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "自动驾驶",
+      "driving",
+      "驾驶",
+      "vision-language-action"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 42
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.01663v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": []
+  },
+  "title": "GatedVLA with Camera-Based Emergency Braking: AlpaSim E2E Closed Loop Challenge Technical Report",
+  "title_zh": "基于摄像头的紧急制动的 GatedVLA：AlpaSim E2E 闭环挑战技术报告",
+  "translation_url": "https://hjfy.top/arxiv/2611.01663"
+}

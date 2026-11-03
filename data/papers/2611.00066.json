@@ -1,0 +1,54 @@
+{
+  "abstract": "Understanding how pedestrians move and interact at urban intersections is central to traffic-safety assessment, mobility planning, and smart-city sensing. Such analyses rely on physically grounded descriptions of motion: 3D body pose, metric trajectories, and pose-derived descriptors such as stature and walking speed. Recovering these from fixed roadside cameras is difficult: viewpoints are oblique and long-range, occlusions are frequent, and neither ground-truth 3D pose nor cross-camera identity labels are typically available. We compare two strategies for deriving pedestrian motion descriptors from a multi-camera intersection dataset: a monocular learned pipeline that combines text-prompted segmentation, tracking, and learned 3D body estimation, and a calibrated multi-view geometric pipeline that combines 2D pose estimation, tracking, cross-camera association, and triangulation. Because 3D ground truth is unavailable, we evaluate both with reference-free criteria relevant to intersection analysis: pedestrian coverage, anthropometric plausibility, walking-speed distributions, computational cost, and failure modes. The two strategies exhibit complementary trade-offs. The learned pipeline is simpler to deploy and covers more pedestrians, but suffers from scale ambiguity and systematic height compression; the geometric pipeline yields metric reconstructions more efficiently, but requires calibration, discards pedestrians seen by only one camera, and can produce severe outliers in dense crowds. We distill these findings into practical guidance for selecting a reconstruction strategy and configuring camera infrastructure according to the target analysis task.",
+  "abstract_zh": "理解行人在城市交叉口的移动和互动对于交通安全评估、出行规划和智慧城市感知至关重要。这类分析依赖于运动的物理基础描述：三维身体姿态、度量轨迹以及基于姿态的描述符，如身高和行走速度。从固定的路边摄像头恢复这些信息是困难的：视角倾斜且距离较远，遮挡现象频繁，且通常没有真实的三维姿态或跨摄像头身份标签可用。我们比较了从多摄像头交叉口数据集中推导行人运动描述符的两种策略：一种是单目学习管道，结合了文本提示的分割、跟踪和学习的三维身体估计；另一种是经过校准的多视角几何管道，结合了二维姿态估计、跟踪、跨摄像头关联和三角测量。由于缺乏三维真实值，我们使用与交叉口分析相关的无参考标准评估这两种策略：行人覆盖率、人体测量的合理性、行走速度分布、计算成本和失败模式。这两种策略展现出互补的权衡。学习管道更易于部署，覆盖更多行人，但存在尺度模糊和系统性身高压缩的问题；几何管道则更高效地产生度量重建，但需要校准，丢弃仅被一台摄像头看到的行人，并且在密集人群中可能产生严重的异常值。我们将这些发现提炼为选择重建策略和根据目标分析任务配置摄像头基础设施的实用指导。",
+  "arxiv_id": "2611.00066",
+  "arxiv_url": "https://arxiv.org/abs/2611.00066v1",
+  "authors": [
+    "Kauan Mariani",
+    "Matheus Carvalho",
+    "Joel Perca",
+    "João Rulff",
+    "Jorge Poco"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-00066",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:52.991834+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.00066v1",
+  "published_at": "2026-10-14T17:24:00Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "traffic",
+      "roadside",
+      "intersection",
+      "pedestrian",
+      "交通",
+      "行人"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 30
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.00066v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "本文面向城市交叉口的行人感知，对比单目学习式三维人体估计与标定多视角三角测量方案。研究重点分析两类方法在度量尺度、行人覆盖率、密集遮挡、计算成本和异常重建方面的差异，可为自动驾驶及路侧智能感知系统中的行人三维状态估计和交通安全分析提供参考。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "安全/异常"
+    ]
+  },
+  "title": "Comparing Monocular and Multi-View 3D Pedestrian Reconstruction Strategies for Urban Intersection Sensing",
+  "title_zh": "比较城市交叉口感知中的单目与多视角三维行人重建策略",
+  "translation_url": "https://hjfy.top/arxiv/2611.00066"
+}

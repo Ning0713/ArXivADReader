@@ -1,0 +1,61 @@
+{
+  "abstract": "3D semantic occupancy prediction provides dense geometric and semantic scene representations for autonomous driving, where both high accuracy and low response latency are crucial for safe downstream forecasting and planning. Existing methods usually exhibit different accuracy-latency characteristics. Performance-oriented models provide stronger geometric and semantic predictions, while deployment-friendly models provide faster responses. This motivates EvoOcc, a fast-slow evolutionary occupancy prediction framework that jointly exploits their complementary strengths to improve the accuracy-latency balance without changing the upstream architectures. EvoOcc models evolutionary occupancy prediction as a continuous time controlled dynamical system, enabling flexible adaptation to variable slow system delays and irregular fast system arrivals. The framework further decomposes the evolution process into dual state evolution where ego state evolution compensates for the deterministic coordinate shifts and scene state evolution models the genuine geometric and semantic scene changes. Extensive experiments on three different fast-slow system pairs and irregular prediction arrivals show that EvoOcc consistently improves over fast system baselines while maintaining much lower latency than the slow system, indicating a favorable accuracy-latency balance and stable behavior under practical inference situations.",
+  "abstract_zh": "三维语义占用预测为自动驾驶提供了密集的几何和语义场景表示，其中高准确性和低响应延迟对安全的下游预测和规划至关重要。现有方法通常表现出不同的准确性-延迟特性。以性能为导向的模型提供更强的几何和语义预测，而以部署为友好的模型则提供更快的响应。这促使我们提出EvoOcc，一个快速-慢速进化占用预测框架，联合利用它们的互补优势，以改善准确性-延迟平衡，而无需改变上游架构。EvoOcc将进化占用预测建模为一个连续时间受控动态系统，能够灵活适应可变的慢速系统延迟和不规则的快速系统到达。该框架进一步将进化过程分解为双状态进化，其中自我状态进化补偿确定性坐标偏移，而场景状态进化则建模真实的几何和语义场景变化。在三个不同的快速-慢速系统对和不规则预测到达的广泛实验中，EvoOcc始终在保持比慢速系统低得多的延迟的同时，超越快速系统基线，表明其在实际推理情况下具有良好的准确性-延迟平衡和稳定性。",
+  "arxiv_id": "2611.02499",
+  "arxiv_url": "https://arxiv.org/abs/2611.02499v1",
+  "authors": [
+    "Runhe Yang",
+    "Zhiyuan Zhou",
+    "Yuxiang Yan",
+    "Xuetong Yang",
+    "Yikai Pan",
+    "Jiacheng Tang",
+    "Zhuolin He",
+    "Jianhua Han",
+    "Hang Xu",
+    "Jian Pu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02499",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.149157+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02499v1",
+  "published_at": "2026-11-02T04:20:07Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "occupancy",
+      "占用预测"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 79
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02499v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "预测/规划",
+      "深度/几何"
+    ]
+  },
+  "title": "Fast-Slow Evolutionary Occupancy Prediction via Controlled Dynamics",
+  "title_zh": "通过受控动态实现快速-慢速进化占用预测",
+  "translation_url": "https://hjfy.top/arxiv/2611.02499"
+}

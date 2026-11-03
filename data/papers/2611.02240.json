@@ -1,0 +1,57 @@
+{
+  "abstract": "Safe navigation in interactive traffic requires autonomous vehicles to reason about unobservable human characteristics and the reciprocal nature of multi-agent interactions. Traditional architectures often decouple prediction from planning, leading to the \"Frozen Robot Problem\" or unsafe maneuvers under high ambiguity because they treat risk assessment and information acquisition as independent objectives. We argue that the notion of safety should not remain static but must instead dynamically co-evolve with the system's internal confidence: the robot should actively clarify ambiguity when necessary while also recognizing the diminishing returns of information, and naturally transition toward task execution. We introduce a unified belief-space Model Predictive Control (MPC) framework that couples multistep information planning with a clarity-adaptive Conditional Value-at-Risk (CVaR) barrier mechanism. By treating clarity, a scalar informational state, as an explicit planning variable, the controller co-designs its probing strategy with its safety specification, tightening conservatism under high ambiguity and relaxing constraints as confidence improves. We further provide a performance analysis showing that the cost of information seeking and the expected planning-cost gap to a controller that knows the true human characteristic are bounded by residual ambiguity and solver error. We evaluate the framework in lane-merging and unsignalized-intersection scenarios against representative interactive-planning baselines. Across 5,000 simulations, the proposed method achieves the highest success rates (94.6% and 93.2%) and the lowest collision rates (1.2% and 1.4%) among the compared methods, providing a principled foundation for robust decision-making in human-centric environments.",
+  "abstract_zh": "在交互交通中安全导航要求自主车辆能够推理不可观察的人类特征以及多智能体交互的相互性。传统架构通常将预测与规划解耦，导致“冻结机器人问题”或在高度模糊情况下的不安全操作，因为它们将风险评估和信息获取视为独立目标。我们认为安全的概念不应保持静态，而必须与系统的内部信心动态共同演化：机器人应在必要时主动澄清模糊性，同时认识到信息的边际效益递减，并自然过渡到任务执行。我们提出了一种统一的信念空间模型预测控制（MPC）框架，该框架将多步信息规划与清晰度自适应条件风险价值（CVaR）障碍机制结合在一起。通过将清晰度这一标量信息状态视为显式规划变量，控制器将其探测策略与安全规范共同设计，在高度模糊的情况下收紧保守性，并在信心提高时放宽约束。我们进一步提供了性能分析，表明信息寻求的成本和与知道真实人类特征的控制器之间的预期规划成本差距受到残余模糊性和求解器误差的限制。我们在车道合并和无信号交叉口场景中评估了该框架，并与代表性的交互规划基线进行比较。在5000次模拟中，所提出的方法在比较方法中实现了最高的成功率（94.6%和93.2%）和最低的碰撞率（1.2%和1.4%），为人本环境中的稳健决策提供了原则性基础。",
+  "arxiv_id": "2611.02240",
+  "arxiv_url": "https://arxiv.org/abs/2611.02240v1",
+  "authors": [
+    "Youran Wang",
+    "Devodita Chakravarty",
+    "Yiwei Lyu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02240",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-11-03T12:33:52.909271+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02240v1",
+  "published_at": "2026-11-01T22:03:30Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous vehicles",
+      "autonomous",
+      "driving",
+      "traffic",
+      "intersection",
+      "lane",
+      "驾驶",
+      "车辆",
+      "交通",
+      "车道",
+      "robot"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 73
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02240v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "安全/异常",
+      "感知"
+    ]
+  },
+  "title": "When to Probe and When to Act: Clarity-Aware Risk-Adaptive Control for Interactive Driving",
+  "title_zh": "何时探测何时行动：面向交互驾驶的清晰度感知风险自适应控制",
+  "translation_url": "https://hjfy.top/arxiv/2611.02240"
+}

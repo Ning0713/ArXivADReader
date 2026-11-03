@@ -1,0 +1,68 @@
+{
+  "abstract": "Safe autonomous driving requires more than recognizing the current scene: the ego vehicle must anticipate how surrounding traffic participants will evolve under its own motion. However, existing end-to-end driving models typically encode scenes into dense visual or BEV features, leaving object-level interactions implicit. We propose (INTERACT INTERaction-aware Action-Conditioned Trajectory learning), a three-stage framework that learns a slot-based object-centric world model from unlabeled driving videos and transfers it to trajectory planning. INTERACT first learns recurrent slots that group dense visual features into temporally structured scene-entity representations without object annotations. It then infers latent ego actions from slot context and video transitions, and uses them to condition future slot prediction, capturing how ego motion and surrounding entities co-evolve. Finally, the learned slots, latent actions, and future slot predictions are distilled into a trajectory planner to guide trajectory generation and selection. Extensive experiments on NAVSIM and nuScenes validate the effectiveness of INTERACT. In particular, it achieves state-of-the-art performance on NAVSIM, with improvements in safety-critical collision metrics.",
+  "abstract_zh": "安全的自动驾驶不仅需要识别当前场景：自我车辆必须预测周围交通参与者在自身运动下将如何演变。然而，现有的端到端驾驶模型通常将场景编码为密集的视觉或鸟瞰视图（BEV）特征，使得对象级交互变得隐含。我们提出了INTERACT（INTERaction-aware Action-Conditioned Trajectory learning），这是一个三阶段框架，从未标记的驾驶视频中学习基于槽的对象中心世界模型，并将其转移到轨迹规划中。INTERACT首先学习递归槽，将密集的视觉特征分组为时间结构化的场景实体表示，而无需对象注释。然后，它从槽上下文和视频过渡中推断潜在的自我动作，并利用这些信息来调节未来槽的预测，捕捉自我运动与周围实体的共同演变。最后，学习到的槽、潜在动作和未来槽预测被提炼为轨迹规划器，以指导轨迹生成和选择。在NAVSIM和nuScenes上的大量实验验证了INTERACT的有效性。特别是在NAVSIM上，它在安全关键的碰撞指标上实现了最先进的性能。",
+  "arxiv_id": "2611.02526",
+  "arxiv_url": "https://arxiv.org/abs/2611.02526v1",
+  "authors": [
+    "Zhan Chen",
+    "Songyan Zhang",
+    "Wenhui Huang",
+    "Zirui Li",
+    "Zhidong Wang",
+    "Qihang Huang",
+    "Shiyu Fang",
+    "Chen Lv"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02526",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.153323+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02526v1",
+  "published_at": "2026-11-02T04:55:48Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "ego vehicle",
+      "自动驾驶",
+      "nuscenes",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "traffic",
+      "驾驶",
+      "车辆",
+      "交通",
+      "bev",
+      "world model"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02526v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "INTERACT: Learning Interaction-Aware World Dynamics from Driving Videos for Autonomous Driving",
+  "title_zh": "INTERACT：从驾驶视频中学习考虑交互的世界动态以实现自动驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2611.02526"
+}

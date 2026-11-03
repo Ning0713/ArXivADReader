@@ -1,0 +1,53 @@
+{
+  "abstract": "Human pose estimation under adverse lighting and occlusion conditions remains challenging for camera- and LiDAR-based systems. Although mmWave radars provide robustness to illumination and occlusion, they rely on dedicated hardware and licensed spectrum, limiting scalability. In this paper, we present RadPose, a learning-based monostatic integrated sensing and communication (ISAC) framework that enables mmWave communication devices to perform 3D human pose estimation. Unlike specialized radars, RadPose leverages monostatic full-duplex operation to extract channel impulse responses (CIRs) directly from standard OFDM communication signals, generating 3D radio point clouds without additional sensing hardware. To address the sparsity and noise of RF observations, RadPose employs a cross-frame transformer-based pose inference network with semantic-guided spatial attention and target-driven temporal attention for robust spatio-temporal aggregation. It further adopts a joint-aware inverse kinematics refinement module based on graph convolution to enforce skeletal topology, bone-length consistency, and anatomical plausibility. Extensive experiments demonstrate RadPose achieves competitive accuracy compared to state-of-the-art radar-based approaches while maintaining robust performance in unseen and occluded scenarios. The dataset and source code are available at https://github.com/Geo-Chou/RadPose.",
+  "abstract_zh": "在不利的光照和遮挡条件下，基于相机和激光雷达的系统进行人体姿态估计仍然面临挑战。尽管毫米波雷达在光照和遮挡方面具有鲁棒性，但它们依赖于专用硬件和许可频谱，限制了其可扩展性。本文提出了RadPose，一个基于学习的单静态集成感知与通信（ISAC）框架，使毫米波通信设备能够执行3D人体姿态估计。与专用雷达不同，RadPose利用单静态全双工操作直接从标准正交频分复用（OFDM）通信信号中提取信道脉冲响应（CIR），生成3D射频点云，而无需额外的感知硬件。为了解决射频观测的稀疏性和噪声问题，RadPose采用了基于跨帧变换器的姿态推断网络，结合语义引导的空间注意力和目标驱动的时间注意力，实现鲁棒的时空聚合。它还采用了基于图卷积的联合感知逆运动学优化模块，以强制执行骨架拓扑、骨长一致性和解剖学合理性。大量实验表明，RadPose在与最先进的基于雷达的方法相比时，能够实现具有竞争力的准确性，同时在未见和遮挡场景中保持鲁棒性能。数据集和源代码可在 https://github.com/Geo-Chou/RadPose 获取。",
+  "arxiv_id": "2611.01400",
+  "arxiv_url": "https://arxiv.org/abs/2611.01400v1",
+  "authors": [
+    "Geo Jie Zhou",
+    "Kunzhe Song",
+    "Ruxin Lin",
+    "Huacheng Zeng"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-01400",
+  "categories": [
+    "cs.CV",
+    "cs.NI"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.075465+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.01400v1",
+  "published_at": "2026-11-01T01:08:32Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "行人",
+      "lidar",
+      "radar",
+      "点云"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 17
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.01400v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "Radar",
+      "仿真/数据"
+    ]
+  },
+  "title": "RadPose: ISAC-based RF 3D Human Pose Estimation",
+  "title_zh": "RadPose：基于ISAC的射频3D人体姿态估计",
+  "translation_url": "https://hjfy.top/arxiv/2611.01400"
+}

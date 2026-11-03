@@ -1,0 +1,57 @@
+{
+  "abstract": "3-D road anomaly segmentation is essential for risk-aware perception in autonomous driving. Its central challenge is to rank sparsely observed hazards ahead of abundant normal road structures while preserving point-wise metric localization. LiDAR provides accurate 3-D point support, whereas surround-view imagery offers complementary semantic context for separating unexpected hazards from challenging normal structures. We propose ReinSeg, a retrieval-guided bounded multimodal refinement framework for point-wise road anomaly segmentation. Occupied LiDAR bird's-eye-view cells retrieve scene-specific context from a shared memory of eight surround-view images without supplying calibration variables to the retrieval module. A relative-norm-bounded residual returns this context to the LiDAR point features, so the frozen LIDO anomaly-scoring interface is preserved, and the refinement is optimized with in-distribution semantic labels only. On the Spotting the Unexpected (STU) benchmark, ReinSeg improves validation average precision from 27.54\\% to 35.67\\% and reduces the false-positive rate at 95\\% anomaly recall from 34.85\\% to 10.61\\%, shrinking the high-recall screening set from 67.54 to 20.55 million points. Relative to REL, AP is 24.99 percentage points higher and FPR95 is 0.99 points lower. Matched interfaces and component isolation show that retrieved scene imagery and the relative-norm bound are both essential, and ReinSeg stays above LiDAR-only performance under missing, corrupted, or misaligned camera inputs while running at 21.8 frames per second. These results establish bounded retrieval of scene-specific visual evidence as an effective route to reliable 3-D road-hazard perception.",
+  "abstract_zh": "三维道路异常分割对于自动驾驶中的风险感知至关重要。其核心挑战在于在稀疏观察到的危险与丰富的正常道路结构之间进行排名，同时保持逐点度量定位。激光雷达（LiDAR）提供了准确的三维点支持，而环视图像则为将意外危险与复杂的正常结构分离提供了互补的语义上下文。我们提出了ReinSeg，一个基于检索的有界多模态精细化框架，用于逐点道路异常分割。被占用的LiDAR鸟瞰图单元从共享的八幅环视图像记忆中检索场景特定的上下文，而无需向检索模块提供校准变量。相对范数有界残差将该上下文返回给LiDAR点特征，从而保持冻结的LIDO异常评分接口，并且精细化仅使用分布内的语义标签进行优化。在“发现意外”（STU）基准测试中，ReinSeg将验证平均精度从27.54%提高到35.67%，并将95%异常召回时的假阳性率从34.85%降低到10.61%，将高召回筛选集从6754万点缩减至2055万点。相较于REL，AP提高了24.99个百分点，FPR95降低了0.99点。匹配接口和组件隔离表明，检索到的场景图像和相对范数界限都是必不可少的，同时在缺失、损坏或未对齐的相机输入下，ReinSeg的性能仍高于仅使用LiDAR的性能，并以每秒21.8帧的速度运行。这些结果确立了场景特定视觉证据的有界检索作为实现可靠三维道路危险感知的有效途径。",
+  "arxiv_id": "2611.02648",
+  "arxiv_url": "https://arxiv.org/abs/2611.02648v1",
+  "authors": [
+    "Haifa Zhang",
+    "Yijing Wang",
+    "Zhiqiang Zuo"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02648",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.161046+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02648v1",
+  "published_at": "2026-11-02T07:10:16Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "road",
+      "驾驶",
+      "道路",
+      "bird's-eye",
+      "lidar"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 89
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02648v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "BEV/Occupancy"
+    ]
+  },
+  "title": "ReinSeg: Retrieval-Guided Bounded Multimodal Refinement for 3-D Road Anomaly Segmentation",
+  "title_zh": "ReinSeg：基于检索的有界多模态精细化框架用于三维道路异常分割",
+  "translation_url": "https://hjfy.top/arxiv/2611.02648"
+}

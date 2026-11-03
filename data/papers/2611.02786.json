@@ -1,0 +1,52 @@
+{
+  "abstract": "Range-image-based point cloud super-resolution provides an effective way to reconstruct sparse outdoor point clouds by projecting low-resolution LiDAR scans into a regular 2D representation. However, current methods still face three challenges. First, range images exhibit pronounced vertical nonuniformity, with sparse observations in distant regions and denser observations in nearby regions. Some cross-scale fusion mechanisms do not account for the varying reliability of features at different vertical positions, allowing invalid values and noise from distant sparse regions to propagate into the decoder. Second, a single convolutional or sequence-modeling architecture often struggles to preserve both local high-frequency geometric details and global long-range dependencies, resulting in over-smoothed reconstructions. Third, smooth transition depths near foreground-background boundaries can produce spike artifacts when the 2D range image is back-projected into 3D. To address these issues, we propose a point cloud super-resolution method based on multi-scale spatial priors and joint local-global modeling. The design comprises a spatially gated fusion module, a multi-granularity local-global cooperative perception module, and 2D median-residual denoising. Experiments on KITTI-360 and nuScenes demonstrate effective reconstruction, with IoU scores of 0.4703 and 0.3593, respectively, supporting the feasibility of the proposed method for range-image super-resolution.",
+  "abstract_zh": "基于范围图像的点云超分辨率为重建稀疏户外点云提供了一种有效的方法，通过将低分辨率的激光雷达扫描投影到规则的二维表示中。然而，当前的方法仍面临三个挑战。首先，范围图像表现出明显的垂直非均匀性，远处区域的观测稀疏而近处区域的观测较密集。一些跨尺度融合机制未能考虑不同垂直位置特征的可靠性变化，导致无效值和来自远处稀疏区域的噪声传播到解码器中。其次，单一的卷积或序列建模架构往往难以同时保留局部高频几何细节和全局长距离依赖，导致重建结果过于平滑。第三，前景-背景边界附近的平滑过渡深度在将二维范围图像反投影到三维时可能产生尖峰伪影。为了解决这些问题，我们提出了一种基于多尺度空间先验和局部-全局联合建模的点云超分辨率方法。该设计包括一个空间门控融合模块，一个多粒度局部-全局协同感知模块，以及二维中值残差去噪。对KITTI-360和nuScenes的实验表明，该方法实现了有效的重建，IoU得分分别为0.4703和0.3593，支持了所提方法在范围图像超分辨率中的可行性。",
+  "arxiv_id": "2611.02786",
+  "arxiv_url": "https://arxiv.org/abs/2611.02786v1",
+  "authors": [
+    "Wang Yang",
+    "Wenyi Ge"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02786",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.178299+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02786v1",
+  "published_at": "2026-11-02T09:02:26Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "kitti",
+      "kitti-360",
+      "lidar",
+      "point cloud",
+      "cooperative perception",
+      "点云"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 76
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02786v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "LiDAR/点云",
+      "感知"
+    ]
+  },
+  "title": "Local-Global Joint Modeling for Point Cloud Super-Resolution Guided by Multi-Scale Spatial Priors",
+  "title_zh": "基于多尺度空间先验的点云超分辨率的局部-全局联合建模",
+  "translation_url": "https://hjfy.top/arxiv/2611.02786"
+}

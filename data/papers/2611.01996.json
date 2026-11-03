@@ -1,0 +1,57 @@
+{
+  "abstract": "Dynamic map (DM) is a core information infrastructure for vehicle-road-cloud (VRC) cooperative autonomous driving. It fuses perception data from multiple sources to overcome the inherent line-of-sight and field-of-view limits of single-vehicle perception. However, DM still falls short on driving safety in two ways. First, DM data specifications already define road conditions semantically, but no pipeline yet turns real-world road observations into fine-grained risk entities in the DM. Second, existing DM systems lack a natural language interface for driving risks. To close these gaps, we propose Safety4DM, a safety-oriented language system for VRC dynamic maps. We first build RoadRisk, a real-world road image dataset that covers four types of road conditions and four risk levels. On this dataset, we fine-tune a vision-language model (VLM) for road safety risk perception. The model outputs structured risk representations that the DM can ingest directly. We then introduce a Safety-aware Step-wise Prompting (SafeStep) mechanism as the natural language query interface of the DM. SafeStep answers queries accurately and also generates actionable driving advice. To build and evaluate this interface, we develop SafeVRC-Sim, a VRC cooperative simulation framework, and SafeDM-QA, a safety question-answering benchmark. Experiments show that even the compact Qwen3-VL-4B reaches 89.83% accuracy on risk perception after fine-tuning. SafeStep also plugs easily into multiple LLM families. With medium and large models (20B and above) from five families, it achieves over 93% natural language query accuracy in every case, which shows strong generalization.",
+  "abstract_zh": "动态地图（DM）是车辆-道路-云（VRC）协同自主驾驶的核心信息基础设施。它融合了来自多个来源的感知数据，以克服单车感知固有的视线和视野限制。然而，DM在驾驶安全方面仍存在两个不足。首先，DM数据规范已经在语义上定义了道路条件，但尚未有管道将现实世界的道路观察转化为DM中的细粒度风险实体。其次，现有的DM系统缺乏自然语言接口来处理驾驶风险。为了解决这些问题，我们提出了Safety4DM，一个面向安全的VRC动态地图语言系统。我们首先构建了RoadRisk，一个覆盖四种道路条件和四个风险等级的现实世界道路图像数据集。在该数据集上，我们对视觉-语言模型（VLM）进行了微调，以实现道路安全风险感知。该模型输出的结构化风险表示可以被DM直接吸收。然后，我们引入了一种安全感知的逐步提示（SafeStep）机制，作为DM的自然语言查询接口。SafeStep能够准确回答查询，并生成可操作的驾驶建议。为了构建和评估该接口，我们开发了SafeVRC-Sim，一个VRC协同模拟框架，以及SafeDM-QA，一个安全问答基准。实验表明，即使是紧凑型的Qwen3-VL-4B，在微调后也能在风险感知上达到89.83%的准确率。SafeStep还可以轻松集成到多个大型语言模型（LLM）系列中。在来自五个系列的中型和大型模型（20B及以上）中，它在每种情况下都实现了超过93%的自然语言查询准确率，显示出强大的泛化能力。",
+  "arxiv_id": "2611.01996",
+  "arxiv_url": "https://arxiv.org/abs/2611.01996v1",
+  "authors": [
+    "Zhengshu Zhou",
+    "Shaoyu Wang",
+    "Lu Tao",
+    "Xinhui Hu",
+    "Jiaqi Gu",
+    "Tingting Zhao"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-01996",
+  "categories": [
+    "cs.AI"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.305374+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.01996v1",
+  "published_at": "2026-11-01T15:34:04Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 63
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.01996v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": [
+      "感知",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Safety4DM: A Vision-Language Framework for Risk-Aware Dynamic Maps in Vehicle-Road-Cloud Collaborative Driving",
+  "title_zh": "Safety4DM：一种面向风险感知的动态地图的视觉-语言框架，用于车辆-道路-云协同驾驶",
+  "translation_url": "https://hjfy.top/arxiv/2611.01996"
+}

@@ -1,0 +1,47 @@
+{
+  "abstract": "Reasoning-enabled model derivatives must turn intermediate deliberation into a usable answer within a deployment budget. We study that transition in an Ornith checkpoint adapted to multi-camera driving question answering with verifiable rewards. Paired archived outputs show that, on a selected 400-question development screen with a 256-token cap, GRPO increases answer extraction from 78.25% to 90.25% and accuracy from 55.50% to 63.75%. Of 39 wrong-to-correct transitions, 33 begin with an unextractable base response. The base's 87 unextractable responses all reach the token cap. Checkpoint-verified reconstruction on those same questions gives a much smaller first-pass accuracy gain at 512 tokens: +0.75 percentage points, versus +8.25 at 256. A later answer-cued continuation is analyzed separately; it helps the base more and narrows the adapter difference. On the full 2,511-question development set, this recovery-enabled pipeline reduces mean generated tokens from 108.6 to 47.1, while the paired accuracy interval includes zero gain. We frame these findings as adaptation of answer delivery under finite budgets, with explicit selection and provenance limits. Ornith's self-scaffolding lineage and newer reasoning-enabled derivatives such as Bonsai motivate the problem, but our measured results concern Ornith alone and do not establish a shared architectural mechanism or cross-model transfer.",
+  "abstract_zh": "具备推理能力的模型衍生物必须在部署预算内将中间推理转化为可用的答案。我们研究了在适应于多摄像头驾驶问答的 Ornith 检查点中，这一转变与可验证奖励的关系。配对的归档输出显示，在一个选定的 400 问题开发集上，256 个标记的限制下，GRPO 将答案提取率从 78.25% 提高到 90.25%，准确率从 55.50% 提高到 63.75%。在 39 个错误到正确的转变中，33 个以不可提取的基础响应开始。基础的 87 个不可提取响应均达到了标记上限。在这些相同问题上进行的检查点验证重构在 512 个标记时的首次通过准确率增益要小得多：+0.75 个百分点，而在 256 个标记时为 +8.25。后续的答案提示继续分析单独进行；它对基础的帮助更大，并缩小了适配器之间的差异。在完整的 2,511 问题开发集上，这一恢复启用的管道将平均生成的标记数从 108.6 降低到 47.1，而配对的准确率区间包括零增益。我们将这些发现框架化为在有限预算下的答案交付适应，具有明确的选择和来源限制。虽然 Ornith 的自我支撑谱系和更新的推理启用衍生物如 Bonsai 激发了这一问题，但我们测量的结果仅涉及 Ornith，并未建立共享的架构机制或跨模型转移。",
+  "arxiv_id": "2611.00833",
+  "arxiv_url": "https://arxiv.org/abs/2611.00833v1",
+  "authors": [
+    "T N Rickesh",
+    "Pranav Vinodh",
+    "Sowmya Kamath S"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-00833",
+  "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.051361+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.00833v1",
+  "published_at": "2026-10-31T11:33:32Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 10
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.00833v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "本文面向多摄像头驾驶场景问答，研究利用可验证奖励和 GRPO 微调视觉语言模型，以改善有限词元预算下的答案输出效率。在选定的 400 道问题上，256 词元预算下准确率提高 8.25 个百分点，收益主要来自减少因预算耗尽而无法提取答案的情况；预算提高至 512 词元后，准确率增益降至 0.75 个百分点。在完整开发集及答案恢复流程下，平均生成词元数从 108.6 降至 47.1，但准确率提升未得到明确支持。结论主要支持驾驶问答的输出效率优化，尚不能推广为驾驶决策能力提升或跨模型通用机制。",
+  "tags": {
+    "primary": "VLM/VLA",
+    "secondary": []
+  },
+  "title": "Fewer Tokens, More Answers: Verifiable-Reward Tuning of an Ornith-Style VLM for Multi-View Driving QA",
+  "title_zh": "更少的标记，更多的答案：一种用于多视角驾驶问答的可验证奖励调优的 Ornith 风格 VLM",
+  "translation_url": "https://hjfy.top/arxiv/2611.00833"
+}

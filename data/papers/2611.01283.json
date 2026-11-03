@@ -1,0 +1,52 @@
+{
+  "abstract": "End-to-end planners decode the ego trajectory either by coordinate regression, which is fast but blends plausible maneuvers into one trajectory that may follow none of them, or by diffusion and flow matching, which model the trajectory distribution but need several inference steps. Drifting models move this iteration into training: a one-step generator learns to follow an attraction--repulsion field between generated and ground-truth samples. Drifting was developed for class-conditional image generation, where every class supplies many positive samples. In planning, every scene is its own condition. Pooling scenes would attract the generated trajectories of one scene to the ground truth of unrelated scenes, whereas computing the field per scene leaves a single positive, the expert trajectory. Mutual repulsion then holds the generated trajectories on a shell around it, so any single generated trajectory deviates from the ground truth. We present DriftingPlanner, a trajectory planner trained with the drifting loss alone, without any coordinate regression term. It computes the field per scene and removes the shell at inference: it decodes every noise vector together with its negation in one batched pass, and averaging each antithetic pair cancels the linear part of the displacement from the shell center. On NAVSIM navtest, DriftingPlanner reaches a state-of-the-art 93.75 PDMS, and with single-step inference its drifting decoder comes within 0.13 PDMS of the best diffusion or flow matching setting, which needs ten inference steps.",
+  "abstract_zh": "端到端规划器通过坐标回归解码自我轨迹，这种方法快速但将合理的操作融合为一条可能不符合任何操作的轨迹；或者通过扩散和流匹配建模轨迹分布，但需要多个推理步骤。漂移模型将这一迭代过程移至训练阶段：一步生成器学习在生成样本与真实样本之间遵循吸引-排斥场。漂移最初是为类条件图像生成开发的，其中每个类别提供许多正样本。在规划中，每个场景都是其自身的条件。对场景进行汇聚将使一个场景的生成轨迹吸引到无关场景的真实轨迹，而每个场景计算场则保留一个正样本，即专家轨迹。相互排斥则将生成的轨迹保持在其周围的壳层上，因此任何单一生成轨迹都偏离真实轨迹。我们提出了DriftingPlanner，这是一种仅用漂移损失进行训练的轨迹规划器，而不包含任何坐标回归项。它为每个场景计算场，并在推理时去除壳层：它在一次批处理中解码每个噪声向量及其反向向量，并通过平均每对反向对消除来自壳中心的线性位移部分。在NAVSIM navtest上，DriftingPlanner达到了93.75的最新PDMS，并且通过单步推理，其漂移解码器的性能与最佳的扩散或流匹配设置相差仅0.13 PDMS，而后者需要十个推理步骤。",
+  "arxiv_id": "2611.01283",
+  "arxiv_url": "https://arxiv.org/abs/2611.01283v1",
+  "authors": [
+    "Ziming Liu",
+    "Yizhan Qu",
+    "Leichen Wang",
+    "Hao Sun"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-01283",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.071417+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.01283v1",
+  "published_at": "2026-10-31T21:34:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 43
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.01283v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "世界模型/生成"
+    ]
+  },
+  "title": "DriftingPlanner: Drifting Generative Models for One-Step Trajectory Planning in End-to-End Autonomous Driving",
+  "title_zh": "DriftingPlanner：用于端到端自主驾驶的一步轨迹规划的漂移生成模型",
+  "translation_url": "https://hjfy.top/arxiv/2611.01283"
+}

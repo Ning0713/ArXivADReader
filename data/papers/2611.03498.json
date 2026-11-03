@@ -1,0 +1,54 @@
+{
+  "abstract": "Navigating crowded urban environments requires robots to avoid pedestrians while adhering to social norms such as remaining on sidewalks. Existing approaches typically address either crowd avoidance or semantic path planning in isolation. We propose a reinforcement learning (RL) navigation policy that jointly reasons about semantic terrain and dynamic obstacles from a single semantically annotated bird's-eye-view (BEV) map, without relying on explicit human-state estimation. Our policy outperforms established crowd-navigation and semantic-aware baselines and transfers zero-shot to a legged robot, demonstrating socially compliant navigation in highly dynamic real-world scenarios.",
+  "abstract_zh": "在拥挤的城市环境中导航要求机器人在遵循社会规范（如保持在人行道上）的同时避开行人。现有的方法通常分别处理人群避让或语义路径规划。我们提出了一种强化学习（RL）导航策略，该策略通过单一的语义标注鸟瞰图（BEV）地图共同推理语义地形和动态障碍物，而无需依赖于明确的人类状态估计。我们的策略在已建立的人群导航和语义感知基准测试中表现优异，并能够零样本迁移到四足机器人，展示了在高度动态的真实场景中符合社会规范的导航能力。",
+  "arxiv_id": "2611.03498",
+  "arxiv_url": "https://arxiv.org/abs/2611.03498v1",
+  "authors": [
+    "Jakob Wolfram",
+    "Pascal Roth",
+    "Fan Yang",
+    "Cesar Cadena",
+    "Marco Hutter"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-03498",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-11-03T12:33:52.951640+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.03498v1",
+  "published_at": "2026-11-02T17:37:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "行人",
+      "bev",
+      "bird's-eye",
+      "path planning",
+      "robot"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 17
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.03498v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "BEV/Occupancy",
+    "secondary": [
+      "预测/规划",
+      "感知"
+    ]
+  },
+  "title": "SNAP: Semantic Navigation Among Pedestrians",
+  "title_zh": "SNAP：行人之间的语义导航",
+  "translation_url": "https://hjfy.top/arxiv/2611.03498"
+}

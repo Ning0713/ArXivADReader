@@ -1,0 +1,50 @@
+{
+  "abstract": "Monocular semantic SLAM aims to reconstruct scene geometry and build semantic maps from RGB observations. Existing Gaussian-based methods often attach semantic labels or features to evolving Gaussian primitives, making semantic fusion difficult to maintain and increasing reconstruction overhead. Hybrid Gaussian--voxel representations provide more stable semantic support, but often rely on RGB-D input or known poses and do not revise historical semantic evidence after geometry updates. We present UniGS-SLAM, an RGB-only framework that decouples open-vocabulary semantics from Gaussian reconstruction while preserving bidirectional interaction. Foundation priors enhance monocular depth and pose estimation, while semantic observations are fused into an independent sparse voxel map with observation provenance, enabling historical contributions to be revised as reconstruction evolves. The fused semantics further guide Gaussian filtering and local surface refinement. Experiments on Replica, ScanNet, and KITTI-360 show leading tracking, rendering, and geometric reconstruction performance among representative RGB-only methods, together with strong open-set semantic mapping on Replica and ScanNet. We also achieve a 2.37-fold reconstruction speedup over the fastest compared semantic SLAM baseline. Project page: https://3dagentworld.github.io/UniGS-SLAM/.",
+  "abstract_zh": "单目语义SLAM旨在从RGB观测中重建场景几何并构建语义地图。现有的基于高斯的方法通常将语义标签或特征附加到不断演变的高斯原语上，这使得语义融合难以维持，并增加了重建开销。混合高斯-体素表示提供了更稳定的语义支持，但通常依赖于RGB-D输入或已知姿态，并且在几何更新后不修正历史语义证据。我们提出了UniGS-SLAM，这是一个仅使用RGB的框架，它将开放词汇语义与高斯重建解耦，同时保持双向交互。基础先验增强了单目深度和姿态估计，而语义观测则融合到一个具有观测来源的独立稀疏体素图中，使得随着重建的演变可以修正历史贡献。融合的语义进一步指导高斯滤波和局部表面细化。在Replica、ScanNet和KITTI-360上的实验表明，在代表性的仅RGB方法中，我们在跟踪、渲染和几何重建性能方面处于领先地位，同时在Replica和ScanNet上实现了强大的开放集语义映射。我们还实现了比最快的对比语义SLAM基线快2.37倍的重建加速。项目页面：https://3dagentworld.github.io/UniGS-SLAM/",
+  "arxiv_id": "2611.02051",
+  "arxiv_url": "https://arxiv.org/abs/2611.02051v1",
+  "authors": [
+    "Xingyuan Ding",
+    "Sicheng Yu",
+    "Kaiyong Zhao",
+    "Hao Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02051",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.129205+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02051v1",
+  "published_at": "2026-11-01T16:56:02Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "kitti",
+      "kitti-360",
+      "monocular depth"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 44
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02051v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "地图/定位",
+      "感知"
+    ]
+  },
+  "title": "UniGS-SLAM: Monocular Gaussian SLAM with Enhanced Geometry and Open-Vocabulary Semantics",
+  "title_zh": "UniGS-SLAM：具有增强几何和开放词汇语义的单目高斯SLAM",
+  "translation_url": "https://hjfy.top/arxiv/2611.02051"
+}

@@ -1,0 +1,43 @@
+{
+  "abstract": "Adapting features before upsampling can improve dense prediction, but the gains may arise from changes in feature values, spatial aggregation, or both. We investigate this ambiguity by comparing matched residual adapters before and after a frozen JAFAR upsampler under a shared parent. We construct a readout-null intervention that preserves a frozen linear classifier's coarse logits while allowing spatial attention weights to adapt. Guidance/value exchanges on trained models and retrained fixed-guidance controls test the utility of this adaptation route. In three-seed experiments on PASCAL Visual Object Classes (VOC) and Cityscapes, adaptation before upsampling improves mean intersection over union (mIoU) by 0.807 and 1.413 percentage points, respectively, over adaptation after upsampling. Across both datasets and the JAFAR and AnyUp upsamplers, readout-null adaptation produces mean gains of 1.379-1.987 points over the corresponding frozen linear baselines. Retrained controls further support the benefit of adaptive spatial guidance. These findings explain how dense predictions can improve despite unchanged coarse classifier outputs and identify spatial guidance as a useful target when adapting frozen feature upsampling systems.",
+  "abstract_zh": "在上采样之前适应特征可以改善密集预测，但这种提升可能源于特征值的变化、空间聚合，或两者兼而有之。我们通过比较在共享父模型下冻结的 JAFAR 上采样器前后匹配的残差适配器来研究这种模糊性。我们构建了一种读出-空干预，保持冻结线性分类器的粗略 logits，同时允许空间注意力权重进行适应。对训练模型和重新训练的固定指导控制进行的指导/价值交换测试了这种适应路径的有效性。在 PASCAL Visual Object Classes (VOC) 和 Cityscapes 的三次随机种子实验中，上采样前的适应分别提高了平均交并比 (mIoU) 0.807 和 1.413 个百分点，相较于上采样后的适应。在这两个数据集以及 JAFAR 和 AnyUp 上采样器中，读出-空适应在相应的冻结线性基线之上产生了平均 1.379-1.987 的增益。重新训练的控制进一步支持了自适应空间指导的好处。这些发现解释了尽管粗略分类器输出未变，密集预测如何仍然能够改善，并确定空间指导作为适应冻结特征上采样系统时的一个有用目标。",
+  "arxiv_id": "2611.02854",
+  "arxiv_url": "https://arxiv.org/abs/2611.02854v1",
+  "authors": [
+    "Pingan Wang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02854",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.182322+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02854v1",
+  "published_at": "2026-11-02T09:55:22Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "cityscapes",
+      "intersection"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境"
+    ],
+    "score": 25
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02854v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "仿真/数据",
+    "secondary": []
+  },
+  "title": "Task Adaptation Through Guidance in Frozen Feature Upsampling",
+  "title_zh": "通过指导实现冻结特征上采样的任务适应",
+  "translation_url": "https://hjfy.top/arxiv/2611.02854"
+}

@@ -1,0 +1,63 @@
+{
+  "abstract": "Roadside sensing infrastructure is essential for Intelligent Transportation Systems (ITS), but cameras and legacy sensors are limited in range, weather robustness, and depth accuracy. 4D radar complements these modalities by resolving range, azimuth, elevation, and radial velocity under adverse conditions, though its sparse, noisy point clouds make reliable classification difficult. We present a roadside multi-sensor platform combining a 4D radar and stereo depth camera under synchronized acquisition, used to collect a real-world dataset. Our analysis reveals a substantial class-distribution discrepancy between modalities, most notably a strong radar confusion between passenger cars and motorcycles (49.01% and\\ 48.60% of the dataset). To address this, we propose a Neyman-Pearson-based binary classifier on the temporally-smoothed 2D positional standard deviation of radar point cloud clusters, reducing classification error from 52.1% to 42.7%. This lightweight and edge-deployable approach improves radar-only classification reliability and lays the foundation for future camera-radar fusion.",
+  "abstract_zh": "路边传感基础设施对于智能交通系统（ITS）至关重要，但相机和传统传感器在范围、天气鲁棒性和深度精度方面存在局限。4D雷达在恶劣条件下通过解析范围、方位、高度和径向速度来补充这些模式，尽管其稀疏且噪声较大的点云使得可靠分类变得困难。我们提出了一种路边多传感器平台，结合了4D雷达和立体深度相机，在同步采集下用于收集真实世界数据集。我们的分析揭示了不同模式之间显著的类别分布差异，尤其是在乘用车与摩托车之间存在强烈的雷达混淆（分别占数据集的49.01%和48.60%）。为了解决这个问题，我们提出了一种基于Neyman-Pearson的二分类器，利用雷达点云簇的时间平滑二维位置标准差，将分类错误率从52.1%降低到42.7%。这种轻量级且可边缘部署的方法提高了仅使用雷达的分类可靠性，并为未来的相机-雷达融合奠定了基础。",
+  "arxiv_id": "2611.02147",
+  "arxiv_url": "https://arxiv.org/abs/2611.02147v1",
+  "authors": [
+    "Mohammed Alsakabi",
+    "Andreia Figueiredo",
+    "António Almeida",
+    "John Dolan",
+    "Miguel Luís",
+    "Pedro Rito",
+    "Ozan Tonguz",
+    "Susana Sargento"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02147",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.134166+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02147v1",
+  "published_at": "2026-11-01T19:30:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "vehicle",
+      "roadside",
+      "车辆",
+      "交通",
+      "multi-sensor",
+      "point cloud",
+      "4d radar",
+      "radar",
+      "点云",
+      "camera-radar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "标题命中自动驾驶专用技术",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 40
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02147v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "多传感器融合",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "Refining Roadside 4D Radar Vehicle Classification Using Point-Cloud Dispersion",
+  "title_zh": "利用点云分散优化路边4D雷达车辆分类",
+  "translation_url": "https://hjfy.top/arxiv/2611.02147"
+}

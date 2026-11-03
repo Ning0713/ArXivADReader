@@ -1,0 +1,56 @@
+{
+  "abstract": "End-to-end autonomous driving policies require effective visual representations that capture both spatial scene structure and temporal dynamics. Video latent prediction has emerged as an effective paradigm for learning spatiotemporal visual representations, yet it remains unclear whether scaling this objective with action-free driving videos can yield representations that benefit end-to-end planning. We study action-free video latent prediction as a scalable pretraining objective and introduce ScaleDrive, a driving-oriented framework pretrained exclusively on large-scale internet open-world driving videos, without action annotations or benchmark-specific data. We keep the pretrained video encoder frozen during downstream end-to-end planning training to isolate the transferability of representations learned from internet driving videos. Ego-motion and depth probes show that scaling action-free video pretraining progressively strengthens the temporal and geometric information encoded in the frozen representation. We systematically study the visual representation transfer across different end-to-end driving policies and closed-loop benchmarks, where ScaleDrive consistently improves downstream performance and demonstrates that scaling action-free video latent prediction yields representations that generalize across both planning policy architectures and evaluation scenarios and protocols.",
+  "abstract_zh": "端到端自动驾驶策略需要有效的视觉表示，以捕捉空间场景结构和时间动态。视频潜在预测已成为学习时空视觉表示的有效范式，但尚不清楚通过无动作驾驶视频扩展这一目标是否能产生有利于端到端规划的表示。我们研究了无动作视频潜在预测作为一种可扩展的预训练目标，并引入了ScaleDrive，这是一个专门针对驾驶的框架，专门在大规模互联网开放世界驾驶视频上进行预训练，而不依赖于动作注释或基准特定数据。在下游端到端规划训练过程中，我们保持预训练的视频编码器不变，以隔离从互联网驾驶视频中学习到的表示的可转移性。自我运动和深度探测表明，扩展无动作视频预训练逐步增强了在冻结表示中编码的时间和几何信息。我们系统地研究了不同端到端驾驶策略和闭环基准之间的视觉表示转移，其中ScaleDrive始终提高下游性能，并证明扩展无动作视频潜在预测产生的表示在规划策略架构和评估场景及协议之间具有良好的泛化能力。",
+  "arxiv_id": "2611.02853",
+  "arxiv_url": "https://arxiv.org/abs/2611.02853v1",
+  "authors": [
+    "Xingtai Gui",
+    "Xubin Zhou",
+    "Yucheng Zhou",
+    "Dongqian Guo",
+    "Jiahao Gong",
+    "Feiyang Tan",
+    "Jianbing Shen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02853",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.181518+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02853v1",
+  "published_at": "2026-11-02T09:54:12Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "end-to-end driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 99
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02853v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "预测/规划",
+      "端到端驾驶"
+    ]
+  },
+  "title": "Scaling Action-Free Video Latent Prediction for Transferable Representations in End-to-End Autonomous Driving",
+  "title_zh": "无动作视频潜在预测的扩展以实现可转移表示在端到端自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2611.02853"
+}

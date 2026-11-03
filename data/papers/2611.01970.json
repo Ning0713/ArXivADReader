@@ -1,0 +1,52 @@
+{
+  "abstract": "Frequent urban floodwater poses a serious threat to the safety and efficiency of intelligent transportation systems. Existing vision-based methods for floodwater level detection face two main limitations. First, the lack of explicit reasoning leads to poor detection performance and little interpretability. Second, these methods struggle to generalize to the complex and varied real-world road scenes seen from different viewpoints. To address this, we reformulate the task as an explicit visual reasoning problem and propose HydroReasoner, a floodwater level reasoning framework designed for cloud-edge collaboration. HydroReasoner builds on Qwen2.5-VL and is trained with Group Relative Policy Optimization. To address the scarcity of reasoning process annotations, we build a floodwater domain knowledge graph HydroKG and design a novel KG path reward. Through deterministic graph traversal over HydroKG, this reward supervises the model's reasoning process at a fine granularity, which improves both reasoning and generalization. For edge deployment, we apply 4-bit quantization to the model, cutting GPU memory usage by 57% and inference latency by 43% while out-of-domain accuracy drops by only 0.2 percentage points. We also propose a confidence-based cloud-edge routing mechanism, which improves system safety and eases the computational load on the cloud. In addition, we build HydroLevel, a floodwater benchmark dataset of 3,000 images, for training and evaluating the model. Experimental results show that HydroReasoner achieves detection accuracy 4.0 and 13.6 percentage points higher than conventional vision baselines in the in-domain and out-of-domain evaluations respectively, with performance dropping by only 4.4 percentage points out of domain.",
+  "abstract_zh": "频繁的城市洪水对智能交通系统的安全性和效率构成了严重威胁。现有的基于视觉的洪水水位检测方法面临两个主要限制。首先，缺乏明确的推理导致检测性能差且可解释性不足。其次，这些方法在不同视角下的复杂多变的现实道路场景中难以泛化。为了解决这一问题，我们将任务重新表述为一个明确的视觉推理问题，并提出了HydroReasoner，一个旨在云边协作的洪水水位推理框架。HydroReasoner基于Qwen2.5-VL构建，并采用组相对策略优化（Group Relative Policy Optimization）进行训练。为了解决推理过程注释稀缺的问题，我们构建了洪水领域知识图谱HydroKG，并设计了一种新颖的KG路径奖励。通过对HydroKG的确定性图遍历，该奖励以细粒度监督模型的推理过程，从而提高了推理能力和泛化能力。为了在边缘部署中应用，我们对模型进行了4位量化，将GPU内存使用减少了57%，推理延迟降低了43%，而域外准确率仅下降了0.2个百分点。我们还提出了一种基于置信度的云边路由机制，以提高系统安全性并减轻云端的计算负担。此外，我们构建了HydroLevel，一个包含3000张图像的洪水基准数据集，用于训练和评估模型。实验结果表明，HydroReasoner在域内和域外评估中分别比传统视觉基线的检测准确率提高了4.0和13.6个百分点，而在域外的性能仅下降了4.4个百分点。",
+  "arxiv_id": "2611.01970",
+  "arxiv_url": "https://arxiv.org/abs/2611.01970v1",
+  "authors": [
+    "Zhengshu Zhou",
+    "Shaoyu Wang",
+    "Ziyi Geng",
+    "Lu Tao",
+    "Qian Long"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-01970",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.121736+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.01970v1",
+  "published_at": "2026-11-01T15:07:07Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 15
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.01970v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "本文面向道路洪水这一智能交通安全风险，提出基于视觉语言模型、知识图谱推理和云边协作的水位监测方法，并通过量化与置信度路由支持边缘部署。",
+  "tags": {
+    "primary": "安全/异常",
+    "secondary": [
+      "感知",
+      "VLM/VLA"
+    ]
+  },
+  "title": "Knowledge-Guided Floodwater Level Reasoning for Cloud-Edge Collaborative Monitoring",
+  "title_zh": "知识引导的云边协同监测洪水水位推理",
+  "translation_url": "https://hjfy.top/arxiv/2611.01970"
+}

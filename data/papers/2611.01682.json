@@ -1,0 +1,60 @@
+{
+  "abstract": "In autonomous driving, 3D LiDAR semantic segmentation is expected to adapt to evolving environments and recognize previously unseen categories, making generalized category discovery under test-time adaptation (GCD-TTA) an important problem. However, existing works treat GCD and TTA separately, while the limited semantic information in 3D point clouds makes GCD-TTA under domain shift more prone to feature collapse when combining GCD with TTA. To address this issue, we propose a two-stage framework for GCD-TTA in 3D LiDAR semantic segmentation. Specifically, in the first stage, we adaptively aggregate local 3D features according to geometric density variations and obtain reliable pseudo labels under a global class-wise prototype consistency constraint. In the second stage, we cast category discovery as an optimal transport assignment process for globally consistent grouping of novel categories. Meanwhile, semantic features from 2D vision foundation models are fused with 3D point cloud features to enrich 3D semantic information and promote a more separable feature space. Extensive experiments on Synth4D to SemanticKITTI, SynLiDAR to SemanticKITTI, and Synth4D to nuScenes demonstrate the effectiveness of our framework. Under a unified evaluation protocol, our method achieves the best overall mIoU on 9 out of 10 benchmark splits and improves the overall mIoU by up to 12.21 points over the strongest re-implemented baseline.",
+  "abstract_zh": "在自动驾驶中，三维激光雷达语义分割需要适应不断变化的环境并识别之前未见的类别，因此在测试时适应下的广义类别发现（GCD-TTA）成为一个重要问题。然而，现有研究将广义类别发现（GCD）和测试时适应（TTA）分开处理，而三维点云中有限的语义信息使得在领域转移下的GCD-TTA在将GCD与TTA结合时更容易出现特征崩溃。为了解决这个问题，我们提出了一种用于三维激光雷达语义分割的GCD-TTA两阶段框架。具体而言，在第一阶段，我们根据几何密度变化自适应地聚合局部三维特征，并在全局类别原型一致性约束下获得可靠的伪标签。在第二阶段，我们将类别发现视为一个最优运输分配过程，以实现新类别的全局一致分组。同时，将二维视觉基础模型的语义特征与三维点云特征融合，以丰富三维语义信息并促进更可分离的特征空间。在Synth4D到SemanticKITTI、SynLiDAR到SemanticKITTI以及Synth4D到nuScenes的广泛实验中，证明了我们框架的有效性。在统一的评估协议下，我们的方法在10个基准划分中的9个上实现了最佳的整体mIoU，并在最强的重新实现基线之上提高了整体mIoU最多12.21个百分点。",
+  "arxiv_id": "2611.01682",
+  "arxiv_url": "https://arxiv.org/abs/2611.01682v1",
+  "authors": [
+    "Hanqi Chen",
+    "Chaoqi Chen",
+    "Tian Ji",
+    "Hui Huang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-01682",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.098104+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.01682v1",
+  "published_at": "2026-11-01T08:02:36Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "nuscenes",
+      "semantickitti",
+      "autonomous",
+      "driving",
+      "驾驶",
+      "lidar",
+      "point cloud",
+      "点云"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文",
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.01682v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "LiDAR/点云",
+    "secondary": [
+      "感知",
+      "多传感器融合"
+    ]
+  },
+  "title": "Leveraging 2D Foundation Priors for Generalized Category Discovery under Test-Time Adaptation in 3D LiDAR Segmentation",
+  "title_zh": "利用二维基础先验进行测试时适应下的广义类别发现在三维激光雷达分割中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2611.01682"
+}

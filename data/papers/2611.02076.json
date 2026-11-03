@@ -1,0 +1,56 @@
+{
+  "abstract": "Diffusion driving vision-language-action models repeatedly execute the backbone at every denoising stage, incurring substantial inference cost, while it remains unclear whether all scenes require the same decoding computation. To distinguish when a trajectory becomes readable from how much further refinement it requires, we analyze trajectory readout across network depth and decoding progress. We identify a depth-decoding dissociation in which late-layer representations already support useful trajectory readout after the first forward sweep, whereas early-layer representations benefit more from continued decoding. We further find that both the preferred readout layer and decoding depth vary across scenes. Based on these observations, we propose a scene-adaptive readout and decoding framework. A scene-conditioned readout MoE adaptively weights and combines trajectory predictions from layer-specific late-layer representations after a single backbone sweep, while an adaptive decoding policy applies additional native refinement only when required by the scene. We evaluate our framework on two diffusion driving VLAs across the Waymo E2E and nuScenes benchmarks. Our method improves validation RFS by up to 0.56 while also improving test performance, and achieves an end-to-end speedup of up to $6.0\\times$ on Waymo E2E, while consistently reducing trajectory error on nuScenes. These results demonstrate that scene-level readout and decoding allocation improves planning quality while avoiding unnecessary decoding. Our code is available at https://github.com/sjyu001/SARD",
+  "abstract_zh": "扩散驱动的视觉-语言-动作模型在每个去噪阶段重复执行主干网络，导致了巨大的推理成本，而尚不清楚所有场景是否需要相同的解码计算。为了区分轨迹何时变得可读以及还需要多少进一步的细化，我们分析了网络深度和解码进展中的轨迹读出。我们识别出一种深度-解码的解离现象，即在第一次前向传播后，后层表示已经支持有用的轨迹读出，而前层表示则更依赖于持续的解码。我们进一步发现，首选的读出层和解码深度在不同场景中有所不同。基于这些观察，我们提出了一种场景自适应的读出与解码框架。场景条件下的读出混合专家（MoE）在单次主干网络传播后，自适应地加权和组合来自特定层后层表示的轨迹预测，而自适应解码策略仅在场景需要时应用额外的本地细化。我们在Waymo E2E和nuScenes基准上评估了我们的框架。我们的方法在验证集上将RFS提高了最多0.56，同时也改善了测试性能，并在Waymo E2E上实现了最高$6.0 imes$的端到端加速，同时在nuScenes上持续减少轨迹误差。这些结果表明，场景级的读出和解码分配提高了规划质量，同时避免了不必要的解码。我们的代码可在https://github.com/sjyu001/SARD获取。",
+  "arxiv_id": "2611.02076",
+  "arxiv_url": "https://arxiv.org/abs/2611.02076v1",
+  "authors": [
+    "Seungjun Yu",
+    "Jiho Choi",
+    "Inha Kang",
+    "Hojun Choi",
+    "Seungwook Kim",
+    "Hyunjung Shim"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02076",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.130793+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02076v1",
+  "published_at": "2026-11-01T17:30:51Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "nuscenes",
+      "driving",
+      "vision-language-action",
+      "轨迹预测"
+    ],
+    "reasons": [
+      "使用自动驾驶数据集或仿真环境",
+      "驾驶场景与技术任务共同命中"
+    ],
+    "score": 33
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02076v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "VLM/VLA",
+      "深度/几何"
+    ]
+  },
+  "title": "Scene-Adaptive Readout and Decoding in Diffusion Driving VLAs",
+  "title_zh": "场景自适应的扩散驱动视觉-语言-动作模型的读出与解码",
+  "translation_url": "https://hjfy.top/arxiv/2611.02076"
+}

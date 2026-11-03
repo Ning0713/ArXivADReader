@@ -1,0 +1,61 @@
+{
+  "abstract": "Autonomous robots are gaining traction in off-road environments, driven by their rising demand in agriculture, defense, and search-and-rescue operations. However, these environments are inherently unpredictable and navigation remains a formidable challenge given the complex environmental conditions including challenging terrain and varying illumination. Off-road autonomy requires robust perception across multiple spatial scales and imaging modalities, yet most sensing setups struggle to capture both far-field environmental context and near-field terrain detail simultaneously across various illumination conditions. To facilitate development of robust off-road perception and traversability estimation systems, we propose MS-DOTT (Multi-Sensor Dataset for Off-road Terrain Traversability) a comprehensive multi-modal off-road dataset with long-range 3D sensing and short-range, fine-grained perception to facilitate high-fidelity terrain understanding by combining proprioceptive signals for tracking vehicle dynamics with exteroceptive imaging and pointcloud data. The dataset includes trajectories recorded across nominal lighting, low-light, and no-light conditions with diverse 2D and 3D sensing for both long-range large-scale and short-range high-resolution sensing, as well as 4D RADAR measurements that provide velocity estimates for detected pointclouds. We demonstrate the utility of the dataset by adapting a SOTA multi-sensor fusion method for the purpose of traversability estimation. This dataset will aid the robotics community in advancing research and development of methods for traversability estimation, off-road perception and multi-sensor fusion in unstructured environments.",
+  "abstract_zh": "自主机器人在越野环境中的应用日益受到关注，这主要得益于其在农业、国防和搜索救援等领域的需求不断增加。然而，这些环境本质上具有不可预测性，导航仍然是一项巨大的挑战，因为环境条件复杂，包括具有挑战性的地形和变化的光照。越野自主性需要在多个空间尺度和成像模式下具备强大的感知能力，但大多数传感器设置在不同光照条件下难以同时捕捉远场环境背景和近场地形细节。为了促进强大越野感知和可通行性估计系统的发展，我们提出了MS-DOTT（多传感器越野地形可通行性数据集），这是一个全面的多模态越野数据集，结合了长距离3D感知和短距离、细粒度感知，以通过结合自我感知信号来跟踪车辆动态与外部成像和点云数据，从而促进高保真地形理解。该数据集包括在正常光照、低光照和无光照条件下记录的轨迹，涵盖了多样的2D和3D感知，既有长距离大规模感知，也有短距离高分辨率感知，以及提供检测到的点云速度估计的4D雷达测量。我们通过调整一种最先进的多传感器融合方法来展示该数据集的实用性，以实现可通行性估计。该数据集将帮助机器人社区推动在非结构化环境中进行可通行性估计、越野感知和多传感器融合方法的研究与开发。",
+  "arxiv_id": "2611.02992",
+  "arxiv_url": "https://arxiv.org/abs/2611.02992v1",
+  "authors": [
+    "Shivani Subramanyan",
+    "Saksham Sharma",
+    "Samahith SA",
+    "Ahaan Kotian",
+    "Suresh Sundaram"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02992",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-11-03T12:33:52.933664+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02992v1",
+  "published_at": "2026-11-02T12:00:20Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous",
+      "vehicle",
+      "road",
+      "车辆",
+      "sensor fusion",
+      "multi-sensor",
+      "4d radar",
+      "radar",
+      "点云",
+      "多传感器融合",
+      "agriculture",
+      "农业"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 44
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02992v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "多传感器融合",
+      "仿真/数据"
+    ]
+  },
+  "title": "MS-DOTT: A Multi-Modal Dataset for Off-Road Traversability Estimation",
+  "title_zh": "MS-DOTT：用于越野可通行性估计的多模态数据集",
+  "translation_url": "https://hjfy.top/arxiv/2611.02992"
+}

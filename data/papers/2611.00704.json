@@ -1,0 +1,56 @@
+{
+  "abstract": "Aerial visual localization over Level-of-Detail (LoD) 3D Maps has recently gained significant traction due to its global scalability, storage efficiency, and privacy-preserving nature. However, existing methods rely almost exclusively on building elements, which leads to catastrophic localization failures in rural or undeveloped areas where buildings are sparse or non-existent. To address this, we construct a unified Panoptic LoD 3D Map by fusing OpenStreetMap (OSM), Digital Elevation Models (DEM), and LoD assets, reformulating the problem as a panoptic registration task. By parsing the query image into discrete building `thing' instances and continuous `stuff' regions comprising road, vegetation, and water, we establish a holistic alignment with this map to robustly optimize the camera pose. To enable reliable panoptic perception, we develop a new automated pipeline that constructs AirPan - the largest aerial panoptic segmentation dataset to date, comprising 85k images with pixel-accurate annotations. This empowers our panoptic segmentation model to exhibit remarkable zero-shot generalization capabilities. Extensive experiments demonstrate that LoD-Loc v4 consistently outperforms state-of-the-art (SOTA) baselines by a significant margin. Most notably, it successfully maintains reliable localization in building-less scenarios, completely overcoming the catastrophic failures of prior building-centric paradigms.",
+  "abstract_zh": "基于细节层次（LoD）3D地图的空中视觉定位近年来因其全球可扩展性、存储效率和隐私保护特性而受到广泛关注。然而，现有方法几乎完全依赖于建筑元素，这导致在建筑稀少或不存在的农村或欠发达地区发生灾难性的定位失败。为了解决这一问题，我们通过融合开放街图（OpenStreetMap, OSM）、数字高程模型（Digital Elevation Models, DEM）和LoD资产构建了一个统一的全景LoD 3D地图，将问题重新表述为全景配准任务。通过将查询图像解析为离散的建筑“事物”实例和包含道路、植被和水体的连续“物质”区域，我们与该地图建立了整体对齐，以稳健地优化相机姿态。为了实现可靠的全景感知，我们开发了一种新的自动化管道，构建了AirPan——迄今为止最大的空中全景分割数据集，包含85,000张具有像素级准确注释的图像。这使我们的全景分割模型展现出显著的零样本泛化能力。大量实验表明，LoD-Loc v4在各项指标上始终显著超越最先进的基线（SOTA）。最值得注意的是，它在没有建筑的场景中成功保持了可靠的定位，完全克服了以往以建筑为中心的范式所导致的灾难性失败。",
+  "arxiv_id": "2611.00704",
+  "arxiv_url": "https://arxiv.org/abs/2611.00704v1",
+  "authors": [
+    "Shuaibang Peng",
+    "Chengming Zhang",
+    "Juelin Zhu",
+    "Xia Li",
+    "Xiaoya Cheng",
+    "Zeyu Cui",
+    "Shen Yan",
+    "Maojun Zhang",
+    "Yu Liu"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-00704",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.038932+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.00704v1",
+  "published_at": "2026-10-31T06:59:03Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "road",
+      "道路",
+      "visual localization"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.00704v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "地图/定位",
+      "仿真/数据"
+    ]
+  },
+  "title": "LoD-Loc v4: Towards Generalized Aerial Visual Localization via Panoptic LoD 3D Map Registration",
+  "title_zh": "LoD-Loc v4：通过全景LoD 3D地图配准实现通用化的空中视觉定位",
+  "translation_url": "https://hjfy.top/arxiv/2611.00704"
+}

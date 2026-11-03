@@ -1,0 +1,65 @@
+{
+  "abstract": "Real-world driving requires context-aware decision-making. Existing end-to-end driving benchmarks primarily assess trajectory quality through safety, compliance, comfort, and driving progress, leaving context-dependent decision-making insufficiently characterized. To fill this gap, we present PlanContext, a benchmark for evaluating in-context driving decision-making. PlanContext constructs paired evaluations by varying high-level driving intentions while keeping the observed scene fixed, enabling a natural and controllable assessment of context-dependent decision-making. We further define six representative driving contexts and jointly evaluate contextual decision correctness, road compliance, and dynamic safety with class-balanced metrics. Experiments on 9,561 scene-condition instances from NAVSIM and 23 public end-to-end driving models show that high conventional driving-quality scores do not consistently correspond to strong route-level in-context driving decision-making. Further analysis shows that model behavior varies with decision timing, road structure, and traffic interaction depending on the decision required by the current context. Our results highlight in-context driving decision-making as an important complementary dimension for evaluating end-to-end driving systems.",
+  "abstract_zh": "现实世界中的驾驶需要基于上下文的决策能力。现有的端到端驾驶基准主要通过安全性、合规性、舒适性和驾驶进展来评估轨迹质量，但对上下文依赖的决策能力的描述不足。为填补这一空白，我们提出了PlanContext，一个用于评估上下文驱动决策的基准。PlanContext通过改变高层次的驾驶意图，同时保持观察场景不变，构建成对评估，从而实现对上下文依赖决策的自然和可控评估。我们进一步定义了六种代表性的驾驶上下文，并通过类别平衡的指标共同评估上下文决策的正确性、道路合规性和动态安全性。在来自NAVSIM的9,561个场景条件实例和23个公共端到端驾驶模型上的实验表明，高传统驾驶质量评分并不总是与强大的路线级上下文驱动决策相对应。进一步分析显示，模型行为随着决策时机、道路结构和交通互动的变化而变化，这取决于当前上下文所需的决策。我们的结果强调了上下文驱动决策作为评估端到端驾驶系统的重要补充维度。",
+  "arxiv_id": "2611.03067",
+  "arxiv_url": "https://arxiv.org/abs/2611.03067v1",
+  "authors": [
+    "Ruikai Li",
+    "Naiyu Gao",
+    "Hao Shan",
+    "Yizhe Fan",
+    "Yanhao Wu",
+    "Han Jiang",
+    "Yilong Ren",
+    "Zhenning Li",
+    "Haiyang Yu",
+    "Yanhu Shan",
+    "Rui Wu",
+    "Hao Zhao",
+    "Hongyang Li",
+    "Zhiyong Cui"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-03067",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:52.937082+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.03067v1",
+  "published_at": "2026-11-02T12:54:47Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "end-to-end driving",
+      "driving",
+      "traffic",
+      "road",
+      "驾驶",
+      "交通",
+      "道路"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 58
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.03067v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "安全/异常"
+    ]
+  },
+  "title": "PlanContext: Benchmarking In-Context Driving Decision-Making",
+  "title_zh": "PlanContext：上下文驱动决策的基准评估",
+  "translation_url": "https://hjfy.top/arxiv/2611.03067"
+}

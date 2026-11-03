@@ -1,0 +1,60 @@
+{
+  "abstract": "Autonomous driving perception systems must maintain reliable object detection under diverse environmental conditions, not only in clear daytime scenes. However, the cross-weather robustness of modern detectors remains insufficiently characterised under source-only evaluation. This study evaluates representative object detection architectures trained exclusively on clear daytime driving scenes and tested without adaptation under unseen fog, rain, snow, and night conditions. The evaluation covers lightweight and medium-scale one-stage, two-stage, and transformer-based detectors within a unified protocol. Robustness is assessed using performance Drop (%), a Weather Robustness Index (WRI), and class-level sensitivity analysis for critical road participants, including cars, buses, trucks, and persons. Prediction confidence reliability under environmental domain shift is measured using Expected Calibration Error (ECE). Results reveal consistent performance degradation in adverse conditions, reaching 62.90% at night. Buses show the highest sensitivity to environmental variability, while cars remain comparatively stable across weather transitions. Comparisons indicate that YOLO-based detectors exhibit the lowest calibration mismatch, reflecting stronger agreement between predicted confidence and empirical detection correctness. In contrast, DETR achieves the lowest robustness score, with a WRI of 0.6859, indicating greater vulnerability to cross-weather domain shift. These findings offer deployment-oriented insights into detector robustness and confidence reliability for safety-critical intelligent vehicle perception systems.",
+  "abstract_zh": "自动驾驶感知系统必须在多样的环境条件下保持可靠的目标检测，而不仅仅是在清晰的白天场景中。然而，现代检测器在仅源评估下的跨天气鲁棒性仍然不足。本研究评估了在清晰白天驾驶场景中独立训练的代表性目标检测架构，并在未经过适应的情况下，在未见过的雾、雨、雪和夜间条件下进行测试。评估涵盖了轻量级和中等规模的一阶段、二阶段以及基于变换器的检测器，采用统一的协议进行评估。鲁棒性通过性能下降百分比（%）、天气鲁棒性指数（Weather Robustness Index, WRI）以及对关键道路参与者（包括汽车、公交车、卡车和行人）的类别级敏感性分析进行评估。在环境领域转变下，预测置信度的可靠性通过期望校准误差（Expected Calibration Error, ECE）进行测量。结果显示，在不利条件下性能持续下降，夜间下降幅度达到62.90%。公交车对环境变化的敏感性最高，而汽车在天气变化中相对稳定。比较表明，基于YOLO的检测器表现出最低的校准不匹配，反映出预测置信度与经验检测正确性之间更强的一致性。相比之下，DETR的鲁棒性得分最低，WRI为0.6859，表明其对跨天气领域转变的脆弱性更大。这些发现为安全关键的智能车辆感知系统的检测器鲁棒性和置信度可靠性提供了面向部署的见解。",
+  "arxiv_id": "2611.00071",
+  "arxiv_url": "https://arxiv.org/abs/2611.00071v1",
+  "authors": [
+    "Munshaibur Rahman Mahin",
+    "Isha Das",
+    "Most. Sonia Islam",
+    "Mohammad Sakib Mahmood",
+    "M. F. Mridha",
+    "Md. Jakir Hossen"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-00071",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:52.994274+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.00071v1",
+  "published_at": "2026-10-15T17:00:50Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "driving perception",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "vehicle",
+      "road",
+      "驾驶",
+      "车辆",
+      "道路",
+      "行人",
+      "驾驶感知"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 100.0
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.00071v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "安全/异常"
+    ]
+  },
+  "title": "How Reliable Are Object Detection Models Beyond Clear Weather? A Deployment-Oriented Robustness Study for Autonomous Driving",
+  "title_zh": "在清晰天气之外，目标检测模型的可靠性如何？面向部署的自动驾驶鲁棒性研究",
+  "translation_url": "https://hjfy.top/arxiv/2611.00071"
+}

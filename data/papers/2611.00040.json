@@ -1,0 +1,56 @@
+{
+  "abstract": "According to the World Health Organization, at least 2.2 billion people worldwide live with visual impairment, including tens of millions with severe vision loss. Traditional aids such as white canes or guide dogs remain costly, limited in capability, and inaccessible to many. At the same time, smartphone distraction in public spaces has been linked to elevated risks of collisions with vehicles, trips, and falls. These dual challenges motivate lightweight, smartphone-based solutions that combine accessibility with low latency. We present a Kotlin-based Android application that uses a YOLOv8 detector, retrained to recognize eighteen common urban obstacle classes, to deliver real-time obstacle alerts for both user groups. The detector was optimized with pruning, quantization, and early-exit branches, and deployed through the Android Neural Networks API (NNAPI), which can dispatch inference to GPU, NPU, or DSP accelerators when available. On a mid-range smartphone, these optimizations reduced average inference latency from about 3.2 s for the off-the-shelf YOLOv8n to 0.39-0.48 s; the recommended configuration (INT8 quantization with early exit) runs in 0.42-0.48 s while retaining a recall of 0.81. The application combines the optimized detector with ARCore-based or monocular focal-length distance estimation, so it works with a single smartphone camera and requires no LiDAR, depth camera, or other specialized sensor. Multimodal feedback, including Text-to-Speech guidance for visually impaired users and vibration alerts for distracted pedestrians, supports use across different contexts.",
+  "abstract_zh": "根据世界卫生组织的统计，全球至少有22亿人生活在视觉障碍中，其中包括数千万重度视力损失者。传统的辅助工具如白手杖或导盲犬成本高昂，功能有限，且对许多人来说难以获得。同时，公共场所的智能手机分心与车辆碰撞、绊倒和跌倒的风险增加有关。这两方面的挑战促使我们开发轻量级的智能手机解决方案，旨在结合可及性与低延迟。我们提出了一款基于Kotlin的Android应用程序，使用经过重新训练的YOLOv8检测器，能够识别十八种常见的城市障碍物类别，为这两类用户提供实时障碍警报。该检测器经过剪枝、量化和早期退出分支的优化，并通过Android神经网络API（NNAPI）部署，能够在可用时将推理任务分配给GPU、NPU或DSP加速器。在一款中档智能手机上，这些优化将平均推理延迟从约3.2秒降低至0.39-0.48秒；推荐配置（INT8量化与早期退出）在保持召回率为0.81的同时，运行时间为0.42-0.48秒。该应用程序将优化后的检测器与基于ARCore的单目焦距距离估计相结合，因此只需一台智能手机摄像头，无需LiDAR、深度摄像头或其他专用传感器。多模态反馈，包括为视力障碍用户提供的文本转语音指导和为分心行人提供的振动警报，支持在不同环境中的使用。",
+  "arxiv_id": "2611.00040",
+  "arxiv_url": "https://arxiv.org/abs/2611.00040v1",
+  "authors": [
+    "Abtin Zandi",
+    "Sarvin Nami",
+    "Roza Ganjipour",
+    "Bardia Sabagh Kermani",
+    "Amirreza Tarabkhah",
+    "Hamed Farbeh"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-00040",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.PF",
+    "cs.SE"
+  ],
+  "fetched_at": "2026-11-03T12:33:52.973411+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.00040v1",
+  "published_at": "2026-10-07T15:54:15Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "车辆",
+      "行人",
+      "lidar"
+    ],
+    "reasons": [
+      "驾驶场景与技术任务共同命中",
+      "道路场景与多个技术信号共同命中"
+    ],
+    "score": 14
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.00040v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "感知",
+    "secondary": [
+      "LiDAR/点云",
+      "深度/几何"
+    ]
+  },
+  "title": "Real-Time Obstacle Detection and Distance Estimation on Smartphones for Visually Impaired and Distracted Pedestrians",
+  "title_zh": "面向视力障碍和分心行人的智能手机实时障碍检测与距离估计",
+  "translation_url": "https://hjfy.top/arxiv/2611.00040"
+}

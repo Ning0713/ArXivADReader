@@ -1,0 +1,57 @@
+{
+  "abstract": "Vision-language action (VLA) models excel for end-to-end autonomous driving, yet their tendency to over-invoke chain-of-thought (CoT) reasoning mirrors a human cognitive pitfall: overthinking. Just as deliberate reasoning can slow or mislead human judgment in routine tasks, excessive CoT in VLA incurs unnecessary compute overhead and can paradoxically degrade planning performance. Recent research tackles this via adaptive reasoning, which dynamically modulates inference complexity by selectively triggering CoT for complex scenes while responding directly to routine ones. While prior adaptive methods rely on implicit adaptation, recent work shows that explicitly optimizing the route between CoT and direct responses yields superior performance, assuming scene-difficulty annotations which are labor-intensive, poorly scalable, and prone to error due to the subjectivity of judging driving complexity. We explore, for the first time, whether adaptive reasoning with explicit route optimization can be achieved without any scene-difficulty labeling. We introduce STEER, a generic over-reasoning mitigation strategy featuring two key components: (i) routing uncertainty-aware rollout, which calibrates sampling to align routing diversity with model uncertainty; and (ii) cross-route advantage credit assignment, which introduces a differential metric to reinforce optimal routing decisions based on environmental rewards rather than subjective labels. Extensive experiments on NAVSIM v1/v2 demonstrate that STEER is competitive with state-of-the-art methods in both planning quality and the Pareto front of inference efficiency.",
+  "abstract_zh": "视觉-语言行动（VLA）模型在端到端自动驾驶中表现出色，但其过度调用链式思维（CoT）推理的倾向反映了人类认知的一个陷阱：过度思考。正如深思熟虑的推理可能在日常任务中减慢或误导人类判断，VLA中的过度CoT则会导致不必要的计算开销，并可能悖论性地降低规划性能。最近的研究通过自适应推理来应对这一问题，该方法通过选择性地在复杂场景中触发CoT，同时直接响应常规场景，动态调节推理复杂性。尽管先前的自适应方法依赖于隐式适应，最近的工作表明，显式优化CoT与直接响应之间的路线可以获得更优的性能，但这需要场景难度标注，而这些标注劳动密集、扩展性差，并且由于判断驾驶复杂性的主观性而容易出错。我们首次探讨了在没有任何场景难度标注的情况下，显式路线优化的自适应推理是否可以实现。我们提出了STEER，这是一种通用的过度推理缓解策略，具有两个关键组成部分：（i）考虑路线不确定性的回滚，该方法校准采样以使路线多样性与模型不确定性对齐；（ii）跨路线优势信用分配，该方法引入了一种差异化指标，以基于环境奖励而非主观标签来强化最佳路线决策。在NAVSIM v1/v2上的大量实验表明，STEER在规划质量和推理效率的帕累托前沿方面与最先进的方法具有竞争力。",
+  "arxiv_id": "2611.00718",
+  "arxiv_url": "https://arxiv.org/abs/2611.00718v1",
+  "authors": [
+    "Yangang Zou",
+    "Pei Liu",
+    "Nan Song",
+    "Bozhou Zhang",
+    "Mingyu Guo",
+    "Jun Ma",
+    "Jiankang Deng",
+    "Xiatian Zhu",
+    "Li Zhang"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-00718",
+  "categories": [
+    "cs.RO"
+  ],
+  "fetched_at": "2026-11-03T12:33:52.870881+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.00718v1",
+  "published_at": "2026-10-31T07:32:06Z",
+  "relevance": {
+    "classifier": "rules",
+    "include": true,
+    "matched_terms": [
+      "autonomous driving",
+      "自动驾驶",
+      "autonomous",
+      "driving",
+      "驾驶"
+    ],
+    "reasons": [
+      "明确的自动驾驶上下文"
+    ],
+    "score": 71
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.00718v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "",
+  "tags": {
+    "primary": "预测/规划",
+    "secondary": [
+      "端到端驾驶",
+      "VLM/VLA"
+    ]
+  },
+  "title": "STEER: Route-Aware Adaptive Reasoning for Autonomous Driving",
+  "title_zh": "STEER：面向路线的自适应推理在自动驾驶中的应用",
+  "translation_url": "https://hjfy.top/arxiv/2611.00718"
+}

@@ -1,0 +1,54 @@
+{
+  "abstract": "Monocular depth estimation aims to predict depth maps from single RGB images (forgoing the need for stereo camera pairs) and has seen impressive leaps in performance in recent work due to the introduction of affine-invariant losses and the use of foundation model features. These monocular depth models predict affine-invariant depth, which describes the relative positions of objects in the scene instead of absolute depth. While these models demonstrate strong performance on single image benchmarks and qualitatively consistent predictions in video, their effectiveness at preserving consistent spatial structure has been less thoroughly explored. Many potential real-world applications, such as handling video streams as input, rely on coherent three dimensional consistency in scenes. Further, anchoring relative depth predictions to a metric reference for a given scene is a key challenge for applying monocular depth models to real-world situations. We develop a novel evaluation protocol for monocular depth models using video sequences with moving camera positions to test the consistency of prediction across variation in viewpoint. We demonstrate this methodology over diverse, real-world video sequences where we are able to anchor depth model output to metric depth values using structure from motion. Our work demonstrates open challenges in the development of broadly applicable monocular depth foundation models, particularly with their ability to provide temporal consistency over long time frames. We also identify challenges in the straightforward adoption of structure-from-motion as a metric grounding tool for monocular depth estimation models.",
+  "abstract_zh": "单目深度估计旨在从单个 RGB 图像中预测深度图（不再需要立体相机对），并且由于引入了仿射不变损失和基础模型特征，近期的研究在性能上取得了显著的进展。这些单目深度模型预测仿射不变深度，描述了场景中物体的相对位置，而不是绝对深度。尽管这些模型在单幅图像基准测试中表现出色，并且在视频中具有定性一致的预测，但它们在保持一致的空间结构方面的有效性尚未得到充分探讨。许多潜在的现实世界应用，如处理视频流作为输入，依赖于场景中的一致三维一致性。此外，将相对深度预测锚定到给定场景的度量参考是将单目深度模型应用于现实世界情况的关键挑战。我们开发了一种新的评估协议，使用移动相机位置的视频序列来测试在视角变化下预测的一致性。我们在多样化的现实世界视频序列中展示了这种方法，在这些序列中，我们能够使用运动结构将深度模型输出锚定到度量深度值。我们的工作展示了在开发广泛适用的单目深度基础模型方面存在的开放挑战，特别是在它们提供长时间框架内的时间一致性能力方面。我们还识别了将运动结构作为单目深度估计模型的度量基础工具的直接采用所面临的挑战。",
+  "arxiv_id": "2611.02203",
+  "arxiv_url": "https://arxiv.org/abs/2611.02203v1",
+  "authors": [
+    "Theo Rode",
+    "Rui Zhang",
+    "Ryan Aubrey",
+    "Olivia Li",
+    "Jessica Huang",
+    "Liv Chu",
+    "Healani Dowd",
+    "Calden Wloka"
+  ],
+  "axi_url": "https://paper.axi404.top/daily/2026-11-03#paper-2611-02203",
+  "categories": [
+    "cs.CV"
+  ],
+  "fetched_at": "2026-11-03T12:33:53.135840+00:00",
+  "pdf_url": "https://arxiv.org/pdf/2611.02203v1",
+  "published_at": "2026-11-01T21:01:53Z",
+  "relevance": {
+    "classifier": "rules+llm",
+    "include": true,
+    "matched_terms": [
+      "monocular depth",
+      "depth estimation",
+      "深度估计"
+    ],
+    "reasons": [
+      "LLM 边界复核纳入"
+    ],
+    "score": 12
+  },
+  "seen_dates": [
+    "2026-11-03"
+  ],
+  "source": {
+    "arxiv": "https://arxiv.org/abs/2611.02203v1",
+    "axi": "https://paper.axi404.top/daily/2026-11-03"
+  },
+  "summary_zh": "本文提出一种基于移动相机视频序列的评估协议，用于衡量单目深度模型在连续视角变化下的三维空间与长期时间一致性，并利用运动恢复结构将相对深度对齐至度量尺度。研究揭示了单目深度基础模型及其度量校准方法在真实动态采集条件下的局限。该工作虽未明确面向自动驾驶，但其研究的单目深度、视频时序一致性和度量深度校准均与自动驾驶视觉感知密切相关。",
+  "tags": {
+    "primary": "深度/几何",
+    "secondary": [
+      "感知",
+      "仿真/数据"
+    ]
+  },
+  "title": "Depth Anyviewpoint? Evaluating Monocular Depth Over Viewpoint Sequences",
+  "title_zh": "深度任意视角？评估单目深度在视角序列中的表现",
+  "translation_url": "https://hjfy.top/arxiv/2611.02203"
+}
